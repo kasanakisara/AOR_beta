@@ -155,6 +155,7 @@ news_event = {
     
 	option = {
 		name = news_GER.3.a
+		set_variable = { global.se_AOR_event_picture_change = 2 }
     	}
 }
 
@@ -173,6 +174,7 @@ news_event = {
     
 	option = {
 		name = news_GER.4.a
+		set_variable = { global.se_AOR_event_picture_change = 1 }
         remove_ideas = Compact_of_German_Confederation
 	}
 }

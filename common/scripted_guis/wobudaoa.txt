@@ -8,7 +8,7 @@ scripted_gui = {
 			is_ai = no
 		}
 		effects = {
-			AOR_event_picture_change_btn_click = { 
+			AOR_news_exit_btn_click = { 
 				clear_variable = global.se_AOR_event_picture_change
 			}
 		}

@@ -1,105 +1,101 @@
 guiTypes = {
+
 	containerWindowType = {
 		name = "event_picture_change_window"
-		position = { x=-282 y=-310 }	
-		size = { width = 528 height = 688 }
 		moveable = yes
-		Orientation = CENTER
+		orientation = center
+		Origo = center
+		position = { x= 0 y= 0 }	
+		size = { width = 650 height = 800 }
 		show_sound = world_news_effect
 		hide_sound = menu_close_window
-		
+
 		background = {
-			name = "Background"	
-			spriteType ="GFX_event_news_bg"
+			name = "AOR_event_picture_change_name_background"	
 			size = { width = 100% height = 100% }
+			spriteType = "GFX_AOR_event_picture_change_background"
 		}
 
-		containerWindowType = {
-			name = "top_Window"
-			position = { x=0 y=0 }	
-			size = { width = 581 height =121 }
-			Orientation = UPPER_LEFT
-
-			iconType =
-			{
-				name ="event_picture"
-				spriteType = "GFX_news_event_001"
-				position = { x = 58 y = 174 }
-				Orientation = "UPPER_LEFT"
-				alwaystransparent = yes
-			}
-			
-			iconType = {
-				name ="AOR_event_picture_change_name"
-				spriteType = "GFX_CM_SE_pic_entry"
-				position = { x = 59 y = 98 }
-				Orientation = "UPPER_LEFT"
-				alwaystransparent = yes
-			}			
+		iconType = {
+			name = "AOR_event_picture_change_name"	
+			size = { width = 100% height = 100% }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="event_picture"
+			spriteType = "GFX_news_event_001"
+			position = { x = 300 y = 230 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}			
+						
+		iconType = {
+			name ="event_picture_overlay"
+			spriteType = "GFX_event_news_pic_overlay"
+			position = { x = 59 y = 150 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}			
+			buttonType = {
+				name = "AOR_news_exit_btn"
+				position = { x = 240  y = 600 }
+				spriteType = "GFX_AOR_event_picture_change_btn"
+				orientation = upper_left
+				scale = 1.1 
 			
 			instantTextBoxType = {
-				name = "Title"
-				position = { x = 12 y = 336 }
+				name = "AOR_news_title"
+				position = { x = 55 y = 336 }
 				font = "hoi4_typewriter22"
-				borderSize = {x = 0 y = 0}
-				text = "Title text here!"	
+				borderSize = {x = 300 y = 150}
+				text = "AOR_news_title"	
 				maxWidth = 490
-				maxHeight = 32
+				maxHeight = 55
 				format = centre
 			}			
-			buttonType = {
-				name = "btn_minimize"
-				position = {x=10 y=10}
-				spriteType = "GFX_event_button_minimize"
-				clicksound = click_default
-			}
+		}
+		
+		instantTextBoxType = {
+			name = "AOR_news_desc"
+			position = { x = 125 y = 450 }
+			font = "hoi4_typewriter16"
+			borderSize = {x = 0 y = 0 }
+			text = "AOR_news_desc"	
+			maxWidth = 500
+			maxHeight = 35
+			format = left
+		}			
+		instantTextBoxType = {
+			name = "AOR_news_title"
+			position = { x = 14 y = 400 }
+			font = "hoi4_typewriter22"
+			borderSize = {x = 0 y = 0}
+			text = "AOR_news_title"	
+			maxWidth = 670
+			maxHeight = 650
+			format = centre
 		}
 		containerWindowType = {
-			name = "midsection"
-			position = { x=0 y=135 }	
-			size = { width = 580 height = 500 }
-			Orientation = UPPER_LEFT
-		
-			instantTextBoxType = {
-				name = "Description"
-				position = { x = 60 y = 240 }
-				font = "hoi4_typewriter16"
-				borderSize = {x = 0 y = 0}
-				text = "Long text here!"	
-				maxWidth = 420
-				maxHeight = 230
-				format = left
-			}	
-		}			
-
-
-		containerWindowType = {
 			name = "bottom_Window"
-			position = { x=0 y=0 }	
+			position = { x= 0 y=221 }	
 			size = { width = 581 height = 405 }
 			Orientation = UPPER_LEFT
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 80 y = -60 }
+				position = { x = 80 y = -1 }
 				size = { width = 300 height = 30 }
 				slotsize = { width = 300 height = 47 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
 			}
 		}
-	}
 	
 	containerWindowType = {
 		name = "event_option_entry"
 		size = { width = 300 height = 47 }
-		clipping = no
-		
-		background = {
-			name = "event_option_background"	
-			spriteType ="GFX_event_option_entry"
-		}
-		
+		clipping = no	
+
 		instantTextBoxType = {
 			name = "Name"
 			position = { x = 5 y = 0 }
@@ -109,6 +105,7 @@ guiTypes = {
 			format = center
 			vertical_alignment = center
 			alwaystransparent = yes
+	    	}
 		}
 	}
 }
