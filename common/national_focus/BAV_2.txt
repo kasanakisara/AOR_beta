@@ -1,0 +1,348 @@
+focus_tree={
+    id = BAV_2
+	country={
+		factor=0
+		modifier={
+			add=30
+			tag=BAV
+		}
+	}
+	continuous_focus_position = { x = 1500  y = 2000 }
+	default=no
+	focus={
+		id=BAV_two_ways_two_thoughts_focus
+		x=2
+		y=0
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 50
+			unlock_decision_category_tooltip = BAV_different_choice_decision_category
+			hidden_effect = {
+				ROOT = {
+					set_country_flag = two_ways_two_thoughts_focus
+					set_variable = {
+						ROOT.BAV_different_choice = 40
+					}
+					add_ideas = BAV_nice_balance_modifier
+				}
+			}
+		}
+	}
+	focus={
+		id=Reconstructing_party_democracy
+		x=2
+		y=1
+		prerequisite={focus=BAV_two_ways_two_thoughts_focus}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 50
+			custom_effect_tooltip = BAV_1_tt
+			hidden_effect = {
+				ROOT = {
+					add_to_variable = {
+						BAV_different_choice = 10
+					}	
+				}
+			}
+		}
+	}
+	focus={
+		id=Sharing_destiny_with_world_revolution
+		x=0
+		y=2
+		prerequisite={focus=Reconstructing_party_democracy}
+		mutually_exclusive={focus=Deeper_into_the_German_context }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+
+		}
+		completion_reward={
+			custom_effect_tooltip = BAV_2_tt
+			ROOT = {
+				set_variable = {
+					BAV_Liebknecht = 0
+				}
+				add_to_variable = {
+					BAV_Liebknecht = 10
+				}	
+			}
+		}
+	}
+	focus={
+		id=Deeper_into_the_German_context
+		x=4
+		y=2
+		prerequisite={focus=Reconstructing_party_democracy}
+		mutually_exclusive={focus=Sharing_destiny_with_world_revolution }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = BAV_3_tt
+			ROOT = {
+				set_variable = {
+					BAV_Luxemburg = 0
+				}
+				add_to_variable = {
+					BAV_Luxemburg = 10
+				}	
+			}
+
+		}
+	}
+	focus={
+		id=Formation_of_volunteer_army
+		x=0
+		y=3
+		prerequisite={focus=Sharing_destiny_with_world_revolution}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+        add_ideas = BAV_Marx_Volunteer_Camp
+			custom_effect_tooltip = BAV_4_tt
+			add_to_variable = {
+				BAV_Liebknecht = 5
+			}	
+
+		}
+	}
+	focus={
+		id=Expansion_of_the_Soviet_Defence_Army
+		x=0
+		y=4
+		prerequisite={focus=Formation_of_volunteer_army}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = BAV_2_tt
+			add_to_variable = {
+				BAV_Liebknecht = 10
+			}	
+		}
+	}
+	focus={
+		id=Renovating_Imperial_Legacy
+		x=4
+		y=3
+		prerequisite={focus=Deeper_into_the_German_context}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = BAV_5_tt
+		add_to_variable = {
+			BAV_Luxemburg = 5
+		}	
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type =industrial_complex level = 1 }
+		}
+	}
+	focus={
+		id=The_People_BMW
+		x=4
+		y=4
+		prerequisite={focus=Renovating_Imperial_Legacy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_to_variable = {
+				BAV_Luxemburg = 10
+			}
+		custom_effect_tooltip = BAV_3_tt
+		add_ideas = BAV_red_horse
+		}
+	}
+	focus={
+		id=Establishing_the_authority_of_Party
+		x=2
+		y=5
+		prerequisite={focus=Expansion_of_the_Soviet_Defence_Army focus=The_People_BMW }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_to_variable = {
+				BAV_different_choice = 5
+			}	
+		add_political_power = 100
+		
+		}
+	}
+	focus={
+		id=Preparing_for_the_General_Election_of_Committee_Chairman
+		x=2
+		y=6
+		prerequisite={focus=Establishing_the_authority_of_Party}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power =100
+		}
+	}
+	focus={
+		id=Soviet_unity_of_purpose
+		x=2
+		y=7
+		prerequisite={focus=Preparing_for_the_General_Election_of_Committee_Chairman}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = { id = BAV.5 }
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = BAV_Luxemburg
+							value = BAV_Liebknecht
+							compare = greater_than_or_equals
+						}
+					}
+					complete_national_focus = The_Eagles_of_Revolution_Forever
+					unlock_national_focus = Determined_international_fighters
+				}
+				else = {
+					complete_national_focus = Determined_international_fighters
+					unlock_national_focus = The_Eagles_of_Revolution_Forever
+				}
+				
+			}
+			load_focus_tree = BAV_3_Li
+		}
+	}
+	focus={
+		id=Determined_international_fighters
+		x=0
+		y=8
+		prerequisite={focus=Soviet_unity_of_purpose}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					check_variable = {
+						var = BAV_different_choice
+						value = 20
+						compare = greater_than_or_equals		
+					}
+				}
+				add_ideas = idea_BAV_The_Eagles_of_Revolution_Forever
+			}
+
+			BAV_Karl_Liebknecht = {
+				add_trait = {
+					ideology = revolutionism
+					trait = trait_Determined_international_fighters
+				}
+			}
+			hidden_effect = {
+				BAV_civil_war = yes
+				clr_country_flag = two_ways_two_thoughts_focus
+				clear_variable = BAV_Liebknecht
+				clear_variable = BAV_Luxemburg
+				clear_variable = BAV_different_choice
+			}
+
+
+		}
+	}
+	focus={
+		id=The_Eagles_of_Revolution_Forever
+		x=4
+		y=8
+		prerequisite={focus=Soviet_unity_of_purpose}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					check_variable = {
+						var = BAV_different_choice
+						value = 20
+						compare = greater_than_or_equals		
+					}
+				}
+				add_ideas =idea_BAV_Determined_international_fighters
+			}
+
+			retire_country_leader = yes
+			promote_character = BAV_Luksemburg
+			BAV_Luksemburg = {
+				add_trait = {
+					ideology = luxemburgism
+					trait = trait_The_Eagles_of_Revolution_Forever
+				}
+			}
+			hidden_effect = {
+				BAV_civil_war = yes
+				clr_country_flag = two_ways_two_thoughts_focus
+				clear_variable = BAV_Liebknecht
+				clear_variable = BAV_Luxemburg
+				clear_variable = BAV_different_choice
+			}
+
+		}
+	}
+}

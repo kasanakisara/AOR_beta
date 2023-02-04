@@ -1,0 +1,255 @@
+focus_tree = {
+	id = KSH_3
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = KSH
+		}
+	}
+	continuous_focus_position = { x = 1600 }
+	default = no
+	focus = {
+		id = Freedom_Corps
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 8
+		y = 0
+		completion_reward = {
+			remove_ideas = Freedom_Corps_3
+		}
+	}
+	focus = {
+		id = Artillery_forward_tactics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 14
+		y = 6
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = Construction_General_Staff_Department
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = Freedom_Corps
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			add_ideas = KSH_ujianzongcanmoubu
+		}
+	
+	}
+	focus = {
+		id = Restore_the_conscription_system
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = Freedom_Corps
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = Prepare_for_the_next_fight
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = Construction_General_Staff_Department
+		}
+		prerequisite = {
+			focus = Restore_the_conscription_system
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = Construction_of_the_Military_Academy_in_Stockholm
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Prepare_for_the_next_fight
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_ideas = KSH_sidedingjunshixueyuan
+		}
+
+	}
+	focus = {
+		id = Invite_Gudrian
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = Construction_of_the_Military_Academy_in_Stockholm
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = Water_tank_tank
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Invite_Gudrian
+		}
+		mutually_exclusive = {
+			focus = Infantry_and_artillery
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = New_simulation_training
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Water_tank_tank
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = Research_new_tanks
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Water_tank_tank
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = Infantry_and_artillery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Invite_Gudrian
+		}
+		mutually_exclusive = {
+			focus = Water_tank_tank
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = Build_storm_commandos
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Infantry_and_artillery
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = Conduct_poison_gas_operations
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Build_storm_commandos
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = Refit_a_new_tank
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = New_simulation_training
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = Learn_from_the_Marne_River
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Research_new_tanks
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = Establish_a_new_mechanized_special_operation_force
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Refit_a_new_tank
+		}
+		prerequisite = {
+			focus = Learn_from_the_Marne_River
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = Howitzer_production_line
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Artillery_forward_tactics
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = Rapid_movement_of_troops
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Conduct_poison_gas_operations
+		}
+		prerequisite = {
+			focus = Howitzer_production_line
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = New_People_Army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Establish_a_new_mechanized_special_operation_force
+			focus = Rapid_movement_of_troops
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = Artillery_forward_tactics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Infantry_and_artillery
+		}
+		x = 14
+		y = 6
+
+	}
+}

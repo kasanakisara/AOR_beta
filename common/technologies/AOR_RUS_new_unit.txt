@@ -1,0 +1,23 @@
+technologies = {
+
+	paijipao = {
+
+		enable_equipments = {
+			paijipao_0
+		}
+		
+		enable_subunits = {
+			Mortarbrigade
+			Mortarsupport
+		}
+		
+		categories = {
+			artillery
+		}	
+		start_year = 1936
+		ai_will_do = {
+			factor = 1
+		}					
+	}	
+		
+}

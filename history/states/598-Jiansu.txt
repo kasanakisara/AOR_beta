@@ -1,0 +1,29 @@
+
+state={
+	id=598
+	name="STATE_598"
+	
+	state_category = town
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+
+	provinces={
+		7025 9956 12055 7200 1029 1076 4082 4031
+	}
+	manpower=23669300
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

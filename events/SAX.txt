@@ -1,0 +1,315 @@
+
+#解决混乱
+
+add_namespace = SAX
+
+
+country_event = {
+	id = SAX.0
+	title = SAX.0.t
+	desc = SAX.0.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.0.a
+		
+		}
+    }
+country_event = {
+	id = SAX.1
+	title = SAX.1.t
+	desc = SAX.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	
+	option = { 
+        name = SAX.1.a
+		create_country_leader = {
+					name = "Fallen govement"
+					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = gfx/leaders/SAX/SAX_fallen_goverment.png
+					expire = "1965.1.1"
+					ideology = authoritarianism
+					traits = {
+						
+					}
+				}
+		set_politics = {
+        ruling_party = AUT_democratic
+		}
+		country_event = { days = 15 id = SAX.2 }
+		}
+
+    }
+	
+	country_event = {
+	id = SAX.2
+	title = SAX.2.t
+	desc = SAX.2.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	
+	
+	option = { 
+        name = SAX.2.a
+		create_country_leader = {
+					name = "重生委员会"
+					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = gfx/leaders/SAX/SAX_reborn.png
+					expire = "1965.1.1"
+					ideology = authoritarianism
+					traits = {
+						
+					}
+				}
+				country_event = { id = SAX.3 }
+		}
+    }
+	news_event = {
+	id = SAX.3
+	title = SAX.3.t
+	desc = SAX.3.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX_3.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.4
+	title = SAX.4.t
+	desc = SAX.4.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.4.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.5
+	title = SAX.5.t
+	desc = SAX.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.5.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.6
+	title = SAX.6.t
+	desc = SAX.6.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.6.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.7
+	title = SAX.7.t
+	desc = SAX.7.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	
+	
+	option = { 
+        name = SAX.7.a
+		hidden_effect = {
+		kill_country_leader = yes
+		set_politics = {
+        ruling_party = marxism
+		}
+		remove_ideas = exp_of_kautsky
+		}
+	}
+		option = { 
+        name = SAX.7.b
+		hidden_effect = {
+		complete_national_focus = SAX_kautsky_back
+		remove_ideas = SAX_red_guerilla
+		remove_ideas = SAX_for_welfare_of_the_workers
+		}
+	}
+    }
+	country_event = {
+	id = SAX.8
+	title = SAX.8.t
+	desc = SAX.8.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.8.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.9
+	title = SAX.9.t
+	desc = SAX.9.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.9.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.10
+	title = SAX.10.t
+	desc = SAX.10.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.10.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.11
+	title = SAX.11.t
+	desc = SAX.11.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.11.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.12
+	title = SAX.12.t
+	desc = SAX.12.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = SAX.12.a
+		
+		}
+    }
+	country_event = {
+	id = SAX.16
+	title = SAX.16.t
+	desc = SAX.16.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	
+	option = { 
+        name = SAX.16.a
+		SAX = { 
+		transfer_state = 807
+	    transfer_state = 86
+		}
+		}
+    option = { 
+        name = SAX.16.b
+		ai_chance = {
+		base = 0
+		}
+		declare_war_on = { 
+		target = SAX
+		type = civil_war 
+		 }
+		}
+    }
+	country_event = {
+	id = SAX.18
+	title = SAX.18.t
+	desc = SAX.18.d
+	picture = GFX_news_event_germany_victory
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		SAX = { 
+		owns_state = 66
+		owns_state = 840
+		owns_state = 871
+		owns_state = 61
+		owns_state = 858
+		owns_state = 50
+		owns_state = 52
+		owns_state = 853
+		owns_state = 58
+		}
+		original_tag = SAX
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = SAX.18.a
+		
+		}
+
+}
+
+	
+		
+			

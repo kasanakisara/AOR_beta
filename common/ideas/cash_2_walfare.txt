@@ -1,0 +1,561 @@
+ideas = {
+
+	salary_law = {
+		law = yes
+		use_list_view = no
+		
+		salary_0 = {
+				allowed = {
+				}
+				cost = 75
+				level = 1
+				removal_cost = -1
+				modifier = {
+					political_power_factor = -0.2
+					stability_factor = -0.2
+					war_support_factor = -0.2
+					conversion_cost_civ_to_mil_factor = 0.2
+					conversion_cost_mil_to_civ_factor = 0.2
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							check_variable = { budget_cost_ai_eigenvar < salary_1_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_1 = {
+				allowed = {
+				}
+				cost = 75
+				level = 2
+				removal_cost = -1
+				modifier = {
+					political_power_factor = -0.12
+					stability_factor = -0.12
+					war_support_factor = -0.12
+					conversion_cost_civ_to_mil_factor = 0.12
+					conversion_cost_mil_to_civ_factor = 0.12
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_1_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < salary_2_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_2 = {
+				allowed = {
+				}
+				cost = 75
+				level = 3
+				removal_cost = -1
+				modifier = {
+					political_power_factor = -0.06
+					stability_factor = -0.06
+					war_support_factor = -0.06
+					conversion_cost_civ_to_mil_factor = 0.06
+					conversion_cost_mil_to_civ_factor = 0.06
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_2_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < salary_3_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_3 = {
+				allowed = {
+				}
+				cost = 75
+				level = 4
+				removal_cost = -1
+				modifier = {
+					
+				}
+				default = yes
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_3_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < salary_4_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_4 = {
+				allowed = {
+				}
+				cost = 75
+				level = 5
+				removal_cost = -1
+				modifier = {
+					political_power_factor = 0.06
+					stability_factor = 0.06
+					war_support_factor = 0.06
+					conversion_cost_civ_to_mil_factor = -0.06
+					conversion_cost_mil_to_civ_factor = -0.06
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_4_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < salary_5_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_5 = {
+				allowed = {
+				}
+				cost = 75
+				level = 6
+				removal_cost = -1
+				modifier = {
+					political_power_factor = 0.12
+					stability_factor = 0.12
+					war_support_factor = 0.12
+					conversion_cost_civ_to_mil_factor = -0.12
+					conversion_cost_mil_to_civ_factor = -0.12
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_5_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < salary_6_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		salary_6 = {
+				allowed = {
+				}
+				cost = 75
+				level = 7
+				removal_cost = -1
+				modifier = {
+					political_power_factor = 0.20
+					stability_factor = 0.20
+					war_support_factor = 0.20
+					conversion_cost_civ_to_mil_factor = -0.20
+					conversion_cost_mil_to_civ_factor = -0.20
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < salary_6_budget_gui_var  } }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+	}
+
+    diplomiac = {
+		law = yes
+		use_list_view = no
+		diplomac_0 = {
+				allowed = {
+				}
+				cost = 75
+				level = 1
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = 0.3
+					justify_war_goal_time = 0.3
+					opinion_gain_monthly_factor = -0.3
+					send_volunteers_tension = 0.3
+					decryption_factor = -0.3
+					intel_network_gain_factor = -0.3
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							check_variable = { budget_cost_ai_eigenvar < diplomac_1_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_1 = {
+				allowed = {
+				}
+				cost = 75
+				level = 2
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = 0.2
+					justify_war_goal_time = 0.2
+					opinion_gain_monthly_factor = -0.2
+					send_volunteers_tension = 0.2
+					decryption_factor = -0.2
+					intel_network_gain_factor = -0.2
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_1_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < diplomac_2_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_2 = {
+				allowed = {
+				}
+				cost = 75
+				level = 3
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = 0.1
+					justify_war_goal_time = 0.1
+					opinion_gain_monthly_factor = -0.1
+					send_volunteers_tension = 0.1
+					decryption_factor = -0.1
+					intel_network_gain_factor = -0.1
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_2_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < diplomac_3_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_3 = {
+				allowed = {
+				}
+				cost = 75
+				level = 4
+				removal_cost = -1
+				modifier = {
+					
+				}
+				default = yes
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_3_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < diplomac_4_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_4 = {
+				allowed = {
+				}
+				cost = 75
+				level = 5
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = -0.1
+					justify_war_goal_time = -0.1
+					opinion_gain_monthly_factor = 0.1
+					send_volunteers_tension = -0.1
+					decryption_factor = 0.1
+					intel_network_gain_factor = 0.1
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_4_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < diplomac_5_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_5 = {
+				allowed = {
+				}
+				cost = 75
+				level = 6
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = -0.2
+					justify_war_goal_time = -0.2
+					opinion_gain_monthly_factor = 0.2
+					send_volunteers_tension = -0.2
+					decryption_factor = 0.2
+					intel_network_gain_factor = 0.2
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_5_budget_gui_var  } }
+							check_variable = { budget_cost_ai_eigenvar < diplomac_6_budget_gui_var  }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+		diplomac_6 = {
+				allowed = {
+				}
+				cost = 75
+				level = 7
+				removal_cost = -1
+				modifier = {
+					generate_wargoal_tension = -0.3
+					justify_war_goal_time = -0.3
+					opinion_gain_monthly_factor = 0.3
+					send_volunteers_tension = -0.3
+					decryption_factor = 0.3
+					intel_network_gain_factor = 0.3
+				}
+				allowed_to_remove = {
+				}
+				ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { budget_cost_ai_eigenvar < diplomac_6_budget_gui_var  } }
+						}   
+						add = 100  
+					}
+					factor = 10
+				}
+		}
+	}
+   
+	research_depart = {
+		law = yes
+		use_list_view = no
+		research_0 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 1
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.25
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						check_variable = { budget_cost_ai_eigenvar < research_1_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		research_1 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 2
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.15
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_1_budget_gui_var  } }
+						check_variable = { budget_cost_ai_eigenvar < research_2_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		research_2 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 3
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.07
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_2_budget_gui_var  } }
+						check_variable = { budget_cost_ai_eigenvar < research_3_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		
+		research_3 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 4
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0
+			}
+			default = yes
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_3_budget_gui_var  } }
+						check_variable = { budget_cost_ai_eigenvar < research_4_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		research_4 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 5
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.07
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_4_budget_gui_var  } }
+						check_variable = { budget_cost_ai_eigenvar < research_5_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		research_5 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 6
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_5_budget_gui_var  } }
+						check_variable = { budget_cost_ai_eigenvar < research_6_budget_gui_var  }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+		research_6 = {
+			allowed = {
+				always = yes
+			}
+			cost = 75
+			level = 7
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.25
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+				base = 0
+				modifier = { 
+					AND = {
+						NOT = { check_variable = { budget_cost_ai_eigenvar < research_6_budget_gui_var  } }
+					}   
+					add = 100  
+				}
+				factor = 10
+			}
+		}
+	}
+	
+}

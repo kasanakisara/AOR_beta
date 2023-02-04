@@ -1,0 +1,498 @@
+focus_tree = {
+	id = NAU_FocusTree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NAU
+		}
+	}
+
+	continuous_focus_position = { x = 1500  y = 2000 } 
+
+	focus = {
+		id = Recalcitrant_warlords #桀骜不驯的军阀
+		icon = GFX_goal_Recalcitrant_warlords
+		cost = 1
+		x = 7
+		y = 0
+
+		completion_reward={
+			country_event = { id = NAU.1 }
+		}
+	}
+	focus = {
+		id = Convening_the_Military_Headquarters_Conference #召开军部大会
+		icon = GFX_goal_Convening_the_Military_Headquarters_Conference
+		cost = 1
+		prerequisite = {
+			focus = Recalcitrant_warlords
+		}
+		x = 7
+		y = 1
+
+		completion_reward={
+			country_event = { id = NAU.2 }
+			army_experience = 10
+		}
+
+	}
+	focus = {
+		id = Fight_against_local_forces #打击地方势力
+		icon = GFX_goal_Fight_against_local_forces
+		cost = 1
+		prerequisite = {
+			focus = Convening_the_Military_Headquarters_Conference
+		}
+		x = 7
+		y = 2
+		completion_reward={
+			add_political_power = -50
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = Expand_Frankfurt_market #扩展法兰克福市场
+		icon = GFX_goal_Expand_Frankfurt_market
+		cost = 5
+		prerequisite = {
+			focus = Fight_against_local_forces
+		}
+		x = 3
+		y = 3
+		completion_reward={
+			54 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Create_a_cult_of_personality #制造个人崇拜
+		icon = GFX_goal_Create_a_cult_of_personality
+		cost = 5
+		prerequisite = {
+			focus = Fight_against_local_forces
+		}
+		x = 5
+		y = 3
+		completion_reward={
+			add_country_leader_trait = Commander_of_the_General
+		}
+
+	}
+	focus = {
+		id = The_prince's_speech #亲王的演讲
+		icon = GFX_goal_The_prince's_speech
+		cost = 3
+		prerequisite = {
+			focus = Create_a_cult_of_personality
+		}
+		x = 5
+		y = 4
+		completion_reward={
+			country_event = { id = NAU.3 }
+		}
+
+	}
+	focus = {
+		id = Military_Training #军队整训
+		icon = GFX_goal_Military_Training
+		cost = 4
+		prerequisite = {
+			focus = Fight_against_local_forces
+		}
+		x = 9
+		y = 3
+		completion_reward={
+			army_experience = 10
+			add_ideas = { A_professional_army_with_high_standards }
+		}
+
+	}
+	focus = {
+		id = An_attack_on_the_center #对中央的袭击
+		icon = GFX_goal_An_attack_on_the_center
+		cost = 3
+		prerequisite = {
+			focus = Military_Training
+		}
+		x = 9
+		y = 4
+		completion_reward={
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 60
+					num_provinces = 6
+					on_win = NAU_border_conflict.2
+					on_lose = NAU_border_conflict.3
+					on_cancel = NAU_border_conflict.4
+				}
+							
+				defender = {
+					state = 856
+					num_provinces = 6
+					on_win = NAU_border_conflict.3
+					on_lose = NAU_border_conflict.2
+					on_cancel = NAU_border_conflict.4
+				}
+			}
+
+		}
+
+	}
+	focus = {
+		id = Integrated_economic_control 
+		icon = GFX_goal_Integrated_economic_control
+		cost = 5
+		prerequisite = {
+			focus = The_prince's_speech
+		}
+		prerequisite = {
+			focus = An_attack_on_the_center
+		}
+		prerequisite = {
+			focus = Dismiss_the_die_hards
+		}
+		prerequisite = {
+			focus = Implement_the_merger_of_enterprises
+		}
+		x = 7
+		y = 5
+		completion_reward={
+			54 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = The_Prince's_iron_fist #亲王的铁拳
+		icon = GFX_goal_The_Prince's_iron_fist
+		cost = 3
+		prerequisite = {
+			focus = Fight_against_local_forces
+		}
+		x = 11
+		y = 3
+		completion_reward={
+			country_event = { id = NAU.4 }
+		}
+
+	}
+	focus = {
+		id = Implement_the_merger_of_enterprises #实行企业兼并
+		icon = GFX_goal_Implement_the_merger_of_enterprises
+		cost = 5
+		prerequisite = {
+			focus = Expand_Frankfurt_market
+		}
+		x = 3
+		y = 4
+		completion_reward={
+			custom_effect_tooltip = Implement_the_merger_of_enterprises_tt
+			hidden_effect = {
+				add_ideas = limited_exports
+				random_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Dismiss_the_die_hards #辞退顽固派
+		icon = GFX_goal_Dismiss_the_die_hards
+		cost = 6
+		prerequisite = {
+			focus = The_Prince's_iron_fist
+		}
+		x = 11
+		y = 4
+		completion_reward={
+			add_stability = 0.1
+			political_power_gain = 0.5
+		}
+
+	}
+	focus = {
+		id = Recall_the_command_of_the_army #回收统兵权
+		icon = GFX_goal_Recall_the_command_of_the_army
+		cost = 5
+		prerequisite = {
+			focus = Integrated_economic_control
+		}
+		x = 7
+		y = 6
+		completion_reward={
+			add_manpower = 500
+			custom_effect_tooltip = create_four_Imperial_Division_tt
+			hidden_effect = {
+			set_division_template_lock = {
+				division_template = "The Imperial Division"
+				is_locked = yes
+			}
+			division_template = {
+				name = "The Imperial Division"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery = { x = 0 y = 3 }
+					artillery = { x = 1 y = 3 }
+					artillery = { x = 2 y = 3 }
+
+				}
+				support = { 
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1}
+				} 
+			}
+			create_unit = {
+				division = "name = \"The Imperial Division\" division_template = \"The Imperial Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				owner = NAU
+				amount = 4
+			}
+		}
+	}
+}
+	focus = {
+		id = Open_up_for_industrialization #为工业化开路！
+		icon = GFX_goal_Open_up_for_industrialization
+		cost = 5
+		prerequisite = {
+			focus = Recall_the_command_of_the_army
+		}
+		x = 7
+		y = 7
+		completion_reward={
+			swap_ruler_traits = { remove = Commander_of_the_General add = Commander_of_the_General_1 }
+		}
+
+	}
+	focus = {
+		id = Seek_external_support
+		icon = GFX_goal_Seek_external_support
+		cost = 3
+		prerequisite = {
+			focus = Open_up_for_industrialization!
+		}
+		mutually_exclusive = {
+			focus = The_wisdom_of_the_officer_corps
+		}
+		x = 5
+		y = 9
+		completion_reward={
+			country_event = { id = NAU.5 }
+		}
+
+	}
+	focus = {
+		id = The_wisdom_of_the_officer_corps
+		icon = GFX_goal_The_wisdom_of_the_officer_corps
+		cost = 3
+		prerequisite = {
+			focus = Open_up_for_industrialization!
+		}
+		mutually_exclusive = {
+			focus = Seek_external_support
+		}
+		x = 8
+		y = 9
+		completion_reward={
+			country_event = { id = NAU.6 }
+		}
+	}
+	focus = {
+		id = A_trip_to_Italy
+		icon = GFX_goal_A_trip_to_Italy
+		cost = 6
+		prerequisite = {
+			focus = Seek_external_support
+		}
+		mutually_exclusive = {
+			focus = Find_Wurttemberg
+		}
+		mutually_exclusive = {
+			focus = Visiting_Munich
+		}
+		x = 2
+		y = 10
+		completion_reward={
+			add_popularity = {
+				ideology = Fascism
+				popularity = 0.1
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = relationship_with_ITA
+			}
+		}
+	}
+	focus = {
+		id = Find_Wurttemberg
+		icon = GFX_goal_Find_Württemberg
+		cost = 6
+		prerequisite = {
+			focus = Seek_external_support
+		}
+		mutually_exclusive = {
+			focus = A_trip_to_Italy
+		}
+		mutually_exclusive = {
+			focus = Visiting_Munich
+		}
+		x = 4
+		y = 10
+		completion_reward={
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.1
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = relationship_with_WUR
+			}
+		}
+	}
+	focus = {
+		id = Visiting_Munich #
+		icon = GFX_goal_Visiting_Munich
+		cost = 6
+		prerequisite = {
+			focus = Seek_external_support
+		}
+		mutually_exclusive = {
+			focus = A_trip_to_Italy
+		}
+		mutually_exclusive = {
+			focus = Find_Wurttemberg
+		}
+		x = 6
+		y = 10
+		completion_reward={
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.1
+			}
+			add_opinion_modifier = {
+				target = BAV
+				modifier = relationship_with_BAV
+			}
+		}
+
+	}
+	focus = {
+		id = Frankfurt_Arms_Factory #法兰克福军工厂
+		icon = GFX_goal_Frankfurt_Arms_Factory
+		cost = 6
+		prerequisite = {
+			focus = The_wisdom_of_the_officer_corps
+		}
+		x = 8
+		y = 10
+		completion_reward={
+			54 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Expanding_demand_to_stimulate_production
+		icon = GFX_goal_Expanding_demand_to_stimulate_production
+		cost = 7
+		prerequisite = {
+			focus = Frankfurt_Arms_Factory
+		}
+		x = 8
+		y = 11
+		completion_reward={
+			add_ideas = { Frankfurt_s_economic_system }
+			swap_ideas = {
+				remove_idea = Frankfurt_s_economic_system
+				add_idea = Frankfurt_s_economic_system_1
+			}
+			random_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Armed_border #武装边境
+		icon = GFX_goal_Armed_border
+		cost = 4
+		prerequisite = {focus = Expanding_demand_to_stimulate_production focus = Flexible_transformation_of_industry}
+		x = 7
+		y = 14
+		completion_reward={
+		load_focus_tree = NAU_FocusTree_2
+			swap_ideas = {
+				remove_idea = Frankfurt_s_economic_system_1
+				add_idea = Frankfurt_s_economic_system_2
+			}
+		}
+
+	}
+	focus = {
+		id = Priority_is_given_to_people_s_livelihood
+		icon = GFX_goal_Priority_is_given_to_people_s_livelihood
+		cost = 4
+		prerequisite = { focus = A_trip_to_Italy OR = Find_Württemberg OR = Visiting_Munich  }
+
+		x = 5
+		y = 11
+		completion_reward={
+			add_ideas = Frankfurt_s_economic_system
+			swap_ideas = {
+				remove_idea = Frankfurt_s_economic_system
+				add_idea = Frankfurt_s_economic_system_3
+			}
+		}
+
+	}
+	focus = {
+		id = Flexible_transformation_of_industry
+		icon = GFX_goal_Flexible_transformation_of_industry
+		cost = 3
+		prerequisite = {
+			focus = Priority_is_given_to_people_s_livelihood
+		}
+		x = 5
+		y = 12
+		completion_reward={
+			swap_ideas = {
+				remove_idea = Frankfurt_s_economic_system_3
+				add_idea = Frankfurt_s_economic_system_4
+			}
+		}
+	}
+}

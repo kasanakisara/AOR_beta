@@ -1,0 +1,570 @@
+ideas = {
+
+    land_budget = {
+        law = yes
+		use_list_view = no
+        land_budget_0 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 1
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { land_cost = 0 }  }  }
+			modifier = {
+				recon_factor = 0
+				army_attack_factor = 0
+				army_defence_factor = 0
+				army_speed_factor = 0
+				army_org_factor = 0
+				army_morale_factor = 0
+				planning_speed = 0
+				supply_consumption_factor = 0
+				experience_loss_factor = 0				
+			}
+			default = yes
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							check_variable = { mili_budget_ai_eigenvar < 150 }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+		}
+		land_budget_1 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 2
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { land_cost = 150 }  }  }
+			modifier = {
+				recon_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				planning_speed = 0.1
+				supply_consumption_factor = -0.05
+				experience_loss_factor = -0.15	
+				
+			}
+			available = { 
+				has_war_support > 0.3
+				has_stability > 0.3
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 150 } }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+		}
+		land_budget_2 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 3
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { land_cost = 300 }  }  }
+			modifier = {
+				recon_factor = 0.1
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+				planning_speed = 0.2
+				supply_consumption_factor = -0.1
+				experience_loss_factor = -0.3
+			}
+			available = { 
+				has_war_support > 0.5
+				has_stability > 0.5
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 300 } }
+						}   
+						add = 200  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+		}
+		land_budget_3 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 4
+			removal_cost = -1
+			available = { has_war = yes 
+						  has_war_support > 0.7
+						  has_stability > 0.7
+						}
+			on_add ={ ROOT = { set_variable = { land_cost = 450 }  }  }
+			modifier = {
+				recon_factor = 0.15
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_speed_factor = 0.3
+				army_org_factor = 0.3
+				army_morale_factor = 0.3
+				planning_speed = 0.3
+				supply_consumption_factor = -0.15
+				experience_loss_factor = -0.45
+				
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 1200 } }
+						}   
+						add = 400  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+		}
+		land_budget_4 = {
+			allowed = {
+				always = yes
+			}
+			available = { has_war = yes 
+						  has_war_support > 0.9
+						  has_stability > 0.9
+						}
+			cost = 50
+			level = 5
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { land_cost = 600 }  }  }
+			modifier = {
+				recon_factor = 0.2
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.4
+				army_org_factor = 0.4
+				army_morale_factor = 0.4
+				planning_speed = 0.4
+				supply_consumption_factor = -0.2
+				experience_loss_factor = -0.60
+				
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 1350 } }
+						}   
+						add = 800  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+		}
+	}
+  
+  
+    airforce_budget = {
+        law = yes
+		use_list_view = no
+        airforce_budget_0 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			removal_cost = -1
+			level = 1
+			on_add ={ ROOT = { set_variable = { airforce_cost = 0 }  }  }
+			modifier = {
+				army_bonus_air_superiority_factor = 0
+				air_attack_factor = 0
+				air_agility_factor = 0
+				air_mission_efficiency = 0
+				air_weather_penalty = 0			
+				air_night_penalty = 0
+				air_accidents = 0
+				air_range_factor = 0
+			}
+			default = yes
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							check_variable = { mili_budget_ai_eigenvar < 150 }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+        }
+		airforce_budget_1 = {
+			allowed = {
+				always = yes
+			}
+			available = {  
+						  has_war_support > 0.3
+						  has_stability > 0.3
+						}
+			cost = 50
+			level = 2
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { airforce_cost = 150 }  }  }
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_attack_factor = 0.1
+				air_agility_factor = 0.1
+				air_mission_efficiency = 0.1
+				air_weather_penalty = -0.1		
+				air_night_penalty = -0.1
+				air_accidents = -0.1
+				air_range_factor = 0.1
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 450 } }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		airforce_budget_2 = {
+				available = { 
+						  has_war_support > 0.5
+						  has_stability > 0.5
+						}
+			allowed = {
+				always = yes
+			}
+			level = 3
+			cost = 50
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { airforce_cost = 300 }  }  }
+			modifier = {
+				army_bonus_air_superiority_factor = 0.2
+				air_attack_factor = 0.2
+				air_agility_factor = 0.2
+				air_mission_efficiency = 0.2
+				air_weather_penalty = -0.2
+				air_night_penalty = -0.2
+				air_accidents = -0.2
+				air_range_factor = 0.2
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 750 } }
+						}   
+						add = 200  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		airforce_budget_3 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 4
+			available = { has_war = yes 
+						  has_war_support > 0.7
+						  has_stability > 0.7
+						}
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { airforce_cost = 450 }  }  }
+			modifier = {
+				army_bonus_air_superiority_factor = 0.3
+				air_attack_factor = 0.3
+				air_agility_factor = 0.3
+				air_mission_efficiency = 0.3
+				air_weather_penalty = -0.3	
+				air_night_penalty = -0.3
+				air_accidents = -0.3
+				air_range_factor = 0.3
+			}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 1500 } }
+						}   
+						add = 400  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		airforce_budget_4 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 5
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { airforce_cost = 600 }  }  }
+			modifier = {
+				army_bonus_air_superiority_factor = 0.4
+				air_attack_factor = 0.4
+				air_agility_factor = 0.4
+				air_mission_efficiency = 0.4
+				air_weather_penalty = -0.4	
+				air_night_penalty = -0.4
+				air_accidents = -0.4
+				air_range_factor = 0.4
+			}
+			allowed_to_remove = {
+			}
+			available = { has_war = yes 
+						  has_war_support > 0.9
+						  has_stability > 0.9
+						}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 1950 } }
+						}   
+						add = 800  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+      
+    }
+ 
+ 
+ 
+    naval_budget = {
+        law = yes
+		use_list_view = no
+        naval_budget_0 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 1
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { naval_cost = 0 }  }  }
+			modifier = {
+				navy_org = 0
+				navy_screen_attack_factor = 0
+				navy_screen_defence_factor = 0
+				navy_capital_ship_attack_factor = 0
+				navy_capital_ship_defence_factor = 0
+				naval_speed_factor = 0
+				navy_max_range_factor = 0
+				navy_anti_air_attack_factor = 0
+				naval_hit_chance = 0
+				amphibious_invasion = 0
+			}
+			default = yes
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							check_variable = { mili_budget_ai_eigenvar < 150 }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+        }
+		naval_budget_1 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 2
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { naval_cost = 150 }  }  }
+			available = { 
+						  has_war_support > 0.3
+						  has_stability > 0.3
+						}
+			modifier = {
+				navy_org = 15
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+				naval_speed_factor = 0.1
+				navy_max_range_factor = 0.1
+				navy_anti_air_attack_factor = 0.1
+				naval_hit_chance = 0.05
+				amphibious_invasion = 0.1
+			}
+			allowed_to_remove = {
+			}
+			
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 900 } }
+						}   
+						add = 100  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		naval_budget_2 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 3
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { naval_cost = 300 }  }  }
+			modifier = {
+				navy_org = 30
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				naval_speed_factor = 0.2
+				navy_max_range_factor = 0.2
+				navy_anti_air_attack_factor = 0.2
+				naval_hit_chance = 0.1
+				amphibious_invasion = 0.2
+			}
+			available = { 
+						  has_war_support > 0.5
+						  has_stability > 0.5
+						}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 1800 } }
+						}   
+						add = 200  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		naval_budget_3 = {
+			allowed = {
+				always = yes
+			}
+			cost = 50
+			level = 4
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { naval_cost = 450 }  }  }
+			modifier = {
+				navy_org = 45
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+				navy_capital_ship_attack_factor = 0.15
+				navy_capital_ship_defence_factor = 0.15
+				naval_speed_factor = 0.3
+				navy_max_range_factor = 0.3
+				navy_anti_air_attack_factor = 0.3
+				naval_hit_chance = 0.15
+				amphibious_invasion = 0.3
+			}
+			allowed_to_remove = {
+			}
+			available = { has_war = yes 
+						  has_war_support > 0.7
+						  has_stability > 0.7
+						}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 2250 } }
+						}   
+						add = 400  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+		naval_budget_4 = {
+			allowed = {
+				always = yes
+			}
+			level = 5
+			cost = 50
+			removal_cost = -1
+			on_add ={ ROOT = { set_variable = { naval_cost = 600 }  }  }
+			modifier = {
+				navy_org = 60
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.2
+				navy_capital_ship_attack_factor = 0.2
+				navy_capital_ship_defence_factor = 0.2
+				naval_speed_factor = 0.4
+				navy_max_range_factor = 0.4
+				navy_anti_air_attack_factor = 0.4
+				naval_hit_chance = 0.2
+				amphibious_invasion = 0.4
+			}
+			available = { has_war = yes 
+						  has_war_support > 0.9
+						  has_stability > 0.9
+						}
+			allowed_to_remove = {
+			}
+			ai_will_do = {
+					base = 0
+					modifier = { 
+						AND = {
+							NOT = { check_variable = { mili_budget_ai_eigenvar < 2400 } }
+						}   
+						add = 800  
+					}
+					factor = 10
+			}
+			cancel_if_invalid = yes
+        }
+        
+    }
+	
+}

@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+		
+		#阴暗的帝国之心
+		Dark_Heart_of_empire = {
+			
+			picture = idea_Dark_Heart_of_empire
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+			    drift_defence_factor = -0.25
+				war_support_factor = 0.2
+				stability_factor = -0.1
+				war_stability_factor = 0.25
+			}
+		}
+	}
+}	

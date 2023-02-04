@@ -1,0 +1,64 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "BAV_different_choice_scripted_gui"
+		size = { width = 100% height= 200 }
+		position = {
+			x = 0
+			y = 0
+		}
+		
+		#iconType = {
+		#	name = "BAV_different_choice_progressbar"
+		#	spriteType ="GFX_BAV_progressbar"
+		#	position = { x = 0 y = 0 }
+		#	Orientation = "UPPER_LEFT"
+		#	pdx_tooltip = BAV_different_choice_progressbar_tooltip
+		#}
+		instantTextBoxType = {
+			name = "BAV_different_choice_scripted_gui_title"
+			position = { x = -110 y = -110 }
+			text = "BAV_different_choice_title"
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0 }
+			maxWidth = 200
+			maxHeight = 20
+			format = center
+			Orientation = "CENTER"
+		}
+		iconType = {
+
+			name = "BAV_different_choice_progressbar_2"
+			spriteType ="GFX_BAV_progressbar_2"
+			position = { x = 100 y = 75 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = BAV_different_choice_progressbar_tooltip
+			scale = 1.5
+		}
+		instantTextBoxType = {
+			name = "BAV_different_choice_scripted_gui_value"
+			position = { x = -120 y = -70 }
+			text = "BAV_different_choice_value"
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 220
+			maxHeight = 20
+			format = center
+			Orientation = "CENTER"
+		}
+		instantTextBoxType = {
+			name = "BAV_different_choice_scripted_gui_effecft"
+			position = { x = -200 y = 15 }
+			text = "BAV_different_choice_effect"
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 380
+			maxHeight = 20
+			format = center
+			Orientation = "CENTER"
+		}
+
+
+	}
+
+}

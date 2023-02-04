@@ -1,0 +1,42 @@
+ideas = {
+
+	country = {
+		Imperial_General_Staff = {
+
+			romoval_cost = -1
+			
+			picture = idea_Imperial_General_Staff
+			
+			modifier = {
+				max_planning = 0.2
+				planning_speed = 0.2
+			}
+		}
+		The_new_nest_of_militarism = {
+
+			romoval_cost = -1
+			
+			picture = idea_The_new_nest_of_militarism
+			
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		Chaotic_politics = {
+
+			romoval_cost = -1
+			
+			picture = idea_Chaotic_politics
+			
+			modifier = {
+				stability_factor = -0.2
+		        research_speed_factor = -0.10
+		        drift_defence_factor = -0.5
+			}
+		}
+	}
+}

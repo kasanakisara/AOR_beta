@@ -1,0 +1,25 @@
+ideas = {
+    
+    country = {
+        exp_of_kautsky = {
+
+            picture = idea_exp_of_kautsky
+
+            modifier = {
+                political_power_gain = +0.5
+                consumer_goods_factor = +0.1
+            }
+        }
+            
+        cliffs_and_tigers = {
+
+            picture = idea_cliffs_and_tigers
+
+            modifier = {
+                production_speed_bunker_factor = +0.1
+                army_core_defence_factor = +0.15
+                conscription_factor = +0.1
+            }
+        }
+    }
+}

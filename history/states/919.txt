@@ -1,0 +1,23 @@
+state={
+	id=919
+	name="STATE_919"
+	manpower = 200000
+	
+	state_category =rural
+
+	history={
+		owner = AFG
+		add_core_of = RUS
+		add_core_of = TAJ
+		add_core_of = BUK
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		12805
+	}
+
+	local_supplies=0.0
+}

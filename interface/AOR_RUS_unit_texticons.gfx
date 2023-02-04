@@ -1,0 +1,24 @@
+spriteTypes = {	
+	#辎重大队
+	spriteType = {
+		name = "GFX_unit_impedimenta_icon_small"
+		texturefile = "gfx/texticons/unit_impedimenta_icon_smalll.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#迫击炮
+	spriteType = {
+		name = "GFX_unit_Mortarbrigade_icon_small"
+		texturefile = "gfx/texticons/unit_Mortarbrigade_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#迫击炮支援连
+	spriteType = {
+		name = "GFX_unit_Mortarsupport_icon_small"
+		texturefile = "gfx/texticons/unit_Mortarsupport_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+}

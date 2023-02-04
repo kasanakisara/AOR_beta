@@ -1,0 +1,20 @@
+state={
+	id=852
+	name="STATE_852"
+	manpower = 100
+	
+	state_category = wasteland
+
+	history={
+		owner = CHI
+		add_core_of = SIK
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		5042
+	}
+
+	local_supplies=0.0 
+}

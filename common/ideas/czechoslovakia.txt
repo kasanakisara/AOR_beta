@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+        
+		#大工业区
+		CZE_Large_industrial_area = {
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_CZE_Large_industrial_area
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+    }
+}

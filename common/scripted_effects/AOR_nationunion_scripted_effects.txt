@@ -1,0 +1,126 @@
+spawn_AOR_nu_main_country = {
+
+	for_each_loop = {
+		array = global.AOR_nationunion_main_array
+		add_to_array = { ROOT.AOR_nationunion_main_array = v }
+	}
+
+	every_country = {
+		limit = {
+			exist = yes
+			is_major = no
+		}
+		add_to_array = { global.AOR_nationunion_mini_array = THIS }
+	}
+	for_each_loop = {
+		array = global.AOR_nationunion_mini_array
+		add_to_array = { ROOT.AOR_nationunion_mini_array = v }
+	}
+
+
+	set_country_flag = AOR_nu_gui_open
+
+}
+Get_vote_result = {
+	for_each_loop = {
+		array = global.AOR_approve_country_array
+		add_to_array = { ROOT.AOR_approve_country_array = v }
+	}
+	for_each_loop = {
+		array = global.AOR_abstain_country_array
+		add_to_array = { ROOT.AOR_abstain_country_array = v }
+	}
+	for_each_loop = {
+		array = global.AOR_disagree_country_array
+		add_to_array = { ROOT.AOR_disagree_country_array = v }
+	}
+}
+Get_AOR_Faction = {
+	meta_effect = {
+		text = {
+			clear_array = ROOT.AOR_faction_array
+			clear_array = [GetNUTag].[GetNUTag]_faction_members
+			every_country = {
+				limit = {
+					is_in_faction_with = [GetNUTag]
+					not = {
+						tag = [GetNUTag]
+					}
+				}
+				add_to_array = { [GetNUTag].[GetNUTag]_faction_members = THIS }
+			}
+			add_to_array = { ROOT.AOR_faction_array = [GetNUTag] }
+			for_each_loop = {
+				array = [GetNUTag].[GetNUTag]_faction_members
+				if = {
+					limit = {
+						NOT = { is_in_array = { ROOT.AOR_faction_array = v } }
+					}
+					add_to_array = { ROOT.AOR_faction_array = v }
+				}
+			}
+			ROOT = {
+				set_variable = { AOR_Faction_leader = [GetNUTag] }
+				set_country_flag = AOR_faction_gui_open
+			}
+		}
+		GetNUTag = "[?var:MainCountry_faction.GetTag]"
+	}
+
+}
+#Get_AOR_Faction_ENG = {
+#	clear_array = ROOT.AOR_faction_array
+#	clear_array = ENG.ENG_faction_members
+#	every_country = {
+#		limit = {
+#			is_in_faction_with = ENG
+#			not = {
+#				tag = ENG
+#			}
+#		}
+#		add_to_array = { ENG.ENG_faction_members = THIS }
+#	}
+#	add_to_array = { ROOT.AOR_faction_array = ENG }
+#	for_each_loop = {
+#		array = ENG.ENG_faction_members
+#		if = {
+#			limit = {
+#				NOT = { is_in_array = { ROOT.AOR_faction_array = v } }
+#			}
+#			add_to_array = { ROOT.AOR_faction_array = v }
+#		}
+#	}
+#	ROOT = {
+#		set_variable = { AOR_Faction_leader = ENG }
+#		set_country_flag = AOR_faction_gui_open
+#	}
+#
+#}
+
+AOR_vote_approve = {
+	add_to_array = {
+		global.AOR_approve_country_array = ROOT
+	}
+	add_to_array = {
+		ROOT.AOR_approve_country_array = ROOT
+	}
+	set_country_flag = AOR_vote_approve
+}
+AOR_vote_abstain = {
+	add_to_array = {
+		global.AOR_abstain_country_array = ROOT
+	}
+	add_to_array = {
+		ROOT.AOR_abstain_country_array = ROOT
+	}
+	set_country_flag = AOR_vote_abstain
+}
+AOR_vote_disagree = {
+	add_to_array = {
+		global.AOR_disagree_country_array = ROOT
+	}
+	add_to_array = {
+		ROOT.AOR_disagree_country_array = ROOT
+	}
+	set_country_flag = AOR_vote_disagree
+}

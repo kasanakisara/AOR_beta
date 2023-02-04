@@ -1,0 +1,25 @@
+state = {
+	id = 839
+	name = "STATE_839"
+
+	history = {
+		owner = DEN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+		add_core_of = DEN
+		add_core_of = SHL
+	}
+
+	provinces = {
+		332 11251 11366
+	}
+	
+	manpower = 192433
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies = 0.0 
+}

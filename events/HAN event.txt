@@ -1,0 +1,148 @@
+add_namespace = HAN
+
+#开局介绍
+country_event = {
+	id = HAN.1
+	title = HAN.1.t
+	desc = HAN.1.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.1.a
+	}
+}
+
+#我很可爱，请给我钱
+country_event = {
+	id = HAN.2
+	title = HAN.2.t
+	desc = HAN.2.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.2.a
+		add_political_power = -25
+	}
+}
+#比荷卢人滚
+country_event = {
+	id = HAN.4
+	title = HAN.4.t
+	desc = HAN.4.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.4.a
+		add_political_power = -25
+	}
+}
+
+#安人滚
+country_event = {
+	id = HAN.3
+	title = HAN.3.t
+	desc = HAN.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.3.a
+		add_manpower = -1
+	}
+	
+	option = {
+		name = HAN.3.b
+        custom_effect_tooltip = HAN_2_tt
+	}
+
+}
+#威州人滚
+country_event = {
+	id = HAN.5
+	title = HAN.5.t
+	desc = HAN.5.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.5.a
+		HAN={
+		add_tech_bonus = {
+		bonus = 1.0 
+		uses = 1
+		category = tp_tech
+		}
+	}
+  }
+}
+#国联让所有威州人滚
+country_event = {
+	id = HAN.6
+	title = HAN.6.t
+	desc = HAN.6.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.6.a
+	}
+}
+
+#舔狗舔法兰克福
+country_event = {
+	id = HAN.7
+	title = HAN.7.t
+	desc = HAN.7.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.7.a
+		reverse_add_opinion_modifier = {
+          target = NAU
+          modifier = attache_sent
+           }
+	}
+}
+
+#舔狗舔柏林
+country_event = {
+	id = HAN.8
+	title = HAN.8.t
+	desc = HAN.8.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.8.a
+		reverse_add_opinion_modifier = {
+          target = GER
+          modifier = attache_sent
+           }
+	}
+}
+
+#戴春风来咯
+country_event = {
+	id = HAN.9
+	title = HAN.9.t
+	desc = HAN.9.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.9.a
+	}
+}

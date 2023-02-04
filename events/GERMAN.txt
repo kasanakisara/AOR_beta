@@ -1,0 +1,178 @@
+###########################
+# German Events
+###########################
+
+add_namespace = news_GER
+add_namespace = event_GER
+
+
+#德意志阵营解散
+country_event = {
+	id = event_GER.1
+	title = event_GER.1.t
+	desc = event_GER.1.d
+	picture = GFX_events_german_disintegrated
+
+	trigger = {
+	    date > 1923.1.1
+		tag = GER
+	}
+	
+	mean_time_to_happen = {day = 1}
+	
+	fire_only_once = yes
+
+    #那就这样吧  
+	option = {
+		name = event_GER.1.a
+		dismantle_faction = yes
+		hidden_effect = {
+			
+			RHI = {
+				transfer_state = 42
+				transfer_state = 51
+				transfer_state = 859
+				transfer_state = 850
+				add_state_core = 42
+				add_state_core = 51
+				add_state_core = 859
+				add_state_core = 850
+				add_manpower = 10000
+				if = {
+					NOT = { has_template = "Common Militia" } }
+					   division_template = {
+					   priority = 0
+					   name = "Common Militia"
+					   regiments = {
+					   infantry = { x = 0 y = 0 } 
+					   infantry = { x = 0 y = 1 } 
+					   infantry = { x = 1 y = 0 } 
+					   infantry = { x = 1 y = 1 } 
+								   }
+					   support = {
+								   }
+							   }
+							   random_controlled_state = {
+								   limit = { is_capital = yes }
+								   create_unit = {
+									   division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+									   owner = PREV
+								   }
+								   create_unit = {
+									   division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+									   owner = PREV
+								   }
+								   create_unit = {
+									   division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+									   owner = PREV
+								   }
+								   create_unit = {
+									   division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+									   owner = PREV
+								   }
+								   create_unit = {
+									   division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+									   owner = PREV
+								   }
+								   create_unit = {
+									   division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+									   owner = PREV
+									   count = 1
+								   }
+							    }
+				        	}
+			FRA = {
+       				  puppet = RHI
+					}
+		 42 = { 
+			add_core_of = RHI
+			is_demilitarized_zone = no 
+			}
+		 51 = { 
+			add_core_of = RHI
+			is_demilitarized_zone = no 
+			}
+		 859 = { 
+			add_core_of = RHI
+			is_demilitarized_zone = no 
+			}
+		 850 = {
+			 add_core_of = RHI
+			 is_demilitarized_zone = no 
+			}
+        } 
+    }
+}
+#德意志阵营解散新闻
+news_event = {
+	id = news_GER.1
+	title = news_GER.1.t
+	desc = news_GER.1.d
+	picture = GFX_news_german_disintegrated
+    major = yes
+	is_triggered_only = yes
+
+    #德意志人又开始了  
+	option = {
+		name = news_GER.1.a
+		add_war_support = 0.01
+        hidden_effect = {
+			
+    	}
+	}
+}
+
+#第一阶段
+news_event = {
+	id = news_GER.2
+	title = news_GER.2.t
+	desc = news_GER.2.d
+	picture = GFX_news_german_disintegrated
+    major = yes
+	is_triggered_only = yes
+	trigger = {
+	    date > 1923.4.4
+		date < 1923.4.6
+	}
+    
+	option = {
+		name = news_GER.2.a
+    	}
+}
+
+#第二阶段
+news_event = {
+	id = news_GER.3
+	title = news_GER.3.t
+	desc = news_GER.3.d
+	picture = GFX_news_german_disintegrated
+    major = yes
+	is_triggered_only = yes
+	trigger = {
+	    date > 1923.4.7
+		date < 1923.4.9
+	}
+    
+	option = {
+		name = news_GER.3.a
+    	}
+}
+
+#第三阶段
+news_event = {
+	id = news_GER.4
+	title = news_GER.4.t
+	desc = news_GER.4.d
+	picture = GFX_news_german_disintegrated
+    major = yes
+	is_triggered_only = yes
+	trigger = {
+	    date > 1923.4.9
+		date < 1923.4.11
+	}
+    
+	option = {
+		name = news_GER.4.a
+        remove_ideas = Compact_of_German_Confederation
+	}
+}

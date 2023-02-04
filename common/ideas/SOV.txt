@@ -1,0 +1,115 @@
+ideas = {
+	
+	country= {
+	
+	        #革命起源地
+			SOV_Origin_of_revolution ={
+
+				picture = idea_SOV_Origin_of_revolution
+			
+				allowed = {
+					always = yes
+				}
+
+				modifier = {
+					stability_factor = 0.05
+					drift_defence_factor = 0.3
+				}
+			
+				rule = {
+					can_create_factions = yes
+				}
+		    
+				visible = {
+					always = yes
+				}
+			}
+			  
+			#落后的农业国
+			SOV_Backward_agricultural_country ={
+			
+				picture = idea_SOV_Backward_agricultural_country
+			
+				allowed = {
+					always = yes
+				}
+
+				modifier = {
+					monthly_population = 0.005
+					production_factory_max_efficiency_factor = -0.1
+					production_speed_buildings_factor = 0.1
+				}
+				
+				visible = {
+					always = yes
+				}
+			
+				visible = {
+					always = yes
+				}
+			}
+
+	        #战时共产主义
+			SOV_Wartime_communism = {
+			
+				picture = idea_SOV_Wartime_communism
+			
+				allowed = {
+					always = yes
+				}
+
+				modifier = {
+					consumer_goods_factor = -0.1
+					stability_factor = -0.1
+					war_support_factor = -0.05
+					supply_consumption_factor = 0.05
+				}
+			
+				visible = {
+					always = yes
+				}
+			}
+			
+			#契卡
+			SOV_Cheka = {
+			
+				picture = idea_SOV_Cheka
+			
+				allowed = {
+					always = yes
+				}
+
+				modifier = {
+					root_out_resistance_effectiveness_factor = -0.5
+					drift_defence_factor = 0.1
+					local_non_core_manpower = 0.02
+				}
+			
+				visible = {
+					always = yes
+				}
+			}
+			  
+			#红军
+			SOV_The_Red_Army = {
+			
+				picture = idea_SOV_The_Red_Army
+			
+				allowed = {
+					always = yes
+				}
+
+				modifier = {
+					experience_gain_army_unit = -0.05
+					army_attack_factor = 0.1
+					Army_org_factor = 0.05
+				}
+			
+				visible = {
+					always = yes
+				}
+			}
+        }
+}
+		    
+			

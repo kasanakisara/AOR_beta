@@ -1,0 +1,186 @@
+characters = {
+    SAX_Gerd_von_Rundstedt = { #August_von_mackensen
+		name = SAX_Gerd_von_Rundstedt
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/SAX_Rundstedt.png
+				small = GFX_portrait_SAX_Friedrich_August_small
+			}
+			civilian = {
+				large = gfx/leaders/SAX/SAX_Rundstedt.png
+				small = GFX_portrait_SAX_Friedrich_August_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero brilliant_strategist infantry_officer cavalry_officer politically_connected harsh_leader trait_cautious career_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+    SAX_August_von_mackensen = { #August_von_mackensen
+		name = SAX_August_von_mackensen
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/MEKEN.png
+				small = GFX_portrait_SAX_Friedrich_August_small
+			}
+			civilian = {
+				large = gfx/leaders/SAX/MEKEN.png
+				small = GFX_portrait_SAX_Friedrich_August_small
+			}
+		}
+		field_marshal = {
+			traits = { war_hero brilliant_strategist infantry_officer cavalry_officer politically_connected harsh_leader trait_cautious career_officer }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	SAX_Friedrich_August = { #Friedrich_August
+		name = SAX_Friedrich_August
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/friedrich.dds
+				small = gfx/interface/ideas/SAX_friedrich.dds
+			}
+			civilian = {
+				large = gfx/leaders/SAX/friedrich.dds
+				small = gfx/interface/ideas/SAX_friedrich.dds
+			}
+		}
+		field_marshal = {
+			traits = { war_hero brilliant_strategist infantry_officer cavalry_officer politically_connected harsh_leader trait_cautious career_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SAX_Friedrich_August
+			allowed = { original_tag = SAX }
+			traits = { old_figurehead }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	SAX_Hans_Karl_Adolph_von_Carlowitz = { #Hans_Karl_Adolph_von_Carlowitz
+		name = SAX_Hans_Karl_Adolph_von_Carlowitz
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/SAX_hans.dds
+				small = GFX_portrait_SAX_Hans_Karl_Adolph_von_Carlowitz_small
+			}
+			civilian = {
+				large = gfx/leaders/SAX/SAX_hans.dds
+				small = GFX_portrait_SAX_Hans_Karl_Adolph_von_Carlowitz_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero brilliant_strategist infantry_officer commando adaptable infantry_expert }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAX_Hans_Karl_Adolph_von_Carlowitz
+			allowed = { original_tag = SAX }
+			traits = { army_chief_defensive_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	SAX_Max_von_Hausen = { #Max_von_Hausen
+		name = SAX_Max_von_Hausen
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/SAX_max.png
+				small = GFX_portrait_SAX_Max_von_Hausen_small
+			}
+		
+		}
+		field_marshal = {
+			traits = { old_guard war_hero harsh_leader infantry_officer thorough_planner trait_cautious }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	SAX_Max_Leuthold = { #Max_Leuthhold
+		name = SAX_Max_Leuthhold
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/SAX_leuthold.dds
+				small = GFX_portrait_SAX_Max_Leuthold_small
+			}
+			civilian = {
+				large = gfx/leaders/SAX/SAX_leuthold.dds
+				small = GFX_portrait_SAX_Max_Leuthold_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer war_hero brilliant_strategist trait_cautious infantry_officer cavalry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAX_Max_Leuthold
+			allowed = { original_tag = SAX }
+			traits = { army_chief_drill_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	SAX_Karl_Ludwig = { #Karl_Ludwig
+		name = SAX_Karl_Ludwig
+		portraits = {
+			army = {
+				large = gfx/leaders/SAX/SAX_karl_ludwig.dds
+				small = GFX_portrait_SAX_Karl_Ludwng_small
+			}
+			civilian = {
+				large = gfx/leaders/SAX/SAX_karl_ludwig.dds
+				small = GFX_portrait_SAX_Karl_Ludwng_small
+			}
+		}
+		field_marshal = {
+			traits = { war_hero career_officer old_guard trait_cautious infantry_officer cavalry_officer offensive_doctrine fast_planner }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			ledger = 
+			idea_token = SAX_Karl_Ludwig
+			allowed = { original_tag = SAX }
+			traits = { army_infantry_3 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+}

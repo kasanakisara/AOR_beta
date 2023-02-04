@@ -1,0 +1,997 @@
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=SAX
+		}
+	}
+	continuous_focus_position = { x = 55 y = 1800 }
+	
+	default=no
+	focus={
+		id=State_of_Saxony
+		icon = GFX_goal_SAX_state
+		cost = 4.00
+		x=12
+		y=0
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 250
+		add_stability = 0.05
+		add_war_support = 0.1
+		army_experience = 25
+			custom_effect_tooltip = "在首都获得三只精锐部队"
+			hidden_effect = {
+				division_template = {
+					name = "精锐骑兵"
+					is_locked = yes
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+						cavalry = { x = 0 y = 3 }
+						cavalry = { x = 0 y = 4 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 1 y = 3 }
+						cavalry = { x = 1 y = 4 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精锐骑兵\" division_template = \"精锐骑兵\" start_experience_factor = 1"
+						owner = ROOT
+						count = 3
+					}
+				}
+			}
+		add_ideas = SAX_theodore
+		}
+	}
+	focus={
+		id=go_left
+		icon = GFX_goal_SAX_left
+		cost = 4.00
+		x=6
+		y=1
+		prerequisite={focus=State_of_Saxony}
+		mutually_exclusive={focus=keep_balance focus=go_right }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 250
+		add_timed_idea = {
+		idea = SAX_leftism
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=keep_balance
+	    icon = GFX_goal_SAX_keep
+		cost = 4.00
+		x=12
+		y=1
+		prerequisite={focus=State_of_Saxony}
+		mutually_exclusive={focus=go_left focus=go_right }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 250
+		add_timed_idea = {
+		idea = SAX_balance
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=go_right
+		icon = GFX_goal_SAX_right
+		cost = 4.00
+		x=18
+		y=1
+		prerequisite={focus=State_of_Saxony}
+		mutually_exclusive={focus=go_left focus=keep_balance }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 250
+		add_timed_idea = {
+		idea = SAX_rightism
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=imprison_rightism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=6
+		y=2
+		prerequisite={focus=go_left}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = 0.05
+		add_timed_idea = {
+		idea = imprison_rightism
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=Purge_leftism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=18
+		y=2
+		prerequisite={focus=go_right}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 300
+		custom_effect_tooltip = "完成此国策以对抗西奥多的人民阵线"
+		add_stability = -0.05
+		add_timed_idea = {
+		idea = Purge_leftism
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=stop_political_violence
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=12
+		y=2
+		prerequisite={focus=keep_balance}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = -0.05
+		add_timed_idea = {
+		idea = SAX_stop_politic_war
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=International_Workers
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=6
+		y=3
+		prerequisite={focus=imprison_rightism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = marxism
+		popularity = 0.05
+		}
+		add_ideas = International_Workers
+		}
+	}
+	focus={
+		id=Open_elections
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=12
+		y=3
+		prerequisite={focus=stop_political_violence}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.05
+		}
+		add_ideas = Open_elections
+		}
+	}
+	focus={
+		id=Set_up_Stormtrooper
+		icon = GFX_goal_SAX_Set_up_Stormtrooper
+		cost = 4.00
+		x=18
+		y=3
+		prerequisite={focus=Purge_leftism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.05
+		}
+		add_ideas = Set_up_Stormtrooper
+		}
+	}
+	focus={
+		id=revolution_with_ardour
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=6
+		y=4
+		prerequisite={focus=International_Workers}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = marxism
+		popularity = 0.05
+		}
+		add_ideas = revolution_with_ardour
+		}
+	}
+	focus={
+		id=demarcation_constituencies
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=12
+		y=4
+		prerequisite={focus=Open_elections}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.05
+		}
+		add_timed_idea = {
+		idea = demarcation_constituencies
+		days = 180
+		}
+		}
+	}
+	focus={
+		id=Stirring_up_nationalism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=18
+		y=4
+		prerequisite={focus=Set_up_Stormtrooper}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.05
+		}
+		add_timed_idea = {
+		idea = Stirring_up_nationalism
+		days = 365
+		}
+		}
+	}
+	focus={
+		id=Great_Empire_Collapse
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x=12
+		y=6
+		prerequisite={focus=revolution_with_ardour focus=demarcation_constituencies focus=Stirring_up_nationalism }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 500
+		add_stability = 0.05
+		add_war_support = 0.1
+		army_experience = 25
+		}
+	}
+	focus={
+		id=experimental_revolution
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=9
+		y=7
+		prerequisite={focus=revolution_with_ardour}
+		prerequisite={focus=Great_Empire_Collapse}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event = { id = SAX.14 }
+		}
+	}
+	focus={
+		id=A_new_election
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=12
+		y=7
+		prerequisite={focus=demarcation_constituencies}
+		prerequisite={focus=Great_Empire_Collapse}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event = { id = SAX.1 } 
+		}
+	}
+	focus={
+		id=national_revolution
+		icon = GFX_goal_SAX_national_revolution
+		cost = 4.00
+		x=15
+		y=7
+		prerequisite={focus=Stirring_up_nationalism}
+		prerequisite={focus=Great_Empire_Collapse}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event = { id = SAX.4 } 
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.15
+		}
+		set_politics = {
+        ruling_party = AUT_democratic
+		}
+		}
+	}
+	focus={
+		id=Kautskys_death
+		icon = GFX_goal_SAX_header_plan
+		cost = 4.00
+		x=20
+		y=8
+		prerequisite={focus=national_revolution}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_timed_idea = {
+		idea = SAX_header
+		days = 730
+		}
+		add_ideas = SAX_header_planbook
+		}
+	}
+	focus={
+		id=Adapted_Stormtroopers
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=18
+		y=9
+		prerequisite={focus=Kautskys_death}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Adapted_Stormtroopers
+		}
+	}
+	focus={
+		id=The_New_Palace
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=22
+		y=9
+		prerequisite={focus=Kautskys_death}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		army_experience = 80
+			custom_effect_tooltip = "在首都获得三只精锐部队"
+			hidden_effect = {
+				division_template = {
+					name = "精锐步兵"
+					is_locked = yes
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						artillery_brigade = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精锐步兵\" division_template = \"精锐步兵\" start_experience_factor = 1"
+						owner = ROOT
+						count = 3
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=engage_arms_expansion
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=16
+		y=10
+		prerequisite={focus=Adapted_Stormtroopers focus=The_New_Palace }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = engage_arms_expansion
+		}
+	}
+	focus={
+		id=Nationalized_foreign_capital
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=20
+		y=10
+		prerequisite={focus=Adapted_Stormtroopers focus=The_New_Palace }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Nationalized_foreign_capital
+		}
+	}
+	focus={
+		id=Capital_and_nobility
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=24
+		y=10
+		prerequisite={focus=The_New_Palace focus=Adapted_Stormtroopers }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 250
+		add_stability = 0.1
+		add_war_support =0.05
+		add_manpower = 10000
+		add_popularity = {
+		ideology = marxism
+		popularity = -1
+		}
+		}
+	}
+	focus={
+		id=Dresden_construction_plan
+		icon = GFX_goal_SAX_democles
+		cost = 4.00
+		x=20
+		y=11
+		prerequisite={focus=Nationalized_foreign_capital}
+		prerequisite={focus=Capital_and_nobility}
+		prerequisite={focus=engage_arms_expansion}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Dresden_construction_plan
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus={
+		id=Victory_for_Liberalism
+		icon = GFX_goal_SAX_golden_age
+		cost = 4.00
+		x=12
+		y=8
+		prerequisite={focus=A_new_election}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Victory_for_Liberalism
+		}
+	}
+	focus={
+		id=Radio_Liberty_National
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=10
+		y=9
+		prerequisite={focus=Victory_for_Liberalism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Radio_Liberty_National
+		}
+	}
+	focus={
+		id=Free_election
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=14
+		y=9
+		prerequisite={focus=Victory_for_Liberalism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = Free_election
+		}
+	}
+	focus={
+		id=Invest_domestic_infrastructure
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=10
+		y=10
+		prerequisite={focus=Free_election focus=Radio_Liberty_National }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = "完成此项国策以阻止罢工"
+		}
+	}
+	focus={
+		id=Improving_civil_rights
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=14
+		y=10
+		prerequisite={focus=Free_election focus=Radio_Liberty_National }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		GER = {
+		country_event = { days = 10 id = SAX.13 }
+		}
+		}
+	}
+	focus={
+		id=tourist_trade
+		icon = GFX_goal_SAX_christmas
+		cost = 4.00
+		x=12
+		y=10
+		prerequisite={focus=Free_election focus=Radio_Liberty_National }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = "完成此项国策以阻止西奥多政变"
+		remove_ideas = SAX_theodore
+		}
+	}
+	focus={
+		id=Arsenal_of_democracy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=12
+		y=11
+		prerequisite={focus=tourist_trade}
+		prerequisite={focus=Improving_civil_rights}
+		prerequisite={focus=Invest_domestic_infrastructure}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = SAX_promise
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus={
+		id=Victory_for_Marxism
+		icon = GFX_goal_SAX_theodor
+		cost = 4.00
+		x=4
+		y=8
+		prerequisite={focus=experimental_revolution}
+		
+		ai_will_do={
+			factor=1
+		}
+		available = {
+		    has_government = marxism
+		}
+		
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			add_idea = SAX_theodore_politic
+			remove_idea = SAX_theodore
+		}
+		}
+	}
+	focus={
+		id=minimum_wage
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=2
+		y=9
+		prerequisite={focus=Victory_for_Marxism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_idea = minimum_wage
+		add_opinion_modifier = {
+		target = SOV
+		modifier = worse_pact_against_us
+		}
+		SOV = {
+		add_opinion_modifier = {
+		target = SAX
+		modifier = worse_pact_against_us
+		     }
+		   }
+		}
+	}
+	focus={
+		id=Trade_union_power
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=6
+		y=9
+		prerequisite={focus=Victory_for_Marxism}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		BAY = {
+		country_event = { days = 10 id = SAX.12 }
+		}
+		}
+	}
+	focus={
+		id=Invest_people_livelihood
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=0
+		y=10
+		prerequisite={focus=Trade_union_power focus=minimum_wage }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = "完成此国策以解锁对抗修正主义的决议"
+		}
+	}
+	focus={
+		id=build_communist
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=4
+		y=10
+		prerequisite={focus=Trade_union_power focus=minimum_wage }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		set_party_name = {
+		ideology = marxism
+		long_name = SAX_sparta_party_long
+		name = SAX_sparta_party
+		}
+		}
+	}
+	focus={
+		id=No_private_ownership
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=8
+		y=10
+		prerequisite={focus=Trade_union_power focus=minimum_wage }
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = No_private_ownership
+		add_popularity = {
+		ideology = marxism
+		popularity = 0.15
+		}
+		}
+	}
+	focus={
+		id=Red_Arsenal
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x=4
+		y=11
+		prerequisite={focus=No_private_ownership}
+		prerequisite={focus=build_communist}
+		prerequisite={focus=Invest_people_livelihood}
+		
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			add_idea = Red_Arsenal
+			remove_idea = SAX_theodore_politic
+		}
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus = {
+		id = SAX_kautsky_back
+		icon = GFX_goal_SAX_SOC_back
+		cost = 4.00
+		x = 26
+		y = 1
+		available = {
+			has_government = SOC_democratic
+			has_completed_focus = experimental_revolution
+		}
+		completion_reward={
+		add_ideas = SAX_kautsky_back
+		}
+	}
+	focus = {
+		id = SAX_rebuild_order
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_kautsky_back
+		}
+		x = 25
+		y = 2
+        completion_reward={
+		add_ideas = SAX_rebuild_order
+		}
+	}
+	focus = {
+		id = SAX_unemployment_insurance
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_rebuild_order
+		}
+		x = 24
+		y = 3
+		completion_reward={
+		add_ideas = SAX_unemployment_insurance
+		}
+	}
+	focus = {
+		id = SAX_kautsky_reformism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_kautsky_back
+		}
+		x = 27
+		y = 2
+        completion_reward={
+		add_ideas = SAX_kautsky_reformism
+		}
+	}
+	focus = {
+		id = SAX_on_dead
+		icon = GFX_goal_SAX_on_dead
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_rebuild_order
+		}
+		prerequisite = {
+			focus = SAX_kautsky_reformism
+		}
+		x = 26
+		y = 3
+        completion_reward={
+		add_timed_idea = {
+		idea = SAX_on_dead
+		days = 365
+		}
+		add_ideas = SAX_on_dead_2
+		}
+	}
+	focus = {
+		id = SAX_red_capitalist
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_kautsky_reformism
+		}
+		x = 28
+		y = 3
+        completion_reward={
+		add_ideas = SAX_red_capitalist
+		}
+	}
+	focus = {
+		id = SAX_speace_united
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = SAX_unemployment_insurance
+		}
+		prerequisite = {
+			focus = SAX_on_dead
+		}
+		prerequisite = {
+			focus = SAX_red_capitalist
+		}
+		x = 26
+		y = 4
+        completion_reward={
+		swap_ideas = {
+			add_idea = SAX_speace_united
+			remove_idea = SAX_kautsky_back
+		}
+		load_focus_tree = SAX_politic_2
+		}
+	}
+}

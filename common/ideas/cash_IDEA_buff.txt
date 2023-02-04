@@ -1,0 +1,24 @@
+ideas = {
+	country = { 
+		budget_toomore_DEBUFF  = {
+			picture = idea_generic_army_problems
+			allowed = {  }
+			cancel = {
+				ROOT = {
+					NOT = { check_variable = { money_surplus < mil_bud } }
+				}
+			}
+			modifier = {   
+				war_support_weekly = -0.03
+				stability_weekly = -0.03
+			}
+		}
+		
+		buy_master_weapon = {
+			
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+	}
+}

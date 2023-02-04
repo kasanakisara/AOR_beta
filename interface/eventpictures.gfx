@@ -1,0 +1,32 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_german_disintegrated"
+		texturefile = "gfx/event_pictures/news_german_disintegrated.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_events_german_disintegrated"
+		texturefile = "gfx/event_pictures/events_german_disintegrated.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_1920_Olympic_Games"
+		texturefile = "gfx/event_pictures/news_1920_Olympic_Games.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_1924_Olympic_Games"
+		texturefile = "gfx/event_pictures/news_1924_Olympic_Games.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_1928_Olympic_Games"
+		texturefile = "gfx/event_pictures/news_1928_Olympic_Games.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_1932_Olympic_Games"
+		texturefile = "gfx/event_pictures/news_1932_Olympic_Games.dds"
+	}
+ }

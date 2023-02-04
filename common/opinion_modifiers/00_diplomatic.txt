@@ -1,0 +1,29 @@
+opinion_modifiers = {
+	
+	faction_traitor = {
+		value = -75
+	}
+
+	relationship_with_ITA = {
+		value = 30
+	}
+
+	relationship_with_BAV = {
+		value = 30
+	}
+
+	relationship_with_WUR = {
+		value = 30
+	}
+	
+	faction_traitor_trade = {
+		trade = yes
+		value = -40
+	}
+	
+	our_liberators = {
+		value = 40
+		months = 18
+		decay = 1
+	}
+}

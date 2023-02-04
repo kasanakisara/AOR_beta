@@ -1,0 +1,26 @@
+state={
+	id=913
+	name="STATE_913"
+	manpower = 200000
+	
+	state_category =rural
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+
+	provinces={
+		9938
+	}
+
+	local_supplies=0.0
+}

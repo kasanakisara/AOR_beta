@@ -1,0 +1,44 @@
+add_namespace = shehuizhuyi
+add_namespace = mod
+
+country_event = {
+	id = shehuizhuyi.1
+	title = shehuizhuyi.1.t
+	desc = shehuizhuyi.1.d
+	picture = GFX_qian_jin
+
+	trigger = {
+		orginal_tag = ITA
+		date > 1936.1.1
+	}
+
+	fire_only_once = yes
+
+    option = {
+		name = shehuizhuyi.a
+	}
+
+}
+
+
+
+news_event = {
+	id = mod.2
+	title = shehuizhuyi.2.t
+	desc = shehuizhuyi.2.d
+
+	trigger = {
+		orginal_tag = ITA
+		date > 1936.1.1
+		CHI = { has_war_with = JAP }
+		716 = { is_controlled_by = JAP }
+		716 = { is_nwned_by = CHI }
+	}
+
+	major = yes
+
+    option = {
+		name = shehuizhuyi.b
+		CHI = { add_war_support = 0.2 }
+	}
+}

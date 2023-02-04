@@ -1,0 +1,45 @@
+spriteTypes = {	
+
+	#迫击炮科技
+	SpriteType = {
+		name = "GFX_paijipao_medium"
+		texturefile = "gfx/interface/technologies/paijipao.dds"
+	}
+	
+	#辎重大队
+    spriteType = {
+		name = "GFX_unit_impedimenta_icon_medium"
+		texturefile = "gfx/counters/divisions_large/unit_impedimenta_icon.dds"
+		noOfFrames = 2		
+	}
+    spriteType = {
+		name = "GFX_unit_impedimenta_icon_medium_white"
+		texturefile = "gfx/counters/divisions_small/onmap_unit_impedimenta_icon.dds"
+		noOfFrames = 2		
+	}
+			
+	#迫击炮营	
+    spriteType = {
+		name = "GFX_unit_Mortarbrigade_icon_medium"
+		texturefile = "gfx/counters/divisions_large/unit_Mortarbrigade_icon.dds"
+		noOfFrames = 2		
+	}
+    spriteType = {
+		name = "GFX_unit_Mortarbrigade_icon_medium_white"
+		texturefile = "gfx/counters/divisions_small/onmap_unit_Mortarbrigade_icon.dds"
+		noOfFrames = 2		
+	}
+	
+	#迫击炮支援连	
+    spriteType = {
+		name = "GFX_unit_Mortarsupport_icon_medium"
+		texturefile = "gfx/counters/divisions_large/unit_Mortarsupport_icon.dds"
+		noOfFrames = 2		
+	}
+    spriteType = {
+		name = "GFX_unit_Mortarsupport_icon_medium_white"
+		texturefile = "gfx/counters/divisions_small/onmap_unit_Mortarsupport_icon.dds"
+		noOfFrames = 2		
+	}
+
+}

@@ -1,0 +1,272 @@
+unique_id = AOR_developer_achievement
+
+
+00_AOR_Thanks_for_working = {
+	
+	possible = {
+		
+	}
+	happened = {
+		custom_trigger_tooltip = { tooltip = AOR_Thanks_for_working_tt }
+	}
+}
+ALEX = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = WUR
+		date > 1920.1.1
+		
+	}
+}
+Bailiyemu = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = SAX
+		date > 1920.1.1
+	}
+}
+Bingsimai = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		has_political_power > 100
+		date > 1920.1.1
+	}
+}
+ChengFeng = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		has_stability > 0.95
+		date > 1920.1.1
+	}
+}
+Hana_Tae = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		FIN = {
+			has_war = yes
+		}
+		date > 1920.1.1
+	}
+}
+Qingjiegong = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = LIT4
+		date > 1920.1.1
+	}
+}
+Qiuqi = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = KSH
+		date > 1920.1.1
+	}
+}
+Roges = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = PRE
+		date > 1920.1.1
+	}
+}
+Speer = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		any_state = {
+			is_controlled_by = RHI
+		}
+		date > 1920.1.1
+		
+	}
+}
+The_101 = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = GRE
+		date > 1920.1.1
+	}
+}
+The_jianhao = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = CHI
+		date > 1920.1.1
+	}
+}
+Ugo = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		has_war_support > 0.8
+		date > 1920.1.1
+	}
+}
+Ural = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		any_country = {
+			is_ai = no
+			has_government = Marxism
+		}
+		date > 1920.1.1
+	}
+}
+Makhno = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = CHT
+		date > 1920.1.1
+	}
+}
+Wang = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = MEK
+		date > 1920.1.1
+	}
+}
+Xstlond = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = BEL
+		date > 1920.1.1
+	}
+}
+Yang = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		OR = {
+			tag = GER
+			has_cosmetic_tag = GER
+		}
+		date > 1920.1.1
+	}
+}
+Y_Zao = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		NOT = {
+			country_exists = FIN
+		}
+		date > 1920.1.1
+	}
+}
+Y_Zhishi = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		NOT = {
+			country_exists = ARU
+		}
+		date > 1920.1.1
+	}
+}
+
+
+Shigu = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = SHL
+	}
+	date > 1920.1.1
+}
+Yibantongguoguofangjun = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = VAT
+	}
+	date > 1920.1.1
+}
+Yayong = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		has_political_power > 300
+	}
+	date > 1920.1.1
+}
+The_L = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = FRA
+	}
+	date > 1920.1.1
+}
+ZZZ_BLO = {
+	possible = {
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		tag = BAV
+	}
+	date > 1920.1.1
+}
+
+

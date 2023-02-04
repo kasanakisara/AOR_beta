@@ -1,0 +1,21 @@
+scripted_gui = {
+	AOR_event_picture_change = {
+        window_name = event_picture_change_window
+        context_type = player_context
+
+		visible = {
+			has_variable = global.se_AOR_event_picture_change
+			is_ai = no
+		}
+		effects = {
+			AOR_event_picture_change_btn_click = { 
+				clear_variable = global.se_AOR_event_picture_change
+			}
+		}
+		properties = {
+			AOR_event_picture_change_name = {
+				image = "[event_picture_change]"
+			} 
+		}	
+	}
+}

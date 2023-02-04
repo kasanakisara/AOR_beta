@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		Compact_of_German_Confederation = {
+		    picture=Compact_of_German_Confederation
+			allowed_civil_war = {
+			always = no
+			}
+	    	removal_cost = -1
+
+			modifier = {
+                consumer_goods_factor = -0.05
+				}
+			rule = {  can_create_factions = no }
+			rule = {  can_not_declare_war = yes }
+				
+			}
+		}
+    }
+						  
+					

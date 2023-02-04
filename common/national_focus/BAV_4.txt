@@ -1,0 +1,309 @@
+focus_tree={
+    id = BAV_4
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=BAV
+		}
+	}
+	continuous_focus_position = { x = 1500  y = 2000 }
+	default=no
+	focus={
+		id=Spartacist_League_emergency_response
+		x=6
+		y=0
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event = { id = BAV.7 }
+		}
+	}
+	focus={
+		id=Raise_flag_of_revolution
+		x=6
+		y=1
+		prerequisite={focus=Spartacist_League_emergency_response}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_faction = 无产阶级先锋阵线
+		country_event = { id = BAV.8 }
+		}
+	}
+	focus={
+		id=The_time_has_come_for_revolution
+		x=6
+		y=2
+		prerequisite={focus=Raise_flag_of_revolution}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = "一个苏维埃保卫师来到首都"
+			hidden_effect = {
+				division_template = {
+					name = "苏维埃保卫师"
+					is_locked = yes
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"苏维埃保卫师\" division_template = \"苏维埃保卫师\" start_experience_factor = 1"
+						owner = ROOT
+						count = 1
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=A_steady_stream_of_steel
+		x=2
+		y=3
+		prerequisite={focus=The_time_has_come_for_revolution}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_timed_idea = { idea = BAV_Production_for_the_front_line days = 720 }
+		}
+	}
+	focus={
+		id=Calling_the_International_Column
+		x=6
+		y=3
+		prerequisite={focus=The_time_has_come_for_revolution}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=Torchbearers_in_the_Dark
+		x=10
+		y=3
+		prerequisite={focus=The_time_has_come_for_revolution}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = BAV_people_carry_torch_flame
+		}
+	}
+	focus={
+		id=The_ultimate_weapon
+		x=16
+		y=3
+			trigger = {
+	    date > 1924.12.1
+		tag = BAV
+	}
+		prerequisite={focus=The_time_has_come_for_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		unlock_decision_category_tooltip = BAV_Use_poison_gas
+		}
+	}
+	focus={
+		id=Developing_operational_plans
+		x=6
+		y=5
+		prerequisite={focus=Torchbearers_in_the_Dark}
+		prerequisite={focus=Calling_the_International_Column}
+		prerequisite={focus=A_steady_stream_of_steel}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			remove_idea = BAV_Soviet_guard
+			add_idea = BAV_Soviet_guard_2			
+		}
+		}
+	}
+	focus={
+		id=The_cowards_who_crushed_Berlin
+		x=0
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = GER type = annex_everything }
+		}
+	}
+	focus={
+		id=Execution_of_the_oppressors_of_Frankfurt
+		x=2
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = NAU type = annex_everything }
+		}
+	}
+	focus={
+		id=who_drowned_in_Wilhelmshaven
+		x=4
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = HAN type = annex_everything }
+		}
+	}
+	focus={
+		id=People_are_not_experiments
+		x=6
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = KSH type = annex_everything }
+		}
+	}
+	focus={
+		id=Breaking_the_Cage_of_Capitalism
+		x=8
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = MEK type = annex_everything }
+		}
+	}
+	focus={
+		id=Its_the_Free_Legion_turn_to_scatter
+		x=10
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = KSH type = annex_everything }
+		}
+	}
+	focus={
+		id=Exposing_the_lies_of_democracy
+		x=12
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = SIL type = annex_everything }
+		}
+	}
+	focus={
+		id=Paying_for_blood_of_people
+		x=14
+		y=6
+		prerequisite={focus=Developing_operational_plans}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		create_wargoal = { target = PRE type = annex_everything }
+		}
+	}
+}

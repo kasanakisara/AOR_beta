@@ -1,0 +1,192 @@
+ideas = {
+country = {
+
+	#自由与民主的基石
+	AOR_SIL_idea_freedom_democracy_foundation_1 = {
+		picture = generic_democratic_drift_bonus
+		allowed = { always = yes }
+		modifier = {
+			political_power_factor = 0.05
+		}
+	}
+	AOR_SIL_idea_freedom_democracy_foundation_2 = {
+		picture = generic_democratic_drift_bonus
+		allowed = { always = yes }
+		modifier = {
+			political_power_factor = 0.05
+			stability_factor = 0.05
+			war_support_factor = 0.05
+		}
+	}
+	AOR_SIL_idea_freedom_democracy_foundation_3 = {
+		picture = generic_democratic_drift_bonus
+		allowed = { always = yes }
+		modifier = {
+			political_power_factor = 0.05
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+		}
+	}
+	#武装民主的人民
+	AOR_SIL_idea_freedom_democracy_foundation_4 = {
+		picture = usa_desegregation_1
+		allowed = { always = yes }
+		modifier = {
+			political_power_factor = 0.10
+			
+			stability_factor = 0.1
+			war_support_factor = 0.05
+			defensive_war_stability_factor = 0.1
+			
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			
+			conscription = 0.01
+			democratic_drift = 0.1
+		}
+	}
+	#矢志不渝
+	AOR_SIL_idea_abide_by_one_faith_1 = {
+		picture = EST_democratic_opposition
+		allowed = { always = yes }
+		modifier = {
+			democratic_drift = 0.1
+		}
+	}
+	AOR_SIL_idea_abide_by_one_faith_2 = {
+		picture = EST_democratic_opposition
+		allowed = { always = yes }
+		modifier = {
+			democratic_drift = 0.1
+			party_popularity_stability_factor = 0.05
+		}
+	}
+	#解释宪法
+	AOR_SIL_idea_Interpreting_Constitution = {
+		picture = gre_schachtplan3
+		allowed = { always = yes }
+		modifier = {
+			democratic_drift = 0.1
+			party_popularity_stability_factor = 0.05
+		}
+	}
+	#民主的进程与作用
+	AOR_SIL_idea_democratic_process = {
+		picture = MEX_politicised_army
+		allowed = { always = yes }
+		modifier = {
+			conscription = 0.01
+			defensive_war_stability_factor = 0.1
+		}
+	}
+	#纯洁和俯视多变
+	AOR_SIL_idea_pure_changeable = {
+		picture = gre_venerate_the_ancient_hellenes
+		allowed = { always = yes }
+		modifier = {
+			political_power_gain = 0.1
+			drift_defence_factor = 0.5
+		}
+	}
+	#以民主来团结
+	AOR_SIL_idea_Unite_with_democracy = {
+		picture = tur_tdpa
+		allowed = { always = yes }
+		modifier = {
+			political_power_gain = 0.1
+			industrial_capacity_factory = 0.1
+			research_speed_factor = 0.05
+		}
+	}
+	#先进机床
+	AOR_SIL_idea_Advanced_machine_1 = {
+		picture = FRA_factory_strikes
+		allowed = { always = yes }
+		modifier = {
+			production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	AOR_SIL_idea_Advanced_machine_2 = {
+		picture = FRA_factory_strikes
+		allowed = { always = yes }
+		modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			industrial_capacity_factory = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	#国民家园的建设规划
+	AOR_SIL_idea_Construction_planning = {
+		picture = SOV_third_five_year_plan
+		allowed = { always = yes }
+		modifier = {
+			consumer_goods_factor = -0.03
+			production_speed_buildings_factor = 0.1
+		}
+	}
+	#工业民用专业化
+	AOR_SIL_idea_Construction_planning_civ = {
+		picture = SOV_third_five_year_plan_civilian
+		allowed = { always = yes }
+		modifier = {
+			consumer_goods_factor = -0.06
+			production_speed_buildings_factor = 0.1
+			production_speed_industrial_complex_factor = 0.1
+			
+		}
+	}
+	#工业转向军事
+	AOR_SIL_idea_Construction_planning_mil = {
+		picture = third_five_year_plan_military
+		allowed = { always = yes }
+		modifier = {
+			consumer_goods_factor = -0.03
+			production_speed_buildings_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.10 instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.10 instant = yes
+			}
+		}
+	}
+	#为人民武装的工业(民用工业）
+	AOR_SIL_idea_Construction_planning_civ_military = {
+		picture = SOV_third_five_year_plan_civilian
+		allowed = { always = yes }
+		modifier = {
+			consumer_goods_factor = -0.06
+			production_speed_buildings_factor = 0.1
+			production_speed_industrial_complex_factor = 0.1
+			party_popularity_stability_factor = 0.05
+			war_support_factor = 0.1
+			
+		}
+	}
+	#为人民武装的工业(军事工业）
+	AOR_SIL_idea_Construction_planning_mil_military = {
+		picture = third_five_year_plan_military
+		allowed = { always = yes }
+		modifier = {
+			consumer_goods_factor = -0.03
+			production_speed_buildings_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			party_popularity_stability_factor = 0.05
+			war_support_factor = 0.1
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.10 instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.10 instant = yes
+			}
+		}
+	}
+}
+}

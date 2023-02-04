@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+	
+		#苟延残喘的联盟
+		A_lingering_alliance = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_A_lingering_alliance
+
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.2
+				political_power_gain = -0.5
+			}
+		}
+		
+		#沉默之虎
+		Tiger_of_Silence = {
+			
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_Tiger_of_Silence
+
+			modifier = {
+				defensive_war_stability_factor = -0.3
+				army_core_defence_factor = 0.2
+			}
+		}
+		
+		#让雄心沉睡
+		Let_the_ambitio_sleep = {	
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_Let_the_ambitio_sleep
+
+			modifier = {
+				stability_factor = 0.1
+				army_org_factor = 0.05
+				conscription = -0.005
+			}
+		}
+	}
+}

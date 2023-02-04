@@ -1,0 +1,14 @@
+
+AOR_pom_pianzhidu_system = {
+
+	scripted_gui = AOR_pom_pianzhidu_system
+
+	allowed = {
+		tag = KSH
+
+	}
+	visible = {
+		tag = KSH
+	}
+	priority = 10
+}

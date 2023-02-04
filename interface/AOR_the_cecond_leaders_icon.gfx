@@ -1,0 +1,16 @@
+spriteTypes = {	
+	##第二领导人头像，窗口图标
+	spriteType = { 
+		name = event_button_minimize
+		texturefile = "gfx/interface/AOR_guis/event_button_minimize.png"
+	}
+	spriteType = {
+		name = SOV
+		texturefile = "gfx/interface/AOR_guis/SOV.png"
+	}
+
+	spriteType = {
+		name = the_king_of_bel
+		texturefile = "gfx/interface/AOR_guis/a3c5e-ni5gi.dds"
+	}
+}

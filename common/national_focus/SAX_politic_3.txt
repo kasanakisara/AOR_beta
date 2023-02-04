@@ -1,0 +1,338 @@
+focus_tree = {
+	id = SAX_politic_3
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAX_3
+		}
+	}
+	default = no
+	focus = {
+		id = SAX_broken_germany
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = SAX_german_labor_front
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SAX_broken_germany
+		}
+		x = 5
+		y = 1
+        completion_reward={
+		add_ideas = SAX_german_labor_front
+		}
+	}
+	focus = {
+		id = SAX_rise_of_revanchism
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SAX_broken_germany
+		}
+		x = 6
+		y = 2
+        completion_reward={
+		add_ideas = SAX_rise_of_revanchism
+		}
+	}
+	focus = {
+		id = SAX_foreign_investment
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SAX_broken_germany
+		}
+		x = 7
+		y = 1
+        completion_reward = {
+		add_offsite_building = {
+		type = arms_factory
+		level = 3
+		instant_build = yes }
+		}
+	}
+	focus = {
+		id = SAX_better_light_weapons
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SAX_broken_germany
+		}
+		x = 8
+		y = 2
+        completion_reward={
+		add_ideas = SAX_better_light_weapons
+		}
+	}
+	focus = {
+		id = SAX_reserve_service
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = SAX_broken_germany
+		}
+		x = 9
+		y = 1
+        completion_reward={
+		add_ideas = extensive_conscription
+	    add_manpower = 100000
+		}
+	}
+	focus = {
+		id = SAX_napoleon_dream
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SAX_rise_of_revanchism
+		}
+		prerequisite = {
+			focus = SAX_better_light_weapons
+		}
+		prerequisite = {
+			focus = SAX_foreign_investment
+		}
+		prerequisite = {
+			focus = SAX_german_labor_front
+		}
+		prerequisite = {
+			focus = SAX_reserve_service
+		}
+		x = 7
+		y = 3
+        completion_reward = {
+		set_country_flag = SAX_iron_and_blood
+        }
+	}
+	focus = {
+		id = SAX_new_world_system
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SAX_napoleon_dream
+		}
+		x = 7
+		y = 4
+        completion_reward = {
+		create_faction = 新大陆体系
+		transfer_state = 60
+		NAU = { country_event = { id = SAX.12 } }
+		}
+	}
+	focus = {
+		id = SAX_collapse_of_germany
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 27
+		y = 0
+         available = {
+		has_completed_focus = SAX_new_world_system
+		NOT = {
+		has_idea = Compact_of_German_Confederation
+			}
+			}
+	}
+	focus = {
+		id = SAX_we_can_do_it
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_collapse_of_germany
+		}
+		x = 27
+		y = 1
+        completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+        }
+	}
+	focus = {
+		id = SAX_attack_north_govermant
+		icon = GFX_goal_SAX_attack_GER
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_we_can_do_it
+		}
+		x = 27
+		y = 2
+        completion_reward = {
+		custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_silesia
+		icon = GFX_goal_SAX_attack_SIL
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_we_can_do_it
+		}
+		x = 29
+		y = 2
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+         completion_reward = {
+		 custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_NAU
+		icon = GFX_goal_SAX_attack_NAU
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_silesia
+		}
+		x = 29
+		y = 3
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+         completion_reward = {
+		 custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_WUR
+		icon = GFX_goal_SAX_attack_WUR
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_BAV
+		}
+		x = 27
+		y = 4
+		available = {
+		
+		has_completed_focus = SAX_attack_BAV
+		}
+         completion_reward = {
+		 custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_PRE
+		icon = GFX_goal_SAX_attack_PRE
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_WUR
+		}
+		x = 27
+		y = 5
+		available = {
+		is_neighbor_of = POL
+		has_completed_focus = SAX_attack_WUR
+		}
+         completion_reward = {
+		 POL = {
+		 news_event = { id = SAX.16 }
+		 }
+		 custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_BAV
+		icon = GFX_goal_SAX_attack_BAV
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_NAU
+		}
+		x = 27
+		y = 3
+		available = {
+		
+		has_completed_focus = SAX_attack_NAU
+		}
+         completion_reward = {
+		 custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_pomerania
+		icon = GFX_goal_SAX_attack_KSH
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_we_can_do_it
+		}
+		x = 25
+		y = 2
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+        completion_reward = {
+		custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_MEK
+		icon = GFX_goal_SAX_attack_MEK
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_pomerania
+		}
+		x = 25
+		y = 3
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+        completion_reward = {
+		custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_SHL
+		icon = GFX_goal_SAX_attack_SHL
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_MEK
+		}
+		x = 25
+		y = 4
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+        completion_reward = {
+		custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+	focus = {
+		id = SAX_attack_HAN
+		icon = GFX_goal_SAX_attack_HAN
+		cost = 2.00
+		prerequisite = {
+			focus = SAX_attack_SHL
+		}
+		x = 25
+		y = 5
+		available = {
+		
+		has_completed_focus = SAX_attack_north_govermant
+		}
+        completion_reward = {
+		custom_effect_tooltip = "解锁对应宣战决议"
+        }
+	}
+}

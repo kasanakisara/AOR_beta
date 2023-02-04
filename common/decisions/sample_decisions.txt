@@ -1,0 +1,112 @@
+sample_category = {
+	spawn_data = {
+		icon = generic_industry
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			
+			
+			add_to_array = {
+				global.AOR_nationunion_main_array = SOV
+			}
+			add_to_array = {
+				global.AOR_nationunion_main_array = USA
+			}
+			add_to_array = {
+				global.AOR_nationunion_main_array = FRA
+			}
+			add_to_array = {
+				global.AOR_nationunion_main_array = ENG
+			}
+		}
+
+	}
+	open_AOR_nu_gui = {
+		icon = generic_industry
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			
+			
+			spawn_AOR_nu_main_country = yes
+			#if = {
+			#	limit = {
+			#		ROOT = {
+			#			is_in_array = { global.AOR_nationunion_main_array = ROOT }
+			#		}	
+			#	}
+			#	Get_vote_result = yes
+			#}
+			Get_vote_result = yes
+			
+		}
+	}
+	reset_AOR_nu_gui = {
+		icon = generic_industry
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			clear_array = global.AOR_nationunion_main_array		
+			clear_array = global.AOR_nationunion_mini_array	
+
+			clear_array = global.AOR_nationunion_main_array		
+			clear_array = global.AOR_nationunion_mini_array
+			clear_array = global.AOR_approve_country_array	
+			clear_array = global.AOR_abstain_country_array	
+			clear_array = global.AOR_disagree_country_array	
+		}
+	}
+	remove_SOV_AOR_nu_gui = {
+		icon = generic_industry
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			remove_from_array = {
+				array = global.AOR_nationunion_main_array	
+    			value = SOV
+			}
+		}
+	}
+	add_SOV_AOR_nu_gui = {
+		icon = generic_industry
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_to_array = {
+				global.AOR_nationunion_main_array = SOV
+			}
+		}
+	}
+
+
+}

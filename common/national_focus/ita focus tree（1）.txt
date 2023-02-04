@@ -1,0 +1,132 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = yes
+	focus = {
+		id = dream_of_Ita
+		icon = GFX_goal_dream_of_Ita
+		cost = 2.00
+		x = 8
+		y = 1
+		completion_reward={
+		}
+	}
+
+	focus = {
+		id = new_journey
+		icon = GFX_goal_new_journey
+		cost = 0.00
+		prerequisite = {
+			focus = dream_of_Ita
+		}
+		x = 6
+		y = 2
+		completion_reward={
+		}	
+	}
+	focus = {
+		id = steady_as_she_going
+		icon = GFX_goal_steady_as_she_going
+		cost = 0.00
+		prerequisite = {
+			focus = dream_of_Ita
+		}
+		x = 10
+		y = 2
+		completion_reward={
+        }
+	}
+	focus = {
+		id = Towards_splendid_future_of_Ita
+		icon = GFX_goal_Towards_splendid_future_of_Ita
+		cost = 0.00
+		prerequisite = {
+			focus = new_journey
+		}
+		prerequisite = {
+			focus = steady_as_she_going
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = dream_of_ea 
+		icon = GFX_goal_dream_of_ea 
+		cost = 0.00
+		prerequisite = {
+			focus = Towards_splendid_future_of_Ita
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = rebulid_IDGS
+		icon = GFX_goal_ rebulid_IDGS
+		cost = 0.00
+		prerequisite = {
+			focus = dream_of_EA
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = plan_of_Diaz
+		icon = GFX_goal_plan_of_Diaz
+		cost = 0.00
+		prerequisite = {
+			focus = rebulid_IDGS
+		}
+		mutually_exclusive = {
+			focus = plan_of_Messe
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = plan_of_Messe
+		icon = GFX_goal_plan_of_Messe
+		cost = 0.00
+		prerequisite = {
+			focus = rebulid_IDGS
+		}
+		mutually_exclusive = {
+			focus = plan_of_Diaz
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = rearmament
+		icon = GFX_goal_rearmament
+		cost = 0.00
+		prerequisite = {
+			focus = plan_of_Diaz
+			focus = plan_of_Messe
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = The_Last_Lecture
+		icon = GFX_goal_The_Last_Lecture
+		cost = 0.00
+		prerequisite = {
+			focus = rearmament
+		}
+		x = 8
+		y = 8
+
+	}
+}

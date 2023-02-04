@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	# interface we need to override in DLC go in this file
+
+    spriteType = {
+		name = "GFX_goal_SAX_build_democratic"
+		texturefile = "gfx/interface/goals/goal_SAX_build_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_golden_age"
+		texturefile = "gfx/interface/goals/goal_SAX_golden_age.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_theodor"
+		texturefile = "gfx/interface/goals/goal_SAX_theodor.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_Set_up_Stormtrooper"
+		texturefile = "gfx/interface/goals/goal_SAX_Set_up_Stormtrooper.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_SOC_back"
+		texturefile = "gfx/interface/goals/goal_SAX_SOC_back.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_candy_or"
+		texturefile = "gfx/interface/goals/goal_SAX_candy_or.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_BAV"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_BAV.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_MEK"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_MEK.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_SHL"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_SHL.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_PRE"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_PRE.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_NAU"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_NAU.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_WUR"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_WUR.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_SIL"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_SIL.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_GER"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_GER.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_KSH"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_KSH.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SAX_attack_HAN"
+		texturefile = "gfx/interface/goals/goal_SAX_attack_HAN.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_king_Friedrich_August"
+		texturefile = "gfx/interface/ideas/SAX_friedrich_ideas.png"
+	}
+}

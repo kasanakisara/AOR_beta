@@ -1,0 +1,47 @@
+news_event = {
+    id = CHI_JAP_war.1
+    title = CHI_JAP_war.1.t
+    desc = CHI_JAP_war.1.d
+    picture = GFX_event_CHI_JAP_war.1
+
+    trigger = {
+        original_tag = CHI
+        CHI = { has_war_with = JAP }
+    }
+    
+    fire_only_once = yes
+
+    major = no
+
+    option = {
+        name = CHI_JAP_war.a
+        CHI = { add_war_support = 0.2 } #中国加20%战争支持度
+        CHI = { complete_national_focus = XXX } #跳过中国抗战线的第一个国策
+        XXX = { load_oob = XXXX } #生成5-8个民兵师,XXX为生成地的省份代码
+
+    }
+}
+
+news_event = {
+    id = CHI_JAP_War.2
+    title = CHI_JAP_War.2.t
+    desc = CHI_JAP_War.2.d
+    picture = GFX_event_CHI_JAP_War.2
+
+    trigger = {
+        original_tag = CHI
+        CHI = { has_war_with = JAP }
+        XXX = { is_controlled_by = JAP } #XXX为奉天省份代码
+        XXX = { is_nwned_by = CHI } #XXX为奉天省份代码
+    }
+
+    major = no
+
+    fire_only_once = yes
+
+    option = {
+        name = CHI_JAP_War.b 
+        add_war_support = 0.1
+        XXX = { load_oob = XXXX } #生成3个精锐民兵师,XXX为生成地的省份代码
+    }
+}

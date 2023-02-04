@@ -1,0 +1,44 @@
+focus_tree={
+    id = VAT_should
+	country={
+		factor=0
+		modifier={
+			add=200
+			tag=VAT
+		}
+	}
+	default=no
+	focus={
+		id=VAT_1919
+		icon = GFX_goals_VAT_1919
+		x=0
+		y=0
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 1
+		}
+	}
+	focus={
+		id=VAT_Prayerfully
+		x=0
+		y=1
+		icon = GFX_goals_VAT_Prayerfully
+		prerequisite={focus=VAT_1919}
+		cost=500
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power  = 1
+		}
+	}
+}

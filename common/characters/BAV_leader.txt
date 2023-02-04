@@ -1,0 +1,33 @@
+characters = {
+	BAV_Karl_Liebknecht={
+		name= "Karl Liebknecht"
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/axcra-1w8mr.dds"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "K_L_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BAV_Luksemburg={
+		name= "Róża Luksemburg"
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/aea71-ho9ng.dds"
+			}
+		}
+		country_leader={
+			ideology = luxemburgism
+			desc = "BAV_R_L_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

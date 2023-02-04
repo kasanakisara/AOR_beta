@@ -1,0 +1,22 @@
+state={
+	id=880
+	name="STATE_880"
+	manpower = 200000
+	
+	state_category =rural
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		4071 12074 7089 1184 7105 1104 1200 4186 10018
+	}
+
+	local_supplies=0.0
+}

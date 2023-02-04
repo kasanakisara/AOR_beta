@@ -1,0 +1,927 @@
+focus_tree = {
+	id = SAX_politic
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAX
+		}
+	}
+	continuous_focus_position = { x = 55 y = 1800 }
+	
+	default = no
+	focus = {
+		id = SAX_organize_a_strike
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SAX_build_democratic
+			focus = SAX_blame_versailles
+		}
+		x = 4
+		y = 1
+		completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.05
+		}
+		add_political_power = 120
+		add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SAX_build_democratic
+		icon = GFX_goal_SAX_build_democratic
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SAX_blame_versailles
+			focus = SAX_organize_a_strike
+		}
+		x = 10
+		y = 1
+	}
+	focus = {
+		id = SAX_blame_versailles
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SAX_build_democratic
+			focus = SAX_organize_a_strike
+		}
+		x = 16
+		y = 1
+         completion_reward={
+		add_political_power = 80
+		country_event = { id = SAX.0}
+		}
+	}
+	focus = {
+		id = SAX_kautsky_back
+		icon = GFX_goal_SAX_SOC_back
+		cost = 5.00
+		x = 22
+		y = 4
+        available = {
+			has_government = SOC_democratic
+			has_completed_focus = SAX_assassinate_kauysky
+		}
+	}
+	focus = {
+		id = SAX_parade
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_organize_a_strike
+		}
+		x = 2
+		y = 2
+        completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.08
+		}
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = SAX_lobby
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_organize_a_strike
+		}
+		x = 4
+		y = 2
+        completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.05
+		}
+		add_political_power = 120
+		country_event = { id = SAX.10 }
+		}
+	}
+	focus = {
+		id = SAX_request_international_assistance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_parade
+		}
+		prerequisite = {
+			focus = SAX_lobby
+		}
+		x = 3
+		y = 3
+        completion_reward={
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+	    }
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = SAX_red_guerilla
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_organize_a_strike
+		}
+		x = 6
+		y = 2
+        completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.05
+		}
+		add_political_power = 120
+		add_ideas = SAX_red_guerilla
+		}
+	}
+	focus = {
+		id = SAX_for_welfare_of_the_workers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_lobby
+		}
+		prerequisite = {
+			focus = SAX_red_guerilla
+		}
+		x = 5
+		y = 3
+         completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.05
+		}
+		add_political_power = 120
+		add_ideas = SAX_for_welfare_of_the_workers
+		}
+	}
+	focus = {
+		id = SAX_assassinate_kauysky
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_request_international_assistance
+		}
+		prerequisite = {
+			focus = SAX_for_welfare_of_the_workers
+		}
+		x = 4
+		y = 4
+        completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = 0.05
+		}
+		add_political_power = 120
+		add_stability = -0.35
+		country_event = { id = SAX.7 }
+		}
+	}
+	focus = {
+		id = SAX_theodor_politic
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_assassinate_kauysky
+		}
+		x = 3
+		y = 5
+        completion_reward={
+        add_ideas = SAX_theodor_politic
+		country_event = { id = SAX.11 }
+		}
+	}
+	focus = {
+		id = SAX_check_revisionism_in_party
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_theodor_politic
+		}
+		x = 2
+		y = 6
+        completion_reward={
+        add_popularity = {
+		ideology = SOC_democratic
+		popularity = -0.2
+		}
+		add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SAX_build_order
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_assassinate_kauysky
+		}
+		x = 5
+		y = 5
+		completion_reward={
+        add_timed_idea = {
+		idea = SAX_build_order
+		days = 100
+		}
+		}
+	}
+	focus = {
+		id = SAX_personality_cult
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_build_order
+		}
+		x = 6
+		y = 6
+         completion_reward = {
+			add_country_leader_trait = trait_Determined_international_fighters
+		}
+	}
+	focus = {
+		id = SAX_liberal_propaganda
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_build_democratic
+		}
+		x = 8
+		y = 2
+        completion_reward={
+        add_timed_idea = {
+		idea = SAX_liberal_propaganda
+		days = 180
+		}
+		}
+	}
+	focus = {
+		id = SAX_empower_parliament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_build_democratic
+		}
+		x = 10
+		y = 2
+        completion_reward={
+        add_ideas = SAX_empower_parliament
+		}
+	}
+	focus = {
+		id = SAX_equality
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_liberal_propaganda
+		}
+		prerequisite = {
+			focus = SAX_empower_parliament
+		}
+		x = 9
+		y = 3
+        completion_reward={
+        add_ideas = SAX_equality
+		}
+	}
+	focus = {
+		id = SAX_freedom_of_belief
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_build_democratic
+		}
+		x = 12
+		y = 2
+        completion_reward={
+        add_ideas = SAX_freedom_of_belief
+		}
+	}
+	focus = {
+		id = SAX_universal_love
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_empower_parliament
+		}
+		prerequisite = {
+			focus = SAX_freedom_of_belief
+		}
+		x = 11
+		y = 3
+        completion_reward={
+        add_ideas = SAX_universal_love
+		}
+	}
+	focus = {
+		id = SAX_democratic_consritution_saxony
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_equality
+		}
+		prerequisite = {
+			focus = SAX_universal_love
+		}
+		x = 10
+		y = 4
+		completion_reward={
+        set_politics = {
+        ruling_party = FRE_democratic
+		}
+	 create_country_leader = {
+					name = "Willian Gurnall"
+					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = gfx/leaders/SAX/TROUS.png
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+						
+					}
+				}
+				remove_ideas = exp_of_kautsky
+				country_event = { id = SAX.8}
+				}
+	}
+	focus = {
+		id = SAX_shoot_lipknesi
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_democratic_consritution_saxony
+		}
+		x = 9
+		y = 5
+        completion_reward={
+		kill_ideology_leader = Marxism
+        add_popularity = {
+		ideology = Marxism
+		popularity = -0.2
+		}
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SAX_equipment_purchase
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_shoot_lipknesi
+		}
+		x = 8
+		y = 6
+        completion_reward={
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+	    }
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = SAX_ban_nationalism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_democratic_consritution_saxony
+		}
+		x = 11
+		y = 5
+         completion_reward={
+		kill_ideology_leader = Fascism
+        add_popularity = {
+		ideology = Fascism
+		popularity = -0.8
+		}
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SAX_be_youself
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_ban_nationalism
+		}
+		x = 12
+		y = 6
+        completion_reward={
+        add_ideas = SAX_be_youself
+		}
+	}
+	focus = {
+		id = SAX_stormtroopers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_blame_versailles
+		}
+		x = 14
+		y = 2
+        completion_reward={
+		add_political_power = 50
+		army_experience = 15
+		add_ideas = SAX_stormtroopers
+		}
+	}
+	focus = {
+		id = SAX_terrorist_attack
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_blame_versailles
+		}
+		x = 16
+		y = 2
+        completion_reward={
+		add_political_power = 50
+		army_experience = 15
+		add_timed_idea = {
+		idea = SAX_terrorist_attack
+		days = 60
+		}
+		}
+	}
+	focus = {
+		id = SAX_nationalistic_speech
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_stormtroopers
+		}
+		prerequisite = {
+			focus = SAX_terrorist_attack
+		}
+		x = 15
+		y = 3
+         completion_reward={
+		add_political_power = 50
+		army_experience = 15
+		add_timed_idea = {
+		idea = SAX_nationalistic_speech
+		days = 365
+		}
+		}
+	}
+	focus = {
+		id = SAX_political_threat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_blame_versailles
+		}
+		x = 18
+		y = 2
+        completion_reward={
+		add_political_power = 50
+		army_experience = 15
+		add_timed_idea = {
+		idea = SAX_political_threat
+		days = 365
+		}
+		}
+	}
+	focus = {
+		id = SAX_armed_guard
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_terrorist_attack
+		}
+		prerequisite = {
+			focus = SAX_political_threat
+		}
+		x = 17
+		y = 3
+        completion_reward={
+		army_experience = 80
+			custom_effect_tooltip = "在首都获得两只冲锋队军队"
+			hidden_effect = {
+				division_template = {
+					name = "德意志重生冲锋队"
+					is_locked = no
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"德意志重生冲锋队\" division_template = \"德意志重生冲锋队\" start_experience_factor = 1"
+						owner = ROOT
+						count = 2
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAX_The_capitol_arson
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_nationalistic_speech
+		}
+		prerequisite = {
+			focus = SAX_armed_guard
+		}
+		x = 16
+		y = 4
+        completion_reward={
+		add_political_power = 80
+		add_stability = -0.1
+		army_experience = 50
+		remove_ideas = exp_of_kautsky
+		country_event = { id = SAX.1}
+		}
+	}
+	focus = {
+		id = SAX_national_action_party
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_The_capitol_arson
+		}
+		x = 15
+		y = 5
+        completion_reward={
+        set_variable = { 
+	    var = SAX.friedrich
+	    value = 45
+}
+		set_variable = { 
+	    var = SAX.rundstedt
+	    value = 30
+}
+        set_variable = { 
+	    var = SAX.bismrack
+	    value = 55
+}
+        set_variable = { 
+	    var = SAX.heydrich
+	    value = 35
+}
+        set_variable = { 
+	    var = SAX.mackensen
+	    value = 45
+}
+        set_variable = { 
+	    var = SAX.model
+	    value = 55
+}
+        set_variable = { 
+	    var = SAX.reinhardt
+	    value = 15
+}
+        set_variable = { 
+	    var = SAX.martin
+	    value = 65
+}
+        set_variable = { 
+	    var = SAX.than
+	    value = 80
+}
+set_party_name = { 
+	    ideology = CON_democratic
+		long_name = SAX_action_party_long
+		name = SAX_action_party
+}
+set_party_name = { 
+	    ideology = AUT_democratic
+		long_name = SAX_action_party_long
+		name = SAX_action_party
+}
+set_party_name = { 
+	    ideology = Fascism
+		long_name = SAX_action_party_long
+		name = SAX_action_party
+}
+set_party_name = { 
+	    ideology = Absolutism 
+		long_name = SAX_action_party_long
+		name = SAX_action_party
+}
+set_party_name = { 
+	    ideology = Special
+		long_name = SAX_action_party_long
+		name = SAX_action_party
+}
+		set_country_flag = SAX_balance_of_power_AUT_democratic
+	}
+	}
+	focus = {
+		id = SAX_collborated_with_nazis
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_national_action_party
+		}
+		x = 14
+		y = 6
+		completion_reward={
+        add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		add_ideas = SAX_collborated_with_nazis
+		add_to_variable = { 
+	    var = SAX.manfred
+	    value = 25
+         }
+		 custom_effect_tooltip = "增加二十五曼弗雷德·弗赖赫尔·冯·基林格支持率"
+		}
+	}
+	focus = {
+		id = SAX_arrest_a_socialist
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_The_capitol_arson
+		}
+		x = 17
+		y = 5
+        completion_reward={
+        add_popularity = {
+		ideology = Marxism
+		popularity = -0.2
+		}
+		add_political_power = 120
+		add_stability = 0.05
+		army_experience = 80
+		country_event = { id = SAX.4}
+		}
+	}
+	focus = {
+		id = SAX_president_merged_prime_minister
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_arrest_a_socialist
+		}
+		x = 18
+		y = 6
+        completion_reward={
+        add_popularity = {
+		ideology = Absolutism
+		popularity = 0.1
+		}
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.1
+		}
+		add_political_power = 120
+		country_event = { id = SAX.5}
+		}
+	}
+	focus = {
+		id = SAX_socialist_democracy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_kautsky_back
+		}
+		x = 21
+		y = 5
+        completion_reward={
+        add_popularity = {
+		ideology = SOC_democratic
+		popularity = 0.2
+		}
+		add_political_power = 120
+        add_ideas = SAX_socialist_democracy
+		}
+	}
+	focus = {
+		id = SAX_experimental_reform
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_socialist_democracy
+		}
+		x = 20
+		y = 6
+        completion_reward={
+		add_political_power = 120
+        add_ideas = SAX_socialist_democracy
+		}
+	}
+	focus = {
+		id = SAX_pacify_the_masses
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_kautsky_back
+		}
+		x = 23
+		y = 5
+        completion_reward={
+        add_popularity = 0.05
+		add_political_power = 120
+        add_timed_idea = {
+		idea = SAX_build_order
+		days = 100
+		}
+		}
+	}
+	focus = {
+		id = SAX_fortfied_guard
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_socialist_democracy
+		}
+		prerequisite = {
+			focus = SAX_pacify_the_masses
+		}
+		x = 22
+		y = 6
+        completion_reward={
+        add_ideas = SAX_fortfied_guard
+		}
+	}
+	focus = {
+		id = SAX_socialist_free_acadeny
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_theodor_politic
+		}
+		prerequisite = {
+			focus = SAX_build_order
+		}
+		x = 4
+		y = 6
+        completion_reward={
+		add_ideas = SAX_socialist_free_acadeny
+		}
+	}
+	focus = {
+		id = SAX_saxony_spartacus_regiment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_check_revisionism_in_party
+		}
+		prerequisite = {
+			focus = SAX_socialist_free_acadeny
+		}
+		prerequisite = {
+			focus = SAX_personality_cult
+		}
+		x = 4
+		y = 7
+        completion_reward={
+		add_ideas = SAX_saxony_spartacus_regiment
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus = {
+		id = SAX_radio_liberty
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_shoot_lipknesi
+		}
+		prerequisite = {
+			focus = SAX_ban_nationalism
+		}
+		x = 10
+		y = 6
+        completion_reward={
+		add_ideas = SAX_radio_liberty
+		country_event = { id = SAX.9 }
+		}
+	}
+	focus = {
+		id = SAX_golden_age
+		icon = GFX_goal_SAX_golden_age
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_equipment_purchase
+		}
+		prerequisite = {
+			focus = SAX_radio_liberty
+		}
+		prerequisite = {
+			focus = SAX_be_youself
+		}
+		x = 10
+		y = 7
+        completion_reward={
+		add_ideas = SAX_golden_age
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus = {
+		id = SAX_imperial_chancellor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_national_action_party
+		}
+		prerequisite = {
+			focus = SAX_arrest_a_socialist
+		}
+		x = 16
+		y = 6
+		completion_reward={
+        create_field_marshal = {
+	name = "Otto·von·bismarck·marshal"
+	portrait_path = "gfx/leaders/SAX/bismarck_army.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
+}
+	}
+	focus = {
+		id = SAX_staatsoberhaupt_diktatur
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_collborated_with_nazis
+		}
+		prerequisite = {
+			focus = SAX_imperial_chancellor
+		}
+		prerequisite = {
+			focus = SAX_president_merged_prime_minister
+		}
+		x = 16
+		y = 7
+        completion_reward={
+		set_politics = {
+        ruling_party = AUT_democratic
+		}
+        add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.2
+		}
+		add_political_power = 120
+		 create_country_leader = {
+	name = "manfred·von·killinger"
+	desc = ""
+	picture = gfx/leaders/SAX/SAX_manfred.png
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+		country_event = { id = SAX.6}
+		load_focus_tree = SAX_politic_2
+		}
+	}
+	focus = {
+		id = SAX_party_peace
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_pacify_the_masses
+		}
+		x = 24
+		y = 6
+        completion_reward={
+		add_stability = 0.05
+		add_political_power = 80
+		}
+	}
+	focus = {
+		id = SAX_liberty_equality_love
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SAX_experimental_reform
+		}
+		prerequisite = {
+			focus = SAX_fortfied_guard
+		}
+		prerequisite = {
+			focus = SAX_party_peace
+		}
+		x = 22
+		y = 7
+        completion_reward={
+		add_ideas = SAX_liberty_equality_love
+		load_focus_tree = SAX_politic_2
+		}
+	}
+}

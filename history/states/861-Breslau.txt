@@ -1,0 +1,26 @@
+state={
+	id=861
+	name="STATE_861"
+	manpower = 6299370
+	
+	state_category = large_city
+
+	history={
+		owner = BAV
+		add_core_of = BAV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 2
+		}
+		victory_points = {
+			692 20
+		}
+	}
+
+	provinces={
+		692
+	}
+
+	local_supplies=0.0
+}

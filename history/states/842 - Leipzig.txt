@@ -1,0 +1,26 @@
+state = {
+	id = 842
+	name = "STATE_842"
+
+	history = {
+		owner = SAX
+		victory_points = {
+			3535 5 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		
+		add_core_of = SAX
+	}
+
+	provinces = {
+		3535 6582 6501 9497 11545 11481 6559 9441 9471
+	}
+	
+	manpower = 4370200
+	buildings_max_level_factor = 1.000
+	state_category = city
+
+	local_supplies = 0.0 
+}

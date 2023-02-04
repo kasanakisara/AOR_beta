@@ -1,0 +1,25 @@
+state={
+	id=872
+	name="STATE_872"
+	manpower = 201860
+	
+	state_category =rural
+
+	history={
+		owner = ITA
+		add_core_of = MNT
+		add_core_of = YUG
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			naval_base = 1
+		}
+	}
+
+	provinces={
+		3924 11816 3868 6889
+	}
+
+	local_supplies=3.0
+}

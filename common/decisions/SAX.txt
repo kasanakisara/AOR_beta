@@ -1,0 +1,1251 @@
+SAX_militar_committee = {
+	SAX_input_capital = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			base = 30
+		}
+		
+		complete_effect = {
+		add_to_variable = { 
+	    var = SAX.militar
+	    value = 1
+         }
+	}
+}
+	SAX_withdraw_funds = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.militar > 0 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+		add_political_power = 30
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 1
+        }
+	}	
+}
+		SAX_attach_militar = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.militar > 4 }
+		NOT = { has_idea = SAX_attach_militar }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到五百万可执行"
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 5
+        }
+		add_timed_idea = {
+		idea = SAX_attach_militar
+		days = 365
+		}
+		}
+
+		}
+		SAX_support_factory = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			check_variable = { SAX.militar > 4 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到五百万可执行"
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 5
+        }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+		
+		}
+		SAX_trainning_bunker = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.militar > 2 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到三百万可执行"
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 3
+        }
+		capital_scope = {
+					create_unit = {
+						division = "name = \"“要塞”\" division_template = \"“要塞”\" start_experience_factor = 1"
+						owner = ROOT
+						count = 3
+					}
+				}
+		}
+
+		}
+		SAX_purchase_weapons = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			check_variable = { SAX.militar > 0 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 10
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到一百万可执行"
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+	    }
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 1
+        }
+	}
+}
+SAX_purchase_guns = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			check_variable = { SAX.militar > 0 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 10
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到一百万可执行"
+		add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 600
+	    }
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 1
+        }
+	}
+}
+SAX_support_equipment = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			check_variable = { SAX.militar > 0 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 10
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到一百万可执行"
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 800
+	    }
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 1
+        }
+	}
+}
+SAX_support_manpower = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			check_variable = { SAX.militar > 0 }
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 10
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "资金达到一百万可执行"
+		add_manpower = 30000
+		subtract_from_variable = { 
+	    var = SAX.militar
+	    value = 1
+        }
+	}
+}
+}
+SAX_balance_of_power_AUT_democratic = {
+	SAX_support_friedrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.friedrich
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_friedrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.friedrich
+	    value = 5
+}
+			}
+		}
+		SAX_leader_friedrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.friedrich > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = Absolutism
+		popularity = 0.65
+		}
+	    set_politics = {
+        ruling_party = Absolutism
+		}
+		create_country_leader = {
+					name = "Friedrich August"
+					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = gfx/leaders/SAX/friedrich.dds
+					expire = "1965.1.1"
+					ideology = monarchism
+					traits = {
+						
+					}
+				}
+		}
+
+		}
+		SAX_support_bismrack = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.bismrack
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_bismrack = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.bismrack
+	    value = 5
+}
+			}
+		}
+		SAX_leader_bismrack = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.bismrack > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = CON_democratic
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = CON_democratic
+		}
+		create_country_leader = {
+					name = "Otto·Ashbald·von·bismarck"
+					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = gfx/leaders/SAX/bismarck.dds
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						
+					}
+				}
+		}
+		}
+		SAX_support_mackensen = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.mackensen
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_mackensen = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.mackensen
+	    value = 5
+}
+			}
+		}
+		SAX_leader_mackensen = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.mackensen > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = AUT_democratic
+		}
+	  create_country_leader = {
+	name = "August von Mackensen"
+	desc = ""
+	picture = gfx/leaders/SAX/MEKEN.png
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+		}
+		}
+		SAX_support_heydrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.heydrich
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_heydrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.heydrich
+	    value = 5
+}
+			}
+		}
+		SAX_leader_heydrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.heydrich > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = Fascism
+		}
+	  create_country_leader = {
+	name = "Reinhard·Tristan·Eugen·Heydrich"
+	desc = ""
+	picture = gfx/leaders/SAX/SAX_heydrich.png
+	expire = "1965.1.1"
+	ideology = NSDAP
+	traits = {
+	}
+}
+		}
+		}
+		SAX_support_rundstedt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.rundstedt
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_rundstedt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.rundstedt
+	    value = 5
+}
+			}
+		}
+		SAX_leader_rundstedt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.rundstedt > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = AUT_democratic
+		}
+	  create_country_leader = {
+	name = "Gerd·von·Rundstedt"
+	desc = ""
+	picture = gfx/leaders/SAX/SAX_Rundstedt.png
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+		}
+		}
+		SAX_support_model = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.model
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_model = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.model
+	    value = 5
+}
+			}
+		}
+		SAX_leader_model = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.model > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = AUT_democratic
+		}
+	  create_country_leader = {
+	name = "Walter·Model"
+	desc = ""
+	picture = gfx/leaders/SAX/Model.png
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+		}
+		}
+		SAX_support_reinhardt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = { 
+	    var = SAX.reinhardt
+	    value = 5
+         }
+			}
+		}
+	SAX_attack_reinhardt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 9
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		}
+		remove_effect = {
+		subtract_from_variable = { 
+	    var = SAX.reinhardt
+	    value = 5
+}
+			}
+		}
+		SAX_leader_reinhardt = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { SAX.reinhardt > SAX.than }
+		}
+		visible = {
+			
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = AUT_democratic
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = AUT_democratic
+		}
+	  create_country_leader = {
+	name = "Georg·Hans·reinhardt"
+	desc = ""
+	picture = gfx/leaders/SAX/Reinhardt.png
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+		}
+		}
+		SAX_leader_martin = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
+		}
+		visible = {
+			has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
+		}
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = "达到八十支持率可选择"
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = Fascism
+		}
+		create_country_leader = {
+	name = "martin·mutschmann"
+	desc = ""
+	picture = gfx/leaders/SAX/SAX_martin.png
+	expire = "1965.1.1"
+	ideology = NSDAP
+	traits = {
+	}
+}
+		}
+		}
+}
+SAX_broken_germany = {
+SAX_leader_kruger = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
+		}
+		visible = {
+			has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		add_popularity = {
+		ideology = Special
+		popularity = 1
+		}
+			set_politics = {
+        ruling_party = Special
+		}
+		create_country_leader = {
+	name = "Walter·kruger"
+	desc = ""
+	picture = gfx/leaders/SAX/SAX_kruger.png
+	expire = "1965.1.1"
+	ideology = revengism
+	traits = {
+	}
+}
+		}
+		}
+SAX_attack_north_govermant = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+			is_neighbor_of = GER
+			country_exists = GER
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+				
+		war_with_on_complete = GER
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_north_govermant
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = GER
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_silesia = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = SIL
+		   country_exists = SIL
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+				
+		war_with_on_complete = SIL
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_silesia
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = SIL
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_pomerania = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = KSH
+		   country_exists = KSH
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+				
+		war_with_on_complete = KSH
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_pomerania
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = KSH
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_MEK = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = MEK
+		   country_exists = MEK
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = MEK
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_MEK
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = MEK
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_SHL = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = SHL
+		   country_exists = SHL
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = SHL
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_SHL
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = SHL
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_HAN = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = HAN
+		   country_exists = HAN
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = HAN
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_HAN
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = HAN
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_NAU = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = NAU
+		   country_exists = NAU
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = NAU
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_NAU
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = NAU
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_BAV = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = BAV
+		   country_exists = BAV
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = BAV
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_BAV
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = BAV
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_WUR = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = WUR
+		   country_exists = WUR
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = WUR
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_WUR
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = WUR
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_attack_PRE = {
+
+		icon = PUM_decision#决议的图标
+		
+
+		available = {
+			original_tag = SAX
+		   is_neighbor_of = PRE
+		   country_exists = PRE
+			has_war = no
+		}
+		
+		allowed = {
+			original_tag = SAX
+		}
+		
+		war_with_on_complete = PRE
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SAX
+			has_completed_focus = SAX_attack_PRE
+		}
+		
+
+		
+		complete_effect = {
+		declare_war_on = { 
+		target = PRE
+		type = civil_war
+		 }
+		}
+		
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+			

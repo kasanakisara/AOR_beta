@@ -1,0 +1,1348 @@
+focus_tree = {
+	id = KSH_1
+	country = {
+		factor = 3
+		modifier = {
+			add = 10
+			tag = KSH
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1200 y = 2100 }
+	focus = {
+		id = KSH_the_rich_lyendowed_regions_of_Germany
+		icon = GFX_goal_KSH_the_richlyendowed_regions_of_Germany
+		cost = 1.00
+		x = 19
+		y = 0
+		completion_reward = {
+			country_event = { id = KSH.1 }
+		}
+		
+
+	}
+	focus = {
+		id = KSH_the_area_guarded_by_the_Freedom_Corps
+		icon = GFX_goal_KSH_the_area_guarded_by_the_Freedom_Corps
+		cost = 1.00
+		x = 25
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = KSH.2
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_gather_the_Freedom_Corps
+		icon = GFX_goal_KSH_gather_the_Freedom_Corps
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_the_rich_lyendowed_regions_of_Germany
+		}
+		prerequisite = {
+			focus = KSH_the_area_guarded_by_the_Freedom_Corps
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Freedom_Corps
+				add_idea = Freedom_Corps_2 
+			}
+			country_event = { id = KSH.3 }
+			custom_effect_tooltip = KSH_HE_tt
+			hidden_effect  ={
+				country_event = { days = 70 id = KSH.4 }
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_the_Revolution_of_the_Freedom_Corps
+		icon = GFX_goal_KSH_the_Revolution_of_the_Freedom_Corps
+		cost = 5.00
+		select_effect = {
+			country_event = { days = 5 id = KSH.5 }
+		}
+		prerequisite = {
+			focus = KSH_gather_the_Freedom_Corps
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = KSH_event_tt
+			hidden_effect = {
+				remove_ideas = Army_mutiny
+				remove_ideas = Anarchists_march_and_demonstrate
+				remove_ideas = Conservative_opposition
+			}
+			add_ideas = revolutionize_Freedom_Corps
+			country_event = {
+				id = KSH.8
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_plan_of_eagle
+		icon = GFX_goal_KSH_plan_of_eagle
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_the_Revolution_of_the_Freedom_Corps
+		}
+		mutually_exclusive = {
+			focus = KSH_plan_of_tiger
+		}
+		x = 7
+		y = 3
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KSH_xiongyingjihu_tt
+				has_country_flag = xiongyingjihua
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = KSH.10
+			}
+			add_ideas = KSH_plan_of_eagle_1
+			swap_ideas = {
+				remove_idea = revolutionize_Freedom_Corps
+				add_idea = KSH_geming_ziyoujuntuan_1
+			}
+			country_event = {
+				id = KSH.10
+			}
+			
+			
+			unlock_decision_category_tooltip = KSH_plan_of_eagle_d
+		}
+
+	}
+	focus = {
+		id = KSH_plan_of_tiger
+		icon = GFX_goal_KSH_plan_of_tiger
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_the_Revolution_of_the_Freedom_Corps
+		}
+		mutually_exclusive = {
+			focus = KSH_plan_of_eagle
+			focus = KSH_plan_of_dragon
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KSH_menghujihua_tt
+				has_country_flag = menghujihua
+			}
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = KSH.11
+			}
+			add_ideas = KSH_plan_of_tiger_1
+			unlock_decision_category_tooltip = KSH_plan_of_tiger_d
+		}
+
+	}
+	focus = {
+		id = KSH_Expand_Baltic_trade
+		icon = GFX_goal_KSH_Expand_Baltic_trade
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_plan_of_tiger
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = KSH_Encourage_rade_with_Berlin
+		icon = GFX_goal_KSH_Encourage_rade_with_Berlin
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_plan_of_tiger
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = KSH_Berlin_meeting
+		icon = GFX_goal_KSH_Berlin_meeting
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Expand_Baltic_trade
+		}
+		prerequisite = {
+			focus = KSH_Encourage_rade_with_Berlin
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = KSH_Expand_the_scale_of_trade
+		icon = GFX_goal_KSH_Expand_the_scale_of_trade
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Berlin_meeting
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = KSH_revival_plan
+		icon = GFX_goal_KSH_revival_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Expand_the_scale_of_trade
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = KSH_Cooperation_with_Deutsche_Bank
+		icon = GFX_goal_KSH_Cooperation_with_Deutsche_Bank
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_revival_plan
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Berlin_Programme
+		icon = GFX_goal_KSH_Berlin_Programme
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_revival_plan
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Reorganize_officers_of_the_Freedom_Corps
+		icon = GFX_goal_KSH_Reorganize_officers_of_the_Freedom_Corps
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_revival_plan
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Oder_plan
+		icon = GFX_goal_KSH_Oder_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Cooperation_with_Deutsche_Bank
+		}
+		prerequisite = {
+			focus = KSH_Berlin_Programme
+		}
+		prerequisite = {
+			focus = KSH_Reorganize_officers_of_the_Freedom_Corps
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Lorelei_plan
+		icon = GFX_goal_KSH_Lorelei_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Cooperation_with_Deutsche_Bank
+		}
+		prerequisite = {
+			focus = KSH_Berlin_Programme
+		}
+		prerequisite = {
+			focus = KSH_Reorganize_officers_of_the_Freedom_Corps
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Odin_plan
+		icon = GFX_goal_KSH_Odin_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Oder_plan
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = KSH_Freyr_plan
+		icon = GFX_goal_KSH_Freyr_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Cooperation_with_Deutsche_Bank
+		}
+		prerequisite = {
+			focus = KSH_Berlin_Programme
+		}
+		prerequisite = {
+			focus = KSH_Reorganize_officers_of_the_Freedom_Corps
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Thiazi_plan
+		icon = GFX_goal_KSH_Thiazi_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Freyr_plan
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = KSH_Loki_plan
+		icon = GFX_goal_KSH_Loki_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Cooperation_with_Deutsche_Bank
+		}
+		prerequisite = {
+			focus = KSH_Berlin_Programme
+		}
+		prerequisite = {
+			focus = KSH_Reorganize_officers_of_the_Freedom_Corps
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Thor_plan
+		icon = GFX_goal_KSH_Thor_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Loki_plan
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = KSH_plan_of_dragon
+		icon = GFX_goal_KSH_plan_of_dragon
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_the_Revolution_of_the_Freedom_Corps
+		}
+		mutually_exclusive = {
+			focus = KSH_plan_of_tiger
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KSH_julongjihua_tt
+				has_country_flag = delagongjihua
+			}
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+			country = {
+				id = KSH.12
+			}
+			add_ideas = KSH_plan_of_dragon_1
+			unlock_decision_category_tooltip = KSH_plan_of_dragon_d
+		}
+
+	}
+	focus = {
+		id = KSH_Kaiser_Radio_Station
+		icon = GFX_goal_KSH_Kaiser_Radio_Station
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_plan_of_dragon
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = KSH_Unite_Juncker
+		icon = GFX_goal_KSH_Unite_Juncker
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_plan_of_dragon
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = KSH_Osten_negotiation
+		icon = GFX_goal_KSH_Osten_negotiation
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Kaiser_Radio_Station
+		}
+		prerequisite = {
+			focus = KSH_Unite_Juncker
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = KSH_Important_people_visit
+		icon = GFX_goal_KSH_Important_people_visit
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Osten_negotiation
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = KSH_Assistance_from_Osten
+		icon = GFX_goal_KSH_Assistance_from_Osten
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Osten_negotiation
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = KSH_Glory_and_light_plan
+		icon = GFX_goal_KSH_Glory_and_light_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Important_people_visit
+		}
+		prerequisite = {
+			focus = KSH_Assistance_from_Osten
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = KSH_deutsche_plan
+		icon = GFX_goal_KSH_deutsche_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Glory_and_light_plan
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Frederick_plan
+		icon = GFX_goal_KSH_Frederick_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_deutsche_plan
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = KSH_William_plan
+		icon = GFX_goal_KSH_William_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Glory_and_light_plan
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Dragon_head_plan
+		icon = GFX_goal_KSH_Dragon_head_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_William_plan
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = KSH_people_behind_the_scenes
+		icon = GFX_goal_KSH_people_behind_the_scenes
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_plan_of_eagle
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_ideas = KSH_muhouzhiren
+			country_event = {
+				id = KSH.13
+			}
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = KSH_create_the_NPD
+		icon = GFX_goal_KSH_create_the_NPD
+		cost = 1.00
+		prerequisite = {
+			focus = KSH_people_behind_the_scenes
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_muhouzhiren
+				add_idea = KSH_guojiarenminbao
+			}
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = KSH_create_the_NV
+		icon = GFX_goal_KSH_create_the_NV
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_people_behind_the_scenes
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			add_ideas = KSH_guojiarenminjun
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_1
+				add_idea = KSH_geming_ziyoujuntuan_2
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_unite_the_Freedom_Corps
+		icon = GFX_goal_KSH_unite_the_Freedom_Corps
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_create_the_NPD
+		}
+		prerequisite = {
+			focus = KSH_create_the_NV
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_2
+				add_idea = KSH_geming_ziyoujuntuan_3
+			}
+		}
+
+
+	}
+	focus = {
+		id = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		icon = GFX_goal_KSH_Nimm_die_Schaufel_Steht_aufrecht
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_unite_the_Freedom_Corps
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = KSH.14
+			}
+			add_ideas = KSH_bomeilaniyalaogongzhenxian
+			hidden_effect = {
+				country_event = {
+					days = 3
+					id = KSH.16
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_untiy_plan
+		icon = GFX_goal_KSH_untiy_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KSH_gusitafu_tt
+				has_country_flag = tuanjiegongcheng
+			}
+		}
+		prerequisite = {
+			focus = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		}
+		x = 1
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_3
+				add_idea = KSH_geming_ziyoujuntuan_4
+			}
+			871 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory  
+					level = 2
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					days = 5
+					id = KSH.17
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = KSH_Schloss_Neuschwanstein_project
+		icon = GFX_goal_KSH_Schloss_Neuschwanstein_project
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = xintianebao_tt
+				has_country_flag = xintianebao
+			}
+		}
+		prerequisite = {
+			focus = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			country_event = {
+				id = KSH.15
+			}
+			swap_ideas = {
+				remove_idea = Decrease_in_living_standards
+				add_idea = Decrease_in_living_standards_2
+			}
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_5
+				add_idea = KSH_geming_ziyoujuntuan_6 
+			}
+			swap_ideas = {
+				remove_idea = KSH_plan_of_eagle_1
+				add_idea = KSH_plan_of_eagle_2
+			}
+			871 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			         type = industrial_complex 
+			         level = 2
+			         instant_build = yes 
+		        }
+			}
+			hidden_effect = {
+				days = 5
+				id = KSH.19
+			}
+		}
+	}
+	focus = {
+		id = KSH_Blut_und_Boden_plan
+		icon = GFX_goal_KSH_Blut_und_Boden_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = xueyutu_tt
+				has_country_flag = xueyutu
+			}
+		}
+		prerequisite = {
+			focus = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		}
+		x = 7
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_bomeilaniyalaogongzhenxian
+				add_idea = KSH_bomeilaniyalaogongzhenxian_1
+			}
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_4
+				add_idea = KSH_geming_ziyoujuntuan_5
+			}
+			custom_effect_tooltip = KSH_BUBp_tt
+			hidden_effect = {
+				62 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+						province = 9388
+					}
+				}
+				870 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex 
+						level = 1
+						instant_build = yes
+						province = 11372
+					}
+				}
+				country_event = {
+					days = 5
+					id = KSH.18
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_highway_of_people_plan
+		icon = GFX_goal_KSH_highway_of_people_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = renmin_tt
+				has_country_flag = renmin
+			}
+		}
+		prerequisite = {
+			focus = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			country_event = {
+				id = KSH.21
+			}
+			swap_ideas = {
+				remove_idea = KSH_plan_of_eagle_2
+				add_idea = KSH_plan_of_eagle_3
+			}
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_6
+				add_idea = KSH_geming_ziyoujuntuan_10
+			}
+			custom_effect_tooltip = faisugonglu
+			hidden_effect = {
+				871 = {
+					add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes 
+					}
+				}
+				870 = {
+					add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes 
+					}
+				}
+				63 = {
+					add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes 
+					}
+				}
+				62 = {
+					add_building_construction = {
+						type = infrastructure 
+						level = 1
+						instant_build = yes 
+					}
+				}
+				country_event = {
+					days = 5
+					id = KSH.22
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = KSH_neues_Deutschland_plan
+		icon = GFX_goal_KSH_neues_Deutschland_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = xindeyizhi_tt
+				has_country_flag = xindeyizhi
+			}
+		}
+		prerequisite = {
+			focus = KSH_Nimm_die_Schaufel_Steht_aufrecht
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+			63 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					days = 3
+					id = KSH.20
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_Visva_plan
+		icon = GFX_goal_KSH_Visva_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = weisiwa_tt
+				has_country_flag = weisiwa
+			}
+		}
+		prerequisite = {
+			focus = KSH_untiy_plan
+		}
+		prerequisite = {
+			focus = KSH_Schloss_Neuschwanstein_project
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+			add_ideas = KSH_boluodihaidemaoyi
+			swap_ideas = {
+				remove_idea = KSH_plan_of_eagle_4
+				add_idea = KSH_plan_of_eagle_5
+			}
+			swap_ideas = {
+				remove_idea = Decrease_in_living_standards_1 
+				add_idea = Decrease_in_living_standards_2
+			}
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_10
+				remove_idea = KSH_geming_ziyoujuntuan_7
+			}
+			871 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard 
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					days = 5
+					id = KSH.25
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_mayer_plan
+		icon = GFX_goal_KSH_mayer_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = deguojujiang_tt
+				has_country_flag = deguojujiang
+			}
+		}
+		prerequisite = {
+			focus = KSH_Blut_und_Boden_plan
+		}
+		x = 7
+		y = 9
+		completion_reward = {
+			62 = {
+					add_building_construction = {
+						type = dockyard  
+						level = 1
+						instant_build = yes 
+						province = 9388
+					}
+			}
+			62 = {
+					add_building_construction = {
+						type = dockyard  
+						level = 1
+						instant_build = yes 
+						province = 3340
+					}
+			}
+			hidden_effect = {
+				country_event = {
+					days = 5
+					id = KSH.23
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_Valkyrie_plan
+		icon = GFX_goal_KSH_Valkyrie_plan
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = waerjili_tt
+				has_country_flag = waerjili
+			}
+		}
+		cost = 5.00
+		prerequisite = {
+			focus = KSH_highway_of_people_plan
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_plan_of_eagle_3
+				add_idea = KSH_plan_of_eagle_4
+			}
+			62 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				contry_event = {
+					days = 5
+					id = KSH.24
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = KSH_Baltic_Sea_plan
+		icon = GFX_goal_KSH_Baltic_Sea_plan
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = boluodihai_tt
+				has_country_flag = boluodihai 
+			}
+		}
+		prerequisite = {
+			focus = KSH_neues_Deutschland_plan
+		}
+		x = 13
+		y = 9
+		completion_reward = {
+			62 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard 
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_Sever_diplomatic_relations_with_berlin
+		icon = GFX_goal_KSH_Sever_diplomatic_relations_with_berlin
+		cost = 1.00
+		prerequisite = {
+			focus = KSH_mayer_plan
+		}
+		prerequisite = {
+			focus = KSH_Visva_plan
+		}
+		prerequisite = {
+			focus = KSH_Valkyrie_plan
+		}
+		prerequisite = {
+			focus = KSH_Baltic_Sea_plan
+		}
+		x = 7
+		y = 10
+		completion_reward = {
+			remove_idea = trade_with_berlin
+			country = {
+				id = KSH.26
+			}
+
+		}
+
+	}
+	focus = {
+		id = KSH_revolutionize_in_freedom_corps
+		icon = GFX_goal_KSH_revolutionize_in_freedom_corps
+		cost = 3.00
+		prerequisite = {
+			focus = KSH_Sever_diplomatic_relations_with_berlin
+		}
+		x = 7
+		y = 11
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_geming_ziyoujuntuan_7
+				add_idea = KSH_geming_ziyoujuntuan_9
+			}
+			country_event = {
+				id = KSH.27
+			}
+			hidden_effect = {
+				country_event = {
+					days = 56
+					id = KSH.28
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_create_the_Germanic_regiment
+		icon = GFX_goal_KSH_create_the_Germanic_regiment
+		cost = 1.00
+		prerequisite = {
+			focus = KSH_revolutionize_in_freedom_corps
+		}
+		x = 5
+		y = 12
+		create_unit = {
+			division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 1"
+			owner = PREV
+			count = 1
+		}
+
+
+	}
+	focus = {
+		id = KSH_create_national_people_regiment
+		icon = GFX_goal_KSH_create_national_people_regiment
+		cost = 1.00
+		prerequisite = {
+			focus = KSH_revolutionize_in_freedom_corps
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = KSH_new_Pomerania
+		icon = GFX_goal_KSH_new_Pomerania
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_create_the_Germanic_regiment
+		}
+		prerequisite = {
+			focus = KSH_create_national_people_regiment
+		}
+		x = 7
+		y = 13
+		completion_reward = {
+			add_ideas = KSH_zhanxindebomeilaniya
+			remove_ideas = KSH_geming_ziyoujuntuan_9
+			remove_ideas = Decrease_in_living_standards_2
+			country_event = {
+				id = KSH.29
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_negotiation_of_Kaiserreich
+		icon = GFX_goal_KSH_negotiation_of_Kaiserreich
+		cost = 3.00
+		prerequisite = {
+			focus = KSH_new_Pomerania
+		}
+		x = 7
+		y = 14
+		completion_reward = {
+			country_event = {
+				id = KSH.30
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_the_eagle_expanded_its_wings
+		icon = GFX_goal_KSH_the_eagle_expanded_its_wings
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_negotiation_of_Kaiserreich
+		}
+		x = 7
+		y = 15
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_zhanxindebomeilaniya
+				add_idea = KSH_zhanxindebomeilaniya_1
+			}
+			country_event = {
+				country_event = {
+					id = KSH.31
+				}
+			}
+			hidden_effect = {
+				load_focus_tree = KSH_2
+			}
+		}
+
+	}
+	focus = {
+		id = KSH_rainbow_plan
+		icon = GFX_goal_KSH_rainbow_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Cooperation_with_Deutsche_Bank
+		}
+		prerequisite = {
+			focus = KSH_Berlin_Programme
+		}
+		prerequisite = {
+			focus = KSH_Reorganize_officers_of_the_Freedom_Corps
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Stettin_plan
+		icon = GFX_goal_KSH_Stettin_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_rainbow_plan
+		}
+		prerequisite = {
+			focus = KSH_Lorelei_plan
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = KSH_Conscription_movement
+		icon = GFX_goal_KSH_Conscription_movement
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Odin_plan
+		}
+		prerequisite = {
+			focus = KSH_Thiazi_plan
+		}
+		prerequisite = {
+			focus = KSH_Thor_plan
+		}
+		prerequisite = {
+			focus = KSH_Stettin_plan
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = KSH_create_the_Einigkeit_regiment
+		icon = GFX_goal_KSH_create_the_Einigkeit_regiment
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Conscription_movement
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = KSH_create_the_Recht_regiment
+		icon = GFX_goal_KSH_create_the_Recht_regiment
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Conscription_movement
+		}
+		x = 25
+		y = 12
+
+	}
+	focus = {
+		id = KSH_das_Bann_blieb_sich_gleich
+		icon = GFX_goal_KSH_das_Bann_blieb_sich_gleich
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_create_the_Einigkeit_regiment
+		}
+		prerequisite = {
+			focus = KSH_create_the_Recht_regiment
+		}
+		x = 22
+		y = 13
+
+	}
+	focus = {
+		id = KSH_Tiger_descending_the_mountain
+		icon = GFX_goal_KSH_Tiger_descending_the_mountain
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_das_Bann_blieb_sich_gleich
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = {
+		id = KSH_Bismarck_plan
+		icon = GFX_goal_KSH_Bismarck_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Glory_and_light_plan
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Friedrich_plan
+		icon = GFX_goal_KSH_Friedrich_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Glory_and_light_plan
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = KSH_Corps_plan
+		icon = GFX_goal_KSH_Corps_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Bismarck_plan
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = KSH_international_sea_plan
+		icon = GFX_goal_KSH_international_sea_plan
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Friedrich_plan
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = KSH_Reorganize_of_the_freedom_corops
+		icon = GFX_goal_KSH_Reorganize_of_the_freedom_corops
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Frederick_plan
+		}
+		prerequisite = {
+			focus = KSH_Corps_plan
+		}
+		prerequisite = {
+			focus = KSH_Dragon_head_plan
+		}
+		prerequisite = {
+			focus = KSH_international_sea_plan
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = KSH_create_the_William_II_regiment
+		icon = GFX_goal_KSH_create_the_William_II_regiment
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Reorganize_of_the_freedom_corops
+		}
+		x = 34
+		y = 11
+
+	}
+	focus = {
+		id = KSH_create_the_Bismarck_regiment
+		icon = GFX_goal_KSH_create_the_Bismarck_regiment
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_Reorganize_of_the_freedom_corops
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = KSH_proscription_of_trade
+		icon = GFX_goal_KSH_proscription_of_trade
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_create_the_William_II_regiment
+		}
+		prerequisite = {
+			focus = KSH_create_the_Bismarck_regiment
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = KSH_berlin_negotiation
+		icon = GFX_goal_KSH_berlin_negotiation
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_proscription_of_trade
+		}
+		x = 36
+		y = 13
+
+	}
+	focus = {
+		id = KSH_freedom_curops_of_Kaiser
+		icon = GFX_goal_KSH_freedom_curops_of_Kaiser
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_berlin_negotiation
+		}
+		x = 36
+		y = 14
+
+	}
+	focus = {
+		id = KSH_Dragons_fly_in_the_sky
+		icon = GFX_goal_KSH_Dragons_fly_in_the_sky
+		cost = 0.00
+		prerequisite = {
+			focus = KSH_freedom_curops_of_Kaiser
+		}
+		x = 36
+		y = 15
+
+	}
+}

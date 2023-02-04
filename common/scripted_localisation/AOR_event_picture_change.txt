@@ -1,0 +1,46 @@
+defined_text = {
+   name = event_picture_change
+   
+   text = {
+        trigger = {has_government = marxism }
+		localization_key = GFX_AOR_event_picture_change_1
+	}
+	
+   text = {
+        trigger = {has_government = Fascism }
+		localization_key = GFX_AOR_event_picture_change_2
+	}
+	
+   text = {
+        trigger = {has_government = CON_democratic }
+		localization_key = GFX_AOR_event_picture_change_3
+	}
+   text = {
+        trigger = {has_government = FRE_democratic }
+		localization_key = GFX_AOR_event_picture_change_4
+	}
+   text = {
+        trigger = {has_government = AUT_democratic }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+   text = {
+        trigger = {has_government = ISL_democratic }
+		localization_key = GFX_AOR_event_picture_change_6
+	}
+   text = {
+        trigger = {has_government = SOC_democratic }
+		localization_key = GFX_AOR_event_picture_change_7
+	}
+   text = {
+        trigger = {has_government = Anarcho }
+		localization_key = GFX_AOR_event_picture_change_8
+	}
+   text = {
+        trigger = {has_government = Absolutism }
+		localization_key = GFX_AOR_event_picture_change_9
+	}
+  text = {
+        trigger = {has_government = Special }
+		localization_key = GFX_AOR_event_picture_change_10
+	}
+}
