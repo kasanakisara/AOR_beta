@@ -11,6 +11,11 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 600 }	
 
+
+
+
+
+
 	##########政治线##########
 	#奠定自由与民主的根基
 	focus = {
@@ -25,7 +30,15 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = 0.05
+			}
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = AOR_SIL_idea_freedom_democracy_foundation_1
+		 }
 
 	}
 	#警惕共产主义
@@ -44,7 +57,15 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = -0.03
+			add_popularity = 30
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.05
+			}
+			add_ideas = FRA_communism_banned
+		}
 
 	}
 	#强化司法机构
@@ -63,7 +84,14 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = AOR_GER_Conflict_between_houses
+				days = 20
+			}
+			add_political_power = 30
+			add_stability = 0.05
+		 }
 
 	}
 	#引导与教导
@@ -82,7 +110,10 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_popularity = 30
+		}
 
 	}
 	#矢志不渝
@@ -104,7 +135,11 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			remove_targeted_decision = AOR_GER_Conflict_between_houses 
+			set_country_flag = SIL_abide_faith
+			add_ideas = AOR_SIL_idea_abide_by_one_faith_1
+		}
 
 	}
 	#扩建布雷斯劳大学
@@ -123,7 +158,9 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_research_slot = 1 
+		}
 
 	}
 	#确保宪法的解释权和司法审查权
@@ -142,7 +179,10 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = AOR_SIL_idea_Interpreting_Constitution
+		 }
 
 	}
 	#长久不衰的宪政原则
@@ -161,7 +201,12 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_abide_by_one_faith_1
+				add_idea = AOR_SIL_idea_abide_by_one_faith_2
+			}
+		}
 
 	}
 	#兼任立法机构负责人
@@ -180,7 +225,11 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_popularity = 40
+			add_country_leader_trait = Head_of_legislative
+		}
 
 	}
 	#最大限度保障公民权益
@@ -199,7 +248,14 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_war_support = 0.1
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_freedom_democracy_foundation_1
+				add_idea = AOR_SIL_idea_freedom_democracy_foundation_2
+			}
+		}
 
 	}
 	#社会进步与平等的源泉
@@ -218,7 +274,10 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 50
+		}
 
 	}
 	#塑造地区反对党
@@ -237,7 +296,9 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			country_event = { id = SIL.1 }
+		}
 
 	}
 	#确保选票的权威
@@ -256,7 +317,13 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.03
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_freedom_democracy_foundation_2
+				add_idea = AOR_SIL_idea_freedom_democracy_foundation_3
+			}
+		}
 
 	}
 	#民主进程的作用
@@ -278,7 +345,9 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = AOR_SIL_idea_democratic_process
+		 }
 
 	}
 	#武装民主的人民
@@ -301,9 +370,16 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
-	}
+		completion_reward = { 
+			remove_ideas = AOR_SIL_idea_freedom_democracy_foundation_3
+			remove_ideas = AOR_SIL_idea_abide_by_one_faith_2
+			remove_ideas = AOR_SIL_idea_democratic_process
+			swap_ideas = {
+				   remove_idea = AOR_SIL_idea_freedom_democracy_foundation_3
+				   add_idea = AOR_SIL_idea_freedom_democracy_foundation_4
+				}
+	     	}
+	    }
 	#实现谢德曼的伟大理想
 	focus = {
 		id = AOR_SIL_Politics_16
@@ -320,8 +396,9 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
+		completion_reward = { 
+			country_event = { id = SIL.2 }
+		}
 	}
 	#渗入纯净、俯视多变
 	focus = {
@@ -339,9 +416,23 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
-	}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity  = {
+				ideology = Marxism
+				popularity = -0.05
+			    }
+				add_popularity  = {
+					ideology = fascism
+					popularity = -0.05
+					}
+					add_popularity  = {
+						ideology = Absolutism
+						popularity = -0.05
+						}
+		    }
+			add_ideas = AOR_SIL_idea_pure_changeable
+		}
 	#放眼祖国
 	focus = {
 		id = AOR_SIL_Politics_18
@@ -358,8 +449,12 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
+		completion_reward = { 
+			unlock_decision_tooltip = {
+                decision = AOR_SIL_decision_Propaganda_democracy
+                show_effect_tooltip = yes
+            }
+		}
 	}
 	#以民主来团结
 	focus = {
@@ -380,9 +475,18 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
-	}
+		completion_reward = {
+			every_country = {
+                limit = {
+                   OR = { tag = GER tag = NAU tag = HAN tag = BAV tag = SIL tag = KSH tag = WUR tag = SAX tag = PRU tag = SHL tag = MEK }               
+                PREV = {
+                    add_ideas = AOR_SIL_idea_Unite_with_democracy
+                    country_event = { id = AOR_SIL_timeaxis.1  days = 1 }
+			        	}
+                    }
+                }
+		    }
+	    }
 	#横向联合、实现民主
 	focus = {
 		id = AOR_SIL_Politics_20
@@ -399,9 +503,17 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
-	}
+		completion_reward = { 
+			every_country = {
+                limit = {
+                   OR = { tag = GER tag = NAU tag = HAN tag = BAV tag = SIL tag = KSH tag = WUR tag = SAX tag = PRU tag = SHL tag = MEK }               
+                PREV = {
+                    country_event = { id = AOR_SIL_timeaxis.2  days = 1 }
+			        	}
+                    }
+                }
+	    	}
+    	}
 	#对立而不抗拒
 	focus = {
 		id = AOR_SIL_Politics_21
@@ -418,9 +530,24 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = 1
+				add_idea = 1
+			}
+		}
 
 	}
+
+
+
+
+
+
+
+
+
+
 
 	##########工业线##########
 	#西里西亚“工业金山”
@@ -436,9 +563,16 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
+		completion_reward = {
+			66 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
 	}
+}
 	#遣往捷克的交流使团
 	focus = {
 		id = AOR_SIL_Industry_2
@@ -455,7 +589,11 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			CZE = {
+				country_event = { SIL.20 }
+			}
+		}
 
 	}
 	#奥得河沿岸的轰鸣声
@@ -474,7 +612,17 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			CZE = {
+				country_event = { SIL.21}
+			}
+			GNR = {
+				country_event = { SIL.21}
+			}
+			KSH = {
+				country_event = { SIL.21}
+			}
+		}
 
 	}
 	#国家补贴食品工厂
@@ -493,9 +641,21 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
-
-	}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			66 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
 	#向上游出口农矿产品
 	focus = {
 		id = AOR_SIL_Industry_5
@@ -512,7 +672,10 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			CZE = { country_event = SIL.22}
+			add_ideas = free_trade
+		}
 
 	}
 	#“黑色的黄金”
@@ -531,7 +694,20 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = excavation_tech
+			}
+			66 = {
+				add_building_construction = {
+					type = army_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	#农业改革
@@ -550,7 +726,16 @@ focus_tree = {
 		ai_will_do = { base = 1 }
 		available = { }
 		bypass = { }
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+			66 = {
+				add_building_construction = {
+					type = var:infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	#完成工业整合
@@ -707,13 +892,21 @@ focus_tree = {
 	}
 
 
+
+
+
+
+
+
+
 	
-	##########工业线##########
+	##########政治/外交##########
 	#强化德意志邦国联系
 	focus = {
 		id = AOR_SIL_diplomacy_1
 		icon = GFX_goal_unknown
 		cost = 5.00
+		available = { always = no }
 		mutually_exclusive = {
 			focus = AOR_SIL_diplomacy_16
 		}
@@ -723,7 +916,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
 		bypass = { }
 		completion_reward = { }
 
@@ -733,6 +925,7 @@ focus_tree = {
 		id = AOR_SIL_diplomacy_2
 		icon = GFX_goal_unknown
 		cost = 5.00
+		available = { always = no }
 		prerequisite = {
 			focus = AOR_SIL_diplomacy_1
 		}
@@ -745,7 +938,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
 		bypass = { }
 		completion_reward = { }
 
@@ -755,6 +947,7 @@ focus_tree = {
 		id = AOR_SIL_diplomacy_3
 		icon = GFX_goal_generic_attack_allies
 		cost = 5.00
+		available = { always = no }
 		prerequisite = {
 			focus = AOR_SIL_diplomacy_2
 		}
@@ -764,7 +957,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
 		bypass = { }
 		completion_reward = { }
 
@@ -774,6 +966,7 @@ focus_tree = {
 		id = AOR_SIL_diplomacy_4
 		icon = GFX_focus_ETH_peacekeeping_forces
 		cost = 5.00
+		available = { always = no }
 		prerequisite = {
 			focus = AOR_SIL_diplomacy_2
 		}
@@ -781,9 +974,7 @@ focus_tree = {
 		y = 2
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
 		bypass = { }
 		completion_reward = { }
 
@@ -805,7 +996,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -824,7 +1015,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -842,8 +1033,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -863,7 +1053,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -882,7 +1072,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -906,7 +1096,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -922,7 +1112,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -942,7 +1132,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -964,7 +1154,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -986,7 +1176,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1005,7 +1195,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1024,7 +1214,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1046,7 +1236,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1065,7 +1255,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1085,7 +1275,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1104,7 +1294,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1123,7 +1313,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
@@ -1145,7 +1335,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		ai_will_do = { base = 1 }
-		available = { }
+		available = { always = no }
 		bypass = { }
 		completion_reward = { }
 
