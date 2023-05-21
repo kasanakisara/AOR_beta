@@ -181,6 +181,82 @@ ideas = {
 				production_speed_arms_factory_factor = -0.30
 			}
 		}
+		
+		#阿尔贝一世
+		Albert_I = {
+			
+			picture = idea_Albert_I
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		#玉米贸易
+		Maize_Trade = {
+			
+			picture = idea_Maize_Trade
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				min_export = 0.1
+			}
+		}
+		
+		#基础教育
+		Primary_ducation_Academy = {
+			
+			picture = idea_Primary_ducation_Academy
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		#索尔维会议的余波#
+		
+		Aftermath_of_Solvay_Conference = {
+			
+			picture = idea_Primary_ducation_Academy
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		
+		
 		#以下五个同为国策用，开局添加第一个即可
 		delicate_military = {
 			picture = idea_delicate_military

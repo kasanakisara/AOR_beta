@@ -7,7 +7,7 @@ focus_tree = {
 			tag = ITA
 		}
 	}
-	default = yes
+	default = no
 	continuous_focus_position= { x = 12, y = 120 }
 	focus = {
 		id = The_Longest_Day

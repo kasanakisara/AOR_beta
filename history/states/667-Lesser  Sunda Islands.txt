@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = GML
+		add_core_of = GML
 		add_core_of = INS
 		buildings = {
 			infrastructure = 2

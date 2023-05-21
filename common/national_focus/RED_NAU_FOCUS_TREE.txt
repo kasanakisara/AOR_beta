@@ -1,0 +1,573 @@
+focus_tree = {
+	id = RED_NAU_FOCUS_TREE
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NAU
+		}
+	}
+	default = no
+	focus = {
+		id = dahuijixu
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 7
+		y = 0
+		complete_effect = {
+			country_event = { id = NAU.14 }
+
+		}
+
+	}
+	focus = {
+		id = lianxiwaijie
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = dahuijixu
+		}
+		x = 7
+		y = 1
+		complete_effect = {
+			add_opinion_modifier = {
+				target = WUR
+				modifier = relationship_with_WUR
+			}
+			add_opinion_modifier = {
+				target = BAV
+				modifier = relationship_with_BAV
+			}
+			add_opinion_modifier = {
+				target = SAX
+				modifier = relationship_with_SAX
+			}
+		}
+	}
+	focus = {
+		id = hefahuadudadiwei
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = lianxiwaijie
+		}
+		x = 7
+		y = 2
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = paijifanduipai
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = hefahuadudadiwei
+		}
+		x = 7
+		y = 3
+		complete_effect = {
+			country_event = { id = NAU.15}
+		}
+	}
+	focus = {
+		id = shixingdangjin
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = paijifanduipai
+		}
+		mutually_exclusive = {
+			focus = newfocus_5
+		}
+		x = 5
+		y = 4
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = kaifangwaijidangpai
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = shixingdangjin
+		}
+		x = 5
+		y = 5
+		complete_effect = {
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = wuzhuzuiba
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = paijifanduipai
+		}
+		mutually_exclusive = {
+			focus = shixingdangjin
+		}
+		x = 9
+		y = 4
+		complete_effect = {
+			add_stability = 0.1
+			army_experience = -10
+		}
+	}
+	focus = {
+		id = yinjinxinsixiang
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = wuzhuzuiba
+		}
+		x = 9
+		y = 5
+		complete_effect = {
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = jianlieryuanquanlitixi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = kaifangwaijidangpai
+			focus = yinjinxinsixiang
+		}
+		x = 7
+		y = 6
+		complete_effect = {
+			add_popularity = 50
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+		}
+	}
+	focus = {
+		id = yangehuaxuanjuzige
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = jianlieryuanquanlitixi
+		}
+		x = 7
+		y = 7
+		complete_effect = {
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = diyicidaxuan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = yangehuaxuanjuzige
+		}
+		x = 7
+		y = 8
+		complete_effect = {
+			remove_ideas = Chaotic_politics
+		}
+	}
+	focus = {
+		id = boenshitandeshengli
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = diyicidaxuan
+		}
+		mutually_exclusive = {
+			focus = ladikedeshengli
+		}
+		x = 3
+		y = 9
+		complete_effect = {
+			set_politics = {
+				ruling_party = SOC_democratic
+			}
+			add_ideas = zongtongladike
+			country_event = { id = NAU.16 }
+			remove_ideas = The_new_nest_of_militarism
+		}
+	}
+	focus = {
+		id = ladikedeshengli
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = diyicidaxuan
+		}
+		mutually_exclusive = {
+			focus = boenshitandeshengli
+		}
+		x = 11
+		y = 9
+		complete_effect = {
+			set_politics = {
+				ruling_party = Marxism
+			}
+			add_ideas = zongtongboenshitan
+			remove_ideas = The_new_nest_of_militarism
+			country_event = { id = NAU.17 }
+		}
+	}
+	focus = {
+		id = baochijiemengguanxi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = boenshitandeshengli
+		}
+		mutually_exclusive = {
+			focus = chonghuiyishixingtaidouzheng
+		}
+		x = 1
+		y = 10
+		complete_effect = {
+			add_opinion_modifier = {
+				target = BAV
+				modifier = jiemengguanxi
+			}
+			add_opinion_modifier = {
+				target = SHL
+				modifier = jiemengguanxi
+			}
+		}
+	}
+	focus = {
+		id = chonghuiyishixingtaidouzheng
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = boenshitandeshengli
+		}
+		mutually_exclusive = {
+			focus = baochijiemengguanxi
+		}
+		x = 5
+		y = 10
+		complete_effect = {
+			add_opinion_modifier = {
+				target = BAV
+				modifier = yishixingtaidouzheng
+			}
+			add_opinion_modifier = {
+				target = SHL
+				modifier = yishixingtaidouzheng
+			}
+		}
+	}
+	focus = {
+		id = huhuanshiyiyuegeming
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = baochijiemengguanxi
+		}
+		x = 1
+		y = 11
+		complete_effect = {
+			country_event = { id = NAU.19 }
+			add_opinion_modifier = {
+				target = BAV
+				modifier = shiyiyuegeming
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = shiyiyuegeming
+			}
+		}
+	}
+	focus = {
+		id = xunzhaoneibudiren
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = chonghuiyishixingtaidouzheng
+		}
+		x = 5
+		y = 11
+		complete_effect = {
+			add_stability = -0.1
+			add_opinion_modifier = {
+				target = BAV
+				modifier = relationship_with_BAV_1
+			}
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = lalongjiuritongmeng
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = huhuanshiyiyuegeming
+		}
+		x = 1
+		y = 12
+		complete_effect = {
+			add_opinion_modifier = {
+				target = BAV
+				modifier = lalongtongmeng
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = lalongtongmeng
+			}
+		}
+	}
+	focus = {
+		id = yizhicuoshi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = xunzhaoneibudiren
+		}
+		x = 5
+		y = 12
+		complete_effect = {
+			add_manpower = -1000
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = kuodalianhezhenxian
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = lalongjiuritongmeng
+		}
+		x = 1
+		y = 13
+		complete_effect = {
+			load_focus_tree = lianhezhenxian
+			add_opinion_modifier = {
+				target = SAX
+				modifier = kuodalianhezhenxian
+			}
+			add_opinion_modifier = {
+				target = SHL
+				modifier = kuodalianhezhenxian
+			}
+		}
+	}
+	focus = {
+		id = hefaqudi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = yizhicuoshi
+		}
+		x = 5
+		y = 13
+		complete_effect = {
+			load_focus_tree = SOC_democratic_tree
+			country_event = { id = NAU.18 }
+			remove_ideas = zongtongladike
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = baochijiemengguanxi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ladikedeshengli
+		}
+		mutually_exclusive = {
+			focus = chonghuiyishixingtaidouzheng
+		}
+		x = 9
+		y = 10
+		complete_effect = {
+			add_opinion_modifier = {
+				target = WUR
+				modifier = jiemengguanxi
+			}
+			add_opinion_modifier = {
+				target = SAX
+				modifier = jiemengguanxi
+			}
+		}
+	}
+	focus = {
+		id = chonghuiyishixingtaidouzheng
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ladikedeshengli
+		}
+		mutually_exclusive = {
+			focus = baochijiemengguanxi
+		}
+		x = 13
+		y = 10
+		complete_effect = {
+			add_opinion_modifier = {
+				target = WUR
+				modifier = yishixingtaidouzheng
+			}
+			add_opinion_modifier = {
+				target = SAX
+				modifier = yishixingtaidouzheng
+			}
+		}
+	}
+	focus = {
+		id = huhuanshiyiyuegeming
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = baochijiemengguanxi
+		}
+		x = 9
+		y = 11
+		complete_effect = {
+			country_event = { id = NAU.19 }
+			add_opinion_modifier = {
+				target = BAV
+				modifier = shiyiyuegeming
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = shiyiyuegeming
+			}
+		}
+	}
+	focus = {
+		id = lalongjiuritongmeng
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = huhuanshiyiyuegeming
+		}
+		x = 9
+		y = 12
+		complete_effect = {
+			add_opinion_modifier = {
+				target = BAV
+				modifier = lalongtongmeng
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = lalongtongmeng
+			}
+		}
+	}
+	focus = {
+		id = kuodalianhezhenxian
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = lalongjiuritongmeng
+		}
+		x = 9
+		y = 13
+		complete_effect = {
+		    load_focus_tree = lianhezhenxian
+			add_opinion_modifier = {
+				target = SAX
+				modifier = kuodalianhezhenxian
+			}
+			add_opinion_modifier = {
+				target = SHL
+				modifier = kuodalianhezhenxian
+			}
+		}
+	}
+	focus = {
+		id = xunzhaoneibudiren
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = chonghuiyishixingtaidouzheng
+		}
+		x = 13
+		y = 11
+		complete_effect = {
+			add_stability = -0.1
+			add_opinion_modifier = {
+				target = WUR
+				modifier = relationship_with_BAV_1
+			}
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = yizhicuoshi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = xunzhaoneibudiren
+		}
+		x = 13
+		y = 12
+		complete_effect = {
+			add_manpower = -1000
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = shixingdangjin
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = yizhicuoshi
+		}
+		x = 13
+		y = 13
+		complete_effect = {
+			load_focus_tree = Marxism_tree
+			country_event = { id = NAU.20 }
+			remove_ideas = zongtongboenshitan
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = -0.2
+			}
+		}
+	}
+}

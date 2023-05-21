@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAX_blame_versailles
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SAX_versailles
 		cost = 5.00
 		mutually_exclusive = {
 			focus = SAX_build_democratic
@@ -65,6 +65,12 @@ focus_tree = {
 			has_government = SOC_democratic
 			has_completed_focus = SAX_assassinate_kauysky
 		}
+		completion_reward={
+		add_timed_idea = {
+		idea = SAX_build_order
+		days = 100
+		}
+		}
 	}
 	focus = {
 		id = SAX_parade
@@ -80,7 +86,6 @@ focus_tree = {
 		ideology = Marxism
 		popularity = 0.08
 		}
-		add_political_power = 120
 		}
 	}
 	focus = {
@@ -97,7 +102,6 @@ focus_tree = {
 		ideology = Marxism
 		popularity = 0.05
 		}
-		add_political_power = 120
 		country_event = { id = SAX.10 }
 		}
 	}
@@ -118,7 +122,6 @@ focus_tree = {
 		type = infantry_equipment
 		amount = 2000
 	    }
-		add_political_power = 120
 		}
 	}
 	focus = {
@@ -135,8 +138,30 @@ focus_tree = {
 		ideology = Marxism
 		popularity = 0.05
 		}
-		add_political_power = 120
 		add_ideas = SAX_red_guerilla
+		hidden_effect = {
+				division_template = {
+					name = "赤色游击队"
+					is_locked = yes
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+			}
 		}
 	}
 	focus = {
@@ -156,7 +181,6 @@ focus_tree = {
 		ideology = Marxism
 		popularity = 0.05
 		}
-		add_political_power = 120
 		add_ideas = SAX_for_welfare_of_the_workers
 		}
 	}
@@ -191,6 +215,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 5
+		available = {
+			has_government = Marxism
+		}
         completion_reward={
         add_ideas = SAX_theodor_politic
 		country_event = { id = SAX.11 }
@@ -222,6 +249,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
+		available = {
+			has_government = Marxism
+		}
 		completion_reward={
         add_timed_idea = {
 		idea = SAX_build_order
@@ -239,7 +269,7 @@ focus_tree = {
 		x = 6
 		y = 6
          completion_reward = {
-			add_country_leader_trait = trait_Determined_international_fighters
+			add_ideas = SAX_personality_cult
 		}
 	}
 	focus = {
@@ -329,20 +359,6 @@ focus_tree = {
 		x = 10
 		y = 4
 		completion_reward={
-        set_politics = {
-        ruling_party = FRE_democratic
-		}
-	 create_country_leader = {
-					name = "Willian Gurnall"
-					desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-					picture = gfx/leaders/SAX/TROUS.png
-					expire = "1965.1.1"
-					ideology = liberalism
-					traits = {
-						
-					}
-				}
-				remove_ideas = exp_of_kautsky
 				country_event = { id = SAX.8}
 				}
 	}
@@ -356,9 +372,12 @@ focus_tree = {
 		x = 9
 		y = 5
         completion_reward={
-		kill_ideology_leader = Marxism
         add_popularity = {
 		ideology = Marxism
+		popularity = -0.2
+		}
+        add_popularity = {
+		ideology = Fascism
 		popularity = -0.2
 		}
 		add_stability = 0.05
@@ -391,11 +410,7 @@ focus_tree = {
 		x = 11
 		y = 5
          completion_reward={
-		kill_ideology_leader = Fascism
-        add_popularity = {
-		ideology = Fascism
-		popularity = -0.8
-		}
+		country_event = { id = SAX.15}
 		add_stability = 0.05
 		}
 	}
@@ -590,8 +605,8 @@ focus_tree = {
 	    value = 15
 }
         set_variable = { 
-	    var = SAX.martin
-	    value = 65
+	    var = SAX.manfred
+	    value = 35
 }
         set_variable = { 
 	    var = SAX.than
@@ -599,8 +614,8 @@ focus_tree = {
 }
 set_party_name = { 
 	    ideology = CON_democratic
-		long_name = SAX_action_party_long
-		name = SAX_action_party
+		long_name = SAX_action_party_left_long
+		name = SAX_action_party_left
 }
 set_party_name = { 
 	    ideology = AUT_democratic
@@ -609,13 +624,13 @@ set_party_name = {
 }
 set_party_name = { 
 	    ideology = Fascism
-		long_name = SAX_action_party_long
-		name = SAX_action_party
+		long_name = SAX_action_party_right_long
+		name = SAX_action_party_right
 }
 set_party_name = { 
 	    ideology = Absolutism 
-		long_name = SAX_action_party_long
-		name = SAX_action_party
+		long_name = SAX_action_party_right_long
+		name = SAX_action_party_right
 }
 set_party_name = { 
 	    ideology = Special
@@ -731,12 +746,8 @@ set_party_name = {
 		x = 23
 		y = 5
         completion_reward={
-        add_popularity = 0.05
 		add_political_power = 120
-        add_timed_idea = {
-		idea = SAX_build_order
-		days = 100
-		}
+        add_ideas = SAX_pacify_the_masses
 		}
 	}
 	focus = {
@@ -842,20 +853,20 @@ set_party_name = {
 		y = 6
 		completion_reward={
         create_field_marshal = {
-	name = "Otto·von·bismarck·marshal"
+	name = "Otto·Ashbald·von·bismarck·marshal"
 	portrait_path = "gfx/leaders/SAX/bismarck_army.png"
-	traits = {  }
+	traits = { war_hero cavalry_officer }
 	skill = 2
-	attack_skill = 3
-	defense_skill = 5
+	attack_skill = 2
+	defense_skill = 2
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 2
 }
 }
 	}
 	focus = {
 		id = SAX_staatsoberhaupt_diktatur
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SAX_manfred
 		cost = 5.00
 		prerequisite = {
 			focus = SAX_collborated_with_nazis
@@ -886,6 +897,7 @@ set_party_name = {
 	traits = {
 	}
 }
+       set_country_flag = SAX_election_leader_AUT_flag
 		country_event = { id = SAX.6}
 		load_focus_tree = SAX_politic_2
 		}

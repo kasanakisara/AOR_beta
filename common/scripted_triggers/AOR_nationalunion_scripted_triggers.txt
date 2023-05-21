@@ -1,7 +1,0 @@
-AOR_has_voted = {
-	OR = {
-		has_country_flag = AOR_vote_approve
-		has_country_flag = AOR_vote_abstain
-		has_country_flag = AOR_vote_disagree
-	}
-}

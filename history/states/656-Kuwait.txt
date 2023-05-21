@@ -8,7 +8,8 @@ state={
 	history={
 		add_core_of = KUW
 		add_core_of = ARA
-		owner = ARA
+		add_core_of = MSP
+		owner = MSP
 		victory_points = {
 			8085 1 
 		}

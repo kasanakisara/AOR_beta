@@ -4,10 +4,7 @@ state={
 	name="STATE_565" # Bodaybo
 	manpower = 195325
 	state_category = rural
-	resources={
-		steel=10 # was: 32
-		chromium=5 # was: 12
-	}
+	impassable = yes
 
 	history={
 		owner = ARU
@@ -15,7 +12,8 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = RUS
-		add_core_of = ARU
+        add_core_of = ARU
+		add_core_of = RUS
 	}
 
 	provinces={

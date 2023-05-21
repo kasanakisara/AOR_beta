@@ -1,0 +1,357 @@
+add_namespace = AOR_news
+
+news_event = { #苏维埃宣告成立(RUS-SOV) - NewsEvents_SOV_timeaxis.1
+	id = AOR_news.1
+	title = NewsEvents_SOV_timeaxis.1.t
+	desc = NewsEvents_SOV_timeaxis.1.desc
+	picture = 1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = RUS
+					is_subject_of = RUS
+				}
+			}
+		}
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.b
+		trigger = { TAG = CHI }
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.c
+		trigger = {
+			OR = {
+				TAG = ENG
+				TAG = FRA
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.d
+		trigger = { TAG = POL }
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.e
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.f
+		trigger = { TAG = RUS }
+	}
+	option = {
+		name = NewsEvents_SOV_timeaxis.1.g
+		trigger = { has_goverment = Marxism }
+	}
+}
+
+news_event = { ##鹿特丹纵火案（法国） - BEL.6
+	id = AOR_news.2 
+	title = BEL.6.t
+	desc = BEL.6.d
+	major = yes
+	
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.6.a
+
+	}
+
+}
+
+news_event = { ##鹿特丹纵火案（英国） - BEL.7
+	id = AOR_news.3  
+	title = BEL.7.t
+	desc = BEL.7.d
+	major = yes
+	
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.7.a
+	}
+
+}
+
+news_event = { ##鹿特丹纵火案（比利时） - BEL.8
+	id = AOR_news.4  
+	title = BEL.8.t
+	desc = BEL.8.d
+	major = yes
+	
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.8.a
+	}
+
+}
+
+news_event = {  ##加拿大未知新闻（1） - CAN.2
+	id = AOR_news.5
+	title = CAN.2.t
+	desc = CAN.2.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.2.a
+		
+		}
+}
+	
+news_event = {  ##加拿大未知新闻（2）- CAN.3
+	id = AOR_news.6
+	title = CAN.3.t
+	desc = CAN.3.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.3.a
+		
+		}
+}
+
+news_event = {  ##加拿大未知新闻（3） - CAN.5
+	id = AOR_news.7
+	title = CAN.5.t
+	desc = CAN.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.5.a
+		
+	}
+}
+
+news_event = {  ##加拿大未知新闻（4） - CAN.9
+	id = AOR_news.8
+	title = CAN.9.t
+	desc = CAN.9.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.5.a
+		
+		}
+} 
+
+news_event = {  ##加拿大未知新闻（5） - CAN.10
+	id = AOR_news.9
+	title = CAN.10.t
+	desc = CAN.10.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.10.a
+		
+	}
+}
+
+news_event = {  ##德意志阵营解散 - news_GER.1
+	id = AOR_news.10
+	title = news_GER.1.t
+	desc = news_GER.1.d
+	picture = GFX_news_german_disintegrated
+    major = yes
+	is_triggered_only = yes
+
+    #德意志人又开始了  
+	option = {
+		name = news_GER.1.a
+		add_war_support = 0.01
+        hidden_effect = {
+			set_variable = { global.se_AOR_event_picture_change = 2 }
+    	}
+	}
+}
+
+news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
+	id = AOR_news.11
+	title = news_OLYMPICS.1.t
+	desc = news_OLYMPICS.1.d
+	picture = GFX_news_1920_Olympic_Games
+    major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	    date > 1920.4.19
+		date < 1920.4.21
+	}
+
+    
+	option = {
+		name = news_OLYMPICS.1.a
+	trigger = {
+	    NOT = {tag = BEL}
+		}
+	}
+	option = {
+		name = news_OLYMPICS.1.b
+	trigger = {tag = BEL}
+	}
+}
+
+news_event = { #1924希腊奥运会 - news_OLYMPICS.2
+	id = AOR.12
+	title = news_OLYMPICS.2.t
+	desc = news_OLYMPICS.2.d
+	picture = GFX_news_1924_Olympic_Games
+    major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	    date > 1920.5.6
+		date < 1920.5.8
+	}
+
+    
+	option = {
+		name = news_OLYMPICS.2.a
+	}
+}
+
+news_event = { #1928意大利奥运会 - news_OLYMPICS.3
+	id = AOR_news.13
+	title = news_OLYMPICS.3.t
+	desc = news_OLYMPICS.3.d
+	picture = GFX_news_1928_Olympic_Games
+    major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	    date > 1920.5.16
+		date < 1920.5.18
+	}
+
+    
+	option = {
+		name = news_OLYMPICS.3.a
+	}
+}
+
+news_event = { #1932法国奥运会 - news_OLYMPICS.4
+	id = AOR_news.14
+	title = news_OLYMPICS.4.t
+	desc = news_OLYMPICS.4.d
+	picture = GFX_news_1932_Olympic_Games
+    major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	    date > 1920.5.16
+		date < 1920.5.18
+	}
+
+    
+	option = {
+		name = news_OLYMPICS.4.a
+	}
+}
+
+news_event = { #博登辞职 - CAN.1
+	id = AOR_news.15
+	title = CAN.0.t
+	desc = CAN.0.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	option = { 
+        name = CAN.0.a
+		
+	}
+}
+
+news_event = { ##魁北克独立 = can.26
+	id = AOR_news.16
+	title = CAN.26.t
+	desc = CAN.26.d
+	picture = AOR_news.16.p
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = AOR_news.16.a
+	}
+}
+
+news_event = { #挪威 = 瑞典内战新闻 = SWE.1
+    id = AOR_news.17
+    title = SWECW.4.t
+    desc = SWECW.4.d
+    is_triggered_only = yes
+    hidden = no
+    major = yes
+
+    option = {
+        name = SWECW.4.a
+    }
+}
+
+news_event = { #大北欧联邦倡议新闻 - SWE.2
+    id = AOR_news.17 
+    title = SWECW.5.t
+    desc = SWECW.5.d
+    is_triggered_only = yes
+    hidden = no
+    major = yes
+
+    option = {
+        name = SWECW.5.a
+    }
+}
+
+news_event = { #上西里西亚起义
+	id = AOR_news.18
+	title = AOR_news.18.t
+	desc = AOR_news.18.d
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.18.a
+	}
+}

@@ -1,0 +1,42 @@
+BEL_balance_of_power_category = {	
+	
+	
+	Strengthening_the_Belgian_presence = {
+		priority = 109
+		icon = GFX_decision_eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = BEL
+		}
+
+		cost = 70
+
+		fire_only_once = no
+		days_re_enable = 0
+		days_remove = 40
+		remove_effect = {
+			BEL_bop_right = yes
+		}
+
+	}
+
+	Strengthening_the_Aboriginal_presence = {
+		priority = 100
+		icon = GFX_decision_eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = BEL
+		}
+
+		cost = 70
+
+		fire_only_once = no
+        days_re_enable = 0
+		days_remove = 40
+		remove_effect = {
+			BEL_bop_left = yes
+		}
+
+	}
+
+}

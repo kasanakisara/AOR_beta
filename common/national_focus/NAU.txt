@@ -1,0 +1,282 @@
+add_namespace = NAU
+
+country_event = {
+	id = NAU.1 #对马克西米连的诋毁
+	title = NAU.1.t
+	desc = NAU.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			add_stability = -0.4
+			POLITICAL_POWER_GAIN = -0.5
+		}
+
+	}
+}
+country_event = {
+	id = NAU.2 #军部大会
+	title = NAU.2.t
+	desc = NAU.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.2.a
+		ai_chance = { factor = 10 }
+
+	}
+}
+country_event = {
+	id = NAU.3 #亲王演讲
+	title = NAU.3.t
+	desc = NAU.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.3.a
+		ai_chance = { factor = 10 }
+		add_manpower = 2000
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = NAU.4 #漫长的夜晚
+	title = NAU.4.t
+	desc = NAU.4.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.4.a
+		ai_chance = { factor = 10 }
+		add_manpower = -200
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = NAU.5 #护照国籍
+	title = NAU.5.t
+	desc = NAU.5.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.5.a
+		ai_chance = { factor = 10 }
+		add_war_support = 0.05
+	}
+	option = {
+		name = NAU.5.b
+		ai_chance = { factor = 10 }
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = NAU.6 #坦克变家具
+	title = NAU.6.t
+	desc = NAU.6.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.6.a
+		ai_chance = { factor = 10 }
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = NAU.7 #亲王遇刺
+	title = NAU.7.t
+	desc = NAU.7.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.7.a
+		ai_chance = { factor = 10 }
+		load_focus_tree = NAU_1_countryfocus_tree
+	}
+}
+country_event = {
+	id = NAU.8 #马克西米连的嘱托
+	title = NAU.8.t
+	desc = NAU.8.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.8.a
+		ai_chance = { factor = 10 }
+
+	}
+}
+country_event = {
+	id = NAU.9 #考察团名单
+	title = NAU.9.t
+	desc = NAU.9.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.9.a
+		ai_chance = { factor = 10 }
+
+	}
+}
+country_event = {
+	id = NAU.10 #马克西米连的传话
+	title = NAU.10.t
+	desc = NAU.10.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.10.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.11 #啤酒馆演讲
+	title = NAU.11.t
+	desc = NAU.11.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.11.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.12 #法兰克福漫长而血腥一天 
+	title = NAU.12.t
+	desc = NAU.12.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.12.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.13 #宪法会之变 
+	title = NAU.13.t
+	desc = NAU.13.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.13.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.14 #拉狄克与伯恩斯坦 
+	title = NAU.14.t
+	desc = NAU.14.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.14.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.15 #抗议的将军们 
+	title = NAU.15.t
+	desc = NAU.15.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.15.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.16 #伯恩施坦的就职演讲 
+	title = NAU.16.t
+	desc = NAU.16.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.16.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.17 #拉狄克的就职演讲 
+	title = NAU.17.t
+	desc = NAU.17.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.17.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.18 #玫瑰之刺 
+	title = NAU.18.t
+	desc = NAU.18.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.18.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.19 #十一月革命的回忆 
+	title = NAU.19.t
+	desc = NAU.19.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.19.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = NAU.20 #染血的街道 
+	title = NAU.20.t
+	desc = NAU.20.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.20.a
+		ai_chance = { factor = 10 }
+	}
+}

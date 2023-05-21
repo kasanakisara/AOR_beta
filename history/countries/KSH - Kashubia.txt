@@ -1,6 +1,11 @@
 ﻿capital = 807
 
 ##oob = ""
+recruit_character = KSH_Gustav_Noske
+recruit_character = KSH_Hermann_Ehrhardt
+recruit_character = KSH_Gehard_Ribach 
+recruit_character = KSH_Wlther_von_Luttwitz
+recruit_character = KSH_Werner_Eduard_Fritz_von_Blomberg
 
 set_research_slots = 3
 # Starting tech

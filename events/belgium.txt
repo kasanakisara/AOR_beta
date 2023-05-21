@@ -2,49 +2,334 @@
 # belgium Events
 ###########################
 
-add_namespace = news_BEL
-add_namespace = event_BEL
+add_namespace = BEL
 
-
+#开局介绍
 country_event = {
-	id = event_BEL.1
-	title = event_BEL.1.t
-	desc = event_BEL.1.d
-	picture = GFX_report_event_german_inspect_troops
-
+	id = BEL.1
+	title = BEL.1.t
+	desc = BEL.1.d
+	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-	
-	fire_only_once = yes
 
+      
 	option = {
-		name = event_BEL.1.a
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -400
-			producer = FRA
-		}
-		hidden_effect = {
-		    country_event = event_BEL.2
-		}
+		name = BEL.1.a
+		
 	}
 }
 
+#欧内斯特·索尔维
 country_event = {
-	id = event_BEL.2
-	title = event_BEL.2.t
-	desc = event_BEL.2.d
-	picture = GFX_report_event_german_inspect_troops
-
+	id = BEL.2
+	title = BEL.2.t
+	desc = BEL.2.d
+	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-	
-	fire_only_once = yes
 
+      
 	option = {
-		name = event_BEL.2.a
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 400
-			producer = FRA
+		name = BEL.2.a
+		add_political_power = 50
+		add_timed_idea = { idea = Aftermath_of_Solvay_Conference days = 180 }
+	}
+	
+	option = {
+		name = BEL.2.b
+		country_event = { id = BEL.3 }
+	}
+}
+
+#列奥·亨德里克·贝克兰
+
+country_event = {
+	id = BEL.3
+	title = BEL.3.t
+	desc = BEL.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.3.a
+		add_political_power = 150
+		add_manpower = 1
+		
+	}
+	
+	option = {
+		name = BEL.3.b
+		country_event = { id = BEL.4 }
+	}
+}
+
+#伊利亚·普利高津
+country_event = {
+	id = BEL.4
+	title = BEL.4.t
+	desc = BEL.4.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.4.a
+		add_manpower = -1
+	}
+
+}
+
+#归家之旅
+country_event = {
+	id = BEL.5
+	title = BEL.5.t
+	desc = BEL.5.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.5.a
+
+	}
+
+}
+
+country_event = {
+	id = BEL.9
+	title = BEL.9.t
+	desc = BEL.9.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.9.a
+	}
+
+}
+
+country_event = {
+	id = BEL.10
+	title = BEL.10.t
+	desc = BEL.10.d
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	trigger = {
+	    controls_state = 796
+		controls_state = 540
+		controls_state = 544
+	}
+	mean_time_to_happen = {day = 1}
+	option = {
+		name = BEL.10.a
+		transfer_state = 796
+		transfer_state = 540
+		transfer_state = 544
+		white_peace = POR
+	}
+
+}
+
+country_event = {
+	id = BEL.11
+	title = BEL.11.t
+	desc = BEL.11.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BEL.11.a
+		transfer_state = 34
+		transfer_state = 836
+		transfer_state = 6
+		set_cosmetic_tag = BEL_CON_democratic_HOME
+		BNL = {
+		set_politics = { ruling_party = CON_democratic }
+		}
+		BNL = {
+		set_cosmetic_tag = BNL_HOL
+		}
+		BNL = {
+		create_country_leader = {
+		name = "Wilhelmina Helena Pauline Maria"
+		picture = "arj09-2zg3m.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {}
 		}
 	}
+		BNL = {
+		release_autonomy = {
+			target = LUX
+			autonomy_state = autonomy_puppet
+			freedom_level = 0.1
+			}
+		}
+	}
+
+}
+
+#利奥波德工人罢工
+country_event = {
+	id = BEL.12
+	title = BEL.12.t
+	desc = BEL.12.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.12.a
+		add_war_support = -0.12
+	}
+
+}
+
+#农场歇业
+country_event = {
+	id = BEL.13
+	title = BEL.13.t
+	desc = BEL.13.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.13.a
+		remove_ideas = Maize_Trade
+		add_political_power = -100
+		add_stability = -0.05
+	}
+
+}
+
+#炸毁铁路
+country_event = {
+	id = BEL.14
+	title = BEL.14.t
+	desc = BEL.14.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.14.a
+		damage_building = {
+				type = rail_way
+				damage = 0.4
+				province = 12925
+			}
+	}
+
+}
+
+#卢旺达游行
+country_event = {
+	id = BEL.15
+	title = BEL.15.t
+	desc = BEL.15.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.15.a
+		add_stability = -0.1
+	}
+
+}
+
+#布隆迪游行
+country_event = {
+	id = BEL.16
+	title = BEL.16.t
+	desc = BEL.16.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.16.a
+		add_stability = -0.2
+		add_manpower = -50
+	}
+
+}
+
+#游击队的骚扰
+country_event = {
+	id = BEL.17
+	title = BEL.17.t
+	desc = BEL.17.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.17.a
+		add_political_power = -150
+		add_war_support = -0.3
+	}
+
+}
+
+#奇异宗教的散播
+country_event = {
+	id = BEL.18
+	title = BEL.18.t
+	desc = BEL.18.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.18.a
+		add_political_power = -150
+		add_stability = -0.3
+	}
+
+}
+
+#枣饭！
+country_event = {
+	id = BEL.19
+	title = BEL.19.t
+	desc = BEL.19.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+	option = { 
+		name = BEL.19.a
+		add_stability = -0.03
+		COG = {
+		set_politics = { ruling_party = special }
+		}		
+		COG = {transfer_state = 718}
+		COG = {transfer_state = 768}
+		COG = {transfer_state = 769}
+		COG = {
+		declare_war_on = { target = BEL type = annex_everything }
+		}	
+		COG = {load_oob = "COG_zaofan"}	
+	}
+
+	option = { 
+		ai_chance = { base = 0 }
+		name = BEL.19.b
+		add_stability = -0.03
+		COG = { change_tag_from = ROOT }
+		COG = {
+		set_politics = { ruling_party = special }
+		}		
+		COG = {transfer_state = 718}
+		COG = {transfer_state = 768}
+		COG = {transfer_state = 769}
+		COG = {
+		declare_war_on = { target = BEL type = annex_everything }
+		}	
+		COG = {load_oob = "COG_zaofan"}	
+		
+	}
+
 }

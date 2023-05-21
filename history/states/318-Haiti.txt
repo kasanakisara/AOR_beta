@@ -11,7 +11,7 @@ state=
 	}
 	history=
 	{
-		owner = SPR
+		owner = HSP
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -22,6 +22,8 @@ state=
 			}
 		}
 		add_core_of = HAI
+		add_core_of = SPR
+		add_core_of = HSP
 		victory_points = {
 			4641 5 
 		}

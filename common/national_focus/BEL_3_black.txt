@@ -1,0 +1,101 @@
+focus_tree={
+	id = BEL_3_black
+	country={
+		factor=0
+		modifier={
+			add=15
+			tag=bel
+		}
+	}
+	default=no
+	focus={
+		id=BEL_Our_voice
+		x=3
+		y=0
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = -150
+		add_stability = -0.15
+		hidden_effect = {
+		country_event = { days = 2  id = BEL.12  }
+		country_event = { days = 4  id = BEL.13  }
+		country_event = { days = 7  id = BEL.14  }
+		country_event = { days = 10  id = BEL.15  }
+		country_event = { days = 14  id = BEL.16  }
+		country_event = { days = 16  id = BEL.17  }
+		country_event = { days = 21  id = BEL.18  }
+			}
+		}
+	}
+	focus={
+		id=BEL_Secret_Army
+		x=0
+		y=1
+		prerequisite={focus=BEL_Our_voice}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = BEL.6.tt
+		}
+	}
+	focus={
+		id=BEL_Organising_people
+		x=6
+		y=1
+		prerequisite={focus=BEL_Our_voice}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = -0.15
+		add_political_power = -70
+		}
+	}
+	focus={
+		id=BEL_Uniting_all_the_forces_that_can_be_united
+		x=3
+		y=2
+		prerequisite={focus=BEL_Our_voice}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = BEL.7.tt
+		}
+	}
+	focus={
+		id=BEL_Against_tyranny
+		x=3
+		y=4
+		prerequisite={focus=BEL_Secret_Army focus=BEL_Organising_people focus=BEL_Uniting_all_the_forces_that_can_be_united }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event = { id = BEL.19  }
+		}
+	}
+}

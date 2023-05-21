@@ -308,5 +308,46 @@ ideas = {
 				POLITICAL_POWER_FACTOR = -0.05
             }
 		}
+		zongtongladike = {
+			allowed = {
+                tag = NAU
+            }
+			available = { 
+			}
+
+			cancel ={
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				Marxism_acceptance = 1
+            }
+		}
+		zongtongboenshitan = {
+			allowed = {
+                tag = NAU
+            }
+			available = { 
+			}
+
+			cancel ={
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				SOC_democratic_acceptance = 1
+            }
 	}
 }

@@ -6,7 +6,7 @@ guiTypes = {
 		orientation = center
 		Origo = center
 		position = { x= 0 y= 0 }	
-		size = { width = 1400 height = 750 }
+		size = { width = 650 height = 800 }
 		show_sound = world_news_effect
 		hide_sound = menu_close_window
 
@@ -18,14 +18,13 @@ guiTypes = {
 
 		iconType = {
 			name = "AOR_event_picture_change_name"	
-			position = { x= 0 y= 0 }
 			size = { width = 100% height = 100% }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name ="event_picture"
 			spriteType = "GFX_news_event_001"
-			position = { x = 300 y = 230 }
+			position = { x = 200 y = 180 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}			
@@ -39,14 +38,14 @@ guiTypes = {
 		}			
 			buttonType = {
 				name = "AOR_news_exit_btn"
-				position = { x = 240  y = 600 }
+				position = { x = 175  y = 580 }
 				spriteType = "GFX_AOR_event_picture_change_btn"
 				orientation = upper_left
 				scale = 1.1 
 			
 			instantTextBoxType = {
 				name = "AOR_news_title"
-				position = { x = 55 y = 30 }
+				position = { x = 55 y = 336 }
 				font = "hoi4_typewriter22"
 				borderSize = {x = 300 y = 150}
 				text = "AOR_news_title"	
@@ -58,7 +57,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "AOR_news_desc"
-			position = { x = 700 y = 300 }
+			position = { x = 21 y = 380 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0 }
 			text = "AOR_news_desc"	
@@ -68,7 +67,7 @@ guiTypes = {
 		}			
 		instantTextBoxType = {
 			name = "AOR_news_title"
-			position = { x = 600 y = 200 }
+			position = { x = -50 y = 350 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "AOR_news_title"	

@@ -14,7 +14,7 @@ state={
 		owner = GRE
 		buildings = {
 			infrastructure = 1
-			dockyard = 1
+			dockyard = 2
 			8435 = {
 				naval_base = 1
 			}

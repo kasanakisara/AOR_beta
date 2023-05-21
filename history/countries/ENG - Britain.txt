@@ -173,20 +173,59 @@ create_country_leader = {
 	traits = {
 	}
 }
-
+set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NFL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = SUD
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
 puppet = MAL
-puppet = NZL
-puppet = AST
 puppet = RAJ
-puppet = CAN
-puppet = SAF
 puppet = PER
 puppet = AFG
-puppet = NFL
 
-create_faction =  London_entente
+create_faction = Entente
 add_to_faction = CHI
-add_to_faction = LIT
+add_to_faction = FRA
+add_to_faction = ROM
+add_to_faction = POR
+add_to_faction = MSP
 add_to_faction = POL
 add_to_faction = DEN
 add_to_faction = JAP
+add_to_faction = ARA
+add_to_faction = DEN
+add_to_faction = GRE
+add_to_faction = DNZ
+add_to_faction = IST
+add_to_faction = ITA
+add_to_faction = USA

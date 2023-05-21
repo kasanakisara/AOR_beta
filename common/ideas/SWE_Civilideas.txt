@@ -1,0 +1,86 @@
+ideas = {
+    country = {
+        SWE_Protest = {
+            name = SWE_Protest
+            picture = Woshishabi #这个你们自己改一下图标
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_factor = -0.2
+                consumer_goods_factor = 0.01
+            }
+            
+            rule = {
+
+            }
+        }
+
+        SWE_Equal_Fed = {
+            name = SWE_Equal_Fed
+            picture = Woshishabi #这个你们自己改一下图标
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_factor = 0.35
+                war_support_factor = 0.3
+                political_power_factor = 1.5
+            }    
+            
+            rule = {
+
+            }
+        }
+
+        SWE_Pan_NEuro_priority = {
+            name = SWE_Pan_NEuro_priority
+            picture = Woshishabi #这个你们自己改一下图标
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.1
+                training_time_factor = -0.05
+                if = {
+                    limit = { has_defensive_war = yes }
+                    war_stability_factor = 0.4
+                }
+                if = {
+                    limit = { has_offensive_war = yes }
+                    war_stability_factor = 0.2
+                } 
+            }    
+            
+            rule = {
+
+            }
+        }
+
+    }
+}

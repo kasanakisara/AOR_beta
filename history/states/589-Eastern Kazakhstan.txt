@@ -3,15 +3,19 @@ state={
 	name="STATE_589"
 
 	history={
-		owner = ARU
+		owner = KYR
+		controller = KYR
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 
 		}
+		add_core_of = MEL
+		add_core_of = TMS
 		add_core_of = RUS
-		add_core_of = ARU
+        add_core_of = ARU
+		add_core_of = KYR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1

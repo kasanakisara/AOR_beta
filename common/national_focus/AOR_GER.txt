@@ -660,8 +660,6 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_27
-		}
-		prerequisite = {
 			focus = AOR_GER_Politics_28
 		}
 		x = 1
@@ -970,6 +968,9 @@ focus_tree = {
 			trigger = { 
 					has_completed_focus = AOR_GER_Politics_39
 			}
+		}
+		available= {
+			always = no
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -1736,6 +1737,7 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			add_political_power = 25
+			add_ideas = POL_legion_of_merit
 		}
 
 	}
@@ -2556,6 +2558,13 @@ focus_tree = {
 		relative_position_id = AOR_GER_Industry_24
 		completion_reward = {
 			add_political_power = 25
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = AOR_GER_Industry_25_tt
+			add_to_variable = { AOR_GER_industry_consumer_goods_factor = -0.025 }
+			add_to_variable = { AOR_GER_industry_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { AOR_GER_industry_industrial_capacity_factory = 0.10 }
+			add_to_variable = { AOR_GER_min_export = -0.05 }
 		}
 
 	}

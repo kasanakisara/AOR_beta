@@ -1,9 +1,9 @@
 focus_tree = {
 	id = KSH_1
 	country = {
-		factor = 2
+		factor = 0
 		modifier = {
-			add = 10
+			add = 20
 			tag = KSH
 		}
 	}

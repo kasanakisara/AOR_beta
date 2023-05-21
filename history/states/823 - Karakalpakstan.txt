@@ -9,16 +9,15 @@ state = {
 			1614 1
 		}
 		
-		owner = RUS
+		owner = TMS
 		
 		buildings = {
 			infrastructure = 2
 
 		}
 		
-		add_core_of = RUS
+		add_core_of = TMS
 		add_core_of = UZB
-		add_core_of = KKP
 		
 	}
 

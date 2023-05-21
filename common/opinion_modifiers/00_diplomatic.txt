@@ -11,8 +11,32 @@ opinion_modifiers = {
 	relationship_with_BAV = {
 		value = 30
 	}
+	kuodalianhezhenxian = {
+		value = 20
+	}
+
+	relationship_with_BAV_1 = {
+		value = -20
+	}
+	lalongtongmeng = {
+		value = 50
+	}
+
+	shiyiyuegeming = {
+		value = 10
+	}
+	jiemengguanxi = {
+		value = 10
+	}
+	yishixingtaidouzheng = {
+		value = -10
+	}
 
 	relationship_with_WUR = {
+		value = 30
+	}
+
+	relationship_with_SAX = {
 		value = 30
 	}
 	

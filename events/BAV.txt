@@ -78,7 +78,9 @@ country_event = {
 	title = BAV.6.t
 	desc = BAV.6.d
 	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
+	mean_time_to_happen = {day = 1}
+	
+	fire_only_once = yes
 	trigger = {
 	    date > 1923.1.1
 		tag = BAV

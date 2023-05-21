@@ -10,7 +10,7 @@ state={
 		owner = HUN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 1
 		}
 		victory_points = {
 			11581 3 
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		665 624 3627 6647 6672 9595 9611 11577 11580 11581 11594
+		624 3627 6647 6672 9595 9611 11577 11580 11581 11594
 	}
 
 	local_supplies=0.0 

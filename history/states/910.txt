@@ -10,7 +10,8 @@ state={
 		add_core_of = RUS
 		add_core_of = FER
 		add_core_of = VLA
-		add_core_of = ARU
+		add_core_of = RUS
+        add_core_of = ARU
 		buildings = {
 			infrastructure = 2
 		}

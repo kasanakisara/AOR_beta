@@ -10,7 +10,7 @@ state={
 	state_category = large_town
 
 	history={
-		owner = ARG
+		owner = ORA
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 4
@@ -21,6 +21,7 @@ state={
 			7500 1 
 		}
 		add_core_of = ARG
+		add_core_of = ORA
 	}
 
 	provinces={

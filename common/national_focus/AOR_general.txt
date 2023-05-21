@@ -1,0 +1,1549 @@
+
+
+focus_tree = {
+	id = AOR_general
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+	default = yes
+	#############工业线#############
+	focus = { #工业之母
+		id = AOR_general_industry_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 7
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+	}
+	focus = { #硝酸工业
+		id = AOR_general_industry_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_1
+		}
+		x = 2
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #枪弹产业
+		id = AOR_general_industry_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_2
+		}
+		x = 2
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #硝铵工业
+		id = AOR_general_industry_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_2
+		}
+		x = 4
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #本地冶金工业
+		id = AOR_general_industry_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_1
+		}
+		x = 6
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #改进挖掘工具
+		id = AOR_general_industry_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_5
+		}
+		x = 6
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #改进弹药工艺
+		id = AOR_general_industry_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_4
+		}
+		x = 2
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #地下深孔爆破技术
+		id = AOR_general_industry_8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_industry_4
+		}
+		prerequisite = {
+			focus = AOR_general_industry_6
+		}
+		x = 5
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #大型采矿设备
+		id = AOR_general_industry_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_8
+		}
+		x = 5
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #合成氨工业
+		id = AOR_general_industry_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_1
+		}
+		x = 8
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #改进炸药工艺
+		id = AOR_general_industry_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_10
+		}
+		x = 8
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #化肥工业
+		id = AOR_general_industry_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_10
+		}
+		x = 10
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #黏胶纤维工业
+		id = AOR_general_industry_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_1
+		}
+		x = 12
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #可替代型纤维产业
+		id = AOR_general_industry_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_13
+		}
+		x = 12
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #建材工业
+		id = AOR_general_industry_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_1
+		}
+		x = 14
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #改进基建技术
+		id = AOR_general_industry_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_15
+		}
+		x = 14
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #民用产业体系化
+		id = AOR_general_industry_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_industry_12
+		}
+		prerequisite = {
+			focus = AOR_general_industry_14
+		}
+		prerequisite = {
+			focus = AOR_general_industry_16
+		}
+		x = 12
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+
+	###########军事线###########
+	focus = { #三军理论
+		id = AOR_general_army_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 20
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #陆军理论
+		id = AOR_general_army_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_1
+		}
+		x = 18
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #普遍民兵
+		id = AOR_general_army_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_2
+		}
+		mutually_exclusive = {
+			focus = AOR_general_army_6
+		}
+		x = 17
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #武装民兵
+		id = AOR_general_army_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_3
+		}
+		x = 17
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #武器支援
+		id = AOR_general_army_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_4
+		}
+		x = 17
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #职业军人
+		id = AOR_general_army_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_2
+		}
+		mutually_exclusive = {
+			focus = AOR_general_army_3
+		}
+		x = 19
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #炮兵团
+		id = AOR_general_army_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_6
+		}
+		x = 19
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #战车队
+		id = AOR_general_army_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_7
+		}
+		x = 19
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #现代陆军理论
+		id = AOR_general_army_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_2
+		}
+		x = 18
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #陆军精英
+		id = AOR_general_army_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_5
+			focus = AOR_general_army_8
+		}
+		prerequisite = {
+			focus = AOR_general_army_9
+		}
+		x = 18
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #新式兵种
+		id = AOR_general_army_11
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_army_1
+		}
+		x = 22
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #飞行俱乐部
+		id = AOR_general_army_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_11
+		}
+		x = 22
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #仿造航空器
+		id = AOR_general_army_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_12
+		}
+		x = 21
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #长空挥镰
+		id = AOR_general_army_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_13
+		}
+		x = 21
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #空中威胁
+		id = AOR_general_army_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_12
+		}
+		x = 23
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #海军经费
+		id = AOR_general_army_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_1
+		}
+		x = 25
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #新锐学派
+		id = AOR_general_army_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_16
+		}
+		mutually_exclusive = {
+			focus = AOR_general_army_18
+		}
+		x = 24
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #保守学派
+		id = AOR_general_army_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_16
+		}
+		mutually_exclusive = {
+			focus = AOR_general_army_17
+		}
+		x = 26
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #拓建船坞
+		id = AOR_general_army_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_17
+			focus = AOR_general_army_18
+		}
+		x = 26
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #港口防御
+		id = AOR_general_army_20
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_army_19
+		}
+		x = 26
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #地区海军威慑
+		id = AOR_general_army_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_20
+		}
+		x = 26
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #仿造舰艇
+		id = AOR_general_army_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_army_16
+		}
+		x = 29
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #发展贸易
+		id = AOR_general_army_23
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_army_22
+		}
+		x = 29
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	#############政治线#############
+	focus = { #聚焦政治
+		id = AOR_general_politics_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 33
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = { #自由民主主义
+		id = AOR_general_politics_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_1
+		}
+		mutually_exclusive = {
+			focus = AOR_general_politics_12
+		}
+		x = 33
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #自由贸易
+		id = AOR_general_politics_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_2
+		}
+		x = 32
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #构筑党派
+		id = AOR_general_politics_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_3
+		}
+		x = 32
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #保障人权
+		id = AOR_general_politics_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_2
+		}
+		x = 36
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #生命权
+		id = AOR_general_politics_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_politics_5
+		}
+		x = 36
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #自由权
+		id = AOR_general_politics_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_politics_5
+		}
+		x = 34
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #财产权
+		id = AOR_general_politics_8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_politics_5
+		}
+		x = 38
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #自由选举
+		id = AOR_general_politics_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_4
+		}
+		x = 33
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #政府工具
+		id = AOR_general_politics_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_7
+			focus = AOR_general_politics_8
+		}
+		prerequisite = {
+			focus = AOR_general_politics_4
+		}
+		prerequisite = {
+			focus = AOR_general_politics_6
+		}
+		x = 36
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #自由之路的开端
+		id = AOR_general_politics_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_9
+		}
+		prerequisite = {
+			focus = AOR_general_politics_10
+		}
+		x = 33
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #保守主义
+		id = AOR_general_politics_12
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_general_politics_1
+		}
+		mutually_exclusive = {
+			focus = AOR_general_politics_2
+		}
+		x = 49
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #传统保守
+		id = AOR_general_politics_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_12
+		}
+		x = 43
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #节制政治
+		id = AOR_general_politics_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_13
+		}
+		x = 40
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #反对革命
+		id = AOR_general_politics_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_13
+		}
+		x = 44
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #精英政治
+		id = AOR_general_politics_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_15
+		}
+		prerequisite = {
+			focus = AOR_general_politics_14
+		}
+		x = 42
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #捍卫价值
+		id = AOR_general_politics_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_15
+		}
+		x = 44
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #强化立法机构
+		id = AOR_general_politics_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_17
+		}
+		x = 43
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #连续性
+		id = AOR_general_politics_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_18
+		}
+		x = 41
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #稳定性
+		id = AOR_general_politics_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_18
+		}
+		x = 45
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #回归理想
+		id = AOR_general_politics_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_19
+		}
+		prerequisite = {
+			focus = AOR_general_politics_20
+		}
+		x = 43
+		y = 7
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #保守宗教
+		id = AOR_general_politics_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_12
+		}
+		x = 49
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #源自神明的信仰
+		id = AOR_general_politics_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_22
+		}
+		x = 47
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #提倡传统价值
+		id = AOR_general_politics_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_22
+		}
+		x = 49
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #现世的传统
+		id = AOR_general_politics_25
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_general_politics_22
+		}
+		x = 50
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #推翻既有现况
+		id = AOR_general_politics_26
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_general_politics_25
+		}
+		x = 48
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #反政治体制滥用
+		id = AOR_general_politics_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_26
+		}
+		x = 48
+		y = 7
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #社会的理想
+		id = AOR_general_politics_28
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_general_politics_27
+		}
+		mutually_exclusive = {
+			focus = AOR_general_politics_29
+		}
+		x = 47
+		y = 8
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #混合现代哲学
+		id = AOR_general_politics_29
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_27
+		}
+		mutually_exclusive = {
+			focus = AOR_general_politics_28
+		}
+		x = 49
+		y = 8
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #维持现状
+		id = AOR_general_politics_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_25
+		}
+		x = 51
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #反腐败
+		id = AOR_general_politics_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_30
+		}
+		x = 50
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #反违背教义
+		id = AOR_general_politics_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_30
+		}
+		x = 52
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #领袖专制
+		id = AOR_general_politics_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_12
+		}
+		x = 56
+		y = 2
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #个人崇拜
+		id = AOR_general_politics_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_33
+		}
+		x = 52
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #团结阶级
+		id = AOR_general_politics_35
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_33
+		}
+		x = 54
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #集权主义
+		id = AOR_general_politics_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_33
+		}
+		x = 56
+		y = 3
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #强化体系
+		id = AOR_general_politics_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_34
+			focus = AOR_general_politics_35
+		}
+		prerequisite = {
+			focus = AOR_general_politics_36
+		}
+		x = 56
+		y = 4
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #防止掣肘
+		id = AOR_general_politics_38
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_37
+		}
+		x = 55
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #去民主政治
+		id = AOR_general_politics_39
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_37
+		}
+		x = 59
+		y = 5
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #掌控国家
+		id = AOR_general_politics_40
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_39
+		}
+		x = 58
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #强化内阁
+		id = AOR_general_politics_41
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_39
+		}
+		x = 60
+		y = 6
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+	focus = { #一致行动
+		id = AOR_general_politics_42
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = AOR_general_politics_40
+		}
+		prerequisite = {
+			focus = AOR_general_politics_38
+		}
+		x = 56
+		y = 7
+		ai_will_do = {
+			base = 1
+		}
+		available = {}
+		bypass = {}
+		completion_reward = {
+		}
+
+	}
+}

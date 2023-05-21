@@ -1,0 +1,81 @@
+@SENATE_TEXT_X = 16
+@HOUSE_TEXT_X = 212
+@HEADERS_Y = 67
+@STATUS_Y = 52
+guiTypes = {
+
+	containerWindowType = {
+		name = "SAX_marxism_election"
+		position = { x = 0 y = 0 }
+		size = { width = 468% height= 312 }
+
+
+        iconType = {
+			name = "leader_frame_wolf"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 0 y = 0 }		
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="SAX_leader_wolf"
+			spriteType = "GFX_gui_SAX_wolf"
+			position = { x= 8 y = 14 }
+		}
+		iconType = {
+			name = "leader_frame_liebknecht"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 335 y = 0 }		
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="SAX_leader_liebknecht"
+			spriteType = "GFX_gui_SAX_liebknecht"
+			position = { x= 345  y = 14 }
+		}
+		iconType = {
+			name ="SAX_country_flag"
+			spriteType = "GFX_gui_SAX_flag"
+			position = { x= 172  y = 10 }
+		}
+         instantTextBoxType = {
+			name = "SAX_leader_wolf_support"
+			position = { x = 5 y = 220 }
+			font = "hoi_18mbs"
+			text = "布尔什维克派—[?SAX.wolf]"
+			maxWidth = 190
+			maxHeight = 40
+		}
+		instantTextBoxType = {
+			name = "SAX_leader_liebknecht_support"
+			position = { x = 345 y = 220 }
+			font = "hoi_18mbs"
+			text = "原教旨派—[?SAX.liebknecht]"
+			maxWidth = 190
+			maxHeight = 40
+		}
+		iconType = {
+			name = "SAX_leader_wolf_win"
+			spriteType = "GFX_gui_SAX_wolf"
+			position = { x = 172 y = 14 }		
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="SAX_leader_theodor_win"
+			spriteType = "GFX_gui_SAX_liebknecht"
+			position = { x= 172  y = 14 }
+		}
+		iconType = {
+			name ="SAX_over_frame"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x= 164  y = 0 }
+		}
+         instantTextBoxType = {
+			name = "SAX_leader_position"
+			position = { x = 172 y = 220 }
+			font = "hoi_18mbs"
+			text = "当前主席"
+			maxWidth = 190
+			maxHeight = 40
+		}
+	}
+}

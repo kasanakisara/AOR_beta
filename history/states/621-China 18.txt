@@ -6,10 +6,10 @@ state={
 		owner = CHI
 		add_core_of = SHX
 		add_core_of = CHI
-		add_core_of = PRC
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			#industrial_complex = 1
 
 		}
 		1939.1.1 = {

@@ -3,8 +3,8 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = INS
-		add_core_of = INS
+		owner = GML
+		add_core_of = GML
 		buildings = {
 			infrastructure = 1
 
@@ -21,7 +21,7 @@ state={
 	provinces={
 		4579 
 	}
-	manpower=36146
+	manpower=56146
 	buildings_max_level_factor=1	
 	state_category="small_island"
 

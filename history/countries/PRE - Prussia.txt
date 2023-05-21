@@ -1,5 +1,15 @@
 ﻿capital = 64
 
+
+recruit_character = PRE_Gustav_emil_bernhard_bodo_kessel
+recruit_character = PRE_Johannes_braskowitz
+recruit_character = PRE_Josias_von_merlingen
+recruit_character = PRE_Karl_von_einem
+recruit_character = PRE_Ludwig_von_falkenhausen
+recruit_character = PRE_Maximlian_von_peitvitz
+recruit_character = PRE_Prinz_Friedrich_Leopold
+recruit_character = PRE_Remus_von_Voilsch
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

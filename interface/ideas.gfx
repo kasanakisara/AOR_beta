@@ -6715,5 +6715,25 @@ spriteTypes = {
 		name = "GFX_idea_Decrease_in_living_standards"
 		texturefile = "gfx/interface/ideas/GFX_idea_Decrease_in_living_standards.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_USA_Dollar_bottom"
+		texturefile = "gfx/interface/ideas/USA_Dollar_bottom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_participation_award"
+		texturefile = "gfx/interface/ideas/USA_participation_award.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_steel_and_cotton"
+		texturefile = "gfx/interface/ideas/steel_and_cotton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_the_divided_nation"
+		texturefile = "gfx/interface/ideas/USA_the_divided_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Anglo_frech_enterprise"
+		texturefile = "gfx/interface/ideas/USA_Anglo_frech_enterprise.dds"
+	}
 	
 }

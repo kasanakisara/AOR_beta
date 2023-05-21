@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = SAX_militar
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 8.00
 		x = 8
 		y = 0
         completion_reward={
@@ -49,7 +49,7 @@ focus_tree = {
 	focus = {
 		id = SAX_dresden_fortress_project
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_militar
 		}
@@ -62,7 +62,7 @@ focus_tree = {
 	focus = {
 		id = SAX_artillery_company
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_fortress_project
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = SAX_dresden_aresnal
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_fortress_project
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = SAX_air_power
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_aresnal
 		}
@@ -113,18 +113,19 @@ focus_tree = {
 		y = 3
 		completion_reward={
         add_tech_bonus = {
-		name = small_plane_airframe
+		name = SAX_air_power
 		ahead_reduction = 2
 		bonus = 1.5
 		uses = 2
-		category = small_plane_airframe
+		category = light_fighter
+		category = cat_heavy_fighter
 		}
 		}
 	}
 	focus = {
 		id = SAX_arrach_importance_to_industry
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_fortress_project
 		}
@@ -143,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = SAX_promotion
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_aresnal
 		}
@@ -188,7 +189,7 @@ create_corps_commander = {
 	focus = {
 		id = SAX_carry_tradition
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_air_power
 		}
@@ -204,7 +205,7 @@ create_corps_commander = {
 	focus = {
 		id = SAX_resource_explorayion
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_dresden_fortress_project
 		}
@@ -226,7 +227,7 @@ create_corps_commander = {
 	focus = {
 		id = SAX_tank_company
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_resource_explorayion
 		}
@@ -249,7 +250,7 @@ create_corps_commander = {
 	focus = {
 		id = SAX_peripheral_threat
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 4.00
 		prerequisite = {
 			focus = SAX_promotion
 		}
@@ -265,7 +266,7 @@ create_corps_commander = {
 	focus = {
 		id = SAX_staff
 		icon = GFX_goal_unknown
-		cost = 3.00
+		cost = 8.00
 		prerequisite = {
 			focus = SAX_carry_tradition
 		}

@@ -2,6 +2,12 @@
 
 ##oob = ""
 
+recruit_character = SIL_Erwin_von_Witzleben
+recruit_character = SIL_Hans_lammers
+recruit_character = SIL_Moritz_von_bissing
+recruit_character = SIL_Nikolaus_von_falkenhorst
+recruit_character = SIL_Richard_Von_Schobert
+
 set_research_slots = 3
 # Starting tech
 set_technology = {

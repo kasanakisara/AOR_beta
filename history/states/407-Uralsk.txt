@@ -3,17 +3,17 @@ state={
 	name="STATE_407"
 
 	history={
-		owner = ARU
+		owner = KAZ
+		controller = ARU
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = RUS
-		add_core_of = ARU
 		victory_points = {
 			11537 1
 		}
+		
 	}
 
 	provinces={

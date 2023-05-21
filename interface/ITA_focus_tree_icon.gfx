@@ -1,0 +1,41 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_dream_of_Ita"
+		textureFile = "gfx/interface/goals/ITA_dream.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_new_journey"
+		textureFile = "gfx/interface/goals/ITA_xinzhengcheng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_steady_as_she_going"
+		textureFile = "gfx/interface/goals/ITA_wendinghangxian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_dream_of_ea"
+		textureFile = "gfx/interface/goals/ITA_dongfeimeng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_rebulid_IDGS"
+		textureFile = "gfx/interface/goals/ITA_chongjianzongcanmoubu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_plan_of_Diaz"
+		textureFile = "gfx/interface/goals/ITA_diyazijihua.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_plan_of_Messe"
+		textureFile = "gfx/interface/goals/ITA_meisaijihua.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_The_Last_Lecture"
+		textureFile = "gfx/interface/goals/ITA_guowanghangxian.dds"
+	}
+}

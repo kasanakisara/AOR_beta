@@ -27,6 +27,8 @@ AOR_GER_industry_dynamic_modifier = {
 	
 	#消费品系数
 	consumer_goods_factor = AOR_GER_industry_consumer_goods_factor
+	#最小出口
+	min_export = AOR_GER_min_export
 	
 	#稳定度
 	stability_factor = AOR_GER_industry_stability_factor

@@ -9,8 +9,9 @@ state={
 	}
 
 	history={
-		owner = RUS
-		add_core_of = KAZ
+		owner = TMS
+		add_core_of = MEL
+		add_core_of = TMS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
@@ -19,7 +20,6 @@ state={
 		victory_points = {
 			1591 3 
 		}
-		add_core_of = RUS
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

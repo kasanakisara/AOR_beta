@@ -4,6 +4,9 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {  #德国金
         icon = generic_operation
 		ai_will_do = { factor = 100 }
 		fire_only_once = yes
+		available = {
+			date > 1923.4.1
+		}
 		visible = {
 			OR = {
 				tag = GER

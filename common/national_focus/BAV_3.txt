@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 1200 y = 2500 }
 	focus = {
 		id = write_glass_red_body
-		icon = GFX_goal_unknown
+		icon = GFX_goal_BAV_li_play_chess
 		cost = 1
 		x = 6
 		y = 0

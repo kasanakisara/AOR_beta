@@ -1,0 +1,2344 @@
+focus_tree = {
+	id = CAN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAN
+		}
+	}
+	continuous_focus_position = { x = 55 y = 3000 }
+	#博登政府
+	default = no
+     focus = {
+		id = CAN_free_and_powerful_canada
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 3
+		y = 0
+        completion_reward={
+		country_event = { id = CAN.15}
+		}
+	}
+	focus = {
+		id = CAN_Borden_last_tern
+		icon = GFX_goal_CAN_Borden_last_tern
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_free_and_powerful_canada
+		}
+		x = 3
+		y = 1
+        completion_reward={
+		country_event = { id = CAN.16}
+		}
+	}
+	focus = {
+		id = CAN_support_democratic_enterprises
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_Borden_last_tern
+		}
+		x = 2
+		y = 2
+        completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_commonwealth_joint_defence_committee
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_support_democratic_enterprises
+		}
+		x = 1
+		y = 3
+        completion_reward={
+		army_experience = 80
+			hidden_effect = {
+				division_template = {
+					name = "加拿大民间武装"
+					is_locked = yes
+					division_names_group = GER_Inf_01
+
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						}
+						support = {
+		                engineer = { x = 0 y = 0 }
+		                artillery = { x = 0 y = 1 }
+	                   }
+				}
+			}
+			set_country_flag = CAN_commonwealth_joint_defence_committee
+		every_army_leader = {
+		add_planning = 1
+		}
+	}
+}
+	focus = {
+		id = CAN_improve_local_industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_Borden_last_tern
+		}
+		x = 4
+		y = 2
+        completion_reward = {
+			add_timed_idea = { idea = CAN_improve_local_industry days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_increase_defense_budget
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_improve_local_industry
+		}
+		prerequisite = {
+			focus = CAN_support_democratic_enterprises
+		}
+		x = 3
+		y = 3
+        
+		completion_reward = {
+			add_timed_idea = { idea = CAN_increase_defense_budget days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_commonwealth_economic_cooperation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_improve_local_industry
+		}
+		x = 5
+		y = 3
+        completion_reward={
+		add_ideas = CAN_commonwealth_economic_cooperation
+		}
+	}
+	focus = {
+		id = CAN_women_suffrage
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_commonwealth_joint_defence_committee
+		}
+		x = 1
+		y = 4
+        completion_reward={
+		add_ideas = CAN_women_suffrage
+		}
+	}
+	focus = {
+		id = CAN_Protect_of_minorities
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_commonwealth_economic_cooperation
+		}
+		x = 5
+		y = 4
+        completion_reward={
+		add_ideas = CAN_Protect_of_minorities
+		}
+	}
+	focus = {
+		id = CAN_reform_of_government_system
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_women_suffrage
+		}
+		prerequisite = {
+			focus = CAN_Protect_of_minorities
+		}
+		x = 3
+		y = 5
+		completion_reward={
+		country_event = { id = CAN.0}
+		remove_ideas = CAN_instiutional_reform
+		set_party_name = { 
+	    ideology = CON_democratic
+		long_name = CAN_CON_democratic_party_2
+		name = CAN_CON_democratic_party_2
+}
+		}
+	}
+	#保守党临时政府
+	focus = {
+		id = CAN_provisional_government
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 11
+		y = 0
+        available = {
+		has_completed_focus = CAN_reform_of_government_system
+		}
+	}
+	focus = {
+		id = CAN_set_grain_commission
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_provisional_government
+		}
+		x = 10
+		y = 1
+         completion_reward = {
+			add_timed_idea = { idea = CAN_set_grain_commission days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_strengthen_con_party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_cut_government_spending
+		}
+		prerequisite = {
+			focus = CAN_set_grain_commission
+		}
+		mutually_exclusive = {
+			focus = CAN_Ensure_soc_party
+		}
+		x = 10
+		y = 2
+        completion_reward = {
+		add_stability = 0.02
+		set_country_flag = Meighen_centalization_of_power
+		}
+	} 
+	focus = {
+		id = CAN_cut_government_spending
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_provisional_government
+		}
+		x = 12
+		y = 1 
+        completion_reward = {
+			add_timed_idea = { idea = CAN_cut_government_spending days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_Ensure_soc_party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_cut_government_spending
+		}
+		prerequisite = {
+			focus = CAN_set_grain_commission
+		}
+		mutually_exclusive = {
+			focus = CAN_strengthen_con_party
+		}
+		x = 12
+		y = 2
+        completion_reward = {
+		add_stability = 0.02
+		}
+	}
+	focus = {
+		id = CAN_federal_police
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_Ensure_soc_party
+			focus = CAN_strengthen_con_party
+		}
+		x = 9
+		y = 3
+        completion_reward = {
+			add_timed_idea = { idea = CAN_federal_police days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_auti_japan_politic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_strengthen_con_party
+			focus = CAN_Ensure_soc_party
+		}
+		x = 11
+		y = 3
+        completion_reward={
+		add_opinion_modifier = {
+		target = JAP
+		modifier = faction_traitor
+		}
+		JAP = {
+		add_opinion_modifier = {
+		target = CAN
+		modifier = faction_traitor
+		     }
+		   }
+		   ENG = {
+		country_event = { id = CAN.18}
+		   }
+		}
+	}
+	focus = {
+		id = CAN_intelligence_department
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CAN_Ensure_soc_party
+			focus = CAN_strengthen_con_party
+		}
+		x = 13
+		y = 3
+        completion_reward = {
+		create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = CAN_1921_election
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CAN_federal_police
+		}
+		prerequisite = {
+			focus = CAN_auti_japan_politic
+		}
+		prerequisite = {
+			focus = CAN_intelligence_department
+		}
+		x = 11
+		y = 4
+        completion_reward={
+		country_event = { id = CAN.1}
+		}
+	}
+	#米恩线路
+	focus = {
+		id = CAN_Meighen_second_tern
+		icon = GFX_goal_CAN_Meighen_second_tern
+		cost = 6.00
+		x = 4
+		y = 8
+		available = {
+		has_completed_focus = CAN_1921_election
+		has_country_leader = { ruling_only = yes name = "Arthur·Meighen" }
+		}
+        completion_reward={
+		country_event = { id = CAN.14}
+		}
+	}
+	focus = {
+		id = CAN_strengten_power_of_prime_minister
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Meighen_second_tern
+		}
+		mutually_exclusive = {
+			focus = CAN_delegate_senate
+		}
+		x = 3
+		y = 9
+        completion_reward = {
+			add_country_leader_trait = CAN_totalitarianism
+			create_corps_commander = {
+	name = "Arthur Meighen"
+	portrait_path = "gfx/leaders/CAN/Arthur_Meighen.png"
+	traits = { old_guard cavalry_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+		}
+	}
+	focus = {
+		id = CAN_delegate_senate
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Meighen_second_tern
+		}
+		mutually_exclusive = {
+			focus = CAN_strengten_power_of_prime_minister
+		}
+		x = 5
+		y = 9
+        completion_reward = {
+	add_ideas = CAN_delegate_senate
+    }
+}
+	focus = {
+		id = CAN_encourage_fertillity
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_strengten_power_of_prime_minister
+			focus = CAN_delegate_senate
+		}
+		x = 3
+		y = 10
+        completion_reward = {
+			add_timed_idea = { idea = CAN_encourage_fertillity days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_socialist_prohibition
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_encourage_fertillity
+		}
+		x = 1
+		y = 11
+        completion_reward = {
+			add_timed_idea = { idea = CAN_socialist_prohibition days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_attract_immigrants
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_strengten_power_of_prime_minister
+			focus = CAN_delegate_senate
+		}
+		x = 5
+		y = 10
+        completion_reward = {
+			add_timed_idea = { idea = CAN_attract_immigrants days = 1095 }
+		}
+	}
+	focus = {
+		id = CAN_United_canadaian_church
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_encourage_fertillity
+		}
+		prerequisite = {
+			focus = CAN_attract_immigrants
+		}
+		x = 4
+		y = 11
+        completion_reward = {
+			add_ideas = CAN_United_canadaian_church
+		}
+	}
+	focus = {
+		id = CAN_Federal_trade_act
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_United_canadaian_church
+		}
+		x = 4
+		y = 12
+        completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CAN_laissez_faire_economy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_attract_immigrants
+		}
+		x = 7
+		y = 11
+        completion_reward = {
+			add_timed_idea = { idea = CAN_laissez_faire_economy days = 1095 }
+		}
+	}
+	focus = {
+		id = CAN_cooperate_with_monopolies
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_laissez_faire_economy
+		}
+		prerequisite = {
+			focus = CAN_Federal_trade_act
+		}
+		x = 7
+		y = 13
+        completion_reward = {
+		add_offsite_building = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes }
+		}
+	}
+	focus = {
+		id = CAN_to_quell_unrest_in_manitoba
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_socialist_prohibition
+		}
+		prerequisite = {
+			focus = CAN_Federal_trade_act
+		}
+		x = 1
+		y = 13
+        completion_reward = {
+		remove_ideas = CAN_Unrest_in_manitoba
+		}
+	}
+	focus = {
+		id = CAN_national_reconstruction
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_to_quell_unrest_in_manitoba
+		}
+		prerequisite = {
+			focus = CAN_cooperate_with_monopolies
+		}
+		x = 4
+		y = 14
+        completion_reward = {
+			add_timed_idea = { idea = CAN_national_reconstruction days = 365 }
+		}
+	}
+	#麦肯齐金政府
+	focus = {
+		id = CAN_king_tern
+		icon = GFX_goal_CAN_king_tern
+		cost = 6.00
+		x = 14
+		y = 8
+        available = {
+		has_completed_focus = CAN_1921_election
+		has_country_leader = { ruling_only = yes name = "William Lyon Mackenzie King" }
+		}
+	}
+	focus = {
+		id = CAN_gain_quebec_support
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_mackenzie_new_deal
+		}
+		x = 14
+		y = 13
+		completion_reward={
+		show_ideas_tooltip = CAN_Ernest_Lapointe
+		country_event = { id = CAN.17}
+		}
+	}
+	focus = {
+		id = CAN_Agricultural_aid
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_king_tern
+		}
+		x = 12
+		y = 9
+        completion_reward = {
+			add_timed_idea = { idea = CAN_Agricultural_aid days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_Dissolution_of_parliament
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_king_tern
+		}
+		x = 14
+		y = 9
+         completion_reward = {
+			add_timed_idea = { idea = CAN_Dissolution_of_parliament days = 365 }
+		}
+	}
+	focus = {
+		id = CAN_multi_culture
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Agricultural_aid
+		}
+		prerequisite = {
+			focus = CAN_Dissolution_of_parliament
+		}
+		x = 13
+		y = 10
+        completion_reward = {
+			add_ideas = CAN_multi_culture
+		}
+	}
+	focus = {
+		id = CAN_Cooperate_with_agricultural_progressive_party
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_multi_culture
+		}
+		mutually_exclusive = {
+			focus = CAN_iberal_dominance
+		}
+		x = 13
+		y = 11
+        completion_reward={
+		country_event = { id = CAN.28}
+		show_ideas_tooltip = CAN_Clarence_Decatur_Howe
+		add_stability = -0.05
+		add_popularity = {
+		ideology = SOC_democratic
+		popularity = 0.08
+		}
+		}
+	}
+	focus = {
+		id = CAN_reform_labor_law
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_king_tern
+		}
+		x = 16
+		y = 9
+        completion_reward = {
+		remove_ideas = CAN_Unrest_in_manitoba
+		}
+	}
+	focus = {
+		id = CAN_promote_social_progress
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Dissolution_of_parliament
+		}
+		prerequisite = {
+			focus = CAN_reform_labor_law
+		}
+		x = 15
+		y = 10
+        completion_reward={
+		remove_ideas = CAN_liberal_opposition
+		}
+	}
+	focus = {
+		id = CAN_iberal_dominance
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_promote_social_progress
+		}
+		mutually_exclusive = {
+			focus = CAN_Cooperate_with_agricultural_progressive_party
+		}
+		x = 15
+		y = 11
+         completion_reward={
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	focus = {
+		id = CAN_relief_for_women_and_children
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Cooperate_with_agricultural_progressive_party
+			focus = CAN_iberal_dominance
+		}
+		x = 11
+		y = 12
+        completion_reward = {
+			add_timed_idea = { idea = CAN_relief_for_women_and_children days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_mackenzie_new_deal
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Cooperate_with_agricultural_progressive_party
+			focus = CAN_iberal_dominance
+		}
+		x = 14
+		y = 12
+        completion_reward={
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	focus = {
+		id = CAN_develop_ottawa
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_relief_for_women_and_children
+		}
+		prerequisite = {
+			focus = CAN_mackenzie_new_deal
+		}
+		x = 12
+		y = 13
+        completion_reward = {
+			276 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_camp_trade
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_iberal_dominance
+			focus = CAN_Cooperate_with_agricultural_progressive_party
+		}
+		x = 17
+		y = 12
+        completion_reward = {
+			add_stability = -0.08
+		}
+	}
+	focus = {
+		id = CAN_lower_taxes
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_mackenzie_new_deal
+		}
+		prerequisite = {
+			focus = CAN_camp_trade
+		}
+		x = 16
+		y = 13
+        completion_reward = {
+			add_timed_idea = { idea = CAN_lower_taxes days = 730 }
+		}
+	}
+	focus = {
+		id = CAN_new_social_order
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_develop_ottawa
+		}
+		prerequisite = {
+			focus = CAN_gain_quebec_support
+		}
+		prerequisite = {
+			focus = CAN_lower_taxes
+		}
+		x = 14
+		y = 14
+        completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	#伍德总理
+	focus = {
+		id = CAN_wood_tern
+		icon = GFX_goal_CAN_wood_tern
+		cost = 6.00
+		x = 23
+		y = 8
+        available = {
+		has_completed_focus = CAN_1921_election
+		has_country_leader = { ruling_only = yes name = "Henry Wise Wood" }
+		}
+	}
+	focus = {
+		id = CAN_Fire_the_left_traitor
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_wood_tern
+		}
+		x = 21
+		y = 9
+       completion_reward = {
+	   add_stability = -0.02
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CAN_fight_monopoly
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Fire_the_left_traitor
+		}
+		x = 20
+		y = 10
+        completion_reward = {
+			add_ideas = CAN_fight_monopoly
+		}
+	}
+	focus = {
+		id = CAN_edmonton_declaration
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_wood_tern
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+        country_event = { id = CAN.37}
+		}
+	}
+	focus = {
+		id = CAN_Agrarian_revolution
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Fire_the_left_traitor
+		}
+		prerequisite = {
+			focus = CAN_edmonton_declaration
+		}
+		x = 22
+		y = 10
+        completion_reward = {
+			add_ideas = CAN_Agrarian_revolution
+		}
+	}
+	focus = {
+		id = CAN_Negotiate_with_the_strikers
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_wood_tern
+		}
+		x = 25
+		y = 9
+		completion_reward = {
+         country_event = { id = CAN.39}
+		 }
+	}
+	focus = {
+		id = CAN_production_cooperative
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_edmonton_declaration
+		}
+		prerequisite = {
+			focus = CAN_Negotiate_with_the_strikers
+		}
+		x = 24
+		y = 10
+        completion_reward = {
+			add_ideas = CAN_production_cooperative
+		}
+	}
+	focus = {
+		id = CAN_Formation_of_supreme_council
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Agrarian_revolution
+		}
+		prerequisite = {
+			focus = CAN_production_cooperative
+		}
+		prerequisite = {
+			focus = CAN_dloe_out_unemployment_benefits
+		}
+		prerequisite = {
+			focus = CAN_fight_monopoly
+		}
+		x = 23
+		y = 11
+		completion_reward = {
+        remove_country_leader_trait = CAN_wood_trait
+		add_country_leader_trait = CAN_wood_trait_2
+		}
+	}
+	focus = {
+		id = CAN_dloe_out_unemployment_benefits
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Negotiate_with_the_strikers
+		}
+		x = 26
+		y = 10
+        completion_reward = {
+			add_ideas = CAN_dloe_out_unemployment_benefits
+		}
+	}
+	focus = {
+		id = CAN_Upending_the_traditional_corporate_system
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Formation_of_supreme_council
+		}
+		x = 20
+		y = 12
+        completion_reward = {
+		add_stability = -0.02
+		swap_ideas = {
+					remove_idea = CAN_production_cooperative
+					add_idea = CAN_worker_leader_system
+				}
+		}
+	}
+	focus = {
+		id = CAN_Block_government
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Formation_of_supreme_council
+		}
+		x = 23
+		y = 12
+completion_reward = {
+country_event = { id = CAN.42}
+set_party_name = { 
+	    ideology = SOC_democratic 
+		long_name = CAN_popular_party_long
+		name = CAN_popular_party_long
+}
+set_party_name = { 
+	    ideology = PAR_socialism
+		long_name = CAN_popular_party_long
+		name = CAN_popular_party_long
+}
+set_party_name = { 
+	    ideology = REL_socialism
+		long_name = CAN_popular_party_long
+		name =  CAN_popular_party_long
+}
+set_party_name = {
+	    ideology = AGR_socialism 
+		long_name = CAN_popular_party_long
+		name = CAN_popular_party_long
+}
+}
+	}
+	focus = {
+		id = CAN_increase_voting_power
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Formation_of_supreme_council
+		}
+		x = 26
+		y = 12
+        completion_reward = {
+		add_ideas = CAN_increase_voting_power
+		}
+	}
+	focus = {
+		id = CAN_diplomatic_autonomy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Block_government
+		}
+		prerequisite = {
+			focus = CAN_Upending_the_traditional_corporate_system
+		}
+		prerequisite = {
+			focus = CAN_increase_voting_power
+		}
+		x = 23
+		y = 13
+        completion_reward = {
+		add_political_power = -200
+		custom_effect_tooltip = "加拿大将会获得外交自主权"
+		hidden_effect = {
+        ENG = {
+		set_autonomy = {
+		target = CAN
+		autonomy_state = autonomy_free
+	    }
+	}
+}
+}
+}
+	#民族主义政府
+	focus = {
+		id = CAN_arcand_governemnt
+		icon = GFX_goal_CAN_arcand_governemnt
+		cost = 6.00
+		x = 33
+		y = 8
+         available = {
+		has_completed_focus = CAN_1921_election
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Adrien Arcand" }
+		has_country_leader = { ruling_only = yes name = "Henri Bourassa" }
+		}
+		}
+	}
+	focus = {
+		id = CAN_fascist_militia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_arcand_governemnt
+		}
+		x = 32
+		y = 9
+        completion_reward = {
+	    add_ideas = CAN_fascist_militia
+		}
+	}
+	focus = {
+		id = CAN_Aristocratic_power
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_fascist_militia
+		}
+		x = 31
+		y = 10
+       completion_reward={
+		add_stability = 0.05
+		add_popularity = {
+		ideology = CON_democratic
+		popularity = 0.08
+		}
+		}
+	}
+	focus = {
+		id = CAN_send_out_RCMP
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_arcand_governemnt
+		}
+		x = 34
+		y = 9
+        completion_reward = {
+	    add_ideas = CAN_send_out_RCMP
+		}
+	}
+	focus = {
+		id = CAN_negotiate_with_separtists
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_fascist_militia
+		}
+		prerequisite = {
+			focus = CAN_send_out_RCMP
+		}
+		x = 33
+		y = 10
+        completion_reward={
+		country_event = { id = CAN.30}
+		}
+	}
+	focus = {
+		id = CAN_ecclesiastical_power
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_send_out_RCMP
+		}
+		x = 35
+		y = 10
+        completion_reward={
+		add_stability = 0.05
+		add_popularity = {
+		ideology = Marxism
+		popularity = -0.08
+		}
+		add_popularity = {
+		ideology = PAR_socialism
+		popularity = -0.08
+		}
+		}
+	}
+	focus = {
+		id = CAN_royal_prerogative
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Aristocratic_power
+		}
+		prerequisite = {
+			focus = CAN_negotiate_with_separtists
+		}
+		prerequisite = {
+			focus = CAN_ecclesiastical_power
+		}
+		x = 33
+		y = 11
+		completion_reward={
+        add_country_leader_trait = CAN_totalitarianism
+		}
+	}
+	focus = {
+		id = CAN_bicultural_country
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_prerogative
+		}
+		x = 30
+		y = 12
+        completion_reward={
+		add_ideas = CAN_bicultural_country
+        remove_ideas = CAN_Unrest_in_manitoba
+		}
+	}
+	focus = {
+		id = CAN_militarism_is_resurgent
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_prerogative
+		}
+		x = 33
+		y = 12
+        completion_reward={
+        add_ideas = CAN_militarism_is_resurgent
+		}
+	}
+	focus = {
+		id = CAN_deport_immigrants
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_prerogative
+		}
+		x = 36
+		y = 12
+        completion_reward = {
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = CAN_elect_a_french_monarch
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_deport_immigrants
+		}
+		prerequisite = {
+			focus = CAN_militarism_is_resurgent
+		}
+		prerequisite = {
+			focus = CAN_bicultural_country
+		}
+		mutually_exclusive = {
+			focus = CAN_obey_britannia
+		}
+		x = 35
+		y = 13
+         available = {
+		 is_subject = no
+		has_country_leader = { ruling_only = yes name = "Henri Bourassa" }
+		}
+		completion_reward={
+		if = {
+	    limit = {
+		NOT = {
+		is_in_faction_with = ENG
+		}
+	}
+	ENG = { add_to_faction = CAN }
+}
+		set_cosmetic_tag = CAN_new_france
+		add_opinion_modifier = {
+		target = FRA
+		modifier = cheat_opinion_modifier_good
+		}
+		FRA = {
+		add_opinion_modifier = {
+		target = CAN
+		modifier = cheat_opinion_modifier_good
+		     }
+		diplomatic_relation = { 
+		country = CAN
+		relation = guarantee
+		ative = no
+		   }
+	}
+		}
+	}
+	focus = {
+		id = CAN_obey_britannia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_bicultural_country
+		}
+		prerequisite = {
+			focus = CAN_militarism_is_resurgent
+		}
+		prerequisite = {
+			focus = CAN_deport_immigrants
+		}
+		mutually_exclusive = {
+			focus = CAN_elect_a_french_monarch
+		}
+		x = 31
+		y = 13
+        completion_reward={
+		if = {
+	    limit = {
+		is_subject = no
+		is_in_faction_with = ENG
+		NOT = {
+		is_in_faction_with = FRA
+		}
+	}
+	FRA = { add_to_faction = CAN }
+}
+		
+		if = {
+	    limit = {
+		is_subject = no
+		has_idea = CAN_prince_arthur_of_connaught
+	}
+	country_event = { id = CAN.33}
+}
+		add_opinion_modifier = {
+		target = ENG
+		modifier = cheat_opinion_modifier_good
+		}
+		ENG = {
+		add_opinion_modifier = {
+		target = CAN
+		modifier = cheat_opinion_modifier_good
+		     }
+		diplomatic_relation = { 
+		country = CAN
+		relation = guarantee
+		ative = no
+		   }
+	}
+	}
+}
+	focus = {
+		id = CAN_for_god_for_canada
+		icon = GFX_goal_CAN_for_god_for_canada
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_obey_britannia
+			focus = CAN_elect_a_french_monarch
+		}
+		x = 33
+		y = 14
+        completion_reward={
+        add_ideas = limited_conscription
+		add_ideas = partial_economic_mobilisation
+		}
+	}
+	#军事线
+	focus = {
+		id = CAN_royal_canadian_army
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 22
+		y = 0
+        available = {
+		has_completed_focus = CAN_1921_election
+		}
+	}
+	focus = {
+		id = CAN_royal_canadian_air_force
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 31
+		y = 0
+        available = {
+		has_completed_focus = CAN_1921_election
+		}
+	}
+	focus = {
+		id = CAN_royal_canadian_navy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 37
+		y = 0
+        available = {
+		has_completed_focus = CAN_1921_election
+		}
+	}
+	focus = {
+		id = CAN_crowd_attack
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_army
+		}
+		mutually_exclusive = {
+			focus = CAN_plan_of_decisive_battle
+		}
+		x = 20
+		y = 1
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_crowd_attack
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_mass_production_weapon
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_crowd_attack
+		}
+		x = 18
+		y = 2
+        completion_reward={
+        add_ideas = CAN_mass_production_weapon
+		}
+	}
+	focus = {
+		id = CAN_Army_truck
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_crowd_attack
+		}
+		x = 20
+		y = 2
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_Army_truck
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = CAN_mountain_ranger
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Army_truck
+		}
+		prerequisite = {
+			focus = CAN_mass_production_weapon
+		}
+		x = 19
+		y = 3
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_mountain_ranger
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_plan_of_decisive_battle
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_army
+		}
+		mutually_exclusive = {
+			focus = CAN_crowd_attack
+		}
+		x = 24
+		y = 1
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_plan_of_decisive_battle
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_intelkigence_agency
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_crowd_attack
+			focus = CAN_plan_of_decisive_battle
+		}
+		x = 22
+		y = 2
+		completion_reward={
+        create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = CAN_Royal_infantry_regiment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_intelkigence_agency
+		}
+		x = 21
+		y = 3
+        completion_reward={
+		add_tech_bonus = {
+				name = CAN_Royal_infantry_regiment
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = CAN_halifax_training_camp
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_intelkigence_agency
+		}
+		x = 23
+		y = 3
+        completion_reward={
+       add_ideas = CAN_halifax_training_camp
+		}
+	}
+	focus = {
+		id = CAN_conservative
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_plan_of_decisive_battle
+		}
+		x = 24
+		y = 2
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_Static_war
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_royal_artillery
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_plan_of_decisive_battle
+		}
+		x = 26
+		y = 2
+		completion_reward={
+		add_tech_bonus = {
+				name = CAN_royal_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = CAN_Static_war
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_conservative
+		}
+		prerequisite = {
+			focus = CAN_royal_artillery
+		}
+		x = 25
+		y = 3
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_Static_war
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_new_fighter
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_air_force
+		}
+		x = 30
+		y = 1
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_new_fighter
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = CAN_quebec_air_defense
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_air_force
+		}
+		x = 32
+		y = 1
+        completion_reward={
+		276 = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_air_training_program
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_new_fighter
+		}
+		prerequisite = {
+			focus = CAN_quebec_air_defense
+		}
+		x = 31
+		y = 2
+        complete_tooltip = {
+			air_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = CAN_commonwealth_air_training_plan_AB
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = CAN_commonwealth_air_training_plan
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = CAN_commonwealth_air_training_plan_AB
+			}
+			add_doctrine_cost_reduction = {
+				name = CAN_commonwealth_air_training_plan
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CAN_investment_bomber
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_air_training_program
+		}
+		x = 30
+		y = 3
+		completion_reward={
+        add_tech_bonus = {
+				name = CAN_investment_bomber
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = CAN_Aircraft_production_company
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_air_training_program
+		}
+		x = 32
+		y = 3
+        completion_reward={
+        add_ideas = CAN_Aircraft_production_company
+		}
+	}
+	focus = {
+		id = CAN_halifax_dockyard
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_navy
+		}
+		x = 36
+		y = 1
+       completion_reward = {
+			navy_experience = 25
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	}
+	focus = {
+		id = CAN_Priority_destroyer
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_halifax_dockyard
+		}
+		x = 35
+		y = 2
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_Priority_destroyer
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = CAN_Hudson_bay_dockyard
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_royal_canadian_navy
+		}
+		x = 38
+		y = 1
+        completion_reward = {
+			navy_experience = 25
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	}
+	focus = {
+		id = CAN_emphasis_on_light_cruisers
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_halifax_dockyard
+		}
+		prerequisite = {
+			focus = CAN_Hudson_bay_dockyard
+		}
+		x = 37
+		y = 2
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_emphasis_on_light_cruisers
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = CAN_build_new_destroyer
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_emphasis_on_light_cruisers
+		}
+		prerequisite = {
+			focus = CAN_Priority_destroyer
+		}
+		x = 36
+		y = 3
+		completion_reward={
+		if = {
+	limit = { has_dlc = "Man the Guns" } 
+	add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_1
+						version_name = "Borden Class"
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_1
+						version_name = "Borden Class"
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				else = { 
+				add_equipment_production = {
+					equipment = {
+						type = destroyer_1
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = destroyer_1
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+			} 
+    }
+}
+}
+	focus = {
+		id = CAN_emphasis_on_heavy_cruisers
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Hudson_bay_dockyard
+		}
+		x = 39
+		y = 2
+        completion_reward={
+        add_tech_bonus = {
+				name = CAN_emphasis_on_heavy_cruisers
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = CAN_build_new_cruiser
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_emphasis_on_light_cruisers
+		}
+		prerequisite = {
+			focus = CAN_emphasis_on_heavy_cruisers
+		}
+		x = 38
+		y = 3
+		completion_reward={
+        if = {
+	limit = { has_dlc = "Man the Guns" } 
+	add_equipment_production = {
+					equipment = {
+						type = ship_hull_submarine_1
+						version_name = "Halifax Class"
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_submarine_1
+						version_name = "Halifax Class"
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				else = { 
+				add_equipment_production = {
+					equipment = {
+						type = submarine_1
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = submarine_1
+					}
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+			} 
+         }
+	}
+}
+	focus = {
+		id = CAN_wartime_communication
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_mountain_ranger
+			focus = CAN_Royal_infantry_regiment
+			focus = CAN_halifax_training_camp
+			focus = CAN_Static_war
+		}
+		x = 22
+		y = 4
+       completion_reward={
+        add_tech_bonus = {
+				name = CAN_wartime_communication
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = CAN_aviation_sadety_act
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_investment_bomber
+		}
+		prerequisite = {
+			focus = CAN_Aircraft_production_company
+		}
+		x = 31
+		y = 4
+		completion_reward={
+		 add_timed_idea = { idea = CAN_aviation_sadety_act days = 1095 }
+		}
+	}
+	focus = {
+		id = CAN_transport_fleet
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_build_new_destroyer
+		}
+		prerequisite = {
+			focus = CAN_build_new_cruiser
+		}
+		x = 37
+		y = 4
+        completion_reward={
+        add_ideas = CAN_transport_fleet
+		}
+	}
+	focus = {
+		id = CAN_Maintenance_of_industrial_system
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 46
+		y = 0
+        available = {
+		has_completed_focus = CAN_1921_election
+		}
+	}
+	focus = {
+		id = CAN_build_state_owned_enterprises
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Maintenance_of_industrial_system
+		}
+		x = 44
+		y = 1
+        completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_expand_heavy_industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Maintenance_of_industrial_system
+		}
+		x = 46
+		y = 1
+        completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_western_oil_mining
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_build_state_owned_enterprises
+		}
+		prerequisite = {
+			focus = CAN_expand_heavy_industry
+		}
+		x = 45
+		y = 2
+        completion_reward = {
+			470 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+			471 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+			}
+			472 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+			}
+			683 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_western_development_plan
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_western_oil_mining
+		}
+		x = 44
+		y = 3
+        completion_reward = {
+			
+		473 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		470 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		469 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		467 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		682 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_expand_civil_industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Maintenance_of_industrial_system
+		}
+		x = 48
+		y = 1
+        completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = CAN_northern_resources_mining
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_expand_heavy_industry
+		}
+		prerequisite = {
+			focus = CAN_expand_civil_industry
+		}
+		x = 47
+		y = 2
+         completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = chromium
+					amount = 9
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_invest_in_national_researxh_council
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_western_oil_mining
+		}
+		prerequisite = {
+			focus = CAN_northern_resources_mining
+		}
+		x = 46
+		y = 3
+        completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = CAN_coastal_railway_optimization
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_invest_in_national_researxh_council
+		}
+		prerequisite = {
+			focus = CAN_western_development_plan
+		}
+		x = 45
+		y = 4
+		completion_reward = {
+			build_railway = { #Montreal - Halifax
+				path = {
+					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
+				}
+			}
+			build_railway = {
+				path = {
+					1424 4285
+				}
+			} 
+			build_railway = {
+				path = { 7433 12149 }
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_northern_development_plan
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_northern_resources_mining
+		}
+		x = 48
+		y = 3
+         completion_reward = {
+		 463 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+			471 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		472 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		683 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+		}
+	}
+	focus = {
+		id = CAN_pacific_railway
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_northern_development_plan
+		}
+		prerequisite = {
+			focus = CAN_invest_in_national_researxh_council
+		}
+		x = 47
+		y = 4
+        completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = { #Vancouver - NW Canada
+				path = {
+					1408 1858 10273 4870 10548
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_capture_wheat_market
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_coastal_railway_optimization
+		}
+		prerequisite = {
+			focus = CAN_pacific_railway
+		}
+		x = 46
+		y = 5
+        completion_reward = {
+		add_ideas = CAN_capture_wheat_market
+		add_offsite_building = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes }
+		}
+	}
+	focus = {
+		id = CAN_ford_motor_plant
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_coastal_railway_optimization
+		}
+		x = 44
+		y = 5
+        completion_reward = {
+		add_offsite_building = {
+		type = arms_factory
+		level = 2
+		instant_build = yes }
+		}
+	}
+	focus = {
+		id = CAN_attract_foreign_investment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_pacific_railway
+		}
+		x = 48
+		y = 5
+        completion_reward = {
+		add_offsite_building = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes }
+		}
+	}
+	focus = {
+		id = CAN_restart_war_industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_ford_motor_plant
+		}
+		prerequisite = {
+			focus = CAN_capture_wheat_market
+		}
+		prerequisite = {
+			focus = CAN_attract_foreign_investment
+		}
+		x = 46
+		y = 6
+        completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+}

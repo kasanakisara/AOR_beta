@@ -1,5 +1,5 @@
 defined_text = { 
-	name = event_picture_getpicture
+	name = event_picture
 		
 			
 	text = { trigger = { check_variable = { global.se_AOR_event_picture_change = 1 } } localization_key = GFX_event_picture_1 }

@@ -1,0 +1,856 @@
+focus_tree = {
+	id = PER
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+		}
+	}
+	default = no
+	#丧权辱国
+	focus = {
+		id = humiliating_0
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 16
+		y = 0
+	}
+	#进口工业仪器
+	focus = {
+		id = Imported_industrial_instruments_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 6
+		y = 0
+
+	}
+	#鼓励生育
+	focus = {
+		id = Encourage_fertility_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 25
+		y = 1
+
+	}
+	#国家战争部
+	focus = {
+		id = National_War_Department_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 39
+		y = 0
+
+	}
+	#伊斯法罕工业中心
+	focus = {
+		id = Isfahan_Industrial_Center_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Imported_industrial_instruments_1
+		}
+		x = 4
+		y = 1
+
+	}
+	#波斯军工
+	focus = {
+		id = Persian_military_industry_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Isfahan_Industrial_Center_1
+		}
+		x = 4
+		y = 2
+
+	}
+	#基础设施建设
+	focus = {
+		id = Infrastructure_construction_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Persian_military_industry_1
+		}
+		x = 4
+		y = 3
+
+	}
+	#农业补贴
+	focus = {
+		id = Agricultural_subsidies_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Imported_industrial_instruments_1
+		}
+		x = 8
+		y = 1
+
+	}
+	#波斯农业银行
+	focus = {
+		id = Agricultural_Bank_of_Persia_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Agricultural_subsidies_1
+		}
+		x = 8
+		y = 2
+
+	}
+	#扩大胡齐斯坦油田
+	focus = {
+		id = Expansion_of_oil_in_Huzistan_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Agricultural_Bank_of_Persia_1
+		}
+		x = 8
+		y = 3
+
+	}
+	#现代化之路
+	focus = {
+		id = The_road_to_modernization_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Expansion_of_oil_in_Huzistan_1
+		}
+		prerequisite = {
+			focus = Infrastructure_construction_1
+		}
+		x = 6
+		y = 4
+
+	}
+	#与英国人商定
+	focus = {
+		id = Agree_with_the_British_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = humiliating_0
+		}
+		mutually_exclusive = {
+			focus = Veto_agreement_2
+		}
+		x = 15
+		y = 1
+
+	}
+	#否决协定
+	focus = {
+		id = Veto_agreement_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = humiliating_0
+		}
+		mutually_exclusive = {
+			focus = Agree_with_the_British_1
+		}
+		x = 17
+		y = 1
+
+	}
+	#忍辱负重
+	focus = {
+		id = endure_humiliation_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Agree_with_the_British_1
+			focus = Veto_agreement_2
+		}
+		x = 16
+		y = 2
+
+	}
+	#大丈夫身居天地之间！
+	focus = {
+		id = Big_husband_lives_between_heaven_and_earth_5
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = endure_humiliation_3
+		}
+		mutually_exclusive = {
+			focus = Can_only_stay_depressed_for_a_long_time_4
+		}
+		x = 13
+		y = 3
+
+	}
+	#德黑兰安保公司
+	focus = {
+		id = Tehran_Security_Company_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Big_husband_lives_between_heaven_and_earth_5
+		}
+		x = 13
+		y = 4
+
+	}
+	#他们是外国朋友
+	focus = {
+		id = These_are_foreign_friends_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Tehran_Security_Company_1
+		}
+		x = 12
+		y = 5
+
+	}
+	#总统制
+	focus = {
+		id = Presidential_system_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Tehran_Security_Company_1
+		}
+		x = 14
+		y = 5
+
+	}
+	#只能郁郁久居人下
+	focus = {
+		id = Can_only_stay_depressed_for_a_long_time_4
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = endure_humiliation_3
+		}
+		mutually_exclusive = {
+			focus = Big_husband_lives_between_heaven_and_earth_5
+		}
+		x = 20
+		y = 3
+
+	}
+	#波斯治安警察
+	focus = {
+		id = Persian_security_police_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Can_only_stay_depressed_for_a_long_time_4
+		}
+		x = 20
+		y = 4
+
+	}
+	#大忽悠
+	focus = {
+		id = Hu_you_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Tehran_Security_Company_1
+			focus = Persian_security_police_1
+		}
+		x = 17
+		y = 5
+
+	}
+	#索要武器
+	focus = {
+		id = Demand_weapons_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Persian_security_police_1
+		}
+		x = 20
+		y = 5
+
+	}
+	#扩大英国公司的权利
+	focus = {
+		id = Expand_the_rights_of_British_companies_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Demand_weapons_1
+		}
+		x = 20
+		y = 6
+
+	}
+	#借刀杀人
+	focus = {
+		id = killing_someone_with_a_borrowed_knife_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Expand_the_rights_of_British_companies_1
+		}
+		x = 20
+		y = 7
+
+	}
+	#效忠自有赏
+	focus = {
+		id = Loyalty_pays_off_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = killing_someone_with_a_borrowed_knife_1
+		}
+		x = 20
+		y = 8
+
+	}
+	#义务教育
+	focus = {
+		id = compulsory_education_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Encourage_fertility_1
+		}
+		x = 25
+		y = 2
+
+	}
+	#德黑兰大学
+	focus = {
+		id = University_of_Tehran_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = compulsory_education_1
+		}
+		x = 25
+		y = 3
+
+	}
+	#高等教育
+	focus = {
+		id = Higher_Education_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = University_of_Tehran_1
+		}
+		x = 25
+		y = 4
+
+	}
+	#技术工人
+	focus = {
+		id = Skilled_worker_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Higher_Education_1
+		}
+		x = 25
+		y = 5
+
+	}
+	#中东强国
+	focus = {
+		id = Middle_East_Power_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Skilled_worker_1
+		}
+		x = 25
+		y = 6
+
+	}
+	#陆地雄狮
+	focus = {
+		id = Land_lion_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = National_War_Department_1
+		}
+		x = 32
+		y = 1
+
+	}
+	#外国军事顾问
+	focus = {
+		id = Foreign_military_advisers_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Land_lion_1
+		}
+		x = 31
+		y = 2
+
+	}
+	#哥萨克师军事学院
+	focus = {
+		id = Military_Academy_of_the_Cossack_Division_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign_military_advisers_1
+		}
+		x = 29
+		y = 3
+
+	}
+	#步兵武器研发
+	focus = {
+		id = Infantry_weapon_development_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign_military_advisers_1
+		}
+		x = 31
+		y = 3
+
+	}
+	#坦克武器研发
+	focus = {
+		id = Tank_weapon_research_and_development_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign_military_advisers_1
+		}
+		x = 33
+		y = 3
+
+	}
+	#炮兵武器研发
+	focus = {
+		id = Artillery_weapon_development_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign_military_advisers_1
+		}
+		x = 35
+		y = 3
+
+	}
+	#完成陆军现代化
+	focus = {
+		id = Complete_the_modernization_of_the_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Infantry_weapon_development_1
+		}
+		prerequisite = {
+			focus = Tank_weapon_research_and_development_1
+		}
+		prerequisite = {
+			focus = Artillery_weapon_development_1
+		}
+		prerequisite = {
+			focus = Military_Academy_of_the_Cossack_Division_1
+		}
+		x = 32
+		y = 4
+
+	}
+	#本土军官培养
+	focus = {
+		id = Training_of_local_officers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Land_lion_1
+		}
+		x = 33
+		y = 2
+
+	}
+	#扩建海军船坞
+	focus = {
+		id = Sea_dragon_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = National_War_Department_1
+		}
+		x = 39
+		y = 1
+
+	}
+	#波斯海军军事学院
+	focus = {
+		id = Expansion_of_naval_dock_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Sea_dragon_1
+		}
+		x = 39
+		y = 2
+
+	}
+	#意大利舰艇采购计划
+	focus = {
+		id = Persian_Naval_Military_Academy_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Expansion_of_naval_dock_1
+		}
+		x = 37
+		y = 3
+
+	}
+	#法国舰艇采购计划
+	focus = {
+		id = Italian_ship_rocurement_plan_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Expansion_of_naval_dock_1
+		}
+		x = 39
+		y = 3
+
+	}
+	#国产舰艇研发
+	focus = {
+		id = French_ship_procurement_plan_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Expansion_of_naval_dock_1
+		}
+		x = 41
+		y = 3
+
+	}
+	#现代化海军
+	focus = {
+		id = Research_and_development_of_domestic_ships_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Persian_Naval_Military_Academy_1
+		}
+		prerequisite = {
+			focus = Italian_ship_rocurement_plan_1
+		}
+		prerequisite = {
+			focus = French_ship_procurement_plan_1
+		}
+		x = 39
+		y = 4
+
+	}
+	#现代化海军
+	focus = {
+		id = Modern_Navy_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Research_and_development_of_domestic_ships_1
+		}
+		x = 39
+		y = 5
+
+	}
+	#天空雄鹰
+	focus = {
+		id = Sky_Eagle_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = National_War_Department_1
+		}
+		x = 45
+		y = 1
+
+	}
+	#空军基地
+	focus = {
+		id = air_base_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Sky_Eagle_1
+		}
+		x = 45
+		y = 2
+
+	}
+	#雷达科技研究
+	focus = {
+		id = Research_on_radar_technology_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = air_base_1
+		}
+		x = 43
+		y = 3
+
+	}
+	#空军科技研究
+	focus = {
+		id = Air_Force_Science_and_Technology_Research_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = air_base_1
+		}
+		x = 45
+		y = 3
+
+	}
+	#空军战术研究
+	focus = {
+		id = Air_Force_Tactical_Research_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = air_base_1
+		}
+		x = 47
+		y = 3
+
+	}
+	#雄鹰展翅
+	focus = {
+		id = The_eagle_spread_its_wings_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Research_on_radar_technology_1
+		}
+		prerequisite = {
+			focus = Air_Force_Science_and_Technology_Research_1
+		}
+		prerequisite = {
+			focus = Air_Force_Tactical_Research_1
+		}
+		x = 45
+		y = 4
+
+	}
+	#利用吉兰问题扩军
+	focus = {
+		id = Use_the_Gilan_issue_to_expand_the_army_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = These_are_foreign_friends_1
+		}
+		x = 12
+		y = 6
+
+	}
+	#拉扎维基金会
+	focus = {
+		id = Lazavi_Foundation_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Presidential_system_1
+		}
+		x = 14
+		y = 6
+
+	}
+	#秘密工厂
+	focus = {
+		id = Secret_factory_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Use_the_Gilan_issue_to_expand_the_army_1
+		}
+		x = 12
+		y = 7
+
+	}
+	#高原孕育的工业蓝图
+	focus = {
+		id = Industrial_blueprint_on_the_plateau_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Lazavi_Foundation_1
+		}
+		x = 14
+		y = 7
+
+	}
+	#自我救赎
+	focus = {
+		id = Self_redemption_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Secret_factory_1
+		}
+		prerequisite = {
+			focus = Industrial_blueprint_on_the_plateau_1
+		}
+		x = 13
+		y = 8
+
+	}
+	#完善宪法
+	focus = {
+		id = Improve_the_Constitution_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Loyalty_pays_off_1
+			focus = Self_redemption_1
+		}
+		x = 16
+		y = 9
+
+	}
+	#政府改革
+	focus = {
+		id = government_reform_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		x = 13
+		y = 10
+
+	}
+	#安抚部落
+	focus = {
+		id = Appease_the_tribe_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		mutually_exclusive = {
+			focus = Central_hoof_1
+		}
+		x = 16
+		y = 10
+
+	}
+	#中央铁蹄
+	focus = {
+		id = Central_hoof_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		mutually_exclusive = {
+			focus = Appease_the_tribe_1
+		}
+		x = 18
+		y = 10
+
+	}
+	#世俗化
+	focus = {
+		id = Secularization_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = government_reform_1
+		}
+		mutually_exclusive = {
+			focus = Keep_tradition_1
+		}
+		x = 12
+		y = 11
+
+	}
+	#保持传统
+	focus = {
+		id = Keep_tradition_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = government_reform_1
+		}
+		mutually_exclusive = {
+			focus = Secularization_1
+		}
+		x = 14
+		y = 11
+
+	}
+	#收复阿塞拜疆
+	focus = {
+		id = Recover_Azerbaijan_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		x = 20
+		y = 10
+
+	}
+	#打破枷锁
+	focus = {
+		id = Break_the_shackles_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		x = 22
+		y = 10
+
+	}
+	#不安分的邻居
+	focus = {
+		id = Restless_neighbors_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		x = 24
+		y = 10
+
+	}
+	#红色幽灵
+	focus = {
+		id = Red_Ghost_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Improve_the_Constitution_1
+		}
+		x = 26
+		y = 10
+
+	}
+	#波斯工业奇迹
+	focus = {
+		id = Industrial_brilliance_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The_road_to_modernization_1
+		}
+		x = 6
+		y = 5
+
+	}
+}

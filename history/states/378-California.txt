@@ -12,13 +12,13 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = MXS
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 2
-			air_base = 10
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 5
 			1562 = {
 				naval_base = 10
 			}
@@ -33,6 +33,7 @@ state={
 			}
 		}
 		add_core_of = USA
+		add_core_of = MXS
 		victory_points = {
 			9814 30
 		}

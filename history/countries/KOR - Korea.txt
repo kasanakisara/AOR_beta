@@ -11,58 +11,17 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 35
 	Fascism = 25
 	Marxism = 30
-	Authoritarianism = 10
+	Absolutism = 45
 }
 
-create_country_leader = {
-	name = "Syngman Rhee"
-	desc = ""
-	picture = GFX_portrait_Syngman_Rhee
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = KOR
 
-create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = GFX_portrait_Yi_Kang
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Kim Il-sung"
-	desc = ""
-	picture = GFX_portrait_Kim_Il_sung
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Un"
-	desc = ""
-	picture = GFX_portrait_Yi_Un
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}

@@ -19,20 +19,6 @@
 	}
 }
 
-division_template = {
-	name = "Brigada Agrarista"
-
-	division_names_group = MEX_INF_02
-
-	#is_locked = yes
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	priority = 0
-}
 
 division_template = {
 	name = "División de Caballería"
@@ -123,7 +109,7 @@ units = {
 
 	division = {
 		location = 1965 # Mexico City
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -131,7 +117,7 @@ units = {
 
 	division = {
 		location = 1965 # Mexico City
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -139,7 +125,7 @@ units = {
 
 	division = {
 		location = 1965 # Mexico City
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -147,7 +133,7 @@ units = {
 
 	division = {
 		location = 1900
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -155,7 +141,7 @@ units = {
 
 	division = {
 		location = 2021
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -163,7 +149,7 @@ units = {
 
 	division = {
 		location = 10889
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -171,7 +157,7 @@ units = {
 
 	division = {
 		location = 12715
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -179,7 +165,7 @@ units = {
 
 	division = {
 		location = 8032
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
@@ -187,7 +173,7 @@ units = {
 
 	division = {
 		location = 12461
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -195,7 +181,7 @@ units = {
 
 	division = {
 		location = 10765
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -203,7 +189,7 @@ units = {
 
 	division = {
 		location = 4908
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -211,7 +197,7 @@ units = {
 
 	division = {
 		location = 4977
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -219,7 +205,7 @@ units = {
 
 	division = {
 		location = 10730
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -227,7 +213,7 @@ units = {
 
 	division = {
 		location = 2051
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
@@ -235,29 +221,10 @@ units = {
 
 	division = {
 		location = 5015
-		division_template = "Brigada Agrarista"
+		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-}
-
-air_wings = {
-	### Fuerza Aérea Mexicana -- Mexico City
-	277 = {
-		# CAS Air Group -- de Haviland DH-4Bs
-		CAS_equipment_1 =  {
-			owner = "MEX" 
-			amount = 12
-		}
-		fighter_equipment_0 =  {
-			owner = "MEX"
-			amount = 6
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "MEX"
-			amount = 6
-		}
 	}
 }
 
@@ -275,15 +242,6 @@ instant_effect = {
 		equipment = {
 			type = artillery_equipment_1
 			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_1
-			creator = "MEX" 
 		}
 		requested_factories = 1
 		progress = 0.20

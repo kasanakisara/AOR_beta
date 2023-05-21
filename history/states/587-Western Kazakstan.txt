@@ -3,17 +3,15 @@ state={
 	name="STATE_587"
 
 	history={
-		owner = ARU
+		owner = TCG
 		add_core_of = KAZ
+		add_core_of = TCG
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			1517 1 
 		}
-		add_core_of = RUS
-		add_core_of = ARU
-
 	}
 
 	provinces={

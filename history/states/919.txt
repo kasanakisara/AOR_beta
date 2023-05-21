@@ -1,23 +1,25 @@
+
 state={
 	id=919
 	name="STATE_919"
-	manpower = 200000
-	
-	state_category =rural
 
 	history={
-		owner = AFG
-		add_core_of = RUS
+		owner = UZB
 		add_core_of = TAJ
-		add_core_of = BUK
+		add_core_of = CHI
+		add_core_of = TMS
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
 
 	provinces={
-		12805
+		8027 10417 12805 
 	}
-
-	local_supplies=0.0
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

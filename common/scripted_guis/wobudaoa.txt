@@ -16,6 +16,9 @@ scripted_gui = {
 			AOR_event_picture_change_name = {
 				image = "[event_picture_change]"
 			} 
+			event_picture = { 
+				image = "[event_picture]" 
+			} 			
 		}	
 	}
 }

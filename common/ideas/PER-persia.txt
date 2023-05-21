@@ -1,0 +1,69 @@
+ideas = {
+
+	country = {
+		Anglo_Iranian_agreement = {
+
+			picture = Anglo_Iranian_agreement
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.5
+                TRAINING_TIME_ARMY_FACTOR = 0.4
+                LOCAL_RESOURCES_FACTOR = -0.5
+                MODIFIER_XP_GAIN_ARMY_FACTOR = -0.5
+                MODIFIER_XP_GAIN_NAVY_FACTOR = -0.5
+                political_advisor_cost_factor = 0.33
+                ARMY_ADVISOR_COST_FACTOR = 0.3
+				production_speed_factor = 0.2
+
+			}
+		}
+		Few_troops = {
+			picture = Few_troops
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				ARMY_ORG_FACTOR = -0.1
+				ARMY_ATTACK_FACTOR = -0.2
+				ARMY_DEFENCE_FACTOR = -0.2
+			}
+		}
+		Great_Famine = {
+			picture = Great_Famine
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				CONSCRIPTION_FACTOR = -0.05
+				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
+		Illiterate_people = {
+			picture = Illiterate_people
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				RESEARCH_SPEED_FACTOR = -0.15
+			}
+		}
+		A_rebellious_tribe = {
+			picture = A_rebellious_tribe
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				STABILITY_FACTOR = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

@@ -4,10 +4,10 @@ state = {
 
 	history = {
 	
-		owner = ARU
+		owner = TCG
 		
 		victory_points = {
-			12333 2
+			12333 15
 		}
 		
 		buildings = {
@@ -16,9 +16,7 @@ state = {
 
 		}
 		
-		add_core_of = RUS
-		add_core_of = TMS
-		add_core_of = ARU
+		add_core_of = TCG
 
 	}
 

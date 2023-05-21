@@ -239,7 +239,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		create_wargoal = { target = KSH type = annex_everything }
+		create_wargoal = { target = SAX type = annex_everything }
 		}
 	}
 	focus={

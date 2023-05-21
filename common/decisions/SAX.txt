@@ -119,9 +119,9 @@ SAX_militar_committee = {
         }
 		capital_scope = {
 					create_unit = {
-						division = "name = \"“要塞”\" division_template = \"“要塞”\" start_experience_factor = 1"
+						division = "name = \"“要塞”\" division_template = \"“要塞”\" start_experience_factor = 0.1"
 						owner = ROOT
-						count = 3
+						count = 1
 					}
 				}
 		}
@@ -144,7 +144,7 @@ SAX_militar_committee = {
 		custom_effect_tooltip = "资金达到一百万可执行"
 		add_equipment_to_stockpile = {
 		type = infantry_equipment
-		amount = 2000
+		amount = 1000
 	    }
 		subtract_from_variable = { 
 	    var = SAX.militar
@@ -169,7 +169,7 @@ SAX_purchase_guns = {
 		custom_effect_tooltip = "资金达到一百万可执行"
 		add_equipment_to_stockpile = {
 		type = artillery_equipment
-		amount = 600
+		amount = 300
 	    }
 		subtract_from_variable = { 
 	    var = SAX.militar
@@ -194,7 +194,7 @@ SAX_support_equipment = {
 		custom_effect_tooltip = "资金达到一百万可执行"
 		add_equipment_to_stockpile = {
 		type = support_equipment
-		amount = 800
+		amount = 400
 	    }
 		subtract_from_variable = { 
 	    var = SAX.militar
@@ -278,9 +278,14 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.friedrich > SAX.than }
+		NOT = {
+		has_idea = king_Friedrich_August
 		}
+		 has_country_flag = SAX_election_leader_AUT_flag
+		}
+		
 		visible = {
-			
+		
 		}
 		cost = 15
 		fire_only_once = no
@@ -307,6 +312,27 @@ SAX_balance_of_power_AUT_democratic = {
 						
 					}
 				}
+		}
+
+		}
+		SAX_be_king_friedrich = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		NOT = {
+		has_country_leader = { ruling_only = yes name = "Friedrich August" }
+		}
+		}
+		visible = {
+			
+		}
+		cost = 35
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+		add_ideas = king_Friedrich_August
 		}
 
 		}
@@ -361,6 +387,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.bismrack > SAX.than }
+		 has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -443,6 +470,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.mackensen > SAX.than }
+		 has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -524,6 +552,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.heydrich > SAX.than }
+		has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -605,6 +634,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.rundstedt > SAX.than }
+		has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -686,6 +716,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.model > SAX.than }
+		has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -767,6 +798,7 @@ SAX_balance_of_power_AUT_democratic = {
 		icon = GFX_decision_generic_political_rally
 		available = {
 		check_variable = { SAX.reinhardt > SAX.than }
+		has_country_flag = SAX_election_leader_AUT_flag
 		}
 		visible = {
 			
@@ -806,13 +838,12 @@ SAX_balance_of_power_AUT_democratic = {
 			has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
 		}
 		cost = 15
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
 		}
 		
 		complete_effect = {
-		custom_effect_tooltip = "达到八十支持率可选择"
 		add_popularity = {
 		ideology = Fascism
 		popularity = 0.65
@@ -831,15 +862,59 @@ SAX_balance_of_power_AUT_democratic = {
 }
 		}
 		}
+		SAX_bocchi_the_rock = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		check_variable = { 10 > SAX.friedrich }
+		check_variable = { 10 > SAX.rundstedt }
+		check_variable = { 10 > SAX.bismrack }
+		check_variable = { 10 > SAX.heydrich }
+		check_variable = { 10 > SAX.mackensen }
+		check_variable = { 10 > SAX.model }
+		check_variable = { 10 > SAX.reinhardt }
+		}
+		visible = {
+		check_variable = { 10 > SAX.friedrich }
+		check_variable = { 10 > SAX.rundstedt }
+		check_variable = { 10 > SAX.bismrack }
+		check_variable = { 10 > SAX.heydrich }
+		check_variable = { 10 > SAX.mackensen }
+		check_variable = { 10 > SAX.model }
+		check_variable = { 10 > SAX.reinhardt }	
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.65
+		}
+			set_politics = {
+        ruling_party = Fascism
+		}
+		create_country_leader = {
+	name = "hitori"
+	desc = ""
+	picture = gfx/leaders/SAX/hitori_bocchi.png
+	expire = "1965.1.1"
+	ideology = NSDAP
+	traits = {
+	}
+}
+		}
+		}
 }
 SAX_broken_germany = {
 SAX_leader_kruger = {
 		icon = GFX_decision_generic_political_rally
 		available = {
-		has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
+		
 		}
 		visible = {
-			has_country_leader = { ruling_only = yes name = "manfred·von·killinger" }
 		}
 		cost = 50
 		fire_only_once = yes
@@ -860,7 +935,7 @@ SAX_leader_kruger = {
 	desc = ""
 	picture = gfx/leaders/SAX/SAX_kruger.png
 	expire = "1965.1.1"
-	ideology = revengism
+	ideology = militarism
 	traits = {
 	}
 }
@@ -875,7 +950,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 			is_neighbor_of = GER
 			country_exists = GER
-			has_war = no
 		}
 		
 		allowed = {
@@ -913,7 +987,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = SIL
 		   country_exists = SIL
-			has_war = no
 		}
 		
 		allowed = {
@@ -951,7 +1024,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = KSH
 		   country_exists = KSH
-			has_war = no
 		}
 		
 		allowed = {
@@ -989,7 +1061,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = MEK
 		   country_exists = MEK
-			has_war = no
 		}
 		
 		allowed = {
@@ -1027,7 +1098,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = SHL
 		   country_exists = SHL
-			has_war = no
 		}
 		
 		allowed = {
@@ -1065,7 +1135,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = HAN
 		   country_exists = HAN
-			has_war = no
 		}
 		
 		allowed = {
@@ -1103,7 +1172,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = NAU
 		   country_exists = NAU
-			has_war = no
 		}
 		
 		allowed = {
@@ -1141,7 +1209,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = BAV
 		   country_exists = BAV
-			has_war = no
 		}
 		
 		allowed = {
@@ -1179,7 +1246,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = WUR
 		   country_exists = WUR
-			has_war = no
 		}
 		
 		allowed = {
@@ -1217,7 +1283,6 @@ SAX_attack_north_govermant = {
 			original_tag = SAX
 		   is_neighbor_of = PRE
 		   country_exists = PRE
-			has_war = no
 		}
 		
 		allowed = {
@@ -1247,5 +1312,321 @@ SAX_attack_north_govermant = {
 		}
 	}
 }
+SAX_marxism_election = {
+SAX_support_wolf = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		
+		}
+		visible = {
+		check_variable = { 99 > SAX.wolf }
+		NOT = {
+		has_country_leader = { ruling_only = yes name = "Pual·Frolich" }
+		has_country_leader = { ruling_only = yes name = "Theodor Liebknecht" }
+		}
+		}
+		cost = 15
+		days_remove = 15
+		fire_only_once = no
+		
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+		add_to_variable = { 
+	    var = SAX.wolf
+	    value = 2
+         }
+		
+	}
+}
+SAX_support_liebknecht = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+		
+		}
+		visible = {
+		check_variable = { 99 > SAX.liebknecht }
+		NOT = {
+		has_country_leader = { ruling_only = yes name = ""Pual·Frolich }
+		has_country_leader = { ruling_only = yes name = "Theodor Liebknecht" }
+		}
+		}
+		cost = 15
+		days_remove = 15
+		fire_only_once = no
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+		add_to_variable = { 
+	    var = SAX.liebknecht
+	    value = 2
+         }
+		
+	}
+}
+SAX_Marxism_election = {
 
+		icon = PUM_decision
+		
+
+		available = {
+             always = no
+		}
+
+		visible = {  
+		    has_country_flag = SAX_Marxism_election_flag
+		}
+		
+		activation = {
+			has_country_flag = SAX_Marxism_election_flag
+		}
+		
+		days_mission_timeout = 180
+		is_good = yes
+		fire_only_once = yes
+		
+		
+		cancel_trigger = {
+			always = no
+		}
+		
+		complete_effect = {
+		}
+		
+		selectable_mission = no
+		
+		cancel_effect = {
+			
+		}
+		
+		timeout_effect = {
+			if = {
+	    limit = {
+		check_variable = { SAX.wolf > SAX.liebknecht }
+	}
+	set_country_flag = SAX_election_over_Marxism
+set_country_flag = SAX_Friedrich_wolf_win
+	create_country_leader = {
+	name = "Pual·Frolich"
+	desc = "POLITICS_T_Liebknecht_DESC"
+	picture = "gfx/leaders/SAX/Paul_frolich.png"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+	}
+}
+}
+        if = {
+	    limit = {
+		check_variable = { SAX.liebknecht > SAX.wolf }
+	}
+	set_country_flag = SAX_election_over_Marxism
+set_country_flag = SAX_Theodor Liebknecht_win
+	 create_country_leader = {
+	name = "Theodor Liebknecht"
+	desc = "POLITICS_T_Liebknecht_DESC"
+	picture = "gfx/leaders/SAX/theodor.dds"
+	expire = "1965.1.1"
+	ideology = revolutionism
+	traits = {
+	}
+}
+}		
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+	SAX_red_guerilla = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			has_war_support > 0.5
+			has_manpower > 8000
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		cost = 80
+		
+		complete_effect = {
+		add_manpower = -8000
+				capital_scope = {
+					create_unit = {
+						division = "name = \"赤色游击队\" division_template = \"赤色游击队\" start_experience_factor = 0.1"
+						owner = ROOT
+						count = 1
+					}
+				}
+		}
+		
+		}
+		SAX_speed_work = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			has_war_support > 0.5
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		cost = 80
+		days_remove = 180
+		
+		modifier = {
+		political_power_cost = 0.15
+			industrial_capacity_factory = 0.15
+            production_speed_buildings_factor = 0.085
+		}
+		
+		complete_effect = {
+				add_stability = -0.01
+		}
+		}
+		SAX_stability_up = {
+		icon = GFX_decision_generic_political_rally
+		available = {
+			has_war_support > 0.5
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		cost = 80
+		days_remove = 180
+		
+		modifier = {
+		stability_weekly = 0.01
+		monthly_population = 0.45
+		}
+		
+		complete_effect = {
+				
+		}
+		
+		}
+		
+	SAX_wolf_up = {
+
+		icon = PUM_decision
+		
+
+		available = {
+             always = no
+		}
+
+		visible = {
+		    has_country_flag = SAX_Marxism_election_flag
+			NOT = {
+		has_country_leader = { ruling_only = yes name = "Friedrich·wolf" }
+		has_country_leader = { ruling_only = yes name = "Theodor Liebknecht" }
+		}
+		}
+		
+		activation = {
+			has_country_flag = SAX_Marxism_election_flag
+			check_variable = { SAX.liebknecht > SAX.wolf }
+		}
+		fire_only_once = no
+		
+		days_mission_timeout = 20
+		is_good = yes
+		
+		
+		
+		cancel_trigger = {
+			always = no
+		}
+		
+		complete_effect = {
+		}
+		
+		selectable_mission = no
+		
+		
+		cancel_effect = {
+			
+		}
+		
+		
+		timeout_effect = {
+		add_to_variable = { 
+	    var = SAX.wolf
+	    value = 2
+         }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	SAX_liebknecht_up = {
+
+		icon = PUM_decision
+		
+
+		available = {
+             always = no
+		}
+
+		visible = {
+		    has_country_flag = SAX_Marxism_election_flag
+			NOT = {
+		has_country_leader = { ruling_only = yes name = "Friedrich·wolf" }
+		has_country_leader = { ruling_only = yes name = "Theodor Liebknecht" }
+		}
+		}
+		
+		activation = {
+			has_country_flag = SAX_Marxism_election_flag
+			check_variable = { SAX.wolf > SAX.liebknecht }
+		}
+		fire_only_once = no
+		
+		days_mission_timeout = 20
+		is_good = yes
+		
+		
+		
+		cancel_trigger = {
+			always = no
+		}
+		
+		complete_effect = {
+		}
+		
+		selectable_mission = no
+		
+		
+		cancel_effect = {
+			
+		}
+		
+		
+		timeout_effect = {
+		add_to_variable = { 
+	    var = SAX.liebknecht
+	    value = 2
+         }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
 			

@@ -7,6 +7,10 @@ recruit_character = SAX_Max_Leuthold
 recruit_character = SAX_Karl_Ludwig
 recruit_character = SAX_August_von_mackensen
 recruit_character = SAX_Gerd_von_Rundstedt
+recruit_character = SAX_Manfred
+recruit_character = SAX_Kruger
+recruit_character = SAX_Reinhardt
+recruit_character = SAX_gustav_adolf_scheel
 
 # Starting tech
 set_technology = {
@@ -173,11 +177,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Theodor Liebknecht"
+	name = "Kurt Eisner"
 	desc = "POLITICS_T_Liebknecht_DESC"
-	picture = "theodor.dds"
+	picture = "gfx/leaders/SAX/Kurt_Eisner.png"
 	expire = "1965.1.1"
-	ideology = revolutionism
+	ideology = leninism
 	traits = {
 	}
 }

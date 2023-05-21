@@ -419,9 +419,6 @@ focus_tree={
 		ideology = AUT_democratic
 		popularity = 0.15
 		}
-		set_politics = {
-        ruling_party = AUT_democratic
-		}
 		}
 	}
 	focus={
@@ -794,7 +791,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		BAY = {
+		BAV = {
 		country_event = { days = 10 id = SAX.12 }
 		}
 		}

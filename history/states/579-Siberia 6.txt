@@ -5,18 +5,18 @@ state = {
 	manpower = 45484
 	
 	state_category = pastoral
+	impassable = yes
 
 	history = {
-		victory_points = {
-			1684 1
-		}
+		#victory_points = {
+		#	1684 1
+		#}
 		owner = ARU
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = RUS
-		add_core_of = YAM
-		add_core_of = ARU
+        add_core_of = ARU
 	}
 
 	provinces = {

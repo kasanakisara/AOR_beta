@@ -17,10 +17,14 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = Heavy_howitzer
+			leads_to_tech = Railway_gun
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = rocket_artillery
+			research_cost_coeff = 1
+		}
+		
 		path = {
 			leads_to_tech = Trench_mortars
 			research_cost_coeff = 1
@@ -37,7 +41,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 0 }
+			position = { x = -3 y = 0 }
 		}
 
 		categories = {
@@ -91,11 +95,6 @@ technologies = {
 			soft_attack = 0.15
 		}
 
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
-		}
 
 		path = {
 			leads_to_tech = artillery1
@@ -108,7 +107,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 2 }
+			position = { x = -3 y = 2 }
 		}
 
 		categories = {
@@ -141,10 +140,6 @@ technologies = {
 			artillery_equipment_2
 		}
 
-		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
-		}
 
 		path = {
 			leads_to_tech = Anti_aircraft_guns
@@ -162,7 +157,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 4 }
+			position = { x = -3 y = 4 }
 		}
 
 		categories = {
@@ -228,7 +223,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 6 }
+			position = { x = -3 y = 6 }
 		}
 
 		categories = {
@@ -296,7 +291,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = -3 y = 8 }
 		}
 
 		categories = {
@@ -323,10 +318,6 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_3
 		}
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-		}
-
 		path = {
 			leads_to_tech = artillery5
 			research_cost_coeff = 1
@@ -338,7 +329,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = -3 y = 10 }
 		}
 
 		categories = {
@@ -392,18 +383,13 @@ technologies = {
 			soft_attack = 0.05
 		}
 
-		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
-		}
-
 		research_cost = 1
 
 		start_year = 1927
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = -3 y = 12 }
 		}
 
 		categories = {
@@ -472,7 +458,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 14 }
+			position = { x = 0 y = 14 }
 		}
 
 		ai_will_do = {
@@ -500,10 +486,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		enable_equipment_modules = {
-			tank_rocket_launcher
-			rocket_rails
-		}
 
 		research_cost = 2
 
@@ -530,13 +512,10 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = rocket_artillery2
+			leads_to_tech = Trench_mortars3
 			research_cost_coeff = 1
 		}
 
-		enable_equipment_modules = {
-			tank_rocket_launcher
-		}
 
 		research_cost = 2
 
@@ -556,7 +535,7 @@ technologies = {
 		}
 	}
 
-	rocket_artillery2 = {
+	Trench_mortars3 = {
 
 		rocket_artillery = {
 			soft_attack = 0.15
@@ -572,7 +551,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = rocket_artillery3
+			leads_to_tech = Trench_mortars4
 			research_cost_coeff = 1
 		}
 
@@ -599,7 +578,7 @@ technologies = {
 		}
 	}
 
-	rocket_artillery3 = {
+	Trench_mortars4 = {
 
 		rocket_artillery = {
 			soft_attack = 0.15
@@ -615,7 +594,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = rocket_artillery4
+			leads_to_tech = Trench_mortars5
 			research_cost_coeff = 1
 		}
 
@@ -642,23 +621,49 @@ technologies = {
 		}
 	}
 
-	Heavy_howitzer = {
+	Trench_mortars5 = {
+
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
+		}
+
+		research_cost = 1
+
+		start_year = 1925
+
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+
+		categories = {
+			rocketry
+		}
+	}
+	Railway_gun = {
 
 		enable_equipments = {
-			anti_air_equipment_1
+			railway_gun_equipment_1
 		}
-
-		enable_equipment_modules = {
-			ship_anti_air_2
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_heavy_cannon
-		}
-
-		enable_building = {
-			building = anti_air_building
-			level = 5
-		}
+		
 
 		research_cost = 1.5
 
@@ -666,7 +671,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 2 }
+			position = { x = -9 y = 2 }
 		}
 
 		ai_will_do = {
@@ -712,16 +717,14 @@ technologies = {
     Anti_aircraft_guns = {
 
 		enable_equipments = {
-			anti_air_equipment_2
+			anti_air_equipment_1
+		}
+		
+		enable_building = {
+			building = anti_air_building
+			level = 5
 		}
 
-		static_anti_air_damage_factor = 0.1
-
-		enable_equipment_modules = {
-			ship_anti_air_3
-			tank_auto_cannon_2
-			tank_anti_air_cannon_2
-		}
 
 		path = {
 			leads_to_tech = antiair3
@@ -734,7 +737,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 6 }
+			position = { x = -6 y = 6 }
 		}
 
 		ai_will_do = {
@@ -772,10 +775,8 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-		}
 
+		static_anti_air_damage_factor = 0.1
 		tech_air_damage_factor = -0.02
 
 		path = {
@@ -789,7 +790,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 8 }
+			position = { x = -6 y = 8 }
 		}
 
 		ai_will_do = {
@@ -827,7 +828,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.0
 
 		path = {
 			leads_to_tech = antiair5
@@ -840,7 +841,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 10 }
+			position = { x = -6 y = 10 }
 		}
 
 		ai_will_do = {
@@ -869,17 +870,10 @@ technologies = {
 	antiair5 = {
 
 		enable_equipments = {
-			anti_air_equipment_3
+			anti_air_equipment_2
 		}
 
 		static_anti_air_damage_factor = 0.1
-
-		enable_equipment_modules = {
-			ship_anti_air_4
-			tank_heavy_cannon_3
-			tank_anti_air_cannon_3
-			auto_loader
-		}
 
 		research_cost = 1
 
@@ -887,7 +881,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
+			position = { x = -6 y = 12 }
 		}
 
 		ai_will_do = {

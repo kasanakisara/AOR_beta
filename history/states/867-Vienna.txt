@@ -1,9 +1,7 @@
+
 state={
 	id=867
 	name="STATE_867"
-	manpower = 1522194
-	
-	state_category =large_city
 
 	history={
 		victory_points = {
@@ -12,16 +10,20 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 2
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 4
 			air_base = 2
+
 		}
+
 	}
 
 	provinces={
-		11666
+		11666 
 	}
-
-	local_supplies=0.0
+	manpower=1522194
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

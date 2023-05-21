@@ -10,7 +10,8 @@ state={
 		owner = MXS
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
+			arms_factory = 1
+			dockyard = 2
 			8057 = {
 				naval_base = 3
 			}

@@ -83,7 +83,7 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = CON_democratic
 	last_election = "1932.6.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -97,24 +97,8 @@ create_country_leader = {
 	desc = ""
 	picture = "Charls.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = {
 	}
 }
 
-
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = CON_democratic
-		last_election = "1936.6.7"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	recruit_character = PAN_juan_demostenes_arosemena
-	promote_character = PAN_juan_demostenes_arosemena
-	recruit_character = PAN_july_portocarrero
-	promote_character = PAN_july_portocarrero
-	retire_character = PAN_harmodio_arias_madrid
-	retire_character = PAN_bartolomé_sinibaldi
-}

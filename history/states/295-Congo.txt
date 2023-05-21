@@ -14,7 +14,9 @@ state={
 		owner = BEL
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 3
+			air_base = 1
+			arms_factory = 3
 			10968 = {
 				naval_base = 1
 			}

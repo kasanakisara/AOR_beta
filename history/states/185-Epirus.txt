@@ -24,10 +24,11 @@ state={
 		owner = GRE
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 3
 			9805 = {
-				naval_base = 1
+				naval_base = 3
 			}
 		}
 		add_core_of = GRE

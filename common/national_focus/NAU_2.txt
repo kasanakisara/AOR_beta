@@ -1,15 +1,12 @@
 focus_tree = {
 	id = NAU_FocusTree
 	country = {
-		factor = 4
-		base = 3
+		factor = 0
 		modifier = {
 			add = 10
 			tag = NAU
 		}
 	}
-	default = no
-
 	continuous_focus_position = { x = 1500  y = 2000 } 
 
 	focus = {

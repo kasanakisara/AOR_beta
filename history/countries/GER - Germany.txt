@@ -1,5 +1,14 @@
 ﻿capital = 840
 
+recruit_character = GER_Albrecht
+recruit_character = GER_Fernando_von_bock
+recruit_character = GER_Friedrich_Fromm
+recruit_character = GER_Heinrich_von_gosler
+recruit_character = GER_Hans_von_bessel
+recruit_character = GER_Hans_von_plaisen
+recruit_character = GER_Kurt_student
+recruit_character = GER_Erich_von_manstein
+recruit_character = GER_Werner_von_fridge
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

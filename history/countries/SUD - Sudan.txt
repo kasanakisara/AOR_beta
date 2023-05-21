@@ -74,14 +74,25 @@ recruit_character = SUD_aco2
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = CON_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 25
-	Fascism = 20
-	Marxism = 5
-	Authoritarianism = 50
+	CON_democratic = 75
+	ISL_democratic = 25
 }
+
+create_country_leader = {
+	name = "Alexander Knox Helm"
+	desc = "POLITICS_SUD_DESC"
+	picture = "SUD.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+
+set_cosmetic_tag = SUD_UK

@@ -1,5 +1,5 @@
 defined_text = {
-	name = the_second_leaders_neme
+	name = the_second_leaders_name
 	text = {
 		trigger = {
 			ROOT = {
@@ -16,5 +16,23 @@ defined_text = {
 			}
 		}
 		localisation_key = the_Premier_of_SOV
+	}
+
+	text = {
+		trigger = {
+			ROOT = {
+				tag = BEL 
+			}
+		}
+		localisation_key = the_king_of_bel
+	}
+
+	text = {
+		trigger = {
+			ROOT = {
+				tag = USA
+			}
+		}
+		localisation_key = Vice_President_of_USA
 	}
 }

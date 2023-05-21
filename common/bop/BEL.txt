@@ -1,0 +1,175 @@
+
+BEL_centralization_balance = {
+	initial_value = 0.35
+	left_side = BEL_Black_Independence
+	right_side = BEL_White_Returns_Home
+	decision_category = BEL_balance_of_power_category
+
+	### Neutral status
+	range = {
+		id = Equilibrium_situation
+		min = -0.10
+		max = 0.10
+		modifier = {
+		consumer_goods_factor = 0.05
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### LEFT
+	side = {
+		id = BEL_Black_Independence
+		icon = GFX_bop_BEL_left_side
+
+		range = {
+			id = Human_rights_needs
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_power_cost = 0.1
+				resistance_target = -0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = Free_access_to_premises
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_power_cost = 0.2
+				resistance_target = -0.2
+				war_support_factor = 0.05
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = Black_voters_and_military_officers
+			min = -0.9
+			max = -0.6
+			modifier = {
+				political_power_gain = 0.2
+				resistance_target = -0.3
+				command_power_gain = 0.1
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = Amendment_Bill
+			min = -1
+			max = -0.9
+			modifier = {
+				political_power_gain = 0.3
+				command_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+			on_activate = {
+			load_focus_tree = BEL_3_black
+			custom_effect_tooltip = BEL.8.tt
+			}
+		}
+	}
+
+	### RIGHT
+	side = {
+		id = BEL_White_Returns_Home
+		icon = GFX_bop_BEL_right_side
+
+		range = {
+			id =  Delicate_Balance
+			min = 0.1
+			max = 0.3
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = 0.01
+				stability_factor = -0.01
+			}
+			on_activate = {
+			country_event = { id = BEL.12  }
+			country_event = { days = 4 id = BEL.13  }
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = More_power_for_white_people
+			min = 0.3
+			max = 0.6
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.1
+			}
+			on_activate = {
+			country_event = { days = 7  id = BEL.14  }
+			country_event = { id = BEL.15  }			
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = More_White_MPs
+			min = 0.6
+			max = 0.9
+			modifier = {
+				political_power_factor = 0.1
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+				command_power_gain = 0.1
+			}
+			on_activate = {
+			country_event = { days = 2  id = BEL.16  }
+			country_event = { days = 4  id = BEL.17  }
+			country_event = { days = 6  id = BEL.18  }
+			country_event = { days = 8  id = BEL.19  }	
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = Keeping_European_tradition_alive
+			min = 0.9
+			max = 1
+			modifier = {
+				political_power_factor = 0.15
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+			}
+			on_activate = {
+			load_focus_tree = BEL_3_white
+			}
+			on_deactivate = {
+			
+			}
+		}
+	}
+}
+

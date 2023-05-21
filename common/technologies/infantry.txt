@@ -11,6 +11,7 @@ technologies = {
 	@1927 = 24
 	@1928 = 27
 	@1930 = 30
+	@1933 = 33
 
 
 	infantry_weapons = {
@@ -377,11 +378,54 @@ technologies = {
 			infantry_equipment_4
 		}	
 
+		path = {
+			leads_to_tech = Improved_assault_weapons_2
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2.5
 		start_year = 1930
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1930 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 0.8		
+
+
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+
+	Improved_assault_weapons_2 = {
+		
+
+		enable_equipments = {
+			infantry_equipment_5
+		}	
+
+		research_cost = 2.5
+		start_year = 1933
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1933 }
 		}
 
 		categories = {
@@ -844,8 +888,12 @@ technologies = {
 	Great_war_armored_vehicles = {
 
 		enable_subunits = {
-			EQUIPMENT_VEHICLE
+			armored_vehicles
 		}
+
+		enable_equipments = {
+			armored_vehicles
+		}	
 
 		path = {
 			leads_to_tech = Multi_person_armed_armored_vehicle
@@ -876,8 +924,8 @@ technologies = {
 	}
 	Field_motorcycles_with_cars = {
 		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE
+		enable_equipments = {
+			armored_vehicles_2
 		}
 
 		path = {

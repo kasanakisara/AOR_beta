@@ -37,3 +37,17 @@ SAX_broken_germany = {
 		has_country_flag = SAX_iron_and_blood
 	}
 }
+SAX_marxism_election = {
+	icon =  GFX_decision_category_generic_communism
+	priority = 100
+	scripted_gui = SAX_marxism_election
+	allowed = {
+		original_tag = SAX
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = SAX_Marxism_election_flag
+	}
+
+
+}

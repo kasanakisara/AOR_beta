@@ -4,7 +4,7 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-			stability_factor = 0.3
+			stability_factor = 0.15
 			}
 		}
 		SAX_nationalistic_speech = {
@@ -29,8 +29,7 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-		    conscription = 0.02
-			experience_gain_army = 0.18
+		    conscription = 0.005
 			}
 		}
 		SAX_terrorist_attack = {
@@ -50,16 +49,17 @@ ideas = {
 			modifier = {
 			stability_factor = 0.05
 			war_support_factor = 0.08
-			Fascism_drift = 0.05
+			justify_war_goal_time = -0.25
+			consumer_goods_factor = -0.05
 			}
 		}
 		SAX_red_guerilla = {
 		
 			allowed = { always = yes }
 			modifier = {
-		    conscription = 0.02
+		    conscription = 0.005
 			Marxism_drift = 0.1
-			experience_gain_army = 0.18
+			experience_gain_army = 0.06
 			}
 		}
 		SAX_for_welfare_of_the_workers = {
@@ -74,18 +74,16 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-			Marxism_drift = 0.1
-		    monthly_population = 0.6
-			industrial_capacity_factory = 0.08
-            production_speed_buildings_factor = 0.08
+		    monthly_population = 0.2
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
 			}
 		}
 		SAX_build_order = {
 		
 			allowed = { always = yes }
 			modifier = {
-			Marxism_drift = 0.05
-			stability_weekly = 0.01
+			stability_weekly = 0.025
 			political_power_gain = 0.25
 			}
 		}
@@ -93,38 +91,37 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-			Marxism_drift = 0.05
 			monthly_population = 0.2
-			political_power_gain = 0.25
 			research_speed_factor = 0.08
 			}
 		}
-		SAX_socialist_free_acadeny = {
+	   SAX_personality_cult = {
 		
 			allowed = { always = yes }
 			modifier = {
-			Marxism_drift = 0.05
-			monthly_population = 0.2
-			political_power_gain = 0.25
-			research_speed_factor = 0.08
+			political_power_cost = 0.25
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			army_org_factor = 0.05
+			attrition = -0.15
+			experience_loss_factor = 0.2
+			minimum_training_level = 0.25
 			}
 		}
 		SAX_saxony_spartacus_regiment = {
 		
 			allowed = { always = yes }
 			modifier = {
-			Marxism_drift = 0.05
 			monthly_population = 0.2
 			research_speed_factor = 0.08
-			industrial_capacity_factory = 0.07
-            production_speed_buildings_factor = 0.07
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
 			}
 		}
 		SAX_liberal_propaganda = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.15
 			research_speed_factor = 0.08
 			political_power_gain = 0.15
 			}
@@ -133,57 +130,52 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.1
-			political_power_factor = 0.25
+			political_power_factor = 0.08
 			}
 		}
 		SAX_freedom_of_belief = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.05
 			monthly_population = 0.2
-			research_speed_factor = 0.08
-			industrial_capacity_factory = 0.07
-            production_speed_buildings_factor = 0.07
+			research_speed_factor = 0.025
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
 			}
 		}
 		SAX_equality = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.15
 			monthly_population = 0.2
-			conscription = 0.01
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
+			conscription = 0.005
 			}
 		}
 		SAX_universal_love = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.1
 			monthly_population = 0.45
-			industrial_capacity_factory = 0.05
-            production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
 			}
 		}
 		SAX_be_youself = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.1
-			monthly_population = 0.45
-			industrial_capacity_factory = 0.05
-            production_speed_buildings_factor = 0.05
-			consumer_goods_factor = -0.05
+			stability_factor = 0.05
+			industrial_capacity_factory = 0.025
+            production_speed_buildings_factor = 0.025
 			}
 		}
 		SAX_radio_liberty = {
 			
 			allowed = { always = yes }
 			modifier = {
-				FRE_democratic_drift = 0.3
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.08
 				war_support_factor = 0.08
 				industrial_capacity_factory = 0.08
 			}
@@ -195,6 +187,17 @@ ideas = {
 			monthly_population = 0.45
 			industrial_capacity_factory = 0.05
             production_speed_buildings_factor = 0.05
+			}
+		}
+		SAX_pacify_the_masses = {
+		
+			allowed = { always = yes }
+			modifier = {
+			SOC_democratic_drift = 0.15
+			consumer_goods_factor = 0.05
+			monthly_population = 0.2
+			industrial_capacity_factory = 0.06
+            production_speed_buildings_factor = 0.06
 			}
 		}
 		SAX_socialist_democracy = {
@@ -211,7 +214,6 @@ ideas = {
 		
 			allowed = { always = yes }
 			modifier = {
-			FRE_democratic_drift = 0.15
 			monthly_population = 0.2
 			conscription = 0.01
 			}
@@ -231,22 +233,23 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			surrender_limit = 2
-			army_core_defence_factor = 0.15
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
 			industrial_capacity_factory = 0.05
             production_speed_buildings_factor = 0.05
-			production_speed_bunker_factor = 0.6
+			production_speed_bunker_factor = 0.8
 				}
 			}
 			SAX_staff = {
 		
 			allowed = { always = yes }
 			modifier = {
-			max_planning = 0.45
-			planning_speed = 0.25
-			army_org_factor = 0.12
-			experience_gain_army = 0.12
-			experience_gain_navy = 0.12
-			experience_gain_air = 0.12
+			max_planning = 0.15
+			planning_speed = 0.08
+			army_org_factor = 0.04
+			experience_gain_army = 0.06
+			experience_gain_navy = 0.06
+			experience_gain_air = 0.06
 				}
 			}
 			SAX_peripheral_threat = {
@@ -256,35 +259,35 @@ ideas = {
 			}
 			targeted_modifier = { 
 				tag = NAU
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.25
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.1
 				}
 				targeted_modifier = { 
 				tag = GER
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.25
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.1
 				}
 				targeted_modifier = { 
 				tag = BAV
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.25
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.1
 				}
 				targeted_modifier = { 
 				tag = SHL
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.25
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.1
 				}
 				targeted_modifier = { 
 				tag = SIL
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.25
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.1
 				}
 			}
 			SAX_carry_tradition = {
 			
 			allowed = { always = yes }
 			modifier = {
-				army_org_factor = 0.15
+				army_org_factor = 0.04
 				cavalry_attack_factor = 0.25
 				cavalry_defence_factor = 0.3
 			}
@@ -293,21 +296,21 @@ ideas = {
 			
 			allowed = { always = yes }
 			modifier = {
-				army_org_factor = 0.4
-				cavalry_attack_factor = 0.25
-				cavalry_defence_factor = 0.3
-				industrial_capacity_factory = 0.25
-            production_speed_buildings_factor = 0.5
+				army_org_factor = 0.08
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				industrial_capacity_factory = 0.3
+            production_speed_buildings_factor = 0.3
 			}
 		}
-		SAX_better_light_weapons = {
+		SAX_light_weapons_line = {
 			
 			allowed = { always = yes }
 			modifier = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
@@ -315,27 +318,62 @@ ideas = {
 			
 			allowed = { always = yes }
 			modifier = {
-				industrial_capacity_factory = 0.25
-            production_speed_buildings_factor = 0.3
-			production_factory_max_efficiency_factor = 0.4
-			}
-		}
-		SAX_rise_of_revanchism = {
-			
-			allowed = { always = yes }
-			modifier = {
-				war_support_factor = 0.15
-				political_power_gain = 0.8
+			industrial_capacity_factory = 0.05
+            production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.08
 			}
 		}
 		SAX_militar = {
 			
 			allowed = { always = yes }
 			modifier = {
-			experience_gain_army = 0.06
-			experience_gain_navy = 0.06
-			experience_gain_air = 0.06
-		     political_power_gain = 0.8
+		    political_power_cost = 0.45
+			}
+		}
+		SAX_german_defense_command = {
+			
+			allowed = { always = yes }
+			modifier = {
+			max_command_power = 100
+			command_power_gain_mult = 0.2
+			defensive_war_stability_factor = 0.45
+			}
+		}
+		SAX_german_armed_police = {
+			
+			allowed = { always = yes }
+			modifier = {
+			resistance_growth = -0.15
+			required_garrison = -0.15
+			experience_gain_factor = 0.08
+			}
+		}
+		SAX_student_union = {
+			
+			allowed = { always = yes }
+			modifier = {
+			research_speed_factor = 0.08
+			drift_defence_factor = 0.2
+			}
+		}
+		SAX_german_youth_league = {
+			
+			allowed = { always = yes }
+			modifier = {
+			conscription = 0.005
+			non_core_manpower = 0.05
+			}
+		}
+		SAX_punishment = {
+			
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -1
+			war_support_factor = -1
+			army_core_attack_factor = -1
+		    army_core_defence_factor = -1
+			army_org_factor = -1
+			conscription = -1
 			}
 		}
 		

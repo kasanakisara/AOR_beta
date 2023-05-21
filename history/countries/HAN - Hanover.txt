@@ -1,5 +1,12 @@
 ﻿capital = 59
 
+recruit_character = HAN_Alexander_Adolf_August_Karl_Singen
+recruit_character = HAN_Alexander_Von_Kruck
+recruit_character = HAN_August_Wilhelm_hayes
+recruit_character = HAN_Heinz_Wilhelm_Guderian
+recruit_character = HAN_Max_von_bohn
+recruit_character = HAN_Wilhelm_Keitel
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

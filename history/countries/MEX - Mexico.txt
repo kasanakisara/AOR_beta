@@ -1,6 +1,6 @@
 ﻿capital = 277
 
-#oob = "MEX_1936"
+#
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		#set_naval_#oob = "MEX_1936_naval_mtg"
@@ -58,43 +58,15 @@ if = {
 	}
 }
 
-recruit_character = MEX_lazaro_cardenas
-recruit_character = MEX_salvador_abascal
-recruit_character = MEX_adolfo_de_la_huerta
-recruit_character = MEX_dionisio_encina
-recruit_character = MEX_hernan_laborde
-recruit_character = MEX_heliodoro_charis
-recruit_character = MEX_luis_farell
-recruit_character = MEX_gildardo_magana
-recruit_character = MEX_manuel_perez_trevino
-recruit_character = MEX_abelardo_rodriguez
-recruit_character = MEX_manuel_avila_camacho
-recruit_character = MEX_othon_blanco
-recruit_character = MEX_heriberto_corona
-recruit_character = MEX_antonio_cardenas_rodriguez
-recruit_character = MEX_jesus_garza_siller
-recruit_character = MEX_gilberto_limon
-recruit_character = MEX_pablo_macias
-recruit_character = MEX_jose_gonzalo_escobar
-recruit_character = MEX_agustin_olachea
-recruit_character = MEX_leon_trotsky
-recruit_character = MEX_saturnino_cedillo
-recruit_character = MEX_hector_meixueiro
-recruit_character = MEX_matias_santos_ramos
-recruit_character = MEX_enrique_estrada
-recruit_character = MEX_jose_vasconcelos
-recruit_character = MEX_pablo_gonzalez
-recruit_character = MEX_bartolome_garcia_correa
-recruit_character = MEX_luis_montes_de_oca
-recruit_character = MEX_aaron_saenz
-recruit_character = MEX_vicente_lombardo
-recruit_character = MEX_eduardo_hay
-recruit_character = MEX_alberto_pani
-recruit_character = MEX_juan_andreu
-recruit_character = MEX_plutarco_calles
-recruit_character = MEX_francisco_mugica
-recruit_character = MEX_jesus_degollado_guizar
-recruit_character = MEX_valentin_campa
+recruit_character = MEX_Emiliano_Zapata
+recruit_character = MEX_Pancho_Villa
+recruit_character = MEX_Genovevo_De_La_O
+recruit_character = MEX_Alvaro_Obregon
+recruit_character = MEX_Pablo_Gonzalez_Garza
+recruit_character = MEX_Benjamin_Guilermo_Hill_Salido
+recruit_character = MEX_Antonio_Diaz_Soto_Y_Gama
+recruit_character = MEX_Ricrdo_Flores_Magon
+recruit_character = MEX_Lazaro_Gutierrez_de_lara
 
 set_country_flag = monroe_doctrine
 
@@ -107,11 +79,7 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	add_ideas = {
-		MEX_callistas
-		MEX_church_power_2
-		MEX_oil_concessions
-		MEX_politicised_army
-		MEX_cedillo_tension_2
+		
 	}
 }
 
@@ -241,18 +209,54 @@ if = {
 }
 
 set_politics = {
-	ruling_party = Authoritarianism
+	ruling_party = SOC_democratic
 	last_election = "1934.7.1"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 18
-	Fascism = 20
-	Marxism = 9
-	Authoritarianism = 53
+	SOC_democratic = 35
+	PAR_socialism = 30
+	AGR_socialism = 25
+	Anarcho = 10
 }
 
+create_country_leader = {
+	name = "Venustiano Carranza"
+	desc = ""
+	picture = "gfx/leaders/MEX/Venustiano_carranza.png"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Emiliano Zapata"
+	desc = ""
+	picture = "gfx/leaders/MEX/Emiliano_Zapata.png"
+	expire = "1965.1.1"
+	ideology = revoway
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alvaro Obregon"
+	desc = ""
+	picture = "gfx/leaders/MEX/Alvaro_Obregon_politic.png"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ricrdo Flores Magon"
+	desc = ""
+	picture = "gfx/leaders/MEX/Ricrdo_Fkores_Magon.png"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+	}
+}
 ### VARIANTS ###
 # 1936 Start #
 if = {

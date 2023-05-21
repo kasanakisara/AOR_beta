@@ -11,6 +11,7 @@ focus_tree={
 	default=no
 	focus={
 		id=First_Congress_of_Spartacus_League
+		icon = "GFX_goal_BAV_one_meting"
 		x=6
 		y=0
 		cost=1
@@ -26,6 +27,7 @@ focus_tree={
 	}
 	focus={
 		id=Restructuring_of_Spartacus_League
+		icon = "GFX_goal_BAV_li_play_chess"
 		x=6
 		y=1
 		prerequisite={focus=First_Congress_of_Spartacus_League}
@@ -42,6 +44,8 @@ focus_tree={
 	}
 	focus={
 		id=Formation_of_Soviet_Committee
+
+		icon = "GFX_goal_Formation_of_Soviet_Committee"
 		x=6
 		y=2
 		prerequisite={focus=Restructuring_of_Spartacus_League}
@@ -74,6 +78,7 @@ focus_tree={
 	}
 	focus={
 		id=Turning_the_tables_on_corrupt_bureaucrats
+		icon = "GFX_goal_KILL_zibenjia"
 		x=0
 		y=4
 		prerequisite={focus=Valuable_Lessons_from_Civil_War}
@@ -90,6 +95,7 @@ focus_tree={
 	}
 	focus={
 		id=Clearing_the_army_of_disloyalty
+		icon = "GFX_goal_Clearing_the_army_of_disloyalty"
 		x=3
 		y=4
 		prerequisite={focus=Valuable_Lessons_from_Civil_War}
@@ -106,6 +112,7 @@ focus_tree={
 	}
 	focus={
 		id=Correcting_traitors_within_party
+		icon = "GFX_goal_BAV_jiuchadangnei"
 		x=9
 		y=4
 		prerequisite={focus=Valuable_Lessons_from_Civil_War}
@@ -123,6 +130,7 @@ focus_tree={
 	}
 	focus={
 		id=Liberating_productivity_in_countryside
+		icon = "GFX_goal_Liberating_productivity_in_countryside"
 		x=12
 		y=4
 		prerequisite={focus=Valuable_Lessons_from_Civil_War}
@@ -139,6 +147,7 @@ focus_tree={
 	}
 	focus={
 		id=Reinforcing_ideological_guidance
+		icon = "GFX_goal_ysxt_zhidao"
 		x=9
 		y=5
 		prerequisite={focus=Correcting_traitors_within_party}
@@ -155,6 +164,7 @@ focus_tree={
 	}
 	focus={
 		id=Liquidation_of_old_aristocracy_and_landowners
+		icon = "GFX_goal_Liquidation_of_old_aristocracy_and_landowners"
 		x=12
 		y=5
 		prerequisite={focus=Liberating_productivity_in_countryside}
@@ -172,6 +182,7 @@ focus_tree={
 	}
 	focus={
 		id=Abandoning_backward_tactics
+		icon = "GFX_goal_Abandoning_backward_tactics"
 		x=3
 		y=5
 		prerequisite={focus=Clearing_the_army_of_disloyalty}
@@ -188,6 +199,7 @@ focus_tree={
 	}
 	focus={
 		id=Enhanced_political_audit
+		icon = "GFX_goal_Enhanced_political_audit"
 		x=0
 		y=5
 		prerequisite={focus=Turning_the_tables_on_corrupt_bureaucrats}
@@ -204,6 +216,7 @@ focus_tree={
 	}
 	focus={
 		id=Political_commissar_on_battlefield
+		icon = "GFX_goal_Political_commissar_on_battlefield"
 		x=3
 		y=6
 		prerequisite={focus=Abandoning_backward_tactics}
@@ -220,6 +233,7 @@ focus_tree={
 	}
 	focus={
 		id=New_government_new_blood
+		icon = "GFX_goal_New_government_new_blood"
 		x=0
 		y=6
 		prerequisite={focus=Enhanced_political_audit}
@@ -236,6 +250,7 @@ focus_tree={
 	}
 	focus={
 		id=Loyalty_to_ideology
+		icon = "GFX_goal_Loyalty_to_ideology"
 		x=9
 		y=6
 		prerequisite={focus=Reinforcing_ideological_guidance}
@@ -252,6 +267,7 @@ focus_tree={
 	}
 	focus={
 		id=Communalisation_of_the_countryside
+		icon = "GFX_goal_Communalisation_of_the_countryside"
 		x=12
 		y=6
 		prerequisite={focus=Liquidation_of_old_aristocracy_and_landowners}
