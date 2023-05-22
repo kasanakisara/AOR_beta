@@ -12,19 +12,16 @@ state={
 			infrastructure = 1
 			3691 = {
 				naval_base = 1
-
 			}
-
-			victory_points = {
-				1356 15
-			}
-			victory_points = {
-				7435 10
-			}
-			victory_points = {
-				7810 5
-			}
-
+		}
+		victory_points = {
+			1356 15
+		}
+		victory_points = {
+			7435 10
+		}
+		victory_points = {
+			7810 5
 		}
 		add_core_of = CAN
 		add_core_of = QBC
