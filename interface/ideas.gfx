@@ -6735,5 +6735,16 @@ spriteTypes = {
 		name = "GFX_idea_USA_Anglo_frech_enterprise"
 		texturefile = "gfx/interface/ideas/USA_Anglo_frech_enterprise.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_ORA_a_group_without_leader"
+		texturefile = "gfx/interface/ideas/ORA_a_group_without_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORA_Absent_CORA"
+		texturefile = "gfx/interface/ideas/ORA_Absent_CORA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORA_Spark"
+		texturefile = "gfx/interface/ideas/ORA_Spark.dds"
+	}
 }

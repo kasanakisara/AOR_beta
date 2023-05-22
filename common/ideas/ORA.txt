@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		ORA_a_group_without_leader = {
+			picture = GFX_idea_ORA_a_group_without_leader
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = -0.3
+			army_org_factor = -0.05
+			mobilization_speed = -0.05
+			planning_speed = -0.05
+			}
+		}
+		ORA_Absent_CORA = {
+			picture = GFX_idea_ORA_Absent_CORA
+			allowed = { always = yes }
+			modifier = {
+			}
+		}
+	    ORA_Spark = {
+			picture = GFX_idea_ORA_Spark
+			allowed = { always = yes }
+			modifier = {
+			army_defence_factor = 0.1
+			join_faction_tension = 2
+			surrender_limit = 0.2
+			}
+		}
+}
