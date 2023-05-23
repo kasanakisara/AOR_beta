@@ -4,15 +4,13 @@ state={
 	name="STATE_919"
 
 	history={
-		owner = UZB
+		owner = CHI
 		add_core_of = TAJ
 		add_core_of = CHI
 		add_core_of = TMS
 		buildings = {
 			infrastructure = 2
-
 		}
-
 	}
 
 	provinces={
