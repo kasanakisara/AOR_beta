@@ -87,6 +87,9 @@ set_popularities = {
 }
 
 add_ideas = {
+	ORA_a_group_without_leader
+	ORA_Absent_CORA
+	ORA_Spark
 }
 
 
@@ -94,7 +97,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Simón Radowitzky"	#Diego Abad de Santillán
 	desc = "POLITICS_FORA_DESC"
-	picture = "CORA.dds"	#FORA.DDS
+	picture = "FORA.dds"	#FORA.DDS
 	expire = "1965.1.1"
 	ideology = syndicalism
 	traits = {
