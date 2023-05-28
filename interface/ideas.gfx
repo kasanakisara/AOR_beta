@@ -6747,4 +6747,12 @@ spriteTypes = {
 		name = "GFX_idea_ORA_Spark"
 		texturefile = "gfx/interface/ideas/ORA_Spark.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ARG_paradise_of_disillusionment"
+		texturefile = "gfx/interface/ideas/ARG_paradise_of_disillusionment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_Farmers_support"
+		texturefile = "gfx/interface/ideas/ARG_Farmers_support.dds"
+	}
 }

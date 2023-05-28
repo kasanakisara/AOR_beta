@@ -1,12 +1,10 @@
 ﻿capital = 509
 
 #oob = "ARG_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		#set_naval_#oob = "ARG_1936_naval_mtg"
-	else = {
-		#set_naval_#oob = "ARG_1936_naval_legacy"
-	}
+
+add_ideas = {
+ARG_paradise_of_disillusionment
+ARG_Farmers_support
 }
 
 # Starting tech
@@ -188,7 +186,7 @@ add_civil_war_target = ORA
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = Absolutism
+		ruling_party = Authoritarianism
 		last_election = "1937.9.5"
 		election_frequency = 108
 		elections_allowed = yes
@@ -198,7 +196,7 @@ add_civil_war_target = ORA
 		CON_democratic = 5
 		Fascism = 5
 		Marxism = 12
-		Absolutism = 78
+		Authoritarianism = 78
 	}
 
 	recruit_character = ARG_roberto_maria_ortiz
