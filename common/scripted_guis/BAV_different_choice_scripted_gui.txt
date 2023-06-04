@@ -1,5 +1,4 @@
 scripted_gui = {
-
 	BAV_different_choice_gui = {
 		context_type = decision_category
 		window_name = "BAV_different_choice_scripted_gui"

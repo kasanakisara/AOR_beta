@@ -7,14 +7,6 @@ guiTypes = {
 			x = 0
 			y = 0
 		}
-		
-		#iconType = {
-		#	name = "BAV_different_choice_progressbar"
-		#	spriteType ="GFX_BAV_progressbar"
-		#	position = { x = 0 y = 0 }
-		#	Orientation = "UPPER_LEFT"
-		#	pdx_tooltip = BAV_different_choice_progressbar_tooltip
-		#}
 		instantTextBoxType = {
 			name = "BAV_different_choice_scripted_gui_title"
 			position = { x = -110 y = -110 }
