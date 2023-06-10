@@ -229,7 +229,7 @@ news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
 }
 
 news_event = { #1924希腊奥运会 - news_OLYMPICS.2
-	id = AOR.12
+	id = AOR_news.12
 	title = news_OLYMPICS.2.t
 	desc = news_OLYMPICS.2.d
 	picture = GFX_news_1924_Olympic_Games
@@ -285,10 +285,10 @@ news_event = { #1932法国奥运会 - news_OLYMPICS.4
 	}
 }
 
-news_event = { #博登辞职 - CAN.1
+news_event = { #重生委员会掌权（好像） - SAX.3
 	id = AOR_news.15
-	title = CAN.0.t
-	desc = CAN.0.d
+	title = SAX.3.t
+	desc = SAX.3.d
 	picture = GFX_news_event_001
 	
 	is_triggered_only = yes
@@ -297,15 +297,15 @@ news_event = { #博登辞职 - CAN.1
 	
 	
 	option = { 
-        name = CAN.0.a
+        name = SAX_3.a
 		
 	}
 }
 
 news_event = { ##魁北克独立 = can.26
 	id = AOR_news.16
-	title = CAN.26.t
-	desc = CAN.26.d
+	title = AOR_news.16.t
+	desc = AOR_news.16.d
 	picture = AOR_news.16.p
 
 	is_triggered_only = yes
@@ -317,29 +317,16 @@ news_event = { ##魁北克独立 = can.26
 	}
 }
 
-news_event = { #挪威 = 瑞典内战新闻 = SWE.1
+news_event = { #挪威-瑞典内战新闻 - SWE.1
     id = AOR_news.17
-    title = SWECW.4.t
-    desc = SWECW.4.d
+    title = SWE.destruction.t
+    desc = SWE.destruction.d
     is_triggered_only = yes
     hidden = no
     major = yes
 
     option = {
-        name = SWECW.4.a
-    }
-}
-
-news_event = { #大北欧联邦倡议新闻 - SWE.2
-    id = AOR_news.17 
-    title = SWECW.5.t
-    desc = SWECW.5.d
-    is_triggered_only = yes
-    hidden = no
-    major = yes
-
-    option = {
-        name = SWECW.5.a
+        name = SWE.destrucion.a
     }
 }
 

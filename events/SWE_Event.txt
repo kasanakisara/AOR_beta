@@ -1,0 +1,497 @@
+add_namespace = SWE
+add_namespace = SWE_Crisis
+
+country_event = {
+    #罢工
+    id = SWE.1
+    title = SWE.1.t
+    desc = SWE.1.d
+    trigger = {
+        tag = SWE
+        date > 1920.2.14
+    }
+    fire_only_once = yes
+    hidden = no 
+    
+    option = {
+        name = SWE.1.a
+        trigger = { tag = SWE }
+        add_timed_idea = {
+            idea = SWE_Protest
+            days = 90
+        }
+        ai_chance = {
+			base = 100 
+		}
+    }
+}
+
+country_event = {
+    #哈康之死
+	id = SWE.2
+	title = SWE.2.t
+	desc = SWE.2.d
+    trigger = {
+        tag = SWE
+        date > 1924.2.14
+    }
+    fire_only_once = yes
+    hidden = no 
+    
+    option = {
+        name = SWE.2.a
+        trigger = { tag = SWE }
+        ai_chance = {
+			base = 100 
+		}
+        custom_effect_tooltip = SWE_Hakoon_Death_tt
+        hidden_effect = {
+            kill_country_leader = yes
+            set_politics = { 
+                ruling_party = AUT_democratic
+                elections_allowed = "no"
+            }
+            set_country_leader_ideology = patriarch
+            set_popularities = {
+                AUT_democratic = 50
+                Marxism = 20
+                Absolutism = 30
+            }
+            create_country_leader = {
+                name = "Emergency Commitee"
+                ideology = patriarch
+                desc = "SWE_Emergency_Commitee_leaders_desc"
+                picture = "gfx/leaders/SWE/Emergency-Commitee.dds"
+                traits={}
+                expire="1965.1.1"
+            }
+            set_party_name = {
+                ideology = AUT_democratic
+                long_name = SWE_Regent_Emergency_Committee
+                name = SWE_Emergency_Commitee
+            }
+            load_focus_tree = SWE_Emergency
+            add_ideas = SWE_EmergencyCountry
+        }
+    }
+}
+
+country_event = {
+    #鲁普雷希特登基
+    id = SWE.3
+    title = SWE.3.t
+    desc = SWE.3.d
+    is_triggered_only = yes
+    hidden = no
+    
+    option = {
+        name = SWE.3.a
+        trigger = { tag = SWE}
+        retire_country_leader = yes
+        set_politics = { 
+			ruling_party = Absolutism
+			elections_allowed = "no"
+		}
+        set_country_leader_ideology = monarchism
+        hidden_effect = {
+            set_popularities = {
+                Marxism = 50
+                Absolutism = 50
+            }
+            load_focus_tree = SWE_Rupprecht
+        }
+        create_country_leader = {
+            name = "Rupprecht I"
+            ideology = monarchism
+            desc = "SWE_Rupprecht_desc"
+            picture = "gfx/leaders/SWE/Rupprecht-I.dds"
+            traits={}
+            expire="1965.1.1"
+        }
+        set_party_name = { 
+            ideology = Absolutism
+            long_name = SWE_Great_Kalma_and_His_Majesty_Rupprecht_I_s_Loyal_Party
+            name = SWE_Kingdom_Party
+        }
+        remove_ideas = SWE_EmergencyCountry
+    }
+}
+
+country_event = {
+    #瑞典爆炸-安纳其
+    #可以被认为是彩蛋，因为难以触发
+    id = SWE.7777
+    title = SWE.7777.t
+    desc = SWE.7777.d
+    is_triggered_only = yes
+    hidden = no
+    
+    option = {
+        name = SWE.7777.a
+        trigger = {tag = SWE}
+        hidden_effect = {
+            NAA = {
+                set_ruling_party = Anarcho
+                transfer_state = 110
+                transfer_state = 142
+                transfer_state = 140
+                add_core_of = 110
+                add_core_of = 142
+                add_core_of = 140
+                add_manpower = 10000
+                division_template = {
+					priority = 0
+					name = "Common Militia"
+					regiments = {
+                        infantry = { x = 0 y = 0 } 
+                        infantry = { x = 0 y = 1 } 
+                        infantry = { x = 1 y = 0 } 
+                        infantry = { x = 1 y = 1 } 
+                    }
+					support = {}
+				}
+                random_controlled_state = {
+                    limit = { is_capital = yes }
+                    create_unit = {
+                        division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+                        owner = PREV
+                        count = 1
+                    }
+                }
+                create_country_leader = {
+                    name = "Anarcho Committee"
+                    ideology = anarchism
+                    desc = "NAA_Anarcho_Committee_desc"
+                    picture = "gfx/leaders/NAA/ajanf-uodsx.dds"
+                    traits={}
+                    expire="1965.1.1"
+                }
+            } 
+            add_stability = -0.5
+            country_event = {
+                hours = 24
+                id = SWE.7778
+            }
+        }
+        custom_effect_tooltip = SWE_Anarcho_tt
+    }
+}
+
+country_event = {
+    #瑞典爆炸-北方雪地
+    id = SWE.7778
+    title = SWE.7778.t
+    desc = SWE.7778.d
+    is_triggered_only = yes
+    hidden = no
+    
+    option = {
+        name = SWE.7778.a
+        trigger = {tag = SWE}
+        hidden_effect = {
+            SRK = {
+                transfer_state = 143
+                transfer_state = 144
+                transfer_state = 38
+                transfer_state = 666
+                add_core_of = 143
+                add_core_of = 144
+                add_core_of = 38
+                add_core_of = 666
+                add_manpower = 10000
+                division_template = {
+					priority = 0
+					name = "Common Militia"
+					regiments = {
+                        infantry = { x = 0 y = 0 } 
+                        infantry = { x = 0 y = 1 } 
+                        infantry = { x = 1 y = 0 } 
+                        infantry = { x = 1 y = 1 } 
+                    }
+					support = {}
+				}
+                random_controlled_state = {
+                    limit = { is_capital = yes }
+                    create_unit = {
+                        division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+                        owner = PREV
+                        count = 1
+                    }
+                }
+                set_politics = {
+                    ruling_party = Absolutism
+                    last_election = "1924.1.1"
+                    elections_allowed = no
+
+                }
+                set_popularities = {
+                    Absolutism = 50
+                    Marxism = 50
+                }
+                create_country_leader = {
+                    name = "Carl Gustaf Emil Mannerheim"
+                    desc = "Mannerheim_desc"
+                    picture = ""
+                    expire = "1965.1.1"
+                    ideology = miliciagov
+                    traits = {}
+                }
+            }
+            country_event = {
+                hours = 24
+                id = SWE.7779
+            }
+        }
+        custom_effect_tooltip = SWE_Absolutism_tt
+    }
+}
+
+country_event = {
+    #瑞典爆炸-共产主义者
+    id = SWE.7779
+    title = SWE.Destruction.t
+    desc = SWE.Destruction.d
+    is_triggered_only = yes
+    hidden = no
+    
+    option = {
+        name = SWE.Destruction.a
+        trigger = {tag = SWE}
+        hidden_effect = {
+            kill_country_leader = yes
+            SCR = {
+                transfer_state = 124
+                transfer_state = 139
+                transfer_state = 141
+                add_core_of = 124
+                add_core_of = 139
+                add_core_of = 141
+                add_manpower = 10000
+                division_template = {
+					priority = 0
+					name = "Common Militia"
+					regiments = {
+                        infantry = { x = 0 y = 0 } 
+                        infantry = { x = 0 y = 1 } 
+                        infantry = { x = 1 y = 0 } 
+                        infantry = { x = 1 y = 1 } 
+                    }
+					support = {}
+				}
+                random_controlled_state = {
+                    limit = { is_capital = yes }
+                    create_unit = {
+                        division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+                        owner = PREV
+                        count = 1
+                    }
+                }
+                create_country_leader = {
+                    name = "Martin Tranme"
+                    desc = "Martin_Tranme_desc"
+                    picture = "gfx/leaders/SCR/Martin-Tranme.dds"
+                    expire = "1965.1.1"
+                    ideology = revolutionism
+                    traits = {}
+                }
+
+                declare_war_on = {
+                    target = NAA
+                    type = annex
+                }
+
+                declare_war_on = {
+                    target = SWE
+                    type = annex
+                }
+
+                declare_war_on = {
+                    target = SRK
+                    type = annex
+                }
+            }
+
+            NAA = {
+                declare_war_on = {
+                    target = SWE
+                    type = annex
+                }
+
+                declare_war_on = {
+                    target = SRK
+                    type = annex
+                }
+            }
+
+            SRK = {
+                declare_war_on = {
+                    target = SWE
+                    type = annex
+                }
+            }
+            news_event = AOR_news.17
+        }
+        custom_effect_tooltip = SWE_Destruction_tt
+    }
+}
+
+country_event = {
+    id = SWE_Crisis.1
+    title = SWE_Crisis.1.t
+    desc = SWE_Crisis.1.d
+    fire_only_once = yes
+    trigger = {
+        check_variable = { SWE_NationalUnity < 30 }
+    }
+    hidden = no
+    
+    option = {
+        name = SWE_Crisis.1.a
+        trigger = {
+            tag = SWE
+        }
+        hidden_effect = {
+            add_to_variable = { SWE_Sweden_Parliament_Attitude = -10 }
+            add_to_variable = { SWE_Stortinget_Attitude = -20 }
+            activate_mission = SWE_Confidience_Crisis
+        }
+        custom_effect_tooltip = SWE_Confidience_Crisis_1_tt
+    }
+}
+
+country_event = {
+    id = SWE_Crisis.2
+    title = SWE_Crisis.2.t
+    desc = SWE_Crisis.2.d
+    trigger = {
+        check_variable = { SWE_NationalUnity < 10 }
+    }
+    fire_only_once = yes
+    hidden = no
+    
+    option = {
+        name = SWE_Crisis.2.a
+        trigger = {
+            tag = SWE
+        }
+        hidden_effect = {
+            add_to_variable = { SWE_Sweden_Parliament_Attitude = -50 }
+            add_to_variable = { SWE_Stortinget_Attitude = 20 }
+            activate_mission = SWE_Confidience_Crisis
+            subtract_from_variable = { var:days_mission_timeout@SWE_Confidience_Crisis = 30 }
+        }
+        custom_effect_tooltip = SWE_Confidience_Crisis_normaly_tt
+    }
+}
+
+country_event = {
+    id = SWE_Crisis.3
+    title = SWE_Crisis.3.t
+    desc = SWE_Crisis.3.d
+    trigger = {
+        check_variable = { SWE_NationalUnity < -20 }
+    }
+    fire_only_once = yes
+    hidden = no
+    
+    option = {
+        name = SWE_Crisis.3.a
+        trigger = { tag = SWE }
+        hidden_effect = {
+            set_variable = { var:days_mission_timeout@SWE_Confidience_Crisis = 0 }
+        }
+        custom_effect_tooltip = SWE_Confidience_Crisis_Destruction_tt
+    }
+}
+
+country_event = {
+    id = SWE.520
+    title = SWE.520.t
+    desc = SWE.520.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.520.a
+        trigger = { tag = SWE }
+        hidden_effect = {
+            create_country_leader = {
+                name = "Jim Lawrence Hacker"
+                desc = "SWE_Jim_Lawrence_Hacker_desc"
+                picture = "gfx/leaders/SWE/Jim-Lawrence-Hacker.dds"
+                expire = "1965.1.1"
+                ideology = leninism
+                traits = {}
+            }
+            set_politics = { 
+                ruling_party = Marxism
+                elections_allowed = "no"
+            }
+            set_country_leader_ideology = leninism
+            set_popularities = {
+                Marxism = 100
+            }
+        }
+        custom_effect_tooltip = SWE_520_tt
+    }
+}
