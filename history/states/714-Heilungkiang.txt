@@ -1,3 +1,4 @@
+
 state={
 	id=714
 	name="STATE_714"
@@ -6,7 +7,6 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = MAN
-		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 
@@ -15,11 +15,10 @@ state={
 	}
 
 	provinces={
-		1693 1847 4809 7613 7767 7832 7848 7873 7897 10675 10698 12548 12618 
+		1847 4809 7613 7767 7873 7897 12618 
 	}
 	manpower=3694191
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }
