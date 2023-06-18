@@ -1,6 +1,6 @@
 ﻿capital = 44
 
-##oob = "ALB_1936"
+oob = "ALB_1936"
 
 set_technology = {
 	infantry_weapons = 1
@@ -8,7 +8,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-recruit_character = ALB_king_zog
+recruit_character = ALB_KING
 recruit_character = ALB_enver_hoxha
 recruit_character = ALB_xhemal_aranitasi
 recruit_character = ALB_eqrem_belishi

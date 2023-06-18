@@ -159,17 +159,7 @@ add_ideas = {
 	Victorious_Republic
 }
 
-
-create_country_leader = {
-	name = "Georges Clemenceau"
-	desc = "Georges_Clemenceau_DESC"
-	picture = "a13kg-93mrw.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
+recruit_character = FRA_TIGER
 
 #create_faction =  Paris_entente
 puppet = SYR

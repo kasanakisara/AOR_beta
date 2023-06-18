@@ -21,6 +21,13 @@ ideologies = {
 
 			committee = {
 			}
+
+			PRC_rev= {
+			}
+
+			L_militar= {
+			}
+
 		}
 		
 		dynamic_faction_names = {
@@ -73,6 +80,9 @@ ideologies = {
 
 
 			demsoc = {
+			}
+
+			datongism= {
 			}
 
 			}
@@ -180,6 +190,9 @@ ideologies = {
 
 			counway = {
 			}
+
+			rad_san = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -283,6 +296,9 @@ ideologies = {
 		liberalism = {
 		}
 
+		sanminism = {
+		}
+
 		}
 	
 	dynamic_faction_names = {
@@ -347,6 +363,15 @@ ideologies = {
 		}
 
 		oligarchy = {
+		}
+
+		uni_san = {
+		}
+
+		confuism = {
+		}
+
+		corporatism = {
 		}
 
 		}
@@ -464,6 +489,10 @@ ideologies = {
 		
 		surrenderism = {
 		}
+		new_san = {
+		}
+		lianshengism = {
+		}
 	}
 
 	dynamic_faction_names = {
@@ -574,6 +603,9 @@ ideologies = {
 		}
 
 		nationalsoc = {
+		}
+
+		wangism = {
 		}
 	}
 	

@@ -1,4 +1,4 @@
-﻿capital = 11
+﻿capital = 9340
 
 #oob = "LIT_1936"
 
@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Army Room Template.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = miliciagov
 	traits = {
 	}
 }

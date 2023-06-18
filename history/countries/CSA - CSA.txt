@@ -210,11 +210,11 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = GFX_portrait_William_Dudley_Pelley
+	name = "John Nance Garner IV"
+	desc = "POLITICS_John_Nance_Garner_IV_DESC"
+	picture = GFX_portrait_John_Nance_Garner_IV
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = conservatism
 	traits = {
 		
 	}

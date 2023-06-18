@@ -162,7 +162,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Joseph Wirth"
-	desc = ""
+	desc = "MEDIK_DESC"
 	picture = "anui3-zkq4j.dds"
 	expire = "1965.1.1"
 	ideology = liberalism

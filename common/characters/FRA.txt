@@ -1,0 +1,20 @@
+characters = {
+	FRA_TIGER={
+		name= "Georges Clemenceau"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Georges_Clemenceau.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "Georges_Clemenceau_DESC"
+			traits={ FRA_father_DE_victory
+				   FRA_iron_wrist
+				   FRA_WAR_BIG_WHEEL }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

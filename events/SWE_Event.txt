@@ -357,36 +357,36 @@ country_event = {
 
                 declare_war_on = {
                     target = NAA
-                    type = annex
+                    type = annex_everything
                 }
 
                 declare_war_on = {
                     target = SWE
-                    type = annex
+                    type = annex_everything
                 }
 
                 declare_war_on = {
                     target = SRK
-                    type = annex
+                    type = annex_everything
                 }
             }
 
             NAA = {
                 declare_war_on = {
                     target = SWE
-                    type = annex
+                    type = annex_everything
                 }
 
                 declare_war_on = {
                     target = SRK
-                    type = annex
+                    type = annex_everything
                 }
             }
 
             SRK = {
                 declare_war_on = {
                     target = SWE
-                    type = annex
+                    type = annex_everything
                 }
             }
             news_event = AOR_news.17

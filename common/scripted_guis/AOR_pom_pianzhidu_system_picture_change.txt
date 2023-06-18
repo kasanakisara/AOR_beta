@@ -1,0 +1,85 @@
+defined_text = {
+	name = pianzhidu_progress_picture
+	
+	text = {
+		 trigger = {check_variable = { pianzhidu_progress > 0 } check_variable = { pianzhidu_progress < 26 }}
+		 localization_key = GFX_pianzhidu_progress_1
+	 }
+	 
+	text = {
+		trigger = {check_variable = { pianzhidu_progress > 25 } check_variable = { pianzhidu_progress < 51 }}
+		 localization_key = GFX_pianzhidu_progress_2
+	 }
+	 
+	text = {
+		trigger = {check_variable = { pianzhidu_progress > 50 } check_variable = { pianzhidu_progress < 76 }}
+		 localization_key = GFX_pianzhidu_progress_3
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress > 75 } check_variable = { pianzhidu_progress < 101 }}
+		 localization_key = GFX_pianzhidu_progress_4
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress = 0 }}
+		 localization_key = GFX_pianzhidu_progress_5
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress < 0 } check_variable = { pianzhidu_progress < -26 }}
+		 localization_key = GFX_pianzhidu_progress_6
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress < -25 } check_variable = { pianzhidu_progress < -51 }}
+		 localization_key = GFX_pianzhidu_progress_7
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress < -50 } check_variable = { pianzhidu_progress < -76 }}
+		 localization_key = GFX_pianzhidu_progress_8
+	 }
+	text = {
+		trigger = {check_variable = { pianzhidu_progress < -75 } check_variable = { pianzhidu_progress < -101 }}
+		 localization_key = GFX_pianzhidu_progress_9
+	}
+}
+###########################################文字##################################################################################################
+defined_text = {
+	name = pianzhidu_progress_text
+
+	 text = {
+		trigger = {check_variable = { pianzhidu_progress > 0 } check_variable = { pianzhidu_progress < 26 }}
+		localization_key = zhongli
+	}
+	
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress > 25 } check_variable = { pianzhidu_progress < 51 }}
+		localization_key = zantong
+	}
+	
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress > 50 } check_variable = { pianzhidu_progress < 76 }}
+		localization_key = zhichi
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress > 75 } check_variable = { pianzhidu_progress < 101 }}
+		localization_key = zhongcheng
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress = 0 }}
+		localization_key = wu
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress < 0 } check_variable = { pianzhidu_progress < -26 }}
+		localization_key = qianze
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress < -25 } check_variable = { pianzhidu_progress < -51 }}
+		localization_key = fandui
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress < -50 } check_variable = { pianzhidu_progress < -76 }}
+		localization_key = shiwei
+	}
+   text = {
+	   trigger = {check_variable = { pianzhidu_progress < -75 } check_variable = { pianzhidu_progress < -101 }}
+		localization_key = geming
+	}
+}

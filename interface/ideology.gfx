@@ -110,8 +110,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_"
-		textureFile = "gfx/interface/ideologies/.dds"
+		name = "GFX_ideology_miliciagov"
+		textureFile = "gfx/interface/ideologies/miliciagov.dds"
 	}
 	
 	spriteType = {
@@ -125,7 +125,346 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_chenism"
+		textureFile = "gfx/interface/ideologies/chenism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_councilism"
+		textureFile = "gfx/interface/ideologies/councilism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_counway"
+		textureFile = "gfx/interface/ideologies/counway.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_demsoc"
+		textureFile = "gfx/interface/ideologies/demsoc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ISL_democratic_group"
+		textureFile = "gfx/interface/ideologies/ISL_democratic_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_liaoism"
+		textureFile = "gfx/interface/ideologies/liaoism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_liberacion"
+		textureFile = "gfx/interface/ideologies/liberacion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_limited"
+		textureFile = "gfx/interface/ideologies/limited.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_luxemburgism"
+		textureFile = "gfx/interface/ideologies/luxemburgism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_meliorism"
+		textureFile = "gfx/interface/ideologies/meliorism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_mysticism"
+		textureFile = "gfx/interface/ideologies/mysticism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_old"
+		textureFile = "gfx/interface/ideologies/old.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_oligarchy"
+		textureFile = "gfx/interface/ideologies/oligarchy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PanAfricanism"
+		textureFile = "gfx/interface/ideologies/PanAfricanism.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_ideology_patriarch"
+		textureFile = "gfx/interface/ideologies/patriarch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PRC_rev"
+		textureFile = "gfx/interface/ideologies/PRC_rev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_revoway"
+		textureFile = "gfx/interface/ideologies/revoway.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_sunism"
+		textureFile = "gfx/interface/ideologies/sunism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_surrenderism"
+		textureFile = "gfx/interface/ideologies/surrenderism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_troopism"
+		textureFile = "gfx/interface/ideologies/troopism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_unionism"
+		textureFile = "gfx/interface/ideologies/unionism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_wangism"
+		textureFile = "gfx/interface/ideologies/wangism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_committee"
+		textureFile = "gfx/interface/ideologies/committee.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_"
 		textureFile = "gfx/interface/ideologies/.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_"
+		textureFile = "gfx/interface/ideologies/.dds"
+	}
+
+
+
+
 	

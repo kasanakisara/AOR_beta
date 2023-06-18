@@ -1,5 +1,7 @@
 capital = 278
 
+#oob = "ORA_AOR"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

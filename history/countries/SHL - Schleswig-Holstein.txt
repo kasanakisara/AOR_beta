@@ -139,10 +139,10 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Anton Pannekoek"
-	desc = ""
+	desc = "SHL_DESC"
 	picture = "a6s61-29ewe.dds"
 	expire = "1965.1.1"
-	ideology = revolutionism
+	ideology = committee
 	traits = {
 	}
 }

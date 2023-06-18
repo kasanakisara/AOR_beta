@@ -204,56 +204,22 @@ if = {
 }
 
 set_politics = {
-	ruling_party = SOC_democratic
+	ruling_party = Absolutism
 	last_election = "1915.3.31"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	SOC_democratic = 25
-	Marxism = 31
-	Absolutism = 44
+	SOC_democratic = 14
+	REL_socialism = 12
+	CON_democratic = 4
+	FRE_democratic = 16
+	Absolutism = 30
+	AGR_socialism = 24
 }
 
-create_country_leader = {
-	name = "Mihály Károlyi"
-	desc = ""
-	picture = "76n5m-q6ug2.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Horthy Miklós"
-	desc = "HUN_HM_DESC"
-	picture = "Portrait_Hungary_Miklos_Horthy.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Horthy Miklós"
-	desc = "HUN_HM_DESC"
-	picture = "Portrait_Hungary_Miklos_Horthy.dds"
-	expire = "1965.1.1"
-	ideology = monarchism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kun Bela"
-	desc = ""
-	picture = "u5y8h-oeo7o.dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
-	traits = {
-	}
-}
+recruit_character = HUN_istvan
+recruit_character = HUN_Mike
 
 add_ideas = {
 	HUN_Intricate_ethnic_composition
