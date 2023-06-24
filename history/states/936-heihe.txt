@@ -1,21 +1,26 @@
+
 state={
 	id=936
 	name="STATE_936"
-	manpower = 30000
 
-	state_category = pastoral
-
-	history = {
+	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = CHI
+		victory_points = {
+			10675 5 
+		}
+
 	}
 
 	provinces={
-		1693 1732 7832 7848 10368 10675 10698 12548 
+		1693 1732 7832 7848 10368 10541 10675 10698 12537 12548 
 	}
+	manpower=30000
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }
