@@ -1,21 +1,17 @@
+
 state={
 	id=750
 	name="STATE_750"
-	provinces={
-		10822 4896 7201 7434 12086 10006 7279 7101
-	}
-	manpower=8000000
-	buildings_max_level_factor=1.000
-	state_category = town
+
 	history={
 		owner = CHI
 		add_core_of = CHI
-		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 2
+
 		}
 		victory_points = {
 			7101 10 
@@ -23,7 +19,7 @@ state={
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
-				infrastructure = 3 #was: 6
+				infrastructure = 3
 				air_base = 3
 				arms_factory = 1
 
@@ -33,5 +29,11 @@ state={
 
 	}
 
-	local_supplies=0.0 
+	provinces={
+		4480 4896 7279 7665 10006 10335 12017 
+	}
+	manpower=8000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

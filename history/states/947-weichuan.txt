@@ -1,14 +1,14 @@
 state={
-	id=938
-	name="STATE_938"
+	id=947
+	name="STATE_947"
 	provinces={
-		1175 4096 9955 11914 12027 
+		531 1933 7911 12882 
 	}
 	history={
-		owner = JAP
+		owner = CHI
 		add_core_of = CHI
 	}
-	manpower=0
+	manpower=200000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

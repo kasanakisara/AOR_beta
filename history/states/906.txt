@@ -1,25 +1,26 @@
+
 state={
 	id=906
 	name="STATE_906"
-	manpower = 200000
-	
-	state_category =rural
 
 	history={
 		owner = CHI
 		add_core_of = CHI
-		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
 			6999 20 
 		}
+
 	}
 
 	provinces={
-		4431 6999 1893 4141 9939
+		1893 2030 4041 4141 4431 5048 7948 8026 10144 10304 10822 11865 
 	}
-
-	local_supplies=0.0
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,3 +1,4 @@
+
 state={
 	id=603
 	name="STATE_603"
@@ -5,11 +6,9 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		#add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			#arms_factory = 2
 
 		}
 		victory_points = {
@@ -19,11 +18,10 @@ state={
 	}
 
 	provinces={
-		1884 4504 4192
+		1884 4504 10763 
 	}
 	manpower=7543200
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=3.0 
+	local_supplies=3.000
 }

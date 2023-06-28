@@ -1,3 +1,4 @@
+
 state={
 	id=325
 	name="STATE_325"
@@ -9,7 +10,6 @@ state={
 		owner = CHI
 		add_core_of = YUN
 		add_core_of = CHI
-		#add_core_of = PRC
 		victory_points = {
 			1319 10 
 		}
@@ -23,7 +23,8 @@ state={
 			if = {
 				limit = {
 					NOT = {
-						has_dlc = "Waking the Tiger" 
+						has_dlc = Waking
+						the Tiger 
 					}
 
 				}
@@ -39,11 +40,10 @@ state={
 	}
 
 	provinces={
-		10819 5072 12841 1114 1172 1196 1319 1383 1522 1653 4501 7446 7606 8023 10346 10776 12262 12282 
+		1319 4192 7446 7606 8023 10346 10819 11972 
 	}
 	manpower=10994500
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=3.0 
+	local_supplies=3.000
 }
