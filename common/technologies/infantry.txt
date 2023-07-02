@@ -991,7 +991,7 @@ technologies = {
 	Mobile_artillery_armored_vehicles = {
 		
 		enable_subunits = {
-			EQUIPMENT_VEHICLE
+			EQUIPMENT_VEHICLE_2
 		}
 
 		path = {
@@ -1024,7 +1024,7 @@ technologies = {
 	Anti_tank_armored_vehicles = {
 		
 		enable_subunits = {
-			EQUIPMENT_VEHICLE
+			EQUIPMENT_VEHICLE_3
 		}
 
 		research_cost = 1.5
@@ -1053,7 +1053,7 @@ technologies = {
 	Military_transport_trucks = {
 		
 		enable_subunits = {
-			EQUIPMENT_VEHICLE
+			EQUIPMENT_VEHICLE_4
 		}
 
 		path = {
@@ -1086,7 +1086,7 @@ technologies = {
 	Armored_transporters = {
 		
 		enable_subunits = {
-			EQUIPMENT_VEHICLE
+			EQUIPMENT_VEHICLE_5
 		}
 
 		research_cost = 1.5
