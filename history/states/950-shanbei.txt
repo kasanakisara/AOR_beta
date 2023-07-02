@@ -1,7 +1,6 @@
-
 state={
-	id=598
-	name="STATE_598"
+	id=950
+	name="STATE_950"
 
 	history={
 		owner = CHI
@@ -10,18 +9,14 @@ state={
 			infrastructure = 2
 
 		}
-		1938.10.25 = {
-			controller = JAP
-
-		}
 
 	}
 
 	provinces={
-		1029 7025 7200 9956 11973 12055 
+		1084 4089 10102 10119 12045 12093 
 	}
-	manpower=23669300
+	manpower=321124
+	state_category=city
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
 }

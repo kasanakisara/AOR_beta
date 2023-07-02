@@ -2,26 +2,22 @@
 state={
 	id=607
 	name="STATE_607"
-	manpower=34289800
-	
-	state_category = town
-	
-	buildings_max_level_factor=1.000
 
 	history={
 		owner = CHI
 		add_core_of = CHI
-		#add_core_of = PRC
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 2
+
 		}
-		1938.10.25 = {		
+		1938.10.25 = {
 			buildings = {
 				industrial_complex = 4
-				infrastructure = 4 #was: 8
+				infrastructure = 4
 				air_base = 2
 				arms_factory = 2
+
 			}
 			JAP = {
 				set_province_controller = 1004
@@ -38,13 +34,18 @@ state={
 				set_province_controller = 9995
 				set_province_controller = 10098
 				set_province_controller = 11931
-			} 			
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		7074 4144 4606 1139 4114
+		1139 4058 4114 4144 4606 7074 7129 11933 
 	}
-
-	local_supplies=3.0 
+	manpower=34289800
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=3.000
 }
