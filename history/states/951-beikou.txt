@@ -1,23 +1,22 @@
-
 state={
-	id=878
-	name="STATE_878"
+	id=951
+	name="STATE_951"
 
 	history={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+			arms_factory = 1
 
 		}
 
 	}
 
 	provinces={
-		900 1052 4137 9969 11822 11944 11980 11996 12043 
+		1137 6828 12026 
 	}
-	manpower=200000
+	manpower=0
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }
