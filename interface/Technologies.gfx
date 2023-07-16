@@ -135,4 +135,20 @@ spriteTypes = {
 	    texturefile = "gfx/interface/technologies/Free_sniper3.dds"
     }
 
+
+	#火炮图标
+	SpriteType = {
+		name = "GFX_Old_howitzers_medium"
+		texturefile = "gfx/interface/technologies/Old_howitzers.dds"
+	}		
+	SpriteType = {
+		name = "GFX_artillery1_medium"
+		texturefile = "gfx/interface/technologies/artillery1.dds"
+	}			
+    SpriteType = {
+    	name = "GFX_artillery2_medium"
+	    texturefile = "gfx/interface/technologies/artillery2.dds"
+    }
+
+
 }
