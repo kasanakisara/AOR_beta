@@ -107,7 +107,7 @@ sub_units = {
 
 		manpower = 500
 		need = {
-			paijipao_0 = 50 #造价相对较高
+			paijipao_0 = 20 #造价相对较高
 		}
 		
 		max_strength = 5           #略微有少量血量，属于拥有战斗能力的步兵营
@@ -159,6 +159,81 @@ sub_units = {
 		}
 	}
 
+	Mortarbrigade_motorized = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		
+		priority = 500
+		ai_priority = 500
+		active = yes
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 1 #战宽1
+
+		manpower = 500
+		need = {
+			paijipao_0 = 40 #造价相对较高
+			motorized_equipment = 36
+		}
+		
+		max_strength = 2           #略微有少量血量，属于拥有战斗能力的步兵营
+		max_organisation = 20      #组织度比重炮高不少，可以独立执行前敌作战任务
+		default_morale = 0.2       #士气与炮兵一样
+		training_time = 100        #炮兵训练时间都很长
+		weight = 0.5               #运输重量
+		supply_consumption = 0.3  #补给消耗与重炮低
+
+		defense = 0.1
+		breakthrough = 0.1
+
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = 0.1
+		}
+
+		mountain = {
+			movement = 0.1
+		}
+
+		jungle = {
+			attack = -0.15
+			movement = -0.1
+		}
+
+		marsh = {
+			attack = -0.15
+			movement = -0.1
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = 0.1
+		}
+	}
 
 	#迫击炮支援连
 	Mortarsupport = {
