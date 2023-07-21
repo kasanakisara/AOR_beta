@@ -138,6 +138,18 @@ spriteTypes = {
 
 	#火炮图标
 	SpriteType = {
+		name = "GFX_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/interwar_artillery.dds"
+	}	
+	SpriteType = {
+		name = "GFX_artillery4_medium"
+		texturefile = "gfx/interface/technologies/artillery4.dds"
+	}	
+	SpriteType = {
+		name = "GFX_artillery3_medium"
+		texturefile = "gfx/interface/technologies/artillery3.dds"
+	}	
+	SpriteType = {
 		name = "GFX_Old_howitzers_medium"
 		texturefile = "gfx/interface/technologies/Old_howitzers.dds"
 	}		

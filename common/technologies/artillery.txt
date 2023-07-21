@@ -140,12 +140,6 @@ technologies = {
 			artillery_equipment_2
 		}
 
-
-		path = {
-			leads_to_tech = Anti_aircraft_guns
-			research_cost_coeff = 1
-		}
-
 		path = {
 			leads_to_tech = artillery2
 			research_cost_coeff = 1
@@ -282,6 +276,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = artillery4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antiair3
 			research_cost_coeff = 1
 		}
 
@@ -713,55 +711,6 @@ technologies = {
 	}
 
 ###################################################################
-
-    Anti_aircraft_guns = {
-
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-		
-		enable_building = {
-			building = anti_air_building
-			level = 5
-		}
-
-
-		path = {
-			leads_to_tech = antiair3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-
-		start_year = 1921
-
-		folder = {
-			name = artillery_folder
-			position = { x = -6 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
-			}
-		}
-
-		categories = {
-			artillery
-			cat_anti_air
-		}
-	}
 
 	antiair3 = {
 
