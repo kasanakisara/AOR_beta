@@ -1179,7 +1179,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "反装甲火炮"
+					text = "防空武器"
 					maxWidth = 290
 					maxHeight = 62
 					format = center
@@ -1201,11 +1201,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_air"
-					position = { x = -220 y = 440  }
+					position = { x = -220 y = 590  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "防空武器"
+					text = "反装甲火炮"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
