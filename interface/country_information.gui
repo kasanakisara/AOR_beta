@@ -6,58 +6,107 @@ guiTypes = {
 		Orientation = CENTER
 		moveable = yes
 
+		
+		buttonType = {
+			name ="country_information_button_1" #按钮1
+			position = { x = 70 y = -52 }
+			quadTextureSprite ="GFX_country_information_button_1" 
+			clicksound = click_default
+			Orientation = CENTER_UP
+			scale = 0.25
+		}
+		instantTextBoxType = { 
+			name ="country_information_button_TEXT" #文本框
+			font = "hoi_36header"
+			position = { x = 105 y = -40 }
+			text = "国家信息"
+			Orientation = CENTER_UP
+			scrollbartype = standardtext_slider
+			format = left
+			maxWidth = 550
+			maxHeight = 410
+		}
+		buttonType = {
+			name ="country_information_button_2" #按钮2
+			position = { x = 270 y = -52 }
+			quadTextureSprite ="GFX_country_information_button_2" 
+			clicksound = click_default
+			Orientation = CENTER_UP
+			scale = 0.25
+		}
+		instantTextBoxType = { 
+			name ="country_information_button_TEXT_2" #文本框
+			font = "hoi_36header"
+			position = { x = 300 y = -40 }
+			text = "国家路线"
+			Orientation = CENTER_UP
+			scrollbartype = standardtext_slider
+			format = left
+			maxWidth = 550
+			maxHeight = 410
+		}
+		buttonType = {
+			name ="country_information_button_3" #按钮3
+			position = { x = 450 y = -52 }
+			quadTextureSprite ="GFX_country_information_button_3" 
+			clicksound = click_default
+			Orientation = CENTER_UP
+			scale = 0.25
+		}
+		instantTextBoxType = { 
+			name ="country_information_button_TEXT_3" #文本框
+			font = "hoi_36header"
+			position = { x = 480 y = -40 }
+			text = "世界背景"
+			Orientation = CENTER_UP
+			scrollbartype = standardtext_slider
+			format = left
+			maxWidth = 550
+			maxHeight = 410
+		}
+		buttonType = {
+			name ="country_information_button_4" #按钮4
+			position = { x = 700 y = -52 }
+			quadTextureSprite ="GFX_country_information_button_4" 
+			clicksound = click_default
+			Orientation = CENTER_UP
+			scale = 0.25
+		}
+		instantTextBoxType = { 
+		name ="country_information_button_TEXT_4" #文本框
+		font = "hoi_36header"
+		position = { x = 710 y = -40 }
+		text = "关于制作"
+		Orientation = CENTER_UP
+		scrollbartype = standardtext_slider
+		format = left
+		maxWidth = 550
+		maxHeight = 410
+	}
 		iconType = {
 			name ="country_information_bg" #背景 
 			spriteType = "GFX_country_information_background"
 			Orientation = CENTER_UP
 			
-			scale = 2.5
-		}
-		buttonType = {
-			name ="country_information_button_1" #按钮1
-			position = { x = 0 y = -52 }
-			quadTextureSprite ="GFX_country_information_button_1" 
-			clicksound = click_default
-			Orientation = CENTER_UP
-		}
-		buttonType = {
-			name ="country_information_button_2" #按钮2
-			position = { x = 190 y = -52 }
-			quadTextureSprite ="GFX_country_information_button_2" 
-			clicksound = click_default
-			Orientation = CENTER_UP
-		}
-		buttonType = {
-			name ="country_information_button_3" #按钮3
-			position = { x = 380 y = -52 }
-			quadTextureSprite ="GFX_country_information_button_3" 
-			clicksound = click_default
-			Orientation = CENTER_UP
-		}
-		buttonType = {
-			name ="country_information_button_4" #按钮4
-			position = { x = 570 y = -52 }
-			quadTextureSprite ="GFX_country_information_button_4" 
-			clicksound = click_default
-			Orientation = CENTER_UP
+			scale = 1.5
 		}
 		iconType = {
 			name ="country_information_LOGO" #LOGO
 			spriteType = "GFX_country_information_LOGO"
 			Orientation = CENTER_UP
-			position = { x = 595 y = 10 }
-			scale = 0.75
+			position = { x = 690 y = 10 }
+			scale = 0.25
 		}
 		iconType = {
 			name ="picture" #图片
 			spriteType = "GFX_country_information_picture"
 			Orientation = CENTER_UP
-			position = { x = 595 y = 150 }
+			position = { x = 720 y = 190 }
 			scale = 0.92
 		}
 		buttonType = {
 			name ="close_button" #关闭按钮
-			position = { x = 595 y = 405 }
+			position = { x = 750 y = 480 }
 			quadTextureSprite = "GFX_closebutton" #先凑活使着，重置美工再改
 			pdx_tooltip = close_bt_desc
 			clicksound = click_close
@@ -68,7 +117,7 @@ guiTypes = {
 			name = "country_information_TEXT_window"
 			Orientation = CENTER_UP
 			size = { width =550 height = 410 }
-			position = { x = 15 y = 15 }
+			position = { x = 95 y = 45 }
 			clipping = yes
 			instantTextBoxType = { 
 				name ="country_information_TEXT" #文本框

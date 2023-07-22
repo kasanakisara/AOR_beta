@@ -1,11 +1,13 @@
 spriteTypes = {	
-	##第二领导人头像，窗口图标
+	##英国下议院的anything
 	spriteType = { 
-		name = event_button_minimize
-		texturefile = "gfx/interface/AOR_guis/event_button_minimize.png"
+		name = ENG_hounse_of_commons_MP  ##席位，议席
+		texturefile = "gfx/interface/AOR_guis/ENG House of Commons.dds"
+		noOfFrames = 7
 	}
+
 	spriteType = {
-		name = the_king_of_bel
-		texturefile = "gfx/interface/AOR_guis/a3c5e-ni5gi.dds"
+		name = ENG_hounse_of_commons_button  ##按钮（待定）
+		texturefile = "gfx/interface/AOR_guis/event_button_minimize.png"
 	}
 }

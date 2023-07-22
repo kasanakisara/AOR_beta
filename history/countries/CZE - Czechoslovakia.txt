@@ -30,27 +30,8 @@ set_technology = {
 	basic_train = 1
 }
 
-create_country_leader = {
-	name = "Tomáš Garrigue Masaryk"
-	desc = ""
-	picture = "Portrait_Czech_Tomas_Masaryk.dds"
-	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = ""
-	picture = "CLIMENT.dds"
-	expire = "1953.3.1"
-	ideology = revolutionism
-	traits = {
-		
-	}
-}
+recruit_character = CZE_FATHER
+recruit_character = CZE_BOY
 
 add_ideas = {
 	CZE_Large_industrial_area

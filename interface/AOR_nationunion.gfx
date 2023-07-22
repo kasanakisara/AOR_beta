@@ -1,0 +1,46 @@
+spriteTypes = {
+	#ui_parts
+	spriteType = {
+		name = "GFX_AOR_nu_flag_ENG"
+		texturefile = "gfx/AOR_nationunion/flag_ENG.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_flag_FRA"
+		texturefile = "gfx/AOR_nationunion/flag_FRA.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_flag_USA"
+		texturefile = "gfx/AOR_nationunion/flag_USA.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_flag_SOV"
+		texturefile = "gfx/AOR_nationunion/flag_SOV.png"
+	}	
+
+	spriteType = {
+		name = "GFX_AOR_nu_icon_ENG"
+		texturefile = "gfx/AOR_nationunion/icon_ENG.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_icon_FRA"
+		texturefile = "gfx/AOR_nationunion/icon_FRA.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_icon_USA"
+		texturefile = "gfx/AOR_nationunion/icon_USA.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_nu_icon_SOV"
+		texturefile = "gfx/AOR_nationunion/icon_SOV.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_country_frame_1"
+		texturefile = "gfx/AOR_nationunion/country_frame_1.dds"
+	}	
+	spriteType = {
+		name = "GFX_country_frame_2"
+		texturefile = "gfx/AOR_nationunion/country_frame_2.dds"
+	}	
+
+}

@@ -1,0 +1,88 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ITA_fascism_progressbar"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 520 }
+
+		iconType = {
+			name = "ITA_progressbar"
+			spriteType = "GFX_ITA_progressbar_mussolini"
+			position = { x= 30	 y = 5 }
+		}
+		
+		iconType = {
+			name = "ITA_progressbar_2"
+			spriteType = "GFX_ITA_progressbar_opposition"
+			position = { x= 250	 y = 5 }
+		}
+
+
+	}
+	containerWindowType = {
+		name = "ITA_people_parliment"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 220 }
+		
+		iconType = {
+			name = "ITA_NFP_pie"
+			spriteType = "GFX_ITA_NFP_pie"
+			position = { x= 50	 y = 20 }
+		}
+		iconType = {
+			name = "ITA_Aut_pie"
+			spriteType = "GFX_ITA_Aut_pie"
+			position = { x= 50	 y = 20 }
+		}
+		
+		iconType = {
+			name = "ITA_Soc_pie"
+			spriteType = "GFX_ITA_Soc_pie"
+			position = { x= 50	 y = 20 }
+		}
+		
+		iconType = {
+			name = "ITA_Fre_pie"
+			spriteType = "GFX_ITA_Fre_pie"
+			position = { x= 50	 y = 20 }
+		}
+		
+		iconType = {
+			name = "ITA_Con_pie"
+			spriteType = "GFX_ITA_Con_pie"
+			position = { x= 50	 y = 20 }
+		}
+         instantTextBoxType = {
+			name ="ITA_CON_value"
+			position = { x = 180 y = 20 }
+			font = "hoi_24header"
+			text = "人民党席位-[?ITA.CON_support]"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="ITA_FRE_value"
+			position = { x = 180 y = 50 }
+			font = "hoi_24header"
+			text = "激进党席位-[?ITA.Fre_support]"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="ITA_SOC_value"
+			position = { x = 180 y = 80 }
+			font = "hoi_24header"
+			text = "社会党席位-[?ITA.Soc_support]"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="ITA_democraic_value"
+			position = { x = 180 y = 110 }
+			font = "hoi_24header"
+			text = "民主联盟总和-[?ITA_democratic_support]"
+			format = center
+			maxHeight = 24
+		}
+	}
+}

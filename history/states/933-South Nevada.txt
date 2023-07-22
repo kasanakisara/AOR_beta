@@ -7,13 +7,12 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		victory_points = {
-			4799
-		5}
+		#victory_points = {
+			##
+		#}
 		add_core_of = MXS
         add_core_of = USA
 	}
-	
 
 	provinces={
 		4799 12425

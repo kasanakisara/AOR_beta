@@ -20,8 +20,6 @@ state={
 		owner = SIL
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			
 		}
 		add_core_of = GER
 		add_core_of = SIL

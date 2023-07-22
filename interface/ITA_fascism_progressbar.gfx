@@ -1,0 +1,69 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_ITA_progressbar_mussolini"
+		textureFile1 = "gfx/interface/bop/ITA_fascism_bop_line.png"
+		textureFile2 = "gfx/interface/bop/ITA_fascism_bop_background.png"
+		size = { x = 75 y = 499 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+        alwaystransparent = yes
+		steps = 250
+		
+	}
+	progressbartype = {
+		name = "GFX_ITA_progressbar_opposition"
+		textureFile1 = "gfx/interface/bop/ITA_fascism_bop_line_2.png"
+		textureFile2 = "gfx/interface/bop/ITA_fascism_bop_background.png"
+		size = { x = 75 y = 499 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+        alwaystransparent = yes
+		steps = 250
+		
+	}
+	progressbartype = {
+		name = "GFX_ITA_Con_pie"
+		textureFile1 = "gfx/interface/bop/ITA_Con_pie.png"
+		textureFile2 = "gfx/interface/bop/ITA_empty_pie.png"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+		alwaystransparent = yes
+		steps = 100
+	}
+	progressbartype = {
+		name = "GFX_ITA_Fre_pie"
+		textureFile1 = "gfx/interface/bop/ITA_Fre_pie.png"
+		textureFile2 = "gfx/interface/bop/ITA_empty_pie.png"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+		alwaystransparent = yes
+		steps = 100
+	}
+	progressbartype = {
+		name = "GFX_ITA_Soc_pie"
+		textureFile1 = "gfx/interface/bop/ITA_Soc_pie.png"
+		textureFile2 = "gfx/interface/bop/ITA_empty_pie.png"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+		alwaystransparent = yes
+		steps = 100
+	}
+	progressbartype = {
+		name = "GFX_ITA_Aut_pie"
+		textureFile1 = "gfx/interface/bop/ITA_Aut_pie.png"
+		textureFile2 = "gfx/interface/bop/ITA_empty_pie.png"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+		alwaystransparent = yes
+		steps = 100
+	}
+	progressbartype = {
+		name = "GFX_ITA_NFP_pie"
+		textureFile1 = "gfx/interface/bop/ITA_NFP_pie.png"
+		textureFile2 = "gfx/interface/bop/ITA_empty_pie.png"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+		alwaystransparent = yes
+		steps = 100
+	}
+}

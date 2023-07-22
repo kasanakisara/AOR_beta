@@ -96,12 +96,80 @@ leader_traits = {
 	}
 	MXS_out_of_favor = {
 		random = no
-		stability_factor = -0.1
-		war_support_factor = -0.05
+		stability_factor = 0.05
+		political_power_factor = 0.15
 	}
 	MXS_puppet_emperor = {
 		random = no
-		political_power_factor = -0.15
-		stability_factor = -0.05
+		stability_factor = -0.2
+		opinion_gain_monthly_factor = 0.5
+		FRE_democratic_acceptance = 100
 	}
+	MXS_Caudillo = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.1
+		army_morale_factor = 0.05
+		research_speed_factor = -0.05
+		drift_defence_factor = 0.5
+		opinion_gain_monthly_factor = 0.5
+	}
+	MXS_nationalist_emperor = {
+		random = no
+		war_support_factor = 0.05
+		army_core_attack_factor = 0.05
+	    army_core_defence_factor = 0.1
+	}
+	MXS_brutality_king = {
+		random = no
+		stability_factor = -0.1
+		drift_defence_factor = 0.5
+	}
+	MXS_divine_leaders = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.05
+	}
+	ITA_Roma_heir = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.15
+		war_support_factor = 0.05
+	}
+	ITA_Great_Duce = {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+	    army_core_defence_factor = 0.05
+	}
+	ITA_Great_holy_duce = {
+		random = no
+		stability_factor = 0.1
+		non_core_manpower = 0.025
+	}
+	ITA_heroes_of_italy = {
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+	}
+	ITA_futurism_pioneer = {
+		random = no
+		war_support_factor = 0.1
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.1
+		army_speed_factor = 0.1
+	}
+	ITA_noble_king = {
+		random = no
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		}
 }

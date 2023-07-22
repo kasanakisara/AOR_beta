@@ -120,4 +120,31 @@ music = {
 		}
 	}	
 }
+music = {
+	song = "Do_you_hear_the_people_sing"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Internationale"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "song_of_the_east_guerrilla"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
 

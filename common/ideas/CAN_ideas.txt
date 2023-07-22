@@ -1,5 +1,83 @@
 ideas = {
 	country = {
+	CAN_depression_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		CAN_depression_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+		CAN_depression_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		CAN_depression_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
 	CAN_conscription_crisis_AOR  = {
 			allowed = { 
 			always = yes
@@ -114,7 +192,7 @@ ideas = {
 			consumer_goods_factor = 0.05
 			}
 		}
-		CAN_set_grain_commission = {
+		CAN_Grain_trade_board = {
 		
 			allowed = { 
 			always = yes
@@ -126,24 +204,14 @@ ideas = {
 			monthly_population = 0.8
 			}
 		}
-		CAN_cut_government_spending = {
+		CAN_Federal_grain_company = {
 		
 			allowed = { 
 			always = yes
 		}
 			modifier = {
-			political_power_cost = 0.05
-			consumer_goods_factor = -0.05
 			global_building_slots_factor = 0.15
-			}
-		}
-		CAN_federal_police = {
-			
-			allowed = { always = yes }
-			modifier = {
-			resistance_growth = -0.15
-			resistance_target = -0.05
-			experience_gain_factor = 0.08
+			monthly_population = 0.8
 			}
 		}
 		CAN_delegate_senate  = {
@@ -510,6 +578,72 @@ ideas = {
 			modifier = {
 			stability_factor = 0.10
 			war_support_factor = 0.05
+			}
+		}
+		#魁北克
+		QBC_people_war = {
+		
+			allowed = { always = yes }
+			modifier = {
+			war_support_factor = 0.2
+			war_stability_factor = 0.5
+		    mobilization_speed = 0.5
+			acclimatization_cold_climate_gain_factor = 0.8
+			attrition = -0.2
+			equipment_capture = 1
+			}
+			targeted_modifier = { 
+				tag = ENG
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+				}
+			targeted_modifier = { 
+				tag = CAN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = NFL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = SAF
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = RAJ
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = EGY
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = SUD
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = AST
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+				targeted_modifier = { 
+				tag = NZL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+				}
+			}
+			QBC_france_support = {
+		
+			allowed = { always = yes }
+			modifier = {
+		    weekly_manpower = 500
+			stability_factor = -0.05
 			}
 		}
 	}

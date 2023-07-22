@@ -54,3 +54,19 @@ music = {
 	file = "AOR_soundtrack/A_Better_world.ogg"
 	volume = 0.65
 }
+music = {
+	name = "Do_you_hear_the_people_sing"
+	file = "AOR_soundtrack/Do_you_hear_the_people_sing.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Internationale"
+	file = "AOR_soundtrack/Internationale.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_of_the_east_guerrilla"
+	file = "AOR_soundtrack/song_of_the_east_guerrilla.ogg"
+	volume = 0.65
+}
+

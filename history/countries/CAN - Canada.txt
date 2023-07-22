@@ -51,7 +51,7 @@ set_war_support = 0.1
 create_country_leader = {
 	name = "William Lyon Mackenzie King"
 	desc = ""
-	picture = "aq6i4-zelog.dds"
+	picture = "gfx/leaders/CAN/mackenzie_king.png"
 	expire = "1953.3.1"
 	ideology = liberalism
 	traits = { CAN_prime_minister_charge }
@@ -163,7 +163,7 @@ if = {
 	set_cosmetic_tag = CAN_ALY
 }
 
-	add_ideas = CAN_great_depression_1
+	add_ideas = CAN_depression_1
 	add_ideas = CAN_conscription_crisis_AOR
 	add_ideas = CAN_Unrest_in_manitoba
 	add_ideas = CAN_war_money

@@ -185,7 +185,7 @@ focus_tree = {
 	focus = {
 		id = CAN_provisional_government
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6.00
 		x = 11
 		y = 0
         available = {
@@ -193,91 +193,235 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CAN_set_grain_commission
+		id = CAN_Cut_government_spending
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = CAN_provisional_government
-		}
-		x = 10
-		y = 1
-         completion_reward = {
-			add_timed_idea = { idea = CAN_set_grain_commission days = 730 }
-		}
-	}
-	focus = {
-		id = CAN_strengthen_con_party
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = CAN_cut_government_spending
-		}
-		prerequisite = {
-			focus = CAN_set_grain_commission
-		}
-		mutually_exclusive = {
-			focus = CAN_Ensure_soc_party
-		}
-		x = 10
-		y = 2
-        completion_reward = {
-		add_stability = 0.02
-		set_country_flag = Meighen_centalization_of_power
-		}
-	} 
-	focus = {
-		id = CAN_cut_government_spending
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = CAN_provisional_government
-		}
-		x = 12
-		y = 1 
-        completion_reward = {
-			add_timed_idea = { idea = CAN_cut_government_spending days = 730 }
-		}
-	}
-	focus = {
-		id = CAN_Ensure_soc_party
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = CAN_cut_government_spending
-		}
-		prerequisite = {
-			focus = CAN_set_grain_commission
-		}
-		mutually_exclusive = {
-			focus = CAN_strengthen_con_party
-		}
-		x = 12
-		y = 2
-        completion_reward = {
-		add_stability = 0.02
-		}
-	}
-	focus = {
-		id = CAN_federal_police
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = CAN_Ensure_soc_party
-			focus = CAN_strengthen_con_party
 		}
 		x = 9
-		y = 3
-        completion_reward = {
-			add_timed_idea = { idea = CAN_federal_police days = 730 }
+		y = 1 
+		completion_reward = {
+        if = {
+	    limit = {
+		has_idea = CAN_depression_1
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_1
+					add_idea = CAN_depression_2
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_2 
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_2
+					add_idea = CAN_depression_3
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_3
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_3
+					add_idea = CAN_depression_4
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_4
+	}
+	remove_ideas = CAN_depression_4
+}
+}
+	}
+	focus = {
+		id = CAN_reise_taxes
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Cut_government_spending
+		}
+		x = 9
+		y = 2
+completion_reward = {
+        if = {
+	    limit = {
+		has_idea = CAN_depression_1
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_1
+					add_idea = CAN_depression_2
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_2 
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_2
+					add_idea = CAN_depression_3
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_3
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_3
+					add_idea = CAN_depression_4
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_4
+	}
+	remove_ideas = CAN_depression_4
+}
+}
+	}
+	focus = {
+		id = CAN_entente_trade_act
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_provisional_government
+		}
+		x = 11
+		y = 1
+completion_reward = {
+add_ideas = free_trade
+add_offsite_building = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes }
+		add_offsite_building = {
+		type = arms_factory
+		level = 1
+		instant_build = yes }
+        if = {
+	    limit = {
+		has_idea = CAN_depression_1
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_1
+					add_idea = CAN_depression_2
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_2 
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_2
+					add_idea = CAN_depression_3
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_3
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_3
+					add_idea = CAN_depression_4
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_4
+	}
+	remove_ideas = CAN_depression_4
+}
+}
+	}
+	focus = {
+		id = CAN_tariff_and_internal_trade_act
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_entente_trade_act
+		}
+		x = 11
+		y = 2
+completion_reward = {
+        if = {
+	    limit = {
+		has_idea = CAN_depression_1
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_1
+					add_idea = CAN_depression_2
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_2 
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_2
+					add_idea = CAN_depression_3
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_3
+	}
+	swap_ideas = {
+					remove_idea = CAN_depression_3
+					add_idea = CAN_depression_4
+				}
+}
+else_if = {
+	    limit = {
+		has_idea = CAN_depression_4
+	}
+	remove_ideas = CAN_depression_4
+}
+}
+	}
+	focus = {
+		id = CAN_Grain_trade_board
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_provisional_government
+		}
+		x = 13
+		y = 1  
+         completion_reward = {
+		add_ideas = CAN_Grain_trade_board
+		}
+	}     
+	focus = {
+		id = CAN_Federal_grain_company
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_Grain_trade_board
+		}
+		x = 13
+		y = 2
+         completion_reward = {
+		swap_ideas = {
+					remove_idea = CAN_Grain_trade_board
+					add_idea = CAN_Federal_grain_company
+				}
 		}
 	}
 	focus = {
-		id = CAN_auti_japan_politic
+		id = CAN_anti_japan_diplomacy
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
-			focus = CAN_strengthen_con_party
-			focus = CAN_Ensure_soc_party
+			focus = CAN_tariff_and_internal_trade_act
+		}
+		prerequisite = {
+			focus = CAN_reise_taxes
+		}
+		prerequisite = {
+			focus = CAN_Federal_grain_company
 		}
 		x = 11
 		y = 3
@@ -296,36 +440,50 @@ focus_tree = {
 		country_event = { id = CAN.18}
 		   }
 		}
-	}
+	}   
 	focus = {
-		id = CAN_intelligence_department
+		id = CAN_reform_party
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
-			focus = CAN_Ensure_soc_party
-			focus = CAN_strengthen_con_party
+			focus = CAN_anti_japan_diplomacy
+		}
+		mutually_exclusive = {
+			focus = CAN_maintain_the_status_quo
 		}
 		x = 13
-		y = 3
+		y = 4
         completion_reward = {
-		create_intelligence_agency = yes
+		add_stability = 0.02
+		set_country_flag = Meighen_centalization_of_power
+		}
+	}
+	focus = {
+		id = CAN_maintain_the_status_quo
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = CAN_anti_japan_diplomacy
+		}
+		mutually_exclusive = {
+			focus = CAN_reform_party
+		}
+		x = 9
+		y = 4
+        completion_reward = {
+		add_stability = 0.02
 		}
 	}
 	focus = {
 		id = CAN_1921_election
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
-			focus = CAN_federal_police
-		}
-		prerequisite = {
-			focus = CAN_auti_japan_politic
-		}
-		prerequisite = {
-			focus = CAN_intelligence_department
+			focus = CAN_maintain_the_status_quo
+			focus = CAN_reform_party
 		}
 		x = 11
-		y = 4
+		y = 5
         completion_reward={
 		country_event = { id = CAN.1}
 		}

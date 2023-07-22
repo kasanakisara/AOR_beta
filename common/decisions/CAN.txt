@@ -88,6 +88,7 @@ CAN_rebellion_up = {
 		}
 		
 		activation = {
+		owns_state = 466
 			check_variable = { 61 > CAN.unity }
 			has_country_flag = CAN_french_crisis
 		}
@@ -175,6 +176,7 @@ if = {
 		}
 		
 		activation = {
+		owns_state = 466
 			has_country_flag = CAN_french_crisis
 		}
 		fire_only_once = no

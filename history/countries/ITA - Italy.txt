@@ -1,30 +1,59 @@
 ﻿capital = 2
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "ITA_1936"
+set_variable = { 
+	    var = ITA.CON_support
+	    value = 5
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "ITA_1936_nsb"
+set_variable = { 
+	    var = ITA.Fre_support
+	    value = 10
 }
+set_variable = { 
+	    var = ITA.Soc_support
+	    value = 5
+}
+set_variable = { 
+	    var = ITA.NFP_support
+	    value = 20
+}
+set_variable = { 
+	    var = ITA.Aut_support
+	    value = 60
+}
+
+ITA_people_parliment = yes
+ITA_set_demoratic_support = yes
+
+recruit_character = ITA_Prince_Emanuele_Filiberto
+recruit_character = ITA_Emilio_De_Bono
+recruit_character = ITA_Armando_Diaz
+recruit_character = ITA_Luigi_Cadorna
+recruit_character = ITA_Guglielmo_Pecori_Giraldi
+recruit_character = ITA_Gaetano_Giardino
+recruit_character = ITA_Rodolfo_Graziani
+recruit_character = ITA_Giovanni_Messe
+recruit_character = ITA_Enrico_Caviglia
+recruit_character = ITA_Ugo_Cavallero
+recruit_character = ITA_Vittorio_Emanuele_III
+recruit_character = ITA_Michele_Bianchi
+recruit_character = ITA_Cesare_Maria_De_Vecchi
+recruit_character = ITA_Italo_Balbo
+recruit_character = ITA_Francesco_Saverio_Nitti
+
+set_oob = "ITA_1919_oob"
 
 starting_train_buffer = 1.5
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
+set_stability = 0.45
+set_war_support = 0.5
 add_ideas = {
 	Dark_Heart_of_empire
+	ITA_Blackshirts_threat
+	ITA_democratic_opposition
+	ITA_employment_difficulties
+	ITA_Southern_issues
 }
-
-
 
 # Starting tech
 set_technology = {
@@ -117,7 +146,6 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 
@@ -132,50 +160,68 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 22
-	Fascism = 2
-	Marxism = 2
-	Absolutism = 74
+	FRE_democratic = 10
+	Fascism = 15
+	Marxism = 3
+	Absolutism = 72
 }
 
 create_country_leader = {
 	name = "Vittorio Emanuele III"
 	desc = "V_E_DESC"
-	picture = auxp8-ocdf0.dds			
+	picture = "gfx/leaders/ITA/Vittorio_Emanuele_III.png"			
 	expire = "1965.1.1"
 	ideology = monarchism
 	traits = {
-
+ }
 }
 
 create_country_leader = {
-	name = "Gabriele d'Annunzio"
+	name = "Giovanni Amendola"
 	desc = "ITA_G_A_DESC"
-	picture = a9jdt-a5218.dds			
+	picture = "gfx/leaders/ITA/Giovanni_Amendola.png"	
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = liberalism
 	traits = {
-
+ }
+}
+create_country_leader = {
+	name = "Luigi Sturzo"
+	desc = "ITA_L_S_DESC"
+	picture = "gfx/leaders/ITA/Luigi_Sturzo.png"	
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+ }
+}
+create_country_leader = {
+	name = "Ivanoe Bonomi"
+	desc = "ITA_I_B_DESC"
+	picture = "gfx/leaders/ITA/Ivanoe_Bonomi.png"	
+	expire = "1965.1.1"
+	ideology = meliorism
+	traits = {
+ }
 }
 
 create_country_leader = {
 	name = "Benito Mussolini"
 	desc = "ITA_B_M_DESC"
-	picture = au9ln-ug6w5.dds			
+	picture = "gfx/leaders/ITA/Benito_Mussolini.png"	
 	expire = "1965.1.1"
 	ideology = fascio
 	traits = {
-
+ }
 }
 
 create_country_leader = {
 	name = "Gramsci Antonio"
 	desc = "ITA_G_A_DESC"
-	picture = Gramsci Antonio.dds			
+	picture = "gfx/leaders/ITA/Gramsci_Antonio.png"	
 	expire = "1965.1.1"
-	ideology = fascio
+	ideology = revolutionism
 	traits = {
-
+ }
 }
 
 
@@ -757,8 +803,4 @@ if = {
 			icon = "GFX_ITA_basic_medium_tank_medium"
 		}
 	}
-}
-
-add_ideas = {
-	Dark_Heart_of_empire
 }

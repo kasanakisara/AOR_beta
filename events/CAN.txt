@@ -32,7 +32,6 @@ country_event = { days = 15 id = AOR_news.5}
 	title = CAN.1.t
 	desc = CAN.1.d
 	picture = GFX_report_event_german_speech
-	
 	is_triggered_only = yes
 	
 	option = { 
@@ -107,7 +106,7 @@ country_event = { id = AOR_news.6}
 	desc = ""
 	picture = gfx/leaders/CAN/Arthur_Meighen.png
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = patriarch
 	traits = {  }
 }
 		country_event = { id = AOR_news.6}
@@ -534,29 +533,7 @@ country_event = {
 		
        }
 }
-country_event = {
-	id = CAN.19
-	title = CAN.19.t
-	desc = CAN.19.d
-	picture = GFX_report_event_german_speech
-	
-	fire_only_once = yes
-	
-	trigger = {
-	date > 1921.7.1
-	tag = CAN
-	}
-	
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = { 
-        name = CAN.19.a
-		remove_ideas = CAN_great_depression_1
-		}
-    }
+
 	country_event = {
 	id = CAN.20
 	title = CAN.20.t
