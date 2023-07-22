@@ -1,0 +1,2987 @@
+focus_tree = {
+	id = ITA_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 55 y = 3800 }
+	#政治动荡线
+	focus = {
+		id = ITA_winner_of_dailure
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 9
+		y = 0
+        completion_reward={
+		country_event = { id = ITA.2 }
+		}
+	}
+	focus = {
+		id = ITA_expanding_democratic_opposition
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_winner_of_dailure
+		}
+		mutually_exclusive = {
+			focus = ITA_strengthening_royal_autocracy
+			focus = ITA_follow_the_duce
+		}
+		x = 3
+		y = 1
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_democratic_opposition
+					add_idea = ITA_democratic_opposition_2
+				}
+		}
+	}
+	focus = {
+		id = ITA_question_goverment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_expanding_democratic_opposition
+		}
+		x = 3
+		y = 2
+        completion_reward={
+		add_timed_idea = { idea = ITA_stability_down days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_attract_the_people
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_question_goverment
+		}
+		x = 1
+		y = 3
+        completion_reward={
+		add_timed_idea = { idea = ITA_attract_the_people days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_solidarity_with_democratic_figures
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_question_goverment
+		}
+		x = 3
+		y = 3
+        completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_Control_Parliament
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_solidarity_with_democratic_figures
+		}
+		x = 3
+		y = 4
+        completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_attract_officers
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_question_goverment
+		}
+		x = 5
+		y = 3
+        completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.02
+		}
+		}
+	}
+	focus = {
+		id = ITA_Establishing_the_republican_army
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_attract_officers
+		}
+		x = 5
+		y = 4
+        completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.02
+		}
+		}
+	}
+	focus = {
+		id = ITA_trigger_a_military_mutiny
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Establishing_the_republican_army
+		}
+		x = 4
+		y = 5
+        completion_reward={
+		add_stability = -0.1
+		add_timed_idea = { idea = ITA_trigger_a_military_mutiny days = 90 }
+		}
+	}
+	focus = {
+		id = ITA_strengthening_royal_autocracy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_winner_of_dailure
+		}
+		mutually_exclusive = {
+			focus = ITA_expanding_democratic_opposition
+			focus = ITA_follow_the_duce
+		}
+		x = 9
+		y = 1
+        completion_reward={
+		add_popularity = {
+		ideology = Absolutism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_strengthen_goverment_authority
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_strengthening_royal_autocracy
+		}
+		x = 9
+		y = 2
+        completion_reward={
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_Economic_revitalization_plan
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_strengthen_goverment_authority
+		}
+		x = 7
+		y = 3
+        completion_reward={
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_placement_of_troops
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_strengthen_goverment_authority
+		}
+		x = 9
+		y = 3
+        completion_reward={
+		add_stability = 0.02
+		add_timed_idea = { idea = ITA_placement_of_troops days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_use_the_black_shirts
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_placement_of_troops
+		}
+		x = 9
+		y = 4
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_democratic_opposition
+					add_idea = ITA_smaller_opposition
+				}
+		swap_ideas = {
+					remove_idea = ITA_Blackshirts_threat
+					add_idea = ITA_king_royal_black_shirts
+				}
+		}
+	}
+	focus = {
+		id = ITA_stable_society
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_strengthen_goverment_authority
+		}
+		x = 11
+		y = 3
+        completion_reward={
+		add_stability = 0.02
+		add_popularity = {
+		ideology = Absolutism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_lower_taxes
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_stable_society
+		}
+		x = 11
+		y = 4
+        completion_reward={
+		add_stability = 0.02
+		add_timed_idea = { idea = ITA_lower_taxes days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_distribute_relief_funds
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_lower_taxes
+		}
+		x = 10
+		y = 5
+        completion_reward={
+		add_stability = 0.02
+		add_timed_idea = { idea = ITA_distribute_relief_funds days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_follow_the_duce
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_winner_of_dailure
+		}
+		mutually_exclusive = {
+			focus = ITA_expanding_democratic_opposition
+			focus = ITA_strengthening_royal_autocracy
+		}
+		x = 15
+		y = 1
+        completion_reward={
+		add_stability = -0.05
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_Condemning_the_governement
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_follow_the_duce
+		}
+		x = 15
+		y = 2
+        completion_reward={
+		add_timed_idea = { idea = ITA_stability_down days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_incite_people
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Condemning_the_governement
+		}
+		x = 13
+		y = 3
+        completion_reward={
+		add_timed_idea = { idea = ITA_incite_people days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_unity_nationalist
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Condemning_the_governement
+		}
+		x = 15
+		y = 3
+        completion_reward={
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_born_of_national_fascist_party
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_unity_nationalist
+		}
+		x = 15
+		y = 4
+        completion_reward={
+		set_party_name = { 
+	    ideology = Fascism
+		long_name = ITA_National_fascism_party
+		name = ITA_National_fascism_party
+}
+		}
+	}
+	focus = {
+		id = ITA_increase_industrial_investment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Economic_revitalization_plan
+		}
+		x = 7
+		y = 4
+        completion_reward={
+		add_stability = 0.02
+		add_popularity = {
+		ideology = Absolutism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_opening_up_italian_market
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_increase_industrial_investment
+		}
+		x = 8
+		y = 5
+        completion_reward={
+		add_stability = 0.02
+		add_popularity = {
+		ideology = Absolutism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_prime_minister_niti
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_opening_up_italian_market
+		}
+		prerequisite = {
+			focus = ITA_distribute_relief_funds
+		}
+		prerequisite = {
+			focus = ITA_use_the_black_shirts
+		}
+		mutually_exclusive = {
+			focus = ITA_depose_the_king
+			focus = ITA_march_on_rome
+		}
+		x = 9
+		y = 6
+        completion_reward={
+		add_country_leader_trait = ITA_Roma_heir
+		}
+	}
+	focus = {
+		id = ITA_depose_the_king
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Control_Parliament
+		}
+		prerequisite = {
+			focus = ITA_promise_to_people
+		}
+		prerequisite = {
+			focus = ITA_trigger_a_military_mutiny
+		}
+		mutually_exclusive = {
+			focus = ITA_prime_minister_niti
+			focus = ITA_march_on_rome
+		}
+		x = 3
+		y = 6
+		available = {
+		check_variable = { ITA_democratic_support > 50 }
+		}
+        completion_reward={
+		custom_effect_tooltip = "需要民主联盟议会支持率过半"
+		country_event = { id = AOR_news.20 }
+		set_politics = {
+        ruling_party = FRE_democratic
+		}
+		}
+	}
+	focus = {
+		id = ITA_democratic_propaganda
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_attract_the_people
+		}
+		x = 1
+		y = 4
+        completion_reward={
+		add_timed_idea = { idea = ITA_democratic_propaganda days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_promise_to_people
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_democratic_propaganda
+		}
+		x = 2
+		y = 5
+        completion_reward={
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_Expand_the_black_shirts
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Condemning_the_governement
+		}
+		x = 17
+		y = 3
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_Blackshirts_threat
+					add_idea = ITA_Expand_the_black_shirts
+				}
+		}
+	}
+	focus = {
+		id = ITA_exeuting_leader_of_democratic
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Suppress_democratic_faction
+		}
+		x = 16
+		y = 5
+        completion_reward={
+		add_stability = -0.05
+		add_popularity = {
+		ideology = CON_democratic
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = SOC_democratic
+		popularity = -0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_march_on_rome
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_deliver_a_speech_of_mossolini
+		}
+		prerequisite = {
+			focus = ITA_exeuting_leader_of_democratic
+		}
+		prerequisite = {
+			focus = ITA_born_of_national_fascist_party
+		}
+		mutually_exclusive = {
+			focus = ITA_depose_the_king
+			focus = ITA_prime_minister_niti
+		}
+		x = 15
+		y = 6
+        completion_reward={
+		country_event = { id = ITA.3 }
+		set_politics = {
+        ruling_party = Fascism
+		}
+		}
+	}
+	focus = {
+		id = ITA_Propaganda_of_Fascism
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_incite_people
+		}
+		x = 13
+		y = 4
+        completion_reward={
+		add_timed_idea = { idea = ITA_Propaganda_of_Fascism days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_deliver_a_speech_of_mossolini
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Propaganda_of_Fascism
+		}
+		x = 14
+		y = 5
+        completion_reward={
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_Suppress_democratic_faction
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Expand_the_black_shirts
+		}
+		x = 17
+		y = 4
+        completion_reward={
+		add_stability = -0.05
+		add_popularity = {
+		ideology = CON_democratic
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = FRE_democratic
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = SOC_democratic
+		popularity = -0.05
+		}
+		}
+	}
+	#法西斯线
+	focus = {
+		id = ITA_leadership_governance
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 10
+		y = 8
+        available = {
+		has_completed_focus = ITA_march_on_rome
+		}
+		completion_reward={
+		add_stability = 0.05
+		country_event = { days = 5 id = ITA.5 }
+		}
+	}
+	focus = {
+		id = ITA_maintain_mussolini_rule
+		icon = GFX_goal_unknown
+		cost = 6.00
+		mutually_exclusive = {
+			focus = ITA_against_mussolini
+		}
+		prerequisite = {
+			focus = ITA_leadership_governance
+		}
+		x = 3
+		y = 9
+        available = {
+		always = no
+		}
+		completion_reward={
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_Establish_core_four_member_team
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_maintain_mussolini_rule
+		}
+		x = 2
+		y = 10
+        completion_reward={
+	    country_event = { id = ITA.7 }
+		}
+	}
+	focus = {
+		id = ITA_transform_blackshirt
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_maintain_mussolini_rule
+		}
+		x = 4
+		y = 10
+        completion_reward={
+	    swap_ideas = {
+					remove_idea = ITA_Expand_the_black_shirts
+					add_idea = ITA_transform_blackshirt
+				}
+		}
+	}
+	focus = {
+		id = ITA_leader_worship
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Establish_core_four_member_team
+		}
+		prerequisite = {
+			focus = ITA_transform_blackshirt
+		}
+		x = 3
+		y = 11
+        completion_reward={
+	    add_country_leader_trait = ITA_Great_Duce
+		}
+	}
+	focus = {
+		id = ITA_Promise_to_war
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_worship
+		}
+		x = 1
+		y = 12
+        completion_reward={
+	    add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ITA_settle_a_situation
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_worship
+		}
+		x = 3
+		y = 12
+        completion_reward={
+	    add_timed_idea = { idea = ITA_settle_a_situation days = 120 }
+		}
+	}
+	focus = {
+		id = ITA_obtain_pope_support
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Promise_to_war
+		}
+		prerequisite = {
+			focus = ITA_settle_a_situation
+		}
+		x = 2
+		y = 13
+        completion_reward={
+	    add_country_leader_trait = ITA_Great_holy_duce
+		}
+	}
+	focus = {
+		id = ITA_police_country
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_obtain_pope_support
+		}
+		x = 1
+		y = 14
+        completion_reward={
+	    add_ideas = ITA_police_country
+		}
+	}
+	focus = {
+		id = ITA_give_work
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_worship
+		}
+		x = 5
+		y = 12
+        completion_reward={
+	    remove_ideas = ITA_employment_difficulties
+		}
+	}
+	focus = {
+		id = ITA_loyal_army
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_give_work
+		}
+		prerequisite = {
+			focus = ITA_settle_a_situation
+		}
+		x = 4
+		y = 13
+        completion_reward={
+	    country_event = { id = ITA.6 }
+		}
+	}
+	focus = {
+		id = ITA_fascist_education
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_loyal_army
+		}
+		x = 5
+		y = 14
+        completion_reward={
+	    add_timed_idea = { idea = ITA_fascist_education days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_against_mussolini
+		icon = GFX_goal_unknown
+		cost = 6.00
+		mutually_exclusive = {
+			focus = ITA_maintain_mussolini_rule
+		}
+		prerequisite = {
+			focus = ITA_leadership_governance
+		}
+		x = 15
+		y = 9
+		available = {
+		always = no
+		}
+        completion_reward={
+		remove_ideas = ITA_Expand_the_black_shirts
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_leader_d_annunzio
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_against_mussolini
+		}
+		mutually_exclusive = {
+			focus = ITA_leader_marinetti
+		}
+		x = 11
+		y = 10
+		available = {
+		has_country_leader = { ruling_only = yes name = "Opposition committee" }
+		}
+        completion_reward={
+		add_stability = 0.05
+		set_party_name = { 
+	    ideology = Fascism
+		long_name = ITA_National_nationalist_party
+		name = ITA_National_nationalist_party
+}
+         country_event = { id = ITA.0 }
+		}
+	}
+	focus = {
+		id = ITA_banning_democratic_parties
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_d_annunzio
+			focus = ITA_maintain_mussolini_rule
+		}
+		x = 7
+		y = 11
+        completion_reward={
+	    remove_ideas = ITA_democratic_opposition
+		}
+	}
+	focus = {
+		id = ITA_abolish_aristocratic_privileges
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_d_annunzio
+		}
+		x = 10
+		y = 11
+        completion_reward={
+	    add_stability = -0.05
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = Absolutism
+		popularity = -0.5
+		}
+		}
+	}
+	focus = {
+		id = ITA_strengshening_nationalist_associations
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_d_annunzio
+		}
+		x = 12
+		y = 11
+        completion_reward={
+	    add_stability = 0.05
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_heroes_of_italy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_abolish_aristocratic_privileges
+		}
+		prerequisite = {
+			focus = ITA_strengshening_nationalist_associations
+		}
+		x = 11
+		y = 12
+        completion_reward={
+	    add_country_leader_trait = ITA_heroes_of_italy
+		}
+	}
+	focus = {
+		id = ITA_national_pride
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_heroes_of_italy
+		}
+		x = 9
+		y = 13
+        completion_reward={
+	    add_ideas = ITA_national_pride
+		}
+	}
+	focus = {
+		id = ITA_negate_Fascism
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_heroes_of_italy
+		}
+		x = 11
+		y = 13
+        completion_reward={
+	    add_ideas = ITA_negate_Fascism
+		}
+	}
+	focus = {
+		id = ITA_ensurig_employment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_heroes_of_italy
+		}
+		x = 13
+		y = 13
+        completion_reward={
+	    add_timed_idea = { idea = ITA_ensurig_employment days = 1095 }
+		}
+	}
+	focus = {
+		id = ITA_dismiss_blackshirt
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_negate_Fascism
+		}
+		prerequisite = {
+			focus = ITA_ensurig_employment
+		}
+		x = 12
+		y = 14
+        completion_reward={
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ITA_bill_of_rights
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_dismiss_blackshirt
+		}
+		x = 13
+		y = 15
+        completion_reward={
+	    remove_ideas = ITA_employment_difficulties
+		}
+	}
+	focus = {
+		id = ITA_leader_marinetti
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_against_mussolini
+		}
+		mutually_exclusive = {
+			focus = ITA_leader_d_annunzio
+		}
+		x = 19
+		y = 10
+		available = {
+		has_country_leader = { ruling_only = yes name = "Opposition committee" }
+		}
+        completion_reward={
+		add_stability = 0.05
+		set_party_name = { 
+	    ideology = Fascism
+		long_name = ITA_National_futurism_party
+		name = ITA_National_futurism_party
+}
+        country_event = { id = ITA.1 }
+		}
+	}
+	focus = {
+		id = ITA_execution_of_royal_family
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_marinetti
+		}
+		x = 18
+		y = 11
+        completion_reward={
+		add_stability = -0.02
+		add_war_support = 0.05
+		set_cosmetic_tag = ITA_Republic_cosmetic
+		}
+	}
+	focus = {
+		id = ITA_futurism_democracy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_leader_marinetti
+		}
+		x = 20
+		y = 11
+        completion_reward={
+		remove_ideas = ITA_democratic_opposition
+		}
+	}
+	focus = {
+		id = ITA_futurism_revolution
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_execution_of_royal_family
+		}
+		prerequisite = {
+			focus = ITA_futurism_democracy
+		}
+		x = 19
+		y = 12
+        completion_reward={
+		add_ideas = ITA_futurism_revolution_ideas
+		add_country_leader_trait = ITA_futurism_pioneer
+		}
+	}
+	focus = {
+		id = ITA_forcing_the_church_to_obey
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_futurism_revolution
+		}
+		x = 17
+		y = 13
+        completion_reward={
+		if = {
+				limit = { ITA = { has_country_leader = { ruling_only = yes name = "Fillippo Tommaso Marinetti" } } }
+				VAT = {
+				create_country_leader = {
+	name = "Fillippo Tommaso Marinetti"
+	desc = "ITA_F_T__M_DESC"
+	picture = "gfx/leaders/ITA/Fillippo_Tommaso_Marinetti.png"	
+	expire = "1965.1.1"
+	ideology = nationalism
+	traits = {
+ }
+}
+		}
+	}
+	if = {
+				limit = { ITA = { has_country_leader = { ruling_only = yes name = "Giovanni Papini" } } }
+				VAT = {
+				create_country_leader = {
+	name = "Giovanni Papini"
+	desc = "ITA_F_T__M_DESC"
+	picture = "gfx/leaders/ITA/Giovanni_Papini.png"	
+	expire = "1965.1.1"
+	ideology = fascio
+	traits = {
+ }
+}
+		}
+	}
+	    VAT ={
+		country_event = { id = generic.20 }
+		}
+		}
+	}
+	focus = {
+		id = ITA_new_land_reform
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_forcing_the_church_to_obey
+		}
+		x = 16
+		y = 14
+        completion_reward={
+	    add_ideas = ITA_new_land_reform
+		}
+	}
+	focus = {
+		id = ITA_abandoning_traditional_society
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_futurism_revolution
+		}
+		x = 19
+		y = 13
+        completion_reward={
+		remove_ideas = ITA_employment_difficulties
+	    swap_ideas = {
+					remove_idea = ITA_futurism_revolution_ideas
+					add_idea = ITA_futurism_revolution_2
+				}
+		}
+	}
+	focus = {
+		id = ITA_implement_comon_ownership
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_futurism_revolution
+		}
+		x = 21
+		y = 13
+        completion_reward={
+	    add_stability = -0.05
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_technical_goverment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_forcing_the_church_to_obey
+		}
+		prerequisite = {
+			focus = ITA_implement_comon_ownership
+		}
+		x = 19
+		y = 14
+        completion_reward={
+	    swap_ideas = {
+					remove_idea = ITA_futurism_revolution_2
+					add_idea = ITA_futurism_revolution_3
+				}
+		}
+	}
+	focus = {
+		id = ITA_universal_suffrage
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_implement_comon_ownership
+		}
+		x = 22
+		y = 14
+        completion_reward={
+	    add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	focus = {
+		id = ITA_volunteer_army_system
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_technical_goverment
+		}
+		prerequisite = {
+			focus = ITA_universal_suffrage
+		}
+		x = 21
+		y = 15
+        completion_reward={
+	    add_war_support = -0.1
+		add_ideas = volunteer_only
+		}
+	}
+	focus = {
+		id = ITA_courage_and_patriotism_school
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_new_land_reform
+		}
+		prerequisite = {
+			focus = ITA_technical_goverment
+		}
+		x = 17
+		y = 15
+        completion_reward={
+	    add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ITA_futurism_empire
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_courage_and_patriotism_school
+		}
+		prerequisite = {
+			focus = ITA_volunteer_army_system
+		}
+		x = 19
+		y = 16
+        completion_reward={
+		add_stability = 0.05
+		set_party_name = { 
+	    ideology = Fascism
+		long_name = ITA_futurism_committee_party
+		name = ITA_futurism_committee_party
+        }
+		set_cosmetic_tag = ITA_futurism_empire_cosmic
+		}
+	}
+	focus = {
+		id = ITA_establish_fascist_council
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_banning_democratic_parties
+		}
+		x = 7
+		y = 12
+        completion_reward={
+	    add_political_power = 50
+		}
+	}
+	focus = {
+		id = ITA_long_live_italia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_police_country
+		}
+		prerequisite = {
+			focus = ITA_fascist_education
+		}
+		prerequisite = {
+			focus = ITA_establish_fascist_council
+		}
+		x = 3
+		y = 15
+        completion_reward={
+		add_stability = 0.05
+	    set_cosmetic_tag = ITA_empire_cosmetic
+		}
+	}
+	focus = {
+		id = ITA_reformed_church
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_negate_Fascism
+		}
+		prerequisite = {
+			focus = ITA_national_pride
+		}
+		x = 10
+		y = 14
+        completion_reward={
+	    add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_ban_parliament
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_reformed_church
+		}
+		x = 9
+		y = 15
+        completion_reward={
+		add_stability = 0.05
+		add_timed_idea = { idea = ITA_distribute_relief_funds days = 365 }
+	    add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_italian_national_revival
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_ban_parliament
+		}
+		prerequisite = {
+			focus = ITA_bill_of_rights
+		}
+		prerequisite = {
+			focus = ITA_establish_fascist_council
+		}
+		x = 11
+		y = 16
+        completion_reward={
+		add_stability = 0.05
+	    set_cosmetic_tag = ITA_empire_cosmetic
+		}
+	}
+	#君主线
+	focus = {
+		id = ITA_stable_throne
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 27
+		y = 8
+		available = {
+		has_completed_focus = ITA_prime_minister_niti
+		}
+        completion_reward={
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_Military_prime_minister
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_noble_council
+		}
+		mutually_exclusive = {
+			focus = ITA_establish_royal_dictatorship
+		}
+		x = 24
+		y = 10
+		completion_reward={
+		create_country_leader = {
+	name = "Armando Diaz"
+	desc = "ITA_A_D_DESC"
+	picture = "gfx/leaders/ITA/Armando_Diaz.png"	
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+ }
+}
+        set_party_name = { 
+	    ideology = Absolutism
+		long_name = ITA_military_party
+		name = ITA_military_party
+}
+}
+	}
+	focus = {
+		id = ITA_noble_council
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_stable_throne
+		}
+		x = 27
+		y = 9
+        completion_reward={
+		add_ideas = ITA_noble_council
+		}
+	}
+	focus = {
+		id = ITA_establish_royal_dictatorship
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_noble_council
+		}
+		mutually_exclusive = {
+			focus = ITA_Military_prime_minister
+		}
+		x = 30
+		y = 10
+        completion_reward={
+		set_party_name = { 
+	    ideology = Absolutism
+		long_name = ITA_king_party
+		name = ITA_king_party
+        }
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_Royal_Decree
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Military_prime_minister
+			focus = ITA_establish_royal_dictatorship
+		}
+		prerequisite = {
+			focus = ITA_noble_council
+		}
+		x = 27
+		y = 11
+        completion_reward={
+		add_stability = -0.08
+		add_political_power = 80
+		add_popularity = {
+		ideology = SOC_democratic
+		popularity = -0.5
+		}
+		add_popularity = {
+		ideology = Marxism
+		popularity = -0.5
+		}
+		add_popularity = {
+		ideology = Fascism
+		popularity = -0.25
+		}
+		}
+	}
+	focus = {
+		id = ITA_attract_people_party
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Royal_Decree
+		}
+		x = 25
+		y = 12
+        completion_reward={
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+		ideology = CON_democratic
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_unemployed_people_joining_the_military
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_attract_people_party
+		}
+		x = 24
+		y = 13
+        completion_reward={
+		add_ideas = ITA_unemployed_people_joining_the_military
+		}
+	}
+	focus = {
+		id = ITA_long_live_king
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Royal_Decree
+		}
+		x = 27
+		y = 12
+        completion_reward={
+		add_political_power = 50
+		add_country_leader_trait = ITA_noble_king
+		}
+	}
+	focus = {
+		id = ITA_ending_domestic_threat
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_long_live_king
+		}
+		x = 27
+		y = 13
+        completion_reward={
+		remove_ideas = ITA_smaller_opposition
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_incorporate_blackshirt
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Royal_Decree
+		}
+		x = 29
+		y = 12
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_king_royal_black_shirts
+					add_idea = ITA_transform_blackshirt
+				}
+		add_stability = -0.05
+		add_popularity = {
+		ideology = Fascism
+		popularity = 0.05
+		}
+		}
+	}
+	focus = {
+		id = ITA_Protecting_vatican
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_incorporate_blackshirt
+		}
+		x = 30
+		y = 13
+        completion_reward={
+		add_ideas = ITA_Protecting_vatican
+		}
+	}
+	focus = {
+		id = ITA_national_defense_funds
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_ending_domestic_threat
+		}
+		prerequisite = {
+			focus = ITA_Protecting_vatican
+		}
+		x = 29
+		y = 14
+        completion_reward={
+		add_opinion_modifier = {
+		target = ENG
+		modifier = cheat_opinion_modifier_good
+		}
+		ENG = {
+		add_opinion_modifier = {
+		target = ITA
+		modifier = cheat_opinion_modifier_good
+		     }
+		   }
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	focus = {
+		id = ITA_research_institute
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_unemployed_people_joining_the_military
+		}
+		prerequisite = {
+			focus = ITA_ending_domestic_threat
+		}
+		x = 25
+		y = 14
+        completion_reward={
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ITA_imperial_glory
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_research_institute
+		}
+		prerequisite = {
+			focus = ITA_national_defense_funds
+		}
+		x = 27
+		y = 15
+        completion_reward={
+		add_stability = 0.05
+		set_cosmetic_tag = ITA_empire_cosmetic
+		}
+	}
+	#民主线
+	focus = {
+		id = ITA_democratic_victory
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 36
+		y = 8
+		available = {
+		has_completed_focus = ITA_depose_the_king
+		}
+        completion_reward={
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_organizing_elections
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_democratic_victory
+		}
+		x = 36
+		y = 9
+        completion_reward={
+		create_country_leader = {
+	name = "Francesco Saverio Nitti"
+	desc = "ITA_G_A_DESC"
+	picture = "gfx/leaders/ITA/Francesco_Saverio_Nitti.png"	
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+ }
+}
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_support_IPP
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_organizing_elections
+		}
+		mutually_exclusive = {
+			focus = ITA_support_WSPI
+			focus = ITA_spport_IRP
+		}
+		x = 33
+		y = 10
+        completion_reward={
+		clamp_variable = {
+    var = ITA.CON_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Fre_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Soc_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.NFP_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Aut_support
+    min = 0
+	max = 100
+}
+		add_to_variable = { 
+	    var = ITA.CON_support
+	    value = 10
+         }
+		 subtract_from_variable = { 
+	    var = ITA.Fre_support
+	    value = 5
+        }
+		subtract_from_variable = { 
+	    var = ITA.Soc_support
+	    value = 5
+        }
+		custom_effect_tooltip = "这将帮助我们加强人民党的力量"
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_spport_IRP
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_organizing_elections
+		}
+		mutually_exclusive = {
+			focus = ITA_support_WSPI
+			focus = ITA_support_IPP
+		}
+		x = 36
+		y = 10
+        completion_reward={
+		clamp_variable = {
+    var = ITA.CON_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Fre_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Soc_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.NFP_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Aut_support
+    min = 0
+	max = 100
+}
+		 add_to_variable = { 
+	    var = ITA.Fre_support
+	    value = 10
+         }
+		 subtract_from_variable = { 
+	    var = ITA.CON_support
+	    value = 5
+        }
+		subtract_from_variable = { 
+	    var = ITA.Soc_support
+	    value = 5
+        }
+		custom_effect_tooltip = "这将帮助我们加强激进党的力量"
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_support_WSPI
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_organizing_elections
+		}
+		mutually_exclusive = {
+			focus = ITA_support_IPP
+			focus = ITA_spport_IRP
+		}
+		x = 39
+		y = 10
+        completion_reward={
+		clamp_variable = {
+    var = ITA.CON_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Fre_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Soc_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.NFP_support
+    min = 0
+	max = 100
+}
+clamp_variable = {
+    var = ITA.Aut_support
+    min = 0
+	max = 100
+}
+		add_to_variable = { 
+	    var = ITA.Soc_support
+	    value = 10
+         }
+		 subtract_from_variable = { 
+	    var = ITA.CON_support
+	    value = 5
+        }
+		subtract_from_variable = { 
+	    var = ITA.Fre_support
+	    value = 5
+        }
+		custom_effect_tooltip = "这将帮助我们加强工人社会党的力量"
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ITA_Election_day
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_support_IPP
+			focus = ITA_spport_IRP
+			focus = ITA_support_WSPI
+		}
+		x = 36
+		y = 11
+        completion_reward={
+		country_event = { id = ITA.8 }
+		add_stability = 0.05
+		activate_mission = ITA_Election_day
+		}
+	}
+	focus = {
+		id = ITA_public_work_plan
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Election_day
+		}
+		x = 34
+		y = 12
+        completion_reward={
+		remove_ideas = ITA_employment_difficulties
+		}
+	}
+	focus = {
+		id = ITA_Compusory_education
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_public_work_plan
+		}
+		x = 33
+		y = 13
+        completion_reward={
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ITA_stabilize_new_government
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Election_day
+		}
+		x = 36
+		y = 12
+        completion_reward={
+		add_stability = 0.05
+		add_political_power = 80
+		}
+	}
+	focus = {
+		id = ITA_separation_of_politics_and_religion
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_stabilize_new_government
+		}
+		x = 36
+		y = 13
+        completion_reward={
+		add_stability = 0.05
+		add_ideas = ITA_democratic_reform
+		}
+	}
+	focus = {
+		id = ITA_Deceentralization
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Compusory_education
+		}
+		prerequisite = {
+			focus = ITA_separation_of_politics_and_religion
+		}
+		x = 35
+		y = 14
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_democratic_reform
+					add_idea = ITA_democratic_reform_2
+				}
+		}
+	}
+	focus = {
+		id = ITA_reduce_work_time
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Election_day
+		}
+		x = 38
+		y = 12
+        completion_reward={
+		add_ideas = ITA_socitey_revolution_plan
+		}
+	}
+	focus = {
+		id = ITA_women_right
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_reduce_work_time
+		}
+		x = 39
+		y = 13
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_socitey_revolution_plan
+					add_idea = ITA_socitey_revolution_plan_2
+				}
+		}
+	}
+	focus = {
+		id = ITA_strengthen_social_security
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_separation_of_politics_and_religion
+		}
+		prerequisite = {
+			focus = ITA_women_right
+		}
+		x = 37
+		y = 14
+        completion_reward={
+		swap_ideas = {
+					remove_idea = ITA_socitey_revolution_plan_2
+					add_idea = ITA_socitey_revolution_plan_3
+				}
+		}
+	}
+	focus = {
+		id = ITA_federation_dream
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Deceentralization
+		}
+		prerequisite = {
+			focus = ITA_strengthen_social_security
+		}
+		x = 36
+		y = 15
+        completion_reward={
+		add_stability = 0.05
+		set_cosmetic_tag = ITA_federation_cosmetic
+		}
+	}
+	#战争线
+	focus = {
+		id = ITA_Italy_ambition
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 9
+		y = 18
+        completion_reward={
+	    add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ITA_occupy_fum
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Italy_ambition
+		}
+		x = 6
+		y = 19
+		available = {
+		date > 1923.1.1
+		}
+        completion_reward={
+		ai_will_do = { factor = 10000 }
+		every_state = {
+				limit = { is_core_of = DAL }
+				add_claim_by = ITA
+			}
+		add_political_power = -20
+	     transfer_state = 843
+		}
+	}
+	focus = {
+		id = ITA_invasion_of_Dalmatia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_occupy_fum
+		}
+		mutually_exclusive = {
+			focus = ITA_Negotiate_with_dalmatia
+		}
+		x = 5
+		y = 20
+        completion_reward={
+	    create_wargoal = {
+		type = annex_everything
+		target = DAL
+		expire = 1095
+		}
+		}
+	}
+	focus = {
+		id = ITA_Negotiate_with_dalmatia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_occupy_fum
+		}
+		mutually_exclusive = {
+			focus = ITA_invasion_of_Dalmatia
+		}
+		x = 7
+		y = 20
+        completion_reward={
+	    DAL ={
+		country_event = { id = generic.20 }
+		}
+		}
+	}
+	focus = {
+		id = ITA_use_dalmatia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Negotiate_with_dalmatia
+			focus = ITA_invasion_of_Dalmatia
+		}
+		x = 6
+		y = 21
+		available = {
+		OR = {
+		NOT = {
+	    country_exists = DAL
+		}
+		DAL = {
+		is_puppet = yes
+		}
+	}
+}
+        completion_reward={
+		if = {
+				limit = { DAL = { is_puppet = yes } }
+				ITA = {
+				annex_country = {
+		        target = DAL
+		         transfer_troops = yes
+		    }
+		}
+	}
+	    every_state = {
+				limit = { is_core_of = DAL }
+				add_core_of = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_declare_horn_of_east_africa
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Italy_ambition
+		}
+		x = 9
+		y = 19
+        completion_reward={
+	    every_state = {
+				limit = { is_core_of = ETH }
+				add_claim_by = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_Invasion_of_ethiopia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_declare_horn_of_east_africa
+		}
+		x = 9
+		y = 20
+		available = {
+		OR = {
+		has_completed_focus = ITA_depose_the_king
+		has_completed_focus = ITA_prime_minister_niti
+		has_completed_focus = ITA_march_on_rome
+		}
+		}
+        completion_reward={
+	   create_wargoal = {
+		type = annex_everything
+		target = ETH
+		expire = 1095
+		}
+		}
+	}
+	focus = {
+		id = ITA_integrating_ethiopia
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Invasion_of_ethiopia
+		}
+		x = 9
+		y = 21
+		available = {
+		NOT = {
+	    country_exists = ETH
+        }
+	}
+        completion_reward={
+	     every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_confronting_the_medierranean_threat
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Italy_ambition
+		}
+		x = 12
+		y = 19
+        completion_reward={
+	     every_state = {
+				limit = { is_core_of = ALB }
+				add_claim_by = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_pressure_albania
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_confronting_the_medierranean_threat
+		}
+		x = 12
+		y = 20
+		available = {
+		OR = {
+		has_completed_focus = ITA_depose_the_king
+		has_completed_focus = ITA_prime_minister_niti
+		has_completed_focus = ITA_march_on_rome
+		}
+		date > 1922.1.1
+		}
+        completion_reward={
+		ALB ={
+		country_event = { id = generic.20 }
+		}
+		}
+	}
+	focus = {
+		id = ITA_integrating_albania
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_pressure_albania
+		}
+		x = 12
+		y = 21
+		available = {
+		OR = {
+		NOT = {
+	    country_exists = ALB
+		}
+		ALB = {
+		is_puppet = yes
+		}
+	}
+}
+        completion_reward={
+		if = {
+				limit = { ALB = { is_puppet = yes } }
+				ITA = {
+				annex_country = {
+		        target = ALB
+		         transfer_troops = yes
+		    }
+		}
+	}
+	    every_state = {
+				limit = { is_core_of = ALB }
+				add_core_of = ITA
+			}
+		}
+	}
+	focus = {
+		id = ITA_word_finger_greece
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_use_dalmatia
+		}
+		prerequisite = {
+			focus = ITA_integrating_ethiopia
+		}
+		prerequisite = {
+			focus = ITA_integrating_albania
+		}
+		x = 9
+		y = 22
+		available = {
+		NOT = {
+		is_in_faction_with = GRE
+			}
+		date > 1922.1.1
+		date < 1927.1.1
+		has_army_manpower = { size > 600000 }
+		}
+        completion_reward={
+		ai_will_do = { factor = 10000 }
+	    create_wargoal = {
+		type = annex_everything
+		target = GRE
+		expire = 1095
+		}
+		}
+	}
+	focus = {
+		id = ITA_war_mobilization
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_word_finger_greece
+		}
+		x = 12
+		y = 23
+        completion_reward={
+	    add_ideas = war_economy
+		add_manpower = 50000
+		}
+	}
+	focus = {
+		id = ITA_consripting_special_forces
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_word_finger_greece
+		}
+		x = 6
+		y = 23
+        completion_reward={
+	    capital_scope = {
+					create_unit = {
+						division = "name = \"皇家步兵师团\" division_template = \"皇家步兵师团\" start_experience_factor = 1"
+						owner = ROOT
+						count = 6
+					}
+				}
+		}
+	}
+	focus = {
+		id = ITA_plan_of_staff
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_word_finger_greece
+		}
+		x = 9
+		y = 23
+        completion_reward={
+	    add_timed_idea = { idea = ITA_plan_of_staff days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_destory_Grreece
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_consripting_special_forces
+		}
+		prerequisite = {
+			focus = ITA_plan_of_staff
+		}
+		prerequisite = {
+			focus = ITA_war_mobilization
+		}
+		x = 9
+		y = 24
+        completion_reward={
+	    add_timed_idea = { idea = ITA_destory_Grreece days = 180 }
+		}
+	}
+	#军事线
+	focus = {
+		id = ITA_Developing_army
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 24
+		y = 0
+		available = {
+		OR = {
+		has_completed_focus = ITA_depose_the_king
+		has_completed_focus = ITA_prime_minister_niti
+		has_completed_focus = ITA_march_on_rome
+		}
+		}
+        completion_reward={
+	    army_experience = 30
+		}
+	}
+	focus = {
+		id = ITA_weapon_renewal
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Developing_army
+		}
+		x = 22
+		y = 1
+        completion_reward={
+	    add_tech_bonus = {
+				name = ITA_weapon_renewal
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_better_Artillery
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_weapon_renewal
+		}
+		x = 21
+		y = 2
+        completion_reward={
+	    add_tech_bonus = {
+				name = ITA_better_Artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ITA_introducing_army_technology
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_better_Artillery
+		}
+		x = 20
+		y = 3
+        completion_reward={
+	    add_tech_bonus = {
+				name = ITA_introducing_army_technology
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ITA_optimize_communication
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_better_Artillery
+		}
+		x = 22
+		y = 3
+        completion_reward={
+	     add_tech_bonus = {
+				name = ITA_optimize_communication
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = ITA_Continental_army_policy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Developing_army
+		}
+		x = 26
+		y = 1
+        completion_reward={
+	    add_ideas = ITA_army_reform
+		}
+	}
+	focus = {
+		id = ITA_delve_into_military_doctrine
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Developing_army
+		}
+		prerequisite = {
+			focus = ITA_Continental_army_policy
+		}
+		prerequisite = {
+			focus = ITA_weapon_renewal
+		}
+		x = 24
+		y = 2
+        completion_reward={
+	    add_tech_bonus = {
+				name = ITA_delve_into_military_doctrine
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_re_staff_ment
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_delve_into_military_doctrine
+		}
+		x = 24
+		y = 3
+        completion_reward={
+	    add_timed_idea = { idea = ITA_re_staff_ment days = 365 }
+		}
+	}
+	focus = {
+		id = ITA_emohasize_firepower
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Continental_army_policy
+		}
+		x = 27
+		y = 2
+        completion_reward={
+	    swap_ideas = {
+					remove_idea = ITA_army_reform
+					add_idea = ITA_army_reform_2
+				}
+		}
+	}
+	focus = {
+		id = ITA_national_enthusiasm
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_emohasize_firepower
+		}
+		x = 26
+		y = 3
+        completion_reward={
+	    swap_ideas = {
+					remove_idea = ITA_army_reform_2
+					add_idea = ITA_army_reform_3
+				}
+		}
+	}
+	focus = {
+		id = ITA_will_to_fight
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_emohasize_firepower
+		}
+		prerequisite = {
+			focus = ITA_national_enthusiasm
+		}
+		x = 28
+		y = 3
+        completion_reward={
+	    swap_ideas = {
+					remove_idea = ITA_army_reform_3
+					add_idea = ITA_army_reform_4
+				}
+		}
+	}
+	focus = {
+		id = ITA_complete_military_reform
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_introducing_army_technology
+		}
+		prerequisite = {
+			focus = ITA_optimize_communication
+		}
+		prerequisite = {
+			focus = ITA_re_staff_ment
+		}
+		prerequisite = {
+			focus = ITA_national_enthusiasm
+		}
+		prerequisite = {
+			focus = ITA_will_to_fight
+		}
+		x = 24
+		y = 4
+        completion_reward={
+	    army_experience = 80
+		}
+	}
+	#工业线
+	focus = {
+		id = ITA_Reforming_industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		x = 33
+		y = 0
+		available = {
+		OR = {
+		has_completed_focus = ITA_depose_the_king
+		has_completed_focus = ITA_prime_minister_niti
+		has_completed_focus = ITA_march_on_rome
+		}
+		}
+        completion_reward={
+	    add_tech_bonus = {
+				name = ITA_Reforming_industry
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = ITA_northern_ic
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Reforming_industry
+		}
+		x = 31
+		y = 1
+        completion_reward={
+		158 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		159 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	    161 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_northern_rc
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_northern_ic
+		}
+		x = 30
+		y = 2
+        completion_reward={
+		158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Central_ic
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Reforming_industry
+		}
+		x = 33
+		y = 1
+        completion_reward={
+	    2 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		157 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	    162 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_central_rc
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Central_ic
+		}
+		prerequisite = {
+			focus = ITA_northern_ic
+		}
+		x = 32
+		y = 2
+        completion_reward={
+		2 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Northern_resource
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_northern_rc
+		}
+		prerequisite = {
+			focus = ITA_central_rc
+		}
+		x = 31
+		y = 3
+        completion_reward={
+		158 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			159 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+			161 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Sothern_ic
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Reforming_industry
+		}
+		x = 35
+		y = 1
+        completion_reward={
+		117 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		156 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	    115 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_southern_rc
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Sothern_ic
+		}
+		prerequisite = {
+			focus = ITA_Central_ic
+		}
+		x = 34
+		y = 2
+        completion_reward={
+	    117 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			156 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			115 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_Central_resource
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_central_rc
+		}
+		prerequisite = {
+			focus = ITA_southern_rc
+		}
+		x = 33
+		y = 3
+        completion_reward={
+			2 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+			157 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			162 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_southern_cr
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Sothern_ic
+		}
+		x = 36
+		y = 2
+        completion_reward={
+		117 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		156 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	    115 = {
+			add_extra_state_shared_building_slots = 2 
+		}
+		}
+	}
+	focus = {
+		id = ITA_Southern_resource
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_southern_rc
+		}
+		prerequisite = {
+			focus = ITA_southern_cr
+		}
+		x = 35
+		y = 3
+        completion_reward={
+		117 = {
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+			}
+			156 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+			115 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_reforming_military_factory
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Northern_resource
+		}
+		prerequisite = {
+			focus = ITA_Central_resource
+		}
+		prerequisite = {
+			focus = ITA_Southern_resource
+		}
+		x = 33
+		y = 4
+        completion_reward={
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	    army_experience = 25
+		}
+	}
+	focus = {
+		id = ITA_Military_factory_indivators_3
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_reforming_military_factory
+		}
+		x = 35
+		y = 5
+        completion_reward={
+	    random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_Military_factory_indivators
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_reforming_military_factory
+		}
+		x = 33
+		y = 5
+        completion_reward={
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_Military_factory_indivators_2
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_reforming_military_factory
+		}
+		x = 31
+		y = 5
+        completion_reward={
+	    random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = ITA_complete_industrial_construction
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ITA_Military_factory_indivators_2
+		}
+		prerequisite = {
+			focus = ITA_Military_factory_indivators
+		}
+		prerequisite = {
+			focus = ITA_Military_factory_indivators_3
+		}
+		x = 33
+		y = 6
+        completion_reward={
+		add_stability = -0.05
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+}
