@@ -10,7 +10,7 @@ tags={
 	"Alternative History"
 	"Events"
 }
-name="beta_AOR"
+name="purified_AOR"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"

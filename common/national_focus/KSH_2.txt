@@ -1,0 +1,433 @@
+focus_tree = {
+	id = KSH_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = KSH
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1600 y = 1200}
+	focus = {
+		id = KSH_final_order
+		icon = GFX_goal_KSH_final_order
+		cost = 1.00
+		x = 6
+		y = 0
+		completion_reward = {
+			country_event = { id = KSH.31 }
+		}
+
+	}
+	focus = {
+		id = KSH_Take_to_the_street
+		icon = GFX_goal_KSH_Take_to_the_street
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_final_order
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			country_event = { id = KSH.32 }
+
+		}
+	}
+	focus = {
+		id = KSH_Commitment_to_the_East
+		icon = GFX_goal_KSH_Commitment_to_the_East
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Take_to_the_street
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = KSH.54
+			}
+		}
+	}
+	focus = {
+		id = KSH_Secret_contact_with_Strasser
+		icon = GFX_goal_KSH_Secret_contact_with_Strasser
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Take_to_the_street
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			country_event = { id = KSH.35 }
+
+		}
+	}
+	focus = {
+		id = KSH_Unite_the_people
+		icon = GFX_goal_KSH_Unite_the_people
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_Commitment_to_the_East
+		}
+		prerequisite = {
+			focus = KSH_Secret_contact_with_Strasser
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			country_event = { id = KSH.33}
+
+		}
+	}
+	focus = {
+		id = KSH_The_People_Army_is_advancing
+		icon = GFX_goal_KSH_The_People_Army_is_advancing
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Unite_the_people
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = KSH.53
+			}
+			hidden_effect = {
+				KSH = { 
+					delete_unit = { 
+					state = 62
+					state = 63  
+					state = 870               
+					disband = no #will refund equipment and manpower
+					    }
+					}
+		    	62 = { set_demilitarized_zone = yes }
+		    	63 = { set_demilitarized_zone = yes }
+			    870 = { set_demilitarized_zone = yes }
+			}
+		}
+	}
+	focus = {
+		id = KSH_Assassinate_Gustav
+		icon = GFX_goal_KSH_Assassinate_Gustav
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Unite_the_people
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			country_event = { id = KSH.35 }
+		}
+	}
+	focus = {
+		id = KSH_kill_kill_kill
+		icon = GFX_goal_KSH_kill_kill_kill
+		cost = 15.00
+		prerequisite = {
+			focus = KSH_The_People_Army_is_advancing
+		}
+		prerequisite = {
+			focus = KSH_Assassinate_Gustav
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			country_event = { id = KSH.36 }
+		}
+	}
+	focus = {
+		id = KSH_Long_live_Goebbels
+		icon = GFX_goal_KSH_Long_live_Goebbels
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_kill_kill_kill
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			country_event = { KSH.42 }
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+	}
+	focus = {
+		id = KSH_One_nation_one_country_one_leader
+		icon = GFX_goal_KSH_One_nation_one_country_one_leader
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_Long_live_Goebbels
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			country_event = {
+				days = 35
+				id = KSH.44
+			}
+			add_ideas = yitihua
+		}
+	}
+	focus = {
+		id = KSH_Long_live_the_nation_Long_live_the_people
+		icon = GFX_goal_KSH_Long_live_the_nation_Long_live_the_people
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_Long_live_Goebbels
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+			country_event = { id = KSH.43}
+		}
+	}
+	focus = {
+		id = KSH_Defeat_imperialism
+		icon = GFX_goal_KSH_Defeat_imperialism
+		cost = 5.00
+		prerequisite = {
+			focus = KSH_One_nation_one_country_one_leader
+		}
+		prerequisite = {
+			focus = KSH_Long_live_the_nation_Long_live_the_people
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+			add_stability = -0.05
+			60 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			62 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		    } 
+			870 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}  
+	        }
+		}
+	}
+	focus = {
+		id = KSH_Set_up_secret_police
+		icon = GFX_goal_KSH_Set_up_secret_police
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Defeat_imperialism
+		}
+		x = 4
+		y = 9
+		completion_reward = {
+			add_ideas = gaishitaibao
+		}
+	}
+	focus = {
+		id = KSH_Establish_a_national_planned_economy
+		icon = GFX_goal_KSH_Establish_a_national_planned_economy
+		cost = 6.00
+		prerequisite = {
+			focus = KSH_Defeat_imperialism
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			add_ideas = xin_xiongyingjihua
+		}
+	}
+	focus = {
+		id = KSH_Set_up_the_National_Revolutionary_Guard
+		icon = GFX_goal_KSH_Set_up_the_National_Revolutionary_Guard
+		cost = 3.00
+		prerequisite = {
+			focus = KSH_Set_up_secret_police
+		}
+		prerequisite = {
+			focus = KSH_Establish_a_national_planned_economy
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_guojiarenminjun
+				add_idea = minzugemingweidui
+			}
+		}
+	}
+	focus = {
+		id = KSH_Establishment_of_the_Germanic_Ministry_of_Culture
+		icon = GFX_goal_KSH_Establishment_of_the_Germanic_Ministry_of_Culture
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Set_up_the_National_Revolutionary_Guard
+		}
+		x = 3
+		y = 11		
+		completion_reward = {
+			country_event = { id = KSH.52 }
+		}
+
+	}
+	focus = {
+		id = KSH_War_with_Christians
+		icon = GFX_goal_KSH_War_with _Christians
+		cost = 5.00
+		prerequisite = {
+			focus = KSH_Set_up_the_National_Revolutionary_Guard
+		}
+		x = 6
+		y = 11
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = KSH_The_Second_Night_of_Long_Sabre
+		icon = GFX_goal_KSH_The_Second_Night_of_Long_Sabre
+		cost = 5.00
+		select_effect = {
+			add_ideas = jinghua
+		}
+		prerequisite = {
+			focus = KSH_War_with_Christians
+		}
+		x = 6
+		y = 12
+
+        select_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			hidden_effect = {
+				remove_ideas = jinghua
+			}
+		}
+
+		completion_reward = {
+			country_event = { id = KSH.46 }
+		}
+	}
+	focus = {
+		id = KSH_My_glory_is_loyalty
+		icon = GFX_goal_KSH_My_glory_is_loyalty
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_The_Second_Night_of_Long_Sabre
+		}
+		x = 6
+		y = 13
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = gaishitaibao
+				add_idea = My_glory_is_loyalty
+			}
+		}
+	}
+	focus = {
+		id = KSH_There_is_no_end_to_revolution
+		icon = GFX_goal_KSH_There_is_no_end_to_revolution
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_Establish_the_National_Publicity_Department
+		}
+		x = 3
+		y = 13
+		completion_reward = {
+			country_event = { id = KSH.51}
+		}
+	}
+	focus = {
+		id = KSH_Endless_construction
+		icon = GFX_goal_KSH_Endless_construction
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_Enlarge_the_labor_front_of_Bosnia
+		}
+		x = 9
+		y = 13
+		completion_reward = {
+			country_event = { id = KSH.52 }
+			swap_ideas = {
+				remove_idea = xin_xiongyingjihua
+				add_idea = xin_xiongyingjihua_1
+			}
+		}
+	}
+	focus = {
+		id = KSH_Victory_of_will
+		icon = GFX_goal_KSH_Victory_of_will
+		cost = 2.00
+		prerequisite = {
+			focus = KSH_My_glory_is_loyalty
+		}
+		prerequisite = {
+			focus = KSH_There_is_no_end_to_revolution
+		}
+		prerequisite = {
+			focus = KSH_Endless_construction
+		}
+		x = 6
+		y = 14
+		completion_reward = {
+			country_event = { id = KSH.45 }
+		}
+	}
+	focus = {
+		id = KSH_Formation_of_Goebbels_Youth_Army
+		icon = GFX_goal_KSH_Formation_of_Goebbels_Youth_Army
+		cost = 3.00
+		prerequisite = {
+			focus = KSH_Set_up_the_National_Revolutionary_Guard
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			add_ideas = Formation_of_Goebbels_Youth_Army
+		}
+	}
+	focus = {
+		id = KSH_Enlarge_the_labor_front_of_Bosnia
+		icon = GFX_goal_KSH_Enlarge_the_labor_front_of_Bosnia
+		cost = 3.00
+		prerequisite = {
+			focus = KSH_Formation_of_Goebbels_Youth_Army
+		}
+		x = 9
+		y = 12
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSH_bomeilaniyalaogongzhenxian_1
+				add_idea = KSH_bomeilaniyalaogongzhenxian_2
+			}
+
+		}
+	}
+	focus = {
+		id = KSH_Establish_the_National_Publicity_Department
+		icon = GFX_goal_KSH_Establish_the_National_Publicity_Department
+		cost = 4.00
+		prerequisite = {
+			focus = KSH_Establishment_of_the_Germanic_Ministry_of_Culture
+		}
+		x = 3
+		y = 12
+		completion_reward = {
+			add_ideas = the_National_Publicity_Department
+			hidden_effect = {
+				load_focus_tree = KSH_3 
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+defined_text = {
+   name = event_picture_change
+   
+   text = {
+        trigger = {
+		original_tag = RUS
+		has_government = marxism 
+		}
+		localization_key = GFX_AOR_event_picture_change_1
+	}
+	
+   text = {
+        trigger = {
+		original_tag = NAU
+		has_government = Fascism }
+		localization_key = GFX_AOR_event_picture_change_2
+	}
+	
+   text = {
+        trigger = {
+		original_tag = BEL
+		has_government = CON_democratic }
+		localization_key = GFX_AOR_event_picture_change_3
+	}
+   text = {
+        trigger = {original_tag = ENG }
+		localization_key = GFX_AOR_event_picture_change_4
+	}
+   text = {
+        trigger = {original_tag = GER }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = NAU }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = HAN }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = BAV }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = WUR }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = SAX }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = PRE }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+	   text = {
+        trigger = {original_tag = MEK }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+		text = {
+        trigger = {original_tag = KSH }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+		text = {
+        trigger = {original_tag = SHL }
+		localization_key = GFX_AOR_event_picture_change_5
+	}
+   text = {
+        trigger = {original_tag = FRA }
+		localization_key = GFX_AOR_event_picture_change_6
+	}
+   text = {
+        trigger = {original_tag = VAT }
+		localization_key = GFX_AOR_event_picture_change_7
+	}
+   text = {
+        trigger = {original_tag = YUG }
+		localization_key = GFX_AOR_event_picture_change_8
+	}
+   text = {
+        trigger = {original_tag = CHI }
+		localization_key = GFX_AOR_event_picture_change_9
+	}
+
+}
