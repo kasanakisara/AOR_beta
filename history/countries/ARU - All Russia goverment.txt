@@ -1,5 +1,8 @@
 capital = 571
 
+oob = "AOR_LAND_ARU" 
+set_convoys = 325
+
 create_country_leader = {
 	name = "Aleksandr Vasilyevich Kolchak"
 	desc = "A_V_K_DESC"
