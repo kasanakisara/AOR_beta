@@ -1,0 +1,197 @@
+spriteTypes = {
+
+
+	####本文档是逻各斯的interface！别整合了，，，怪累挺，以后我interface就更新在这里了，就不会不小心覆盖别人的了（（（#####
+    ####此处是阿工团的内战时国策树###
+	#icon#
+
+		spriteType = {
+		name = "GFX_goal_ORA_strike_going_on"
+		texturefile = "gfx/interface/goals/goal_ORA_strike_going_on.png"
+	}
+		spriteType = {
+		name = "GFX_goal_ORA_the_blood_debt"
+		texturefile = "gfx/interface/goals/goal_ORA_the_blood_debt.png"
+	}
+	    spriteType = {
+		name = "GFX_goal_ORA_Go_to_barricade"
+		texturefile = "gfx/interface/goals/goal_ORA_Go_to_barricade.png"
+	}
+	    spriteType = {
+		name = "GFX_goal_ORA_Union_leader"
+		texturefile = "gfx/interface/goals/goal_ORA_Union_leader.png"
+	}
+	    spriteType = {
+		name = "GFX_goal_ORA_Workers_autonomy"
+		texturefile = "gfx/interface/goals/goal_ORA_Workers_autonomy.png"
+	}
+	    spriteType = {
+		name = "GFX_goal_ORA_Steel_and_hymns"
+		texturefile = "gfx/interface/goals/goal_ORA_Steel_and_hymns.png"
+	}
+	    spriteType = {
+		name = "GFX_goal_ORA_daybreak"
+		texturefile = "gfx/interface/goals/goal_ORA_daybreak.png"
+	}
+	##内阁##
+	spriteType = { #塞巴斯蒂安·马罗塔
+		name = "GFX_portrait_Sai_Ba_Si_Di_An_Ma_Luo_Ta_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Sai_Ba_Si_Di_An_Ma_Luo_Ta.png"
+	}
+	spriteType = { #塞巴斯蒂安·马罗塔
+		name = "GFX_portrait_Sai_Ba_Si_Di_An_Ma_Luo_Ta"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Ba_Si_Di_An_Ma_Luo_Ta.dds"
+	}
+	spriteType = { #加布里埃拉·拉佩里埃
+		name = "GFX_portrait_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai.png"
+	}
+	spriteType = { #加布里埃拉·拉佩里埃
+		name = "GFX_portrait_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai.dds"
+	}
+	spriteType = { #胡安娜·鲁科·布埃拉
+		name = "GFX_portrait_Hu_An_Na_Lu_Ke_Bu_Ai_La_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_Na_Lu_Ke_Bu_Ai_La.png"
+	}
+	spriteType = { #胡安娜·鲁科·布埃拉
+		name = "GFX_portrait_Hu_An_Na_Lu_Ke_Bu_Ai_La"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Na_Lu_Ke_Bu_Ai_La.dds"
+	}
+	spriteType = { #埃米利奥·洛佩茨·阿朗戈
+		name = "GFX_portrait_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge.png"
+	}
+	spriteType = { #埃米利奥·洛佩茨·阿朗戈
+		name = "GFX_portrait_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge.dds"
+	}
+	spriteType = { #何塞·玛丽亚·博雷罗
+		name = "GFX_portrait_He_Sai_Ma_Li_Ya_Bo_Lei_Luo_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_He_Sai_Ma_Li_Ya_Bo_Lei_Luo.png"
+	}
+	spriteType = { #何塞·玛丽亚·博雷罗
+		name = "GFX_portrait_He_Sai_Ma_Li_Ya_Bo_Lei_Luo"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Sai_Ma_Li_Ya_Bo_Lei_Luo.dds"
+	}
+	spriteType = { #安东尼奥·索托
+		name = "GFX_portrait_An_Dong_Ni_Ao_Suo_Tuo_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_An_Dong_Ni_Ao_Suo_Tuo.png"
+	}
+	spriteType = { #安东尼奥·索托
+		name = "GFX_portrait_An_Dong_Ni_Ao_Suo_Tuo"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_An_Dong_Ni_Ao_Suo_Tuo.dds"
+	}
+	spriteType = { #迭戈·阿巴德·德·桑蒂兰
+		name = "GFX_portrait_Die_Ge_A_Ba_De_De_Sang_Di_Lan_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Die_Ge_A_Ba_De_De_Sang_Di_Lan.png"
+	}
+	spriteType = { #迭戈·阿巴德·德·桑蒂兰
+		name = "GFX_portrait_Die_Ge_A_Ba_De_De_Sang_Di_Lan"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Die_Ge_A_Ba_De_De_Sang_Di_Lan.dds"
+	}
+	spriteType = { #弗吉尼亚·博尔滕
+		name = "GFX_portrait_Fu_Ji_Ni_Ya_Bo_Er_Teng_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Fu_Ji_Ni_Ya_Bo_Er_Teng.png"
+	}
+	spriteType = { #弗吉尼亚·博尔滕
+		name = "GFX_portrait_Fu_Ji_Ni_Ya_Bo_Er_Teng"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Ji_Ni_Ya_Bo_Er_Teng.dds"
+	}
+	spriteType = { #塞韦里诺·迪·乔瓦尼
+		name = "GFX_portrait_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni.png"
+	}
+	spriteType = { #塞韦里诺·迪·乔瓦尼
+		name = "GFX_portrait_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni.dds"
+	}
+	spriteType = { #华金·佩尼纳
+		name = "GFX_portrait_Hua_Jin_Pei_Ni_Na_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hua_Jin_Pei_Ni_Na.png"
+	}
+	spriteType = { #华金·佩尼纳
+		name = "GFX_portrait_Hua_Jin_Pei_Ni_Na"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hua_Jin_Pei_Ni_Na.dds"
+	}
+	spriteType = { #伊斯梅尔·佩德罗·比尼亚斯
+		name = "GFX_portrait_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si.png"
+	}
+	spriteType = { #伊斯梅尔·佩德罗·比尼亚斯
+		name = "GFX_portrait_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si.dds"
+	}
+	spriteType = { #约翰·克里格
+		name = "GFX_portrait_Yue_Han_Ke_Li_Ge_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Yue_Han_Ke_Li_Ge.png"
+	}
+	spriteType = { #约翰·克里格
+		name = "GFX_portrait_Yue_Han_Ke_Li_Ge"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Yue_Han_Ke_Li_Ge.dds"
+	}
+	spriteType = { #库尔特·古斯塔夫·威尔肯斯
+		name = "GFX_portrait_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si.png"
+	}
+	spriteType = { #库尔特·古斯塔夫·威尔肯斯
+		name = "GFX_portrait_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si.dds"
+	}
+	spriteType = { #弗洛伦西奥·桑切斯
+		name = "GFX_portrait_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si.png"
+	}
+	spriteType = { #弗洛伦西奥·桑切斯
+		name = "GFX_portrait_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si.dds"
+	}
+	spriteType = { #赫米马亚布鲁马纳
+		name = "GFX_portrait_He_Mi_Ma_Ya_Bu_Lu_Ma_Na_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_He_Mi_Ma_Ya_Bu_Lu_Ma_Na.png"
+	}
+	spriteType = { #赫米马亚布鲁马纳
+		name = "GFX_portrait_He_Mi_Ma_Ya_Bu_Lu_Ma_Na"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Mi_Ma_Ya_Bu_Lu_Ma_Na.dds"
+	}
+	spriteType = { #皮埃尔·基鲁勒
+		name = "GFX_portrait_Pi_Ai_Er_Ji_Lu_Le_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Pi_Ai_Er_Ji_Lu_Le.png"
+	}
+	spriteType = { #皮埃尔·基鲁勒
+		name = "GFX_portrait_Pi_Ai_Er_Ji_Lu_Le"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Pi_Ai_Er_Ji_Lu_Le.dds"
+	}
+	spriteType = { #胡安·多明戈·庇隆
+		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_Duo_Ming_Ge_Bi_Long.png"
+	}
+	spriteType = { #胡安·多明戈·庇隆
+		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Duo_Ming_Ge_Bi_Long.dds"
+	}
+	spriteType = { #胡安·安东尼奥·莫兰
+		name = "GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_An_Dong_Ni_Ao_Mo_Lan.dds"
+	}
+	spriteType = { #胡安·安东尼奥·莫兰
+		name = "GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan.dds"
+	}
+	spriteType = { #萨尔瓦多·普拉纳斯·维雷拉
+		name = "GFX_portrait_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La.png"
+	}
+	spriteType = { #萨尔瓦多·普拉纳斯·维雷拉
+		name = "GFX_portrait_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La.dds"
+	}
+	spriteType = { #西蒙·拉多维茨基
+		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji_small"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
+	}
+	spriteType = { #西蒙·拉多维茨基
+		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.dds"
+	}
+}

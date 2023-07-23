@@ -1,0 +1,8 @@
+AOR_ORA_zhu_jiu_gang_tie = {
+	icon = category_generic
+	visible = {
+		TAG = ORA
+		has_country_flag = unlock_AOR_ORA_zhu_jiu_gang_tie
+	}
+	priority = 100
+}

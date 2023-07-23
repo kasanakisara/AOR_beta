@@ -1,0 +1,124 @@
+add_namespace = AOR_ORA_events
+
+country_event = {
+	id = AOR_ORA_events.1 #太阳神的陨落
+    picture = GFX_AOR_ORA_events.1
+    title = AOR_ORA_events.1.t
+    desc = AOR_ORA_events.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+	
+    option = { 
+        name = AOR_ORA_events.1.a
+		trigger = {
+		}
+	}
+}
+country_event = {
+	id = AOR_ORA_events.2 #劫狱计划#1
+    picture = GFX_AOR_ORA_events.2
+    title = AOR_ORA_events.2.t
+    desc = AOR_ORA_events.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+	
+    option = { 
+        name = AOR_ORA_events.2.a
+		trigger = {
+		}
+	}
+}
+country_event = {
+	id = AOR_ORA_events.3 #弹出事件将【工人上前线！】替换为【工人上前线！#2】
+    picture = GFX_AOR_ORA_events.3
+    title = AOR_ORA_events.3.t
+    desc = AOR_ORA_events.3.d
+    is_triggered_only = yes
+	hidden = no
+	
+    option = { 
+        name = AOR_ORA_events.3.a
+		trigger = {
+            NOT = {
+                has_country_flag = AOR_ORA_events.3-1
+            }
+		}
+        swap_ideas = {
+            remove_idea = ORA_gong_ren_shang_qian_xian
+            add_idea = ORA_gong_ren_shang_qian_xian_1		
+        }
+        set_country_flag = AOR_ORA_events.3-1
+	}
+    option = { 
+        name = AOR_ORA_events.3.b
+		trigger = {
+            has_country_flag = AOR_ORA_events.3-1
+            NOT = {
+                has_country_flag = AOR_ORA_events.3-2
+            }
+		}
+        swap_ideas = {
+            remove_idea = ORA_gong_ren_shang_qian_xian_1
+            add_idea = ORA_gong_ren_shang_qian_xian_2		
+        }
+        set_country_flag = AOR_ORA_events.3-2
+	}
+    option = { 
+        name = AOR_ORA_events.3.c
+		trigger = {
+            has_country_flag = AOR_ORA_events.3-2
+		}
+        swap_ideas = {
+            remove_idea = ORA_gong_ren_shang_qian_xian_2	
+            add_idea = ORA_gong_ren_shang_qian_xian_3		
+        }
+	}
+    
+}
+country_event = {
+    id = AOR_ORA_events.4 #守住街垒
+    picture = GFX_AOR_ORA_events.4
+    title = AOR_ORA_events.4.t
+    desc = AOR_ORA_events.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.4.a
+        trigger = {
+        }
+    }
+}
+country_event = {
+    id = AOR_ORA_events.5#内战白热化
+    picture = GFX_AOR_ORA_events.5
+    title = AOR_ORA_events.5.t
+    desc = AOR_ORA_events.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.5.a
+        trigger = {
+        }
+    }
+}
+country_event = {
+    id = AOR_ORA_events.6#曙光初现
+    picture = GFX_AOR_ORA_events.6
+    title = AOR_ORA_events.6.t
+    desc = AOR_ORA_events.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.6.a
+        trigger = {
+        }
+    }
+}

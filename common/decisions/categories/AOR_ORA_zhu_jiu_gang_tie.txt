@@ -1,0 +1,8 @@
+AOR_ORA_hu_yv_zong_ba_gong = {
+	icon = category_generic
+	visible = {
+		TAG = ORA
+		has_country_flag = unlock_AOR_ORA_hu_yv_zong_ba_gong
+	}
+	priority = 100
+}

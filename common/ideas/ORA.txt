@@ -21,9 +21,90 @@ ideas = {
 			picture = GFX_idea_ORA_Spark
 			allowed = { always = yes }
 			modifier = {
-			army_defence_factor = 0.1
 			join_faction_tension = 2
 			surrender_limit = 0.2
 			}
 		}
+		ORA_Spark_1 = {
+			picture = GFX_idea_ORA_Spark
+			allowed = { always = yes }
+			modifier = {
+				army_defence_factor = 0.1 #陆军防御
+			join_faction_tension = 2
+			surrender_limit = 0.2
+			}
+		}
+		ORA_gong_ren_shang_qian_xian = {
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = -0.15 #工厂产出
+				ai_focus_aggressive_factor = 0.15 #ai修正:专注进攻的值
+				monthly_population = 0.15 #月度人力
+				recon_factor = 0.5 #陆军侦查
+			}
+		}
+		ORA_gong_ren_shang_qian_xian_1 = {
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = -0.2 #工厂产出
+				ai_focus_aggressive_factor = 0.15 #ai修正:专注进攻的值
+				monthly_population = 0.15 #月度人力
+				recon_factor = 0.5 #陆军侦查
+			}
+		}
+		ORA_gong_ren_shang_qian_xian_2 = {
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = -0.25 #工厂产出
+				ai_focus_aggressive_factor = 0.15 #ai修正:专注进攻的值
+				monthly_population = 0.15 #月度人力
+				recon_factor = 0.5 #陆军侦查
+			}
+		}
+		ORA_gong_ren_shang_qian_xian_3 = {
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = -0.3 #工厂产出
+				ai_focus_aggressive_factor = 0.15 #ai修正:专注进攻的值
+				monthly_population = 0.15 #月度人力
+				recon_factor = 0.5 #陆军侦查
+			}
+		}
+		ORA_gong_hui_ling_dao = {
+			picture = GFX_idea_gong_hui_ling_dao
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				political_power_cost = 0.1
+			}
+		}
+		ORA_Workers_autonomy = {
+			picture = GFX_ORA_Workers_autonomy
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				political_power_cost = 0.1
+			}
+		}
+		ORA_xin_da_lu_mo_shi = {
+			picture = GFX_ORA_xin_da_lu_mo_shi
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				political_power_cost = 0.2
+			}
+		}
+	}
 }

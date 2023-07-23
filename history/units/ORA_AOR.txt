@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "División de Infanteria"		# Infantry Division
+	name = "工人武装赤卫队"		# Infantry Division
 	division_names_group = SPAN_INF_02
 
 	regiments = {
@@ -10,133 +10,75 @@
 	}
 }
 
+division_template = {
+	name = "学生武装力量"		# Infantry Division
+	division_names_group = SPAN_INF_03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
 units = {
-	##### Ejército Argentino #####
-	division= {	# "1era División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 10515	# Buenos Aires
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "2da División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 7500 # Southern Argentina
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "3era División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
+	division= {	
+		name = "科尔多瓦铁路工人第一纵队"
 		location = 7500 # Parana
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		division_template = "工人武装赤卫队"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
-	division= {	# "4ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
+	division= {	
+		name = "卡塔马卡矿业工人赤卫队"
 		location = 8208# Cordoba
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		division_template = "工人武装赤卫队"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
-	division= {	# "5ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
+	division= {	
+		name = "胡胡伊省矿业工人赤卫队"
 		location = 10985 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		division_template = "工人武装赤卫队"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
 
-	division= {	# "6ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 10975 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+	division= {	
+		name = "胡圣安省矿业工人赤卫队"
+		location = 8187 # Salta
+		division_template = "工人武装赤卫队"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
+	#######学联######
+	division= {	
+		name = "科尔多瓦学联第一纵队"
+		location = 7500 # Southern Argentina
+		division_template = "学生武装力量"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
-	division= {	# "7ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
+	}
+	division= {	
+		name = "科尔多瓦学联第二纵队"
 		location = 5143 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		division_template = "学生武装力量"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
-	
-	division= {	# "8ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 8
-		}
-		location = 11007 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	
-	division= {	# "9ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 12922 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	
-	division= {	# "10ta División del Ejercito"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 10
-		}
-		location = 8169 # Salta
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+	division= {	
+		name = "科尔多瓦学联第三纵队"
+		location = 5213 # Salta
+		division_template = "学生武装力量"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
 
 	}
 }
 
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "ROA"
-		}
-		requested_factories = 1
-		progress = 0.19
-		efficiency = 500
-	}
-}
+

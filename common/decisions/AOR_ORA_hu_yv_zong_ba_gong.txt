@@ -1,0 +1,47 @@
+AOR_ORA_hu_yv_zong_ba_gong = {
+	AOR_ORA_hu_yv_zong_ba_gong_hu_yv_zong_ba_gong = {   
+		icon = category_generic
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 60
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					ARG = {
+						has_idea = ARG_zong_ba_gong_jin_xing_shi
+					}
+				}
+				swap_ideas = {
+					remove_idea = ARG_zong_ba_gong_jin_xing_shi
+					add_idea = ARG_zong_ba_gong_jin_xing_shi_1
+				}
+			}
+			if = {
+				limit = {
+					ARG = {
+						has_idea = ARG_zong_ba_gong_jin_xing_shi_1
+					}
+				}
+				swap_ideas = {
+					remove_idea = ARG_zong_ba_gong_jin_xing_shi_1
+					add_idea = ARG_zong_ba_gong_jin_xing_shi_2
+				}
+			}
+			if = {
+				limit = {
+					ARG = {
+						has_idea = ARG_zong_ba_gong_jin_xing_shi_2
+					}
+				}
+				swap_ideas = {
+					remove_idea = ARG_zong_ba_gong_jin_xing_shi_2
+					add_idea = ARG_zong_ba_gong_jin_xing_shi_3
+				}
+			}
+		}
+	}
+}
