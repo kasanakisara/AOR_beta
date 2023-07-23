@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = YUG
+		owner = DAL
 		victory_points = {
 			9894 3
 		}
@@ -29,6 +29,7 @@ state={
 		add_core_of = BOS
 		add_core_of = HRZ
 		add_core_of = ITA
+		add_core_of = DAL
 	}
 
 	provinces={
