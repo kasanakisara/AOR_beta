@@ -295,16 +295,28 @@ technologies = {
 	artillery5 = {
 
 		artillery = {
-			soft_attack = 0.05
-			reliability = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.05
-			reliability = 0.05
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		light_sp_artillery_brigade = {
 			soft_attack = 0.05
-			reliability = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		super_heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		modern_sp_artillery_brigade= {
+			soft_attack = 0.05
 		}
 
 		research_cost = 1
@@ -431,16 +443,8 @@ technologies = {
 
 	Trench_mortars2 = {
 
-		Mortarbrigade = {
-			soft_attack = 0.1
-		}
-
-		Mortarsupport = {
-			soft_attack = 0.1
-		}
-
-		Mortarbrigade_motorized = {
-			soft_attack = 0.1
+		enable_equipments = {
+			paijipao_0
 		}
 
 		path = {
@@ -469,8 +473,17 @@ technologies = {
 
 	Trench_mortars3 = {
 
-		enable_equipments = {
-			paijipao_0
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -503,16 +516,17 @@ technologies = {
 
 	Trench_mortars4 = {
 
-		Mortarbrigade = {
-			soft_attack = 0.1
+		rocket_artillery = {
+			soft_attack = 0.15
 		}
-
-		Mortarsupport = {
-			soft_attack = 0.1
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
 		}
-
-		Mortarbrigade_motorized = {
-			soft_attack = 0.1
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -545,8 +559,17 @@ technologies = {
 
 	Trench_mortars5 = {
 
-		enable_equipments = {
-			paijipao_1
+		rocket_artillery = {
+			soft_attack = 0.15
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
 		}
 
 		research_cost = 1
@@ -633,6 +656,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
+			tank_heavy_cannon
+			tank_buster_1
 		}
 		path = {
 			leads_to_tech = antiair4
@@ -646,7 +671,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1923
+		start_year = 1918
 
 
 
@@ -712,38 +737,40 @@ technologies = {
 	antiair4 = { #虽然写着防空机枪 但是是反坦克
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.2
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.2
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.1
+			ap_attack = 0.2
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.15
+			ap_attack = 0.2
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.15
+			ap_attack = 0.2
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.15
+			ap_attack = 0.2
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.15
+			ap_attack = 0.2
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.15
+			ap_attack = 0.2
 		}
 
 		enable_equipment_modules = {
+			tank_medium_cannon
+			squeezebore_adaptor
 		}
 		path = {
 			leads_to_tech = antiair5
@@ -752,7 +779,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1925
+		start_year = 1920
 
 		folder = {
 			name = artillery_folder
@@ -800,7 +827,10 @@ technologies = {
 	}
 
 	antiair5 = { #虽然写着防空机枪 但是是反坦克
-
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
 
 		enable_equipments = {
 			anti_tank_equipment_2
@@ -812,7 +842,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1928
+		start_year = 1922
 
 		folder = {
 			name = artillery_folder
@@ -872,8 +902,14 @@ technologies = {
 	################################################
 
 	interwar_antitank = { #虽然写着反坦克 但是是防空机枪
-		enable_equipments = {
-			anti_air_equipment_1
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
 		}
 
 
@@ -893,7 +929,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1919
+		start_year = 1923
 
 
 
@@ -932,7 +968,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.01
+		tech_air_damage_factor = -0.0
 
 		path = {
 			leads_to_tech = antitank2
@@ -941,7 +977,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1923
+		start_year = 1925
 
 		folder = {
 			name = artillery_folder
@@ -981,7 +1017,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1921
+		start_year = 1927
 
 		folder = {
 			name = artillery_folder
@@ -1019,16 +1055,41 @@ technologies = {
 	}
 
 	antitank3 = {
-		anti_air = {
-			air_attack = 0.1
+		enable_equipment_modules = {
+			tank_medium_cannon_2
 		}
-		anti_air_brigade = {
-			air_attack = 0.1
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
-		mot_anti_air_brigade = {
-			air_attack = 0.1
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
-
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
 
 		path = {
 			leads_to_tech = antitank4
@@ -1085,19 +1146,45 @@ technologies = {
 
 		categories = {
 			artillery
-			cat_anti_air
+			cat_anti_tank
 		}
 	}
 
 	antitank4 = {
-		anti_air = {
-			air_attack = 0.1
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_2
 		}
-		anti_air_brigade = {
-			air_attack = 0.1
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
-		mot_anti_air_brigade = {
-			air_attack = 0.1
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 
 		path = {
@@ -1150,19 +1237,23 @@ technologies = {
 
 		categories = {
 			artillery
-			cat_anti_air
+			cat_anti_tank
 		}
 	}
 
 	antitank5 = {
 
 		enable_equipments = {
-			anti_air_equipment_3
+			anti_tank_equipment_3
 		}
-
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			auto_loader
+		}
 		research_cost = 1
 
-		start_year = 1928
+		start_year = 1927
 
 		folder = {
 			name = artillery_folder
@@ -1210,7 +1301,7 @@ technologies = {
 
 		categories = {
 			artillery
-			cat_anti_air
+			cat_anti_tank
 		}
 	}
 
