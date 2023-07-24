@@ -106,5 +106,15 @@ ideas = {
 				political_power_cost = 0.2
 			}
 		}
+		ORA_lian_he_zheng_fu = {
+			picture = GFX_ORA_lian_he_zheng_fu 
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				political_power_daily = 0.05
+				war_support_factor = 0.05
+				
+			}
+		}
 	}
 }

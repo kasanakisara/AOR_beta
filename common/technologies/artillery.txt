@@ -31,9 +31,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_anti_air_1
 			tank_small_cannon
-			secondary_turret_small_cannon
 		}
 
 		research_cost = 1.5
@@ -50,21 +48,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
 		}
 	}
 
@@ -112,6 +95,12 @@ technologies = {
 
 		enable_equipments = {
 			artillery_equipment_2
+		}
+		enable_equipment_modules = {
+			tank_medium_howitzer
+			tank_medium_cannon
+			secondary_turret_close_support_gun
+			tank_close_support_gun
 		}
 
 		path = {
@@ -213,7 +202,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_howitzer_2
+			tank_heavy_howitzer
 		}
 
 		path = {
@@ -254,6 +243,11 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_3
 		}
+
+		enable_equipment_modules = {
+			tank_medium_howitzer_2
+		}
+
 		path = {
 			leads_to_tech = artillery5
 			research_cost_coeff = 1
@@ -305,6 +299,10 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.05
 			reliability = 0.05
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_howitzer
 		}
 
 		research_cost = 1
@@ -872,8 +870,13 @@ technologies = {
 	################################################
 
 	interwar_antitank = { #虽然写着反坦克 但是是防空机枪
+
 		enable_equipments = {
 			anti_air_equipment_1
+		}
+
+		enable_equipment_modules = {
+			tank_auto_cannon
 		}
 
 
@@ -890,12 +893,9 @@ technologies = {
 			position = { x = 7 y = 2 }
 		}
 
-
 		research_cost = 1
 
 		start_year = 1919
-
-
 
 		ai_will_do = {
 			factor = 1
