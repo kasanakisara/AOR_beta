@@ -21,7 +21,6 @@ focus_tree={
 		bypass={
 		}
 		completion_reward={
-			add_ideas = ORA_lian_he_zheng_fu
 		}
 	}
 	focus={
@@ -40,10 +39,6 @@ focus_tree={
 		has_completed_focus = ORA_pansasidhx
 		}
 		completion_reward={
-			every_controlled_state = {
-				add_building_construction = {
-					
-				}
 			}
 		}
 	}
