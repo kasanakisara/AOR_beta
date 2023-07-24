@@ -142,7 +142,7 @@ ideas = {
 		
 		Reclaiming_outer_northwest = {
 			
-			picture = idea_Reclaiming_outer_northwest
+			picture = GFX_idea_Reclaiming_outer_northwest
 			
 			allowed = {
 				always = yes
@@ -162,7 +162,7 @@ ideas = {
 		
 		CHI_Northwest_joint_command = {
 			
-			picture = idea_CHI_Northwest_joint_command
+			picture = GFX_idea_CHI_Northwest_joint_command
 			
 			allowed = {
 				always = yes
@@ -182,7 +182,7 @@ ideas = {
 		
 		CHI_Military_aid_from_the_Allies = {
 			
-			picture = idea_CHI_Military_aid_from_the_Allies
+			picture = GFX_idea_CHI_Military_aid_from_the_Allies
 			
 			allowed = {
 				always = yes
@@ -200,7 +200,7 @@ ideas = {
 		
 		CHI_debt_of_the_northwest_war = {
 			
-			picture = idea_CHI_debt_of_the_northwest_war
+			picture = GFX_idea_CHI_debt_of_the_northwest_war
 			
 			allowed = {
 				always = yes
@@ -218,7 +218,7 @@ ideas = {
 		#对华公约
 		CHI_Convention_on_China = {
 			
-			picture = idea_CHI_Convention_on_China
+			picture = GFX_idea_CHI_Convention_on_China
 			
 			allowed = {
 				always = yes
@@ -237,7 +237,7 @@ ideas = {
 		
 		CHI_feudal_economy = {
 			
-			picture = idea_CHI_feudal_economy
+			picture = GFX_idea_CHI_feudal_economy
 			
 			allowed = {
 				always = yes
@@ -257,7 +257,7 @@ ideas = {
 		
 		#官僚资本
 		CHI_bureaucrat_capital = {
-			picture = idea_CHI_bureaucrat_capital
+			picture = GFX_idea_CHI_bureaucrat_capital
 			allowed = {
 				always = yes
 			}
@@ -274,7 +274,7 @@ ideas = {
 		
 		#地方割据
 			CHI_Territorial_separation = {
-			picture = idea_CHI_Territorial_separation
+			picture = GFX_idea_CHI_Territorial_separation
 			allowed = {
 				always = yes
 			}
@@ -292,7 +292,7 @@ ideas = {
 		
 		#兵为将有
 		CHI_soldiers_will_ready = {
-			picture = idea_CHI_soldiers_will_ready
+			picture = GFX_idea_CHI_soldiers_will_ready
 			allowed = {
 				always = yes
 			}
@@ -310,7 +310,7 @@ ideas = {
 		
 		#旧式军队
 		CHI_Old_army = {
-			picture = idea_CHI_Old_army 
+			picture = GFX_idea_CHI_Old_army 
 			allowed = {
 				always = yes
 			}
@@ -329,7 +329,7 @@ ideas = {
 		
 		#教育匮乏
 		CHI_Lack_of_education = {
-			picture = idea_CHI_Lack_of_education
+			picture = GFX_idea_CHI_Lack_of_education
 			allowed = {
 				always = yes
 			}
@@ -349,7 +349,7 @@ ideas = {
 		#萌芽中的民族意识
 		CHI_budding_national_consciousness = {
 			
-			picture = idea_CHI_budding_national_consciousness
+			picture = GFX_idea_CHI_budding_national_consciousness
 			
 			allowed = {
 				always = yes
@@ -366,9 +366,9 @@ ideas = {
 		}
 	
 		#无保障的社会
-		CHI_insecure_society= {
+		CHI_insecure_society = {
 			
-			picture = idea_CHI_insecure_society
+			picture = GFX_idea_CHI_insecure_society
 			
 			allowed = {
 				always = yes
