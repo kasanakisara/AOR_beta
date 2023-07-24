@@ -21,13 +21,13 @@ news_event = {
     #1920比荷卢奥运会
 	option = {
 		name = news_OLYMPICS.1.a
-	trigger = {
+	    trigger = {
 	    NOT = {tag = BEL}
 		}
 	}
 	option = {
 		name = news_OLYMPICS.1.b
-	trigger = {tag = BEL}
+	    trigger = {tag = BEL}
 	}
 }
 
