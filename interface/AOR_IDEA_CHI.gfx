@@ -2,71 +2,66 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_CHI_insecure_society"
-		texturefile = "gfx/interface/ideas/idea_CHI_insecure_society.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_insecure_society.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_budding_national_consciousness"
-		texturefile = "gfx/interface/ideas/idea_CHI_budding_national_consciousness.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_budding_national_consciousness.png"
 	}
 
 	spriteType = {
 		name = "GFX_idea_CHI_Lack_of_education"
-		texturefile = "gfx/interface/ideas/idea_CHI_Lack_of_education.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_Lack_of_education.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_Old_army"
-		texturefile = "gfx/interface/ideas/idea_CHI_Old_army.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_Old_army.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_soldiers_will_ready"
-		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_bureaucrat_capital"
-		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_feudal_economy"
-		texturefile = "gfx/interface/ideas/idea_CHI_feudal_economy.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_feudal_economy.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_Convention_on_China"
-		texturefile = "gfx/interface/ideas/idea_CHI_Convention_on_China.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_Convention_on_China.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_debt_of_the_northwest_war"
-		texturefile = "gfx/interface/ideas/idea_CHI_debt_of_the_northwest_war.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_debt_of_the_northwest_war.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_CHI_Military_aid_from_the_Allies"
-		texturefile = "gfx/interface/ideas/idea_CHI_Military_aid_from_the_Allies.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_Military_aid_from_the_Allies.png"
 	}
 
 	spriteType = {
 		name = "GFX_idea_CHI_Northwest_joint_command"
-		texturefile = "gfx/interface/ideas/idea_CHI_Northwest_joint_command.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_Northwest_joint_command.png"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_Reclaiming_outer_northwest"
-		texturefile = "gfx/interface/ideas/idea_Reclaiming_outer_northwest.dds"
+		texturefile = "gfx/interface/ideas/idea_Reclaiming_outer_northwest.png"
 	}
 	
 	spriteType = {
-		name = "GFX_idea_CHI_Military_aid_from_the_Allies"
-		texturefile = "gfx/interface/ideas/idea_CHI_Military_aid_from_the_Allies.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CHI_Military_aid_from_the_Allies"
-		texturefile = "gfx/interface/ideas/idea_CHI_Military_aid_from_the_Allies.dds"
+		name = "GFX_idea_CHI_Territorial_separation"
+		texturefile = "gfx/interface/ideas/idea_CHI_Territorial_separation.png"
 	}
 }
