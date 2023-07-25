@@ -1,0 +1,2529 @@
+﻿focus_tree = {
+	id = ORA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ORA
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 1400 y = 2000 }
+	initial_show_position = {
+		x = -2
+	}
+
+
+	focus = {
+		id = ORA_focus_1
+		icon = unknown
+		x = 0
+		y = 0
+		prerequisite = { }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = ORA_idea_focus_1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_2
+		icon = unknown
+		x = -5
+		y = 1
+		relative_position_id = ORA_focus_1
+
+		prerequisite = { focus = ORA_focus_1 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORA_idea_focus_1
+				add_idea = ORA_idea_focus_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_3
+		icon = unknown
+		x = -3.5
+		y = 1
+		relative_position_id = ORA_focus_2
+
+		prerequisite = { focus = ORA_focus_2 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_4
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_3
+
+		prerequisite = { focus = ORA_focus_3 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_5
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_4
+
+		prerequisite = { focus = ORA_focus_4 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_6
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_4
+
+		prerequisite = { focus = ORA_focus_4 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_7
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_5
+
+		prerequisite = { focus = ORA_focus_5 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_8
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_6
+
+		prerequisite = { focus = ORA_focus_6 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_9
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_4
+
+		prerequisite = { focus = ORA_focus_7 }
+		prerequisite = { focus = ORA_focus_8 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_10
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_9
+
+		prerequisite = { focus = ORA_focus_9 }
+		mutually_exclusive = { focus = ORA_focus_13 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_11
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_10
+
+		prerequisite = { focus = ORA_focus_10 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_12
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_11
+
+		prerequisite = { focus = ORA_focus_11 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_13
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_9
+
+		prerequisite = { focus = ORA_focus_9 }
+		mutually_exclusive = { focus = ORA_focus_10 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_14
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_13
+
+		prerequisite = { focus = ORA_focus_13 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_15
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_14
+
+		prerequisite = { focus = ORA_focus_14 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+	focus = {
+		id = ORA_focus_16
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_2
+
+		prerequisite = { focus = ORA_focus_2 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_17
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_16
+
+		prerequisite = { focus = ORA_focus_16 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+	focus = {
+		id = ORA_focus_18
+		icon = unknown
+		x = 0
+		y = 4
+		relative_position_id = ORA_focus_17
+
+		prerequisite = { focus = ORA_focus_17 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_19
+		icon = unknown
+		x = -3.5
+		y = 1
+		relative_position_id = ORA_focus_18
+
+		prerequisite = { focus = ORA_focus_18 }
+		prerequisite = { 
+			focus = ORA_focus_15 
+			focus = ORA_focus_12
+		}
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_20
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_19
+
+		prerequisite = { focus = ORA_focus_19 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_21
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_20
+
+		prerequisite = { focus = ORA_focus_20 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+
+	focus = {
+		id = ORA_focus_22
+		icon = unknown
+		x = 3.5
+		y = 1
+		relative_position_id = ORA_focus_2
+
+		prerequisite = { focus = ORA_focus_2 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_23
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_22
+
+		prerequisite = { focus = ORA_focus_22 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+	focus = {
+		id = ORA_focus_24
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_23
+
+		prerequisite = { focus = ORA_focus_23 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_25
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_23
+
+		prerequisite = { focus = ORA_focus_23 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_26
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_23
+
+		prerequisite = { focus = ORA_focus_23 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+
+	focus = {
+		id = ORA_focus_27
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_24
+
+		prerequisite = { focus = ORA_focus_25 }
+		prerequisite = { focus = ORA_focus_24 }
+		prerequisite = { focus = ORA_focus_26 }
+		mutually_exclusive = { focus = ORA_focus_28 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+	focus = {
+		id = ORA_focus_28
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_24
+
+		prerequisite = { focus = ORA_focus_25 }
+		prerequisite = { focus = ORA_focus_24 }
+		prerequisite = { focus = ORA_focus_26 }
+		mutually_exclusive = { focus = ORA_focus_27 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_29
+		icon = unknown
+		x = 0
+		y = 4
+		relative_position_id = ORA_focus_23
+
+		prerequisite = { 
+			focus = ORA_focus_27
+			focus = ORA_focus_28
+		}
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_30
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_29
+
+		prerequisite = { focus = ORA_focus_29 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_31
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_29
+
+		prerequisite = { focus = ORA_focus_29 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_32
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_29
+
+		prerequisite = { focus = ORA_focus_31 }
+		prerequisite = { focus = ORA_focus_30 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_33
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_32
+
+		prerequisite = { focus = ORA_focus_32 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_34
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_32
+
+		prerequisite = { focus = ORA_focus_32 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_35
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_32
+
+		prerequisite = { focus = ORA_focus_33 }
+		prerequisite = { focus = ORA_focus_34 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_36
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_32
+
+		prerequisite = { focus = ORA_focus_35 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_37
+		icon = unknown
+		x = 0
+		y = 4
+		relative_position_id = ORA_focus_18
+
+		prerequisite = { focus = ORA_focus_36 }
+		prerequisite = { focus = ORA_focus_21 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_38
+		icon = unknown
+		x = 5
+		y = 1
+		relative_position_id = ORA_focus_1
+
+		prerequisite = { focus = ORA_focus_1 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_39
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_38
+
+		prerequisite = { focus = ORA_focus_38 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_40
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_39
+
+		prerequisite = { focus = ORA_focus_39 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_41
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_40
+
+		prerequisite = { focus = ORA_focus_40 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_42
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_39
+
+		prerequisite = { focus = ORA_focus_39 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_43
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_42
+
+		prerequisite = { focus = ORA_focus_42 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_44
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_39
+
+		prerequisite = { focus = ORA_focus_41 }
+		prerequisite = { focus = ORA_focus_43 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_45
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_44
+
+		prerequisite = { focus = ORA_focus_44 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_46
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_45
+
+		prerequisite = { focus = ORA_focus_45 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_47
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_46
+
+		prerequisite = { focus = ORA_focus_46 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_48
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_46
+
+		prerequisite = { focus = ORA_focus_46 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_49
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_46
+
+		prerequisite = { focus = ORA_focus_47 }
+		prerequisite = { focus = ORA_focus_48 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_50
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_49
+
+		prerequisite = { focus = ORA_focus_49 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_51
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_50
+
+		prerequisite = { focus = ORA_focus_50 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_52
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_51
+
+		prerequisite = { focus = ORA_focus_51 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_53
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_51
+
+		prerequisite = { focus = ORA_focus_51 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_54
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_51
+
+		prerequisite = { focus = ORA_focus_51 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+	focus = {
+		id = ORA_focus_55
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_53
+
+		prerequisite = { focus = ORA_focus_52 }
+		prerequisite = { focus = ORA_focus_53 }
+		prerequisite = { focus = ORA_focus_54 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_56
+		icon = unknown
+		x = 0
+		y = 14
+		relative_position_id = ORA_focus_1
+
+		prerequisite = { focus = ORA_focus_55 }
+		prerequisite = { focus = ORA_focus_37 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_57
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_56
+
+		prerequisite = { focus = ORA_focus_56 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_58
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_57
+
+		prerequisite = { focus = ORA_focus_57 }
+		mutually_exclusive = { focus = ORA_focus_60 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_59
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_58
+
+		prerequisite = { focus = ORA_focus_58 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_60
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_57
+
+		prerequisite = { focus = ORA_focus_57 }
+		mutually_exclusive = { focus = ORA_focus_58 }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_61
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_60
+
+		prerequisite = { focus = ORA_focus_60 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_62
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_57
+
+		prerequisite = { 
+			focus = ORA_focus_59
+			focus = ORA_focus_61 
+		}
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_63
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_62
+
+		prerequisite = { focus = ORA_focus_62 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_64
+		icon = unknown
+		x = -4
+		y = 1
+		relative_position_id = ORA_focus_63
+
+		prerequisite = { focus = ORA_focus_63 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_65
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_63
+
+		prerequisite = { focus = ORA_focus_63 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_66
+		icon = unknown
+		x = 4
+		y = 1
+		relative_position_id = ORA_focus_63
+
+		prerequisite = { focus = ORA_focus_63 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_67
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_64
+
+		prerequisite = { focus = ORA_focus_64 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_68
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_64
+
+		prerequisite = { focus = ORA_focus_64 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_69
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_65
+
+		prerequisite = { focus = ORA_focus_65 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_70
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_65
+
+		prerequisite = { focus = ORA_focus_65 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_71
+		icon = unknown
+		x = -1
+		y = 1
+		relative_position_id = ORA_focus_66
+
+		prerequisite = { focus = ORA_focus_66 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_72
+		icon = unknown
+		x = 1
+		y = 1
+		relative_position_id = ORA_focus_66
+
+		prerequisite = { focus = ORA_focus_66 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_73
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_64
+
+		prerequisite = { focus = ORA_focus_67 }
+		prerequisite = { focus = ORA_focus_68 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_74
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_65
+
+		prerequisite = { focus = ORA_focus_69 }
+		prerequisite = { focus = ORA_focus_70 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_75
+		icon = unknown
+		x = 0
+		y = 2
+		relative_position_id = ORA_focus_66
+
+		prerequisite = { focus = ORA_focus_71 }
+		prerequisite = { focus = ORA_focus_72 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_76
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_74
+
+		prerequisite = { focus = ORA_focus_73 }
+		prerequisite = { focus = ORA_focus_74 }
+		prerequisite = { focus = ORA_focus_75 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_77
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_76
+
+		prerequisite = { focus = ORA_focus_76 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_78
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_77
+
+		prerequisite = { focus = ORA_focus_77 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_79
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_78
+
+		prerequisite = { focus = ORA_focus_78 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_80
+		icon = unknown
+		x = -2
+		y = 1
+		relative_position_id = ORA_focus_79
+
+		prerequisite = { focus = ORA_focus_79 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_81
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_80
+
+		prerequisite = { focus = ORA_focus_80 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	focus = {
+		id = ORA_focus_82
+		icon = unknown
+		x = 2
+		y = 1
+		relative_position_id = ORA_focus_79
+
+		prerequisite = { focus = ORA_focus_79 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_83
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_82
+
+		prerequisite = { focus = ORA_focus_82 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_84
+		icon = unknown
+		x = 0
+		y = 3
+		relative_position_id = ORA_focus_79
+
+		prerequisite = { focus = ORA_focus_81 }
+		prerequisite = { focus = ORA_focus_83 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_85
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_84
+
+		prerequisite = { focus = ORA_focus_84 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	focus = {
+		id = ORA_focus_86
+		icon = unknown
+		x = 0
+		y = 1
+		relative_position_id = ORA_focus_85
+
+		prerequisite = { focus = ORA_focus_85 }
+		mutually_exclusive = { }
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+
+}
