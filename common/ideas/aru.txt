@@ -36,6 +36,10 @@ ideas = {
 			picture = idea_White_Cossacks
 
 			modifier = {
+				conscription = 0.01
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.05
+				cavalry_speed_factor = 0.05
 			}
 		}
 		
@@ -76,10 +80,48 @@ ideas = {
 				consumer_goods_factor = -0.1
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
-				neutrality_drift = -0.01
+				Absolutism_drift = -0.01
 				request_lease_tension = -1
 				send_volunteers_tension = -1
 			}
 		}
+		#强征民力
+		Forced_conscript = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = GFX_idea_Forced_conscript 
+
+			modifier = {
+				stability_factor = -0.1
+				conscription = 0.01
+				mobilization_speed = 0.75
+				
+			}
+		}
+		#协约国资助
+		Help_from_allies = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = GFX_idea_Help_from_allies 
+
+			modifier = {
+				weekly_manpower = 200 
+				FRE_democratic_acceptance = 100
+				CON_democratic_acceptance = 100
+				max_surrender_limit_offset = 0.1
 	}
 }

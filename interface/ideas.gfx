@@ -6755,4 +6755,12 @@ spriteTypes = {
 		name = "GFX_idea_ARG_Farmers_support"
 		texturefile = "gfx/interface/ideas/ARG_Farmers_support.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_idea_Help_from_allies"
+		texturefile = "gfx/interface/ideas/idea_Help_from_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_Farmers_support"
+		texturefile = "gfx/interface/ideas/idea_Forced_conscript.dds"
+	}
 }
