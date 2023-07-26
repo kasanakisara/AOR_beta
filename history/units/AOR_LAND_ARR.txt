@@ -47,11 +47,11 @@ division_template = {
 	}
 }
 division_template = {
-	name = "协约国坦克师"	#Fast division		
+	name = "斯洛伐克骑兵师"	#Fast division		
 	division_names_group = CZE_ARM_01
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 	}
@@ -291,18 +291,18 @@ units = {
 
 	}
 	division= {
-		name = "斯洛伐克坦克师"
+		name = "’斯洛伐克人‘师"
 		location = 6262
-		division_template = "协约国坦克师"
+		division_template = "斯洛伐克骑兵师"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.9
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 
 	}
 	division= {
-		name = "不列颠坦克师"
+		name = "第7骑兵师"
 		location = 6398
-		division_template = "协约国坦克师"
+		division_template = "斯洛伐克骑兵师"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.9
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }

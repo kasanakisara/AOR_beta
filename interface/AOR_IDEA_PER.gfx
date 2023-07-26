@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Anglo_Iranian_agreement"
+		texturefile = "gfx/interface/ideas/idea_Anglo_Iranian_agreement.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Few_troops"
+		texturefile = "gfx/interface/ideas/idea_Few_troops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Great_Famine"
+		texturefile = "gfx/interface/ideas/idea_Great_Famine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Illiterate_people"
+		texturefile = "gfx/interface/ideas/idea_Illiterate_people.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_A_rebellious_tribe"
+		texturefile = "gfx/interface/ideas/idea_A_rebellious_tribe.dds"
+	}
+	
+}
