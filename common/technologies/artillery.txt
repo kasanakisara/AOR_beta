@@ -449,7 +449,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1921
+		start_year = 1920
 
 		folder = {
 			name = artillery_folder
@@ -478,7 +478,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1923
+		start_year = 1921
 
 		folder = {
 			name = artillery_folder
@@ -941,7 +941,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1923
+		start_year = 1920
 
 		folder = {
 			name = artillery_folder
@@ -973,8 +973,13 @@ technologies = {
 	}
 
 	antitank2 = { #虽然写着反坦克 但是是防空机枪
+
 		enable_equipments = {
 			anti_air_equipment_2
+		}
+		enable_equipment_modules = {
+			tank_auto_cannon_2
+			tank_anti_air_cannon
 		}
 
 		static_anti_air_damage_factor = 0.1
@@ -1158,6 +1163,10 @@ technologies = {
 
 		enable_equipments = {
 			anti_air_equipment_3
+		}
+		enable_equipment_modules = {
+			tank_anti_air_cannon_2
+			tank_anti_air_cannon_3
 		}
 
 		research_cost = 1
