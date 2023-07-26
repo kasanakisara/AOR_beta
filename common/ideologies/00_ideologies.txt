@@ -22,10 +22,13 @@ ideologies = {
 			committee = {
 			}
 
-			PRC_rev= {
+			PRC_county= {	#土地革命论
 			}
 
-			L_militar= {
+			PRC_pioneer= {				#先锋队理论
+			}
+
+			PRC_urban= {				#	城市中心革命论
 			}
 
 		}
@@ -191,7 +194,7 @@ ideologies = {
 			counway = {
 			}
 
-			rad_san = {
+			rad_san = {			#激进三民
 			}
 		}
 		
@@ -296,7 +299,7 @@ ideologies = {
 		liberalism = {
 		}
 
-		sanminism = {
+		sanminism = {		#三民
 		}
 
 		}
@@ -489,9 +492,14 @@ ideologies = {
 		
 		surrenderism = {
 		}
+
 		new_san = {
 		}
+
 		lianshengism = {
+		}
+
+		social_liberalism = {
 		}
 	}
 
@@ -543,6 +551,12 @@ ideologies = {
 			}
 
 			syndicalism = {
+			}
+
+			syn_ten = {   #温和工团
+			}
+
+			syn_ref = {		#改革工团
 			}
 		}
 		
@@ -763,73 +777,5 @@ ideologies = {
 	ai_fascist = yes # uses the fascist AI behaviour
   }
 
-  ##################################
-  Three_principles = {
-	
-	types = {
-		
-		sunism = {
-		}
-
-		old = {
-		}
-		
-		liaoism = {
-		}
-
-		chenism = {
-		}
-
-		wangism = {
-		}
-
-
-		}
-	
-	dynamic_faction_names = {
-		"FACTION_NAME_DEMOCRATIC_1"
-		"FACTION_NAME_DEMOCRATIC_2"
-		"FACTION_NAME_DEMOCRATIC_3"
-		"FACTION_NAME_DEMOCRATIC_4"
-		"FACTION_NAME_DEMOCRATIC_5"
-		"FACTION_NAME_DEMOCRATIC_6"
-	}
-	
-	color = { 11 25 216 }
-	
-	rules = {
-		can_create_collaboration_government = no
-		can_declare_war_on_same_ideology = no
-		can_force_government = yes
-		can_send_volunteers = no
-		can_puppet = no
-		can_lower_tension = yes
-		can_only_justify_war_on_threat_country = yes
-		can_guarantee_other_ideologies = yes
-	}
-	
-	can_host_government_in_exile = yes
-	
-	war_impact_on_world_tension = 0.25		
-	faction_impact_on_world_tension = 0.1
-	
-	modifiers = {
-		generate_wargoal_tension = 1.00
-		join_faction_tension = 0.80
-		lend_lease_tension = 0.50
-		send_volunteers_tension = 0.50
-		guarantee_tension = 0.25
-		annex_cost_factor = 0.5
-		civilian_intel_to_others = 20.0
-		army_intel_to_others = 5.0
-		navy_intel_to_others = 20.0
-		airforce_intel_to_others = 5
-	}
-	
-	faction_modifiers = {
-		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-	}
-	ai_democratic = yes # uses the democratic AI behaviour
-}
 }
 
