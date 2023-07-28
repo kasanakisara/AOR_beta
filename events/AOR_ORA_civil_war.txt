@@ -26,6 +26,7 @@ country_event = {
 	
     option = { 
         name = AOR_ORA_events.2.a
+		country_event = { days = 7 id = AOR_ORA_events.7 }
 		trigger = {
 		}
 	}
@@ -119,6 +120,72 @@ country_event = {
     option = { 
         name = AOR_ORA_events.6.a
         trigger = {
+        }
+    }
+}
+
+country_event = {
+    id = AOR_ORA_events.7 #赤色暖流二
+    picture = GFX_AOR_ORA_events.7
+    title = AOR_ORA_events.7.t
+    desc = AOR_ORA_events.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.7.a
+        trigger = {
+		country_event = { days = 7 id = AOR_ORA_events.8 }
+        }
+    }
+}
+
+country_event = {
+    id = AOR_ORA_events.8 #赤色暖流三
+    picture = GFX_AOR_ORA_events.8
+    title = AOR_ORA_events.8.t
+    desc = AOR_ORA_events.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.8.a
+        trigger = {
+		country_event = { days = 7 id = AOR_ORA_events.9 }
+        }
+    }
+}
+
+country_event = {
+    id = AOR_ORA_events.9 #赤色暖流三
+    picture = GFX_AOR_ORA_events.9
+    title = AOR_ORA_events.9.t
+    desc = AOR_ORA_events.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    hidden = no
+    
+    option = { 
+        name = AOR_ORA_events.9.a
+		custom_effect_tooltip = ORA.2.tt
+		
+		hidden_effect = {
+		remove_ideas = ORA_a_group_without_leader
+		kill_ideology_leader = Anarcho
+		create_country_leader = {
+		name = "Simón Radowitzky"
+		desc = "POLITICS_William_Franz_Canaris_DESC"
+		picture = "FORA_2.dds"
+		expire = "1945.1.1"
+		ideology = syndicalism
+				}
+		}
+		
+		
+        trigger = {
+		
         }
     }
 }
