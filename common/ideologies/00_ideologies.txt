@@ -547,16 +547,19 @@ ideologies = {
 		
 		types = {
 		
-			anarchism = {
+			anarchism = { 	#安康
 			}
 
-			syndicalism = {
+			syndicalism = { #革命工团
 			}
 
-			syn_ten = {   #温和工团
+			new_ten = {   	#温和新大陆
 			}
 
-			syn_ref = {		#改革工团
+			new_ref = {		#改革新大陆
+			}
+			
+			new_syn = {     #新大陆工团
 			}
 		}
 		
