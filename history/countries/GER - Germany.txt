@@ -72,8 +72,9 @@ if = {
 	}
 }
 
-
-
+effect = {
+country_lock all_division_template = no
+}
 
 set_research_slots = 4
 set_convoys = 50
