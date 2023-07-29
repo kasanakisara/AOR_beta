@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = FocusTree_0
+	id = USA_national_focus_1
 	country = {
 		factor = 0
 		modifier = {
@@ -428,7 +428,7 @@
 		swap_ideas = {
 			remove_idea = USA_GreatLakes2A
 			add_idea = USA_AmericanAnxietyA	
-		}
+	    	}
         }
 	}
 }
