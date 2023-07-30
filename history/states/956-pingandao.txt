@@ -8,8 +8,9 @@ state={
 	}
 
 	history={
-		owner = KOR
+		owner = PYO
 		add_core_of = KOR
+		add_core_of = PYO
 		buildings = {
 			arms_factory = 1
 		}

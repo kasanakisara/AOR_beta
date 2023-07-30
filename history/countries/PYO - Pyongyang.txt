@@ -1,6 +1,5 @@
-﻿capital = 525 #South Korea - Seoul or Busan
+capital = 958
 
-#oob = "KOR_1936"
 
 # Starting tech
 set_technology = {
@@ -17,11 +16,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	FRE_democratic = 10
-	Absolutism = 90
+	Absolutism = 75
+	FRE_democratic = 25
 }
 
-recruit_character = KOR
-recruit_character = FRE_KOR
+recruit_character = PYO
+recruit_character = FRE_PYO
 
-set_cosmetic_tag = KOR_JP

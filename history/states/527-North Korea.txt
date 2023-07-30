@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = KOR
+		owner = PYO
 		buildings = {
 
 		}
@@ -19,6 +19,7 @@ state={
 			6928 1 
 		}
 		add_core_of = KOR
+		add_core_of = PYO
 
 	}
 
