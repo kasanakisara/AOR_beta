@@ -50,5 +50,27 @@ ideas = {
 			consumer_goods_factor = 0.1
 			}
 		}
+		Beautiful_Country_Plan = {
+			picture = GFX_idea_Beautiful_Country_Plan
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
+		USA_American_Characteristic_Finance = {
+			picture = GFX_idea_USA_American_Characteristic_Finance
+			allowed = { always = yes }
+			modifier = {
+			add_building_construction = 0.05
+			}
+		}
+		USA_Improving_Factory_Management_Measures = {
+			picture = GFX_idea_USA_Improving_Factory_Management_Measures
+			allowed = { always = yes }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				
+			}
+		}
 	}
 }

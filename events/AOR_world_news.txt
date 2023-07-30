@@ -313,21 +313,8 @@ news_event = { ##魁北克独立 = can.26
 	major = yes
 
 	option = {
-		name = CAN。26.a
+		name = CAN.26.a
 	}
-}
-
-news_event = { #挪威 = 瑞典内战新闻 = SWE.1
-    id = AOR_news.17
-    title = SWECW.4.t
-    desc = SWECW.4.d
-    is_triggered_only = yes
-    hidden = no
-    major = yes
-
-    option = {
-        name = SWECW.4.a
-    }
 }
 
 news_event = { #大北欧联邦倡议新闻 - SWE.2
@@ -340,19 +327,6 @@ news_event = { #大北欧联邦倡议新闻 - SWE.2
 
     option = {
         name = SWECW.5.a
-    }
-}
-
-news_event = { #挪威-瑞典内战新闻 - SWE.1
-    id = AOR_news.17
-    title = SWE.destruction.t
-    desc = SWE.destruction.d
-    is_triggered_only = yes
-    hidden = no
-    major = yes
-
-    option = {
-        name = SWE.destrucion.a
     }
 }
 
@@ -392,4 +366,16 @@ news_event = { #意大利废黜国王
 	option = {
 		name = AOR_news.20.a
 	}
+}
+news_event = { #挪威-瑞典内战新闻 - SWE.1
+    id = AOR_news.21
+    title = SWE.destruction.t
+    desc = SWE.destruction.d
+    is_triggered_only = yes
+    hidden = no
+    major = yes
+
+    option = {
+        name = SWE.destrucion.a
+    }
 }

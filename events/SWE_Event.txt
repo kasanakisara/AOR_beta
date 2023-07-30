@@ -389,7 +389,7 @@ country_event = {
                     type = annex_everything
                 }
             }
-            news_event = AOR_news.17
+            news_event = AOR_news.21
         }
         custom_effect_tooltip = SWE_Destruction_tt
     }

@@ -1,0 +1,150 @@
+add_namespace = USA
+
+#醒醒，美国人#
+country_event = {
+	id = USA.1
+	title = USA.1.t
+	desc = USA.1.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = no
+
+	trigger = {
+		date = 1919.1.30
+	}
+
+	option = {
+		name = USA.1.a
+	}
+}
+country_event = {
+	id = USA.2 #哲学博士的雄心
+	title = USA.2.t
+	desc = USA.2.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.2.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.4 #什么调研
+	title = USA.4.t
+	desc = USA.4.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.4.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
+country_event = {
+	id = USA.3 #什么调研
+	title = USA.3.t
+	desc = USA.3.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = USA.3.a
+	}
+}
