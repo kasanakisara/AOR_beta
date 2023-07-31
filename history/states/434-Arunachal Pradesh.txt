@@ -8,6 +8,12 @@ state={
 	resources={
 		# tungsten=49 # was: 54
 	}
+	victory_points = {
+		4999 1
+	}
+	victory_points = {
+		10856 1
+	}
 
 	history={
 		owner = CHI
@@ -18,7 +24,8 @@ state={
 	}
 
 	provinces={
-		1996 10810 12730 
+		1996 10810 10856 4407 5102 8104 7988 12724 12837 1918 4999 5018 5080 8041 8059 10741 
+
 	}
 
 	local_supplies=3.0 

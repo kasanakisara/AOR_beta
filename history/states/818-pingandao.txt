@@ -1,7 +1,7 @@
 
 state={
-	id=956
-	name="STATE_956"
+	id=818
+	name="STATE_818"
 
 	provinces={
 		906 912 3912 4052 6963 7171 9790 9795 9918 11775 11828 11835 11896 
@@ -14,6 +14,10 @@ state={
 		buildings = {
 			arms_factory = 1
 		}
+		victory_points = {
+			4052 1 
+		}
+
 	}
 	manpower=3578617
 	buildings_max_level_factor=1.000

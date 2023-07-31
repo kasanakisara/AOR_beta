@@ -1,8 +1,9 @@
+
 state={
-	id=947
-	name="STATE_947"
+	id=746
+	name="STATE_746"
 	provinces={
-		531 1933 7911 12882 
+		1448 4125 7004 7159 9982 11918 12350 12378 
 	}
 	history={
 		owner = CHI
@@ -11,4 +12,5 @@ state={
 	manpower=200000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
+	state_category = town
 }

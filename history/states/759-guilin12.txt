@@ -1,12 +1,15 @@
 state={
-	id=952
-	name="STATE_952"
+	id=759
+	name="STATE_759"
 
 	history={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
 			arms_factory = 1
+		}
+		victory_points = {
+			10404 3 
 		}
 
 	}
@@ -18,4 +21,5 @@ state={
 	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
+	state_category = town
 }

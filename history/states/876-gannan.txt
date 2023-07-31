@@ -1,15 +1,15 @@
 state={
-	id=945
-	name="STATE_945"
+	id=876
+	name="STATE_876"
 	provinces={
-		1114 1172 1196 1653 4501 12282 
+		1053 1110 4081 4183 7199 9942 10112 11945 12030 
 	}
 	history={
 		owner = CHI
-		add_core_of = YUN
 		add_core_of = CHI
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
+	state_category = town
 }

@@ -1,6 +1,6 @@
 state={
-	id=937
-	name="STATE_937"
+	id=891
+	name="STATE_891"
 	
 	history = {
 		owner = CHI
@@ -17,4 +17,5 @@ state={
 	manpower=30000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
+	state_category = town
 }
