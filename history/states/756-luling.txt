@@ -1,15 +1,19 @@
+
 state={
 	id=756
 	name="STATE_756"
-	provinces={
-		4156 7172 7653 10057 10501 12495 
-	}
+
 	history={
 		owner = CHI
 		add_core_of = CHI
+
+	}
+
+	provinces={
+		4156 4183 7172 7199 7653 10057 10501 12495 
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }
