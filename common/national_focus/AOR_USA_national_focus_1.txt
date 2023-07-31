@@ -156,10 +156,9 @@
 		cost = 1.00
 		prerequisite = {
 			focus = USA_Railway
-		}
-		prerequisite = {
 			focus = USA_PlanOfOperation
 		}
+
 		x = 5
 		y = 6
 		completion_reward={

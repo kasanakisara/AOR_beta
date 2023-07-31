@@ -12,7 +12,13 @@ characters = {
 			slot = political_advisor
 			idea_token = ORA_Sai_Ba_Si_Di_An_Ma_Luo_Ta
 			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			visible = {has_country_flag = ORA_meeting_ending}
+			available = { 
+				custom_trigger_tooltip = {
+				tooltip = ORA.3.tt
+				}
+			}
+			traits = { ORA_ex_CORA_leader }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -28,8 +34,15 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+				original_tag = ORA
+				
+			}
+			available = { 
+				has_country_flag = ORA_meeting_ending
+				
+			}
+			traits = { ORA_woman_right_fighter }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -46,7 +59,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ORA_Hu_An_Na_Lu_Ke_Bu_Ai_La
 			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			traits = { ORA_woman_right_pionner }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -63,7 +76,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ORA_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge
 			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			traits = { ORA_the_fighter_for_bread }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -80,7 +93,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ORA_He_Sai_Ma_Li_Ya_Bo_Lei_Luo
 			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			traits = { ORA_clever_speaker }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -96,8 +109,15 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_An_Dong_Ni_Ao_Suo_Tuo
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+				original_tag = ORA 
+				}
+			available = { 
+				NOT = {
+				has_country_leader = { ruling_only = yes name = "Antonio Soto" }
+					}
+			}
+			traits = { ORA_radical_workers_leader }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -113,8 +133,16 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Die_Ge_A_Ba_De_De_Sang_Di_Lan
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+				original_tag = ORA 
+
+				}
+			available = { 
+				NOT = {
+				has_country_leader = { ruling_only = yes name = "Diego Abad de Santillán" }
+					}
+			}
+			traits = { ORA_gentle_tiger }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -130,8 +158,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Fu_Ji_Ni_Ya_Bo_Er_Teng
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_radical_win
+			}
+			traits = { ORA_firm_reporter }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -147,8 +181,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_radical_win
+			}
+			traits = { ORA_anti_fascism }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -164,8 +204,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Hua_Jin_Pei_Ni_Na
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_radical_win
+			}
+			traits = { ORA_young_aspirant }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -181,8 +227,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_middle_win
+			}
+			traits = { ORA_future_blo }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -198,8 +250,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Yue_Han_Ke_Li_Ge
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_middle_win
+			}
+			traits = { ORA_treating_physician }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -215,8 +273,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_middle_win
+			}
+			traits = { ORA_mean_killer }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -232,8 +296,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_reform_win
+			}
+			traits = { ORA_CORA_writer }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -249,8 +319,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_He_Mi_Ma_Ya_Bu_Lu_Ma_Na
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_reform_win
+			}
+			traits = { ORA_sociable_writer }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -266,8 +342,14 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = ORA_Pi_Ai_Er_Ji_Lu_Le
-			allowed = { original_tag = ORA }
-			traits = { la_pasionaria }
+			allowed = { 
+			original_tag = ORA 
+			
+			}
+			available = { 
+			has_country_flag = ORA_reform_win
+			}
+			traits = { ORA_kropotkin_fan }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -279,7 +361,17 @@ characters = {
 				small = GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long_small
 			}
 		}
-		corps_commander = {
+		
+			advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = ORA_Hu_An_Duo_Ming_Ge_Bi_Long
+			allowed = { original_tag = ORA }
+			traits = { army_chief_reform_1 }
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		field_marshal = {
 			traits = {  career_officer trait_cautious infantry_officer }
 			skill = 2
 			attack_skill = 2
@@ -297,8 +389,19 @@ characters = {
 				small = GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan_small
 			}
 		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			ledger = army
+			idea_token = ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan
+			allowed = { original_tag = ORA }
+			traits = { army_infantry_1 }
+			ai_will_do = { factor = 1.000 }
+		}
+		
 		corps_commander = {
-			traits = { trait_reckless }
+			traits = { ORA_Crazy_Bomber }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -315,8 +418,19 @@ characters = {
 				small = GFX_portrait_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La_small
 			}
 		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			ledger = army
+			idea_token = ORA_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La 
+			allowed = { original_tag = ORA }
+			traits = { army_regrouping_1 }
+			ai_will_do = { factor = 1.000 }
+		}
+		
 		corps_commander = {
-			traits = { media_personality }
+			traits = { media_personality ORA_Crazy_Bomber }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -325,22 +439,23 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	ORA_Xi_Meng_La_Duo_Wei_Ci_Ji = { #西蒙·拉多维茨基
+	ORA_Xi_Meng_La_Duo_Wei_Ci_Ji = { #Xi_Meng_La_Duo_Wei_Ci_Ji
 		name = ORA_Xi_Meng_La_Duo_Wei_Ci_Ji
 		portraits = {
-			army = {
+			civilian = {
 				large = GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji
 				small = GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji_small
 			}
 		}
-		field_marshal = {
-			traits = { media_personality }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 1
-			legacy_id = -1
+		advisor = {
+			cost = 100
+			slot = theorist
+			ledger = army
+			idea_token = ORA_Xi_Meng_La_Duo_Wei_Ci_Ji
+			allowed = { original_tag = ORA }
+			traits = { military_theorist }
+			available = { has_country_flag = ORA_simon_back}
+			ai_will_do = { factor = 1.000 }
 		}
 	}
 }

@@ -60,23 +60,25 @@ units = {
 		location = 7500 # Southern Argentina
 		division_template = "学生武装力量"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 
 	}
+	
 	division= {	
 		name = "科尔多瓦学联第二纵队"
-		location = 5143 # Salta
+		location = 7500 # Southern Argentina
 		division_template = "学生武装力量"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 
 	}
+	
 	division= {	
 		name = "科尔多瓦学联第三纵队"
-		location = 5213 # Salta
+		location = 7500 # Southern Argentina
 		division_template = "学生武装力量"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.25
 
 	}
 }
