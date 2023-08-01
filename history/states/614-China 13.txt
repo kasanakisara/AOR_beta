@@ -11,10 +11,6 @@ state={
 			arms_factory = 1
 
 		}
-		1938.10.25 = {
-			controller = JAP
-
-		}
 		victory_points = {
 			10022 1 
 		}
@@ -25,8 +21,8 @@ state={
 	provinces={
 		1134 4032 4093 4190 4208 7000 7109 10022 10053 
 	}
-	manpower=18434900
+	manpower= 8984604
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= large_town
 	local_supplies=0.000
 }

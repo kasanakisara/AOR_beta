@@ -8,6 +8,7 @@ state={
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 
 		}
 
@@ -16,8 +17,8 @@ state={
 	provinces={
 		1001 1161 4079 7094 9937 10040 10064 10079 11916 12036 13144 
 	}
-	manpower=200000
+	manpower= 8051695
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category= town
 	local_supplies=0.000
 }

@@ -10,48 +10,22 @@ state={
 
 	history={
 		owner = CHI
-		add_core_of = GXC
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-
+			#industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			7137 10 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = Waking
-						the Tiger 
-					}
-
-				}
-				remove_core_of = GXC
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-			JAP = {
-				set_province_controller = 1018
-				set_province_controller = 4023
-				set_province_controller = 10004
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		4028 4177 7137 7650 10050 11926 
 	}
-	manpower=6550000
+	manpower= 3276438
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= large_town
 	local_supplies=1.000
 }

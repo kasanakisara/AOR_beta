@@ -1,12 +1,11 @@
 state={
 	id=591
 	name="STATE_591"
-	manpower = 4350000
+	manpower = 1086742
 	state_category = town
 
 	history={
 		owner = CHI
-		add_core_of = GXC
 		add_core_of = CHI
 		#add_core_of = PRC
 		
@@ -16,11 +15,6 @@ state={
 		
 		buildings = {
 			infrastructure = 1
-			air_base = 1
-			1070 = {
-				naval_base = 2
-			}
-
 		}
 
 	}

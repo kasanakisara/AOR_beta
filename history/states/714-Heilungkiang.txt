@@ -6,7 +6,6 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = MAN
 		buildings = {
 			infrastructure = 2
 
@@ -17,8 +16,8 @@ state={
 	provinces={
 		1502 1588 1645 1847 4506 4809 4876 7582 7873 7894 10567 12485 12618 
 	}
-	manpower=3694191
+	manpower= 3962148
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category= town
 	local_supplies=0.000
 }

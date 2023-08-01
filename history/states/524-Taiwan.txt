@@ -7,12 +7,7 @@ state={
 		owner = JAP
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 3
-			air_base = 6
-			12068 = {
-				naval_base = 3
-
-			}
+			infrastructure = 1
 
 		}
 		victory_points = {
@@ -27,8 +22,8 @@ state={
 	provinces={
 		1091 7186 7214 11959 12068 1175 4096 9955 11914 12027
 	}
-	manpower=4592537
+	manpower= 5086170
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category= town
 	local_supplies=0.000
 }
