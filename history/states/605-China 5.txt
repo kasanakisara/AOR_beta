@@ -17,6 +17,9 @@ state={
 		victory_points = {
 			4925 5 
 		}
+		victory_points = {
+			6999 20 
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 6
@@ -31,7 +34,7 @@ state={
 	}
 
 	provinces={
-		1395 4925 6999 7240 12705 12819 
+		1395 4925 12705 12819 
 	}
 	manpower=52963300
 	buildings_max_level_factor=1.000

@@ -22,11 +22,11 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			join_faction_tension = 2
-			surrender_limit = 0.2
+			surrender_limit = 0.35
 			}
 		}
 		ORA_Spark_1 = {
-			picture = GFX_idea_ORA_Spark
+			picture = GFX_idea_ORA_Spark_1
 			allowed = { always = yes }
 			modifier = {
 				army_defence_factor = 0.1 #陆军防御
@@ -45,7 +45,7 @@ ideas = {
 			}
 		}
 		ORA_gong_ren_shang_qian_xian_1 = {
-			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian_1
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.2 #工厂产出
@@ -55,7 +55,7 @@ ideas = {
 			}
 		}
 		ORA_gong_ren_shang_qian_xian_2 = {
-			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian_2
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.25 #工厂产出
@@ -65,7 +65,7 @@ ideas = {
 			}
 		}
 		ORA_gong_ren_shang_qian_xian_3 = {
-			picture = GFX_idea_ARG_gong_ren_shang_qian_xian
+			picture = GFX_idea_ARG_gong_ren_shang_qian_xian_3
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.3 #工厂产出
@@ -85,7 +85,7 @@ ideas = {
 			}
 		}
 		ORA_Workers_autonomy = {
-			picture = GFX_ORA_Workers_autonomy
+			picture = GFX_idea_ORA_Workers_autonomy
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.05
@@ -95,7 +95,7 @@ ideas = {
 			}
 		}
 		ORA_xin_da_lu_mo_shi = {
-			picture = GFX_ORA_xin_da_lu_mo_shi
+			picture = GFX_idea_ORA_xin_da_lu_mo_shi
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
@@ -107,7 +107,7 @@ ideas = {
 			}
 		}
 		ORA_lian_he_zheng_fu = {
-			picture = GFX_ORA_lian_he_zheng_fu 
+			picture = GFX_idea_ORA_lian_he_zheng_fu 
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.05

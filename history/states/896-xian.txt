@@ -1,0 +1,15 @@
+state={
+	id=896
+	name="STATE_896"
+	provinces={
+		1976 2006 5007 5092 7301 10733 12156 12713 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

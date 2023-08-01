@@ -40,7 +40,7 @@ spriteTypes = {
 	}
 	spriteType = { #塞巴斯蒂安·马罗塔
 		name = "GFX_portrait_Sai_Ba_Si_Di_An_Ma_Luo_Ta"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Ba_Si_Di_An_Ma_Luo_Ta.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Ba_Si_Di_An_Ma_Luo_Ta.png"
 	}
 	spriteType = { #加布里埃拉·拉佩里埃
 		name = "GFX_portrait_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai_small"
@@ -48,7 +48,7 @@ spriteTypes = {
 	}
 	spriteType = { #加布里埃拉·拉佩里埃
 		name = "GFX_portrait_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Jia_Bu_Li_Ai_La_La_Pei_Li_Ai.png"
 	}
 	spriteType = { #胡安娜·鲁科·布埃拉
 		name = "GFX_portrait_Hu_An_Na_Lu_Ke_Bu_Ai_La_small"
@@ -56,7 +56,7 @@ spriteTypes = {
 	}
 	spriteType = { #胡安娜·鲁科·布埃拉
 		name = "GFX_portrait_Hu_An_Na_Lu_Ke_Bu_Ai_La"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Na_Lu_Ke_Bu_Ai_La.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Na_Lu_Ke_Bu_Ai_La.png"
 	}
 	spriteType = { #埃米利奥·洛佩茨·阿朗戈
 		name = "GFX_portrait_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge_small"
@@ -64,7 +64,7 @@ spriteTypes = {
 	}
 	spriteType = { #埃米利奥·洛佩茨·阿朗戈
 		name = "GFX_portrait_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Ai_Mi_Li_Ao_Luo_Pei_Ci_A_Lang_Ge.png"
 	}
 	spriteType = { #何塞·玛丽亚·博雷罗
 		name = "GFX_portrait_He_Sai_Ma_Li_Ya_Bo_Lei_Luo_small"
@@ -72,7 +72,7 @@ spriteTypes = {
 	}
 	spriteType = { #何塞·玛丽亚·博雷罗
 		name = "GFX_portrait_He_Sai_Ma_Li_Ya_Bo_Lei_Luo"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Sai_Ma_Li_Ya_Bo_Lei_Luo.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Sai_Ma_Li_Ya_Bo_Lei_Luo.png"
 	}
 	spriteType = { #安东尼奥·索托
 		name = "GFX_portrait_An_Dong_Ni_Ao_Suo_Tuo_small"
@@ -80,7 +80,7 @@ spriteTypes = {
 	}
 	spriteType = { #安东尼奥·索托
 		name = "GFX_portrait_An_Dong_Ni_Ao_Suo_Tuo"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_An_Dong_Ni_Ao_Suo_Tuo.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_An_Dong_Ni_Ao_Suo_Tuo.png"
 	}
 	spriteType = { #迭戈·阿巴德·德·桑蒂兰
 		name = "GFX_portrait_Die_Ge_A_Ba_De_De_Sang_Di_Lan_small"
@@ -88,7 +88,7 @@ spriteTypes = {
 	}
 	spriteType = { #迭戈·阿巴德·德·桑蒂兰
 		name = "GFX_portrait_Die_Ge_A_Ba_De_De_Sang_Di_Lan"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Die_Ge_A_Ba_De_De_Sang_Di_Lan.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Die_Ge_A_Ba_De_De_Sang_Di_Lan.png"
 	}
 	spriteType = { #弗吉尼亚·博尔滕
 		name = "GFX_portrait_Fu_Ji_Ni_Ya_Bo_Er_Teng_small"
@@ -96,7 +96,7 @@ spriteTypes = {
 	}
 	spriteType = { #弗吉尼亚·博尔滕
 		name = "GFX_portrait_Fu_Ji_Ni_Ya_Bo_Er_Teng"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Ji_Ni_Ya_Bo_Er_Teng.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Ji_Ni_Ya_Bo_Er_Teng.png"
 	}
 	spriteType = { #塞韦里诺·迪·乔瓦尼
 		name = "GFX_portrait_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni_small"
@@ -104,7 +104,7 @@ spriteTypes = {
 	}
 	spriteType = { #塞韦里诺·迪·乔瓦尼
 		name = "GFX_portrait_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sai_Wei_Li_Nuo_Di_Qiao_Wa_Ni.png"
 	}
 	spriteType = { #华金·佩尼纳
 		name = "GFX_portrait_Hua_Jin_Pei_Ni_Na_small"
@@ -112,7 +112,7 @@ spriteTypes = {
 	}
 	spriteType = { #华金·佩尼纳
 		name = "GFX_portrait_Hua_Jin_Pei_Ni_Na"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Hua_Jin_Pei_Ni_Na.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hua_Jin_Pei_Ni_Na.png"
 	}
 	spriteType = { #伊斯梅尔·佩德罗·比尼亚斯
 		name = "GFX_portrait_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si_small"
@@ -120,7 +120,7 @@ spriteTypes = {
 	}
 	spriteType = { #伊斯梅尔·佩德罗·比尼亚斯
 		name = "GFX_portrait_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Yi_Si_Mei_Er_Pei_De_Luo_Bi_Ni_Ya_Si.png"
 	}
 	spriteType = { #约翰·克里格
 		name = "GFX_portrait_Yue_Han_Ke_Li_Ge_small"
@@ -128,7 +128,7 @@ spriteTypes = {
 	}
 	spriteType = { #约翰·克里格
 		name = "GFX_portrait_Yue_Han_Ke_Li_Ge"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Yue_Han_Ke_Li_Ge.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Yue_Han_Ke_Li_Ge.png"
 	}
 	spriteType = { #库尔特·古斯塔夫·威尔肯斯
 		name = "GFX_portrait_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si_small"
@@ -136,7 +136,7 @@ spriteTypes = {
 	}
 	spriteType = { #库尔特·古斯塔夫·威尔肯斯
 		name = "GFX_portrait_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Ku_Er_Te_Gu_Si_Ta_Fu_Wei_Er_Ken_Si.png"
 	}
 	spriteType = { #弗洛伦西奥·桑切斯
 		name = "GFX_portrait_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si_small"
@@ -144,7 +144,7 @@ spriteTypes = {
 	}
 	spriteType = { #弗洛伦西奥·桑切斯
 		name = "GFX_portrait_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Fu_Luo_Lun_Xi_Ao_Sang_Qie_Si.png"
 	}
 	spriteType = { #赫米马亚布鲁马纳
 		name = "GFX_portrait_He_Mi_Ma_Ya_Bu_Lu_Ma_Na_small"
@@ -152,7 +152,7 @@ spriteTypes = {
 	}
 	spriteType = { #赫米马亚布鲁马纳
 		name = "GFX_portrait_He_Mi_Ma_Ya_Bu_Lu_Ma_Na"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Mi_Ma_Ya_Bu_Lu_Ma_Na.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_He_Mi_Ma_Ya_Bu_Lu_Ma_Na.png"
 	}
 	spriteType = { #皮埃尔·基鲁勒
 		name = "GFX_portrait_Pi_Ai_Er_Ji_Lu_Le_small"
@@ -160,23 +160,15 @@ spriteTypes = {
 	}
 	spriteType = { #皮埃尔·基鲁勒
 		name = "GFX_portrait_Pi_Ai_Er_Ji_Lu_Le"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Pi_Ai_Er_Ji_Lu_Le.dds"
-	}
-	spriteType = { #胡安·多明戈·庇隆
-		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long_small"
-		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_Duo_Ming_Ge_Bi_Long.png"
-	}
-	spriteType = { #胡安·多明戈·庇隆
-		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Duo_Ming_Ge_Bi_Long.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Pi_Ai_Er_Ji_Lu_Le.png"
 	}
 	spriteType = { #胡安·安东尼奥·莫兰
 		name = "GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan_small"
-		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_An_Dong_Ni_Ao_Mo_Lan.dds"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_An_Dong_Ni_Ao_Mo_Lan.png"
 	}
 	spriteType = { #胡安·安东尼奥·莫兰
 		name = "GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan.png"
 	}
 	spriteType = { #萨尔瓦多·普拉纳斯·维雷拉
 		name = "GFX_portrait_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La_small"
@@ -184,14 +176,35 @@ spriteTypes = {
 	}
 	spriteType = { #萨尔瓦多·普拉纳斯·维雷拉
 		name = "GFX_portrait_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Sa_Er_Wa_Duo_Pu_La_Na_Si_Wei_Lei_La.png"
 	}
-	spriteType = { #西蒙·拉多维茨基
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
 		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji_small"
 		texturefile = "gfx/interface/ideas/advisors/idea_generic_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
 	}
-	spriteType = { #西蒙·拉多维茨基
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
 		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.dds"
+		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
+	}
+	
+	#炸弹狂热
+    SpriteType = {
+		name = "GFX_trait_ORA_Crazy_Bomber"
+		texturefile = "gfx/interface/traits/personal/trait_ORA_Crazy_Bomber.png"
+		
+	}
+	
+	#工团决议图标
+	SpriteType = {
+		name = "GFX_decision_category_syn"
+		texturefile = "gfx/interface/decisions/decision_category_syn.png"
+		
+	}
+	
+	#无政府决议图标
+	SpriteType = {
+		name = "GFX_decision_category_ana"
+		texturefile = "gfx/interface/decisions/decision_category_ana.png"
+		
 	}
 }

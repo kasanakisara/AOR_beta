@@ -1,0 +1,22 @@
+state={
+	id=919
+	name="STATE_919"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			arms_factory = 1
+		}
+
+	}
+
+	
+	provinces={
+		1131 4160 7039 7135 9963 10105 12077 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

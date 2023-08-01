@@ -1,0 +1,16 @@
+state={
+	id=755
+	name="STATE_755"
+	provinces={
+		1383 1522 10413 10776 12262 
+	}
+	history={
+		owner = CHI
+		add_core_of = YUN
+		add_core_of = CHI
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

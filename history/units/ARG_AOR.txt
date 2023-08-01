@@ -29,7 +29,7 @@ units = {
 		location = 12364 # Buenos Aires
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "2da División del Ejercito"
@@ -37,7 +37,7 @@ units = {
 		location = 12364 # Southern Argentina
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "3era División del Ejercito"
@@ -45,7 +45,7 @@ units = {
 		location = 12942 # Parana
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "4ta División del Ejercito"
@@ -53,7 +53,7 @@ units = {
 		location = 12942 # Cordoba
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "5ta División del Ejercito"
@@ -61,7 +61,7 @@ units = {
 		location = 8216 # Salta
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 

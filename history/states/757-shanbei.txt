@@ -1,0 +1,23 @@
+
+state={
+	id=757
+	name="STATE_757"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		4089 10102 10119 12045 12093 
+	}
+	manpower=321124
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,3 +1,4 @@
+
 state={
 	id=287
 	name="STATE_287"
@@ -6,23 +7,24 @@ state={
 		owner = CHI
 		add_core_of = SIK
 		add_core_of = CHI
-		#add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
 		victory_points = {
-			4973 1
+			4973 1 
 		}
+		victory_points = {
+			2015 2 
+		}
+
 	}
 
-
 	provinces={
-		4973 8042 8086 10885 10911 12864 
+		1766 1943 1970 2015 4828 4973 5016 5042 5087 7790 7949 8027 8042 8086 8112 10417 10885 10911 12119 12805 12864 
 	}
 	manpower=408000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-
-	local_supplies=4.0 
+	local_supplies=4.000
 }

@@ -6747,6 +6747,72 @@ spriteTypes = {
 		name = "GFX_idea_ORA_Spark"
 		texturefile = "gfx/interface/ideas/ORA_Spark.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_ORA_Spark_1"
+		texturefile = "gfx/interface/ideas/ORA_Spark.dds"
+	}
+	
+	#工人上前线#
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian"
+		texturefile = "gfx/interface/ideas/idea_BAV_Soviet_guard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_1"
+		texturefile = "gfx/interface/ideas/idea_BAV_Soviet_guard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_2"
+		texturefile = "gfx/interface/ideas/idea_BAV_Soviet_guard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_3"
+		texturefile = "gfx/interface/ideas/idea_BAV_Soviet_guard.dds"
+	}
+	
+	
+	#新大陆模式#
+	spriteType = {
+		name = "GFX_idea_ORA_xin_da_lu_mo_shi"
+		texturefile = "gfx/interface/ideas/ORA_xin_da_lu_mo_shi.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_idea_ORA_Workers_autonomy"
+		texturefile = "gfx/interface/ideas/ORA_Workers_autonomy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_gong_hui_ling_dao"
+		texturefile = "gfx/interface/ideas/gong_hui_ling_dao.dds"
+	}
+	
+	
+	#总罢工进行时#
+	spriteType = {
+		name = "GFX_ARG_zong_ba_gong_jin_xing_shi"
+		texturefile = "gfx/interface/ideas/idea_Forced_conscript.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ARG_zong_ba_gong_jin_xing_shi_1"
+		texturefile = "gfx/interface/ideas/idea_Forced_conscript.dds"
+	}
+	spriteType = {
+		name = "GFX_ARG_zong_ba_gong_jin_xing_shi_2"
+		texturefile = "gfx/interface/ideas/idea_Forced_conscript.dds"
+	}
+	spriteType = {
+		name = "GFX_ARG_zong_ba_gong_jin_xing_shi_3"
+		texturefile = "gfx/interface/ideas/idea_Forced_conscript.dds"
+	}
+	
+	
 	spriteType = {
 		name = "GFX_idea_ARG_paradise_of_disillusionment"
 		texturefile = "gfx/interface/ideas/ARG_paradise_of_disillusionment.dds"

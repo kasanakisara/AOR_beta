@@ -135,8 +135,9 @@ country_event = {
     
     option = { 
         name = AOR_ORA_events.7.a
-        trigger = {
 		country_event = { days = 7 id = AOR_ORA_events.8 }
+        trigger = {
+		
         }
     }
 }
@@ -152,14 +153,15 @@ country_event = {
     
     option = { 
         name = AOR_ORA_events.8.a
-        trigger = {
 		country_event = { days = 7 id = AOR_ORA_events.9 }
+        trigger = {
+		
         }
     }
 }
 
 country_event = {
-    id = AOR_ORA_events.9 #赤色暖流三
+    id = AOR_ORA_events.9 #赤色暖流四
     picture = GFX_AOR_ORA_events.9
     title = AOR_ORA_events.9.t
     desc = AOR_ORA_events.9.d
@@ -172,6 +174,7 @@ country_event = {
 		custom_effect_tooltip = ORA.2.tt
 		
 		hidden_effect = {
+		set_country_flag = ORA_simon_back
 		remove_ideas = ORA_a_group_without_leader
 		kill_ideology_leader = Anarcho
 		create_country_leader = {

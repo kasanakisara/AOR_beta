@@ -1,0 +1,21 @@
+state={
+	id=891
+	name="STATE_891"
+	
+	history = {
+		owner = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core = CHI
+	}
+	
+	provinces={
+		7523 7591 7652 9782 10376 10433 10503 11744 12412 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}
