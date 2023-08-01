@@ -6,10 +6,8 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = GXC
 		buildings = {
 			infrastructure = 2
-
 		}
 
 	}
@@ -17,8 +15,8 @@ state={
 	provinces={
 		1018 4023 10004 
 	}
-	manpower=200000
+	manpower= 3260226
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category= town
 	local_supplies=0.000
 }

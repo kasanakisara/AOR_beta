@@ -116,5 +116,123 @@ ideas = {
 				
 			}
 		}
+		ORA_kerduowadhm = {
+			picture = GFX_ORA_kerduowadhm
+			allowed = { always = yes }
+			modifier = {
+				INDUSTRIAL_CAPACITY_FACTOR = 0.05
+				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.05
+				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0.05				
+			}
+		}
+		ORA_kerduowadhm = {
+			picture = GFX_ORA_kerduowadhm
+			allowed = { always = yes }
+			modifier = {
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+				SUPPLY_CONSUMPTION_FACTOR = -0.05
+				CONSUMER_GOODS_FACTOR = -0.05			
+			}
+		}
+		ORA_hongxingbao = {
+			picture = GFX_ORA_hongxingbao
+			allowed = { always = yes }
+			modifier = {
+				POLITICAL_POWER_GAIN = 0.2	
+				MOBILIZATION_SPEED = 0.4	
+			}
+		}
+		ORA_qingbaozuzhi = {
+			ORA_qingbaozuzhi_hidden_problem = {
+				 modifier = {
+					OPERATIVE_SLOT = 1
+					ENCRYPTION_FACTOR = 0.5
+				 }
+			}
+	    }
+		ORA_renminzhengzhiju = {
+			picture = GFX_ORA_renminzhengzhiju
+			allowed = { always = yes }
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				industrial_concern_cost_factor = -0.15
+				ARMY_ADVISOR_COST_FACTOR = -0.15	
+			}
+		}
+		ORA_zaijiaoyuyundo = {
+			picture = GFX_ORA_zaijiaoyuyundo
+			allowed = { always = yes }
+			modifier = {
+				CONSCRIPTION_FACTOR = -0.01
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.025
+			}
+		}
+		ORA_zaijiaoyuyundo_2 = {
+			picture = GFX_ORA_zaijiaoyuyundo_2
+			allowed = { always = yes }
+			modifier = {
+				CONSCRIPTION_FACTOR = -0.02
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ORA_zaijiaoyuyundo_3 = {
+			picture = GFX_ORA_zaijiaoyuyundo_3
+			allowed = { always = yes }
+			modifier = {
+				CONSCRIPTION_FACTOR = -0.01
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.025
+				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.03
+				consumer_goods_factor = -0.02
+			}
+		}
+		ORA_zaijiaoyuyundo_4 = {
+			picture = GFX_ORA_zaijiaoyuyundo_4
+			allowed = { always = yes }
+			modifier = {
+				CONSCRIPTION_FACTOR = 0.05
+				production_speed_buildings_factor = 0.05
+				RESEARCH_SPEED_FACTOR = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+		ORA_zaijiaoyuyundo_5 = {
+			picture = GFX_ORA_zaijiaoyuyundo_5
+			allowed = { always = yes }
+			modifier = {
+				CONSCRIPTION_FACTOR = 0.05
+				production_speed_buildings_factor = 0.05
+				RESEARCH_SPEED_FACTOR = 0.05
+				consumer_goods_factor = -0.01
+			}
+		}
+		ORA_wuchangjiejizhili = {
+			picture = GFX_ORA_wuchangjiejizhili
+			allowed = { always = yes }
+			modifier = {
+				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.10
+				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		ORA_yindaonongye = {
+			picture = GFX_ORA_yindaonongye
+			allowed = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				STABILITY_FACTOR = -0.01
+				consumer_goods_factor = -0.01
+			}
+		}
+		ORA_gongyefazhangju = {
+			picture = GFX_ORA_yindaonongye
+			allowed = { always = yes }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
 	}
 }

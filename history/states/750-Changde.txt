@@ -9,28 +9,14 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 1
-			air_base = 2
-
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				infrastructure = 3
-				air_base = 3
-				arms_factory = 1
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		4480 4896 7279 7665 10006 10335 12017 
 	}
-	manpower=8000000
+	manpower= 4409532
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= town
 	local_supplies=0.000
 }

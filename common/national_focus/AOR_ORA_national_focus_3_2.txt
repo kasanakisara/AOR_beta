@@ -21,6 +21,7 @@ focus_tree={
 		bypass={
 		}
 		completion_reward={
+			add_ideas = ORA_lian_he_zheng_fu
 		}
 	}
 	focus={
@@ -39,6 +40,13 @@ focus_tree={
 		has_completed_focus = ORA_pansasidhx
 		}
 		completion_reward={
+			add_ideas = ORA_kerduowadhm
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 	focus={
@@ -57,6 +65,13 @@ focus_tree={
 		has_completed_focus = ORA_kerduowadhm
 		}
 		completion_reward={
+			add_ideas = ORA_pansasidhx
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 	focus={
@@ -75,6 +90,11 @@ focus_tree={
 		has_completed_focus = ORA_laogonglianhehui
 		}
 		completion_reward={
+			add_manpower = 2500
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.10
+			}
 		}
 	}
 	focus={
@@ -93,6 +113,13 @@ focus_tree={
 		has_completed_focus = ORA_gonghuizhudaoyiqie
 		}
 		completion_reward={
+			add_manpower = 25000
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 	focus={
@@ -111,6 +138,11 @@ focus_tree={
 		has_completed_focus = ORA_gonggonanquan
 		}
 		completion_reward={
+			set_country_flag = unlock_middle_killer
+			hidden_effect = {
+				add_ideas = ORA_qingbaozuzhi
+			}
+			create_intelligence_agency = yes
 		}
 	}
 	focus={
@@ -130,6 +162,7 @@ focus_tree={
 		has_completed_focus = ORA_shenfenrenzhang
 		}
 		completion_reward={
+			add_ideas = ORA_hongxingbao
 		}
 	}
 	focus={
@@ -149,6 +182,8 @@ focus_tree={
 		has_completed_focus = ORA_ranhongshamai
 		}
 		completion_reward={
+			add_ideas = ORA_renminzhengzhiju
+
 		}
 	}
 	focus={
@@ -167,6 +202,10 @@ focus_tree={
 		has_completed_focus = ORA_bumengwang
 		}
 		completion_reward={
+			add_stability = 0.1
+			add_political_power = 0.05
+			add_war_support = 0.05
+			add_country_leader_trait = connected_citizen
 		}
 	}
 	focus={
@@ -185,6 +224,17 @@ focus_tree={
 		has_completed_focus = ORA_wenheshaominwenti
 		}
 		completion_reward={
+			add_manpower = -50
+			random_owned_state = {
+			    add_building_construction = {
+			    	type = industrial_complex
+		    		level = 1
+				}
+				add_building_construction = {
+			    	type = arms_factory
+		    		level = 1
+				}
+			}
 		}
 	}
 	focus={
@@ -203,6 +253,20 @@ focus_tree={
 		has_completed_focus = ORA_yindiantuanjie
 		}
 		completion_reward={
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.10
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+		    }
 		}
 	}
 	focus={
@@ -221,6 +285,7 @@ focus_tree={
 		has_completed_focus = ORA_shehuifuli
 		}
 		completion_reward={
+			add_ideas = ORA_zaijiaoyuyundo
 		}
 	}
 	focus={
@@ -240,6 +305,7 @@ focus_tree={
 		has_completed_focus = ORA_laodonweilai
 		}
 		completion_reward={
+			add_ideas = ORA_zaijiaoyuyundo_2
 		}
 	}
 	focus={
@@ -259,6 +325,7 @@ focus_tree={
 		has_completed_focus = ORA_renrenyoufen
 		}
 		completion_reward={
+			add_ideas = ORA_zaijiaoyuyundo_3
 		}
 	}
 	focus={
@@ -277,6 +344,20 @@ focus_tree={
 		has_completed_focus = ORA_chongjianshbz
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = ORA_zaijiaoyuyundo_2
+				}
+				add_ideas = ORA_zaijiaoyuyundo_4
+			}
+			if = {
+				limit = {
+					has_idea = ORA_zaijiaoyuyundo_3
+				}
+				add_ideas = ORA_zaijiaoyuyundo_5
+			}
+			set_country_flag = unlock_middle_killer
+			add_research_slot = 1
 		}
 	}
 	focus={
@@ -295,6 +376,13 @@ focus_tree={
 		has_completed_focus = ORA_mouquguoshi
 		}
 		completion_reward={
+			add_political_power = 50
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 	}
 	focus={
@@ -314,6 +402,12 @@ focus_tree={
 		has_completed_focus = ORA_shenpanshilijj
 		}
 		completion_reward={
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
 		}
 	}
 	focus={
@@ -333,6 +427,7 @@ focus_tree={
 		has_completed_focus = ORA_zizhuguanli
 		}
 		completion_reward={
+			add_ideas = ORA_wuchangjiejizhili
 		}
 	}
 	focus={
@@ -351,6 +446,7 @@ focus_tree={
 		has_completed_focus = ORA_nongcunzizhi
 		}
 		completion_reward={
+			add_ideas = ORA_yindaonongye
 		}
 	}
 	focus={
@@ -369,6 +465,14 @@ focus_tree={
 		has_completed_focus = ORA_dianliangjiedeng
 		}
 		completion_reward={
+			add_ideas = ORA_gongyefazhangju
+			unlock_decision_category_tooltip = gongyehua
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 	}
 	focus={
@@ -387,6 +491,7 @@ focus_tree={
 		has_completed_focus = ORA_pingdengzhufang
 		}
 		completion_reward={
+			?
 		}
 	}
 	focus={
@@ -424,6 +529,9 @@ focus_tree={
 		has_completed_focus = ORA_laogonggongheguo
 		}
 		completion_reward={
+			add_political_power = 200
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus={

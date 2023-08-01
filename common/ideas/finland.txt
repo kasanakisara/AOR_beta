@@ -1,6 +1,7 @@
 ideas = {
 
 	country = {
+		tag = FIN
 		
 		#西苏
 		sisu = {
@@ -65,3 +66,5 @@ ideas = {
 				training_time_factor = -0.25
 			}
 		}
+	}
+}

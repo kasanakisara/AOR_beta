@@ -8,7 +8,7 @@ state={
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 
 		}
 		victory_points = {
@@ -20,8 +20,8 @@ state={
 	provinces={
 		1066 1110 3992 4038 4083 7054 9984 11961 
 	}
-	manpower=15820400
+	manpower= 3933237
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= large_town
 	local_supplies=3.000
 }
