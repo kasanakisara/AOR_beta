@@ -353,34 +353,6 @@ characters = {
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	ORA_Hu_An_Duo_Ming_Ge_Bi_Long = { #胡安·多明戈·庇隆
-		name = ORA_Hu_An_Duo_Ming_Ge_Bi_Long
-		portraits = {
-			army = {
-				large = GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long
-				small = GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long_small
-			}
-		}
-		
-			advisor = {
-			cost = 150
-			slot = army_chief
-			idea_token = ORA_Hu_An_Duo_Ming_Ge_Bi_Long
-			allowed = { original_tag = ORA }
-			traits = { army_chief_reform_1 }
-			ai_will_do = { factor = 1.000 }
-		}
-		
-		field_marshal = {
-			traits = {  career_officer trait_cautious infantry_officer }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-		}
-	}
 	ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan = { #胡安·安东尼奥·莫兰
 		name = ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan
 		portraits = {

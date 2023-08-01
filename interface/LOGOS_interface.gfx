@@ -162,14 +162,6 @@ spriteTypes = {
 		name = "GFX_portrait_Pi_Ai_Er_Ji_Lu_Le"
 		texturefile = "gfx/leaders/ORA/portrait_ORA_Pi_Ai_Er_Ji_Lu_Le.png"
 	}
-	spriteType = { #胡安·多明戈·庇隆
-		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long_small"
-		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_Duo_Ming_Ge_Bi_Long.png"
-	}
-	spriteType = { #胡安·多明戈·庇隆
-		name = "GFX_portrait_Hu_An_Duo_Ming_Ge_Bi_Long"
-		texturefile = "gfx/leaders/ORA/portrait_ORA_Hu_An_Duo_Ming_Ge_Bi_Long.png"
-	}
 	spriteType = { #胡安·安东尼奥·莫兰
 		name = "GFX_portrait_Hu_An_An_Dong_Ni_Ao_Mo_Lan_small"
 		texturefile = "gfx/interface/ideas/advisors/idea_generic_Hu_An_An_Dong_Ni_Ao_Mo_Lan.png"

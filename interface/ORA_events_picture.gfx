@@ -13,6 +13,12 @@ spriteTypes = {
 		name = "GFX_AOR_ORA_events.8"
 		texturefile = "gfx/event_pictures/AOR_ORA_events.8.png"
 	}
+	
+	spriteType = {
+		name = "GFX_AOR_ORA_events.4"
+		texturefile = "gfx/event_pictures/AOR_ORA_events.4.png"
+	}
+	
 	spriteType = {
 		name = "GFX_AOR_ORA_events.9"
 		texturefile = "gfx/event_pictures/AOR_ORA_events.9.png"
