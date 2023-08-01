@@ -8,7 +8,7 @@ state={
 		add_core_of = CHI
 		add_core_of = XSM
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 
@@ -17,8 +17,8 @@ state={
 	provinces={
 		2028 5057 5100 12327 12732 12776 
 	}
-	manpower=200000
+	manpower= 850772
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category= pastoral
 	local_supplies=0.000
 }

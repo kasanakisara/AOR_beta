@@ -10,34 +10,19 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 4
-			air_base = 2
+			infrastructure = 2
 
 		}
 		victory_points = {
 			4925 5 
 		}
-		victory_points = {
-			6999 20 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-				infrastructure = 3
-				air_base = 3
-				arms_factory = 3
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		1395 4925 12705 12819 
 	}
-	manpower=52963300
+	manpower= 4133683
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category= town
 	local_supplies=0.000
 }
