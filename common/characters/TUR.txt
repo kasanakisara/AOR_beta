@@ -1,0 +1,97 @@
+characters = {
+	TUR_KING={
+		name= "Muhammad VI"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/a32i1-hlu54.dds"
+			}
+		}
+		country_leader={
+			ideology = constitutionalism
+			desc = "M_VI_DESC"
+			traits={ 
+ }
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+
+	TUR_PACA_1={
+		name= "Enver Passha"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/1673148185538.dds"
+			}
+		}
+		country_leader={
+			ideology = authoritarianism
+			desc = "TUR_ENVER_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TUR_PACA_2={
+		name= "Talât Passha"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/1673138992021.dds"
+			}
+		}
+		country_leader={
+			ideology = fascio
+			desc = "TUR_TALAT_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	TUR_PACA_3={
+		name= "Djemal Passha"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/1673117772769.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism吗
+			desc = "TUR_DJEMAL_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	TUR_KEMEL={
+		name= "Mustafa Kemal"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/KAMEL.dds"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "TUR_KAMEL_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	TUR_COMMU={
+		name= "Şefik Hüsnü"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/xiefeik.dds"
+			}
+		}
+		country_leader={
+			ideology = councilism
+			desc = "TUR_COMMU_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

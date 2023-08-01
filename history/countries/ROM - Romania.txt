@@ -147,8 +147,8 @@ set_politics = {
 
 }
 set_popularities = {
-	CON_democratic = 10
-	Marxism = 30
+	AUT_democratic = 10
+	AGR_socialism = 30
 	Absolutism = 60
 }
 
@@ -157,15 +157,6 @@ add_ideas = {
 	Laborious_industrialization
 }
 
-
-create_country_leader = {
-	name = "Ferdinand I"
-	desc = ""
-	picture = auj42-deci0.dds			
-	expire = "1965.1.1"
-	ideology = monarchism
-	traits = {
-		conservatism
-		camarilla_leader
-}
-
+recruit_character = ROM_KING
+recruit_character = ROM_SON
+recruit_character = ROM_FARMER

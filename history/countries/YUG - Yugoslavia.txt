@@ -4,26 +4,9 @@ set_oob = "AOR_LNAD_YUG"
 
 set_research_slots = 3
 
-create_country_leader = {
-	name = "Alexander I"
-	desc = ""
-	picture = "ay428-0ta0k.dds"
-	expire = "1965.1.1"
-	ideology = monarchism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Josip Broz Tito"
-	desc = ""
-	picture = "TITO.dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
-	traits = {
-	}
-}
-
+recruit_character = YUG_KING
+recruit_character = YUG_HANJIAN
+recruit_character = YUG_TITTO
 
 
 add_ideas = {
