@@ -320,19 +320,19 @@
  engines4_short:0 "气冷星型发动机"
 
 
- Personal_defense_weapons:0 "个人自卫武器"
+ early_small_bore_machine_gun:0 "小口径机枪"
  Shooting_coordination_system:0 "射击协调系统"
- Shooting_coordination_system2:0 "小口径水冷机强"
- Shooting_coordination_system3:0 "航空机枪"
- Shooting_coordination_system4:0 "改进航空机枪"
- Shooting_coordination_system5:0 "先进机炮"
+ basic_machine_gun:0 "1919型航空机枪"
+ improved_machine_gun:0 "1925型航空机枪"
+ basic_autocannons:0 "早期实验型机炮"
+ improved_autocannons:0 "改进型机炮"
 
- Personal_defense_weapons_short:0 "个人自卫武器"
+ early_small_bore_machine_gun_short:0 "小口径机枪"
  Shooting_coordination_system_short:0 "射击协调系统"
- Shooting_coordination_system2_short:0 "小口径水冷机强"
- Shooting_coordination_system3_short:0 "航空机枪"
- Shooting_coordination_system4_short:0 "改进航空机枪"
- Shooting_coordination_system5_short:0 "先进机炮"
+ basic_machine_gun_short:0 "1919型航空机枪"
+ improved_machine_gun_short:0 "1925型航空机枪"
+ basic_autocannons_short:0 "早期实验型机炮"
+ improved_autocannons_short:0 "改进型机炮"
 
  Aviation_sights:0 "航空瞄准具"
  Aviation_sights2:0 "多用途航空炸弹"
@@ -345,13 +345,13 @@
  Aviation_sights4_short:0 "大型航空炸弹"
 
 
- Ordinary_aircraft_shell:0 "战前普通飞机外壳"
- Ordinary_aircraft_shell2:0 "金属蒙皮"
- Ordinary_aircraft_shell3:0 "先进铝外壳"
+ Ordinary_aircraft_shell:0 "混合织物蒙皮"
+ Ordinary_aircraft_shell2:0 "金木混合蒙皮"
+ Ordinary_aircraft_shell3:0 "铝制全金属蒙皮"
 
- Ordinary_aircraft_shell_short:0 "战前普通飞机外壳"
- Ordinary_aircraft_shell2_short:0 "金属蒙皮"
- Ordinary_aircraft_shell3_short:0 "先进铝外壳"
+ Ordinary_aircraft_shell_short:0 "混合织物蒙皮"
+ Ordinary_aircraft_shell2_short:0 "金木混合蒙皮"
+ Ordinary_aircraft_shell3_short:0 "铝制全金属蒙皮"
 
  Improved_aerodynamic_shape:0 "金属蒙皮"
  Improved_aerodynamic_shape2:0 "先进铝外壳"
@@ -359,11 +359,11 @@
  Improved_aerodynamic_shape_short:0 "金属蒙皮"
  Improved_aerodynamic_shape2_short:0 "先进铝外壳"
 
- Fill_the_tank:0 "加装油箱"
+ Bottom_mounted_fueltank:0 "下挂式油箱"
  Scout_camera:0 "侦查相机"
  Parachute_transport_aircraft:0 "运输机"
 
- Fill_the_tank_short:0 "加装油箱"
+ Bottom_mounted_fueltank_short:0 "下挂式油箱"
  Scout_camera_short:0 "侦查相机"
  Parachute_transport_aircraft_short:0 "运输机"
 
