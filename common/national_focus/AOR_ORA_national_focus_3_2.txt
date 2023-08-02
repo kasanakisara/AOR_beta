@@ -510,6 +510,11 @@ focus_tree={
 		has_completed_focus = ORA_zaiguangbozhong
 		}
 		completion_reward={
+			add_tech_bonus = {
+				category = infantry_tech
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus={
@@ -550,6 +555,10 @@ focus_tree={
 		has_completed_focus = ORA_gonghuizhiquan
 		}
 		completion_reward={
+			add_stability = 0.05
+			hidden_effect = {
+				add_ideas = ORA_gonghuizhiquan
+			}
 		}
 	}
 	focus={
@@ -568,6 +577,7 @@ focus_tree={
 		has_completed_focus = ORA_gongrenfaan
 		}
 		completion_reward={
+			add_ideas = ORA_gemingxianzhang
 		}
 	}
 	focus={
@@ -587,6 +597,7 @@ focus_tree={
 		has_completed_focus = ORA_laogongdeyuanjing
 		}
 		completion_reward={
+			country_event = { id = AOR_ORA_events.10 }
 		}
 	}
 	focus={
@@ -662,6 +673,7 @@ focus_tree={
 		has_completed_focus = ORA_gonghuiminbing
 		}
 		completion_reward={
+			add_research_slot = 1
 		}
 	}
 	focus={
@@ -681,6 +693,8 @@ focus_tree={
 		has_completed_focus = ORA_dazhonxuanju
 		}
 		completion_reward={
+			add_ideas = limited_conscription
+			add_manpower = 25000
 		}
 	}
 	focus={
@@ -699,7 +713,9 @@ focus_tree={
 		has_completed_focus = ORA_liliangjiuzaighz
 		}
 		completion_reward={
+			add_ideas = ORA_xietiaogonghui
 		}
+
 	}
 	focus={
 		id=ORA_renmingzhiguo
@@ -717,6 +733,8 @@ focus_tree={
 		has_completed_focus = ORA_pingdengdesj
 		}
 		completion_reward={
+			set_country_flag = unlock_middle_killer
+			add_ideas = ORA_renmingzhiguo
 		}
 	}
 	focus={
@@ -735,6 +753,12 @@ focus_tree={
 		has_completed_focus = ORA_fensuiminzhuzy
 		}
 		completion_reward={
+			add_war_support = 0.1
+			add_political_power = 100
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.10
+			}
 		}
 	}
 	focus={
