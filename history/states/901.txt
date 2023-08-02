@@ -1,9 +1,9 @@
 state={
 	id=901
 	name="STATE_901"
-	manpower = 200000
+	manpower = 2608181
 	
-	state_category =rural
+	state_category = town
 
 	history={
 		owner = CHI
@@ -12,6 +12,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			10080 10
+		}
+
 	}
 
 	provinces={

@@ -11,6 +11,12 @@ state={
 		#add_core_of = PRC
 		buildings = {
 			infrastructure = 2
+			11981 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			11981 1 
 		}
 	}
 	
