@@ -35,7 +35,7 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 20 y = 20 }
+			position = { x= 43 y = 20 }
 		}
 		
 	}
@@ -71,38 +71,31 @@ guiTypes = {
 			position = { x = -50 y = 25 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
-		}
-
-		iconType ={
-			name ="frontend_dev_logo"
-			spriteType = "GFX_frontend_dev_logo"
-			position = { x= 1400 y = -230 }
-		}
-		
-		iconType ={
-			name ="pdx_int_logo"
-			spriteType = "GFX_pdx_int_logo"
-			position = { x= 1400 y = -500 }
-		}		
+		}	
 		
 	}		
 
 	### SINGLE PLAYER MENU
 	containerWindowType = {
 		name = "mainmenu_single_player"
-		position = { x=250 y =-500 }
-		size = { width = 320 height = 395}
+		position = { x=290 y =-500 }
+		size = { width = 400 height = 563}
 		Orientation = lower_left
 		Origo = center	
+		
+		positionType = {
+			name = "subscription_size"
+			position = { x = 320 y = 563 }
+		}		
 				
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
-		
+	#继续游戏	
 		ButtonType = {
 			name = "sp_continue_button"
-			position = { x = 16 y = 18 }
+			position = { x = 100 y = 40 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
 			buttonFont = "hoi_24header"
@@ -110,71 +103,40 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-		iconType = {
-			name = "sp_continue_flag_left"
-			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 35 y = 22 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "sp_continue_flag_left_overlay"
-			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 35 y = 22 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "sp_continue_flag_right"
-			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 245 y = 22 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "sp_continue_flag_right_overlay"
-			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 245 y = 22 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
+	#开始游戏	
 		ButtonType = {
 			name = "sp_new_button"
-			position = { x = 16 y = 58 }
+			position = { x = 100 y = 120 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		
+	#载入游戏	
 		ButtonType = {
 			name = "sp_load_button"
-			position = {  x = 16 y = 98 }
+			position = {  x = 100 y = 200 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		
+	#新手教程	
 		ButtonType = {
 			name = "sp_tutorial_button"
-			position = { x = 16 y = 138}
+			position = { x = 100 y = 280}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		
+	#返回	
 		ButtonType = {
 			name = "sp_back_button"
-			position = { x = 16 y = 218 }
+			position = { x = 100 y = 360 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
@@ -187,8 +149,8 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=250 y =-500 }
-		size = { width = 320 height = 563 }
+		position = { x=290 y =-500 }
+		size = { width = 400 height = 563 }
 		Orientation = lower_left
 		Origo = center	
 
@@ -196,25 +158,27 @@ guiTypes = {
 			name = "subscription_size"
 			position = { x = 320 y = 563 }
 		}
-				
+		
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
-		}
-			
+		}		
+				
+	
+	#单人游戏		
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 18 }
+			position = { x = 100 y = 40 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
-
+	#多人游戏		
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
+			position = { x = 100 y = 120}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -247,20 +211,21 @@ guiTypes = {
 			position = { x = 35 y = 524 }
 		}
 		
-		
+	#游戏选项
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 98 }
+			position = { x = 100 y = 200 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-		
+	
+	#生涯档案
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 16 y = 138 }
+			position = { x = 100 y = 280 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "hoi_24header"
@@ -270,16 +235,17 @@ guiTypes = {
 		
 		iconType = {
 			name = "career_profile_button_star"
-			position = { x = -37 y = 155 }
+			position = { x = -37 y = 55 }
 			spriteType = "GFX_icon_best_in_career"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
 		}
 		
+	#好友列表	
 		buttonType = {
 			name = "friends_button"
-			position = { x = 16 y = 178 }
+			position = { x = 100 y = 360 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_FRIENDS"
 			buttonFont = "hoi_24header"
@@ -287,9 +253,10 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 
+    #什么是AOR
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 218 }
+			position = {  x = 100 y = 440 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -297,17 +264,19 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
+	#nudge	
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 258 }
+			position = { x = 100 y = 520 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
 
+    #告老还乡
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 300 }
+			position = { x = 100 y = 600}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
