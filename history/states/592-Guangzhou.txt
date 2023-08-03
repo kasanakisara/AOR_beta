@@ -2,11 +2,6 @@
 state={
 	id=592
 	name="STATE_592"
-	resources={
-		tungsten=8.000
-		steel=15.000
-		chromium=3.000
-	}
 
 	history={
 		owner = CHI
@@ -23,7 +18,11 @@ state={
 			1047 25 
 		}
 	}
-
+	resources = {
+		steel = 15
+		tungsten = 5
+		aluminium = 5
+	}
 	provinces={
 		1047 1087 1187 4092 7108 7152 11938 11941 12095 
 	}

@@ -2,9 +2,6 @@
 state={
 	id=716
 	name="STATE_716"
-	resources={
-		steel=27.000
-	}
 
 	history={
 		owner = CHI
@@ -13,14 +10,18 @@ state={
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
-
+			air_base = 1
 		}
 		victory_points = {
 			11771 20 
 		}
 
 	}
-
+	resources = {
+		steel = 40
+		aluminium = 15
+		tungsten = 20
+	}
 	provinces={
 		836 887 892 916 964 987 3783 3839 3849 3895 3900 3913 3970 6804 6837 6918 6981 9781 9788 9835 9854 9885 11764 11771 11808 11815 11886 
 	}

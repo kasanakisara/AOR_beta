@@ -12,13 +12,19 @@ state={
 			4137 = {
 				naval_base = 1
 			}
+			10068 = {
+				bunker = 1
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {
 			4137 20
 		}
 
 	}
-
+	resources = {
+		steel = 15
+	}
 	provinces={
 		900 1052 4137 9969 11944 11980 11996 12043 10068
 	}

@@ -15,7 +15,9 @@ state={
 		}
 
 	}
-
+	resources = {
+		chromium = 5
+	}
 	provinces={
 		4089 10102 10119 12045 12093 
 	}

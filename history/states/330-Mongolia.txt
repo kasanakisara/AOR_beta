@@ -2,10 +2,6 @@
 state={
 	id=330
 	name="STATE_330"
-	resources={
-		steel=2.000
-		chromium=3.000
-	}
 
 	history={
 		owner = CHI
@@ -15,9 +11,15 @@ state={
 		buildings = {
 			infrastructure = 1
 			air_base = 2
+			4801 = {
+				bunker = 1
+			}
 		}
 		add_core_of = CHI
 
+	}
+	resources = {
+		chromium = 1
 	}
 
 	provinces={

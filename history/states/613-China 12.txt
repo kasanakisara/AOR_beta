@@ -20,7 +20,10 @@ state={
 		}
 
 	}
-
+	resources = {
+		steel = 25
+		rubber = 1
+	}
 	provinces={
 		7014 11928 12052 12076 
 	}

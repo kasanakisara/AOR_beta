@@ -17,7 +17,9 @@ state={
 		}
 
 	}
-
+	resources = {
+		tungsten = 25
+	}
 	provinces={
 		9997 12014 10080 9970 1120 10121
 	}
