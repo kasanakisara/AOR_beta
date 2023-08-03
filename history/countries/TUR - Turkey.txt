@@ -158,50 +158,11 @@ add_ideas = {
 }
 
 
-create_country_leader = {
-	name = "Muhammad VI"
-	desc = "M_VI_DESC"
-	picture = "a32i1-hlu54.dds"
-	expire = "1965.1.1"
-	ideology = constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Şefik Hüsnü"
-	desc = ""
-	picture = "xiefeike.dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
-	traits = {
-	}
-}
-
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+recruit_character = TUR_COMMU
+recruit_character = TUR_KEMEL
+recruit_character = TUR_PACA_3
+recruit_character = TUR_PACA_2
+recruit_character = TUR_PACA_1
+recruit_character = TUR_KING
 
 
