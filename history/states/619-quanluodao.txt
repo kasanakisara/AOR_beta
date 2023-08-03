@@ -9,6 +9,7 @@ state={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
+			infrastructure = 1
 		}
 	}
 	manpower=1819658

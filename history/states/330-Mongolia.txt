@@ -10,23 +10,11 @@ state={
 	history={
 		owner = CHI
 		victory_points = {
-			4801 10 
+			4801 15 
 		}
-		victory_points = {
-			7799 1 
-		}
-		victory_points = {
-			1791 1 
-		}
-		victory_points = {
-			1834 1 
-		}
-		victory_points = {
-			10627 3 
-		}
-
 		buildings = {
 			infrastructure = 1
+			air_base = 2
 		}
 		add_core_of = CHI
 

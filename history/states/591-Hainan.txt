@@ -2,7 +2,7 @@ state={
 	id=591
 	name="STATE_591"
 	manpower = 1086742
-	state_category = town
+	state_category = rural
 
 	history={
 		owner = CHI
@@ -10,11 +10,14 @@ state={
 		#add_core_of = PRC
 		
 		victory_points = {
-			1070 1 
+			1038 10 
 		}
 		
 		buildings = {
 			infrastructure = 1
+			1038 = {
+				naval_base = 1
+			}
 		}
 
 	}
