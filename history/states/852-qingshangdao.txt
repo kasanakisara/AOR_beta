@@ -9,13 +9,13 @@ state={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
+			infrastructure = 1
 			7121 = {
 				naval_base = 1
-			}
-			victory_points = {
-				7121 1 
-			}			
+			}		
 		}
+		victory_points = { 7121 1 }	
+		victory_points = { 4056 1 }	
 	}
 
 	manpower = 1875124
