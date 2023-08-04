@@ -1,6 +1,19 @@
 technologies = {
+
+	@1916 = 4
+	@1918 = 6
+	@1919 = 7
+	@1920 = 8
+	@1921 = 9
+	@1922 = 10
+	@1924 = 12
+	@1925 = 13
+	@1926 = 14
+	@1927 = 15
+	@1928 = 16
+	@1930 = 18
 	
-	early_fighter = {
+	early_fighter = { #战前轻型机体
 
 		enable_equipments = {
 			fighter_equipment_0
@@ -16,10 +29,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1914
+		start_year = 1910
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 		
 		categories = {
@@ -37,7 +50,7 @@ technologies = {
 			}
 		}
 	}
-	fighter1 = {
+	fighter1 = { #大战轻型机体
 
 		enable_equipments = {
 			fighter_equipment_1
@@ -52,7 +65,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 4 }
+			position = { x = -4 y = @1916 }
 		}
 		
 		categories = {
@@ -70,7 +83,7 @@ technologies = {
 			}
 		}
 	}
-	fighter2 = {
+	fighter2 = { #战末轻型机体
 
 		enable_equipments = {
 			fighter_equipment_2
@@ -85,7 +98,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = @1918 }
 		}
 		
 		categories = {
@@ -103,7 +116,7 @@ technologies = {
 			}
 		}
 	}
-	fighter3 = {
+	fighter3 = { #战间轻型机体
 
 		enable_equipments = {
 			fighter_equipment_3
@@ -118,7 +131,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 12 }
+			position = { x = -4 y = @1922 }
 		}
 		
 		categories = {
@@ -136,7 +149,7 @@ technologies = {
 			}
 		}
 	}
-	fighter4 = {
+	fighter4 = { #改进轻型机体
 
 		enable_equipments = {
 			fighter_equipment_4
@@ -151,7 +164,7 @@ technologies = {
 		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 16 }
+			position = { x = -4 y = @1925 }
 		}
 		
 		categories = {
@@ -169,7 +182,7 @@ technologies = {
 			}
 		}
 	}
-	fighter5 = {
+	fighter5 = { #先进轻型机体
 
 		enable_equipments = {
 			fighter_equipment_5
@@ -179,7 +192,7 @@ technologies = {
 		start_year = 1928
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 18 }
+			position = { x = -4 y = @1928 }
 		}
 		
 		categories = {
@@ -197,7 +210,7 @@ technologies = {
 			}
 		}
 	}
-	early_bomber = {
+	early_bomber = { #大战中型机体
 
 		enable_equipments = {
 			tac_bomber_equipment_0
@@ -216,7 +229,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = @1916 }
 		}
 		
 		categories = {
@@ -244,7 +257,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 7 y = @1918 }
 		}
 		
 		categories = {
@@ -272,7 +285,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 12 }
+			position = { x = 7 y = @1922 }
 		}
 		
 		categories = {
@@ -300,7 +313,7 @@ technologies = {
 		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 16 }
+			position = { x = 7 y = @1925 }
 		}
 		
 		categories = {
@@ -323,7 +336,7 @@ technologies = {
 		start_year = 1928
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 18 }
+			position = { x = 7 y = @1928 }
 		}
 		
 		categories = {
@@ -348,10 +361,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1919
+		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 1 y = @1918 }
 		}
 		
 		categories = {
@@ -376,10 +389,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1924
+		start_year = 1922
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 14 }
+			position = { x = 1 y = @1922 }
 		}
 		
 		categories = {
@@ -401,7 +414,7 @@ technologies = {
 		start_year = 1927
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 17 }
+			position = { x = 1 y = @1927 }
 		}
 		
 		categories = {
@@ -414,18 +427,22 @@ technologies = {
 			factor = 1
 		}
 	}
-	engines = {
+	engines = { #早期民用发动机
 		
 		path = {
 			leads_to_tech = engines1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = Bottom_mounted_fueltank
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.7
-		start_year = 1914
+		start_year = 1910
 		folder = {
 			name = air_techs_folder
-			position = { x = 3 y = 2 }
+			position = { x = 6 y = 2 }
 		}
 		
 		categories = {
@@ -436,7 +453,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	engines1 = {
+	engines1 = { #早期航空发动机
 		
 		path = {
 			leads_to_tech = engines2
@@ -444,10 +461,10 @@ technologies = {
 		}
 
 		research_cost = 0.9
-		start_year = 1918
+		start_year = 1916
 		folder = {
 			name = air_techs_folder
-			position = { x = 3 y = 6 }
+			position = { x = 4 y = @1916 }
 		}
 		
 		categories = {
@@ -458,7 +475,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	engines2 = {
+	engines2 = { #航空发动机
 		
 		path = {
 			leads_to_tech = engines3
@@ -466,10 +483,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1923
+		start_year = 1922
 		folder = {
 			name = air_techs_folder
-			position = { x = 3 y = 13 }
+			position = { x = 4 y = @1922 }
 		}
 		
 		categories = {
@@ -480,18 +497,27 @@ technologies = {
 			factor = 1
 		}
 	}
-	engines3 = {
+	engines3 = { #先进航空发动机
 		
+
+		enable_equipment_modules = {
+			engine_3_1x
+			engine_3_2x
+			engine_3_3x
+			engine_3_4x
+			engine_3_6x	
+		}
+
 		path = {
 			leads_to_tech = engines4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = 3 y = 17 }
+			position = { x = 4 y = @1925 }
 		}
 		
 		categories = {
@@ -502,76 +528,94 @@ technologies = {
 			factor = 1
 		}
 	}
-	engines4 = {
+	Bottom_mounted_fueltank = { #下挂式油箱
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 0.9
+		start_year = 1916
+
+		path = {
+			leads_to_tech = Self_sealing_fueltank
+			research_cost_coeff = 1
+		}
+		
 		folder = {
 			name = air_techs_folder
-			position = { x = 3 y = 20 }
+			position = { x = 8 y = @1916 }
 		}
 		
 		categories = {
-			engines
+			Fueltank
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Personal_defense_weapons = {
+	Self_sealing_fueltank = { #自封式油箱
+
+		research_cost = 0.9
+		start_year = 1918
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = @1918 }
+		}
+		
+		categories = {
+			Fueltank
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	early_small_bore_machine_gun = { #大战小口径机枪
 
 		path = {
 			leads_to_tech = Shooting_coordination_system
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = Aviation_sights
-			research_cost_coeff = 1
-		}
-
 		research_cost = 0.6
-		start_year = 1914
+		start_year = 1916
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 2 }
+			position = { x = 16 y = @1916 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Shooting_coordination_system = {
+	Shooting_coordination_system = { #射击协调器
 
 		path = {
-			leads_to_tech = Shooting_coordination_system2
+			leads_to_tech = basic_machine_gun
 			research_cost_coeff = 1
 		}
 
 		research_cost = 0.8
-		start_year = 1915
+		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 4 }
+			position = { x = 16 y = @1918 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Shooting_coordination_system2 = {
+	basic_machine_gun = { #1919航空机枪
 
 		path = {
-			leads_to_tech = Shooting_coordination_system3
+			leads_to_tech = improved_machine_gun
 			research_cost_coeff = 1
 		}
 
@@ -579,123 +623,122 @@ technologies = {
 		start_year = 1919
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 8 }
+			position = { x = 16 y = @1921 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Shooting_coordination_system3 = {
+	improved_machine_gun = {  #1925型航空机枪
 
 		path = {
-			leads_to_tech = Shooting_coordination_system4
+			leads_to_tech = basic_autocannons
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 12 }
+			position = { x = 16 y = @1925 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Shooting_coordination_system4 = {
+	basic_autocannons = { #实验型机炮
 
 		path = {
-			leads_to_tech = Shooting_coordination_system5
+			leads_to_tech = improved_autocannons
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 1925
+		start_year = 1927
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 16 }
+			position = { x = 16 y = @1927 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Shooting_coordination_system5 = {
+	improved_autocannons = {
 
 		research_cost = 2
 		start_year = 1930
 		folder = {
 			name = air_techs_folder
-			position = { x = 8 y = 20 }
+			position = { x = 16 y = 20 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Aviation_sights = {
+	Aviation_sights = { #炸弹挂架
 
 		path = {
 			leads_to_tech = Aviation_sights2
 			research_cost_coeff = 1
 		}
-
-		research_cost = 0.7
-		start_year = 1914
-		folder = {
-			name = air_techs_folder
-			position = { x = 12 y = 4 }
-		}
-		
-		categories = {
-			Personal_defense_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Aviation_sights2 = {
-
 		path = {
 			leads_to_tech = Aviation_sights3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.9
+		research_cost = 0.7
 		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = 6 }
+			position = { x =22 y = @1918 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Aviation_sights3 = {
+	Aviation_sights2 = { #内置弹舱
+
+		research_cost = 0.9
+		start_year = 1925
+		folder = {
+			name = air_techs_folder
+			position = { x = 20 y = @1925 }
+		}
+		
+		categories = {
+			machine_gun
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Aviation_sights3 = { #鱼雷挂架
 
 		path = {
 			leads_to_tech = Aviation_sights4
@@ -703,38 +746,38 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1923
+		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = 12 y = 13 }
+			position = { x = 24 y = @1925 }
 		}
 		
 		categories = {
-			Personal_defense_weapons
+			machine_gun
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	Aviation_sights4 = {
+	# Aviation_sights4 = {
 
-		research_cost = 2
-		start_year = 1930
-		folder = {
-			name = air_techs_folder
-			position = { x = 12 y = 20 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1930
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 12 y = 20 }
+	# 	}
 		
-		categories = {
-			Personal_defense_weapons
-		}
+	# 	categories = {
+	# 		machine_gun
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Ordinary_aircraft_shell = {
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	Ordinary_aircraft_shell = { #混合织物蒙皮
 
 		path = {
 			leads_to_tech = Ordinary_aircraft_shell2
@@ -742,10 +785,10 @@ technologies = {
 		}
 
 		research_cost = 0.8
-		start_year = 1914
+		start_year = 1910
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 2 }
+			position = { x = 12y = 2 }
 		}
 		
 		categories = {
@@ -756,7 +799,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	Ordinary_aircraft_shell2 = {
+	Ordinary_aircraft_shell2 = { #金木混合蒙皮
 
 		path = {
 			leads_to_tech = Ordinary_aircraft_shell3
@@ -764,10 +807,10 @@ technologies = {
 		}
 
 		research_cost = 0.9
-		start_year = 1917
+		start_year = 1918
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 5 }
+			position = { x = 12y = @1918 }
 		}
 		
 		categories = {
@@ -778,13 +821,13 @@ technologies = {
 			factor = 1
 		}
 	}
-	Ordinary_aircraft_shell3 = {
+	Ordinary_aircraft_shell3 = { #铝制全金属蒙皮
 
 		research_cost = 1.5
-		start_year = 1924
+		start_year = 1925
 		folder = {
 			name = air_techs_folder
-			position = { x = 16 y = 14 }
+			position = { x = 12y = @1925 }
 		}
 		
 		categories = {
@@ -795,69 +838,53 @@ technologies = {
 			factor = 1
 		}
 	}
-	Improved_aerodynamic_shape = {
+	# Improved_aerodynamic_shape = {
 
-		path = {
-			leads_to_tech = Improved_aerodynamic_shape2
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = Improved_aerodynamic_shape2
+	# 		research_cost_coeff = 1
+	# 	}
 
-		research_cost = 0.9
-		start_year = 1917
-		folder = {
-			name = air_techs_folder
-			position = { x = 16 y = 17 }
-		}
+	# 	research_cost = 0.9
+	# 	start_year = 1917
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 12y = 17 }
+	# 	}
 		
-		categories = {
-			Improved_aerodynamic_shape
-		}
+	# 	categories = {
+	# 		Improved_aerodynamic_shape
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Improved_aerodynamic_shape2 = {
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# Improved_aerodynamic_shape2 = {
 
-		research_cost = 1.5
-		start_year = 1922
-		folder = {
-			name = air_techs_folder
-			position = { x = 16 y = 19 }
-		}
+	# 	research_cost = 1.5
+	# 	start_year = 1922
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 12y = 19 }
+	# 	}
 		
-		categories = {
-			Improved_aerodynamic_shape
-		}
+	# 	categories = {
+	# 		Improved_aerodynamic_shape
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Fill_the_tank = {
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
-		research_cost = 0.9
-		start_year = 1919
-		folder = {
-			name = air_techs_folder
-			position = { x = 20 y = 2 }
-		}
-		
-		categories = {
-			Fill_the_tank
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	Scout_camera = {
 
 		research_cost = 0.9
-		start_year = 1919
+		start_year = 1916
 		folder = {
 			name = air_techs_folder
-			position = { x = 20 y = 4 }
+			position = { x = 22 y = @1916 }
 		}
 		
 		categories = {
@@ -868,21 +895,21 @@ technologies = {
 			factor = 1
 		}
 	}
-	Parachute_transport_aircraft = {
+	# Parachute_transport_aircraft = {
 
-		research_cost = 1.5
-		start_year = 1928
-		folder = {
-			name = air_techs_folder
-			position = { x = 20 y = 17 }
-		}
+	# 	research_cost = 1.5
+	# 	start_year = 1928
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 20 y = 17 }
+	# 	}
 		
-		categories = {
-			Parachute_transport_aircraft
-		}
+	# 	categories = {
+	# 		Parachute_transport_aircraft
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 }

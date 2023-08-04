@@ -2,11 +2,6 @@
 state={
 	id=593
 	name="STATE_593"
-	resources={
-		tungsten=15.000
-		steel=15.000
-		chromium=3.000
-	}
 
 	history={
 		owner = CHI
@@ -14,7 +9,14 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			9938 = {
+				naval_base = 1
+			}
 		}
+		victory_points = {
+			9938 10
+		}
+
 	}
 
 	provinces={

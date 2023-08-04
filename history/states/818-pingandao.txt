@@ -13,9 +13,13 @@ state={
 		add_core_of = PYO
 		buildings = {
 			arms_factory = 1
+			infrastructure = 1
+			4052 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			4052 1 
+			4052 20
 		}
 
 	}

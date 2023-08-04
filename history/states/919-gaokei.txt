@@ -8,6 +8,9 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7039 10
+		}
 
 	}
 
@@ -15,7 +18,7 @@ state={
 	provinces={
 		1131 4160 7039 7135 9963 10105 12077 
 	}
-	manpower= 4346968
+	manpower= 2278787
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town

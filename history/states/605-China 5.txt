@@ -2,10 +2,6 @@
 state={
 	id=605
 	name="STATE_605"
-	resources={
-		steel=14.000
-	}
-
 	history={
 		owner = CHI
 		add_core_of = CHI
@@ -14,7 +10,7 @@ state={
 
 		}
 		victory_points = {
-			4925 5 
+			1395 5 
 		}
 	}
 

@@ -2,15 +2,12 @@
 state={
 	id=325
 	name="STATE_325"
-	resources={
-		tungsten=2.000
-	}
 
 	history={
 		owner = CHI
 		add_core_of = CHI
 		victory_points = {
-			1319 10 
+			7446 20 
 		}
 		buildings = {
 			infrastructure = 2
@@ -19,7 +16,11 @@ state={
 
 		}
 	}
-
+	resources = {
+		steel = 15
+		aluminium = 10
+		tungsten = 15
+	}
 	provinces={
 		1319 4192 7446 7606 8023 10346 10819 11972 
 	}

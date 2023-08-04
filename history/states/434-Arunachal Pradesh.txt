@@ -5,23 +5,14 @@ state={
 	manpower = 1123278
 	
 	state_category = pastoral
-	resources={
-		tungsten = 49 # was: 54
-	}
-
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 1
 		}
-
 		victory_points = {
-			4999 1
-		}
-		victory_points = {
-			10856 1
-		}
-	
+			1918 15
+		}	
 
 	}
 

@@ -2,15 +2,15 @@
 state={
 	id=283
 	name="STATE_283"
-	resources={
-		tungsten=1.000
-	}
 
 	history={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
+		}
+		victory_points = {
+			2022 15
 		}
 
 	}

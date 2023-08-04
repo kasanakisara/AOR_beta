@@ -10,7 +10,13 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			9905 15
+		}
 
+	}
+	resources = {
+		oil = 2
 	}
 
 	provinces={

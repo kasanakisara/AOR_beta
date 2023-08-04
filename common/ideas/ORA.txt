@@ -147,7 +147,7 @@ ideas = {
 				 modifier = {
 					OPERATIVE_SLOT = 1
 					ENCRYPTION_FACTOR = 0.5
-				 }
+				}
 			}
 	    }
 		ORA_renminzhengzhiju = {
@@ -232,6 +232,41 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		ORA_gonghuizhiquan = {
+			ORA_gonghuizhiquan = {
+				 modifier = {
+					OPERATIVE_SLOT = 1
+				}
+			}
+	    }
+		ORA_gemingxianzhang = {
+			picture = GFX_ORA_gemingxianzhang
+			allowed = { always = yes }
+			modifier = {
+				war_support_factor = 0.05
+				political_power_cost = -0.25
+				political_power_factor = 0.2
+			}
+		}
+		ORA_xietiaogonghui = {
+			picture = GFX_ORA_xietiaogonghui
+			allowed = { always = yes }
+			modifier = {
+				political_power_factor = -0.05
+				LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0.1
+				production_speed_buildings_factor = 0.025
+				consumer_goods_factor = -0.015
+			}
+		}
+		ORA_renmingzhiguo = {
+			picture = GFX_ORA_renmingzhiguo
+			allowed = { always = yes }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0.05
+				political_power_gain = 0.05
 			}
 		}
 	}

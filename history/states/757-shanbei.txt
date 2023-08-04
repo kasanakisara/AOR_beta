@@ -10,9 +10,14 @@ state={
 			infrastructure = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			10102 20 
+		}
 
 	}
-
+	resources = {
+		chromium = 5
+	}
 	provinces={
 		4089 10102 10119 12045 12093 
 	}

@@ -2,9 +2,6 @@
 state={
 	id=602
 	name="STATE_602"
-	resources={
-		tungsten=6.000
-	}
 
 	history={
 		owner = CHI
@@ -15,16 +12,15 @@ state={
 			arms_factory = 1
 
 		}
-		victory_points = {
-			7101 10 
-		}
 
 		victory_points = {
-			7097 5 
+			7097 20 
 		}
 
 	}
-
+	resources = {
+		steel = 20
+	}
 	provinces={
 		1640 7097 7101 7434 7502 9999 10377 10517 12053 12310 12483 13140 13143 
 	}

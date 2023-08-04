@@ -1,0 +1,18 @@
+characters = {
+	CRO_GUY={
+		name= "Stjepan Radić"
+		portraits={
+			civilian={
+				large="gfx/leaders/CRO/CRO.dds"
+			}
+		}
+		country_leader={
+			ideology = limited 
+			desc = "CRO_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
