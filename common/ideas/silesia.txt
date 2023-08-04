@@ -60,5 +60,50 @@ ideas = {
 				always = yes
 			}
 		}
+		
+		AOR_SIL_Strengthen_judiciary = {
+			picture = GFX_idea_SIL_Strengthen_judiciary
+			allowed = { always = yes }
+			modifier = {
+			FRE_democratic_drift = 0.2
+			}
+		}
+		
+		AOR_SIL_Concurrent_legislature = {
+			picture = GFX_idea_SIL_Concurrent_legislature
+			allowed = { always = yes }
+			modifier = {
+			CON_democratic_drift = 0.2
+			}
+		}
+		
+		AOR_SIL_change_government = {
+			picture = GFX_idea_SIL_change_government
+			allowed = { always = yes }
+			modifier = {
+			political_power_cost = -0.35
+			production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+		AOR_SIL_Hold_interpretation = {
+			picture = GFX_idea_SIL_Hold_interpretation
+			allowed = { always = yes }
+			modifier = {
+			war_support_factor = 0.05
+			defensive_war_stability_factor = 0.2
+			}
+		}
+
+		AOR_SIL_Democratic_United_Germany = {
+			picture = GFX_idea_SIL_Democratic_United_Germany
+			allowed = { always = yes }
+			modifier = {
+			war_support_factor = 0.05
+			defensive_war_stability_factor = 0.2
+			line_change_production_efficiency_factor = 0.2
+			}
+		}
+		
 	}
 }

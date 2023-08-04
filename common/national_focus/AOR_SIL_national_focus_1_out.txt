@@ -1,0 +1,1343 @@
+focus_tree = {
+	id = SIL_Schlesien
+	country = {
+		factor = 0
+		modifier = {
+			add = 8
+			tag = SIL
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 600 }	
+
+
+
+
+
+
+	##########政治线##########
+	#奠定自由与民主的根基
+	focus = {
+		id = AOR_SIL_Politics_1
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 5.00
+		x = 7
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = 0.05
+			}
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = AOR_SIL_idea_freedom_democracy_foundation_1
+		 }
+
+	}
+	#警惕共产主义
+	focus = {
+		id = AOR_SIL_Politics_2
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_1
+		}
+		x = 1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = -0.03
+			add_popularity = 30
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.05
+			}
+			add_ideas = FRA_communism_banned
+		}
+
+	}
+	#强化司法机构
+	focus = {
+		id = AOR_SIL_Politics_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_1
+		}
+		x = 3
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = AOR_GER_Conflict_between_houses
+				days = 20
+			}
+			add_political_power = 30
+			add_stability = 0.05
+		 }
+
+	}
+	#引导与教导
+	focus = {
+		id = AOR_SIL_Politics_4
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_1
+		}
+		x = 5
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_popularity = 30
+		}
+
+	}
+	#矢志不渝
+	focus = {
+		id = AOR_SIL_Politics_5
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_3
+		}
+		prerequisite = {
+			focus = AOR_SIL_Politics_4
+		}
+		x = 5
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			remove_targeted_decision = AOR_GER_Conflict_between_houses 
+			set_country_flag = SIL_abide_faith
+			add_ideas = AOR_SIL_idea_abide_by_one_faith_1
+		}
+
+	}
+	#扩建布雷斯劳大学
+	focus = {
+		id = AOR_SIL_Politics_6
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_4
+		}
+		x = 7
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_research_slot = 1 
+		}
+
+	}
+	#确保宪法的解释权和司法审查权
+	focus = {
+		id = AOR_SIL_Politics_7
+		icon = GFX_focus_generic_court
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_5
+		}
+		x = 4
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = AOR_SIL_idea_Interpreting_Constitution
+		 }
+
+	}
+	#长久不衰的宪政原则
+	focus = {
+		id = AOR_SIL_Politics_8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_5
+		}
+		x = 7
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_abide_by_one_faith_1
+				add_idea = AOR_SIL_idea_abide_by_one_faith_2
+			}
+		}
+
+	}
+	#兼任立法机构负责人
+	focus = {
+		id = AOR_SIL_Politics_9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_1
+		}
+		x = 10
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_popularity = 40
+			add_country_leader_trait = Head_of_legislative
+		}
+
+	}
+	#最大限度保障公民权益
+	focus = {
+		id = AOR_SIL_Politics_10
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_9
+		}
+		x = 10
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_war_support = 0.1
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_freedom_democracy_foundation_1
+				add_idea = AOR_SIL_idea_freedom_democracy_foundation_2
+			}
+		}
+
+	}
+	#社会进步与平等的源泉
+	focus = {
+		id = AOR_SIL_Politics_11
+		icon = GFX_goal_continuous_increase_nu
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_9
+		}
+		x = 12
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 50
+		}
+
+	}
+	#塑造地区反对党
+	focus = {
+		id = AOR_SIL_Politics_12
+		icon = GFX_focus_generic_annex_country
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_9
+		}
+		x = 14
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			country_event = { id = SIL.1 }
+		}
+
+	}
+	#确保选票的权威
+	focus = {
+		id = AOR_SIL_Politics_13
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_10
+		}
+		x = 10
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = 0.03
+			swap_ideas = {
+				remove_idea = AOR_SIL_idea_freedom_democracy_foundation_2
+				add_idea = AOR_SIL_idea_freedom_democracy_foundation_3
+			}
+		}
+
+	}
+	#民主进程的作用
+	focus = {
+		id = AOR_SIL_Politics_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_12
+		}
+		prerequisite = {
+			focus = AOR_SIL_Politics_11
+		}
+		x = 13
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_ideas = AOR_SIL_idea_democratic_process
+		 }
+
+	}
+	#武装民主的人民
+	focus = {
+		id = AOR_SIL_Politics_15
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_13
+			focus = AOR_SIL_Politics_8
+		}
+		prerequisite = {
+			focus = AOR_SIL_Politics_14
+		}
+		x = 10
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			remove_ideas = AOR_SIL_idea_freedom_democracy_foundation_3
+			remove_ideas = AOR_SIL_idea_abide_by_one_faith_2
+			remove_ideas = AOR_SIL_idea_democratic_process
+			swap_ideas = {
+				   remove_idea = AOR_SIL_idea_freedom_democracy_foundation_3
+				   add_idea = AOR_SIL_idea_freedom_democracy_foundation_4
+				}
+	     	}
+	    }
+	#实现谢德曼的伟大理想
+	focus = {
+		id = AOR_SIL_Politics_16
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_15
+		}
+		x = 10
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			country_event = { id = SIL.2 }
+		}
+	}
+	#渗入纯净、俯视多变
+	focus = {
+		id = AOR_SIL_Politics_17
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_16
+		}
+		x = 8
+		y = 6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity  = {
+				ideology = Marxism
+				popularity = -0.05
+			    }
+				add_popularity  = {
+					ideology = fascism
+					popularity = -0.05
+					}
+					add_popularity  = {
+						ideology = Absolutism
+						popularity = -0.05
+						}
+		    }
+			add_ideas = AOR_SIL_idea_pure_changeable
+		}
+	#放眼祖国
+	focus = {
+		id = AOR_SIL_Politics_18
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_16
+		}
+		x = 12
+		y = 6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			unlock_decision_tooltip = {
+                decision = AOR_SIL_decision_Propaganda_democracy
+                show_effect_tooltip = yes
+            }
+		}
+	}
+	#以民主来团结
+	focus = {
+		id = AOR_SIL_Politics_19
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_17
+		}
+		prerequisite = {
+			focus = AOR_SIL_Politics_18
+		}
+		x = 10
+		y = 7
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			every_country = {
+                limit = {
+                   OR = { tag = GER tag = NAU tag = HAN tag = BAV tag = SIL tag = KSH tag = WUR tag = SAX tag = PRU tag = SHL tag = MEK }               
+                PREV = {
+                    add_ideas = AOR_SIL_idea_Unite_with_democracy
+                    country_event = { id = AOR_SIL_timeaxis.1  days = 1 }
+			        	}
+                    }
+                }
+		    }
+	    }
+	#横向联合、实现民主
+	focus = {
+		id = AOR_SIL_Politics_20
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_19
+		}
+		x = 10
+		y = 8
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			every_country = {
+                limit = {
+                   OR = { tag = GER tag = NAU tag = HAN tag = BAV tag = SIL tag = KSH tag = WUR tag = SAX tag = PRU tag = SHL tag = MEK }               
+                PREV = {
+                    country_event = { id = AOR_SIL_timeaxis.2  days = 1 }
+			        	}
+                    }
+                }
+	    	}
+    	}
+	#对立而不抗拒
+	focus = {
+		id = AOR_SIL_Politics_21
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Politics_12
+		}
+		x = 14
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = 1
+				add_idea = 1
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+	##########工业线##########
+	#西里西亚“工业金山”
+	focus = {
+		id = AOR_SIL_Industry_1
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		x = 19
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			66 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+	#遣往捷克的交流使团
+	focus = {
+		id = AOR_SIL_Industry_2
+		icon = GFX_focus_generic_concessions
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_1
+		}
+		x = 19
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			CZE = {
+				country_event = { SIL.20 }
+			}
+		}
+
+	}
+	#奥得河沿岸的轰鸣声
+	focus = {
+		id = AOR_SIL_Industry_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_2
+		}
+		x = 17
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			CZE = {
+				country_event = { SIL.21}
+			}
+			GNR = {
+				country_event = { SIL.21}
+			}
+			KSH = {
+				country_event = { SIL.21}
+			}
+		}
+
+	}
+	#国家补贴食品工厂
+	focus = {
+		id = AOR_SIL_Industry_4
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_3
+		}
+		x = 16
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			66 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+	#向上游出口农矿产品
+	focus = {
+		id = AOR_SIL_Industry_5
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_4
+		}
+		x = 16
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			CZE = { country_event = SIL.22}
+			add_ideas = free_trade
+		}
+
+	}
+	#“黑色的黄金”
+	focus = {
+		id = AOR_SIL_Industry_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_2
+		}
+		x = 19
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = excavation_tech
+			}
+			66 = {
+				add_building_construction = {
+					type = army_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	#农业改革
+	focus = {
+		id = AOR_SIL_Industry_7
+		icon = GFX_focus_generic_land_reclamation
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_3
+		}
+		x = 18
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { 
+			add_stability = 0.05
+			66 = {
+				add_building_construction = {
+					type = var:infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	#完成工业整合
+	focus = {
+		id = AOR_SIL_Industry_8
+		icon = GFX_focus_SOV_merge_plants
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_6
+		}
+		prerequisite = {
+			focus = AOR_SIL_Industry_3
+		}
+		x = 20
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#国民家园的建设规划
+	focus = {
+		id = AOR_SIL_Industry_9
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_8
+		}
+		prerequisite = {
+			focus = AOR_SIL_Industry_7
+		}
+		x = 19
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#仿造先进机床与发动机
+	focus = {
+		id = AOR_SIL_Industry_10
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_2
+		}
+		x = 22
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#向下游出口轻武器
+	focus = {
+		id = AOR_SIL_Industry_11
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_10
+		}
+		x = 22
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#优化矿产工业生产线
+	focus = {
+		id = AOR_SIL_Industry_12
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_9
+		}
+		prerequisite = {
+			focus = AOR_SIL_Industry_5
+		}
+		mutually_exclusive = {
+			focus = AOR_SIL_Industry_13
+		}
+		x = 18
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#转向军备生产
+	focus = {
+		id = AOR_SIL_Industry_13
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_9
+		}
+		prerequisite = {
+			focus = AOR_SIL_Industry_11
+		}
+		mutually_exclusive = {
+			focus = AOR_SIL_Industry_12
+		}
+		x = 20
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#为人民武装的工业
+	focus = {
+		id = AOR_SIL_Industry_14
+		icon = GFX_focus_secret_rearmament
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_Industry_12
+			focus = AOR_SIL_Industry_13
+		}
+		x = 19
+		y = 6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { }
+		bypass = { }
+		completion_reward = { }
+
+	}
+
+
+
+
+
+
+
+
+
+	
+	##########政治/外交##########
+	#强化德意志邦国联系
+	focus = {
+		id = AOR_SIL_diplomacy_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = { always = no }
+		mutually_exclusive = {
+			focus = AOR_SIL_diplomacy_16
+		}
+		x = 29
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#向柏林让步
+	focus = {
+		id = AOR_SIL_diplomacy_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = { always = no }
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_1
+		}
+		mutually_exclusive = {
+			focus = AOR_SIL_diplomacy_10
+		}
+		x = 26
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#接纳独裁理念
+	focus = {
+		id = AOR_SIL_diplomacy_3
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		available = { always = no }
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_2
+		}
+		x = 25
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#申明战线
+	focus = {
+		id = AOR_SIL_diplomacy_4
+		icon = GFX_focus_ETH_peacekeeping_forces
+		cost = 5.00
+		available = { always = no }
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_2
+		}
+		x = 27
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		ai_will_do = { base = 1 }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#加强布雷斯劳-柏林经贸联系
+	focus = {
+		id = AOR_SIL_diplomacy_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_3
+		}
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_4
+		}
+		x = 26
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#反对真正的个人专制
+	focus = {
+		id = AOR_SIL_diplomacy_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_5
+		}
+		x = 26
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#威权之下的最大民主
+	focus = {
+		id = AOR_SIL_diplomacy_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_6
+		}
+		x = 26
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#顺应民意
+	focus = {
+		id = AOR_SIL_diplomacy_8
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_2
+			focus = AOR_SIL_diplomacy_10
+		}
+		x = 29
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#多数人的民主
+	focus = {
+		id = AOR_SIL_diplomacy_9
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_8
+		}
+		x = 29
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#与柏林对立
+	focus = {
+		id = AOR_SIL_diplomacy_10
+		icon = GFX_focus_ITA_liberation_or_death
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_1
+			focus = AOR_SIL_diplomacy_16
+		}
+		mutually_exclusive = {
+			focus = AOR_SIL_diplomacy_2
+			focus = AOR_SIL_diplomacy_17
+		}
+		x = 32
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#反对威权政治
+	focus = {
+		id = AOR_SIL_diplomacy_11
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 5.00
+		x = 31
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#提前换选最高法官
+	focus = {
+		id = AOR_SIL_diplomacy_12
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_10
+			focus = AOR_SIL_diplomacy_17
+		}
+		x = 34
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#自由与民主没有妥协
+	focus = {
+		id = AOR_SIL_diplomacy_13
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_12
+		}
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_11
+		}
+		x = 34
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#联合其他德意志邦国
+	focus = {
+		id = AOR_SIL_diplomacy_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_10
+		}
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_13
+		}
+		x = 32
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#战舰的掌舵者
+	focus = {
+		id = AOR_SIL_diplomacy_15
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_14
+		}
+		x = 32
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#接纳波兰文化
+	focus = {
+		id = AOR_SIL_diplomacy_16
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5.00
+		mutually_exclusive = {
+			focus = AOR_SIL_diplomacy_1
+		}
+		x = 36
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#西里西亚文化多元化
+	focus = {
+		id = AOR_SIL_diplomacy_17
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_16
+		}
+		mutually_exclusive = {
+			focus = AOR_SIL_diplomacy_10
+		}
+		x = 38
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#以民主保障集会权
+	focus = {
+		id = AOR_SIL_diplomacy_18
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_17
+		}
+		x = 36
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#接纳波兰人进入政府
+	focus = {
+		id = AOR_SIL_diplomacy_19
+		icon = GFX_focus_POL_sanation_right
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_12
+			focus = AOR_SIL_diplomacy_18
+		}
+		x = 36
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#与波兰的经济协议
+	focus = {
+		id = AOR_SIL_diplomacy_20
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_19
+		}
+		x = 36
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#传播民主理念
+	focus = {
+		id = AOR_SIL_diplomacy_21
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_17
+		}
+		x = 38
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+	#与波兰的民主协议
+	focus = {
+		id = AOR_SIL_diplomacy_22
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_21
+		}
+		prerequisite = {
+			focus = AOR_SIL_diplomacy_20
+		}
+		x = 38
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { base = 1 }
+		available = { always = no }
+		bypass = { }
+		completion_reward = { }
+
+	}
+}
