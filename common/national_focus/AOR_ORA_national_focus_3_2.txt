@@ -2,7 +2,7 @@ focus_tree={
 	country={
 		factor=0
 		modifier={
-			add=9
+			add=12
 			tag=ORA
 		}
 	}
@@ -491,7 +491,7 @@ focus_tree={
 		has_completed_focus = ORA_pingdengzhufang
 		}
 		completion_reward={
-			?
+			
 		}
 	}
 	focus={
