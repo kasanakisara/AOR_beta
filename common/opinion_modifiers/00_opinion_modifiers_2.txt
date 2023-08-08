@@ -1,0 +1,14 @@
+opinion_modifiers = {
+	
+	HAN_Action_in_the_Shadow_good = {
+	    value = 25
+	}
+	
+	HAN_A_vague_attitude_bad = {
+	    value = -10
+	}
+	
+	HAN_Showdown_with_Berlin_bad = {
+	    value = -114514
+	}
+}
