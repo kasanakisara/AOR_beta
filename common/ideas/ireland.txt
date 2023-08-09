@@ -253,5 +253,261 @@ ideas = {
 				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.1
 			}
 		}	
+		IRE_Weightnot = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_IRE_Weightnot
+			modifier = {
+				artillery_equipment_1 = {
+					reliability = -0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}	
+		IRE_EmergencyFactoryConversion = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = idea_IRE_Weightnot
+			modifier = {
+				CONVERSION_COST_CIV_TO_MIL_FACTOR = -0.1
+				INDUSTRIAL_CAPACITY_FACTOR = 0.05
+		    	}
+			}
+			IRE_EmergencyFactoryConversion_1 = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				visible = {
+					always = yes
+				}
+	
+				picture = idea_IRE_Weightnot
+				modifier = {
+					CONVERSION_COST_CIV_TO_MIL_FACTOR = -0.1
+					INDUSTRIAL_CAPACITY_FACTOR = 0.05
+					production_factory_efficiency_gain_factor = 0.1
+					production_factory_max_efficiency_factor = -0.1
+					}
+				}
+		IRE_EmergencyFactoryConversion_1 = {
+			
+			allowed = {
+				always = yes
+			}
+				
+			visible = {
+				always = yes
+			}
+		
+			picture = idea_IRE_Weightnot
+			modifier = {
+				CONVERSION_COST_CIV_TO_MIL_FACTOR = -0.1
+				INDUSTRIAL_CAPACITY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				}
+			}
+		IRE_NotEnoughYet = {
+			
+			allowed = {
+				always = yes
+			}
+				
+			visible = {
+				always = yes
+			}
+			
+			picture = idea_IRE_Weightnot
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription = -0.1
+				}
+			}
+
+		IRE_NotEnoughYet_1 = {
+			
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+				
+			picture = idea_IRE_Weightnot
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription = -0.1
+				XP_GAIN_ARMY_FACTOR = 0.05
+				}
+			}	
+
+			IRE_Defend = {
+			
+				allowed = {
+					always = yes
+				}
+						
+				visible = {
+					always = yes
+				}
+					
+				picture = idea_IRE_Defend
+
+				modifier = {
+					ARMY_CORE_DEFENCE_FACTOR = 0.1
+					army_core_attack_factor = 0.1
+					}
+				}
+
+		IRE_Defend_1 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			visible = {
+				always = yes
+			}
+						
+			picture = idea_IRE_Defend_1
+	
+			modifier = {
+				ARMY_CORE_DEFENCE_FACTOR = 0.2
+				army_core_attack_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.05
+				}
+			}	
+
+		IRE_Defend_1 = {
+			
+			allowed = {
+				always = yes
+			}
+								
+			visible = {
+				always = yes
+			}
+							
+			picture = idea_IRE_Defend_1
+		
+			modifier = {
+				ARMY_CORE_DEFENCE_FACTOR = 0.2
+				army_core_attack_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.05
+				XP_GAIN_FACTOR = 0.1
+				}
+			}
+
+			IRE_Defend_1 = {
+			
+				allowed = {
+					always = yes
+				}
+									
+				visible = {
+					always = yes
+				}
+								
+				picture = idea_IRE_Defend_1
+			
+				modifier = {
+					ENG = {
+						DEFENSE_BONUS_AGAINST_A_COUNTRY = 0.05
+					}
+				}
+			}	
+			
+			IRE_Desperate = {
+			
+				allowed = {
+					always = yes
+				}
+									
+				visible = {
+					always = yes
+				}
+								
+				picture = idea_IRE_Desperate
+			
+				modifier = {
+					army_core_attack_factor = 0.1
+					MOBILIZATION_SPEED = 0.1
+				}
+			}	
+
+			IRE_Desperate_1 = {
+			
+				allowed = {
+					always = yes
+				}
+									
+				visible = {
+					always = yes
+				}
+								
+				picture = idea_IRE_Desperate
+			
+				modifier = {
+					army_core_attack_factor = 0.2
+					MOBILIZATION_SPEED = 0.1
+				}
+			}		
+
+			IRE_Adding = {
+			
+				allowed = {
+					always = yes
+				}
+									
+				visible = {
+					always = yes
+				}
+								
+				picture = idea_IRE_Adding
+			
+				modifier = {
+					army_core_defence_factor = 0.1
+					FORCED_SURRENDER_LIMIT = 0.5
+				}
+			}
+
+			IRE_Sea = {
+			
+				allowed = {
+					always = yes
+				}
+									
+				visible = {
+					always = yes
+				}
+								
+				picture = idea_IRE_Sea
+			
+				modifier = {
+					ENG = {
+						DEFENSE_BONUS_AGAINST_A_COUNTRY = 0.05
+					}
+				}
+			}
+		}	
 	}
-}
