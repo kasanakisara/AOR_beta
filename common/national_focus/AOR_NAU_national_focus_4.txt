@@ -7,8 +7,6 @@ focus_tree = {
 			tag = NAU
 		}
 	}
-	#伯恩施坦拉狄克
-	continuous_focus_position = { x = 1500  y = 2000 } 
 	default = no
 	focus = {
 		id = dahuijixu
