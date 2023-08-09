@@ -8,6 +8,13 @@ opinion_modifiers = {
 		value = 30
 	}
 
+	relationship_with_FEA_111 = {
+		value = 50
+	}
+	relationship_with_ENG_111 = {
+		value = 30
+	}
+
 	relationship_with_BAV = {
 		value = 30
 	}

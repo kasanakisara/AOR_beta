@@ -12,21 +12,17 @@ guiTypes = {
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
 		
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window2_1b_border"
-		}
 
 		iconType = {
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
+			position = { x= 5 y = 10 }
 			Orientation = "UPPER_LEFT"
 		}	
 		
 		instantTextboxType = {
 			name = "decisionview_title"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 22 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -49,8 +45,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "decision_grid_container"
-			position = {x=5 y=45}
-			size = {width=-1 height=-10 } # Y Set in code to match the window size, but initial value is used as extra space in height
+			position = {x=5 y=60}
+			size = {width=-1 height=950 } # Y Set in code to match the window size, but initial value is used as extra space in height
 			Orientation = upper_left
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 41
@@ -218,13 +214,13 @@ guiTypes = {
 
 		iconType = {
 			name = "icon_header_bg"
-			position = {x=0 y=0}
+			position = {x=2 y=45}
 			spriteType = "GFX_event_header_bg"
 		}
 
 		instantTextboxType = {
 			name = "name_text"
-			position = { x = 35 y = 29}
+			position = { x = 65 y = 75}
 			textureFile = ""
 			font = "hoi4_typewriter22"
 			borderSize = { x = 0 y = 0 }
@@ -237,7 +233,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "minor_event_checkbox_window"
-			position = {x=190 y=35}
+			position = {x=190 y=75}
 			Orientation = upper_right
 
 
@@ -265,7 +261,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "event_checkbox_window"
-			position = {x=190 y=58}
+			position = {x=190 y=100}
 			Orientation = upper_right
 
 
@@ -293,7 +289,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "news_checkbox_window"
-			position = {x=340 y=58}
+			position = {x=340 y=88}
 			Orientation = upper_right
 
 

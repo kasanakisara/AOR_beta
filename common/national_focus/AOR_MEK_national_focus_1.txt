@@ -1,4 +1,5 @@
 focus_tree={
+	id=AOR_MEK_national_focus_1
 	country={
 		factor=0
 		modifier={
@@ -7,9 +8,10 @@ focus_tree={
 		}
 	}
 	default=no
+	continuous_focus_position = { x = 1400 y = 2000 }
 	focus={
-		id=huansisizhou_0
-		x=5
+		id = MEK_The_Last_Place_of_Freedom
+		x=6
 		y=0
 		cost=10
 		ai_will_do={
@@ -19,63 +21,72 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.1_tt
+			add_political_power = 150
 		}
 	}
-	focus={
-		id=lianxiguolian_0
-		x=3
-		y=1
-		prerequisite={focus=huansisizhou_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=haopengyoumen_0
-		x=7
-		y=1
-		prerequisite={focus=huansisizhou_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=lundunzhixing_0
-		x=4
-		y=2
-		prerequisite={focus=lianxiguolian_0}
-		prerequisite={focus=haopengyoumen_0}
-		mutually_exclusive={focus=qianwangbali_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=qianwangbali_0
+	focus = {
+		id = MEK_Integrating_into_the_darkness
 		x=6
+		y=1
+		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_war = yes
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.2_tt
+			add_ideas =  closed_economy
+			add_ideas = service_by_requirement
+			add_ideas = war_economy
+		}
+	}
+	focus={
+		id=MEK_Protecting_our_people
+		x=1
+		y=1
+		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.3_tt
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=MEK_Protecting_our_country
+		x=11
+		y=1
+		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.4_tt
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=MEK_Protectionist_industrialization
+		x=2
 		y=2
-		prerequisite={focus=haopengyoumen_0}
-		prerequisite={focus=lianxiguolian_0}
-		mutually_exclusive={focus=lundunzhixing_0 }
-		cost=10
+		prerequisite={focus=MEK_Protecting_our_people}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -83,151 +94,21 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.5_tt
+			61 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 	focus={
-		id=yaoqingwaiguoguwen_0
-		x=5
-		y=3
-		prerequisite={focus=lundunzhixing_0 focus=qianwangbali_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xuexifaguojingyan_0
-		x=8
-		y=3
-		prerequisite={focus=qianwangbali_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=goumaifaguowuqi_0
-		x=8
-		y=4
-		prerequisite={focus=xuexifaguojingyan_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=buqiang_0
-		x=6
-		y=5
-		prerequisite={focus=goumaifaguowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=dapao_0
-		x=8
-		y=5
-		prerequisite={focus=goumaifaguowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=qianhao_0
-		x=10
-		y=5
-		prerequisite={focus=goumaifaguowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=bubingchongfeng_0
-		x=8
-		y=6
-		prerequisite={focus=buqiang_0}
-		prerequisite={focus=dapao_0}
-		prerequisite={focus=qianhao_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chaojiwuqi_0
-		x=2
-		y=3
-		prerequisite={focus=lundunzhixing_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=goumaiyingguowuqi_0
-		x=2
-		y=4
-		prerequisite={focus=chaojiwuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=nengbibenchihao_0
+		id=MEK_Walking_with_the_Church
 		x=0
-		y=5
-		prerequisite={focus=goumaiyingguowuqi_0}
-		cost=10
+		y=2
+		prerequisite={focus=MEK_Protecting_our_people}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -235,45 +116,224 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.6_tt
+			add_manpower = 300
 		}
 	}
 	focus={
-		id=tankewoyaole_0
+		id=MEK_Enable_Political_censorship_system
+		x=10
+		y=2
+		prerequisite={focus=MEK_Protecting_our_country}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.7_tt
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.1
+			}
+		}
+	}
+	focus={
+		id=MEK_Border_fortressization
+		x=12
+		y=2
+		prerequisite={focus=MEK_Protecting_our_country}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.8_tt
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9294
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11276
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 268
+			}
+		}
+	}
+	focus={
+		id=MEK_Supporting_agricultural_development
+		x=0
+		y=4
+		prerequisite={focus=MEK_Walking_with_the_Church}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.9_tt
+			61 = {
+		    	add_building_construction = {
+		    		type = infrastructure
+		    		level = 1
+		    	}
+			}
+		}
+	}
+	focus={
+		id=MEK_Expand_the_Guard
+		x=10
+		y=3
+		prerequisite={focus=MEK_Enable_Political_censorship_system}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			
+		}
+		completion_reward={
+
+			custom_effect_tooltip = MEK.10_tt
+		}
+	}
+	focus={
+		id=MEK_Urban_fortressization
+		x=12
+		y=4
+		prerequisite={focus=MEK_Border_fortressization}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.11_tt
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9294
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11276
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 268
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11305
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 293
+			}
+		}
+	}
+	focus={
+		id=MEK_Please_show_your_credentials
+		x=9
+		y=5
+		prerequisite={focus=MEK_Expand_the_Guard}
+		prerequisite={focus=MEK_Urban_fortressization}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.12_tt
+			add_political_power = 50
+			add_manpower = 250
+		}
+	}
+	focus={
+		id=MEK_Fill_inventory
+		x=3
+		y=5
+		prerequisite={focus=MEK_Supporting_agricultural_development}
+		prerequisite={focus=MEK_Expand_the_seaport}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.20_tt
+			add_political_power = -20
+			send_equipment = {
+				equipment = infantry_equipment_1
+				amount = 300
+				target = MEK
+			}
+		}
+	}
+	focus={
+		id=MEK_exchange
+		x=6
+		y=6
+		prerequisite={focus=MEK_Resilience_and_unyielding}
+		prerequisite={focus=MEK_Fill_inventory}
+		prerequisite={focus=MEK_Please_show_your_credentials}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MEK.13_tt
+			add_opinion_modifier = {
+				target = FRA
+				modifier = relationship_with_FEA_111
+			}			
+			add_opinion_modifier = {
+				target = ENG
+				modifier = relationship_with_FEA_111
+			}
+		}
+	}
+	focus={
+		id=MEK_Planning_area
 		x=4
-		y=5
-		prerequisite={focus=goumaiyingguowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=bingguoshengsu_0
-		x=2
-		y=6
-		prerequisite={focus=tankewoyaole_0}
-		prerequisite={focus=nengbibenchihao_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=dashasifang_0
-		x=5
 		y=7
-		prerequisite={focus=bingguoshengsu_0 focus=bubingchongfeng_0 }
-		cost=10
+		prerequisite={focus=MEK_exchange}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -281,514 +341,28 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.14_tt
+			hidden_effect = {
+				61 = {
+			    	add_state_modifier = {
+				    	modifier = { LOCAL_BUILDING_SLOTS_FACTOR = 1 }
+					}
+				}
+			}
+			862 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
 	}
 	focus={
-		id=xiongdixiyuqiang_0
-		x=14
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=yaoqingwaiguogongchengshi_0
-		x=12
-		y=1
-		prerequisite={focus=xiongdixiyuqiang_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=gongrendongyuanling_0
-		x=14
-		y=1
-		prerequisite={focus=xiongdixiyuqiang_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xibiandechifei_0
-		x=16
-		y=1
-		prerequisite={focus=xiongdixiyuqiang_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=jiurilaoyou_0
-		x=12
-		y=2
-		prerequisite={focus=yaoqingwaiguogongchengshi_0 focus=gongrendongyuanling_0 focus=xibiandechifei_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=dongfangdefengzi_0
-		x=16
-		y=2
-		prerequisite={focus=yaoqingwaiguogongchengshi_0 focus=xibiandechifei_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zhongliquburongqingfan_0
-		x=14
-		y=3
-		prerequisite={focus=jiurilaoyou_0}
-		prerequisite={focus=dongfangdefengzi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=buyaogongchanzhuyi_0
-		x=12
-		y=4
-		prerequisite={focus=zhongliquburongqingfan_0}
-		mutually_exclusive={focus=womenzhunbeihaole_0 focus=fengzikuaikuailikai_0 focus=guruojintang_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=womenzhunbeihaole_0
-		x=14
-		y=4
-		prerequisite={focus=zhongliquburongqingfan_0}
-		mutually_exclusive={focus=buyaogongchanzhuyi_0 focus=fengzikuaikuailikai_0 focus=guruojintang_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=fengzikuaikuailikai_0
-		x=16
-		y=4
-		prerequisite={focus=zhongliquburongqingfan_0}
-		mutually_exclusive={focus=buyaogongchanzhuyi_0 focus=womenzhunbeihaole_0 focus=guruojintang_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=guruojintang_0
-		x=18
-		y=4
-		prerequisite={focus=zhongliquburongqingfan_0}
-		mutually_exclusive={focus=buyaogongchanzhuyi_0 focus=womenzhunbeihaole_0 focus=fengzikuaikuailikai_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=womenyaowuqi_0
-		x=23
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=kaizaobinggongchang_0
-		x=21
-		y=1
-		prerequisite={focus=womenyaowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=kaibangongrenpeixunban_0
-		x=25
-		y=1
-		prerequisite={focus=womenyaowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=goumaishengchanshebei_0
-		x=23
-		y=1
-		prerequisite={focus=womenyaowuqi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=womenhaiyaogengduo_0
-		x=23
-		y=2
-		prerequisite={focus=kaibangongrenpeixunban_0 focus=goumaishengchanshebei_0 focus=kaizaobinggongchang_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=woyouyibaiqiang_0
-		x=23
-		y=3
-		prerequisite={focus=womenhaiyaogengduo_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=andanqiancheng_0
-		x=30
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chongjianbendijingji_0
-		x=30
-		y=1
-		prerequisite={focus=andanqiancheng_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=renkouhuiliujihua_0
-		x=28
-		y=2
-		prerequisite={focus=chongjianbendijingji_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=renkouguanlishu_0
-		x=27
-		y=3
-		prerequisite={focus=renkouhuiliujihua_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xunsukaifangbianjing_0:
-		x=29
-		y=3
-		prerequisite={focus=renkouhuiliujihua_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=nanminruchao_0
-		x=28
-		y=4
-		prerequisite={focus=xunsukaifangbianjing_0:}
-		prerequisite={focus=renkouguanlishu_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=jianlinanminshenchajizhi_0
-		x=27
-		y=5
-		prerequisite={focus=nanminruchao_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=tiequanluoxia_0
-		x=29
-		y=5
-		prerequisite={focus=nanminruchao_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=meikelunbaonanminziweijun_0
-		x=28
-		y=6
-		prerequisite={focus=tiequanluoxia_0}
-		prerequisite={focus=jianlinanminshenchajizhi_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=gongyefusu_0
-		x=32
-		y=2
-		prerequisite={focus=chongjianbendijingji_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xiangzhifuxianxiulu_0
-		x=32
-		y=3
-		prerequisite={focus=gongyefusu_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chongjianshousungonglu_0
-		x=31
-		y=4
-		prerequisite={focus=xiangzhifuxianxiulu_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=tielushigongyedexueguan_0
-		x=33
-		y=4
-		prerequisite={focus=xiangzhifuxianxiulu_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=gaosugonglujihua_0
-		x=31
-		y=5
-		prerequisite={focus=chongjianshousungonglu_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chongjiantielushuniu_0
-		x=33
-		y=5
-		prerequisite={focus=tielushigongyedexueguan_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=gongrenyouhuogan_0
-		x=32
-		y=6
-		prerequisite={focus=chongjiantielushuniu_0}
-		prerequisite={focus=gaosugonglujihua_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=hongshizigongchang_0
-		x=32
+		id=MEK_The_dazzling_pearl_of_deutschland
+		x=8
 		y=7
-		prerequisite={focus=gongrenyouhuogan_0}
-		cost=10
+		prerequisite={focus=MEK_exchange}
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -796,14 +370,20 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.15_tt
+			add_war_support = 0.1
+			add_timed_idea = {
+				idea = MEK_The_dazzling_pearl_of_deutschland_1
+				days = 360
+			}
 		}
 	}
 	focus={
-		id=gongrenyueduochanchuyuegao_0
-		x=32
+		id=MEK_stabilization
+		x=4
 		y=8
-		prerequisite={focus=hongshizigongchang_0}
-		cost=10
+		prerequisite={focus=MEK_Planning_area}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -811,13 +391,21 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.16_tt
+			61 = {
+		    	add_building_construction = {
+		    		type = industrial_complex
+		    		level = 1
+		    	}
+			}
 		}
 	}
 	focus={
-		id=fusuchuanbogongye_0
-		x=37
-		y=0
-		cost=10
+		id=MEK_Free_Harbor
+		x=8
+		y=8
+		prerequisite={focus=MEK_The_dazzling_pearl_of_deutschland}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -825,150 +413,21 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.17_tt
+			61 = {
+				add_building_construction = {
+		    		type = dockyard
+		    		level = 2
+		    	}
+			}
 		}
 	}
 	focus={
-		id=yeyaotiejiajian_0
-		x=35
-		y=1
-		prerequisite={focus=fusuchuanbogongye_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=goumaiwaiguoshejitu_0
-		x=37
-		y=1
-		prerequisite={focus=fusuchuanbogongye_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=womenyaoyunshuchuan_0
-		x=39
-		y=1
-		prerequisite={focus=fusuchuanbogongye_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=wangriyuhui_0
-		x=37
-		y=2
-		prerequisite={focus=womenyaoyunshuchuan_0}
-		prerequisite={focus=goumaiwaiguoshejitu_0}
-		prerequisite={focus=yeyaotiejiajian_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xueshengshiguojiadeweilai_0
-		x=43
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=jianliluosituokedaxue_0
-		x=41
-		y=1
-		prerequisite={focus=xueshengshiguojiadeweilai_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=pujiyiwujiaoyu_0
-		x=43
-		y=1
-		prerequisite={focus=xueshengshiguojiadeweilai_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zengjiakeyanjingfei_0
-		x=45
-		y=1
-		prerequisite={focus=xueshengshiguojiadeweilai_0}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=kuojiangaodengxuefu_0
-		x=43
-		y=2
-		prerequisite={focus=jianliluosituokedaxue_0 focus=pujiyiwujiaoyu_0 focus=zengjiakeyanjingfei_0 }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=yishuziyou_0
-		x=43
+		id=MEK_Expand_the_seaport
+		x=2
 		y=3
-		prerequisite={focus=kuojiangaodengxuefu_0}
-		cost=10
+		prerequisite={focus=MEK_Protectionist_industrialization}
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -976,13 +435,21 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.18_tt
+			61 = {
+				add_building_construction = {
+		    		type = dockyard
+		    		level = 1
+		    	}
+			}
 		}
 	}
 	focus={
-		id=yaoqingbeipohaiyishujia_0
-		x=45
-		y=3
-		prerequisite={focus=kuojiangaodengxuefu_0}
+		id=MEK_Resilience_and_unyielding
+		x=6
+		y=4
+		prerequisite={focus=MEK_Expand_the_seaport}
+		prerequisite={focus=MEK_Expand_the_Guard}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -991,6 +458,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = MEK.19_tt
+			add_war_support = 0.1
+			add_stability = 0.1
+			add_political_power = 150
 		}
 	}
 }
