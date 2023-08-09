@@ -365,6 +365,16 @@ ideas = {
                 industrial_capacity_factory = +0.15
             }
         }
+        MEK_The_dazzling_pearl_of_deutschland_1 = {
 
+            picture = idea_MEK_The_dazzling_pearl_of_deutschland_1
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                stability_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+            }
+        }
     }
 }
