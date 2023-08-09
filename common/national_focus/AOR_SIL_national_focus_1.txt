@@ -177,7 +177,7 @@ focus_tree = {
 		add_political_power = -50
 		add_popularity = {
 				ideology = AUT_democratic
-				popularity = 0.3
+				popularity = 0.1
 			}
 		}
 
@@ -212,7 +212,7 @@ focus_tree = {
 		add_political_power = -50
 		add_popularity = {
 				ideology = AUT_democratic
-				popularity = 0.3
+				popularity = 0.1
 			}
 		}	
 	}
@@ -244,18 +244,9 @@ focus_tree = {
 		y = 8
 		completion_reward={
 		custom_effect_tooltip = SIL.14.tt
-		
-		set_politics = {ruling_party = AUT_democratic}
-		create_country_leader = {
-		name = "Philipp Scheidemann"
-		desc = "SIL_P_S_DESC"
-		picture = "avwp0-u8tjw.dds"
-		expire = "1965.1.1"
-		
 		}
 	}
 
-	}
 	focus = {
 		id = SIL_guard_comm
 		icon = GFX_focus_ger_bulwark_against_bolshevism
@@ -319,10 +310,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SIL_Democratic_United_Germany
 		}
+		available = {
+			date > 1923.4.1
+			NOT = {has_idea = Compact_of_German_Confederation }
+		}
 		x = 7
 		y = 10
 		completion_reward = {
-			custom_effect_tooltip = SIL.19.tt
+		custom_effect_tooltip = SIL.19.tt
 		add_to_faction = GER
 		}
 	}

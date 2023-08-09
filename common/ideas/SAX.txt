@@ -26,9 +26,10 @@ ideas = {
             picture = idea_exp_of_kautsky_1
 
             modifier = {
+				stability_factor = 0.05
                 political_power_gain = 0.5
                 consumer_goods_factor = 0.1
-                STABILITY_WEEKLY_FACTOR = 0.005
+                
             }
         }
         Class_harmony = {
@@ -36,9 +37,9 @@ ideas = {
             picture = idea_Class_harmony
 
             modifier = {
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                weekly_manpower = 0.2
-                political_power_daily = -0.1
+                industrial_capacity_factory = 0.05
+				monthly_population = 0.1
+				political_power_cost = 0.1
             }
         }
         Class_harmony_1 = {
@@ -46,10 +47,10 @@ ideas = {
             picture = idea_Class_harmony_1
 
             modifier = {
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                weekly_manpower = 0.4
-                political_power_daily = -0.1
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+                industrial_capacity_factory = 0.05
+                monthly_population  = 0.2
+                political_power_cost = 0.1 	
+                production_speed_buildings_factor = 0.05
                 consumer_goods_factor = 0.02
             }
         }
@@ -58,36 +59,11 @@ ideas = {
             picture = idea_Class_harmony_2
 
             modifier = {
-                INDUSTRIAL_CAPACITY_FACTOR = 0.1
-                weekly_manpower = 0.5
-                political_power_daily = -0.1
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+                industrial_capacity_factory = 0.1
+                monthly_population  = 0.3
+				political_power_cost = 0.1 
+				production_speed_buildings_factor = 0.05
                 consumer_goods_factor = 0.04
-            }
-        }
-        Class_harmony_3 = {
-
-            picture = idea_Class_harmony_3
-
-            modifier = {
-                INDUSTRIAL_CAPACITY_FACTOR = 0.1
-                weekly_manpower = 0.2
-                political_power_daily = -0.1
-                revolutionism = -0.001
-            }
-        }
-        Class_harmony_4 = {
-
-            picture = idea_Class_harmony_4
-
-            modifier = {
-                stability_weekly = 0.005
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
-                consumer_goods_factor = 0.02
-                INDUSTRIAL_CAPACITY_FACTOR = 0.1
-                weekly_manpower = 0.2
-                political_power_daily = -0.1
-                revolutionism = -0.001
             }
         }
         Government_intervention_in_the_market = {
@@ -96,24 +72,15 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = -0.03
-                political_power_daily = -0.1
+                political_power_cost = 0.1
             }
         }
         profit_sharing = {
 
             picture = idea_profit_sharing
             modifier = {
-                consumer_goods_factor = -0.02
-                stability_weekly = 0.01
-                weekly_manpower = 0.2
-            }
-        }
-        Establishing_a_state_owned_farm = {
-
-            picture = idea_Establishing_a_state_owned_farm
-
-            modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_factor = 0.03
+                stability_weekly = 0.1
             }
         }
         The_government_of_all_the_people = {
@@ -122,8 +89,7 @@ ideas = {
 
             modifier = {
                 PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
-                research_speed_factor = 0.05
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
+                industrial_capacity_factory = 0.05
             }
         }
 
@@ -132,24 +98,8 @@ ideas = {
             picture = idea_protect_the_people
 
             modifier = {
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
-                research_speed_factor = 0.1
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                consumer_goods_factor = -0.02
-            }
-        }
-        protect_the_people_2 = {
-
-            picture = idea_protect_the_people_2
-            modifier = {
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
-                research_speed_factor = 0.1
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                consumer_goods_factor = -0.02
-                ARMY_CORE_DEFENCE_FACTOR = 0.05
-                XP_GAIN_ARMY = 0.1
-                CONSCRIPTION_FACTOR = 0.1
-                weekly_manpower = 0.2
+              army_infantry_defence_factor = 0.05
+			  consumer_goods_factor = 0.02
             }
         }
         Guiding_the_People = {
@@ -157,27 +107,25 @@ ideas = {
             picture = idea_Guiding_the_People
 
             modifier = {
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
                 research_speed_factor = 0.05
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                XP_GAIN_ARMY = 0.1
-                CONSCRIPTION_FACTOR = 0.1
-                weekly_manpower = 0.2
+                consumer_goods_factor = 0.02
             }
         }
-        Guiding_the_People_2 = {
+		
+		The_Victory_of_Democracy = {
 
-            picture = idea_Guiding_the_People_2
+            picture = idea_The_Victory_of_Democracy
+
             modifier = {
-                PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
-                research_speed_factor = 0.1
-                INDUSTRIAL_CAPACITY_FACTOR = 0.05
-                consumer_goods_factor = -0.02
-                ARMY_CORE_DEFENCE_FACTOR = 0.05
-                XP_GAIN_ARMY = 0.1
-                CONSCRIPTION_FACTOR = 0.1
-                weekly_manpower = 0.2
+                research_speed_factor = 0.05
+				rmy_infantry_defence_factor = 0.05
+                consumer_goods_factor = 0.05
+				 PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+                industrial_capacity_factory = 0.05
+                stability_weekly = 0.1
+                political_power_cost = 0.1
             }
         }
+		
     }
 }

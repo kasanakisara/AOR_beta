@@ -7,6 +7,7 @@ focus_tree={
 		}
 	}
 	default=no
+	continuous_focus_position = { x = 1400 y = 2000 }
 	focus={
 		id=MEK_The_Last_Place_of_Freedom
 		x=6
@@ -299,7 +300,6 @@ focus_tree={
 		id=MEK_Resilience_and_unyielding
 		x=6
 		y=4
-		prerequisite={focus=MEK_Integrating_into_the_darkness}
 		prerequisite={focus=MEK_Expand_the_seaport}
 		prerequisite={focus=MEK_Expand_the_Guard}
 		cost=10
