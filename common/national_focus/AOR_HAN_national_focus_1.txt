@@ -6,6 +6,7 @@ focus_tree={
 			tag=han
 		}
 	}
+	continuous_focus_position = { x = 1400 y = 2000 }
 	default=no
 	focus={
 		id=HAN_qi_shi_gu_lai_xi
@@ -19,7 +20,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = HAN_The_Age_of_Rage
+			add_country_leader_trait = HAN_The_Age_of_Rage
 		}
 	}
 	focus={

@@ -65,7 +65,7 @@ focus_tree = {
 			54 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -128,7 +128,7 @@ focus_tree = {
 				change_state_after_war = no
 				attacker = {
 					state = 59
-					num_provinces = 6
+					num_provinces = 2
 					on_win = NAU_border_conflict.2
 					on_lose = NAU_border_conflict.3
 					on_cancel = NAU_border_conflict.4
@@ -136,7 +136,7 @@ focus_tree = {
 							
 				defender = {
 					state = 856
-					num_provinces = 6
+					num_provinces = 2
 					on_win = NAU_border_conflict.3
 					on_lose = NAU_border_conflict.2
 					on_cancel = NAU_border_conflict.4
@@ -168,7 +168,7 @@ focus_tree = {
 			54 = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -199,17 +199,15 @@ focus_tree = {
 		x = 3
 		y = 4
 		completion_reward={
-			custom_effect_tooltip = Implement_the_merger_of_enterprises_tt
-			hidden_effect = {
-				add_ideas = limited_exports
-				random_controlled_state = {
+						random_controlled_state = {
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
-			}
+				add_ideas = limited_exports
+
 		}
 
 	}
@@ -242,11 +240,11 @@ focus_tree = {
 			custom_effect_tooltip = create_four_Imperial_Division_tt
 			hidden_effect = {
 			set_division_template_lock = {
-				division_template = "The Imperial Division"
+				division_template = "帝国师"
 				is_locked = yes
 			}
 			division_template = {
-				name = "The Imperial Division"
+				name = "帝国师"
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
@@ -269,9 +267,9 @@ focus_tree = {
 				} 
 			}
 			create_unit = {
-				division = "name = \"The Imperial Division\" division_template = \"The Imperial Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				division = "name = \"帝国师\" division_template = \"帝国师\" start_experience_factor = 0.5 start_equipment_factor = 1"
 				owner = NAU
-				amount = 4
+				amount = 2
 			}
 		}
 	}
