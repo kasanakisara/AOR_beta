@@ -40,6 +40,13 @@ defined_text = {
 		}
 		localization_key = GER_country_information_loc
 	}
+	
+	text = {
+		trigger = {
+			TAG = ORA
+		}
+		localization_key = ORA_country_information_loc
+	}
 	text = {
 		localization_key = "=!!!=NOTHING=!!!="
 	}

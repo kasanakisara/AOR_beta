@@ -428,6 +428,9 @@
 			remove_idea = USA_GreatLakes2A
 			add_idea = USA_AmericanAnxietyA	
 	    	}
+		hidden_effect = {
+		load_focus_tree = USA_national_focus_2
+		}
         }
 	}
 }

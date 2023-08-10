@@ -20,6 +20,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.1.tt
 			add_country_leader_trait = HAN_The_Age_of_Rage
 		}
 	}
@@ -36,6 +37,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.2.tt
 		}
 	}
 	focus={
@@ -51,6 +53,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.3.tt
 			add_ideas = HAN_Dortmund_Brewery
 		}
 	}
@@ -67,6 +70,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.4.tt
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 250
@@ -87,7 +91,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			111 = {
+		custom_effect_tooltip = HAN.5.tt
+			853 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -95,7 +100,7 @@ focus_tree={
 					instant_build = yes
 				}
 			}
-			111 = {
+			853 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -119,7 +124,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_idaas = HAN_Assistance_from_Berlin
+		custom_effect_tooltip = HAN.6.tt
+			add_ideas = HAN_Assistance_from_Berlin
 		}
 	}
 	focus={
@@ -137,14 +143,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			remove_ideas = {
-				HAN_Wilhelmshaven_Dunkirk_Agreement
-				HAN_Assistance_from_Berlin
-				HAN_Trade_with_the_UK
-			}
+		custom_effect_tooltip = HAN.7.tt
+			remove_ideas = HAN_Wilhelmshaven_Dunkirk_Agreement
+			remove_ideas = HAN_Assistance_from_Berlin
 			add_ideas = HAN_Franc_Mark_Pound
+			}
 		}
-	}
 	focus={
 		id=HAN_Trade_in_the_English_Channel
 		x=8
@@ -158,7 +162,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = HAN_Trade_with_the_UK
+		custom_effect_tooltip = HAN.8.tt
+			country_event = { id = HAN.1 }
 		}
 	}
 	focus={
@@ -174,7 +179,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_idaas = HAN_Wilhelmshaven_Dunkirk_Agreement
+		custom_effect_tooltip = HAN.9.tt
+			add_ideas = HAN_Wilhelmshaven_Dunkirk_Agreement
 		}
 	}
 	focus={
@@ -186,11 +192,25 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			date > 1922.1.1
+			NAU = {
+			 NOT = {
+			 has_government = Marxism
+			has_government = PAR_socialism 
+			has_government = SOC_democratic
+			 }
+			}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			add_opinion_modifier = { target = FLK modifier = HAN_Action_in_the_Shadow }
+		custom_effect_tooltip = HAN.10.tt
+					add_opinion_modifier = {
+				target = NAU
+				modifier = relationship_with_FEA_111
+			}
 		}
 	}
 	focus={
@@ -206,6 +226,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.11.tt
 		}
 	}
 	focus={
@@ -221,7 +242,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_opinion_modifier = { target = GER modifier = HAN_A_vague_attitude }
+		custom_effect_tooltip = HAN.12.tt
+			add_opinion_modifier = {
+				target = GER
+				modifier = GER_xinei
+			}
 		}
 	}
 	focus={
@@ -238,14 +263,17 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.13.tt
 			diplomatic_relation = {
-				country = SOV
+				country = NAU
 				relation = non_aggression_pact
-				active = no
+				active = yes
 			}
-			FLK = {
+			give_guarantee = NAU
+			NAU = {
 				give_guarantee = HAN
 			}
+			
 		}
 	}
 	focus={
@@ -261,6 +289,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = HAN.14.tt
 		}
 	}
 	focus={
@@ -272,11 +301,16 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+				available = {
+			date > 1923.4.1
+			NOT = {has_idea = Compact_of_German_Confederation }
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			add_opinion_modifier = { target = GER modifier = HAN_Showdown_with_Berlin_bad }
+		custom_effect_tooltip = HAN.15.tt
+			add_to_faction = NAU
 		}
 	}
 }

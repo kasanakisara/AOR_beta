@@ -287,6 +287,8 @@ focus_tree = {
 		id = SIL_Democratic_United_Germany
 		icon = GFX_goal_generic_propaganda
 		cost = 10.00
+		x = 7
+		y = 9
 		prerequisite = {
 			focus = SIL_Megali_Idea
 		}
@@ -299,8 +301,7 @@ focus_tree = {
 		}
 		
 		}
-		x = 7
-		y = 9
+		
 
 	}
 	focus = {
