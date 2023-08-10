@@ -118,7 +118,6 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -271,7 +270,6 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -331,7 +329,6 @@ ideologies = {
 	faction_impact_on_world_tension = 0.1
 	
 	modifiers = {
-		generate_wargoal_tension = 0.50
 		join_faction_tension = 0.50
 		lend_lease_tension = 0.50
 		send_volunteers_tension = 0.00
@@ -400,7 +397,6 @@ ideologies = {
 	faction_impact_on_world_tension = 0.1
 	
 	modifiers = {
-		generate_wargoal_tension = 0.10
 		join_faction_tension = 0.10
 		lend_lease_tension = 0.10
 		send_volunteers_tension = 0.00
@@ -454,7 +450,6 @@ ideologies = {
 	faction_impact_on_world_tension = 0.1
 	
 	modifiers = {
-		generate_wargoal_tension = 0.10
 		join_faction_tension = 0.10
 		lend_lease_tension = 0.10
 		send_volunteers_tension = 0.00
@@ -520,7 +515,6 @@ ideologies = {
 	
 	modifiers = {
 		#increased_influence_factor = 0.3 #30% easier to influence
-		generate_wargoal_tension = 0.5
 		join_faction_tension = 0.4
 		lend_lease_tension = 0.4
 		send_volunteers_tension = 0.4
@@ -576,7 +570,7 @@ ideologies = {
 		rules = {
 			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = no
+			can_puppet = yes
 		}
 		
 		can_collaborate = no
@@ -704,7 +698,6 @@ ideologies = {
 	
 	modifiers = {
 		#increased_influence_factor = 0.3 #30% easier to influence
-		generate_wargoal_tension = 0.5
 		join_faction_tension = 0.4
 		lend_lease_tension = 0.4
 		send_volunteers_tension = 0.4

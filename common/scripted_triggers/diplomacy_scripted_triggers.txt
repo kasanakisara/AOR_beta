@@ -903,107 +903,9 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = ALWAYS_FREE
-			}
-		}
-		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = LIMITED
-			}
-		}
-		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_25
-			}
-		}
-		threat>0.24
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_50
-			}
-		}
-		threat>0.49
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_75
-			}
-		}
-		threat>0.74
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_100
-			}
-		}
-		threat>0.99
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_WARGOALS_BLOCKED_TT
-			always = no
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_38
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_38_DESC
-			date > 1938.1.1
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_39
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_39_DESC
-			date > 1939.1.1
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_40
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
-			date > 1940.1.1
-		}
+	custom_trigger_tooltip = {
+		always = no
+		tooltip = "这里是AOR，我想你可以通过其他方式来..."
 	}
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
@@ -1091,7 +993,7 @@ DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 	custom_trigger_tooltip = {
 		always = no
-		tooltip = "This is AOR, you should be loyal to your friend!"
+		tooltip = "这里是AOR，请对你的盟友保证忠诚！"
 	}
 	
 }
