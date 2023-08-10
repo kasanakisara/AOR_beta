@@ -72,7 +72,7 @@ if = {
 
 
 
-country_lock all_division_template = yes
+country_lock_all_division_template = yes
 
 
 set_research_slots = 3

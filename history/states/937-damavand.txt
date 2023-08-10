@@ -1,27 +1,24 @@
-
 state={
-	id=417
-	name="STATE_417"
+	id=937
+	name="STATE_937"
 
 	history={
 		owner = PER
-		victory_points = {
-			8040 5 
-		}
-
 		buildings = {
-			infrastructure = 2
 
+		}
+		victory_points = {
+			10837 25 
 		}
 		add_core_of = PER
 
 	}
 
 	provinces={
-		1982 8040 8125 
+		10837
 	}
-	manpower=796396
+	manpower=2453254
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 	local_supplies=0.000
 }

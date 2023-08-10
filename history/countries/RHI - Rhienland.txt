@@ -158,6 +158,8 @@ add_ideas = {
 	problem_of_jesus
 }
 
+country_lock_all_division_template = yes
+
 
 create_country_leader = {
 	name = "Edouard Daladier"
