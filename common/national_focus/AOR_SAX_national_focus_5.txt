@@ -51,13 +51,24 @@ focus_tree = {
 		y = 2
 		completion_reward={
 		custom_effect_tooltip = SAX.3.tt
-			swap_ideas = {
+		if = {
+		 limit = {
+			NOT = {has_idea = Class_harmony_1 }
+		 }
+		swap_ideas = {
 				remove_idea = Class_harmony
 				add_idea = Class_harmony_1
 			}
-		
 		}
+		else = {
+		swap_ideas = {
+				remove_idea = Class_harmony_1
+				add_idea = Class_harmony_2
+			}
+		}
+		
 	}
+}
 	focus = {
 		id = Increase_welfare_expenses
 		icon = GFX_goal_unknown
@@ -90,11 +101,21 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.5.tt
+		if = {
+		 limit = {
+			NOT = {has_idea = Class_harmony_1 }
+		 }
+		swap_ideas = {
+				remove_idea = Class_harmony
+				add_idea = Class_harmony_1
+			}
+		}
+		else = {
 		swap_ideas = {
 				remove_idea = Class_harmony_1
 				add_idea = Class_harmony_2
 			}
-		
+		}
 		}
 		
 
@@ -332,11 +353,11 @@ focus_tree = {
 			custom_effect_tooltip = SAX.19.tt
 			
 			hidden_effect = {
-			remove_idea = protect_the_people
-			remove_idea = Guiding_the_People
-			remove_idea = The_government_of_all_the_people
-			remove_idea = profit_sharing
-			remove_idea = Government_intervention_in_the_market
+			remove_ideas = protect_the_people
+			remove_ideas = Guiding_the_People
+			remove_ideas = The_government_of_all_the_people
+			remove_ideas = profit_sharing
+			remove_ideas = Government_intervention_in_the_market
 			add_ideas = The_Victory_of_Democracy
 			}
 			
