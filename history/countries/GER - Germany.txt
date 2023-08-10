@@ -161,8 +161,6 @@ add_ideas = {
 	AOR_GER_idea_Ideological_opposition
 }
 
-country_lock_all_division_template = yes
-
 
 create_country_leader = {
 	name = "Friedrich Ebert"
