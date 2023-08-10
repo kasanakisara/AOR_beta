@@ -45,7 +45,7 @@ guiTypes = {
 		show_sound = menu_open_window
 
 
-		
+		#背景
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
@@ -82,7 +82,7 @@ guiTypes = {
 
 			iconType = {
 				name = "focus_bonuses_bg"
-				position = { x = 284 y = 14 }
+				position = { x = 264 y = 14 }
 				spriteType = "GFX_win_header_short_right"
 			}
 			
@@ -130,6 +130,7 @@ guiTypes = {
 			smooth_scrolling = yes
 			margin = { top = 13 bottom = 13 }
 			
+		#背景	
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_transparent"		
