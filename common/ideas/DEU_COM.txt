@@ -20,7 +20,7 @@ ideas = {
 				can_join_factions = no
 				can_create_factions = no
 				can_send_volunteers = no
-				}	
+			}	
 		}
 		
 		Compact_of_German_Confederation_1 = {
@@ -39,11 +39,9 @@ ideas = {
 			hidden_rule = {
 				can_not_declare_war = yes
 				can_send_volunteers = no
-				}
-				
 			}
 		}
-		
-    }
+	}
+}
 						  
 					
