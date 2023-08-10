@@ -7,10 +7,8 @@ state={
 	}
 
 	history={
-		owner = PYO
-		victory_points = { 1003 1 }
+		owner = KOR
 		add_core_of = KOR
-		add_core_of = PYO
 		buildings = {
 			infrastructure = 1
 		}
