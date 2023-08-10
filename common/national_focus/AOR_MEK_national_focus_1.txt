@@ -21,7 +21,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			custom_effect_tooltip = MEK.1_tt
+			custom_effect_tooltip = MEK.1.tt
 			add_political_power = 150
 		}
 	}
@@ -35,7 +35,8 @@ focus_tree={
 			factor=1
 		}
 		available = {
-			has_war = yes
+			date > 1923.4.1
+			NOT = {has_idea = Compact_of_German_Confederation }
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -210,8 +211,23 @@ focus_tree={
 			
 		}
 		completion_reward={
-
 			custom_effect_tooltip = MEK.10_tt
+			
+			division_template = {
+				name = "守备队"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+				}
+			}
+			create_unit = {
+				division = "name = \"守备队\" division_template = \"守备队\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				owner = MEK
+				amount = 1
+			}
+			
+			
+			
 		}
 	}
 	focus={
@@ -296,7 +312,7 @@ focus_tree={
 			custom_effect_tooltip = MEK.20_tt
 			add_political_power = -20
 			send_equipment = {
-				equipment = infantry_equipment_1
+				equipment = infantry_equipment_0
 				amount = 300
 				target = MEK
 			}
@@ -373,7 +389,7 @@ focus_tree={
 			custom_effect_tooltip = MEK.15_tt
 			add_war_support = 0.1
 			add_timed_idea = {
-				idea = MEK_The_dazzling_pearl_of_deutschland_1
+				idea = MEK_The_dazzling_pearl_of_deutschland
 				days = 360
 			}
 		}
