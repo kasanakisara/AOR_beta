@@ -821,3 +821,13 @@ ITA_futurism_empire_cosmic = {
     color = rgb { 204 199 196 }
     color_ui = rgb { 204 199 196 }
 }
+
+MIA_NIC = {
+	color = rgb { 70 147 160 }
+	color_ui = rgb { 70 147 160 }
+}
+
+MIA_NIC_2 = {
+	color = rgb { 255 244 38 }
+	color_ui = rgb {  255 244 38 }
+}

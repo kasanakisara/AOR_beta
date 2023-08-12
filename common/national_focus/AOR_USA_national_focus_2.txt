@@ -3,13 +3,13 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 9
+			add = 12
 			tag = USA
 		}
 	}
 	default = no
-	focus = {  #威尔逊白宫演讲
-		id = USA_Wilson's Speech
+	focus = {  #威尔逊白宫演讲#
+		id = USA_Wilsons_Speech
 		icon = GFX_goal_unknown
 		cost = 0.00
 		x = 10
@@ -19,12 +19,12 @@ focus_tree = {
 		}
 
 	}
-	focus = { #《美丽国家计划》
+	focus = { #《美丽国家计划》#
 		id = USA_Beautiful_Country_Plan
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = USA_Wilson's Speech
+			focus = USA_Wilsons_Speech
 		}
 		x = 10
 		y = 1
@@ -40,7 +40,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_Entering_the_hearts_of_workers #走进工人内心
+		id = USA_Entering_the_hearts_of_workers #走进工人内心#
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -55,7 +55,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_money_is_a_good_things #钱是个好东西
+		id = USA_money_is_a_good_things #钱是个好东西#
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -119,7 +119,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_Ah_the _workers_have_grown_up #呵，工人们成长了
+		id = USA_Ah_the_workers_have_grown_up #呵，工人们成长了
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -374,7 +374,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = USA_a_good_trade
+			focus = USA_a_good_deal
 		}
 		x = 23
 		y = 5

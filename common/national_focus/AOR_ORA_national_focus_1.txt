@@ -104,7 +104,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {	
 			add_political_power = 25
-			add_ideas =ORA_Workers_autonomy
+			add_ideas =AOR_ORA_Workers_autonomy
 		}
 	}
 	focus = {
@@ -121,11 +121,9 @@ focus_tree = {
 		y = 4
 		completion_reward = {	
 			add_political_power = 25
-			hidden_effect = {
-			remove_ideas = ORA_Workers_autonomy
+			remove_ideas = AOR_ORA_Workers_autonomy
 			remove_ideas = ORA_gong_hui_ling_dao
-			add_ideas = ORA_xin_da_lu_mo_shi
-			}
+			add_ideas = AOR_ORA_xin_da_lu_mo_shi
 			
 			ARG = {
 				country_event = AOR_ORA_events.5

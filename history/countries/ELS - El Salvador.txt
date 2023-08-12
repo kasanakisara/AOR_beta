@@ -87,7 +87,11 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Fascism = 100
+	AGR_socialism = 45
+	PAR_socialism = 15
+	Anarcho = 15
+	Marxism = 20
+	FRE_democratic =5
 }
 
 1939.1.1 = {
@@ -97,4 +101,8 @@ set_popularities = {
 		election_frequency = 48
 		elections_allowed = yes
 	}
+}
+
+effect = {
+country_lock_all_division_template = yes
 }

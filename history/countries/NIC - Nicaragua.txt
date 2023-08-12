@@ -87,11 +87,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 15
-	Fascism = 5
-	Marxism = 10
-	Absolutism = 70
+	AUT_democratic = 100
 }
+
+effect = {
+country_lock_all_division_template = yes
+}
+
 
 1939.1.1 = {
 	set_politics = {

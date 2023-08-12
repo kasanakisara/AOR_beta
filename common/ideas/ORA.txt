@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+	
+		Wur_repair = {
+            picture = GFX_idea_Wur_repair
+			allowed = { always = yes }
+
+            modifier = {
+                industry_repair_factor = 0.15
+            }
+        }
+	
 		ORA_a_group_without_leader = {
 			picture = GFX_idea_ORA_a_group_without_leader
 			allowed = { always = yes }
@@ -84,8 +94,8 @@ ideas = {
 				political_power_cost = 0.1
 			}
 		}
-		ORA_Workers_autonomy = {
-			picture = GFX_idea_ORA_Workers_autonomy
+		AOR_ORA_Workers_autonomy = {
+			picture = GFX_idea_AOR_ORA_Workers_autonomy
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.05
@@ -94,8 +104,8 @@ ideas = {
 				political_power_cost = 0.1
 			}
 		}
-		ORA_xin_da_lu_mo_shi = {
-			picture = GFX_idea_ORA_xin_da_lu_mo_shi
+		AOR_ORA_xin_da_lu_mo_shi = {
+			picture = GFX_idea_AOR_ORA_xin_da_lu_mo_shi
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
