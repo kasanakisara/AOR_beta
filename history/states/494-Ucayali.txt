@@ -8,12 +8,12 @@ state={
 	
 
 	history={
-		owner = PBF
+		owner = SPE
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PRU
-		add_core_of = PBF
+		add_core_of = SPE
+		add_core_of = NPE
 	}
 
 	provinces={

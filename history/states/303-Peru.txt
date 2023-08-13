@@ -10,7 +10,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = PBF
+		owner = NPE
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -20,8 +20,8 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = PRU
-		add_core_of = PBF
+		add_core_of = NPE
+		add_core_of = SPE
 		victory_points = {
 			12997 5 
 		}
