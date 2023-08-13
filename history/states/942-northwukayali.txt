@@ -1,21 +1,18 @@
 
 state={
-	id=494
-	name="STATE_494"
-
+	id=942
+	name="STATE_942"
+	provinces={
+		2212 2226 
+	}
 	history={
-		owner = SPE
+		owner = NPE
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = SPE
 		add_core_of = NPE
-
-	}
-
-	provinces={
-		5166 8160 8191 10940 
 	}
 	manpower=735826
 	buildings_max_level_factor=1.000
