@@ -57,9 +57,9 @@ set_politics = {
 }
 
 set_popularities = {
-	Marxism = 100
+	Marxism = 45
+	REL_socialism = 55
 }
-
 add_ideas = {
 	
 }
