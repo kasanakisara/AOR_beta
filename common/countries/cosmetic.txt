@@ -831,3 +831,18 @@ MIA_NIC_2 = {
 	color = rgb { 255 244 38 }
 	color_ui = rgb {  255 244 38 }
 }
+
+ORA_rad = {
+	color = rgb { 127 16 16 }
+	color_ui = rgb {  127 16 16 }
+}
+
+ORA_mid = {
+	color = rgb { 165 42 42 }
+	color_ui = rgb { 165 42 42 }
+}
+
+ORA_rev = {
+	color = rgb { 188 41 41  }
+	color_ui = rgb {  188 41 41 }
+}
