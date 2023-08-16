@@ -1,0 +1,97 @@
+add_namespace = ORA
+
+country_event = {
+	id = ORA.1 #大会开幕
+    picture = GFX_ORA.1
+    title = ORA.1.t
+    desc = ORA_1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	trigger = {
+	    date > 1920.1.1
+		has_war = no
+		tag = ORA
+	}
+	hidden = no
+	mean_time_to_happen = {day = 1}
+    option = { 
+        name = ORA.1.a
+		country_event = { days = 2 id = ORA.2 }
+		custom_effect_tooltip = ORA.5.tt
+	}
+}
+
+country_event = {
+	id = ORA.2 #CORA
+    picture = GFX_ORA.2
+    title = ORA.2.t
+    desc = ORA.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+    option = { 
+        name = ORA.2.a
+		country_event = { days = 2 id = ORA.3 }
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA } 
+		custom_effect_tooltip = ORA.6.tt
+		
+		hidden_effect = {
+		set_popularities = {
+				Anarcho = 65
+				Marxism = 20
+				PAR_socialism = 15
+				SOC_democratic = 5
+				}
+		}
+	}
+	
+	option = { 
+        name = ORA.2.b
+		country_event = { days = 2 id = ORA.3 }
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA } 
+		custom_effect_tooltip = ORA.7.tt
+		hidden_effect = {
+		set_popularities = {
+				Anarcho = 65
+				Marxism = 20
+				PAR_socialism = 15
+				SOC_democratic = 5
+				}
+		}
+	}
+	
+	option = { 
+        name = ORA.2.c
+		country_event = { days = 2 id = ORA.3 }
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA }  
+		custom_effect_tooltip = ORA.8.tt
+		hidden_effect = {
+		set_popularities = {
+				Anarcho = 65
+				Marxism = 20
+				PAR_socialism = 15
+				SOC_democratic = 5
+				}
+		}
+	}
+}
+
+country_event = {
+	id = ORA.3 #总工会
+    picture = GFX_ORA.3
+    title = ORA.3.t
+    desc = ORA.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+    option = { 
+        name = ORA.3.a
+		country_event = { days = 2 id = ORA.4 }
+	}
+}

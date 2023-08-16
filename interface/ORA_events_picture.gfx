@@ -33,4 +33,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_ORA_events.1.png"
 	}
 	
+	spriteType = {
+		name = "GFX_ORA.1"
+		texturefile = "gfx/event_pictures/ORA.1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ORA.2"
+		texturefile = "gfx/event_pictures/ORA.2.png"
+	}
 }
