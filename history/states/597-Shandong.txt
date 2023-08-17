@@ -7,10 +7,7 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		victory_points = {
-			7189 10 
-		}
-		victory_points = {
-			1069 20 
+			7160 10 
 		}
 		buildings = {
 			infrastructure = 2
@@ -18,7 +15,7 @@ state={
 	}
 
 	provinces={
-		1069 1084 7160 7189 10072 
+	    1084 7160 7189 10072 
 	}
 	manpower= 6549457
 	buildings_max_level_factor=1.000
