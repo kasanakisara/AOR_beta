@@ -6,6 +6,7 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = 0.1
 			political_power_cost = 0.5
+			ai_focus_defense_factor = 0.7
 			}
 		}
 		ARG_Farmers_support = {

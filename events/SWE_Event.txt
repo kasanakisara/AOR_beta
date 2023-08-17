@@ -1,5 +1,4 @@
 add_namespace = SWE
-add_namespace = SWE_Crisis
 
 country_event = {
     #罢工
@@ -46,12 +45,11 @@ country_event = {
 		}
         custom_effect_tooltip = SWE_Hakoon_Death_tt
         hidden_effect = {
-            kill_country_leader = yes
+            remove_ideas = SWE_Karl_P
             set_politics = { 
                 ruling_party = AUT_democratic
                 elections_allowed = "no"
             }
-            set_country_leader_ideology = patriarch
             set_popularities = {
                 AUT_democratic = 50
                 Marxism = 20
@@ -87,33 +85,33 @@ country_event = {
     option = {
         name = SWE.3.a
         trigger = { tag = SWE}
-        retire_country_leader = yes
-        set_politics = { 
-			ruling_party = Absolutism
-			elections_allowed = "no"
-		}
-        set_country_leader_ideology = monarchism
         hidden_effect = {
+            set_politics = { 
+                ruling_party = Absolutism
+                elections_allowed = "no"
+            }
             set_popularities = {
                 Marxism = 50
                 Absolutism = 50
             }
-            load_focus_tree = SWE_Rupprecht
+            #load_focus_tree = SWE_Rupprecht #还没做好orz
+            create_country_leader = {
+                name = "Rupprecht I"
+                ideology = monarchism
+                desc = "SWE_Rupprecht_desc"
+                picture = "gfx/leaders/SWE/Rupprecht-I.dds"
+                traits={}
+                expire="1965.1.1"
+            }
+            set_party_name = { 
+                ideology = Absolutism
+                long_name = SWE_Great_Kalma_and_His_Majesty_Rupprecht_I_s_Loyal_Party
+                name = SWE_Kingdom_Party
+            }
+            remove_ideas = SWE_EmergencyCountry
         }
-        create_country_leader = {
-            name = "Rupprecht I"
-            ideology = monarchism
-            desc = "SWE_Rupprecht_desc"
-            picture = "gfx/leaders/SWE/Rupprecht-I.dds"
-            traits={}
-            expire="1965.1.1"
-        }
-        set_party_name = { 
-            ideology = Absolutism
-            long_name = SWE_Great_Kalma_and_His_Majesty_Rupprecht_I_s_Loyal_Party
-            name = SWE_Kingdom_Party
-        }
-        remove_ideas = SWE_EmergencyCountry
+        custom_effect_tooltip = SWE_Rupprecht_I_tt
+        custom_effect_tooltip = SWE_orz_tt
     }
 }
 
@@ -389,81 +387,13 @@ country_event = {
                     type = annex_everything
                 }
             }
-            news_event = AOR_news.21
+            news_event = AOR_news.17
         }
         custom_effect_tooltip = SWE_Destruction_tt
     }
 }
 
-country_event = {
-    id = SWE_Crisis.1
-    title = SWE_Crisis.1.t
-    desc = SWE_Crisis.1.d
-    fire_only_once = yes
-    trigger = {
-        check_variable = { SWE_NationalUnity < 30 }
-    }
-    hidden = no
-    
-    option = {
-        name = SWE_Crisis.1.a
-        trigger = {
-            tag = SWE
-        }
-        hidden_effect = {
-            add_to_variable = { SWE_Sweden_Parliament_Attitude = -10 }
-            add_to_variable = { SWE_Stortinget_Attitude = -20 }
-            activate_mission = SWE_Confidience_Crisis
-        }
-        custom_effect_tooltip = SWE_Confidience_Crisis_1_tt
-    }
-}
-
-country_event = {
-    id = SWE_Crisis.2
-    title = SWE_Crisis.2.t
-    desc = SWE_Crisis.2.d
-    trigger = {
-        check_variable = { SWE_NationalUnity < 10 }
-    }
-    fire_only_once = yes
-    hidden = no
-    
-    option = {
-        name = SWE_Crisis.2.a
-        trigger = {
-            tag = SWE
-        }
-        hidden_effect = {
-            add_to_variable = { SWE_Sweden_Parliament_Attitude = -50 }
-            add_to_variable = { SWE_Stortinget_Attitude = 20 }
-            activate_mission = SWE_Confidience_Crisis
-            subtract_from_variable = { var:days_mission_timeout@SWE_Confidience_Crisis = 30 }
-        }
-        custom_effect_tooltip = SWE_Confidience_Crisis_normaly_tt
-    }
-}
-
-country_event = {
-    id = SWE_Crisis.3
-    title = SWE_Crisis.3.t
-    desc = SWE_Crisis.3.d
-    trigger = {
-        check_variable = { SWE_NationalUnity < -20 }
-    }
-    fire_only_once = yes
-    hidden = no
-    
-    option = {
-        name = SWE_Crisis.3.a
-        trigger = { tag = SWE }
-        hidden_effect = {
-            set_variable = { var:days_mission_timeout@SWE_Confidience_Crisis = 0 }
-        }
-        custom_effect_tooltip = SWE_Confidience_Crisis_Destruction_tt
-    }
-}
-
+#彩蛋~~~
 country_event = {
     id = SWE.520
     title = SWE.520.t
@@ -473,7 +403,7 @@ country_event = {
 
     option = {
         name = SWE.520.a
-        trigger = { tag = SWE }
+        trigger = { always = yes }
         hidden_effect = {
             create_country_leader = {
                 name = "Jim Lawrence Hacker"
@@ -493,5 +423,390 @@ country_event = {
             }
         }
         custom_effect_tooltip = SWE_520_tt
+    }
+}
+
+#斯德哥尔摩会议I
+country_event = {
+    id = SWE.4
+    title = SWE.4.t
+    desc = SWE.4.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.4.a
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 0.5
+        }
+        add_popularity = { ideology = AUT_democratic popularity = 0.2 }
+        add_popularity = { ideology = CON_democratic popularity = 0.1 }
+        country_event = { id = SWE.5 }
+    }
+
+    option = {
+        name = SWE.4.b
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 0.5
+        }
+        add_popularity = { ideology = FRE_democratic popularity = 0.3 }
+        country_event = { id = SWE.5 }
+    }
+}
+
+#斯德哥尔摩会议II
+country_event = {
+    id = SWE.5
+    title = SWE.5.t
+    desc = SWE.5.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.5.a
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 0.5
+        }
+        add_to_variable = { SWE_Stortinget_Attitude = 10 }
+        add_stability = -0.05
+        add_political_power = 20
+        country_event = { id = SWE.6 }
+    }
+
+    option = {
+        name = SWE.5.b
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 0.5
+        }
+        add_to_variable = { SWE_Sweden_Parliament_Attitude = 10 }
+        add_stability = -0.05
+        add_political_power = 20
+        country_event = { id = SWE.6 }
+    }
+}
+
+#斯德哥尔摩会议III
+country_event = {
+    id = SWE.6
+    title = SWE.6.t
+    desc = SWE.6.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.6.a
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 1
+        }
+        RUS = {
+            add_opinion_modifier = {
+                target = RUS
+                modifier = be_close_to
+            }
+        }
+        add_opinion_modifier = {
+            target = RUS
+            modifier = be_close_to
+        }
+        country_event = { id = SWE.7 }
+    }
+
+    option = {
+        name = SWE.6.b
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 0
+        }
+        ENG = {
+            add_opinion_modifier = {
+                target = SWE
+                modifier = be_close_to
+            }
+        }
+        add_opinion_modifier = {
+            target = ENG
+            modifier = be_close_to
+        }
+        FRA = {
+            add_opinion_modifier = {
+                target = SWE
+                modifier = be_close_to
+            }
+        }
+        add_opinion_modifier = {
+            target = FRA
+            modifier = be_close_to
+        }
+        country_event = { id = SWE.7 }
+    }
+}
+
+#斯德哥尔摩会议IV
+country_event = {
+    id = SWE.7
+    title = SWE.7.t
+    desc = SWE.7.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.7.a
+        trigger = { tag = SWE }
+        ai_will_do = {
+            factor = 1
+        }
+        add_stability = 0.2
+        add_political_power = 100
+        add_timed_idea = {
+            idea = SWE_Stockholm_Edict
+            days = 365
+        }
+    }
+}
+
+#信任危机
+country_event = {
+    id = SWE.8
+    title = SWE_Crisis.1.t
+    desc = SWE_Crisis.1.d
+    fire_only_once = yes
+    trigger = {
+        check_variable = { SWE_NationalUnity < 30 }
+    }
+    hidden = no
+    
+    option = {
+        name = SWE.8.a
+        trigger = {
+            tag = SWE
+        }
+        hidden_effect = {
+            add_to_variable = { SWE_Sweden_Parliament_Attitude = -10 }
+            add_to_variable = { SWE_Stortinget_Attitude = -20 }
+            activate_mission = SWE_Confidience_Crisis
+        }
+        custom_effect_tooltip = SWE_Confidience_Crisis_tt
+    }
+}
+
+#去除社会民主主义
+country_event = {
+    id = SWE.9
+    title = SWE.9.t
+    desc = SWE.9.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.9.a
+        trigger = {
+            tag = SWE
+        }
+        hidden_effect = {
+            remove_ideas = SWE_Left_Threat
+            create_country_leader = {
+                name = "Haakon VII"
+                desc = ""
+                picture = "a4buu-9y80q.dds"
+                expire = "1965.1.1"
+                ideology = conservatism
+                traits = {}
+            }
+            set_politics = { 
+                ruling_party = CON_democratic
+                elections_allowed = "no"
+            }
+            set_country_leader_ideology = conservatism
+            set_popularities = {
+                CON_democratic = 65
+                SOC_democratic = 10
+                Absolutism = 20
+                Marxism = 10
+            }
+        }
+        custom_effect_tooltip = SWE_Abandon_Sozialdemokrat_tt
+    }
+}
+
+#奥斯陆大审判
+country_event = {
+    id = SWE.10
+    title = SWE.10.t
+    desc = SWE.10.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.10.a
+        trigger = { tag = SWE }
+        add_popularity = { ideology = Marxism popularity = -0.2 }
+    }
+}
+
+#长刀之夜
+country_event = {
+    id = SWE.11
+    title = SWE.11.t
+    desc = SWE.11.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.11.a
+        trigger = { tag = SWE }
+        add_popularity = { ideology = Marxism popularity = -0.2 }
+    }
+}
+
+#1921年选举
+country_event = {
+    id = SWE.12
+    title = SWE.12.t
+    desc = SWE.12.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.12.a
+        trigger = {
+            tag = SWE
+        }
+        hidden_effect = {
+            create_country_leader = {
+                name = "Hjalmar Branting"
+                desc = ""
+                picture = "Hjalmar Branting.dds"
+                expire = "1965.1.1"
+                ideology = conservatism
+                traits = {}
+            }
+            set_politics = { 
+                ruling_party = CON_democratic
+                elections_allowed = "yes"
+                election_frequency = 40
+            }
+            set_country_leader_ideology = conservatism
+            set_popularities = {
+                CON_democratic = 65
+                SOC_democratic = 10
+                Absolutism = 20
+                Marxism = 10
+            }
+            remove_ideas = A_lingering_alliance
+        }
+        custom_effect_tooltip = SWE_Election_tt
+    }
+}
+
+#政治辩论I
+country_event = {
+    id = SWE.13
+    title = SWE.13.t
+    desc = SWE.13.d
+    is_triggered_only = yes
+    hidden = no
+
+    #将他赶下台
+    option = {
+        name = SWE.13.a
+        trigger = { tag = SWE }
+        hidden_effect = { country_event = { id = SWE.14 } }
+    }
+
+    #谦逊地反驳他
+    option = {
+        name = SWE.13.b
+        trigger = { tag = SWE }
+        hidden_effect = {
+            add_popularity = { ideology = SOC_demacratic popularity = 0.1 }
+            country_event = { id = SWE.15 }
+        }
+    }
+}
+
+#政治辩论-失败
+country_event = {
+    id = SWE.14
+    title = SWE.14.t
+    desc = SWE.14.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.14.a
+        trigger = { tag = SWE }
+        add_stability = -0.2
+    }
+}
+
+#政治辩论II
+country_event = {
+    id = SWE.15
+    title = SWE.15.t
+    desc = SWE.15.d
+    is_triggered_only = yes
+    hidden = no
+
+    #否认事实
+    option = {
+        name = SWE.15.a
+        trigger = { tag = SWE }
+        hidden_effect = { country_event = { id = SWE.14 } }
+    }
+
+    #平衡预算
+    option = {
+        name = SWE.15.b
+        trigger = { tag = SWE }
+        hidden_effect = {
+            country_event = { id = SWE.16 }
+            add_popularity = { ideology = CON_democratic popularity = 0.1 }
+            add_popularity = { ideology = FRE_democratic popularity = 0.15 }
+        }
+    }
+}
+
+#政治辩论III
+country_event = {
+    id = SWE.16
+    title = SWE.16.t
+    desc = SWE.16.d
+    is_triggered_only = yes
+    hidden = no
+
+    #判处死刑
+    option = {
+        name = SWE.16.a
+        trigger = { tag = SWE }
+        hidden_effect = { country_event = { id = SWE.14 } }
+    }
+
+    #判处监禁，剥夺政治权利
+    option = {
+        name = SWE.16.b
+        trigger = { tag = SWE }
+        hidden_effect = {
+            country_event = { id = SWE.17 }
+        }
+    }
+}
+
+#政治辩论-尾声
+country_event = {
+    id = SWE.17
+    title = SWE.17.t
+    desc = SWE.17.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.17.a
+        trigger = { tag = SWE }
+        add_stability = 0.2
     }
 }

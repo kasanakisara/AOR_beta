@@ -73,7 +73,7 @@ if = {
 }
 
 
-
+load_oob = SWE_oob
 
 set_research_slots = 3
 set_convoys = 50
@@ -147,9 +147,8 @@ set_politics = {
 
 }
 set_popularities = {
-	SOC_democratic = 90
-	Fascism = 00
-	Marxism = 10
+	SOC_democratic = 65
+	Marxism = 35
 }
 	
 add_ideas = {

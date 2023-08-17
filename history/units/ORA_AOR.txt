@@ -54,6 +54,15 @@ units = {
 		start_equipment_factor = 0.35
 
 	}
+	
+	division= {	
+		name = "胡圣安省矿业工人赤卫队"
+		location = 8187 # Salta
+		division_template = "工人武装赤卫队"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+
+	}
 	#######学联######
 	division= {	
 		name = "科尔多瓦学联第一纵队"
@@ -66,7 +75,7 @@ units = {
 	
 	division= {	
 		name = "科尔多瓦学联第二纵队"
-		location = 7500 # Southern Argentina
+		location = 5143 # Southern Argentina
 		division_template = "学生武装力量"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.25
@@ -75,7 +84,7 @@ units = {
 	
 	division= {	
 		name = "科尔多瓦学联第三纵队"
-		location = 7500 # Southern Argentina
+		location = 10986 # Southern Argentina
 		division_template = "学生武装力量"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.25

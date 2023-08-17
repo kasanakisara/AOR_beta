@@ -18,7 +18,7 @@ focus_tree = {
 			country_event = { id = AOR_ORA_events.1 }
 			
 			hidden_effect = {
-				country_event = { days = 10 id = AOR_ORA_events.2 }
+				country_event = { days = 15 id = AOR_ORA_events.2 }
 				country_event = { days = 60 id = AOR_ORA_events.3 }
 				country_event = { days = 120 id = AOR_ORA_events.3 }
 				country_event = { days = 180 id = AOR_ORA_events.3 }
