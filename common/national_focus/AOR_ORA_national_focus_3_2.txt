@@ -1,13 +1,14 @@
 focus_tree={
-id = ORA_mid
+	id = ORA_mid
 	country={
 		factor=0
 		modifier={
-			add=12
+			add=10
 			tag=ORA
 		}
 	}
 	default=no
+	continuous_focus_position = { x = 55 y = 3800 }
 	focus={
 		id=ORA_zhongyongzhidao
 		icon=unknown
