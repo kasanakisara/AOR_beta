@@ -1,10 +1,10 @@
 SpriteType = {
 
 	name = "gfx_xinnianzhiye_shine"
-	texturefile = "gfx/interface/goals/新年之夜.png"
+	texturefile = "gfx/interface/goals/新年之夜.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx/interface/goals/新年之夜.png"
+	 animationmaskfile = "gfx/interface/goals/新年之夜.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -17,7 +17,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx/interface/goals/新年之夜.png"
+	 animationmaskfile = "gfx/interface/goals/新年之夜.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
