@@ -164,5 +164,20 @@ spriteTypes = {
 		name = "GFX_ENG_daponingjiangdediyiqiang"
 		texturefile = "gfx\interface\goals\打破宁静的第一声枪声.dds"
 	}
-	
+
+	spriteType = {
+		name = "GFX_idea_ENG_the_beautiful_of_market"
+		texturefile = "gfx\interface\ideas\市场之美.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_Imperial_Federal_Economic_Recovery_Act"
+		texturefile = "gfx\interface\ideas\帝国联邦经济恢复法案.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_the_help_from_brother"
+		texturefile = "gfx\interface\ideas\兄弟之助.dds"
+	}
+
 }
