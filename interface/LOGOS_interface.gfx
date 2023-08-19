@@ -207,4 +207,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_category_ana.png"
 		
 	}
+	
+	#情报机构
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_ORA"
+		texturefile = "gfx/interface/operatives/agencies/logo_ORA.png"
+		noOfFrames = 2
+	}
 }

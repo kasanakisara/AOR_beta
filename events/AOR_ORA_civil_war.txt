@@ -36,7 +36,9 @@ country_event = {
     picture = GFX_AOR_ORA_events.3
     title = AOR_ORA_events.3.t
     desc = AOR_ORA_events.3.d
-    is_triggered_only = yes
+    trigger = {
+	    has_war = yes
+	}
 	hidden = no
 	
     option = { 
