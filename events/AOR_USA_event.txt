@@ -149,3 +149,116 @@ country_event = {
 		name = USA.3.a
 	}
 }
+
+
+country_event = {
+	id = USA.99 #南北战争！
+	title = USA.99.t
+	desc = USA.99.d
+	picture = GFX_USA_event_100
+	trigger = {
+	    date > 1920.9.25
+		tag = USA
+	}
+    mean_time_to_happen = {day = 1}
+	fire_only_once = yes
+      
+	option = {
+	leave_faction = Entente
+	}
+}
+
+
+country_event = {
+	id = USA.100 #南北战争！
+	title = USA.100.t
+	desc = USA.100.d
+	picture = GFX_USA_event_100
+	trigger = {
+	    date > 1921.6.5
+		tag = USA
+	}
+    mean_time_to_happen = {day = 1}
+	fire_only_once = yes
+      
+	option = {
+		name = USA.100.a
+		hidden_effect = {
+		CSA = {
+				transfer_state = 366
+				transfer_state = 365
+				transfer_state = 364
+				transfer_state = 363
+				transfer_state = 362
+				transfer_state = 368
+				transfer_state = 367
+				transfer_state = 370
+				transfer_state = 372
+				transfer_state = 371
+				transfer_state = 375
+				transfer_state = 374
+				transfer_state = 932
+				transfer_state = 922
+				transfer_state = 383
+				transfer_state = 926
+				transfer_state = 923
+				transfer_state = 924
+				transfer_state = 925
+				transfer_state = 381
+				transfer_state = 388
+				transfer_state = 386
+				transfer_state = 382
+
+				add_state_core = 366
+				add_state_core = 365
+				add_state_core = 364
+				add_state_core = 363
+				add_state_core = 362
+				add_state_core = 368
+				add_state_core = 367
+				add_state_core = 370
+				add_state_core = 372
+				add_state_core = 371
+				add_state_core = 375
+				add_state_core = 374
+				add_state_core = 932
+				add_state_core = 922
+				add_state_core = 383
+				add_state_core = 926
+				add_state_core = 923
+				add_state_core = 924
+				add_state_core = 925
+				add_state_core = 381
+				add_state_core = 388
+				add_state_core = 386
+				transfer_state = 382
+				add_manpower = 10000
+				}
+				
+			USA = {
+			set_politics = {ruling_party = FRE_democratic}
+			create_country_leader = {
+			name = "Warren Gamaliel Harding"
+			desc = "POLITICS_Warren_Gamaliel_Harding_DESC"
+			picture = "Harding.dds"
+			expire = "1945.1.1"
+			ideology = liberalism
+				}
+			set_popularities = {
+				FRE_democratic = 48
+				CON_democratic = 34
+				SOC_democratic = 17
+				AUT_democratic = 3
+				Marxism = 1
+				
+				}
+			declare_war_on = {
+				target = CSA
+				type = civil_war
+				}
+			}
+			
+		
+		}
+	}
+}

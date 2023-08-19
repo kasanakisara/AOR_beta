@@ -1,0 +1,140 @@
+add_namespace = ENG
+
+country_event = { #波涛汹涌
+	id = ENG.1
+	title = ENG.1.t
+	desc = ENG.1.d
+	picture = ENG.1.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.1.a
+		add_timed_idea = {
+			idea = ENG_bujianliming
+			days = 30
+		}
+	}
+}
+
+country_event = { #流浪者
+	id = ENG.2
+	title = ENG.2.t
+	desc = ENG.2.d
+	picture = ENG.2.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.2.a
+	}
+}
+
+country_event = { #新战
+	id = ENG.3
+	title = ENG.3.t
+	desc = ENG.3.d
+	picture = ENG.3.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.3.a
+		add_timed_idea = {
+			idea = ENG_shikezhunbeizhe
+			days = 60
+		}
+	}
+}
+
+country_event = { #血日
+	id = ENG.4
+	title = ENG.4.t
+	desc = ENG.4.d
+	picture = ENG.4.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.4.a
+		add_timed_idea = {
+			idea = ENG_yanlizhenya
+			days = 15
+		}
+	}
+}
+
+country_event = { #风起云涌
+	id = ENG.5
+	title = ENG.5.t
+	desc = ENG.5.d
+	picture = ENG.5.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.5.a
+		manpower = -200
+	}
+}
+
+country_event = { #远征
+	id = ENG.6
+	title = ENG.6.t
+	desc = ENG.6.d
+	picture = ENG.6.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.6.a
+	}
+}
+
+country_event = { #希望，已然湮灭；战争，接踵而至
+	id = ENG.7
+	title = ENG.7.t
+	desc = ENG.7.d
+	picture = ENG.7.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.7.a
+	}
+}
+
+country_event = { #永世的奴役
+	id = ENG.8
+	title = ENG.8.t
+	desc = ENG.8.d
+	picture = ENG.8.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.8.a
+	}
+}
+
+country_event = { #残酷的戏剧
+	id = ENG.9
+	title = ENG.9.t
+	desc = ENG.9.d
+	picture = ENG.9.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.9.a
+	}
+}

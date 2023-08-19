@@ -1,0 +1,1162 @@
+focus_tree = {
+	id = SWE_Union
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = SWE
+		}
+	}
+	default = no
+	focus = {
+		id = SWE_Holy_Union
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 11
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = SWE_Rebuild_Army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_completed_focus = SWE_1921s_Election
+		}
+		x = 17
+		y = 8
+		completion_reward = {
+			add_command_power = 30
+			remove_ideas = Tiger_of_Silence
+		}
+
+	}
+	focus = {
+		id = SWE_Throw_Olive_Branch
+		icon = GFX_goal_unknown
+		cost = 10.00
+		available = {
+			has_completed_focus = SWE_1921s_Election
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	
+	focus = {
+		id = SWE_Manhunt
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Holy_Union
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			unlock_decision_category_tooltip = SWE_Manhunt_catagory
+			add_ideas = SWE_Left_Threat
+		}
+
+	}
+	focus = {
+		id = SWE_Bergen_Law
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Manhunt
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			add_ideas = SWE_BergenLaw
+			add_stability = 0.2
+		}
+
+	}
+	focus = {
+		id = SWE_Turn_Right
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Bergen_Law
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_popularity = { ideology = CON_democratic popularity = 0.2 }
+			add_popularity = { ideology = AUT_democratic popularity = 0.1 }
+		}
+
+	}
+	focus = {
+		id = SWE_Oslo_Trial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Turn_Right
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+			country_event = { id = SWE.10 }
+		}
+
+	}
+	focus = {
+		id = SWE_Policy_Debate
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Manhunt
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			country_event = { id = SWE.13 }
+		}
+
+	}
+	focus = {
+		id = SWE_Ban_Left_Newspaper
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Policy_Debate
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.15
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Night_Long_Knives
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Ban_Left_Newspaper
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			country_event = { id = SWE.11 }
+		}
+
+	}
+	focus = {
+		id = SWE_Abandon_Sozialdemokrat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Oslo_Trial
+		}
+		prerequisite = {
+			focus = SWE_Night_Long_Knives
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+			country_event = { id = SWE.9 }
+		}
+
+	}
+	focus = {
+		id = SWE_Karlstard_Plan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Holy_Union
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			add_ideas = SWE_Karl_P
+			set_variable = { SWE_Stortinget_Attitude = 85 }
+			set_variable = { SWE_Sweden_Parliament_Attitude = 70 }
+			set_variable = { SWE_NationalUnity = 77.5 }
+			unlock_decision_category_tooltip = SWE_Karl_Plan_catagory
+		}
+
+	}
+	focus = {
+		id = SWE_Focus_France_Import
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Karlstard_Plan
+		}
+		mutually_exclusive = {
+			focus = SWE_Focus_British_Import
+		}
+		completion_reward = {
+			add_timed_idea = { idea = SWE_FocusFranceImport days = 30 }
+			FRA = {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = focus_import
+				}
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = focus_import
+			}
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = SWE_Focus_British_Import
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Karlstard_Plan
+		}
+		mutually_exclusive = {
+			focus = SWE_Focus_France_Import
+		}
+		completion_reward = {
+			add_timed_idea = { idea = SWE_FocusBritishImport days = 30 }
+			ENG = {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = focus_import
+				}
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = focus_import
+			}
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SWE_Stockholm_Meeting
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Focus_France_Import
+			focus = SWE_Focus_British_Import
+		}
+		completion_reward = {
+			country_event = {
+				id = SWE.4
+			}
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Industry_Research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Focus_British_Import
+			focus = SWE_Focus_France_Import
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 3
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Bergen_Industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Industry_Research
+		}
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		completion_reward = {
+			142 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Oslo_Industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		prerequisite = {
+			focus = SWE_Industry_Research
+		}
+		completion_reward = {
+			110 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Develop_North
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_Industry_Research
+		}
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		completion_reward = {
+			666 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			144 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			143 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			38 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Twilight_Approach
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Oslo_Industry
+		}
+		prerequisite = {
+			focus = SWE_Bergen_Industry
+		}
+		prerequisite = {
+			focus = SWE_Develop_North
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = SWE_tt
+		}
+
+	}
+	focus = {
+		id = SWE_1921s_Election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_Abandon_Sozialdemokrat
+		}
+		prerequisite = {
+			focus = SWE_Twilight_Approach
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			country_event = { id = SWE.12 }
+		}
+
+	}
+	focus = {
+		id = SWE_Focus_Attack
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Rebuild_Army
+		}
+		mutually_exclusive = {
+			focus = SWE_Focus_Defence
+		}
+		x = 16
+		y = 9
+		completion_reward = {
+			add_ideas = SWE_Focus_Attack_ideas
+			add_tech_bonus = {
+				bonus = 2.0 
+				uses = 1
+				category = cat_mobile_warfare
+			}
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Research_Airplane
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Focus_Attack
+		}
+		x = 15
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 2
+				category = light_fighter
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Focus_Defence
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Rebuild_Army
+		}
+		mutually_exclusive = {
+			focus = SWE_Focus_Attack
+		}
+		x = 18
+		y = 9
+		completion_reward = {
+			add_ideas = SWE_Focus_Defence_ideas
+			add_tech_bonus = {
+				bonus = 2.0 
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Research_Artilery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Focus_Attack
+			focus = SWE_Focus_Defence
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 3
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 3
+				category = cat_anti_tank
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Norweign_Line
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_Focus_Defence
+		}
+		x = 19
+		y = 10
+		completion_reward = {
+			hidden_effect = {
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9147
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 201
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6168
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 61
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6170
+					}
+				}
+				666 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6208
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9116
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6092
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9064
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 11104
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9128
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 11169
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9191
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6107
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 3082
+					}
+				}
+				144 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 3088
+					}
+				}
+			}
+			custom_effect_tooltip = SWE_Build_Norweign_Line_tt
+		}
+
+	}
+	focus = {
+		id = SWE_Superior_Fire
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Research_Airplane
+		}
+		prerequisite = {
+			focus = SWE_Research_Artilery
+		}
+		x = 16
+		y = 11
+		completion_reward = {
+			add_ideas = SWE_Superior_Fire_ideas
+		}
+
+	}
+	focus = {
+		id = SWE_Depth_Defence
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Research_Artilery
+		}
+		prerequisite = {
+			focus = SWE_Norweign_Line
+		}
+		x = 18
+		y = 11
+		completion_reward = {
+			add_ideas = SWE_Depth_Defence_ideas
+		}
+
+	}
+	focus = {
+		id = SWE_Take_No_Side
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Throw_Olive_Branch
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					tag = SWE
+					modifier = neutral_speech_for_capitalism
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					tag = SWE
+					modifier = neutral_speech_for_capitalism
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					tag = SWE
+					modifier = neutral_speech_for_communism
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Help_Soviet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Take_No_Side
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_I
+					}
+				}
+				add_ideas = SWE_Good_Relationship_I
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+				}
+				RUS = {
+					add_ideas = SWE_Industry_Help
+				}
+			}
+			else = {
+				SOV = {
+					add_ideas = SWE_Industry_Help
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Hedge
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Take_No_Side
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_I
+					}
+				}
+				add_ideas = SWE_Good_Relationship_I
+			}
+			GRE = {
+				add_ideas = SWE_Miltary_Help
+			}
+			TUR = {
+				add_ideas = SWE_Miltary_Help
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Sell_Arms
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Help_Soviet
+		}
+		prerequisite = {
+			focus = SWE_Hedge
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_II
+					}
+				}
+				add_ideas = SWE_Good_Relationship_II
+				remove_ideas = SWE_Good_Relationship_I
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+				}
+				RUS = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 1000
+						producer = SWE
+					}
+				}
+			}
+			else = {
+				SOV = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 1000
+						producer = SWE
+					}
+				}
+			}
+			TUR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = SWE
+				}
+			}
+			GRE = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = SWE
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Industry_Support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Hedge
+		}
+		prerequisite = {
+			focus = SWE_Help_Soviet
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_II
+					}
+				}
+				add_ideas = SWE_Good_Relationship_II
+				remove_ideas = SWE_Good_Relationship_I
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+				}
+				RUS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = RUS
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			else = {
+				SOV = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = SOV
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			CHI = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			TUR = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = TUR
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Miltary_Education
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Sell_Arms
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SOV
+				}
+				SOV = {
+					add_command_power = 30
+				}
+			}
+			else = {
+				RUS = {
+					add_command_power = 30
+				}
+			}
+			CHI = {
+				add_command_power = 50
+			}
+			TUR = {
+				add_command_power = 100
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_III
+					}
+				}
+				add_ideas = SWE_Good_Relationship_III
+				remove_ideas = SWE_Good_Relationship_II
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Resource_Support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Sell_Arms
+		}
+		prerequisite = {
+			focus = SWE_Industry_Support
+		}
+		prerequisite = {
+			focus = SWE_Sell_Arms
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_ideas = SWE_Export
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_III
+					}
+				}
+				add_ideas = SWE_Good_Relationship_III
+				remove_ideas = SWE_Good_Relationship_II
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+				}
+				SOV = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = SOV
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			else = {
+				RUS = {
+					random_owned_controlled_state = {
+						limit = {
+							is_core_of = RUS
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			CHI = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Research_Support
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Industry_Support
+		}
+		prerequisite = {
+			focus = SWE_Sell_Arms
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_ideas = SWE_Good_Relationship_III
+					}
+				}
+				add_ideas = SWE_Good_Relationship_III
+				remove_ideas = SWE_Good_Relationship_II
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+				}
+				SOV = {
+					add_tech_bonus = {
+						bonus = 2.0
+						uses = 3
+						category = industry
+					}
+					add_tech_bonus = {
+						bonus = 2.0
+						uses = 3
+						category = infantry_weapons
+					}
+				}
+			}
+			else = {
+				RUS = {
+					add_tech_bonus = {
+						bonus = 2.0
+						uses = 3
+						category = industry
+					}
+					add_tech_bonus = {
+						bonus = 2.0
+						uses = 3
+						category = infantry_weapons
+					}
+				}
+			}
+			CHI = {
+				add_tech_bonus = {
+					bonus = 2.0
+					uses = 3
+					category = industry
+				}
+				add_tech_bonus = {
+					bonus = 2.0
+					uses = 3
+					category = infantry_weapons
+				}
+			}
+			TUR = {
+				add_tech_bonus = {
+					bonus = 2.0
+					uses = 3
+					category = industry
+				}
+				add_tech_bonus = {
+					bonus = 2.0
+					uses = 3
+					category = infantry_weapons
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Nonaggression_Treaty
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Resource_Support
+		}
+		prerequisite = {
+			focus = SWE_Miltary_Education
+		}
+		prerequisite = {
+			focus = SWE_Research_Support
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SOV
+				}
+				diplomatic_relation = { country = SOV relation = non_aggression_pact }
+			}
+			else ={
+				diplomatic_relation = { country = RUS relation = non_aggression_pact }
+			}
+			diplomatic_relation = { country = TUR relation = non_aggression_pact }
+			diplomatic_relation = { country = GRE relation = non_aggression_pact }
+			diplomatic_relation = { country = CHI relation = non_aggression_pact }
+		}
+
+	}
+}

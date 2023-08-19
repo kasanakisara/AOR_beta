@@ -5,15 +5,9 @@ country_event = {
     picture = GFX_ORA.1
     title = ORA.1.t
     desc = ORA_1.d
-    is_triggered_only = yes
     fire_only_once = yes
-	trigger = {
-	    date > 1920.1.1
-		has_war = no
-		tag = ORA
-	}
+	is_triggered_only = yes
 	hidden = no
-	mean_time_to_happen = {day = 1}
     option = { 
         name = ORA.1.a
 		country_event = { days = 2 id = ORA.2 }
@@ -21,18 +15,6 @@ country_event = {
 		set_country_flag = { flag = ORA_rad value = 0 }
 		set_country_flag = { flag = ORA_mid value = 0 }
 		set_country_flag = { flag = ORA_ref value = 0 }
-		hidden_effect = {
-			set_stability = 0.75
-			set_war_support = 0.5
-			set_research_slots = 3
-			remove_ideas = ORA_gong_ren_shang_qian_xian
-			remove_ideas = ORA_gong_ren_shang_qian_xian_1
-			remove_ideas = ORA_gong_ren_shang_qian_xian_2
-			remove_ideas = ORA_gong_ren_shang_qian_xian_3
-			remove_ideas = ORA_gong_ren_shang_qian_xian_4
-			remove_ideas = ORA_Spark_1
-			
-		}
 	}
 }
 
@@ -405,6 +387,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_rad
 			set_country_flag = ORA_radical_win
+			load_focus_tree = ORA_rad
 			}
 		}
 	}
@@ -434,6 +417,8 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_mid
 			set_country_flag = ORA_middle_win
+			load_focus_tree = ORA_mid
+
 			}
 	}
 
@@ -462,6 +447,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_ref
 			set_country_flag = ORA_reform_win
+			load_focus_tree = ORA_ref
 			}
 	}
 
@@ -483,13 +469,14 @@ country_event = {
 		create_country_leader = {
 		name = "Antonio Soto"
 		desc = "POLITICS_Antonio_Soto_DESC"
-		picture = "FORA_4.PNG"
+		picture = "FORA_4.dds"
 		expire = "1945.1.1"
 		ideology = syndicalism
 			}
 		hidden_effect = {
 			set_cosmetic_tag = ORA_rad
 			set_country_flag = ORA_radical_win
+			load_focus_tree = ORA_rad
 			}
 	}
 	option = { 
@@ -502,11 +489,12 @@ country_event = {
 		desc = "POLITICS_Diego_Abad_de_Santillán_DESC"
 		picture = "FORA_3.dds"
 		expire = "1945.1.1"
-		ideology = syn_ten
+		ideology = new_ten
 			}
 		hidden_effect = {
 			set_cosmetic_tag = ORA_mid
 			set_country_flag = ORA_middle_win
+			load_focus_tree = ORA_mid
 			}
 	}
 	option = { 
@@ -517,14 +505,44 @@ country_event = {
 		create_country_leader = {
 		name = "Simón Radowitzky"
 		desc = "POLITICS_Diego_Simón_Radowitzky_DESC"
-		picture = "FORA.dds"
+		picture = "FORA_2.dds"
 		expire = "1945.1.1"
-		ideology = syn_rad
+		ideology = new_ref
 			}
 		hidden_effect = {
 			set_cosmetic_tag = ORA_ref
 			set_country_flag = ORA_reform_win
+			load_focus_tree = ORA_ref
 			}
 	}
 
 }
+
+country_event = {
+	id = ORA.14 #小市民的经历
+    picture = GFX_ORA.1
+    title = ORA.14.t
+    desc = ORA.14.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+    option = { 
+        name = ORA.14.a
+	}
+
+}
+
+country_event = {
+	id = ORA.15 #布宜诺斯艾利斯暴动
+    picture = GFX_ORA.1
+    title = ORA.15.t
+    desc = ORA.15.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+    option = { 
+        name = ORA.15.a
+	}
+
+}
+

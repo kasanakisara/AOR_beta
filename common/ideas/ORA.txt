@@ -279,5 +279,25 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+		ORA_zhuzhongminsheng = {
+			picture = GFX_ORA_zhuzhongminsheng
+			allowed = { always = yes }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ORA_zhenyafangem = {
+			picture = GFX_ORA_zhenyafangem
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				tability_weekly = 0.001
+				compliance_growth = 0.15
+			}
+		}
+		
 	}
 }

@@ -1,0 +1,45 @@
+on_action = {
+	on_daily_SWE = {
+		effect = {
+			#每日减少的议会态度
+			if = {
+				limit = {
+					check_variable = {SWE_Sweden_Parliament_Attitude < SWE_Stortinget_Attitude}
+				}
+				subtract_from_variable = {
+					var = SWE_NationalUnity
+					value = SWE_Sweden_Parliament_Attitude
+				}
+				add_to_variable = {
+					var = SWE_NationalUnity
+					value = SWE_Stortinget_Attitude
+				}
+			}
+			else = {
+				subtract_from_variable = {
+					var = SWE_NationalUnity
+					value = SWE_Stortinget_Attitude
+				}
+				add_to_variable = {
+					var = SWE_NationalUnity
+					value = SWE_Sweden_Parliament_Attitude
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {SWE_Sweden_Parliament_Attitude < 0}
+				}
+				add_to_variable = {
+					var = SWE_Sweden_Parliament_Attuitude
+					value = 20
+				}
+			}
+
+			subtract_from_variable = {
+				var = SWE_Stortinget_Attitude
+				value = 7.5
+			}
+		}
+	}
+}

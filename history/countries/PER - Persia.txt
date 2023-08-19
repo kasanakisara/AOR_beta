@@ -153,11 +153,11 @@ set_popularities = {
 }
 
 add_ideas = {
-	Anglo_Iranian_agreement
-	Few_troops
-	Great_Famine
-	Illiterate_people
-	A_rebellious_tribe
+	PER_Anglo_Iranian_agreement
+	PER_Few_troops
+	PER_Great_Famine
+	PER_Illiterate_people
+	PER_rebellious_tribe
 }
 
 

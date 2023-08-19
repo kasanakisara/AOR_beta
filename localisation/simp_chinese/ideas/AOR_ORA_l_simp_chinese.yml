@@ -12,6 +12,8 @@
  AOR_ORA_Workers_autonomy:0"工人自治"
  AOR_ORA_xin_da_lu_mo_shi:0"新大陆模式"
  ORA_lian_he_zheng_fu:0"联合政府"
+ ORA_zhuzhongminsheng:0"注重民生"
+ ORA_zhenyafangem:0"镇压反革命"
  #####决议#####
  AOR_ORA_hu_yv_zong_ba_gong_hu_yv_zong_ba_gong:0"呼吁总罢工"
  AOR_ORA_hu_yv_zong_ba_gong:0"呼吁总罢工"
@@ -19,7 +21,11 @@
  AOR_ORA_gong_tuan_de_zan_mei_shi:0"工团的赞美诗"
  AOR_ORA_gong_ren_de_zan_mei_shi:0"工人的赞美诗"
  AOR_ORA_gong_hui_de_zan_mei_shi:0"工会的赞美诗"
- 
+ AOR_ORA_des_rebuild:0"复苏家园"
+ AOR_ORA_xinjianmingong:0"向地区工会发布季度计划"
+ AOR_ORA_xinjianmingong_2:0"提升轻工业水平"
+ AOR_kantanshiyou:0"调度石油工人"
+ AOR_yeliangangtie:0"尝试于门多萨发展重工业"
  ####tt######
  ORA.1.tt:0"§Y这将合并之前的民族精神§"
  ORA.2.tt:0"§R拉多维茨基回来了§"
@@ -33,6 +39,7 @@
  ORA.6.tt:0"§R索托和他所代表的激进派的支持率会上升§"
  ORA.7.tt:0"§O桑蒂兰和他所代表的温和派的支持率会上升§"
  ORA.8.tt:0"§Y西蒙和他所代表的改革派的支持率会上升§"
+ ORA.9.tt:0"§Y这将重置我们的一些民族精神和状态§!"
  ########内阁和将领####
  ORA_Hu_An_Duo_Ming_Ge_Bi_Long:0"胡安·多明戈·庇隆" 
  ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan:0"胡安·安东尼奥·莫兰" 

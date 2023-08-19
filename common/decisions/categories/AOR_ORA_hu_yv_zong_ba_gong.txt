@@ -3,6 +3,7 @@ AOR_ORA_zhu_jiu_gang_tie = {
 	visible = {
 		TAG = ORA
 		has_country_flag = unlock_AOR_ORA_zhu_jiu_gang_tie
+		has_war = yes 
 	}
 	priority = 100
 }

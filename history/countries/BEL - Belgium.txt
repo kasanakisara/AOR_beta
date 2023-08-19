@@ -101,23 +101,11 @@ set_politics = {
 
 set_popularities = {
 	CON_democratic = 50
-	Absolutism = 25
-	Marxism = 15
-	FRE_democratic = 10
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = CON_democratic
-		last_election = "1939.4.2"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		CON_democratic = 87
-		Fascism = 8
-		Marxism = 5
-	}
+	AUT_democratic = 25
+	Absolutism = 10
+	Special = 10 
+	Fascism = 3
+	FRE_democratic = 2
 }
 
 set_convoys = 80

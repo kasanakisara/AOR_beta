@@ -15,11 +15,11 @@ set_technology = {
 
 
 create_country_leader = {
-	name = "Diego de los Ríos y Nicolau"
+	name = "Emilio Aguinaldo"
 	desc = "POLITICS_PHI_DESC"
-	picture = "SPR.dds"
+	picture = "PHR.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberalism
 	traits = {
 	}
 }

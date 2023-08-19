@@ -83,7 +83,7 @@ if = {
 
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = FRE_democratic
 	last_election = "1915.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = ""
 	picture = "axm7x-nkh4s.dds"
 	expire = "1953.3.1"
-	ideology = federalism
+	ideology = liberalism
 	traits = {
 		
 	}

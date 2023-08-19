@@ -1,0 +1,8 @@
+AOR_ORA_des_rebuild = {
+	icon = GFX_decision_category_ana
+	visible = {
+		TAG = ORA
+		has_country_flag = unlock_AOR_ORA_des_rebuild
+	}
+	priority = 100
+}
