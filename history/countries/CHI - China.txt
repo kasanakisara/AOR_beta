@@ -1,4 +1,5 @@
 ﻿capital = 608 # Beijing --百京的秦王就是爷！！--iWagination
+				#iWagination 别在这理发店！！！！ --逻各斯
 
 load_oob = "AOR_LAND_CHI"
 if = {
@@ -14,7 +15,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ak90r-vhcfj.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism
 	traits = {
 	}
 }
@@ -83,15 +84,17 @@ add_ideas = {
 set_convoys = 40
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = AUT_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	Absolutism = 40
-	FRE_democratic = 60
+	Absolutism = 35
+	AUT_democratic = 45
+	SOC_democratic = 10
+	FRE_democratic = 10
 }
 
 ### VARIANTS ###
@@ -187,3 +190,7 @@ add_ideas = {
 }
 
 give_guarantee = QID
+
+effect = {
+country_lock all_division_template = yes
+}

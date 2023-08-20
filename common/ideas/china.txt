@@ -140,9 +140,9 @@ ideas = {
 	country = {
 
 		
-		Reclaiming_outer_northwest = {
+		AOR_Reclaiming_outer_northwest = {
 			
-			picture = GFX_idea_Reclaiming_outer_northwest
+			picture = GFX_idea_AOR_Reclaiming_outer_northwest
 			
 			allowed = {
 				always = yes
@@ -159,28 +159,10 @@ ideas = {
 			}
 		}
 
-		
-		CHI_Northwest_joint_command = {
-			
-			picture = GFX_idea_CHI_Northwest_joint_command
-			
-			allowed = {
-				always = yes
-			}
-			
-			visible = {
-				always = yes
-			}
 
-			modifier = {
-				army_morale_factor = 0.05
-				command_power_gain = 0.1
-				max_command_power = 15
-			}
-		}
 		
 		
-		CHI_Military_aid_from_the_Allies = {
+		AOR_CHI_Military_aid_from_the_Allies = {
 			
 			picture = GFX_idea_CHI_Military_aid_from_the_Allies
 			
@@ -193,14 +175,14 @@ ideas = {
 			}
 
 			modifier = {
-				add_offsite_building = { type = arms_factory level = 3 }
+				custom_modifier_tooltip = CHI.2.tt
 			}
 		}
 		
 		
-		CHI_debt_of_the_northwest_war = {
+		AOR_CHI_debt_of_the_northwest_war = {
 			
-			picture = GFX_idea_CHI_debt_of_the_northwest_war
+			picture = GFX_idea_AOR_CHI_debt_of_the_northwest_war
 			
 			allowed = {
 				always = yes
@@ -231,6 +213,25 @@ ideas = {
 			modifier = {
 		
 			}
+		}
+		
+		AOR_CHI_Northwest_joint_command = {
+			
+			picture = GFX_idea_AOR_CHI_Northwest_joint_command
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = 0.05
+				command_power_gain = 0.1
+				max_command_power = 15
+			} 
 		}
 		
 		#封建经济
@@ -268,7 +269,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor =0.15
-				political_advisor_cost_factor = 0.15
+				political_advisor_cost_factor = 0.25
 			}
 		}
 		
@@ -320,8 +321,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_core_attack_factor = -0.3
-				army_core_defence_factor = -0.3
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
 				army_org_factor = -0.3
 				army_morale_factor = -0.3
 			}
