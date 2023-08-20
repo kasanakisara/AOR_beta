@@ -21,15 +21,32 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sun Wen"
+	name = "Song Jiao Ren"
 	desc = ""
 	picture = "Sun.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = sanminism
 	traits = {
 	}
 }
-
+create_country_leader = {
+	name = "Duan Qi Rui"
+	desc = ""
+	picture = "Duan.dds"
+	expire = "1965.1.1"
+	ideology = miliciagov
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Li Yuan Hong"
+	desc = ""
+	picture = "Li.dds"
+	expire = "1965.1.1"
+	ideology = lianshengism
+	traits = {
+	}
+}
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
@@ -191,6 +208,4 @@ add_ideas = {
 
 give_guarantee = QID
 
-effect = {
 country_lock all_division_template = yes
-}
