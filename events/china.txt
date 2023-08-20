@@ -2,6 +2,7 @@
 ###########################
 
 add_namespace = CHI
+add_namespace = CHI_Northwest_decision
 
 country_event = {
 	id = CHI.1
@@ -96,4 +97,130 @@ country_event = {
 		name = CHI.6.a
 
 	}
+}
+
+country_event = {
+	id = CHI_Northwest_decision.1
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		917 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
+}
+
+country_event = {
+	id = CHI_Northwest_decision.2
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		586 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
+}
+
+country_event = {
+	id = CHI_Northwest_decision.3
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		918 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
+}
+
+country_event = {
+	id = CHI_Northwest_decision.4
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		654 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
+}
+
+country_event = {
+	id = CHI_Northwest_decision.5
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		916 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
+}
+
+country_event = {
+	id = CHI_Northwest_decision.6
+
+	title = CHI.6.t
+	desc = CHI.6.desc
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		920 = {
+			set_state_owner_to = CHI
+		}
+	} 
+	option = {
+		name = CHI.6.a
+
+	}
+
 }
