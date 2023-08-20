@@ -10,6 +10,7 @@ focus_tree={
 	default=no
 	focus={
 		id=ORA_Sunrise_of_victory
+		icon = GFX_goal_ORA_Sunrise_of_victory
 		x=7
 		y=0
 		cost=4
@@ -37,6 +38,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_undone
+		icon = GFX_goal_ORA_undone
 		x=7
 		y=1
 		prerequisite={focus=ORA_Sunrise_of_victory}

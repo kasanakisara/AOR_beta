@@ -33,6 +33,17 @@ spriteTypes = {
 		name = "GFX_goal_ORA_daybreak"
 		texturefile = "gfx/interface/goals/goal_ORA_daybreak.png"
 	}
+	
+	    spriteType = {
+		name = "GFX_goal_ORA_Sunrise_of_victory"
+		texturefile = "gfx/interface/goals/goal_ORA_Sunrise_of_victory.png"
+	}
+	
+		spriteType = {
+		name = "GFX_goal_ORA_undone"
+		texturefile = "gfx/interface/goals/goal_ORA_undone.png"
+	}
+	
 	##内阁##
 	spriteType = { #塞巴斯蒂安·马罗塔
 		name = "GFX_portrait_Sai_Ba_Si_Di_An_Ma_Luo_Ta_small"
