@@ -1,4 +1,5 @@
-﻿capital = 608 # Beijing --百京的秦王就是爷！！--iWagination
+﻿
+capital = 608 # Beijing --百京的秦王就是爷！！--iWagination
 				#iWagination 别在这理发店！！！！ --逻各斯
 
 load_oob = "AOR_LAND_CHI"
@@ -188,6 +189,8 @@ add_ideas = {
 	CHI_Lack_of_education
 	CHI_insecure_society
 }
+
+country_lock_all_division_template = yes
 
 give_guarantee = QID
 
