@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 11
 			tag = POL
 		}
 	}
@@ -155,9 +155,9 @@ focus_tree = {
 				popularity = -0.05
 			}
 			create_country_leader = {
-				name = "Highest Parliament"
+				name = "Peter Dmitryevich Sviatopolk Millsky"
 	            desc = ""
-             	picture = "portrait_POL_the_sejm.dds"
+             	picture = "portrait_POL_the_PDSM.dds"
             	expire = "1965.1.1"
             	ideology = Absolutism
              	traits = {
