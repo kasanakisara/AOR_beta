@@ -3,7 +3,6 @@ CHI_Reclaiming_outer_northwest_decision = {
 		icon = GFX_decision_generic_political_rally
 
 		available = {
-			
 		}
 
 		cost = 45
@@ -34,7 +33,7 @@ CHI_Reclaiming_outer_northwest_decision = {
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
-					state = 619
+					state = 287
 					num_provinces = 1
 					on_win = CHI_Northwest_decision.1
 					#on_lose = CHI_Northwest_decision.3
@@ -94,7 +93,7 @@ CHI_Reclaiming_outer_northwest_decision = {
 		icon = GFX_decision_generic_political_rally
 
 		available = {
-			
+			has_full_control_of_state = 586
 		}
 
 		cost = 30
@@ -102,7 +101,6 @@ CHI_Reclaiming_outer_northwest_decision = {
 		days_remove = 25
 		fire_only_once = yes
 		complete_effect = {
-			
 		}
 		remove_effect = {
 			start_border_war = {
