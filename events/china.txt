@@ -151,8 +151,8 @@ country_event = {
 	is_triggered_only = yes
     hidden = yes
 	immediate = {
-		918 = {
-			set_state_owner_to = CHI
+		CHI = {
+			transfer_state = 918
 		}
 	} 
 	option = {

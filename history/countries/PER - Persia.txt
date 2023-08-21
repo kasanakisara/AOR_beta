@@ -29,6 +29,7 @@ set_technology = {
 	
 }
 
+load_oob = "AOR_LAND_PER"
 if = {
 	limit = {
 		NOT = {
