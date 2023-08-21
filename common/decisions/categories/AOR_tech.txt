@@ -1,0 +1,9 @@
+AOR_tech_unlocked = {
+		priority = 90
+		icon = GFX_decision_category_generic_industry
+		allowed = {
+		}
+		visible = {
+			always = yes
+		}
+	}
