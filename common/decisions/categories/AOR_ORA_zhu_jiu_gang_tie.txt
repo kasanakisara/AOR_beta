@@ -3,6 +3,7 @@ AOR_ORA_hu_yv_zong_ba_gong = {
 	visible = {
 		TAG = ORA
 		has_country_flag = unlock_AOR_ORA_hu_yv_zong_ba_gong
+		has_war = yes 
 	}
 	priority = 100
 }
