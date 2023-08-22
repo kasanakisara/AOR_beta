@@ -14,25 +14,27 @@ ideas = {
 			picture = GFX_idea_ORA_a_group_without_leader
 			allowed = { always = yes }
 			modifier = {
-			stability_factor = -0.15
 			political_power_gain = -0.3
-			army_org_factor = -0.05
-			mobilization_speed = -0.05
 			planning_speed = -0.05
+			mobilization_speed = -0.05
 			}
 		}
 		ORA_Absent_CORA = {
 			picture = GFX_idea_ORA_Absent_CORA
 			allowed = { always = yes }
 			modifier = {
+			stability_factor = -0.1
 			}
 		}
 	    ORA_Spark = {
 			picture = GFX_idea_ORA_Spark
 			allowed = { always = yes }
 			modifier = {
-			join_faction_tension = 2
+			join_faction_tension = 20
 			surrender_limit = 0.35
+			army_org_factor = -0.05
+			experience_gain_army_factor = 0.05
+			
 			}
 		}
 		ORA_Spark_1 = {
