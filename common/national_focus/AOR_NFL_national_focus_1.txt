@@ -10,7 +10,7 @@ focus_tree={
 	focus={
 		id=tianyouguowang_0
 		icon=GFX_goal_nfl_tianyouguowang_0
-		x=5
+		x=7
 		y=0
 		cost=10.00
 		ai_will_do={factor=10}
@@ -19,91 +19,18 @@ focus_tree={
 		add_stability = 0.05
 		}
 	}
-	focus={
-		id=zizhideyuanwang_0
-		icon=GFX_goal_nfl_zizhideyuanwang_0
-		x=1
-		y=1
-		prerequisite={focus=tianyouguowang_0}
-		cost=10.00
-		ai_will_do={factor=20}
-		completion_reward={
-		add_political_power = 50
-		add_stability = 0.05
-		}
-	}
-	focus={
-		id=xuejianyingguoganyu_0
-		icon=GFX_goal_nfl_xuejianyingguoganyu_0
-		x=1
-		y=2
-		prerequisite={focus=zizhideyuanwang_0}
-		cost=15.00
-		ai_will_do={factor=10}
-		completion_reward={
-		add_manpower = -100
-		add_stability = -0.03
-		}
-	}
-	focus={
-		id=kaifayuchang_0
-		icon=GFX_goal_nfl_kaifayuchang_0
-		x=0
-		y=3
-		prerequisite={focus=xuejianyingguoganyu_0}
-		cost=12.00
-		ai_will_do={factor=10}
-		completion_reward={
-         add_building_construction = {
-         type = arms_factory
-         level = 3
-         instant_build = yes
-          }
-		}
-	}
-	focus={
-		id=yuyingguodejiaoyi_0
-		icon=GFX_goal_nfl_yuyingguodejiaoyi_0
-		x=2
-		y=3
-		prerequisite={focus=xuejianyingguoganyu_0}
-		cost=12.00
-		ai_will_do={factor=10}
-		completion_reward={
-		reverse_add_opinion_modifier = {
-          target = ENG
-          modifier = unstable_alliance
-           }
-		}
-	}
-	focus={
-		id=yidingwaijiaoziyouquan_0
-		icon=GFX_goal_nfl_yidingwaijiaoziyouquan_0
-		x=2
-		y=4
-		prerequisite={focus=yuyingguodejiaoyi_0}
-		cost=10.00
-		ai_will_do={factor=10}
-		completion_reward={
-		add_political_power = 100
-		reverse_add_opinion_modifier = {
-          target = ENG
-          modifier = unstable_alliance
-           }
-		reverse_add_opinion_modifier = {
-          target = FRA
-          modifier = attache_sent
-           }
-		}
-	}
+
 	focus={
 		id=qingjianadazhengfu_0
+		mutually_exclusive = {
+			focus = menbudanghubudui_0
+		}
 		icon=GFX_goal_nfl_qingjianadazhengfu_0
-		x=5
+		x=4
 		y=1
 		prerequisite={focus=tianyouguowang_0}
 		cost=10.00
-		ai_will_do={factor=3}
+		ai_will_do={factor=10}
 		completion_reward={
 		add_political_power = 50
 		reverse_add_opinion_modifier = {
@@ -115,11 +42,11 @@ focus_tree={
 	focus={
 		id=jianadahua_0
 		icon=GFX_goal_unknown
-		x=4
+		x=5
 		y=2
 		prerequisite={focus=qingjianadazhengfu_0}
 		cost=10.00
-		ai_will_do={factor=3}
+		ai_will_do={factor=10}
 		completion_reward={
 		reverse_add_opinion_modifier = {
           target = CAN
@@ -132,9 +59,10 @@ focus_tree={
 		icon=GFX_goal_unknown
 		x=4
 		y=3
-		prerequisite={focus=jianadahua_0}
+		prerequisite={focus=jianadahua_0  }
+		prerequisite={focus=genghaodeshenghuo_0 }
 		cost=13.00
-		ai_will_do={factor=3}
+		ai_will_do={factor=10}
 		completion_reward={
 		add_political_power = -400
 		add_stability = -0.25
@@ -143,34 +71,24 @@ focus_tree={
 	focus={
 		id=genghaodeshenghuo_0
 		icon=GFX_goal_unknown
-		x=6
+		x=3
 		y=2
 		prerequisite={focus=qingjianadazhengfu_0}
 		cost=12.00
-		ai_will_do={factor=1}
+		ai_will_do={factor=10}
 		completion_reward={
-         add_building_construction = {
-         type = arms_factory
-         level = 2
-         instant_build = yes
-          }
+           332 = {
+		   add_extra_state_shared_building_slots =1
+		 add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
 		}
 	}
-	focus={
-		id=zhanshijinjibingru_0
-		icon=GFX_goal_unknown
-		x=6
-		y=3
-		prerequisite={focus=genghaodeshenghuo_0}
-		available = {has_war = yes}
-		cost=14.00
-		ai_will_do={factor=3}
-		completion_reward={
-		add_political_power = -1
-		add_stability = -0.35
-		add_war_support = -0.25
-		}
-	}
+
+
 	focus={
 		id=menbudanghubudui_0
 		icon=GFX_goal_nfl_menbudanghubudui_0
@@ -178,7 +96,7 @@ focus_tree={
 		y=1
 		prerequisite={focus=tianyouguowang_0}
 		cost=10.00
-		ai_will_do={factor=10}
+		ai_will_do={factor=8}
 		completion_reward={
 		add_political_power = 100
 		add_stability = -0.05
@@ -187,11 +105,11 @@ focus_tree={
 	focus={
 		id=zhuanjiaoyuchang_0
 		icon=GFX_goal_unknown
-		x=8
+		x=9
 		y=2
 		prerequisite={focus=menbudanghubudui_0}
 		cost=10.00
-		ai_will_do={factor=5}
+		ai_will_do={factor=10}
 		completion_reward={
 		add_political_power = 50
 		add_stability = -0.05
@@ -204,12 +122,12 @@ focus_tree={
 	focus={
 		id=jiazhidezhanshi_0
 		icon=GFX_goal_unknown
-		available = {has_war = yes}
-		x=8
+		x=10
 		y=3
 		prerequisite={focus=zhuanjiaoyuchang_0}
+		prerequisite={focus=youyuedediliweizhi_0}
 		cost=10.00
-		ai_will_do={factor=5}
+		ai_will_do={factor=10}
 		completion_reward={
 		add_political_power = 100
 		}
@@ -221,79 +139,32 @@ focus_tree={
 		y=2
 		prerequisite={focus=menbudanghubudui_0}
 		cost=9.00
-		ai_will_do={factor=5}
+		ai_will_do={factor=10}
 		completion_reward={
 		reverse_add_opinion_modifier = {
           target = ENG
           modifier = attache_sent
            }
+		   332 = {
+		   add_extra_state_shared_building_slots =1
 		 add_building_construction = {
-         type = arms_factory
-         level = 2
-         instant_build = yes
-          }
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
 	}
 }
-	focus={
-		id=maoxiandeshenqing_0
-		icon=GFX_goal_unknown
-		x=9
-		y=4
-		prerequisite={focus=youyuedediliweizhi_0}
-		prerequisite={focus=jiazhidezhanshi_0}
-		cost=10.00
-		ai_will_do={factor=5}
-		completion_reward={
-		add_political_power = -200
-		add_stability = -0.1
-		}
-	}
-	focus={
-		id=jichujianshehuagongcheng_0
-		icon=GFX_goal_nfl_jichujianshehuagongcheng_0
-		x=0
-		y=4
-		prerequisite={focus=kaifayuchang_0}
-		cost=10.00
-		ai_will_do={factor=10}
-		completion_reward={
-		set_building_level = {
-          type = infrastructure
-          level = 3
-          instant_build = yes
-            }
-		}
-	}
-	focus={
-		id=guowanghetazhongchengdeziming_0
-		icon=GFX_goal_nfl_guowanghetazhongchengdeziming_0
-		x=1
-		y=5
-		prerequisite={focus=yidingwaijiaoziyouquan_0}
-		prerequisite={focus=jichujianshehuagongcheng_0}
-		available = {has_war = no}
-		cost=5.00
-		ai_will_do={factor=10}
-		completion_reward={
-		reverse_add_opinion_modifier = {
-          target = ENG
-          modifier = in_faction
-           }
-		set_building_level = {
-          type = infrastructure
-          level = 10
-          instant_build = yes
-            }
-		}
-	}
+
+
 	focus={
 		id=xinshenghuo_0
 		icon=GFX_goal_unknown
-		x=5
+		x=4
 		y=5
-		prerequisite={focus=yingguodeyijian_0 focus=zhanshijinjibingru_0 }
+		prerequisite={focus=yingguodeyijian_0 }
 		cost=15.00
-		ai_will_do={factor=1}
+		ai_will_do={factor=10}
 		completion_reward={
 		CAN = {
 		  annex_country ={	
@@ -305,11 +176,11 @@ focus_tree={
 	focus={
 		id=jiaruhaomeng_0
 		icon=GFX_goal_unknown
-		x=9
+		x=10
 		y=5
-		prerequisite={focus=maoxiandeshenqing_0}
+		prerequisite={focus=jiazhidezhanshi_0}
 		cost=10.00
-		ai_will_do={factor=1}
+		ai_will_do={factor=10}
 		completion_reward={
 		ENG = {
 		  annex_country ={	
