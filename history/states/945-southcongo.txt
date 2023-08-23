@@ -1,7 +1,7 @@
 
 state={
-	id=295
-	name="STATE_295"
+	id=945
+	name="STATE_945"
 	resources={
 		tungsten=2.000
 	}
@@ -12,25 +12,15 @@ state={
 			infrastructure = 1
 			industrial_complex = 2
 			air_base = 1
-			arms_factory = 2
-			10968 = {
-				naval_base = 1
+			arms_factory = 1
 
-			}
-
-		}
-		victory_points = {
-			191 1 
-		}
-		victory_points = {
-			5117 3 
 		}
 		add_core_of = COG
-
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
-		4128 5117 10025 10968 12896 12925 12945 
+		191 1516 1731 1817 1929 1968 2024 4515 7161 7716 9986 10858 12795 12907 
 	}
 	manpower=3540948
 	buildings_max_level_factor=1.000

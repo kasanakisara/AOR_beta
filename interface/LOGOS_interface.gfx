@@ -225,4 +225,46 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/logo_ORA.png"
 		noOfFrames = 2
 	}
+	
+	#小灯泡决议
+	spriteType = {
+		name = "GFX_decision_idea"
+		texturefile = "gfx/interface/decisions/decision_idea.png"
+	}
+	
+	#非洲军队决议图片
+	spriteType = {
+		name = "GFX_decision_BEL_prepare"
+		texturefile = "gfx/interface/decisions/decision_BEL_prepare.png"
+	}
+	
+	#小船决议
+	spriteType = {
+		name = "GFX_decision_ship"
+		texturefile = "gfx/interface/decisions/decision_ship.png"
+	}
+	
+	#小船决议
+	spriteType = {
+		name = "GFX_decision_ship"
+		texturefile = "gfx/interface/decisions/decision_ship.png"
+	}
+	
+	#步兵决议
+	spriteType = {
+		name = "GFX_decision_lu"
+		texturefile = "gfx/interface/decisions/decision_lu.png"
+	}
+	
+	#读书决议
+	spriteType = {
+		name = "GFX_decision_book"
+		texturefile = "gfx/interface/decisions/decision_book.png"
+	}
+	
+	#飞机决议
+	spriteType = {
+		name = "GFX_decision_air"
+		texturefile = "gfx/interface/decisions/decision_air.png"
+	}
 }
