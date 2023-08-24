@@ -267,4 +267,10 @@ spriteTypes = {
 		name = "GFX_decision_air"
 		texturefile = "gfx/interface/decisions/decision_air.png"
 	}
+	
+	#阿尔贝
+	spriteType = {
+		name = "GFX_BEL_Albert_icon"
+		texturefile = "gfx/AOR_gui/BEL/a3c5e-ni5gi.dds"
+	}
 }

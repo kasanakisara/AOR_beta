@@ -1,3 +1,17 @@
+BEL_Albert = {
+	icon = GFX_decision_idea
+	priority =200
+	scripted_gui = BEL_GUI
+	allowed = {
+		original_tag = BEL
+	}
+	visible_when_empty = yes
+
+
+}
+
+
+
 BEL_prepare = { 
 	icon =GFX_decision_idea
 	picture = GFX_decision_BEL_prepare
@@ -6,3 +20,4 @@ BEL_prepare = {
 	}
 	priority = 100
 }
+
