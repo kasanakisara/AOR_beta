@@ -92,8 +92,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		unlock_decision_category_tooltip = AOR_CHI_Reclaiming_outer_northwest 
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
-		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest 
+		
 		set_country_flag = unlock_CHI_Reclaiming_outer_northwest
 		}
 	}

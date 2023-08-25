@@ -1,0 +1,49 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BEL = {
+			country_lock_all_division_template = yes
+			set_division_force_allow_recruiting ={
+			division_template ="王国卫队"
+			force_allow_recruiting = yes
+				}
+			}
+			CHI = {
+			country_lock_all_division_template = yes
+			}
+			GER = {
+			country_lock_all_division_template = yes
+			}
+			SAX = {
+			country_lock_all_division_template = yes
+			}
+			SIL = {
+			country_lock_all_division_template = yes
+			}
+			HAN = {
+			country_lock_all_division_template = yes
+			}
+			MEK = {
+			country_lock_all_division_template = yes
+			}
+			KSH = {
+			country_lock_all_division_template = yes
+			}
+			PRE = {
+			country_lock_all_division_template = yes
+			}
+			BAV = {
+			country_lock_all_division_template = yes
+			}
+			WUR = {
+			country_lock_all_division_template = yes
+			}
+			NAU = {
+			country_lock_all_division_template = yes
+			}
+			SHL = {
+			country_lock_all_division_template = yes
+			}
+		}
+	}
+}

@@ -273,4 +273,16 @@ spriteTypes = {
 		name = "GFX_BEL_Albert_icon"
 		texturefile = "gfx/AOR_gui/BEL/a3c5e-ni5gi.dds"
 	}
+	
+	#超帅背景
+	spriteType = {
+		name = "GFX_BEL_Background_1"
+		texturefile = "gfx/event_pictures/AOR_BEL_Background_1.png"
+	}
+	
+	#我爱钓鱼
+	spriteType = {
+		name = "GFX_idea_Fishing_ground"
+		texturefile = "gfx/interface/ideas/NFL_Fishing_ground.png"
+	}
 }
