@@ -76,11 +76,13 @@ ideas = {
             }
 
             modifier = {
-                stability_factor = -0.55
-                stability_weekly = -0.02
+                stability_factor = -0.75
+                stability_weekly = -0.05
                 political_power_cost = 2.5
-                consumer_goods_factor = 0.3
+                consumer_goods_factor = 0.5
                 power_balance_weekly = -0.15
+                Marxism_drift = 0.05
+                war_support_factor = -0.25
             }
         }
 
@@ -319,6 +321,127 @@ ideas = {
             modifier = {
                 consumer_goods_factor = 0.2
                 stability_factor = 0.1
+            }
+        }
+
+        SWE_Last_EmergencyCountry = {
+            name = SWE_Last_EmergencyCountry
+            picture = ""
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_weekly = 0.02
+            }
+        }
+
+        SWE_SpeechRegulation = {
+            name = SWE_SpeechRegulation
+            picture = ""
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_weekly = 0.02
+                war_support_factor = -0.1
+            }
+        }
+        
+        SWE_Junta = {
+
+            name = SWE_Junta
+            picture = ""
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_weekly = 0.01
+                war_support_factor = -0.2
+            }
+        }
+
+        SWE_Econemy_Plan = {
+            name = SWE_Econemy_Plan
+            picture = ""
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                stability_factor = 0.2
+                war_support_weekly = 0.05
+            }
+        }
+        
+        SWE_Capitalism_World = {
+            name = SWE_Capitalism_World
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_weekly = 0.02
+                FRE_democratic_drift = 0.05
+                CON_democratic_drift = 0.05
+            }
+        }
+
+        SWE_EconomySupport = {
+
+            name = SWE_Econemy_Support
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_weekly = 0.02
+                FRE_democratic_drift = 0.05
+                CON_democratic_drift = 0.05
+                consumer_goods_factor = -0.2
             }
         }
 

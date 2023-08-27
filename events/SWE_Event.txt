@@ -70,6 +70,11 @@ country_event = {
             }
             load_focus_tree = SWE_Emergency
             add_ideas = SWE_EmergencyCountry
+            set_power_balance = {
+				id = SWE_Emergency_Country_bop
+				left_side = The_Edge_of_Destructions
+				right_side = The_Light_of_Orders
+			}
         }
     }
 }
@@ -572,8 +577,8 @@ country_event = {
 #信任危机
 country_event = {
     id = SWE.8
-    title = SWE_Crisis.1.t
-    desc = SWE_Crisis.1.d
+    title = SWE.8.t
+    desc = SWE.8.d
     fire_only_once = yes
     trigger = {
         check_variable = { SWE_NationalUnity < 30 }
@@ -808,5 +813,133 @@ country_event = {
         name = SWE.17.a
         trigger = { tag = SWE }
         add_stability = 0.2
+    }
+}
+
+#向法国求援
+country_event = {
+    id = SWE.18
+    title = SWE.18.t
+    desc = SWE.18.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.18.a
+        trigger = {
+            always = yes
+        }
+        SWE = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 1000
+                producer = FRA
+            }
+            country_event = SWE.19
+        }
+    }
+
+    option = {
+        name = SWE.18.b
+        trigger = {
+            always = yes
+        }
+        add_stability = -0.2
+        SWE = {
+            country_event = SWE.20
+        }
+    }
+}
+
+#向法国求援-获得支持
+country_event = {
+    id = SWE.19
+    title = SWE.19.t
+    desc = SWE.19.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.19.a
+        trigger = { tag = SWE }
+        add_stability = 0.2
+    }
+}
+
+#向法国求援——被拒绝
+country_event = {
+    id = SWE.20
+    title = SWE.20.t
+    desc = SWE.20.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.20.a
+        trigger = { tag = SWE }
+    }
+}
+
+#向英国求援
+country_event = {
+    id = SWE.21
+    title = SWE.21.t
+    desc = SWE.21.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.21.a
+        trigger = {
+            always = yes
+        }
+        SWE = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 1000
+                producer = ENG
+            }
+            country_event = SWE.19
+        }
+    }
+
+    option = {
+        name = SWE.21.b
+        trigger = {
+            always = yes
+        }
+        add_stability = -0.2
+        SWE = {
+            country_event = SWE.20
+        }
+    }
+}
+
+#向英国求援-获得支持
+country_event = {
+    id = SWE.22
+    title = SWE.22.t
+    desc = SWE.22.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.22.a
+        trigger = { tag = SWE }
+        add_stability = 0.2
+    }
+}
+
+#向英国求援——被拒绝
+country_event = {
+    id = SWE.23
+    title = SWE.23.t
+    desc = SWE.23.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.23.a
+        trigger = { tag = SWE }
     }
 }
