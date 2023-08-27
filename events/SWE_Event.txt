@@ -302,6 +302,7 @@ country_event = {
         trigger = {tag = SWE}
         hidden_effect = {
             kill_country_leader = yes
+            load_oob = SWE_Civilwar_oob
             SCR = {
                 transfer_state = 124
                 transfer_state = 139

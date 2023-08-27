@@ -326,7 +326,7 @@ news_event = { #挪威-瑞典内战新闻 - SWE.1
     major = yes
 
     option = {
-        name = SWE.destrucion.a
+        name = SWE.destruction.a
     }
 }
 
