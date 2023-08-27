@@ -92,3 +92,16 @@ country_event = {
         name = AOR_POL_events.7.a
 	}
 }
+country_event = {
+	id = AOR_POL_events.8 #工业新贵的下午茶
+    picture = GFX_AOR_POL_events.8
+    title = AOR_POL_events.8.t
+    desc = AOR_POL_events.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+	hidden = no
+	
+    option = { 
+        name = AOR_POL_events.8.a
+	}
+}
