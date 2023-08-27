@@ -353,7 +353,6 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		load_focus_tree = BEL_2
 		country_event = { id = BEL.30  }
 		}
 	}

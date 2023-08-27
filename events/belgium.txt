@@ -32,11 +32,7 @@ country_event = {
 		name = BEL.2.a
 		add_political_power = 50
 		add_timed_idea = { idea = Aftermath_of_Solvay_Conference days = 180 }
-	}
-	
-	option = {
-		name = BEL.2.b
-		country_event = { id = BEL.3 }
+		country_event = { days = 1 id = BEL.3 }
 	}
 }
 
@@ -52,32 +48,12 @@ country_event = {
       
 	option = {
 		name = BEL.3.a
-		add_political_power = 150
+		add_political_power = 75
 		add_manpower = 1
 		
 	}
-	
-	option = {
-		name = BEL.3.b
-		country_event = { id = BEL.4 }
-	}
 }
 
-#伊利亚·普利高津
-country_event = {
-	id = BEL.4
-	title = BEL.4.t
-	desc = BEL.4.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = BEL.4.a
-		add_manpower = -1
-	}
-
-}
 
 #归家之旅
 country_event = {

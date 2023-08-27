@@ -1,0 +1,29 @@
+AOR_tech_unlocked = {
+	AOR_tech_unlocked_1 = {
+		allowed = {
+		}
+		visible = {
+			has_tech = xxx
+		}
+		available = {
+			
+		}
+		icon = generic_industry
+		priority = 20
+		days_re_enable = 14
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			enable_equipments = {
+				xxx	
+	    	}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}
+
+	}
+}

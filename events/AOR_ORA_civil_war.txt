@@ -36,7 +36,10 @@ country_event = {
     picture = GFX_AOR_ORA_events.3
     title = AOR_ORA_events.3.t
     desc = AOR_ORA_events.3.d
-    is_triggered_only = yes
+    trigger = {
+	    has_war = yes
+		tag = ORA
+	}
 	hidden = no
 	
     option = { 
@@ -179,7 +182,7 @@ country_event = {
 		kill_ideology_leader = Anarcho
 		create_country_leader = {
 		name = "Simón Radowitzky"
-		desc = "POLITICS_William_Franz_Canaris_DESC"
+		desc = "POLITICS_SIMON_2_DESC"
 		picture = "FORA_2.dds"
 		expire = "1945.1.1"
 		ideology = syndicalism

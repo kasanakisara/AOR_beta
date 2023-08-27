@@ -6749,6 +6749,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_ORA_Hasty_revolution"
+		texturefile = "gfx/interface/ideas/ORA_Hasty_revolution.dds"
+	}
+	
+	
+	spriteType = {
 		name = "GFX_idea_ORA_Spark_1"
 		texturefile = "gfx/interface/ideas/ORA_Spark.dds"
 	}

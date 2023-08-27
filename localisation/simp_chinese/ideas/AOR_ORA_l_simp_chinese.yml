@@ -12,6 +12,8 @@
  AOR_ORA_Workers_autonomy:0"工人自治"
  AOR_ORA_xin_da_lu_mo_shi:0"新大陆模式"
  ORA_lian_he_zheng_fu:0"联合政府"
+ ORA_zhuzhongminsheng:0"注重民生"
+ ORA_zhenyafangem:0"镇压反革命"
  #####决议#####
  AOR_ORA_hu_yv_zong_ba_gong_hu_yv_zong_ba_gong:0"呼吁总罢工"
  AOR_ORA_hu_yv_zong_ba_gong:0"呼吁总罢工"
@@ -19,7 +21,11 @@
  AOR_ORA_gong_tuan_de_zan_mei_shi:0"工团的赞美诗"
  AOR_ORA_gong_ren_de_zan_mei_shi:0"工人的赞美诗"
  AOR_ORA_gong_hui_de_zan_mei_shi:0"工会的赞美诗"
- 
+ AOR_ORA_des_rebuild:0"复苏家园"
+ AOR_ORA_xinjianmingong:0"向地区工会发布季度计划"
+ AOR_ORA_xinjianmingong_2:0"提升轻工业水平"
+ AOR_kantanshiyou:0"调度石油工人"
+ AOR_yeliangangtie:0"尝试于门多萨发展重工业"
  ####tt######
  ORA.1.tt:0"§Y这将合并之前的民族精神§"
  ORA.2.tt:0"§R拉多维茨基回来了§"
@@ -33,6 +39,7 @@
  ORA.6.tt:0"§R索托和他所代表的激进派的支持率会上升§"
  ORA.7.tt:0"§O桑蒂兰和他所代表的温和派的支持率会上升§"
  ORA.8.tt:0"§Y西蒙和他所代表的改革派的支持率会上升§"
+ ORA.9.tt:0"§Y这将重置我们的一些民族精神和状态§!"
  ########内阁和将领####
  ORA_Hu_An_Duo_Ming_Ge_Bi_Long:0"胡安·多明戈·庇隆" 
  ORA_Hu_An_An_Dong_Ni_Ao_Mo_Lan:0"胡安·安东尼奥·莫兰" 
@@ -73,3 +80,5 @@
  ORA_kropotkin_fan:0"克鲁泡特金的尾随者"
  ORA_Crazy_Bomber:0"炸弹狂热"
  ORA_Crazy_Bomber_desc:0"§L独特的经验让这位指挥官激进行事，用燃烧瓶和炸弹覆盖战场！§"
+ ORA_die_or_no:0"生死未卜"
+ POLITICS_SIMON_DESC:0"阿根廷现任总工会领导，§Y西蒙·拉多维茨基§!1891年出生在乌克兰。因在革命运动中有突出表现，15岁即被选为所在工厂苏维埃的第二书记。1905年俄国革命后，为躲避政府清算，西蒙于1908年3月流亡至§Y布宜诺斯艾利斯§!。\n在新的工作环境中，西蒙继续对安那其主义进行钻研，并于同年加入阿根廷地区工人会。在阿根廷工人之间，西蒙迅速积累了起巨大的人望：相较于其他革命者，他为人宽厚且随和，总能和工人们打成一片。\n在1909年罢工运动中，他因为对残酷镇压罢工的警察局长投掷炸弹而被§Y判处无期徒刑§!，于所谓“世界尽头”火地岛上的§Y乌斯怀亚监狱§!关押。\n年轻的机械师在狱中仍坚持推动革命事业，凭借其人格魅力与过人的智慧构建立了他的情报网，并借此与外界联系，用纸笔指导罢工运动。因为其出众的能力和丰富的斗争经验，缺席会议的西蒙被破例推选为阿根廷地区工人会的§Y总工会领导§!。\n随着内战全面爆发，西蒙深知自己无力在狱中指挥如此规模的行动。在确定好总工会行动方针后，西蒙开始了他的第一步行动：\n§R越狱。§!"

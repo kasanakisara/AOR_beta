@@ -93,19 +93,19 @@ guiTypes = {
 			spriteType = "GFX_decision_category_generic"
 		}
 
-		#instantTextboxType = {
-		#	name = "name_text"
-		#	position = { x = 7074 y = 8600 }
-		#	textureFile = ""
-		#	font = "hoi_20b"
-		#	borderSize = { x = 0 y = 0 }
-		#	text = ""
-		#	maxWidth = 0
-		#	maxHeight = 0
-		#	format = center
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 74 y = 26 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 365
+			maxHeight = 40
+			format = center
 			#alwaystransparent = yes
-		#	fixedsize=yes
-		#}
+			fixedsize=yes
+		}
 		
 		buttonType = {
 			name = "track_decisions_checkbox"

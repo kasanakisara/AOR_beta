@@ -33,6 +33,17 @@ spriteTypes = {
 		name = "GFX_goal_ORA_daybreak"
 		texturefile = "gfx/interface/goals/goal_ORA_daybreak.png"
 	}
+	
+	    spriteType = {
+		name = "GFX_goal_ORA_Sunrise_of_victory"
+		texturefile = "gfx/interface/goals/goal_ORA_Sunrise_of_victory.png"
+	}
+	
+		spriteType = {
+		name = "GFX_goal_ORA_undone"
+		texturefile = "gfx/interface/goals/goal_ORA_undone.png"
+	}
+	
 	##内阁##
 	spriteType = { #塞巴斯蒂安·马罗塔
 		name = "GFX_portrait_Sai_Ba_Si_Di_An_Ma_Luo_Ta_small"
@@ -206,5 +217,72 @@ spriteTypes = {
 		name = "GFX_decision_category_ana"
 		texturefile = "gfx/interface/decisions/decision_category_ana.png"
 		
+	}
+	
+	#情报机构
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_ORA"
+		texturefile = "gfx/interface/operatives/agencies/logo_ORA.png"
+		noOfFrames = 2
+	}
+	
+	#小灯泡决议
+	spriteType = {
+		name = "GFX_decision_idea"
+		texturefile = "gfx/interface/decisions/decision_idea.png"
+	}
+	
+	#非洲军队决议图片
+	spriteType = {
+		name = "GFX_decision_BEL_prepare"
+		texturefile = "gfx/interface/decisions/decision_BEL_prepare.png"
+	}
+	
+	#小船决议
+	spriteType = {
+		name = "GFX_decision_ship"
+		texturefile = "gfx/interface/decisions/decision_ship.png"
+	}
+	
+	#小船决议
+	spriteType = {
+		name = "GFX_decision_ship"
+		texturefile = "gfx/interface/decisions/decision_ship.png"
+	}
+	
+	#步兵决议
+	spriteType = {
+		name = "GFX_decision_lu"
+		texturefile = "gfx/interface/decisions/decision_lu.png"
+	}
+	
+	#读书决议
+	spriteType = {
+		name = "GFX_decision_book"
+		texturefile = "gfx/interface/decisions/decision_book.png"
+	}
+	
+	#飞机决议
+	spriteType = {
+		name = "GFX_decision_air"
+		texturefile = "gfx/interface/decisions/decision_air.png"
+	}
+	
+	#阿尔贝
+	spriteType = {
+		name = "GFX_BEL_Albert_icon"
+		texturefile = "gfx/AOR_gui/BEL/a3c5e-ni5gi.dds"
+	}
+	
+	#超帅背景
+	spriteType = {
+		name = "GFX_BEL_Background_1"
+		texturefile = "gfx/event_pictures/AOR_BEL_Background_1.png"
+	}
+	
+	#我爱钓鱼
+	spriteType = {
+		name = "GFX_idea_Fishing_ground"
+		texturefile = "gfx/interface/ideas/NFL_Fishing_ground.png"
 	}
 }

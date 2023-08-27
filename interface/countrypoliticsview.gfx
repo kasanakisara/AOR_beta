@@ -1,5 +1,21 @@
 spriteTypes = {
 	
+	spriteType = {
+		name = "GFX_faction_icon_generic"
+		texturefile = "gfx/interface/faction_icon/faction_icon_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_BOP_background"
+		texturefile = "gfx/interface/BOP_background.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_absolute_nothing_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//absolute_nothing.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 	#Government in Exile
 
 	spriteType = {
