@@ -48,14 +48,9 @@ set_politics = {
 
 set_popularities = {
 	CON_democratic = 45
-	AUT_democratic = 10
-	Absolutism = 10
-	FRE_democratic = 12
-	SOC_democratic = 10
-	Special = 10 
-	Fascism = 3
-
-
+	FRE_democratic = 13
+	PAR_socialism  = 40
+	Fascism = 2
 }
 
 set_convoys = 80

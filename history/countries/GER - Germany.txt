@@ -1,5 +1,5 @@
 ﻿capital = 840
-
+oob = "GER_AOR"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -224,3 +224,9 @@ add_to_faction = SHL
 add_to_faction = HAN
 add_to_faction = WUR
 add_to_faction = SAX
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 100000000
+    producer = GER
+}

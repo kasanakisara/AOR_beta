@@ -190,3 +190,39 @@ BEL_prepare = {
 		}
 	}
 }
+
+BEL_Albert = {
+	BEL_keep_war = {
+		priority = 500
+		icon = GFX_decision_air
+
+		allowed = {
+			original_tag = BEL
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 50
+		remove_effect = {
+			custom_effect_tooltip = BEL.gui.1.tt
+			add_political_power = 25
+			add_ideas = war_economy
+			}
+	}
+	
+	BEL_keep_war_1 = {
+		priority = 500
+		icon = GFX_decision_air
+
+		allowed = {
+			original_tag = BEL
+		}
+		cost = -50
+		fire_only_once = yes
+		days_remove = 50
+		remove_effect = {
+			custom_effect_tooltip = BEL.gui.1.tt
+			add_political_power = 25
+			add_ideas = war_economy
+			}
+	}
+}

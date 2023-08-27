@@ -123,7 +123,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.05
-				political_power_daily = 0.05
+				political_power_gain = 0.05
 				war_support_factor = 0.05
 				
 			}
@@ -132,12 +132,12 @@ ideas = {
 			picture = GFX_ORA_kerduowadhm
 			allowed = { always = yes }
 			modifier = {
-				INDUSTRIAL_CAPACITY_FACTOR = 0.05
-				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0.05				
 			}
 		}
-		ORA_kerduowadhm = {
+		ORA_pansasidhx = {
 			picture = GFX_ORA_kerduowadhm
 			allowed = { always = yes }
 			modifier = {
@@ -298,6 +298,26 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 				tability_weekly = 0.001
 				compliance_growth = 0.15
+			}
+		}
+		 ORA_qingbaozuzhi = {
+			picture = GFX_ORA_zhenyafangem
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				tability_weekly = 0.001
+				compliance_growth = 0.15
+			}
+		}
+		
+		ORA_america_shout= {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1				
 			}
 		}
 		
