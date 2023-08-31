@@ -345,7 +345,7 @@ units = {
 	}
 	division= {	
 		name = "陆军第一混成旅"
-		location = 886
+		location = 10757
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8

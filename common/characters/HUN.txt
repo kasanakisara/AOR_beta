@@ -30,4 +30,53 @@ characters = {
 		}
 	}
 
+	HUN_FAS={
+		name= "Gyula Gömbös de Jakfa"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/1683724566406.dds"
+			}
+		}
+		country_leader={
+			ideology = szegedism
+			desc = "HUN_FAS_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	
+	HUN_LIB={
+		name= "Bethlen Istvan"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/1683723326049.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "HUN_LIB_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HUN_ARG={
+		name= "István Szabó Nagyatádi"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/1683722964520.dds"
+			}
+		}
+		country_leader={
+			ideology = counway
+			desc = "HUN_ARG_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 }
