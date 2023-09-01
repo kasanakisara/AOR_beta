@@ -11,14 +11,6 @@ state={
 		victory_points = {
 			4609 10 
 		}
-		buildings = {
-			infrastructure = 2
-			4609 = {
-				naval_base = 2
-
-			}
-
-		}
 		add_core_of = PER
 		add_core_of = AZR
 

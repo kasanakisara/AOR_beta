@@ -76,9 +76,9 @@ if = {
 
 
 
-set_research_slots = 3
+set_research_slots = 2
 set_convoys = 30
-set_stability = 0.35
+set_stability = 0.1
 
 1939.1.1 = {
 
@@ -139,7 +139,8 @@ set_stability = 0.35
 
 	}
 }
-
+recruit_character = PER_ENG_instructor_theorist
+recruit_character = PER_ENG_economy_theorist
 set_politics = {
 	ruling_party = ISL_democratic
 	last_election = "1916.1.1"
@@ -148,17 +149,18 @@ set_politics = {
 
 }
 set_popularities = {
-	ISL_democratic = 50
-	Absolutism = 40
+	ISL_democratic = 60
+	Absolutism = 5
 	Marxism = 10
+	AUT_democratic = 25
 }
-
 add_ideas = {
 	PER_Anglo_Iranian_agreement
 	PER_Few_troops
 	PER_Great_Famine
 	PER_Illiterate_people
 	PER_rebellious_tribe
+	PER_Fighting_inflation_3
 }
 
 
@@ -171,14 +173,30 @@ create_country_leader = {
 	traits = {
 	}
 }
-
-
 create_country_leader = {
 	name = "Süleyman Mirza Eskandari"
 	desc = ""
 	picture = "Süleyman Mirza Eskandari.dds"
 	expire = "1965.1.1"
 	ideology = revolutionism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ahmad Moshir al Saltaneh"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = patriarch
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "群龙无首"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = monarchism
 	traits = {
 	}
 }
