@@ -211,7 +211,8 @@ ideas = {
 			}
 
 			modifier = {
-		
+			custom_modifier_tooltip = CHI.trade.1.tt
+			custom_modifier_tooltip = CHI.trade.2.tt
 			}
 		}
 		

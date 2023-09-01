@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
  #ideas#
+ Unequal_trade:0"不平等的贸易"
+ Semi_colonial_economy:0"半殖民地经济"
  AOR_Reclaiming_outer_northwest:0"收复外西北"
  AOR_Reclaiming_outer_northwest_desc:0"俄国已经侵占我国外西北数十年之久，先正值俄国内乱之千载良机，自当收复失地。男儿何不带吴钩，收取关山五十州！"
  AOR_CHI_Military_aid_from_the_Allies:0"协约国的军事援助"
@@ -24,8 +26,8 @@
  CHI_budding_national_consciousness_desc:0"即使是世界大战后，我国民众的精神面貌仍然没有得到根本的转变。民众对什么是民族，什么是国家的理解非常粗浅，他们大多只是口头上关心主权和国家利益，事实上将自己目光狭隘地投在生计上。"
  CHI_insecure_society:0"无保障的社会"
  CHI_insecure_society_desc:0"相比于西方普遍在试行的社会保障制度，我国在这方面几乎没有太大的作为，这种状况有待改变，但是并不急切。"
- :0""
- :0""
+ CHI.trade.1.tt:0"§R无法更改§!经济法案§Y「半殖民地经济」§!"
+ CHI.trade.2.tt:0"§R无法更改§!对外贸易法案§Y「不平等的贸易」§!"
  :0""
  :0""
  :0""
