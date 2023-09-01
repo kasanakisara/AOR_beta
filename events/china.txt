@@ -100,6 +100,70 @@ country_event = {
 }
 
 country_event = {
+	id = CHI.7
+	title = CHI.7.t
+	desc = CHI.7.d
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	trigger = {
+	    date > 1922.2.1
+		date < 1922.2.3
+	}
+    immediate = {
+	  hidden_effect = {
+			UPC = {
+				transfer_state = 593
+				transfer_state = 592
+				transfer_state = 919
+				transfer_state = 591
+				transfer_state = 900
+				transfer_state = 594
+				transfer_state = 904
+				transfer_state = 903
+				transfer_state = 902
+				transfer_state = 901
+				transfer_state = 746
+				transfer_state = 602
+				
+				add_state_core = 593
+				add_state_core = 592
+				add_state_core = 919
+				add_state_core = 591
+				add_state_core = 900
+				add_state_core = 594
+				add_state_core = 904
+				add_state_core = 903
+				add_state_core = 902
+				add_state_core = 901
+				add_state_core = 746
+				add_state_core = 602
+				add_manpower = 10000
+			}
+		}
+    }  
+	option = {
+		name = CHI.7.a
+		trigger = {
+				not = {
+					has_country_flag = liansheng
+				}
+		}
+		
+	}
+	
+	option = {
+		name = CHI.7.b
+		custom_effect_tooltip = lianshen.1.tt
+		trigger = {
+					has_country_flag = liansheng
+		}
+		
+		UPC = { change_tag_from = ROOT }
+	}
+	
+}
+
+country_event = {
 	id = CHI_Northwest_decision.1
 
 	title = CHI.6.t
@@ -239,4 +303,66 @@ country_event = {
 	option = {
 		name = CHI.6.a
 	}
+}
+
+
+country_event = {
+	id = CHI.7
+	title = CHI.7.t
+	desc = CHI.7.d
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	trigger = {
+	    date > 1922.2.1
+		date < 1922.2.3
+	}
+    immediate = {
+			UPC = {
+				transfer_state = 593
+				transfer_state = 592
+				transfer_state = 919
+				transfer_state = 591
+				transfer_state = 900
+				transfer_state = 594
+				transfer_state = 904
+				transfer_state = 903
+				transfer_state = 902
+				transfer_state = 901
+				transfer_state = 746
+				transfer_state = 602
+				
+				add_state_core = 593
+				add_state_core = 592
+				add_state_core = 919
+				add_state_core = 591
+				add_state_core = 900
+				add_state_core = 594
+				add_state_core = 904
+				add_state_core = 903
+				add_state_core = 902
+				add_state_core = 901
+				add_state_core = 746
+				add_state_core = 602
+				add_manpower = 10000
+			}
+    }  
+	option = {
+		name = CHI.7.a
+		visible = {
+				not = {
+					has_country_flag = liansheng
+				}
+		}
+		
+	}
+	
+	option = {
+		name = CHI.7.b
+		visible = {
+					has_country_flag = liansheng
+		}
+		custom_effect_tooltip = lianshen.1.tt
+		UPC = { change_tag_from = ROOT }
+	}
+	
 }
