@@ -24,6 +24,37 @@ AOR_tech_unlocked = {
 				factor = 5
 			}
 		}
+	}
+}
+AOR_tech_woyebuzhidaoshishenme = {
+	AOR_tech_woyebuzhidaoshishenme = {
+		allowed = {
+		}
+		available = {
+		}
+		icon = generic_industry
+		priority = 20
+		days_re_enable = 14
+		cost = 10
+		fire_only_once = yes #在移除后将不会重新出现
 
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = { keji = 1 }
+			}
+	   }
+
+		remove_effect = {
+			hidden_effect = {
+				set_variable = { keji = 0 }
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+			}
+		}
 	}
 }

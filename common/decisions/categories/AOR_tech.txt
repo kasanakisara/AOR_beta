@@ -7,3 +7,12 @@ AOR_tech_unlocked = {
 			always = yes
 		}
 	}
+	AOR_tech_woyebuzhidaoshishenme = {
+		priority = 90
+		icon = GFX_decision_category_generic_industry
+		allowed = {
+		}
+		visible = {
+			always = yes
+		}
+	}

@@ -40,6 +40,10 @@ on_actions = {
 			}
 			NAU = {
 			country_lock_all_division_template = yes
+			set_division_force_allow_recruiting ={
+			division_template ="预备步兵师"
+			force_allow_recruiting = yes
+				}
 			}
 			SHL = {
 			country_lock_all_division_template = yes
