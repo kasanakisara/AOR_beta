@@ -239,3 +239,16 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = GER
+}
+
+add_equipment_to_stockpile = {
+    type = artillery_equipment
+    amount = 500
+    producer = GER
+}

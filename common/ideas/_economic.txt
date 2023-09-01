@@ -521,6 +521,41 @@ ideas = {
    				factor = 0
    			}
 		}
+		
+		####半殖民地经济#####
+		
+		Semi_colonial_economy = {
+			name = Semi_colonial_economy
+			
+			picture = Semi_colonial_economy
+			
+			allowed = { always = no }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				fuel_gain_from_states_factor = -0.5
+				fuel_gain_factor = -0.5
+				max_fuel_factor = -0.3
+				production_speed_arms_factory_factor = -0.35
+				production_speed_industrial_complex_factor = -0.35
+			}
+
+			cancel_if_invalid = no
+			
+			ai_will_do = { 
+				base = -9999
+			}
+		}
+		
+		
 	}
 
 	trade_laws = {
@@ -862,5 +897,38 @@ ideas = {
 				}
    			}
 		}
+		
+		####不平等的贸易#####
+		
+		Unequal_trade = {
+			name = Unequal_trade
+			
+			picture = Unequal_trade
+			
+			allowed = { always = no }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.85
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				civilian_intel_to_others = 45.0
+				navy_intel_to_others = 25.0
+			}
+
+			cancel_if_invalid = no
+			
+			ai_will_do = { 
+				base = -9999
+			}
+		}
+		
 	}
 }

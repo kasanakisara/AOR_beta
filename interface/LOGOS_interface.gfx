@@ -285,4 +285,16 @@ spriteTypes = {
 		name = "GFX_idea_Fishing_ground"
 		texturefile = "gfx/interface/ideas/NFL_Fishing_ground.png"
 	}
+	
+	#不平等贸易
+	spriteType = {
+		name = "GFX_idea_Unequal_trade"
+		texturefile = "gfx/interface/ideas/Unequal_trade.dds"
+	}
+	
+	#半殖民地
+	spriteType = {
+		name = "GFX_idea_Semi_colonial_economy"
+		texturefile = "gfx/interface/ideas/Semi_colonial_economy.dds"
+	}
 }

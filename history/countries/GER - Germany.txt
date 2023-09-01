@@ -227,6 +227,18 @@ add_to_faction = SAX
 
 add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 100000000
+    amount = 2000
+    producer = GER
+}
+
+add_equipment_to_stockpile = {
+    type = artillery_equipment
+    amount = 300
+    producer = GER
+}
+
+add_equipment_to_stockpile = {
+    type = armored_car
+    amount = 1000
     producer = GER
 }
