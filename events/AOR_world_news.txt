@@ -321,6 +321,7 @@ news_event = { #挪威-瑞典内战新闻 - SWE.1
     id = AOR_news.17
     title = SWE.destruction.t
     desc = SWE.destruction.d
+	picture = GFX_AOR_news_17_picture
     is_triggered_only = yes
     hidden = no
     major = yes
