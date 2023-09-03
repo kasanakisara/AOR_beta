@@ -12,7 +12,7 @@ recruit_character = MXS_Pascual_Orozco
 
 set_research_slots = 2
 set_stability = 0.9
-set_war_support = 0.0
+set_war_support = 0.25
 
 add_ideas = MXS_backward_country
 add_ideas = MXS_useless_army
@@ -50,4 +50,17 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = patriarch
 	traits = {  }
+}
+
+
+create_import = {
+		resource = aluminium
+		factories = 4
+		exporter = FRA
+}
+
+create_import = {
+		resource = steel
+		factories = 1
+		exporter = FRA
 }
