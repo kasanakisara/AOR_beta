@@ -197,7 +197,10 @@ spriteTypes = {
 		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji"
 		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
 	}
-	
+	spriteType = { #墨西哥皇后
+		name = "GFX_portrait_MXS_Carlota"
+		texturefile = "gfx/leaders/MXS/Charlotte.png"
+	}
 	#炸弹狂热
     SpriteType = {
 		name = "GFX_trait_ORA_Crazy_Bomber"

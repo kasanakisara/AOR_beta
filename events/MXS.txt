@@ -1,0 +1,40 @@
+###########################
+# German Events
+###########################
+
+add_namespace = MXS
+
+
+#墨西哥啦
+country_event = {
+	id = MXS.1
+	title = MXS.1.t
+	desc = MXS.1.d
+	picture = GFX_events_MXS_1
+
+	trigger = {
+	    date > 1924.6.1
+		tag = MXS
+	}
+	
+	mean_time_to_happen = { day = 1}
+	
+	fire_only_once = yes
+
+    #那就这样吧  
+	immediate = {
+		retire_country_leader = yes
+		add_ideas = MXS_broad_opposition
+		create_country_leader = {
+		name = "Carlota de México"
+		desc = "POLITICS_Carlota_DESC"
+		picture = "gfx/leaders/MXS/Charlotte.png"
+		expire = "1945.1.1"
+		ideology = despotism
+		}
+	}	
+	option = {
+		name = MXS.1.a
+		
+    }
+}
