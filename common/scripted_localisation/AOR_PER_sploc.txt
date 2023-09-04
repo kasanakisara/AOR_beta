@@ -41,9 +41,9 @@ defined_text = { #农业圣战状态
 		trigger = {
 			OR = {
 				PER_Agricultural_Jihad_Preliminary_3_trigger = yes
+			}
 		}
 		localization_key = AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_3
-		}
 	}
 }
 defined_text = { #农业圣战效果

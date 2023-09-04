@@ -35,7 +35,6 @@ country_event = {  #战后会议召开
 	mean_time_to_happen = {
 		days = 1
 	}
-	fire_only_once = yes
 	option = { 
 		name = per.1.a  #大会开始
 		country_event = { id = per.2  days=4}
@@ -47,7 +46,6 @@ country_event = {  #对于战后国内形势的讨论
 	desc = per.2.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.2.a
 		country_event = { id = per.3 days=4}
@@ -59,7 +57,6 @@ country_event = {  #关于重建工作的讨论
 	desc = per.3.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.3.a
 		country_event = { id = per.4 days=4}
@@ -71,7 +68,6 @@ country_event = {  #关于下一步行动的争吵
 	desc = per.4.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.4.a
 		country_event = { id = per.5 days=4}
@@ -83,7 +79,6 @@ country_event = {  #大会结束！
 	desc = per.5.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 15
 	}
@@ -101,7 +96,6 @@ country_event = {  #损失统计的结果
 	desc = per.6.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.6.a
 	}
@@ -112,7 +106,6 @@ country_event = {  #农业部
 	desc = per.7.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.7.a
 		country_event = { id = per.8 dyas = 8 }
@@ -124,7 +117,6 @@ country_event = { #农业部拟定对抗饥荒的方案
 	desc = per.8.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.8.a
 	}
@@ -135,7 +127,6 @@ country_event = { #波斯的土地问题
 	desc = per.9.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.9.a
 	}
@@ -146,7 +137,6 @@ country_event = { #通胀委员会
 	desc = per.10.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.10.a
 	}
@@ -157,7 +147,6 @@ country_event = { #贪腐圣战
 	desc = per.11.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.11.a
 	}
@@ -168,7 +157,6 @@ country_event = { #政府机构的混乱
 	desc = per.12.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.12.a
 	}
@@ -179,7 +167,6 @@ country_event = { #军队现状
 	desc = per.13.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.13.a
 	}
@@ -191,7 +178,6 @@ country_event = { #施工队的报告
 	desc = per.14.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.14.a
 		country_event = { id = per.15 dyas = 4}
@@ -203,7 +189,6 @@ country_event = { #勘探团队的报告
 	desc = per.15.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.15.a
 		country_event = { id = per.16 dyas = 4}
@@ -215,7 +200,6 @@ country_event = { #是游击队
 	desc = per.16.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.16.a
 		country_event = { id = per.17 dyas = 4}
@@ -227,7 +211,6 @@ country_event = { #俄语的小册子
 	desc = per.17.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.17.a
 		country_event = { id = per.18 dyas = 4}
@@ -239,7 +222,6 @@ country_event = { #吉兰已不在我们掌控中
 	desc = per.18.d
 	picture = ""
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = { 
 		name = per.18.a
 		hidden_effect = {
