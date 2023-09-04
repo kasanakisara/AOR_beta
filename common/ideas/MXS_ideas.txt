@@ -27,16 +27,6 @@ ideas = {
 			experience_gain_army_factor = -0.15
 			}
 		}
-		MXS_broad_opposition  = {
-		
-			allowed = { 
-			always = yes
-		}
-			modifier = {
-			political_power_cost = 0.85
-			stability_factor = -0.1
-			drift_defence_factor = -0.5
-			}
-		}
+
 	}
 }

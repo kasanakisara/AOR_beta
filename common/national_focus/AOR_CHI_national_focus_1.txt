@@ -88,11 +88,17 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			always = no
+		}
+		bypass = {
+		has_country_flag = chi.nw
+		}	
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-		unlock_decision_category_tooltip = AOR_CHI_Reclaiming_outer_northwest 
+		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest_decision
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
 		
 		set_country_flag = unlock_CHI_Reclaiming_outer_northwest
@@ -233,8 +239,10 @@ focus_tree={
 			tooltip = yuan.2.tt
 			has_country_flag = chi.new.year
 			}
-
 		}
+		bypass = {
+		has_country_flag = chi.new.year
+			}
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -331,7 +339,7 @@ focus_tree={
 				not = {has_country_flag = yuan_done}
 			}
 		available = {
-			date > 1920.2.20
+			always = no
 		}
 		ai_will_do={
 			factor=1

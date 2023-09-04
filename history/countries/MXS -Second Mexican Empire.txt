@@ -16,7 +16,6 @@ set_war_support = 0.25
 
 add_ideas = MXS_backward_country
 add_ideas = MXS_useless_army
-add_ideas = MXS_broad_opposition
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -53,11 +52,6 @@ create_country_leader = {
 }
 
 
-create_import = {
-		resource = aluminium
-		factories = 4
-		exporter = FRA
-}
 
 create_import = {
 		resource = steel

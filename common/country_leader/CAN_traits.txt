@@ -94,16 +94,10 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.05
 	}
-	MXS_out_of_favor = {
-		random = no
-		stability_factor = -0.05
-	}
 	MXS_puppet_emperor = {
 		random = no
-		stability_factor = -0.2
-		opinion_gain_monthly_factor = 0.45
-		min_export = 0.85
-		FRE_democratic_acceptance = 100
+		political_power_cost  = 0.15
+		FRE_democratic_acceptance = 65
 	}
 
 	ITA_Roma_heir = {

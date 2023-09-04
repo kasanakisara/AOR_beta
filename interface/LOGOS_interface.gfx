@@ -297,4 +297,18 @@ spriteTypes = {
 		name = "GFX_idea_Semi_colonial_economy"
 		texturefile = "gfx/interface/ideas/Semi_colonial_economy.dds"
 	}
+	
+	#比荷卢民族精神
+	spriteType = {
+		name = "GFX_idea_Apparent_equality"
+		texturefile = "gfx/interface/ideas/Apparent_equality.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_Benelux_Constitution"
+		texturefile = "gfx/interface/ideas/The_Benelux_Constitution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Benelux_Governing_in_Netherlands"
+		texturefile = "gfx/interface/ideas/Benelux_Governing_in_Netherlands.png"
+	}
 }
