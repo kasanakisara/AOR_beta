@@ -22,7 +22,9 @@ PER_Fighting_inflation_666 = {#通胀效果
 			limit = { 
 				has_idea = PER_Fighting_inflation_1
 			}
-			remove_idea = PER_Fighting_inflation_1
+			swap_ideas = {
+				remove_idea = PER_Fighting_inflation_1
+			}
 		}
 	}
 }
