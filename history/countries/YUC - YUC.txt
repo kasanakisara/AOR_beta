@@ -1,4 +1,4 @@
-capital = 277
+capital = 474
 
 #oob = "MEX_1936"
 
@@ -11,11 +11,9 @@ recruit_character = MXS_Bernardo_Reyes
 recruit_character = MXS_Pascual_Orozco
 
 set_research_slots = 2
-set_stability = 0.9
-set_war_support = 0.25
+set_stability = 0.45
+set_war_support = 0.15
 
-add_ideas = MXS_backward_country
-add_ideas = MXS_useless_army
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -25,36 +23,20 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = FRE_democratic
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Absolutism = 100
+	FRE_democratic = 80
+	CON_democratic = 20
 }
 
 create_country_leader = {
-	name = "Maximiliano I"
-	desc = "POLITICS_Mexican_DESC"
-	picture = "gfx/leaders/MXS/maximiliano.png"
+	name = "Justo Sierra Méndez"
+	desc = "POLITICS_Méndez_DESC"
+	picture = "gfx/leaders/YUC/Méndez.png"
 	expire = "1965.1.1"
-	ideology = monarchism
-	traits = { MXS_out_of_favor MXS_puppet_emperor }
-}
-create_country_leader = {
-	name = "Victoriano Huerta"
-	desc = "MXS_Victoriano_huerta_desc"
-	picture = "gfx/leaders/MXS/Victoriano_huerta_politic.png"
-	expire = "1965.1.1"
-	ideology = patriarch
-	traits = {  }
-}
-
-
-
-create_import = {
-		resource = steel
-		factories = 1
-		exporter = FRA
+	ideology = liberalism
 }

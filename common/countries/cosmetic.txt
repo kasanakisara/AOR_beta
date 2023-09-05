@@ -846,3 +846,8 @@ ORA_rev = {
 	color = rgb { 188 41 41  }
 	color_ui = rgb {  188 41 41 }
 }
+
+MXS_2 = {
+	color = rgb { 46 139 87  }
+	color_ui = rgb {  46 139 87}
+}
