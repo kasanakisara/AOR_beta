@@ -204,7 +204,6 @@ ideas = {
 		picture = GFX_idea_PER_Hanging_buying_selling_officials
 		allowed = { always = yes }
 		modifier = {
-			mobilization_laws_cost_factor = -0.1
 			trade_laws_cost_factor  = -0.1
 			economy_cost_factor = -0.1
 			political_power_gain = 0.2
