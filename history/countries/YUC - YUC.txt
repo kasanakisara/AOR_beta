@@ -34,9 +34,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Justo Sierra Méndez"
+	name = "José María Pino Suárez"
 	desc = "POLITICS_Méndez_DESC"
-	picture = "gfx/leaders/YUC/Méndez.png"
+	picture = "gfx/leaders/YUC/Suárez.png"
 	expire = "1965.1.1"
 	ideology = liberalism
 }

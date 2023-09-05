@@ -311,16 +311,17 @@ country_event = {
 		remove_ideas = MXS_broad_opposition
 		set_popularities = {
 				AUT_democratic = 30
-				CON_democratic = 70
+				CON_democratic = 30
+				SOC_democratic = 40
 				}
-		set_politics = {ruling_party = CON_democratic}
+		set_politics = {ruling_party = SOC_democratic}
 		set_cosmetic_tag = MXS_2
 		create_country_leader = {
-		name = "Emilio Portes Gil"
+		name = "Álvaro Obregón"
 		desc = "POLITICS_Gil_DESC"
-		picture = "gfx/leaders/MXS/Gil.png"
+		picture = "gfx/leaders/MXS/Obregón.png"
 		expire = "1945.1.1"
-		ideology = conservatism
+		ideology = socialism
 		}
 	}
 	option = {

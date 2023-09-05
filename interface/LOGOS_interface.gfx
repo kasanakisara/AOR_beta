@@ -314,4 +314,38 @@ spriteTypes = {
 		name = "GFX_idea_Benelux_Governing_in_Netherlands"
 		texturefile = "gfx/interface/ideas/Benelux_Governing_in_Netherlands.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Benelux_GG"
+		texturefile = "gfx/interface/ideas/Benelux_GG.png"
+	}
+	
+	#阿工团民族精神
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"
+		texturefile = "gfx/interface/ideas/AOR_ORA_xin_da_lu_mo_shi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_1"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_2"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_3"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gong_hui_ling_dao_pic"
+		texturefile = "gfx/interface/ideas/gong_hui_ling_dao_pic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_Workers_autonomy"
+		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
+	}
 }

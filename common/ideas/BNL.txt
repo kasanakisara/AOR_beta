@@ -53,5 +53,23 @@ ideas = {
 			trade_opinion_factor = 0.33
 			}
 		}
+		
+		 Benelux_GG = {
+			
+			picture = idea_Benelux_GG
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			stability_weekly = -0.005
+			consumer_goods_factor = 0.2
+			}
+		}
 	}
 }
