@@ -21,6 +21,7 @@ country_event = {
 	
 	fire_only_once = yes
 	immediate = {
+
 	swap_ideas = {
 			remove_idea = Benelux_Governing_in_Netherlands
 			add_idea = Benelux_GG			
@@ -37,6 +38,6 @@ country_event = {
     #那就这样吧  
 	option = {
 		name = BNL.1.a
-		 
+		 	news_event = { id = AOR_news.2  }
     }
 }

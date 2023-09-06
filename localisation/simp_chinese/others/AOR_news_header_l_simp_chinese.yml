@@ -46,17 +46,21 @@
  AOR_fandigangrenmin_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_fandigangrenmin_news_haeder_pic\n"
 
  #世界联合报
- AOR_shijielianhebao_news_haeder:"\n\n\n £custom_header_shijielianhebao_news_haeder\n\n\n\n\n\n                                                                                                       "
+ AOR_shijielianhebao_news_header:"\n\n\n £custom_header_shijielianhebao_news_haeder\n\n\n\n\n\n                                                                                                       "
  AOR_shijielianhebao_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_shijielianhebao_news_pic\n"
 
  #意大利每日报
- AOR_yidalimeiribao_news_haeder:"\n\n\n £custom_header_yidalimeiribao_news_header\n\n\n\n\n\n                                                                                                       "
+ AOR_yidalimeiribao_news_header:"\n\n\n £custom_header_yidalimeiribao_news_header\n\n\n\n\n\n                                                                                                       "
  AOR_yidalimeiribao_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_yidalimeiribao_news_pic\n"
  
  #赤旗报
- AOR_chiqibao_news_haeder:"\n\n\n £custom_header_chiqibao_news_header\n\n\n\n\n\n                                                                                                       "
+ AOR_chiqibao_news_header:"\n\n\n £custom_header_chiqibao_news_header\n\n\n\n\n\n                                                                                                       "
  AOR_chiqibao_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_chiqibao_news_pic\n"
  
+ #抵抗报
+ AOR_dikang_news_header:"\n\n\n £custom_header_dikang_news_header\n\n\n\n\n\n                                                                                                       "
+ 
+ AOR_dikang_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_dikang_news_pic\n"
  #报头 模板
  #abcd_header:"\n\n\n £custom_header_abcd_news_header\n\n\n\n\n\n                                                                                                       " (有空格)
  #abcd_news_pic:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_abcd_news_pic\n"

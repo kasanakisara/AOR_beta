@@ -60,7 +60,12 @@ defined_text = {
         }
         localization_key = AOR_gonghe_news_header 
     }
-
+	text = {
+        trigger = {
+            original_tag = ORA  ##抵抗报
+        }
+        localization_key = AOR_dikang_news_header
+    }
     text = {   ##联合皇家报
         trigger = {
             original_tag = YUG 
@@ -79,21 +84,21 @@ defined_text = {
         trigger = {
             original_tag = VAT 
         }
-        localization_key = AOR_fandigangrenmin_news_haeder
+        localization_key = AOR_fandigangrenmin_news_header
     }
 
     text = {  ##意大利每日报
         trigger = {
             original_tag = ITA 
         }
-        localization_key = AOR_yidalimeiribao_news_haeder
-    }
+        localization_key = AOR_yidalimeiribao_news_header
+    }	
 
     text = { ##世界联合报
         trigger = {
             always = yes
         }
-        localization_key = AOR_shijielianhebao_news_haeder
+        localization_key = AOR_shijielianhebao_news_header
     }
 
     text = {  ##赤旗报
@@ -101,8 +106,9 @@ defined_text = {
             original_tag = JAP
             has_government = marxism
         }
-        localization_key = AOR_chiqibao_news_haeder
+        localization_key = AOR_chiqibao_news_header
     }
+
 }
 
 
@@ -195,7 +201,12 @@ defined_text = {
         }
         localization_key = AOR_geming_news_pic
     }
-
+	text = { ##抵抗报 - pic
+        trigger = {
+            original_tag = ORA  
+        }
+        localization_key = AOR_dikang_news_pic
+    }
     text = { ##梵蒂冈人民报 - pic
         trigger = {
             original_tag = VAT 
@@ -224,5 +235,6 @@ defined_text = {
         }
         localization_key = AOR_chiqibao_news_pic
     }
+
 }
 

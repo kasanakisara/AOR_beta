@@ -348,4 +348,17 @@ spriteTypes = {
 		name = "GFX_idea_AOR_ORA_Workers_autonomy"
 		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
 	}
+	
+	
+	#事件链新闻
+		#比荷卢选举陷入僵局
+	spriteType = {
+		name = "GFX_AOR_news.2_pic"
+		texturefile = "gfx/event_pictures/AOR_news.2_pic.png"
+	}
+		#阿工团成立
+	spriteType = {
+		name = "GFX_AOR_news.3_pic"
+		texturefile = "gfx/event_pictures/AOR_news.3_pic.png"
+	}
 }

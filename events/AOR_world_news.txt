@@ -50,35 +50,53 @@ news_event = { #苏维埃宣告成立(RUS-SOV) - NewsEvents_SOV_timeaxis.1
 	}
 }
 
-news_event = { ##鹿特丹纵火案（法国） - BEL.6
+news_event = { ##比荷卢选举陷入僵局
 	id = AOR_news.2 
-	title = BEL.6.t
-	desc = BEL.6.d
+	title = AOR_news.2.t
+	desc = AOR_news.2.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.2_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.6.a
+		name = AOR_news.2.a
 
 	}
 
 }
 
-news_event = { ##鹿特丹纵火案（英国） - BEL.7
+news_event = { ##阿工团成立
 	id = AOR_news.3  
-	title = BEL.7.t
-	desc = BEL.7.d
+	title = AOR_news.3.t
+	desc = AOR_news.3.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.3_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.7.a
+		name =	AOR_news.3.a
+	trigger = {
+	    has_government = Anarcho
+		}
+	}
+	option = {
+		name = AOR_news.3.b
+	trigger = {
+	    has_government = Marxism
+		}
+	}
+	option = {
+		name = AOR_news.3.c
+	trigger = {
+	    NOT = {
+				has_government = Marxism
+				has_government = Anarcho
+				}
+		}
 	}
 
 }
