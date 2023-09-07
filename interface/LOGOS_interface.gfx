@@ -361,4 +361,34 @@ spriteTypes = {
 		name = "GFX_AOR_news.3_pic"
 		texturefile = "gfx/event_pictures/AOR_news.3_pic.png"
 	}
+		#墨西哥危机
+	spriteType = {
+		name = "GFX_AOR_news.4_pic"
+		texturefile = "gfx/event_pictures/AOR_news.4_pic.png"
+	}
+		#皇后摄政
+	spriteType = {
+		name = "GFX_AOR_news.5_pic"
+		texturefile = "gfx/event_pictures/AOR_news.5_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.6_pic"
+		texturefile = "gfx/event_pictures/AOR_news.6_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.7_pic"
+		texturefile = "gfx/event_pictures/AOR_news.7_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.8_pic"
+		texturefile = "gfx/event_pictures/AOR_news.8_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.9_pic"
+		texturefile = "gfx/event_pictures/AOR_news.9_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_news.10_pic"
+		texturefile = "gfx/event_pictures/AOR_news.10_pic.png"
+	}
 }

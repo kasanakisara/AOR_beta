@@ -101,27 +101,27 @@ news_event = { ##阿工团成立
 
 }
 
-news_event = { ##鹿特丹纵火案（比利时） - BEL.8
+news_event = { ##墨西哥皇帝没辣
 	id = AOR_news.4  
-	title = BEL.8.t
-	desc = BEL.8.d
+	title = AOR_news.4.t
+	desc =  AOR_news.4.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.4_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.8.a
+		name = AOR_news.4.a
 	}
 
 }
 
-news_event = {  ##加拿大未知新闻（1） - CAN.2
-	id = AOR_news.5
-	title = CAN.2.t
-	desc = CAN.2.d
-	picture = GFX_report_event_german_speech
+news_event = {  ##墨西哥皇后来啦！
+	id = AOR_news.5 
+	title = AOR_news.5.t 
+	desc = AOR_news.5.d 
+	picture = GFX_AOR_news.5_pic
 	
 	is_triggered_only = yes
 	
@@ -129,16 +129,26 @@ news_event = {  ##加拿大未知新闻（1） - CAN.2
 	
 	
 	option = { 
-        name = CAN.2.a
-		
+        name = AOR_news.5.a
+		trigger = {
+	    has_government = Anarcho
+		}
+		}
+	option = { 
+        name = AOR_news.5.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
 		}
 }
 	
-news_event = {  ##加拿大未知新闻（2）- CAN.3
+news_event = {  ##老太婆赢了！
 	id = AOR_news.6
-	title = CAN.3.t
-	desc = CAN.3.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.6.t
+	desc = AOR_news.6.d
+	picture = GFX_AOR_news.6_pic
 	
 	is_triggered_only = yes
 	
@@ -146,16 +156,16 @@ news_event = {  ##加拿大未知新闻（2）- CAN.3
 	
 	
 	option = { 
-        name = CAN.3.a
+        name = AOR_news.6.a
 		
 		}
 }
 
-news_event = {  ##加拿大未知新闻（3） - CAN.5
+news_event = {  ##南部安人赢了！
 	id = AOR_news.7
-	title = CAN.5.t
-	desc = CAN.5.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.7.t
+	desc = AOR_news.7.d
+	picture = GFX_AOR_news.7_pic
 	
 	is_triggered_only = yes
 	
@@ -163,33 +173,52 @@ news_event = {  ##加拿大未知新闻（3） - CAN.5
 	
 	
 	option = { 
-        name = CAN.5.a
-		
+        name = AOR_news.7.a
+		trigger = {
+	    has_government = Anarcho
+		}
 	}
+	option = { 
+        name = AOR_news.7.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
+		}
 }
 
-news_event = {  ##加拿大未知新闻（4） - CAN.9
+news_event = {  ##北部安人赢了！
 	id = AOR_news.8
-	title = CAN.9.t
-	desc = CAN.9.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.8.t
+	desc = AOR_news.8.d
+	picture = GFX_AOR_news.8_pic
 	
 	is_triggered_only = yes
 	
 	major = yes
 	
-	
 	option = { 
-        name = CAN.5.a
-		
+        name = AOR_news.8.a
+		trigger = {
+	    has_government = Anarcho
+		}
+		}
+	option = { 
+        name = AOR_news.8.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
 		}
 } 
 
-news_event = {  ##加拿大未知新闻（5） - CAN.10
+news_event = {  ##老太婆也死了
 	id = AOR_news.9
-	title = CAN.10.t
-	desc = CAN.10.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.9.t
+	desc = AOR_news.9.d
+	picture = GFX_AOR_news.9_pic
 	
 	is_triggered_only = yes
 	
@@ -197,7 +226,7 @@ news_event = {  ##加拿大未知新闻（5） - CAN.10
 	
 	
 	option = { 
-        name = CAN.10.a
+        name = AOR_news.9.a
 		
 	}
 }
