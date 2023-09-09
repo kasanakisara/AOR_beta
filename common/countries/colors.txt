@@ -1,5 +1,17 @@
 #reload countrycolors
 
+BR1 = {
+	color = rgb { 208  240  192  }
+	color_ui = rgb { 208 240 192 }
+}
+BR2 = { 
+	color = rgb { 106  90  205  }
+	color_ui = rgb{ 106 90 205 }
+}
+BR3 = {
+	color = rgb { 173  255  47 }
+	color_ui = rgb{ 173 255 47 }
+}
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -821,3 +833,4 @@ BNL = { color 	 = rgb { 193 171 8  }
 GNR = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
+}
