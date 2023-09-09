@@ -2,6 +2,10 @@
 state={
 	id=613
 	name="STATE_613"
+	resources={
+		steel=25.000
+		rubber=1.000
+	}
 
 	history={
 		owner = CHI
@@ -9,26 +13,23 @@ state={
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
-			#industrial_complex = 1
-			#air_base = 6
 			7014 = {
 				naval_base = 1
+
 			}
+
 		}
 		victory_points = {
 			7014 20 
 		}
 
 	}
-	resources = {
-		steel = 25
-		rubber = 1
-	}
+
 	provinces={
-		7014 11928 12052 12076 
+		7014 11928 12052 12076 13255 
 	}
-	manpower= 3421371
+	manpower=3421371
 	buildings_max_level_factor=1.000
-	state_category= large_city
+	state_category=large_city
 	local_supplies=0.000
 }

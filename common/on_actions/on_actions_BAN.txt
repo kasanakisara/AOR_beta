@@ -34,6 +34,14 @@ on_actions = {
 			}
 			BAV = {
 			country_lock_all_division_template = yes
+			set_division_force_allow_recruiting ={
+			division_template ="工人赤卫队"
+			force_allow_recruiting = yes
+				}
+			set_division_force_allow_recruiting ={
+			division_template ="炮兵加强旅"
+			force_allow_recruiting = yes
+				}
 			}
 			WUR = {
 			country_lock_all_division_template = yes

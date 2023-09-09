@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = CAN
+			tag = CANa
 		}
 	}
 	continuous_focus_position = { x = 55 y = 3000 }
@@ -12,11 +12,11 @@ focus_tree = {
 	default = no
      focus = {
 		id = CAN_free_and_powerful_canada
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown 
 		cost = 5.00
 		x = 3
 		y = 0
-        completion_reward={
+        completion_reward={ 
 		country_event = { id = CAN.15}
 		}
 	}

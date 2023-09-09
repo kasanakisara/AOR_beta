@@ -491,7 +491,7 @@ guiTypes = {
 			{
 				name ="event_picture"
 				spriteType = "GFX_news_event_001"
-				position = { x = 159 y = 231 }
+				position = { x = 152 y = 224 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -499,7 +499,7 @@ guiTypes = {
 			iconType = {
 				name ="event_picture_overlay"
 				spriteType = "GFX_event_news_pic_overlay"
-				position = { x = 159 y = 231 }
+				position = { x = 1000000 y = 1000000 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}			
@@ -517,7 +517,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "btn_minimize"
-				position = {x=120 y=30}
+				position = {x=10000 y=10000}
 				spriteType = "GFX_event_button_minimize"
 				clicksound = click_default
 			}
@@ -567,6 +567,7 @@ guiTypes = {
 		background = {
 			name = "event_option_background"	
 			spriteType ="GFX_event_option_entry"
+
 		}
 		
 		instantTextBoxType = {

@@ -1,6 +1,6 @@
 capital = 277
 
-oob = "MEX_1936"
+#oob = "MEX_1936"
 
 recruit_character = MXS_Victoriano_huerta
 recruit_character = MXS_Aureliano_blanquet
@@ -12,11 +12,10 @@ recruit_character = MXS_Pascual_Orozco
 
 set_research_slots = 2
 set_stability = 0.9
-set_war_support = 0.0
+set_war_support = 0.25
 
 add_ideas = MXS_backward_country
 add_ideas = MXS_useless_army
-add_ideas = MXS_broad_opposition
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -50,4 +49,12 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = patriarch
 	traits = {  }
+}
+
+
+
+create_import = {
+		resource = steel
+		factories = 1
+		exporter = FRA
 }

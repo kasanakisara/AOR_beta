@@ -17,8 +17,8 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = MEX
 		add_core_of = MXS
+		add_state_claim =  MXS
 
 		victory_points = {
 			12461 10

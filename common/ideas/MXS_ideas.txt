@@ -5,10 +5,11 @@ ideas = {
 			always = yes
 		}
 			modifier = {
-			global_building_slots_factor = -0.15
-			industrial_capacity_factory = -0.15
+			global_building_slots_factor = -0.3
+			industrial_capacity_factory = -0.45
 			production_factory_max_efficiency_factor = -0.25
 	        production_factory_efficiency_gain_factor = -0.25
+			
 			}
 		}
 		MXS_useless_army  = {
@@ -21,15 +22,18 @@ ideas = {
 			army_morale_factor = -0.2
 			army_attack_factor = -0.3
 			army_defence_factor = -0.3
+			supply_consumption_factor = 0.1
+			org_loss_when_moving = 0.15
+			experience_gain_army_factor = -0.15
 			}
 		}
 		MXS_broad_opposition  = {
-		
 			allowed = { 
 			always = yes
 		}
 			modifier = {
 			political_power_cost = 0.05
+			political_power_cost = 0.85
 			stability_factor = -0.1
 			drift_defence_factor = -0.5
 			}

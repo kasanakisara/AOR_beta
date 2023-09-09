@@ -2,7 +2,7 @@ PSR_666 = {
 	custom_effect_tooltip = tooltip_white_line
 	effect_tooltip = { release = PSR }
 		PSR = {
-			420 = { #Anqing
+			420 = { #吉兰
 				add_core_of = PSR
 				add_claim_by = ROOT
 				transfer_state_to = PSR

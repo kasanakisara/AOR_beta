@@ -36,15 +36,13 @@ country_event = {
     picture = GFX_AOR_ORA_events.3
     title = AOR_ORA_events.3.t
     desc = AOR_ORA_events.3.d
-    trigger = {
-	    has_war = yes
-		tag = ORA
-	}
+    is_triggered_only = yes
 	hidden = no
 	
     option = { 
         name = AOR_ORA_events.3.a
 		trigger = {
+		has_war = yes
             NOT = {
                 has_country_flag = AOR_ORA_events.3-1
             }
@@ -54,24 +52,26 @@ country_event = {
             add_idea = ORA_gong_ren_shang_qian_xian_1		
         }
         set_country_flag = AOR_ORA_events.3-1
+		country_event = { days = 30 id = AOR_ORA_events.3 }
 	}
     option = { 
         name = AOR_ORA_events.3.b
 		trigger = {
+		has_war = yes
             has_country_flag = AOR_ORA_events.3-1
-            NOT = {
-                has_country_flag = AOR_ORA_events.3-2
-            }
 		}
         swap_ideas = {
             remove_idea = ORA_gong_ren_shang_qian_xian_1
             add_idea = ORA_gong_ren_shang_qian_xian_2		
         }
         set_country_flag = AOR_ORA_events.3-2
+		country_event = { days = 30 id = AOR_ORA_events.3 }
+		clr_country_flag = AOR_ORA_events.3-1
 	}
     option = { 
         name = AOR_ORA_events.3.c
 		trigger = {
+		has_war = yes
             has_country_flag = AOR_ORA_events.3-2
 		}
         swap_ideas = {
@@ -79,7 +79,7 @@ country_event = {
             add_idea = ORA_gong_ren_shang_qian_xian_3		
         }
 	}
-    
+
 }
 country_event = {
     id = AOR_ORA_events.4 #守住街垒

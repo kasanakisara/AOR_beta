@@ -128,3 +128,9 @@ country_lock_all_division_template = yes
 
 give_guarantee = QID
 
+CHI = {
+country_event = { days = 76 id = CHI.8 }
+country_event = { days = 200 id = CHI.4 }
+country_event = { days = 203 id = CHI.5 }
+country_event = { days = 916 id = CHI.7 }
+}

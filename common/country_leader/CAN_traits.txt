@@ -94,42 +94,12 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.05
 	}
-	MXS_out_of_favor = {
-		random = no
-		stability_factor = 0.05
-		political_power_factor = 0.15
-	}
 	MXS_puppet_emperor = {
 		random = no
-		stability_factor = -0.2
-		opinion_gain_monthly_factor = 0.5
-		FRE_democratic_acceptance = 100
+		political_power_cost  = 0.15
+		FRE_democratic_acceptance = 65
 	}
-	MXS_Caudillo = {
-		random = no
-		political_power_factor = 0.05
-		stability_factor = 0.1
-		army_morale_factor = 0.05
-		research_speed_factor = -0.05
-		drift_defence_factor = 0.5
-		opinion_gain_monthly_factor = 0.5
-	}
-	MXS_nationalist_emperor = {
-		random = no
-		war_support_factor = 0.05
-		army_core_attack_factor = 0.05
-	    army_core_defence_factor = 0.1
-	}
-	MXS_brutality_king = {
-		random = no
-		stability_factor = -0.1
-		drift_defence_factor = 0.5
-	}
-	MXS_divine_leaders = {
-		random = no
-		political_power_factor = 0.1
-		stability_factor = 0.05
-	}
+
 	ITA_Roma_heir = {
 		random = no
 		political_power_factor = 0.10
