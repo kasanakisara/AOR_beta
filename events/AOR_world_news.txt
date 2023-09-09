@@ -249,22 +249,19 @@ news_event = {  ##德意志阵营解散 - news_GER.1
 	}
 }
 
-news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
+news_event = { #1920比荷卢奥运会
 	id = AOR_news.11
-	title = news_OLYMPICS.1.t
-	desc = news_OLYMPICS.1.d
-	picture = GFX_news_1920_Olympic_Games
+	title = AOR_news.11.t
+	desc = AOR_news.11.d
+	picture = GFX_AOR_news.11_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.4.19
-		date < 1920.4.21
+	    date > 1920.8.28
+		date < 1920.8.30
 	}
-
-    
+fire_only_once = yes
 	option = {
-		name = news_OLYMPICS.1.a
+		name = AOR_news.11.a
 	trigger = {
 	    NOT = {tag = BEL}
 		}
@@ -275,76 +272,73 @@ news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
 	}
 }
 
-news_event = { #1924希腊奥运会 - news_OLYMPICS.2
+news_event = { #1924巴黎奥运会
 	id = AOR_news.12
-	title = news_OLYMPICS.2.t
-	desc = news_OLYMPICS.2.d
-	picture = GFX_news_1924_Olympic_Games
+	title = AOR_news.12.t
+	desc = AOR_news.12.d
+	picture = GFX_AOR_news.12_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.6
-		date < 1920.5.8
+	    date > 1924.5.6
+		date < 1924.5.8
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.2.a
+		name = AOR_news.12.a
 	}
 }
 
-news_event = { #1928意大利奥运会 - news_OLYMPICS.3
+news_event = { #电视被发明
 	id = AOR_news.13
-	title = news_OLYMPICS.3.t
-	desc = news_OLYMPICS.3.d
-	picture = GFX_news_1928_Olympic_Games
+	title = AOR_news.13.t
+	desc = AOR_news.13.d
+	picture = GFX_AOR_news.13_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.16
-		date < 1920.5.18
+	    date > 1925.10.2
+		date < 1925.10.4
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.3.a
+		name = AOR_news.13.a
 	}
 }
 
-news_event = { #1932法国奥运会 - news_OLYMPICS.4
+news_event = { #青霉素被发现
 	id = AOR_news.14
-	title = news_OLYMPICS.4.t
-	desc = news_OLYMPICS.4.d
-	picture = GFX_news_1932_Olympic_Games
+	title = AOR_news.14.t
+	desc = AOR_news.14.d
+	picture = GFX_AOR_news.14_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.16
-		date < 1920.5.18
+	    date > 1928.9.14
+		date < 1920.9.16
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.4.a
+		name = AOR_news.14.a
 	}
 }
 
-news_event = { #重生委员会掌权（好像） - SAX.3
+news_event = { #中美洲建立
 	id = AOR_news.15
-	title = SAX.3.t
-	desc = SAX.3.d
-	picture = GFX_news_event_001
+	title = AOR_news.15.t
+	desc = AOR_news.15.d
+	picture = GFX_AOR_news.15_pic
 	
 	is_triggered_only = yes
 	
 	major = yes
 	
-	
 	option = { 
-        name = SAX_3.a
+        name = AOR_news.15.a
+		
+	}
+	option = { 
+        name = AOR_news.15.b
 		
 	}
 }
