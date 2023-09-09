@@ -50,7 +50,7 @@ add_offsite_building = {
 }
 
 set_politics = {
-	ruling_party = paternal_autocrat
+	ruling_party = REL_socialism
 	last_election = "1888.6.15"
 	election_frequency = 48
 	elections_allowed = no
@@ -63,4 +63,21 @@ set_popularities = {
 add_ideas = {
 	
 }
-
+create_country_leader = {
+	name = "Mirza Kuchek Khan"
+	desc = ""
+	picture = "Mirza Kuchek Khan.dds"
+	expire = "1965.1.1"
+	ideology = islamsocialism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Haidar Khan"
+	desc = ""
+	picture = "Haidar Khan.dds"
+	expire = "1965.1.1"
+	ideology = revolutionism
+	traits = {
+	}
+}

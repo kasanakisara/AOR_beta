@@ -197,7 +197,10 @@ spriteTypes = {
 		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji"
 		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
 	}
-	
+	spriteType = { #墨西哥皇后
+		name = "GFX_portrait_MXS_Carlota"
+		texturefile = "gfx/leaders/MXS/Charlotte.png"
+	}
 	#炸弹狂热
     SpriteType = {
 		name = "GFX_trait_ORA_Crazy_Bomber"
@@ -296,5 +299,120 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Semi_colonial_economy"
 		texturefile = "gfx/interface/ideas/Semi_colonial_economy.dds"
+	}
+	
+	#比荷卢民族精神
+	spriteType = {
+		name = "GFX_idea_Apparent_equality"
+		texturefile = "gfx/interface/ideas/Apparent_equality.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_Benelux_Constitution"
+		texturefile = "gfx/interface/ideas/The_Benelux_Constitution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Benelux_Governing_in_Netherlands"
+		texturefile = "gfx/interface/ideas/Benelux_Governing_in_Netherlands.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Benelux_GG"
+		texturefile = "gfx/interface/ideas/Benelux_GG.png"
+	}
+	
+	#阿工团民族精神
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"
+		texturefile = "gfx/interface/ideas/AOR_ORA_xin_da_lu_mo_shi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_1"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_2"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_3"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gong_hui_ling_dao_pic"
+		texturefile = "gfx/interface/ideas/gong_hui_ling_dao_pic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_Workers_autonomy"
+		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
+	}
+	
+	
+	#事件链新闻
+		#比荷卢选举陷入僵局
+	spriteType = {
+		name = "GFX_AOR_news.2_pic"
+		texturefile = "gfx/event_pictures/AOR_news.2_pic.png"
+	}
+		#阿工团成立
+	spriteType = {
+		name = "GFX_AOR_news.3_pic"
+		texturefile = "gfx/event_pictures/AOR_news.3_pic.png"
+	}
+		#墨西哥危机
+	spriteType = {
+		name = "GFX_AOR_news.4_pic"
+		texturefile = "gfx/event_pictures/AOR_news.4_pic.png"
+	}
+		#皇后摄政
+	spriteType = {
+		name = "GFX_AOR_news.5_pic"
+		texturefile = "gfx/event_pictures/AOR_news.5_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.6_pic"
+		texturefile = "gfx/event_pictures/AOR_news.6_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.7_pic"
+		texturefile = "gfx/event_pictures/AOR_news.7_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.8_pic"
+		texturefile = "gfx/event_pictures/AOR_news.8_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.9_pic"
+		texturefile = "gfx/event_pictures/AOR_news.9_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_news.10_pic"
+		texturefile = "gfx/event_pictures/AOR_news.10_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.11_pic"
+		texturefile = "gfx/event_pictures/AOR_news.11_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.12_pic"
+		texturefile = "gfx/event_pictures/AOR_news.12_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.13_pic"
+		texturefile = "gfx/event_pictures/AOR_news.13_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.14_pic"
+		texturefile = "gfx/event_pictures/AOR_news.14_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.15_pic"
+		texturefile = "gfx/event_pictures/AOR_news.15_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.16_pic"
+		texturefile = "gfx/event_pictures/AOR_news.16_pic.png"
 	}
 }

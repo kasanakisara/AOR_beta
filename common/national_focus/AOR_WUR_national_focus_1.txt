@@ -17,11 +17,12 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
+		search_filters={}
 		completion_reward={
-		custom_effect_tooltip = wur.0.tt
-		add_political_power = 100
+			custom_effect_tooltip = wur.0.tt
+			hidden_effect = {
+				add_political_power = 100
+			}
 		}
 	}
 	focus={
@@ -37,7 +38,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		custom_effect_tooltip = wur.1.tt
+			custom_effect_tooltip = wur.1.tt
 		}
 	}
 	focus={
@@ -53,8 +54,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		custom_effect_tooltip = wur.3.tt
-		add_timed_idea = { idea = Wur_repair days = 180 }
+			custom_effect_tooltip = wur.3.tt
+			hidden_effect = {
+				add_timed_idea = { idea = Wur_repair days = 180 }
+			}
 		}
 	}
 	focus={

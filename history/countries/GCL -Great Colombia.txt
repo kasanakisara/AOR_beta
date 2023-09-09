@@ -1,6 +1,6 @@
 capital = 306
 
-#oob = "COL_1936"
+oob = "GCL_AOR"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		#set_naval_#oob = "COL_1936_naval_mtg"

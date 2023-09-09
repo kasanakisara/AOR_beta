@@ -52,18 +52,17 @@ country_event = {
 	desc = CHI.4.d
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
-	trigger = {
-	    date > 1920.2.16
-		date < 1920.2.18
-	}
-      
+	is_triggered_only = yes
+	immediate = {
+	set_country_flag = yuan_done
+	mark_focus_tree_layout_dirty = yes
+	hidden_effect = {
+	complete_national_focus =  CHI_Yuan_is_dying
+		}
+	}	
 	option = {
 		name = CHI.4.a
 		add_political_power = 75
-		set_country_flag = yuan_done
-		mark_focus_tree_layout_dirty = yes
-		complete_national_focus =  CHI_Yuan_is_dying
-
 	}
 }
 
@@ -73,15 +72,12 @@ country_event = {
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	fire_only_once = yes
-	trigger = {
-	    date > 1920.2.19
-		date < 1920.2.21
+	is_triggered_only = yes
+	immediate = {
+	set_country_flag = chi.new.year
 	}
-      
 	option = {
 		name = CHI.5.a
-		set_country_flag = chi.new.year
 	}
 }
 
@@ -105,10 +101,7 @@ country_event = {
 	desc = CHI.7.d
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
-	trigger = {
-	    date > 1922.2.1
-		date < 1922.2.3
-	}
+	is_triggered_only = yes
     immediate = {
 	  hidden_effect = {
 			UPC = {
@@ -124,7 +117,8 @@ country_event = {
 				transfer_state = 901
 				transfer_state = 746
 				transfer_state = 602
-				
+				transfer_state = 759
+				add_state_core = 759
 				add_state_core = 593
 				add_state_core = 592
 				add_state_core = 919
@@ -163,6 +157,22 @@ country_event = {
 	
 }
 
+
+country_event = {
+	id = CHI.8
+	title = CHI.8.t
+	desc = CHI.8.d
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	immediate = {
+		set_country_flag = chi.nw
+	}		
+	option = {name = CHI.8.a}
+}
+
+
 country_event = {
 	id = CHI_Northwest_decision.1
 
@@ -176,6 +186,7 @@ country_event = {
 		917 = {
 			set_state_owner_to = CHI
 		}
+		add_state_core = 917
 	} 
 	option = {
 		name = CHI.6.a
@@ -197,6 +208,7 @@ country_event = {
 		586 = {
 			set_state_owner_to = CHI
 		}
+		add_state_core = 586
 	} 
 	option = {
 		name = CHI.6.a
@@ -218,6 +230,7 @@ country_event = {
 		CHI = {
 			transfer_state = 918
 		}
+		add_state_core = 918
 	} 
 	option = {
 		name = CHI.6.a
@@ -239,6 +252,7 @@ country_event = {
 		654 = {
 			set_state_owner_to = CHI
 		}
+		add_state_core = 654
 	} 
 	option = {
 		name = CHI.6.a
@@ -260,6 +274,7 @@ country_event = {
 		916 = {
 			set_state_owner_to = CHI
 		}
+		add_state_core = 916
 	} 
 	option = {
 		name = CHI.6.a
@@ -281,6 +296,7 @@ country_event = {
 		920 = {
 			set_state_owner_to = CHI
 		}
+		add_state_core = 920
 	} 
 	option = {
 		name = CHI.6.a
@@ -303,66 +319,4 @@ country_event = {
 	option = {
 		name = CHI.6.a
 	}
-}
-
-
-country_event = {
-	id = CHI.7
-	title = CHI.7.t
-	desc = CHI.7.d
-	picture = GFX_Portrait_of_Tirpitz
-	fire_only_once = yes
-	trigger = {
-	    date > 1922.2.1
-		date < 1922.2.3
-	}
-    immediate = {
-			UPC = {
-				transfer_state = 593
-				transfer_state = 592
-				transfer_state = 919
-				transfer_state = 591
-				transfer_state = 900
-				transfer_state = 594
-				transfer_state = 904
-				transfer_state = 903
-				transfer_state = 902
-				transfer_state = 901
-				transfer_state = 746
-				transfer_state = 602
-				
-				add_state_core = 593
-				add_state_core = 592
-				add_state_core = 919
-				add_state_core = 591
-				add_state_core = 900
-				add_state_core = 594
-				add_state_core = 904
-				add_state_core = 903
-				add_state_core = 902
-				add_state_core = 901
-				add_state_core = 746
-				add_state_core = 602
-				add_manpower = 10000
-			}
-    }  
-	option = {
-		name = CHI.7.a
-		visible = {
-				not = {
-					has_country_flag = liansheng
-				}
-		}
-		
-	}
-	
-	option = {
-		name = CHI.7.b
-		visible = {
-					has_country_flag = liansheng
-		}
-		custom_effect_tooltip = lianshen.1.tt
-		UPC = { change_tag_from = ROOT }
-	}
-	
 }

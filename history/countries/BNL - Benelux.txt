@@ -85,8 +85,10 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 93
-	Absolutism = 4
+	CON_democratic = 45
+	FRE_democratic = 30
+	AUT_democratic = 15
+	Absolutism = 7
 	Marxism = 3
 }
 
@@ -120,7 +122,11 @@ create_country_leader = {
 	}
 }
 
-
+add_ideas = {
+	Apparent_equality
+	The_Benelux_Constitution
+	Benelux_Governing_in_Netherlands
+}
 
 
 

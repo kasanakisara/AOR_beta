@@ -177,3 +177,7 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+#### Add by Hacker
+set_variable = { SWE_Left_Threat_value = 0.2 }
+add_ideas = SWE_Left_Threat

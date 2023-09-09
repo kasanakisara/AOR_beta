@@ -1,6 +1,6 @@
 capital = 303
 
-#oob = "PRU_1936"
+oob = "NPE_AOR"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		#set_naval_#oob = "PRU_1936_naval_mtg"
