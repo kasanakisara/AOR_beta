@@ -302,6 +302,9 @@ country_event = {
         trigger = {tag = SWE}
         hidden_effect = {
             kill_country_leader = yes
+            delete_unit = {
+                template = "联邦军"
+            }
             load_oob = SWE_Civilwar_oob
             SCR = {
                 transfer_state = 124
@@ -581,8 +584,9 @@ country_event = {
     title = SWE.8.t
     desc = SWE.8.d
     fire_only_once = yes
-    trigger = {
+    trigger = {                         
         check_variable = { SWE_NationalUnity < 30 }
+        has_idea = SWE_Karl_P
     }
     hidden = no
     
@@ -911,7 +915,7 @@ country_event = {
         }
         add_stability = -0.2
         SWE = {
-            country_event = SWE.20
+            country_event = SWE.23
         }
     }
 }
@@ -942,5 +946,117 @@ country_event = {
     option = {
         name = SWE.23.a
         trigger = { tag = SWE }
+    }
+}
+
+#左翼分子夺取政权
+country_event = {
+    id = SWE.24
+    title = SWE.24.t
+    desc = SWE.24.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.24.a
+        trigger = { tag = SWE }
+        create_country_leader = {
+            name = "Martin Tranme"
+            desc = "Martin_Tranme_desc"
+            picture = "gfx/leaders/SCR/Martin-Tranme.dds"
+            expire = "1965.1.1"
+            ideology = revolutionism
+            traits = {}
+        }
+        set_politics = { 
+            ruling_party = Marxism
+            elections_allowed = "no"
+        }
+        set_country_leader_ideology = revolutionism
+        set_popularities = {
+            Marxism = 100
+        }
+    }
+}
+
+#左翼分子内战
+country_event = {
+    id = SWE.25
+    title = SWE.25.t
+    desc = SWE.25.d
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
+        name = SWE.25.a
+        trigger = { tag = SWE }
+        delete_unit = {
+            template = "联邦军"
+            state = 124
+        }
+        delete_unit = {
+            template = "联邦军"
+            state = 141
+        }
+        delete_unit = {
+            template = "联邦军"
+            state = 139
+        }
+        SCR = {
+            transfer_state = 124
+            transfer_state = 139
+            transfer_state = 141
+            add_core_of = 124
+            add_core_of = 139
+            add_core_of = 141
+            add_manpower = 10000
+            division_template = {
+                priority = 0
+                name = "Common Militia"
+                regiments = {
+                    infantry = { x = 0 y = 0 } 
+                    infantry = { x = 0 y = 1 } 
+                    infantry = { x = 1 y = 0 } 
+                    infantry = { x = 1 y = 1 } 
+                }
+                support = {}
+            }
+            random_controlled_state = {
+                limit = { is_capital = yes }
+                create_unit = {
+                    division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                    owner = PREV
+                }
+                create_unit = {
+                    division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+                    owner = PREV
+                }
+                create_unit = {
+                    division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                    owner = PREV
+                }
+                create_unit = {
+                    division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                    owner = PREV
+                }
+                create_unit = {
+                    division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+                    owner = PREV
+                }
+                create_unit = {
+                    division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+                    owner = PREV
+                    count = 1
+                }
+            }
+            create_country_leader = {
+                name = "Martin Tranme"
+                desc = "Martin_Tranme_desc"
+                picture = "gfx/leaders/SCR/Martin-Tranme.dds"
+                expire = "1965.1.1"
+                ideology = revolutionism
+                traits = {}
+            }
+        }
     }
 }

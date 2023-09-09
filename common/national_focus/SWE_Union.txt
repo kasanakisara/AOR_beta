@@ -59,8 +59,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = {
-			unlock_decision_category_tooltip = SWE_Manhunt_catagory
-			add_ideas = SWE_Left_Threat
+			add_ideas = SWE_Manhunt_ideas
 		}
 
 	}
@@ -421,7 +420,18 @@ focus_tree = {
 		x = 11
 		y = 7
 		completion_reward = {
-			country_event = { id = SWE.12 }
+			hidden_effect = {
+				if = {
+					limit = {
+						Marxism > 0.5
+					}
+					country_event = { id = SWE.24 }
+				}
+				else = {
+					country_event = { id = SWE.12 }
+				}
+			}
+			custom_effect_tooltip = SWE_vote_tt
 		}
 
 	}

@@ -159,18 +159,6 @@ ideas = {
             }
         }
 
-        SWE_Left_Threat = {
-            name = SWE_Left_Threat
-            picture = ""
-
-            allowed = {always = yes}
-            allowed_civil_war = {always = no}
-            avaliable = {tag = SWE}
-            modifier = {
-                Marxism_drift = 0.15
-            }
-        }
-
         SWE_Industry_Help = {
             name = SWE_Industry_Help
             picture = ""
@@ -442,6 +430,60 @@ ideas = {
                 FRE_democratic_drift = 0.05
                 CON_democratic_drift = 0.05
                 consumer_goods_factor = -0.2
+            }
+        }
+
+        SWE_Manhunt_ideas = {
+            name = SWE_Manhunt_ideas
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            available = {
+                tag = SWE
+            }
+
+            modifier = {
+                stability_factor = -0.1
+                political_power_gain = 0.2
+            }
+        }
+
+        SWE_Left_Threat = {
+            name = SWE_Left_Threat
+            picture = ""
+
+            allowed = {always = yes}
+            allowed_civil_war = {always = no}
+            avaliable = {tag = SWE}
+            modifier = {
+                Marxism_drift = 0.5
+            }
+        }
+
+        SWE_Left_Threat_II = {
+            name = SWE_Left_Threat_II
+            picture = ""
+
+            allowed = {always = yes}
+            allowed_civil_war = {always = no}
+            avaliable = {tag = SWE}
+            modifier = {
+                Marxism_drift = 0.25
+            }
+        }
+
+        SWE_Left_Threat_III = {
+            name = SWE_Left_Threat_III
+            picture = ""
+
+            allowed = {always = yes}
+            allowed_civil_war = {always = no}
+            avaliable = {tag = SWE}
+            modifier = {
+                Marxism_drift = 0.35
             }
         }
 
