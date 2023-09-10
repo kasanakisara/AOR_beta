@@ -149,6 +149,55 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = USA.10 #西部炸出来啦
+	title = USA.10.t
+	desc = USA.10.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		tag = USA
+		date > 1921.7.1
+	}
+
+      
+	option = {
+		name = USA.10.a
+		US1 = {
+			transfer_state = 386
+			transfer_state = 387
+			transfer_state = 385
+		}
+		US2 = {
+			transfer_state = 378
+			transfer_state = 379
+			transfer_state = 380
+		}
+		US3 = {
+			transfer_state = 388
+		}
+		US4 = {
+			transfer_state = 381
+			transfer_state = 925
+		}
+		US5 = {
+			transfer_state = 382
+			transfer_state = 924
+			transfer_state = 923
+		}
+		US6 = {
+			transfer_state = 389
+			transfer_state = 390
+		}
+		US7 = {
+			transfer_state = 384
+		}
+		US8 = {
+			transfer_state = 383
+			transfer_state = 926
+		}
+	}
+}
+
 
 country_event = {
 	id = USA.99 #南北战争！

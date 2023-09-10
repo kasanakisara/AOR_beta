@@ -1,0 +1,26 @@
+add_namespace = USA_west
+
+country_event = {
+    #罢工
+    id = SWE.1
+    title = SWE.1.t
+    desc = SWE.1.d
+    trigger = {
+        tag = SWE
+        date > 1920.2.14
+    }
+    fire_only_once = yes
+    hidden = no 
+    
+    option = {
+        name = SWE.1.a
+        trigger = { tag = SWE }
+        add_timed_idea = {
+            idea = SWE_Protest
+            days = 90
+        }
+        ai_chance = {
+			base = 100 
+		}
+    }
+}
