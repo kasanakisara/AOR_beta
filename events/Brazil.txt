@@ -1,0 +1,59 @@
+add_namespace = BRA
+
+
+country_event = {
+	id = BRA.0
+	title = BRA.0.t
+	desc = BRA.0.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+	trigger = {
+		date = 1922.2.1
+	}
+	
+	option = { 
+        name = BRA.0.a
+		kill_country_leader = yes
+            }
+		}
+
+country_event = {
+	id = BRA.1
+	title = BRA.1.t
+	desc = BRA.1.d
+	picture = GFX_report_event_german_speech
+			
+	is_triggered_only = yes
+		
+	trigger = {
+		date = 1922.3.1
+	}
+			
+	option = { 
+		name = BRA.1.a
+		BR1 = {
+	    	transfer_state = 488
+	    	transfer_state = 280
+	    	transfer_state = 504
+	    	transfer_state = 496
+			add_to_war = BRA
+			add_to_war = BR3
+			add_to_war = BR2
+		}
+		BR2 = {
+	    	transfer_state = 505
+	    	transfer_state = 499
+			add_to_war = BRA
+			add_to_war = BR1
+			add_to_war = BR3
+		}
+		BR3 = {
+			transfer_state = 495
+			add_to_war = BRA
+			add_to_war = BR1
+			add_to_war = BR2
+		}
+	}
+}

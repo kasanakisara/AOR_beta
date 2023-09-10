@@ -246,6 +246,7 @@ country_event = {
 				AUT_democratic = 30
 				special = 70
 				}
+		news_event = { id =AOR_news.15 }
 		}
 	}
 

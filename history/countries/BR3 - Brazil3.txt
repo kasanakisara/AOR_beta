@@ -1,0 +1,24 @@
+﻿capital = 500
+
+
+create_country_leader = {
+	name = "Manuel Deodoro da Fonseca"
+	desc = "POLITICS_BRZ_DESC"
+	picture = "BRZ.dds"
+	expire = "1965.1.1"
+	ideology = miliciagov
+	traits = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1934.7.17"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Absolutism = 100
+}
