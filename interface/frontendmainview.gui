@@ -149,14 +149,14 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=290 y =-500 }
-		size = { width = 400 height = 563 }
+		position = { x=290 y =-400 }
+		size = { width = 400 height = 700 }
 		Orientation = lower_left
 		Origo = center	
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 563 }
+			position = { x = 320 y = 700 }
 		}
 		
 		background = {

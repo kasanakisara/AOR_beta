@@ -1,0 +1,146 @@
+###########################
+# German Events
+###########################
+
+add_namespace = EGY
+
+
+#独立！反他娘的
+country_event = {
+	id = EGY.1
+	title = EGY.1.t
+	desc = EGY.1.d
+	picture = GFX_events_EGY_1
+
+	trigger = {
+	    date > 1922.1.1
+		tag = EGY
+	}
+	
+	mean_time_to_happen = { day = 1}
+	
+	fire_only_once = yes
+
+    #那就这样吧  
+	immediate = {
+		retire_country_leader = yes
+		set_politics = {ruling_party = ISL_democratic}
+		create_country_leader = {
+		name = "Saad Zaghloul"
+		desc = "POLITICS_Saad_Zaghloul_DESC"
+		picture = "gfx/leaders/EGY/Zaghloul.png"
+		expire = "1945.1.1"
+		ideology = constitutionalism
+		}
+		set_popularities = {
+				Absolutism = 50
+				CON_democratic = 25
+				ISL_democratic = 20
+				FRE_democratic = 5
+				}
+	}	
+	option = {
+		name = EGY.1.a
+		
+    }
+}
+
+#走了
+country_event = {
+	id = EGY.2
+	title = EGY.2.t
+	desc = EGY.2.d
+	picture = GFX_events_EGY_1
+
+	trigger = {
+	    date > 1924.11.1
+		tag = EGY
+	}
+	
+	mean_time_to_happen = { day = 1}
+	
+	fire_only_once = yes
+
+    #那就这样吧  
+	option = {
+		retire_country_leader = yes
+		name = EGY.2.a
+		set_politics = {
+		ruling_party = CON_democratic
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+		}
+		create_country_leader = {
+		name = "Edmund Allenby"
+		desc = ""
+		picture = "EGY.dds"
+		ideology = federalism
+		traits = {
+			#
+			}
+		}
+		ai_chance = {
+			base = 50
+			}
+    }
+	
+	#那就这样吧  
+	option = {
+		retire_country_leader = yes
+		name = EGY.2.b
+		set_politics = {
+		ruling_party = Absolutism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+		}
+		create_country_leader = {
+		name = "Fuad"
+		desc = ""
+		picture = "gfx/leaders/EGY/Fuad.png"
+		ideology = monarchism
+		traits = {
+			#
+			}
+		}
+		ai_chance = {
+			base = 50
+			}
+    }
+}
+
+
+#新的
+country_event = {
+	id = EGY.3
+	title = EGY.3.t
+	desc = EGY.3.d
+	picture = GFX_events_EGY_1
+
+	trigger = {
+	    date > 1926.1.1
+		tag = EGY
+	}
+	
+	mean_time_to_happen = { day = 1}
+	
+	fire_only_once = yes
+
+    #那就这样吧  
+	immediate = {
+		retire_country_leader = yes
+		set_politics = {ruling_party = ISL_democratic}
+		create_country_leader = {
+		name = "Isma'il Pasha"
+		desc = "POLITICS_Pasha_DESC"
+		picture = "gfx/leaders/EGY/Pasha.png"
+		expire = "1945.1.1"
+		ideology = constitutionalism
+		}
+	}	
+	option = {
+		name = EGY.3.a
+		
+    }
+}
