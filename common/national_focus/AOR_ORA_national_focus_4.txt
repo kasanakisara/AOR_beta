@@ -7,6 +7,7 @@ focus_tree={
 		}
 	}
 	default=no
+	continuous_focus_position = {x = 1500 y = 1200}
 	focus={
 		id=ORA_meizhouxuanyan
 		icon=unknown
@@ -35,7 +36,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
-		create_wargoal = { target = URG type = America_revolution }
+			create_wargoal = { target = URG type = America_revolution }
 		}
 	}
 	focus={
@@ -51,6 +52,58 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			300 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 4457
+				}
+			}
+			#原始状态
+			if = {
+				limit = {
+					has_idea = ORA_america_shout
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout
+					add_idea = ORA_america_shout_II
+				}
+			}
+			#只点了集体劳动
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_IV
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_IV
+					add_idea = ORA_america_shout_III
+				}
+			}
+			#只点了重建秩序
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_V
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_V
+					add_idea = ORA_america_shout_VI
+				}
+			}
+			#点了重建秩序和集体劳动
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_VIII
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_VIII
+					add_idea = ORA_america_shout_VII
+				}
+			}
+			#什么都没点
+			else = {
+				custom_effect_tooltip = ORA_swap_tt
+			}
 		}
 	}
 	focus={
@@ -66,6 +119,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			add_stability = 0.2
 		}
 	}
 	focus={
@@ -82,6 +136,13 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			URG = {
+				transfer_state = 300
+			}
+			set_autonomy = {
+				target = URG
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 	focus={
@@ -97,6 +158,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			create_wargoal = { target = CHL type = America_revolution }
 		}
 	}
 	focus={
@@ -127,6 +189,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			add_manpower = 35000
 		}
 	}
 	focus={
@@ -143,6 +206,15 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			CHL = {
+				transfer_state = 506
+				transfer_state = 279
+				transfer_state = 507
+			}
+			set_autonomy = {
+				target = CHL
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 	focus={
@@ -160,6 +232,9 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			create_wargoal = { target = BOL type = America_revolution }
+			create_wargoal = { target = NPE type = America_revolution }
+			create_wargoal = { target = SPE type = America_revolution }
 		}
 	}
 	focus={
@@ -175,6 +250,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			add_timed_idea = { idea = ORA_Face_Attack days = 180 }
 		}
 	}
 	focus={
@@ -190,6 +266,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			add_timed_idea = { idea = ORA_Gross_Plan days = 180 }
 		}
 	}
 	focus={
@@ -205,6 +282,25 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			NPE = {
+				transfer_state = 942
+				transfer_state = 303
+				transfer_state = 491
+			}
+			set_autonomy = {
+				target = NPE
+				autonomy_state = autonomy_puppet
+			}
+
+			SPE = {
+				transfer_state = 494
+				transfer_state = 492
+				transfer_state = 943
+			}
+			set_autonomy = {
+				target = SPE
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 	focus={
@@ -213,7 +309,6 @@ focus_tree={
 		x=7
 		y=7
 		prerequisite={focus=ORA_zhijiemilu}
-		mutually_exclusive={focus=ORA_xinsixiang }
 		cost=10
 		ai_will_do={
 			base=10
@@ -221,6 +316,27 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = ORA_america_shout_X
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_X
+					add_idea = ORA_america_shout_XI
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_VII
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_VII
+					add_idea = ORA_america_shout_VVI
+				}
+			}
+			else = {
+				custom_effect_tooltip = ORA_swap_tt
+			}
 		}
 	}
 	focus={
@@ -229,7 +345,6 @@ focus_tree={
 		x=9
 		y=7
 		prerequisite={focus=ORA_zhijiemilu}
-		mutually_exclusive={focus=ORA_xinguanliaojigou }
 		cost=10
 		ai_will_do={
 			base=10
@@ -237,6 +352,27 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = ORA_america_shout_VVI
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_VVI
+					add_idea = ORA_america_shout_XI
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_VII
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_VII
+					add_idea = ORA_america_shout_X
+				}
+			}
+			else = {
+				custom_effect_tooltip = ORA_swap_tt
+			}
 		}
 	}
 	focus={
@@ -253,6 +389,30 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			BOL = {
+				transfer_state = 935
+				transfer_state = 487
+				transfer_state = 302
+				transfer_state = 944
+				transfer_state = 688
+			}
+			BOL = {
+				create_faction = PRU_BOL_Union
+				add_to_faction = NPE
+				add_to_faction = SPE
+			}
+			set_autonomy = {
+				target = BOL
+				autonomy_state = autonomy_puppet
+			}
+			set_autonomy = {
+				target = NPE
+				autonomy_state = autonomy_puppet
+			}
+			set_autonomy = {
+				target = SPE
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 	focus={
@@ -313,6 +473,7 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			create_wargoal = { target = PAR type = America_revolution }
 		}
 	}
 	focus={
@@ -328,6 +489,50 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			#只点了渔业国策
+			if = {
+				limit = {
+					has_idea = ORA_america_shout_II
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_II
+					add_idea = ORA_america_shout_III
+				}
+			}
+			#原始状态
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout
+					add_idea = ORA_america_shout_IV
+				}
+			}
+			#只点了重建秩序
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_V
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_V
+					add_idea = ORA_america_shout_VIII
+				}
+			}
+			#点了渔业和重建秩序
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_VI
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_VI
+					add_idea = ORA_america_shout_VII
+				}
+			}
+			#什么都没点
+			else = {
+				custom_effect_tooltip = ORA_swap_tt
+			}
 		}
 	}
 	focus={
@@ -343,6 +548,50 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			#原始状态
+			if = {
+				limit = {
+					has_idea = ORA_america_shout
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout
+					add_idea = ORA_america_shout_V
+				}
+			}
+			#只点了集体劳动
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_IV
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_IV
+					add_idea = ORA_america_shout_VIII
+				}
+			}
+			#只点了渔业
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_II
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_II
+					add_idea = ORA_america_shout_VI
+				}
+			}
+			#点了集体劳动和渔业
+			else_if = {
+				limit = {
+					has_idea = ORA_america_shout_III
+				}
+				swap_ideas = {
+					remove_idea = ORA_america_shout_III
+					add_idea = ORA_america_shout_VII
+				}
+			}
+			#什么都没点
+			else = {
+				custom_effect_tooltip = ORA_swap_tt
+			}
 		}
 	}
 	focus={
@@ -359,6 +608,13 @@ focus_tree={
 		available={
 		}
 		completion_reward={
+			PAR = {
+				transfer_state = 301
+			}
+			set_autonomy = {
+				target = PAR
+				autonomy_state = autonomy_puppet
+			}
 		}
 	}
 }

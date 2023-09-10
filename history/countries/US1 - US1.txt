@@ -1,0 +1,35 @@
+﻿capital = 361
+
+#oob = "USA_1936"
+
+starting_train_buffer = 5
+
+
+set_politics = {
+	ruling_party = FRE_democratic
+	last_election = "1915.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	CON_democratic = 45 #洋基党
+	FRE_democratic = 40 #迪克西党
+	SOC_democratic = 5 #社民
+	AGR_socialism = 3 #农工党
+	AUT_democratic = 5 #社会党
+	Absolutism = 2 #独立同盟
+}
+
+create_country_leader = {
+	name = "Thomas Woodrow Wilson"
+	desc = ""
+	picture = "axm7x-nkh4s.dds"
+	expire = "1953.3.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+
+}
+

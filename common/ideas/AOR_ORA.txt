@@ -298,7 +298,7 @@ ideas = {
 				compliance_growth = 0.15
 			}
 		}
-		 ORA_qingbaozuzhi = {
+		ORA_qingbaozuzhi = {
 			picture = GFX_ORA_zhenyafangem
 			allowed = { always = yes }
 			modifier = {
@@ -308,7 +308,25 @@ ideas = {
 				compliance_growth = 0.15
 			}
 		}
-		
+		ORA_Face_Attack = {
+			picture = GFX_ORA_Face_Attack
+			allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+			}
+		}
+		ORA_Gross_Plan = {
+			picture = GFX_ORA_Gross_Plan
+			allowed = { always = yes }
+			modifier = {
+				max_planning = 0.2
+			}
+		}
+
+###################################美洲宣言的奇妙冒险##################################
+
+		#Orginal ideas
 		ORA_america_shout= {
 			picture = GFX_ORA_america_shout
 			allowed = { always = yes }
@@ -316,6 +334,141 @@ ideas = {
 				stability_weekly = 0.001
 				war_support_weekly = 0.001	
 				political_power_gain = 0.1				
+			}
+		}
+
+		#只点了渔业国策
+		ORA_america_shout_II= {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				production_speed_dockyard_factor = 0.1		
+			}
+		}
+
+		#点了渔业国策和集体劳动
+		ORA_america_shout_III = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		#只点了集体劳动
+		ORA_america_shout_IV = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		#只点了重建秩序
+		ORA_america_shout_V = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1		
+				compliance_growth = 0.05
+			}
+		}
+
+		#点了重建秩序和渔业
+		ORA_america_shout_VI= {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				production_speed_dockyard_factor = 0.1
+				compliance_growth = 0.05
+			}
+		}
+
+		#点了重建秩序、渔业和集体劳动
+		ORA_america_shout_VII = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.05
+			}
+		}
+
+		#点了重建秩序和集体劳动
+		ORA_america_shout_VIII = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.05
+			}
+		}
+
+		#点了新官僚机构
+		ORA_america_shout_VVI = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.2
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.05
+			}
+		}
+
+		#点了新思想
+		ORA_america_shout_X = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.05
+				Anarcho_drift = 0.05
+				Marxism_drift = 0.05
+			}
+		}
+
+		#上面这俩都点了
+		ORA_america_shout_XI = {
+			picture = GFX_ORA_america_shout
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001	
+				political_power_gain = 0.2
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.1
+				compliance_growth = 0.05
+				Anarcho_drift = 0.05
+				Marxism_drift = 0.05
 			}
 		}
 		
