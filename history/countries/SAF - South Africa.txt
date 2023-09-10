@@ -2,6 +2,27 @@
 
 #oob = "SAF_1936"
 
+create_country_leader = {
+	name = "Louis Botha"
+	desc = ""
+	picture = "gfx/leaders/SAF/Botha.png"
+	desc = "POLITICS_Botha_DESC"
+	expire = "1965.1.1"
+	ideology =  federalism
+	traits = {
+	}
+}
+set_convoys = 25
+set_politics = {
+	ruling_party = CON_democratic
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	CON_democratic = 75
+	Absolutism = 25
+}
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech
@@ -68,37 +89,18 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_ossewabrandwag
-	add_ideas = SAF_history_of_segregation
 
-	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+SAF = {
+country_event = { days = 15 id = SAF.1 }
 }
 
 
-create_country_leader = {
-	name = "Jan Christian Smuts"
-	desc = ""
-	picture = "az2vq-oka63.dds"
-	expire = "1965.1.1"
-	ideology = federalism
-	traits = {
-	}
-}
 
-
-set_convoys = 25
-set_politics = {
-	ruling_party = CON_democratic
-	last_election = "1933.5.17"
-	election_frequency = 60
-	elections_allowed = yes
+add_ideas = {
+Land_of_diamonds_gold
+Boer_question_mid
+Negro_problem
+Prince_of_Connaught
+White_mass_unemployment
+Agricultural_crisis
 }
-set_popularities = {
-	CON_democratic = 75
-	Absolutism = 20
-	Marxism = 5
-}
-

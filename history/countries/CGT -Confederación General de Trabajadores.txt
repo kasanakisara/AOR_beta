@@ -25,9 +25,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Anarcho committee"
+	name = "Workers' committee"
 	desc = "POLITICS_committee_DESC"
-	picture = "gfx/leaders/CGT/ajanf-uodsx.dds"
+	picture = "gfx/leaders/CGT/Workers.png"
 	expire = "1965.1.1"
 	ideology = anarchism
 }

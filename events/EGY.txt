@@ -132,7 +132,7 @@ country_event = {
 		retire_country_leader = yes
 		set_politics = {ruling_party = ISL_democratic}
 		create_country_leader = {
-		name = "Isma'il Pasha"
+		name = "Ismail Sidky Pasha"
 		desc = "POLITICS_Pasha_DESC"
 		picture = "gfx/leaders/EGY/Pasha.png"
 		expire = "1945.1.1"
