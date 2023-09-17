@@ -385,5 +385,67 @@ ideas = {
 			}
 		}
 	}
+	Financial_and_tax_crisis = {
+			
+		picture = GFX_idea_Financial_and_tax_crisis
+		
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
 
+		modifier = {
+			stability_factor = -0.15
+			consumer_goods_factor = 0.25
+			conscription_factor = -0.3
+			political_power_factor = -0.15
+		}
+	}
+	
+	Northwest_Joint_Command_Headquarters = {
+			
+		picture = GFX_idea_Northwest_Joint_Command_Headquarters
+		
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		modifier = {
+			max_command_power = 15
+			command_power_gain = 0.1
+			army_org_regain = 0.05
+		}
+	}
+
+	Beiyang_afterglow = {
+			
+		picture = GFX_idea_Northwest_Joint_Command_Headquarters
+		
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+
+		modifier = {
+			LAND_DOCTRINE_COST_FACTOR = 0.5
+			NAVAL_DOCTRINE_COST_FACTOR = 0.75
+			AIR_DOCTRINE_COST_FACTOR = 0.75
+			ARMY_ORG_FACTOR = 0.1
+		    ARMY_INFANTRY_ATTACK_FACTOR = 0.05
+			ARMY_INFANTRY_DEFENCE_FACTOR = 0.05
+			EXPERIENCE_LOSS_FACTOR = -0.1
+			XP_GAIN_ARMY = 0.03
+
+		}
+	}
 }
