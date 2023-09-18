@@ -1,9 +1,10 @@
 focus_tree={
+id = NAU_MID
 	country={
 		factor=0
 		modifier={
-			add=20
-			tag=NAU
+			add=10
+			tag=nau
 		}
 	}
 	default=no
@@ -26,38 +27,6 @@ focus_tree={
 		x=6
 		y=2
 		prerequisite={focus=NAU_Prime_Minister_Adolf focus=NAU_Prime_Minister_Strasser }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=NAU_Prime_Minister_Adolf
-		x=1
-		y=1
-		prerequisite={focus=NAU_Burning_City_Hall}
-		mutually_exclusive={focus=NAU_Prime_Minister_Strasser }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=NAU_Prime_Minister_Strasser
-		x=11
-		y=1
-		prerequisite={focus=NAU_Burning_City_Hall}
-		mutually_exclusive={focus=NAU_Prime_Minister_Adolf }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -223,7 +192,23 @@ focus_tree={
 		}
 	}
 	focus={
-		id=NAU_Merge_workers'_organizations
+		id=NAU_Prime_Minister_Adolf
+		x=1
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall}
+		mutually_exclusive={focus=NAU_Prime_Minister_Strasser }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=NAU_Merge_workers_organizations
 		x=10
 		y=2
 		prerequisite={focus=NAU_Prime_Minister_Strasser}
@@ -238,7 +223,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=NAU_Excluding_the_economy
+		id=NAU_Eliminate_economic_bandits
 		x=12
 		y=2
 		prerequisite={focus=NAU_Prime_Minister_Strasser}
@@ -253,11 +238,27 @@ focus_tree={
 		}
 	}
 	focus={
+		id=NAU_Prime_Minister_Strasser
+		x=11
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall}
+		mutually_exclusive={focus=NAU_Prime_Minister_Adolf }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
 		id=NAU_Rebirth_of_old_beliefs
 		x=11
 		y=3
-		prerequisite={focus=NAU_Excluding_the_economy}
-		prerequisite={focus=NAU_Merge_workers'_organizations}
+		prerequisite={focus=NAU_Eliminate_economic_bandits}
+		prerequisite={focus=NAU_Merge_workers_organizations}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -272,8 +273,8 @@ focus_tree={
 		id=NAU_Shooting_Committee
 		x=10
 		y=4
-		prerequisite={focus=NAU_Merge_workers'_organizations}
 		prerequisite={focus=NAU_Rebirth_of_old_beliefs}
+		prerequisite={focus=NAU_Merge_workers_organizations}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -289,7 +290,7 @@ focus_tree={
 		x=12
 		y=4
 		prerequisite={focus=NAU_Rebirth_of_old_beliefs}
-		prerequisite={focus=NAU_Excluding_the_economy}
+		prerequisite={focus=NAU_Eliminate_economic_bandits}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -320,8 +321,8 @@ focus_tree={
 		id=NAU_Proletarian_race
 		x=11
 		y=5
-		prerequisite={focus=NAU_Great_Reform}
 		prerequisite={focus=NAU_Shooting_Committee}
+		prerequisite={focus=NAU_Great_Reform}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -335,10 +336,10 @@ focus_tree={
 	focus={
 		id=NAU_The_Last_Enemy
 		x=6
-		y=6
+		y=7
 		prerequisite={focus=NAU_Enlarged_Political_Commissar}
 		prerequisite={focus=NAU_blood_and_soil}
-		prerequisite={focus=NAU_Proletarian_race focus=NAU_Revise_the_Party_Constitution }
+		prerequisite={focus=NAU_Revise_the_Party_Constitution focus=NAU_Proletarian_race }
 		cost=10
 		ai_will_do={
 			factor=1

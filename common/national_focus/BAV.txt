@@ -10,6 +10,7 @@ focus_tree={
 	continuous_focus_position = { x = 1500  y = 2000 }
 	focus={
 		id=BAV_civil_War_gone
+		icon = GFX_goal_BAV_civil_War_gone
 		x=10
 		y=1
 		prerequisite={focus=BAV_First_Council_Spartacus}
@@ -26,6 +27,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Rebuild_army
+		icon = GFX_goal_BAV_Rebuild_army
 		x=5
 		y=2
 		prerequisite={focus=BAV_civil_War_gone}
@@ -43,6 +45,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Training_style_roving_rebels
+		icon = GFX_goal_BAV_Training_style_roving_rebels
 		x=8
 		y=3
 		prerequisite={focus=BAV_Rebuild_army}
@@ -58,6 +61,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Crack_extreme_democratic_ideas
+		icon = GFX_goal_BAV_Crack_extreme_democratic_ideas
 		x=2
 		y=3
 		prerequisite={focus=BAV_Rebuild_army}
@@ -73,6 +77,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Transformation_labor
+		icon = GFX_goal_BAV_Transformation_labor
 		x=6
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
@@ -88,6 +93,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Renounce_nobility_once
+		icon = GFX_goal_BAV_Renounce_nobility_once
 		x=10
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
@@ -103,6 +109,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Former_party_member
+		icon = GFX_goal_BAV_Former_party_member
 		x=4
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
@@ -118,6 +125,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Army_shepherd
+		icon = GFX_goal_BAV_Army_shepherd
 		x=0
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
@@ -133,6 +141,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Allied_steel
+		icon = GFX_goal_BAV_Allied_steel
 		x=2
 		y=5
 		prerequisite={focus=BAV_Army_shepherd}
@@ -149,6 +158,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_People_guard
+		icon = GFX_goal_BAV_People_guard
 		x=8
 		y=5
 		prerequisite={focus=BAV_Renounce_nobility_once}
@@ -165,6 +175,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Liquidate_old_government
+		icon = GFX_goal_BAV_Liquidate_old_government
 		x=15
 		y=2
 		prerequisite={focus=BAV_civil_War_gone}
@@ -180,6 +191,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Take_knife_to_bureaucrat
+		icon = GFX_goal_BAV_Take_knife_to_bureaucrat
 		x=15
 		y=3
 		prerequisite={focus=BAV_Liquidate_old_government}
@@ -195,6 +207,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_New_regulation
+		icon = GFX_goal_BAV_New_regulation
 		x=13
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
@@ -210,6 +223,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_New_people_waiter
+		icon = GFX_goal_BAV_New_people_waiter
 		x=17
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
@@ -225,6 +239,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_New_Soviet_government
+		icon = GFX_goal_BAV_New_Soviet_government
 		x=15
 		y=5
 		prerequisite={focus=BAV_New_people_waiter}
@@ -241,6 +256,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_First_Council_Spartacus
+		icon = GFX_goal_BAV_First_Council_Spartacus
 		x=21
 		y=0
 		cost=1
@@ -256,6 +272,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_The_future_Wave
+		icon = GFX_goal_BAV_The_future_Wave
 		x=32
 		y=1
 		prerequisite={focus=BAV_First_Council_Spartacus}
@@ -271,6 +288,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_trip_to_country
+		icon = GFX_goal_BAV_trip_to_country
 		x=27
 		y=2
 		prerequisite={focus=BAV_The_future_Wave}
@@ -286,6 +304,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Streets_Munich
+		icon = GFX_goal_BAV_Streets_Munich
 		x=37
 		y=2
 		prerequisite={focus=BAV_The_future_Wave}
@@ -301,6 +320,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Spread_revolution
+		icon = GFX_goal_BAV_Spread_revolution
 		x=25
 		y=3
 		prerequisite={focus=BAV_trip_to_country}
@@ -316,6 +336,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Abolish_feudalism
+		icon = GFX_goal_BAV_Abolish_feudalism
 		x=29
 		y=3
 		prerequisite={focus=BAV_trip_to_country}
@@ -331,6 +352,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Fire_out
+		icon = GFX_goal_BAV_Fire_out
 		x=25
 		y=4
 		prerequisite={focus=BAV_Spread_revolution}
@@ -346,6 +368,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_pesticide
+		icon = GFX_goal_BAV_pesticide
 		x=29
 		y=4
 		prerequisite={focus=BAV_Abolish_feudalism}
@@ -361,6 +384,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_peasant_commune
+		icon = GFX_goal_BAV_peasant_commune
 		x=27
 		y=5
 		prerequisite={focus=BAV_Fire_out}
@@ -377,6 +401,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_roar_the_factory
+		icon = GFX_goal_BAV_roar_the_factory
 		x=34
 		y=3
 		prerequisite={focus=BAV_Streets_Munich}
@@ -392,6 +417,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Exchange_bell
+		icon = GFX_goal_BAV_Exchange_bell
 		x=40
 		y=3
 		prerequisite={focus=BAV_Streets_Munich}
@@ -407,6 +433,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Democratic_production
+		icon = GFX_goal_BAV_Democratic_production
 		x=32
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
@@ -422,6 +449,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Command_production
+		icon = GFX_goal_BAV_Command_production
 		x=36
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
@@ -437,6 +465,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Withdrawal_imperial_exchange
+		icon = GFX_goal_BAV_Withdrawal_imperial_exchange
 		x=38
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
@@ -452,6 +481,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Limited_trade
+		icon = GFX_goal_BAV_Limited_trade
 		x=42
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
@@ -467,6 +497,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_Coowned_factory
+		icon = GFX_goal_BAV_Coowned_factory
 		x=37
 		y=5
 		prerequisite={focus=BAV_Democratic_production}
@@ -485,6 +516,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_We_never_left
+		icon = GFX_goal_BAV_We_never_left
 		x=21
 		y=6
 		prerequisite={focus=BAV_Allied_steel}
@@ -504,6 +536,7 @@ focus_tree={
 	}
 	focus={
 		id=BAV_flames_of_revolution_continue_unabated
+		icon = GFX_goal_BAV_flames_of_revolution_continue_unabated
 		x=21
 		y=7
 		prerequisite={focus=BAV_We_never_left}

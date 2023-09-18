@@ -62,8 +62,9 @@ country_event = {
 		add_stability = 0.05
 	}
 }
+
 country_event = {
-	id = NAU.5 #护照国籍
+	id = NAU.5 #巴登陷入昏迷
 	title = NAU.5.t
 	desc = NAU.5.d
 	picture = GFX_report_event_polish_tanks_01
@@ -73,16 +74,19 @@ country_event = {
 	option = {
 		name = NAU.5.a
 		ai_chance = { factor = 10 }
-		add_war_support = 0.05
-	}
-	option = {
-		name = NAU.5.b
-		ai_chance = { factor = 10 }
-		add_stability = 0.1
+		add_stability = -0.1
+		hidden_effect = 
+		{
+		country_event = { days = 2 id = NAU.6 }
+		country_event = { days = 3 id = NAU.7 }
+		country_event = { days = 4 id = NAU.8 }
+		}
+		
 	}
 }
+
 country_event = {
-	id = NAU.6 #坦克变家具
+	id = NAU.6 #混乱的办公室
 	title = NAU.6.t
 	desc = NAU.6.d
 	picture = GFX_report_event_polish_tanks_01
@@ -91,12 +95,12 @@ country_event = {
 	
 	option = {
 		name = NAU.6.a
-		ai_chance = { factor = 10 }
-		add_stability = 0.1
+		ai_chance = { factor = 10 }	
 	}
 }
+
 country_event = {
-	id = NAU.7 #亲王遇刺
+	id = NAU.7 #燃着烈火的街道
 	title = NAU.7.t
 	desc = NAU.7.d
 	picture = GFX_report_event_polish_tanks_01
@@ -105,12 +109,12 @@ country_event = {
 	
 	option = {
 		name = NAU.7.a
-		ai_chance = { factor = 10 }
-		load_focus_tree = NAU_1_countryfocus_tree
+		ai_chance = { factor = 10 }	
 	}
 }
+
 country_event = {
-	id = NAU.8 #马克西米连的嘱托
+	id = NAU.8 #蠢蠢欲动
 	title = NAU.8.t
 	desc = NAU.8.d
 	picture = GFX_report_event_polish_tanks_01
@@ -119,12 +123,15 @@ country_event = {
 	
 	option = {
 		name = NAU.8.a
-		ai_chance = { factor = 10 }
-
+		ai_chance = { factor = 10 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.9 }
+		}
 	}
 }
+
 country_event = {
-	id = NAU.9 #考察团名单
+	id = NAU.9 #巴登苏醒，紧急演讲
 	title = NAU.9.t
 	desc = NAU.9.d
 	picture = GFX_report_event_polish_tanks_01
@@ -133,59 +140,66 @@ country_event = {
 	
 	option = {
 		name = NAU.9.a
-		ai_chance = { factor = 10 }
-
+		ai_chance = { factor = 66 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.10 }
+		set_country_flag = NAU_renmin
+		}
+	}
+	option = {
+		name = NAU.9.b
+		ai_chance = { factor = 33 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.10 }
+		set_country_flag = NAU_guojia
+		}
 	}
 }
+
 country_event = {
-	id = NAU.10 #马克西米连的传话
+	id = NAU.10 #火烧市政厅，巴登去世
 	title = NAU.10.t
 	desc = NAU.10.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #拉狄克和伯恩施坦
 		name = NAU.10.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }	
+		complete_national_focus =  NAU_Burning_City_Hall_1
+		trigger = {
+					has_country_flag = NAU_renmin
+		}
+		hidden_effect = {
+		load_focus_tree = NAU_LEFT
+		set_politics = {ruling_party = Marxism}
+
+		}
 	}
-}
-country_event = {
-	id = NAU.11 #啤酒馆演讲
-	title = NAU.11.t
-	desc = NAU.11.d
-	picture = GFX_report_event_polish_tanks_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = NAU.11.a
-		ai_chance = { factor = 10 }
+	option = { #希特勒和史特拉瑟
+		name = NAU.10.b
+		ai_chance = { factor = 50 }	
+		complete_national_focus =  NAU_Burning_City_Hall_2
+		trigger = {
+					has_country_flag = NAU_renmin
+		}
+		hidden_effect = {
+		load_focus_tree = NAU_RIGHT
+		set_politics = {ruling_party = Fascism}
+		}
 	}
-}
-country_event = {
-	id = NAU.12 #法兰克福漫长而血腥一天 
-	title = NAU.12.t
-	desc = NAU.12.d
-	picture = GFX_report_event_polish_tanks_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = NAU.12.a
-		ai_chance = { factor = 10 }
+	option = { #塞克特和鲁登道夫
+		name = NAU.10.c
+		ai_chance = { factor = 50 }	
+		complete_national_focus =  NAU_Burning_City_Hall
+		trigger = {
+					has_country_flag = NAU_guojia
+		}
+		hidden_effect = {
+		load_focus_tree = NAU_MID
+		set_politics = {ruling_party = Absolutism}
+		}
 	}
-}
-country_event = {
-	id = NAU.13 #宪法会之变 
-	title = NAU.13.t
-	desc = NAU.13.d
-	picture = GFX_report_event_polish_tanks_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = NAU.13.a
-		ai_chance = { factor = 10 }
-	}
+
 }

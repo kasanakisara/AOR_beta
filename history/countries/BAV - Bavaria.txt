@@ -164,6 +164,9 @@ add_ideas = {
 
 oob = "BAV_AOR"
 
+BAV = {
+country_event = { days = 1099 id = BAV.3 }
+}
 
 #create_country_leader = {
 #	name = "Róża Luksemburg"
