@@ -81,6 +81,7 @@ focus_tree={
 		x=6
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
+		mutually_exclusive={focus = BAV_Renounce_nobility_once}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -97,6 +98,7 @@ focus_tree={
 		x=10
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
+		mutually_exclusive={focus = BAV_Transformation_labor}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -113,6 +115,7 @@ focus_tree={
 		x=4
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
+		mutually_exclusive={focus = BAV_Army_shepherd}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -129,6 +132,7 @@ focus_tree={
 		x=0
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
+		mutually_exclusive={focus = BAV_Former_party_member}
 		cost=2
 		ai_will_do={
 			factor=1
