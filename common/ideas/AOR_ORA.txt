@@ -87,7 +87,7 @@ ideas = {
 			}
 		}
 		ORA_gong_hui_ling_dao = {
-			picture = gong_hui_ling_dao_pic
+			picture =gong_hui_ling_dao_pic
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.05

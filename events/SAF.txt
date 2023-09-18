@@ -16,6 +16,7 @@ country_event = {
 
     #那就这样吧  
 	immediate = {
+		news_event = { id = AOR_news.23 }
 		retire_country_leader = yes
 		create_country_leader = {
 		name = "Jan Christiaan Smuts"
@@ -211,4 +212,39 @@ country_event = {
 			}
 		set_country_flag = saf.change
     }
+}
+
+
+
+country_event = {
+	id = SAF.5
+	title = SAF.5.t
+	desc = SAF.5.d
+	picture = GFX_events_SAF_5
+	fire_only_once = yes
+	trigger = {
+	    date > 1920.5.5
+		tag = SAF
+	}
+    #那就这样吧  	
+	option = {
+		news_event = { id = AOR_news.24 }
+		name = SAF.5.a
+		SWC = {
+				transfer_state = 275
+				
+				add_state_core = 275
+				add_state_core = 719
+				add_state_core = 681
+				add_state_core = 541
+				add_manpower = 10000
+				}
+		SWC = {
+		declare_war_on = {
+			target = SAF
+			type = civil_war
+			}
+		}
+    }
+	
 }

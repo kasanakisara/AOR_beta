@@ -18,6 +18,7 @@ focus_tree = {
 		y = 0
 		completion_reward={
 		custom_effect_tooltip = RHI.1.tt
+		hidden_effect = {
 		add_stability =0.05
 		add_political_power = 150
 		every_controlled_state={
@@ -25,6 +26,7 @@ focus_tree = {
     			type = infrastructure
     			damage = 1
 				}
+		}
 		}
 		}
 
@@ -41,11 +43,12 @@ focus_tree = {
 		y = 1
 		completion_reward={
 		custom_effect_tooltip = RHI.2.tt
+		hidden_effect = {
 		swap_ideas = {
 				remove_idea = comprehensive_investments
 				add_idea = comprehensive_investments_1
 			}
-
+		}
 		}
 
 	}
@@ -61,6 +64,7 @@ focus_tree = {
 		y = 1
 		completion_reward={
 			custom_effect_tooltip = RHI.3.tt
+			hidden_effect = {
 			swap_ideas = {
 				remove_idea = rejection
 				add_idea = rejection_1
@@ -68,6 +72,7 @@ focus_tree = {
 		add_timed_idea = {
     			idea = AOR_RHI_compromise_with_workers
    				days = 180
+				}
 				}
 			}
 	}
@@ -83,9 +88,11 @@ focus_tree = {
 		y = 1
 		completion_reward={
 			custom_effect_tooltip = RHI.4.tt
+			hidden_effect = {
 		swap_ideas = {
 				remove_idea = problem_of_jesus
 				add_idea = problem_of_jesus_1
+			}
 			}
 		}
 	}
@@ -107,9 +114,11 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = RHI.5.tt
+			hidden_effect = {
 		swap_ideas = {
 				remove_idea = rejection_1
 				add_idea = rejection_2
+			}
 			}
 		}
 	}
@@ -131,7 +140,9 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = RHI.6.tt
+			hidden_effect = {
 			add_ideas = AOR_RHI_resurrected_Ruhrgebiet
+			}
 		}
 
 	}
@@ -149,12 +160,15 @@ focus_tree = {
 		x = 3
 		y = 3
 		completion_reward={
+		custom_effect_tooltip = RHI.7.tt
+		hidden_effect = {
 		swap_ideas = {
-			custom_effect_tooltip = RHI.7.tt
+			
 				remove_idea = rejection_2
 				add_idea = rejection_3
 			}
 			add_ideas = AOR_RHI_New_onder
+			}
 		}
 	}
 }

@@ -17,14 +17,15 @@ focus_tree = {
 		y = 0
 		completion_reward={
 		custom_effect_tooltip = SAX.1.tt
-		    add_political_power = 150
+		hidden_effect = {
+			add_political_power = 150
 			swap_ideas = {
 				remove_idea = exp_of_kautsky
 				add_idea = exp_of_kautsky_1
 			}
-			
 		}
 	}
+}
 	focus = {
 		id = Class_harmony
 		icon = GFX_goal_unknown
@@ -36,8 +37,9 @@ focus_tree = {
 		y = 1
 		completion_reward={
 		custom_effect_tooltip = SAX.2.tt
+		hidden_effect = {
 			add_ideas = Class_harmony
-			
+			}
 		}
 	}
 	focus = {
@@ -51,6 +53,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 		custom_effect_tooltip = SAX.3.tt
+		hidden_effect = {
 		if = {
 		 limit = {
 			NOT = {has_idea = Class_harmony_1 }
@@ -66,7 +69,7 @@ focus_tree = {
 				add_idea = Class_harmony_2
 			}
 		}
-		
+		}
 	}
 }
 	focus = {
@@ -80,13 +83,14 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.4.tt
+		hidden_effect = {
 		add_political_power = -50
 		add_stability =0.05
 		add_popularity = {
 				ideology = SOC_democratic
 				popularity = 0.05
 			}	
-		
+		   }
 		}
 
 	}
@@ -101,6 +105,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.5.tt
+			hidden_effect = {
 		if = {
 		 limit = {
 			NOT = {has_idea = Class_harmony_1 }
@@ -115,6 +120,7 @@ focus_tree = {
 				remove_idea = Class_harmony_1
 				add_idea = Class_harmony_2
 			}
+		}
 		}
 		}
 		
@@ -131,9 +137,10 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.6.tt
+		hidden_effect = {
 		add_political_power = -50
 		add_stability =0.05
-		
+		}
 			
 		}
 
@@ -152,6 +159,7 @@ focus_tree = {
 		y = 4
 		completion_reward={
 			custom_effect_tooltip = SAX.7.tt
+			hidden_effect = {
 			add_war_support = -0.05
 			add_stability = 0.05
 			add_political_power = 50
@@ -159,7 +167,7 @@ focus_tree = {
 				ideology = Marxism
 				popularity = -0.1
 			}
-			
+			}
 		}
 
 	}
@@ -175,8 +183,9 @@ focus_tree = {
 		y = 1
 		completion_reward={
 		custom_effect_tooltip = SAX.8.tt
+		hidden_effect = {
 			country_event = AOR_SAX_events.1
-			
+			}
 		}
 
 	}
@@ -191,8 +200,9 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.9.tt
+			hidden_effect = {
 			add_ideas = Government_intervention_in_the_market
-		
+		}
 		}
 
 	}
@@ -207,9 +217,10 @@ focus_tree = {
 		y = 3
 		completion_reward={
 			custom_effect_tooltip = SAX.10.tt
+			hidden_effect = {
 			add_political_power = 150
 			add_ideas = profit_sharing
-		
+		}
 		}
 
 	}
@@ -224,6 +235,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.11.tt
+			hidden_effect = {
 			random_owned_state = {
 			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -231,7 +243,7 @@ focus_tree = {
 					level = 1
 				}
 			}
-			
+		  }
 		
 		}
 
@@ -247,6 +259,7 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.12.tt
+		hidden_effect = {
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -254,7 +267,7 @@ focus_tree = {
 					level = 1
 				}
 			}
-		
+		}
 		}
 
 	}
@@ -272,6 +285,7 @@ focus_tree = {
 		y = 4
 		completion_reward={
 			custom_effect_tooltip = SAX.13.tt
+			hidden_effect = {
 			add_war_support = -0.05
 			add_stability = 0.05
 			add_political_power = 50
@@ -279,7 +293,7 @@ focus_tree = {
 				ideology = AUT_democratic
 				popularity = -0.1
 			}
-		
+		 }
 		}
 
 	}
@@ -297,8 +311,9 @@ focus_tree = {
 		y = 5
 		completion_reward={
 		custom_effect_tooltip = SAX.14.tt
+		hidden_effect = {
 			add_ideas = The_government_of_all_the_people
-		
+		  }
 		}
 
 	}
@@ -313,8 +328,9 @@ focus_tree = {
 		y = 6
 		completion_reward={
 		custom_effect_tooltip = SAX.15.tt
+		hidden_effect = {
 			add_ideas = Guiding_the_People
-		
+		   }
 		}
 	}
 	focus = {
@@ -328,8 +344,9 @@ focus_tree = {
 		y = 6
 		completion_reward={
 			custom_effect_tooltip = SAX.16.tt
+			hidden_effect = {
 			add_ideas = protect_the_people
-		
+		   }
 		}
 	}
 	focus = {
@@ -346,20 +363,19 @@ focus_tree = {
 		y = 7
 		completion_reward={
 		custom_effect_tooltip = SAX.18.tt
+		hidden_effect = {
 		add_stability = 0.05
 			add_political_power = 150
 			
 			
 			custom_effect_tooltip = SAX.19.tt
 			
-			hidden_effect = {
 			remove_ideas = protect_the_people
 			remove_ideas = Guiding_the_People
 			remove_ideas = The_government_of_all_the_people
 			remove_ideas = profit_sharing
 			remove_ideas = Government_intervention_in_the_market
 			add_ideas = The_Victory_of_Democracy
-			}
 			
 		}
 

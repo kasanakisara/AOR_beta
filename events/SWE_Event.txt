@@ -45,6 +45,7 @@ country_event = {
 		}
         custom_effect_tooltip = SWE_Hakoon_Death_tt
         hidden_effect = {
+			news_event = { id = AOR_news.28 }
             remove_ideas = SWE_Karl_P
             set_politics = { 
                 ruling_party = AUT_democratic
@@ -91,6 +92,7 @@ country_event = {
         name = SWE.3.a
         trigger = { tag = SWE}
         hidden_effect = {
+			news_event = { id = AOR_news.29 }
             set_politics = { 
                 ruling_party = Absolutism
                 elections_allowed = "no"

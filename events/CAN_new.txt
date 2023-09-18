@@ -14,6 +14,7 @@ country_event = {
 	mean_time_to_happen = {day = 1}
 	option = { 
         name = CAN.0.a
+		news_event = { id = AOR_news.18 }
 		remove_ideas = CAN_instiutional_reform
 		set_party_name = { 
 	    ideology = CON_democratic
@@ -44,6 +45,7 @@ country_event = {
 	mean_time_to_happen = {day = 1}
 	option = { 
         name = CAN.1.b
+		news_event = { id = AOR_news.19 }
 		add_popularity = {
 		ideology = FRE_democratic
 		popularity = 0.45
@@ -58,6 +60,7 @@ country_event = {
 		
 	option = { 
 		name = CAN.1.c
+		news_event = { id = AOR_news.19 }
 		add_popularity = {
 		ideology = SOC_democratic
 		popularity = 0.55
@@ -80,6 +83,7 @@ country_event = {
 	}
 		option = { 
         name = CAN.1.e
+		news_event = { id = AOR_news.19 }
 		add_popularity = {
 		ideology = AUT_democratic
 		popularity = 1
@@ -112,7 +116,8 @@ country_event = {
 		tag = CAN
 	}
 	mean_time_to_happen = {day = 1}
-	immediate = { 
+	immediate = {
+	news_event = { id = AOR_news.20 }	
 	release = QBC
 	CAN = {
 		declare_war_on = {

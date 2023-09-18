@@ -1,530 +1,352 @@
-focus_tree = {
-	id = NAU_FocusTree_2
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = NAU
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=20
+			tag=NAU
 		}
 	}
-	default = no
-
-	continuous_focus_position = { x = 1500  y = 2000 } 
-	
-	focus = {
-		id = Start_emergency_constitution_making
-		icon = GFX_goal_unknown
-		cost = 3
-		x = 6
-		y = 0
-		completion_reward={
-			country_event = { id = NAU.8}
+	default=no
+	focus={
+		id=NAU_Burning_City_Hall
+		x=6
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-
-	}
-	focus = {
-		id = Determine_the_legal_officer_corps
-		icon = GFX_goal_unknown
-		cost = 2
-		prerequisite = {
-			focus = Start_emergency_constitution_making
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 6
-		y = 1
 		completion_reward={
-			country_event = { id = NAU.9 }
 		}
 	}
-	focus = {
-		id = Race_Against_Time
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Determine_the_legal_officer_corps
+	focus={
+		id=NAU_Utilize_stormtroopers
+		x=6
+		y=2
+		prerequisite={focus=NAU_Prime_Minister_Adolf focus=NAU_Prime_Minister_Strasser }
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 6
-		y = 2
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			custom_modifier_tooltip = jiasujiasu_tt #加速加速
 		}
 	}
-	focus = {
-		id = Convening_the_first_draft_constitution_meeting
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Race_Against_Time
+	focus={
+		id=NAU_Prime_Minister_Adolf
+		x=1
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall}
+		mutually_exclusive={focus=NAU_Prime_Minister_Strasser }
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 6
-		y = 3
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			kill_country_leader = yes
-			create_country_leader = {
-				name = "Assembly of Provisional Officers"
-				desc = "Assembly_of_Provisional_Officers_DESC"
-				picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					
-				}
-			}
 		}
 	}
-	focus = {
-		id = Leftist_dominance
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Convening_the_first_draft_constitution_meeting
+	focus={
+		id=NAU_Prime_Minister_Strasser
+		x=11
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall}
+		mutually_exclusive={focus=NAU_Prime_Minister_Adolf }
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		mutually_exclusive = {
-			focus = Centrist_dominance
-			focus = Right_wing_dominance
-			focus = Marginalized_speech
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 1
-		y = 4
 		completion_reward={
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = SOC_democratic
-				popularity = 0.1
-			}
 		}
 	}
-	focus = {
-		id = Centrist_dominance
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Convening_the_first_draft_constitution_meeting
+	focus={
+		id=NAU_Turn_on_your_radio
+		x=5
+		y=3
+		prerequisite={focus=NAU_Utilize_stormtroopers}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		mutually_exclusive = {
-			focus = Leftist_dominance
-			focus = Right_wing_dominance
-			focus = Marginalized_speech
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 4
-		y = 4
 		completion_reward={
-			add_popularity = {
-				ideology = despotism
-				popularity = 0.1
-			}
 		}
 	}
-	focus = {
-		id = Right_wing_dominance
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Convening_the_first_draft_constitution_meeting
+	focus={
+		id=NAU_Kristallnacht
+		x=7
+		y=3
+		prerequisite={focus=NAU_Utilize_stormtroopers}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		mutually_exclusive = {
-			focus = Leftist_dominance
-			focus = Centrist_dominance
-			focus = Marginalized_speech
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 8
-		y = 4
 		completion_reward={
-			add_popularity = {
-				ideology = Fascism
-				popularity = 0.1
-			}
 		}
 	}
-	focus = {
-		id = Promote_national_consciousness
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Right_wing_dominance
+	focus={
+		id=NAU_integration
+		x=6
+		y=4
+		prerequisite={focus=NAU_Kristallnacht}
+		prerequisite={focus=NAU_Turn_on_your_radio}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 8
-		y = 5
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_ideas = National_consciousness_has_awakened
 		}
 	}
-	focus = {
-		id = Sum_up_the_lessons_of_the_Great_War
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Promote_national_consciousness
+	focus={
+		id=NAU_blood_and_soil
+		x=5
+		y=5
+		prerequisite={focus=NAU_integration}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 8
-		y = 6
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			army_experience = 10
-			add_popularity = {
-				ideology = Fascism
-				popularity = 0.05
-			}
 		}
 	}
-	focus = {
-		id = Transfer_the_muzzle
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Sum_up_the_lessons_of_the_Great_War
+	focus={
+		id=NAU_Enlarged_Political_Commissar
+		x=7
+		y=5
+		prerequisite={focus=NAU_integration}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 8
-		y = 7
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_ideas = Persecution_of_Jews
 		}
 	}
-	focus = {
-		id = Hold_public_presentations
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Transfer_the_muzzle
+	focus={
+		id=NAU_National_Youth_League
+		x=0
+		y=2
+		prerequisite={focus=NAU_Prime_Minister_Adolf}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 8
-		y = 8
-		completion_reward={
-			country_event = { id = NAU.11 }
-			swap_ideas = {
-				remove_idea = National_consciousness_has_awakened
-				add_idea = National_consciousness_has_awakened_1
-			}
-		}		
-	}
-	focus = {
-		id = I_will_revive_the_nation
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Hold_public_presentations
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 8
-		y = 9
 		completion_reward={
-			add_popularity = {
-				ideology = Fascism
-				popularity = 0.1
-			}
 		}
 	}
-	focus = {
-		id = Marginalized_speech
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Convening_the_first_draft_constitution_meeting
+	focus={
+		id=NAU_German_Federation_of_Trade_Unions
+		x=2
+		y=2
+		prerequisite={focus=NAU_Prime_Minister_Adolf}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		mutually_exclusive = {
-			focus = Leftist_dominance
-			focus = Right_wing_dominance
-			focus = Centrist_dominance
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 11
-		y = 4
 		completion_reward={
-			add_ideas = Rise
 		}
 	}
-	focus = {
-		id = Demilitarization_proposal
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Leftist_dominance
+	focus={
+		id=NAU_Control_the_Church
+		x=1
+		y=3
+		prerequisite={focus=NAU_German_Federation_of_Trade_Unions}
+		prerequisite={focus=NAU_National_Youth_League}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 5
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_ideas = The_transformation_of_Pulling_in_the_Horse_from_the_Cliff
 		}
 	}
-	focus = {
-		id = Incredible_United_Left
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Demilitarization_proposal
+	focus={
+		id=NAU_Bloodline_supremacy
+		x=0
+		y=4
+		prerequisite={focus=NAU_Control_the_Church}
+		prerequisite={focus=NAU_National_Youth_League}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 6
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_opinion_modifier = {
-				target = WUG
-				modifier = relationship_with_WUR
-			}
-			add_opinion_modifier = {
-				target = BAV
-				modifier = relationship_with_BAV
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.01
-			}
-			add_popularity = {
-				ideology = SOC_democratic
-				popularity = 0.01
-			}
 		}
 	}
-	focus = {
-		id = Establish_legitimacy
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Incredible_United_Left
+	focus={
+		id=NAU_degenerated
+		x=2
+		y=4
+		prerequisite={focus=NAU_Control_the_Church}
+		prerequisite={focus=NAU_German_Federation_of_Trade_Unions}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 7
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_stability = 0.15
 		}
 	}
-	focus = {
-		id = Gain_international_support
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Establish_legitimacy
+	focus={
+		id=NAU_Merge_workers'_organizations
+		x=10
+		y=2
+		prerequisite={focus=NAU_Prime_Minister_Strasser}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 8
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_popularity = {
-				ideology = communism
-				popularity = 0.04
-			}
-			add_popularity = {
-				ideology = SOC_democratic
-				popularity = 0.04
-			}
-			add_popularity = {
-				ideology = Fascism
-				popularity = 0.04
-			}
-			add_popularity = {
-				ideology = despotism
-				popularity = 0.04
-			}
 		}
 	}
-	focus = {
-		id = I_will_bring_freedom
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Gain_international_support
+	focus={
+		id=NAU_Excluding_the_economy
+		x=12
+		y=2
+		prerequisite={focus=NAU_Prime_Minister_Strasser}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 9
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_stability = 0.05
 		}
 	}
-	focus = {
-		id = Promulgation_of_Transformation_Regulations
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = I_will_bring_freedom
+	focus={
+		id=NAU_Rebirth_of_old_beliefs
+		x=11
+		y=3
+		prerequisite={focus=NAU_Excluding_the_economy}
+		prerequisite={focus=NAU_Merge_workers'_organizations}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 1
-		y = 10
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			load_focus_tree = RED_NAU_FOCUS_TREE
 		}
 	}
-	focus = {
-		id = Supreme_Leadership_of_the_King_James_Dynasty
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Centrist_dominance
+	focus={
+		id=NAU_Shooting_Committee
+		x=10
+		y=4
+		prerequisite={focus=NAU_Merge_workers'_organizations}
+		prerequisite={focus=NAU_Rebirth_of_old_beliefs}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 4
-		y = 5
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			country_event = { id = NAU.10 }
 		}
 	}
-	focus = {
-		id = Control_inappropriate_speech
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Supreme_Leadership_of_the_King_James_Dynasty
+	focus={
+		id=NAU_Great_Reform
+		x=12
+		y=4
+		prerequisite={focus=NAU_Rebirth_of_old_beliefs}
+		prerequisite={focus=NAU_Excluding_the_economy}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 4
-		y = 6
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_ideas = Military_authority_presses
 		}
 	}
-	focus = {
-		id = Necessary_cleaning
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Control_inappropriate_speech
+	focus={
+		id=NAU_Revise_the_Party_Constitution
+		x=1
+		y=5
+		prerequisite={focus=NAU_degenerated}
+		prerequisite={focus=NAU_Bloodline_supremacy}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 4
-		y = 7
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_manpower = -5
-			country_event = { id = NAU.13 }
 		}
 	}
-	focus = {
-		id = Reinvent_leadership_authority
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Necessary_cleaning
+	focus={
+		id=NAU_Proletarian_race
+		x=11
+		y=5
+		prerequisite={focus=NAU_Great_Reform}
+		prerequisite={focus=NAU_Shooting_Committee}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 4
-		y = 8
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_popularity = {
-				ideology = despotism
-				popularity = 0.1
-			}
-			swap_ideas = {
-				remove_idea = Military_authority_presses
-				add_idea = Military_authority_presses_1
-			}
 		}
 	}
-	focus = {
-		id = I_will_take_back_the_glory
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Reinvent_leadership_authority
+	focus={
+		id=NAU_The_Last_Enemy
+		x=6
+		y=6
+		prerequisite={focus=NAU_Enlarged_Political_Commissar}
+		prerequisite={focus=NAU_blood_and_soil}
+		prerequisite={focus=NAU_Proletarian_race focus=NAU_Revise_the_Party_Constitution }
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 4
-		y = 9
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_war_support = 0.05
-		}
-	}
-	focus = {
-		id = Promulgation_of_military_regulations
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = I_will_take_back_the_glory
-		}
-		x = 4
-		y = 10
-		completion_reward={
-			load_focus_tree = CENTER_FOCUS_TREE
-		}
-	}
-	focus = {
-		id = Promulgation_of_ethnic_regulations
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = I_will_revive_the_nation
-		}
-		x = 8
-		y = 10
-		completion_reward={
-			load_focus_tree = RIGHT_FOCUS_TREE
-		}
-	}
-	focus = {
-		id = Formation_of_civilian_military_organizations
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Marginalized_speech
-		}
-		x = 11
-		y = 5
-		completion_reward={
-			swap_ideas = {
-				remove_idea = RISE
-				add_idea = Rise_1
-			}
-		}
-	}
-	focus = {
-		id = Co_opt_the_frustrated
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Formation_of_civilian_military_organizations
-		}
-		x = 11
-		y = 6
-		completion_reward={
-			swap_ideas = {
-				remove_idea = RISE_1
-				add_idea = Rise_2
-			}
-		}
-	}
-	focus = {
-		id = Establish_secret_communications
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Co_opt_the_frustrated
-		}
-		x = 11
-		y = 7
-		completion_reward={
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = Execute_the_plan
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Establish_secret_communications
-		}
-		x = 11
-		y = 8
-		completion_reward={
-			add_manpower = -5000
-			country_event = { id = NAU.12 }
-		}
-	}
-	focus = {
-		id = I_will_take_revenge
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = Execute_the_plan
-		}
-		x = 11
-		y = 9
-		completion_reward={
-			add_popularity = {
-				ideology = SPECIAL
-				popularity = 0.25
-			}
-		}
-	}
-	focus = {
-		id = Promulgate_vengeance_goals
-		icon = GFX_goal_unknown
-		cost = 1
-		prerequisite = {
-			focus = I_will_take_revenge
-		}
-		x = 11
-		y = 10
-		completion_reward={
-			load_focus_tree = NOT_tradition_FOCUS_TREE
 		}
 	}
 }

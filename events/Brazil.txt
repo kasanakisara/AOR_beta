@@ -39,6 +39,7 @@ country_event = {
 	fire_only_once = yes		
 	option = { 
 		name = BRA.1.a
+		news_event = { id = AOR_news.21 }
 		BR1 = {
 	    	transfer_state = 488
 	    	transfer_state = 280

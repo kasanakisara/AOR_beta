@@ -1,67 +1,43 @@
 AOR_political_action = {
 
-	AOR_Publicity_action_red = {   
+	AOR_Patriotic_education = {   
 		icon =  generic_political_discourse
 		cost = 25
-		days_remove = 30
+		days_remove = 180
 		fire_only_once = no
-		days_re_enable = 20
-		ai_will_do = {
-			factor = 3
-		}
-		modifier = {
-		ROOT_drift = 0.01
-	   	}
+		days_re_enable = 120
+		available = {}
 		remove_effect = {
-		}
+		political_power_cost = 0.15
+           defensive_war_stability_factor = 0.1
+		   war_support_weekly = 0.002
+        }
 	}
-	
-	AOR_Publicity_action_1 = {   
+	AOR_Improve_workers_conditions = {   
 		icon =  generic_political_discourse
 		cost = 25
-		days_remove = 30
+		days_remove = 180
 		fire_only_once = no
-		days_re_enable = 20
-		ai_will_do = {
-			factor = 3
-		}
-		modifier = {
-		ROOT_drift = 0.01
-	   	}
+		days_re_enable = 120
+		available = {}
 		remove_effect = {
-		}
+           consumer_goods_factor = 0.05
+		   industrial_capacity_factory = 0.05
+        }
 	}
-	
-	AOR_Publicity_action_2 = {   
+	AOR_Invest_scientific_development = {   
 		icon =  generic_political_discourse
-		cost = 25
-		days_remove = 30
+		cost = 100
+		days_remove = 180
 		fire_only_once = no
-		days_re_enable = 20
-		ai_will_do = {
-			factor = 3
+		days_re_enable = 120
+		available = {
+		has_war = no
 		}
-		modifier = {
-		ROOT_drift = 0.01
-	   	}
 		remove_effect = {
-		}
+           consumer_goods_factor = 0.05
+		   political_power_cost = 0.1
+		   	research_speed_factor = 0.1
+        }
 	}
-	
-	AOR_Publicity_action_3 = {   
-		icon =  generic_political_discourse
-		cost = 25
-		days_remove = 30
-		fire_only_once = no
-		days_re_enable = 20
-		ai_will_do = {
-			factor = 3
-		}
-		modifier = {
-		ROOT_drift = 0.01
-	   	}
-		remove_effect = {
-		}
-	}
-	
 }

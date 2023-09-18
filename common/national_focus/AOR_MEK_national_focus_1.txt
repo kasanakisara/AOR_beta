@@ -22,7 +22,9 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.1.tt
+			hidden_effect = {
 			add_political_power = 150
+			}
 		}
 	}
 	focus = {
@@ -43,9 +45,11 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.2_tt
+			hidden_effect = {
 			add_ideas =  closed_economy
 			add_ideas = service_by_requirement
 			add_ideas = war_economy
+			}
 		}
 	}
 	focus={
@@ -62,7 +66,9 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.3_tt
+			hidden_effect = {
 			add_stability = 0.05
+			}
 		}
 	}
 	focus={
@@ -79,7 +85,9 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.4_tt
+			hidden_effect = {
 			add_war_support = 0.05
+			}
 		}
 	}
 	focus={
@@ -96,11 +104,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.5_tt
+			hidden_effect = {
 			61 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 				}
+			}
 			}
 		}
 	}
@@ -118,7 +128,9 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.6_tt
+			hidden_effect = {
 			add_manpower = 300
+			}
 		}
 	}
 	focus={
@@ -135,9 +147,11 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.7_tt
+			hidden_effect = {
 			add_popularity = {
 				ideology = FRE_democratic
 				popularity = 0.1
+			}
 			}
 		}
 	}
@@ -155,6 +169,7 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.8_tt
+			hidden_effect = {
 			add_building_construction = {
 				type = bunker
 				level = 1
@@ -173,6 +188,7 @@ focus_tree={
 				instant_build = yes
 				province = 268
 			}
+			}
 		}
 	}
 	focus={
@@ -189,11 +205,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.9_tt
+			hidden_effect = {
 			61 = {
 		    	add_building_construction = {
 		    		type = infrastructure
 		    		level = 1
 		    	}
+			}
 			}
 		}
 	}
@@ -212,7 +230,7 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.10_tt
-			
+			hidden_effect = {
 			division_template = {
 				name = "守备队"
 				regiments = {
@@ -225,7 +243,7 @@ focus_tree={
 				owner = MEK
 				amount = 1
 			}
-			
+			}
 			
 			
 		}
@@ -244,6 +262,7 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.11_tt
+			hidden_effect = {
 			add_building_construction = {
 				type = bunker
 				level = 1
@@ -274,6 +293,7 @@ focus_tree={
 				instant_build = yes
 				province = 293
 			}
+			}
 		}
 	}
 	focus={
@@ -291,8 +311,10 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.12_tt
+			hidden_effect = {
 			add_political_power = 50
 			add_manpower = 250
+			}
 		}
 	}
 	focus={
@@ -310,11 +332,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.20_tt
+			hidden_effect = {
 			add_political_power = -20
 			send_equipment = {
 				equipment = infantry_equipment_0
 				amount = 300
 				target = MEK
+			}
 			}
 		}
 	}
@@ -334,6 +358,7 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.13_tt
+			hidden_effect = {
 			add_opinion_modifier = {
 				target = FRA
 				modifier = relationship_with_FEA_111
@@ -341,6 +366,7 @@ focus_tree={
 			add_opinion_modifier = {
 				target = ENG
 				modifier = relationship_with_FEA_111
+			}
 			}
 		}
 	}
@@ -364,12 +390,12 @@ focus_tree={
 				    	modifier = { LOCAL_BUILDING_SLOTS_FACTOR = 1 }
 					}
 				}
-			}
-			862 = {
+				862 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
+			}
 			}
 		}
 	}
@@ -387,10 +413,12 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.15_tt
+			hidden_effect = {
 			add_war_support = 0.1
 			add_timed_idea = {
 				idea = MEK_The_dazzling_pearl_of_deutschland
 				days = 360
+			}
 			}
 		}
 	}
@@ -408,11 +436,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.16_tt
+			hidden_effect = {
 			61 = {
 		    	add_building_construction = {
 		    		type = industrial_complex
 		    		level = 1
 		    	}
+			}
 			}
 		}
 	}
@@ -430,11 +460,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.17_tt
+			hidden_effect = {
 			61 = {
 				add_building_construction = {
 		    		type = dockyard
 		    		level = 2
 		    	}
+			}
 			}
 		}
 	}
@@ -452,11 +484,13 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.18_tt
+			hidden_effect = {
 			61 = {
 				add_building_construction = {
 		    		type = dockyard
 		    		level = 1
 		    	}
+			}
 			}
 		}
 	}
@@ -475,9 +509,11 @@ focus_tree={
 		}
 		completion_reward={
 			custom_effect_tooltip = MEK.19_tt
+			hidden_effect = {
 			add_war_support = 0.1
 			add_stability = 0.1
 			add_political_power = 150
+		}
 		}
 	}
 }

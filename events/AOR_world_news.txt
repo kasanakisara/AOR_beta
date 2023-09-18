@@ -343,20 +343,7 @@ news_event = { #中美洲建立
 	}
 }
 
-news_event = { ##魁北克独立 = can.26
-	id = AOR_news.16
-	title = AOR_news.16.t
-	desc = AOR_news.16.d
-	picture = AOR_news.16.p
 
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = AOR_news.16.a
-	}
-}
 
 news_event = { #挪威-瑞典内战新闻 - SWE.1
     id = AOR_news.17
@@ -372,15 +359,173 @@ news_event = { #挪威-瑞典内战新闻 - SWE.1
     }
 }
 
-news_event = { #上西里西亚起义
+news_event = { #阿瑟·米恩上台，前总理退休
 	id = AOR_news.18
 	title = AOR_news.18.t
 	desc = AOR_news.18.d
-
+	picture = GFX_AOR_news.18_pic
 	is_triggered_only = yes 
 	major = yes
 
 	option = {
 		name = AOR_news.18.a
+	}
+}
+
+news_event = { #加拿大1921年大选
+	id = AOR_news.19
+	title = AOR_news.19.t
+	desc = AOR_news.19.d
+	picture = GFX_AOR_news.19_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.19.a
+	}
+}
+
+
+news_event = { #魁北克起义
+	id = AOR_news.20
+	title = AOR_news.20.t
+	desc = AOR_news.20.d
+	picture = GFX_AOR_news.20_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.20.a
+	}
+}
+
+
+news_event = { #巴西内战
+	id = AOR_news.21
+	title = AOR_news.21.t
+	desc = AOR_news.21.d
+	picture = GFX_AOR_news.21_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.21.a
+	}
+}
+
+news_event = { #埃及独立
+	id = AOR_news.22
+	title = AOR_news.22.t
+	desc = AOR_news.22.d
+	picture = GFX_AOR_news.22_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.22.a
+	}
+}
+
+news_event = { #南非总理逝世
+	id = AOR_news.23
+	title = AOR_news.23.t
+	desc = AOR_news.23.d
+	picture = GFX_AOR_news.23_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.23.a
+	}
+}
+
+news_event = { #南非工团
+	id = AOR_news.24
+	title = AOR_news.24.t
+	desc = AOR_news.24.d
+	picture = GFX_AOR_news.24_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.24.a
+	}
+}
+
+news_event = { #滨海州合作政府
+	id = AOR_news.25
+	title = AOR_news.25.t
+	desc = AOR_news.25.d
+	picture = GFX_AOR_news.25_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.25.a
+	}
+}
+
+news_event = { #菲律宾革命
+	id = AOR_news.26
+	title = AOR_news.26.t
+	desc = AOR_news.26.d
+	picture = GFX_AOR_news.26_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.26.a
+	}
+}
+
+news_event = { #菲律宾革命被平息
+	id = AOR_news.27
+	title = AOR_news.27.t
+	desc = AOR_news.27.d
+	picture = GFX_AOR_news.27_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.27.a
+	}
+}
+
+news_event = { #哈康遇刺
+	id = AOR_news.28
+	title = AOR_news.28.t
+	desc = AOR_news.28.d
+	picture = GFX_AOR_news.28_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.28.a
+	}
+}
+
+news_event = { #鲁普雷希特登基
+	id = AOR_news.29
+	title = AOR_news.29.t
+	desc = AOR_news.29.d
+	picture = GFX_AOR_news.29_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.29.a
+	}
+}
+
+news_event = { #袁世凯逝世
+	id = AOR_news.30
+	title = AOR_news.30.t
+	desc = AOR_news.30.d
+	picture = GFX_AOR_news.30_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.30.a
 	}
 }

@@ -58,6 +58,7 @@ country_event = {
 	mark_focus_tree_layout_dirty = yes
 	hidden_effect = {
 	complete_national_focus =  CHI_Yuan_is_dying
+	news_event = { id = AOR_news.30 }
 		}
 	}	
 	option = {

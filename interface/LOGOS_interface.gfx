@@ -326,7 +326,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_gong_hui_ling_dao_pic"
-		texturefile = "gfx/interface/ideas/gong_hui_ling_dao_pic.png"
+		texturefile = "gfx/interface/ideas/AOR_ORA_gong_hui_ling_dao_pic.png"
 	}
 	spriteType = {
 		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic"
@@ -414,5 +414,57 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_AOR_news.16_pic"
 		texturefile = "gfx/event_pictures/AOR_news.16_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.17_pic"
+		texturefile = "gfx/event_pictures/AOR_news.17_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.18_pic"
+		texturefile = "gfx/event_pictures/AOR_news.18_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.19_pic"
+		texturefile = "gfx/event_pictures/AOR_news.19_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.20_pic"
+		texturefile = "gfx/event_pictures/AOR_news.20_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.21_pic"
+		texturefile = "gfx/event_pictures/AOR_news.21_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.22_pic"
+		texturefile = "gfx/event_pictures/AOR_news.22_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.23_pic"
+		texturefile = "gfx/event_pictures/AOR_news.23_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.24_pic"
+		texturefile = "gfx/event_pictures/AOR_news.24_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.25_pic"
+		texturefile = "gfx/event_pictures/AOR_news.25_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.26_pic"
+		texturefile = "gfx/event_pictures/AOR_news.26_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.27_pic"
+		texturefile = "gfx/event_pictures/AOR_news.28_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.29_pic"
+		texturefile = "gfx/event_pictures/AOR_news.29_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.30_pic"
+		texturefile = "gfx/event_pictures/AOR_news.30_pic.png"
 	}
 }

@@ -23,6 +23,7 @@ country_event = {
 
     #那就这样吧  
 	immediate = {
+		news_event = { id = AOR_news.22 }
 		retire_country_leader = yes
 		set_politics = {ruling_party = ISL_democratic}
 		create_country_leader = {
