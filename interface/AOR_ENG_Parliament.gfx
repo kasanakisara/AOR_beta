@@ -1,31 +1,31 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_ENG_Parliament_button"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Parliament_button.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Parliament_button.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_Labour_leader"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Labour_leader.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Labour_leader.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_Leader_of_the_Conservative_Party"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Leader_of_the_Conservative_Party.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Leader_of_the_Conservative_Party.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_Leader_of_the_Liberal_Party"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Leader_of_the_Liberal_Party.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Leader_of_the_Liberal_Party.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_Sinn_Fein_leader"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Sinn_Fein_leader.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Sinn_Fein_leader.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_this_is_an_icon"
-		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_this_is_an_icon.png"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_this_is_an_icon.dds"
 	}
 	progressbartype = {
 		name = "GFX_ENG_blue_progress"
-		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/blue_progress.png"
+		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/blue_progress.dds"
 		textureFile2 = "gfx/interface/absolute_nothing.dds"
 		size = {
 			x = 1000
@@ -36,7 +36,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_ENG_green_progress"
-		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/green_progress.png"
+		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/green_progress.dds"
 		textureFile2 = "gfx/interface/absolute_nothing.dds"
 		size = {
 			x = 1000
@@ -47,7 +47,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_ENG_pink_progress"
-		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/pink_progress.png"
+		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/pink_progress.dds"
 		textureFile2 = "gfx/interface/absolute_nothing.dds"
 		size = {
 			x = 1000
@@ -58,7 +58,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_ENG_yelow_progress"
-		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/yelow_progress.png"
+		textureFile1 = "gfx/AOR_gui/ENG/ENG_Parliament/yelow_progress.dds"
 		textureFile2 = "gfx/interface/absolute_nothing.dds"
 		size = {
 			x = 1000
