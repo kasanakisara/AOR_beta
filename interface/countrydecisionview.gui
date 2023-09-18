@@ -12,17 +12,21 @@ guiTypes = {
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
 		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window2_1b_border"
+		}
 
 		iconType = {
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 10 }
+			position = { x= 5 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}	
 		
 		instantTextboxType = {
 			name = "decisionview_title"
-			position = { x = 45 y = 22 }
+			position = { x = 45 y = 8 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -45,8 +49,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "decision_grid_container"
-			position = {x=5 y=60}
-			size = {width=-1 height=950 } # Y Set in code to match the window size, but initial value is used as extra space in height
+			position = {x=5 y=45}
+			size = {width=-1 height=-10 } # Y Set in code to match the window size, but initial value is used as extra space in height
 			Orientation = upper_left
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 41
@@ -60,7 +64,7 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "decision_grid"
-				position = { x = 0 y = 0 }
+				position = { x = 0 y = 60 }
 				size = { width = 520 height = 100%% }
 				slotsize = { width=502 height=1 }
 				#slotsize = { width = 1 height = 1 }
@@ -97,7 +101,7 @@ guiTypes = {
 			name = "name_text"
 			position = { x = 74 y = 26 }
 			textureFile = ""
-			font = "hoi_24header"
+			font = "hoi_20b"
 			borderSize = { x = 0 y = 0 }
 			text = ""
 			maxWidth = 365
@@ -214,13 +218,13 @@ guiTypes = {
 
 		iconType = {
 			name = "icon_header_bg"
-			position = {x=2 y=45}
+			position = {x=0 y=0}
 			spriteType = "GFX_event_header_bg"
 		}
 
 		instantTextboxType = {
 			name = "name_text"
-			position = { x = 65 y = 75}
+			position = { x = 35 y = 29}
 			textureFile = ""
 			font = "hoi4_typewriter22"
 			borderSize = { x = 0 y = 0 }
@@ -233,7 +237,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "minor_event_checkbox_window"
-			position = {x=190 y=75}
+			position = {x=190 y=35}
 			Orientation = upper_right
 
 
@@ -261,7 +265,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "event_checkbox_window"
-			position = {x=190 y=100}
+			position = {x=190 y=58}
 			Orientation = upper_right
 
 
@@ -289,7 +293,7 @@ guiTypes = {
 		#Grouped text and checkbox for easier positioning
 		containerWindowType = {
 			name = "news_checkbox_window"
-			position = {x=340 y=88}
+			position = {x=340 y=58}
 			Orientation = upper_right
 
 
