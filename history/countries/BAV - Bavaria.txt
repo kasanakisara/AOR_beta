@@ -138,8 +138,8 @@ set_stability = 0.75
 
 	}
 }
-recruit_character = BAV_Karl_Liebknecht
-recruit_character = BAV_Luksemburg
+recruit_character = BAV_Bebel
+
 set_politics = {
 	ruling_party = Marxism
 	last_election = "1936.1.1"
@@ -154,7 +154,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	BAV_soviet_guard
+	Roving_style
+	Extreme_democratic_rampant
 	BAV_the_red_star_in_DEU 
 	BAV_a_deep_cut_from_revolution
 	Compact_of_German_Confederation_1
@@ -165,7 +166,7 @@ add_ideas = {
 oob = "BAV_AOR"
 
 BAV = {
-country_event = { days = 1099 id = BAV.3 }
+country_event = { days = 990 id = BAV.3 }
 }
 
 #create_country_leader = {

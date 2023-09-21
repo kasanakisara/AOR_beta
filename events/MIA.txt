@@ -37,7 +37,7 @@ country_event = {
 		create_country_leader = {
 		name = "Anastasio “Tacho” Somoza García"
 		desc = "POLITICS_Somoza_García_DESC"
-		picture = "Anastasio_“Tacho”_Somoza_García.dds"
+		picture = "Anastasio_“Tacho”_Somoza_García.png"
 		expire = "1945.1.1"
 		ideology = conservatism
 			}
@@ -48,7 +48,7 @@ country_event = {
 		create_country_leader = {
 		name = "Augusto César Sandino"
 		desc = "POLITICS_Augusto_César_Sandino_DESC"
-		picture = "Augusto_César_Sandino.dds"
+		picture = "Augusto_César_Sandino.png"
 		expire = "1945.1.1"
 		ideology = revoway
 			}

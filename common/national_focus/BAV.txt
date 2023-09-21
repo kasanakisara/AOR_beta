@@ -53,10 +53,27 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+		has_country_flag = {
+				flag = BAV_after_train
+				days > 180
+			}
+		custom_trigger_tooltip = {
+				tooltip = BAV_after_train_days_tt
+				has_country_flag = {
+					flag = BAV_after_train
+					days > 180
+				}
+			}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+		remove_idea = Roving_style
+		add_idea = Roving_style_1 
+			}
 		}
 	}
 	focus={
@@ -73,7 +90,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		}
+				swap_ideas = {
+		remove_idea = Extreme_democratic_rampant
+		add_idea = Extreme_democratic_rampant_1
+			}
+		} 	
 	}
 	focus={
 		id=BAV_Transformation_labor
@@ -90,6 +111,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_war_support = 0.05
+		custom_effect_tooltip = BAV.focus.5.tt
+		swap_ideas = {
+		remove_idea = Roving_style_1 
+		add_idea = Roving_style_2
+			}
 		}
 	}
 	focus={
@@ -107,6 +134,14 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_war_support = -0.05
+		add_stability = 0.1
+		add_manpower = -5135
+		custom_effect_tooltip = BAV.focus.6.tt
+		swap_ideas = {
+		remove_idea = Roving_style_1 
+		add_idea = Roving_style_3
+			}
 		}
 	}
 	focus={
@@ -124,6 +159,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+		remove_idea = Extreme_democratic_rampant_1
+		add_idea = Extreme_democratic_rampant_3
+			}
 		}
 	}
 	focus={
@@ -141,6 +180,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+		remove_idea = Extreme_democratic_rampant_1
+		add_idea = Extreme_democratic_rampant_2
+			}
 		}
 	}
 	focus={
@@ -148,8 +191,7 @@ focus_tree={
 		icon = GFX_goal_BAV_Allied_steel
 		x=2
 		y=5
-		prerequisite={focus=BAV_Army_shepherd}
-		prerequisite={focus=BAV_Former_party_member}
+		prerequisite={focus=BAV_Army_shepherd focus=BAV_Former_party_member}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -158,6 +200,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_war_support = 0.05
+		army_experience = 5
+		if = {
+			limit = {
+				NOT = { has_idea = Extreme_democratic_rampant_2 } 
+
+			}
+			swap_ideas = {
+			remove_idea = Extreme_democratic_rampant_3
+			add_idea = Extreme_democratic_rampant_5			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = Extreme_democratic_rampant_2
+			add_idea = Extreme_democratic_rampant_4		
+				}
+			}
 		}
 	}
 	focus={
@@ -165,8 +225,7 @@ focus_tree={
 		icon = GFX_goal_BAV_People_guard
 		x=8
 		y=5
-		prerequisite={focus=BAV_Renounce_nobility_once}
-		prerequisite={focus=BAV_Transformation_labor}
+		prerequisite={focus=BAV_Renounce_nobility_once focus=BAV_Transformation_labor}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -175,6 +234,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability = 0.05
+		army_experience = 5
+		if = {
+			limit = {
+				NOT = { has_idea = Roving_style_2 } 
+
+			}
+			swap_ideas = {
+			remove_idea = Roving_style_3
+			add_idea = Roving_style_5			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = Roving_style_2
+			add_idea = Roving_style_4		
+				}
+			}
 		}
 	}
 	focus={
@@ -191,6 +268,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability  = 0.1
+		add_political_power = 120
 		}
 	}
 	focus={
@@ -207,6 +286,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_manpower = -851
+		swap_ideas = {
+			remove_idea = BAV_dying_bureaucracy
+			add_idea = BAV_dying_bureaucracy_1			
+		}
+
 		}
 	}
 	focus={
@@ -215,6 +300,7 @@ focus_tree={
 		x=13
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
+		mutually_exclusive={focus =BAV_New_people_waiter}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -223,6 +309,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability  = 0.15
+		swap_ideas = {
+			remove_idea = BAV_dying_bureaucracy_1
+			add_idea = BAV_dying_bureaucracy_3	
+		}
 		}
 	}
 	focus={
@@ -231,6 +322,7 @@ focus_tree={
 		x=17
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
+		mutually_exclusive={focus =BAV_New_regulation}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -239,6 +331,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability  = 0.05
+		swap_ideas = {
+			remove_idea = BAV_dying_bureaucracy_1
+			add_idea = BAV_dying_bureaucracy_2
+		}
 		}
 	}
 	focus={
@@ -246,8 +343,7 @@ focus_tree={
 		icon = GFX_goal_BAV_New_Soviet_government
 		x=15
 		y=5
-		prerequisite={focus=BAV_New_people_waiter}
-		prerequisite={focus=BAV_New_regulation}
+		prerequisite={focus=BAV_New_people_waiter focus=BAV_New_regulation}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -256,6 +352,17 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability  = 0.05
+		hidden_effect = {
+		swap_ideas = {
+			remove_idea = BAV_dying_bureaucracy_2
+			add_idea = BAV_Spartacist_bureaucracy
+		}
+		}
+		swap_ideas = {
+			remove_idea = BAV_dying_bureaucracy_3
+			add_idea = BAV_Spartacist_bureaucracy
+		}
 		}
 	}
 	focus={
@@ -288,6 +395,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		 country_event = { id = BAV.4 }
+        add_timed_idea = {
+            days = 180
+            idea = BAV_Economic_restructuring
+			}
 		}
 	}
 	focus={
@@ -304,6 +416,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		country_event = BAV.6
 		}
 	}
 	focus={
@@ -320,6 +433,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		country_event = BAV.8
 		}
 	}
 	focus={
@@ -336,6 +450,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_manpower = -210
+		custom_effect_tooltip = BAV.focus.2.tt
+		custom_effect_tooltip = BAV.focus.3.tt
 		}
 	}
 	focus={
@@ -352,6 +469,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_manpower = 5452
+		country_event = BAV.7
+		add_ideas = BAV_labor_liberal_females_1
 		}
 	}
 	focus={
@@ -368,6 +488,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = BAV_pour_fire
 		}
 	}
 	focus={
@@ -384,6 +505,23 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability = 0.05
+		if = {
+			limit = {
+				NOT = { has_idea = BAV_a_deep_cut_from_revolution_2 } 
+
+			}
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution
+			add_idea = BAV_a_deep_cut_from_revolution_1			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution_2
+			add_idea = BAV_a_deep_cut_from_revolution_3		
+				}
+			}
 		}
 	}
 	focus={
@@ -401,6 +539,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = BAV_Peoples_Commune
 		}
 	}
 	focus={
@@ -417,6 +556,14 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		52 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+			}
+		}
 		}
 	}
 	focus={
@@ -433,6 +580,22 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		if = {
+			limit = {
+				NOT = { has_idea = BAV_a_deep_cut_from_revolution_1 } 
+
+			}
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution
+			add_idea = BAV_a_deep_cut_from_revolution_2			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution_1
+			add_idea = BAV_a_deep_cut_from_revolution_3		
+				}
+			}
 		}
 	}
 	focus={
@@ -441,6 +604,7 @@ focus_tree={
 		x=32
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
+		mutually_exclusive={focus =BAV_Command_production}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -449,6 +613,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = BAV_product_by_democracy
 		}
 	}
 	focus={
@@ -457,6 +622,7 @@ focus_tree={
 		x=36
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
+		mutually_exclusive={focus =BAV_Democratic_production}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -465,6 +631,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = BAV_product_in_command
 		}
 	}
 	focus={
@@ -473,6 +640,7 @@ focus_tree={
 		x=38
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
+		mutually_exclusive={focus =BAV_Limited_trade}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -481,6 +649,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = BAV.focus.4.tt
 		}
 	}
 	focus={
@@ -489,6 +658,7 @@ focus_tree={
 		x=42
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
+		mutually_exclusive={focus =BAV_Withdrawal_imperial_exchange}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -497,6 +667,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = limited_exports
 		}
 	}
 	focus={
@@ -504,10 +675,8 @@ focus_tree={
 		icon = GFX_goal_BAV_Coowned_factory
 		x=37
 		y=5
-		prerequisite={focus=BAV_Democratic_production}
-		prerequisite={focus=BAV_Command_production}
-		prerequisite={focus=BAV_Withdrawal_imperial_exchange}
-		prerequisite={focus=BAV_Limited_trade}
+		prerequisite={focus=BAV_Democratic_production focus=BAV_Command_production}
+		prerequisite={focus=BAV_Withdrawal_imperial_exchange focus=BAV_Limited_trade}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -516,6 +685,14 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		52 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+			}
+		}
 		}
 	}
 	focus={
@@ -536,6 +713,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		country_event = BAV.5
+		remove_ideas = BAV_a_deep_cut_from_revolution_3
 		}
 	}
 	focus={
@@ -552,6 +731,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = BAV.focus.1.tt
 		}
 	}
 }

@@ -179,4 +179,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/AOR_news_headers/dikang_picture.png"
 		legacy_lazy_load = no 
 	}
+	
+	############红旗报#####################
+	spriteType = {  ##红旗报 - header
+		name = "GFX_custom_header_hongqi_news_header"
+		textureFile = "gfx/interface/AOR_news_headers/hongqibao_title.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_custom_header_hongqi_news_pic"
+		textureFile = "gfx/interface/AOR_news_headers/hongqibao_picture.png"
+		legacy_lazy_load = no 
+	}
 }

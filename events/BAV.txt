@@ -45,3 +45,76 @@ country_event = {
 		name = BAV.3.a
 	}
 }
+
+#共产国际的电报#
+country_event = { 
+	id = BAV.4
+	title = BAV.4.t
+	desc = BAV.4.d
+	picture = GFX_BAV.4_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.4.a
+	}
+}
+
+#德意志的新生#
+country_event = { 
+	id = BAV.5
+	title = BAV.5.t
+	desc = BAV.5.d
+	picture = GFX_BAV.5_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.5.a
+	}
+}
+#卢森堡的见闻#
+country_event = { 
+	id = BAV.6
+	title = BAV.6.t
+	desc = BAV.6.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.6.a
+	}
+}
+
+#妇女的解放#
+country_event = { 
+	id = BAV.7
+	title = BAV.7.t
+	desc = BAV.7.d
+	picture = GFX_BAV.7_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.7.a
+	}
+}
+
+country_event = { 
+	id = BAV.8
+	title = BAV.8.t
+	desc = BAV.8.d
+	picture = GFX_BAV.8_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.8.a
+	}
+}

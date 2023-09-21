@@ -23,7 +23,6 @@ defined_text = {
                 original_tag = KSH
                 original_tag = HAN
                 original_tag = WUR      
-                original_tag = BAV
                 original_tag = RHI 
                 original_tag = PRE
                 original_tag = SIL
@@ -38,7 +37,12 @@ defined_text = {
         }
         localization_key = AOR_deyizhi_news_header
     }
-
+    text = {
+        trigger = {  ##红旗报
+            original_tag = BAV
+        }
+        localization_key = AOR_hongqi_news_header
+    }
     text = {
         trigger = {  ##人民观察家报
             original_tag = WUR
@@ -164,7 +168,12 @@ defined_text = {
         }
         localization_key = AOR_deyizhi_news_pic
     }
-
+    text = {
+        trigger = {  ##红旗报 - pic
+            original_tag = BAV
+        }
+        localization_key = AOR_hongqi_news_pic
+    }
     text = { ##大不列颠报 - pic 
         trigger = { 
             original_tag = ENG

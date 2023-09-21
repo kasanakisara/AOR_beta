@@ -29,5 +29,19 @@ characters = {
 			id=-1
 		}
 	}
-
+	BAV_Bebel={
+		name= "August Bebel"
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/Bebel.dds"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "BAV_R_L_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }
