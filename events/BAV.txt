@@ -105,6 +105,7 @@ country_event = {
 	}
 }
 
+#李卜克内西的一日
 country_event = { 
 	id = BAV.8
 	title = BAV.8.t
@@ -116,5 +117,37 @@ country_event = {
       
 	option = {
 		name = BAV.8.a
+	}
+}
+
+#检测180天后修正德国革命创伤
+country_event = { 
+	id = BAV.9
+	title = BAV.9.t
+	desc = BAV.9.d
+	picture = GFX_BAV.9_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+    immediate = {
+		if = {
+			limit = {
+				NOT = { has_idea = BAV_a_deep_cut_from_revolution_2 } 
+
+			}
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution
+			add_idea = BAV_a_deep_cut_from_revolution_1			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution_2
+			add_idea = BAV_a_deep_cut_from_revolution_3		
+				}
+			}
+	}		
+	option = {
+		name = BAV.9.a
 	}
 }

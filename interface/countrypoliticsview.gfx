@@ -43,7 +43,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/government_in_exile/reinstate_button.dds"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_idea_slot_second_leader"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"

@@ -554,10 +554,10 @@ ideas = {
 			picture = idea_BAV_a_deep_cut_from_revolution
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.3
 				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.15
 			}
 		}
 		
@@ -584,10 +584,10 @@ ideas = {
 			picture = idea_BAV_a_deep_cut_from_revolution
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.3
 				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.15
 			}
 		}
 
