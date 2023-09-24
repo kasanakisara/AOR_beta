@@ -1,0 +1,33 @@
+add_namespace = BA1
+
+country_event = {
+	id = BAV.10000 #堂堂归乡
+	title = BAV.10000.t
+	desc = BAV.10000.d
+	picture = GFX_Portrait_of_Tirpitz
+
+      trigger = {
+		controls_state = 53
+		controls_state = 863
+		controls_state = 861
+		controls_state = 52
+	  }
+
+	option = {
+		name = BAV.10000.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = patriarch
+		}
+		create_country_leader = {
+			name = "Rupprecht_Ferdinand"
+			desc = "Rupprecht_Ferdinand_DESC"
+			picture = "portrait_Rupprecht_Ferdinand.dds"
+			expire = "1955.1.1"
+			ideology = patriarch
+			traits = {
+				great_war_hero
+			}
+		}
+	}
+}
