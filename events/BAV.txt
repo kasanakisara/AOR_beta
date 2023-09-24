@@ -43,6 +43,11 @@ country_event = {
       
 	option = {
 		name = BAV.3.a
+		kill_country_leader = yes
+		promote_character = {
+				character = BAV_Mehring
+				ideology =revolutionism
+			} 
 	}
 }
 

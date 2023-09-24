@@ -1,23 +1,15 @@
 leader_traits = {
-	
-	#克里蒙梭胜利之父
-	FRA_father_DE_victory = {
-		random = no
-		stability_factor = 0.05
-		drift_defence_factor = 1.0
-	}
 	#克里蒙梭铁腕总理
 	FRA_iron_wrist = {
 		random = no
-		political_power_factor = 0.25
+		political_power_factor = 0.05
 		marxism_acceptance = -100
-		non_core_manpower = 0.02
 	}
 	#克里蒙梭鹰派巨头
 	FRA_WAR_BIG_WHEEL = {
 		random = no
-		war_support_factor = 0.20
-		command_power_gain = 0.10
-		mobilization_laws_cost_factor = -0.10
+		war_support_factor = 0.1
+		stability_factor = -0.15
+		drift_defence_factor = 0.5
 	}
 }

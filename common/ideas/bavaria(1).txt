@@ -619,6 +619,17 @@ ideas = {
 			}
 		}
 		
+		BAV_labor_reform = {
+			allowed = {
+				original_tag = BAV
+				always = no
+			}
+			picture = GFX_idea_BAV_labor_reform
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.005
+			}
+		}
 		#旧官僚
 		
 		BAV_dying_bureaucracy= {

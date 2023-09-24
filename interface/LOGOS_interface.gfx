@@ -201,13 +201,85 @@ spriteTypes = {
 		name = "GFX_portrait_MXS_Carlota"
 		texturefile = "gfx/leaders/MXS/Charlotte.png"
 	}
-	#炸弹狂热
+	#巴伐利亚将领
+	spriteType = { 
+		name = "GFX_portrait_friedrich_dollma"
+		texturefile = "gfx/leaders/BAV/portrait_friedrich_dollma.png"
+	}
+	spriteType = { 
+		name = "GFX_portrait_Hans_Gunther_van_Hooven"
+		texturefile = "gfx/leaders/BAV/portrait_Hans_Gunther_van_Hooven.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Ludwig_Beck"
+		texturefile = "gfx/leaders/BAV/portrait_Ludwig_Beck.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Walther_von_Kurzbach"
+		texturefile = "gfx/leaders/BAV/portrait_Walther_von_Kurzbach.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Vincenz_Muller"
+		texturefile = "gfx/leaders/BAV/portrait_Vincenz_Muller.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Rupprecht_Ferdinand"
+		texturefile = "gfx/leaders/BAV/portrait_Rupprecht_Ferdinand.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Walter_von_Reichenau"
+		texturefile = "gfx/leaders/BAV/portrait_Walter_von_Reichenaui.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_BAV_Wilhelm_Pieck"
+		texturefile = "gfx/leaders/BAV/portrait_BAV_Wilhelm_Pieck.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Ernst_Thalmann"
+		texturefile = "gfx/leaders/BAV/akpep-paw5g.dds"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Eugen_Levine"
+		texturefile = "gfx/leaders/BAV/portrait_Eugen_Levine.png"
+	}
+
+
+
+
+
+
+
+	#特质
     SpriteType = {
 		name = "GFX_trait_ORA_Crazy_Bomber"
 		texturefile = "gfx/interface/traits/personal/trait_ORA_Crazy_Bomber.png"
 		
 	}
-	
+	SpriteType = {
+		name = "GFX_trait_BAV_committed_revolutionary"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_committed_revolutionary.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_old_order"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_old_order.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_vicar_of_Bray"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_vicar_of_Bray.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_labor_reform_2"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_labor_reform_2.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_labor_reform_1"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_labor_reform_1.png"
+		
+	}
 	#工团决议图标
 	SpriteType = {
 		name = "GFX_decision_category_syn"

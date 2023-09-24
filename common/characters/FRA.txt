@@ -9,7 +9,7 @@ characters = {
 		country_leader={
 			ideology = liberalism
 			desc = "Georges_Clemenceau_DESC"
-			traits={ FRA_father_DE_victory
+			traits={ 
 				   FRA_iron_wrist
 				   FRA_WAR_BIG_WHEEL }
 			expire="1965.1.1.1"
