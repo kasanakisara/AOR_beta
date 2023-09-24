@@ -7,6 +7,7 @@ country_event = {
 	picture = GFX_Portrait_of_Tirpitz
 
       trigger = {
+		has_country_flag = tangtangguixixang
 		controls_state = 53
 		controls_state = 863
 		controls_state = 861
@@ -15,10 +16,6 @@ country_event = {
 
 	option = {
 		name = BAV.10000.a
-		kill_country_leader = yes
-		set_politics = {
-			ruling_party = patriarch
-		}
 		create_country_leader = {
 			name = "Rupprecht_Ferdinand"
 			desc = "Rupprecht_Ferdinand_DESC"
