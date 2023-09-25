@@ -89,24 +89,6 @@ small = GFX_portrait_Vincenz_Muller_small
 			legacy_id = -1
 		}
 	}
-Rupprecht_Ferdinand= { 
-		name = Rupprecht_Ferdinand
-		portraits = {
-			army = {
-				large = GFX_portrait_Rupprecht_Ferdinand
-small = GFX_portrait_Rupprecht_Ferdinand_small
-			}
-		}
-		field_marshal = {
-			traits = { BAV_old_order career_officer inflexible_strategist media_personality politically_connected old_guard }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-		}
-	}
 Walter_von_Reichenau= { 
 		name = Walter_von_Reichenau
 		portraits = {
@@ -118,8 +100,8 @@ small = GFX_portrait_Walter_von_Reichenau_small
 		field_marshal = {
 			traits = {BAV_old_order old_guard career_officer trait_engineer }
 			skill = 4
-			attack_skill = 2
-			defense_skill = 3
+			attack_skill = 5
+			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 5
 			legacy_id = -1
