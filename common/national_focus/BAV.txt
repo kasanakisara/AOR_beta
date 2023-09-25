@@ -105,6 +105,7 @@ focus_tree={
 		remove_idea = Extreme_democratic_rampant
 		add_idea = Extreme_democratic_rampant_1
 			}
+		set_country_flag = BAV_after_train
 		} 	
 	}
 	focus={
@@ -130,7 +131,7 @@ focus_tree={
 		add_idea = Roving_style_2
 			}
 		hidden_effect = {
-		random_list = { 30 = { retire_character = friedrich_dollma} 40 = { retire_character = Rupprecht_Ferdinand} 30 = { retire_character = Walter_von_Reichenau}}
+		random_list = { 15 = { retire_character = friedrich_dollma} 70 = { retire_character = Rupprecht_Ferdinand} 15 = { retire_character = Walter_von_Reichenau}}
 		Walther_von_Kurzbach = {
 			add_timed_unit_leader_trait = {
 					trait = BAV_labor_reform_1

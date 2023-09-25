@@ -48,6 +48,9 @@ country_event = {
 				character = BAV_Mehring
 				ideology =revolutionism
 			} 
+		hidden_effect = {
+		news_event = { days = 7 id = AOR_news.31}
+		}
 	}
 }
 

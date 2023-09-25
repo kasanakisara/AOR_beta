@@ -529,3 +529,29 @@ news_event = { #袁世凯逝世
 		name = AOR_news.30.a
 	}
 }
+
+news_event = { #倍倍尔逝世
+	id = AOR_news.31
+	title = AOR_news.31.t
+	desc = AOR_news.31.d
+	picture = GFX_AOR_news.31_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.31.a
+		trigger = {has_government = Marxism}
+	}
+	option = {
+		name = AOR_news.31.b
+		trigger = {
+			NOT = 	{
+			has_government = Marxism
+			}
+		}
+	}
+	option = {
+		name = AOR_news.31.d
+		trigger = {has_government = Anarcho}
+	}
+}

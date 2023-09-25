@@ -539,8 +539,36 @@ spriteTypes = {
 		name = "GFX_AOR_news.30_pic"
 		texturefile = "gfx/event_pictures/AOR_news.30_pic.png"
 	}
+		spriteType = {
+		name = "GFX_AOR_news.31_pic"
+		texturefile = "gfx/event_pictures/AOR_news.31_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.32_pic"
+		texturefile = "gfx/event_pictures/AOR_news.32_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.33_pic"
+		texturefile = "gfx/event_pictures/AOR_news.33_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.34_pic"
+		texturefile = "gfx/event_pictures/AOR_news.34_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.35_pic"
+		texturefile = "gfx/event_pictures/AOR_news.35_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.36_pic"
+		texturefile = "gfx/event_pictures/AOR_news.36_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.37_pic"
+		texturefile = "gfx/event_pictures/AOR_news.37_pic.png"
+	}
 	
-	#巴伐利亚民族精神
+	#巴伐利亚第一阶段国策
 spriteType = {
   name = "GFX_goal_BAV_civil_War_gone"
   texturefile = "gfx/interface/goals/BAV_civil_War_gone.png"

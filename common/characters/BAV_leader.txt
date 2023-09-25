@@ -54,7 +54,7 @@ characters = {
 		}
 		country_leader={
 			ideology = revolutionism
-			desc = "BAV_BEBEL_DESC"
+			desc = "BAV_Mehring_DESC"
 			traits={Defend_revolution heart_exhausted}
 			expire="1965.1.1.1"
 			id=-1
