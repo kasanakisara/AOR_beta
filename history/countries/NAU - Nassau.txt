@@ -170,37 +170,15 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Karl Radek"
-	desc = "NAU_K_R_DESC"
-	picture = "awr2s-ecwpi.dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
-	traits = {
-	}
-}
 
-create_country_leader = {
-	name = "Erich Von Ludendorff"
-	desc = "NAU_E_V_L_DESC"
-	picture = "aw3nq-kbu7m.dds"
-	expire = "1965.1.1"
-	ideology = revengim
-	traits = {
-	}
-}
 
-create_country_leader = {
-	name = "Gregor Strasser"
-	desc = "NAU_G_S_DESC"
-	picture = "a01zx-ak8yo.dds"
-	expire = "1965.1.1"
-	ideology = strasser
-	traits = {
-	}
-}
 
-create_country_leader = {
+
+
+
+
+
+	create_country_leader = {
 	name = "Otto Strasser"
 	desc = "NAU_O_S_DESC"
 	picture = "afft4-yxnoi.dds"
@@ -210,25 +188,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "NAU_A_H_DESC"
-	picture = "a9cpc-kcpx7.dds"
-	expire = "1965.1.1"
-	ideology = NSDAP
-	traits = {
-	}
-}
 
-create_country_leader = {
-	name = "Eduard Bernstein"
-	desc = "NAU_E_B_DESC"
-	picture = "asao5-vflkt.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-	}
-}
 
 create_country_leader = {
 	name = "Ernst Nieksch"

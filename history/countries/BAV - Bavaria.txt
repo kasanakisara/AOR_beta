@@ -85,7 +85,6 @@ recruit_character = Hans_Gunther_van_Hooven
 recruit_character = Ludwig_Beck
 recruit_character = Walther_von_Kurzbach
 recruit_character = Vincenz_Muller
-recruit_character = Rupprecht_Ferdinand
 recruit_character = Walter_von_Reichenau
 recruit_character = Wilhelm_Pieck
 recruit_character = Ernst_Thalmann
@@ -128,6 +127,7 @@ oob = "BAV_AOR"
 
 BAV = {
 country_event = { days = 1001 id = BAV.3 }
+country_event = { days = 1 id = BAV.1 }
 }
 
 #create_country_leader = {

@@ -81,7 +81,18 @@ country_event = {
 		country_event = { days = 3 id = NAU.7 }
 		country_event = { days = 4 id = NAU.8 }
 		}
-		
+		hidden_effect = {
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "State of Emergency"
+		desc = "POLITICS_Emergency_DESC"
+		picture = "gfx/leaders/NAU/emg.png"
+		expire = "1965.1.1"
+		ideology = miliciagov
+		traits = {
+				}
+			}
+		}
 	}
 }
 
@@ -167,39 +178,168 @@ country_event = {
 	option = { #拉狄克和伯恩施坦
 		name = NAU.10.a
 		ai_chance = { factor = 50 }	
-		complete_national_focus =  NAU_Burning_City_Hall_1
 		trigger = {
 					has_country_flag = NAU_renmin
 		}
-		hidden_effect = {
-		load_focus_tree = NAU_LEFT
-		set_politics = {ruling_party = Marxism}
-
-		}
+		country_event = NAU.11
 	}
+
 	option = { #希特勒和史特拉瑟
 		name = NAU.10.b
 		ai_chance = { factor = 50 }	
-		complete_national_focus =  NAU_Burning_City_Hall_2
 		trigger = {
 					has_country_flag = NAU_renmin
 		}
-		hidden_effect = {
-		load_focus_tree = NAU_RIGHT
-		set_politics = {ruling_party = Fascism}
-		}
+		country_event = NAU.12
 	}
 	option = { #塞克特和鲁登道夫
 		name = NAU.10.c
 		ai_chance = { factor = 50 }	
-		complete_national_focus =  NAU_Burning_City_Hall
 		trigger = {
 					has_country_flag = NAU_guojia
 		}
+		country_event = NAU.13
+	}
+
+}
+
+country_event = {
+	id = NAU.11 #赤卫队稳定了局势
+	title = NAU.11.t
+	desc = NAU.11.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = { #拉狄克
+		name = NAU.11.a
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_LEFT
+		set_politics = {ruling_party = Marxism}
+		complete_national_focus = NAU_Burning_City_Hall_1
+		create_country_leader = {
+		name = "Karl Radek"
+		desc = "NAU_K_R_DESC"
+		picture = "awr2s-ecwpi.dds"
+		expire = "1965.1.1"
+		ideology = revolutionism
+		traits = {
+			}
+		}
+
+		}
+	}
+	option = { #伯恩施坦
+		name = NAU.11.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_LEFT
+		set_politics = {ruling_party = SOC_democratic}
+		complete_national_focus = NAU_Burning_City_Hall_1
+		create_country_leader = {
+		name = "Eduard Bernstein"
+		desc = "NAU_E_B_DESC"
+		picture = "asao5-vflkt.dds"
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+				}
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = NAU.12 #冲锋队夺下了旗帜
+	title = NAU.12.t
+	desc = NAU.12.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = { #希特勒
+		name = NAU.12.a
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_RIGHT
+		set_politics = {ruling_party = Fascism}
+		complete_national_focus = NAU_Burning_City_Hall
+		create_country_leader = {
+		name = "Adolf Hitler"
+		desc = "NAU_A_H_DESC"
+		picture = "a9cpc-kcpx7.dds"
+		expire = "1965.1.1"
+		ideology = NSDAP
+		traits = {
+				}
+			}
+		}
+	}
+	option = { #史特拉瑟
+		name = NAU.12.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_RIGHT
+		set_politics = {ruling_party = Fascism}
+		complete_national_focus = NAU_Burning_City_Hall
+create_country_leader = {
+	name = "Gregor Strasser"
+	desc = "NAU_G_S_DESC"
+	picture = "a01zx-ak8yo.dds"
+	expire = "1965.1.1"
+	ideology = strasser
+	traits = {
+	}
+}
+		}
+	}
+}
+
+country_event = {
+	id = NAU.13 #准军事组织带来了稳定
+	title = NAU.13.t
+	desc = NAU.13.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = { #塞克特
+		name = NAU.13.a
+		ai_chance = { factor = 50 }	
 		hidden_effect = {
 		load_focus_tree = NAU_MID
 		set_politics = {ruling_party = Absolutism}
+		complete_national_focus = NAU_Burning_City_Hall_2
+		create_country_leader = {
+	name = "Johannes von Seeckt"
+	desc = "NAU_J_V_S_DESC"
+	picture = "HANS.dds"
+	expire = "1965.1.1"
+	ideology = miliciagov
+	traits = {
+	}
+}
 		}
 	}
-
+	option = { #鲁登道夫
+		name = NAU.13.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_MID
+		set_politics = {ruling_party = Special}
+		complete_national_focus = NAU_Burning_City_Hall_2
+		create_country_leader = {
+	name = "Erich Von Ludendorff"
+	desc = "NAU_E_V_L_DESC"
+	picture = "aw3nq-kbu7m.dds"
+	expire = "1965.1.1"
+	ideology = revengism
+	traits = {
+	}
+}
+		}
+	}
 }

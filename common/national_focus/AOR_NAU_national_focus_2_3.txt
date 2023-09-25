@@ -1,13 +1,13 @@
 focus_tree={
-id = NAU_RIGHT
+	id = NAU_MID
 	country={
 		factor=0
 		modifier={
-			add=10
+			add=15
 			tag=nau
 		}
 	}
-	default=no
+	continuous_focus_position = { x = 1500  y = 2000 } 
 	focus={
 		id=NAU_Burning_City_Hall_2
 		x=7
@@ -20,6 +20,7 @@ id = NAU_RIGHT
 		search_filters={
 		}
 		completion_reward={
+		
 		}
 	}
 	focus={

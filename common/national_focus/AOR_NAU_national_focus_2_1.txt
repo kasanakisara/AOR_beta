@@ -1,13 +1,13 @@
 focus_tree={
-id = NAU_MID
+	id = NAU_RIGHT
 	country={
 		factor=0
 		modifier={
-			add=10
+			add=15
 			tag=nau
 		}
 	}
-	default=no
+	continuous_focus_position = { x = 1500  y = 2000 } 
 	focus={
 		id=NAU_Burning_City_Hall
 		x=6
@@ -20,6 +20,7 @@ id = NAU_MID
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = NAU.focus.1.tt
 		}
 	}
 	focus={
@@ -35,6 +36,42 @@ id = NAU_MID
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = create_four_Imperial_Division_tt
+			hidden_effect = {
+			set_division_template_lock = {
+				division_template = "冲锋队"
+				is_locked = yes
+				force_allow_recruiting = no
+			}
+			division_template = {
+				name = "冲锋队"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery = { x = 0 y = 3 }
+					artillery = { x = 1 y = 3 }
+					artillery = { x = 2 y = 3 }
+
+				}
+				support = { 
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1}
+				} 
+			}
+			create_unit = {
+				division = "name = \"帝国师\" division_template = \"帝国师\" start_experience_factor = 0.5 start_equipment_factor = 1"
+				owner = NAU
+				amount = 2
+			}
+		}
 		}
 	}
 	focus={

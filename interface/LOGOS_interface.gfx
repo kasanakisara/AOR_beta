@@ -568,6 +568,42 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.37_pic.png"
 	}
 	
+	#巴苏事件图片
+		spriteType = {
+		name = "GFX_BAV.1_pic"
+		texturefile = "gfx/event_pictures/BAV.1_pic.png"
+	}
+		spriteType = {
+		name = "GFX_BAV.2_pic"
+		texturefile = "gfx/event_pictures/BAV.2_pic.png"
+	}
+	spriteType = {
+		name = "GFX_BAV.3_pic"
+		texturefile = "gfx/event_pictures/BAV.3_pic.png"
+	}
+		spriteType = {
+		name = "GFX_BAV.4_pic"
+		texturefile = "gfx/event_pictures/BAV.4_pic.png"
+	}
+			spriteType = {
+		name = "GFX_BAV.5_pic"
+		texturefile = "gfx/event_pictures/BAV.5_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.6_pic"
+		texturefile = "gfx/event_pictures/BAV.6_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.7_pic"
+		texturefile = "gfx/event_pictures/BAV.7_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.8_pic"
+		texturefile = "gfx/event_pictures/BAV.8_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV9_pic"
+		texturefile = "gfx/event_pictures/BAV.9_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.10_pic"
+		texturefile = "gfx/event_pictures/BAV.10_pic.png"
+	}
 	#巴伐利亚第一阶段国策
 spriteType = {
   name = "GFX_goal_BAV_civil_War_gone"
@@ -701,4 +737,6 @@ spriteType = {
   name = "GFX_goal_BAV_flames_of_revolution_continue_unabated"
   texturefile = "gfx/interface/goals/BAV_flames_of_revolution_continue_unabated.png"
  }
+ 
+ 
 }
