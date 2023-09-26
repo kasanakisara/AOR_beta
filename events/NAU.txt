@@ -267,14 +267,18 @@ country_event = {
 		load_focus_tree = NAU_RIGHT
 		set_politics = {ruling_party = Fascism}
 		complete_national_focus = NAU_Burning_City_Hall
+		complete_national_focus = NAU_Prime_Minister_Adolf
 		create_country_leader = {
 		name = "Adolf Hitler"
 		desc = "NAU_A_H_DESC"
 		picture = "a9cpc-kcpx7.dds"
 		expire = "1965.1.1"
 		ideology = NSDAP
-		traits = {
-				}
+		traits = {}
+			}
+		set_cosmetic_tag = NAU_FXS_1
+		HAN = {
+			country_event = { days = 200 id = HAN.2 }
 			}
 		}
 	}
@@ -285,15 +289,19 @@ country_event = {
 		load_focus_tree = NAU_RIGHT
 		set_politics = {ruling_party = Fascism}
 		complete_national_focus = NAU_Burning_City_Hall
-create_country_leader = {
-	name = "Gregor Strasser"
-	desc = "NAU_G_S_DESC"
-	picture = "a01zx-ak8yo.dds"
-	expire = "1965.1.1"
-	ideology = strasser
-	traits = {
-	}
-}
+		complete_national_focus = NAU_Prime_Minister_Strasser
+		create_country_leader = {
+		name = "Gregor Strasser"
+		desc = "NAU_G_S_DESC"
+		picture = "a01zx-ak8yo.dds"
+		expire = "1965.1.1"
+		ideology = strasser
+		traits = {}
+				}
+		set_cosmetic_tag = NAU_FXS_2
+		HAN = {
+			country_event = { days = 200 id = HAN.2 }
+			}
 		}
 	}
 }
@@ -340,6 +348,76 @@ country_event = {
 	traits = {
 	}
 }
+		}
+	}
+}
+	country_event = {
+	id = NAU.14 #体育馆演讲
+	title = NAU.14.t
+	desc = NAU.14.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.14.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.15 #元首而非基督
+	title = NAU.15.t
+	desc = NAU.15.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.15.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.16 #清洗吸血资本
+	title = NAU.16.t
+	desc = NAU.16.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.16.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.17 #再塑大地
+	title = NAU.17.t
+	desc = NAU.17.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.17.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.18 # “德意志式的团结”
+	title = NAU.18.t
+	desc = NAU.18.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.18.a
+		ai_chance = { factor = 10 }	
 		}
 	}
 }

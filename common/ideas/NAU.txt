@@ -387,5 +387,157 @@ ideas = {
 		        drift_defence_factor = -0.5
 			}
 		}
+
+		NAU_war_fan = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_war_fan
+			
+			modifier = {
+				war_support_weekly = 0.001
+				monthly_population = 0.01
+			}
+		}
+		NAU_rob_youtai = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_rob_youtai
+			
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NAU_blood_and_soil_idea = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_blood_and_soil_idea
+			
+			modifier = {
+				monthly_population = 0.25
+				consumer_goods_factor = -0.02
+			}
+		}
+		NAU_commissar = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_commissar
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		NAU_youth = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_youth
+			
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.05
+				political_power_gain = 0.01
+				Fascism_drift = 0.05
+			}
+		}
+		NAU_unions= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_unions
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		NAU_control_church= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_control_church
+			
+			modifier = {
+				army_org_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		NAU_repu= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_repu
+			
+			modifier = {
+				monthly_population =  0.1
+				stability_factor = 0.05
+			}
+		}
+		NAU_german_labor= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_german_labor
+			
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				industrial_capacity_factory = 0.075
+				political_power_factor = -0.15
+			}
+		}
+		NAU_national_mention= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_national_mention
+			
+			modifier = {
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				mobilization_speed = 0.2
+			}
+		}
+		NAU_party= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_national_mention
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.03
+				Fascism_drift = 0.05
+			}
+		}
+		NAU_reform= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_national_mention
+			
+			modifier = {
+				conscription_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		NAU_comm_nation= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_national_mention
+			
+			modifier = {
+				local_resources_factor = 0.05
+				industrial_capacity_factory =  0.1
+				monthly_population = 0.1
+			}
+		}
 	}
 }

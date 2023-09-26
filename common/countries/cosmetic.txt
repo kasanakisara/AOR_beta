@@ -852,3 +852,13 @@ MXS_2 = {
 	color_ui = rgb {  46 139 87}
 }
 
+NAU_FXS_1 = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+NAU_FXS_2 = {
+	color = rgb {84 10 10 }
+	color_ui = rgb { 115 115 115 }
+}
+

@@ -71,42 +71,7 @@ division_template = {
 }
 
 units = {
-	division= {	
-		name = "第3禁卫步兵师"
-		location = 6488 # Parana
-		division_template = "禁卫步兵师"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-		army_history={
-				history_queue={
-						army_names="鲁登道夫攻势"
-						target_country="GER"
-						location={}
-						date="1918.3.21.4"
-						unique=13
-						medal_count=yes
-						inherit=yes
-						}
-		}
-	}
-	division= {	
-		name = "第4禁卫步兵师"
-		location = 6488# Cordoba
-		division_template = "禁卫步兵师"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-		army_history={
-				history_queue={
-						army_names="鲁登道夫攻势"
-						target_country="GER"
-						location={}
-						date="1918.3.21.4"
-						unique=13
-						medal_count=yes
-						inherit=yes
-						}
-		}
-	}
+
 	
 	#######
 	

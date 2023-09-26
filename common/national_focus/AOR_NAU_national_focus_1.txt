@@ -239,38 +239,7 @@ focus_tree = {
 			add_manpower = 500
 			custom_effect_tooltip = create_four_Imperial_Division_tt
 			hidden_effect = {
-			set_division_template_lock = {
-				division_template = "帝国师"
-				is_locked = yes
-			}
-			division_template = {
-				name = "帝国师"
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-
-					artillery = { x = 0 y = 3 }
-					artillery = { x = 1 y = 3 }
-					artillery = { x = 2 y = 3 }
-
-				}
-				support = { 
-					recon = { x = 0 y = 0 }
-					engineer = { x = 0 y = 1}
-				} 
-			}
-			create_unit = {
-				division = "name = \"帝国师\" division_template = \"帝国师\" start_experience_factor = 0.5 start_equipment_factor = 1"
-				owner = NAU
-				amount = 2
-			}
+			load_oob = NAU_laobing
 		}
 	}
 }

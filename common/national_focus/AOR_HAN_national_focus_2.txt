@@ -1,0 +1,13 @@
+focus_tree={
+id = HAN_2
+	country={
+		factor=0
+		modifier={
+			add=8
+			tag=han
+		}
+	}
+	continuous_focus_position = { x = 1400 y = 2000 }
+	default=no
+
+}
