@@ -131,7 +131,7 @@ focus_tree={
 		add_idea = Roving_style_2
 			}
 		hidden_effect = {
-		random_list = { 15 = { retire_character = friedrich_dollma} 70 = { retire_character = Rupprecht_Ferdinand} 15 = { retire_character = Walter_von_Reichenau}}
+		random_list = { 50 = { retire_character = friedrich_dollma}50  = { retire_character = Walter_von_Reichenau}}
 		Walther_von_Kurzbach = {
 			add_timed_unit_leader_trait = {
 					trait = BAV_labor_reform_1
@@ -196,7 +196,6 @@ focus_tree={
 			}
 		hidden_effect = {
 		retire_character = friedrich_dollma
-		retire_character = Rupprecht_Ferdinand
 		retire_character = Walter_von_Reichenau
 		random_list = { 34 = { retire_character = Walther_von_Kurzbach} 33 = { retire_character = Ludwig_Beck} 33 = { retire_character = Hans_Gunther_van_Hooven}}
 		}
@@ -436,7 +435,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		country_event = {  id = BAV.1 }
+		country_event = {  id = BAV.10 }
 		}
 	}
 	focus={

@@ -159,3 +159,18 @@ country_event = {
 		name = BAV.9.a
 	}
 }
+
+#李卜克内西的一日
+country_event = { 
+	id = BAV.10
+	title = BAV.10.t
+	desc = BAV.10.d
+	picture = GFX_BAV.10_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.10.a
+	}
+}
