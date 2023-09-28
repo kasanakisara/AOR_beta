@@ -4,7 +4,7 @@ friedrich_dollma= {
 		portraits = {
 			army = {
 				large = GFX_portrait_friedrich_dollma
-small = GFX_portrait_friedrich_dollma_small
+                small = GFX_portrait_friedrich_dollma_small
 			}
 		}
 		corps_commander = {
@@ -17,12 +17,12 @@ small = GFX_portrait_friedrich_dollma_small
 			legacy_id = -1
 		}
 	}
-Hans_Gunther_van_Hooven= { 
+    Hans_Gunther_van_Hooven= { 
 		name = Hans_Gunther_van_Hooven
 		portraits = {
 			army = {
 				large = GFX_portrait_Hans_Gunther_van_Hooven
-small = GFX_portrait_Hans_Gunther_van_Hooven_small
+                small = GFX_portrait_Hans_Gunther_van_Hooven_small
 			}
 		}
 		corps_commander = {

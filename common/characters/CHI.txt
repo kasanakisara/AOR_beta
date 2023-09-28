@@ -1,0 +1,431 @@
+characters = {
+
+#####################################################将领######################################
+	CHI_duanqirui = { #段祺瑞
+		name = duanqirui
+		portraits = {
+			army = {
+				large = gfx/leaders/CHI/duanqirui.png
+				small = GFX_portrait_duanqirui_small
+			}
+			civilian = {
+				large = gfx/leaders/CHI/duanqirui.png
+				small = GFX_portrait_duanqirui_small
+			}
+		}
+		field_marshal = {
+			traits = {  career_officer old_guard inspirational_leader skilled_staffer bearer_of_artillery }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			cost = 100
+			slot = military_high_command
+			idea_token = CHI_duanqirui
+			allowed = { original_tag = CHI }
+			traits = { army_chief_morale_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	CHI_xushuzheng = { #徐树铮
+    	name = xushuzheng
+	    portraits = {
+	    	army = {
+	    		large = gfx/leaders/CHI/xushuzheng.png
+	    		small = GFX_portrait_xushuzheng_small
+	    	}
+	    	civilian = {
+	    		large = gfx/leaders/CHI/xushuzheng.png
+	    		small = GFX_portrait_xushuzheng_small
+	    	}
+	    }
+	    field_marshal = {
+    		traits = {  career_officer politically_connected organizer harsh_leader infantry_officer }
+	    	skill = 3
+	    	attack_skill = 4
+	    	defense_skill = 3
+	    	planning_skill = 2
+	    	logistics_skill = 3
+	    	legacy_id = -1
+	    }
+	      advisor = {
+	    	cost = 100
+	    	idea_token = CHI_xushuzheng
+	    	allowed = { original_tag = CHI }
+	     	traits = { army_chief_organizational_2 }
+	    	ai_will_do = { factor = 1.000 }
+	    }
+    }
+	CHI_leyunpeng = { #勒云鹏
+	    name = leyunpeng
+	    portraits = {
+	    	army = {
+	    		large = gfx/leaders/CHI/leyunpeng.png
+	    		small = GFX_portrait_leyunpeng_small
+	    	}
+	    	civilian = {
+	      		large = gfx/leaders/CHI/leyunpeng.png
+	    		small = GFX_portrait_leyunpeng_small
+	    	}
+	    }
+	    field_marshal = {
+	    	traits = {  old_guard  }
+	    	skill = 2
+	    	attack_skill = 3
+	    	defense_skill = 2
+		    planning_skill = 1
+		    logistics_skill = 3
+		    legacy_id = -1
+	    }
+	    advisor = {
+	    	idea_token = CHI_leyunpeng
+	    	allowed = { original_tag = CHI }
+	    	traits = { army_chief_organizational_1 }
+	    	ai_will_do = { factor = 1.000 }
+	    }
+    }
+	CHI_wuguangxin = { #吴光新
+	name = wuguangxin
+	portraits = {
+		army = {
+			large = gfx/leaders/CHI/wuguangxin.png
+			small = GFX_portrait_wuguangxin_small
+		}
+	}
+	field_marshal = {
+		traits = {  politically_connected bearer_of_artillery  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		legacy_id = -1
+	}
+	advisor = {
+		idea_token = CHI_wuguangxin
+		allowed = { original_tag = CHI }
+		traits = { army_chief_organizational_1 }
+		ai_will_do = { factor = 1.000 }
+	}
+}
+CHI_duanzhigui = { #段芝贵
+name = duanzhigui
+portraits = {
+	army = {
+		large = gfx/leaders/CHI/duanzhigui.png
+		small = GFX_portrait_duanzhigui_small
+	}
+}
+field_marshal = {
+	traits = {  politically_connected old_guard substance_abuser  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = -1
+    }
+}
+
+CHI_fuliangzuo = { #傅良佐
+name = fuliangzuo
+portraits = {
+	army = {
+		large = gfx/leaders/CHI/fuliangzuo.png
+		small = GFX_portrait_fuliangzuo_small
+	}
+}
+field_marshal = {
+	traits = { career_officer bearer_of_artillery  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	legacy_id = -1
+    }
+}
+
+CHI_luyongxiang = { #卢永祥
+name = CHI_luyongxiang
+portraits = {
+	army = {
+		large = gfx/leaders/CHI/CHI_luyongxiang.png
+		small = GFX_portrait_CHI_luyongxiang_small
+	}
+}
+field_marshal = {
+	traits = { career_officer politically_connected old_guard substance_abuser  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id = -1
+    }
+}
+
+CHI_zhangjingyao = { #张敬尧
+    name = CHI_zhangjingyao
+    portraits = {
+	army = {
+		large = gfx/leaders/CHI/zhangjingyao.png
+		small = GFX_portrait_zhangjingyao_small
+	}
+}
+field_marshal = {
+	traits = { trait_reckless bearer_of_artillery substance_abuser  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	legacy_id = -1
+    }
+}
+
+	################################################顾问#################################################################
+
+	CHI_Adrien_Acrand = { #Adrien_Acrand
+		name = Adrien·Acrand
+		portraits = {
+			civilian = {
+				large = gfx/leaders/CHI/adrien_acrand.png
+				small = gfx/interface/ideas/CHI_acrand.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Adrien_Acrand
+			allowed = { original_tag = CHI }
+			traits = { nationalist_journalist }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Hugh_Guthrie = { #Hugh_Guthrie
+		name = Hugh·Guthrie
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_Adrien_Acrand
+				small = gfx/interface/ideas/CHI_guthrie.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Hugh_Guthrie
+			allowed = { original_tag = CHI }
+			traits = { prince_of_terror }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_SIr_Richard_Anderson_Squires = { #SIr_Richard_Anderson_Squires
+		name = Sir·Richard·Anderson·Squires
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_SIr_Richard_Anderson_Squires
+				small = gfx/interface/ideas/CHI_SIr_Richard_Anderson_Squires.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_SIr_Richard_Anderson_Squires
+			allowed = { original_tag = CHI }
+			traits = { war_profiteer }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Sir_William_Thomas_White = { #Sir_William_Thomas_White
+		name = Sir·William·Thomas·White
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_Sir_William_Thomas_White
+				small = gfx/interface/ideas/CHI_Sir_William_Thomas_White.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Sir_William_Thomas_White
+			allowed = { original_tag = CHI }
+			traits = { noble_beurocrat }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Raoul_Dandurand = { #Raoul_Dandurand
+		name = Raoul·Dandurand
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_Raoul_Dandurand
+				small = gfx/interface/ideas/CHI_Raoul_Dandurand.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Raoul_Dandurand
+			allowed = { original_tag = CHI }
+			traits = { traditionalist_theorist }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Julian_Hedworth_George_Byng = { #Julian_Hedworth_George_Byng
+		name = Julian·Hedworth·George·Byng
+		portraits = {
+		army = {
+				large = gfx/leaders/CHI/Julian_byng.png
+				small = gfx/interface/ideas/CHI_Julian_Hedworth_George_Byng.png
+			}
+			civilian = {
+				large = gfx/leaders/CHI/Julian_byng.png
+				small = gfx/interface/ideas/CHI_Julian_Hedworth_George_Byng.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Julian_Hedworth_George_Byng
+			allowed = { original_tag = CHI }
+			traits = { the_king_of_the_castle }
+			ai_will_do = { factor = 1.000 }
+		}
+		field_marshal = {
+			traits = {  media_personality  infantry_officer thorough_planner unyielding_defender organisational_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	CHI_Ernest_Lapointe = { #Ernest_Lapointe
+		name = Ernest·Lapointe
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_Ernest_Lapointe
+				small = gfx/interface/ideas/CHI_Ernest_Lapointe.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Ernest_Lapointe
+			allowed = { original_tag = CHI }
+			visible = { has_completed_focus = CHI_gain_quebec_support }
+			traits = { CHI_quebec_deputy }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_James_Shaver_Woodsworth = { #James_Shaver_Woodsworth
+		name = James·Shaver·Woodsworth
+		portraits = {
+			civilian = {
+				large = gfx/leaders/CHI/James_Shaver_Woodsworth.png
+				small = gfx/interface/ideas/CHI_James_Shaver_Woodsworth.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_James_Shaver_Woodsworth
+			allowed = { original_tag = CHI }
+			traits = { genial_anti_revolutionary }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Anthony_Ludovici = { #Anthony_Ludovici
+		name = Anthony·Ludovici
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Anthony_Ludovici
+				small = gfx/interface/ideas/CHI_Anthony_Ludovici.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Anthony_Ludovici
+			allowed = { original_tag = CHI }
+			traits = { CHI_nationalist_novelist }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Lionel_Groulx = { #Lionel_Groulx
+		name = Lionel·Groulx
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Lionel_Groulx
+				small = gfx/interface/ideas/CHI_Lionel_Groulx.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Lionel_Groulx
+			allowed = { original_tag = CHI }
+			traits = { CHI_nationalist_quebec_revolution_hero }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Hemri_Bourassa = { #Hemri_Bourassa
+		name = Hemri·Bourassa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Hemri_Bourassa
+				small = gfx/interface/ideas/CHI_Hemri_Bourassa.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Hemri_Bourassa
+			allowed = { original_tag = CHI }
+			traits = { CHI_nationalist_quebec_war_hero }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_Clarence_Decatur_Howe = { #Hemri_Bourassa
+		name = Clarence·Decatur·Howe
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Hemri_Bourassa
+				small = gfx/interface/ideas/CHI_Clarence_Decatur_Howe.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_Clarence_Decatur_Howe
+			allowed = { original_tag = CHI }
+			visible = { has_completed_focus = CHI_Cooperate_with_agricultural_progressive_party }
+			traits = { CHI_partner_of_pro_party }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_E_T_Kingsley = { #Hemri_Bourassa
+		name = E·T·Kingsley
+		portraits = {
+			civilian = {
+				large = gfx/leaders/CHI/E_T_Kingsley.png
+				small = gfx/interface/ideas/.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_E_T_Kingsley
+			allowed = { original_tag = CHI }
+			visible = { has_government = SOC_democratic }
+			traits = { marxist_academic }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+}
