@@ -13,3 +13,37 @@ country_event = {
 		name = HAN.1.a
 	}
 }
+
+#转fxs
+country_event = {
+	id = HAN.2
+	title = HAN.2.t
+	desc = HAN.2.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	option = {
+		name = HAN.2.a
+		kill_country_leader = yes
+		set_popularities = {
+				CON_democratic = 10
+				Fascism = 40
+				Absolutism = 43
+				Special = 7
+				}
+		set_politics = {ruling_party = Fascism}
+		create_country_leader = {
+		name = "Wilhelm Canaris"
+		desc = "POLITICS_Canaris_DESC"
+		picture = "gfx/leaders/HAN/aoaur-ko96e.dds"
+		expire = "1965.1.1"
+		ideology = NSDAP
+		traits = {
+				}
+			}
+		remove_ideas = Compact_of_German_Confederation
+		add_ideas = Compact_of_German_Confederation_1
+		load_focus_tree = HAN_2
+	}
+}

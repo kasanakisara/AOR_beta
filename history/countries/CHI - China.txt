@@ -11,6 +11,15 @@ if = {
 	}
 }
 
+recruit_character = CHI_duanqirui
+recruit_character = CHI_xushuzheng
+recruit_character = CHI_leyunpeng
+recruit_character = CHI_wuguangxin
+recruit_character = CHI_duanzhigui
+recruit_character = CHI_fuliangzuo
+recruit_character = CHI_luyongxiang
+recruit_character = CHI_zhangjingyao
+
 create_country_leader = {
 	name = "Yuan Shih-k'ai"
 	desc = ""

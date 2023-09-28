@@ -172,35 +172,6 @@ create_country_leader = {
 
 
 
-
-
-
-
-
-
-	create_country_leader = {
-	name = "Otto Strasser"
-	desc = "NAU_O_S_DESC"
-	picture = "afft4-yxnoi.dds"
-	expire = "1965.1.1"
-	ideology = strasser
-	traits = {
-	}
-}
-
-
-
-create_country_leader = {
-	name = "Ernst Nieksch"
-	desc = "NAU_E_N_DESC"
-	picture = "a0vjb-3lvgs.dds"
-	expire = "1965.1.1"
-	ideology = nazbol
-	traits = {
-	}
-}
-
-
 add_equipment_to_stockpile = {
     type = infantry_equipment
     amount = 500

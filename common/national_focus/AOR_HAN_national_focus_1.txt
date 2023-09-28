@@ -208,16 +208,6 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = {
-			date > 1922.1.1
-			NAU = {
-			 NOT = {
-			 has_government = Marxism
-			has_government = PAR_socialism 
-			has_government = SOC_democratic
-			 }
-			}
-		}
 		available_if_capitulated=yes
 		search_filters={
 		}
