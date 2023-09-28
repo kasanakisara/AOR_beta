@@ -12,7 +12,7 @@ focus_tree={
 		id=NAU_Burning_City_Hall_1
 		x=8
 		y=0
-		cost=10
+		cost=0
 		ai_will_do={
 			factor=1
 		}
@@ -20,6 +20,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = NAU.focus.1.tt
 		}
 	}
 	focus={
@@ -27,7 +28,7 @@ focus_tree={
 		x=8
 		y=1
 		prerequisite={focus=NAU_Burning_City_Hall_1}
-		cost=10
+		cost=0
 		ai_will_do={
 			factor=1
 		}
@@ -35,6 +36,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = NAU.focus.aplit.tt
 		}
 	}
 	focus={
@@ -42,7 +44,7 @@ focus_tree={
 		x=3
 		y=2
 		prerequisite={focus=NAU_Left_wing_alliance_split}
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -50,6 +52,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = NAU.focus.helmsan.tt
 		}
 	}
 	focus={
@@ -57,7 +60,7 @@ focus_tree={
 		x=13
 		y=2
 		prerequisite={focus=NAU_Left_wing_alliance_split}
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -65,6 +68,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = NAU.focus.glove.tt
 		}
 	}
 	focus={
@@ -80,6 +84,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_timed_idea = { days = 365 idea =NAU_red_terror_ideas } 
 		}
 	}
 	focus={
@@ -95,6 +100,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+				remove_idea = The_new_nest_of_militarism 
+				add_idea = NAU_people_army 
+			}
 		}
 	}
 	focus={
@@ -110,6 +119,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		remove_ideas = The_new_nest_of_militarism
+		add_timed_idea = { days = 365 idea =NAU_del_army } 
 		}
 	}
 	focus={
@@ -125,6 +136,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability = 0.1
+		add_political_power = 200
 		}
 	}
 	focus={
@@ -141,6 +154,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.19
 		}
 	}
 	focus={
@@ -157,6 +172,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.20
 		}
 	}
 	focus={
@@ -172,6 +189,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_people_soviet
 		}
 	}
 	focus={
@@ -188,6 +206,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+		 remove_idea = NAU_people_soviet
+		 add_idea = NAU_people_soviet_1
+		 
+			}
 		}
 	}
 	focus={
@@ -203,6 +226,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_fed_par
 		}
 	}
 	focus={
@@ -218,6 +242,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+			remove_idea = NAU_fed_par
+			add_idea = 	NAU_fed_par_1
+			}
 		}
 	}
 	focus={
@@ -233,6 +261,14 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_Agr_comm
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -248,6 +284,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+					remove_idea = NAU_Agr_comm
+					add_idea = NAU_Agr_comm_1
+				}
+			add_timed_idea = {days = 365 idea =NAU_after_agr}
+			country_event =  NAU.21
 		}
 	}
 	focus={
@@ -263,6 +305,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_reform_land
 		}
 	}
 	focus={
@@ -278,6 +321,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+			remove_idea = NAU_reform_land
+			add_idea = NAU_reform_land_1
+			}
 		}
 	}
 	focus={
@@ -293,6 +340,15 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = NAU_workers_comm
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
 		}
 	}
 	focus={
@@ -308,6 +364,23 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_stability = -0.05
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
 		}
 	}
 	focus={
@@ -323,6 +396,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_new_law
 		}
 	}
 	focus={
@@ -338,6 +412,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_new_law 
+				add_idea = NAU_new_law_1
+			}
 		}
 	}
 	focus={
@@ -354,8 +432,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_workers_comm
+				add_idea = NAU_workers_comm_1
 		}
 	}
+}
 	focus={
 		id=NAU_Efficient_collectivization
 		x=5
@@ -370,6 +452,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_Agr_comm_1
+			 add_idea = NAU_Agr_comm_2
+			}
 		}
 	}
 	focus={
@@ -385,6 +471,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_people_soviet_1
+			 add_idea = NAU_people_soviet_2
+			}
 		}
 	}
 	focus={
@@ -401,6 +491,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_reform_land_1
+			 add_idea = NAU_reform_land_2
+			}
 		}
 	}
 	focus={
@@ -417,6 +511,15 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+				}
+			}
+		country_event =  NAU.22
 		}
 	}
 	focus={
@@ -432,6 +535,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		swap_ideas = {
+			 remove_idea = NAU_fed_par_1
+			 add_idea = NAU_fed_par_2
+			}
 		}
 	}
 	focus={
@@ -448,6 +555,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		country_event =  NAU.23
 		}
 	}
 	focus={
@@ -464,6 +572,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		country_event =  NAU.24
 		}
 	}
 }

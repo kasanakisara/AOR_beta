@@ -76,7 +76,14 @@ if = {
 }
 
 
-
+recruit_character = WUR_Erwin_Rommel 
+recruit_character = WUR_Franz_Halde
+recruit_character = WUR_Friedrich_Dorman
+recruit_character = WUR_Heinrich_Schech
+recruit_character = WUR_Hermann_Von_Stein
+recruit_character = WUR_Kurt_haas
+recruit_character = WUR_Otto_Von_Machtal
+recruit_character = WUR_William_Adam
 
 set_research_slots = 3
 set_convoys = 50

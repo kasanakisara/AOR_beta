@@ -11,14 +11,7 @@ country_event = {
 	title = event_GER.1.t
 	desc = event_GER.1.d
 	picture = GFX_events_german_disintegrated
-
-	trigger = {
-	    date > 1923.1.1
-		tag = GER
-	}
-	
-	mean_time_to_happen = { day = 1}
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
     #那就这样吧  
@@ -31,56 +24,12 @@ country_event = {
 			}
 			RHI = {
 				transfer_state = 42
-				transfer_state = 51
 				transfer_state = 859
 				transfer_state = 850
 				add_state_core = 42
-				add_state_core = 51
 				add_state_core = 859
 				add_state_core = 850
 				add_manpower = 10000
-				if = {
-					NOT = { has_template = "Common Militia" } }
-					   division_template = {
-					   priority = 0
-					   name = "Common Militia"
-					   regiments = {
-					   infantry = { x = 0 y = 0 } 
-					   infantry = { x = 0 y = 1 } 
-					   infantry = { x = 1 y = 0 } 
-					   infantry = { x = 1 y = 1 } 
-								   }
-					   support = {
-								   }
-							   }
-							   random_controlled_state = {
-								   limit = { is_capital = yes }
-								   create_unit = {
-									   division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
-									   owner = PREV
-								   }
-								   create_unit = {
-									   division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
-									   owner = PREV
-								   }
-								   create_unit = {
-									   division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									   owner = PREV
-								   }
-								   create_unit = {
-									   division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									   owner = PREV
-								   }
-								   create_unit = {
-									   division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									   owner = PREV
-								   }
-								   create_unit = {
-									   division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
-									   owner = PREV
-									   count = 1
-								   }
-							    }
 				        	}
 			FRA = {
        				  puppet = RHI
@@ -100,6 +49,17 @@ country_event = {
 		 850 = {
 			 add_core_of = RHI
 			set_demilitarized_zone = no 
+			}
+			PRE = { remove_ideas = Compact_of_German_Confederation}
+			SHL = { remove_ideas = Compact_of_German_Confederation_1}
+			HAN = { remove_ideas = Compact_of_German_Confederation_1}
+			HAN = { remove_ideas = Compact_of_German_Confederation}
+			BAV = { remove_ideas = Compact_of_German_Confederation_1}
+			WUR = { remove_ideas = Compact_of_German_Confederation_1}
+			MEK = { remove_ideas = Compact_of_German_Confederation}
+			set_global_flag = new_German_Confederation
+			NAU = {
+			country_event = { days = 14 id = NAU.36 }
 			}
         } 
     }

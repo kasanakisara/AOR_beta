@@ -862,3 +862,28 @@ NAU_FXS_2 = {
 	color_ui = rgb { 115 115 115 }
 }
 
+NAU_LEFT_1= {
+	color = rgb {125  13  24 }
+	color_ui = rgb { 125  13  24 }
+}
+
+
+NAU_LEFT_2= {
+	color = rgb {255 192 203}
+	color_ui = rgb { 255 192 203 }
+}
+
+NAU_MIDDLE_1= {
+	color = rgb {112 128 144}
+	color_ui = rgb { 112 128 144 }
+}
+
+NAU_MIDDLE_2= {
+	color = rgb {51 41 5}
+	color_ui = rgb { 51 41 5 }
+}
+
+BAV_WUR_1= {
+	color = rgb {125  13  24 }
+	color_ui = rgb { 125  13  24 }
+}

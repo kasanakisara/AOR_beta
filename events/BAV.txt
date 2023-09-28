@@ -174,3 +174,115 @@ country_event = {
 		name = BAV.10.a
 	}
 }
+
+
+#巴伐利亚-符腾堡苏维埃+南石荷苏维埃
+country_event = { 
+	id = BAV.11
+	title = BAV.11.t
+	desc = BAV.11.d
+	picture = GFX_BAV.11_pic
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	original_tag = BAV
+	}
+	option = {
+		name = BAV.11.a
+		ai_chance = { factor = 10 }	
+			create_faction = German_Revolutionary_League
+			BAV = {
+			add_to_faction = SHL
+			}
+		}
+}
+
+#柏林政府+波美+西里西亚
+country_event = { 
+	id = BAV.12
+	title = BAV.12.t
+	desc = BAV.12.d
+	picture = GFX_BAV.12_pic
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	original_tag = GER
+	}
+	option = {
+		name = BAV.12.a
+		ai_chance = { factor = 10 }	
+			create_faction = new_German_Confederation
+			GER = {
+			add_to_faction = SIL
+			}
+			GER = {
+			add_to_faction = KSH
+			}	
+		}
+}
+
+#对法兰克福和柏林，统统宣战！！！！（拉狄克除外 ）
+country_event = { 
+	id = BAV.13
+	title = BAV.13.t
+	desc = BAV.13.d
+	picture = GFX_BAV.13_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.13.a
+		trigger = { 
+			NAU = {
+				not = {has_country_leader = { ruling_only = yes name = "Karl Radek" }  }
+			}
+		}
+		declare_war_on = { target = GER type = civil_war } 
+		declare_war_on = { target = NAU type = civil_war } 
+	}
+	option = {
+		name = BAV.13.b
+		trigger = { 
+			NAU = {
+				has_country_leader = { ruling_only = yes name = "Karl Radek" } 
+			}
+		}
+		declare_war_on = { target = GER type = civil_war } 
+		BAV = {
+			add_to_faction = NAU
+		}
+	}
+}
+
+
+#整合符腾堡！
+country_event = {
+	id = BAV.14
+	title = BAV.14.t
+	desc = BAV.14.d
+	picture = GFX_BAV.14_pic
+	trigger = {
+	    date > 1922.8.1
+		tag = BAV
+	}
+	
+	mean_time_to_happen = { day = 1}
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.14.a
+			annex_country = { target = WUR  transfer_troops =yes}
+				hidden_effect = {
+		BAV ={
+		recruit_character = WUR_Erwin_Rommel
+		recruit_character = WUR_Franz_Halde
+		recruit_character = WUR_Friedrich_Dorman
+			}
+		set_cosmetic_tag = BAV_WUR_1
+			}
+        } 
+
+ }

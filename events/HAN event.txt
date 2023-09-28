@@ -36,12 +36,14 @@ country_event = {
 		create_country_leader = {
 		name = "Wilhelm Canaris"
 		desc = "POLITICS_Canaris_DESC"
-		picture = "gfx/leaders/NAU/aoaur-ko96e.dds"
+		picture = "gfx/leaders/HAN/aoaur-ko96e.dds"
 		expire = "1965.1.1"
 		ideology = NSDAP
 		traits = {
 				}
 			}
-		load_oob = HAN_2
+		remove_ideas = Compact_of_German_Confederation
+		add_ideas = Compact_of_German_Confederation_1
+		load_focus_tree = HAN_2
 	}
 }

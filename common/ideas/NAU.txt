@@ -539,5 +539,391 @@ ideas = {
 				monthly_population = 0.1
 			}
 		}
+		#
+		NAU_red_terror_ideas= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_national_mention
+			
+			modifier = {
+				stability_factor = -0.1
+				Marxism_drift = 0.1
+			}
+		}
+		NAU_people_army = {
+
+			romoval_cost = -1
+			
+			picture = idea_people_army
+			
+			modifier = {
+				army_defense_factor = 0.05
+				war_support_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		NAU_del_army = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_del_army
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.15
+				monthly_population = -0.1
+			}
+		}
+		NAU_people_soviet = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_people_soviet
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor  0.05
+				war_support_factor = 0.05
+			}
+		}
+		NAU_people_soviet_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_people_soviet_1
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor  0.1
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		NAU_fed_par = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_fed_par
+			
+			modifier = {
+				political_power_factor =0.1
+				production_factory_efficiency_gain_factor = 0.05
+				SOC_democratic_drift = 0.05
+				
+			}
+		}
+		NAU_fed_par_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_fed_par
+			
+			modifier = {
+				political_power_factor =0.1
+				production_factory_efficiency_gain_factor = 0.05
+				SOC_democratic_drift = 0.05
+				local_building_slots_factor = 0.1
+			}
+		}
+		NAU_Agr_comm = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_Agr_comm
+			
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+		NAU_Agr_comm_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_Agr_comm
+			
+			modifier = {
+				monthly_population = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NAU_after_agr = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_after_agr
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		NAU_reform_land = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_reform_land
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		NAU_workers_comm = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_workers_comm
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		NAU_new_law = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_new_law
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_factor = -0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		NAU_new_law_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_new_law
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_factor = -0.1
+				industrial_capacity_dockyard = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		NAU_workers_comm_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_workers_comm
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		NAU_Agr_comm_2 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_Agr_comm
+			
+			modifier = {
+				monthly_population = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		NAU_people_soviet_2 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_people_soviet_1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor  0.1
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				surrender_limit = 0.05
+				Marxism_drift = 0.05
+			}
+		}
+		NAU_reform_land_1 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_reform_land
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		NAU_reform_land_2 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_reform_land
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		NAU_fed_par_2 = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_fed_par
+			
+			modifier = {
+				political_power_factor =0.1
+				production_factory_efficiency_gain_factor = 0.05
+				SOC_democratic_drift = 0.05
+				local_building_slots_factor = 0.1
+				stability_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		NAU_martial = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_martial
+			
+			modifier = {
+				conscription = 0.03
+				resistance_target = -0.1
+				compliance_starting_value = 0.1
+				stability_factor = 0.05
+			}
+		}
+		NAU_Arrest_Rightists_idea = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_Arrest_Rightists_idea
+			
+			modifier = {
+				monthly_population = -0.1
+				Fascism_drift = -0.5
+			}
+		}
+		NAU_Arrest_Left_idea = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_Arrest_Left_idea
+			
+			modifier = {
+				monthly_population = -0.1
+				Marxism_drift = -0.5
+			}
+		}
+		NAU_gonggu_junguo = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_gonggu_junguo
+			
+			modifier = {
+				army_attack_factor = 0.3
+				war_support_factor = 0.15
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		NAU_mohu= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_mohu
+			
+			modifier = {
+				army_attack_factor = 0.3
+				war_support_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		NAU_army_equal= {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_mohu
+			
+			modifier = {
+				army_attack_factor = 0.3
+				war_support_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.1
+					
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		 NAU_fight_god = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_fight_god
+			
+			modifier = {
+				army_morale_factor = 0.15
+				army_org_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+		NAU_24h_working = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_24h_working
+			
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		NAU_be_a_soi = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_be_a_soi
+			
+			modifier = {
+				stability_factor = -0.025
+				mobilization_speed = 0.1
+			}
+		}
+		NAU_or_to_do = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_or_to_do
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.025
+				
+			}
+		}
+		NAU_fanatical = {
+
+			romoval_cost = -1
+			
+			picture = idea_NAU_fanatical
+			
+			modifier = {
+				mobilization_speed = 0.25
+			}
+		}
 	}
 }

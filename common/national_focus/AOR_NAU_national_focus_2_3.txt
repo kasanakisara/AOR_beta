@@ -20,7 +20,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		
+		custom_effect_tooltip = NAU.focus.1.tt
 		}
 	}
 	focus={
@@ -37,6 +37,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = NAU_martial
 		}
 	}
 	focus={
@@ -53,6 +54,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = war_economy
+			add_ideas = service_by_requirement
 		}
 	}
 	focus={
@@ -68,6 +71,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			remove_ideas = Chaotic_politics
 		}
 	}
 	focus={
@@ -83,6 +87,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_Arrest_Rightists_idea  }
+			country_event = NAU.25
 		}
 	}
 	focus={
@@ -98,6 +104,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_Arrest_Left_idea  }
+			country_event = NAU.26
 		}
 	}
 	focus={
@@ -114,6 +122,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = The_new_nest_of_militarism 
+				add_idea = NAU_gonggu_junguo
+			}
 		}
 	}
 	focus={
@@ -129,6 +141,16 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		custom_effect_tooltip = create_one_Division_tt
+		hidden_effect = {
+		load_oob = NAU_666
+		set_division_template_lock = {
+				division_template = "冲锋队"
+				is_locked = yes
+				force_allow_recruiting = no
+				}
+			}	
+
 		}
 	}
 	focus={
@@ -144,6 +166,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_fight_god
+		country_event = NAU.27
 		}
 	}
 	focus={
@@ -159,6 +183,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_ideas = NAU_24h_working
 		}
 	}
 	focus={
@@ -174,6 +199,20 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -190,6 +229,16 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = 0.1
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = arms_factory 
+			level = 1
+			instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -206,6 +255,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_gonggu_junguo
+				add_idea = NAU_mohu
+			}
 		}
 	}
 	focus={
@@ -221,6 +274,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_be_a_soi  }
 		}
 	}
 	focus={
@@ -237,6 +291,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = NAU_fanatical
 		}
 	}
 	focus={
@@ -253,6 +308,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		add_timed_idea = { days = 365 idea = NAU_or_to_do}
 		}
 	}
 	focus={
@@ -270,6 +326,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_mohu
+				add_idea = NAU_army_equal
+			}
+			country_event = NAU.28
 		}
 	}
 }
