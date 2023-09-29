@@ -191,241 +191,243 @@ field_marshal = {
 
 	################################################顾问#################################################################
 
-	CHI_Adrien_Acrand = { #Adrien_Acrand
-		name = Adrien·Acrand
+	CHI_liangshiyi = { #梁士诒
+		name = liangshiyi
 		portraits = {
 			civilian = {
-				large = gfx/leaders/CHI/adrien_acrand.png
-				small = gfx/interface/ideas/CHI_acrand.png
+				large = gfx/leaders/CHI/liangshiyi.png
+				small = gfx/interface/ideas/liangshiyi.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Adrien_Acrand
+			idea_token = CHI_liangshiyi
 			allowed = { original_tag = CHI }
-			traits = { nationalist_journalist }
+			traits = { financial_expert }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Hugh_Guthrie = { #Hugh_Guthrie
-		name = Hugh·Guthrie
+	CHI_guweijun = { #顾维钧
+		name = guweijun
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CHI_Adrien_Acrand
-				small = gfx/interface/ideas/CHI_guthrie.png
+				large = GFX_portrait_CHI_guweijun
+				small = gfx/interface/ideas/guweijun.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Hugh_Guthrie
+			idea_token = CHI_guweijun
+			allowed = { original_tag = CHI }
+			traits = { Genius_New_Star_in_Diplomacy }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_luzhengxiang = { #陆徵祥
+		name = luzhengxiang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_luzhengxiang
+				small = gfx/interface/ideas/luzhengxiang.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_luzhengxiang
+			allowed = { original_tag = CHI }
+			traits = { Diplomatic_experts }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	CHI_wangjitang = { #王揖唐
+		name = wangjitang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_wangjitang
+				small = gfx/interface/ideas/wangjitang.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = CHI_wangjitang
 			allowed = { original_tag = CHI }
 			traits = { prince_of_terror }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_SIr_Richard_Anderson_Squires = { #SIr_Richard_Anderson_Squires
-		name = Sir·Richard·Anderson·Squires
+	CHI_caorulin = { #曹汝霖
+		name = caorulin
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CHI_SIr_Richard_Anderson_Squires
-				small = gfx/interface/ideas/CHI_SIr_Richard_Anderson_Squires.png
+				large = GFX_portrait_CHI_caorulin
+				small = gfx/interface/ideas/caorulin.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_SIr_Richard_Anderson_Squires
+			idea_token = CHI_caorulin
 			allowed = { original_tag = CHI }
-			traits = { war_profiteer }
+			traits = { silent_workhorse }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Sir_William_Thomas_White = { #Sir_William_Thomas_White
-		name = Sir·William·Thomas·White
+	CHI_zhushen = { #朱深
+		name = zhushen
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CHI_Sir_William_Thomas_White
-				small = gfx/interface/ideas/CHI_Sir_William_Thomas_White.png
+				large = GFX_portrait_CHI_zhushen
+				small = gfx/interface/ideas/zhushen.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Sir_William_Thomas_White
+			idea_token = CHI_zhushen
 			allowed = { original_tag = CHI }
-			traits = { noble_beurocrat }
+			traits = { Judicial_experts }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Raoul_Dandurand = { #Raoul_Dandurand
-		name = Raoul·Dandurand
+
+	CHI_fanyuanlian = { #范媛连
+		name = fanyuanlian
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CHI_Raoul_Dandurand
-				small = gfx/interface/ideas/CHI_Raoul_Dandurand.png
+				large = gfx/leaders/CHI/fanyuanlian.png
+				small = gfx/interface/ideas/fanyuanlian.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Raoul_Dandurand
+			idea_token = CHI_fanyuanlian
 			allowed = { original_tag = CHI }
-			traits = { traditionalist_theorist }
+			traits = { educational_experts }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Julian_Hedworth_George_Byng = { #Julian_Hedworth_George_Byng
-		name = Julian·Hedworth·George·Byng
+	CHI_yuanxitao = { #袁希涛
+		name = yuanxitao
 		portraits = {
-		army = {
-				large = gfx/leaders/CHI/Julian_byng.png
-				small = gfx/interface/ideas/CHI_Julian_Hedworth_George_Byng.png
-			}
 			civilian = {
-				large = gfx/leaders/CHI/Julian_byng.png
-				small = gfx/interface/ideas/CHI_Julian_Hedworth_George_Byng.png
+				large = GFX_portrait_yuanxitao
+				small = gfx/interface/ideas/yuanxitao.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Julian_Hedworth_George_Byng
+			idea_token = CHI_yuanxitao
 			allowed = { original_tag = CHI }
-			traits = { the_king_of_the_castle }
+			traits = { Compulsory_Education_Promoters }
 			ai_will_do = { factor = 1.000 }
 		}
-		field_marshal = {
-			traits = {  media_personality  infantry_officer thorough_planner unyielding_defender organisational_leader }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-		}
 	}
-	CHI_Ernest_Lapointe = { #Ernest_Lapointe
-		name = Ernest·Lapointe
+	CHI_tianwenlie = { #田文烈
+		name = tianwenlie
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CHI_Ernest_Lapointe
-				small = gfx/interface/ideas/CHI_Ernest_Lapointe.png
+				large = GFX_portrait_tianwenlie
+				small = gfx/interface/ideas/tianwenlie.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Ernest_Lapointe
+			idea_token = CHI_tianwenlie
 			allowed = { original_tag = CHI }
-			visible = { has_completed_focus = CHI_gain_quebec_support }
-			traits = { CHI_quebec_deputy }
+			traits = { Agricultural_and_commercial_experts }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_James_Shaver_Woodsworth = { #James_Shaver_Woodsworth
-		name = James·Shaver·Woodsworth
+	CHI_zhangguogan = { #张国淦
+		name = zhangguogan
 		portraits = {
 			civilian = {
-				large = gfx/leaders/CHI/James_Shaver_Woodsworth.png
-				small = gfx/interface/ideas/CHI_James_Shaver_Woodsworth.png
+				large = GFX_portrait_zhangguogan
+				small = gfx/interface/ideas/zhangguogan.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_James_Shaver_Woodsworth
+			idea_token = CHI_zhangguogan
 			allowed = { original_tag = CHI }
-			traits = { genial_anti_revolutionary }
+			traits = { upright_financial_official }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Anthony_Ludovici = { #Anthony_Ludovici
-		name = Anthony·Ludovici
+	CHI_zhuqiyin = { #朱启银
+		name = zhuqiyin
 		portraits = {
 			civilian = {
-				large = GFX_portrait_Anthony_Ludovici
-				small = gfx/interface/ideas/CHI_Anthony_Ludovici.png
+				large = GFX_portrait_zhuqiyin
+				small = gfx/interface/ideas/zhuqiyin.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Anthony_Ludovici
+			idea_token = CHI_zhuqiyin
 			allowed = { original_tag = CHI }
-			traits = { CHI_nationalist_novelist }
+			traits = { Architects_and_industrialists }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Lionel_Groulx = { #Lionel_Groulx
-		name = Lionel·Groulx
+	CHI_Zeng_Yujun = { #曾毓隽
+		name = Zeng_Yujun
 		portraits = {
 			civilian = {
-				large = GFX_portrait_Lionel_Groulx
-				small = gfx/interface/ideas/CHI_Lionel_Groulx.png
+				large = gfx/leaders/CHI/Zeng_Yujun.png
+				small = gfx/interface/ideas/Zeng_Yujun.png
 			}
 		}
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = CHI_Lionel_Groulx
+			idea_token = CHI_Zeng_Yujun
 			allowed = { original_tag = CHI }
-			traits = { CHI_nationalist_quebec_revolution_hero }
+			traits = { Quartermaster_General }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	CHI_Hemri_Bourassa = { #Hemri_Bourassa
-		name = Hemri·Bourassa
-		portraits = {
-			civilian = {
-				large = GFX_portrait_Hemri_Bourassa
-				small = gfx/interface/ideas/CHI_Hemri_Bourassa.png
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = political_advisor
-			idea_token = CHI_Hemri_Bourassa
-			allowed = { original_tag = CHI }
-			traits = { CHI_nationalist_quebec_war_hero }
-			ai_will_do = { factor = 1.000 }
-		}
-	}
-	CHI_Clarence_Decatur_Howe = { #Hemri_Bourassa
-		name = Clarence·Decatur·Howe
-		portraits = {
-			civilian = {
-				large = GFX_portrait_Hemri_Bourassa
-				small = gfx/interface/ideas/CHI_Clarence_Decatur_Howe.png
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = political_advisor
-			idea_token = CHI_Clarence_Decatur_Howe
-			allowed = { original_tag = CHI }
-			visible = { has_completed_focus = CHI_Cooperate_with_agricultural_progressive_party }
-			traits = { CHI_partner_of_pro_party }
-			ai_will_do = { factor = 1.000 }
-		}
-	}
-	CHI_E_T_Kingsley = { #Hemri_Bourassa
-		name = E·T·Kingsley
-		portraits = {
-			civilian = {
-				large = gfx/leaders/CHI/E_T_Kingsley.png
-				small = gfx/interface/ideas/.png
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = political_advisor
-			idea_token = CHI_E_T_Kingsley
-			allowed = { original_tag = CHI }
-			visible = { has_government = SOC_democratic }
-			traits = { marxist_academic }
-			ai_will_do = { factor = 1.000 }
-		}
-	}
+    	CHI_zhangjian = { #张建
+    	name = zhangjian
+    	portraits = {
+     		civilian = {
+    			large = gfx/leaders/CHI/zhangjian.png
+       			small = gfx/interface/ideas/zhangjian.png
+    		}
+    	}
+    	advisor = {
+    		cost = 150
+    		slot = political_advisor
+	    	idea_token = CHI_zhangjian
+	    	allowed = { original_tag = CHI }
+	    	traits = { Practitioner_of_saving_the_country_through_industry }
+	    	ai_will_do = { factor = 1.000 }
+	    }
+    }
+        CHI_lianghongzhi = { #梁弘志
+        name = lianghongzhi
+        portraits = {
+        	civilian = {
+	        	large = gfx/leaders/CHI/lianghongzhi.png
+    	    	small = gfx/interface/ideas/lianghongzhi.png
+        	}
+        }
+        advisor = {
+	        cost = 150
+        	slot = political_advisor
+        	idea_token = CHI_lianghongzhi
+        	allowed = { original_tag = CHI }
+        	traits = { editor }
+        	ai_will_do = { factor = 1.000 }
+        }
+    }
 }

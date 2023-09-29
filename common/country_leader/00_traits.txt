@@ -6525,4 +6525,64 @@ leader_traits = {
 		production_speed_buildings_factor = 0.05
 	}
 
+	Genius_New_Star_in_Diplomacy = {  
+		random = no
+		political_power_gain = 0.05
+		IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = -0.33
+	}
+	Diplomatic_experts = {  
+		random = no
+		IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = 0.25
+	}
+
+	Judicial_experts = {  
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.05
+	}
+	educational_experts = {  
+		random = no
+		research_speed_factor = 0.05
+	}
+	Compulsory_Education_Promoters = {  #义务教育推动者
+	random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.05
+	}
+	Agricultural_and_commercial_experts = {  #农商专家
+	random = no
+		weekly_manpower = 0.05
+		stability_factor = 0.05
+		PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+    }
+	upright_financial_official = {  #正直的财政官圆
+	random = no
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+		political_power_gain = 0.1
+    }
+	Architects_and_industrialists = {  #致力于社会化的实业家及建筑家
+	random = no
+		production_speed_infrastructure_factor = 0.15
+		industrial_capacity_factory = 0.1
+		production_speed_industrial_complex_factor = 0.05
+    }
+
+	Quartermaster_General = {  #均需将军
+	random = no
+		consumer_goods_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+    }
+
+	Practitioner_of_saving_the_country_through_industry = {  #实业救国实践家
+	random = no
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = 0.15
+    }
+
+	editor = {  #编辑
+	random = no
+		stability_factor = 0.05
+		political_power_gain = 0.05
+    }
 }
