@@ -313,8 +313,8 @@ field_marshal = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_fanyuanlian
-			allowed = { original_tag = CHI }
-			visible = { has_country_flag = wanxizhengfu  }
+			allowed = { original_tag = UPC }
+			visible = { has_country_flag = fanyuanxi }
 			traits = { educational_experts }
 			ai_will_do = { factor = 1.000 }
 		}

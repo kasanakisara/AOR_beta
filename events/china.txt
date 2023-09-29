@@ -142,20 +142,17 @@ country_event = {
 				not = {
 					has_country_flag = liansheng
 				}
-		}
-		
-	}
+	    	}
+	    }
 	
 	option = {
 		name = CHI.7.b
 		custom_effect_tooltip = lianshen.1.tt
 		trigger = {
-					has_country_flag = liansheng
-		}
-		
+			has_country_flag = liansheng
+		}	
 		UPC = { change_tag_from = ROOT }
 	}
-	
 }
 
 
