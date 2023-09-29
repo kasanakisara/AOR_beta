@@ -15,7 +15,7 @@ small = GFX_portrait_Erich_Ludendorff_small
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 5
-			legacy_id = -2
+			legacy_id = -1
 		}
 	}"
 "
@@ -34,7 +34,7 @@ small = GFX_portrait_Paul_Hausser_small
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 3
-			legacy_id = -3
+			legacy_id = -1
 		}
 	}"
 "
@@ -53,7 +53,7 @@ small = GFX_portrait_Gotthard_Heinrich_small
 			defense_skill = 6
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = -4
+			legacy_id = -1
 		}
 	}"
 "
@@ -72,7 +72,7 @@ small = GFX_portrait_Gerd_von_Rundstedt_small
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 3
-			legacy_id = -5
+			legacy_id = -1
 		}
 	}"
 "
@@ -91,11 +91,11 @@ small = GFX_portrait_Karl_von_Einem_small
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 2
-			legacy_id = -6
+			legacy_id = -1
 		}
 	}"
 "
-Carl_Heinrich_von_Stülpnagel= { 
+Carl_Heinrich_von_Stulpnagel= { 
 		name = Carl_Heinrich_von_Stülpnagel
 		portraits = {
 			army = {
@@ -110,7 +110,7 @@ small = GFX_portrait_Carl_Heinrich_von_Stülpnagel_small
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 2
-			legacy_id = -7
+			legacy_id = -1
 		}
 	}"
 "
@@ -129,7 +129,7 @@ small = GFX_portrait_Maximilian_von_Baden_small
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 3
-			legacy_id = -8
+			legacy_id = -1
 		}
 	}"
 "
@@ -148,7 +148,7 @@ small = GFX_portrait_Wilhelm_Groener_small
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 4
-			legacy_id = -9
+			legacy_id = -1
 		}
 	}"
 "
@@ -189,7 +189,7 @@ _small
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = -11
+			legacy_id = -1
 		}
 	}"
 
