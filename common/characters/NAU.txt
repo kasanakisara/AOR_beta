@@ -1,5 +1,4 @@
 characters = {
-    "
 Erich_Ludendorff= { 
 		name = Erich_Ludendorff
 		portraits = {
@@ -17,8 +16,8 @@ small = GFX_portrait_Erich_Ludendorff_small
 			logistics_skill = 5
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Paul_Hausser= { 
 		name = Paul_Hausser
 		portraits = {
@@ -36,8 +35,8 @@ small = GFX_portrait_Paul_Hausser_small
 			logistics_skill = 3
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Gotthard_Heinrich= { 
 		name = Gotthard_Heinrich
 		portraits = {
@@ -55,8 +54,8 @@ small = GFX_portrait_Gotthard_Heinrich_small
 			logistics_skill = 2
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Gerd_von_Rundstedt= { 
 		name = Gerd_von_Rundstedt
 		portraits = {
@@ -74,8 +73,8 @@ small = GFX_portrait_Gerd_von_Rundstedt_small
 			logistics_skill = 3
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Karl_von_Einem= { 
 		name = Karl_von_Einem
 		portraits = {
@@ -93,8 +92,8 @@ small = GFX_portrait_Karl_von_Einem_small
 			logistics_skill = 2
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Carl_Heinrich_von_Stulpnagel= { 
 		name = Carl_Heinrich_von_Stülpnagel
 		portraits = {
@@ -112,8 +111,8 @@ small = GFX_portrait_Carl_Heinrich_von_Stülpnagel_small
 			logistics_skill = 2
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Maximilian_von_Baden= { 
 		name = Maximilian_von_Baden
 		portraits = {
@@ -131,8 +130,8 @@ small = GFX_portrait_Maximilian_von_Baden_small
 			logistics_skill = 3
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Wilhelm_Groener= { 
 		name = Wilhelm_Groener
 		portraits = {
@@ -150,8 +149,8 @@ small = GFX_portrait_Wilhelm_Groener_small
 			logistics_skill = 4
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Alexander_Kluck= { 
 		name = Alexander_Kluck
 		portraits = {
@@ -169,8 +168,8 @@ small = GFX_portrait_Alexander_Kluck_small
 			logistics_skill = 3
 			legacy_id = -1
 		}
-	}"
-"
+	}
+
 Moriz_von_Lyncker= { 
 		name = Moriz_von_Lyncker
 
@@ -191,6 +190,6 @@ _small
 			logistics_skill = 2
 			legacy_id = -1
 		}
-	}"
+	}
 
 }
