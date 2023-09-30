@@ -16,7 +16,7 @@ units={
         location=6469
         division_template="汉诺威防卫旅"
         start_experience_factor=0.2
-        strat_equipment_factor=0.4
+        start_equipment_factor=0.4
     }
 
 }
@@ -27,7 +27,7 @@ units={
         location=495
         division_template="汉诺威防卫旅"
         start_experience_factor=0.2
-        strat_equipment_factor=0.4
+        start_equipment_factor=0.4
     }
 
 }
@@ -38,7 +38,7 @@ units={
         location=11360
         division_template="汉诺威防卫旅"
         start_experience_factor=0.3
-        strat_equipment_factor=0.6
+        start_equipment_factor=0.6
     }
 
 }
@@ -49,7 +49,7 @@ units={
         location=11388
         division_template="汉诺威防卫旅"
         start_experience_factor=0.4
-        strat_equipment_factor=0.8
+        start_equipment_factor=0.8
     }
 
 }
