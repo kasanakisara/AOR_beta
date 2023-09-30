@@ -669,6 +669,9 @@ country_event = {
 		name = NAU.33.a
 		ai_chance = { factor = 10 }	
 			create_faction = German_Liberation_Front
+			hidden_effect = {
+					HAN = {country_event = HAN.3 }
+			}
 		}
 	}
 	
@@ -690,6 +693,9 @@ country_event = {
 			
 			NAU = {
 			add_to_faction = SAX
+			}
+			hidden_effect = {
+					HAN = {country_event = HAN.3 }
 			}
 		}
 	}
