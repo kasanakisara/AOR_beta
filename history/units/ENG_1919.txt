@@ -61,7 +61,7 @@ division_template={
                 infantry={x=0 y=0}
                 infantry={x=0 y=1}
                 infantry={x=1 y=0}
-                infantry={x=1 y=2}
+                infantry={x=1 y=1}
                 }
                 support = {
                     engineer={x=0 y=0}
@@ -492,7 +492,7 @@ units={
 
     division={
         name="英国陆军第四十七“第一伦敦”师"
-        location=6130
+        location=6103
         division_template="领土防卫部队"
         start_experience_factor=0.1
         start_equipment_factor=0.5
