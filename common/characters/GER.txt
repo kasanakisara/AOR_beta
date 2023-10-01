@@ -134,7 +134,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { skilled_staffer war_hero old_guard career_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -226,10 +226,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = {brilliant_strategist armor_officer career_officer trait_engineer  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = -1
@@ -257,7 +257,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { urban_assault_specialist old_guard career_officer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
