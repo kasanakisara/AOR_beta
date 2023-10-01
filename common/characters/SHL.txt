@@ -1,6 +1,6 @@
 characters = {
 	SHL_Ernst_von_buseh = { #ernst_von_buseh
-		name = Ernst·von·buseh
+		name = SHL_Ernst_von_buseh
 		portraits = {
 			army = {
 				large = gfx/leaders/SHL/SHL_Ernst_von_buseh.png
@@ -30,7 +30,7 @@ characters = {
 		}
 	}
 	SHL_Hans_valentin_hube = { #hans_valentin_hube
-		name = Hans·valentin·hube
+		name = SHL_Hans_valentin_hube
 		portraits = {
 			army = {
 				large = gfx/leaders/SHL/SHL_Hans_valentin_hube.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	SHL_Conrad_albrecht = { #conrad_albrecht
-		name = Conrad·albrecht
+		name = SHL_Conrad_albrecht
 		portraits = {
 			army = {
 				large = gfx/leaders/SHL/SHL_Conrad_albrecht.png
@@ -92,7 +92,7 @@ characters = {
 		}
 	}
 	SHL_Erich_raeder = { #erich_raeder
-		name = Erich·raeder
+		name = SHL_Erich_raeder
 		portraits = {
 			army = {
 				large = gfx/leaders/SHL/SHL_Erich_raeder.png
@@ -127,7 +127,7 @@ characters = {
 		}
 	}
 	SHL_Wilhelm_swz = { #wilhelm_swz
-		name = Wilhelm·schweizer
+		name = SHL_Wilhelm_swz 
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SHL_Wilhelm_swz
@@ -144,7 +144,7 @@ characters = {
 		}
 	}
 	SHL_Wilhelm_koenen = { #wilhelm_koenen
-		name = Wilhelm·koenen
+		name = SHL_Wilhelm_koenen
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SHL_Wilhelm_koenen
@@ -161,7 +161,7 @@ characters = {
 		}
 	}
 	SHL_Karl_doenitz = { #karl_doenitz
-		name = Karl·doenitz
+		name = SHL_Karl_doenitz
 		portraits = {
 			army = {
 				large = gfx/leaders/SHL/SHL_Karl_doenitz.png
@@ -183,7 +183,7 @@ characters = {
 		}
 	}
 	SHL_Kirill = { #kirill
-		name = Kirill
+		name = SHL_Kirill
 		portraits = {
 			army = {
 				large = GFX_portrait_SHL_Kirill

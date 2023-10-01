@@ -22,6 +22,10 @@ on_actions = {
 			}
 			HAN = {
 			country_lock_all_division_template = yes
+			set_division_force_allow_recruiting ={
+			division_template ="汉诺威防卫旅"
+			force_allow_recruiting = yes
+				}
 			}
 			MEK = {
 			country_lock_all_division_template = yes

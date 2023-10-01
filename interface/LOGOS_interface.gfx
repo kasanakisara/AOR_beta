@@ -201,6 +201,10 @@ spriteTypes = {
 		name = "GFX_portrait_MXS_Carlota"
 		texturefile = "gfx/leaders/MXS/Charlotte.png"
 	}
+	spriteType = { #谁家鲁登道夫
+		name = "GFX_portrait_Erich_Ludendorff"
+		texturefile = "gfx/leaders/NAU/aw3nq-kbu7m.dds"
+	}
 	#巴伐利亚将领
 	spriteType = { 
 		name = "GFX_portrait_friedrich_dollma"

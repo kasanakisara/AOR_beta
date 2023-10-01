@@ -4,7 +4,7 @@ Erich_Ludendorff= {
 		portraits = {
 			army = {
 				large = GFX_portrait_Erich_Ludendorff
-small = GFX_portrait_Erich_Ludendorff_small
+				small = GFX_portrait_Erich_Ludendorff_small
 			}
 		}
 		field_marshal = {
@@ -95,11 +95,11 @@ small = GFX_portrait_Karl_von_Einem_small
 	}
 
 Carl_Heinrich_von_Stulpnagel= { 
-		name = Carl_Heinrich_von_Stülpnagel
+		name = Carl_Heinrich_von_Stulpnagel
 		portraits = {
 			army = {
-				large = GFX_portrait_Carl_Heinrich_von_Stülpnagel
-small = GFX_portrait_Carl_Heinrich_von_Stülpnagel_small
+				large = GFX_portrait_Carl_Heinrich_von_Stulpnagel
+small = GFX_portrait_Carl_Heinrich_von_Stulpnagel_small
 			}
 		}
 		corps_commander = {
@@ -178,7 +178,6 @@ Moriz_von_Lyncker= {
 				large = GFX_portrait_Moriz_von_Lyncker
 
 small = GFX_portrait_Moriz_von_Lyncker
-_small
 			}
 		}
 		field_marshal = {
