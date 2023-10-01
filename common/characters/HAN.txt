@@ -1,6 +1,6 @@
 characters = {
 	HAN_Alexander_Adolf_August_Karl_Singen = { #Alexander_Adolf_August_Karl_Singen
-		name = Alexander·Adolf·August·Karl·Singen
+		name = HAN_Alexander_Adolf_August_Karl_Singen
 		portraits = {
 			army = {
 				large = gfx/leaders/HAN/Alexander_Adolf_August_Karl_Singen.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	HAN_Alexander_Von_Kruck = { #Alexander_Von_Kruck
-		name = Alexander·Von·Kruck
+		name = HAN_Alexander_Von_Kruck
 		portraits = {
 			army = {
 				large = gfx/leaders/HAN/Alexander_Von_Kruck.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	HAN_August_Wilhelm_hayes = { #August_Wilhelm_hayes
-		name = August·Wilhelm·hayes
+		name = HAN_August_Wilhelm_hayes
 		portraits = {
 			army = {
 				large = gfx/leaders/HAN/August_Wilhelm_hayes.png
@@ -91,7 +91,7 @@ characters = {
 		}
 	}
 	HAN_Heinz_Wilhelm_Guderian = { #Heinz_Wilhelm_Guderian
-		name = Heinz·Wilhelm·Guderian
+		name = HAN_Heinz_Wilhelm_Guderian
 		portraits = {
 			army = {
 				large = gfx/leaders/HAN/Heinz_Wilhelm_Guderian.png
@@ -122,7 +122,7 @@ characters = {
 		}
 	}
 	HAN_Max_von_bohn = { #Max_von_bohn
-		name = Max·von·bohn
+		name = HAN_Max_von_bohn
 		portraits = {
 			army = {
 				large = gfx/leaders/HAN/Max_von_bohn.png
@@ -152,7 +152,7 @@ characters = {
 		}
 	}
 	HAN_Wilhelm_Keitel = { #Wilhelm_Keitel
-		name = Wilhelm·Keitel
+		name = HAN_Wilhelm_Keitel
 		portraits = {
 			army = {
 				large =  gfx/leaders/HAN/Wilhelm_Keitel.png
