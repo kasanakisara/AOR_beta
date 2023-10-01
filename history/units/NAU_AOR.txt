@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "禁卫步兵师"		# Infantry Division
-	division_names_group = SPAN_INF_02
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,7 +22,6 @@
 
 division_template = {
 	name = "步兵师"		# Infantry Division
-	division_names_group = SPAN_INF_03
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -42,7 +40,6 @@ division_template = {
 
 division_template = {
 	name = "骠骑兵团"		# Infantry Division
-	division_names_group = SPAN_INF_03
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -55,7 +52,6 @@ division_template = {
 
 division_template = {
 	name = "预备步兵师"		# Infantry Division
-	division_names_group = SPAN_INF_03
 
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
