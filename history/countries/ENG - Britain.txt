@@ -216,3 +216,13 @@ complete_national_focus = ENG_xinshidaidejishi
 complete_national_focus = ENG_shenglidexiyue
 complete_national_focus = ENG_wudengzuoweicijianweiyiduoshou
 complete_national_focus = ENG_bianjiujiayushidaijulang
+
+
+oob="ENG_1919"
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 20000
+    producer = ENG
+}
+
