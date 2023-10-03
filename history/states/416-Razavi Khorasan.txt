@@ -4,7 +4,11 @@ state={
 	name="STATE_416"
 	manpower = 1059739
 	state_category = rural
-
+	resources={
+		chromium = 4
+		aluminium = 2
+		tungsten = 2
+	}
 	history={
 		owner = PER
 		buildings = {
