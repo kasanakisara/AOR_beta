@@ -558,3 +558,27 @@ news_event = { #倍倍尔逝世
 		trigger = {has_government = Anarcho}
 	}
 }
+news_event = { #起义寄辣！
+	id = AOR_news.32
+	title = AOR_news.32.t
+	desc = AOR_news.32.d
+	picture = GFX_AOR_news.32_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.32.a
+	}
+}
+news_event = { #1920打输了，1922再打一次！
+	id = AOR_news.33
+	title = AOR_news.33.t
+	desc = AOR_news.33.d
+	picture = GFX_AOR_news.33_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.33.a
+	}
+}
