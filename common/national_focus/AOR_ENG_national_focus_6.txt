@@ -1,0 +1,270 @@
+focus_tree = {
+	id = ENG_National_focus_6
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = baoyuzhixai_shijieaitan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 7
+		y = 0
+
+		completion_reward = {
+			add_ideas = ENG_baoyuqingxieerxia
+			
+		}
+
+	}
+	focus = {
+		id = kaiyuanjieliu
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = baoyuzhixai_shijieaitan
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = xincaizhengbutiefa
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = baoyuzhixai_shijieaitan
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = qingdaoshangpin_yihengshichang
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = baoyuzhixai_shijieaitan
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = manmanchanglu_jingdaihuakai
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = xincaizhengbutiefa
+		}
+		prerequisite = {
+			focus = kaiyuanjieliu
+		}
+		prerequisite = {
+			focus = qingdaoshangpin_yihengshichang
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = zhijianzhedemolu
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = manmanchanglu_jingdaihuakai
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = tiantangzhilu
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = zhijianzhedemolu
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = lingnashuizhe_xiaoyanchangkai
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = zhijianzhedemolu
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = xinlujincaodain
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = manmanchanglu_jingdaihuakai
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = sanghesitezhanxinrongguang
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = xinlujincaodain
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = gaironghuanmao
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = sanghesitezhanxinrongguang
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = zhujiuxinshidaiqiangdaizhijun
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = gaironghuanmao
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = fengbaoyibuzaipingxi
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = manmanchanglu_jingdaihuakai
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = fangyanwnagqu_jinshichixie
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = fengbaoyibuzaipingxi
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = xinshijiehuzhuxuanyan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = fangyanwnagqu_jinshichixie
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = baerganzhixing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = fengbaoyibuzaipingxi
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = tiemuzhongsui_shijiechongming
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = xinshijiehuzhuxuanyan
+		}
+		prerequisite = {
+			focus = baerganzhixing
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = xinshijiezhizhu_dingjunlintianjia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = haowuxiaoyanzhizhanzheng
+		}
+		prerequisite = {
+			focus = zhujiuxinshidaiqiangdaizhijun
+		}
+		prerequisite = {
+			focus = tiemuzhongsui_shijiechongming
+		}
+		x = 7
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = lingzhnegfuzhixinren_chonghuidianfeng
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = lingnashuizhe_xiaoyanchangkai
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = haowuxiaoyanzhizhanzheng
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = tiantangzhilu
+		}
+		prerequisite = {
+			focus = lingzhnegfuzhixinren_chonghuidianfeng
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		}
+	}
+}
