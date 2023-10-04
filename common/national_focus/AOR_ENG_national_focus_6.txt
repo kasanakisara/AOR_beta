@@ -17,7 +17,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ENG_baoyuqingxieerxia
-			
+			hidden_effect = {
+				126 = {
+					add_dynamic_modifier = {
+						modifier = ENG_zuidagongyechanzhi
+					}
+				}
+			}
 		}
 
 	}
@@ -85,6 +91,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		completion_reward = {
+			country_event = { id = ENG.10 }
 		}
 	}
 	focus = {
@@ -121,6 +128,8 @@ focus_tree = {
 		x = 7
 		y = 4
 		completion_reward = {
+			army_experience = 50
+			add_ideas = ENG_yinglianbangbuduigexin
 		}
 	}
 	focus = {
@@ -220,6 +229,8 @@ focus_tree = {
 		x = 11
 		y = 7
 		completion_reward = {
+			add_political_power = 50
+			country_event = { id = ENG.11 }
 		}
 	}
 	focus = {
@@ -238,6 +249,7 @@ focus_tree = {
 		x = 7
 		y = 9
 		completion_reward = {
+			country_event = { id = ENG.12 }
 		}
 	}
 	focus = {
@@ -265,6 +277,7 @@ focus_tree = {
 		x = 3
 		y = 7
 		completion_reward = {
+			remove_ideas = baoyujianhuan
 		}
 	}
 }

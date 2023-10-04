@@ -153,7 +153,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = GFX_ENG_shiyelangchao
+			picture = GFX_ENG_baoyuqingxieerxia
 
 			removal_cost = -1
 
@@ -163,9 +163,6 @@ ideas = {
 				stability_weekly = -0.05
 				production_speed_industrial_complex_factor = -0.25
 				production_speed_naval_base_factor = -0.25
-
-				LOCAL_BUILDING_SLOTS_FACTOR = -0.15
-
 				production_speed_rail_way_factor = -0.25
 				political_advisor_cost_factor = 1
 				tank_manufacturer_cost_factor = 1
@@ -175,10 +172,35 @@ ideas = {
 				industrial_concern_cost_factor = 1
 				production_speed_buildings_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.15
-				democratic_drift = -0.0015
-				MODIFIER_DRIFT_DEFENCE_FACTOR = -0.25
-
+			    DRIFT_DEFENCE_FACTOR = -0.25
 			}
 		}
+		ENG_yinglianbangbuduigexin = { #英联邦部队革新
+	    	allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_yinglianbangbuduigexin
+
+	    	removal_cost = -1
+
+	    	modifier = {
+				experience_gain_army_factor = 0.1
+				experience_loss_factor = -0.1
+	    	}
+		}
+		ENG_ribuluodiguo = { #日不落帝国
+	    	allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_ribuluodiguo
+
+	    	removal_cost = -1
+
+	    	modifier = {
+			
+	    	}
+	    }
 	}
 }
