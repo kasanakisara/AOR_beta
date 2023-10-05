@@ -189,6 +189,42 @@ ideas = {
 				experience_loss_factor = -0.1
 	    	}
 		}
+		ENG_yinglianbangbuduigexin_1 = { #英联邦部队革新
+	    	allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_yinglianbangbuduigexin
+
+	    	 removal_cost = -1
+
+	    	modifier = {
+	    		experience_gain_army_factor = 0.15
+				supply_consumption_factor = 0.1
+				unit_artillery_brigade_design_cost_factor = -0.6
+	    		experience_loss_factor = -0.1
+				hidden_modifier = {
+					CIVILIAN_FACTORY_USE = 3
+				}
+	    	}
+	    }
+		ENG_yinglianbangbuduigexin_2 = { #英联邦部队革新
+	    	allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_yinglianbangbuduigexin
+
+	     	removal_cost = -1
+
+	    	modifier = {
+	    		experience_gain_army_factor = 0.15
+				supply_consumption_factor = 0.1
+				unit_artillery_brigade_design_cost_factor = -0.6
+	    		experience_loss_factor = -0.1
+				army_attack_factor = 0.05
+	    	}
+	    }
 		ENG_ribuluodiguo = { #日不落帝国
 	    	allowed = {
 	    		always = yes
@@ -199,7 +235,56 @@ ideas = {
 	    	removal_cost = -1
 
 	    	modifier = {
-			
+				RESISTANCE_TICK_AUTO = -0.15
+				STABILITY_POPULARITY_FACTOR = 0.15
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.12
+				industrial_capacity_dockyard = 0.15
+	    	}
+	    }
+		ENG_zhunbeibukebimianzhizhan = { #zhunbeibukebimianzhizhan
+    		allowed = {
+    			always = yes
+    		}
+
+	    	picture = GFX_ENG_zhunbeibukebimianzhizhan
+
+	    	removal_cost = -1
+
+	    	modifier = {
+				production_speed_arms_factory_factor = 0.05
+				stability_factor = -0.1
+				OPERATIVE_SLOT = 1
+			}
+    	}
+		ENG_baerganjingjihezuo = { #巴尔干经济合作
+	    	allowed = {
+		    	always = yes
+	    	}
+
+	    	picture = GFX_ENG_baerganjingjihezuo
+
+	    	removal_cost = -1
+
+	    	modifier = {
+				consumer_goods_factor = -0.05
+			    production_speed_infrastructure_factor = 0.1
+				MIN_EXPORT_FACTOR = 0.1
+	    	}
+	    }
+		ENG_shouxiangguangbo = { #首相广播
+	    	allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_shouxiangguangbo
+
+	    	removal_cost = -1
+
+	    	modifier = {
+				war_support_factor = 0.15
+				political_power_gain = 0.2
 	    	}
 	    }
 	}

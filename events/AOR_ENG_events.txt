@@ -179,6 +179,77 @@ country_event = { #女王陛下的世界巡游
 
 	option = {
 		name = ENG.12.a
-		add_ideas = ribuluodiguo
+		add_ideas = ENG_ribuluodiguo
+	}
+}
+
+country_event = { #唐宁街10号广播
+	id = ENG.13
+	title = ENG.13.t
+	desc = ENG.13.d
+	picture = ENG.13.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.13.a
+		add_ideas = ENG_shouxiangguangbo
+	}
+}
+
+country_event = { #新世界演说
+	id = ENG.14
+	title = ENG.14.t
+	desc = ENG.14.d
+	picture = ENG.14.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.14.a
+	}
+}
+
+country_event = { #直面威胁
+	id = ENG.15
+	title = ENG.15.t
+	desc = ENG.15.d
+	picture = ENG.15.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.15.a
+	}
+}
+
+country_event = { #日不落 直至永远
+	id = ENG.16
+	title = ENG.16.t
+	desc = ENG.16.d
+	picture = ENG.16.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.16.a
+	}
+}
+
+news_event = { #xinshijie
+	id = ENG.17
+	title = ENG.17.t
+	desc = ENG.17.d
+	picture = ENG.17.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.17.a
 	}
 }
