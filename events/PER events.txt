@@ -172,7 +172,7 @@ country_event = { #军队现状
 	}
 }
 #吉兰苏维埃事件链
-country_event = { #施工队的报告
+country_event = { #勘探团队的报告
 	id = per.14
 	title = per.14.t
 	desc = per.14.d
@@ -183,7 +183,7 @@ country_event = { #施工队的报告
 		country_event = { id = per.15 dyas = 4}
 	}
 }
-country_event = { #勘探团队的报告
+country_event = { #施工队的报告
 	id = per.15
 	title = per.15.t
 	desc = per.15.d
@@ -225,7 +225,40 @@ country_event = { #吉兰已不在我们掌控中
 	option = { 
 		name = per.18.a
 		hidden_effect = {
-			PSR_666 = yes
+			420 = { set_demilitarized_zone = yes }
+		}
+	}
+}
+country_event = { #俄国赤色异教徒登陆安扎利
+	id = per.19
+	title = per.19.t
+	desc = per.19.d
+	picture = ""
+	trigger = {
+		date > 1920.5.2
+		tag = PER
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	option = { 
+		name = per.19.a
+		hidden_effect = {
+			country_event = { id = per.20 dyas = 30}
+		}
+	}
+}
+country_event = { #波斯苏维埃共和国宣告成立
+	id = per.20
+	title = per.20.t
+	desc = per.20.d
+	picture = ""
+	is_triggered_only = yes
+	option = { 
+		name = per.20.a
+		hidden_effect = {
+			PSR_666 = YES
 		}
 	}
 }
