@@ -39,6 +39,14 @@ opinion_modifiers = {
 		value = -10
 	}
 
+	womendebaerganmengyou = { #巴尔干互助
+		value = 40
+	}
+
+	jinshichixie = { #尽是赤邪
+		value = -30
+	}
+
 	relationship_with_WUR = {
 		value = 30
 	}

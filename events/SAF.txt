@@ -223,7 +223,7 @@ country_event = {
 	picture = GFX_events_SAF_5
 	fire_only_once = yes
 	trigger = {
-	    date > 1920.5.5
+	    date > 1922.5.5
 		tag = SAF
 	}
     #那就这样吧  	

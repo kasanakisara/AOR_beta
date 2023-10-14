@@ -290,3 +290,27 @@ ENG_add_to_his_motion_and_change_to_none = {
 		ENG_Parliament_num_of_motion_going = 0
 	}
 }
+
+ENG_baerganmengyou = {
+	custom_effect_tooltip = ENG_baerganmengyou_tt
+	hidden_effect = {
+		ENG = {
+			add_opinion_modifier = {
+				target = ROM
+				modifier = womendebaerganmengyou
+			}
+			add_opinion_modifier = {
+				target = GRE
+		    	modifier = womendebaerganmengyou
+		    }
+			add_opinion_modifier = {
+				target = BUL
+				modifier = womendebaerganmengyou
+			}
+			add_opinion_modifier = {
+				target = SER
+				modifier = womendebaerganmengyou
+			}
+		}
+	}
+}

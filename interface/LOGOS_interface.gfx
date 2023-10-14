@@ -608,6 +608,19 @@ spriteTypes = {
 		name = "GFX_BAV.10_pic"
 		texturefile = "gfx/event_pictures/BAV.10_pic.png"
 	}
+	#柏林事件图片
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.1_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.1_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.2_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.2_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.3_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.3_pic.png"
+	}
 	#巴伐利亚第一阶段国策
 spriteType = {
   name = "GFX_goal_BAV_civil_War_gone"

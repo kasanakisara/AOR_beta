@@ -23,6 +23,12 @@ focus_tree = {
 		ai_will_do = {
 			base = 0
 		}
+		available = {	
+			custom_trigger_tooltip = {
+				tooltip = GER.1.tt
+				always = no
+				}
+		}
 		allow_branch = {
 			NOT = {
 				OR = {
@@ -949,6 +955,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AOR_GER_Politics_21
 		}
+		allow_branch = {
+				always = no
+			}
 		x = 32
 		y = 0
 		ai_will_do = {
@@ -1360,7 +1369,7 @@ focus_tree = {
 		id = AOR_GER_fate_1
 		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 10.00
-		x = 21
+		x = 16
 		y = 9
 		ai_will_do = {
 			base = 0
@@ -1748,6 +1757,9 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_GER_fate_1
 		}
+		allow_branch = {
+				always = no
+			}
 		mutually_exclusive = {
 			focus = AOR_GER_fate_12
 			focus = AOR_GER_fate_3
@@ -1789,6 +1801,9 @@ focus_tree = {
 		id = AOR_GER_fate_21
 		icon = GFX_Eric_democratic_state
 		cost = 5.00
+		allow_branch = {
+		always = no
+		}
 		prerequisite = {
 			focus = AOR_GER_fate_12
 			focus = AOR_GER_fate_20
@@ -1923,7 +1938,7 @@ focus_tree = {
 		id = AOR_GER_Industry_1
 		icon = GFX_Eric_hard_journey
 		cost = 5.00
-		x = 46
+		x = 35
 		y = 0
 		offset = {
 			x = -25

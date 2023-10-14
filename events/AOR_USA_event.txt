@@ -247,15 +247,9 @@ country_event = {
 				transfer_state = 374
 				transfer_state = 932
 				transfer_state = 922
-				transfer_state = 383
-				transfer_state = 926
-				transfer_state = 923
-				transfer_state = 924
-				transfer_state = 925
-				transfer_state = 381
-				transfer_state = 388
-				transfer_state = 386
-				transfer_state = 382
+
+
+
 
 				add_state_core = 366
 				add_state_core = 365
@@ -279,7 +273,6 @@ country_event = {
 				add_state_core = 381
 				add_state_core = 388
 				add_state_core = 386
-				transfer_state = 382
 				add_manpower = 10000
 				}
 				

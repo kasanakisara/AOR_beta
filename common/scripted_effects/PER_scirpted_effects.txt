@@ -22,9 +22,7 @@ PER_Fighting_inflation_666 = {#通胀效果
 			limit = { 
 				has_idea = PER_Fighting_inflation_1
 			}
-			swap_ideas = {
-				remove_idea = PER_Fighting_inflation_1
-			}
+			remove_idea = {PER_Fighting_inflation_1}
 		}
 	}
 }
@@ -80,9 +78,7 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 			limit = { 
 				has_idea = PER_Agricultural_Jihad_Preliminary_3
 			}
-			swap_ideas = {
-				remove_idea = PER_Agricultural_Jihad_Preliminary_3
-			}
+			remove_idea = {PER_Agricultural_Jihad_Preliminary_3}
 		}
 	}
 }

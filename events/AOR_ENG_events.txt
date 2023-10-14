@@ -138,3 +138,118 @@ country_event = { #残酷的戏剧
 		name = ENG.9.a
 	}
 }
+
+country_event = { #执剑者的末路
+	id = ENG.10
+	title = ENG.10.t
+	desc = ENG.10.d
+	picture = ENG.10.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.10.a
+		add_political_power = 25
+	}
+}
+
+country_event = { #新曙光
+	id = ENG.11
+	title = ENG.11.t
+	desc = ENG.11.d
+	picture = ENG.11.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.11.a
+	}
+}
+
+country_event = { #女王陛下的世界巡游
+	id = ENG.12
+	title = ENG.12.t
+	desc = ENG.12.d
+	picture = ENG.12.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.12.a
+		add_ideas = ENG_ribuluodiguo
+	}
+}
+
+country_event = { #唐宁街10号广播
+	id = ENG.13
+	title = ENG.13.t
+	desc = ENG.13.d
+	picture = ENG.13.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.13.a
+		add_ideas = ENG_shouxiangguangbo
+	}
+}
+
+country_event = { #新世界演说
+	id = ENG.14
+	title = ENG.14.t
+	desc = ENG.14.d
+	picture = ENG.14.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.14.a
+	}
+}
+
+country_event = { #直面威胁
+	id = ENG.15
+	title = ENG.15.t
+	desc = ENG.15.d
+	picture = ENG.15.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.15.a
+	}
+}
+
+country_event = { #日不落 直至永远
+	id = ENG.16
+	title = ENG.16.t
+	desc = ENG.16.d
+	picture = ENG.16.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.16.a
+	}
+}
+
+news_event = { #xinshijie
+	id = ENG.17
+	title = ENG.17.t
+	desc = ENG.17.d
+	picture = ENG.17.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.17.a
+	}
+}

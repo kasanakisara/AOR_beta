@@ -89,6 +89,8 @@ recruit_character = GER_Kurt_student
 recruit_character = GER_Erich_von_manstein
 recruit_character = GER_Werner_von_fridge
 
+start_national_focus = AOR_GER_Politics_21
+
 GER = {
 country_event = { days = 1249 id = event_GER.1 }
 }

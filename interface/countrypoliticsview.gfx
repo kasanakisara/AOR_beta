@@ -22,7 +22,10 @@ spriteTypes = {
 		name = "GFX_countryview_government_in_exile_bg"
 		texturefile = "gfx/interface/government_in_exile/countryview_government_in_exile_bg.dds"
 	}
-
+	spriteType = {
+		name = "GFX_tiled_window_pol_spirit"
+		texturefile = "gfx/interface/GFX_tiled_window_pol_spirit.dds"
+	}
 	spriteType = {
 		name = "GFX_countryview_exile_my_legitimacy"
 		texturefile = "gfx/interface/government_in_exile/autonomy_exiles.dds"

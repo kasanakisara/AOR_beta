@@ -5,24 +5,64 @@ country_event = {
 	id = AOR_GER_timeaxis.1
 	title = AOR_GER_timeaxis.1.t
 	desc = AOR_GER_timeaxis.1.desc
-	picture = 1
+	picture = GFX_AOR_GER_timeaxis.1_pic
 	is_triggered_only = yes
 	option = { #谢邀
 		trigger = {
+		 OR = {
+			has_idea = Compact_of_German_Confederation
+			has_idea = Compact_of_German_Confederation_1 
+			}
+			NOT = { tag = BAV }
 			NOT = { tag = GER }
 		}
+		ai_chance = {factor = 40}
 		name = AOR_GER_timeaxis.1.a
 		custom_effect_tooltip = AOR_GER_timeaxis.1.tt1
 		add_political_power = 5
 		add_command_power = 5
 		set_country_flag = AOR_GER_flag_attend_the_meeting
 	}
+	option = { #不会去的
+		trigger = {
+			has_idea = Compact_of_German_Confederation_1
+			NOT = { tag = BAV }
+		}
+		ai_chance = {factor = 60}
+		name = AOR_GER_timeaxis.1.c
+		custom_effect_tooltip = AOR_GER_timeaxis.1.tt3
+		add_political_power = -5
+		set_country_flag = AOR_GER_flag_not_attend_the_meeting
+	}
+	option = { #巴苏，可能去？
+		trigger = {
+			 tag = BAV
+		}
+		ai_chance = {factor = 60}
+		name = AOR_GER_timeaxis.1.e
+		custom_effect_tooltip = AOR_GER_timeaxis.1.tt4
+		add_political_power = 5
+		add_command_power = 5
+		set_country_flag = AOR_GER_flag_attend_the_meeting
+		GER = { country_event = AOR_GER_timeaxis.10}
+	}
+	option = { #巴苏，可能不去？
+		trigger = {
+			 tag = BAV
+		}
+		ai_chance = {factor = 40}
+		name = AOR_GER_timeaxis.1.f
+		custom_effect_tooltip = AOR_GER_timeaxis.1.tt3
+		add_political_power = -5
+		set_country_flag = AOR_GER_flag_not_attend_the_meeting
+	}
 	option = { #我们将履行作为中央政府的职责
 		trigger = {
 			tag = GER
 		}
+		ai_chance = {factor = 100}
 		name = AOR_GER_timeaxis.1.b
-		custom_effect_tooltip = AOR_GER_timeaxis.1.tt1
+		custom_effect_tooltip = AOR_GER_timeaxis.1.tt2
 		add_political_power = 15
 		add_command_power = 10
 	}
@@ -32,19 +72,15 @@ country_event = {
 	id = AOR_GER_timeaxis.2
 	title = AOR_GER_timeaxis.2.t
 	desc = AOR_GER_timeaxis.2.desc
-	picture = 1
+	picture = GFX_AOR_GER_timeaxis.1_pic
 	trigger = {
 		tag = GER	
-		NAU = { has_country_flag = flag_attend_the_meeting }
-		HAN = { has_country_flag = flag_attend_the_meeting }
-		BAV = { has_country_flag = flag_attend_the_meeting }
-		SIL = { has_country_flag = flag_attend_the_meeting }
-		KSH = { has_country_flag = flag_attend_the_meeting }
-		WUR = { has_country_flag = flag_attend_the_meeting }
-		SAX = { has_country_flag = flag_attend_the_meeting }
-		PRE = { has_country_flag = flag_attend_the_meeting }
-		SHL = { has_country_flag = flag_attend_the_meeting }
-		MEK = { has_country_flag = flag_attend_the_meeting }
+		HAN = { has_country_flag = AOR_GER_flag_attend_the_meeting }
+		SIL = { has_country_flag = AOR_GER_flag_attend_the_meeting }
+		KSH = { has_country_flag = AOR_GER_flag_attend_the_meeting }
+		SAX = { has_country_flag = AOR_GER_flag_attend_the_meeting }
+		PRE = { has_country_flag = AOR_GER_flag_attend_the_meeting }
+		MEK = { has_country_flag = AOR_GER_flag_attend_the_meeting }
 	}
 	option = { #先讨论邦联的通货膨胀问题
 		name = AOR_GER_timeaxis.2.a
@@ -331,4 +367,17 @@ country_event = {
 		add_political_power = 20
 		add_ideas = AOR_GER_idea_Berlin_NOT_support
 	}
+}
+
+#倍倍尔来了！
+country_event = {
+	id = AOR_GER_timeaxis.10
+	title = AOR_GER_timeaxis.10.t
+	desc = AOR_GER_timeaxis.10.desc
+	picture = GFX_AOR_GER_timeaxis.3_pic
+	is_triggered_only = yes
+	option = {
+		name = AOR_GER_timeaxis.10.a
+	}
+
 }
