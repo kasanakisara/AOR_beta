@@ -239,6 +239,7 @@ country_event = {
 				add_state_core = 541
 				add_manpower = 10000
 				}
+		SWC = {load_oob = "SWC_war"}
 		SWC = {
 		declare_war_on = {
 			target = SAF

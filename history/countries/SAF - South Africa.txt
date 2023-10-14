@@ -1,7 +1,6 @@
 ﻿capital = 275
 
-#oob = "SAF_1936"
-
+oob = "SAF_1919"
 create_country_leader = {
 	name = "Louis Botha"
 	desc = ""
