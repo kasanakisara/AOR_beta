@@ -30,8 +30,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_islamdemocratic"
-		textureFile = "gfx/interface/ideologies/islamdemocratic.dds"
+		name = "GFX_ideology_islamdemcratic"
+		textureFile = "gfx/interface/ideologies/islamdemcratic.dds"
 	}
 	
 	spriteType = {
@@ -463,7 +463,7 @@ spriteTypes = {
 		name = "GFX_ideology_"
 		textureFile = "gfx/interface/ideologies/.dds"
 	}
-
+}
 
 
 
