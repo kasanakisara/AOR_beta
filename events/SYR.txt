@@ -30,9 +30,9 @@ country_event = {
 	option = {
 		news_event = { id = AOR_news.33}
 		name = SYR.2.a
+		SYR = {load_oob = "SYR_civil_war"}
 		SYI = {
-				transfer_state = 344
-				transfer_state = 350
+
 				transfer_state = 553
 				add_state_core = 676
 				add_state_core = 677
@@ -41,13 +41,44 @@ country_event = {
 				add_state_core = 350
 				add_state_core = 553
 				add_manpower = 10000
+
 				}
+		
 		SYI = {
-		declare_war_on = {
-			target = SYR
-			type = civil_war
+			declare_war_on = {
+				target = SYR
+				type = civil_war
+				}
 			}
+		OIC = {
+			transfer_state = 344			
+			add_state_core = 344
+			add_state_core = 350
+
+			add_manpower = 10000
 		}
-    }
+		
+
+		OIC = {
+			declare_war_on = {
+				target = SYR
+				type = civil_war
+				}
+			}
+		KUR = {
+			transfer_state = 350			
+			add_state_core = 344
+			add_state_core = 350
 	
+			add_manpower = 10000
+		}
+	
+			
+		KUR = {
+			declare_war_on = {
+				target = SYR
+				type = civil_war
+				}
+			}
+ 	}
 }
