@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		Stab_in_the_back = {
+			
+			picture = Stab_in_the_back
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.25
+			}
+		}
+		Brutal_repression = {
+			
+			picture = Brutal_repression
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				resistance_target = -0.25
+				compliance_growth = -0.5
+			}
+		}
+	}
+}

@@ -94,4 +94,7 @@ create_country_leader = {
 SYR = {
 	country_event = { days = 350 id = SYR.1 }
 	}
-	
+add_ideas = {
+Stab_in_the_back
+Brutal_repression
+}
