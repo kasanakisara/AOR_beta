@@ -249,3 +249,17 @@ country_event = {
     }
 	
 }
+country_event = {
+	id = SAF.100
+	title = SAF.100.t
+	desc = SAF.100.d
+	picture = GFX_events_SAF_5
+	fire_only_once = yes	
+	option = {
+		news_event = { id = AOR_news.35 }
+		name = SAF.5.a
+
+		}
+    }
+	
+}

@@ -1,88 +1,154 @@
 on_actions = {
-	#��лTNO������
-	#注：FROM是打赢的国家，而ROOT是打输的国家
 	on_capitulation = {
 		effect = {
-			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
-
-			set_global_flag = show_peace_popup_alert
-			FROM = {
-				save_global_event_target_as = winning_country
-			}
-			ROOT = {
-				save_global_event_target_as = losing_country
-			}
-
-			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
-
+			###FROM为赢家，ROOT为输家
+			###南非叛乱
 			if = {
 				limit = {
-					event_target:losing_country = {
-						any_allied_country = {
-							has_war_together_with = event_target:losing_country
-						}
-					}
-				}
-				set_global_flag = losing_country_multiple
-			}
-
-			if = {
-				limit = {
-					event_target:winning_country = {
-						any_allied_country = {
-							has_war_together_with = event_target:winning_country
-						}
-					}
-				}
-				set_global_flag = winning_country_multiple
-			}
-			add_to_variable = { global.peace_popup_dirty = 1 }
-				log = "war_won"
-				set_global_flag = war_won
-
-				
-		if = {
-	    limit = {
-		event_target:winning_country = {
-		is_ai = yes
-		}
-	   }
-			every_state = {
-						limit = {
-							is_core_of = ROOT
-						}
-						add_core_of = FROM
-					}
-					every_state = {
-						limit = {
-							is_core_of = ROOT
-						}
-						remove_core_of = ROOT
-					}	
-        }
-					
-					if = {
-	    limit = {
-		event_target:winning_country = {
-		is_ai = yes
-		}
-	    }
-			ROOT = {
-			
-						every_unit_leader = {
-				
-						set_nationality = FROM
-					}
-					}
+					#南非胜利
 					FROM = {
-						annex_country = {
-							target = ROOT
-							transfer_troops = yes
-						}
-					}	
-         }
+						original_tag = SAF
+					}
+					ROOT = {
+						original_tag = SWC
+					}
+				}
+				SAF = {
+					annex_country = {
+						target = SWC
+						transfer_troops = no
+					}
+					country_event = {
+						id = SAF.100
+						days = 1
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+			else_if = {
+				limit = {
+					#叙利亚战争，政府军胜利
+					FROM = {
+						original_tag = SYR
+					}
+					ROOT = {
+						original_tag = SYI
+					}
+				}
+				SYR = {
+					annex_country = {
+						target = SYI
+						transfer_troops = no
+					}
+					country_event = {
+						id = SYR.100
+						days = 1
+					}
+				
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SYR
+					}
+					ROOT = {
+						original_tag = KUR
+					}
+				}
+				SYR = {
+					annex_country = {
+						target = KUR
+						transfer_troops = no
+					}
+				}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SYR
+					}
+					ROOT = {
+						original_tag = OIC
+					}
+				}
+				SYR = {
+					annex_country = {
+						target = OIC
+						transfer_troops = no
+					}
+				}
 				
 			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SYR
+					}
+					ROOT = {
+						original_tag = KUR
+					}
+				}
+				SYR = {
+					annex_country = {
+						target = KUR
+						transfer_troops = no
+					}
+				}
+				
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SYI
+					}
+					ROOT = {
+						original_tag = SYR
+					}
+				}
+				SYI = {
+					annex_country = {
+						target = SYR
+						transfer_troops = no
+					}
+				}
+				OIC = {
+					transfer_state = 344			
+					declare_war_on = {
+						target = KUR
+						type = civil_war
+						}
+				}
+				KUR = {
+					transfer_state = 350
+				}
+
+				
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = OIC
+					}
+					ROOT = {
+						original_tag = SYR
+					}
+				}
+				SYI = {
+					annex_country = {
+						target = OIC
+						transfer_troops = no
+					}
+				}
+				OIC = {
+					transfer_state = 344			
+					declare_war_on = {
+						target = KUR
+						type = civil_war
+						}
+				}
+				
+			}
+			}
+		}
 	}
-	
 }
