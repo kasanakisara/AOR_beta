@@ -424,7 +424,31 @@ spriteTypes = {
 		name = "GFX_idea_AOR_ORA_Workers_autonomy"
 		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
 	}
-	
+	#南非民族精神
+		spriteType = {
+		name = "GFX_idea_Land_of_diamonds_gold"
+		texturefile = "gfx/interface/ideas/Land_of_diamonds_gold.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Boer_question_mid"
+		texturefile = "gfx/interface/ideas/Boer_question_mid.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Negro_problem"
+		texturefile = "gfx/interface/ideas/Negro_problem.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Prince_of_Connaught"
+		texturefile = "gfx/interface/ideas/Prince_of_Connaught.png"
+	}
+		spriteType = {
+		name = "GFX_idea_White_mass_unemployment"
+		texturefile = "gfx/interface/ideas/White_mass_unemployment.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Agricultural_crisis"
+		texturefile = "gfx/interface/ideas/Agricultural_crisis.png"
+	}
 	
 	#事件链新闻
 		#比荷卢选举陷入僵局
