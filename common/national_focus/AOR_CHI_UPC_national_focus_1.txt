@@ -1,0 +1,507 @@
+focus_tree = {
+	id = CHI_UPC_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_Flag_Independence_0
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = CHI_cooperate_absolute_sincerity_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_Flag_Independence_0
+		}
+		mutually_exclusive = {
+			focus = CHI_jus_cause_enjoys_abundant_support_2
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = CHI_UN_XHGZJS_3
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_cooperate_absolute_sincerity_1
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_SLLXPJY_7
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_XHGZJS_3
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_XNTMHYS_8
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_XHGZJS_3
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_CSJBDZY_9
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_SLLXPJY_7
+		}
+		prerequisite = {
+			focus = CHI_UN_XNTMHYS_8
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_DZZCWZ_4
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_cooperate_absolute_sincerity_1
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_TJYXGJG_10
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_DZZCWZ_4
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_JCSYGHP_11
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_DZZCWZ_4
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_LSGMJ_12
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_TJYXGJG_10
+		}
+		prerequisite = {
+			focus = CHI_UN_JCSYGHP_11
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_GGJBDDB_5
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_cooperate_absolute_sincerity_1
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_JZNBKJF_13
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_GGJBDDB_5
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_DHJDBJC_14
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_GGJBDDB_5
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_XQMZZYF_15
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_DHJDBJC_14
+		}
+		prerequisite = {
+			focus = CHI_UN_JZNBKJF_13
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_JLHN_35
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_Flag_Independence_0
+		}
+		mutually_exclusive = {
+			focus = CHI_UN_JJHN_36
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = CHI_UN_ZQMZXZB_6
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_cooperate_absolute_sincerity_1
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_LHMZSYT_16
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_ZQMZXZB_6
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_YQNYZHQ_17
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_ZQMZXZB_6
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_CTWQCML_18
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_LHMZSYT_16
+		}
+		prerequisite = {
+			focus = CHI_UN_YQNYZHQ_17
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = CHI_jus_cause_enjoys_abundant_support_2
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_Flag_Independence_0
+		}
+		mutually_exclusive = {
+			focus = CHI_cooperate_absolute_sincerity_1
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = CHI_UN_FQNFDZB_19
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_jus_cause_enjoys_abundant_support_2
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_LLDFSQP_20
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_FQNFDZB_19
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_XNGHZJP_21
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_FQNFDZB_19
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_KDJBDTM_22
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_LLDFSQP_20
+		}
+		prerequisite = {
+			focus = CHI_UN_XNGHZJP_21
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_JJHN_36
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_Flag_Independence_0
+		}
+		mutually_exclusive = {
+			focus = CHI_UN_JLHN_35
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = CHI_UN_LLHNSDD_23
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_jus_cause_enjoys_abundant_support_2
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_FXJSXHB_24
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_LLHNSDD_23
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_LSJJSHJ_25
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_LLHNSDD_23
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_THZJFSJ_26
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_FXJSXHB_24
+		}
+		prerequisite = {
+			focus = CHI_UN_LSJJSHJ_25
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_ZQFGDYZ_27
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_jus_cause_enjoys_abundant_support_2
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_TTDWQTZ_28
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_ZQFGDYZ_27
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_JDDFJGW_29
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_ZQFGDYZ_27
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_JCHXCGH_30
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_TTDWQTZ_28
+		}
+		prerequisite = {
+			focus = CHI_UN_JDDFJGW_29
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_JNSTDTZ_31
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_jus_cause_enjoys_abundant_support_2
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = CHI_UN_SBSTGWZ_32
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JNSTDTZ_31
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_BZLQZYQ_33
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JNSTDTZ_31
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = CHI_UN_YJYMZSW_34
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_SBSTGWZ_32
+		}
+		prerequisite = {
+			focus = CHI_UN_BZLQZYQ_33
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = CHI_UN_QZXXGMD_37
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JLHN_35
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = CHI_UN_DZSGBFX_38
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JLHN_35
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = CHI_UN_DCGHYSA_39
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JJHN_36
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = CHI_UN_YZZTFQB_40
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JJHN_36
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = CHI_UN_NYGJCBJ_41
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CHI_UN_JJHN_36
+			focus = CHI_UN_JLHN_35
+		}
+		x = 18
+		y = 7
+
+	}
+}
