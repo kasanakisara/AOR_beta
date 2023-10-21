@@ -117,10 +117,10 @@ set_politics = {
 }
 
 set_popularities = {
-	Special = 40
-	Marxism = 25
-	Fascism = 30
-	Absolutism = 5
+	Special = 49
+	Marxism = 1
+	Fascism = 29
+	Absolutism = 21
 }
 create_country_leader = {
 	name = "KUR_Sheikh"

@@ -630,3 +630,15 @@ news_event = { #特斯拉！！
 		name = AOR_news.37.a
 	}
 }
+news_event = { #电波！！
+	id = AOR_news.38
+	title = AOR_news.38.t
+	desc = AOR_news.38.d
+	picture = GFX_AOR_news.38_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.38.a
+	}
+}
