@@ -70,26 +70,16 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Théophile Delcassé"
+	name = "Sultan al-Atrash"
 	desc = ""
-	picture = FRA.dds
-	ideology = liberalism
+	picture = "gfx/leaders/SYI/Sultan.png"
+	ideology = constitutionalism
 	traits = {
 		
 	}
 }
 
 
-
-create_country_leader = {
-	name = "Ghazi bin Faisal"
-	desc = ""
-	picture = GFX_portrait_Ghazi_bin_Faisal
-	ideology = despotism
-	traits = {
-		#
-	}
-}
 add_ideas = {
 	fight_for_freedom
 	aid_from_uk

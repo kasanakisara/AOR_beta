@@ -168,8 +168,8 @@ guiTypes = {
 						
 		containerWindowType = {
 			name = "autonomy_progress_view"
-			position = { x = 90 y = 310 }
-			size = { width = 245 height = 55 }
+			position = { x = 170= y = 245 }
+			size = { width = 170 height = 55 }
 			clipping = no
 
 			background = {
@@ -179,7 +179,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "current_autonomy_name"
-				position = { x = 92 y = 8 }
+				position = { x = 65 y = 8 }
 				font = "hoi_16mbs"
 				text = "autonomy"
 				fixedsize = yes
@@ -202,24 +202,24 @@ guiTypes = {
 				scale = 0.5
 			}
 			
-			iconType = {
-				name = "prev_autonomy_level_icon"
-				position = { x = 60 y = 9 }
-				quadTextureSprite = "GFX_autonomy_unknown_icon"
-			}
+#			iconType = {
+#				name = "prev_autonomy_level_icon"
+#				position = { x = 60 y = 9 }
+#				quadTextureSprite = "GFX_autonomy_unknown_icon"
+#			}
 			
 			iconType = {
 				name = "autonomy_progress"
 				spriteType = "GFX_subject_progressbar"
-				position = { x = 95 y = 29 }
+				position = { x = 70 y = 29 }
 				frame = 100
 			}
 			
-			buttonType = {
-				name = "next_autonomy_level"
-				position = { x = 190 y = 5 }
-				quadTextureSprite = "GFX_occupation_policy_button_selected"
-			}
+#			buttonType = {
+#				name = "next_autonomy_level"
+#				position = { x = 190 y = 5 }
+#				quadTextureSprite = "GFX_occupation_policy_button_selected"
+#			}
 			
 			iconType = {
 				name = "next_level_glow"
@@ -229,12 +229,12 @@ guiTypes = {
 				scale = 0.5
 			}
 			
-			iconType = {
-				name = "next_autonomy_level_icon"
-				position = { x = 195 y = 9 }
-				quadTextureSprite = "GFX_autonomy_unknown_icon"
-				alwaystransparent = yes
-			}
+#			iconType = {
+#				name = "next_autonomy_level_icon"
+#				position = { x = 195 y = 9 }
+#				quadTextureSprite = "GFX_autonomy_unknown_icon"
+#				alwaystransparent = yes
+#			}
 
 			iconType = {
 				name = "continuous_glow"

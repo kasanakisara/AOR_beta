@@ -394,7 +394,43 @@ spriteTypes = {
 		name = "GFX_idea_Benelux_GG"
 		texturefile = "gfx/interface/ideas/Benelux_GG.png"
 	}
-	
+	#叙利亚民族精神
+		spriteType = {
+		name = "GFX_idea_Stab_in_the_back"
+		texturefile = "gfx/interface/ideas/Stab_in_the_back.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_Brutal_repression"
+		texturefile = "gfx/interface/ideas/Brutal_repression.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Turkish_officer_corps"
+		texturefile = "gfx/interface/ideas/Turkish_officer_corps.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Regain_lost_ground"
+		texturefile = "gfx/interface/ideas/Regain_lost_ground.png"
+	}
+		spriteType = {
+		name = "GFX_idea_come_from_comfusion"
+		texturefile = "gfx/interface/ideas/come_from_comfusion.png"
+	}
+		spriteType = {
+		name = "GFX_idea_last_kurds"
+		texturefile = "gfx/interface/ideas/last_kurds.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Alone_and_no_help"
+		texturefile = "gfx/interface/ideas/Alone_and_no_help.png"
+	}
+		spriteType = {
+		name = "GFX_idea_fight_for_freedom"
+		texturefile = "gfx/interface/ideas/fight_for_freedom.png"
+	}
+		spriteType = {
+		name = "GFX_idea_aid_from_uk"
+		texturefile = "gfx/interface/ideas/aid_from_uk.png"
+	}
 	#阿工团民族精神
 	spriteType = {
 		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"

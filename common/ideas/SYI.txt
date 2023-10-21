@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		fight_for_freedom = {
 			
-			picture = fight_for_freedom
+			picture = idea_fight_for_freedom
 			
 			allowed = {
 				always = yes
@@ -20,7 +20,7 @@ ideas = {
 		}
 		aid_from_uk = {
 			
-			picture = aid_from_uk
+			picture = idea_aid_from_uk
 			
 			allowed = {
 				always = yes

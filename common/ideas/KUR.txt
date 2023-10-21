@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		last_kurds = {
 			
-			picture = last_kurds
+			picture = idea_last_kurds
 			
 			allowed = {
 				always = yes
@@ -20,7 +20,7 @@ ideas = {
 		}
 		Alone_and_no_help = {
 			
-			picture = Alone_and_no_help
+			picture = idea_Alone_and_no_help
 			
 			allowed = {
 				always = yes
