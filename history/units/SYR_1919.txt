@@ -3,14 +3,6 @@ division_template={
 	name="骑兵师"
 	regiments={
 	cavalry={x=0 y=0}
-	cavalry={x=0 y=1}
-	cavalry={x=0 y=2}
-	cavalry={x=1 y=0}
-	cavalry={x=1 y=1}
-	cavalry={x=1 y=2}
-	cavalry={x=2 y=0}
-	cavalry={x=2 y=1}
-	cavalry={x=2 y=2}
 	}
 	support ={
 		recon={x=0 y=0}
@@ -21,31 +13,23 @@ division_template={
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
-		infantry={x=1 y=2}
-		artillery_brigade={x=0 y=3}
-		artillery_brigade={x=1 y=3}
 	}
 	support = {
-	engineer={x=0 y=0}
-	artillery={x=0 y=1}
-
+	artillery={x=0 y=0}
 	}
 
 }
 units={
     division={
         name="第一叙利亚本土步兵"
-        location=4111
+        location=12473
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="第二叙利亚本土步兵"
-        location=4111
+        location=12079
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -58,87 +42,25 @@ units={
         start_equipment_factor=1
     }
 	division={
-        name="第四叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第五叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第六叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第七叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第八叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第九叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第十叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第十一叙利亚本土步兵"
-        location=4111
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第八叙利亚骑兵师"
-        location=4111
+        name="第四叙利亚骑兵师"
+        location=10106 	
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第九叙利亚骑兵师"
-        location=4111
+        name="第五叙利亚骑兵师"
+        location=1549
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第十叙利亚骑兵师"
-        location=4111
+        name="第六叙利亚骑兵师"
+        location=3942
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-	division={
-        name="第十一叙利亚骑兵师"
-        location=4111
-        division_template="骑兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
+
 }

@@ -13,10 +13,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "tur_Military"
+	name = "Military Government"
 	desc = ""
-	picture = tur_Military.dds
-	ideology = Absolutism
+	picture = "gfx/leaders/OIC/Military_Government.png"
+	ideology = miliciagov
 	traits = {
 		
 	}

@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		Stab_in_the_back = {
 			
-			picture = Stab_in_the_back
+			picture = idea_Stab_in_the_back
 			
 			allowed = {
 				always = yes
@@ -18,7 +18,7 @@ ideas = {
 		}
 		Brutal_repression = {
 			
-			picture = Brutal_repression
+			picture = idea_Brutal_repression
 			
 			allowed = {
 				always = yes

@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		Turkish_officer_corps= {
 			
-			picture = Turkish_officer_corps
+			picture = idea_Turkish_officer_corps
 			
 			allowed = {
 				always = yes
@@ -22,7 +22,7 @@ ideas = {
 		}
 		Regain_lost_ground = {
 			
-			picture = Regain_lost_ground
+			picture = idea_Regain_lost_ground
 			
 			allowed = {
 				always = yes
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		come_from_comfusion = {
-			picture = come_from_comfusion
+			picture = idea_come_from_comfusion
 			
 			allowed = {
 				always = yes

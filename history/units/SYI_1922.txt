@@ -1,20 +1,11 @@
 division_template={
 	name="起义大兵"
 	regiments={
-		infantry = {x=0 y=0}
-		infantry = {x=0 y=1}
-		infantry = {x=0 y=2}
-		infantry = {x=1 y=0}
-		infantry = {x=1 y=1}
-		infantry = {x=1 y=2}
-		infantry = {x=2 y=0}
-		infantry = {x=2 y=1}
-		infantry = {x=2 y=2}
-		artillery_brigade = {x=3 y=0}
+		irregular_infantry  = {x=0 y=0}
+		irregular_infantry = {x=0 y=1}
 	}
 	support = {
-		artillery = {x=0 y=0}
-		 engineer = {x=0 y=1}
+		 engineer = {x=0 y=0}
 	}
 }
 units={
@@ -27,68 +18,11 @@ units={
     }
 	division={
         name="第二民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第三民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第四民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第五民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第六民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-	division={
-        name="第七民兵师"
-        location=1108
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }division={
-        name="第八民兵师"
-        location=792
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }division={
-        name="第九民兵师"
-        location=792
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }division={
-        name="第十民兵师"
-        location=792
-        division_template="起义大兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }division={
-        name="第十一民兵师"
         location=792
         division_template="起义大兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
+
+
 }
