@@ -30,7 +30,9 @@ country_event = {
 	option = {
 		news_event = { id = AOR_news.33}
 		name = SYR.2.a
-
+		FRA = {end_puppet = SYR}
+		SYR = {add_ideas = { Proxy_war } 
+}
 		SYI = {
 
 				transfer_state = 553
@@ -133,7 +135,6 @@ country_event = {
 				type = civil_war
 			}
 		}
-		SYI = {load_oob = "ENG_1919"}
 		SYI = {load_oob = "SYI_1922"}
     }
 }

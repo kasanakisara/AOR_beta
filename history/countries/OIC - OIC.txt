@@ -6,9 +6,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	Absolutism = 60
-	Marxism = 10
-	Special = 30
+	Absolutism = 78
+	Marxism = 11
+	Special = 6
+	ISL_democratic = 5
 }
 
 create_country_leader = {

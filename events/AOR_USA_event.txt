@@ -52,54 +52,87 @@ country_event = {
 		name = USA.4.a
 	}
 }
+#################以下为科技类##################
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.105 #铁
+	title = USA.105.t
+	desc = USA.105.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.105.a
+		news_event = {id = AOR_news.34}
+	}
+}
+country_event = {
+	id = USA.106 #卡内基之死
+	title = USA.106.t
+	desc = USA.106.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.106.a
+		news_event = {id = AOR_news.35}
+	}
+}
+country_event = {
+	id = USA.107 #卡内基被瓜分
+	title = USA.107.t
+	desc = USA.107.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.107.a
+		news_event = {id = AOR_news.36}
+	}
+}
+country_event = {
+	id = USA.108 #特斯拉
+	title = USA.108.t
+	desc = USA.108.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
 
       
+	trigger = {
+		tag = USA
+	}
+      
 	option = {
-		name = USA.3.a
+		name = USA.108.a
+		news_event = {id = AOR_news.37}
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.109 #电波
+	title = USA.109.t
+	desc = USA.109.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
 
       
-	option = {
-		name = USA.3.a
+	trigger = {
+		tag = USA
 	}
-}
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
       
 	option = {
-		name = USA.3.a
+		name = USA.109.a
+		news_event = {id = AOR_news.38}
 	}
 }
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.3.a
-	}
-}
+#################科技类结束##################
 country_event = {
 	id = USA.3 #什么调研
 	title = USA.3.t
@@ -303,3 +336,4 @@ country_event = {
 		}
 	}
 }
+####记得！105-109已经被科技事件用了！##########
