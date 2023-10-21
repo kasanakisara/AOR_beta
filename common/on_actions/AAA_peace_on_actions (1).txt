@@ -21,6 +21,7 @@ on_actions = {
 					country_event = {
 						id = SAF.100
 						days = 1
+					
 					}
 				}
 				set_global_flag = skip_default_capitulation
@@ -46,7 +47,7 @@ on_actions = {
 					}
 				
 				}
-				FRa = {
+				FRA = {
 					puppet = SYR
 				}
 			}
@@ -120,9 +121,11 @@ on_actions = {
 						target = KUR
 						type = civil_war
 						}
+					
 				}
 				KUR = {
 					transfer_state = 350
+					
 				}
 
 				
@@ -140,6 +143,9 @@ on_actions = {
 					annex_country = {
 						target = OIC
 						transfer_troops = no
+						remove_ideas = {
+							come_from_comfusion
+						}
 					}
 				}
 				OIC = {
@@ -147,6 +153,7 @@ on_actions = {
 					declare_war_on = {
 						target = KUR
 						type = civil_war
+						
 						}
 				}
 				

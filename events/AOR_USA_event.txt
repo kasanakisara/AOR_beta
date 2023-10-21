@@ -53,51 +53,69 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.5 #铁
+	title = USA.5.t
+	desc = USA.5.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-
+	trigger = {
+		date > 1919.8.15
+		tag = USA
+	}
       
 	option = {
-		name = USA.3.a
+		name = USA.5.a
+		news_event = {id = AOR_news.34}
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.6 #什么调研
+	title = USA.6.t
+	desc = USA.6.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-
+	trigger = {
+		date > 1919.11.1
+		tag = USA
+	}
       
 	option = {
-		name = USA.3.a
+		name = USA.6.a
+		news_event = {id = AOR_news.35}
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.7 #什么调研
+	title = USA.7.t
+	desc = USA.7.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-
+	trigger = {
+		date > 1920.2.4
+		tag = USA
+	}
       
 	option = {
-		name = USA.3.a
+		name = USA.7.a
+		news_event = {id = AOR_news.36}
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA.8 #什么调研
+	title = USA.8.t
+	desc = USA.8.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
 
       
+	trigger = {
+		date > 1920.9.1
+		tag = USA
+	}
+      
 	option = {
-		name = USA.3.a
+		name = USA.7.a
+		news_event = {id = AOR_news.37}
 	}
 }
 country_event = {

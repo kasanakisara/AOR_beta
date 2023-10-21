@@ -117,3 +117,19 @@ add_ideas = {
 	USA_Dollar_bottom
 }
 
+USA = {country_event = {
+	days = 30 id = USA.5
+	}
+}
+USA = {country_event = {
+	days = 95 id = USA.6
+	}
+}
+USA = {country_event = {
+	days = 185 id = USA.7
+	}
+}
+USA = {country_event = {
+	days = 395 id = USA.8
+	}
+}
