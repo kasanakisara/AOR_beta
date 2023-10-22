@@ -47,21 +47,6 @@ characters = {
 		}
 	}
 
-	TUR_PACA_3={
-		name= "Djemal Passha"
-		portraits={
-			civilian={
-				large="gfx/leaders/TUR/1673117772769.dds"
-			}
-		}
-		country_leader={
-			ideology = despotism吗
-			desc = "TUR_DJEMAL_DESC"
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 
 	TUR_KEMEL={
 		name= "Mustafa Kemal"
