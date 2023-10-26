@@ -261,10 +261,8 @@ country_event = {
 	picture = GFX_events_SAF_5
 	fire_only_once = yes	
 	option = {
-		news_event = { id = AOR_news.37 }
 		name = SAF.5.a
 
 		}
     }
 	
-}

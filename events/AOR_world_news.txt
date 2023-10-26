@@ -642,3 +642,87 @@ news_event = { #电波！！
 		name = AOR_news.38.a
 	}
 }
+news_event = { #君堡！！！
+	id = AOR_news.39
+	title = AOR_news.39.t
+	desc = AOR_news.39.d
+	picture = GFX_AOR_news.39_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.39.a
+	}
+}
+news_event = { #伊斯坦布尔！！！
+	id = AOR_news.40
+	title = AOR_news.40.t
+	desc = AOR_news.40.d
+	picture = GFX_AOR_news.40_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.40.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.41
+	title = AOR_news.41.t
+	desc = AOR_news.41.d
+	picture = GFX_AOR_news.41_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.41.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.42
+	title = AOR_news.42.t
+	desc = AOR_news.42.d
+	picture = GFX_AOR_news.42_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.42.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.43
+	title = AOR_news.43.t
+	desc = AOR_news.43.d
+	picture = GFX_AOR_news.43_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.43.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.44
+	title = AOR_news.44.t
+	desc = AOR_news.44.d
+	picture = GFX_AOR_news.44_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.44.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.45
+	title = AOR_news.45.t
+	desc = AOR_news.45.d
+	picture = GFX_AOR_news.45_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.45.a
+	}
+}
