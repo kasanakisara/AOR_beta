@@ -265,11 +265,10 @@ country_event = {
 	desc = BAV.14.d
 	picture = GFX_BAV.14_pic
 	trigger = {
-	    date > 1922.8.1
+	    date > 1920.2.12
 		tag = BAV
 	}
 	
-	mean_time_to_happen = { day = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -283,6 +282,32 @@ country_event = {
 			}
 		set_cosmetic_tag = BAV_WUR_1
 			}
+        } 
+
+ }
+country_event = {
+	id = BAV.50
+	title = BAV.50.t
+	desc = BAV.50.d
+	picture = GFX_BAV.50_pic
+	
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.50.a
+        } 
+
+ }
+ country_event = {
+	id = BAV.51
+	title = BAV.51.t
+	desc = BAV.51.d
+	picture = GFX_BAV.51_pic
+	
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.51.a
         } 
 
  }

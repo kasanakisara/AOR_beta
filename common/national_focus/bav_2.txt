@@ -1,0 +1,548 @@
+focus_tree = {
+	id = BAV_2
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=BAV
+		}
+	}
+	continuous_focus_position = { x = -100 y = 1200 }
+	default=no
+	#领袖寄拉！
+	focus={
+		id=BAV_The_pioneer_has_passed_away
+		x=11
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		bypass = {
+			tag=BAV
+		}
+	}	
+	#传递接力棒
+	focus={
+		id=BAV_Baton_transmission
+		x=11
+		y=1
+		prerequisite={focus=BAV_The_pioneer_has_passed_away}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.05
+		}
+	}
+	#斩断历史
+	focus={
+		id=BAV_Cut_off_history
+		x=11
+		y=2
+		prerequisite={focus=BAV_Baton_transmission}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_war_support = 0.05
+		add_political_power = 50
+			
+		}
+	}
+	#北方人就是比南方人有素质，不是夸你们南方人
+	focus={
+		id=BAV_Friends_from_the_North
+		x=3
+		y=2
+		prerequisite={focus=BAV_Baton_transmission}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			annex_country = {
+				target = WUR
+			}
+		}
+	}
+	#包围革命
+	focus={
+		id=BAV_Focusing_on_the_inside
+		x=19
+		y=2
+		prerequisite={focus=BAV_Baton_transmission}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+	#革命之火
+	focus={
+		id=BAV_The_sacred_flame_will_not_extinguish
+		x=11
+		y=3
+		prerequisite={focus=BAV_Cut_off_history}
+		prerequisite={focus=BAV_Friends_from_the_North}
+		prerequisite={focus=BAV_Focusing_on_the_inside}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				BAV_The_sacred_flame_will_not_extinguish
+			}
+		}
+	}
+	#革命之心
+	focus={
+		id=BAV_The_Revolutionary_Heart_of_Germany
+		x=11
+		y=4
+		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_state_core= 50
+			add_state_core = 841
+			add_state_core = 860
+			add_state_core = 837
+			BAV ={
+				recruit_character = WUR_Erwin_Rommel
+				recruit_character = WUR_Franz_Halde
+				recruit_character = WUR_Friedrich_Dorman
+				set_cosmetic_tag = BAV_WUR_1
+				} 
+		}
+	}
+	#思想革命
+	focus={
+		id=BAV_Ideological_revolution
+
+		icon = BAV_Ideological_revolution
+
+		x=11
+		y=5
+		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = {id = bav.50 days = 0}
+			add_ideas = {
+				BAV_Ideological_revolution
+			}
+		}
+	}
+	#人民工业模式
+	focus={
+		id=BAV_Common_industrial_model
+		x=3
+		y=5
+		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = 
+			{
+				BAV_Common_industrial_model
+			}
+		}
+	}
+		#轻轻敲醒沉睡的心灵 慢慢张开你的眼睛
+		##春风不解风情 吹动少年的心
+		#让昨日脸上的泪痕 随记忆风干了
+		#抬头寻找天空的翅膀
+		#候鸟出现它的影迹 带来远处的饥荒
+		#无情的战火依然存在的消息
+		#玉山白雪飘零 燃烧少年的心
+		#使真情溶化成音符 倾诉遥远的祝福 唱出你的热情
+		#伸出你双手 让我拥抱着你的梦
+		#让我拥有你真心的面孔
+		#让我们的笑容 充满着青春的骄傲
+		#为明天献出虔诚的祈祷
+		#谁能不顾己的家园 抛开记忆中的童年
+		#谁能忍心看他昨日的忧愁
+		#带走我们的笑容 青春不解红尘 胭脂沾染了灰
+		#让久违不见的泪水 滋润了你的面容 唱出你的热情
+		#伸出你双手 让我拥抱着你的梦
+		#让我拥有你真心的面孔
+		#让我们的笑容 充满着青春的骄傲
+		#为明天献出虔诚的祈祷 轻轻敲醒沉睡的心灵
+		#慢慢张开你的眼睛 看那忙碌的世界
+		#是否依然孤独的转个不停
+		#日出唤醒清晨 大地光彩重生
+		#让和风拂出的音响 谱成生命的乐章
+		#唱出你的热情 伸出你双手 让我拥抱着你的梦
+		#让我拥有你真心的面孔 让我们的笑容
+		#充满着青春的骄傲 让我们期待明天会更好
+		#唱出你的热情 伸出你双手 让我拥抱着你的梦
+		#让我拥有你真心的面孔 让我们的笑容
+		#充满着青春的骄傲 让我们期待明天会更好
+		#唱出你的热情 伸出你双手 让我拥抱着你的梦
+		#让我拥有你真心的面孔
+		#让我们的笑容 充满着青春的骄傲
+		#让我们期待，明天会更好
+	focus={
+		id=BAV_Knock_the_alarm_bell
+		x=19
+		y=5
+		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = 
+			{
+				BAV_Rearmament
+			}
+			#转化一个民工变军工是啥意思？
+			#不会@逻各斯
+		}
+	}
+	#社会压迫不在
+	focus={
+		id=BAV_Social_ppression_s_o_onger_resent
+		x=3
+		y=6
+		prerequisite={focus=BAV_Common_industrial_model}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = 
+			{
+				BAV_free_women
+			}
+		}
+	}
+	#土地民有
+	focus={
+		id=BAV_Land_nership
+		x=0
+		y=6
+		prerequisite={focus=BAV_Common_industrial_model}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				BAV_Land_nership
+			
+			}
+			add_manpower = -150
+			53 = {add_extra_state_shared_building_slots = 1}
+			863 = {add_extra_state_shared_building_slots = 1}
+		    861 = {add_extra_state_shared_building_slots = 1}
+			50 = {add_extra_state_shared_building_slots = 1}
+			837 = {add_extra_state_shared_building_slots = 1}
+			860 = {add_extra_state_shared_building_slots = 1}
+			841 = {add_extra_state_shared_building_slots = 1}
+			#别沉迷于你妈给随机区域加基建了
+			53 = {add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+			}
+		}
+			53 = {add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+			}
+			}
+			861 = {add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+			}
+		}
+		}
+	}
+	#工业重组
+	focus= {
+		id=BAV_Industrial_estructuring
+		x=6
+		y=6
+		prerequisite={focus=BAV_Common_industrial_model}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_Common_industrial_model
+				add_idea = BAV_Common_industrial_model_2	
+			}
+			add_manpower = -15
+			861 = {add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+			}
+			}
+			861 = {add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+			}
+		}
+	}
+	}
+	#时代新星
+	focus={
+		id=BAV_shining_new_stars_of_the_times
+		x=3
+		y=7
+		prerequisite={focus=BAV_Social_ppression_s_o_onger_resent}
+		prerequisite={focus=BAV_Industrial_estructuring}
+		prerequisite={focus=BAV_Land_nership}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_Common_industrial_model_2
+				remove_idea = BAV_Land_nership
+				remove_idea = BAV_free_women
+				add_idea = BAV_shining_new_stars_of_the_times
+			}
+		}
+	}
+	#倍倍尔之梦
+	focus={
+		id=BAV_Peipeier_deal
+		x=9
+		y=6
+		prerequisite={focus=BAV_Ideological_revolution
+}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_Ideological_revolution
+				add_idea = BAV_Ideological_revolution_2
+			}
+		}
+	}
+	#列宁的再拓展
+	focus={
+		id=BAV_Lenin_rther_xpansion
+		x=13
+		y=6
+		prerequisite={focus=BAV_Ideological_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = {
+				id = BAV.51
+				
+			}
+			add_political_power = 150
+		}
+	}
+	#粉碎修正主义
+	focus={
+		id=BAV_Crush_revisionism
+		x=11
+		y=7
+		prerequisite={focus=BAV_Peipeier_deal}
+		prerequisite={focus=BAV_Lenin_rther_xpansion}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_Ideological_revolution_2
+				add_idea = BAV_Ideological_revolution_3
+			}
+		}
+	}
+	#提拔青年才俊
+	focus={
+		id=BAV_Full_f_itality
+		x=19
+		y=6
+		prerequisite={focus=BAV_Knock_the_alarm_bell}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				BAV_New_Officer_Corps
+			}
+		}
+	}
+	#一！二！一！
+	focus={
+		id=BAV_1_2_1
+		x=17
+		y=7
+		prerequisite={focus=BAV_Full_f_itality}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_New_Officer_Corps
+				add_idea = BAV_New_Officer_Corps_2
+			}
+	    }
+    }
+	#纪律的重要性
+	focus={
+		id=BAV_The_lmportance_of_discipline
+		x=21
+		y=7
+		prerequisite={focus=BAV_Full_f_itality}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				BAV_commissar
+			}
+		}
+	}
+	#新德意志人民军
+	focus={
+		id=BAV_The_new_germany_people_army
+		x=19
+		y=8
+		prerequisite={focus=BAV_The_lmportance_of_discipline}
+		prerequisite={focus=BAV_1_2_1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = BAV_New_Officer_Corps_2
+				remove_idea = BAV_commissar
+				
+				add_idea =BAV_The_new_germany_people_army
+			}
+			remove_ideas = Extreme_democratic_rampant_5
+			remove_ideas = Roving_style_5
+		}
+	}
+	#武装起来
+	focus={
+		id=BAV_comrades_arm_up
+		x=17
+		y=9
+		prerequisite={focus=BAV_The_new_germany_people_army}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			#不会
+		}
+	}
+	#苏联军援
+	focus={
+		id=BAV_military_aid_arrives
+		x=21
+		y=9
+		prerequisite={focus=BAV_The_new_germany_people_army}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			#不会
+		}
+	}	
+	}

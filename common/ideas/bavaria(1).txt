@@ -961,11 +961,178 @@ ideas = {
 				}
 			}
 		}
+		#圣火不息
+		BAV_The_sacred_flame_will_not_extinguish = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_The_sacred_flame_will_not_extinguish
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
 	
+		#这毅然翻开的，思想革命的不朽诗篇
+		BAV_Ideological_revolution = {
+			allowed = {
+				always = no
 
-	}
-	
-	
+			}
+			picture = idea_BAV_Ideological_revolution
+				modifier = {
+					political_power_cost = 0.1
+					stability_factor = 0.05
+				}
+		}
+		BAV_Ideological_revolution_2 = {
+			allowed = {
+				always = no
+
+			}
+			picture = idea_BAV_Ideological_revolution_2
+				modifier = {
+					political_power_cost = 0.1
+					stability_factor = 0.05
+					war_support_factor = 0.05
+					army_core_attack_factor = 0.03
+					army_core_defence_factor = 0.03
+				}
+		}
+		BAV_Ideological_revolution_3 = {
+			allowed = {
+				always = no
+
+			}
+			picture = idea_BAV_Ideological_revolution_3
+				modifier = {
+					political_power_gain  = 0.05
+					stability_factor = 0.05
+					war_support_factor = 0.05
+					army_core_attack_factor = 0.05
+					army_core_defence_factor = 0.05
+				}
+		}
+		#共同工业
+		BAV_Common_industrial_model = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_Common_industrial_model
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		BAV_Common_industrial_model_2 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_Common_industrial_model_2
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#重整军备
+		BAV_Rearmament = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_Rearmament
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.5
+			}
+		}
+		#自由妇女
+		BAV_free_women = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_free_women
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		#土地民有
+		BAV_Land_nership = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_Land_nership
+			modifier = {
+				local_building_slots_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		#时代新星
+		BAV_shining_new_stars_of_the_times = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_shining_new_stars_of_the_times
+			modifier = {
+				local_building_slots_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				conscription = 0.005
+			}
+		}
+		#新军官团
+		BAV_New_Officer_Corps = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_New_Officer_Corps
+			modifier = {
+				xp_gain_factor = 0.1
+				experience_gain_army_factor =  0.05
+			}
+		}
+		BAV_New_Officer_Corps_2 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_New_Officer_Corps_2
+			modifier = {
+				xp_gain_factor = 0.1
+				experience_gain_army_factor =  0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		#政委
+		BAV_commissar = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_commissar
+			modifier = {
+				land_reinforce_rate = 0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		#新德意志人民军
+		BAV_The_new_germany_people_army = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_commissar
+			modifier = {
+				xp_gain_factor = 0.1
+				experience_gain_army_factor =  0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+    }
 	hidden_ideas = {
 		BAV_nice_balance_modifier = {
 			allowed = {
