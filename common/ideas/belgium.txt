@@ -153,10 +153,9 @@ ideas = {
 			}
 
 			modifier = {
-				industry_repair_factor = 0.50
 				ai_focus_defense_factor = 0.5
 				production_speed_buildings_factor = 0.1
-				production_speed_bunker_factor  = 0.50 
+				production_speed_infrastructure_factor = 0.1
 			}
 		}
 
@@ -256,7 +255,42 @@ ideas = {
 			}
 		}
 		
+		motherland_is_burning = {
+			
+			picture = idea_motherland_is_burning
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
 		
+		motherland_is_burning_1 = {
+			
+			picture = idea_motherland_is_burning
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				experience_loss_factor = 0.1
+			}
+		}
 		#以下五个同为国策用，开局添加第一个即可
 		delicate_military = {
 			picture = idea_delicate_military

@@ -790,7 +790,7 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = BAV.focus.1.tt
-		load_focus_tree = BAV_2
+
 		}
 	}
 }

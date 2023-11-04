@@ -697,6 +697,24 @@ spriteTypes = {
 		name = "GFX_BAV.10_pic"
 		texturefile = "gfx/event_pictures/BAV.10_pic.png"
 	}
+	#工团事件图片
+	spriteType = {
+		name = "GFX_ORA.14_pic"
+		texturefile = "gfx/event_pictures/ORA.14_pic.png"
+	}
+	spriteType = {
+		name = "GFX_ORA.15_pic"
+		texturefile = "gfx/event_pictures/ORA.15_pic.png"
+	}
+	#比利时事件图片
+	spriteType = {
+		name = "GFX_BEL.26_pic"
+		texturefile = "gfx/event_pictures/BEL.26_pic.png"
+	}
+	spriteType = {
+		name = "GFX_BEL.27_pic"
+		texturefile = "gfx/event_pictures/BEL.27_pic.png"
+	}
 	#柏林事件图片
 		spriteType = {
 		name = "GFX_AOR_GER_timeaxis.1_pic"

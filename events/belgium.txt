@@ -309,3 +309,78 @@ country_event = {
 	}
 
 }
+
+#拒绝签字
+country_event = {
+	id = BEL.26
+	title = BEL.26.t
+	desc = BEL.26.d
+	picture = GFX_BEL.26_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.26.a
+	}
+
+}
+
+#摄政
+country_event = {
+	id = BEL.27
+	title = BEL.27.t
+	desc = BEL.27.d
+	picture = GFX_BEL.27_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.27.a
+	}
+
+}
+
+#毁灭者
+country_event = {
+	id = BEL.28
+	title = BEL.28.t
+	desc = BEL.28.d
+	picture = GFX_BEL.28_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.28.a
+	}
+
+}
+
+
+#第四个年头
+country_event = {
+	id = BEL.21
+	title = BEL.21.t
+	desc = BEL.21.d
+	picture = GFX_BEL.21_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.21.a
+	}
+
+}
+#残酷镇压
+country_event = {
+	id = BEL.29
+	title = BEL.29.t
+	desc = BEL.29.d
+	picture = GFX_BEL.29_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.29.a
+	}
+
+}

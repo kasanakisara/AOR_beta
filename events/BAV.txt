@@ -50,6 +50,7 @@ country_event = {
 			} 
 		hidden_effect = {
 		news_event = { days = 7 id = AOR_news.31}
+		load_focus_tree = BAV_2
 		}
 	}
 }
@@ -160,7 +161,7 @@ country_event = {
 	}
 }
 
-#李卜克内西的一日
+#会址
 country_event = { 
 	id = BAV.10
 	title = BAV.10.t

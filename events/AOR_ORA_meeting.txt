@@ -526,7 +526,7 @@ country_event = {
 
 country_event = {
 	id = ORA.14 #小市民的经历
-    picture = GFX_ORA.1
+    picture = GFX_ORA.14_pic
     title = ORA.14.t
     desc = ORA.14.d
     is_triggered_only = yes
@@ -540,7 +540,7 @@ country_event = {
 
 country_event = {
 	id = ORA.15 #布宜诺斯艾利斯暴动
-    picture = GFX_ORA.1
+    picture = GFX_ORA.15_pic
     title = ORA.15.t
     desc = ORA.15.d
     is_triggered_only = yes
