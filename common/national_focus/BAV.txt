@@ -592,6 +592,11 @@ focus_tree={
 		}
 		completion_reward={
 		add_ideas = BAV_Peoples_Commune
+			BAV_Luksemburg = {
+			remove_country_leader_trait = trait_The_Eagles_of_Revolution_Forever_2
+			add_country_leader_trait = trait_The_Eagles_of_Revolution_Forever_1
+				}
+				
 		}
 	}
 	focus={
@@ -751,6 +756,10 @@ focus_tree={
 				instant_build = yes 
 			}
 		}
+		BAV_Karl_Liebknecht = {
+			remove_country_leader_trait = trait_Determined_international_fighters_2
+			add_country_leader_trait = trait_Determined_international_fighters_1
+				}
 		}
 	}
 	focus={

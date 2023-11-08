@@ -277,36 +277,32 @@ country_event = {
 
 	option = { 
 		name = BEL.19.a
-		add_stability = -0.03
-		COG = {
-		set_politics = { ruling_party = special }
-		}		
+		add_stability = -0.03		
 		COG = {transfer_state = 718}
 		COG = {transfer_state = 768}
 		COG = {transfer_state = 769}
-		COG = {
-		declare_war_on = { target = BEL type = annex_everything }
-		}	
+		COG = {transfer_state = 538}
+		COG = {transfer_state = 945}
 		COG = {load_oob = "COG_zaofan"}	
 	}
 
-	option = { 
-		ai_chance = { base = 0 }
-		name = BEL.19.b
-		add_stability = -0.03
-		COG = { change_tag_from = ROOT }
-		COG = {
-		set_politics = { ruling_party = special }
-		}		
-		COG = {transfer_state = 718}
-		COG = {transfer_state = 768}
-		COG = {transfer_state = 769}
-		COG = {
-		declare_war_on = { target = BEL type = annex_everything }
-		}	
-		COG = {load_oob = "COG_zaofan"}	
-		
-	}
+#	option = { 
+#		ai_chance = { base = 0 }
+#		name = BEL.19.b
+#		add_stability = -0.03
+#		COG = { change_tag_from = ROOT }
+#		COG = {
+#		set_politics = { ruling_party = special }
+#		}		
+#		COG = {transfer_state = 718}
+#		COG = {transfer_state = 768}
+#		COG = {transfer_state = 769}
+#		COG = {
+#		declare_war_on = { target = BEL type = annex_everything }
+#		}	
+#		COG = {load_oob = "COG_zaofan"}	
+#		
+#	}
 
 }
 
@@ -384,3 +380,4 @@ country_event = {
 	}
 
 }
+

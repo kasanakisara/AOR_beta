@@ -31,13 +31,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		buttonType = {
-			name = "AOR_weapons_button"
-			position = { x = 400 y = 7 }
-			buttonText = "史实装备"
-			spriteType = "GFX_event_button_minimize"
-			frame = 1
-		}
+#		buttonType = {
+#			name = "AOR_weapons_button"
+#			position = { x = 400 y = 7 }
+#			buttonText = "史实装备"
+#			spriteType = "GFX_event_button_minimize"
+#			frame = 1
+#		}
 
 		instantTextboxType = {
 			name = "production_title"

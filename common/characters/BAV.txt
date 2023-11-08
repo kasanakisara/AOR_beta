@@ -143,22 +143,5 @@ small = GFX_portrait_Ernst_Thalmann_small
 			legacy_id = -1
 		}
 	}
-Eugen_Levine= { 
-		name = Eugen_Levine
-		portraits = {
-			army = {
-				large = GFX_portrait_Eugen_Levine
-				small = GFX_portrait_Eugen_Levine_small
-			}
-		}
-		corps_commander = {
-			traits = {BAV_committed_revolutionary trait_reckless politically_connected harsh_leader}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-		}
-	}
+
 }
