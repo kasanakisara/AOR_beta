@@ -1,5 +1,13 @@
 ﻿capital = 49
 
+oob="TUR"
+recruit_character = TUR_COMMU
+recruit_character = TUR_KEMEL
+recruit_character = TUR_PACA_3
+recruit_character = TUR_PACA_2
+recruit_character = TUR_PACA_1
+recruit_character = TUR_KING
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -142,13 +150,5 @@ add_ideas = {
 	Humiliation_before_death
 	The_storm_is_gathering
 }
-
-oob="TUR"
-recruit_character = TUR_COMMU
-recruit_character = TUR_KEMEL
-recruit_character = TUR_PACA_3
-recruit_character = TUR_PACA_2
-recruit_character = TUR_PACA_1
-recruit_character = TUR_KING
 
 
