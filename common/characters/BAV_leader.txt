@@ -85,7 +85,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = BAV_Mehring
-			available = {}
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
 			traits = {Defend_revolution heart_exhausted}
 			can_be_fired = no
 		}

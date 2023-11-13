@@ -86,8 +86,6 @@ recruit_character = Ludwig_Beck
 recruit_character = Walther_von_Kurzbach
 recruit_character = Vincenz_Muller
 recruit_character = Walter_von_Reichenau
-recruit_character = Wilhelm_Pieck
-recruit_character = Ernst_Thalmann
 recruit_character = Eugen_Levine
 recruit_character = BAV_Mehring
 recruit_character = BAV_Luksemburg
@@ -108,8 +106,9 @@ set_politics = {
 }
 set_popularities = {
 	SOC_democratic = 10
-	Fascism = 00
-	Marxism = 90
+	PAR_socialism  = 20
+	Anarcho = 2
+	Marxism = 68
 }
 
 add_ideas = {

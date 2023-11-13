@@ -49,8 +49,11 @@ country_event = {
 				ideology =revolutionism
 			} 
 		hidden_effect = {
-		news_event = { days = 7 id = AOR_news.31}
+		
 		load_focus_tree = BAV_2
+		set_country_flag = BAV.belel.dead
+		complete_national_focus = BAV_The_pioneer_has_passed_away
+		
 		}
 	}
 }
@@ -259,29 +262,52 @@ country_event = {
 }
 
 
-#整合符腾堡！
+
+ 
 country_event = {
-	id = BAV.14
-	title = BAV.14.t
-	desc = BAV.14.d
-	picture = GFX_BAV.14_pic
-	trigger = {
-	    date > 1920.2.12
-		tag = BAV
-	}
-	
+	id = BAV.15
+	title = BAV.15.t
+	desc = BAV.15.d
+	picture = GFX_BAV.15_pic
+	is_triggered_only = yes
 	
 	fire_only_once = yes
 	option = {
-		name = BAV.14.a
-			annex_country = { target = WUR  transfer_troops =yes}
-				hidden_effect = {
-		BAV ={
-		recruit_character = WUR_Erwin_Rommel
-		recruit_character = WUR_Franz_Halde
-		recruit_character = WUR_Friedrich_Dorman
-			}
-		set_cosmetic_tag = BAV_WUR_1
+		name = BAV.15.a
+        } 
+
+ }
+country_event = {
+	id = BAV.16
+	title = BAV.16.t
+	desc = BAV.16.d
+	picture = GFX_BAV.16_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.16.a
+        } 
+
+ }
+ 
+country_event = {
+	id = BAV.17
+	title = BAV.17.t
+	desc = BAV.17.d
+	picture = GFX_BAV.17_pic
+	mean_time_to_happen = { day = 1}
+	trigger = {
+	    date > 1922.12.1
+		tag = BAV
+	}
+	fire_only_once = yes
+	option = {
+		name = BAV.17.a
+			hidden_effect = {
+			set_country_flag = BAV.RUS.mention
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus =  BAV_Knock_the_alarm_bell
 			}
         } 
 
@@ -291,7 +317,7 @@ country_event = {
 	title = BAV.50.t
 	desc = BAV.50.d
 	picture = GFX_BAV.50_pic
-	
+	is_triggered_only = yes
 	
 	fire_only_once = yes
 	option = {
@@ -305,7 +331,7 @@ country_event = {
 	desc = BAV.51.d
 	picture = GFX_BAV.51_pic
 	
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = BAV.51.a

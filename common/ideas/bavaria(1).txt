@@ -404,7 +404,7 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = -0.010
+				conscription = 0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
 				army_attack_factor  = -0.1
@@ -433,7 +433,7 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = -0.010
+				conscription = 0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
 				army_attack_factor  = -0.05
@@ -611,14 +611,26 @@ ideas = {
 			picture = GFX_idea_por_iberian_workers_united
 
 			modifier = {
-				consumer_goods_factor = -0.1
-				stability_factor = 0.05
+				consumer_goods_factor = -0.05
 				Marxism_drift = 0.01
+				stability_factor = 0.05
+			}
+		}
+		BAV_Peoples_Commune_1 = {
+			allowed = {
+				original_tag = BAV
+				always = no
+			}
+			picture = GFX_idea_por_iberian_workers_united
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				Marxism_drift = 0.01
+				stability_factor = 0.05
 				production_speed_buildings_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05 
 			}
 		}
-		
 		BAV_labor_reform = {
 			allowed = {
 				original_tag = BAV
@@ -751,7 +763,7 @@ ideas = {
 			stability_factor = 0.05
 			Marxism_drift = 0.01
 			party_popularity_stability_factor = 0.1
-			max_surrender_limit_offset = -0.05
+			max_surrender_limit_offset = 0.05
 			}
 		}
 
@@ -968,13 +980,12 @@ ideas = {
 			}
 			picture = idea_BAV_The_sacred_flame_will_not_extinguish
 			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				political_power_cost = 0.05
 			}
 		}
 	
 		#这毅然翻开的，思想革命的不朽诗篇
-		BAV_Ideological_revolution = {
+		BAV_Ideological_revolution_1 = {
 			allowed = {
 				always = no
 
@@ -992,11 +1003,11 @@ ideas = {
 			}
 			picture = idea_BAV_Ideological_revolution_2
 				modifier = {
-					political_power_cost = 0.1
+					political_power_cost = 0.2
 					stability_factor = 0.05
-					war_support_factor = 0.05
-					army_core_attack_factor = 0.03
-					army_core_defence_factor = 0.03
+					consumer_goods_factor = -0.05
+					party_popularity_stability_factor = 0.1
+					max_surrender_limit_offset = 0.05
 				}
 		}
 		BAV_Ideological_revolution_3 = {
@@ -1006,11 +1017,39 @@ ideas = {
 			}
 			picture = idea_BAV_Ideological_revolution_3
 				modifier = {
-					political_power_gain  = 0.05
+					political_power_cost = 0.2
 					stability_factor = 0.05
 					war_support_factor = 0.05
-					army_core_attack_factor = 0.05
-					army_core_defence_factor = 0.05
+					Marxism_drift = 0.1
+					
+				}
+		}
+		BAV_Ideological_revolution_4 = {
+			allowed = {
+				always = no
+
+			}
+			picture = idea_BAV_Ideological_revolution_4
+				modifier = {
+					political_power_cost = 0.4
+					war_support_factor = 0.05
+					Marxism_drift = 0.1
+					consumer_goods_factor = -0.05
+					party_popularity_stability_factor = 0.1
+					max_surrender_limit_offset = 0.05
+				}
+		}
+		BAV_Ideological_revolution_5 = {
+			allowed = {
+				always = no
+
+			}
+			picture = idea_BAV_Ideological_revolution_4
+				modifier = {
+					war_support_factor = 0.1
+					consumer_goods_factor = -0.1
+					party_popularity_stability_factor = 0.1
+					max_surrender_limit_offset = 0.15
 				}
 		}
 		#共同工业
@@ -1066,19 +1105,38 @@ ideas = {
 				consumer_goods_factor = -0.02
 			}
 		}
-		#时代新星
-		BAV_shining_new_stars_of_the_times = {
+		#时代新星-民主化
+		BAV_shining_new_stars_of_the_times_demo = {
 			allowed = {
 				always = no
 			}
 			picture = idea_BAV_shining_new_stars_of_the_times
 			modifier = {
-				local_building_slots_factor = 0.1
 				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.05
+				Marxism_drift = 0.01
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.1
-				conscription = 0.005
+				production_factory_efficiency_gain_factor = 0.05 
+				stability_factor = 0.1
+				conscription = 0.015
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		#时代新星-指令化
+		BAV_shining_new_stars_of_the_times_comm = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_shining_new_stars_of_the_times
+			modifier = {
+				consumer_goods_factor = -0.05
+				Marxism_drift = 0.01
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05 
+				stability_factor = 0.1
+				conscription = 0.015
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		#新军官团
@@ -1100,8 +1158,7 @@ ideas = {
 			modifier = {
 				xp_gain_factor = 0.1
 				experience_gain_army_factor =  0.05
-				army_org_factor = 0.1
-				army_morale_factor = 0.1
+				army_org_factor = 0.05
 			}
 		}
 		#政委
@@ -1112,8 +1169,7 @@ ideas = {
 			picture = idea_BAV_commissar
 			modifier = {
 				land_reinforce_rate = 0.03
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				org_loss_when_moving = -0.05
 			}
 		}
 		#新德意志人民军
@@ -1125,11 +1181,10 @@ ideas = {
 			modifier = {
 				xp_gain_factor = 0.1
 				experience_gain_army_factor =  0.05
-				army_org_factor = 0.1
+				army_org_factor = 0.05
 				army_morale_factor = 0.1
-				land_reinforce_rate = 0.03
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				land_reinforce_rate = 0.05
+				org_loss_when_moving = -0.05
 			}
 		}
     }

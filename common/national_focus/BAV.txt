@@ -126,7 +126,7 @@ focus_tree={
 		completion_reward={
 		add_war_support = 0.05
 		custom_effect_tooltip = BAV.focus.5.tt
-		add_timed_idea = {days = 365 idea = BAV_labor_reform }
+		add_timed_idea = { days = 365 idea = BAV_labor_reform }
 		swap_ideas = {
 		remove_idea = Roving_style_1 
 		add_idea = Roving_style_2
@@ -592,11 +592,17 @@ focus_tree={
 		}
 		completion_reward={
 		add_ideas = BAV_Peoples_Commune
-			BAV_Luksemburg = {
-			remove_country_leader_trait = trait_The_Eagles_of_Revolution_Forever_2
-			add_country_leader_trait = trait_The_Eagles_of_Revolution_Forever_1
+			remove_trait = {
+					character = BAV_Luksemburg
+					slot = political_advisor
+					trait = trait_The_Eagles_of_Revolution_Forever_2
 				}
-				
+			add_trait = {
+					character = BAV_Luksemburg
+					slot = political_advisor
+					trait = trait_The_Eagles_of_Revolution_Forever_1
+			   }	
+			
 		}
 	}
 	focus={
@@ -671,6 +677,7 @@ focus_tree={
 		}
 		completion_reward={
 		add_ideas = BAV_product_by_democracy
+		set_country_flag  = BAV_product_by_democracy_flag
 		}
 	}
 	focus={
@@ -689,6 +696,7 @@ focus_tree={
 		}
 		completion_reward={
 		add_ideas = BAV_product_in_command
+		set_country_flag  = BAV_product_in_command_flag
 		}
 	}
 	focus={
@@ -756,10 +764,16 @@ focus_tree={
 				instant_build = yes 
 			}
 		}
-		BAV_Karl_Liebknecht = {
-			remove_country_leader_trait = trait_Determined_international_fighters_2
-			add_country_leader_trait = trait_Determined_international_fighters_1
-				}
+		remove_trait = {
+			character = BAV_Karl_Liebknecht
+			slot = political_advisor
+			trait = trait_Determined_international_fighters_2
+		}
+		add_trait = {
+			character = BAV_Karl_Liebknecht
+			slot = political_advisor
+			trait = trait_Determined_international_fighters_1
+	  		 }	
 		}
 	}
 	focus={
@@ -781,7 +795,16 @@ focus_tree={
 		}
 		completion_reward={
 		country_event = BAV.5
-		remove_ideas = BAV_a_deep_cut_from_revolution_3
+		if = {
+			limit = {
+				NOT = { has_idea = BAV_a_deep_cut_from_revolution_3 } 
+
+			}
+			remove_ideas = BAV_a_deep_cut_from_revolution_2
+		}
+		else = {
+			remove_ideas = BAV_a_deep_cut_from_revolution_3
+			}
 		}
 	}
 	focus={
