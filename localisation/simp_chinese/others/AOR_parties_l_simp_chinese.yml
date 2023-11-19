@@ -919,11 +919,12 @@
  ITA_military_party:0 "国防指挥部-君主派"
  ITA_king_party:0 "君权国家党-右翼"
 #########USA###########
-USA_FRE_democratic_party:0 "北方洋基党" #洋基党
-USA_CON_democratic_party:0 "南方迪克西党" #迪克西党
-USA_SOC_democratic_party:0 "世界社会党" #社民
+USA_FRE_democratic_party:0 "美国洋基党-自由派" #洋基党
+USA_CON_democratic_party:0 "迪克西党-统一派" #迪克西党
+USA_SOC_democratic_party:0 "美国联邦统一党-自由派" #社民
+USA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
 USA_AGR_socialism_party:0 "美利坚农工党"
-USA_AUT_democratic_party:0 "美利坚社会党"
+USA_AUT_democratic_party:0 "迪克西党-民族强硬派"
 USA_Absolutism_party:0 "美利坚独立同盟"
 CSA_CON_democratic_party:0 "南方迪克西党" 
 #########orA###########

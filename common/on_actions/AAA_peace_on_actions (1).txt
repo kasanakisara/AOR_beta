@@ -66,6 +66,7 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
+			}
 			else_if = {
 				limit = {
 					FROM = {
@@ -169,7 +170,418 @@ on_actions = {
 				}
 				
 			}
-			
+			#横扫南欧，做回自己
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = YUG
+							has_war_together_with = GRE 
+					}
+				}
+						
+					ROOT = {
+						original_tag = ALB
+					}
+				}
+				YUG = {
+					annex_country = {
+						target = ALB
+					}
+					transfer_state = 44
+					add_state_core = 44
+				}
+				every_country = {
+					limit = { has_war_with = GRE }
+					white_peace = GRE
+				}
+				every_country = {
+					limit = { has_war_with = YUG }
+					white_peace = YUG
+				}
+				GRE = {country_event = {
+					days = 1 id = GRE.12
+				}
+				
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = YUG
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = DAL
+					}
+				}
+				YUG = {
+					annex_country = {
+						target = DAL
+					}
+					add_state_core = 804
+					add_state_core = 872
+					add_state_core = 163
+				}
+				every_country = {
+					limit = { has_war_with = GRE }
+					white_peace = GRE
+				}
+				every_country = {
+					limit = { has_war_with = YUG }
+					white_peace = YUG
+				}
+				GRE = {country_event = {
+					days = 1 id = GRE.13
+				}
+				
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = YUG
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = CRO
+					}
+				}
+				YUG = {
+					annex_country = {
+						target = CRO
+					}
+					add_state_core = 109
+					add_state_core = 103
+				}
+				every_country = {
+					limit = { has_war_with = GRE }
+					white_peace = GRE
+				}
+				every_country = {
+					limit = { has_war_with = YUG }
+					white_peace = YUG
+				}
+				GRE = {country_event = {
+					days = 1 id = GRE.14
+				}
+				
+				}
+			}
+			#巴尔干战争 希腊-匈牙利
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = HUN
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = BUL
+					}
+				}
+				GRE = {
+					transfer_state = 212
+					transfer_state = 211
+					transfer_state = 801
+					transfer_state = 48
+				}
+				every_country = {
+					limit = { has_war_with = BUL }
+					white_peace = BUL
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = HUN
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				GRE = {
+					transfer_state = 77
+					transfer_state = 851
+				}
+				HUN = {
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_puppet
+					}
+				}
+				every_country = {
+					limit = { has_war_with =  ROM}
+					white_peace = ROM
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = HUN
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = YUG
+					}
+				}
+				GRE = {
+					transfer_state = 106
+					transfer_state = 803
+				}
+				HUN = {
+					set_autonomy = {
+						target = YUG
+						autonomy_state = autonomy_puppet
+					}
+				}
+				every_country = {
+					limit = { has_war_with =  YUG}
+					white_peace = YUG
+				}
+			}
+			#输
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = YUG
+							original_tag = BUL
+							original_tag = ROM
+							has_war_together_with = BUL
+					}
+				}
+					ROOT = {
+						original_tag = GRE
+					}
+				}
+
+				every_country = {
+					limit = { has_war_with =  GRE}
+					white_peace = GRE
+				}
+				TUR = {country_event = {
+					days = 90 id = TUR.5
+				}}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = YUG
+							original_tag = BUL
+							original_tag = ROM
+							has_war_together_with = BUL
+					}
+				}
+					ROOT = {
+						original_tag = HUN
+					}
+				}
+				YUG = {
+					transfer_state = 764
+					transfer_state = 45
+				}
+				ROM = {
+					transfer_state = 84
+					transfer_state = 82
+				}
+
+				every_country = {
+					limit = { has_war_with =  HUN}
+					white_peace = HUN
+				}
+			}
+			#巴尔干战争-希腊-南斯拉夫-罗马尼亚
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = YUG
+							original_tag = ROM
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = BUL
+					}
+				}
+				GRE = {
+					transfer_state = 212
+					transfer_state = 211
+					transfer_state = 801
+				}
+				YUG = {
+					transfer_state = 48
+				}
+				every_country = {
+					limit = { has_war_with = BUL }
+					white_peace = BUL
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = GRE
+							original_tag = YUG
+							original_tag = ROM
+							has_war_together_with = GRE 
+					}
+				}
+					ROOT = {
+						original_tag = HUN
+					}
+				}
+				ROM = {
+					transfer_state = 84
+					transfer_state = 82
+				}
+				YUG = {
+					transfer_state = 45
+					transfer_state = 764
+					transfer_state = 109
+					transfer_state = 103
+				}
+				every_country = {
+					limit = { has_war_with = HUN }
+					white_peace = HUN
+				}
+			}
+		#输了
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = HUN
+							original_tag = BUL
+							has_war_together_with = BUL
+					}
+				}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				BUL = {
+					transfer_state = 77
+					transfer_state = 731
+					transfer_state = 851
+				}
+				HUN = {
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_puppet
+					}
+				}
+				every_country = {
+					limit = { has_war_with = ROM }
+					white_peace = ROM
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = HUN
+							original_tag = BUL
+							has_war_together_with = BUL
+					}
+				}
+					ROOT = {
+						original_tag = GRE
+					}
+				}
+				BUL = {
+					transfer_state = 184
+					transfer_state = 77
+					transfer_state = 731
+					transfer_state = 851
+					transfer_state = 106
+					transfer_state = 803
+					transfer_state = 341
+				}
+				GRE = {
+					set_cosmetic_tag = GRE_CON_2
+				}
+				every_country = {
+					limit = { has_war_with = GRE }
+					white_peace = GRE
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = HUN
+							original_tag = BUL
+							has_war_together_with = BUL
+					}
+				}
+					ROOT = {
+						original_tag = YUG
+					}
+				}
+				BUL = {
+
+					transfer_state = 106
+					transfer_state = 803
+				}
+				HUN = {
+					set_autonomy = {
+						target = YUG
+						autonomy_state = autonomy_puppet
+					}
+				}
+				every_country = {
+					limit = { has_war_with = YUG }
+					white_peace = YUG
+				}
+			}
+			#再来一次希土战争！
+			else_if = {
+				limit = {
+					TUR = {has_idea = {
+						revenge
+					}}
+					FROM = {
+						original_tag = TUR
+					}
+					ROOT = {
+						original_tag = GRE
+					}
+				}
+				TUR = {
+
+					transfer_state = 797
+					transfer_state =  340
+					transfer_state =  341
+					transfer_state = 49
+					transfer_state =  343
+					transfer_state =  347
+					transfer_state = 346
+				}
+				every_country = {
+					limit = { has_war_with = TUR }
+					white_peace = TUR
+				}
+			}
 		}
 	}
 }

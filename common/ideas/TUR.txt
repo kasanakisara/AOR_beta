@@ -28,5 +28,16 @@ ideas = {
 				drift_defence_factor = -0.5
 			}
 		}
+		revenge = {
+		
+			removal_cost = -1
+			
+			picture = revenge
+			
+			modifier = {
+				army_attack_factor =  0.3
+				stability_factor = 0.2
+				war_support_factor = 0.2
+    }
     }
 }

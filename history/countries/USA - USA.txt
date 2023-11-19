@@ -90,12 +90,12 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 45 #洋基党
-	FRE_democratic = 40 #迪克西党
-	SOC_democratic = 5 #社民
-	AGR_socialism = 3 #农工党
-	AUT_democratic = 5 #社会党
-	Absolutism = 2 #独立同盟
+	CON_democratic = 44 #洋基党
+	FRE_democratic = 34 #迪克西党
+	SOC_democratic = 8 #社民
+	PAR_socialism = 4 #温和社
+	AUT_democratic = 10 #迪克西-强硬派
+
 }
 
 create_country_leader = {
@@ -104,6 +104,50 @@ create_country_leader = {
 	picture = "axm7x-nkh4s.dds"
 	expire = "1953.3.1"
 	ideology = liberalism
+	traits = {
+		
+	}
+
+}
+create_country_leader = {
+	name = "John Nance Garner IV"
+	desc = ""
+	picture = "John_Nance_Garner_IV.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+
+}
+create_country_leader = {
+	name = "Charles Evans Hughes"
+	desc = ""
+	picture = "axm7x-nkh4s.dds"
+	expire = "1953.3.1"
+	ideology = social_liberalism
+	traits = {
+		
+	}
+
+}
+create_country_leader = {
+	name = "Solomon Springhall"
+	desc = ""
+	picture = "axm7x-nkh4s.dds"
+	expire = "1953.3.1"
+	ideology = patriarch
+	traits = {
+		
+	}
+
+}
+create_country_leader = {
+	name = "Eugene Victor Debs"
+	desc = ""
+	picture = "axm7x-nkh4s.dds"
+	expire = "1953.3.1"
+	ideology = demsoc
 	traits = {
 		
 	}

@@ -31,5 +31,12 @@ units={
         start_experience_factor=0.2
         start_equipment_factor=1
     }
+    division={
+        name="第四民兵师"
+        location=4512
+        division_template="起义大兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
 
 }

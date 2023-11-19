@@ -23,6 +23,38 @@ units={
         start_experience_factor=0.2
         start_equipment_factor=1
     }
+    division={
+        name="第四民兵师"
+        location=792
+        division_template="起义大兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+
+    division={
+        name="第三民兵师"
+        location=792
+        division_template="起义大兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+
+    division={
+        name="第五民兵师"
+        location=792
+        division_template="起义大兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+
+    division={
+        name="第六民兵师"
+        location=792
+        division_template="起义大兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+
 
 
 }

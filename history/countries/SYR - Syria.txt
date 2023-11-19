@@ -93,7 +93,7 @@ create_country_leader = {
 }
 
 SYR = {
-	country_event = { days = 350 id = SYR.1 }
+	country_event = {  id =  SYR.1  days = 350 }
 	}
 add_ideas = {
 Stab_in_the_back
