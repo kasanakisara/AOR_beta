@@ -861,6 +861,85 @@ spriteType = {
   name = "GFX_goal_BAV_flames_of_revolution_continue_unabated"
   texturefile = "gfx/interface/goals/BAV_flames_of_revolution_continue_unabated.png"
  }
- 
- 
+ #巴苏第二阶段国策
+  spriteType = {
+  name = "GFX_goal_BAV_The_pioneer_has_passed_away"
+  texturefile = "gfx/interface/goals/BAV_The_pioneer_has_passed_away.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Baton_transmission"
+  texturefile = "gfx/interface/goals/BAV_Baton_transmission.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Cut_off_history"
+  texturefile = "gfx/interface/goals/BAV_Cut_off_history.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Friends_from_the_North"
+  texturefile = "gfx/interface/goals/BAV_Friends_from_the_North.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Focusing_on_the_inside"
+  texturefile = "gfx/interface/goals/BAV_Focusing_on_the_inside.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_sacred_flame_will_not_extinguish"
+  texturefile = "gfx/interface/goals/BAV_The_sacred_flame_will_not_extinguish.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_Revolutionary_Heart_of_Germany"
+  texturefile = "gfx/interface/goals/BAV_The_Revolutionary_Heart_of_Germany.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Ideological_revolution"
+  texturefile = "gfx/interface/goals/BAV_Ideological_revolution.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Common_industrial_model"
+  texturefile = "gfx/interface/goals/BAV_Common_industrial_model.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Knock_the_alarm_bell"
+  texturefile = "gfx/interface/goals/BAV_Knock_the_alarm_bell.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Land_nership"
+  texturefile = "gfx/interface/goals/BAV_Land_nership.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Industrial_estructuring"
+  texturefile = "gfx/interface/goals/BAV_Industrial_estructuring.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_shining_new_stars_of_the_times"
+  texturefile = "gfx/interface/goals/BAV_shining_new_stars_of_the_times.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Peipeier_deal"
+  texturefile = "gfx/interface/goals/BAV_Peipeier_deal.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Lenin_rther_xpansion"
+  texturefile = "gfx/interface/goals/BAV_Lenin_rther_xpansion.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Crush_revisionism"
+  texturefile = "gfx/interface/goals/BAV_Crush_revisionism.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Full_f_itality"
+  texturefile = "gfx/interface/goals/BAV_Full_f_itality.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_1_2_1"
+  texturefile = "gfx/interface/goals/BAV_1_2_1.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_lmportance_of_discipline"
+  texturefile = "gfx/interface/goals/BAV_The_lmportance_of_discipline.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_new_germany_people_army"
+  texturefile = "gfx/interface/goals/BAV_The_new_germany_people_army.png"
+ }
 }

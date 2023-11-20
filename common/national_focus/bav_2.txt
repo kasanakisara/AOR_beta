@@ -12,6 +12,7 @@ focus_tree = {
 	#领袖寄拉！
 	focus={
 		id=BAV_The_pioneer_has_passed_away
+		icon = GFX_goal_BAV_The_pioneer_has_passed_away
 		x=11
 		y=0
 		cost=0
@@ -27,6 +28,7 @@ focus_tree = {
 	#传递接力棒
 	focus={
 		id=BAV_Baton_transmission
+		icon = GFX_goal_BAV_Baton_transmission
 		x=11
 		y=1
 		prerequisite={focus=BAV_The_pioneer_has_passed_away}
@@ -48,6 +50,7 @@ focus_tree = {
 	#斩断历史
 	focus={
 		id=BAV_Cut_off_history
+		icon = GFX_goal_BAV_Cut_off_history
 		x=11
 		y=2
 		prerequisite={focus=BAV_Baton_transmission}
@@ -75,6 +78,7 @@ focus_tree = {
 	#北方人就是比南方人有素质，不是夸你们南方人
 	focus={
 		id=BAV_Friends_from_the_North
+		icon = GFX_goal_BAV_Friends_from_the_North
 		x=8
 		y=2
 		prerequisite={focus=BAV_Baton_transmission}
@@ -92,6 +96,7 @@ focus_tree = {
 	#包围革命
 	focus={
 		id=BAV_Focusing_on_the_inside
+		icon = GFX_goal_BAV_Focusing_on_the_inside
 		x=14
 		y=2
 		prerequisite={focus=BAV_Baton_transmission}
@@ -123,8 +128,9 @@ focus_tree = {
 	#革命之火
 	focus={
 		id=BAV_The_sacred_flame_will_not_extinguish
+		icon = GFX_goal_BAV_The_sacred_flame_will_not_extinguish
 		x=11
-		y=3
+		y=4
 		prerequisite={focus=BAV_Cut_off_history}
 		prerequisite={focus=BAV_Friends_from_the_North}
 		prerequisite={focus=BAV_Focusing_on_the_inside}
@@ -146,8 +152,9 @@ focus_tree = {
 	#革命之心
 	focus={
 		id=BAV_The_Revolutionary_Heart_of_Germany
+		icon = GFX_goal_BAV_The_Revolutionary_Heart_of_Germany
 		x=11
-		y=4
+		y=5
 		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
 		cost=5
 		ai_will_do={
@@ -164,10 +171,7 @@ focus_tree = {
 			add_state_core = 841
 			add_state_core = 860
 			add_state_core = 837
-			BAV ={
-				recruit_character = WUR_Erwin_Rommel
-				recruit_character = WUR_Franz_Halde
-				} 
+
 			}
 		}
 	}
@@ -175,10 +179,10 @@ focus_tree = {
 	focus={
 		id=BAV_Ideological_revolution
 
-		icon = BAV_Ideological_revolution
+		icon = GFX_goal_BAV_Ideological_revolution
 
 		x=19
-		y=5
+		y=6
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=5
 		ai_will_do={
@@ -198,8 +202,9 @@ focus_tree = {
 	#人民工业模式
 	focus={
 		id=BAV_Common_industrial_model
+		icon = GFX_goal_BAV_Common_industrial_model
 		x=3
-		y=5
+		y=6
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=5
 		ai_will_do={
@@ -215,8 +220,9 @@ focus_tree = {
 		#轻轻敲醒沉睡的心灵 慢慢张开你的眼睛
 	focus={
 		id=BAV_Knock_the_alarm_bell
+		icon = GFX_goal_BAV_Knock_the_alarm_bell
 		x=11
-		y=5
+		y=7
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=0
 		ai_will_do={
@@ -238,8 +244,9 @@ focus_tree = {
 	#土地民有
 	focus={
 		id=BAV_Land_nership
+		icon = GFX_goal_BAV_Land_nership
 		x=0
-		y=6
+		y=7
 		prerequisite={focus=BAV_Common_industrial_model}
 		cost=4
 		ai_will_do={
@@ -286,8 +293,9 @@ focus_tree = {
 	#工业重组
 	focus= {
 		id=BAV_Industrial_estructuring
+		icon = GFX_goal_BAV_Industrial_estructuring
 		x=6
-		y=6
+		y=7
 		prerequisite={focus=BAV_Common_industrial_model}
 		cost=4
 		ai_will_do={
@@ -319,8 +327,9 @@ focus_tree = {
 	#时代新星
 	focus={
 		id=BAV_shining_new_stars_of_the_times
+		icon = GFX_goal_BAV_shining_new_stars_of_the_times
 		x=3
-		y=7
+		y=8
 		prerequisite={focus=BAV_Social_ppression_s_o_onger_resent}
 		prerequisite={focus=BAV_Industrial_estructuring}
 		prerequisite={focus=BAV_Land_nership}
@@ -363,8 +372,9 @@ focus_tree = {
 	#倍倍尔之梦
 	focus={
 		id=BAV_Peipeier_deal
+		icon = GFX_goal_BAV_Peipeier_deal
 		x=16
-		y=6
+		y=7
 		prerequisite={focus=BAV_Ideological_revolution
 }
 		cost=4
@@ -399,8 +409,9 @@ focus_tree = {
 	#列宁的再拓展
 	focus={
 		id=BAV_Lenin_rther_xpansion
+		icon = GFX_goal_BAV_Lenin_rther_xpansion
 		x=22
-		y=6
+		y=7
 		prerequisite={focus=BAV_Ideological_revolution}
 		cost=4
 		ai_will_do={
@@ -431,8 +442,9 @@ focus_tree = {
 	#粉碎修正主义
 	focus={
 		id=BAV_Crush_revisionism
+		icon = GFX_goal_BAV_Crush_revisionism
 		x=19
-		y=7
+		y=8
 		prerequisite={focus=BAV_Peipeier_deal}
 		prerequisite={focus=BAV_Lenin_rther_xpansion}
 		cost=6
@@ -452,8 +464,9 @@ focus_tree = {
 	#提拔青年才俊
 	focus={
 		id=BAV_Full_f_itality
+		icon = GFX_goal_BAV_Full_f_itality
 		x=11
-		y=6
+		y=9
 		prerequisite={focus=BAV_Knock_the_alarm_bell}
 		cost=5
 		ai_will_do={
@@ -487,8 +500,9 @@ focus_tree = {
 	#一！二！一！
 	focus={
 		id=BAV_1_2_1
+		icon = GFX_goal_BAV_1_2_1
 		x=9
-		y=7
+		y=10
 		prerequisite={focus=BAV_Full_f_itality}
 		cost=4
 		ai_will_do={
@@ -508,8 +522,9 @@ focus_tree = {
 	#纪律的重要性
 	focus={
 		id=BAV_The_lmportance_of_discipline
+		icon = GFX_goal_BAV_The_lmportance_of_discipline
 		x=13
-		y=7
+		y=10
 		prerequisite={focus=BAV_Full_f_itality}
 		cost=4
 		ai_will_do={
@@ -536,8 +551,9 @@ focus_tree = {
 	#新德意志人民军
 	focus={
 		id=BAV_The_new_germany_people_army
+		icon = GFX_goal_BAV_The_new_germany_people_army
 		x=11
-		y=8
+		y=11
 		prerequisite={focus=BAV_The_lmportance_of_discipline}
 		prerequisite={focus=BAV_1_2_1}
 		cost=7
