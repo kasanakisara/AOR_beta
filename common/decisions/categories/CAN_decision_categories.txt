@@ -6,7 +6,7 @@ CAN_french_crisis = {
 	priority = 100
    scripted_gui = CAN_french_crisis
 	allowed = {
-			original_tag = CAN
+			original_tag = CANA
 	}
 	visible = {
 		has_country_flag = CAN_french_crisis
@@ -16,7 +16,7 @@ CAN_commonwealth_joint_defence_committee = {
 	icon = GFX_decision_category_generic_communism
 	priority = 100
 	allowed = {
-			original_tag = CAN
+			original_tag = CANA
 	}
 	visible = {
 		has_country_flag = CAN_commonwealth_joint_defence_committee
@@ -28,7 +28,7 @@ CAN_hounse_of_royal = {
 	scripted_gui = CAN_hounse_of_commons_window
 	visible_when_empty = yes
 	allowed = {
-			original_tag = CAN
+			original_tag = CANA
 	}
 }
 

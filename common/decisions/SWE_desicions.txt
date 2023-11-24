@@ -95,12 +95,12 @@ SWE_Karl_Plan_catagory = {
 		}
 	}
 
-	SWE_Confidience_Crisis = {               
+	SWE_Confidience_Crisis = {
 		activation = {                           
 			check_variable = { SWE_NationalUnity < 30 }
 			has_idea = SWE_Karl_P
-		}
-		available = {
+		}             
+		avaliable = {
 			custom_trigger_tooltip = {
 				tooltip = SWE_Confidience_Crisis_trigger_tt
 				check_variable = { SWE_NationalUnity < 35 }
@@ -145,7 +145,7 @@ SWE_Emergency_Country_catagory = {
 			factor = 0.5
 		}
 		fire_only_once = no
-		available = {
+		visible = {
 			has_complete_focus = SWE_Build_Junta
 			has_ideas = SWE_Emergency_Country
 		}
@@ -164,7 +164,7 @@ SWE_Emergency_Country_catagory = {
 			factor = 0.5
 		}
 		fire_only_once = no
-		available = {
+		visible = {
 			has_ideas = SWE_Emergency_Country
 		}
 		days_re_enable = 30
@@ -183,7 +183,7 @@ SWE_Emergency_Country_catagory = {
 		}
 		fire_only_once = no
 		days_re_enable = 30
-		available = {
+		visible = {
 			has_ideas = SWE_Emergency_Country
 		}
 		complete_effect = {

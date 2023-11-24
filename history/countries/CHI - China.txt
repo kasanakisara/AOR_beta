@@ -11,6 +11,30 @@ if = {
 	}
 }
 
+recruit_character = CHI_duanqirui
+recruit_character = CHI_xushuzheng
+recruit_character = CHI_leyunpeng
+recruit_character = CHI_wuguangxin
+recruit_character = CHI_duanzhigui
+recruit_character = CHI_fuliangzuo
+recruit_character = CHI_luyongxiang
+recruit_character = CHI_zhangjingyao
+
+recruit_character = CHI_liangshiyi
+recruit_character = CHI_guweijun
+recruit_character = CHI_luzhengxiang
+recruit_character = CHI_wangjitang
+recruit_character = CHI_caorulin
+recruit_character = CHI_zhushen
+recruit_character = CHI_fanyuanlian
+recruit_character = CHI_yuanxitao
+recruit_character = CHI_tianwenlie
+recruit_character = CHI_zhangguogan
+recruit_character = CHI_zhuqiyin
+recruit_character = CHI_Zeng_Yujun
+recruit_character = CHI_zhangjian
+recruit_character = CHI_lianghongzhi
+
 create_country_leader = {
 	name = "Yuan Shih-k'ai"
 	desc = ""
@@ -128,3 +152,9 @@ country_lock_all_division_template = yes
 
 give_guarantee = QID
 
+CHI = {
+country_event = { days = 76 id = CHI.8 }
+country_event = { days = 200 id = CHI.4 }
+country_event = { days = 203 id = CHI.5 }
+country_event = { days = 916 id = CHI.7 }
+}

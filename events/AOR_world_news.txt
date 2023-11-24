@@ -50,60 +50,78 @@ news_event = { #苏维埃宣告成立(RUS-SOV) - NewsEvents_SOV_timeaxis.1
 	}
 }
 
-news_event = { ##鹿特丹纵火案（法国） - BEL.6
+news_event = { ##比荷卢选举陷入僵局
 	id = AOR_news.2 
-	title = BEL.6.t
-	desc = BEL.6.d
+	title = AOR_news.2.t
+	desc = AOR_news.2.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.2_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.6.a
+		name = AOR_news.2.a
 
 	}
 
 }
 
-news_event = { ##鹿特丹纵火案（英国） - BEL.7
+news_event = { ##阿工团成立
 	id = AOR_news.3  
-	title = BEL.7.t
-	desc = BEL.7.d
+	title = AOR_news.3.t
+	desc = AOR_news.3.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.3_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.7.a
+		name =	AOR_news.3.a
+	trigger = {
+	    has_government = Anarcho
+		}
+	}
+	option = {
+		name = AOR_news.3.b
+	trigger = {
+	    has_government = Marxism
+		}
+	}
+	option = {
+		name = AOR_news.3.c
+	trigger = {
+	    NOT = {
+				has_government = Marxism
+				has_government = Anarcho
+				}
+		}
 	}
 
 }
 
-news_event = { ##鹿特丹纵火案（比利时） - BEL.8
+news_event = { ##墨西哥皇帝没辣
 	id = AOR_news.4  
-	title = BEL.8.t
-	desc = BEL.8.d
+	title = AOR_news.4.t
+	desc =  AOR_news.4.d
 	major = yes
 	
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_news.4_pic
 	is_triggered_only = yes
 
       
 	option = {
-		name = BEL.8.a
+		name = AOR_news.4.a
 	}
 
 }
 
-news_event = {  ##加拿大未知新闻（1） - CAN.2
-	id = AOR_news.5
-	title = CAN.2.t
-	desc = CAN.2.d
-	picture = GFX_report_event_german_speech
+news_event = {  ##墨西哥皇后来啦！
+	id = AOR_news.5 
+	title = AOR_news.5.t 
+	desc = AOR_news.5.d 
+	picture = GFX_AOR_news.5_pic
 	
 	is_triggered_only = yes
 	
@@ -111,16 +129,26 @@ news_event = {  ##加拿大未知新闻（1） - CAN.2
 	
 	
 	option = { 
-        name = CAN.2.a
-		
+        name = AOR_news.5.a
+		trigger = {
+	    has_government = Anarcho
+		}
+		}
+	option = { 
+        name = AOR_news.5.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
 		}
 }
 	
-news_event = {  ##加拿大未知新闻（2）- CAN.3
+news_event = {  ##老太婆赢了！
 	id = AOR_news.6
-	title = CAN.3.t
-	desc = CAN.3.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.6.t
+	desc = AOR_news.6.d
+	picture = GFX_AOR_news.6_pic
 	
 	is_triggered_only = yes
 	
@@ -128,16 +156,16 @@ news_event = {  ##加拿大未知新闻（2）- CAN.3
 	
 	
 	option = { 
-        name = CAN.3.a
+        name = AOR_news.6.a
 		
 		}
 }
 
-news_event = {  ##加拿大未知新闻（3） - CAN.5
+news_event = {  ##南部安人赢了！
 	id = AOR_news.7
-	title = CAN.5.t
-	desc = CAN.5.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.7.t
+	desc = AOR_news.7.d
+	picture = GFX_AOR_news.7_pic
 	
 	is_triggered_only = yes
 	
@@ -145,33 +173,52 @@ news_event = {  ##加拿大未知新闻（3） - CAN.5
 	
 	
 	option = { 
-        name = CAN.5.a
-		
+        name = AOR_news.7.a
+		trigger = {
+	    has_government = Anarcho
+		}
 	}
+	option = { 
+        name = AOR_news.7.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
+		}
 }
 
-news_event = {  ##加拿大未知新闻（4） - CAN.9
+news_event = {  ##北部安人赢了！
 	id = AOR_news.8
-	title = CAN.9.t
-	desc = CAN.9.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.8.t
+	desc = AOR_news.8.d
+	picture = GFX_AOR_news.8_pic
 	
 	is_triggered_only = yes
 	
 	major = yes
 	
-	
 	option = { 
-        name = CAN.5.a
-		
+        name = AOR_news.8.a
+		trigger = {
+	    has_government = Anarcho
+		}
+		}
+	option = { 
+        name = AOR_news.8.b
+		trigger = {
+	    NOT = {
+				has_government = Anarcho
+				}
+			}
 		}
 } 
 
-news_event = {  ##加拿大未知新闻（5） - CAN.10
+news_event = {  ##老太婆也死了
 	id = AOR_news.9
-	title = CAN.10.t
-	desc = CAN.10.d
-	picture = GFX_report_event_german_speech
+	title = AOR_news.9.t
+	desc = AOR_news.9.d
+	picture = GFX_AOR_news.9_pic
 	
 	is_triggered_only = yes
 	
@@ -179,7 +226,7 @@ news_event = {  ##加拿大未知新闻（5） - CAN.10
 	
 	
 	option = { 
-        name = CAN.10.a
+        name = AOR_news.9.a
 		
 	}
 }
@@ -202,22 +249,19 @@ news_event = {  ##德意志阵营解散 - news_GER.1
 	}
 }
 
-news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
+news_event = { #1920比荷卢奥运会
 	id = AOR_news.11
-	title = news_OLYMPICS.1.t
-	desc = news_OLYMPICS.1.d
-	picture = GFX_news_1920_Olympic_Games
+	title = AOR_news.11.t
+	desc = AOR_news.11.d
+	picture = GFX_AOR_news.11_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.4.19
-		date < 1920.4.21
+	    date > 1920.8.28
+		date < 1920.8.30
 	}
-
-    
+fire_only_once = yes
 	option = {
-		name = news_OLYMPICS.1.a
+		name = AOR_news.11.a
 	trigger = {
 	    NOT = {tag = BEL}
 		}
@@ -228,113 +272,98 @@ news_event = { #1920比荷卢奥运会 - news_OLYMPICS.1
 	}
 }
 
-news_event = { #1924希腊奥运会 - news_OLYMPICS.2
+news_event = { #1924巴黎奥运会
 	id = AOR_news.12
-	title = news_OLYMPICS.2.t
-	desc = news_OLYMPICS.2.d
-	picture = GFX_news_1924_Olympic_Games
+	title = AOR_news.12.t
+	desc = AOR_news.12.d
+	picture = GFX_AOR_news.12_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.6
-		date < 1920.5.8
+	    date > 1924.5.6
+		date < 1924.5.8
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.2.a
+		name = AOR_news.12.a
 	}
 }
 
-news_event = { #1928意大利奥运会 - news_OLYMPICS.3
+news_event = { #电视被发明
 	id = AOR_news.13
-	title = news_OLYMPICS.3.t
-	desc = news_OLYMPICS.3.d
-	picture = GFX_news_1928_Olympic_Games
+	title = AOR_news.13.t
+	desc = AOR_news.13.d
+	picture = GFX_AOR_news.13_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.16
-		date < 1920.5.18
+	    date > 1925.10.2
+		date < 1925.10.4
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.3.a
+		name = AOR_news.13.a
 	}
 }
 
-news_event = { #1932法国奥运会 - news_OLYMPICS.4
+news_event = { #青霉素被发现
 	id = AOR_news.14
-	title = news_OLYMPICS.4.t
-	desc = news_OLYMPICS.4.d
-	picture = GFX_news_1932_Olympic_Games
+	title = AOR_news.14.t
+	desc = AOR_news.14.d
+	picture = GFX_AOR_news.14_pic
     major = yes
-	is_triggered_only = yes
-	
 	trigger = {
-	    date > 1920.5.16
-		date < 1920.5.18
+	    date > 1928.9.14
+		date < 1920.9.16
 	}
-
+fire_only_once = yes
     
 	option = {
-		name = news_OLYMPICS.4.a
+		name = AOR_news.14.a
 	}
 }
 
-news_event = { #重生委员会掌权（好像） - SAX.3
+news_event = { #中美洲建立
 	id = AOR_news.15
-	title = SAX.3.t
-	desc = SAX.3.d
-	picture = GFX_news_event_001
+	title = AOR_news.15.t
+	desc = AOR_news.15.d
+	picture = GFX_AOR_news.15_pic
 	
 	is_triggered_only = yes
 	
 	major = yes
 	
-	
 	option = { 
-        name = SAX_3.a
+        name = AOR_news.15.a
+		
+	}
+	option = { 
+        name = AOR_news.15.b
 		
 	}
 }
 
-news_event = { ##魁北克独立 = can.26
-	id = AOR_news.16
-	title = AOR_news.16.t
-	desc = AOR_news.16.d
-	picture = AOR_news.16.p
 
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = AOR_news.16.a
-	}
-}
 
 news_event = { #挪威-瑞典内战新闻 - SWE.1
     id = AOR_news.17
     title = SWE.destruction.t
     desc = SWE.destruction.d
+	picture = GFX_AOR_news_17_picture
     is_triggered_only = yes
     hidden = no
     major = yes
 
     option = {
-        name = SWE.destrucion.a
+        name = SWE.destruction.a
     }
 }
 
-news_event = { #上西里西亚起义
+news_event = { #阿瑟·米恩上台，前总理退休
 	id = AOR_news.18
 	title = AOR_news.18.t
 	desc = AOR_news.18.d
-
+	picture = GFX_AOR_news.18_pic
 	is_triggered_only = yes 
 	major = yes
 
@@ -343,13 +372,26 @@ news_event = { #上西里西亚起义
 	}
 }
 
-news_event = { #多瑙河解散
+news_event = { #加拿大1921年大选
+	id = AOR_news.19
+	title = AOR_news.19.t
+	desc = AOR_news.19.d
+	picture = GFX_AOR_news.19_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.19.a
+	}
+}
+
+
+news_event = { #魁北克起义
 	id = AOR_news.20
 	title = AOR_news.20.t
 	desc = AOR_news.20.d
-	picture = GFX_news_Danube_extinct
-
-	is_triggered_only = yes
+	picture = GFX_AOR_news.20_pic
+	is_triggered_only = yes 
 	major = yes
 
 	option = {
@@ -358,13 +400,12 @@ news_event = { #多瑙河解散
 }
 
 
-news_event = { #经济危机的钟声
+news_event = { #巴西内战
 	id = AOR_news.21
 	title = AOR_news.21.t
 	desc = AOR_news.21.d
-	picture = GFX_news_depression_calls
-
-	is_triggered_only = yes
+	picture = GFX_AOR_news.21_pic
+	is_triggered_only = yes 
 	major = yes
 
 	option = {
@@ -372,16 +413,316 @@ news_event = { #经济危机的钟声
 	}
 }
 
-news_event = { #经济危机的扩散与爆发
+news_event = { #埃及独立
 	id = AOR_news.22
 	title = AOR_news.22.t
 	desc = AOR_news.22.d
-	picture = GFX_news_depression_calls2
-
-	is_triggered_only = yes
+	picture = GFX_AOR_news.22_pic
+	is_triggered_only = yes 
 	major = yes
 
 	option = {
 		name = AOR_news.22.a
+	}
+}
+
+news_event = { #南非总理逝世
+	id = AOR_news.23
+	title = AOR_news.23.t
+	desc = AOR_news.23.d
+	picture = GFX_AOR_news.23_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.23.a
+	}
+}
+
+news_event = { #南非工团
+	id = AOR_news.24
+	title = AOR_news.24.t
+	desc = AOR_news.24.d
+	picture = GFX_AOR_news.24_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.24.a
+	}
+}
+
+news_event = { #滨海州合作政府
+	id = AOR_news.25
+	title = AOR_news.25.t
+	desc = AOR_news.25.d
+	picture = GFX_AOR_news.25_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.25.a
+	}
+}
+
+news_event = { #菲律宾革命
+	id = AOR_news.26
+	title = AOR_news.26.t
+	desc = AOR_news.26.d
+	picture = GFX_AOR_news.26_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.26.a
+	}
+}
+
+news_event = { #菲律宾革命被平息
+	id = AOR_news.27
+	title = AOR_news.27.t
+	desc = AOR_news.27.d
+	picture = GFX_AOR_news.27_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.27.a
+	}
+}
+
+news_event = { #哈康遇刺
+	id = AOR_news.28
+	title = AOR_news.28.t
+	desc = AOR_news.28.d
+	picture = GFX_AOR_news.28_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.28.a
+	}
+}
+
+news_event = { #鲁普雷希特登基
+	id = AOR_news.29
+	title = AOR_news.29.t
+	desc = AOR_news.29.d
+	picture = GFX_AOR_news.29_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.29.a
+	}
+}
+
+news_event = { #袁世凯逝世
+	id = AOR_news.30
+	title = AOR_news.30.t
+	desc = AOR_news.30.d
+	picture = GFX_AOR_news.30_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.30.a
+	}
+}
+
+news_event = { #倍倍尔逝世
+	id = AOR_news.31
+	title = AOR_news.31.t
+	desc = AOR_news.31.d
+	picture = GFX_AOR_news.31_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.31.a
+		trigger = {has_government = Marxism}
+	}
+	option = {
+		name = AOR_news.31.b
+		trigger = {
+			NOT = 	{
+			has_government = Marxism
+			}
+			NOT = 	{
+			has_government = Anarcho
+			}
+		}
+	}
+	option = {
+		name = AOR_news.31.e
+		trigger = {has_government = Anarcho}
+	}
+}
+news_event = { #起义寄辣！
+	id = AOR_news.32
+	title = AOR_news.32.t
+	desc = AOR_news.32.d
+	picture = GFX_AOR_news.32_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.32.a
+	}
+}
+news_event = { #1920打输了，1922再打一次！
+	id = AOR_news.33
+	title = AOR_news.33.t
+	desc = AOR_news.33.d
+	picture = GFX_AOR_news.33_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.33.a
+	}
+}
+news_event = { #好的铁！
+	id = AOR_news.34
+	title = AOR_news.34.t
+	desc = AOR_news.34.d
+	picture = GFX_AOR_news.34_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.34.a
+	}
+}
+news_event = { #卡内基寄！
+	id = AOR_news.35
+	title = AOR_news.35.t
+	desc = AOR_news.35.d
+	picture = GFX_AOR_news.35_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.35.a
+	}
+}
+news_event = { #卡内基公司也寄！
+	id = AOR_news.36
+	title = AOR_news.36.t
+	desc = AOR_news.36.d
+	picture = GFX_AOR_news.36_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.36.a
+	}
+}
+news_event = { #特斯拉！！
+	id = AOR_news.37
+	title = AOR_news.37.t
+	desc = AOR_news.37.d
+	picture = GFX_AOR_news.37_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.37.a
+	}
+}
+news_event = { #电波！！
+	id = AOR_news.38
+	title = AOR_news.38.t
+	desc = AOR_news.38.d
+	picture = GFX_AOR_news.38_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.38.a
+	}
+}
+news_event = { #君堡！！！
+	id = AOR_news.39
+	title = AOR_news.39.t
+	desc = AOR_news.39.d
+	picture = GFX_AOR_news.39_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.39.a
+	}
+}
+news_event = { #伊斯坦布尔！！！
+	id = AOR_news.40
+	title = AOR_news.40.t
+	desc = AOR_news.40.d
+	picture = GFX_AOR_news.40_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.40.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.41
+	title = AOR_news.41.t
+	desc = AOR_news.41.d
+	picture = GFX_AOR_news.41_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.41.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.42
+	title = AOR_news.42.t
+	desc = AOR_news.42.d
+	picture = GFX_AOR_news.42_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.42.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.43
+	title = AOR_news.43.t
+	desc = AOR_news.43.d
+	picture = GFX_AOR_news.43_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.43.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.44
+	title = AOR_news.44.t
+	desc = AOR_news.44.d
+	picture = GFX_AOR_news.44_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.44.a
+	}
+}
+news_event = { #收复！！！
+	id = AOR_news.45
+	title = AOR_news.45.t
+	desc = AOR_news.45.d
+	picture = GFX_AOR_news.45_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.45.a
 	}
 }

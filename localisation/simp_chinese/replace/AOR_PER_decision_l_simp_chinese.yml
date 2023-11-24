@@ -1,0 +1,60 @@
+﻿l_simp_chinese:
+ #动态文本Fightinginflation
+ AOR_LOC_PER_Fighting_inflation_1:0 "§CI§!"
+ AOR_LOC_PER_Fighting_inflation_2:0 "§YII§!"
+ AOR_LOC_PER_Fighting_inflation_3:0 "§RIII§!"
+#
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_1:0 "§R不容乐观§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_2:0 "§Y仍需努力§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_3:0 "§G积谷防饥§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_1:0 "§Y饿莩载道§!\n生活消费品: §R+10%§!\n工厂产出: §R-10%§!\n船坞产出: §R-10%§!\n适役人口: §R-20%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_2:0 "§Y饿殍满道§!\n生活消费品: §R+5%§!\n工厂产出: §R-10%§!\n船坞产出: §R-10%§!\n适役人口: §R-20%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_3:0 "§Y凶年恶岁§!\n生活消费品: §R+5%§!\n工厂产出: §R-10%§!\n船坞产出: §R-10%§!\n适役人口: §R-15%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_4:0 "§Y凶年恶岁§!\n工厂产出: §R-5%§!\n船坞产出: §R-5%§!\n适役人口: §R-10%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_5:0 "§Y凶年恶岁§!\n适役人口: §R-5%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_6:0 "§Y积谷防饥§!\n适役人口: §G+1%§!\n生活消费品: §G-1%§!\n每周战争支持度: §G+1%§!\n生产效率保持: §G+1%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_7:0 "§Y积谷防饥§!\n适役人口: §G+3%§!\n生活消费品: §G-3%§!\n每周战争支持度: §G+1%§!\n生产效率保持: §G+1%§!"
+AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_8:0 "§Y积谷防饥§!\n适役人口: §G+5%§!\n生活消费品: §G-5%§!\n每周战争支持度: §G+1%§!\n生产效率保持: §G+1%§!"
+ #决议ui文本
+#通胀
+ Fighting_inflation_no.1_text:0 "§CI§!"
+  Fighting_inflation_lvl1_tt:0 "生产效率保持: §R-10%§!\n工厂产出: §R-10%§!\n生产效率上限: §R0.-10%§!\n生产效率增长: §R-10%§!\n生活消费品: §R+10%§!"
+ Fighting_inflation_no.2_text:0 "§YII§!"
+  Fighting_inflation_lvl2_tt:0 "生产效率保持: §R-20%§!\n工厂产出: §R-20%§!\n生产效率上限: §R0.-20%§!\n生产效率增长: §R-20%§!\n生活消费品: §R+20%§!"
+ Fighting_inflation_no.3_text:0 "§RIII§!"
+  Fighting_inflation_lvl3_tt:0 "生产效率保持: §R-30%§!\n工厂产出: §R-30%§!\n生产效率上限: §R0.-30%§!\n生产效率增长: §R-20%§!\n生活消费品: §R+30%§!"
+  now_text:0 "目前等级:[Fightinginflation]"
+#农业圣战
+  JIHAD_text:0 "目前形势:[Agricultural_Jihad_Preliminary_jy]"
+  PER_Agricultural_Jihad_Preliminary_text:0 "[Agricultural_Jihad_Preliminary_xg]"
+#决议文本#########
+PER_Northern_Reconstruction_decision_category:0 "北方重建计划"
+PER_Northern_Reconstruction_decision_category_desc:0 "连年战乱让整个北方满目疮痍，重建是现在的当务之急"
+PER_Industrial_Development_Plan_No.1:0 "1号工业案"
+PER_Industrial_Development_Plan_No.1_desc:0 "此案经全国协商议会通过，继续进行落后腐朽的恺加王朝所未完成的工业化"
+PER_Fighting_inflation:0 "严重的通货膨胀"
+PER_Fighting_inflation_desc:0 "我国的通胀已经持续了很久，不能继续纵容其毒害百姓"
+PER_Agricultural_Jihad_Preliminary_jy:0 "农业圣战"
+PER_Agricultural_Jihad_Preliminary_jy_desc:0 "我国的农业被战乱和无能的恺加王朝官员破坏，现在饥荒流行，已经到了同类相食的地步"
+######决议选项#########
+gilan_Infrastructure_restoration:0 "吉兰基础设施重建"
+Azerbaijan_Infrastructure_restoration:0 "阿塞拜疆基础设施重建"
+Qom_Infrastructure_restoration:0 "库姆基础设施重建"
+Mashhad_Infrastructure_restoration:0 "马什哈德基础设施重建"
+mazanrande_Infrastructure_restoration:0 "马赞兰德基础设施重建"
+centre_Infrastructure_restoration:0 "首都地区基础设施重建"
+khamseh_Infrastructure_restoration:0 "哈姆塞基础设施重建"
+hamedan_Infrastructure_restoration:0 "哈马丹基础设施重建"
+Semnan_Infrastructure_restoration:0 "塞姆南基础设施重建"
+#
+Qom_Industrial_Development:0 "库姆工业发展"
+Mashhad_Industrial_Development:0 "马什哈德工业发展"
+centre_Industrial_Development:0 "中央地区工业发展"
+Arabistan_Industrial_Development:0 "阿拉伯斯坦工业发展"
+Fars_Industrial_Development:0 "法尔斯工业发展"
+#
+PER_Eliminate_inflation_over:0 "消除严重通胀的影响"
+#
+PER_Agricultural_Jihad_Preliminary_jy:0 "农业圣战"
+PER_Agricultural_Jihad_subsidy:0 "农业补贴"
+PER_Agricultural_Jihad_technology:0 "向农民传授先进技术"

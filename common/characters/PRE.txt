@@ -91,37 +91,7 @@ characters = {
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	PRE_Karl_von_einem = { #Karl_von_einem
-		name = Karl·von·einem
-		portraits = {
-			army = {
-				large = gfx/leaders/PRE/Karl_von_einem.png
-				small = GFX_portrait_Karl_von_einem_small
-			}
-			civilian = {
-				large = GFX_portrait_Karl_von_einem
-				small = GFX_portrait_Karl_von_einem_small
-			}
-		}
-		corps_commander = {
-			traits = {  }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = -1
-		}
-		advisor = {
-			cost = 150
-			slot = high_command
-			ledger = army
-			idea_token = PRE_Karl_von_einem
-			allowed = { original_tag = PRE }
-			traits = { army_infantry_2 }
-			ai_will_do = { factor = 1.000 }
-		}
-	}
+
 	PRE_Ludwig_von_falkenhausen = { #Ludwig_von_falkenhausen
 		name = Ludwig·von·falkenhausen
 		portraits = {

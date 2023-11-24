@@ -1,0 +1,336 @@
+focus_tree={
+	id = NAU_MID
+	country={
+		factor=0
+		modifier={
+			add=15
+			tag=nau
+		}
+	}
+	continuous_focus_position = { x = 1500  y = 2000 } 
+	focus={
+		id=NAU_Burning_City_Hall_2
+		x=7
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.1.tt
+		}
+	}
+	focus={
+		id=NAU_martial_law
+		x=6
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall_2}
+		mutually_exclusive={focus=NAU_state_of_emergency }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = NAU_martial
+		}
+	}
+	focus={
+		id=NAU_state_of_emergency
+		x=8
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall_2}
+		mutually_exclusive={focus=NAU_martial_law }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = war_economy
+			add_ideas = service_by_requirement
+		}
+	}
+	focus={
+		id=NAU_junta
+		x=7
+		y=2
+		prerequisite={focus=NAU_martial_law focus=NAU_state_of_emergency }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = Chaotic_politics
+		}
+	}
+	focus={
+		id=NAU_Arrest_Rightists
+		x=6
+		y=3
+		prerequisite={focus=NAU_junta}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_Arrest_Rightists_idea  }
+			country_event = NAU.25
+		}
+	}
+	focus={
+		id=NAU_Arrest_the_Left
+		x=8
+		y=3
+		prerequisite={focus=NAU_junta}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_Arrest_Left_idea  }
+			country_event = NAU.26
+		}
+	}
+	focus={
+		id=NAU_An_arm_of_nations
+		x=7
+		y=4
+		prerequisite={focus=NAU_Arrest_Rightists}
+		prerequisite={focus=NAU_Arrest_the_Left}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = The_new_nest_of_militarism 
+				add_idea = NAU_gonggu_junguo
+			}
+		}
+	}
+	focus={
+		id=NAU_Absorb_nationalism
+		x=4
+		y=4
+		prerequisite={focus=NAU_Arrest_Rightists}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = create_one_Division_tt
+		hidden_effect = {
+		load_oob = NAU_666
+		set_division_template_lock = {
+				division_template = "冲锋队"
+				is_locked = yes
+				force_allow_recruiting = no
+				}
+			}	
+
+		}
+	}
+	focus={
+		id=NAU_Combat_Pastor
+		x=0
+		y=4
+		prerequisite={focus=NAU_Arrest_Rightists}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_fight_god
+		country_event = NAU.27
+		}
+	}
+	focus={
+		id=NAU_Prohibition_of_strikes
+		x=10
+		y=4
+		prerequisite={focus=NAU_Arrest_the_Left}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_24h_working
+		}
+	}
+	focus={
+		id=NAU_Supporting_wealthy_farmers
+		x=14
+		y=4
+		prerequisite={focus=NAU_Arrest_the_Left}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=NAU_Unlimited_military_spending
+		x=2
+		y=5
+		prerequisite={focus=NAU_Absorb_nationalism}
+		prerequisite={focus=NAU_Combat_Pastor}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = 0.1
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = arms_factory 
+			level = 1
+			instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=NAU_Door_to_door_search
+		x=12
+		y=5
+		prerequisite={focus=NAU_Prohibition_of_strikes}
+		prerequisite={focus=NAU_Supporting_wealthy_farmers}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_gonggu_junguo
+				add_idea = NAU_mohu
+			}
+		}
+	}
+	focus={
+		id=NAU_Military_non_stop
+		x=7
+		y=5
+		prerequisite={focus=NAU_An_arm_of_nations}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_timed_idea = { days = 365 idea = NAU_be_a_soi  }
+		}
+	}
+	focus={
+		id=NAU_A_fanatical_march
+		x=5
+		y=6
+		prerequisite={focus=NAU_Unlimited_military_spending}
+		prerequisite={focus=NAU_Military_non_stop}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = NAU_fanatical
+		}
+	}
+	focus={
+		id=NAU_Get_lost_in_labor
+		x=9
+		y=6
+		prerequisite={focus=NAU_Door_to_door_search}
+		prerequisite={focus=NAU_Military_non_stop}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_timed_idea = { days = 365 idea = NAU_or_to_do}
+		}
+	}
+	focus={
+		id=NAU_military_democracy
+		x=7
+		y=7
+		prerequisite={focus=NAU_Get_lost_in_labor}
+		prerequisite={focus=NAU_A_fanatical_march}
+		prerequisite={focus=NAU_Military_non_stop}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_mohu
+				add_idea = NAU_army_equal
+			}
+			country_event = NAU.28
+		}
+	}
+}

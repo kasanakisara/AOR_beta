@@ -1,0 +1,578 @@
+focus_tree={
+	id = NAU_LEFT
+	country={
+		factor=0
+		modifier={
+			add=15
+			tag=nau
+		}
+	}
+	continuous_focus_position = { x = 1500  y = 2000 } 
+	focus={
+		id=NAU_Burning_City_Hall_1
+		x=8
+		y=0
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.1.tt
+		}
+	}
+	focus={
+		id=NAU_Left_wing_alliance_split
+		x=8
+		y=1
+		prerequisite={focus=NAU_Burning_City_Hall_1}
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.aplit.tt
+		}
+	}
+	focus={
+		id=NAU_Helmsman_in_position
+		x=3
+		y=2
+		prerequisite={focus=NAU_Left_wing_alliance_split}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.helmsan.tt
+		}
+	}
+	focus={
+		id=NAU_velvet_glove
+		x=13
+		y=2
+		prerequisite={focus=NAU_Left_wing_alliance_split}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.glove.tt
+		}
+	}
+	focus={
+		id=NAU_red_terror
+		x=2
+		y=3
+		prerequisite={focus=NAU_Helmsman_in_position}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_timed_idea = { days = 365 idea =NAU_red_terror_ideas } 
+		}
+	}
+	focus={
+		id=NAU_Understand_the_military
+		x=4
+		y=3
+		prerequisite={focus=NAU_Helmsman_in_position}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+				remove_idea = The_new_nest_of_militarism 
+				add_idea = NAU_people_army 
+			}
+		}
+	}
+	focus={
+		id=NAU_Reduce_the_military
+		x=12
+		y=3
+		prerequisite={focus=NAU_velvet_glove}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = The_new_nest_of_militarism
+		add_timed_idea = { days = 365 idea =NAU_del_army } 
+		}
+	}
+	focus={
+		id=NAU_Rebuild_order
+		x=14
+		y=3
+		prerequisite={focus=NAU_velvet_glove}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = 0.1
+		add_political_power = 200
+		}
+	}
+	focus={
+		id=NAU_Reorganize_the_government
+		x=3
+		y=4
+		prerequisite={focus=NAU_red_terror}
+		prerequisite={focus=NAU_Understand_the_military}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.19
+		}
+	}
+	focus={
+		id=NAU_The_country_of_the_masses
+		x=13
+		y=4
+		prerequisite={focus=NAU_Reduce_the_military}
+		prerequisite={focus=NAU_Rebuild_order}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.20
+		}
+	}
+	focus={
+		id=NAU_the_soviet
+		x=3
+		y=5
+		prerequisite={focus=NAU_Reorganize_the_government}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_people_soviet
+		}
+	}
+	focus={
+		id=NAU_Collectivized_bureaucrat
+		x=3
+		y=6
+		prerequisite={focus=NAU_the_soviet}
+		prerequisite={focus=NAU_the_soviet}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+		 remove_idea = NAU_people_soviet
+		 add_idea = NAU_people_soviet_1
+		 
+			}
+		}
+	}
+	focus={
+		id=NAU_Reorganize_Parliament
+		x=13
+		y=5
+		prerequisite={focus=NAU_The_country_of_the_masses}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_fed_par
+		}
+	}
+	focus={
+		id=NAU_localization
+		x=13
+		y=6
+		prerequisite={focus=NAU_Reorganize_Parliament}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			remove_idea = NAU_fed_par
+			add_idea = 	NAU_fed_par_1
+			}
+		}
+	}
+	focus={
+		id=NAU_Agriculture_Committee
+		x=6
+		y=5
+		prerequisite={focus=NAU_Reorganize_the_government}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_Agr_comm
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=NAU_Hang_a_wealthy_farmer
+		x=6
+		y=6
+		prerequisite={focus=NAU_Agriculture_Committee}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+					remove_idea = NAU_Agr_comm
+					add_idea = NAU_Agr_comm_1
+				}
+			add_timed_idea = {days = 365 idea =NAU_after_agr}
+			country_event =  NAU.21
+		}
+	}
+	focus={
+		id=NAU_Moderate_land_reform
+		x=10
+		y=5
+		prerequisite={focus=NAU_The_country_of_the_masses}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_reform_land
+		}
+	}
+	focus={
+		id=NAU_Autonomous_Village_Community
+		x=10
+		y=6
+		prerequisite={focus=NAU_Moderate_land_reform}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			remove_idea = NAU_reform_land
+			add_idea = NAU_reform_land_1
+			}
+		}
+	}
+	focus={
+		id=NAU_Industrial_Committee
+		x=0
+		y=5
+		prerequisite={focus=NAU_Reorganize_the_government}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = NAU_workers_comm
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NAU_Nationalization_of_enterprises
+		x=0
+		y=6
+		prerequisite={focus=NAU_Industrial_Committee}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = -0.05
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NAU_New_Trade_Union_Law
+		x=16
+		y=5
+		prerequisite={focus=NAU_The_country_of_the_masses}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_new_law
+		}
+	}
+	focus={
+		id=NAU_Encourage_enterprises
+		x=16
+		y=6
+		prerequisite={focus=NAU_New_Trade_Union_Law}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_new_law 
+				add_idea = NAU_new_law_1
+			}
+		}
+	}
+	focus={
+		id=NAU_The_thick_smoke_of_Frankfurt
+		x=1
+		y=9
+		prerequisite={focus=NAU_National_Machinery}
+		prerequisite={focus=NAU_Nationalization_of_enterprises}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_workers_comm
+				add_idea = NAU_workers_comm_1
+		}
+	}
+}
+	focus={
+		id=NAU_Efficient_collectivization
+		x=5
+		y=9
+		prerequisite={focus=NAU_National_Machinery}
+		prerequisite={focus=NAU_Hang_a_wealthy_farmer}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_Agr_comm_1
+			 add_idea = NAU_Agr_comm_2
+			}
+		}
+	}
+	focus={
+		id=NAU_National_Machinery
+		x=3
+		y=8
+		prerequisite={focus=NAU_Collectivized_bureaucrat}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_people_soviet_1
+			 add_idea = NAU_people_soviet_2
+			}
+		}
+	}
+	focus={
+		id=NAU_Production_enthusiasm
+		x=11
+		y=9
+		prerequisite={focus=NAU_Autonomous_Village_Community}
+		prerequisite={focus=NAU_Personal_security}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_reform_land_1
+			 add_idea = NAU_reform_land_2
+			}
+		}
+	}
+	focus={
+		id=NAU_enterprise_law
+		x=15
+		y=9
+		prerequisite={focus=NAU_Encourage_enterprises}
+		prerequisite={focus=NAU_Personal_security}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+				}
+			}
+		country_event =  NAU.22
+		}
+	}
+	focus={
+		id=NAU_Personal_security
+		x=13
+		y=8
+		prerequisite={focus=NAU_localization}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			 remove_idea = NAU_fed_par_1
+			 add_idea = NAU_fed_par_2
+			}
+		}
+	}
+	focus={
+		id=NAU_Red_Heart
+		x=3
+		y=10
+		prerequisite={focus=NAU_The_thick_smoke_of_Frankfurt}
+		prerequisite={focus=NAU_Efficient_collectivization}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event =  NAU.23
+		}
+	}
+	focus={
+		id=NAU_Pink_Wind
+		x=13
+		y=10
+		prerequisite={focus=NAU_Production_enthusiasm}
+		prerequisite={focus=NAU_enterprise_law}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		country_event =  NAU.24
+		}
+	}
+}

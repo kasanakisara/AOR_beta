@@ -1,139 +1,353 @@
 add_namespace = BAV
 
-#第一次斯巴达克斯同盟大会#
+#倍倍尔的教导#
 country_event = {
 	id = BAV.1
 	title = BAV.1.t
 	desc = BAV.1.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_BAV.1_pic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	hidden = no
       
 	option = {
 		name = BAV.1.a
-		add_stability = 0.01
+		add_political_power = 1
 	}
 }
 
-#内战中的共产党人#
+#一场噩梦#
 country_event = {
 	id = BAV.2
 	title = BAV.2.t
 	desc = BAV.2.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_BAV.2_pic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	hidden = no
       
 	option = {
 		name = BAV.2.a
-		add_political_power = 50
 	}
 }
 
-#撰写名单#
-country_event = {
+#倍倍尔逝世#
+country_event = { 
 	id = BAV.3
 	title = BAV.3.t
 	desc = BAV.3.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_BAV.3_pic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	hidden = no
       
 	option = {
 		name = BAV.3.a
+		kill_country_leader = yes
+		promote_character = {
+				character = BAV_Mehring
+				ideology =revolutionism
+			} 
+		hidden_effect = {
+		
+		load_focus_tree = BAV_2
+		set_country_flag = BAV.belel.dead
+		complete_national_focus = BAV_The_pioneer_has_passed_away
+		
+		}
 	}
 }
 
-#李or卢#
-country_event = {
+#共产国际的电报#
+country_event = { 
 	id = BAV.4
 	title = BAV.4.t
 	desc = BAV.4.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_BAV.4_pic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	hidden = no
       
 	option = {
 		name = BAV.4.a
 	}
 }
 
-#选举开始#
-country_event = {
+#德意志的新生#
+country_event = { 
 	id = BAV.5
 	title = BAV.5.t
 	desc = BAV.5.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_BAV.5_pic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	hidden = no
       
 	option = {
 		name = BAV.5.a
 	}
 }
-
-
-country_event = {
+#卢森堡的见闻#
+country_event = { 
 	id = BAV.6
 	title = BAV.6.t
 	desc = BAV.6.d
-	picture = GFX_Portrait_of_Tirpitz
-	mean_time_to_happen = {day = 1}
-	
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	    date > 1923.1.1
-		tag = BAV
-	}
+	hidden = no
       
 	option = {
 		name = BAV.6.a
-		load_focus_tree = BAV_4
 	}
 }
 
-#列宁对德国的预言#
-country_event = {
+#妇女的解放#
+country_event = { 
 	id = BAV.7
 	title = BAV.7.t
 	desc = BAV.7.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes     
+	picture = GFX_BAV.7_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
 	option = {
 		name = BAV.7.a
-		add_political_power = 10
 	}
 }
 
-#对柏林及德意志蛀虫的征讨檄文#
-country_event = {
+#李卜克内西的一日
+country_event = { 
 	id = BAV.8
 	title = BAV.8.t
 	desc = BAV.8.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes     
+	picture = GFX_BAV.8_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
 	option = {
 		name = BAV.8.a
-		add_war_support = 0.05
-		SHL = {
-			add_to_faction = BAV
+	}
+}
+
+#检测180天后修正德国革命创伤
+country_event = { 
+	id = BAV.9
+	title = BAV.9.t
+	desc = BAV.9.d
+	picture = GFX_BAV.9_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+    immediate = {
+		if = {
+			limit = {
+				NOT = { has_idea = BAV_a_deep_cut_from_revolution_2 } 
+
+			}
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution
+			add_idea = BAV_a_deep_cut_from_revolution_1			
+			}
+		}
+		else = {
+			swap_ideas = {
+			remove_idea = BAV_a_deep_cut_from_revolution_2
+			add_idea = BAV_a_deep_cut_from_revolution_3		
+				}
+			}
+	}		
+	option = {
+		name = BAV.9.a
+	}
+}
+
+#会址
+country_event = { 
+	id = BAV.10
+	title = BAV.10.t
+	desc = BAV.10.d
+	picture = GFX_BAV.10_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.10.a
+	}
+}
+
+
+#巴伐利亚-符腾堡苏维埃+南石荷苏维埃
+country_event = { 
+	id = BAV.11
+	title = BAV.11.t
+	desc = BAV.11.d
+	picture = GFX_BAV.11_pic
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	original_tag = BAV
+	}
+	option = {
+		name = BAV.11.a
+		ai_chance = { factor = 10 }	
+			create_faction = German_Revolutionary_League
+			BAV = {
+			add_to_faction = SHL
+			}
+		}
+}
+
+#柏林政府+波美+西里西亚
+country_event = { 
+	id = BAV.12
+	title = BAV.12.t
+	desc = BAV.12.d
+	picture = GFX_BAV.12_pic
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	original_tag = GER
+	}
+	option = {
+		name = BAV.12.a
+		ai_chance = { factor = 10 }	
+			create_faction = new_German_Confederation
+			GER = {
+			add_to_faction = SIL
+			}
+			GER = {
+			add_to_faction = KSH
+			}	
+		}
+}
+
+#对法兰克福和柏林，统统宣战！！！！（拉狄克除外 ）
+country_event = { 
+	id = BAV.13
+	title = BAV.13.t
+	desc = BAV.13.d
+	picture = GFX_BAV.13_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+      
+	option = {
+		name = BAV.13.a
+		trigger = { 
+			NAU = {
+				not = {has_country_leader = { ruling_only = yes name = "Karl Radek" }  }
+			}
+		}
+		declare_war_on = { target = GER type = civil_war } 
+		declare_war_on = { target = NAU type = civil_war } 
+	}
+	option = {
+		name = BAV.13.b
+		trigger = { 
+			NAU = {
+				has_country_leader = { ruling_only = yes name = "Karl Radek" } 
+			}
+		}
+		declare_war_on = { target = GER type = civil_war } 
+		BAV = {
+			add_to_faction = NAU
 		}
 	}
 }
 
 country_event = {
-	id = BAV.520
-	title = BAV.520.t
-	desc = BAV.520.d
-	trigger = {
-	    date > 1919.8.1
-		tag = BAV
-	}
-	mean_time_to_happen = {day = 1}
+	id = BAV.14
+	title = BAV.14.t
+	desc = BAV.14.d
+	picture = GFX_BAV.15_pic
+	is_triggered_only = yes
 	
 	fire_only_once = yes
-	picture = GFX_Portrait_of_Tirpitz     
 	option = {
-		name = BAV.520.a
+		name = BAV.14.a
+		annex_country = { target = WUR transfer_troops = yes }
+        } 
+
+ }
+
+ 
+country_event = {
+	id = BAV.15
+	title = BAV.15.t
+	desc = BAV.15.d
+	picture = GFX_BAV.15_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.15.a
+        } 
+
+ }
+country_event = {
+	id = BAV.16
+	title = BAV.16.t
+	desc = BAV.16.d
+	picture = GFX_BAV.16_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.16.a
+        } 
+
+ }
+ 
+country_event = {
+	id = BAV.17
+	title = BAV.17.t
+	desc = BAV.17.d
+	picture = GFX_BAV.17_pic
+	mean_time_to_happen = { day = 1}
+	trigger = {
+	    date > 1922.12.1
+		tag = BAV
 	}
-}
+	fire_only_once = yes
+	option = {
+		name = BAV.17.a
+			hidden_effect = {
+			set_country_flag = BAV.RUS.mention
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus =  BAV_Knock_the_alarm_bell
+			}
+        } 
+
+ }
+country_event = {
+	id = BAV.50
+	title = BAV.50.t
+	desc = BAV.50.d
+	picture = GFX_BAV.50_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.50.a
+        } 
+
+ }
+ country_event = {
+	id = BAV.51
+	title = BAV.51.t
+	desc = BAV.51.d
+	picture = GFX_BAV.51_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.51.a
+        } 
+
+ }

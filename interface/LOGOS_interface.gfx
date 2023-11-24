@@ -197,14 +197,93 @@ spriteTypes = {
 		name = "GFX_portrait_Xi_Meng_La_Duo_Wei_Ci_Ji"
 		texturefile = "gfx/leaders/ORA/portrait_ORA_Xi_Meng_La_Duo_Wei_Ci_Ji.png"
 	}
-	
-	#炸弹狂热
+	spriteType = { #墨西哥皇后
+		name = "GFX_portrait_MXS_Carlota"
+		texturefile = "gfx/leaders/MXS/Charlotte.png"
+	}
+	spriteType = { #谁家鲁登道夫
+		name = "GFX_portrait_Erich_Ludendorff"
+		texturefile = "gfx/leaders/NAU/aw3nq-kbu7m.dds"
+	}
+	#巴伐利亚将领
+	spriteType = { 
+		name = "GFX_portrait_friedrich_dollma"
+		texturefile = "gfx/leaders/BAV/portrait_friedrich_dollma.png"
+	}
+	spriteType = { 
+		name = "GFX_portrait_Hans_Gunther_van_Hooven"
+		texturefile = "gfx/leaders/BAV/portrait_Hans_Gunther_van_Hooven.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Ludwig_Beck"
+		texturefile = "gfx/leaders/BAV/portrait_Ludwig_Beck.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Walther_von_Kurzbach"
+		texturefile = "gfx/leaders/BAV/portrait_Walther_von_Kurzbach.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Vincenz_Muller"
+		texturefile = "gfx/leaders/BAV/portrait_Vincenz_Muller.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Rupprecht_Ferdinand"
+		texturefile = "gfx/leaders/BAV/portrait_Rupprecht_Ferdinand.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Walter_von_Reichenau"
+		texturefile = "gfx/leaders/BAV/portrait_Walter_von_Reichenaui.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_BAV_Wilhelm_Pieck"
+		texturefile = "gfx/leaders/BAV/portrait_BAV_Wilhelm_Pieck.png"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Ernst_Thalmann"
+		texturefile = "gfx/leaders/BAV/akpep-paw5g.dds"
+	}
+	spriteType = { #Xi_Meng_La_Duo_Wei_Ci_Ji
+		name = "GFX_portrait_Eugen_Levine"
+		texturefile = "gfx/leaders/BAV/portrait_Eugen_Levine.png"
+	}
+
+
+
+
+
+
+
+	#特质
     SpriteType = {
 		name = "GFX_trait_ORA_Crazy_Bomber"
 		texturefile = "gfx/interface/traits/personal/trait_ORA_Crazy_Bomber.png"
 		
 	}
-	
+	SpriteType = {
+		name = "GFX_trait_BAV_committed_revolutionary"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_committed_revolutionary.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_old_order"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_old_order.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_vicar_of_Bray"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_vicar_of_Bray.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_labor_reform_2"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_labor_reform_2.png"
+		
+	}
+	SpriteType = {
+		name = "GFX_trait_BAV_labor_reform_1"
+		texturefile = "gfx/interface/traits/personal/trait_BAV_labor_reform_1.png"
+		
+	}
 	#工团决议图标
 	SpriteType = {
 		name = "GFX_decision_category_syn"
@@ -297,4 +376,570 @@ spriteTypes = {
 		name = "GFX_idea_Semi_colonial_economy"
 		texturefile = "gfx/interface/ideas/Semi_colonial_economy.dds"
 	}
+	
+	#比荷卢民族精神
+	spriteType = {
+		name = "GFX_idea_Apparent_equality"
+		texturefile = "gfx/interface/ideas/Apparent_equality.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_Benelux_Constitution"
+		texturefile = "gfx/interface/ideas/The_Benelux_Constitution.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Benelux_Governing_in_Netherlands"
+		texturefile = "gfx/interface/ideas/Benelux_Governing_in_Netherlands.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Benelux_GG"
+		texturefile = "gfx/interface/ideas/Benelux_GG.png"
+	}
+	#叙利亚民族精神
+		spriteType = {
+		name = "GFX_idea_Stab_in_the_back"
+		texturefile = "gfx/interface/ideas/Stab_in_the_back.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_Brutal_repression"
+		texturefile = "gfx/interface/ideas/Brutal_repression.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Turkish_officer_corps"
+		texturefile = "gfx/interface/ideas/Turkish_officer_corps.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Regain_lost_ground"
+		texturefile = "gfx/interface/ideas/Regain_lost_ground.png"
+	}
+		spriteType = {
+		name = "GFX_idea_come_from_comfusion"
+		texturefile = "gfx/interface/ideas/come_from_comfusion.png"
+	}
+		spriteType = {
+		name = "GFX_idea_last_kurds"
+		texturefile = "gfx/interface/ideas/last_kurds.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Alone_and_no_help"
+		texturefile = "gfx/interface/ideas/Alone_and_no_help.png"
+	}
+		spriteType = {
+		name = "GFX_idea_fight_for_freedom"
+		texturefile = "gfx/interface/ideas/fight_for_freedom.png"
+	}
+		spriteType = {
+		name = "GFX_idea_aid_from_uk"
+		texturefile = "gfx/interface/ideas/aid_from_uk.png"
+	}
+	#阿工团民族精神
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"
+		texturefile = "gfx/interface/ideas/AOR_ORA_xin_da_lu_mo_shi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_gong_hui_ling_dao_pic"
+		texturefile = "gfx/interface/ideas/AOR_ORA_gong_hui_ling_dao_pic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_1"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_2"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ARG_gong_ren_shang_qian_xian_pic_3"
+		texturefile = "gfx/interface/ideas/ARG_gong_ren_shang_qian_xian_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_AOR_ORA_Workers_autonomy"
+		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
+	}
+	#南非民族精神
+		spriteType = {
+		name = "GFX_idea_Land_of_diamonds_gold"
+		texturefile = "gfx/interface/ideas/Land_of_diamonds_gold.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Boer_question_mid"
+		texturefile = "gfx/interface/ideas/Boer_question_mid.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Negro_problem"
+		texturefile = "gfx/interface/ideas/Negro_problem.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Prince_of_Connaught"
+		texturefile = "gfx/interface/ideas/Prince_of_Connaught.png"
+	}
+		spriteType = {
+		name = "GFX_idea_White_mass_unemployment"
+		texturefile = "gfx/interface/ideas/White_mass_unemployment.png"
+	}
+		spriteType = {
+		name = "GFX_idea_Agricultural_crisis"
+		texturefile = "gfx/interface/ideas/Agricultural_crisis.png"
+	}
+	
+	#事件链新闻
+		#比荷卢选举陷入僵局
+	spriteType = {
+		name = "GFX_AOR_news.2_pic"
+		texturefile = "gfx/event_pictures/AOR_news.2_pic.png"
+	}
+		#阿工团成立
+	spriteType = {
+		name = "GFX_AOR_news.3_pic"
+		texturefile = "gfx/event_pictures/AOR_news.3_pic.png"
+	}
+		#墨西哥危机
+	spriteType = {
+		name = "GFX_AOR_news.4_pic"
+		texturefile = "gfx/event_pictures/AOR_news.4_pic.png"
+	}
+		#皇后摄政
+	spriteType = {
+		name = "GFX_AOR_news.5_pic"
+		texturefile = "gfx/event_pictures/AOR_news.5_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.6_pic"
+		texturefile = "gfx/event_pictures/AOR_news.6_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.7_pic"
+		texturefile = "gfx/event_pictures/AOR_news.7_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.8_pic"
+		texturefile = "gfx/event_pictures/AOR_news.8_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.9_pic"
+		texturefile = "gfx/event_pictures/AOR_news.9_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_news.10_pic"
+		texturefile = "gfx/event_pictures/AOR_news.10_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.11_pic"
+		texturefile = "gfx/event_pictures/AOR_news.11_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.12_pic"
+		texturefile = "gfx/event_pictures/AOR_news.12_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.13_pic"
+		texturefile = "gfx/event_pictures/AOR_news.13_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.14_pic"
+		texturefile = "gfx/event_pictures/AOR_news.14_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.15_pic"
+		texturefile = "gfx/event_pictures/AOR_news.15_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.16_pic"
+		texturefile = "gfx/event_pictures/AOR_news.16_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.17_pic"
+		texturefile = "gfx/event_pictures/AOR_news.17_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.18_pic"
+		texturefile = "gfx/event_pictures/AOR_news.18_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.19_pic"
+		texturefile = "gfx/event_pictures/AOR_news.19_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.20_pic"
+		texturefile = "gfx/event_pictures/AOR_news.20_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.21_pic"
+		texturefile = "gfx/event_pictures/AOR_news.21_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.22_pic"
+		texturefile = "gfx/event_pictures/AOR_news.22_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.23_pic"
+		texturefile = "gfx/event_pictures/AOR_news.23_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.24_pic"
+		texturefile = "gfx/event_pictures/AOR_news.24_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.25_pic"
+		texturefile = "gfx/event_pictures/AOR_news.25_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.26_pic"
+		texturefile = "gfx/event_pictures/AOR_news.26_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.27_pic"
+		texturefile = "gfx/event_pictures/AOR_news.28_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.29_pic"
+		texturefile = "gfx/event_pictures/AOR_news.29_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.30_pic"
+		texturefile = "gfx/event_pictures/AOR_news.30_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.31_pic"
+		texturefile = "gfx/event_pictures/AOR_news.31_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.32_pic"
+		texturefile = "gfx/event_pictures/AOR_news.32_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.33_pic"
+		texturefile = "gfx/event_pictures/AOR_news.33_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.34_pic"
+		texturefile = "gfx/event_pictures/AOR_news.34_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.35_pic"
+		texturefile = "gfx/event_pictures/AOR_news.35_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.36_pic"
+		texturefile = "gfx/event_pictures/AOR_news.36_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.37_pic"
+		texturefile = "gfx/event_pictures/AOR_news.37_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.38_pic"
+		texturefile = "gfx/event_pictures/AOR_news.38_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.39_pic"
+		texturefile = "gfx/event_pictures/AOR_news.39_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.40_pic"
+		texturefile = "gfx/event_pictures/AOR_news.40_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.41_pic"
+		texturefile = "gfx/event_pictures/AOR_news.41_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.42_pic"
+		texturefile = "gfx/event_pictures/AOR_news.42_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.43_pic"
+		texturefile = "gfx/event_pictures/AOR_news.43_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.44_pic"
+		texturefile = "gfx/event_pictures/AOR_news.44_pic.png"
+	}
+
+	
+	#巴苏事件图片
+		spriteType = {
+		name = "GFX_BAV.1_pic"
+		texturefile = "gfx/event_pictures/BAV.1_pic.png"
+	}
+		spriteType = {
+		name = "GFX_BAV.2_pic"
+		texturefile = "gfx/event_pictures/BAV.2_pic.png"
+	}
+	spriteType = {
+		name = "GFX_BAV.3_pic"
+		texturefile = "gfx/event_pictures/BAV.3_pic.png"
+	}
+		spriteType = {
+		name = "GFX_BAV.4_pic"
+		texturefile = "gfx/event_pictures/BAV.4_pic.png"
+	}
+			spriteType = {
+		name = "GFX_BAV.5_pic"
+		texturefile = "gfx/event_pictures/BAV.5_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.6_pic"
+		texturefile = "gfx/event_pictures/BAV.6_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.7_pic"
+		texturefile = "gfx/event_pictures/BAV.7_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.8_pic"
+		texturefile = "gfx/event_pictures/BAV.8_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV9_pic"
+		texturefile = "gfx/event_pictures/BAV.9_pic.png"
+	}		spriteType = {
+		name = "GFX_BAV.10_pic"
+		texturefile = "gfx/event_pictures/BAV.10_pic.png"
+	}
+	#工团事件图片
+	spriteType = {
+		name = "GFX_ORA.14_pic"
+		texturefile = "gfx/event_pictures/ORA.14_pic.png"
+	}
+	spriteType = {
+		name = "GFX_ORA.15_pic"
+		texturefile = "gfx/event_pictures/ORA.15_pic.png"
+	}
+	#比利时事件图片
+	spriteType = {
+		name = "GFX_BEL.26_pic"
+		texturefile = "gfx/event_pictures/BEL.26_pic.png"
+	}
+	spriteType = {
+		name = "GFX_BEL.27_pic"
+		texturefile = "gfx/event_pictures/BEL.27_pic.png"
+	}
+	#柏林事件图片
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.1_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.1_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.2_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.2_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_GER_timeaxis.3_pic"
+		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.3_pic.png"
+	}
+	#巴伐利亚第一阶段国策
+spriteType = {
+  name = "GFX_goal_BAV_civil_War_gone"
+  texturefile = "gfx/interface/goals/BAV_civil_War_gone.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Rebuild_army"
+  texturefile = "gfx/interface/goals/BAV_Rebuild_army.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Training_style_roving_rebels"
+  texturefile = "gfx/interface/goals/BAV_Training_style_roving_rebels.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Crack_extreme_democratic_ideas"
+  texturefile = "gfx/interface/goals/BAV_Crack_extreme_democratic_ideas.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Transformation_labor"
+  texturefile = "gfx/interface/goals/BAV_Transformation_labor.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Renounce_nobility_once"
+  texturefile = "gfx/interface/goals/BAV_Renounce_nobility_once.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Former_party_member"
+  texturefile = "gfx/interface/goals/BAV_Former_party_member.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Army_shepherd"
+  texturefile = "gfx/interface/goals/BAV_Army_shepherd.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Allied_steel"
+  texturefile = "gfx/interface/goals/BAV_Allied_steel.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_People_guard"
+  texturefile = "gfx/interface/goals/BAV_People_guard.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Liquidate_old_government"
+  texturefile = "gfx/interface/goals/BAV_Liquidate_old_government.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Take_knife_to_bureaucrat"
+  texturefile = "gfx/interface/goals/BAV_Take_knife_to_bureaucrat.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_New_regulation"
+  texturefile = "gfx/interface/goals/BAV_New_regulation.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_New_people_waiter"
+  texturefile = "gfx/interface/goals/BAV_New_people_waiter.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_New_Soviet_government"
+  texturefile = "gfx/interface/goals/BAV_New_Soviet_government.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_First_Council_Spartacus"
+  texturefile = "gfx/interface/goals/BAV_First_Council_Spartacus.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_The_future_Wave"
+  texturefile = "gfx/interface/goals/BAV_The_future_Wave.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_trip_to_country"
+  texturefile = "gfx/interface/goals/BAV_trip_to_country.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Streets_Munich"
+  texturefile = "gfx/interface/goals/BAV_Streets_Munich.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Spread_revolution"
+  texturefile = "gfx/interface/goals/BAV_Spread_revolution.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Abolish_feudalism"
+  texturefile = "gfx/interface/goals/BAV_Abolish_feudalism.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Fire_out"
+  texturefile = "gfx/interface/goals/BAV_Fire_out.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_pesticide"
+  texturefile = "gfx/interface/goals/BAV_pesticide.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_peasant_commune"
+  texturefile = "gfx/interface/goals/BAV_peasant_commune.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_roar_the_factory"
+  texturefile = "gfx/interface/goals/BAV_roar_the_factory.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Exchange_bell"
+  texturefile = "gfx/interface/goals/BAV_Exchange_bell.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Democratic_production"
+  texturefile = "gfx/interface/goals/BAV_Democratic_production.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Command_production"
+  texturefile = "gfx/interface/goals/BAV_Command_production.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Withdrawal_imperial_exchange"
+  texturefile = "gfx/interface/goals/BAV_Withdrawal_imperial_exchange.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Limited_trade"
+  texturefile = "gfx/interface/goals/BAV_Limited_trade.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_Coowned_factory"
+  texturefile = "gfx/interface/goals/BAV_Coowned_factory.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_We_never_left"
+  texturefile = "gfx/interface/goals/BAV_We_never_left.png"
+ }
+spriteType = {
+  name = "GFX_goal_BAV_flames_of_revolution_continue_unabated"
+  texturefile = "gfx/interface/goals/BAV_flames_of_revolution_continue_unabated.png"
+ }
+ #巴苏第二阶段国策
+  spriteType = {
+  name = "GFX_goal_BAV_The_pioneer_has_passed_away"
+  texturefile = "gfx/interface/goals/BAV_The_pioneer_has_passed_away.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Baton_transmission"
+  texturefile = "gfx/interface/goals/BAV_Baton_transmission.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Cut_off_history"
+  texturefile = "gfx/interface/goals/BAV_Cut_off_history.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Friends_from_the_North"
+  texturefile = "gfx/interface/goals/BAV_Friends_from_the_North.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Focusing_on_the_inside"
+  texturefile = "gfx/interface/goals/BAV_Focusing_on_the_inside.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_sacred_flame_will_not_extinguish"
+  texturefile = "gfx/interface/goals/BAV_The_sacred_flame_will_not_extinguish.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_Revolutionary_Heart_of_Germany"
+  texturefile = "gfx/interface/goals/BAV_The_Revolutionary_Heart_of_Germany.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Ideological_revolution"
+  texturefile = "gfx/interface/goals/BAV_Ideological_revolution.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Common_industrial_model"
+  texturefile = "gfx/interface/goals/BAV_Common_industrial_model.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Knock_the_alarm_bell"
+  texturefile = "gfx/interface/goals/BAV_Knock_the_alarm_bell.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Land_nership"
+  texturefile = "gfx/interface/goals/BAV_Land_nership.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Industrial_estructuring"
+  texturefile = "gfx/interface/goals/BAV_Industrial_estructuring.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_shining_new_stars_of_the_times"
+  texturefile = "gfx/interface/goals/BAV_shining_new_stars_of_the_times.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Peipeier_deal"
+  texturefile = "gfx/interface/goals/BAV_Peipeier_deal.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Lenin_rther_xpansion"
+  texturefile = "gfx/interface/goals/BAV_Lenin_rther_xpansion.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Crush_revisionism"
+  texturefile = "gfx/interface/goals/BAV_Crush_revisionism.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_Full_f_itality"
+  texturefile = "gfx/interface/goals/BAV_Full_f_itality.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_1_2_1"
+  texturefile = "gfx/interface/goals/BAV_1_2_1.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_lmportance_of_discipline"
+  texturefile = "gfx/interface/goals/BAV_The_lmportance_of_discipline.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BAV_The_new_germany_people_army"
+  texturefile = "gfx/interface/goals/BAV_The_new_germany_people_army.png"
+ }
 }

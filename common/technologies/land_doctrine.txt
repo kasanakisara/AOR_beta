@@ -3382,7 +3382,10 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = 2 y = 14 }
 		}
-		
+		path = {
+			leads_to_tech = spiritual_unity
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			modifier = {
 				not = {
@@ -3397,7 +3400,68 @@ technologies = {
 			industry = 2.0
 		}
 	}
-
+	spiritual_unity = {
+		xp_research_type = army
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 16 }
+		}
+		path = {
+			leads_to_tech = national_training
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	national_training = {
+		xp_research_type = army
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 18 }
+		}
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
 	masterful_blitz = {
 		enable_tactic = tactic_masterful_blitz
 

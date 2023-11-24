@@ -25,6 +25,7 @@ country_event = {
 	option = {
 		name = PRI.1.a
 		hidden_effect = {
+			news_event = { id = AOR_news.25 }
 			PRI = {
 				transfer_state = 408
 				transfer_state = 912

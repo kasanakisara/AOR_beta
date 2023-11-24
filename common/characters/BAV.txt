@@ -1,0 +1,147 @@
+characters = {
+friedrich_dollma= { 
+		name = friedrich_dollma
+		portraits = {
+			army = {
+				large = GFX_portrait_friedrich_dollma
+                small = GFX_portrait_friedrich_dollma_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_old_order career_officer bearer_of_artillery trait_engineer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+    Hans_Gunther_van_Hooven= { 
+		name = Hans_Gunther_van_Hooven
+		portraits = {
+			army = {
+				large = GFX_portrait_Hans_Gunther_van_Hooven
+                small = GFX_portrait_Hans_Gunther_van_Hooven_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_vicar_of_Bray trickster career_officer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+Ludwig_Beck= { 
+		name = Ludwig_Beck
+		portraits = {
+			army = {
+				large = GFX_portrait_Ludwig_Beck
+small = GFX_portrait_Ludwig_Beck_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_vicar_of_Bray  career_officer skilled_staffer}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+Walther_von_Kurzbach= { 
+		name = Walther_von_Kurzbach
+		portraits = {
+			army = {
+				large = GFX_portrait_Walther_von_Kurzbach
+small = GFX_portrait_Walther_von_Kurzbach_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_vicar_of_Bray career_officer bearer_of_artillery }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+Vincenz_Muller= { 
+		name = Vincenz_Muller
+		portraits = {
+			army = {
+				large = GFX_portrait_Vincenz_Muller
+small = GFX_portrait_Vincenz_Muller_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_committed_revolutionary career_officer brilliant_strategist BAV_committed_revolutionary}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+Walter_von_Reichenau= { 
+		name = Walter_von_Reichenau
+		portraits = {
+			army = {
+				large = GFX_portrait_Walter_von_Reichenau
+small = GFX_portrait_Walter_von_Reichenau_small
+			}
+		}
+		field_marshal = {
+			traits = {BAV_old_order old_guard career_officer trait_engineer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+Wilhelm_Pieck= { 
+		name = Wilhelm_Pieck
+		portraits = {
+			army = {
+				large = GFX_portrait_BAV_Wilhelm_Pieck
+small = GFX_portrait_BAV_Wilhelm_Pieck_small
+			}
+		}
+		corps_commander = {
+			traits = { BAV_committed_revolutionary politically_connected}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+Ernst_Thalmann= { 
+		name = Ernst_Thalmann
+		portraits = {
+			army = {
+				large = GFX_portrait_Ernst_Thalmann
+small = GFX_portrait_Ernst_Thalmann_small
+			}
+		}
+		corps_commander = {
+			traits = {BAV_committed_revolutionary  politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+}

@@ -1,0 +1,8 @@
+ENG_zuidagongyechanzhi = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_ETH_army
+	custom_modifier_tooltip = ENG_zuidagongyechanzhi
+	local_building_slots_factor = -0.15
+
+}

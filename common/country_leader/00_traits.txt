@@ -6525,4 +6525,149 @@ leader_traits = {
 		production_speed_buildings_factor = 0.05
 	}
 
+	Genius_New_Star_in_Diplomacy = {  
+		random = no
+		political_power_gain = 0.05
+		IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = -0.33
+	}
+	Diplomatic_experts = {  
+		random = no
+		IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = 0.25
+	}
+
+	Judicial_experts = {  
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.05
+	}
+	educational_experts = {  
+		random = no
+		research_speed_factor = 0.05
+	}
+	Compulsory_Education_Promoters = {  #义务教育推动者
+	random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.05
+	}
+	Agricultural_and_commercial_experts = {  #农商专家
+	random = no
+		weekly_manpower = 0.05
+		stability_factor = 0.05
+		PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+    }
+	upright_financial_official = {  #正直的财政官圆
+	random = no
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+		political_power_gain = 0.1
+    }
+	Architects_and_industrialists = {  #致力于社会化的实业家及建筑家
+	random = no
+		production_speed_infrastructure_factor = 0.15
+		industrial_capacity_factory = 0.1
+		production_speed_industrial_complex_factor = 0.05
+    }
+
+	Quartermaster_General = {  #均需将军
+	random = no
+		consumer_goods_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+    }
+
+	Practitioner_of_saving_the_country_through_industry = {  #实业救国实践家
+	random = no
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = 0.15
+    }
+
+	editor = {  #编辑
+	random = no
+		stability_factor = 0.05
+		political_power_gain = 0.05
+    }
+	jet_setter = {#名流人士
+	random = no
+		stability_factor = 0.1
+	}
+	Patriotic_philanthropist = {#爱国慈善家
+	random = no
+		experience_loss_factor = -0.1
+		monthly_population = 0.05
+	}
+	Famoustax_experts = {#著名财税家
+	random = no
+		consumer_goods_factor = -0.05
+	}
+	Assassination_King = {#暗杀大王
+		BOOST_RESISTANCE_FACTOR = 0.1
+		operation_make_resistance_contacts_outcome = 0.1
+	}
+	Constitutionalist_elites = {#立宪派精英
+	random = no
+	political_power_factor = 0.1
+	}
+	Introspectionist = {#联省主义者
+	random = no
+		SOC_democratic = 0.01
+	}
+	Clean_politician = {#清流政治家
+	random = no
+		stability_factor = 0.05
+		opinion_gain_monthly_factor = 0.05
+	}
+	Party_Affairs_Coordinator = {#党务协调者
+	random = no
+		stability_popularity_factor = 0.35
+	}
+	Famous_educator = {#知名教育家
+	random = no
+		research_speed_factor = 0.05
+	}
+	Guangfu_Society_Fellow = {#光复会义士
+	random = no
+		war_support_factor = 0.1
+	}
+	Harmony_Establishment_Country = {#调和立国论
+	random = no
+		compliance_growth = 0.01
+		resistance_damage_to_garrisons = -0.15
+		foreign_subversive_activities = -0.4
+	}
+	Democratic_revolutionaries = {#民主革命家
+		war_support_factor = 0.05
+		command_abilities_cost_factor = -0.1
+	}
+	Overseas_Chinese_industrialist = { #华侨实业家
+	random = no
+		production_speed_industrial_complex_factor = 0.1
+		industrial_capacity_factory = 0.1
+	}
+	Overseas_Chinese_Diplomat = {#华侨外交家
+	random = no
+		opinion_gain_monthly_factor = 0.1
+	}
+	Public_welfare_industrialist = {#公益实业家
+	random = no
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_supply_node_factor = 0.1
+	}
+	Chemical_Industry_Practitioner = {#化工实业家
+	random = no
+		production_speed_synthetic_refinery_factor = 0.1
+		MAX_FUEL_FACTOR = 0.1
+		FUEL_GAIN_ADD = 0.1
+	}
+	Famous_comprador = {#著名大买办
+	random = no
+		stability_factor = 0.15
+		modifier_production_speed_industrial_complex_factor = -0.1
+		production_speed_infrastructure_factor = -0.1
+		production_speed_fuel_silo_factor = -0.1
+	}
+	Chief_Staff_Business_Group = {#商团参事长
+	random = no
+		TRADE_OPINION_FACTOR = 0.15
+		LOCAL_RESOURCES_FACTOR = -0.03
+	}
 }

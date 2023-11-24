@@ -19,7 +19,7 @@ focus_tree = {
 			
 			hidden_effect = {
 				country_event = { days = 15 id = AOR_ORA_events.2 }
-				country_event = { days = 60 id = AOR_ORA_events.3 }
+				country_event = { days = 30 id = AOR_ORA_events.3 }
 			}
 			add_ideas = ORA_gong_ren_shang_qian_xian
 			unlock_decision_category_tooltip = AOR_ORA_hu_yv_zong_ba_gong 

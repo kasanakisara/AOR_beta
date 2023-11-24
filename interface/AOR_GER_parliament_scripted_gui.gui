@@ -9,6 +9,7 @@ guiTypes = {
 			name ="背景板1"
 			spriteType = "GFX_GER_Background_1"
 			position = { x = 15 y = -10 }
+
 		}
 		iconType = {
 			name ="背景板2"
@@ -23,6 +24,7 @@ guiTypes = {
 			maxWidth = 470
 			maxHeight = 500
 			format = left
+
 		}
 		
 		iconType = {

@@ -1,11 +1,11 @@
 spriteTypes = {	
 	spriteType = {
-		name = "GFX_bop_BEL_left_side"
-		texturefile = "gfx/interface/bop/BEL_BOP_left.dds"	
+		name = "GFX_bop_SWE_left_side"
+		texturefile = "gfx/interface/bop/SWE_BOP_left.dds"	
 	}
 	
 	spriteType = {
-		name = "GFX_bop_BEL_right_side"
-		texturefile = "gfx/interface/bop/BEL_BOP_right.dds"	
+		name = "GFX_bop_SWE_right_side"
+		texturefile = "gfx/interface/bop/SWE_BOP_right.dds"	
 	}
 }

@@ -674,9 +674,10 @@ guiTypes = {
 		}
 		iconType = {
 			name = "symbol"
-			position = { x = 42 y = 88 }
+			position = { x = 106 y = 125 }
 			spriteType = "GFX_goal_unknown"
 			alwaystransparent = yes
+			centerposition = yes
 		}
 		iconType = {
 			name = "prerequisites_bg"
@@ -719,9 +720,11 @@ guiTypes = {
 			font = "hoi_18mbs"
 			borderSize = {x = 5 y = 0}
 			text = "Description"
+			scrollbartype = standardtext_slider
 			maxWidth = 485
-			maxHeight = 70
+			maxHeight = 110
 			format = center
+			
 		}
 
 		iconType = {

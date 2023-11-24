@@ -62,8 +62,9 @@ country_event = {
 		add_stability = 0.05
 	}
 }
+
 country_event = {
-	id = NAU.5 #护照国籍
+	id = NAU.5 #巴登陷入昏迷
 	title = NAU.5.t
 	desc = NAU.5.d
 	picture = GFX_report_event_polish_tanks_01
@@ -73,16 +74,30 @@ country_event = {
 	option = {
 		name = NAU.5.a
 		ai_chance = { factor = 10 }
-		add_war_support = 0.05
-	}
-	option = {
-		name = NAU.5.b
-		ai_chance = { factor = 10 }
-		add_stability = 0.1
+		add_stability = -0.1
+		hidden_effect = 
+		{
+		country_event = { days = 2 id = NAU.6 }
+		country_event = { days = 3 id = NAU.7 }
+		country_event = { days = 4 id = NAU.8 }
+		}
+		hidden_effect = {
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "State of Emergency"
+		desc = "POLITICS_Emergency_DESC"
+		picture = "gfx/leaders/NAU/emg.png"
+		expire = "1965.1.1"
+		ideology = miliciagov
+		traits = {
+				}
+			}
+		}
 	}
 }
+
 country_event = {
-	id = NAU.6 #坦克变家具
+	id = NAU.6 #混乱的办公室
 	title = NAU.6.t
 	desc = NAU.6.d
 	picture = GFX_report_event_polish_tanks_01
@@ -91,12 +106,12 @@ country_event = {
 	
 	option = {
 		name = NAU.6.a
-		ai_chance = { factor = 10 }
-		add_stability = 0.1
+		ai_chance = { factor = 10 }	
 	}
 }
+
 country_event = {
-	id = NAU.7 #亲王遇刺
+	id = NAU.7 #燃着烈火的街道
 	title = NAU.7.t
 	desc = NAU.7.d
 	picture = GFX_report_event_polish_tanks_01
@@ -105,12 +120,12 @@ country_event = {
 	
 	option = {
 		name = NAU.7.a
-		ai_chance = { factor = 10 }
-		load_focus_tree = NAU_1_countryfocus_tree
+		ai_chance = { factor = 10 }	
 	}
 }
+
 country_event = {
-	id = NAU.8 #马克西米连的嘱托
+	id = NAU.8 #蠢蠢欲动
 	title = NAU.8.t
 	desc = NAU.8.d
 	picture = GFX_report_event_polish_tanks_01
@@ -119,12 +134,15 @@ country_event = {
 	
 	option = {
 		name = NAU.8.a
-		ai_chance = { factor = 10 }
-
+		ai_chance = { factor = 10 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.9 }
+		}
 	}
 }
+
 country_event = {
-	id = NAU.9 #考察团名单
+	id = NAU.9 #巴登苏醒，紧急演讲
 	title = NAU.9.t
 	desc = NAU.9.d
 	picture = GFX_report_event_polish_tanks_01
@@ -133,59 +151,590 @@ country_event = {
 	
 	option = {
 		name = NAU.9.a
-		ai_chance = { factor = 10 }
-
+		ai_chance = { factor = 66 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.10 }
+		set_country_flag = NAU_renmin
+		}
+	}
+	option = {
+		name = NAU.9.b
+		ai_chance = { factor = 33 }	
+		hidden_effect = {
+		country_event = { days = 7 id = NAU.10 }
+		set_country_flag = NAU_guojia
+		}
 	}
 }
+
 country_event = {
-	id = NAU.10 #马克西米连的传话
+	id = NAU.10 #火烧市政厅，巴登去世
 	title = NAU.10.t
 	desc = NAU.10.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #拉狄克和伯恩施坦
 		name = NAU.10.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }	
+		trigger = {
+					has_country_flag = NAU_renmin
+		}
+		country_event = NAU.11
 	}
+
+	option = { #希特勒和史特拉瑟
+		name = NAU.10.b
+		ai_chance = { factor = 50 }	
+		trigger = {
+					has_country_flag = NAU_renmin
+		}
+		country_event = NAU.12
+	}
+	option = { #塞克特和鲁登道夫
+		name = NAU.10.c
+		ai_chance = { factor = 50 }	
+		trigger = {
+					has_country_flag = NAU_guojia
+		}
+		country_event = NAU.13
+	}
+
 }
+
 country_event = {
-	id = NAU.11 #啤酒馆演讲
+	id = NAU.11 #赤卫队稳定了局势
 	title = NAU.11.t
 	desc = NAU.11.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #拉狄克
 		name = NAU.11.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_LEFT
+		set_politics = {ruling_party = Marxism}
+		complete_national_focus = NAU_Burning_City_Hall_1
+		complete_national_focus = NAU_Left_wing_alliance_split
+		complete_national_focus = NAU_Helmsman_in_position
+		create_country_leader = {
+		name = "Karl Radek"
+		desc = "NAU_K_R_DESC"
+		picture = "awr2s-ecwpi.dds"
+		expire = "1965.1.1"
+		ideology = revolutionism
+		traits = {
+			}
+		}
+		set_cosmetic_tag = NAU_LEFT_1
+		NAU = {
+			country_event = { days = 120 id = NAU.29 }
+			}
+		}
+	}
+	option = { #伯恩施坦
+		name = NAU.11.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_LEFT
+		set_politics = {ruling_party = SOC_democratic}
+		complete_national_focus = NAU_Burning_City_Hall_1
+		complete_national_focus = NAU_Left_wing_alliance_split
+		complete_national_focus = NAU_velvet_glove
+		create_country_leader = {
+		name = "Eduard Bernstein"
+		desc = "NAU_E_B_DESC"
+		picture = "asao5-vflkt.dds"
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+				}
+			}
+		set_cosmetic_tag = NAU_LEFT_2
+		
+		}
 	}
 }
+
+
+
 country_event = {
-	id = NAU.12 #法兰克福漫长而血腥一天 
+	id = NAU.12 #冲锋队夺下了旗帜
 	title = NAU.12.t
 	desc = NAU.12.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #希特勒
 		name = NAU.12.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_RIGHT
+		set_politics = {ruling_party = Fascism}
+		complete_national_focus = NAU_Burning_City_Hall
+		complete_national_focus = NAU_Prime_Minister_Adolf
+		create_country_leader = {
+		name = "Adolf Hitler"
+		desc = "NAU_A_H_DESC"
+		picture = "aum51-irg52.dds"
+		expire = "1965.1.1"
+		ideology = NSDAP
+		traits = {}
+			}
+		set_cosmetic_tag = NAU_FXS_1
+		HAN = {
+			country_event = { days = 200 id = HAN.2 }
+			}
+		NAU = {
+			country_event = { days = 120 id = NAU.29 }
+			}
+		}
+	}
+	option = { #史特拉瑟
+		name = NAU.12.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_RIGHT
+		set_politics = {ruling_party = Fascism}
+		complete_national_focus = NAU_Burning_City_Hall
+		complete_national_focus = NAU_Prime_Minister_Strasser
+		create_country_leader = {
+		name = "Gregor Strasser"
+		desc = "NAU_G_S_DESC"
+		picture = "a01zx-ak8yo.dds"
+		expire = "1965.1.1"
+		ideology = strasser
+		traits = {}
+				}
+		set_cosmetic_tag = NAU_FXS_2
+		HAN = {
+			country_event = { days = 200 id = HAN.2 }
+			}
+		NAU = {
+			country_event = { days = 120 id = NAU.29 }
+			}
+		}
 	}
 }
+
 country_event = {
-	id = NAU.13 #宪法会之变 
+	id = NAU.13 #准军事组织带来了稳定
 	title = NAU.13.t
 	desc = NAU.13.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #塞克特
 		name = NAU.13.a
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_MID
+		set_politics = {ruling_party = Absolutism}
+		complete_national_focus = NAU_Burning_City_Hall_2
+		complete_national_focus = NAU_martial_law
+		create_country_leader = {
+	name = "Johannes von Seeckt"
+	desc = "NAU_J_V_S_DESC"
+	picture = "HANS.dds"
+	expire = "1965.1.1"
+	ideology = miliciagov
+	traits = {}
+	}
+	set_cosmetic_tag = NAU_MIDDLE_1
+	NAU = {
+			country_event = { days = 120 id = NAU.29 }
+			}
+		}
+	}
+	option = { #鲁登道夫
+		name = NAU.13.b
+		ai_chance = { factor = 50 }	
+		hidden_effect = {
+		load_focus_tree = NAU_MID
+		set_politics = {ruling_party = Special}
+		complete_national_focus = NAU_Burning_City_Hall_2
+		complete_national_focus = NAU_state_of_emergency
+		create_country_leader = {
+	name = "Erich Von Ludendorff"
+	desc = "NAU_E_V_L_DESC"
+	picture = "aw3nq-kbu7m.dds"
+	expire = "1965.1.1"
+	ideology = revengism
+	traits = {}
+		}
+	set_cosmetic_tag = NAU_MIDDLE_2
+			}
 	}
 }
+	country_event = {
+	id = NAU.14 #体育馆演讲
+	title = NAU.14.t
+	desc = NAU.14.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.14.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.15 #元首而非基督
+	title = NAU.15.t
+	desc = NAU.15.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.15.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.16 #清洗吸血资本
+	title = NAU.16.t
+	desc = NAU.16.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.16.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.17 #再塑大地
+	title = NAU.17.t
+	desc = NAU.17.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.17.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.18 # “德意志式的团结”
+	title = NAU.18.t
+	desc = NAU.18.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.18.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.19 # 演讲
+	title = NAU.19.t
+	desc = NAU.19.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.19.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.20 # 绣花衬衫
+	title = NAU.20.t
+	desc = NAU.20.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.20.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.21 #他们像麦子一样
+	title = NAU.21.t
+	desc = NAU.21.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.21.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.22 #企业罚单
+	title = NAU.22.t
+	desc = NAU.22.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.22.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.23 #赤红之心
+	title = NAU.23.t
+	desc = NAU.23.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.23.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.24 #玫瑰花与社会主义
+	title = NAU.24.t
+	desc = NAU.24.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.24.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.25 #取缔冲锋队
+	title = NAU.25.t
+	desc = NAU.25.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.25.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.26 #枪毙拉狄克
+	title = NAU.26.t
+	desc = NAU.26.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.26.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.27 #棘刺教皇
+	title = NAU.27.t
+	desc = NAU.27.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.27.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	country_event = {
+	id = NAU.28 #军官团一夜
+	title = NAU.28.t
+	desc = NAU.28.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.28.a
+		ai_chance = { factor = 10 }	
+		}
+	}
+	
+	country_event = {
+	id = NAU.29 #瓜分萨克森
+	title = NAU.29.t
+	desc = NAU.29.d
+	picture = GFX_report_event_polish_tanks_01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.29.a
+		ai_chance = { factor = 10 }	
+			GER = {
+				country_event = NAU.30
+				}
+		}
+	}
+	country_event = {
+	id = NAU.30 #瓜分萨克森-德国
+	title = NAU.30.t
+	desc = NAU.30.d
+	picture = GFX_report_event_polish_tanks_01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = NAU.30.a
+		ai_chance = { factor = 10 }	
+				 NAU = {
+				 transfer_state = 842
+				 }
+				 GER = {
+				 transfer_state = 65
+				 }
+		}
+	}
+	country_event = {
+	id = NAU.31 #法兰克福-fxs线联合威斯特伐利亚
+	title = NAU.31.t
+	desc = NAU.31.d
+	picture = GFX_report_event_polish_tanks_01
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	has_government = Fascism
+	}
+	option = {
+		name = NAU.31.a
+		ai_chance = { factor = 10 }	
+			create_faction = Pact_of_Steel
+			
+		NAU = {
+			add_to_faction = HAN
+			}
+		}
+	}
+	
+	country_event = {
+	id = NAU.32 #法兰克福军政府塞克特+威州军政府
+	title = NAU.32.t
+	desc = NAU.32.d
+	picture = GFX_report_event_polish_tanks_01
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	has_country_leader = { ruling_only = yes name = "Johannes von Seeckt" } 
+	}
+	option = {
+		name = NAU.32.a
+		ai_chance = { factor = 10 }	
+			create_faction = Confederate_army
+			
+			NAU = {
+			add_to_faction = HAN
+			}
+		}
+	}
+	
+	country_event = {
+	id = NAU.33 #法兰克福拉狄克
+	title = NAU.33.t
+	desc = NAU.33.d
+	picture = GFX_report_event_polish_tanks_01
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	has_country_leader = { ruling_only = yes name = "Karl Radek" } 
+	}
+	option = {
+		name = NAU.33.a
+		ai_chance = { factor = 10 }	
+			create_faction = German_Liberation_Front
+			hidden_effect = {
+					HAN = {country_event = HAN.3 }
+			}
+		}
+	}
+	
+	country_event = {
+	id = NAU.34 #法兰克福伯恩施坦+萨克森考茨基
+	title = NAU.34.t
+	desc = NAU.34.d
+	picture = GFX_report_event_polish_tanks_01
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	has_country_leader = { ruling_only = yes name = "Eduard Bernstein" } 
+	}
+	option = {
+		name = NAU.34.a
+		ai_chance = { factor = 10 }	
+			create_faction = Democratic_federal_Union
+			
+			NAU = {
+			add_to_faction = SAX
+			}
+			hidden_effect = {
+					HAN = {country_event = HAN.3 }
+			}
+		}
+	}
+	
+	country_event = {
+	id = NAU.35 #法兰克福鲁登道夫
+	title = NAU.35.t
+	desc = NAU.35.d
+	picture = GFX_report_event_polish_tanks_01
+	mean_time_to_happen = { day = 1}
+	fire_only_once = yes
+	trigger = {
+	has_global_flag = GERMAN_disintegrated
+	has_country_leader = { ruling_only = yes name = "Erich Von Ludendorff" } 
+	}
+	option = {
+		name = NAU.35.a
+		ai_chance = { factor = 10 }	
+			create_faction = Revenge_front
+		}
+	}
+	
+	country_event = {
+	id = NAU.36 #对柏林政府...开战！
+	title = NAU.36.t
+	desc = NAU.36.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	immediate = {
+	declare_war_on = { target = GER type = civil_war } 
+	}
+	option = {
+		name = NAU.36.a
+		ai_chance = { factor = 10 }	
+			hidden_effect = {
+				BAV = {
+				country_event = { days = 14 id = BAV.13 }
+				}
+			}
+		}
+	}

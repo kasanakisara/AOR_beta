@@ -16,13 +16,14 @@ focus_tree = {
 		x = 7
 		y = 0
 		completion_reward = {
-		custom_effect_tooltip = SIL.1.tt		
+		custom_effect_tooltip = SIL.1.tt	
+			hidden_effect = {
 		add_popularity = {
 				ideology = CON_democratic
 				popularity = 0.05
 			}
 		add_political_power = 120
-
+			}
 		}
 
 	}
@@ -36,8 +37,10 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
-		custom_effect_tooltip = SIL.2.tt		
+		custom_effect_tooltip = SIL.2.tt
+			hidden_effect = {
 		add_timed_idea = { idea =  AOR_SIL_Strengthen_judiciary  days = 150 }
+		}
 		}
 	}
 	focus = {
@@ -50,9 +53,11 @@ focus_tree = {
 		x = 1
 		y = 2
 		completion_reward = {
-	custom_effect_tooltip = SIL.20.tt		
+	custom_effect_tooltip = SIL.20.tt
+hidden_effect = {	
 		add_stability = 0.05
 		add_political_power = 50
+		}
 		}
 	}
 	focus = {
@@ -66,7 +71,9 @@ focus_tree = {
 		y = 3
 	completion_reward = {
 	custom_effect_tooltip = SIL.3.tt	
+	hidden_effect = {
 		add_research_slot = 1
+		}
 		}
 	}
 	focus = {
@@ -80,7 +87,9 @@ focus_tree = {
 		y = 3
 	completion_reward = { 
 		custom_effect_tooltip = SIL.4.tt
+		hidden_effect = {
 		country_event = { id = AOR_SIL_events.1 }
+		}
 		}
 	}
 	focus = {
@@ -94,7 +103,9 @@ focus_tree = {
 		y = 1
 		completion_reward = { 
 			custom_effect_tooltip = SIL.5.tt
+			hidden_effect = {
 		add_timed_idea = { idea =  AOR_SIL_Concurrent_legislature days = 150 }
+		}
 		}
 	}
 	focus = {
@@ -109,7 +120,9 @@ focus_tree = {
 		y = 2
 		completion_reward = { 
 			custom_effect_tooltip = SIL.6.tt
+			hidden_effect = {
 		add_ideas = AOR_SIL_change_government
+		}
 		}
 
 	}
@@ -124,7 +137,9 @@ focus_tree = {
 		y = 4
 		completion_reward = { 
 			custom_effect_tooltip = SIL.7.tt
+			hidden_effect = {
 		remove_ideas = AOR_SIL_change_government
+		}
 		}
 	}
 	focus = {
@@ -138,7 +153,9 @@ focus_tree = {
 		y = 3
 		completion_reward = { 
 			custom_effect_tooltip = SIL.8.tt
+			hidden_effect = {
 		country_event = { id = AOR_SIL_events.2 }
+		}
 		}
 	}
 	
@@ -159,8 +176,10 @@ focus_tree = {
 		y = 5
 		completion_reward = { 
 			custom_effect_tooltip = SIL.9.tt
+			hidden_effect = {
 		country_event = { id = AOR_SIL_events.3 }
 		elections_allowed = no
+		}
 		}
 	}
 	focus = {
@@ -174,10 +193,12 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 	custom_effect_tooltip = SIL.10.tt		
+	hidden_effect = {
 		add_political_power = -50
 		add_popularity = {
 				ideology = AUT_democratic
 				popularity = 0.1
+			}
 			}
 		}
 
@@ -193,9 +214,11 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			custom_effect_tooltip = SIL.11.tt
+			hidden_effect = {
 		set_party_name = { ideology = AUT_democratic long_name = 德意志社会民主党-民主派 name = 德意志社会民主党-民主派 } 
 		set_party_name = { ideology = CON_democratic long_name = 德意志社会民主党-民主派 name = 德意志社会民主党-民主派 } 
 		set_party_name = { ideology = FRE_democratic long_name = 德意志社会民主党-民主派 name = 德意志社会民主党-民主派 } 
+		}
 		}
 	}
 	focus = {
@@ -209,10 +232,12 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			custom_effect_tooltip = SIL.12.tt
+			hidden_effect = {
 		add_political_power = -50
 		add_popularity = {
 				ideology = AUT_democratic
 				popularity = 0.1
+			}
 			}
 		}	
 	}
@@ -227,7 +252,9 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			custom_effect_tooltip = SIL.13.tt
+			hidden_effect = {
 		add_ideas = AOR_SIL_Hold_interpretation
+		}
 		}
 	}
 	focus = {
@@ -258,8 +285,10 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			custom_effect_tooltip = SIL.15.tt
+			hidden_effect = {
 		add_stability = -0.05
 		add_popularity = { ideology = Marxism popularity = -0.1 } 
+		}
 		}
 	}
 	focus = {
@@ -273,11 +302,13 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			custom_effect_tooltip = SIL.16.tt
+			hidden_effect = {
 		add_manpower = 3000
 		add_equipment_to_stockpile={
 				type=infantry_equipment
 				amount= 500
 				producer=SIL
+			}
 			}
 		}
 
@@ -319,7 +350,9 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 		custom_effect_tooltip = SIL.19.tt
+		hidden_effect = {
 		add_to_faction = GER
+		}
 		}
 	}
 }

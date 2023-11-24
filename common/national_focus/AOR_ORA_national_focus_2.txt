@@ -3,7 +3,7 @@ focus_tree={
 	country={
 		factor=0
 		modifier={
-			add=10
+			add=100
 			tag=ORA
 		}
 	}
@@ -23,6 +23,7 @@ focus_tree={
 		completion_reward={
 		custom_effect_tooltip = ORA.9.tt
 		hidden_effect = {
+			news_event = { id = AOR_news.3  }
 			set_stability = 0.75
 			set_war_support = 0.5
 			set_research_slots = 3

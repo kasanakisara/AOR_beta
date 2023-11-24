@@ -1,0 +1,18 @@
+add_namespace = BUL
+country_event = {
+	id = BUL.1
+	title = BUL.1.t
+	desc = BUL.1.d
+	picture = GFX_events_GRE_6
+	fire_only_once = yes
+	is_triggered_only = yes
+    #那就这样吧  	
+	option = {
+		name = BUL.1.a
+		create_faction = BUL_alliance
+		BUL = {
+			add_to_faction = YUG
+			add_to_faction = ROM
+		}
+	}
+}

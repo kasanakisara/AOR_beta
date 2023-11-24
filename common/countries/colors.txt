@@ -41,6 +41,50 @@ AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
+US1 = {
+	color = rgb { 72 61 139  }
+	color_ui = rgb { 72 61 139 }
+}
+US2 = { 
+	color = rgb { 100 149 237  }
+	color_ui = rgb{ 100 149 237 }
+}
+US3 = {
+	color = rgb { 47 79 79}
+	color_ui = rgb{ 47 79 79 }
+}
+US4 = {
+	color = rgb { 139 69 19  }
+	color_ui = rgb { 139 69 19 }
+}
+US5 = { 
+	color = rgb { 238 232 170  }
+	color_ui = rgb{ 238 232 170 }
+}
+US6 = {
+	color = rgb { 51 161 201 }
+	color_ui = rgb{ 51 161 201 }
+}
+US7 = {
+	color = rgb { 210 180 140  }
+	color_ui = rgb { 210 180 140 }
+}
+US8 = { 
+	color = rgb { 176 48 96  }
+	color_ui = rgb{ 176 48 96 }
+}
+BR1 = {
+	color = rgb { 208  240  192  }
+	color_ui = rgb { 208 240 192 }
+}
+BR2 = { 
+	color = rgb { 106  90  205  }
+	color_ui = rgb{ 106 90 205 }
+}
+BR3 = {
+	color = rgb { 173  255  47 }
+	color_ui = rgb{ 173 255 47 }
+}
 #LIT = {
 #	color = rgb { 219 219 119 }
 #	color_ui = rgb { 255 255 155 }
@@ -821,3 +865,4 @@ BNL = { color 	 = rgb { 193 171 8  }
 GNR = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
+}

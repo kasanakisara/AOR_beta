@@ -20,7 +20,7 @@ guiTypes = {
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
+			position = { x= 0 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -168,8 +168,8 @@ guiTypes = {
 						
 		containerWindowType = {
 			name = "autonomy_progress_view"
-			position = { x = 90 y = 310 }
-			size = { width = 245 height = 55 }
+			position = { x = 170= y = 245 }
+			size = { width = 170 height = 55 }
 			clipping = no
 
 			background = {
@@ -179,7 +179,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "current_autonomy_name"
-				position = { x = 92 y = 8 }
+				position = { x = 65 y = 8 }
 				font = "hoi_16mbs"
 				text = "autonomy"
 				fixedsize = yes
@@ -202,24 +202,24 @@ guiTypes = {
 				scale = 0.5
 			}
 			
-			iconType = {
-				name = "prev_autonomy_level_icon"
-				position = { x = 60 y = 9 }
-				quadTextureSprite = "GFX_autonomy_unknown_icon"
-			}
+#			iconType = {
+#				name = "prev_autonomy_level_icon"
+#				position = { x = 60 y = 9 }
+#				quadTextureSprite = "GFX_autonomy_unknown_icon"
+#			}
 			
 			iconType = {
 				name = "autonomy_progress"
 				spriteType = "GFX_subject_progressbar"
-				position = { x = 95 y = 29 }
+				position = { x = 70 y = 29 }
 				frame = 100
 			}
 			
-			buttonType = {
-				name = "next_autonomy_level"
-				position = { x = 190 y = 5 }
-				quadTextureSprite = "GFX_occupation_policy_button_selected"
-			}
+#			buttonType = {
+#				name = "next_autonomy_level"
+#				position = { x = 190 y = 5 }
+#				quadTextureSprite = "GFX_occupation_policy_button_selected"
+#			}
 			
 			iconType = {
 				name = "next_level_glow"
@@ -229,12 +229,12 @@ guiTypes = {
 				scale = 0.5
 			}
 			
-			iconType = {
-				name = "next_autonomy_level_icon"
-				position = { x = 195 y = 9 }
-				quadTextureSprite = "GFX_autonomy_unknown_icon"
-				alwaystransparent = yes
-			}
+#			iconType = {
+#				name = "next_autonomy_level_icon"
+#				position = { x = 195 y = 9 }
+#				quadTextureSprite = "GFX_autonomy_unknown_icon"
+#				alwaystransparent = yes
+#			}
 
 			iconType = {
 				name = "continuous_glow"
@@ -262,24 +262,21 @@ guiTypes = {
 			position = { x = 5 y = 375 }
 			size = { width = 393 height = 125 }
 			clipping = no
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_transparent"
-			}
 			
 			containerWindowType = {
 				name = "national_spirit_container"
 				position = { x = 10 y = 0 }
-				size = { width = 360 height = 125 }
+				size = { width = 520 height = 125 }
 				horizontalScrollbar = "bottom_horizontal_slider"
 				background = {
 					name = "Background"
-					quadTextureSprite ="GFX_absolute_nothing_border"
+					quadTextureSprite ="GFX_tiled_window_pol_spirit"
+					position = { x = -20 y = 10 }
 				}
 				
 				gridboxtype = {
 					name = "spirit_grid"
-					position = { x = 20 y = 30 }
+					position = { x = 20 y = 40 }
 					size = { width = 355 height = 100%% }
 					slotsize = { width = 60 height = 68 }
 					max_slots = { x = 6 y = 1 }
@@ -287,7 +284,7 @@ guiTypes = {
 				}
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
-					position = { x = 20 y = 30 }
+					position = { x = 20 y = 40 }
 					size = { width = 355 height = 100%% }
 					slotsize = { width = 60 height = 68 }
 					max_slots_horizontal = 100
@@ -296,7 +293,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "title"
-				position = { x = 20 y = 8 }
+				position = { x = 20 y = 18 }
 				font = "hoi_18mbs"
 				text = "POLITICS_NATIONAL_SPIRIT"
 				maxWidth = 200
@@ -470,7 +467,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -48 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -482,7 +479,7 @@ guiTypes = {
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
-			position = { x = 460 y = 7 }
+			position = { x = 460 y = 10 }
 		}
 
 		buttonType = {
@@ -561,7 +558,8 @@ guiTypes = {
 		
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_plain_bg"
+			quadTextureSprite ="GFX_category_header"
+			position = { x = -11 y = 4 }
 		}
 		
 		instantTextboxType = {
@@ -599,12 +597,13 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window2_1b_border"
+					position = { x = -1 y = 3 }	
 				}
 
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
-					position = { x = -1 y = 0 }					
+					position = { x = -1 y = 3 }					
 				}
 
 				gridBoxType = {
@@ -1496,7 +1495,7 @@ guiTypes = {
 		
 		buttonType = {
 				name = "close_button"
-				position = { x = -42 y = 5 }
+				position = { x = -40 y = 5 }
 				quadTextureSprite ="GFX_closebutton"
 				buttonFont = "hoi_16mbs"
 				shortcut = "ESCAPE"

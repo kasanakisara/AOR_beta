@@ -18,11 +18,7 @@ focus_tree = {
 			always = yes
 		}
 		completion_reward = {
-			set_power_balance = {
-				id = SWE_Emergency_Country_bop
-				left_side = The_Edge_of_Destructions
-				right_side = The_Light_of_Orders
-			}
+			add_ideas = SWE_Last_EmergencyCountry
 		}
 	}
 	focus = {
@@ -53,6 +49,10 @@ focus_tree = {
 				id = SWE_Emergency_Country_bop
 				value = 0.2
 			}
+			add_popularity = {
+				ideology = Marxism
+				value = -0.2
+			}
 		}
 
 	}
@@ -65,6 +65,17 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		completion_reward = {
+			add_power_balance_value = {
+				id = SWE_Emergency_Country_bop
+				value = 0.1
+			}
+
+			add_timed_idea = {
+				idea = SWE_SpeechRegulation
+				days = 180
+			}
+		}
 
 	}
 	focus = {
@@ -78,6 +89,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			unlock_decision_category_tooltip = SWE_Miltary_Control
+			add_timed_idea = {idea = SWE_Junta days = 180}
 		}
 
 	}
@@ -91,6 +103,14 @@ focus_tree = {
 		x = 12
 		y = 4
 
+		completion_reward = {
+			add_ideas = SWE_Econemy_Plan
+			add_power_balance_value = {
+				id = SWE_Emergency_Country_bop
+				value = 0.2
+			}
+		}
+
 	}
 	focus = {
 		id = SWE_Focus_International
@@ -102,6 +122,10 @@ focus_tree = {
 		x = 16
 		y = 2
 
+		completion_reward = {
+			add_ideas = SWE_Capitalism_World
+		}
+
 	}
 	focus = {
 		id = SWE_Need_France
@@ -112,6 +136,11 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+		completion_reward = {
+			FRA = {
+				country_event = SWE.18
+			}
+		}
 
 	}
 	focus = {
@@ -123,6 +152,11 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
+		completion_reward = {
+			ENG = {
+				country_event = SWE.21
+			}
+		}
 
 	}
 	focus = {
@@ -155,6 +189,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
+		completion_reward = {
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 1000
+                producer = FRA
+            }
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 1000
+                producer = ENG
+            }
+		}
 
 	}
 	focus = {
@@ -169,6 +215,12 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+		completion_reward = {
+			add_timed_idea = {
+				idea = SWE_EconomySupport
+				days = 180
+			}
+		}
 
 	}
 	focus = {
@@ -192,12 +244,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
+		completion_reward = {
+			add_power_balance_value = {
+				id = SWE_Emergency_Country_bop
+				value = 0.5
+			}
+		}
 
 	}
 	focus = {
 		id = SWE_Find_New_King
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = SWE_Rebuild_Order
 		}

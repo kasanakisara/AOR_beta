@@ -387,6 +387,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_rad
 			set_country_flag = ORA_radical_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_rad
 			}
 		}
@@ -417,6 +418,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_mid
 			set_country_flag = ORA_middle_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_mid
 
 			}
@@ -447,6 +449,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_ref
 			set_country_flag = ORA_reform_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_ref
 			}
 	}
@@ -476,6 +479,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_rad
 			set_country_flag = ORA_radical_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_rad
 			}
 	}
@@ -494,6 +498,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_mid
 			set_country_flag = ORA_middle_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_mid
 			}
 	}
@@ -512,6 +517,7 @@ country_event = {
 		hidden_effect = {
 			set_cosmetic_tag = ORA_ref
 			set_country_flag = ORA_reform_win
+			set_country_flag = ORA_meeting_ending
 			load_focus_tree = ORA_ref
 			}
 	}
@@ -520,7 +526,7 @@ country_event = {
 
 country_event = {
 	id = ORA.14 #小市民的经历
-    picture = GFX_ORA.1
+    picture = GFX_ORA.14_pic
     title = ORA.14.t
     desc = ORA.14.d
     is_triggered_only = yes
@@ -534,7 +540,7 @@ country_event = {
 
 country_event = {
 	id = ORA.15 #布宜诺斯艾利斯暴动
-    picture = GFX_ORA.1
+    picture = GFX_ORA.15_pic
     title = ORA.15.t
     desc = ORA.15.d
     is_triggered_only = yes

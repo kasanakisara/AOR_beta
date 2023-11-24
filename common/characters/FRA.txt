@@ -9,12 +9,27 @@ characters = {
 		country_leader={
 			ideology = liberalism
 			desc = "Georges_Clemenceau_DESC"
-			traits={ FRA_father_DE_victory
+			traits={ 
 				   FRA_iron_wrist
 				   FRA_WAR_BIG_WHEEL }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-
+	
+	FRA_Raymond_Poincare={
+		name= "Raymond Poincaré"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/COOL_AND_BAD.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "FRA_Raymond_Poincare_DESC"
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

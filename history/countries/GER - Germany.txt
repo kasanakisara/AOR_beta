@@ -79,7 +79,21 @@ country_lock all_division_template = no
 set_research_slots = 4
 set_convoys = 50
 set_stability = 0.40
+recruit_character = GER_Albrecht
+recruit_character = GER_Fernando_von_bock
+recruit_character = GER_Friedrich_Fromm
+recruit_character = GER_Heinrich_von_gosler
+recruit_character = GER_Hans_von_bessel
+recruit_character = GER_Hans_von_plaisen
+recruit_character = GER_Kurt_student
+recruit_character = GER_Erich_von_manstein
+recruit_character = GER_Werner_von_fridge
 
+start_national_focus = AOR_GER_Politics_21
+
+GER = {
+country_event = { days = 1249 id = event_GER.1 }
+}
 1939.1.1 = {
 
 	add_political_power = 1197

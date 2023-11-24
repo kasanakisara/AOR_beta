@@ -9,7 +9,6 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		date > 1920.1.15
-		date < 1920.1.17
 		tag = USA
 	}
 	mean_time_to_happen = {day = 1}
@@ -53,6 +52,87 @@ country_event = {
 		name = USA.4.a
 	}
 }
+#################以下为科技类##################
+country_event = {
+	id = USA.105 #铁
+	title = USA.105.t
+	desc = USA.105.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.105.a
+		news_event = {id = AOR_news.34}
+	}
+}
+country_event = {
+	id = USA.106 #卡内基之死
+	title = USA.106.t
+	desc = USA.106.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.106.a
+		news_event = {id = AOR_news.35}
+	}
+}
+country_event = {
+	id = USA.107 #卡内基被瓜分
+	title = USA.107.t
+	desc = USA.107.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.107.a
+		news_event = {id = AOR_news.36}
+	}
+}
+country_event = {
+	id = USA.108 #特斯拉
+	title = USA.108.t
+	desc = USA.108.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.108.a
+		news_event = {id = AOR_news.37}
+	}
+}
+country_event = {
+	id = USA.109 #电波
+	title = USA.109.t
+	desc = USA.109.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+
+      
+	trigger = {
+		tag = USA
+	}
+      
+	option = {
+		name = USA.109.a
+		news_event = {id = AOR_news.38}
+	}
+}
+#################科技类结束##################
 country_event = {
 	id = USA.3 #什么调研
 	title = USA.3.t
@@ -101,52 +181,53 @@ country_event = {
 		name = USA.3.a
 	}
 }
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
 
-      
-	option = {
-		name = USA.3.a
+country_event = {
+	id = USA.10 #西部炸出来啦
+	title = USA.10.t
+	desc = USA.10.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		tag = USA
+		date > 1921.7.1
 	}
-}
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
 
       
 	option = {
-		name = USA.3.a
-	}
-}
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.3.a
-	}
-}
-country_event = {
-	id = USA.3 #什么调研
-	title = USA.3.t
-	desc = USA.3.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.3.a
+		name = USA.10.a
+		US1 = {
+			transfer_state = 386
+			transfer_state = 387
+			transfer_state = 385
+		}
+		US2 = {
+			transfer_state = 378
+			transfer_state = 379
+			transfer_state = 380
+		}
+		US3 = {
+			transfer_state = 388
+		}
+		US4 = {
+			transfer_state = 381
+			transfer_state = 925
+		}
+		US5 = {
+			transfer_state = 382
+			transfer_state = 924
+			transfer_state = 923
+		}
+		US6 = {
+			transfer_state = 389
+			transfer_state = 390
+		}
+		US7 = {
+			transfer_state = 384
+		}
+		US8 = {
+			transfer_state = 383
+			transfer_state = 926
+		}
 	}
 }
 
@@ -199,15 +280,9 @@ country_event = {
 				transfer_state = 374
 				transfer_state = 932
 				transfer_state = 922
-				transfer_state = 383
-				transfer_state = 926
-				transfer_state = 923
-				transfer_state = 924
-				transfer_state = 925
-				transfer_state = 381
-				transfer_state = 388
-				transfer_state = 386
-				transfer_state = 382
+
+
+
 
 				add_state_core = 366
 				add_state_core = 365
@@ -231,7 +306,6 @@ country_event = {
 				add_state_core = 381
 				add_state_core = 388
 				add_state_core = 386
-				transfer_state = 382
 				add_manpower = 10000
 				}
 				
@@ -262,3 +336,4 @@ country_event = {
 		}
 	}
 }
+####记得！105-109已经被科技事件用了！##########

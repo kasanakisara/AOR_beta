@@ -21,7 +21,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.1.tt
+		hidden_effect = {
 			add_country_leader_trait = HAN_The_Age_of_Rage
+			}
 		}
 	}
 	focus={
@@ -54,7 +56,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.3.tt
+		hidden_effect = {
 			add_ideas = HAN_Dortmund_Brewery
+			}
 		}
 	}
 	focus={
@@ -71,10 +75,12 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.4.tt
+		hidden_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 250
 				producer = HAN
+			}
 			}
 		}
 	}
@@ -92,6 +98,7 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.5.tt
+		hidden_effect = {
 			853 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -107,6 +114,7 @@ focus_tree={
 					level = 1
 					instant_build = yes
 				}
+			}
 			}
 		}
 	}
@@ -125,7 +133,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.6.tt
+		hidden_effect = {
 			add_ideas = HAN_Assistance_from_Berlin
+			}
 		}
 	}
 	focus={
@@ -144,9 +154,11 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.7.tt
+		hidden_effect = {
 			remove_ideas = HAN_Wilhelmshaven_Dunkirk_Agreement
 			remove_ideas = HAN_Assistance_from_Berlin
 			add_ideas = HAN_Franc_Mark_Pound
+			}
 			}
 		}
 	focus={
@@ -163,7 +175,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.8.tt
+		hidden_effect = {
 			country_event = { id = HAN.1 }
+			}
 		}
 	}
 	focus={
@@ -180,7 +194,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.9.tt
+		hidden_effect = {
 			add_ideas = HAN_Wilhelmshaven_Dunkirk_Agreement
+			}
 		}
 	}
 	focus={
@@ -192,24 +208,16 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = {
-			date > 1922.1.1
-			NAU = {
-			 NOT = {
-			 has_government = Marxism
-			has_government = PAR_socialism 
-			has_government = SOC_democratic
-			 }
-			}
-		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.10.tt
+		hidden_effect = {
 					add_opinion_modifier = {
 				target = NAU
 				modifier = relationship_with_FEA_111
+			}
 			}
 		}
 	}
@@ -243,9 +251,11 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.12.tt
+		hidden_effect = {
 			add_opinion_modifier = {
 				target = GER
 				modifier = GER_xinei
+			}
 			}
 		}
 	}
@@ -264,6 +274,7 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.13.tt
+		hidden_effect = {
 			diplomatic_relation = {
 				country = NAU
 				relation = non_aggression_pact
@@ -273,7 +284,7 @@ focus_tree={
 			NAU = {
 				give_guarantee = HAN
 			}
-			
+			}
 		}
 	}
 	focus={
@@ -310,7 +321,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = HAN.15.tt
+		hidden_effect = {
 			add_to_faction = NAU
+			}
 		}
 	}
 }

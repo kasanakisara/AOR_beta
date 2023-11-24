@@ -896,3 +896,8 @@ units = {
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5 }
 }
+
+focus = {
+	current = "AOR_SOV_Civil_war_1"
+	progress = 0
+}

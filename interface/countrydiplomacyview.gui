@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		size = { width=550 height=950 }
+		size = { width=550 height=100%% }
 		verticalScrollbar = "right_vertical_slider"
 		#horizontalScrollbar = "bottom_horizontal_slider"
 
@@ -15,17 +15,15 @@ guiTypes = {
 		show_sound = menu_open_window
 
             #背景
-		background = {
-			name ="production_header_bg"
-			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
-			Orientation = "UPPER_LEFT"
-		}
+		# background = {
+		# 	name ="production_header_bg"
+		# 	spriteType = "GFX_header_bg"
+		# }
 
-		background = {
+			background = {
 			name = "Background"
-			spriteType ="GFX_tiled_window_transparent"
-			position = { x=0 y=60}				
+			spriteType ="GFX_tiled_bg"
+
 		}
 
 		containerWindowType = {
@@ -807,9 +805,9 @@ guiTypes = {
 			size = { width = 530 height = 100%% }
 
 			containerWindowType = {
-				name = "top_filter_window"
-				position = { x = 32 y = 69 }
-				size = { width = 486 height = 135 }
+				name = "top_filter_window" 
+				position = { x = 10 y = 10 }
+				size = { width = 530 height = 200 } 
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 14 bottom = 14 }
 
@@ -828,18 +826,18 @@ guiTypes = {
 					name = "filters_grid"
 					position = { x = 105 y = 1 }
 					size = { width = 100%% height = 100%% }
-					slotsize = { width = 105 height = 35 }
-					max_slots_horizontal = 3
+					slotsize = { width = 100 height = 35 }
+					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
 			}
 
 			containerWindowType = {
 				name = "filters"
-				position = { x = 45 y = 210 }
+				position = { x = 160 y = -60 } 
 				size = { width = 540 height = 35 }
 				clipping = no
-
+			 
 				buttonType = {
 					name = "sort_alphabetical"
 					quadTextureSprite ="GFX_sort_button_202x29"
@@ -851,33 +849,33 @@ guiTypes = {
 				buttonType = {
 					name = "opinion_flag1"
 					quadTextureSprite ="GFX_flag_small"
-					position = { x= 245 y = 4 }
+					position = { x= 220 y = 4 }
 				}
 
 				buttonType = {
 					name = "opinion_flag2"
 					quadTextureSprite ="GFX_flag_small"
-					position = { x= 307 y = 4 }
+					position = { x= 282 y = 4 }
 				}
 
 				iconType ={
 					name ="our_opinion_icon"
 					spriteType = "GFX_opinion_arrow_right"
-					position = { x= 271 y = 8 }
+					position = { x= 246 y = 8 }
 				}
 
 				iconType ={
 					name ="their_opinion_icon"
 					spriteType = "GFX_opinion_arrow_left"
-					position = { x= 332 y = 8 }
+					position = { x= 307 y = 8 }
 				}
 			}
 
 			containerWindowType = {
 				name = "countries"
-				position = { x = 31 y = 250 }
-				size = { width = 490 height = -5 }
-				margin = { top = 8 bottom = 8 }
+				position = { x = 11 y = 210 }
+				size = { width = 530 height = -5 }
+				margin = { top = 8 bottom = 8 } 
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 45
 				smooth_scrolling = yes
@@ -3733,13 +3731,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "diplomacy_country_list_country_entry"
-		size = { width = 500 height = 44 }
+		size = { width = 505 height = 44 }
 		clipping = no
 
 		background = {
 			name = "Background"
 			spriteType = "GFX_diplo_countrylist_entry"
 			clicksound = click_action
+
 		}
 
 		iconType = {
@@ -3762,7 +3761,7 @@ guiTypes = {
 			position = { x = 56 y = 6 }
 			font = "hoi_16mbs"
 			text = "country"
-			maxWidth = 110
+			maxWidth = 190
 			maxHeight = 40
 			fixedsize = yes
 		}

@@ -213,4 +213,13 @@ characters = {
 			ai_will_do = { factor = 1.000 }
 		}
 	}
+	
+	MXS_Carlota = { 
+		name = Carlota de México
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MXS_Carlota
+			}
+		}
+	}
 }

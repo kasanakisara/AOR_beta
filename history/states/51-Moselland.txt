@@ -11,7 +11,7 @@ state={
 	state_category = city
 	
 	history={
-		owner = GER
+		owner =	HAN
 		victory_points = {
 			6469 10 
 		}
@@ -28,8 +28,7 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = GER
-		set_demilitarized_zone = yes
+		add_core_of = HAN
 		1939.1.1 = {
 			buildings = {
 				air_base = 6

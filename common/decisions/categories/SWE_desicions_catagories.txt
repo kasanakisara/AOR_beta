@@ -10,7 +10,7 @@ SWE_Karl_Plan_catagory = {#卡尔斯塔德计划
 		num_of_civilian_factories > 3
 	}
 }
-SSWE_Emergency_Country_catagory = {
+SWE_Emergency_Country_catagory = {
 	icon = GFX_decision_category_power_struggle
 	
 	allowed = {
@@ -41,7 +41,6 @@ SWE_Manhunt_catagory = {
 		original_tag = SWE
 	}
 	visible = {
-		has_completed_focus = SWE_Manhunt
 		NOT = {
 			has_completed_focus = SWE_Abandon_Sozialdemokrat
 		}

@@ -24,7 +24,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/inf_art_checkbox.dds"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_header_descison_bg"
+		texturefile = "gfx/interface/GFX_header_descison_bg.dds"
+	}
 	spriteType = {
 		name = "GFX_armour_checkbox"
 		texturefile = "gfx/interface/armour_checkbox.dds"

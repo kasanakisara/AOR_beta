@@ -23,7 +23,6 @@ defined_text = {
                 original_tag = KSH
                 original_tag = HAN
                 original_tag = WUR      
-                original_tag = BAV
                 original_tag = RHI 
                 original_tag = PRE
                 original_tag = SIL
@@ -38,7 +37,12 @@ defined_text = {
         }
         localization_key = AOR_deyizhi_news_header
     }
-
+    text = {
+        trigger = {  ##红旗报
+            original_tag = BAV
+        }
+        localization_key = AOR_hongqi_news_header
+    }
     text = {
         trigger = {  ##人民观察家报
             original_tag = WUR
@@ -60,7 +64,12 @@ defined_text = {
         }
         localization_key = AOR_gonghe_news_header 
     }
-
+	text = {
+        trigger = {
+            original_tag = ORA  ##抵抗报
+        }
+        localization_key = AOR_dikang_news_header
+    }
     text = {   ##联合皇家报
         trigger = {
             original_tag = YUG 
@@ -79,21 +88,21 @@ defined_text = {
         trigger = {
             original_tag = VAT 
         }
-        localization_key = AOR_fandigangrenmin_news_haeder
+        localization_key = AOR_fandigangrenmin_news_header
     }
 
     text = {  ##意大利每日报
         trigger = {
             original_tag = ITA 
         }
-        localization_key = AOR_yidalimeiribao_news_haeder
-    }
+        localization_key = AOR_yidalimeiribao_news_header
+    }	
 
     text = { ##世界联合报
         trigger = {
             always = yes
         }
-        localization_key = AOR_shijielianhebao_news_haeder
+        localization_key = AOR_shijielianhebao_news_header
     }
 
     text = {  ##赤旗报
@@ -101,8 +110,9 @@ defined_text = {
             original_tag = JAP
             has_government = marxism
         }
-        localization_key = AOR_chiqibao_news_haeder
+        localization_key = AOR_chiqibao_news_header
     }
+
 }
 
 
@@ -158,7 +168,12 @@ defined_text = {
         }
         localization_key = AOR_deyizhi_news_pic
     }
-
+    text = {
+        trigger = {  ##红旗报 - pic
+            original_tag = BAV
+        }
+        localization_key = AOR_hongqi_news_pic
+    }
     text = { ##大不列颠报 - pic 
         trigger = { 
             original_tag = ENG
@@ -195,7 +210,12 @@ defined_text = {
         }
         localization_key = AOR_geming_news_pic
     }
-
+	text = { ##抵抗报 - pic
+        trigger = {
+            original_tag = ORA  
+        }
+        localization_key = AOR_dikang_news_pic
+    }
     text = { ##梵蒂冈人民报 - pic
         trigger = {
             original_tag = VAT 
@@ -224,5 +244,6 @@ defined_text = {
         }
         localization_key = AOR_chiqibao_news_pic
     }
+
 }
 

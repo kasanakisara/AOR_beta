@@ -1,6 +1,6 @@
 characters = {
 	WUR_Erwin_Rommel = { #Erwin_Rommel
-		name = Erwin·Rommel
+		name = WUR_Erwin_Rommel 
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Erwin_Rommel.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	WUR_Franz_Halde = { #Franz_Halde
-		name = Franz·Halde
+		name = WUR_Franz_Halde
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Franz_Halde.png
@@ -61,38 +61,9 @@ characters = {
 			ai_will_do = { factor = 1.000 }
 		}
 	}
-	WUR_Friedrich_Dorman = { #Friedrich_Dorman
-		name = Friedrich·Dorman
-		portraits = {
-			army = {
-				large = gfx/leaders/WUR/Friedrich_Dorman.png
-				small = GFX_portrait_Friedrich_Dorman_small
-			}
-			civilian = {
-				large = GFX_portrait_Friedrich_Dorman
-				small = GFX_portrait_Friedrich_Dorman_small
-			}
-		}
-		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-		}
-		advisor = {
-			cost = 150
-			slot = army_chief
-			idea_token = WUR_Friedrich_Dorman
-			allowed = { original_tag = WUR }
-			traits = { army_chief_reform_2 }
-			ai_will_do = { factor = 1.000 }
-		}
-	}
+
 	WUR_Heinrich_Schech = { #Heinrich_Schech
-		name = Heinrich·Schech
+		name = WUR_Heinrich_Schech
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Heinrich_Schech.png
@@ -123,7 +94,7 @@ characters = {
 		}
 	}
 	WUR_Hermann_Von_Stein = { #Hermann_Von_Stein
-		name = Hermann·Von·Stein
+		name = WUR_Hermann_Von_Stein
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Hermann_Von_Stein.png
@@ -153,7 +124,7 @@ characters = {
 		}
 	}
 	WUR_Kurt_haas = { #Kurt_haas
-		name = Kurt·haas
+		name = WUR_Kurt_haas
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Kurt_haas.png
@@ -183,7 +154,7 @@ characters = {
 		}
 	}
 	WUR_Otto_Von_Machtal = { #Otto_Von_Machtal
-		name = Otto·Von·Machtal
+		name = WUR_Otto_Von_Machtal
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/Otto_Von_Machtal.png
@@ -214,7 +185,7 @@ characters = {
 		}
 	}
 	WUR_William_Adam = { #William_Adam
-		name = William·Adam
+		name = WUR_William_Adam
 		portraits = {
 			army = {
 				large = gfx/leaders/WUR/William_Adam.png

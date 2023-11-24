@@ -10,9 +10,9 @@ country_event = {
 	mean_time_to_happen = { days = 0 }
 	trigger = {
 		original_tag = AUS
-		date < 1922.01.01
+		date < 1921.08.01
 		AND = {
-			date > 1921.01.01
+			date > 1921.06.01
 		}
 	}
 	

@@ -1,0 +1,124 @@
+add_namespace = TUR
+country_event = {
+	id = TUR.1
+	title = TUR.1.t
+	desc = TUR.1.d
+	picture = GFX_events_TUR_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+    #那就这样吧  	
+	option = {
+		name = TUR.1.a
+		TUR = {
+			declare_war_on = {
+				target = GRE
+				type = take_claimed_state
+				}
+		}
+}
+}
+country_event = {
+	id = TUR.2
+	title = TUR.2.t
+	desc = TUR.2.d
+	picture = GFX_events_TUR_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+    #那就这样吧  	
+		option = {
+			
+		name = TUR.2.a
+		add_popularity = { ideology = Marxism popularity = 0.34 }
+		set_politics = {ruling_party = Marxism}
+		set_cosmetic_tag = TUR_MAX_1
+		
+		
+    }
+}
+country_event = {#侵略成功
+	id = TUR.3
+	title = TUR.3.t
+	desc = TUR.3.d
+	picture = GFX_events_TUR_3
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		has_war_with = GRE
+		controls_state   = 343
+		controls_state  = 797
+		GRE = {NOT = {has_idea = Take_the_initiative_to_attack}
+		TUR = {NOT = { has_idea = revenge }
+	}
+}
+    #那就这样吧  	
+	option = {
+		name = TUR.3.a
+		news_event = {id = AOR_news.44}
+		transfer_state = 797
+		transfer_state =  340
+		transfer_state =  341
+		every_country = {
+			limit = { has_war_with = TUR }
+			white_peace = TUR
+		}
+		
+	}
+}
+country_event = {#自卫成功
+	id = TUR.4
+	title = TUR.4.t
+	desc = TUR.4.d
+	picture = GFX_events_TUR_4
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		has_war_with = GRE
+		TUR = {NOT = { has_idea = revenge }
+	}
+		controls_state   = 343
+		controls_state  = 797
+		controls_state  = 184
+		GRE = {has_idea =  Take_the_initiative_to_attack}
+	}
+    #那就这样吧  	
+	option = {
+		name = TUR.4.a
+		news_event = {id = AOR_news.45}
+		every_country = {
+			limit = { has_war_with = TUR }
+			white_peace = TUR
+		}
+	}
+}
+country_event = {#自卫成功
+	id = TUR.5
+	title = TUR.5.t
+	desc = TUR.5.d
+	picture = GFX_events_TUR_5
+	fire_only_once = yes
+	is_triggered_only = yes
+    #那就这样吧  	
+	option = {
+		name = TUR.5.a
+		news_event = {id = AOR_news.60}
+		add_ideas = {
+			revenge
+		}
+		TUR = {
+			declare_war_on = {
+				target = GRE
+				type = take_claimed_state
+				}
+		}
+	}
+}

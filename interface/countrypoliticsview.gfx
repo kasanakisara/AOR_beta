@@ -22,7 +22,10 @@ spriteTypes = {
 		name = "GFX_countryview_government_in_exile_bg"
 		texturefile = "gfx/interface/government_in_exile/countryview_government_in_exile_bg.dds"
 	}
-
+	spriteType = {
+		name = "GFX_tiled_window_pol_spirit"
+		texturefile = "gfx/interface/GFX_tiled_window_pol_spirit.dds"
+	}
 	spriteType = {
 		name = "GFX_countryview_exile_my_legitimacy"
 		texturefile = "gfx/interface/government_in_exile/autonomy_exiles.dds"
@@ -43,7 +46,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/government_in_exile/reinstate_button.dds"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_idea_slot_second_leader"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
 	spriteType = {
 		name = "GFX_government_in_exile_reward_icons"
 		texturefile = "gfx/interface/government_in_exile/government_in_exile_reward_icons.dds"
