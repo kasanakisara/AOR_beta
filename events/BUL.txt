@@ -39,7 +39,7 @@ country_event = {
 			add_state_core = 84
 			add_state_core = 82
 		}
-		news_event = {id = AOR_news.50}
+		news_event = {id = AOR_news.350}
 		
 	}
 }
@@ -88,7 +88,7 @@ country_event = {
 			add_state_core = 803
 			add_state_core = 341
 		}
-		news_event = {id = AOR_news.52}
+		news_event = {id = AOR_news.352}
 		
 	}
 }

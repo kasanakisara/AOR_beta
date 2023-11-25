@@ -199,7 +199,6 @@ country_event = {
     #那就这样吧  	
 	option = {
 		name = GRE.6.a
-		news_event = {id = AOR_news.50}
 		GRE = {
 			declare_war_on = {
 				target = YUG
@@ -272,7 +271,7 @@ country_event = {
     #那就这样吧  	
 	option = {
 		name = GRE.9.a
-		news_event = {id = AOR_new.51}
+		news_event = {id = AOR_news.351}
 		GRE = {
 			declare_war_on = {
 				target = BUL
@@ -368,7 +367,7 @@ country_event = {
 		add_state_core = 801
 		add_state_core = 77
 		add_state_core = 851
-		news_event = {id = AOR_news.49}
+		news_event = {id = AOR_news.349}
 	}
 }
 country_event = {
@@ -402,9 +401,9 @@ country_event = {
 			add_state_core = 84
 			add_state_core = 82
 		}
-		news_event = {id = AOR_news.51}
+		news_event = {id = AOR_news.351}
 		YUG = {country_event = {
 			days = 1 id = YUG.1
-		}
+		}}
 	}
 }
