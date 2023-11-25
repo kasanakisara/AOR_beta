@@ -376,7 +376,7 @@ guiTypes = {#详细面板
 			}
 			spriteType = "GFX_ENG_House_of_Commons_ICON"
 			Orientation = center
-			origo = center
+			Origo = center
 			scale = 0.17
 		}
 	}

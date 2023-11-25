@@ -841,10 +841,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "gfx_jilundianqisuoqvzhifangzhou_shine"
-	texturefile = "gfx\interface\goals\方舟.dds"
+	texturefile = "gfx/interface/goals/方舟.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\方舟.dds"
+	 animationmaskfile = "gfx/interface/goals/方舟.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -857,7 +857,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\方舟.dds"
+	 animationmaskfile = "gfx/interface/goals/方舟.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -874,10 +874,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_baoyuzhizhong_quebujianliming_shine"
-	texturefile = "gfx\interface\goals\终结混乱之世.dds"
+	texturefile = "gfx/interface/goals/终结混乱之世.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\终结混乱之世.dds"
+	 animationmaskfile = "gfx/interface/goals/终结混乱之世.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -890,7 +890,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\终结混乱之世.dds"
+	 animationmaskfile = "gfx/interface/goals/终结混乱之世.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -907,10 +907,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_shisheiduozoulewmdemianbao_shine"
-	texturefile = "gfx\interface\goals\谁夺走了面包.dds"
+	texturefile = "gfx/interface/goals/谁夺走了面包.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\谁夺走了面包.dds"
+	 animationmaskfile = "gfx/interface/goals/谁夺走了面包.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -923,7 +923,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\谁夺走了面包.dds"
+	 animationmaskfile = "gfx/interface/goals/谁夺走了面包.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -940,10 +940,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_meiyouxiaoyandezhanhuo_shine"
-	texturefile = "gfx\interface\goals\没有硝烟的战火.dds"
+	texturefile = "gfx/interface/goals/没有硝烟的战火.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\没有硝烟的战火.dds"
+	 animationmaskfile = "gfx/interface/goals/没有硝烟的战火.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -956,7 +956,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\没有硝烟的战火.dds"
+	 animationmaskfile = "gfx/interface/goals/没有硝烟的战火.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -973,10 +973,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_pantumendeqiuge_shine"
-	texturefile = "gfx\interface\goals\叛徒们的囚歌.dds"
+	texturefile = "gfx/interface/goals/叛徒们的囚歌.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\叛徒们的囚歌.dds"
+	 animationmaskfile = "gfx/interface/goals/叛徒们的囚歌.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -989,7 +989,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\叛徒们的囚歌.dds"
+	 animationmaskfile = "gfx/interface/goals/叛徒们的囚歌.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1006,10 +1006,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_hangluwutou_shine"
-	texturefile = "gfx\interface\goals\航路无头.dds"
+	texturefile = "gfx/interface/goals/航路无头.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\航路无头.dds"
+	 animationmaskfile = "gfx/interface/goals/航路无头.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1022,7 +1022,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\航路无头.dds"
+	 animationmaskfile = "gfx/interface/goals/航路无头.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1039,10 +1039,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_yiwulizhifutamen_shine"
-	texturefile = "gfx\interface\goals\以武力制服他们.dds"
+	texturefile = "gfx/interface/goals/以武力制服他们.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\以武力制服他们.dds"
+	 animationmaskfile = "gfx/interface/goals/以武力制服他们.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1055,7 +1055,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\以武力制服他们.dds"
+	 animationmaskfile = "gfx/interface/goals/以武力制服他们.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1072,10 +1072,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_qudiyiqiebaozhang_shine"
-	texturefile = "gfx\interface\goals\撕毁条约.dds"
+	texturefile = "gfx/interface/goals/撕毁条约.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\撕毁条约.dds"
+	 animationmaskfile = "gfx/interface/goals/撕毁条约.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1088,7 +1088,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\撕毁条约.dds"
+	 animationmaskfile = "gfx/interface/goals/撕毁条约.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1105,10 +1105,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_aierlanren_yongshiweinu_shine"
-	texturefile = "gfx\interface\goals\爱尔兰人，永世为奴.dds"
+	texturefile = "gfx/interface/goals/爱尔兰人，永世为奴.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\爱尔兰人，永世为奴.dds"
+	 animationmaskfile = "gfx/interface/goals/爱尔兰人，永世为奴.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1121,7 +1121,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\爱尔兰人，永世为奴.dds"
+	 animationmaskfile = "gfx/interface/goals/爱尔兰人，永世为奴.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1138,10 +1138,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_chonghuizhanshizhuangtai_shine"
-	texturefile = "gfx\interface\goals\重回战时状态.dds"
+	texturefile = "gfx/interface/goals/重回战时状态.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\重回战时状态.dds"
+	 animationmaskfile = "gfx/interface/goals/重回战时状态.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1154,7 +1154,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\重回战时状态.dds"
+	 animationmaskfile = "gfx/interface/goals/重回战时状态.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1172,10 +1172,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_junduisuishidaiming_shine"
-	texturefile = "gfx\interface\goals\军队随时待命.dds"
+	texturefile = "gfx/interface/goals/军队随时待命.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\军队随时待命.dds"
+	 animationmaskfile = "gfx/interface/goals/军队随时待命.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1188,7 +1188,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\军队随时待命.dds"
+	 animationmaskfile = "gfx/interface/goals/军队随时待命.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
@@ -1205,10 +1205,10 @@ SpriteType = {
 
 SpriteType = {
 	name = "GFX_ENG_daponingjiangdediyiqiang_shine"
-	texturefile = "gfx\interface\goals\打破宁静的第一声枪声.dds"
+	texturefile = "gfx/interface/goals/打破宁静的第一声枪声.dds"
 	  effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\打破宁静的第一声枪声.dds"
+	 animationmaskfile = "gfx/interface/goals/打破宁静的第一声枪声.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 	 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 	 animationlooping = no   
@@ -1221,7 +1221,7 @@ SpriteType = {
 	}
   
 	animation = {
-	 animationmaskfile = "gfx\interface\goals\打破宁静的第一声枪声.dds"
+	 animationmaskfile = "gfx/interface/goals/打破宁静的第一声枪声.dds"
 	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 	 animationrotation = 90.0 
 	 animationlooping = no   
