@@ -301,27 +301,10 @@ country_event = {
 		GRE = {
 			add_to_faction = YUG
 		}
-		country_event = {days = 60 id = GRE.11}
+		country_event = {days = 60 id = GRE.12}
 	}
 }
-country_event = {
-	id = GRE.11
-	title = GRE.11.t
-	desc = GRE.11.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	is_triggered_only = yes
-    #那就这样吧  	
-	option = {
-		name = GRE.11.a
-		GRE = {
-			declare_war_on = {
-				target = ALB
-				type = take_core_state
-			}
-		}
-	}
-}
+
 country_event = {
 	id = GRE.12
 	title = GRE.12.t
@@ -338,26 +321,11 @@ country_event = {
 				type = take_core_state
 			}
 		}
+		BUL = {country_event = {id = BUL.3}}
+		
 	}
 }
-country_event = {
-	id = GRE.13
-	title = GRE.13.t
-	desc = GRE.13.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	is_triggered_only = yes
-    #那就这样吧  	
-	option = {
-		name = GRE.13.a
-		GRE = {
-			declare_war_on = {
-				target = CRO
-				type = take_core_state
-			}
-		}
-	}
-}
+
 country_event = {
 	id = GRE.14
 	title = GRE.14.t
@@ -374,6 +342,69 @@ country_event = {
 				target = BUL
 				type = take_core_state
 			}
+		}
+		
+	}
+}
+country_event = {
+	id = GRE.15
+	title = GRE.15.t
+	desc = GRE.15.d
+	picture = GFX_events_GRE_6
+	fire_only_once = yes
+	trigger = {
+		NOT = { country_exists = BUL }
+		YUG = {is_subject_of = HUN}
+		ROM = {is_subject_of = HUN}
+	}
+    #那就这样吧  	
+	option = {
+		name = GRE.15.a
+		add_state_core = 106
+		add_state_core = 803
+		add_state_core = 48
+		add_state_core = 212
+		add_state_core = 211
+		add_state_core = 801
+		add_state_core = 77
+		add_state_core = 851
+		news_event = {id = AOR_news.49}
+	}
+}
+country_event = {
+	id = GRE.16
+	title = GRE.16.t
+	desc = GRE.16.d
+	picture = GFX_events_GRE_6
+	fire_only_once = yes
+	trigger = {
+		NOT = { country_exists = BUL }
+		has_war = no
+		ROM = {
+			controls_state = 84
+		}
+		YUG = {
+			controls_state = 45
+		}
+	}
+    #那就这样吧  	
+	option = {
+		name = GRE.16.a
+		add_state_core = 106
+		add_state_core = 803
+		add_state_core = 48
+		add_state_core = 212
+		add_state_core = 211
+		add_state_core = 801
+		add_state_core = 77
+		add_state_core = 851
+		ROM = {
+			add_state_core = 84
+			add_state_core = 82
+		}
+		news_event = {id = AOR_news.51}
+		YUG = {country_event = {
+			days = 1 id = YUG.1
 		}
 	}
 }

@@ -110,7 +110,7 @@ country_event = {#自卫成功
     #那就这样吧  	
 	option = {
 		name = TUR.5.a
-		news_event = {id = AOR_news.60}
+		news_event = {id = AOR_news.47}
 		add_ideas = {
 			revenge
 		}

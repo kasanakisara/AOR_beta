@@ -27,138 +27,101 @@ division_template={
 }
 units={
     division={
-        name="第一希腊本土步兵"
-		location = 4109
+        name="第一罗马尼亚本土步兵"
+		location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第二希腊本土步兵"
-        location = 4109
+        name="第二罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第三希腊本土步兵"
-        location = 4109
+        name="第三罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第四希腊本土步兵"
-        location = 4109
+        name="第四罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第五希腊本土步兵"
-        location = 4109
+        name="第五罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第六希腊本土步兵"
-        location = 4109
+        name="第六罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第七希腊本土步兵"
-        location = 4109
+        name="第七罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第四希腊骑兵师"
-        location = 4109
+        name="第四罗马尼亚骑兵师"
+        location = 9617
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第五希腊骑兵师"
-        location = 4109
+        name="第五罗马尼亚骑兵师"
+        location = 9617
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第六希腊骑兵师"
-        location = 4109
+        name="第六罗马尼亚骑兵师"
+        location = 9617
         division_template="骑兵师"
         start_experience_factor=0.2
         start_equipment_factor=1
-    }
-    division={
-        name="第七希腊本土步兵"
-        location = 4109
+	}
+	division={
+        name="第八罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第八希腊本土步兵"
-        location = 4109
+	division={
+        name="第九罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第九希腊本土步兵"
-        location = 4109
+	division={
+        name="第十罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第十希腊本土步兵"
-        location = 4109
+	division={
+        name="第十一罗马尼亚本土步兵"
+        location = 9617
         division_template="本土步兵"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第十一希腊本土步兵"
-        location = 4109
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-    division={
-        name="第十二希腊本土步兵"
-        location = 4109
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-    division={
-        name="第十三希腊本土步兵"
-        location = 4109
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-    division={
-        name="第十四希腊本土步兵"
-        location = 4109
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-    division={
-        name="第十五希腊本土步兵"
-        location = 4109
-        division_template="本土步兵"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-
-
 }
