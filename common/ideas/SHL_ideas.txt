@@ -232,7 +232,7 @@ ideas = {
 			modifier = {
 			resistance_growth = -0.6
 			experience_gain_factor = 0.4
-			required_garrison = -0.5
+			required_garrison_factor = -0.5
 			}
 		}
 	}
