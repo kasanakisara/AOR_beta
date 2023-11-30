@@ -3,7 +3,7 @@ ideas = {
     country = {
 		Mother_Anaki = {
 		
-		    romoval_cost = -1
+		    removal_cost = -1
 			
 			picture = idea_Mother_Anaki
 			
@@ -17,7 +17,7 @@ ideas = {
 		}
 		Father_Mahno = {
 		
-		    romoval_cost = -1
+		    removal_cost = -1
 			
 			picture = idea_Father_Mahno
 			
@@ -32,7 +32,7 @@ ideas = {
 		}
 		A_brief_alliance = {
 		
-		    romoval_cost = -1
+		    removal_cost = -1
 			
 			picture = idea_A_brief_alliance
 			

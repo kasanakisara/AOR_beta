@@ -41,7 +41,7 @@ ideas = {
 			picture = GFX_idea_USA_participation_award
 			allowed = { always = yes }
 			modifier = {
-			custom_effect_tooltip = USA_1_tt
+		    	custom_effect_tooltip = USA_1_tt
 			}
 		}
 	#垫底的美金	

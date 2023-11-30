@@ -236,7 +236,7 @@ ideas = {
 
 	    	modifier = {
 				RESISTANCE_TICK_AUTO = -0.15
-				STABILITY_POPULARITY_FACTOR = 0.15
+				stability_factor = 0.15
 				production_speed_buildings_factor = 0.05
 				production_speed_arms_factory_factor = 0.12
 				production_speed_industrial_complex_factor = 0.12
@@ -270,7 +270,7 @@ ideas = {
 	    	modifier = {
 				consumer_goods_factor = -0.05
 			    production_speed_infrastructure_factor = 0.1
-				MIN_EXPORT_FACTOR = 0.1
+				min_export = 0.1
 	    	}
 	    }
 		ENG_shouxiangguangbo = { #首相广播
