@@ -89,13 +89,7 @@ technologies = {
 			soft_attack = 0.05
 		}			
 
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
-	
+
 		path = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
@@ -179,12 +173,7 @@ technologies = {
 			soft_attack = 0.05
 		}	
 				
-		mechanized = {
-			soft_attack = 0.05
-		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
+
 	
 		path = {
 			leads_to_tech = The_first_assault_weapon
@@ -445,14 +434,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
 		path = {
 			leads_to_tech = support_weapons2
 			research_cost_coeff = 1
@@ -523,14 +505,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}		
+	
 		path = {
 			leads_to_tech = support_weapons3
 			research_cost_coeff = 1
@@ -597,14 +572,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
 		path = {
 			leads_to_tech = support_weapons4
 			research_cost_coeff = 1
@@ -678,14 +646,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
 		path = {
 			leads_to_tech = support_weapons5
 			research_cost_coeff = 1
@@ -752,14 +713,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
 		path = {
 			leads_to_tech = support_weapons6
 			research_cost_coeff = 1
@@ -815,8 +769,11 @@ technologies = {
 		categories = {
 			infantry_tech
 		}		
-		on_research_complete = {	
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE_100
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_horses"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		ai_will_do = {
 			factor = 1
@@ -885,14 +842,12 @@ technologies = {
 	}
 	Great_war_armored_vehicles = {
 
-		enable_subunits = {
-			armored_vehicles
-		}
-
-		enable_equipments = {
+	enable_equipments = {
 			armored_vehicles
 		}	
-
+	enable_subunits = {
+			armored_car
+		}
 		path = {
 			leads_to_tech = Multi_person_armed_armored_vehicle
 			research_cost_coeff = 1
@@ -923,7 +878,7 @@ technologies = {
 	Field_motorcycles_with_cars = {
 		
 		enable_equipments = {
-			armored_vehicles_2
+			motorized_equipment_1
 		}
 
 		path = {
@@ -955,10 +910,9 @@ technologies = {
 	}
 	Multi_person_armed_armored_vehicle = {
 		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE
-		}
-
+		enable_equipments = {
+			armored_vehicles_1
+		}			
 		path = {
 			leads_to_tech = Mobile_artillery_armored_vehicles
 			research_cost_coeff = 1
@@ -988,10 +942,13 @@ technologies = {
 	}
 	Mobile_artillery_armored_vehicles = {
 		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE_2
+		armored_car = {
+			max_organisation = 5
+			ap_attack = 0.1
 		}
-
+		enable_equipments = {
+			armored_vehicles_2
+		}	
 		path = {
 			leads_to_tech = Anti_tank_armored_vehicles
 			research_cost_coeff = 1
@@ -1006,6 +963,9 @@ technologies = {
 		categories = {
 			motorized_equipment
 			infantry_tech
+		}	
+		sub_technologies = {
+			armored_car_at_upgrade
 		}		
 		ai_will_do = {
 			factor = 1
@@ -1021,9 +981,9 @@ technologies = {
 	}
 	Anti_tank_armored_vehicles = {
 		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE_3
-		}
+		enable_equipments = {
+			armored_vehicles_3
+		}	
 
 		research_cost = 1.5
 		start_year = 1929
@@ -1049,9 +1009,19 @@ technologies = {
 		}
 	}
 	Military_transport_trucks = {
-		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE_4
+
+		enable_equipments = {
+			motorized_equipment_2
+		}
+
+		motorized = {
+			hardness = 1.0
+		}
+		mot_artillery_brigade = {
+			hardness = 1.0
+		}
+		mot_anti_tank_brigade = {
+			hardness = 1.0
 		}
 
 		path = {
@@ -1082,9 +1052,8 @@ technologies = {
 		}
 	}
 	Armored_transporters = {
-		
-		enable_subunits = {
-			EQUIPMENT_VEHICLE_5
+		enable_equipments = {
+			motorized_equipment_3
 		}
 
 		research_cost = 1.5
