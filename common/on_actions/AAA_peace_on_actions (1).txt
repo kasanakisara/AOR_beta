@@ -588,6 +588,33 @@ on_actions = {
 					white_peace = TUR
 				}
 			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = ENG
+							has_war_together_with = ENG
+					}
+					ROOT = {
+						original_tag = CZE
+					}
+				}
+			}
+				CZE = {
+
+					transfer_state = 69
+					transfer_state =  9
+					transfer_state =  75
+					transfer_state = 74
+					transfer_state =  72
+					set_politics = { ruling_party = CON_democratic}
+					add_popularity = { ideology = CON_democratic popularity = 56 }
+				}
+				every_country = {
+					limit = { has_war_with = CZE }
+					white_peace = CZE
+				}
+			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
 characters = {
 	CZE_FATHER={
-		name= "Tomas_Masaryk"
+		name= "Tomas Masaryk"
 		portraits={
 			civilian={
 				large="gfx/leaders/CZE/FATHER.dds"
@@ -9,7 +9,7 @@ characters = {
 		country_leader={
 			ideology = liberalism
 			desc = "CZE_T_M_DESC"
-			traits={  }
+			traits={}
 			expire="1965.1.1.1"
 			id=-1
 		}

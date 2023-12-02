@@ -431,6 +431,15 @@ spriteTypes = {
 		name = "GFX_idea_aid_from_uk"
 		texturefile = "gfx/interface/ideas/aid_from_uk.png"
 	}
+	spriteType = {
+		name = "GFX_idea_CZE_soaring_economy"
+		texturefile = "gfx/interface/ideas/idea_CZE_soaring_economy.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CZE_Merchant_troops"
+		texturefile = "gfx/interface/ideas/idea_CZE_Merchant_troops.png"
+	}	
+
 	#阿工团民族精神
 	spriteType = {
 		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"

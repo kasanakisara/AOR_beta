@@ -863,7 +863,66 @@ news_event = { #京汉铁路工人大罢工被镇压
 		name = AOR_news.53.a
 	}
 }
+news_event = { #捷克经济崩溃！！！
+	id = AOR_news.310
+	title = AOR_news.310.t
+	desc = AOR_news.310.d
+	picture = GFX_AOR_news.310_pic
+	is_triggered_only = yes 
+	major = yes
 
+	option = {
+		name = AOR_news.310.a
+	}
+}
+news_event = { #托马斯！！！
+	id = AOR_news.311
+	title = AOR_news.311.t
+	desc = AOR_news.311.d
+	picture = GFX_AOR_news.310_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.311.a
+	}
+}
+news_event = { #血洗议会！！！
+	id = AOR_news.312
+	title = AOR_news.312.t
+	desc = AOR_news.312.d
+	picture = GFX_AOR_news.312_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.312.a
+	}
+}
+news_event = { #工人革命！！！
+	id = AOR_news.314
+	title = AOR_news.314.t
+	desc = AOR_news.314.d
+	picture = GFX_AOR_news.314_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.314.a
+	}
+}
+news_event = { #捷克经济继续崩！！！！
+	id = AOR_news.313
+	title = AOR_news.313.t
+	desc = AOR_news.313.d
+	picture = GFX_AOR_news.313_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.313.a
+	}
+}
 news_event = { #卷土重来！！！
 	id = AOR_news.347
 	title = AOR_news.347.t
