@@ -161,6 +161,8 @@ add_ideas = {
 	USA_Dollar_bottom
 }
 
+set_variable = { var = wanla_quandouwanle }
+
 USA = {country_event = {
 	days = 30 id = USA.105
 	}
