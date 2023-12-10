@@ -153,6 +153,9 @@ country_event = {#自卫成功
 		transfer_state =  343
 		transfer_state =  347
 		transfer_state = 346
+		GRE = {
+			country_event = {days = 45 id = GRE.5}
+		}
 		
 	}
 }
@@ -177,7 +180,7 @@ country_event = {
 	option = {
 	name = GRE.5.b
 	ai_chance = {
-		base = 20
+		base = 80
 	}
 	add_popularity = { ideology = CON_democratic popularity = 0.25 }
 	set_cosmetic_tag = GRE_CON_1
@@ -299,8 +302,9 @@ country_event = {
 		create_faction = GRE_alliance
 		GRE = {
 			add_to_faction = YUG
+			country_event = {days = 60 id = GRE.12}
 		}
-		country_event = {days = 60 id = GRE.12}
+		
 	}
 }
 
@@ -309,18 +313,25 @@ country_event = {
 	title = GRE.12.t
 	desc = GRE.12.d
 	picture = GFX_events_GRE_6
-	fire_only_once = yes
 	is_triggered_only = yes
     #那就这样吧  	
 	option = {
 		name = GRE.12.a
-		GRE = {
-			declare_war_on = {
-				target = DAL
-				type = take_core_state
+		log = "[GetLogInfo] [From.GetName]: event GRE.12 option GRE.12.a"
+		if = {
+			limit = {
+				tag = GRE
 			}
+			GRE = {
+				declare_war_on = {
+					target = DAL
+					type = take_core_state
+				}
+			}	
+			
+			BUL = {country_event = {id = BUL.3}}
 		}
-		BUL = {country_event = {id = BUL.3}}
+		
 		
 	}
 }

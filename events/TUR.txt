@@ -69,7 +69,9 @@ country_event = {#侵略成功
 			limit = { has_war_with = TUR }
 			white_peace = TUR
 		}
-		
+		GRE = {
+			country_event = {days = 45 id = GRE.5}
+		}
 	}
 }
 country_event = {#自卫成功
@@ -97,6 +99,9 @@ country_event = {#自卫成功
 		every_country = {
 			limit = { has_war_with = TUR }
 			white_peace = TUR
+		}
+		GRE = {
+			country_event = {days = 45 id = GRE.5}
 		}
 	}
 }

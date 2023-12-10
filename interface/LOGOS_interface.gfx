@@ -686,6 +686,14 @@ spriteTypes = {
 		name = "GFX_AOR_news.44_pic"
 		texturefile = "gfx/event_pictures/AOR_news.44_pic.png"
 	}
+	spriteType = {
+		name = "GFX_AOR_news.354_pic"
+		texturefile = "gfx/event_pictures/AOR_news.354_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.353_pic"
+		texturefile = "gfx/event_pictures/AOR_news.353_pic.png"
+	}
 
 	
 	#巴苏事件图片

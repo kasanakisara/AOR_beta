@@ -14,6 +14,7 @@ country_event = {
 	mean_time_to_happen = {day = 1}
 	option = {
 		name = USA.1.a
+		
 	}
 }
 country_event = {
@@ -199,34 +200,75 @@ country_event = {
 			transfer_state = 386
 			transfer_state = 387
 			transfer_state = 385
+			load_oob = "US1_Civilwar"
 		}
 		US2 = {
 			transfer_state = 378
 			transfer_state = 379
 			transfer_state = 380
+			load_oob = "US2_Civilwar"
 		}
 		US3 = {
 			transfer_state = 388
+			load_oob = "US3_Civilwar"
 		}
 		US4 = {
 			transfer_state = 381
 			transfer_state = 925
+			load_oob = "US4_Civilwar"
 		}
 		US5 = {
 			transfer_state = 382
 			transfer_state = 924
 			transfer_state = 923
+			load_oob = "US5_Civilwar"
 		}
 		US6 = {
 			transfer_state = 389
 			transfer_state = 390
+			load_oob = "US6_Civilwar"
 		}
 		US7 = {
 			transfer_state = 384
+			load_oob = "US7_Civilwar"
 		}
 		US8 = {
 			transfer_state = 383
 			transfer_state = 926
+			load_oob = "US8_Civilwar"
+		}
+		US1 = {
+			add_state_core = 386
+			add_state_core = 387
+			add_state_core = 385
+		}
+		US2 = {
+			add_state_core = 378
+			add_state_core = 379
+			add_state_core = 380
+		}
+		US3 = {
+			add_state_core = 388
+		}
+		US4 = {
+			add_state_core = 381
+			add_state_core = 925
+		}
+		US5 = {
+			add_state_core = 382
+			add_state_core = 924
+			add_state_core = 923
+		}
+		US6 = {
+			add_state_core = 389
+			add_state_core = 390
+		}
+		US7 = {
+			add_state_core = 384
+		}
+		US8 = {
+			add_state_core = 383
+			add_state_core = 926
 		}
 	}
 }
@@ -307,6 +349,7 @@ country_event = {
 				add_state_core = 388
 				add_state_core = 386
 				add_manpower = 10000
+				load_oob = "CSA_Civilwar"
 				}
 				
 			USA = {
