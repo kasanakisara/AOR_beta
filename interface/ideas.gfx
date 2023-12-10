@@ -6678,11 +6678,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_BAV_the_red_star_in_DEU"
-		texturefile = "gfx/interface/ideas/idea_BAV_the_red_star_in_DEU.dds"
+		texturefile = "gfx/interface/ideas/idea_BAV_the_red_star_in_DEU.png"
 	}
 	spriteType = {
 		name = "GFX_idea_BAV_a_deep_cut_from_revolution"
-		texturefile = "gfx/interface/ideas/idea_BAV_a_deep_cut_from_revolution.dds"
+		texturefile = "gfx/interface/ideas/idea_BAV_a_deep_cut_from_revolution.png"
 	}
 	spriteType = {
 		name = "GFX_idea_BAV_Soviet_guard"

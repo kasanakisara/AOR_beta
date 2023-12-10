@@ -469,6 +469,24 @@ spriteTypes = {
 		name = "GFX_idea_AOR_ORA_Workers_autonomy"
 		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
 	}
+	
+	###bav民族精神####
+	spriteType = {
+		name = "GFX_idea_BAV_dying_bureaucracy"
+		texturefile = "gfx/interface/ideas/BAV_dying_bureaucracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Extreme_democratic_rampant"
+		texturefile = "gfx/interface/ideas/Extreme_democratic_rampant.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Extreme_democratic_rampant_1"
+		texturefile = "gfx/interface/ideas/Extreme_democratic_rampant.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Roving_style"
+		texturefile = "gfx/interface/ideas/Roving_style.png"
+	}
 	#南非民族精神
 		spriteType = {
 		name = "GFX_idea_Land_of_diamonds_gold"
@@ -667,6 +685,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_AOR_news.44_pic"
 		texturefile = "gfx/event_pictures/AOR_news.44_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.354_pic"
+		texturefile = "gfx/event_pictures/AOR_news.354_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.353_pic"
+		texturefile = "gfx/event_pictures/AOR_news.353_pic.png"
 	}
 
 	

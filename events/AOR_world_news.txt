@@ -995,3 +995,36 @@ news_event = { #共和国希腊输掉巴尔干战争！！！
 		name = AOR_news.352.a
 	}
 }
+news_event = { #法老陵墓！！！
+	id = AOR_news.353
+	title = AOR_news.353.t
+	desc = AOR_news.353.d
+	picture = GFX_AOR_news.353_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.353.a
+	}
+}
+news_event = { #图坦卡蒙的奇迹！！！
+	id = AOR_news.354
+	title = AOR_news.354.t
+	desc = AOR_news.354.d
+	picture = GFX_AOR_news.354_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.354.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = AOR_news.354.b
+		trigger = { TAG = ENG }
+	}
+}
