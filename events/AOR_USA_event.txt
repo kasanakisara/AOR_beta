@@ -188,6 +188,7 @@ country_event = {
 	title = USA.10.t
 	desc = USA.10.d
 	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
 	trigger = {
 		tag = USA
 		date > 1921.7.1
@@ -196,11 +197,13 @@ country_event = {
       
 	option = {
 		name = USA.10.a
+
 		US1 = {
 			transfer_state = 386
 			transfer_state = 387
 			transfer_state = 385
 			load_oob = "US1_Civilwar"
+			
 		}
 		US2 = {
 			transfer_state = 378
@@ -241,34 +244,341 @@ country_event = {
 			add_state_core = 386
 			add_state_core = 387
 			add_state_core = 385
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+					DAXIYANG_The_clarion_call_for_sand_freedom_and_independence
+				}
+
 		}
 		US2 = {
 			add_state_core = 378
 			add_state_core = 379
 			add_state_core = 380
+			declare_war_on = {
+				target = US1
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+					PAN_XING_Desert_Eagle
+				}
 		}
 		US3 = {
 			add_state_core = 388
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
 		}
 		US4 = {
 			add_state_core = 381
 			add_state_core = 925
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
 		}
 		US5 = {
 			add_state_core = 382
 			add_state_core = 924
 			add_state_core = 923
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
 		}
 		US6 = {
 			add_state_core = 389
 			add_state_core = 390
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
 		}
 		US7 = {
 			add_state_core = 384
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+			add_ideas = {
+				The_Wild_West
+			}
 		}
 		US8 = {
 			add_state_core = 383
 			add_state_core = 926
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
 		}
 	}
 }
@@ -374,9 +684,99 @@ country_event = {
 				type = civil_war
 				}
 			}
+			country_event = {id = usa.1000 days = 60}
 			
 		
 		}
+	}
+}
+country_event = {
+	id = USA.1000 #南北战争的兵！
+	title = USA.1000.t
+	desc = USA.1000.d
+	picture = GFX_USA_event_1000
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1000.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_1"
+		USA = {country_event = {id = USA.1001 days = 1}}
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
+	}
+}
+country_event = {
+	id = USA.1001 #南北战争的兵！
+	title = USA.1001.t
+	desc = USA.1001.d
+	picture = GFX_USA_event_1001
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1001.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_2"
+		USA = {country_event = {id = USA.1002 days = 1}}
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
+	}
+}
+country_event = {
+	id = USA.1002 #南北战争的兵！
+	title = USA.1002.t
+	desc = USA.1002.d
+	picture = GFX_USA_event_1002
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1002.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_2"
+		USA = {country_event = {id = USA.1003 days = 60}}
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
+	}
+}
+country_event = {
+	id = USA.1003 #南北战争的兵！
+	title = USA.1003.t
+	desc = USA.1003.d
+	picture = GFX_USA_event_1003
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1003.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_2"
+		USA = {country_event = {id = USA.1004 days = 60}}
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
+	}
+}
+country_event = {
+	id = USA.1004 #南北战争的兵！
+	title = USA.1004.t
+	desc = USA.1004.d
+	picture = GFX_USA_event_1004
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1004.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_2"
+		USA = {country_event = {id = USA.1005 days = 60}}
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
+	}
+}
+country_event = {
+	id = USA.1005 #南北战争的兵！
+	title = USA.1005.t
+	desc = USA.1005.d
+	picture = GFX_USA_event_1005
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1005.a
+		add_manpower=10000
+		load_oob = "USA_Civilwar_2"
+		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
 ####记得！105-109已经被科技事件用了！##########

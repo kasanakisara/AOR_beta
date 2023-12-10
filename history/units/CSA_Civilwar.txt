@@ -99,7 +99,7 @@ units={
     }
 	division={
         name="南方第五师"
-        location=7318
+        location=7388
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -113,7 +113,7 @@ units={
     }
 	division={
         name="南方第七师"
-        location=7318
+        location=7388
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -127,7 +127,7 @@ units={
     }
 	division={
         name="南方第九师"
-        location=7318
+        location=7388
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1

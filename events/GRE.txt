@@ -33,6 +33,7 @@ country_event = {
 			}
 		country_event = { days = 90 id = TUR.1
 		}	
+		GRE = {leave_faction = Entente}
 	}	
 	
 	option = {
@@ -52,6 +53,7 @@ country_event = {
 		add_state_core = 797
 
 	}
+	GRE = {leave_faction = Entente}
 	country_event = { days = 90 id = GRE.2
 		}	
 	ai_chance = {
