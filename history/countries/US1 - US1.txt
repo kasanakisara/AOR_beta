@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 386
 
 #oob = "USA_1936"
 
@@ -8,13 +8,12 @@ starting_train_buffer = 5
 set_politics = {
 	ruling_party = FRE_democratic
 	last_election = "1915.5.19"
-	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	CON_democratic = 45 #洋基党
-	FRE_democratic = 40 #迪克西党
+	CON_democratic = 20 #洋基党
+	FRE_democratic = 65 #迪克西党
 	SOC_democratic = 5 #社民
 	AGR_socialism = 3 #农工党
 	AUT_democratic = 5 #社会党
@@ -22,9 +21,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Thomas Woodrow Wilson"
+	name = "Hiram_Warren_Johnson"
 	desc = ""
-	picture = "axm7x-nkh4s.dds"
+	picture = "gfx/leaders/US1/Hiram_Warren_Johnson.png"
 	expire = "1953.3.1"
 	ideology = liberalism
 	traits = {

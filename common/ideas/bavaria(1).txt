@@ -358,7 +358,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_idea_Extreme_democratic_rampant
 
 			modifier = {
 				conscription = -0.010
@@ -373,7 +373,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_Extreme_democratic_rampant_1
 
 			modifier = {
 				conscription = -0.010
@@ -446,7 +446,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_idea_Roving_style
 
 			modifier = {
 				army_org_regain = -0.05
@@ -518,7 +518,7 @@ ideas = {
 				original_tag = BAV
 				always = yes
 			}
-			picture = idea_BAV_the_red_star_in_DEU
+			picture = GFX_idea_BAV_the_red_star_in_DEU
 
 			modifier = {
 				drift_defence_factor = 0.75
@@ -536,7 +536,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_a_deep_cut_from_revolution
+			picture = GFX_idea_BAV_a_deep_cut_from_revolution
 
 			modifier = {
 				stability_factor = -0.15
@@ -649,7 +649,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_dying_bureaucracy
 
 			modifier = {
 				stability_factor = 0.30
