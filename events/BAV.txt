@@ -73,20 +73,7 @@ country_event = {
 	}
 }
 
-#德意志的新生#
-country_event = { 
-	id = BAV.5
-	title = BAV.5.t
-	desc = BAV.5.d
-	picture = GFX_BAV.5_pic
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = no
-      
-	option = {
-		name = BAV.5.a
-	}
-}
+
 #卢森堡的见闻#
 country_event = { 
 	id = BAV.6
@@ -102,7 +89,7 @@ country_event = {
 	}
 }
 
-#妇女的解放#
+#妇女的解放！！！！！！！！！！！！！！！！！！
 country_event = { 
 	id = BAV.7
 	title = BAV.7.t
@@ -180,7 +167,7 @@ country_event = {
 }
 
 
-#巴伐利亚-符腾堡苏维埃+南石荷苏维埃
+#巴伐利亚-符腾堡苏维埃+南石荷苏维埃！！！！！！！！！！！！！
 country_event = { 
 	id = BAV.11
 	title = BAV.11.t
@@ -227,7 +214,7 @@ country_event = {
 		}
 }
 
-#对法兰克福和柏林，统统宣战！！！！（拉狄克除外 ）
+#对法兰克福和柏林，统统宣战！！！！！！！！（拉狄克除外 ）
 country_event = { 
 	id = BAV.13
 	title = BAV.13.t
@@ -261,6 +248,7 @@ country_event = {
 	}
 }
 
+#给符腾堡的信
 country_event = {
 	id = BAV.14
 	title = BAV.14.t
@@ -271,7 +259,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.14.a
-		annex_country = { target = WUR transfer_troops = yes }
+			country_event = {days = 1 id = BAV.18}
         } 
 
  }
@@ -290,6 +278,7 @@ country_event = {
         } 
 
  }
+ #纪律的重要性！！！！
 country_event = {
 	id = BAV.16
 	title = BAV.16.t
@@ -303,7 +292,8 @@ country_event = {
         } 
 
  }
- 
+
+#迫近
 country_event = {
 	id = BAV.17
 	title = BAV.17.t
@@ -325,6 +315,22 @@ country_event = {
         } 
 
  }
+ 
+#给符腾堡的信-回复
+country_event = {
+	id = BAV.18
+	title = BAV.18.t
+	desc = BAV.18.d
+	picture = GFX_BAV.18_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.18.a
+		annex_country = { target = WUR transfer_troops = yes }
+        } 
+
+ }
 country_event = {
 	id = BAV.50
 	title = BAV.50.t
@@ -338,6 +344,7 @@ country_event = {
         } 
 
  }
+ #####思想革命！非梦
  country_event = {
 	id = BAV.51
 	title = BAV.51.t
@@ -348,6 +355,39 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.51.a
+			hidden_effect = {
+				country_event = {days = 1 id = BAV.53}
+			}
+        } 
+
+ }
+ 
+ country_event = {
+	id = BAV.52
+	title = BAV.52.t
+	desc = BAV.52.d
+	picture = GFX_BAV.52_pic
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = BAV.52.a
+		set_cosmetic_tag = BAV_GER_1
+        } 
+
+ }
+ 
+ #####思想革命！非梦
+ country_event = {
+	id = BAV.53
+	title = BAV.53.t
+	desc = BAV.53.d
+	picture = GFX_BAV.53_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.53.a
         } 
 
  }
