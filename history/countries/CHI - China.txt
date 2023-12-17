@@ -37,7 +37,7 @@ recruit_character = CHI_zhangjian
 recruit_character = CHI_lianghongzhi
 
 create_country_leader = {
-	name = "Yuan Shih-k'ai"
+	name = "Yuan_Shih_kai"
 	desc = ""
 	picture = "ak90r-vhcfj.dds"
 	expire = "1965.1.1"
@@ -47,7 +47,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Song Jiao Ren"
+	name = "Song_Jiao_Ren"
 	desc = ""
 	picture = "Sun.dds"
 	expire = "1965.1.1"
@@ -56,7 +56,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Duan Qi Rui"
+	name = "Duan_Qi_Rui"
 	desc = ""
 	picture = "Duan.dds"
 	expire = "1965.1.1"
@@ -65,9 +65,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Li Yuan Hong"
+	name = "Li_Yuan_Hong"
 	desc = ""
-	picture = "Li.dds"
+	picture = "Long.dds"
 	expire = "1965.1.1"
 	ideology = lianshengism
 	traits = {

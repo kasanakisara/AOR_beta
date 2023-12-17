@@ -98,7 +98,10 @@ spriteTypes = {
 		name = "GFX_ideology_stalinism"
 		textureFile = "gfx/interface/ideologies/stalinism.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_sanminism"
+		textureFile = "gfx/interface/ideologies/sanminism.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_strasser"
 		textureFile = "gfx/interface/ideologies/strasser.dds"

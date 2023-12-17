@@ -1,6 +1,6 @@
-﻿capital = 622
+﻿capital = 893
 
-#oob = "PRC_1936"
+#oob = "nan_1936"
 
 # Starting tech
 set_technology = {
@@ -11,26 +11,26 @@ set_stability = 0.6
 set_war_support = 0.7
 
 create_country_leader = {
-	name = "xi_CHUAN_commit"
+	name = "Feng_guo_zhang"
 	desc = "POLITICS_MON_DESC"
-	picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
+	picture = "gfx/leaders/NAN/Feng_guo_zhang.png"
 	expire = "1965.1.1"
-	ideology = PRC_urban
+	ideology = authoritarianism
 	traits = {
 	}
 }
 
 set_politics = {
-	ruling_party = Marxism
+	ruling_party = AUT_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	Marxism = 42
-	AUT_democratic = 48
-	Absolutism = 10
+	FRE_democratic = 34
+	AUT_democratic = 33
+	CON_democratic = 33
 }
 
 
