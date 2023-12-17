@@ -403,13 +403,16 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		NOT = { country_exists = BUL }
-		has_war = no
-		ROM = {
-			controls_state = 84
+		AND = {
+			has_war = no
+			ROM = {
+				controls_state = 84
+			}
+			YUG = {
+				controls_state = 45
+			}
 		}
-		YUG = {
-			controls_state = 45
-		}
+		
 	}
     #那就这样吧  	
 	option = {
