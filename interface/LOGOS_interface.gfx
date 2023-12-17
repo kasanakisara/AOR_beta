@@ -977,4 +977,29 @@ spriteType = {
   name = "GFX_goal_BAV_The_new_germany_people_army"
   texturefile = "gfx/interface/goals/BAV_The_new_germany_people_army.png"
  }
+ 
+ 
+ ####AOR超事件框架！！！我真厉害！耶#####
+  spriteType = {
+  name = "GFX_AOR_supernews_bg"
+  texturefile = "gfx/AOR_supernews/supernews_bg.png"
+ }
+  spriteType = {
+  name = "GFX_AOR_supernews_exit_btn"
+  texturefile = "gfx/AOR_supernews/supernews_btn.png"
+ }
+  spriteType = {
+  name = "GFX_AOR_supernews_frame_overlay"
+  texturefile = "gfx/AOR_supernews/supernews_frame.png"
+ }
+ 
+ #####超事件图片！
+  spriteType = {
+  name = "GFX_AOR_supernews_1"
+  texturefile = "gfx/AOR_supernews/pic/supernews_1.png"
+  }
+  spriteType = {
+  name = "GFX_AOR_supernews_2"
+  texturefile = "gfx/AOR_supernews/pic/supernews_2.png"
+  }
 }
