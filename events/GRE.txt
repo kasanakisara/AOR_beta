@@ -177,6 +177,7 @@ country_event = {
 		add_popularity = { ideology = Absolutism popularity = 0.08 }
 		set_politics = {ruling_party = Absolutism}
 		set_cosmetic_tag = GRE_ABO_1
+		log = "[GetLogInfo] [From.GetName]: event GRE.5 option GRE.12.a"
 	}
 	
 	option = {
@@ -197,6 +198,7 @@ country_event = {
 	trigger = {
 		has_government = Absolutism
 		AUS = {has_idea = Depression_calls_1}
+		tag = GRE
 	}
 	mean_time_to_happen = {
 		days = 45
@@ -210,6 +212,7 @@ country_event = {
 				type = take_claimed_state
 			}
 		}
+		log = "[GetLogInfo] [From.GetName]: event GRE.6 option GRE.12.a"
 	}
 }
 country_event = {
@@ -224,6 +227,7 @@ country_event = {
 		controls_state = 108
 		controls_state = 803
 		controls_state = 802
+		tag = GRE
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -237,6 +241,7 @@ country_event = {
 		}
 		transfer_state = 106
 		add_state_core  = 106
+		log = "[GetLogInfo] [From.GetName]: event GRE.7 option GRE.12.a"
 	}
 }
 country_event = {
@@ -250,6 +255,7 @@ country_event = {
 		controls_state = 106
 		106 = {is_core_of = GRE}
 		is_in_faction = no
+		tag = GRE
 
 	}
 	mean_time_to_happen = {
@@ -264,6 +270,7 @@ country_event = {
 		}
 		country_event = {days = 90 id = GRE.9}
 		BUL = {country_event = {days =15 id = BUL.1}}
+		log = "[GetLogInfo] [From.GetName]: event GRE.8 option GRE.12.a"
 	}
 }
 country_event = {
@@ -283,6 +290,7 @@ country_event = {
 				type = take_claimed_state
 			}
 		}
+		log = "[GetLogInfo] [From.GetName]: event GRE.9 option GRE.12.a"
 	}
 }
 country_event = {
@@ -294,6 +302,7 @@ country_event = {
 	trigger = {
 		has_government = CON_democratic
 		AUS = {has_idea = Depression_calls_1}
+		tag = GRE
 	}
 	mean_time_to_happen = {
 		days = 45
@@ -306,6 +315,7 @@ country_event = {
 			add_to_faction = YUG
 			country_event = {days = 60 id = GRE.12}
 		}
+		log = "[GetLogInfo] [From.GetName]: event GRE.10 option GRE.12.a"
 		
 	}
 }
@@ -355,6 +365,7 @@ country_event = {
 				type = take_core_state
 			}
 		}
+		log = "[GetLogInfo] [From.GetName]: event GRE.14 option GRE.12.a"
 		
 	}
 }
@@ -381,6 +392,7 @@ country_event = {
 		add_state_core = 77
 		add_state_core = 851
 		news_event = {id = AOR_news.349}
+		log = "[GetLogInfo] [From.GetName]: event GRE.15 option GRE.12.a"
 	}
 }
 country_event = {
@@ -418,5 +430,6 @@ country_event = {
 		YUG = {country_event = {
 			days = 1 id = YUG.1
 		}}
+		log = "[GetLogInfo] [From.GetName]: event GRE.16 option GRE.12.a"
 	}
 }

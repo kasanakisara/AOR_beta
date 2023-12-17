@@ -1,66 +1,84 @@
 add_namespce = CSA
-country_event = {
-	id = CSA.1000 #南北战争的兵！
-	title = CSA.1000.t
-	desc = CSA.1000.d
-	picture = GFX_CSA_event_1000
-	fire_only_once = yes
-	option = {
-		name=CSA.1000.a
-		add_manpower=10000
-		load_oob = "CSA_Civilwar_1"
-		CSA = {country_event = {id = CSA.1001 days = 1}}
-	}
-}
-country_event = {
-	id = CSA.1001 #南北战争的兵！
-	title = CSA.1001.t
-	desc = CSA.1001.d
-	picture = GFX_CSA_event_1001
-	fire_only_once = yes
-	option = {
-		name=CSA.1001.a
-		add_manpower=10000
-		load_oob = "CSA_Civilwar_2"
-		CSA = {country_event = {id = CSA.1002 days = 60}}
-	}
-}
-country_event = {
-	id = CSA.1002 #南北战争的兵！
-	title = CSA.1002.t
-	desc = CSA.1002.d
-	picture = GFX_CSA_event_1002
-	fire_only_once = yes
-	option = {
-		name=CSA.1002.a
-		add_manpower=10000
-		load_oob = "CSA_Civilwar_2"
-		CSA = {country_event = {id = CSA.1003 days = 60}}
-	}
-}
-country_event = {
-	id = CSA.1003 #南北战争的兵！
-	title = CSA.1003.t
-	desc = CSA.1003.d
-	picture = GFX_CSA_event_1003
-	fire_only_once = yes
-	option = {
-		name=CSA.1003.a
-		add_manpower=10000
-		load_oob = "CSA_Civilwar_2"
-		CSA = {country_event = {id = CSA.1004 days = 60}}
-	}
-}
-country_event = {
-	id = CSA.1004 #南北战争的兵！
-	title = CSA.1004.t
-	desc = CSA.1004.d
-	picture = GFX_CSA_event_1004
-	fire_only_once = yes
-	option = {
-		name=CSA.1004.a
-		add_manpower=10000
-		load_oob = "CSA_Civilwar_2"
+#country_event = {
+	##id = CSA.1000 #南北战争的兵！
+	#title = CSA.1000.t
+	#desc = CSA.1000.d
+	#picture = GFX_CSA_event_1000
+	#fire_only_once = yes
+	#option = {
+	#	name=CSA.1000.a
+	#	add_manpower=10000
+	#	load_oob = "CSA_Civilwar_2"
+	#	CSA = {country_event = {id = CSA.1001 days = 60}}
+	#}
+#}
+# country_event = {
+# 	id = CSA.1001 #南北战争的兵！
+# 	title = CSA.1001.t
+# 	desc = CSA.1001.d
+# 	picture = GFX_CSA_event_1001
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	option = {
+# 		name=CSA.1001.a
+# 		add_manpower=10000
+# 		load_oob = "CSA_Civilwar_2"
+# 		CSA = {country_event = {id = CSA.1002 days = 60}}
+# 	}
+# }
+# country_event = {
+# 	id = CSA.1002 #南北战争的兵！
+# 	title = CSA.1002.t
+# 	desc = CSA.1002.d
+# 	picture = GFX_CSA_event_1002
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	option = {
+# 		name=CSA.1002.a
+# 		add_manpower=10000
+# 		load_oob = "CSA_Civilwar_2"
+# 		CSA = {country_event = {id = CSA.1003 days = 60}}
+# 	}
+# }
+# country_event = {
+# 	id = CSA.1003 #南北战争的兵！
+# 	title = CSA.1003.t
+# 	desc = CSA.1003.d
+# 	picture = GFX_CSA_event_1003
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	option = {
+# 		name=CSA.1003.a
+# 		add_manpower=10000
+# 		load_oob = "CSA_Civilwar_2"
+# 		CSA = {country_event = {id = CSA.1004 days = 60}}
+# 	}
+# }
+# country_event = {
+# 	id = CSA.1004 #南北战争的兵！
+# 	title = CSA.1004.t
+# 	desc = CSA.1004.d
+# 	picture = GFX_CSA_event_1004
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	option = {
+# 		name=CSA.1004.a
+# 		add_manpower=10000
+# 		load_oob = "CSA_Civilwar_2"
 
-	}
-}
+# 	}
+# }
+
+# country_event = {
+# 	id = CSA.10000 
+# 	title = CSA.10000.t
+# 	desc = CSA.10000.d
+# 	picture = GFX_CSA_event_10000
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	option = {
+# 		name=CSA.10000.a
+# 		add_manpower=10000
+
+# 	}
+# }
