@@ -503,6 +503,7 @@ country_event = {
 		name = CHI.15.a
 			hidden_effect = {
 				CHI = {
+				set_cosmetic_tag = CHI_1
 				set_popularities = {
 				ruling_party = Absolutism
 				Absolutism = 72
@@ -513,8 +514,16 @@ country_event = {
 				set_party_name = { ideology = FRE_democratic  long_name = 社会党（交通系） name = 社会党（交通系） } 
 				set_party_name = { ideology = CON_democratic  long_name = 亲日派政客-社会党（亲日派） name = 社会党（亲日派） } 
 				set_party_name = { ideology = Special   long_name = 极端民族主义 name = 极端民族主义 } 
+				create_country_leader = {
+					name = "Duan_Qi_Rui"
+					desc = ""
+					picture = "gfx/leaders/CHI/Duan.png"
+					expire = "1965.1.1"
+					ideology = miliciagov
+					traits = {
+							}
+						}
 					}
-				set_cosmetic_tag = CHI_1
 				}
     }
 }

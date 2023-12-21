@@ -1,18 +1,16 @@
 focus_tree={
-	id = ENG_National_focus_2
 	country={
 		factor=0
 		modifier={
-			add=10
+			add=100
 			tag=ENG
 		}
 	}
 	default=no
 	focus={
 		id=AOR_ENG_WE_BELIVE_QIAOZHI
-		icon=AOR_ENG_goal_WE_BELIVE_QIAOZHI
-				icon = GFX_goal_unknown
-		x=83
+		icon=GFX_goal_unknown
+		x=69
 		y=0
 		cost=5
 		ai_will_do={
@@ -26,9 +24,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_Restore_the_economy
-		icon = AOR_ENG_goal_WE_BELIVE_QIAOZHI
-
-		x=83
+		icon=AOR_ENG_goal_WE_BELIVE_QIAOZHI
+		x=69
 		y=1
 		prerequisite={focus=AOR_ENG_WE_BELIVE_QIAOZHI}
 		cost=5
@@ -43,8 +40,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_A_new_atmosphere
-				icon = GFX_goal_unknown
-		x=73
+		icon=GFX_goal_unknown
+		x=59
 		y=2
 		prerequisite={focus=AOR_ENG_Restore_the_economy}
 		cost=5
@@ -59,8 +56,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong
-				icon = GFX_goal_unknown
-		x=91
+		icon=GFX_goal_unknown
+		x=77
 		y=2
 		prerequisite={focus=AOR_ENG_Restore_the_economy}
 		cost=5
@@ -75,8 +72,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_fazhanbunengduan
-				icon = GFX_goal_unknown
-		x=69
+		icon=GFX_goal_unknown
+		x=55
 		y=3
 		prerequisite={focus=AOR_ENG_A_new_atmosphere}
 		cost=5
@@ -91,8 +88,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_fuchinanfangmaoyi
-				icon = GFX_goal_unknown
-		x=67
+		icon=GFX_goal_unknown
+		x=53
 		y=4
 		prerequisite={focus=AOR_ENG_fazhanbunengduan}
 		mutually_exclusive={focus=AOR_ENG_xiangcundezhenxing }
@@ -108,8 +105,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_xiangcundezhenxing
-				icon = GFX_goal_unknown
-		x=71
+		icon=GFX_goal_unknown
+		x=57
 		y=4
 		prerequisite={focus=AOR_ENG_fazhanbunengduan}
 		mutually_exclusive={focus=AOR_ENG_fuchinanfangmaoyi }
@@ -125,8 +122,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jiaqiangyugeguowanglai
-				icon = GFX_goal_unknown
-		x=69
+		icon=GFX_goal_unknown
+		x=55
 		y=5
 		prerequisite={focus=AOR_ENG_fuchinanfangmaoyi focus=AOR_ENG_xiangcundezhenxing }
 		cost=5
@@ -141,8 +138,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jiaqiangqiyejiadiwei
-				icon = GFX_goal_unknown
-		x=78
+		icon=GFX_goal_unknown
+		x=64
 		y=3
 		prerequisite={focus=AOR_ENG_A_new_atmosphere}
 		cost=5
@@ -157,8 +154,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_quebaogongrenwending
-				icon = GFX_goal_unknown
-		x=75
+		icon=GFX_goal_unknown
+		x=61
 		y=4
 		prerequisite={focus=AOR_ENG_jiaqiangqiyejiadiwei}
 		mutually_exclusive={focus=AOR_ENG_fangkuangongzuojianguan }
@@ -174,8 +171,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_fangkuangongzuojianguan
-				icon = GFX_goal_unknown
-		x=81
+		icon=GFX_goal_unknown
+		x=67
 		y=4
 		prerequisite={focus=AOR_ENG_jiaqiangqiyejiadiwei}
 		mutually_exclusive={focus=AOR_ENG_quebaogongrenwending }
@@ -191,8 +188,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jingjikaoqiye
-				icon = GFX_goal_unknown
-		x=81
+		icon=GFX_goal_unknown
+		x=67
 		y=5
 		prerequisite={focus=AOR_ENG_fangkuangongzuojianguan}
 		cost=5
@@ -207,8 +204,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yaoqingqiyejinzhuzhimindi
-				icon = GFX_goal_unknown
-		x=81
+		icon=GFX_goal_unknown
+		x=67
 		y=7
 		prerequisite={focus=AOR_ENG_jingjikaoqiye}
 		cost=5
@@ -223,8 +220,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_xiudingyibaofaan
-				icon = GFX_goal_unknown
-		x=73
+		icon=GFX_goal_unknown
+		x=59
 		y=5
 		prerequisite={focus=AOR_ENG_quebaogongrenwending}
 		cost=5
@@ -239,8 +236,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jiujituiwulaobing
-				icon = GFX_goal_unknown
-		x=77
+		icon=GFX_goal_unknown
+		x=63
 		y=5
 		prerequisite={focus=AOR_ENG_quebaogongrenwending}
 		cost=5
@@ -255,8 +252,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_tuiwujunrenzaijiuye
-				icon = GFX_goal_unknown
-		x=78
+		icon=GFX_goal_unknown
+		x=64
 		y=7
 		prerequisite={focus=AOR_ENG_jiujituiwulaobing focus=AOR_ENG_jingjikaoqiye }
 		cost=5
@@ -271,8 +268,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jieshourenminyijian
-				icon = GFX_goal_unknown
-		x=75
+		icon=GFX_goal_unknown
+		x=61
 		y=6
 		prerequisite={focus=AOR_ENG_xiudingyibaofaan}
 		cost=5
@@ -287,8 +284,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_gaigegongshizhidu
-				icon = GFX_goal_unknown
-		x=72
+		icon=GFX_goal_unknown
+		x=58
 		y=7
 		prerequisite={focus=AOR_ENG_xiudingyibaofaan}
 		cost=5
@@ -303,8 +300,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_huifuyuanqi
-				icon = GFX_goal_unknown
-		x=77
+		icon=GFX_goal_unknown
+		x=63
 		y=8
 		prerequisite={focus=AOR_ENG_tuiwujunrenzaijiuye}
 		prerequisite={focus=AOR_ENG_gaigegongshizhidu focus=AOR_ENG_yaoqingqiyejinzhuzhimindi }
@@ -320,8 +317,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_wendingguojiahaobanshi
-				icon = GFX_goal_unknown
-		x=86
+		icon=GFX_goal_unknown
+		x=72
 		y=3
 		prerequisite={focus=AOR_ENG_dadanxingdong}
 		cost=5
@@ -336,8 +333,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yidairendeshiming
-				icon = GFX_goal_unknown
-		x=86
+		icon=GFX_goal_unknown
+		x=72
 		y=4
 		prerequisite={focus=AOR_ENG_wendingguojiahaobanshi}
 		cost=5
@@ -352,8 +349,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_aiguoduwu
-				icon = GFX_goal_unknown
-		x=86
+		icon=GFX_goal_unknown
+		x=72
 		y=5
 		prerequisite={focus=AOR_ENG_wendingguojiahaobanshi}
 		cost=5
@@ -368,8 +365,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_wendingfeizhou
-				icon = GFX_goal_unknown
-		x=91
+		icon=GFX_goal_unknown
+		x=77
 		y=5
 		prerequisite={focus=AOR_ENG_dadanxingdong}
 		cost=5
@@ -384,8 +381,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_2c_plan
-				icon = GFX_goal_unknown
-		x=89
+		icon=GFX_goal_unknown
+		x=75
 		y=6
 		prerequisite={focus=AOR_ENG_aiguoduwu}
 		prerequisite={focus=AOR_ENG_wendingfeizhou}
@@ -401,8 +398,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yushimozijiangjunxieshang
-				icon = GFX_goal_unknown
-		x=85
+		icon=GFX_goal_unknown
+		x=71
 		y=7
 		prerequisite={focus=AOR_ENG_2c_plan}
 		cost=5
@@ -417,8 +414,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_tinghaole_fuade
-				icon = GFX_goal_unknown
-		x=85
+		icon=GFX_goal_unknown
+		x=71
 		y=8
 		prerequisite={focus=AOR_ENG_yushimozijiangjunxieshang}
 		cost=5
@@ -433,8 +430,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_qiangzhengtudi
-				icon = GFX_goal_unknown
-		x=89
+		icon=GFX_goal_unknown
+		x=75
 		y=7
 		prerequisite={focus=AOR_ENG_2c_plan}
 		cost=5
@@ -449,8 +446,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_kaifayantukuangcang
-				icon = GFX_goal_unknown
-		x=93
+		icon=GFX_goal_unknown
+		x=79
 		y=7
 		prerequisite={focus=AOR_ENG_2c_plan}
 		cost=5
@@ -465,8 +462,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yanxiancunzhenfazhan
-				icon = GFX_goal_unknown
-		x=93
+		icon=GFX_goal_unknown
+		x=79
 		y=8
 		prerequisite={focus=AOR_ENG_kaifayantukuangcang}
 		cost=5
@@ -481,8 +478,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_tigaojihuayouxianji
-				icon = GFX_goal_unknown
-		x=89
+		icon=GFX_goal_unknown
+		x=75
 		y=9
 		prerequisite={focus=AOR_ENG_tinghaole_fuade}
 		prerequisite={focus=AOR_ENG_yanxiancunzhenfazhan}
@@ -499,8 +496,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_guojiajihua
-				icon = GFX_goal_unknown
-		x=82
+		icon=GFX_goal_unknown
+		x=68
 		y=11
 		prerequisite={focus=AOR_ENG_huifuyuanqi}
 		prerequisite={focus=AOR_ENG_tigaojihuayouxianji}
@@ -516,8 +513,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jieshouyindulaodongli
-				icon = GFX_goal_unknown
-		x=79
+		icon=GFX_goal_unknown
+		x=65
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -532,8 +529,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jiaqianglianbaomaoyi
-				icon = GFX_goal_unknown
-		x=81
+		icon=GFX_goal_unknown
+		x=67
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -548,8 +545,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_lengzhanchoulao
-				icon = GFX_goal_unknown
-		x=83
+		icon=GFX_goal_unknown
+		x=69
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -564,8 +561,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_fazhanbentujiaoyu
-				icon = GFX_goal_unknown
-		x=85
+		icon=GFX_goal_unknown
+		x=71
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -580,8 +577,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_kaishexuexiao
-				icon = GFX_goal_unknown
-		x=84
+		icon=GFX_goal_unknown
+		x=70
 		y=13
 		prerequisite={focus=AOR_ENG_lengzhanchoulao}
 		prerequisite={focus=AOR_ENG_lengzhanchoulao}
@@ -599,8 +596,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_jiaqiangmengyoutuanjie
-				icon = GFX_goal_unknown
-		x=80
+		icon=GFX_goal_unknown
+		x=66
 		y=13
 		prerequisite={focus=AOR_ENG_jieshouyindulaodongli}
 		prerequisite={focus=AOR_ENG_jiaqianglianbaomaoyi}
@@ -617,8 +614,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_xietongfazhanlinian
-				icon = GFX_goal_unknown
-		x=80
+		icon=GFX_goal_unknown
+		x=66
 		y=14
 		prerequisite={focus=AOR_ENG_jiaqiangmengyoutuanjie}
 		cost=5
@@ -633,8 +630,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_shijiekewanglodon
-				icon = GFX_goal_unknown
-		x=84
+		icon=GFX_goal_unknown
+		x=70
 		y=14
 		prerequisite={focus=AOR_ENG_kaishexuexiao}
 		cost=5
@@ -649,8 +646,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yongshifanrongbuliedian
-				icon = GFX_goal_unknown
-		x=82
+		icon=GFX_goal_unknown
+		x=68
 		y=15
 		prerequisite={focus=AOR_ENG_xietongfazhanlinian focus=AOR_ENG_shijiekewanglodon }
 		cost=5
@@ -665,8 +662,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dabuliedian_fengyupiaoyao
-				icon = GFX_goal_unknown
-		x=41
+		icon=GFX_goal_AOR_ENG_dabuliedian_fengyupiaoyao
+		x=27
 		y=0
 		cost=5
 		ai_will_do={
@@ -680,75 +677,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id46
-				icon = GFX_goal_unknown
-		x=47
+		icon=GFX_goal_AOR_ENG_id46
+		x=31
 		y=1
 		prerequisite={focus=AOR_ENG_dabuliedian_fengyupiaoyao}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=AOR_ENG_id47
-				icon = GFX_goal_unknown
-		x=52
-		y=1
-		prerequisite={focus=AOR_ENG_dabuliedian_fengyupiaoyao}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=AOR_ENG_id48
-				icon = GFX_goal_unknown
-		x=57
-		y=1
-		prerequisite={focus=AOR_ENG_dabuliedian_fengyupiaoyao}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=AOR_ENG_id49
-				icon = GFX_goal_unknown
-		x=52
-		y=2
-		prerequisite={focus=AOR_ENG_id47}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=AOR_ENG_dadanxingdong1
-				icon = GFX_goal_unknown
-		x=59
-		y=2
-		prerequisite={focus=AOR_ENG_id48}
-		mutually_exclusive={focus=AOR_ENG_id61 }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -761,8 +693,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong3
-				icon = GFX_goal_unknown
-		x=45
+		icon=GFX_goal_AOR_ENG_dadanxingdong3
+		x=29
 		y=2
 		prerequisite={focus=AOR_ENG_id46}
 		cost=5
@@ -777,8 +709,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong4
-				icon = GFX_goal_unknown
-		x=49
+		icon=GFX_goal_AOR_ENG_dadanxingdong4
+		x=33
 		y=2
 		prerequisite={focus=AOR_ENG_id46}
 		cost=5
@@ -793,8 +725,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong5
-				icon = GFX_goal_unknown
-		x=47
+		icon=GFX_goal_AOR_ENG_dadanxingdong5
+		x=31
 		y=3
 		prerequisite={focus=AOR_ENG_dadanxingdong3 focus=AOR_ENG_dadanxingdong4 }
 		cost=5
@@ -809,8 +741,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong6
-				icon = GFX_goal_unknown
-		x=45
+		icon=GFX_goal_AOR_ENG_dadanxingdong6
+		x=29
 		y=4
 		prerequisite={focus=AOR_ENG_dadanxingdong5}
 		mutually_exclusive={focus=AOR_ENG_dadanxingdong8 }
@@ -826,8 +758,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong7
-				icon = GFX_goal_unknown
-		x=45
+		icon=GFX_goal_AOR_ENG_dadanxingdong7
+		x=29
 		y=5
 		prerequisite={focus=AOR_ENG_dadanxingdong6}
 		cost=5
@@ -842,8 +774,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong8
-				icon = GFX_goal_unknown
-		x=49
+		icon=GFX_goal_AOR_ENG_dadanxingdong8
+		x=33
 		y=4
 		prerequisite={focus=AOR_ENG_dadanxingdong5}
 		mutually_exclusive={focus=AOR_ENG_dadanxingdong6 }
@@ -859,8 +791,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_dadanxingdong9
-				icon = GFX_goal_unknown
-		x=49
+		icon=GFX_goal_AOR_ENG_dadanxingdong9
+		x=33
 		y=5
 		prerequisite={focus=AOR_ENG_dadanxingdong8}
 		cost=5
@@ -875,8 +807,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id60
-				icon = GFX_goal_unknown
-		x=47
+		icon=GFX_goal_AOR_ENG_id60
+		x=31
 		y=6
 		prerequisite={focus=AOR_ENG_dadanxingdong7 focus=AOR_ENG_dadanxingdong9 }
 		cost=5
@@ -890,26 +822,9 @@ focus_tree={
 		}
 	}
 	focus={
-		id=AOR_ENG_id61
-				icon = GFX_goal_unknown
-		x=55
-		y=2
-		prerequisite={focus=AOR_ENG_id48}
-		mutually_exclusive={focus=AOR_ENG_dadanxingdong1 }
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
 		id=AOR_ENG_posuitongmeng
-				icon = GFX_goal_unknown
-		x=32
+		icon=GFX_goal_AOR_ENG_posuitongmeng
+		x=18
 		y=1
 		prerequisite={focus=AOR_ENG_dabuliedian_fengyupiaoyao}
 		cost=5
@@ -924,8 +839,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id63
-				icon = GFX_goal_unknown
-		x=26
+		icon=GFX_goal_AOR_ENG_id63
+		x=18
 		y=2
 		prerequisite={focus=AOR_ENG_posuitongmeng}
 		cost=5
@@ -940,8 +855,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yuandongqingbaozhan
-				icon = GFX_goal_unknown
-		x=37
+		icon=GFX_goal_AOR_ENG_yuandongqingbaozhan
+		x=25
 		y=2
 		prerequisite={focus=AOR_ENG_posuitongmeng}
 		cost=5
@@ -956,28 +871,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_liyuanhong
-				icon = GFX_goal_unknown
-		x=36
-		y=3
+		icon=GFX_goal_AOR_ENG_liyuanhong
+		x=25
+		y=4
 		prerequisite={focus=AOR_ENG_yuandongqingbaozhan}
-		mutually_exclusive={focus=AOR_ENG_bairi }
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=AOR_ENG_bairi
-				icon = GFX_goal_unknown
-		x=39
-		y=3
-		prerequisite={focus=AOR_ENG_yuandongqingbaozhan}
-		mutually_exclusive={focus=AOR_ENG_liyuanhong }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -990,8 +887,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_yinglianbangmingzhu
-				icon = GFX_goal_unknown
-		x=41
+		icon=GFX_goal_AOR_ENG_yinglianbangmingzhu
+		x=27
 		y=3
 		prerequisite={focus=AOR_ENG_yuandongqingbaozhan}
 		cost=5
@@ -1006,8 +903,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_rishengzhidi
-				icon = GFX_goal_unknown
-		x=33
+		icon=GFX_goal_AOR_ENG_rishengzhidi
+		x=23
 		y=3
 		prerequisite={focus=AOR_ENG_yuandongqingbaozhan}
 		cost=5
@@ -1021,9 +918,9 @@ focus_tree={
 		}
 	}
 	focus={
-		id=AOR_ENGganshemisaoluan
-				icon = GFX_goal_unknown
-		x=31
+		id=AOR_ENG_yingxiangeguo
+		icon=GFX_goal_AOR_ENG_yingxiangeguo
+		x=21
 		y=4
 		prerequisite={focus=AOR_ENG_rishengzhidi}
 		cost=5
@@ -1037,26 +934,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=AOR_ENG_yingxiangeguo
-				icon = GFX_goal_unknown
-		x=31
-		y=5
-		prerequisite={focus=AOR_ENGganshemisaoluan}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
 		id=AOR_ENG_gongtongfangyu
-				icon = GFX_goal_unknown
-		x=35
-		y=4
+		icon=GFX_goal_AOR_ENG_gongtongfangyu
+		x=23
+		y=6
 		prerequisite={focus=AOR_ENG_rishengzhidi}
 		mutually_exclusive={focus=AOR_ENG_rising_star }
 		cost=5
@@ -1071,10 +952,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_rising_star
-				icon = GFX_goal_unknown
-		x=37
-		y=4
-		prerequisite={focus=AOR_ENG_liyuanhong focus=AOR_ENG_bairi }
+		icon=GFX_goal_AOR_ENG_rising_star
+		x=25
+		y=6
+		prerequisite={focus=AOR_ENG_liyuanhong}
 		mutually_exclusive={focus=AOR_ENG_gongtongfangyu }
 		cost=5
 		ai_will_do={
@@ -1088,8 +969,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_buduande_manpower
-				icon = GFX_goal_unknown
-		x=41
+		icon=GFX_goal_AOR_ENG_buduande_manpower
+		x=27
 		y=5
 		prerequisite={focus=AOR_ENG_yinglianbangmingzhu}
 		cost=5
@@ -1104,11 +985,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id75
-				icon = GFX_goal_unknown
-		x=23
+		icon=GFX_goal_AOR_ENG_id75
+		x=15
 		y=3
 		prerequisite={focus=AOR_ENG_id63}
-		mutually_exclusive={focus=AOR_ENG_id76 }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -1121,11 +1001,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id76
-				icon = GFX_goal_unknown
-		x=25
+		icon=GFX_goal_AOR_ENG_id76
+		x=17
 		y=3
 		prerequisite={focus=AOR_ENG_id63}
-		mutually_exclusive={focus=AOR_ENG_id75 }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -1138,8 +1017,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id77
-				icon = GFX_goal_unknown
-		x=28
+		icon=GFX_goal_AOR_ENG_id77
+		x=19
 		y=3
 		prerequisite={focus=AOR_ENG_id63}
 		cost=5
@@ -1154,8 +1033,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id78
-				icon = GFX_goal_unknown
-		x=28
+		icon=GFX_goal_AOR_ENG_id78
+		x=19
 		y=4
 		prerequisite={focus=AOR_ENG_id77}
 		cost=5
@@ -1170,8 +1049,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id79
-				icon = GFX_goal_unknown
-		x=24
+		icon=GFX_goal_AOR_ENG_id79
+		x=16
 		y=4
 		prerequisite={focus=AOR_ENG_id75 focus=AOR_ENG_id76 }
 		cost=5
@@ -1186,8 +1065,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id80
-				icon = GFX_goal_unknown
-		x=18
+		icon=GFX_goal_AOR_ENG_id80
+		x=12
 		y=2
 		prerequisite={focus=AOR_ENG_posuitongmeng}
 		cost=5
@@ -1202,8 +1081,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id81
-				icon = GFX_goal_unknown
-		x=15
+		icon=GFX_goal_AOR_ENG_id81
+		x=9
 		y=3
 		prerequisite={focus=AOR_ENG_id80}
 		cost=5
@@ -1218,11 +1097,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id82
-				icon = GFX_goal_unknown
-		x=18
+		icon=GFX_goal_AOR_ENG_id82
+		x=11
 		y=3
 		prerequisite={focus=AOR_ENG_id80}
-		mutually_exclusive={focus=AOR_ENG_id83 }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -1235,11 +1113,10 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id83
-				icon = GFX_goal_unknown
-		x=20
+		icon=GFX_goal_AOR_ENG_id83
+		x=13
 		y=3
 		prerequisite={focus=AOR_ENG_id80}
-		mutually_exclusive={focus=AOR_ENG_id82 }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -1252,8 +1129,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id84
-				icon = GFX_goal_unknown
-		x=19
+		icon=GFX_goal_AOR_ENG_id84
+		x=12
 		y=4
 		prerequisite={focus=AOR_ENG_id83 focus=AOR_ENG_id82 }
 		cost=5
@@ -1268,8 +1145,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id85
-				icon = GFX_goal_unknown
-		x=8
+		icon=GFX_goal_AOR_ENG_id85
+		x=4
 		y=2
 		prerequisite={focus=AOR_ENG_posuitongmeng}
 		cost=5
@@ -1284,8 +1161,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id86
-				icon = GFX_goal_unknown
-		x=12
+		icon=GFX_goal_AOR_ENG_id86
+		x=7
 		y=3
 		prerequisite={focus=AOR_ENG_id85}
 		cost=5
@@ -1300,8 +1177,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id87
-				icon = GFX_goal_unknown
-		x=8
+		icon=GFX_goal_AOR_ENG_id87
+		x=5
 		y=3
 		prerequisite={focus=AOR_ENG_id85}
 		cost=5
@@ -1316,9 +1193,9 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id88
-				icon = GFX_goal_unknown
-		x=8
-		y=5
+		icon=GFX_goal_AOR_ENG_id88
+		x=5
+		y=4
 		prerequisite={focus=AOR_ENG_id87}
 		cost=5
 		ai_will_do={
@@ -1332,8 +1209,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id89
-				icon = GFX_goal_unknown
-		x=6
+		icon=GFX_goal_AOR_ENG_id89
+		x=3
 		y=3
 		prerequisite={focus=AOR_ENG_id85}
 		mutually_exclusive={focus=AOR_ENG_id90 }
@@ -1349,8 +1226,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id90
-				icon = GFX_goal_unknown
-		x=2
+		icon=GFX_goal_AOR_ENG_id90
+		x=1
 		y=3
 		prerequisite={focus=AOR_ENG_id85}
 		mutually_exclusive={focus=AOR_ENG_id89 }
@@ -1366,9 +1243,9 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id91
-				icon = GFX_goal_unknown
+		icon=GFX_goal_AOR_ENG_id91
 		x=0
-		y=5
+		y=4
 		prerequisite={focus=AOR_ENG_id90}
 		cost=5
 		ai_will_do={
@@ -1382,8 +1259,8 @@ focus_tree={
 	}
 	focus={
 		id=AOR_ENG_id92
-				icon = GFX_goal_unknown
-		x=3
+		icon=GFX_goal_AOR_ENG_id92
+		x=2
 		y=4
 		prerequisite={focus=AOR_ENG_id90}
 		cost=5

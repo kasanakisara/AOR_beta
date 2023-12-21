@@ -1002,4 +1002,268 @@ spriteType = {
   name = "GFX_AOR_supernews_2"
   texturefile = "gfx/AOR_supernews/pic/supernews_2.png"
   }
+  
+  ####英国外交线国策图标###
+   spriteType = {
+  name = "GFX_goal_AOR_ENG_dabuliedian_fengyupiaoyao"
+  texturefile = "gfx/interface/goals/AOR_ENG_dabuliedian_fengyupiaoyao.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id46"
+  texturefile = "gfx/interface/goals/AOR_ENG_id46.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong3"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong3.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong4"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong4.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong5"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong5.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong6"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong6.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong7"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong7.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong8"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong8.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_dadanxingdong9"
+  texturefile = "gfx/interface/goals/AOR_ENG_dadanxingdong9.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id60"
+  texturefile = "gfx/interface/goals/AOR_ENG_id60.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_posuitongmeng"
+  texturefile = "gfx/interface/goals/AOR_ENG_posuitongmeng.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id63"
+  texturefile = "gfx/interface/goals/AOR_ENG_id63.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_yuandongqingbaozhan"
+  texturefile = "gfx/interface/goals/AOR_ENG_yuandongqingbaozhan.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_liyuanhong"
+  texturefile = "gfx/interface/goals/AOR_ENG_liyuanhong.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_bairi"
+  texturefile = "gfx/interface/goals/AOR_ENG_bairi.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_yinglianbangmingzhu"
+  texturefile = "gfx/interface/goals/AOR_ENG_yinglianbangmingzhu.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_rishengzhidi"
+  texturefile = "gfx/interface/goals/AOR_ENG_rishengzhidi.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENGganshemisaoluan"
+  texturefile = "gfx/interface/goals/AOR_ENGganshemisaoluan.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_yingxiangeguo"
+  texturefile = "gfx/interface/goals/AOR_ENG_yingxiangeguo.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_gongtongfangyu"
+  texturefile = "gfx/interface/goals/AOR_ENG_gongtongfangyu.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_rising_star"
+  texturefile = "gfx/interface/goals/AOR_ENG_rising_star.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_buduande_manpower"
+  texturefile = "gfx/interface/goals/AOR_ENG_buduande_manpower.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id75"
+  texturefile = "gfx/interface/goals/AOR_ENG_id75.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id76"
+  texturefile = "gfx/interface/goals/AOR_ENG_id76.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id77"
+  texturefile = "gfx/interface/goals/AOR_ENG_id77.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id78"
+  texturefile = "gfx/interface/goals/AOR_ENG_id78.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id79"
+  texturefile = "gfx/interface/goals/AOR_ENG_id79.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id80"
+  texturefile = "gfx/interface/goals/AOR_ENG_id80.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id81"
+  texturefile = "gfx/interface/goals/AOR_ENG_id81.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id82"
+  texturefile = "gfx/interface/goals/AOR_ENG_id82.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id83"
+  texturefile = "gfx/interface/goals/AOR_ENG_id83.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id84"
+  texturefile = "gfx/interface/goals/AOR_ENG_id84.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id85"
+  texturefile = "gfx/interface/goals/AOR_ENG_id85.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id86"
+  texturefile = "gfx/interface/goals/AOR_ENG_id86.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id87"
+  texturefile = "gfx/interface/goals/AOR_ENG_id87.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id88"
+  texturefile = "gfx/interface/goals/AOR_ENG_id88.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id89"
+  texturefile = "gfx/interface/goals/AOR_ENG_id89.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id90"
+  texturefile = "gfx/interface/goals/AOR_ENG_id90.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id91"
+  texturefile = "gfx/interface/goals/AOR_ENG_id91.png"
+ }
+ spriteType = {
+  name = "GFX_goal_AOR_ENG_id92"
+  texturefile = "gfx/interface/goals/AOR_ENG_id92.png"
+ }
+ #比利时国策图标
+  spriteType = {
+  name = "GFX_goal_BEL_People_exile_who_cry_with"
+  texturefile = "gfx/interface/goals/BEL_People_exile_who_cry_with.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_last_hope"
+  texturefile = "gfx/interface/goals/BEL_last_hope.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Place_of_burial"
+  texturefile = "gfx/interface/goals/BEL_Place_of_burial.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Long_way_home"
+  texturefile = "gfx/interface/goals/BEL_Long_way_home.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_gears_that_eat_people"
+  texturefile = "gfx/interface/goals/BEL_gears_that_eat_people.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_High_quality_citizen"
+  texturefile = "gfx/interface/goals/BEL_High_quality_citizen.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Country_of_Belgians"
+  texturefile = "gfx/interface/goals/BEL_Country_of_Belgians.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Minor_concession"
+  texturefile = "gfx/interface/goals/BEL_Minor_concession.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Elite_first"
+  texturefile = "gfx/interface/goals/BEL_Elite_first.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Building_Congo"
+  texturefile = "gfx/interface/goals/BEL_Building_Congo.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Crush_rebels"
+  texturefile = "gfx/interface/goals/BEL_Crush_rebels.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Slaves_in_cornfields"
+  texturefile = "gfx/interface/goals/BEL_Slaves_in_cornfields.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Only_heart_of_restoration"
+  texturefile = "gfx/interface/goals/BEL_Only_heart_of_restoration.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Rwanda_question"
+  texturefile = "gfx/interface/goals/BEL_Rwanda_question.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_to_know_how_much_hate"
+  texturefile = "gfx/interface/goals/BEL_to_know_how_much_hate.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Red_chaos_mountains_flowers"
+  texturefile = "gfx/interface/goals/BEL_Red_chaos_mountains_flowers.png"
+ }
+ ####阿工团第二阶段国策树注册
+  spriteType = {
+  name = "GFX_goal_ORA_Sunrise_of_victory"
+  texturefile = "gfx/interface/goals/ORA_Sunrise_of_victory.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_undone"
+  texturefile = "gfx/interface/goals/ORA_undone.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_De_war_status"
+  texturefile = "gfx/interface/goals/ORA_De_war_status.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_home_rebuilding"
+  texturefile = "gfx/interface/goals/ORA_home_rebuilding.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_revival_civilian_industry"
+  texturefile = "gfx/interface/goals/ORA_revival_civilian_industry.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Pacify_the_masses"
+  texturefile = "gfx/interface/goals/ORA_Pacify_the_masses.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Wipe_out_reactionary_forces"
+  texturefile = "gfx/interface/goals/ORA_Wipe_out_reactionary_forces.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_worker_pickets"
+  texturefile = "gfx/interface/goals/ORA_worker_pickets.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Look_forward_future"
+  texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
+ }
 }
