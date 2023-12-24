@@ -89,7 +89,7 @@ country_event = {
 	}
 }
 
-#妇女的解放！！！！！！！！！！！！！！！！！！
+#妇女的解放 （缺少文案）
 country_event = { 
 	id = BAV.7
 	title = BAV.7.t
@@ -264,7 +264,7 @@ country_event = {
 
  }
 
- 
+#欧根·莱文
 country_event = {
 	id = BAV.15
 	title = BAV.15.t
@@ -278,7 +278,7 @@ country_event = {
         } 
 
  }
- #纪律的重要性！！！！
+ #纪律的重要性（缺少文案）
 country_event = {
 	id = BAV.16
 	title = BAV.16.t
@@ -293,7 +293,7 @@ country_event = {
 
  }
 
-#迫近
+#战鼓渐进
 country_event = {
 	id = BAV.17
 	title = BAV.17.t
@@ -331,6 +331,7 @@ country_event = {
         } 
 
  }
+#这就是民主
 country_event = {
 	id = BAV.50
 	title = BAV.50.t
@@ -361,7 +362,8 @@ country_event = {
         } 
 
  }
- 
+
+#德意志社会主义联邦成立
  country_event = {
 	id = BAV.52
 	title = BAV.52.t
@@ -373,10 +375,14 @@ country_event = {
 	option = {
 		name = BAV.52.a
 		set_cosmetic_tag = BAV_GER_1
+			hidden_effect = {
+				news_event = AOR_news.57
+			}
         } 
 
  }
  
+
  #####思想革命！非梦
  country_event = {
 	id = BAV.53
@@ -388,6 +394,214 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.53.a
+        } 
+
+ }
+ 
+ #####法兰克福已入我手
+ country_event = {
+	id = BAV.54
+	title = BAV.54.t
+	desc = BAV.54.d
+	picture = GFX_BAV.54_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.54.a
+        } 
+
+ }
+ 
+ #####柏林已入我手
+ country_event = {
+	id = BAV.55
+	title = BAV.55.t
+	desc = BAV.55.d
+	picture = GFX_BAV.55_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.55.a
+        } 
+
+ }
+ ·
+#####战后-倍倍尔广场
+ country_event = {
+	id = BAV.56
+	title = BAV.56.t
+	desc = BAV.56.d
+	picture = GFX_BAV.56_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.56.a
+        } 
+
+ }
+ 
+#####战后-台尔曼的家
+ country_event = {
+	id = BAV.57
+	title = BAV.57.t
+	desc = BAV.57.d
+	picture = GFX_BAV.57_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.57.a
+        } 
+
+ }
+ 
+#####战后-梅林去撸猫
+ country_event = {
+	id = BAV.58
+	title = BAV.58.t
+	desc = BAV.58.d
+	picture = GFX_BAV.58_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.58.a
+        } 
+
+ }
+ 
+  
+#####南石荷与南德商谈-1
+ country_event = {
+	id = BAV.59
+	title = BAV.59.t
+	desc = BAV.59.d
+	picture = GFX_BAV.59_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.59.a
+        } 
+
+ }
+ 
+ #####南石荷与南德商谈-2
+ country_event = {
+	id = BAV.60
+	title = BAV.60.t
+	desc = BAV.60.d
+	picture = GFX_BAV.60_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.60.a
+		annex_country = { target = SHL transfer_troops = yes }
+        } 
+
+ }
+ #####柏林社民党商谈-1
+ country_event = {
+	id = BAV.61
+	title = BAV.61.t
+	desc = BAV.61.d
+	picture = GFX_BAV.61_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.61.a
+        } 
+
+ }
+ #####柏林社民党商谈-2
+ country_event = {
+	id = BAV.62
+	title = BAV.62.t
+	desc = BAV.62.d
+	picture = GFX_BAV.62_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.62.a
+        } 
+
+ }
+ 
+ #####组建VKPD
+ country_event = {
+	id = BAV.63
+	title = BAV.63.t
+	desc = BAV.63.d
+	picture = GFX_BAV.63_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.63.a
+		 hidden_effect = {
+				news_event = AOR_news.54
+			}
+        } 
+
+ }
+ 
+ #####未来路线选择-1
+ country_event = {
+	id = BAV.64
+	title = BAV.64.t
+	desc = BAV.64.d
+	picture = GFX_BAV.64_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.64.a
+			country_event = BAV.65
+        } 
+
+ }
+ 
+ #####未来路线选择-2
+ country_event = {
+	id = BAV.65
+	title = BAV.65.t
+	desc = BAV.65.d
+	picture = GFX_BAV.65_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.65.a
+		hidden_effect = {
+				news_event = AOR_news.55
+			}
+        } 
+	option = {
+		name = BAV.65.b
+		hidden_effect = {
+				news_event = AOR_news.56
+			}
+        } 
+ }
+ 
+#####梅克伦堡接受整合
+ country_event = {
+	id = BAV.66
+	title = BAV.66.t
+	desc = BAV.66.d
+	picture = GFX_BAV.66_pic
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.66.a
+		annex_country = { target = MEK transfer_troops = yes }
         } 
 
  }
