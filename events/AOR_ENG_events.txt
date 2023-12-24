@@ -253,3 +253,17 @@ news_event = { #xinshijie
 		name = ENG.17.a
 	}
 }
+country_event = { #xinshijie
+	id = ENG.1145141919810
+	title = ENG.1145141919810.t
+	desc = ENG.1145141919810.d
+	picture = ENG.1145141919810.p
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.1145141919810.a
+		load_focus_tree = ENG_National_focus_2
+	}
+}

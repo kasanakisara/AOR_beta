@@ -670,34 +670,31 @@ country_event = {
 				add_state_core = 388
 				add_state_core = 386
 				add_manpower = 10000
-				load_oob = "CSA_Civilwar"
-
-				
-			USA = {
-			set_politics = {ruling_party = FRE_democratic}
-			create_country_leader = {
-			name = "Warren Gamaliel Harding"
-			desc = "POLITICS_Warren_Gamaliel_Harding_DESC"
-			picture = "Harding.dds"
-			expire = "1945.1.1"
-			ideology = liberalism
-				}
-			set_popularities = {
-				FRE_democratic = 48
-				CON_democratic = 34
-				SOC_democratic = 17
-				AUT_democratic = 3
-				Marxism = 1
-				
-				}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-				}
+				load_oob = "CSA_Civilwar"		
 			}
-			country_event = {id = usa.1000 days = 75}
-			
-		
+			USA = {
+				set_politics = {ruling_party = FRE_democratic}
+				create_country_leader = {
+				name = "Warren Gamaliel Harding"
+				desc = "POLITICS_Warren_Gamaliel_Harding_DESC"
+				picture = "Harding.dds"
+				expire = "1945.1.1"
+				ideology = liberalism
+					}
+				set_popularities = {
+					FRE_democratic = 48
+					CON_democratic = 34
+					SOC_democratic = 17
+					AUT_democratic = 3
+					Marxism = 1
+					
+					}
+				declare_war_on = {
+					target = CSA
+					type = civil_war
+					}
+					country_event = {id = usa.1000 days = 75}
+				}
 		}
 	}
 }
@@ -814,20 +811,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
-country_event = {
-	id = USA.10000 
-	title = USA.10000.t
-	desc = USA.10000.d
-	picture = GFX_USA_event_10000
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name=USA.10000.a
-		add_manpower=10000
 
-	}
-	
-}
 country_event = {
 	id = USA.5000
 	title = USA.5000.t
@@ -879,6 +863,8 @@ country_event = {
 			US2 = {
 				load_oob = "US2_Civilwar"
 				load_oob = "US2_Civilwar"
+				country_event = {id = USA.5002 days = 90}
+
 			}
 		}
 
@@ -961,16 +947,31 @@ country_event = {
 				load_oob = "US6_Civilwar"
 				load_oob = "US6_Civilwar"
 				create_faction = Against_the_Panxing_Union
-				US6 = {
-				add_to_faction = US8
-				}
+				
+
 			}
 			US8 = {
 				load_oob = "US8_Civilwar"
 				load_oob = "US6_Civilwar"
+				US6 = {
+					add_to_faction = US8
+				}
 			}
 		}
 
 	}
 }
-####记得！105-109已经被科技事件用了！##########
+country_event = {
+	id = USA.10000 
+	title = USA.10000.t
+	desc = USA.10000.d
+	picture = GFX_USA_event_10000
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.10000.a
+		add_manpower=10000
+
+	}
+	
+}
