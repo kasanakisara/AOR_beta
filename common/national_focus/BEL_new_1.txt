@@ -21,7 +21,7 @@ focus_tree={
 		}
 		completion_reward={
 		add_ideas = flood_away
-		country_event = BEL.1
+		country_event = BEL.21
 		}
 	}
 	focus={
@@ -73,7 +73,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-		 country_event = BEL.21
+		 country_event = BEL.22
 			add_tech_bonus = {
 				name = tech_engineers
 				bonus = 1
