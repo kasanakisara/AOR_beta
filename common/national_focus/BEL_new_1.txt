@@ -30,11 +30,14 @@ focus_tree={
 		x=7
 		y=1
 		prerequisite={focus=BEL_People_exile_who_cry_with}
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
 		available_if_capitulated=yes
+		available = {
+			has_country_flag = BEL_election_1919
+		}
 		search_filters={
 		}
 		completion_reward={
@@ -47,7 +50,7 @@ focus_tree={
 		x=2
 		y=1
 		prerequisite={focus=BEL_People_exile_who_cry_with}
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
@@ -65,7 +68,7 @@ focus_tree={
 		x=12
 		y=1
 		prerequisite={focus=BEL_People_exile_who_cry_with}
-		cost=10
+		cost=5
 		ai_will_do={
 			factor=1
 		}
