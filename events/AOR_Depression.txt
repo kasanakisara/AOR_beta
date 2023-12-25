@@ -24,11 +24,8 @@ country_event = {
 		hidden_effect = {
 			add_ideas = Depression_calls_1
 			}
-		}
-		CZE = country_event = {
-			id = CZE.1 days = 90
-		}
-		
+		CZE={country_event = {id = CZE.1 dyas = 90}}
 	}
+}	
 
 
