@@ -4,6 +4,23 @@
 
 add_namespace = BEL
 
+#1919年比利时大选
+country_event = {
+	id = BEL.1
+	title = BEL.1.t
+	desc = BEL.1.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	immediate = {
+	set_country_flag = BEL_election_1919
+     }
+	option = {
+		name = BEL.1.a
+
+	}
+
+}
+
 #归家之旅
 country_event = {
 	id = BEL.5
