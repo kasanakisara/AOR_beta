@@ -587,8 +587,10 @@
  PAL_Fascism_party:0 "巴勒斯坦圣战军"
  PAL_Marxism_party:0 "巴勒斯坦民族解放同盟"
  PAL_Marxism_party_long:0 "巴勒斯坦民族解放同盟"
- PAL_CON_democratic_party:0 "巴勒斯坦穆斯林最高理事会"
- PAL_CON_democratic_party_long:0 "巴勒斯坦穆斯林最高理事会"
+ PAL_CON_democratic_party:0 "巴勒斯坦国际托管委员会"
+ PAL_CON_democratic_party_long:0 "巴勒斯坦国际托管委员会"
+ PAL_ISL_democratic_party:0 "巴勒斯坦穆斯林理事会"
+ PAL_ISL_democratic_party_long:0 "巴勒斯坦穆斯林理事会"
  PAL_Absolutism_party:0 "巴勒斯坦保皇党"
  ISR_Marxism_party:0 "以色列共产党"
  ISR_CON_democratic_party:0 "以色列地工人党"
@@ -852,6 +854,9 @@
  Anarcho_desc:0 "自治生产"
  FIC_Marxism_party:0 "芬兰社民党左翼"
  FIC_Marxism_party_long:0 "芬兰社民党左翼"
+ MSP_CON_democratic_party:0 "美索不达米亚国际托管委员会"
+ MSP_CON_democratic_party_long:0 "美索不达米亚国际托管委员会"
+ 
 
  #####大不列颠及爱尔兰联合王国政党######
  ENG_Marxism_party:0 "英国共产党"

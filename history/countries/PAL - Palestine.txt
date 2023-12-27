@@ -61,19 +61,30 @@ set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+
 }
 set_popularities = {
 	CON_democratic = 40
+	ISL_democratic = 20
 	Fascism = 30
-	Marxism = 30
+	Marxism = 10
+}
+create_country_leader = {
+	name = "League of Nations"
+	desc = ""
+	picture = ac4um-9k4z7.dds
+	ideology = conservatism
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
 	name = "Ahmed Hilmi Pasha"
 	desc = ""
 	picture = GFX_portrait_Ahmed_Hilmi_Pasha
-	ideology = liberalism
+	ideology = islamdemcratic
 	traits = {
 		#
 	}

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = ENG
+		owner = PAL
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -17,7 +17,7 @@ state={
 			}
 		}
 		victory_points = {
-			1086 1 
+			1086 5 
 		}
 		victory_points = {
 			4206 1 
