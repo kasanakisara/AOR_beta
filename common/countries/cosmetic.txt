@@ -895,3 +895,7 @@ BAV_GER_1= {
 	color = rgb {125  13  24 }
 	color_ui = rgb { 125  13  24 }
 }
+OMA_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
