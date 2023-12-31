@@ -355,6 +355,14 @@ guiTypes = {
 				position = { x = 105 y = 55 }
 				quadTextureSprite = "GFX_pol_power_icon"
 			}
+
+			buttonType = {
+				name = "FRA_YIHUI_BUTTON_1"
+				position = { x = 105 y = 120 }
+				quadTextureSprite = "GFX_FRA_YIHUI_BUTTON_button"
+				#buttonFont = "hoi_24mbs"
+				#buttonText = "FRA_YIHUI_BUTTON"
+			}
 		
 			instantTextboxType = {
 				name = "focus_cost"
