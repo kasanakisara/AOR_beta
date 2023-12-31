@@ -1,7 +1,18 @@
 scripted_gui = { #面板打开按钮
 FRA_YIHUI_BUTTON_WINDOW = {
 		window_name = "FRA_YIHUI_BUTTON_WINDOW"
+		context_type = player_context
 		parent_window_token = politics_tab
+		visible = {
+			tag = FRA
+		}
+		effects = {
+		}
+	}
+	FRA_YIHUI_BUTTON_1 = {
+		window_name = "FRA_YIHUI_BUTTON_1"
+		context_type = player_context
+
 		visible = {
 			tag = FRA
 		}

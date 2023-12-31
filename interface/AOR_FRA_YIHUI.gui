@@ -1,6 +1,6 @@
 guiTypes = {#详细面板
 	containerWindowType = {
-		name = "FRA_YIHUI_WINDOW"
+		name = "FRA_YIHUI_WINDOW_1"
 		orientation = center
 		Origo = center
 		position = { x = 0 y = 0 }
@@ -11,36 +11,5 @@ guiTypes = {#详细面板
 			name = "blackground"
 			spriteType = "GFX_tiled_plain_bg"
 		}
-#标题
-		instantTextboxType = {
-			name = "FRA_YIHUI_titile"
-			position = { x = 0 y = 25 }
-			orientation = left_up
-			font = "hoi_36header"
-			text = "FRA_YIHUI_titile_text"
-			format = centre
-			maxWidth = 1600
-			maxHeight = 50
-		}
 
-#政治组织
-		buttonType = {
-            name = "Political_organization_button"
-            position = { x = 600 y = 80 }
-            quadTextureSprite = "GFX_event_option_entry"
-			buttonText = "Political_organization_"
-			buttonFont = "hoi_24header"
-            clicksound = click_close
-        }
-
-#政治立场
-        buttonType = {
-            name = "Political_stance_button"
-            position = { x = 700 y = 80 }
-            quadTextureSprite = "GFX_event_option_entry"
-			buttonText = "Political_stance_button"
-			buttonFont = "hoi_24header"
-            clicksound = click_close
-        }
-	}
 }
