@@ -1,4 +1,5 @@
 add_namespace = GRE
+
 country_event = {
 	id = GRE.1
 	title = GRE.1.t
@@ -11,6 +12,7 @@ country_event = {
 	}
     #那就这样吧  	
 	option = {
+		#希腊赢，土耳其宣战
 		name = GRE.1.a
 		news_event = {id = AOR_news.39}
 		GRE = {
@@ -33,10 +35,11 @@ country_event = {
 			}
 		country_event = { days = 90 id = TUR.1
 		}	
-		GRE = {leave_faction = Entente}
+		GRE = {leave_faction = Entente} #离开协约准备打仗
 	}	
 	
 	option = {
+		#土耳其赢
 	name = GRE.1.b
 	TUR = {
 		annex_country = {
@@ -55,12 +58,13 @@ country_event = {
 	}
 	GRE = {leave_faction = Entente}
 	country_event = { days = 90 id = GRE.2
-		}	
+		}	#希腊宣战
 	ai_chance = {
 		base = 40
 		}
 	}
 }
+#希腊宣战
 country_event = {
 	id = GRE.2
 	title = GRE.2.t
@@ -161,6 +165,7 @@ country_event = {#自卫成功
 		
 	}
 }
+#转整体
 country_event = {
 	id = GRE.5
 	title = GRE.5.t
@@ -171,6 +176,7 @@ country_event = {
     #那就这样吧  	
 	option = {
 		name = GRE.5.a
+		#20%变君主制
 		ai_chance = {
 			base = 20
 		}
@@ -189,6 +195,7 @@ country_event = {
 	set_cosmetic_tag = GRE_CON_1
 	}
 }
+#打南斯拉夫
 country_event = {
 	id = GRE.6
 	title = GRE.6.t
@@ -215,6 +222,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event GRE.6 option GRE.12.a"
 	}
 }
+#打南斯拉夫和平事件
 country_event = {
 	id = GRE.7
 	title = GRE.7.t
@@ -244,6 +252,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event GRE.7 option GRE.12.a"
 	}
 }
+#与匈牙利结盟
 country_event = {
 	id = GRE.8
 	title = GRE.8.t
@@ -273,6 +282,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event GRE.8 option GRE.12.a"
 	}
 }
+#开打匈牙利-希腊vs罗马尼亚-保加利亚-南斯拉夫
 country_event = {
 	id = GRE.9
 	title = GRE.9.t
@@ -293,6 +303,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event GRE.9 option GRE.12.a"
 	}
 }
+#与南斯拉夫结盟
 country_event = {
 	id = GRE.10
 	title = GRE.10.t
@@ -319,7 +330,7 @@ country_event = {
 		
 	}
 }
-
+#帮助南斯拉夫打达尔马提亚
 country_event = {
 	id = GRE.12
 	title = GRE.12.t
@@ -347,7 +358,7 @@ country_event = {
 		
 	}
 }
-
+#南斯拉夫-希腊-罗马尼亚vs匈牙利
 country_event = {
 	id = GRE.14
 	title = GRE.14.t
@@ -369,6 +380,7 @@ country_event = {
 		
 	}
 }
+#赢啦！加核心
 country_event = {
 	id = GRE.15
 	title = GRE.15.t
@@ -395,6 +407,7 @@ country_event = {
 		log = "[GetLogInfo] [From.GetName]: event GRE.15 option GRE.12.a"
 	}
 }
+#赢啦！加核心
 country_event = {
 	id = GRE.16
 	title = GRE.16.t

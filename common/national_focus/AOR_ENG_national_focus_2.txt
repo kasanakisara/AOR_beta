@@ -11,7 +11,7 @@
 	focus={
 		id=AOR_ENG_WE_BELIVE_QIAOZHI
 		icon=AOR_goals_womenxiangxinlaoheqiaozhi
-		x=69
+		x=52
 		y=0
 		cost=5
 		ai_will_do={
@@ -21,12 +21,13 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {id=ENG.20}
 		}
 	}
 	focus={
 		id=AOR_ENG_Restore_the_economy
 		icon=AOR_goals_huifuyuanqi
-		x=69
+		x=52
 		y=1
 		prerequisite={focus=AOR_ENG_WE_BELIVE_QIAOZHI}
 		cost=5
@@ -42,7 +43,7 @@
 	focus={
 		id=AOR_ENG_A_new_atmosphere
 		icon=AOR_goals_zhanhouxinqixiang
-		x=59
+		x=45
 		y=2
 		prerequisite={focus=AOR_ENG_Restore_the_economy}
 		cost=5
@@ -58,7 +59,7 @@
 	focus={
 		id=AOR_ENG_dadanxingdong
 		icon=AOR_goals_dadanxingdong
-		x=77
+		x=64
 		y=2
 		prerequisite={focus=AOR_ENG_Restore_the_economy}
 		cost=5
@@ -74,7 +75,7 @@
 	focus={
 		id=AOR_ENG_fazhanbunengduan
 		icon=AOR_goals_fazhanbunengduan
-		x=55
+		x=42
 		y=3
 		prerequisite={focus=AOR_ENG_A_new_atmosphere}
 		cost=5
@@ -87,42 +88,27 @@
 		completion_reward={
 		}
 	}
-	focus={  
-		id=AOR_ENG_xiangcundezhenxing  
-		icon=AOR_goals_xiangcundezhenxing  
-		x=57  
-		y=4  
-		prerequisite={focus=AOR_ENG_fazhanbunengduan}  
-		mutually_exclusive={focus=AOR_ENG_fuchinanfangmaoyi }  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}focus={  
-		id=AOR_ENG_jiaqiangyugeguowanglai  
-		icon=AOR_goals_jiaqiangyugeguowanglai  
-		x=55  
-		y=5  
-		prerequisite={focus=AOR_ENG_fuchinanfangmaoyi focus=AOR_ENG_xiangcundezhenxing }  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
+	focus={
+		id=AOR_ENG_xiangcundezhenxing
+		icon=AOR_goals_xiangcundezhenxing
+		x=44
+		y=4
+		prerequisite={focus=AOR_ENG_fazhanbunengduan}
+		mutually_exclusive={focus=AOR_ENG_fuchinanfangmaoyi }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
 	}
 	focus={
 		id=AOR_ENG_fuchinanfangmaoyi
 		icon=AOR_goals_fuchinanfangmaoyi
-		x=53
+		x=39
 		y=4
 		prerequisite={focus=AOR_ENG_fazhanbunengduan}
 		mutually_exclusive={focus=AOR_ENG_xiangcundezhenxing }
@@ -136,205 +122,252 @@
 		completion_reward={
 		}
 	}
-	
-	focus={  
-		id=AOR_ENG_taigaoqiyejiadiwei  
-		icon=AOR_goals_taigaoqiyejiadiwei  
-		x=64  
-		y=3  
-		prerequisite={focus=AOR_ENG_A_new_atmosphere}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_quebaogongrenwending  
-		icon=AOR_goals_quebaogongrenwending  
-		x=61  
-		y=4  
-		prerequisite={focus=AOR_ENG_taigaoqiyejiadiwei  }  
-		mutually_exclusive={focus=AOR_ENG_fangkuangongzuojianguan }  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_fangkuangongzuojianguan  
+	focus={
+		id=AOR_ENG_jiaqiangyugeguowanglai
+		icon=AOR_goals_jiaqiangyugeguowanglai
+		x=42
+		y=5
+		prerequisite={focus=AOR_ENG_fuchinanfangmaoyi focus=AOR_ENG_xiangcundezhenxing }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_taigaoqiyejiadiwei
+		icon=AOR_goals_taigaoqiyejiadiwei
+		x=48
+		y=3
+		prerequisite={focus=AOR_ENG_A_new_atmosphere}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_quebaogongrenwending
+		icon=AOR_goals_quebaogongrenwending
+		x=46
+		y=4
+		prerequisite={focus=AOR_ENG_taigaoqiyejiadiwei}
+		mutually_exclusive={focus=AOR_ENG_fangkuangongzuojianguan }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_fangkuangongzuojianguan
 		icon=AOR_goals_fangkuangongshijianguan
-		x=67  
-		y=4  
-		prerequisite={focus=AOR_ENG_taigaoqiyejiadiwei }  
-		mutually_exclusive={focus=AOR_ENG_quebaogongrenwending }  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_jingjikaoqiye  
-		icon=AOR_goals_jingjikaoqiye_1  
-		x=67  
-		y=5  
-		prerequisite={focus=AOR_ENG_fangkuangongzuojianguan}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_yaoqingqiyejinzhuzhimindi  
-		icon=AOR_goals_yaoqingqiyejinzhuzhimindi  
-		x=67  
-		y=7  
-		prerequisite={focus=AOR_ENG_jingjikaoqiye}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_xiudingyibaofaan  
-		icon=AOR_goals_xiudingyibaofaan  
-		x=59  
-		y=5  
-		prerequisite={focus=AOR_ENG_quebaogongrenwending}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_jiujituiwulaobing   
-		icon=AOR_goals_jiujituiwulaobing   
-		x=63   
-		y=5   
-		prerequisite={focus=AOR_ENG_quebaogongrenwending }   
-		cost=5   
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes   
-		search_filters={ }   
-	completion_reward={ }
- } 
-    focus={  
-    id=AOR_ENG_tuiwujunrenzaijiuye  
-    icon=AOR_goals_tuiwujunrenzaijiuye  
-    x=64  
-    y=6  
-    prerequisite={focus=AOR_ENG_jiujituiwulaobing focus=AOR_ENG_jingjikaoqiye }  
-    cost=5  
-    ai_will_do={ factor=1 }   
-    available_if_capitulated=yes  
-    search_filters={ }   
-    completion_reward={ }  
-}  
-focus={  
-    id=AOR_ENG_chilunbutingzhuan
-    icon=AOR_goals_chilunbutingzhuan
-    x=64  
-    y=7  
-    prerequisite={focus=AOR_ENG_tuiwujunrenzaijiuye }  
-    cost=5  
-    ai_will_do={ factor=1 }   
-    available_if_capitulated=yes  
-    search_filters={ }   
-    completion_reward={ }  
-}  
-	focus={  
-		id=AOR_ENG_jieshourenminyijian  
-		icon=AOR_goals_jieshourenminyijian  
-		x=61  
-		y=6  
-		prerequisite={focus=AOR_ENG_xiudingyibaofaan}  
-		cost=5  
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes  
-		search_filters={ }   
-		completion_reward={ }  
-	}  
-	focus={  
+		x=52
+		y=4
+		prerequisite={focus=AOR_ENG_taigaoqiyejiadiwei}
+		mutually_exclusive={focus=AOR_ENG_quebaogongrenwending }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_jingjikaoqiye
+		icon=AOR_goals_jingjikaoqiye_1
+		x=52
+		y=5
+		prerequisite={focus=AOR_ENG_fangkuangongzuojianguan}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_yaoqingqiyejinzhuzhimindi
+		icon=AOR_goals_yaoqingqiyejinzhuzhimindi
+		x=52
+		y=7
+		prerequisite={focus=AOR_ENG_jingjikaoqiye}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_xiudingyibaofaan
+		icon=AOR_goals_xiudingyibaofaan
+		x=45
+		y=5
+		prerequisite={focus=AOR_ENG_quebaogongrenwending}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_jiujituiwulaobing
+		icon=AOR_goals_jiujituiwulaobing
+		x=48
+		y=5
+		prerequisite={focus=AOR_ENG_quebaogongrenwending}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_tuiwujunrenzaijiuye
+		icon=AOR_goals_tuiwujunrenzaijiuye
+		x=50
+		y=6
+		prerequisite={focus=AOR_ENG_jiujituiwulaobing focus=AOR_ENG_jingjikaoqiye }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_chilunbutingzhuan
+		icon=AOR_goals_chilunbutingzhuan
+		x=50
+		y=7
+		prerequisite={focus=AOR_ENG_tuiwujunrenzaijiuye}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_jieshourenminyijian
+		icon=AOR_goals_jieshourenminyijian
+		x=47
+		y=6
+		prerequisite={focus=AOR_ENG_xiudingyibaofaan}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
 		id=AOR_ENG_gongshizhidugexin
 		icon=AOR_goals_gongshizhidugexin
-		x=58  
-		y=7  
-		prerequisite={focus=AOR_ENG_xiudingyibaofaan}  
-		cost=5  
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes  
-		search_filters={ }   
-		completion_reward={ }  
-	}  
-	focus={  
-		id=AOR_ENG_huifuyuanqi  
-		icon=AOR_goals_huifuyuanqi  
-		x=63  
-		y=8  
-		prerequisite = { focus = AOR_ENG_gongshizhidugexin focus = AOR_ENG_chilunbutingzhuan focus=AOR_ENG_yaoqingqiyejinzhuzhimindi  }  
-		cost=5  
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes  
-		search_filters={ }   
-		completion_reward={ }  
-		}  
-	focus={  
-		id=AOR_ENG_wenzhuguojiahaobanshi  
-		icon=AOR_goals_wenzhuguojiahaobanshi  
-		x=72  
-		y=3  
-		prerequisite={focus=AOR_ENG_dadanxingdong}  
-		cost=5  
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes  
-		search_filters={ }   
-		completion_reward={ }  
-		}  
-	focus={  
-		id=AOR_ENG_yidairendeshiming  
-		icon=AOR_goals_yidairendeshiming  
-		x=72  
-		y=4  
-		prerequisite={focus=AOR_ENG_wenzhuguojiahaobanshi}  
-		cost=5  
-		ai_will_do={ factor=1 }   
-		available_if_capitulated=yes  
-		search_filters={ }   
-		completion_reward={ }  
-	}  
+		x=46
+		y=7
+		prerequisite={focus=AOR_ENG_xiudingyibaofaan}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_huifuyuanqi
+		icon=AOR_goals_huifuyuanqi
+		x=50
+		y=8
+		prerequisite={focus=AOR_ENG_gongshizhidugexin focus=AOR_ENG_chilunbutingzhuan focus=AOR_ENG_yaoqingqiyejinzhuzhimindi }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_wenzhuguojiahaobanshi
+		icon=AOR_goals_wenzhuguojiahaobanshi
+		x=61
+		y=3
+		prerequisite={focus=AOR_ENG_dadanxingdong}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_yidairendeshiming
+		icon=AOR_goals_yidairendeshiming
+		x=61
+		y=4
+		prerequisite={focus=AOR_ENG_wenzhuguojiahaobanshi}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
 	focus={
 		id=AOR_ENG_aiguoduwu
 		icon=AOR_goals_aiguoduwu
-		x=72
+		x=61
 		y=5
 		prerequisite={focus=AOR_ENG_wenzhuguojiahaobanshi}
 		cost=5
@@ -347,92 +380,90 @@ focus={
 		completion_reward={
 		}
 	}
-	focus={  
-		id=AOR_ENG_wendingfeizhou  
-		icon=AOR_goals_wendingfeizhou  
-		x=77  
-		y=5  
-		prerequisite={focus=AOR_ENG_dadanxingdong}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_2c_plan  
-		icon=AOR_goals_2c_plan  
-		x=75  
-		y=6  
-		prerequisite={focus=AOR_ENG_aiguoduwu focus=AOR_ENG_wendingfeizhou}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_yushimozijiangjunxieshang  
-		icon=AOR_goals_yushimozijiangjunxieshang  
-		x=71  
-		y=7  
-		prerequisite={focus=AOR_ENG_2c_plan}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_tinghaole_fuade  
-		icon=AOR_goals_tinghaole_fuade  
-		x=71  
-		y=8  
-		prerequisite={focus=AOR_ENG_yushimozijiangjunxieshang}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-	focus={  
-		id=AOR_ENG_qiangzhengtudi  
-		icon=AOR_goals_qiangzhengtudi  
-		x=75  
-		y=7  
-		prerequisite={focus=AOR_ENG_2c_plan}  
-		cost=5  
-		ai_will_do={  
-			factor=1  
-		}  
-		available_if_capitulated=yes  
-		search_filters={  
-		}  
-		completion_reward={  
-		}  
-	}  
-
-
+	focus={
+		id=AOR_ENG_wendingfeizhou
+		icon=AOR_goals_wendingfeizhou
+		x=67
+		y=5
+		prerequisite={focus=AOR_ENG_dadanxingdong}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_2c_plan
+		icon=AOR_goals_2c_plan
+		x=64
+		y=6
+		prerequisite={focus=AOR_ENG_aiguoduwu focus=AOR_ENG_wendingfeizhou }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_yushimozijiangjunxieshang
+		icon=AOR_goals_yushimozijiangjunxieshang
+		x=60
+		y=7
+		prerequisite={focus=AOR_ENG_2c_plan}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_tinghaole_fuade
+		icon=AOR_goals_tinghaole_fuade
+		x=60
+		y=8
+		prerequisite={focus=AOR_ENG_yushimozijiangjunxieshang}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_qiangzhengtudi
+		icon=AOR_goals_qiangzhengtudi
+		x=64
+		y=7
+		prerequisite={focus=AOR_ENG_2c_plan}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
 	focus={
 		id=AOR_ENG_tigaojihuayouxianji
 		icon=AOR_goals_tigaojihuayouxianji
-		x=75
+		x=64
 		y=9
 		prerequisite={focus=AOR_ENG_tinghaole_fuade}
 		prerequisite={focus=AOR_ENG_yanxiancunzhenfazhan}
@@ -447,17 +478,10 @@ focus={
 		completion_reward={
 		}
 	}
-
-
-
-
-
-
-
 	focus={
 		id=AOR_ENG_guojiajihua
 		icon=AOR_goals_guojiajihua
-		x=68
+		x=56
 		y=11
 		prerequisite={focus=AOR_ENG_huifuyuanqi}
 		prerequisite={focus=AOR_ENG_tigaojihuayouxianji}
@@ -471,10 +495,10 @@ focus={
 		completion_reward={
 		}
 	}
-		focus={
+	focus={
 		id=AOR_ENG_yanxiancunzhenfazhan
 		icon=AOR_goals_yanxiancunzhenfazhan
-		x=79
+		x=67
 		y=8
 		prerequisite={focus=AOR_ENG_kaifayantukuangcang}
 		cost=5
@@ -490,7 +514,7 @@ focus={
 	focus={
 		id=AOR_ENG_kaifayantukuangcang
 		icon=AOR_goals_kaifayantukuangcang
-		x=79
+		x=67
 		y=7
 		prerequisite={focus=AOR_ENG_2c_plan}
 		cost=5
@@ -503,13 +527,10 @@ focus={
 		completion_reward={
 		}
 	}
-
-
-
 	focus={
 		id=AOR_ENG_jieshouyindulaodongli
 		icon=AOR_goals_jieshouyindulaodongli
-		x=65
+		x=53
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -525,7 +546,7 @@ focus={
 	focus={
 		id=AOR_ENG_jiaqianglianbaomaoyi
 		icon=AOR_goals_jiaqianglianbaomaoyi
-		x=67
+		x=55
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -541,7 +562,7 @@ focus={
 	focus={
 		id=AOR_ENG_lengzhanchoulao
 		icon=AOR_goals_lengzhanchoulao
-		x=69
+		x=57
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -557,7 +578,7 @@ focus={
 	focus={
 		id=AOR_ENG_fazhanbentujiaoyu
 		icon=AOR_goals_fazhanbentujiaoyu
-		x=71
+		x=59
 		y=12
 		prerequisite={focus=AOR_ENG_guojiajihua}
 		cost=5
@@ -573,7 +594,7 @@ focus={
 	focus={
 		id=AOR_ENG_kaishexuexiao
 		icon=AOR_goals_kaishexuexiao
-		x=70
+		x=58
 		y=13
 		prerequisite={focus=AOR_ENG_lengzhanchoulao}
 		prerequisite={focus=AOR_ENG_lengzhanchoulao}
@@ -592,7 +613,7 @@ focus={
 	focus={
 		id=AOR_ENG_jiaqiangmengyoutuanjie
 		icon=AOR_goals_jiaqiangmengyoutuanjie
-		x=66
+		x=54
 		y=13
 		prerequisite={focus=AOR_ENG_jieshouyindulaodongli}
 		prerequisite={focus=AOR_ENG_jiaqianglianbaomaoyi}
@@ -610,7 +631,7 @@ focus={
 	focus={
 		id=AOR_ENG_xietongfazhanlinian
 		icon=AOR_goals_xietongfazhanlinian
-		x=66
+		x=54
 		y=14
 		prerequisite={focus=AOR_ENG_jiaqiangmengyoutuanjie}
 		cost=5
@@ -626,7 +647,7 @@ focus={
 	focus={
 		id=AOR_ENG_shijiekewanglodon
 		icon=AOR_goals_shijiekewanglodon
-		x=70
+		x=58
 		y=14
 		prerequisite={focus=AOR_ENG_kaishexuexiao}
 		cost=5
@@ -642,7 +663,7 @@ focus={
 	focus={
 		id=AOR_ENG_yongshifanrongbuliedian
 		icon=AOR_goals_yongshifanrongbuliedian
-		x=68
+		x=56
 		y=15
 		prerequisite={focus=AOR_ENG_xietongfazhanlinian focus=AOR_ENG_shijiekewanglodon }
 		cost=5
@@ -671,7 +692,7 @@ focus={
 		}
 	}
 	focus={
-		id= AOR_ENG_xiongxiongranshaodefeicuizhidao
+		id=AOR_ENG_xiongxiongranshaodefeicuizhidao
 		icon=AOR_goals_xiongxiongranshaodefeicuizhidao
 		x=31
 		y=1
@@ -691,7 +712,7 @@ focus={
 		icon=AOR_goals_qubaxiaohuozimen
 		x=29
 		y=2
-		prerequisite={focus= AOR_ENG_xiongxiongranshaodefeicuizhidao}
+		prerequisite={focus=AOR_ENG_xiongxiongranshaodefeicuizhidao}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -707,7 +728,7 @@ focus={
 		icon=AOR_goals_suqingfaguojiandie
 		x=33
 		y=2
-		prerequisite={focus= AOR_ENG_xiongxiongranshaodefeicuizhidao}
+		prerequisite={focus=AOR_ENG_xiongxiongranshaodefeicuizhidao}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -1259,6 +1280,387 @@ focus={
 		y=4
 		prerequisite={focus=AOR_ENG_yingmeihuzhuxieding}
 		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	#军事
+	focus={  
+		id=AOR_ENG_weiyuanhuijihua  
+		icon=AOR_goals_weiyuanhuijihua  
+		x=84  
+		y=1  
+		cost=10  
+		ai_will_do={  
+		factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			country_event = {id=ENG.1000 days=0}
+		}  
+	   }  
+	focus={  
+		id=AOR_ENG_shenshilujunzhengce  
+		icon=AOR_goals_shenshilujunzhengce  
+		x=76  
+		y=2  
+		prerequisite={focus=AOR_ENG_weiyuanhuijihua}  
+		cost=10  
+		ai_will_do={  
+		factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			country_event = {id=ENG.1001 days=0}
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_chongshendaluyiwu  
+		icon=AOR_goals_chongshendaluyiwu  
+		x=72  
+		y=3  
+		prerequisite={focus=AOR_ENG_shenshilujunzhengce}  
+		mutually_exclusive={focus=AOR_ENG_banxingshinianguize }  
+		cost=10  
+		ai_will_do={  
+		factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			add_ideas = {
+				ENG_daluyiwu
+			}
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_zongjiedazhandejingyan  
+		icon=AOR_goals_zongjiedazhandejingyan  
+		x=76  
+		y=7  
+		prerequisite={focus=AOR_ENG_quanqiuganyu focus=AOR_ENG_weichixianzhuang }
+		cost=10  
+		ai_will_do={  
+		factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			army_experience = 75
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_banxingshinianguize  
+		icon=AOR_goals_banxingshinianguize  
+		x=80  
+		y=3  
+		prerequisite={focus=AOR_ENG_shenshilujunzhengce}  
+		mutually_exclusive={focus=AOR_ENG_chongshendaluyiwu }  
+		cost=10  
+		ai_will_do={  
+		factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			add_ideas = {
+				ENG_shinianguize
+			}
+		}  
+	}  
+	focus={
+		id=AOR_ENG_yanxuguizuchuantong
+		icon=AOR_goals_yanxuguizuchuantong
+		x=79
+		y=4
+		prerequisite={focus=AOR_ENG_banxingshinianguize}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				ENG_lujunrongyao
+			}
+		}
+	}
+	focus={
+		id=AOR_ENG_tibapinminshiguan
+		icon=AOR_goals_tibapinminshiguan
+		x=71
+		y=4
+		prerequisite={focus=AOR_ENG_chongshendaluyiwu}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				ENG_xinruishiguan
+			}
+		}
+	}
+	focus={
+		id=AOR_ENG_yuanzhengjunchangbeihua
+		icon=AOR_goals_yuanzhengjunchangbeihua
+		x=73
+		y=4
+		prerequisite={focus=AOR_ENG_chongshendaluyiwu}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				ENG_yuanzhengjunchangbeihua
+			}
+		}
+	}
+	focus={
+		id=AOR_ENG_daxueyubeijunguanjiaoyu
+		icon=AOR_goals_daxueyubeijunguanjiaoyu
+		x=71
+		y=5
+		prerequisite={focus=AOR_ENG_tibapinminshiguan}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ENG_xinruishiguan
+				add_idea = ENG_xinruishiguan_2			
+			}
+		}
+	}
+	focus={
+		id=AOR_ENG_quanqiuganyu
+		icon=AOR_goals_quanqiuganyu
+		x=72
+		y=6
+		prerequisite={focus=AOR_ENG_daxueyubeijunguanjiaoyu focus=AOR_ENG_xinbentulujuncaodian}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ENG_daluyiwu
+				add_idea = ENG_daluyiwu_2			
+			}
+		}
+	}
+	focus={
+		id=AOR_ENG_xinbentulujuncaodian
+		icon=AOR_goals_xinbentulujuncaodian
+		x=73
+		y=5
+		prerequisite={focus=AOR_ENG_yuanzhengjunchangbeihua}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ENG_yuanzhengjunchangbeihua
+				add_idea = ENG_yuanzhengjunchangbeihua_2		
+			}
+
+		}
+	}
+	focus={
+		id=AOR_ENG_kuobianhaiwaizhujun
+		icon=AOR_goals_kuobianhaiwaizhujun
+		x=81
+		y=4
+		prerequisite={focus=AOR_ENG_banxingshinianguize}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = {
+				ENG_haiwaizhujun
+			}
+		}
+	}
+	focus={  
+		id=AOR_ENG_zhenghehuangjialujunxueyuan  
+		icon=AOR_goals_zhenghehuangjialujunxueyuan  
+		x=79  
+		y=5  
+		prerequisite={focus=AOR_ENG_yanxuguizuchuantong}  
+		cost=10  
+		ai_will_do={  
+			factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			swap_ideas = {
+				remove_idea = ENG_lujunrongyao
+				add_idea = ENG_lujunrongyao_2	
+			}
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_weichixianzhuang  
+		icon=AOR_goals_weichixianzhuang  
+		x=80  
+		y=6  
+		prerequisite={focus=AOR_ENG_zhenghehuangjialujunxueyuan focus=AOR_ENG_shouquanhaiwaizhujunsiling}  
+		cost=10  
+		ai_will_do={  
+			factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			SAF={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			CAN={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			AFG={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			AST={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			NZL={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			PER={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			EGY={
+				add_ideas = {ENG_diguobianjiang}
+			}
+			SUD={
+				add_ideas = {ENG_diguobianjiang}
+			}
+
+
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_shouquanhaiwaizhujunsiling  
+		icon=AOR_goals_shouquanhaiwaizhujunsiling  
+		x=81  
+		y=5  
+		prerequisite={focus=AOR_ENG_kuobianhaiwaizhujun}  
+		cost=10  
+		ai_will_do={  
+			factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+			swap_ideas = {
+				remove_idea = ENG_haiwaizhujun
+				add_idea = ENG_haiwaizhujun_2	
+			}
+		}  
+	}  
+	#后面的等科技更新完成再写
+	focus={  
+		id=AOR_ENG_gaijinqingwuqi  
+		icon=AOR_goals_gaijinqingwuqi  
+		x=73  
+		y=8  
+		prerequisite={focus=AOR_ENG_zongjiedazhandejingyan}  
+		cost=10  
+		ai_will_do={  
+			factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+		}  
+	}  
+	focus={  
+		id=AOR_ENG_shiyanmotuohua  
+		icon=AOR_goals_shiyanmotuohua  
+		x=79  
+		y=8  
+		prerequisite={focus=AOR_ENG_zongjiedazhandejingyan}  
+		cost=10  
+		ai_will_do={  
+			factor=1  
+		}  
+		available_if_capitulated=yes  
+		search_filters={  
+		}  
+		completion_reward={  
+		}  
+	}  
+	focus={
+		id=AOR_ENG_gaoxiaohuopaozhiyuan
+		icon=AOR_goals_gaoxiaohuopaozhiyuan
+		x=73
+		y=9
+		prerequisite={focus=AOR_ENG_gaijinqingwuqi}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=AOR_ENG_liezhuangbubingtanke
+		icon=AOR_goals_liezhuangbubingtanke
+		x=79
+		y=9
+		prerequisite={focus=AOR_ENG_shiyanmotuohua}
+		cost=10
 		ai_will_do={
 			factor=1
 		}
