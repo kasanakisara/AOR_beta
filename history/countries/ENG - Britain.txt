@@ -8,17 +8,9 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
-	 
- 
 	interwar_antiair = 1
-
- 
- 
- 
 	tactical_bomber1 = 1
- 
 	CAS1 = 1
- 
 	mobile_warfare = 1
 	trade_interdiction = 1
 	formation_flying = 1
@@ -33,6 +25,22 @@ set_research_slots = 4
 set_convoys = 10
 set_stability = 0.85
 add_command_power = 20
+
+#######################################英联邦的gui变量############################################
+set_variable = { var = guominzhichidu value = 50 }
+set_variable = { var = yuanqizhi value = 30 }
+set_variable = { var = lianbangtuanjiedu value = 60 }
+set_variable = { var = yingguoquanwei value = 80 }
+
+set_variable = { var = aiji_haogandu value = 45 }
+set_variable = { var = feizhouhaogandu value = 50 }
+set_variable = { var = yindu_haogandu value = 60 }
+set_variable = { var = xifei_haogandu value = 50 }
+set_variable = { var = nanfei_haogandu value = 50 }
+set_variable = { var = aodaliya_haogandu value = 50 }
+set_variable = { var = xinxilan_haogandu value = 50 }
+
+###################################################################################################
 
 1939.1.1 = {
 
@@ -106,6 +114,8 @@ set_popularities = {
 	Fascism = 00
 	Marxism = 00
 }
+
+
 
 
 add_ideas = {
