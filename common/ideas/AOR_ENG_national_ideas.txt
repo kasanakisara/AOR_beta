@@ -483,5 +483,23 @@ ideas = {
 
 	    	}
 		}
+		ENG_huangjiahaijunderongyao = {
+			allowed = {
+	    		always = yes
+	    	}
+
+	    	picture = GFX_ENG_huangjiahaijunderongyao
+
+	    	removal_cost = -1
+
+	    	modifier = {
+				positioning = 0.10
+				navy_capital_ship_attack_factor = 0.1
+				naval_doctrine = 0.15
+				experience_gain_battle_cruiser_training_factor = 0.1
+				NAVAL_EQUIPMENT_UPGRADE_XP_COST = 0.1
+
+	    	}
+		}
 	}
 }
