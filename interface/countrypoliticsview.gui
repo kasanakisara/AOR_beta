@@ -325,19 +325,19 @@ guiTypes = {
 			vertical_alignment = center
 		}
 
-		containerWindowType = {
+		#containerWindowType = {
 			name = "FRA_YIHUI_BUTTON_WINDOW"
 			position = { x = 105 y = 120}	
 
-			buttonType = {
+			#buttonType = {
 				name = "FRA_YIHUI_BUTTON_1"
 				position = { x = 0 y = 0 }
 				quadTextureSprite = "GFX_FRA_YIHUI_BUTTON_button"
 				#buttonFont = "hoi_24mbs"
 				#buttonText = "FRA_YIHUI_BUTTON"
-			}
+		#	}
 			#标题
-		instantTextboxType = {
+		#instantTextboxType = {
 			name = "FRA_YIHUI_titile"
 			position = { x = 0 y = 25 }
 			orientation = left_up
@@ -346,28 +346,28 @@ guiTypes = {
 			format = centre
 			maxWidth = 1600
 			maxHeight = 50
-		}
+	#	}
 
 #政治组织
-		buttonType = {
+		#buttonType = {
             name = "Political_organization_button"
             position = { x = 600 y = 80 }
             quadTextureSprite = "GFX_event_option_entry"
 			buttonText = "Political_organization_"
 			buttonFont = "hoi_24header"
             clicksound = click_close
-        }
+     #   }
 
 #政治立场
-        buttonType = {
+       # buttonType = {
             name = "Political_stance_button"
             position = { x = 700 y = 80 }
             quadTextureSprite = "GFX_event_option_entry"
 			buttonText = "Political_stance_button"
 			buttonFont = "hoi_24header"
             clicksound = click_close
-        }
-	}
+      #  }
+	#}
 		
 		containerWindowType = {
 			name = "active_goal" #国策

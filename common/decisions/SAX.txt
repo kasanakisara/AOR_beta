@@ -1349,7 +1349,7 @@ SAX_support_liebknecht = {
 		visible = {
 		check_variable = { 99 > SAX.liebknecht }
 		NOT = {
-		has_country_leader = { ruling_only = yes name = ""Pual·Frolich }
+		has_country_leader = { ruling_only = yes name = "Pual·Frolich" }
 		has_country_leader = { ruling_only = yes name = "Theodor Liebknecht" }
 		}
 		}
