@@ -3,6 +3,8 @@ state={
 	name="STATE_947"
 
 	history={		
+		owner = SIA
+		add_core_of = SIA
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
