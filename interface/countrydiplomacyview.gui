@@ -432,7 +432,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "national_spirit_container"
 					position = { x = -380 y = -5 }
-					size = { width = 368 height = 100 }
+					size = { width = 368 height = 95 }
 					horizontalScrollbar = "bottom_horizontal_slider"
 					orientation = upper_right
 
