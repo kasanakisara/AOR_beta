@@ -1,7 +1,7 @@
 ﻿###########################
 add_namespace = CHI
 add_namespace = CHI_Northwest_decision
-add_namespace = CHI_test_event
+add_namespace = CHI_test
 country_event = {
 	id = CHI.1
 	title = CHI.1.t
@@ -628,40 +628,40 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = CHI_Northwest_decision.6
-	title = CHI.6.t
-	desc = CHI.6.desc
-	picture = GFX_Portrait_of_Tirpitz
-	fire_only_once = yes
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-		has_complete
-	}
-	option = {
-		name = CHI.6.a
-	}
-}
+# country_event = {
+# 	id = CHI_Northwest_decision.6
+# 	title = CHI.6.t
+# 	desc = CHI.6.desc
+# 	picture = GFX_Portrait_of_Tirpitz
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
+# 	immediate = {
+# 		has_complete
+# 	}
+# 	option = {
+# 		name = CHI.6.a
+# 	}
+# }
 
 ######测试事件
-
 country_event = {
-	id = CHI_test_event.01
-	title = CHI_test_event.01.t
-	desc = CHI_test_event.01.desc
-	fire_only_once = yes
+	id = CHI_test.01
+	title = CHI_test.01.t
+	desc = CHI_test.01.desc
 	is_triggered_only = yes
 	option = {
-		name = CHI_test_event.01.a
-		set_variable = { KMT_senate_seat_var = 68 }
-		set_variable = { SOCP_senate_seat_var = 69 }
-		set_variable = { ProP_senate_seat_var = 68 }
-		set_variable = { UNP_senate_seat_var = 69 }
-		set_variable = { KMT_Representatives_seat_var = 149 }
+		name = CHI_test.01.a
+		set_variable = { KMT_senate_seat_var = 90 }
+		set_variable = { SOCP_senate_seat_var = 68 }
+		set_variable = { ProP_senate_seat_var = 54 }
+		set_variable = { UNP_senate_seat_var = 33 }
+		set_variable = { KMT_Representatives_seat_var = 196 }
 		set_variable = { SOCP_Representatives_seat_var = 149 }
-		set_variable = { ProP_Representatives_seat_var = 149 }
-		set_variable = { UNP_Representatives_seat_var = 149 }
+		set_variable = { ProP_Representatives_seat_var = 119 }
+		set_variable = { UNP_Representatives_seat_var = 72 }
+		CHI_Seat_calculation = yes
 	}
 }
 
+##

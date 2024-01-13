@@ -5,6 +5,30 @@ scripted_gui = {
 			tag = CHI
 			has_country_flag = AOR_Presidentof_ROC_general_election_visble
 		}
+		properties = {
+			ROC_senate_seat_nme = {
+				x = ROC_senate_steat_x^seat_idx
+				y = ROC_senate_seat_y^seat_idx
+				frame = ROC_senate_frame_arry^seat_idx
+			}
+			ROC_Representatives_seat_nme = {
+				x = ROC_Representatives_seat_x^seat_idx
+				y = ROC_Representatives_seat_y^seat_idx
+				frame = ROC_Representatives_frame_arry^seat_idx
+			}
+			KMT_leader_pic = {
+				image = "[KMT_leader_pic]"
+			}
+			SOCP_leader_pic = {
+				image = "[SOCP_leader_pic]"
+			}
+			ProP_leader_pic = {
+				image = "[ProP_leader_pic]"
+			}
+			UNP_leader_pic = {
+				image = "[UNP_leader_pic]"
+			}
+		}
 		dynamic_lists = {
 			ROC_senate_diag_container = {
 				array = ROC_senate_steat_x
@@ -17,18 +41,6 @@ scripted_gui = {
 				change_scope = no
 				entry_container = ROC_Representatives_container
 				index = seat_idx
-			}
-		}
-		properties = {
-			ROC_senate_seat_nme = {
-				x = ROC_senate_steat_x^seat_idx
-				y = ROC_senate_seat_y^seat_idx
-				frame = ROC_senate_frame_arry^seat_idx
-			}
-			ROC_Representatives_seat_nme = {
-				x = ROC_Representatives_seat_x^seat_idx
-				y = ROC_Representatives_seat_y^seat_idx
-				frame = ROC_Representatives_frame_arry^seat_idx
 			}
 		}
 		effects = {
@@ -47,6 +59,7 @@ scripted_gui = {
 		}
 		effects = {
 			AOR_ROC_election_window_BUTTON_click = {
+				CHI_Seat_calculation = yes
 				if = {
 					limit = {
 						not = {
