@@ -203,8 +203,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_PRC_rev"
-		textureFile = "gfx/interface/ideologies/PRC_rev.dds"
+		name = "GFX_ideology_PRC_urban"
+		textureFile = "gfx/interface/ideologies/PRC_urban.dds"
 	}
 	
 	spriteType = {

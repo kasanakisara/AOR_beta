@@ -185,7 +185,7 @@ AOR_GER_finance_category = {  #德国金融体系
 	
 	
 	#debug
-    调试——提高通货膨胀 = {
+    调试_提高通货膨胀 = {
         available = {
 		}
 		cost = 0
@@ -200,7 +200,7 @@ AOR_GER_finance_category = {  #德国金融体系
 			AOR_GER_inflation_level_up = yes
 		}
     }
-    调试——降低通货膨胀 = {
+    调试_降低通货膨胀 = {
         available = {
 		}
 		cost = 0

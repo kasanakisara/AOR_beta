@@ -11,7 +11,7 @@ SOV_Soviet_mobilization_order = {
 		available = {
 		    has_completed_focus = conscript_for_sov
 			OR = {
-			    has_war
+			    has_war = yes
 				has_war_with = ARU
 			}
 		}

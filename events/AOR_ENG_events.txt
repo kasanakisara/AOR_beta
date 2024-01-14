@@ -253,6 +253,29 @@ news_event = { #xinshijie
 		name = ENG.17.a
 	}
 }
+country_event = {
+	id = ENG.20
+	title = ENG.20.t
+	desc = ENG.20.d
+	picture = ENG.20.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.20.a
+	}
+}
+country_event = {
+	id = ENG.30
+	title = ENG.30.t
+	desc = ENG.30.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.30.a
+	}
+}
 country_event = { #xinshijie
 	id = ENG.1145141919810
 	title = ENG.1145141919810.t
@@ -265,5 +288,29 @@ country_event = { #xinshijie
 	option = {
 		name = ENG.1145141919810.a
 		load_focus_tree = ENG_National_focus_2
+	}
+}
+country_event = {
+	id = ENG.1000
+	title = ENG.1000.t
+	desc = ENG.1000.d
+	picture = ENG.1000.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.1000.a
+	}
+}
+country_event = {
+	id = ENG.1001
+	title = ENG.1001.t
+	desc = ENG.1001.d
+	picture = ENG.1001.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.1001.a
 	}
 }

@@ -78,7 +78,15 @@ set_stability = 0.8
 		dispersed_industry2 = 1
 	}
 }
-
+create_country_leader = {
+	name = "Taimur bin Feisal"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = soltanism
+	traits = {
+	}
+}
 set_politics = {
 	ruling_party = Absolutism
 	last_election = "1936.1.1"
@@ -88,3 +96,4 @@ set_politics = {
 set_popularities = {
 	Absolutism = 100
 }
+set_cosmetic_tag = OMA_UK

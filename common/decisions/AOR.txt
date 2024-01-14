@@ -7,10 +7,10 @@ AOR_political_action = {
 		fire_only_once = no
 		days_re_enable = 120
 		available = {}
-		remove_effect = {
+		modifier = {
 		political_power_cost = 0.15
-           defensive_war_stability_factor = 0.1
-		   war_support_weekly = 0.002
+        defensive_war_stability_factor = 0.1
+		war_support_weekly = 0.002
         }
 	}
 	AOR_Improve_workers_conditions = {   
@@ -20,9 +20,9 @@ AOR_political_action = {
 		fire_only_once = no
 		days_re_enable = 120
 		available = {}
-		remove_effect = {
-           consumer_goods_factor = 0.05
-		   industrial_capacity_factory = 0.05
+		modifier = {
+            consumer_goods_factor = 0.05
+	    	industrial_capacity_factory = 0.05
         }
 	}
 	AOR_Invest_scientific_development = {   
@@ -34,10 +34,10 @@ AOR_political_action = {
 		available = {
 		has_war = no
 		}
-		remove_effect = {
-           consumer_goods_factor = 0.05
-		   political_power_cost = 0.1
-		   	research_speed_factor = 0.1
+		modifier = {
+            consumer_goods_factor = 0.05
+		    political_power_cost = 0.1
+		    research_speed_factor = 0.1
         }
 	}
 }
