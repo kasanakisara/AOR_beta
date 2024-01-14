@@ -35,9 +35,9 @@ country_event = {  #战后会议召开
 	mean_time_to_happen = {
 		days = 1
 	}
+	immediate = { hidden_effect = { country_event = { id = per.2 days = 4 } } } 
 	option = { 
 		name = per.1.a  #大会开始
-		country_event = { id = per.2  days=4}
 	}
 }
 country_event = {  #对于战后国内形势的讨论
@@ -46,9 +46,9 @@ country_event = {  #对于战后国内形势的讨论
 	desc = per.2.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.3 days = 4 } } } 
 	option = { 
 		name = per.2.a
-		country_event = { id = per.3 days=4}
 	}
 }
 country_event = {  #关于重建工作的讨论
@@ -57,9 +57,9 @@ country_event = {  #关于重建工作的讨论
 	desc = per.3.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.4 days = 4 } } } 
 	option = { 
 		name = per.3.a
-		country_event = { id = per.4 days=4}
 	}
 }
 country_event = {  #关于下一步行动的争吵
@@ -68,9 +68,9 @@ country_event = {  #关于下一步行动的争吵
 	desc = per.4.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.5 days = 4 } } } 
 	option = { 
 		name = per.4.a
-		country_event = { id = per.5 days=4}
 	}
 }
 country_event = {  #大会结束！
@@ -88,7 +88,8 @@ country_event = {  #大会结束！
 		complete_national_focus = PER_Northern_Reconstruction_2
 		complete_national_focus = PER_Conference_on_Postwar_Issues_1
 	}
-}#战后问题会议结束
+}
+#战后问题会议结束
 
 country_event = {  #损失统计的结果
 	id = per.6
@@ -106,9 +107,9 @@ country_event = {  #农业部
 	desc = per.7.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.8 days = 8 } } } 
 	option = { 
 		name = per.7.a
-		country_event = { id = per.8 dyas = 8 }
 	}
 }
 country_event = { #农业部拟定对抗饥荒的方案
@@ -178,9 +179,9 @@ country_event = { #勘探团队的报告
 	desc = per.14.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.15 days = 4 } } } 
 	option = { 
 		name = per.14.a
-		country_event = { id = per.15 dyas = 4}
 	}
 }
 country_event = { #施工队的报告
@@ -189,9 +190,9 @@ country_event = { #施工队的报告
 	desc = per.15.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.16 days = 4 } } } 
 	option = { 
 		name = per.15.a
-		country_event = { id = per.16 dyas = 4}
 	}
 }
 country_event = { #是游击队
@@ -200,9 +201,9 @@ country_event = { #是游击队
 	desc = per.16.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.17 days = 4 } } } 
 	option = { 
 		name = per.16.a
-		country_event = { id = per.17 dyas = 4}
 	}
 }
 country_event = { #俄语的小册子
@@ -211,9 +212,9 @@ country_event = { #俄语的小册子
 	desc = per.17.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { country_event = { id = per.18 days = 4 } } } 
 	option = { 
 		name = per.17.a
-		country_event = { id = per.18 dyas = 4}
 	}
 }
 country_event = { #吉兰已不在我们掌控中
@@ -229,7 +230,7 @@ country_event = { #吉兰已不在我们掌控中
 		}
 	}
 }
-country_event = { #俄国赤色异教徒登陆安扎利
+country_event = { #俄国赤色异教徒登陆恩泽利
 	id = per.19
 	title = per.19.t
 	desc = per.19.d
@@ -242,11 +243,9 @@ country_event = { #俄国赤色异教徒登陆安扎利
 		days = 1
 	}
 	fire_only_once = yes
+	immediate = { hidden_effect = { country_event = { id = per.20 days = 30 } } } 
 	option = { 
 		name = per.19.a
-		hidden_effect = {
-			country_event = { id = per.20 dyas = 30}
-		}
 	}
 }
 country_event = { #波斯苏维埃共和国宣告成立
@@ -255,6 +254,7 @@ country_event = { #波斯苏维埃共和国宣告成立
 	desc = per.20.d
 	picture = ""
 	is_triggered_only = yes
+	immediate = { hidden_effect = { 420 = { set_demilitarized_zone = yes } } } 
 	option = { 
 		name = per.20.a
 		hidden_effect = {
