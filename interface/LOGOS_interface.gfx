@@ -431,6 +431,15 @@ spriteTypes = {
 		name = "GFX_idea_aid_from_uk"
 		texturefile = "gfx/interface/ideas/aid_from_uk.png"
 	}
+	spriteType = {
+		name = "GFX_idea_CZE_soaring_economy"
+		texturefile = "gfx/interface/ideas/idea_CZE_soaring_economy.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CZE_Merchant_troops"
+		texturefile = "gfx/interface/ideas/idea_CZE_Merchant_troops.png"
+	}	
+
 	#阿工团民族精神
 	spriteType = {
 		name = "GFX_idea_AOR_ORA_xin_da_lu_mo_shi"
@@ -459,6 +468,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AOR_ORA_Workers_autonomy"
 		texturefile = "gfx/interface/ideas/AOR_ORA_Workers_autonomy.png"
+	}
+	
+	###bav民族精神####
+	spriteType = {
+		name = "GFX_idea_BAV_dying_bureaucracy"
+		texturefile = "gfx/interface/ideas/BAV_dying_bureaucracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Extreme_democratic_rampant"
+		texturefile = "gfx/interface/ideas/Extreme_democratic_rampant.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Extreme_democratic_rampant_1"
+		texturefile = "gfx/interface/ideas/Extreme_democratic_rampant.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Roving_style"
+		texturefile = "gfx/interface/ideas/Roving_style.png"
 	}
 	#南非民族精神
 		spriteType = {
@@ -658,6 +685,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_AOR_news.44_pic"
 		texturefile = "gfx/event_pictures/AOR_news.44_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.354_pic"
+		texturefile = "gfx/event_pictures/AOR_news.354_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.353_pic"
+		texturefile = "gfx/event_pictures/AOR_news.353_pic.png"
 	}
 
 	
@@ -941,5 +976,169 @@ spriteType = {
  spriteType = {
   name = "GFX_goal_BAV_The_new_germany_people_army"
   texturefile = "gfx/interface/goals/BAV_The_new_germany_people_army.png"
+ }
+ 
+ 
+ ####AOR超事件框架！！！我真厉害！耶#####
+  spriteType = {
+  name = "GFX_AOR_supernews_bg"
+  texturefile = "gfx/AOR_supernews/supernews_bg.png"
+ }
+  spriteType = {
+  name = "GFX_AOR_supernews_exit_btn"
+  texturefile = "gfx/AOR_supernews/supernews_btn.png"
+ }
+  spriteType = {
+  name = "GFX_AOR_supernews_frame_overlay"
+  texturefile = "gfx/AOR_supernews/supernews_frame.png"
+ }
+ 
+ #####超事件图片！
+  spriteType = {
+  name = "GFX_AOR_supernews_1"
+  texturefile = "gfx/AOR_supernews/pic/supernews_1.png"
+  }
+  spriteType = {
+  name = "GFX_AOR_supernews_2"
+  texturefile = "gfx/AOR_supernews/pic/supernews_2.png"
+  }
+  
+  ####英国外交线国策图标###
+
+ spriteType = { name = "AOR_goals_chilunbutingzhuan" texturefile = "gfx/interface/goals/AOR_goals_chilunbutingzhuan.png" }
+spriteType = { name = "AOR_goals_chubanaiguoduwu" texturefile = "gfx/interface/goals/AOR_goals_chubanaiguoduwu.png" }
+spriteType = { name = "AOR_goals_dadanxingdong" texturefile = "gfx/interface/goals/AOR_goals_dadanxingdong.png" }
+spriteType = { name = "AOR_goals_fangkuangongshijianguan" texturefile = "gfx/interface/goals/AOR_goals_fangkuangongshijianguan.png" }
+spriteType = { name = "AOR_goals_fazhanbentujiaoyu" texturefile = "gfx/interface/goals/AOR_goals_fazhanbentujiaoyu.png" }
+spriteType = { name = "AOR_goals_fazhanbunengduan" texturefile = "gfx/interface/goals/AOR_goals_fazhanbunengduan.png" }
+spriteType = { name = "AOR_goals_fuchinanfangmaoyi" texturefile = "gfx/interface/goals/AOR_goals_fuchinanfangmaoyi.png" }
+spriteType = { name = "AOR_goals_gongshizhidugexin" texturefile = "gfx/interface/goals/AOR_goals_gongshizhidugexin.png" }
+spriteType = { name = "AOR_goals_guojiajihua" texturefile = "gfx/interface/goals/AOR_goals_guojiajihua.png" }
+spriteType = { name = "AOR_goals_jingjikaoqiye" texturefile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png" }
+spriteType = { name = "AOR_goals_jingjikaoqiye_1" texturefile = "gfx/interface/goals/AOR_goals_jingjikaoqiye_1.png" }
+spriteType = { name = "AOR_goals_huifujingji" texturefile = "gfx/interface/goals/AOR_goals_huifujingji.png" }
+spriteType = { name = "AOR_goals_huifuyuanqi" texturefile = "gfx/interface/goals/AOR_goals_huifuyuanqi.png" }
+spriteType = { name = "AOR_goals_jiaqiangmengyoutuanjie" texturefile = "gfx/interface/goals/AOR_goals_jiaqiangmengyoutuanjie.png" }
+spriteType = { name = "AOR_goals_jiaqiangyugeguowanglai" texturefile = "gfx/interface/goals/AOR_goals_jiaqiangyugeguowanglai.png" }
+spriteType = { name = "AOR_goals_jieshourenminyijian" texturefile = "gfx/interface/goals/AOR_goals_jieshourenminyijian.png" }
+spriteType = { name = "AOR_goals_jieshouyindulaodongli" texturefile = "gfx/interface/goals/AOR_goals_jieshouyindulaodongli.png" }
+spriteType = { name = "AOR_goals_jiujituiwulaobing" texturefile = "gfx/interface/goals/AOR_goals_jiujituiwulaobing.png" }
+spriteType = { name = "AOR_goals_kaishexuexiao" texturefile = "gfx/interface/goals/AOR_goals_kaishexuexiao.png" }
+spriteType = { name = "AOR_goals_quebaogongrenwending" texturefile = "gfx/interface/goals/AOR_goals_quebaogongrenwending.png" }
+spriteType = { name = "AOR_goals_shijiekewangzhichenglundun" texturefile = "gfx/interface/goals/AOR_goals_shijiekewangzhichenglundun.png" }
+spriteType = { name = "AOR_goals_shuangCjihuachulu！" texturefile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu！.png" }
+spriteType = { name = "AOR_goals_taigaoqiyejiadiwei" texturefile = "gfx/interface/goals/AOR_goals_taigaoqiyejiadiwei.png" }
+spriteType = { name = "AOR_goals_tigaojihuayouxianji" texturefile = "gfx/interface/goals/AOR_goals_tigaojihuayouxianji.png" }
+spriteType = { name = "AOR_goals_tuiwujunrenzaijiuye" texturefile = "gfx/interface/goals/AOR_goals_tuiwujunrenzaijiuye.png" }
+spriteType = { name = "AOR_goals_wendingfeizhou" texturefile = "gfx/interface/goals/AOR_goals_wendingfeizhou.png"}
+spriteType = { name = "AOR_goals_wenzhuguojiahaobanshi" texturefile = "gfx/interface/goals/AOR_goals_wenzhuguojiahaobanshi.png" }
+spriteType = { name = "AOR_goals_womenxiangxinlaoheqiaozhi" texturefile = "gfx/interface/goals/AOR_goals_womenxiangxinlaoheqiaozhi.png" }
+spriteType = { name = "AOR_goals_xiangcundezhenxing" texturefile = "gfx/interface/goals/AOR_goals_xiangcundezhenxing.png" }
+spriteType = { name = "AOR_goals_xiudingyibaofaan" texturefile = "gfx/interface/goals/AOR_goals_xiudingyibaofaan.png" }
+spriteType = { name = "AOR_goals_yaoqingqiyejinzhuzhimindi" texturefile = "gfx/interface/goals/AOR_goals_yaoqingqiyejinzhuzhimindi.png" }
+spriteType = { name = "AOR_goals_yidairenyouyidairendeshiming" texturefile = "gfx/interface/goals/AOR_goals_yidairenyouyidairendeshiming.png" }
+spriteType = { name = "AOR_goals_yongshifanrongbuliedian" texturefile = "gfx/interface/goals/AOR_goals_yongshifanrongbuliedian.png" }
+spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface/goals/AOR_goals_zhanhouxinqixiang.png" }
+ #比利时国策图标
+  spriteType = {
+  name = "GFX_goal_BEL_People_exile_who_cry_with"
+  texturefile = "gfx/interface/goals/BEL_People_exile_who_cry_with.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_last_hope"
+  texturefile = "gfx/interface/goals/BEL_last_hope.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Place_of_burial"
+  texturefile = "gfx/interface/goals/BEL_Place_of_burial.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Long_way_home"
+  texturefile = "gfx/interface/goals/BEL_Long_way_home.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_gears_that_eat_people"
+  texturefile = "gfx/interface/goals/BEL_gears_that_eat_people.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_High_quality_citizen"
+  texturefile = "gfx/interface/goals/BEL_High_quality_citizen.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Country_of_Belgians"
+  texturefile = "gfx/interface/goals/BEL_Country_of_Belgians.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Minor_concession"
+  texturefile = "gfx/interface/goals/BEL_Minor_concession.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Elite_first"
+  texturefile = "gfx/interface/goals/BEL_Elite_first.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Building_Congo"
+  texturefile = "gfx/interface/goals/BEL_Building_Congo.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Crush_rebels"
+  texturefile = "gfx/interface/goals/BEL_Crush_rebels.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Slaves_in_cornfields"
+  texturefile = "gfx/interface/goals/BEL_Slaves_in_cornfields.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Only_heart_of_restoration"
+  texturefile = "gfx/interface/goals/BEL_Only_heart_of_restoration.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Rwanda_question"
+  texturefile = "gfx/interface/goals/BEL_Rwanda_question.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_to_know_how_much_hate"
+  texturefile = "gfx/interface/goals/BEL_to_know_how_much_hate.png"
+ }
+ spriteType = {
+  name = "GFX_goal_BEL_Red_chaos_mountains_flowers"
+  texturefile = "gfx/interface/goals/BEL_Red_chaos_mountains_flowers.png"
+ }
+ ####阿工团第二阶段国策树注册
+  spriteType = {
+  name = "GFX_goal_ORA_Sunrise_of_victory"
+  texturefile = "gfx/interface/goals/ORA_Sunrise_of_victory.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_undone"
+  texturefile = "gfx/interface/goals/ORA_undone.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_De_war_status"
+  texturefile = "gfx/interface/goals/ORA_De_war_status.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_home_rebuilding"
+  texturefile = "gfx/interface/goals/ORA_home_rebuilding.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_revival_civilian_industry"
+  texturefile = "gfx/interface/goals/ORA_revival_civilian_industry.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Pacify_the_masses"
+  texturefile = "gfx/interface/goals/ORA_Pacify_the_masses.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Wipe_out_reactionary_forces"
+  texturefile = "gfx/interface/goals/ORA_Wipe_out_reactionary_forces.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_worker_pickets"
+  texturefile = "gfx/interface/goals/ORA_worker_pickets.png"
+ }
+ spriteType = {
+  name = "GFX_goal_ORA_Look_forward_future"
+  texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
  }
 }

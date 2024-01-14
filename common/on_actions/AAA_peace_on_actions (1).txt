@@ -200,12 +200,8 @@ on_actions = {
 					limit = { has_war_with = YUG }
 					white_peace = YUG
 				}
-				GRE = {country_event = {
-					days = 1 id = GRE.12
-				}
 				
 				}
-			}
 			else_if = {
 				limit = {
 					FROM = {
@@ -220,11 +216,14 @@ on_actions = {
 					}
 				}
 				YUG = {
-					annex_country = {
-						target = DAL
-					}
+					transfer_state = 804
+					transfer_state = 872
 					add_state_core = 804
 					add_state_core = 872
+					
+				}
+				ITA = {
+					transfer_state = 163
 					add_state_core = 163
 				}
 				every_country = {
@@ -236,10 +235,9 @@ on_actions = {
 					white_peace = YUG
 				}
 				GRE = {country_event = {
-					days = 1 id = GRE.13
+					days = 90 id = GRE.14
 				}
-				
-				}
+			}
 			}
 			else_if = {
 				limit = {
@@ -269,15 +267,14 @@ on_actions = {
 					limit = { has_war_with = YUG }
 					white_peace = YUG
 				}
-				GRE = {country_event = {
-					days = 1 id = GRE.14
-				}
+				
+				
 				
 				}
-			}
 			#巴尔干战争 希腊-匈牙利
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =HUN}
 					FROM = {
 						OR = {
 							original_tag = GRE
@@ -303,6 +300,7 @@ on_actions = {
 			else_if = {
 				limit = {
 					FROM = {
+						GRE = {is_in_faction_with =HUN}
 						OR = {
 							original_tag = GRE
 							original_tag = HUN
@@ -330,6 +328,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =HUN}
 					FROM = {
 						OR = {
 							original_tag = GRE
@@ -359,6 +358,7 @@ on_actions = {
 			#输
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =HUN}
 					FROM = {
 						OR = {
 							original_tag = YUG
@@ -376,12 +376,16 @@ on_actions = {
 					limit = { has_war_with =  GRE}
 					white_peace = GRE
 				}
+				BUL = {
+					transfer_state = 184
+				}
 				TUR = {country_event = {
 					days = 90 id = TUR.5
 				}}
 			}
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =HUN}
 					FROM = {
 						OR = {
 							original_tag = YUG
@@ -410,6 +414,8 @@ on_actions = {
 			}
 			#巴尔干战争-希腊-南斯拉夫-罗马尼亚
 			else_if = {
+				GRE = {is_in_faction_with =YUG}
+
 				limit = {
 					FROM = {
 						OR = {
@@ -438,6 +444,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =YUG}
 					FROM = {
 						OR = {
 							original_tag = GRE
@@ -468,6 +475,7 @@ on_actions = {
 		#输了
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =YUG}
 					FROM = {
 						OR = {
 							original_tag = HUN
@@ -481,7 +489,7 @@ on_actions = {
 				}
 				BUL = {
 					transfer_state = 77
-					transfer_state = 731
+
 					transfer_state = 851
 				}
 				HUN = {
@@ -497,6 +505,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
+					BUL = {is_in_faction_with = HUN}
 					FROM = {
 						OR = {
 							original_tag = HUN
@@ -510,11 +519,7 @@ on_actions = {
 				}
 				BUL = {
 					transfer_state = 184
-					transfer_state = 77
 					transfer_state = 731
-					transfer_state = 851
-					transfer_state = 106
-					transfer_state = 803
 					transfer_state = 341
 				}
 				GRE = {
@@ -527,6 +532,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
+					GRE = {is_in_faction_with =YUG}
 					FROM = {
 						OR = {
 							original_tag = HUN
@@ -580,6 +586,112 @@ on_actions = {
 				every_country = {
 					limit = { has_war_with = TUR }
 					white_peace = TUR
+				}
+			}
+			#捷克
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = ENG
+							has_war_together_with = ENG
+					}
+					ROOT = {
+						original_tag = CZE
+					}
+				}
+			}
+				CZE = {
+
+					transfer_state = 69
+					transfer_state =  9
+					transfer_state =  75
+					transfer_state = 74
+					transfer_state =  72
+					set_politics = { ruling_party = CON_democratic}
+					add_popularity = { ideology = CON_democratic popularity = 56 }
+				}
+				every_country = {
+					limit = { has_war_with = CZE }
+					white_peace = CZE
+				}
+			}
+			else_if = {
+				limit={
+					FROM = {
+						OR = {
+							original_tag = US1
+							original_tag = US2
+							original_tag = US3
+							original_tag = US4
+							original_tag = US5
+							original_tag = US6
+							original_tag = US7
+							original_tag = US8
+	
+					}
+				}
+					ROOT = {
+						OR = {
+						original_tag = US1
+							original_tag = US2
+							original_tag = US3
+							original_tag = US4
+							original_tag = US5
+							original_tag = US6
+							original_tag = US7
+							original_tag = US8
+						}
+					}
+				}
+				FROM = {annex_country = { target = ROOT transfer_troops = yes }}
+				log = "吞并！"
+				every_country = {
+					limit = { has_war_with = ROOT }
+					white_peace = ROOT
+				}
+				
+			}
+			else_if = {
+				limit = {
+					#合众国胜利
+					FROM = {
+						original_tag = USA
+					}
+					ROOT = {
+						original_tag = CSA
+					}
+				}
+				USA = {
+					annex_country = {
+						target = CSA
+					}
+					country_event = {
+						id = USA.10000
+						days = 1
+					
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#联盟国胜利
+					FROM = {
+						original_tag = CSA
+					}
+					ROOT = {
+						original_tag = USA
+					}
+				}
+				CSA = {
+					annex_country = {
+						target = USA
+					}
+					country_event = {
+						id = CSA.10000
+						days = 1
+					
+					}
 				}
 			}
 		}

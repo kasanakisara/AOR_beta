@@ -69,7 +69,9 @@ country_event = {#侵略成功
 			limit = { has_war_with = TUR }
 			white_peace = TUR
 		}
-		
+		GRE = {
+			country_event = {days = 45 id = GRE.5}
+		}
 	}
 }
 country_event = {#自卫成功
@@ -98,6 +100,9 @@ country_event = {#自卫成功
 			limit = { has_war_with = TUR }
 			white_peace = TUR
 		}
+		GRE = {
+			country_event = {days = 45 id = GRE.5}
+		}
 	}
 }
 country_event = {#自卫成功
@@ -110,7 +115,7 @@ country_event = {#自卫成功
     #那就这样吧  	
 	option = {
 		name = TUR.5.a
-		news_event = {id = AOR_news.60}
+		news_event = {id = AOR_news.347}
 		add_ideas = {
 			revenge
 		}

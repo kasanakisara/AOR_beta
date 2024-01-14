@@ -96,5 +96,69 @@ units={
         start_experience_factor=0.2
         start_equipment_factor=1
     }
+    division={
+        name="第七希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第八希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第九希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十一希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十二希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十三希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十四希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+    division={
+        name="第十五希腊本土步兵"
+        location = 4109
+        division_template="本土步兵"
+        start_experience_factor=0.2
+        start_equipment_factor=1
+    }
+
 
 }

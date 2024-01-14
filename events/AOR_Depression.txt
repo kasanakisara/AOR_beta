@@ -25,9 +25,9 @@ country_event = {
 			add_ideas = Depression_calls_1
 			news_event = { AOR_news.21 }
 			}
-		}
-		
+		CZE={country_event = {id = CZE.1 dyas = 90}}
 	}
+}	
 
 country_event = {
 		id = AOR_Depression.2 #经济危机的爆发与扩散

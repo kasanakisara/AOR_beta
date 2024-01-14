@@ -3,7 +3,7 @@ focus_tree={
 	country={
 		factor=0
 		modifier={
-			add=100
+			add=10
 			tag=ORA
 		}
 	}
@@ -58,6 +58,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_De_war_status
+		icon = GFX_goal_ORA_De_war_status
 		x=5
 		y=2
 		prerequisite={focus=ORA_undone}
@@ -76,6 +77,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_home_rebuilding
+		icon = GFX_goal_ORA_home_rebuilding
 		x=5
 		y=3
 		prerequisite={focus=ORA_De_war_status}
@@ -93,6 +95,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_revival_civilian_industry
+		icon = GFX_goal_ORA_revival_civilian_industry
 		x=5
 		y=4
 		prerequisite={focus=ORA_home_rebuilding}
@@ -109,6 +112,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_Pacify_the_masses
+		icon = GFX_goal_ORA_Pacify_the_masses
 		x=9
 		y=2
 		prerequisite={focus=ORA_undone}
@@ -127,6 +131,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_Wipe_out_reactionary_forces
+		icon = GFX_goal_ORA_Wipe_out_reactionary_forces
 		x=9
 		y=3
 		prerequisite={focus=ORA_Pacify_the_masses}
@@ -144,6 +149,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_worker_pickets
+		icon = GFX_goal_ORA_worker_pickets
 		x=9
 		y=4
 		prerequisite={focus=ORA_Wipe_out_reactionary_forces}
@@ -162,6 +168,7 @@ focus_tree={
 	}
 	focus={
 		id=ORA_Look_forward_future
+		icon = GFX_goal_ORA_Look_forward_future
 		x=7
 		y=5
 		prerequisite={focus=ORA_revival_civilian_industry}

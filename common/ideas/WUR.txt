@@ -89,8 +89,8 @@ ideas = {
 
 			modifier = {
 				ATTRITION = -0.03
-				OFFENCE_FACTOR = 0.03
-				DEFENCE_FACTOR = 0.03
+				ARMY_ATTACK_FACTOR = 0.03
+				army_defence_factor = 0.03
 			}
 		}
     }

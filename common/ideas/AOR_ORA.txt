@@ -194,7 +194,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = -0.01
 				production_speed_buildings_factor = 0.025
 				industrial_capacity_factory = 0.025
-				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.03
+				production_factory_max_efficiency_factor = 0.03
 				consumer_goods_factor = -0.02
 			}
 		}
@@ -222,7 +222,7 @@ ideas = {
 			picture = GFX_ORA_wuchangjiejizhili
 			allowed = { always = yes }
 			modifier = {
-				PRODUCTION_FACTORY_MAX_EFFICIENCY = 0.10
+				production_factory_max_efficiency_factor = 0.10
 				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = -0.05
 				consumer_goods_factor = 0.02
 			}
@@ -245,12 +245,10 @@ ideas = {
 			}
 		}
 		ORA_gonghuizhiquan = {
-			ORA_gonghuizhiquan = {
-				 modifier = {
-					OPERATIVE_SLOT = 1
+			modifier = {
+				OPERATIVE_SLOT = 1
 				}
 			}
-	    }
 		ORA_gemingxianzhang = {
 			picture = GFX_ORA_gemingxianzhang
 			allowed = { always = yes }
@@ -294,7 +292,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 				production_factory_max_efficiency_factor = -0.05
-				tability_weekly = 0.001
+				stability_weekly = 0.001
 				compliance_growth = 0.15
 			}
 		}
@@ -304,7 +302,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 				production_factory_max_efficiency_factor = -0.05
-				tability_weekly = 0.001
+				stability_weekly = 0.001
 				compliance_growth = 0.15
 			}
 		}

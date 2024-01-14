@@ -1,900 +1,566 @@
-#by CMCMC
-#Localisations
-#CM_SE_title  scripted loc for bigevent title
-#CM_SE_desc  scripted loc for flavor text content
-#CM_SE_btn  scripted loc for button text
-#Texture
-#CM_SE_getpicture  scripted loc for picture entry,sprites(loc_keys) need to be defined in a .gfx file
-
-defined_text = {  #标题
-	name = CM_SE_title
+defined_text = {  
+	name = supernews_title
 		
 	text = {
 		trigger = {
-			check_variable = {global.CM_SE_event_id = 2 }
+			check_variable = {global.supernews_event_id = 1 }
 		}
-		localization_key = CM_SE_title_2
+		localization_key = supernews_title_1
 	}
 
 	text = {
 		trigger = {
-			check_variable = {global.CM_SE_event_id = 2 }
+			check_variable = {global.supernews_event_id = 2 }
 		}
-		localization_key = CM_SE_title_2
+		localization_key = supernews_title_2
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 3 }
+			check_variable = { global.supernews_event_id = 3 }
 		}
-		localization_key = CM_SE_title_3
+		localization_key = supernews_title_3
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 4 }
+			check_variable = { global.supernews_event_id = 4 }
 		}
-		localization_key = CM_SE_title_4
+		localization_key = supernews_title_4
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 5 }
+			check_variable = { global.supernews_event_id = 5 }
 		}
-		localization_key = CM_SE_title_5
+		localization_key = supernews_title_5
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 6 }
+			check_variable = { global.supernews_event_id = 6 }
 		}
-		localization_key = CM_SE_title_6
+		localization_key = supernews_title_6
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 7 }
+			check_variable = { global.supernews_event_id = 7 }
 		}
-		localization_key = CM_SE_title_7
+		localization_key = supernews_title_7
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 8 }
+			check_variable = { global.supernews_event_id = 8 }
 		}
-		localization_key = CM_SE_title_8
+		localization_key = supernews_title_8
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 9 }
+			check_variable = { global.supernews_event_id = 9 }
 		}
-		localization_key = CM_SE_title_9
+		localization_key = supernews_title_9
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 10 }
+			check_variable = { global.supernews_event_id = 10 }
 		}
-		localization_key = CM_SE_title_10
+		localization_key = supernews_title_10
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 11 }
+			check_variable = { global.supernews_event_id = 11 }
 		}
-		localization_key = CM_SE_title_11
+		localization_key = supernews_title_11
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 15 }
+			check_variable = { global.supernews_event_id = 15 }
 		}
-		localization_key = CM_SE_title_15
+		localization_key = supernews_title_15
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 16 }
+			check_variable = { global.supernews_event_id = 16 }
 		}
-		localization_key = CM_SE_title_16
+		localization_key = supernews_title_16
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 17 }
+			check_variable = { global.supernews_event_id = 17 }
 		}
-		localization_key = CM_SE_title_17
+		localization_key = supernews_title_17
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 18 }
+			check_variable = { global.supernews_event_id = 18 }
 		}
-		localization_key = CM_SE_title_18
+		localization_key = supernews_title_18
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 19 }
+			check_variable = { global.supernews_event_id = 19 }
 		}
-		localization_key = CM_SE_title_19
+		localization_key = supernews_title_19
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 20 }
+			check_variable = { global.supernews_event_id = 20 }
 		}
-		localization_key = CM_SE_title_20
+		localization_key = supernews_title_20
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 21 }
+			check_variable = { global.supernews_event_id = 21 }
 		}
-		localization_key = CM_SE_title_21
+		localization_key = supernews_title_21
 	}
 	text = { #标题
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 22 }
+			check_variable = { global.supernews_event_id = 22 }
 		}
-		localization_key = CM_SE_title_22
+		localization_key = supernews_title_22
 	}
 	text = { #标题
 	    trigger = {
-		    check_variable = { global.CM_SE_event_id = 23 }
+		    check_variable = { global.supernews_event_id = 23 }
 	    }
-	    localization_key = CM_SE_title_23
+	    localization_key = supernews_title_23
     }
 	text = { #标题
 	    trigger = {
-    		check_variable = { global.CM_SE_event_id = 24 }
+    		check_variable = { global.supernews_event_id = 24 }
     	}
-	    localization_key = CM_SE_title_24
+	    localization_key = supernews_title_24
     }
     text = { #标题
     	trigger = {
-	    	check_variable = { global.CM_SE_event_id = 25 }
+	    	check_variable = { global.supernews_event_id = 25 }
     	}
-	    localization_key = CM_SE_title_25
-}
-text = { #标题
-	trigger = {
-		check_variable = { global.CM_SE_event_id = 26 }
+	    localization_key = supernews_title_25
 	}
-	localization_key = CM_SE_title_26
-}
-text = { #标题
-	trigger = {
-		check_variable = { global.CM_SE_event_id = 27 }
-	}
-	localization_key = CM_SE_title_27
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 28 }
-}
-localization_key = CM_SE_title_28
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 29 }
-}
-localization_key = CM_SE_title_29
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 30 }
-}
-localization_key = CM_SE_title_30
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 31 }
-}
-localization_key = CM_SE_title_31
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 32 }
-}
-localization_key = CM_SE_title_32
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 33 }
-}
-localization_key = CM_SE_title_33
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 34 }
-}
-localization_key = CM_SE_title_34
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 35 }
-}
-localization_key = CM_SE_title_35
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 36 }
-}
-localization_key = CM_SE_title_36
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 37 }
-}
-localization_key = CM_SE_title_37
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 38 }
-}
-localization_key = CM_SE_title_38
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 39 }
-}
-localization_key = CM_SE_title_39
-}
+
 	text = {
-		trigger = { 
-		#generic
-		}
-		localization_key = CM_SE_title_missing
+		trigger = {}
+		localization_key = supernews_title_missing
 	}	
 	
 }
 
 
 defined_text = {  #描述
-	name = CM_SE_desc
-	
+	name = supernews_desc
 	text = {
 		trigger = {
-			check_variable = {global.CM_SE_event_id = 2 }
+			check_variable = {global.supernews_event_id = 1 }
 		}
-		localization_key = CM_SE_desc_2
+		localization_key = supernews_desc_1
+	}	
+	text = {
+		trigger = {
+			check_variable = {global.supernews_event_id = 2 }
+		}
+		localization_key = supernews_desc_2
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 3 }
+			check_variable = { global.supernews_event_id = 3 }
 		}
-		localization_key = CM_SE_desc_3
+		localization_key = supernews_desc_3
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 4 }
+			check_variable = { global.supernews_event_id = 4 }
 		}
-		localization_key = CM_SE_desc_4
+		localization_key = supernews_desc_4
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 5 }
+			check_variable = { global.supernews_event_id = 5 }
 		}
-		localization_key = CM_SE_desc_5
+		localization_key = supernews_desc_5
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 6 }
+			check_variable = { global.supernews_event_id = 6 }
 		}
-		localization_key = CM_SE_desc_6
+		localization_key = supernews_desc_6
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 7 }
+			check_variable = { global.supernews_event_id = 7 }
 		}
-		localization_key = CM_SE_desc_7
+		localization_key = supernews_desc_7
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 8 }
+			check_variable = { global.supernews_event_id = 8 }
 		}
-		localization_key = CM_SE_desc_8
+		localization_key = supernews_desc_8
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 9 }
+			check_variable = { global.supernews_event_id = 9 }
 		}
-		localization_key = CM_SE_desc_9
+		localization_key = supernews_desc_9
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 10 }
+			check_variable = { global.supernews_event_id = 10 }
 		}
-		localization_key = CM_SE_desc_10
+		localization_key = supernews_desc_10
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 11 }
+			check_variable = { global.supernews_event_id = 11 }
 		}
-		localization_key = CM_SE_desc_11
+		localization_key = supernews_desc_11
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 15 }
+			check_variable = { global.supernews_event_id = 15 }
 		}
-		localization_key = CM_SE_desc_15
+		localization_key = supernews_desc_15
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 16 }
+			check_variable = { global.supernews_event_id = 16 }
 		}
-		localization_key = CM_SE_desc_16
+		localization_key = supernews_desc_16
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 17 }
+			check_variable = { global.supernews_event_id = 17 }
 		}
-		localization_key = CM_SE_desc_17
+		localization_key = supernews_desc_17
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 18 }
+			check_variable = { global.supernews_event_id = 18 }
 		}
-		localization_key = CM_SE_desc_18
+		localization_key = supernews_desc_18
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 19 }
+			check_variable = { global.supernews_event_id = 19 }
 		}
-		localization_key = CM_SE_desc_19
+		localization_key = supernews_desc_19
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 20 }
+			check_variable = { global.supernews_event_id = 20 }
 		}
-		localization_key = CM_SE_desc_20
+		localization_key = supernews_desc_20
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 21 }
+			check_variable = { global.supernews_event_id = 21 }
 		}
-		localization_key = CM_SE_desc_21
+		localization_key = supernews_desc_21
 	}
 	text = { #描述
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 22 }
+			check_variable = { global.supernews_event_id = 22 }
 		}
-		localization_key = CM_SE_desc_22
+		localization_key = supernews_desc_22
 	}
 	text = { #描述
 	trigger = {
-	    	check_variable = { global.CM_SE_event_id = 23 }
+	    	check_variable = { global.supernews_event_id = 23 }
     	}
-	    localization_key = CM_SE_desc_23
+	    localization_key = supernews_desc_23
     }
-	text = { #标题
+	text = { #描述
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 24 }
-	}
-	localization_key = CM_SE_desc_24
-}
-text = { #标题
+	    	check_variable = { global.supernews_event_id = 24 }
+    	}
+	    localization_key = supernews_desc_24
+    }
+	text = { #描述
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 25 }
-	}
-	localization_key = CM_SE_desc_25
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 26 }
-}
-localization_key = CM_SE_desc_26
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 27 }
-}
-localization_key = CM_SE_desc_27
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 28 }
-}
-localization_key = CM_SE_desc_28
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 29 }
-}
-localization_key = CM_SE_desc_29
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 30 }
-}
-localization_key = CM_SE_desc_30
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 31 }
-}
-localization_key = CM_SE_desc_31
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 32 }
-}
-localization_key = CM_SE_desc_32
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 33 }
-}
-localization_key = CM_SE_desc_33
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 34 }
-}
-localization_key = CM_SE_desc_34
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 35 }
-}
-localization_key = CM_SE_desc_35
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 36 }
-}
-localization_key = CM_SE_desc_36
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 37 }
-}
-localization_key = CM_SE_desc_37
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 38 }
-}
-localization_key = CM_SE_desc_38
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 39 }
-}
-localization_key = CM_SE_desc_39
-}
+	    	check_variable = { global.supernews_event_id = 25 }
+    	}
+	    localization_key = supernews_desc_25
+    }
 	text = {
-		trigger = { 
-		#generic
-		}
-		localization_key = CM_SE_desc_missing
+		trigger = {}
+		localization_key = supernews_desc_missing
 	}	
 	
 }
 
 defined_text = {  #超事件图片
-	name = CM_SE_getpicture
-		
+	name = AOR_supernews_getpicture
 	text = {
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 2 }
+			check_variable = { global.supernews_event_id = 1 }
 		}
-		localization_key = GFX_CM_SE_0002
+		localization_key = GFX_AOR_supernews_1
+	}		
+	text = {
+		trigger = {
+			check_variable = { global.supernews_event_id = 2 }
+		}
+		localization_key = GFX_AOR_supernews_2
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 3 }
+			check_variable = { global.supernews_event_id = 3 }
 		}
-		localization_key = GFX_CM_SE_3
+		localization_key = GFX_AOR_supernews_3
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 4 }
+			check_variable = { global.supernews_event_id = 4 }
 		}
-		localization_key = GFX_CM_SE_4
+		localization_key = GFX_AOR_supernews_4
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 5 }
+			check_variable = { global.supernews_event_id = 5 }
 		}
-		localization_key = GFX_CM_SE_5
+		localization_key = GFX_AOR_supernews_5
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 6 }
+			check_variable = { global.supernews_event_id = 6 }
 		}
-		localization_key = GFX_CM_SE_6
+		localization_key = GFX_AOR_supernews_6
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 7 }
+			check_variable = { global.supernews_event_id = 7 }
 		}
-		localization_key = GFX_CM_SE_7
+		localization_key = GFX_AOR_supernews_7
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 8 }
+			check_variable = { global.supernews_event_id = 8 }
 		}
-		localization_key = GFX_CM_SE_8
+		localization_key = GFX_AOR_supernews_8
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 9 }
+			check_variable = { global.supernews_event_id = 9 }
 		}
-		localization_key = GFX_CM_SE_9
+		localization_key = GFX_AOR_supernews_9
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 10 }
+			check_variable = { global.supernews_event_id = 10 }
 		}
-		localization_key = GFX_CM_SE_10
+		localization_key = GFX_AOR_supernews_10
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 11 }
+			check_variable = { global.supernews_event_id = 11 }
 		}
-		localization_key = GFX_CM_SE_11
+		localization_key = GFX_AOR_supernews_11
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 15 }
+			check_variable = { global.supernews_event_id = 15 }
 		}
-		localization_key = GFX_CM_SE_15
+		localization_key = GFX_AOR_supernews_15
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 16 }
+			check_variable = { global.supernews_event_id = 16 }
 		}
-		localization_key = GFX_CM_SE_16
+		localization_key = GFX_AOR_supernews_16
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 17 }
+			check_variable = { global.supernews_event_id = 17 }
 		}
-		localization_key = GFX_CM_SE_17
+		localization_key = GFX_AOR_supernews_17
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 18 }
+			check_variable = { global.supernews_event_id = 18 }
 		}
-		localization_key = GFX_CM_SE_18
+		localization_key = GFX_AOR_supernews_18
 	}
 	text = { #图片 
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 19 }
+			check_variable = { global.supernews_event_id = 19 }
 		}
-		localization_key = GFX_CM_SE_19
+		localization_key = GFX_AOR_supernews_19
 	} 
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 20 }
+			check_variable = { global.supernews_event_id = 20 }
 		}
-		localization_key = GFX_CM_SE_20
+		localization_key = GFX_AOR_supernews_20
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 21 }
+			check_variable = { global.supernews_event_id = 21 }
 		}
-		localization_key = GFX_CM_SE_21
+		localization_key = GFX_AOR_supernews_21
 	}
 	text = { #图片
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 22 }
+			check_variable = { global.supernews_event_id = 22 }
 		}
-		localization_key = GFX_CM_SE_22
+		localization_key = GFX_AOR_supernews_22
 	}
 	text = { #图片
 	trigger = {
-	    	check_variable = { global.CM_SE_event_id = 23 }
+	    	check_variable = { global.supernews_event_id = 23 }
         }
-		localization_key = GFX_CM_SE_23
+		localization_key = GFX_AOR_supernews_23
 	}
+	text = { #图片
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 24 }
+	    	check_variable = { global.supernews_event_id = 24 }
+        }
+		localization_key = GFX_AOR_supernews_24
 	}
-	localization_key = GFX_CM_SE_24
-text = { #标题
+	text = { #图片
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 25 }
+	    	check_variable = { global.supernews_event_id = 25 }
+        }
+		localization_key = GFX_AOR_supernews_25
 	}
-	localization_key = GFX_CM_SE_25
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 26 }
-}
-localization_key = GFX_CM_SE_26
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 27 }
-}
-localization_key = GFX_CM_SE_27
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 28 }
-}
-localization_key = GFX_CM_SE_28
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 29 }
-}
-localization_key = GFX_CM_SE_29
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 30 }
-}
-localization_key = GFX_CM_SE_30
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 31 }
-}
-localization_key = GFX_CM_SE_31
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 32 }
-}
-localization_key = GFX_CM_SE_32
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 33 }
-}
-localization_key = GFX_CM_SE_33
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 34 }
-}
-localization_key = GFX_CM_SE_34
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 35 }
-}
-localization_key = GFX_CM_SE_35
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 36 }
-}
-localization_key = GFX_CM_SE_36
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 37 }
-}
-localization_key = GFX_CM_SE_37
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 38 }
-}
-localization_key = GFX_CM_SE_38
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 39 }
-}
-localization_key =GFX_CM_SE_39
-}
-	
-	#11 - 6
 	text = {
-		trigger = { 
-		#generic
-		}
-		localization_key = GFX_CM_SE_pic_entry
+		trigger = {}
+		localization_key = GFX_AOR_supernews_pic_entry
 	}	
 }
 
 defined_text = {  #按钮
-	name = CM_SE_btn 
-		
+	name = supernews_btn 
 	text = {
 		trigger = {
-			check_variable = {global.CM_SE_event_id = 2 }
+			check_variable = {global.supernews_event_id = 1 }
 		}
-		localization_key = CM_SE_btn_2
+		localization_key = supernews_btn_1
+	}		
+	text = {
+		trigger = {
+			check_variable = {global.supernews_event_id = 2 }
+		}
+		localization_key = supernews_btn_2
 	}
 
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 3 }
+			check_variable = { global.supernews_event_id = 3 }
 		}
-		localization_key = CM_SE_btn_3
+		localization_key = supernews_btn_3
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 4 }
+			check_variable = { global.supernews_event_id = 4 }
 		}
-		localization_key = CM_SE_btn_4
+		localization_key = supernews_btn_4
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 5 }
+			check_variable = { global.supernews_event_id = 5 }
 		}
-		localization_key = CM_SE_btn_5
+		localization_key = supernews_btn_5
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 6 }
+			check_variable = { global.supernews_event_id = 6 }
 		}
-		localization_key = CM_SE_btn_6
+		localization_key = supernews_btn_6
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 7 }
+			check_variable = { global.supernews_event_id = 7 }
 		}
-		localization_key = CM_SE_btn_7
+		localization_key = supernews_btn_7
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 8 }
+			check_variable = { global.supernews_event_id = 8 }
 		}
-		localization_key = CM_SE_btn_8
+		localization_key = supernews_btn_8
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 9 }
+			check_variable = { global.supernews_event_id = 9 }
 		}
-		localization_key = CM_SE_btn_9
+		localization_key = supernews_btn_9
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 10 }
+			check_variable = { global.supernews_event_id = 10 }
 		}
-		localization_key = CM_SE_btn_10
+		localization_key = supernews_btn_10
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 11 }
+			check_variable = { global.supernews_event_id = 11 }
 		}
-		localization_key = CM_SE_btn_11
+		localization_key = supernews_btn_11
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 15 }
+			check_variable = { global.supernews_event_id = 15 }
 		}
-		localization_key = CM_SE_btn_15
+		localization_key = supernews_btn_15
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 16 }
+			check_variable = { global.supernews_event_id = 16 }
 		}
-		localization_key = CM_SE_btn_16
+		localization_key = supernews_btn_16
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 17 }
+			check_variable = { global.supernews_event_id = 17 }
 		}
-		localization_key = CM_SE_btn_17
+		localization_key = supernews_btn_17
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 18 }
+			check_variable = { global.supernews_event_id = 18 }
 		}
-		localization_key = CM_SE_btn_18
+		localization_key = supernews_btn_18
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 19 }
+			check_variable = { global.supernews_event_id = 19 }
 		}
-		localization_key = CM_SE_btn_19
+		localization_key = supernews_btn_19
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 20 }
+			check_variable = { global.supernews_event_id = 20 }
 		}
-		localization_key = CM_SE_btn_20
+		localization_key = supernews_btn_20
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 21 }
+			check_variable = { global.supernews_event_id = 21 }
 		}
-		localization_key = CM_SE_btn_21
+		localization_key = supernews_btn_21
 	}
 	text = { #按钮
 		trigger = {
-			check_variable = { global.CM_SE_event_id = 22 }
+			check_variable = { global.supernews_event_id = 22 }
 		}
-		localization_key = CM_SE_btn_22
+		localization_key = supernews_btn_22
 	}
 	text = { #按钮
 	trigger = {
-	    	check_variable = { global.CM_SE_event_id = 23 }
+	    	check_variable = { global.supernews_event_id = 23 }
     	}
-      	localization_key = CM_SE_btn_23
-    }   
+      	localization_key = supernews_btn_23
+    }  
+	text = { #按钮
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 24 }
-	}
-	localization_key = CM_SE_btn_24
-text = { #标题
+	    	check_variable = { global.supernews_event_id = 24 }
+    	}
+      	localization_key = supernews_btn_24
+    }  
+	text = { #按钮
 	trigger = {
-		check_variable = { global.CM_SE_event_id = 25 }
-	}
-	localization_key = CM_SE_btn_25
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 26 }
-}
-localization_key = CM_SE_btn_26
-}
-text = { #标题
-trigger = {
-	check_variable = { global.CM_SE_event_id = 27 }
-}
-localization_key = CM_SE_btn_27
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 28 }
-}
-localization_key = CM_SE_btn_28
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 29 }
-}
-localization_key = CM_SE_btn_29
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 30 }
-}
-localization_key = CM_SE_btn_30
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 31 }
-}
-localization_key = CM_SE_btn_31
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 32 }
-}
-localization_key = CM_SE_btn_32
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 33 }
-}
-localization_key = CM_SE_btn_33
-}
-text = { #标题
-trigger = {
-check_variable = { global.CM_SE_event_id = 34 }
-}
-localization_key = CM_SE_btn_34
-}
-    text = { #标题
-        trigger = {
-            check_variable = { global.CM_SE_event_id = 35 }
-        }
-        localization_key = CM_SE_btn_35
-        }
-    text = { #标题
-        trigger = {
-            check_variable = { global.CM_SE_event_id = 36 }
-        }
-        localization_key = CM_SE_btn_36
-        }
-    text = { #标题
-        trigger = {
-            check_variable = { global.CM_SE_event_id = 37 }
-        }
-        localization_key = CM_SE_btn_37
-        }
-    text = { #标题
-        trigger = {
-            check_variable = { global.CM_SE_event_id = 38 }
-        }
-        localization_key = CM_SE_btn_38
-        }
-    text = { #标题
-        trigger = {
-            check_variable = { global.CM_SE_event_id = 39 }
-        }
-        localization_key = CM_SE_btn_39
-        }
+	    	check_variable = { global.supernews_event_id = 25 }
+    	}
+      	localization_key = supernews_btn_25
+    }  	
 	text = {
-		trigger = { 
-		#generic
-		}
-		localization_key = CM_SE_btn_missing
+		trigger = {}
+		localization_key = supernews_btn_missing
 	}	
 }

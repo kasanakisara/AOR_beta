@@ -64,7 +64,7 @@ ideas = {
 		}
 	naval_club = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_naval_club
 			
@@ -78,7 +78,7 @@ ideas = {
 		}
 		The_remaining_industrial_base = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_The_remaining_industrial_base
 			
@@ -89,7 +89,7 @@ ideas = {
 		}
 		Break_with_the_rebels = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -101,7 +101,7 @@ ideas = {
 		
 	   	Wilhelmshaven_Dunkirk_Agreement = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -113,7 +113,7 @@ ideas = {
 		
 		nation_or_navy = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -126,7 +126,7 @@ ideas = {
 		
 		Dortmund_Brewery = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -137,7 +137,7 @@ ideas = {
 		
 		Beer_Or_gun = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -148,7 +148,7 @@ ideas = {
 		
 	  	Ambiguous_fleet_intentions = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -160,7 +160,7 @@ ideas = {
 		
 	    The_growth_of_red_power = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			
@@ -171,7 +171,7 @@ ideas = {
 		
 		 The_New_Army_in_action = {
 
-			romoval_cost = -1
+			removal_cost = -1
 			
 			picture = idea_Break_with_the_rebels
 			

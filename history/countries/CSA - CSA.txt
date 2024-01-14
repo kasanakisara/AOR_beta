@@ -22,15 +22,15 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	gw_artillery = 1
+ 
 	
-	early_fighter = 1
+ 
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	cv_CAS1 = 1
-	naval_bomber1 = 1
+ 
 	CAS1 = 1
-	early_bomber = 1
+ 
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -85,12 +85,17 @@ set_popularities = {
 }
 
 add_ideas = {
+	Dixie_Goes_Again
+	Oil_Heaven
+	Imprison_in_the_dark
+	Armament_of_the_Union
+	Fire_Cactus
 }
 
 create_country_leader = {
-	name = "John Nance Garner IV"
+	name = "John_Nance_Garner_IV"
 	desc = "POLITICS_John_Nance_Garner_IV_DESC"
-	picture = GFX_portrait_John_Nance_Garner_IV
+	picture = "gfx/leaders/CSA/Gamaliel_Harding.png"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

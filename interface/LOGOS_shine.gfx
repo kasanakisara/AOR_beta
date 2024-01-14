@@ -1939,4 +1939,1804 @@ SpriteType = {
   }
   legacy_lazy_load = no
  }
+ 
+ #英国外交线注册
+ SpriteType = {
+  name = "AOR_goals_chilunbutingzhuan_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_chilunbutingzhuan.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_chilunbutingzhuan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_chilunbutingzhuan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_chubanaiguoduwu_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_chubanaiguoduwu.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_chubanaiguoduwu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_chubanaiguoduwu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_dadanxingdong_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_dadanxingdong.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_dadanxingdong.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_dadanxingdong.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_fangkuangongshijianguan_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_fangkuangongshijianguan.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fangkuangongshijianguan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fangkuangongshijianguan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_fazhanbentujiaoyu_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_fazhanbentujiaoyu.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fazhanbentujiaoyu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fazhanbentujiaoyu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_fazhanbunengduan_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_fazhanbunengduan.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fazhanbunengduan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fazhanbunengduan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_fuchinanfangmaoyi_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_fuchinanfangmaoyi.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fuchinanfangmaoyi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_fuchinanfangmaoyi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_gongshizhidugexin_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_gongshizhidugexin.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_gongshizhidugexin.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_gongshizhidugexin.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_guojiajihua_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_guojiajihua.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_guojiajihua.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_guojiajihua.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_huifujingji.png"
+  texturefile = "gfx/interface/goals/AOR_goals_huifujingji.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_huifujingji.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_huifujingji.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_huifuyuanqi.png"
+  texturefile = "gfx/interface/goals/AOR_goals_huifuyuanqi.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_huifuyuanqi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_huifuyuanqi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jiaqiangmengyoutuanjie.png"
+  texturefile = "gfx/interface/goals/AOR_goals_jiaqiangmengyoutuanjie.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiaqiangmengyoutuanjie.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiaqiangmengyoutuanjie.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jiaqiangyugeguowanglai.png"
+  texturefile = "gfx/interface/goals/AOR_goals_jiaqiangyugeguowanglai.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiaqiangyugeguowanglai.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiaqiangyugeguowanglai.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jieshourenminyijian.png"
+  texturefile = "gfx/interface/goals/AOR_goals_jieshourenminyijian.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jieshourenminyijian.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jieshourenminyijian.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jieshouyindulaodongli.png"
+  texturefile = "gfx/interface/goals/AOR_goals_jieshouyindulaodongli.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jieshouyindulaodongli.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jieshouyindulaodongli.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jingjikaoqiye_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jingjikaoqiye_1_shine"
+  texturefile = "gfx/interface/goals/AOR_goals_jingjikaoqiye_1.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jingjikaoqiye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_jiujituiwulaobing.png"
+  texturefile = "gfx/interface/goals/AOR_goals_jiujituiwulaobing.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiujituiwulaobing.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_jiujituiwulaobing.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_kaishexuexiao.png"
+  texturefile = "gfx/interface/goals/AOR_goals_kaishexuexiao.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_kaishexuexiao.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_kaishexuexiao.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_quebaogongrenwending.png"
+  texturefile = "gfx/interface/goals/AOR_goals_quebaogongrenwending.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_quebaogongrenwending.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_quebaogongrenwending.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_shijiekewangzhichenglundun.png"
+  texturefile = "gfx/interface/goals/AOR_goals_shijiekewangzhichenglundun.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_shijiekewangzhichenglundun.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_shijiekewangzhichenglundun.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_shuangCjihuachulu.png"
+  texturefile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_taigaoqiyejiadiwei.png"
+  texturefile = "gfx/interface/goals/AOR_goals_taigaoqiyejiadiwei.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_taigaoqiyejiadiwei.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_taigaoqiyejiadiwei.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_tigaojihuayouxianji.png"
+  texturefile = "gfx/interface/goals/AOR_goals_tigaojihuayouxianji.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_tigaojihuayouxianji.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_tigaojihuayouxianji.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_tuiwujunrenzaijiuye.png"
+  texturefile = "gfx/interface/goals/AOR_goals_tuiwujunrenzaijiuye.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_tuiwujunrenzaijiuye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_tuiwujunrenzaijiuye.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_wendingfeizhou.png"
+  texturefile = "gfx/interface/goals/AOR_goals_wendingfeizhou.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_wendingfeizhou.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_wendingfeizhou.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_wenzhuguojiahaobanshi.png"
+  texturefile = "gfx/interface/goals/AOR_goals_wenzhuguojiahaobanshi.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_wenzhuguojiahaobanshi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_wenzhuguojiahaobanshi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_womenxiangxinlaoheqiaozhi.png"
+  texturefile = "gfx/interface/goals/AOR_goals_womenxiangxinlaoheqiaozhi.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_womenxiangxinlaoheqiaozhi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_womenxiangxinlaoheqiaozhi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_xiangcundezhenxing.png"
+  texturefile = "gfx/interface/goals/AOR_goals_xiangcundezhenxing.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_xiangcundezhenxing.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_xiangcundezhenxing.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_xiudingyibaofaan.png"
+  texturefile = "gfx/interface/goals/AOR_goals_xiudingyibaofaan.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_xiudingyibaofaan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_xiudingyibaofaan.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_yaoqingqiyejinzhuzhimindi.png"
+  texturefile = "gfx/interface/goals/AOR_goals_yaoqingqiyejinzhuzhimindi.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yaoqingqiyejinzhuzhimindi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yaoqingqiyejinzhuzhimindi.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_yidairenyouyidairendeshiming.png"
+  texturefile = "gfx/interface/goals/AOR_goals_yidairenyouyidairendeshiming.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yidairenyouyidairendeshiming.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yidairenyouyidairendeshiming.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_yongshifanrongbuliedian.png"
+  texturefile = "gfx/interface/goals/AOR_goals_yongshifanrongbuliedian.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yongshifanrongbuliedian.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_yongshifanrongbuliedian.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+SpriteType = {
+  name = "AOR_goals_zhanhouxinqixiang.png"
+  texturefile = "gfx/interface/goals/AOR_goals_zhanhouxinqixiang.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_zhanhouxinqixiang.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  animation = {
+   animationmaskfile = "gfx/interface/goals/AOR_goals_zhanhouxinqixiang.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+   animationrotation = 90.0
+   animationlooping = no
+   animationtime = 0.75
+   animationdelay = 0
+   animationblendmode = "add"
+   animationtype = "scrolling"
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+ 
+ ###比利时国策####
+ SpriteType = {
+  name = "GFX_goal_BEL_People_exile_who_cry_with_shine"
+  texturefile = "gfx/interface/goals/BEL_People_exile_who_cry_with.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_People_exile_who_cry_with.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_People_exile_who_cry_with.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_last_hope_shine"
+  texturefile = "gfx/interface/goals/BEL_last_hope.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_last_hope.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_last_hope.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.1 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Place_of_burial_shine"
+  texturefile = "gfx/interface/goals/BEL_Place_of_burial.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Place_of_burial.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Place_of_burial.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.2 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Long_way_home_shine"
+  texturefile = "gfx/interface/goals/BEL_Long_way_home.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Long_way_home.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Long_way_home.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.3 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_gears_that_eat_people_shine"
+  texturefile = "gfx/interface/goals/BEL_gears_that_eat_people.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_gears_that_eat_people.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_gears_that_eat_people.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.4 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_High_quality_citizen_shine"
+  texturefile = "gfx/interface/goals/BEL_High_quality_citizen.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_High_quality_citizen.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_High_quality_citizen.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.5 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Country_of_Belgians_shine"
+  texturefile = "gfx/interface/goals/BEL_Country_of_Belgians.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Country_of_Belgians.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Country_of_Belgians.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.6 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Minor_concession_shine"
+  texturefile = "gfx/interface/goals/BEL_Minor_concession.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Minor_concession.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Minor_concession.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.7 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Elite_first_shine"
+  texturefile = "gfx/interface/goals/BEL_Elite_first.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Elite_first.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Elite_first.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.8 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Building_Congo_shine"
+  texturefile = "gfx/interface/goals/BEL_Building_Congo.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Building_Congo.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Building_Congo.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.9 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Crush_rebels_shine"
+  texturefile = "gfx/interface/goals/BEL_Crush_rebels.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Crush_rebels.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Crush_rebels.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.10 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Slaves_in_cornfields_shine"
+  texturefile = "gfx/interface/goals/BEL_Slaves_in_cornfields.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Slaves_in_cornfields.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Slaves_in_cornfields.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.11 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Only_heart_of_restoration_shine"
+  texturefile = "gfx/interface/goals/BEL_Only_heart_of_restoration.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Only_heart_of_restoration.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Only_heart_of_restoration.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.12 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Rwanda_question_shine"
+  texturefile = "gfx/interface/goals/BEL_Rwanda_question.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Rwanda_question.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Rwanda_question.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.13 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_to_know_how_much_hate_shine"
+  texturefile = "gfx/interface/goals/BEL_to_know_how_much_hate.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_to_know_how_much_hate.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_to_know_how_much_hate.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.14 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_BEL_Red_chaos_mountains_flowers_shine"
+  texturefile = "gfx/interface/goals/BEL_Red_chaos_mountains_flowers.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Red_chaos_mountains_flowers.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/BEL_Red_chaos_mountains_flowers.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.15 } 
+  }
+  legacy_lazy_load = no
+ }
+ ####阿工团第二阶段国策树
+ SpriteType = {
+  name = "GFX_goal_ORA_Sunrise_of_victory_shine"
+  texturefile = "gfx/interface/goals/ORA_Sunrise_of_victory.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Sunrise_of_victory.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Sunrise_of_victory.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_undone_shine"
+  texturefile = "gfx/interface/goals/ORA_undone.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_undone.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_undone.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.1 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_De_war_status_shine"
+  texturefile = "gfx/interface/goals/ORA_De_war_status.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_De_war_status.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_De_war_status.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.2 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_home_rebuilding_shine"
+  texturefile = "gfx/interface/goals/ORA_home_rebuilding.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_home_rebuilding.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_home_rebuilding.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.3 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_revival_civilian_industry_shine"
+  texturefile = "gfx/interface/goals/ORA_revival_civilian_industry.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_revival_civilian_industry.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_revival_civilian_industry.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.4 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_Pacify_the_masses_shine"
+  texturefile = "gfx/interface/goals/ORA_Pacify_the_masses.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Pacify_the_masses.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Pacify_the_masses.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.5 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_Wipe_out_reactionary_forces_shine"
+  texturefile = "gfx/interface/goals/ORA_Wipe_out_reactionary_forces.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Wipe_out_reactionary_forces.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Wipe_out_reactionary_forces.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.6 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_worker_pickets_shine"
+  texturefile = "gfx/interface/goals/ORA_worker_pickets.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_worker_pickets.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_worker_pickets.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.7 } 
+  }
+  legacy_lazy_load = no
+ }
+SpriteType = {
+  name = "GFX_goal_ORA_Look_forward_future_shine"
+  texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Look_forward_future.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+   animationmaskfile = "gfx/interface/goals/ORA_Look_forward_future.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+   animationrotation = 90.0 
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"       
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.8 } 
+  }
+  legacy_lazy_load = no
+ }
 }

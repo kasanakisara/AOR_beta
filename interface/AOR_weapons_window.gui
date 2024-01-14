@@ -89,7 +89,7 @@ guiTypes = {
 			}
 			spriteType = "ENG_hounse_of_commons_MP"
 			Orientation = center
-			origo = center
+			Origo = center
 			scale = 0.17
 		}
 	}

@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 384
 
 #oob = "USA_1936"
 
@@ -13,21 +13,10 @@ if = {
 }
 
 set_research_slots = 4
-set_stability = 0.75
-set_war_support = 10
+set_stability = 0.55
+set_war_support = 0.95
 add_command_power = 20
-set_variable = { var = senators_support value = 48 }
-set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 218 }
-set_variable = { var = representatives_total value = 435 }
-set_variable = { var = quorum_low value = 39 }
-set_variable = { var = quorum_medium value = 49 }
-set_variable = { var = quorum_high value = 58 }
-USA_recalc_congress_icon_frames = yes
-USA = {
-	country_event = { id = usa.50 days = 2 }
-	country_event = { id = usa.51 days = 2 }
-}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -35,18 +24,18 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	gw_artillery = 1
+ 
 	interwar_antiair = 1
-	early_fighter = 1
+ 
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	cv_CAS1 = 1
-	naval_bomber1 = 1
+ 
 	CAS1 = 1
-	early_bomber = 1
+ 
 	superior_firepower = 1
 	base_strike = 1
-	motorised_infantry = 1
+	 
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
@@ -83,37 +72,27 @@ if = {
 
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = Absolutism
 	last_election = "1915.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	CON_democratic = 45 #洋基党
-	FRE_democratic = 40 #迪克西党
-	SOC_democratic = 5 #社民
-	AGR_socialism = 3 #农工党
-	AUT_democratic = 5 #社会党
-	Absolutism = 2 #独立同盟
+	AUT_democratic = 45
+	Absolutism = 55
 }
 
 create_country_leader = {
-	name = "Thomas Woodrow Wilson"
+	name = "William_Kissam_Vanderbilt"
 	desc = ""
-	picture = "axm7x-nkh4s.dds"
+	picture = "gfx/leaders/US7/William_Kissam_Vanderbilt.png"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = miliciagov
 	traits = {
 		
 	}
 
 }
-add_ideas = {
-	USA_the_divided_nation
-	USA_Anglo_frech_enterprise
-	USA_steel_and_cotton 
-	USA_participation_award
-	USA_Dollar_bottom
-}
+
 
