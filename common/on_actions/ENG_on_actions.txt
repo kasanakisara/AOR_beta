@@ -1,0 +1,68 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				#议会
+				set_variable = {
+					Liberal_Party_position_x = 347
+				}
+				set_variable = {
+					conservative_Party_position_x = 597
+				}
+				set_variable = {
+					Labour_Party_position_x = 847
+				}
+				ENG_Calculate_partisan_support = yes
+				#元气
+				set_variable = {
+					ENG_National_Support_Var = 50
+				}
+				set_variable = {
+					ENG_Current_Vitality_Var = 30
+				}
+				set_variable = {
+					ENG_Federal_Nexus_Var = 60
+				}
+				set_variable = {
+					ENG_British_authority_Var = 80
+				}
+				set_variable = {
+					ENG_Commonwealth_country_favorability = 1
+				}
+				set_variable = {
+					ENG_EGY_favorability_Var = 45
+				}
+				set_variable = {
+					ENG_AFR_favorability_Var = 50
+				}
+				set_variable = {
+					ENG_RAJ_favorability_Var = 60
+				}
+				set_variable = {
+					ENG_WAF_favorability_Var = 50
+				}
+				set_variable = {
+					ENG_SAF_favorability_Var = 50
+				}
+				set_variable = {
+					ENG_ASL_favorability_Var = 50
+				}
+				set_variable = {
+					ENG_NZL_favorability_Var = 50
+				}
+				Refresh_ENG_Lick_wounds_variables = yes
+				Compute_ENG_Lick_wounds_dynamic_modifier = yes
+			}
+		}
+	}
+	on_monthly_ENG = {
+		effect = {
+			ENG = {
+				if = {
+					limit = { has_country_flag = Enable_ENG_Lick_wounds }
+					Refresh_ENG_Lick_wounds_variables_monthly = yes
+				}
+			}
+		}
+	}
+}
