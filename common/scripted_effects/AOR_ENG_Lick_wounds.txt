@@ -34,29 +34,20 @@ Refresh_ENG_Lick_wounds_variables_monthly = {
 	#国民支持度
 	set_variable = { ENG_National_Support_Var_monthly = ENG_Current_Vitality_Var }
 	subtract_from_variable = { ENG_National_Support_Var_monthly = 50 }
-	clamp_temp_variable = {
-		var = ENG_National_Support_Var_monthly
-		min = 0
-	}
 	divide_variable = { ENG_National_Support_Var_monthly = 20 }
+	add_to_variable = { ENG_National_Support_Var = ENG_National_Support_Var_monthly }
 	#当前元气
 	set_variable = { ENG_Current_Vitality_Var_monthly = ENG_National_Support_Var }
 	add_to_variable = { ENG_Current_Vitality_Var_monthly = ENG_Federal_Nexus_Var }
 	add_to_variable = { ENG_Current_Vitality_Var_monthly = ENG_British_authority_Var }
 	subtract_from_variable = { ENG_Current_Vitality_Var_monthly = 150 }
-	clamp_temp_variable = {
-		var = ENG_Current_Vitality_Var_monthly
-		min = 0
-	}
 	divide_variable = { ENG_Current_Vitality_Var_monthly = 100 }
+	add_to_variable = { ENG_Current_Vitality_Var = ENG_Current_Vitality_Var_monthly }
 	#联邦联结度
 	set_variable = { ENG_Federal_Nexus_Var_monthly = ENG_British_authority_Var }
 	subtract_from_variable = { ENG_Federal_Nexus_Var_monthly = ENG_Federal_Nexus_Var }
-	clamp_temp_variable = {
-		var = ENG_Federal_Nexus_Var_monthly
-		min = 0
-	}
 	divide_variable = { ENG_Federal_Nexus_Var_monthly = 50 }
+	add_to_variable = { ENG_Federal_Nexus_Var = ENG_Federal_Nexus_Var_monthly }
 	#英国权威
 	set_variable = { ENG_British_authority_Var_monthly = ENG_EGY_favorability_Var }
 	add_to_variable = { ENG_British_authority_Var_monthly = ENG_AFR_favorability_Var }
@@ -66,11 +57,9 @@ Refresh_ENG_Lick_wounds_variables_monthly = {
 	add_to_variable = { ENG_British_authority_Var_monthly = ENG_ASL_favorability_Var }
 	add_to_variable = { ENG_British_authority_Var_monthly = ENG_NZL_favorability_Var }
 	subtract_from_variable = { ENG_British_authority_Var_monthly = 370 }
-	clamp_temp_variable = {
-		var = ENG_British_authority_Var_monthly
-		min = 0
-	}
 	divide_variable = { ENG_British_authority_Var_monthly = 100 }
+	add_to_variable = { ENG_British_authority_Var = ENG_British_authority_Var_monthly }
+	#
 	Compute_ENG_Lick_wounds_dynamic_modifier = yes
 }
 #计算动态修正
