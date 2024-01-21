@@ -206,6 +206,16 @@
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_favorability_add_tt
+			add_to_variable = {
+				ENG_Federal_Nexus_Var = 1
+			}
+			custom_effect_tooltip = ENG_Federal_Nexus_Var_add_1_tt
+			add_to_variable = {
+				ENG_British_authority_Var = 1
+			}
+			custom_effect_tooltip = ENG_British_authority_Var_add_1_tt
+			country_event = {id=ENG.23}
 		}
 	}
 	focus={
@@ -222,6 +232,12 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {id=ENG.24}
+			add_to_variable = {
+				ENG_Current_Vitality_Var = 0.5
+			}
+			custom_effect_tooltip = ENG_Current_Vitality_Var_add_05_tt
+			add_popularity = { ideology = CON_democratic popularity = 0.015 }
 		}
 	}
 	focus={
