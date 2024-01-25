@@ -292,6 +292,7 @@ country_event = {
 		name = ENG.22.a
 	}
 }
+#金钱滚滚来
 country_event = {
 	id = ENG.23
 	title = ENG.23.t
@@ -299,8 +300,19 @@ country_event = {
 	picture = ENG.23.p
 	is_triggered_only = yes
 	fire_only_once = yes
-	option = {name = ENG.23.a}
+	option = {
+		name = ENG.23.a
+		446 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				} 
+		}
+		
+	}
 }
+#企业家赞歌
 country_event = {
 	id = ENG.24
 	title = ENG.24.t
