@@ -40,8 +40,8 @@ news_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-	    date > 1920.5.6
-		date < 1920.5.8
+	    date > 1924.5.6
+		date < 1924.5.8
 	}
 
     #1924希腊奥运会
@@ -59,8 +59,8 @@ news_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-	    date > 1920.5.16
-		date < 1920.5.18
+	    date > 1928.5.16
+		date < 1928.5.18
 	}
 
     #1928意大利奥运会

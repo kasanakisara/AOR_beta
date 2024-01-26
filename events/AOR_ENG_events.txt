@@ -322,6 +322,7 @@ country_event = {
 	fire_only_once = yes
 	option = {name = ENG.24.a}
 }
+#确保工人稳定
 country_event = {
 	id = ENG.25
 	title = ENG.25.t

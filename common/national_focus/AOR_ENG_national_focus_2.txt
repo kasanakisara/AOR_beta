@@ -255,6 +255,19 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {id=ENG.24}
+			add_to_variable = {
+				ENG_Current_Vitality_Var = 0.25
+				ENG_National_Support_Var = 1
+			}
+			custom_effect_tooltip = ENG_Current_Vitality_Var_add_025_tt
+			custom_effect_tooltip = ENG_National_Support_Var_add_1_tt
+			custom_effect_tooltip = ENG_red_party_add_025
+			hidden_effect = {
+				add_popularity = { ideology = PAR_socialism  popularity = 0.0025 }
+				add_popularity = { ideology = SOC_democratic  popularity = 0.0025 }
+
+			}
 		}
 	}
 	focus={
@@ -272,6 +285,13 @@
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = ENG_red_party_add_5
+			hidden_effect = {
+				add_popularity = { ideology = PAR_socialism  popularity = 0.005 }
+				add_popularity = { ideology = SOC_democratic  popularity = 0.005 }
+				add_popularity = { ideology = Marxism  popularity = 0.01 }
+
+			}
 		}
 	}
 	focus={
@@ -288,6 +308,9 @@
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = {
+				ENG_jingjikaoqiye
+			}
 		}
 	}
 	focus={
