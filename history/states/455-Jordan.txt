@@ -8,10 +8,15 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
+			4115 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {
-			7151 1 
+			7151 5 
+		}
+		victory_points = {
+			4115 1 
 		}
 		add_core_of = JOR
 		add_core_of = ARA
