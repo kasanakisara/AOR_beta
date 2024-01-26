@@ -81,6 +81,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			TAG = PER
+		}
+		localization_key = PER_country_targets_loc
+	}
+	text = {
+		trigger = {
 			TAG = GER
 		}
 		localization_key = GER_country_targets_loc
@@ -108,12 +114,6 @@ defined_text = {
 			TAG = GER
 		}
 		localization_key = GER_country_roads_loc
-	}
-	text = {
-		trigger = {
-			TAG = PER
-		}
-		localization_key = PER_country_roads_loc
 	}
 	text = {
 		localization_key = "=!!!=NOTHING=!!!="
