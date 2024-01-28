@@ -1,0 +1,11 @@
+ENG_Lick_wounds_decision_categories = {
+	scripted_gui = AOR_ENG_Lick_wounds_window
+	priority = 100
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = Enable_ENG_Lick_wounds
+	}
+	allowed = {
+		tag = eng
+	}
+}

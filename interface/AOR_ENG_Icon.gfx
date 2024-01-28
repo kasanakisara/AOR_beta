@@ -1,4 +1,5 @@
 spriteTypes = {
+#议会
 	spriteType = {
 		name = "GFX_ENG_Parliament_button"
 		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG_Parliament_button.dds"
@@ -72,5 +73,38 @@ spriteTypes = {
 		name = "GFX_ENG_House_of_Commons_ICON"		##席位，议席
 		texturefile = "gfx/AOR_gui/ENG/ENG_Parliament/ENG House of Commons.dds"
 		noOfFrames = 7
+	}
+#恢复元气
+	spriteType = {
+		name = "GFX_absolute_nothing"
+		texturefile = "gfx/interface/absolute_nothing.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_AFR_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_AFR_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_ASL_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_ASL_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_EGY_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_EGY_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_NZL_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_NZL_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_RAJ_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_RAJ_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_SAF_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_SAF_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Lick_wounds_WAF_icon"
+		texturefile = "gfx/AOR_gui/ENG/ENG_Lick_wounds/ENG_Lick_wounds_WAF_icon.dds"
 	}
 }

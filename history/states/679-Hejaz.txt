@@ -1,31 +1,34 @@
+
 state={
 	id=679
 	name="STATE_679"
-	manpower = 1511000
-	state_category = town
+
 	history={
 		owner = ARA
 		victory_points = {
-			12758 10
+			12883 5 
 		}
 		victory_points = {
-			12883 5
-		}
-		victory_points = {
-			5037 20
+			5037 25 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			12883 = {
-			 naval_base = 5
+				naval_base = 3
+
 			}
+
 		}
 		add_core_of = SAU
 		add_core_of = ARA
+
 	}
+
 	provinces={
-		1033 1923 2027 2033 2090 2095 4981 5006 5037 7934 8073 8092 10748 10786 10835 12101 12758 12883 
+		2090 4981 5037 10748 12883 
 	}
+	manpower=711000
 	buildings_max_level_factor=1.000
-	local_supplies=0.0 
+	state_category=town
+	local_supplies=0.000
 }

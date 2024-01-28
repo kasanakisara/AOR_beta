@@ -1,0 +1,86 @@
+guiTypes = {#详细面板
+	containerWindowType = {
+		name = "AOR_ENG_Lick_wounds_window"
+		position = { x = 600 y = 400 }
+		size = { width = 510 height= 220 }
+		moveable = yes
+		background = {
+			name = "blackground"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+		instantTextboxType = {
+			name = "ENG_Commonwealth_country_Name"
+			position = { x = 220 y = 30 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "ENG_Commonwealth_country_Name"
+			maxWidth = 280
+			maxHeight = 40
+			format = centre
+		}
+		instantTextboxType = {
+			name = "AOR_ENG_Lick_wounds_variable_text"
+			position = { x = 280 y = 85 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "AOR_ENG_Lick_wounds_variable_text"
+			maxWidth = 200
+			maxHeight = 200
+			format = left
+		}
+		containerWindowType = {
+			name = "ENG_Commonwealth_country_favorability_window"
+			position = { x = 50 y = 20 }
+			size = { width = 170 height= 170 }
+			verticalScrollbar = "right_vertical_slider"
+			background = {
+				name = "blackground"
+				spriteType = "GFX_tiled_plain_bg"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_EGY_button"
+				position = { x = 20 y = 30 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_EGY_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_AFR_button"
+				position = { x = 20 y = 180 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_AFR_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_RAJ_button"
+				position = { x = 20 y = 330 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_RAJ_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_WAF_button"
+				position = { x = 20 y = 480 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_WAF_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_SAF_button"
+				position = { x = 20 y = 630 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_SAF_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_ASL_button"
+				position = { x = 20 y = 780 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_ASL_icon"
+			}
+			buttonType = {
+				name = "ENG_Lick_wounds_NZL_button"
+				position = { x = 20 y = 930 }
+				quadTextureSprite = "GFX_ENG_Lick_wounds_NZL_icon"
+			}
+			iconType = {
+				name = "absolute_nothing"
+				spriteType = "GFX_absolute_nothing"
+				position = { x = 20 y = 1070 }		
+				alwaystransparent = yes
+			}
+		}
+	}
+}
+

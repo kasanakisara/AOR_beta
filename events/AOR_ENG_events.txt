@@ -253,6 +253,7 @@ news_event = { #xinshijie
 		name = ENG.17.a
 	}
 }
+#劳合讲话
 country_event = {
 	id = ENG.20
 	title = ENG.20.t
@@ -265,28 +266,758 @@ country_event = {
 		name = ENG.20.a
 	}
 }
+#新气象
+country_event = {
+	id = ENG.21
+	title = ENG.21.t
+	desc = ENG.21.d
+	picture = ENG.21.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.21.a
+	}
+}
+#大胆行动
+country_event = {
+	id = ENG.22
+	title = ENG.22.t
+	desc = ENG.22.d
+	picture = ENG.22.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ENG.22.a
+	}
+}
+#金钱滚滚来
+country_event = {
+	id = ENG.23
+	title = ENG.23.t
+	desc = ENG.23.d
+	picture = ENG.23.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ENG.23.a
+		446 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				} 
+		}
+		
+	}
+}
+#企业家赞歌
+country_event = {
+	id = ENG.24
+	title = ENG.24.t
+	desc = ENG.24.d
+	picture = ENG.24.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.24.a}
+}
+#确保工人稳定
+country_event = {
+	id = ENG.25
+	title = ENG.25.t
+	desc = ENG.25.d
+	picture = ENG.25.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.25.a}
+}
+country_event = {
+	id = ENG.26
+	title = ENG.26.t
+	desc = ENG.26.d
+	picture = ENG.26.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.26.a}
+}
+country_event = {
+	id = ENG.27
+	title = ENG.27.t
+	desc = ENG.27.d
+	picture = ENG.27.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.27.a}
+}
+country_event = {
+	id = ENG.28
+	title = ENG.28.t
+	desc = ENG.28.d
+	picture = ENG.28.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.28.a}
+}
+country_event = {
+	id = ENG.29
+	title = ENG.29.t
+	desc = ENG.29.d
+	picture = ENG.29.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.29.a}
+}
 country_event = {
 	id = ENG.30
 	title = ENG.30.t
 	desc = ENG.30.d
+	picture = ENG.30.p
 	is_triggered_only = yes
 	fire_only_once = yes
-
-	option = {
-		name = ENG.30.a
-	}
+	option = {name = ENG.30.a}
+}
+country_event = {
+	id = ENG.31
+	title = ENG.31.t
+	desc = ENG.31.d
+	picture = ENG.31.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.31.a}
+}
+country_event = {
+	id = ENG.32
+	title = ENG.32.t
+	desc = ENG.32.d
+	picture = ENG.32.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.32.a}
+}
+country_event = {
+	id = ENG.33
+	title = ENG.33.t
+	desc = ENG.33.d
+	picture = ENG.33.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.33.a}
+}
+country_event = {
+	id = ENG.34
+	title = ENG.34.t
+	desc = ENG.34.d
+	picture = ENG.34.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.34.a}
+}
+country_event = {
+	id = ENG.35
+	title = ENG.35.t
+	desc = ENG.35.d
+	picture = ENG.35.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.35.a}
+}
+country_event = {
+	id = ENG.36
+	title = ENG.36.t
+	desc = ENG.36.d
+	picture = ENG.36.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.36.a}
+}
+country_event = {
+	id = ENG.37
+	title = ENG.37.t
+	desc = ENG.37.d
+	picture = ENG.37.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.37.a}
+}
+country_event = {
+	id = ENG.38
+	title = ENG.38.t
+	desc = ENG.38.d
+	picture = ENG.38.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.38.a}
+}
+country_event = {
+	id = ENG.39
+	title = ENG.39.t
+	desc = ENG.39.d
+	picture = ENG.39.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.39.a}
+}
+country_event = {
+	id = ENG.40
+	title = ENG.40.t
+	desc = ENG.40.d
+	picture = ENG.40.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.40.a}
+}
+country_event = {
+	id = ENG.41
+	title = ENG.41.t
+	desc = ENG.41.d
+	picture = ENG.41.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.41.a}
+}
+country_event = {
+	id = ENG.42
+	title = ENG.42.t
+	desc = ENG.42.d
+	picture = ENG.42.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.42.a}
+}
+country_event = {
+	id = ENG.43
+	title = ENG.43.t
+	desc = ENG.43.d
+	picture = ENG.43.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.43.a}
+}
+country_event = {
+	id = ENG.44
+	title = ENG.44.t
+	desc = ENG.44.d
+	picture = ENG.44.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.44.a}
+}
+country_event = {
+	id = ENG.45
+	title = ENG.45.t
+	desc = ENG.45.d
+	picture = ENG.45.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.45.a}
+}
+country_event = {
+	id = ENG.46
+	title = ENG.46.t
+	desc = ENG.46.d
+	picture = ENG.46.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.46.a}
+}
+country_event = {
+	id = ENG.47
+	title = ENG.47.t
+	desc = ENG.47.d
+	picture = ENG.47.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.47.a}
+}
+country_event = {
+	id = ENG.48
+	title = ENG.48.t
+	desc = ENG.48.d
+	picture = ENG.48.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.48.a}
+}
+country_event = {
+	id = ENG.49
+	title = ENG.49.t
+	desc = ENG.49.d
+	picture = ENG.49.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.49.a}
+}
+country_event = {
+	id = ENG.50
+	title = ENG.50.t
+	desc = ENG.50.d
+	picture = ENG.50.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.50.a}
+}
+country_event = {
+	id = ENG.51
+	title = ENG.51.t
+	desc = ENG.51.d
+	picture = ENG.51.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.51.a}
+}
+country_event = {
+	id = ENG.52
+	title = ENG.52.t
+	desc = ENG.52.d
+	picture = ENG.52.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.52.a}
+}
+country_event = {
+	id = ENG.53
+	title = ENG.53.t
+	desc = ENG.53.d
+	picture = ENG.53.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.53.a}
+}
+country_event = {
+	id = ENG.54
+	title = ENG.54.t
+	desc = ENG.54.d
+	picture = ENG.54.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.54.a}
+}
+country_event = {
+	id = ENG.55
+	title = ENG.55.t
+	desc = ENG.55.d
+	picture = ENG.55.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.55.a}
+}
+country_event = {
+	id = ENG.56
+	title = ENG.56.t
+	desc = ENG.56.d
+	picture = ENG.56.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.56.a}
+}
+country_event = {
+	id = ENG.57
+	title = ENG.57.t
+	desc = ENG.57.d
+	picture = ENG.57.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.57.a}
+}
+country_event = {
+	id = ENG.58
+	title = ENG.58.t
+	desc = ENG.58.d
+	picture = ENG.58.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.58.a}
+}
+country_event = {
+	id = ENG.59
+	title = ENG.59.t
+	desc = ENG.59.d
+	picture = ENG.59.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.59.a}
+}
+country_event = {
+	id = ENG.60
+	title = ENG.60.t
+	desc = ENG.60.d
+	picture = ENG.60.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.60.a}
+}
+country_event = {
+	id = ENG.61
+	title = ENG.61.t
+	desc = ENG.61.d
+	picture = ENG.61.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.61.a}
+}
+country_event = {
+	id = ENG.62
+	title = ENG.62.t
+	desc = ENG.62.d
+	picture = ENG.62.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.62.a}
+}
+country_event = {
+	id = ENG.63
+	title = ENG.63.t
+	desc = ENG.63.d
+	picture = ENG.63.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.63.a}
+}
+country_event = {
+	id = ENG.64
+	title = ENG.64.t
+	desc = ENG.64.d
+	picture = ENG.64.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.64.a}
+}
+country_event = {
+	id = ENG.65
+	title = ENG.65.t
+	desc = ENG.65.d
+	picture = ENG.65.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.65.a}
+}
+country_event = {
+	id = ENG.66
+	title = ENG.66.t
+	desc = ENG.66.d
+	picture = ENG.66.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.66.a}
+}
+country_event = {
+	id = ENG.67
+	title = ENG.67.t
+	desc = ENG.67.d
+	picture = ENG.67.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.67.a}
+}
+country_event = {
+	id = ENG.68
+	title = ENG.68.t
+	desc = ENG.68.d
+	picture = ENG.68.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.68.a}
+}
+country_event = {
+	id = ENG.69
+	title = ENG.69.t
+	desc = ENG.69.d
+	picture = ENG.69.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.69.a}
+}
+country_event = {
+	id = ENG.70
+	title = ENG.70.t
+	desc = ENG.70.d
+	picture = ENG.70.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.70.a}
+}
+country_event = {
+	id = ENG.71
+	title = ENG.71.t
+	desc = ENG.71.d
+	picture = ENG.71.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.71.a}
+}
+country_event = {
+	id = ENG.72
+	title = ENG.72.t
+	desc = ENG.72.d
+	picture = ENG.72.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.72.a}
+}
+country_event = {
+	id = ENG.73
+	title = ENG.73.t
+	desc = ENG.73.d
+	picture = ENG.73.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.73.a}
+}
+country_event = {
+	id = ENG.74
+	title = ENG.74.t
+	desc = ENG.74.d
+	picture = ENG.74.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.74.a}
+}
+country_event = {
+	id = ENG.75
+	title = ENG.75.t
+	desc = ENG.75.d
+	picture = ENG.75.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.75.a}
+}
+country_event = {
+	id = ENG.76
+	title = ENG.76.t
+	desc = ENG.76.d
+	picture = ENG.76.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.76.a}
+}
+country_event = {
+	id = ENG.77
+	title = ENG.77.t
+	desc = ENG.77.d
+	picture = ENG.77.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.77.a}
+}
+country_event = {
+	id = ENG.78
+	title = ENG.78.t
+	desc = ENG.78.d
+	picture = ENG.78.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.78.a}
+}
+country_event = {
+	id = ENG.79
+	title = ENG.79.t
+	desc = ENG.79.d
+	picture = ENG.79.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.79.a}
+}
+country_event = {
+	id = ENG.80
+	title = ENG.80.t
+	desc = ENG.80.d
+	picture = ENG.80.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.80.a}
+}
+country_event = {
+	id = ENG.81
+	title = ENG.81.t
+	desc = ENG.81.d
+	picture = ENG.81.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.81.a}
+}
+country_event = {
+	id = ENG.82
+	title = ENG.82.t
+	desc = ENG.82.d
+	picture = ENG.82.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.82.a}
+}
+country_event = {
+	id = ENG.83
+	title = ENG.83.t
+	desc = ENG.83.d
+	picture = ENG.83.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.83.a}
+}
+country_event = {
+	id = ENG.84
+	title = ENG.84.t
+	desc = ENG.84.d
+	picture = ENG.84.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.84.a}
+}
+country_event = {
+	id = ENG.85
+	title = ENG.85.t
+	desc = ENG.85.d
+	picture = ENG.85.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.85.a}
+}
+country_event = {
+	id = ENG.86
+	title = ENG.86.t
+	desc = ENG.86.d
+	picture = ENG.86.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.86.a}
+}
+country_event = {
+	id = ENG.87
+	title = ENG.87.t
+	desc = ENG.87.d
+	picture = ENG.87.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.87.a}
+}
+country_event = {
+	id = ENG.88
+	title = ENG.88.t
+	desc = ENG.88.d
+	picture = ENG.88.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.88.a}
+}
+country_event = {
+	id = ENG.89
+	title = ENG.89.t
+	desc = ENG.89.d
+	picture = ENG.89.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.89.a}
+}
+country_event = {
+	id = ENG.90
+	title = ENG.90.t
+	desc = ENG.90.d
+	picture = ENG.90.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.90.a}
+}
+country_event = {
+	id = ENG.91
+	title = ENG.91.t
+	desc = ENG.91.d
+	picture = ENG.91.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.91.a}
+}
+country_event = {
+	id = ENG.92
+	title = ENG.92.t
+	desc = ENG.92.d
+	picture = ENG.92.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.92.a}
+}
+country_event = {
+	id = ENG.93
+	title = ENG.93.t
+	desc = ENG.93.d
+	picture = ENG.93.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.93.a}
+}
+country_event = {
+	id = ENG.94
+	title = ENG.94.t
+	desc = ENG.94.d
+	picture = ENG.94.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.94.a}
+}
+country_event = {
+	id = ENG.95
+	title = ENG.95.t
+	desc = ENG.95.d
+	picture = ENG.95.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.95.a}
+}
+country_event = {
+	id = ENG.96
+	title = ENG.96.t
+	desc = ENG.96.d
+	picture = ENG.96.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.96.a}
+}
+country_event = {
+	id = ENG.97
+	title = ENG.97.t
+	desc = ENG.97.d
+	picture = ENG.97.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.97.a}
+}
+country_event = {
+	id = ENG.98
+	title = ENG.98.t
+	desc = ENG.98.d
+	picture = ENG.98.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.98.a}
+}
+country_event = {
+	id = ENG.99
+	title = ENG.99.t
+	desc = ENG.99.d
+	picture = ENG.99.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.99.a}
+}
+country_event = {
+	id = ENG.100
+	title = ENG.100.t
+	desc = ENG.100.d
+	picture = ENG.100.p
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {name = ENG.100.a}
 }
 country_event = { #xinshijie
-	id = ENG.1145141919810
-	title = ENG.1145141919810.t
-	desc = ENG.1145141919810.d
-	picture = ENG.1145141919810.p
+	id = ENG.1145
+	title = ENG.1145.t
+	desc = ENG.1145.d
+	picture = ENG.1145.p
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = ENG.1145141919810.a
+		name = ENG.1145.a
 		load_focus_tree = ENG_National_focus_2
 	}
 }
