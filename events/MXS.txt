@@ -69,9 +69,8 @@ country_event = {
 		ideology = despotism
 		}
 		CGT = {
-				transfer_state = 485
-				transfer_state = 476
-				transfer_state = 475
+				transfer_state = 934
+				transfer_state = 933
 				
 				add_state_core = 485
 				add_state_core = 476
@@ -166,6 +165,54 @@ country_event = {
 				add_state_core = 484
 				484= { set_demilitarized_zone = yes }
 		}
+		
+		SFM = {
+			transfer_state = 485
+			add_state_core = 485
+			add_state_core = 476
+			add_state_core = 475
+			add_state_core = 474
+			add_state_core = 477
+			add_state_core = 277
+			add_state_core = 478
+			add_state_core = 479
+			add_state_core = 480
+			add_state_core = 481
+			add_state_core = 482
+			add_state_core = 931
+			add_state_core = 483
+			add_state_core = 376
+			add_state_core = 377
+			add_state_core = 933
+			add_state_core = 934
+			add_state_core = 484
+	}
+
+	MNU = {
+		transfer_state = 377
+		transfer_state = 483
+		transfer_state = 482
+		add_state_core = 485
+		add_state_core = 476
+		add_state_core = 475
+		add_state_core = 482
+		add_state_core = 474
+		add_state_core = 477
+		add_state_core = 277
+		add_state_core = 478
+		add_state_core = 479
+		add_state_core = 480
+		add_state_core = 481
+		add_state_core = 482
+		add_state_core = 931
+		add_state_core = 483
+		add_state_core = 376
+		add_state_core = 377
+		add_state_core = 933
+		add_state_core = 934
+		add_state_core = 484
+		add_manpower = 10000
+}
 	}	
 	option = {
 		name = MXS.3.a

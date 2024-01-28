@@ -5,7 +5,9 @@ state={
 		owner = PAL
 		buildings = {
 			infrastructure = 1
-
+			1065 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			1065 1 

@@ -6,18 +6,15 @@ state={
 	history={
 		owner = ARA
 		victory_points = {
-			12758 10 
-		}
-		victory_points = {
 			12883 5 
 		}
 		victory_points = {
-			5037 20 
+			5037 25 
 		}
 		buildings = {
 			infrastructure = 1
 			12883 = {
-				naval_base = 5
+				naval_base = 3
 
 			}
 
