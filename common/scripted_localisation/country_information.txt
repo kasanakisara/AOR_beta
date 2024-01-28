@@ -57,6 +57,13 @@ defined_text = {
 
 	text = {
 		trigger = {
+			TAG = FRA
+		}
+		localization_key = FRA_country_information_loc
+	}
+
+	text = {
+		trigger = {
 			TAG = SWE
 		}
 		localization_key = SWE_country_information_loc
