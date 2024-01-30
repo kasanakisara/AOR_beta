@@ -975,3 +975,80 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = USA.10001 #必要
+	title = USA.10001.t
+	desc = USA.10001.d
+	picture = GFX_USA_event_10001
+	is_triggered_only = yes
+	option = {
+		name=USA.10001.a
+	}
+}
+country_event = {
+	id = USA.10002 #坏牛仔
+	title = USA.10002.t
+	desc = USA.10002.d
+	picture = GFX_USA_event_10002
+	is_triggered_only = yes
+	option = {
+		name=USA.10002.a
+	}	
+}
+country_event = {
+	id = USA.10003 #飞翔的雄鹰1
+	title = USA.10003.t
+	desc = USA.10003.d
+	picture = GFX_USA_event_10003
+	
+	trigger = {
+		date = 1919.9.1
+	}
+
+	option = {
+		name=USA.10003.a
+	}	
+}
+country_event = {
+	id = USA.10004 #飞翔的雄鹰2
+	title = USA.10004.t
+	desc = USA.10004.d
+	picture = GFX_USA_event_10004
+
+		trigger = {
+		date = 1919.10.1
+	}
+
+	option = {
+		name=USA.10004.a
+	}	
+}
+country_event = {
+	id = USA.10005 #人数
+	title = USA.10005.t
+	desc = USA.10005.d
+	picture = GFX_USA_event_10005
+
+		trigger = {
+		date = 1919.9.10
+	}
+
+	option = {
+		name=USA.10005.a
+	}	
+}
+country_event = {
+	id = USA.10006 #南方一只仙人掌
+	title = USA.10006.t
+	desc = USA.10006.d
+	picture = GFX_USA_event_10006
+
+		trigger = {
+		date = 1919.10.10
+	}
+
+	option = {
+		name=USA.10006.a
+	}	
+}

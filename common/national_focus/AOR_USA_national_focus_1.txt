@@ -36,6 +36,7 @@
 		y = 2
 		completion_reward = {
 			add_political_power = 50
+			country_event = { id = USA.10001 }
 		}
 	}
 	
@@ -56,7 +57,8 @@
 		x = 5
 		y = 3
 		completion_reward={
-		add_stability = -0.05
+			country_event = { id = USA.10002 }
+	    	add_stability = -0.05
 		382 = {
 		add_building_construction = {
 			type = infrastructure
