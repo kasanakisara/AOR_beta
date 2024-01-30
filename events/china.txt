@@ -62,13 +62,13 @@ country_event = {
 				}
 				set_party_name = {
 					ideology = FRE_democratic
-					long_name = "社会党（交通系）"
-					name = "社会党（交通系）"
+					long_name = "社会党(交通系）"
+					name = "社会党(交通系）"
 				}
 				set_party_name = {
 					ideology = CON_democratic
-					long_name = "亲日派政客-社会党（亲日派）"
-					name = "社会党（亲日派）"
+					long_name = "亲日派政客-社会党(亲日派）"
+					name = "社会党(亲日派）"
 				}
 				set_party_name = {
 					ideology = Special
@@ -474,7 +474,7 @@ country_event = {
 		name = CHI.10.b
 	}
 }
-#联省宣言（联省改名）
+#联省宣言(联省改名）
 country_event = {
 	id = CHI.11
 	title = CHI.11.t
@@ -496,7 +496,7 @@ country_event = {
 		name = CHI.11.a
 	}
 }
-#kmt宣言（kmt改名）
+#kmt宣言(kmt改名）
 country_event = {
 	id = CHI.12
 	title = CHI.12.t
@@ -515,7 +515,7 @@ country_event = {
 		name = CHI.12.a
 	}
 }
-#央直合流（直系改名）
+#央直合流(直系改名）
 country_event = {
 	id = CHI.13
 	title = CHI.13.t

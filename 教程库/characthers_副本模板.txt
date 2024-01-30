@@ -50,7 +50,7 @@ CL_EGY_faluke={
         texturefile = "gfx/leaders/plan1/CL_EGY_faluke_amry_small.png"
     } 
     	country_leader={
-			ideology= ！！！！！
+			ideology= !!!!!
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -66,11 +66,11 @@ CL_EGY_faluke={
 		}
         field_marshal={
 			traits={  }
-			skill=！
-			attack_skill=！
-			defense_skill=！
-			planning_skill=！
-			logistics_skill=！
+			skill=!
+			attack_skill=!
+			defense_skill=!
+			planning_skill=!
+			logistics_skill=!
 			legacy_id=-1
 		}
 		advisor={
@@ -88,11 +88,11 @@ CL_EGY_faluke={
 		}	
         corps_commander={
 			traits={  }
-			skill=！
-			attack_skill=！
-			defense_skill=！
-			planning_skill=！
-			logistics_skill=！
+			skill=!
+			attack_skill=!
+			defense_skill=!
+			planning_skill=!
+			logistics_skill=!
 			legacy_id=-1
 		}
         

@@ -50,7 +50,7 @@ focus = {
 
 	#3事件
 country_event = {
-		id = Bavaria.x #测试（在第一个国策触发后）
+		id = Bavaria.x #测试(在第一个国策触发后）
 		title = x
 		desc = Bavaria.x.d
 		picture = GFX_report_event_x #记得换个图片

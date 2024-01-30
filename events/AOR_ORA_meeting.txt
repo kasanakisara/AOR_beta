@@ -29,9 +29,9 @@ country_event = {
     option = { 
         name = ORA.2.a
 		country_event = { days = 2 id = ORA.3 }
-		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
-		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
-		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA } 
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党(CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党(CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会(FORA） name = FORA } 
 		custom_effect_tooltip = ORA.6.tt
 		modify_country_flag = {
 			flag = ORA_rad
@@ -51,9 +51,9 @@ country_event = {
 	option = { 
         name = ORA.2.b
 		country_event = { days = 2 id = ORA.3 }
-		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
-		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
-		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA } 
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党(CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党(CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会(FORA） name = FORA } 
 		custom_effect_tooltip = ORA.7.tt
 		modify_country_flag = {
 			flag = ORA_mid
@@ -73,9 +73,9 @@ country_event = {
 	option = { 
         name = ORA.2.c
 		country_event = { days = 2 id = ORA.3 }
-		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党（CORA） name = CORA共产派 } 
-		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党（CORA） name = CORA温和派 } 
-		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会（FORA） name = FORA }  
+		set_party_name = { ideology = Marxism  long_name = 阿根廷地区工人共产党(CORA） name = CORA共产派 } 
+		set_party_name = { ideology = PAR_socialism  long_name = 阿根廷地区工人共产党(CORA） name = CORA温和派 } 
+		set_party_name = { ideology = Anarcho  long_name = 阿根廷地区工人联合会(FORA） name = FORA }  
 		custom_effect_tooltip = ORA.8.tt
 		modify_country_flag = {
 			flag = ORA_ref

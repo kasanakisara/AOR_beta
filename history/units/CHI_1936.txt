@@ -79,31 +79,31 @@ division_template = {
 ### OOB ###
 units = {
 	division = {
-		name = "陆军第七师（中央系）"
+		name = "陆军第七师(中央系）"
 		location = 10068
 		division_template = "正规军"
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "陆军第十师（中央系）"
+		name = "陆军第十师(中央系）"
 		location = 10068
 		division_template = "王牌军"
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "禁卫军（中央系）"
+		name = "禁卫军(中央系）"
 		location = 10068
 		division_template = "王牌军"
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "拱卫军（中央系）"
+		name = "拱卫军(中央系）"
 		location = 10068
 		division_template = "王牌军"
 		start_experience_factor = 0.5
 	}
 	division = {
-		name = "陆军第八师（直系）"
+		name = "陆军第八师(直系）"
 		location = 10022
 		division_template = "王牌军"
 		start_experience_factor = 0.5
@@ -122,63 +122,63 @@ units = {
 	}
 
 	division = {
-		name = "陆军第十二混成旅（晋系）"
+		name = "陆军第十二混成旅(晋系）"
 		location = 1519
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "陆军第十三混成旅（晋系）"
+		name = "陆军第十三混成旅(晋系）"
 		location = 4174
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "陆军第十四混成旅（晋系）"
+		name = "陆军第十四混成旅(晋系）"
 		location = 12344
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "河南第九师（皖系）"
+		name = "河南第九师(皖系）"
 		location = 1139
 		division_template = "王牌军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.5
 	}
 		division = {
-		name = "陆军第七混成旅（皖系）"
+		name = "陆军第七混成旅(皖系）"
 		location = 9958 #郑母斯特丹
 		division_template = "地方军"	
 		start_equipment_factor = 0.5
 		start_experience_factor = 0.2
 	}	
 		division = {
-		name = "陆军第二混成旅（皖系）"
+		name = "陆军第二混成旅(皖系）"
 		location = 7656
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}	
 		division = {
-		name = "陆军第六混成旅（皖系）"
+		name = "陆军第六混成旅(皖系）"
 		location = 4066
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "陆军第八混成旅（皖系）"
+		name = "陆军第八混成旅(皖系）"
 		location = 1004
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "河南第一师（皖系）"
+		name = "河南第一师(皖系）"
 		location = 4606
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
@@ -220,63 +220,63 @@ units = {
 		start_experience_factor = 0.1
 	}
 		division = {
-		name = "陆军第六师（皖系）"
+		name = "陆军第六师(皖系）"
 		location = 3992 #南昌
 		division_template = "正规军"	
 		start_equipment_factor = 0.8
 		start_experience_factor = 0.4
 	}
 		division = {
-		name = "陆军第九混成旅（皖系）"
+		name = "陆军第九混成旅(皖系）"
 		location = 4083
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "步兵第二旅（皖系）"
+		name = "步兵第二旅(皖系）"
 		location = 7653
 		division_template = "杂牌军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "浙江陆军第六师（皖系）"
+		name = "浙江陆军第六师(皖系）"
 		location = 7191 #杭州
 		division_template = "正规军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.4
 	}
 		division = {
-		name = "陆军第四十九旅（皖系）"
+		name = "陆军第四十九旅(皖系）"
 		location = 9974 #宁波
 		division_template = "地方军"	
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.3
 	}
 		division = {
-		name = "浙江第一师（皖系）"
+		name = "浙江第一师(皖系）"
 		location = 7191
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "浙江第二师（皖系）"
+		name = "浙江第二师(皖系）"
 		location = 7146
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "浙江第三师（皖系）"
+		name = "浙江第三师(皖系）"
 		location = 4013 #皮革厂
 		division_template = "地方军"	
 		start_equipment_factor = 0.9
 		start_experience_factor = 0.2
 	}
 		division = {
-		name = "浙江第四师（皖系）"
+		name = "浙江第四师(皖系）"
 		location = 11947
 		division_template = "地方军"	
 		start_equipment_factor = 0.9

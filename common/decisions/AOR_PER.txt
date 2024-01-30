@@ -226,7 +226,7 @@ PER_Northern_Reconstruction_decision_category = {
 			num_of_factories > 15
 		}
 		
-		is_good = no #（决定任务进度条的颜色）                         
+		is_good = no #(决定任务进度条的颜色）                         
 	
 		days_mission_timeout = 730
 		timeout_effect = {                      

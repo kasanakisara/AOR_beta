@@ -15,7 +15,7 @@ parent_window_name =
 123
 456
 
-字体颜色（事件无法使用）
+字体颜色(事件无法使用）
 §R123§! = 123为红色字体 B深蓝色 C天蓝色 G绿色 L灰色 O橙色 R红色 Y黄色
 
 #领导人的意识形态代码
@@ -61,7 +61,7 @@ centrism 中间路线
 		种类 = 加成速度
 	}
 	
-#研究加成种类（可以是直接的科技，也可以是种类，直接的科技去科技文件复制，种类去科技tags找）
+#研究加成种类(可以是直接的科技，也可以是种类，直接的科技去科技文件复制，种类去科技tags找）
 	construction_tech = 建筑科技
 	excavation_tech = 挖掘技术
 	synth_resources = 合成资源 
@@ -119,7 +119,7 @@ centrism 中间路线
 	allowed = {
 		条件
 	}
-#条件提示（隐藏条件，显示提示，放在available内）
+#条件提示(隐藏条件，显示提示，放在available内）
 	custom_trigger_tooltip = {
 		tooltip = 条件特定提示代码(拿到本地化文件翻译)	
 		条件
@@ -134,7 +134,7 @@ centrism 中间路线
 	has_country_leader = { ruling_only = yes name = "国家领袖名称" } = 某人为国家领袖
 	has_global_flag = 要求有的全球标记名称	( 加NOT = { } 就是要求没有有全球标记 )
 	has_country_flag = 要求有的国家标记名称	( 加NOT = { } 就是要求没有国家标记 )
-	date > 1937.7.7 = 时间大于1937.7.7（要定某天弹出需要往前打一天，例如 >1937.7.7日实际弹出日期为1937.7.8）
+	date > 1937.7.7 = 时间大于1937.7.7(要定某天弹出需要往前打一天，例如 >1937.7.7日实际弹出日期为1937.7.8）
 	tag = 国家代码
 	has_government = 意识形态 = 当前意识形态是什么
 	is_historical_focus_on = yes = 是否使用历史国策
@@ -165,7 +165,7 @@ centrism 中间路线
 	has_idea = 民族精神 = 要求拥有民族精神
 	NOT = { has_idea = 民族精神 } = 要求没有民族精神
 	has_tech = 拥有科技
-	has = 有（可以试着加在变量前，编出代码，比如 has_manpower > 人力大于多少）
+	has = 有(可以试着加在变量前，编出代码，比如 has_manpower > 人力大于多少）
 	is_subject_of = 是哪个国家附庸的国家代码
 	has_army_manpower = { size > 兵力人数 } = 陆军现役兵力大于或小于多少 
 	has_deployed_air_force_size { size > 兵力人数 } = 部署的飞机数量大于或少于多少
@@ -206,8 +206,8 @@ centrism 中间路线
 			state = 省份代码
 		}
 #国策、决议代码
-	shared_focus = { 国策内容 } = 共享国策（不需要国策树，直接打）
-	shared_focus = 国策id = 调用共享国策（放在国策树下，只需要打开头的国策，下面的会自动出来）
+	shared_focus = { 国策内容 } = 共享国策(不需要国策树，直接打）
+	shared_focus = 国策id = 调用共享国策(放在国策树下，只需要打开头的国策，下面的会自动出来）
 	initial_show_position = { focus = industrial_effort } = 点开国策树显示在哪个国策的位置
 	fire_only_once = 决议是否只能点一次yes 或者 no
 	days_re_enable = 决议完成后会再次出现的间隔天数
@@ -215,14 +215,14 @@ centrism 中间路线
 	complete_effect = { 决议点击时的效果 } = 决议点击时要实现的效果代码
 	remove_effect = { 决议移除后的效果 } = 决议移除后要实现的效果代码		
 	mutually_exclusive = { focus = 相互排斥的国策代码 }
-	prerequisite = { focus = 要求完成的国策代码 } = （国策线连接）
+	prerequisite = { focus = 要求完成的国策代码 } = (国策线连接）
 	available_if_capitulated = yes 投降可以点 no则反之
 	completion_reward = { 完成国策的奖励 }
 	continuous_focus_position = { x =  y =  } = 持续性国策位置 一般为这样:continuous_focus_position = { x = 20 y = 1200 } 不要惊讶，就是这样
 	relative_position_id = 相对的国策id = 相对国策位置
-	modifier = 修正效果，放在民族精神下面，或者直接放在决议下面，决议未移除时会一直加成（代码见下面#民族精神效果）
+	modifier = 修正效果，放在民族精神下面，或者直接放在决议下面，决议未移除时会一直加成(代码见下面#民族精神效果）
 	highlight_state_targets = { state = 219 } = 鼠标移到此决议时，目标地区省份会亮起，可打多个省份
-	complete_tooltip = { 国策完成后显示的效果（直接复制国策效果代码进入）}	
+	complete_tooltip = { 国策完成后显示的效果(直接复制国策效果代码进入）}	
 	#以下代码可放在国家代码位置
 		ROOT = 当前国家，比如当前事件触发的国家、使用此国策树的国家
 		FROM = 让这个事件触发的国家(例如某国的某个事件触发了在另一个国家发生的某个事件)
@@ -241,9 +241,9 @@ centrism 中间路线
 	add_popularity = { ideology = 意识形态 popularity = 加多少 } = 增加支持率
 	set_politics = { ruling_party = 意识形态 } 变身该意识形态
 	elections_allowed = 能否选举
-	set_cosmetic_tag = XXX =改国家名字和旗帜（如果无本地化则不改名
+	set_cosmetic_tag = XXX =改国家名字和旗帜(如果无本地化则不改名
 	complete_national_focus = xxx = 完成该国策
-	add_named_threat = { threat = 添加多少紧张度 name = 名字（拿到本地化文件翻译）} = 添加全球紧张度
+	add_named_threat = { threat = 添加多少紧张度 name = 名字(拿到本地化文件翻译）} = 添加全球紧张度
 	annex_country = { target = 要吞并的国家代码 transfer_troops = 是否吞并军队 yes or no }
 	set_state_controller = 要控制的省份代码(仅在战时会成为控制者，战争结束会还给拥有者，和平时期无效)
 	transfer_state = 要成为拥有者和控制者的省份代码
@@ -272,28 +272,28 @@ centrism 中间路线
 	create_country_leader = 创造国家领袖(领袖格式去历史文件找)
 	remove_country_leader_trait = 领袖特质 = 移除领袖特质
 	set_capital = 省份代码 = 设置首都		
-	load_oob = "文件名（不用打后缀名）" 载入军队文件（爆兵用的，军队文件在历史军队文件）
+	load_oob = "文件名(不用打后缀名）" 载入军队文件(爆兵用的，军队文件在历史军队文件）
 	add_command_power = 添加指挥点数
 	add_state_core = 添加核心地区
 	add_state_claim = 添加地区宣称
 	add_core_of = TAG 国家获得该地核心
-	unlock_decision_category_tooltip = 解锁的决议代码（仅仅是提示一下解锁什么决议）
-	show_ideas_tooltip = { 提示启用内阁（仅仅是提示，具体条件要去内阁进行条件设置）
+	unlock_decision_category_tooltip = 解锁的决议代码(仅仅是提示一下解锁什么决议）
+	show_ideas_tooltip = { 提示启用内阁(仅仅是提示，具体条件要去内阁进行条件设置）
 	custom_effect_tooltip = 效果特定提示代码(将效果特定提示代码拿到本地化文件翻译)
 	effect_tooltip = 效果工具提示，目前作用不明
 	remove_unit_leader = 要移除的将领id
-	省份代码 = { set_demilitarized_zone = yes } = 该省份成为非军事区（no为取消）
+	省份代码 = { set_demilitarized_zone = yes } = 该省份成为非军事区(no为取消）
 	build_railway = { #铺设铁路
 		path = { 9330 3356 6279 6230 6398 6341 413 3527 11475 11412 6591 3540 3519 11459 11450 11434 9417 }
-	                         （铁路沿线地块代码）
+	                         (铁路沿线地块代码）
 	#傀儡国#
 	set_autonomy = {
 		target = TAG
-		autonomy_state = #autonomy_free #autonomy_colony（殖民地） #autonomy_dominion（自治领） #autonomy_puppet（傀儡） #autonomy_integrated_puppet（半吞傀儡）
+		autonomy_state = #autonomy_free #autonomy_colony(殖民地） #autonomy_dominion(自治领） #autonomy_puppet(傀儡） #autonomy_integrated_puppet(半吞傀儡）
 	}
 	
 	
-	#规则设定（可到ideologies意识形态文件找种类）
+	#规则设定(可到ideologies意识形态文件找种类）
 		set_rule = { 规则种类 = yes 或者 no } = 规则设定格式
 		#规则种类
 			can_create_factions = 规则设定，是否可以创建阵营
@@ -382,7 +382,7 @@ centrism 中间路线
 			效果
 		}
 		#多个if是同时执行，else_if是否则执行另一种情况(如果if里面的条件不满足，则检测和执行else_if里面的)
-		#else里面只能放效果，如果if条件不满足，则直接执行else里面的效果（else = 否则）
+		#else里面只能放效果，如果if条件不满足，则直接执行else里面的效果(else = 否则）
 			
 	#添加装备
 	add_equipment_to_stockpile = {
@@ -467,7 +467,7 @@ centrism 中间路线
 	enclave = 飞地 初始 0 建筑槽	
 	tiny_island = 极小岛屿 初始 0 建筑槽
 	
-#民族精神效果（加在modifier下面）
+#民族精神效果(加在modifier下面）
 	civilian_factory_use = 决议需要暂时使用的民用工厂数量
 	send_volunteer_divisions_required = 可以派遣志愿军的师数下限
 	generate_wargoal_tension = 制造战争目标的紧张度限制
@@ -509,8 +509,8 @@ centrism 中间路线
 	subversive_activites_upkeep = 颠覆活动代价
 	drift_defence_factor = 意识形态抵制力度
 	political_power_factor = 政治点(以百分比形式增加 例0.25 = 25% )
-	political_power_gain = 每日政治点增加（0.1=每天加0.1）
-	political_power_cost = 每日政治点消耗（同上）
+	political_power_gain = 每日政治点增加(0.1=每天加0.1）
+	political_power_cost = 每日政治点消耗(同上）
 	stability_factor = 稳定度
 	stability_weekly = 每周稳定度增长
 	defensive_war_stability_factor = 战争防御对稳定度修正
@@ -607,7 +607,7 @@ centrism 中间路线
 	air_cas_efficiency = 空中支援任务效率
 	air_night_penalty = 夜间惩罚
 	air_range_factor = 空军航程
-	air_agility_factor = 空军机动性能（闪避）
+	air_agility_factor = 空军机动性能(闪避）
 	air_escort_efficiency = 护航效率
 	air_strategic_bomber_bombing_factor 
 	invasion_preparation = 登陆准备时间
@@ -622,10 +622,10 @@ centrism 中间路线
 	ai_focus_aviation_factor = ai修正：专注空军的值
 	
 #隐藏民族精神代码
-	（将country替换为hidden_ideas然后在下面打民族精神即可）	
+	(将country替换为hidden_ideas然后在下面打民族精神即可）	
 	
-#添加规则设定（直接打不用加在modifier下面）
-	rule = { 规则种类（可打多个） = yes 或 no }
+#添加规则设定(直接打不用加在modifier下面）
+	rule = { 规则种类(可打多个） = yes 或 no }
 	
 #针对某种武器的加成(直接打不用加在modifier下面)
 	equipment_bonus = {
@@ -709,7 +709,7 @@ centrism 中间路线
 		heavy_tank_equipment = 重型坦克
 		super_heavy_tank_equipment = 超重坦克
 		modern_tank_equipment = 现代坦克
-		category_all_armor = 装甲变种（无用）
+		category_all_armor = 装甲变种(无用）
 		armor = 装甲
 		motorized_equipment = 摩托化装备
 		mechanized_equipment = 机械化装备
@@ -732,7 +732,7 @@ centrism 中间路线
 #事件代码
 	fire_only_once = yes 仅触发一次
 	is_triggered_only = yes = 仅供调出(不会自己触发)
-	hidden = yes 是否隐藏触发no则反之（看不到事件弹出，一般配合immediate事件弹出时立即执行效果使用）
+	hidden = yes 是否隐藏触发no则反之(看不到事件弹出，一般配合immediate事件弹出时立即执行效果使用）
 	#以下代码可放在国家代码位置
 		ROOT = 触发事件的国家(就是当前国家，也可以放在在其他需要打国家代码的位置)
 		FROM = 让这个事件触发的国家(例如某国的某个事件触发了在另一个国家发生的某个事件)
@@ -862,12 +862,12 @@ division_template = {
 	
 	随便打个id不重要 = {
 		enable = {
-			开启战略的条件（只要满足条件且当前未开启就可以无限重复）
+			开启战略的条件(只要满足条件且当前未开启就可以无限重复）
 		}
 		abort = {
 			战略终止的条件
 		}
-		abort_when_not_enabled = yes = 未满足启用条件时终止（只要满足条件且当前已经开启此战略就可以无限重复，根据情况与"abort"战略终止的条件来选择使用）
+		abort_when_not_enabled = yes = 未满足启用条件时终止(只要满足条件且当前已经开启此战略就可以无限重复，根据情况与"abort"战略终止的条件来选择使用）
 		
 		战略
 		
@@ -886,7 +886,7 @@ division_template = {
 			equipment_production_factor = 装备生产
 			equipment_variant_production_factor = 装备的变形体生产(不是创造变形体倾向，是生产，就是放在生产线生产的倾向)
 			template_prio = 某种兵种模板的训练倾向
-			building_target = 建造建筑倾向（建筑种类去上面找）
+			building_target = 建造建筑倾向(建筑种类去上面找）
 	#其它模板的战略种类		
 		ai_strategy = {
 			type = alliance 									 --联盟(可用于防止不同意识形态ai退出阵营)

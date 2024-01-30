@@ -1,7 +1,7 @@
 spriteTypes = {
 
 
-	####本文档是逻各斯的interface！别整合了，，，怪累挺，以后我interface就更新在这里了，就不会不小心覆盖别人的了（（（#####
+	####本文档是逻各斯的interface!别整合了，，，怪累挺，以后我interface就更新在这里了，就不会不小心覆盖别人的了(((#####
     ####此处是阿工团的内战时国策树###
 	#icon#
 
@@ -769,7 +769,7 @@ spriteTypes = {
 
 	
 	#巴苏事件图片
-	#这是一个通用电报图片！帅！
+	#这是一个通用电报图片!帅!
 	spriteType = {
 		name = "GFX_AOR_telegram_pic"
 		texturefile = "gfx/event_pictures/AOR_telegram_pic.png"
@@ -1422,7 +1422,7 @@ spriteType = {
  }
  
  
- ####AOR超事件框架！！！我真厉害！耶#####
+ ####AOR超事件框架!!!我真厉害!耶#####
   spriteType = {
   name = "GFX_AOR_supernews_bg"
   texturefile = "gfx/AOR_supernews/supernews_bg.png"
@@ -1436,7 +1436,7 @@ spriteType = {
   texturefile = "gfx/AOR_supernews/supernews_frame.png"
  }
  
- #####超事件图片！
+ #####超事件图片!
   spriteType = {
   name = "GFX_AOR_supernews_1"
   texturefile = "gfx/AOR_supernews/pic/supernews_1.png"
@@ -1469,7 +1469,7 @@ spriteType = { name = "AOR_goals_jiujituiwulaobing" texturefile = "gfx/interface
 spriteType = { name = "AOR_goals_kaishexuexiao" texturefile = "gfx/interface/goals/AOR_goals_kaishexuexiao.png" }
 spriteType = { name = "AOR_goals_quebaogongrenwending" texturefile = "gfx/interface/goals/AOR_goals_quebaogongrenwending.png" }
 spriteType = { name = "AOR_goals_shijiekewangzhichenglundun" texturefile = "gfx/interface/goals/AOR_goals_shijiekewangzhichenglundun.png" }
-spriteType = { name = "AOR_goals_shuangCjihuachulu！" texturefile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu！.png" }
+spriteType = { name = "AOR_goals_shuangCjihuachulu!" texturefile = "gfx/interface/goals/AOR_goals_shuangCjihuachulu!.png" }
 spriteType = { name = "AOR_goals_taigaoqiyejiadiwei" texturefile = "gfx/interface/goals/AOR_goals_taigaoqiyejiadiwei.png" }
 spriteType = { name = "AOR_goals_tigaojihuayouxianji" texturefile = "gfx/interface/goals/AOR_goals_tigaojihuayouxianji.png" }
 spriteType = { name = "AOR_goals_tuiwujunrenzaijiuye" texturefile = "gfx/interface/goals/AOR_goals_tuiwujunrenzaijiuye.png" }

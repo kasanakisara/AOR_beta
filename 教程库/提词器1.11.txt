@@ -1,6 +1,6 @@
 指令
 本页面所适用的版本可能已经过时，最后更新于1.10。
-效果（Effects），也叫指令（Commands），用于在特定作用域内动态地影响游戏。
+效果(Effects），也叫指令(Commands），用于在特定作用域内动态地影响游戏。
 
 效果在整局游戏中作用于不同的作用域，最常见的是国策、事件以及决议.
 
@@ -176,7 +176,7 @@ break	None	break	停止执行当前作用域内的指令		1.0
 sound_effect	<string>
 A sound reference from an .asset file.	sound_effect = "boom"	Plays the specified sound once.		1.0
 randomize_weather	<int>
-一个随机数种子（整数）	randomize_weather = 12345	以特定的随机数种子随机生成天气		1.0
+一个随机数种子(整数）	randomize_weather = 12345	以特定的随机数种子随机生成天气		1.0
 set_province_name	id = <id>
 要重命名的胜利点ID
 name = <string>
@@ -208,7 +208,7 @@ GER = { change_tag_from = var:from.country }
 add_region_efficiency					1.5
 边境冲突
 Name	Parameters	Examples	Description	Notes	Version Added
-start_border_war（发起边境冲突）	change_state_after_war = <bool>
+start_border_war(发起边境冲突）	change_state_after_war = <bool>
 在边境冲突结束后，该省份是否易手
 
 进攻方作用域
@@ -348,9 +348,9 @@ modify_country_flag = {
 country_event	id = <event>
 要触发的事件
 days = <event> / <variable>
-在特定的天数内触发事件（可选）
+在特定的天数内触发事件(可选）
 hours = <event> / <variable>
-在特定的小时内触发事件（可选）
+在特定的小时内触发事件(可选）
 random = <event>
 Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
 
@@ -363,9 +363,9 @@ country_event = {
 news_event	id = <event>
 要触发的新闻事件
 days = <event> / <variable>
-在特定的天数内触发事件（可选）
+在特定的天数内触发事件(可选）
 hours = <event> / <variable>
-在特定的天数内触发事件（可选）
+在特定的天数内触发事件(可选）
 random = <event>
 Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
 
@@ -378,8 +378,8 @@ news_event = {
 Where triggers do not need to be repeatedly checked random can be a performance light alternative to mean_time_to_happen for scheduling events.
 
 1.0
-set_cosmetic_tag（设置显示动态Tag）	<string>
-设置一个动态Tag以更改旗帜、国名（注意：此代码无法改变国家初始tag，只会更改其显示）	
+set_cosmetic_tag(设置显示动态Tag）	<string>
+设置一个动态Tag以更改旗帜、国名(注意：此代码无法改变国家初始tag，只会更改其显示）	
 set_cosmetic_tag = SAF_SOV_communism
 Makes the current scope use the specified cosmetic tag, changing name and flag.	 	1.3
 drop_cosmetic_tag	<bool>
@@ -465,7 +465,7 @@ transfer_state = 345
 set_province_controller	<id>
 设置地块的实际控制者	
 set_province_controller = 2999
-将当前作用域设置为地块的实际控制者（仅在战时可用）	 	1.0
+将当前作用域设置为地块的实际控制者(仅在战时可用）	 	1.0
 政治力量
 Name	Parameters	Examples	Description	Notes	Version Added
 add_political_power	<int> / <variable>
@@ -509,7 +509,7 @@ set_country_leader_description = {
 	ideology = neutrality
 	desc = LOC_KEY
 }
-更改国家领导人的描述 （意识形态是可选项）
+更改国家领导人的描述 (意识形态是可选项）
 set_country_leader_name	ideology = <ideology>
 The ideology of the country leader, optional.
 name = <localisation key>
@@ -529,7 +529,7 @@ set_country_leader_portrait = {
 	ideology = neutrality
 	portrait = GFX_IMAGE_NAME
 }
-改变领导人肖像（我不知道这个玩意能不能像是set_portraits一样直接填地址） （意识形态是可选项）	1.9.1
+改变领导人肖像(我不知道这个玩意能不能像是set_portraits一样直接填地址） (意识形态是可选项）	1.9.1
 set_leader_portrait  = {
     portrait = "地址"
 }
@@ -553,7 +553,7 @@ retire_country_leader = yes
 set_country_leader_ideology	<government>
 The government to set.	
 set_country_leader_ideology = socialism
-改变国家元首所属的党派（实际上是更改意识形态）	 	1.0
+改变国家元首所属的党派(实际上是更改意识形态）	 	1.0
 add_country_leader_trait	<trait>
 The trait to add.	
 add_country_leader_trait = nationalist_symbol
@@ -565,8 +565,8 @@ remove_country_leader_trait = nationalist_symbol
 hold_election	<scope>
 The country to hold an election for.	
 hold_election = ROOT
-为当前作用域执行在on_new_term_election内的事件（在On Actions文件里）	 	1.0
-add_popularity（更改支持率）	ideology = <ideology>
+为当前作用域执行在on_new_term_election内的事件(在On Actions文件里）	 	1.0
+add_popularity(更改支持率）	ideology = <ideology>
 指定需更改支持率的党派意识形态
 popularity = <int> / <variable>
 该党派支持率变更的具体数值
@@ -613,7 +613,7 @@ set_political_party = {
     popularity = 50
 }
 Sets the popularity for the specified political party in the current scope.	 	1.0
-set_party_name（设置党派名称）	ideology = <ideology>
+set_party_name(设置党派名称）	ideology = <ideology>
 指定更改名称的党派
 long_name = <string>
 指定党派更改名称的全名 
@@ -669,12 +669,12 @@ set_major = yes
 create_faction	<string>  创建阵营
 派系名称。	
 create_faction = MY_FACTION_NAME   
-创建一个在当前作用域的有指定名称的派系（MY_FACTION_NAME）。该作用域范围内及其附属国将自动加入派系。	 	1.0
+创建一个在当前作用域的有指定名称的派系(MY_FACTION_NAME）。该作用域范围内及其附属国将自动加入派系。	 	1.0
 add_to_faction	<TAG>  加入阵营
 国家tag标签。	
 派系领导者的国家tag标签 = { add_to_faction = 需要加入该派系的国家tag标签 }
 
-将特定国家（TAG_TO_ADD）加入该派系领导人（FACTION_LEADER_TAG）领导的的派系。	 	1.0
+将特定国家(TAG_TO_ADD）加入该派系领导人(FACTION_LEADER_TAG）领导的的派系。	 	1.0
 leave_faction	<bool>  离开阵营
 Boolean.	
 leave_faction = yes
@@ -932,10 +932,10 @@ set_truce = {
     days = 90
 }
 Makes the current scope truce with the specified scope.	 	1.0
-create_wargoal（制造宣战借口）	target = <scope> / <variable>
+create_wargoal(制造宣战借口）	target = <scope> / <variable>
 指定被制造宣战借口的国家
 type = <wargoal>
-指定制造的宣战借口类型，宣战借口类型在Hearts of Iron IV\common\wargoals\中（可通过该方式自定义宣战借口） 
+指定制造的宣战借口类型，宣战借口类型在Hearts of Iron IV\common\wargoals\中(可通过该方式自定义宣战借口） 
 generator = { <state id> }
 The states to supply the wargoal (i.e. take_state_focus).
 
@@ -1202,7 +1202,7 @@ add_timed_idea = {
 modify_timed_idea	idea = <idea>
 需要修改的民族精神
 days = <int> / <variable>
-需要添加的时间量（天数）
+需要添加的时间量(天数）
 
 modify_timed_idea = {
     idea = my_idea
@@ -1237,8 +1237,8 @@ show_ideas_tooltip = my_idea
 在当前作用域中显示指定的民族精神，注意，这个效果并不添加民族精神。	 	1.0
 单位
 Name	Parameters	Examples	Description	Notes	Version Added
-load_oob（生成单位）	<oob>
-引入生成单位的指定文件，并通过该文件生成单位（生成单位的指定文件应放置于history\units文件夹中）	
+load_oob(生成单位）	<oob>
+引入生成单位的指定文件，并通过该文件生成单位(生成单位的指定文件应放置于history\units文件夹中）	
 load_oob = "GER_default"
 Loads the specified OOB for the current scope, applying the effects within.	 	1.0
 division_template	name
@@ -2520,16 +2520,16 @@ random_army_leader	指向当前国家作用域的一个随机陆军将领。	ran
 every_army_leader	指向当前国家作用域的每一个陆军将领。	every_army_leader = { ... }	X	✓	国家	将领	1.5
 random_navy_leader	指向当前国家作用域的一个随机海军将领。	random_navy_leader = { ... }	X	✓	国家	将领	1.5
 every_navy_leader	指向当前国家作用域的每一个海军将领。	every_navy_leader = { ... }	X	✓	国家	将领	1.5
-global_every_army_leader	指向世界上所有国家的每一个陆军将领。（如果你知道国家的话最好用every_army_leader）	global_every_army_leader = { ... }	X	✓	国家	将领	1.5
+global_every_army_leader	指向世界上所有国家的每一个陆军将领。(如果你知道国家的话最好用every_army_leader）	global_every_army_leader = { ... }	X	✓	国家	将领	1.5
 
 
-every_country	指向世界上的每一个国家。（包括当前作用域，如果不想包含的话参见every_other_country）	every_country = { ... }	X	✓	任意	国家	1.0
+every_country	指向世界上的每一个国家。(包括当前作用域，如果不想包含的话参见every_other_country）	every_country = { ... }	X	✓	任意	国家	1.0
 every_country_with_original_tag		every_country_with_original_tag = { original_tag_to_check = TAG limit = { ... } ... }	X	✓	任意	国家	1.9
-every_other_country	指向世界上的每一个其他国家（不包括当前作用域）。	every_other_country = { ... }	X	✓	国家	国家	1.0
+every_other_country	指向世界上的每一个其他国家(不包括当前作用域）。	every_other_country = { ... }	X	✓	国家	国家	1.0
 every_neighbor_country	指向当前作用域的每一个邻国。	every_neighbor_country = { ... }	X	✓	国家	国家	1.0
 every_enemy_country	指向当前作用域的每一个敌对国家。	every_enemy_country = { ... }	X	✓	国家	国家	1.0
 every_occupied_country	指向当前作用域占领的每一个国家。	every_occupied_country = { ... }	X	✓	国家	国家	1.9
-random_country	指向世界上的一个随机国家。（包括当前作用域）	random_country = { ... }	X	✓	任意	国家	1.0
+random_country	指向世界上的一个随机国家。(包括当前作用域）	random_country = { ... }	X	✓	任意	国家	1.0
 random_country_with_original_tag	指向世界上随机一个国家和其原生tag	random_country_with_original_tag = { original_tag_to_check = TAG limit = {...} ... }	X	✓	任意	国家	1.9
 random_neighbor_country	指向当前作用域的一个随机邻国。	random_neighbor_country = { ... }	X	✓	国家	国家	1.0
 random_enemy_country	指向当前作用域的一个随机敌对国家。	random_enemy_country = { ... }	X	✓	国家	国家	1.0
@@ -2560,13 +2560,13 @@ all_navy_leader	检查是否当前国家作用域的所有海军将领满足了�
 any_navy_leader	检查是否当前国家作用域有任意海军将领满足了条件。	all_navy_leader = { ... }	
 
 
-any_country	检查世界上的任意国家。（包括当前作用域，如果不想包含的话参见any_other_country）	any_country = { ... }	
+any_country	检查世界上的任意国家。(包括当前作用域，如果不想包含的话参见any_other_country）	any_country = { ... }	
 original tag	any_country_with_original_tag = { ... }	
 any_neighbor_country	检查当前作用域的任意相邻国家。	any_neighbor_country = { ... }	
-any_home_area_neighbor_country	检查与当前作用域本土（核心地区）相邻的任意国家。	any_home_area_neighbor_country = { ... }	
+any_home_area_neighbor_country	检查与当前作用域本土(核心地区）相邻的任意国家。	any_home_area_neighbor_country = { ... }	
 any_guaranteed_country	检查当前作用域保障独立的任意国家。	any_guaranteed_country = { ... }	
 any_allied_country	检查当前作用域结盟的任意国家。	any_allied_country = { ... }	
-any_other_country	检查世界上的任意其他国家（不包括当前作用域）。	any_other_country = { ... }	
+any_other_country	检查世界上的任意其他国家(不包括当前作用域）。	any_other_country = { ... }	
 any_enemy_country	检查当前作用域的任意敌对国家。	any_enemy_country = { ... }	
 any_occupied_country	检查被当前作用域占领的任意国家。	any_occupied_country = { ... }	
 all_neighbor_country	检查当前作用域的所有相邻国家。	all_neighbor_country = { ... }	
@@ -2604,7 +2604,7 @@ all_country_with_original_tag	所有国家和其原生tag
 
 
 TRIGGER 
-条件（也叫触发器）用来在效果发生时进行判定。当一个触发器判定为满足条件时，效果就会实施，否则就会停止。一些触发器，包括默认的AND触发器，允许相互嵌套以创建更复杂的表达。
+条件(也叫触发器）用来在效果发生时进行判定。当一个触发器判定为满足条件时，效果就会实施，否则就会停止。一些触发器，包括默认的AND触发器，允许相互嵌套以创建更复杂的表达。
 
 
 目录
@@ -2668,7 +2668,7 @@ count_triggers = {
     11 = { state_population = 100000 }
     12 = { state_population = 100000 }
 }
-对下面的所有条件进行计算（不满足=0.满足=1），如果和等于amount就可以触发		1.5
+对下面的所有条件进行计算(不满足=0.满足=1），如果和等于amount就可以触发		1.5
 if	limit = <AND-trigger>
 条件。 else_if = <if-trigger>
 替代条件。可选。
@@ -2686,7 +2686,7 @@ if = {
         has_war_support > 0.5
     }
 }
-首先，limit是一个AND的触发器，也就是其中的所有条件都需要满足，如果limit中的内容没有满足，就开始检测else_if，直到else最后这个触发器（除非你没有写）。这其中的每一个触发器只要有一个触发器中的内容全部满足就会触发	else_if和else也可以直接跟在if触发器的后面，而不是放在里面。	1.0
+首先，limit是一个AND的触发器，也就是其中的所有条件都需要满足，如果limit中的内容没有满足，就开始检测else_if，直到else最后这个触发器(除非你没有写）。这其中的每一个触发器只要有一个触发器中的内容全部满足就会触发	else_if和else也可以直接跟在if触发器的后面，而不是放在里面。	1.0
 hidden_trigger	触发器。	
 hidden_trigger = {
     country_exists = GER
@@ -2703,7 +2703,7 @@ custom_trigger_tooltip = {
         is_coastal = yes
     }
 }
-和AND触发器类似，但是提示文字会显示tooltip的内容。在样例中是sunrise_invasion_tt（在本地化文件中定义）。		
+和AND触发器类似，但是提示文字会显示tooltip的内容。在样例中是sunrise_invasion_tt(在本地化文件中定义）。		
 has_global_flag	<string>
 要检查的flag。	
 has_global_flag = my_flag
@@ -2771,7 +2771,7 @@ is_tutorial = yes
 is_debug	<bool>
 布尔型。	
 is_debug = yes
-检查当前游戏是否处于debug模式（用-debug模式启动游戏）。		1.9
+检查当前游戏是否处于debug模式(用-debug模式启动游戏）。		1.9
 threat	<float>
 要检查的值。	
 threat > 0.5
@@ -2829,8 +2829,8 @@ has_country_flag = {
     value > 0
 }
 Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
-has_cosmetic_tag（拥有显示tag）	<string>
-指向某个显示tag（对应效果中的更改显示tag）	
+has_cosmetic_tag(拥有显示tag）	<string>
+指向某个显示tag(对应效果中的更改显示tag）	
 有装饰性tag
 has_cosmetic_tag = SOV_custom
 Checks if the current scope has the specified cosmetic tag active.		1.5
@@ -2857,7 +2857,7 @@ has_focus_tree	<string>
 The focus tree to check.	
 has_focus_tree = soviet_tree  有国策树
 Checks if the current scope has the specified focus tree.		1.3
-has_completed_focus（完成国策）	<string>
+has_completed_focus(完成国策）	<string>
 某个国策是否完成	
 has_completed_focus = my_focus
 Checks if the current scope has the specified focus completed.		1.0
@@ -2980,11 +2980,11 @@ Checks if the current scope has the specified country rule.		1.6
 num_of_controlled_factories	
 The amount to check for.	
 num_of_controlled_factories > 10
-查询控制的工厂数（民工 船坞 军工）
+查询控制的工厂数(民工 船坞 军工）
 num_of_owned_factories	<int>
 The amount to check for.	
 num_of_owned_factories > 10
-查询拥有的的工厂数（民工 船坞 军工）
+查询拥有的的工厂数(民工 船坞 军工）
 Ambox outdated info.png	
 这部分内容可能已不适合当前版本，最后更新于1.5。
 Name	Parameters	Examples	Description	Notes	Version Added
@@ -3181,7 +3181,7 @@ is_owner_neighbor_of	<scope> / <variable>
 The country to check for.	
 is_owner_neighbor_of = GER
 Checks if the current scope is a neighbor of the specified country with their core territory only.		1.0
-is_puppet_of（被某国傀儡）	<scope> / <variable>
+is_puppet_of(被某国傀儡）	<scope> / <variable>
 指向傀儡该国的国家	
 is_puppet_of = GER
 Checks if the current scope is a puppet of the specified country.		1.0
@@ -3189,7 +3189,7 @@ is_subject_of	<scope> / <variable>
 The country to check for.	
 is_subject_of = GER
 Checks if the current scope is a subject of the specified scope.		1.0
-is_puppet（是否被傀儡）	<bool>
+is_puppet(是否被傀儡）	<bool>
 Boolean.	
 is_puppet = yes
 Returns true if the current country has an autonomy level with is_puppet = yes, false otherwise.		1.0
@@ -3376,7 +3376,7 @@ Returns false if any country is at war with THIS, exists, and fails the sub-trig
 Ambox outdated info.png	
 这部分内容可能已不适合当前版本，最后更新于1.5。
 Name	Parameters	Examples	Description	Notes	Version Added
-controls_state（控制省份）	<scope> / <variable>
+controls_state(控制省份）	<scope> / <variable>
 当前国家是否控制某个省份	
 controls_state = 39
 controls_state = var:state
@@ -4653,7 +4653,7 @@ MODIFIER
 
 修正
 本页面讲述的内容长期有效。
-（重定向自Modifiers）
+(重定向自Modifiers）
 
 目录
 1 修正是什么？
@@ -4704,7 +4704,7 @@ General
 Ambox outdated info.png	
 这部分内容可能已不适合当前版本，最后更新于1.10。
 Name	Effects	Examples	Modifier type	Notes	Version Added
-monthly_population	增加国家所有的省份每月的人口增长。（似乎木大）	
+monthly_population	增加国家所有的省份每月的人口增长。(似乎木大）	
 monthly_population = 0.5
 Percentual (0.01 being 1%).百分比		1.0
 nuclear_production	允许核弹生产	
@@ -4732,7 +4732,7 @@ Percentual (0.01 being 1%).		1.0
 disabled_ideas	禁止手动改变ideas(包括顾问和法律)。参考idea：SPR_political_violence	
 disabled_ideas = 1
 Boolean.		1.9
-<idea category>_cost_factor	增加添加一个特定的类别idea的政治点数（PP）花费。参考idea：PRC_power_struggles	
+<idea category>_cost_factor	增加添加一个特定的类别idea的政治点数(PP）花费。参考idea：PRC_power_struggles	
 political_advisor_cost_factor = 0.5
 Percentual (0.01 being 1%).	idea类别可以在common/idea_tags中找到。还包括improve_relations_maintain。	1.0
 female_random_country_leader_chance	增加随机产生的国家领导人为女性的几率。	
@@ -4758,10 +4758,10 @@ Flat.		1.0
 political_power_factor	以百分比修正每日PP的获得。参考idea：PRC_government_corruption	
 political_power_factor = 0.3
 Percentual (0.01 being 1%).		1.0
-stability_factor	Modifies stability of the country.（用于变更国家的 稳定度）参考idea：CHI_grain_tax	
+stability_factor	Modifies stability of the country.(用于变更国家的 稳定度）参考idea：CHI_grain_tax	
 stability_factor = 0.3
 Flat.		1.0
-stability_weekly	Modifies weekly stability gain of the country.（用于变更国家的 每周稳定度增长）参考idea：FRA_constitutional_revision	
+stability_weekly	Modifies weekly stability gain of the country.(用于变更国家的 每周稳定度增长）参考idea：FRA_constitutional_revision	
 stability_weekly = 0.01
 Flat.		1.0
 stability_weekly_factor	Modifies weekly stability gain of the country by a percentage.以百分比修正每周国家稳定度增长	
@@ -4782,10 +4782,10 @@ Percentual (0.01 being 1%).		1.0
 drift_defence_factor	Ideology drift defense.意识形态变化抵制力度。参考idea：sour_loser	
 drift_defence_factor = 0.3
 Percentual (0.01 being 1%).		1.0
-<ideology>_drift	Daily gain of the specified ideology.特定意识形态的每日支持度增长。参考idea：GER_align_hungary（fascism_drift = 0.2）	
+<ideology>_drift	Daily gain of the specified ideology.特定意识形态的每日支持度增长。参考idea：GER_align_hungary(fascism_drift = 0.2）	
 communism_drift = 0.03
 Flat.		1.0
-<ideology>_acceptance	Likelihood of AI to accept offers from countries of the specified ideology.AI对特定意识形态外交接纳度。参考idea：GER_align_hungary（fascism_acceptance = 85）	
+<ideology>_acceptance	Likelihood of AI to accept offers from countries of the specified ideology.AI对特定意识形态外交接纳度。参考idea：GER_align_hungary(fascism_acceptance = 85）	
 fascism_acceptance = 50
 Flat.		1.0
 Trade贸易

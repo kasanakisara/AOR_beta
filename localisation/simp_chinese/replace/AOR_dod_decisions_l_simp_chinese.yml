@@ -16,7 +16,7 @@
  YUG_arm_communist_militants:0 "武装[YUG_communist_coup_target.GetAdjective]激进份子"
  YUG_arm_communist_militants_desc:0 "我们不能仅凭言语就把革命带给我们的外国同志。我们必须为盟国提供推翻压迫者所需的武器。"
  YUG_communist_coup:0 "鼓动共产主义政变"
- YUG_communist_coup_desc:0 "他们已经准备得够久了，我们现在需要做的就是放行我们边境的武装分子，他们将试图发动一场政变来推翻他们腐败的资本主义政府！"
+ YUG_communist_coup_desc:0 "他们已经准备得够久了，我们现在需要做的就是放行我们边境的武装分子，他们将试图发动一场政变来推翻他们腐败的资本主义政府!"
  YUG_abandon_communist_effort:0 "放弃我们在[YUG_communist_coup_target.GetNameDef]的努力"
  YUG_abandon_communist_effort_desc:0 "很明显[YUG_communist_coup_target.GetNameDef]的人民还没有准备好摆脱其政府的束缚，我们必须放弃在他们国家发起共产主义政变的努力。"
  YUG_uprising_strength_tt:0 "在他们目前的支持下，§Y共产主义者§!的力量将会是[YUG_communist_coup_target.Get_Yugo_Uprising_strength]。\n这是基于他们当前的§Y共产主义§!支持度和农民被武装的次数。"

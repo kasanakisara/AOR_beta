@@ -10,5 +10,14 @@ on_actions = {
 			}
 		}
 	}
-}
+	on_startup = { #埃及开局事件
+		effect = {
+			every_country = {
+				limit = { tag = EGY }
+				country_event = { id = EGY.6}
+				}
+			}
+		}
+	}
+
 

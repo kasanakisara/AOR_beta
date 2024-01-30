@@ -5,7 +5,7 @@
 add_namespace = EGY
 
 
-#独立！反他娘的
+#独立!反他娘的
 country_event = {
 	id = EGY.1
 	title = EGY.1.t
@@ -187,5 +187,16 @@ country_event = {
 	option = {
 		name = EGY.5.a
 		news_event = {id = AOR_news.354 days = 0}
+    }
+}
+country_event = {
+	id = EGY.6
+	title = EGY.6.t
+	desc = EGY.6.d
+	
+	fire_only_once = yes
+
+	option = {
+		name = EGY.6.a
     }
 }

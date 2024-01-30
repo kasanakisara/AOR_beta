@@ -47,7 +47,7 @@ guiTypes = {
 			maxHeight = 22
 			pdx_tooltip = Fighting_inflation_lvl2_tt
 		}
-        #3鸡（山鸡）我的兄弟是浩南
+        #3鸡(山鸡）我的兄弟是浩南
         instantTextboxType = {
 			name = "Fighting_inflation_no.3"
 			position = { x = 400 y =@PER_TXT_Y}

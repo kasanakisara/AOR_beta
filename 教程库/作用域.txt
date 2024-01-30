@@ -10,16 +10,16 @@ random_army_leader	指向当前国家作用域的一个随机陆军将领。	ran
 every_army_leader	指向当前国家作用域的每一个陆军将领。	every_army_leader = { ... }	X	✓	国家	将领	1.5
 random_navy_leader	指向当前国家作用域的一个随机海军将领。	random_navy_leader = { ... }	X	✓	国家	将领	1.5
 every_navy_leader	指向当前国家作用域的每一个海军将领。	every_navy_leader = { ... }	X	✓	国家	将领	1.5
-global_every_army_leader	指向世界上所有国家的每一个陆军将领。（如果你知道国家的话最好用every_army_leader）	global_every_army_leader = { ... }	X	✓	国家	将领	1.5
+global_every_army_leader	指向世界上所有国家的每一个陆军将领。(如果你知道国家的话最好用every_army_leader）	global_every_army_leader = { ... }	X	✓	国家	将领	1.5
 OVERLORD	指向当前作用域的宗主国，如果当前作用域是附属国。	RAJ = { OVERLORD = { ... } }	✓	✓	国家	国家	1.3
 TAG	指向tag对应的特定国家。	FRA = { ... }	✓	✓	任意	国家	1.0
-any_country	检查世界上的任意国家。（包括当前作用域，如果不想包含的话参见any_other_country）	any_country = { ... }	✓	X	任意	国家	1.0
+any_country	检查世界上的任意国家。(包括当前作用域，如果不想包含的话参见any_other_country）	any_country = { ... }	✓	X	任意	国家	1.0
 any_country_with_original_tag	Targets any country with current scope's original tag	any_country_with_original_tag = { ... }	✓	X	任意	国家	1.9
 any_neighbor_country	检查当前作用域的任意相邻国家。	any_neighbor_country = { ... }	✓	X	国家	国家	1.0
-any_home_area_neighbor_country	检查与当前作用域本土（核心地区）相邻的任意国家。	any_home_area_neighbor_country = { ... }	✓	X	任意	国家	1.0
+any_home_area_neighbor_country	检查与当前作用域本土(核心地区）相邻的任意国家。	any_home_area_neighbor_country = { ... }	✓	X	任意	国家	1.0
 any_guaranteed_country	检查当前作用域保障独立的任意国家。	any_guaranteed_country = { ... }	✓	X	国家	国家	1.9
 any_allied_country	检查当前作用域结盟的任意国家。	any_allied_country = { ... }	✓	X	国家	国家	1.0
-any_other_country	检查世界上的任意其他国家（不包括当前作用域）。	any_other_country = { ... }	✓	X	国家	国家	1.0
+any_other_country	检查世界上的任意其他国家(不包括当前作用域）。	any_other_country = { ... }	✓	X	国家	国家	1.0
 any_enemy_country	检查当前作用域的任意敌对国家。	any_enemy_country = { ... }	✓	X	国家	国家	1.0
 any_occupied_country	检查被当前作用域占领的任意国家。	any_occupied_country = { ... }	✓	X	国家	国家	1.9
 all_neighbor_country	检查当前作用域的所有相邻国家。	all_neighbor_country = { ... }	✓	X	国家	国家	1.0
@@ -39,13 +39,13 @@ all_owned_state	检查当前作用域拥有的所有地区。	all_owned_state = 
 all_neighbor_state	检查与当前作用域相邻的所有地区。	all_neighbor_state = { ... }	✓	X	地区	地区	1.0
 all_owned_state	检查当前作用域拥有的所有地区。	all_owned_state = { ... }	✓	X	国家	地区	1.0
 all_controlled_state	检查当前作用域控制的所有地区。	all_controlled_state = { ... }	✓	X	国家	地区	1.9
-every_country	指向世界上的每一个国家。（包括当前作用域，如果不想包含的话参见every_other_country）	every_country = { ... }	X	✓	任意	国家	1.0
+every_country	指向世界上的每一个国家。(包括当前作用域，如果不想包含的话参见every_other_country）	every_country = { ... }	X	✓	任意	国家	1.0
 every_country_with_original_tag		every_country_with_original_tag = { original_tag_to_check = TAG limit = { ... } ... }	X	✓	任意	国家	1.9
-every_other_country	指向世界上的每一个其他国家（不包括当前作用域）。	every_other_country = { ... }	X	✓	国家	国家	1.0
+every_other_country	指向世界上的每一个其他国家(不包括当前作用域）。	every_other_country = { ... }	X	✓	国家	国家	1.0
 every_neighbor_country	指向当前作用域的每一个邻国。	every_neighbor_country = { ... }	X	✓	国家	国家	1.0
 every_enemy_country	指向当前作用域的每一个敌对国家。	every_enemy_country = { ... }	X	✓	国家	国家	1.0
 every_occupied_country	指向当前作用域占领的每一个国家。	every_occupied_country = { ... }	X	✓	国家	国家	1.9
-random_country	指向世界上的一个随机国家。（包括当前作用域）	random_country = { ... }	X	✓	任意	国家	1.0
+random_country	指向世界上的一个随机国家。(包括当前作用域）	random_country = { ... }	X	✓	任意	国家	1.0
 random_country_with_original_tag	Targets a random country with original tag	random_country_with_original_tag = { original_tag_to_check = TAG limit = {...} ... }	X	✓	任意	国家	1.9
 random_neighbor_country	指向当前作用域的一个随机邻国。	random_neighbor_country = { ... }	X	✓	国家	国家	1.0
 random_enemy_country	指向当前作用域的一个随机敌对国家。	random_enemy_country = { ... }	X	✓	国家	国家	1.0
@@ -69,7 +69,7 @@ random_operative	指向当前作用域的一个随机特工。	random_operative 
 NOTE: Some of these scopes may have no countries/states that match the criteria
 
 作用域限制
-可以使用limit语句限定条件来缩小作用域的范围。很简单地在一个作用域（如every_neighbor_country）中插入语句，放入所需的条件（如有多于5个军工厂）。然后在写完limit语句后，放入指令（如给与军事通行权）来影响特定的作用域。这里有一个小例子：
+可以使用limit语句限定条件来缩小作用域的范围。很简单地在一个作用域(如every_neighbor_country）中插入语句，放入所需的条件(如有多于5个军工厂）。然后在写完limit语句后，放入指令(如给与军事通行权）来影响特定的作用域。这里有一个小例子：
 
 every_neighbor_country = { # 指向作用域相邻的每一个国家
 	limit = {
@@ -78,10 +78,10 @@ every_neighbor_country = { # 指向作用域相邻的每一个国家
 	give_military_access = ROOT #将军事通行权给与拥有多于5个军工厂的每个邻国
 }
 作用域之间的移动
-有许多能够跨作用域执行效果或检查触发器的链接。所有的链接都可以用于效果或触发器，尽管不是所有指令和条件（即效果和触发器）都接受它们，或者是作用域本身。
+有许多能够跨作用域执行效果或检查触发器的链接。所有的链接都可以用于效果或触发器，尽管不是所有指令和条件(即效果和触发器）都接受它们，或者是作用域本身。
 
 链接	描述	样例
-ROOT	定位这个效果或触发器所在的根（脚本进入的第一个作用域）国家，无视其它任何作用域。	
+ROOT	定位这个效果或触发器所在的根(脚本进入的第一个作用域）国家，无视其它任何作用域。	
 ENG = {
 	FRA = {
 		GER = {
@@ -91,7 +91,7 @@ ENG = {
 			}
 		}
 	}
-} #德国对英国宣战。（假设在前面再没有作用域了）
+} #德国对英国宣战。(假设在前面再没有作用域了）
 THIS	定位当前作用域。	
 random_state = {
     add_resource = {
@@ -113,7 +113,7 @@ FRA = {
 } #德国对随机国家宣战(random_country)。
 
 FROM	在决议中，定位到目标决议的目标。
-在事件中，定位到向你发送这个事件的tag（如适用），例如德国向意大利发送了一个事件。
+在事件中，定位到向你发送这个事件的tag(如适用），例如德国向意大利发送了一个事件。
 
 declare_war_on = {
     target = FROM

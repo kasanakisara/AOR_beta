@@ -293,7 +293,7 @@
  OUTCOME_GOOD:0 "§G很好§!"
  OUTCOME_VGOOD:0 "§G完美§!"
  enemy_has_equal_or_better_radar_tech_trigger_tt:0 "敌方拥有同等或更好的雷达技术。"
- OPERATION_BONUS_REWARD:0 "行动取得了巨大成功，并带来§G加成奖励§!！"
+ OPERATION_BONUS_REWARD:0 "行动取得了巨大成功，并带来§G加成奖励§!!"
  intelligency_agency_resistance_boost_tt:0 "情报行动： $VALUE|=-%0$"
  targeted_sabotage_resources_2_tt:0 "[From.From.GetName]当地的抵抗将会集中他们的力量用于破坏当地资源开采上。"
  targeted_sabotage_resources_3_tt:0 "[From.From.GetName]当地的抵抗将会利用他们大多数的力量用于破坏当地资源开采上。"

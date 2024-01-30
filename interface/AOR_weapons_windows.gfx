@@ -7,7 +7,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = ENG_hounse_of_commons_button  ##按钮（待定）
+		name = ENG_hounse_of_commons_button  ##按钮(待定）
 		texturefile = "gfx/interface/AOR_guis/event_button_minimize.png"
 	}
 }
