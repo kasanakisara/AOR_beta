@@ -1003,6 +1003,7 @@ country_event = {
 	picture = GFX_USA_event_10003
 	
 	trigger = {
+	    tag = USA
 		date = 1919.9.1
 	}
 
@@ -1017,6 +1018,7 @@ country_event = {
 	picture = GFX_USA_event_10004
 
 		trigger = {
+		tag = USA
 		date = 1919.10.1
 	}
 
@@ -1031,8 +1033,9 @@ country_event = {
 	picture = GFX_USA_event_10005
 
 		trigger = {
-		date = 1919.9.10
-	}
+			tag = USA
+	    	date = 1919.9.10
+	} 
 
 	option = {
 		name=USA.10005.a
@@ -1045,7 +1048,8 @@ country_event = {
 	picture = GFX_USA_event_10006
 
 		trigger = {
-		date = 1919.10.10
+			tag = USA
+		    date = 1919.10.10
 	}
 
 	option = {
