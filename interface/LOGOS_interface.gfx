@@ -311,10 +311,37 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_idea.png"
 	}
 	
+	#阿根廷决议派系图片gui
+	spriteType = {
+		name = "GFX_AOR_ORA_REF"
+		texturefile = "gfx/AOR_gui/ORA/ORA_ref_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_ORA_MID"
+		texturefile = "gfx/AOR_gui/ORA/ORA_mid_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_ORA_RAD"
+		texturefile = "gfx/AOR_gui/ORA/ORA_rad_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_ORA_NON"
+		texturefile = "gfx/AOR_gui/ORA/ORA_non_pic.png"
+	}	
+	spriteType = {
+		name = "GFX_AOR_ORA_ARM"
+		texturefile = "gfx/AOR_gui/ORA/ORA_arm_pic.png"
+	}	
 	#非洲军队决议图片
 	spriteType = {
 		name = "GFX_decision_BEL_prepare"
 		texturefile = "gfx/interface/decisions/decision_BEL_prepare.png"
+	}
+	
+	#阿根廷委员会决议图片
+	spriteType = {
+		name = "GFX_decision_ORA_committee_pic"
+		texturefile = "gfx/interface/decisions/decision_ORA_committee_pic.png"
 	}
 	
 	#小船决议
