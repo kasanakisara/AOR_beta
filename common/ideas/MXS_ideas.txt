@@ -48,10 +48,12 @@ ideas = {
 			conscription_factor = 0.2
 			army_speed_factor = 0.15
 			production_factory_max_efficiency_factor = -0.1
+			
 			max_planning_factor = -0.1
 			hidden_modifier = {
 				ai_get_ally_desire_factor = -50
 				ai_focus_aggressive_factor = 50
+				surrender_limit = 50
 			}
 			}
 		}

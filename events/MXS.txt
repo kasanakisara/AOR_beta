@@ -263,32 +263,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = MXS.4.a
-			CGT = { annex_country = {target = MXS }	}
-			CGT = { annex_country = {target = PLM }	}
-			485= { set_demilitarized_zone = no }
-			476= { set_demilitarized_zone = no }
-			475= { set_demilitarized_zone = no }
-			474= { set_demilitarized_zone = no }
-			477= { set_demilitarized_zone = no }
-			277= { set_demilitarized_zone = no }
-			478= { set_demilitarized_zone = no }
-			479= { set_demilitarized_zone = no }
-			480= { set_demilitarized_zone = no }
-			481= { set_demilitarized_zone = no }
-			482= { set_demilitarized_zone = no }
-			931= { set_demilitarized_zone = no }
-			483= { set_demilitarized_zone = no }
-			376= { set_demilitarized_zone = no }
-			377= { set_demilitarized_zone = no }
-			933= { set_demilitarized_zone = no }
-			934= { set_demilitarized_zone = no }
-			484= { set_demilitarized_zone = no }
-			news_event = { id = AOR_news.7 }
-			ai_chance = {
-			base = 35
-			}
-    }
+
 	
 	option = {
 		name = MXS.4.b
@@ -316,37 +291,10 @@ country_event = {
 			country_event = { days = 700 id = MXS.5 }
 			news_event = { id = AOR_news.6 }
 			ai_chance = {
-			base = 60
+			base = 100
 			}
     }
 	
-	option = {
-		name = MXS.4.c
-			PLM = { annex_country = {target = CGT }	}
-			PLM = { annex_country = {target = MXS }	}
-			485= { set_demilitarized_zone = no }
-			476= { set_demilitarized_zone = no }
-			475= { set_demilitarized_zone = no }
-			474= { set_demilitarized_zone = no }
-			477= { set_demilitarized_zone = no }
-			277= { set_demilitarized_zone = no }
-			478= { set_demilitarized_zone = no }
-			479= { set_demilitarized_zone = no }
-			480= { set_demilitarized_zone = no }
-			481= { set_demilitarized_zone = no }
-			482= { set_demilitarized_zone = no }
-			931= { set_demilitarized_zone = no }
-			483= { set_demilitarized_zone = no }
-			376= { set_demilitarized_zone = no }
-			377= { set_demilitarized_zone = no }
-			933= { set_demilitarized_zone = no }
-			934= { set_demilitarized_zone = no }
-			484= { set_demilitarized_zone = no }
-			news_event = { id = AOR_news.8 }
-			ai_chance = {
-			base = 5
-			}
-    }
 	
 }
 

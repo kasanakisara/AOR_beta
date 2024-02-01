@@ -44,42 +44,7 @@ country_event = {
 	}
 
 }
-country_event = {
-	id = MNU.2
-	title = MNU.2.t
-	desc = MNU.2.d
-	picture = GFX_news_MNU_extinct
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name=MNU.2.a
-		log = "[GetLogInfo] [From.GetName]MNU.2.a"
-		ai_chance = {
-			factor = 50
-			
-		}
-		CGT = {
-			declare_war_on = {
-				target = PLM
-				type  = civil_war 
-			}
-		}
 
-	}
-	option = {
-		name=MNU.2.b
-		log = "[GetLogInfo] [From.GetName]MNU.2.b"
-		ai_chance = {
-			factor = 50
-			
-		}
-		PLM = {
-			annex_country ={
-				target = CGT
-			}
-		}
-	}
-}
 country_event = {
 	id = MNU.7
 	title = MNU.7.t
@@ -88,7 +53,7 @@ country_event = {
     trigger = {
 		MXS = {
 			NOT = {
-				AND = {
+				OR = {
 					controls_province  =1965
 					controls_province  = 12810
 				}
@@ -136,6 +101,46 @@ country_event = {
     }
 	
 }
+#第二次，临时政府胜利
+country_event = {
+	id = MNU.8
+	title = MNU.8.t
+	desc = MNU.8.d
+	picture = GFX_events_MXS_8
+    trigger = {
+		NOT = {country_exists = MXS}
+		MNU = {
+				OR = {
+					controls_province  =1965
+					controls_province  = 4956
+					controls_province  = 12835
+				}	
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = MNU.8.a
+		log = "[GetLogInfo] [From.GetName]MNU.8.a"
+		PLM = {
+			transfer_state =483
+			transfer_state =481
+			transfer_state =480
+		}
+		SFM = {
+			transfer_state =479
+			transfer_state =478
+			transfer_state =277
+		}
+		CGT = {
+			country_event = {
+				id = CGT.1 days=1
+			}
+		}
+
+    }
+	
+}
 #第二次，农民军胜利
 country_event = {
 	id = MNU.8
@@ -146,9 +151,9 @@ country_event = {
 		NOT = {country_exists = MXS}
 		MNU = {
 			NOT = {
-				AND = {
+				OR = {
 					controls_province  =1965
-					controls_province  = 12810
+					controls_province  = 4956
 					controls_province  = 12835
 				}
 				
@@ -169,6 +174,11 @@ country_event = {
 			transfer_state =479
 			transfer_state =478
 			transfer_state =277
+		}
+		CGT = {
+			country_event = {
+				id = CGT.1 days=1
+			}
 		}
 
     }
