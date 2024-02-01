@@ -57,7 +57,7 @@ if = {
 
 
 create_country_leader = {
-	name = "William_Macy"
+	name = "William Macy"
 	desc = ""
 	picture = "a22xg-3amgh.dds"
 	expire = "1965.1.1"
@@ -81,9 +81,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 60
-	SOC_democratic = 25
-	PAR_socialism = 15
+	CON_democratic = 100
 }
 
 set_convoys = 70

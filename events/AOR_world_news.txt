@@ -1238,6 +1238,7 @@ news_event = { #米老鼠！！！！
 	option = {
 		name = AOR_news.58.a
 	}
+<<<<<<< HEAD
 }
 
 news_event = { #澳大利亚1919选举
@@ -1309,4 +1310,6 @@ news_event = { #新西兰新领导人
 	option = {
 		name = AOR_news.63.a
 	}
+=======
+>>>>>>> parent of 47e3c43 (111)
 }
