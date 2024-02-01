@@ -190,14 +190,14 @@ focus_tree = {
 			focus = Raising_tariffs
 		}
 		mutually_exclusive = {
-			focus = Ignoring_them
+			focus = Ignoring_them!
 		}
 		x = 16
 		y = 4
 
 	}
 	focus = {
-		id = Ignoring_them
+		id = Ignoring_them!
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -334,7 +334,7 @@ focus_tree = {
 			focus = Mellon's_plan
 			focus = Morgan's_Plan
 			focus = Soothing_Cowboy
-			focus = Ignoring_them
+			focus = Ignoring_them!
 			focus = Praising_the_Eagle_of_the_West
 			focus = Raise_the_Iron_Body_of_the_East
 		}
