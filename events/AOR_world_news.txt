@@ -1101,6 +1101,129 @@ news_event = { #德意志社会主义联邦成立
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 news_event = { #米老鼠！！！！
 	id = AOR_news.58
 	title = AOR_news.58.t
@@ -1115,4 +1238,78 @@ news_event = { #米老鼠！！！！
 	option = {
 		name = AOR_news.58.a
 	}
+<<<<<<< HEAD
+=======
+}
+
+news_event = { #澳大利亚1919选举
+	id = AOR_news.590
+	title = AOR_news.590.t
+	desc = AOR_news.590.d
+	picture = GFX_AOR_news.590_pic
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	    date > 1919.12.12
+		date < 1919.12.14
+	}
+	option = {
+		name = AOR_news.59.a
+	}
+}
+
+news_event = { #澳大利亚联盟
+	id = AOR_news.600
+	title = AOR_news.600.t
+	desc = AOR_news.600.d
+	picture = GFX_AOR_news.600_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.600.a
+	}
+}
+news_event = { #澳大利亚工党
+	id = AOR_news.610
+	title = AOR_news.610.t
+	desc = AOR_news.610.d
+	picture = GFX_AOR_news.610_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.610.a
+	}
+}
+
+news_event = { #澳大利亚警察罢工
+	id = AOR_news.62
+	title = AOR_news.62.t
+	desc = AOR_news.62.d
+	picture = GFX_AOR_news.62_pic
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	    date > 1923.11.1
+	}
+	mean_time_to_happen = { day = 1}
+	option = {
+		name = AOR_news.62.a
+	}
+}
+
+
+news_event = { #新西兰新领导人
+	id = AOR_news.63
+	title = AOR_news.63.t
+	desc = AOR_news.63.d
+	picture = GFX_AOR_news.63_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.63.a
+	}
+>>>>>>> parent of 31368c8 (Revert "genx")
 }
