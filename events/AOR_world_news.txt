@@ -1101,129 +1101,6 @@ news_event = { #德意志社会主义联邦成立
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 news_event = { #米老鼠！！！！
 	id = AOR_news.58
 	title = AOR_news.58.t
@@ -1238,9 +1115,43 @@ news_event = { #米老鼠！！！！
 	option = {
 		name = AOR_news.58.a
 	}
-<<<<<<< HEAD
-=======
 }
+news_event = { #墨西哥开大会！！！！
+	id = AOR_news.59
+	title = AOR_news.59.t
+	desc = AOR_news.59.d
+	picture = GFX_AOR_news.59_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.58.a
+	}
+}
+news_event = { #墨西哥内战再起
+	id = AOR_news.60
+	title = AOR_news.60.t
+	desc = AOR_news.60.d
+	picture = GFX_AOR_news.60_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.60.a
+	}
+}
+news_event = { #墨西哥内战终息
+	id = AOR_news.61
+	title = AOR_news.61.t
+	desc = AOR_news.61.d
+	picture = GFX_AOR_news.61_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.61.a
+	}
+
 
 news_event = { #澳大利亚1919选举
 	id = AOR_news.590
@@ -1311,5 +1222,4 @@ news_event = { #新西兰新领导人
 	option = {
 		name = AOR_news.63.a
 	}
->>>>>>> parent of 31368c8 (Revert "genx")
 }
