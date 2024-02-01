@@ -2,7 +2,7 @@ version="0.01"
 tags={
 	"Alternative History"
 }
-name="AOR-fixed"
+name="beta_AOR"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"
