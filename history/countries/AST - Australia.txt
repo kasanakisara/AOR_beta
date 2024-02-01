@@ -76,7 +76,7 @@ if = {
 }
 
 create_country_leader = {
-	name = "William Morris Hughes"
+	name = "William_Morris_Hughes"
 	desc = ""
 	picture = "ab5qs-mxgrh.dds"
 	expire = "1965.1.1"
@@ -112,8 +112,9 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 98
-	Marxism = 2
+	CON_democratic = 55
+	SOC_democratic = 40
+	FRE_democratic = 5
 }
 
 set_convoys = 100
