@@ -866,3 +866,7 @@ GNR = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
 }
+MNU = {
+	color = rgb { 87 113 228 }
+	color_ui = rgb { 74 147 255 }
+}

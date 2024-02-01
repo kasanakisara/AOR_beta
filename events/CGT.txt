@@ -1,0 +1,66 @@
+#
+add_namespace = CGT
+#开大会
+country_event = {
+	id = CGT.1 
+	title = CGT.1.t
+	desc = CGT.1.d
+	picture = GFX_news_CGT_extinct
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CGT.1.a
+		log = "CGT.1"
+		#爆新闻
+		news_event = {id=AOR_news.59}
+		country_event = {id = CGT.2 days = 30}
+	}
+}
+country_event = {
+	id = CGT.2
+	title = CGT.2.t
+	desc = CGT.2.d
+	picture = GFX_news_CGT_extinct
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CGT.2.a
+		log = "CGT.2"
+		#爆新闻
+		news_event = {id=AOR_news.60}
+		PLM = {
+			declare_war_on = {
+				target = SFM
+				type = civil_war
+			}
+		}
+	}
+}
+# country_event = {
+# 	id = CGT.3
+# 	title = CGT.3.t
+# 	desc = CGT.3.d
+# 	picture = GFX_news_CGT_extinct
+# 	fire_only_once = yes
+# 	trigger = {
+# 		PLM = {
+# 			NOT = {
+# 				AND = {
+# 					controls_province = 
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = CGT.3.a
+# 		#爆新闻
+# 		news_event = {id=AOR_news.61}
+# 		PLM = {
+# 			declare_war_on = {
+# 				target = SFM
+# 				type = civil_war
+# 			}
+# 		}
+# 	}
+# }

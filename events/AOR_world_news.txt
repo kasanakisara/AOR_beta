@@ -1116,3 +1116,39 @@ news_event = { #米老鼠！！！！
 		name = AOR_news.58.a
 	}
 }
+news_event = { #墨西哥开大会！！！！
+	id = AOR_news.59
+	title = AOR_news.59.t
+	desc = AOR_news.59.d
+	picture = GFX_AOR_news.59_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.58.a
+	}
+}
+news_event = { #墨西哥内战再起
+	id = AOR_news.60
+	title = AOR_news.60.t
+	desc = AOR_news.60.d
+	picture = GFX_AOR_news.60_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.60.a
+	}
+}
+news_event = { #墨西哥内战终息
+	id = AOR_news.61
+	title = AOR_news.61.t
+	desc = AOR_news.61.d
+	picture = GFX_AOR_news.61_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.61.a
+	}
+}

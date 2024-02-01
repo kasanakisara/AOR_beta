@@ -899,3 +899,11 @@ OMA_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
+MNU_1 = {
+	color = rgb { 87 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+MNU_2 = {
+	color = rgb{ 104  152  83 }
+	color_ui = rgb {  46 139 87}
+}
