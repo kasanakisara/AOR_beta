@@ -825,7 +825,7 @@ country_event = {
 			limit = {
 				AND = {
 					country_exists = US1
-				country_exists = US2
+					country_exists = US2
 				}
 				
 			}
@@ -947,15 +947,15 @@ country_event = {
 				load_oob = "US6_Civilwar"
 				load_oob = "US6_Civilwar"
 				create_faction = Against_the_Panxing_Union
+				add_to_faction = US8
+				white_peace = US8
 				
 
 			}
 			US8 = {
 				load_oob = "US8_Civilwar"
 				load_oob = "US6_Civilwar"
-				US6 = {
-					add_to_faction = US8
-				}
+				
 			}
 		}
 
