@@ -48,6 +48,15 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 			complete_national_focus = CHI_Yuan_is_dying
+			CHI = {
+				leave_faction = yes
+			}
+			create_faction = Republic_of_China_1
+			CHI = { 
+				add_to_faction = KMT
+				add_to_faction = UPC
+				add_to_faction = NAN
+			}
 			news_event = {
 				id = AOR_news.30
 			}
@@ -272,6 +281,15 @@ country_event = {
 				transfer_state = 330
 				add_state_core = 330
 				add_manpower = 10000
+				set_popularities = {
+					ruling_party = Absolutism
+					Absolutism = 100
+				}
+			}
+			set_autonomy = {
+				target = MON
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.2
 			}
 		}
 	 }

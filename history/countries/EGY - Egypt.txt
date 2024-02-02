@@ -56,8 +56,14 @@ set_convoys = 20
 		dispersed_industry2 = 1
 	}
 }
-
-
+effect = {
+country_lock_all_division_template = yes
+}
+add_ideas ={
+	EGY_Moving_towards_modernity
+	EGY_Crazy_1919
+	EGY_Puppets_puppetry
+}
 set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1936.1.1"

@@ -92,7 +92,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = -0.2
 				industrial_capacity_dockyard = -0.1
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.5
 			}
 		}
 		PER_Great_Famine_1 = {#饿殍满道
@@ -102,7 +102,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = -0.2
 				industrial_capacity_dockyard = -0.1
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.3
 			}
 		}
 		PER_Great_Famine_2= {#凶年恶岁
@@ -112,7 +112,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = -0.15
 				industrial_capacity_dockyard = -0.1
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.1
 			}
 		}
 		PER_Land_confiscation_by_corrupt_officials = {#没收贪官土地
@@ -121,7 +121,7 @@ ideas = {
 			modifier = {
 				CONSCRIPTION_FACTOR = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.2
 			}
 		}
 		#文化民族精神
@@ -144,7 +144,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				STABILITY_FACTOR = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.4
 			}
 		}
 		PER_rebellious_tribe_1 = {	#不满的部落
@@ -189,7 +189,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.2
 			}
 		}
 		PER_National_Advisory_Committee = {  #国家咨询委员会
@@ -217,7 +217,7 @@ ideas = {
 				industrial_capacity_factory = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.5
 			}
 		}
 		PER_Fighting_inflation_2 = {
@@ -227,7 +227,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
 		PER_Fighting_inflation_3 = {
@@ -263,7 +263,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.01
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.01
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.1
 			}
 		}
 		PER_Agricultural_Jihad_Preliminary_2={
@@ -272,7 +272,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.03
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.03
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.2
 			}
 		}
 		PER_Agricultural_Jihad_Preliminary_3={
@@ -281,7 +281,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.05
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.3
 			}
 		}
 	}

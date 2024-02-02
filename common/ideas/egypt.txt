@@ -1,7 +1,46 @@
 ideas = {
+	
+	country = {
+		EGY_Moving_towards_modernity = {#迈向现代
+			picture = GFX_idea_EGY_Moving_towards_modernity
+			allowed = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				consumer_goods_factor = 0.6
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				industrial_capacity_factory = -0.5
+				research_speed_factor = -0.7
+			}
+		}
+		EGY_Crazy_1919 = {#疯狂的1919
+			picture = GFX_idea_EGY_Crazy_1919
+			allowed = { always = yes }
+			modifier = {
+				add_stability = -0.35
+				political_power_factor = -0.1
+				resistance_growth = 0.05
+				custom_modifier_tooltip = EGY_Crazy_1919_tt
+			}
+		}
+		EGY_Puppets_puppetry = {#木偶戏的木偶
+			picture = GFX_idea_EGY_Puppets_puppetry
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				custom_modifier_tooltip = EGY_Puppets_puppetry_tt
+			}
+		}
+		EGY_YesSir = {#好的，甘！你真他马是个天才，你的智商绝对超过他马的250！
+			picture = GFX_idea_EGY_YesSir
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = EGY_YesSir_tt
+			}
+		}
+	}
+	
 	# MILITARY
-
-
 	political_advisor = {
 	
 		EGY_democratic_guy = {
