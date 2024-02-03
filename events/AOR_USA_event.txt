@@ -608,7 +608,7 @@ country_event = {
 	fire_only_once = yes
       
 	option = {
-	leave_faction = Entente
+	leave_faction = yes
 	}
 }
 
@@ -968,6 +968,7 @@ country_event = {
 	picture = GFX_USA_event_10000
 	fire_only_once = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name=USA.10000.a
 		add_manpower=10000
@@ -982,6 +983,7 @@ country_event = {
 	desc = USA.10001.d
 	picture = GFX_USA_event_10001
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name=USA.10001.a
 	}
@@ -992,6 +994,7 @@ country_event = {
 	desc = USA.10002.d
 	picture = GFX_USA_event_10002
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name=USA.10002.a
 	}	
@@ -1001,6 +1004,7 @@ country_event = {
 	title = USA.10003.t
 	desc = USA.10003.d
 	picture = GFX_USA_event_10003
+	fire_only_once = yes
 	
 	trigger = {
 	    tag = USA
@@ -1016,6 +1020,7 @@ country_event = {
 	title = USA.10004.t
 	desc = USA.10004.d
 	picture = GFX_USA_event_10004
+	fire_only_once = yes
 
 		trigger = {
 		tag = USA
@@ -1031,6 +1036,7 @@ country_event = {
 	title = USA.10005.t
 	desc = USA.10005.d
 	picture = GFX_USA_event_10005
+	fire_only_once = yes
 
 		trigger = {
 			tag = USA
@@ -1046,6 +1052,7 @@ country_event = {
 	title = USA.10006.t
 	desc = USA.10006.d
 	picture = GFX_USA_event_10006
+	fire_only_once = yes
 
 		trigger = {
 			tag = USA

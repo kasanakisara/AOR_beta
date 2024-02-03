@@ -1204,7 +1204,7 @@ news_event = { #澳大利亚警察罢工
 	trigger = {
 	    date > 1923.11.1
 	}
-	mean_time_to_happen = { day = 1}
+	mean_time_to_happen = { days = 1}
 	option = {
 		name = AOR_news.62.a
 	}

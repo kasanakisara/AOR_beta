@@ -35,7 +35,7 @@ country_event = {
 			}
 		country_event = { days = 90 id = TUR.1
 		}	
-		GRE = {leave_faction = Entente} #离开协约准备打仗
+		GRE = {leave_faction = yes} #离开协约准备打仗
 	}	
 	
 	option = {
@@ -56,7 +56,7 @@ country_event = {
 		add_state_core = 797
 
 	}
-	GRE = {leave_faction = Entente}
+	GRE = {leave_faction =yes}
 	country_event = { days = 90 id = GRE.2
 		}	#希腊宣战
 	ai_chance = {

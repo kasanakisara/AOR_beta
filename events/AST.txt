@@ -10,7 +10,7 @@ country_event = {
 	    date > 1922.5.10
 		tag = AST
 	}
-	mean_time_to_happen = { day = 1}
+	mean_time_to_happen = { days = 1}
     #国民党-乡村党组成联盟	
 	option = {
 		name = AST.1.a
