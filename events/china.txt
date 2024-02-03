@@ -50,17 +50,6 @@ country_event = {
 			complete_national_focus = CHI_Yuan_is_dying
 			CHI = {
 				leave_faction = yes
-			}
-			create_faction = Republic_of_China_1
-			CHI = { 
-				add_to_faction = KMT
-				add_to_faction = UPC
-				add_to_faction = NAN
-			}
-			news_event = {
-				id = AOR_news.30
-			}
-			CHI = {
 				set_cosmetic_tag = CHI_1
 				set_popularities = {
 					ruling_party = Absolutism
@@ -96,6 +85,15 @@ country_event = {
 				set_politics = {
 					ruling_party = SOC_democratic
 				}
+			}
+			create_faction = Republic_of_China_1
+			CHI = { 
+				add_to_faction = KMT
+				add_to_faction = UPC
+				add_to_faction = NAN
+			}
+			news_event = {
+				id = AOR_news.30
 			}
 			UPC = {
 				set_cosmetic_tag = UPC_1
@@ -250,15 +248,13 @@ country_event = {
 			908 = { set_demilitarized_zone = yes }
 			751 = { set_demilitarized_zone = yes }
 			605 = { set_demilitarized_zone = yes }
+			dismantle_faction = yes
 		}
 	}
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
 	option = {
 		name = CHI.6.a
-		hidden_effect = {
-
-		}
 	}
 }
 #西北边防军被炸出来了！
@@ -277,19 +273,19 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
-			MON = {
-				transfer_state = 330
-				add_state_core = 330
-				add_manpower = 10000
-				set_popularities = {
-					ruling_party = Absolutism
-					Absolutism = 100
-				}
-			}
 			set_autonomy = {
 				target = MON
 				autonomous_state = autonomy_dominion
 				freedom_level = 0.2
+			}
+			MON = {
+				set_popularities = {
+					ruling_party = Absolutism
+					Absolutism = 100
+				}
+				transfer_state = 330
+				add_state_core = 330
+				add_manpower = 10000
 			}
 		}
 	 }
