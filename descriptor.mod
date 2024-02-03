@@ -19,5 +19,4 @@ replace_path="gfx/loadingscreens"
 replace_path="history/countries"
 replace_path="history/units"
 replace_path="gfx/flags"
-
 supported_version="1.13.6"

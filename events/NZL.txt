@@ -10,7 +10,7 @@ country_event = {
 	    date > 1925.5.2
 		tag = NZL
 	}
-	mean_time_to_happen = { day = 1}
+	mean_time_to_happen = { days = 1}
     #领导人	
 	option = {
 		name = NZL.1.a

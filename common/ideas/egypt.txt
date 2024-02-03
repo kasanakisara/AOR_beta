@@ -17,7 +17,7 @@ ideas = {
 			picture = GFX_idea_EGY_Crazy_1919
 			allowed = { always = yes }
 			modifier = {
-				add_stability = -0.35
+				add_stability = -0.60
 				political_power_factor = -0.1
 				resistance_growth = 0.05
 				custom_modifier_tooltip = EGY_Crazy_1919_tt

@@ -155,10 +155,12 @@ create_country_leader = {
 }
 add_ideas = {
 	USA_the_divided_nation
-	USA_Anglo_frech_enterprise
-	USA_steel_and_cotton 
-	USA_participation_award
-	USA_Dollar_bottom
+	USA_sandaliren
+	USA_shiyouhuanying 
+	USA_kuangyezhidi
+	USA_busidexintuo
+	USA_zhixuchonggou_knights
+	USA_dazhanzhimo
 }
 
 set_variable = { var = wanla_quandouwanle }
