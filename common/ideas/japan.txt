@@ -3,7 +3,7 @@ ideas = {
 	country = {
 	
 		JAP_lixian = {
-			picture = JAP_idea_JAP_lixian
+			picture = GFX_idea_JAP_lixian
 			allowed = { always = yes }
 			modifier = {
 		    political_power_factor = 0.1
@@ -15,7 +15,7 @@ ideas = {
 	
 	
 		JAP_junbu= {
-			picture = JAP_idea_JAP_junbu
+			picture = GFX_idea_JAP_junbu
 			allowed = { always = yes }
 			modifier = {
 			high_command_cost_factor = 0.3
@@ -31,7 +31,7 @@ ideas = {
 			}
 		}
 	    JAP_minzhi = {
-			picture = JAP_idea_JAP_minzhi
+			picture = GFX_idea_JAP_minzhi
 			allowed = { always = yes }
 			modifier = {
 			conscription = 0.02
@@ -46,7 +46,7 @@ ideas = {
 			}
 		}
 		JAP_samo = {
-			picture = JAP_idea_JAP_samo
+			picture = GFX_idea_JAP_samo
 			allowed = { always = yes }
 			modifier = {
 			navy_chief_cost_factor = 0.5
@@ -58,7 +58,7 @@ ideas = {
 			}
 		}
 		JAP_fanfa = {
-			picture = JAP_idea_JAP_fanfa
+			picture = GFX_idea_JAP_fanfa
 			allowed = { always = yes }
 			modifier = {
 		    olitical_power_factor = -0.1
@@ -75,7 +75,7 @@ ideas = {
 			}
 		}
 	    JAp_misao = {
-			picture = JAP_idea_JAP_misao
+			picture = GFX_idea_JAP_misao
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.2
