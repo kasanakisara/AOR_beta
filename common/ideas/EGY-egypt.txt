@@ -32,6 +32,7 @@ ideas = {
 			}
 		}
 		EGY_YesSir = {#好的，甘！你真他马是个天才，你的智商绝对超过他马的250！
+		#我他妈真是个天才，装这个的图标注册了另一个
 			picture = GFX_idea_EGY_YesSir
 			allowed = { always = yes }
 			modifier = {

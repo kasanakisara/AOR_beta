@@ -460,7 +460,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_CZE_soaring_economy"
-		texturefile = "gfx/interface/ideas/idea_CZE_soaring_economy.png"
+		texturefile = "gfx/interface/ideas/idea_Czech_experience.dds"
 	}	
 	spriteType = {
 		name = "GFX_idea_CZE_Merchant_troops"
@@ -539,7 +539,15 @@ spriteTypes = {
 		name = "GFX_idea_Agricultural_crisis"
 		texturefile = "gfx/interface/ideas/Agricultural_crisis.png"
 	}
-	
+	#埃及民族精神
+	spriteType = {
+		name = "GFX_idea_EGY_Puppets_puppetry"
+		texturefile = "gfx/interface/ideas/EGY_Puppets_puppetry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_YesSir"
+		texturefile = "gfx/interface/ideas/EGY_YesSir.png"
+	}
 	#事件链新闻
 		#比荷卢选举陷入僵局
 	spriteType = {
