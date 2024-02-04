@@ -185,3 +185,8 @@ USA = {country_event = {
 	days = 920 id = USA.109
 	}
 }
+
+set_autonomy = {
+target = HSP
+autonomy_state = autonomy_puppet
+}

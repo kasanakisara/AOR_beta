@@ -1,3 +1,24 @@
 ideas = {
-}
+	country = {
+		YEM_the_shiye = {
+			picture = GFX_idea_YEM_the_shiye
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.1
+			drift_defence_factor = 0.3
+			war_support_factor = 0.20
+			}
+		}
 
+		YEM_the_yedelis = {
+			picture = GFX_idea_YEM_the_yedelis
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+
+    }
+}

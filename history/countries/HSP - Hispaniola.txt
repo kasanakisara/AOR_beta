@@ -27,6 +27,9 @@ set_technology = {
 	fuel_refining = 1
 	
 }
+
+add_ideas = HSP_the_America
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
