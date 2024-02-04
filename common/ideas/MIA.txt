@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		MIA_the_divided_nation = {
+			picture = MIA_idea_MIA_the_divided_nation
+			allowed = { always = yes }
+			modifier = {
+			conscription = -0.01
+            stability_factor = -0.2
+            mobilization_speed = -0.2
+            production_factory_efficiency_gain_factor = -0.2
+            industrial_capacity_factory = 0.15
+            max_efficiency_factor = 0.1
+				}
+			}
+		 }
+    }
