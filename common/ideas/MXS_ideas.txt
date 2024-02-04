@@ -61,13 +61,13 @@ ideas = {
 			always = yes
 		}
 			modifier = {
-			consumer_goods_factor = 0.4
+			consumer_goods_factor = -0.2
 			local_resources_factor = 0.2
 			drift_defence_factor = -0.15
 			stability_factor = -0.1
 			}
 		}
-			}
-		}
+			
+		
 	}
 }
