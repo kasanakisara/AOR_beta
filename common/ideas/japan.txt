@@ -74,7 +74,7 @@ ideas = {
 	         industrial_concern_cost_factor = 0.2
 			}
 		}
-	    JAp_misao = {
+	    JAP_misao = {
 			picture = GFX_idea_JAP_misao
 			allowed = { always = yes }
 			modifier = {
