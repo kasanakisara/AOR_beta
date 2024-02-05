@@ -58,6 +58,7 @@ ideas = {
 		}
 			MXS_Black_gold  = {
 			allowed = { 
+		    picture = GFX_idea_MXS_Black_gold
 			always = yes
 		}
 			modifier = {
