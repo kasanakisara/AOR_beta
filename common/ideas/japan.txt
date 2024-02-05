@@ -6,8 +6,7 @@ ideas = {
 			picture = GFX_idea_JAP_lixian
 			allowed = { always = yes }
 			modifier = {
-		    political_power_factor = 0.1
-			stability_factor = 0.2
+			stability_factor = 0.1
 		    stability_weekly = 0.005
 			war_support_factor = -0.30
 			}

@@ -1,0 +1,37 @@
+spriteTypes = {	
+
+ spriteType = {
+		name = "GFX_idea_USA_the_divided_nation"
+		texturefile = "gfx/interface/ideas/USA_divided_nation.png"
+     }
+
+		spriteType = {
+		name = "GFX_idea_USA_sandaliren"
+		texturefile = "gfx/interface/ideas/USA_sandaliren.png"
+     }
+
+		spriteType = {
+		name = "GFX_idea_USA_shiyouhuanying"
+		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
+    }
+
+		spriteType = {
+		name = "GFX_idea_USA_kuangyezhidi"
+		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
+    }
+
+		spriteType = {
+		name = "GFX_idea_USA_busidexintuo"
+		texturefile = "gfx/interface/ideas/USA_busidexintuo.png"
+    }
+
+		spriteType = {
+		name = "GFX_idea_USA_zhixuchonggou_knights"
+		texturefile = "gfx/interface/ideas/USA_zhixuchonggou_knights.png"
+    }
+
+		spriteType = {
+		name = "GFX_idea_USA_dazhanzhimo"
+		texturefile = "gfx/interface/ideas/USA_dazhanzhimo.png"
+    }
+}
