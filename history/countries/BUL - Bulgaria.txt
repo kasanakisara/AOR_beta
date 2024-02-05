@@ -8,7 +8,12 @@ add_ideas = {
 	National_disaster
 	volunteer_only
 }
-
+set_politics = {
+	ruling_party = Absolutism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
 
 	set_popularities = { 
 		CON_democratic = 10
