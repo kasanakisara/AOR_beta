@@ -124,11 +124,13 @@ country_event = {
 				target = ENG
 				type = civil_war
 				}
+		}
 		SYI = {
 			declare_war_on = {
 				target = USA
 				type = civil_war
 				}
+		}
 		SYI = {
 			declare_war_on = {
 				target = SYR
