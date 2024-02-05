@@ -8,12 +8,15 @@ CHI_civil_war_1 = {
 			leave_faction = yes
 			set_cosmetic_tag = CHI_1
 			set_popularities = {
-					ruling_party = Absolutism
 					Absolutism = 72
 					FRE_democratic = 15
 					CON_democratic = 8
 					Special = 5
 				
+			}
+			set_political_party = {
+				ideology = Absolutism
+				popularity = 72
 			}
 			set_party_name = {
 				ideology = FRE_democratic
@@ -155,9 +158,14 @@ CHI_civil_war_2  = {
 			freedom_level = 0.2
 		}
 		MON = {
+			set_cosmetic_tag = MON_WEST
 			set_popularities = {
-				ruling_party = Absolutism
+				
 				Absolutism = 100
+			}
+			set_political_party = {
+				ideology = Absolutism
+				popularity = 100
 			}
 			transfer_state = 330
 			add_state_core = 330
@@ -165,57 +173,523 @@ CHI_civil_war_2  = {
 		}
 	}
 }
-CHI_civil_war_3 = {MEN = {
-	transfer_state = 622
-	transfer_state = 896
-	transfer_state = 744
-	add_state_core = 622
-	add_state_core = 896
-	add_state_core = 744
-	add_manpower = 10000
+CHI_civil_war_3 = {
+	MEN = {
+		transfer_state = 622
+		transfer_state = 896
+		transfer_state = 744
+		add_state_core = 622
+		add_state_core = 896
+		add_state_core = 744
+		add_manpower = 10000
+	}
+	XSM = {
+		transfer_state = 754
+		transfer_state = 283
+		transfer_state = 909
+		transfer_state = 604
+		transfer_state = 616
+		transfer_state = 752
+		transfer_state = 601
+		add_state_core = 754
+		add_state_core = 283
+		add_state_core = 909
+		add_state_core = 604
+		add_state_core = 616
+		add_state_core = 752
+		add_state_core = 601
+		add_manpower = 10000
+	}
+	TIB = {
+		transfer_state = 322
+		add_state_core = 322
+		add_manpower = 10000
+	}
+	SIK = {
+		transfer_state = 287
+		transfer_state = 617
+		transfer_state = 618
+		transfer_state = 760
+		transfer_state = 329
+		add_state_core = 287
+		add_state_core = 617
+		add_state_core = 618
+		add_state_core = 760
+		add_state_core = 329
+		add_manpower = 10000
+	}
+	SHX = {
+		transfer_state = 615
+		transfer_state = 883
+		transfer_state = 884
+		add_state_core = 615
+		add_state_core = 883
+		add_state_core = 884
+		add_manpower = 10000
+	}
 }
-XSM = {
-	transfer_state = 754
-	transfer_state = 283
-	transfer_state = 909
-	transfer_state = 604
-	transfer_state = 616
-	transfer_state = 752
-	transfer_state = 601
-	add_state_core = 754
-	add_state_core = 283
-	add_state_core = 909
-	add_state_core = 604
-	add_state_core = 616
-	add_state_core = 752
-	add_state_core = 601
-	add_manpower = 10000
+CHI_civil_war_4 = {
+	hidden_effect = {
+		MAN = {
+			transfer_state = 714
+			transfer_state = 761
+			transfer_state = 913
+			transfer_state = 873
+			transfer_state = 717
+			transfer_state = 715
+			transfer_state = 891
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 875
+			transfer_state = 874
+			add_state_core = 714
+			add_state_core = 761
+			add_state_core = 913
+			add_state_core = 873
+			add_state_core = 717
+			add_state_core = 891
+			add_state_core = 328
+			add_state_core = 716
+			add_state_core = 875
+			add_state_core = 874
+			add_manpower = 10000
+		}
+	}
 }
-TIB = {
-	transfer_state = 322
-	add_state_core = 322
-	add_manpower = 10000
+CHI_civil_war_5 = {
+	hidden_effect = {
+		753 = { set_demilitarized_zone = no }
+		906 = { set_demilitarized_zone = no }
+		434 = { set_demilitarized_zone = no }
+		908 = { set_demilitarized_zone = no }
+		751 = { set_demilitarized_zone = no }
+		605 = { set_demilitarized_zone = no }
+		PRC = {
+			transfer_state = 605
+			add_state_core = 605
+			add_manpower = 10000
+		}
+		DCD = {
+			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
+			transfer_state = 906
+			add_state_core = 906
+			add_manpower = 10000
+		}
+		JLD = {
+			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
+			transfer_state = 908
+			add_state_core = 908
+			add_manpower = 10000
+		}
+		XCD ={
+			load_oob = "AOR_LAND_CHI_chuanjun_XI"
+			transfer_state = 753
+			add_state_core = 753
+			add_manpower = 10000
+		}
+		CBS = {
+			load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
+			transfer_state = 751
+			transfer_state = 434
+			add_state_core = 751
+			add_state_core = 434
+			add_manpower = 10000
+		}
+	}
 }
-SIK = {
-	transfer_state = 287
-	transfer_state = 617
-	transfer_state = 618
-	transfer_state = 760
-	transfer_state = 329
-	add_state_core = 287
-	add_state_core = 617
-	add_state_core = 618
-	add_state_core = 760
-	add_state_core = 329
-	add_manpower = 10000
-}
-SHX = {
-	transfer_state = 615
-	transfer_state = 883
-	transfer_state = 884
-	add_state_core = 615
-	add_state_core = 883
-	add_state_core = 884
-	add_manpower = 10000
-}
-}
+USA_civil_war_west = {
+	country_event = {id = USA.5000 days = 200}
+		country_event = {id = USA.6000 days = 210}
+		country_event = {id = USA.7000 days = 90}
+		US1 = {
+			transfer_state = 386
+			transfer_state = 387
+			transfer_state = 385
+			load_oob = "US1_Civilwar"
+			load_oob = "US1_Civilwar"
+			
+		}
+		US2 = {
+			transfer_state = 378
+			transfer_state = 379
+			transfer_state = 380
+			load_oob = "US2_Civilwar"
+			load_oob = "US2_Civilwar"
+		}
+		US3 = {
+			transfer_state = 388
+			load_oob = "US3_Civilwar"
+			load_oob = "US3_Civilwar"
+
+		}
+		US4 = {
+			transfer_state = 381
+			transfer_state = 925
+			load_oob = "US4_Civilwar"
+			load_oob = "US4_Civilwar"
+		}
+		US5 = {
+			transfer_state = 382
+			transfer_state = 924
+			transfer_state = 923
+			load_oob = "US5_Civilwar"
+			load_oob = "US5_Civilwar"
+		}
+		US6 = {
+			transfer_state = 389
+			transfer_state = 390
+			load_oob = "US6_Civilwar"
+			load_oob = "US6_Civilwar"
+		}
+		US7 = {
+			transfer_state = 384
+			load_oob = "US7_Civilwar"
+			load_oob = "US7_Civilwar"
+		}
+		US8 = {
+			transfer_state = 383
+			transfer_state = 926
+			load_oob = "US8_Civilwar"
+			load_oob = "US8_Civilwar"
+		}
+		US1 = {
+			add_state_core = 386
+			add_state_core = 387
+			add_state_core = 385
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+					DAXIYANG_The_clarion_call_for_sand_freedom_and_independence
+				}
+
+		}
+		US2 = {
+			add_state_core = 378
+			add_state_core = 379
+			add_state_core = 380
+			declare_war_on = {
+				target = US1
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+					PAN_XING_Desert_Eagle
+				}
+		}
+		US3 = {
+			add_state_core = 388
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
+		}
+		US4 = {
+			add_state_core = 381
+			add_state_core = 925
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
+		}
+		US5 = {
+			add_state_core = 382
+			add_state_core = 924
+			add_state_core = 923
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
+		}
+		US6 = {
+			add_state_core = 389
+			add_state_core = 390
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
+		}
+		US7 = {
+			add_state_core = 384
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US8
+
+				type = take_claimed_state
+				}
+			add_ideas = {
+				The_Wild_West
+			}
+		}
+		US8 = {
+			add_state_core = 383
+			add_state_core = 926
+			declare_war_on = {
+				target = US2
+
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US3
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US4
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US5
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US6
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US7
+	
+				type = take_claimed_state
+				}
+			declare_war_on = {
+				target = US1
+
+				type = take_claimed_state
+				}
+				add_ideas = {
+					The_Wild_West
+				}
+		}
+	}
