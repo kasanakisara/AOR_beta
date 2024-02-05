@@ -4,7 +4,6 @@ ideas = {
 			picture = GFX_idea_RAJ_NCP
 			allowed = { always = yes }
 			modifier = {
-			consumer_goods_factor = 0.2
 			stability_factor = -0.1
 			war_support_factor = -0.2
 			max_command_power = -5
@@ -16,6 +15,7 @@ ideas = {
 			picture = GFX_idea_RAJ_Famine
 			allowed = { always = yes }
 			modifier = {
+			consumer_goods_factor = 0.2
 			stability_factor = -0.2
 			min_export = -0.1
 			conscription = -0.01

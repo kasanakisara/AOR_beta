@@ -676,8 +676,8 @@ country_event = {
 				set_politics = {ruling_party = FRE_democratic}
 				create_country_leader = {
 				name = "Warren Gamaliel Harding"
-				desc = "POLITICS_Warren_Gamaliel_Harding_DESC"
-				picture = "Harding.dds"
+				desc = "POLITICS_Warren_Gamaliel__DESC"
+				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
 				ideology = liberalism
 					}
@@ -1063,3 +1063,20 @@ country_event = {
 		name=USA.10006.a
 	}	
 }
+country_event = {
+	id = USA.10007 #飞翔的雄鹰3
+    title = USA.10007.t
+    desc = USA.10007.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1920.1.10
+    }
+    	
+    option = { 
+        name = USA.10007.a
+	
+	}
+}
+    
