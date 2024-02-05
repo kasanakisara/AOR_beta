@@ -174,36 +174,11 @@ country_event = {
 		tag = CHI
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			MAN = {
-				transfer_state = 714
-				transfer_state = 761
-				transfer_state = 913
-				transfer_state = 873
-				transfer_state = 717
-				transfer_state = 715
-				transfer_state = 891
-				transfer_state = 328
-				transfer_state = 716
-				transfer_state = 875
-				transfer_state = 874
-				add_state_core = 714
-				add_state_core = 761
-				add_state_core = 913
-				add_state_core = 873
-				add_state_core = 717
-				add_state_core = 891
-				add_state_core = 328
-				add_state_core = 716
-				add_state_core = 875
-				add_state_core = 874
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_4 = yes
 	}
 	#那就这样吧  
 	option = {
@@ -223,49 +198,11 @@ country_event = {
 		tag = CHI
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			753 = { set_demilitarized_zone = no }
-			906 = { set_demilitarized_zone = no }
-			434 = { set_demilitarized_zone = no }
-			908 = { set_demilitarized_zone = no }
-			751 = { set_demilitarized_zone = no }
-			605 = { set_demilitarized_zone = no }
-			PRC = {
-				transfer_state = 605
-				add_state_core = 605
-				add_manpower = 10000
-			}
-			DCD = {
-				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
-				transfer_state = 906
-				add_state_core = 906
-				add_manpower = 10000
-			}
-			JLD = {
-				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
-				transfer_state = 908
-				add_state_core = 908
-				add_manpower = 10000
-			}
-			XCD ={
-				load_oob = "AOR_LAND_CHI_chuanjun_XI"
-				transfer_state = 753
-				add_state_core = 753
-				add_manpower = 10000
-			}
-			CBS = {
-				load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
-				transfer_state = 751
-				transfer_state = 434
-				add_state_core = 751
-				add_state_core = 434
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_5 = yes
 	}
 	#那就这样吧  
 	option = {
