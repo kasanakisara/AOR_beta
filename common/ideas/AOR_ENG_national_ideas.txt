@@ -1,6 +1,6 @@
 ideas = {
 	country = { 
-		ENG_bujianliming = { #不见黎明
+		ENG_huifuyuanqi = { #恢复元气（空）
 			allowed = {
 				always = yes
 			}
@@ -10,12 +10,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.1
-				political_power_cost = 0.2
 			}
 		}
 
-		ENG_shiyelangchao = { #失业浪潮
+		ENG_huifuyuanqi_2 = { #恢复元气（第二个）
 			allowed = {
 				always = yes
 			}
@@ -25,10 +23,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.1
-				political_power_cost = 0.1
-				war_support_factor = -0.05
-				consumer_goods_factor = 0.05
+				conscription_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
 			}
 		}
 

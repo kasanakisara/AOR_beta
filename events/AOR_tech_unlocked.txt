@@ -6,7 +6,7 @@ country_event = {
 	trigger = {
 		has_tech = xxx
 	}
-	mean_time_to_happen = {day = 1}
+	mean_time_to_happen = {days = 1}
 	option = {
 		name = USA.1.a
 		add_tech_bonus = {

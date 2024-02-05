@@ -21,7 +21,9 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.20}
+			country_event = {
+				id = ENG.1
+			}
 			
 		}
 	}
@@ -42,6 +44,12 @@
 			custom_effect_tooltip = ENG_Restore_the_economy_tt
 			custom_effect_tooltip = ENG_n_tt
 			Enable_ENG_Lick_wounds_effect = yes
+
+			hidden_effect = {
+				add_ideas = {
+					id = ENG_huifuyuanqi
+				}
+			}
 
 		}
 	}
@@ -68,7 +76,10 @@
 			add_to_variable = {
 				ENG_National_Support_Var = 1
 			}
-			#不会！
+			swap_ideas = {
+				remove_idea = ENG_huifuyuanqi
+				add_idea = ENG_huifuyuanqi_2			
+			}
 		}
 	}
 	focus={
