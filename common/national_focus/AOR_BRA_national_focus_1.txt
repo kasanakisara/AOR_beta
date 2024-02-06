@@ -1,5 +1,4 @@
 focus_tree={
-	id = BRA_1
 	country={
 		factor=0
 		modifier={
@@ -7,12 +6,13 @@ focus_tree={
 			tag=BRA
 		}
 	}
+	continuous_focus_position = { x = 1500  y = 2000 }
 	default=no
 	focus={
 		id=default_id0
-		x=4
+		x=3
 		y=0
-		cost=5
+		cost=10
 		ai_will_do={
 			factor=1
 		}
@@ -23,73 +23,73 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id9
-		x=4
+		id=default_id1
+		x=0
+		y=1
+		prerequisite={focus=default_id0}
+		mutually_exclusive={focus=default_id3 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=default_id2
+		x=0
+		y=2
+		prerequisite={focus=default_id1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=default_id3
+		x=6
+		y=1
+		prerequisite={focus=default_id0}
+		mutually_exclusive={focus=default_id1 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=default_id4
+		x=6
+		y=2
+		prerequisite={focus=default_id3}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=default_id5
+		x=3
 		y=3
-		prerequisite={focus=default_id13 focus=default_id12 }
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=default_id10
-		x=8
-		y=1
-		prerequisite={focus=default_id0}
-		mutually_exclusive={focus=default_id11 }
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=default_id11
-		x=0
-		y=1
-		prerequisite={focus=default_id0}
-		mutually_exclusive={focus=default_id10 }
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=default_id12
-		x=0
-		y=2
-		prerequisite={focus=default_id11}
-		cost=5
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=default_id13
-		x=8
-		y=2
-		prerequisite={focus=default_id10}
-		cost=5
+		prerequisite={focus=default_id2 focus=default_id4 }
+		cost=10
 		ai_will_do={
 			factor=1
 		}

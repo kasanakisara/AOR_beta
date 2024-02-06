@@ -168,6 +168,7 @@ CHI_civil_war_2  = {
 				popularity = 100
 			}
 			transfer_state = 330
+			330 = {set_demilitarized_zone=yes}
 			add_state_core = 330
 			add_manpower = 10000
 		}
@@ -191,6 +192,8 @@ CHI_civil_war_3 = {
 		transfer_state = 616
 		transfer_state = 752
 		transfer_state = 601
+		754 = {set_demilitarized_zone=yes}
+		283= {set_demilitarized_zone=yes}
 		add_state_core = 754
 		add_state_core = 283
 		add_state_core = 909
@@ -211,6 +214,12 @@ CHI_civil_war_3 = {
 		transfer_state = 618
 		transfer_state = 760
 		transfer_state = 329
+		287 = {set_demilitarized_zone=yes}
+		617= {set_demilitarized_zone=yes}
+		618 = {set_demilitarized_zone=yes}
+		760= {set_demilitarized_zone=yes}
+		329 = {set_demilitarized_zone=yes}
+
 		add_state_core = 287
 		add_state_core = 617
 		add_state_core = 618
@@ -242,6 +251,18 @@ CHI_civil_war_4 = {
 			transfer_state = 716
 			transfer_state = 875
 			transfer_state = 874
+			#合兵一处！
+			714={set_demilitarized_zone=yes}
+			761={set_demilitarized_zone=yes}
+			913={set_demilitarized_zone=yes}
+			873={set_demilitarized_zone=yes}
+			717={set_demilitarized_zone=yes}
+			715={set_demilitarized_zone=yes}
+			891={set_demilitarized_zone=yes}
+			328={set_demilitarized_zone=yes}
+			716={set_demilitarized_zone=yes}
+			875={set_demilitarized_zone=yes}
+			874={set_demilitarized_zone=yes}
 			add_state_core = 714
 			add_state_core = 761
 			add_state_core = 913
@@ -296,6 +317,28 @@ CHI_civil_war_5 = {
 			add_manpower = 10000
 		}
 	}
+}
+#还我军事区！
+CHI_civilwar_6 = {
+	714={set_demilitarized_zone =no}
+	761={set_demilitarized_zone =no}
+	913={set_demilitarized_zone =no}
+	873={set_demilitarized_zone =no}
+	717={set_demilitarized_zone =no}
+	715={set_demilitarized_zone =no}
+	891={set_demilitarized_zone =no}
+	328={set_demilitarized_zone =no}
+	716={set_demilitarized_zone =no}
+	875={set_demilitarized_zone =no}
+	874={set_demilitarized_zone =no}
+	287 = {set_demilitarized_zone =no}
+	617= {set_demilitarized_zone =no}
+	618 = {set_demilitarized_zone =no}
+	760= {set_demilitarized_zone =no}
+	329 = {set_demilitarized_zone =no}		
+	754 = {set_demilitarized_zone =no}
+	283= {set_demilitarized_zone =no}
+	330 = {set_demilitarized_zone=no}
 }
 USA_civil_war_west = {
 	country_event = {id = USA.5000 days = 200}
