@@ -28,7 +28,7 @@ ideas = {
 			}
 		}
 
-		ENG_shikezhunbeizhe = { #时刻准备着	 	
+		ENG_wendingguojia = { #稳定国家
 			allowed = {
 				always = yes
 			}
@@ -38,13 +38,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				mobilization_speed = 0.3
-				army_morale_factor = 0.1
-				experience_gain_army_factor = 0.05
+				drift_defence_factor = 0.5
 			}
 		}
 
-		ENG_yanlizhenya = { #严厉镇压
+		ENG_wendingfeizhou = { #稳定非洲
 			allowed = {
 				always = yes
 			}
@@ -54,9 +52,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				resistance_decay = 0.3
-				required_garrison_factor = 0.1
-				political_power_factor = 0.05
+				resistance_target = 0.1
+				compliance_growth = 0.1
 			}
 		}
 

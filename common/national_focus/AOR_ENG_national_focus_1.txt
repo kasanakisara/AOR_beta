@@ -46,9 +46,7 @@
 			Enable_ENG_Lick_wounds_effect = yes
 
 			hidden_effect = {
-				add_ideas = {
-					id = ENG_huifuyuanqi
-				}
+				add_ideas = ENG_huifuyuanqi
 			}
 
 		}
@@ -67,7 +65,7 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.21}
+			country_event = {id=ENG.4}
 			custom_effect_tooltip = ENG_Current_Vitality_Var_add_1_tt
 			add_to_variable = {
 				ENG_Current_Vitality_Var = 1.5
@@ -96,7 +94,9 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.22}
+			country_event = {
+				id = ENG.2
+			}
 		}
 	}
 	focus={
@@ -466,9 +466,16 @@
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip =  ENG_National_Support_Var_add_1_tt
+			add_to_variable = {
+				ENG_National_Support_Var = 1
+			}
+			add_stability = 0.05
+			add_ideas = ENG_wendingguojia
+			
 		}
 	}
-	focus={
+	focus={ #一代人有一代人的使命
 		id=AOR_ENG_yidairendeshiming
 		icon=AOR_goals_yidairendeshiming
 		x=61
@@ -482,6 +489,9 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {
+				id = ENG.3
+			}
 		}
 	}
 	focus={
@@ -498,6 +508,14 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {
+				id = ENG.5
+			}
+
+			custom_effect_tooltip =  ENG_National_Support_Var_add_05_tt
+			add_to_variable = {
+				ENG_National_Support_Var = 0.5
+			}
 		}
 	}
 	focus={
@@ -514,6 +532,17 @@
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip =  ENG_National_Support_Var_remove_1_tt
+			add_to_variable = {
+				ENG_National_Support_Var = -0.5
+			}
+
+			custom_effect_tooltip = ENG_Current_Vitality_Var_remove_1_tt
+			add_to_variable = {
+				ENG_Current_Vitality_Var = -0.5
+			}
+			remove_manpower = 10000
+			add_ideas = ENG_wendingfeizhou
 		}
 	}
 	focus={
@@ -530,6 +559,19 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {
+				id = ENG.6
+			}
+
+			custom_effect_tooltip =  ENG_National_Support_Var_remove_2_tt
+			add_to_variable = {
+				ENG_National_Support_Var = -1
+			}
+
+			custom_effect_tooltip = ENG_Current_Vitality_Var_remove_2_tt
+			add_to_variable = {
+				ENG_Current_Vitality_Var = -1
+			}
 		}
 	}
 	focus={
