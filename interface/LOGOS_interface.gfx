@@ -1619,4 +1619,9 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
   name = "GFX_goal_ORA_Look_forward_future"
   texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
  }
+########美国1919——1920一阶段
+ spriteType = {
+  name = "GFX_goal_ORA_USA_WhiteHouseReport"
+  texturefile = "gfx/interface/goals/USA_WhiteHouseReport.png"
+ }
 }
