@@ -1,7 +1,7 @@
 ideas = {
 	country = {
-		CAN_the_divided_nation = {
-			picture = GFX_idea_CAN_the_divided_nation
+		CAN_niuniu = {
+			picture = GFX_idea_CAN_niuniu
 			allowed = { always = yes }
 		     modifier = {
 			 stability_factor = -0.1
