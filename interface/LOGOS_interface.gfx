@@ -1619,9 +1619,14 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
   name = "GFX_goal_ORA_Look_forward_future"
   texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
  }
-########美国1919——1920一阶段
- spriteType = {
-  name = "GFX_goal_USA_WhiteHouseReport"
+
+ ########美国1919——1920一阶段
+ spriteType = {	
+  name = "GFX_goal_WhiteHouseReport_shine"
   texturefile = "gfx/interface/goals/USA_WhiteHouseReport.png"
- }
+}
+  spriteType = {	
+  name = "GFX_goa1_SanFrancisco_shine"
+  texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
+}
 }

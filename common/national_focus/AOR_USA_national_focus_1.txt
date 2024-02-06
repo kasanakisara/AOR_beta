@@ -34,7 +34,7 @@ focus_tree={
 	}
 	focus={
 		id=USA_SanFrancisco
-		icon=GFX_goal_generic_forceful_treaty
+		icon=GFX_goal_USA_SanFrancisco
 		x=2
 		y=2
 		prerequisite={focus=USA_challenge}
