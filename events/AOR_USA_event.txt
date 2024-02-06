@@ -250,10 +250,6 @@ country_event = {
 				transfer_state = 374
 				transfer_state = 932
 				transfer_state = 922
-
-
-
-
 				add_state_core = 366
 				add_state_core = 365
 				add_state_core = 364
@@ -283,7 +279,7 @@ country_event = {
 				set_politics = {ruling_party = FRE_democratic}
 				create_country_leader = {
 				name = "Warren Gamaliel Harding"
-				desc = "POLITICS_Warren_Gamaliel__DESC"
+				desc = "POLITICS_Warren_Gamaliel_DESC"
 				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
 				ideology = liberalism

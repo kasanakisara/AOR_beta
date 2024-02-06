@@ -10,15 +10,13 @@ focus_tree={
 	focus={
 		id=default_id0
 		icon=unkown
-x=44
+        x=44
 		y=0
 		cost=10
 		ai_will_do={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		}
 	}
@@ -26,7 +24,7 @@ x=44
 		id=default_id1
 		icon=unkown
 
-x=44
+        x=44
 		y=1
 		prerequisite={focus=default_id0}
 		cost=10
