@@ -89,9 +89,9 @@ recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 
 create_country_leader = {
-	name = "Manuel Deodoro da Fonseca"
-	desc = "POLITICS_BRZ_DESC"
-	picture = "BRZ.dds"
+	name = "Hermes_Rodrigues_da_Fonseca"
+	desc = "POLITICS_BRA_DESC"
+	picture = "gfx/leaders/BRA/BRA.png"
 	expire = "1965.1.1"
 	ideology = miliciagov
 	traits = {

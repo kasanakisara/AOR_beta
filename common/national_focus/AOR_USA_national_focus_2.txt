@@ -86,7 +86,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_Promote_the_reform_of the_Order_of_chivalry_at_the_grassroots_level #促进骑士团基层改革
+		id = USA_Promote_the_reform_of_the_Order_of_chivalry_at_the_grassroots_level #促进骑士团基层改革
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -257,7 +257,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_The Great_Reform_of_the_Economic_System #1920经济体制大改革
+		id = USA_The_Great_Reform_of_the_Economic_System #1920经济体制大改革
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -278,7 +278,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = USA_The Great Reform_of_the_Economic_System
+			focus = USA_The_Great_Reform_of_the_Economic_System
 		}
 		x = 23
 		y = 3
@@ -320,7 +320,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = USA_The Great Reform_of_the_Economic_System
+			focus = USA_The_Great_Reform_of_the_Economic_System
 		}
 		x = 25
 		y = 3
