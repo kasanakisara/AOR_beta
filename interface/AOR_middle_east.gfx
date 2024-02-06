@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_PAL_jewish_immigrants"
+		texturefile = "gfx/interface/ideas/PAL_jewish_immigrants.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAL_Arab_Resistance"
+		texturefile = "gfx/interface/ideas/Arab_Resistance.dds"
+	}
+}

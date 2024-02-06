@@ -60,6 +60,9 @@ set_popularities = {
 	Marxism = 45
 	REL_socialism = 55
 }
+set_research_slots = 1
+set_convoys = 65
+set_stability = 0.7
 add_ideas = {
 	
 }
