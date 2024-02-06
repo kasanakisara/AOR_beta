@@ -11,14 +11,10 @@ country_event = { #劳合乔治的进一步计划
 
 	option = {
 		name = ENG.1.a
-		add_timed_idea = {
-			idea = ENG_bujianliming
-			days = 30
-		}
 	}
 }
 
-country_event = { #流浪者
+country_event = { #大胆行动
 	id = ENG.2
 	title = ENG.2.t
 	desc = ENG.2.d
@@ -32,7 +28,7 @@ country_event = { #流浪者
 	}
 }
 
-country_event = { #新战
+country_event = { #一代人有一代人的使命
 	id = ENG.3
 	title = ENG.3.t
 	desc = ENG.3.d
@@ -43,14 +39,10 @@ country_event = { #新战
 
 	option = {
 		name = ENG.3.a
-		add_timed_idea = {
-			idea = ENG_shikezhunbeizhe
-			days = 60
-		}
 	}
 }
 
-country_event = { #血日
+country_event = { #新气象
 	id = ENG.4
 	title = ENG.4.t
 	desc = ENG.4.d
@@ -61,14 +53,10 @@ country_event = { #血日
 
 	option = {
 		name = ENG.4.a
-		add_timed_idea = {
-			idea = ENG_yanlizhenya
-			days = 15
-		}
 	}
 }
 
-country_event = { #风起云涌
+country_event = { #假如德国赢了世界大战
 	id = ENG.5
 	title = ENG.5.t
 	desc = ENG.5.d
@@ -79,11 +67,14 @@ country_event = { #风起云涌
 
 	option = {
 		name = ENG.5.a
-		manpower = -200
+		country_event = {
+			days = 7
+			id = news_ENG.1
+		}
 	}
 }
 
-country_event = { #远征
+country_event = { #开工！
 	id = ENG.6
 	title = ENG.6.t
 	desc = ENG.6.d
@@ -1043,5 +1034,18 @@ country_event = {
 
 	option = {
 		name = ENG.1001.a
+	}
+}
+
+news_event = {
+	id = news_ENG.1
+	title = news_ENG.1.t
+	desc = news_ENG.1.d
+	picture = news_ENG.1.p
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = news_ENG.1.a
 	}
 }
