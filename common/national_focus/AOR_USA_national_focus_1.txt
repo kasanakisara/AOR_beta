@@ -83,7 +83,7 @@ focus_tree={
 	}
 	focus={
 		id=USA_PlanOfOperation
-		icon=GFX_goal_PlanOfOperation
+		icon=GFX_goal_USA_PlanOfOperation
 		x=0
 		y=5
 		prerequisite={focus=USA_Eagle}
