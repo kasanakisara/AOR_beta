@@ -1625,8 +1625,24 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
   name = "GFX_goal_USA_WhiteHouseReport"
   texturefile = "gfx/interface/goals/USA_WhiteHouseReport.png"
  }
+ spriteType = {	
+ name = "GFX_goal_USA_challenge"
+ texturefile = "gfx/interface/goals/USA_challenge.png"
+}
   spriteType = {	
-  name = "GFX_goal_USA_SanFrancisco"
-  texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
+ name = "GFX_goal_USA_SanFrancisco"
+ texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
  }
+ spriteType = {	
+ name = "GFX_goal_USA_West"
+ texturefile = "gfx/interface/goals/USA_West.png"
+}
+ spriteType = {	
+ name = "GFX_goal_USA_USA_Detroito"
+ texturefile = "gfx/interface/goals/USA_Detroit.png"
+}
+ spriteType = {	
+ name = "GFX_goal_USA_SanFrancisco"
+ texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
+}
 }
