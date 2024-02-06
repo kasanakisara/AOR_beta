@@ -2029,9 +2029,25 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
  name = "GFX_goal_USA_challenge"
  texturefile = "gfx/interface/goals/USA_challenge.png"
 }
-  spriteType = {	
+ spriteType = {	
  name = "GFX_goal_USA_SanFrancisco"
  texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
+ }
+ spriteType = {	
+ name = "GFX_goal_USA_Eagle"
+ texturefile = "gfx/interface/goals/USA_Eagle.png"
+}
+spriteType = {	
+ name = "GFX_USA_Watchman"
+ texturefile = "gfx/interface/goals/USA_Watchman.png"
+}
+spriteType = {	
+ name = "GFX_goalUSA_PlanOfOperation"
+ texturefile = "gfx/interface/goals/USA_PlanOfOperation"
+ }
+spriteType = {	
+ name = "GFX_goal_USA_Railway"
+ texturefile = "gfx/interface/goals/USA_Railway.png"
  }
  spriteType = {	
  name = "GFX_goal_USA_West"
@@ -2039,12 +2055,36 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
  }
 
  spriteType = {	
- name = "GFX_goal_USA_USA_Detroito"
+ name = "GFX_goal_USA_Detroit"
  texturefile = "gfx/interface/goals/USA_Detroit.png"
  }
 
  spriteType = {	
- name = "GFX_goal_USA_SanFrancisco"
- texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
+ name = "GFX_goal_USA_Analysis"
+ texturefile = "gfx/interface/goals/USA_Analysis.png"
 }
+spriteType = {	
+ name = "GFX_goal_USA_MartialLaw"
+ texturefile = "gfx/interface/goals/USA_MartialLaw.png"
+}
+spriteType = {	
+ name = "GFX_goal_USA_Appease"
+ texturefile = "gfx/interface/goals/USA_Appease.png"
+}
+spriteType = {	
+ name = "GFX_goal_USA_EndTheCrisis"
+ texturefile = "gfx/interface/goals/USA_EndTheCrisis.png"
+}
+spriteType = {	
+ name = "GFX_goal_USA_IntelligenceStation"
+ texturefile = "gfx/interface/goals/USA_IntelligenceStation.png"
+}
+spriteType = {	
+ name = "GFX_goal_USA_Criticize"
+ texturefile = "gfx/interface/goals/USA_Criticize.png"
+}
+}
+spriteType = {	
+ name = "GFX_goal_USA_NewYear"
+ texturefile = "gfx/interface/goals/USA_NewYear.png"
 }

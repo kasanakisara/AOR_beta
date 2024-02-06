@@ -1,5 +1,4 @@
 focus_tree={
-	id = USA_1
 	country={
 		factor=0
 		modifier={
@@ -10,7 +9,7 @@ focus_tree={
 	default=no
 	focus={
 		id=USA_WhiteHouseReport
-		icon = GFX_goal_USA_WhiteHouseReport
+		icon=GFX_goal_USA_WhiteHouseReport
 		x=11
 		y=0
 		cost=0.00
@@ -23,7 +22,7 @@ focus_tree={
 	}
 	focus={
 		id=USA_challenge
-		icon = GFX_goal_USA_challenge
+		icon=GFX_goal_USA_challenge
 		x=11
 		y=1
 		prerequisite={focus=USA_WhiteHouseReport}
@@ -33,10 +32,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id = USA_SanFrancisco
-		icon = GFX_goal_USA_SanFrancisco
+		id=USA_SanFrancisco
+		icon=GFX_goal_USA_SanFrancisco
 		x=2
-		y=2
+		y=3
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
@@ -75,18 +74,18 @@ focus_tree={
 	}
 	focus={
 		id=USA_Eagle
-		icon=GFX_goal_support_democracy
+		icon=GFX_goal_USA_Eagle
 		x=0
-		y=3
+		y=4
 		prerequisite={focus=USA_SanFrancisco}
 		mutually_exclusive={focus=USA_Watchman }
 		cost=2.00
 	}
 	focus={
 		id=USA_PlanOfOperation
-		icon=GFX_goal_generic_more_territorial_claims
+		icon=GFX_goal_PlanOfOperation
 		x=0
-		y=4
+		y=5
 		prerequisite={focus=USA_Eagle}
 		cost=2.80
 		completion_reward={
@@ -98,18 +97,18 @@ focus_tree={
 	}
 	focus={
 		id=USA_Watchman
-		icon=GFX_goal_generic_CAS
+		icon=GFX_goal_USA_Watchman
 		x=4
-		y=3
+		y=4
 		prerequisite={focus=USA_SanFrancisco}
 		mutually_exclusive={focus=USA_Eagle }
 		cost=2.00
 	}
 	focus={
 		id=USA_Railway
-		icon=GFX_goal_generic_build_tank
+		icon=GFX_goal_USA_Railway
 		x=4
-		y=4
+		y=5
 		prerequisite={focus=USA_Watchman}
 		cost=2.80
 		completion_reward={
@@ -123,7 +122,7 @@ focus_tree={
 		id=USA_West
 		icon=GFX_goal_USA_West
 		x=2
-		y=5
+		y=6
 		prerequisite={focus=USA_Railway focus=USA_PlanOfOperation }
 		cost=1.00
 		completion_reward={
@@ -132,9 +131,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_Detroit
-		icon=GFX_goal_generic_forceful_treaty
+		icon=GFX_goal_USA_Detroit
 		x=11
-		y=2
+		y=3
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
@@ -146,23 +145,23 @@ focus_tree={
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
-			id=USA.10001
+				id=USA.10001
 			}
 		}
 	}
 	focus={
 		id=USA_Analysis
-		icon=GFX_goal_generic_intelligence_exchange
+		icon=GFX_goal_USA_Analysis
 		x=8
-		y=3
+		y=5
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 	}
 	focus={
 		id=USA_MartialLaw
-		icon=GFX_goal_generic_military_deal
+		icon=GFX_goal_USA_MartialLaw
 		x=11
-		y=3
+		y=5
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
@@ -177,9 +176,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_Appease
-		icon=GFX_goal_generic_national_unity
+		icon=GFX_goal_USA_Appease
 		x=14
-		y=3
+		y=5
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
@@ -191,9 +190,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_EndTheCrisis
-		icon=GFX_goal_generic_improve_relations
+		icon=GFX_goal_USA_EndTheCrisis
 		x=11
-		y=4
+		y=6
 		prerequisite={focus=USA_Analysis}
 		prerequisite={focus=USA_MartialLaw}
 		prerequisite={focus=USA_Appease}
@@ -208,9 +207,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_IntelligenceStation
-		icon=GFX_goal_generic_territory_or_war
+		icon=GFX_goal_USA_IntelligenceStation
 		x=19
-		y=2
+		y=3
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
@@ -222,9 +221,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_Criticize
-		icon=GFX_goal_generic_demand_territory
+		icon=GFX_goal_USA_Criticize
 		x=19
-		y=4
+		y=5
 		prerequisite={focus=USA_IntelligenceStation}
 		cost=2.00
 		completion_reward={
@@ -236,9 +235,9 @@ focus_tree={
 	}
 	focus={
 		id=USA_NewYear
-		icon=GFX_goal_generic_demand_territory
+		icon=GFX_goal_USA_NewYear
 		x=11
-		y=6
+		y=8
 		prerequisite={focus=USA_EndTheCrisis}
 		prerequisite={focus=USA_West}
 		prerequisite={focus=USA_Criticize}
