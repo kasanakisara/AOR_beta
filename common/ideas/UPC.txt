@@ -261,5 +261,22 @@ ideas = {
 			stability_factor = 0.1
 			}
 		}
+		UPC_Reorganized_Progressive_Party = {
+			
+			picture = GFX_idea_UPC_Reorganized_Progressive_Party
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				drift_defence_factor = 0.1
+			}
+		}
+	}
 		
 }

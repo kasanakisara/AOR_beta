@@ -160,6 +160,10 @@ country_event = {
 	option = {
 		name = CHI.8.a
 		CHI_civil_war_3 = yes
+		hidden_effect = {
+			country_event = {id = CHI.999 days=2}
+		}
+		
 	}
 }
 
@@ -291,6 +295,22 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CHI.14.a
+	}
+}
+#还我军事区
+country_event = {
+	id = CHI.999
+	title = CHI.999.t
+	desc = CHI.999.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	immediate = {
+		CHI_civilwar_6 = yes
+	}
+	option = {
+		name = CHI.999.a
 	}
 }
 country_event = {
@@ -432,6 +452,23 @@ country_event = {
 	option = {
 		name = CHI_test.01.a
 		Enable_ENG_Lick_wounds_effect = yes
+	}
+}
+country_event = {
+	id = CHI_test.02
+	title = CHI_test.02.t
+	desc = CHI_test.02.desc
+	is_triggered_only = yes
+	option = {
+		name = CHI_test.02.a
+		CHI_civil_war_1 = yes
+		CHI_civil_war_2 = yes
+		CHI_civil_war_3 = yes
+		CHI_civil_war_4 = yes
+		CHI_civil_war_5 = yes
+		hidden_effect = {
+			country_event = {id = CHI.999 days=2}
+		}
 	}
 }
 
