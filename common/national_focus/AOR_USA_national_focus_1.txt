@@ -23,7 +23,7 @@ focus_tree={
 	}
 	focus={
 		id=USA_challenge
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_USA_challenge
 		x=11
 		y=1
 		prerequisite={focus=USA_WhiteHouseReport}
@@ -121,7 +121,7 @@ focus_tree={
 	}
 	focus={
 		id=USA_West
-		icon=GFX_goal_generic_improve_relations
+		icon=GFX_goal_USA_West
 		x=2
 		y=5
 		prerequisite={focus=USA_Railway focus=USA_PlanOfOperation }
