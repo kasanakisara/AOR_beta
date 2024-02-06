@@ -3741,7 +3741,7 @@ SpriteType = {
  }
  ########美国1919——1920一阶段
 spriteType = {	
-	name = "GFX_goal_WhiteHouseReport_shine"
+	name = "GFX_goal_USA_SanFrancisco_shine"
 	texturefile = "gfx/interface/goals/USA_WhiteHouseReport.png"
 	effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
@@ -3771,8 +3771,9 @@ spriteType = {
   }
    legacy_lazy_load = no
 	}
+
   spriteType = {	
-		name = "GFX_goal_SanFrancisco_shine"
+		name = "GFX_goal_USA_SanFrancisco_shine"
 		texturefile = "gfx/interface/goals/USA_SanFrancisco.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
