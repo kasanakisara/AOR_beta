@@ -42,12 +42,10 @@ focus_tree={
 			date>1919.8.27
 		}
 		bypass={
-			date>1919.8.27
+			date > 1919.8.27
 		}
 		completion_reward={
-			country_event={
-				id = USA.10002
-			}
+			country_event = {id = USA.10002}
 			add_stability=-0.05
 			382={
 				add_building_construction={
@@ -90,7 +88,7 @@ focus_tree={
 		cost=2.80
 		completion_reward={
 			add_timed_idea={
-				idea=USA_PlanOfOperationA
+				ide a= USA_PlanOfOperationA
 				days=360
 			}
 		}
@@ -137,16 +135,11 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date>1919.8.7
-		}
-		bypass={
-			date>1919.8.7
+			date > 1919.8.7
 		}
 		completion_reward={
-			add_ideas=USA_GreatLakesA
-			country_event={
-				id = USA.10001
-			}
+			add_ideas = USA_GreatLakesA
+			country_event = {id = USA.10001}
 		}
 	}
 	focus={
@@ -198,10 +191,10 @@ focus_tree={
 		prerequisite={focus=USA_Appease}
 		cost=3.00
 		completion_reward={
-			add_manpower=-8000
+			add_manpower = -8000
 			swap_ideas={
-				remove_idea=USA_GreatLakesA
-				add_idea=USA_GreatLakes2A
+				remove_idea = USA_GreatLakesA
+				add_idea = USA_GreatLakes2A
 			}
 		}
 	}
