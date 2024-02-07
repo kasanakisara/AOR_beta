@@ -10,7 +10,8 @@ state={
 			6826 2 
 		}
 		add_core_of = PER
-		add_core_of = KUR
+		add_claim_by = KUR
+		add_claim_by = ARA
 	}
 	provinces={
 		5014 6826 10793 
