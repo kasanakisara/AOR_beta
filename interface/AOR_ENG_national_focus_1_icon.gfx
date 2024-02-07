@@ -22,7 +22,7 @@ spriteTypes = {
 	SpriteType = { #熊熊燃烧的翡翠之岛
 		name = "GFX_AOR_goal_ENG_Blazing_Emerald_Isle"
 		texturefile = "gfx/interface/goals/AOR_goal_ENG_Blazing_Emerald_Isle.dds"
-	}e
+	}
 	SpriteType = { #封锁魁北克
 		name = "GFX_AOR_goal_ENG_Blocking_Quebec"
 		texturefile = "gfx/interface/goals/AOR_goal_ENG_Blocking_Quebec.dds"

@@ -20,8 +20,11 @@ state={
 			industrial_complex = 1
 			air_base = 2
 		}
-		add_state_claim = USA
 		add_core_of = MXS
+		USA = {
+			add_state_claim = 377
+		}
+
 		victory_points = {
 			853 3 
 		}

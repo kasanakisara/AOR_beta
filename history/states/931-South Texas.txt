@@ -11,7 +11,9 @@ state = {
 			##
 		#}
 		add_core_of = MXS
-        add_state_claim = USA
+		USA = {
+        add_state_claim = 931
+		}
 	}
 
 	provinces={
