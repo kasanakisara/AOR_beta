@@ -4,7 +4,7 @@ focus_tree={
 		factor=0
 		modifier={
 			add=10
-			tag=pol
+			tag=USA
 		}
 	}
 	default=no
@@ -12,11 +12,12 @@ focus_tree={
 		id=White_House
 		x=12
 		y=0
-		cost=10
+		cost=0
 		ai_will_do={
 			factor=1
 		}
-		available_if_capitulated=yes
+		available={
+			date > 1919.12.30}
 		search_filters={
 		}
 		completion_reward={
@@ -27,7 +28,7 @@ focus_tree={
 		x=2
 		y=3
 		prerequisite={focus=Beautiful_Country}
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -42,7 +43,7 @@ focus_tree={
 		x=12
 		y=3
 		prerequisite={focus=Beautiful_Country}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -57,7 +58,7 @@ focus_tree={
 		x=12
 		y=1
 		prerequisite={focus=White_House}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -72,7 +73,7 @@ focus_tree={
 		x=21
 		y=3
 		prerequisite={focus=Beautiful_Country}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -88,7 +89,7 @@ focus_tree={
 		y=4
 		prerequisite={focus=Pick_up}
 		mutually_exclusive={focus=Cleaning_again }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -104,7 +105,7 @@ focus_tree={
 		y=4
 		prerequisite={focus=Pick_up}
 		mutually_exclusive={focus=Compensate_them }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -119,7 +120,7 @@ focus_tree={
 		x=0
 		y=6
 		prerequisite={focus=Compensate_them}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -134,7 +135,7 @@ focus_tree={
 		x=4
 		y=6
 		prerequisite={focus=Cleaning_again}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -149,7 +150,7 @@ focus_tree={
 		x=9
 		y=4
 		prerequisite={focus=Take_care}
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -164,7 +165,7 @@ focus_tree={
 		x=9
 		y=5
 		prerequisite={focus=Negotiate}
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -180,7 +181,7 @@ focus_tree={
 		y=6
 		prerequisite={focus=imprisoned}
 		mutually_exclusive={focus=container_gold }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -196,7 +197,7 @@ focus_tree={
 		y=6
 		prerequisite={focus=imprisoned}
 		mutually_exclusive={focus=money }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -211,7 +212,7 @@ focus_tree={
 		x=15
 		y=4
 		prerequisite={focus=Take_care}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -227,7 +228,7 @@ focus_tree={
 		y=5
 		prerequisite={focus=Loans_are_issued}
 		mutually_exclusive={focus=Mellon }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -243,7 +244,7 @@ focus_tree={
 		y=5
 		prerequisite={focus=Loans_are_issued}
 		mutually_exclusive={focus=Morgan }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -258,7 +259,7 @@ focus_tree={
 		x=15
 		y=6
 		prerequisite={focus=Morgan focus=Mellon }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -273,7 +274,7 @@ focus_tree={
 		x=20
 		y=4
 		prerequisite={focus=Look_out}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -288,7 +289,7 @@ focus_tree={
 		x=20
 		y=6
 		prerequisite={focus=Promise_space}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -303,7 +304,7 @@ focus_tree={
 		x=25
 		y=4
 		prerequisite={focus=Look_out}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -319,7 +320,7 @@ focus_tree={
 		y=6
 		prerequisite={focus=Get_staff_support}
 		mutually_exclusive={focus=the_east }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -335,7 +336,7 @@ focus_tree={
 		y=6
 		prerequisite={focus=Get_staff_support}
 		mutually_exclusive={focus=Western_Eagles }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -353,11 +354,12 @@ focus_tree={
 		prerequisite={focus=Limit_the_Knights}
 		prerequisite={focus=Eradicating_the_Cancer }
 		prerequisite={focus=money focus=container_gold focus=Western_Eagles focus=the_east }
-		cost=10
+		cost=0
 		ai_will_do={
 			factor=1
 		}
-		available_if_capitulated=yes
+		available={
+		date > 1921.1.30}
 		search_filters={
 		}
 		completion_reward={
