@@ -46,7 +46,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id=USA.10002
+				id = USA.10002
 			}
 			add_stability=-0.05
 			382={
@@ -145,7 +145,7 @@ focus_tree={
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
-				id=USA.10001
+				id = USA.10001
 			}
 		}
 	}
@@ -248,7 +248,7 @@ focus_tree={
 				add_idea=USA_AmericanAnxietyA
 			}
 			hidden_effect={
-				load_focus_tree=USA_national_focus_2
+				load_focus_tree=USA_2
 			}
 		}
 	}
