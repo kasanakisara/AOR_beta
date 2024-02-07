@@ -63,6 +63,8 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#立宪派加入
+		set_country_flag = UPC_lixian_join
 		custom_effect_tooltip = UPC_Constitutionalists_join_tt
 		country_event = {id=UPC.4}
 		}
@@ -78,6 +80,8 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#烤馒头加入
+		set_country_flag = UPC_KMT_join
 		custom_effect_tooltip = UPC_Confederate_join_tt
 		country_event = {id=UPC.5}
 		}
@@ -125,6 +129,7 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#粤湘桂军官加入
 		country_event = {id=UPC.7}
 		custom_effect_tooltip = UPC_7_tt
 		}
@@ -140,6 +145,7 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#北京共和派军官南渡
 		country_event = {id=UPC.8}
 		custom_effect_tooltip = UPC_8_tt
 		}
@@ -158,7 +164,10 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
-		country_event = {id=UPC.9}
+		hidden_effect = {
+			load_oob = UPC_Nandu
+		}
+		
 		custom_effect_tooltip = UPC_9_tt
 		}
 }
@@ -173,9 +182,10 @@ focus_tree = {
 		y = 2
 
 	completion_reward={
-		country_event = {id=UPC.10}
 		custom_effect_tooltip = UPC_10_tt
+		add_stability = 0.05
 		}
+		
 }
 	focus = {
 		id = CHI_UN_JZNBKJF_13
@@ -188,8 +198,6 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
-		country_event = {id=UPC.11}
-		add_stability = 0.05
 		add_war_support = 0.05
 		}
 }
@@ -205,7 +213,7 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
-		country_event = {id=UPC.12}
+		#第二舰队及军官加入
 		custom_effect_tooltip = UPC_12_tt
 		}
 }
@@ -227,7 +235,6 @@ focus_tree = {
 			ideology = SOC_democratic
 			popularity = 0.1
 		}
-		country_event = {id=UPC.13}
 		}
 }
 	focus = {
@@ -244,6 +251,7 @@ focus_tree = {
 		y = 6
 
 	completion_reward={
+		country_event = {id=UPC.29}
 		}
 }
 	focus = {
@@ -258,7 +266,7 @@ focus_tree = {
 
 	completion_reward={
 		add_political_power = 100
-		country_event = {id=UPC.14}
+
 		}
 }
 	focus = {
@@ -272,6 +280,9 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#民族实业家
+		set_country_flag = UPC_minzushiyejia_join
+		custom_effect_tooltip = UPC_14_tt
 		}
 }
 	focus = {
@@ -285,6 +296,9 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#华侨
+		custom_effect_tooltip = UPC_15_tt
+		set_country_flag = UPC_huaqiao_join
 		}
 }
 	focus = {
@@ -301,6 +315,7 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
+		custom_effect_tooltip = UPC_16_tt
 		}
 }
 	focus = {
@@ -317,6 +332,7 @@ focus_tree = {
 		y = 1
 
 	completion_reward={
+		country_event = {id=UPC.17}
 		}
 }
 	focus = {
@@ -330,6 +346,7 @@ focus_tree = {
 		y = 2
 
 	completion_reward={
+		add_command_power = 25
 		}
 }
 	focus = {
@@ -343,6 +360,8 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#实权将军
+		custom_effect_tooltip = UPC_19_tt
 		}
 }
 	focus = {
@@ -356,6 +375,8 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		custom_effect_tooltip = UPC_20_tt
+		country_event = {id=UPC.20}
 		}
 }
 	focus = {
@@ -372,6 +393,10 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
+		add_popularity = {
+			ideology = AUT_democratic
+			popularity = 0.1
+		}
 		}
 }
 	focus = {
@@ -388,6 +413,7 @@ focus_tree = {
 		y = 6
 
 	completion_reward={
+		custom_effect_tooltip = UPC_31_tt
 		}
 }
 	focus = {
@@ -401,6 +427,7 @@ focus_tree = {
 		y = 2
 
 	completion_reward={
+		add_war_support = 0.1
 		}
 }
 	focus = {
@@ -414,6 +441,10 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		give_guarantee  = KMT
+		KMT = {
+			give_guarantee  = UPC
+		}
 		}
 }
 	focus = {
@@ -427,6 +458,9 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#第二舰队
+		add_political_power = -50
+		custom_effect_tooltip = UPC_21_tt
 		}
 }
 	focus = {
@@ -443,6 +477,10 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
+		custom_effect_tooltip = UPC_22_tt
+		hidden_effect = {
+			load_oob = UPC_militiaman
+		}
 		}
 }
 	focus = {
@@ -456,6 +494,7 @@ focus_tree = {
 		y = 2
 
 	completion_reward={
+		add_political_power = 200
 		}
 }
 	focus = {
@@ -469,6 +508,18 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		add_tech_bonus = {
+			bonus = 1.0 
+
+			uses = 1
+			category = artillery
+		}
+		add_tech_bonus = {
+			bonus = 1.0 
+
+			uses = 1
+			category = infantry_weapons
+		}
 		}
 }
 	focus = {
@@ -482,6 +533,8 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#法军
+		custom_effect_tooltip = UPC_23_tt
 		}
 }
 	focus = {
@@ -498,7 +551,15 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
+		#济派
+		custom_effect_tooltip = UPC_24_tt
+		custom_effect_tooltip = UPC_24_2_tt
+		hidden_effect = {
+			load_oob = UPC_Ji
 		}
+
+		}
+
 }
 	focus = {
 		id = CHI_UN_JNSTDTZ_31
@@ -511,6 +572,11 @@ focus_tree = {
 		y = 2
 
 	completion_reward={
+		#商团
+		set_country_flag = UPC_shangtuan_join
+		add_political_power = 100
+		custom_effect_tooltip = UPC_25_tt
+
 		}
 }
 	focus = {
@@ -524,6 +590,14 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		#商团将领
+
+		custom_effect_tooltip = UPC_26_tt
+		custom_effect_tooltip = UPC_26_2_tt
+		hidden_effect = {
+			load_oob = UPC_businessman
+		}
+		
 		}
 }
 	focus = {
@@ -537,6 +611,7 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
+		custom_effect_tooltip = UPC_27_tt
 		}
 }
 	focus = {
@@ -553,6 +628,7 @@ focus_tree = {
 		y = 4
 
 	completion_reward={
+		custom_effect_tooltip = UPC_28_tt
 		}
 }
 	focus = {
@@ -566,6 +642,7 @@ focus_tree = {
 		y = 7
 
 	completion_reward={
+		custom_effect_tooltip = UPC_30_tt
 		}
 }
 	focus = {
@@ -579,6 +656,27 @@ focus_tree = {
 		y = 7
 
 	completion_reward={
+		746 = {
+			add_building_construction = {
+				type = bunker
+				level =1
+				instant_build = yes 
+				province = 12350
+			}
+			add_building_construction = {
+				type = bunker
+				level =1
+				instant_build = yes 
+				province = 7159
+			}
+			add_building_construction = {
+				type = bunker
+				level =1
+				instant_build = yes 
+				province = 10377
+			}
+		}
+		
 		}
 }
 	focus = {
@@ -591,7 +689,7 @@ focus_tree = {
 		x = 21
 		y = 7
 
-	completion_reward={
+	completion_reward={custom_effect_tooltip = UPC_32_tt
 		}
 }
 	focus = {
@@ -605,6 +703,7 @@ focus_tree = {
 		y = 7
 
 	completion_reward={
+		custom_effect_tooltip = UPC_33_tt
 		}
 }
 	focus = {
@@ -617,6 +716,8 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
-
+		completion_reward={
+			add_ideas = UPC_use_country_ready_money
+			}
 	}
 }
