@@ -1,4 +1,5 @@
 focus_tree={
+	id = USA_1
 	country={
 		factor=0
 		modifier={
@@ -14,10 +15,7 @@ focus_tree={
 		y=0
 		cost=0.00
 		available={
-			date>1919.8.2
-		}
-		bypass={
-			date>1919.8.2
+			date > 1919.8.2
 		}
 	}
 	focus={
@@ -39,9 +37,6 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date>1919.8.27
-		}
-		bypass={
 			date > 1919.8.27
 		}
 		completion_reward={
