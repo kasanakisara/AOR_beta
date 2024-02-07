@@ -20,6 +20,12 @@ state={
 		add_core_of = USA
 		add_core_of = MXS
 	}
+	victory_points = {
+			10422 3
+		}
+		victory_points = {
+			4607 1
+		}
 
 	provinces={
 		1862 4521 4607 4736 4816 7756 7827 7879 10422 10591 12134 12399
