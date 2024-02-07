@@ -2,7 +2,7 @@
 state={
 	id=395
 	name="STATE_395"
-	manpower = 7630651
+	manpower = 6630651
 	state_category = megalopolis
 
 	history={
@@ -17,7 +17,12 @@ state={
 		victory_points = {
 			9450 30.0
 		}
-
+		victory_points = {
+			12312 5
+		}
+		victory_points = {
+			12697 10
+		}
 	}
 
 	provinces={
