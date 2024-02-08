@@ -5,8 +5,8 @@ ideas = {
 			always = yes
 		}
 			modifier = {
-			global_building_slots_factor = -0.3
-			industrial_capacity_factory = -0.45
+			global_building_slots_factor = -0.2
+			industrial_capacity_factory = -0.3
 			production_factory_max_efficiency_factor = -0.25
 	        production_factory_efficiency_gain_factor = -0.25
 			
