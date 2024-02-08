@@ -47,7 +47,14 @@ defined_text = {
 		}
 		localization_key = PER_country_information_loc
 	}
-	
+
+	text = {
+		trigger = {
+			TAG = USA
+		}
+		localization_key = PER_country_information_loc
+	}
+
 	text = {
 		trigger = {
 			TAG = ORA
