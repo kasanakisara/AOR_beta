@@ -1,5 +1,4 @@
 focus_tree={
-	id = USA_2
 	country={
 		factor=0
 		modifier={
@@ -9,7 +8,7 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id=White_House
+		id=USA_White_House
 		icon=GFX_goal_USA_White_House
 		x=12
 		y=0
@@ -18,18 +17,19 @@ focus_tree={
 			factor=1
 		}
 		available={
-			date > 1919.12.30}
+			date>1919.12.30
+		}
 		search_filters={
 		}
 		completion_reward={
 		}
 	}
 	focus={
-		id=Pick_up
+		id=USA_Pick_up
 		icon=GFX_goal_USA_Pick_up
 		x=2
 		y=3
-		prerequisite={focus=Beautiful_Country}
+		prerequisite={focus=USA_Beautiful_Country}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -41,11 +41,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Take_care
+		id=USA_Take_care
 		icon=GFX_goal_USA_Take_care
 		x=12
 		y=3
-		prerequisite={focus=Beautiful_Country}
+		prerequisite={focus=USA_Beautiful_Country}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -57,11 +57,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Beautiful_Country
+		id=USA_Beautiful_Country
 		icon=GFX_goal_USA_Beautiful_Country
 		x=12
 		y=1
-		prerequisite={focus=White_House}
+		prerequisite={focus=USA_White_House}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -73,11 +73,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Look_out
+		id=USA_Look_out
 		icon=GFX_goal_USA_Look_out
 		x=21
 		y=3
-		prerequisite={focus=Beautiful_Country}
+		prerequisite={focus=USA_Beautiful_Country}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -89,12 +89,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Compensate_them
+		id=USA_Compensate_them
 		icon=GFX_goal_USA_Compensate_them
 		x=0
 		y=4
-		prerequisite={focus=Pick_up}
-		mutually_exclusive={focus=Cleaning_again }
+		prerequisite={focus=USA_Pick_up}
+		mutually_exclusive={focus=USA_Cleaning_again }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -106,12 +106,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Cleaning_again
+		id=USA_Cleaning_again
 		icon=GFX_goal_USA_Cleaning_again
 		x=4
 		y=4
-		prerequisite={focus=Pick_up}
-		mutually_exclusive={focus=Compensate_them }
+		prerequisite={focus=USA_Pick_up}
+		mutually_exclusive={focus=USA_Compensate_them }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -123,11 +123,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Limit_the_Knights
+		id=USA_Limit_the_Knights
 		icon=GFX_goal_USA_Limit_the_Knights
 		x=0
 		y=6
-		prerequisite={focus=Compensate_them}
+		prerequisite={focus=USA_Compensate_them}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -139,11 +139,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Eradicating_the_Cancer 
-		icon=GFX_goal_USA_Eradicating_the_Cancer 
+		id=USA_Eradicating_the_Cancer
+		icon=GFX_goal_USA_Eradicating_the_Cancer
 		x=4
 		y=6
-		prerequisite={focus=Cleaning_again}
+		prerequisite={focus=USA_Cleaning_again}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -155,11 +155,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Negotiate
+		id=USA_Negotiate
 		icon=GFX_goal_USA_Negotiate
 		x=9
 		y=4
-		prerequisite={focus=Take_care}
+		prerequisite={focus=USA_Take_care}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -171,11 +171,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=imprisoned
+		id=USA_imprisoned
 		icon=GFX_goal_USA_imprisoned
 		x=9
 		y=5
-		prerequisite={focus=Negotiate}
+		prerequisite={focus=USA_Negotiate}
 		cost=2
 		ai_will_do={
 			factor=1
@@ -187,12 +187,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=money
+		id=USA_money
 		icon=GFX_goal_USA_money
 		x=8
 		y=6
-		prerequisite={focus=imprisoned}
-		mutually_exclusive={focus=container_gold }
+		prerequisite={focus=USA_imprisoned}
+		mutually_exclusive={focus=USA_container_gold }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -204,12 +204,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=container_gold
+		id=USA_container_gold
 		icon=GFX_goal_USA_container_gold
 		x=10
 		y=6
-		prerequisite={focus=imprisoned}
-		mutually_exclusive={focus=money }
+		prerequisite={focus=USA_imprisoned}
+		mutually_exclusive={focus=USA_money }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -221,11 +221,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Loans_are_issued
+		id=USA_Loans_are_issued
 		icon=GFX_goal_USA_Loans_are_issued
 		x=15
 		y=4
-		prerequisite={focus=Take_care}
+		prerequisite={focus=USA_Take_care}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -237,12 +237,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Morgan
+		id=USA_Morgan
 		icon=GFX_goal_USA_Morgan
 		x=14
 		y=5
-		prerequisite={focus=Loans_are_issued}
-		mutually_exclusive={focus=Mellon }
+		prerequisite={focus=USA_Loans_are_issued}
+		mutually_exclusive={focus=USA_Mellon }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -254,12 +254,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Mellon
+		id=USA_Mellon
 		icon=GFX_goal_USA_Mellon
 		x=16
 		y=5
-		prerequisite={focus=Loans_are_issued}
-		mutually_exclusive={focus=Morgan }
+		prerequisite={focus=USA_Loans_are_issued}
+		mutually_exclusive={focus=USA_Morgan }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -271,11 +271,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Raise_tariffs
+		id=USA_Raise_tariffs
 		icon=GFX_goal_USA_Raise_tariffs
 		x=15
 		y=6
-		prerequisite={focus=Morgan focus=Mellon }
+		prerequisite={focus=USA_Morgan focus=USA_Mellon }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -287,11 +287,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Promise_space
+		id=USA_Promise_space
 		icon=GFX_goal_USA_Promise_space
 		x=20
 		y=4
-		prerequisite={focus=Look_out}
+		prerequisite={focus=USA_Look_out}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -303,11 +303,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Rockefeller
+		id=USA_Rockefeller
 		icon=GFX_goal_USA_Rockefeller
 		x=20
 		y=6
-		prerequisite={focus=Promise_space}
+		prerequisite={focus=USA_Promise_space}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -319,11 +319,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Get_staff_support
+		id=USA_Get_staff_support
 		icon=GFX_goal_USA_Get_staff_support
 		x=25
 		y=4
-		prerequisite={focus=Look_out}
+		prerequisite={focus=USA_Look_out}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -335,12 +335,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Western_Eagles
+		id=USA_Western_Eagles
 		icon=GFX_goal_USA_Western_Eagles
 		x=23
 		y=6
-		prerequisite={focus=Get_staff_support}
-		mutually_exclusive={focus=the_east }
+		prerequisite={focus=USA_Get_staff_support}
+		mutually_exclusive={focus=USA_the_east }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -352,12 +352,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=the_east
+		id=USA_the_east
 		icon=GFX_goal_USA_the_east
 		x=27
 		y=6
-		prerequisite={focus=Get_staff_support}
-		mutually_exclusive={focus=Western_Eagles }
+		prerequisite={focus=USA_Get_staff_support}
+		mutually_exclusive={focus=USA_Western_Eagles }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -369,20 +369,21 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Finally
+		id=USA_Finally
 		icon=GFX_goal_USA_Finally
 		x=12
 		y=8
-		prerequisite={focus=Raise_tariffs}
-		prerequisite={focus=Limit_the_Knights}
-		prerequisite={focus=Eradicating_the_Cancer }
-		prerequisite={focus=money focus=container_gold focus=Western_Eagles focus=the_east }
+		prerequisite={focus=USA_Raise_tariffs}
+		prerequisite={focus=USA_Limit_the_Knights}
+		prerequisite={focus=USA_Eradicating_the_Cancer}
+		prerequisite={focus=USA_money focus=USA_container_gold focus=USA_Western_Eagles focus=USA_the_east }
 		cost=0
 		ai_will_do={
 			factor=1
 		}
 		available={
-		date > 1921.1.30}
+			date>1921.1.30
+		}
 		search_filters={
 		}
 		completion_reward={
