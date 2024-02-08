@@ -1,7 +1,7 @@
 ideas ={ 
 	country = {
 		GCL_the_Bannan = {
-			picture = GFX_idea_GCL_the_divided_nation
+			picture = GFX_idea_GCL_the_Bannan
 			allowed = { always = yes }
 			modifier = {
 			conscription = -0.01

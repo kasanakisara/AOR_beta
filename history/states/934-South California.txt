@@ -2,12 +2,16 @@ state = {
 	id = 934
 	name = "STATE_934"    #南加利福尼亚
 
+	resources={
+		oil=180 # was: 350
+		aluminium=8 # was: 14
+	}
+
 	history = {
 		owner = MXS
 		buildings = {
 			infrastructure = 1
 		}
-        
 		add_core_of = MXS
 		USA = {
 		add_state_claim = 934
