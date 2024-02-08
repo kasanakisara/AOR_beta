@@ -1,5 +1,4 @@
 focus_tree={
-	id = USA_1
 	country={
 		factor=0
 		modifier={
@@ -18,7 +17,7 @@ focus_tree={
 			date>1919.8.2
 		}
 		bypass={
-			date>1919.8.2
+			date>1919.8.1
 		}
 	}
 	focus={
@@ -42,7 +41,6 @@ focus_tree={
 		available={
 			date>1919.8.27
 		}
-
 		completion_reward={
 			country_event={
 				id=USA.10002
@@ -138,7 +136,6 @@ focus_tree={
 		available={
 			date>1919.8.7
 		}
-
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
@@ -215,7 +212,6 @@ focus_tree={
 		bypass={
 			date>1919.8.23
 		}
-
 	}
 	focus={
 		id=USA_Criticize
@@ -235,7 +231,7 @@ focus_tree={
 		id=USA_NewYear
 		icon=GFX_goal_USA_NewYear
 		x=11
-		y=8
+		y=9
 		prerequisite={focus=USA_EndTheCrisis}
 		prerequisite={focus=USA_West}
 		prerequisite={focus=USA_Criticize}
