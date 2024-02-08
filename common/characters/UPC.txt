@@ -14,7 +14,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_liangqichao
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = { jet_setter }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -33,7 +33,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_xiongxiling
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = { Patriotic_philanthropist }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -52,7 +52,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_zhangzongyuan
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = { Famoustax_experts }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -71,7 +71,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_wangyajiao
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = { Assassination_King }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -90,7 +90,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_tanghualong
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = { Constitutionalist_elites }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -109,7 +109,7 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_lijiannong
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { date > 1988.1.1}
 			traits = {Introspectionist}
 			ai_will_do = { factor = 1.000 }
 		}
@@ -128,7 +128,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_linchangmin
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+			UPC = {
+				has_country_flag = UPC_lixian_join
+			}
+		}
 			traits = { Clean_politician }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -147,8 +151,31 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_DingShiyi
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {UPC = {
+				has_country_flag = UPC_lixian_join
+			}}
 			traits = { Party_Affairs_Coordinator }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	UPC_FanYuanLian= { #范源濂
+	name = FanYuanLian
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/FanYuanLian.png
+				small = gfx/interface/ideas/FanYuanLian.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_FanYuanLian
+			allowed = { original_tag = UPC }
+			visible = {tag = UPC }
+			available= {UPC = {
+				has_country_flag = UPC_lixian_join
+			}}
+			traits = { Famous_educator }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -166,7 +193,9 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_huangqun
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {UPC = {
+				has_country_flag = UPC_KMT_join
+			}}
 			traits = { Guangfu_Society_Fellow }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -185,7 +214,9 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_zhangshizhao
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {UPC = {
+				has_country_flag = UPC_KMT_join
+			}}
 			traits = { Harmony_Establishment_Country }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -204,7 +235,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_chenjiageng
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+				UPC = {
+					has_country_flag = UPC_huaqiao_join
+				}
+			}
 			traits = { Overseas_Chinese_industrialist }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -223,7 +258,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_chenyouren
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+				UPC = {
+					has_country_flag = UPC_huaqiao_join
+				}
+			}
 			traits = { Overseas_Chinese_Diplomat }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -242,7 +281,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_zhangbuqing
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+				UPC = {
+					has_country_flag = UPC_huaqiao_join
+				}
+			}
 			traits = {Public_welfare_industrialist }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -261,7 +304,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_fanxudong
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= { 
+				UPC = {
+					has_country_flag = UPC_minzushiyejia_join
+				}
+			}
 			traits = {Chemical_Industry_Practitioner }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -280,7 +327,11 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_liyutang
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+				UPC = {
+					has_country_flag = UPC_minzushiyejia_join
+				}
+			}
 			traits = {War_industrialist }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -299,7 +350,13 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_chenlianzhong
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+
+					UPC = {
+						has_country_flag = UPC_shangtuan_join
+					}
+				
+			}
 			traits = {Famous_comprador }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -318,7 +375,12 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_lisongshao
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {
+				UPC = {
+					has_country_flag = UPC_shangtuan_join
+				}
+
+			}
 			traits = {Chief_Staff_Business_Group}
 			ai_will_do = { factor = 1.000 }
 		}
@@ -337,7 +399,9 @@ UPC_lianghongzhi = { #梁启超
 			idea_token = UPC_chenshaobai
 			allowed = { original_tag = UPC }
 			visible = {tag = UPC }
-			available= {tag = UPC date > 1988.1.1}
+			available= {UPC = {
+				has_country_flag = UPC_KMT_join
+			}}
 			traits = {Democratic_revolutionaries}
 			ai_will_do = { factor = 1.000 }
 		}
