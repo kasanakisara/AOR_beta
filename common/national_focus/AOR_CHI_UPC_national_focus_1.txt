@@ -67,6 +67,7 @@ focus_tree = {
 		set_country_flag = UPC_lixian_join
 		custom_effect_tooltip = UPC_Constitutionalists_join_tt
 		country_event = {id=UPC.4}
+		recruit_character = UPC_jiangfangzhen
 		}
 }
 	focus = {

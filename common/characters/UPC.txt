@@ -1,7 +1,7 @@
 characters = {
 ############联省#########
 UPC_lianghongzhi = { #梁启超
-	name = liangqichao
+	name = "梁启超"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/UPC/liangqichao.png
@@ -20,7 +20,7 @@ UPC_lianghongzhi = { #梁启超
 		}
 	}
 	UPC_xiongxiling= { #熊希龄
-	name = liangqichao
+	name = "熊希龄"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/UPC/xiongxiling.png
@@ -406,4 +406,470 @@ UPC_lianghongzhi = { #梁启超
 			ai_will_do = { factor = 1.000 }
 		}
 	}
+	########################将领########################
+	UPC_lantianwei = {#蓝天蔚
+	name = lantianwei
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/lantianwei.png
+			small = gfx/interface/ideas/lantianwei.png
+		}
+	}
+	field_marshal  = {
+		traits = {career_officer infantry_officer harsh_leader organizer}
+		skill = 3
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 3
+		legacy_id = -1
+		}
+	}
+	UPC_lizongren = {#李宗仁
+	name = lizongren
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/lizongren.png #图片
+			small = gfx/interface/ideas/lizongren.png
+		}
+	}
+	corps_commander = {
+		traits = {infantry_officer inflexible_strategist organizer}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 3
+		legacy_id = -1
+		}
+	}
+	UPC_huangxuchu = {#黄旭初
+	name = huangxuchu
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/huangxuchu.png
+			small = gfx/interface/ideas/huangxuchu.png
+		}
+	}
+	corps_commander = {
+		traits = {organizer skilled_staffer}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 4
+		legacy_id = -1
+		}
+	}
+	###共和派###
+	UPC_jiangfangzhen = {#蒋方震
+	name = huangxuchu
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/jiangfangzhen.png
+			small = gfx/interface/ideas/jiangfangzhen.png
+		}
+	}
+	advisor = {
+		cost = 100
+		slot = theorist
+		ledger = army
+		idea_token = UPC_jiangfangzhen
+		allowed = { original_tag = UPC }
+		visible = {tag = UPC }
+		#av********
+		traits = { army_regrouping_1 }
+		ai_will_do = { factor = 1.000 }
+	}
+	corps_commander = {
+		traits = {career_officer infantry_officer organizer skilled_staffer}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 3
+		legacy_id = -1
+		}
+	}
+	UPC_zhangshaozeng = {#张绍曾
+	name = zhangshaozeng
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/zhangshaozeng.png
+			small = gfx/interface/ideas/zhangshaozeng.png
+		}
+	}
+	corps_commander = {
+		traits = {career_officer trait_cautious}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+		legacy_id = -1
+		}
+	}
+	UPC_linshuqing = {#林述庆
+	name = linshuqing
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/zhangshaozeng.png
+			small = gfx/interface/ideas/zhangshaozeng.png
+		}
+	}
+	corps_commander = {
+		traits = {career_officer }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+		legacy_id = -1
+		}
+	}
+	UPC_jiangzungui = {#蒋尊簋
+	name = jiangzungui
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/jiangzungui.png
+			small = gfx/interface/ideas/jiangzungui.png
+		}
+	}
+	corps_commander = {
+		traits = {career_officer cavalry_officer}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+		legacy_id = -1
+		}
+	}
+	UPC_wangtianzong = {#王天纵
+	name = wangtianzong
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/wangtianzong.png
+			small = gfx/interface/ideas/wangtianzong.png
+		}
+	}
+	corps_commander = {
+		traits = {trait_reckless}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+		legacy_id = -1
+		}
+	}
+	UPC_litiancai = {#黎天才
+	name = litiancai
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/litiancai.png
+			small = gfx/interface/ideas/litiancai.png
+		}
+	}
+	corps_commander = {
+		traits = {career_officer}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+		legacy_id = -1
+		}
+	}
+	UPC_linhu = {#林虎
+	name = linhu
+	portraits = {
+		army =  {
+			large = gfx/leaders/UPC/linhu.png
+			small = gfx/interface/ideas/linhu.png
+		}
+	}
+	corps_commander = {
+		traits = {infantry_officer}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 2
+		legacy_id = -1
+		}
+	}
+
+	UPC_liuguxiang = {
+		name = "刘古香"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/liuguxiang.png
+				small = gfx/interface/ideas/liuguxiang.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { career_officer } # 职业军官
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_chenjiongming = {
+		name = "陈炯明"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/chenjiongming.png
+				small = gfx/interface/ideas/chenjiongming.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { infantry_officer war_hero organizer } # 步兵指挥官，战争英雄、组织专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_yeju = {
+		name = "叶举"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/yeju.png
+				small = gfx/interface/ideas/yeju.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { infantry_officer trait_reckless harsh_leader } # 步兵军官，鲁莽、严厉指挥官
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_zhongjingtang = {
+		name = "钟景棠"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/zhongjingtang.png
+				small = gfx/interface/ideas/zhongjingtang.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { infantry_officer trait_reckless } # 职业军官，步兵军官，鲁莽
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_yekaixin = {
+		name = "叶开鑫"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/yekaixin.png
+				small = gfx/interface/ideas/yekaixin.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { } # 无特定特质
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_zhaohengti = {
+		name = "赵恒惕"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/zhaohengti.png
+				small = gfx/interface/ideas/zhaohengti.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { career_officer harsh_leader cunning } # 职业军官、严厉将领
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_lurongting = {
+		name = "陆荣廷"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/lurongting.png
+				small = gfx/interface/ideas/lurongting.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { infantry_officer stealthy } # 陆军隐匿
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_chenbingkui = {
+		name = "陈炳焜"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/chenbingkui.png
+				small = gfx/interface/ideas/chenbingkui.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { old_guard trait_reckless } # 守旧派、鲁莽，保守派
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_tanhaoming = {
+		name = "谭浩明"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/tanhaoming.png
+				small = gfx/interface/ideas/tanhaoming.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { old_guard trait_reckless } # 守旧派，鲁莽，政治关联
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_maji = {
+		name = "马济"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/maji.png
+				small = gfx/interface/ideas/maji.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { political_advisor trait_reckless } # 政治关联，鲁莽
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_hongzhaolin = {
+		name = "洪兆麟"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/hongzhaolin.png
+				small = gfx/interface/ideas/hongzhaolin.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { trait_cautious old_guard } # 谨慎、保守派
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_morongxin = {
+		name = "莫荣新"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/morongxin.png
+				small = gfx/interface/ideas/morongxin.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { old_guard trait_reckless } # 守旧派、鲁莽
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
+	 
+	 UPC_shenhongying = {
+		name = "沈鸿英"
+		# 肖像文件路径，确保这些文件存在于相应的gfx路径下
+		portraits = {
+			army = {
+				large = gfx/leaders/UPC/shenhongying.png
+				small = gfx/interface/ideas/shenhongying.png
+			}
+		}
+		# 将领技能和特质
+		corps_commander = {
+			traits = { trait_reckless } # 鲁莽
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	 }
 }
