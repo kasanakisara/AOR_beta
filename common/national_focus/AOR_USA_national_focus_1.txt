@@ -42,9 +42,6 @@ focus_tree={
 		available={
 			date>1919.8.27
 		}
-		bypass={
-			date>1919.8.27
-		}
 
 		completion_reward={
 			country_event={
@@ -92,8 +89,7 @@ focus_tree={
 		cost=2.80
 		completion_reward={
 			add_timed_idea={
-				ide
-				a=USA_PlanOfOperationA
+				idea=USA_PlanOfOperationA
 				days=360
 			}
 		}
@@ -142,9 +138,7 @@ focus_tree={
 		available={
 			date>1919.8.7
 		}
-		bypass={
-			date>1919.8.7
-		}
+
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
@@ -218,9 +212,7 @@ focus_tree={
 		available={
 			date>1919.8.23
 		}
-		bypass={
-			date>1919.8.23
-		}
+
 	}
 	focus={
 		id=USA_Criticize
