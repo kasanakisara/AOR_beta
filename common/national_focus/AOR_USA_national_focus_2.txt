@@ -10,6 +10,7 @@ focus_tree={
 	default=no
 	focus={
 		id=White_House
+		icon=GFX_goal_USA_White_House
 		x=12
 		y=0
 		cost=0
@@ -25,6 +26,7 @@ focus_tree={
 	}
 	focus={
 		id=Pick_up
+		icon=GFX_goal_USA_Pick_up
 		x=2
 		y=3
 		prerequisite={focus=Beautiful_Country}
@@ -40,6 +42,7 @@ focus_tree={
 	}
 	focus={
 		id=Take_care
+		icon=GFX_goal_USA_Take_care
 		x=12
 		y=3
 		prerequisite={focus=Beautiful_Country}
@@ -55,6 +58,7 @@ focus_tree={
 	}
 	focus={
 		id=Beautiful_Country
+		icon=GFX_goal_USA_Beautiful_Country
 		x=12
 		y=1
 		prerequisite={focus=White_House}
@@ -70,6 +74,7 @@ focus_tree={
 	}
 	focus={
 		id=Look_out
+		icon=GFX_goal_USA_Look_out
 		x=21
 		y=3
 		prerequisite={focus=Beautiful_Country}
@@ -85,6 +90,7 @@ focus_tree={
 	}
 	focus={
 		id=Compensate_them
+		icon=GFX_goal_USA_Compensate_them
 		x=0
 		y=4
 		prerequisite={focus=Pick_up}
@@ -101,6 +107,7 @@ focus_tree={
 	}
 	focus={
 		id=Cleaning_again
+		icon=GFX_goal_USA_Cleaning_again
 		x=4
 		y=4
 		prerequisite={focus=Pick_up}
@@ -117,6 +124,7 @@ focus_tree={
 	}
 	focus={
 		id=Limit_the_Knights
+		icon=GFX_goal_USA_Limit_the_Knights
 		x=0
 		y=6
 		prerequisite={focus=Compensate_them}
@@ -132,6 +140,7 @@ focus_tree={
 	}
 	focus={
 		id=Eradicating_the_Cancer 
+		icon=GFX_goal_USA_Eradicating_the_Cancer 
 		x=4
 		y=6
 		prerequisite={focus=Cleaning_again}
@@ -147,6 +156,7 @@ focus_tree={
 	}
 	focus={
 		id=Negotiate
+		icon=GFX_goal_USA_Negotiate
 		x=9
 		y=4
 		prerequisite={focus=Take_care}
@@ -162,6 +172,7 @@ focus_tree={
 	}
 	focus={
 		id=imprisoned
+		icon=GFX_goal_USA_imprisoned
 		x=9
 		y=5
 		prerequisite={focus=Negotiate}
@@ -177,6 +188,7 @@ focus_tree={
 	}
 	focus={
 		id=money
+		icon=GFX_goal_USA_money
 		x=8
 		y=6
 		prerequisite={focus=imprisoned}
@@ -193,6 +205,7 @@ focus_tree={
 	}
 	focus={
 		id=container_gold
+		icon=GFX_goal_USA_container_gold
 		x=10
 		y=6
 		prerequisite={focus=imprisoned}
@@ -209,6 +222,7 @@ focus_tree={
 	}
 	focus={
 		id=Loans_are_issued
+		icon=GFX_goal_USA_Loans_are_issued
 		x=15
 		y=4
 		prerequisite={focus=Take_care}
@@ -224,6 +238,7 @@ focus_tree={
 	}
 	focus={
 		id=Morgan
+		icon=GFX_goal_USA_Morgan
 		x=14
 		y=5
 		prerequisite={focus=Loans_are_issued}
@@ -240,6 +255,7 @@ focus_tree={
 	}
 	focus={
 		id=Mellon
+		icon=GFX_goal_USA_Mellon
 		x=16
 		y=5
 		prerequisite={focus=Loans_are_issued}
@@ -256,6 +272,7 @@ focus_tree={
 	}
 	focus={
 		id=Raise_tariffs
+		icon=GFX_goal_USA_Raise_tariffs
 		x=15
 		y=6
 		prerequisite={focus=Morgan focus=Mellon }
@@ -271,6 +288,7 @@ focus_tree={
 	}
 	focus={
 		id=Promise_space
+		icon=GFX_goal_USA_Promise_space
 		x=20
 		y=4
 		prerequisite={focus=Look_out}
@@ -286,6 +304,7 @@ focus_tree={
 	}
 	focus={
 		id=Rockefeller
+		icon=GFX_goal_USA_Rockefeller
 		x=20
 		y=6
 		prerequisite={focus=Promise_space}
@@ -301,6 +320,7 @@ focus_tree={
 	}
 	focus={
 		id=Get_staff_support
+		icon=GFX_goal_USA_Get_staff_support
 		x=25
 		y=4
 		prerequisite={focus=Look_out}
@@ -316,6 +336,7 @@ focus_tree={
 	}
 	focus={
 		id=Western_Eagles
+		icon=GFX_goal_USA_Western_Eagles
 		x=23
 		y=6
 		prerequisite={focus=Get_staff_support}
@@ -332,6 +353,7 @@ focus_tree={
 	}
 	focus={
 		id=the_east
+		icon=GFX_goal_USA_the_east
 		x=27
 		y=6
 		prerequisite={focus=Get_staff_support}
@@ -348,6 +370,7 @@ focus_tree={
 	}
 	focus={
 		id=Finally
+		icon=GFX_goal_USA_Finally
 		x=12
 		y=8
 		prerequisite={focus=Raise_tariffs}
