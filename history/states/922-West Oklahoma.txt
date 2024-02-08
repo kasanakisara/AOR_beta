@@ -16,6 +16,10 @@ state = {
 			air_base = 2
 		}
 
+		1921.5.1 = {
+			set_demilitarized_zone = yes
+		}
+
 		add_core_of = USA
 		add_core_of = MXS
 	}
