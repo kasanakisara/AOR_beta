@@ -1,6 +1,5 @@
-﻿capital = 292
+﻿capital = 962
 
-#oob = "SAU_1936"
 
 # Starting tech
 set_technology = {
@@ -14,27 +13,10 @@ if = {
 	}
 	set_technology = { camelry = 1 }
 }
-set_research_slots = 1
-set_convoys = 5
-set_convoys = 50
-set_stability = 0.75
 1939.1.1 = {
-	
+
 	add_political_power = 1198
 	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	#oob = "SAU_1939"
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1
@@ -67,7 +49,9 @@ set_stability = 0.75
 		dispersed_industry2 = 1
 	}
 }
-
+set_research_slots = 1
+set_convoys = 50
+set_stability = 0.75
 set_politics = {
 	ruling_party = Absolutism
 	last_election = "1936.1.1"
@@ -78,11 +62,11 @@ set_popularities = {
 	Absolutism = 100
 }
 create_country_leader = {
-	name = "Ibn Saud"
+	name = "Saud al rasheed"
 	desc = ""
-	picture = "Ibn_Saud.dds"
+	picture = "Saud al rasheed.dds"
 	expire = "1965.1.1"
-	ideology = Absolutism
+	ideology = islamsocialism
 	traits = {
 	}
 }

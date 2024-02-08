@@ -5,6 +5,7 @@ state={
 		owner = ARA
 		add_claim_by = SAU
 		add_core_of = ARA
+		add_core_of = JSR
 		victory_points = {
 			12813 4
 			}

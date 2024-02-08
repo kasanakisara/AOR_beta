@@ -7,6 +7,7 @@ state={
 	history={
 		owner = ARA
 		add_core_of = ARA
+		add_core_of = JSR
 	}
 	manpower=65645
 	buildings_max_level_factor=1.000
