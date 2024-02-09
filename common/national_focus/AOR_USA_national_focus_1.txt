@@ -8,8 +8,8 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id=USA_WhiteHouseReport
-		icon=GFX_goal_USA_WhiteHouseReport
+		id = USA_WhiteHouseReport
+		icon = GFX_goal_USA_WhiteHouseReport
 		x=11
 		y=0
 		cost=0.00
@@ -18,6 +18,8 @@ focus_tree={
 		}
 		bypass={
 			date>1919.8.1
+		}
+		completion_reward={
 		}
 	}
 	focus={
