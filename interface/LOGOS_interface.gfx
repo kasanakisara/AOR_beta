@@ -2088,4 +2088,119 @@ spriteType = {
  name = "GFX_goal_USA_NewYear"
  texturefile = "gfx/interface/goals/USA_NewYear.png"
 }
+
+###1920-1921美国###
+spriteType = {
+name = "GFX_goal_USA_white_house"
+texturefile = "gfx/interface/USA_USA_White_House.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Pick_up"
+texturefile = "gfx/interface/goals/USA_Pick_up.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Take_care"
+texturefile = "gfx/interface/goals/USA_Take_care.png"
+}		
+spriteType = {
+name = "GFX_goal_USA_Beautiful_Country"
+texturefile = "gfx/interface/goals/USA_Beautiful_Country.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Look_out"
+texturefile = "gfx/interface/goals/USA_Look_out.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Compensate_them"
+texturefile = "gfx/interface/goals/USA_Compensate_them.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Cleaning_again"
+texturefile = "gfx/interface/goals/USA_Cleaning_again.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Limit_the_Knights"
+texturefile = "gfx/interface/goals/USA_Limit_the_Knights.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Eradicating_the_Cancer"
+texturefile = "gfx/interface/goals/USA_Eradicating_the_Cancer.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Negotiate"
+texturefile = "gfx/interface/goals/USA_Negotiate.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_imprisoned"
+texturefile = "gfx/interface/goals/USA_imprisoned.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_money"
+texturefile = "gfx/interface/goals/USA_money.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_container_gold"
+texturefile = "gfx/interface/goals/USA_container_gold.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Loans_are_issued"
+texturefile = "gfx/interface/goals/USA_Loans_are_issued.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Morgan"
+texturefile = "gfx/interface/goals/USA_Morgan.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Mellon"
+texturefile = "gfx/interface/goals/USA_Mellon.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Raise_tariffs"
+texturefile = "gfx/interface/goals/USA_Raise_tariffs.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Promise_space"
+texturefile = "gfx/interface/goals/USA_Promise_space.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Rockefeller"
+texturefile = "gfx/interface/goals/USA_Rockefeller.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Get_staff_support"
+texturefile = "gfx/interface/goals/USA_Get_staff_support.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Western_Eagles"
+texturefile = "gfx/interface/goals/USA_Western_Eagles.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_the_east"
+texturefile = "gfx/interface/goals/USA_the_east.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Finally"
+texturefile = "gfx/interface/goals/USA_Finally.png"
+}
 }
