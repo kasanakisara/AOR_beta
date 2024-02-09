@@ -4258,7 +4258,7 @@ spriteType = {
 
  ########美国1920一1921阶段
  spriteType = {
-		name = "GFX_goal_USA_white_house_shine"
+		name = "GFX_goal_USA_White_House_shine"
 		texturefile = "gfx/interface/goals/USA_White_House.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
