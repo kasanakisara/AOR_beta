@@ -1223,3 +1223,15 @@ news_event = { #新西兰新领导人
 		name = AOR_news.63.a
 	}
 }
+news_event = { #老美内战寄！
+	id = AOR_news.64
+	title = AOR_news.64.t
+	desc = AOR_news.64.d
+	picture = GFX_AOR_news.64_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.64.a
+	}
+}
