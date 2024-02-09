@@ -9,8 +9,8 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id=USA_White_House
-		icon=GFX_goal_USA_White_House
+		id = USA_White_House
+		icon = GFX_goal_USA_White_House
 		x=12
 		y=0
 		cost=0
@@ -20,8 +20,7 @@ focus_tree={
 		available={
 			date>1919.12.30
 		}
-		search_filters={
-		}
+
 		completion_reward={
 		}
 	}
