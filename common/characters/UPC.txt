@@ -872,4 +872,146 @@ UPC_lianghongzhi = { #梁启超
 			legacy_id = -1
 		}
 	 }
+	 UPC_lifulin = {
+		name = "李福林"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/lifulin.dds"
+				small = "gfx/interface/ideas/lifulin.dds"
+			}
+		}
+		corps_commander = {
+			traits = { } # 无特定特质
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	UPC_chenlianbo = {
+		name = "陈廉伯"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/chenlianbo.dds"
+				small = "gfx/interface/ideas/chenlianbo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { } # 无特定特质
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	UPC_dengjiashi = {
+		name = "邓介石"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/dengjiashi.dds"
+				small = "gfx/interface/ideas/dengjiashi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { } # 无特定特质
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	UPC_chengongshu = {
+		name = "陈恭绶"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/chengongshu.dds"
+				small = "gfx/interface/ideas/chengongshu.dds"
+			}
+		}
+		corps_commander = {
+			traits = { } # 无特定特质
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+  	 	}
+	}
+	UPC_longjiguang = {
+		name = "龙济光"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/longjiguang.dds"
+				small = "gfx/interface/ideas/longjiguang.dds"
+			}
+		}
+		corps_commander = {
+			traits = { rash } # 鲁莽
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	 }
+	 
+	 UPC_longjinguang = {
+		name = "龙觐光"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/longjinguang.dds"
+				small = "gfx/interface/ideas/longjinguang.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected } # 政治关联
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	 }
+	 
+	 UPC_maurice_bazelaire_ruppierre = {
+		name = "莫里斯·巴泽莱尔·鲁皮埃尔"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/maurice_bazelaire_ruppierre.dds"
+				small = "gfx/interface/ideas/maurice_bazelaire_ruppierre.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer } # 职业军官
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	 }
+	 
+	 UPC_charles_berger = {
+		name = "查尔斯·伯格"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UPC/charles_berger.dds"
+				small = "gfx/interface/ideas/charles_berger.dds"
+			}
+		}
+		corps_commander = {
+			traits = { military_theorist } # 军事理论家
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	 }
 }
