@@ -76,10 +76,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 41
-	FRE_democratic = 20
-	SOC_democratic = 15
-	AUT_democratic = 12
+	CON_democratic = 46
+	FRE_democratic = 17
+	SOC_democratic = 12
+	AUT_democratic = 13
 	Fascism = 7
 	Special = 5
 }

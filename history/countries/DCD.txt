@@ -1,5 +1,9 @@
 ﻿
 capital = 906
+
+recruit_character = 陈宦
+recruit_character = 熊克武
+
 load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 if = {
 	limit = { has_dlc = "Man the Guns" }

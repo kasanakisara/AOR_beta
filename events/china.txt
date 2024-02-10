@@ -35,7 +35,7 @@ country_event = {
 	}
 }
 
-#袁世凯死啦#联省,KMT,北京政府,直系军阀
+#袁世凯死啦#联省,KMT,北京政府,直系军阀,四川军阀
 country_event = {
 	id = CHI.4
 	title = CHI.4.t
@@ -72,6 +72,14 @@ country_event = {
 		add_political_power = 75
 		NAN = {
 			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = CHI.4.f
+		add_political_power = 75
+		DCD = {
+			change_tag_from = ROOT
+			set_cosmetic_tag = DCD_1
 		}
 	}
 }
@@ -198,8 +206,8 @@ country_event = {
 	desc = CHI.10.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.1.29
-		tag = CHI
+		date > 1922.2.1
+		tag = DCD
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -214,9 +222,11 @@ country_event = {
 		PRC = {
 			change_tag_from = ROOT
 		}
-	}
-	option = {
-		name = CHI.10.b
+		hidden_effect = {
+			DCD = {
+				drop_cosmetic_tag = yes
+			}
+		}
 	}
 }
 #联省宣言(联省改名）
