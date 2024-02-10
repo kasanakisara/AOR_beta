@@ -914,14 +914,23 @@
  ITA_military_party:0 "国防指挥部-君主派"
  ITA_king_party:0 "君权国家党-右翼"
 #########USA###########
-USA_FRE_democratic_party:0 "美国洋基党-自由派" #洋基党
-USA_CON_democratic_party:0 "迪克西党-缓则派" #迪克西党
-USA_SOC_democratic_party:0 "美国联邦统一党-自由派" #社民
+USA_FRE_democratic_party:0 "美国洋基党-自由派"
+USA_CON_democratic_party:0 "迪克西党-缓则派"
+USA_SOC_democratic_party:0 "美国联邦统一党-自由派"
 USA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
-USA_AGR_socialism_party:0 "美利坚农工党"
+USA_AGR_socialism_party:0 "美利坚左翼阵线"
 USA_AUT_democratic_party:0 "迪克西党-民族强硬派"
-USA_Absolutism_party:0 "美利坚独立同盟"
-CSA_CON_democratic_party:0 "南方迪克西党" 
+USA_fascio_party:0 "劳动骑士团(WORK)-先锋运动"
+USA_militarism_party:0 "劳动骑士团(WORK)-新骑士运动"
+USA_new_ref_party:0 "劳动骑士团(LABOR)-左翼阵线"
+USA_Absolutism_party:0 "美利坚大同盟党"
+CSA_CON_democratic_party:0 "南方迪克西党-保守派" 
+CSA_FRE_democratic_party:0 "南方迪克西党-自由派"
+CSA_SOC_democratic_party:0 "南方进步同盟-进步派"
+CSA_AUT_democratic_party:0 "南方迪克西党-民族强硬派"
+CSA_Fascism_party:0 "南方迪克西党-民族右派"
+CSA_Special_party:0 "极端党派"
+CSA_nationalism_party:0 "极端党派"
 ######Brazil#######
 BRA_Absolutism_party:0"巴西统一党"
 ######HSP#######
