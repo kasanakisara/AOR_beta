@@ -182,8 +182,10 @@ CHI_civil_war_2 = {
 				ideology = Absolutism
 				popularity = 100
 			}
-			transfer_state = 330
 			330 = {set_demilitarized_zone=yes}
+			transfer_state = 330
+			transfer_state = 930
+			add_state_core = 930
 			add_state_core = 330
 			add_manpower = 10000
 		}
@@ -234,13 +236,79 @@ CHI_civil_war_3 = {
 		618 = {set_demilitarized_zone=yes}
 		760= {set_demilitarized_zone=yes}
 		329 = {set_demilitarized_zone=yes}
-
 		add_state_core = 287
 		add_state_core = 617
 		add_state_core = 618
 		add_state_core = 760
 		add_state_core = 329
 		add_manpower = 10000
+
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 917
+				}
+			}
+			SIK = {
+				transfer_state = 917
+				add_state_core = 917
+			}
+		}
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 586
+				}
+			}
+			SIK = {
+				transfer_state = 586
+				add_state_core = 586
+			}
+		}
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 918
+				}
+			}
+			SIK = {
+				transfer_state = 918
+				add_state_core = 918
+			}
+		}
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 654
+				}
+			}
+			SIK = {
+				transfer_state = 654
+				add_state_core = 654
+			}
+		}
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 916
+				}
+			}
+			SIK = {
+				transfer_state = 916
+				add_state_core = 916
+			}
+		}
+		if = {
+			limit ={
+				CHI = {
+					controls_state = 920
+				}
+			}
+			SIK = {
+				transfer_state = 920
+				add_state_core = 920
+			}
+		}
 	}
 	SHX = {
 		transfer_state = 615
