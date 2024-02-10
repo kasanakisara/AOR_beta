@@ -36,7 +36,7 @@ ideas = {
 	    	allowed = { always = yes }
 	    	modifier = {
 				stability_factor = -0.15
-				CONSCRIPTION_FACTOR = -0.01
+				CONSCRIPTION_FACTOR = -0.2
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
 				consumer_goods_factor = -0.5
