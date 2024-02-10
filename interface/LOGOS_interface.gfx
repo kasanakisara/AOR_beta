@@ -2199,8 +2199,27 @@ name = "GFX_goal_USA_the_east"
 texturefile = "gfx/interface/goals/USA_the_east.png"
 }
 
-spriteType = {
-name = "GFX_goal_USA_Finally"
-texturefile = "gfx/interface/goals/USA_Finally.png"
-}
+    spriteType = {
+        name = "GFX_goal_USA_Finally"
+        texturefile = "gfx/interface/goals/USA_Finally.png"
+    }
+
+	#######################梵蒂冈国策
+	spriteType = {
+        name = "GFX_goals_VAT_Hyperspace_Travel"
+        texturefile = "gfx/interface/goals/VAT_Hyperspace_Travel.png"
+    }
+	spriteType = {
+        name = "GFX_goals_VAT_choose_logos"
+        texturefile = "gfx/interface/goals/VAT_choose_logos.png"
+    }
+	spriteType = {
+        name = "GFX_goals_VAT_1919"
+        texturefile = "gfx/interface/goals/VAT_1919.dds"
+    }
+	spriteType = {
+        name = "GFX_goals_VAT_Prayerfully"
+        texturefile = "gfx/interface/goals/VAT_Prayerfully.dds"
+    }
+
 }
