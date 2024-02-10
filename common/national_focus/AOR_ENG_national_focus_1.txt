@@ -1,4 +1,4 @@
-﻿focus_tree={
+focus_tree={
 	id=ENG_National_focus_2
 	country={
 		factor=0
@@ -265,7 +265,7 @@
 		available_if_capitulated=yes
 		search_filters={
 		}
-		completion_reward={
+		completion_reward={##填充，记得写效果
 			country_event = {id=ENG.24}
 			add_to_variable = {
 				ENG_Current_Vitality_Var = 0.25
@@ -441,7 +441,8 @@
 		icon=AOR_goals_huifuyuanqi
 		x=50
 		y=8
-		prerequisite={focus=AOR_ENG_gongshizhidugexin focus=AOR_ENG_chilunbutingzhuan focus=AOR_ENG_yaoqingqiyejinzhuzhimindi }
+		prerequisite={
+			focus=AOR_ENG_gongshizhidugexin focus=AOR_ENG_chilunbutingzhuan focus=AOR_ENG_yaoqingqiyejinzhuzhimindi }
 		cost=5
 		ai_will_do={
 			factor=1
@@ -516,6 +517,7 @@
 			add_to_variable = {
 				ENG_National_Support_Var = 0.5
 			}
+			kailuo_kaipudun = yes
 		}
 	}
 	focus={
@@ -543,6 +545,7 @@
 			}
 			remove_manpower = 10000
 			add_ideas = ENG_wendingfeizhou
+			kailuo_kaipudun = yes
 		}
 	}
 	focus={
@@ -554,6 +557,9 @@
 		cost=5
 		ai_will_do={
 			factor=1
+		}
+		allow_branch = {
+			has_country_flag = c_start
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -588,9 +594,12 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {
+				id = ENG.7
+			}
 		}
 	}
-	focus={
+	focus={ #这一段国策无效果
 		id=AOR_ENG_tinghaole_fuade
 		icon=AOR_goals_tinghaole_fuade
 		x=60
@@ -620,6 +629,12 @@
 		search_filters={
 		}
 		completion_reward={
+			SAF = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = ENG_SAF_modifiers
+				}
+			}
 		}
 	}
 	focus={
@@ -637,7 +652,7 @@
 		available_if_capitulated=yes
 		search_filters={
 		}
-		completion_reward={
+		completion_reward={#还剩点
 		}
 	}
 	focus={
@@ -687,6 +702,9 @@
 		search_filters={
 		}
 		completion_reward={
+			country_event = {
+				id = ENG.8
+			}
 		}
 	}
 	focus={
@@ -1455,7 +1473,7 @@
 	focus={  
 		id=AOR_ENG_weiyuanhuijihua  
 		icon=AOR_goals_weiyuanhuijihua  
-		x=84  
+		x=76  
 		y=1  
 		cost=10  
 		ai_will_do={  

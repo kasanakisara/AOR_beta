@@ -88,7 +88,7 @@ country_event = { #开工！
 	}
 }
 
-country_event = { #希望，已然湮灭；战争，接踵而至
+country_event = { #会谈
 	id = ENG.7
 	title = ENG.7.t
 	desc = ENG.7.d
@@ -102,7 +102,7 @@ country_event = { #希望，已然湮灭；战争，接踵而至
 	}
 }
 
-country_event = { #永世的奴役
+country_event = { #大变化
 	id = ENG.8
 	title = ENG.8.t
 	desc = ENG.8.d

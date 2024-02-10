@@ -106,3 +106,28 @@ Enable_ENG_Lick_wounds_effect = {
 		Compute_ENG_Lick_wounds_dynamic_modifier = yes
 	}
 }
+
+
+#启动2c计划
+kailuo_kaipudun = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = wendingfeizhou
+				has_country_flag = chubanaiguoduwu
+			}
+			set_country_flag = wendingfeizhou 
+			set_country_flag = c_start
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = wendingfeizhou
+		}
+		set_country_flag = chubanaiguoduwu
+		mark_focus_tree_layout_dirty = yes
+	}
+	esle = {
+		set_country_flag = wendingfeizhou 
+	}
+}
