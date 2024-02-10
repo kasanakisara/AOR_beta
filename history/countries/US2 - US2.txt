@@ -79,7 +79,7 @@ set_popularities = {
 
 create_country_leader = {
 	name ="John_Joseph_Pershing"
-	desc = ""
+	desc = "John_Joseph_Pershing_desc"
 	picture = "gfx/leaders/US2/Joseph_Pershing.png"
 	expire = "1953.3.1"
 	ideology = miliciagov

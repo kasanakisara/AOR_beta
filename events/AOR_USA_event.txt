@@ -278,7 +278,7 @@ country_event = {
 			USA = {
 				set_politics = {ruling_party = FRE_democratic}
 				create_country_leader = {
-				name = "Warren Gamaliel Harding"
+				name = "Warren_Gamaliel_Harding"
 				desc = "POLITICS_Warren_Gamaliel_DESC"
 				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
