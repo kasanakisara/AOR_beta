@@ -4992,4 +4992,129 @@ spriteType = {
      }
      legacy_lazy_load = no
  }
+
+ spriteType = {
+  name = "GFX_goals_VAT_Hyperspace_Travel_shine"
+  texturefile = "gfx/interface/goals/VAT_Hyperspace_Travel.png"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+   animationmaskfile = "gfx/interface/goals/VAT_Hyperspace_Travel.png"
+   animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+   animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+   animationlooping = no   
+   animationtime = 0.75    
+   animationdelay = 0   
+   animationblendmode = "add"      
+   animationtype = "scrolling"      
+   animationrotationoffset = { x = 0.0 y = 0.0 }
+   animationtexturescale = { x = 1.0 y = 1.0 } 
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/VAT_Hyperspace_Travel.png"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+    animationrotation = 90.0 
+    animationlooping = no   
+    animationtime = 0.75    
+    animationdelay = 0   
+    animationblendmode = "add"       
+    animationtype = "scrolling"      
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.8 } 
+   }
+   legacy_lazy_load = no
+  }
+  spriteType = {
+		name = "GFX_goals_VAT_choose_logos_shine"
+		texturefile = "gfx/interface/goals/VAT_choose_logos.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/VAT_choose_logos.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/VAT_choose_logos.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+  }
+  spriteType = {
+		name = "GFX_goals_VAT_1919_shine"
+		texturefile = "gfx/interface/goals/VAT_1919.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/VAT_1919.dds"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/VAT_1919.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+  }
+  spriteType = {
+		name = "GFX_goals_VAT_Prayerfully_shine"
+		texturefile = "gfx/interface/goals/VAT_Prayerfully.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/VAT_Prayerfully.dds"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/VAT_Prayerfully.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+ }
 }

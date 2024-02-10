@@ -9,8 +9,8 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id=Hyperspace_Travel
-		icon=GFX_goals_VAT_Hyperspace_Travel
+		id = Hyperspace_Travel
+		icon = GFX_goals_VAT_Hyperspace_Travel
 		x=6
 		y=0
 		cost=1
@@ -18,8 +18,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		}
 	}
