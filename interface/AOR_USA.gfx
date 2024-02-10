@@ -34,4 +34,13 @@ spriteTypes = {
 		name = "GFX_idea_USA_dazhanzhimo"
 		texturefile = "gfx/interface/ideas/USA_dazhanzhimo.png"
     }
+
+	    spriteType = {
+		name = "GFX_USA.10_pic"
+		texturefile = "gfx/event_pictures/USA.10_pic.png"
+	}
+	 spriteType = {
+		name = "GFX_USA.100_pic"
+		texturefile = "gfx/event_pictures/USA.100_pic.png"
+	}
 }

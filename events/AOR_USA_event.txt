@@ -224,7 +224,7 @@ country_event = {
 	id = USA.100 #南北战争！
 	title = USA.100.t
 	desc = USA.100.d
-	picture = GFX_USA_event_100
+	picture = GFX_USA_100_pic
 	trigger = {
 	    date > 1921.6.5
 		tag = USA
@@ -279,7 +279,7 @@ country_event = {
 				set_politics = {ruling_party = FRE_democratic}
 				create_country_leader = {
 				name = "Warren_Gamaliel_Harding"
-				desc = "POLITICS_Warren_Gamaliel_DESC"
+				desc = "Warren_Gamaliel_Harding_desc"
 				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
 				ideology = liberalism
