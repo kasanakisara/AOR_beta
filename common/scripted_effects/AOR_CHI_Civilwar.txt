@@ -55,6 +55,21 @@ CHI_civil_war_1 = {
 		news_event = {
 			id = AOR_news.30
 		}
+		DCD = { #四川军阀
+		set_cosmetic_tag = DCD_1
+	    	transfer_state = 605
+	    	transfer_state = 906
+	    	transfer_state = 908
+	    	transfer_state = 753
+	    	transfer_state = 751
+	    	transfer_state = 434
+			add_state_core = 605
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
+		}
 		UPC = {
 			set_cosmetic_tag = UPC_1
 			transfer_state = 593
@@ -150,7 +165,7 @@ CHI_civil_war_1 = {
 	}
 
 }
-CHI_civil_war_2  = {
+CHI_civil_war_2 = {
 	hidden_effect = {
 		set_autonomy = {
 			target = MON
@@ -285,7 +300,8 @@ CHI_civil_war_5 = {
 		908 = { set_demilitarized_zone = no }
 		751 = { set_demilitarized_zone = no }
 		605 = { set_demilitarized_zone = no }
-		PRC = {
+
+		PRC = { #共产党
 			transfer_state = 605
 			add_state_core = 605
 			add_manpower = 10000
