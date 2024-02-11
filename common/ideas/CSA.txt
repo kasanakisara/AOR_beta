@@ -19,7 +19,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = -0.2
 				min_export = 0.1
 				trade_laws_cost_factor = 0.5
 			}
