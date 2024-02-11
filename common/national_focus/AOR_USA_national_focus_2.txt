@@ -374,8 +374,7 @@ focus_tree={
 		x=12
 		y=8
 		prerequisite={focus=USA_Raise_tariffs}
-		prerequisite={focus=USA_Limit_the_Knights}
-		prerequisite={focus=USA_Eradicating_the_Cancer}
+		prerequisite={focus=USA_Limit_the_Knights focus=USA_Eradicating_the_Cancer }
 		prerequisite={focus=USA_money focus=USA_container_gold focus=USA_Western_Eagles focus=USA_the_east }
 		cost=0
 		ai_will_do={
