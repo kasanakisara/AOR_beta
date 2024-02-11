@@ -1,4 +1,4 @@
-﻿capital = 448
+﻿capital = 451
 
 # Starting tech
 set_technology = {
@@ -64,7 +64,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-Absolutism = 100	
+Absolutism = 50	
+ISL_democratic = 50
+}
+
+create_country_leader = {
+	name = "Omar_al-Mokhtar"
+	desc = ""
+	picture = GFX_portrait_Omar_al-Mokhtar
+	ideology = Absolutism
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -88,7 +99,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Idris Senussi"
+	name = "Omar_al-Mokhtar" ###Idris Senussi
 	desc = ""
 	picture = GFX_portrait_Idris_Senussi
 	ideology = despotism
