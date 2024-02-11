@@ -311,10 +311,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = CHI.15
+	id = CHI.15 #乙末西征
 	title = CHI.15.t
 	desc = CHI.15.d
-	picture = GFX_Portrait_of_Tirpitz
+	picture = GFX_AOR_chi_yimoxizheng
 	trigger = {
 		date > 1919.10.15
 		tag = CHI
