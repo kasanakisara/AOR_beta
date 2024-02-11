@@ -2160,13 +2160,13 @@ texturefile = "gfx/interface/goals/USA_Loans_are_issued.png"
 }
 
 spriteType = {
-name = "GFX_goal_USA_Morgan"
-texturefile = "gfx/interface/goals/USA_Morgan.png"
+name = "GFX_goal_USA_Morgan_idea"
+texturefile = "gfx/interface/goals/USA_Morgan_idea.png"
 }
 
 spriteType = {
-name = "GFX_goal_USA_Mellon"
-texturefile = "gfx/interface/goals/USA_Mellon.png"
+name = "GFX_goal_USA_Mellon_idea"
+texturefile = "gfx/interface/goals/USA_Mellon_idea.png"
 }
 
 spriteType = {

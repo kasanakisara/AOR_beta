@@ -237,8 +237,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_Morgan
-		icon=GFX_goal_USA_Morgan
+		id=USA_Morgan_idea
+		icon=GFX_goal_USA_Morgan_idea
 		x=14
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
@@ -254,8 +254,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_Mellon
-		icon=GFX_goal_USA_Mellon
+		id=USA_Mellon_idea
+		icon=GFX_goal_USA_Mellon_idea
 		x=16
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
