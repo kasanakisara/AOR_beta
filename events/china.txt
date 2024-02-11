@@ -94,7 +94,6 @@ country_event = {
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
 	immediate = {
-		set_country_flag = chi.new.year
 	}
 	option = {
 		name = CHI.5.a

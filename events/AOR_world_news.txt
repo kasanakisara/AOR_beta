@@ -1151,7 +1151,7 @@ news_event = { #墨西哥内战终息
 	option = {
 		name = AOR_news.61.a
 	}
-
+}
 
 news_event = { #澳大利亚1919选举
 	id = AOR_news.590
@@ -1233,5 +1233,29 @@ news_event = { #老美内战寄！
 
 	option = {
 		name = AOR_news.64.a
+	}
+}
+news_event = { #民国新时代
+	id = AOR_news.65
+	title = AOR_news.65.t
+	desc = AOR_news.65.d
+	picture = GFX_AOR_news.65_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.65.a
+	}
+}
+news_event = { #庚申新年
+	id = AOR_news.66
+	title = AOR_news.66.t
+	desc = AOR_news.66.d
+	picture = GFX_AOR_news.66_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.66.a
 	}
 }
