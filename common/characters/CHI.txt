@@ -44,7 +44,7 @@ characters = {
 	    		small = GFX_portrait_xushuzheng_small
 	    	}
 	    }
-	    field_marshal = {
+	    corps_commander = {
     		traits = {  career_officer politically_connected organizer harsh_leader infantry_officer }
 	    	skill = 3
 	    	attack_skill = 4
@@ -74,7 +74,7 @@ characters = {
 	    		small = GFX_portrait_leyunpeng_small
 	    	}
 	    }
-	    field_marshal = {
+	    corps_commander = {
 	    	traits = {  old_guard  }
 	    	skill = 2
 	    	attack_skill = 3
@@ -98,7 +98,7 @@ characters = {
 			small = GFX_portrait_wuguangxin_small
 		}
 	}
-	field_marshal = {
+	corps_commander = {
 		traits = {  politically_connected bearer_of_artillery  }
 		skill = 1
 		attack_skill = 1
@@ -122,7 +122,7 @@ portraits = {
 		small = GFX_portrait_duanzhigui_small
 	}
 }
-field_marshal = {
+corps_commander = {
 	traits = {  politically_connected old_guard substance_abuser  }
 	skill = 1
 	attack_skill = 1
@@ -141,7 +141,7 @@ portraits = {
 		small = GFX_portrait_fuliangzuo_small
 	}
 }
-field_marshal = {
+corps_commander = {
 	traits = { career_officer bearer_of_artillery  }
 	skill = 1
 	attack_skill = 2
@@ -160,7 +160,7 @@ portraits = {
 		small = GFX_portrait_CHI_luyongxiang_small
 	}
 }
-field_marshal = {
+corps_commander = {
 	traits = { career_officer politically_connected old_guard substance_abuser  }
 	skill = 1
 	attack_skill = 2
@@ -179,7 +179,7 @@ CHI_zhangjingyao = { #张敬尧
 		small = GFX_portrait_zhangjingyao_small
 	}
 }
-field_marshal = {
+corps_commander = {
 	traits = { trait_reckless bearer_of_artillery substance_abuser  }
 	skill = 1
 	attack_skill = 2
@@ -313,7 +313,7 @@ field_marshal = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_fanyuanlian
-			allowed = { original_tag = UPC }
+			allowed = { original_tag = CHI }
 			visible = { has_country_flag = fanyuanxi }
 			traits = { educational_experts }
 			ai_will_do = { factor = 1.000 }
@@ -446,4 +446,150 @@ field_marshal = {
         }
     }
 	########leader#####
+	# 陆军将领 - 皖系
+
+
+
+
+
+# 西北边防军将领
+
+CHI_qu_tongfeng = {
+    name = "曲同丰"
+    portraits = {
+        army = {
+            large = gfx/leaders/CHI/qu_tongfeng.dds
+            small = gfx/interface/ideas/qu_tongfeng.dds
+        }
+    }
+    corps_commander = {
+        traits = { career_officer trait_cautious } # 职业军官，谨慎
+        skill = 2
+        attack_skill = 3
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 1
+    }
+}
+
+CHI_fan_zhongxiu = {
+    name = "樊钟秀"
+    portraits = {
+        army = {
+            large = gfx/leaders/CHI/fan_zhongxiu.dds
+            small = gfx/interface/ideas/fan_zhongxiu.dds
+        }
+    }
+    corps_commander = {
+        traits = { harsh_leader trait_reckless } # 严厉将领，鲁莽
+        skill = 2
+        attack_skill = 1
+        defense_skill = 3
+        planning_skill = 1
+        logistics_skill = 1
+    }
+}
+
+CHI_guo_jian = {
+    name = "郭坚"
+    portraits = {
+        army = {
+            large = gfx/leaders/CHI/guo_jian.dds
+            small = gfx/interface/ideas/guo_jian.dds
+        }
+    }
+    corps_commander = {
+        traits = { harsh_leader trait_reckless } # 严厉将领，鲁莽
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+}
+
+# 海军将领
+
+CHI_liu_guanxiong = {
+    name = "刘冠雄"
+    portraits = {
+        navy = {
+            large = gfx/leaders/CHI/liu_guanxiong.dds
+            small = gfx/interface/ideas/liu_guanxiong.dds
+        }
+    }
+    navy_leader = {
+        traits = { trait_reckless naval_lineage career_officer } # 鲁莽，海军血统，职业军官
+        skill = 2
+        attack_skill = 3
+        defense_skill = 1
+
+    }
+}
+
+CHI_sa_zhenbing = {
+    name = "萨镇冰"
+    portraits = {
+        navy = {
+            large = gfx/leaders/CHI/sa_zhenbing.dds
+            small = gfx/interface/ideas/sa_zhenbing.dds
+        }
+    }
+    navy_leader = {
+        traits = { career_officer naval_lineage } # 职业军官，海军血统
+        skill = 3
+        attack_skill = 3
+        defense_skill = 2
+
+    }
+}
+
+CHI_lin_jianzhang = {
+    name = "林建章"
+    portraits = {
+        navy = {
+            large = gfx/leaders/CHI/lin_jianzhang.dds
+            small = gfx/interface/ideas/lin_jianzhang.dds
+        }
+    }
+    navy_leader = {
+        traits = { career_officer naval_lineage blockade_runner } # 职业军官，海军血统，封锁穿行者
+        skill = 3
+        attack_skill = 1
+        defense_skill = 3
+
+    }
+}
+
+CHI_li_shijia = {
+    name = "李世甲"
+    portraits = {
+        navy = {
+            large = gfx/leaders/CHI/li_shijia.dds
+            small = gfx/interface/ideas/li_shijia.dds
+        }
+    }
+    navy_leader = {
+        traits = { career_officer naval_lineage seawolf } # 职业军官，海军血统，海狼
+        skill = 2
+        attack_skill = 3
+        defense_skill = 2
+
+    }
+}
+CHI_xu_zushan = {
+    name = "徐祖善"
+    portraits = {
+        navy = {
+            large = gfx/leaders/CHI/xu_zushan.dds
+            small = gfx/interface/ideas/xu_zushan.dds
+        }
+    }
+    navy_leader = {
+        traits = { career_officer naval_lineage seawolf chief_engineer } # 职业军官，海军血统，海狼，首席工程师
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+    }
+}
 }

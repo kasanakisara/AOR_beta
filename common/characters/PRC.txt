@@ -1,0 +1,359 @@
+characters = {
+	CHI_liu_bocheng = {
+		name = "刘伯承"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/liu_bocheng.dds"
+				small = "gfx/interface/ideas/liu_bocheng.dds"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = military_theory
+			idea_token = CHI_liu_bocheng
+			allowed = { original_tag = CHI }
+			traits = { military_theorist }
+			ai_will_do = { factor = 1.000 }
+			research_bonus = {
+				land_doctrine = 0.1
+				artillery = 0.1
+			}
+		}
+	}
+	CHI_zhu_de = {
+		name = "朱德"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/zhu_de.dds"
+				small = "gfx/interface/ideas/zhu_de.dds"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = military_theory
+			idea_token = CHI_zhu_de
+			allowed = { original_tag = CHI }
+			traits = { guerilla_warfare_expert }
+			ai_will_do = { factor = 1.000 }
+			research_bonus = {
+				army_speed_factor = 0.05
+				army_org_factor = -0.1
+			}
+		}
+	}
+	
+	# 陆军部长
+	
+	CHI_liu_bocheng_army_minister = {
+		name = "刘伯承"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/liu_bocheng.dds"
+				small = "gfx/interface/ideas/liu_bocheng.dds"
+			}
+		}
+		minister = {
+			cost = 100
+			slot = army_chief
+			idea_token = CHI_liu_bocheng_army_minister
+			allowed = { original_tag = CHI }
+			traits = { army_chief_artillery_2 }
+			ai_will_do = { factor = 1.000 }
+			research_bonus = {
+				army_org = 0.1
+				breakthrough = 0.1
+			}
+		}
+	}
+	
+	# 总司令
+	
+	CHI_liu_bocheng_field_marshal = {
+		name = "刘伯承"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/liu_bocheng.dds"
+				small = "gfx/interface/ideas/liu_bocheng.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	# 将领
+	
+	CHI_mao_zedong = {
+		name = "毛泽东"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/mao_zedong.dds"
+				small = "gfx/interface/ideas/mao_zedong.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer infantry_leader adaptable }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	# 将领
+
+CHI_dong_zhentang = {
+    name = "董振堂"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/dong_zhentang.dds"
+            small = "gfx/interface/ideas/dong_zhentang.dds"
+        }
+    }
+    corps_commander = {
+        traits = { inflexible_strategist infantry_leader ambusher }
+        skill = 1
+        attack_skill = 4
+        defense_skill = 2
+        planning_skill = 3
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_he_long = {
+    name = "贺龙"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/he_long.dds"
+            small = "gfx/interface/ideas/he_long.dds"
+        }
+    }
+    corps_commander = {
+        traits = { infantry_officer special_forces_commander }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_peng_dehuai = {
+    name = "彭德怀"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/peng_dehuai.dds"
+            small = "gfx/interface/ideas/peng_dehuai.dds"
+        }
+    }
+    corps_commander = {
+        traits = { special_forces_commander mountaineer }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_huang_gonglue = {
+    name = "黄公略"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/huang_gonglue.dds"
+            small = "gfx/interface/ideas/huang_gonglue.dds"
+        }
+    }
+    corps_commander = {
+        traits = { engineer }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_liao_qianwu = {
+    name = "廖乾五"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/liao_qianwu.dds"
+            small = "gfx/interface/ideas/liao_qianwu.dds"
+        }
+    }
+    corps_commander = {
+        traits = { organizer logistics_wiz }
+        skill = 1
+        attack_skill = 2
+        defense_skill = 1
+        planning_skill = 4
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_li_can = {
+    name = "李灿"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/li_can.dds"
+            small = "gfx/interface/ideas/li_can.dds"
+        }
+    }
+    corps_commander = {
+        traits = { infantry_officer }
+        skill = 2
+        attack_skill = 2
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_xu_ti柄 = {
+    name = "徐天柄"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/xu_ti柄.dds"
+            small = "gfx/interface/ideas/xu_ti柄.dds"
+        }
+    }
+    corps_commander = {
+        traits = { mountaineer hill_fighter forest_fight }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 2
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_xu_qianjin = {
+    name = "徐向前"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/xu_qianjin.dds"
+            small = "gfx/interface/ideas/xu_qianjin.dds"
+        }
+    }
+    corps_commander = {
+        traits = { trickster }
+        skill = 2
+        attack_skill = 2
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_dong_zhentang_marshal = {
+    name = "董振堂"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/dong_zhentang.dds"
+            small = "gfx/interface/ideas/dong_zhentang.dds"
+        }
+    }
+    corps_commander = {
+        traits = { trickster }
+        skill = 2
+        attack_skill = 2
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_jin_fozhuang = {
+    name = "金佛庄"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/jin_fozhuang.dds"
+            small = "gfx/interface/ideas/jin_fozhuang.dds"
+        }
+    }
+    corps_commander = {
+        traits = { urban_assault_specialist special_forces_commander }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_kuang_jixun = {
+    name = "旷继勋"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/kuang_jixun.dds"
+            small = "gfx/interface/ideas/kuang_jixun.dds"
+        }
+    }
+    corps_commander = {
+        traits = { }
+        skill = 1
+        attack_skill = 3
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_ye_ting = {
+    name = "叶挺"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/ye_ting.dds"
+            small = "gfx/interface/ideas/ye_ting.dds"
+        }
+    }
+    corps_commander = {
+        traits = { infantry_officer }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+CHI_li_zhilong = {
+    name = "李之龙"
+    portraits = {
+        army = {
+            large = "gfx/leaders/CHI/li_zhilong.dds"
+            small = "gfx/interface/ideas/li_zhilong.dds"
+        }
+    }
+    navy_leader = {
+        traits = { naval_blood }
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+        legacy_id = -1
+    }
+}
+
+}

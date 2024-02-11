@@ -3,8 +3,8 @@ characters = {
 		name = "约翰·潘兴"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/john_pershing.dds"
-				small = "gfx/interface/ideas/john_pershing.dds"
+				large = gfx/leaders/USA/john_pershing.dds
+				small = gfx/interface/ideas/john_pershing.dds
 			}
 		}
 		corps_commander = {
@@ -21,8 +21,8 @@ characters = {
 		name = "塔斯克·布利斯"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/tasker_bliss.dds"
-				small = "gfx/interface/ideas/tasker_bliss.dds"
+				large = gfx/leaders/USA/tasker_bliss.dds
+				small = gfx/interface/ideas/tasker_bliss.dds
 			}
 		}
 		corps_commander = {
@@ -39,8 +39,8 @@ characters = {
 		name = "佩顿·马奇"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/payton_march.dds"
-				small = "gfx/interface/ideas/payton_march.dds"
+				large = gfx/leaders/USA/payton_march.dds
+				small = gfx/interface/ideas/payton_march.dds
 			}
 		}
 		corps_commander = {
@@ -57,8 +57,8 @@ characters = {
 		name = "休.L.斯科特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/hugh_l_scott.dds"
-				small = "gfx/interface/ideas/hugh_l_scott.dds"
+				large = gfx/leaders/USA/hugh_l_scott.dds
+				small = gfx/interface/ideas/hugh_l_scott.dds
 			}
 		}
 		corps_commander = {
@@ -75,8 +75,8 @@ characters = {
 		name = "亨特·利格特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/hunter_liggett.dds"
-				small = "gfx/interface/ideas/hunter_liggett.dds"
+				large = gfx/leaders/USA/hunter_liggett.dds
+				small = gfx/interface/ideas/hunter_liggett.dds
 			}
 		}
 		corps_commander = {
@@ -93,8 +93,8 @@ characters = {
 		name = "罗伯特·李·布拉德"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/robert_e_lee_bradley.dds"
-				small = "gfx/interface/ideas/robert_e_lee_bradley.dds"
+				large = gfx/leaders/USA/robert_e_lee_bradley.dds
+				small = gfx/interface/ideas/robert_e_lee_bradley.dds
 			}
 		}
 		corps_commander = {
@@ -111,8 +111,8 @@ characters = {
 		name = "查尔斯·佩洛特·萨默尔"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/charles_pelot_sumner.dds"
-				small = "gfx/interface/ideas/charles_pelot_sumner.dds"
+				large = gfx/leaders/USA/charles_pelot_sumner.dds
+				small = gfx/interface/ideas/charles_pelot_sumner.dds
 			}
 		}
 		corps_commander = {
@@ -129,8 +129,8 @@ characters = {
 		name = "约翰.L.希内斯"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/john_l_hines.dds"
-				small = "gfx/interface/ideas/john_l_hines.dds"
+				large = gfx/leaders/USA/john_l_hines.dds
+				small = gfx/interface/ideas/john_l_hines.dds
 			}
 		}
 		corps_commander = {
@@ -147,8 +147,8 @@ characters = {
 		name = "安德烈·W·布鲁斯特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/andrew_w_brust.dds"
-				small = "gfx/interface/ideas/andrew_w_brust.dds"
+				large = gfx/leaders/USA/andrew_w_brust.dds
+				small = gfx/interface/ideas/andrew_w_brust.dds
 			}
 		}
 		corps_commander = {
@@ -165,8 +165,8 @@ characters = {
 		name = "伦纳德·伍德"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/leonard_wood.dds"
-				small = "gfx/interface/ideas/leonard_wood.dds"
+				large = gfx/leaders/USA/leonard_wood.dds
+				small = gfx/interface/ideas/leonard_wood.dds
 			}
 		}
 		corps_commander = {
@@ -183,8 +183,8 @@ characters = {
 		name = "F.C.安斯沃斯"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/f_c_answorth.dds"
-				small = "gfx/interface/ideas/f_c_answorth.dds"
+				large = gfx/leaders/USA/f_c_answorth.dds
+				small = gfx/interface/ideas/f_c_answorth.dds
 			}
 		}
 		corps_commander = {
@@ -201,8 +201,8 @@ characters = {
 		name = "乔治.巴尼特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/george_barnett.dds"
-				small = "gfx/interface/ideas/george_barnett.dds"
+				large = gfx/leaders/USA/george_barnett.dds
+				small = gfx/interface/ideas/george_barnett.dds
 			}
 		}
 		corps_commander = {
@@ -219,8 +219,8 @@ characters = {
 		name = "约翰.A.勒任"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/john_a_lerchen.dds"
-				small = "gfx/interface/ideas/john_a_lerchen.dds"
+				large = gfx/leaders/USA/john_a_lerchen.dds
+				small = gfx/interface/ideas/john_a_lerchen.dds
 			}
 		}
 		corps_commander = {
@@ -237,8 +237,8 @@ characters = {
 		name = "哈里.A.伊顿"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/harry_a_eaton.dds"
-				small = "gfx/interface/ideas/harry_a_eaton.dds"
+				large = gfx/leaders/USA/harry_a_eaton.dds
+				small = gfx/interface/ideas/harry_a_eaton.dds
 			}
 		}
 		corps_commander = {
@@ -255,8 +255,8 @@ characters = {
 		name = "罗伯特.L.豪兹"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/robert_l_hauser.dds"
-				small = "gfx/interface/ideas/robert_l_hauser.dds"
+				large = gfx/leaders/USA/robert_l_hauser.dds
+				small = gfx/interface/ideas/robert_l_hauser.dds
 			}
 		}
 		corps_commander = {
@@ -273,8 +273,8 @@ characters = {
 		name = "爱德华.惠滕迈耶"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/edward_whittemore.dds"
-				small = "gfx/interface/ideas/edward_whittemore.dds"
+				large = gfx/leaders/USA/edward_whittemore.dds
+				small = gfx/interface/ideas/edward_whittemore.dds
 			}
 		}
 		corps_commander = {
@@ -290,8 +290,8 @@ characters = {
 		name = "威廉.L.赛伯特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/william_l_seibert.dds"
-				small = "gfx/interface/ideas/william_l_seibert.dds"
+				large = gfx/leaders/USA/william_l_seibert.dds
+				small = gfx/interface/ideas/william_l_seibert.dds
 			}
 		}
 		corps_commander = {
@@ -308,8 +308,8 @@ characters = {
 		name = "布雷斯顿.布朗"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/brayton_brown.dds"
-				small = "gfx/interface/ideas/brayton_brown.dds"
+				large = gfx/leaders/USA/brayton_brown.dds
+				small = gfx/interface/ideas/brayton_brown.dds
 			}
 		}
 		corps_commander = {
@@ -326,8 +326,8 @@ characters = {
 		name = "奥拉.E.亨特"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/ora_e_hunt.dds"
-				small = "gfx/interface/ideas/ora_e_hunt.dds"
+				large = gfx/leaders/USA/ora_e_hunt.dds
+				small = gfx/interface/ideas/ora_e_hunt.dds
 			}
 		}
 		corps_commander = {
@@ -344,8 +344,8 @@ characters = {
 		name = "J.W.赫德"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/j_w_hurd.dds"
-				small = "gfx/interface/ideas/j_w_hurd.dds"
+				large = gfx/leaders/USA/j_w_hurd.dds
+				small = gfx/interface/ideas/j_w_hurd.dds
 			}
 		}
 		corps_commander = {
@@ -362,8 +362,8 @@ characters = {
 		name = "查尔斯.G.莫顿"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/charles_g_morton.dds"
-				small = "gfx/interface/ideas/charles_g_morton.dds"
+				large = gfx/leaders/USA/charles_g_morton.dds
+				small = gfx/interface/ideas/charles_g_morton.dds
 			}
 		}
 		corps_commander = {
@@ -380,8 +380,8 @@ characters = {
 		name = "马林.克雷格"
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/malin_craig.dds"
-				small = "gfx/interface/ideas/malin_craig.dds"
+				large = gfx/leaders/USA/malin_craig.dds
+				small = gfx/interface/ideas/malin_craig.dds
 			}
 		}
 		corps_commander = {

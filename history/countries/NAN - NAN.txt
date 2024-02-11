@@ -9,7 +9,16 @@ set_technology = {
 }
 set_stability = 0.6
 set_war_support = 0.7
-
+recruit_character = NAN_feng_guozhang
+recruit_character = NAN_wang_zhan_yuan
+recruit_character = NAN_li_chun
+recruit_character = NAN_chen_guangyuan
+recruit_character = NAN_xiao_yao_nan
+recruit_character = NAN_cai_chengxun
+recruit_character = NAN_sa_benshuo
+recruit_character = NAN_cao_yin
+recruit_character = NAN_wu_peifu
+recruit_character = NAN_wang_shizhen
 create_country_leader = {
 	name = "Feng_guo_zhang"
 	desc = "POLITICS_MON_DESC"

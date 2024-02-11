@@ -36,6 +36,14 @@ recruit_character = CHI_Zeng_Yujun
 recruit_character = CHI_zhangjian
 recruit_character = CHI_lianghongzhi
 
+recruit_character = CHI_qu_tongfeng
+recruit_character = CHI_fan_zhongxiu
+recruit_character = CHI_guo_jian
+recruit_character = CHI_liu_guanxiong
+recruit_character = CHI_sa_zhenbing
+recruit_character = CHI_lin_jianzhang
+recruit_character = CHI_li_shijia
+recruit_character = CHI_xu_zushan
 create_country_leader = {
 	name = "Yuan_Shih_kai"
 	desc = ""
