@@ -64,10 +64,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 25
-	Fascism = 20
-	Marxism = 5
-	Absolutism = 50
+Absolutism = 100	
 }
 
 create_country_leader = {
