@@ -92,9 +92,9 @@ set_politics = {
 set_popularities = {
 	CON_democratic = 34 #迪克西党
 	FRE_democratic = 44 #洋基党
-	SOC_democratic = 8 #社民
+	SOC_democratic = 10 #社民
 	PAR_socialism = 4 #温和社
-	AUT_democratic = 10 #迪克西-强硬派
+	AUT_democratic = 8 #迪克西-强硬派
 
 }
 

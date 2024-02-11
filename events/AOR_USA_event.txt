@@ -285,11 +285,12 @@ country_event = {
 				ideology = liberalism
 					}
 				set_popularities = {
-					FRE_democratic = 48
-					CON_democratic = 34
-					SOC_democratic = 17
-					AUT_democratic = 3
-					Marxism = 1
+					FRE_democratic = 61
+					CON_democratic = 8
+					SOC_democratic = 20
+					Fascism = 5
+					Absolutism = 4
+					Marxism = 2
 					
 					}
 				declare_war_on = {
