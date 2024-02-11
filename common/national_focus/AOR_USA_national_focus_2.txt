@@ -275,7 +275,7 @@ focus_tree={
 		icon=GFX_goal_USA_Raise_tariffs
 		x=15
 		y=6
-		prerequisite={focus=USA_Morgan focus=USA_Mellon }
+		prerequisite={focus=USA_Morgan_idea focus=USA_Mellon_idea }
 		cost=3
 		ai_will_do={
 			factor=1
