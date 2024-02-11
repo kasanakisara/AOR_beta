@@ -69,7 +69,7 @@ ISL_democratic = 50
 }
 
 create_country_leader = {
-	name = "Omar_al-Mokhtar"
+	name = "Idris Senussi"
 	desc = ""
 	picture = GFX_portrait_Omar_al-Mokhtar
 	ideology = Absolutism
@@ -99,7 +99,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Omar_al-Mokhtar" ###Idris Senussi
+	name = "Idris Senussi" ###Idris Senussi
 	desc = ""
 	picture = GFX_portrait_Idris_Senussi
 	ideology = despotism
