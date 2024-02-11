@@ -92,7 +92,7 @@ focus_tree={
 			always = no
 		}
 		bypass = {
-		has_country_flag = chi.nw
+		has_country_flag = chi_waixibeizhanzheng
 		}	
 		available_if_capitulated=yes
 		search_filters={
@@ -100,7 +100,6 @@ focus_tree={
 		completion_reward={
 		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest_decision
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
-		
 		set_country_flag = unlock_CHI_Reclaiming_outer_northwest
 		}
 	}
@@ -250,83 +249,6 @@ focus_tree={
 		country_event = { id = CHI.3 }
 		}
 	}
-	focus={
-		id=CHI_United_provincial_republic
-		x=5
-		y=7
-		prerequisite={focus=CHI_Year_of_Gengshen}
-		cost=2
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		set_country_flag = liansheng
-		load_focus_tree = CHI_UPC_1
-		}
-	}
-	focus={
-		id=CHI_National_Revolution
-		x=3
-		y=7
-		prerequisite={focus=CHI_Year_of_Gengshen}
-		cost=2
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=CHI_peoples_democracy
-		x=1
-		y=7
-		prerequisite={focus=CHI_Year_of_Gengshen}
-		cost=2
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=CHI_Rule_law
-		x=7
-		y=7
-		prerequisite={focus=CHI_Year_of_Gengshen}
-		cost=2
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=CHI_law_heavy_light
-		x=9
-		y=7
-		prerequisite={focus=CHI_Year_of_Gengshen}
-		cost=2
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
 
 ##林有为出来受死！！#
 	focus={
@@ -337,17 +259,36 @@ focus_tree={
 		prerequisite={focus=CHI_Hold_down_south}
 		cost=0
 		allow_branch = {
-				not = {has_country_flag = yuan_done}
-			}
+			not = {has_country_flag = yuan_done}
+		}
 		available = {
-			always = no
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = CHI_war_bond
+					}
+					OR = {
+						NOT = {
+							has_completed_focus = CHI_Hold_down_south
+						}
+					}
+				}
+				has_country_flag = nianguangjiangjin
+			}
+			if = {
+				limit = {
+					has_completed_focus = CHI_war_bond
+				}
+				AND = {
+					has_completed_focus = CHI_Hold_down_south
+				}
+				has_country_flag = wobuxiangrangnidian
+			}
 		}
 		ai_will_do={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		country_event = { id = CHI.14 }
 		}
@@ -363,8 +304,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		custom_effect_tooltip = FAKE.1.tt
 		}
@@ -380,8 +319,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		custom_effect_tooltip = FAKE.2.tt
 		}
@@ -397,8 +334,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		custom_effect_tooltip = FAKE.3.tt
 		} 
@@ -406,8 +341,23 @@ focus_tree={
 	
 	focus={
 		id=CHI_forward
-		x=5
-		y=7
+		x = 5
+		y = 8
+		prerequisite={focus=CHI_ask_for_loan}
+		prerequisite={focus=CHI_hold_on}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		completion_reward={
+		custom_effect_tooltip = FAKE.4.tt
+		} 
+	}  
+	focus={
+		id = CHI_ask_for_loan
+		x = 3
+		y = 7
 		prerequisite={focus=CHI_stop}
 		prerequisite={focus=CHI_we_win}
 		prerequisite={focus=CHI_Assess_s}
@@ -416,10 +366,24 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
-		custom_effect_tooltip = FAKE.4.tt
+		custom_effect_tooltip = FAKE.5.tt
 		} 
-	}  
+	} 
+	focus={
+		id = CHI_hold_on
+		x = 7
+		y = 7
+		prerequisite={focus=CHI_stop}
+		prerequisite={focus=CHI_we_win}
+		prerequisite={focus=CHI_Assess_s}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		completion_reward={
+		custom_effect_tooltip = FAKE.6.tt
+		} 
+	} 
 }
