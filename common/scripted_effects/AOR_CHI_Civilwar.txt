@@ -53,7 +53,7 @@ CHI_civil_war_1 = {
 			add_to_faction = NAN
 		}
 		news_event = {
-			id = AOR_news.30
+			id=AOR_news.30
 		}
 		DCD = { #四川军阀
 		set_cosmetic_tag = DCD_1
