@@ -11,13 +11,13 @@ focus_tree = {
 	default = no
 	focus = {
 		id = continue_New_Democracy_Experiment
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continue_New_Democracy_Experiment
 		cost = 5
 		x = 8
 		y = 0
 		completion_reward={
 		custom_effect_tooltip = SAX.1.tt
-		hidden_effect = {
+		 
 			add_political_power = 150
 			swap_ideas = {
 				remove_idea = exp_of_kautsky
@@ -25,10 +25,10 @@ focus_tree = {
 			}
 		}
 	}
-}
+
 	focus = {
 		id = Class_harmony
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Class_harmony
 		cost = 10
 		prerequisite = {
 			focus = continue_New_Democracy_Experiment
@@ -37,14 +37,14 @@ focus_tree = {
 		y = 1
 		completion_reward={
 		custom_effect_tooltip = SAX.2.tt
-		hidden_effect = {
+		 
 			add_ideas = Class_harmony
 			}
 		}
-	}
+	
 	focus = {
 		id = Strengthening_social_security
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Strengthening_social_security
 		cost = 10
 		prerequisite = {
 			focus = Class_harmony
@@ -53,7 +53,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 		custom_effect_tooltip = SAX.3.tt
-		hidden_effect = {
+		 
 		if = {
 		 limit = {
 			NOT = {has_idea = Class_harmony_1 }
@@ -71,10 +71,10 @@ focus_tree = {
 		}
 		}
 	}
-}
+
 	focus = {
 		id = Increase_welfare_expenses
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Increase_welfare_expenses
 		cost = 3
 		prerequisite = {
 			focus = Strengthening_social_security
@@ -83,7 +83,7 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.4.tt
-		hidden_effect = {
+		 
 		add_political_power = -50
 		add_stability =0.05
 		add_popularity = {
@@ -93,10 +93,10 @@ focus_tree = {
 		   }
 		}
 
-	}
+	
 	focus = {
 		id = Improve_the_treatment_of_workers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Improve_the_treatment_of_workers
 		cost = 10
 		prerequisite = {
 			focus = Class_harmony
@@ -105,7 +105,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.5.tt
-			hidden_effect = {
+			 
 		if = {
 		 limit = {
 			NOT = {has_idea = Class_harmony_1 }
@@ -125,10 +125,10 @@ focus_tree = {
 		}
 		
 
-	}
+	
 	focus = {
 		id = Appease_capitalists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Appease_capitalists
 		cost = 3
 		prerequisite = {
 			focus = Improve_the_treatment_of_workers
@@ -137,17 +137,17 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.6.tt
-		hidden_effect = {
+		 
 		add_political_power = -50
 		add_stability =0.05
 		}
 			
 		}
 
-	}
+	
 	focus = {
 		id = Cooperation_rather_than_struggle
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Cooperation_rather_than_struggle
 		cost = 4
 		prerequisite = {
 			focus = Increase_welfare_expenses
@@ -159,7 +159,7 @@ focus_tree = {
 		y = 4
 		completion_reward={
 			custom_effect_tooltip = SAX.7.tt
-			hidden_effect = {
+			 
 			add_war_support = -0.05
 			add_stability = 0.05
 			add_political_power = 50
@@ -170,10 +170,10 @@ focus_tree = {
 			}
 		}
 
-	}
+	
 	focus = {
 		id = Establishing_Cooperatives
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Establishing_Cooperatives
 		cost = 5
 		prerequisite = {
 			focus = continue_New_Democracy_Experiment
@@ -183,15 +183,15 @@ focus_tree = {
 		y = 1
 		completion_reward={
 		custom_effect_tooltip = SAX.8.tt
-		hidden_effect = {
+		 
 			country_event = AOR_SAX_events.1
 			}
 		}
 
-	}
+	
 	focus = {
 		id = Government_intervention_in_the_market
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Government_intervention_in_the_market
 		cost = 10
 		prerequisite = {
 			focus = Establishing_Cooperatives
@@ -200,15 +200,15 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.9.tt
-			hidden_effect = {
+			 
 			add_ideas = Government_intervention_in_the_market
 		}
 		}
 
-	}
+	
 	focus = {
 		id = profit_sharing
-		icon = GFX_goal_unknown
+		icon = GFX_goal_profit_sharing
 		cost = 10
 		prerequisite = {
 			focus = Government_intervention_in_the_market
@@ -217,16 +217,16 @@ focus_tree = {
 		y = 3
 		completion_reward={
 			custom_effect_tooltip = SAX.10.tt
-			hidden_effect = {
+			 
 			add_political_power = 150
 			add_ideas = profit_sharing
 		}
 		}
 
-	}
+	
 	focus = {
 		id = State_owned_chemical_plant
-		icon = GFX_goal_unknown
+		icon = GFX_goal_State_owned_chemical_plant
 		cost = 10
 		prerequisite = {
 			focus = Establishing_Cooperatives
@@ -235,7 +235,7 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			custom_effect_tooltip = SAX.11.tt
-			hidden_effect = {
+			 
 			random_owned_state = {
 			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -247,10 +247,10 @@ focus_tree = {
 		
 		}
 
-	}
+	
 	focus = {
 		id = Establishing_a_state_owned_farm
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Establishing_a_state_owned_farm
 		cost = 10
 		prerequisite = {
 			focus = State_owned_chemical_plant
@@ -259,7 +259,7 @@ focus_tree = {
 		y = 3
 		completion_reward={
 		custom_effect_tooltip = SAX.12.tt
-		hidden_effect = {
+		 
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -270,10 +270,10 @@ focus_tree = {
 		}
 		}
 
-	}
+	
 	focus = {
 		id = Peace_rather_than_violence
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Peace_rather_than_violence
 		cost = 4
 		prerequisite = {
 			focus = profit_sharing
@@ -285,7 +285,7 @@ focus_tree = {
 		y = 4
 		completion_reward={
 			custom_effect_tooltip = SAX.13.tt
-			hidden_effect = {
+			 
 			add_war_support = -0.05
 			add_stability = 0.05
 			add_political_power = 50
@@ -296,10 +296,10 @@ focus_tree = {
 		 }
 		}
 
-	}
+	
 	focus = {
 		id = The_government_of_all_the_people
-		icon = GFX_goal_unknown
+		icon = GFX_goal_The_government_of_all_the_people
 		cost =10
 		prerequisite = {
 			focus = Cooperation_rather_than_struggle
@@ -311,15 +311,15 @@ focus_tree = {
 		y = 5
 		completion_reward={
 		custom_effect_tooltip = SAX.14.tt
-		hidden_effect = {
+		 
 			add_ideas = The_government_of_all_the_people
 		  }
 		}
 
-	}
+	
 	focus = {
 		id = Guiding_the_People
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Guiding_the_People
 		cost = 5
 		prerequisite = {
 			focus = The_government_of_all_the_people
@@ -328,14 +328,14 @@ focus_tree = {
 		y = 6
 		completion_reward={
 		custom_effect_tooltip = SAX.15.tt
-		hidden_effect = {
+		 
 			add_ideas = Guiding_the_People
 		   }
 		}
-	}
+	
 	focus = {
 		id = protect_the_people
-		icon = GFX_goal_unknown
+		icon = GFX_goal_protect_the_people
 		cost = 5
 		prerequisite = {
 			focus = The_government_of_all_the_people
@@ -344,14 +344,14 @@ focus_tree = {
 		y = 6
 		completion_reward={
 			custom_effect_tooltip = SAX.16.tt
-			hidden_effect = {
+			 
 			add_ideas = protect_the_people
 		   }
 		}
-	}
+	
 	focus = {
 		id = The_Victory_of_Democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_The_Victory_of_Democracy
 		cost = 10
 		prerequisite = {
 			focus = Guiding_the_People
@@ -363,19 +363,21 @@ focus_tree = {
 		y = 7
 		completion_reward={
 		custom_effect_tooltip = SAX.18.tt
-		hidden_effect = {
+		 
 		add_stability = 0.05
 			add_political_power = 150
 			
 			
 			custom_effect_tooltip = SAX.19.tt
-			
-			remove_ideas = protect_the_people
+			hidden_effect = {
+				remove_ideas = protect_the_people
 			remove_ideas = Guiding_the_People
 			remove_ideas = The_government_of_all_the_people
 			remove_ideas = profit_sharing
 			remove_ideas = Government_intervention_in_the_market
 			add_ideas = The_Victory_of_Democracy
+			}
+			
 			
 		}
 

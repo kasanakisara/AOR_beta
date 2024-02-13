@@ -26,7 +26,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Convening_the_Military_Headquarters_Conference
 		cost = 1
 		prerequisite = {
-			focus = Recalcitrant_warlords
+			focus = NAU_Recalcitrant_warlords
 		}
 		x = 7
 		y = 1
@@ -42,7 +42,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Fight_against_local_forces
 		cost = 1
 		prerequisite = {
-			focus = Convening_the_Military_Headquarters_Conference
+			focus = NAU_Convening_the_Military_Headquarters_Conference
 		}
 		x = 7
 		y = 2
@@ -57,7 +57,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Expand_Frankfurt_market
 		cost = 5
 		prerequisite = {
-			focus = Fight_against_local_forces
+			focus = NAU_Fight_against_local_forces
 		}
 		x = 3
 		y = 3
@@ -76,7 +76,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Create_a_cult_of_personality
 		cost = 5
 		prerequisite = {
-			focus = Fight_against_local_forces
+			focus = NAU_Fight_against_local_forces
 		}
 		x = 5
 		y = 3
@@ -90,7 +90,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_The_prince's_speech
 		cost = 3
 		prerequisite = {
-			focus = Create_a_cult_of_personality
+			focus = NAU_Create_a_cult_of_personality
 		}
 		x = 5
 		y = 4
@@ -104,7 +104,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Military_Training
 		cost = 4
 		prerequisite = {
-			focus = Fight_against_local_forces
+			focus = NAU_Fight_against_local_forces
 		}
 		x = 9
 		y = 3
@@ -119,7 +119,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_An_attack_on_the_center
 		cost = 3
 		prerequisite = {
-			focus = Military_Training
+			focus = NAU_Military_Training
 		}
 		x = 9
 		y = 4
@@ -151,16 +151,16 @@ focus_tree = {
 		icon = GFX_goal_NAU_Integrated_economic_control
 		cost = 5
 		prerequisite = {
-			focus = The_prince's_speech
+			focus = NAU_The_prince's_speech
 		}
 		prerequisite = {
-			focus = An_attack_on_the_center
+			focus = NAU_An_attack_on_the_center
 		}
 		prerequisite = {
-			focus = Dismiss_the_die_hards
+			focus = NAU_Dismiss_the_die_hards
 		}
 		prerequisite = {
-			focus = Implement_the_merger_of_enterprises
+			focus = NAU_Implement_the_merger_of_enterprises
 		}
 		x = 7
 		y = 5
@@ -180,7 +180,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_The_Prince's_iron_fist
 		cost = 3
 		prerequisite = {
-			focus = Fight_against_local_forces
+			focus = NAU_Fight_against_local_forces
 		}
 		x = 11
 		y = 3
@@ -194,7 +194,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Implement_the_merger_of_enterprises
 		cost = 5
 		prerequisite = {
-			focus = Expand_Frankfurt_market
+			focus = NAU_Expand_Frankfurt_market
 		}
 		x = 3
 		y = 4
@@ -216,7 +216,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Dismiss_the_die_hards
 		cost = 6
 		prerequisite = {
-			focus = The_Prince's_iron_fist
+			focus = NAU_The_Prince's_iron_fist
 		}
 		x = 11
 		y = 4
@@ -231,7 +231,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Recall_the_command_of_the_army
 		cost = 5
 		prerequisite = {
-			focus = Integrated_economic_control
+			focus = NAU_Integrated_economic_control
 		}
 		x = 7
 		y = 6
@@ -248,7 +248,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Open_up_for_industrialization
 		cost = 5
 		prerequisite = {
-			focus = Recall_the_command_of_the_army
+			focus = NAU_Recall_the_command_of_the_army
 		}
 		x = 7
 		y = 7

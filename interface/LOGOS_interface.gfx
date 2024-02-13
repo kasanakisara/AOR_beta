@@ -1881,8 +1881,26 @@ spriteType = {
   texturefile = "gfx/AOR_supernews/pic/supernews_2.png"
   }
   
-  ####英国外交线国策图标###
-
+ 
+  #萨克森
+  spriteType = { name = "GFX_goal_Appease_capitalists" texturefile = "gfx/interface/goals/Appease_capitalists.png" }
+  spriteType = { name = "GFX_goal_Class_harmony" texturefile = "gfx/interface/goals/Class_harmony.png" }
+  spriteType = { name = "GFX_goal_continue_New_Democracy_Experiment" texturefile = "gfx/interface/goals/continue_New_Democracy_Experiment.png" }
+  spriteType = { name = "GFX_goal_Cooperation_rather_than_struggle" texturefile = "gfx/interface/goals/Cooperation_rather_than_struggle.png" }
+  spriteType = { name = "GFX_goal_Establishing_a_state_owned_farm" texturefile = "gfx/interface/goals/Establishing_a_state_owned_farm.png" }
+  spriteType = { name = "GFX_goal_Establishing_Cooperatives" texturefile = "gfx/interface/goals/Establishing_Cooperatives.png" }
+  spriteType = { name = "GFX_goal_Government_intervention_in_the_market" texturefile = "gfx/interface/goals/Government_intervention_in_the_market.png" }
+  spriteType = { name = "GFX_goal_Guiding_the_People" texturefile = "gfx/interface/goals/Guiding_the_People.png" }
+  spriteType = { name = "GFX_goal_Improve_the_treatment_of_workers" texturefile = "gfx/interface/goals/Improve_the_treatment_of_workers.png" }
+  spriteType = { name = "GFX_goal_Increase_welfare_expenses" texturefile = "gfx/interface/goals/Increase_welfare_expenses.png" }
+  spriteType = { name = "GFX_goal_Peace_rather_than_violence" texturefile = "gfx/interface/goals/Peace_rather_than_violence.png" }
+  spriteType = { name = "GFX_goal_profit_sharing" texturefile = "gfx/interface/goals/profit_sharing.png" }
+  spriteType = { name = "GFX_goal_protect_the_people" texturefile = "gfx/interface/goals/protect_the_people.png" }
+  spriteType = { name = "GFX_goal_State_owned_chemical_plant" texturefile = "gfx/interface/goals/State_owned_chemical_plant.png" }
+  spriteType = { name = "GFX_goal_Strengthening_social_security" texturefile = "gfx/interface/goals/Strengthening_social_security.png" }
+  spriteType = { name = "GFX_goal_The_government_of_all_the_people" texturefile = "gfx/interface/goals/The_government_of_all_the_people.png" }
+  spriteType = { name = "GFX_goal_The_Victory_of_Democracy" texturefile = "gfx/interface/goals/The_Victory_of_Democracy.png" }
+ ####英国外交线国策图标###
  spriteType = { name = "AOR_goals_chilunbutingzhuan" texturefile = "gfx/interface/goals/AOR_goals_chilunbutingzhuan.png" }
 spriteType = { name = "AOR_goals_chubanaiguoduwu" texturefile = "gfx/interface/goals/AOR_goals_chubanaiguoduwu.png" }
 spriteType = { name = "AOR_goals_dadanxingdong" texturefile = "gfx/interface/goals/AOR_goals_dadanxingdong.png" }
