@@ -11,8 +11,8 @@ focus_tree = {
 	continuous_focus_position = { x = 1500  y = 2000 } 
 
 	focus = {
-		id = Recalcitrant_warlords #桀骜不驯的军阀
-		icon = GFX_goal_Recalcitrant_warlords
+		id = NAU_Recalcitrant_warlords #桀骜不驯的军阀
+		icon = GFX_goal_NAU_Recalcitrant_warlords
 		cost = 1
 		x = 7
 		y = 0
@@ -22,8 +22,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Convening_the_Military_Headquarters_Conference #召开军部大会
-		icon = GFX_goal_Convening_the_Military_Headquarters_Conference
+		id = NAU_Convening_the_Military_Headquarters_Conference #召开军部大会
+		icon = GFX_goal_NAU_Convening_the_Military_Headquarters_Conference
 		cost = 1
 		prerequisite = {
 			focus = Recalcitrant_warlords
@@ -38,8 +38,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Fight_against_local_forces #打击地方势力
-		icon = GFX_goal_Fight_against_local_forces
+		id = NAU_Fight_against_local_forces #打击地方势力
+		icon = GFX_goal_NAU_Fight_against_local_forces
 		cost = 1
 		prerequisite = {
 			focus = Convening_the_Military_Headquarters_Conference
@@ -53,8 +53,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Expand_Frankfurt_market #扩展法兰克福市场
-		icon = GFX_goal_Expand_Frankfurt_market
+		id = NAU_Expand_Frankfurt_market #扩展法兰克福市场
+		icon = GFX_goal_NAU_Expand_Frankfurt_market
 		cost = 5
 		prerequisite = {
 			focus = Fight_against_local_forces
@@ -72,8 +72,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Create_a_cult_of_personality #制造个人崇拜
-		icon = GFX_goal_Create_a_cult_of_personality
+		id = NAU_Create_a_cult_of_personality #制造个人崇拜
+		icon = GFX_goal_NAU_Create_a_cult_of_personality
 		cost = 5
 		prerequisite = {
 			focus = Fight_against_local_forces
@@ -86,8 +86,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = The_prince's_speech #亲王的演讲
-		icon = GFX_goal_The_prince's_speech
+		id = NAU_The_prince's_speech #亲王的演讲
+		icon = GFX_goal_NAU_The_prince's_speech
 		cost = 3
 		prerequisite = {
 			focus = Create_a_cult_of_personality
@@ -100,8 +100,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Military_Training #军队整训
-		icon = GFX_goal_Military_Training
+		id = NAU_Military_Training #军队整训
+		icon = GFX_goal_NAU_Military_Training
 		cost = 4
 		prerequisite = {
 			focus = Fight_against_local_forces
@@ -115,8 +115,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = An_attack_on_the_center #对中央的袭击
-		icon = GFX_goal_An_attack_on_the_center
+		id = NAU_An_attack_on_the_center #对中央的袭击
+		icon = GFX_goal_NAU_An_attack_on_the_center
 		cost = 3
 		prerequisite = {
 			focus = Military_Training
@@ -147,8 +147,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Integrated_economic_control 
-		icon = GFX_goal_Integrated_economic_control
+		id = NAU_Integrated_economic_control 
+		icon = GFX_goal_NAU_Integrated_economic_control
 		cost = 5
 		prerequisite = {
 			focus = The_prince's_speech
@@ -176,8 +176,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = The_Prince's_iron_fist #亲王的铁拳
-		icon = GFX_goal_The_Prince's_iron_fist
+		id = NAU_The_Prince's_iron_fist #亲王的铁拳
+		icon = GFX_goal_NAU_The_Prince's_iron_fist
 		cost = 3
 		prerequisite = {
 			focus = Fight_against_local_forces
@@ -190,8 +190,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Implement_the_merger_of_enterprises #实行企业兼并
-		icon = GFX_goal_Implement_the_merger_of_enterprises
+		id = NAU_Implement_the_merger_of_enterprises #实行企业兼并
+		icon = GFX_goal_NAU_Implement_the_merger_of_enterprises
 		cost = 5
 		prerequisite = {
 			focus = Expand_Frankfurt_market
@@ -212,8 +212,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Dismiss_the_die_hards #辞退顽固派
-		icon = GFX_goal_Dismiss_the_die_hards
+		id = NAU_Dismiss_the_die_hards #辞退顽固派
+		icon = GFX_goal_NAU_Dismiss_the_die_hards
 		cost = 6
 		prerequisite = {
 			focus = The_Prince's_iron_fist
@@ -227,8 +227,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Recall_the_command_of_the_army #回收统兵权
-		icon = GFX_goal_Recall_the_command_of_the_army
+		id = NAU_Recall_the_command_of_the_army #回收统兵权
+		icon = GFX_goal_NAU_Recall_the_command_of_the_army
 		cost = 5
 		prerequisite = {
 			focus = Integrated_economic_control
@@ -244,8 +244,8 @@ focus_tree = {
 	}
 }
 	focus = {
-		id = Open_up_for_industrialization #为工业化开路！
-		icon = GFX_goal_Open_up_for_industrialization
+		id = NAU_Open_up_for_industrialization #为工业化开路！
+		icon = GFX_goal_NAU_Open_up_for_industrialization
 		cost = 5
 		prerequisite = {
 			focus = Recall_the_command_of_the_army

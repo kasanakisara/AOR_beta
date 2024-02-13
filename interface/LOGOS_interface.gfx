@@ -2020,6 +2020,62 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
   texturefile = "gfx/interface/goals/ORA_Look_forward_future.png"
  }
 
+ ########法兰克福第一阶段国策
+ spriteType = {
+  name = "GFX_goal_NAU_Recalcitrant_warlords"
+  texturefile = "gfx/interface/goals/NAU_Recalcitrant_warlords.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Convening_the_Military_Headquarters_Conference"
+  texturefile = "gfx/interface/goals/NAU_Convening_the_Military_Headquarters_Conference.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Fight_against_local_forces"
+  texturefile = "gfx/interface/goals/NAU_Fight_against_local_forces.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Expand_Frankfurt_market"
+  texturefile = "gfx/interface/goals/NAU_Expand_Frankfurt_market.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Create_a_cult_of_personality"
+  texturefile = "gfx/interface/goals/NAU_Create_a_cult_of_personality.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_The_prince's_speech"
+  texturefile = "gfx/interface/goals/NAU_The_prince's_speech.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Military_Training"
+  texturefile = "gfx/interface/goals/NAU_Military_Training.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_An_attack_on_the_center"
+  texturefile = "gfx/interface/goals/NAU_An_attack_on_the_center.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Integrated_economic_control"
+  texturefile = "gfx/interface/goals/NAU_Integrated_economic_control.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_The_Prince's_iron_fist"
+  texturefile = "gfx/interface/goals/NAU_The_Prince's_iron_fist.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Dismiss_the_die_hards"
+  texturefile = "gfx/interface/goals/NAU_Dismiss_the_die_hards.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Recall_the_command_of_the_army"
+  texturefile = "gfx/interface/goals/NAU_Recall_the_command_of_the_army.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Open_up_for_industrialization"
+  texturefile = "gfx/interface/goals/NAU_Open_up_for_industrialization.png"
+ }
+ 
+
+
  ########美国1919——1920一阶段
  spriteType = {	
   name = "GFX_goal_USA_WhiteHouseReport"
