@@ -6670,4 +6670,214 @@ leader_traits = {
 		TRADE_OPINION_FACTOR = 0.15
 		LOCAL_RESOURCES_FACTOR = -0.03
 	}
+		# 经济顾问特质
+	Worker_Factory_Manager = {
+		random = no
+		production_speed_factor = 0.1
+		production_efficiency_factor = 0.05
+	}
+
+	Infinite_Potential_Financial_Expert = {
+		random = no
+		consumer_goods_factor = -0.2
+	}
+
+	Worker_Revolutionary = {
+		random = no
+                            #加支持度
+		production_efficiency_factor = 0.1
+
+	}
+
+	Cooperative_Theorist = {
+		random = no
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+	}
+
+	Farmers_Movement_Leader = {
+		random = no
+                            #加支持度
+		supply_consumption_factor = -0.15
+		resource_extraction_speed_factor = 0.1
+
+	}
+	Railway_Pioneer = {
+		random = no
+		infrastructure_speed_factor = 0.2
+		railway_speed_factor = 0.2
+		supply_depot_speed_factor = 0.2
+	}
+	# 教育顾问特质
+	Famous_Educator = {
+		random = no
+		research_speed_factor = 0.1
+		electronics_research_speed_factor = 0.1
+	}
+
+	Red_Educator = {
+		random = no
+		research_speed_factor = 0.1
+		industrial_research_speed_factor = 0.1
+	}
+
+	# 内阁特质
+	Judicial_Founder = {
+		random = no
+		stability_factor = 0.15
+	}
+
+	Theoretical_Propagandist = {
+		random = no
+		conscription_factor = 0.1
+	}
+
+	Revolutionary_Organizer = {
+		random = no
+		war_support_factor = -0.25
+		drift_defence_factor = 0.2
+	}
+
+	Farmers_Movement_Great_Leader = {
+		random = no
+		resistance_damage_to_garrison = -0.25
+		compliance_gain = 0.001
+                            #加支持度
+		stability_factor = -0.05
+
+	}
+
+	Outstanding_Revolutionary = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		political_power_factor = 0.05
+	}
+
+	Revolutionary_Theorist = {
+		random = no
+                            #加支持度
+		war_support_factor = 0.1
+		trade_opinion_factor = -0.1
+
+	}
+
+	Worker_Revolutionary_2 = {
+		random = no
+                            #加支持度
+		army_core_attack_factor  = 0.1
+
+	}
+
+	# 情报顾问特质
+	Intelligence_Master = {
+		random = no
+		espionage_factor = 0.2
+		foreign_espionage_factor = -0.2
+	}
+
+	# 军事顾问特质
+	Military_Expert = {
+		random = no
+		land_attack = 0.1
+		land_artillery_attack = 0.1
+	}
+
+	Guerilla_Master = {
+		random = no
+		land_speed_factor = 0.05
+		land_defense = -0.1
+	}
+
+	Iron_Wall_General = {
+		random = no
+		land_defense = 0.1
+		entrenchment_building_speed = 0.1
+		entrenchment = 1
+	}
+
+	Logistics_General = {
+		random = no
+		supply_consumption_factor = -0.1
+		encirclement_factor = -0.1
+	}
+
+	Mobilization_Master = {
+		random = no
+		reinforcement_rate = 0.02
+		organization_loss_factor = -0.25
+	}
+
+	# 陆军部长特质
+	Firepower_Support_School = {
+		random = no
+		land_artillery_attack = 0.1
+		land_breakthrough = 0.1
+	}
+
+	Mobile_Warfare_Doctrine = {
+		random = no
+		land_speed_factor = 0.1
+		organization_loss_factor = -0.1
+	}
+
+	Flexible_Defense_Doctrine = {
+		random = no
+		planning_speed_factor = 0.1
+		planning_bonus_factor = 0.1
+		land_defense = 0.1
+	}
+
+	Military_Logistics_Doctrine = {
+		random = no
+		army_damage_factor = 0.15
+		supply_loss_factor = -0.2
+		land_defense = -0.1
+	}
+
+	# 总司令特质
+	Infantry_Expert = {
+		random = no
+		land_infantry_attack = 0.1
+		land_infantry_defense = 0.1
+	}
+
+	Organization_Master = {
+		random = no
+		organization = 0.1
+		organization_regain = 0.1
+	}
+
+	Cleanser_General = {
+		random = no
+		equipment_capture_factor = 0.02
+		research_bonus_factor = 0.2
+	}
+
+	Logistics_Master = {
+		random = no
+		supply_depot_capacity_factor = 0.15
+	}
+
+	# 空军部长特质
+	Air_Superiority = {
+		random = no
+		air_superiority_factor = 0.1
+	}
+
+	Ground_Support = {
+		random = no
+		air_ground_attack = 0.1
+	}
+
+	Ace_Pilot_School = {
+		random = no
+		fighter_ace_chance_factor = 0.1
+	}
+
+	# 海军部长特质
+	Battleship_Gunnery_Expert = {
+		random = no
+		ship_gun_attack = 0.1
+	}
 }
