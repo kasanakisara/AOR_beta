@@ -20099,11 +20099,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_goal_Implement_the_merger_of_enterprises_shine"
-		texturefile = "gfx/interface/goals/Implement_the_merger_of_enterprises.dds"
+		name = "GFX_goal_NAU_Implement_the_merger_of_enterprises_shine"
+		texturefile = "gfx/interface/goals/NAU_Implement_the_merger_of_enterprises.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Implement_the_merger_of_enterprises.dds"
+			animationmaskfile = "gfx/interface/goals/NAU_Implement_the_merger_of_enterprises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20116,7 +20116,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Implement_the_merger_of_enterprises.dds"
+			animationmaskfile = "gfx/interface/goals/NAU_Implement_the_merger_of_enterprises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
