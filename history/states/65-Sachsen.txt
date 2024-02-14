@@ -19,6 +19,7 @@ state={
 		}
 		victory_points = {
 			514 5 
+			9535 3
 		}
 		add_core_of = SAX
 		1939.1.1 = {
@@ -31,7 +32,7 @@ state={
 	}
 
 	provinces={
-		514 573 3514 6441 9535 
+		514 573 3514 6441 9535
 	}
 
 	local_supplies=0.0 
