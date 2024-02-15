@@ -327,6 +327,45 @@ country_event = {
 		set_country_flag = chi_waixibeizhanzheng
 	}
 }
+country_event = {
+	# 段祺瑞的决定
+	id = CHI.16 
+	title = CHI.16.t
+	desc = CHI.16.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		tag = CHI
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.16.a
+	}
+
+}
+
+country_event = {
+	# 东瀛的橄榄枝？
+	id = CHI.17 
+	title = CHI.17.t
+	desc = CHI.17.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		tag = CHI
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.17.a
+		complete_national_focus = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
+	}
+	option = {
+		name = CHI.17.b
+		complete_national_focus = AOR_A_close_meeting_with_the_transportation_department
+	}
+
+}
+
 #还我军事区
 country_event = {
 	id = CHI.999
@@ -472,6 +511,8 @@ country_event = {
 # 		name = CHI.6.a
 # 	}
 # }
+
+
 
 ######测试事件
 country_event = {
