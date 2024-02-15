@@ -724,7 +724,7 @@ country_event = {
 		}
 	}
 }
-ountry_event = {
+country_event = {
 	id = USA.10010 #工作（故事）
     title = USA.10010.t
     desc = USA.10010.d
@@ -736,6 +736,51 @@ ountry_event = {
 	 }
     option = { 
         name = USA.10010.a
+	
+	}
+}
+country_event = {
+	id = USA.10011 #美国左翼文案 “写给厄尔的信”（1）
+    title = USA.10011.t
+    desc = USA.10011.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1919.12.10
+	 }
+    option = { 
+        name = USA.10011.a
+	
+	}
+}
+country_event = {
+	id = USA.10012 #美国左翼文案 “写给厄尔的信”（2）
+    title = USA.10012.t
+    desc = USA.10012.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1919.12.10
+	 }
+    option = { 
+        name = USA.10012.a
+	
+	}
+}
+country_event = {
+	id = USA.10013 #美国左翼文案 “写给厄尔的信”（3）
+    title = USA.10013.t
+    desc = USA.10013.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1922.5.10
+	 }
+    option = { 
+        name = USA.10013.a
 	
 	}
 }
