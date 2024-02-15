@@ -784,3 +784,18 @@ country_event = {
 	
 	}
 }
+country_event = {
+	id = USA.10013 #美国左翼文案 “写给德国梅林的信”
+    title = USA.10013.t
+    desc = USA.10013.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1922.5.10
+	 }
+    option = { 
+        name = USA.10013.a
+	
+	}
+}

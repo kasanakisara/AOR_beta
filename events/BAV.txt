@@ -605,3 +605,19 @@ country_event = {
         } 
 
  }
+
+ country_event = {
+	id = BAV.67 #美国左翼文案 “写给德国梅林的信”
+    title = BAV.67.t
+    desc = BAV.67.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = BAV
+	       date = 1922.5.10
+	 }
+    option = { 
+        name = BAV.67.a
+	
+	    }
+}
