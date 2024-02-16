@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		ETH_the_prince = {
-			picture = ETH_idea_ETH_the_prince
+			picture = GFX_idea_ETH_the_prince
 			allowed = { always = yes }
 			modifier = {
 			political_power_factor = 0.1
@@ -12,7 +12,7 @@ ideas = {
 	  }
 
 ETH_FOUR  = {
-		
+			picture = GFX_idea_ETH_FOUR
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.1

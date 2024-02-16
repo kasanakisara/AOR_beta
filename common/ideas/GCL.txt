@@ -1,7 +1,7 @@
 ideas ={ 
 	country = {
 		GCL_the_Bannan = {
-			picture = GFX_idea_GCL_the_Bannan
+			picture = GFX_idea_banana
 			allowed = { always = yes }
 			modifier = {
 			conscription = -0.01
@@ -14,7 +14,7 @@ ideas ={
 				}
 			}
         GCL_the_Panama = {
-			picture = GFX_idea_GCL_Anglo_frech_enterprise
+			picture = GFX_idea_GCL_the_Panama
 			allowed = { always = yes }
 			modifier = {
 			trade_laws_cost_factor  = 1
