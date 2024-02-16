@@ -242,7 +242,7 @@ focus_tree={
 		x=14
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
-		mutually_exclusive={focus=USA_Mellon }
+		mutually_exclusive={focus=USA_Mellon_idea}
 		cost=3
 		ai_will_do={
 			factor=1
@@ -259,7 +259,7 @@ focus_tree={
 		x=16
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
-		mutually_exclusive={focus=USA_Morgan }
+		mutually_exclusive={focus=USA_Morgan_idea}
 		cost=3
 		ai_will_do={
 			factor=1
