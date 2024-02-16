@@ -314,14 +314,10 @@ country_event = {
 	title = CHI.15.t
 	desc = CHI.15.d
 	picture = GFX_AOR_chi_yimoxizheng
+	is_triggered_only = yes
 	trigger = {
-		date > 1919.10.15
 		tag = CHI
 	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	fire_only_once = yes
 	option = {
 		name = CHI.15.a
 		set_country_flag = chi_waixibeizhanzheng
