@@ -29,11 +29,38 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             custom_effect_tooltip = Randomly_add_2_civilian_factories_to_your_province
-            random_owned_controlled_state = {
-                industrial_complex = 1
-            }
-		}
-	}
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+        }
+    }
 	focus = { #硝酸工业
 		id = AOR_general_industry_2
 		icon = GFX_goal_general_industry_2
@@ -803,12 +830,7 @@ focus_tree = {
 				name = special_forces_bonus
 				bonus = 1.0
 				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+				technology = cat_special_forces_generic
 			}
 		}
 
@@ -992,8 +1014,8 @@ focus_tree = {
 		completion_reward = {
             add_tech_bonus = {
 				bonus = 1.0
-				technology = light_fighter
-                technology = cat_heavy_fighter
+				category = light_fighter
+                category = cat_heavy_fighter
             }
 		}
 
@@ -1416,7 +1438,7 @@ focus_tree = {
             add_equipment_to_stockpile = {
                 type = add_equipment_production
                 amount = 300
-                producer = THIS
+                producer = ROOT
             }
 		}
 
@@ -1535,7 +1557,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            set_technology = { 618 = 1 } #野战医院
+            set_technology = { field_hospital = 1 } #野战医院
 		}
 
 	}
@@ -1554,8 +1576,8 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            stability_factor = 0.2
-            war_support_factor = 0.2
+            add_stability = 0.2
+            add_war_support = 0.2
 		}
 
 	}
@@ -1593,7 +1615,9 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            elections_allowed = yes
+            set_politics = {
+                elections_allowed = yes               
+            }
 		}
 
 	}
@@ -1619,7 +1643,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            stability_factor = 0.2
+            add_stability = 0.2
 		}
 
 	}
@@ -1663,7 +1687,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            stability_factor = 0.1
+            add_stability = 0.1
 		}
 
 	}
@@ -1684,7 +1708,7 @@ focus_tree = {
         }
 		bypass = {}
 		completion_reward = {
-            stability_factor = 0.1
+            add_stability = 0.1
 		}
 
 	}
@@ -2283,15 +2307,7 @@ focus_tree = {
 					popup = no
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_completed_focus = ITA_disband_the_blackshirts }
-				}
-				custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = ITA_renato_ricci
-			}
 		}
 
 	}
-
 }
