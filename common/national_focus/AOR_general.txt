@@ -19,7 +19,7 @@ focus_tree = {
 	focus = { #工业之母
 		id = AOR_general_industry_1
 		icon = GFX_goal_general_industry_1
-		cost = 10.00
+		cost = 15.00
 		x = 7
 		y = 0
 		ai_will_do = {
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = { #硝酸工业
 		id = AOR_general_industry_2
 		icon = GFX_goal_general_industry_2
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = { #枪弹产业
 		id = AOR_general_industry_3
 		icon = GFX_goal_AOR_general_industry_3
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_2
 		}
@@ -169,7 +169,7 @@ focus_tree = {
 	focus = { #硝铵工业
 		id = AOR_general_industry_4
 		icon = GFX_goal_general_industry_4
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_2
 		}
@@ -182,12 +182,8 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
+                add_extra_state_shared_building_slots = 1
+
                 add_building_construction = {
                     type = industrial_complex
                     level = 1
@@ -200,7 +196,7 @@ focus_tree = {
 	focus = { #本地冶金工业
 		id = AOR_general_industry_5
 		icon = GFX_goal_general_industry_5
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -213,10 +209,10 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
             }
@@ -226,7 +222,7 @@ focus_tree = {
 	focus = { #改进挖掘工具
 		id = AOR_general_industry_6
 		icon = GFX_goal_general_industry_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_5
 		}
@@ -249,7 +245,7 @@ focus_tree = {
 	focus = { #改进弹药工艺
 		id = AOR_general_industry_7
 		icon = GFX_goal_general_industry_7
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_4
 		}
@@ -290,7 +286,7 @@ focus_tree = {
 	focus = { #大型采矿设备
 		id = AOR_general_industry_9
 		icon = GFX_goal_general_industry_9
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_8
 		}
@@ -314,7 +310,7 @@ focus_tree = {
 	focus = { #合成氨工业
 		id = AOR_general_industry_10
 		icon = GFX_goal_general_industry_10
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -338,7 +334,7 @@ focus_tree = {
 	focus = { #改进炸药工艺
 		id = AOR_general_industry_11
 		icon = GFX_goal_general_industry_11
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_10
 		}
@@ -357,7 +353,7 @@ focus_tree = {
 	focus = { #化肥工业
 		id = AOR_general_industry_12
 		icon = GFX_goal_general_industry_12
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_10
 		}
@@ -392,10 +388,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -405,7 +401,7 @@ focus_tree = {
 	focus = { #黏胶纤维工业
 		id = AOR_general_industry_13
 		icon = GFX_goal_general_industry_13
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -430,7 +426,7 @@ focus_tree = {
 	focus = { #可替代型纤维产业
 		id = AOR_general_industry_14
 		icon = GFX_goal_general_industry_14
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_13
 		}
@@ -478,7 +474,7 @@ focus_tree = {
 	focus = { #建材工业
 		id = AOR_general_industry_15
 		icon = GFX_goal_general_industry_15
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -503,7 +499,7 @@ focus_tree = {
 	focus = { #改进基建技术
 		id = AOR_general_industry_16
 		icon = GFX_goal_general_industry_16
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_15
 		}
@@ -565,7 +561,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -575,7 +571,7 @@ focus_tree = {
 	focus = { #民用产业体系化
 		id = AOR_general_industry_17
 		icon = GFX_goal_general_industry_17
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_12
 		}
@@ -602,7 +598,7 @@ focus_tree = {
 	focus = { #三军理论
 		id = AOR_general_army_1
 		icon = GFX_goal_general_army_1
-		cost = 10.00
+		cost = 15.00
 		x = 20
 		y = 0
 		ai_will_do = {
@@ -620,7 +616,7 @@ focus_tree = {
 	focus = { #陆军理论
 		id = AOR_general_army_2
 		icon = GFX_goal_general_army_2
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_1
 		}
@@ -645,7 +641,7 @@ focus_tree = {
 	focus = { #普遍民兵
 		id = AOR_general_army_3
 		icon = GFX_goal_general_army_3
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -672,7 +668,7 @@ focus_tree = {
 	focus = { #武装民兵
 		id = AOR_general_army_4
 		icon = GFX_goal_general_army_4
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_3
 		}
@@ -691,7 +687,7 @@ focus_tree = {
 	focus = { #武器支援
 		id = AOR_general_army_5
 		icon = GFX_goal_general_army_5
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_4
 		}
@@ -715,7 +711,7 @@ focus_tree = {
 	focus = { #职业军人
 		id = AOR_general_army_6
 		icon = GFX_goal_general_army_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -742,7 +738,7 @@ focus_tree = {
 	focus = { #炮兵团
 		id = AOR_general_army_7
 		icon = GFX_goal_general_army_7
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_6
 		}
@@ -761,7 +757,7 @@ focus_tree = {
 	focus = { #战车队
 		id = AOR_general_army_8
 		icon = GFX_goal_general_army_8
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_7
 		}
@@ -784,7 +780,7 @@ focus_tree = {
 	focus = { #现代陆军理论
 		id = AOR_general_army_9
 		icon = GFX_goal_general_army_9
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -809,7 +805,7 @@ focus_tree = {
 	focus = { #陆军精英
 		id = AOR_general_army_10
 		icon = GFX_goal_general_army_10
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_5
 			focus = AOR_general_army_8
@@ -908,7 +904,7 @@ focus_tree = {
 	focus = { #飞行俱乐部
 		id = AOR_general_army_12
 		icon = GFX_goal_general_army_12
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_11
 		}
@@ -981,7 +977,7 @@ focus_tree = {
 	focus = { #仿造航空器
 		id = AOR_general_army_13
 		icon = GFX_goal_general_army_13
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_12
 		}
@@ -1000,7 +996,7 @@ focus_tree = {
 	focus = { #长空挥镰
 		id = AOR_general_army_14
 		icon = GFX_goal_general_army_14
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_13
 		}
@@ -1023,7 +1019,7 @@ focus_tree = {
 	focus = { #空中威胁
 		id = AOR_general_army_15
 		icon = GFX_goal_general_army_15
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_12
 		}
@@ -1046,7 +1042,7 @@ focus_tree = {
 	focus = { #海军经费
 		id = AOR_general_army_16
 		icon = GFX_goal_general_army_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_1
 		}
@@ -1159,7 +1155,7 @@ focus_tree = {
 	focus = { #新锐学派
 		id = AOR_general_army_17
 		icon = GFX_goal_general_army_17
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -1187,7 +1183,7 @@ focus_tree = {
 	focus = { #保守学派
 		id = AOR_general_army_18
 		icon = GFX_goal_general_army_18
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -1218,7 +1214,7 @@ focus_tree = {
 	focus = { #拓建船坞
 		id = AOR_general_army_19
 		icon = GFX_goal_general_army_19
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_17
 			focus = AOR_general_army_18
@@ -1359,7 +1355,7 @@ focus_tree = {
 	focus = { #地区海军威慑
 		id = AOR_general_army_21
 		icon = GFX_goal_general_army_21
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_20
 		}
@@ -1383,7 +1379,7 @@ focus_tree = {
 	focus = { #仿造舰艇
 		id = AOR_general_army_22
 		icon = GFX_goal_general_army_22
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -1463,7 +1459,7 @@ focus_tree = {
 	focus = { #自由民主主义
 		id = AOR_general_politics_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_1
 		}
@@ -1490,7 +1486,7 @@ focus_tree = {
 	focus = { #自由贸易
 		id = AOR_general_politics_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_2
 		}
@@ -1509,7 +1505,7 @@ focus_tree = {
 	focus = { #构筑党派
 		id = AOR_general_politics_4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_3
 		}
@@ -1527,7 +1523,7 @@ focus_tree = {
 	focus = { #保障人权
 		id = AOR_general_politics_5
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_2
 		}
@@ -1603,7 +1599,7 @@ focus_tree = {
 	focus = { #自由选举
 		id = AOR_general_politics_9
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_4
 		}
@@ -1624,7 +1620,7 @@ focus_tree = {
 	focus = { #政府工具
 		id = AOR_general_politics_10
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_7
 			focus = AOR_general_politics_8
@@ -1650,7 +1646,7 @@ focus_tree = {
 	focus = { #自由之路的开端
 		id = AOR_general_politics_11
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_9
 		}
@@ -1694,7 +1690,7 @@ focus_tree = {
 	focus = { #传统保守
 		id = AOR_general_politics_13
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -1719,7 +1715,7 @@ focus_tree = {
 	focus = { #节制政治
 		id = AOR_general_politics_14
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_13
 		}
@@ -1737,7 +1733,7 @@ focus_tree = {
 	focus = { #反对革命
 		id = AOR_general_politics_15
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_13
 		}
@@ -1755,7 +1751,7 @@ focus_tree = {
 	focus = { #精英政治
 		id = AOR_general_politics_16
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_15
 		}
@@ -1776,7 +1772,7 @@ focus_tree = {
 	focus = { #捍卫价值
 		id = AOR_general_politics_17
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_15
 		}
@@ -1794,7 +1790,7 @@ focus_tree = {
 	focus = { #强化立法机构
 		id = AOR_general_politics_18
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_17
 		}
@@ -1812,7 +1808,7 @@ focus_tree = {
 	focus = { #连续性
 		id = AOR_general_politics_19
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_18
 		}
@@ -1830,7 +1826,7 @@ focus_tree = {
 	focus = { #稳定性
 		id = AOR_general_politics_20
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_18
 		}
@@ -1848,7 +1844,7 @@ focus_tree = {
 	focus = { #回归理想
 		id = AOR_general_politics_21
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_19
 		}
@@ -1869,7 +1865,7 @@ focus_tree = {
 	focus = { #保守宗教
 		id = AOR_general_politics_22
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -1894,7 +1890,7 @@ focus_tree = {
 	focus = { #源自神明的信仰
 		id = AOR_general_politics_23
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_22
 		}
@@ -1912,7 +1908,7 @@ focus_tree = {
 	focus = { #提倡传统价值
 		id = AOR_general_politics_24
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_22
 		}
@@ -1966,7 +1962,7 @@ focus_tree = {
 	focus = { #反政治体制滥用
 		id = AOR_general_politics_27
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_26
 		}
@@ -2005,7 +2001,7 @@ focus_tree = {
 	focus = { #混合现代哲学
 		id = AOR_general_politics_29
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_27
 		}
@@ -2026,7 +2022,7 @@ focus_tree = {
 	focus = { #维持现状
 		id = AOR_general_politics_30
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_25
 		}
@@ -2044,7 +2040,7 @@ focus_tree = {
 	focus = { #反腐败
 		id = AOR_general_politics_31
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_30
 		}
@@ -2062,7 +2058,7 @@ focus_tree = {
 	focus = { #反违背教义
 		id = AOR_general_politics_32
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_30
 		}
@@ -2080,7 +2076,7 @@ focus_tree = {
 	focus = { #领袖专制
 		id = AOR_general_politics_33
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -2106,7 +2102,7 @@ focus_tree = {
 	focus = { #个人崇拜
 		id = AOR_general_politics_34
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -2152,7 +2148,7 @@ focus_tree = {
 	focus = { #团结阶级
 		id = AOR_general_politics_35
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -2178,7 +2174,7 @@ focus_tree = {
 	focus = { #集权主义
 		id = AOR_general_politics_36
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -2197,7 +2193,7 @@ focus_tree = {
 	focus = { #强化体系
 		id = AOR_general_politics_37
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_34
 			focus = AOR_general_politics_35
@@ -2244,7 +2240,7 @@ focus_tree = {
 	focus = { #防止掣肘
 		id = AOR_general_politics_38
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_37
 		}
@@ -2293,7 +2289,7 @@ focus_tree = {
 	focus = { #去民主政治
 		id = AOR_general_politics_39
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_37
 		}
@@ -2320,7 +2316,7 @@ focus_tree = {
 	focus = { #掌控国家
 		id = AOR_general_politics_40
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_39
 		}
@@ -2339,7 +2335,7 @@ focus_tree = {
 	focus = { #强化内阁
 		id = AOR_general_politics_41
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_39
 		}
@@ -2359,7 +2355,7 @@ focus_tree = {
 	focus = { #一致行动
 		id = AOR_general_politics_42
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_40
 		}
