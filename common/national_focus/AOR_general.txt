@@ -28,18 +28,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-<<<<<<< HEAD
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-		}
-	}
-=======
+
             custom_effect_tooltip = Randomly_add_2_civilian_factories_to_your_province
                 random_owned_controlled_state = {
                     limit = {
@@ -73,7 +62,6 @@ focus_tree = {
                 }
         }
     }
->>>>>>> 8663a554dd71d10c1898d99685f3a62ff6253ed8
 	focus = { #硝酸工业
 		id = AOR_general_industry_2
 		icon = GFX_goal_general_industry_2
@@ -477,10 +465,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -715,12 +703,11 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 1.0
 				uses = 1
-				category = infantry_weapons
-				category = artillery
+				category = cat_mass_assault
 			}
 		}
 
@@ -744,11 +731,11 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             add_doctrine_cost_reduction = {
-                name = infantry_artillery_bonus
-				bonus = 1.0
+				name = fleet_in_being_bonus
+				cost_reduction = 1
 				uses = 1
 				category = cat_superior_firepower
-            }
+			}
 		}
 
 	}
@@ -1490,8 +1477,8 @@ focus_tree = {
 		}
 		available = {
         	OR = {
-				has_government = democratic
-				has_government = neutrality
+				has_government = FRE_democratic
+				has_government =  SOC_democratic
 			}
         }
 		bypass = {}
@@ -1717,7 +1704,11 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-            has_government = CON_democratic
+			OR = {
+				has_government = CON_democratic
+				has_government = AUT_democratic
+			}
+            
         }
 		bypass = {}
 		completion_reward = {
@@ -1888,7 +1879,12 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-            has_government = ISL_democratic
+			OR = {
+				has_government = ISL_democratic
+				has_government = AUT_democratic
+				has_government =  CON_democratic
+			}
+            
         }
 		bypass = {}
 		completion_reward = {
@@ -2094,7 +2090,12 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-            has_government = Fascism
+			OR = {
+				has_government = Fascism
+				has_government = Absolutism
+				has_government = Special
+			}
+            
         }
 		bypass = {}
 		completion_reward = {
@@ -2120,10 +2121,31 @@ focus_tree = {
             add_political_power = 75
 			add_war_support = 0.02
 			add_stability = 0.02
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
 			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
+			
 		}
 
 	}
@@ -2142,10 +2164,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            add_popularity = {
-				ideology = fascism
-				popularity = 0.2
-			}
+
             if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
@@ -2194,12 +2213,31 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-            add_popularity = {
-				ideology = fascism
-				popularity = 1
-			}
-            add_ideas = paramilitarism_focus
             add_ideas = deterrence
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
 		}
 
 	}
@@ -2219,6 +2257,30 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             add_ideas = ideological_fanaticism_focus
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
 			set_rule = {
 				can_create_factions = yes
 			}
@@ -2313,7 +2375,6 @@ focus_tree = {
 		bypass = {}
 		completion_reward = {
             add_ideas = foreign_expeditions_focus
-            add_ideas = ITA_camicie_nere
 			hidden_effect = {
 				set_technology = {
 					camicie_nere_security_militias = 1
