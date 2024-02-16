@@ -111,10 +111,9 @@ country_event = {#侵略成功
 		transfer_state = 797
 		transfer_state =  340
 		transfer_state =  341
-		transfer_state = 49
-		transfer_state =  343
+
 		transfer_state =  347
-		transfer_state = 346
+
 		every_country = {
 			limit = { has_war_with = TUR }
 			white_peace = TUR
@@ -155,10 +154,9 @@ country_event = {#自卫成功
 			limit = { has_war_with = TUR }
 			white_peace = TUR
 		}
-		transfer_state = 49
-		transfer_state =  343
+
 		transfer_state =  347
-		transfer_state = 346
+
 		GRE = {
 			country_event = {days = 45 id = GRE.5}
 		}
@@ -447,5 +445,36 @@ country_event = {
 			days = 1 id = YUG.1
 		}}
 		log = "[GetLogInfo] [From.GetName]: event GRE.16 option GRE.12.a"
+	}
+}
+country_event = {
+	id=GRE.1453
+	title = GRE.1453.t
+	desc = GRE.1453.d
+	picture = GFX_events_GRE_1453
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GRE.16.a
+		GRE = {
+
+			every_state = {
+				add_core_of = GRE
+			}
+			add_manpower = 14530000
+
+			}
+		GRE = {
+			add_ideas = {
+			FUCK_YOU_COLONIST
+			}
+			leave_faction = yes
+		}
+		every_country = {
+			declare_war_on = {
+				target = GRE
+				type = civil_war
+			}
+		}
 	}
 }

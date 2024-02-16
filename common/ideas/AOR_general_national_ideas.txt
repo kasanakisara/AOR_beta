@@ -58,7 +58,7 @@ ideas = {
 			modifier = {
                 production_speed_buildings_factor = 0.15
                 production_speed_industrial_complex_factor = 0.15
-                industrial_capacity_factory = 0.2
+                industrial_capacity_factory = 0.1
 			}
         }
 
@@ -106,7 +106,7 @@ ideas = {
 			removal_cost = -1
 
             modifier = {
-                conscription_factor = 0.2
+                conscription_factor = 0.1
                 ai_focus_aggressive_factor = 0.3
                 army_core_attack_factor = 0.1 #陆军核心攻击
                 army_core_defence_factor = 0.1 #陆军核心防御
