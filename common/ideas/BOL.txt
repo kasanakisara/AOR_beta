@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		BOL_the_Andes = {
-			picture = BOL_idea_BOL_the_Andes
+			picture = GFX_idea_BOL_the_Andes
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1

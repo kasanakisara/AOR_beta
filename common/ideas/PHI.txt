@@ -11,7 +11,7 @@ ideas = {
 		}
 
 		PHI_fenlie = {
-			picture = GFX_idea_lese_goverment
+			picture = GFX_idea_PHI_fenlie
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.2
