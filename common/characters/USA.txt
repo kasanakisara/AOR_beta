@@ -1,13 +1,13 @@
 characters = {
 	USA_john_pershing = {
-		name = "约翰·潘兴"
+		name = "约瑟夫·潘兴"
 		portraits = {
 			army = {
 				large = gfx/leaders/USA/john_pershing.dds
 				small = gfx/interface/ideas/john_pershing.dds
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = { career_officer brilliant_strategist politically_connected } # 职业军官，天才战略家，政治关联
 			skill = 5
 			attack_skill = 4
@@ -25,7 +25,7 @@ characters = {
 				small = gfx/interface/ideas/tasker_bliss.dds
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = { career_officer inflexible_strategist organizer } # 职业军官，不灵活的战略家，组织者
 			skill = 4
 			attack_skill = 3
@@ -43,7 +43,7 @@ characters = {
 				small = gfx/interface/ideas/payton_march.dds
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = { career_officer skilled_staffer trickster } # 职业军官，熟练参谋，奇袭专家
 			skill = 4
 			attack_skill = 4
