@@ -1,0 +1,39 @@
+spriteTypes = {
+	#欧洲通用头像-陆军
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_1_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_2_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_2_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_3_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_4_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_4_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_5_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_6_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_6_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_7_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_7_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_8_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_8_land_new.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Europe_Generic_9_land_new"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_9_land_new.png"
+	}
+}
