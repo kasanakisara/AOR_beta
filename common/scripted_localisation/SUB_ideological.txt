@@ -60,12 +60,40 @@ defined_text = {
 		trigger = { has_country_leader_ideology = liberalism }
 		localization_key = liberalism
 	}
+	text = {
+		trigger = { has_country_leader_ideology = sanminism }
+		localization_key = sanminism
+	}
 }
 defined_text = {
 	name = GetSubIdeologyLocAUT_democratic
 	text = {
 		trigger = { has_country_leader_ideology = authoritarianism }
 		localization_key = authoritarianism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = patriarch }
+		localization_key = patriarch
+	}
+	text = {
+		trigger = { has_country_leader_ideology = limited }
+		localization_key = limited
+	}
+	text = {
+		trigger = { has_country_leader_ideology = oligarchy }
+		localization_key = oligarchy
+	}
+	text = {
+		trigger = { has_country_leader_ideology = uni_san }
+		localization_key = uni_san
+	}
+	text = {
+		trigger = { has_country_leader_ideology = confuism }
+		localization_key = confuism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = corporatism }
+		localization_key = corporatism
 	}
 }
 defined_text = {
@@ -81,9 +109,42 @@ defined_text = {
 }
 defined_text = {
 	name = GetSubIdeologyLocSOC_democratic
+	
 	text = {
 		trigger = { has_country_leader_ideology = socialism }
 		localization_key = socialism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = meliorism }
+		localization_key = meliorism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = unionism }
+		localization_key = unionism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = newdemism }
+		localization_key = newdemism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = surrenderism }
+		localization_key = surrenderism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = new_san }
+		localization_key = new_san
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = lianshengism }
+		localization_key = lianshengism
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = social_liberalism  }
+		localization_key = social_liberalism 
+	}	
+	text = {
+		trigger = { has_country_leader_ideology = PanAfricanism }
+		localization_key = PanAfricanism
 	}
 }
 defined_text = {
@@ -112,6 +173,26 @@ defined_text = {
 		trigger = { has_country_leader_ideology = luxemburgism }
 		localization_key = luxemburgism
 	}
+	text = {
+		trigger = { has_country_leader_ideology = REV_soc }
+		localization_key = REV_soc
+	}
+	text = {
+		trigger = { has_country_leader_ideology = committee }
+		localization_key = committee
+	}
+	text = {
+		trigger = { has_country_leader_ideology = PRC_county }
+		localization_key = PRC_county
+	}
+	text = {
+		trigger = { has_country_leader_ideology = PRC_pioneer }
+		localization_key = PRC_pioneer
+	}
+	text = {
+		trigger = { has_country_leader_ideology = PRC_urban }
+		localization_key = PRC_urban
+	}
 }
 defined_text = {
 	name = GetSubIdeologyLocAnarcho
@@ -122,6 +203,18 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = syndicalism }
 		localization_key = syndicalism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = new_ten }
+		localization_key = new_ten
+	}
+	text = {
+		trigger = { has_country_leader_ideology = new_ref }
+		localization_key = new_ref
+	}
+	text = {
+		trigger = { has_country_leader_ideology = new_syn  }
+		localization_key = new_syn 
 	}
 }
 defined_text = {
@@ -138,6 +231,26 @@ defined_text = {
 		trigger = { has_country_leader_ideology = nationalism }
 		localization_key = nationalism
 	}
+	text = {
+		trigger = { has_country_leader_ideology =strasser }
+		localization_key = strasser
+	}
+	text = {
+		trigger = { has_country_leader_ideology = troopism }
+		localization_key = troopism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = nationalsoc }
+		localization_key = nationalsoc
+	}
+	text = {
+		trigger = { has_country_leader_ideology = wangism }
+		localization_key = wangism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = szegedism }
+		localization_key = szegedism
+	}
 }
 defined_text = {
 	name = GetSubIdeologyLocAbsolutism
@@ -152,6 +265,14 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = soltanism }
 		localization_key = soltanism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = warlord }
+		localization_key = warlord
+	}
+	text = {
+		trigger = { has_country_leader_ideology = miliciagov }
+		localization_key = miliciagov
 	}
 }
 defined_text = {
@@ -169,6 +290,15 @@ defined_text = {
 		localization_key = nazboh
 	}
 	text = {
-		trigger = { has_country_leader_ideology = strasser }
-		localization_key = strasser
+		trigger = { has_country_leader_ideology = exnationalism }
+		localization_key = exnationalism
 	}
+	text = {
+		trigger = { has_country_leader_ideology = mysticism }
+		localization_key = mysticism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = Megacorp }
+		localization_key = Megacorp
+	}
+}
