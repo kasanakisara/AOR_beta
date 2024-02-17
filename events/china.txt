@@ -362,6 +362,153 @@ country_event = {
 
 }
 
+country_event = {
+	# 给军官升级
+	id=CHI.18
+	title = CHI.18.t
+	desc = CHI.18.d
+	picture = GFX_AOR_chi_yimoxizheng
+	hidden = yes
+	trigger = {
+		tag = CHI
+		has_completed_focus = AOR_Establish_a_crash_course_for_military_officers
+	}
+    mean_time_to_happen = {
+		days = 140
+	}
+	fire_only_once = yes
+	option = {
+		name = CHI.18.a
+		random_army_leader = {
+			add_attack = 1
+			add_defense = 1
+		}
+		random_army_leader = {
+			add_attack = 1
+			add_defense = 1
+		}
+	}
+}
+
+country_event = {
+	# 外西北战争结束
+	id = CHI.19
+	title = CHI.19.t
+	desc = CHI.19.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	trigger = {
+		date > 1920.3.1
+		tag = CHI
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = CHI.19.a
+		set_country_flag = xibeizhanshijieshu
+	}
+}
+
+country_event = {
+	# 暂时的同盟
+	id = CHI.20
+	title = CHI.20.t
+	desc = CHI.20.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.20.a
+		add_stability = 0.05
+	}
+}
+country_event = {
+	# 拒绝合作
+	id = CHI.21
+	title = CHI.21.t
+	desc = CHI.21.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.21.a
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	# 拒绝合作
+	id = CHI.26
+	title = CHI.22.t
+	desc = CHI.22.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.22.a
+		hidden_effect = {
+			AUT = { country_event = AUT.1 }
+		}
+	}
+}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.22
+	title = CHI.22.t
+	desc = CHI.22.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.23.a
+		country_event = { id = CHI.23 }
+		}
+	}	
+country_event = {
+	# 四九城的两日
+	id = CHI.23
+	title = CHI.23.t
+	desc = CHI.23.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.23.a
+		country_event = { id = CHI.24 }
+	}
+}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.24
+	title = CHI.24.t
+	desc = CHI.24.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.24.a
+		country_event = { id = CHI.25 }
+		}
+	}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.25	
+	title = CHI.25.t
+	desc = CHI.25.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+    	name = CHI.25.a
+		add_stability = 0.01
+		add_political_power = 10
+		}
+	}
+
 #还我军事区
 country_event = {
 	id = CHI.999
@@ -391,6 +538,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 917
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -410,6 +561,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 586
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -429,6 +584,10 @@ country_event = {
 			transfer_state = 918
 		}
 		add_state_core = 918
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -448,6 +607,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 654
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -467,6 +630,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 916
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -486,6 +653,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 920
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a

@@ -395,7 +395,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -445,7 +445,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -473,7 +473,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -593,7 +593,24 @@ ideas = {
 				XP_GAIN_ARMY = 0.03
 	
 			}
-		}
+		}	
+		junguansuchengban = {
+				
+			picture = GFX_idea_junguansuchengban
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
 	
+			modifier = {
+				experience_gain_army = 0.1
+				experience_gain_infantry_training_factor = 0.25
+	
+			}
+		}
 	}
 }
