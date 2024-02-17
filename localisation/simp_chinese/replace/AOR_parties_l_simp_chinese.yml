@@ -382,13 +382,15 @@
  ARG_Marxism_party_long:0 "阿根廷共产党"
  ARG_Absolutism_party:0 "国家团结党"
  ARG_Absolutism_party_long:0 "国家团结党"
+######Brazil#######
  BRA_Fascism_party:1 "巴西统合运动党"
  BRA_Fascism_party_long:1 "巴西统合运动党"
  BRA_Marxism_party:1 "巴西共产党"
  BRA_Marxism_party_long:1 "巴西共产党"
- BRA_CON_democratic_party:1 "巴西民主联盟"
- BRA_CON_democratic_party_long:1 "巴西民主联盟"
- BRA_Absolutism_party:0"巴西统一党"
+ BRA_CON_democratic_party:0 "巴西民主联盟"
+ BRA_FRE_democratic_party:0 "巴西民主联盟"
+ BRA_Absolutism_party:0"巴西统一党-主导集团"
+ BRA_AUT_democratic_party:0"巴西统一党-改革派"
  BRA_Absolutism_party:0 "新国家体制"
  BRA_Absolutism_party_long:0 "新国家体制"
  TUR_Fascism_party:0 "法西斯委员会"
@@ -990,9 +992,6 @@ CSA_nationalism_party:0 "极端党派"
 ####USU###
 USU_Marxism_party:0"美利坚左翼联盟"
 USU_Marxism_party_long:0"美利坚左翼联盟"
-
-######Brazil#######
-BRA_Absolutism_party:0"巴西统一党"
 ######HSP#######
 HSP_Absolutism_party:0"太子港执政府"
 #########orA###########

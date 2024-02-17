@@ -184,7 +184,9 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 100
+	Absolutism = 54
+	AUT_democratic = 21
+	FRE_democratic = 25
 }
 
 
