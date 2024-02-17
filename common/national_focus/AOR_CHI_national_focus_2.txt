@@ -97,11 +97,13 @@ focus_tree = {
 			focus = AOR_Pursue_with_victory
 			focus = AOR_Save_the_fruits_of_the_battle
 		}
-		bypass = {
+
+		available = {
 			check_variable = {
 				xibeizhanhshi < 3
 			}
 		}
+
 		x = 4
 		y = 3
 		completion_reward = {
@@ -178,7 +180,7 @@ focus_tree = {
 			focus = AOR_Pursue_with_victory
 			focus = AOR_Save_the_fruits_of_the_battle
 		}
-		bypass = {
+		available = {
 			check_variable = {
 				xibeizhanhshi > 4 
 			}
@@ -189,7 +191,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.1
 			army_experience = 30
-			country_event = { id = CHI.23}
+			country_event = { id = CHI.22}
 		}
 	}
 	focus = {
@@ -201,7 +203,7 @@ focus_tree = {
 			focus = AOR_Save_the_fruits_of_the_battle
 		}
 
-		bypass = {
+		available = {
 			check_variable = {
 				xibeizhanhshi = 3
 			}
@@ -216,76 +218,78 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			army_experience = 10
-			if = {
-				limit = {
-					NOT = {
-						917 = {
-							is_owned_by = CHI
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							917 = {
+								is_owned_by = CHI
+							}
 						}
 					}
-				}
-				917 = {
-					add_claim_by = CHI
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						586 = {
-							is_owned_by = CHI
-						}
+					917 = {
+						add_claim_by = CHI
 					}
 				}
-				586 = {
-					add_claim_by = CHI
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						918 = {
-							is_owned_by = CHI
+				if = {
+					limit = {
+						NOT = {
+							586 = {
+								is_owned_by = CHI
+							}
 						}
 					}
-				}
-				918 = {
-					add_claim_by = CHI
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						654 = {
-							is_owned_by = CHI
-						}
+					586 = {
+						add_claim_by = CHI
 					}
 				}
-				654 = {
-					add_claim_by = CHI
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						916 = {
-							is_owned_by = CHI
+				if = {
+					limit = {
+						NOT = {
+							918 = {
+								is_owned_by = CHI
+							}
 						}
 					}
-				}
-				916 = {
-					add_claim_by = CHI
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						920 = {
-							is_owned_by = CHI
-						}
+					918 = {
+						add_claim_by = CHI
 					}
 				}
-				920 = {
-					add_claim_by = CHI
+				if = {
+					limit = {
+						NOT = {
+							654 = {
+								is_owned_by = CHI
+							}
+						}
+					}
+					654 = {
+						add_claim_by = CHI
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							916 = {
+								is_owned_by = CHI
+							}
+						}
+					}
+					916 = {
+						add_claim_by = CHI
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							920 = {
+								is_owned_by = CHI
+							}
+						}
+					}
+					920 = {
+						add_claim_by = CHI
+					}
 				}
 			}
 		}
@@ -310,7 +314,8 @@ focus_tree = {
 		cost = 3
 		select_effect = {
 			modifier = {
-				political_power_cost = -0.1									
+				political_power_cost = -0.1		
+			}							
 		}
 		prerequisite = {
 			focus = AOR_Gathering_in_Anfu_Hutong
@@ -335,7 +340,10 @@ focus_tree = {
 		x = 9
 		y = 2
 		completion_reward = {
-			country_event = { id = CHI.22 }
+			add_political_power = -25
+			AUT = {
+				country_event = { id = AUT.1 }
+			}
 		}
 	}
 	focus = {
@@ -821,7 +829,8 @@ focus_tree = {
 		x = 3
 		y = 5
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -834,7 +843,8 @@ focus_tree = {
 		x = 15
 		y = 5
 		completion_reward = {
-			
+			army_experience = 5
+			custom_effect_tooltip = AOR_Stable_Jingzhao_tt
 		}
 	}
 	focus = {
