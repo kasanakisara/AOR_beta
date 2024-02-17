@@ -63,12 +63,12 @@ guiTypes = {
 				spriteType = "GFX_political_chart"
 				position = { x = 28 y = 5 }
 			}
-			iconType ={
-				name ="pol_view_bg"
-				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x = -22 y = 0 }
-				scale = 1.7
-			}
+			
+#			iconType ={
+#				name ="pol_view_bg"
+#				spriteType = "GFX_pol_piechart_overlay_AOR"
+#				position = { x = -22 y = 0 }
+#			}
 		}
 		
 		containerWindowType = {

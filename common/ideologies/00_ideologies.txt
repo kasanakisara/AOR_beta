@@ -44,7 +44,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 239 25 25 }
+		color = { 179 8 31 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -99,7 +99,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 225 74 60 }
+		color = { 199 92 92 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -252,7 +252,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 59 135 148 }
+		color = { 59 97 147 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -312,7 +312,7 @@ ideologies = {
 		"FACTION_NAME_DEMOCRATIC_6"
 	}
 	
-	color = { 71 150 229 }
+	color = { 0 134 191}
 	
 	rules = {
 		can_create_collaboration_government = yes
@@ -431,7 +431,7 @@ ideologies = {
 	dynamic_faction_names = {
 	}
 	
-	color = { 87 182 106 }
+	color = { 36 130 67 }
 	
 	rules = {
 		can_create_collaboration_government = no
@@ -503,7 +503,7 @@ ideologies = {
 	dynamic_faction_names = {
 	}
 	
-	color = { 216 84 135 }
+	color = { 214 83 117 }
 	
 	
 	war_impact_on_world_tension = 0.25		#no major danger
@@ -559,7 +559,7 @@ ideologies = {
 		dynamic_faction_names = {
 		}
 		
-		color = { 114 38 31 }
+		color = { 91 8 8 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
