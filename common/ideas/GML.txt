@@ -12,7 +12,7 @@ ideas = {
 		}
 
 	   GML_hetong= {
-			picture = GFX_idea_lese_goverment
+			picture = GFX_idea_GML_hetong
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.15

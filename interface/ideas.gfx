@@ -6413,7 +6413,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_price_for_freedom"
-		texturefile = "gfx/interface/ideas/price_for_freedom.dds"
+		texturefile = "gfx/interface/ideas/price_for_freedom.png"
 	}
 	spriteType = {
 		name = "GFX_idea_flood_away"

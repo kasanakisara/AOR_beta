@@ -567,8 +567,8 @@ spriteTypes = {
 	}
 	#奥地利
 	spriteType = {
-		name = "GFX_idea_aus_aus_new_republic"
-		texturefile = "gfx/interface/ideas/aus_aus_new_republic.png"
+		name = "GFX_idea_aus_new_republic"
+		texturefile = "gfx/interface/ideas/aus_new_republic.png"
 	}
 	spriteType = {
 		name = "GFX_idea_aus_The_Age_of_Miracles"
@@ -593,8 +593,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GML_xiangjiao.png"
 	}
 	spriteType = {
-		name = "GFX_idea_lese_goverment"
-		texturefile = "gfx/interface/ideas/lese_goverment.png"
+		name = "GFX_idea_PHI_fenlie"
+		texturefile = "gfx/interface/ideas/GML_hetong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GML_hetong"
+		texturefile = "gfx/interface/ideas/GML_hetong.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PHI_liangqiang"
