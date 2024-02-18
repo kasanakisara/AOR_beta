@@ -493,6 +493,84 @@ country_event = {
 		}
 	}
 
+country_event = {		
+	# 经济改革
+	id = CHI.26
+	title = CHI.26.t
+	desc = CHI.26.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.26.a
+		add_ideas = jiaotongxigaigefagan
+	}	
+	option = {
+		name = CHI.26.b
+		add_ideas = caizhengbugaigefangan
+	}	
+}
+country_event = {		
+	# 督军团
+	id = CHI.27
+	title = CHI.27.t
+	desc = CHI.27.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.27.b
+	}	
+}
+country_event = {		
+	# 好事多磨
+	id = CHI.28
+	title = CHI.28.t
+	desc = CHI.28.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.28.b
+		add_ideas = liangshiyi
+		add_ideas = zhuqiyin
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_ideas = yujiaotonghuichubuhezuo
+	}	
+}
+
+country_event = {		
+	# 好事多磨
+	id = CHI.29
+	title = CHI.29.t
+	desc = CHI.29.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.29.a
+		add_stability = 0.1
+	}	
+}
+
+country_event = {		
+	# 好事多磨
+	id = CHI.30
+	title = CHI.30.t
+	desc = CHI.30.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.30.a
+		add_stability = -0.15
+	}	
+}
+
 #还我军事区
 country_event = {
 	id = CHI.999

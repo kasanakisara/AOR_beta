@@ -690,7 +690,8 @@ focus_tree = {
 		x = 21
 		y = 7
 
-	completion_reward={custom_effect_tooltip = UPC_32_tt
+	completion_reward={
+		custom_effect_tooltip = UPC_32_tt
 		}
 }
 	focus = {
