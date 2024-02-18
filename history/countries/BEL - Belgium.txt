@@ -54,3 +54,6 @@ set_popularities = {
 }
 
 set_convoys = 80
+
+#原住民起义
+set_variable = { BEL_Indeppendence = 0.25 }

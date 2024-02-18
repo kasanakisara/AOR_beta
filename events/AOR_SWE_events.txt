@@ -1,0 +1,104 @@
+add_namespace = SWE
+
+country_event = {
+    id = SWE.1 #哈康之死
+    title = SWE.1.t
+    desc = SWE.1.d
+    trigger = {
+        date > 1923.2.13
+        date < 1923.2.15
+    }
+    fire_only_once  = yes
+    option = {
+        name = SWE.1.a
+    }
+}
+
+country_event = {
+    id = SWE.2 #鲁普雷希特登基
+    title = SWE.2.t
+    desc = SWE.2.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.2.a
+    }
+}
+
+country_event = {
+    id = SWE.3 #请求贸易协定
+    title = SWE.3.t
+    desc = SWE.3.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.3.a
+        if = {
+            limit = {
+                tag = ENG
+            }
+            country_event = SWE.4
+        }
+        else = {
+            country_event = SWE.5
+        }
+    }
+    option = {
+        name = SWE.3.b
+        if = {
+            limit = {
+                tag = ENG
+            }
+            country_event = SWE.6
+        }
+        else = {
+            country_event = SWE.7
+        }
+    }
+}
+
+country_event = {
+    id = SWE.4 #请求贸易协定-准许-英国
+    title = SWE.4.t
+    desc = SWE.4.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.4.a
+        add_timed_idea = {
+            idea = SWE_British
+            days = 365
+        }
+    }
+}
+
+country_event = {
+    id = SWE.5 #请求贸易协定-准许-英国
+    title = SWE.5.t
+    desc = SWE.5.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.5.a
+        add_timed_idea = {
+            idea = SWE_Francais
+            days = 365
+        }
+    }
+}
+
+country_event = {
+    id = SWE.6 #请求贸易协定-否决-英国
+    title = SWE.6.t
+    desc = SWE.6.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.6.a
+    }
+}
+
+country_event = {
+    id = SWE.7 #请求贸易协定-否决-法国
+    title = SWE.7.t
+    desc = SWE.7.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.7.a
+    }
+}

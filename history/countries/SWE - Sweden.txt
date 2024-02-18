@@ -155,6 +155,7 @@ add_ideas = {
 	A_lingering_alliance
 	Tiger_of_Silence
 	Let_the_ambitio_sleep
+	SWE_Left_Threat
 }
 
 
@@ -177,7 +178,3 @@ create_country_leader = {
 	traits = {
 	}
 }
-
-#### Add by Hacker
-set_variable = { SWE_Left_Threat_value = 0.2 }
-add_ideas = SWE_Left_Threat
