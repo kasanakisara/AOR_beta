@@ -219,15 +219,15 @@ country_event = {
 	    	ARU = { add_to_faction = FIN }
 	    	FIN = {
 	    	declare_war_on = {
-	     		target = SOV
-	    		type = annex_everything
+					target = SOV
+					type = annex_everything
 	      		} 
 	    	}
-	    	SOV = {add_to_faction = FIc }
+	    	RUS = { add_to_faction = FIC }
 	     	FIC = {
 	        	declare_war_on = {
-	    		target = ARU
-	    		type = annex_everything
+					target = ARU
+					type = annex_everything
 	    		} 
 	    	}
 	    }

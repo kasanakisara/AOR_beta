@@ -28,18 +28,6 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-<<<<<<< HEAD
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-		}
-	}
-=======
             custom_effect_tooltip = Randomly_add_2_civilian_factories_to_your_province
                 random_owned_controlled_state = {
                     limit = {
@@ -73,7 +61,6 @@ focus_tree = {
                 }
         }
     }
->>>>>>> 8663a554dd71d10c1898d99685f3a62ff6253ed8
 	focus = { #硝酸工业
 		id = AOR_general_industry_2
 		icon = GFX_goal_general_industry_2
