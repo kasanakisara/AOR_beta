@@ -600,6 +600,8 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			country_event = { id = CHI.17 }
+			add_stability = -0.05
+			custom_effect_tooltip = AOR_To_seek_skin_from_a_tiger_tt
 		}
 	}
 	focus = {
@@ -613,8 +615,8 @@ focus_tree = {
 			focus = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
 		}
 
-		bypass = {
-
+		available = {
+			always = no
 		}
 
 		x = 23
@@ -674,8 +676,8 @@ focus_tree = {
 		id = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
 		icon = GFX_goal_unknown
 		cost = 0.00
-		bypass = {
-			
+		available = {
+			always = no
 		}
 		prerequisite = {
 			focus = AOR_To_seek_skin_from_a_tiger
