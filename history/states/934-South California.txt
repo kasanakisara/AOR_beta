@@ -10,7 +10,9 @@ state = {
 	history = {
 		owner = MXS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
 		}
 		add_core_of = MXS
 		USA = {
@@ -22,6 +24,9 @@ state = {
 		}
 		victory_points = {
 			1562 15 
+		}
+		victory_points = {
+			4518 3 
 		}
 	}
 

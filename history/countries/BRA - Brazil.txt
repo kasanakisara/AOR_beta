@@ -3,6 +3,13 @@
 
 oob = "BRA_AOR"
 
+
+add_ideas = BRA_wansuifongsaika
+add_ideas = BRA_bujiedebaizang
+add_ideas = BRA_shengbaoluoxiedin
+add_ideas = BRA_nanmeidekanshouren
+add_ideas = BRA_yidaobahen
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -177,7 +184,9 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 100
+	Absolutism = 54
+	AUT_democratic = 21
+	FRE_democratic = 25
 }
 
 

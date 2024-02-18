@@ -75,7 +75,7 @@
  AOR_Take_shelter_from_the_sharp_edge_he_will_report_in_the_future:0 "暂避锋芒，他日来报"
  AOR_bridge_the_gap:0 "努力弥合"
  AOR_Negotiating_conditions_with_the_Central_Department:0 "同中央系谈条件"
- AOR_Meeting_with_Wu_Ziyu_for_the_second_time:0 "与吴子玉会次面"
+ AOR_Meeting_with_Wu_Ziyu:0 "与吴子玉会次面"
  Internal_Tripartite_Coordinati_on_Meeting_within_Beiyang:0 "北洋内部三方协调会议"
  AOR_the_last_try_to_organize_beiyang:0 "对北洋统合的最后一次尝试"
  AOR_Unbreakable_and_unstoppable:0 "不破不立"
@@ -110,6 +110,7 @@
  AOR_CLEAR_cage_to_exchange_birds:0 "腾笼换鸟"
 
 
+
  AOR_Gathering_in_Anfu_Hutong_desc:0 "民国本就不稳定的表面平衡，在袁大总统仙逝后，变得更加脆弱。进步党人，南北国民党人，以及一些还依然隐藏在水面下的势力，都开始在阴影中蠢蠢欲动。暗流已经涌动，而作为深受袁大总统器重，甚至是半个女婿的段祺瑞，如今正处在抉择的十字路口。如今，是时候做出决断了。徐树铮已经做好安排，在不日将于安福胡同举行的聚会上，段祺瑞将必须和他的同道一起，做出未来方向的最后决定。"
  AOR_Northwest_Defense_Law_desc:0 "西北战事了结后，大部分前线部队已然返回。此时俄人哥萨克进入蒙古，无疑是对我民国主权的践踏。但今日之形势，再想全国动员，共击俄寇已然不太现实。在此种情况下，建立一支特编蒙古驻军，以在当地稳定局势和进行建设，是最合适的选择。"
  AOR_Northwest_War_desc:0 "袁总统离世前的最后一段时间，最关注的就是西北的对俄战事。即使是在病中，他也多次询问前线战事顺不顺利，官兵将士们的士气如何，能不能吃饱穿暖。如今大总统已逝，我们更要收拾心情，打起精神，牢记总统遗愿，抓准时机，猛击熊腹，血我中华近代之耻！"
@@ -121,7 +122,7 @@
  AOR_Take_shelter_from_the_sharp_edge_he_will_report_in_the_future_desc:0 "尽管前线将士已经用尽了全力，胜利似乎依旧遥不可及。精疲力尽的敌我双方，在前线相互对峙，而双方的上层，开始了无趣而漫长的谈判，这场战争对于官兵来说，已然结束。继续沉湎于过去已毫无意义，为今之计，莫过于暂避锋芒，来日再战。"
  AOR_bridge_the_gap_desc:0 "即使政见不一，理念不合，我们和吴子玉以及中央系的关系，依旧有着最后一层纽带 ——北洋同袍。如今大总统撒手人寰，国家面临危机，作为曾经的生死弟兄，真的要走到手足相残的那一步吗？"
  AOR_Negotiating_conditions_with_the_Central_Department_desc:0 "既然已下定决心，那就要迅速采取行动。中央系是三方势力中纸面实力最弱的，但是他们实质上控制着北京，犹如心口的一把尖刀。我们应该与他们接触，寻求合作的可能，从而确保京兆地区的安全。"
- AOR_Meeting_with_Wu_Ziyu_for_the_second_time_desc:0 "吴佩孚在其周围聚拢了一群政见相近的将校，在如今人心惶惶的北洋内部，有另立山头的打算。为了维护北洋团结、共克时艰，是时候开诚布公的和吴子玉进行一次会面，讨论北洋的未来了"
+ AOR_Meeting_with_Wu_Ziyu_desc:0 "吴佩孚在其周围聚拢了一群政见相近的将校，在如今人心惶惶的北洋内部，有另立山头的打算。为了维护北洋团结、共克时艰，是时候开诚布公的和吴子玉进行一次会面，讨论北洋的未来了"
  Internal_Tripartite_Coordinati_on_Meeting_within_Beiyang_desc:0 "在与中央系和吴子玉达成初步协议后，弥合北洋的第一步已经顺利完成。为了能更好的团结北洋，也为了能更好的满足皖-央-直三方的利益，举行一次三方协调会议的计划已经提上了日程。"
  AOR_the_last_try_to_organize_beiyang_desc:0 "直到现在，也有许多人难以相信，北洋真的完成了内部统合，但事实确实如此。这个松散的联盟可能持续不了太久，但仅仅是目前来看，如今的北洋，可谓精诚团结。"
  AOR_Unbreakable_and_unstoppable_desc:0 "民国政府曾经脆弱的平衡，几乎完全系于大总统一人。如今，从国会到地方，分裂和对抗由暗到明，不一而足。而在北洋系内部，由于大总统去世而产生的权力真空，也让野心家蠢蠢欲动。袁世凯在北洋军中的地位和影响力，是独一无二且无法替代的，想要推举另一个可以让大多数人信服的继任者，几乎是天方夜谭。北洋的分裂，已不可避免，既然如此，我们的该早做准备，确保我们能笑到最后"
@@ -166,6 +167,17 @@
  CHI_gaigebeiyang:0 "改革北洋"
  CHI_gaigebeiyang_desc:0 "经历了一个时期的混乱与阵痛后，段靳二人对北洋的初步改革已经有了成效。剔除和优化了冗余人员和腐化机构，使原本暮气昭昭的北洋军重新焕发出了生命力。但是作为执行者的段靳二人明白，在处理完表面问题，并将北洋改革推进至深水区后，改革只会越来越困难。"
  AOR_Attract_the_First_Fleet_of_the_Navy_tt:0 "未来海军第一舰队将加入北京政府一方作战"
+ AOR_shengchengsangexibeibianfangjun_tt:0 "70天后生成三个“西北边防军”师，未来归属于皖系；西北边防军将领（曲同丰、樊钟秀、郭坚）将在未来加入北京政府）"
+ AOR_Mongolian_State_of_Emergency_Act_tt:0 "§R蒙古局势恶化，恩琴成为“大巴图鲁”§!"
+ Promulgate_the_Party_Ban_Law_tt:0 "共产党被定义为暴乱组织，禁止公开活动  §R他们绝不会善罢甘休§!"
+ AOR_Stable_Jingzhao_tt:0 "未来主力部队将集中布置在京兆"
+ AOR_A_white_blade_never_lets_go_tt:0 "§R屠杀开始了！§!"
+ AOR_CLEAR_cage_to_exchange_birds_tt:0 "蒙古叛乱已经平定"
+ AOR_Japan_Anhui_Friendship_and_Mutual_Aid_Agreement_tt:0 "§R更大的代价将在未来付出§!"
+ AOR_Anhui_Fengtian_Secret_Covenant_tt:0 "内战爆发后皖奉签订互不侵犯协定，奉系将不会在蒙古方向发起边境摩擦"
+
+
+
 ########################################################################################################################
  CHI_UPC_1:0 "中华联省国策树"
  CHI_Flag_Independence_0:0 "树起独立旗"

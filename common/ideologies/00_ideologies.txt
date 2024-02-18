@@ -1,5 +1,6 @@
 ideologies = {
 
+	#革命社会主义
 	Marxism = {
 		
 		types = {
@@ -30,7 +31,9 @@ ideologies = {
 
 			PRC_urban= {	#城市中心革命论
 			}
-
+			
+			REV_soc = {   #革命社会民主主义
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -41,7 +44,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 239 25 25 }
+		color = { 179 8 31 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -72,7 +75,7 @@ ideologies = {
 	}
 
  #########################
-
+	#温和社会主义
 	PAR_socialism = {
 	
 		types = {
@@ -83,9 +86,6 @@ ideologies = {
 
 
 			demsoc = {
-			}
-
-			datongism= {
 			}
 
 			}
@@ -136,7 +136,7 @@ ideologies = {
 	}
 
 	 #########################
-
+	#宗教社会主义
 	REL_socialism = {
 		
 		types = {
@@ -151,7 +151,7 @@ ideologies = {
 		dynamic_faction_names = {
 		}
 		
-		color = { 196 22 80 }
+		color = { 211 91 80 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -182,7 +182,7 @@ ideologies = {
 	}
 
  #########################
-
+	#农业社会主义
 	AGR_socialism = {
 		
 		types = {
@@ -200,7 +200,7 @@ ideologies = {
 		dynamic_faction_names = {
 		}
 		
-		color = { 196 57 22 }
+		color = { 216 98 82 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -229,7 +229,8 @@ ideologies = {
 		}
 
 	}
-	#########################
+	
+	#保守民主主义
 	CON_democratic = {
 	
 		types = {
@@ -251,7 +252,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 22 115 155 }
+		color = { 16 46 128 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -288,8 +289,8 @@ ideologies = {
 	}
 
 	
- #########################
 
+	#自由民主主义
 	FRE_democratic = {
 	
 	types = {
@@ -311,7 +312,7 @@ ideologies = {
 		"FACTION_NAME_DEMOCRATIC_6"
 	}
 	
-	color = { 71 150 229 }
+	color = { 0 134 191}
 	
 	rules = {
 		can_create_collaboration_government = yes
@@ -347,8 +348,7 @@ ideologies = {
 	}
 
 	
- #########################
-
+	#威权民主主义
 	AUT_democratic = {
 	
 	types = {
@@ -379,7 +379,7 @@ ideologies = {
 	dynamic_faction_names = {
 	}
 	
-	color = { 20 64 108 }
+	color = { 46 104 114 }
 	
 	rules = {
 		can_create_collaboration_government = yes
@@ -415,8 +415,7 @@ ideologies = {
 	}
 
 	
- #########################
-
+	#伊斯兰民主主义
 	ISL_democratic = {
 	
 	types = {
@@ -432,7 +431,7 @@ ideologies = {
 	dynamic_faction_names = {
 	}
 	
-	color = { 0 153 76 }
+	color = { 36 130 67 }
 	
 	rules = {
 		can_create_collaboration_government = no
@@ -467,8 +466,8 @@ ideologies = {
 	ai_neutral = yes # uses the democratic AI behaviour
 	}
 
- ##########################
 
+	#进步主义
 	SOC_democratic = {
 	
 	types = {
@@ -504,7 +503,7 @@ ideologies = {
 	dynamic_faction_names = {
 	}
 	
-	color = { 204 0 102 }
+	color = { 199 18 97 }
 	
 	
 	war_impact_on_world_tension = 0.25		#no major danger
@@ -536,10 +535,7 @@ ideologies = {
  }
 
  
-
- #########################
-
-
+	#无政府主义
 	Anarcho = {
 		
 		types = {
@@ -594,9 +590,7 @@ ideologies = {
 	}
 
 
- #########################
-
-
+	#法西斯主义
 	Fascism = {
 	
 	types = {
@@ -660,8 +654,7 @@ ideologies = {
  }
 
 
- #########################
-
+ #专制主义
  Absolutism = {
 	
 	types = {
@@ -690,7 +683,7 @@ ideologies = {
 		"FACTION_NAME_NONALIGNED_5"
 	}
 	
-	color = { 139 132 95 }
+	color = { 148 145 143 }
 	
 	
 	war_impact_on_world_tension = 0.25		#no major danger
@@ -721,8 +714,7 @@ ideologies = {
 	ai_neutral = yes # 
  }
 
- #########################
-
+ #非传统意识形态
  Special = {
 	
 	types = {
@@ -734,9 +726,6 @@ ideologies = {
 		}
 
 		nazboh = {
-		}
-
-		exnationalism = {
 		}
 
 		mysticism = {

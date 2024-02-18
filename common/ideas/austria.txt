@@ -29,7 +29,7 @@ ideas = {
 		    visible = {
 			    always = yes
 		    }
-			picture = idea_aus_political_center
+			picture = GFX_idea_aus_new_republic
 
 		    modifier = {
 			    political_power_factor = -0.20
@@ -46,7 +46,7 @@ ideas = {
 		    visible = {
 			    always = yes
 		    }
-			picture = idea_aus_political_center
+			picture = GFX_idea_aus_political_center
 
 		    modifier = {
 			    consumer_goods_factor = -0.3
@@ -63,7 +63,7 @@ ideas = {
 		    visible = {
 			    always = yes
 		    }
-			picture = idea_aus_political_center
+			picture = GFX_idea_aus_political_center
 
 		    modifier = {
 			    army_attack_factor = -0.25

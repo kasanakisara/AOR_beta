@@ -548,6 +548,66 @@ spriteTypes = {
 		name = "GFX_idea_EGY_YesSir"
 		texturefile = "gfx/interface/ideas/EGY_YesSir.png"
 	}
+	spriteType = {
+		name = "GFX_idea_EGY_Moving_towards_modernity"
+		texturefile = "gfx/interface/ideas/EGY_Moving_towards_modernity.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Crazy_1919"
+		texturefile = "gfx/interface/ideas/EGY_Crazy_1919.png"
+	}
+	#埃塞
+	spriteType = {
+		name = "GFX_idea_ETH_the_prince"
+		texturefile = "gfx/interface/ideas/ETH_the_prince.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ETH_FOUR"
+		texturefile = "gfx/interface/ideas/ETH_FOUR.png"
+	}
+	#奥地利
+	spriteType = {
+		name = "GFX_idea_aus_new_republic"
+		texturefile = "gfx/interface/ideas/aus_new_republic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_The_Age_of_Miracles"
+		texturefile = "gfx/interface/ideas/aus_The_Age_of_Miracles.png"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_Shame_on_Austria"
+		texturefile = "gfx/interface/ideas/aus_Shame_on_Austria.png"
+	}
+	#巴拿马
+	spriteType = {
+		name = "GFX_idea_GCL_the_Panama"
+		texturefile = "gfx/interface/ideas/GCL_the_Panama.png"
+	}
+	spriteType = {
+		name = "GFX_idea_banana"
+		texturefile = "gfx/interface/ideas/banana.png"
+	}
+	#大马来由
+	spriteType = {
+		name = "GFX_idea_GML_xiangjiao"
+		texturefile = "gfx/interface/ideas/GML_xiangjiao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PHI_fenlie"
+		texturefile = "gfx/interface/ideas/GML_hetong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GML_hetong"
+		texturefile = "gfx/interface/ideas/GML_hetong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PHI_liangqiang"
+		texturefile = "gfx/interface/ideas/PHI_liangqiang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_HSP_the_America"
+		texturefile = "gfx/interface/ideas/HSP_the_America.png"
+	}
 	#事件链新闻
 		#比荷卢选举陷入僵局
 	spriteType = {

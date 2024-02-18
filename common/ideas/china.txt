@@ -395,7 +395,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -445,7 +445,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -473,7 +473,7 @@ ideas = {
 			
 			available = {
 				NOT = {
-					has_country_flag = CHI_xibeizhanzhengjieshu
+					has_country_flag = xibeizhanshijieshu
 				}
 			}
 			modifier = {
@@ -593,7 +593,205 @@ ideas = {
 				XP_GAIN_ARMY = 0.03
 	
 			}
-		}
+		}	
+		junguansuchengban = {
+				
+			picture = GFX_idea_junguansuchengban
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
 	
+			modifier = {
+				experience_gain_army = 0.1
+				experience_gain_infantry_training_factor = 0.25
+	
+			}
+		}
+		qingqifanpanmengguguizu = {
+				
+			picture = GFX_idea_mengguniudai
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				stability_weekly = -0.007
+				monthly_population = -100
+			}
+		}
+		mengguniudai = {
+				
+			picture = GFX_idea_mengguniudai
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				stability_factor = 0.05
+				CAVALRY_ATTACK_FACTOR = 0.1
+				cavalry_defence_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		xiyuanjiekuan = {
+				
+			picture = GFX_idea_xiyuanjiekuan
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		riwanhezuo = {
+				
+			picture = GFX_idea_riwanhezuo
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				stability_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				ARMY_INTEL_TO_OTHERS = 0.2
+				civilian_intel_to_others = 0.35
+			}
+		}
+		jiaotongyinhangdaikuan = {
+							
+			picture = GFX_idea_riwanhezuo
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		jiaotongxigaigefagan = {
+							
+			picture = GFX_idea_riwanhezuo
+			
+			visible = {
+				always = yes
+			}
+			cancel = {
+				has_war = yes
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+			}
+		}
+		caizhengbugaigefangan = {
+							
+			picture = GFX_idea_riwanhezuo
+
+			cancel = {
+				has_war = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_war = no
+					}
+					add_timed_idea = {
+						idea = tongyijijinfenhong
+						days = 150
+					}
+				}
+			}
+	
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_air_base_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+
+			}
+		}
+
+		tongyijijinfenhong = {
+							
+			picture = GFX_idea_riwanhezuo
+			
+			visible = {
+				always = yes
+			}
+
+			on_remove = {
+				add_stability = 0.05
+				add_stability = 0.1
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = 0.1
+			}
+		}
+		yujiaotonghuichubuhezuo = {
+							
+			picture = GFX_idea_yujiaotonghuichubuhezuo
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
 	}
 }

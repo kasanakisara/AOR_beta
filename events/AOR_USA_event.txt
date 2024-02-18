@@ -197,7 +197,9 @@ country_event = {
       
 	option = {
 		name = USA.10.a
+		hidden_effect = {
 		USA_civil_war_west = yes
+		}
 	}
 }
 
@@ -234,6 +236,7 @@ country_event = {
       
 	option = {
 		name = USA.100.a
+		news_event = {id=AOR_news.64}
 		hidden_effect = {
 		CSA = {
 				transfer_state = 366
@@ -297,7 +300,7 @@ country_event = {
 					target = CSA
 					type = civil_war
 					}
-					country_event = {id = usa.1000 days = 75}
+					country_event = {id = usa.1000 days = 30}
 				}
 		}
 	}
@@ -313,7 +316,7 @@ country_event = {
 		name=USA.1000.a
 		add_manpower=10000
 		load_oob = "USA_Civilwar_1"
-		USA = {country_event = {id = USA.1001 days = 1}}
+		USA = {country_event = {id = USA.1001 days = 30}}
 		CSA = {
 			add_manpower=10000
 			load_oob = "CSA_Civilwar_2"
@@ -336,7 +339,7 @@ country_event = {
 			add_manpower=10000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1002 days = 1}}
+		USA = {country_event = {id = USA.1002 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -355,7 +358,7 @@ country_event = {
 			add_manpower=10000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1003 days = 60}}
+		USA = {country_event = {id = USA.1003 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -374,7 +377,7 @@ country_event = {
 			add_manpower=10000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1004 days = 60}}
+		USA = {country_event = {id = USA.1004 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -393,7 +396,7 @@ country_event = {
 			add_manpower=10000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1005 days = 60}}
+		USA = {country_event = {id = USA.1005 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }

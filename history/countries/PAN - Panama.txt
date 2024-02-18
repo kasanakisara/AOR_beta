@@ -7,6 +7,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = PAN_City_on_the_peak
+
 recruit_character = PAN_harmodio_arias_madrid
 recruit_character = PAN_bartolomé_sinibaldi
 recruit_character = PAN_tiburcio_andino
