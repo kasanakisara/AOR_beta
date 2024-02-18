@@ -22,7 +22,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Hiram_Warren_Johnson"
-	desc = ""
+	desc = "Hiram_Warren_Johnson_desc"
 	picture = "gfx/leaders/US1/Hiram_Warren_Johnson.png"
 	expire = "1953.3.1"
 	ideology = liberalism
