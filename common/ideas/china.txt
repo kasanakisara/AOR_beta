@@ -612,5 +612,24 @@ ideas = {
 	
 			}
 		}
+		mengguniudai = {
+				
+			picture = GFX_idea_mengguniudai
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+	
+			modifier = {
+				stability_factor = 0.1
+				CAVALRY_ATTACK_FACTOR = 0.1
+				cavalry_defence_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
 	}
 }

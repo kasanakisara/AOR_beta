@@ -802,6 +802,9 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			country_event = { id = CHI.19 }
+			set_temp_variable = {
+				
+			}
 		}
 	}
 	focus = {
@@ -836,7 +839,7 @@ focus_tree = {
 	focus = {
 		id = AOR_Stable_Jingzhao
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = The_concept_of_Tuchun
 		}
@@ -850,40 +853,48 @@ focus_tree = {
 	focus = {
 		id = AOR_Interception_of_aid_from_foreign_powers
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = AOR_The_government_has_planted_confidants
 		}
 		x = 18
 		y = 5
 		completion_reward = {
-			
+			add_political_power = -50
+			unlock_decision_category_tooltip = AOR_Interception_of_aid_from_foreign_powers
 		}
 	}
 	focus = {
 		id = AOR_Influence_Congress
 		icon = GFX_goal_demand_sudetenland
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = Promulgate_the_Party_Ban_Law
+		}
+		available = {
+			has_completed_focus = AOR_A_close_meeting_with_the_transportation_department
+			has_completed_focus = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
 		}
 		x = 20
 		y = 5
 		completion_reward = {
-			
+			add_political_power = -50
 		}
 	}
 	focus = {
 		id = AOR_CLEAR_cage_to_exchange_birds
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
+		available = {
+			
+		}
 		prerequisite = {
 			focus = AOR_Mongolian_State_of_Emergency_Act
 		}
 		x = 35
 		y = 4
 		completion_reward = {
-			
+			add_ideas = mengguniudai
 		}
 	}
 }
