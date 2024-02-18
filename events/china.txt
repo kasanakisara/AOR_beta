@@ -354,10 +354,13 @@ country_event = {
 	option = {
 		name = CHI.17.a
 		complete_national_focus = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
+		add_offsite_building = { type = arms_factory level = 2 }
 	}
 	option = {
 		name = CHI.17.b
 		complete_national_focus = AOR_A_close_meeting_with_the_transportation_department
+		add_stability = 0.1
+		add_war_support = 0.05
 	}
 
 }
