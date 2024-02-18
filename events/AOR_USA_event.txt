@@ -197,7 +197,9 @@ country_event = {
       
 	option = {
 		name = USA.10.a
+		hidden_effect = {
 		USA_civil_war_west = yes
+		}
 	}
 }
 
