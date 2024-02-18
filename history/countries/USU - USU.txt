@@ -46,7 +46,8 @@ set_popularities = {
 	Marxism = 45
 	AGR_socialism = 5
 	REL_socialism = 5
-	Anarcho = 5
+	Anarcho = 2
+	CON_democratic = 3
 	FRE_democratic = 5
 }
 

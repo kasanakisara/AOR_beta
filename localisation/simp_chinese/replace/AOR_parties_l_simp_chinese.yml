@@ -992,10 +992,16 @@ CSA_AUT_democratic_party:0 "南方迪克西党-民族强硬派"
 CSA_Fascism_party:0 "南方迪克西党-民族右派"
 CSA_Special_party:0 "极端党派"
 CSA_nationalism_party:0 "极端党派"
-
 ####USU###
-USU_Marxism_party:0"美利坚左翼联盟"
+USU_Marxism_party:0"美利坚左翼联盟-团结派"
 USU_Marxism_party_long:0"美利坚左翼联盟"
+USU_Anarcho_party:0"极端组织"
+USU_PAR_socialism_party:0 "美利坚左翼联盟-社会民主派"
+USU_AGR_socialism_party:0 "美利坚左翼联盟-西部派"
+USU_REL_socialism_party:0 "宗教事业统一战线"
+USU_SOC_democratic_party:0 "美利坚统一进步战线"
+USU_FRE_democratic_party:0 "美国洋基党残党"
+USU_CON_democratic_party:0 "迪克西党残党"
 ######HSP#######
 HSP_Absolutism_party:0"太子港执政府"
 #########orA###########
