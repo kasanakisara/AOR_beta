@@ -788,9 +788,24 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10014 #美国左翼文案 厄尔 法国
+	id = USA.10014 #美国左翼文案 德布斯 1 
     title = USA.10014.t
     desc = USA.10014.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1921.6.20
+	 }
+    option = { 
+        name = USA.10014.a
+	
+	}
+}
+country_event = {
+	id = USA.10015 #美国左翼文案 厄尔 法国
+    title = USA.10015.t
+    desc = USA.10015.d
     is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
@@ -798,7 +813,7 @@ country_event = {
 	       date = 1922.6.10
 	 }
     option = { 
-        name = USA.10014.a
+        name = USA.10015.a
 	
 	}
 }
