@@ -146,7 +146,9 @@ set_politics = {
 
 }
 set_popularities = {
-	Absolutism = 97
+	Absolutism = 79
+	FRE_democratic = 9
+	CON_democratic = 9
 	Anarcho = 3
 }
 
