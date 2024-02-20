@@ -68,6 +68,14 @@ bitmapfonts = {
 			u = { 210 119 39 } #Rioters
 	}
 	bitmapfont_override = {
+		name = "hoi4_typewriter16"
+		fontfiles = { 	
+			"gfx/fonts/kai_0"
+			"gfx/fonts/kai_1"
+		}		
+	languages = { "l_simp_chinese" } 
+	}	
+	bitmapfont_override = {
 		name = "ToolTip_Font"
 		fontfiles = { 
 			"gfx/fonts/garamond_16"
@@ -251,15 +259,7 @@ bitmapfonts = {
 	languages = { "l_simp_chinese" } 
 	}		
 	
-	bitmapfont_override = {
-		name = "hoi4_typewriter16"
-		fontfiles = { 	
-			"gfx/fonts/hoi4_typewriter16"
-			"gfx/fonts/hoi_16typewriter"
-			"gfx/fonts/Arial_14b"	
-		}		
-	languages = { "l_simp_chinese" } 
-	}		
+		
 	
 	bitmapfont_override = {
 		name = "hoi4_typewriter16_inverted"
@@ -274,9 +274,8 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "hoi4_typewriter22"
 		fontfiles = { 
-			"gfx/fonts/hoi4_typewriter22"		
-			"gfx/fonts/hoi_22typewriter"
-			"gfx/fonts/Arial_20b"	
+			"gfx/fonts/kai_22_0"		
+			"gfx/fonts/kai_22_1"
 		}		
 	languages = { "l_simp_chinese" } 
 	}
@@ -383,4 +382,5 @@ bitmapfonts = {
 		}			
 	languages = { "l_simp_chinese" } 
 	}
+
 }
