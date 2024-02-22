@@ -1259,3 +1259,29 @@ news_event = { #庚申新年
 		name = AOR_news.66.a
 	}
 }
+
+news_event = { #石荷公投-德
+	id = AOR_news.67
+	title = AOR_news.67.t
+	desc = AOR_news.67.d
+	picture = GFX_AOR_news.67_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.67.a
+	}
+}
+
+news_event = { #石荷公投-丹
+	id = AOR_news.68
+	title = AOR_news.68.t
+	desc = AOR_news.68.d
+	picture = GFX_AOR_news.68_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.68.a
+	}
+}
