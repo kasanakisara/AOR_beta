@@ -1285,3 +1285,29 @@ news_event = { #石荷公投-丹
 		name = AOR_news.68.a
 	}
 }
+
+news_event = { #青岛给日
+	id = AOR_news.69
+	title = AOR_news.69.t
+	desc = AOR_news.69.d
+	picture = GFX_AOR_news.69_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.69.a
+	}
+}
+
+news_event = { #三廿运动！
+	id = AOR_news.70
+	title = AOR_news.70.t
+	desc = AOR_news.70.d
+	picture = GFX_AOR_news.70_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.70.a
+	}
+}
