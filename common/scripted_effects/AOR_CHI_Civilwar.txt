@@ -51,6 +51,7 @@ CHI_civil_war_1 = {
 			add_to_faction = KMT
 			add_to_faction = UPC
 			add_to_faction = NAN
+			add_to_faction = DCD
 		}
 		news_event = {
 			id=AOR_news.30
