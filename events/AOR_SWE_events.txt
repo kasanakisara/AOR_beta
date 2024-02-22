@@ -35,10 +35,14 @@ country_event = {
             limit = {
                 tag = ENG
             }
-            country_event = SWE.4
+            SWE = {
+                country_event = { id = SWE.4 } #英国同意
+            }
         }
         else = {
-            country_event = SWE.5
+            SWE = {
+                country_event = { id = SWE.5 } #法国同意
+            }
         }
     }
     option = {
@@ -47,10 +51,14 @@ country_event = {
             limit = {
                 tag = ENG
             }
-            country_event = SWE.6
+            SWE = {
+                country_event = { id = SWE.6 } #英国拒绝
+            }
         }
         else = {
-            country_event = SWE.7
+            SWE = {
+                country_event = { id = SWE.7 } #法国拒绝
+            }
         }
     }
 }
@@ -100,5 +108,19 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.7.a
+    }
+}
+
+country_event = {
+    id = SWE.8 #斯德哥尔摩会议
+    title = SWE.8.t
+    desc = SWE.8.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.8.a
+        add_timed_idea = {
+            idea = SWE_Stockholm_Law
+            days = 405
+        }
     }
 }
