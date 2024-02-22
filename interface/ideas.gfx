@@ -6385,7 +6385,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Pending"
-		texturefile = "gfx/interface/ideas/idea_Pending.dds"
+		texturefile = "gfx/interface/ideas/idea_Pending.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Dark_Heart_of_empire"

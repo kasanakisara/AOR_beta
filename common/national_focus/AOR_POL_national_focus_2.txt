@@ -113,7 +113,16 @@ focus_tree = {
 			set_politics = {
 		    	ruling_party = CON_democratic
 			}
-			add_ideas = Democratic_countries
+			add_ideas = Democratic_countries_1
+			create_country_leader = {
+				name = "Roman_Stanisław_Dmowski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Dmowski.png"
+            	expire = "1965.1.1"
+            	ideology = conservatism
+             	traits = {
+	                }
+			}
 		}
 	}
 	focus = {
@@ -155,11 +164,11 @@ focus_tree = {
 				popularity = -0.05
 			}
 			create_country_leader = {
-				name = "Peter Dmitryevich Sviatopolk Millsky"
+				name = "Peter_Dmitryevich_Sviatopolk_Millsky"
 	            desc = ""
-             	picture = "portrait_POL_the_PDSM.dds"
+             	picture = "gfx/leaders/POL/Millsky.png"  #缺头像
             	expire = "1965.1.1"
-            	ideology = Absolutism
+            	ideology = monarchism
              	traits = {
 	                }
 				}
@@ -178,7 +187,6 @@ focus_tree = {
 		x = 13
 		y = 1
 		completion_reward={
-			country_event = { id = AOR_POL_events.1 }
 			add_popularity = {
 				ideology = Absolutism
 				popularity = 0.05
@@ -224,8 +232,17 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
-			add_ideas = minzugongheguo
-			add_ideas = deguobuzheng
+			create_country_leader = {
+				name = "Jozef_Klemens_Piłsudski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Piłsudski.png"  #缺头像
+            	expire = "1965.1.1"
+            	ideology = nationalism
+             	traits = {
+	                }
+			}
+			add_ideas = {minzugongheguo}
+			add_ideas = {deguobuzheng}
 		}
 	}
 	focus = {
@@ -265,11 +282,11 @@ focus_tree = {
 			add_ideas = ducaigongheguo
 			retire_ideology_leader = Absolutism
 			create_country_leader = {
-				name = "Sikorski"
+				name = "Władysław_Eugeniusz_Sikorski"
 	            desc = ""
-             	picture = "portrait_POL_the_Sikorski.dds"
+             	picture = "gfx/leaders/POL/Sikorski.png"
             	expire = "1965.1.1"
-            	ideology = Absolutism
+            	ideology = despotism
              	traits = {
 	                }
 				}
@@ -293,6 +310,15 @@ focus_tree = {
 			set_politics = {
 				ruling_party = FRE_democratic
 			}
+			create_country_leader = {
+				name = "Ignacy_Jan_Paderewski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Paderewski.png"
+            	expire = "1965.1.1"
+            	ideology = liberalism
+             	traits = {
+	                }
+			}
 		}
 	}
 	focus = {
@@ -311,7 +337,9 @@ focus_tree = {
 		y = 6
 		completion_reward={
 			add_stability = 0.01
+			hidden_effect = {
 			load_focus_tree = aor_pol_national_focus_2
+			}
 		}
 	}
 	focus = {
@@ -354,6 +382,15 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = AUT_democratic
+			}
+			create_country_leader = {
+				name = "Wincenty_Witos"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Witos.png"
+            	expire = "1965.1.1"
+            	ideology = limited 
+             	traits = {
+	                }
 			}
 		}
 	}
