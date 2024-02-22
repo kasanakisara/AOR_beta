@@ -1,27 +1,15 @@
 add_namespace = LIT
 
-country_event = { #这不是国家，这是战场
-	id = LIT.1
-	title = LIT.1.t
-	desc = LIT.1.d
-	picture = LIT.1.p
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = LIT.1.a 
-		country_event = LIT.2
-	}
-
-}
 country_event = { #波兰索要布列斯特
 	id = LIT.2
 	title = LIT.2.t
 	desc = LIT.2.d
 	picture = LIT.2.p
-
-	is_triggered_only = yes
+	trigger = {
+	    date > 1922.5.10
+		tag = LIT
+	}
+	mean_time_to_happen = { days = 1}
 	fire_only_once = yes
 
 	option = {
