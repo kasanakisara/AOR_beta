@@ -1,0 +1,125 @@
+SWE_update_ui_effect = {
+	if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 0 }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 5 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 10 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 15 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 20 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 25 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 30 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 7 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 35 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 8 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 40 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 9 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 45 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 10 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 50 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 55 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 12 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 60 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 13 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 65 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 14 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 70 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 75 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 16 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 80 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 17 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 85 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 18 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 90 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 19 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value = 95 compare = less_than_or_equals }
+		}
+		set_variable = { SWE_Norweign_Independence_main_meter = 20 }
+	}
+	else = { # paranoia > 95
+		set_variable = { SWE_Norweign_Independence_main_meter = 21 }
+	}
+}
