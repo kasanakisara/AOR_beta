@@ -81,7 +81,7 @@ ideas = {
 		#民族共和国
 		minzugongheguo = {
 			
-			picture = GFX_idea_Democratic_countries
+			picture = GFX_idea_minzugongheguo
 			
 			allowed = {
 				always = yes
@@ -100,7 +100,7 @@ ideas = {
 		#独裁共和国
 		ducaigongheguo = {
 			
-			picture = GFX_idea_Democratic_countries
+			picture = GFX_idea_ducaigongheguo
 			
 			allowed = {
 				always = yes
@@ -119,7 +119,7 @@ ideas = {
 		#农民共和国
 		nongmingonggeguo = {
 			
-			picture = GFX_idea_Democratic_countries
+			picture = GFX_idea_nongmingonggeguo
 			
 			allowed = {
 				always = yes
@@ -138,7 +138,7 @@ ideas = {
 		#得国不正
 		deguobuzheng = {
 			
-			picture = GFX_idea_Democratic_countries
+			picture = GFX_idea_deguobuzheng
 			
 			allowed = {
 				always = yes
@@ -151,6 +151,104 @@ ideas = {
 			modifier = {
 				stability_factor = -0.15
 				drift_defence_factor = -0.1
+			}
+		}
+		#全民生产
+		quanmindashengchan = {
+			
+			picture = GFX_idea_quanmindashengchan
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.75
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		#全民生产-军工升级线
+		quanmindashengchan_1 = {
+			
+			picture = GFX_idea_quanmindashengchan
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.75
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#全民生产-民工升级线
+		quanmindashengchan_2 = {
+			
+			picture = GFX_idea_quanmindashengchan
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+				conscription_factor = -0.75
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		#民族工业
+		 bolanminzugongye = {
+			
+			picture = GFX_idea_bolanminzugongye
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.1
+				research_speed_factor = -0.05
+			}
+		}
+		#世界生产的一环
+		shijieshengchandeyihuan = {
+			
+			picture = GFX_idea_shijieshengchandeyihuan
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			          always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
 			}
 		}
 	}
