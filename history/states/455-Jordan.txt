@@ -2,15 +2,21 @@
 state={
 	id=455
 	name="STATE_455"
+	manpower = 932000
+	
+	state_category = rural
 
 	history={
 		owner = ARA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+<<<<<<< HEAD
 			4115 = {
 				naval_base = 3
 			}
+=======
+>>>>>>> parent of ab9f9e0f (阿拉伯地区细化)
 		}
 		victory_points = {
 			7151 5 
@@ -18,15 +24,20 @@ state={
 		victory_points = {
 			4115 1 
 		}
-		add_core_of = ARA
+<<<<<<< HEAD
+=======
+		victory_points = {
+			11976 1 
+		}
 
+		add_core_of = JOR
+>>>>>>> parent of ab9f9e0f (阿拉伯地区细化)
+		add_core_of = ARA
 	}
 
 	provinces={
-		4017 4115 4574 4591 7001 7151 7170 10089 
+		1544 4017 4115 4440 4562 4574 4591 4603 7001 7151 7170 10089 11976 
 	}
-	manpower=932000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }
