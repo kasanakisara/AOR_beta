@@ -1259,3 +1259,105 @@ news_event = { #庚申新年
 		name = AOR_news.66.a
 	}
 }
+news_event = { #奥斯陆博览会
+	id = AOR_news.70
+	title = AOR_news.70.t
+	desc = AOR_news.70.d
+	picture = GFX_AOR_news.70_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		trigger = {
+			NOT = {
+				TAG = SWE
+			}
+		}
+		name = AOR_news.70.a
+	}
+
+	option = {
+		trigger = {
+			TAG = SWE
+		}
+		name = AOR_news.70.b
+	}
+}
+
+news_event = { #石荷公投-德
+	id = AOR_news.67
+	title = AOR_news.67.t
+	desc = AOR_news.67.d
+	picture = GFX_AOR_news.67_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		trigger = {
+			NOT = {
+				TAG = SWE
+			}
+		}
+		name = AOR_news.67.a
+	}
+
+	option = {
+		trigger = {
+			TAG = SWE
+		}
+		name = AOR_news.67.b
+		name = AOR_news.67.a
+	}
+}
+
+news_event = { #石荷公投-丹
+	id = AOR_news.68
+	title = AOR_news.68.t
+	desc = AOR_news.68.d
+	picture = GFX_AOR_news.68_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.68.a
+	}
+}
+
+news_event = { #青岛给日
+	id = AOR_news.69
+	title = AOR_news.69.t
+	desc = AOR_news.69.d
+	picture = GFX_AOR_news.69_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.69.a
+	}
+}
+
+news_event = { #三廿运动！
+	id = AOR_news.70
+	title = AOR_news.70.t
+	desc = AOR_news.70.d
+	picture = GFX_AOR_news.70_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.70.a
+	}
+}
+
+news_event = { #西班牙大流感消失
+	id = AOR_news.71
+	title = AOR_news.71.t
+	desc = AOR_news.71.d
+	picture = GFX_AOR_news.71_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.71.a
+	}
+}

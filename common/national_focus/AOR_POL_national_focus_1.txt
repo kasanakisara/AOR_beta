@@ -1,498 +1,397 @@
-focus_tree={
-	country={
-		factor=0
-		modifier={
-			add=10
-			tag=pol
+focus_tree = {
+	id = aor_pol_national_focus_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 11
+			tag = POL
 		}
 	}
-	continuous_focus_position = { x = 1000, y = 1500 }
-	default=no
-	focus={
-		id=fenqi
-		x=10
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+	default = no
+	focus = {
+		id = Restarting_the_Constituent_Assembly #重启制宪大会
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 9
+		y = 0
 		completion_reward={
+			country_event = { id = AOR_POL_events.1 }
+		}
+
+	}
+	focus = {
+		id = Maintain_the_supreme_authority_of_the_conference #维护大会至高权威
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Restarting_the_Constituent_Assembly
+		}
+		mutually_exclusive = {
+			focus = Finding_a_new_way_out
+		}
+		x = 4
+		y = 1
+		completion_reward={
+			add_stability = 0.2
+			add_popularity = {
+				ideology = Absolutism
+				popularity = -0.05
+			}
 		}
 	}
-	focus={
-		id=bolanhuiyi
-		x=11
-		y=3
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Start_elections #开始选举
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = Maintain_the_supreme_authority_of_the_conference
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 4
+		y = 2
 		completion_reward={
+			add_stability = 0.1
 		}
 	}
-	focus={
-		id=zhengbingfaan
-		x=12
-		y=1
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Chopin's_Ninth_Revolution #肖邦的第九革命
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = Start_elections
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = The_Victory_of_the_Paris_Government
+			focus = Polishing_the_Crown
 		}
+		x = 1
+		y = 3
 		completion_reward={
+			country_event = { id = AOR_POL_events.2 }
+			remove_ideas = pending
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.15
+			}
 		}
 	}
-	focus={
-		id=diguojinshen
-		x=10
-		y=1
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = The_Victory_of_the_Paris_Government #巴黎政府的胜利
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = Start_elections
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = Chopin's_Ninth_Revolution
+			focus = Polishing_the_Crown
 		}
+		x = 4
+		y = 3
 		completion_reward={
+			remove_ideas = pending
+			country_event = { id = AOR_POL_events.3 }
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = 0.05
+			}
 		}
 	}
-	focus={
-		id=meimeieryian
-		x=7
-		y=3
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Democratic_countries_in_Eastern_Europe #民主国家
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = The_Victory_of_the_Paris_Government
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 4
+		y = 4
 		completion_reward={
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = 0.05
+			}
+			set_politics = {
+		    	ruling_party = CON_democratic
+			}
+			add_ideas = Democratic_countries_1
+			create_country_leader = {
+				name = "Roman_Stanisław_Dmowski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Dmowski.png"
+            	expire = "1965.1.1"
+            	ideology = conservatism
+             	traits = {
+	                }
+			}
 		}
 	}
-	focus={
-		id=danzewenti
-		x=11
-		y=4
-		prerequisite={focus=bolanhuiyi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Polishing_the_Crown #擦亮王冠
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = Start_elections
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = The_Victory_of_the_Paris_Government
+			focus = Chopin's_Ninth_Revolution
 		}
+		x = 7
+		y = 3
 		completion_reward={
+			remove_ideas = pending
+			add_popularity = {
+				ideology = Absolutism
+				popularity = -0.05
+			}
+			country_event = { id = AOR_POL_events.4 }
 		}
 	}
-	focus={
-		id=bomeijihua
-		x=16
-		y=3
-		prerequisite={focus=zhengzhidongyao}
-		prerequisite={focus=xuanchuancuihua}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = The_Birth_of_Kingdom #王国的诞生
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Polishing_the_Crown
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 7
+		y = 4
 		completion_reward={
+			retire_ideology_leader = Absolutism
+			add_ideas = wangquan
+			add_popularity = {
+				ideology = Absolutism
+				popularity = -0.05
+			}
+			create_country_leader = {
+				name = "Peter_Dmitryevich_Sviatopolk_Millsky"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Millsky.png"  #缺头像
+            	expire = "1965.1.1"
+            	ideology = monarchism
+             	traits = {
+	                }
+				}
+			}
+		}
+	focus = {
+		id = Finding_a_new_way_out #找寻出路
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = Restarting_the_Constituent_Assembly
+		}
+		mutually_exclusive = {
+			focus = Maintain_the_supreme_authority_of_the_conference
+		}
+		x = 13
+		y = 1
+		completion_reward={
+			add_popularity = {
+				ideology = Absolutism
+				popularity = 0.05
+			}
 		}
 	}
-	focus={
-		id=beifangdemengyou
-		x=3
-		y=1
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Bisusky's_urgent_telegram #毕苏斯基的急电
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Finding_a_new_way_out
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = hero_soilder
+			focus = The_Voice_of_Farmers
 		}
+		x = 10
+		y = 2
 		completion_reward={
+			country_event = { id = AOR_POL_events.5 }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 		}
 	}
-	focus={
-		id=hubuqingfan
-		x=3
-		y=3
-		prerequisite={focus=beifangdemengyou}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Poles'_Poland #波兰人的波兰
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Bisusky's_urgent_telegram
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 10
+		y = 4
 		completion_reward={
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			remove_ideas = pending
+			set_politics = {
+				ruling_party = fascism
+			}
+			create_country_leader = {
+				name = "Jozef_Klemens_Piłsudski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Piłsudski.png"  #缺头像
+            	expire = "1965.1.1"
+            	ideology = nationalism
+             	traits = {
+	                }
+			}
+			add_ideas = {minzugongheguo}
+			add_ideas = {deguobuzheng}
 		}
 	}
-	focus={
-		id=keyanzhichi
-		x=5
-		y=5
-		prerequisite={focus=huopaohuzhu}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = hero_soilder #英雄士兵
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Finding_a_new_way_out
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = Bisusky's_urgent_telegram
+			focus = The_Voice_of_Farmers
 		}
+		x = 13
+		y = 2
 		completion_reward={
+			country_event = { id = AOR_POL_events.6 }
+			add_popularity = {
+				ideology = Absolutism
+				popularity = 0.05
+			}
 		}
 	}
-	focus={
-		id=huopaohuzhu
-		x=5
-		y=4
-		prerequisite={focus=hubuqingfan}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = break_off_a_conference #中断会议
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = hero_soilder
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 13
+		y = 4
 		completion_reward={
+			add_stability = 0.1
+			remove_ideas = pending
+			add_ideas = deguobuzheng
+			add_ideas = ducaigongheguo
+			retire_ideology_leader = Absolutism
+			create_country_leader = {
+				name = "Władysław_Eugeniusz_Sikorski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Sikorski.png"
+            	expire = "1965.1.1"
+            	ideology = despotism
+             	traits = {
+	                }
+				}
 		}
 	}
-	focus={
-		id=xuanchuancuihua
-		x=15
-		y=2
-		prerequisite={focus=chonghuideyizhi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Free_Countries_in_Eastern_Europe #自由东欧国家
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Chopin's_Ninth_Revolution
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 1
+		y = 4
 		completion_reward={
+			add_ideas = ziyougongheguo
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = FRE_democratic
+			}
+			create_country_leader = {
+				name = "Ignacy_Jan_Paderewski"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Paderewski.png"
+            	expire = "1965.1.1"
+            	ideology = liberalism
+             	traits = {
+	                }
+			}
 		}
 	}
-	focus={
-		id=zhengzhidongyao
-		x=17
-		y=2
-		prerequisite={focus=chonghuideyizhi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Poland_is_not_yet_extinct #波兰还没灭亡
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = Free_Countries_in_Eastern_Europe
+			focus = Democratic_countries_in_Eastern_Europe
+			focus = The_Birth_of_Kingdom
+			focus = Poles'_Poland
+			focus = break_off_a_conference
+			focus = Polish_Revolution
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 10
+		y = 6
 		completion_reward={
+			add_stability = 0.01
+			hidden_effect = {
+			load_focus_tree = aor_pol_national_focus_2
+			}
 		}
 	}
-	focus={
-		id=chonghuideyizhi
-		x=16
-		y=1
-		prerequisite={focus=fenqi}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = The_Voice_of_Farmers #人民的呼声
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = Finding_a_new_way_out
 		}
-		available_if_capitulated=yes
-		search_filters={
+		mutually_exclusive = {
+			focus = Bisusky's_urgent_telegram
+			focus = hero_soilder
 		}
+		x = 16
+		y = 2
 		completion_reward={
+			country_event = { id = AOR_POL_events.7 }
+			add_popularity = {
+				ideology = AUT_democratic
+				popularity = 0.15
+			}
 		}
 	}
-	focus={
-		id=baohuangdangqiyi
-		x=14
-		y=4
-		prerequisite={focus=bomeijihua}
-		mutually_exclusive={focus=shoumaiziyoujuntuan focus=chanchugusitafu focus=lianhenuosike }
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = Polish_Revolution #波兰式革命
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The_Voice_of_Farmers
 		}
-		available_if_capitulated=yes
-		search_filters={
-		}
+		x = 16
+		y = 4
 		completion_reward={
-		}
-	}
-	focus={
-		id=shoumaiziyoujuntuan
-		x=16
-		y=4
-		prerequisite={focus=bomeijihua}
-		mutually_exclusive={focus=baohuangdangqiyi focus=chanchugusitafu focus=lianhenuosike }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chanchugusitafu
-		x=18
-		y=4
-		prerequisite={focus=bomeijihua}
-		mutually_exclusive={focus=baohuangdangqiyi focus=shoumaiziyoujuntuan focus=lianhenuosike }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zhenghebomei
-		x=16
-		y=5
-		prerequisite={focus=shoumaiziyoujuntuan focus=chanchugusitafu focus=lianhenuosike focus=baohuangdangqiyi }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xinqidian
-		x=16
-		y=6
-		prerequisite={focus=zhenghebomei}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=tongyi
-		x=5
-		y=7
-		prerequisite={focus=keyanzhichi focus=meimeieryian focus=danzewenti focus=xinqidian }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zuozhanbu
-		x=2
-		y=8
-		prerequisite={focus=tongyi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=beibu
-		x=0
-		y=10
-		prerequisite={focus=zuozhanbu}
-		mutually_exclusive={focus=chenfuyuhuangdi }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chenfuyuhuangdi
-		x=4
-		y=10
-		prerequisite={focus=zuozhanbu}
-		prerequisite={focus=weiliansanshi}
-		mutually_exclusive={focus=beibu }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=lianhenuosike
-		x=20
-		y=4
-		prerequisite={focus=bomeijihua}
-		mutually_exclusive={focus=baohuangdangqiyi focus=shoumaiziyoujuntuan focus=chanchugusitafu }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=nanbu
-		x=0
-		y=11
-		prerequisite={focus=beibu}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zuihoudefandongpai
-		x=0
-		y=12
-		prerequisite={focus=nanbu}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=weilianershi
-		x=7
-		y=8
-		prerequisite={focus=tongyi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=weiliansanshi
-		x=7
-		y=9
-		prerequisite={focus=weilianershi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=zhongyingguowang
-		x=7
-		y=10
-		prerequisite={focus=weiliansanshi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=xiabingxiejiang
-		x=4
-		y=11
-		prerequisite={focus=chenfuyuhuangdi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=bolanxingdong
-		x=11
-		y=10
-		prerequisite={focus=weiliansanshi}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=chongjiandiguo
-		x=2
-		y=13
-		prerequisite={focus=zuihoudefandongpai focus=xiabingxiejiang }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
+			remove_ideas = pending
+			add_ideas = deguobuzheng
+			add_ideas = nongmingonggeguo
+			add_popularity = {
+				ideology = AUT_democratic
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = AUT_democratic
+			}
+			create_country_leader = {
+				name = "Wincenty_Witos"
+	            desc = ""
+             	picture = "gfx/leaders/POL/Witos.png"
+            	expire = "1965.1.1"
+            	ideology = limited 
+             	traits = {
+	                }
+			}
 		}
 	}
 }
