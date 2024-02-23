@@ -1,0 +1,13 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			716 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_fengtian }
+					province = { id = 11771 }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_terrain_fengtian" #老沈阳
+		textureFile = "gfx/interface/terrains/terrain_fengtian.png"
+	}
+}
