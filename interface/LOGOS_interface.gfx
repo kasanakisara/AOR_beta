@@ -343,7 +343,11 @@ spriteTypes = {
 		name = "GFX_decision_ORA_committee_pic"
 		texturefile = "gfx/interface/decisions/decision_ORA_committee_pic.png"
 	}
-	
+	#赛里斯决议图片
+	spriteType = {
+		name = "GFX_decision_CHI_election"
+		texturefile = "gfx/interface/decisions/decision_CHI_election.png"
+	}
 	#小船决议
 	spriteType = {
 		name = "GFX_decision_ship"

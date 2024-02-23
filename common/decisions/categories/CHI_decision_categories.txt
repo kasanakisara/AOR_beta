@@ -13,6 +13,7 @@ CHI_Reclaiming_outer_northwest_decision = {
 
 CHI_election_decison_cate = {
 	scripted_gui = AOR_ROC_election_window
+	picture = GFX_decision_CHI_election
 	priority = 500
 	visible_when_empty = yes
 	allowed = {
