@@ -288,7 +288,8 @@ guiTypes = {
 				name = "custom_icon_container"
 				size = { width=100% height=100% }
 				position = { x = -375 y= 4 }
-	
+				#炫酷图片#
+					#亚洲#
 				iconType = {
 					name = "terrain_fengtian_icon"
 					spriteType = "GFX_terrain_fengtian"
@@ -314,6 +315,160 @@ guiTypes = {
 					spriteType = "GFX_terrain_panyu"
 					alwaystransparent = yes
 				}
+				iconType = {
+					name = "terrain_kulun_icon"
+					spriteType = "GFX_terrain_kulun"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_dihua_icon"
+					spriteType = "GFX_terrain_dihua"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_lasa_icon"
+					spriteType = "GFX_terrain_lasa"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_chengdu_icon"
+					spriteType = "GFX_terrain_chengdu"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_changan_icon"
+					spriteType = "GFX_terrain_changan"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_chongqing_icon"
+					spriteType = "GFX_terrain_chongqing"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_kunming_icon"
+					spriteType = "GFX_terrain_kunming"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_wuchang_icon"
+					spriteType = "GFX_terrain_wuchang"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_yangqu_icon"
+					spriteType = "GFX_terrain_yangqu"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_hancheng_icon"
+					spriteType = "GFX_terrain_hancheng"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_pinrang_icon"
+					spriteType = "GFX_terrain_pinrang"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_dongjing_icon"
+					spriteType = "GFX_terrain_dongjing"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_mingguwu_icon"
+					spriteType = "GFX_terrain_mingguwu"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_daban_icon"
+					spriteType = "GFX_terrain_daban"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_guangdao_icon"
+					spriteType = "GFX_terrain_guangdao"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_changqi_icon"
+					spriteType = "GFX_terrain_changqi"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_shelazi_icon"
+					spriteType = "GFX_terrain_shelazi"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_yisifahan_icon"
+					spriteType = "GFX_terrain_yisifahan"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_mashenhade_icon"
+					spriteType = "GFX_terrain_mashenhade"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_kumu_icon"
+					spriteType = "GFX_terrain_kumu"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_deheilan_icon"
+					spriteType = "GFX_terrain_deheilan"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_dabulishi_icon"
+					spriteType = "GFX_terrain_dabulishi"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_maijia_icon"
+					spriteType = "GFX_terrain_maijia"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_maidina_icon"
+					spriteType = "GFX_terrain_maidina"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_yelusaleng_icon"
+					spriteType = "GFX_terrain_yelusaleng"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_damashige_icon"
+					spriteType = "GFX_terrain_damashige"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_emusike_icon"
+					spriteType = "GFX_terrain_emusike"
+					alwaystransparent = yes
+				}
+				#非洲#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				iconType = {
 					name = "flooded_icon"
 					spriteType = "GFX_modifiers_flooded_icon"
