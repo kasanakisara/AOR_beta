@@ -59,7 +59,7 @@ on_actions = {
 			896 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_changan }
-					province = { id = 1967 }
+					province = { id = 1976 }
 				}
 			}
 			906 = {
