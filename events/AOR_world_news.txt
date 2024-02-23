@@ -1348,3 +1348,16 @@ news_event = { #三廿运动！
 		name = AOR_news.70.a
 	}
 }
+
+news_event = { #西班牙大流感消失
+	id = AOR_news.71
+	title = AOR_news.71.t
+	desc = AOR_news.71.d
+	picture = GFX_AOR_news.71_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.71.a
+	}
+}
