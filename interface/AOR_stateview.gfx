@@ -3,4 +3,20 @@ spriteTypes = {
 		name = "GFX_terrain_fengtian" #老沈阳
 		textureFile = "gfx/interface/terrains/terrain_fengtian.png"
 	}
+	spriteType = {
+		name = "GFX_terrain_beijing" #北京
+		textureFile = "gfx/interface/terrains/terrain_beijing.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_shanghai" #北京
+		textureFile = "gfx/interface/terrains/terrain_shanghai.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_jiangning" #北京
+		textureFile = "gfx/interface/terrains/terrain_jiangning.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_panyu" #北京
+		textureFile = "gfx/interface/terrains/terrain_panyu.png"
+	}
 }

@@ -8,6 +8,30 @@ on_actions = {
 					province = { id = 11771 }
 				}
 			}
+			608 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_beijing }
+					province = { id = 9843 }
+				}
+			}
+			603 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_shanghai }
+					province = { id = 7014 }
+				}
+			}
+			893 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_jiangning }
+					province = { id = 11913 }
+				}
+			}
+			592 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_panyu }
+					province = { id = 1047 }
+				}
+			}
 		}
 	}
 }
