@@ -1,6 +1,6 @@
 characters = {
 	ITA_Prince_Emanuele_Filiberto = { #Prince_Emanuele_Filiberto
-		name = Prince·Emanuele·Filiberto
+		name = "Prince·Emanuele·Filiberto"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Prince_Emanuele_Filiberto.png"	
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	ITA_Emilio_De_Bono = { #Emilio_De_Bono
-		name = Emilio·De·Bono
+		name = "Emilio·De·Bono"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Emilio_De_Bono.png"	
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	ITA_Armando_Diaz = { #Armando_Diaz
-		name = Armando·Diaz
+		name = "Armando·Diaz"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Armando_Diaz.png"	
@@ -91,7 +91,7 @@ characters = {
 		}
 	}
 	ITA_Luigi_Cadorna = { #Luigi_Cadorna
-		name = Luigi·Cadorna
+		name = "Luigi·Cadorna"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Luigi_Cadorna.png"	
@@ -122,7 +122,7 @@ characters = {
 		}
 	}
 	ITA_Guglielmo_Pecori_Giraldi = { #Guglielmo_Pecori_Giraldi
-		name = Guglielmo·Pecori·Giraldi
+		name = "Guglielmo·Pecori·Giraldi"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Guglielmo_Pecori_Giraldi.png"	
@@ -152,7 +152,7 @@ characters = {
 		}
 	}
 	ITA_Gaetano_Giardino = { #Gaetano_Giardino
-		name = Gaetano·Giardino
+		name = "Gaetano·Giardino"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Gaetano_Giardino.png"	
@@ -183,7 +183,7 @@ characters = {
 		}
 	}
 	ITA_Rodolfo_Graziani = { #Rodolfo_Graziani
-		name = Rodolfo·Graziani
+		name = "Rodolfo·Graziani"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Rodolfo_Graziani.png"	
@@ -214,7 +214,7 @@ characters = {
 		}
 	}
 	ITA_Giovanni_Messe = { #Giovanni_Messe
-		name = Giovanni·Messe
+		name = "Giovanni·Messe"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Giovanni_Messe.png"	
@@ -244,7 +244,7 @@ characters = {
 		}
 	}
 	ITA_Enrico_Caviglia = { #Enrico_Caviglia
-		name = Enrico·Caviglia
+		name = "Enrico·Caviglia"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Enrico_Caviglia.png"	
@@ -275,7 +275,7 @@ characters = {
 		}
 	}
 	ITA_Ugo_Cavallero = { #Ugo_Cavallero
-		name = Ugo·Cavallero
+		name = "Ugo·Cavallero"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Ugo_Cavallero.png"	
@@ -305,7 +305,7 @@ characters = {
 		}
 	}
 	ITA_Vittorio_Emanuele_III = { #Vittorio_Emanuele_III
-		name = Vittorio·Emanuele·III
+		name = "Vittorio·Emanuele·III"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Vittorio_Emanuele_III.png"	
@@ -336,7 +336,7 @@ characters = {
 	}
 	#内阁
 	ITA_Michele_Bianchi = { #Michele_Bianchi
-		name = Michele·Bianchi
+		name = "Michele·Bianchi"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Michele_Bianchi
@@ -353,7 +353,7 @@ characters = {
 		}
 	}
 	ITA_Cesare_Maria_De_Vecchi = { #Cesare_Maria_De_Vecchi
-		name = Cesare·Maria·De·Vecchi
+		name = "Cesare·Maria·De·Vecchi"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Cesare_Maria_De_Vecchi
@@ -370,7 +370,7 @@ characters = {
 		}
 	}
 	ITA_Italo_Balbo = { #Italo_Balbo
-		name = Italo·Balbo
+		name = "Italo·Balbo"
 		portraits = {
 			army = {
 				large = "gfx/leaders/ITA/Italo_Balbo.png"	
@@ -401,7 +401,7 @@ characters = {
 		}
 	}
 	ITA_Francesco_Saverio_Nitti = { #Francesco_Saverio_Nitti
-		name = Francesco·Saverio·Nitti
+		name = "Francesco·Saverio·Nitti"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Francesco_Saverio_Nitti

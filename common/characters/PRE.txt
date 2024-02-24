@@ -1,6 +1,6 @@
 characters = {
 	PRE_Gustav_emil_bernhard_bodo_kessel = { #Gustav_emil_bernhard_bodo_kessel
-		name = Gustav·emil·bernhard·bodo·kessel
+		name = "Gustav·emil·bernhard·bodo·kessel"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Gustav_emil_bernhard_bodo_kessel.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	PRE_Johannes_braskowitz = { #Johannes_braskowitz
-		name = Johannes·braskowitz
+		name = "Johannes·braskowitz"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Johannes_braskowitz.png
@@ -62,7 +62,7 @@ characters = {
 		}
 	}
 	PRE_Josias_von_merlingen = { #Josias_von_merlingen
-		name = Josias·von·merlingen
+		name = "Josias·von·merlingen"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Josias_von_merlingen.png
@@ -93,7 +93,7 @@ characters = {
 	}
 
 	PRE_Ludwig_von_falkenhausen = { #Ludwig_von_falkenhausen
-		name = Ludwig·von·falkenhausen
+		name = "Ludwig·von·falkenhausen"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Ludwig_von_falkenhausen.png
@@ -124,7 +124,7 @@ characters = {
 		}
 	}
 	PRE_Maximlian_von_peitvitz = { #Maximlian_von_peitvitz
-		name = Maximlian·von·peitvitz
+		name = "Maximlian·von·peitvitz"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Maximlian_von_peitvitz.png
@@ -154,7 +154,7 @@ characters = {
 		}
 	}
 	PRE_Prinz_Friedrich_Leopold = { #Prinz_Friedrich_Leopold
-		name = Prinz·Friedrich·Leopold
+		name = "Prinz·Friedrich·Leopold"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Prinz_Friedrich_Leopold.png
@@ -185,7 +185,7 @@ characters = {
 		}
 	}
 	PRE_Remus_von_Voilsch = { #Remus_von_Voilsch
-		name = Remus·von·Voilsch
+		name = "Remus·von·Voilsch"
 		portraits = {
 			army = {
 				large = gfx/leaders/PRE/Remus_von_Voilsch.png

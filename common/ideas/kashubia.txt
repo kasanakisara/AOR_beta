@@ -756,6 +756,7 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 		}
+	}
 		KSH_zujianzongcanmoubu = {
 			 
 			 picture = idea_KSH_zujianzongcanmoubu
@@ -797,6 +798,6 @@ ideas = {
 				army_morale_factor = 0.1
 				conscription_factor = 0.05
 			}
-		}   
+		}
 	}
 }
