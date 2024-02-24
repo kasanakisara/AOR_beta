@@ -1,6 +1,6 @@
 characters = {
 	KSH_Gustav_Noske = { #Gustav_Noske
-		name = Gustav·Noske
+		name = "Gustav·Noske"
 		portraits = {
 			army = {
 				large = gfx/leaders/KSH/amcbj-ylqzs.dds
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	KSH_Hermann_Ehrhardt = { #Hermann_Ehrhardt
-		name = Hermann·Ehrhardt
+		name = "Hermann·Ehrhardt"
 		portraits = {
 			army = {
 				large = gfx/leaders/KSH/Hermann_Ehrhardt.png
@@ -62,7 +62,7 @@ characters = {
 		}
 	}
 	KSH_Gehard_Ribach = { #Gehard_Ribach
-		name = Gehard·Ribach
+		name = "Gehard·Ribach"
 		portraits = {
 			army = {
 				large = gfx/leaders/KSH/Gehard_Ribach.png
@@ -92,7 +92,7 @@ characters = {
 		}
 	}
 	KSH_Wlther_von_Luttwitz = { #Wlther_von_Luttwitz
-		name = Wlther·von·Luttwitz
+		name = "Wlther·von·Luttwitz"
 		portraits = {
 			army = {
 				large = gfx/leaders/KSH/Wlther_von_Luttwitz.png
@@ -123,7 +123,7 @@ characters = {
 		}
 	}
 	KSH_Werner_Eduard_Fritz_von_Blomberg = { #
-		name = Werner·Eduard·Fritz·von·Blomberg
+		name = "Werner·Eduard·Fritz·von·Blomberg"
 		portraits = {
 			army = {
 				large = gfx/leaders/KSH/Werner_Eduard_Fritz_von_Blomberg.png

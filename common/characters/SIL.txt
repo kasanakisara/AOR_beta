@@ -1,6 +1,6 @@
 characters = {
 	SIL_Erwin_von_Witzleben = { #Erwin_von_Witzleben
-		name = Erwin·von·Witzleben
+		name = "Erwin·von·Witzleben"
 		portraits = {
 			army = {
 				large = gfx/leaders/SIL/Erwin_von_Witzleben.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	SIL_Hans_lammers = { #Hans_lammers
-		name = Hans·lammers
+		name = "Hans·lammers"
 		portraits = {
 			army = {
 				large = gfx/leaders/SIL/Hans_lammers.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	SIL_Moritz_von_bissing = { #Moritz_von_bissing
-		name = Moritz·von·bissing
+		name = "Moritz·von·bissing"
 		portraits = {
 			army = {
 				large = gfx/leaders/SIL/Moritz_von_bissing.png
@@ -92,7 +92,7 @@ characters = {
 		}
 	}
 	SIL_Nikolaus_von_falkenhorst = { #Nikolaus_von_falkenhorst
-		name = Nikolaus·von·falkenhorst
+		name = "Nikolaus·von·falkenhorst"
 		portraits = {
 			army = {
 				large = gfx/leaders/SIL/Nikolaus_von_falkenhorst.png
@@ -122,7 +122,7 @@ characters = {
 		}
 	}
 	SIL_Richard_Von_Schobert = { #Richard_Von_Schobert
-		name = Richard·Von·Schobert
+		name = "Richard·Von·Schobert"
 		portraits = {
 			army = {
 				large = gfx/leaders/SIL/Richard_Von_Schobert.png

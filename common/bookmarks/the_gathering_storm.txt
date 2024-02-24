@@ -39,14 +39,14 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
+				USA_the_divided_nation
+				USA_shiyouhuanying
+				USA_busidexintuo
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+				USA_White_House
+				USA_Detroit
+				USA_imprisoned
 			}
 		}
 
@@ -289,7 +289,6 @@ bookmarks = {
 			ideas = {
 			}
 			}
-		}
 
 		
 		"HUN"={
@@ -307,4 +306,4 @@ bookmarks = {
 			#123 = { rain_light = yes }
 		}
 	}
-} 
+}
