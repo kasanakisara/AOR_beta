@@ -123,10 +123,13 @@ focus_tree={
 		add_ideas = AOR_CHI_Military_aid_from_the_Allies
 		
 		hidden_effect = {
-		add_offsite_building = { type = arms_factory level = 3 }
-			}
-		}
-	}
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 3 
+	    	}
+	    }
+    }
+}
 	focus={
 		id=CHI_Northwest_joint_command
 		x=5

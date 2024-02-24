@@ -1,4 +1,817 @@
-<<<<<<< Updated upstream
+#######<<<<<<< Updated upstream
+focus_tree = {
+	id = Warlord_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = 1
+				tag = 2
+				tag = 3
+				tag = 4
+				tag = 5
+				tag = 6
+				tag = 7
+			}
+		}
+	}
+	
+
+	default = no
+	continuous_focus_position = { x = 20 y = 1600 }
+
+    #宣布保境安民
+	focus = {
+		id = Warlord_1
+		icon = GFX
+		cost = 5
+		x = 6
+		y = 0
+
+		completion_reward = {
+			country_event = bw_Warlord.1
+		}
+    }
+
+    #坐观成败
+    focus = {
+		id = Warlord_2
+		icon = GFX
+		cost = 6
+        relative_position_id = Warlord_1
+        prerequisite = { focus = Warlord_1 }
+		mutually_exclusive = { focus = Warlord_6}
+		x = -3
+		y = 1
+		completion_reward = {
+			remove_ideas = chaos_politic
+			add_stability = 0.05
+			add_war_support = 0.1
+			army_experience = 50
+		}
+    }
+
+    #稳定本省议会
+    focus = {
+		id = Warlord_3
+		icon = GFX
+		cost = 5
+		relative_position_id = Warlord_2
+        prerequisite = { focus = Warlord_2 }
+		x = -2
+		y = 1
+		complete_effect = {
+
+		}
+    } 
+
+    #联合乡绅掌权
+    focus = {
+		id = Warlord_4
+		icon = GFX
+		cost = 5
+		relative_position_id = Warlord_2
+        prerequisite = { focus = Warlord_2 }
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+    }
+
+    #收买北洋将领
+    focus = {
+		id = Warlord_5
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_2
+        prerequisite = { focus = Warlord_2 }
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+    }
+
+	#问鼎中原
+	focus = {
+		id = Warlord_6
+		icon = GFX_Warlord_6
+		cost = 6
+		relative_position_id = Warlord_1
+		prerequisite = { focus = Warlord_1 }
+		mutually_exclusive = { focus = Warlord_2 }
+		x = 3
+		y = 1
+		completion_reward = {
+			remove_ideas = chaos_politic
+			add_stability = 0.05
+			add_war_support = 0.1
+			army_experience = 50
+		}
+	}
+
+	#解散本省议会
+	focus = {
+		id = Warlord_7
+		icon = GFX_Warlord_7
+		cost = 5
+		relative_position_id = Warlord_6
+		prerequisite = { focus = Warlord_6 }
+		x = -2
+		y = 1
+		complete_effect = {
+
+		}
+	} 
+
+	#组建亲信政府
+	focus = {
+		id = Warlord_8
+		icon = GFX_Warlord_8
+		cost = 5
+		relative_position_id = Warlord_6
+		prerequisite = { focus = Warlord_6 }
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	#清洗北洋将领
+	focus = {
+		id = Warlord_9
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_6
+		prerequisite = { focus = Warlord_6 }
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	#过渡
+	focus = {
+		id = Warlord_10
+		icon = GFX
+		cost = 0.01
+		relative_position_id = Warlord_4
+		x = 0
+		y = 1		
+		prerequisite = { focus = Warlord_3 }
+        prerequisite = { focus = Warlord_4 }
+		prerequisite = { focus = Warlord_5 }
+
+		completion_reward = {
+		}
+    }
+	#过渡
+	focus = {
+		id = Warlord_11
+		icon = GFX
+		cost = 0.01
+		relative_position_id = Warlord_8
+		x = 0
+		y = 1		
+		prerequisite = { focus = Warlord_7 }
+        prerequisite = { focus = Warlord_8 }
+		prerequisite = { focus = Warlord_9 }
+
+		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = Warlord_12 #军政统一
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_6
+		prerequisite = { 
+			focus = Warlord_10
+		}
+
+		prerequisite = { 
+			focus = Warlord_11
+		}
+
+		relative_position_id = Warlord_1
+		x = 0
+		y = 4
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_13 #优先省内发展
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_6
+		prerequisite = { 
+			focus = Warlord_12
+		}
+		mutually_exclusive = { focus = Warlord_26}
+
+		relative_position_id = Warlord_12
+		x = -3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+    focus = {
+		id = Warlord_14 #革新税赋
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_13
+
+		prerequisite = { 
+			focus = Warlord_13
+		}
+
+		relative_position_id = Warlord_13
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_15 #管控鸦片种植
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_14
+
+		prerequisite = { 
+			focus = Warlord_14
+		}
+
+		relative_position_id = Warlord_14
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_16 #扶持本地企业
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_15
+	
+		prerequisite = { 
+			focus = Warlord_15
+		}
+	
+		relative_position_id = Warlord_15
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_17 #省营武器工厂
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_16
+
+		prerequisite = { 
+			focus = Warlord_16
+		}
+
+		relative_position_id = Warlord_16
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_18 #省立军队
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_13
+
+		prerequisite = { 
+			focus = Warlord_13
+		}
+
+		relative_position_id = Warlord_13
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_19 #扩充讲武堂
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_18
+
+		prerequisite = { 
+			focus = Warlord_18
+		}
+
+		relative_position_id = Warlord_18
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_20 #引进新式武器
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_19
+	
+		prerequisite = { 
+			focus = Warlord_19
+		}
+	
+		relative_position_id = Warlord_19
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_21 #改良兵员素质
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_20
+
+		prerequisite = { 
+			focus = Warlord_20
+		}
+
+		relative_position_id = Warlord_20
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_22 #文官治理
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_13
+
+		prerequisite = { 
+			focus = Warlord_13
+		}
+
+		relative_position_id = Warlord_13
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = WArlord_23 #提高教育资金
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_22
+
+		prerequisite = { 
+			focus = Warlord_22
+		}
+
+		relative_position_id = Warlord_22
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_24 #新式教师教材
+		icon = GFX
+		cost = 4.3
+		relative_position_id = WArlord_23
+	
+		prerequisite = { 
+			focus = WArlord_23
+		}
+	
+		relative_position_id = WArlord_23
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_25 #建立省立大学
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_24
+
+		prerequisite = { 
+			focus = Warlord_24
+		}
+
+		relative_position_id = Warlord_24
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_26 #迈向勃勃雄心
+		icon = GFX
+		cost = 4.3
+		prerequisite = { 
+			focus = Warlord_12
+		}
+		mutually_exclusive = { focus = Warlord_13}
+
+		relative_position_id = Warlord_12
+		x = 3
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+    focus = {
+		id = Warlord_27 #预征税款
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_26
+
+		prerequisite = { 
+			focus = Warlord_26
+		}
+
+		relative_position_id = Warlord_26
+		x = -2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_28 #掌管鸦片产业
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_27
+
+		prerequisite = { 
+			focus = Warlord_27
+		}
+
+		relative_position_id = Warlord_27
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_29 #企业收归官办
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_28
+	
+		prerequisite = { 
+			focus = Warlord_28
+		}
+	
+		relative_position_id = Warlord_28
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_30 #采购海外武器
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_29
+
+		prerequisite = { 
+			focus = Warlord_29
+		}
+
+		relative_position_id = Warlord_29
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_31 #忠诚军队
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_26
+
+		prerequisite = { 
+			focus = Warlord_26
+		}
+
+		relative_position_id = Warlord_26
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_32 #猛将发于卒
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_31
+
+		prerequisite = { 
+			focus = Warlord_31
+		}
+
+		relative_position_id = Warlord_31
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_33 #数量胜过质量
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_32
+	
+		prerequisite = { 
+			focus = Warlord_32
+		}
+	
+		relative_position_id = Warlord_32
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_34 #人人皆可为兵
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_33
+
+		prerequisite = { 
+			focus = Warlord_33
+		}
+
+		relative_position_id = Warlord_33
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_35 #任人唯亲
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_26
+
+		prerequisite = { 
+			focus = Warlord_26
+		}
+
+		relative_position_id = Warlord_26
+		x = 2
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_36 #有限教育投入
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_35
+
+		prerequisite = { 
+			focus = Warlord_35
+		}
+
+		relative_position_id = Warlord_35
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_37 #回归传统教育
+		icon = GFX
+		cost = 4.3
+		relative_position_id = Warlord_37
+	
+		prerequisite = { 
+			focus = Warlord_36
+		}
+	
+		relative_position_id = Warlord_36
+		x = 0
+		y = 1
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = Warlord_38 #引进国外专家
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_37
+		}
+
+		relative_position_id = Warlord_37
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_39 #开启统一谈判
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_17
+		}
+
+		prerequisite = { 
+			focus = Warlord_21
+		}
+
+		prerequisite = { 
+			focus = Warlord_25
+		}
+
+		relative_position_id = Warlord_21
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_40 #投靠英国阵营
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_30
+		}
+
+		prerequisite = { 
+			focus = Warlord_34
+		}
+
+		prerequisite = { 
+			focus = Warlord_38
+		}
+
+		mutually_exclusive = { focus = Warlord_41}
+		mutually_exclusive = { focus = Warlord_42}
+
+		relative_position_id = Warlord_30
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_41 #寻求法国支持
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_30
+		}
+
+		prerequisite = { 
+			focus = Warlord_34
+		}
+
+		prerequisite = { 
+			focus = Warlord_38
+		}
+
+		mutually_exclusive = { focus = Warlord_40}
+		mutually_exclusive = { focus = Warlord_42}
+
+		relative_position_id = Warlord_34
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_42 #接受日本援助
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_30
+		}
+
+		prerequisite = { 
+			focus = Warlord_34
+		}
+
+		prerequisite = { 
+			focus = Warlord_38
+		}
+
+		mutually_exclusive = { focus = Warlord_41}
+		mutually_exclusive = { focus = Warlord_40}
+
+		relative_position_id = Warlord_38
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = Warlord_43 #逐鹿中原
+		icon = GFX
+		cost = 4.3
+
+		prerequisite = { 
+			focus = Warlord_40
+		}
+
+		prerequisite = { 
+			focus = Warlord_41
+		}
+
+		prerequisite = { 
+			focus = Warlord_42
+		}
+
+		relative_position_id = Warlord_41
+		x = 0
+		y = 1
+		completion_reward = {
+
+		}
+	}
+}
+
+
+
+
+
+##############
+
 focus_tree = {
 	id = Warlord_focus_tree
 	country = {
@@ -810,817 +1623,5 @@ focus_tree = {
 
 
 
-=======
-focus_tree = {
-	id = Warlord_focus_tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			OR = {
-				tag = 1
-				tag = 2
-				tag = 3
-				tag = 4
-				tag = 5
-				tag = 6
-				tag = 7
-			}
-		}
-	}
-	
-
-	default = no
-	continuous_focus_position = { x = 20 y = 1600 }
-
-    #宣布保境安民
-	focus = {
-		id = Warlord_1
-		icon = GFX
-		cost = 5
-		x = 6
-		y = 0
-
-		completion_reward = {
-			country_event = bw_Warlord.1
-		}
-    }
-
-    #坐观成败
-    focus = {
-		id = Warlord_2
-		icon = GFX
-		cost = 6
-        relative_position_id = Warlord_1
-        prerequisite = { focus = Warlord_1 }
-		mutually_exclusive = { focus = Warlord_6}
-		x = -3
-		y = 1
-		completion_reward = {
-			remove_ideas = chaos_politic
-			add_stability = 0.05
-			add_war_support = 0.1
-			army_experience = 50
-		}
-    }
-
-    #稳定本省议会
-    focus = {
-		id = Warlord_3
-		icon = GFX
-		cost = 5
-		relative_position_id = Warlord_2
-        prerequisite = { focus = Warlord_2 }
-		x = -2
-		y = 1
-		complete_effect = {
-
-		}
-    } 
-
-    #联合乡绅掌权
-    focus = {
-		id = Warlord_4
-		icon = GFX
-		cost = 5
-		relative_position_id = Warlord_2
-        prerequisite = { focus = Warlord_2 }
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-    }
-
-    #收买北洋将领
-    focus = {
-		id = Warlord_5
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_2
-        prerequisite = { focus = Warlord_2 }
-		x = 2
-		y = 1
-		completion_reward = {
-
-		}
-    }
-
-	#问鼎中原
-	focus = {
-		id = Warlord_6
-		icon = GFX_Warlord_6
-		cost = 6
-		relative_position_id = Warlord_1
-		prerequisite = { focus = Warlord_1 }
-		mutually_exclusive = { focus = Warlord_2 }
-		x = 3
-		y = 1
-		completion_reward = {
-			remove_ideas = chaos_politic
-			add_stability = 0.05
-			add_war_support = 0.1
-			army_experience = 50
-		}
-	}
-
-	#解散本省议会
-	focus = {
-		id = Warlord_7
-		icon = GFX_Warlord_7
-		cost = 5
-		relative_position_id = Warlord_6
-		prerequisite = { focus = Warlord_6 }
-		x = -2
-		y = 1
-		complete_effect = {
-
-		}
-	} 
-
-	#组建亲信政府
-	focus = {
-		id = Warlord_8
-		icon = GFX_Warlord_8
-		cost = 5
-		relative_position_id = Warlord_6
-		prerequisite = { focus = Warlord_6 }
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	#清洗北洋将领
-	focus = {
-		id = Warlord_9
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_6
-		prerequisite = { focus = Warlord_6 }
-		x = 2
-		y = 1
-		completion_reward = {
-
-		}
-	}
-	#过渡
-	focus = {
-		id = Warlord_10
-		icon = GFX
-		cost = 0.01
-		relative_position_id = Warlord_4
-		x = 0
-		y = 1		
-		prerequisite = { focus = Warlord_3 }
-        prerequisite = { focus = Warlord_4 }
-		prerequisite = { focus = Warlord_5 }
-
-		completion_reward = {
-		}
-    }
-	#过渡
-	focus = {
-		id = Warlord_11
-		icon = GFX
-		cost = 0.01
-		relative_position_id = Warlord_8
-		x = 0
-		y = 1		
-		prerequisite = { focus = Warlord_7 }
-        prerequisite = { focus = Warlord_8 }
-		prerequisite = { focus = Warlord_9 }
-
-		completion_reward = {
-		}
-    }
-
-	focus = {
-		id = Warlord_12 #军政统一
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_6
-		prerequisite = { 
-			focus = Warlord_10
-		}
-
-		prerequisite = { 
-			focus = Warlord_11
-		}
-
-		relative_position_id = Warlord_1
-		x = 0
-		y = 4
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_13 #优先省内发展
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_6
-		prerequisite = { 
-			focus = Warlord_12
-		}
-		mutually_exclusive = { focus = Warlord_26}
-
-		relative_position_id = Warlord_12
-		x = -3
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-    focus = {
-		id = Warlord_14 #革新税赋
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_13
-
-		prerequisite = { 
-			focus = Warlord_13
-		}
-
-		relative_position_id = Warlord_13
-		x = -2
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_15 #管控鸦片种植
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_14
-
-		prerequisite = { 
-			focus = Warlord_14
-		}
-
-		relative_position_id = Warlord_14
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_16 #扶持本地企业
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_15
-	
-		prerequisite = { 
-			focus = Warlord_15
-		}
-	
-		relative_position_id = Warlord_15
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_17 #省营武器工厂
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_16
-
-		prerequisite = { 
-			focus = Warlord_16
-		}
-
-		relative_position_id = Warlord_16
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_18 #省立军队
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_13
-
-		prerequisite = { 
-			focus = Warlord_13
-		}
-
-		relative_position_id = Warlord_13
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_19 #扩充讲武堂
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_18
-
-		prerequisite = { 
-			focus = Warlord_18
-		}
-
-		relative_position_id = Warlord_18
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_20 #引进新式武器
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_19
-	
-		prerequisite = { 
-			focus = Warlord_19
-		}
-	
-		relative_position_id = Warlord_19
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_21 #改良兵员素质
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_20
-
-		prerequisite = { 
-			focus = Warlord_20
-		}
-
-		relative_position_id = Warlord_20
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_22 #文官治理
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_13
-
-		prerequisite = { 
-			focus = Warlord_13
-		}
-
-		relative_position_id = Warlord_13
-		x = 2
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = WArlord_23 #提高教育资金
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_22
-
-		prerequisite = { 
-			focus = Warlord_22
-		}
-
-		relative_position_id = Warlord_22
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_24 #新式教师教材
-		icon = GFX
-		cost = 4.3
-		relative_position_id = WArlord_23
-	
-		prerequisite = { 
-			focus = WArlord_23
-		}
-	
-		relative_position_id = WArlord_23
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_25 #建立省立大学
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_24
-
-		prerequisite = { 
-			focus = Warlord_24
-		}
-
-		relative_position_id = Warlord_24
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_26 #迈向勃勃雄心
-		icon = GFX
-		cost = 4.3
-		prerequisite = { 
-			focus = Warlord_12
-		}
-		mutually_exclusive = { focus = Warlord_13}
-
-		relative_position_id = Warlord_12
-		x = 3
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-    focus = {
-		id = Warlord_27 #预征税款
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_26
-
-		prerequisite = { 
-			focus = Warlord_26
-		}
-
-		relative_position_id = Warlord_26
-		x = -2
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_28 #掌管鸦片产业
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_27
-
-		prerequisite = { 
-			focus = Warlord_27
-		}
-
-		relative_position_id = Warlord_27
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_29 #企业收归官办
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_28
-	
-		prerequisite = { 
-			focus = Warlord_28
-		}
-	
-		relative_position_id = Warlord_28
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_30 #采购海外武器
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_29
-
-		prerequisite = { 
-			focus = Warlord_29
-		}
-
-		relative_position_id = Warlord_29
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_31 #忠诚军队
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_26
-
-		prerequisite = { 
-			focus = Warlord_26
-		}
-
-		relative_position_id = Warlord_26
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_32 #猛将发于卒
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_31
-
-		prerequisite = { 
-			focus = Warlord_31
-		}
-
-		relative_position_id = Warlord_31
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_33 #数量胜过质量
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_32
-	
-		prerequisite = { 
-			focus = Warlord_32
-		}
-	
-		relative_position_id = Warlord_32
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_34 #人人皆可为兵
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_33
-
-		prerequisite = { 
-			focus = Warlord_33
-		}
-
-		relative_position_id = Warlord_33
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_35 #任人唯亲
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_26
-
-		prerequisite = { 
-			focus = Warlord_26
-		}
-
-		relative_position_id = Warlord_26
-		x = 2
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_36 #有限教育投入
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_35
-
-		prerequisite = { 
-			focus = Warlord_35
-		}
-
-		relative_position_id = Warlord_35
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_37 #回归传统教育
-		icon = GFX
-		cost = 4.3
-		relative_position_id = Warlord_37
-	
-		prerequisite = { 
-			focus = Warlord_36
-		}
-	
-		relative_position_id = Warlord_36
-		x = 0
-		y = 1
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = Warlord_38 #引进国外专家
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_37
-		}
-
-		relative_position_id = Warlord_37
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_39 #开启统一谈判
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_17
-		}
-
-		prerequisite = { 
-			focus = Warlord_21
-		}
-
-		prerequisite = { 
-			focus = Warlord_25
-		}
-
-		relative_position_id = Warlord_21
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_40 #投靠英国阵营
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_30
-		}
-
-		prerequisite = { 
-			focus = Warlord_34
-		}
-
-		prerequisite = { 
-			focus = Warlord_38
-		}
-
-		mutually_exclusive = { focus = Warlord_41}
-		mutually_exclusive = { focus = Warlord_42}
-
-		relative_position_id = Warlord_30
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_41 #寻求法国支持
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_30
-		}
-
-		prerequisite = { 
-			focus = Warlord_34
-		}
-
-		prerequisite = { 
-			focus = Warlord_38
-		}
-
-		mutually_exclusive = { focus = Warlord_40}
-		mutually_exclusive = { focus = Warlord_42}
-
-		relative_position_id = Warlord_34
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_42 #接受日本援助
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_30
-		}
-
-		prerequisite = { 
-			focus = Warlord_34
-		}
-
-		prerequisite = { 
-			focus = Warlord_38
-		}
-
-		mutually_exclusive = { focus = Warlord_41}
-		mutually_exclusive = { focus = Warlord_40}
-
-		relative_position_id = Warlord_38
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = Warlord_43 #逐鹿中原
-		icon = GFX
-		cost = 4.3
-
-		prerequisite = { 
-			focus = Warlord_40
-		}
-
-		prerequisite = { 
-			focus = Warlord_41
-		}
-
-		prerequisite = { 
-			focus = Warlord_42
-		}
-
-		relative_position_id = Warlord_41
-		x = 0
-		y = 1
-		completion_reward = {
-
-		}
-	}
-
-
-
-
-
-
->>>>>>> Stashed changes
+########>>>>>>> Stashed changes
 }
