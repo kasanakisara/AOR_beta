@@ -20,5 +20,8 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 100
+	Absolutism = 50
+	CON_democratic = 20
+	REL_socialism = 10
+	Anarcho = 20
 }

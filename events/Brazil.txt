@@ -45,9 +45,9 @@ country_event = {
 	    	transfer_state = 280
 	    	transfer_state = 504
 	    	transfer_state = 496
+			transfer_state = 505
 		}
 		BR2 = {
-	    	transfer_state = 505
 	    	transfer_state = 499
 		}
 		BR3 = {

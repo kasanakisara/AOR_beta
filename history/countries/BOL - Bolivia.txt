@@ -77,7 +77,10 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 100
+	FRE_democratic = 32
+	AUT_democratic = 19
+	CON_democratic = 39
+	Absolutism = 10
 }
 
 create_country_leader = {

@@ -43,9 +43,7 @@ ideas = {
 
 		SWE_British = {
 			picture = ""
-			allowed = {
-				always = yes
-			}
+			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.25
 				stability_factor = 0.1
@@ -54,12 +52,19 @@ ideas = {
 
 		SWE_Francais = {
 			picture = ""
-			allowed = {
-				always = yes
-			}
+			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.25
 				stability_factor = 0.1
+			}
+		}
+
+		SWE_Stockholm_Law = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.2
 			}
 		}
 	}

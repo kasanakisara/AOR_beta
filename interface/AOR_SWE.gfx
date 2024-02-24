@@ -11,3 +11,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
 	}
 }
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_AOR_news.70_pic"
+		texturefile = "gfx/event_pictures/AOR_news.70_pic.png"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Norweign_Independence_bg"
+		texturefile = "gfx/AOR_gui/SWE/SWE_Norweign_Independence_bg.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Norweign_Independence_meter"
+		texturefile = "gfx/AOR_gui/SWE/SWE_Norweign_Independence_meter.dds"
+		legacy_lazy_load = no
+		noOfFrames = 21
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Norweign_Independence_needle"
+		texturefile = "gfx/AOR_gui/SWE/SWE_Norweign_Independence_needle.dds"
+		legacy_lazy_load = no
+		noOfFrames = 21
+	}
+}
