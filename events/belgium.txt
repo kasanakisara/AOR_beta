@@ -204,3 +204,73 @@ country_event = {
 
 }
 
+country_event = {
+	id = BEL.31
+	title = BEL.31.t
+	desc = BEL.31.d
+	picture = GFX_BEL.31_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.31.a
+	}
+
+}
+
+country_event = {
+	id = BEL.32
+	title = BEL.32.t
+	desc = BEL.32.d
+	picture = GFX_BEL.32_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.32.a
+	}
+
+}
+
+country_event = {
+	id = BEL.33
+	title = BEL.33.t
+	desc = BEL.33.d
+	picture = GFX_BEL.33_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.33.a
+	}
+
+}
+
+country_event = {
+	id = BEL.34
+	title = BEL.34.t
+	desc = BEL.34.d
+	picture = GFX_BEL.34_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.34.a
+	}
+
+}
+
+country_event = {
+	id = BEL.35
+	title = BEL.35.t
+	desc = BEL.35.d
+	picture = GFX_BEL.35_pic
+	is_triggered_only = yes
+
+      
+	option = {
+		name = BEL.35.a
+	}
+
+}
+
