@@ -73,15 +73,18 @@ if = {
 
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = AGR_socialism
 	last_election = "1915.5.19"
 	elections_allowed = no
 }
 
 set_popularities = {
-	CON_democratic = 55 #洋基党
-	FRE_democratic = 40 #迪克西党
-	SOC_democratic = 5 #社民
+	AGR_socialism = 41
+	FRE_democratic = 11 
+	CON_democratic = 19
+	SOC_democratic = 15
+	Anarcho = 10
+	Special = 4
 
 }
 
@@ -90,7 +93,7 @@ create_country_leader = {
 	desc = "Annie_Le_Porte_Diggs_desc"
 	picture = "gfx/leaders/US4/Annie_Le_Porte_Diggs.png"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = revoway
 	traits = {
 		
 	}

@@ -12,12 +12,12 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 20 #洋基党
-	FRE_democratic = 65 #迪克西党
-	SOC_democratic = 5 #社民
-	AGR_socialism = 3 #农工党
-	AUT_democratic = 5 #社会党
-	Absolutism = 2 #独立同盟
+	FRE_democratic = 45 
+	CON_democratic = 30
+	SOC_democratic = 15  
+	AGR_socialism = 3 
+	AUT_democratic = 5 
+	Absolutism = 2 
 }
 
 create_country_leader = {

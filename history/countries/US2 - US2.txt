@@ -72,9 +72,11 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 75 #军政府
-	AUT_democratic = 20 #威权民
-	CON_democratic = 5 #保守民
+	Absolutism = 54
+	FRE_democratic = 26
+	CON_democratic = 10
+	AUT_democratic = 5
+	Fascism = 5
 }
 
 create_country_leader = {
@@ -82,7 +84,7 @@ create_country_leader = {
 	desc = "John_Joseph_Pershing_desc"
 	picture = "gfx/leaders/US2/Joseph_Pershing.png"
 	expire = "1953.3.1"
-	ideology = miliciagov
+	ideology = despotism
 	traits = {
 		
 	}
