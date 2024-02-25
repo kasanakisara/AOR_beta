@@ -803,17 +803,47 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10015 #美国左翼文案 厄尔 法国
+	id = USA.10015 #美国左翼文案 拉福伊 
     title = USA.10015.t
     desc = USA.10015.d
     is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1922.6.10
+	       date = 1921.6.20
 	 }
     option = { 
         name = USA.10015.a
+	
+	}
+}
+country_event = {
+	id = USA.10016 #美国左翼文案 拉福伊
+    title = USA.10016.t
+    desc = USA.10016.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1921.6.25
+	 }
+    option = { 
+        name = USA.10016.a
+	
+	}
+}
+country_event = {
+	id = USA.10017 #美国左翼文案 厄尔 法国
+    title = USA.10017.t
+    desc = USA.10017.d
+    is_triggered_only = yes
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1922.7.1
+	 }
+    option = { 
+        name = USA.10017.a
 	
 	}
 }
