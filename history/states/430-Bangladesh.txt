@@ -6,7 +6,19 @@ state={
 		add_core_of = BAN
 		owner = RAJ
 		victory_points = {
-			11929 1 
+			11929 15 
+		}
+		victory_points = {
+			9991 5 
+		}
+		victory_points = {
+			7662 3 
+		}
+		victory_points = {
+			10443 3 
+		}
+		victory_points = {
+			2843 1 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
