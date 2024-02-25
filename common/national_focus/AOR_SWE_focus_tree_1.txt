@@ -205,6 +205,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
+		completion_reward = {
+			add_ideas = SWE_Antisocialistisk_Speciallagen
+		}
 
 	}
 	focus = {

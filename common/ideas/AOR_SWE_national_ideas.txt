@@ -67,5 +67,14 @@ ideas = {
 				political_power_factor = 0.2
 			}
 		}
+
+		SWE_Antisocialistisk_Speciallagen = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.2
+				Marxism_drift = -0.1
+			}
+		}
 	}
 }
