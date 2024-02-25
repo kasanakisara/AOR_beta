@@ -100,7 +100,7 @@ create_country_leader = {
 	desc = "POLITICS_BRA_DESC"
 	picture = "gfx/leaders/BRA/BRA.png"
 	expire = "1965.1.1"
-	ideology = miliciagov
+	ideology = despotism
 	traits = {
 	}
 }
@@ -184,9 +184,12 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 54
-	AUT_democratic = 21
-	FRE_democratic = 25
+	Absolutism = 40
+	AUT_democratic = 20
+	FRE_democratic = 16
+	CON_democratic = 14
+	AGR_socialism = 7
+	Anarcho = 3
 }
 
 
