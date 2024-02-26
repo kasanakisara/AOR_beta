@@ -5,12 +5,15 @@ state={
 		owner = ARA
 		add_core_of = ARA
 		add_core_of = JSR
-		victory_points = {
+	buildings = {
+		infrastructure = 1
+			}
+	victory_points = {
 			2057 5 
 		}
 	}
 	provinces={
-		2057 4968 5027 10892 
+		2057 4968 5027 10892 5058
 	}
 	manpower=453265
 	buildings_max_level_factor=1.000
