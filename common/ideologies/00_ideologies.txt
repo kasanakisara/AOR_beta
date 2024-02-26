@@ -23,13 +23,12 @@ ideologies = {
 			committee = {
 			}
 
-			PRC_county= {	#土地革命论
+			PRCrevolutionism = {
+			
 			}
-
-			PRC_pioneer= {	#先锋队理论
-			}
-
-			PRC_urban= {	#城市中心革命论
+			
+			Leftmilitarism = {
+			
 			}
 			
 			REV_soc = {   #革命社会民主主义
@@ -88,6 +87,11 @@ ideologies = {
 			demsoc = {
 			}
 
+			PRCcosmopolitanism = {
+			}
+			socialism_mid = {
+			}
+			
 			}
 		
 		dynamic_faction_names = {
@@ -472,7 +476,7 @@ ideologies = {
 	
 	types = {
 	
-		socialism = {
+		socialism_right = {
 		}
 
 		meliorism = {
@@ -611,9 +615,6 @@ ideologies = {
 		}
 
 		nationalsoc = {
-		}
-
-		wangism = {
 		}
 
 		szegedism = {

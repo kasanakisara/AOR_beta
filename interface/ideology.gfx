@@ -85,10 +85,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_socialism"
-		textureFile = "gfx/interface/ideologies/socialism.dds"
+		name = "GFX_ideology_socialism_right"
+		textureFile = "gfx/interface/ideologies/socialism_right.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_socialism_mid"
+		textureFile = "gfx/interface/ideologies/socialism_mid.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_soltanism"
 		textureFile = "gfx/interface/ideologies/soltanism.dds"
@@ -203,10 +206,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_PRC_urban"
-		textureFile = "gfx/interface/ideologies/PRC_urban.dds"
+		name = "GFX_ideology_PRCrevolutionism"
+		textureFile = "gfx/interface/ideologies/PRCrevolutionism.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_Leftmilitarism"
+		textureFile = "gfx/interface/ideologies/Leftmilitarism.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_revoway"
 		textureFile = "gfx/interface/ideologies/revoway.dds"
@@ -216,12 +222,18 @@ spriteTypes = {
 		name = "GFX_ideology_sunism"
 		textureFile = "gfx/interface/ideologies/sunism.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_PRCcosmopolitanism"
+		textureFile = "gfx/interface/ideologies/PRCcosmopolitanism.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_surrenderism"
 		textureFile = "gfx/interface/ideologies/surrenderism.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_uni_san"
+		textureFile = "gfx/interface/ideologies/uni_san.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_troopism"
 		textureFile = "gfx/interface/ideologies/troopism.dds"
@@ -236,17 +248,33 @@ spriteTypes = {
 		name = "GFX_ideology_wangism"
 		textureFile = "gfx/interface/ideologies/wangism.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_confuism"
+		textureFile = "gfx/interface/ideologies/confuism.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_corporatism"
+		textureFile = "gfx/interface/ideologies/corporatism.dds"
+	}	
 	spriteType = {
 		name = "GFX_ideology_committee"
 		textureFile = "gfx/interface/ideologies/committee.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_"
-		textureFile = "gfx/interface/ideologies/.dds"
+		name = "GFX_ideology_new_ten"
+		textureFile = "gfx/interface/ideologies/new_ten.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_new_ref"
+		textureFile = "gfx/interface/ideologies/new_ref.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_ideology_new_syn"
+		textureFile = "gfx/interface/ideologies/new_syn.dds"
+	}
+		
 	spriteType = {
 		name = "GFX_ideology_lianshengism"
 		textureFile = "gfx/interface/ideologies/lianshengism.dds"
@@ -256,7 +284,26 @@ spriteTypes = {
 		name = "GFX_ideology_REV_soc"
 		textureFile = "gfx/interface/ideologies/REV_soc.dds"
 	}
-
+	spriteType = {
+		name = "GFX_ideology_warlord"
+		textureFile = "gfx/interface/ideologies/warlord.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_rad_san"
+		textureFile = "gfx/interface/ideologies/rad_san.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_newdemism"
+		textureFile = "gfx/interface/ideologies/newdemism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_new_san"
+		textureFile = "gfx/interface/ideologies/new_san.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_social_liberalism"
+		textureFile = "gfx/interface/ideologies/social_liberalism.dds"
+	}
 }
 
 
