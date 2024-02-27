@@ -33,7 +33,7 @@ country_event = {
 		desc = ""
 		picture = "gfx/leaders/AST/MC.png"
 		expire = "1945.1.1"
-		ideology = socialism
+		ideology = socialism_right
 		}
 		news_event = {id = AOR_news.61}
 	}
