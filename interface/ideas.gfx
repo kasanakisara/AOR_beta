@@ -6703,9 +6703,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Compact_of_German_Confederation"
-		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation.dds"
+		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation.png"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_Compact_of_German_Confederation_1"
+		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation_1.png"
+	}	
 	spriteType = {
 		name = "GFX_idea_trade_with_berlin"
 		texturefile = "gfx/interface/ideas/GFX_idea_trade_with_berlin.dds"
