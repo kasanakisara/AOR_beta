@@ -171,7 +171,7 @@ create_country_leader = {
 	desc = "POLITICS_Karl_Kautsky_DESC"
 	picture = "auy2s-u2n48.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_right
 	traits = {
 	}
 }
