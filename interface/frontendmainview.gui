@@ -337,45 +337,6 @@ guiTypes = {
 			}
 		}
 		
-		# ButtonType = {
-		# 	name = "homepage_button"
-		# 	position = { x= -800 y=0 }
-		# 	quadTextureSprite ="homepage"
-		# 	clicksound = click_default
-		# 	pdx_tooltip = "MENU_HOMEPAGE"
-		# }
-		# ButtonType = {
-		# 	name = "forum_button"
-		# 	position = { x=-750 y=0 }
-		# 	quadTextureSprite ="forum"
-		# 	clicksound = click_default
-		# 	pdx_tooltip = "MENU_FORUM"
-		# 	web_link = "https://www.bilibili.com/video/BV1m34y1J7ur/?spm_id_from=333.999.0.0"
-		# }
-		# ButtonType = {
-		# 	name = "facebook_button"
-		# 	position = { x=-700 y=0 }
-		# 	quadTextureSprite ="facebook"
-		# 	clicksound = click_default
-		# 	pdx_tooltip = "MENU_FACEBOOK"
-		# 	web_link = "https://space.bilibili.com/15492488?spm_id_from=333.788.0.0"
-		# }
-		# ButtonType = {
-		# 	name = "twitter_button"
-		# 	position = { x=-650 y=0 }
-		# 	quadTextureSprite ="twitter"
-		# 	#clicksound = click_default
-		# 	pdx_tooltip = "MENU_TWITTER"
-		# 	web_link = "https://www.zhihu.com/people/ling-zao-79-54"
-		# }
-		# ButtonType = {
-		# 	name = "privacy_policy_button"
-		# 	position = { x=-600 y=0 }
-		# 	quadTextureSprite ="privacy"
-		# 	#clicksound = click_default
-		# 	pdx_tooltip = "MENU_PRIVACY_POLICY"
-		# }
-	}
 
 	## This position needs updated
 	containerWindowType = {
