@@ -1327,7 +1327,7 @@ news_event = { #石荷公投-丹
 }
 
 news_event = { #纽芬兰给英
-	id = AOR_news.70
+	id = AOR_news.73
 	title = AOR_news.70.t
 	desc = AOR_news.70.d
 	picture = GFX_AOR_news.70_pic
