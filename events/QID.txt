@@ -26,7 +26,7 @@ country_event = {
 		name = QID.1.a
 		JAP = { annex_country = {target = QID }	}
 		country_event = AOR_news.69
-		country_event = { days = 10 id = AOR_news.70}
+		country_event = { days = 10 id = AOR_news.50}
     }
 }
 

@@ -1336,7 +1336,7 @@ news_event = { #青岛给日
 	}
 }
 
-news_event = { #三廿运动！
+news_event = { #纽芬兰给英
 	id = AOR_news.70
 	title = AOR_news.70.t
 	desc = AOR_news.70.d
@@ -1359,5 +1359,18 @@ news_event = { #西班牙大流感消失
 
 	option = {
 		name = AOR_news.71.a
+	}
+}
+
+news_event = { #纽芬兰给加
+	id = AOR_news.72
+	title = AOR_news.72.t
+	desc = AOR_news.72.d
+	picture = GFX_AOR_news.72_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.72.a
 	}
 }
