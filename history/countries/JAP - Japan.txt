@@ -45,3 +45,6 @@ puppet = KOR
 puppet = PYO
 
 give_guarantee = QID
+
+set_province_name = { id = 957 name = "yanpiside" }
+
