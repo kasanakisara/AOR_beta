@@ -245,6 +245,9 @@ ideologies = {
 			federalism = {
 			}
 
+			Jeffersonian = {
+			}
+
 			}
 		
 		dynamic_faction_names = {
@@ -300,6 +303,9 @@ ideologies = {
 	types = {
 		
 		liberalism = {
+		}
+
+		USA_federalism = {
 		}
 
 		sanminism = {		#三民

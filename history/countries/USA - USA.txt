@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "Thomas_Woodrow_Wilson_desc"
 	picture = "axm7x-nkh4s.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = USA_federalism
 	traits = {
 		
 	}
