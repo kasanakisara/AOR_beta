@@ -9,7 +9,7 @@ PER_Fighting_inflation_666 = {#通胀效果
 				add_idea = PER_Fighting_inflation_2
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Fighting_inflation_2
 			}
@@ -18,11 +18,14 @@ PER_Fighting_inflation_666 = {#通胀效果
 				add_idea = PER_Fighting_inflation_1
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Fighting_inflation_1
 			}
-			remove_idea = {PER_Fighting_inflation_1}
+			swap_ideas = {
+				remove_idea = PER_Fighting_inflation_2
+				add_idea = PER_Fighting_inflation_12
+			} 
 			clr_country_flag = unlock_AOR_PER_Fighting_inflation
 		}
 	}
@@ -39,7 +42,7 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 				add_idea = PER_Great_Famine_3
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Great_Famine_3
 			}
@@ -48,7 +51,7 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 				add_idea = PER_Great_Famine_4
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Great_Famine_4
 			}
@@ -57,7 +60,7 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 				add_idea = PER_Agricultural_Jihad_Preliminary_1
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Agricultural_Jihad_Preliminary_1
 			}
@@ -66,7 +69,7 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 				add_idea = PER_Agricultural_Jihad_Preliminary_2
 			}
 		}
-		if = {
+		else_if = {
 			limit = { 
 				has_idea = PER_Agricultural_Jihad_Preliminary_2
 			}
@@ -74,12 +77,6 @@ PER_Agricultural_Jihad_Preliminary_777 = { #农业效果
 				remove_idea = PER_Agricultural_Jihad_Preliminary_2
 				add_idea = PER_Agricultural_Jihad_Preliminary_3
 			}
-		}
-		if = {
-			limit = { 
-				has_idea = PER_Agricultural_Jihad_Preliminary_3
-			}
-			remove_idea = {PER_Agricultural_Jihad_Preliminary_3}
 			clr_country_flag = unlock_AOR_PER_Agricultural_Jihad_Preliminary#农业标记
 		}
 	}
