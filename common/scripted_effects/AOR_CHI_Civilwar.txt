@@ -146,6 +146,7 @@ CHI_civil_war_1 = {
 			add_state_core = 611
 			add_state_core = 610
 			add_state_core = 621
+			add_state_core = 620
 
 			transfer_state = 893
 			transfer_state = 882
@@ -165,6 +166,7 @@ CHI_civil_war_1 = {
 			transfer_state = 611
 			transfer_state = 610
 			transfer_state = 621
+			transfer_state = 620
 			add_manpower = 10000
 		}
 	}

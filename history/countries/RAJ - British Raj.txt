@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = ""
 	picture = "airo9-pzjja.dds"
 	expire = "1965.1.1"
-	ideology = federalism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -117,13 +117,14 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = Absolutism
 	last_election = "1915.11.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 97
+	Absolutism = 70
+	CON_democratic = 12
+	FRE_democratic = 16
 	Fascism = 2
-	Marxism = 1
 }
