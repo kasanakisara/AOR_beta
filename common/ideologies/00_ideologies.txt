@@ -33,6 +33,8 @@ ideologies = {
 			
 			REV_soc = {   #革命社会民主主义
 			}
+			REV_soc_2 = {   #革命社会民主主义
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -241,7 +243,8 @@ ideologies = {
 			
 			conservatism = {
 			}
-
+			conservatism_2 = {
+			}
 			federalism = {
 			}
 
@@ -310,7 +313,10 @@ ideologies = {
 
 		sanminism = {		#三民
 		}
-
+		
+		market_liberalism = {		#市场自由主义
+		}
+		
 		}
 	
 	dynamic_faction_names = {

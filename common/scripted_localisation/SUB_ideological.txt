@@ -87,6 +87,10 @@ defined_text = {
 		trigger = { has_country_leader_ideology =  USA_federalism }
 		localization_key =  USA_federalism
 	}
+	text = {
+		trigger = { has_country_leader_ideology =  market_liberalism }
+		localization_key =  market_liberalism
+	}
 }
 defined_text = {
 	name = GetSubIdeologyLocARG_democratic

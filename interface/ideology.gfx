@@ -1,12 +1,16 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_authoritarianism"
-		textureFile = "gfx/interface/ideologies/authoritarianism.dds"
+		textureFile = "gfx/interface/ideologies/authoritarianism.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_conservatism"
-		textureFile = "gfx/interface/ideologies/conservatism.dds"
+		textureFile = "gfx/interface/ideologies/conservatism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservatism_2"
+		textureFile = "gfx/interface/ideologies/conservatism_2.png"
 	}
 
 	spriteType = {
@@ -16,8 +20,9 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_despotism"
-		textureFile = "gfx/interface/ideologies/despotism.dds"
+		textureFile = "gfx/interface/ideologies/despotism.png"
 	}
+	
 	
 	spriteType = {
 		name = "GFX_ideology_fascio"
@@ -26,7 +31,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_federalism"
-		textureFile = "gfx/interface/ideologies/federalism.dds"
+		textureFile = "gfx/interface/ideologies/federalism.png"
 	}
 
 	spriteType = {
@@ -35,7 +40,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_Megacorp"
-		textureFile = "gfx/interface/ideologies/Megacorp.dds"
+		textureFile = "gfx/interface/ideologies/Megacorp.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_islamsocialism"
@@ -49,7 +54,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_liberalism"
-		textureFile = "gfx/interface/ideologies/liberalism.dds"
+		textureFile = "gfx/interface/ideologies/liberalism.png"
 	}
 
 	spriteType = {
@@ -59,7 +64,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_monarchism"
-		textureFile = "gfx/interface/ideologies/monarchism.dds"
+		textureFile = "gfx/interface/ideologies/monarchism.png"
 	}
 	
 	spriteType = {
@@ -89,15 +94,15 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_socialism_right"
-		textureFile = "gfx/interface/ideologies/socialism_right.dds"
+		textureFile = "gfx/interface/ideologies/socialism_right.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_socialism_mid"
-		textureFile = "gfx/interface/ideologies/socialism_mid.dds"
+		textureFile = "gfx/interface/ideologies/socialism_mid.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_soltanism"
-		textureFile = "gfx/interface/ideologies/soltanism.dds"
+		textureFile = "gfx/interface/ideologies/soltanism.png"
 	}
 	
 	spriteType = {
@@ -106,7 +111,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_sanminism"
-		textureFile = "gfx/interface/ideologies/sanminism.dds"
+		textureFile = "gfx/interface/ideologies/sanminism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_strasser"
@@ -120,7 +125,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_miliciagov"
-		textureFile = "gfx/interface/ideologies/miliciagov.dds"
+		textureFile = "gfx/interface/ideologies/miliciagov.png"
 	}
 	
 	spriteType = {
@@ -140,17 +145,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ideology_councilism"
-		textureFile = "gfx/interface/ideologies/councilism.dds"
+		textureFile = "gfx/interface/ideologies/councilism.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_counway"
-		textureFile = "gfx/interface/ideologies/counway.dds"
+		textureFile = "gfx/interface/ideologies/counway.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_demsoc"
-		textureFile = "gfx/interface/ideologies/demsoc.dds"
+		textureFile = "gfx/interface/ideologies/demsoc.png"
 	}
 	
 	spriteType = {
@@ -170,7 +175,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_limited"
-		textureFile = "gfx/interface/ideologies/limited.dds"
+		textureFile = "gfx/interface/ideologies/limited.png"
 	}
 	
 	spriteType = {
@@ -180,7 +185,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_meliorism"
-		textureFile = "gfx/interface/ideologies/meliorism.dds"
+		textureFile = "gfx/interface/ideologies/meliorism.png"
 	}
 	
 	spriteType = {
@@ -195,7 +200,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_oligarchy"
-		textureFile = "gfx/interface/ideologies/oligarchy.dds"
+		textureFile = "gfx/interface/ideologies/oligarchy.png"
 	}
 	
 	spriteType = {
@@ -205,7 +210,7 @@ spriteTypes = {
 		
 	spriteType = {
 		name = "GFX_ideology_patriarch"
-		textureFile = "gfx/interface/ideologies/patriarch.dds"
+		textureFile = "gfx/interface/ideologies/patriarch.png"
 	}
 	
 	spriteType = {
@@ -218,7 +223,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_revoway"
-		textureFile = "gfx/interface/ideologies/revoway.dds"
+		textureFile = "gfx/interface/ideologies/revoway.png"
 	}
 	
 	spriteType = {
@@ -266,34 +271,43 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_new_ten"
-		textureFile = "gfx/interface/ideologies/new_ten.dds"
+		textureFile = "gfx/interface/ideologies/new_ten.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_new_ref"
-		textureFile = "gfx/interface/ideologies/new_ref.dds"
+		textureFile = "gfx/interface/ideologies/new_ref.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_new_syn"
-		textureFile = "gfx/interface/ideologies/new_syn.dds"
+		textureFile = "gfx/interface/ideologies/new_syn.png"
 	}
 		
 	spriteType = {
 		name = "GFX_ideology_lianshengism"
-		textureFile = "gfx/interface/ideologies/lianshengism.dds"
+		textureFile = "gfx/interface/ideologies/lianshengism.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_market_liberalism"
+		textureFile = "gfx/interface/ideologies/market_liberalism.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_REV_soc"
-		textureFile = "gfx/interface/ideologies/REV_soc.dds"
+		textureFile = "gfx/interface/ideologies/REV_soc.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_REV_soc_2"
+		textureFile = "gfx/interface/ideologies/REV_soc_2.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_warlord"
-		textureFile = "gfx/interface/ideologies/warlord.dds"
+		textureFile = "gfx/interface/ideologies/warlord.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_rad_san"
-		textureFile = "gfx/interface/ideologies/rad_san.dds"
+		textureFile = "gfx/interface/ideologies/rad_san.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_newdemism"
@@ -305,7 +319,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_social_liberalism"
-		textureFile = "gfx/interface/ideologies/social_liberalism.dds"
+		textureFile = "gfx/interface/ideologies/social_liberalism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_USA_federalism"
