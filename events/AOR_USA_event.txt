@@ -285,7 +285,7 @@ country_event = {
 				desc = "Warren_Gamaliel_Harding_desc"
 				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
-				ideology = liberalism
+				ideology = USA_federalism
 					}
 				set_popularities = {
 					FRE_democratic = 61
