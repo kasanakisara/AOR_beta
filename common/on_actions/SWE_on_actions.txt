@@ -6,6 +6,9 @@ on_actions = {
 					has_country_flag = SWE_Norweign_Independence_flag
 				}
 
+				#修正更新
+				SWE_Norweign_Independence_value_check = yes
+
 				#更新gui
 				SWE_update_ui_effect = yes
 
@@ -31,7 +34,7 @@ on_actions = {
 					}
 					add_to_variable = { SWE_Norweign_Independence_add = 3 }
 				}
-				else_if = {
+				if = {
 					limit = {
 						OR = {
 							has_country_flag = SWE_GUI_2 #紧急状态
@@ -42,14 +45,36 @@ on_actions = {
 				}
 
 				#民族精神修正
-				SWE_Norweign_Independence_ideas_check = yes
+				if = { 
+					limit = {
+						has_idea = SWE_Eighty_Seventh_Orders
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2 }
+				}
+				if = { 
+					limit = {
+						has_idea = A_lingering_alliance
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Antisocialistisk_Speciallagen
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2 }
+				}
 
-				#数值更新+修正更新
+				#数值更新
 				add_to_variable = {
 					variable = SWE_Norweign_Independence_value 
 					value = var:SWE_Norweign_Independence_add
 				}
-				SWE_Norweign_Independence_value_check = yes
 
 			}
 
