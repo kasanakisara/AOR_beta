@@ -76,5 +76,15 @@ ideas = {
 				Marxism_drift = -0.1
 			}
 		}
+		
+		SWE_All_People_are_King = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.2
+				FRE_drift = 0.1
+			}
+		}
 	}
 }

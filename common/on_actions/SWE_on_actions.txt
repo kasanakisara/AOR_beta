@@ -2,6 +2,66 @@ on_actions = {
 	on_daily = {
 		effect = {
 			SWE_update_ui_effect = yes
+
+			if = {
+				limit = {
+					has_country_flag = SWE_Norweign_Independence_flag
+				}
+
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value <= 0 }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value >= 100 }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
+
+				set_variable = { SWE_Norweign_Independence_add = 0 }
+				if = {
+					limit = {
+						has_country_flag = SWE_GUI_1 #哈康初代
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 3 }
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_country_flag = SWE_GUI_2 #紧急状态
+							has_country_flag = SWE_GUI_3 #鲁普雷希特初期
+						}
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 5 }
+				}
+
+				if = { 
+					limit = {
+						has_idea = SWE_Eighty_Seventh_Orders
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2 }
+				}
+				if = { 
+					limit = {
+						has_idea = A_lingering_alliance
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1 }
+				}
+
+				add_to_variable = { SWE_Norweign_Independence_value = var:SWE_Norweign_Independence_add }
+
+			}
+
+			
 		}
 	}
 }

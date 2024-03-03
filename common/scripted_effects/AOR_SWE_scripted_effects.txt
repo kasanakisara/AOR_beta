@@ -123,3 +123,42 @@ SWE_update_ui_effect = {
 		set_variable = { SWE_Norweign_Independence_main_meter = 21 }
 	}
 }
+
+SWE_Norweign_Independence_value_check = {
+	if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value <= 50 }
+		}
+		set_variable = { SWE_Norweign_Independence_consumer_factor = 0 }
+		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.05 }
+		set_variable = { SWE_Norweign_Independence_stability_factor = -0.1 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value <= 60 }
+		}
+		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.2 }
+		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.1 }
+		set_variable = { SWE_Norweign_Independence_stability_factor = -0.15 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value <= 70 }
+		}
+		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.3 }
+		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.2 }
+		set_variable = { SWE_Norweign_Independence_stability_factor = -0.25 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SWE_Norweign_Independence_value <= 80 }
+		}
+		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.4 }
+		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.3 }
+		set_variable = { SWE_Norweign_Independence_stability_factor = -0.35 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.25 }
+	}
+}

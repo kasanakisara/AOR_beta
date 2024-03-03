@@ -182,4 +182,8 @@ create_country_leader = {
 ##Norweign Independence
 set_variable = { SWE_Norweign_Independence_value = 25 }
 set_variable = { SWE_Norweign_Independence_main_meter = 6 }
+set_variable = { SWE_Norweign_Independence_add = 3 }
 set_country_flag = SWE_Norweign_Independence_flag
+set_country_flag = SWE_GUI_1
+
+set_variable = { SWE_Norweign_Independence_stability_weekly = -0.1 }
