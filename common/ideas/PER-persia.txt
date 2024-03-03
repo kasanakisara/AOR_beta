@@ -240,6 +240,16 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 		}
+		PER_Fighting_inflation_12 = {#通胀民族精神
+			picture = GFX_Fighting_inflation_lvl1_2
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.2
+			}
+		}
 		#农业民族精神
 		PER_Great_Famine_3= {#凶年恶岁2
 			picture = GFX_idea_PER_Great_Famine_1
@@ -263,7 +273,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.01
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.01
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.10
 			}
 		}
 		PER_Agricultural_Jihad_Preliminary_2={
@@ -272,7 +282,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.03
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.03
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.20
 			}
 		}
 		PER_Agricultural_Jihad_Preliminary_3={
@@ -281,7 +291,7 @@ ideas = {
 				CONSCRIPTION_FACTOR = 0.05
 				war_support_weekly = 0.01
 				line_change_production_efficiency_factor = 0.05
-				consumer_goods_factor = -0.35
+				consumer_goods_factor = -0.30
 			}
 		}
 	}

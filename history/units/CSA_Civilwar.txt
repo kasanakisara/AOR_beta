@@ -78,28 +78,28 @@ units={
     }
 	division={
         name="南方第二师"
-        location=12384
+        location=11738
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="南方第三师"
-        location=12384
+        location=11738
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="南方第四师"
-        location=10477
+        location=7797
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="南方第五师"
-        location=7388
+        location=7138
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -113,7 +113,7 @@ units={
     }
 	division={
         name="南方第七师"
-        location=7388
+        location=7012
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -141,14 +141,14 @@ units={
     }
 	division={
         name="南方第十一师"
-        location=10477
+        location=12489
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="南方第十二师"
-        location=10477
+        location=4567
         division_template="南方国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=1
@@ -176,14 +176,14 @@ units={
     }
 	division={
         name="南方第十六新编师"
-        location=12670
+        location=5059
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="南方第十七新编师"
-        location=4650
+        location=4565
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -197,7 +197,7 @@ units={
     }
 	division={
         name="南方第十九新编师"
-        location=12670
+        location=5059
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -211,7 +211,7 @@ units={
     }
 	division={
         name="南方第二十一新编师"
-        location=12670
+        location=5059
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -225,7 +225,7 @@ units={
     }
 	division={
         name="南方第二十三新编师"
-        location=4650
+        location=4565
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -239,7 +239,7 @@ units={
     }
 	division={
         name="南方第二十五新编师"
-        location=12670
+        location=5059
         division_template="南方国民警卫队新编师"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -253,77 +253,77 @@ units={
     }
 	division={
         name="弗吉尼亚第一军"
-        location=7583
+        location=788
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="北卡罗来纳第二军"
-        location=7583
+        location=7138
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="佐治亚第四军"
-        location=7388
-        division_template="南方志愿民兵部队"
-        start_experience_factor=0
-        start_equipment_factor=0.7
-    }
-	division={
-        name="密西西比第五军"
-        location=4650
-        division_template="南方志愿民兵部队"
-        start_experience_factor=0
-        start_equipment_factor=0.7
-    }
-	division={
-        name="路易斯安那第六军"
         location=7583
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
+        name="密西西比第五军"
+        location=4565
+        division_template="南方志愿民兵部队"
+        start_experience_factor=0
+        start_equipment_factor=0.7
+    }
+	division={
+        name="路易斯安那第六军"
+        location=7552
+        division_template="南方志愿民兵部队"
+        start_experience_factor=0
+        start_equipment_factor=0.7
+    }
+	division={
         name="德克萨斯第七军"
-        location=3960
+        location=10337
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="亚拉巴马第八军"
-        location=4650
+        location=492
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="田纳西第九军"
-        location=3960
+        location=7791
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="阿肯色第十军"
-        location=3960
+        location=12489
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="俄克拉荷马第十一军"
-        location=3960
+        location=10798
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
     }
 	division={
         name="佛罗里达第十二军"
-        location=4650
+        location=12381
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7
@@ -336,8 +336,8 @@ units={
         start_equipment_factor=0.7
     }
 	division={
-        name="“联盟国”民兵师"
-        location=7388
+        name="南卡罗来纳第十三军"
+        location=7012
         division_template="南方志愿民兵部队"
         start_experience_factor=0
         start_equipment_factor=0.7

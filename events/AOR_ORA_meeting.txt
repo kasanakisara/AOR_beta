@@ -441,7 +441,7 @@ country_event = {
 		}
 		create_country_leader = {
 		name = "Simón Radowitzky"
-		desc = "POLITICS_Diego_Simón_Radowitzky_DESC"
+		desc = "POLITICS_Diego_Simon_Radowitzky_DESC"
 		picture = "FORA_2.dds"
 		expire = "1945.1.1"
 		ideology = new_ref 
@@ -509,7 +509,7 @@ country_event = {
 		}
 		create_country_leader = {
 		name = "Simón Radowitzky"
-		desc = "POLITICS_Diego_Simón_Radowitzky_DESC"
+		desc = "POLITICS_Diego_Simon_Radowitzky_DESC"
 		picture = "FORA_2.dds"
 		expire = "1945.1.1"
 		ideology = new_ref

@@ -233,7 +233,7 @@ focus_tree = {
 				ruling_party = fascism
 			}
 			create_country_leader = {
-				name = "Jozef_Klemens_Piłsudski"
+				name = "Jozef_Klemens_Pilsudski"
 	            desc = ""
              	picture = "gfx/leaders/POL/Piłsudski.png"  #缺头像
             	expire = "1965.1.1"

@@ -97,7 +97,7 @@ create_country_leader = {
 	desc = "John_Nance_Garner_III_DESC"
 	picture = "gfx/leaders/CSA/Gamaliel_Harding.png"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = Jeffersonian
 	traits = {
 		
 	}

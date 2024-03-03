@@ -23,16 +23,17 @@ ideologies = {
 			committee = {
 			}
 
-			PRC_county= {	#土地革命论
+			PRCrevolutionism = {
+			
 			}
-
-			PRC_pioneer= {	#先锋队理论
-			}
-
-			PRC_urban= {	#城市中心革命论
+			
+			Leftmilitarism = {
+			
 			}
 			
 			REV_soc = {   #革命社会民主主义
+			}
+			REV_soc_2 = {   #革命社会民主主义
 			}
 		}
 		
@@ -88,6 +89,11 @@ ideologies = {
 			demsoc = {
 			}
 
+			PRCcosmopolitanism = {
+			}
+			socialism_mid = {
+			}
+			
 			}
 		
 		dynamic_faction_names = {
@@ -200,7 +206,7 @@ ideologies = {
 		dynamic_faction_names = {
 		}
 		
-		color = { 216 98 82 }
+		color = { 209 76 62 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -237,8 +243,12 @@ ideologies = {
 			
 			conservatism = {
 			}
-
+			conservatism_2 = {
+			}
 			federalism = {
+			}
+
+			Jeffersonian = {
 			}
 
 			}
@@ -298,9 +308,15 @@ ideologies = {
 		liberalism = {
 		}
 
-		sanminism = {		#三民
+		USA_federalism = {
 		}
 
+		sanminism = {		#三民
+		}
+		
+		market_liberalism = {		#市场自由主义
+		}
+		
 		}
 	
 	dynamic_faction_names = {
@@ -472,7 +488,7 @@ ideologies = {
 	
 	types = {
 	
-		socialism = {
+		socialism_right = {
 		}
 
 		meliorism = {
@@ -611,9 +627,6 @@ ideologies = {
 		}
 
 		nationalsoc = {
-		}
-
-		wangism = {
 		}
 
 		szegedism = {

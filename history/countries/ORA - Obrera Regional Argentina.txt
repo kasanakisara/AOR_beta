@@ -97,7 +97,7 @@ ORA_Spark
 
 
 create_country_leader = {
-	name = "Simón Radowitzky"	#Diego Abad de Santillán
+	name = "Simon_Radowitzky"	#Diego Abad de Santillán
 	desc = "POLITICS_SIMON_DESC"
 	picture = "FORA.dds"	#FORA.DDS
 	expire = "1965.1.1"

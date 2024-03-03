@@ -178,7 +178,7 @@ create_country_leader = {
 	desc = "POLITICS_Heinrich_Mann_DESC"
 	picture = "a17jw-mc0vd.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_right
 	traits = {
 	}
 }
