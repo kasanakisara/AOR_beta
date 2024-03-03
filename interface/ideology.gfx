@@ -219,7 +219,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_Leftmilitarism"
-		textureFile = "gfx/interface/ideologies/Leftmilitarism.dds"
+		textureFile = "gfx/interface/ideologies/Leftmilitarism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_revoway"
@@ -240,7 +240,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_uni_san"
-		textureFile = "gfx/interface/ideologies/uni_san.dds"
+		textureFile = "gfx/interface/ideologies/uni_san.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_troopism"
@@ -258,7 +258,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_confuism"
-		textureFile = "gfx/interface/ideologies/confuism.dds"
+		textureFile = "gfx/interface/ideologies/confuism.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_corporatism"
