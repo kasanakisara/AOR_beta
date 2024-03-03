@@ -3,3 +3,7 @@
  SWE_Norweign_Independence_decision_categories_desc:0 "早在联邦建立之初，挪威人就一直在寻求独立，从联邦的怀抱中脱离。最近的苏俄革命和世界大战后的“新秩序”使得§R左翼分子§!同样蠢蠢欲动。如今，为了联邦的稳定，我们有必要开始镇压这一运动了。"
  SWE_Norweign_Independence_text:0 "目前§R挪威独立运动§!发展程度：§R[?SWE_Norweign_Independence_value]§!"
  SWE_Norweign_Independence_text_tooltip:0 "§R每日增长：[?SWE_Norweign_Independence_add]§!\n\n每日增长将会随民族精神和特色决议而修正，同时越高的挪威独立运动发展度将会产生不同的修正。"
+ AOR_SWE_Norweign_Independence_dynamic_modifier:0 "挪威独立运动发展度修正"
+ SWE_modifier_add_localisation:0 "§R挪威独立运动每日增长将增加！§!"
+ SWE_modifier_down_localisation:0 "§G挪威独立运动每日增长将减少§!" 
+ SWE_Norweign_Independence_effect_localisation:0 "§G将减少挪威独立运动发展度§!"

@@ -7,6 +7,7 @@ ideas = {
 				stability_factor = -0.3
 				political_power_cost = 0.2
 				Marxism_drift = 0.1
+				custom_modifier_tooltip = SWE_modifier_add_localisation
 			}
 		}
 
@@ -17,6 +18,7 @@ ideas = {
 				stability_weekly = 0.01
 				political_power_factor = 0.1
 				CON_democratic_drift = 0.2
+				custom_modifier_tooltip = SWE_modifier_down_localisation
 			}
 		}
 
@@ -74,6 +76,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.2
 				Marxism_drift = -0.1
+				custom_modifier_tooltip = SWE_modifier_down_localisation
 			}
 		}
 		

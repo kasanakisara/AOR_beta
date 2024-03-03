@@ -18,6 +18,7 @@ ideas = {
 				stability_factor = -0.25
 				war_support_factor = -0.2
 				political_power_gain = -0.5
+				custom_modifier_tooltip = SWE_modifier_add_localisation
 			}
 		}
 		
