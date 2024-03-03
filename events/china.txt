@@ -754,7 +754,21 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CHI_test.01.a
-		Enable_ENG_Lick_wounds_effect = yes
+		add_to_variable = {
+			KMT_senate_seat_var=10
+		}
+	}
+}
+country_event = {
+	id = CHI_test.03
+	title = CHI_test.03.t
+	desc = CHI_test.03.desc
+	is_triggered_only = yes
+	option = {
+		name = CHI_test.03.a
+		add_to_variable = {
+			KMT_senate_seat_var=20
+		}
 	}
 }
 country_event = {

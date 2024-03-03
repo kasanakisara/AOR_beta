@@ -911,3 +911,9 @@ DCD_1 = {
 	color = rgb { 111 107 107 }
 	color_ui = rgb { 111 107 107 }
 }
+NAN_1 = {
+	color ={ 197 130 0}
+	color_ui = {
+		197 130 0
+	}
+}
