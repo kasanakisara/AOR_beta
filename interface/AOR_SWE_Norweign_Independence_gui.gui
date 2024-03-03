@@ -54,14 +54,7 @@ guiTypes = {
 			text = "SWE_Norweign_Independence_text"
 			format = center
 			maxWidth = 400
-		}
-
-		#Tooltip
-		instantTextBoxType = {
-			name ="SWE_tooltip"
-			position = { x = @PARANOIA_PARANOIAMETER_BG_X y = @PARANOIA_PARANOIAMETER_BG_Y }
-			maxwidth = 230
-			maxHeight = 185
+			pdx_tooltip = SWE_Norweign_Independence_text_tooltip
 		}
 
 	}

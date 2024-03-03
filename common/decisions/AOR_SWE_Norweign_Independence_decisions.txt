@@ -1,0 +1,24 @@
+SWE_Norweign_Independence_decision_categories = {
+    #基础决议
+    #安抚
+    SWE_Appeasement_Leaders = {
+        avaliable = { always = yes }
+        cost = 100
+        days_re_enable = 5
+        complete_effect = {
+            add_variable = { SWE_Norweign_Independence_value = -2 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+
+    #暂时集会管制
+    SWE_Assemblies_Control = {
+        avaliable = { always = yes }
+        cost = 100
+        days_re_enable = 28
+        complete_effect = {
+            add_variable = { SWE_Norweign_Independence_value = -3.5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+}

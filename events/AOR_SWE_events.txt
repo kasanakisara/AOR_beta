@@ -124,3 +124,13 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = SWE.9 #向人民宣传
+    title = SWE.9.t
+    desc = SWE.9.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.9.a
+    }
+}

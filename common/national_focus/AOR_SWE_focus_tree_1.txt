@@ -15,25 +15,28 @@ focus_tree = {
 	focus = {
 		id = SWE_Eighty_Seventh_Order
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 1.00
 		x = 9
 		y = 1
 		completion_reward = {
-			add_ideas = SWE_Eighty_Seventh_Orders 
+			add_political_power = 100
+			add_ideas = SWE_Eighty_Seventh_Orders
 		}
 
 	}
 	focus = {
 		id = SWE_Karlstard_Plan
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
 		x = 6
 		y = 2
 		completion_reward = {
+			add_political_power = 100
 			add_ideas = SWE_K_Plan
+			unlock_decision_tooltip = SWE_Karlstard_Plan_decision
 		}
 
 	}
@@ -207,13 +210,14 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_ideas = SWE_Antisocialistisk_Speciallagen
+			unlock_decision_tooltip = SWE_Antisocialistisk_Speciallag_decision
 		}
 
 	}
 	focus = {
 		id = SWE_Proganda_to_People
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
@@ -222,6 +226,10 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		completion_reward = {
+			add_political_power = 100
+			country_event = { id = SWE.9 }
+		}
 
 	}
 	focus = {
@@ -233,6 +241,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
+		completion_reward = {
+			add_ideas = SWE_All_People_are_King
+		}
 
 	}
 	focus = {
@@ -366,6 +377,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 8
+		completion_reward = {
+			remove_ideas = A_lingering_alliance
+		}
 
 	}
 	focus = {
