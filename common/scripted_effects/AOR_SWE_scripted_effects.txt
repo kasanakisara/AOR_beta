@@ -129,84 +129,50 @@ SWE_update_ui_effect = {
 SWE_Norweign_Independence_value_check = {
 	if = {
 		limit = {
-			check_variable = { SWE_Norweign_Independence_value <= 50 }
+			check_variable = { SWE_Norweign_Independence_value = 50 compare = less_than_or_equals }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.05 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.1 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.1 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.1 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { SWE_Norweign_Independence_value <= 60 }
+			check_variable = { SWE_Norweign_Independence_value = 60 compare = less_than_or_equals }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.2 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.075 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.15 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.15 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.15 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { SWE_Norweign_Independence_value <= 70 }
+			check_variable = { SWE_Norweign_Independence_value = 70 compare = less_than_or_equals }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.3 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.1 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.25 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.2 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.2 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { SWE_Norweign_Independence_value <= 80 }
+			check_variable = { SWE_Norweign_Independence_value = 80 compare = less_than_or_equals }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.4 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.15 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.35 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.25 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.25 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { SWE_Norweign_Independence_value <= 90 }
+			check_variable = { SWE_Norweign_Independence_value = 90 compare = less_than_or_equals }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.5 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.2 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.5 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.3 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.3 }
 	}
 	else_if = {
 		limit = {
 			check_variable = { SWE_Norweign_Independence_value < 100 }
 		}
-		set_variable = { SWE_Norweign_Independence_consumer_factor = 0.6 }
 		set_variable = { SWE_Norweign_Independence_stability_weekly = -0.3 }
 		set_variable = { SWE_Norweign_Independence_stability_factor = -0.65 }
-		set_variable = { SWE_Norweign_Independence_stability_power_cost = -0.45 }
-	}
-}
-
-#民族精神修正
-SWE_Norweign_Independence_ideas_check = {
-	if = { 
-		limit = {
-			has_idea = SWE_Eighty_Seventh_Orders
-		}
-		add_to_variable = { SWE_Norweign_Independence_add = -2 }
-	}
-	if = { 
-		limit = {
-			has_idea = A_lingering_alliance
-		}
-		add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
-	}
-	if = { 
-		limit = {
-			has_idea = SWE_Left_Threat
-		}
-		add_to_variable = { SWE_Norweign_Independence_add = 1 }
-	}
-	if = { 
-		limit = {
-			has_idea = SWE_Antisocialistisk_Speciallagen
-		}
-		add_to_variable = { SWE_Norweign_Independence_add = -2 }
+		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.45 }
 	}
 }

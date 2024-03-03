@@ -6,7 +6,7 @@ SWE_Norweign_Independence_decision_categories = {
         cost = 100
         days_re_enable = 5
         complete_effect = {
-            add_variable = { SWE_Norweign_Independence_value = -2 }
+            add_to_variable = { SWE_Norweign_Independence_value = -2 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
         }
     }
@@ -17,8 +17,17 @@ SWE_Norweign_Independence_decision_categories = {
         cost = 100
         days_re_enable = 28
         complete_effect = {
-            add_variable = { SWE_Norweign_Independence_value = -3.5 }
+            add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
         }
+    }
+
+    #####卡尔斯塔德计划决议#####
+    SWE_Funding_Regional_Industries = {
+        avaliable = { has_country_flag = SWE_K_Plan_flag }
+        state_target = yes
+        targets = { 142 110 143 144 }
+        on_map_mode = map_only
+        cost = 50
     }
 }
