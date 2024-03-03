@@ -146,14 +146,14 @@ set_stability = 0.75
 }
 
 set_politics = {
-	ruling_party = SOC_democratic
+	ruling_party = PAR_socialism
 	last_election = "1919.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	SOC_democratic = 80
+	PAR_socialism = 80
 	Absolutism = 10
 	Marxism = 10
 }
@@ -171,7 +171,7 @@ create_country_leader = {
 	desc = "POLITICS_Karl_Kautsky_DESC"
 	picture = "auy2s-u2n48.dds"
 	expire = "1965.1.1"
-	ideology = socialism_right
+	ideology = socialism_mid
 	traits = {
 	}
 }

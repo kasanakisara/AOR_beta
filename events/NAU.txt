@@ -249,7 +249,7 @@ country_event = {
 		desc = "NAU_E_B_DESC"
 		picture = "asao5-vflkt.dds"
 		expire = "1965.1.1"
-		ideology = socialism
+		ideology = socialism_right
 		traits = {
 				}
 			}

@@ -26,7 +26,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_fascio"
-		textureFile = "gfx/interface/ideologies/fascio.dds"
+		textureFile = "gfx/interface/ideologies/fascio.png"
 	}
 	
 	spriteType = {
@@ -69,7 +69,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_nationalism"
-		textureFile = "gfx/interface/ideologies/nationalism.dds"
+		textureFile = "gfx/interface/ideologies/nationalism.png"
 	}
 	
 	spriteType = {
@@ -297,6 +297,14 @@ spriteTypes = {
 		name = "GFX_ideology_REV_soc"
 		textureFile = "gfx/interface/ideologies/REV_soc.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_szegedism"
+		textureFile = "gfx/interface/ideologies/szegedism.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_NSDAP"
+		textureFile = "gfx/interface/ideologies/NSDAP.png"
+	}	
 	spriteType = {
 		name = "GFX_ideology_REV_soc_2"
 		textureFile = "gfx/interface/ideologies/REV_soc_2.png"
