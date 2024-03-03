@@ -36,7 +36,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_ideas = SWE_K_Plan
-			unlock_decision_tooltip = SWE_Karlstard_Plan_decision
+			custom_effect_tooltip = SWE_Karlstard_Plan_decision
+			set_country_flag = SWE_K_Plan_flag
 		}
 
 	}
@@ -210,7 +211,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_ideas = SWE_Antisocialistisk_Speciallagen
-			unlock_decision_tooltip = SWE_Antisocialistisk_Speciallag_decision
+			custom_effect_tooltip = SWE_Antisocialistisk_Speciallag_decision
 		}
 
 	}

@@ -21,4 +21,13 @@ SWE_Norweign_Independence_decision_categories = {
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
         }
     }
+
+    #####卡尔斯塔德计划决议#####
+    SWE_Funding_Regional_Industries = {
+        avaliable = { has_country_flag = SWE_K_Plan_flag }
+        state_target = yes
+        targets = { 142 110 143 144 }
+        on_map_mode = map_only
+        cost = 50
+    }
 }
