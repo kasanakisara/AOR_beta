@@ -26,6 +26,18 @@ defined_text = {
 		localization_key = "[GetSubIdeologyLocMarxism]"
 	}
 	text = {
+		trigger = { has_government = PAR_socialism }
+		localization_key = "[GetSubIdeologyLocPAR_socialism]"
+	}
+	text = {
+		trigger = { has_government = REL_socialism }
+		localization_key = "[GetSubIdeologyLocREL_socialism]"
+	}
+	text = {
+		trigger = { has_government = AGR_socialism }
+		localization_key = "[GetSubIdeologyLocAGR_socialism]"
+	}
+	text = {
 		trigger = { has_government = Anarcho }
 		localization_key = "[GetSubIdeologyLocAnarcho]"
 	}
@@ -55,6 +67,10 @@ defined_text = {
 		trigger = { has_country_leader_ideology = federalism }
 		localization_key = federalism
 	}
+	text = {
+		trigger = { has_country_leader_ideology = Jeffersonian }
+		localization_key = Jeffersonian
+	}
 }
 
 defined_text = {
@@ -66,6 +82,56 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = sanminism }
 		localization_key = sanminism
+	}
+	text = {
+		trigger = { has_country_leader_ideology =  USA_federalism }
+		localization_key =  USA_federalism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocARG_democratic
+	text = {
+		trigger = { has_country_leader_ideology = revoway }
+		localization_key = revoway
+	}
+	text = {
+		trigger = { has_country_leader_ideology = counway }
+		localization_key = counway
+	}
+	text = {
+		trigger = { has_country_leader_ideology =  rad_san }
+		localization_key =  rad_san
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLocREL_democratic
+	text = {
+		trigger = { has_country_leader_ideology = liberacion }
+		localization_key = liberacion
+	}
+	text = {
+		trigger = { has_country_leader_ideology = islamsocialism }
+		localization_key = islamsocialism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocPAR_socialism
+	text = {
+		trigger = { has_country_leader_ideology = councilism }
+		localization_key = councilism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = demsoc }
+		localization_key = demsoc
+	}
+	text = {
+		trigger = { has_country_leader_ideology =  PRCcosmopolitanism }
+		localization_key = PRCcosmopolitanism
+	}
+	text = {
+		trigger = { has_country_leader_ideology =  socialism_mid  }
+		localization_key = socialism_mid 
 	}
 }
 
@@ -117,8 +183,8 @@ defined_text = {
 	name = GetSubIdeologyLocSOC_democratic
 	
 	text = {
-		trigger = { has_country_leader_ideology = socialism }
-		localization_key = socialism
+		trigger = { has_country_leader_ideology = socialism_right }
+		localization_key = socialism_right
 	}	
 	text = {
 		trigger = { has_country_leader_ideology = meliorism }
