@@ -92,3 +92,12 @@ set_popularities = {
 	Absolutism = 100
 }
 
+create_country_leader = {
+	name = "Taimur bin Feisal"
+	desc = ""
+	picture = "Taimur_bin_Feisal.dds"
+	expire = "1965.1.1"
+	ideology = soltanism
+	traits = {
+	}
+}
