@@ -25,6 +25,7 @@ focus_tree = {
 			ARG = { 
 				add_ideas = ARG_zong_ba_gong_jin_xing_shi
 			}
+			unlock_decision_tooltip = AOR_ORA_hu_yv_zong_ba_gong_hu_yv_zong_ba_gong
 		}
 	}
 	focus = {
@@ -122,6 +123,7 @@ focus_tree = {
 				country_event = AOR_ORA_events.5
 			}
 			set_country_flag = unlock_AOR_ORA_zhu_jiu_gang_tie
+			custom_effect_tooltip = ORA.10.tt
 			hidden_effect = {
 			remove_ideas = AOR_ORA_Workers_autonomy
 			remove_ideas = ORA_gong_hui_ling_dao
