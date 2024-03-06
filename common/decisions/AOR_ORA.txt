@@ -1,4 +1,30 @@
 AOR_ORA_committee = {
+
+	AOR_ORA_esc_mission = {
+		priority = 10000
+		icon = GFX_decision_category_syn
+		highlight_state_targets = { province = 11009 }
+		allowed  ={
+			always = yes
+		}
+		ai_will_do = {
+			factor = 100000
+		}        
+        available = { 
+            always = no
+        }
+        activation = {
+            NOT = {has_country_flag = SIMON.1 }
+        }
+		is_good = yes
+		fire_only_once = yes
+        selectable_mission = no
+        days_mission_timeout = 5
+		timeout_effect = {
+            country_event = AOR_ORA_events.2
+        }
+	}
+	
 	AOR_ORA_gong_ren_de_zan_mei_shi = {   
 		icon = GFX_decision_category_syn
 		cost = 50
@@ -45,4 +71,5 @@ AOR_ORA_committee = {
 			add_stability = 0.05
 		}
 	}
+
 }

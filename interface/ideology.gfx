@@ -49,7 +49,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_leninism"
-		textureFile = "gfx/interface/ideologies/leninism.dds"
+		textureFile = "gfx/interface/ideologies/leninism.png"
 	}
 	
 	spriteType = {
@@ -89,7 +89,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_revolutionism"
-		textureFile = "gfx/interface/ideologies/revolutionism.dds"
+		textureFile = "gfx/interface/ideologies/revolutionism.png"
 	}
 	
 	spriteType = {
@@ -254,7 +254,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_wangism"
-		textureFile = "gfx/interface/ideologies/wangism.dds"
+		textureFile = "gfx/interface/ideologies/wangism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_confuism"
