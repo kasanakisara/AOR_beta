@@ -30,7 +30,7 @@ ideas = {
 			}
 		}
 		ARG_zong_ba_gong_jin_xing_shi_1 = {
-			picture = GFX_ARG_zong_ba_gong_jin_xing_shi_1
+			picture = GFX_ARG_zong_ba_gong_jin_xing_shi
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.25 #工厂产出
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		ARG_zong_ba_gong_jin_xing_shi_2 = {
-			picture = GFX_ARG_zong_ba_gong_jin_xing_shi_2
+			picture = GFX_ARG_zong_ba_gong_jin_xing_shi
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.30 #工厂产出
@@ -46,7 +46,7 @@ ideas = {
 			}
 		}
 		ARG_zong_ba_gong_jin_xing_shi_3 = {
-			picture = GFX_ARG_zong_ba_gong_jin_xing_shi_3
+			picture = GFX_ARG_zong_ba_gong_jin_xing_shi
 			allowed = { always = yes }
 			modifier = {
 				industrial_capacity_factory = -0.30 #工厂产出
