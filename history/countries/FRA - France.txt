@@ -141,16 +141,20 @@ add_command_power = 20
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = SOC_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	FRE_democratic = 60
-	Fascism = 00
-	Marxism = 40
+	Marxism = 16
+	PAR_socialism = 23
+	SOC_democratic = 15
+	FRE_democratic = 20
+	CON_democratic = 10
+    AUT_democratic = 11
+	Absolutism = 5
 }
 
 add_ideas = {
