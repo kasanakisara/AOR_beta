@@ -141,9 +141,11 @@ set_politics = {
 
 }
 set_popularities = {
-	ISL_democratic = 56
-	Marxism = 29
-	CON_democratic = 15
+	ISL_democratic = 39
+	Marxism = 10
+	CON_democratic = 25
+	Absolutism = 10
+	Special = 16
 }
 
 add_ideas = {
