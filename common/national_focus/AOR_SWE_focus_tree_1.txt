@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = SWE_Karlstard_Plan
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 1.00
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
@@ -38,6 +38,8 @@ focus_tree = {
 			add_ideas = SWE_K_Plan
 			custom_effect_tooltip = SWE_Karlstard_Plan_decision
 			set_country_flag = SWE_K_Plan_flag
+			add_to_variable = { SWE_Norweign_Independence_value = -10 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
 		}
 
 	}
@@ -210,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = SWE_Antisocialistisk_Speciallag
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 1.00
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
@@ -219,13 +221,15 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SWE_Antisocialistisk_Speciallagen
 			custom_effect_tooltip = SWE_Antisocialistisk_Speciallag_decision
+			add_to_variable = { SWE_Norweign_Independence_value = -15 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
 		}
 
 	}
 	focus = {
 		id = SWE_Proganda_to_People
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 5.00
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
@@ -236,6 +240,8 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = 100
+			add_to_variable = { SWE_Norweign_Independence_value = -5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
 			country_event = { id = SWE.9 }
 		}
 
@@ -263,6 +269,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		completion_reward = {
+			add_ideas = SWE_Liberte_Spirit
+		}
 
 	}
 	focus = {
@@ -277,6 +286,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
+		completion_reward = {
+			add_ideas = SWE_Beyond_Nationalism
+		}
 
 	}
 	focus = {
@@ -288,6 +300,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SWE_Beyond_Nationalism
+				add_idea = SWE_Beyond_Nation
+			}
+		}
 
 	}
 	focus = {
@@ -299,6 +317,14 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+		completion_reward = {
+			add_popularity = { ideology = Marxism popularity = -0.2 }
+			add_popularity = { ideology = SOC_democratic popularity = -0.1 }
+			swap_ideas = {
+				remove_idea = SWE_Left_Threat
+				add_idea = SWE_Left_Threat_I
+			}
+		}
 
 	}
 	focus = {

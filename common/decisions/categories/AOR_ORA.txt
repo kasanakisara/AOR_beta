@@ -4,7 +4,7 @@ AOR_ORA_committee = {
 #	scripted_gui = AOR_ORA_committee
 	scripted_gui = AOR_ORA_committee_small
 	visible = {
-		TAG = ORA
+		tag = ORA
 	}
 	priority = 100
 }

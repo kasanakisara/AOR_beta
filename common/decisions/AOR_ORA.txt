@@ -5,10 +5,13 @@ AOR_ORA_committee = {
 		icon = GFX_decision_category_syn
 		highlight_state_targets = { province = 11009 }
 		allowed  ={
-			always = yes
+			tag = ORA
 		}
 		ai_will_do = {
 			factor = 100000
+		}
+		visible = {
+			tag = ORA
 		}        
         available = { 
             always = no

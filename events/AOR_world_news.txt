@@ -1328,14 +1328,14 @@ news_event = { #石荷公投-丹
 
 news_event = { #纽芬兰给英
 	id = AOR_news.73
-	title = AOR_news.70.t
-	desc = AOR_news.70.d
-	picture = GFX_AOR_news.70_pic
+	title = AOR_news.73.t
+	desc = AOR_news.73.d
+	picture = GFX_AOR_news.73_pic
 	is_triggered_only = yes 
 	major = yes
 
 	option = {
-		name = AOR_news.70.a
+		name = AOR_news.73.a
 	}
 }
 
