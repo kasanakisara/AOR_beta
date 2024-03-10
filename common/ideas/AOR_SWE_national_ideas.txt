@@ -76,6 +76,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.2
 				Marxism_drift = -0.1
+				political_power_gain = 0.5
 				custom_modifier_tooltip = SWE_modifier_down_localisation
 			}
 		}
@@ -86,7 +87,49 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				consumer_goods_factor = -0.2
-				FRE_drift = 0.1
+				FRE_democratic_drift = 0.1
+				custom_modifier_tooltip = SWE_modifier_down_localisation
+			}
+		}
+
+		SWE_Liberte_Spirit = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.15
+				CON_democratic_drift = 0.1
+			}
+		}
+
+		SWE_Beyond_Nationalism = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.2
+				stability_weekly = 0.05
+				custom_modifier_tooltip = SWE_modifier_down_localisation
+			}
+		}
+
+		SWE_Beyond_Nation = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.35
+				stability_weekly = 0.1
+				political_power_gain = 0.5
+				custom_modifier_tooltip = SWE_modifier_down_localisation
+			}
+		}
+
+		SWE_Left_Threat_I = {
+			picture = GFX_idea_SWE_Left_Threat
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.25
+				political_power_cost = 0.15
+				Marxism_drift = 0.1
+				custom_modifier_tooltip = SWE_modifier_add_localisation
 			}
 		}
 	}

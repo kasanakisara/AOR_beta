@@ -49,4 +49,80 @@ SWE_Norweign_Independence_decision_categories = {
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
         }
     }
+
+    SWE_Replace_Industrial_Complex = {
+        avaliable = { has_country_flag = SWE_K_Plan_flag }
+        visible = { has_country_flag = SWE_K_Plan_flag }
+        cost = 100
+        days_remove = 49
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+        complete_effect = {
+            random_owned_controlled_state ={
+                limit = {
+                    NOT = {
+                        is_core_of = NOR
+                    }
+                }
+                remove_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+            }
+            random_owned_controlled_state ={
+                limit = {
+                    is_core_of = NOR
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = { SWE_Norweign_Independence_value = -5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+
+    SWE_Replace_Arms_Factory = {
+        avaliable = { has_country_flag = SWE_K_Plan_flag }
+        visible = { has_country_flag = SWE_K_Plan_flag }
+        cost = 50
+        days_remove = 49
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+        complete_effect = {
+            random_owned_controlled_state ={
+                limit = {
+                    NOT = {
+                        is_core_of = NOR
+                    }
+                }
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
+            random_owned_controlled_state ={
+                limit = {
+                    is_core_of = NOR
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = { SWE_Norweign_Independence_value = -5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+
+    #####反社会党人特别法决议#####
+
+    SWE_
 }
