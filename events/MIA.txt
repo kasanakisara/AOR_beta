@@ -11,7 +11,7 @@ country_event = {
 	    date > 1920.3.20
 		tag = MIA
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -90,7 +90,7 @@ country_event = {
 	desc = MIA.2.d
 	picture = GFX_MIA_event_2
 	is_triggered_only = yes
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -111,7 +111,7 @@ country_event = {
 	    date > 1921.8.20
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -135,7 +135,7 @@ country_event = {
 	    date > 1921.9.20
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -168,7 +168,7 @@ country_event = {
 	    date > 1922.5.10
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -188,7 +188,7 @@ country_event = {
 	    date > 1923.5.10
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -208,7 +208,7 @@ country_event = {
 	    date > 1924.4.10
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -228,7 +228,7 @@ country_event = {
 	    date > 1925.8.1
 		tag = NIC
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -250,7 +250,6 @@ country_event = {
 		}
 	}
 
-}
 
 
 

@@ -1,6 +1,6 @@
 characters = {
 	MXS_Victoriano_huerta = { #Victoriano_huerta
-		name = Victoriano·huerta
+		name = "Victoriano·huerta"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Victoriano_huerta.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	MXS_Aureliano_blanquet = { #Aureliano_blanquet
-		name = Aureliano·blanquet
+		name = "Aureliano·blanquet"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Aureliano_blanquet.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	MXS_Felix_diaz_prieto = { #Felix_diaz_prieto
-		name = Felix·diaz·prieto
+		name = "Felix·diaz·prieto"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Felix_diaz_prieto.png
@@ -92,7 +92,7 @@ characters = {
 		}
 	}
 	MXS_Plutarco_lelias_calles = { #plutarco_lelias_calles
-		name = Plutarco·lelias·calles
+		name = "Plutarco·lelias·calles"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Plutarco_lelias_calles.png
@@ -123,7 +123,7 @@ characters = {
 		}
 	}
 	MXS_Manuel_mondragon = { #Manuel_mondragon
-		name = Manuel·Mondragon
+		name = "Manuel·Mondragon"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Manuel_mondragon.png
@@ -153,7 +153,7 @@ characters = {
 		}
 	}
 	MXS_Bernardo_Reyes = { #Bernardo_Reyes
-		name = Bernardo·Reyes
+		name = "Bernardo·Reyes"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Bernardo_Reyes.png
@@ -184,7 +184,7 @@ characters = {
 		}
 	}
 	MXS_Pascual_Orozco = { #Pascual_Orozco
-		name = Pascual·Orozco
+		name = "Pascual·Orozco"
 		portraits = {
 			army = {
 				large = gfx/leaders/MXS/Pascual_Orozco.png

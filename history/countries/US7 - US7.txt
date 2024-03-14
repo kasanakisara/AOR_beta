@@ -72,23 +72,25 @@ if = {
 
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = AUT_democratic
 	last_election = "1915.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	AUT_democratic = 45
-	Absolutism = 55
+	AUT_democratic = 40
+	CON_democratic = 30
+	FRE_democratic = 16
+	Absolutism = 14
 }
 
 create_country_leader = {
 	name = "William_Kissam_Vanderbilt"
-	desc = ""
+	desc = "William_Kissam_Vanderbilt_desc"
 	picture = "gfx/leaders/US7/William_Kissam_Vanderbilt.png"
 	expire = "1953.3.1"
-	ideology = miliciagov
+	ideology = oligarchy
 	traits = {
 		
 	}

@@ -1,5 +1,6 @@
 ﻿capital = 500
 
+oob = "BR1_1919_land"
 
 create_country_leader = {
 	name = "Manuel Deodoro da Fonseca"
@@ -20,5 +21,8 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 100
+	FRE_democratic = 49
+	CON_democratic = 31
+	Absolutism = 11
+	AGR_socialism = 9
 }

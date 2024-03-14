@@ -1,6 +1,6 @@
 characters = {
 	CAN_Arthur_william_currie = { #Arthur_william_currie
-		name = Arthur·William·Currie
+		name = "Arthur·William·Currie"
 		portraits = {
 			army = {
 				large = gfx/leaders/CAN/arthur_william_currie.png
@@ -30,7 +30,7 @@ characters = {
 		}
 	}
 	CAN_Herry_Crerar = { #Herry_Crerar
-		name = Herry·Crerar
+		name = "Herry·Crerar"
 		portraits = {
 			army = {
 				large = gfx/leaders/CAN/herry_crerar.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	CAN_Alexander_Ronald_Okeden = { #Alexander_Ronald_Okeden
-		name = Alexander·Ronald·Okeden
+		name = "Alexander·Ronald·Okeden"
 		portraits = {
 			army = {
 				large = gfx/leaders/CAN/alexander_ronald_okeden.png
@@ -92,7 +92,7 @@ characters = {
 		}
 	}
 	CAN_Kennedy_Howard = { #Kennedy_Howard
-		name = Kennedy·Howard
+		name = "Kennedy·Howard"
 		portraits = {
 			army = {
 				large = gfx/leaders/CAN/Kennedy_Howard.png
@@ -123,7 +123,7 @@ characters = {
 		}
 	}
 	CAN_Georges_Philias_Vanier = { #Georges_Philias_Vanier
-		name = Georges·Philias·Vanier
+		name = "Georges·Philias·Vanier"
 		portraits = {
 			army = {
 				large = gfx/leaders/CAN/Georges_Philias_Vanier.png
@@ -153,7 +153,7 @@ characters = {
 		}
 	}
 	CAN_Adrien_Acrand = { #Adrien_Acrand
-		name = Adrien·Acrand
+		name = "Adrien·Acrand"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/CAN/adrien_acrand.png
@@ -170,7 +170,7 @@ characters = {
 		}
 	}
 	CAN_Hugh_Guthrie = { #Hugh_Guthrie
-		name = Hugh·Guthrie
+		name = "Hugh·Guthrie"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_CAN_Adrien_Acrand
@@ -187,7 +187,7 @@ characters = {
 		}
 	}
 	CAN_SIr_Richard_Anderson_Squires = { #SIr_Richard_Anderson_Squires
-		name = Sir·Richard·Anderson·Squires
+		name = "Sir·Richard·Anderson·Squires"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_CAN_SIr_Richard_Anderson_Squires
@@ -204,7 +204,7 @@ characters = {
 		}
 	}
 	CAN_Sir_William_Thomas_White = { #Sir_William_Thomas_White
-		name = Sir·William·Thomas·White
+		name = "Sir·William·Thomas·White"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_CAN_Sir_William_Thomas_White
@@ -221,7 +221,7 @@ characters = {
 		}
 	}
 	CAN_Raoul_Dandurand = { #Raoul_Dandurand
-		name = Raoul·Dandurand
+		name = "Raoul·Dandurand"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_CAN_Raoul_Dandurand
@@ -238,7 +238,7 @@ characters = {
 		}
 	}
 	CAN_Julian_Hedworth_George_Byng = { #Julian_Hedworth_George_Byng
-		name = Julian·Hedworth·George·Byng
+		name = "Julian·Hedworth·George·Byng"
 		portraits = {
 		army = {
 				large = gfx/leaders/CAN/Julian_byng.png
@@ -268,7 +268,7 @@ characters = {
 		}
 	}
 	CAN_Ernest_Lapointe = { #Ernest_Lapointe
-		name = Ernest·Lapointe
+		name = "Ernest·Lapointe"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_CAN_Ernest_Lapointe
@@ -286,7 +286,7 @@ characters = {
 		}
 	}
 	CAN_James_Shaver_Woodsworth = { #James_Shaver_Woodsworth
-		name = James·Shaver·Woodsworth
+		name = "James·Shaver·Woodsworth"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/CAN/James_Shaver_Woodsworth.png
@@ -303,7 +303,7 @@ characters = {
 		}
 	}
 	CAN_Anthony_Ludovici = { #Anthony_Ludovici
-		name = Anthony·Ludovici
+		name = "Anthony·Ludovici"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Anthony_Ludovici
@@ -320,7 +320,7 @@ characters = {
 		}
 	}
 	CAN_Lionel_Groulx = { #Lionel_Groulx
-		name = Lionel·Groulx
+		name = "Lionel·Groulx"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Lionel_Groulx
@@ -337,7 +337,7 @@ characters = {
 		}
 	}
 	CAN_Hemri_Bourassa = { #Hemri_Bourassa
-		name = Hemri·Bourassa
+		name = "Hemri·Bourassa"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Hemri_Bourassa
@@ -354,7 +354,7 @@ characters = {
 		}
 	}
 	CAN_Clarence_Decatur_Howe = { #Hemri_Bourassa
-		name = Clarence·Decatur·Howe
+		name = "Clarence·Decatur·Howe"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_Hemri_Bourassa
@@ -372,7 +372,7 @@ characters = {
 		}
 	}
 	CAN_E_T_Kingsley = { #Hemri_Bourassa
-		name = E·T·Kingsley
+		name = "E·T·Kingsley"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/CAN/E_T_Kingsley.png

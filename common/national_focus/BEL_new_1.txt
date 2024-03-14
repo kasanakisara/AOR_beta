@@ -1,4 +1,5 @@
 focus_tree={
+	id = BEL_government_in_exile
 	country={
 		factor=0
 		modifier={
@@ -119,7 +120,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=BEL_High_quality_citizen
+		id = BEL_High_quality_citizen
 		icon = GFX_goal_BEL_High_quality_citizen
 		x=14
 		y=2
@@ -172,7 +173,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=BEL_Elite_first
+		id = BEL_Elite_first
 		icon = GFX_goal_BEL_Elite_first
 		x=14
 		y=4
@@ -183,13 +184,11 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		}
 	}
 	focus={
-		id=BEL_Building_Congo
+		id = BEL_Building_Congo
 		icon = GFX_goal_BEL_Building_Congo
 		x=0
 		y=2
@@ -199,8 +198,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 				295 = {
 		add_extra_state_shared_building_slots = 1
@@ -224,8 +221,6 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
-		search_filters={
-		}
 		completion_reward={
 		add_stability = 0.1
 		add_war_support = 0.05
@@ -304,7 +299,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=BEL_Red_chaos_mountains_flowers
+		id = BEL_Red_chaos_mountains_flowers
 		icon = GFX_goal_BEL_Red_chaos_mountains_flowers
 		x=7
 		y=5

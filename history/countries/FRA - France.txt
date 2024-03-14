@@ -141,26 +141,32 @@ add_command_power = 20
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = SOC_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	FRE_democratic = 60
-	Fascism = 00
-	Marxism = 40
+	Marxism = 16
+	PAR_socialism = 15
+	SOC_democratic = 23
+	FRE_democratic = 20
+	CON_democratic = 10
+    AUT_democratic = 11
+	Absolutism = 5
 }
 
 add_ideas = {
-	Frail_Marianna
-	The_missing_generation
-	Victorious_Republic
+	AOR_FRA_The_Age_of_Clemenceau
+	AOR_FRA_Fear_Chaos_Crisis
+	AOR_FRA_Workers_Hymn
+	AOR_FRA_World_owner
+	AOR_FRA_Sunset_Winner
 }
 
 
-recruit_character = FRA_Raymond_Poincare
+recruit_character = FRA_TIGER
 
 
 #create_faction =  Paris_entente
@@ -170,3 +176,4 @@ puppet = PAN
 puppet = MXS
 
 give_guarantee = QID
+give_guarantee = BRA

@@ -3,6 +3,13 @@
 
 oob = "BRA_AOR"
 
+
+add_ideas = BRA_wansuifongsaika
+add_ideas = BRA_bujiedebaizang
+add_ideas = BRA_shengbaoluoxiedin
+add_ideas = BRA_nanmeidekanshouren
+add_ideas = BRA_yidaobahen
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -89,11 +96,11 @@ recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 
 create_country_leader = {
-	name = "Manuel Deodoro da Fonseca"
-	desc = "POLITICS_BRZ_DESC"
-	picture = "BRZ.dds"
+	name = "Hermes_Rodrigues_da_Fonseca"
+	desc = "POLITICS_BRA_DESC"
+	picture = "gfx/leaders/BRA/BRA.png"
 	expire = "1965.1.1"
-	ideology = miliciagov
+	ideology = despotism
 	traits = {
 	}
 }
@@ -177,7 +184,12 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 100
+	Absolutism = 40
+	AUT_democratic = 20
+	FRE_democratic = 16
+	CON_democratic = 14
+	AGR_socialism = 7
+	Anarcho = 3
 }
 
 

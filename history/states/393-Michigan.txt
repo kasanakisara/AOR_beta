@@ -13,7 +13,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 4
 			air_base = 4
 
 		}
@@ -21,12 +21,22 @@ state={
 		victory_points = {
 			6710 20 
 		}
+		victory_points = {
+			11669 3
+		}
+		victory_points = {
+			11714 5
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
 
 			}
 
+		}
+
+		1921.5.1 = {
+			set_demilitarized_zone = yes
 		}
 
 	}

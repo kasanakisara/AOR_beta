@@ -40,12 +40,40 @@ defined_text = {
 		}
 		localization_key = GER_country_information_loc
 	}
-	
+
+	text = {
+		trigger = {
+			TAG = PER
+		}
+		localization_key = PER_country_information_loc
+	}
+
+	text = {
+		trigger = {
+			TAG = USA
+		}
+		localization_key = USA_country_information_loc
+	}
+
 	text = {
 		trigger = {
 			TAG = ORA
 		}
 		localization_key = ORA_country_information_loc
+	}
+
+	text = {
+		trigger = {
+			TAG = FRA
+		}
+		localization_key = FRA_country_information_loc
+	}
+
+	text = {
+		trigger = {
+			TAG = EGY
+		}
+		localization_key = EGY_country_information_loc
 	}
 
 	text = {

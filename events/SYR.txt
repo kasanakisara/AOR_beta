@@ -96,12 +96,8 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
     #那就这样吧  
-	trigger = {
-	    date > 2023.10.10
-		tag = SYR
-	}
 	option = {
-		name = SYR.3.a
+		name = SYR.2023.a
 		SYI = {
 
 			transfer_state = 553
@@ -110,7 +106,9 @@ country_event = {
 			add_state_core = 680
 			add_state_core = 344
 			add_state_core = 350
-			add_state_core = 553
+			every_state = {
+				add_core_of = SYI
+			}
 			add_manpower = 20231010
 
 			}
@@ -124,11 +122,13 @@ country_event = {
 				target = ENG
 				type = civil_war
 				}
+		}
 		SYI = {
 			declare_war_on = {
 				target = USA
 				type = civil_war
 				}
+		}
 		SYI = {
 			declare_war_on = {
 				target = SYR

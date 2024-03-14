@@ -1,0 +1,136 @@
+add_namespace = SWE
+
+country_event = {
+    id = SWE.1 #哈康之死
+    title = SWE.1.t
+    desc = SWE.1.d
+    trigger = {
+        date > 1923.2.13
+        date < 1923.2.15
+    }
+    fire_only_once  = yes
+    option = {
+        name = SWE.1.a
+    }
+}
+
+country_event = {
+    id = SWE.2 #鲁普雷希特登基
+    title = SWE.2.t
+    desc = SWE.2.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.2.a
+    }
+}
+
+country_event = {
+    id = SWE.3 #请求贸易协定
+    title = SWE.3.t
+    desc = SWE.3.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.3.a
+        if = {
+            limit = {
+                tag = ENG
+            }
+            SWE = {
+                country_event = { id = SWE.4 } #英国同意
+            }
+        }
+        else = {
+            SWE = {
+                country_event = { id = SWE.5 } #法国同意
+            }
+        }
+    }
+    option = {
+        name = SWE.3.b
+        if = {
+            limit = {
+                tag = ENG
+            }
+            SWE = {
+                country_event = { id = SWE.6 } #英国拒绝
+            }
+        }
+        else = {
+            SWE = {
+                country_event = { id = SWE.7 } #法国拒绝
+            }
+        }
+    }
+}
+
+country_event = {
+    id = SWE.4 #请求贸易协定-准许-英国
+    title = SWE.4.t
+    desc = SWE.4.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.4.a
+        add_timed_idea = {
+            idea = SWE_British
+            days = 365
+        }
+    }
+}
+
+country_event = {
+    id = SWE.5 #请求贸易协定-准许-英国
+    title = SWE.5.t
+    desc = SWE.5.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.5.a
+        add_timed_idea = {
+            idea = SWE_Francais
+            days = 365
+        }
+    }
+}
+
+country_event = {
+    id = SWE.6 #请求贸易协定-否决-英国
+    title = SWE.6.t
+    desc = SWE.6.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.6.a
+    }
+}
+
+country_event = {
+    id = SWE.7 #请求贸易协定-否决-法国
+    title = SWE.7.t
+    desc = SWE.7.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.7.a
+    }
+}
+
+country_event = {
+    id = SWE.8 #斯德哥尔摩会议
+    title = SWE.8.t
+    desc = SWE.8.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.8.a
+        add_timed_idea = {
+            idea = SWE_Stockholm_Law
+            days = 405
+        }
+    }
+}
+
+country_event = {
+    id = SWE.9 #向人民宣传
+    title = SWE.9.t
+    desc = SWE.9.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.9.a
+    }
+}

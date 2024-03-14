@@ -1,0 +1,396 @@
+characters = {
+	USA_john_pershing = {
+		name = "约瑟夫·潘兴"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/john_pershing.dds
+				small = gfx/interface/ideas/john_pershing.dds
+			}
+		}
+		field_marshal = {
+			traits = { career_officer brilliant_strategist politically_connected } # 职业军官，天才战略家，政治关联
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	
+	USA_tasker_bliss = {
+		name = "塔斯克·布利斯"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/tasker_bliss.dds
+				small = gfx/interface/ideas/tasker_bliss.dds
+			}
+		}
+		field_marshal = {
+			traits = { career_officer inflexible_strategist organizer } # 职业军官，不灵活的战略家，组织者
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	USA_payton_march = {
+		name = "佩顿·马奇"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/payton_march.dds
+				small = gfx/interface/ideas/payton_march.dds
+			}
+		}
+		field_marshal = {
+			traits = { career_officer skilled_staffer trickster } # 职业军官，熟练参谋，奇袭专家
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	USA_hugh_l_scott = {
+		name = "休.L.斯科特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/hugh_l_scott.dds
+				small = gfx/interface/ideas/hugh_l_scott.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer offensive_doctrine defensive_doctrine } # 职业军官，进攻专家，防御专家
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	USA_hunter_liggett = {
+		name = "亨特·利格特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/hunter_liggett.dds
+				small = gfx/interface/ideas/hunter_liggett.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer trait_cautious fortress_buster } # 职业军官，谨慎，攻坚专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_robert_e_lee_bradley = {
+		name = "罗伯特·李·布拉德"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/robert_e_lee_bradley.dds
+				small = gfx/interface/ideas/robert_e_lee_bradley.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader combined_arms_expert } # 职业军官，步兵将领，协同作战专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_charles_pelot_sumner = {
+		name = "查尔斯·佩洛特·萨默尔"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/charles_pelot_sumner.dds
+				small = gfx/interface/ideas/charles_pelot_sumner.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer cavalry_officer winter_specialist } # 职业军官，骑兵军官，冬季专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_john_l_hines = {
+		name = "约翰.L.希内斯"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/john_l_hines.dds
+				small = gfx/interface/ideas/john_l_hines.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer hill_fighter } # 职业军官，步兵军官，丘陵专家
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_andrew_w_brust = {
+		name = "安德烈·W·布鲁斯特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/andrew_w_brust.dds
+				small = gfx/interface/ideas/andrew_w_brust.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer armor_officer panzer_leader } # 职业军官，装甲军官，装甲专家
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_leonard_wood = {
+		name = "伦纳德·伍德"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/leonard_wood.dds
+				small = gfx/interface/ideas/leonard_wood.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer jungle_rat } # 职业军官，步兵军官，丛林之鼠
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_f_c_answorth = {
+		name = "F.C.安斯沃斯"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/f_c_answorth.dds
+				small = gfx/interface/ideas/f_c_answorth.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer ranger } # 职业军官，步兵军官，巡林者
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_george_barnett = {
+		name = "乔治.巴尼特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/george_barnett.dds
+				small = gfx/interface/ideas/george_barnett.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer urban_assault_specialist } # 职业军官，步兵军官，巷战专家
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_john_a_lerchen = {
+		name = "约翰.A.勒任"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/john_a_lerchen.dds
+				small = gfx/interface/ideas/john_a_lerchen.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert invader_ii } # 职业军官，步兵专家，两栖专家
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_harry_a_eaton = {
+		name = "哈里.A.伊顿"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/harry_a_eaton.dds
+				small = gfx/interface/ideas/harry_a_eaton.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert naval_liason } # 职业军官，步兵专家，海军联络者
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_robert_l_hauser = {
+		name = "罗伯特.L.豪兹"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/robert_l_hauser.dds
+				small = gfx/interface/ideas/robert_l_hauser.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert guerilla_fighter } # 职业军官，步兵专家，游击战士
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USA_edward_whittemore = {
+		name = "爱德华.惠滕迈耶"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/edward_whittemore.dds
+				small = gfx/interface/ideas/edward_whittemore.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert expert_improviser } # 职业军官，步兵专家，随机应变的专家
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	USA_william_l_seibert = {
+		name = "威廉.L.赛伯特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/william_l_seibert.dds
+				small = gfx/interface/ideas/william_l_seibert.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert winter_expert } # 职业军官，步兵专家，冬季专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_brayton_brown = {
+		name = "布雷斯顿.布朗"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/brayton_brown.dds
+				small = gfx/interface/ideas/brayton_brown.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert panzer_expert } # 职业军官，步兵专家，装甲专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_ora_e_hunt = {
+		name = "奥拉.E.亨特"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/ora_e_hunt.dds
+				small = gfx/interface/ideas/ora_e_hunt.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert combined_arms_expert } # 职业军官，步兵专家，协同作战专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_j_w_hurd = {
+		name = "J.W.赫德"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/j_w_hurd.dds
+				small = gfx/interface/ideas/j_w_hurd.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert fortress_buster } # 职业军官，步兵专家，攻坚专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_charles_g_morton = {
+		name = "查尔斯.G.莫顿"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/charles_g_morton.dds
+				small = gfx/interface/ideas/charles_g_morton.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_expert invader_ii } # 职业军官，步兵专家，两栖专家
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	USA_malin_craig = {
+		name = "马林.克雷格"
+		portraits = {
+			army = {
+				large = gfx/leaders/USA/malin_craig.dds
+				small = gfx/interface/ideas/malin_craig.dds
+			}
+		}
+		corps_commander = {
+			traits = { career_officer offensive_doctrine defensive_doctrine } # 职业军官，进攻专家，防御专家
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

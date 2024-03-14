@@ -76,10 +76,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 41
-	FRE_democratic = 20
-	SOC_democratic = 15
-	AUT_democratic = 12
+	CON_democratic = 46
+	FRE_democratic = 17
+	SOC_democratic = 12
+	AUT_democratic = 13
 	Fascism = 7
 	Special = 5
 }
@@ -93,11 +93,11 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "John_Nance_Garner_IV"
-	desc = "POLITICS_John_Nance_Garner_IV_DESC"
+	name = "John_Nance_Garner_III"
+	desc = "John_Nance_Garner_III_DESC"
 	picture = "gfx/leaders/CSA/Gamaliel_Harding.png"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = Jeffersonian
 	traits = {
 		
 	}

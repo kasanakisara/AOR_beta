@@ -1,21 +1,22 @@
 ﻿capital = 282
 
+add_ideas = JAP_lixian
+add_ideas = JAP_junbu
+add_ideas = JAP_minzhi
+add_ideas = JAP_samo
+add_ideas = JAP_fanfa
+add_ideas = JAP_misao
 
-
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
 
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
 }
 
 create_country_leader = {
@@ -44,3 +45,6 @@ puppet = KOR
 puppet = PYO
 
 give_guarantee = QID
+
+set_province_name = { id = 957 name = "yanpiside" }
+

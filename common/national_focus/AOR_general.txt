@@ -1,6 +1,7 @@
 
 
 focus_tree = {
+
 	id = AOR_general
 	
 	country = {
@@ -18,7 +19,7 @@ focus_tree = {
 	focus = { #工业之母
 		id = AOR_general_industry_1
 		icon = GFX_goal_general_industry_1
-		cost = 10.00
+		cost = 15.00
 		x = 7
 		y = 0
 		ai_will_do = {
@@ -27,12 +28,43 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-		}
-	}
+            custom_effect_tooltip = Randomly_add_2_civilian_factories_to_your_province
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+        }
+    }
 	focus = { #硝酸工业
 		id = AOR_general_industry_2
 		icon = GFX_goal_general_industry_2
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -43,14 +75,52 @@ focus_tree = {
 		}
 		available = {}
 		bypass = {}
-		completion_reward = {
-		}
+        complete_tooltip = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }       
+            completion_reward = {
+                random_owned_controlled_state = {
+                        limit = {
+                            free_building_slots = {
+                                building = arms_factory
+                                size > 0
+                                include_locked = yes
+                            }
+                            OR = {
+                                is_in_home_area = yes
+                                NOT = {
+                                    owner = {
+                                        any_owned_state = {
+                                            free_building_slots = {
+                                                building = arms_factory
+                                                size > 0
+                                                include_locked = yes
+                                            }
+                                            is_in_home_area = yes
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
 
-	}
 	focus = { #枪弹产业
 		id = AOR_general_industry_3
 		icon = GFX_goal_AOR_general_industry_3
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_2
 		}
@@ -62,13 +132,43 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+                random_owned_controlled_state = {
+                        limit = {
+                            free_building_slots = {
+                                building = arms_factory
+                                size > 0
+                                include_locked = yes
+                            }
+                            OR = {
+                                is_in_home_area = yes
+                                NOT = {
+                                    owner = {
+                                        any_owned_state = {
+                                            free_building_slots = {
+                                                building = arms_factory
+                                                size > 0
+                                                include_locked = yes
+                                            }
+                                            is_in_home_area = yes
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
 		}
 
-	}
 	focus = { #硝铵工业
 		id = AOR_general_industry_4
 		icon = GFX_goal_general_industry_4
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_2
 		}
@@ -80,13 +180,22 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 
 	}
 	focus = { #本地冶金工业
 		id = AOR_general_industry_5
 		icon = GFX_goal_general_industry_5
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -98,13 +207,21 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 
 	}
 	focus = { #改进挖掘工具
 		id = AOR_general_industry_6
 		icon = GFX_goal_general_industry_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_5
 		}
@@ -116,13 +233,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.0 
+                uses = 1
+                category = excavation_tech
+            }
 		}
 
 	}
 	focus = { #改进弹药工艺
 		id = AOR_general_industry_7
 		icon = GFX_goal_general_industry_7
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_4
 		}
@@ -134,6 +256,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_industry_7
 		}
 
 	}
@@ -155,13 +278,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_industry_8
 		}
 
 	}
 	focus = { #大型采矿设备
 		id = AOR_general_industry_9
 		icon = GFX_goal_general_industry_9
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_8
 		}
@@ -173,13 +297,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.0 
+                uses = 2
+                ahead_reduction = 1
+                category = excavation_tech
+            }
 		}
 
 	}
 	focus = { #合成氨工业
 		id = AOR_general_industry_10
 		icon = GFX_goal_general_industry_10
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -191,13 +321,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 		}
 
 	}
 	focus = { #改进炸药工艺
 		id = AOR_general_industry_11
 		icon = GFX_goal_general_industry_11
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_10
 		}
@@ -209,13 +345,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_industry_11
 		}
 
 	}
 	focus = { #化肥工业
 		id = AOR_general_industry_12
 		icon = GFX_goal_general_industry_12
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_10
 		}
@@ -227,13 +364,43 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 	}
 	focus = { #黏胶纤维工业
 		id = AOR_general_industry_13
 		icon = GFX_goal_general_industry_13
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -245,13 +412,20 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+                ahead_reduction = 1.0
+				category = industry
+			}
 		}
 
 	}
 	focus = { #可替代型纤维产业
 		id = AOR_general_industry_14
 		icon = GFX_goal_general_industry_14
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_13
 		}
@@ -263,13 +437,43 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 	}
 	focus = { #建材工业
 		id = AOR_general_industry_15
 		icon = GFX_goal_general_industry_15
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_1
 		}
@@ -281,13 +485,20 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = 	construction_tech
+				bonus = 0.5
+				uses = 2
+                ahead_reduction = 1.0
+				category = industry
+			}
 		}
 
 	}
 	focus = { #改进基建技术
 		id = AOR_general_industry_16
 		icon = GFX_goal_general_industry_16
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_15
 		}
@@ -299,13 +510,67 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 	}
 	focus = { #民用产业体系化
 		id = AOR_general_industry_17
 		icon = GFX_goal_general_industry_17
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_industry_12
 		}
@@ -323,6 +588,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_industry_17
 		}
 
 	}
@@ -331,7 +597,7 @@ focus_tree = {
 	focus = { #三军理论
 		id = AOR_general_army_1
 		icon = GFX_goal_general_army_1
-		cost = 10.00
+		cost = 15.00
 		x = 20
 		y = 0
 		ai_will_do = {
@@ -340,13 +606,16 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            air_experience = 35
+            army_experience = 35
+            navy_experience = 35
 		}
 
 	}
 	focus = { #陆军理论
 		id = AOR_general_army_2
 		icon = GFX_goal_general_army_2
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_1
 		}
@@ -358,13 +627,20 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 
 	}
 	focus = { #普遍民兵
 		id = AOR_general_army_3
 		icon = GFX_goal_general_army_3
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -379,13 +655,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_mass_assault
+			}
 		}
 
 	}
 	focus = { #武装民兵
 		id = AOR_general_army_4
 		icon = GFX_goal_general_army_4
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_3
 		}
@@ -397,13 +679,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = extensive_conscrption
 		}
 
 	}
 	focus = { #武器支援
 		id = AOR_general_army_5
 		icon = GFX_goal_general_army_5
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_4
 		}
@@ -415,13 +698,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 1.0
+				uses = 1
+				category = cat_mass_assault
+			}
 		}
 
 	}
 	focus = { #职业军人
 		id = AOR_general_army_6
 		icon = GFX_goal_general_army_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -436,13 +725,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 1
+				uses = 1
+				category = cat_superior_firepower
+			}
 		}
 
 	}
 	focus = { #炮兵团
 		id = AOR_general_army_7
 		icon = GFX_goal_general_army_7
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_6
 		}
@@ -454,13 +749,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_army_7
 		}
 
 	}
 	focus = { #战车队
 		id = AOR_general_army_8
 		icon = GFX_goal_general_army_8
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_7
 		}
@@ -472,13 +768,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
 		}
 
 	}
 	focus = { #现代陆军理论
 		id = AOR_general_army_9
 		icon = GFX_goal_general_army_9
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_2
 		}
@@ -490,13 +791,20 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            army_experience = 50
+            add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 
 	}
 	focus = { #陆军精英
 		id = AOR_general_army_10
 		icon = GFX_goal_general_army_10
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_5
 			focus = AOR_general_army_8
@@ -512,6 +820,13 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = cat_special_forces_generic
+			}
 		}
 
 	}
@@ -530,13 +845,65 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+
 		}
 
 	}
 	focus = { #飞行俱乐部
 		id = AOR_general_army_12
 		icon = GFX_goal_general_army_12
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_11
 		}
@@ -548,13 +915,68 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
 		}
 
 	}
 	focus = { #仿造航空器
 		id = AOR_general_army_13
 		icon = GFX_goal_general_army_13
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_12
 		}
@@ -566,13 +988,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_army_13
 		}
 
 	}
 	focus = { #长空挥镰
 		id = AOR_general_army_14
 		icon = GFX_goal_general_army_14
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_13
 		}
@@ -584,13 +1007,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				category = light_fighter
+                category = cat_heavy_fighter
+            }
 		}
 
 	}
 	focus = { #空中威胁
 		id = AOR_general_army_15
 		icon = GFX_goal_general_army_15
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_12
 		}
@@ -602,13 +1030,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				technology = tactical_bomber
+                technology = cat_strategic_bomber
+            }
 		}
 
 	}
 	focus = { #海军经费
 		id = AOR_general_army_16
 		icon = GFX_goal_general_army_6
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_1
 		}
@@ -620,13 +1053,108 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}	
 		}
 
 	}
 	focus = { #新锐学派
 		id = AOR_general_army_17
 		icon = GFX_goal_general_army_17
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -641,13 +1169,20 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
 		}
 
 	}
 	focus = { #保守学派
 		id = AOR_general_army_18
 		icon = GFX_goal_general_army_18
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -662,13 +1197,23 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
 		}
 
 	}
 	focus = { #拓建船坞
 		id = AOR_general_army_19
 		icon = GFX_goal_general_army_19
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_17
 			focus = AOR_general_army_18
@@ -681,6 +1226,100 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}	
 		}
 
 	}
@@ -699,13 +1338,23 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
 		}
 
 	}
 	focus = { #地区海军威慑
 		id = AOR_general_army_21
 		icon = GFX_goal_general_army_21
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_20
 		}
@@ -717,13 +1366,19 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
 		}
 
 	}
 	focus = { #仿造舰艇
 		id = AOR_general_army_22
 		icon = GFX_goal_general_army_22
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_army_16
 		}
@@ -735,6 +1390,21 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+            add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 
 	}
@@ -753,6 +1423,18 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            navy_experience = 15
+			add_doctrine_cost_reduction = {
+				name = ITA_cacciatorpediniere_di_scorta
+				cost_reduction = 0.50
+				uses = 2
+				category = convoy_defense_tree
+			}
+            add_equipment_to_stockpile = {
+                type = add_equipment_production
+                amount = 300
+                producer = ROOT
+            }
 		}
 
 	}
@@ -776,7 +1458,7 @@ focus_tree = {
 	focus = { #自由民主主义
 		id = AOR_general_politics_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_1
 		}
@@ -788,16 +1470,22 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-		available = {}
+		available = {
+        	OR = {
+				has_government = FRE_democratic
+				has_government =  SOC_democratic
+			}
+        }
 		bypass = {}
 		completion_reward = {
+            add_ideas = liberty_ethos_focus
 		}
 
 	}
 	focus = { #自由贸易
 		id = AOR_general_politics_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_2
 		}
@@ -809,13 +1497,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = free_trade
 		}
 
 	}
 	focus = { #构筑党派
 		id = AOR_general_politics_4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_3
 		}
@@ -833,7 +1522,7 @@ focus_tree = {
 	focus = { #保障人权
 		id = AOR_general_politics_5
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_2
 		}
@@ -863,6 +1552,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            set_technology = { field_hospital = 1 } #野战医院
 		}
 
 	}
@@ -881,6 +1571,8 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_stability = 0.2
+            add_war_support = 0.2
 		}
 
 	}
@@ -899,13 +1591,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = USA_worker_management_act
 		}
 
 	}
 	focus = { #自由选举
 		id = AOR_general_politics_9
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_4
 		}
@@ -917,13 +1610,16 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            set_politics = {
+                elections_allowed = yes               
+            }
 		}
 
 	}
 	focus = { #政府工具
 		id = AOR_general_politics_10
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_7
 			focus = AOR_general_politics_8
@@ -942,13 +1638,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_stability = 0.2
 		}
 
 	}
 	focus = { #自由之路的开端
 		id = AOR_general_politics_11
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_9
 		}
@@ -963,6 +1660,7 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_popularity = { ideology = FRE_democratic popularity = 0.5 }
 		}
 
 	}
@@ -984,13 +1682,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_stability = 0.1
 		}
 
 	}
 	focus = { #传统保守
 		id = AOR_general_politics_13
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -999,16 +1698,23 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-		available = {}
+		available = {
+			OR = {
+				has_government = CON_democratic
+				has_government = AUT_democratic
+			}
+            
+        }
 		bypass = {}
 		completion_reward = {
+            add_stability = 0.1
 		}
 
 	}
 	focus = { #节制政治
 		id = AOR_general_politics_14
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_13
 		}
@@ -1026,7 +1732,7 @@ focus_tree = {
 	focus = { #反对革命
 		id = AOR_general_politics_15
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_13
 		}
@@ -1044,7 +1750,7 @@ focus_tree = {
 	focus = { #精英政治
 		id = AOR_general_politics_16
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_15
 		}
@@ -1065,7 +1771,7 @@ focus_tree = {
 	focus = { #捍卫价值
 		id = AOR_general_politics_17
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_15
 		}
@@ -1083,7 +1789,7 @@ focus_tree = {
 	focus = { #强化立法机构
 		id = AOR_general_politics_18
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_17
 		}
@@ -1101,7 +1807,7 @@ focus_tree = {
 	focus = { #连续性
 		id = AOR_general_politics_19
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_18
 		}
@@ -1119,7 +1825,7 @@ focus_tree = {
 	focus = { #稳定性
 		id = AOR_general_politics_20
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_18
 		}
@@ -1137,7 +1843,7 @@ focus_tree = {
 	focus = { #回归理想
 		id = AOR_general_politics_21
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_19
 		}
@@ -1158,7 +1864,7 @@ focus_tree = {
 	focus = { #保守宗教
 		id = AOR_general_politics_22
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -1167,7 +1873,14 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-		available = {}
+		available = {
+			OR = {
+				has_government = ISL_democratic
+				has_government = AUT_democratic
+				has_government =  CON_democratic
+			}
+            
+        }
 		bypass = {}
 		completion_reward = {
 		}
@@ -1176,7 +1889,7 @@ focus_tree = {
 	focus = { #源自神明的信仰
 		id = AOR_general_politics_23
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_22
 		}
@@ -1194,7 +1907,7 @@ focus_tree = {
 	focus = { #提倡传统价值
 		id = AOR_general_politics_24
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_22
 		}
@@ -1248,7 +1961,7 @@ focus_tree = {
 	focus = { #反政治体制滥用
 		id = AOR_general_politics_27
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_26
 		}
@@ -1287,7 +2000,7 @@ focus_tree = {
 	focus = { #混合现代哲学
 		id = AOR_general_politics_29
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_27
 		}
@@ -1308,7 +2021,7 @@ focus_tree = {
 	focus = { #维持现状
 		id = AOR_general_politics_30
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_25
 		}
@@ -1326,7 +2039,7 @@ focus_tree = {
 	focus = { #反腐败
 		id = AOR_general_politics_31
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_30
 		}
@@ -1344,7 +2057,7 @@ focus_tree = {
 	focus = { #反违背教义
 		id = AOR_general_politics_32
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_30
 		}
@@ -1362,7 +2075,7 @@ focus_tree = {
 	focus = { #领袖专制
 		id = AOR_general_politics_33
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_12
 		}
@@ -1371,16 +2084,24 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-		available = {}
+		available = {
+			OR = {
+				has_government = Fascism
+				has_government = Absolutism
+				has_government = Special
+			}
+            
+        }
 		bypass = {}
 		completion_reward = {
+            
 		}
 
 	}
 	focus = { #个人崇拜
 		id = AOR_general_politics_34
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -1392,13 +2113,41 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_political_power = 75
+			add_war_support = 0.02
+			add_stability = 0.02
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
+			
 		}
 
 	}
 	focus = { #团结阶级
 		id = AOR_general_politics_35
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -1410,13 +2159,21 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+
+            if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_ideas = militarism_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
 		}
 
 	}
 	focus = { #集权主义
 		id = AOR_general_politics_36
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_33
 		}
@@ -1428,13 +2185,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = paramilitarism_focus
 		}
 
 	}
 	focus = { #强化体系
 		id = AOR_general_politics_37
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_34
 			focus = AOR_general_politics_35
@@ -1450,13 +2208,38 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = deterrence
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
 		}
 
 	}
 	focus = { #防止掣肘
 		id = AOR_general_politics_38
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_37
 		}
@@ -1468,13 +2251,44 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = ideological_fanaticism_focus
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					has_government = Special
+				}
+				add_popularity = {
+					ideology = Special
+					popularity = 0.05
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = Absolutism
+					popularity = 0.05
+				}
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
 		}
 
 	}
 	focus = { #去民主政治
 		id = AOR_general_politics_39
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_37
 		}
@@ -1486,13 +2300,22 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_popularity = {
+				ideology = CON_democratic
+				popularity = -0.5
+			}
+            add_popularity = {
+				ideology = FRE_democratic
+				popularity = -0.5
+			}
+            
 		}
 
 	}
 	focus = { #掌控国家
 		id = AOR_general_politics_40
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_39
 		}
@@ -1504,13 +2327,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = AOR_general_politics_40
 		}
 
 	}
 	focus = { #强化内阁
 		id = AOR_general_politics_41
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_39
 		}
@@ -1522,13 +2346,15 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_political_power = 200
+			add_ideas = idea_political_correctness
 		}
 
 	}
 	focus = { #一致行动
 		id = AOR_general_politics_42
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = AOR_general_politics_40
 		}
@@ -1543,6 +2369,13 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
+            add_ideas = foreign_expeditions_focus
+			hidden_effect = {
+				set_technology = {
+					camicie_nere_security_militias = 1
+					popup = no
+				}
+			}
 		}
 
 	}

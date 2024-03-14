@@ -12,7 +12,10 @@ state={
 	history={
 		owner = RAJ
 		victory_points = {
-			8087 1
+			8087 10
+		}
+		victory_points = {
+			1359 3
 		}
 		buildings = {
 			infrastructure = 2

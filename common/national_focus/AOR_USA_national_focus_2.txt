@@ -1,527 +1,391 @@
-focus_tree = {
-	id = USA_national_focus_2
-	country = {
-		factor = 0
-		modifier = {
-			add = 12
-			tag = USA
+focus_tree={
+	id = USA_2
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=USA
 		}
 	}
-	default = no
-	focus = {  #威尔逊白宫演讲#
-		id = USA_Wilsons_Speech
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 10
-		y = 0
-
-		completion_reward = {
+	default=no
+	focus={
+		id = USA_White_House
+		icon = GFX_goal_USA_White_House
+		x=12
+		y=0
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available={
+			date > 1919.12.30
 		}
 
-	}
-	focus = { #《美丽国家计划》#
-		id = USA_Beautiful_Country_Plan
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Wilsons_Speech
-		}
-		x = 10
-		y = 1
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = Beautiful_Country_Plan
-				days = 360
-			}
-			country_event = { id = USA.2 }
-			add_political_power = 50
-		}
-
-	}
-	focus = {
-		id = USA_Entering_the_hearts_of_workers #走进工人内心#
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Beautiful_Country_Plan
-		}
-		x = 5
-		y = 2
-
-		completion_reward = {
-			country_event = { id = USA.3 }
-		}
-
-	}
-	focus = {
-		id = USA_money_is_a_good_things #钱是个好东西#
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Entering_the_hearts_of_workers
-		}
-		x = 3
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.4 }
-		}
-
-	}
-	focus = {
-		id = USA_knights_honnor #骑士荣耀
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Entering_the_hearts_of_workers
-		}
-		x = 6
-		y = 3
-
-		completion_reward = {
-			add_political_power = -50
-			country_event = { id = USA.5 }
-		}
-
-	}
-	focus = {
-		id = USA_Promote_the_reform_of the_Order_of_chivalry_at_the_grassroots_level #促进骑士团基层改革
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_knights_honnor
-		}
-		x = 6
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.6 }
-			add_stability = 0.05
-			custom_effect_tooltip = xiexubuman
-		}
-
-	}
-	focus = {
-		id = USA_Can_the_Labor_Union_still_play_a_role #劳联还能发挥作用吗
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Entering_the_hearts_of_workers
-		}
-		x = 9
-		y = 3
-
-		completion_reward = {
-			add_political_power = -50
-			country_event = { id = USA.7 }
-		}
-
-	}
-	focus = {
-		id = USA_Ah_the_workers_have_grown_up #呵，工人们成长了
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Can_the_Labor_Union_still_play_a_role
-		}
-		x = 9
-		y = 4
-
-		completion_reward = {
-			add_stability = 0.05
-			custom_effect_tooltip = xueruoyingxiangli
-			add_popularity = {
-				ideology = ?
-				popularity = 0.02
-			}
-		}
-
-	}
-	focus = {
-		id = USA_Trust_Summit #托拉斯峰会
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Beautiful_Country_Plan
-		}
-		x = 16
-		y = 2
-
-		completion_reward = {
-			country_event = { id = USA.8 }
-		}
-
-	}
-	focus = {
-		id = USA_morgan_family #摩根家族
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Trust_Summit
-		}
-		x = 13
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.9 }
-		}
-
-	}
-	focus = {
-		id = USA_American_Characteristic_Finance #美国特色金融学
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_morgan_family
-		}
-		x = 13
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.10 }
-			add_timed_idea = {
-				idea = USA_American_Characteristic_Finance
-				days = 720
-			}
-		}
-
-	}
-	focus = {
-		id = USA_The_Rockefeller_family #洛克菲勒家族
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Trust_Summit
-		}
-		x = 16
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.11 }
-		}
-
-	}
-	focus = {
-		id = USA_odd_old_man #奇怪的老人
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_The_Rockefeller_family
-		}
-		x = 16
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.12 }
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = industry
-			}
-		}
-
-	}
-	focus = {
-		id = USA_Meilong_Family #梅隆家族
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Trust_Summit
-		}
-		x = 19
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.13 }
-		}
-
-	}
-	focus = {
-		id = USA_Out_of_Carnegie_s_Tragedy #走出卡内基的悲剧
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Meilong_Family
-		}
-		x = 19
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.14 }
-			add_timed_idea = {
-				idea = USA_Out_of_Carnegie_s_Tragedy
-				days = 720
-			}
-		}
-
-	}
-	focus = {
-		id = USA_The Great_Reform_of_the_Economic_System #1920经济体制大改革
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Beautiful_Country_Plan
-		}
-		x = 24
-		y = 2
-
-		completion_reward = {
-			country_event = { id = USA.15 }
-			add_political_power = 100
-			custom_effect_tooltip = jingjitizhidagaige
-		}
-
-	}
-	focus = {
-		id = USA_Identify_Gold_reserve #查明黄金储备
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_The Great Reform_of_the_Economic_System
-		}
-		x = 23
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.16 }
-			add_timed_idea = {
-				idea = USA_Identify_Gold_reserve
-				days = 180
-			}
-		}
-
-	}
-	focus = {
-		id = USA_a_good_deal #合算的交易
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Identify_Gold_reserve
-		}
-		x = 23
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.17 }
-			custom_effect_tooltip = hesuandejiaoyi
-			add_opinion_modifier = {
-				target = ENG
-				modifier = USA_a_good_deal
-			}
-			add_opinion_modifier = {
-				target = FRA
-				modifier = USA_a_good_deal
-			}
+		completion_reward={
 		}
 	}
-	focus = {
-		id = USA_examine_USD_GBP_Franc_Agreement #审视美元英镑法郎协定
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_The Great Reform_of_the_Economic_System
+	focus={
+		id=USA_Pick_up
+		icon=GFX_goal_USA_Pick_up
+		x=2
+		y=3
+		prerequisite={focus=USA_Beautiful_Country}
+		cost=2
+		ai_will_do={
+			factor=1
 		}
-		x = 25
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.18 }
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_swap_banknote_printing_machine #擦擦印钞机
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_examine_USD_GBP_Franc_Agreement
+	focus={
+		id=USA_Take_care
+		icon=GFX_goal_USA_Take_care
+		x=12
+		y=3
+		prerequisite={focus=USA_Beautiful_Country}
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 25
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.19 }
-			custom_effect_tooltip = cacayinchaoji
-			add_timed_idea = {
-				idea = USA_swap_banknote_printing_machine
-				days = 360
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_National_Relief_Law #国家救济法
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_money_is_a_good_things
+	focus={
+		id=USA_Beautiful_Country
+		icon=GFX_goal_USA_Beautiful_Country
+		x=12
+		y=1
+		prerequisite={focus=USA_White_House}
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 3
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.20 }
-			add_stability = 0.05
-			add_political_power = 100
-			custom_effect_tooltip = guojiajiujifa
-			add_idea = USA_National_Relief_Law
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_control_dollor_gold_exchange_window #控制美元兑换黄金窗口
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_a_good_deal
+	focus={
+		id=USA_Look_out
+		icon=GFX_goal_USA_Look_out
+		x=21
+		y=3
+		prerequisite={focus=USA_Beautiful_Country}
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 23
-		y = 5
-
-		completion_reward = {
-			country_event = { id = USA.21 }
-			add_stability = -0.05
-			add_political_power = -50
-			add_popularity = {
-
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_dollor_not_gold #美元不等于黄金
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_swap_banknote_printing_machine
+	focus={
+		id=USA_Compensate_them
+		icon=GFX_goal_USA_Compensate_them
+		x=0
+		y=4
+		prerequisite={focus=USA_Pick_up}
+		mutually_exclusive={focus=USA_Cleaning_again }
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 25
-		y = 5
-
-		completion_reward = {
-			country_event = { id = USA.22 }
-			custom_effect_tooltip = huobitixituogou
-			add_timed_idea = {
-				idea = USA_dollor_not_gold
-				days = 720
-			}
-			add_popularity = {
-
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_Checking_the_Federal_Armed_Forces #检查联邦武装力量
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Beautiful_Country_Plan
+	focus={
+		id=USA_Cleaning_again
+		icon=GFX_goal_USA_Cleaning_again
+		x=4
+		y=4
+		prerequisite={focus=USA_Pick_up}
+		mutually_exclusive={focus=USA_Compensate_them }
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 28
-		y = 2
-
-		completion_reward = {
-			country_event = { id = USA.23 }
-			add_idea = USA_Checking_the_Federal_Armed_Forces
-			add_command_power = 50
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_Expand_military_influence #扩大军队影响力
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Checking_the_Federal_Armed_Forces
+	focus={
+		id=USA_Limit_the_Knights
+		icon=GFX_goal_USA_Limit_the_Knights
+		x=0
+		y=6
+		prerequisite={focus=USA_Compensate_them}
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 28
-		y = 3
-
-		completion_reward = {
-			country_event = { id = USA.24 }
-			add_timed_idea = {
-				idea = USA_Expand_military_influence
-				days = 720
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_Strengthening_security_capabilities #加强安保能力
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Expand_military_influence
+	focus={
+		id=USA_Eradicating_the_Cancer
+		icon=GFX_goal_USA_Eradicating_the_Cancer
+		x=4
+		y=6
+		prerequisite={focus=USA_Cleaning_again}
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 28
-		y = 4
-
-		completion_reward = {
-			country_event = { id = USA.25 }
-			custom_effect_tooltip = jiaqianganbao
-			add_idea = USA_Strengthening_security_capabilities
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_Encourage_control_over_finance #鼓励控制融资
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_American_Characteristic_Finance
+	focus={
+		id=USA_Negotiate
+		icon=GFX_goal_USA_Negotiate
+		x=9
+		y=4
+		prerequisite={focus=USA_Take_care}
+		cost=2
+		ai_will_do={
+			factor=1
 		}
-		x = 13
-		y = 5
-
-		completion_reward = {
-			country_event = { id = USA.26 }
-			add_political_power = 100
-			add_stability = 0.05
-			add_ideas = {
-				idea = USA_Encourage_control_over_finance
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_maybe_we_find_mistake_people #我们好像找错人了
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_odd_old_man
+	focus={
+		id=USA_imprisoned
+		icon=GFX_goal_USA_imprisoned
+		x=9
+		y=5
+		prerequisite={focus=USA_Negotiate}
+		cost=2
+		ai_will_do={
+			factor=1
 		}
-		x = 16
-		y = 5
-
-		completion_reward = {
-			country_event = { id = USA.27 }
-			add_timed_idea = {
-				idea = USA_maybe_we_find_mistake_people
-				days = 720
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = ?
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-
+		completion_reward={
+		}
 	}
-	focus = {
-		id = USA_Improving_Factory_Management_Measures #改善工厂管理方案
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = USA_Out_of_Carnegie_s_Tragedy
+	focus={
+		id=USA_money
+		icon=GFX_goal_USA_money
+		x=8
+		y=6
+		prerequisite={focus=USA_imprisoned}
+		mutually_exclusive={focus=USA_container_gold }
+		cost=3
+		ai_will_do={
+			factor=1
 		}
-		x = 19
-		y = 5
-
-		completion_reward = {
-			country_event = { id = USA.28 }
-			add_ideas = USA_Improving_Factory_Management_Measures
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_container_gold
+		icon=GFX_goal_USA_container_gold
+		x=10
+		y=6
+		prerequisite={focus=USA_imprisoned}
+		mutually_exclusive={focus=USA_money }
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Loans_are_issued
+		icon=GFX_goal_USA_Loans_are_issued
+		x=15
+		y=4
+		prerequisite={focus=USA_Take_care}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Morgan_idea
+		icon=GFX_goal_USA_Morgan_idea
+		x=14
+		y=5
+		prerequisite={focus=USA_Loans_are_issued}
+		mutually_exclusive={focus=USA_Mellon_idea}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Mellon_idea
+		icon=GFX_goal_USA_Mellon_idea
+		x=16
+		y=5
+		prerequisite={focus=USA_Loans_are_issued}
+		mutually_exclusive={focus=USA_Morgan_idea}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Raise_tariffs
+		icon=GFX_goal_USA_Raise_tariffs
+		x=15
+		y=6
+		prerequisite={focus=USA_Morgan_idea focus=USA_Mellon_idea }
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Promise_space
+		icon=GFX_goal_USA_Promise_space
+		x=20
+		y=4
+		prerequisite={focus=USA_Look_out}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Rockefeller
+		icon=GFX_goal_USA_Rockefeller
+		x=20
+		y=6
+		prerequisite={focus=USA_Promise_space}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Get_staff_support
+		icon=GFX_goal_USA_Get_staff_support
+		x=25
+		y=4
+		prerequisite={focus=USA_Look_out}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Western_Eagles
+		icon=GFX_goal_USA_Western_Eagles
+		x=23
+		y=6
+		prerequisite={focus=USA_Get_staff_support}
+		mutually_exclusive={focus=USA_the_east }
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_the_east
+		icon=GFX_goal_USA_the_east
+		x=27
+		y=6
+		prerequisite={focus=USA_Get_staff_support}
+		mutually_exclusive={focus=USA_Western_Eagles }
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=USA_Finally
+		icon=GFX_goal_USA_Finally
+		x=12
+		y=8
+		prerequisite={focus=USA_Raise_tariffs}
+		prerequisite={focus=USA_Limit_the_Knights focus=USA_Eradicating_the_Cancer }
+		prerequisite={focus=USA_money focus=USA_container_gold focus=USA_Western_Eagles focus=USA_the_east }
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available={
+			date>1921.1.30
+		}
+		search_filters={
+		}
+		completion_reward={
 		}
 	}
 }

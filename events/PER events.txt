@@ -254,11 +254,8 @@ country_event = { #波斯苏维埃共和国宣告成立
 	desc = per.20.d
 	picture = ""
 	is_triggered_only = yes
-	immediate = { hidden_effect = { 420 = { set_demilitarized_zone = yes } } } 
+	immediate = { hidden_effect = { PSR_666 = YES 420 = { set_demilitarized_zone = yes } } } 
 	option = { 
 		name = per.20.a
-		hidden_effect = {
-			PSR_666 = YES
-		}
 	}
 }

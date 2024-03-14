@@ -1,5 +1,8 @@
 capital = 312
 
+add_ideas = MIA_the_bannan
+add_ideas = MIA_yanli
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -143,9 +146,12 @@ set_politics = {
 
 }
 set_popularities = {
-	FRE_democratic = 40
-	Marxism = 30
-	Anarcho = 30
+	FRE_democratic = 35
+	CON_democratic = 15
+	Absolutism = 20
+	AGR_socialism = 15
+	Marxism = 10
+	Anarcho = 5
 }
 
 add_ideas = {

@@ -1,0 +1,1610 @@
+任意作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.9。
+这些触发器不依赖任何特定的作用域。
+
+名称	参数类型	样例	描述	注释	加入的版本
+always	<bool>
+布尔型。	
+always = yes
+无论什么条件下都是存在的		1.0
+AND	触发器。	
+AND = {
+    original_tag = GER
+    has_stability > 0.5
+}
+如果下面任何一个条件是不满足的，则不触发，即需要满足所有条件	几乎所有需要触发器的地方都使用隐式AND触发器。	1.0
+count_triggers	amount = <int>
+
+触发器。	
+count_triggers = {
+    amount = 2
+    10 = { state_population = 100000 }
+    11 = { state_population = 100000 }
+    12 = { state_population = 100000 }
+}
+对下面的所有条件进行计算(不满足=0.满足=1），如果和等于amount就可以触发		1.5
+country_exists	<scope> / <variable>
+要检查的国家。	
+country_exists = GER
+检查特定国家目前是否在游戏中存在。	1.0	
+custom_trigger_tooltip	tooltip = <string>
+
+触发器。	
+custom_trigger_tooltip = {
+    tooltip = sunrise_invasion_tt		
+    any_state = {
+        is_owned_by = JAP
+        is_on_continent = europe
+        is_coastal = yes
+    }
+}
+和AND触发器类似，但是提示文字会显示tooltip的内容。在样例中是sunrise_invasion_tt(在本地化文件中定义）。		
+date	<date>
+要检查的日期。	
+date < 1950.01.01
+检查指定的日期是否与当前的日期相对应。	必须使用>或<运算符。	1.0
+difficulty	<int>
+难度值。	
+difficulty > 0
+检查指定的难度是否与当前的难度相对应。	必须使用>或<运算符。	1.0
+game_rules_allow_achievements	<bool>
+布尔型。	
+game_rules_allow_achievements = yes
+检查是否所有使用中的游戏规则允许完成成就。		1.9
+has_any_custom_difficulty_setting	<bool>
+布尔型。	
+has_any_custom_difficulty_setting = yes
+检查任何国家是否有自定义难度选项正在使用。		1.0
+has_custom_difficulty_setting	<string>
+要检查的设置。	
+has_custom_difficulty_setting = custom_diff_strong_sov
+1.0
+has_dlc	<string>
+要检查的DLC名。	
+has_dlc = "Waking the Tiger"
+检查特定DLC是否已开启。		1.0
+has_game_rule	<string>
+要检查的游戏规则
+<string> / <bool>
+检查为真/假的选项
+has_game_rule = { rule = GER_can_remilitarize_rhineland option = yes }
+检查一个游戏规则是否设定成特定的选项。		1.5
+has_global_flag	<string>
+要检查的flag。	
+has_global_flag = my_flag
+检查某一特定flag是否已被设定。		1.0
+has_global_flag	flag = <string>
+要检查的flag。
+value = <int>
+要检查的flag值。可选。
+date = <date>
+要检查的flag创建的日期。可选。
+days = <int>
+要检查的flag存在的天数。可选。
+
+has_global_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+比较特定flag上次设定的日期，设定后存在的天数，和/或flag值。	如果没有设定，值的比较默认为>0。value限制在-32768和32767之间。	1.0
+has_start_date	<date>
+要检查的日期。	
+has_start_date > 1950.01.01
+检查特定日期是否是当前游戏的开始日期。	必须使用>或<运算符。	1.0
+hidden_trigger	触发器。	
+hidden_trigger = {
+    country_exists = GER
+}
+与AND触发器类似，但是不会出现在提示条中。		
+if	limit = <AND-trigger>
+条件。 else_if = <if-trigger>
+替代条件。可选。
+else = <AND-trigger>
+最终替代条件。可选。
+
+触发器。
+
+if = {
+    limit = {
+        has_dlc = "Poland: United and Ready"
+    }
+    has_political_power > 100
+    else = {
+        has_war_support > 0.5
+    }
+}
+首先，limit是一个AND的触发器，也就是其中的所有条件都需要满足，如果limit中的内容没有满足，就开始检测else_if，直到else最后这个触发器(除非你没有写）。这其中的每一个触发器只要有一个触发器中的内容全部满足就会触发	else_if和else也可以直接跟在if触发器的后面，而不是放在里面。	1.0
+is_debug	<bool>
+布尔型。	
+is_debug = yes
+检查当前游戏是否处于debug模式(用-debug模式启动游戏）。		1.9
+is_historical_focus_on	<bool>
+布尔型。	
+is_historical_focus_on = yes
+检查当前游戏是否处于历史国策开启的模式。		1.0
+is_ironman	<bool>
+布尔型。	
+is_ironman = yes
+检查当前游戏是否处于铁人模式。		1.0
+is_tutorial	<bool>
+布尔型。	
+is_tutorial = yes
+检查当前游戏是否处于教程模式。		1.0
+NOT	触发器。	
+NOT = {
+    has_stability > 0.5
+    has_war_support > 0.5
+}
+下列没有任何一个条件被满足即可		1.0
+OR	触发器。	
+OR = {
+    original_tag = ENG
+    original_tag = USA
+}
+只需要满足其中一个条件就可以触发。在检测到第一个满足条件后停止继续检测		1.0
+threat	<float>
+要检查的值。	
+threat > 0.5
+检查世界紧张度是否达到某个特定的值。	必须使用>或<运算符。	1.0
+国家作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in country scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+exists	<bool>
+是否存在	
+exists = yes
+检查当前范围是否存在于游戏中		1.0
+tag	<scope> / <variable>
+指向某个国家	
+tag = GER
+tag = var:my_country
+检查当前范围是否为这个国家		1.0
+original_tag	<scope> / <variable>
+指向某个国家	
+original_tag = GER
+original_tag = var:my_country
+检查当前范围是否曾经是这个国家		1.0
+is_ai	<bool>
+是否为AI	
+is_ai = yes
+检查当前范围是否为AI		1.0
+has_country_flag	<string>
+The flag to check.	
+has_country_flag = my_flag
+Checks if the current scope has the specified flag.		1.0
+has_country_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_country_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+has_cosmetic_tag(拥有显示tag）	<string>
+指向某个显示tag(对应效果中的更改显示tag）	
+has_cosmetic_tag = SOV_custom
+Checks if the current scope has the specified cosmetic tag active.		1.5
+has_decision	<string>
+检查决议	
+has_decision = my_decision
+检查当前范围内指定决议是否被激活		1.5
+has_dynamic_modifier	modifier = <string>
+The dynamic_modifier to check.
+scope = <scope>
+The country to check. Optional, if the original modifier has been targeted.
+
+has_dynamic_modifier = {
+    modifier = my_dynamic_modifier
+    scope = GER
+}
+Checks if the current scope has the specified dynamic modifier activated.		1.6
+has_active_mission	<string>
+The mission to check.	
+has_active_mission = my_mission
+Checks if the current scope has the specified mission active.		1.5
+has_focus_tree	<string>
+The focus tree to check.	
+has_focus_tree = soviet_tree
+Checks if the current scope has the specified focus tree.		1.3
+has_completed_focus(完成国策）	<string>
+指定某个国策是否完成	
+has_completed_focus = my_focus
+检查当前指定国策是否完成		1.0
+focus_progress	focus = <string>
+用于检查的国策
+progress = <string>
+用于检查的国策进程
+
+focus_progress = {
+    focus = my_focus
+    progress > 0.5
+}
+检查该国策是否已经完成了当前范围的指定百分比	Must use either > or < operators for progress.	1.0
+政治
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_political_power	<float>
+The amount to check for.	
+has_political_power > 100
+Checks if the current scope has the specified amount of political power.	Must use either > or < operators.	1.0
+political_power_daily	<float> / <variable>
+The amount to check for.	
+political_power_daily > 1
+Checks if the current scope has the specified amount of daily political power gain.	Must use either > or < operators.	1.5
+political_power_growth	<float> / <variable>
+The amount to check for.	
+political_power_growth > 1
+Checks if the current scope has the specified amount of daily political power gain.	Must use either > or < operators.	1.5
+command_power	<float> / <variable>
+The amount to check for.	
+command_power > 1
+Checks if the current scope has the specified amount of command power.	Must use either > or < operators.	1.5
+command_power_daily	<float> / <variable>
+The amount to check for.	
+command_power_daily > 1
+Checks if the current scope has the specified amount of daily command power gain.	Must use either > or < operators.	1.5
+has_war_support	<float> / <variable>
+The amount to check for.	
+has_war_support > 0.5
+Checks if the current scope has the specified percentage of War Support.	Must use either > or < operators.	1.5
+has_stability	<float> / <variable>
+The amount to check for.	
+has_stability > 0.5
+Checks if the current scope has the specified percentage of Stability.	Must use either > or < operators.	1.5
+<ideology>	<ideology> = <float>
+The amount of the ideology to check for.	
+fascism > 0.5
+Checks if the current scope has the specified ideology above the specified amount.		1.0
+has_government	<string>
+The ideology to check for.	
+has_government = fascism
+Checks if the current scope ruling party is the specified ideology.		1.0
+has_elections	<bool>
+Boolean.	
+has_elections = yes
+Checks if the current scope holds elections.		1.0
+is_staging_coup	<bool>
+Boolean.	
+is_staging_coup = yes
+Checks if the current scope is staging a coup.		1.3
+is_target_of_coup	<bool>
+Boolean.	
+is_target_of_coup = yes
+Checks if the current scope is the target of a coup.		1.0
+has_civil_war	<bool>
+Boolean.	
+has_civil_war = yes
+Checks if the current scope has a civil war active.		1.0
+civilwar_target	<scope>
+The target country.	
+civilwar_target = GER
+Checks if the specified country is a target of a civil war.		1.0
+has_manpower_for_recruit_change_to	value = <float>
+The amount to check for.
+group = <group>
+The group to check for.
+
+has_manpower_for_recruit_change_to = {
+    value > 0.05
+    group = mobilization_laws
+}
+Checks if the current scope has the specified amount of manpower for changing the specified idea group.	Must use either > or < operators as = operator checks for the exact value	1.0
+has_country_leader	id = <int>
+The id to check for. Optional.
+name = <string>
+The name to check for. Optional.
+ruling_only = yes
+Limit check to ruling only.
+
+has_country_leader = {
+    id = 10
+}
+has_country_leader = {
+    name = "John Smith"
+    ruling_only = yes
+}
+Checks if the current scope has the specified country leader.		1.3
+has_rule	<string>
+The rule to check for.	
+has_rule = {
+    can_create_factions
+}
+Checks if the current scope has the specified country rule.		1.6
+建筑
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+<building>	<building> = <int>
+The amount of the specified building to to check for.	
+arms_factory > 10
+Checks if the current scope has the specified amount of the specified building.	Must use either > or < operators.	1.0
+num_of_military_factories	<int>
+The amount to check for.	
+num_of_military_factories > 10
+Checks if the current scope has the specified amount of military factories.	Must use either > or < operators.	1.0
+num_of_civilian_factories	<int>
+The amount to check for.	
+num_of_civilian_factories > 10
+Checks if the current scope has the specified amount of civilian factories.	Must use either > or < operators.	1.0
+num_of_naval_factories	<int>
+The amount to check for.	
+num_of_naval_factories > 10
+Checks if the current scope has the specified amount of dockyards.	Must use either > or < operators.	1.0
+num_of_available_military_factories	<int>
+The amount to check for.	
+num_of_available_military_factories > 10
+Checks if the current scope has the specified amount of available military factories.	Must use either > or < operators.	1.0
+num_of_available_civilian_factories	<int>
+The amount to check for.	
+num_of_available_civilian_factories > 10
+Checks if the current scope has the specified amount of available civilian factories.	Must use either > or < operators.	1.0
+num_of_available_naval_factories	<int>
+The amount to check for.	
+num_of_available_naval_factories > 10
+Checks if the current scope has the specified amount of available dockyards.	Must use either > or < operators.	1.0
+num_of_factories	<int>
+The amount to check for.	
+num_of_factories > 10
+Checks if the current scope has the specified amount of military, civilian or dockyard factories.	Must use either > or < operators.	1.0
+num_of_civilian_factories_available_for_projects	<int>
+The amount to check for.	
+num_of_civilian_factories_available_for_projects > 10
+Checks if the current scope has the specified amount of civilian factories usable for projects.	Must use either > or < operators.	1.5
+ic_ratio	tag = <scope>
+The country to check.
+ratio = <float>
+The ratio to check for.
+
+ic_ratio = {
+    tag = GER
+    ratio > 0.5
+}
+Checks if the current scope has the specified ratio of factories with the target country.	Must use either > or < operators for ratio.	1.0
+has_damaged_buildings	<bool>
+Boolean.	
+has_damaged_buildings = yes
+Checks if the current scope has any damanged buildings in their states.		1.0
+has_built	type = <building>
+The building to check for.
+value = <int>
+The amount to check for.
+
+has_built = {
+    type = arms_factory
+    value > 10
+}
+Checks if the current scope has built the specified building the specified number of times.	Must use either > or < operators for value.	1.0
+科技
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_tech	<string>
+The technology to check for.	
+has_tech = my_technology
+Checks if the current scope has the specified technology.		1.0
+is_researching_technology	<string>
+The technology to check for.	
+is_researching_technology = my_tech
+Checks if the current scope is currently researching the specified technology.		1.0
+can_research	<string>
+The technology to check for.	
+can_research = my_tech
+Checks if the current scope can start researching the specified technology.		1.0
+original_research_slots	<int>
+The amount to check for.	
+original_research_slots > 3
+Checks if the current scope had the specified amount of slots at game start.	Must use either > or < operators.	1.0
+amount_research_slots	<int>
+The amount to check for.	
+amount_research_slots > 3
+Checks if the current scope has the specified amount of research slots.	Must use either > or < operators.	1.3
+is_in_tech_sharing_group	<string>
+The group to check for.	
+is_in_tech_sharing_group = us_research
+Checks if the current scope is in the specified technology sharing group.		1.3
+num_tech_sharing_groups	<int>
+The amount to check for.	
+num_tech_sharing_groups > 3
+Checks if the current scope is in the specified amount of technology sharing groups.	Must use either > or < operators.	1.3
+has_tech_bonus	technology = <string>
+The technology to check for. Optional.
+category = <string>
+The category to check for. Optional.
+has_tech_bonus = {
+    technology = my_tech
+has_tech_bonus = {
+    category = my_category
+}
+Checks if the current scope has a technology bonus in the specified category, or for the specific technology.		1.3
+land_doctrine_level	<int>
+The amount to check for.	
+land_doctrine_level > 2
+Checks if the current scope has the specified amount of land doctrine technologies.	Must use either > or < operators.	1.0
+国家精神
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_idea	<string>
+The idea to check for.	
+has_idea = my_idea
+Checks if the current scope has the specified idea.	
+has_idea_with_trait	<string>
+The trait to check for.	
+has_idea_with_trait = my_trait
+Checks if the current scope has any ideas with the specified trait.		1.0
+has_available_idea_with_traits	idea = <string>
+The trait to check for.
+limit = <int>
+The amount to check for.
+
+has_available_idea_with_traits = {
+    idea = my_trait
+    limit = 1
+}
+Checks if the current scope has the specified amount of ideas with the specified trait.		1.0
+amount_taken_ideas	amount = <int>
+The amount to check for.
+slots = { <string> }
+The slot type.
+
+amount_taken_ideas = {
+    amount > 3
+    slots = {
+        political_advisor
+    }
+}
+Checks if the current scope has the specified amount of ideas of the specified slot type.	Slots types are found in /Hearts of Iron IV/common/idea_tags/*.txt.	1.0
+外交
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+is_major	<bool>
+Boolean.	
+is_major = yes
+Checks if the current scope is considered a Major.		1.0
+is_in_faction_with	<scope> / <variable>
+The country to check for.	
+is_in_faction_with = GER
+is_in_faction_with = var:country
+Checks if the current scope is in a faction with the specified country.		1.0
+is_in_faction	<bool>
+Boolean.	
+is_in_faction = yes
+Checks if the current scope is in a faction.		1.0
+is_faction_leader	<bool>
+Boolean.	
+is_faction_leader = yes
+Checks if the current scope is the leader of a faction.		1.0
+num_faction_members	<int>
+The amount to check for.	
+num_faction_members > 1
+Checks if the faction of the current scope has the specified amount of members.	Must use either > or < operators.	1.0
+has_non_aggression_pact_with	<scope> / <variable>
+The country to check for.	
+has_non_aggression_pact_with = GER
+Checks if the current scope has a non-aggression pact with the specified country.		1.0
+is_guaranteed_by	<scope> / <variable>
+The country to check for.	
+is_guaranteed_by = GER
+Checks if the current scope has been guaranteed by the specified country.		1.0
+has_guaranteed	<scope> / <variable>
+The country to check for.	
+has_guaranteed = GER
+Checks if the current scope has guaranteed the specified country.		1.0
+has_military_access_to	<scope> / <variable>
+The country to check for.	
+has_military_access_to = GER
+Checks if the current scope has military access to the specified country.		1.0
+gives_military_access_to	<scope> / <variable>
+The country to check for.	
+gives_military_access_to = GER
+Checks if the current scope gives military to the specified country.		1.0
+is_neighbor_of	<scope> / <variable>
+The country to check for.	
+is_neighbor_of = GER
+Checks if the current scope is a neighbor of the specified country.		1.0
+is_owner_neighbor_of	<scope> / <variable>
+The country to check for.	
+is_owner_neighbor_of = GER
+Checks if the current scope is a neighbor of the specified country with their core territory only.		1.0
+is_puppet_of(被某国傀儡）	<scope> / <variable>
+指向傀儡该国的国家	
+is_puppet_of = GER
+Checks if the current scope is a puppet of the specified country.		1.0
+is_subject_of	<scope> / <variable>
+The country to check for.	
+is_subject_of = GER
+Checks if the current scope is a subject of the specified scope.		1.0
+is_puppet(是否被傀儡）	<bool>
+Boolean.	
+is_puppet = yes
+Returns true if the current country has an autonomy level with is_puppet = yes, false otherwise.		1.0
+is_subject	<bool>
+Boolean.	
+is_subject = yes
+Checks if the current scope is a subject.		1.0
+num_subjects	<int>
+The amount to check for.	
+num_subjects > 3
+Checks if the current scope has the specified amount of subjects.	Must use either > or < operators.	1.3
+has_autonomy_state	<string>
+The autonomy state to check for.	
+has_autonomy_state = autonomy_dominion
+Checks if the current scope is in the specified autonomous state.		1.0
+compare_autonomy_state	<string>
+The autonomy state to check for.	
+compare_autonomy_state > autonomy_dominion
+Checks if the current scope autonomy state is less or greater than the specified autonomy state.	Must use either > or < operators.	1.0
+compare_autonomy_progress_ratio	<float>
+The amount to check for.	
+compare_autonomy_progress_ratio > 0.5
+Checks if the current scope autonomy progress is at the specified ratio.	Must use either > or < operators.	1.3
+has_opinion_modifier	<string>
+The opinion modifier to check for.	
+has_opinion_modifier = my_modifier
+Checks if the current scope has the specified opinion modifier.		1.0
+has_opinion	target = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+has_opinion = {
+    target = GER
+    value = 100
+}
+Checks if the current scope has the specified opinion with the specified country.	Must use either > or < operators.	1.0
+has_relation_modifier	target = <scope>
+The country to check for.
+modifier = <modifier>
+The modifier to check for.
+
+has_relation_modifier = {
+    target = GER
+    modifier = my_modifier
+}
+Checks if the current scope has the specified relation modifier with the specified country.		1.0
+all_allied_country	triggers	
+all_allied_country = {
+    has_stability > 0.8
+}
+Returns true if THIS is in a faction where all other countries fulfill the sub-triggers; false otherwise. Evaluation stops early if any ally fails the check.	Within the trigger PREV is the country doing the check and THIS is the ally.	
+any_allied_country	triggers	
+any_allied_country = {
+    has_stability > 0.8
+}
+Returns true if THIS is in a faction where at least one other country fulfills the sub-triggers; false otherwise. Evaluation stops early if any ally passes the check.	Within the trigger PREV is the country doing the check and THIS is the ally.	
+any_neighbor_country	triggers	
+any_neighbor_country = {
+    has_stability > 0.8
+}
+Returns true if at least one other country that controls a province adjacent to a province controlled by THIS fulfills the sub-triggers; false otherwise. Evaluation stops early if any neighbor passes the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor.	
+all_neighbor_country	triggers	
+all_neighbor_country = {
+    has_stability > 0.8
+}
+Returns false if any other country that controls a province adjacent to a province controlled by THIS fails the sub-triggers; true otherwise. Evaluation stops early if any neighbor fails the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor. The list of neighbor countries is pre-calculated.	
+any_home_area_neighbor_country	triggers	
+any_home_area_neighbor_country = {
+    has_stability > 0.8
+}
+Returns true if THIS has a home area and at least one country controlling an adjacent area to it fulfills the sub-triggers; false otherwise. The home area is the largest contiguous area controlled by THIS that contains at least one province of its capital state. Evaluation stops early if any neighbor passes the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor.	
+战争
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_war	<bool>
+Boolean.	
+has_war = yes
+如果国家为战争状态该条件为真		1.0
+has_war_with	<scope> / <variable>
+The country to check for.	
+has_war_with = GER
+has_war_with = var:country
+如果国家与参数的国家互相战争则该条件为真		1.0
+has_civil_war	<bool>
+Boolean.	
+has_civil_war = no
+如果国家为内战状态该条件为真		
+has_offensive_war_with	<scope> / <variable>
+The country to check for.	
+has_offensive_war_with = GER
+Checks if the current scope is in an offensive war against the specified country.		1.0
+has_defensive_war_with	<scope> / <variable>
+The country to check for.	
+Checks if the current scope is in an defensive war against the specified country.		1.0
+has_offensive_war	<bool>
+Boolean.	
+has_offensive_war = yes
+Checks if the current scope is in an offensive war.		1.0
+has_defensive_war	<bool>
+Boolean.	
+has_defensive_war = yes
+Checks if the current scope is in a defensive war.		1.0
+has_war_together_with	<scope> / <variable>
+The country to check for.	
+has_war_together_with = GER
+Checks if the current scope is in a war alongside the specified country.		1.0
+surrender_progress	<float> / <variable>
+The amount to check for.	
+surrender_progress > 0.1
+Checks if the current scope has the specified amount of surrender progress.	Must use either > or < operators.	1.0
+any_war_score	<float>
+The amount to check for.	
+any_war_score > 10
+Checks if the current scope has the specified amount of war progress (not war participation)[1] in any war.	Must use either > or < operators.	1.0
+has_capitulated	<bool>
+Boolean.	
+has_capitulated = yes
+Checks if the current scope has capitulated.		1.0
+has_border_war_with	<scope> / <variable>
+The country to check for.	
+has_border_war_with = GER
+Checks if the current scope has a border war with the specified country.		1.5
+has_border_war_between	attacker = <scope> / <variable>
+The state to check for.
+defender = <scope> / <variable>
+The state to check for.
+
+has_border_war_between = {
+    attacker = 1
+    defender = 2
+}
+Checks if their is a border war between the two specified states.		1.5
+has_border_war	<bool>
+Boolean.	
+has_border_war = yes
+Checks if the current scope has a border war active.		1.5
+has_added_tension_amount	<float> / <variable>
+The amount to check for.	
+has_added_tension_amount = 10
+Checks if the current scope has caused the specified amount of World Tension.	Must use either > or < operators.	1.0
+has_wargoal_against	<scope> / <variable>
+The country to check for.	
+has_wargoal_against = GER
+Checks if the current scope has any wargoal against the specified country.		1.0
+has_wargoal_against	target = <scope> / <variable>
+The country to check for.
+type = <string>
+The type of wargoal to check for.
+
+has_wargoal_against = {
+    target = FROM
+    type = take_state
+}
+Checks if the current scope has a specific wargoal type against the specified country.		1.8
+is_justifying_wargoal_against	<scope> / <variable>
+The country to check for.	
+is_justifying_wargoal_against = GER
+Checks if the current scope is justifying a wargoal against the specified country.		1.0
+has_annex_war_goal	<scope> / <variable>
+The country to check for.	
+has_annex_war_goal = GER
+Checks if the current scope has the Annex wargoal against the specified country.		1.0
+any_claim	<bool>
+Boolean.	
+any_claim = yes
+Checks if the current scope has any claims on another country.		1.0
+is_in_peace_conference	<bool>
+Boolean.	
+is_in_peace_conference = yes
+Checks if the current scope is in a Peace Conference.		1.0
+any_enemy_country	triggers	
+any_enemy_country = {
+    has_stability > 0.8
+}
+Returns true if any country is at war with THIS, exists, and fulfills the sub-triggers; false otherwise. Evaluation stops at the first true sub-trigger.	Within the trigger PREV is the country doing the check and THIS is the enemy.	
+all_enemy_country	triggers	
+all_enemy_country = {
+    has_stability > 0.8
+}
+Returns false if any country is at war with THIS, exists, and fails the sub-triggers; true otherwise. Evaluation stops at the first false sub-trigger.	Within the trigger PREV is the country doing the check and THIS is the enemy.	
+地区
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+controls_state(控制省份）	<scope> / <variable>
+当前国家是否控制某个省份	
+controls_state = 39
+controls_state = var:state
+检查当前作用域是否对指定的省份有控制权。		1.0
+owns_state	<scope> / <variable>
+The state to check for.	
+owns_state = 39
+Checks if the current scope owns the specified state.		1.0
+num_of_controlled_states	<int>
+The amount to check for.	
+num_of_controlled_states = 5
+Checks if the current scope has the specified amount of controlled states.	Must use either > or < operators.	1.0
+num_occupied_states	<int>
+The amount to check for.	
+num_occupied_states = 5
+Checks if the current scope has the specified amount of occupied states.	Must use either > or < operators.	1.0
+has_full_control_of_state	<scope> / <variable>
+The state to check for.	
+has_full_control_of_state = 39
+Checks if the current scope has control and ownership of the specified state.		1.3
+has_resources_amount	resource = <string>
+The resource to check for.
+amount = <int>
+The amount to check for.
+state = <scope>
+The estate to check for. Defaults to the current state in a state scope.
+
+has_resources_amount = {
+    resource = oil
+    amount > 10
+    state = 49
+}
+Checks if the specified state has the specified amount of the specified resource.	Must use either > or < operators for amount.	1.3
+any_owned_state	triggers (state scope)	
+any_owned_state = {
+    is_coastal = yes
+}
+Returns true if at least one state controlled by THIS passes the sub-triggers; false otherwise. Evaluation stops early when a state passes the check.	The sub-triggers are evaluated with a state scope for each owned state.	
+all_owned_state	triggers (state scope)	
+all_owned_state = {
+    is_controlled_by = ROOT
+}
+Returns false if any state controlled by THIS fails the sub-triggers; true otherwise. Evaluation stops early when a state fails the check.	The sub-triggers are evaluated with a state scope for each owned state.	
+军事
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_army_experience	<float> / <variable>
+The amount to check for.	
+has_army_experience = 10
+has_army_experience = var:number
+Checks if the current scope has the specified amount of Army experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_air_experience	<float> / <variable>
+The amount to check for.	
+has_air_experience = 10
+Checks if the current scope has the specified amount of Air experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_navy_experience	<float> / <variable>
+The amount to check for.	
+has_navy_experience = 10
+Checks if the current scope has the specified amount of Navy experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_unit_leader	<int>
+The id to check for.	
+has_unit_leader = 1
+Checks if the current scope has a unit leader with the specified id.		1.0
+has_manpower	<float> / <variable>
+The amount to check for.	
+has_manpower = 1000
+Checks if the current scope has the specified amount of manpower.	Must use either > or < operators as = operator checks for the exact value	1.0
+has_army_manpower	size = <int>
+The amount to check for.	
+has_army_manpower = {
+    size > 1000
+Checks if the current scope has an army using the specified amount of manpower.	Must use either > or < operators.	1.0
+manpower_per_military_factory	<float>
+The amount to check for.	
+manpower_per_military_factory > 1000
+Checks if the current scope has the specified manpower times their number of military factories.	Must use either > or < operators.	1.0
+num_divisions	<int>
+The amount to check for.	
+num_divisions > 5
+Checks if the current scope has the specified amount of divisions.	Must use either > or < operators.	1.3
+num_of_nukes	<int>
+The amount to check for.	
+num_of_nukes > 5
+Checks if the current scope has the specified amount of nukes.	Must use either > or < operators.	1.0
+casualties	<int>
+The amount to check for.	
+casualties > 10000
+Checks if the current scope has suffered the specified amount of casualties.	Must use either > or < operators.	1.0
+amount_manpower_in_deployment_queue	<float>
+The amount to check for.	
+amount_manpower_in_deployment_queue > 1000
+Checks if the current scope has the specified amount of manpower in their deployment queue.	Must use either > or < operators.	1.5
+has_attache_from	<scope> / <variable>
+The country to check for.	
+has_attache_from = GER
+Checks if the current scope has an attache from the specified scope.		1.5
+has_attache	<bool>
+Boolean.	
+has_attache = yes
+Checks if the current scope has an attache.		1.5
+is_lend_leasing	<scope> / <variable>
+The country to check for.	
+is_lend_leasing = GER
+Checks if the current scope is lend leasing to the specified scope.		1.0
+has_template	<string>
+The name of the template.	
+has_template = "Infantry Division"
+Checks if the current scope has a division template of the specified name.		1.0
+has_template_majority_unit	<string>
+The unit to check for.	
+has_template_majority_unit = infantry
+Checks if the current scope has a division template composed mostly of the specified unit.		1.0
+has_template_containing_unit	<string>
+The name of the unit.	
+has_template_containing_unit = light_armor
+Checks if the current scope has a division template contained any of the specified unit.		1.0
+strength_ratio	tag = <scope>
+The country to check for.
+ratio = <float>
+The ratio to check for.
+
+strength_ratio = {
+    tag = GER
+    ratio > 1
+}
+Checks if the current scope has the specified strength ratio against the specified country. The ratio is the number of fielded divisions of the current scope divided by those of tag (or 1 if tag has no divisions). The ratio gets increased by 10% if the current scope has a stronger air forces.[2]	Any comparison operator after ratio other than > gets interpreted as <.	1.0
+naval_strength_ratio	tag = <scope>
+The country to check for.
+ratio = <float>
+The ratio to check for.
+
+naval_strength_ratio = {
+    tag = GER
+    ratio = 1
+}
+Checks if the current scope has the specified naval strength ratio against the specified country.		1.0
+alliance_strength_ratio	<float> / <variable>
+The ratio to check for.	
+alliance_strength_ratio > 0.5
+Checks if the current scope and allies has an army strength higher than the specified ratio against estimated enemy strength.	Must use either > or < operators.	1.0
+alliance_naval_strength_ratio	<float> / <variable>
+The ratio to check for.	
+alliance_naval_strength_ratio > 0.5
+Checks if the current scope and allies has an naval strength ratio higher than the specified ratio against estimated enemy strength.	Must use either > or < operators.	1.0
+enemies_strength_ratio	<float> / <variable>
+The ratio to check for.	
+enemies_strength_ratio > 0.5
+Checks if the estimated enemy army strength ratio is higher than the specified ratio.	Must use either > or < operators.	1.0
+enemies_naval_strength_ratio	<float> / <variable>
+The ratio to check for.	
+enemies_naval_strength_ratio > 0.5
+Checks if the estimated enemy naval strength ratio is higher than the specified ratio.	Must use either > or < operators.	1.0
+has_army_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_army_size = {
+    size > 10
+    type = armor
+}
+Checks if the current scope has the specified number of divisions, or of a specified type of division.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.0
+has_navy_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_navy_size = {
+    size > 10
+    type = capital_ship
+}
+Checks if the current scope has the specified number of ships, or of a specified type of ship.	Types:
+submarine
+screen_ship
+capital_ship
+carrier
+Must use either > or < operators for size.
+
+1.0
+has_deployed_air_force_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_deployed_air_force_size = {
+    size > 10
+    type = cas
+}
+Checks if the current scope has the specified number of aircraft, or of a specified type of aircraft.	Types:
+fighter
+cas
+naval_bomber
+interceptor
+suicide
+tactical_bomber
+strategic_bomber
+air_transport
+missile
+Must use either > or < operators for size.
+
+1.0
+divisions_in_state	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+
+divisions_in_state = {
+    type = infantry
+    size > 10
+    state = 49
+}
+Checks if the specified state contains the specified amount of divisions.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.0
+divisions_in_border_state	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+border_state = <scope> / <variable>
+The border state to check in.
+
+divisions_in_border_state = {
+    type = infantry
+    size > 10
+    state = 49
+    border_state = var:state
+}
+Checks if the border provinces between the specified state and border state contain the specified amount of divisions.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.5
+ships_in_state_ports	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+ships_in_state_ports = {
+    type = capital_ship
+    size > 10
+    state = 49
+}
+Checks if the specified state contains the specified amount of ships, or of ships of the specified type.	Types:
+submarine
+screen_ship
+capital_ship
+carrier
+Must use either > or < operators for size.
+
+1.0
+has_volunteers_amount_from	tag = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+has_volunteers_amount_from = {
+    tag = GER
+    count > 10
+}
+Checks if the current scope has recieved volunteers from the specified country of the specified amounts.	Must use either > or < operators for count.	1.0
+estimated_intel_max_piercing	tag = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+estimated_intel_max_piercing = {
+    tag = GER
+    value > 0.5
+}
+Checks if the specified scope has the specified amount of piercing based on the current scope's intel.	Must use either > or < operators for value.	1.0
+estimated_intel_max_armor	tag = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+estimated_intel_max_armor = {
+    tag = GER
+    value > 0.5
+}
+Checks if the specified scope has the specified amount of armor based on the current scope's intel.	Must use either > or < operators for value.	1.0
+装备
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+stockpile_ratio	archetype = <string>
+The equipment archetype to check for.
+ratio = <float>
+The ratio of equipment to check for.
+
+stockpile_ratio = {
+    archetype = infantry_equipment
+    ratio > 0.5
+}
+Checks if the current scope has stockpiled the specified equipment to the specified ratio against fielded equipment of the same type.	Must use either > or < operators for ratio.
+For the convoy equipment which is not fielded as other equipments, ratio shall be not a percentage but a direct amount (for instance 256 convoys)	1.5
+has_equipment	<equipment> = <int> / <variable>
+The equipment to check for, and the amount to check for.	
+has_equipment = {
+    infantry_equipment_1 > 10
+}
+Checks if the current scope has the specified equipment to the specified amount.	Must use either > or < operators.	1.0
+has_any_license	<bool>
+Boolean.	
+has_any_license = yes
+Checks if the current scope has any licenses from other countries.		1.0
+is_licensing_any_to	<scope>
+The country to check for.	
+is_licensing_any_to = GER
+Checks if the current scope is licensing to the specified scope.		1.0
+is_licensing_to	target = <scope>
+The country to check for.
+archetype = <string>
+The equipment archetype to check for. Optional.
+Equipment scope
+type = <string>
+The equipment to check for. Optional.
+version = <int>
+The variant id of the equipment. Optional.
+
+is_licensing_to = {
+    target = GER
+    archetype = infantry_equipment
+}
+is_licensing_to = {
+    target = GER
+    equipment = {
+        type = light_tank_equipment
+        version = 1
+    }
+}
+Checks if the current scope is licensing the specified equipment to the specified country.		1.0
+has_license	from = <scope>
+The country to check for.
+archetype = <string>
+The equipment archetype to check for. Optional.
+Equipment scope
+type = <string>
+The equipment to check for. Optional.
+version = <int>
+The variant id of the equipment. Optional.
+
+has_license = {
+    from = GER
+    archetype = infantry_equipment
+}
+has_license = {
+    from = GER
+    equipment = {
+        type = light_tank_equipment
+        version = 1
+    }
+}
+Checks if the current scope has a license for the specified equipment from the specified country.		1.0
+AI
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+ai_irrationality	<int>
+The amount to check for.	
+ai_irrationality > 10
+Checks if the current scope AI has the specified irrationality.	Must use either > or < operators.	1.0
+ai_liberate_desire	target = <scope>
+The country to check for.
+count = <float>
+The amount to check for.
+
+ai_liberate_desire = {
+    target = GER
+    count > 1
+}
+Checks if the current scope AI has the specified liberation desire towards the specified country.	Must use either > or < operators for count.	1.0
+ai_has_role_division	<string>
+The role to check for.	
+ai_has_role_division = infantry
+Checks if the current scope AI has a division with the specified role.	Roles are defined in /Hearts of Iron IV/common/ai_templates/*.txt	1.0
+ai_has_role_template	<string>
+The role to check for.	
+ai_has_role_template = armor
+Checks if the current scope AI has a division template with the specified role.	Roles are defined in /Hearts of Iron IV/common/ai_templates/*.txt	1.0
+ai_wants_divisions	<int>
+The amount to check for.	
+ai_wants_divisions > 10
+Checks if the current scope AI desires the specified amount of divisions.	Must use either > or < operators.	1.0
+has_template_ai_majority_unit	<string>
+The unit to check for.	
+has_template_ai_majority_unit = infantry
+Checks if the current scope AI has a division template mostly made up of the specified unit.		1.0
+地区作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in state scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+state	<scope> / <variable>
+The state to check for.	
+state = 10
+state = var:state
+Checks if the current scope is the specified state.		1.0
+region	<int>
+The strategic region id to check for.	
+region = 10
+Checks if the current scope is a state in the specified strategic region.		1.0
+area	<int>
+The supply area id to check for.	
+area = 6
+Checks if the current scope is a state in the specified supply area.		1.0
+has_state_flag	<string>
+The flag to check for.	
+has_state_flag = my_flag
+Checks if the current scope has the specified flag.		1.0
+has_state_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_state_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+<building>	<building> = <int>
+The amount of the specified building to to check for.	
+arms_factory > 10
+Checks if the current scope has the specified amount of the specified building.	Must use either > or < operators.	1.0
+state_population	<float>
+The amount to check for.	
+state_population > 10000
+Checks if the current scope has the specified state population.	Must use either > or < operators.	1.0
+is_capital	<bool>
+Boolean.	
+is_capital = yes
+Checks if the current scope is a capital.		1.5
+is_controlled_by	<scope> / <variable>
+The country to check for.	
+is_controlled_by = GER
+Checks if the current scope is controlled by the specified country.		1.0
+is_fully_controlled_by	<scope> / <variable>
+The country to check for.	
+is_fully_controlled_by = GER
+Checks if the current scope is fully controlled by the specified country.		1.5
+is_owned_by	<scope> / <variable>
+The country to check for.	
+is_owned_by = GER
+Checks if the current scope is owned by the specified country.		1.0
+is_claimed_by	<scope> / <variable>
+The country to check for.	
+is_claimed_by = GER
+Checks if the current scope is claimed by the specified country.		1.0
+is_core_of	<scope> / <variable>
+The country to check for.	
+is_core_of = GER
+Checks if the current scope is a core of the specified country.		1.0
+is_owned_and_controlled_by	<scope> / <variable>
+The country to check for.	
+is_owned_and_controlled_by = GER
+Checks if the current scope is owned and controlled by the specified country.		1.0
+is_demilitarized_zone	<bool>
+Boolean.	
+is_demilitarized_zone = yes
+Checks if the current scope is a demilitarized zone.		1.0
+is_border_conflict	<bool>
+Boolean.	
+is_border_conflict = yes
+Checks if the current scope is part of a border war.		1.0
+is_in_home_area	<bool>
+Boolean.	
+is_in_home_area = yes
+Checks if the current scope is connected to the capital state over land.		1.0
+is_coastal	<bool>
+Boolean.	
+is_coastal = yes
+Checks if the current scope is a coastal state.		1.0
+is_island_state	<bool>
+Boolean.	
+is_island_state = yes
+Checks if the current scope is a coastal state with no adjacent land states.		1.0
+is_on_continent	<string>
+The continent to check for.	
+is_on_continent = europe
+Checks if the current scope is on the specified continent.	Continents are found in /Hearts of Iron IV/map/continent.txt.	1.0
+has_state_category	<string>
+The category to check for.	
+has_state_category = rural
+Checks if the current scope has the specified category.	State categories are found in /Hearts of Iron IV/common/state_category/*.txt.	1.0
+state_strategic_value	<int>
+The amount to check for.	
+state_strategic_value > 10
+Checks if the current scope has the specified strategic value.	Must use either > or < operators.	1.5
+state_and_terrain_strategic_value	<int>
+The amount to check for.	
+state_and_terrain_strategic_value > 10
+Checks if the current scope has the specified state and terrain strategic value.	Must use either > or < operators.	1.5
+free_building_slots	building = <string>
+The building to check for.
+size = <int>
+The amount to check for.
+include_locked = <bool>
+Whether to include locked slots.
+
+free_building_slots = {
+    building = arms_factory
+    size > 10
+    include_locked = yes
+}
+Checks if the current scope has available slots for the specified amount of buildings.	Must use either > or < operators for size.	1.0
+any_province_building_level	building = <string>
+The building to check for.
+limit = <int>
+The amount to check for.
+Province scope
+id = <int>
+The province to check for.
+limit_to_border = <bool>
+Whether to limit check to border provinces.
+
+any_province_building_level = {
+    province = {
+        id = 445
+        id = 494
+        limit_to_border = yes
+    }
+    building = bunker
+    level < 5
+}
+Checks if the current scope has the specified provincal building at the specified amount in the specified provinces.	Must use either > or < operators for level.	1.0
+num_owned_neighbour_states	owner = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+num_owned_neighbour_states = {
+    owner = GER
+    count = 2
+}
+Checks if the current scope has the specified amount of neighbor states belonging to the specified country.	Must use either > or < operators for count.	1.0
+has_claimed_state_in_peace_conference	<scope> / <variable>
+The country to check for.	
+has_claimed_state_in_peace_conference = GER
+Checks if the current scope has been claimed by the specified country in a peace conference.		1.0
+num_claimed_peace_conference_neighbour_states	owner = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+num_claimed_peace_conference_neighbour_states = {
+    owner = GER
+    count > 2
+}
+Checks if the current scope has the specified amount of neighbor states claimed by the specified country in a peace conference.	Must use either > or < operators for count.	1.0
+distance_to	distance = <float>
+The distance to check for.
+state = <scope>
+The state to compare against.
+
+distance_to = {
+    value > 1000
+    target = 49
+}
+Checks if the current scope is at the specified distance from the specified state.	Must use either > or < operators for distance.	1.0
+ships_in_area	area = <int>
+The strategic region to check for.
+size = <int>
+The amount to check for.
+
+Checks if the current scope has the specified amount of ships in the specified strategic region.	Must use either > or < operators for count.	1.0
+any_neighbor_state	triggers	
+any_neighbor_state = { is_coastal = yes }
+Returns true if THIS has at least one adjacent state that fulfills the sub-triggers; false otherwise. Evaluation stops early if any neighbor passes the check.		
+all_neighbor_state	triggers	
+all_neighbor_state = { is_coastal = yes }
+Returns false if THIS has no adjacent states or at least one of them fails the sub-triggers; true otherwise. Evaluation stops early if any neighbor fails the check.		
+部队将领作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in unit leader scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_id	<int>
+The id to check for.	
+has_id = 1
+Checks if the current scope has the specificed unit leader id.		1.5
+has_unit_leader_flag	<string>
+The flag to check for.	
+has_unit_leader_flag = my_flag
+Checks if the current scope has the specified flag.		1.5
+has_unit_leader_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_unit_leader_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+is_leading_army	<bool>
+Boolean.	
+is_leading_army = yes
+Checks if the current scope is leading a single army.		1.5
+is_leading_army_group	<bool>
+Boolean.	
+is_leading_army_group = yes
+Checks if the current scope is leading an army group.		1.5
+is_field_marshal	<bool>
+Boolean.	
+is_field_marshal = yes
+Checks if the current scope is a Field Marshal.		1.5
+is_assigned	<bool>
+Boolean.	
+is_assigned = yes
+Checks if the current scope is an assigned unit leader.		1.5
+has_trait	<string>
+The trait to check for.	
+has_trait = offensive_doctrine
+Checks if the current scope has the specified trait.		1.5
+can_select_trait	<string>
+The trait to check for.	
+can_select_trait = offensive_doctrine
+Checks if the current scope can select the specified trait.		1.5
+has_ability	<string>
+The ability to check for.	
+has_ability = glider_planes
+Checks if the current scope has the specified unit leader ability.		1.5
+skill	<int>
+The amount to check for.	
+skill > 1
+Checks if the current scope has a Skill above the specified amount.	Must use either > or < operators.	1.0
+skill_advantage	<int>
+The amount to check for.	
+skill_advantage > 1
+Checks if the current scope has a Skill advantage above the specified amount in against an enemy unit leader whilst in combat.	Must use either > or < operators.	1.0
+planning_skill_level	<int>
+The amount to check for.	
+planning_skill_level > 1
+Checks if the current scope has a Planning skill above the specified amount.	Must use either > or < operators.	1.5
+logistics_skill_level	<int>
+The amount to check for.	
+logistics_skill_level > 1
+Checks if the current scope has a Logistics skill above the specified amount.	Must use either > or < operators.	1.5
+defense_skill_level	<int>
+The amount to check for.	
+defense_skill_level > 1
+Checks if the current scope has a Defense skill above the specified amount.	Must use either > or < operators.	1.5
+attack_skill_level	<int>
+The amount to check for.	
+attack_skill_level > 1
+Checks if the current scope has a Attack skill above the specified amount.	Must use either > or < operators.	1.5
+average_stats	<int>
+The amount to check for.	
+average_stats > 5
+Checks if the current scope has an average skill above the specified amount.	Must use either > or < operators.	1.5
+is_border_war	<bool>
+Boolean.	
+is_border_war = yes
+Checks if the current socpe is in a border war.		1.5
+num_units	<int>
+The amount to check for.	
+num_units > 5
+Checks if the current scope is commanding the specified amount of divisions.	Must use either > or < operators.	1.5
+战斗
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+These triggers only work in special unit leader combat scopes, i.e. Combat Tactics.
+
+They should not be used in the regular unit leader scopes.
+
+Name	Parameters	Examples	Description	Notes	Version Added
+hardness	<float>
+The amount to check for.	
+hardness > 0.5
+Checks if the current scope has the specified amount of hardness.	Must use either > or < operators.	1.0
+armor	<float>
+The amount to check for.	
+armor > 0.5
+Checks if the current scope has the specified amount of armor units.	Must use either > or < operators.	1.0
+dig_in	<float>
+The amount to check for.	
+dig_in > 0.5
+Checks if the current scope has the specified amount of Dig In bonus.	Must use either > or < operators.	1.0
+min_planning	<float>
+The amount to check for.	
+min_planning > 0.5
+Checks if the current scope has the specified amount of planning.	Must use either > or < operators.	1.0
+fastest_unit	<float>
+The speed in km/h to check for.	
+fastest_unit > 12
+Checks if the current scope has a unit with the specified speed.	Must use either > or < operators.	1.0
+temperature	<float>
+The temperature in celsius to check for.	
+temperature > 20
+Checks if the current scope is in a province with a temperature above the specified amount.	Must use either > or < operators.	1.0
+reserves	<float>
+The amount to check for.	
+reserves > 10
+Checks if the current scope has the specified amount of reserves waiting.	Must use either > or < operators.	1.0
+has_cavalry_ratio	<float>
+The ratio to check for.	
+has_cavalry_ratio > 0.5
+Checks if the current scope has the specified ratio of cavalry in their division composition.	Must use either > or < operators.	1.0
+has_combat_modifier	<string>
+The modifier to check for.	
+has_combat_modifier = river_crossing
+Checks if the current scope has the specified combat modifier.		1.0
+is_fighting_in_terrain	<string>
+The terrain to check for.	
+is_fighting_in_terrain = desert
+Checks if the current scope is fighting in the specified terrain.		1.0
+phase	<bool>
+Boolean.	
+phase = yes
+Checks if the current scope is in phase.		1.0
+recon_advantage	<bool>
+Boolean.	
+recon_advantage = yes
+Checks if the current scope has a recon advantage.		1.0
+night	<bool>
+Boolean.	
+night = yes
+Checks if the current scope is fighting at night.		1.0
+frontage_full	<bool>
+Boolean.	
+frontage_full = yes
+Checks if the current scope has a full combat width.		1.0
+has_flanked_opponent	<bool>
+Boolean.	
+has_flanked_opponent = yes
+Checks if the current scope has flanked their opponent.		1.0
+has_max_planning	<bool>
+Boolean.	
+has_max_planning = yes
+Checks if the current scope has the maximum planning bonus.		1.0
+has_reserves	<bool>
+Boolean.	
+has_reserves = yes
+Checks if the current scope has any reserves waiting.		1.0
+is_amphibious_invasion	<bool>
+Boolean.	
+is_amphibious_invasion = yes
+Checks if the current scope is performing an amphibious invasion.		1.0
+is_attacker	<bool>
+Boolean.	
+is_attacker = yes
+Checks if the current scope is attacking.		1.0
+is_defender	<bool>
+Boolean.	
+is_defender = yes
+Checks if the current scope is defending.		1.0
+is_winning	<bool>
+Boolean.	
+is_winning = yes
+Checks if the current scope is winning their battle.		1.0
+is_fighting_air_units	<bool>
+Boolean.	
+is_fighting_air_units = yes
+Checks if the current scope is fighting air units.		1.0
+less_combat_width_than_opponent	<bool>
+Boolean.	
+less_combat_width_than_opponent = yes
+Checks if the current scope is fighting with less combat width than their opponent.		1.0
+has_carrier_airwings_on_mission	<bool>
+Boolean.	
+has_carrier_airwings_on_mission = yes
+Checks if the current scope has carrier airwings on a mission.		1.0
+has_carrier_airwings_in_own_combat	<bool>
+Boolean.	
+has_carrier_airwings_in_own_combat = yes
+Checks if the current scope has carrier airwings in their own combat.		1.0
+变量
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in country, state or unit leader scopes.
+
+Name	Parameters	Examples	Description	Notes	Version Added
+has_variable	<variable>
+The variable to check.	
+has_variable = my_var
+Checks if the specified variables exists for the current scope.		1.5
+check_variable	var = <variable>
+The variable to check.
+value = <float> / <variable>
+The value to check for.
+compare = <type>
+The type of comparison. Optional, can use < or > instead.
+
+check_variable = {
+    var = my_var
+    value = 10
+    compare = greater_than_or_equals
+}
+check_variable = {
+    my_var > 10
+}
+Check the specified variable for the current scope.	Possible compare types:
+less_than
+less_than_or_equals
+greater_than
+greater_than_or_equals
+equals
+not_equals
+1.5
+print_variables	print_global = <bool>
+Print global variables. Defaults to no.
+var_list = <list>
+The variables to print. Defaults to all variables.
+file = <string>The file path to log to. Defaults to "variable_dump".
+text = <string>Text to prepend. Defaults to "No Header".
+append = <bool>Whether to append to the file instead of overwrite. Defaults to yes
+
+print_variables = {
+    var_list = { myvar1 myvar2 }
+    file = "my_dump_file"
+    text = "my header"
+}
+Dumps the specified variables from the current scope and optionally the global scope into logs/variable_dumps/<file>.log. Evaluates to true.	See Variables#Debugging	
+Remember that variables need to refer to the scope they were set in. This means you can't check a country variable in a state scope without scoping the variable.
+
+For example, to get the country variable whilst in a state scope, you'd do the following:
+
+<country> = {
+    <state> = {
+        limit = {
+            check_variable = { from.my_country_var > 0.0 }
+        }
+    }
+}
+See Variables for more information.
+
+运算符
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+There are two extra operators for triggers, > (greater than) and < (less than).
+
+They are used for numerical or date triggers, and provide an exclusive check for their value. This means a trigger using them will return true if the result is any number below (or above).
+
+Note that equals in Hearts of Iron 4 only checks for exact equality, i.e. x = y, whereas in previous games it checks for equals or greater than, i.e. x >= y.
+
+Context scopes
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+There are three general scopes all triggers operate in:
+
+country
+state
+unit leader
+They give context to a trigger by stating what the trigger is checking against.
+
+Each country acts as a sub-scope of the general country scope, i.e. GER = { } will check only against Germany, whereas any_country will check against all countries. Likewise for states and unit leaders.
+
+The important lesson here is that triggers for one type of scope will not work in the other scopes generally (there are exceptions).

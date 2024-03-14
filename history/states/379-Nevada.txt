@@ -14,13 +14,19 @@ state={
 
 	history={
 		owner = USA
+		victory_points = {
+			10422 2
+		}
+		victory_points = {
+			4607 1
+		}
+
 		buildings = {
 			infrastructure = 2
 		}
 		add_core_of = USA
 		add_core_of = MXS
 	}
-
 	provinces={
 		1862 4521 4607 4736 4816 7756 7827 7879 10422 10591 12134 12399
 	}

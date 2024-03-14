@@ -211,7 +211,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Henry suzzallo"
-	desc = "POLITICS_John_Nance_Garner_IV_DESC"
+	desc = "POLITICS_John_Nance_Garner_III_DESC"
 	picture = GFX_portrait_Henry_suzzallo
 	expire = "1965.1.1"
 	ideology = federalism

@@ -25,6 +25,9 @@ ideas = {
 				experience_gain_factor = -0.5
 				army_chief_cost_factor = 0.5
 				TRADE_OPINION_FACTOR = 0.1
+				custom_modifier_tooltip =  USA_West_Point_Accord_tt
+
+
 	    	}
     	}
 	#石油幻影，钢铁梦魇
@@ -33,10 +36,10 @@ ideas = {
 	    	allowed = { always = yes }
 	    	modifier = {
 				stability_factor = -0.15
-				CONSCRIPTION_FACTOR = -0.01
+				CONSCRIPTION_FACTOR = -0.2
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.5
 				production_speed_infrastructure_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
@@ -47,11 +50,8 @@ ideas = {
 			picture = GFX_idea_USA_kuangyezhidi
 			allowed = { always = yes }
 			modifier = {				
-				production_speed_arms_factory_factor = -0.1
-				trade_laws_cost_factor = 1
-				production_speed_buildings_factor = 0.1
-				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0.05
-				PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = 0.1
+				stability_factor = -0.1
+				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
 		#不死的信托
@@ -59,8 +59,20 @@ ideas = {
 			picture = GFX_idea_USA_busidexintuo
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.1
-				custom_modifier_tooltip = USA_2_tt
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.5
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				
 			}
 		}
 		#秩序重构-骑士
@@ -78,7 +90,7 @@ ideas = {
 			picture = GFX_idea_USA_dazhanzhimo
 			allowed = { always = yes }
 			modifier = {
-				custom_modifier_tooltip = USA_3_tt
+				custom_modifier_tooltip = USA_dazhanzhimo_tt
 			}
 		}
 	#英法资本优势控股	
@@ -160,7 +172,7 @@ ideas = {
 		USA_MartialLawA = {
 			allowed = { always = yes }
 			modifier = {
-			monthly_population = 0.1
+			stability_factor = -0.1
 			army_infantry_defence_factor = 0.2
 			}
 		}

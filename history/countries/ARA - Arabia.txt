@@ -69,7 +69,7 @@ if = {
 
 
 
-set_research_slots = 3
+set_research_slots = 2
 set_convoys = 50
 set_stability = 0.75
 
@@ -154,9 +154,9 @@ add_ideas = {
 
 
 create_country_leader = {
-	name = "Ibn Saud"
+	name = "Sharif Hussein"
 	desc = ""
-	picture = "aykue-7btyh.dds"
+	picture = "Sharif_Hussein_portrait.dds"
 	expire = "1965.1.1"
 	ideology = soltanism
 	traits = {

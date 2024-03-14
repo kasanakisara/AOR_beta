@@ -13,15 +13,28 @@ state={
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 2
-			industrial_complex = 1
+			industrial_complex = 3
+			fuel_silo = 1
 
 		}
 		add_core_of = USA
 		victory_points = {
-			6855 5 
+			6855 10
 		}
 		victory_points = {
-			6890 10 
+			6890 20
+		}
+		victory_points = {
+			831 5
+		}
+		victory_points = {
+			4601 7
+		}
+		victory_points = {
+			689 7
+		}
+		victory_points = {
+			6874 3
 		}
 		1939.1.1 = {
 			buildings = {

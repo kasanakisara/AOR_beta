@@ -12,7 +12,9 @@ set_technology = {
 	fuel_silos = 1
 }
 
-
+add_ideas = {
+ BOL_the_Andes
+	}
 set_country_flag = monroe_doctrine
 
 1939.1.1 = {
@@ -75,7 +77,10 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 100
+	FRE_democratic = 32
+	AUT_democratic = 19
+	CON_democratic = 39
+	Absolutism = 10
 }
 
 create_country_leader = {

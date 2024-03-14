@@ -86,7 +86,7 @@ units = {
 	}
 	division= {	
 		name = "第3边防旅"
-		location = 5107 # Salta
+		location = 2150 # Salta
 		division_template = "边防旅"
 		start_experience_factor = 0.25
 		start_equipment_factor = 0.6
@@ -94,7 +94,7 @@ units = {
 	}
 	division= {	
 		name = "第4边防旅"
-		location = 5168 # Salta
+		location = 12933 # Salta
 		division_template = "边防旅"
 		start_experience_factor = 0.25
 		start_equipment_factor = 0.6

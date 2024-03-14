@@ -93,9 +93,12 @@ set_popularities = {
 }
 
 add_ideas = {
+	PAL_Arab_Resistance
 }
 
-
+set_research_slots = 2
+set_convoys = 30
+set_stability = 0.5
 create_country_leader = {
 	name = "League of Nations"
 	desc = ""

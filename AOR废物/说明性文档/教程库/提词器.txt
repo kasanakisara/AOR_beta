@@ -1,0 +1,4717 @@
+set_global_flag	<flag>
+An unique string to identify the global flag with.	set_global_flag = my_flag	定义一个全球Flag		1.0
+clr_global_flag	<flag>
+The unique string of a global flag to clear.	clr_global_flag = my_flag	清除一个全球Flag		1.0
+modify_global_flag	flag = <flag>
+The global flag to modify.
+value = <value>
+The value to set it to: 0 or 1
+modify_global_flag = {
+    flag = my_flag
+    value = 1
+}
+industrial_capacity_factory
+工业产值
+修改一个全球Flag	推荐使用 变量	1.0
+custom_effect_tooltip	<string>
+作为提示文字的本地化文本	custom_effect_tooltip = my_tooltip_tt	在效果提示文字内显示本地化文本		1.0
+log	<string>
+显示在game.log里的文本	log = "myVariable: [?myVariable]"	当运行指令时将这行文本写入game.log	允许所有的本地化命令 (比如[Root.GetName]等)	1.5
+save_event_target_as	<string>
+An unique string to identify the event target with.	
+capital_scope = {
+    save_event_target_as = my_state
+}
+Saves the current scope as a key. Is cleared once execution ends (i.e. end of event).	Use event_target:<key> to access the scope.
+Do not use in Scripted GUIs.	1.0
+save_global_event_target_as	<string>
+An unique string to identify the global event target with.	
+random_other_country = {
+    save_global_event_target_as = my_country
+}
+Saves the current scope as a key. Persists after execution until cleared via effect.	Use event_target:<key> to access the scope.
+Do not use in Scripted GUIs.	1.0
+clear_global_event_target	<string>
+The unique string of the global event target to clear.	clear_global_event_target = my_country	Clears a specific global event target.		1.0
+clear_global_event_targets	yes
+Boolean.	clear_global_event_targets = yes	Clears all global event targets.		1.0
+break	None	break	停止执行当前作用域内的指令		1.0
+sound_effect	<string>
+A sound reference from an .asset file.	sound_effect = "boom"	Plays the specified sound once.		1.0
+randomize_weather	<int>
+一个随机数种子(整数）	randomize_weather = 12345	以特定的随机数种子随机生成天气		1.0
+set_province_name	id = <id>
+要重命名的胜利点ID
+name = <string>
+胜利点所要改成的名字
+
+set_province_name = {
+    id = 325
+    name = "Funland"
+}
+把某个胜利点的名字改为特定名字		1.3
+reset_province_name	<id>
+要复位的胜利点名字	
+reset_province_name = 325
+重设特定胜利点的名字		1.3
+goto_province	<id>
+要移动到的地块	
+goto_province = 325
+把视角移到特定地块		1.0
+goto_state	<scope> / <variable>
+要移动到的省份	
+goto_state = 1
+goto_state = var:some_state
+把视角移到特定省份		1.0
+change_tag_from	<scope> / <variable>
+要切换到的国家.
+GER = { change_tag_from = ROOT }
+GER = { change_tag_from = var:from.country }
+从当前国家切换到目标国家游玩	注意：等号后面的是当前国家，指令前的作用域为目标国家	1.0
+add_region_efficiency					1.5
+边境冲突
+Name	Parameters	Examples	Description	Notes	Version Added
+start_border_war(发起边境冲突）	change_state_after_war = <bool>
+在边境冲突结束后，该省份是否易手
+
+进攻方作用域
+state = <id> / <variable>
+发起边境冲突的省份 .
+num_provinces = <id>
+指定进攻方投入当前省份下的多少地块的部队发起边境冲突 .
+on_win = <id>
+进攻方胜利所触发的事件 .
+on_lose = <id>
+进攻方失败所触发的事件 .
+on_cancel= <id>
+进攻方与对方陷入僵持时所触发的事件
+
+防守方作用域
+state = <id> / <variable>
+因边境冲突而受到攻击的省份.
+num_provinces = <id>
+指定防守方投入当前省份下的多少地块的部队发起边境冲突.
+on_win = <id>
+防守方胜利所触发的事件
+on_lose = <id>
+防守方失败所触发的事件.
+on_cancel= <id>
+防守方与对方陷入僵持时所触发的事件	
+start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 527
+        num_provinces = 4
+        on_win = japan_border_conflict.2
+        on_lose = japan_border_conflict.3
+        on_cancel = japan_border_conflict.4
+    }
+				
+    defender = {
+        state = 408
+        num_provinces = 4
+        on_win = japan_border_conflict.3
+        on_lose = japan_border_conflict.2
+        on_cancel = japan_border_conflict.4
+    }
+}
+指定一场边境冲突中的进攻方和防御方，且双方都是冲突区域省份的拥有者	 	1.5
+set_border_war_data	attacker = <id> / <variable>
+攻击方发起进攻的省份
+defender = <id> / <variable>
+防守方进行防御的省份
+attacker_modifier = <id> / <variable>
+应用于进攻方军队的修正
+defender_modifier = <id> / <variable>
+应用于防守方军队的修正
+combat_width = <id> / <variable>
+边境冲突的战场宽度
+
+set_border_war_data = {
+    attacker = 527
+    defender = 408
+    defender_modifier = 0.15
+    combat_width = 100
+}
+设置双方的攻守加成或惩罚修正，在发起边境冲突后使用。	 	1.5
+cancel_border_war	attacker = <id> / <variable>
+攻击方发起进攻的省份
+defender = <id> / <variable>
+防守方进行防御的省份
+dont_fire_events = <bool>
+不触发start_border_war中有关的事件
+
+cancel_border_war = {
+    dont_fire_events = yes
+    defender = 408
+    attacker = 527
+}
+取消当前的边境冲突而且没有胜者	 	1.5
+finalize_border_war	attacker = <id> / <variable>
+攻击方发起进攻的省份
+defender = <id> / <variable>
+防守方进行防御的省份
+attacker_win = <bool>
+让进攻方获胜
+defender_win = <bool>
+让防守方获胜
+
+finalize_border_war = {
+    attacker_win = yes
+    attacker = 527
+    defender = 408
+}
+结束一场边境冲突	 	1.5
+国家作用域
+下列的指令必须在“国家”作用域使用
+
+整体
+Name	Parameters	Examples	Description	Notes	Version Added
+set_country_flag	<flag>
+An unique string to identify the country flag with.	set_country_flag = my_flag	定义一个国家Flag	 	1.0
+clr_country_flag	<flag>
+The unique string of a country flag to clear.	clr_country_flag = my_flag	清除一个国家Flag	 	1.0
+modify_country_flag	flag = <flag>
+要修改的国家Flag
+value = <value>
+要设置的值，只能是0或1
+
+modify_country_flag = {
+    flag = my_flag
+    value = 1
+}
+修改一个国家Flag	推荐使用 变量	1.3
+country_event	id = <event>
+要触发的事件
+days = <event> / <variable>
+在特定的天数内触发事件(可选）
+hours = <event> / <variable>
+在特定的小时内触发事件(可选）
+random = <event>
+Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
+
+country_event = {
+    id = my_event.1
+    days = 10
+    random = 50
+}
+对特定国家触发事件	Where triggers do not need to be repeatedly checked random can be a performance light alternative to mean_time_to_happen for scheduling events.	1.0
+news_event	id = <event>
+要触发的新闻事件
+days = <event> / <variable>
+在特定的天数内触发事件(可选）
+hours = <event> / <variable>
+在特定的天数内触发事件(可选）
+random = <event>
+Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
+
+news_event = {
+    id = my_event.1
+    days = 10
+    random = 50
+}
+对特定国家触发新闻事件	新闻事件和普通事件所显示的界面不同
+Where triggers do not need to be repeatedly checked random can be a performance light alternative to mean_time_to_happen for scheduling events.
+
+1.0
+set_cosmetic_tag(设置显示动态Tag）	<string>
+设置一个动态Tag以更改旗帜、国名(注意：此代码无法改变国家初始tag，只会更改其显示）	
+set_cosmetic_tag = SAF_SOV_communism
+Makes the current scope use the specified cosmetic tag, changing name and flag.	 	1.3
+drop_cosmetic_tag	<bool>
+Boolean.	
+drop_cosmetic_tag = yes
+Makes the current scope drop the current cosmetic tag they are using.	 	1.3
+set_rule	<rule>
+Boolean.	
+set_rule = {
+    can_create_factions = yes
+}
+为当前作用域应用特定的游戏规则	Possible rules:
+can_be_called_to_war
+can_boost_other_ideologies
+can_create_factions
+can_declare_war_on_same_ideology
+can_declare_war_without_wargoal_when_in_war
+can_decline_call_to_war
+can_force_government
+can_generate_female_aces
+can_guarantee_other_ideologies
+can_join_factions
+can_join_factions_not_allowed_diplomacy
+can_join_opposite_factions
+can_lower_tension
+can_not_declare_war
+can_occupy_non_war
+can_only_justify_war_on_threat_country
+can_use_kamikaze_pilots
+units_deployed_to_overlord (subjects only)
+1.0
+地区
+load_focus_tree = french_focus
+Name	Parameters	Examples	Description	Notes	Version Added
+add_state_core	<scope> / <variable>
+添加省份核心	
+add_state_core = 345
+为当前作用域添加省份核心	 	1.0
+remove_state_core	<scope> / <variable>
+移除省份核心	
+remove_state_core = 345
+移除当前作用域的省份核心	 	1.0
+set_capital	<scope> / <variable>
+将指定省份设置为首都	
+set_capital = 345
+将特定的省份设置为当前作用域的首都	 	1.0
+add_state_claim	<scope> / <variable>
+对当前省份添加领土宣称	
+add_state_claim = 345
+添加当前作用域对省份的领土宣称	 	1.0
+remove_state_claim	<scope> / <variable>
+移除当前省份的领土宣称	
+remove_state_claim = 345
+移除当前作用域对省份的领土宣称	 	1.0
+set_state_owner	<scope> / <variable>
+设置省份的拥有者	
+set_state_owner = 345
+将当前作用域设置为省份的拥有者	 	1.0
+set_state_controller	<scope> / <variable>
+设置省份的实际控制者	
+set_state_controller = 345
+将当前作用域设置为省份的实际控制者	 	1.0
+transfer_state	<scope> / <variable>
+改变省份的拥有者和实际控制者	
+transfer_state = 345
+将当前作用域设置为省份的拥有者和实际控制者	 	1.0
+set_province_controller	<id>
+设置地块的实际控制者	
+set_province_controller = 2999
+将当前作用域设置为地块的实际控制者(仅在战时可用）	 	1.0
+政治力量
+Name	Parameters	Examples	Description	Notes	Version Added
+add_political_power	<int> / <variable>
+数量	
+add_political_power = 100
+add_political_power = var:my_var
+为当前作用域增加特定数量的政治点数	 	1.0
+set_political_power	<int> / <variable>
+数量	
+set_political_power = 100
+为当前作用域设定特定数量的政治点数	 	1.0
+add_stability	<int> / <variable>
+数量	
+add_stability = 0.1
+为当前作用域增加特定数量的稳定度	稳定度的值在0到1之间	1.5
+set_stability	<int> / <variable>
+The amount to add.	
+set_stability = 0.5
+为当前作用域设定特定数量的稳定度	稳定度的值在0到1之间	1.5
+add_war_support	<int> / <variable>
+The amount to add.	
+add_war_support = 0.1
+为当前作用域增加特定数量的战争支持度	战争支持度的值在0到1之间	1.5
+set_war_support	<int> / <variable>
+The amount to set.	
+set_war_support = 0.5
+为当前作用域设定特定数量的战争支持度	战争支持度的值在0到1之间	1.5
+add_command_power	<int> / <variable>
+The amount to add.	
+add_command_power = 100
+为当前作用域增加特定数量的指挥点数	 	1.5
+政治
+Name	Parameters	Examples	Description	Notes	Version Added
+kill_ideology_leader	<ideology>
+意识形态	
+kill_ideology_leader = communism
+杀死当前作用域下特定意识形态的领袖	 	1.9
+retire_ideology_leader	<ideology>
+意识形态	
+retire_ideology_leader = fascism
+移除当前作用域下特定意识形态的领袖并使其退休	 	1.9
+kill_country_leader	<bool>
+Boolean.	
+kill_country_leader = yes
+杀死当前作用域的国家元首	 	1.0
+retire_country_leader	<bool>
+Boolean.	
+retire_country_leader = yes
+移除当前作用域的国家元首并使其退休	 	1.0
+set_country_leader_ideology	<government>
+The government to set.	
+set_country_leader_ideology = socialism
+改变国家元首所属的党派(实际上是更改意识形态）	 	1.0
+add_country_leader_trait	<trait>
+The trait to add.	
+add_country_leader_trait = nationalist_symbol
+为当前作用域的国家元首添加特性	特性参见 /Hearts of Iron IV/common/country_leader/*.txt.	1.0
+remove_country_leader_trait	<trait>
+The trait to remove.	
+remove_country_leader_trait = nationalist_symbol
+移除当前作用域的国家元首的特性	特性参见 /Hearts of Iron IV/common/country_leader/*.txt.	1.0
+hold_election	<scope>
+The country to hold an election for.	
+hold_election = ROOT
+为当前作用域执行在on_new_term_election内的事件(在On Actions文件里）	 	1.0
+add_popularity(更改支持率）	ideology = <ideology>
+指定需更改支持率的党派意识形态
+popularity = <int> / <variable>
+该党派支持率变更的具体数值
+
+add_popularity = {
+    ideology = fascism
+    popularity = -0.5
+}
+在当前作用域里修改党派的支持率	Values used are 0 to 1.	1.0
+set_politics	ruling_party = <ideology>
+The party to set.
+elections_allowed = <bool>
+Whether elections are allowed. Optional.
+last_election = <date>
+When the last election was. Optional.
+election_frequency = <int>
+How often in months an election occurs. Optional.
+set_politics = {
+	ruling_party = neutrality
+}
+Sets the political party setup for the current scope.	 
+Previously included the "parties" parameter, which has been deprecated by the "set_popularities" command. The "parties" parameter no longer works as of version 1.7
+
+1.0 (Updated 1.7)
+set_popularities	<ideology> = <int>/<variable>
+The popularity to set.	
+set_popularities = {
+	democratic = 50
+	neutrality = 15
+	fascism = 30
+	communism = 5
+}
+Sets the political party popularities for the current scope.	 
+The popularities must add up to 100, otherwise the command will have no effect.
+
+1.7
+set_political_party	ideology = <ideology>
+The party to change.
+popularity = <int>
+The amount of popularity to set.
+
+set_political_party = {
+    ideology = fascism
+    popularity = 50
+}
+Sets the popularity for the specified political party in the current scope.	 	1.0
+set_party_name(设置党派名称）	ideology = <ideology>
+指定更改名称的党派
+long_name = <string>
+指定党派更改名称的全名 
+name = <string>
+指定党派更改名称的简称
+
+set_party_name = { 
+    ideology = neutrality 
+    long_name = GER_neutrality_party_kaiserreich_long 
+    name = GER_neutrality_party_kaiserreich 
+}
+Changes the name of the specified political party for the current scope.	 	1.0
+create_country_leader	name = <string>
+The name of the leader.
+desc = <string>
+The description of the leader.
+picture = <string>
+The graphical reference to the leader portrait.
+expire = <string>
+When the leader dies in history.
+ideology = <string>
+The ideology government the leader belongs to.
+Traits scope
+<trait>
+The trait to add. Can add multiple.
+
+create_country_leader = {
+	name = "Mohammed Zahir Shah"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+ 	The portrait string can include the full path (i.e. gfx/leaders/my_folder/custom_pic.dds) or just the name of the image (i.e. custom_pic.dds).
+With just the name, the image must be in a folder that matches the tag of the current scope, for example /Hearts of Iron IV/gfx/leaders/GER/custom_pic.dds.
+
+1.0
+外交
+Name	Parameters	Examples	Description	Notes	Version Added
+set_major	<bool>
+Boolean.	
+set_major = yes
+使当前作用域成为主要国家	 	1.0
+create_faction	<string>
+The name of the faction.	
+create_faction = MY_FACTION_NAME
+Creates a faction with the specified name for the current scope. The current scope and any subjects automatically join the faction.	 	1.0
+add_to_faction	<TAG>
+The TAG of the nation to add to the faction of the current scope.	
+FACTION_LEADER_TAG = { add_to_faction = TAG_TO_ADD }
+Adds the TAG_TO_ADD to the faction of the FACTION_LEADER_TAG.	 	1.0
+leave_faction	<bool>
+Boolean.	
+leave_faction = yes
+Removes the current scope from the faction they are part of.	 	1.5
+remove_from_faction	<string>
+The name of the faction.	
+remove_from_faction = MY_FACTION_NAME
+Removes the current scope from the specified faction.	 	1.0
+dismantle_faction	<bool>
+Boolean.	
+dismantle_faction = yes
+Dismantles the faction of the current scope.	 	1.0
+puppet	<scope>
+The target country.	
+puppet = GER
+Makes the specified country the puppet of the current scope.	 	1.0
+end_puppet	<scope>
+The target country.	
+end_puppet = GER
+Removes the puppet status between the target and the current scope.	 	1.0
+release	<scope>
+The target country.	
+release = GER
+Releases the specified subject or core-only country as a free nation.	 	1.0
+release_puppet	<scope>
+The target country.	
+release_puppet = GER
+Releases the specified subject or core-only country as a puppet for the current scope.	 	1.0
+give_guarantee	<scope>
+The target country.	
+give_guarantee = GER
+Makes the current scope guarantee the specified country.	 	1.0
+give_military_access	<scope>
+The target country.	
+give_military_access = GER
+Makes the specified country grant the current scope military access to their country.	 	1.0
+recall_attache	<scope>
+The target country with an attache.	
+recall_attache = GER
+Recalls the current scope's attache from the specified country.	 	1.5
+diplomatic_relation	country = <scope>
+The target country to alter the relationship with ROOT.
+relation = <type>
+The relation to change.
+active = <bool>
+Whether the relation is started or broken.
+
+diplomatic_relation = {
+    country = SOV
+    relation = guarantee
+    active = no
+}
+Used to define a diplomatic relation between the current scope and target scope country.	Possible relations:
+non_aggression_pact
+guarantee
+puppet
+military_access
+docking_rights
+1.0
+add_opinion_modifier	target = <scope>
+The target country.
+modifier = <modifier>
+The opinion modifier to add.
+
+add_opinion_modifier = {
+    target = GER
+    modifier = faction_traitor
+}
+Adds the specified opinion modifier for the current scope towards the specified scope.	Opinion modifiers are found in /Hearts of Iron IV/common/opinion_modifiers/*.txt.	1.0
+remove_opinion_modifier	target = <scope>
+The target country.
+modifier = <modifier>
+The opinion modifier to remove.
+
+remove_opinion_modifier = {
+    target = GER
+    modifier = faction_traitor
+}
+Removes the specified opinion modifier for the current scope towards the specified scope.	Opinion modifiers are found in /Hearts of Iron IV/common/opinion_modifiers/*.txt.	1.0
+reverse_add_opinion_modifier	target = <scope>
+The target country.
+modifier = <modifier>
+The opinion modifier to add.
+
+reverse_add_opinion_modifier = {
+    target = GER
+    modifier = faction_traitor
+}
+Adds the specified opinion modifier for the specified scope towards the current scope.	Opinion modifiers are found in /Hearts of Iron IV/common/opinion_modifiers/*.txt.	1.0
+add_relation_modifier	target = <scope>
+The target country.
+modifier = <modifier>
+The relation modifier to add.
+
+add_relation_modifier = {
+    target = SWE
+    modifier = HUN_dynastic_ties_license
+}
+Adds the specified relation modifier for the current scope towards the specified scope.	Relation modifiers are found in /Hearts of Iron IV/common/modifiers/*.txt.	1.4
+remove_relation_modifier	target = <scope>
+The target country.
+modifier = <modifier>
+The relation modifier to remove.
+
+remove_relation_modifier = {
+    target = SWE
+    modifier = HUN_dynastic_ties_license
+}
+Removes the specified relation modifier for the current scope towards the specified scope.	Relation modifiers are found in /Hearts of Iron IV/common/modifiers/*.txt.	1.4
+附属国
+Name	Parameters	Examples	Description	Notes	Version Added
+add_autonomy_ratio	value = <float>
+The freedom score to add.
+localization = <string>
+The localization key for the modifier.
+
+add_autonomy_ratio = {
+    value = 0.1
+    localization = AST_adopt_westminster
+}
+Adds a freedom score ratio modifier to the current scope.	Used in the subject.	1.3
+add_autonomy_score	value = <float>
+The freedom score to add.
+localization = <string>
+The localization key for the modifier.
+
+add_autonomy_ratio = {
+    value = 10
+    localization = EXAMPLE
+}
+Adds an exact freedom score modifier to the current scope.	Used in the subject.	1.3
+set_autonomy	target = <scope> / <variable>
+The subject country.
+autonomy_state = <type>
+The type of autonomy state to set.
+freedom_level = <float>
+The new freedom level value. Optional.
+
+set_autonomy = {
+    target = AST
+    autonomy_state = autonomy_free
+}
+Sets the autonomy level for the specified country.	The autonomy states are found in /Hearts of Iron IV/common/autonomous_states/*.txt.	1.3
+release_autonomy	target = <scope> / <variable>
+The subject country.
+autonomy_state = <type>
+The type of autonomy state to set.
+freedom_level = <float>
+The new freedom level value. Optional.
+
+release_autonomy = {
+    target = VIN
+    autonomy_state = autonomy_puppet
+    freedom_level = 0.5
+}
+Releases the country and sets the autonomy level for the specified country.	The autonomy states are found in /Hearts of Iron IV/common/autonomous_states/*.txt.	1.3
+战争
+Name	Parameters	Examples	Description	Notes	Version Added
+add_threat	<int>
+The amount to change by.	
+add_threat = 10
+调整全球紧张度	 	1.0
+add_named_threat	threat = <int>
+The amount to change by.
+name = <string>
+The localization string.
+
+add_named_threat = { 
+    threat = 5 
+    name = GER_rhineland
+}
+Adjusts the level of World Tension and adds an entry in the World Tension tooltip.	 	1.0
+annex_country	target = <scope>
+Which country to annex.
+transfer_troops = yes
+Whether to transfer the troops of the annexed country.
+
+annex_country = {
+    target = GER
+    transfer_troops = yes
+}
+Annex the specified country for the current scope.	 	1.0
+add_to_war	targeted_alliance = <scope>
+The country to assist.
+enemy = <scope>
+The country attacking the ally.
+hostility_reason = <string>
+Localization for the reason for joining. Optional.
+
+add_to_war = { 
+    targeted_alliance = PREV 
+    enemy = HUN 
+    hostility_reason = asked_to_join
+}
+Adds the current scope into the war of their ally against the specified enemy.	 	1.0
+declare_war_on	target = <scope> / <variable>
+The country to attack.
+type = <wargoal>
+The wargoal to declare with.
+
+declare_war_on = {
+    target = GER
+    type = annex_everything
+}
+Makes the current scope declare war on the specified country with the specified wargoal.	Wargoals are found in /Hearts of Iron IV/common/wargoals/*.txt.	1.0
+white_peace	<scope> / <variable>
+The scope to white peace.
+<message>
+The reason for peace.
+
+white_peace = GER
+white_peace = {
+    tag = GER
+    message = EXAMPLE
+}
+Makes the current scope white peace the specified scope.	 	1.0
+set_truce	target = <scope>
+The scope to truce with.
+days = <int>
+The duration of the truce.
+
+set_truce = {
+    target = GER
+    days = 90
+}
+Makes the current scope truce with the specified scope.	 	1.0
+create_wargoal(制造宣战借口）	target = <scope> / <variable>
+指定被制造宣战借口的国家
+type = <wargoal>
+指定制造的宣战借口类型，宣战借口类型在Hearts of Iron IV\common\wargoals\中(可通过该方式自定义宣战借口） 
+generator = { <state id> }
+The states to supply the wargoal (i.e. take_state_focus).
+
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ROOT
+}
+Grants the current scope a wargoal against the specified country.	 	1.0
+start_civil_war	ideology = <ideology>
+The ideology of the breakaway country.
+ruling_party = <ideology>
+The ruling party of the original country. Optional.
+size = <float>
+The size of the breakaway country and the fraction of the original stockpile and military units it will receive. Optional.
+capital = <state>
+The capital of the breakaway country. Optional.
+only_own_territory = <bool>
+Limits the breakaway country to only own territory. Optional.
+states = { <state> }
+The states included in the breakway country. Optional.
+states_filter = { <triggers> }
+Filters to apply to the state assignment for the breakaway country. Optional.
+keep_unit_leaders = { <unit leader id> }
+Keep the specified leaders. Optional.
+keep_unit_leaders_trigger = { <triggers>
+Keep the specified leaders that meet the triggers. Optional.
+
+start_civil_war = {
+    ruling_party = communism
+    ideology = ROOT
+    size = 0.8
+    only_own_territory = no
+    capital = 282
+    states = { 
+        282 533 536 555 529 530 528 
+    }
+    keep_unit_leaders = {
+        750 751 752
+    }
+}
+Starts a civil war for the current scope with the specified parameters.	 	1.0
+资源
+名字	参数	示例	描述	注释	添加
+版本
+
+add_resource	type = <resource>
+要添加的资源
+amount = <int>
+要添加资源的数量
+state = <id>要添加资源的地区。 可以使用变量
+
+add_resource = {
+    type = oil
+    amount = 50
+    state = 88
+}
+在特定地区添加特定数量的特定资源	 	1.0
+destroy_resource	type = <resource>
+要添加的资源
+amount = <int>
+要添加资源的数量
+state = <id>要添加资源的地区。 可以使用变量
+
+destroy_resource = {
+    type = oil
+    amount = 50
+    state = 88
+}
+在特定地区摧毁特定数量的特定资源	 	1.9
+create_import	resource = <resource>
+The resource to import.
+amount = <int>
+The amount of resource to import.
+exporter = <id>Which country exports the resource.
+
+create_import = {
+    resource = steel
+    amount = 100
+    exporter = GER
+}
+Creates an import for the current scope with the specified resource and from the specified exporter.	 	1.0
+建筑
+名字	参数	示例	描述	注释	添加
+版本
+
+add_offsite_building	type = <building>
+The building to add.
+level = <level> / <variable>
+The maximum level to add.
+
+add_offsite_building = { type = arms_factory level = 1 }
+Adds an off-map building for the current scope that produces its effects without being present in a state.	 	1.5
+modify_building_resources	building = <building>
+The building to modify.
+resource = <resource>
+The resource to add.
+amount = <amount>
+The amount of resource to add.
+
+modify_building_resources = {
+    building = synthetic_refinery
+    resource = oil
+    amount = 1
+}
+Modifies the resource output of the specified building for the current scope.	 	1.5
+国策
+名字	参数	示例	描述	注释	添加
+版本
+
+load_focus_tree	<string>
+加载某个指定国策树.
+Alternatively, as an effect block:
+tree = <string>
+keep_completed = yes/no	
+load_focus_tree = china_communist_focus
+
+load_focus_tree = { tree = british_focus keep_completed = yes }
+Loads a new focus tree for the current scope, retaining any shared focuses.	 	1.5
+unlock_national_focus	<focus>
+The focus to unlock.	
+unlock_national_focus = my_focus
+Bypasses the specified focus for the current scope (marks as complete without firing complete_effect of the focus).	 	1.0
+complete_national_focus	<focus>
+The focus to complete.	
+complete_national_focus = my_focus
+Completes the specified focus for the current scope.	 	1.0
+决议
+名字	参数	示例	描述	注释	添加
+版本
+
+activate_decision	<decision>
+The decision to activate.	
+activate_decision = my_decision
+Activates the specified decision for the current scope, ignoring triggers for the decision.	Decisions are found in /Hearts of Iron IV/common/decisions/*.txt	1.0
+activate_targeted_decision	target = <scope>
+The country to target.
+decision = <decision>
+The decision to activate.
+
+activate_targeted_decision = {
+    target = GER
+    decision = my_decision
+}
+Activates the specified targeted decision for the specified target for the current scope.	Decisions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+remove_targeted_decision	<decision>
+The decision to remove.	
+remove_targeted_decision = {
+    target = FROM
+    decision = my_decision
+}
+Removes the specified targeted decision for the current scope.	Decisions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+unlock_decision_tooltip	<decision>
+The decision to display.	
+unlock_decision_tooltip = my_decision
+Displays a special tooltip for the specified decision in the effect tooltip.	Decisions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+unlock_decision_category_tooltip	<category>
+The decision category to display.	
+unlock_decision_category_tooltip = my_category
+Displays a special tooltip for the specified decision category in the effect tooltip.	Decision categories are found in /Hearts of Iron IV/common/decisions/catergories/*.txt	1.5
+任务
+名字	参数	示例	描述	注释	添加
+版本
+
+activate_mission	<mission>
+The mission to activate.	
+activate_mission = my_mission
+Activates the specified mission for the current scope, ignoring any triggers for the decision.	Missions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+activate_mission_tooltip	<mission>
+The mission to display.	
+activate_mission_tooltip = my_mission
+Displays a special tooltip for the specified mission in the effect tooltip.	Missions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+remove_mission	<mission>
+The mission to remove.	
+remove_mission = my_mission
+Removes the specified mission for the current scope.	Missions are found in /Hearts of Iron IV/common/decisions/*.txt	1.5
+科技
+名字	参数	示例	描述	注释	添加
+版本
+
+add_research_slot	<int>
+The number of slots to add or remove.	
+add_research_slot = 1
+Adjusts the number of research slots the current scope has. Can remove slots.	 	1.0
+set_research_slots	<int>
+The number of slots to set.	
+set_research_slots = 4
+Sets the number of research slots the current scope has.	 	1.0
+add_tech_bonus	bonus = <float>
+The bonus to technology given.
+uses = <int>
+The amount of times the bonus can be used.
+ahead_reduction = <float>
+The cost reduction if ahead of time.
+category = <string>
+Which technology category the bonus applies to. Multiple can be defined.
+technology = <string>
+Which technology the bonus applies to. Multiple can be defined.
+
+add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = radar_tech
+}
+Grants a research bonus to the current scope with the specified parameters.	Research bonus categories are found in Hearts of Iron IV/common/technology_tags/*.txt	1.0
+set_technology	<technology> = <int>
+The technology to add.
+popup = no
+To not show the popup after adding technology	
+set_technology = {
+    suicide_craft = 1
+}
+Grants the specified technology to the current scope.	A value of 1 sets the technology. A value of 0 removes the technology, but if it is a researchable technology, the duration to research isn't reset, meaning it can be researched in 1 day.	1.0
+add_to_tech_sharing_group	<string>
+The group to add the current scope to.	
+add_to_tech_sharing_group = us_research
+Adds the current scope to the specified technology sharing group.	 	1.3
+remove_from_tech_sharing_group	<string>
+The group to remove the current scope from.	
+remove_from_tech_sharing_group = us_research
+Removes the current scope from the specified technology sharing group.	 	1.3
+modify_tech_sharing_bonus	id = <string>
+The group to modify.
+bonus = <float>
+The new bonus.
+
+modify_tech_sharing_bonus = {
+    id = us_research
+    bonus = 0.5
+}
+Modifies the specified technology sharing group.	 	1.3
+民族精神/内阁
+名字	参数	示例	描述	注释	添加
+版本
+
+add_ideas	<idea>
+需添加的民族精神/内阁成员	
+add_ideas = my_idea
+add_ideas = {
+    my_idea_1
+    my_idea_2
+}
+将指定民族精神添加到当前作用域。	可以在同效果内添加多个民族精神。	1.0
+add_timed_idea	idea = <idea>
+需添加的民族精神
+days = <int> / <variable>
+限时存在的天数
+
+add_timed_idea = {
+    idea = my_idea
+    days = 180
+}
+在指定作用域添加限时民族精神。	 	1.0
+modify_timed_idea	idea = <idea>
+需要修改的民族精神
+days = <int> / <variable>
+需要添加的时间量(天数）
+
+modify_timed_idea = {
+    idea = my_idea
+    days = 60
+}
+将限时民族精神的持续时间延长指定量。	 	1.0
+swap_ideas	add_idea = <idea>
+需添加的民族精神
+remove_idea = <idea>
+需移除的民族精神
+
+swap_ideas = {
+    remove_idea = my_idea_1
+    add_idea = my_idea_2
+}
+在被添加和移除的民族精神之间显示效果的更改内容和差异。	 	1.3
+remove_ideas	<idea>
+需移除的民族精神	
+remove_ideas = my_idea
+remove_ideas = {
+    my_idea_1
+    my_idea_2
+}
+将指定民族精神移除出当前作用域。	可以在同效果内移除多个民族精神。.	1.0
+remove_ideas_with_trait	<trait>
+The trait to target.	
+remove_ideas_with_trait = motorized_equipment_manufacturer
+Removes all ideas for the current scope that use the specified trait.	 	1.0
+show_ideas_tooltip	<idea>
+需要展示的民族精神	
+show_ideas_tooltip = my_idea
+在当前作用域中显示指定的民族精神，注意，这个效果并不添加民族精神。	 	1.0
+单位
+Name	Parameters	Examples	Description	Notes	Version Added
+load_oob(生成单位）	<oob>
+引入生成单位的指定文件，并通过该文件生成单位(生成单位的指定文件应放置于history\units文件夹中）	
+load_oob = "GER_default"
+Loads the specified OOB for the current scope, applying the effects within.	 	1.0
+division_template	name
+The name of the division.
+regiments = {
+    <unit> = { x = 0 y = 0 }
+}
+support = {
+    <unit> = { x = 0 y = 0 }
+}
+The composition of the division.
+
+division_template = {
+    name = "Test"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+    }
+    support = { 
+        military_police = { x = 0 y = 0 }
+    } 
+}
+Creates and adds the specified division template to the current scope.	The x and y attributes represent the rows and columns in the division designer.	1.0
+set_division_template_lock	division_template = <string>
+The name of the division template.
+is_locked = <bool>
+Whether the division is locked or not.
+
+set_division_template_lock = {
+    division_template = "Infantry Division"
+    is_locked = yes
+}
+Toggles the locked status on a division template for the current scope, which prevents editing or deletion.	 	1.5
+delete_unit_template_and_units	division_template = <string>
+The name of the division template.	
+delete_unit_template_and_units = {
+    division_template = "Infantry Division"
+    disband = yes #will refund equipment and manpower
+}
+Deletes the specified division template and all units using it for the current scope.	 	1.5
+delete_unit	state = <number id>
+The id number of the state.	
+ ENG = { delete_unit = { 
+            state = 787             
+             disband = yes #will refund equipment and manpower
+              }}
+Deletes all units within the specified state using the country scope.	 	1.5
+装备
+Name	Parameters	Examples	Description	Notes	Version Added
+set_equipment_fraction	<float> / <variable>
+The fraction of equipment to remove.	
+set_equipment_fraction = 0.5
+Reduces the overall equipment stockpile by the specified fraction.	This should not be used in civil wars to simulate stockpile splitting. start_civil_war now automatically divides stockpiles according to the respective size.	1.0
+add_equipment_to_stockpile	type = <equipment>
+The equipment to add. Can be archetype.
+amount = <int>
+The amount to add.
+producer = <scope>
+Defines who produced the equipment. Optional.
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 100
+    producer = GER
+}
+Adds the specified equipment to the current scope.	Note that removal will only remove equipment with the same producer defined in the effect.	1.0
+send_equipment	type = <equipment>
+The equipment to add. Can be archetype.
+amount = <int> / <variable>
+The amount to add.
+target = <scope> / <variable>
+Which country receives the equipment.
+
+send_equipment = {
+    equipment = infantry_equipment
+    amount = 100
+    target = GER
+}
+Sends the specified amount of equipment to the specified target, removing said equipment from the current scope.	 	1.0
+create_production_license	target = <scope>
+Which country receives the license.
+cost_factor = <float>
+Modifies the production cost.
+Equipment scope
+type = <equipment>
+The equipment the country is licensed to produce. Must be an non-archetype equipment.
+
+create_production_license = {
+    target = HUN
+    equipment = {
+        type = fighter_equipment_1
+    }
+    cost_factor = 0
+}
+Grants the specified country a licensed to produce the specified equipment from the current scope.	 	1.4
+create_equipment_variant	name = <string>
+The name of the variant
+type = <equipment>
+The equipment the variant is of.
+parent_version = <int>
+Ordering for multiple variants.
+Upgrade scope
+<upgrade> = <amount>
+The upgrades configuration for the variant.
+
+create_equipment_variant = { 
+    name = "Montecuccoli Class" 
+    type = light_cruiser_1 
+    upgrades = { 
+        ship_reliability_upgrade = 3 
+        ship_engine_upgrade = 3 
+        ship_gun_upgrade = 3 
+        ship_anti_air_upgrade = 3 
+    }
+}
+Creates the specified equipment variant for the current scope.	 	1.0
+add_equipment_production	amount = <int>
+The amount to produce. Optional.
+requested_factories = <int>
+
+The number of factories to assigned initially. Optional.
+progress = <float>
+The initial production progress. Optional.
+efficiency = <float>
+The initial production efficiency. Optional.
+Equipment scope
+type = <equipment>
+The name of the equipment to produce.
+creator = <scope>
+The country which is producing the equipment. Used if root scope isn't producer. Optional.
+version_name = <string>The name of the variant to produce. Optional.
+
+add_equipment_production = {
+    equipment = {
+        type = light_cruiser_2
+    }
+    requested_factories = 1
+    progress = 0.95
+    amount = 1
+}
+Starts a production line for the specified equipment for the current scope.	 	1.0
+陆军
+Name	Parameters	Examples	Description	Notes	Version Added
+add_manpower	<int> / <variable>
+The amount to add.	
+add_manpower = 100000
+add_manpower = var:my_var
+Adds the specified amount of manpower to the current scope.	 	1.0
+army_experience	<float> / <variable>
+The amount to add.	
+army_experience = 10
+Adds the specified amount of army experience to the current scope.	 	1.0
+create_corps_commander	name = <string>
+The name of the leader.
+picture = <string>
+The graphical reference of the picture of the leader.
+skill = <int>
+The skill of the leader.
+attack_skill = <int>
+The attack skill of the leader.
+defense_skill = <int>
+The defense skill of the leader.
+planning_skill = <int>
+The planning skill of the leader.
+logistics_skill = <int>
+The logistics skill of the leader.
+traits = { <trait> }
+The traits the leader spawns with.
+female = <bool>
+The gender of the leader.
+
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+Creates a commander for the current scope with the specified attributes.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.0
+create_field_marshal	name = <string>
+The name of the leader.
+picture = <string>
+The graphical reference of the picture of the leader.
+skill = <int>
+The skill of the leader.
+attack_skill = <int>
+The attack skill of the leader.
+defense_skill = <int>
+The defense skill of the leader.
+planning_skill = <int>
+The planning skill of the leader.
+logistics_skill = <int>
+The logistics skill of the leader.
+traits = { <trait> }
+The traits the leader spawns with.
+
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = { defensive_doctrine }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+Creates a field marshal for the current scope with the specified attributes.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.0
+海军
+Name	Parameters	Examples	Description	Notes	Version Added
+navy_experience	<float> / <variable>
+The amount to add.	
+navy_experience = 10
+Adds the specified amount of navy experience to the current scope.	 	1.0
+destroy_ships	type = <ship>
+The type of ship to destroy.
+count = <int> or all
+The amount to destroy.
+
+destroy_ships = {
+    type = destroyer
+    count = all
+}
+Destroys the specified type and amount of ships controlled by the current scope.	 	1.5
+transfer_navy	target = <scope>
+The target country.	
+transfer_navy = {
+    target = GER
+}
+Transfers the current scope navy to the specified country.	 	1.5
+transfer_ship	type = <ship>
+The type of ship to transfer.<br target = <scope>
+The target country.
+prefer_name = <string>
+The new name for the ships in the target country. Optional.
+
+ transfer_ship = {
+    prefer_name = "HMS Achilles"
+    type = light_cruiser
+    target = NZL
+}
+Transfers the specified type of ship from the current scope to the specified country.	 	1.4
+create_navy_leader	name = <string>
+The name of the leader.
+picture = <string>
+The graphical reference of the picture of the leader.
+skill = <int>
+The skill of the leader.
+traits = { <trait> }
+The traits the leader spawns with.
+
+create_navy_leader = {
+	name = "François Darlan"
+    picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+Creates a naval leader for the current scope with the specified attributes.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.0
+空军
+Name	Parameters	Examples	Description	Notes	Version Added
+air_experience	<float> / <variable>
+The amount to add.	
+air_experience = 10
+Adds the specified amount of air experience to the current scope.	 	1.0
+add_ace	name = <string>
+The name of the ace.
+surname = <string>
+The surname of the ace.
+callsign = <string>
+The callsign of the ace.
+type = <type>
+The ace type.
+is_female = <bool>
+The gender of the ace.
+
+add_ace = {
+    name = "Amelia"
+    surname = "Earhart"
+    callsign = "Revenant"
+    type = fighter_genius
+    is_female = yes
+}
+Adds an ace for the current scope.	Ace types found in /Hearts of Iron IV/common/aces/*.txt.	1.0
+AI
+Name	Parameters	Examples	Description	Notes	Version Added
+add_ai_strategy	type = <type>
+The type of strategy.
+id = <scope>
+What country the strategy is against.
+value = <int>
+The weighting added by the strategy.
+
+add_ai_strategy = {
+    type = alliance
+    id = GER
+    value = 200
+}
+Sets an AI strategy for the current scope.	See AI Modding for more details.	1.0
+地区作用域
+The effects here must be used within a state scope.
+
+整体
+Name	Parameters	Examples	Description	Notes	Version Added
+state_event	id = <event>
+The event to fire.
+days = <event> / <variable>
+Fires the event in the specified number of days. Optional.
+hours = <event> / <variable>
+Fires the event in the specified number of hours. Optional.
+random = <event>
+Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
+trigger_for = <scope>
+Fires event in the specified scope.
+
+state_event = {
+    id = my_event.1
+    days = 10
+    random = 50
+    trigger_for = controller
+}
+Fires the specified event for the current state.	Where triggers do not need to be repeatedly checked random can be a performance light alternative to mean_time_to_happen for scheduling events.
+Using days = <event> / <variable> or hours may still be bugged and will not fire the event.
+
+1.0
+set_state_flag	<flag>
+An unique string to identify the state flag with.	set_state_flag = my_flag	Defines a state flag.	 	1.0
+clr_state_flag	<flag>
+The unique string of a state flag to clear.	clr_state_flag = my_flag	Clears a defined state flag.	 	1.0
+modify_state_flag	flag = <flag>
+The state flag to modify.
+value = <value>
+The value to set it to: 0 or 1
+
+modify_state_flag = {
+    flag = my_flag
+    value = 1
+}
+Modifies a state flag.	Use variables instead.	1.3
+set_state_name	<string>
+Defines the new name.	
+set_state_name = "Funland"
+Changes the current state's name to the specified name.	 	1.3
+reset_state_name	<bool>
+Boolean.	
+reset_state_name = yes
+Resets any changes to the current state's name.	 	1.3
+add_claim_by	<scope> / <variable>
+The country to add the claim for.	
+add_claim_by = SOV
+Adds a claim for the specified country on the current scope.	 	1.0
+remove_claim_by	<scope> / <variable>
+The country to remove the claim for.	
+remove_claim_by = SOV
+Removes a claim by the specified country on the current scope.	 	1.0
+add_core_of	<scope> / <variable>
+The country to add the core for.	
+add_core_of = SOV
+Adds a core for the specified country on the current scope.	 	1.0
+remove_core_of	<scope> / <variable>
+The country to remove the core for.	
+remove_core_of = SOV
+Removes a core for the specified country on the current scope.	 	1.0
+set_demilitarized_zone	<bool>
+Boolean.	
+set_demilitarized_zone = yes
+Makes the current scope a demilitarized zone.	 	1.0
+set_state_category	<category>
+The category to change to.	
+set_state_category = rural
+Changes the current state category to the specified category.	Categories are found in /Hearts of Iron IV/common/state_category/*.txt	1.3
+add_state_modifier	Modifier scope
+<modifier> = <float>
+Adds a modifier to the state.
+
+add_state_modifier = {
+    modifier = {
+        local_resources = 2.0
+    }
+}
+Adds a modifier to the current state.	 	1.3
+add_manpower	<int> / <variable>
+The amount to add.	
+add_manpower = 10000
+Adds the specified amount of manpower to the current state.	 	1.0
+add_resource	type = <resource>
+The resource to add.
+amount = <int> / <variable>
+The amount to add.
+
+add_resource = {
+    type = oil
+    amount = 100
+}
+Adds the specified resource in the specified amount to the current state.	 	1.0
+set_border_war	<bool>
+Boolean.	
+set_border_war = yes
+Enables Border War status for the current state.	 	1.0
+create_unit	division = <division string>
+The division string.
+owner = <scope>
+The owner of the division.
+prioritize_location = <province>
+Prioritize the specified province in the state.
+
+create_unit = {
+    division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = GER
+}
+Adds the specified division to the current state.	The division string must be formatted as it is seen in the examples.	1.3
+add_dynamic_modifier	modifier = <modifier_string>
+The name of the Modifier.	add_dynamic_modifier = { modifier = sabotaged_ressources }	Adds a dynamic modifier to the current scope	Examples can be found in /Hearts of Iron IV/common/dynamic_modifiers/*.txt	1.9
+建筑
+Name	Parameters	Examples	Description	Notes	Version Added
+add_building_construction	type = <string>
+The building to add.
+level = <int> / <variable>
+The level to set the building to.
+instant_build = <bool>
+Defines whether the buildings are instantly built.
+province = <id>
+Defines the exact province to add provincal buildings in. Can be used as a scope.
+Province scope
+all_provinces = <bool>
+Affect all provinces. Used in the province scope.
+limit_to_coastal = <bool>
+Affect coastal provinces. Used in the province scope.
+limit_to_naval_base = <bool>
+Affect naval base provinces. Used in the province scope.
+limit_to_border = <bool>
+Affect border provinces. Used in the province scope.
+level = <int>
+Affect only provinces with buildings level below, at or above the specified level. Used in the province scope.
+id = <id>
+Affect the specified province. Used in the province scope.
+
+add_building_construction = {
+    type = arms_factory
+    level = 5
+    instant_build = yes
+}
+add_building_construction = {
+    type = bunker
+    level = 10
+    instant_build = yes
+    province = {
+        all_provinces = yes
+        limit_to_border = yes
+    }
+}
+add_building_construction = {
+    type = bunker
+    level = 1
+    instant_build = yes
+    province = 2999
+}
+Starts construction in the current state for the specified building.	You can limit the construction to victory points using : limit_to_victory_point > 5 (only build province buildings on province with VP over 5 ) limit_to_victory_point = yes (only build province buildings on province with VP)	1.0
+set_building_level	type = <string>
+The building to add.
+level = <int> / <variable>
+The level to set the building to.
+instant_build = <bool>
+Defines whether the buildings are instantly built.
+province = <id>
+Defines the exact province to add provincal buildings in. Can be used as a scope.
+Province scope
+all_provinces = <bool>
+Affect all provinces. Used in the province scope.
+limit_to_coastal = <bool>
+Affect coastal provinces. Used in the province scope.
+limit_to_naval_base = <bool>
+Affect naval base provinces. Used in the province scope.
+limit_to_border = <bool>
+Affect border provinces. Used in the province scope.
+level = <int>
+Affect only provinces with buildings level below, at or above the specified level. Used in the province scope.
+id = <id>
+Affect the specified province. Used in the province scope.
+
+set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+}
+set_building_level = {
+    type = bunker
+    level = 3
+    province = {
+        all_provinces = yes
+        limit_to_border = yes
+        level < 3
+    }
+}
+Sets the specified building to the current state (or provinces within the state).	The province scope is used for provincal level buildings. You can limit the construction to victory points using : limit_to_victory_point > 5 (only build province buildings on province with VP over 5 ) limit_to_victory_point = yes (only build province buildings on province with VP)	1.4
+damage_building	type = <building>
+The building to damage.
+damage = <float>
+The amount of damage to inflict.
+province = <id>
+The province to target for provincal buildings.
+
+damage_building = {
+    type = infrastructure
+    damage = 1
+}
+Damages the specified building in the current state.	The health of buildings is determined by the value attribute in a building's definition. This is multiplied by their level to get their total health.	1.3
+remove_building	type = <building>
+The building to remove.
+level = <int> / <variable>
+The levels to remove.
+
+remove_building = {
+    type = arms_factory
+    level = 5
+}
+Removes the specified building in the current state. For shared buildings level determines the amount, whereas for the others it is the actual level.	 	1.0
+add_extra_state_shared_building_slots	<int> / <variable>
+The amount of slots to add or remove.	
+add_extra_state_shared_building_slots = 2
+Adjusts the number of shared building slots for the current state.	 	1.0
+部队将领作用域
+The effects here must be used within a unit leader scope.
+
+整体
+Name	Parameters	Examples	Description	Notes	Version Added
+unit_leader_event	id = <event>
+The event to fire.
+days = <event> / <variable>
+Fires the event in the specified number of days. Optional.
+hours = <event> / <variable>
+Fires the event in the specified number of hours. Optional.
+random = <event>
+Adds a random number (between 0 and random, inclusive) of hours to the scheduled fire time. Optional.
+
+unit_leader_event = {
+    id = my_event.1
+    days = 10
+    random = 50
+}
+Fires the specified event for the owner of the current unit leader.	Uses a special interface displaying the current unit leader portrait.
+Where triggers do not need to be repeatedly checked random can be a performance light alternative to mean_time_to_happen for scheduling events.
+
+1.5
+set_unit_leader_flag	<flag>
+An unique string to identify the unit leader flag with.	set_unit_leader_flag = my_flag	Defines a unit leader flag.	 	1.5
+clr_unit_leader_flag	<flag>
+The unique string of a unit leader flag to clear.	clr_unit_leader_flag = my_flag	Clears a defined unit leader flag.	 	1.5
+modify_unit_leader_flag	flag = <flag>
+The unit leader flag to modify.
+value = <value>
+The value to set it to: 0 or 1
+
+modify_unit_leader_flag = {
+    flag = my_flag
+    value = 1
+}
+Modifies a unit leader flag.	 	1.5
+promote_leader	<bool>
+Boolean	
+promote_leader = yes
+Promotes the current unit leader to Field Marshal (if Commander.	 	1.5
+demote_leader	<bool>
+Boolean	
+demote_leader = yes
+Demotes the current unit leader to Commander (if Field Marshal).	 	1.5
+retire	<bool>
+Boolean>	
+retire = yes
+Retires the current unit leader (removing them).	 	1.5
+remove_unit_leader	<id>
+The id of the unit leader.	
+remove_unit_leader = 70
+Removes the specified unit leader by their id.	 	1.0
+set_nationality	<scope> / <variable>
+The target country.	
+set_nationality = GER
+Switches the current unit leader to the specified country, giving them the leader.	 	1.5
+add_unit_leader_trait	<trait>
+The trait to add.	
+add_unit_leader_trait = old_guard
+Adds the specified trait to the current unit leader.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.0
+remove_unit_leader_trait	<trait>
+The trait to remove.	
+remove_unit_leader_trait = old_guard
+Removes the specified trait from the current unit leader.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.0
+add_timed_unit_leader_trait	<trait>
+The trait to add.
+days = <int>
+The duration of the trait.
+
+add_timed_unit_leader_trait = {
+    trait = wounded
+    days = 90
+}
+Adds the specified trait to the current unit leader for the specified duration.	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.5
+replace_unit_leader_trait	 	 	 	Traits are found in /Hearts of Iron IV/common/unit_leader/*.txt.	1.5
+战斗
+Name	Parameters	Examples	Description	Notes	Version Added
+supply_units	<int> / <variable>
+The amount of hours of supply.	
+supply_units = 24
+Adds the specified amount of hours of supply to troops led by the current unit leader.	 	1.5
+add_max_trait	<int>
+The amount to add.	
+add_max_trait = 1
+Adds the specified amount of assignable trait slots to the current unit leader.	 	1.5
+add_skill_level	<int>
+The skill to add.	
+add_skill_level = 1
+Adds skill to the current unit leader.	 	1.5
+add_logistics	<int>
+The skill to add.	
+add_logistics = 1
+Adds logistics skill to the current unit leader.	 	1.5
+add_planning	<int>
+The skill to add.	
+add_planning = 1
+Adds planning skill to the current unit leader.	 	1.5
+add_defense	<int>
+The skill to add.	
+add_defense = 1
+Adds defense skill to the current unit leader.	 	1.5
+add_attack	<int>
+The skill to add.	
+add_attack = 1
+Adds attack skill to the current unit leader.	 	1.5
+add_temporary_buff_to_units	combat_offense = <float>
+The bonus to grant. Optional.
+combat_breakthrough = <float>
+The bonus to grant. Optional.
+combat_defense = <float>
+The bonus to grant. Optional.
+combat_entrenchment = <float>
+The bonus to grant. Optional.
+org_damage_multiplier = <float>
+The bonus to grant. Optional.
+str_damage_multiplier = <float>
+The bonus to grant. Optional.
+war_support_reduction_on_damage = <float>
+The bonus to grant. Optional.
+cannot_retreat_while_attacking = <float>
+The bonus to grant. Optional.
+cannot_retreat_while_defending = <float>
+The bonus to grant. Optional.
+days = <int>
+The duration of the buff. Optional.
+tooltip = <string>
+The tooltip to display for the buff.
+
+add_temporary_buff_to_units = {
+    combat_offense = 0.25
+    combat_breakthrough = 0.25
+    org_damage_multiplier = -1.0
+    str_damage_multiplier = 0.25
+    war_support_reduction_on_damage = 0.2
+    cannot_retreat_while_attacking = 1.0
+				
+    days = 7
+    tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+}
+Adds the specified combat buff to the current unit leader.	 	1.5
+boost_planning	<float>
+The amount to add.	
+boost_planning = 1
+Improves the planning of units controlled by the current unit leader.	 	1.5
+Flow Control
+These scopes are used within effect scopes to control the execution of effects.
+
+If, Else If and Else
+These scopes allow effects to be conditionalized, so they only occur when the requisite triggers are met.
+
+For example, if you only have an effect to occur for Germany, you'd do the following:
+
+if = {
+    limit = {
+        original_tag = GER
+    }   
+    add_stability = 0.1
+}
+If you then wanted England to have a similar effect, and everyone else to have something else, you do the following:
+
+if = {
+    limit = {
+        original_tag = GER
+    }   
+    add_stability = 0.1
+}
+else_if = {
+    limit = {
+        original_tag = ENG
+    }
+    add_stability = 0.25
+}
+else = {
+    add_stability = 0.05
+}
+As you can see, this allows for flexibility in how effects occur and cuts down on duplication.
+
+隐藏效果
+This scope hides the presence of the effects within it in the player's tooltip. This is used to execute effects without the player seeing them. For example, you may want to manipulate some variables in an event. Showing them to the player may confuse them, so it is best to hide the effects within an hidden effect scope, like so:
+
+hidden_effect = {
+    set_variable = { my_var = 100 }
+}
+Random List
+This scope allows the creation of a random selection of effects. For example, if you wanted an effect to randomly given the player one out of four bonuses, you'd do the following:
+
+random_list = {
+    25 = {
+        add_stability = 0.5
+    }
+    25 = {
+        add_manpower = 10000
+    }
+    25 = {
+        add_war_support = 0.5
+    }
+    25 = {
+        army_experience = 100
+    }
+}
+Note that if you want to create a repeatable decision including a random list, by default the same decision will pick the same random result every time it is triggered in a game. You can reverse this behaviour by including the following line in the decision block:
+
+fixed_random_seed = no
+It is also possible to use modifiers to affect the weight of each possible random effect.
+
+random_list = {
+    25 = {
+        add_stability = 0.5
+        modifier = {
+            factor = 1.3
+            has_country_flag = inward_perfect_flag
+        }
+    }
+    25 = {
+        add_manpower = 10000
+    }
+    25 = {
+        add_war_support = 0.5
+    }
+    25 = {
+        army_experience = 100
+    }
+}
+The above code would multiply the 25 by the factor thereby making it more or less likely to occur if the trigger condition is fulfilled.
+
+Effect Tooltip
+This scope will display the tooltip information of the effects within, without actually executing the effects. This is useful when you want to show what the effect may look like to the player. Here is an example:
+
+effect_tooltip = {
+    every_owned_state = {
+        add_manpower = 10000
+    }
+}
+count_triggers	amount = <int>
+
+触发器。	
+count_triggers = {
+    amount = 2
+    10 = { state_population = 100000 }
+    11 = { state_population = 100000 }
+    12 = { state_population = 100000 }
+}
+对所有下属触发器的运算结果(假=0，真=1）加和。如果和大于等于 amount所要求的值则返回真。		1.5
+if	limit = <AND-trigger>
+条件。 else_if = <if-trigger>
+替代条件。可选。
+else = <AND-trigger>
+最终替代条件。可选。
+
+触发器。
+
+if = {
+    limit = {
+        has_dlc = "Poland: United and Ready"
+    }
+    has_political_power > 100
+    else = {
+        has_war_support > 0.5
+    }
+}
+如果limit为真，下面的触发器被当做是一个AND触发器。如果limit为假，else_if会按顺序尝试判断，最终到else语句(如果存在的话）否则返回真。	else_if和else也可以直接跟在if触发器的后面，而不是嵌套。	1.0
+hidden_trigger	触发器。	
+hidden_trigger = {
+    country_exists = GER
+}
+与AND触发器类似，但是不会出现在提示条中。		
+custom_trigger_tooltip	tooltip = <string>
+
+触发器。	
+custom_trigger_tooltip = {
+    tooltip = sunrise_invasion_tt		
+    any_state = {
+        is_owned_by = JAP
+        is_on_continent = europe
+        is_coastal = yes
+    }
+}
+和AND触发器类似，但是提示文字会显示tooltip的内容。在样例中是sunrise_invasion_tt(在本地化文件中定义）。		
+has_global_flag	<string>
+要检查的flag。	
+has_global_flag = my_flag
+检查某一特定flag是否已被设定。		1.0
+has_global_flag	flag = <string>
+要检查的flag。
+value = <int>
+要检查的flag值。可选。
+date = <date>
+要检查的flag创建的日期。可选。
+days = <int>
+要检查的flag存在的天数。可选。
+
+has_global_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+比较特定flag上次设定的日期，设定后存在的天数，和/或flag值。	如果没有设定，值的比较默认为>0。value限制在-32768和32767之间。	1.0
+has_dlc	<string>
+要检查的DLC名。	
+has_dlc = "Waking the Tiger"
+检查特定DLC是否已开启。		1.0
+has_start_date	<date>
+要检查的日期。	
+has_start_date > 1950.01.01
+检查特定日期是否是当前游戏的开始日期。	必须使用>或<运算符。	1.0
+date	<date>
+要检查的日期。	
+date < 1950.01.01
+检查指定的日期是否与当前的日期相对应。	必须使用>或<运算符。	1.0
+difficulty	<int>
+难度值。	
+difficulty > 0
+检查指定的难度是否与当前的难度相对应。	必须使用>或<运算符。	1.0
+has_any_custom_difficulty_setting	<bool>
+布尔型。	
+has_any_custom_difficulty_setting = yes
+检查任何国家是否有自定义难度选项正在使用。		1.0
+has_custom_difficulty_setting	<string>
+要检查的设置。	
+has_custom_difficulty_setting = custom_diff_strong_sov
+1.0
+game_rules_allow_achievements	<bool>
+布尔型。	
+game_rules_allow_achievements = yes
+检查是否所有使用中的游戏规则允许完成成就。		1.9
+country_exists	<scope> / <variable>
+要检查的国家。	
+country_exists = GER
+检查特定国家目前是否在游戏中存在。	1.0
+is_ironman	<bool>
+布尔型。	
+is_ironman = yes
+检查当前游戏是否处于铁人模式。		1.0
+is_historical_focus_on	<bool>
+布尔型。	
+is_historical_focus_on = yes
+检查当前游戏是否处于历史国策开启的模式。		1.0
+is_tutorial	<bool>
+布尔型。	
+is_tutorial = yes
+检查当前游戏是否处于教程模式。		1.0
+is_debug	<bool>
+布尔型。	
+is_debug = yes
+检查当前游戏是否处于debug模式(用-debug模式启动游戏）。		1.9
+threat	<float>
+要检查的值。	
+threat > 0.5
+检查世界紧张度是否达到某个特定的值。	必须使用>或<运算符。	1.0
+has_game_rule	<string>
+要检查的游戏规则
+<string> / <bool>
+检查为真/假的选项
+has_game_rule = { rule = GER_can_remilitarize_rhineland option = yes }
+检查一个游戏规则是否设定成特定的选项。		1.5
+国家作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in country scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+exists	<bool>
+是否存在	
+exists = yes
+Checks if the current scope exists in game.		1.0
+tag	<scope> / <variable>
+指向某个国家	
+tag = GER
+tag = var:my_country
+Checks if the current scope is the specified country.		1.0
+original_tag	<scope> / <variable>
+指向某个国家	
+original_tag = GER
+original_tag = var:my_country
+Checks if the current scope was ever the specified country.		1.0
+is_ai	<bool>
+是否为AI	
+is_ai = yes
+Checks if the current scope is AI.		1.0
+has_country_flag	<string>
+The flag to check.	
+has_country_flag = my_flag
+Checks if the current scope has the specified flag.		1.0
+has_country_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_country_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+has_cosmetic_tag(拥有显示tag）	<string>
+指向某个显示tag(对应效果中的更改显示tag）	
+has_cosmetic_tag = SOV_custom
+Checks if the current scope has the specified cosmetic tag active.		1.5
+has_decision	<string>
+The decision to check.	
+has_decision = my_decision
+Checks if the current scope has the specified decision activated.		1.5
+has_dynamic_modifier	modifier = <string>
+The dynamic_modifier to check. 
+scope = <scope>
+The country to check. Optional, if the original modifier has been targeted.
+
+has_dynamic_modifier = {
+    modifier = my_dynamic_modifier
+    scope = GER
+}
+Checks if the current scope has the specified dynamic modifier activated.		1.6
+has_active_mission	<string>
+The mission to check.	
+has_active_mission = my_mission
+Checks if the current scope has the specified mission active.		1.5
+has_focus_tree	<string>
+The focus tree to check.	
+has_focus_tree = soviet_tree
+Checks if the current scope has the specified focus tree.		1.3
+has_completed_focus(完成国策）	<string>
+指定某个国策是否完成	
+has_completed_focus = my_focus
+Checks if the current scope has the specified focus completed.		1.0
+focus_progress	focus = <string>
+The focus to check.
+progress = <string>
+The progress to check for.
+
+focus_progress = {
+    focus = my_focus
+    progress > 0.5
+}
+Checks if the specified focus has been completed the specified percent for the current scope.	Must use either > or < operators for progress.	1.0
+政治
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_political_power	<float>
+The amount to check for.	
+has_political_power > 100
+Checks if the current scope has the specified amount of political power.	Must use either > or < operators.	1.0
+political_power_daily	<float> / <variable>
+The amount to check for.	
+political_power_daily > 1
+Checks if the current scope has the specified amount of daily political power gain.	Must use either > or < operators.	1.5
+political_power_growth	<float> / <variable>
+The amount to check for.	
+political_power_growth > 1
+Checks if the current scope has the specified amount of daily political power gain.	Must use either > or < operators.	1.5
+command_power	<float> / <variable>
+The amount to check for.	
+command_power > 1
+Checks if the current scope has the specified amount of command power.	Must use either > or < operators.	1.5
+command_power_daily	<float> / <variable>
+The amount to check for.	
+command_power_daily > 1
+Checks if the current scope has the specified amount of daily command power gain.	Must use either > or < operators.	1.5
+has_war_support	<float> / <variable>
+The amount to check for.	
+has_war_support > 0.5
+Checks if the current scope has the specified percentage of War Support.	Must use either > or < operators.	1.5
+has_stability	<float> / <variable>
+The amount to check for.	
+has_stability > 0.5
+Checks if the current scope has the specified percentage of Stability.	Must use either > or < operators.	1.5
+<ideology>	<ideology> = <float>
+The amount of the ideology to check for.	
+fascism > 0.5
+Checks if the current scope has the specified ideology above the specified amount.		1.0
+has_government	<string>
+The ideology to check for.	
+has_government = fascism
+Checks if the current scope ruling party is the specified ideology.		1.0
+has_elections	<bool>
+Boolean.	
+has_elections = yes
+Checks if the current scope holds elections.		1.0
+is_staging_coup	<bool>
+Boolean.	
+is_staging_coup = yes
+Checks if the current scope is staging a coup.		1.3
+is_target_of_coup	<bool>
+Boolean.	
+is_target_of_coup = yes
+Checks if the current scope is the target of a coup.		1.0
+has_civil_war	<bool>
+Boolean.	
+has_civil_war = yes
+Checks if the current scope has a civil war active.		1.0
+civilwar_target	<scope>
+The target country.	
+civilwar_target = GER
+Checks if the specified country is a target of a civil war.		1.0
+has_manpower_for_recruit_change_to	value = <float>
+The amount to check for.
+group = <group>
+The group to check for.
+
+has_manpower_for_recruit_change_to = {
+    value > 0.05
+    group = mobilization_laws
+}
+Checks if the current scope has the specified amount of manpower for changing the specified idea group.	Must use either > or < operators as = operator checks for the exact value	1.0
+has_country_leader	id = <int>
+The id to check for. Optional.
+name = <string>
+The name to check for. Optional.
+ruling_only = yes
+Limit check to ruling only.
+
+has_country_leader = {
+    id = 10
+}
+has_country_leader = {
+    name = "John Smith"
+    ruling_only = yes
+}
+Checks if the current scope has the specified country leader.		1.3
+has_rule	<string>
+The rule to check for.	
+has_rule = {
+    can_create_factions
+}
+Checks if the current scope has the specified country rule.		1.6
+建筑
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+<building>	<building> = <int>
+The amount of the specified building to to check for.	
+arms_factory > 10
+Checks if the current scope has the specified amount of the specified building.	Must use either > or < operators.	1.0
+num_of_military_factories	<int>
+The amount to check for.	
+num_of_military_factories > 10
+Checks if the current scope has the specified amount of military factories.	Must use either > or < operators.	1.0
+num_of_civilian_factories	<int>
+The amount to check for.	
+num_of_civilian_factories > 10
+Checks if the current scope has the specified amount of civilian factories.	Must use either > or < operators.	1.0
+num_of_naval_factories	<int>
+The amount to check for.	
+num_of_naval_factories > 10
+Checks if the current scope has the specified amount of dockyards.	Must use either > or < operators.	1.0
+num_of_available_military_factories	<int>
+The amount to check for.	
+num_of_available_military_factories > 10
+Checks if the current scope has the specified amount of available military factories.	Must use either > or < operators.	1.0
+num_of_available_civilian_factories	<int>
+The amount to check for.	
+num_of_available_civilian_factories > 10
+Checks if the current scope has the specified amount of available civilian factories.	Must use either > or < operators.	1.0
+num_of_available_naval_factories	<int>
+The amount to check for.	
+num_of_available_naval_factories > 10
+Checks if the current scope has the specified amount of available dockyards.	Must use either > or < operators.	1.0
+num_of_factories	<int>
+The amount to check for.	
+num_of_factories > 10
+Checks if the current scope has the specified amount of military, civilian or dockyard factories.	Must use either > or < operators.	1.0
+num_of_civilian_factories_available_for_projects	<int>
+The amount to check for.	
+num_of_civilian_factories_available_for_projects > 10
+Checks if the current scope has the specified amount of civilian factories usable for projects.	Must use either > or < operators.	1.5
+ic_ratio	tag = <scope>
+The country to check.
+ratio = <float>
+The ratio to check for.
+
+ic_ratio = {
+    tag = GER
+    ratio > 0.5
+}
+Checks if the current scope has the specified ratio of factories with the target country.	Must use either > or < operators for ratio.	1.0
+has_damaged_buildings	<bool>
+Boolean.	
+has_damaged_buildings = yes
+Checks if the current scope has any damanged buildings in their states.		1.0
+has_built	type = <building>
+The building to check for.
+value = <int>
+The amount to check for.
+
+has_built = {
+    type = arms_factory
+    value > 10
+}
+Checks if the current scope has built the specified building the specified number of times.	Must use either > or < operators for value.	1.0
+科技
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_tech	<string>
+The technology to check for.	
+has_tech = my_technology
+Checks if the current scope has the specified technology.		1.0
+is_researching_technology	<string>
+The technology to check for.	
+is_researching_technology = my_tech
+Checks if the current scope is currently researching the specified technology.		1.0
+can_research	<string>
+The technology to check for.	
+can_research = my_tech
+Checks if the current scope can start researching the specified technology.		1.0
+original_research_slots	<int>
+The amount to check for.	
+original_research_slots > 3
+Checks if the current scope had the specified amount of slots at game start.	Must use either > or < operators.	1.0
+amount_research_slots	<int>
+The amount to check for.	
+amount_research_slots > 3
+Checks if the current scope has the specified amount of research slots.	Must use either > or < operators.	1.3
+is_in_tech_sharing_group	<string>
+The group to check for.	
+is_in_tech_sharing_group = us_research
+Checks if the current scope is in the specified technology sharing group.		1.3
+num_tech_sharing_groups	<int>
+The amount to check for.	
+num_tech_sharing_groups > 3
+Checks if the current scope is in the specified amount of technology sharing groups.	Must use either > or < operators.	1.3
+has_tech_bonus	technology = <string>
+The technology to check for. Optional.
+category = <string>
+The category to check for. Optional.
+has_tech_bonus = {
+    technology = my_tech
+has_tech_bonus = {
+    category = my_category
+}
+Checks if the current scope has a technology bonus in the specified category, or for the specific technology.		1.3
+land_doctrine_level	<int>
+The amount to check for.	
+land_doctrine_level > 2
+Checks if the current scope has the specified amount of land doctrine technologies.	Must use either > or < operators.	1.0
+国家精神
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_idea	<string>
+The idea to check for.	
+has_idea = my_idea
+Checks if the current scope has the specified idea.	
+has_idea_with_trait	<string>
+The trait to check for.	
+has_idea_with_trait = my_trait
+Checks if the current scope has any ideas with the specified trait.		1.0
+has_available_idea_with_traits	idea = <string>
+The trait to check for.
+limit = <int>
+The amount to check for.
+
+has_available_idea_with_traits = {
+    idea = my_trait
+    limit = 1
+}
+Checks if the current scope has the specified amount of ideas with the specified trait.		1.0
+amount_taken_ideas	amount = <int>
+The amount to check for.
+slots = { <string> }
+The slot type.
+
+amount_taken_ideas = {
+    amount > 3
+    slots = {
+        political_advisor
+    }
+}
+Checks if the current scope has the specified amount of ideas of the specified slot type.	Slots types are found in /Hearts of Iron IV/common/idea_tags/*.txt.	1.0
+外交
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+is_major	<bool>
+Boolean.	
+is_major = yes
+Checks if the current scope is considered a Major.		1.0
+is_in_faction_with	<scope> / <variable>
+The country to check for.	
+is_in_faction_with = GER
+is_in_faction_with = var:country
+Checks if the current scope is in a faction with the specified country.		1.0
+is_in_faction	<bool>
+Boolean.	
+is_in_faction = yes
+Checks if the current scope is in a faction.		1.0
+is_faction_leader	<bool>
+Boolean.	
+is_faction_leader = yes
+Checks if the current scope is the leader of a faction.		1.0
+num_faction_members	<int>
+The amount to check for.	
+num_faction_members > 1
+Checks if the faction of the current scope has the specified amount of members.	Must use either > or < operators.	1.0
+has_non_aggression_pact_with	<scope> / <variable>
+The country to check for.	
+has_non_aggression_pact_with = GER
+Checks if the current scope has a non-aggression pact with the specified country.		1.0
+is_guaranteed_by	<scope> / <variable>
+The country to check for.	
+is_guaranteed_by = GER
+Checks if the current scope has been guaranteed by the specified country.		1.0
+has_guaranteed	<scope> / <variable>
+The country to check for.	
+has_guaranteed = GER
+Checks if the current scope has guaranteed the specified country.		1.0
+has_military_access_to	<scope> / <variable>
+The country to check for.	
+has_military_access_to = GER
+Checks if the current scope has military access to the specified country.		1.0
+gives_military_access_to	<scope> / <variable>
+The country to check for.	
+gives_military_access_to = GER
+Checks if the current scope gives military to the specified country.		1.0
+is_neighbor_of	<scope> / <variable>
+The country to check for.	
+is_neighbor_of = GER
+Checks if the current scope is a neighbor of the specified country.		1.0
+is_owner_neighbor_of	<scope> / <variable>
+The country to check for.	
+is_owner_neighbor_of = GER
+Checks if the current scope is a neighbor of the specified country with their core territory only.		1.0
+is_puppet_of(被某国傀儡）	<scope> / <variable>
+指向傀儡该国的国家	
+is_puppet_of = GER
+Checks if the current scope is a puppet of the specified country.		1.0
+is_subject_of	<scope> / <variable>
+The country to check for.	
+is_subject_of = GER
+Checks if the current scope is a subject of the specified scope.		1.0
+is_puppet(是否被傀儡）	<bool>
+Boolean.	
+is_puppet = yes
+Returns true if the current country has an autonomy level with is_puppet = yes, false otherwise.		1.0
+is_subject	<bool>
+Boolean.	
+is_subject = yes
+Checks if the current scope is a subject.		1.0
+num_subjects	<int>
+The amount to check for.	
+num_subjects > 3
+Checks if the current scope has the specified amount of subjects.	Must use either > or < operators.	1.3
+has_autonomy_state	<string>
+The autonomy state to check for.	
+has_autonomy_state = autonomy_dominion
+Checks if the current scope is in the specified autonomous state.		1.0
+compare_autonomy_state	<string>
+The autonomy state to check for.	
+compare_autonomy_state > autonomy_dominion
+Checks if the current scope autonomy state is less or greater than the specified autonomy state.	Must use either > or < operators.	1.0
+compare_autonomy_progress_ratio	<float>
+The amount to check for.	
+compare_autonomy_progress_ratio > 0.5
+Checks if the current scope autonomy progress is at the specified ratio.	Must use either > or < operators.	1.3
+has_opinion_modifier	<string>
+The opinion modifier to check for.	
+has_opinion_modifier = my_modifier
+Checks if the current scope has the specified opinion modifier.		1.0
+has_opinion	target = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+has_opinion = {
+    target = GER
+    value = 100
+}
+Checks if the current scope has the specified opinion with the specified country.	Must use either > or < operators.	1.0
+has_relation_modifier	target = <scope>
+The country to check for.
+modifier = <modifier>
+The modifier to check for.
+
+has_relation_modifier = {
+    target = GER
+    modifier = my_modifier
+}
+Checks if the current scope has the specified relation modifier with the specified country.		1.0
+all_allied_country	triggers	
+all_allied_country = {
+    has_stability > 0.8
+}
+Returns true if THIS is in a faction where all other countries fulfill the sub-triggers; false otherwise. Evaluation stops early if any ally fails the check.	Within the trigger PREV is the country doing the check and THIS is the ally.	
+any_allied_country	triggers	
+any_allied_country = {
+    has_stability > 0.8
+}
+Returns true if THIS is in a faction where at least one other country fulfills the sub-triggers; false otherwise. Evaluation stops early if any ally passes the check.	Within the trigger PREV is the country doing the check and THIS is the ally.	
+any_neighbor_country	triggers	
+any_neighbor_country = {
+    has_stability > 0.8
+}
+Returns true if at least one other country that controls a province adjacent to a province controlled by THIS fulfills the sub-triggers; false otherwise. Evaluation stops early if any neighbor passes the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor.	
+all_neighbor_country	triggers	
+all_neighbor_country = {
+    has_stability > 0.8
+}
+Returns false if any other country that controls a province adjacent to a province controlled by THIS fails the sub-triggers; true otherwise. Evaluation stops early if any neighbor fails the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor. The list of neighbor countries is pre-calculated.	
+any_home_area_neighbor_country	triggers	
+any_home_area_neighbor_country = {
+    has_stability > 0.8
+}
+Returns true if THIS has a home area and at least one country controlling an adjacent area to it fulfills the sub-triggers; false otherwise. The home area is the largest contiguous area controlled by THIS that contains at least one province of its capital state. Evaluation stops early if any neighbor passes the check.	Within the trigger PREV is the country doing the check and THIS is the neighbor.	
+战争
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_war	<bool>
+Boolean.	
+has_war = yes
+Checks if the current scope is at war.		1.0
+has_war_with	<scope> / <variable>
+The country to check for.	
+has_war_with = GER
+has_war_with = var:country
+Checks if the current scope is at war with the specified country.		1.0
+has_offensive_war_with	<scope> / <variable>
+The country to check for.	
+has_offensive_war_with = GER
+Checks if the current scope is in an offensive war against the specified country.		1.0
+has_defensive_war_with	<scope> / <variable>
+The country to check for.	
+Checks if the current scope is in an defensive war against the specified country.		1.0
+has_offensive_war	<bool>
+Boolean.	
+has_offensive_war = yes
+Checks if the current scope is in an offensive war.		1.0
+has_defensive_war	<bool>
+Boolean.	
+has_defensive_war = yes
+Checks if the current scope is in a defensive war.		1.0
+has_war_together_with	<scope> / <variable>
+The country to check for.	
+has_war_together_with = GER
+Checks if the current scope is in a war alongside the specified country.		1.0
+surrender_progress	<float> / <variable>
+The amount to check for.	
+surrender_progress > 0.1
+Checks if the current scope has the specified amount of surrender progress.	Must use either > or < operators.	1.0
+any_war_score	<float>
+The amount to check for.	
+any_war_score > 10
+Checks if the current scope has the specified amount of war progress (not war participation)[1] in any war.	Must use either > or < operators.	1.0
+has_capitulated	<bool>
+Boolean.	
+has_capitulated = yes
+Checks if the current scope has capitulated.		1.0
+has_border_war_with	<scope> / <variable>
+The country to check for.	
+has_border_war_with = GER
+Checks if the current scope has a border war with the specified country.		1.5
+has_border_war_between	attacker = <scope> / <variable>
+The state to check for.
+defender = <scope> / <variable>
+The state to check for.
+
+has_border_war_between = {
+    attacker = 1
+    defender = 2
+}
+Checks if their is a border war between the two specified states.		1.5
+has_border_war	<bool>
+Boolean.	
+has_border_war = yes
+Checks if the current scope has a border war active.		1.5
+has_added_tension_amount	<float> / <variable>
+The amount to check for.	
+has_added_tension_amount = 10
+Checks if the current scope has caused the specified amount of World Tension.	Must use either > or < operators.	1.0
+has_wargoal_against	<scope> / <variable>
+The country to check for.	
+has_wargoal_against = GER
+Checks if the current scope has any wargoal against the specified country.		1.0
+has_wargoal_against	target = <scope> / <variable>
+The country to check for.
+type = <string>
+The type of wargoal to check for.
+
+has_wargoal_against = {
+    target = FROM
+    type = take_state
+}
+Checks if the current scope has a specific wargoal type against the specified country.		1.8
+is_justifying_wargoal_against	<scope> / <variable>
+The country to check for.	
+is_justifying_wargoal_against = GER
+Checks if the current scope is justifying a wargoal against the specified country.		1.0
+has_annex_war_goal	<scope> / <variable>
+The country to check for.	
+has_annex_war_goal = GER
+Checks if the current scope has the Annex wargoal against the specified country.		1.0
+any_claim	<bool>
+Boolean.	
+any_claim = yes
+Checks if the current scope has any claims on another country.		1.0
+is_in_peace_conference	<bool>
+Boolean.	
+is_in_peace_conference = yes
+Checks if the current scope is in a Peace Conference.		1.0
+any_enemy_country	triggers	
+any_enemy_country = {
+    has_stability > 0.8
+}
+Returns true if any country is at war with THIS, exists, and fulfills the sub-triggers; false otherwise. Evaluation stops at the first true sub-trigger.	Within the trigger PREV is the country doing the check and THIS is the enemy.	
+all_enemy_country	triggers	
+all_enemy_country = {
+    has_stability > 0.8
+}
+Returns false if any country is at war with THIS, exists, and fails the sub-triggers; true otherwise. Evaluation stops at the first false sub-trigger.	Within the trigger PREV is the country doing the check and THIS is the enemy.	
+地区
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+controls_state(控制省份）	<scope> / <variable>
+当前国家是否控制某个省份	
+controls_state = 39
+controls_state = var:state
+Checks if the current scope has control of the specified state.		1.0
+owns_state	<scope> / <variable>
+The state to check for.	
+owns_state = 39
+Checks if the current scope owns the specified state.		1.0
+num_of_controlled_states	<int>
+The amount to check for.	
+num_of_controlled_states = 5
+Checks if the current scope has the specified amount of controlled states.	Must use either > or < operators.	1.0
+num_occupied_states	<int>
+The amount to check for.	
+num_occupied_states = 5
+Checks if the current scope has the specified amount of occupied states.	Must use either > or < operators.	1.0
+has_full_control_of_state	<scope> / <variable>
+The state to check for.	
+has_full_control_of_state = 39
+Checks if the current scope has control and ownership of the specified state.		1.3
+has_resources_amount	resource = <string>
+The resource to check for.
+amount = <int>
+The amount to check for.
+state = <scope>
+The estate to check for. Defaults to the current state in a state scope.
+
+has_resources_amount = {
+    resource = oil
+    amount > 10
+    state = 49
+}
+Checks if the specified state has the specified amount of the specified resource.	Must use either > or < operators for amount.	1.3
+any_owned_state	triggers (state scope)	
+any_owned_state = {
+    is_coastal = yes
+}
+Returns true if at least one state controlled by THIS passes the sub-triggers; false otherwise. Evaluation stops early when a state passes the check.	The sub-triggers are evaluated with a state scope for each owned state.	
+all_owned_state	triggers (state scope)	
+all_owned_state = {
+    is_controlled_by = ROOT
+}
+Returns false if any state controlled by THIS fails the sub-triggers; true otherwise. Evaluation stops early when a state fails the check.	The sub-triggers are evaluated with a state scope for each owned state.	
+军事
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_army_experience	<float> / <variable>
+The amount to check for.	
+has_army_experience = 10
+has_army_experience = var:number
+Checks if the current scope has the specified amount of Army experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_air_experience	<float> / <variable>
+The amount to check for.	
+has_air_experience = 10
+Checks if the current scope has the specified amount of Air experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_navy_experience	<float> / <variable>
+The amount to check for.	
+has_navy_experience = 10
+Checks if the current scope has the specified amount of Navy experience.	Must use either > or < operators as = operator checks for the exact value	1.3
+has_unit_leader	<int>
+The id to check for.	
+has_unit_leader = 1
+Checks if the current scope has a unit leader with the specified id.		1.0
+has_manpower	<float> / <variable>
+The amount to check for.	
+has_manpower = 1000
+Checks if the current scope has the specified amount of manpower.	Must use either > or < operators as = operator checks for the exact value	1.0
+has_army_manpower	size = <int>
+The amount to check for.	
+has_army_manpower = {
+    size > 1000
+Checks if the current scope has an army using the specified amount of manpower.	Must use either > or < operators.	1.0
+manpower_per_military_factory	<float>
+The amount to check for.	
+manpower_per_military_factory > 1000
+Checks if the current scope has the specified manpower times their number of military factories.	Must use either > or < operators.	1.0
+num_divisions	<int>
+The amount to check for.	
+num_divisions > 5
+Checks if the current scope has the specified amount of divisions.	Must use either > or < operators.	1.3
+num_of_nukes	<int>
+The amount to check for.	
+num_of_nukes > 5
+Checks if the current scope has the specified amount of nukes.	Must use either > or < operators.	1.0
+casualties	<int>
+The amount to check for.	
+casualties > 10000
+Checks if the current scope has suffered the specified amount of casualties.	Must use either > or < operators.	1.0
+amount_manpower_in_deployment_queue	<float>
+The amount to check for.	
+amount_manpower_in_deployment_queue > 1000
+Checks if the current scope has the specified amount of manpower in their deployment queue.	Must use either > or < operators.	1.5
+has_attache_from	<scope> / <variable>
+The country to check for.	
+has_attache_from = GER
+Checks if the current scope has an attache from the specified scope.		1.5
+has_attache	<bool>
+Boolean.	
+has_attache = yes
+Checks if the current scope has an attache.		1.5
+is_lend_leasing	<scope> / <variable>
+The country to check for.	
+is_lend_leasing = GER
+Checks if the current scope is lend leasing to the specified scope.		1.0
+has_template	<string>
+The name of the template.	
+has_template = "Infantry Division"
+Checks if the current scope has a division template of the specified name.		1.0
+has_template_majority_unit	<string>
+The unit to check for.	
+has_template_majority_unit = infantry
+Checks if the current scope has a division template composed mostly of the specified unit.		1.0
+has_template_containing_unit	<string>
+The name of the unit.	
+has_template_containing_unit = light_armor
+Checks if the current scope has a division template contained any of the specified unit.		1.0
+strength_ratio	tag = <scope>
+The country to check for.
+ratio = <float>
+The ratio to check for.
+
+strength_ratio = {
+    tag = GER
+    ratio > 1
+}
+Checks if the current scope has the specified strength ratio against the specified country. The ratio is the number of fielded divisions of the current scope divided by those of tag (or 1 if tag has no divisions). The ratio gets increased by 10% if the current scope has a stronger air forces.[2]	Any comparison operator after ratio other than > gets interpreted as <.	1.0
+naval_strength_ratio	tag = <scope>
+The country to check for.
+ratio = <float>
+The ratio to check for.
+
+naval_strength_ratio = {
+    tag = GER
+    ratio = 1
+}
+Checks if the current scope has the specified naval strength ratio against the specified country.		1.0
+alliance_strength_ratio	<float> / <variable>
+The ratio to check for.	
+alliance_strength_ratio > 0.5
+Checks if the current scope and allies has an army strength higher than the specified ratio against estimated enemy strength.	Must use either > or < operators.	1.0
+alliance_naval_strength_ratio	<float> / <variable>
+The ratio to check for.	
+alliance_naval_strength_ratio > 0.5
+Checks if the current scope and allies has an naval strength ratio higher than the specified ratio against estimated enemy strength.	Must use either > or < operators.	1.0
+enemies_strength_ratio	<float> / <variable>
+The ratio to check for.	
+enemies_strength_ratio > 0.5
+Checks if the estimated enemy army strength ratio is higher than the specified ratio.	Must use either > or < operators.	1.0
+enemies_naval_strength_ratio	<float> / <variable>
+The ratio to check for.	
+enemies_naval_strength_ratio > 0.5
+Checks if the estimated enemy naval strength ratio is higher than the specified ratio.	Must use either > or < operators.	1.0
+has_army_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_army_size = {
+    size > 10
+    type = armor
+}
+Checks if the current scope has the specified number of divisions, or of a specified type of division.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.0
+has_navy_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_navy_size = {
+    size > 10
+    type = capital_ship
+}
+Checks if the current scope has the specified number of ships, or of a specified type of ship.	Types:
+submarine
+screen_ship
+capital_ship
+carrier
+Must use either > or < operators for size.
+
+1.0
+has_deployed_air_force_size	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+has_deployed_air_force_size = {
+    size > 10
+    type = cas
+}
+Checks if the current scope has the specified number of aircraft, or of a specified type of aircraft.	Types:
+fighter
+cas
+naval_bomber
+interceptor
+suicide
+tactical_bomber
+strategic_bomber
+air_transport
+missile
+Must use either > or < operators for size.
+
+1.0
+divisions_in_state	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+
+divisions_in_state = {
+    type = infantry
+    size > 10
+    state = 49
+}
+Checks if the specified state contains the specified amount of divisions.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.0
+divisions_in_border_state	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+border_state = <scope> / <variable>
+The border state to check in.
+
+divisions_in_border_state = {
+    type = infantry
+    size > 10
+    state = 49
+    border_state = var:state
+}
+Checks if the border provinces between the specified state and border state contain the specified amount of divisions.	Types:
+infantry
+support
+artillery
+anti_tank
+armor
+Must use either > or < operators for size.
+
+1.5
+ships_in_state_ports	size = <float>
+The amount to check for.
+type = <string>
+The type to check for. Optional.
+state = <scope> / <variable>
+The state to check in.
+ships_in_state_ports = {
+    type = capital_ship
+    size > 10
+    state = 49
+}
+Checks if the specified state contains the specified amount of ships, or of ships of the specified type.	Types:
+submarine
+screen_ship
+capital_ship
+carrier
+Must use either > or < operators for size.
+
+1.0
+has_volunteers_amount_from	tag = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+has_volunteers_amount_from = {
+    tag = GER
+    count > 10
+}
+Checks if the current scope has recieved volunteers from the specified country of the specified amounts.	Must use either > or < operators for count.	1.0
+estimated_intel_max_piercing	tag = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+estimated_intel_max_piercing = {
+    tag = GER
+    value > 0.5
+}
+Checks if the specified scope has the specified amount of piercing based on the current scope's intel.	Must use either > or < operators for value.	1.0
+estimated_intel_max_armor	tag = <scope>
+The country to check for.
+value = <float>
+The amount to check for.
+
+estimated_intel_max_armor = {
+    tag = GER
+    value > 0.5
+}
+Checks if the specified scope has the specified amount of armor based on the current scope's intel.	Must use either > or < operators for value.	1.0
+装备
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+stockpile_ratio	archetype = <string>
+The equipment archetype to check for.
+ratio = <float>
+The ratio of equipment to check for.
+
+stockpile_ratio = {
+    archetype = infantry_equipment
+    ratio > 0.5
+}
+Checks if the current scope has stockpiled the specified equipment to the specified ratio against fielded equipment of the same type.	Must use either > or < operators for ratio. 
+For the convoy equipment which is not fielded as other equipments, ratio shall be not a percentage but a direct amount (for instance 256 convoys)	1.5
+has_equipment	<equipment> = <int> / <variable>
+The equipment to check for, and the amount to check for.	
+has_equipment = {
+    infantry_equipment_1 > 10
+}
+Checks if the current scope has the specified equipment to the specified amount.	Must use either > or < operators.	1.0
+has_any_license	<bool>
+Boolean.	
+has_any_license = yes
+Checks if the current scope has any licenses from other countries.		1.0
+is_licensing_any_to	<scope>
+The country to check for.	
+is_licensing_any_to = GER
+Checks if the current scope is licensing to the specified scope.		1.0
+is_licensing_to	target = <scope>
+The country to check for.
+archetype = <string>
+The equipment archetype to check for. Optional.
+Equipment scope
+type = <string>
+The equipment to check for. Optional.
+version = <int>
+The variant id of the equipment. Optional.
+
+is_licensing_to = {
+    target = GER
+    archetype = infantry_equipment
+}
+is_licensing_to = {
+    target = GER
+    equipment = {
+        type = light_tank_equipment
+        version = 1
+    }
+}
+Checks if the current scope is licensing the specified equipment to the specified country.		1.0
+has_license	from = <scope>
+The country to check for.
+archetype = <string>
+The equipment archetype to check for. Optional.
+Equipment scope
+type = <string>
+The equipment to check for. Optional.
+version = <int>
+The variant id of the equipment. Optional.
+
+has_license = {
+    from = GER
+    archetype = infantry_equipment
+}
+has_license = {
+    from = GER
+    equipment = {
+        type = light_tank_equipment
+        version = 1
+    }
+}
+Checks if the current scope has a license for the specified equipment from the specified country.		1.0
+AI
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+ai_irrationality	<int>
+The amount to check for.	
+ai_irrationality > 10
+Checks if the current scope AI has the specified irrationality.	Must use either > or < operators.	1.0
+ai_liberate_desire	target = <scope>
+The country to check for.
+count = <float>
+The amount to check for.
+
+ai_liberate_desire = {
+    target = GER
+    count > 1
+}
+Checks if the current scope AI has the specified liberation desire towards the specified country.	Must use either > or < operators for count.	1.0
+ai_has_role_division	<string>
+The role to check for.	
+ai_has_role_division = infantry
+Checks if the current scope AI has a division with the specified role.	Roles are defined in /Hearts of Iron IV/common/ai_templates/*.txt	1.0
+ai_has_role_template	<string>
+The role to check for.	
+ai_has_role_template = armor
+Checks if the current scope AI has a division template with the specified role.	Roles are defined in /Hearts of Iron IV/common/ai_templates/*.txt	1.0
+ai_wants_divisions	<int>
+The amount to check for.	
+ai_wants_divisions > 10
+Checks if the current scope AI desires the specified amount of divisions.	Must use either > or < operators.	1.0
+has_template_ai_majority_unit	<string>
+The unit to check for.	
+has_template_ai_majority_unit = infantry
+Checks if the current scope AI has a division template mostly made up of the specified unit.		1.0
+地区作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in state scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+state	<scope> / <variable>
+The state to check for.	
+state = 10
+state = var:state
+Checks if the current scope is the specified state.		1.0
+region	<int>
+The strategic region id to check for.	
+region = 10
+Checks if the current scope is a state in the specified strategic region.		1.0
+area	<int>
+The supply area id to check for.	
+area = 6
+Checks if the current scope is a state in the specified supply area.		1.0
+has_state_flag	<string>
+The flag to check for.	
+has_state_flag = my_flag
+Checks if the current scope has the specified flag.		1.0
+has_state_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_state_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+<building>	<building> = <int>
+The amount of the specified building to to check for.	
+arms_factory > 10
+Checks if the current scope has the specified amount of the specified building.	Must use either > or < operators.	1.0
+state_population	<float>
+The amount to check for.	
+state_population > 10000
+Checks if the current scope has the specified state population.	Must use either > or < operators.	1.0
+is_capital	<bool>
+Boolean.	
+is_capital = yes
+Checks if the current scope is a capital.		1.5
+is_controlled_by	<scope> / <variable>
+The country to check for.	
+is_controlled_by = GER
+Checks if the current scope is controlled by the specified country.		1.0
+is_fully_controlled_by	<scope> / <variable>
+The country to check for.	
+is_fully_controlled_by = GER
+Checks if the current scope is fully controlled by the specified country.		1.5
+is_owned_by	<scope> / <variable>
+The country to check for.	
+is_owned_by = GER
+Checks if the current scope is owned by the specified country.		1.0
+is_claimed_by	<scope> / <variable>
+The country to check for.	
+is_claimed_by = GER
+Checks if the current scope is claimed by the specified country.		1.0
+is_core_of	<scope> / <variable>
+The country to check for.	
+is_core_of = GER
+Checks if the current scope is a core of the specified country.		1.0
+is_owned_and_controlled_by	<scope> / <variable>
+The country to check for.	
+is_owned_and_controlled_by = GER
+Checks if the current scope is owned and controlled by the specified country.		1.0
+is_demilitarized_zone	<bool>
+Boolean.	
+is_demilitarized_zone = yes
+Checks if the current scope is a demilitarized zone.		1.0
+is_border_conflict	<bool>
+Boolean.	
+is_border_conflict = yes
+Checks if the current scope is part of a border war.		1.0
+is_in_home_area	<bool>
+Boolean.	
+is_in_home_area = yes
+Checks if the current scope is connected to the capital state over land.		1.0
+is_coastal	<bool>
+Boolean.	
+is_coastal = yes
+Checks if the current scope is a coastal state.		1.0
+is_island_state	<bool>
+Boolean.	
+is_island_state = yes
+Checks if the current scope is a coastal state with no adjacent land states.		1.0
+is_on_continent	<string>
+The continent to check for.	
+is_on_continent = europe
+Checks if the current scope is on the specified continent.	Continents are found in /Hearts of Iron IV/map/continent.txt.	1.0
+has_state_category	<string>
+The category to check for.	
+has_state_category = rural
+Checks if the current scope has the specified category.	State categories are found in /Hearts of Iron IV/common/state_category/*.txt.	1.0
+state_strategic_value	<int>
+The amount to check for.	
+state_strategic_value > 10
+Checks if the current scope has the specified strategic value.	Must use either > or < operators.	1.5
+state_and_terrain_strategic_value	<int>
+The amount to check for.	
+state_and_terrain_strategic_value > 10
+Checks if the current scope has the specified state and terrain strategic value.	Must use either > or < operators.	1.5
+free_building_slots	building = <string>
+The building to check for.
+size = <int>
+The amount to check for.
+include_locked = <bool>
+Whether to include locked slots.
+
+free_building_slots = {
+    building = arms_factory
+    size > 10
+    include_locked = yes
+}
+Checks if the current scope has available slots for the specified amount of buildings.	Must use either > or < operators for size.	1.0
+any_province_building_level	building = <string>
+The building to check for.
+limit = <int>
+The amount to check for.
+Province scope
+id = <int>
+The province to check for.
+limit_to_border = <bool>
+Whether to limit check to border provinces.
+
+any_province_building_level = {
+    province = {
+        id = 445
+        id = 494
+        limit_to_border = yes
+    }
+    building = bunker
+    level < 5
+}
+Checks if the current scope has the specified provincal building at the specified amount in the specified provinces.	Must use either > or < operators for level.	1.0
+num_owned_neighbour_states	owner = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+num_owned_neighbour_states = {
+    owner = GER
+    count = 2
+}
+Checks if the current scope has the specified amount of neighbor states belonging to the specified country.	Must use either > or < operators for count.	1.0
+has_claimed_state_in_peace_conference	<scope> / <variable>
+The country to check for.	
+has_claimed_state_in_peace_conference = GER
+Checks if the current scope has been claimed by the specified country in a peace conference.		1.0
+num_claimed_peace_conference_neighbour_states	owner = <scope>
+The country to check for.
+count = <int>
+The amount to check for.
+
+num_claimed_peace_conference_neighbour_states = {
+    owner = GER
+    count > 2
+}
+Checks if the current scope has the specified amount of neighbor states claimed by the specified country in a peace conference.	Must use either > or < operators for count.	1.0
+distance_to	distance = <float>
+The distance to check for.
+state = <scope>
+The state to compare against.
+
+distance_to = {
+    value > 1000
+    target = 49
+}
+Checks if the current scope is at the specified distance from the specified state.	Must use either > or < operators for distance.	1.0
+ships_in_area	area = <int>
+The strategic region to check for.
+size = <int>
+The amount to check for.
+
+Checks if the current scope has the specified amount of ships in the specified strategic region.	Must use either > or < operators for count.	1.0
+any_neighbor_state	triggers	
+any_neighbor_state = { is_coastal = yes }
+Returns true if THIS has at least one adjacent state that fulfills the sub-triggers; false otherwise. Evaluation stops early if any neighbor passes the check.		
+all_neighbor_state	triggers	
+all_neighbor_state = { is_coastal = yes }
+Returns false if THIS has no adjacent states or at least one of them fails the sub-triggers; true otherwise. Evaluation stops early if any neighbor fails the check.		
+部队将领作用域
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in unit leader scope.
+
+总览
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Name	Parameters	Examples	Description	Notes	Version Added
+has_id	<int>
+The id to check for.	
+has_id = 1
+Checks if the current scope has the specificed unit leader id.		1.5
+has_unit_leader_flag	<string>
+The flag to check for.	
+has_unit_leader_flag = my_flag
+Checks if the current scope has the specified flag.		1.5
+has_unit_leader_flag	flag = <string>
+The flag to check.
+value = <int>
+The flag value to check for. Optional.
+date = <date>
+The flag creation date to check for. Optional.
+days = <int>
+The duration the flag existed for. Optional.
+
+has_unit_leader_flag = {
+    flag = my_flag
+    days > 30
+    date > 1936.6.1
+    value > 0
+}
+Compares the specified flag's last set date, days since last set, and/or value.	If not set, the value comparison is >0. value is limited between -32768 and 32767.	1.0
+is_leading_army	<bool>
+Boolean.	
+is_leading_army = yes
+Checks if the current scope is leading a single army.		1.5
+is_leading_army_group	<bool>
+Boolean.	
+is_leading_army_group = yes
+Checks if the current scope is leading an army group.		1.5
+is_field_marshal	<bool>
+Boolean.	
+is_field_marshal = yes
+Checks if the current scope is a Field Marshal.		1.5
+is_assigned	<bool>
+Boolean.	
+is_assigned = yes
+Checks if the current scope is an assigned unit leader.		1.5
+has_trait	<string>
+The trait to check for.	
+has_trait = offensive_doctrine
+Checks if the current scope has the specified trait.		1.5
+can_select_trait	<string>
+The trait to check for.	
+can_select_trait = offensive_doctrine
+Checks if the current scope can select the specified trait.		1.5
+has_ability	<string>
+The ability to check for.	
+has_ability = glider_planes
+Checks if the current scope has the specified unit leader ability.		1.5
+skill	<int>
+The amount to check for.	
+skill > 1
+Checks if the current scope has a Skill above the specified amount.	Must use either > or < operators.	1.0
+skill_advantage	<int>
+The amount to check for.	
+skill_advantage > 1
+Checks if the current scope has a Skill advantage above the specified amount in against an enemy unit leader whilst in combat.	Must use either > or < operators.	1.0
+planning_skill_level	<int>
+The amount to check for.	
+planning_skill_level > 1
+Checks if the current scope has a Planning skill above the specified amount.	Must use either > or < operators.	1.5
+logistics_skill_level	<int>
+The amount to check for.	
+logistics_skill_level > 1
+Checks if the current scope has a Logistics skill above the specified amount.	Must use either > or < operators.	1.5
+defense_skill_level	<int>
+The amount to check for.	
+defense_skill_level > 1
+Checks if the current scope has a Defense skill above the specified amount.	Must use either > or < operators.	1.5
+attack_skill_level	<int>
+The amount to check for.	
+attack_skill_level > 1
+Checks if the current scope has a Attack skill above the specified amount.	Must use either > or < operators.	1.5
+average_stats	<int>
+The amount to check for.	
+average_stats > 5
+Checks if the current scope has an average skill above the specified amount.	Must use either > or < operators.	1.5
+is_border_war	<bool>
+Boolean.	
+is_border_war = yes
+Checks if the current socpe is in a border war.		1.5
+num_units	<int>
+The amount to check for.	
+num_units > 5
+Checks if the current scope is commanding the specified amount of divisions.	Must use either > or < operators.	1.5
+战斗
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+These triggers only work in special unit leader combat scopes, i.e. Combat Tactics.
+
+They should not be used in the regular unit leader scopes.
+
+Name	Parameters	Examples	Description	Notes	Version Added
+hardness	<float>
+The amount to check for.	
+hardness > 0.5
+Checks if the current scope has the specified amount of hardness.	Must use either > or < operators.	1.0
+armor	<float>
+The amount to check for.	
+armor > 0.5
+Checks if the current scope has the specified amount of armor units.	Must use either > or < operators.	1.0
+dig_in	<float>
+The amount to check for.	
+dig_in > 0.5
+Checks if the current scope has the specified amount of Dig In bonus.	Must use either > or < operators.	1.0
+min_planning	<float>
+The amount to check for.	
+min_planning > 0.5
+Checks if the current scope has the specified amount of planning.	Must use either > or < operators.	1.0
+fastest_unit	<float>
+The speed in km/h to check for.	
+fastest_unit > 12
+Checks if the current scope has a unit with the specified speed.	Must use either > or < operators.	1.0
+temperature	<float>
+The temperature in celsius to check for.	
+temperature > 20
+Checks if the current scope is in a province with a temperature above the specified amount.	Must use either > or < operators.	1.0
+reserves	<float>
+The amount to check for.	
+reserves > 10
+Checks if the current scope has the specified amount of reserves waiting.	Must use either > or < operators.	1.0
+has_cavalry_ratio	<float>
+The ratio to check for.	
+has_cavalry_ratio > 0.5
+Checks if the current scope has the specified ratio of cavalry in their division composition.	Must use either > or < operators.	1.0
+has_combat_modifier	<string>
+The modifier to check for.	
+has_combat_modifier = river_crossing
+Checks if the current scope has the specified combat modifier.		1.0
+is_fighting_in_terrain	<string>
+The terrain to check for.	
+is_fighting_in_terrain = desert
+Checks if the current scope is fighting in the specified terrain.		1.0
+phase	<bool>
+Boolean.	
+phase = yes
+Checks if the current scope is in phase.		1.0
+recon_advantage	<bool>
+Boolean.	
+recon_advantage = yes
+Checks if the current scope has a recon advantage.		1.0
+night	<bool>
+Boolean.	
+night = yes
+Checks if the current scope is fighting at night.		1.0
+frontage_full	<bool>
+Boolean.	
+frontage_full = yes
+Checks if the current scope has a full combat width.		1.0
+has_flanked_opponent	<bool>
+Boolean.	
+has_flanked_opponent = yes
+Checks if the current scope has flanked their opponent.		1.0
+has_max_planning	<bool>
+Boolean.	
+has_max_planning = yes
+Checks if the current scope has the maximum planning bonus.		1.0
+has_reserves	<bool>
+Boolean.	
+has_reserves = yes
+Checks if the current scope has any reserves waiting.		1.0
+is_amphibious_invasion	<bool>
+Boolean.	
+is_amphibious_invasion = yes
+Checks if the current scope is performing an amphibious invasion.		1.0
+is_attacker	<bool>
+Boolean.	
+is_attacker = yes
+Checks if the current scope is attacking.		1.0
+is_defender	<bool>
+Boolean.	
+is_defender = yes
+Checks if the current scope is defending.		1.0
+is_winning	<bool>
+Boolean.	
+is_winning = yes
+Checks if the current scope is winning their battle.		1.0
+is_fighting_air_units	<bool>
+Boolean.	
+is_fighting_air_units = yes
+Checks if the current scope is fighting air units.		1.0
+less_combat_width_than_opponent	<bool>
+Boolean.	
+less_combat_width_than_opponent = yes
+Checks if the current scope is fighting with less combat width than their opponent.		1.0
+has_carrier_airwings_on_mission	<bool>
+Boolean.	
+has_carrier_airwings_on_mission = yes
+Checks if the current scope has carrier airwings on a mission.		1.0
+has_carrier_airwings_in_own_combat	<bool>
+Boolean.	
+has_carrier_airwings_in_own_combat = yes
+Checks if the current scope has carrier airwings in their own combat.		1.0
+变量
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+Can be used in country, state or unit leader scopes.
+
+Name	Parameters	Examples	Description	Notes	Version Added
+has_variable	<variable>
+The variable to check.	
+has_variable = my_var
+Checks if the specified variables exists for the current scope.		1.5
+check_variable	var = <variable>
+The variable to check.
+value = <float> / <variable>
+The value to check for.
+compare = <type>
+The type of comparison. Optional, can use < or > instead.
+
+check_variable = {
+    var = my_var
+    value = 10
+    compare = greater_than_or_equals
+}
+check_variable = {
+    my_var > 10
+}
+Check the specified variable for the current scope.	Possible compare types:
+less_than
+less_than_or_equals
+greater_than
+greater_than_or_equals
+equals
+not_equals
+1.5
+print_variables	print_global = <bool>
+Print global variables. Defaults to no.
+var_list = <list>
+The variables to print. Defaults to all variables.
+file = <string>The file path to log to. Defaults to "variable_dump".
+text = <string>Text to prepend. Defaults to "No Header".
+append = <bool>Whether to append to the file instead of overwrite. Defaults to yes
+
+print_variables = {
+    var_list = { myvar1 myvar2 }
+    file = "my_dump_file"
+    text = "my header"
+}
+Dumps the specified variables from the current scope and optionally the global scope into logs/variable_dumps/<file>.log. Evaluates to true.	See Variables#Debugging	
+Remember that variables need to refer to the scope they were set in. This means you can't check a country variable in a state scope without scoping the variable.
+
+For example, to get the country variable whilst in a state scope, you'd do the following:
+
+<country> = {
+    <state> = {
+        limit = {
+            check_variable = { from.my_country_var > 0.0 }
+        }
+    }
+}
+See Variables for more information.
+
+运算符
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+There are two extra operators for triggers, > (greater than) and < (less than).
+
+They are used for numerical or date triggers, and provide an exclusive check for their value. This means a trigger using them will return true if the result is any number below (or above).
+
+Note that equals in Hearts of Iron 4 only checks for exact equality, i.e. x = y, whereas in previous games it checks for equals or greater than, i.e. x >= y.
+
+Context scopes
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.5。
+There are three general scopes all triggers operate in:
+
+country
+state
+unit leader
+They give context to a trigger by stating what the trigger is checking against.
+
+Each country acts as a sub-scope of the general country scope, i.e. GER = { } will check only against Germany, whereas any_country will check against all countries. Likewise for states and unit leaders.
+
+The important lesson here is that triggers for one type of scope will not work in the other scopes generally (there are exceptions).
+monthly_population	增加国家所有的省份每月的人口增长。(似乎木大）	
+monthly_population = 0.5
+Percentual (0.01 being 1%).百分比		1.0
+nuclear_production	允许核弹生产	
+nuclear_production = 1
+Boolean.布尔		1.0
+nuclear_production_factor	增加制造核武器的速度。参考idea：BUL_buhovo_uranium_mines	
+nuclear_production_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+research_sharing_per_country_bonus	在技术共享时，增加每个国家在研究速度上的加成。	
+research_sharing_per_country_bonus = 0.5
+Flat.数值		1.3
+research_sharing_per_country_bonus_factor	按百分比增加每个国家在技术分享时的研究速度加成。	
+research_sharing_per_country_bonus_factor = 0.5
+Percentual (0.01 being 1%).		1.3
+research_speed_factor	增加科研速度。参考idea：ENG_colonial_elite	
+research_speed_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+Politics政治
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+defensive_war_stability_factor	对参加防御性战争所带来的稳定的修正。参考idea：USA_war_powers_act	
+defensive_war_stability_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+disabled_ideas	禁止手动改变ideas(包括顾问和法律)。参考idea：SPR_political_violence	
+disabled_ideas = 1
+Boolean.		1.9
+<idea category>_cost_factor	增加添加一个特定的类别idea的政治点数(PP）花费。参考idea：PRC_power_struggles	
+political_advisor_cost_factor = 0.5
+Percentual (0.01 being 1%).	idea类别可以在common/idea_tags中找到。还包括improve_relations_maintain。	1.0
+female_random_country_leader_chance	增加随机产生的国家领导人为女性的几率。	
+female_random_country_leader_chance = 0.3
+Percentual (0.01 being 1%).		1.0
+max_surrender_limit_offset	Minimum Surrender Limit.最小投降极限。
+参考idea：SPA_death_before_surrender
+
+max_surrender_limit_offset = 0.3
+Flat.		1.0
+offensive_war_stability_factor	对参加进攻性战争所带来的稳定的修正。参考idea：USA_war_powers_act	
+offensive_war_stability_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+party_popularity_stability_factor	Modifier the stability gained by the popularity of the ruling party.修正由于执政党的声望而获得稳定。	
+party_popularity_stability_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+political_power_cost	每日PP花费。参考idea：GER_mefo_bills_1	
+political_power_cost = 0.3
+Flat.		1.0
+political_power_gain	每日PP获得。参考idea：CHI_executive_yuan	
+political_power_gain = 0.3
+Flat.		1.0
+political_power_factor	以百分比修正每日PP的获得。参考idea：PRC_government_corruption	
+political_power_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+stability_factor	Modifies stability of the country.(用于变更国家的 稳定度）参考idea：CHI_grain_tax	
+stability_factor = 0.3
+Flat.		1.0
+stability_weekly	Modifies weekly stability gain of the country.(用于变更国家的 每周稳定度增长）参考idea：FRA_constitutional_revision	
+stability_weekly = 0.01
+Flat.		1.0
+stability_weekly_factor	Modifies weekly stability gain of the country by a percentage.以百分比修正每周国家稳定度增长	
+stability_weekly_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+war_stability_factor	Modifies the stability loss caused by being at war.修正战争造成的稳定性损失。	
+war_stability_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+war_support_factor	Modifies war support of the country.修正国家的战争支持度。参考idea：PRC_low_popular_support	
+war_support_factor = 0.3
+Flat.		1.0
+war_support_weekly	Modifies weekly war support gain of the country.修正每周获得的战争支持度。参考idea：HOL_volk_en_vaderland	
+war_support_weekly = 0.01
+Flat.		1.0
+war_support_weekly_factor	Modifies weekly war support gain of the country by a percentage.以百分比的形成修正每周获得的战争支持度。	
+war_support_weekly_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+drift_defence_factor	Ideology drift defense.意识形态变化抵制力度。参考idea：sour_loser	
+drift_defence_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+<ideology>_drift	Daily gain of the specified ideology.特定意识形态的每日支持度增长。参考idea：GER_align_hungary(fascism_drift = 0.2）	
+communism_drift = 0.03
+Flat.		1.0
+<ideology>_acceptance	Likelihood of AI to accept offers from countries of the specified ideology.AI对特定意识形态外交接纳度。参考idea：GER_align_hungary(fascism_acceptance = 85）	
+fascism_acceptance = 50
+Flat.		1.0
+Trade贸易
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+min_export	Increases the amount of resources to market.
+增加可出口资源
+
+min_export = 0.5
+Flat.		1.0
+trade_opinion_factor	Makes AI more likely to purchase resources from this country.
+使AI更乐于从此国购买资源
+
+trade_opinion_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+Diplomacy外交
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+civil_war_involvement_tension	改变干预盟友内战所需的世界紧张度。	
+civil_war_involvement_tension = 0.5
+Flat.		1.0
+enemy_declare_war_tension	增加敌人对我们发动战争的理由所需的世界紧张局势。	
+enemy_declare_war_tension = 0.5
+Flat.		1.0
+enemy_justify_war_goal_time	增加了敌人正当化对我们的战争目标所需的时间。	
+enemy_declare_war_tension = 0.5
+Percentual (0.01 being 1%).		1.0
+faction_trade_opinion_factor	增加派系成员之间交易所获得的好感。	
+faction_trade_opinion_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+generate_wargoal_tension	增加我们产生战争目标所需的紧张度。	
+generate_wargoal_tension = 0.3
+Flat.		1.0
+guarantee_cost	该国为保证另一个国家而付出的政治点。	
+guarantee_cost = 0.3
+Percentual (0.01 being 1%).		1.0
+guarantee_tension	一个国家必须保证另一个国家的世界紧度。	
+guarantee_tension = 0.3
+Flat.		1.0
+join_faction_tension	该国加入派系所需的世界紧张度。	
+join_faction_tension = 0.3
+Flat.		1.0
+justify_war_goal_time	正当化战争目标所需的时间。	
+justify_war_goal_time = 0.3
+Percentual (0.01 being 1%).		1.0
+justify_war_goal_when_in_major_war_time	在与大国发生战争时正当化战争目标所需的时间。	
+justify_war_goal_when_in_major_war_time = 0.3
+Percentual (0.01 being 1%).		1.0
+lend_lease_tension	租借法案所需的世界紧张局势。	
+lend_lease_tension = 0.3
+Flat.		1.0
+opinion_gain_monthly	增加从“改善关系”外交行动中获得的好感。	
+opinion_gain_monthly = 5
+Flat.		1.0
+opinion_gain_monthly_factor	百分比修正“改善关系”外交行动的好感增加。	
+opinion_gain_monthly_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+opinion_gain_monthly_same_ideology	Increases opinion gain from the 'Improve relations' diplomatic action for countries of the same ideology.为相同意识形态的国家增加“改善关系”外交行动的好感度。	
+opinion_gain_monthly_same_ideology = 5
+Flat.		1.0
+opinion_gain_monthly_same_ideology_factor	Increases opinion gain from the 'Improve relations' diplomatic action for countries of the same ideology by a percentage.以百分比修正“改善关系”外交行动对具有相同意识形态的国家的好感增加	
+opinion_gain_monthly_same_ideology_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+request_lease_tension	Necessary world tension for the country to request lend-lease.该国申请贷款租赁所需的世界紧张局势。	
+request_lease_tension = 0.3
+Percentual (0.01 being 1%).		1.0
+surrender_limit	Increases the percentage of victory points the country needs to lose control of to capitulate.以百分比增加国家需要失去控制才能投降的胜利点。	
+surrender_limit = 0.1
+Percentual (0.01 being 1%).		1.0
+Autonomy自治
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+autonomy_gain	Daily gain of autonomy.	
+autonomy_gain = 0.5
+加法		1.3
+subjects_autonomy_gain	Daily gain of autonomy in our subjects.	
+subjects_autonomy_gain = 0.5
+Flat.		1.3
+autonomy_gain_ll_to_overlord	Modifies gain of autonomy from lend-leasing to the overworld.	
+autonomy_gain_ll_to_overlord = 0.5
+Flat.		1.3
+autonomy_gain_ll_to_overlord_factor	Modifies gain of autonomy from lend-leasing to the overworld by a percentage.	
+autonomy_gain_ll_to_overlord_factor = 0.5
+Percentual (0.01 being 1%).		1.3
+autonomy_gain_ll_to_subject	Modifies loss of autonomy from lend-leasing to the subject.	
+autonomy_gain_ll_to_subject = 0.5
+Flat.		1.3
+autonomy_gain_ll_to_subject_factor	Modifies loss of autonomy from lend-leasing to the subject by a percentage.	
+autonomy_gain_ll_to_subject_factor = 0.5
+Percentual (0.01 being 1%).		1.3
+autonomy_gain_trade	Modifies gain of autonomy from the overworld trading with the subject.	
+autonomy_gain_trade = 0.5
+Flat.		1.3
+autonomy_gain_trade_factor	Modifies gain of autonomy from the overworld trading with the subject by a percentage.	
+autonomy_gain_trade_factor = 0.5
+Percentual (0.01 being 1%).		1.3
+autonomy_gain_warscore	Modifies gain of autonomy from the subject gaining warscore.	
+autonomy_gain_trade = 0.5
+Flat.		1.3
+autonomy_gain_warscore_factor	Modifies gain of autonomy from the subject gaining warscore by a percentage.	
+autonomy_gain_warscore_factor = 0.5
+Percentual (0.01 being 1%).		1.3
+autonomy_manpower_share	Modifies the amount of manpower the overworld can use from the subject.	
+autonomy_manpower_share = 0.5
+Percentual (0.01 being 1%).		1.3
+autonomy_manpower_share	Modifies the amount of manpower the overworld can use from the subject.	
+autonomy_manpower_share = 0.5
+Percentual (0.01 being 1%).		1.3
+can_master_build_for_us	Makes the overworld be able to build in the subject.	
+can_master_build_for_us = 1
+Boolean.		1.3
+cic_to_overlord_factor	Modifies the amount of the subject's civilian industry that goes to the overlord.	
+cic_to_overlord_factor = 0.3
+Percentual (0.01 being 1%).		1.3
+mic_to_overlord_factor	Modifies the amount of the subject's military industry that goes to the overlord.	
+mic_to_overlord_factor = 0.3
+Percentual (0.01 being 1%).		1.3
+extra_trade_to_overlord_factor	Modifies the amount of the subject's resources that the overlord can receive via trade.	
+extra_trade_to_overlord_factor = 0.3
+Percentual (0.01 being 1%).		1.3
+license_subject_master_purchase_cost	Modifies the cost of licensed production from the overlord.	
+license_subject_master_purchase_cost = 0.3
+Percentual (0.01 being 1%).		1.4
+master_build_autonomy_factor	Modifies loss of autonomy from the overworld building in subject's states by a percentage.	
+master_build_autonomy_factor = 0.3
+Percentual (0.01 being 1%).		1.3
+master_ideology_drift	Increases daily gain of the overlord's ideology in the country.	
+master_ideology_drift = 0.03
+Flat.		1.0
+overlord_trade_cost_factor	Modifies the cost of trade between the overlord and the subject in civilian factories.	
+overlord_trade_cost_factor = -0.3
+Percentual (0.01 being 1%).		1.3
+
+Governments in Exile流亡政府
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+dockyard_donations	Amount of dockyards donated.捐赠的造船厂数量。	
+dockyard_donations = 2
+Flat.		1.6
+industrial_factory_donations	Amount of civilian factories donated.捐赠的民用工厂数量。	
+industrial_factory_donations = 2
+Flat.		1.6
+military_factory_donations	Amount of military factories donated.捐赠的军工厂数量。	
+military_factory_donations = 2
+Flat.		1.6
+exile_manpower_factor	Amount of manpower given to the host country.提供给东道国的人力数量。	
+exile_manpower_factor = 0.5
+Percentual (0.01 being 1%).		1.6
+legitimacy_daily	Increases the amount of legitimacy gained daily.增加每天获得的合法性数量。	
+legitimacy_daily = 1
+Flat.		1.6
+legitimacy_gain_factor	Increases the amount of legitimacy gained daily by a percentage.以百分比修正每日获得的合法性。	
+legitimacy_gain_factor = 1
+Percentual (0.01 being 1%).		1.6
+Equipment装备
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+equipment_capture	Increases the amount of equipment captured in combat.以数值形式修正战斗中缴获的装备。	
+equipment_capture = 100
+Flat.		1.0
+equipment_capture_factor	Increases the amount of equipment captured in combat by a percentage.以百分比形式修正战斗中缴获的装备。	
+equipment_capture_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+equipment_conversion_speed	Increases the speed at which equipment is converted.修正装备改装速度。	
+equipment_conversion_speed = 0.5 
+Percentual (0.01 being 1%).		1.0
+equipment_upgrade_xp_cost	Increases the experience cost to upgrade military equipment.修正改造装备所需的经验。	
+equipment_upgrade_xp_cost = 0.5 
+Percentual (0.01 being 1%).		1.0
+license_purchase_cost	Increases the cost of licensed equipment.以数值形式修正生产许可花费。	
+license_purchase_cost = 10 
+Flat.	Also allows specifying category as license_<category>_purchase_cost. Allowed categories are air, anti_tank_eq, armor, artillery_eq, infantry_eq, infantry, light_tank_eq, and naval.	1.4
+license_purchase_cost_factor	Increases the cost of licensed equipment by a percentage.以百分比形式修正生产许可花费。	
+license_purchase_cost_factor = 0.5 
+Percentual (0.01 being 1%).	Also allows specifying category as license_<category>_purchase_cost_factor. Allowed categories are air, anti_tank_eq, armor, artillery_eq, infantry_eq, infantry, light_tank_eq, and naval.	1.4
+license_tech_difference_speed_factor	Increases the production penalty of licensed equipment by tech difference by a percentage.修正生产许可证的科技差距惩罚。	
+license_tech_difference_speed_factor = 0.5 
+Percentual (0.01 being 1%).	Also allows specifying category as license_<category>_tech_difference_speed_factor. Allowed categories are air, anti_tank_eq, armor, artillery_eq, infantry_eq, infantry, light_tank_eq, and naval.	1.4
+production_factory_efficiency_gain_factor	Production efficiency growth.修正生产效率增长。	
+production_factory_efficiency_gain_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+production_factory_max_efficiency_factor	Production efficiency cap.修正生产效率上限。	
+production_factory_max_efficiency_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+production_factory_start_efficiency_factor	Production efficiency base.修正初始生产效率。	
+production_factory_start_efficiency_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+production_lack_of_resource_penalty_factor	Lack of resources penalty.修正资源不足惩罚。	
+production_lack_of_resource_penalty_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+refit_ic_cost	Modifies the IC cost for refitting equipment.修正装备改装的生产花费。	
+refit_ic_cost = 0.5 
+Percentual (0.01 being 1%).		1.0
+refit_speed	Modifies the speed of refitting equipment.修正装备改装速度。	
+refit_speed = 0.5 
+Percentual (0.01 being 1%).		1.0
+Military军事
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+command_power_gain	Increases the daily gain of command power.
+增加每日获得的指挥点数
+
+command_power_gain = 0.5
+加法		1.5
+command_power_gain_mult	Increases the daily gain of command power by a percentage.按百分比增加每日获得的指挥权。	
+command_power_gain = 0.5
+Percentual (0.01 being 1%).		1.5
+conscription	Increases the recruitable percentage of the total population.增加适役人口的百分比。	
+conscription = 0.02
+Flat.		1.0
+conscription_factor	Increases the recruitable percentage of the total population by a percent.按百分比增加适役人口。	
+conscription = 0.3
+Percentual (0.01 being 1%).		1.0
+experience_gain_<unit type>_combat_factor	Increases the experience gain in combat by the specified unit type.增加指定单位类型的战斗经验	
+experience_gain_infantry_combat_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+experience_gain_<unit type>_training_factor	Increases the experience gain in training by the specified unit type.增加指定单位类型的训练经验增益。	
+experience_gain_infantry_training_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+experience_loss_factor	Changes the loss in division's experience in combat.改变师在战斗中的经验损失。	
+experience_loss_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+female_random_army_leader_chance	Increases the chance for a randomly-generated army leader to be female.增加随机生成的军队领袖为女性的几率。	
+female_random_army_leader_chance = 0.3
+Percentual (0.01 being 1%).		1.0
+land_equipment_upgrade_xp_cost	Increases the experience cost to upgrade land army equipment.增加升级陆军装备的经验成本。	
+land_equipment_upgrade_xp_cost = 0.3
+Percentual (0.01 being 1%).		1.0
+land_reinforce_rate	Increases the rate at which reinforcements to divisions arrive.提高师的增援率。	
+land_reinforce_rate = 0.3
+Percentual (0.01 being 1%).		1.0
+max_command_power	Increases maximum command power.增加最大指挥点。	
+max_command_power = 20
+Flat.		1.5
+max_command_power_mult	Increases maximum command power by a percentage.按百分比增加最大指挥点。	
+max_command_power_mult = 0.3 
+Percentual (0.01 being 1%).		1.5
+minimum_training_level	Increases training level necessary for the unit to deploy.提高部队部署所需的训练水平。	
+minimum_training_level = 0.3 
+Percentual (0.01 being 1%).		1.0
+weekly_manpower	Amount of manpower gained each week.每周获得的人力数量。	
+weekly_manpower = 1000 
+Flat.		1.6
+army_leader_cost_factor	The cost in political power to recruit an unit leader for the land army.为陆军招募一名单位领导者的政治权力成本。	
+army_leader_cost_factor = 0.5 
+Percentual (0.01 being 1%).		1.5
+army_leader_start_level	Bonus to the starting level of generic unit leaders.普通单位领导者的起始等级奖励。	
+army_leader_start_level = 1 
+Flat.		1.5
+army_leader_start_attack_level	Bonus to the starting level of attack in generic unit leaders.对普通单位领导者的起始攻击级别的奖励。	
+army_leader_start_attack_level = 1 
+Flat.		1.5
+army_leader_start_defense_level	Bonus to the starting level of defense in generic unit leaders.通用单位领导者的初始防御等级加成。	
+army_leader_start_defense_level = 1 
+Flat.		1.5
+army_leader_start_logistics_level	Bonus to the starting level of logistics in generic unit leaders.对通用单位领导者的后勤起始水平的奖励。	
+army_leader_start_logistics_level = 1 
+Flat.		1.5
+military_leader_cost_factor	The cost in political power to recruit an unit leader.招募单位领导的政治权力成本。	
+military_leader_cost_factor = 0.5 
+Percentual (0.01 being 1%).		1.5
+Navy海军
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+female_random_admiral_chance	Increases the chance for a randomly-generated admiral to be female.增加随机生成的海军上将为女性的几率。	
+female_random_admiral_chance = 0.3
+Percentual (0.01 being 1%).		1.0
+naval_equipment_upgrade_xp_cost	Increases the naval experience cost to upgrade equipment.增加了装备升级的海军经验成本。	
+naval_equipment_upgrade_xp_cost = 0.3
+Percentual (0.01 being 1%).		1.0
+navy_refit_ic_cost	The IC cost to refit naval equipment.改装海军设备的IC成本。	
+navy_refit_ic_cost = 20
+Flat.		1.6
+navy_refit_speed	The speed at whcih naval equipment is refitted.改装海军装备的速度	
+navy_refit_speed = 0.5
+Percentual (0.01 being 1%).		1.6
+navy_leader_cost_factor	The cost in political power to recruit an unit leader for the land navy.	
+navy_leader_cost_factor = 0.5 
+Percentual (0.01 being 1%).		1.5
+navy_leader_start_level	Bonus to the starting level of generic unit leaders.海军上将的初始等级	
+navy_leader_start_level = 1 
+Flat.		1.5
+navy_leader_start_attack_level	Bonus to the starting level of attack in generic unit leaders.同陆军上将初始效果	
+navy_leader_start_attack_level = 1 
+Flat.		1.5
+navy_leader_start_coordination_level	Bonus to the starting level of coordination in generic unit leaders.	
+navy_leader_start_coordination_level = 1 
+Flat.		1.5
+navy_leader_start_defense_level	Bonus to the starting level of defense in generic unit leaders.	
+navy_leader_start_defense_level = 1 
+Flat.		1.5
+navy_leader_start_maneuvering_level	Bonus to the starting level of maneuvering in generic unit leaders.	
+navy_leader_start_maneuvering_level = 1 
+Flat.		1.5
+Airforce空军
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+air_equipment_upgrade_xp_cost	Increases the air experience cost to upgrade equipment.	
+air_equipment_upgrade_xp_cost = 0.5
+Percentual (0.01 being 1%).		1.0
+air_volunteer_cap	Increases the amount of airforce you can send as volunteers.增加你派遣的航空志愿队的数量	
+air_volunteer_cap = 100
+Flat.		1.5
+experience_gain_<plane type>_combat_factor	Increases the experience gain in combat by the specified plane type.增加指定飞机类型的战斗经验。	
+experience_gain_fighter_combat_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+experience_gain_<plane type>_training_factor	Increases the experience gain in training by the specified plane type.增加指定飞机类型的训练经验。	
+experience_gain_fighter_training_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+Fuel燃料
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+base_fuel_gain	Increases base daily gain of fuel.	
+base_fuel_gain = 100
+Flat.		1.6
+base_fuel_gain_factor	Increases base daily gain of fuel by a percentage.	
+base_fuel_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.6
+fuel_cost	Increases daily cost of fuel.	
+fuel_cost = 100
+Flat.		1.6
+fuel_gain	Increases daily gain of fuel.	
+fuel_gain = 100
+Flat.		1.6
+fuel_gain_factor	Increases daily gain of fuel by a percentage.	
+fuel_gain_factor = 100
+Percentual (0.01 being 1%).		1.6
+fuel_gain_from_states	Increases daily gain of fuel from our controlled oil.	
+fuel_gain_from_states = 100
+Flat.		1.6
+fuel_gain_from_states_factor	Increases daily gain of fuel from our controlled oil by a percentage.	
+fuel_gain_from_states_factor = 0.5
+Percentual (0.01 being 1%).		1.6
+max_fuel	Increases maximum amount of fuel you can have.	
+max_fuel = 100
+Flat.		1.6
+max_fuel_factor	Increases maximum amount of fuel you can have by a percentage.	
+max_fuel_factor = 0.3 
+Percentual (0.01 being 1%).		1.6
+Buildings建筑
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+civilian_factory_use	Uses the specified amount of civilian factory as a special project.	
+civilian_factory_use = 3
+Flat.	Only has an effect with the Waking the Tiger DLC.	1.5
+consumer_goods_factor	Changes the percentage of factories used for consumer goods.	
+consumer_goods_factor = 0.1
+消费品工厂
+Flat.		1.0
+conversion_cost_civ_to_mil_factor	Changes the cost to convert civilian factories to military factories.	
+conversion_cost_civ_to_mil_factor = 0.4
+Percentual (0.01 being 1%).		1.5
+conversion_cost_mil_to_civ_factor	Changes the cost to convert military factories to civilian factories.	
+conversion_cost_mil_to_civ_factor = 0.4
+Percentual (0.01 being 1%).		1.5
+global_building_slots	Increases amount of building slots in our every state.	
+global_building_slots = 1
+Flat.		1.0
+global_building_slots_factor	Increases amount of building slots in our every state by a percentage.	
+global_building_slots_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+industrial_capacity_dockyard	Dockyard output.海军船坞产出	
+industrial_capacity_dockyard = 0.3
+Percentual (0.01 being 1%).		1.0
+industrial_capacity_factory	Military factory output.军工厂产出	
+industrial_capacity_factory = 0.3
+Percentual (0.01 being 1%).		1.0
+industry_air_damage_factor	Amount of damage our factories receive from air bombings.	
+industry_air_damage_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+industry_free_repair_factor	Increases the speed at which buildings repair themselves without factories assigned.	
+industry_free_repair_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+industry_repair_factor	Increases the speed at which buildings are repaired.	
+industry_repair_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+line_change_production_efficiency_factor	Production Efficiency Retention.	
+line_change_production_efficiency_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+production_oil_factor	Synthetic oil gain.合成燃料场产出	
+production_oil_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+production_speed_infrastructure_factor 
+production_speed_arms_factory_factor
+production_speed_industrial_complex_factor
+production_speed_air_base_factor
+production_speed_supply_node_factor
+production_speed_rail_way_factor
+production_speed_naval_base_factor
+production_speed_bunker_factor
+production_speed_coastal_bunker_factor
+production_speed_dockyard_factor
+	Increases construction speed of a specific building.增加建造某类建筑的速度	
+production_speed_buildings_factor = 0.10
+    建造速度
+production_speed_industrial_complex_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+repair_speed_<building>_factor	Increases repair speed of a specific building.	
+repair_speed_arms_factory_factor = 0.5 
+Percentual (0.01 being 1%).		1.0
+Resistance and Compliance抵抗与顺从
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+compliance_growth_on_our_occupied_states	Increases the compliance growth speed on the country's controlled states.	
+compliance_growth_on_our_occupied_states = 0.5
+Percentual (0.01 being 1%).		1.9
+no_compliance_gain	Disables compliance gain on our controlled states.	
+no_compliance_gain = 1
+Boolean.	Can also be used in state scope.	1.9
+occupation_cost	Increases the cost of keeping another nation under occupation.	
+occupation_cost = 0.5
+Percentual (0.01 being 1%).		1.9
+required_garrison_factor	Increases the required garrison in our occupied states.	
+required_garrison_factor = 0.5
+Percentual (0.01 being 1%).	Can also be used in state scope.	1.9
+resistance_damage_to_garrison_on_our_occupied_states	Increases the resistance damage to the garrison in our occupied states.	
+resistance_damage_to_garrison_on_our_occupied_states = 0.5
+Percentual (0.01 being 1%).		1.9
+resistance_decay_on_our_occupied_states	Increases the resistance decay in our occupied states.	
+resistance_decay_on_our_occupied_states = 0.5
+Percentual (0.01 being 1%).		1.9
+resistance_growth_on_our_occupied_states	Increases the resistance growth speed in our occupied states.	
+resistance_growth_on_our_occupied_states = 0.5
+Percentual (0.01 being 1%).		1.9
+resistance_target_on_our_occupied_states	Increases the resistance target in our occupied states.	
+resistance_target_on_our_occupied_states = 0.5
+Percentual (0.01 being 1%).		1.9
+Intelligence情报机关
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+agency_upgrade_time	Increases the time it takes to upgrade the agency	
+agency_upgrade_time = 0.5
+Percentual (0.01 being 1%).		1.9
+airforce_intel_to_others	Increases the amount of intel other countries will receive about your airforce.	
+airforce_intel_to_others = 10
+Flat.		1.9
+civilian_intel_to_others	Increases the amount of intel other countries will receive about your civilian industry.	
+civilian_intel_to_others = 10
+Flat.		1.9
+navy_intel_to_others	Increases the amount of intel other countries will receive about your navy.	
+navy_intel_to_others = 10
+Flat.		1.9
+decryption	Increases the decription capability of the country.	
+decryption = 1
+Flat.		1.0
+decryption_factor	Increases the decription capability of the country by a percentage.	
+decryption_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+encryption	Increases the encryption capability of the country.	
+decryption = 1
+Flat.		1.0
+encryption_factor	Increases the encryption capability of the country by a percentage.	
+encryption_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+enemy_operative_capture_chance_factor	Increases the chance for an enemy operative to be captured.	
+enemy_operative_capture_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+enemy_operative_detection_chance	Increases the chance for an enemy operative to be detected.	
+enemy_operative_detection_chance = 10
+Flat.	Can be used in unit leader scope.	1.9
+enemy_operative_detection_chance_factor	Increases the chance for an enemy operative to be detected by a percentage.	
+enemy_operative_detection_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+enemy_operative_detection_chance_factor	Increases the chance for an enemy operative to be forced into hiding by a percentage.	
+enemy_operative_detection_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+enemy_operative_harmed_time_factor	Increases the chance for an enemy operative to be harmed by a percentage.	
+enemy_operative_harmed_time_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+enemy_operative_intel_extraction_rate	Increases the rate at which the enemy operatives extract our intel.	
+enemy_operative_intel_extraction_rate = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+enemy_spy_negative_status_factor	Increases the chance an enemy spy can receive a negative status.	
+enemy_spy_negative_status_factor = 0.5
+Percentual (0.01 being 1%).	Can also be used in state scope.	1.9
+female_random_operative_chance	Increases the chance for a randomly-generated operative to be female.	
+female_random_operative_chance = 0.3
+Percentual (0.01 being 1%).		1.9
+foreign_subversive_activites	Increases efficiency of foreign subversive activities.	
+foreign_subversive_activites = 0.3
+Percentual (0.01 being 1%).		1.9
+intel_network_gain	Increases gain of intel network strength.	
+intel_network_gain = 1
+Flat.	Can also be used in state scope.	1.9
+intel_network_gain_factor	Increases gain of intel network strength by a percentage.	
+intel_network_gain_factor = 0.5
+Percentual (0.01 being 1%).	Can also be used in state scope.	1.9
+own_operative_capture_chance_factor	Increases the chance for our operatives to be captured.	
+own_operative_capture_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+own_operative_detection_chance	Increases the chance for our operatives to be detected.	
+own_operative_detection_chance = 10
+Flat.	Can be used in unit leader scope.	1.9
+own_operative_detection_chance_factor	Increases the chance for our operatives to be detected by a percentage.	
+own_operative_detection_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+own_operative_detection_chance_factor	Increases the chance for our operatives to be forced into hiding by a percentage.	
+own_operative_detection_chance_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+own_operative_harmed_time_factor	Increases the chance for our operatives to be harmed by a percentage.	
+own_operative_harmed_time_factor = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+own_operative_intel_extraction_rate	Increases the rate at which our operatives extract enemy intel.	
+own_operative_intel_extraction_rate = 0.5
+Percentual (0.01 being 1%).	Can be used in unit leader scope.	1.9
+subversive_activites_upkeep	Increases the cost of subversive activities.	
+subversive_activites_upkeep = 0.5
+Percentual (0.01 being 1%).		1.0
+operation_cost	Increases the cost of operations.	
+operation_cost = 0.5
+Percentual (0.01 being 1%).		1.9
+operation_outcome	Increases the efficiency of operations.	
+operation_outcome = 0.5
+Percentual (0.01 being 1%).		1.9
+operation_risk	Increases the risk of operations.	
+operation_risk = 0.5
+Percentual (0.01 being 1%).		1.9
+<operation>_cost	Increases the cost of the specified operation.	
+operation_infiltrate_cost = 0.5
+Percentual (0.01 being 1%).		1.9
+<operation>_outcome	Increases the efficiency of the specified operation.	
+operation_coup_government_outcome = 0.5
+Percentual (0.01 being 1%).	Note that target_sabotage uses target_sabotage_factor rather than target_sabotage_outcome.	1.9
+<operation>_risk	Increases the risk of the specified operation.	
+operation_make_resistance_contacts_risk = 0.5
+Percentual (0.01 being 1%).		1.9
+<type>_intel_decryption_bonus	Adds a cipher bonus to the specified intel.	
+civilian_intel_decryption_bonus = 0.5
+Percentual (0.01 being 1%).	Types are: airforce, army, civilian, navy.	1.9
+<type>_intel_factor	Modifies the intelligence you receive of the specified type.	
+navy_intel_factor = 0.5
+Percentual (0.01 being 1%).	Types are: airforce, army, civilian, navy.	1.9
+<mission>_factor	Modifies the effect of the specified mission.	
+boost_ideology_mission_factor = 0.5
+Percentual (0.01 being 1%).	Types are: boost_ideology_mission, boost_resistance, control_trade_mission, diplomatic_pressure_mission, propaganda_mission, root_out_resistance_effectiveness.	1.9
+commando_trait_chance_factor	Modifies the chance for an operative to get the commando trait when hired.	
+commando_trait_chance_factor = 0.5
+Percentual (0.01 being 1%).		1.9
+crypto_department_enabled	Enables the crypto department.	
+crypto_department_enabled = 1
+Boolean.		1.9
+crypto_strength	Modifies the cryptology level.	
+crypto_strength = 1
+Flat.		1.9
+decryption_power	Modifies the decryption power.	
+decryption_power = 1
+Flat.		1.9
+decryption_power_factor	Modifies the decryption power by a percentage.	
+decryption_power_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+defense_impact_on_blueprint_stealing	Modifies the impact of enemy defense on the blueprint stealing operation.	
+defense_impact_on_blueprint_stealing = 0.3
+Percentual (0.01 being 1%).		1.9
+enemy_operative_recruitment_chance	Modifies the chance to recruit an enemy operative.	
+enemy_operative_recruitment_chance = 0.3
+Percentual (0.01 being 1%).		1.9
+intel_from_operatives_factor	Modifies the intelligence gained from operatives and infiltrated assets.	
+intel_from_operatives_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+intel_network_gain	Modifies the intelligence network gain.	
+intel_network_gain = 0.3
+Flat.		1.9
+intel_network_gain_factor	Modifies the intelligence network gain by a percentage.	
+intel_network_gain_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+intelligence_agency_defense	Modifies the counter intelligence.	
+intelligence_agency_defense = 0.3
+Percentual (0.01 being 1%).		1.9
+new_operative_slot_bonus	Modifies the operative recruitment choices.	
+new_operative_slot_bonus = 1
+Flat.		1.9
+occupied_operative_recruitment_chance	Modifies the chance to get an operative from occupied territory.	
+occupied_operative_recruitment_chance = 0.3
+Percentual (0.01 being 1%).		1.9
+operative_death_on_capture_chance	Modifies the chance for our operative to die on being captured.	
+operative_death_on_capture_chance = 0.3
+Percentual (0.01 being 1%).		1.9
+operative_slot	Modifies the amount of operative slots.	
+operative_slot = 1
+Flat.		1.9
+root_out_resistance_effectiveness_factor	Modifies the effectiveness of rooting out resistance.	
+root_out_resistance_effectiveness_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+AI
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Name	Effects	Examples	Modifier type	Notes	Version Added
+ai_badass_factor	AI's threat perception.	
+ai_badass_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_call_ally_desire_factor	Chance for AI to call allies.	
+ai_call_ally_desire_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_desired_divisions_factor	The amount of divisions AI seeks to produce.	
+ai_desired_divisions_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_aggressive_factor	AI's focus on offense.	
+ai_focus_aggressive_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_defense_factor	AI's focus on defense.	
+ai_focus_defense_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_aviation_factor	AI's focus on aviation.	
+ai_focus_aviation_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_military_advancements_factor	AI's focus on advanced military technologies.	
+ai_focus_military_advancements_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_naval_air_factor	AI's focus on building naval airforce.	
+ai_focus_naval_air_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_naval_factor	AI's focus on building a navy.	
+ai_focus_naval_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_peaceful_factor	AI's focus on peaceful research and policies.	
+ai_focus_peaceful_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_focus_war_production_factor	AI's focus on wartime production.	
+ai_focus_war_production_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_get_ally_desire_factor	AI's desire to be in or expand a faction.	
+ai_get_ally_desire_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_join_ally_desire_factor	AI's desire to join the wars led by allies.	
+ai_join_ally_desire_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+ai_license_acceptance	AI's chance to agree licensing equipment.	
+ai_license_acceptance = 0.5
+Percentual (0.01 being 1%).		1.4
+General Combat通用战斗
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Note that most of these modifiers are not only in country scope but also in unit leader and navy leader scopes.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+offence	Modifies the attack value of our military, navy, and airforce.	
+offence = 0.5
+Percentual (0.01 being 1%).		1.0
+defence	Modifies the defence value of our military, navy, and airforce.	
+defence = 0.5
+Percentual (0.01 being 1%).		1.0
+Land Combat陆战
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Note that most of these modifiers are not only in country scope but also in unit leader scope.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+acclimatization_cold_climate_gain_factor	Cold acclimatization gain factor.	
+acclimatization_cold_climate_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+acclimatization_hot_climate_gain_factor	Hot acclimatization gain factor.	
+acclimatization_hot_climate_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_superiority_bonus_in_combat	The bonus air combat gives in combat.	
+air_superiority_bonus_in_combat = 0.5
+Percentual (0.01 being 1%).		1.0
+army_attack_factor	The bonus to land army's attack.	
+army_attack_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+army_defence_factor	The bonus to land army's defence.	
+army_defence_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+army_speed_factor	The bonus to land army's speed.	
+army_speed_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+<unit type>_attack_factor	The bonus to specified unit type's attack.	
+cavalry_attack_factor = 0.5
+Percentual (0.01 being 1%).	Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces	1.0
+<unit type>_defence_factor	The bonus to the specified unit type's defence.	
+army_artillery_defence_factor = 0.5
+Percentual (0.01 being 1%).	Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces	1.0
+<unit type>_speed_factor	The bonus to specified unit type's speed.	
+army_armor_speed_factor = 0.5
+Percentual (0.01 being 1%).	Allowed unit types are army_armor and cavalry.	1.0
+army_fuel_capacity_factor	The capacity of fuel by the army.	
+army_fuel_capacity_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+army_fuel_consumption_factor	The consumption of fuel by the army.	
+army_fuel_consumption_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+army_morale	Modifies the army's morale.	
+army_morale = 10
+Flat.		1.0
+army_morale_factor	Modifies the army's morale by a percentage.	
+army_morale_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+army_org	Modifies the army's organisation.	
+army_org = 10
+Flat.		1.0
+army_org_factor	Modifies the army's organisation by a percentage.	
+army_org_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+army_org_regain	Modifies the army's organisation regain speed by a percentage.	
+army_org_regain = 0.3
+Percentual (0.01 being 1%).		1.0
+attrition	Modifies the army's attrition.	
+attrition = 0.3
+Percentual (0.01 being 1%).		1.0
+breakthrough_factor	Modifies the army's breakthrough.	
+breakthrough_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+cas_damage_reduction	Reguces the damage dealt by close air support.	
+cas_damage_reduction = 0.3
+Percentual (0.01 being 1%).		1.0
+dig_in_speed	Increases entrenchment speed.	
+dig_in_speed = 2
+Flat.		1.0
+dig_in_speed_factor	Increases entrenchment speed by a percentage.	
+dig_in_speed = 0.5
+Percentual (0.01 being 1%).		1.0
+experience_gain_army	Increases experience gain by the army.	
+experience_gain_army = 0.5
+Flat.		1.0
+experience_gain_army_factor	Increases experience gain by the army by a percentage.	
+experience_gain_army_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+experience_gain_army_unit	Increases experience gain by the army divisions.	
+experience_gain_army_unit = 0.5
+Flat.		1.0
+experience_gain_army_unit_factor	Increases experience gain by the army divisions by a percentage.	
+experience_gain_army_unit_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+extra_marine_supply_grace	Increases the supply grace given to marines.	
+extra_marine_supply_grace = 96
+Flat.		1.0
+extra_paratrooper_supply_grace	Increases the supply grace given to paratroopers.	
+extra_paratrooper_supply_grace = 96
+Flat.		1.0
+heat_attrition	Increases the attrition due to heat.	
+heat_attrition = 0.5
+Flat.		1.0
+heat_attrition_factor	Increases the attrition due to heat by a percentage.	
+heat_attrition_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+winter_attrition	Increases the attrition due to winter.	
+winter_attrition = 0.5
+Flat.		1.0
+winter_attrition_factor	Increases the attrition due to winter by a percentage.	
+winter_attrition_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+land_night_attack	Increases the penalty due to attacking at night.	
+land_night_attack = 0.5
+Percentual (0.01 being 1%).		1.0
+max_dig_in	Increases the maximum entrenchment.	
+max_dig_in = 20
+Flat.	Can also apply in state scope.	1.0
+max_dig_in_factor	Increases the maximum entrenchment by a percentage.	
+max_dig_in_factor = 0.5
+Percentual (0.01 being 1%).	Can also apply in state scope.	1.0
+max_planning	Increases the maximum planning.	
+max_planning = 20
+Flat.		1.0
+max_planning_factor	Increases the maximum planning by a percentage.	
+max_planning_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+pocket_penalty	Reduces the penalty that troops take when they are encircled.	
+pocket_penalty = 0.2
+Percentual (0.01 being 1%).		1.0
+recon_factor	Increases reconnaisance.	
+recon_factor = 0.2
+Percentual (0.01 being 1%).		1.0
+recon_factor_while_entrenched	Increases reconnaisance for entrenched divisions.	
+recon_factor_while_entrenched = 0.2
+Percentual (0.01 being 1%).		1.0
+special_forces_cap	Increases the maximum amount of special forces by a percentage.	
+special_forces_cap = 0.5
+Percentual (0.01 being 1%).		1.0
+special_forces_min	Increases the maximum amount of special forces.	
+special_forces_min = 250
+Flat.		1.0
+special_forces_no_supply_grace	Increases the supply grace period for special forces.	
+special_forces_no_supply_grace = 120
+Flat.		1.0
+special_forces_out_of_supply_factor	Increases the penalty for special forces out of supply.	
+special_forces_out_of_supply_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+special_forces_training_time_factor	Increases the time it takes to train special forces.	
+special_forces_training_time_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+terrain_penalty_reduction	Decreases the penalties given by terrain.	
+terrain_penalty_reduction = 0.3
+Percentual (0.01 being 1%).		1.0
+unit_upkeep_attrition_factor	Modifies the unit upkeep.	
+unit_upkeep_attrition_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+no_supply_grace	Modifies the grace period for units without supply.	
+no_supply_grace = 120
+Flat.		1.0
+org_loss_when_moving	Modifies the organisation loss for units when they are moving.	
+org_loss_when_moving = 0.2
+Percentual (0.01 being 1%).		1.0
+out_of_supply_factor	Reduces the penalty that units take when they run out of supplies.	
+out_of_supply_factor = 0.2
+Percentual (0.01 being 1%).		1.0
+planning_speed	Modifies the planning speed.	
+planning_speed = 0.2
+Percentual (0.01 being 1%).		1.0
+supply_consumption_factor	Modifies the rate at which army consumes supply.	
+supply_consumption_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+training_time_factor	Modifies the training time.	
+training_time_factor = 0.3
+Percentual (0.01 being 1%).		1.0
+Naval combat海战
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Note that most of these modifiers are not only in country scope but also in navy leader scope.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+amphibious_invasion	Modifies the speed of units during naval invasions.	
+amphibious_invasion = 0.5
+Percentual (0.01 being 1%).		1.6
+amphibious_invasion_defence	Modifies the penalty given by naval invasions.	
+amphibious_invasion_defence = 0.5
+Percentual (0.01 being 1%).	Is the opposite of naval_invasion_penalty. Can also apply in state scope.	1.6
+carrier_capacity_penalty_reduction	Modifies the penalty given by overcrowding a carrier with planes.	
+carrier_capacity_penalty_reduction = 0.5
+Percentual (0.01 being 1%).		1.6
+convoy_escort_efficiency	Modifies the efficiency of the convoy escort mission.	
+convoy_escort_efficiency = 0.5
+Percentual (0.01 being 1%).		1.6
+convoy_raiding_efficiency_factor	Modifies the efficiency of the convoy raiding mission.	
+convoy_raiding_efficiency_factor = 0.5
+Percentual (0.01 being 1%).		1.6
+convoy_retreat_speed	Modifies the speed of convoys retreating.	
+convoy_retreat_speed = 0.5
+Percentual (0.01 being 1%).		1.6
+critical_receive_chance	Increases the chance for the enemy to get a critical hit on us in naval combat.	
+critical_receive_chance = 0.5
+Percentual (0.01 being 1%).		1.6
+experience_gain_navy	Modifies the daily gain of naval experience.	
+experience_gain_navy = 0.02
+Flat.		1.6
+experience_gain_navy_factor	Modifies the gain of naval experience by a percentage.	
+experience_gain_navy_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+experience_gain_navy_unit	Modifies the daily gain of experience by the ships.	
+experience_gain_navy_unit = 0.02
+Flat.		1.6
+experience_gain_navy_unit_factor	Modifies the gain of experience by the ships by a percentage.	
+experience_gain_navy_unit_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+fighter_sortie_efficiency	Modifies the speed when refueling and rearming fighter planes on the carrier during the battle.	
+fighter_sortie_efficiency = 0.3
+Percentual (0.01 being 1%).		1.6
+invasion_preparation	Modifies the preparation speed of naval invasions.	
+invasion_preparation = 0.3
+Percentual (0.01 being 1%).		1.6
+mines_planting_by_fleets_factor	Modifies the efficiency of the mine planting mission.	
+mines_planting_by_fleets_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+mines_sweeping_by_fleets_factor	Modifies the efficiency of the mine sweeping mission.	
+mines_sweeping_by_fleets_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_accidents_chance	Modifies the chance for a ship to be accidentally sunk or damaged.	
+naval_accidents_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_attrition	Modifies attrition suffered by naval units.	
+naval_attrition = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_coordination	Modifies how quickly the fleet can gather or disperse when a target is found or when switching missions.	
+naval_coordination = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_critical_effect_factor	Modifies the effects of sustained critical hits on our ships.	
+naval_critical_effect_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_critical_score_chance_factor	Modifies the chance for us to get a critical hit on the enemy in naval combat.	
+naval_critical_score_chance_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_damage_factor	Modifies the damage dealt by our ships.	
+naval_damage_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_defense_factor	Modifies the damage received by our ships.	
+naval_damage_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_detection	Modifies the chance for our ships to detect submarines.	
+naval_detection = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_enemy_fleet_size_ratio_penalty_factor	Modifies the penalty the enemy receives for having a larger amount of ships than us.	
+naval_enemy_fleet_size_ratio_penalty_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_enemy_retreat_chance	Modifies the chance for the enemy to retreat.	
+naval_enemy_retreat_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_has_potf_in_combat_attack	Modifies the attack of the navy when fighting together with the pride of the fleet.	
+naval_has_potf_in_combat_attack = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_has_potf_in_combat_defense	Modifies the defense of the navy when fighting together with the pride of the fleet.	
+naval_has_potf_in_combat_defense = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_hit_chance	Modifies the chance for the naval attacks to land.	
+naval_hit_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_invasion_capacity	Modifies the amount of divisions that can have a naval invasion plan going on at the same time.	
+naval_invasion_capacity = 10
+Flat.		1.6
+naval_invasion_penalty	Modifies the penalty for naval invasions.	
+naval_invasion_penalty = 0.3
+Percentual (0.01 being 1%).	Is the opposite of amphibious_invasion_defence. Can also apply in state scope.	1.6
+naval_mine_hit_chance	Modifies the chance for a naval mine to hit.	
+naval_mine_hit_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_mines_damage_factor	Modifies the damage naval mines deal to enemy ships.	
+naval_mines_damage_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_mines_effect_reduction	Modifies the damage enemy naval mines deal.	
+naval_mines_effect_reduction = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_morale	Modifies the morale value for our ships.	
+naval_morale = 15
+Flat.		1.6
+naval_morale_factor	Modifies the morale value for our ships by a percentage.	
+naval_morale_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_retreat_chance	Modifies the chance for our ships to retreat.	
+naval_retreat_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_retreat_speed	Modifies the speed at which our ships retreat.	
+naval_retreat_speed = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_speed_factor	Modifies the speed of our ships.	
+naval_speed_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_torpedo_cooldown_factor	Modifies the rate at which our ships can fire torpedos.	
+naval_torpedo_cooldown_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_torpedo_hit_chance_factor	Modifies the rate at which our torpedos can hit enemy ships.	
+naval_torpedo_hit_chance_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+naval_torpedo_screen_penetration_factor	Modifies the rate at which our torpedos penalise enemy screening.	
+naval_torpedo_screen_penetration_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_capital_ship_attack_factor	Modifies the attack of our capital ships.	
+navy_capital_ship_attack_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_carrier_air_agility_factor	Modifies the agility of airplanes executing tasks from carriers.	
+navy_carrier_air_agility_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_carrier_air_attack_factor	Modifies the attack of airplanes executing tasks from carriers.	
+navy_carrier_air_attack_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_carrier_air_targetting_factor	Modifies the targeting of airplanes executing tasks from carriers.	
+navy_carrier_air_targetting_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_screen_attack_factor	Modifies the attack of our screening ships.	
+navy_screen_attack_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_submarine_attack_factor	Modifies the attack of our submarines.	
+navy_submarine_attack_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_submarine_attack_factor	Modifies the attack of our submarines.	
+navy_submarine_attack_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+navy_visibility	Modifies the visibility of our navy.	
+navy_visibility = 0.3
+Percentual (0.01 being 1%).		1.6
+positioning	Modifies the positioning of our navy.	
+positioning = 0.3
+Percentual (0.01 being 1%).		1.6
+production_cost_max_<ship type>	Modifies the maximum cost of the ship type.	
+production_cost_max_ship_hull_light = 0.3
+Percentual (0.01 being 1%).	Allowed ship types in base game: convoy, ship_hull_carrier, ship_hull_cruiser, ship_hull_heavy, ship_hull_light, ship_hull_submarine	1.6
+repair_speed_factor	Modifies the speed at which the dockyards repair the navy.	
+repair_speed_factor = 0.3
+Percentual (0.01 being 1%).		1.6
+screening_efficiency	Modifies the efficiency screen ships operate.	
+screening_efficiency = 0.3
+Percentual (0.01 being 1%).		1.6
+ships_at_battle_start	Modifies the number of ships at first contact.	
+ships_at_battle_start = 0.3
+Percentual (0.01 being 1%).		1.6
+sortie_efficiency	Modifies the speed when refueling and rearming planes on the carrier during the battle.	
+sortie_efficiency = 0.3
+Percentual (0.01 being 1%).		1.6
+spotting_chance	Modifies the chance to spot enemy ships.	
+spotting_chance = 0.3
+Percentual (0.01 being 1%).		1.6
+strike_force_movement_org_loss	Modifies the organisation loss from movement during the strike force mission.	
+strike_force_movement_org_loss = 0.3
+Percentual (0.01 being 1%).		1.6
+sub_retreat_speed	Modifies the retreat speed of submarines.	
+sub_retreat_speed = 0.3
+Percentual (0.01 being 1%).		1.6
+submarine_attack	Modifies the attack of submarines.	
+submarine_attack = 0.3
+Percentual (0.01 being 1%).		1.6
+transport_capacity	Modifies how many convoys units require.	
+transport_capacity = 0.3
+Percentual (0.01 being 1%).		1.6
+Air combat空战
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+Note that most of these modifiers are not only in country scope but also in ace scope.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+air_accidents_factor	Modifies the chance for air accidents to happen.	
+air_accidents_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_ace_generation_chance_factor	Modifies the chance for aces to appear.空军王牌出现概率	
+air_ace_generation_chance_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_agility_factor	Modifies the agility of the country's airplanes.	
+air_agility_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_attack_factor	Modifies the attack of the country's airplanes.	
+air_attack_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_defence_factor	Modifies the defence of the country's airplanes.	
+air_defence_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_<mission>_agility_factor	Modifies the agility of the country's airplanes when on the specified mission.	
+air_air_superiority_agility_factor = 0.5
+Percentual (0.01 being 1%).	Allowed missions are: air_superiority, close_air_support, interception, strategic_bomber, paradrop, and naval_strike. Note that with naval strike, it's just naval_strike_agility_factor without air_.	1.0
+air_<mission>_attack_factor	Modifies the attack of the country's airplanes when on the specified mission.	
+air_interception_defence_factor = 0.5
+Percentual (0.01 being 1%).	Allowed missions are: air_superiority, close_air_support, interception, strategic_bomber, paradrop, and naval_strike. Note that with naval strike, it's just naval_strike_attack_factor without air_.	1.0
+air_<mission>_defence_factor	Modifies the defence of the country's airplanes when on the specified mission.	
+air_strategic_bomber_defence_factor = 0.5
+Percentual (0.01 being 1%).	Allowed missions are: air_superiority, close_air_support, interception, strategic_bomber, paradrop, and naval_strike. Note that with naval strike, it's just naval_strike_defence_factor without air_.	1.0
+air_bombing_targetting	Modifies targetting for ground bombing.	
+air_bombing_targetting = 0.5
+Percentual (0.01 being 1%).		1.0
+air_cas_efficiency	Modifies efficiency of close-air-support.	
+air_cas_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_cas_present_factor	Modifies impact of close-air-support in land combat.	
+air_cas_present_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_escort_efficiency	Modifies ability of planes in dogfights.	
+air_escort_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_fuel_consumption_factor	Modifies the rate at which the airforce consumes fuel.	
+air_fuel_consumption_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_intercept_efficiency	Modifies the efficiency of air interception.	
+air_intercept_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_maximum_speed_factor	Modifies the maximum speed of the airforce.	
+air_maximum_speed_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_mission_efficiency	Modifies the efficiency of airplanes in missions.	
+air_mission_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_mission_xp_gain_factor	Modifies the experience gain for airplanes for doing missions.	
+air_mission_xp_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_mission_xp_gain_factor	Modifies the experience gain for airplanes for doing missions.	
+air_mission_xp_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_nav_efficiency	Modifies the efficiency of airplanes doing port strike and naval bombing missions.	
+air_nav_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_night_penalty	Modifies the penalty the airforce receives while at night.	
+air_night_penalty = 0.5
+Percentual (0.01 being 1%).		1.0
+air_night_penalty	Modifies the penalty the airforce receives while at night.	
+air_night_penalty = 0.5
+Percentual (0.01 being 1%).		1.0
+air_range_factor	Modifies the range of the airplanes.	
+air_range_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_strategic_bomber_bombing_factor	Modifies the efficiency of the strategic bombing mission.	
+air_strategic_bomber_bombing_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_strategic_bomber_night_penalty	Modifies the penalty for the strategic bombing mission while at night.	
+air_strategic_bomber_night_penalty = 0.5
+Percentual (0.01 being 1%).		1.0
+air_superiority_detect_factor	Modifies the chance to detect enemy planes while on the air superiority mission.	
+air_superiority_detect_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_superiority_efficiency	Modifies the efficiency of the air superiority mission.	
+air_superiority_efficiency = 0.5
+Percentual (0.01 being 1%).		1.0
+air_training_xp_gain_factor	Modifies the air experience gain from training.	
+air_training_xp_gain_factor = 0.5
+Percentual (0.01 being 1%).		1.6
+air_weather_penalty	Modifies the penalty the airplanes receive because of weather.	
+air_weather_penalty = 0.5
+Percentual (0.01 being 1%).		1.0
+air_wing_xp_loss_when_killed_factor	Modifies the experience loss of airplanes due to airplanes being shot down.	
+air_wing_xp_loss_when_killed_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+army_bonus_air_superiority_factor	Modifies the bonus to land combat from air superiority.	
+army_bonus_air_superiority_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+enemy_army_bonus_air_superiority_factor	Modifies the effect to land combat from enemy air superiority.	
+enemy_army_bonus_air_superiority_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+experience_gain_air	Modifies the daily gain of air experience.	
+experience_gain_air = 0.05
+Flat.		1.0
+experience_gain_air_factor	Modifies the daily gain of air experience by a percentage.	
+experience_gain_air_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+air_ground_attack	Modifies the bonus to airplane attack on enemy divisions.	
+air_ground_attack = 0.5
+Percentual (0.01 being 1%).		1.0
+ground_attack_factor	Modifies the bonus to airplane attack on enemy divisions by a percentage.	
+ground_attack_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+mines_planting_by_air_factor	Modifies efficiency of airplanes planting mines.	
+mines_planting_by_air_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+mines_sweeping_by_air_factor	Modifies efficiency of airplanes sweeping mines.	
+mines_sweeping_by_air_factor = 0.5
+Percentual (0.01 being 1%).		1.0
+strategic_bomb_visibility	Modifies the chance for the enemy to detect our strategic bombers.	
+strategic_bomb_visibility = 0.5
+Percentual (0.01 being 1%).		1.0
+Targeted modifiers目标修正
+Ambox outdated info.png	
+这部分内容可能已不适合当前版本，最后更新于1.10。
+These modifiers are targeted, meaning that they must be used in targeted_modifier = {} rather than modifier = {}.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+cic_to_target_factor	Gives a portion of the country's civilian industry to the specified target.	
+cic_to_target_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+extra_trade_to_target_factor	Adds extra produced recourses available for trade to target country.	
+extra_trade_to_target_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+generate_wargoal_tension_against	Increases world tension necessary for us to justify against the target country.	
+generate_wargoal_tension_against = 0.5
+Flat.		1.5
+mic_to_target_factor	Gives a portion of the country's military industry to the specified target.	
+cic_to_target_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+trade_cost_for_target_factor
+贸易花费的资源比例	The cost for the targeted country to purchase this country's resources.	
+trade_cost_for_target_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+targeted_legitimacy_daily	Increases daily gain of legitimacy of the target country.	
+targeted_legitimacy_daily = 0.5
+Flat.		1.6
+attack_bonus_against	Gives an attack bonus against the armies of the specified country.	
+attack_bonus_against = 0.5
+Percentual (0.01 being 1%).		1.5
+attack_bonus_against_cores	Gives an attack bonus against the armies of the specified country on its core territory.	
+attack_bonus_against_cores = 0.5
+Percentual (0.01 being 1%).		1.5
+breakthrough_bonus_against	Gives a breakthrough bonus against the armies of the specified country.	
+breakthrough_bonus_against = 0.5
+Percentual (0.01 being 1%).		1.5
+defense_bonus_against	Gives a defense bonus against the armies of the specified country.	
+defense_bonus_against = 0.5
+Percentual (0.01 being 1%).		1.5
+State Scope州
+Name	Effects	Examples	Modifier type	Notes	Version Added
+army_speed_factor_for_controller	Changes the division speed for the controller of the state.	
+army_speed_factor_for_controller = 0.5
+Percentual (0.01 being 1%).		1.0
+compliance_gain	Changes the compliance gain in the current state.	
+compliance_gain = 0.01
+Flat.	Can also go into country scope.	1.9
+compliance_growth	Changes the compliance growth speed in the current state.	
+compliance_growth = 0.5
+Percentual (0.01 being 1%).		1.9
+country_resource_<resource>	Directly modifies the country's resource stockpile.	
+country_resource_oil = 10
+Flat.		1.0
+country_resource_cost_<resource>
+国家资源花费	Directly modifies the country's resource stockpile.	
+country_resource_cost_aluminium = 10
+Flat.		1.0
+disable_strategic_redeployment	Disables strategic redeployment in the state.	
+disable_strategic_redeployment = 1
+Boolean.		1.9
+disable_strategic_redeployment_for_controller	Disables strategic redeployment in the state for the controller.	
+disable_strategic_redeployment_for_controller = 1
+Boolean.		1.9
+enemy_intel_network_gain_factor_over_occupied_tag	Modifies enemy intel network strength gain.	
+enemy_intel_network_gain_factor_over_occupied_tag = 0.3
+Percentual (0.01 being 1%).		1.9
+local_building_slots	Modifies amount of building slots.	
+local_building_slots = 2
+Flat.		1.9
+local_building_slots_factor	Modifies amount of building slots by a percentage.	
+local_building_slots_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+local_factories	Modifies amount of available factories in the state.	
+local_factories = 0.3
+Percentual (0.01 being 1%).		1.9
+local_factory_sabotage	Modifies chance for factory sabotage.	
+local_factory_sabotage = 0.3
+Percentual (0.01 being 1%).		1.9
+local_intel_to_enemies	Modifies amount of intel to enemies.	
+local_intel_to_enemies = 0.3
+Percentual (0.01 being 1%).		1.9
+local_manpower	Modifies amount of available manpower.	
+local_manpower = 0.3
+Percentual (0.01 being 1%).		1.9
+local_non_core_manpower	Modifies amount of available non-core manpower.	
+local_non_core_manpower = 0.3
+Percentual (0.01 being 1%).		1.9
+local_resources	Modifies amount of available resources.	
+local_resources = 0.3
+Flat.		1.9
+local_resources_factor	Modifies amount of available resources by a percentage.	
+local_resources_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+local_supplies	Modifies amount of available supplies.	
+local_supplies = 0.3
+Percentual (0.01 being 1%).		1.9
+local_supplies_for_controller	Modifies amount of available supplies for the controller.	
+local_supplies_for_controller = 0.3
+Percentual (0.01 being 1%).		1.9
+mobilization_speed	Modifies the mobilisation speed.	
+mobilization_speed = 0.3
+Percentual (0.01 being 1%).		1.9
+non_core_manpower	Modifies the amount of recruited non-core manpower.	
+non_core_manpower = 0.3
+Percentual (0.01 being 1%).		1.9
+recruitable_population	Modifies the amount of recruited manpower.	
+recruitable_population = 0.03
+Flat.		1.9
+recruitable_population_factor	Modifies the amount of recruited manpower by a percentage.	
+recruitable_population_factor = 0.3
+Percentual (0.01 being 1%).		1.9
+resistance_damage_to_garrison	Modifies the amount of resistance damage to the garrison.	
+resistance_damage_to_garrison = 0.3
+Percentual (0.01 being 1%).		1.9
+resistance_decay	Modifies the speed of resistance decay.	
+resistance_decay = 0.3
+Percentual (0.01 being 1%).		1.9
+resistance_garrison_penetration_chance	Modifies the chance for the garrison to be penetrated.	
+resistance_garrison_penetration_chance = 0.3
+Percentual (0.01 being 1%).		1.9
+resistance_growth	Modifies the speed of the resistance growth.	
+resistance_growth = 0.3
+Percentual (0.01 being 1%).		1.9
+resistance_target	Modifies the target of the resistance growth.	
+resistance_target = 0.3
+Percentual (0.01 being 1%).		1.9
+starting_compliance	Modifies the base compliance value.	
+starting_compliance = 0.3
+Percentual (0.01 being 1%).		1.9
+state_production_speed_<building>_factor	Modifies the building speed of the specified building in the state.	
+state_production_speed_industrial_complex_factor = 0.3
+Percentual (0.01 being 1%).	Use state_production_speed_buildings_factor for it to apply to all buildings.	1.0
+state_repair_speed_<building>_factor	Modifies the repair speed of the specified building in the state.	
+state_repair_speed_industrial_complex_factor = 0.3
+Percentual (0.01 being 1%).	Use state_repair_speed_buildings_factor for it to apply to all buildings.	1.0
+state_resource_<resource>	Modifies the amount of the specified resource in the state.	
+state_resource_oil = 5
+Flat.		1.0
+state_resource_cost_<resource>	Modifies the amount of the specified resource in the state.	
+state_resource_cost_rubber = 5
+Flat.		1.0
+temporary_state_resource_<resource>	Modifies the amount of the specified resource in the state as an added modifier after the base one.	
+temporary_state_resource_tungsten = 5
+Flat.		1.0
+Unit leader Scope单位领导
+Note that most modifiers in land and naval combat sections also apply.
+
+Name	Effects	Examples	Modifier type	Notes	Version Added
+cannot_use_abilities	Disables using abilities.	
+cannot_use_abilities = 1
+Boolean.		1.5
+fortification_collateral_chance	Chance for combat to damage enemy forts.	
+fortification_collateral_chance = 0.4
+Percentual (0.01 being 1%).		1.5
+fortification_damage	Damage enemy forts receive from combat.	
+fortification_damage = 0.4
+Percentual (0.01 being 1%).		1.5
+max_army_group_size	The amount of units that can be led by the unit leader without penalty.	
+max_army_group_size = 24
+Flat.		1.5
+paradrop_organization_factor	The amount of organisation paratroopers will have after paradropping.	
+paradrop_organization_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+paratrooper_aa_defense	The strength of anti-air against paratroopers.	
+paratrooper_aa_defense = 0.5
+Percentual (0.01 being 1%).		1.5
+paratrooper_count_per_plane	The amount of paratroopers on each plan.	
+paratrooper_count_per_plane = 0.5
+Percentual (0.01 being 1%).		1.5
+promote_cost_factor	The cost to promote the unit leader.	
+promote_cost_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+reassignment_duration_factor	The length of the reassignment penalty.	
+reassignment_duration_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+river_crossing_factor	The effects of the river crossing penalty.	
+river_crossing_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+sickness_chance	The chance for the unit leader to get sick.	
+sickness_chance = 0.5
+Percentual (0.01 being 1%).		1.5
+skill_bonus_factor	The bonus the unit leader receives from their skillset.	
+skill_bonus_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+wounded_chance_factor	The chance for the unit leader to get wounded.	
+wounded_chance_factor = 0.5
+Percentual (0.01 being 1%).		1.5
+set_variable
+fascism
+Reconstructionism
+Personal_dictatorship
+neutrality
+democratic
+Reform_Progressism
+Social_Democracism
+Socialism
+communism
+random_owned_state = {
+                    add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+               }
+               add_manpower = -500
+               custom_cost_text = 
+               days_re_enable = 

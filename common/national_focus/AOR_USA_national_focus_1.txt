@@ -1,436 +1,251 @@
-﻿focus_tree = {
-	id = USA_national_focus_1
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = USA
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=USA
 		}
 	}
-	default = no
-	#白宫评估报告
-	focus = {
+	default=no
+	focus={
 		id = USA_WhiteHouseReport
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
-		x = 14
-		y = 1
-		available= {
-			date > 1919.8.2
+		icon = GFX_goal_USA_WhiteHouseReport
+		x=11
+		y=0
+		cost=0
+		available={
+			date>1919.8.2
 		}
-		bypass= {
-			date > 1919.8.2
+		bypass={
+			date>1919.8.1
 		}
-
-	}
-	
-	#直面挑战
-	focus = {
-		id = USA_challenge
-		icon = GFX_goal_generic_dangerous_deal
-		cost = 1.00
-		prerequisite = {
-			focus = USA_WhiteHouseReport
-		}
-		x = 14
-		y = 2
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	
-	#旧金山加急
-	focus = {
-		id = USA_SanFrancisco
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
-		available= {
-			date > 1919.8.27
-		}
-		bypass= {
-			date > 1919.8.27
-		}
-		prerequisite = {
-			focus = USA_challenge
-		}
-		x = 5
-		y = 3
 		completion_reward={
-		add_stability = -0.05
-		382 = {
-		add_building_construction = {
-			type = infrastructure
-			level = -1
-			instant_build = yes 
 		}
 	}
-		380 = {
-		add_building_construction = {
-			type = infrastructure
-			level = -1
-			instant_build = yes 
-		}
-	}
-		378 = {
-		add_building_construction = {
-			type = infrastructure
-			level = -1
-			instant_build = yes 
-		}
-	}	
-        }
-	}
-	
-	#美利坚的雄鹰1
-	focus = {
-		id = USA_Eagle
-		icon = GFX_goal_support_democracy
-		cost = 1.00
-		prerequisite = {
-			focus = USA_SanFrancisco
-		}
-		mutually_exclusive = {
-			focus = USA_Watchman
-		}
-		x = 3
-		y = 4
-
-	}
-	
-	#潘兴将军的作战计划
-	focus = {
-		id = USA_PlanOfOperation
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 2.80
-		prerequisite = {
-			focus = USA_Eagle
-		}
-		x = 3
-		y = 5
+	focus={
+		id=USA_challenge
+		icon=GFX_goal_USA_challenge
+		x=11
+		y=1
+		prerequisite={focus=USA_WhiteHouseReport}
+		cost=2.00
 		completion_reward={
-				add_timed_idea = {
-				idea = USA_PlanOfOperationA
-				days = 360 
-				} 
-        }
+			add_political_power=50
+		}
 	}
-	
-	#西部的守望者
-	focus = {
-		id = USA_Watchman
-		icon = GFX_goal_generic_CAS
-		cost = 1.00
-		prerequisite = {
-			focus = USA_SanFrancisco
+	focus={
+		id=USA_SanFrancisco
+		icon=GFX_goal_USA_SanFrancisco
+		x=2
+		y=3
+		prerequisite={focus=USA_challenge}
+		cost=0.00
+		available={
+			date>1919.8.27
 		}
-		mutually_exclusive = {
-			focus = USA_Eagle
-		}
-		x = 7
-		y = 4
-
-	}
-	
-	#武装铁路网计划
-	focus = {
-		id = USA_Railway
-		icon = GFX_goal_generic_build_tank
-		cost = 2.80
-		prerequisite = {
-			focus = USA_Watchman
-		}
-		x = 7
-		y = 5
 		completion_reward={
-				add_timed_idea = { 
-				idea = USA_RailwayA
-				days = 360 
-				} 
-        }
-	}
-	
-	#西部无穷，狂野无限
-	focus = {
-		id = USA_West
-		icon = GFX_goal_generic_improve_relations
-		cost = 1.00
-		prerequisite = {
-			focus = USA_Railway
-			focus = USA_PlanOfOperation
-		}
-
-		x = 5
-		y = 6
-		completion_reward={
-				add_stability = 0.05
-        }
-	}
-	
-	#底特律红色风暴
-	focus = {
-		id = USA_Detroit
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
-		prerequisite = {
-			focus = USA_challenge
-		}
-		x = 14
-		y = 3
-		available= {
-			date > 1919.8.7
-		}
-		bypass= {
-			date > 1919.8.7
-		}		
-		completion_reward={
-			add_ideas = USA_GreatLakesA
-        }
-      
-	}
-	
-	#分析工人运动
-	focus = {
-		id = USA_Analysis
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 2.00
-		prerequisite = {
-			focus = USA_Detroit
-		}
-		x = 11
-		y = 4
-
-	}
-	
-	#揪出幕后黑手
-	focus = {
-		id = USA_Arrest
-		icon = GFX_goal_generic_political_pressure
-		cost = 1.00
-		prerequisite = {
-			focus = USA_Analysis
-		}
-		x = 11
-		y = 5
-		completion_reward={
-				add_timed_idea = { 
-				idea = USA_ArrestA
-				days = 360 
-				}
-		custom_effect_tooltip = USA_Arrest.tt								
-		add_popularity = { 
-		        ideology = Marxism 
-		        popularity = -0.02
-            }	
-		}
-	}
-	
-	#颁布戒严令
-	focus = {
-		id = USA_MartialLaw
-		icon = GFX_goal_generic_military_deal
-		cost = 2.00
-		prerequisite = {
-			focus = USA_Detroit
-		}
-		x = 14
-		y = 4
-		completion_reward={
-		        add_ideas = {
-				tot_economic_mobilisation
-				}
-				add_timed_idea = { 
-				idea = USA_MartialLawA
-				days = 180 
-				} 
-		}		
-	}
-	
-	#动员一切武装力量
-	focus = {
-		id = USA_Mobilize
-		icon = GFX_goal_generic_build_tank
-		cost = 2.00
-		prerequisite = {
-			focus = USA_MartialLaw
-		}
-		x = 14
-		y = 5
-		completion_reward={
-			add_manpower = 10000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 2000
-				producer = USA
+			country_event={
+				id=USA.10002
 			}
-		393 = { 
-		set_demilitarized_zone = no 
-		    } 	
-        }		
-	}
-	
-	#安抚企业
-	focus = {
-		id = USA_Appease
-		icon = GFX_goal_generic_national_unity
-		cost = 2.00
-		prerequisite = {
-			focus = USA_Detroit
+			add_stability=-0.05
+			382={
+				add_building_construction={
+					type=infrastructure
+					level=-1
+					instant_build=yes
+				}
+			}
+			380={
+				add_building_construction={
+					type=infrastructure
+					level=-1
+					instant_build=yes
+				}
+			}
+			378={
+				add_building_construction={
+					type=infrastructure
+					level=-1
+					instant_build=yes
+				}
+			}
 		}
-		x = 17
-		y = 4
+	}
+	focus={
+		id=USA_Eagle
+		icon=GFX_goal_USA_Eagle
+		x=0
+		y=4
+		prerequisite={focus=USA_SanFrancisco}
+		mutually_exclusive={focus=USA_Watchman }
+		cost=2.00
+	}
+	focus={
+		id=USA_PlanOfOperation
+		icon=GFX_goal_USA_PlanOfOperation
+		x=0
+		y=5
+		prerequisite={focus=USA_Eagle}
+		cost=2.80
 		completion_reward={
-				add_timed_idea = {
-				idea = USA_AppeaseA
-				days = 180 
-				} 
-        }		
-
-	}
-	
-	#与摩根商谈
-	focus = {
-		id = USA_Morgan
-		icon = GFX_goal_generic_major_alliance
-		cost = 1.00
-		prerequisite = {
-			focus = USA_Appease
+			add_timed_idea={
+				idea=USA_PlanOfOperationA
+				days=360
+			}
 		}
-		x = 17
-		y = 5
+	}
+	focus={
+		id=USA_Watchman
+		icon=GFX_goal_USA_Watchman
+		x=4
+		y=4
+		prerequisite={focus=USA_SanFrancisco}
+		mutually_exclusive={focus=USA_Eagle }
+		cost=2.00
+	}
+	focus={
+		id=USA_Railway
+		icon=GFX_goal_USA_Railway
+		x=4
+		y=5
+		prerequisite={focus=USA_Watchman}
+		cost=2.80
 		completion_reward={
-				add_timed_idea = {
-				idea = USA_MorganA
-				days = 180 
-				} 
-        }
+			add_timed_idea={
+				idea=USA_RailwayA
+				days=360
+			}
+		}
 	}
-	
-	#再一次结束危机
-	focus = {
-		id = USA_EndTheCrisis
-		icon = GFX_goal_generic_improve_relations
-		cost = 1.00
-		prerequisite = {
-			focus = USA_Arrest
-		}
-		prerequisite = {
-			focus = USA_Mobilize
-		}
-		prerequisite = {
-			focus = USA_Morgan
-		}
-		x = 14
-		y = 6
+	focus={
+		id=USA_West
+		icon=GFX_goal_USA_West
+		x=2
+		y=6
+		prerequisite={focus=USA_Railway focus=USA_PlanOfOperation }
+		cost=1.00
 		completion_reward={
-			add_manpower = -8000
-		swap_ideas = {
-			remove_idea = USA_GreatLakesA
-			add_idea = USA_GreatLakes2A			
+			add_stability=0.05
 		}
-        }	
 	}
-	
-	#路易斯安那情报站
-	focus = {
-		id = USA_IntelligenceStation
-		icon = GFX_goal_generic_territory_or_war
-		cost = 0.00
-		prerequisite = {
-			focus = USA_challenge
+	focus={
+		id=USA_Detroit
+		icon=GFX_goal_USA_Detroit
+		x=11
+		y=3
+		prerequisite={focus=USA_challenge}
+		cost=0.00
+		available={
+			date>1919.8.7
 		}
-		available= {
-			date > 1919.8.23
-		}
-		bypass= {
-			date > 1919.8.23
-		}		
-		x = 22
-		y = 3
-
-	}
-	
-	#批评迪克西激进派
-	focus = {
-		id = USA_Criticize
-		icon = GFX_goal_generic_demand_territory
-		cost = 2.00
-		prerequisite = {
-			focus = USA_IntelligenceStation
-		}
-		x = 21
-		y = 4
 		completion_reward={
-				add_timed_idea = {
-				idea = USA_CriticizeA
-				days = 360 
-				} 
-        }		
-
+			add_ideas=USA_GreatLakesA
+			country_event={
+				id=USA.10001
+			}
+		}
 	}
-	
-	#联邦协约国使团
-	focus = {
-		id = USA_Mission
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 1.00
-		prerequisite = {
-			focus = USA_IntelligenceStation
-		}		
-		x = 23
-		y = 4
-		completion_reward={
-		add_political_power = 50
-        }				
+	focus={
+		id=USA_Analysis
+		icon=GFX_goal_USA_Analysis
+		x=8
+		y=5
+		prerequisite={focus=USA_Detroit}
+		cost=2.00
 	}
-	
-	#期盼和平到来
-	focus = {
-		id = USA_Peace
-		icon = GFX_goal_generic_improve_relations
-		cost = 1.00
-		prerequisite = {
-			focus = USA_Mission
-		}
-		prerequisite = {
-			focus = USA_Criticize
-		}
-		x = 22
-		y = 6
+	focus={
+		id=USA_MartialLaw
+		icon=GFX_goal_USA_MartialLaw
+		x=11
+		y=5
+		prerequisite={focus=USA_Detroit}
+		cost=2.00
 		completion_reward={
-		democratic_drift = 0.02
-		custom_effect_tooltip = USA_Peace.tt								
-		add_popularity = { 
-		        ideology = FRE_democratic 
-		        popularity = -0.02
-            }				
-        }		
+			add_ideas={
+				tot_economic_mobilisation
+			}
+			add_timed_idea={
+				idea=USA_MartialLawA
+				days=180
+			}
+		}
 	}
-	
-	#过个好年，美国人
-	focus = {
-		id = USA_NewYear
-		icon = GFX_goal_generic_demand_territory
-		cost = 0.00
-		
-		prerequisite = {
-			focus = USA_EndTheCrisis
-		}
-		prerequisite = {
-			focus = USA_West
-		}
-		prerequisite = {
-			focus = USA_Peace
-		}
-		x = 14
-		y = 7
+	focus={
+		id=USA_Appease
+		icon=GFX_goal_USA_Appease
+		x=14
+		y=5
+		prerequisite={focus=USA_Detroit}
+		cost=2.00
 		completion_reward={
-		swap_ideas = {
-			remove_idea = USA_GreatLakes2A
-			add_idea = USA_AmericanAnxietyA	
-	    	}
-		hidden_effect = {
-		load_focus_tree = USA_national_focus_2
+			add_timed_idea={
+				idea=USA_AppeaseA
+				days=180
+			}
 		}
-        }
+	}
+	focus={
+		id=USA_EndTheCrisis
+		icon=GFX_goal_USA_EndTheCrisis
+		x=11
+		y=7
+		prerequisite={focus=USA_Analysis}
+		prerequisite={focus=USA_MartialLaw}
+		prerequisite={focus=USA_Appease}
+		cost=3.00
+		completion_reward={
+			add_manpower=-8000
+			swap_ideas={
+				remove_idea=USA_GreatLakesA
+				add_idea=USA_GreatLakes2A
+			}
+		}
+	}
+	focus={
+		id=USA_IntelligenceStation
+		icon=GFX_goal_USA_IntelligenceStation
+		x=19
+		y=3
+		prerequisite={focus=USA_challenge}
+		cost=0.00
+		available={
+			date>1919.8.23
+		}
+		bypass={
+			date>1919.8.23
+		}
+	}
+	focus={
+		id=USA_Criticize
+		icon=GFX_goal_USA_Criticize
+		x=19
+		y=5
+		prerequisite={focus=USA_IntelligenceStation}
+		cost=2.00
+		completion_reward={
+			add_timed_idea={
+				idea=USA_CriticizeA
+				days=360
+			}
+		}
+	}
+	focus={
+		id=USA_NewYear
+		icon=GFX_goal_USA_NewYear
+		x=11
+		y=9
+		prerequisite={focus=USA_EndTheCrisis}
+		prerequisite={focus=USA_West}
+		prerequisite={focus=USA_Criticize}
+		cost=0.00
+		completion_reward={
+			swap_ideas={
+				remove_idea=USA_GreatLakes2A
+				add_idea=USA_AmericanAnxietyA
+			}
+			hidden_effect={
+				load_focus_tree=USA_2
+			}
+		}
 	}
 }

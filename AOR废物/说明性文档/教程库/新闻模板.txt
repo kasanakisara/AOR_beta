@@ -1,0 +1,32 @@
+
+add_namespace = ceshi
+
+news_event = {
+	id = ceshi.1
+	title = ceshi.1.t
+	desc = ceshi.1.d
+	picture = ceshi.1.p
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	major = yes
+
+	option = {
+		name = ceshi.1.a
+	}
+}
+
+
+#########如你所见，和原版新闻后端写法根本没有任何变化########################
+
+
+#################以下是本地化内容(重点在这）#########################
+
+l_simp_chinese:
+ ceshi.1.t:0"[Get_title_news_header]测试新闻[Get_title_news_pic]"
+ ceshi.1.d:0"测试文本"
+
+
+ ####这就是完整内容#################################################################################################

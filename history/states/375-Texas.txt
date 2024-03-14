@@ -2,7 +2,7 @@
 state={
 	id=375
 	name="STATE_375"
-	manpower = 5824712
+	manpower = 4824712
 	
 	
 	state_category = metropolis
@@ -19,6 +19,7 @@ state={
 			infrastructure = 3 #was: 6
 			industrial_complex = 4
 			air_base = 3
+			fuel_silo = 2
 			10337 = {
 				naval_base = 3
 			}
@@ -28,14 +29,28 @@ state={
 		}
 		add_core_of = USA
 		add_core_of = MXS
+
+		1921.5.1 = {
+			set_demilitarized_zone = yes
+		}
+
 		victory_points = {
-			10337 10
+			10337 20
 		}
 		victory_points = {
-			3960 10 
+			3960 15
 		}
 		victory_points = {
-			12782 1 
+			12782 15
+		}
+		victory_points = {
+			5022 15
+		}
+		victory_points = {
+			9920 10
+		}
+		victory_points = {
+			1998 7
 		}
 
 	}

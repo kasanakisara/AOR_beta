@@ -1,4 +1,4 @@
-PER_Northern_Reconstruction_decision_category = {
+PER_Northern_Reconstruction_decision_category = {#重建
 	gilan_Infrastructure_restoration = {
 		iocn = GFX_decision_Infrastructure_restoration
 		cost = 25
@@ -218,22 +218,24 @@ PER_Northern_Reconstruction_decision_category = {
 			}
 		}
 	}
-	Complete_reconstruction= {     
+	Complete_reconstruction_1= { #重建任务    
 		activation = {                         
-			has_completed_focus = PER_Northern_Reconstruction_2
+			has_country_flag = unlock_AOR_PER_Northern_Reconstruction
 		}                                    
 		available = {                           
-			num_of_factories > 15
+			infrastructure > 15
 		}
 		
-		is_good = no #（决定任务进度条的颜色）                         
+		is_good = no #(决定任务进度条的颜色）                         
 	
-		days_mission_timeout = 730
+		days_mission_timeout = 800
 		timeout_effect = {                      
-			add_stability = -0.2        
+			add_stability = -0.05
+			clr_country_flag = unlock_AOR_PER_Northern_Reconstruction    
 		}
 		complete_effect = {                    
-			add_stability = 0.05         
+			add_stability = 0.05
+			clr_country_flag = unlock_AOR_PER_Northern_Reconstruction       
 		}
 	}
 }
@@ -407,6 +409,7 @@ PER_Fighting_inflation = {
 		}
 		remove_effect = {
 			PER_Fighting_inflation_666 = yes
+			clr_country_flag = unlock_AOR_PER_Fighting_inflation
 		}
 	}
 }

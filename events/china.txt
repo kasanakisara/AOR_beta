@@ -35,7 +35,7 @@ country_event = {
 	}
 }
 
-#袁世凯死啦#联省,KMT,北京政府,直系军阀
+#袁世凯死啦#联省,KMT,北京政府,直系军阀,四川军阀
 country_event = {
 	id = CHI.4
 	title = CHI.4.t
@@ -44,147 +44,16 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		set_country_flag = yuan_done
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = CHI_Yuan_is_dying
-			news_event = {
-				id = AOR_news.30
-			}
-			CHI = {
-				set_cosmetic_tag = CHI_1
-				set_popularities = {
-					ruling_party = Absolutism
-					Absolutism = 72
-					FRE_democratic = 15
-					CON_democratic = 8
-					Special = 5
-				}
-				set_party_name = {
-					ideology = FRE_democratic
-					long_name = "社会党（交通系）"
-					name = "社会党（交通系）"
-				}
-				set_party_name = {
-					ideology = CON_democratic
-					long_name = "亲日派政客-社会党（亲日派）"
-					name = "社会党（亲日派）"
-				}
-				set_party_name = {
-					ideology = Special
-					long_name = "极端民族主义"
-					name = "极端民族主义"
-				}
-				create_country_leader = {
-					name = "Duan_Qi_Rui"
-					desc = ""
-					picture = "gfx/leaders/CHI/Duan.png"
-					expire = "1965.1.1"
-					ideology = miliciagov
-					traits = {
-					}
-				}
-				set_politics = {
-					ruling_party = SOC_democratic
-				}
-			}
-			UPC = {
-				set_cosmetic_tag = UPC_1
-				transfer_state = 593
-				transfer_state = 592
-				transfer_state = 919
-				transfer_state = 591
-				transfer_state = 900
-				transfer_state = 594
-				transfer_state = 904
-				transfer_state = 903
-				transfer_state = 902
-				transfer_state = 901
-				transfer_state = 746
-				transfer_state = 602
-				transfer_state = 759
-				transfer_state = 599
-				add_state_core = 759
-				add_state_core = 593
-				add_state_core = 592
-				add_state_core = 919
-				add_state_core = 591
-				add_state_core = 900
-				add_state_core = 594
-				add_state_core = 904
-				add_state_core = 903
-				add_state_core = 902
-				add_state_core = 901
-				add_state_core = 746
-				add_state_core = 602
-				add_state_core = 599
-				add_manpower = 10000
-			}
-			KMT = {
-				set_cosmetic_tag = KMT_1
-				transfer_state = 747
-				transfer_state = 755
-				transfer_state = 325
-				transfer_state = 609
-				transfer_state = 603
-				transfer_state = 748
-				transfer_state = 907
-				transfer_state = 750
-				add_state_core = 747
-				add_state_core = 755
-				add_state_core = 325
-				add_state_core = 609
-				add_state_core = 603
-				add_state_core = 748
-				add_state_core = 907
-				add_state_core = 750
-				add_manpower = 10000
-			}
-			NAN = {
-				set_cosmetic_tag = NAN_1
-				transfer_state = 893
-				transfer_state = 882
-				transfer_state = 613
-				transfer_state = 890
-				transfer_state = 598
-				transfer_state = 882
-				transfer_state = 886
-				transfer_state = 885
-				transfer_state = 887
-				transfer_state = 888
-				transfer_state = 905
-				transfer_state = 607
-				transfer_state = 877
-				transfer_state = 614
-				transfer_state = 758
-				transfer_state = 611
-				transfer_state = 610
-				transfer_state = 621
-				add_state_core = 893
-				add_state_core = 882
-				add_state_core = 613
-				add_state_core = 890
-				add_state_core = 598
-				add_state_core = 882
-				add_state_core = 886
-				add_state_core = 885
-				add_state_core = 887
-				add_state_core = 888
-				add_state_core = 905
-				add_state_core = 607
-				add_state_core = 877
-				add_state_core = 614
-				add_state_core = 758
-				add_state_core = 611
-				add_state_core = 610
-				add_state_core = 621
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_1 = yes
+		
 	}
 	option = {
 		name = CHI.4.a
 		add_political_power = 75
+		hidden_effect = {
+			load_focus_tree = new_chi_2
+		}
+		
 	}
 	option = {
 		name = CHI.4.b
@@ -208,6 +77,14 @@ country_event = {
 			change_tag_from = ROOT
 		}
 	}
+	option = {
+		name = CHI.4.f
+		add_political_power = 75
+		DCD = {
+			change_tag_from = ROOT
+			set_cosmetic_tag = DCD_1
+		}
+	}
 }
 #庚申新年
 country_event = {
@@ -217,7 +94,6 @@ country_event = {
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
 	immediate = {
-		set_country_flag = chi.new.year
 	}
 	option = {
 		name = CHI.5.a
@@ -241,15 +117,13 @@ country_event = {
 			908 = { set_demilitarized_zone = yes }
 			751 = { set_demilitarized_zone = yes }
 			605 = { set_demilitarized_zone = yes }
+			dismantle_faction = yes
 		}
 	}
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
 	option = {
 		name = CHI.6.a
-		hidden_effect = {
-
-		}
 	}
 }
 #西北边防军被炸出来了！
@@ -263,21 +137,16 @@ country_event = {
 		tag = CHI
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			MON = {
-				transfer_state = 330
-				add_state_core = 330
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_2 = yes
 	 }
 	#那就这样吧  
 	option = {
 		name = CHI.7.a
+		
 		
 	}
 }
@@ -293,69 +162,18 @@ country_event = {
 		tag = CHI
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			MEN = {
-				transfer_state = 622
-				transfer_state = 896
-				transfer_state = 744
-				add_state_core = 622
-				add_state_core = 896
-				add_state_core = 744
-				add_manpower = 10000
-			}
-			XSM = {
-				transfer_state = 754
-				transfer_state = 283
-				transfer_state = 909
-				transfer_state = 604
-				transfer_state = 616
-				transfer_state = 752
-				transfer_state = 601
-				add_state_core = 754
-				add_state_core = 283
-				add_state_core = 909
-				add_state_core = 604
-				add_state_core = 616
-				add_state_core = 752
-				add_state_core = 601
-				add_manpower = 10000
-			}
-			TIB = {
-				transfer_state = 322
-				add_state_core = 322
-				add_manpower = 10000
-			}
-			SIK = {
-				transfer_state = 287
-				transfer_state = 617
-				transfer_state = 618
-				transfer_state = 760
-				transfer_state = 329
-				add_state_core = 287
-				add_state_core = 617
-				add_state_core = 618
-				add_state_core = 760
-				add_state_core = 329
-				add_manpower = 10000
-			}
-			SHX = {
-				transfer_state = 615
-				transfer_state = 883
-				transfer_state = 884
-				add_state_core = 615
-				add_state_core = 883
-				add_state_core = 884
-				add_manpower = 10000
-			}
-		}
-	}
+
 	#那就这样吧  
 	option = {
 		name = CHI.8.a
+		CHI_civil_war_3 = yes
+		hidden_effect = {
+			country_event = {id = CHI.999 days=2}
+		}
+		
 	}
 }
 
@@ -370,36 +188,11 @@ country_event = {
 		tag = CHI
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			MAN = {
-				transfer_state = 714
-				transfer_state = 761
-				transfer_state = 913
-				transfer_state = 873
-				transfer_state = 717
-				transfer_state = 715
-				transfer_state = 891
-				transfer_state = 328
-				transfer_state = 716
-				transfer_state = 875
-				transfer_state = 874
-				add_state_core = 714
-				add_state_core = 761
-				add_state_core = 913
-				add_state_core = 873
-				add_state_core = 717
-				add_state_core = 891
-				add_state_core = 328
-				add_state_core = 716
-				add_state_core = 875
-				add_state_core = 874
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_4 = yes
 	}
 	#那就这样吧  
 	option = {
@@ -415,53 +208,15 @@ country_event = {
 	desc = CHI.10.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.1.29
-		tag = CHI
+		date > 1922.2.1
+		tag = DCD
 	}
 	mean_time_to_happen = {
-		day = 1
+		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
-			753 = { set_demilitarized_zone = no }
-			906 = { set_demilitarized_zone = no }
-			434 = { set_demilitarized_zone = no }
-			908 = { set_demilitarized_zone = no }
-			751 = { set_demilitarized_zone = no }
-			605 = { set_demilitarized_zone = no }
-			PRC = {
-				transfer_state = 605
-				add_state_core = 605
-				add_manpower = 10000
-			}
-			DCD = {
-				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
-				transfer_state = 906
-				add_state_core = 906
-				add_manpower = 10000
-			}
-			JLD = {
-				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
-				transfer_state = 908
-				add_state_core = 908
-				add_manpower = 10000
-			}
-			XCD ={
-				load_oob = "AOR_LAND_CHI_chuanjun_XI"
-				transfer_state = 753
-				add_state_core = 753
-				add_manpower = 10000
-			}
-			CBS = {
-				load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
-				transfer_state = 751
-				transfer_state = 434
-				add_state_core = 751
-				add_state_core = 434
-				add_manpower = 10000
-			}
-		}
+		CHI_civil_war_5 = yes
 	}
 	#那就这样吧  
 	option = {
@@ -469,12 +224,14 @@ country_event = {
 		PRC = {
 			change_tag_from = ROOT
 		}
-	}
-	option = {
-		name = CHI.10.b
+		hidden_effect = {
+			DCD = {
+				drop_cosmetic_tag = yes
+			}
+		}
 	}
 }
-#联省宣言（联省改名）
+#联省宣言(联省改名）
 country_event = {
 	id = CHI.11
 	title = CHI.11.t
@@ -496,7 +253,7 @@ country_event = {
 		name = CHI.11.a
 	}
 }
-#kmt宣言（kmt改名）
+#kmt宣言(kmt改名）
 country_event = {
 	id = CHI.12
 	title = CHI.12.t
@@ -515,7 +272,7 @@ country_event = {
 		name = CHI.12.a
 	}
 }
-#央直合流（直系改名）
+#央直合流(直系改名）
 country_event = {
 	id = CHI.13
 	title = CHI.13.t
@@ -538,6 +295,287 @@ country_event = {
 	}
 }
 country_event = {
+	id = CHI.15 #乙末西征
+	title = CHI.15.t
+	desc = CHI.15.d
+	picture = GFX_AOR_chi_yimoxizheng
+	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+	}
+	option = {
+		name = CHI.15.a
+		set_country_flag = chi_waixibeizhanzheng
+	}
+}
+country_event = {
+	# 段祺瑞的决定
+	id = CHI.16 
+	title = CHI.16.t
+	desc = CHI.16.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		tag = CHI
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.16.a
+	}
+
+}
+
+country_event = {
+	# 东瀛的橄榄枝？
+	id = CHI.17 
+	title = CHI.17.t
+	desc = CHI.17.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		tag = CHI
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CHI.17.a
+		complete_national_focus = AOR_Close_talks_between_Japan_Anhui_and_Fengtian
+		add_offsite_building = { type = arms_factory level = 2 }
+	}
+	option = {
+		name = CHI.17.b
+		complete_national_focus = AOR_A_close_meeting_with_the_transportation_department
+		add_stability = 0.1
+		add_war_support = 0.05
+	}
+
+}
+
+country_event = {
+	# 给军官升级
+	id=CHI.18
+	title = CHI.18.t
+	desc = CHI.18.d
+	picture = GFX_AOR_chi_yimoxizheng
+	hidden = yes
+	trigger = {
+		tag = CHI
+		has_completed_focus = AOR_Establish_a_crash_course_for_military_officers
+	}
+    mean_time_to_happen = {
+		days = 140
+	}
+	fire_only_once = yes
+	option = {
+		name = CHI.18.a
+		random_army_leader = {
+			add_attack = 1
+			add_defense = 1
+		}
+		random_army_leader = {
+			add_attack = 1
+			add_defense = 1
+		}
+	}
+}
+
+country_event = {
+	# 外西北战争结束
+	id = CHI.19
+	title = CHI.19.t
+	desc = CHI.19.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	trigger = {
+		date > 1920.3.1
+		tag = CHI
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = CHI.19.a
+		set_country_flag = xibeizhanshijieshu
+	}
+}
+
+country_event = {
+	# 暂时的同盟
+	id = CHI.20
+	title = CHI.20.t
+	desc = CHI.20.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.20.a
+		add_stability = 0.05
+	}
+}
+country_event = {
+	# 拒绝合作
+	id = CHI.21
+	title = CHI.21.t
+	desc = CHI.21.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.21.a
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.22
+	title = CHI.22.t
+	desc = CHI.22.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.23.a
+		country_event = { id = CHI.23 }
+		}
+	}	
+country_event = {
+	# 四九城的两日
+	id = CHI.23
+	title = CHI.23.t
+	desc = CHI.23.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.23.a
+		country_event = { id = CHI.24 }
+	}
+}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.24
+	title = CHI.24.t
+	desc = CHI.24.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.24.a
+		country_event = { id = CHI.25 }
+		}
+	}
+
+country_event = {
+	# 四九城的两日
+	id = CHI.25	
+	title = CHI.25.t
+	desc = CHI.25.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+    	name = CHI.25.a
+		add_stability = 0.01
+		add_political_power = 10
+		}
+	}
+
+country_event = {		
+	# 经济改革
+	id = CHI.26
+	title = CHI.26.t
+	desc = CHI.26.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.26.a
+		add_ideas = jiaotongxigaigefagan
+	}	
+	option = {
+		name = CHI.26.b
+		add_ideas = caizhengbugaigefangan
+	}	
+}
+country_event = {		
+	# 督军团
+	id = CHI.27
+	title = CHI.27.t
+	desc = CHI.27.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = CHI.27.b
+	}	
+}
+country_event = {		
+	# 好事多磨
+	id = CHI.28
+	title = CHI.28.t
+	desc = CHI.28.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.28.b
+		add_ideas = liangshiyi
+		add_ideas = zhuqiyin
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_ideas = yujiaotonghuichubuhezuo
+	}	
+}
+
+country_event = {		
+	# 好事多磨
+	id = CHI.29
+	title = CHI.29.t
+	desc = CHI.29.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.29.a
+		add_stability = 0.1
+	}	
+}
+
+country_event = {		
+	# 好事多磨
+	id = CHI.30
+	title = CHI.30.t
+	desc = CHI.30.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.30.a
+		add_stability = -0.15
+	}	
+}
+
+#还我军事区
+country_event = {
+	id = CHI.999
+	title = CHI.999.t
+	desc = CHI.999.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_Portrait_of_Tirpitz
+	fire_only_once = yes
+	immediate = {
+		CHI_civilwar_6 = yes
+	}
+	option = {
+		name = CHI.999.a
+	}
+}
+country_event = {
 	id = CHI_Northwest_decision.1
 	title = CHI.6.t
 	desc = CHI.6.desc
@@ -550,6 +588,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 917
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -569,6 +611,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 586
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -588,6 +634,10 @@ country_event = {
 			transfer_state = 918
 		}
 		add_state_core = 918
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -607,6 +657,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 654
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -626,6 +680,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 916
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -645,6 +703,10 @@ country_event = {
 			set_state_owner_to = CHI
 		}
 		add_state_core = 920
+		add_to_variable = {
+			var = xibeizhanhshi
+			value = 1
+		}
 	}
 	option = {
 		name = CHI.6.a
@@ -667,6 +729,8 @@ country_event = {
 # 	}
 # }
 
+
+
 ######测试事件
 country_event = {
 	id = CHI_test.01
@@ -675,15 +739,38 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CHI_test.01.a
-		set_variable = { KMT_senate_seat_var = 90 }
-		set_variable = { SOCP_senate_seat_var = 68 }
-		set_variable = { ProP_senate_seat_var = 54 }
-		set_variable = { UNP_senate_seat_var = 33 }
-		set_variable = { KMT_Representatives_seat_var = 196 }
-		set_variable = { SOCP_Representatives_seat_var = 149 }
-		set_variable = { ProP_Representatives_seat_var = 119 }
-		set_variable = { UNP_Representatives_seat_var = 72 }
-		CHI_Seat_calculation = yes
+		add_to_variable = {
+			KMT_senate_seat_var=10
+		}
+	}
+}
+country_event = {
+	id = CHI_test.03
+	title = CHI_test.03.t
+	desc = CHI_test.03.desc
+	is_triggered_only = yes
+	option = {
+		name = CHI_test.03.a
+		add_to_variable = {
+			KMT_senate_seat_var=20
+		}
+	}
+}
+country_event = {
+	id = CHI_test.02
+	title = CHI_test.02.t
+	desc = CHI_test.02.desc
+	is_triggered_only = yes
+	option = {
+		name = CHI_test.02.a
+		CHI_civil_war_1 = yes
+		CHI_civil_war_2 = yes
+		CHI_civil_war_3 = yes
+		CHI_civil_war_4 = yes
+		CHI_civil_war_5 = yes
+		hidden_effect = {
+			country_event = {id = CHI.999 days=2}
+		}
 	}
 }
 

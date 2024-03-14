@@ -1,0 +1,98 @@
+CL_EGY_faluke={
+		name="CL_EGY_faluke"
+		portraits={
+			civilian={
+				large=GFX_portrait_CL_EGY_faluke
+                small=GFX_portrait_CL_EGY_faluke_small
+			}
+            army={
+				large=GFX_portrait_CL_EGY_faluke_amry
+				small=GFX_portrait_CL_EGY_faluke_amry_small
+			}
+		}
+		country_leader={
+			ideology= Integrationism_subtype_subtype
+			expire="1965.1.1.1"
+			id=-1
+			trait = { our_right_to_survive }
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CL_EGY_faluke
+			allowed = {
+				original_tag  = QUE
+			}
+			traits  = {
+				our_right_to_survive
+			}
+		}
+        
+	}
+	recruit_character = CL_EGY_faluke
+    SpriteType = {
+        name = "GFX_portrait_CL_EGY_faluke"
+        texturefile = "gfx/leaders/plan3/CL_EGY_faluke.png"
+    } 
+    SpriteType = {
+        name = "GFX_portrait_CL_EGY_faluke_small"
+        texturefile = "gfx/leaders/plan3/CL_EGY_faluke_small.png"
+    } 
+    
+    
+
+    选加模块
+	SpriteType = {
+        name = "GFX_portrait_CL_EGY_faluke_amry"
+        texturefile = "gfx/leaders/plan1/CL_EGY_faluke_amry.png"
+    } 
+    SpriteType = {
+        name = "GFX_portrait_CL_EGY_faluke_amry_small"
+        texturefile = "gfx/leaders/plan1/CL_EGY_faluke_amry_small.png"
+    } 
+    	country_leader={
+			ideology= !!!!!
+			expire="1965.1.1.1"
+			id=-1
+		}
+        advisor={
+			slot = political_advisor
+			idea_token = CL_EGY_faluke
+			allowed  = {
+				original_tag  = BUL
+			}
+			traits  = {
+				 
+			}
+		}
+        field_marshal={
+			traits={  }
+			skill=!
+			attack_skill=!
+			defense_skill=!
+			planning_skill=!
+			logistics_skill=!
+			legacy_id=-1
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CL_EGY_faluke_theorist
+			ledger = army
+			allowed = {
+				original_tag = BUL
+			}
+			
+			traits = {
+				
+			}
+		}	
+        corps_commander={
+			traits={  }
+			skill=!
+			attack_skill=!
+			defense_skill=!
+			planning_skill=!
+			logistics_skill=!
+			legacy_id=-1
+		}
+        

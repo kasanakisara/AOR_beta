@@ -1,4 +1,7 @@
 add_namespace = AOR_news
+###############################################
+#缺少的序号，新写的新闻可以补成这几个序号：16，
+###############################################
 
 news_event = { #苏维埃宣告成立(RUS-SOV) - NewsEvents_SOV_timeaxis.1
 	id = AOR_news.1
@@ -558,7 +561,7 @@ news_event = { #倍倍尔逝世
 		trigger = {has_government = Anarcho}
 	}
 }
-news_event = { #起义寄辣！
+news_event = { #叙利亚起义寄辣！
 	id = AOR_news.32
 	title = AOR_news.32.t
 	desc = AOR_news.32.d
@@ -570,7 +573,7 @@ news_event = { #起义寄辣！
 		name = AOR_news.32.a
 	}
 }
-news_event = { #1920打输了，1922再打一次！
+news_event = { #叙利亚1920打输了，1922再打一次！
 	id = AOR_news.33
 	title = AOR_news.33.t
 	desc = AOR_news.33.d
@@ -1098,5 +1101,266 @@ news_event = { #德意志社会主义联邦成立
 				has_government = Marxism
 			}
 		}
+	}
+}
+
+news_event = { #米老鼠！！！！
+	id = AOR_news.58
+	title = AOR_news.58.t
+	desc = AOR_news.58.d
+	picture = GFX_AOR_news.58_pic
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	    date > 1928.11.27
+		date < 1928.11.29
+	}
+	option = {
+		name = AOR_news.58.a
+	}
+}
+news_event = { #墨西哥开大会！！！！
+	id = AOR_news.59
+	title = AOR_news.59.t
+	desc = AOR_news.59.d
+	picture = GFX_AOR_news.59_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.58.a
+	}
+}
+news_event = { #墨西哥内战再起
+	id = AOR_news.60
+	title = AOR_news.60.t
+	desc = AOR_news.60.d
+	picture = GFX_AOR_news.60_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.60.a
+	}
+}
+news_event = { #墨西哥内战终息
+	id = AOR_news.61
+	title = AOR_news.61.t
+	desc = AOR_news.61.d
+	picture = GFX_AOR_news.61_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.61.a
+	}
+}
+
+news_event = { #澳大利亚1919选举
+	id = AOR_news.590
+	title = AOR_news.590.t
+	desc = AOR_news.590.d
+	picture = GFX_AOR_news.590_pic
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	    date > 1919.12.12
+		date < 1919.12.14
+	}
+	option = {
+		name = AOR_news.59.a
+	}
+}
+
+news_event = { #澳大利亚联盟
+	id = AOR_news.600
+	title = AOR_news.600.t
+	desc = AOR_news.600.d
+	picture = GFX_AOR_news.600_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.600.a
+	}
+}
+news_event = { #澳大利亚工党
+	id = AOR_news.610
+	title = AOR_news.610.t
+	desc = AOR_news.610.d
+	picture = GFX_AOR_news.610_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.610.a
+	}
+}
+
+news_event = { #澳大利亚警察罢工
+	id = AOR_news.62
+	title = AOR_news.62.t
+	desc = AOR_news.62.d
+	picture = GFX_AOR_news.62_pic
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	    date > 1923.11.1
+	}
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = AOR_news.62.a
+	}
+}
+
+
+news_event = { #新西兰新领导人
+	id = AOR_news.63
+	title = AOR_news.63.t
+	desc = AOR_news.63.d
+	picture = GFX_AOR_news.63_pic
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_news.63.a
+	}
+}
+news_event = { #老美内战寄！
+	id = AOR_news.64
+	title = AOR_news.64.t
+	desc = AOR_news.64.d
+	picture = GFX_AOR_news.64_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.64.a
+	}
+}
+news_event = { #民国新时代
+	id = AOR_news.65
+	title = AOR_news.65.t
+	desc = AOR_news.65.d
+	picture = GFX_AOR_news.65_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.65.a
+	}
+}
+news_event = { #庚申新年
+	id = AOR_news.66
+	title = AOR_news.66.t
+	desc = AOR_news.66.d
+	picture = GFX_AOR_news.66_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.66.a
+	}
+}
+news_event = { #奥斯陆博览会
+	id = AOR_news.70
+	title = AOR_news.70.t
+	desc = AOR_news.70.d
+	picture = GFX_AOR_news.70_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		trigger = {
+			NOT = {
+				TAG = SWE
+			}
+		}
+		name = AOR_news.70.a
+	}
+
+	option = {
+		trigger = {
+			TAG = SWE
+		}
+		name = AOR_news.70.b
+	}
+}
+
+news_event = { #石荷公投-德
+	id = AOR_news.67
+	title = AOR_news.67.t
+	desc = AOR_news.67.d
+	picture = GFX_AOR_news.67_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		trigger = {
+			NOT = {
+				TAG = SWE
+			}
+		}
+		name = AOR_news.67.a
+	}
+
+	option = {
+		trigger = {
+			TAG = SWE
+		}
+		name = AOR_news.67.b
+		name = AOR_news.67.a
+	}
+}
+
+news_event = { #石荷公投-丹
+	id = AOR_news.68
+	title = AOR_news.68.t
+	desc = AOR_news.68.d
+	picture = GFX_AOR_news.68_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.68.a
+	}
+}
+
+news_event = { #纽芬兰给英
+	id = AOR_news.73
+	title = AOR_news.73.t
+	desc = AOR_news.73.d
+	picture = GFX_AOR_news.73_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.73.a
+	}
+}
+
+news_event = { #西班牙大流感消失
+	id = AOR_news.71
+	title = AOR_news.71.t
+	desc = AOR_news.71.d
+	picture = GFX_AOR_news.71_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.71.a
+	}
+}
+
+news_event = { #纽芬兰给加
+	id = AOR_news.72
+	title = AOR_news.72.t
+	desc = AOR_news.72.d
+	picture = GFX_AOR_news.72_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.72.a
 	}
 }

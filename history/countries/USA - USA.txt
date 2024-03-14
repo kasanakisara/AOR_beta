@@ -14,7 +14,7 @@ if = {
 
 set_research_slots = 4
 set_stability = 0.75
-set_war_support = 10
+set_war_support = 0.5
 add_command_power = 20
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
@@ -90,29 +90,29 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 44 #洋基党
-	FRE_democratic = 34 #迪克西党
-	SOC_democratic = 8 #社民
+	CON_democratic = 34 #迪克西党
+	FRE_democratic = 44 #洋基党
+	SOC_democratic = 10 #社民
 	PAR_socialism = 4 #温和社
-	AUT_democratic = 10 #迪克西-强硬派
+	AUT_democratic = 8 #迪克西-强硬派
 
 }
 
 create_country_leader = {
 	name = "Thomas_Woodrow_Wilson"
-	desc = ""
+	desc = "Thomas_Woodrow_Wilson_desc"
 	picture = "axm7x-nkh4s.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = USA_federalism
 	traits = {
 		
 	}
 
 }
 create_country_leader = {
-	name = "John Nance Garner IV"
+	name = "John Nance Garner III"
 	desc = ""
-	picture = "John_Nance_Garner_IV.dds"
+	picture = "John_Nance_Garner_III.dds"
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -155,10 +155,12 @@ create_country_leader = {
 }
 add_ideas = {
 	USA_the_divided_nation
-	USA_Anglo_frech_enterprise
-	USA_steel_and_cotton 
-	USA_participation_award
-	USA_Dollar_bottom
+	USA_sandaliren
+	USA_shiyouhuanying 
+	USA_kuangyezhidi
+	USA_busidexintuo
+	USA_zhixuchonggou_knights
+	USA_dazhanzhimo
 }
 
 set_variable = { var = wanla_quandouwanle }
@@ -182,4 +184,30 @@ USA = {country_event = {
 USA = {country_event = {
 	days = 920 id = USA.109
 	}
+}
+recruit_character = USA_john_pershing
+recruit_character = USA_tasker_bliss
+recruit_character = USA_payton_march
+recruit_character = USA_hugh_l_scott
+recruit_character = USA_hunter_liggett
+recruit_character = USA_robert_e_lee_bradley
+recruit_character = USA_charles_pelot_sumner
+recruit_character = USA_john_l_hines
+recruit_character = USA_andrew_w_brust
+recruit_character = USA_leonard_wood
+recruit_character = USA_f_c_answorth
+recruit_character = USA_george_barnett
+recruit_character = USA_john_a_lerchen
+recruit_character = USA_harry_a_eaton
+recruit_character = USA_robert_l_hauser
+recruit_character = USA_edward_whittemore
+recruit_character = USA_william_l_seibert
+recruit_character = USA_brayton_brown
+recruit_character = USA_ora_e_hunt
+recruit_character = USA_j_w_hurd
+recruit_character = USA_charles_g_morton
+recruit_character = USA_malin_craig
+set_autonomy = {
+target = HSP
+autonomy_state = autonomy_puppet
 }

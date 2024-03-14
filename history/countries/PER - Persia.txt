@@ -78,7 +78,7 @@ if = {
 
 set_research_slots = 2
 set_convoys = 30
-set_stability = 0.1
+set_stability = 0.3
 
 1939.1.1 = {
 
@@ -167,7 +167,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Najaf Qoli Khan Bakhtiari"
 	desc = ""
-	picture = "axrnd-3yov3.dds"
+	picture = "Nezam_al-Saltaneh_Mafi.dds"
 	expire = "1965.1.1"
 	ideology = islamdemcratic
 	traits = {

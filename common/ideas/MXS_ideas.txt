@@ -5,8 +5,8 @@ ideas = {
 			always = yes
 		}
 			modifier = {
-			global_building_slots_factor = -0.3
-			industrial_capacity_factory = -0.45
+			global_building_slots_factor = -0.2
+			industrial_capacity_factory = -0.3
 			production_factory_max_efficiency_factor = -0.25
 	        production_factory_efficiency_gain_factor = -0.25
 			
@@ -38,5 +38,37 @@ ideas = {
 			drift_defence_factor = -0.5
 			}
 		}
+		MXS_Rebels  = {
+			allowed = { 
+			always = yes
+		}
+			modifier = {
+			army_attack_factor = 0.15
+			army_defence_factor = 0.15
+			conscription_factor = 0.2
+			army_speed_factor = 0.15
+			production_factory_max_efficiency_factor = -0.1
+			}
+			max_planning_factor = -0.1
+			hidden_modifier = {
+				ai_get_ally_desire_factor = -50
+				ai_focus_aggressive_factor = 50
+				surrender_limit = 50
+			}
+		}
+			MXS_Black_gold  = {
+			allowed = { 
+		    picture = GFX_idea_MXS_Black_gold
+			always = yes
+		}
+			modifier = {
+			consumer_goods_factor = -0.2
+			local_resources_factor = 0.2
+			drift_defence_factor = -0.15
+			stability_factor = -0.1
+			}
+		}
+			
+		
 	}
 }

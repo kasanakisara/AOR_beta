@@ -2,6 +2,9 @@
 
 #oob = "YEM_1936"
 
+add_ideas = YEM_the_shiye
+add_ideas = YEM_the_yedelis
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -88,4 +91,3 @@ set_politics = {
 set_popularities = {
 	Absolutism = 100
 }
-

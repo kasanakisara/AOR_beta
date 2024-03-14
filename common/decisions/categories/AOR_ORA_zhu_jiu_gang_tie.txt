@@ -1,9 +1,0 @@
-AOR_ORA_hu_yv_zong_ba_gong = {
-	icon = GFX_decision_category_ana
-	visible = {
-		TAG = ORA
-		has_country_flag = unlock_AOR_ORA_hu_yv_zong_ba_gong
-		has_war = yes 
-	}
-	priority = 100
-}

@@ -49,7 +49,7 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
-		#自由军团（追加）
+		#自由军团(追加）
 		Freedom_Corps_2 = {
 
 			picture = idea_Freedom_Corps
@@ -216,7 +216,7 @@ ideas = {
 			}
 		}
 
-		#革命，自由军团（追加1）
+		#革命，自由军团(追加1）
 		KSH_geming_ziyoujuntuan_1 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_1
@@ -234,7 +234,7 @@ ideas = {
 			}
 		} 
 
-		#革命，自由军团（追加2）
+		#革命，自由军团(追加2）
 		KSH_geming_ziyoujuntuan_2 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_2
@@ -252,7 +252,7 @@ ideas = {
 			}
 		} 
 
-		#革命，自由军团（追加3）
+		#革命，自由军团(追加3）
 		KSH_geming_ziyoujuntuan_3 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_3
@@ -286,7 +286,7 @@ ideas = {
 			}
 		}
 
-		#革命，自由军团（追加4）
+		#革命，自由军团(追加4）
 		KSH_geming_ziyoujuntuan_4 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_4
@@ -304,7 +304,7 @@ ideas = {
 			}
 		}
 
-		#雄鹰计划（追加2）
+		#雄鹰计划(追加2）
 		KSH_plan_of_eagle_2 = {
 
 			picture = idea_KSH_plan_of_eagle_2
@@ -319,7 +319,7 @@ ideas = {
 			}
 		}
 
-		#波美拉尼亚劳工阵线（追加1）
+		#波美拉尼亚劳工阵线(追加1）
 		KSH_bomeilaniyalaogongzhenxian_1 = {
 
 			picture = idea_KSH_bomelaniyalaogongzhenxian_1
@@ -336,7 +336,7 @@ ideas = {
 			}
 		}
 
-		#革命，自由军团（追加5）
+		#革命，自由军团(追加5）
 		KSH_geming_ziyoujuntuan_5 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_5
@@ -354,7 +354,7 @@ ideas = {
 			}
 		}
 
-		#革命，自由军团（追加6）
+		#革命，自由军团(追加6）
 		KSH_geming_ziyoujuntuan_6 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_6
@@ -385,7 +385,7 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
-		#革命，自由军团（追加7）
+		#革命，自由军团(追加7）
 		KSH_geming_ziyoujuntuan_7 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_7
@@ -402,7 +402,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 			}
 		}
-		#雄鹰计划（追加3）
+		#雄鹰计划(追加3）
 		KSH_plan_of_eagle_3 = {
 
 			picture = idea_KSH_plan_of_eagle_3
@@ -417,7 +417,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.05
 			}
 		}
-		#雄鹰计划（追加4）
+		#雄鹰计划(追加4）
 		KSH_plan_of_eagle_4 = {
 
 			picture = idea_KSH_plan_of_eagle_4
@@ -432,7 +432,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.05
 			}
 		}
-		#雄鹰计划（追加5）
+		#雄鹰计划(追加5）
 		KSH_plan_of_eagle_5 = {
 
 			picture = idea_KSH_plan_of_eagle_5
@@ -476,7 +476,7 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
-		#革命，自由军团（追加7）
+		#革命，自由军团(追加7）
 		KSH_geming_ziyoujuntuan_7 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_7
@@ -492,7 +492,7 @@ ideas = {
 				army_morale_factor = -0.35
 			}
 		}
-		#革命，自由军团（追加8）
+		#革命，自由军团(追加8）
 		KSH_geming_ziyoujuntuan_8 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_8
@@ -508,7 +508,7 @@ ideas = {
 				army_morale_factor = -0.25
 			}
 		}
-		#革命，自由军团（追加9）
+		#革命，自由军团(追加9）
 		KSH_geming_ziyoujuntuan_9 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_9
@@ -524,7 +524,7 @@ ideas = {
 				army_morale_factor = -0.25
 			}
 		}
-		#自由军团（追加3）
+		#自由军团(追加3）
 		Freedom_Corps_3 = {
 
 			picture = idea_Freedom_Corps
@@ -569,7 +569,7 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}
-		##革命，自由军团（追加10）
+		##革命，自由军团(追加10）
 		KSH_geming_ziyoujuntuan_10 = {
 
 			picture = idea_KSH_geming_ziyoujuntuan_7
@@ -756,6 +756,7 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 		}
+	}
 		KSH_zujianzongcanmoubu = {
 			 
 			 picture = idea_KSH_zujianzongcanmoubu
@@ -797,6 +798,6 @@ ideas = {
 				army_morale_factor = 0.1
 				conscription_factor = 0.05
 			}
-		}   
+		}
 	}
 }

@@ -15,7 +15,9 @@ state={
 			}
 		}
 		add_core_of = MXS
-		add_state_claim = MXS
+		MXS = {
+		add_state_claim = 483
+		}
 		victory_points = {
 			4977 3
 		}

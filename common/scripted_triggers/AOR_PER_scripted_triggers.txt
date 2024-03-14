@@ -1,4 +1,4 @@
-PER_Agricultural_Jihad_Preliminary_1_trigger = {
+PER_Agricultural_Jihad_Preliminary_1_trigger = {#初步农业圣战
 	custom_trigger_tooltip = {
 		OR = {
 			has_idea = PER_Great_Famine
@@ -7,7 +7,7 @@ PER_Agricultural_Jihad_Preliminary_1_trigger = {
 		}
 	}
 }
-PER_Agricultural_Jihad_Preliminary_2_trigger = {
+PER_Agricultural_Jihad_Preliminary_2_trigger = {#初步农业圣战
 	custom_trigger_tooltip = {
 		OR = {
 			has_idea = PER_Great_Famine_3
@@ -15,7 +15,7 @@ PER_Agricultural_Jihad_Preliminary_2_trigger = {
 		}
 	}
 }
-PER_Agricultural_Jihad_Preliminary_3_trigger = {
+PER_Agricultural_Jihad_Preliminary_3_trigger = {#初步农业圣战
 	custom_trigger_tooltip = {
 		OR = {
 			has_idea = PER_Agricultural_Jihad_Preliminary_1

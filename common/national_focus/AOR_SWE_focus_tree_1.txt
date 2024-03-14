@@ -1,0 +1,643 @@
+focus_tree = {
+	id = AOR_SWE_focus_tree_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 500
+	}
+	focus = {
+		id = SWE_Eighty_Seventh_Order
+		icon = GFX_goal_unknown
+		cost = 1.00
+		x = 9
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SWE_Eighty_Seventh_Orders
+		}
+
+	}
+	focus = {
+		id = SWE_Karlstard_Plan
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SWE_Eighty_Seventh_Order
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SWE_K_Plan
+			custom_effect_tooltip = SWE_Karlstard_Plan_decision
+			set_country_flag = SWE_K_Plan_flag
+			add_to_variable = { SWE_Norweign_Independence_value = -10 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
+
+	}
+	focus = {
+		id = SWE_Encourage_Capital
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Karlstard_Plan
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			add_timed_idea = {
+				idea = SWE_Encourage
+				days = 300
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Found_of_British
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Encourage_Capital
+		}
+		mutually_exclusive = {
+			focus = SWE_Found_of_France
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			ENG = {
+				country_event = { id = SWE.3 }
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Found_of_France
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Encourage_Capital
+		}
+		mutually_exclusive = {
+			focus = SWE_Found_of_British
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			FRA = {
+				country_event = { id = SWE.3 }
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Stockholm_Meeting
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Found_of_France
+			focus = SWE_Found_of_British
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			country_event = { id = SWE.8 }
+		}
+
+	}
+	focus = {
+		id = SWE_IndustryArea_Oslo
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			110 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_IndustryArea_Bergen
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			142 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Develop_North
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stockholm_Meeting
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+			666 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			144 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			967 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Oslo_Exhibition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_IndustryArea_Oslo
+		}
+		prerequisite = {
+			focus = SWE_IndustryArea_Bergen
+		}
+		prerequisite = {
+			focus = SWE_Develop_North
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+			news_event = { id = AOR_news.70 }
+		}
+
+	}
+	focus = {
+		id = SWE_Antisocialistisk_Speciallag
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SWE_Eighty_Seventh_Order
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			add_ideas = SWE_Antisocialistisk_Speciallagen
+			custom_effect_tooltip = SWE_Antisocialistisk_Speciallag_decision
+			add_to_variable = { SWE_Norweign_Independence_value = -15 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
+
+	}
+	focus = {
+		id = SWE_Proganda_to_People
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Antisocialistisk_Speciallag
+		}
+		prerequisite = {
+			focus = SWE_Karlstard_Plan
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_political_power = 100
+			add_to_variable = { SWE_Norweign_Independence_value = -5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+			country_event = { id = SWE.9 }
+		}
+
+	}
+	focus = {
+		id = SWE_All_People_are_King
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Proganda_to_People
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			add_ideas = SWE_All_People_are_King
+		}
+
+	}
+	focus = {
+		id = SWE_Liberte_Spirit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Proganda_to_People
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			add_ideas = SWE_Liberte_Spirit
+		}
+
+	}
+	focus = {
+		id = SWE_Beyond_Nationalism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Liberte_Spirit
+		}
+		prerequisite = {
+			focus = SWE_All_People_are_King
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			add_ideas = SWE_Beyond_Nationalism
+		}
+
+	}
+	focus = {
+		id = SWE_Our_Responsibility
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Beyond_Nationalism
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SWE_Beyond_Nationalism
+				add_idea = SWE_Beyond_Nation
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Abolish_Left_Party
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Antisocialistisk_Speciallag
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+			add_popularity = { ideology = Marxism popularity = -0.2 }
+			add_popularity = { ideology = SOC_democratic popularity = -0.1 }
+			swap_ideas = {
+				remove_idea = SWE_Left_Threat
+				add_idea = SWE_Left_Threat_I
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_Publications_Supervision
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Abolish_Left_Party
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Rope_Right
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Publications_Supervision
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Restrictions_on_Gatherings
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Abolish_Left_Party
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Imprisoned_Left_Leaders
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Restrictions_on_Gatherings
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = SWE_The_Trial
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Imprisoned_Left_Leaders
+		}
+		prerequisite = {
+			focus = SWE_Rope_Right
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = SWE_Restructuring_Parliament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_Trial
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = SWE_The_Dream
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Our_Responsibility
+		}
+		prerequisite = {
+			focus = SWE_Restructuring_Parliament
+		}
+		prerequisite = {
+			focus = SWE_Oslo_Exhibition
+		}
+		x = 9
+		y = 8
+		completion_reward = {
+			remove_ideas = A_lingering_alliance
+		}
+
+	}
+	focus = {
+		id = SWE_Beautiful_New_World
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_Dream
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = SWE_Trade_With_Soviet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Beautiful_New_World
+		}
+		x = 3
+		y = 10
+
+	}
+	focus = {
+		id = SWE_Trade_with_Balkan
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Beautiful_New_World
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = SWE_Trade_with_China
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Trade_With_Soviet
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Trade_with_Greek
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Trade_with_Balkan
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Provide_Third_Choice
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Trade_with_Greek
+		}
+		prerequisite = {
+			focus = SWE_Trade_with_China
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = SWE_Rebuild_New_World
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_Dream
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = SWE_Welfare_New_Society
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_Dream
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = SWE_Return_Power
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Rebuild_New_World
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = SWE_Merge_Parliament
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Rebuild_New_World
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = SWE_Amendment_Law_Inheritance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Return_Power
+		}
+		x = 8
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Reduction_Civil_Servants
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Merge_Parliament
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Hand_Could_Saw
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Reduction_Civil_Servants
+		}
+		prerequisite = {
+			focus = SWE_Amendment_Law_Inheritance
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = SWE_Employment_Subsidy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Welfare_New_Society
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = SWE_Maternity_Allowance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Welfare_New_Society
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = SWE_People_University
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Employment_Subsidy
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Labor_Protection
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Maternity_Allowance
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = SWE_Everyone_has_Job
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Labor_Protection
+		}
+		prerequisite = {
+			focus = SWE_People_University
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = SWE_Beautiful_World
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Hand_Could_Saw
+		}
+		prerequisite = {
+			focus = SWE_Everyone_has_Job
+		}
+		prerequisite = {
+			focus = SWE_Provide_Third_Choice
+		}
+		x = 9
+		y = 13
+
+	}
+}

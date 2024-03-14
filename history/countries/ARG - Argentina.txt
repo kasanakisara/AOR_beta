@@ -75,7 +75,7 @@ recruit_character = ARG_senor_hitler
 
 create_country_leader = {
 	name = "José Félix Benito Uriburu y Uriburu"
-	desc = "POLITICS_Heinrich_Mann_DESC"
+	desc = "POLITICS_Benito_Uriburu_y_Uriburu_DESC"
 	picture = "ARG.dds"
 	expire = "1965.1.1"
 	ideology = miliciagov

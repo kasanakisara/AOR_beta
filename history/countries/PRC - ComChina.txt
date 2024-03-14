@@ -1,6 +1,6 @@
 ﻿capital = 605
 
-#oob = "PRC_1936"
+#oob = "DCD_1936"
 
 # Starting tech
 set_technology = {
@@ -19,7 +19,21 @@ create_country_leader = {
 	traits = {
 	}
 }
-
+recruit_character = Li_LiuRu
+recruit_character = Xu_QiWen
+recruit_character = Yu_ShuDe
+recruit_character = Shao_SiPing
+recruit_character = Wu_YuZhang
+recruit_character = Xu_TeLi
+recruit_character = Xie_JueZai
+recruit_character = Yun_DaiYing
+recruit_character = Yang_AnGong
+recruit_character = Fang_ZhiMin
+recruit_character = Qu_QiuBai
+recruit_character = Li_LiSan
+recruit_character = Yang_Yin
+recruit_character = Zhan_TianYou
+recruit_character = Peng_Pai
 set_politics = {
 	ruling_party = Marxism
 	last_election = "1936.1.1"

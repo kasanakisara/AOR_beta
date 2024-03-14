@@ -1223,7 +1223,7 @@ country= {
 			industrial_capacity_dockyard = 0.05
 		}
 	}
-	PRC_operational_system_0 = { #人民军队作战体系0（初始）
+	PRC_operational_system_0 = { #人民军队作战体系0(初始）
 		picture = gre_agricultural_communes
 		modifier = {
 			#补给消耗
@@ -1233,7 +1233,7 @@ country= {
 			
 		}
 	}
-	PRC_operational_system_1 = { #人民军队作战体系0（重新整顿红军作战理念体系）
+	PRC_operational_system_1 = { #人民军队作战体系0(重新整顿红军作战理念体系）
 		picture = gre_agricultural_communes
 		modifier = {
 			#补给消耗
@@ -1247,7 +1247,7 @@ country= {
 			army_org_factor = 0.04
 		}
 	}
-	PRC_operational_system_2 = { #人民军队作战体系0（现代后勤）
+	PRC_operational_system_2 = { #人民军队作战体系0(现代后勤）
 		picture = gre_agricultural_communes
 		modifier = {
 			#补给消耗
@@ -1269,7 +1269,7 @@ country= {
 			
 		}
 	}
-	PRC_operational_system_3 = { #人民军队作战体系（军队组织体系现代化）
+	PRC_operational_system_3 = { #人民军队作战体系(军队组织体系现代化）
 		picture = gre_agricultural_communes
 		modifier = {
 			#补给消耗
@@ -1302,7 +1302,7 @@ country= {
 			land_equipment_upgrade_xp_cost = -0.1
 		}
 	}
-	PRC_operational_system_4 = { #人民军队作战体系（中国人民解放军）
+	PRC_operational_system_4 = { #人民军队作战体系(中国人民解放军）
 		picture = gre_agricultural_communes
 		modifier = {
 			#补给消耗

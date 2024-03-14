@@ -11,7 +11,7 @@ country_event = {
 	    date > 1919.8.1
 		tag = PAN
 	}
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	
 	fire_only_once = yes
 	option = {
@@ -31,7 +31,7 @@ country_event = {
 	    date > 1923.10.1
 	}
 	hidden = yes
-    mean_time_to_happen = {day = 1}
+    mean_time_to_happen = {days = 1}
 	set_variable = { global.se_AOR_event_picture_change = 7 }
 	fire_only_once = yes
 	option = {

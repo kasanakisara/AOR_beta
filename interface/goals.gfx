@@ -3231,8 +3231,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Open_up_for_industrialization.dds"			
 	}
 	SpriteType = {
-		name = "GFX_goal_Implement_the_merger_of_enterprises"
-		texturefile = "gfx/interface/goals/Implement_the_merger_of_enterprises.dds"			
+		name = "GFX_goal_NAU_Implement_the_merger_of_enterprises"
+		texturefile = "gfx/interface/goals/NAU_Implement_the_merger_of_enterprises.png"			
 	}
 	SpriteType = {
 		name = "GFX_goal_The_prince's_speech"

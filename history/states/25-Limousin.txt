@@ -10,9 +10,16 @@ state={
 		owner = FRA
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		victory_points = {
 			620 5
+		}
+		victory_points = {
+			9751 1
+		}
+			victory_points = {
+			11720 1
 		}
 		add_core_of = OCC
 		add_core_of = FRA

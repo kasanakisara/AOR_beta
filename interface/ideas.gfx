@@ -6385,7 +6385,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Pending"
-		texturefile = "gfx/interface/ideas/idea_Pending.dds"
+		texturefile = "gfx/interface/ideas/idea_Pending.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Dark_Heart_of_empire"
@@ -6413,7 +6413,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_price_for_freedom"
-		texturefile = "gfx/interface/ideas/idea_price_for_freedom.dds"
+		texturefile = "gfx/interface/ideas/price_for_freedom.png"
 	}
 	spriteType = {
 		name = "GFX_idea_flood_away"
@@ -6703,9 +6703,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Compact_of_German_Confederation"
-		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation.dds"
+		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation.png"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_Compact_of_German_Confederation_1"
+		texturefile = "gfx/interface/ideas/idea_Compact_of_German_Confederation_1.png"
+	}	
 	spriteType = {
 		name = "GFX_idea_trade_with_berlin"
 		texturefile = "gfx/interface/ideas/GFX_idea_trade_with_berlin.dds"
@@ -6726,10 +6729,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_USA_steel_and_cotton"
 		texturefile = "gfx/interface/ideas/steel_and_cotton.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_USA_the_divided_nation"
-		texturefile = "gfx/interface/ideas/USA_the_divided_nation.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_USA_Anglo_frech_enterprise"

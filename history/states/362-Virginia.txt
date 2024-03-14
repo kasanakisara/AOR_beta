@@ -14,7 +14,6 @@ state={
 			fuel_silo = 1
 			788 = {
 				naval_base = 10
-
 			}
 
 		}
@@ -23,7 +22,10 @@ state={
 			788 10 
 		}
 		victory_points = {
-			10412 15 
+			11738 7 
+		}
+		victory_points = {
+			865 7 
 		}
 		1939.1.1 = {
 			buildings = {
@@ -34,6 +36,8 @@ state={
 
 		}
 
+		set_demilitarized_zone = yes
+		
 	}
 
 	provinces={
@@ -41,7 +45,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower=2249080
+	manpower=2049080
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

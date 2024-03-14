@@ -1,6 +1,6 @@
 characters = {
 	MEX_Emiliano_Zapata = { #Emiliano_Zapata
-		name = Emiliano·Zapata
+		name = "Emiliano·Zapata"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Emiliano_Zapata.png
@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	MEX_Pancho_Villa = { #Pancho_Villa
-		name = Pancho·Villa
+		name = "Pancho·Villa"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Pancho_Villa.png
@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	MEX_Genovevo_De_La_O = { #Genovevo_De_La_O
-		name = Genovevo·De·La·O
+		name = "Genovevo·De·La·O"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Genovevo_De_La_O.png
@@ -91,7 +91,7 @@ characters = {
 		}
 	}
 	MEX_Alvaro_Obregon = { #Alvaro_Obregon
-		name = Alvaro·Obregon
+		name = "Alvaro·Obregon"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Alvaro_Obregon.png
@@ -121,7 +121,7 @@ characters = {
 		}
 	}
 	MEX_Pablo_Gonzalez_Garza = { #Pablo_Gonzalez_Garza
-		name = Pablo·Gonzalez·Garza
+		name = "Pablo·Gonzalez·Garza"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Pablo_Gonzalez_Garza.png
@@ -152,7 +152,7 @@ characters = {
 		}
 	}
 	MEX_Benjamin_Guilermo_Hill_Salido = { #Benjamin_Guilermo_Hill_Salido
-		name = Benjamin·Guilermo·Hill·Salido
+		name = "Benjamin·Guilermo·Hill·Salido"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Benjamin_Guilermo_Hill_Salido.png
@@ -183,7 +183,7 @@ characters = {
 		}
 	}
 	MEX_Antonio_Diaz_Soto_Y_Gama = { #Antonio_Diaz_Soto_Y_Gama
-		name = Antonio·Diaz·Soto·Y·Gama
+		name = "Antonio·Diaz·Soto·Y·Gama"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Antonio_Diaz_Soto_Y_Gama.png
@@ -213,7 +213,7 @@ characters = {
 		}
 	}
 	MEX_Ricrdo_Flores_Magon = { #Ricrdo_Fkores_Magon
-		name = Ricrdo·Flores·Magon
+		name = "Ricrdo·Flores·Magon"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Ricrdo_Fkores_Magon.png
@@ -243,7 +243,7 @@ characters = {
 		}
 	}
 	MEX_Lazaro_Gutierrez_de_lara = { #Lazaro_Gutierrez_de_lara
-		name = Lazaro·Gutierrez·de·lara
+		name = "Lazaro·Gutierrez·de·lara"
 		portraits = {
 			army = {
 				large = gfx/leaders/MEX/Lazaro_Gutierrez_de_lara.png

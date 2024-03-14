@@ -2,7 +2,90 @@ ideas = {
 
 	country = {
 	
+		JAP_lixian = {
+			picture = GFX_idea_JAP_lixian
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.1
+		    stability_weekly = 0.005
+			war_support_factor = -0.30
+			}
+		}
 	
+	
+		JAP_junbu= {
+			picture = GFX_idea_JAP_junbu
+			allowed = { always = yes }
+			modifier = {
+			high_command_cost_factor = 0.3
+			army_chief_cost_factor = 0.2
+			command_power_gain = -0.05
+			max_command_power = 5
+			command_power_gain_mult = 0.05
+			max_command_power_mult = -0.05
+			training_time_army_factor = 0.1
+			army_org_factor = 0.05
+	        army_morale_factor = -0.2
+	        supply_consumption_factor = -0.1
+			}
+		}
+	    JAP_minzhi = {
+			picture = GFX_idea_JAP_minzhi
+			allowed = { always = yes }
+			modifier = {
+			conscription = 0.02
+			mobilization_speed = 0.2
+			surrender_limit = 0.3
+			trade_opinion_factor = 0.2
+			mobilization_laws_cost_factor = -0.5
+			trade_laws_cost_factor  = -0.5
+			economy_cost_factor = -0.5
+			political_advisor_cost_factor = -0.3
+			local_resources_factor = 0.2
+			}
+		}
+		JAP_samo = {
+			picture = GFX_idea_JAP_samo
+			allowed = { always = yes }
+			modifier = {
+			navy_chief_cost_factor = 0.5
+			production_speed_dockyard_factor = 0.15
+			efit_ic_cost = 0.1
+			refit_speed = 0.1
+			repair_speed_factor = -0.1
+			experience_gain_navy_factor = 0.05
+			}
+		}
+		JAP_fanfa = {
+			picture = GFX_idea_JAP_fanfa
+			allowed = { always = yes }
+			modifier = {
+		    olitical_power_factor = -0.1
+			consumer_goods_factor = 0.2
+			stability_factor = -0.15
+			research_speed_factor = 0.05
+			min_export = -0.2
+			line_change_production_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = -0.05
+	         materiel_manufacturer_cost_factor = 0.1
+	         industrial_concern_cost_factor = 0.2
+			}
+		}
+	    JAP_misao = {
+			picture = GFX_idea_JAP_misao
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.2
+			resistance_target = 0.2
+			line_change_production_efficiency_factor = -0.05
+			production_speed_arms_factory_factor = -0.15
+	        production_speed_industrial_complex_factor = -0.15
+	        production_speed_synthetic_refinery_factor = -0.1
+			}
+		}
+
 		state_shintoism = {
 			allowed = {
 				always = no

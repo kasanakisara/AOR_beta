@@ -1,0 +1,111 @@
+on_actions = {
+	on_daily_SWE = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = SWE_Norweign_Independence_flag
+				}
+
+				#修正更新
+				SWE_Norweign_Independence_value_check = yes
+
+				#更新gui
+				SWE_update_ui_effect = yes
+
+				#增加数值
+				set_variable = { SWE_Norweign_Independence_add = 0 }
+				if = {
+					limit = {
+						has_country_flag = SWE_GUI_1 #哈康初代
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 3 }
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = SWE_GUI_2 #紧急状态
+							has_country_flag = SWE_GUI_3 #鲁普雷希特初期
+						}
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 5 }
+				}
+
+				#民族精神修正
+				if = { 
+					limit = {
+						has_idea = SWE_Eighty_Seventh_Orders
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2 }
+				}
+				if = { 
+					limit = {
+						has_idea = A_lingering_alliance
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 2.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat_I
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 0.75 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Antisocialistisk_Speciallagen
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -3.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_All_People_are_King
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -1 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Beyond_Nationalism
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Beyond_Nation
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -3 }
+				}
+
+				if = {
+					limit = {
+						has_country_flag = SWE_GUI_4 #哈康抑制期
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 0 }
+				}
+				
+				#数值更新
+				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
+
+				#上下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
+			}
+
+			
+		}
+	}
+}

@@ -155,6 +155,7 @@ add_ideas = {
 	A_lingering_alliance
 	Tiger_of_Silence
 	Let_the_ambitio_sleep
+	SWE_Left_Threat
 }
 
 
@@ -163,7 +164,7 @@ create_country_leader = {
 	desc = ""
 	picture = "a4buu-9y80q.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = meliorism
 	traits = {
 	}
 }
@@ -178,6 +179,15 @@ create_country_leader = {
 	}
 }
 
-#### Add by Hacker
-set_variable = { SWE_Left_Threat_value = 0.2 }
-add_ideas = SWE_Left_Threat
+##Norweign Independence
+set_variable = { SWE_Norweign_Independence_value = 25 }
+set_variable = { SWE_Norweign_Independence_main_meter = 6 }
+set_variable = { SWE_Norweign_Independence_add = 3 }
+set_country_flag = SWE_Norweign_Independence_flag
+set_country_flag = SWE_GUI_1
+
+set_variable = { SWE_Norweign_Independence_stability_weekly = -0.1 }
+add_dynamic_modifier = { modifier = AOR_SWE_Norweign_Independence_dynamic_modifier }
+set_variable = { SWE_Norweign_Independence_stability_weekly = -0.05 }
+set_variable = { SWE_Norweign_Independence_stability_factor = -0.1 }
+set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.1 }

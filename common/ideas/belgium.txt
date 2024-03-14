@@ -162,7 +162,7 @@ ideas = {
 		#自由的代价
 		price_for_freedom = {
 			
-			picture = idea_price_for_freedom
+			picture = GFX_idea_price_for_freedom
 			
 			allowed = {
 				always = yes
