@@ -73,7 +73,7 @@ guiTypes = {
 			clipping = yes
 			instantTextBoxType = { 
 				name ="country_information_TEXT" #文本框
-				font = "hoi_20b"
+				font = "hoi_36header"
 				text = [country_information_TEXT_spcloc]
 				scrollbartype = standardtext_slider
 				format = left
@@ -81,6 +81,7 @@ guiTypes = {
 				maxHeight = 365
 			}
 		}
+		
 	}
 	
 }

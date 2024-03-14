@@ -5,7 +5,6 @@ scripted_gui = {
 		window_name = "CC_ui_window"
 		visible = {
 			TAG = ENG
-			always = no
 		}
 		
 		properties = {

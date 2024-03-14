@@ -2,13 +2,13 @@ spriteTypes = {
 	#########肖像#############
 	spriteType = { #列宁
 		name = "GFX_AOR_SOV_Lenin"
-		texturefile = "gfx/leaders/RUS/LENIN.png"
+		texturefile = "gfx/leaders/RUS/AOR_SOV_010.dds"
 		legacy_lazy_load = no
 	}
 	
 	spriteType = { #列宁
 		name = "GFX_AOR_SOV_001"
-		texturefile = "gfx/leaders/RUS/LENIN.png"
+		texturefile = "gfx/leaders/RUS/AOR_SOV_001.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = { #托洛茨基

@@ -22,7 +22,6 @@
 		}
 		completion_reward={
 			country_event = {id=ENG.20}
-			
 		}
 	}
 	focus={
@@ -39,10 +38,6 @@
 		search_filters={
 		}
 		completion_reward={
-			custom_effect_tooltip = ENG_Restore_the_economy_tt
-			custom_effect_tooltip = ENG_n_tt
-			Enable_ENG_Lick_wounds_effect = yes
-
 		}
 	}
 	focus={
@@ -59,16 +54,6 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.21}
-			custom_effect_tooltip = ENG_Current_Vitality_Var_add_1_tt
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 1.5
-			}
-			custom_effect_tooltip =  ENG_National_Support_Var_add_1_tt
-			add_to_variable = {
-				ENG_National_Support_Var = 1
-			}
-			#不会！
 		}
 	}
 	focus={
@@ -85,7 +70,6 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.22}
 		}
 	}
 	focus={
@@ -102,23 +86,6 @@
 		search_filters={
 		}
 		completion_reward={
-			custom_effect_tooltip =  ENG_Current_Vitality_Var_add_1_tt
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 2
-			}
-			#不会
-			126 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				} 
-			}
 		}
 	}
 	focus={
@@ -136,24 +103,6 @@
 		search_filters={
 		}
 		completion_reward={
-			hidden_effect = {
-				random_owned_state = {
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-							}
-						}
-			}
-			custom_effect_tooltip = ENG_random_tt
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 0.25
-			}
-			custom_effect_tooltip = ENG_Current_Vitality_Var_add_025_tt
-			add_to_variable = {
-				ENG_National_Support_Var = 1
-			}
-			custom_effect_tooltip = ENG_National_Support_Var_add_1_tt
 		}
 	}
 	focus={
@@ -171,25 +120,6 @@
 		search_filters={
 		}
 		completion_reward={
-			126 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				} 
-			}
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 0.25
-			}
-			custom_effect_tooltip = ENG_Current_Vitality_Var_add_025_tt
-			add_to_variable = {
-				ENG_British_authority_Var = 0.5
-			}
-			custom_effect_tooltip = ENG_British_authority_Var_add_05_tt
-			add_to_variable = {
-				ENG_Federal_Nexus_Var = 0.5
-			}
-			custom_effect_tooltip = ENG_Federal_Nexus_Var_add_05_tt
 		}
 	}
 	focus={
@@ -206,16 +136,6 @@
 		search_filters={
 		}
 		completion_reward={
-			custom_effect_tooltip = ENG_favorability_add_tt
-			add_to_variable = {
-				ENG_Federal_Nexus_Var = 1
-			}
-			custom_effect_tooltip = ENG_Federal_Nexus_Var_add_1_tt
-			add_to_variable = {
-				ENG_British_authority_Var = 1
-			}
-			custom_effect_tooltip = ENG_British_authority_Var_add_1_tt
-			country_event = {id=ENG.23}
 		}
 	}
 	focus={
@@ -232,12 +152,6 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.24}
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 0.5
-			}
-			custom_effect_tooltip = ENG_Current_Vitality_Var_add_05_tt
-			add_popularity = { ideology = CON_democratic popularity = 0.015 }
 		}
 	}
 	focus={
@@ -255,19 +169,6 @@
 		search_filters={
 		}
 		completion_reward={
-			country_event = {id=ENG.24}
-			add_to_variable = {
-				ENG_Current_Vitality_Var = 0.25
-				ENG_National_Support_Var = 1
-			}
-			custom_effect_tooltip = ENG_Current_Vitality_Var_add_025_tt
-			custom_effect_tooltip = ENG_National_Support_Var_add_1_tt
-			custom_effect_tooltip = ENG_red_party_add_025
-			hidden_effect = {
-				add_popularity = { ideology = PAR_socialism  popularity = 0.0025 }
-				add_popularity = { ideology = SOC_democratic  popularity = 0.0025 }
-
-			}
 		}
 	}
 	focus={
@@ -285,13 +186,6 @@
 		search_filters={
 		}
 		completion_reward={
-			custom_effect_tooltip = ENG_red_party_add_5
-			hidden_effect = {
-				add_popularity = { ideology = PAR_socialism  popularity = 0.005 }
-				add_popularity = { ideology = SOC_democratic  popularity = 0.005 }
-				add_popularity = { ideology = Marxism  popularity = 0.01 }
-
-			}
 		}
 	}
 	focus={
@@ -308,9 +202,6 @@
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = {
-				ENG_jingjikaoqiye
-			}
 		}
 	}
 	focus={

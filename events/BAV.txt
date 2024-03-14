@@ -166,7 +166,7 @@ country_event = {
 	}
 }
 
-#我们的同志
+
 #巴伐利亚-符腾堡苏维埃+南石荷苏维埃！！！！！！！！！！！！！
 country_event = { 
 	id = BAV.11
@@ -194,7 +194,7 @@ country_event = {
 	id = BAV.12
 	title = BAV.12.t
 	desc = BAV.12.d
-	picture = GFX_AOR_telegram_pic
+	picture = GFX_BAV.12_pic
 	mean_time_to_happen = { day = 1}
 	fire_only_once = yes
 	trigger = {
@@ -253,7 +253,7 @@ country_event = {
 	id = BAV.14
 	title = BAV.14.t
 	desc = BAV.14.d
-	picture = GFX_AOR_telegram_pic
+	picture = GFX_BAV.15_pic
 	is_triggered_only = yes
 	
 	fire_only_once = yes
@@ -321,7 +321,7 @@ country_event = {
 	id = BAV.18
 	title = BAV.18.t
 	desc = BAV.18.d
-	picture = GFX_AOR_telegram_pic
+	picture = GFX_BAV.18_pic
 	is_triggered_only = yes
 	
 	fire_only_once = yes
@@ -494,7 +494,7 @@ country_event = {
 	id = BAV.60
 	title = BAV.60.t
 	desc = BAV.60.d
-	picture = GFX_AOR_telegram_pic
+	picture = GFX_BAV.60_pic
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -595,7 +595,7 @@ country_event = {
 	id = BAV.66
 	title = BAV.66.t
 	desc = BAV.66.d
-	picture = GFX_AOR_telegram_pic
+	picture = GFX_BAV.66_pic
 	
 	is_triggered_only = yes
 	fire_only_once = yes

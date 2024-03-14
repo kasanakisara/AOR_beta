@@ -8,11 +8,4 @@ on_actions = {
 			}
 		}
 	}
-	on_startup = { #这个是给所有国家一个开局信息的flag
-		effect = {
-			every_country = {
-				set_country_flag = country_information_button_1
-			}
-		}
-	}
 }
