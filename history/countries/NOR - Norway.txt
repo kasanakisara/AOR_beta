@@ -153,29 +153,28 @@ set_convoys = 200		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {
-	ruling_party = CON_democratic
-	last_election = "1933.10.16"
-	election_frequency = 36
+	ruling_party = SOC_democratic
+	last_election = "1814.10.10"
+	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 96
-	Fascism = 2
-	Marxism = 2
+	SOC_democratic = 54
+	Marxism = 30
+	Absolutism = 26
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = CON_democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
+		ruling_party = SOC_democratic
+		last_election = "1814.10.10"
+		election_frequency = 72
 		elections_allowed = yes
 	}
 	set_popularities = {
-		CON_democratic = 84
-		Fascism = 2
-		Marxism = 2
-		Absolutism = 12
+		SOC_democratic = 54
+		Marxism = 30
+		Absolutism = 26
 	}
 }
 

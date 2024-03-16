@@ -324,6 +324,8 @@ focus_tree = {
 				remove_idea = SWE_Left_Threat
 				add_idea = SWE_Left_Threat_I
 			}
+			add_to_variable = { SWE_Norweign_Independence_value = -15 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
 		}
 
 	}
@@ -336,6 +338,12 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
+		completion_reward = {
+			add_popularity = { ideology = Marxism popularity = -0.1 }
+			country_event = { id = SWE.10 }
+			add_to_variable = { SWE_Norweign_Independence_value = -15 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
 
 	}
 	focus = {

@@ -132,5 +132,29 @@ ideas = {
 				custom_modifier_tooltip = SWE_modifier_add_localisation
 			}
 		}
+
+		SWE_Hurt_of_Norway = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.5
+				political_power_cost = 0.5
+				consumer_goods_expected_value = 0.5
+				Marxism_drift = 0.2
+				Fascism_drift = 0.2
+			}
+		}
+
+		SWE_Hurten_of_Norway = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.5
+				political_power_cost = 0.5
+				consumer_goods_expected_value = 0.5
+				Marxism_drift = 0.2
+				Fascism_drift = 0.2
+			}
+		}
 	}
 }

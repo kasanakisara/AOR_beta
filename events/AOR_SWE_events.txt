@@ -134,3 +134,112 @@ country_event = {
         name = SWE.9.a
     }
 }
+
+country_event = {
+    id = SWE.10 #焚毁禁书
+    title = SWE.10.t
+    desc = SWE.10.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.10.a
+        add_stability = 10
+    }
+}
+
+country_event = {
+    id = SWE.11
+    title = SWE.11.t
+    desc = SWE.11.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.11.a
+        country_event = { id = SWE.12 days = 10 }
+        clr_country_flag = SWE_Norweign_Independence_flag
+        clr_country_flag = SWE_GUI_1
+    }
+}
+
+country_event = {
+    id = SWE.12 #挪威独立
+    title = SWE.12.t
+    desc = SWE.12.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.12.a
+        hidden_effect = {
+            NOR = {
+                transfer_state = 967
+                transfer_state = 144
+                transfer_state = 142
+                transfer_state = 143
+                transfer_state = 110
+    
+                set_politics = {
+                    ruling_party = SOC_democratic
+                    last_election = "1814.10.10"
+                    election_frequency = 72
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    SOC_democratic = 54
+                    Marxism = 30
+                    fascism = 16
+                }
+    
+                create_country_leader = {
+                    name = "Haakon VII"
+                    desc = ""
+                    picture = "a4buu-9y80q.dds"
+                    expire = "1965.1.1"
+                    ideology = meliorism
+                    traits = {
+                    }
+                }
+    
+                add_ideas = SWE_Hurten_of_Norway
+            }
+    
+            add_ideas = SWE_Hurt_of_Norway
+            remove_ideas = SWE_Eighty_Seventh_Orders
+            remove_ideas = A_lingering_alliance
+            remove_ideas = SWE_Left_Threat
+            remove_ideas = SWE_Left_Threat_I
+            remove_ideas = SWE_Antisocialistisk_Speciallagen
+            remove_ideas = SWE_All_People_are_King
+            remove_ideas = SWE_Beyond_Nationalism
+            remove_ideas = SWE_K_Plan
+            remove_ideas = SWE_Beyond_Nation
+            remove_ideas = SWE_Liberte_Spirit
+            remove_ideas = SWE_Encourage
+            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = Let_the_amibito_sleep
+            remove_ideas = Tiger_of_Silence
+
+            set_politics = {
+                ruling_party = FRE_democratic
+                last_election = "1919.11.7"
+                election_frequency = 72
+                elections_allowed = yes
+            }
+
+            set_popularities = {
+                FRE_democratic = 54
+                Marxism = 30
+                Fascism = 16
+            }
+
+            create_country_leader = {
+                name = "Hjalmar Branting"
+                desc = ""
+                picture = "Hjalmar Branting.dds"
+                expire = "1965.1.1"
+                ideology = FRE_democratic
+                traits = {
+                }
+            }
+            
+        }
+        custom_effect_tooltip = SWE_Norweign_Independence_boom_tt
+        
+    }
+}
