@@ -189,7 +189,7 @@ country_event = {
                 create_country_leader = {
                     name = "Haakon VII"
                     desc = ""
-                    picture = "a4buu-9y80q.dds"
+                    picture = "gfx/leaders/SWE/a4buu-9y80q.dds"
                     expire = "1965.1.1"
                     ideology = meliorism
                     traits = {
@@ -212,7 +212,7 @@ country_event = {
             remove_ideas = SWE_Liberte_Spirit
             remove_ideas = SWE_Encourage
             remove_ideas = SWE_Stockholm_Law
-            remove_ideas = Let_the_amibito_sleep
+            remove_ideas = Let_the_ambitio_sleep
             remove_ideas = Tiger_of_Silence
 
             set_politics = {
@@ -231,12 +231,19 @@ country_event = {
             create_country_leader = {
                 name = "Hjalmar Branting"
                 desc = ""
-                picture = "Hjalmar Branting.dds"
+                picture = "gfx/leaders/SWE/Hjalmar Branting.dds"
                 expire = "1965.1.1"
-                ideology = FRE_democratic
+                ideology = liberalism
                 traits = {
                 }
             }
+
+            load_focus_tree = AOR_SWE_nothing_focus_tree_1
+            delete_unit_template_and_units = {
+                division_template = "联邦军"
+                disband = yes #will refund equipment and manpower
+            }
+            load_oob = SWE_Norweign_Independence_oob
             
         }
         custom_effect_tooltip = SWE_Norweign_Independence_boom_tt
