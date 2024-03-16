@@ -473,6 +473,7 @@ focus_tree={
 		id=Provincial_Army
 		x=22
 		y=0
+		mutually_exclusive={focus=Loyal_Army }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -487,6 +488,7 @@ focus_tree={
 		id=Loyal_Army
 		x=29
 		y=0
+		mutually_exclusive={focus=Provincial_Army }
 		cost=10
 		ai_will_do={
 			factor=1
