@@ -1,10 +1,21 @@
 focus_tree={
-        id =CBS
+	id = Chinese_warlords
 	country={
 		factor=0
 		modifier={
 			add=10
-			tag=CBS
+			OR = {
+				tag=CBS
+			tag = DCD
+			tag = JLD
+			tag = MEN
+			tag = SHX
+			tag  = SIK
+			tag = XCD
+			tag = XSM
+		}
+			
+
 		}
 	}
 	continuous_focus_position={
@@ -13,7 +24,9 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id=safety_for_the_people
+    icon=AOR_unkown
+		id=warlords_safety_for_the_people
+		
 		x=8
 		y=0
 		cost=10
@@ -27,11 +40,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Dancing_Together
+    icon=AOR_unkown
+		id=warlords_Dancing_Together
 		x=3
 		y=1
-		prerequisite={focus=safety_for_the_people}
-		mutually_exclusive={focus=Appoint_people_with_favoritism }
+		prerequisite={focus=warlords_safety_for_the_people}
+		mutually_exclusive={focus=warlords_Appoint_people_with_favoritism }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -43,10 +57,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Stable_Provincial_Council
+    icon=AOR_unkown
+		id=warlords_Stable_Provincial_Council
 		x=0
 		y=2
-		prerequisite={focus=Dancing_Together}
+		prerequisite={focus=warlords_Dancing_Together}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -58,10 +73,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Jointly_wielding_power_with_local_gentry
+    icon=AOR_unkown
+		id=warlords_Jointly_wielding_power_with_local_gentry
+		
 		x=3
 		y=2
-		prerequisite={focus=Dancing_Together}
+		prerequisite={focus=warlords_Dancing_Together}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -73,10 +90,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Buying_Beiyang_generals
+    icon=AOR_unkown
+		id=warlords_Buying_Beiyang_generals
 		x=6
 		y=2
-		prerequisite={focus=Dancing_Together}
+		prerequisite={focus=warlords_Dancing_Together}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -88,11 +106,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Appoint_people_with_favoritism
+    icon=AOR_unkown
+		id=warlords_Appoint_people_with_favoritism
 		x=13
 		y=1
-		prerequisite={focus=safety_for_the_people}
-		mutually_exclusive={focus=Dancing_Together }
+		prerequisite={focus=warlords_safety_for_the_people}
+		mutually_exclusive={focus=warlords_Dancing_Together }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -104,10 +123,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Dissolve_the_Provincial_Council
+    icon=AOR_unkown
+		id=warlords_Dissolve_the_Provincial_Council
 		x=10
 		y=2
-		prerequisite={focus=Appoint_people_with_favoritism}
+		prerequisite={focus=warlords_Appoint_people_with_favoritism}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -119,10 +139,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Establish_a_trusted_government
+    icon=AOR_unkown
+		id=warlords_Establish_a_trusted_government
 		x=13
 		y=2
-		prerequisite={focus=Appoint_people_with_favoritism}
+		prerequisite={focus=warlords_Appoint_people_with_favoritism}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -134,10 +155,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Clean_the_Beiyang_generals
+    icon=AOR_unkown
+		id=warlords_Clean_the_Beiyang_generals
 		x=16
 		y=2
-		prerequisite={focus=Appoint_people_with_favoritism}
+		prerequisite={focus=warlords_Appoint_people_with_favoritism}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -149,10 +171,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Military_and_political_unity
+    icon=AOR_unkown
+		id=warlords_Military_and_political_unity
 		x=8
 		y=3
-		prerequisite={focus=Stable_Provincial_Council focus=Jointly_wielding_power_with_local_gentry focus=Dissolve_the_Provincial_Council focus=Establish_a_trusted_government focus=Clean_the_Beiyang_generals focus=Buying_Beiyang_generals }
+		prerequisite={focus=warlords_Stable_Provincial_Council focus=warlords_Jointly_wielding_power_with_local_gentry focus=warlords_Dissolve_the_Provincial_Council focus=warlords_Establish_a_trusted_government focus=warlords_Clean_the_Beiyang_generals focus=warlords_Buying_Beiyang_generals }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -164,11 +187,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Build_accumulate_king
+    icon=AOR_unkown
+		id=warlords_Build_accumulate_king
 		x=3
 		y=4
-		prerequisite={focus=Military_and_political_unity}
-		mutually_exclusive={focus=Preemptive }
+		prerequisite={focus=warlords_Military_and_political_unity}
+		mutually_exclusive={focus=warlords_Preemptive }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -180,10 +204,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Reform_taxation
+    icon=AOR_unkown
+		id=warlords_Reform_taxation
 		x=1
 		y=5
-		prerequisite={focus=Build_accumulate_king}
+		prerequisite={focus=warlords_Build_accumulate_king}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -195,10 +220,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Increase_education_funding
+    icon=AOR_unkown
+		id=warlords_Increase_education_funding
 		x=5
 		y=5
-		prerequisite={focus=Build_accumulate_king}
+		prerequisite={focus=warlords_Build_accumulate_king}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -210,10 +236,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Control_opium_cultivation
+    icon=AOR_unkown
+		id=warlords_Control_opium_cultivation
 		x=1
 		y=6
-		prerequisite={focus=Reform_taxation}
+		prerequisite={focus=warlords_Reform_taxation}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -225,10 +252,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=New_Teacher_Textbooks
+    icon=AOR_unkown
+		id=warlords_New_Teacher_Textbooks
 		x=5
 		y=6
-		prerequisite={focus=Increase_education_funding}
+		prerequisite={focus=warlords_Increase_education_funding}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -240,10 +268,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Supporting_local_enterprises
+    icon=AOR_unkown
+		id=warlords_Supporting_local_enterprises
 		x=1
 		y=7
-		prerequisite={focus=Control_opium_cultivation}
+		prerequisite={focus=warlords_Control_opium_cultivation}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -255,10 +284,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Establishing_Provincial_Universities
+    icon=AOR_unkown
+		id=warlords_Establishing_Provincial_Universities
 		x=5
 		y=7
-		prerequisite={focus=New_Teacher_Textbooks}
+		prerequisite={focus=warlords_New_Teacher_Textbooks}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -270,11 +300,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Preemptive
+    icon=AOR_unkown
+		id=warlords_Preemptive
 		x=13
 		y=4
-		prerequisite={focus=Military_and_political_unity}
-		mutually_exclusive={focus=Build_accumulate_king }
+		prerequisite={focus=warlords_Military_and_political_unity}
+		mutually_exclusive={focus=warlords_Build_accumulate_king }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -286,10 +317,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Pre_tax_collection
+    icon=AOR_unkown
+		id=warlords_Pre_tax_collection
 		x=11
 		y=5
-		prerequisite={focus=Preemptive}
+		prerequisite={focus=warlords_Preemptive}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -301,10 +333,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Limited_education_investment
+    icon=AOR_unkown
+		id=warlords_Limited_education_investment
 		x=15
 		y=5
-		prerequisite={focus=Preemptive}
+		prerequisite={focus=warlords_Preemptive}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -316,10 +349,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Official_Opium_Industry
+    icon=AOR_unkown
+		id=warlords_Official_Opium_Industry
 		x=11
 		y=6
-		prerequisite={focus=Pre_tax_collection}
+		prerequisite={focus=warlords_Pre_tax_collection}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -331,10 +365,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Returning_to_traditional_education
+    icon=AOR_unkown
+		id=warlords_Returning_to_traditional_education
 		x=15
 		y=6
-		prerequisite={focus=Limited_education_investment}
+		prerequisite={focus=warlords_Limited_education_investment}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -346,10 +381,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Official_Office_for_Enterprise_Collection
+    icon=AOR_unkown
+		id=warlords_Official_Office_for_Enterprise_Collection
 		x=11
 		y=7
-		prerequisite={focus=Official_Opium_Industry}
+		prerequisite={focus=warlords_Official_Opium_Industry}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -361,10 +397,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Introducing_advanced_drawings
+    icon=AOR_unkown
+		id=warlords_Introducing_advanced_drawings
 		x=15
 		y=7
-		prerequisite={focus=Returning_to_traditional_education}
+		prerequisite={focus=warlords_Returning_to_traditional_education}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -376,11 +413,28 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Sit_idly_by_to_see_success_or_failure
+    icon=AOR_unkown
+		id=warlords_Sit_idly_by_to_see_success_or_failure
+		x=3
+		y=9
+		prerequisite={focus=warlords_Make_a_Name_for_Oneself}
+		mutually_exclusive={focus=warlords_Zhuolu_Zhongyuan }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+    icon=AOR_unkown
+		id=warlords_Initiate_unified_negotiations
 		x=3
 		y=10
-		prerequisite={focus=Make_a_Name_for_Oneseif}
-		mutually_exclusive={focus=Zhuolu_Zhongyuan }
+		prerequisite={focus=warlords_Sit_idly_by_to_see_success_or_failure}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -392,26 +446,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Initiate_unified_negotiations
-		x=8
-		y=11
-		prerequisite={focus=Sit_idly_by_to_see_success_or_failure}
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=Joining_the_British_camp
+    icon=AOR_unkown
+		id=warlords_Joining_the_British_camp
 		x=9
-		y=9
-		prerequisite={focus=Make_a_Name_for_Oneseif}
-		mutually_exclusive={focus=Seeking_support_from_France focus=Accepting_Japanese_aid }
+		y=10
+		prerequisite={focus=warlords_Zhuolu_Zhongyuan}
+		mutually_exclusive={focus=warlords_Seeking_support_from_France focus=warlords_Accepting_Japanese_aid }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -423,43 +463,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Seeking_support_from_France
-		x=12
-		y=9
-		prerequisite={focus=Make_a_Name_for_Oneseif}
-		mutually_exclusive={focus=Joining_the_British_camp focus=Accepting_Japanese_aid }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=Accepting_Japanese_aid
-		x=15
-		y=9
-		prerequisite={focus=Make_a_Name_for_Oneseif}
-		mutually_exclusive={focus=Joining_the_British_camp focus=Seeking_support_from_France }
-		cost=10
-		ai_will_do={
-			factor=1
-		}
-		available_if_capitulated=yes
-		search_filters={
-		}
-		completion_reward={
-		}
-	}
-	focus={
-		id=Zhuolu_Zhongyuan
+    icon=AOR_unkown
+		id=warlords_Seeking_support_from_France
 		x=12
 		y=10
-		prerequisite={focus=Joining_the_British_camp focus=Seeking_support_from_France focus=Accepting_Japanese_aid }
-		mutually_exclusive={focus=Sit_idly_by_to_see_success_or_failure }
+		prerequisite={focus=warlords_Zhuolu_Zhongyuan}
+		mutually_exclusive={focus=warlords_Joining_the_British_camp focus=warlords_Accepting_Japanese_aid }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -471,7 +480,42 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Provincial_Army
+    icon=AOR_unkown
+		id=warlords_Accepting_Japanese_aid
+		x=15
+		y=10
+		prerequisite={focus=warlords_Zhuolu_Zhongyuan}
+		mutually_exclusive={focus=warlords_Joining_the_British_camp focus=warlords_Seeking_support_from_France }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+    icon=AOR_unkown
+		id=warlords_Zhuolu_Zhongyuan
+		x=12
+		y=9
+		prerequisite={focus=warlords_Make_a_Name_for_Oneself}
+		mutually_exclusive={focus=warlords_Sit_idly_by_to_see_success_or_failure }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+    icon=AOR_unkown
+		id=warlords_Provincial_Army
 		x=22
 		y=0
 		cost=10
@@ -479,13 +523,15 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		mutually_exclusive={focus=warlords_Loyal_Army }
 		search_filters={
 		}
 		completion_reward={
 		}
 	}
 	focus={
-		id=Loyal_Army
+    icon=AOR_unkown
+		id=warlords_Loyal_Army
 		x=29
 		y=0
 		cost=10
@@ -493,16 +539,18 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		mutually_exclusive={focus=warlords_Provincial_Army }
 		search_filters={
 		}
 		completion_reward={
 		}
 	}
 	focus={
-		id=Expand_military_academy
+    icon=AOR_unkown
+		id=warlords_Expand_military_academy
 		x=20
 		y=1
-		prerequisite={focus=Provincial_Army}
+		prerequisite={focus=warlords_Provincial_Army}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -514,10 +562,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Introducing_new_weapons
+    icon=AOR_unkown
+		id=warlords_Introducing_new_weapons
 		x=24
 		y=1
-		prerequisite={focus=Provincial_Army}
+		prerequisite={focus=warlords_Provincial_Army}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -529,11 +578,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Improving_the_quality_of_soldiers
+    icon=AOR_unkown
+		id=warlords_Improving_the_quality_of_soldiers
 		x=22
 		y=2
-		prerequisite={focus=Expand_military_academy}
-		prerequisite={focus=Introducing_new_weapons}
+		prerequisite={focus=warlords_Expand_military_academy}
+		prerequisite={focus=warlords_Introducing_new_weapons}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -545,10 +595,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=A_fierce_general_will_strike_upon_death
+    icon=AOR_unkown
+		id=warlords_A_fierce_general_will_strike_upon_death
 		x=27
 		y=1
-		prerequisite={focus=Loyal_Army}
+		prerequisite={focus=warlords_Loyal_Army}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -560,10 +611,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Quantity_is_better_than_quality
+    icon=AOR_unkown
+		id=warlords_Quantity_is_better_than_quality
 		x=31
 		y=1
-		prerequisite={focus=Loyal_Army}
+		prerequisite={focus=warlords_Loyal_Army}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -575,11 +627,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Everyone_can_be_a_soldier
+    icon=AOR_unkown
+		id=warlords_Everyone_can_be_a_soldier
 		x=29
 		y=2
-		prerequisite={focus=A_fierce_general_will_strike_upon_death}
-		prerequisite={focus=Quantity_is_better_than_quality}
+		prerequisite={focus=warlords_A_fierce_general_will_strike_upon_death}
+		prerequisite={focus=warlords_Quantity_is_better_than_quality}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -591,7 +644,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Provincial_Weapon_Factory
+    icon=AOR_unkown
+		id=warlords_Provincial_Weapon_Factory
 		x=24
 		y=2
 		cost=10
@@ -605,7 +659,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Procurement_of_overseas_weapons
+    icon=AOR_unkown
+		id=warlords_Procurement_of_overseas_weapons
 		x=27
 		y=2
 		cost=10
@@ -619,10 +674,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=Make_a_Name_for_Oneseif
+    icon=AOR_unkown
+		id=warlords_Make_a_Name_for_Oneself
 		x=8
 		y=8
-		prerequisite={focus=Supporting_local_enterprises focus=Establishing_Provincial_Universities focus=Official_Office_for_Enterprise_Collection focus=Introducing_advanced_drawings }
+		prerequisite={focus=warlords_Supporting_local_enterprises focus=warlords_Establishing_Provincial_Universities focus=warlords_Official_Office_for_Enterprise_Collection focus=warlords_Introducing_advanced_drawings }
 		cost=10
 		ai_will_do={
 			factor=1

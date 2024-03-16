@@ -754,9 +754,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CHI_test.01.a
-		add_to_variable = {
-			KMT_senate_seat_var=10
-		}
+		load_focus_tree = Warlord_focus_tree
+		add_manpower = 1111
 	}
 }
 country_event = {

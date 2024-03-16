@@ -10,6 +10,7 @@ focus_tree={
 	continuous_focus_position = { x = 1500  y = 2000 }
 	default=no
 	focus={
+icon=AOR_unkown
 		id=CHI_Congress_speech
 		x=5
 		y=0
@@ -25,7 +26,7 @@ focus_tree={
 		country_event = { id = CHI.1 }
 		}
 	}
-	focus={
+	focus={icon=AOR_unkown
 		id=CHI_Anti_russian_propaganda
 		x=0
 		y=1
@@ -42,6 +43,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Young_Volunteer_Army
 		x=5
 		y=1
@@ -62,6 +64,7 @@ focus_tree={
 	
 	}	
 	focus={
+icon=AOR_unkown
 		id=CHI_Manipulate_Congress
 		x=10
 		y=1
@@ -78,6 +81,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Reclaiming_outer_northwest
 		x=5
 		y=2
@@ -104,6 +108,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_international_aid
 		x=1
 		y=3
@@ -131,6 +136,7 @@ focus_tree={
     }
 }
 	focus={
+icon=AOR_unkown
 		id=CHI_Northwest_joint_command
 		x=5
 		y=3
@@ -147,6 +153,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Mobilize_workers_help_in_war
 		x=9
 		y=3
@@ -169,6 +176,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_war_bond
 		x=3
 		y=4
@@ -186,6 +194,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Hold_down_south
 		x=7
 		y=4
@@ -204,6 +213,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Yuan_is_dying
 		x=5
 		y=5
@@ -226,6 +236,7 @@ focus_tree={
 		}
 	}
 	focus={
+icon=AOR_unkown
 		id=CHI_Year_of_Gengshen
 		x=5
 		y=6
@@ -252,6 +263,7 @@ focus_tree={
 
 ##林有为出来受死！！#
 	focus={
+icon=AOR_unkown
 		id=CHI_Yuan_triping
 		x=5
 		y=5
@@ -295,6 +307,7 @@ focus_tree={
 	}
 	
 	focus={
+icon=AOR_unkown
 		id=CHI_Assess_s
 		x=2
 		y=6
@@ -310,6 +323,7 @@ focus_tree={
 	}
 	
 	focus={
+icon=AOR_unkown
 		id=CHI_we_win
 		x=5
 		y=6
@@ -325,6 +339,7 @@ focus_tree={
 	}
 	
 	focus={
+icon=AOR_unkown
 		id=CHI_stop
 		x=8
 		y=6
@@ -340,6 +355,7 @@ focus_tree={
 	}
 	
 	focus={
+icon=AOR_unkown
 		id=CHI_forward
 		x = 5
 		y = 8
