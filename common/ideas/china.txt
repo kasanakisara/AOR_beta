@@ -797,7 +797,7 @@ ideas = {
 		#群雄割据
 		CHI_quxionggeju = {
 
-			picture = GFX_idea_CHI_Territorial_separation
+			picture = GFX_idea_CHI_quxionggeju
 
 			allowed = {
 				always = yes
@@ -819,7 +819,7 @@ ideas = {
 		#军阀经济
 		CHI_junfanjingji = {
 
-			picture = GFX_idea_CHI_feudal_economy
+			picture = GFX_idea_CHI_junfanjingji
 
 			allowed = {
 				always = yes

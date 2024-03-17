@@ -64,4 +64,14 @@ spriteTypes = {
 		name = "GFX_idea_CHI_Territorial_separation"
 		texturefile = "gfx/interface/ideas/idea_CHI_Territorial_separation.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_quxionggeju"
+		texturefile = "gfx/interface/ideas/idea_CHI_Territorial_separation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_junfanjingji"
+		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
+	}
 }
