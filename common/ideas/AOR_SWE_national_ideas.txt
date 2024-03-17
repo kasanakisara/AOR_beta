@@ -175,6 +175,7 @@ ideas = {
 				stability_factor = 0.45
 				political_power_gain = 0.25
 				consumer_goods_expected_value = -0.45
+				consumer_goods_factor = -0.75
 				stability_weekly = 0.025
 				FRE_democratic_drift = 0.2
 				CON_democratic_drift = 0.15
