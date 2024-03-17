@@ -74,4 +74,8 @@ spriteTypes = {
 		name = "GFX_idea_CHI_junfanjingji"
 		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CHI_nanmangongye"
+		texturefile = "gfx/interface/ideas/KOR_Backward_industry.png"
+	}
 }

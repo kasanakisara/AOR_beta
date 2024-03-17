@@ -837,5 +837,27 @@ ideas = {
 			production_speed_buildings_factor = -0.5
 			}
 		}
+
+		#南满工业
+		CHI_nanmangongye = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			drift_defence_factor = -0.2
+			opinion_gain_monthly_factor = 0.2
+			min_export = 0.2
+			local_resources_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			}
+		}
 	}
 }
