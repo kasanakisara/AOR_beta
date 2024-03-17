@@ -45,7 +45,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		CHI_civil_war_1 = yes
-		
+		CHI_civil_war_2 = yes
 	}
 	option = {
 		name = CHI.4.a
@@ -109,7 +109,10 @@ country_event = {
 		tag = CHI
 	}
 	immediate = { 
-		hidden_effect = { 
+		hidden_effect = {
+			CHI = {
+				set_cosmetic_tag = CHI_1
+			}
 			country_event = { id = CHI.12 days = 7 } 			
 			753 = { set_demilitarized_zone = yes }
 			906 = { set_demilitarized_zone = yes }
@@ -126,7 +129,7 @@ country_event = {
 		name = CHI.6.a
 	}
 }
-#西北边防军被炸出来了！
+#西北边防军被炸出来了！#########废弃########请后续人员改装成趣味事件###########
 country_event = {
 	id = CHI.7
 	title = CHI.7.t
@@ -141,7 +144,7 @@ country_event = {
 	}
 	fire_only_once = yes
 	immediate = {
-		CHI_civil_war_2 = yes
+		
 	 }
 	#那就这样吧  
 	option = {
