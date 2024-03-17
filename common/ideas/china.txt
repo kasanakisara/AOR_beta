@@ -874,6 +874,7 @@ ideas = {
 			}
 
 			modifier = {
+			research_speed_factor = -1
 			consumer_goods_factor = 0.5
 			mobilization_laws_cost_factor = 1
 			trade_laws_cost_factor  = 1
