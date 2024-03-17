@@ -6,7 +6,6 @@ CHI_civil_war_1 = {
 		complete_national_focus = CHI_Yuan_is_dying
 		CHI = {
 			leave_faction = yes
-			set_cosmetic_tag = CHI_1
 			set_popularities = {
 					Absolutism = 72
 					FRE_democratic = 15
@@ -139,10 +138,7 @@ CHI_civil_war_1 = {
 			add_state_core = 887
 			add_state_core = 888
 			add_state_core = 905
-			add_state_core = 607
-			add_state_core = 877
-			add_state_core = 614
-			add_state_core = 758
+			add_state_core = 889
 			add_state_core = 620
 			add_state_core = 879
 
@@ -157,10 +153,7 @@ CHI_civil_war_1 = {
 			transfer_state = 887
 			transfer_state = 888
 			transfer_state = 905
-			transfer_state = 607
-			transfer_state = 877
-			transfer_state = 614
-			transfer_state = 758
+			transfer_state = 889
 			transfer_state = 620
 			transfer_state = 879
 			add_manpower = 10000
@@ -170,11 +163,6 @@ CHI_civil_war_1 = {
 }
 CHI_civil_war_2 = {
 	hidden_effect = {
-		set_autonomy = {
-			target = MON
-			autonomous_state = autonomy_dominion
-			freedom_level = 0.2
-		}
 		MON = {
 			set_cosmetic_tag = MON_WEST
 			set_popularities = {
@@ -188,8 +176,14 @@ CHI_civil_war_2 = {
 			330 = {set_demilitarized_zone=yes}
 			add_state_core = 930
 			add_state_core = 330
+			add_state_core = 610
+			add_state_core = 611
+			add_state_core = 621
 			transfer_state = 330
 			transfer_state = 930
+			transfer_state = 610
+			transfer_state = 611
+			transfer_state = 621
 			add_manpower = 10000
 		}
 	}
