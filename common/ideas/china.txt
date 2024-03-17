@@ -882,6 +882,29 @@ ideas = {
 			}
 		}
 
+        #金融龙头-海关大户
+        CHI_Budding_national_capitalism = {
+			
+	       picture = GFX_idea_UPC_Budding_national_capitalism
+	
+	        allowed = {
+		      always = yes
+	       }
+	
+	        visible = {
+		        always = yes
+	        }
+
+	        modifier = {
+			stability_factor = -0.1
+	        trade_opinion_factor = 0.2
+	        local_resources_factor = 0.2
+	        min_export = 0.1
+	        industrial_capacity_dockyard = -0.1
+	        consumer_goods_factor = -0.1
+	        }
+        }
+
 		#山巅经济
 		CHI_shandianjingji = {
 

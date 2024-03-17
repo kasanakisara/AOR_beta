@@ -83,12 +83,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/KOR_Backward_industry.png"
 	}
 	spriteType = {
+		name = "GFX_idea_CHI_Budding_national_capitalism"
+		texturefile = "gfx/interface/ideas/idea_The_remaining_industrial_base.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_CHI_shandianjingji"
 		texturefile = "gfx/interface/ideas/idea_CHI_insecure_society.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_hanrenzhujun"
-		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_binhuangmaluan"
