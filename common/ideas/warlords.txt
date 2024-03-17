@@ -1,12 +1,12 @@
 ideas = {
         country={
-	  = {
-            picture = 
-            allowed = { tag =  }
-            modifier = {
-                
-            }
-    }
+		[] = {
+			picture =[]
+			allowed = { always = yes }
+			modifier = {
+
+			}
+		}
  }
 }
 
