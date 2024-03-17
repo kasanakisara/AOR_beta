@@ -877,7 +877,7 @@ ideas = {
 			industrial_capacity_factory = 0.05
 			production_factory_max_efficiency_factor = 0.1
 			production_speed_buildings_factor = 0.1
-			consumer_goods_factor = 0.1
+			consumer_goods_factor = -0.1
 			drift_defence_factor = -0.2
 			}
 		}
@@ -947,6 +947,29 @@ ideas = {
 			war_support_factor = -0.2
 			supply_consumption_factor = 0.2
 			army_org_factor = -0.1
+			}
+		}
+
+		#云贵雄师
+		CHI_yunguixiongshi = {
+
+			picture = CHI_yunguixiongshi
+		
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.2
+			army_org_factor = 0.05
+	        army_morale_factor = 0.1
+	        supply_consumption_factor = -0.1
+			recon_factor = 0.05
 			}
 		}
 	}

@@ -10,6 +10,14 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
+add_ideas = {
+	CHI_Convention_on_China
+	CHI_feudal_economy
+	CHI_Lack_of_education
+	CHI_insecure_society
+	CHI_yunguixiongshi
+}
+
 create_country_leader = {
 	name = "Sun_zhong_shan"
 	desc = "POLITICS_MON_DESC"

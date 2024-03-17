@@ -94,4 +94,8 @@ spriteTypes = {
 		name = "GFX_idea_CHI_binhuangmaluan"
 		texturefile = "gfx/interface/ideas/idea_CHI_budding_national_consciousness.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CHI_yunguixiongshi"
+		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.dds"
+	}
 }
