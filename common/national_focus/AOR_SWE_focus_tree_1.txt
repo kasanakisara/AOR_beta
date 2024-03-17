@@ -21,6 +21,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_ideas = SWE_Eighty_Seventh_Orders
+			country_event = { id = SWE.18 }
 		}
 
 	}

@@ -313,3 +313,13 @@ country_event = {
         add_political_power = 250
     }
 }
+
+country_event = {
+    id = SWE.18 #第八十七号命令
+    title = SWE.18.t
+    desc = SWE.18.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.18.a
+    }
+}
