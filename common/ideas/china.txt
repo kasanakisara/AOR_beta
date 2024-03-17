@@ -881,7 +881,7 @@ ideas = {
 			political_advisor_cost_factor = 1
 			production_speed_buildings_factor = -0.8
 			industrial_capacity_factory = -0.7
-			conscription_factor = 0.5
+			conscription_factor = -0.5
 			}
 		}
 	}
