@@ -311,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = SWE_Abolish_Left_Party
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = SWE_Publications_Supervision
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Abolish_Left_Party
 		}
@@ -349,40 +349,61 @@ focus_tree = {
 	focus = {
 		id = SWE_Rope_Right
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Publications_Supervision
 		}
 		x = 13
 		y = 5
+		completion_reward = {
+			add_popularity = { ideology = AUT_democratic popularity = 0.1 }
+			country_event = { id = SWE.13 }
+			add_to_variable = { SWE_Norweign_Independence_value = -10 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
 
 	}
 	focus = {
 		id = SWE_Restrictions_on_Gatherings
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Abolish_Left_Party
 		}
 		x = 17
 		y = 4
+		completion_reward = {
+			add_popularity = { ideology = Marxism popularity = -0.05 }
+			swap_ideas = {
+				remove_idea = SWE_Left_Threat_I
+				add_idea = SWE_Left_Threat_II
+			}
+			add_to_variable = { SWE_Norweign_Independence_value = -7.5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
 
 	}
 	focus = {
 		id = SWE_Imprisoned_Left_Leaders
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Restrictions_on_Gatherings
 		}
 		x = 17
 		y = 5
+		completion_reward = {
+			country_event = { id = SWE.14 }
+			add_popularity = { ideology = Marxism popularity = -0.2 }
+			add_to_variable = { SWE_Norweign_Independence_value = -12.5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
 
 	}
 	focus = {
 		id = SWE_The_Trial
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = SWE_Imprisoned_Left_Leaders
 		}
@@ -391,6 +412,12 @@ focus_tree = {
 		}
 		x = 15
 		y = 6
+		completion_reward = {
+			country_event = { id = SWE.15 }
+			add_popularity = { ideology = Marxism popularity = party_popularity@Marxism }
+			add_to_variable = { SWE_Norweign_Independence_value = -15 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+		}
 
 	}
 	focus = {
@@ -402,6 +429,17 @@ focus_tree = {
 		}
 		x = 15
 		y = 7
+		completion_reward = {
+			country_event = { id = SWE.16 }
+			hidden_effect = {
+				remove_ideas = SWE_Antisocialistisk_Speciallagen
+				add_timed_idea = {
+					idea = SWE_Antisocialistisk_Speciallagen
+					days = 180
+				}
+			}
+			custom_effect_tooltip = SWE_Restruct_Parliament_tt
+		}
 
 	}
 	focus = {
@@ -420,7 +458,19 @@ focus_tree = {
 		x = 9
 		y = 8
 		completion_reward = {
-			remove_ideas = A_lingering_alliance
+			hidden_effect = {
+				remove_ideas = A_lingering_alliance
+				remove_ideas = SWE_Liberte_Spirit
+				remove_ideas = SWE_All_People_are_King
+				remove_ideas = SWE_Beyond_Nation
+				remove_ideas = SWE_Eighty_Seventh_Orders
+				remove_ideas = SWE_Antisocialistisk_Speciallagen
+				add_ideas = SWE_The_Union_Dream
+			}
+			country_event = { id = SWE.17 }
+			custom_effect_tooltip = SWE_Viva_la_Union_tt
+			clr_country_flag = SWE_GUI_1
+			set_country_flag = SWE_GUI_4
 		}
 
 	}

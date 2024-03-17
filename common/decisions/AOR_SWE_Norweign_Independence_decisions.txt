@@ -3,7 +3,7 @@ SWE_Norweign_Independence_decision_categories = {
     #安抚
     SWE_Appeasement_Leaders = {
         avaliable = { always = yes }
-        cost = 100
+        cost = 25
         days_remove = 5
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -2 }
@@ -13,8 +13,12 @@ SWE_Norweign_Independence_decision_categories = {
 
     #暂时集会管制
     SWE_Assemblies_Control = {
-        avaliable = { always = yes }
-        cost = 100
+        avaliable = {
+            NOT = {
+                has_completed_focus = SWE_Restrictions_on_Gatherings
+            }
+        }
+        cost = 50
         days_remove = 28
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
@@ -53,7 +57,7 @@ SWE_Norweign_Independence_decision_categories = {
     SWE_Replace_Industrial_Complex = {
         avaliable = { has_country_flag = SWE_K_Plan_flag }
         visible = { has_country_flag = SWE_K_Plan_flag }
-        cost = 100
+        cost = 75
         days_remove = 49
         modifier = {
             consumer_goods_factor = 0.1
@@ -124,5 +128,31 @@ SWE_Norweign_Independence_decision_categories = {
 
     #####反社会党人特别法决议#####
 
-    SWE_
+    SWE_Burning_Forbidden_Books = {
+        avaliable = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        visible = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        cost = 20
+        days_remove = 7
+        modifier = {
+            political_power_cost = 0.1
+        }
+        complete_effect = {
+            add_stability = 0.1
+            add_popularity = { ideology = Marxism popularity = -0.075 }
+            add_to_variable = { SWE_Norweign_Independence_value = -2.5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+
+    SWE_Ban_Left_Wing_Paper = {
+        avaliable = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        visible = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        cost = 20
+        days_re_enable = 7
+        complete_effect = {
+            add_popularity = { ideology = Marxism popularity = -0.1 }
+            add_to_variable = { SWE_Norweign_Independence_value = -3 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
 }

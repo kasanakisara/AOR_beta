@@ -281,6 +281,23 @@ bookmarks = {
 				ORA_daybreak
 			}
 		}
+
+		"SWE"={
+			minor = yes
+			history = "SWE_BLITZKREIG_DESC"
+			ideology = SOC_democratic
+			ideas = {
+				A_lingering_alliance
+				Tiger_of_Silence
+				Let_the_ambitio_sleep
+			}
+			focuses = {
+				SWE_Eighty_Seventh_Order
+				SWE_The_Dream
+				SWE_Antisocialistisk_Speciallag
+			}
+		}
+		
 		
 		"GRE"={
 			minor = yes
