@@ -860,6 +860,28 @@ ideas = {
 			}
 		}
 
+		#长江工业带
+		CHI_changjianggongyedai = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = 0.1
+			drift_defence_factor = -0.2
+			}
+		}
+
 		#山巅经济
 		CHI_shandianjingji = {
 
@@ -883,6 +905,48 @@ ideas = {
 			production_speed_buildings_factor = -0.8
 			industrial_capacity_factory = -0.7
 			conscription_factor = -0.5
+			}
+		}
+		
+		#汉人驻军
+		CHI_hanrenzhujun = {
+
+			picture = GFX_idea_CHI_hanrenzhujun
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.2
+			supply_consumption_factor = 0.2
+			army_org_factor = -0.1
+			}
+		}
+
+		#兵荒马乱之地
+		CHI_binhuangmaluan = {
+
+			picture = GFX_idea_CHI_binhuangmaluan
+		
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.2
+			supply_consumption_factor = 0.2
+			army_org_factor = -0.1
 			}
 		}
 	}
