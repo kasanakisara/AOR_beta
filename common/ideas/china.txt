@@ -859,5 +859,30 @@ ideas = {
 			line_change_production_efficiency_factor = 0.1
 			}
 		}
+
+		#山巅经济
+		CHI_shandianjingji = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.5
+			mobilization_laws_cost_factor = 1
+			trade_laws_cost_factor  = 1
+			economy_cost_factor = 1
+			political_advisor_cost_factor = 1
+			production_speed_buildings_factor = -0.8
+			industrial_capacity_factory = -0.7
+			conscription_factor = 0.5
+			}
+		}
 	}
 }
