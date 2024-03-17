@@ -9,6 +9,13 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_quxionggeju
+	CHI_junfanjingji
+}
+
 create_country_leader = {
 	name = "Yang_xi_shan"
 	desc = "POLITICS_MON_DESC"

@@ -7,6 +7,14 @@ set_technology = {
 	
 }
 
+
+add_ideas = {
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_quxionggeju
+	CHI_junfanjingji
+}
+
 create_country_leader = {
 	name = "Yang_zeng_xin"
 	desc = "POLITICS_MON_DESC"

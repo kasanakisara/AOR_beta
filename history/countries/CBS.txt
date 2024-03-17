@@ -7,6 +7,14 @@ if = {
 	else = {
 		#set_naval_#oob = "CHI_1936_naval_legacy"
 	}
+
+add_ideas = {
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_quxionggeju
+	CHI_junfanjingji
+}
+
 }
 create_country_leader = {
 	name = "刘成勋"
@@ -75,7 +83,4 @@ set_politics = {
 
 set_popularities = {
 	Absolutism = 100
-}
-
-add_ideas = {
 }

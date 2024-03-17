@@ -8,6 +8,13 @@ set_technology = {
 	mass_assault = 1
 }
 
+add_ideas = {
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_quxionggeju
+	CHI_junfanjingji
+}
+
 create_country_leader = {
 	name = "XI_bei_commit"
 	desc = "POLITICS_MON_DESC"
