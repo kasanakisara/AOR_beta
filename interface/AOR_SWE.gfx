@@ -12,6 +12,20 @@ spriteTypes = {
 	}
 }
 
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_SWE_Left_Threat_I"
+		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_SWE_Left_Threat_II"
+		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
+	}
+}
+
 spriteTypes = {
 	spriteType = {
 		name = "GFX_AOR_news.70_pic"

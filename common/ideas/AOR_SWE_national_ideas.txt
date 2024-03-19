@@ -115,7 +115,7 @@ ideas = {
 			picture = ""
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = 0.35
+				stability_factor = 0.3
 				stability_weekly = 0.1
 				political_power_gain = 0.5
 				custom_modifier_tooltip = SWE_modifier_down_localisation
@@ -123,13 +123,64 @@ ideas = {
 		}
 
 		SWE_Left_Threat_I = {
-			picture = GFX_idea_SWE_Left_Threat
+			picture = GFX_idea_SWE_Left_Threat_I
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.25
 				political_power_cost = 0.15
 				Marxism_drift = 0.1
 				custom_modifier_tooltip = SWE_modifier_add_localisation
+			}
+		}
+
+		SWE_Left_Threat_II = {
+			picture = GFX_idea_SWE_Left_Threat_II
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.1
+				Marxism_drift = 0.1
+				custom_modifier_tooltip = SWE_modifier_add_localisation
+			}
+		}
+
+		SWE_Hurt_of_Norway = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.5
+				political_power_cost = 0.5
+				consumer_goods_expected_value = 0.5
+				Marxism_drift = 0.2
+				Fascism_drift = 0.2
+			}
+		}
+
+		SWE_Hurten_of_Norway = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.5
+				political_power_cost = 0.5
+				consumer_goods_expected_value = 0.5
+				Marxism_drift = 0.2
+				Fascism_drift = 0.2
+			}
+		}
+
+		SWE_The_Union_Dream = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.45
+				political_power_gain = 0.25
+				consumer_goods_expected_value = -0.35
+				consumer_goods_factor = -0.75
+				stability_weekly = 0.025
+				FRE_democratic_drift = 0.2
+				CON_democratic_drift = 0.15
+				AUT_democratic_drift = 0.1
+				drift_defence_factor = -0.2
 			}
 		}
 	}

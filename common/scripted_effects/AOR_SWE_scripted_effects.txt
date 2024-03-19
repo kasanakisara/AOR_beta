@@ -176,3 +176,50 @@ SWE_Norweign_Independence_value_check = {
 		set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.45 }
 	}
 }
+
+#马克思主义支持度对挪威独立度修正
+SWE_Marxism_effect_Norway_Independence_check = {
+	set_temp_variable = { Marxism_num = party_popularity@Marxism }
+	if = {
+		limit = {
+			check_variable = { Marxism_num = 25 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 0.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 35 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 0.75 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 45 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 75 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 1.25 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 85 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 95 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 2.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Marxism_num = 100 compare = less_than_or_equals }
+		}
+		add_to_variable = { SWE_Norweign_Independence_add = 3 }
+	}
+}

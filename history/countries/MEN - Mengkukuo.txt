@@ -2,6 +2,13 @@
 
 #oob = "MEN_1936"
 
+add_ideas = {
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_quxionggeju
+	CHI_junfanjingji
+}
+
 set_technology = {
 	infantry_weapons = 1
 	

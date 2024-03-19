@@ -6,9 +6,6 @@ on_actions = {
 					has_country_flag = SWE_Norweign_Independence_flag
 				}
 
-				#修正更新
-				SWE_Norweign_Independence_value_check = yes
-
 				#更新gui
 				SWE_update_ui_effect = yes
 
@@ -18,7 +15,7 @@ on_actions = {
 					limit = {
 						has_country_flag = SWE_GUI_1 #哈康初代
 					}
-					add_to_variable = { SWE_Norweign_Independence_add = 3 }
+					add_to_variable = { SWE_Norweign_Independence_add = 2 }
 				}
 				if = {
 					limit = {
@@ -27,7 +24,7 @@ on_actions = {
 							has_country_flag = SWE_GUI_3 #鲁普雷希特初期
 						}
 					}
-					add_to_variable = { SWE_Norweign_Independence_add = 5 }
+					add_to_variable = { SWE_Norweign_Independence_add = 3.5 }
 				}
 
 				#民族精神修正
@@ -54,6 +51,12 @@ on_actions = {
 						has_idea = SWE_Left_Threat_I
 					}
 					add_to_variable = { SWE_Norweign_Independence_add = 0.75 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat_II
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 0.5 }
 				}
 				if = { 
 					limit = {
@@ -86,6 +89,9 @@ on_actions = {
 					}
 					add_to_variable = { SWE_Norweign_Independence_add = 0 }
 				}
+
+				#马克思主义支持率对独立度修正
+				SWE_Marxism_effect_Norway_Independence_check = yes
 				
 				#数值更新
 				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
@@ -102,6 +108,25 @@ on_actions = {
 						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
 					}
 					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
+
+				#修正更新
+				SWE_Norweign_Independence_value_check = yes
+
+				#判定是否触发挪威独立事件
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 }
+					}
+
+					if = {
+						limit = {
+							has_country_flag = SWE_GUI_1
+						}
+						set_variable = { SWE_Norweign_Independence_value = 0 }
+						SWE_Norweign_Independence_value_check = yes
+						country_event = { id = SWE.11 }
+					}
 				}
 			}
 

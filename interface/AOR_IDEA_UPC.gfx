@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_UPC_Military_intervene_government "
+		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UPC_basic_education_system "
+		texturefile = "gfx/interface/ideas/idea_CHI_Lack_of_education.dds"
+	}
+}

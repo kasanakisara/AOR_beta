@@ -793,5 +793,207 @@ ideas = {
 				political_power_gain = -0.1
 			}
 		}
+
+		#群雄割据
+		CHI_quxionggeju = {
+
+			picture = GFX_idea_CHI_quxionggeju
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				surrender_limit = 0.2
+				mobilization_laws_cost_factor = 0.15
+	            trade_laws_cost_factor  = 0.15
+	            economy_cost_factor = 0.15
+			}
+		}
+
+		#军阀经济
+		CHI_junfanjingji = {
+
+			picture = GFX_idea_CHI_junfanjingji
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.1
+			consumer_goods_factor = 0.2
+			research_speed_factor = -0.2
+			industrial_capacity_factory = -0.2
+			production_speed_buildings_factor = -0.5
+			}
+		}
+
+		#南满工业
+		CHI_nanmangongye = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			drift_defence_factor = -0.2
+			opinion_gain_monthly_factor = 0.2
+			min_export = 0.2
+			local_resources_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		#长江工业带
+		CHI_changjianggongyedai = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.1
+			drift_defence_factor = -0.2
+			}
+		}
+
+        #金融龙头-海关大户
+        CHI_Budding_national_capitalism = {
+			
+	       picture = GFX_idea_UPC_Budding_national_capitalism
+	
+	        allowed = {
+		      always = yes
+	       }
+	
+	        visible = {
+		        always = yes
+	        }
+
+	        modifier = {
+			stability_factor = -0.1
+	        trade_opinion_factor = 0.2
+	        local_resources_factor = 0.2
+	        min_export = 0.1
+	        industrial_capacity_dockyard = -0.1
+	        consumer_goods_factor = -0.1
+	        }
+        }
+
+		#山巅经济
+		CHI_shandianjingji = {
+
+			picture = GFX_idea_CHI_nanmangongye
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			research_speed_factor = -1
+			consumer_goods_factor = 0.5
+			mobilization_laws_cost_factor = 1
+			trade_laws_cost_factor  = 1
+			economy_cost_factor = 1
+			political_advisor_cost_factor = 1
+			production_speed_buildings_factor = -0.8
+			industrial_capacity_factory = -0.7
+			conscription_factor = -0.5
+			}
+		}
+		
+		#汉人驻军
+		CHI_hanrenzhujun = {
+
+			picture = GFX_idea_CHI_hanrenzhujun
+
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.2
+			supply_consumption_factor = 0.2
+			army_org_factor = -0.1
+			}
+		}
+
+		#兵荒马乱之地
+		CHI_binhuangmaluan = {
+
+			picture = GFX_idea_CHI_binhuangmaluan
+		
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.2
+			supply_consumption_factor = 0.2
+			army_org_factor = -0.1
+			}
+		}
+
+		#云贵雄师
+		CHI_yunguixiongshi = {
+
+			picture = CHI_yunguixiongshi
+		
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.2
+			army_org_factor = 0.05
+	        army_morale_factor = 0.1
+	        supply_consumption_factor = -0.1
+			recon_factor = 0.05
+			}
+		}
 	}
 }

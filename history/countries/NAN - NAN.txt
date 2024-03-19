@@ -19,6 +19,17 @@ recruit_character = NAN_sa_benshuo
 recruit_character = NAN_cao_yin
 recruit_character = NAN_wu_peifu
 recruit_character = NAN_wang_shizhen
+
+add_ideas = {
+	CHI_Convention_on_China
+	CHI_bureaucrat_capital
+	CHI_soldiers_will_ready
+	CHI_Old_army
+	CHI_Lack_of_education
+	CHI_insecure_society
+	CHI_changjianggongyedai
+}
+
 create_country_leader = {
 	name = "Feng_guo_zhang"
 	desc = "POLITICS_MON_DESC"

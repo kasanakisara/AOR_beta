@@ -132,5 +132,194 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.9.a
+        add_stability = 0.1
+    }
+}
+
+country_event = {
+    id = SWE.10 #焚毁禁书
+    title = SWE.10.t
+    desc = SWE.10.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.10.a
+        add_stability = 0.1
+    }
+}
+
+country_event = {
+    id = SWE.11 #挪威独立的前置
+    title = SWE.11.t
+    desc = SWE.11.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.11.a
+        country_event = { id = SWE.12 days = 7 }
+        clr_country_flag = SWE_Norweign_Independence_flag
+        clr_country_flag = SWE_GUI_1
+    }
+}
+
+country_event = {
+    id = SWE.12 #挪威独立
+    title = SWE.12.t
+    desc = SWE.12.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.12.a
+        hidden_effect = {
+            NOR = {
+                transfer_state = 967
+                transfer_state = 144
+                transfer_state = 142
+                transfer_state = 143
+                transfer_state = 110
+    
+                set_politics = {
+                    ruling_party = SOC_democratic
+                    last_election = "1814.10.10"
+                    election_frequency = 72
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    SOC_democratic = 54
+                    Marxism = 30
+                    fascism = 16
+                }
+    
+                create_country_leader = {
+                    name = "Haakon VII"
+                    desc = ""
+                    picture = "gfx/leaders/SWE/a4buu-9y80q.dds"
+                    expire = "1965.1.1"
+                    ideology = meliorism
+                    traits = {
+                    }
+                }
+    
+                add_ideas = SWE_Hurten_of_Norway
+            }
+    
+            add_ideas = SWE_Hurt_of_Norway
+            remove_ideas = SWE_Eighty_Seventh_Orders
+            remove_ideas = A_lingering_alliance
+            remove_ideas = SWE_Left_Threat
+            remove_ideas = SWE_Left_Threat_I
+            remove_ideas = SWE_Antisocialistisk_Speciallagen
+            remove_ideas = SWE_All_People_are_King
+            remove_ideas = SWE_Beyond_Nationalism
+            remove_ideas = SWE_K_Plan
+            remove_ideas = SWE_Beyond_Nation
+            remove_ideas = SWE_Liberte_Spirit
+            remove_ideas = SWE_Encourage
+            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = Let_the_ambitio_sleep
+            remove_ideas = Tiger_of_Silence
+
+            set_politics = {
+                ruling_party = FRE_democratic
+                last_election = "1919.11.7"
+                election_frequency = 72
+                elections_allowed = yes
+            }
+
+            set_popularities = {
+                FRE_democratic = 54
+                Marxism = 30
+                Fascism = 16
+            }
+
+            create_country_leader = {
+                name = "Hjalmar Branting"
+                desc = ""
+                picture = "gfx/leaders/SWE/Hjalmar Branting.dds"
+                expire = "1965.1.1"
+                ideology = liberalism
+                traits = {
+                }
+            }
+
+            load_focus_tree = AOR_SWE_nothing_focus_tree_1
+            delete_unit_template_and_units = {
+                division_template = "联邦军"
+                disband = yes 
+            }
+            load_oob = SWE_Norweign_Independence_oob
+            
+        }
+        custom_effect_tooltip = SWE_Norweign_Independence_boom_tt
+        
+    }
+}
+
+country_event = {
+    id = SWE.13 #和右翼的茶会
+    title = SWE.13.t
+    desc = SWE.13.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.13.a
+        add_political_power = 50
+        add_popularity = { ideology = AUT_democratic popularity = 0.1 }
+    }
+}
+
+country_event = {
+    id = SWE.14 #拘禁左翼领导人
+    title = SWE.14.t
+    desc = SWE.14.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.14.a
+        add_stability = -0.2
+        add_manpower = -10000
+    }
+}
+
+country_event = {
+    id = SWE.15 #大审判
+    title = SWE.15.t
+    desc = SWE.15.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.15.a
+        add_stability = 0.2
+        add_manpower = -50000
+        remove_ideas = SWE_Left_Threat_II
+    }
+}
+
+country_event = {
+    id = SWE.16 #议会的喧闹
+    title = SWE.16.t
+    desc = SWE.16.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.16.a
+        add_stability = 0.2
+        add_popularity = { ideology = FRE_democratic popularity = 0.15 } 
+        add_popularity = { ideology = CON_democratic popularity = 0.25 } 
+        add_popularity = { ideology = AUT_democratic popularity = 0.2 } 
+    }
+}
+
+country_event = {
+    id = SWE.17 #联邦一梦
+    title = SWE.17.t
+    desc = SWE.17.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.17.a
+        add_political_power = 250
+    }
+}
+
+country_event = {
+    id = SWE.18 #第八十七号命令
+    title = SWE.18.t
+    desc = SWE.18.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.18.a
     }
 }

@@ -64,4 +64,42 @@ spriteTypes = {
 		name = "GFX_idea_CHI_Territorial_separation"
 		texturefile = "gfx/interface/ideas/idea_CHI_Territorial_separation.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_quxionggeju"
+		texturefile = "gfx/interface/ideas/idea_CHI_Territorial_separation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_junfanjingji"
+		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_nanmangongye"
+		texturefile = "gfx/interface/ideas/KOR_Backward_industry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_changjianggongyedai"
+		texturefile = "gfx/interface/ideas/KOR_Backward_industry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_Budding_national_capitalism"
+		texturefile = "gfx/interface/ideas/idea_The_remaining_industrial_base.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_shandianjingji"
+		texturefile = "gfx/interface/ideas/idea_CHI_insecure_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_hanrenzhujun"
+		texturefile = "gfx/interface/ideas/idea_CHI_bureaucrat_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_binhuangmaluan"
+		texturefile = "gfx/interface/ideas/idea_CHI_budding_national_consciousness.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_yunguixiongshi"
+		texturefile = "gfx/interface/ideas/idea_CHI_soldiers_will_ready.dds"
+	}
 }

@@ -1,6 +1,20 @@
 ﻿
 capital = 592 
 
+add_ideas = {
+	CHI_Convention_on_China
+	CHI_bureaucrat_capital
+	Semi_colonial_economy
+	Unequal_trade
+	CHI_Old_army
+	UPC_Military_intervene_government
+	UPC_Central_place_1
+	UPC_Under_three_governors
+	CHI_Budding_national_capitalism
+	UPC_basic_education_system
+	UPC_Bodhisattva_president
+}
+
 create_country_leader = {
 	name = "Wang_Ya_Qiao"
 	desc = "Qiao_desc"
@@ -103,19 +117,6 @@ set_popularities = {
 	Special = 2
 }
 
-add_ideas = {
-	CHI_Convention_on_China
-	Semi_colonial_economy
-	Unequal_trade
-	CHI_Old_army
-	CHI_soldiers_will_ready
-	Military_intervene_government 
-	Central_place_1
-	Under_three_governors
-	Budding_national_capitalism
-	basic_education_system
-	Bodhisattva_president
-}
 recruit_character = UPC_liangqichao
 recruit_character = UPC_xiongxiling
 recruit_character = UPC_zhangzongyuan

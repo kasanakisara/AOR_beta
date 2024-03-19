@@ -140,9 +140,9 @@ ideas = {
 	country = {
 
 		#武人干政
-		Military_intervene_government = {
+		UPC_Military_intervene_government = {
 			
-			picture = GFX_idea_Military_intervene_government
+			picture = GFX_idea_UPC_Military_intervene_government
 			
 			allowed = {
 				always = yes
@@ -155,11 +155,13 @@ ideas = {
 			modifier = {
 			political_power_gain = -0.2
 			stability_factor = -0.2
+			command_power_gain_mult = -0.15
+			max_command_power = -30
 			}
 		}
 		
 		#央地关系：自治
-		Central_place_1 = {
+		UPC_Central_place_1 = {
 			
 			picture = GFX_idea_Central_place_1
 			
@@ -180,7 +182,7 @@ ideas = {
 		}
 		
 		#三督治下
-		Under_three_governors = {
+		UPC_Under_three_governors = {
 			
 			picture = GFX_idea_Under_three_governors
 			
@@ -205,31 +207,10 @@ ideas = {
 			}
 		}
 		
-		#萌芽中的民族资本主义
-		Budding_national_capitalism = {
-			
-			picture = GFX_idea_Budding_national_capitalism
-			
-			allowed = {
-				always = yes
-			}
-			
-			visible = {
-				always = yes
-			}
-
-			modifier = {
-			local_resources_factor = -0.1
-			industrial_capacity_factory = -0.1
-			industrial_capacity_dockyard = -0.1
-			consumer_goods_factor = 0.05
-			}
-		}
-		
 		#刚起步的基础教育体系
-		basic_education_system = {
+		UPC_basic_education_system = {
 			
-			picture = GFX_idea_basic_education_system
+			picture = GFX_idea_UPC_basic_education_system
 			
 			allowed = {
 				always = yes
@@ -245,7 +226,7 @@ ideas = {
 		}
 		
 		#菩萨总统
-		Bodhisattva_president = {
+		UPC_Bodhisattva_president = {
 			
 			picture = GFX_idea_Bodhisattva_president
 			
