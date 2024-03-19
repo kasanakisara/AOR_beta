@@ -154,7 +154,10 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.11.a
-        country_event = { id = SWE.12 days = 7 }
+        hidden_effect = {
+            country_event = { id = SWE.12 days = 7 }
+        }
+        custom_effect_tooltip = SWE_11_tt
         clr_country_flag = SWE_Norweign_Independence_flag
         clr_country_flag = SWE_GUI_1
     }
