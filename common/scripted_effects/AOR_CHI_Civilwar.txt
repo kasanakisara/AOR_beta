@@ -198,11 +198,16 @@ CHI_civil_war_3 = {
 		transfer_state = 744
 		add_manpower = 10000
 	}
+
+	QIN = {
+		add_state_core = 604
+		transfer_state = 604
+	}
+	
 	XSM = {
 		add_state_core = 754
 		add_state_core = 283
 		add_state_core = 909
-		add_state_core = 604
 		add_state_core = 616
 		add_state_core = 752
 		add_state_core = 601
@@ -210,7 +215,6 @@ CHI_civil_war_3 = {
 		transfer_state = 754
 		transfer_state = 283
 		transfer_state = 909
-		transfer_state = 604
 		transfer_state = 616
 		transfer_state = 752
 		transfer_state = 601
