@@ -197,6 +197,7 @@ country_event = {
       
 	option = {
 		name = USA.10.a
+		news_event = {id=AOR_news.80}
 		hidden_effect = {
 		USA_civil_war_west = yes
 		}

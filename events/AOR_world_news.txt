@@ -1364,3 +1364,16 @@ news_event = { #纽芬兰给加
 		name = AOR_news.72.a
 	}
 }
+
+news_event = { #老美西部内战
+	id = AOR_news.80
+	title = AOR_news.80.t
+	desc = AOR_news.80.d
+	picture = GFX_AOR_news.80_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.80.a
+	}
+}
