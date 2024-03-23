@@ -269,22 +269,23 @@ CHI_election_decison_cate = {
 			
 		}
 		remove_effect = {
-		CHI_refresh  = yes
+		
 		random_list = { 
 				99 = { 
 				add_to_variable = {
-					KMT_senate_seat_var = 5
+					KMT_senate_seat_var = -5
 				}
+				CHI_refresh_KMT  = yes
 				add_to_variable = {
-					SOCP_senate_seat_var =-5
+					Prop_senate_seat_var = 5
 				}
+				CHI_refresh_Prop  = yes
 				}
 				1 = { 
 				add_political_power = -100 
 			} 
 		}
 		
-	CHI_refresh  = yes
 		}
 	}
 }
