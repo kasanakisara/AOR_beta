@@ -113,6 +113,15 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
+		#秩序重构-骑士（限制）（2）
+		USA_zhixuchonggou_knights2 = {
+			picture = GFX_idea_USA_zhixuchonggou_knights2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				DRIFT_DEFENCE_FACTOR = 0.2
+			}
+		}
 		#大战之末，洪涛将临
 		USA_dazhanzhimo = {
 			picture = GFX_idea_USA_dazhanzhimo
@@ -127,7 +136,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_dazhanzhimo2_tt
-				ai_get_ally_desire_factor = -0.5
+				ai_get_ally_desire_factor = -0.2
 				drift_defence_factor = 0.1
 				subversive_activites_upkeep = 0.2
 			}
@@ -138,10 +147,22 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_dazhanzhimo2_tt
-				ai_get_ally_desire_factor = -0.5
+				ai_get_ally_desire_factor = -0.2
 				drift_defence_factor = 0.1
 				subversive_activites_upkeep = 0.2
 				trade_opinion_factor = -0.3
+			}
+		}
+		 #大战之末，洪涛将临(4-提高关税)
+		 USA_dazhanzhimo4 = {
+			picture = GFX_idea_USA_dazhanzhimo4
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.2
+				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+				trade_opinion_factor = -0.5
 			}
 		}
 		 #延长紧急状态

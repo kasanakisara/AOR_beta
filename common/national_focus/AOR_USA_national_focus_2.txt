@@ -105,9 +105,13 @@ focus_tree={
 		}
 		completion_reward={
 			add_timed_idea={
-				idea = zanshideweiji
-				days=720
+				idea = USA_zanshideweiji
+				days = 720
+            }
+			country_event={
+				id=USA.10018
 			}
+			
 			add_political_power = -200
 		}
 	}
@@ -147,6 +151,7 @@ focus_tree={
 		completion_reward={
 			swap_ideas={
 			    remove_idea = USA_AmericanAnxietyA
+				add_idea = USA_zhixuchonggou_knights2
 			}
 		}
 	}
@@ -167,9 +172,7 @@ focus_tree={
 			add_manpower = -500
 			swap_ideas={
 			    remove_idea = USA_AmericanAnxietyA
-			}
-			swap_ideas={
-				add_ideas = USA_jinjizhuangtai
+				add_idea = USA_jinjizhuangtai
 			}
 		}
 	}
@@ -321,6 +324,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo3
+				add_idea = USA_dazhanzhimo4
+			}
 		}
 	}
 	focus={
@@ -423,6 +430,16 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			USA = {
+				set_politics = {ruling_party = FRE_democratic}
+				create_country_leader = {
+				name = "Warren_Gamaliel_Harding"
+				desc = "Warren_Gamaliel_Harding_desc"
+				picture = "gfx/leaders/USA/Harding.png"
+				expire = "1945.1.1"
+				ideology = USA_federalism
+			}
 		}
 	}
+    }
 }

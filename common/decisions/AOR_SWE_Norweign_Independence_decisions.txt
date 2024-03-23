@@ -155,4 +155,16 @@ SWE_Norweign_Independence_decision_categories = {
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
         }
     }
+
+    SWE_Make_Left_Criminal_Evidence = {
+        avaliable = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        visible = { has_idea = SWE_Antisocialistisk_Speciallagen }
+        cost = 75
+        days_re_enable = 49
+        complete_effect = {
+            add_popularity = { ideology = Marxism popularity = -0.15 }
+            add_to_variable = { SWE_Norweign_Independence_value = -5 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
 }
