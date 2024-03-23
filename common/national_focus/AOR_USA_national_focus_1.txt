@@ -15,10 +15,10 @@ focus_tree={
 		y=0
 		cost=0
 		available={
-			date>1919.8.2
+			date > 1919.8.2
 		}
 		bypass={
-			date>1919.8.1
+			date > 1919.8.1
 		}
 		completion_reward={
 		}
@@ -42,7 +42,7 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date>1919.8.27
+			date > 1919.8.27
 		}
 		completion_reward={
 			country_event={
@@ -57,13 +57,6 @@ focus_tree={
 				}
 			}
 			380={
-				add_building_construction={
-					type=infrastructure
-					level=-1
-					instant_build=yes
-				}
-			}
-			378={
 				add_building_construction={
 					type=infrastructure
 					level=-1
@@ -137,7 +130,7 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date>1919.8.7
+			date > 1919.8.7
 		}
 		completion_reward={
 			add_ideas=USA_GreatLakesA
@@ -162,12 +155,12 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
-			add_ideas={
-				tot_economic_mobilisation
-			}
 			add_timed_idea={
 				idea=USA_MartialLawA
 				days=180
+			}
+			country_event={
+				id=USA.10008
 			}
 		}
 	}
@@ -195,7 +188,7 @@ focus_tree={
 		prerequisite={focus=USA_Appease}
 		cost=3.00
 		completion_reward={
-			add_manpower=-8000
+			add_manpower=-3000
 			swap_ideas={
 				remove_idea=USA_GreatLakesA
 				add_idea=USA_GreatLakes2A
@@ -210,10 +203,12 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date>1919.8.23
+			date > 1919.8.23
 		}
-		bypass={
-			date>1919.8.23
+		completion_reward={
+			country_event={
+				id=USA.10006
+			}
 		}
 	}
 	focus={

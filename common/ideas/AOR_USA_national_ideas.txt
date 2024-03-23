@@ -13,6 +13,26 @@ ideas = {
 			political_power_cost =0.5
 			}
 		}
+	#不合的众国（2）
+		USA_the_divided_nation2 = {
+			picture = GFX_idea_USA_the_divided_nation2
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.4
+			political_advisor_cost_factor = 0.5
+			war_support_factor = -0.1
+			theorist_cost_factor = 0.5
+			political_power_cost =0.2
+			}
+		}
+	#分裂的众国（内战）（3）
+	USA_the_divided_nation3 = {
+			picture = GFX_idea_USA_the_divided_nation3
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.5
+			}
+		}
 	#三大利刃，穿胸剧痛
 	    USA_sandaliren = {
 	    	picture = GFX_idea_USA_sandaliren
@@ -54,6 +74,14 @@ ideas = {
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
+		#无序之地-西部
+		USA_wuxunzhidi = {
+			picture = GFX_idea_USA_wuxunzhidi
+			allowed = { always = yes }
+			modifier = {				
+				custom_modifier_tooltip = USA_kuangyezhidi_tt
+			}
+		}
 		#不死的信托
 		USA_busidexintuo = {
 			picture = GFX_idea_USA_busidexintuo
@@ -85,12 +113,44 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
-		#大战之末，洪涛即将涌起
+		#大战之末，洪涛将临
 		USA_dazhanzhimo = {
 			picture = GFX_idea_USA_dazhanzhimo
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_dazhanzhimo_tt
+			}
+		}
+        #大战之末，洪涛将临(2-退出协约国)
+        USA_dazhanzhimo2 = {
+			picture = GFX_idea_USA_dazhanzhimo2
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.5
+				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+			}
+		}
+		 #大战之末，洪涛将临(3-改革金融)
+		 USA_dazhanzhimo3 = {
+			picture = GFX_idea_USA_dazhanzhimo3
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.5
+				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+				trade_opinion_factor = -0.3
+			}
+		}
+		 #延长紧急状态
+		USA_jinjizhuangtai = {
+			picture = GFX_idea_USA_jinjizhuangtai
+			allowed = { always = yes }
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.05
 			}
 		}
 	#英法资本优势控股	
@@ -215,6 +275,14 @@ ideas = {
 			stability_factor = -0.05
 			production_factory_start_efficiency_factor = -0.1
 			production_factory_max_efficiency_factor = -0.10
+			}
+		}	
+	#暂时的慰籍
+	    USA_zanshideweiji = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			stability_factor = 0.05
 			}
 		}		
 	}
