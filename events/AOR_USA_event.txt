@@ -283,14 +283,6 @@ country_event = {
 				load_oob = "CSA_Civilwar"		
 			}
 			USA = {
-				set_politics = {ruling_party = FRE_democratic}
-				create_country_leader = {
-				name = "Warren_Gamaliel_Harding"
-				desc = "Warren_Gamaliel_Harding_desc"
-				picture = "gfx/leaders/USA/Harding.png"
-				expire = "1945.1.1"
-				ideology = USA_federalism
-					}
 				set_popularities = {
 					FRE_democratic = 61
 					CON_democratic = 8
