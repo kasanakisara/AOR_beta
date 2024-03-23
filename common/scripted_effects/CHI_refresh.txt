@@ -111,6 +111,30 @@ CHI_refresh = {
 		set_variable = {
 			KMT_senate_seat_var_standard = KMT_senate_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -118,7 +142,7 @@ CHI_refresh = {
 				KMT_senate_seat_var < KMT_senate_seat_var_standard
 			}
 		}
-		log = "KMT小了！"
+		log = "KMT小了"
 		set_variable = {
 			KMT_temp_less_senate_seat_var = KMT_senate_seat_var
 		}
@@ -223,6 +247,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	if = {
@@ -337,6 +385,30 @@ CHI_refresh = {
 		set_variable = {
 			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -450,6 +522,30 @@ CHI_refresh = {
 		set_variable = {
 			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	if = {
 		limit = {
@@ -457,6 +553,7 @@ CHI_refresh = {
 				Prop_senate_seat_var > Prop_senate_seat_var_standard
 			}
 		}
+		log = "错误所在：[?Prop_senate_seat_var_standard]"
 		log = "Prop大了！"
 		set_variable = {
 			Prop_temp_add_senate_seat_var = Prop_senate_seat_var
@@ -562,6 +659,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			Prop_senate_seat_var_standard = Prop_senate_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	else_if = {
@@ -676,6 +797,30 @@ CHI_refresh = {
 		set_variable = {
 			Prop_senate_seat_var_standard = Prop_senate_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	if = {
 		limit = {
@@ -788,6 +933,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	else_if = {
@@ -902,6 +1071,30 @@ CHI_refresh = {
 		set_variable = {
 			UNP_senate_seat_var_standard = UNP_senate_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	if = {
 		limit = {
@@ -1015,6 +1208,30 @@ CHI_refresh = {
 		set_variable = {
 			KMT_Representatives_seat_var_standard = KMT_Representatives_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -1022,7 +1239,7 @@ CHI_refresh = {
 				KMT_Representatives_seat_var < KMT_Representatives_seat_var_standard
 			}
 		}
-		log = "KMT小了！"
+		log = "KMT众议院小了"
 		set_variable = {
 			KMT_temp_less_Representatives_seat_var = KMT_Representatives_seat_var
 		}
@@ -1127,6 +1344,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			KMT_Representatives_seat_var_standard = KMT_Representatives_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	if = {
@@ -1241,6 +1482,30 @@ CHI_refresh = {
 		set_variable = {
 			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -1248,7 +1513,7 @@ CHI_refresh = {
 				SOCP_Representatives_seat_var < SOCP_Representatives_seat_var_standard
 			}
 		}
-		log = "SOCP小了！"
+		log = "SOCP众议院小了"
 		set_variable = {
 			SOCP_temp_less_Representatives_seat_var = SOCP_Representatives_seat_var
 		}
@@ -1353,6 +1618,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	if = {
@@ -1467,6 +1756,30 @@ CHI_refresh = {
 		set_variable = {
 			Prop_Representatives_seat_var_standard = Prop_Representatives_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -1474,7 +1787,7 @@ CHI_refresh = {
 				Prop_Representatives_seat_var < Prop_Representatives_seat_var_standard
 			}
 		}
-		log = "Prop小了！"
+		log = "Prop众议院小了"
 		set_variable = {
 			Prop_temp_less_Representatives_seat_var = Prop_Representatives_seat_var
 		}
@@ -1579,6 +1892,30 @@ CHI_refresh = {
 		}
 		set_variable = {
 			Prop_Representatives_seat_var_standard = Prop_Representatives_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
 	}
 	if = {
@@ -1693,6 +2030,30 @@ CHI_refresh = {
 		set_variable = {
 			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
 		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
 	}
 	else_if = {
 		limit = {
@@ -1700,7 +2061,7 @@ CHI_refresh = {
 				UNP_Representatives_seat_var < UNP_Representatives_seat_var_standard
 			}
 		}
-		log = "UNP小了！"
+		log = "UNP众议院小了"
 		set_variable = {
 			UNP_temp_less_Representatives_seat_var = UNP_Representatives_seat_var
 		}
@@ -1802,6 +2163,30 @@ CHI_refresh = {
 					}
 				}
 			}
+		}
+		set_variable = {
+			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
+		}
+		set_variable = {
+			KMT_senate_seat_var_standard = KMT_senate_seat_var
+		}
+		set_variable = {
+			SOCP_senate_seat_var_standard = SOCP_senate_seat_var
+		}
+		set_variable = {
+			ProP_senate_seat_var_standard = ProP_senate_seat
+		}
+		set_variable = {
+			UNP_senate_seat_var_standard = UNP_senate_seat_var
+		}
+		set_variable = {
+			KMT_Representatives_seat_var_standard = KMT_Representatives_seat
+		}
+		set_variable = {
+			SOCP_Representatives_seat_var_standard = SOCP_Representatives_seat_var
+		}
+		set_variable = {
+			ProP_Representatives_seat_var_standard = ProP_Representatives_seat_var
 		}
 		set_variable = {
 			UNP_Representatives_seat_var_standard = UNP_Representatives_seat_var
