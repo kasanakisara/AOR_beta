@@ -344,6 +344,9 @@ focus_tree={
 				remove_idea = USA_dazhanzhimo3
 				add_idea = USA_dazhanzhimo4
 			}
+			country_event={
+				id = USA.10022
+			}
 		}
 	}
 	focus={
