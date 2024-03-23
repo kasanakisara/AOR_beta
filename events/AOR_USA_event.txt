@@ -661,12 +661,6 @@ country_event = {
 	desc = USA.10006.d
 	picture = GFX_USA_event_10006
 	fire_only_once = yes
-
-		trigger = {
-			tag = USA
-		    date = 1919.10.10
-	}
-
 	option = {
 		name=USA.10006.a
 	}	
@@ -688,17 +682,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10008 #8月10日
+	id = USA.10008 #他们来了
     title = USA.10008.t
     desc = USA.10008.d
+	picture = GFX_USA_event_10008
     is_triggered_only = yes
 	fire_only_once = yes
-         trigger = {
-           tag = USA
-	       date = 1919.8.10
-	 }
     option = { 
         name = USA.10008.a
+		add_manpower = -801
 	
 	}
 }
@@ -707,6 +699,7 @@ country_event = {
 	hidden = yes
 	title = USA.10009.t
     desc = USA.10009.d
+	picture = GFX_USA_event_10009
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -725,6 +718,8 @@ country_event = {
 		}
 		932 = {
 			set_demilitarized_zone = yes
+
+		    add_manpower = -20
 		}
 	}
 }
