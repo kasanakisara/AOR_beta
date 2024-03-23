@@ -113,6 +113,15 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
+		#秩序重构-骑士（限制）（2）
+		USA_zhixuchonggou_knights2 = {
+			picture = GFX_idea_USA_zhixuchonggou_knights2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				DRIFT_DEFENCE_FACTOR = 0.2
+			}
+		}
 		#大战之末，洪涛将临
 		USA_dazhanzhimo = {
 			picture = GFX_idea_USA_dazhanzhimo

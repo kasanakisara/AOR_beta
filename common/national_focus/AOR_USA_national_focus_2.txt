@@ -105,8 +105,8 @@ focus_tree={
 		}
 		completion_reward={
 			add_timed_idea={
-				idea = zanshideweiji
-				days=720
+				idea = USA_zanshideweiji
+				days = 720
             }
 			country_event={
 				id=USA.10018
@@ -149,8 +149,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_idea={
+			swap_ideas={
 			    remove_idea = USA_AmericanAnxietyA
+				add_idea = USA_zhixuchonggou_knights2
 			}
 		}
 	}

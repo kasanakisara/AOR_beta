@@ -42,6 +42,10 @@ spriteTypes = {
 		name = "GFX_idea_USA_zhixuchonggou_knights"
 		texturefile = "gfx/interface/ideas/USA_zhixuchonggou_knights.png"
     }
+	    spriteType = {
+		name = "GFX_idea_USA_zhixuchonggou_knights2"
+		texturefile = "gfx/interface/ideas/USA_zhixuchonggou_knights.png"
+    }
 
 		spriteType = {
 		name = "GFX_idea_USA_dazhanzhimo"
