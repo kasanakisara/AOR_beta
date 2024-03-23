@@ -107,7 +107,11 @@ focus_tree={
 			add_timed_idea={
 				idea = zanshideweiji
 				days=720
+            }
+			country_event={
+				id=USA.10018
 			}
+			
 			add_political_power = -200
 		}
 	}
