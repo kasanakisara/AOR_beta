@@ -155,9 +155,6 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
-			add_ideas={
-				tot_economic_mobilisation
-			}
 			add_timed_idea={
 				idea=USA_MartialLawA
 				days=180
@@ -206,9 +203,6 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date > 1919.8.23
-		}
-		bypass={
 			date > 1919.8.23
 		}
 		completion_reward={

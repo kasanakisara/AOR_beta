@@ -14,8 +14,8 @@ ideas = {
 			}
 		}
 	#分裂的众国（内战）
-		USA_the_disintgrate_nation = {
-			picture = GFX_idea_USA_the_disintgrate_nation
+	USA_the_divided_nation3 = {
+			picture = GFX_idea_USA_the_divided_nation3
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.5
@@ -101,12 +101,32 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
-		#大战之末，洪涛即将涌起
+		#大战之末，洪涛将临
 		USA_dazhanzhimo = {
 			picture = GFX_idea_USA_dazhanzhimo
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_dazhanzhimo_tt
+			}
+		}
+        #大战之末，洪涛将临(2-退出协约国)
+        USA_dazhanzhimo2 = {
+			picture = GFX_idea_USA_dazhanzhimo2
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.5
+				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+			}
+		}
+		 #延长紧急状态
+		USA_jinjizhuangtai = {
+			picture = GFX_idea_USA_jinjizhuangtai
+			allowed = { always = yes }
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.05
 			}
 		}
 	#英法资本优势控股	
@@ -231,6 +251,14 @@ ideas = {
 			stability_factor = -0.05
 			production_factory_start_efficiency_factor = -0.1
 			production_factory_max_efficiency_factor = -0.10
+			}
+		}	
+	#暂时的慰籍
+	    USA_zanshideweiji = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			stability_factor = 0.05
 			}
 		}		
 	}

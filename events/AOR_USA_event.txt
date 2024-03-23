@@ -209,7 +209,7 @@ country_event = {
 
 
 country_event = {
-	id = USA.99 #南北战争！
+	id = USA.99 #南北战争！(已废弃)
 	title = USA.99.t
 	desc = USA.99.d
 	picture = GFX_USA_event_100
@@ -309,7 +309,7 @@ country_event = {
 		}
 		    swap_ideas={
 			     remove_idea = USA_the_divided_nation
-			     add_idea = USA_the_disintgrate_nation
+			     add_idea = USA_the_divided_nation3
 		}
 	}
 }
@@ -667,6 +667,7 @@ country_event = {
 	title = USA.10006.t
 	desc = USA.10006.d
 	picture = GFX_USA_event_10006
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name=USA.10006.a
@@ -697,7 +698,7 @@ country_event = {
 	fire_only_once = yes
     option = { 
         name = USA.10008.a
-		add_manpower = -801
+		add_manpower = -3
 	
 	}
 }
