@@ -1,6 +1,9 @@
 #席位计算
 CHI_Seat_calculation = {
 	#参议院
+
+	
+
 	set_temp_variable = {
 		yellow_total = ROOT.ProP_senate_seat_var
 	}

@@ -10,7 +10,7 @@ CHI_Reclaiming_outer_northwest_decision = {
 		days_remove = 20
 
 		complete_effect = {
-			
+			add_war_support = 0.05
 		}
 		fire_only_once = yes
 	}
@@ -248,6 +248,43 @@ CHI_Reclaiming_outer_northwest_decision = {
 					#on_cancel = CHI_Northwest_decision.4
 				}
 			}
+		}
+	}
+}
+CHI_election_decison_cate = {
+	Deliver_speech_to_Congress = {
+		icon = GFX_decision_generic_political_rally
+
+		available = {
+			
+		}
+
+		cost = 35
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 1
+		fire_only_once = no
+		complete_effect = {
+			
+		}
+		remove_effect = {
+		CHI_refresh  = yes
+		random_list = { 
+				99 = { 
+				add_to_variable = {
+					KMT_senate_seat_var = 5
+				}
+				add_to_variable = {
+					SOCP_senate_seat_var =-5
+				}
+				}
+				1 = { 
+				add_political_power = -100 
+			} 
+		}
+		
+	CHI_refresh  = yes
 		}
 	}
 }
