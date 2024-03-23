@@ -308,7 +308,7 @@ country_event = {
 				}
 		}
 		    swap_ideas={
-			     remove_idea = USA_the_divided_nation
+			     remove_idea = USA_the_divided_nation2
 			     add_idea = USA_the_divided_nation3
 		}
 	}

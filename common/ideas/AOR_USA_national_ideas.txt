@@ -13,7 +13,19 @@ ideas = {
 			political_power_cost =0.5
 			}
 		}
-	#分裂的众国（内战）
+	#不合的众国（2）
+		USA_the_divided_nation2 = {
+			picture = GFX_idea_USA_the_divided_nation2
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.4
+			political_advisor_cost_factor = 0.5
+			war_support_factor = -0.1
+			theorist_cost_factor = 0.5
+			political_power_cost =0.2
+			}
+		}
+	#分裂的众国（内战）（3）
 	USA_the_divided_nation3 = {
 			picture = GFX_idea_USA_the_divided_nation3
 			allowed = { always = yes }
@@ -118,6 +130,18 @@ ideas = {
 				ai_get_ally_desire_factor = -0.5
 				drift_defence_factor = 0.1
 				subversive_activites_upkeep = 0.2
+			}
+		}
+		 #大战之末，洪涛将临(3-改革金融)
+		 USA_dazhanzhimo3 = {
+			picture = GFX_idea_USA_dazhanzhimo3
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.5
+				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+				trade_opinion_factor = -0.3
 			}
 		}
 		 #延长紧急状态
