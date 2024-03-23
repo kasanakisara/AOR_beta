@@ -171,8 +171,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_pause_button_for_everything!
-		icon=GFX_goal_USA_pause_button_for_everything!
+		id=USA_pause_button_for_everything
+		icon=GFX_goal_USA_pause_button_for_everything
 		x=10
 		y=6
 		prerequisite={focus=USA_Shocking_waves_rise_with_the_wind}
@@ -191,7 +191,7 @@ focus_tree={
 		icon=GFX_goal_USA_neutrality_of_the_enterprise
 		x=0
 		y=7
-		prerequisite={focus=USA_pause_button_for_everything!}
+		prerequisite={focus=USA_pause_button_for_everything}
 		mutually_exclusive={focus=USA_Welcome_Mellon's_joining }
 		cost=10
 		ai_will_do={
@@ -208,7 +208,7 @@ focus_tree={
 		icon=GFX_goal_USA_Welcome_Mellon's_joining
 		x=6
 		y=7
-		prerequisite={focus=USA_pause_button_for_everything!}
+		prerequisite={focus=USA_pause_button_for_everything}
 		mutually_exclusive={focus=USA_neutrality_of_the_enterprise }
 		cost=10
 		ai_will_do={
@@ -221,11 +221,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_Let's_face_the_storm
-		icon=GFX_goal_USA_Let's_face_the_storm
+		id=USA_Let_s_face_the_storm
+		icon=GFX_goal_USA_Let_s_face_the_storm
 		x=14
 		y=7
-		prerequisite={focus=USA_pause_button_for_everything!}
+		prerequisite={focus=USA_pause_button_for_everything}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -241,7 +241,7 @@ focus_tree={
 		icon=GFX_goal_USA_Hold_France
 		x=20
 		y=7
-		prerequisite={focus=USA_pause_button_for_everything!}
+		prerequisite={focus=USA_pause_button_for_everything}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -353,7 +353,7 @@ focus_tree={
 		icon=GFX_goal_USA_walks_to_the_stage
 		x=12
 		y=8
-		prerequisite={focus=USA_Let's_face_the_storm}
+		prerequisite={focus=USA_Let_s_face_the_storm}
 		mutually_exclusive={focus=USA_Adhere_to_the_unity }
 		cost=10
 		ai_will_do={
@@ -402,7 +402,7 @@ focus_tree={
 		icon=GFX_goal_USA_Adhere_to_the_unity
 		x=16
 		y=8
-		prerequisite={focus=USA_Let's_face_the_storm}
+		prerequisite={focus=USA_Let_s_face_the_storm}
 		mutually_exclusive={focus=USA_walks_to_the_stage }
 		cost=10
 		ai_will_do={
