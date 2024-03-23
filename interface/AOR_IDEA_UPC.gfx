@@ -8,5 +8,8 @@ spriteTypes = {
 		name = "GFX_idea_UPC_basic_education_system"
 		texturefile = "gfx/interface/ideas/idea_UPC_basic_education_system.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_UPC_Central_place_1"
+		texturefile = "gfx/interface/ideas/idea_UPC_Central_place_1.dds"
+	}
 }

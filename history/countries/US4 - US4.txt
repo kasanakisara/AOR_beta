@@ -4,6 +4,8 @@
 
 starting_train_buffer = 5
 
+add_ideas = ARG_Farmers_support
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		#set_naval_#oob = "USA_1936_naval_mtg"
