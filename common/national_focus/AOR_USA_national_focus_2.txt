@@ -149,7 +149,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
+			swap_idea={
 			    remove_idea = USA_AmericanAnxietyA
 			}
 		}
@@ -171,9 +171,7 @@ focus_tree={
 			add_manpower = -500
 			swap_ideas={
 			    remove_idea = USA_AmericanAnxietyA
-			}
-			swap_ideas={
-				add_ideas = USA_jinjizhuangtai
+				add_idea = USA_jinjizhuangtai
 			}
 		}
 	}
