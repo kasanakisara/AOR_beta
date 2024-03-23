@@ -50,6 +50,40 @@ ideas = {
 
 	    	}
     	}
+		#三大利刃，穿胸剧痛（西部）
+	    USA_sandaliren1 = {
+	    	picture = GFX_idea_USA_sandaliren1
+    		allowed = { always = yes }
+    		modifier = {
+    		    TRAINING_TIME_ARMY_factor = -0.1
+				experience_gain_army_factor = -0.2
+				experience_gain_air_factor = -0.5
+				experience_gain_navy_factor = -0.5
+				experience_gain_factor = -0.3
+				army_chief_cost_factor = 0.5
+				TRADE_OPINION_FACTOR = 0.1
+				custom_modifier_tooltip =  USA_West_Point_Accord_tt
+
+
+	    	}
+    	}
+		#三大利刃，穿胸剧痛（东部）
+	    USA_sandaliren1 = {
+	    	picture = GFX_idea_USA_sandaliren1
+    		allowed = { always = yes }
+    		modifier = {
+    		    TRAINING_TIME_ARMY_factor = -0.2
+				experience_gain_army_factor = -0.4
+				experience_gain_air_factor = -0.3
+				experience_gain_navy_factor = -0.3
+				experience_gain_factor = -0.4
+				army_chief_cost_factor = 0.5
+				TRADE_OPINION_FACTOR = 0.1
+				custom_modifier_tooltip =  USA_West_Point_Accord_tt
+
+
+	    	}
+    	}
 	#石油幻影，钢铁梦魇
     	USA_shiyouhuanying = {
 	    	picture = GFX_idea_USA_shiyouhuanying
@@ -100,6 +134,50 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.1
+				
+			}
+		}
+		#不死的信托(梅隆)
+		USA_busidexintuo1 = {
+			picture = GFX_idea_USA_busidexintuo1
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.4
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				political_power_cost = 0.2
+				
+			}
+		}
+		#不死的信托(摩根)
+		USA_busidexintuo2 = {
+			picture = GFX_idea_USA_busidexintuo2
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.45
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				political_power_cost = -0.1
 				
 			}
 		}
@@ -300,10 +378,18 @@ ideas = {
 		}	
 	#暂时的慰籍
 	    USA_zanshideweiji = {
+			picture = GFX_idea_USA_zanshideweiji
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = 0.05
-			stability_factor = 0.05
+			}
+		}		
+	#暂时的慰籍
+	    USA_zanshideweiji1 = {
+			picture = GFX_idea_USA_zanshideweiji1
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.10
 			}
 		}		
 	}

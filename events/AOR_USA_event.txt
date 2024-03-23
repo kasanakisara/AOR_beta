@@ -873,3 +873,25 @@ country_event = {
 		name=USA.10019.a
 	}	
 }
+country_event = {
+	id = USA.10020 #来自哈德逊庄园的信
+	title = USA.10020.t
+	desc = USA.10020.d
+	picture = GFX_USA_event_10020
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10020.a
+	}	
+}
+country_event = {
+	id = USA.10021 #复兴—革命
+	title = USA.10021.t
+	desc = USA.10021.d
+	picture = GFX_USA_event_10021
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10021.a
+	}	
+}

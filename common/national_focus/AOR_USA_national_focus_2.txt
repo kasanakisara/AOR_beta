@@ -108,8 +108,12 @@ focus_tree={
 				idea = USA_zanshideweiji
 				days = 720
             }
+			swap_ideas={
+				remove_idea = USA_AmericanAnxietyA
+				add_idea = USA_zanshideweiji
+			}
 			country_event={
-				id=USA.10018
+				id = USA.10018
 			}
 			
 			add_political_power = -200
@@ -150,7 +154,7 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-			    remove_idea = USA_AmericanAnxietyA
+				remove_idea = USA_zhixuchonggou_knights
 				add_idea = USA_zhixuchonggou_knights2
 			}
 		}
@@ -274,6 +278,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_zanshideweiji
+				add_idea = USA_zanshideweiji1
+			}
 		}
 	}
 	focus={
@@ -291,6 +299,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_busidexintuo
+				add_idea = USA_busidexintuo2
+			}
 		}
 	}
 	focus={
@@ -308,6 +320,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_busidexintuo
+				add_idea = USA_busidexintuo1
+			}
 		}
 	}
 	focus={
@@ -344,6 +360,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 10
+			country_event={
+				id = USA.10020
+			}
 		}
 	}
 	focus={
@@ -360,6 +380,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			country_event={
+				id = USA.10021
+			}
 		}
 	}
 	focus={
@@ -376,6 +399,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 50
 		}
 	}
 	focus={
@@ -393,6 +417,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_sandaliren
+				add_idea = USA_sandaliren1
+			}
 		}
 	}
 	focus={
@@ -410,6 +438,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_sandaliren
+				add_idea = USA_sandaliren2
+			}
 		}
 	}
 	focus={

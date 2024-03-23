@@ -34,7 +34,7 @@ focus_tree={
 			add_political_power=50
 
 		country_event={
-			id=USA.10019
+			id = USA.10019
 			}
 		}
 	}
@@ -50,7 +50,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id=USA.10002
+				id = USA.10002
 			}
 			add_stability=-0.05
 			382={
@@ -139,7 +139,7 @@ focus_tree={
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
-				id=USA.10001
+				id = USA.10001
 			}
 		}
 	}
@@ -164,7 +164,7 @@ focus_tree={
 				days=180
 			}
 			country_event={
-				id=USA.10008
+				id = USA.10008
 			}
 		}
 	}
@@ -211,7 +211,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id=USA.10006
+				id = USA.10006
 			}
 		}
 	}
