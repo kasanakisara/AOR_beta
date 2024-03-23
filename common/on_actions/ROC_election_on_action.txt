@@ -1755,14 +1755,7 @@ on_actions = {
 				set_variable = { SOCP_Representatives_seat_var = 149 }
 				set_variable = { ProP_Representatives_seat_var = 119 }
 				set_variable = { UNP_Representatives_seat_var = 72 }
-				set_variable = { KMT_senate_seat_var_standard = 90 }
-				set_variable = { SOCP_senate_seat_var_standard = 68 }
-				set_variable = { ProP_senate_seat_var_standard = 54 }
-				set_variable = { UNP_senate_seat_var_standard = 33 }
-				set_variable = { KMT_Representatives_seat_var_standard = 196 }
-				set_variable = { SOCP_Representatives_seat_var_standard = 149 }
-				set_variable = { ProP_Representatives_seat_var_standard = 119 }
-				set_variable = { UNP_Representatives_seat_var_standard = 72 }
+
 				CHI_Seat_calculation = yes
 			}
 		}

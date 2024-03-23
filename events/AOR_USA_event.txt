@@ -428,6 +428,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.5000.a
+		ai_chance = {
+			base = 50
+		}
 		if = {
 			limit = {
 				AND = {
@@ -448,6 +451,31 @@ country_event = {
 		}
 
 	}
+	option = {
+		name=USA.5000.b
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+					country_exists = US2
+				}
+				
+			}
+
+			US1 = {
+				load_oob = "US1_Civilwar"
+				load_oob = "US1_Civilwar"
+				
+			}
+			USA = {
+				country_event = {id = USA.5001 days = 90}
+			}
+		}
+
+	}
 }
 country_event = {
 	id = USA.5001
@@ -458,6 +486,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.5001.a
+		ai_chance = {
+			base = 50
+		}
 		if = {
 			limit = {
 				AND = {
@@ -470,6 +501,29 @@ country_event = {
 			US2 = {
 				load_oob = "US2_Civilwar"
 				load_oob = "US2_Civilwar"
+				country_event = {id = USA.5002 days = 90}
+
+			}
+		}
+
+	}
+	option = {
+		name=USA.5001.b
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+				country_exists = US2
+				}
+				
+			}
+
+			US1 = {
+				load_oob = "US1_Civilwar"
+				load_oob = "US1_Civilwar"
 				country_event = {id = USA.5002 days = 90}
 
 			}

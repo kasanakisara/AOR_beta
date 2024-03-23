@@ -275,11 +275,17 @@ CHI_election_decison_cate = {
 				add_to_variable = {
 					KMT_senate_seat_var = -5
 				}
-				CHI_refresh_KMT  = yes
+				hidden_effect = {
+					CHI_refresh_KMT  = yes
+				}
+				
 				add_to_variable = {
 					Prop_senate_seat_var = 5
 				}
-				CHI_refresh_Prop  = yes
+				hidden_effect = {
+					CHI_refresh_Prop  = yes
+				}
+				
 				}
 				1 = { 
 				add_political_power = -100 

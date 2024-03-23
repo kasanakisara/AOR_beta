@@ -10,6 +10,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		set_country_flag = CGT_war_on
 		name = CGT.1.a
 		log = "CGT.1"
 		#爆新闻
@@ -184,6 +185,7 @@ country_event = {
 	picture = GFX_news_CGT_extinct
 	fire_only_once = yes
 	trigger = {
+		has_country_flag = CGT_war_on
 		CGT = {
 			NOT = {
 				controls_province = 9814
