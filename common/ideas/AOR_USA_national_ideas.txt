@@ -13,6 +13,14 @@ ideas = {
 			political_power_cost =0.5
 			}
 		}
+	#分裂的众国（内战）
+		USA_the_disintgrate_nation = {
+			picture = GFX_idea_USA_the_disintgrate_nation
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.5
+			}
+		}
 	#三大利刃，穿胸剧痛
 	    USA_sandaliren = {
 	    	picture = GFX_idea_USA_sandaliren
@@ -51,6 +59,14 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {				
 				stability_factor = -0.1
+				custom_modifier_tooltip = USA_kuangyezhidi_tt
+			}
+		}
+		#无序之地-西部
+		USA_wuxunzhidi = {
+			picture = GFX_idea_USA_wuxunzhidi
+			allowed = { always = yes }
+			modifier = {				
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}

@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/USA_divided_nation.png"
      }
 
+	 spriteType = {
+		name = "GFX_idea_USA_the_disintgrate_nation"
+		texturefile = "gfx/interface/ideas/USA_divided_nation.png"
+     }
 		spriteType = {
 		name = "GFX_idea_USA_sandaliren"
 		texturefile = "gfx/interface/ideas/USA_sandaliren.png"
@@ -17,6 +21,11 @@ spriteTypes = {
 
 		spriteType = {
 		name = "GFX_idea_USA_kuangyezhidi"
+		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
+    }
+
+	    spriteType = {
+		name = "GFX_idea_USA_wuxunzhidi"
 		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
     }
 
