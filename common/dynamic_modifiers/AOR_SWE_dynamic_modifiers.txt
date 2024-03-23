@@ -1,9 +1,0 @@
-AOR_SWE_Norweign_Independence_dynamic_modifier = {
-    enable = { 
-        always = yes
-    }
-
-    stability_weekly_factor = SWE_Norweign_Independence_stability_weekly
-    stability_factor = SWE_Norweign_Independence_stability_factor
-    political_power_cost = SWE_Norweign_Independence_stability_power_cost
-}

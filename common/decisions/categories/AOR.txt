@@ -1,9 +1,0 @@
-
-AOR_political_action = { 
-	icon =generic_research
-	visible = {
-		has_war = no
-	}
-	priority = 10
-}
-
