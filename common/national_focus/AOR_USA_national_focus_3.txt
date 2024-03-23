@@ -1,11 +1,15 @@
 focus_tree={
-	id=USA_3
+	id = USA_3
 	country={
 		factor=0
 		modifier={
 			add=10
 			tag=USA
 		}
+	}
+	continuous_focus_position={
+		x=100
+		y=2000
 	}
 	default=no
 	focus={
@@ -74,7 +78,7 @@ focus_tree={
 	focus={
 		id=USA_Women
 		icon=GFX_goal_USA_Women
-		x=8
+		x=4
 		y=2
 		prerequisite={focus=USA_Goddess_flag}
 		cost=10
@@ -192,7 +196,7 @@ focus_tree={
 		x=0
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
-		mutually_exclusive={focus=USA_Welcome_Mellon's_joining }
+		mutually_exclusive={focus=USA_Welcome_Mellon_joining }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -204,8 +208,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_Welcome_Mellon's_joining
-		icon=GFX_goal_USA_Welcome_Mellon's_joining
+		id=USA_Welcome_Mellon_joining
+		icon=GFX_goal_USA_Welcome_Mellon_joining
 		x=6
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
@@ -289,7 +293,7 @@ focus_tree={
 		icon=GFX_goal_USA_Emergency_production_conversion
 		x=4
 		y=8
-		prerequisite={focus=USA_Welcome_Mellon's_joining}
+		prerequisite={focus=USA_Welcome_Mellon_joining}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -321,7 +325,7 @@ focus_tree={
 		icon=GFX_goal_USA_Launch_a_lobbying_group
 		x=8
 		y=8
-		prerequisite={focus=USA_Welcome_Mellon's_joining}
+		prerequisite={focus=USA_Welcome_Mellon_joining}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -447,8 +451,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=USA_We_need_helmets!
-		icon=GFX_goal_USA_We_need_helmets!
+		id=USA_We_need_helmets
+		icon=GFX_goal_USA_We_need_helmets
 		x=20
 		y=8
 		prerequisite={focus=USA_Hold_France}
@@ -467,7 +471,7 @@ focus_tree={
 		icon=GFX_goal_USA_Overseas_Fleet_Escort
 		x=20
 		y=9
-		prerequisite={focus=USA_We_need_helmets!}
+		prerequisite={focus=USA_We_need_helmets}
 		cost=10
 		ai_will_do={
 			factor=1
