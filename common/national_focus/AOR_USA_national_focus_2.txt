@@ -470,12 +470,11 @@ focus_tree={
 				picture = "gfx/leaders/USA/Harding.png"
 				expire = "1945.1.1"
 				ideology = USA_federalism
-
+				}
 				hidden_effect={
-					load_focus_tree=USA_3
+					load_focus_tree = USA_3
 				}
 			}
 		}
 	}
-    }
 }
