@@ -46,6 +46,7 @@ ideas = {
 				experience_gain_factor = -0.5
 				army_chief_cost_factor = 0.5
 				TRADE_OPINION_FACTOR = 0.1
+				CONSCRIPTION_FACTOR = -0.2
 				custom_modifier_tooltip =  USA_West_Point_Accord_tt
 
 
