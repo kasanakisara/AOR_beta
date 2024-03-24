@@ -169,7 +169,157 @@ characters = {
 
 	##############################  联省派  ############################################################################
 
-	
+	UPC_panzhuqi= { #盘珠祁
+	name = panzhuqi
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/panzhuqi.png
+				small = gfx/interface/ideas/panzhuqi.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_panzhuqi
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = {shiyejioayujia }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	UPC_chenqiyou= { #陈其尤
+	name = chenqiyou
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/chenqiyou.png
+				small = gfx/interface/ideas/chenqiyou.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_chenqiyou
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = {xinzhengchoubeizhe }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	UPC_shitaojun= { #石陶均
+	name = shitaojun
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/shitaojun.png
+				small = gfx/interface/ideas/shitaojun.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_shitaojun
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = {junzhengxunlianguan }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	UPC_liucecheng= { #刘策成
+	name = liucecheng
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/liucecheng.png
+				small = gfx/interface/ideas/liucecheng.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_liucecheng
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = {qingliandejingwu }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	UPC_chenyansheng= { #陈演生
+	name = chenyansheng
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/chenyansheng.png
+				small = gfx/interface/ideas/chenyansheng.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_chenyansheng
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = { caiwuguanlizhe }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+
+	UPC_lichenjing= { #李陈静
+	name = lichenjing
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/lichenjing.png
+				small = gfx/interface/ideas/lichenjing.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_lichenjing
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {				
+			}
+			traits = {jingbanneiwushi }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	UPC_chenlianzhong= { #陈廉仲
+	name = chenlianzhong
+		portraits = {
+			civilian = {
+				large = gfx/leaders/UPC/chenlianzhong.png
+				small = gfx/interface/ideas/chenlianzhong.png
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UPC_chenlianzhong
+			allowed = { original_tag = UPC has_government = lianshengism }
+			visible = {tag = UPC }
+			available= {
+					UPC = {
+						has_country_flag = UPC_shangtuan_join
+					}				
+			}
+			traits = {Famous_comprador }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
 	########################将领#########################################################################
 
 	UPC_lantianwei = {#蓝天蔚
