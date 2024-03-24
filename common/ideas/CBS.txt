@@ -207,7 +207,7 @@ ideas = {
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
-				production_speed_buildings_factor = -0.5
+				production_speed_buildings_factor = -0.25
 			}
 		}
 		CBS_junfazhengquan7 = {
@@ -226,7 +226,7 @@ ideas = {
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
-				production_speed_buildings_factor = -0.5
+				production_speed_buildings_factor = -0.25
 				reliability = 0.1
 			}
 		}
