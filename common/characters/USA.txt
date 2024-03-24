@@ -393,4 +393,27 @@ characters = {
 			logistics_skill = 4
 		}
 	}
+	USA_Thomas_Riley_Marshall = { #托马斯·赖利·马歇尔
+		name = USA_Thomas_Riley_Marshall
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Thomas_Riley_Marshall.dds
+				small = gfx/interface/ideas/Thomas_Riley_Marshall.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_Thomas_Riley_Marshall
+			allowed = { original_tag = USA }
+			visible = {has_country_flag = USA_meeting_ending}
+			available = { 
+				custom_trigger_tooltip = {
+				tooltip = USA.3.tt
+				}
+			}
+			traits = { silent_workhorse }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
 }
