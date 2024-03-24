@@ -207,6 +207,9 @@ recruit_character = USA_ora_e_hunt
 recruit_character = USA_j_w_hurd
 recruit_character = USA_charles_g_morton
 recruit_character = USA_malin_craig
+
+recruit_character = USA_Thomas_Riley_Marshall
+
 set_autonomy = {
 target = HSP
 autonomy_state = autonomy_puppet

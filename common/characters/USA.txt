@@ -394,7 +394,7 @@ characters = {
 		}
 	}
 	USA_Thomas_Riley_Marshall = { #托马斯·赖利·马歇尔
-		name = USA_Thomas_Riley_Marshall
+		name = "托马斯·赖利·马歇尔"
 		portraits = {
 			civilian = {
 				large = gfx/leaders/USA/Thomas_Riley_Marshall.dds
