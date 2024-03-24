@@ -754,10 +754,20 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan7
+				}
 			swap_ideas={
 				remove_idea = CBS_junshenzhengquan7
 				add_idea = CBS_junshenzhengquan8
 			}
+		}
+		    if = {
+			    limit = {
+				has_idea = CBS_junfazhengquan6
+			}
+		}
 			swap_ideas={
 				remove_idea = CBS_junfazhengquan6
 				add_idea = CBS_junfazhengquan7
