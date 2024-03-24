@@ -91,6 +91,21 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
+		CBS_junshenzhengquan8 = {
+			picture = GFX_idea_CBS_junshenzhengquan8
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				reliability = 0.1
+			}
+		}
 
 #军阀政权
 
@@ -155,7 +170,7 @@ ideas = {
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
 				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
-				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 		CBS_junfazhengquan5 = {
@@ -172,7 +187,7 @@ ideas = {
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
 				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
-				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
 			}
 		}
@@ -190,9 +205,29 @@ ideas = {
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
 				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
-				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
 				production_speed_buildings_factor = -0.5
+			}
+		}
+		CBS_junfazhengquan7 = {
+			picture = GFX_idea_CBS_junfazhengquan7
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				can_send_volunteers = yes
+				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = -0.5
+				reliability = 0.1
 			}
 		}
 
@@ -222,6 +257,32 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.01
 			    consumer_goods_factor = -0.1
+			}
+		}
+
+#军队
+
+        CBS_shenglijundui = {
+			picture = GFX_idea_CBS_shenglijundui
+			allowed = { always = yes }
+			modifier = {
+			    command_power_gain = 0.01
+			}
+		}
+		CBS_zhongchengjundui = {
+			picture = GFX_idea_CBS_zhongchengjundui
+			allowed = { always = yes }
+			modifier = {
+			    war_support_weekly = 0.05
+			}
+		}
+		CBS_laozuxinjiang = {
+			picture = CBS_laozuxinjiang
+			allowed = { always = yes }
+			modifier = {
+				land_reinforce_rate = 0.01
+				army_org_factor = 0.05
+				planning_speed = 0.05
 			}
 		}
 	}
