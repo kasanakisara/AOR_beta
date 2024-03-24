@@ -1,6 +1,6 @@
 characters = {
 	USA_john_pershing = {
-		name = "约瑟夫·潘兴"
+		name = "约翰·约瑟夫·潘兴"
 		portraits = {
 			army = {
 				large = gfx/leaders/USA/john_pershing.dds
@@ -499,13 +499,13 @@ characters = {
 			slot = political_advisor
 			idea_token = USA_Newton_Deihl_Baker
 			allowed = { original_tag = USA }
-			traits = { armaments_organizer  }
+			traits = { armaments_organizer }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
 
 	#军事部长
-	USA_Leonard_Wood = { #伦纳德·伍德
+	USA_Leonard_Wood_a = { #伦纳德·伍德
 		name = "伦纳德·伍德"
 		portraits = {
 			civilian = {
@@ -516,14 +516,14 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = army_chief
-			idea_token = USA_Leonard_Wood
+			idea_token = USA_Leonard_Wood_a
 			allowed = { original_tag = USA }
-			traits = { army_chief_drill_2  }
+			traits = { army_chief_drill_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
 
-	USA_F_C_Answorth = { #F·C·安斯沃斯
+	USA_F_C_Answorth_n = { #F·C·安斯沃斯
 		name = "F·C·安斯沃斯"
 		portraits = {
 			civilian = {
@@ -534,9 +534,9 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = navy_chief
-			idea_token = USA_F_C_Answorth
+			idea_token = USA_F_C_Answorth_n
 			allowed = { original_tag = USA }
-			traits = { navy_chief_reform_2  }
+			traits = { navy_chief_reform_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -554,7 +554,62 @@ characters = {
 			slot = air_chief
 			idea_token = USA_William_Mitchell
 			allowed = { original_tag = USA }
-			traits = { air_chief_ground_support_2  }
+			traits = { air_chief_ground_support_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	#军事部长
+	USA_john_pershing_a = { #约翰·约瑟夫·潘兴
+		name = "约翰·约瑟夫·潘兴"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/john_pershing.dds
+				small = gfx/interface/ideas/john_pershing.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_john_pershing_a
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_tasker_bliss_a = { #塔斯克·布利斯
+		name = "塔斯克·布利斯"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/tasker_bliss.dds
+				small = gfx/interface/ideas/tasker_bliss.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_tasker_bliss_a
+			allowed = { original_tag = USA }
+			traits = { army_logistics_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_payton_march_a = { #佩顿·康韦·马奇
+		name = "佩顿·康韦·马奇"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/payton_march.dds
+				small = gfx/interface/ideas/payton_march.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_payton_march_a
+			allowed = { original_tag = USA }
+			traits = { army_regrouping_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
