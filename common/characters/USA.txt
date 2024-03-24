@@ -393,6 +393,9 @@ characters = {
 			logistics_skill = 4
 		}
 	}
+
+
+	#内阁
 	USA_Thomas_Riley_Marshall = { #托马斯·赖利·马歇尔
 		name = "托马斯·赖利·马歇尔"
 		portraits = {
@@ -406,13 +409,152 @@ characters = {
 			slot = political_advisor
 			idea_token = USA_Thomas_Riley_Marshall
 			allowed = { original_tag = USA }
-			visible = {has_country_flag = USA_meeting_ending}
-			available = { 
-				custom_trigger_tooltip = {
-				tooltip = USA.3.tt
-				}
-			}
 			traits = { silent_workhorse }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_Robert_Lansing = { #罗伯特·蓝辛
+		name = "罗伯特·蓝辛"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Robert_Lansing.dds
+				small = gfx/interface/ideas/Robert_Lansing.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_Robert_Lansing
+			allowed = { original_tag = USA }
+			traits = { compassionate_gentleman }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_A_Mitchell_Palmer = { #亚历山大·米切尔·帕尔默
+		name = "亚历山大·米切尔·帕尔默"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/A_Mitchell_Palmer.dds
+				small = gfx/interface/ideas/A_Mitchell_Palmer.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_A_Mitchell_Palmer
+			allowed = { original_tag = USA }
+			traits = { backroom_backstabber }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Gibbs_Mcadoo = { #威廉·吉布斯·麦卡杜
+		name = "威廉·吉布斯·麦卡杜"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Gibbs_Mcadoo.dds
+				small = gfx/interface/ideas/William_Gibbs_Mcadoo.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_William_Gibbs_Mcadoo
+			allowed = { original_tag = USA }
+			traits = { financial_expert }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_Frankin_K_Ryan = { #富兰克林·K·雷恩
+		name = "富兰克林·K·雷恩"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Frankin_K_Ryan.dds
+				small = gfx/interface/ideas/Frankin_K_Ryan.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_Frankin_K_Ryan
+			allowed = { original_tag = USA }
+			traits = { head_of_intelligence }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_Newton_Deihl_Baker = { #牛顿·德利·贝克
+		name = "牛顿·德利·贝克"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Newton_Deihl_Baker.dds
+				small = gfx/interface/ideas/Newton_Deihl_Baker.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = USA_Newton_Deihl_Baker
+			allowed = { original_tag = USA }
+			traits = { armaments_organizer  }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	#军事部长
+	USA_Leonard_Wood = { #伦纳德·伍德
+		name = "伦纳德·伍德"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Leonard_Wood.dds
+				small = gfx/interface/ideas/Leonard_Wood.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = USA_Leonard_Wood
+			allowed = { original_tag = USA }
+			traits = { army_chief_drill_2  }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_F_C_Answorth = { #F·C·安斯沃斯
+		name = "F·C·安斯沃斯"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/F_C_Answorth.dds
+				small = gfx/interface/ideas/F_C_Answorth.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = navy_chief
+			idea_token = USA_F_C_Answorth
+			allowed = { original_tag = USA }
+			traits = { navy_chief_reform_2  }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Mitchell = { #威廉·米切尔
+		name = "威廉·米切尔"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Mitchell.dds
+				small = gfx/interface/ideas/William_Mitchell.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = air_chief
+			idea_token = USA_William_Mitchell
+			allowed = { original_tag = USA }
+			traits = { air_chief_ground_support_2  }
 			ai_will_do = { factor = 1.000 }
 		}
 	}

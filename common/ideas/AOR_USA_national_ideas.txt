@@ -31,6 +31,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.5
+			political_advisor_cost_factor = 0.5
 			}
 		}
 	#三大利刃，穿胸剧痛
