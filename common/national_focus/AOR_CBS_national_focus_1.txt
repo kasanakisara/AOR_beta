@@ -705,6 +705,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =  CBS_shenglijundui
+				add_idea = CBS_shenglijundui1
+			}
 		}
 	}
 	focus={
@@ -766,6 +770,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CBS_zhongchengjundui
+				add_idea = CBS_zhongchengjundui1
+			}
 		}
 	}
 	focus={
