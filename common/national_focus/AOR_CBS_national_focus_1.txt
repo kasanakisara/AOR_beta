@@ -231,15 +231,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junfazhengquan2
-				add_idea = CBS_junfazhengquan3
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan2
+				}
+				swap_ideas={
+					remove_idea = CBS_junfazhengquan2
+					add_idea = CBS_junfazhengquan3
+				}
 			}
-			swap_ideas={
-				remove_idea = CBS_junshenzhengquan2
-				add_idea = CBS_junshenzhengquan3
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan2
+				}
+				swap_ideas={
+					remove_idea = CBS_junshenzhengquan2
+					add_idea = CBS_junshenzhengquan3
+				}
 			}
-
 		}
 	}
 	focus={
