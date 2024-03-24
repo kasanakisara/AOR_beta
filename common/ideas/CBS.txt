@@ -1,0 +1,228 @@
+ideas = {
+    country = {
+
+#军绅政权
+
+		CBS_junshenzhengquan = {
+			picture = GFX_idea_CBS_junshenzhengquan
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+			}
+		}
+
+		CBS_junshenzhengquan1 = {
+			picture = GFX_idea_CBS_junshenzhengquan1
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+			    political_power_gain = 0.15
+			}
+		}
+
+		CBS_junshenzhengquan2 = {
+			picture = GFX_idea_CBS_junshenzhengquan2
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+			}
+		}
+
+		CBS_junshenzhengquan3 = {
+			picture = GFX_idea_CBS_junshenzhengquan3
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		CBS_junshenzhengquan4 = {
+			picture = GFX_idea_CBS_junshenzhengquan4
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+			}
+		}
+		CBS_junshenzhengquan5 = {
+			picture = GFX_idea_CBS_junshenzhengquan5
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		CBS_junshenzhengquan6 = {
+			picture = GFX_idea_CBS_junshenzhengquan6
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CBS_junshenzhengquan7 = {
+			picture = GFX_idea_CBS_junshenzhengquan7
+			allowed = { always = yes }
+			modifier = {
+                stability_factor = 0.1
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+#军阀政权
+
+		CBS_junfazhengquan = {
+			picture = GFX_idea_CBS_junfazhengquan
+			allowed = { always = yes }
+			modifier = {
+                war_support_factor = 0.1
+			}
+		}
+
+		CBS_junfazhengquan1 = {
+			picture = GFX_idea_CBS_junfazhengquan1
+			allowed = { always = yes }
+			modifier = {
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+			}
+		}
+
+		CBS_junfazhengquan2 = {
+			picture = GFX_idea_CBS_junfazhengquan2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+
+		CBS_junfazhengquan3 = {
+			picture = GFX_idea_CBS_junfazhengquan3
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				local_building_slots_factor = 0.1
+				can_send_volunteers = yes
+				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
+			}
+		}
+		CBS_junfazhengquan4 = {
+			picture = GFX_idea_CBS_junfazhengquan4
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				can_send_volunteers = yes
+				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
+				research_speed_factor = 0.05
+			}
+		}
+		CBS_junfazhengquan5 = {
+			picture = GFX_idea_CBS_junfazhengquan5
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				can_send_volunteers = yes
+				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		CBS_junfazhengquan6 = {
+			picture = GFX_idea_CBS_junfazhengquan6
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+	            trade_laws_cost_factor  = -0.1
+	            economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				local_building_slots_factor = 0.1
+				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
+				can_send_volunteers = yes
+				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+#军政统一
+          CBS_junzhengtongyi = {
+	        picture = GFX_idea_CBS_junzhengtongyi
+	        allowed = { always = yes }
+	        modifier = {
+		        MODIFIER_RESISTANCE_DAMAGE_TO_GARRISONS = 0.1
+				MODIFIER_STABILITY_WAR_FACTOR = 0.3
+	        }
+        }
+
+
+#鸦片
+
+        CBS_shouguankongdeyapian = {
+			picture = GFX_idea_CBS_shouguankongdeyapian
+			allowed = { always = yes }
+			modifier = {
+			    stability_weekly = 0.1
+			}
+		}
+		CBS_guanyingyapianzhongzhi = {
+			picture = GFX_idea_CBS_shouguankongdeyapian
+			allowed = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+			    consumer_goods_factor = -0.1
+			}
+		}
+	}
+}

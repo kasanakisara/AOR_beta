@@ -505,6 +505,7 @@ characters = {
 	}
 
 	#军事部长
+	#陆军
 	USA_Leonard_Wood_a = { #伦纳德·伍德
 		name = "伦纳德·伍德"
 		portraits = {
@@ -523,6 +524,7 @@ characters = {
 		}
 	}
 
+	#海军
 	USA_F_C_Answorth_n = { #F·C·安斯沃斯
 		name = "F·C·安斯沃斯"
 		portraits = {
@@ -541,6 +543,7 @@ characters = {
 		}
 	}
 
+	#空军
 	USA_William_Mitchell = { #威廉·米切尔
 		name = "威廉·米切尔"
 		portraits = {
@@ -559,7 +562,8 @@ characters = {
 		}
 	}
 
-	#军事部长
+	#总司令
+	#陆军
 	USA_john_pershing_a = { #约翰·约瑟夫·潘兴
 		name = "约翰·约瑟夫·潘兴"
 		portraits = {
