@@ -146,13 +146,12 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
-                war_support_factor = 0.1
+                war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.1
 	            trade_laws_cost_factor  = -0.1
 	            economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.25
 				local_building_slots_factor = 0.1
-				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 			}
 		}
@@ -161,14 +160,13 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
-                war_support_factor = 0.1
+                war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.1
 	            trade_laws_cost_factor  = -0.1
 	            economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.25
 				local_building_slots_factor = 0.1
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
-				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 			}
@@ -178,14 +176,13 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
-                war_support_factor = 0.1
+                war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.1
 	            trade_laws_cost_factor  = -0.1
 	            economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.25
 				local_building_slots_factor = 0.1
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
-				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
@@ -196,14 +193,13 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
-                war_support_factor = 0.1
+                war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.1
 	            trade_laws_cost_factor  = -0.1
 	            economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.25
 				local_building_slots_factor = 0.1
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
-				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
@@ -215,14 +211,13 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.1
-                war_support_factor = 0.1
+                war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.1
 	            trade_laws_cost_factor  = -0.1
 	            economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.25
 				local_building_slots_factor = 0.1
 				MODIFIERS_ARMY_CORE_DEFENCE_FACTOR = 0.1
-				can_send_volunteers = yes
 				MODIFIER_SEND_VOLUNTEER_FACTOR = 3
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05

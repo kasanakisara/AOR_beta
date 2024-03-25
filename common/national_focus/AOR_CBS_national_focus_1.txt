@@ -96,10 +96,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junshenzhengquan1
-				add_idea = CBS_junshenzhengquan2
-			}
+			add_stability  = 0.05
 		}
 	}
 	focus={
@@ -175,10 +172,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junfazhengquan1
-				add_idea = CBS_junfazhengquan2
-			}
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_political_power = 200
 		}
 	}
 	focus={
@@ -214,8 +210,27 @@ focus_tree={
 		}
 		completion_reward={
 			add_ideas = CBS_junzhengtongyi
+
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan1
+				}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan1
+				add_idea = CBS_junshenzhengquan2
+			}
+		}
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan1
+				}
+			swap_ideas={
+				remove_idea = CBS_junfazhengquan1
+				add_idea = CBS_junfazhengquan2
+			}
 		}
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Build_accumulate_king
@@ -265,12 +280,37 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan3
+				}
 			swap_ideas={
 				remove_idea = CBS_junshenzhengquan3
 				add_idea = CBS_junshenzhengquan4
 			}
 		}
+
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan5
+		    	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan5
+			    add_idea = CBS_junshenzhengquan4
+		    }
+	    }
+
+	    	if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan6
+			}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan6
+			    add_idea = CBS_junshenzhengquan4
+		    }
+	    }
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Increase_education_funding
@@ -285,12 +325,35 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan3
+			}
 			swap_ideas={
-				remove_idea = CBS_junshenzhengquan4
+				remove_idea = CBS_junshenzhengquan3
 				add_idea = CBS_junshenzhengquan5
 			}
 		}
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan4
+	     	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan4
+			    add_idea = CBS_junshenzhengquan5
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan6
+		    }
+		    swap_ideas={
+			        remove_idea = CBS_junshenzhengquan6
+			        add_idea = CBS_junshenzhengquan5
+		    }
+	    }
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Control_opium_cultivation
@@ -322,12 +385,35 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junshenzhengquan5
-				add_idea = CBS_junshenzhengquan6
-			}
-		}
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan4
+	     	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan4
+			    add_idea = CBS_junshenzhengquan6
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan5
+		    }
+		    swap_ideas={
+			        remove_idea = CBS_junshenzhengquan5
+			        add_idea = CBS_junshenzhengquan6
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan7
+		    }
+		    swap_ideas={
+				    remove_idea = CBS_junshenzhengquan7
+				    add_idea = CBS_junshenzhengquan6
+		    }
+	    }
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Supporting_local_enterprises
@@ -342,9 +428,32 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junshenzhengquan6
-				add_idea = CBS_junshenzhengquan7
+			    if = {
+			        limit = {
+				        has_idea = CBS_junshenzhengquan4
+		        }
+		            swap_ideas={
+			            remove_idea = CBS_junshenzhengquan4
+			            add_idea = CBS_junshenzhengquan7
+		        }
+	        }
+			if = {
+				    limit = {
+				        has_idea = CBS_junshenzhengquan5
+		        }
+		        swap_ideas={
+			            remove_idea = CBS_junshenzhengquan5
+			            add_idea = CBS_junshenzhengquan7
+		        }
+	        }
+				if = {
+					limit = {
+						has_idea = CBS_junshenzhengquan6
+				}
+				swap_ideas={
+						remove_idea = CBS_junshenzhengquan6
+						add_idea = CBS_junshenzhengquan7
+				}		
 			}
 		}
 	}
@@ -418,12 +527,27 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+			    limit = {
+					has_idea = CBS_junshenzhengquan3
+				}
 			swap_ideas={
 				remove_idea = CBS_junfazhengquan3
 				add_idea = CBS_junfazhengquan4
 			}
 		}
+
+		    if = {
+			   limit = {
+				has_idea = CBS_junshenzhengquan6
+		    	}
+	    	swap_ideas={
+			    remove_idea = CBS_junfazhengquan6
+			    add_idea = CBS_junfazhengquan4
+		    }
+    	}
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Official_Opium_Industry
@@ -455,12 +579,27 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+				 has_idea = CBS_junshenzhengquan4
+				 }
 			swap_ideas={
 				remove_idea = CBS_junfazhengquan4
 				add_idea = CBS_junfazhengquan5
 			}
 		}
+
+		    if = {
+		     	limit = {
+		    	 has_idea = CBS_junshenzhengquan6
+			    }
+		    swap_ideas={
+			    remove_idea = CBS_junfazhengquan6
+			    add_idea = CBS_junfazhengquan5
+		    }
+    	}
 	}
+ }
 	focus={
     icon=AOR_unkown
 		id=warlords_Official_Office_for_Enterprise_Collection
@@ -475,10 +614,26 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas={
-				remove_idea = CBS_junfazhengquan5
-				add_idea = CBS_junfazhengquan6
+	    	if = {
+	    		limit = {
+			    	has_idea = CBS_junshenzhengquan4
 			}
+	    	swap_ideas={
+			    remove_idea = CBS_junfazhengquan4
+			    add_idea = CBS_junfazhengquan6
+		    }
+	    }
+
+	    	if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan5
+		}
+	    	swap_ideas={
+			    remove_idea = CBS_junfazhengquan5
+			    add_idea = CBS_junfazhengquan6
+		    }
+	    }
+
 			add_offsite_building = { 
 				type = industrial_complex
 				level = 3 
