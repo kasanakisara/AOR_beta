@@ -971,3 +971,47 @@ country_event = {
 		name=USA.10023.a
 	}	
 }
+country_event = {
+	id = USA.10024 #妇女提案(1921)
+	title = USA.10024.t
+	desc = USA.10024.d
+	picture = GFX_USA_event_10024
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10024.a
+	}	
+}
+country_event = {
+	id = USA.10025 #政治活动权利的提案(1921)
+	title = USA.10025.t
+	desc = USA.10025.d
+	picture = GFX_USA_event_10025
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10025.a
+	}	
+}
+country_event = {
+	id = USA.10026 #废除修正案(1921)
+	title = USA.10026.t
+	desc = USA.10026.d
+	picture = GFX_USA_event_10026
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10026.a
+	}	
+}
+country_event = {
+	id = USA.10027 #总统(1921)
+	title = USA.10027.t
+	desc = USA.10027.d
+	picture = GFX_USA_event_10027
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10027.a
+	}	
+}

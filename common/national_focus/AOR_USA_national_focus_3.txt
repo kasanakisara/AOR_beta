@@ -24,6 +24,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			country_event={
+				id = USA.10027
+			}
 		}
 	}
 	focus={
@@ -95,6 +98,9 @@ focus_tree={
 			swap_ideas={
 				remove_idea = USA_shiyouhuanying
 				add_idea = USA_shiyouhuanying1
+			}
+			country_event={
+				id = USA.10024
 			}
 		}
 	}
@@ -203,6 +209,9 @@ focus_tree={
 		}
 		completion_reward={
 			add_war_support = 0.05
+			country_event={
+				id = USA.10025
+			}
 		}
 	}
 	focus={
@@ -237,6 +246,9 @@ focus_tree={
 			    add_idea = USA_zhiliposui
 		    }
 	    }
+		country_event={
+			id = USA.10026
+		}
 	}
 }
 	focus={
