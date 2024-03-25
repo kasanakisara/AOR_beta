@@ -283,14 +283,6 @@ country_event = {
 				load_oob = "CSA_Civilwar"		
 			}
 			USA = {
-				set_politics = {ruling_party = FRE_democratic}
-				create_country_leader = {
-				name = "Warren_Gamaliel_Harding"
-				desc = "Warren_Gamaliel_Harding_desc"
-				picture = "gfx/leaders/USA/Harding.png"
-				expire = "1945.1.1"
-				ideology = USA_federalism
-					}
 				set_popularities = {
 					FRE_democratic = 61
 					CON_democratic = 8
@@ -436,6 +428,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.5000.a
+		ai_chance = {
+			base = 50
+		}
 		if = {
 			limit = {
 				AND = {
@@ -456,6 +451,31 @@ country_event = {
 		}
 
 	}
+	option = {
+		name=USA.5000.b
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+					country_exists = US2
+				}
+				
+			}
+
+			US1 = {
+				load_oob = "US1_Civilwar"
+				load_oob = "US1_Civilwar"
+				
+			}
+			USA = {
+				country_event = {id = USA.5001 days = 90}
+			}
+		}
+
+	}
 }
 country_event = {
 	id = USA.5001
@@ -466,6 +486,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.5001.a
+		ai_chance = {
+			base = 50
+		}
 		if = {
 			limit = {
 				AND = {
@@ -478,6 +501,29 @@ country_event = {
 			US2 = {
 				load_oob = "US2_Civilwar"
 				load_oob = "US2_Civilwar"
+				country_event = {id = USA.5002 days = 90}
+
+			}
+		}
+
+	}
+	option = {
+		name=USA.5001.b
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+				country_exists = US2
+				}
+				
+			}
+
+			US1 = {
+				load_oob = "US1_Civilwar"
+				load_oob = "US1_Civilwar"
 				country_event = {id = USA.5002 days = 90}
 
 			}
@@ -858,4 +904,114 @@ country_event = {
         name = USA.10017.a
 	
 	}
+}
+country_event = {
+	id = USA.10018 #提案(救济金)
+	title = USA.10018.t
+	desc = USA.10018.d
+	picture = GFX_USA_event_10018
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10018.a
+	}	
+}
+country_event = {
+	id = USA.10019 #来源不明的文件
+	title = USA.10019.t
+	desc = USA.10019.d
+	picture = GFX_USA_event_10019
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10019.a
+	}	
+}
+country_event = {
+	id = USA.10020 #来自哈德逊庄园的信
+	title = USA.10020.t
+	desc = USA.10020.d
+	picture = GFX_USA_event_10020
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10020.a
+	}	
+}
+country_event = {
+	id = USA.10021 #复兴—革命
+	title = USA.10021.t
+	desc = USA.10021.d
+	picture = GFX_USA_event_10021
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10021.a
+	}	
+}
+country_event = {
+	id = USA.10022 #起诉(加征关税)
+	title = USA.10022.t
+	desc = USA.10022.d
+	picture = GFX_USA_event_10022
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10022.a
+	}	
+}
+country_event = {
+	id = USA.10023 #众议院选举(1920)
+	title = USA.10023.t
+	desc = USA.10023.d
+	picture = GFX_USA_event_10023
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10023.a
+	}	
+}
+country_event = {
+	id = USA.10024 #妇女提案(1921)
+	title = USA.10024.t
+	desc = USA.10024.d
+	picture = GFX_USA_event_10024
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10024.a
+	}	
+}
+country_event = {
+	id = USA.10025 #政治活动权利的提案(1921)
+	title = USA.10025.t
+	desc = USA.10025.d
+	picture = GFX_USA_event_10025
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10025.a
+	}	
+}
+country_event = {
+	id = USA.10026 #废除修正案(1921)
+	title = USA.10026.t
+	desc = USA.10026.d
+	picture = GFX_USA_event_10026
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10026.a
+	}	
+}
+country_event = {
+	id = USA.10027 #总统(1921)
+	title = USA.10027.t
+	desc = USA.10027.d
+	picture = GFX_USA_event_10027
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10027.a
+	}	
 }

@@ -16,7 +16,7 @@ ideas = {
 			picture = GFX_idea_BRA_bujiedebaizang
 			allowed = { always = yes }
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 				local_resources_factor = 0.1
 			}
 		}

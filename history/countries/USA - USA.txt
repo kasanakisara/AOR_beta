@@ -207,6 +207,22 @@ recruit_character = USA_ora_e_hunt
 recruit_character = USA_j_w_hurd
 recruit_character = USA_charles_g_morton
 recruit_character = USA_malin_craig
+
+recruit_character = USA_Thomas_Riley_Marshall
+recruit_character = USA_Robert_Lansing
+recruit_character = USA_A_Mitchell_Palmer
+recruit_character = USA_William_Gibbs_Mcadoo
+recruit_character = USA_Frankin_K_Ryan
+recruit_character = USA_Newton_Deihl_Baker
+
+recruit_character = USA_Leonard_Wood_a
+recruit_character = USA_F_C_Answorth_n
+recruit_character = USA_William_Mitchell
+
+recruit_character = USA_john_pershing_a
+recruit_character = USA_tasker_bliss_a
+recruit_character = USA_payton_march_a
+
 set_autonomy = {
 target = HSP
 autonomy_state = autonomy_puppet

@@ -32,6 +32,10 @@ focus_tree={
 		cost=2.00
 		completion_reward={
 			add_political_power=50
+
+		country_event={
+			id = USA.10019
+			}
 		}
 	}
 	focus={
@@ -46,7 +50,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id=USA.10002
+				id = USA.10002
 			}
 			add_stability=-0.05
 			382={
@@ -135,7 +139,7 @@ focus_tree={
 		completion_reward={
 			add_ideas=USA_GreatLakesA
 			country_event={
-				id=USA.10001
+				id = USA.10001
 			}
 		}
 	}
@@ -160,7 +164,7 @@ focus_tree={
 				days=180
 			}
 			country_event={
-				id=USA.10008
+				id = USA.10008
 			}
 		}
 	}
@@ -207,7 +211,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id=USA.10006
+				id = USA.10006
 			}
 		}
 	}
@@ -240,7 +244,7 @@ focus_tree={
 				add_idea=USA_AmericanAnxietyA
 			}
 			hidden_effect={
-				load_focus_tree=USA_2
+				load_focus_tree = USA_2
 			}
 		}
 	}

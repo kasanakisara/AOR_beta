@@ -37,6 +37,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 150
 		}
 	}
 	focus={
@@ -54,6 +55,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CHI_quxionggeju
+				add_idea = CBS_junshenzhengquan
+			}
 		}
 	}
 	focus={
@@ -70,6 +75,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan
+				add_idea = CBS_junshenzhengquan1
+			}
 		}
 	}
 	focus={
@@ -87,6 +96,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability  = 0.05
 		}
 	}
 	focus={
@@ -103,6 +113,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -75
+			army_experience = 30
 		}
 	}
 	focus={
@@ -120,6 +132,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CHI_quxionggeju
+				add_idea = CBS_junfazhengquan
+			}
 		}
 	}
 	focus={
@@ -136,6 +152,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CBS_junfazhengquan
+				add_idea = CBS_junfazhengquan1
+			}
 		}
 	}
 	focus={
@@ -152,6 +172,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_political_power = 200
 		}
 	}
 	focus={
@@ -168,6 +191,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = -0.05
+			add_political_power = 100
 		}
 	}
 	focus={
@@ -184,8 +209,28 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = CBS_junzhengtongyi
+
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan1
+				}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan1
+				add_idea = CBS_junshenzhengquan2
+			}
+		}
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan1
+				}
+			swap_ideas={
+				remove_idea = CBS_junfazhengquan1
+				add_idea = CBS_junfazhengquan2
+			}
 		}
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Build_accumulate_king
@@ -201,6 +246,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan2
+				}
+				swap_ideas={
+					remove_idea = CBS_junfazhengquan2
+					add_idea = CBS_junfazhengquan8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan2
+				}
+				swap_ideas={
+					remove_idea = CBS_junshenzhengquan2
+					add_idea = CBS_junshenzhengquan3
+				}
+			}
 		}
 	}
 	focus={
@@ -217,8 +280,67 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan3
+				}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan3
+				add_idea = CBS_junshenzhengquan4
+			}
+		}
+
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan5
+		    	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan5
+			    add_idea = CBS_junshenzhengquan4
+		    }
+	    }
+
+	    	if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan6
+			}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan6
+			    add_idea = CBS_junshenzhengquan4
+		    }
+	    }
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan8
+			}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan8
+			add_idea = CBS_junfazhengquan8
 		}
 	}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan10
+			}
+		swap_ideas={
+			remove_idea =  CBS_junfazhengquan10
+			add_idea = CBS_junfazhengquan8
+		}
+	}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan11
+		}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan11
+			add_idea = CBS_junfazhengquan8
+		}
+	}
+	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Increase_education_funding
@@ -233,8 +355,35 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan3
+			}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan3
+				add_idea = CBS_junshenzhengquan5
+			}
 		}
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan4
+	     	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan4
+			    add_idea = CBS_junshenzhengquan5
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan6
+		    }
+		    swap_ideas={
+			        remove_idea = CBS_junshenzhengquan6
+			        add_idea = CBS_junshenzhengquan5
+		    }
+	    }
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Control_opium_cultivation
@@ -249,6 +398,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas =  CBS_shouguankongdeyapian
 		}
 	}
 	focus={
@@ -265,8 +415,63 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		    if = {
+			    limit = {
+			    	has_idea = CBS_junshenzhengquan4
+	     	}
+		    swap_ideas={
+			    remove_idea = CBS_junshenzhengquan4
+			    add_idea = CBS_junshenzhengquan6
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan5
+		    }
+		    swap_ideas={
+			        remove_idea = CBS_junshenzhengquan5
+			        add_idea = CBS_junshenzhengquan6
+		    }
+	    }
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan7
+		    }
+		    swap_ideas={
+				    remove_idea = CBS_junshenzhengquan7
+				    add_idea = CBS_junshenzhengquan6
+		    }
+	    }
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan9
+		 }
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan9
+			add_idea = CBS_junfazhengquan11
 		}
 	}
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan10
+		}
+		swap_ideas={
+				remove_idea = CBS_junfazhengquan10
+				add_idea = CBS_junfazhengquan11
+		}
+	}
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan12
+		}
+		swap_ideas={
+				remove_idea = CBS_junfazhengquan12
+				add_idea = CBS_junfazhengquan11
+		}
+	}
+	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Supporting_local_enterprises
@@ -281,6 +486,61 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			    if = {
+			        limit = {
+				        has_idea = CBS_junshenzhengquan4
+		        }
+		            swap_ideas={
+			            remove_idea = CBS_junshenzhengquan4
+			            add_idea = CBS_junshenzhengquan7
+		        }
+	        }
+			if = {
+				    limit = {
+				        has_idea = CBS_junshenzhengquan5
+		        }
+		        swap_ideas={
+			            remove_idea = CBS_junshenzhengquan5
+			            add_idea = CBS_junshenzhengquan7
+		        }
+	        }
+				if = {
+					limit = {
+						has_idea = CBS_junshenzhengquan6
+				}
+				swap_ideas={
+						remove_idea = CBS_junshenzhengquan6
+						add_idea = CBS_junshenzhengquan7
+				}		
+			}
+
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan9
+			}
+				swap_ideas={
+					remove_idea = CBS_junfazhengquan9
+					add_idea = CBS_junfazhengquan12
+			}
+		}
+		if = {
+				limit = {
+					has_idea = CBS_junfazhengquan10
+			}
+			swap_ideas={
+					remove_idea = CBS_junfazhengquan10
+					add_idea = CBS_junfazhengquan12
+			}
+		}
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan11
+			}
+			swap_ideas={
+					remove_idea = CBS_junfazhengquan11
+					add_idea = CBS_junfazhengquan12
+			}		
+		}
 		}
 	}
 	focus={
@@ -297,6 +557,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_research_slot = 1
 		}
 	}
 	focus={
@@ -314,8 +575,26 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan2
+			}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan2
+				add_idea = CBS_junshenzhengquan9
+			}
 		}
+		    if = {
+			    limit = {
+				    has_idea = CBS_junfazhengquan2
+		    }
+		    swap_ideas={
+			    remove_idea = CBS_junfazhengquan2
+			    add_idea = CBS_junfazhengquan3
+		    }
+	    }		
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Pre_tax_collection
@@ -330,6 +609,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = -0.1
+			add_political_power = 300
 		}
 	}
 	focus={
@@ -346,8 +627,27 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+			    limit = {
+					has_idea = CBS_junshenzhengquan9
+				}
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan9
+				add_idea = CBS_junshenzhengquan10
+			}
 		}
+
+		    if = {
+	    		limit = {
+			        has_idea = CBS_junfazhengquan6
+			    }
+		    swap_ideas={
+			    remove_idea = CBS_junfazhengquan6
+			    add_idea = CBS_junfazhengquan4
+		    }
+	    }
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Official_Opium_Industry
@@ -362,6 +662,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = CBS_guanyingyapianzhongzhi
 		}
 	}
 	focus={
@@ -378,8 +679,27 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+				 has_idea = CBS_junshenzhengquan10
+				 }
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan10
+				add_idea = CBS_junshenzhengquan11
+			}
 		}
+
+		    if = {
+		     	limit = {
+		    	 has_idea = CBS_junfazhengquan4
+			    }
+		    swap_ideas={
+			    remove_idea = CBS_junfazhengquan4
+			    add_idea = CBS_junfazhengquan5
+		    }
+    	}
 	}
+ }
 	focus={
     icon=AOR_unkown
 		id=warlords_Official_Office_for_Enterprise_Collection
@@ -394,6 +714,30 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+	    	if = {
+	    		limit = {
+			    	has_idea = CBS_junshenzhengquan9
+			}
+	    	swap_ideas={
+			    remove_idea = CBS_junshenzhengquan9
+			    add_idea = CBS_junshenzhengquan12
+		    }
+	    }
+
+	    	if = {
+			    limit = {
+			    	has_idea = CBS_junfazhengquan5
+		}
+	    	swap_ideas={
+			    remove_idea = CBS_junfazhengquan5
+			    add_idea = CBS_junfazhengquan6
+		    }
+	    }
+
+			add_offsite_building = { 
+				type = industrial_complex
+				level = 3 
+				}
 		}
 	}
 	focus={
@@ -410,6 +754,12 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_tech_bonus = {
+				bonus = 1.0 
+				ahead_reduction = 1 
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	focus={
@@ -427,6 +777,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability  = 0.05
 		}
 	}
 	focus={
@@ -527,6 +878,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CHI_Old_army
+				add_idea = CBS_shenglijundui
+			}
 		}
 	}
 	focus={
@@ -543,6 +898,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CHI_Old_army
+				add_idea = CBS_zhongchengjundui
+			}
 		}
 	}
 	focus={
@@ -575,6 +934,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.5 
+				ahead_reduction = 1 
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.5 
+				ahead_reduction = 1 
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				ahead_reduction = 1 
+				uses = 1
+				category = support_tech
+			}
 		}
 	}
 	focus={
@@ -592,6 +969,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =  CBS_shenglijundui
+				add_idea = CBS_shenglijundui1
+			}
 		}
 	}
 	focus={
@@ -608,6 +989,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CHI_soldiers_will_ready
+				add_idea = CBS_laozuxinjiang
+			}
 		}
 	}
 	focus={
@@ -624,8 +1009,45 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan6
+				}
+			swap_ideas={
+				remove_idea = CBS_junfazhengquan6
+				add_idea = CBS_junfazhengquan7
+			}
+		}
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan7
+			    }
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan7
+				add_idea = CBS_junshenzhengquan8
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan12
+			}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan12
+			add_idea = CBS_junfazhengquan13
 		}
 	}
+	    if = {
+		    limit = {
+			    has_idea = CBS_junshenzhengquan12
+		    }
+	    swap_ideas={
+		    remove_idea = CBS_junshenzhengquan12
+		    add_idea = CBS_junshenzhengquan13
+	    }
+    }
+  }
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Everyone_can_be_a_soldier
@@ -641,6 +1063,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = CBS_zhongchengjundui
+				add_idea = CBS_zhongchengjundui1
+			}
 		}
 	}
 	focus={
@@ -656,6 +1082,36 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -687,6 +1143,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_war_support = 0.05
 		}
 	}
 }

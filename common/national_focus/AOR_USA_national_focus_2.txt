@@ -71,6 +71,9 @@ focus_tree={
 		}
 		completion_reward={
 			add_political_power = 20
+                country_event={
+		           id = USA.10023
+			}
 		}
 	}
 	focus={
@@ -105,9 +108,17 @@ focus_tree={
 		}
 		completion_reward={
 			add_timed_idea={
-				idea = zanshideweiji
-				days=720
+				idea = USA_zanshideweiji
+				days = 720
+            }
+			swap_ideas={
+				remove_idea = USA_AmericanAnxietyA
+				add_idea = USA_zanshideweiji
 			}
+			country_event={
+				id = USA.10018
+			}
+			
 			add_political_power = -200
 		}
 	}
@@ -146,7 +157,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-			    remove_idea = USA_AmericanAnxietyA
+				remove_idea = USA_zhixuchonggou_knights
+				add_idea = USA_zhixuchonggou_knights1
 			}
 		}
 	}
@@ -167,9 +179,7 @@ focus_tree={
 			add_manpower = -500
 			swap_ideas={
 			    remove_idea = USA_AmericanAnxietyA
-			}
-			swap_ideas={
-				add_ideas = USA_jinjizhuangtai
+				add_idea = USA_jinjizhuangtai
 			}
 		}
 	}
@@ -271,6 +281,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_timed_idea={
+				idea = USA_zanshideweiji1
+				days = 720
+            }
 		}
 	}
 	focus={
@@ -288,6 +302,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_busidexintuo
+				add_idea = USA_busidexintuo2
+			}
 		}
 	}
 	focus={
@@ -305,6 +323,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_busidexintuo
+				add_idea = USA_busidexintuo1
+			}
 		}
 	}
 	focus={
@@ -321,6 +343,13 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo3
+				add_idea = USA_dazhanzhimo4
+			}
+			country_event={
+				id = USA.10022
+			}
 		}
 	}
 	focus={
@@ -337,6 +366,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 10
+			country_event={
+				id = USA.10020
+			}
 		}
 	}
 	focus={
@@ -353,6 +386,19 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 3
+				category = industry
+				category = synth_resources
+				category = electronics
+			}
+
+			country_event={
+				id = USA.10021
+			}
 		}
 	}
 	focus={
@@ -369,6 +415,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 50
 		}
 	}
 	focus={
@@ -386,6 +433,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_sandaliren
+				add_idea = USA_sandaliren1
+			}
 		}
 	}
 	focus={
@@ -403,6 +454,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_sandaliren
+				add_idea = USA_sandaliren3
+			}
 		}
 	}
 	focus={
@@ -412,7 +467,8 @@ focus_tree={
 		y=8
 		prerequisite={focus=USA_Raise_tariffs focus=USA_Rockefeller}
 		prerequisite={focus=USA_Limit_the_Knights focus=USA_Eradicating_the_Cancer }
-		prerequisite={focus=USA_money focus=USA_container_gold focus=USA_Western_Eagles focus=USA_the_east }
+		prerequisite={focus=USA_money focus=USA_container_gold }
+		prerequisite={focus=USA_Western_Eagles focus=USA_the_east }
 		cost=0
 		ai_will_do={
 			factor=1
@@ -423,6 +479,19 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			USA = {
+				set_politics = {ruling_party = FRE_democratic}
+				create_country_leader = {
+				name = "Warren_Gamaliel_Harding"
+				desc = "Warren_Gamaliel_Harding_desc"
+				picture = "gfx/leaders/USA/Harding.png"
+				expire = "1945.1.1"
+				ideology = USA_federalism
+				}
+				hidden_effect={
+					load_focus_tree = USA_3
+				}
+			}
 		}
 	}
 }

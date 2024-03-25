@@ -6594,8 +6594,9 @@ leader_traits = {
 		experience_loss_factor = -0.1
 		monthly_population = 0.05
 	}
-	Famoustax_experts = {#著名财税家
+	Famoustax_experts = {#现代经济学
 	random = no
+	    production_factory_max_efficiency_factor = 0.05
 		consumer_goods_factor = -0.05
 	}
 	Assassination_King = {#暗杀大王
@@ -6604,15 +6605,15 @@ leader_traits = {
 	}
 	Constitutionalist_elites = {#立宪派精英
 	random = no
-	political_power_factor = 0.1
+    	war_support_factor = 0.05
+	    stability_factor = 0.05
 	}
 	Introspectionist = {#联省主义者
 	random = no
-		SOC_democratic = 0.01
+		political_power_factor = 0.15
 	}
 	Clean_politician = {#清流政治家
 	random = no
-		stability_factor = 0.05
 		opinion_gain_monthly_factor = 0.05
 	}
 	Party_Affairs_Coordinator = {#党务协调者
@@ -6660,11 +6661,40 @@ leader_traits = {
 	}
 	Famous_comprador = {#著名大买办
 	random = no
-		stability_factor = 0.15
+	    political_power_factor = 0.2
 		modifier_production_speed_industrial_complex_factor = -0.1
 		production_speed_infrastructure_factor = -0.1
 		production_speed_fuel_silo_factor = -0.1
 	}
+
+	jingbanneiwushi = {#经办内务事
+	random = no
+	war_support_factor = 0.1
+	}
+	caiwuguanlizhe = {#财务管理者
+	random = no
+	industrial_capacity_factory = 0.05
+	consumer_goods_factor = -0.02
+	}
+	qingliandejingwu = {#清廉的警务
+	random = no
+	stability_factor = 0.1
+	}
+	junzhengxunlianguan = {#军政训练官
+	random = no
+	conversion_cost_civ_to_mil_factor = -0.15
+	production_speed_arms_factory_factor = 0.1
+	}
+	xinzhengchoubeizhe = {#新政筹备者
+	random = no
+	opinion_gain_monthly_factor = 0.05
+	}
+	shiyejioayujia = {#实业教育家
+	random = no
+	production_speed_infrastructure_factor = 0.05
+	research_speed_factor = 0.02
+	}
+
 	Chief_Staff_Business_Group = {#商团参事长
 	random = no
 		TRADE_OPINION_FACTOR = 0.15
