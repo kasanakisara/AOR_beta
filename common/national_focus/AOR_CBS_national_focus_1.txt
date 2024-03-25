@@ -639,7 +639,7 @@ focus_tree={
 
 		    if = {
 			   limit = {
-				has_idea = BS_junfazhengquan6
+				has_idea = CBS_junfazhengquan6
 		    	}
 	    	swap_ideas={
 			    remove_idea = CBS_junfazhengquan6
@@ -691,10 +691,10 @@ focus_tree={
 
 		    if = {
 		     	limit = {
-		    	 has_idea = CBS_junfazhengquan6
+		    	 has_idea = CBS_junfazhengquan4
 			    }
 		    swap_ideas={
-			    remove_idea = CBS_junfazhengquan6
+			    remove_idea = CBS_junfazhengquan4
 			    add_idea = CBS_junfazhengquan5
 		    }
     	}
