@@ -58,7 +58,7 @@ create_country_leader = {
 
 
 set_politics = {
-	ruling_party = SOC_democratic
+	ruling_party = SOC_democratic_right
 	last_election = "1918.11.9"
 	election_frequency = 48
 	elections_allowed = yes

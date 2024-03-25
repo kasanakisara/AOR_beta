@@ -6,8 +6,36 @@ on_actions = {
 					has_country_flag = SWE_Norweign_Independence_flag
 				}
 
-				#更新gui
-				SWE_update_ui_effect = yes
+				#判定是否触发挪威独立事件
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 }
+					}
+
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+
+					if = {
+						limit = {
+							has_country_flag = SWE_GUI_1
+						}
+						remove_dynamic_modifier = SWE_Norweign_Indepedence_modifier
+						country_event = { id = SWE.11 }
+					}
+				}
+
+				#上下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
 
 				#增加数值
 				set_variable = { SWE_Norweign_Independence_add = 0 }
@@ -93,41 +121,24 @@ on_actions = {
 				#马克思主义支持率对独立度修正
 				SWE_Marxism_effect_Norway_Independence_check = yes
 				
+				#增长下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_add = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_add = 1.5 }
+				}
+
 				#数值更新
 				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
 
-				#上下限
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 0 }
-				}
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 100 }
-				}
+				#更新gui
+				SWE_update_ui_effect = yes
+
 
 				#修正更新
 				SWE_Norweign_Independence_value_check = yes
 
-				#判定是否触发挪威独立事件
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 }
-					}
-
-					if = {
-						limit = {
-							has_country_flag = SWE_GUI_1
-						}
-						set_variable = { SWE_Norweign_Independence_value = 0 }
-						SWE_Norweign_Independence_value_check = yes
-						country_event = { id = SWE.11 }
-					}
-				}
 			}
 
 			

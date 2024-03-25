@@ -1,5 +1,7 @@
 add_namespace = SWE
 
+add_namespace = NOR_Axis
+
 country_event = {
     id = SWE.1 #哈康之死
     title = SWE.1.t
@@ -199,6 +201,7 @@ country_event = {
                     traits = {
                     }
                 }
+                load_focus_tree = AOR_SWE_nothing_focus_tree_1
     
                 add_ideas = SWE_Hurten_of_Norway
             }
@@ -324,5 +327,44 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.18.a
+    }
+}
+
+country_event = {
+    id = NOR_Axis.1 #挪威人上街游行
+    title = NOR_Axis.1.t
+    desc = NOR_Axis.1.d
+    is_triggered_only = yes
+    option = {
+        name = NOR_Axis.1.a
+        add_to_variable = { SWE_Norweign_Independence_value = 5 }
+        custom_effect_tooltip = SWE_Norweign_Independence_add_localisation
+
+    }
+}
+
+country_event = {
+    id = NOR_Axis.2 #挪威人大规模示威
+    title = NOR_Axis.2.t
+    desc = NOR_Axis.2.d
+    is_triggered_only = yes
+    option = {
+        name = NOR_Axis.2.a
+        add_to_variable = { SWE_Norweign_Independence_value = 8.5 }
+        custom_effect_tooltip = SWE_Norweign_Independence_add_localisation
+
+    }
+}
+
+country_event = {
+    id = NOR_Axis.3 #对哈康的刺杀
+    title = NOR_Axis.3.t
+    desc = NOR_Axis.3.d
+    is_triggered_only = yes
+    option = {
+        name = NOR_Axis.3.a
+        add_to_variable = { SWE_Norweign_Independence_value = 15 }
+        custom_effect_tooltip = SWE_Norweign_Independence_add_localisation
+
     }
 }

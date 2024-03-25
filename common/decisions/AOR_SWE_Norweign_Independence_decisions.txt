@@ -26,6 +26,63 @@ SWE_Norweign_Independence_decision_categories = {
         }
     }
 
+    #每14日弹出事件
+    SWE_Norway_Action = {     
+        priority = 100
+
+		activation = {
+			hidden_trigger = {
+                OR = {
+                    has_country_flag = SWE_GUI_1
+                    has_country_flag = SWE_GUI_2
+                    has_country_flag = SWE_GUI_3
+                }
+            }
+            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
+		}
+		available = {
+            hidden_trigger = {always = no}
+		}
+
+        visible = {
+            hidden_trigger = {
+                OR = {
+                    has_country_flag = SWE_GUI_1
+                    has_country_flag = SWE_GUI_2
+                    has_country_flag = SWE_GUI_3
+                }
+            }
+            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_country_flag = SWE_Norweign_Independence_flag
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 14
+		
+		timeout_effect = {                    
+			random_list = {
+                70 = {
+                    country_event = { id = NOR_Axis.1 }
+                }
+                20 = {
+                    country_event = { id = NOR_Axis.2 }
+                }
+                10 = {
+                    country_event = { id = NOR_Axis.3 }
+                }
+            }          
+		}
+	}
+
     #####卡尔斯塔德计划决议#####
     SWE_Funding_Regional_Industries = {
         avaliable = { has_country_flag = SWE_K_Plan_flag }
