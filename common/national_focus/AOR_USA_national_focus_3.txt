@@ -17,7 +17,6 @@ focus_tree={
 		icon=GFX_goal_USA_Take_office_immediately
 		x=10
 		y=0
-		cost=10
 		ai_will_do={
 			factor=1
 		}
@@ -33,7 +32,7 @@ focus_tree={
 		x=4
 		y=1
 		prerequisite={focus=USA_Take_office_immediately}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -41,6 +40,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 300
 		}
 	}
 	focus={
@@ -49,7 +49,7 @@ focus_tree={
 		x=10
 		y=1
 		prerequisite={focus=USA_Take_office_immediately}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -57,6 +57,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 100
+			remove_ideas = USA_jinjizhuangtai
 		}
 	}
 	focus={
@@ -65,7 +67,7 @@ focus_tree={
 		x=16
 		y=1
 		prerequisite={focus=USA_Take_office_immediately}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -73,6 +75,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -50
 		}
 	}
 	focus={
@@ -81,7 +84,7 @@ focus_tree={
 		x=4
 		y=2
 		prerequisite={focus=USA_Goddess_flag}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -89,6 +92,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_shiyouhuanying
+				add_idea = USA_shiyouhuanying1
+			}
 		}
 	}
 	focus={
@@ -97,7 +104,7 @@ focus_tree={
 		x=8
 		y=2
 		prerequisite={focus=USA_Continuing_Beauty}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -105,6 +112,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -100
 		}
 	}
 	focus={
@@ -113,7 +121,7 @@ focus_tree={
 		x=12
 		y=2
 		prerequisite={focus=USA_Continuing_Beauty}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -121,15 +129,33 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_sandaliren1
+			}
+			swap_ideas={
+				remove_idea = USA_sandaliren1
+				add_idea = USA_sandaliren2
+			}
 		}
+		    if = {
+			    limit = {
+				    has_idea = USA_sandaliren3
+		    }
+		    swap_ideas={
+			    remove_idea = USA_sandaliren3
+			    add_idea = USA_sandaliren4
+		    }
+	    }
 	}
+}
 	focus={
 		id=USA_Panama_Tour
 		icon=GFX_goal_USA_Panama_Tour
 		x=16
 		y=2
 		prerequisite={focus=USA_Friends_of_the_Republic}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -137,6 +163,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =  USA_dazhanzhimo4
+				add_idea =  USA_dazhanzhimo5
+			}
 		}
 	}
 	focus={
@@ -148,7 +178,7 @@ focus_tree={
 		prerequisite={focus=USA_Dealing_with_anger}
 		prerequisite={focus=USA_Military_Reform}
 		prerequisite={focus=USA_Panama_Tour}
-		cost=10
+		cost=1
 		ai_will_do={
 			factor=1
 		}
@@ -164,7 +194,7 @@ focus_tree={
 		x=10
 		y=5
 		prerequisite={focus=USA_Perfect_ending_year_1}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -172,6 +202,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_war_support = 0.05
 		}
 	}
 	focus={
@@ -180,7 +211,7 @@ focus_tree={
 		x=10
 		y=6
 		prerequisite={focus=USA_Shocking_waves_rise_with_the_wind}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -188,8 +219,26 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_sandaliren2
+			}
+			swap_ideas={
+				remove_idea = USA_sandaliren2
+				add_idea = USA_zhiliposui
+			}
 		}
+		    if = {
+			    limit = {
+				    has_idea = USA_sandaliren4
+		    }
+		    swap_ideas={
+			    remove_idea = USA_sandaliren4
+			    add_idea = USA_zhiliposui
+		    }
+	    }
 	}
+}
 	focus={
 		id=USA_neutrality_of_the_enterprise
 		icon=GFX_goal_USA_neutrality_of_the_enterprise
@@ -197,7 +246,7 @@ focus_tree={
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
 		mutually_exclusive={focus=USA_Welcome_Mellon_joining }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -214,7 +263,7 @@ focus_tree={
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
 		mutually_exclusive={focus=USA_neutrality_of_the_enterprise }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -230,7 +279,7 @@ focus_tree={
 		x=14
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -246,7 +295,7 @@ focus_tree={
 		x=20
 		y=7
 		prerequisite={focus=USA_pause_button_for_everything}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -262,7 +311,7 @@ focus_tree={
 		x=0
 		y=8
 		prerequisite={focus=USA_neutrality_of_the_enterprise}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -278,7 +327,7 @@ focus_tree={
 		x=0
 		y=9
 		prerequisite={focus=USA_supply_of_consumer_goods}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -294,7 +343,7 @@ focus_tree={
 		x=4
 		y=8
 		prerequisite={focus=USA_Welcome_Mellon_joining}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -310,7 +359,7 @@ focus_tree={
 		x=4
 		y=9
 		prerequisite={focus=USA_Emergency_production_conversion}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -326,7 +375,7 @@ focus_tree={
 		x=8
 		y=8
 		prerequisite={focus=USA_Welcome_Mellon_joining}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -342,7 +391,7 @@ focus_tree={
 		x=8
 		y=9
 		prerequisite={focus=USA_Launch_a_lobbying_group}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -359,7 +408,7 @@ focus_tree={
 		y=8
 		prerequisite={focus=USA_Let_s_face_the_storm}
 		mutually_exclusive={focus=USA_Adhere_to_the_unity }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -375,7 +424,7 @@ focus_tree={
 		x=12
 		y=9
 		prerequisite={focus=USA_walks_to_the_stage}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -391,7 +440,7 @@ focus_tree={
 		x=12
 		y=10
 		prerequisite={focus=USA_Emergency_conscription_law}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -408,7 +457,7 @@ focus_tree={
 		y=8
 		prerequisite={focus=USA_Let_s_face_the_storm}
 		mutually_exclusive={focus=USA_walks_to_the_stage }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -424,7 +473,7 @@ focus_tree={
 		x=16
 		y=9
 		prerequisite={focus=USA_Adhere_to_the_unity}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -440,7 +489,7 @@ focus_tree={
 		x=16
 		y=10
 		prerequisite={focus=USA_Free_play_arrest_traitors}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -456,7 +505,7 @@ focus_tree={
 		x=20
 		y=8
 		prerequisite={focus=USA_Hold_France}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -472,7 +521,7 @@ focus_tree={
 		x=20
 		y=9
 		prerequisite={focus=USA_We_need_helmets}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -489,7 +538,7 @@ focus_tree={
 		y=11
 		prerequisite={focus=USA_Overseas_Fleet_Escort}
 		prerequisite={focus=USA_Ensure_sales_channels focus=USA_Add_military_industry focus=USA_Mr_Knight focus=USA_War_Production_Management_Law focus=USA_Encourage_joining_the_militia }
-		cost=10
+		cost=2
 		ai_will_do={
 			factor=1
 		}
