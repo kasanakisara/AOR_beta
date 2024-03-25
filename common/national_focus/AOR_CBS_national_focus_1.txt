@@ -638,14 +638,14 @@ focus_tree={
 		}
 
 		    if = {
-			   limit = {
-				has_idea = CBS_junfazhengquan6
-		    	}
-	    	swap_ideas={
+	    		limit = {
+			        has_idea = CBS_junfazhengquan6
+			    }
+		    swap_ideas={
 			    remove_idea = CBS_junfazhengquan6
 			    add_idea = CBS_junfazhengquan4
 		    }
-    	}
+	    }
 	}
 }
 	focus={
