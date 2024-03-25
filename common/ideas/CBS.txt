@@ -396,7 +396,8 @@ ideas = {
 				research_speed_factor = 0.1
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.1
-				reliability = 0.1
+				reliability = -0.15
+				army_infantry_attack_factor = 0.1
 			}
 		}
 
@@ -460,7 +461,7 @@ ideas = {
 			picture = GFX_idea_CBS_zhongchengjundui1
 			allowed = { always = yes }
 			modifier = {
-			    war_support_weekly = 0.05
+			    war_support_weekly = 0.001
 				mobilization_speed = 0.1
 				conscription_factor = 0.2
 				training_time_army_factor = -0.1

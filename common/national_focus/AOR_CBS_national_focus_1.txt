@@ -1011,24 +1011,43 @@ focus_tree={
 		completion_reward={
 			if = {
 				limit = {
-					has_idea = CBS_junfazhengquan7
+					has_idea = CBS_junfazhengquan6
 				}
-			swap_ideas={
-				remove_idea = CBS_junshenzhengquan7
-				add_idea = CBS_junshenzhengquan8
-			}
-		}
-		    if = {
-			    limit = {
-				has_idea = CBS_junfazhengquan6
-			}
-		}
 			swap_ideas={
 				remove_idea = CBS_junfazhengquan6
 				add_idea = CBS_junfazhengquan7
 			}
 		}
+		    if = {
+			    limit = {
+				    has_idea = CBS_junshenzhengquan7
+			    }
+			swap_ideas={
+				remove_idea = CBS_junshenzhengquan7
+				add_idea = CBS_junshenzhengquan8
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan12
+			}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan12
+			add_idea = CBS_junfazhengquan13
+		}
 	}
+	    if = {
+		    limit = {
+			    has_idea = CBS_junshenzhengquan12
+		    }
+	    swap_ideas={
+		    remove_idea = CBS_junshenzhengquan12
+		    add_idea = CBS_junshenzhengquan13
+	    }
+    }
+  }
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Everyone_can_be_a_soldier
