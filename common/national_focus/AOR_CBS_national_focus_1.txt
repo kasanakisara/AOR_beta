@@ -252,7 +252,7 @@ focus_tree={
 				}
 				swap_ideas={
 					remove_idea = CBS_junfazhengquan2
-					add_idea = CBS_junfazhengquan3
+					add_idea = CBS_junfazhengquan8
 				}
 			}
 			if = {
@@ -309,6 +309,36 @@ focus_tree={
 			    add_idea = CBS_junshenzhengquan4
 		    }
 	    }
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan8
+			}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan8
+			add_idea = CBS_junfazhengquan8
+		}
+	}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan10
+			}
+		swap_ideas={
+			remove_idea =  CBS_junfazhengquan10
+			add_idea = CBS_junfazhengquan8
+		}
+	}
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan11
+		}
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan11
+			add_idea = CBS_junfazhengquan8
+		}
+	}
 	}
 }
 	focus={
@@ -412,6 +442,34 @@ focus_tree={
 				    add_idea = CBS_junshenzhengquan6
 		    }
 	    }
+
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan9
+		 }
+		swap_ideas={
+			remove_idea = CBS_junfazhengquan9
+			add_idea = CBS_junfazhengquan11
+		}
+	}
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan10
+		}
+		swap_ideas={
+				remove_idea = CBS_junfazhengquan10
+				add_idea = CBS_junfazhengquan11
+		}
+	}
+		if = {
+			limit = {
+				has_idea = CBS_junfazhengquan12
+		}
+		swap_ideas={
+				remove_idea = CBS_junfazhengquan12
+				add_idea = CBS_junfazhengquan11
+		}
+	}
 	}
 }
 	focus={
@@ -455,6 +513,34 @@ focus_tree={
 						add_idea = CBS_junshenzhengquan7
 				}		
 			}
+
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan9
+			}
+				swap_ideas={
+					remove_idea = CBS_junfazhengquan9
+					add_idea = CBS_junfazhengquan12
+			}
+		}
+		if = {
+				limit = {
+					has_idea = CBS_junfazhengquan10
+			}
+			swap_ideas={
+					remove_idea = CBS_junfazhengquan10
+					add_idea = CBS_junfazhengquan12
+			}
+		}
+			if = {
+				limit = {
+					has_idea = CBS_junfazhengquan11
+			}
+			swap_ideas={
+					remove_idea = CBS_junfazhengquan11
+					add_idea = CBS_junfazhengquan12
+			}		
+		}
 		}
 	}
 	focus={
@@ -489,12 +575,26 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = CBS_junshenzhengquan2
+			}
 			swap_ideas={
-				remove_idea = CBS_junfazhengquan2
-				add_idea = CBS_junfazhengquan3
+				remove_idea = CBS_junshenzhengquan2
+				add_idea = CBS_junshenzhengquan9
 			}
 		}
+		    if = {
+			    limit = {
+				    has_idea = CBS_junfazhengquan2
+		    }
+		    swap_ideas={
+			    remove_idea = CBS_junfazhengquan2
+			    add_idea = CBS_junfazhengquan3
+		    }
+	    }		
 	}
+}
 	focus={
     icon=AOR_unkown
 		id=warlords_Pre_tax_collection
@@ -529,17 +629,17 @@ focus_tree={
 		completion_reward={
 			if = {
 			    limit = {
-					has_idea = CBS_junshenzhengquan3
+					has_idea = CBS_junshenzhengquan9
 				}
 			swap_ideas={
-				remove_idea = CBS_junfazhengquan3
-				add_idea = CBS_junfazhengquan4
+				remove_idea = CBS_junshenzhengquan9
+				add_idea = CBS_junshenzhengquan10
 			}
 		}
 
 		    if = {
 			   limit = {
-				has_idea = CBS_junshenzhengquan6
+				has_idea = BS_junfazhengquan6
 		    	}
 	    	swap_ideas={
 			    remove_idea = CBS_junfazhengquan6
@@ -581,17 +681,17 @@ focus_tree={
 		completion_reward={
 			if = {
 				limit = {
-				 has_idea = CBS_junshenzhengquan4
+				 has_idea = CBS_junshenzhengquan10
 				 }
 			swap_ideas={
-				remove_idea = CBS_junfazhengquan4
-				add_idea = CBS_junfazhengquan5
+				remove_idea = CBS_junshenzhengquan10
+				add_idea = CBS_junshenzhengquan11
 			}
 		}
 
 		    if = {
 		     	limit = {
-		    	 has_idea = CBS_junshenzhengquan6
+		    	 has_idea = CBS_junfazhengquan6
 			    }
 		    swap_ideas={
 			    remove_idea = CBS_junfazhengquan6
@@ -616,17 +716,17 @@ focus_tree={
 		completion_reward={
 	    	if = {
 	    		limit = {
-			    	has_idea = CBS_junshenzhengquan4
+			    	has_idea = CBS_junshenzhengquan9
 			}
 	    	swap_ideas={
-			    remove_idea = CBS_junfazhengquan4
-			    add_idea = CBS_junfazhengquan6
+			    remove_idea = CBS_junshenzhengquan9
+			    add_idea = CBS_junshenzhengquan12
 		    }
 	    }
 
 	    	if = {
 			    limit = {
-			    	has_idea = CBS_junshenzhengquan5
+			    	has_idea = CBS_junfazhengquan5
 		}
 	    	swap_ideas={
 			    remove_idea = CBS_junfazhengquan5
@@ -677,7 +777,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_war_support = 0,05
+			add_stability  = 0.05
 		}
 	}
 	focus={
@@ -1024,7 +1124,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_war_support = 0,05
+			add_war_support = 0.05
 		}
 	}
 }
