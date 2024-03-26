@@ -1053,14 +1053,14 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10031 #工作（故事）
+	id = USA.10031 #工作-加入骑士团（故事）
     title = USA.10031.t
     desc = USA.10031.d
 	picture = GFX_USA_event_10031
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1919.12.10
+	       date = 1919.11.20
 	 }
     option = { 
         name = USA.10031.a
