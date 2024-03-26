@@ -798,7 +798,6 @@ country_event = {
     title = USA.10011.t
     desc = USA.10011.d
 	picture = GFX_USA_event_10011
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -814,7 +813,6 @@ country_event = {
     title = USA.10012.t
     desc = USA.10012.d
 	picture = GFX_USA_event_10012
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -830,7 +828,6 @@ country_event = {
     title = USA.10013.t
     desc = USA.10013.d
 	picture = GFX_USA_event_10013
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -846,7 +843,6 @@ country_event = {
     title = USA.10014.t
     desc = USA.10014.d
 	picture = GFX_USA_event_10014
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -862,7 +858,6 @@ country_event = {
     title = USA.10015.t
     desc = USA.10015.d
 	picture = GFX_USA_event_10015
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -878,7 +873,6 @@ country_event = {
     title = USA.10016.t
     desc = USA.10016.d
 	picture = GFX_USA_event_10016
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -894,7 +888,6 @@ country_event = {
     title = USA.10017.t
     desc = USA.10017.d
 	picture = GFX_USA_event_10017
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -1024,5 +1017,37 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10028.a
+	}	
+}
+country_event = {
+	id = USA.10029 #沃伦·盖玛利尔·哈定当选美国总统
+	title = USA.10029.t
+	desc = USA.10029.d
+	picture = GFX_USA_event_10029
+	fire_only_once = yes
+
+		trigger = {
+			tag = USA
+	    	date = 1920.9.10
+	} 
+
+	option = {
+		name=USA.10029.a
+	}	
+}
+country_event = {
+	id = USA.10030 #总统选举(1920)
+	title = USA.10030.t
+	desc = USA.10030.d
+	picture = GFX_USA_event_10030
+	fire_only_once = yes
+
+		trigger = {
+			tag = USA
+	    	date = 1920.9.1
+	} 
+
+	option = {
+		name=USA.10030.a
 	}	
 }
