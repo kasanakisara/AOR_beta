@@ -743,7 +743,7 @@ ideas = {
 			production_factory_max_efficiency_factor = -0.10
 			}
 		}	
-	#暂时的慰籍
+	#暂时的慰籍-救济
 	    USA_zanshideweiji = {
 			picture = GFX_idea_USA_zanshideweiji
 			allowed = { always = yes }
@@ -751,13 +751,21 @@ ideas = {
 			stability_factor = 0.05
 			}
 		}		
-	#暂时的慰籍
+	#暂时的慰籍-贷款
 	    USA_zanshideweiji1 = {
 			picture = GFX_idea_USA_zanshideweiji1
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = 0.05
 			}
-		}		
+		}
+    #暂时的慰籍-战事宣传
+		USA_zanshidexuanchuan = {
+			picture = GFX_idea_USA_zanshidexuanchuan
+			allowed = { always = yes }
+			modifier = {
+			add_war_support = 0.05
+			}
+		}					
 	}
 }
