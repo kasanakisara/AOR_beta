@@ -26,7 +26,7 @@ ideas = {
 			}
 		}
 	#分裂的众国（内战）（3）
-	USA_the_divided_nation3 = {
+	    USA_the_divided_nation3 = {
 			picture = GFX_idea_USA_the_divided_nation3
 			allowed = { always = yes }
 			modifier = {
@@ -34,6 +34,87 @@ ideas = {
 			political_advisor_cost_factor = 0.5
 			}
 		}
+		#纷争的众国（内战）（4）
+	    USA_the_divided_nation4 = {
+		    picture = GFX_idea_USA_the_divided_nation4
+		    allowed = { always = yes }
+		    modifier = {
+		    stability_factor = -0.4
+		    political_advisor_cost_factor = 0.5
+			war_support_weekly = 0.005
+		    }
+	    }
+		#纷争的众国（集权）（5）
+	    USA_the_divided_nation5 = {
+		    picture = GFX_idea_USA_the_divided_nation5
+		    allowed = { always = yes }
+		     modifier = {
+		    stability_factor = -0.35
+		    political_advisor_cost_factor = 0.5
+		    war_support_weekly = 0.005
+			command_power_gain_mult = 0.1
+		    }
+	    }
+		#纷争的众国（集权）（6）
+	    USA_the_divided_nation6 = {
+		    picture = GFX_idea_USA_the_divided_nation6
+		    allowed = { always = yes }
+		     modifier = {
+		    stability_factor = -0.35
+		    political_advisor_cost_factor = 0.5
+		    war_support_weekly = 0.005
+			command_power_gain_mult = 0.1
+			mobilization_speed = 0.15
+		    }
+	    }	
+		#纷争的众国（集权）（7）
+	    USA_the_divided_nation7 = {
+		    picture = GFX_idea_USA_the_divided_nation7
+		    allowed = { always = yes }
+		     modifier = {
+		    stability_factor = -0.35
+		    political_advisor_cost_factor = 0.5
+		    war_support_weekly = 0.005
+			command_power_gain_mult = 0.1
+			mobilization_speed = 0.15
+			line_change_production_efficiency_factor = 0.1
+		    }
+	    }		
+	    #纷争的众国（联合）（8）
+	    USA_the_divided_nation8 = {
+		    picture = GFX_idea_USA_the_divided_nation8
+		    allowed = { always = yes }
+		    modifier = {
+		    stability_factor = -0.4
+		    political_advisor_cost_factor = 0.5
+			war_support_factor = 0.1
+		    war_support_weekly = 0.005
+		    }
+	    }
+		  #纷争的众国（联合）（9）
+		USA_the_divided_nation9 = {
+		    picture = GFX_idea_USA_the_divided_nation9
+		    allowed = { always = yes }
+		    modifier = {
+		    stability_factor = -0.45
+		    political_advisor_cost_factor = 0.5
+			war_support_factor = 0.20
+		    war_support_weekly = 0.005
+		    }
+	    }
+		 #纷争的众国（联合）（10）
+		USA_the_divided_nation10 = {
+		    picture = GFX_idea_USA_the_divided_nation10
+		    allowed = { always = yes }
+		    modifier = {
+		    stability_factor = -0.45
+		    political_advisor_cost_factor = 0.5
+			war_support_factor = 0.20
+		    war_support_weekly = 0.005
+			supply_consumption_factor = -0.1
+			conscription_factor = 0.1
+		    }
+	    }
 	#三大利刃，穿胸剧痛
 	    USA_sandaliren = {
 	    	picture = GFX_idea_USA_sandaliren
@@ -162,21 +243,87 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.1
 	    	}
 	    }
-			#石油幻影，钢铁梦魇(2)（女性地位提高）
-			USA_shiyouhuanying1 = {
-				picture = GFX_idea_USA_shiyouhuanying1
-				allowed = { always = yes }
-				modifier = {
-					stability_factor = -0.15
-					CONSCRIPTION_FACTOR = -0.1
-					RESISTANCE_TARGET_ = 0.2
-					MIN_EXPORT_FACTOR = 0.2
-					consumer_goods_factor = -0.5
-					production_speed_infrastructure_factor = 0.1
-					production_speed_synthetic_refinery_factor = 0.1
-					production_speed_fuel_silo_factor = 0.1
-				}
+	#石油幻影，钢铁梦魇(1)（女性地位提高）
+		USA_shiyouhuanying1 = {
+			picture = GFX_idea_USA_shiyouhuanying1
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.15
+				CONSCRIPTION_FACTOR = -0.1
+				RESISTANCE_TARGET_ = 0.2
+				MIN_EXPORT_FACTOR = 0.2
+				consumer_goods_factor = -0.5
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
 			}
+		}
+	#石油幻影，钢铁梦魇(2)（企业中立）
+		USA_shiyouhuanying2 = {
+			picture = GFX_idea_USA_shiyouhuanying2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.15
+				CONSCRIPTION_FACTOR = -0.1
+				RESISTANCE_TARGET_ = 0.2
+				MIN_EXPORT_FACTOR = 0.2
+				consumer_goods_factor = -0.45
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+	#石油幻影，钢铁梦魇(3)（企业中立）
+			USA_shiyouhuanying3 = {
+			picture = GFX_idea_USA_shiyouhuanying2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.15
+				CONSCRIPTION_FACTOR = -0.1
+				RESISTANCE_TARGET_ = 0.2
+				MIN_EXPORT_FACTOR = 0.2
+				consumer_goods_factor = -0.45
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				political_power_cost = -0.1
+			}
+	    }
+    #石油幻影，钢铁梦魇(4)（梅隆的计划）
+		USA_shiyouhuanying4 = {
+			picture = GFX_idea_USA_shiyouhuanying4
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.15
+				CONSCRIPTION_FACTOR = -0.1
+				RESISTANCE_TARGET_ = 0.2
+				MIN_EXPORT_FACTOR = 0.2
+				consumer_goods_factor = -0.4
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+		}
+		#石油幻影，钢铁梦魇(5)（梅隆的计划）
+		USA_shiyouhuanying5 = {
+			picture = GFX_idea_USA_shiyouhuanying5
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = -0.15
+				CONSCRIPTION_FACTOR = -0.1
+				RESISTANCE_TARGET_ = 0.2
+				MIN_EXPORT_FACTOR = 0.2
+				consumer_goods_factor = -0.35
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+		}
 		#狂野之地-西部
 		USA_kuangyezhidi = {
 			picture = GFX_idea_USA_kuangyezhidi
@@ -259,6 +406,101 @@ ideas = {
 				
 			}
 		}
+        #不死的信托(梅隆)（梅隆的计划1）
+		USA_busidexintuo3 = {
+			picture = GFX_idea_USA_busidexintuo3
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.45
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				political_power_cost = 0.4
+				
+			}
+		}
+	    #不死的信托(梅隆)（梅隆的计划2）
+		USA_busidexintuo4 = {
+			picture = GFX_idea_USA_busidexintuo4
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.45
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				political_power_cost = 0.5
+				tank_manufacturer_cost_factor = -0.2
+				naval_manufacturer_cost_factor = -0.2
+				aircraft_manufacturer_cost_factor = -0.2
+				materiel_manufacturer_cost_factor = -0.2
+				industrial_concern_cost_factor = -0.2
+			}	
+		}
+		#不死的信托(摩根)（梅隆的计划1）
+		USA_busidexintuo5 = {
+			picture = GFX_idea_USA_busidexintuo5
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.45
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.
+				political_power_cost = 0.1
+			}	
+		}
+	    #不死的信托(摩根)（梅隆的计划2）
+		USA_busidexintuo6 = {
+			picture = GFX_idea_USA_busidexintuo6
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_busidexintuo_tt
+				hidden_modifier = {
+					production_speed_industrial_complex_factor = -1
+					mobilization_laws_cost_factor = 20
+					economy_cost_factor = 20
+					
+				}
+				custom_modifier_tooltip = USA_busidexintuo_2_tt
+				production_speed_arms_factory_factor = -0.45
+				trade_laws_cost_factor   = 1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				political_power_cost = 0.3
+				tank_manufacturer_cost_factor = -0.2
+				naval_manufacturer_cost_factor = -0.2
+				aircraft_manufacturer_cost_factor = -0.2
+				materiel_manufacturer_cost_factor = -0.2
+				industrial_concern_cost_factor = -0.2
+			}	
+		}
 		#秩序重构-骑士
 		USA_zhixuchonggou_knights = {
 			picture = GFX_idea_USA_zhixuchonggou_knights
@@ -269,13 +511,34 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
-		#秩序重构-骑士（限制）（2）
+		#秩序重构-骑士（限制）（1）
 		USA_zhixuchonggou_knights1 = {
 			picture = GFX_idea_USA_zhixuchonggou_knights1
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.05
 				DRIFT_DEFENCE_FACTOR = 0.2
+			}
+		}
+		#秩序重构-骑士（游说）（2）
+		USA_zhixuchonggou_knights2 = {
+			picture = GFX_idea_USA_zhixuchonggou_knights2
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				DRIFT_DEFENCE_FACTOR = 0.2
+				war_support_factor = 0.05
+			}
+		}
+		#秩序重构-骑士（游说）（3）
+		USA_zhixuchonggou_knights3 = {
+			picture = GFX_idea_USA_zhixuchonggou_knights3
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				resistance_target = 0.1
+				DRIFT_DEFENCE_FACTOR = 0.2
+				war_support_factor = 0.05
 			}
 		}
 		#大战之末，洪涛将临
@@ -329,6 +592,19 @@ ideas = {
 				custom_modifier_tooltip = USA_dazhanzhimo2_tt
 				ai_get_ally_desire_factor = -0.2
 				drift_defence_factor = 0.1
+				subversive_activites_upkeep = 0.2
+				trade_opinion_factor = -0.4
+				min_export = 0.05
+			}
+		}
+        #大战之末，洪涛将临(6-求援法国)
+		 USA_dazhanzhimo6 = {
+			picture = GFX_idea_USA_dazhanzhimo6
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = USA_dazhanzhimo2_tt
+				ai_get_ally_desire_factor = -0.2
+				drift_defence_factor = 0.3
 				subversive_activites_upkeep = 0.2
 				trade_opinion_factor = -0.4
 				min_export = 0.05
