@@ -1033,6 +1033,7 @@ country_event = {
 
 	option = {
 		name=USA.10029.a
+		news_event = {id=AOR_news.81}
 	}	
 }
 country_event = {
