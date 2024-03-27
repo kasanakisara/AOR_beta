@@ -1,7 +1,7 @@
 characters = {
 ############联省#########
 	UPC_xiongxiling= { #熊希龄
-	name = "熊希龄"
+	name = xiongxiling
 		portraits = {
 			civilian = {
 				large = gfx/leaders/UPC/xiongxiling.png
@@ -13,8 +13,14 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_xiongxiling
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov  }
-			available= { date > 1988.1.1}
+			visible = {
+				tag = UPC 
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}  
+			}
+			available= { date > 1918.1.1}
 			traits = { Patriotic_philanthropist }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -32,8 +38,13 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_zhangzongyuan
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
-			available= { date > 1988.1.1}
+			visible = {tag = UPC 			
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}   
+			}
+			available= { date > 1918.1.1}
 			traits = { Famoustax_experts }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -51,8 +62,13 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_tanghualong
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
-			available= { date > 1988.1.1}
+			visible = {tag = UPC 
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}  
+		    }
+			available= { date > 1918.1.1}
 			traits = { Constitutionalist_elites }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -70,8 +86,13 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_lijiannong
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
-			available= { date > 1988.1.1}
+			visible = {tag = UPC 			
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}   
+			}
+			available= { date > 1918.1.1}
 			traits = {Introspectionist}
 			ai_will_do = { factor = 1.000 }
 		}
@@ -89,7 +110,12 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_linchangmin
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
+			visible = {tag = UPC 			
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}   
+			}
 			available= {
 			UPC = {
 				has_country_flag = UPC_lixian_join
@@ -112,7 +138,12 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_FanYuanLian
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
+			visible = {tag = UPC 			
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}   
+			}
 			available= {UPC = {
 				has_country_flag = UPC_lixian_join
 			}}
@@ -133,7 +164,12 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_zhangbuqing
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
+			visible = {tag = UPC 
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}  
+			}
 			available= {
 				UPC = {
 					has_country_flag = UPC_huaqiao_join
@@ -156,7 +192,12 @@ characters = {
 			slot = political_advisor
 			idea_token = UPC_fanxudong
 			allowed = { original_tag = UPC }
-			visible = {tag = UPC has_government = warlord has_government = miliciagov }
+			visible = {tag = UPC 			
+			OR = {			
+				has_government = AUT_democratic 
+		    	has_government = Special
+		    	}   
+			}
 			available= { 
 				UPC = {
 					has_country_flag = UPC_minzushiyejia_join
@@ -181,7 +222,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_panzhuqi
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -202,7 +243,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_chenqiyou
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -223,7 +264,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_shitaojun
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -244,7 +285,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_liucecheng
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -265,7 +306,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_chenyansheng
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -287,7 +328,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_lichenjing
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {				
 			}
@@ -308,7 +349,7 @@ characters = {
 			cost = 150
 			slot = political_advisor
 			idea_token = UPC_chenlianzhong
-			allowed = { original_tag = UPC has_government = lianshengism }
+			allowed = { original_tag = UPC has_government = SOC_democratic }
 			visible = {tag = UPC }
 			available= {
 					UPC = {

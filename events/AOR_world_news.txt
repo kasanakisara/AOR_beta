@@ -1377,3 +1377,16 @@ news_event = { #老美西部内战
 		name = AOR_news.80.a
 	}
 }
+
+news_event = { #沃伦·盖玛利尔·哈定当选美国总统
+	id = AOR_news.81
+	title = AOR_news.81.t
+	desc = AOR_news.81.d
+	picture = GFX_AOR_news.81_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.81.a
+	}
+}

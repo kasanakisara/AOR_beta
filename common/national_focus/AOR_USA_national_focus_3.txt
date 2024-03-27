@@ -17,7 +17,6 @@ focus_tree={
 		icon=GFX_goal_USA_Take_office_immediately
 		x=10
 		y=0
-		cost=0.5
 		ai_will_do={
 			factor=1
 		}
@@ -26,7 +25,7 @@ focus_tree={
 		}
 		completion_reward={
 			country_event={
-				id = USA.10127
+				id = USA.10027
 			}
 		}
 	}
@@ -267,6 +266,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = 0.05
 		}
 	}
 	focus={
@@ -284,6 +284,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = partial_economic_mobilisation
 		}
 	}
 	focus={
@@ -300,6 +301,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation3
+				add_idea = USA_the_divided_nation4
+			}
 		}
 	}
 	focus={
@@ -316,6 +321,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -100
+			swap_ideas={
+				remove_idea =  USA_dazhanzhimo5
+				add_idea =  USA_dazhanzhimo6
+			}
 		}
 	}
 	focus={
@@ -332,6 +342,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+			    remove_idea = USA_shiyouhuanying1
+			    add_idea = USA_shiyouhuanying2
+		    }
 		}
 	}
 	focus={
@@ -348,6 +362,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+			    remove_idea = USA_shiyouhuanying2
+			    add_idea = USA_shiyouhuanying3
+		    }
 		}
 	}
 	focus={
@@ -364,6 +382,28 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+			    remove_idea = USA_shiyouhuanying1
+			    add_idea = USA_shiyouhuanying4
+		    }
+			if = {
+				limit = {
+					has_idea = USA_busidexintuo1
+				}
+				swap_ideas={
+					remove_idea = USA_busidexintuo1
+					add_idea = USA_busidexintuo3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = USA_busidexintuo2
+				}
+				swap_ideas={
+					remove_idea = USA_busidexintuo2
+					add_idea = USA_busidexintuo5
+				}
+			}
 		}
 	}
 	focus={
@@ -380,6 +420,59 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+			    remove_idea = USA_shiyouhuanying4
+			    add_idea = USA_shiyouhuanying5
+		    }
+			if = {
+				limit = {
+					has_idea = USA_busidexintuo3
+				}
+				swap_ideas={
+					remove_idea = USA_busidexintuo3
+					add_idea = USA_busidexintuo4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = USA_busidexintuo5
+				}
+				swap_ideas={
+					remove_idea = USA_busidexintuo5
+					add_idea = USA_busidexintuo6
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -396,6 +489,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 100
+			add_ideas = USA_zanshidexuanchuan
 		}
 	}
 	focus={
@@ -412,6 +507,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_zhixuchonggou_knights
+				}
+				swap_ideas={
+					remove_idea = USA_zhixuchonggou_knights
+					add_idea = USA_zhixuchonggou_knights3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = USA_zhixuchonggou_knights1
+				}
+				swap_ideas={
+					remove_idea = USA_zhixuchonggou_knights1
+					add_idea = USA_zhixuchonggou_knights2
+				}
+			}
 		}
 	}
 	focus={
@@ -429,6 +542,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation4
+				add_idea = USA_the_divided_nation5
+			}
 		}
 	}
 	focus={
@@ -445,6 +562,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation5
+				add_idea = USA_the_divided_nation6
+			}
+			add_ideas = extensive_conscription
 		}
 	}
 	focus={
@@ -461,6 +583,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation6
+				add_idea = USA_the_divided_nation7
+			}
 		}
 	}
 	focus={
@@ -478,6 +604,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation4
+				add_idea = USA_the_divided_nation8
+			}
 		}
 	}
 	focus={
@@ -494,6 +624,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation8
+				add_idea = USA_the_divided_nation9
+			}
 		}
 	}
 	focus={
@@ -510,6 +644,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = USA_the_divided_nation9
+				add_idea = USA_the_divided_nation10
+			}
 		}
 	}
 	focus={

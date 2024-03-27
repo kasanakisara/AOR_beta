@@ -723,8 +723,9 @@ country_event = {
 	id = USA.10007 #飞翔的雄鹰3
     title = USA.10007.t
     desc = USA.10007.d
-    is_triggered_only = yes
+	picture = GFX_USA_event_10007
 	fire_only_once = yes
+
          trigger = {
            tag = USA
 	       date = 1920.1.10
@@ -781,8 +782,7 @@ country_event = {
 	id = USA.10010 #工作（故事）
     title = USA.10010.t
     desc = USA.10010.d
-	picture = GFX_USA_event_10010
-    is_triggered_only = yes
+	picture = GFX_USA_event_10010 
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -798,7 +798,6 @@ country_event = {
     title = USA.10011.t
     desc = USA.10011.d
 	picture = GFX_USA_event_10011
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -814,7 +813,6 @@ country_event = {
     title = USA.10012.t
     desc = USA.10012.d
 	picture = GFX_USA_event_10012
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -830,7 +828,6 @@ country_event = {
     title = USA.10013.t
     desc = USA.10013.d
 	picture = GFX_USA_event_10013
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -846,7 +843,6 @@ country_event = {
     title = USA.10014.t
     desc = USA.10014.d
 	picture = GFX_USA_event_10014
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -862,7 +858,6 @@ country_event = {
     title = USA.10015.t
     desc = USA.10015.d
 	picture = GFX_USA_event_10015
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -878,7 +873,6 @@ country_event = {
     title = USA.10016.t
     desc = USA.10016.d
 	picture = GFX_USA_event_10016
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -894,7 +888,6 @@ country_event = {
     title = USA.10017.t
     desc = USA.10017.d
 	picture = GFX_USA_event_10017
-    is_triggered_only = yes
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -1014,4 +1007,78 @@ country_event = {
 	option = {
 		name=USA.10027.a
 	}	
+}
+country_event = {
+	id = USA.10028 #军费提案(1920)
+	title = USA.10028.t
+	desc = USA.10028.d
+	picture = GFX_USA_event_10028
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10028.a
+	}	
+}
+country_event = {
+	id = USA.10029 #沃伦·盖玛利尔·哈定当选美国总统
+	title = USA.10029.t
+	desc = USA.10029.d
+	picture = GFX_USA_event_10029
+	fire_only_once = yes
+
+		trigger = {
+			tag = USA
+	    	date = 1920.11.10
+	} 
+
+	option = {
+		name=USA.10029.a
+		news_event = {id=AOR_news.81}
+	}	
+}
+country_event = {
+	id = USA.10030 #总统选举(1920)
+	title = USA.10030.t
+	desc = USA.10030.d
+	picture = GFX_USA_event_10030
+	fire_only_once = yes
+
+		trigger = {
+			tag = USA
+	    	date = 1920.11.1
+	} 
+
+	option = {
+		name=USA.10030.a
+	}	
+}
+country_event = {
+	id = USA.10031 #工作-加入骑士团（故事）
+    title = USA.10031.t
+    desc = USA.10031.d
+	picture = GFX_USA_event_10031
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1919.11.25
+	 }
+    option = { 
+        name = USA.10031.a
+	
+	}
+}
+country_event = {
+	id = USA.10032 #工作-加入骑士团2（故事）
+    title = USA.10032.t
+    desc = USA.10032.d
+	picture = GFX_USA_event_10032
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1919.12.20
+	 }
+    option = { 
+        name = USA.10032.a
+	
+	}
 }
