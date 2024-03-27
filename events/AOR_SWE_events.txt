@@ -1,5 +1,5 @@
 add_namespace = SWE
-
+add_namespace = Tosca
 add_namespace = NOR_Axis
 
 country_event = {
@@ -366,5 +366,71 @@ country_event = {
         add_to_variable = { SWE_Norweign_Independence_value = 15 }
         custom_effect_tooltip = SWE_Norweign_Independence_add_localisation
 
+    }
+}
+
+country_event = {
+    id = Tosca.1 #自新大陆（1）
+    title = Tosca.1.t
+    desc = Tosca.1.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.1.a
+        hidden_effect = {
+            country_event = { id = Tosca.2 days = 7 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.2 #自新大陆（2）
+    title = Tosca.2.t
+    desc = Tosca.2.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.2.a
+        hidden_effect = {
+            country_event = { id = Tosca.3 days = 7 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.3 #托斯卡之吻
+    title = Tosca.3.t
+    desc = Tosca.3.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.3.a
+        hidden_effect = {
+            country_event = { id = Tosca.4 days = 7 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.4 #再见，海因里希
+    title = Tosca.4.t
+    desc = Tosca.4.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.4.a
+        hidden_effect = {
+            country_event = { id = Tosca.5 days = 7 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.5 #今夜无战事
+    title = Tosca.5.t
+    desc = Tosca.5.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.5.a
     }
 }

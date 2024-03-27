@@ -1,40 +1,19 @@
 on_actions = {
+
+	on_startup = {
+		if = { 
+			limit = {
+				tag = SWE
+			}
+			country_event = { id = Tosca.1 days = 7 }
+		}
+	}
+
 	on_daily_SWE = {
 		effect = {
 			if = {
 				limit = {
 					has_country_flag = SWE_Norweign_Independence_flag
-				}
-
-				#判定是否触发挪威独立事件
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 }
-					}
-
-					set_variable = { SWE_Norweign_Independence_value = 0 }
-
-					if = {
-						limit = {
-							has_country_flag = SWE_GUI_1
-						}
-						remove_dynamic_modifier = SWE_Norweign_Indepedence_modifier
-						country_event = { id = SWE.11 }
-					}
-				}
-
-				#上下限
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 0 }
-				}
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 100 }
 				}
 
 				#增加数值
@@ -138,6 +117,38 @@ on_actions = {
 
 				#修正更新
 				SWE_Norweign_Independence_value_check = yes
+
+
+				#上下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value > 100 }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
+
+				#判定是否触发挪威独立事件
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
+					}
+
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+
+					if = {
+						limit = {
+							has_country_flag = SWE_GUI_1
+						}
+						remove_dynamic_modifier = SWE_Norweign_Indepedence_modifier
+						country_event = { id = SWE.11 }
+					}
+				}
 
 			}
 
