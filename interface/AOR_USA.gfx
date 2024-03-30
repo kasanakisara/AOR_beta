@@ -165,4 +165,39 @@ spriteTypes = {
 		name = "GFX_idea_USA_zhiliposui"
 		texturefile = "gfx/interface/ideas/USA_sandaliren.png"
     }
+
+#西部
+	spriteType = {
+		name = "GFX_idea_The_Wild_West"
+		texturefile = "gfx/interface/ideas/The_Wild_West.png"
+    }
+	spriteType = {
+		name = "GFX_idea_PAN_XING_Desert_Eagle"
+		texturefile = "gfx/interface/ideas/PAN_XING_Desert_Eagle.png"
+    }
+	spriteType = {
+		name = "GFX_idea_DAXIYANG_The_clarion_call_for_sand_freedom_and_independence"
+		texturefile = "gfx/interface/ideas/DAXIYANG_The_clarion_call_for_sand_freedom_and_independence.png"
+    }
+#南方
+	spriteType = {
+		name = "GFX_idea_Dixie_Goes_Again"
+		texturefile = "gfx/interface/ideas/Dixie_Goes_Again.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Oil_Heaven"
+		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Imprison_in_the_dark"
+		texturefile = "gfx/interface/ideas/Imprison_in_the_dark.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Armament_of_the_Union"
+		texturefile = "gfx/interface/ideas/Armament_of_the_Union.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Fire_Cactus"
+		texturefile = "gfx/interface/ideas/Fire_Cactus.png"
+    }
 }
