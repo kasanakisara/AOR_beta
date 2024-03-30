@@ -57,3 +57,18 @@ spriteTypes = {
 		noOfFrames = 21
 	}
 }
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_goal_SWE_Eighty_Seventh_Order"
+		texturefile = "gfx/interface/goals/goal_SWE_Eighty_Seventh_Order.png"	
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Karlstard_Plan"
+		texturefile = "gfx/interface/goals/goal_SWE_Karlstard_Plan.png"	
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Antisocialistisk_Speciallag"
+		texturefile = "gfx/interface/goals/goal_SWE_Antisocialistisk_Speciallag.png"	
+	}
+}

@@ -136,16 +136,15 @@ on_actions = {
 				#判定是否触发挪威独立事件
 				if = {
 					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 compare = more_than_or_equals }
+						check_variable = { SWE_Norweign_Independence_value = 100 }
 					}
-
-					set_variable = { SWE_Norweign_Independence_value = 0 }
 
 					if = {
 						limit = {
 							has_country_flag = SWE_GUI_1
 						}
-						remove_dynamic_modifier = SWE_Norweign_Indepedence_modifier
+						set_variable = { SWE_Norweign_Independence_value = 0 }
+						remove_dynamic_modifiers = SWE_Norweign_Indepedence_modifier
 						country_event = { id = SWE.11 }
 					}
 				}
@@ -157,7 +156,7 @@ on_actions = {
 					date > 1923.2.13
 					date < 1925.2.15
 				}
-				country_event = { SWE.1 }
+				country_event = { id = SWE.1 }
 			}
 
 		}
