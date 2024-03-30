@@ -751,7 +751,6 @@ country_event = {
 }
 country_event = {
 	id = USA.10009 #南北5月冲突
-	hidden = yes
 	title = USA.10009.t
     desc = USA.10009.d
 	picture = GFX_USA_event_10009
@@ -786,7 +785,7 @@ country_event = {
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1919.11.10
+	       date = 1919.10.20
 	 }
     option = { 
         name = USA.10010.a
@@ -1060,7 +1059,7 @@ country_event = {
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1919.11.25
+	       date = 1919.11.1
 	 }
     option = { 
         name = USA.10031.a
@@ -1075,7 +1074,7 @@ country_event = {
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1919.12.20
+	       date = 1919.11.10
 	 }
     option = { 
         name = USA.10032.a
