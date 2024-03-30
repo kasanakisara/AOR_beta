@@ -504,6 +504,64 @@ characters = {
 		}
 	}
 
+
+    #理论家
+	USA_john_pershing_1 = { #约翰·约瑟夫·潘兴
+	    name = "约翰·约瑟夫·潘兴"
+	    portraits = {
+		civilian = {
+			    large = gfx/leaders/USA/john_pershing.dds
+			    small = gfx/interface/ideas/john_pershing.dds
+		    }
+	    }
+	    advisor = {
+		    cost = 200
+		    slot = theorist
+			ledger = army
+		    idea_token = USA_john_pershing_1
+		    allowed = { original_tag = USA }
+		    traits = { military_theorist }
+		    ai_will_do = { factor = 1.000 }
+	    }
+    }
+
+	USA_Leonard_Wood_1 = { #伦纳德·伍德
+		name = "伦纳德·伍德"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/Leonard_Wood.dds
+				small = gfx/interface/ideas/Leonard_Wood.dds
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = theorist
+			ledger = army
+			idea_token = USA_Leonard_Wood_1
+			allowed = { original_tag = USA }
+			traits = { grand_battle_plan_expert }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	USA_William_Mitchell_1 = { #威廉·米切尔
+	name = "威廉·米切尔"
+	portraits = {
+		civilian = {
+			large = gfx/leaders/USA/William_Mitchell.dds
+			small = gfx/interface/ideas/William_Mitchell.dds
+		}
+	}
+	advisor = {
+		cost = 200
+		slot = theorist
+		ledger = army
+		idea_token = USA_William_Mitchell_1
+		allowed = { original_tag = USA }
+		traits = { close_air_support_proponent }
+		ai_will_do = { factor = 1.000 }
+	}
+}
+
 	#军事部长
 	#陆军
 	USA_Leonard_Wood_a = { #伦纳德·伍德
