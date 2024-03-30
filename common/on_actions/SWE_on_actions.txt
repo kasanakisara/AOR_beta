@@ -152,7 +152,14 @@ on_actions = {
 
 			}
 
-			
+			if = {
+				limit = {
+					date > 1923.2.13
+					date < 1925.2.15
+				}
+				country_event = { SWE.1 }
+			}
+
 		}
 	}
 }
