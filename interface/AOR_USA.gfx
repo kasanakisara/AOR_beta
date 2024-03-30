@@ -63,12 +63,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/USA_sandaliren.png"
     }
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_USA_shiyouhuanying"
 		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
     }
 	spriteType = {
 		name = "GFX_idea_USA_shiyouhuanying1"
+		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_shiyouhuanying2"
+		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_shiyouhuanying3"
+		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_shiyouhuanying4"
+		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_shiyouhuanying5"
 		texturefile = "gfx/interface/ideas/USA_shiyouhuanying.png"
     }
 
