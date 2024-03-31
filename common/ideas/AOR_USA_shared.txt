@@ -22,6 +22,99 @@ ideas = {
 			}
 		}
 
+		tank_manufacturer = { 
+	
+			designer = yes
+		
+			marmon_herrington = {
+				
+				
+				allowed = {
+					original_tag = USA
+				}			
+	
+				
+				research_bonus = {
+					armor = 0.15
+				}
+				
+				traits = { fast_tank_manufacturer }
+				
+				modifier = {
+				}
+			}
+			chrysler = {
+			
+			
+				allowed = {
+					original_tag = USA
+				}
+				
+	
+				
+				research_bonus = {
+					armor = 0.15
+				}
+				
+				traits = { medium_tank_manufacturer }
+				
+				modifier = {
+				}
+			}
+			detroit_arsenal = {
+				
+				picture = generic_industrial_concern_1
+				allowed = {
+					original_tag = USA
+				}
+				available = {
+				}
+	
+				
+				research_bonus = {
+					armor = 0.15
+				}
+				
+				traits = { }
+				
+				equipment_bonus = {
+					medium_tank_chassis = {
+						build_cost_ic = -0.1
+					}
+					light_tank_chassis = {
+						build_cost_ic = -0.1
+					}
+				}
+	
+				modifier = {
+				}
+				
+				traits = { }
+				
+				equipment_bonus = {
+					light_tank_destroyer_chassis = {
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25
+					}
+					medium_tank_destroyer_chassis = {
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25
+					}
+					heavy_tank_destroyer_chassis = {
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25
+					}
+				}
+	
+				modifier = {
+	
+				}
+			}
+		}
+
 		naval_manufacturer = { 
 	
 			designer = yes
@@ -89,6 +182,7 @@ ideas = {
 
 				available = {
 					controls_state = 358
+					controls_state = 362
 				}
 				
 				research_bonus = {
@@ -128,6 +222,76 @@ ideas = {
 	    }
 	
 	
+		aircraft_manufacturer = { 
+		
+			designer = yes
+			
+			north_american_aviation = {
+				
+				
+				allowed = {
+					original_tag = USA
+				}
+				
+				available = {
+					controls_state = 365
+				}
+				
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { light_aircraft_manufacturer }
+				
+				modifier = {
+				}
+			}
+
+			douglas_aircraft_company = {
+				
+				
+				allowed = {
+					original_tag = USA
+				}
+				
+				available = {
+					controls_state = 373
+				}
+				
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { CAS_manufacturer }
+				
+				modifier = {
+				}
+			}
+	
+			
+			boeing = {
+				
+				
+				allowed = {
+					original_tag = USA
+				}
+				
+				available = {
+					controls_state = 395
+				}
+				
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { heavy_aircraft_manufacturer }
+				
+				modifier = {
+				}
+			}
+		}
+
+		
 	materiel_manufacturer = {
 			
 		designer = yes
