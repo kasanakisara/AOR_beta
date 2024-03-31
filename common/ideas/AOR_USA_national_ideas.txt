@@ -286,7 +286,7 @@ ideas = {
 			picture = GFX_idea_USA_shiyouhuanying2
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.05
 				CONSCRIPTION_FACTOR = -0.1
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
@@ -294,7 +294,6 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
-				stability_factor = 0.1
 				war_support_factor = 0.05
 			}
 		}
@@ -303,7 +302,6 @@ ideas = {
 			picture = GFX_idea_USA_shiyouhuanying2
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.15
 				CONSCRIPTION_FACTOR = -0.1
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
@@ -311,7 +309,6 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
-				stability_factor = 0.15
 				war_support_factor = 0.05
 				production_speed_infrastructure_factor = 0.05
 				political_power_cost = -0.1
