@@ -22,7 +22,7 @@ ideas = {
 			political_advisor_cost_factor = 0.5
 			war_support_factor = -0.1
 			theorist_cost_factor = 0.5
-			political_power_cost =0.2
+			political_power_cost =0.4
 			}
 		}
 	#分裂的众国（内战）（3）
@@ -31,6 +31,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.5
+			political_power_cost =0.4
 			political_advisor_cost_factor = 0.5
 			}
 		}
@@ -40,6 +41,7 @@ ideas = {
 		    allowed = { always = yes }
 		    modifier = {
 		    stability_factor = -0.4
+			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_weekly = 0.005
 		    }
@@ -50,6 +52,7 @@ ideas = {
 		    allowed = { always = yes }
 		     modifier = {
 		    stability_factor = -0.35
+			political_power_cost =0.3
 		    political_advisor_cost_factor = 0.5
 		    war_support_weekly = 0.005
 			command_power_gain_mult = 0.1
@@ -61,6 +64,7 @@ ideas = {
 		    allowed = { always = yes }
 		     modifier = {
 		    stability_factor = -0.35
+			political_power_cost =0.3
 		    political_advisor_cost_factor = 0.5
 		    war_support_weekly = 0.005
 			command_power_gain_mult = 0.1
@@ -73,6 +77,7 @@ ideas = {
 		    allowed = { always = yes }
 		     modifier = {
 		    stability_factor = -0.35
+			political_power_cost =0.3
 		    political_advisor_cost_factor = 0.5
 		    war_support_weekly = 0.005
 			command_power_gain_mult = 0.1
@@ -86,6 +91,7 @@ ideas = {
 		    allowed = { always = yes }
 		    modifier = {
 		    stability_factor = -0.4
+			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.1
 		    war_support_weekly = 0.005
@@ -97,6 +103,7 @@ ideas = {
 		    allowed = { always = yes }
 		    modifier = {
 		    stability_factor = -0.45
+			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.20
 		    war_support_weekly = 0.005
@@ -108,6 +115,7 @@ ideas = {
 		    allowed = { always = yes }
 		    modifier = {
 		    stability_factor = -0.45
+			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.20
 		    war_support_weekly = 0.005
@@ -126,6 +134,9 @@ ideas = {
 				experience_gain_navy_factor = -0.5
 				experience_gain_factor = -0.5
 				army_chief_cost_factor = 0.5
+				navy_chief_cost_factor = 0.5
+				air_chief_cost_factor = 0.5
+				high_command_cost_factor = 0.5
 				TRADE_OPINION_FACTOR = 0.1
 				CONSCRIPTION_FACTOR = -0.2
 				custom_modifier_tooltip =  USA_West_Point_Accord_tt
@@ -144,6 +155,9 @@ ideas = {
 				experience_gain_navy_factor = -0.5
 				experience_gain_factor = -0.4
 				army_chief_cost_factor = 0.5
+				navy_chief_cost_factor = 0.5
+				air_chief_cost_factor = 0.5
+				high_command_cost_factor = 0.5
 				TRADE_OPINION_FACTOR = 0.1
 				CONSCRIPTION_FACTOR = -0.2
 				supply_consumption_factor = -0.05
@@ -162,7 +176,10 @@ ideas = {
 				experience_gain_air_factor = -0.4
 				experience_gain_navy_factor = -0.4
 				experience_gain_factor = -0.4
-				army_chief_cost_factor = 0.5
+				army_chief_cost_factor = 0.4
+				navy_chief_cost_factor = 0.4
+				air_chief_cost_factor = 0.4
+				high_command_cost_factor = 0.4
 				TRADE_OPINION_FACTOR = 0.1
 				CONSCRIPTION_FACTOR = -0.2
 				supply_consumption_factor = -0.05
@@ -182,6 +199,9 @@ ideas = {
 				experience_gain_navy_factor = -0.4
 				experience_gain_factor = -0.45
 				army_chief_cost_factor = 0.5
+				navy_chief_cost_factor = 0.5
+				air_chief_cost_factor = 0.5
+				high_command_cost_factor = 0.5
 				TRADE_OPINION_FACTOR = 0.1
 				CONSCRIPTION_FACTOR = -0.2
 				army_attack_factor = 0.02
@@ -200,7 +220,10 @@ ideas = {
 				experience_gain_air_factor = -0.35
 				experience_gain_navy_factor = -0.35
 				experience_gain_factor = -0.45
-				army_chief_cost_factor = 0.5
+				army_chief_cost_factor = 0.4
+				navy_chief_cost_factor = 0.4
+				air_chief_cost_factor = 0.4
+				high_command_cost_factor = 0.4
 				TRADE_OPINION_FACTOR = 0.1
 				CONSCRIPTION_FACTOR = -0.2
 				army_attack_factor = 0.02
@@ -359,6 +382,11 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.1
+				tank_manufacturer_cost_factor = 0.5
+				naval_manufacturer_cost_factor = 0.5
+				aircraft_manufacturer_cost_factor = 0.5
+				materiel_manufacturer_cost_factor = 0.5
+				industrial_concern_cost_factor = 0.5
 				
 			}
 		}
@@ -381,6 +409,11 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.05
 				political_power_cost = 0.2
+				tank_manufacturer_cost_factor = 0.5
+				naval_manufacturer_cost_factor = 0.5
+				aircraft_manufacturer_cost_factor = 0.5
+				materiel_manufacturer_cost_factor = 0.5
+				industrial_concern_cost_factor = 0.5
 				
 			}
 		}
@@ -403,6 +436,11 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.15
 				political_power_cost = -0.1
+				tank_manufacturer_cost_factor = 0.5
+				naval_manufacturer_cost_factor = 0.5
+				aircraft_manufacturer_cost_factor = 0.5
+				materiel_manufacturer_cost_factor = 0.5
+				industrial_concern_cost_factor = 0.5
 				
 			}
 		}
@@ -425,6 +463,11 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				production_factory_max_efficiency_factor = 0.05
 				political_power_cost = 0.4
+				tank_manufacturer_cost_factor = 0.4
+				naval_manufacturer_cost_factor = 0.4
+				aircraft_manufacturer_cost_factor = 0.4
+				materiel_manufacturer_cost_factor = 0.4
+				industrial_concern_cost_factor = 0.4
 				
 			}
 		}
@@ -447,11 +490,11 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				production_factory_max_efficiency_factor = 0.05
 				political_power_cost = 0.5
-				tank_manufacturer_cost_factor = -0.2
-				naval_manufacturer_cost_factor = -0.2
-				aircraft_manufacturer_cost_factor = -0.2
-				materiel_manufacturer_cost_factor = -0.2
-				industrial_concern_cost_factor = -0.2
+				tank_manufacturer_cost_factor = 0.2
+				naval_manufacturer_cost_factor = 0.2
+				aircraft_manufacturer_cost_factor = 0.2
+				materiel_manufacturer_cost_factor = 0.2
+				industrial_concern_cost_factor = 0.2
 			}	
 		}
 		#不死的信托(摩根)（梅隆的计划1）
@@ -473,7 +516,12 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				production_factory_max_efficiency_factor = 0.
 				political_power_cost = 0.1
-			}	
+				tank_manufacturer_cost_factor = 0.4
+				naval_manufacturer_cost_factor = 0.4
+				aircraft_manufacturer_cost_factor = 0.4
+				materiel_manufacturer_cost_factor = 0.4
+				industrial_concern_cost_factor = 0.4
+			}
 		}
 	    #不死的信托(摩根)（梅隆的计划2）
 		USA_busidexintuo6 = {
@@ -494,11 +542,11 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				production_factory_max_efficiency_factor = 0.05
 				political_power_cost = 0.3
-				tank_manufacturer_cost_factor = -0.2
-				naval_manufacturer_cost_factor = -0.2
-				aircraft_manufacturer_cost_factor = -0.2
-				materiel_manufacturer_cost_factor = -0.2
-				industrial_concern_cost_factor = -0.2
+				tank_manufacturer_cost_factor = 0.2
+				naval_manufacturer_cost_factor = 0.2
+				aircraft_manufacturer_cost_factor = 0.2
+				materiel_manufacturer_cost_factor = 0.2
+				industrial_concern_cost_factor = 0.2
 			}	
 		}
 		#秩序重构-骑士

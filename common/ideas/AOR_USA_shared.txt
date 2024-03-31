@@ -22,6 +22,7 @@ ideas = {
 			}
 		}
 
+
 		tank_manufacturer = { 
 	
 			designer = yes
@@ -33,7 +34,14 @@ ideas = {
 					original_tag = USA
 				}			
 	
-				
+				allowed_civil_war = {
+					always = yes
+				}
+
+				available = {
+					controls_state = 396
+				}
+
 				research_bonus = {
 					armor = 0.15
 				}
@@ -43,6 +51,7 @@ ideas = {
 				modifier = {
 				}
 			}
+
 			chrysler = {
 			
 			
@@ -50,8 +59,14 @@ ideas = {
 					original_tag = USA
 				}
 				
-	
-				
+				allowed_civil_war = {
+					always = yes
+				}
+
+				available = {
+					controls_state = 383
+				}
+
 				research_bonus = {
 					armor = 0.15
 				}
@@ -61,15 +76,22 @@ ideas = {
 				modifier = {
 				}
 			}
+
 			detroit_arsenal = {
 				
 				picture = generic_industrial_concern_1
 				allowed = {
 					original_tag = USA
 				}
-				available = {
+
+				allowed_civil_war = {
+					always = yes
 				}
-	
+
+				available = {
+					controls_state = 393
+					date > 1921.1.1
+				}
 				
 				research_bonus = {
 					armor = 0.15
@@ -95,17 +117,17 @@ ideas = {
 					light_tank_destroyer_chassis = {
 						build_cost_ic = -0.1
 						ap_attack = 0.1
-						hard_attack = 0.25
+						hard_attack = 0.20
 					}
 					medium_tank_destroyer_chassis = {
 						build_cost_ic = -0.1
 						ap_attack = 0.1
-						hard_attack = 0.25
+						hard_attack = 0.20
 					}
 					heavy_tank_destroyer_chassis = {
 						build_cost_ic = -0.1
 						ap_attack = 0.1
-						hard_attack = 0.25
+						hard_attack = 0.20
 					}
 				}
 	
@@ -254,8 +276,13 @@ ideas = {
 					original_tag = USA
 				}
 				
+				allowed_civil_war = {
+					always = yes
+				}
+
 				available = {
 					controls_state = 373
+					date > 1921.7.1
 				}
 				
 				research_bonus = {
@@ -276,6 +303,10 @@ ideas = {
 					original_tag = USA
 				}
 				
+				allowed_civil_war = {
+					always = yes
+				}
+
 				available = {
 					controls_state = 395
 				}
@@ -297,8 +328,13 @@ ideas = {
 					original_tag = USA
 				}
 				
+				allowed_civil_war = {
+					always = yes
+				}
+
 				available = {
 					controls_state = 378
+					date > 1921.7.1
 				}
 				
 				research_bonus = {
@@ -322,10 +358,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
-			}
-
-			allowed_civil_war = {
-				always = yes
 			}
 			
 			available = {
@@ -405,16 +437,16 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-
+			
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			available = {
 				controls_state = 261
 				controls_state = 375
 			}
-			
+
 			research_bonus = {
 				industry = 0.05
 				synth_resources = 0.15
