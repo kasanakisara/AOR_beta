@@ -289,6 +289,27 @@ ideas = {
 				modifier = {
 				}
 			}
+
+			lockheed = {
+			
+			
+				allowed = {
+					original_tag = USA
+				}
+				
+				available = {
+					controls_state = 378
+				}
+				
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { medium_aircraft_manufacturer }
+				
+				modifier = {
+				}
+			}
 		}
 
 		
