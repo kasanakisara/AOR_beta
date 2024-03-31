@@ -21,6 +21,7 @@ focus_tree={
 			date > 1919.8.1
 		}
 		completion_reward={
+			custom_effect_tooltip = USA_AWhiteHouseReport
 		}
 	}
 	focus={
@@ -32,7 +33,7 @@ focus_tree={
 		cost=2.00
 		completion_reward={
 			add_political_power=50
-
+			custom_effect_tooltip = USA_Achallenge
 		country_event={
 			id = USA.10019
 			}
@@ -67,6 +68,7 @@ focus_tree={
 					instant_build=yes
 				}
 			}
+			custom_effect_tooltip = USA_ASanFrancisco
 		}
 	}
 	focus={
@@ -141,6 +143,7 @@ focus_tree={
 			country_event={
 				id = USA.10001
 			}
+			custom_effect_tooltip = USA_ADetroit
 		}
 	}
 	focus={
@@ -150,6 +153,9 @@ focus_tree={
 		y=5
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
+		completion_reward={
+			custom_effect_tooltip = USA_AAnalysis
+		}
 	}
 	focus={
 		id=USA_MartialLaw
@@ -166,6 +172,7 @@ focus_tree={
 			country_event={
 				id = USA.10008
 			}
+			custom_effect_tooltip = USA_AMartialLaw
 		}
 	}
 	focus={
@@ -180,6 +187,7 @@ focus_tree={
 				idea=USA_AppeaseA
 				days=180
 			}
+			custom_effect_tooltip = USA_AAppease
 		}
 	}
 	focus={
@@ -213,6 +221,7 @@ focus_tree={
 			country_event={
 				id = USA.10006
 			}
+			custom_effect_tooltip = USA_AIntelligenceStation
 		}
 	}
 	focus={
@@ -246,6 +255,7 @@ focus_tree={
 			hidden_effect={
 				load_focus_tree = USA_2
 			}
+			custom_effect_tooltip = USA_ANewYear
 		}
 	}
 }
