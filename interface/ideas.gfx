@@ -4609,10 +4609,15 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_tur_gok_okulu"
-		texturefile = "gfx/interface/ideas/idea_tur_gok_okulu.dds"
+		name = "GFX_idea_USA_union_pacific_railway"
+		texturefile = "gfx/interface/ideas/idea_USA_union_pacific_railway.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_tur_golcuk_naval_base"
+		texturefile = "gfx/interface/ideas/idea_tur_golcuk_naval_base.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_tur_golcuk_naval_base"
 		texturefile = "gfx/interface/ideas/idea_tur_golcuk_naval_base.dds"
