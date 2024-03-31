@@ -544,23 +544,42 @@ characters = {
 		}
 	}
 	USA_William_Mitchell_1 = { #威廉·米切尔
-	name = "威廉·米切尔"
-	portraits = {
-		civilian = {
-			large = gfx/leaders/USA/William_Mitchell.dds
-			small = gfx/interface/ideas/William_Mitchell.dds
-		}
-	}
-	advisor = {
-		cost = 200
-		slot = theorist
-		ledger = army
-		idea_token = USA_William_Mitchell_1
-		allowed = { original_tag = USA }
-		traits = { close_air_support_proponent }
-		ai_will_do = { factor = 1.000 }
-	}
-}
+	    name = "威廉·米切尔"
+	    portraits = {
+		        civilian = {
+			    large = gfx/leaders/USA/William_Mitchell.dds
+			    small = gfx/interface/ideas/William_Mitchell.dds
+		    }
+	    }
+	     advisor = {
+		    cost = 200
+		    slot = theorist
+		       ledger = army
+		        idea_token = USA_William_Mitchell_1
+		        allowed = { original_tag = USA }
+		        traits = { close_air_support_proponent }
+		        ai_will_do = { factor = 1.000 }
+	    }
+    }
+
+	USA_William_Soden_Sims = { #威廉·索登·西姆斯
+	    name = "威廉·索登·西姆斯"
+	    portraits = {
+		        civilian = {
+			    large = gfx/leaders/USA/William_Soden_Sims.dds
+			    small = gfx/interface/ideas/William_Soden_Sims.dds
+		    }
+	    }
+	     advisor = {
+		    cost = 200
+		    slot = theorist
+		       ledger = navy
+		        idea_token = USA_William_Soden_Sims
+		        allowed = { original_tag = USA }
+		        traits = { grand_fleet_proponent }
+		        ai_will_do = { factor = 1.000 }
+	    }
+    }
 
 	#军事部长
 	#陆军
@@ -597,6 +616,24 @@ characters = {
 			idea_token = USA_F_C_Answorth_n
 			allowed = { original_tag = USA }
 			traits = { navy_chief_reform_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Shepherd_Benson = { #威廉·薛佛·班森
+		name = "威廉·薛佛·班森"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Shepherd_Benson.dds
+				small = gfx/interface/ideas/William_Shepherd_Benson.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = navy_chief
+			idea_token = USA_William_Shepherd_Benson
+			allowed = { original_tag = USA }
+			traits = { navy_chief_decisive_battle_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -672,6 +709,60 @@ characters = {
 			idea_token = USA_payton_march_a
 			allowed = { original_tag = USA }
 			traits = { army_regrouping_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Shepherd_Benson_a = { #威廉·薛佛·班森
+		name = "威廉·薛佛·班森"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Shepherd_Benson_a.dds
+				small = gfx/interface/ideas/William_Shepherd_Benson_a.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_William_Shepherd_Benson_a
+			allowed = { original_tag = USA }
+			traits = { navy_capital_ship_1 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Soden_Sims_a = { #威廉·索登·西姆斯
+		name = "威廉·索登·西姆斯"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Soden_Sims_a.dds
+				small = gfx/interface/ideas/William_Soden_Sims_a.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_William_Soden_Sims_a
+			allowed = { original_tag = USA }
+			traits = { navy_fleet_logistics_2 }
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	USA_William_Mitchell_a = { #威廉·米切尔
+		name = "威廉·米切尔"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/William_Mitchell_a.dds
+				small = gfx/interface/ideas/William_Mitchell_a.dds
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = USA_William_Mitchell_a
+			allowed = { original_tag = USA }
+			traits = { air_air_combat_training_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}

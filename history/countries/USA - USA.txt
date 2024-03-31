@@ -218,14 +218,19 @@ recruit_character = USA_Newton_Deihl_Baker
 recruit_character = USA_john_pershing_1
 recruit_character = USA_Leonard_Wood_1
 recruit_character = USA_William_Mitchell_1
+recruit_character = USA_William_Soden_Sims
 
 recruit_character = USA_Leonard_Wood_a
+recruit_character = USA_William_Shepherd_Benson
 recruit_character = USA_F_C_Answorth_n
 recruit_character = USA_William_Mitchell
 
 recruit_character = USA_john_pershing_a
 recruit_character = USA_tasker_bliss_a
 recruit_character = USA_payton_march_a
+recruit_character = USA_William_Shepherd_Benson_a
+recruit_character = USA_William_Soden_Sims_a
+recruit_character = USA_William_Mitchell_a
 
 set_autonomy = {
 target = HSP
