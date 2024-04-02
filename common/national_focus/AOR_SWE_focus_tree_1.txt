@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Encourage_Capital
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Encourage_Capital
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Karlstard_Plan
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Found_of_France
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Found_of_France
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Encourage_Capital
@@ -229,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Proganda_to_People
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Proganda_to_People
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
@@ -263,7 +263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Liberte_Spirit
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Liberte_Spirit
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Proganda_to_People
@@ -311,7 +311,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Abolish_Left_Party
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Abolish_Left_Party
 		cost = 2.00
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
@@ -445,7 +445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_The_Dream
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_The_Dream
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Our_Responsibility
@@ -685,7 +685,7 @@ focus_tree = {
 	focus = {
 		id = SWE_Beautiful_World
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 20.00
 		prerequisite = {
 			focus = SWE_Hand_Could_Saw
 		}
@@ -697,6 +697,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 13
+		completion_reward = {
+			custom_effect_tooltip = SWE_Finally_Revolution_tt
+		}
 
 	}
 }

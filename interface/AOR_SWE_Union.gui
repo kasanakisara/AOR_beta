@@ -1,0 +1,29 @@
+guiTypes = {
+	containerWindowType = {
+		name = "AOR_SWE_Union_gui"
+		position = { x = 0 y = 0 }
+		Orientation = center
+		Origo = center
+		size = { width = 1600 height= 900 }
+		moveable = yes
+		background = {
+			name = "blackground"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+	}
+}
+
+guiTypes = {#开关
+	containerWindowType = {
+		name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
+		position = { x = 20 y = -190 }
+		Orientation = LOWER_RIGHT
+		Origo = LOWER_RIGHT
+		size = { width = 100 height= 100 }
+		buttonType = { 
+			name = "AOR_SWE_Union_gui_buttom"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Union_GUI_Openbottom"
+		}
+	}
+}

@@ -1,0 +1,43 @@
+scripted_gui = {
+
+	AOR_SWE_Union_gui = {
+		context_type = player_context
+		window_name = "AOR_SWE_Union_gui"
+
+		visible = {
+			ROOT = {
+				has_country_flag = SWE_Open_Union_gui
+			}
+		}
+	}
+	
+}
+
+scripted_gui = {
+
+	AOR_SWE_Union_gui = {
+		context_type = player_context
+		window_name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
+
+		visible = {
+			ROOT = {
+				has_country_flag = SWE_GUI_4
+			}
+		}
+	
+		effects = {
+			AOR_SWE_Union_gui_buttom_click = {
+				if = {
+					limit = {
+						has_country_flag = SWE_Open_Union_gui
+					}
+					clr_country_flag = SWE_Open_Union_gui
+				}
+				else = {
+					set_country_flag = SWE_Open_Union_gui
+				}
+			}
+		}
+	}
+	
+}

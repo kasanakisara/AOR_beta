@@ -1,19 +1,23 @@
 add_namespace = SWE
 add_namespace = Tosca
 add_namespace = NOR_Axis
+add_namespace = Haakon
 
 country_event = {
     id = SWE.1 #哈康之死
     title = SWE.1.t
     desc = SWE.1.d
-    is_triggered_only = yes
+    trigger = {
+        date > 1923.2.13
+    }
+    fire_only_once = yes
     option = {
         name = SWE.1.a
         hidden_effect = {
-            load_focus_tree = AOR_SWE_focus_tree_2
             clr_country_flag = SWE_GUI_1
             clr_country_flag = SWE_GUI_4
             set_country_flag = SWE_GUI_2
+            country_event = { id = Haakon.1 }
         }
     }
 }
@@ -434,5 +438,18 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = Tosca.5.a
+    }
+}
+
+country_event = {
+    id = Haakon.1 #批判会
+    title = Haakon.1.t
+    desc = Haakon.1.d
+    is_triggered_only = yes
+    option = {
+        name = Haakon.1.a
+        hidden_effect = {
+            load_focus_tree = AOR_SWE_focus_tree_2
+        }
     }
 }

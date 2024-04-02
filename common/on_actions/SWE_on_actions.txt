@@ -1,11 +1,13 @@
 on_actions = {
 
 	on_startup = {
-		if = { 
-			limit = {
-				tag = SWE
+		effect = {
+			if = { 
+				limit = {
+					tag = SWE
+				}
+				country_event = { id = Tosca.1 days = 7 }
 			}
-			country_event = { id = Tosca.1 days = 7 }
 		}
 	}
 
@@ -90,12 +92,6 @@ on_actions = {
 					add_to_variable = { SWE_Norweign_Independence_add = -3 }
 				}
 
-				if = {
-					limit = {
-						has_country_flag = SWE_GUI_4 #哈康抑制期
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 0 }
-				}
 
 				#马克思主义支持率对独立度修正
 				SWE_Marxism_effect_Norway_Independence_check = yes
@@ -105,7 +101,14 @@ on_actions = {
 					limit = {
 						check_variable = { SWE_Norweign_Independence_add = 0 compare = less_than_or_equals }
 					}
-					set_variable = { SWE_Norweign_Independence_add = 1.5 }
+					set_variable = { SWE_Norweign_Independence_add = 0.25 }
+				}
+
+				if = {
+					limit = {
+						has_country_flag = SWE_GUI_4 #哈康抑制期
+					}
+					set_variable = { SWE_Norweign_Independence_add = 0 }
 				}
 
 				#数值更新
@@ -150,15 +153,7 @@ on_actions = {
 				}
 
 			}
-
-			if = {
-				limit = {
-					date > 1923.2.13
-					date < 1925.2.15
-				}
-				country_event = { id = SWE.1 }
-			}
-
 		}
+
 	}
 }
