@@ -53,6 +53,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "supernews_desc"
 			position = { x = 10 y = 420}
+			scrollbarType = standardtext_slider
 			font = "hoi_30header"
 			text = "supernews_desc"
 			maxWidth = 780
