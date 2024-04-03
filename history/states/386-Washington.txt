@@ -6,6 +6,10 @@ state={
 	
 	state_category = large_town
 
+	resources={
+		steel=20 # was: 80
+	}
+
 	history={
 		owner = USA
 		buildings = {
