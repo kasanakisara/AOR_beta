@@ -3,6 +3,10 @@ state={
 	id=756
 	name="STATE_756"
 
+    resources={
+		tungsten = 20 
+	}
+
 	history={
 		owner = CHI
 		add_core_of = CHI
