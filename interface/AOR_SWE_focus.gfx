@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_SWE_Eighty_Seventh_Order"
+		texturefile = "gfx/interface/goals/goal_SWE_Eighty_Seventh_Order.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Karlstard_Plan"
+		texturefile = "gfx/interface/goals/goal_SWE_Karlstard_Plan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Encourage_Capital"
+		texturefile = "gfx/interface/goals/goal_SWE_Encourage_Capital.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Antisocialistisk_Speciallag"
+		texturefile = "gfx/interface/goals/goal_SWE_Antisocialistisk_Speciallag.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Proganda_to_People"
+		texturefile = "gfx/interface/goals/goal_SWE_Proganda_to_People.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Abolish_Left_Party"
+		texturefile = "gfx/interface/goals/goal_SWE_Abolish_Left_Party.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_The_Dream"
+		texturefile = "gfx/interface/goals/goal_SWE_The_Dream.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Found_of_France"
+		texturefile = "gfx/interface/goals/goal_SWE_Found_of_France.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Liberte_Spirit"
+		texturefile = "gfx/interface/goals/goal_SWE_Liberte_Spirit.png"
+	}
+}

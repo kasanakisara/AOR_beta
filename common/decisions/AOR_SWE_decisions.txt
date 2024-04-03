@@ -5,7 +5,7 @@ SWE_Norweign_Independence_decision_categories = {
         avaliable = { always = yes }
         days_remove = 5
         ai_will_do = {
-            factor = 1
+            factor = 0.5
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -2 }
@@ -22,7 +22,7 @@ SWE_Norweign_Independence_decision_categories = {
         }
         days_remove = 28
         ai_will_do = {
-            factor = 1
+            factor = 0.5
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
@@ -209,7 +209,7 @@ SWE_Norweign_Independence_decision_categories = {
         }
         cost = 20
         ai_will_do = {
-            factor = 1
+            factor = 0.75
         }
         complete_effect = {
             add_stability = 0.1
@@ -225,7 +225,7 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 7
         cost = 20
         ai_will_do = {
-            factor = 1
+            factor = 0.75
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.1 }
@@ -240,7 +240,7 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 49
         cost = 75
         ai_will_do = {
-            factor = 1
+            factor = 0.75
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.15 }
