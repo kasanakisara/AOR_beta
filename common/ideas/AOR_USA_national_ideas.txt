@@ -835,6 +835,16 @@ ideas = {
 			production_factory_max_efficiency_factor = 0.1
 			consumer_goods_factor = 0.1
 			}
+		}	
+	#发放储蓄仓库救济
+		USA_chuxucangjieji = {
+			picture = GFX_idea_USA_chuxucangjieji
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.05
+			consumer_goods_factor = 0.05
+			}
 		}							
 	}
 }

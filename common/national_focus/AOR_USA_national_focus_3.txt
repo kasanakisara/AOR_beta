@@ -216,6 +216,7 @@ focus_tree={
 				id = USA.10025
 			}
 			set_country_flag = USA_Civil_War_Resolution_flag
+			custom_effect_tooltip = USA_AShocking_waves_rise_with_the_wind
 		}
 	}
 	focus={

@@ -2,9 +2,9 @@ USA_Civil_War_Resolution = {
     #基础决议
     #调整工厂生产-民用重心
     USA_Adjust_the_center_of_gravity_of_factory_production_civilian = {
-        avaliable = {
-            date > 1921.6.18
-        has_complete_focus = USA_supply_of_consumer_goods
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_supply_of_consumer_goods
     }
         allowed = {
 			original_tag = USA
@@ -17,15 +17,18 @@ USA_Civil_War_Resolution = {
         cost = 100
 
         complete_effect = {
-           add_ideas = USA_miyongzhongxin
+            add_timed_idea={
+				idea = USA_miyongzhongxin
+				days = 90
+            }
         }
     }
 
     #调整工厂生产-军用重心
     USA_Adjust_the_center_of_gravity_of_factory_production_military_center_of_gravity = {
-        avaliable = {
-        date > 1921.6.18
-        has_complete_focus = USA_Emergency_production_conversion
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Emergency_production_conversion
     }
         allowed = {
 			original_tag = USA
@@ -38,7 +41,34 @@ USA_Civil_War_Resolution = {
         cost = 100
 
         complete_effect = {
-            add_ideas = USA_miyongzhongxin
+            add_timed_idea={
+				idea = USA_juyongzhongxin
+				days = 90
+            }
+        }
+    }
+
+     #发放储蓄仓库救济
+    USA_Grant_savings_warehouse_relief = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Ensure_sales_channels
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+        complete_effect = {
+            add_timed_idea={
+				idea = USA_chuxucangjieji
+				days = 90
+            }
         }
     }
 }
