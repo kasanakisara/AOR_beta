@@ -812,58 +812,5 @@ ideas = {
 			add_war_support = 0.05
 			}
 		}
-
-#内战	
-
-	#调整工厂生产-民用重心
-		USA_miyongzhongxin = {
-			picture = GFX_idea_USA_zanshidexuanchuan
-			allowed = { always = yes }
-			modifier = {
-			production_speed_industrial_complex_factor = 0.5
-			production_speed_infrastructure_factor = 0.1
-			consumer_goods_factor = -0.1
-			}
-		}	
-	#调整工厂生产-军用重心
-		USA_juyongzhongxin = {
-			picture = GFX_idea_USA_zanshidexuanchuan
-			allowed = { always = yes }
-			modifier = {
-			production_speed_arms_factory_factor = 0.2
-			industrial_capacity_factory = 0.1
-			production_factory_max_efficiency_factor = 0.1
-			consumer_goods_factor = 0.1
-			}
-		}	
-	#发放储蓄仓库救济
-		USA_chuxucangjieji = {
-			picture = GFX_idea_USA_chuxucangjieji
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = 0.1
-			war_support_factor = 0.05
-			consumer_goods_factor = 0.05
-			}
-		}
-	#清除危险分子
-		USA_qinchuweixianfenzi = {
-			picture = GFX_idea_USA_qinchuweixianfenzi
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = -0.05
-			war_support_factor = 0.1
-			}
-		}
-	#促进五大湖地区政治团结
-		USA_wudahuzhengzhituanjie = {
-			picture = GFX_idea_USA_wudahuzhengzhituanjie
-			allowed = { always = yes }
-			modifier = {
-			political_power_gain = 0.1
-			stability_factor = 0.1
-			war_support_factor = 0.05
-			}
-		}									
 	}
 }
