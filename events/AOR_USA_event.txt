@@ -950,6 +950,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10022.a
+		news_event = {id=AOR_news.82}
 	}	
 }
 country_event = {

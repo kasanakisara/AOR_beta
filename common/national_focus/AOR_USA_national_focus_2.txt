@@ -213,9 +213,23 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo
+			}
 			swap_ideas={
 				remove_idea = USA_dazhanzhimo
 				add_idea = USA_dazhanzhimo2
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo2
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo2
+				add_idea = USA_dazhanzhimo3
+			}
 			}
 			add_political_power = -50
 			leave_faction = yes
@@ -236,14 +250,35 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo
+				add_idea = USA_dazhanzhimo2
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo2
+			}
 			swap_ideas={
 				remove_idea = USA_dazhanzhimo2
 				add_idea = USA_dazhanzhimo3
 			}
-			swap_ideas={
-				remove_idea = USA_the_divided_nation
-				add_idea = USA_the_divided_nation2
 			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo3
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo3
+				add_idea = USA_dazhanzhimo4
+			}
+			}
+			news_event = {id=AOR_news.83}
+			add_stability = -0.05
 		}
 	}
 	focus={
@@ -261,9 +296,32 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo
+				add_idea = USA_dazhanzhimo2
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo2
+			}
 			swap_ideas={
 				remove_idea = USA_dazhanzhimo2
 				add_idea = USA_dazhanzhimo3
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo3
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo3
+				add_idea = USA_dazhanzhimo4
+			}
 			}
 		}
 	}
@@ -344,9 +402,36 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo
+				add_idea = USA_dazhanzhimo2
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo2
+			}
+			swap_ideas={
+				remove_idea = USA_dazhanzhimo2
+				add_idea = USA_dazhanzhimo3
+			}
+			}
+			if = {
+				limit = {
+					has_idea = USA_dazhanzhimo3
+			}
 			swap_ideas={
 				remove_idea = USA_dazhanzhimo3
 				add_idea = USA_dazhanzhimo4
+			}
+			}
+			swap_ideas={
+				remove_idea = USA_the_divided_nation
+				add_idea = USA_the_divided_nation2
 			}
 			country_event={
 				id = USA.10022

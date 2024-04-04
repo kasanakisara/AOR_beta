@@ -793,7 +793,7 @@ ideas = {
 			picture = GFX_idea_USA_zanshideweiji
 			allowed = { always = yes }
 			modifier = {
-			stability_factor = 0.05
+			stability_factor = 0.10
 			}
 		}		
 	#暂时的慰籍-贷款
