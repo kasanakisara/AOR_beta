@@ -811,6 +811,30 @@ ideas = {
 			modifier = {
 			add_war_support = 0.05
 			}
-		}					
+		}
+
+#内战	
+
+	#调整工厂生产-民用重心
+		USA_miyongzhongxin = {
+			picture = GFX_idea_USA_zanshidexuanchuan
+			allowed = { always = yes }
+			modifier = {
+			production_speed_industrial_complex_factor = 0.5
+			production_speed_infrastructure_factor = 0.1
+			consumer_goods_factor = -0.1
+			}
+		}	
+	#调整工厂生产-军用重心
+		USA_juyongzhongxin = {
+			picture = GFX_idea_USA_zanshidexuanchuan
+			allowed = { always = yes }
+			modifier = {
+			production_speed_arms_factory_factor = 0.2
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = 0.1
+			}
+		}							
 	}
 }

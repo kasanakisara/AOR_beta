@@ -1,0 +1,39 @@
+USA_Civil_War_Resolution = {
+    icon = GFX_USA_Civil_War_Resolution
+    #基础决议
+    #调整工厂生产-民用重心
+    USA_Adjust_the_center_of_gravity_of_factory_production_civilian = {
+        avaliable = {date > 1921.6.18 }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5
+        }
+
+        cost = 100
+
+        complete_effect = {
+           add_ideas = USA_miyongzhongxin
+        }
+    }
+
+    #调整工厂生产-军用重心
+    USA_Adjust_the_center_of_gravity_of_factory_production_military_center_of_gravity = {
+        avaliable = {date > 1921.6.18}
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+        complete_effect = {
+            add_ideas = USA_miyongzhongxin
+        }
+    }
+}
