@@ -1,9 +1,21 @@
-USA_Civil_War_Resolution = {
-	icon = GFX_USA_Civil_War_Resolution
-	picture = GFX_USA_Civil_War_Resolution
+USA_Civil_War_Resolution_civilian = {
+	icon = GFX_USA_Civil_War_Resolution_civilian
+	picture = GFX_USA_Civil_War_Resolution_civilian
 	priority = 100
 	visible = {
-		has_country_flag = USA_Civil_War_Resolution_flag
+		has_country_flag = USA_Civil_War_Resolution_civilian_flag
+	}
+	allowed = {
+		original_tag = usa
+	}
+}
+
+USA_Civil_War_Resolution_gravity = {
+	icon = GFX_USA_Civil_War_Resolution_gravity
+	picture = GFX_USA_Civil_War_Resolution_gravity
+	priority = 100
+	visible = {
+		has_country_flag = USA_Civil_War_Resolution_gravity_flag
 	}
 	allowed = {
 		original_tag = usa

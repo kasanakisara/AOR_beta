@@ -845,6 +845,25 @@ ideas = {
 			war_support_factor = 0.05
 			consumer_goods_factor = 0.05
 			}
-		}							
+		}
+	#清除危险分子
+		USA_qinchuweixianfenzi = {
+			picture = GFX_idea_USA_qinchuweixianfenzi
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = 0.1
+			}
+		}
+	#促进五大湖地区政治团结
+		USA_wudahuzhengzhituanjie = {
+			picture = GFX_idea_USA_wudahuzhengzhituanjie
+			allowed = { always = yes }
+			modifier = {
+			political_power_gain = 0.1
+			stability_factor = 0.1
+			war_support_factor = 0.05
+			}
+		}									
 	}
 }

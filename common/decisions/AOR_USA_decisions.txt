@@ -1,4 +1,5 @@
-USA_Civil_War_Resolution = {
+#合众国内战社会决议
+USA_Civil_War_Resolution_civilian = {
     #基础决议
     #调整工厂生产-民用重心
     USA_Adjust_the_center_of_gravity_of_factory_production_civilian = {
@@ -68,6 +69,60 @@ USA_Civil_War_Resolution = {
             add_timed_idea={
 				idea = USA_chuxucangjieji
 				days = 90
+            }
+        }
+    }
+}
+
+
+#合众国内战政治决议
+USA_Civil_War_Resolution_civilian = {
+    #基础决议
+    #清除危险分子
+    USA_Eliminate_dangerous_elements = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Free_play_arrest_traitors
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 30
+        ai_will_do = {
+            factor = 0.5
+        }
+
+        cost = 100
+
+        complete_effect = {
+            add_timed_idea={
+				idea = USA_miyongzhongxin
+				days = 30
+            }
+            add_manpower = -300
+        }
+    }
+
+     #促进五大湖地区政治团结
+    USA_Promote_political_unity_in_the_Great_Lakes_region = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Let_s_face_the_storm
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 180
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+        complete_effect = {
+            add_timed_idea={
+				idea = USA_chuxucangjieji
+				days = 180
             }
         }
     }
