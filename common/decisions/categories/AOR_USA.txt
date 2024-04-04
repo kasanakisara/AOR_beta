@@ -1,0 +1,11 @@
+USA_Civil_War_Resolution = {
+	icon = GFX_USA_Civil_War_Resolution
+	picture = GFX_USA_Civil_War_Resolution
+	priority = 100
+	visible = {
+		has_country_flag = USA_Civil_War_Resolution_flag
+	}
+	allowed = {
+		original_tag = usa
+	}
+}

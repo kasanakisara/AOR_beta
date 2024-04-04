@@ -215,6 +215,7 @@ focus_tree={
 			country_event={
 				id = USA.10025
 			}
+			set_country_flag = USA_Civil_War_Resolution_flag
 		}
 	}
 	focus={
