@@ -1082,3 +1082,15 @@ country_event = {
 	
 	}
 }
+
+country_event = {
+	id = USA.10033 #采访
+	title = USA.10033.t
+	desc = USA.10033.d
+	picture = GFX_USA_event_10033
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10033.a
+	}	
+}
