@@ -1,0 +1,17 @@
+CSA_Civil_War_Resolution_gravity = {
+	icon = GFX_CSA_Civil_War_Resolution_gravity
+	picture = GFX_CSA_Civil_War_Resolution_gravity
+	priority = 100
+	allowed = {
+		original_tag = csa
+	}
+}
+
+CSA_Civil_War_Resolution_civilian = {
+	icon = GFX_CSA_Civil_War_Resolution_civilian
+	picture = GFX_CSA_Civil_War_Resolution_civilian
+	priority = 100
+	allowed = {
+		original_tag = csa
+	}
+}

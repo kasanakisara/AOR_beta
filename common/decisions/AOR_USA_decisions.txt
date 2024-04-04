@@ -54,7 +54,7 @@ USA_Civil_War_Resolution_civilian = {
         }
     }
 
-     #发放储蓄仓库救济
+    #发放储蓄仓库救济
     USA_Grant_savings_warehouse_relief = {
         available = {
         date > 1921.7.1
