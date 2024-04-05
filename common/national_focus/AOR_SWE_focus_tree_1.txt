@@ -296,7 +296,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Our_Responsibility
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Our_Responsibility
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Beyond_Nationalism
@@ -405,7 +405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_The_Trial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_The_Trial
 		cost = 2.00
 		prerequisite = {
 			focus = SWE_Imprisoned_Left_Leaders

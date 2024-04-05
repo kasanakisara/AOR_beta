@@ -67,4 +67,12 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Restructuring_Parliament"
 		texturefile = "gfx/interface/goals/goal_SWE_Restructuring_Parliament.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Our_Responsibility"
+		texturefile = "gfx/interface/goals/goal_SWE_Our_Responsibility.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_The_Trial"
+		texturefile = "gfx/interface/goals/goal_SWE_The_Trial.png"
+	}
 }

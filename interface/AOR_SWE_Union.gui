@@ -33,9 +33,44 @@ guiTypes = { #主体结构
 			orientation = left_up
 			font = "hoi_36header"
 			text = "SWE_Union_gui_title_text"
-			format = centre
+			format = center
 			maxWidth = 1600
 			maxHeight = 50
+		}
+
+		iconType = {
+			name = "SWE_Vivelafederation_pic"
+			spriteType = "GFX_Union_GUI_Vivelafederation"
+			maxWidth = 50
+			maxHeight = 1600
+			orientation = left_up
+			position = { x = 100 y = 100 }
+		}
+
+		iconType = {
+			name = "SWE_Union_GUI_progress_bar"
+			spriteType = "GFX_Union_GUI_progressbar"
+			orientation = left_up
+			position = { x = 750 y = 100 }
+		}
+
+		instantTextboxType = {
+			name = "SWE_Union_progress_text"
+			position = { x = 700 y = 735 }
+			orientation = left_up
+			font = "hoi_36header"
+			text = "SWE_Union_gui_progress_text"
+			format = center
+			maxWidth = 235
+		}
+
+		bottonType = {
+			name = "SWE_Union_GUI_close_botton"
+			position = { x = -40 y = 8 }
+			quadTextureSprite = "GFX_profile_button_close"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
 		}
 	}
 }

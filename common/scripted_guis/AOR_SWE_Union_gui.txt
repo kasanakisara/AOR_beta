@@ -7,6 +7,12 @@ scripted_gui = {
 		visible = {
 			has_country_flag = SWE_Open_Union_gui
 		}
+
+		properties = {
+			SWE_Union_GUI_progress_bar = {
+				frame = SWE_Union_progress_value
+			}
+		}
 	}
 	
 }

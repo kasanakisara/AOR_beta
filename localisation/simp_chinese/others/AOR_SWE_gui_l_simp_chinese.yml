@@ -8,4 +8,6 @@
  SWE_modifier_down_localisation:0 "§G挪威独立运动每日增长将减少§!" 
  SWE_Norweign_Independence_add_localisation:0 "§R将增加挪威独立运动发展度§!"
  SWE_Norweign_Independence_effect_localisation:0 "§G将减少挪威独立运动发展度§!"
- SWE_Union_gui_title_text:0 "§B联邦一梦，千年一系······"
+ SWE_Union_gui_title_text:0 "§C联邦一梦，千年一系······§!"
+ SWE_Union_GUI_Enable_tt:0 "§C联邦化系统将启用。§!"
+ SWE_Union_gui_progress_text:0 "当前联邦化进度：§B[?SWE_Union_progress_value]§!\n当前联邦化阶段：§N[?SWE_Union_progress_stage]§!"

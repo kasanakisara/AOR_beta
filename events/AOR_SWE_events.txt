@@ -323,6 +323,9 @@ country_event = {
     option = {
         name = SWE.17.a
         add_political_power = 250
+        set_variable = { SWE_Union_progress_value = 5 }
+        set_variable = { SWE_Union_progress_stage = 0 }
+        custom_effect_tooltip = SWE_Union_GUI_Enable_tt
     }
 }
 
