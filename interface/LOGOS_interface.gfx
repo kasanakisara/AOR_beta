@@ -2267,6 +2267,18 @@ texturefile = "gfx/interface/goals/USA_Finally.png"
 }
 
 ##############################美国内战gui图标#####################################
+###美国内战北方gui图标###
+spriteTypes ={
+progressbartype = {
+name = "GFX_USA_Civil_War_Military_Resolution"
+textureFilel = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_full.png"
+textureFile2 = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_empty.png"
+size ={x=0 y=0}
+effectFile = "gfx/FX/progress.lua"
+horizontal = yes
+    }
+}
+
 spriteType = {																 	   
 name = "GFX_USA_Civil_War_Resolution_civilian"									   
 texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_civilian.png"			   
@@ -2276,6 +2288,8 @@ spriteType = {
 name = "GFX_USA_Civil_War_Resolution_gravity"									   
 texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_gravity.png"			   
 }
+
+
 ###美国内战南方gui图标###
 spriteType = {																 	   
 name = "GFX_CSA_Civil_War_Resolution_gravity"									   

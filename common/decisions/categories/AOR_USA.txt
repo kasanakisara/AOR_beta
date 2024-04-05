@@ -1,3 +1,18 @@
+#合众国内战军事决议
+USA_Civil_War_Military_Resolution = {
+	icon = GFX_USA_Civil_War_Military_Resolution_icon
+	picture = GFX_USA_Civil_War_Military_Resolution
+	scripted_gui = USA_Civil_War_Military_Resolution
+	priority = 100
+	visible = {
+		has_country_flag = USA_Civil_War_Military_Resolution_flag
+	}
+	allowed = {
+		original_tag = usa
+	}
+}
+
+#合众国内战社会决议
 USA_Civil_War_Resolution_civilian = {
 	icon = GFX_USA_Civil_War_Resolution_civilian_icon
 	picture = GFX_USA_Civil_War_Resolution_civilian
@@ -11,6 +26,7 @@ USA_Civil_War_Resolution_civilian = {
 	}
 }
 
+#合众国内战政治决议
 USA_Civil_War_Resolution_gravity = {
 	icon = GFX_USA_Civil_War_Resolution_gravity_icon
 	picture = GFX_USA_Civil_War_Resolution_gravity

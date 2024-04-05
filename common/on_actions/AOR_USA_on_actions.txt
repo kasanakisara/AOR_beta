@@ -1,0 +1,20 @@
+on_actions = {
+#合众国内战军事决议
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = USA_Civil_War_Military_Resolution
+				}
+				add_to_variable = {
+					USA_Civil_War_Military_Resolution = 1
+			    }
+				clamp_variable ={
+					var = USA_Civil_War_Military_Resolution
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+}
