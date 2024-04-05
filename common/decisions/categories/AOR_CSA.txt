@@ -1,5 +1,5 @@
 CSA_Civil_War_Resolution_gravity = {
-	icon = GFX_CSA_Civil_War_Resolution_gravity
+	icon = GFX_CSA_Civil_War_Resolution_gravity_icon
 	picture = GFX_CSA_Civil_War_Resolution_gravity
 	scripted_gui = CSA_Civil_War_Resolution_gravity
 	priority = 100
@@ -9,7 +9,7 @@ CSA_Civil_War_Resolution_gravity = {
 }
 
 CSA_Civil_War_Resolution_civilian = {
-	icon = GFX_CSA_Civil_War_Resolution_civilian
+	icon = GFX_CSA_Civil_War_Resolution_civilian_icon
 	picture = GFX_CSA_Civil_War_Resolution_civilian
 	scripted_gui = USA_CSA_Civil_War_Resolution_civilian
 	priority = 100
