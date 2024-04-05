@@ -12,13 +12,13 @@ guiTypes = {
 			font = "hoi_16mbs"
 			maxWidth = 500
 			maxHeight = 10
-			borderSize = {x = 20 y = 0}
+			borderSize = {x = 20 y = 20}
 		}
 	}
 
 	containerWindowType = {
 		name = "CSA_Civil_War_Resolution_civilian_window"
-		position = { x = 0 y = -200 } 
+		position = { x = 0 y = -260 } 
 		size = { width=100%% height=100%%}
 
 		instantTextBoxType = {
@@ -28,7 +28,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			maxWidth = 500
 			maxHeight = 10
-			borderSize = {x = 20 y = 0}
+			borderSize = {x = 20 y = 20}
 		}
 	}
 }
