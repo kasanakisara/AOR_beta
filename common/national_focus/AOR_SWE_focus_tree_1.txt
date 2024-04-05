@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_IndustryArea_Bergen
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_IndustryArea_Bergen
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Stockholm_Meeting
@@ -192,7 +192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Oslo_Exhibition
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Oslo_Exhibition
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_IndustryArea_Oslo

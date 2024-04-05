@@ -75,4 +75,12 @@ spriteTypes = {
 		name = "GFX_goal_SWE_The_Trial"
 		texturefile = "gfx/interface/goals/goal_SWE_The_Trial.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Oslo_Exhibition"
+		texturefile = "gfx/interface/goals/goal_SWE_Oslo_Exhibition.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_IndustryArea_Bergen"
+		texturefile = "gfx/interface/goals/goal_SWE_IndustryArea_Bergen.png"
+	}
 }

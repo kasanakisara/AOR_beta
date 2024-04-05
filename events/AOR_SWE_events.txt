@@ -39,6 +39,9 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.3.a
+        ai_will_do = {
+            factor = 0.5
+        }
         if = {
             limit = {
                 tag = ENG
@@ -55,6 +58,9 @@ country_event = {
     }
     option = {
         name = SWE.3.b
+        ai_will_do = {
+            factor = 0.5
+        }
         if = {
             limit = {
                 tag = ENG
@@ -336,6 +342,9 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.18.a
+        hidden_effect = {
+            country_event = { id = Tosca.1 days = 7 }
+        }
     }
 }
 
