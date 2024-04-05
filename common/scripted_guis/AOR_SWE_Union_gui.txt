@@ -13,14 +13,12 @@ scripted_gui = {
 
 scripted_gui = {
 
-	AOR_SWE_Union_gui = {
+	AOR_SWE_Union_gui_BUTTOM_WINDOW = {
 		context_type = player_context
 		window_name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
 
 		visible = {
-			ROOT = {
-				has_country_flag = SWE_GUI_4
-			}
+			has_country_flag = SWE_GUI_4
 		}
 	
 		effects = {
