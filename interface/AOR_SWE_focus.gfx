@@ -35,4 +35,36 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Liberte_Spirit"
 		texturefile = "gfx/interface/goals/goal_SWE_Liberte_Spirit.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_All_People_are_King"
+		texturefile = "gfx/interface/goals/goal_SWE_All_People_are_King.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Beyond_Nationalism"
+		texturefile = "gfx/interface/goals/goal_SWE_Beyond_Nationalism.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Found_of_British"
+		texturefile = "gfx/interface/goals/goal_SWE_Found_of_British.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Stockholm_Meeting"
+		texturefile = "gfx/interface/goals/goal_SWE_Stockholm_Meeting.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Publications_Supervision"
+		texturefile = "gfx/interface/goals/goal_SWE_Publications_Supervision.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_IndustryArea_Oslo"
+		texturefile = "gfx/interface/goals/goal_SWE_IndustryArea_Oslo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Develop_North"
+		texturefile = "gfx/interface/goals/goal_SWE_Develop_North.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Restructuring_Parliament"
+		texturefile = "gfx/interface/goals/goal_SWE_Restructuring_Parliament.png"
+	}
 }
