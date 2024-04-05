@@ -2268,12 +2268,12 @@ texturefile = "gfx/interface/goals/USA_Finally.png"
 
 ##############################美国内战gui图标#####################################
 spriteType = {																 	   
-name = "USA_Civil_War_Resolution_civilian"									   
+name = "GFX_USA_Civil_War_Resolution_civilian"									   
 texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_civilian.png"			   
 }
 
 spriteType = {																 	   
-name = "USA_Civil_War_Resolution_gravity"									   
+name = "GFX_USA_Civil_War_Resolution_gravity"									   
 texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_gravity.png"			   
 }
 

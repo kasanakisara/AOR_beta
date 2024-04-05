@@ -1,6 +1,7 @@
 USA_Civil_War_Resolution_civilian = {
 	icon = GFX_USA_Civil_War_Resolution_civilian
 	picture = GFX_USA_Civil_War_Resolution_civilian
+	scripted_gui = USA_Civil_War_Resolution_civilian
 	priority = 100
 	visible = {
 		has_country_flag = USA_Civil_War_Resolution_civilian_flag
@@ -13,6 +14,7 @@ USA_Civil_War_Resolution_civilian = {
 USA_Civil_War_Resolution_gravity = {
 	icon = GFX_USA_Civil_War_Resolution_gravity
 	picture = GFX_USA_Civil_War_Resolution_gravity
+	scripted_gui = USA_Civil_War_Resolution_gravity
 	priority = 100
 	visible = {
 		has_country_flag = USA_Civil_War_Resolution_gravity_flag
