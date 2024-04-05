@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Found_of_British
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Found_of_British
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Encourage_Capital
@@ -101,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Stockholm_Meeting
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Stockholm_Meeting
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Found_of_France
@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_IndustryArea_Oslo
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_IndustryArea_Oslo
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Stockholm_Meeting
@@ -158,7 +158,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Develop_North
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Develop_North
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Stockholm_Meeting
@@ -206,6 +206,8 @@ focus_tree = {
 		x = 3
 		y = 7
 		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.25
 			news_event = { id = AOR_news.70 }
 		}
 
@@ -249,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_All_People_are_King
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_All_People_are_King
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Proganda_to_People
@@ -277,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Beyond_Nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Beyond_Nationalism
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Liberte_Spirit
@@ -332,7 +334,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Publications_Supervision
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Publications_Supervision
 		cost = 2.00
 		prerequisite = {
 			focus = SWE_Abolish_Left_Party
@@ -423,7 +425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Restructuring_Parliament
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Restructuring_Parliament
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_Trial

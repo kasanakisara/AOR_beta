@@ -4,9 +4,13 @@ on_actions = {
 		effect = {
 			if = { 
 				limit = {
-					tag = SWE
+					ROOT = {
+						tag = SWE
+					}
 				}
-				country_event = { id = Tosca.1 days = 7 }
+				ROOT = {
+					country_event = { id = Tosca.1 days = 7 }
+				}
 			}
 		}
 	}

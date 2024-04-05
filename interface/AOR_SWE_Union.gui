@@ -1,3 +1,18 @@
+guiTypes = {#开关
+	containerWindowType = {
+		name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
+		position = { x = 20 y = -190 }
+		Orientation = LOWER_RIGHT
+		Origo = LOWER_RIGHT
+		size = { width = 100 height= 100 }
+		buttonType = { 
+			name = "SWE_Union_gui_buttom"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Union_GUI_Openbottom"
+		}
+	}
+}
+
 guiTypes = {
 	containerWindowType = {
 		name = "AOR_SWE_Union_gui"
@@ -10,20 +25,16 @@ guiTypes = {
 			name = "blackground"
 			spriteType = "GFX_tiled_plain_bg"
 		}
-	}
-}
 
-guiTypes = {#开关
-	containerWindowType = {
-		name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
-		position = { x = 20 y = -190 }
-		Orientation = LOWER_RIGHT
-		Origo = LOWER_RIGHT
-		size = { width = 100 height= 100 }
-		buttonType = { 
-			name = "AOR_SWE_Union_gui_buttom"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_Union_GUI_Openbottom"
+		instantTextboxType = {
+			name = "SWE_Union_gui_title"
+			position = { x = 0 y = 25 }
+			orientation = left_up
+			font = "hoi_36header"
+			text = "SWE_Union_gui_title_text"
+			format = centre
+			maxWidth = 1600
+			maxHeight = 50
 		}
 	}
 }
