@@ -1,0 +1,221 @@
+#合众国内战社会决议
+USA_Civil_War_Resolution_civilian = {
+    #基础决议
+    #调整工厂生产-民用重心
+    USA_Adjust_the_center_of_gravity_of_factory_production_civilian = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_supply_of_consumer_goods
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5
+        }
+
+        cost = 100
+
+        modifier = {
+            production_speed_industrial_complex_factor = 0.5
+			production_speed_infrastructure_factor = 0.1
+			consumer_goods_factor = -0.1
+		}
+
+        complete_effect = {
+        }
+    }
+
+    #调整工厂生产-军用重心
+    USA_Adjust_the_center_of_gravity_of_factory_production_military_center_of_gravity = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Emergency_production_conversion
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+        modifier = {
+            production_speed_arms_factory_factor = 0.2
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = 0.1
+		}
+
+        complete_effect = {
+        }
+    }
+
+    #发放储蓄仓库救济
+    USA_Grant_savings_warehouse_relief = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Ensure_sales_channels
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 90
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        modifier = {
+            stability_factor = 0.1
+			war_support_factor = 0.05
+			consumer_goods_factor = 0.05
+		}
+
+        cost = 50
+
+        complete_effect = {
+        }
+    }
+}
+
+
+#合众国内战政治决议
+USA_Civil_War_Resolution_gravity = {
+    #基础决议
+    #清除危险分子
+    USA_Eliminate_dangerous_elements = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Free_play_arrest_traitors
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 30
+        ai_will_do = {
+            factor = 0.5
+        }
+
+        cost = 30
+
+        modifier = {
+			stability_factor = -0.05
+			war_support_factor = 0.1
+		}
+
+        complete_effect = {
+            add_manpower = -300
+        }
+    }
+
+     #促进五大湖地区政治团结
+    USA_Promote_political_unity_in_the_Great_Lakes_region = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Let_s_face_the_storm
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 180
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+
+        modifier = {
+			olitical_power_gain = -0.1
+			stability_factor = 0.1
+			war_support_factor = 0.05
+		}
+
+        complete_effect = {
+        }
+    }
+
+     #促进东海岸地区政治团结
+     USA_Promote_political_unity_on_the_East_Coast = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Let_s_face_the_storm
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 180
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+
+        modifier = {
+			olitical_power_gain = -0.1
+			stability_factor = 0.1
+			war_support_factor = 0.05
+		}
+
+        complete_effect = {
+        }
+    }
+
+      #促进新英格兰地区政治团结
+      USA_Promote_political_unity_in_New_England = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Let_s_face_the_storm
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 180
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+
+        modifier = {
+			olitical_power_gain = -0.1
+			stability_factor = 0.1
+			war_support_factor = 0.05
+		}
+
+        complete_effect = {
+        }
+    }
+
+      #促进阿巴拉契亚-中部地区政治团结
+      USA_Promote_political_unity_in_the_Appalachian_and_Central_regions = {
+        available = {
+        date > 1921.7.1
+        has_completed_focus = USA_Let_s_face_the_storm
+    }
+        allowed = {
+			original_tag = USA
+		}
+        days_remove = 180
+        ai_will_do = {
+            factor = 0.5 
+        }
+
+        cost = 100
+
+
+        modifier = {
+			olitical_power_gain = -0.1
+			stability_factor = 0.1
+			war_support_factor = 0.05
+		}
+
+        complete_effect = {
+        }
+    }
+}

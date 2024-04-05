@@ -1390,3 +1390,29 @@ news_event = { #沃伦·盖玛利尔·哈定当选美国总统
 		name = AOR_news.81.a
 	}
 }
+
+news_event = { #美国宣布提高关税
+	id = AOR_news.82
+	title = AOR_news.82.t
+	desc = AOR_news.82.d
+	picture = GFX_AOR_news.82_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.82.a
+	}
+}
+
+news_event = { #美国重新调整经济计划
+	id = AOR_news.83
+	title = AOR_news.83.t
+	desc = AOR_news.83.d
+	picture = GFX_AOR_news.83_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.83.a
+	}
+}

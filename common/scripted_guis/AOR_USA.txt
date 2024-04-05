@@ -1,0 +1,25 @@
+scripted_gui = {
+	USA_Civil_War_Resolution_civilian = {
+		context_type = decision_category
+		window_name = "USA_Civil_War_Resolution_civilian_window"
+		visible = {
+			tag = USA
+		}
+		properties = {
+		}
+		triggers = {
+		}
+	}
+	USA_Civil_War_Resolution_gravity = {
+		context_type = decision_category
+		window_name = "USA_Civil_War_Resolution_gravity_window"
+		visible = {
+			tag = USA
+		}
+		properties = {
+		}
+		triggers = {
+		}
+	}
+}
+

@@ -24,7 +24,7 @@ state={
 
 	}
 	resources = {
-		steel = 30 # was: 100
+		steel = 20 # was: 100
 		aluminium = 15 # was: 30
 		tungsten = 20 # was: 140
 	}

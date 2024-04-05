@@ -950,6 +950,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10022.a
+		news_event = {id=AOR_news.82}
 	}	
 }
 country_event = {
@@ -1078,6 +1079,50 @@ country_event = {
 	 }
     option = { 
         name = USA.10032.a
+	
+	}
+}
+
+country_event = {
+	id = USA.10033 #采访
+	title = USA.10033.t
+	desc = USA.10033.d
+	picture = GFX_USA_event_10033
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10033.a
+	}	
+}
+
+country_event = {
+	id = USA.10034 #飞翔的雄鹰（4）
+    title = USA.10034.t
+    desc = USA.10034.d
+	picture = GFX_USA_event_10034
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1920.7.1
+	 }
+    option = { 
+        name = USA.10034.a
+	
+	}
+}
+
+country_event = {
+	id = USA.10035 #白宫访客
+    title = USA.10035.t
+    desc = USA.10035.d
+	picture = GFX_USA_event_10035
+	fire_only_once = yes
+         trigger = {
+           tag = USA
+	       date = 1921.7.1
+	 }
+    option = { 
+        name = USA.10035.a
 	
 	}
 }

@@ -2261,10 +2261,21 @@ name = "GFX_goal_USA_the_east"
 texturefile = "gfx/interface/goals/USA_the_east.png"
 }
 
-    spriteType = {
-        name = "GFX_goal_USA_Finally"
-        texturefile = "gfx/interface/goals/USA_Finally.png"
-    }
+spriteType = {
+name = "GFX_goal_USA_Finally"
+texturefile = "gfx/interface/goals/USA_Finally.png"
+}
+
+##############################美国内战gui图标#####################################
+spriteType = {																 	   
+name = "GFX_USA_Civil_War_Resolution_civilian"									   
+texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_civilian.png"			   
+}
+
+spriteType = {																 	   
+name = "GFX_USA_Civil_War_Resolution_gravity"									   
+texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_gravity.png"			   
+}
 
 	#######################梵蒂冈国策
 	spriteType = {

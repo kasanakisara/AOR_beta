@@ -5,14 +5,18 @@ focus_tree={
 		modifier={
 			add=10
 			OR = {
-				tag=CBS
-			tag = DCD
-			tag = JLD
-			tag = MEN
-			tag = SHX
-			tag  = SIK
-			tag = XCD
-			tag = XSM
+				tag = FUJ
+				tag = ANH
+				tag = ZHE
+				tag = JIZ
+				tag = CBS
+		    	tag = DCD
+		     	tag = JLD
+		     	tag = MEN
+		     	tag = SHX
+		    	tag = SIK
+		    	tag = XCD
+		    	tag = XSM
 		}
 			
 
