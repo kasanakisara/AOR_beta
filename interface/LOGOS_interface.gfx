@@ -2283,19 +2283,6 @@ name = "GFX_goal_USA_Finally"
 texturefile = "gfx/interface/goals/USA_Finally.png"
 }
 
-##############################美国内战gui图标#####################################
-###美国内战北方gui图标###
-spriteTypes ={
-progressbartype = {
-name = "GFX_USA_Civil_War_Military_Resolution"
-textureFilel = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_full.png"
-textureFile2 = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_empty.png"
-size ={x = 433 y = 181}
-effectFile = "gfx/FX/progress.lua"
-horizontal = yes
-    }
-}
-
 
 
 

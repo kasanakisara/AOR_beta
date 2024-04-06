@@ -58,7 +58,7 @@ guiTypes = { #主体结构
 			name = "SWE_Union_progress_text"
 			position = { x = 1250 y = 135 }
 			orientation = left_up
-			font = "hoi_36header"
+			font = "hoi_20b"
 			text = "SWE_Union_gui_progress_text"
 			format = center
 			maxWidth = 235

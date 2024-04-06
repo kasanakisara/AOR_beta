@@ -8,3 +8,13 @@ SWE_Norweign_Independence_decision_categories = {
 		tag = SWE
 	}
 }
+
+SWE_Hackers_debug = {
+	priority = 110
+	visible = {
+		is_debug = yes
+	}
+	allowed = {
+		is_debug = yes
+	}
+}

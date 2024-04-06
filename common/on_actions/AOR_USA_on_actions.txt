@@ -6,9 +6,7 @@ on_actions = {
 				limit = {
 					has_country_flag = USA_Reorganization_of_the_state_National_Guard
 				}
-				add_to_variable = {
-					USA_Civil_War_Military_Resolution = 100
-			    }
+				add_to_variable = { USA_Civil_War_Military_Resolution = 100 }
 				clamp_variable ={
 					var = USA_Civil_War_Military_Resolution
 					min = 0
@@ -19,9 +17,7 @@ on_actions = {
                 limit = {
                     has_country_flag = USA_Recall_of_the_reserves
 				}
-                add_to_variable = {
-					USA_Civil_War_Military_Resolution = 30
-				}
+                add_to_variable = { USA_Civil_War_Military_Resolution = 30 }
                 clamp_variable = {
                     var = USA_Civil_War_Military_Resolution
                     min = 0
@@ -32,9 +28,7 @@ on_actions = {
                 limit = {
 					has_country_flag = USA_Recruit_new_recruits
 				}
-                add_to_variable = {
-					USA_Civil_War_Military_Resolution = 10
-				}
+                add_to_variable = { USA_Civil_War_Military_Resolution = 10 }
                 clamp_variable = {
 					var = USA_Civil_War_Military_Resolution
 					min = 0
@@ -45,9 +39,7 @@ on_actions = {
                 limit = {
 					has_country_flag = USA_The_states_are_urged_to_procure_weapons
 				}
-                add_to_variable = {
-					USA_Civil_War_Military_Resolution = 10
-				}
+                add_to_variable = { USA_Civil_War_Military_Resolution = 10 }
                 clamp_variable = {
 					var = USA_Civil_War_Military_Resolution
 					min = 0
