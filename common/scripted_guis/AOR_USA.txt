@@ -1,12 +1,17 @@
 scripted_gui = {
 	USA_Civil_War_Military_Resolution = {
 		context_type = decision_category
-		window_name = "USA_Civil_War_Military_Resolution_window"
+		window_name = "USA_Civil_War_Military_Resolution"
+		visible = {
+			has_country_flag = USA_Civil_War_Military_Resolution_flag
+		}
 		properties ={
-		USA_Reorganization_of_the_state_National_Guard = {frame = 100}
-		USA_Recall_of_the_reserves = {frame = 30}
-		USA_Recruit_new_recruits = {frame = 10}
-		USA_The_states_are_urged_to_procure_weapons = {frame = 10}
+		USA_Civil_War_Military_Resolution = {
+		frame =USA_Reorganization_of_the_state_National_Guard
+		frame =USA_Recall_of_the_reserves
+		frame =USA_Recruit_new_recruits
+		frame =USA_The_states_are_urged_to_procure_weapons
+	        }
 	    }
 	}
 	USA_Civil_War_Resolution_civilian = {

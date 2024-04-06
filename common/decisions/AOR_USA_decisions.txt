@@ -12,9 +12,12 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
+        visible = {is_debug = yes}
+
         cost = 80
 
         complete_effect = {
+            set_country_flag = USA_Reorganization_of_the_state_National_Guard
             add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 100 }
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation
         }
@@ -28,9 +31,12 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
+        visible = {is_debug = yes}
+
         cost = 20
 
         complete_effect = {
+            set_country_flag = USA_Recall_of_the_reserves
             add_to_variable = { USA_Recall_of_the_reserves = 30 }
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_1
         }
@@ -44,9 +50,12 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
+        visible = {is_debug = yes}
+
         cost = 30
 
         complete_effect = {
+            set_country_flag = USA_Recruit_new_recruits
             add_to_variable = { USA_Recruit_new_recruits = 10 }
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_2
         }
@@ -60,9 +69,12 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
+        visible = {is_debug = yes}
+
         cost = 40
 
         complete_effect = {
+            set_country_flag = USA_The_states_are_urged_to_procure_weapons
             add_to_variable = { USA_The_states_are_urged_to_procure_weapons = 10 }
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_3
         }
