@@ -1,6 +1,7 @@
 #合众国内战军事决议
 USA_Civil_War_Military_Resolution = {
 	icon = GFX_USA_Civil_War_Military_Resolution_icon
+	picture = GFX_decision_USA_Civil_War_Military_Resolution_pic
 	scripted_gui = USA_Civil_War_Military_Resolution
 	priority = 100
 	visible = {

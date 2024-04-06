@@ -3,17 +3,12 @@ guiTypes = {
     containerwindowType = {
         name = "USA_Civil_War_Military_Resolution"
         position ={x = 0 y = -400 }
-        size = { width = 100%% height= 800 }
+        size = { width = 100%% height= 450 }
 
         iconType ={
             name ="USA_Civil_War_Military_Resolution_progress_bar"
             spriteType = "GFX_USA_Civil_War_Military_Resolution_progress_bar"
-            position = { x= 300 y= 285 }
-        }
-        iconType = {
-            name = "USA_Civil_War_Military_Resolution_pic"
-            spriteType = "GFX_decision_USA_Civil_War_Military_Resolution_pic"
-            position = { x = 0  y = 0}
+            position = { x= 300 y= -15 }
         }
         instantTextBoxType={
             name ="USA_Civil_War_Military_Resolution_tt_desc"
@@ -22,7 +17,7 @@ guiTypes = {
             font = "hoi_16mbs"
             format = center
             maxHeight = 10
-            borderSize = {x = 10 y = 300}
+            borderSize = {x = 10 y = 0}
         }
     }
 
