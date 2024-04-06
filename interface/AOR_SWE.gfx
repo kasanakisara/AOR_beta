@@ -78,7 +78,7 @@ spriteTypes = {
 		name = "GFX_Union_GUI_progressbar"
 		textureFile1 = "gfx/AOR_gui/SWE/SWE_progress_full.png"
 		textureFile2 = "gfx/AOR_gui/SWE/SWE_progress_empty.png"
-		size = { x = 324 y = 720 }
+		size = { x = 568 y = 156 }
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = no
 	}

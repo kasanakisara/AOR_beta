@@ -83,4 +83,16 @@ spriteTypes = {
 		name = "GFX_goal_SWE_IndustryArea_Bergen"
 		texturefile = "gfx/interface/goals/goal_SWE_IndustryArea_Bergen.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Imprisoned_Left_Leaders"
+		texturefile = "gfx/interface/goals/goal_SWE_Imprisoned_Left_Leaders.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Restrictions_on_Gatherings"
+		texturefile = "gfx/interface/goals/goal_SWE_Restrictions_on_Gatherings.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Rope_Right"
+		texturefile = "gfx/interface/goals/goal_SWE_Rope_Right.png"
+	}
 }
