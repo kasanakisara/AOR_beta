@@ -1,3 +1,4 @@
+#联盟国内战政治决议
 CSA_Civil_War_Resolution_gravity = {
 	icon = GFX_CSA_Civil_War_Resolution_gravity_icon
 	picture = GFX_CSA_Civil_War_Resolution_gravity
@@ -8,6 +9,7 @@ CSA_Civil_War_Resolution_gravity = {
 	}
 }
 
+#联盟国内战社会决议
 CSA_Civil_War_Resolution_civilian = {
 	icon = GFX_CSA_Civil_War_Resolution_civilian_icon
 	picture = GFX_CSA_Civil_War_Resolution_civilian
