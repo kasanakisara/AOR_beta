@@ -348,7 +348,7 @@ spriteTypes = {
 		name = "GFX_decision_CHI_election"
 		texturefile = "gfx/interface/decisions/decision_CHI_election.png"
 	}
-	#美国政治经济决议图片
+	#美国政治经济决议图片（北方）
 	spriteType = {
 		name = "GFX_decision_USA_Civil_War_Resolution_civilian_pic"
 		texturefile = "gfx/interface/decisions/decision_USA_Civil_War_Resolution_civilian_pic.png"
@@ -357,6 +357,7 @@ spriteTypes = {
 		name = "GFX_decision_USA_Civil_War_Resolution_gravity_pic"
 		texturefile = "gfx/interface/decisions/decision_USA_Civil_War_Resolution_gravity_pic.png"
 	}
+	#美国政治经济决议图片（南方）
 	spriteType = {
 		name = "GFX_decision_CSA_Civil_War_Resolution_gravity_pic"
 		texturefile = "gfx/interface/decisions/decision_CSA_Civil_War_Resolution_gravity_pic.png"
