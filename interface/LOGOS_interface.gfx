@@ -348,6 +348,23 @@ spriteTypes = {
 		name = "GFX_decision_CHI_election"
 		texturefile = "gfx/interface/decisions/decision_CHI_election.png"
 	}
+	#美国政治经济决议图片
+	spriteType = {
+		name = "GFX_decision_USA_Civil_War_Resolution_civilian_pic"
+		texturefile = "gfx/interface/decisions/decision_USA_Civil_War_Resolution_civilian_pic.png"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_Civil_War_Resolution_gravity_pic"
+		texturefile = "gfx/interface/decisions/decision_USA_Civil_War_Resolution_gravity_pic.png"
+	}
+	spriteType = {
+		name = "GFX_decision_CSA_Civil_War_Resolution_gravity_pic"
+		texturefile = "gfx/interface/decisions/decision_CSA_Civil_War_Resolution_gravity_pic.png"
+	}
+	spriteType = {
+		name = "GFX_decision_CSA_Civil_War_Resolution_civilian_pic"
+		texturefile = "gfx/interface/decisions/decision_CSA_Civil_War_Resolution_civilian_pic.png"
+	}
 	#小船决议
 	spriteType = {
 		name = "GFX_decision_ship"
@@ -2279,27 +2296,8 @@ horizontal = yes
     }
 }
 
-spriteType = {																 	   
-name = "GFX_USA_Civil_War_Resolution_civilian"									   
-texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_civilian.png"			   
-}
-
-spriteType = {																 	   
-name = "GFX_USA_Civil_War_Resolution_gravity"									   
-texturefile = "gfx/AOR_gui/USA/USA_Civil_War_Resolution_gravity.png"			   
-}
 
 
-###美国内战南方gui图标###
-spriteType = {																 	   
-name = "GFX_CSA_Civil_War_Resolution_gravity"									   
-texturefile = "gfx/AOR_gui/USA/CSA_Civil_War_Resolution_gravity.png"			   
-}
-
-spriteType = {																 	   
-name = "GFX_CSA_Civil_War_Resolution_civilian"									   
-texturefile = "gfx/AOR_gui/USA/CSA_Civil_War_Resolution_civilian.png"			   
-}
 
 	#######################梵蒂冈国策
 	spriteType = {

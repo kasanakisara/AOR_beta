@@ -1,34 +1,3 @@
 guiTypes = {
-	#联盟国内战政治决议
-	containerWindowType = {
-		name = "CSA_Civil_War_Resolution_gravity_window"
-		position = { x = 0 y = -200 } 
-		size = { width=100%% height=100%%}
 
-		instantTextBoxType = {
-			name = "CSA_Civil_War_Resolution_gravity_tt_desc"
-			position = { x = 0 y = 0 }
-			text = "CSA_Civil_War_Resolution_gravity_tt_desc"
-			font = "hoi_16mbs"
-			maxWidth = 500
-			maxHeight = 10
-			borderSize = {x = 20 y = 20}
-		}
-	}
-    #联盟国内战社会决议
-	containerWindowType = {
-		name = "CSA_Civil_War_Resolution_civilian_window"
-		position = { x = 0 y = -260 } 
-		size = { width=100%% height=100%%}
-
-		instantTextBoxType = {
-			name = "CSA_Civil_War_Resolution_civilian_tt_desc"
-			position = { x = 0 y = 0 }
-			text = "CSA_Civil_War_Resolution_civilian_tt_desc"
-			font = "hoi_16mbs"
-			maxWidth = 500
-			maxHeight = 10
-			borderSize = {x = 20 y = 20}
-		}
-	}
 }

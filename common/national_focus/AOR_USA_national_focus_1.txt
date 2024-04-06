@@ -33,7 +33,6 @@ focus_tree={
 		cost=2.00
 		completion_reward={
 			add_political_power=50
-			custom_effect_tooltip = USA_Achallenge
 		country_event={
 			id = USA.10019
 			}
@@ -68,7 +67,6 @@ focus_tree={
 					instant_build=yes
 				}
 			}
-			custom_effect_tooltip = USA_ASanFrancisco
 		}
 	}
 	focus={
@@ -139,11 +137,13 @@ focus_tree={
 			date > 1919.8.7
 		}
 		completion_reward={
+			custom_effect_tooltip = USA_ADetroit
+				hidden_effect = {
 			add_ideas=USA_GreatLakesA
 			country_event={
 				id = USA.10001
 			}
-			custom_effect_tooltip = USA_ADetroit
+		  }
 		}
 	}
 	focus={
@@ -165,6 +165,7 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
+			hidden_effect = {
 			add_timed_idea={
 				idea=USA_MartialLawA
 				days=180
@@ -172,6 +173,7 @@ focus_tree={
 			country_event={
 				id = USA.10008
 			}
+		  }
 			custom_effect_tooltip = USA_AMartialLaw
 		}
 	}
@@ -183,10 +185,12 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
+		  hidden_effect = {
 			add_timed_idea={
 				idea=USA_AppeaseA
 				days=180
 			}
+		  }
 			custom_effect_tooltip = USA_AAppease
 		}
 	}
@@ -221,7 +225,6 @@ focus_tree={
 			country_event={
 				id = USA.10006
 			}
-			custom_effect_tooltip = USA_AIntelligenceStation
 		}
 	}
 	focus={
@@ -248,12 +251,12 @@ focus_tree={
 		prerequisite={focus=USA_Criticize}
 		cost=0.00
 		completion_reward={
-			swap_ideas={
-				remove_idea=USA_GreatLakes2A
-				add_idea=USA_AmericanAnxietyA
-			}
 			hidden_effect={
 				load_focus_tree = USA_2
+				swap_ideas={
+				remove_idea=USA_GreatLakes2A
+				add_idea=USA_AmericanAnxietyA
+				}
 			}
 			custom_effect_tooltip = USA_ANewYear
 		}
