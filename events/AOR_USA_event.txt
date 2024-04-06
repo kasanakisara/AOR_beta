@@ -658,6 +658,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10002.a
+		custom_effect_tooltip = USA_ASanFrancisco
 	}	
 }
 country_event = {

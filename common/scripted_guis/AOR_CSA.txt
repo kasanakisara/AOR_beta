@@ -1,25 +1,3 @@
 scripted_gui = {
-	CSA_Civil_War_Resolution_gravity = {
-		context_type = decision_category
-		window_name = "CSA_Civil_War_Resolution_gravity_window"
-		visible = {
-			tag = CSA
-		}
-		properties = {
-		}
-		triggers = {
-		}
-	}
-	CSA_Civil_War_Resolution_civilian = {
-		context_type = decision_category
-		window_name = "CSA_Civil_War_Resolution_civilian_window"
-		visible = {
-			tag = CSA
-		}
-		properties = {
-		}
-		triggers = {
-		}
-	}
 }
 
