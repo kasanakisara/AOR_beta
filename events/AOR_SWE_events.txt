@@ -17,7 +17,7 @@ country_event = {
             clr_country_flag = SWE_GUI_1
             clr_country_flag = SWE_GUI_4
             set_country_flag = SWE_GUI_2
-            country_event = { id = Haakon.1 }
+            country_event = { id = Haakon.1 days = 5 }
         }
     }
 }
@@ -343,7 +343,7 @@ country_event = {
     option = {
         name = SWE.18.a
         hidden_effect = {
-            country_event = { id = Tosca.1 days = 7 }
+            country_event = { id = Tosca.1 days = 2 }
         }
     }
 }
@@ -388,28 +388,28 @@ country_event = {
 }
 
 country_event = {
-    id = Tosca.1 #自新大陆（1）
+    id = Tosca.1 #自新大陆
     title = Tosca.1.t
     desc = Tosca.1.d
     is_triggered_only = yes
     option = {
         name = Tosca.1.a
         hidden_effect = {
-            country_event = { id = Tosca.2 days = 7 }
+            country_event = { id = Tosca.2 days = 5 }
         }
 
     }
 }
 
 country_event = {
-    id = Tosca.2 #自新大陆（2）
+    id = Tosca.2 #混乱的间隙
     title = Tosca.2.t
     desc = Tosca.2.d
     is_triggered_only = yes
     option = {
         name = Tosca.2.a
         hidden_effect = {
-            country_event = { id = Tosca.3 days = 7 }
+            country_event = { id = Tosca.3 days = 10 }
         }
 
     }
@@ -423,7 +423,7 @@ country_event = {
     option = {
         name = Tosca.3.a
         hidden_effect = {
-            country_event = { id = Tosca.4 days = 7 }
+            country_event = { id = Tosca.4 days = 2 }
         }
 
     }
