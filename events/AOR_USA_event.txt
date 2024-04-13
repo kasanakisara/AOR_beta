@@ -802,8 +802,8 @@ country_event = {
          trigger = {
            tag = USA
 	       date = 1919.12.10
-	 }
-    option = { 
+	}
+	option = { 
         name = USA.10011.a
 	
 	}
@@ -814,10 +814,10 @@ country_event = {
     desc = USA.10012.d
 	picture = GFX_USA_event_10012
 	fire_only_once = yes
-         trigger = {
-           tag = USA
-	       date = 1919.12.10
-	 }
+	trigger = {
+		tag = USA
+		date = 1919.12.10
+    }
     option = { 
         name = USA.10012.a
 	
@@ -861,11 +861,22 @@ country_event = {
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1921.6.20
+	       date = 1921.7.20
 	 }
     option = { 
         name = USA.10015.a
-	
+		country_event = {
+			id = USA.10016 #美国左翼文案 拉福伊
+			title = USA.10016.t
+			desc = USA.10016.d
+			picture = GFX_USA_event_10016
+			is_triggered_only = yes
+			fire_only_once = yes
+			option = { 
+				name = USA.10016.a
+			
+			}
+		}
 	}
 }
 country_event = {
@@ -873,11 +884,8 @@ country_event = {
     title = USA.10016.t
     desc = USA.10016.d
 	picture = GFX_USA_event_10016
+	is_triggered_only = yes
 	fire_only_once = yes
-         trigger = {
-           tag = USA
-	       date = 1921.6.25
-	 }
     option = { 
         name = USA.10016.a
 	
@@ -1002,7 +1010,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10027 #总统(1921)
+	id = USA.10027 #总统-白宫(1921)
 	title = USA.10027.t
 	desc = USA.10027.d
 	picture = GFX_USA_event_10027
@@ -1028,13 +1036,8 @@ country_event = {
 	title = USA.10029.t
 	desc = USA.10029.d
 	picture = GFX_USA_event_10029
+	is_triggered_only = yes
 	fire_only_once = yes
-
-		trigger = {
-			tag = USA
-	    	date = 1920.11.10
-	} 
-
 	option = {
 		name=USA.10029.a
 		news_event = {id=AOR_news.81}
@@ -1054,7 +1057,19 @@ country_event = {
 
 	option = {
 		name=USA.10030.a
-	}	
+		country_event = {
+			id = USA.10029 #沃伦·盖玛利尔·哈定当选美国总统
+			title = USA.10029.t
+			desc = USA.10029.d
+			picture = GFX_USA_event_10029
+			is_triggered_only = yes
+			fire_only_once = yes
+			option = {
+				name=USA.10029.a
+				news_event = {id=AOR_news.81}
+			}	
+		}
+	}
 }
 country_event = {
 	id = USA.10031 #工作-加入骑士团（故事）

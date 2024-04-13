@@ -18,6 +18,7 @@ USA_Civil_War_Military_Resolution = {
 
         complete_effect = {
             add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 100 }
+            add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation
         }
     }
@@ -36,6 +37,7 @@ USA_Civil_War_Military_Resolution = {
 
         complete_effect = {
             add_to_variable = { USA_Recall_of_the_reserves = 30 }
+            add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_1
         }
     }
@@ -54,6 +56,7 @@ USA_Civil_War_Military_Resolution = {
 
         complete_effect = {
             add_to_variable = { USA_Recruit_new_recruits = 10 }
+            add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_2
         }
     }
@@ -72,6 +75,7 @@ USA_Civil_War_Military_Resolution = {
 
         complete_effect = {
             add_to_variable = { USA_The_states_are_urged_to_procure_weapons = 10 }
+            add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_3
         }
     }
