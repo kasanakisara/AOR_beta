@@ -8,7 +8,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag = CSA
 		}
-        days_remove = 720
+        fire_only_once =  Yes
         ai_will_do = {
             factor = 0.5
         }
@@ -16,11 +16,10 @@ CSA_Civil_War_Resolution_gravity = {
         cost = 50
 
         modifier = {
-            stability_factor = 0.1
-			war_support_factor = 0.05
 		}
 
         complete_effect = {
+            add_stability = 0.1
         }
     }
 
@@ -32,7 +31,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag = CSA
 		}
-        days_remove = 720
+        fire_only_once =  Yes
         ai_will_do = {
             factor = 0.5 
         }
@@ -40,10 +39,10 @@ CSA_Civil_War_Resolution_gravity = {
         cost = 150
 
         modifier = {
-            stability_factor = 0.1
 		}
 
         complete_effect = {
+            add_stability = 0.1
         }
     }
 
@@ -79,18 +78,18 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag =CSA
 		}
-        days_remove = 720
+        fire_only_once =  Yes
         ai_will_do = {
             factor = 0.5 
         }
 
         modifier = {
-			stability_factor = 0.1
 		}
 
         cost = 150
 
         complete_effect = {
+            add_stability = 0.1
         }
     }
 
