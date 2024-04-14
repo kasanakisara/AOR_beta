@@ -211,7 +211,7 @@ CSA_Civil_War_Resolution_civilian = {
      #吸纳黑人入伍
     CSA_Recruit_blacks_into_the_military = {
         available = {
-        date > 1921.8.1
+            has_completed_focus = CSA_And_throw_it_into_the_trench
     }
         allowed = {
 			original_tag = CSA
@@ -228,12 +228,42 @@ CSA_Civil_War_Resolution_civilian = {
 			stability_factor = -0.05
 			war_support_factor = -0.05
             army_org_factor = -0.05
+            monthly_population = -0.001
 		}
 
         complete_effect = {
             add_manpower = 20000
         }
     }
+
+         #对罪犯进行强制劳役
+         CSA_Forced_labour_for_convicts = {
+            available = {
+                has_completed_focus = CSA_Measures_for_Black_People
+        }
+            allowed = {
+                original_tag = CSA
+            }
+            days_remove = 60
+            ai_will_do = {
+                factor = 0.5 
+            }
+    
+            cost = 80
+    
+    
+            modifier = {
+                war_support_factor = -0.05
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                monthly_population = -0.001
+            }
+    
+            complete_effect = {
+                add_manpower = 5000
+            }
+        }
 
      #打击北方势力
      CSA_Fight_against_the_forces_of_the_North = {
