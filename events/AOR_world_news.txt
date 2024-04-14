@@ -1,7 +1,5 @@
 add_namespace = AOR_news
 ###############################################
-#缺少的序号，新写的新闻可以补成这几个序号：16，
-###############################################
 
 news_event = { #苏维埃宣告成立(RUS-SOV) - NewsEvents_SOV_timeaxis.1
 	id = AOR_news.1
@@ -1414,5 +1412,18 @@ news_event = { #美国重新调整经济计划
 
 	option = {
 		name = AOR_news.83.a
+	}
+}
+
+news_event = {#奥斯陆枪击案
+	id = AOR_news.84
+	title = AOR_news.84.t
+	desc = AOR_news.84.d
+	picture = GFX_AOR_news.84_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.84.a
 	}
 }
