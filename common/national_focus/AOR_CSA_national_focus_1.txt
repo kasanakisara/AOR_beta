@@ -271,6 +271,9 @@ focus_tree={
 				remove_idea = Dixie_Goes_Again_2
 				add_idea = Dixie_Goes_Again_3
 			}
+			add_popularity = { ideology = SOC_democratic popularity = 0.05 }
+			add_popularity = { ideology = AUT_democratic popularity = 0.05 }
+			add_popularity = { ideology = FRE_democratic popularity = -0.05 }
 		}
 	}
 	focus={
