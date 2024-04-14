@@ -6,13 +6,13 @@ USA_Civil_War_Military_Resolution = {
         available = {
             date > 1921.7.1
             has_completed_focus = USA_Emergency_conscription_law
-            }
+        }
         days_remove = 180
         ai_will_do = {
             factor = 0.5
         }
 
-        visible = {is_debug = yes}
+        visible = {has_country_flag = USA_Civil_War_Military_Resolution_flag}
 
         cost = 80
 
@@ -20,6 +20,15 @@ USA_Civil_War_Military_Resolution = {
             add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 100 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                    }
+                }
+                USA_Civil_War_Military_check = yes
+            }
         }
     }
 
@@ -31,7 +40,7 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
-        visible = {is_debug = yes}
+        visible = {has_country_flag = USA_Civil_War_Military_Resolution_flag}
 
         cost = 20
 
@@ -39,6 +48,15 @@ USA_Civil_War_Military_Resolution = {
             add_to_variable = { USA_Recall_of_the_reserves = 30 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_1
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                    }
+                }
+                USA_Civil_War_Military_check = yes
+            }
         }
     }
 
@@ -50,7 +68,7 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
-        visible = {is_debug = yes}
+        visible = {has_country_flag = USA_Civil_War_Military_Resolution_flag}
 
         cost = 30
 
@@ -58,6 +76,15 @@ USA_Civil_War_Military_Resolution = {
             add_to_variable = { USA_Recruit_new_recruits = 10 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_2
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                    }
+                }
+                USA_Civil_War_Military_check = yes
+            }
         }
     }
 
@@ -69,7 +96,7 @@ USA_Civil_War_Military_Resolution = {
             factor = 0.5
         }
 
-        visible = {is_debug = yes}
+        visible = {has_country_flag = USA_Civil_War_Military_Resolution_flag}
 
         cost = 40
 
@@ -77,6 +104,15 @@ USA_Civil_War_Military_Resolution = {
             add_to_variable = { USA_The_states_are_urged_to_procure_weapons = 10 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_3
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
+                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                    }
+                }
+                USA_Civil_War_Military_check = yes
+            }
         }
     }
 }
