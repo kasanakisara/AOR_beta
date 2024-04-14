@@ -304,6 +304,75 @@ country_event = {
 			     add_idea = USA_the_divided_nation3
 		}
 	}
+	option = {
+		name = USA.100.b
+		CSA = {
+			change_tag_from = ROOT
+		}
+		news_event = {id=AOR_news.64}
+		hidden_effect = {
+		CSA = {
+				transfer_state = 366
+				transfer_state = 365
+				transfer_state = 364
+				transfer_state = 363
+				transfer_state = 362
+				transfer_state = 368
+				transfer_state = 367
+				transfer_state = 370
+				transfer_state = 372
+				transfer_state = 371
+				transfer_state = 375
+				transfer_state = 374
+				transfer_state = 932
+				transfer_state = 922
+				add_state_core = 366
+				add_state_core = 365
+				add_state_core = 364
+				add_state_core = 363
+				add_state_core = 362
+				add_state_core = 368
+				add_state_core = 367
+				add_state_core = 370
+				add_state_core = 372
+				add_state_core = 371
+				add_state_core = 375
+				add_state_core = 374
+				add_state_core = 932
+				add_state_core = 922
+				add_state_core = 383
+				add_state_core = 926
+				add_state_core = 923
+				add_state_core = 924
+				add_state_core = 925
+				add_state_core = 381
+				add_state_core = 388
+				add_state_core = 386
+				add_manpower = 10000
+				load_oob = "CSA_Civilwar"		
+			}
+			USA = {
+				set_popularities = {
+					FRE_democratic = 61
+					CON_democratic = 8
+					SOC_democratic = 20
+					Fascism = 5
+					Absolutism = 4
+					Marxism = 2
+					
+					}
+				declare_war_on = {
+					target = CSA
+					type = civil_war
+					}
+					country_event = {id = usa.1000 days = 30}
+				}
+		}
+		    swap_ideas={
+			     remove_idea = USA_the_divided_nation2
+			     add_idea = USA_the_divided_nation3
+		}
+	}
 }
 country_event = {
 	id = USA.1000 #南北战争的兵！
