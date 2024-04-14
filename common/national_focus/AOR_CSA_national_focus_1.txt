@@ -13,7 +13,7 @@ focus_tree={
 		icon=GFX_goal_CSA_Declaration_of_Independence
 		x=9
 		y=0
-		cost=10
+		cost=0.5
 		ai_will_do={
 			factor=1
 		}
@@ -21,6 +21,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 50
+			country_event={
+				id = CSA.1
+			}
 		}
 	}
 	focus={
@@ -29,7 +33,7 @@ focus_tree={
 		x=9
 		y=1
 		prerequisite={focus=CSA_Declaration_of_Independence}
-		cost=10
+		cost=1
 		ai_will_do={
 			factor=1
 		}
@@ -37,6 +41,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 100
 		}
 	}
 	focus={
@@ -46,7 +51,7 @@ focus_tree={
 		y=3
 		prerequisite={focus=CSA_Rise_again}
 		mutually_exclusive={focus=CSA_Unite_as_one_city }
-		cost=10
+		cost=1
 		ai_will_do={
 			factor=1
 		}
@@ -54,6 +59,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Dixie_Goes_Again
+				add_idea = Dixie_Goes_Again_1
+			}
 		}
 	}
 	focus={
@@ -62,7 +71,7 @@ focus_tree={
 		x=9
 		y=2
 		prerequisite={focus=CSA_Reorganize_the_flag_and_drum}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -70,6 +79,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = Fire_Cactus
 		}
 	}
 	focus={
@@ -79,7 +89,7 @@ focus_tree={
 		y=3
 		prerequisite={focus=CSA_Rise_again}
 		mutually_exclusive={focus=CSA_Take_charge_of_one }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -87,6 +97,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Dixie_Goes_Again
+				add_idea = Dixie_Goes_Again_2
+			}
 		}
 	}
 	focus={
@@ -95,7 +109,7 @@ focus_tree={
 		x=4
 		y=4
 		prerequisite={focus=CSA_Take_charge_of_one}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -103,6 +117,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =Armament_of_the_Union
+				add_idea = Armament_of_the_Union_1
+			}
 		}
 	}
 	focus={
@@ -111,7 +129,7 @@ focus_tree={
 		x=0
 		y=4
 		prerequisite={focus=CSA_Take_charge_of_one}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -128,7 +146,7 @@ focus_tree={
 		y=4
 		prerequisite={focus=CSA_Rise_again}
 		mutually_exclusive={focus=CSA_Involuntarily }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -136,6 +154,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 100
+			swap_ideas={
+				remove_idea = Oil_Heaven
+				add_idea = Oil_Heaven_1
+			}
 		}
 	}
 	focus={
@@ -145,7 +168,7 @@ focus_tree={
 		y=4
 		prerequisite={focus=CSA_Rise_again}
 		mutually_exclusive={focus=CSA_The_Way_of_Neutrality }
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -153,6 +176,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Oil_Heaven_1
+				add_idea = Oil_Heaven_2
+			}
 		}
 	}
 	focus={
@@ -161,7 +188,7 @@ focus_tree={
 		x=7
 		y=5
 		prerequisite={focus=CSA_The_Way_of_Neutrality}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -169,6 +196,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Oil_Heaven_2
+				add_idea = Oil_Heaven_3
+			}
 		}
 	}
 	focus={
@@ -177,7 +208,7 @@ focus_tree={
 		x=11
 		y=5
 		prerequisite={focus=CSA_Involuntarily}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -185,6 +216,39 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Oil_Heaven_3
+				add_idea = Oil_Heaven_4
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -193,7 +257,7 @@ focus_tree={
 		x=18
 		y=4
 		prerequisite={focus=CSA_Unite_as_one_city}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -201,6 +265,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Dixie_Goes_Again_2
+				add_idea = Dixie_Goes_Again_3
+			}
 		}
 	}
 	focus={
@@ -209,7 +277,7 @@ focus_tree={
 		x=14
 		y=4
 		prerequisite={focus=CSA_Unite_as_one_city}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -217,6 +285,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -100
+			swap_ideas={
+				remove_idea = Imprison_in_the_dark_
+				add_idea = Imprison_in_the_dark_1
+			}
 		}
 	}
 	focus={
@@ -225,7 +298,7 @@ focus_tree={
 		x=4
 		y=5
 		prerequisite={focus=CSA_Free_command_of_the_gun}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -233,6 +306,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =Armament_of_the_Union_1
+				add_idea = Armament_of_the_Union_2
+			}
 		}
 	}
 	focus={
@@ -241,7 +318,7 @@ focus_tree={
 		x=0
 		y=5
 		prerequisite={focus=CSA_only_one_sound}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -249,6 +326,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Imprison_in_the_dark_2
+				add_idea = Imprison_in_the_dark_3
+			}
 		}
 	}
 	focus={
@@ -257,7 +338,7 @@ focus_tree={
 		x=14
 		y=5
 		prerequisite={focus=CSA_Extinguish_the_flames}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -265,6 +346,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea = Imprison_in_the_dark_1
+				add_idea = Imprison_in_the_dark_2
+			}
 		}
 	}
 	focus={
@@ -273,7 +358,7 @@ focus_tree={
 		x=18
 		y=5
 		prerequisite={focus=CSA_Unity_and_solidarity}
-		cost=10
+		cost=3
 		ai_will_do={
 			factor=1
 		}
@@ -281,6 +366,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas={
+				remove_idea =Armament_of_the_Union_
+				add_idea = Armament_of_the_Union_3
+			}
 		}
 	}
 	focus={
@@ -288,8 +377,10 @@ focus_tree={
 		icon=GFX_goal_CSA_Lord_listen_to_our_prayers
 		x=9
 		y=6
-		prerequisite={focus=CSA_Measures_for_Black_People focus=CSA_Reform_the_militia_system focus=CSA_Labor_people focus=CSA_Can_turns_into_bullet focus=CSA_And_throw_it_into_the_trench focus=CSA_All_the_people_are_soldiers }
-		cost=10
+		prerequisite={focus=CSA_Measures_for_Black_People focus=CSA_And_throw_it_into_the_trench}
+		prerequisite={focus=CSA_Reform_the_militia_system focus=CSA_All_the_people_are_soldiers}
+		prerequisite={focus=CSA_Labor_people focus=CSA_Can_turns_into_bullet}
+		cost=3
 		ai_will_do={
 			factor=1
 		}

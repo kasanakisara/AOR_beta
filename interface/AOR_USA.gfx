@@ -201,17 +201,73 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Dixie_Goes_Again.png"
     }
 	spriteType = {
+		name = "GFX_idea_Dixie_Goes_Again_1"
+		texturefile = "gfx/interface/ideas/Dixie_Goes_Again.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Dixie_Goes_Again_2"
+		texturefile = "gfx/interface/ideas/Dixie_Goes_Again.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Dixie_Goes_Again_3"
+		texturefile = "gfx/interface/ideas/Dixie_Goes_Again.png"
+    }
+
+	spriteType = {
 		name = "GFX_idea_Oil_Heaven"
 		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
     }
+	spriteType = {
+		name = "GFX_idea_Oil_Heave_1"
+		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Oil_Heaven_2"
+		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Oil_Heaven_3"
+		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Oil_Heaven_4"
+		texturefile = "gfx/interface/ideas/Oil_Heaven.png"
+    }
+
 	spriteType = {
 		name = "GFX_idea_Imprison_in_the_dark"
 		texturefile = "gfx/interface/ideas/Imprison_in_the_dark.png"
     }
 	spriteType = {
+		name = "GFX_idea_Imprison_in_the_dark_1"
+		texturefile = "gfx/interface/ideas/Imprison_in_the_dark.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Imprison_in_the_dark_2"
+		texturefile = "gfx/interface/ideas/Imprison_in_the_dark.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Imprison_in_the_dark_3"
+		texturefile = "gfx/interface/ideas/Imprison_in_the_dark.png"
+    }
+
+	spriteType = {
 		name = "GFX_idea_Armament_of_the_Union"
 		texturefile = "gfx/interface/ideas/Armament_of_the_Union.png"
     }
+	spriteType = {
+		name = "GFX_idea_Armament_of_the_Union_1"
+		texturefile = "gfx/interface/ideas/Armament_of_the_Union.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Armament_of_the_Union_2"
+		texturefile = "gfx/interface/ideas/Armament_of_the_Union.png"
+    }
+	spriteType = {
+		name = "GFX_idea_Armament_of_the_Union_3"
+		texturefile = "gfx/interface/ideas/Armament_of_the_Union.png"
+    }
+
 	spriteType = {
 		name = "GFX_idea_Fire_Cactus"
 		texturefile = "gfx/interface/ideas/Fire_Cactus.png"

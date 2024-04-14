@@ -4,7 +4,7 @@
 
 set_research_slots = 3
 set_stability = 0.35
-set_war_support = 0.85
+set_war_support = 0.70
 
 
 set_variable = { var = senators_support value = 48 }
@@ -90,7 +90,6 @@ add_ideas = {
 	Oil_Heaven
 	Imprison_in_the_dark
 	Armament_of_the_Union
-	Fire_Cactus
 }
 
 create_country_leader = {

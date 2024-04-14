@@ -4,6 +4,7 @@ CSA_Civil_War_Resolution_gravity = {
     #建立联盟国政府
     CSA_Establishment_of_a_Union_government = {
         available = {
+            has_completed_focus = CSA_Reorganize_the_flag_and_drum
     }
         allowed = {
 			original_tag = CSA
@@ -26,7 +27,7 @@ CSA_Civil_War_Resolution_gravity = {
     #重组两院制度
     CSA_Restructuring_of_the_bicameral_system = {
         available = {
-        date > 1921.7.1
+            has_completed_focus = CSA_Reorganize_the_flag_and_drum
     }
         allowed = {
 			original_tag = CSA
@@ -73,7 +74,7 @@ CSA_Civil_War_Resolution_gravity = {
     #建立最高法院
     CSA_Establishment_of_the_Supreme_Court = {
         available = {
-        date > 1921.7.1
+            has_completed_focus = CSA_Reorganize_the_flag_and_drum
     }
         allowed = {
 			original_tag =CSA
@@ -125,7 +126,7 @@ CSA_Civil_War_Resolution_civilian = {
     #展开没收行动
     USA_Conduct_confiscation_operations = {
         available = {
-        date > 1921.8.1
+            has_completed_focus = CSA_Involuntarily
     }
         allowed = {
 			original_tag = CSA
