@@ -1,4 +1,17 @@
 add_namespce = CSA
+
+country_event = {
+	id = CSA.1
+	title = CSA.1.t
+	desc = CSA.1.d
+	picture = GFX_CSA_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CSA.1.a
+	}
+}
+
 #country_event = {
 	##id = CSA.1000 #南北战争的兵！
 	#title = CSA.1000.t
@@ -82,16 +95,3 @@ add_namespce = CSA
 
 # 	}
 # }
-
-country_event = {
-	id = CSA.1
-	title = CSA.1.t
-	desc = CSA.1.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = CSA.1.a
-	}
-}

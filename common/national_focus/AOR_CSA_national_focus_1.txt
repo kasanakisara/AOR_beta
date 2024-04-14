@@ -137,6 +137,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = -50
+			add_popularity = { ideology = CON_democratic popularity = 0.1 }
 		}
 	}
 	focus={
@@ -177,8 +179,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = Oil_Heaven_1
-				add_idea = Oil_Heaven_2
+				remove_idea = Oil_Heaven
+				add_idea = Oil_Heaven_3
 			}
 		}
 	}
@@ -197,8 +199,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = Oil_Heaven_2
-				add_idea = Oil_Heaven_3
+				remove_idea = Oil_Heaven_1
+				add_idea = Oil_Heaven_2
 			}
 		}
 	}
@@ -287,7 +289,7 @@ focus_tree={
 		completion_reward={
 			add_political_power = -100
 			swap_ideas={
-				remove_idea = Imprison_in_the_dark_
+				remove_idea = Imprison_in_the_dark
 				add_idea = Imprison_in_the_dark_1
 			}
 		}
@@ -327,7 +329,7 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = Imprison_in_the_dark_2
+				remove_idea = Imprison_in_the_dark
 				add_idea = Imprison_in_the_dark_3
 			}
 		}
@@ -367,7 +369,7 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea =Armament_of_the_Union_
+				remove_idea =Armament_of_the_Union
 				add_idea = Armament_of_the_Union_3
 			}
 		}
