@@ -5,7 +5,7 @@ spriteTypes ={
 		name = "GFX_USA_Civil_War_Military_Resolution_progress_bar"
 		textureFile1 = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_full.png"
 		textureFile2 = "gfx/AOR_gui/USA/USA_Civil_War_Military_Resolution_empty.png"
-		size ={x = 181 y = 433}
+		size ={x = 181 y = 533}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = no
 	}
