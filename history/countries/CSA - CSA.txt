@@ -23,8 +23,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
  
-	
- 
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	cv_CAS1 = 1
@@ -45,6 +43,24 @@ set_technology = {
 	superior_firepower = 1
 	base_strike = 1
 	basic_train = 1
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 5000
+	producer = CSA	
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = CSA	
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 100
+	producer = CSA	
 }
 
 if = {
