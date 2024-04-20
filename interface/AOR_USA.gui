@@ -8,7 +8,7 @@ guiTypes = {
         iconType ={
             name ="USA_Civil_War_Military_Resolution_progress_bar"
             spriteType = "GFX_USA_Civil_War_Military_Resolution_progress_bar"
-            position = { x= 300 y= -15 }
+            position = { x= 300 y= 10 }
         }
         instantTextBoxType={
             name ="USA_Civil_War_Military_Resolution_tt_desc"

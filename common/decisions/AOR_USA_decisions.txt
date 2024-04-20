@@ -45,14 +45,14 @@ USA_Civil_War_Military_Resolution = {
         cost = 20
 
         complete_effect = {
-            add_to_variable = { USA_Recall_of_the_reserves = 30 }
+            add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 30 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_1
             if = {
                 limit = {
                     OR = {
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                        check_variable = { USA_Recall_of_the_reserves = 100}
+                        check_variable = { USA_Recall_of_the_reserves > 100}
                     }
                 }
                 USA_Civil_War_Military_check = yes
@@ -73,14 +73,14 @@ USA_Civil_War_Military_Resolution = {
         cost = 30
 
         complete_effect = {
-            add_to_variable = { USA_Recruit_new_recruits = 10 }
+            add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 10 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_2
             if = {
                 limit = {
                     OR = {
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                        check_variable = { USA_Recruit_new_recruits = 100}
+                        check_variable = { USA_Recruit_new_recruits > 100}
                     }
                 }
                 USA_Civil_War_Military_check = yes
@@ -90,7 +90,7 @@ USA_Civil_War_Military_Resolution = {
 
     #敦促各州采购武器
     USA_The_states_are_urged_to_procure_weapons = {
-        available = { date > 1921.7.1 }
+        available = {  has_completed_focus = USA_Emergency_conscription_law }
         days_remove = 30
         ai_will_do = {
             factor = 0.5
@@ -101,14 +101,14 @@ USA_Civil_War_Military_Resolution = {
         cost = 40
 
         complete_effect = {
-            add_to_variable = { USA_The_states_are_urged_to_procure_weapons = 10 }
+            add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 10 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_3
             if = {
                 limit = {
                     OR = {
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
-                        check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+                        check_variable = { USA_The_states_are_urged_to_procure_weapons = 100}
+                        check_variable = { USA_The_states_are_urged_to_procure_weapons > 100}
                     }
                 }
                 USA_Civil_War_Military_check = yes

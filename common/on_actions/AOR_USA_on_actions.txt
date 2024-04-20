@@ -6,7 +6,7 @@ on_actions = {
 				limit = {
 					has_country_flag = USA_Civil_War_Military_Resolution_flag
 				}
-				add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 5 }
+				add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 0.2 }
 
 				if = {
 					limit = {
