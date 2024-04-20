@@ -1,0 +1,6 @@
+#USA变量检测
+
+USA_Civil_War_Military_check = {
+    set_variable = { USA_Reorganization_of_the_state_National_Guard = 0 }
+    load_oob = USA_National_Guard
+}

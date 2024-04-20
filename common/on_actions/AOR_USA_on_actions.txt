@@ -4,47 +4,20 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_country_flag = USA_Reorganization_of_the_state_National_Guard
+					has_country_flag = USA_Civil_War_Military_Resolution_flag
 				}
-				add_to_variable = { USA_Civil_War_Military_Resolution = 100 }
-				clamp_variable ={
-					var = USA_Civil_War_Military_Resolution
-					min = 0
-					max = 100
+				add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 5 }
+
+				if = {
+					limit = {
+						OR = {
+							check_variable = { USA_Reorganization_of_the_state_National_Guard = 100}
+							check_variable = { USA_Reorganization_of_the_state_National_Guard > 100}
+						}
+					}
+					USA_Civil_War_Military_check = yes
 				}
-			}
-		    else_if = {
-                limit = {
-                    has_country_flag = USA_Recall_of_the_reserves
-				}
-                add_to_variable = { USA_Civil_War_Military_Resolution = 30 }
-                clamp_variable = {
-                    var = USA_Civil_War_Military_Resolution
-                    min = 0
-					max = 100
-				}
-		    }
-			else_if = {
-                limit = {
-					has_country_flag = USA_Recruit_new_recruits
-				}
-                add_to_variable = { USA_Civil_War_Military_Resolution = 10 }
-                clamp_variable = {
-					var = USA_Civil_War_Military_Resolution
-					min = 0
-					max = 100
-				}
-			}
-			else_if = {
-                limit = {
-					has_country_flag = USA_The_states_are_urged_to_procure_weapons
-				}
-                add_to_variable = { USA_Civil_War_Military_Resolution = 10 }
-                clamp_variable = {
-					var = USA_Civil_War_Military_Resolution
-					min = 0
-					max = 100
-				}
+				
 			}
 		}
 	}

@@ -424,6 +424,7 @@ country_event = {
         name = Tosca.3.a
         hidden_effect = {
             country_event = { id = Tosca.4 days = 2 }
+            country_event = { id = AOR_news.84 }
         }
 
     }
