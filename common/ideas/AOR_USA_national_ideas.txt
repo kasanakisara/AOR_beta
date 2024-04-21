@@ -128,7 +128,7 @@ ideas = {
 	    	picture = GFX_idea_USA_sandaliren
     		allowed = { always = yes }
     		modifier = {
-    		    TRAINING_TIME_ARMY_factor = 0.2
+    		    TRAINING_TIME_ARMY_factor = 0.5
 				experience_gain_army_factor = -0.5
 				experience_gain_air_factor = -0.5
 				experience_gain_navy_factor = -0.5
@@ -149,7 +149,7 @@ ideas = {
 	    	picture = GFX_idea_USA_sandaliren1
     		allowed = { always = yes }
     		modifier = {
-    		    TRAINING_TIME_ARMY_factor = 0.1
+    		    TRAINING_TIME_ARMY_factor = 0.4
 				experience_gain_army_factor = -0.3
 				experience_gain_air_factor = -0.5
 				experience_gain_navy_factor = -0.5
@@ -171,7 +171,7 @@ ideas = {
 	    	picture = GFX_idea_USA_sandaliren2
     		allowed = { always = yes }
     		modifier = {
-    		    TRAINING_TIME_ARMY_factor = 0.1
+    		    TRAINING_TIME_ARMY_factor = 0.4
 				experience_gain_army_factor = -0.3
 				experience_gain_air_factor = -0.4
 				experience_gain_navy_factor = -0.4
@@ -193,7 +193,7 @@ ideas = {
 	    	picture = GFX_idea_USA_sandaliren3
     		allowed = { always = yes }
     		modifier = {
-    		    TRAINING_TIME_ARMY_factor = 0.2
+    		    TRAINING_TIME_ARMY_factor = 0.5
 				experience_gain_army_factor = -0.4
 				experience_gain_air_factor = -0.4
 				experience_gain_navy_factor = -0.4
@@ -215,7 +215,7 @@ ideas = {
 	    	picture = GFX_idea_USA_sandaliren4
     		allowed = { always = yes }
     		modifier = {
-    		    TRAINING_TIME_ARMY_factor = 0.2
+    		    TRAINING_TIME_ARMY_factor = 0.5
 				experience_gain_army_factor = -0.35
 				experience_gain_air_factor = -0.35
 				experience_gain_navy_factor = -0.35
@@ -237,7 +237,7 @@ ideas = {
 	    	picture = GFX_idea_USA_zhiliposui
     		allowed = { always = yes }
     		modifier = {
-				political_power_gain = 0.1
+				political_power_gain = 0.2
     		    TRAINING_TIME_ARMY_factor = 0.2
 				experience_gain_army_factor = -0.3
 				experience_gain_air_factor = -0.3
@@ -812,7 +812,8 @@ ideas = {
 			picture = GFX_idea_USA_zanshidexuanchuan
 			allowed = { always = yes }
 			modifier = {
-			add_war_support = 0.05
+			stability_factor = 0.10
+			war_support_factor = 0.05
 			}
 		}
 	}

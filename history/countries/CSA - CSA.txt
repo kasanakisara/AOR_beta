@@ -47,19 +47,19 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment
-	amount = 5000
+	amount = 30000
 	producer = CSA	
 }
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 500
+	amount = 5000
 	producer = CSA	
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment
-	amount = 100
+	amount = 500
 	producer = CSA	
 }
 
