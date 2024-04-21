@@ -10,6 +10,7 @@ state = {
 		#victory_points = {
 			##
 		#}
+		add_core_of = USA
 		add_core_of = MXS
 		USA = {
         add_state_claim = 931

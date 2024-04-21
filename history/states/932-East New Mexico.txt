@@ -10,8 +10,8 @@ state = {
 		#victory_points = {
 			##
 		#}
+		add_core_of = USA
 		add_core_of = MXS
-        add_core_of = USA
 
 		1921.5.1 = {
 			set_demilitarized_zone = yes
