@@ -501,7 +501,10 @@ focus_tree={
 		}
 		completion_reward={
 			add_political_power = 100
-			add_ideas = USA_zanshidexuanchuan
+			add_timed_idea={
+				idea = USA_zanshidexuanchuan
+				days = 720
+            }
 		}
 	}
 	focus={
