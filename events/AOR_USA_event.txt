@@ -280,7 +280,19 @@ country_event = {
 				add_state_core = 388
 				add_state_core = 386
 				add_manpower = 10000
-				load_oob = "CSA_Civilwar"		
+				load_oob = "CSA_Civilwar"
+				
+				set_politics = {ruling_party = CON_democratic }
+				create_country_leader = {
+					name = "CSA_TGSC"
+					desc = "CSA_TGSC_DESC"
+					picture = "gfx/leaders/CSA/TGSC.dds"
+					expire = "1965.1.1"
+					ideology = Jeffersonian
+					traits = {
+						
+					}
+				}
 			}
 			USA = {
 				set_popularities = {
@@ -349,7 +361,19 @@ country_event = {
 				add_state_core = 388
 				add_state_core = 386
 				add_manpower = 10000
-				load_oob = "CSA_Civilwar"		
+				load_oob = "CSA_Civilwar"
+				
+				set_politics = {ruling_party = CON_democratic }
+				create_country_leader = {
+					name = "CSA_TGSC"
+					desc = "CSA_TGSC_DESC"
+					picture = "gfx/leaders/CSA/TGSC.dds"
+					expire = "1965.1.1"
+					ideology = Jeffersonian
+					traits = {
+						
+					}
+				}
 			}
 			USA = {
 				set_popularities = {

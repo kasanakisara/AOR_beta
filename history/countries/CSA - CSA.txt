@@ -110,6 +110,17 @@ add_ideas = {
 }
 
 create_country_leader = {
+	name = "CSA_TGSC"
+	desc = "CSA_TGSC_DESC"
+	picture = "gfx/leaders/CSA/CSA_TGSC.dds"
+	expire = "1965.1.1"
+	ideology = Jeffersonian
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "John_Nance_Garner_III"
 	desc = "John_Nance_Garner_III_DESC"
 	picture = "gfx/leaders/CSA/Gamaliel_Harding.png"
@@ -119,4 +130,5 @@ create_country_leader = {
 		
 	}
 }
+
 

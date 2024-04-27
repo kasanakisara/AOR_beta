@@ -80,6 +80,19 @@ focus_tree={
 		}
 		completion_reward={
 			add_ideas = Fire_Cactus
+			CSA = {
+				set_politics = {ruling_party = CON_democratic }
+				create_country_leader = {
+					name = "John_Nance_Garner_III"
+					desc = "John_Nance_Garner_III_DESC"
+					picture = "gfx/leaders/CSA/Gamaliel_Harding.png"
+					expire = "1965.1.1"
+					ideology = Jeffersonian
+					traits = {
+						
+					}
+				}
+			}
 		}
 	}
 	focus={
