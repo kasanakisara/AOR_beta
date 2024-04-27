@@ -703,7 +703,7 @@ focus_tree={
 		y=11
 		prerequisite={focus=USA_Overseas_Fleet_Escort}
 		prerequisite={focus=USA_Ensure_sales_channels focus=USA_Add_military_industry focus=USA_Mr_Knight focus=USA_War_Production_Management_Law focus=USA_Encourage_joining_the_militia }
-		cost=2
+		cost=100
 		ai_will_do={
 			factor=1
 		}
