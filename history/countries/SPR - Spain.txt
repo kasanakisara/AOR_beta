@@ -142,8 +142,11 @@ set_politics = {
 
 }
 set_popularities = {
-	CON_democratic = 50
-	Marxism = 20
+	FRE_democratic = 15
+	CON_democratic = 25
+	AUT_democratic = 20
+	SOC_democratic = 5
+	Marxism = 5
 	Absolutism = 30
 }
 

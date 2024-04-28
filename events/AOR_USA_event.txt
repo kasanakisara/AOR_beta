@@ -1220,7 +1220,7 @@ country_event = {
 	 }
     option = { 
         name = USA.10035.a
-	
+		set_capital = { state = 357 }
 	}
 }
 country_event = {
