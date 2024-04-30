@@ -1,7 +1,7 @@
 add_namespace = CSA
 
 country_event = {
-	id = CSA.1
+	id = CSA.1   #再一次宣言
 	title = CSA.1.t
 	desc = CSA.1.d
 	picture = GFX_CSA_event_1
@@ -11,6 +11,130 @@ country_event = {
 		name = CSA.1.a
 	}
 }
+
+country_event = {
+	id = CSA.100   #攻克华盛顿
+	title = CSA.100.t
+	desc = CSA.100.d
+	picture = GFX_CSA_event_100
+	trigger = {
+		361 = { is_controlled_by = CSA }
+		361 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.100.a
+	}
+}
+
+country_event = {
+	id = CSA.101   #攻克纽约
+	title = CSA.101.t
+	desc = CSA.101.d
+	picture = GFX_CSA_event_101
+	trigger = {
+		358 = { is_controlled_by = CSA }
+		358 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.101.a
+	}
+}
+
+country_event = {
+	id = CSA.102   #攻克匹兹堡
+	title = CSA.102.t
+	desc = CSA.102.d
+	picture = GFX_CSA_event_102
+	trigger = {
+		360 = { is_controlled_by = CSA }
+		360 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.102.a
+	}
+}
+
+country_event = {
+	id = CSA.103   #进攻克利夫兰
+	title = CSA.103.t
+	desc = CSA.103.d
+	picture = GFX_CSA_event_103
+	trigger = {
+		261 = { is_controlled_by = CSA }
+		261 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.103.a
+	}
+}
+
+country_event = {
+	id = CSA.104   #美国内战白热化（南方优势）
+	title = CSA.104.t
+	desc = CSA.104.d
+	picture = GFX_CSA_event_104
+	trigger = {
+		358 = { is_controlled_by = CSA }
+		358 = { is_owned_by = USA }
+		360 = { is_controlled_by = CSA }
+		360 = { is_owned_by = USA }
+		261 = { is_controlled_by = CSA }
+		261 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.104.a
+	}
+}
+
+country_event = {
+	id = CSA.105   #攻克芝加哥
+	title = CSA.105.t
+	desc = CSA.105.d
+	picture = GFX_CSA_event_105
+	trigger = {
+		395 = { is_controlled_by = CSA }
+		395 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.105.a
+	}
+}
+
+country_event = {
+	id = CSA.106   #攻克底特律
+	title = CSA.106.t
+	desc = CSA.106.d
+	picture = GFX_CSA_event_106
+	trigger = {
+		393 = { is_controlled_by = CSA }
+		393 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name = CSA.106.a
+	}
+}
+
 
 #country_event = {
 	##id = CSA.1000 #南北战争的兵！

@@ -398,6 +398,58 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = USA.101 #攻克亚特兰大
+	title = USA.101.t
+	desc = USA.101.d
+	picture = GFX_USA_event_101
+	trigger = {
+		365 = { is_controlled_by = USA }
+		365 = { is_owned_by = CSA }
+		USA = { has_war_with = CSA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.101.a
+	}	
+}
+country_event = {
+	id = USA.102 #攻克新奥尔良
+	title = USA.102.t
+	desc = USA.102.d
+	picture = GFX_USA_event_102
+	trigger = {
+		371 = { is_controlled_by = USA }
+		371 = { is_owned_by = CSA }
+		USA = { has_war_with = CSA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.102.a
+	}	
+}
+country_event = {
+	id = USA.103 #美国内战白热化（北方优势）
+	title = USA.103.t
+	desc = USA.103.d
+	picture = GFX_USA_event_103
+	trigger = {
+		365 = { is_controlled_by = USA }
+		365 = { is_owned_by = CSA }
+		371 = { is_controlled_by = USA }
+		371 = { is_owned_by = CSA }
+		USA = { has_war_with = CSA }
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.103.a
+	}	
+}
+
 country_event = {
 	id = USA.1000 #南北战争的兵！
 	title = USA.1000.t
