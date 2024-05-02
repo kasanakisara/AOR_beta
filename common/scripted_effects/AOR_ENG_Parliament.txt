@@ -40,7 +40,7 @@ ENG_Calculate_partisan_support = {
 		Liberal_Party_Support_rate_progress_var = Liberal_Party_Support_rate_var
 	}
 	divide_variable = {
-		var = Liberal_Party_Support_rate_progress_var
+		var = Liberal_Party_Support_rate_progress_var 
 		value = total_partisan_support
 	}
 	multiply_variable = {
