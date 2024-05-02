@@ -718,6 +718,7 @@ focus_tree = {
 			has_global_flag = RUS_flag_Soviet_union
 		}
 		completion_reward = {
+			load_focus_tree = AOR_SOV_2
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			add_country_leader_trait = SOV_lenin_founder_of_alliance
 			custom_effect_tooltip = AOR_SOV_Civil_war_20_tt1
