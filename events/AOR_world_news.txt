@@ -1479,3 +1479,19 @@ news_event = {# 中国国会陷入骚乱
 		name = AOR_news.88.a
 	}
 }
+
+news_event = {# 中国甘肃发生大地震
+	id = AOR_news.89
+	title = AOR_news.89.t
+	desc = AOR_news.89.d
+	picture = GFX_AOR_news.89_pic
+	fire_only_once = yes
+	trigger = {
+	    date > 1920.12.16
+	}
+	major = yes
+
+	option = {
+		name = AOR_news.89.a
+	}
+}
