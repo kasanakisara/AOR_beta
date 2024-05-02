@@ -1,6 +1,6 @@
 ﻿
 capital = 753
-load_oob = "AOR_LAND_CHI_chuanjun_XI"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		#set_naval_#oob = "CHI_1936_naval_mtg"
