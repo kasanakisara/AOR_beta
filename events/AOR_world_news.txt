@@ -1427,3 +1427,55 @@ news_event = {#奥斯陆枪击案
 		name = AOR_news.84.a
 	}
 }
+
+news_event = {# 中国军阀炸开了
+	id = AOR_news.85
+	title = AOR_news.85.t
+	desc = AOR_news.85.d
+	picture = GFX_AOR_news.85_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.85.a
+	}
+}
+
+news_event = {# 中国张作霖
+	id = AOR_news.86
+	title = AOR_news.86.t
+	desc = AOR_news.86.d
+	picture = GFX_AOR_news.86_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.86.a
+	}
+}
+
+news_event = {# 中国四川军阀开赛
+	id = AOR_news.87
+	title = AOR_news.87.t
+	desc = AOR_news.87.d
+	picture = GFX_AOR_news.87_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.87.a
+	}
+}
+
+news_event = {# 中国国会陷入骚乱
+	id = AOR_news.88
+	title = AOR_news.88.t
+	desc = AOR_news.88.d
+	picture = GFX_AOR_news.88_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.88.a
+	}
+}

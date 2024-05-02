@@ -127,6 +127,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CHI.6.a
+		news_event = {id=AOR_news.88}
 	}
 }
 #西北边防军被炸出来了！#########废弃########请后续人员改装成趣味事件###########
@@ -176,6 +177,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {id = CHI.999 days=2}
 		}
+		news_event = {id=AOR_news.85}
 		
 	}
 }
@@ -200,7 +202,7 @@ country_event = {
 	#那就这样吧  
 	option = {
 		name = CHI.9.a
-		
+		news_event = {id=AOR_news.86}
 	}
 }
 
@@ -232,6 +234,7 @@ country_event = {
 				drop_cosmetic_tag = yes
 			}
 		}
+		news_event = {id=AOR_news.87}
 	}
 }
 #联省宣言(联省改名）
