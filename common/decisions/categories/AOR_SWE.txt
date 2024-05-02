@@ -9,12 +9,9 @@ SWE_Norweign_Independence_decision_categories = {
 	}
 }
 
-SWE_Hackers_debug = {
-	priority = 110
+SWE_Trade_decision_categories = {
+	priority = 90
 	visible = {
-		is_debug = yes
-	}
-	allowed = {
-		is_debug = yes
+		has_idea = SWE_Open_the_door
 	}
 }
