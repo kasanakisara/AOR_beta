@@ -90,7 +90,10 @@ recruit_character = Eugen_Levine
 recruit_character = BAV_Mehring
 recruit_character = BAV_Luksemburg
 recruit_character = BAV_Karl_Liebknecht
-
+recruit_character = BAV_Karl_Liebknecht_command
+recruit_character = BAV_Luksemburg_command
+recruit_character = BAV_Mehring_command
+recruit_character = Eugen_Levine_command
 
 
 
@@ -124,6 +127,7 @@ add_ideas = {
 	Eugen_Levine
 	BAV_Luksemburg
 	BAV_Karl_Liebknecht
+
 }
 
 oob = "BAV_AOR"

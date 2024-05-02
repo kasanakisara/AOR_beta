@@ -1,14 +1,19 @@
 characters = {
-friedrich_dollma= { 
+	friedrich_dollma = {
 		name = friedrich_dollma
 		portraits = {
 			army = {
 				large = GFX_portrait_friedrich_dollma
-                small = GFX_portrait_friedrich_dollma_small
+				small = GFX_portrait_friedrich_dollma_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_old_order career_officer bearer_of_artillery trait_engineer }
+			traits = {
+				BAV_old_order
+				career_officer
+				bearer_of_artillery
+				trait_engineer
+			}
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -16,17 +21,28 @@ friedrich_dollma= {
 			logistics_skill = 2
 			legacy_id = -1
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = friedrich_dollma_chief
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {army_chief_drill_3}
+
+		}
 	}
-    Hans_Gunther_van_Hooven= { 
+	Hans_Gunther_van_Hooven = {
 		name = Hans_Gunther_van_Hooven
 		portraits = {
 			army = {
 				large = GFX_portrait_Hans_Gunther_van_Hooven
-                small = GFX_portrait_Hans_Gunther_van_Hooven_small
+				small = GFX_portrait_Hans_Gunther_van_Hooven_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_vicar_of_Bray trickster career_officer }
+			traits = {
+				BAV_vicar_of_Bray
+				trickster
+				career_officer
+			}
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -34,17 +50,28 @@ friedrich_dollma= {
 			logistics_skill = 1
 			legacy_id = -1
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = Hans_Gunther_van_Hooven_chief
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {army_chief_offensive_2}
+
+		}
 	}
-Ludwig_Beck= { 
+	Ludwig_Beck = {
 		name = Ludwig_Beck
 		portraits = {
 			army = {
 				large = GFX_portrait_Ludwig_Beck
-small = GFX_portrait_Ludwig_Beck_small
+				small = GFX_portrait_Ludwig_Beck_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_vicar_of_Bray  career_officer skilled_staffer}
+			traits = {
+				BAV_vicar_of_Bray
+				career_officer
+				skilled_staffer
+			}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -52,17 +79,28 @@ small = GFX_portrait_Ludwig_Beck_small
 			logistics_skill = 1
 			legacy_id = -1
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = Ludwig_Beck_chief
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {army_chief_organizational_2}
+
+		}
 	}
-Walther_von_Kurzbach= { 
+	Walther_von_Kurzbach = {
 		name = Walther_von_Kurzbach
 		portraits = {
 			army = {
 				large = GFX_portrait_Walther_von_Kurzbach
-small = GFX_portrait_Walther_von_Kurzbach_small
+				small = GFX_portrait_Walther_von_Kurzbach_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_vicar_of_Bray career_officer bearer_of_artillery }
+			traits = {
+				BAV_vicar_of_Bray
+				career_officer
+				bearer_of_artillery
+			}
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -70,17 +108,29 @@ small = GFX_portrait_Walther_von_Kurzbach_small
 			logistics_skill = 2
 			legacy_id = -1
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = Walther_von_Kurzbach_chief
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {army_chief_morale_3}
+
+		}
 	}
-Vincenz_Muller= { 
+	Vincenz_Muller = {
 		name = Vincenz_Muller
 		portraits = {
 			army = {
 				large = GFX_portrait_Vincenz_Muller
-small = GFX_portrait_Vincenz_Muller_small
+				small = GFX_portrait_Vincenz_Muller_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_committed_revolutionary career_officer brilliant_strategist BAV_committed_revolutionary}
+			traits = {
+				BAV_committed_revolutionary
+				career_officer
+				brilliant_strategist
+				BAV_committed_revolutionary
+			}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -89,16 +139,21 @@ small = GFX_portrait_Vincenz_Muller_small
 			legacy_id = -1
 		}
 	}
-Walter_von_Reichenau= { 
+	Walter_von_Reichenau = {
 		name = Walter_von_Reichenau
 		portraits = {
 			army = {
 				large = GFX_portrait_Walter_von_Reichenau
-small = GFX_portrait_Walter_von_Reichenau_small
+				small = GFX_portrait_Walter_von_Reichenau_small
 			}
 		}
 		field_marshal = {
-			traits = {BAV_old_order old_guard career_officer trait_engineer }
+			traits = {
+				BAV_old_order
+				old_guard
+				career_officer
+				trait_engineer
+			}
 			skill = 4
 			attack_skill = 5
 			defense_skill = 4
@@ -106,17 +161,27 @@ small = GFX_portrait_Walter_von_Reichenau_small
 			logistics_skill = 5
 			legacy_id = -1
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = Walter_von_Reichenau_chief
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {army_chief_entrenchment_3}
+
+		}
 	}
-Wilhelm_Pieck= { 
+	Wilhelm_Pieck = {
 		name = Wilhelm_Pieck
 		portraits = {
 			army = {
 				large = GFX_portrait_BAV_Wilhelm_Pieck
-small = GFX_portrait_BAV_Wilhelm_Pieck_small
+				small = GFX_portrait_BAV_Wilhelm_Pieck_small
 			}
 		}
 		corps_commander = {
-			traits = { BAV_committed_revolutionary politically_connected}
+			traits = {
+				BAV_committed_revolutionary
+				politically_connected
+			}
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -125,16 +190,19 @@ small = GFX_portrait_BAV_Wilhelm_Pieck_small
 			legacy_id = -1
 		}
 	}
-Ernst_Thalmann= { 
+	Ernst_Thalmann = {
 		name = Ernst_Thalmann
 		portraits = {
 			army = {
 				large = GFX_portrait_Ernst_Thalmann
-small = GFX_portrait_Ernst_Thalmann_small
+				small = GFX_portrait_Ernst_Thalmann_small
 			}
 		}
 		corps_commander = {
-			traits = {BAV_committed_revolutionary  politically_connected }
+			traits = {
+				BAV_committed_revolutionary
+				politically_connected
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -143,5 +211,74 @@ small = GFX_portrait_Ernst_Thalmann_small
 			legacy_id = -1
 		}
 	}
+	BAV_Karl_Liebknecht_command={
+		name= Karl_Liebknecht_command
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/axcra-1w8mr.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/advisors/BAV_Karl_Liebknecht.png"
+			}
+		}
 
+		advisor = {
+			slot = high_command
+			idea_token = BAV_Karl_Liebknecht_command
+			available = {}
+			traits = {BAV_Karl_Liebknecht_command}
+
+		}
+	}
+	BAV_Luksemburg_command={
+		name= Roza_Luksemburg_command
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/aea71-ho9ng.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/advisors/BAV_Luksemburg.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token =BAV_Luksemburg_command
+			available = {}
+			traits = {BAV_Luksemburg_command}
+		}
+	}
+	BAV_Mehring_command = {
+		name= Franz_Mehring_command
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/Mehring.png"
+			}
+			army = {
+				small = "gfx/interface/ideas/advisors/BAV_Mehring.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BAV_Mehring_command
+			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
+			traits = {BAV_Mehring_command}
+
+		}
+	}
+	Eugen_Levine_command= { 
+		name = Eugen_Levine_command
+		portraits = {
+			army = {
+				large = GFX_portrait_Eugen_Levine
+				small = "gfx/interface/ideas/advisors/Eugen_Levine.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Eugen_Levine_command
+			available = {}
+			traits = {Eugen_Levine_command}
+
+		}
+	}
 }

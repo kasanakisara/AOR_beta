@@ -21,4 +21,31 @@ leader_traits = {
 		drift_defence_factor = 0.5
 		war_support_factor = 0.05
 	}
+	BAV_Karl_Liebknecht_command = {
+		random = no
+		army_core_attack_factor = 0.075
+		army_core_defence_factor  = 0.075
+		army_speed_factor = 0.1
+		attrition = -0.075
+	}
+	BAV_Luksemburg_command = {
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		army_morale_factor = 0.15
+		conscription_factor = 0.1
+
+	}
+	BAV_Mehring_command = {
+		random = no
+		army_org_factor = 0.1
+		max_planning = 0.15
+		planning_speed = 0.15	
+	}
+	Eugen_Levine_command = {
+		random = no
+		dig_in_speed_factor = 0.2
+		max_dig_in = 5
+		out_of_supply_factor = -0.3
+	}
 }
