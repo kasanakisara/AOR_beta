@@ -2162,7 +2162,7 @@ focus_tree = {
 			}
 			#此处应有事件
 			country_event = {
-				id = soviet.150
+				id = SOV.1
 			}
 		}
 	}
@@ -2178,7 +2178,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			swap_ideas = {
+				remove_idea = SOV_tech_2
+				add_idea = SOV_tech_3
+			}
+			country_event = SOV.3 #形式主义的终结
 		}
 	}
 	#真正民主
@@ -2193,7 +2197,41 @@ focus_tree = {
 		y = 2
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			if = {
+				limit = {
+					has_idea = SOV_real_de
+				}
+				swap_ideas = {
+					remove_idea = SOV_real_de
+					add_idea = SOV_real_de_2
+				}
+
+			}
+			else = {
+				add_ideas = SOV_real_de
+			}
+			
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = Fascism
+				popularity = -0.1
+			}
+			
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = Absolutism
+				popularity = -0.1
+			}
 		}
 	}
 	#社会主义
@@ -2208,7 +2246,21 @@ focus_tree = {
 		y = 3
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			if = {
+				limit = {
+					has_idea = SOV_real_de
+				}
+				swap_ideas = {
+					remove_idea = SOV_real_de
+					add_idea = SOV_real_de_2
+				}
+
+			}
+			else = {
+				add_ideas = SOV_real_de
+			}
+			
+			country_event = {id = SOV.2}
 		}
 	}
 	#统一劳动学校规程
@@ -2229,7 +2281,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			swap_ideas = {
+				remove_idea = SOV_tech_3
+				add_idea = SOV_tech_4
+			}
+			add_research_slot = 1
 		}
 	}
 	#教育体制改革
@@ -2247,7 +2303,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = SOV_Reform_education_system
+			custom_effect_tooltip = SOV_Reform_education_system_tt
+			add_tech_bonus = {
+				name = SOV_electronics 
+				category  = electronics 
+				uses = 1
+				bonus = 1.5
+			}
 		}
 	}
 	#正确解释教师作用
@@ -2262,7 +2325,11 @@ focus_tree = {
 		y = 6
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = SOV_teacher_good_tt
+			swap_ideas = {
+				remove_idea = SOV_Reform_education_system
+				add_idea = SOV_Reform_education_system_2
+			}
 		}
 	}
 	#学制调整
@@ -2293,7 +2360,8 @@ focus_tree = {
 		y = 6
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			country_event = {id = SOV.4}
+			add_manpower = 12500
 		}
 	}
 	#以劳动为中心
@@ -2311,7 +2379,9 @@ focus_tree = {
 		y = 5
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = SOV_Labor_centered
+			add_offsite_building = { type = industrial_complex level = 3 }
+			custom_effect_tooltip = SOV_Labor_centered_tt
 		}
 	}
 	#贯彻教育原则
@@ -2326,7 +2396,19 @@ focus_tree = {
 		y = 7
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			if = {
+				limit = {
+					has_idea = SOV_Labor_centered_2
+				}
+				swap_ideas = {
+					remove_idea = SOV_Labor_centered_2
+					add_idea = SOV_Labor_centered_3
+				}
+			}
+			else = {
+				add_ideas = SOV_Labor_centered_2
+			}
+			
 		}
 	}
 	#才思泉涌的创造性
@@ -2341,7 +2423,30 @@ focus_tree = {
 		y = 7
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			if = {
+				limit = {
+					has_idea = SOV_Labor_centered_2
+				}
+				swap_ideas = {
+					remove_idea = SOV_Labor_centered_2
+					add_idea = SOV_Labor_centered_3
+				}
+			}
+			else = {
+				add_ideas = SOV_Labor_centered_2
+			}
+			add_tech_bonus = {
+				name = SOV_industry
+				category  = industry
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				name = SOV_excavation_tech
+				category  = excavation_tech
+				uses = 1
+				bonus = 1
+			}
 		}
 	}
 	#属于苏维埃人民的创新
@@ -2361,7 +2466,14 @@ focus_tree = {
 		y = 8
 		relative_position_id = AOR_SOV_tech_1
 		completion_reward = {
-			add_political_power = 25
+			custom_effect_tooltip = SOV_tech_end
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = SOV_construction_tech 
+				category  = construction_tech 
+				uses = 2
+				bonus = 2
+			}
 		}
 	}
 }
