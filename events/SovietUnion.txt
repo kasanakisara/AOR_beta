@@ -1,22 +1,104 @@
 country_event = {
-	id = soviet.1 #吞并芬兰
+	id = soviet.1	#吞并芬兰
 	title = soviet.1.t
 	desc = soviet.1.d
-	picture = GFX_report_event_chinese_soldiers_fighting 
+	picture = GFX_report_event_chinese_soldiers_fighting
 	is_triggered_only = no
 	fire_only_once = yes
-
 	trigger = {
-			has_country_flag = FIN_The_civil_war_is_over
-			ARU = { exists = no }
-			ARN = { exists = no }
-			ARR = { exists = no }
+		has_country_flag = FIN_The_civil_war_is_over
+		ARU = {
+			exists = no
 		}
-    	option = { 
-	    	name = The_civil_war_is_over 
-            ai_chance = { factor = 80}
-			annex_country = UKR
-			annex_country = GNR
-			set_cosmetic_tag = XXX
-        }
+		ARN = {
+			exists = no
+		}
+		ARR = {
+			exists = no
+		}
+	}
+	option = {
+		name = The_civil_war_is_over
+		ai_chance = {
+			factor = 80
+		}
+		annex_country = UKR
+		annex_country = GNR
+		set_cosmetic_tag = XXX
+	}
+}
+add_namespace = SOV
+country_event = {
+	id = SOV.1	#破除迷信
+	title = SOV.1.t
+	desc = SOV.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SOV.1.a
+	}
+}
+country_event = {
+	id = SOV.2	#平等教育
+	title = SOV.2.t
+	desc = SOV.2.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SOV.2.a
+	}
+}
+country_event = {
+	id = SOV.3	#形式主义的终结
+	title = SOV.3.t
+	desc = SOV.3.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SOV.3.a
+	}
+}
+country_event = {
+	id = SOV.4	#支援
+	title = SOV.4.t
+	desc = SOV.4.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SOV.4.a
+		random_core_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = infrastructure 
+			level = 1
+			instant_build = yes 
+			}
+		}
+	}
+}
+country_event = {
+	id = SOV.100	#白军大势已去
+	title = SOV.100.t
+	desc = SOV.100.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1920.8.1
+		tag  = ARU
+		country_exists = ARU
+	}
+	option = {
+		name = SOV.100.a
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = Forced_conscript
+				add_idea = Forced_conscript_2
+			}
+		}
+	}
 }

@@ -19,9 +19,7 @@ division_template = {
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 		infantry = { x = 4 y = 2 }
-		impedimenta = { x = 4 y = 0 }
-		impedimenta = { x = 4 y = 1 }
-		impedimenta = { x = 4 y = 2 }
+
 		
 	}
 	support = {
@@ -324,6 +322,140 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
+	division = {
+        name = "波兰志愿军"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "协约国支援师"
+        location = 1132
+        division_template = "白卫混成师"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.8
+    }
+    division = {
+        name = "俄罗斯皇家近卫师"
+        location = 1132
+        division_template = "白卫混成师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "南方志愿军"
+        location = 1132
+        division_template = "白卫混成师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "协约国步兵师"
+        location = 1132
+        division_template = "白卫步兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.5
+    }
+    division = {
+        name = "兄弟会步兵师"
+        location = 1132
+        division_template = "白卫步兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.4
+    }
+    division = {
+        name = "哥萨克骑兵师"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.4
+    }
+    division = {
+        name = "龙骑兵师"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.4
+    }
+    division = {
+        name = "直辖骑兵师"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.6
+    }
+    division = {
+        name = "伦敦志愿军"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+        name = "高尔察克近卫师"
+        location = 1132
+        division_template = "白卫精英步兵师"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.9
+    }
+    division = {
+        name = "克拉斯诺达尔哥萨克师"
+        location = 1132
+        division_template = "白卫精英步兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "库班哥萨克师"
+        location = 1132
+        division_template = "白卫精英步兵师"
+        start_experience_factor = 0.8
+        start_equipment_factor = 0.9
+    }
+    division = {
+        name = "西伯利亚暂编师"
+        location = 1132
+        division_template = "白卫精英步兵师"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.4
+    }
+    division = {
+        name = "乌克兰民族军"
+        location = 1132
+        division_template = "白卫精英步兵师"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.6
+    }
+    division = {
+        name = "罗斯托夫步兵旅"
+        location = 1132
+        division_template = "白卫步兵师"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.77
+    }
+    division = {
+        name = "第6顿河哥萨克旅"
+        location = 1132
+        division_template = "白卫步兵师"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.77
+    }
+    division = {
+        name = "外籍志愿军"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.8
+    }
+    division = {
+        name = "北方志愿军"
+        location = 1132
+        division_template = "白卫混成骑兵师"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.7
+    }
+
 
 }
 

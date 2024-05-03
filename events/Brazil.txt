@@ -41,21 +41,21 @@ country_event = {
 		name = BRA.1.a
 		news_event = { id = AOR_news.21 }
 		BR1 = {
-			load_oob = "BR1_1919_land"
-	    	transfer_state = 488
+			transfer_state = 488
 	    	transfer_state = 280
 	    	transfer_state = 504
 	    	transfer_state = 496
 			transfer_state = 505
+			load_oob = "BR1_1919_land"	    	
 		}
 		BR2 = {
-			load_oob = "BR2_1919_land"
 	    	transfer_state = 499
 			transfer_state = 498
+			load_oob = "BR2_1919_land"
 		}
 		BR3 = {
-			load_oob = "BR3_1919_land"
 			transfer_state = 495
+			load_oob = "BR3_1919_land"
 		}
 		
 		BRA = {

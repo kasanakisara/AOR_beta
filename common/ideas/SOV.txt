@@ -328,6 +328,16 @@ country= {
 			research_speed_factor = -0.05
 		}
 	}
+	SOV_Industrialization_began_1 = {
+		picture = SOV_transformation_of_nature
+		allowed = { tag = RUS }
+		modifier = {
+			conscription_factor = -0.15
+			monthly_population = 0.05
+			stability_factor = 0.05
+
+		}
+	}
 	#列宁的批评
 	SOV_Lenin_criticism = {
 		picture = SOV_soviet_hegemony
@@ -486,6 +496,337 @@ country= {
 			experience_gain_army_factor = 0.15
 		}
 	}
+	SOV_economic_construction_1 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			drift_defence_factor = 0.5
+			local_building_slots_factor = 0.025
+			local_resources_factor = 0.025
+			consumer_goods_factor = 0.05
+		}
+	}
+	SOV_economic_construction_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			drift_defence_factor = 0.5
+			local_building_slots_factor = 0.075
+			local_resources_factor = 0.075
+			consumer_goods_factor = 0.05
+		}
+	}
+	SOV_economic_construction_3 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			drift_defence_factor = 0.5
+			local_building_slots_factor = 0.1
+			local_resources_factor = 0.1
+			consumer_goods_factor = 0.075
+			production_speed_industrial_complex_factor = 0.15
+		}
+	}
+	SOV_economic_construction_4 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			drift_defence_factor = 0.25
+			local_building_slots_factor = 0.15
+			local_resources_factor = 0.15
+			consumer_goods_factor = 0.075
+			production_speed_industrial_complex_factor = 0.25
+		}
+	}
+	SOV_Scrub_away_the_filth = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.1
+			monthly_population = -0.15
+		}
+	}
+	SOV_Historical_filters = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			stability_factor = 0.05
+			subversive_activites_upkeep = -0.5
+			communist_drift = 0.01
+
+		}
+	}
+	SOV_Intra_party_democracy = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			political_power_factor = 0.15
+			political_advisor_cost_factor = -0.5
+			political_power_cost = -0.1
+			custom_modifier_tooltip = SOV_Intra_party_democracy_tt
+
+		}
+	}
+	SOV_tech_1 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			research_speed_factor = 0.1
+			custom_modifier_tooltip = SOV_tech_1_tt
+
+		}
+	}
+	SOV_tech_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			research_speed_factor = 0.15
+			custom_modifier_tooltip = SOV_tech_2_tt
+
+		}
+	}
+	SOV_tech_3 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			research_speed_factor = 0.15
+			custom_modifier_tooltip = SOV_tech_3_tt
+			mobilization_speed = 0.05
+			political_power_gain = 0.1
+
+		}
+	}
+	SOV_tech_4 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			research_speed_factor = 0.2
+			custom_modifier_tooltip = SOV_tech_4_tt
+			mobilization_speed = 0.05
+			political_power_gain = 0.1
+
+		}
+	}
+	SOV_real_de = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			Marxism_drift = 0.10
+			Absolutism_drift = -0.05
+			Fascism_drift = -0.05
+
+
+		}
+	}
+	SOV_real_de_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			Marxism_drift = 0.15
+			Absolutism_drift = -0.05
+			Fascism_drift = -0.05
+			political_power_factor = 0.15
+			trade_laws_cost_factor = -0.33
+			mobilization_laws_cost_factor = -0.33
+			
+			
+
+		}
+	}
+	SOV_Reform_education_system = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			custom_modifier_tooltip = SOV_tech_1_tt
+			civilian_factory_use = 3
+			materiel_manufacturer_cost_factor = -0.3
+			
+
+		}
+	}
+	SOV_Reform_education_system_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			custom_modifier_tooltip = SOV_tech_2_tt
+			civilian_factory_use = 1
+			materiel_manufacturer_cost_factor = -0.3
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_synthetic_refinery_factor = 0.25
+			
+
+		}
+	}
+	SOV_Labor_centered = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			custom_modifier_tooltip = SOV_tech_1_tt
+			consumer_goods_factor = -0.1
+			production_speed_infrastructure_factor = 0.2
+			surrender_limit = 0.1
+			local_resources_factor = 0.1
+			mobilization_laws_cost_factor = -0.33
+
+		}
+	}
+	SOV_Labor_centered_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			custom_modifier_tooltip = SOV_tech_1_tt
+			consumer_goods_factor = -0.1
+			production_speed_infrastructure_factor = 0.3
+			surrender_limit = 0.1
+			local_resources_factor = 0.15
+			mobilization_laws_cost_factor = -0.33
+			production_speed_arms_factory_factor = 0.1
+
+		}
+	}
+	SOV_Labor_centered_2 = {
+		picture = generic_communist_army
+		allowed = {
+			OR = {
+				has_government = Marxism
+			}
+		}
+		cancel = {
+			NOT = { has_government = Marxism }
+		}
+		modifier = {
+			custom_modifier_tooltip = SOV_tech_1_tt
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.1
+			production_speed_infrastructure_factor = 0.3
+			surrender_limit = 0.1
+			local_resources_factor = 0.15
+			mobilization_laws_cost_factor = -0.33
+			production_speed_arms_factory_factor = 0.1
+
+		}
+	}
+
 }
 }
 

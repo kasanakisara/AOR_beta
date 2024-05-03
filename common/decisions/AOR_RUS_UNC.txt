@@ -816,6 +816,17 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 			
 		}
 	}
+	SOV_DEBUG_D = {
+		visible = {
+			is_debug = yes
+		}
+		available  = {
+			is_debug = yes
+		}
+		complete_effect = {
+			load_focus_tree = AOR_SOV_2
+		}
+	}
 	
 	重组中亚战区 = { #拆分土耳其斯坦
 		visible = { always = no }

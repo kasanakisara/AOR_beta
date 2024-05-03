@@ -16,9 +16,7 @@ deas = {
 			}
 
 			modifier = {
-				conscription = -0.014
-				army_org_factor = -0.1
-				consumer_goods_factor = 0.05
+				stability_factor = -0.1
 			}
 		}
 			

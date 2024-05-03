@@ -486,6 +486,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 9
+		completion_reward = {
+			add_ideas = SWE_Open_the_door
+		}
 
 	}
 	focus = {
@@ -500,7 +503,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Trade_with_Balkan
+		id = SWE_Antitrust
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -522,11 +525,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Trade_with_Greek
+		id = SWE_National_Regulation
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Trade_with_Balkan
+			focus = SWE_Antitrust
 		}
 		x = 5
 		y = 11
@@ -537,7 +540,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Trade_with_Greek
+			focus = SWE_National_Regulation
 		}
 		prerequisite = {
 			focus = SWE_Trade_with_China
