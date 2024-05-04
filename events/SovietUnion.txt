@@ -91,6 +91,9 @@ country_event = {
 		date > 1920.8.1
 		tag  = ARU
 		country_exists = ARU
+		RUS = {
+			is_ai = yes
+		}
 	}
 	option = {
 		name = SOV.100.a

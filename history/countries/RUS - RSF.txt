@@ -11,7 +11,7 @@ set_party_name = {
 }
 
 capital = 219
-load_focus_tree = AOR_SOV_2
+load_focus_tree = AOR_SOV
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -205,3 +205,28 @@ recruit_character = SOV_Kirov
 recruit_character = SOV_Sverdlov
 recruit_character = SOV_Zhukov
 recruit_character = SOV_Tuhachevsky
+recruit_character = SOV_pavel_pavlovich_lebedev
+recruit_character = SOV_sergey_sergeyevich_kamenev
+recruit_character = SOV_mikhail_vasilyevich_frunze
+recruit_character = SOV_jukums_vacietis
+recruit_character = SOV_yan_borisovich_gamarnik
+recruit_character = SOV_semyon_mikhailovich_budenny
+recruit_character = SOV_aleksandr_ignatyevich_sedyakin
+recruit_character = SOV_aleksey_alekseyevich_brusilov
+recruit_character = SOV_aleksandr_erlich_egorov
+recruit_character = SOV_ivan_panfilovich_belov
+recruit_character = SOV_ivan_naumovich_dubovy
+
+recruit_character = SOV_yeronim_petrovich_uborevich
+recruit_character = SOV_kliment_efremovich_voroshilov
+recruit_character = SOV_yukhim_opanasovich_shchadenko
+recruit_character = SOV_august_kork
+
+recruit_character = SOV_nikolai_dmitriyevich_kashirin
+recruit_character = SOV_vladimir_mikhailovich_gittis
+recruit_character = SOV_vasily_ivanovich_shorin
+recruit_character = SOV_vasily_konstantinovich_blucher
+recruit_character = SOV_mikhail_karlovich_levandovsky
+recruit_character = SOV_sergey_ivanovich_gusev
+recruit_character = SOV_semyon_konstantinovich_timoshenko
+recruit_character = SOV_boris_mikhailovich_shaposhnikov

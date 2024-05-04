@@ -477,8 +477,15 @@ focus_tree = {
 		relative_position_id = AOR_SOV_Civil_war_1
 		available = {
 			OR = {
-				NOT = { country_exists = ARR }
-				NOT = { country_exists = ARN }
+				ARR = {
+					surrender_progress > 0.3
+				}
+				ARN = {
+					surrender_progress > 0.3
+				}
+				ARU = {
+					surrender_progress > 0.3
+				}
 			}
 		}
 		completion_reward = {
@@ -723,18 +730,27 @@ focus_tree = {
 			add_country_leader_trait = SOV_lenin_founder_of_alliance
 			custom_effect_tooltip = AOR_SOV_Civil_war_20_tt1
 			custom_effect_tooltip = AOR_GER_Newline_tt
-			every_other_country = {
-				limit ={
-					is_subject_of = ROOT
-					OR = {
-						tag = UKR
-						tag = GNR
+			hidden_effect = {
+				
+				news_event = { id = NewsEvents_SOV_timeaxis.1 days = 1 }
+				every_state = {
+					limit = {
+						CONTROLLER = {
+							is_subject_of = RUS
+							has_autonomy_state = AOR_SOV_Closely_executed_alliance
+						}
 					}
+					RUS = { add_state_core = PREV }
 				}
-				RUS = {
-					annex_country = {
-						target = prev
-						transfer_troops = yes
+				every_other_country = {
+					limit ={
+						has_autonomy_state = AOR_SOV_Closely_executed_alliance
+					}
+					RUS = {
+						annex_country = {
+							target = PREV
+							transfer_troops = no
+						}
 					}
 				}
 			}
