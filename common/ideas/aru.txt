@@ -44,7 +44,7 @@ ideas = {
 		}
 		
 		#人心散乱
-		People's_hearts_are_scattered = {
+		People_s_hearts_are_scattered = {
 		
 			allowed = {
 				always = yes
@@ -53,13 +53,13 @@ ideas = {
 			visible = {
 			    always = yes
 			}
-
-			picture = idea_People's_hearts_are_scattered
-
+			picture  = idea_Imperialist_support_nothing
+			
 			modifier = {
 				stability_factor = -0.1
 				army_core_defence_factor = -0.05
 				mobilization_speed = -0.5
+				surrender_limit = -0.4
 			}
 		}
 		
@@ -83,6 +83,7 @@ ideas = {
 				Absolutism_drift = -0.01
 				request_lease_tension = -1
 				send_volunteers_tension = -1
+
 			}
 		}
 		#强征民力
@@ -102,6 +103,40 @@ ideas = {
 				stability_factor = -0.1
 				conscription = 0.01
 				mobilization_speed = 0.75
+				
+			}
+		}
+		Forced_conscript_2 = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			picture = GFX_idea_Forced_conscript 
+
+			modifier = {
+				stability_factor = -0.1
+				conscription = -0.05
+				mobilization_speed = 0.75
+				hidden_modifier = {
+					army_attack_factor = -0.4
+				breakthrough_factor = -0.4
+				army_defence_factor = -0.4
+				army_speed_factor = -0.4
+				army_org = 5
+				army_org_factor = -0.4
+				army_morale = -2
+				army_morale_factor = -0.4
+				org_loss_when_moving = 5
+				planning_speed = -0.4
+				max_planning = -0.4
+				supply_consumption_factor =1
+				}
+				
 				
 			}
 		}

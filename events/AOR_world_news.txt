@@ -1487,7 +1487,7 @@ news_event = {# 中国甘肃发生大地震
 	picture = GFX_AOR_news.89_pic
 	fire_only_once = yes
 	trigger = {
-	    date > 1920.12.16
+	    date = 1920.12.16
 	}
 	major = yes
 

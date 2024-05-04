@@ -189,7 +189,7 @@ country_event = {
 	desc = CHI.9.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.1.22
+		date > 1922.2.22
 		tag = CHI
 	}
 	mean_time_to_happen = {
@@ -213,7 +213,7 @@ country_event = {
 	desc = CHI.10.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.2.1
+		date > 1922.3.10
 		tag = DCD
 	}
 	mean_time_to_happen = {

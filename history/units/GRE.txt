@@ -1,4 +1,5 @@
 division_template={
+    division_names_group = GRE_ARM_01
 	name="骑兵师"
 	regiments={
 	cavalry={x=0 y=0}
@@ -12,6 +13,7 @@ division_template={
 }
 division_template={
 	name="本土步兵"
+    division_names_group = GRE_INF_01
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}

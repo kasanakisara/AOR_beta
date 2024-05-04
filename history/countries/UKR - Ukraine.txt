@@ -122,7 +122,8 @@ declare_war_on = {
 	target = ARR
 	type = annex_everything
 }
-
+recruit_character = SOV_ivan_fedorovich_fedko
+recruit_character = SOV_nikolai_ivanovich_muralov
 #create_country_leader = {
 #	name = ""
 #	desc = ""

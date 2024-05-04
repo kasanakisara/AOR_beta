@@ -288,18 +288,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			factor = 5
 		}
 		allowed = {
-			OR = {
-				tag = GER
-				tag = HAN					#威斯特伐利亚
-				tag = SIL					#西里西亚
-				tag = KSH					#波美拉尼亚
-				tag = WUR					#符腾堡
-				tag = PRE					#普鲁士
-				tag = MEK					#梅克伦堡
-				tag = BAV
-				tag = SAX
-				tag = NAU
-			}
+			always = no
 		}
 		visible = {
 			AND = {
@@ -346,18 +335,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			factor = 5
 		}
 		allowed = {
-			OR = {
-				tag = GER
-				tag = HAN					#威斯特伐利亚
-				tag = SIL					#西里西亚
-				tag = KSH					#波美拉尼亚
-				tag = WUR					#符腾堡
-				tag = PRE					#普鲁士
-				tag = MEK					#梅克伦堡
-				tag = BAV
-				tag = SAX
-				tag = NAU
-			}
+			always = no
 		}
 		visible = {
 			AND = {
@@ -565,18 +543,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			factor = 5
 		}
 		allowed = {
-			OR = {
-				tag = GER
-				tag = HAN					#威斯特伐利亚
-				tag = SIL					#西里西亚
-				tag = KSH					#波美拉尼亚
-				tag = WUR					#符腾堡
-				tag = PRE					#普鲁士
-				tag = MEK					#梅克伦堡
-				tag = BAV
-				tag = SAX
-				tag = NAU
-			}
+			always = no
 		}
 		visible = {
 			AND = {
@@ -621,18 +588,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			factor = 5
 		}
 		allowed = {
-			OR = {
-				tag = GER
-				tag = HAN					#威斯特伐利亚
-				tag = SIL					#西里西亚
-				tag = KSH					#波美拉尼亚
-				tag = WUR					#符腾堡
-				tag = PRE					#普鲁士
-				tag = MEK					#梅克伦堡
-				tag = BAV
-				tag = SAX
-				tag = NAU
-			}
+			always = no
 		}
 		visible = {
 			AND = {

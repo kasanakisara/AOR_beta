@@ -774,7 +774,6 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 		#visible = { NOT = { has_global_flag = RUS_flag_Soviet_union } }
 		fire_only_once = yes
 		complete_effect = {
-			custom_effect_tooltip = AOR_SOV_Civil_war_20_tt2
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			add_political_power = 120
 			add_stability = 0.05
@@ -782,38 +781,24 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			#看着玩的，实际不生效
 			effect_tooltip = {
-				unlock_national_focus = AOR_SOV_Civil_war_20
 				custom_effect_tooltip = AOR_GER_Newline_tt
-				add_country_leader_trait = SOV_lenin_founder_of_alliance
 			}
 			set_country_flag = RUS_flag_Soviet_union
 			set_global_flag = RUS_flag_Soviet_union
 			set_cosmetic_tag =  RUS_cosmetic_tag_Soviet_union
-			hidden_effect = {
-				complete_national_focus = AOR_SOV_Civil_war_20
-				news_event = { id = NewsEvents_SOV_timeaxis.1 days = 1 }
-				every_state = {
-					limit = {
-						CONTROLLER = {
-							is_subject_of = RUS
-							has_autonomy_state = AOR_SOV_Closely_executed_alliance
-						}
-					}
-					RUS = { add_state_core = PREV }
-				}
-				every_other_country = {
-					limit ={
-						has_autonomy_state = AOR_SOV_Closely_executed_alliance
-					}
-					RUS = {
-						annex_country = {
-							target = PREV
-							transfer_troops = no
-						}
-					}
-				}
-			}
 			
+			
+		}
+	}
+	SOV_DEBUG_D = {
+		visible = {
+			is_debug = yes
+		}
+		available  = {
+			is_debug = yes
+		}
+		complete_effect = {
+			load_focus_tree = AOR_SOV_2
 		}
 	}
 	
