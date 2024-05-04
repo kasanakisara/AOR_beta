@@ -1495,3 +1495,16 @@ news_event = {# 中国甘肃发生大地震
 		name = AOR_news.89.a
 	}
 }
+
+news_event = {#哈康之死
+	id = AOR_news.90
+	title = AOR_news.90.t
+	desc = AOR_news.90.d
+	picture = GFX_AOR_news.90_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.90.a
+	}
+}

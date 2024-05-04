@@ -17,8 +17,17 @@ country_event = {
             clr_country_flag = SWE_GUI_1
             clr_country_flag = SWE_GUI_4
             set_country_flag = SWE_GUI_2
+            remove_ideas = SWE_Eighty_Seventh_Orders
+            remove_ideas = SWE_K_Plan
+            remove_ideas = SWE_Left_Threat
+            remove_ideas = SWE_Left_Threat_I
+            remove_ideas = SWE_Left_Threat_II
+            remove_ideas = SWE_Antisocialistisk_Speciallagen
+            remove_ideas = SWE_The_Union_Dream
             country_event = { id = Haakon.1 days = 5 }
+            country_event = { id = AOR_news.90 }
         }
+        custom_effect_tooltip = SWE_Hakoon_Death_tt
     }
 }
 
@@ -223,6 +232,7 @@ country_event = {
             remove_ideas = A_lingering_alliance
             remove_ideas = SWE_Left_Threat
             remove_ideas = SWE_Left_Threat_I
+            remove_ideas = SWE_Left_Threat_II
             remove_ideas = SWE_Antisocialistisk_Speciallagen
             remove_ideas = SWE_All_People_are_King
             remove_ideas = SWE_Beyond_Nationalism
@@ -455,12 +465,46 @@ country_event = {
 }
 
 country_event = {
-    id = Haakon.1 #批判会
+    id = Haakon.1 #为联邦梦送葬
     title = Haakon.1.t
     desc = Haakon.1.d
     is_triggered_only = yes
     option = {
         name = Haakon.1.a
+        hidden_effect = {
+            remove_ideas = SWE_All_People_are_King
+            remove_ideas = SWE_Beyond_Nationalism
+            remove_ideas = SWE_Beyond_Nation
+            remove_ideas = SWE_Liberte_Spirit
+            country_event = { id = Haakon.2 days = 5 }
+        }
+        custom_effect_tooltip = SWE_Death_Union_tt
+    }
+}
+
+country_event = {
+    id = Haakon.2 #崩溃的股市
+    title = Haakon.2.t
+    desc = Haakon.2.d
+    is_triggered_only = yes
+    option = {
+        name = Haakon.2.a
+        hidden_effect = {
+            remove_ideas = SWE_Encourage
+            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = SWE_Open_the_door
+            country_event = { id = Hakoon.3 days = 5 }
+        }
+    }
+}
+
+country_event = {
+    id = Haakon.3 #混乱序幕
+    title = Haakon.3.t
+    desc = Haakon.3.d
+    is_triggered_only = yes
+    option = {
+        name = Haakon.3.a
         hidden_effect = {
             load_focus_tree = AOR_SWE_focus_tree_2
         }
