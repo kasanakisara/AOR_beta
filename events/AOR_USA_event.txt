@@ -1305,3 +1305,34 @@ country_event = {
 		name=USA.10037.a
 	}	
 }
+
+country_event = {
+	id = USA.10038 #卡米拉(西部)
+	title = USA.10038.t
+	desc = USA.10038.d
+	picture = GFX_USA_event_10038
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		date = 1921.3.1
+  }
+	option = {
+		name=USA.10038.a
+		add_manpower = -24
+	}	
+}
+
+country_event = {
+	id = USA.10039 #约翰(西部)
+	title = USA.10039.t
+	desc = USA.10039.d
+	picture = GFX_USA_event_10039
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		date = 1921.4.1
+  }
+	option = {
+		name=USA.10039.a
+	}	
+}
