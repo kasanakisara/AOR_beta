@@ -58,6 +58,7 @@ country_event = { #波兰索要布列斯特
 
 	option = {
 		name = LIT.2.a #同意割让
+		news_event = {id=AOR_news.91}
 		POL = {
 			transfer_state = 94
 			transfer_state = 95
@@ -84,11 +85,13 @@ country_event = { #军区改组建立国家
 
 	option = {
 		name = LIT.3.a #改组为利沃尼亚，库尔兰和立陶宛，白罗斯;波利西亚公投入波
+		news_event = {id=AOR_news.92}
 		LIT = {
 			set_politics = {ruling_party = CON_democratic }
-			add_popularity = { ideology = Absolutism popularity = -0.6 }
+			add_popularity = { ideology = Absolutism popularity = -0.4 }
+			add_popularity = { ideology = AUT_democratic  popularity = -0.1 }
 			add_popularity = { ideology = CON_democratic  popularity = 0.3 }
-			add_popularity = { ideology = FRE_democratic popularity = 0.3 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
 			}
 		POL = {
 			transfer_state = 94
@@ -156,6 +159,7 @@ country_event = { #军区改组建立国家
 
 	option = {
 		name = LIT.3.b #改组为拉脱维亚和立陶宛
+		news_event = {id=AOR_news.93}
 		LIT = {
 			set_politics = {ruling_party = AUT_democratic }
 			add_popularity = { ideology = Absolutism popularity = -0.5 }
@@ -212,6 +216,7 @@ country_event = { #军区改组建立国家
 
 	option = {
 		name = LIT.3.c #对体制小修小补
+		news_event = {id=AOR_news.94}
 		country_event = LIT.4
 	}
 
@@ -228,6 +233,7 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 
 	option = {
 		name = LIT.4.a
+		news_event = {id=AOR_news.95}
 		LIT = {
 			add_popularity = { ideology = Absolutism popularity = -0.5 }
 			add_popularity = { ideology = Marxism popularity = 0.3 }
@@ -287,6 +293,9 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			}
 			809 = {
 				set_demilitarized_zone = yes
+			}
+			13 = {
+				set_demilitarized_zone = NO
 			}
 			812 = {
 				set_demilitarized_zone = NO
