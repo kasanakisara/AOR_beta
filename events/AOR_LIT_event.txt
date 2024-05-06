@@ -92,6 +92,8 @@ country_event = { #军区改组建立国家
 			}
 		POL = {
 			transfer_state = 94
+			transfer_state = 194
+			transfer_state = 201
 			}
 		EST = {
 			set_politics = {ruling_party = CON_democratic }
@@ -116,7 +118,7 @@ country_event = { #军区改组建立国家
 			set_politics = {ruling_party = FRE_democratic }
 			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
 			transfer_state = 96
-			transfer_state = 194
+
 			transfer_state = 204
 			transfer_state = 206
 			}
@@ -165,7 +167,8 @@ country_event = { #军区改组建立国家
 			transfer_state = 94
 			}
 		LAT = {
-			set_politics = {ruling_party = CON_democratic }
+			set_politics = {ruling_party = AUT_democratic }
+			add_popularity = { ideology = AUT_democratic  popularity = 0.3 }
 			add_popularity = { ideology = CON_democratic  popularity = 0.2 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
 			transfer_state = 190
