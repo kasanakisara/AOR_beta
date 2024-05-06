@@ -1,4 +1,4 @@
-add_namespace = LIT
+add_namespace = LIT   #这只是事件链
 
 country_event = {
 	id = LIT.1 #波罗的骚乱
@@ -249,17 +249,8 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			transfer_state = 201
 			transfer_state = 204
 			transfer_state = 206
-			}
-		EST = {
-			set_politics = {ruling_party = CON_democratic }
-			add_popularity = { ideology = Absolutism popularity = -0.5 }
-			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
-			add_popularity = { ideology = CON_democratic popularity = 0.2 }
-			add_popularity = { ideology = Marxism popularity = 0.1 }
-			transfer_state = 12
 			transfer_state = 13
 			transfer_state = 191
-			transfer_state = 810
 			transfer_state = 812
 			transfer_state = 813
 			}
@@ -268,6 +259,8 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			add_popularity = { ideology = Absolutism popularity = -0.4 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
 			add_popularity = { ideology = CON_democratic popularity = 0.2 }
+			transfer_state = 12
+			transfer_state = 810
 			transfer_state = 808
 			}
 		ENG = {
