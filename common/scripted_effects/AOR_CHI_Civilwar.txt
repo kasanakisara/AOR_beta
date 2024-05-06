@@ -381,26 +381,100 @@ CHI_civil_war_5 = {
 			add_state_core = 605
 		    transfer_state = 605
 			add_manpower = 10000
+			declare_war_on = {
+				target = DCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = JLD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = XCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = CBS
+				type = annex_everything
+				}
 		}
 		DCD = {
 			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 			transfer_state = 906
 			add_state_core = 906
 			add_manpower = 10000
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = JLD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = XCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = CBS
+				type = annex_everything
+				}
 		}
 		JLD = {
 			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 			add_state_core = 908
 			transfer_state = 908
-			
 			add_manpower = 10000
+			declare_war_on = {
+				target = DCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = XCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = CBS
+				type = annex_everything
+				}
 		}
 		XCD ={
 			load_oob = "AOR_LAND_CHI_chuanjun_XI"
 			add_state_core = 753
 			transfer_state = 753
-			
 			add_manpower = 10000
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = JLD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = DCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = CBS
+				type = annex_everything
+				}
 		}
 		CBS = {
 			load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
@@ -408,8 +482,26 @@ CHI_civil_war_5 = {
 			add_state_core = 434
 			transfer_state = 751
 			transfer_state = 434
-			
 			add_manpower = 10000
+			declare_war_on = {
+				target = DCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = JLD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = XCD
+				type = annex_everything
+				}
+
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}
 		}
 	}
 }
