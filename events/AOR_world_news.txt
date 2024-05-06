@@ -1505,3 +1505,68 @@ news_event = {#哈康之死
 		name = AOR_news.90.a
 	}
 }
+
+news_event = {#波兰进军东欧
+	id = AOR_news.91
+	title = AOR_news.91.t
+	desc = AOR_news.91.d
+	picture = GFX_AOR_news.91_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.91.a
+	}
+}
+
+news_event = {#东欧战区进行大改组
+	id = AOR_news.92
+	title = AOR_news.92.t
+	desc = AOR_news.92.d
+	picture = GFX_AOR_news.92_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.92.a
+	}
+}
+
+news_event = {#东欧战区进行小改组
+	id = AOR_news.93
+	title = AOR_news.93.t
+	desc = AOR_news.93.d
+	picture = GFX_AOR_news.93_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.93.a
+	}
+}
+
+news_event = {#东欧战区进行改革
+	id = AOR_news.94
+	title = AOR_news.94.t
+	desc = AOR_news.94.d
+	picture = GFX_AOR_news.94_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.94.a
+	}
+}
+
+news_event = {#东欧战区解体
+	id = AOR_news.95
+	title = AOR_news.95.t
+	desc = AOR_news.95.d
+	picture = GFX_AOR_news.95_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.95.a
+	}
+}
