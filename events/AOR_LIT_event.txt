@@ -246,6 +246,10 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			}
 		EST = {
 			set_politics = {ruling_party = CON_democratic }
+			add_popularity = { ideology = Absolutism popularity = -0.5 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			add_popularity = { ideology = CON_democratic popularity = 0.2 }
+			add_popularity = { ideology = Marxism popularity = 0.1 }
 			transfer_state = 12
 			transfer_state = 13
 			transfer_state = 191
@@ -255,6 +259,9 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			}
 		LAT = {
 			set_politics = {ruling_party = CON_democratic }
+			add_popularity = { ideology = Absolutism popularity = -0.4 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			add_popularity = { ideology = CON_democratic popularity = 0.2 }
 			transfer_state = 808
 			}
 		ENG = {
@@ -278,8 +285,8 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			96 = {
 				set_demilitarized_zone = yes
 			}
-			13 = {
-				set_demilitarized_zone = NO
+			809 = {
+				set_demilitarized_zone = yes
 			}
 			812 = {
 				set_demilitarized_zone = NO
@@ -288,9 +295,6 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 				set_demilitarized_zone = NO
 			}
 			191 = {
-				set_demilitarized_zone = NO
-			}
-			96 = {
 				set_demilitarized_zone = NO
 			}
 			194 = {
