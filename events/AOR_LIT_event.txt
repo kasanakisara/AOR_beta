@@ -273,6 +273,9 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 		ENG = {
 			transfer_state = 811
 			}
+		PRE = {
+			transfer_state = 188
+			}
 			189 = {
 				set_demilitarized_zone = yes
 			}
@@ -392,14 +395,43 @@ country_event = { #战后结局3-苏联武力瓦解
 	}
 }
 
-country_event = { 
+country_event = { #苏波瓜分
 	id = LIT.9
 	title = LIT.9.t
 	desc = LIT.9.d
 	picture = GFX_events_LIT_9
-	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+	    date = 1924.9.1
+		tag = LIT
+	}
  option = { 
 	name = LIT.9.a
+	POL = {
+		transfer_state = 189
+		transfer_state = 815
+		transfer_state = 11
+		transfer_state = 814
+		transfer_state = 784
+		transfer_state = 96
+		transfer_state = 97
+		transfer_state = 95
+		transfer_state = 94
+		}
+	RUS = {
+		transfer_state = 194
+		transfer_state = 201
+		transfer_state = 204
+		transfer_state = 206
+		transfer_state = 190
+		transfer_state = 808
+		transfer_state = 809
+		transfer_state = 12
+		transfer_state = 13
+		transfer_state = 191
+		transfer_state = 810
+		transfer_state = 812
+		transfer_state = 813
+		}
 	}
 }
