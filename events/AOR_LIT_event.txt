@@ -163,9 +163,6 @@ country_event = { #军区改组建立国家
 			add_popularity = { ideology = AUT_democratic popularity = 0.2 }
 			add_popularity = { ideology = Marxism popularity = 0.1 }
 			}
-		POL = {
-			transfer_state = 94
-			}
 		LAT = {
 			set_politics = {ruling_party = AUT_democratic }
 			add_popularity = { ideology = AUT_democratic  popularity = 0.3 }
