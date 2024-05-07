@@ -55,217 +55,217 @@ division_template = {
 units = {
 	division= {	
 		name = "陆军第五师"
-		location = 1069
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "陆军第六师"
-		location = 3992
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "西北边防第一师"
-		location = 12612
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "西北边防第二师"
-		location = 12557
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "西北边防第三师"
-		location = 7799
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "陆军第七师"
-		location = 9843
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "陆军第十师"
-		location = 9843
+		location = 4801
 		division_template = "陆军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "陆军第四十九旅"
-		location = 11771
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第三混成旅"
-		location = 9974
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第四混成旅"
-		location = 4013
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第八混成旅"
-		location = 556
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第九混成旅"
-		location = 7191
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第十混成旅"
-		location = 4709
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第十一混成旅"
-		location = 8086
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第四十九混成旅"
-		location = 10022
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军第四十七混成旅"
-		location = 7199
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "安武军第一混成旅"
-		location = 7222
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = 安武军第二混成旅""
-		location = 1001
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "安武军第一三混成旅"
-		location = 4079
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "安武军第四混成旅"
-		location = 1083
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "安武军第五混成旅"
-		location = 11994
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军步兵第一旅"
-		location = 1630
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "陆军步兵第二旅"
-		location = 531
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "山东巡逻防前路"
-		location = 12093
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "山东巡逻防后路"
-		location = 12069
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "山东巡逻防左路"
-		location = 11962
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "山东巡逻防右路"
-		location = 10018
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "边防骑兵第一旅"
-		location = 7843
+		location = 4801
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "边防骑兵第二旅"
-		location = 7808
+		location = 4801
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "边防骑兵第三旅"
-		location = 2015
+		location = 4801
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "边防步兵混成旅"
-		location = 4823
+		location = 4801
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8

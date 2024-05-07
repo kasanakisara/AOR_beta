@@ -46,7 +46,18 @@ country_event = {
 	immediate = {
 		CHI_civil_war_1 = yes
 		CHI_civil_war_2 = yes
+		hidden_effect = {
+		CHI = {
+		load_oob = "AOR_LAND_CHI_CENTRAL"
+		}
+		NAN = {
+		load_oob = "AOR_LAND_CHI_NAN"
+		}
+		MON = {
+        load_oob = "AOR_LAND_CHI_VAN"
+		}
 	}
+}
 	option = {
 		name = CHI.4.a
 		add_political_power = 75
@@ -111,6 +122,12 @@ country_event = {
 	immediate = { 
 		hidden_effect = {
 			CHI = {
+				delete_unit_template_and_units = {
+					division_template ="陆军师"
+					division_template ="混成旅"
+					division_template ="骑兵旅"
+					disband = YES
+				}
 			set_capital = { state = 614 }
 			}
 			MON = {
@@ -181,8 +198,8 @@ country_event = {
 	#那就这样吧  
 	option = {
 		name = CHI.8.a
-		CHI_civil_war_3 = yes
 		hidden_effect = {
+			CHI_civil_war_3 = yes
 			country_event = {id = CHI.999 days=2}
 		}
 		news_event = {id=AOR_news.85}
