@@ -111,6 +111,14 @@ country_event = {
 	immediate = { 
 		hidden_effect = {
 			CHI = {
+			set_capital = { state = 614 }
+			}
+			MON = {
+			transfer_state = 758
+			transfer_state = 608
+
+			}
+			CHI = {
 				set_cosmetic_tag = CHI_1
 			}
 			country_event = { id = CHI.12 days = 7 } 			
