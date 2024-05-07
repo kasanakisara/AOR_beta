@@ -225,6 +225,59 @@ country_event = {
 	}
 	#那就这样吧  
 	option = {
+
+		DCD = {
+		declare_war_on = {
+			target = CBS
+			type = civil_war
+			}
+		declare_war_on = {
+			target = XCD
+			type = civil_war
+			}
+		declare_war_on = {
+			target = JLD
+			type = civil_war
+			}
+		declare_war_on = {
+			target = PRC
+			type = civil_war
+			}
+		}
+
+		CBS = {
+		declare_war_on = {
+			target = XCD
+			type = civil_war
+			}
+		declare_war_on = {
+			target = JLD
+			type = civil_war
+			}
+		declare_war_on = {
+			target = PRC
+			type = civil_war
+			}
+		}
+
+		XCD = {
+		declare_war_on = {
+			target = JLD
+			type = civil_war
+			}
+		declare_war_on = {
+			target = PRC
+			type = civil_war
+			}
+		}
+
+		JLD = {
+		declare_war_on = {
+			target = PRC
+			type = civil_war
+			}
+		}
+
 		name = CHI.10.a
 		PRC = {
 			change_tag_from = ROOT
