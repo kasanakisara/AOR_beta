@@ -141,6 +141,7 @@ set_stability = 0.3
 }
 recruit_character = PER_ENG_instructor_theorist
 recruit_character = PER_ENG_economy_theorist
+420 = { set_demilitarized_zone = yes }
 set_politics = {
 	ruling_party = ISL_democratic
 	last_election = "1916.1.1"
