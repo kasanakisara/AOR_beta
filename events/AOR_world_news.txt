@@ -1570,3 +1570,29 @@ news_event = {#东欧战区解体
 		name = AOR_news.95.a
 	}
 }
+
+news_event = {#冯国璋公开支持保定政府
+	id = AOR_news.96
+	title = AOR_news.96.t
+	desc = AOR_news.96.d
+	picture = GFX_AOR_news.96_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.96.a
+	}
+}
+
+news_event = {#中国内战全面爆发(直皖大战)
+	id = AOR_news.97
+	title = AOR_news.97.t
+	desc = AOR_news.97.d
+	picture = GFX_AOR_news.97_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.97.a
+	}
+}

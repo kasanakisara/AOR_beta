@@ -196,7 +196,7 @@ units = {
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = 安武军第二混成旅""
+		name = "安武军第二混成旅"
 		location = 1001
 		division_template = "混成旅"
 		start_experience_factor = 0.2
