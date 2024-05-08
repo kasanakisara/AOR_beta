@@ -355,6 +355,16 @@ country_event = {
 				transfer_state = 892
 				transfer_state = 749
 				transfer_state = 606
+
+				create_country_leader = {
+					name = "Duan_Qi_Rui"
+					desc = ""
+					picture = "gfx/leaders/CHI/Duan.png"
+					expire = "1965.1.1"
+					ideology = miliciagov
+					traits = {
+					}
+				}
 			}
 		}
 		name = CHI.13.a
