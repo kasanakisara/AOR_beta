@@ -1,0 +1,39 @@
+### debug决议 ###
+SWE_Hackers_debug = {
+    SWE_Uniondrama = {
+        avaliable = {
+            is_debug = yes
+            tag = SWE
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            complete_national_focus = SWE_The_Dream
+        }
+    }
+
+    USA_Civilwar_begin = {
+        avaliable = {
+            is_debug = yes
+            tag = USA
+        }
+        visible = {
+            is_debug = yes
+            tag = USA
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            load_focus_tree = USA_3
+            complete_national_focus = USA_Shocking_waves_rise_with_the_wind
+            country_event = { id = USA.99  days = 0 }
+            country_event = { id = USA.100 days = 0 }
+        }
+    }
+}
