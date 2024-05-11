@@ -246,17 +246,122 @@ country_event = {
 	trigger = {
 		date > 1922.3.10
 		tag = DCD
+		NOT = {
+			has_global_flag  = CHI_10_on
+		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
 	}
 	immediate = {
-		CHI_civil_war_5 = yes
+		set_global_flag = CHI_10_on
+		log = "CHI.10 really"
+		log = "[GetLogInfo] [From.GetName]: event CHI.10 option CHI.10.a"
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag  = CHI_10_on
+				}
+			}
+			hidden_effect = {
+				753 = { set_demilitarized_zone = no }
+				906 = { set_demilitarized_zone = no }
+				434 = { set_demilitarized_zone = no }
+				908 = { set_demilitarized_zone = no }
+				751 = { set_demilitarized_zone = no }
+				605 = { set_demilitarized_zone = no }
+		
+				DCD = {
+					declare_war_on = {
+						target = CBS
+						type = civil_war
+						}
+					declare_war_on = {
+						target = XCD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					CBS = {
+					declare_war_on = {
+						target = XCD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					XCD = {
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					JLD = {
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+		
+				PRC = { #共产党
+					add_state_core = 605
+					transfer_state = 605
+					add_manpower = 10000
+				}
+				DCD = {
+					load_oob = "AOR_LAND_CHI_chuanjun_DONG"
+					transfer_state = 906
+					add_state_core = 906
+					add_manpower = 10000
+				}
+				JLD = {
+					load_oob = "AOR_LAND_CHI_chuanjun_JIA"
+					add_state_core = 908
+					transfer_state = 908
+					add_manpower = 10000
+				}
+				XCD ={
+					load_oob = "AOR_LAND_CHI_chuanjun_XI"
+					add_state_core = 753
+					transfer_state = 753
+					add_manpower = 10000
+				}
+				CBS = {
+					load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
+					add_state_core = 751
+					add_state_core = 434
+					transfer_state = 751
+					transfer_state = 434
+					add_manpower = 10000
+				}
+			}
+		}
+		
 	}
 	#那就这样吧  
 	option = {
-
+		log = "CHI.10 real"
 		name = CHI.10.a
 		PRC = {
 			change_tag_from = ROOT
@@ -865,6 +970,7 @@ country_event = {
 	desc = CHI_test.02.desc
 	is_triggered_only = yes
 	option = {
+		log = "test 2 on "
 		name = CHI_test.02.a
 		CHI_civil_war_1 = yes
 		CHI_civil_war_2 = yes
