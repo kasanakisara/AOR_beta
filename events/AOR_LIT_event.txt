@@ -452,7 +452,12 @@ country_event = { #立陶宛红色革命
 	option = {
 		LIT = {
 		set_politics = {ruling_party = Marxism }
+		set_party_name = { ideology = Marxism  long_name = LIT_1_Marxism_party_long name = LIT_1_Marxism_party }
 		add_popularity = { ideology = Marxism  popularity = 0.4 }
+		remove_ideas = {
+			White_Russian_opposition
+			The_bridgehead_of_imperialism
+		    }
 		}
 		EST = {
 		transfer_state = 811
