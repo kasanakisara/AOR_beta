@@ -218,17 +218,17 @@ country_event = {
         ai_chance = { factor = 0.8}
 	    	ARU = { add_to_faction = FIN }
 	    	FIN = {
-	    	declare_war_on = {
-					target = SOV
-					type = annex_everything
-	      		} 
+				add_to_war = {
+					targeted_alliance = ARU
+					enemy = RUS
+				}
 	    	}
 	    	RUS = { add_to_faction = FIC }
 	     	FIC = {
-	        	declare_war_on = {
-					target = ARU
-					type = annex_everything
-	    		} 
+	        	add_to_war = {
+					targeted_alliance = RUS
+					enemy = ARU
+				}
 	    	}
 	    }
 	option = { 
