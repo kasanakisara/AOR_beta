@@ -22,6 +22,10 @@ autonomy_state = {
 		ai_desired_divisions_factor = 5.0
 		cic_to_overlord_factor = 1.00
 		mic_to_overlord_factor = 0.50
+		ai_join_ally_desire_factor = 5
+		ai_call_ally_desire_factor = 5
+
+
 	}
 	ai_subject_wants_higher = {
 		factor = 10.0
