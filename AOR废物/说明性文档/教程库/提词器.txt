@@ -645,7 +645,7 @@ Localization for the reason for joining. Optional.
 add_to_war = { 
     targeted_alliance = PREV 
     enemy = HUN 
-    hostility_reason = asked_to_join
+     
 }
 Adds the current scope into the war of their ally against the specified enemy.	 	1.0
 declare_war_on	target = <scope> / <variable>

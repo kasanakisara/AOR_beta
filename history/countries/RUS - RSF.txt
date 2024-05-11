@@ -109,38 +109,16 @@ add_ideas = {
 	SOV_Destructive_strike
 }
 
-declare_war_on = {
-	target = ARU
-	type = civil_war
-}
+
 add_civil_war_target = ARU
 
-declare_war_on = {
-	target = ARR
-	type = civil_war
-}
+
 add_civil_war_target = ARR
 
-declare_war_on = {
-	target = ARN
-	type = civil_war
-}
+
 add_civil_war_target = ARN
 
-ANU = {
-	declare_war_on = {
-		target = KAZ
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = TAT
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = MEL
-		type = annex_everything
-	}
-}
+
 
 #斯大林和伏龙芝
 set_autonomy = { target = UKR autonomy_state = AOR_SOV_Closely_executed_alliance }
@@ -188,11 +166,105 @@ MEL = {
 		ideology = leninism
 	}
 }
-
+declare_war_on = {
+	target = ARU
+	type = civil_war
+}
 create_faction = SOVIET_group
 
 add_to_faction = CHT
-
+ARN = {add_to_war = {
+    targeted_alliance = ARU
+    enemy = RUS
+     
+}}
+KHI = {add_to_war = {
+    targeted_alliance = ARU
+    enemy = RUS
+     
+}}
+TCG = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+	}
+}
+UZB = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
+ARR = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
+KYR = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+	}
+}
+CHT = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = ARU
+		 
+	}
+}
+TMS = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = ARU
+		 
+	}
+}
+TAJ = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
+UKR = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = ARU
+		 
+	}
+}
+GNR = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = ARU
+		 
+	}
+}
+BSK = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
+KAZ = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = ARU
+		 
+	}
+}
+VGE = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
 recruit_character = SOV_Lenin
 recruit_character = SOV_Stalin
 recruit_character = SOV_Trotsky

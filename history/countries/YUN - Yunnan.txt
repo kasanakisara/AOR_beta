@@ -50,7 +50,7 @@ recruit_character = YUN_ding_zhipan
 		add_to_war = {
 			targeted_alliance = CHI
 			enemy = JAP
-			hostility_reason = asked_to_join
+			 
 		}
 
 		complete_national_focus = CHI_secure_internal_politics

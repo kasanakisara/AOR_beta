@@ -106,6 +106,7 @@ add_ideas = {
 }
 
 
+
 create_country_leader = {
 	name = "Anton Ivanovich Denikin"
 	desc = ""
@@ -116,7 +117,3 @@ create_country_leader = {
 	}
 }
 
-declare_war_on = {
-	target = CHT
-	type = annex_everything
-}

@@ -65,8 +65,5 @@ create_country_leader = {
 	}
 }
 
-declare_war_on = {
-	target = RUS
-	type = civil_war
-}
+
 add_civil_war_target = RUS

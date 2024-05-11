@@ -104,10 +104,7 @@ set_popularities = {
 	Absolutism = 55
 }
 
-declare_war_on = {
-	target = CHT
-	type = annex_everything
-}
+
 
 
 add_ideas = {
