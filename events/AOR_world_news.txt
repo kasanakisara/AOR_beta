@@ -1596,3 +1596,16 @@ news_event = {#中国内战全面爆发(直皖大战)
 		name = AOR_news.97.a
 	}
 }
+
+news_event = {#东欧战区爆发红色革命
+	id = AOR_news.98
+	title = AOR_news.98.t
+	desc = AOR_news.98.d
+	picture = GFX_AOR_news.98_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.98.a
+	}
+}

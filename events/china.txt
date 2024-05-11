@@ -137,10 +137,21 @@ country_event = {
 			set_capital = { state = 614 }
 			}
 			MON = {
+			set_cosmetic_tag = MON_WEST_1
+			set_capital = { state = 621 }
 			transfer_state = 758
 			transfer_state = 608
 
+			create_country_leader = {
+				name = "Duan_Qi_Rui"
+				desc = ""
+				picture = "gfx/leaders/CHI/Duan.png"
+				expire = "1965.1.1"
+				ideology = miliciagov
+				traits = {
+				}
 			}
+		}
 			CHI = {
 				set_cosmetic_tag = CHI_1
 			}
@@ -340,7 +351,6 @@ country_event = {
 				drop_cosmetic_tag = yes
 			}
 			MON = {
-				set_cosmetic_tag = MON_WEST_1
 				transfer_state = 876
 				transfer_state = 612
 				transfer_state = 756
@@ -356,15 +366,6 @@ country_event = {
 				transfer_state = 749
 				transfer_state = 606
 
-				create_country_leader = {
-					name = "Duan_Qi_Rui"
-					desc = ""
-					picture = "gfx/leaders/CHI/Duan.png"
-					expire = "1965.1.1"
-					ideology = miliciagov
-					traits = {
-					}
-				}
 			}
 		}
 		name = CHI.13.a

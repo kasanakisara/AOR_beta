@@ -12,7 +12,9 @@ country_event = {
     }
 	option = {
 		name=LIT.1.a
+		LIT = {
 		set_capital = { state = 784 }
+		}
 		13 = {
 			set_demilitarized_zone = yes
 		}
@@ -217,10 +219,96 @@ country_event = { #军区改组建立国家
 	option = {
 		name = LIT.3.c #对体制小修小补
 		news_event = {id=AOR_news.94}
-		country_event = LIT.4
+		country_event = { days = 120  id = LIT.4 }
 	}
 
+	option = {
+		name = LIT.3.d #红色路线
+		country_event = { days = 180  id = LIT.6 }
+		news_event = {id=AOR_news.98}
+	    LIT = {
+			add_popularity = { ideology = Absolutism popularity = -0.4 }
+			add_popularity = { ideology = AUT_democratic  popularity = -0.1 }
+			add_popularity = { ideology = Marxism  popularity = 0.3 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			}
+		EST = {
+			set_cosmetic_tag = EST_SOV_Marxism_autonomy_colony
+			set_politics = {ruling_party = Marxism }
+			add_popularity = { ideology = Marxism  popularity = 0.4 }
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 191
+			transfer_state = 810
+			transfer_state = 812
+			transfer_state = 813
+			}
+		LAT = {
+			set_cosmetic_tag = LAT_SOV_Marxism_autonomy_colony
+			set_politics = {ruling_party = Marxism }
+			add_popularity = { ideology = Marxism  popularity = 0.4 }
+			transfer_state = 190
+			transfer_state = 808
+			transfer_state = 809
+			}
+		BLR = {
+			set_politics = {ruling_party = Marxism }
+			transfer_state = 96
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 194
+	        }
+		POL = {
+			transfer_state = 97
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 201
+		    }
+		PRE = {
+			transfer_state = 188
+		    }
 
+		13 = {
+			set_demilitarized_zone = NO
+		}
+		812 = {
+			set_demilitarized_zone = NO
+		}
+		813 = {
+			set_demilitarized_zone = NO
+		}
+		191 = {
+			set_demilitarized_zone = NO
+		}
+		96 = {
+			set_demilitarized_zone = NO
+		}
+		194 = {
+			set_demilitarized_zone = NO
+		}
+		201 = {
+			set_demilitarized_zone = NO
+		}
+		204 = {
+			set_demilitarized_zone = NO
+		}
+		206 = {
+			set_demilitarized_zone = NO
+		}
+
+		814 = {
+			set_demilitarized_zone = yes
+		}
+		815 = {
+			set_demilitarized_zone = yes
+		}
+		784 = {
+			set_demilitarized_zone = yes
+		}
+		11 = {
+			set_demilitarized_zone = yes
+		}
+	}
 }
 
 country_event = { #二战前结局1-波罗的资产阶级革命
@@ -234,6 +322,7 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 	option = {
 		name = LIT.4.a
 		news_event = {id=AOR_news.95}
+		country_event = { days = 360  id = LIT.9 }
 		LIT = {
 			add_popularity = { ideology = Absolutism popularity = -0.5 }
 			add_popularity = { ideology = Marxism popularity = 0.3 }
@@ -250,19 +339,19 @@ country_event = { #二战前结局1-波罗的资产阶级革命
 			transfer_state = 204
 			transfer_state = 206
 			}
-			EST = {
-				set_politics = {ruling_party = CON_democratic }
-				add_popularity = { ideology = Absolutism popularity = -0.5 }
-				add_popularity = { ideology = FRE_democratic popularity = 0.2 }
-				add_popularity = { ideology = CON_democratic popularity = 0.2 }
-				add_popularity = { ideology = Marxism popularity = 0.1 }
-				transfer_state = 12
-				transfer_state = 13
-				transfer_state = 191
-				transfer_state = 810
-				transfer_state = 812
-				transfer_state = 813
-				}
+		EST = {
+			set_politics = {ruling_party = CON_democratic }
+			add_popularity = { ideology = Absolutism popularity = -0.5 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			add_popularity = { ideology = CON_democratic popularity = 0.2 }
+			add_popularity = { ideology = Marxism popularity = 0.1 }
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 191
+			transfer_state = 810
+			transfer_state = 812
+		    transfer_state = 813
+			}
 		LAT = {
 			set_politics = {ruling_party = CON_democratic }
 			add_popularity = { ideology = Absolutism popularity = -0.4 }
@@ -351,7 +440,7 @@ country_event = { #二战前结局2-英国有效维护
 	}
 }
 
-country_event = { #战后结局1-苏联尊重新生的共和国
+country_event = { #立陶宛红色革命
 	id = LIT.6
 	title = LIT.6.t
 	desc = LIT.6.d
@@ -361,11 +450,32 @@ country_event = { #战后结局1-苏联尊重新生的共和国
 	fire_only_once = yes
 
 	option = {
+		LIT = {
+		set_politics = {ruling_party = Marxism }
+		add_popularity = { ideology = Marxism  popularity = 0.4 }
+		}
+		EST = {
+		transfer_state = 811
+		}
+		814 = {
+			set_demilitarized_zone = NO
+		}
+		815 = {
+			set_demilitarized_zone = NO
+		}
+		784 = {
+			set_demilitarized_zone = NO
+		}
+		11 = {
+			set_demilitarized_zone = NO
+		}
+	
+		country_event = { days = 90  id = LIT.7 }
 		name = LIT.6.a
 	}
 }
 
-country_event = { #战后结局2-无产阶级群众革命
+country_event = { #东斯拉夫苏维埃成立
 	id = LIT.7
 	title = LIT.7.t
 	desc = LIT.7.d
@@ -375,13 +485,35 @@ country_event = { #战后结局2-无产阶级群众革命
 	fire_only_once = yes
 
 	option = {
-		name = LIT.7.a #安德烈-利亚普切夫
+		LIT = {
+			set_cosmetic_tag = LIT_Marxism_ADJ
+			set_capital = { state = 808 }
+			annex_country = { 
+				target = LAT
+				transfer_troops = yes 
+			}
+			annex_country = { 
+				target = EST 
+				transfer_troops = yes 
+			}
+			annex_country = { 
+				target = BLR 
+				transfer_troops = yes 
+			}
+		}
+		RUS = {
+			set_autonomy = {
+				target = LIT
+				autonomy_state = autonomy_dominion
+			}
+		}
+		name = LIT.7.a 
 	}
 
 }
 
 
-country_event = { #战后结局3-苏联武力瓦解
+country_event = { #战后结局2-无产阶级群众革命
 	id = LIT.8
 	title = LIT.8.t
 	desc = LIT.8.d
@@ -391,7 +523,7 @@ country_event = { #战后结局3-苏联武力瓦解
 	fire_only_once = yes
 
 	option = {
-		name = LIT.8.a
+		name = LIT.8.a #安德烈-利亚普切夫
 	}
 }
 
@@ -400,11 +532,9 @@ country_event = { #苏波瓜分
 	title = LIT.9.t
 	desc = LIT.9.d
 	picture = GFX_events_LIT_9
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-	    date = 1924.9.1
-		tag = LIT
-	}
+
  option = { 
 	name = LIT.9.a
 	POL = {
