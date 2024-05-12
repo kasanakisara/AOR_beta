@@ -342,7 +342,7 @@ country_event = {
 				}
 		    }
 	    }
-	}
+
 	option = {
 		name = CHI.10.b
 		news_event = {id=AOR_news.87}
