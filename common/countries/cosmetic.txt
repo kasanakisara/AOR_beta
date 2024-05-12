@@ -888,8 +888,8 @@ BAV_WUR_1= {
 	color_ui = rgb { 125  13  24 }
 }
 GRE_ABO_1 = {
-	color = rgb {149 45 102}
-	color_ui = rgb {149 45 102}
+	color = rgb {149 45 102 }
+	color_ui = rgb {149 45 102 }
 }
 BAV_GER_1= {
 	color = rgb {125  13  24 }
@@ -905,15 +905,34 @@ MNU_1 = {
 }
 MNU_2 = {
 	color = rgb{ 104  152  83 }
-	color_ui = rgb {  46 139 87}
+	color_ui = rgb {  46 139 87 }
 }
 DCD_1 = {
 	color = rgb { 111 107 107 }
 	color_ui = rgb { 111 107 107 }
 }
 NAN_1 = {
-	color ={ 197 130 0}
-	color_ui = {
-		197 130 0
-	}
+	color ={ 197 130 0 }
+	color_ui = {197 130 0 }
+}
+
+LIT_Marxism = {
+	color ={ 81 66 66 }
+	color_ui = { 81 66 66 }
+}
+LIT_Marxism_ADJ = {
+	color ={ 81 70 70 }
+	color_ui = { 81 70 70 }
+}
+EST_SOV_Marxism_autonomy_colony = {
+	color ={ 81 66 66 }
+	color_ui = { 81 66 66 }
+}
+LAT_SOV_Marxism_autonomy_colony = {
+	color ={ 81 66 66 }
+	color_ui = { 81 66 66 }
+}
+BLR_Marxism = {
+	color ={ 81 66 66 }
+	color_ui = { 81 66 66 }
 }

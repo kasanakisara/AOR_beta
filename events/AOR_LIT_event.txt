@@ -252,6 +252,7 @@ country_event = { #军区改组建立国家
 			transfer_state = 809
 			}
 		BLR = {
+			set_cosmetic_tag = BLR_Marxism
 			set_politics = {ruling_party = Marxism }
 			transfer_state = 96
 			transfer_state = 206
@@ -451,6 +452,7 @@ country_event = { #立陶宛红色革命
 
 	option = {
 		LIT = {
+		set_cosmetic_tag = LIT_Marxism
 		set_politics = {ruling_party = Marxism }
 		set_party_name = { ideology = Marxism  long_name = LIT_1_Marxism_party_long name = LIT_1_Marxism_party }
 		add_popularity = { ideology = Marxism  popularity = 0.4 }
