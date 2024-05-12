@@ -52,9 +52,20 @@ country_event = {
 		}
 		NAN = {
 		load_oob = "AOR_LAND_CHI_NAN"
+		set_cosmetic_tag = NAN_1
 		}
 		MON = {
         load_oob = "AOR_LAND_CHI_VAN"
+		set_cosmetic_tag = MON_WEST
+		}
+		UPC = {
+			set_cosmetic_tag = UPC_1
+		}
+		KMT = {
+			set_cosmetic_tag = KMT_1
+		}
+		DCD = {
+			set_cosmetic_tag = DCD_1
 		}
 	}
 }
@@ -137,11 +148,10 @@ country_event = {
 			set_capital = { state = 614 }
 			}
 			MON = {
-			set_cosmetic_tag = MON_WEST_1
-			set_capital = { state = 621 }
-			transfer_state = 758
-			transfer_state = 608
-
+			    set_cosmetic_tag = MON_WEST_1
+			    set_capital = { state = 621 }
+			    transfer_state = 758
+			    transfer_state = 608
 			330= {
 				set_demilitarized_zone = NO
 			}
@@ -156,6 +166,9 @@ country_event = {
 				}
 			}
 		}
+		    DCD = {
+			    set_cosmetic_tag = DCD_2
+		    }
 			CHI = {
 				set_cosmetic_tag = CHI_1
 			}
@@ -208,7 +221,7 @@ country_event = {
 	desc = CHI.8.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.4.27
+		date > 1922.6.27
 		tag = CHI
 	}
 	mean_time_to_happen = {
@@ -235,7 +248,7 @@ country_event = {
 	desc = CHI.9.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.2.22
+		date > 1922.7.22
 		tag = CHI
 	}
 	mean_time_to_happen = {
@@ -279,7 +292,7 @@ country_event = {
 			change_tag_from = ROOT
 		}
 		DCD = {
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = DCD_ADJ
 		}
 		hidden_effect = {
 			DCD = {
@@ -419,7 +432,7 @@ country_event = {
 	title = CHI.11.t
 	desc = CHI.11.d
 	trigger = {
-		date > 1922.5.31
+		date > 1922.8.31
 		tag = UPC
 	}
 	picture = GFX_Portrait_of_Tirpitz
@@ -777,7 +790,7 @@ country_event = {
 	title = CHI.31.t
 	desc = CHI.31.d
 	trigger = {
-		date > 1922.6.10
+		date > 1922.11.10
 		tag = NAN
 	}
 	picture = GFX_Portrait_of_Tirpitz
@@ -796,6 +809,64 @@ country_event = {
 		name = CHI.31.a
 		news_event = {id=AOR_news.97}
 	}
+}
+
+country_event = {		
+	# KMT大战UPC
+	id = CHI.32
+	title = CHI.32.t
+	desc = CHI.32.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		date > 1922.12.10
+		tag = KMT
+	}	
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			KMT ={
+			declare_war_on = { 
+				target = UPC
+				type = annex_everything
+		    } 
+		}
+	}
+}
+	option = {
+		name = CHI.32.a
+	}	
+}
+
+country_event = {		
+	# 东北好果汁入关
+	id = CHI.33
+	title = CHI.33.t
+	desc = CHI.33.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		date > 1924.2.10
+		tag = MAN
+	}	
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			MAN ={
+			declare_war_on = { 
+				target = NAN
+				type = annex_everything
+		    } 
+		}
+		    MAN ={
+			declare_war_on = { 
+				target = MON
+				type = annex_everything
+			} 
+		}
+	}
+}
+	option = {
+		name = CHI.33.a
+	}	
 }
 
 #还我军事区

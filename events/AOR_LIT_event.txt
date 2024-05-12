@@ -570,5 +570,26 @@ country_event = { #苏波瓜分
 		transfer_state = 812
 		transfer_state = 813
 		}
+		189 = {
+			set_demilitarized_zone = NO
+		}
+		11 = {
+			set_demilitarized_zone = NO
+		}
+		814 = {
+			set_demilitarized_zone = NO
+		}
+		784 = {
+			set_demilitarized_zone = NO
+		}
+		815 = {
+			set_demilitarized_zone = NO
+		}
+		96 = {
+			set_demilitarized_zone = NO
+		}
+		809 = {
+			set_demilitarized_zone = NO
+		}
 	}
 }

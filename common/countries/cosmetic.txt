@@ -907,7 +907,7 @@ MNU_2 = {
 	color = rgb{ 104  152  83 }
 	color_ui = rgb {  46 139 87 }
 }
-DCD_1 = {
+DCD = {
 	color = rgb { 111 107 107 }
 	color_ui = rgb { 111 107 107 }
 }
@@ -935,4 +935,28 @@ LAT_SOV_Marxism_autonomy_colony = {
 BLR_Marxism = {
 	color ={ 81 66 66 }
 	color_ui = { 81 66 66 }
+}
+NAN_1 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+UPC_1 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+KMT_1 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+DCD_1 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+DCD_2 = {
+	color = rgb { 111 107 107 }
+	color_ui = rgb { 111 107 107 }
+}
+MON_WEST = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
