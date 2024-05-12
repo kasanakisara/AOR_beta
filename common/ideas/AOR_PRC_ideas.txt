@@ -9,6 +9,8 @@ ideas = {
 			experience_loss_factor = -0.5
 			recon_factor = 0.5
 			supply_consumption_factor = -0.2
+			surrender_limit = 0.5
+			equipment_capture_factor = 0.5
 	        }
 	    }
 	}

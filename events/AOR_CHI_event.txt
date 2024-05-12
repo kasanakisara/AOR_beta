@@ -339,6 +339,7 @@ country_event = {
 				}
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
+				add_ideas = PRC_The_great_red_army
 				}
 		    }
 	    }
