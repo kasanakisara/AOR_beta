@@ -283,7 +283,7 @@ country_event = {
 		}
 		hidden_effect = {
 			DCD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+				load_oob = "AOR_LAND_CHI_chuanjun_XI"
 				declare_war_on = {
 					target = CBS
 					type = civil_war
@@ -302,8 +302,8 @@ country_event = {
 					}
 				}
 		
-				CBS = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			CBS = {
+				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 				declare_war_on = {
 					target = XCD
 					type = civil_war
@@ -318,8 +318,8 @@ country_event = {
 					}
 				}
 		
-				XCD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			XCD = {
+				load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
 				declare_war_on = {
 					target = JLD
 					type = civil_war
@@ -330,15 +330,15 @@ country_event = {
 					}
 				}
 		
-				JLD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			JLD = {
+				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 				declare_war_on = {
 					target = PRC
 					type = civil_war
 					}
 				}
-				PRC = {
-					load_oob = "AOR_LAND_CHI_CENTRAL"
+			PRC = {
+				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
 				}
 		    }
 	    }
@@ -351,7 +351,7 @@ country_event = {
 		}
 		hidden_effect = {
 			DCD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+				load_oob = "AOR_LAND_CHI_chuanjun_XI"
 				declare_war_on = {
 					target = CBS
 					type = civil_war
@@ -370,8 +370,8 @@ country_event = {
 					}
 				}
 		
-				CBS = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			CBS = {
+				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 				declare_war_on = {
 					target = XCD
 					type = civil_war
@@ -386,8 +386,8 @@ country_event = {
 					}
 				}
 		
-				XCD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			XCD = {
+				load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
 				declare_war_on = {
 					target = JLD
 					type = civil_war
@@ -398,15 +398,15 @@ country_event = {
 					}
 				}
 		
-				JLD = {
-				load_oob = "AOR_LAND_CHI_CENTRAL"
+			JLD = {
+				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 				declare_war_on = {
 					target = PRC
 					type = civil_war
 					}
 				}
-				PRC = {
-					load_oob = "AOR_LAND_CHI_CENTRAL"
+			PRC = {
+				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
 				}
 		    }
 	    }
