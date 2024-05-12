@@ -515,6 +515,7 @@ country_event = { #东斯拉夫苏维埃成立
 			}
 		}
 		name = LIT.7.a 
+		news_event = {id=AOR_news.99}
 	}
 
 }
@@ -544,6 +545,7 @@ country_event = { #苏波瓜分
 
  option = { 
 	name = LIT.9.a
+	news_event = {id=AOR_news.100}
 	POL = {
 		transfer_state = 189
 		transfer_state = 815

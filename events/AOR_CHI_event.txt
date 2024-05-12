@@ -446,6 +446,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.11.a
+		news_event = {id=AOR_news.101}
 	}
 }
 #kmt宣言(kmt改名）
@@ -834,6 +835,7 @@ country_event = {
 }
 	option = {
 		name = CHI.32.a
+		news_event = {id=AOR_news.102}
 	}	
 }
 
@@ -866,6 +868,7 @@ country_event = {
 }
 	option = {
 		name = CHI.33.a
+		news_event = {id=AOR_news.103}
 	}	
 }
 
