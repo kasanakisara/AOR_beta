@@ -266,8 +266,113 @@ country_event = {
 		days = 1
 	}
 	immediate = {
+<<<<<<< HEAD:events/AOR_CHI_event.txt
 		hidden_effect = {
 			CHI_civil_war_5 = yes
+=======
+
+		log = "CHI.10 really"
+		log = "[GetLogInfo] [From.GetName]: event CHI.10 option CHI.10.a"
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag  = CHI_10_on
+				}
+			}
+			hidden_effect = {
+				set_global_flag = CHI_10_on
+				753 = { set_demilitarized_zone = no }
+				906 = { set_demilitarized_zone = no }
+				434 = { set_demilitarized_zone = no }
+				908 = { set_demilitarized_zone = no }
+				751 = { set_demilitarized_zone = no }
+				605 = { set_demilitarized_zone = no }
+		
+				DCD = {
+					declare_war_on = {
+						target = CBS
+						type = civil_war
+						}
+					declare_war_on = {
+						target = XCD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					CBS = {
+					declare_war_on = {
+						target = XCD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					XCD = {
+					declare_war_on = {
+						target = JLD
+						type = civil_war
+						}
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+			
+					JLD = {
+					declare_war_on = {
+						target = PRC
+						type = civil_war
+						}
+					}
+		
+				PRC = { #共产党
+					add_state_core = 605
+					transfer_state = 605
+					add_manpower = 10000
+				}
+				DCD = {
+					load_oob = "AOR_LAND_CHI_chuanjun_DONG"
+					transfer_state = 906
+					add_state_core = 906
+					add_manpower = 10000
+				}
+				JLD = {
+					load_oob = "AOR_LAND_CHI_chuanjun_JIA"
+					add_state_core = 908
+					transfer_state = 908
+					add_manpower = 10000
+				}
+				XCD ={
+					load_oob = "AOR_LAND_CHI_chuanjun_XI"
+					add_state_core = 753
+					transfer_state = 753
+					add_manpower = 10000
+				}
+				CBS = {
+					load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
+					add_state_core = 751
+					add_state_core = 434
+					transfer_state = 751
+					transfer_state = 434
+					add_manpower = 10000
+				}
+			}
+>>>>>>> 7e9f59b324fb2e00ed17a2e16d2cf3e91447820a:events/china.txt
 		}
 	}
 	fire_only_once = yes
@@ -342,6 +447,7 @@ country_event = {
 				}
 		    }
 	    }
+	}
 	option = {
 		name = CHI.10.b
 		news_event = {id=AOR_news.87}
