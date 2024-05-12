@@ -221,7 +221,7 @@ country_event = {
 	desc = CHI.8.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.6.27
+		date > 1922.5.27
 		tag = CHI
 	}
 	mean_time_to_happen = {
@@ -248,7 +248,7 @@ country_event = {
 	desc = CHI.9.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1922.7.22
+		date > 1922.7.12
 		tag = CHI
 	}
 	mean_time_to_happen = {
