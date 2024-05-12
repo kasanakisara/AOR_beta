@@ -346,6 +346,9 @@ country_event = {
 	option = {
 		name = CHI.10.b
 		news_event = {id=AOR_news.87}
+		DCD = {
+			drop_cosmetic_tag = yes
+		}
 		hidden_effect = {
 			DCD = {
 				load_oob = "AOR_LAND_CHI_CENTRAL"
