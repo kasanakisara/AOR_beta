@@ -474,7 +474,7 @@ country_event = {
 	title = CHI.13.t
 	desc = CHI.13.d
 	trigger = {
-		date > 1922.5.1
+		date > 1922.9.1
 		tag = CHI
 	}
 	picture = GFX_Portrait_of_Tirpitz

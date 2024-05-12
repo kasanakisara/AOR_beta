@@ -14,6 +14,7 @@ country_event = {
 		name=LIT.1.a
 		LIT = {
 		set_capital = { state = 784 }
+		add_popularity = { ideology = Marxism popularity = 0.1 }
 		}
 		13 = {
 			set_demilitarized_zone = yes
