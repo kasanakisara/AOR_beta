@@ -15,14 +15,14 @@ units = {
 #红军
 	division= {	
 		name = "工农红军第一师"
-		location = 4375
+		location = 12705
 		division_template = "川军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.65
 	}
 	division= {	
 		name = "工农红军第二师"
-		location = 10787
+		location = 12705
 		division_template = "川军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.65
