@@ -17,7 +17,7 @@ create_country_leader = {
 	desc = "POLITICS_MON_DESC"
 	picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
 	expire = "1965.1.1"
-	ideology = PRC_urban
+	ideology = PRCrevolutionism
 	traits = {
 	}
 }

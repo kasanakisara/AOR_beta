@@ -166,18 +166,9 @@ country_event = {
 				}
 			}
 		}
-		    DCD = {
-			    set_cosmetic_tag = DCD_2
-		    }
 			CHI = {
 				set_cosmetic_tag = CHI_1
 			}		
-			753 = { set_demilitarized_zone = yes }
-			906 = { set_demilitarized_zone = yes }
-			434 = { set_demilitarized_zone = yes }
-			908 = { set_demilitarized_zone = yes }
-			751 = { set_demilitarized_zone = yes }
-			605 = { set_demilitarized_zone = yes }
 			dismantle_faction = yes
 		}
 	}
@@ -188,28 +179,32 @@ country_event = {
 		news_event = {id=AOR_news.88}
 	}
 }
-#西北边防军被炸出来了！#########废弃########请后续人员改装成趣味事件###########
 country_event = {
 	id = CHI.7
 	title = CHI.7.t
 	desc = CHI.7.d
 	picture = GFX_events_BNL_1
 	trigger = {
-		date > 1921.5.10
+		date > 1922.3.10
 		tag = CHI
-	}
-	mean_time_to_happen = {
-		days = 1
 	}
 	fire_only_once = yes
 	immediate = {
-		
+		hidden_effect = {
+			DCD = {
+			    set_cosmetic_tag = DCD_2
+		    }
+			753 = { set_demilitarized_zone = yes }
+			906 = { set_demilitarized_zone = yes }
+			434 = { set_demilitarized_zone = yes }
+			908 = { set_demilitarized_zone = yes }
+			751 = { set_demilitarized_zone = yes }
+			605 = { set_demilitarized_zone = yes }
+		}
 	 }
 	#那就这样吧  
 	option = {
 		name = CHI.7.a
-		
-		
 	}
 }
 
@@ -421,6 +416,15 @@ country_event = {
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
 				add_ideas = PRC_The_great_red_army
+				create_country_leader = {
+					name = "xi_CHUAN_commit"
+					desc = "POLITICS_MON_DESC"
+					picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
+					expire = "1965.1.1"
+					ideology = REV_soc
+					traits = {
+					}
+				}
 				}
 		    }
 		}
@@ -819,7 +823,7 @@ country_event = {
 			MON ={
 			declare_war_on = { 
 				target = NAN
-				type = annex_everything
+				type = civil_war
 		    } 
 		}
 	}
@@ -846,7 +850,7 @@ country_event = {
 			KMT ={
 			declare_war_on = { 
 				target = UPC
-				type = annex_everything
+				type = civil_war
 		    } 
 		}
 	}
@@ -873,13 +877,13 @@ country_event = {
 			MAN ={
 			declare_war_on = { 
 				target = NAN
-				type = annex_everything
+				type = civil_war
 		    } 
 		}
 		    MAN ={
 			declare_war_on = { 
 				target = MON
-				type = annex_everything
+				type = civil_war
 			} 
 		}
 	}
