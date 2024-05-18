@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+#战争结语gui
+ sp_wapeace_title:0 "外交通知"
+ sp_wapeace_description:0 "[Getwarpeacec]"
+ sp_wapeace_description_t:0 "[Getwarpeacet]"
+ sp_warpeace_close:0 "确认"
+##战争总结
+ SP_WARPEACE_DEFAULT:0 "在刚刚结束的一场战争中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_ORA_ARG_W:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_ORA_ARG_L:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ #特殊
+##战争结语
+ SP_WARPEACE_DEFAULT_T:0 "战争即地狱"
+ #特殊
+ SP_WARPEACE_ORA_ARG_WT:0 "“他们不是革命的， 而是保守的。 不仅如此， 他们甚至是反动的，因为他们力图使历史的车轮倒转。”"
+ SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟,并获得了国内群众的意外支持"
+
+ 

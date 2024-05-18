@@ -1,0 +1,86 @@
+defined_text = { # 战争总结
+	name = Getwarpeacec
+	text = {
+		trigger = {
+			OR = {
+				# 任何有特殊战争总结的都要在里面写NOT = { original_tag = xxx }，注意胜方败方是谁
+				event_target:winning_country = {
+					NOT = { original_tag = ORA }
+					NOT = { original_tag = ARG }
+				}
+				event_target:losing_country = {
+					NOT = { original_tag = ORA }
+					NOT = { original_tag = ARG }
+				}
+				# ORA和ARG都将使用特殊战争总结
+			}
+		}
+		localization_key = SP_WARPEACE_DEFAULT
+	}
+	#以下为示例
+	text = { #ORA胜ARG
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ORA
+			}
+			event_target:losing_country = {
+				original_tag = ARG
+			}
+		}
+		localization_key = SP_WARPEACE_ORA_ARG_W
+	}
+	text = { #ARG胜ORA
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ARG
+			}
+			event_target:losing_country = {
+				original_tag = ORA
+			}
+		}
+		localization_key = SP_WARPEACE_ORA_ARG_L
+	}
+}
+defined_text = { # 战争结语
+	name = Getwarpeacet
+	text = {
+		trigger = {
+			OR = {
+				# 任何有特殊战争结语的都要在里面写NOT = { original_tag = xxx }，注意胜方败方是谁
+				event_target:winning_country = {
+					NOT = { original_tag = ORA }
+					NOT = { original_tag = ARG }
+				}
+				event_target:losing_country = {
+					NOT = { original_tag = ORA }
+					NOT = { original_tag = ARG }
+				}
+				# ORA和ARG都将使用特殊战争结语
+			}
+		}
+		localization_key = SP_WARPEACE_DEFAULT_T
+	}
+	#以下为示例
+	text = { #ORA胜ARG
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ORA
+			}
+			event_target:losing_country = {
+				original_tag = ARG
+			}
+		}
+		localization_key = SP_WARPEACE_ORA_ARG_WT
+	}
+	text = { #ARG胜ORA
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ARG
+			}
+			event_target:losing_country = {
+				original_tag = ORA
+			}
+		}
+		localization_key = SP_WARPEACE_ORA_ARG_LT
+	}
+}
