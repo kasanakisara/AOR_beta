@@ -30,9 +30,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "gfx/leaders/JAP/Tokonji_takejiro"
+	name = "Tokonji_takejiro"
 	desc = ""
-	picture = "Tokonji_takejiro.png"
+	picture = "gfx/leaders/JAP/Tokonji_takejiro.png"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
