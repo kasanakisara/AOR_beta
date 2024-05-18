@@ -189,6 +189,50 @@ CHI_civil_war_2 = {
 	}
 }
 CHI_civil_war_3 = {
+	ANH = {
+		add_state_core = 606
+		add_state_core = 749
+		
+		transfer_state = 606
+		transfer_state = 749
+		add_manpower = 10000
+	}
+	ZHE = {
+		add_state_core = 596
+		add_state_core = 894
+		add_state_core = 895
+		add_state_core = 892
+
+		transfer_state = 596
+		transfer_state = 894
+		transfer_state = 895
+		transfer_state = 892
+		add_manpower = 10000
+	}
+	FUJ = {
+		add_state_core = 897
+		add_state_core = 595
+		add_state_core = 898
+		add_state_core = 899
+
+		transfer_state = 897
+		transfer_state = 595
+		transfer_state = 898
+		transfer_state = 899
+		add_manpower = 10000
+	}
+	JIZ = {
+		add_state_core = 612
+		add_state_core = 756
+		add_state_core = 600
+		add_state_core = 876
+
+		transfer_state = 612
+		transfer_state = 756
+		transfer_state = 600
+		transfer_state = 876
+		add_manpower = 10000
+	}
 	MEN = {
 		add_state_core = 622
 		add_state_core = 896

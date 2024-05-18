@@ -1131,7 +1131,7 @@ country_event = {#广州政府统一南方
     option = {
 		name = UPC.101.a
 		news_event = {id=AOR_news.107}
-		country_event = { days = 90  id = UPC.2 }
+		country_event = { days = 90  id = UPC.102 }
 		UPC = {
             add_state_core = 750
             add_state_core = 907

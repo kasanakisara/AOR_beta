@@ -1752,3 +1752,29 @@ news_event = {#中国广州政府宣布北伐
 		name = AOR_news.109.a
 	}
 }
+
+news_event = {#南京政府在大战中获胜！
+	id = AOR_news.110
+	title = AOR_news.110.t
+	desc = AOR_news.110.d
+	picture = GFX_AOR_news.110_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.110.a
+	}
+}
+
+news_event = {#北京政府在大战中获胜！
+	id = AOR_news.111
+	title = AOR_news.111.t
+	desc = AOR_news.111.d
+	picture = GFX_AOR_news.111_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.111.a
+	}
+}

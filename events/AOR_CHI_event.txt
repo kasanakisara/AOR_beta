@@ -517,6 +517,21 @@ country_event = {
 				transfer_state = 749
 				transfer_state = 606
 
+				add_state_core = 876
+				add_state_core = 612
+				add_state_core = 756
+				add_state_core = 600
+				add_state_core = 899
+				add_state_core = 897
+				add_state_core = 898
+				add_state_core = 595
+				add_state_core = 596
+				add_state_core = 895
+				add_state_core = 894
+				add_state_core = 892
+				add_state_core = 749
+				add_state_core = 606
+
 			}
 		}
 		name = CHI.13.a
@@ -872,6 +887,156 @@ country_event = {
 	option = {
 		name = CHI.33.a
 		news_event = {id=AOR_news.103}
+	}	
+}
+
+country_event = {		
+	# 南京胜利
+	id = CHI.34
+	title = CHI.34.t
+	desc = CHI.34.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		date > 1922.11.10
+		tag = NAN
+		NAN ={
+			owns_state = 930
+			owns_state = 330
+			owns_state = 610
+			owns_state = 611
+			owns_state = 621
+			owns_state = 330
+			owns_state = 930
+			owns_state = 610
+			owns_state = 611
+			owns_state = 621
+			owns_state = 876
+			owns_state = 612
+			owns_state = 756
+			owns_state = 600
+			owns_state = 899
+			owns_state = 897
+			owns_state = 898
+			owns_state = 595
+			owns_state = 596
+			owns_state = 895
+			owns_state = 894
+			owns_state = 892
+			owns_state = 749
+			owns_state = 606
+		}
+	}	
+	immediate = { 
+		hidden_effect = {
+			NAN ={
+			set_cosmetic_tag = NAN_2
+			}
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = CHI.34.a
+		news_event = {id=AOR_news.110}
+        NAN = {
+			add_state_core = 930
+			add_state_core = 330
+			add_state_core = 610
+			add_state_core = 611
+			add_state_core = 621
+			add_state_core = 330
+			add_state_core = 930
+			add_state_core = 610
+			add_state_core = 611
+			add_state_core = 621
+			add_state_core = 876
+			add_state_core = 612
+			add_state_core = 756
+			add_state_core = 600
+			add_state_core = 899
+			add_state_core = 897
+			add_state_core = 898
+			add_state_core = 595
+			add_state_core = 596
+			add_state_core = 895
+			add_state_core = 894
+			add_state_core = 892
+			add_state_core = 749
+			add_state_core = 606
+		}
+	}	
+}
+
+country_event = {		
+	# 北京胜利
+	id = CHI.35
+	title = CHI.35.t
+	desc = CHI.35.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		date > 1922.11.10
+		tag = MON
+		MON ={
+			owns_state = 930
+			owns_state = 893
+			owns_state = 882
+			owns_state = 613
+			owns_state = 890
+			owns_state = 598
+			owns_state = 882
+			owns_state = 886
+			owns_state = 885
+			owns_state = 887
+			owns_state = 888
+			owns_state = 905
+			owns_state = 889
+			owns_state = 620
+			owns_state = 879
+			owns_state = 597
+			owns_state = 757
+			owns_state = 880
+			owns_state = 607
+			owns_state = 877
+			owns_state = 878
+			owns_state = 614
+		}
+	}	
+	immediate = { 
+		hidden_effect = {
+			MON ={
+			set_cosmetic_tag = MON_WEST_2
+			}
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = CHI.35.a
+		news_event = {id=AOR_news.111}
+        MON = {
+			add_state_core = 930
+			add_state_core = 893
+			add_state_core = 882
+			add_state_core = 613
+			add_state_core = 890
+			add_state_core = 598
+			add_state_core = 882
+			add_state_core = 886
+			add_state_core = 885
+			add_state_core = 887
+			add_state_core = 888
+			add_state_core = 905
+			add_state_core = 889
+			add_state_core = 620
+			add_state_core = 879
+			add_state_core = 597
+			add_state_core = 757
+			add_state_core = 880
+			add_state_core = 607
+			add_state_core = 877
+			add_state_core = 878
+			add_state_core = 614
+		}
 	}	
 }
 
