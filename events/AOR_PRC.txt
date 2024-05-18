@@ -1,0 +1,34 @@
+add_namespace = PRC
+
+country_event = {
+	id = PRC.1 
+	title = PRC.1.t
+	desc = PRC.1.d
+	picture = GFX_PRC_event_1
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+		date > 1922.3.10
+        PRC = {
+            controls_state = 906
+            controls_state = 908
+            controls_state = 753
+            controls_state = 751
+            controls_state = 434
+            controls_state = 605
+        }
+    }
+
+
+    option = {
+		name = PRC.1.a
+		news_event = {id=AOR_news.105}
+		PRC = {
+            add_state_core = 906
+            add_state_core = 908
+            add_state_core = 753
+            add_state_core = 751
+            add_state_core = 434
+			}
+	}
+}

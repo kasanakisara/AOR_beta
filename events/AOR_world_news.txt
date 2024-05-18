@@ -1674,3 +1674,29 @@ news_event = {#奉天政府进入山海关
 		name = AOR_news.103.a
 	}
 }
+
+news_event = {#中国西南宣布成立昆明政府
+	id = AOR_news.104
+	title = AOR_news.104.t
+	desc = AOR_news.104.d
+	picture = GFX_AOR_news.104_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.104.a
+	}
+}
+
+news_event = {#中国红军统一四川
+	id = AOR_news.105
+	title = AOR_news.105.t
+	desc = AOR_news.105.d
+	picture = GFX_AOR_news.105_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.105.a
+	}
+}
