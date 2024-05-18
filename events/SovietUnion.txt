@@ -232,3 +232,361 @@ country_event = {
         name = SOV_Steel.10.a
     }
 }
+country_event = {
+    id = SOV_Steel.11
+    title = SOV_Steel.11.t
+    desc = SOV_Steel.11.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.11.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.12
+    title = SOV_Steel.12.t
+    desc = SOV_Steel.12.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.12.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.13
+    title = SOV_Steel.13.t
+    desc = SOV_Steel.13.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.13.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.14
+    title = SOV_Steel.14.t
+    desc = SOV_Steel.14.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.14.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.15
+    title = SOV_Steel.15.t
+    desc = SOV_Steel.15.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.15.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.16
+    title = SOV_Steel.16.t
+    desc = SOV_Steel.16.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.16.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.17
+    title = SOV_Steel.17.t
+    desc = SOV_Steel.17.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.17.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.18
+    title = SOV_Steel.18.t
+    desc = SOV_Steel.18.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.18.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.19
+    title = SOV_Steel.19.t
+    desc = SOV_Steel.19.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.19.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.20
+    title = SOV_Steel.20.t
+    desc = SOV_Steel.20.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.20.a
+    }
+}
+country_event = {
+    id = SOV_Steel.21
+    title = SOV_Steel.21.t
+    desc = SOV_Steel.21.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.21.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.22
+    title = SOV_Steel.22.t
+    desc = SOV_Steel.22.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.22.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.23
+    title = SOV_Steel.23.t
+    desc = SOV_Steel.23.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.23.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.24
+    title = SOV_Steel.24.t
+    desc = SOV_Steel.24.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.24.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.25
+    title = SOV_Steel.25.t
+    desc = SOV_Steel.25.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.25.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.26
+    title = SOV_Steel.26.t
+    desc = SOV_Steel.26.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.26.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.27
+    title = SOV_Steel.27.t
+    desc = SOV_Steel.27.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.27.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.28
+    title = SOV_Steel.28.t
+    desc = SOV_Steel.28.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.28.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.29
+    title = SOV_Steel.29.t
+    desc = SOV_Steel.29.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.29.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.30
+    title = SOV_Steel.30.t
+    desc = SOV_Steel.30.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.30.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.31
+    title = SOV_Steel.31.t
+    desc = SOV_Steel.31.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.31.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.32
+    title = SOV_Steel.32.t
+    desc = SOV_Steel.32.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.32.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.33
+    title = SOV_Steel.33.t
+    desc = SOV_Steel.33.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.33.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.34
+    title = SOV_Steel.34.t
+    desc = SOV_Steel.34.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.34.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.35
+    title = SOV_Steel.35.t
+    desc = SOV_Steel.35.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.35.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.36
+    title = SOV_Steel.36.t
+    desc = SOV_Steel.36.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.36.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.37
+    title = SOV_Steel.37.t
+    desc = SOV_Steel.37.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.37.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.38
+    title = SOV_Steel.38.t
+    desc = SOV_Steel.38.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.38.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.39
+    title = SOV_Steel.39.t
+    desc = SOV_Steel.39.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.39.a
+    }
+}
+
+country_event = {
+    id = SOV_Steel.40
+    title = SOV_Steel.40.t
+    desc = SOV_Steel.40.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = SOV_Steel.40.a
+    }
+}
