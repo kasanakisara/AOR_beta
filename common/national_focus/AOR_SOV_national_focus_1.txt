@@ -27,6 +27,7 @@ focus_tree = {
 				idea = SOV_Civil_war_0
 				days = 90
 			}
+			
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			if = {
 				limit = {
@@ -45,6 +46,9 @@ focus_tree = {
 					available_to_spy_master = yes
 					nationalities = { RUS ANU ARR }
 				}
+			}
+			hidden_effect = {
+				country_event = {id = SOV_Steel.1 days = 15}
 			}
 			
 		}
