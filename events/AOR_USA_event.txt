@@ -938,7 +938,18 @@ country_event = {
 	}
 	option = { 
         name = USA.10011.a
-	
+		country_event = {
+			id = USA.10012 #美国左翼文案 “写给厄尔的信”（2）（德布斯）
+			title = USA.10012.t
+			desc = USA.10012.d
+			picture = GFX_USA_event_10012
+			is_triggered_only = yes
+			fire_only_once = yes
+			option = { 
+				name = USA.10012.a
+			
+			}
+		}
 	}
 }
 country_event = {
@@ -946,11 +957,8 @@ country_event = {
     title = USA.10012.t
     desc = USA.10012.d
 	picture = GFX_USA_event_10012
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		tag = USA
-		date = 1919.12.20
-    }
     option = { 
         name = USA.10012.a
 	

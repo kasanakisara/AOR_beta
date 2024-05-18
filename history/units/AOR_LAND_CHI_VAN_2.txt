@@ -67,6 +67,13 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
+	division= {	
+		name = "江西第三混成旅"
+		location = 4083
+		division_template = "混成旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
 
 	division= {	
 		name = "福建第一混成旅"
@@ -77,6 +84,13 @@ units = {
 	}
 	division= {	
 		name = "福建第二混成旅"
+		location = 4196
+		division_template = "混成旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "福建第三混成旅"
 		location = 4196
 		division_template = "混成旅"
 		start_experience_factor = 0.2
@@ -98,6 +112,14 @@ units = {
 		start_equipment_factor = 0.8
 	}
 	division= {	
+		name = "浙江第三混成旅"
+		location = 7191
+		division_template = "混成旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
 		name = "安徽第一混成旅"
 		location = 11937
 		division_template = "混成旅"
@@ -106,6 +128,13 @@ units = {
 	}
 	division= {	
 		name = "安徽第二混成旅"
+		location = 11937
+		division_template = "混成旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "安徽第三混成旅"
 		location = 11937
 		division_template = "混成旅"
 		start_experience_factor = 0.2
