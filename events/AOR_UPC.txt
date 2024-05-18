@@ -1105,3 +1105,74 @@ country_event = {
 name = UPC.100.a
 }
 }
+
+country_event = {#广州政府统一南方
+	id = UPC.101
+	title =UPC.101.t
+	desc = UPC.101.d
+	picture = GFX_UPC_event_101
+	fire_only_once = yes
+	trigger = {
+		tag = UPC
+		date > 1922.12.10
+        UPC = {
+            owns_state = 750
+            owns_state = 907
+            owns_state = 748
+            owns_state = 603
+            owns_state = 325
+            owns_state = 609
+            owns_state = 755
+            owns_state = 747
+        }
+    }
+
+
+    option = {
+		name = UPC.101.a
+		news_event = {id=AOR_news.107}
+		UPC = {
+            add_state_core = 750
+            add_state_core = 907
+            add_state_core = 748
+            add_state_core = 603
+            add_state_core= 325
+            add_state_core = 609
+            add_state_core = 755
+            add_state_core = 747
+			}
+		}
+	}
+
+country_event = {
+    id = UPC.102 #中国昆明政府宣布北伐
+     title = UPC.102.t
+    desc = UPC.102.d
+    picture = GFX_UPC_event_102
+    is_triggered_only = yes
+    fire_only_once = yes
+
+        immediate = { 
+            hidden_effect = {
+                UPC = {
+                declare_war_on = { 
+                    target = NAN
+                    type = annex_everything
+                } 
+                declare_war_on = { 
+                    target = MON
+                    type = annex_everything
+                }
+                declare_war_on = { 
+                    target = MAN
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+    option = {
+         name=UPC.102.a
+         news_event = {id=AOR_news.109}
+         }
+     }

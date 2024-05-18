@@ -10,12 +10,12 @@ country_event = {
 		tag = PRC
 		date > 1922.3.10
         PRC = {
-            controls_state = 906
-            controls_state = 908
-            controls_state = 753
-            controls_state = 751
-            controls_state = 434
-            controls_state = 605
+            owns_state = 906
+            owns_state = 908
+            owns_state = 753
+            owns_state = 751
+            owns_state = 434
+            owns_state = 605
         }
     }
 

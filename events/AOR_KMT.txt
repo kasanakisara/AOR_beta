@@ -1,0 +1,85 @@
+add_namespace = KMT
+
+country_event = {#昆明政府统一南方
+	id = KMT.1 
+	title = KMT.1.t
+	desc = KMT.1.d
+	picture = GFX_KMT_event_1
+	fire_only_once = yes
+	trigger = {
+		tag = KMT
+		date > 1922.12.10
+        KMT = {
+            owns_state = 901
+            owns_state = 593
+            owns_state = 592
+            owns_state = 919
+            owns_state = 904
+            owns_state = 900
+            owns_state = 594
+            owns_state = 902
+            owns_state = 599
+            owns_state = 903
+            owns_state = 759
+            owns_state = 605
+            owns_state = 602
+            owns_state = 746
+        }
+    }
+
+
+    option = {
+		name = KMT.1.a
+		news_event = {id=AOR_news.106}
+        country_event = { days = 90  id = KMT.2 }
+		KMT = {
+            add_state_core = 901
+            add_state_core = 593
+            add_state_core = 592
+            add_state_core = 919
+            add_state_core = 904
+            add_state_core = 900
+            add_state_core = 594
+            add_state_core = 902
+            add_state_core = 599
+            add_state_core = 903
+            add_state_core = 759
+            add_state_core = 605
+            add_state_core = 602
+            add_state_core = 746
+		}
+	}
+}
+
+    country_event = {
+        id = KMT.2 #中国昆明政府宣布北伐
+        title = KMT.2.t
+        desc = KMT.2.d
+        picture = GFX_KMT_event_2
+        is_triggered_only = yes
+        fire_only_once = yes
+
+        immediate = { 
+            hidden_effect = {
+                KMT = {
+                declare_war_on = { 
+                    target = NAN
+                    type = annex_everything
+                } 
+                declare_war_on = { 
+                    target = MON
+                    type = annex_everything
+                }
+                declare_war_on = { 
+                    target = MAN
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+        option = {
+            name=KMT.2.a
+            news_event = {id=AOR_news.108}
+            }
+        }

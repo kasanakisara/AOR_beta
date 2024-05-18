@@ -1700,3 +1700,55 @@ news_event = {#中国红军统一四川
 		name = AOR_news.105.a
 	}
 }
+
+news_event = {#昆明政府统一中国华南
+	id = AOR_news.106
+	title = AOR_news.106.t
+	desc = AOR_news.106.d
+	picture = GFX_AOR_news.106_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.106.a
+	}
+}
+
+news_event = {#广州政府统一中国华南
+	id = AOR_news.107
+	title = AOR_news.107.t
+	desc = AOR_news.107.d
+	picture = GFX_AOR_news.107_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.107.a
+	}
+}
+
+news_event = {#中国昆明政府宣布北伐
+	id = AOR_news.108
+	title = AOR_news.108.t
+	desc = AOR_news.108.d
+	picture = GFX_AOR_news.108_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.108.a
+	}
+}
+
+news_event = {#中国广州政府宣布北伐
+	id = AOR_news.109
+	title = AOR_news.109.t
+	desc = AOR_news.109.d
+	picture = GFX_AOR_news.109_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.109.a
+	}
+}
