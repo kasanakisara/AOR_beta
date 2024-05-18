@@ -1131,12 +1131,13 @@ country_event = {#广州政府统一南方
     option = {
 		name = UPC.101.a
 		news_event = {id=AOR_news.107}
+		country_event = { days = 90  id = UPC.2 }
 		UPC = {
             add_state_core = 750
             add_state_core = 907
             add_state_core = 748
             add_state_core = 603
-            add_state_core= 325
+            add_state_core = 325
             add_state_core = 609
             add_state_core = 755
             add_state_core = 747
@@ -1145,7 +1146,7 @@ country_event = {#广州政府统一南方
 	}
 
 country_event = {
-    id = UPC.102 #中国昆明政府宣布北伐
+    id = UPC.102 #中国广州政府宣布北伐
      title = UPC.102.t
     desc = UPC.102.d
     picture = GFX_UPC_event_102

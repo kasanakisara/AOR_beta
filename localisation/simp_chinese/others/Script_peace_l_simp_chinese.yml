@@ -10,9 +10,18 @@
  SP_WARPEACE_ORA_ARG_L:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  #特殊
 ##战争结语
- SP_WARPEACE_DEFAULT_T:0 "战争即地狱"
+ SP_WARPEACE_DEFAULT_T:0 "战争能被终结，但战争不能终结一切"
  #特殊
  SP_WARPEACE_ORA_ARG_WT:0 "“他们不是革命的， 而是保守的。 不仅如此， 他们甚至是反动的，因为他们力图使历史的车轮倒转。”"
- SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟,并获得了国内群众的意外支持"
+ SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟,并获得了国内群众的意外支持。"
+
+ SP_WARPEACE_USA_CSA_WT:0 "“正直人的纯正，必引导自己。奸诈人的乖僻，必毁灭自己。”"
+ SP_WARPEACE_USA_CSA_LT:0 "恶人的强暴，必将自己扫除。"
+
+ SP_WARPEACE_NAN_MON_WT:0 "敌可摧，旄头灭，履胡之肠涉胡血。\n悬胡青天上，埋胡紫塞傍。胡无人，汉道昌。"
+ SP_WARPEACE_NAN_MON_LT:0 "杀尽江南百万兵，腰间宝剑血犹腥。"
+
+ SP_WARPEACE_PRC_DCD_WT:0 "“严守秘密，服从纪律，牺牲个人，阶级斗争，努力革命，永不叛党！”"
+ SP_WARPEACE_PRC_DCD_LT:0 "两地恩荣真赫奕，四川父老定欢呼。"
 
  

@@ -24,6 +24,7 @@ country_event = {
 		name = PRC.1.a
 		news_event = {id=AOR_news.105}
 		PRC = {
+            set_capital = { state = 753 }
             add_state_core = 906
             add_state_core = 908
             add_state_core = 753

@@ -83,4 +83,73 @@ defined_text = { # 战争结语
 		}
 		localization_key = SP_WARPEACE_ORA_ARG_LT
 	}
+
+	text = { #USA胜CSA
+		trigger = {
+			event_target:winning_country = {
+				original_tag = USA
+			}
+			event_target:losing_country = {
+				original_tag = CSA
+			}
+		}
+		localization_key = SP_WARPEACE_USA_CSA_WT
+	}
+	text = { #CSA胜USA
+		trigger = {
+			event_target:winning_country = {
+				original_tag = CSA
+			}
+			event_target:losing_country = {
+				original_tag = USA
+			}
+		}
+		localization_key = SP_WARPEACE_USA_CSA_LT
+	}
+
+	text = { #NAN胜MON
+		trigger = {
+			event_target:winning_country = {
+				original_tag = NAN
+			}
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = SP_WARPEACE_NAN_MON_WT
+	}
+	text = { #MON胜NAN
+		trigger = {
+			event_target:winning_country = {
+				original_tag = MON
+			}
+			event_target:losing_country = {
+				original_tag = NAN
+			}
+		}
+		localization_key = SP_WARPEACE_NAN_MON_LT
+	}
+
+	text = { #PRC胜DCD
+		trigger = {
+			event_target:winning_country = {
+				original_tag = PRC
+			}
+			event_target:losing_country = {
+				original_tag = DCD
+			}
+		}
+		localization_key = SP_WARPEACE_PRC_DCD_WT
+	}
+	text = { #DCD胜PRC
+		trigger = {
+			event_target:winning_country = {
+				original_tag = DCD
+			}
+			event_target:losing_country = {
+				original_tag = PRC
+			}
+		}
+		localization_key = SP_WARPEACE_PRC_DCD_LT
+	}
 }
