@@ -14,6 +14,7 @@ country_event = {
 		name=LIT.1.a
 		LIT = {
 		set_capital = { state = 784 }
+		add_popularity = { ideology = Marxism popularity = 0.1 }
 		}
 		13 = {
 			set_demilitarized_zone = yes
@@ -252,6 +253,7 @@ country_event = { #军区改组建立国家
 			transfer_state = 809
 			}
 		BLR = {
+			set_cosmetic_tag = BLR_Marxism
 			set_politics = {ruling_party = Marxism }
 			transfer_state = 96
 			transfer_state = 206
@@ -451,6 +453,7 @@ country_event = { #立陶宛红色革命
 
 	option = {
 		LIT = {
+		set_cosmetic_tag = LIT_Marxism
 		set_politics = {ruling_party = Marxism }
 		set_party_name = { ideology = Marxism  long_name = LIT_1_Marxism_party_long name = LIT_1_Marxism_party }
 		add_popularity = { ideology = Marxism  popularity = 0.4 }
@@ -513,6 +516,7 @@ country_event = { #东斯拉夫苏维埃成立
 			}
 		}
 		name = LIT.7.a 
+		news_event = {id=AOR_news.99}
 	}
 
 }
@@ -542,6 +546,7 @@ country_event = { #苏波瓜分
 
  option = { 
 	name = LIT.9.a
+	news_event = {id=AOR_news.100}
 	POL = {
 		transfer_state = 189
 		transfer_state = 815
@@ -567,6 +572,27 @@ country_event = { #苏波瓜分
 		transfer_state = 810
 		transfer_state = 812
 		transfer_state = 813
+		}
+		189 = {
+			set_demilitarized_zone = NO
+		}
+		11 = {
+			set_demilitarized_zone = NO
+		}
+		814 = {
+			set_demilitarized_zone = NO
+		}
+		784 = {
+			set_demilitarized_zone = NO
+		}
+		815 = {
+			set_demilitarized_zone = NO
+		}
+		96 = {
+			set_demilitarized_zone = NO
+		}
+		809 = {
+			set_demilitarized_zone = NO
 		}
 	}
 }

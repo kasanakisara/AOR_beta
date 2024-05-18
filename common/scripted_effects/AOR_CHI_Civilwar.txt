@@ -369,6 +369,49 @@ CHI_civil_war_4 = {
 	}
 }
 
+CHI_civil_war_5 = {
+	hidden_effect = {
+		753 = { set_demilitarized_zone = no }
+		906 = { set_demilitarized_zone = no }
+		434 = { set_demilitarized_zone = no }
+		908 = { set_demilitarized_zone = no }
+		751 = { set_demilitarized_zone = no }
+		605 = { set_demilitarized_zone = no }
+
+		PRC = { #共产党
+			add_state_core = 605
+		    transfer_state = 605
+			add_manpower = 10000
+		}
+		DCD = {
+			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
+			transfer_state = 906
+			add_state_core = 906
+			add_manpower = 10000
+		}
+		JLD = {
+			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
+			add_state_core = 908
+			transfer_state = 908
+			add_manpower = 10000
+		}
+		XCD ={
+			load_oob = "AOR_LAND_CHI_chuanjun_XI"
+			add_state_core = 753
+			transfer_state = 753
+			add_manpower = 10000
+		}
+		CBS = {
+			load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
+			add_state_core = 751
+			add_state_core = 434
+			transfer_state = 751
+			transfer_state = 434
+			add_manpower = 10000
+		}
+	}
+}
+
 #还我军事区！
 CHI_civilwar_6 = {
 	714={set_demilitarized_zone =no}

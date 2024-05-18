@@ -1609,3 +1609,68 @@ news_event = {#东欧战区爆发红色革命
 		name = AOR_news.98.a
 	}
 }
+
+news_event = {#红色东斯拉夫成立！
+	id = AOR_news.99
+	title = AOR_news.99.t
+	desc = AOR_news.99.d
+	picture = GFX_AOR_news.99_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.98.a
+	}
+}
+
+news_event = {#东欧波罗的诸国灭亡
+	id = AOR_news.100
+	title = AOR_news.100.t
+	desc = AOR_news.100.d
+	picture = GFX_AOR_news.100_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.100.a
+	}
+}
+
+news_event = {#中国华南宣布成立广州政府
+	id = AOR_news.101
+	title = AOR_news.101.t
+	desc = AOR_news.101.d
+	picture = GFX_AOR_news.101_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.101.a
+	}
+}
+
+news_event = {#昆明政府与广州政府爆发战争
+	id = AOR_news.102
+	title = AOR_news.102.t
+	desc = AOR_news.102.d
+	picture = GFX_AOR_news.102_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.102.a
+	}
+}
+
+news_event = {#奉天政府进入山海关
+	id = AOR_news.103
+	title = AOR_news.103.t
+	desc = AOR_news.103.d
+	picture = GFX_AOR_news.103_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.103.a
+	}
+}

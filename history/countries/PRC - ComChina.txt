@@ -10,6 +10,8 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
+add_ideas = PRC_The_great_red_army
+
 create_country_leader = {
 	name = "xi_CHUAN_commit"
 	desc = "POLITICS_MON_DESC"
