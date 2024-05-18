@@ -50,10 +50,22 @@ defined_text = { # 战争结语
 				event_target:winning_country = {
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
+					NOT = { original_tag = CSA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = MAN }
+					NOT = { original_tag = MON }
+					NOT = { original_tag = PRC }
+					NOT = { original_tag = DCD }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
+					NOT = { original_tag = CSA }
+					NOT = { original_tag = USA }
+					NOT = { original_tag = MAN }
+					NOT = { original_tag = MON }
+					NOT = { original_tag = PRC }
+					NOT = { original_tag = DCD }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
