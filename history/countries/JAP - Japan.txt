@@ -22,24 +22,36 @@ add_ideas = {
 create_country_leader = {
 	name = "TaiSyou"
 	desc = ""
-	picture = "a20ay-ek96g.dds"
+	picture = "gfx/leaders/JAP/Emperor_Taisho.dds"
 	expire = "1965.1.1"
 	ideology = monarchism
 	traits = {
 	}
 }
 
+create_country_leader = {
+	name = "gfx/leaders/JAP/Tokonji_takejiro"
+	desc = ""
+	picture = "Tokonji_takejiro.png"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = CON_democratic
 	last_election = "1919.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	CON_democratic = 40
-	Fascism = 30
-	Absolutism = 30
+	FRE_democratic = 15
+	CON_democratic = 30
+	AUT_democratic = 26
+	Fascism = 9
+	Absolutism = 20
 }
 puppet = KOR
 puppet = PYO
