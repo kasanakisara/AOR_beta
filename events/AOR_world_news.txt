@@ -1778,3 +1778,16 @@ news_event = {#北京政府在大战中获胜！
 		name = AOR_news.111.a
 	}
 }
+
+news_event = {#美国内战北方胜利！
+	id = AOR_news.112
+	title = AOR_news.112.t
+	desc = AOR_news.112.d
+	picture = GFX_AOR_news.112_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.112.a
+	}
+}

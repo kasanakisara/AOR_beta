@@ -21,7 +21,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "TaiSyou"
-	desc = ""
+	desc = "TaiSyou_desc"
 	picture = "gfx/leaders/JAP/Emperor_Taisho.dds"
 	expire = "1965.1.1"
 	ideology = monarchism
@@ -31,8 +31,18 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Tokonji_takejiro"
-	desc = ""
+	desc = "Tokonji_takejiro_desc"
 	picture = "gfx/leaders/JAP/Tokonji_takejiro.png"
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ichiro_Hatoyama"
+	desc = "Ichiro_Hatoyama_desc"
+	picture = "gfx/leaders/JAP/Ichiro_Hatoyama.png"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

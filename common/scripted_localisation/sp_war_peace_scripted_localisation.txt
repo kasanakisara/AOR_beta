@@ -164,4 +164,27 @@ defined_text = { # 战争结语
 		}
 		localization_key = SP_WARPEACE_PRC_DCD_LT
 	}
+
+	text = { #US1胜US2
+		trigger = {
+			event_target:winning_country = {
+				original_tag = US1
+			}
+			event_target:losing_country = {
+				original_tag = US2
+			}
+		}
+		localization_key = SP_WARPEACE_US1_US2_WT
+	}
+	text = { #US2胜PRC
+		trigger = {
+			event_target:winning_country = {
+				original_tag = US2
+			}
+			event_target:losing_country = {
+				original_tag = US1
+			}
+		}
+		localization_key = SP_WARPEACE_US1_US2_LT
+	}
 }

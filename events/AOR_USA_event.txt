@@ -451,6 +451,38 @@ country_event = {
 }
 
 country_event = {
+	id = USA.105 #美国内战北方胜利
+	title = USA.105.t
+	desc = USA.105.d
+	picture = GFX_USA_event_105
+	trigger = {
+		date > 1921.6.19
+		tag = USA
+		MON ={
+			owns_state = 362
+			owns_state = 368
+			owns_state = 363
+			owns_state = 364
+			owns_state = 365
+			owns_state = 366
+			owns_state = 367
+			owns_state = 370
+			owns_state = 372
+			owns_state = 371
+			owns_state = 374
+			owns_state = 922
+			owns_state = 375
+		}
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.105.a
+		news_event = {id=AOR_news.112}
+	}	
+}
+
+country_event = {
 	id = USA.1000 #南北战争的兵！
 	title = USA.1000.t
 	desc = USA.1000.d
