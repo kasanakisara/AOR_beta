@@ -62,6 +62,7 @@ country_event = {#昆明政府统一南方
         immediate = { 
             hidden_effect = {
                 KMT = {
+                set_cosmetic_tag = KMT_2
                 declare_war_on = { 
                     target = NAN
                     type = annex_everything
@@ -80,6 +81,107 @@ country_event = {#昆明政府统一南方
 
         option = {
             name=KMT.2.a
+            set_capital = { state = 592 }
             news_event = {id=AOR_news.108}
             }
         }
+
+        country_event = {#国民革命政府统一南北
+        id = KMT.3 
+        title = KMT.3.t
+        desc = KMT.3.d
+        picture = GFX_KMT_event_3
+        fire_only_once = yes
+        trigger = {
+            tag = KMT
+            date > 1922.12.10
+            KMT = {
+                owns_state = 876
+                owns_state = 612
+                owns_state = 756
+                owns_state = 600
+                owns_state = 899
+                owns_state = 897
+                owns_state = 898
+                owns_state = 595
+                owns_state = 596
+                owns_state = 895
+                owns_state = 894
+                owns_state = 892
+                owns_state = 749
+                owns_state = 606
+                owns_state = 893
+                owns_state = 882
+                owns_state = 613
+                owns_state = 890
+                owns_state = 598
+                owns_state = 882
+                owns_state = 886
+                owns_state = 885
+                owns_state = 887
+                owns_state = 888
+                owns_state = 905
+                owns_state = 889
+                owns_state = 620
+                owns_state = 879
+                owns_state = 714
+                owns_state = 761
+                owns_state = 913
+                owns_state = 873
+                owns_state = 717
+                owns_state = 715
+                owns_state = 891
+                owns_state = 328
+                owns_state = 716
+                owns_state = 875
+                owns_state = 874
+            }
+        }
+    
+    
+        option = {
+            name = KMT.3.a
+            news_event = {id=AOR_news.113}
+            KMT = {
+                add_state_core = 876
+                add_state_core = 612
+                add_state_core = 756
+                add_state_core = 600
+                add_state_core = 899
+                add_state_core = 897
+                add_state_core = 898
+                add_state_core = 595
+                add_state_core = 596
+                add_state_core = 895
+                add_state_core = 894
+                add_state_core = 892
+                add_state_core = 749
+                add_state_core = 606
+                add_state_core = 893
+                add_state_core = 882
+                add_state_core = 613
+                add_state_core = 890
+                add_state_core = 598
+                add_state_core = 882
+                add_state_core = 886
+                add_state_core = 885
+                add_state_core = 887
+                add_state_core = 888
+                add_state_core = 905
+                add_state_core = 889
+                add_state_core = 620
+                add_state_core = 879
+                add_state_core = 714
+                add_state_core = 761
+                add_state_core = 913
+                add_state_core = 873
+                add_state_core = 717
+                add_state_core = 715
+                add_state_core = 891
+                add_state_core = 328
+                add_state_core = 716
+                add_state_core = 875
+                add_state_core = 874
+            }
+        }
+    }

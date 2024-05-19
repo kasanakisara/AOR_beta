@@ -1485,7 +1485,10 @@ news_event = {# 中国甘肃发生大地震
 	title = AOR_news.89.t
 	desc = AOR_news.89.d
 	picture = GFX_AOR_news.89_pic
-	is_triggered_only = yes
+	trigger = {
+		tag = CHI
+		date > 1920.12.16
+	}
 	major = yes
 
 	option = {
@@ -1789,5 +1792,31 @@ news_event = {#美国内战北方胜利！
 
 	option = {
 		name = AOR_news.112.a
+	}
+}
+
+news_event = {#国民革命政府统一中国南北！
+	id = AOR_news.113
+	title = AOR_news.113.t
+	desc = AOR_news.113.d
+	picture = GFX_AOR_news.113_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.113.a
+	}
+}
+
+news_event = {#联省革命政府统一中国南北！
+	id = AOR_news.114
+	title = AOR_news.114.t
+	desc = AOR_news.114.d
+	picture = GFX_AOR_news.114_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.114.a
 	}
 }

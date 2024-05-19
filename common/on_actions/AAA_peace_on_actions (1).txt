@@ -695,6 +695,7 @@ on_actions = {
 				}
 			}
 
+			#南京政府——北京政府
 			else_if = {
 				limit = {
 					#南京政府胜利
@@ -727,6 +728,278 @@ on_actions = {
 					}
 				}
 			}
+
+			#南京政府——奉天政府
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = MAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#奉天政府胜利
+					FROM = {
+						original_tag = MAN
+					}
+					ROOT = {
+						original_tag = NAN
+					}
+				}
+				MON = {
+					annex_country = {
+						target = NAN
+					}
+				}
+			}
+			
+			#北京政府——奉天政府
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = MAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#奉天政府胜利
+					FROM = {
+						original_tag = MAN
+					}
+					ROOT = {
+						original_tag = MON
+					}
+				}
+				MON = {
+					annex_country = {
+						target = MON
+					}
+				}
+			}			
+
+			#昆明政府——北京政府
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = MON
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MON
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = KMT
+					}
+				}
+				MON = {
+					annex_country = {
+						target = KMT
+					}
+				}
+			}
+
+			#昆明政府——南京政府
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = NAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = NAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = KMT
+					}
+				}
+				MON = {
+					annex_country = {
+						target = KMT
+					}
+				}
+			}
+
+			#昆明政府——奉天政府
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = MAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#奉天政府胜利
+					FROM = {
+						original_tag = MAN
+					}
+					ROOT = {
+						original_tag = KMT
+					}
+				}
+				MON = {
+					annex_country = {
+						target = KMT
+					}
+				}
+			}
+
+			#广州政府——北京政府
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = MON
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MON
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = UPC
+					}
+				}
+				MON = {
+					annex_country = {
+						target = UPC
+					}
+				}
+			}
+
+			#广州政府——南京政府
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = NAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = NAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = UPC
+					}
+				}
+				MON = {
+					annex_country = {
+						target = UPC
+					}
+				}
+			}
+
+			#广州政府——奉天政府
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = MAN
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MAN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#奉天政府胜利
+					FROM = {
+						original_tag = MAN
+					}
+					ROOT = {
+						original_tag = UPC
+					}
+				}
+				MON = {
+					annex_country = {
+						target = UPC
+					}
+				}
+			}																										
 		}
 	}
 }
