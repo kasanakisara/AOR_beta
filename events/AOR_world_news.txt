@@ -1485,10 +1485,7 @@ news_event = {# 中国甘肃发生大地震
 	title = AOR_news.89.t
 	desc = AOR_news.89.d
 	picture = GFX_AOR_news.89_pic
-	trigger = {
-		tag = CHI
-		date > 1920.12.16
-	}
+	is_triggered_only = yes 
 	major = yes
 
 	option = {
