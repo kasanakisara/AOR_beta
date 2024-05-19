@@ -694,6 +694,39 @@ on_actions = {
 					}
 				}
 			}
+
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = MON
+					}
+				}
+				NAN = {
+					annex_country = {
+						target = MON
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = NAN
+					}
+				}
+				MON = {
+					annex_country = {
+						target = NAN
+					}
+				}
+			}
 		}
 	}
 }

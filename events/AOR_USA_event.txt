@@ -209,19 +209,31 @@ country_event = {
 
 
 country_event = {
-	id = USA.99 #南北战争！(已废弃)
+	id = USA.99 #南北5月冲突
 	title = USA.99.t
 	desc = USA.99.d
-	picture = GFX_USA_event_100
-	trigger = {
-	    date > 1920.9.25
-		tag = USA
-	}
-    mean_time_to_happen = {days = 1}
+	picture = GFX_USA_event_99
 	fire_only_once = yes
-      
-	option = {
-	leave_faction = yes
+         trigger = {
+           tag = USA
+	       date = 1921.5.1
+	 }
+    option = { 
+        name = USA.99.a
+		375 = {
+			set_demilitarized_zone = yes
+		}
+		374 = {
+			set_demilitarized_zone = yes
+		}
+		922 = {
+			set_demilitarized_zone = yes
+		}
+		932 = {
+			set_demilitarized_zone = yes
+
+		    add_manpower = -20
+		}
 	}
 }
 
@@ -451,14 +463,14 @@ country_event = {
 }
 
 country_event = {
-	id = USA.105 #美国内战北方胜利
-	title = USA.105.t
-	desc = USA.105.d
-	picture = GFX_USA_event_105
+	id = USA.111 #美国内战北方胜利
+	title = USA.111.t
+	desc = USA.111.d
+	picture = GFX_USA_event_111
 	trigger = {
 		date > 1921.6.19
 		tag = USA
-		MON ={
+		USA ={
 			owns_state = 362
 			owns_state = 368
 			owns_state = 363
@@ -477,7 +489,7 @@ country_event = {
 	is_triggered_only = No
 	fire_only_once = yes
 	option = {
-		name=USA.105.a
+		name=USA.111.a
 		news_event = {id=AOR_news.112}
 	}	
 }
@@ -916,31 +928,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10009 #南北5月冲突
+	id = USA.10009 #南北5月冲突（废弃）
 	title = USA.10009.t
     desc = USA.10009.d
 	picture = GFX_USA_event_10009
+    is_triggered_only = yes
 	fire_only_once = yes
-         trigger = {
-           tag = USA
-	       date = 1921.5.1
-	 }
     option = { 
         name = USA.10009.a
-		375 = {
-			set_demilitarized_zone = yes
-		}
-		374 = {
-			set_demilitarized_zone = yes
-		}
-		922 = {
-			set_demilitarized_zone = yes
-		}
-		932 = {
-			set_demilitarized_zone = yes
-
-		    add_manpower = -20
-		}
+	
 	}
 }
 country_event = {
