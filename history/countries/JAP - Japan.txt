@@ -20,9 +20,18 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "TaiSyou"
-	desc = "TaiSyou_desc"
+	name = "Emperor_Taisho"
+	desc = "Emperor_Taisho_desc"
 	picture = "gfx/leaders/JAP/Emperor_Taisho.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Emperor_Hirohito"
+	desc = "Emperor_Hirohito_desc"
+	picture = "gfx/leaders/JAP/Emperor_Hirohito.png"
 	expire = "1965.1.1"
 	ideology = monarchism
 	traits = {
@@ -50,7 +59,7 @@ create_country_leader = {
 }
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = AUT_democratic
 	last_election = "1919.1.1"
 	election_frequency = 48
 	elections_allowed = yes
