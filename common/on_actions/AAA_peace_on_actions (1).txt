@@ -828,6 +828,29 @@ on_actions = {
 					annex_country = {
 						target = KMT
 					}
+					news_event = {id=AOR_news.123}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}
 
@@ -842,7 +865,7 @@ on_actions = {
 						original_tag = NAN
 					}
 				}
-				NAN = {
+				KMT = {
 					annex_country = {
 						target = NAN
 					}
@@ -858,10 +881,33 @@ on_actions = {
 						original_tag = KMT
 					}
 				}
-				MON = {
+				NAN = {
 					annex_country = {
 						target = KMT
 					}
+					news_event = {id=AOR_news.124}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}
 
@@ -876,10 +922,11 @@ on_actions = {
 						original_tag = MAN
 					}
 				}
-				NAN = {
+				KMT = {
 					annex_country = {
 						target = MAN
 					}
+					news_event = {id=AOR_news.125}
 				}
 			}
 			else_if = {
@@ -892,10 +939,32 @@ on_actions = {
 						original_tag = KMT
 					}
 				}
-				MON = {
+				MAN = {
 					annex_country = {
 						target = KMT
 					}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}
 
@@ -910,7 +979,7 @@ on_actions = {
 						original_tag = MON
 					}
 				}
-				NAN = {
+				UPC = {
 					annex_country = {
 						target = MON
 					}
@@ -918,7 +987,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
-					#广州政府胜利
+					#北京政府胜利
 					FROM = {
 						original_tag = UPC
 					}
@@ -930,6 +999,29 @@ on_actions = {
 					annex_country = {
 						target = UPC
 					}
+					news_event = {id=AOR_news.121}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}
 
@@ -944,7 +1036,7 @@ on_actions = {
 						original_tag = NAN
 					}
 				}
-				NAN = {
+				UPC = {
 					annex_country = {
 						target = NAN
 					}
@@ -960,10 +1052,33 @@ on_actions = {
 						original_tag = UPC
 					}
 				}
-				MON = {
+				NAN = {
 					annex_country = {
 						target = UPC
 					}
+					news_event = {id=AOR_news.122}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}
 
@@ -978,10 +1093,11 @@ on_actions = {
 						original_tag = MAN
 					}
 				}
-				NAN = {
+				UPC = {
 					annex_country = {
 						target = MAN
 					}
+					news_event = {id=AOR_news.126}
 				}
 			}
 			else_if = {
@@ -994,10 +1110,32 @@ on_actions = {
 						original_tag = UPC
 					}
 				}
-				MON = {
+				MAN = {
 					annex_country = {
 						target = UPC
 					}
+					add_state_core = 901
+					add_state_core = 593
+					add_state_core = 592
+					add_state_core = 919
+					add_state_core = 904
+					add_state_core = 900
+					add_state_core = 594
+					add_state_core = 902
+					add_state_core = 599
+					add_state_core = 903
+					add_state_core = 759
+					add_state_core = 605
+					add_state_core = 602
+					add_state_core = 746
+					add_state_core = 750
+					add_state_core = 907
+					add_state_core = 748
+					add_state_core = 603
+					add_state_core = 325
+					add_state_core = 609
+					add_state_core = 755
+					add_state_core = 747
 				}
 			}																										
 		}

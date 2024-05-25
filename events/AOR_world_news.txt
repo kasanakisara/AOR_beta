@@ -1817,3 +1817,159 @@ news_event = {#联省革命政府统一中国南北！
 		name = AOR_news.114.a
 	}
 }
+
+news_event = {#北京政府占领满洲
+	id = AOR_news.115
+	title = AOR_news.115.t
+	desc = AOR_news.115.d
+	picture = GFX_AOR_news.115_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.115.a
+	}
+}
+
+news_event = {#南京政府占领满洲
+	id = AOR_news.116
+	title = AOR_news.116.t
+	desc = AOR_news.116.d
+	picture = GFX_AOR_news.116_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.116.a
+	}
+}
+
+news_event = {#国民革命政府统一全中国！
+	id = AOR_news.117
+	title = AOR_news.117.t
+	desc = AOR_news.117.d
+	picture = GFX_AOR_news.117_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.117.a
+	}
+}
+
+news_event = {#联省革命政府统一全中国！
+	id = AOR_news.118
+	title = AOR_news.118.t
+	desc = AOR_news.118.d
+	picture = GFX_AOR_news.118_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.118.a
+	}
+}
+
+news_event = {#北京政府统一全中国！
+	id = AOR_news.119
+	title = AOR_news.119.t
+	desc = AOR_news.119.d
+	picture = GFX_AOR_news.119_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.119.a
+	}
+}
+
+news_event = {#南京政府统一全中国！
+	id = AOR_news.120
+	title = AOR_news.120.t
+	desc = AOR_news.120.d
+	picture = GFX_AOR_news.120_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.120.a
+	}
+}
+
+news_event = {#北京政府消灭华南广州政权
+	id = AOR_news.121
+	title = AOR_news.121.t
+	desc = AOR_news.121.d
+	picture = GFX_AOR_news.121_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.121.a
+	}
+}
+
+news_event = {#南京政府消灭华南广州政权
+	id = AOR_news.122
+	title = AOR_news.122.t
+	desc = AOR_news.122.d
+	picture = GFX_AOR_news.122_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.122.a
+	}
+}
+
+news_event = {#北京政府消灭华南国民党政权
+	id = AOR_news.123
+	title = AOR_news.123.t
+	desc = AOR_news.123.d
+	picture = GFX_AOR_news.123_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.123.a
+	}
+}
+
+news_event = {#南京政府消灭华南国民党政权
+	id = AOR_news.124
+	title = AOR_news.124.t
+	desc = AOR_news.124.d
+	picture = GFX_AOR_news.124_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.124.a
+	}
+}
+
+news_event = {#国民革命政府占领满洲
+	id = AOR_news.125
+	title = AOR_news.125.t
+	desc = AOR_news.125.d
+	picture = GFX_AOR_news.125_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.125.a
+	}
+}
+
+news_event = {#联省革命政府占领满洲
+	id = AOR_news.126
+	title = AOR_news.126.t
+	desc = AOR_news.126.d
+	picture = GFX_AOR_news.126_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.126.a
+	}
+}

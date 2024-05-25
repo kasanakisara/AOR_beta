@@ -812,11 +812,11 @@ country_event = {
 	id = CHI.31
 	title = CHI.31.t
 	desc = CHI.31.d
+	picture = GFX_Portrait_of_Tirpitz
 	trigger = {
 		date > 1922.11.10
 		tag = NAN
 	}
-	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
@@ -942,6 +942,7 @@ country_event = {
 	option = {
 		name = CHI.34.a
 		news_event = {id=AOR_news.110}
+		country_event = { days = 90  id = CHI.37 }
         NAN = {
 			add_state_core = 930
 			add_state_core = 330
@@ -1017,6 +1018,7 @@ country_event = {
 	option = {
 		name = CHI.35.a
 		news_event = {id=AOR_news.111}
+		country_event = { days = 90  id = CHI.37 }
         MON = {
 			add_state_core = 930
 			add_state_core = 893
@@ -1043,6 +1045,93 @@ country_event = {
 		}
 	}	
 }
+
+country_event = {		
+	# 东北好果汁南下南方
+	id = CHI.36
+	title = CHI.36.t
+	desc = CHI.36.d
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		date > 1924.6.10
+		tag = MAN
+	}	
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			MAN ={
+			declare_war_on = { 
+				target = KMT
+				type = civil_war
+		    } 
+		}
+		    MAN ={
+			declare_war_on = { 
+				target = UPC
+				type = civil_war
+			} 
+		}
+	}
+}
+	option = {
+		name = CHI.36.a
+	}	
+}
+
+country_event = {
+	# 对陕晋军阀的最后通牒
+	id = CHI.37
+	title = CHI.37.t
+	desc = CHI.37.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.37.a
+		CHI_civil_war_7 = yes
+		country_event = { days = 120  id =CHI.38 }
+		}
+	option = {
+		name = CHI.37.b
+		country_event = { days = 120  id =CHI.38 }
+		}
+	}
+
+country_event = {
+	# 对西北军阀的最后通牒
+	id = CHI.38
+	title = CHI.38.t
+	desc = CHI.38.d
+	picture = GFX_AOR_chi_yimoxizheng	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		CHI_civil_war_8 = yes
+		name = CHI.38.a
+		country_event = { days = 120  id =CHI.39 }
+		}
+	option = {
+		name = CHI.38.b
+		country_event = { days = 120  id =CHI.39 }
+		}
+	}
+
+	country_event = {
+		# 对川藏的最后通牒
+		id = CHI.39
+		title = CHI.39.t
+		desc = CHI.39.d
+		picture = GFX_AOR_chi_yimoxizheng	
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			CHI_civil_war_9 = yes
+			name = CHI.39.a
+			}
+		option = {
+			name = CHI.39.b
+			}
+		}
 
 #还我军事区
 country_event = {

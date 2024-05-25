@@ -71,10 +71,6 @@ country_event = {#昆明政府统一南方
                     target = MON
                     type = annex_everything
                 }
-                declare_war_on = { 
-                    target = MAN
-                    type = annex_everything
-                }
             }
         }
     }
@@ -142,6 +138,7 @@ country_event = {#昆明政府统一南方
         option = {
             name = KMT.3.a
             news_event = {id=AOR_news.113}
+            country_event = { days = 90  id = CHI.37 }
             KMT = {
                 add_state_core = 876
                 add_state_core = 612
@@ -185,3 +182,61 @@ country_event = {#昆明政府统一南方
             }
         }
     }
+
+    country_event = {
+        id = KMT.4 #国民革命政府统一全国
+        title = KMT.4.t
+        desc = KMT.4.d
+        picture = GFX_KMT_event_4
+        fire_only_once = yes
+        trigger = {
+            tag = KMT
+            date > 1922.12.10
+                KMT = {
+                    owns_state = 884
+                    owns_state = 615
+                    owns_state = 883
+                    owns_state = 622
+                    owns_state = 896
+                    owns_state = 744
+                    owns_state = 601
+                    owns_state = 616
+                    owns_state = 754
+                    owns_state = 283
+                    owns_state = 909
+                    owns_state = 752
+                    owns_state = 604
+                    owns_state = 329
+                    owns_state = 618
+                    owns_state = 617
+                    owns_state = 760
+                    owns_state = 287
+                    owns_state = 322
+                } 
+            }
+        option = {
+                KMT = {
+                    add_state_core = 884
+                    add_state_core = 615
+                    add_state_core = 883
+                    add_state_core = 622
+                    add_state_core = 896
+                    add_state_core = 744
+                    add_state_core = 601
+                    add_state_core = 616
+                    add_state_core = 754
+                    add_state_core = 283
+                    add_state_core = 909
+                    add_state_core = 752
+                    add_state_core = 604
+                    add_state_core = 329
+                    add_state_core = 618
+                    add_state_core = 617
+                    add_state_core = 760
+                    add_state_core = 287
+                    add_state_core = 322
+            }
+            name=KMT.4.a
+            news_event = {id=AOR_news.117}
+            }
+        }
