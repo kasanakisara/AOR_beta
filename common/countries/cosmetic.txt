@@ -917,24 +917,24 @@ NAN_1 = {
 }
 
 LIT_Marxism = {
-	color ={ 81 66 66 }
-	color_ui = { 81 66 66 }
+	color = rgb { 196 42 42 }
+	color_ui = rgb { 196 42 42 }
 }
 LIT_Marxism_ADJ = {
-	color ={ 81 70 70 }
-	color_ui = { 81 70 70 }
+	color = rgb { 165 42 42 }
+	color_ui = rgb { 165 42 42 }
 }
 EST_SOV_Marxism_autonomy_colony = {
-	color ={ 81 66 66 }
-	color_ui = { 81 66 66 }
+	color = rgb { 196 42 42 }
+	color_ui = rgb { 196 42 42 }
 }
 LAT_SOV_Marxism_autonomy_colony = {
-	color ={ 81 66 66 }
-	color_ui = { 81 66 66 }
+	color = rgb { 196 42 42 }
+	color_ui = rgb { 196 42 42 }
 }
 BLR_Marxism = {
-	color ={ 81 66 66 }
-	color_ui = { 81 66 66 }
+	color = rgb { 196 42 42 }
+	color_ui = rgb { 196 42 42 }
 }
 NAN_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
@@ -948,13 +948,17 @@ UPC_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
+UPC_3 = {
+	color = rgb { 224 168 94 }
+	color_ui = rgb { 224 168 94 }
+}
 KMT_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 KMT_3 = {
-	color = rgb { 53 128 187 }
-	color_ui = rgb { 53 128 187 }
+	color = rgb { 56 141 187 }
+	color_ui = rgb { 56 141 187 }
 }
 DCD_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
