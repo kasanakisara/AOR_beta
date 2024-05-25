@@ -176,22 +176,22 @@ puppet = PAN
 puppet = MXS
 set_autonomy = {
 	target = MOR
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
 set_autonomy = {
 	target = TUN
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
 set_autonomy = {
 	target = DAH
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
 set_autonomy = {
-	target = MOR
-	autonomous_state = autonomy_dominion
+	target = CAR
+	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
 give_guarantee = QID
