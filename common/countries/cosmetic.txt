@@ -953,8 +953,8 @@ KMT_1 = {
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 KMT_3 = {
-	color = hsv { 50 123 176 }
-	color_ui = hsv { 50 123 176 }
+	color = rgb { 53 128 187 }
+	color_ui = rgb { 53 128 187 }
 }
 DCD_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
