@@ -82,6 +82,7 @@ set_politics = {
 set_popularities = {
 	CON_democratic = 75
 	ISL_democratic = 25
+	
 }
 
 create_country_leader = {

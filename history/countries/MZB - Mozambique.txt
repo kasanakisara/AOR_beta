@@ -66,21 +66,28 @@ recruit_character = MZB_awt
 	}
 }
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = AUT_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Absolutism = 100
+	AUT_democratic  = 67
+	ISL_democratic = 2
+	Fascism = 1
+	FRE_democratic = 30
 }
 
+
 create_country_leader = {
-	name = "Eduardo Tsonga"
-	picture = GFX_portrait_Eduardo_Tsonga
+	name = "Alexander Knox Helm"
+	desc = "POLITICS_MZB_DESC"
+	picture = "MZB.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarianism
 	traits = {
-		#
 	}
 }
+
+
+set_cosmetic_tag = MZB_POR

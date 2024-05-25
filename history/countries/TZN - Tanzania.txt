@@ -7,26 +7,6 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = TZN_acd2
-recruit_character = TZN_fascist_guy
-recruit_character = TZN_ncs
-recruit_character = TZN_nccr
-recruit_character = TZN_aco2
-recruit_character = TZN_communist_guy
-recruit_character = TZN_ai2
-recruit_character = TZN_ar
-recruit_character = TZN_coi
-recruit_character = TZN_acas
-recruit_character = TZN_acgs
-recruit_character = TZN_aa2
-recruit_character = TZN_democratic_guy
-recruit_character = TZN_acr
-recruit_character = TZN_stc
-recruit_character = TZN_awt
-recruit_character = TZN_pot
-recruit_character = TZN_mt
-recruit_character = TZN_ncm
-recruit_character = TZN_nt
 
 1939.1.1 = {
 	
@@ -74,14 +54,28 @@ recruit_character = TZN_nt
 }
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = CON_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 25
-	Fascism = 20
-	Marxism = 5
-	Absolutism = 50
+	CON_democratic = 75
+	ISL_democratic = 5
+	Fascism = 6
+	FRE_democratic = 14
 }
+
+
+create_country_leader = {
+	name = "Alexander Knox Helm"
+	desc = "POLITICS_TZN_DESC"
+	picture = "TZN.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+
+set_cosmetic_tag = TZN_UK

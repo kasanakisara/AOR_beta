@@ -75,14 +75,28 @@ recruit_character = GHA_mt
 }
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = CON_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 25
-	Fascism = 20
-	Marxism = 5
-	Absolutism = 50
+	CON_democratic = 66
+	ISL_democratic = 5
+	Fascism = 6
+	FRE_democratic = 23
 }
+
+
+create_country_leader = {
+	name = "Alexander Knox Helm"
+	desc = "POLITICS_GHA_DESC"
+	picture = "GHA.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+
+set_cosmetic_tag = GHA_UK
