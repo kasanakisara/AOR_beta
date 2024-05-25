@@ -215,6 +215,7 @@ country_event = {#昆明政府统一南方
                 } 
             }
         option = {
+                set_cosmetic_tag = KMT_3
                 KMT = {
                     add_state_core = 884
                     add_state_core = 615

@@ -1308,6 +1308,7 @@ country_event = {#中国广州政府宣布北伐
                 } 
             }
         option = {
+			    set_cosmetic_tag = UPC_3
                 UPC = {
                     add_state_core = 884
                     add_state_core = 615
