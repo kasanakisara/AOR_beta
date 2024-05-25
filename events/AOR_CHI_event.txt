@@ -469,6 +469,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			KMT = {
+				load_oob = "AOR_LAND_CHI_KMT"
 				drop_cosmetic_tag = yes
 			}
 		}
