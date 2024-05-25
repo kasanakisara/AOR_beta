@@ -27,6 +27,7 @@ country_event = {#北京政府占领满洲
 
     option = {
 		name = MON.1.a
+        country_event = { days = 90  id = CHI.37 }
 		news_event = {id=AOR_news.115}
 		MON = {
             add_state_core = 714

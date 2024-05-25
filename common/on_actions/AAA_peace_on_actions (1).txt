@@ -1137,7 +1137,195 @@ on_actions = {
 					add_state_core = 755
 					add_state_core = 747
 				}
-			}																										
+			}
+			#中国西部统一战争
+		    #南京政府——山西
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = SHX
+					}
+				}
+				UPC = {
+					annex_country = {
+						target = SHX
+					}
+				}
+			}
+		    #南京政府——陕西
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = MEN
+					}
+				}
+				UPC = {
+					annex_country = {
+						target = MEN
+					}
+				}
+			}
+            #南京政府——甘肃
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = XSM
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =XSM
+					}
+				}
+			}
+			#南京政府——青海
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = QIN
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =QIN
+					}
+				}
+			}
+			#南京政府——新疆
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = SIK
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =SIK
+					}
+				}
+			}
+			#南京政府——西藏
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = TIB
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =TIB
+					}
+				}
+			}
+			#南京政府——东川
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = DCD
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =DCD
+					}
+				}
+			}
+			#南京政府——四川工农
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = PRC
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =PRC
+					}
+				}
+			}
+			#南京政府——川边
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = CBS
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =CBS
+					}
+				}
+			}
+			#南京政府——西川
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = XCD
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =XCD
+					}
+				}
+			}
+			#南京政府——嘉陵
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = NAN
+					}
+					ROOT = {
+						original_tag = JLD
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =JLD
+					}
+				}
+			}
 		}
 	}
 }

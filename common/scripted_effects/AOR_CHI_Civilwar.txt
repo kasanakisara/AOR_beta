@@ -585,6 +585,10 @@ CHI_civil_war_9 = {
 		    target = PRC
 		    type = civil_war
 		} 
+        declare_war_on = { 
+		    target = TIB
+		    type = civil_war
+		} 
 	}
 		MON ={
 		declare_war_on = { 
@@ -606,7 +610,11 @@ CHI_civil_war_9 = {
 		declare_war_on = { 
 			target = PRC
 			type = civil_war
-		} 		
+		}
+		declare_war_on = { 
+		    target = TIB
+		    type = civil_war
+		}  		
 	}
 		KMT ={
 		declare_war_on = { 
@@ -629,6 +637,10 @@ CHI_civil_war_9 = {
 			target = PRC
 			type = civil_war
 		} 
+		declare_war_on = { 
+		    target = TIB
+		    type = civil_war
+		} 
 	}
 	    UPC ={
 		declare_war_on = { 
@@ -650,6 +662,10 @@ CHI_civil_war_9 = {
 		declare_war_on = { 
 			target = PRC
 			type = civil_war
+		} 
+		declare_war_on = { 
+		    target = TIB
+		    type = civil_war
 		} 
 		}
 	}

@@ -27,6 +27,7 @@ country_event = {#南京政府占领满洲
 
     option = {
 		name = NAN.1.a
+        country_event = { days = 90  id = CHI.37 }
 		news_event = {id=AOR_news.116}
 		NAN = {
             add_state_core = 714
