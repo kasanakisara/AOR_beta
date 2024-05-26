@@ -1089,3 +1089,74 @@ USA_civil_war_west = {
 				}
 		}
 	}
+
+USA_civil_war_west_1 = {
+	USA = {
+		declare_war_on = {
+			target = US1
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US2
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US3
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US4
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US5
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US6
+			type = civil_war
+			}
+		declare_war_on = {
+		    target = US7
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US8
+			type = civil_war
+			}
+		}
+	CSA = {
+		declare_war_on = {
+			target = US1
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US2
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US3
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US4
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US5
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US6
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US7
+			type = civil_war
+			}
+		declare_war_on = {
+			target = US8
+			type = civil_war
+			}
+		}
+	}

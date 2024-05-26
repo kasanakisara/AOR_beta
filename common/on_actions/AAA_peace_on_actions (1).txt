@@ -808,9 +808,13 @@ on_actions = {
 						original_tag = MON
 					}
 				}
-				NAN = {
+				KMT = {
 					annex_country = {
 						target = MON
+					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
 					}
 				}
 			}
@@ -870,6 +874,10 @@ on_actions = {
 					annex_country = {
 						target = NAN
 					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
+					}
 				}
 			}
 			else_if = {
@@ -928,6 +936,10 @@ on_actions = {
 					annex_country = {
 						target = MAN
 					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
+					}
 					news_event = {id=AOR_news.125}
 				}
 			}
@@ -984,6 +996,10 @@ on_actions = {
 				UPC = {
 					annex_country = {
 						target = MON
+					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
 					}
 				}
 			}
@@ -1043,6 +1059,10 @@ on_actions = {
 					annex_country = {
 						target = NAN
 					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
+					}
 				}
 			}
 			else_if = {
@@ -1101,6 +1121,10 @@ on_actions = {
 					annex_country = {
 						target = MAN
 					}
+					annex_country = { 
+						target = MEN 
+						transfer_troops = yes
+					}
 					news_event = {id=AOR_news.126}
 				}
 			}
@@ -1154,12 +1178,30 @@ on_actions = {
 						original_tag = SHX
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target = SHX
 					}
 				}
 			}
+           #北京政府——山西
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = SHX
+					}
+				}
+				MON = {
+					annex_country = {
+						target = SHX
+					}
+				}
+			}
+
 		    #南京政府——陕西
 			else_if = {
 				limit = {
@@ -1171,12 +1213,30 @@ on_actions = {
 						original_tag = MEN
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target = MEN
 					}
 				}
 			}
+           #北京政府——陕西
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = MEN
+					}
+				}
+				MON = {
+					annex_country = {
+						target = MEN
+					}
+				}
+			}
+
             #南京政府——甘肃
 			else_if = {
 				limit = {
@@ -1188,12 +1248,30 @@ on_actions = {
 						original_tag = XSM
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =XSM
 					}
 				}
 			}
+            #北京政府——甘肃
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = XSM
+					}
+				}
+				MON = {
+					annex_country = {
+						target =XSM
+					}
+				}
+			}
+
 			#南京政府——青海
 			else_if = {
 				limit = {
@@ -1205,12 +1283,30 @@ on_actions = {
 						original_tag = QIN
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =QIN
 					}
 				}
 			}
+            #北京政府——青海
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = QIN
+					}
+				}
+				MON = {
+					annex_country = {
+						target =QIN
+					}
+				}
+			}
+
 			#南京政府——新疆
 			else_if = {
 				limit = {
@@ -1222,12 +1318,30 @@ on_actions = {
 						original_tag = SIK
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =SIK
 					}
 				}
 			}
+			 #北京政府——新疆
+			 else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = SIK
+					}
+				}
+				MON = {
+					annex_country = {
+						target =SIK
+					}
+				}
+			}
+
 			#南京政府——西藏
 			else_if = {
 				limit = {
@@ -1239,12 +1353,30 @@ on_actions = {
 						original_tag = TIB
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =TIB
 					}
 				}
 			}
+             #北京政府——西藏
+			else_if = {
+				limit = {
+					#北京政府胜利
+					FROM = {
+						original_tag = MON
+					}
+					ROOT = {
+						original_tag = TIB
+					}
+				}
+				MON = {
+					annex_country = {
+						target =TIB
+					}
+				}
+			}
+
 			#南京政府——东川
 			else_if = {
 				limit = {
@@ -1256,7 +1388,7 @@ on_actions = {
 						original_tag = DCD
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =DCD
 					}
@@ -1273,7 +1405,7 @@ on_actions = {
 						original_tag = PRC
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =PRC
 					}
@@ -1290,7 +1422,7 @@ on_actions = {
 						original_tag = CBS
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =CBS
 					}
@@ -1307,7 +1439,7 @@ on_actions = {
 						original_tag = XCD
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =XCD
 					}
@@ -1324,7 +1456,7 @@ on_actions = {
 						original_tag = JLD
 					}
 				}
-				UPC = {
+				NAN = {
 					annex_country = {
 						target =JLD
 					}

@@ -250,9 +250,6 @@ country_event = {
 	}
 	fire_only_once = yes
 	immediate = {
-		MAN = {
-			load_oob = "AOR_LAND_CHI_MAN"
-			}
 		CHI_civil_war_4 = yes
 	}
 	#那就这样吧  
@@ -541,6 +538,20 @@ country_event = {
 				add_state_core = 606
 
 			}
+			MAN = {
+				load_oob = "AOR_LAND_CHI_MAN"
+				714={set_demilitarized_zone=no}
+				761={set_demilitarized_zone=no}
+				913={set_demilitarized_zone=no}
+				873={set_demilitarized_zone=no}
+				717={set_demilitarized_zone=no}
+				715={set_demilitarized_zone=no}
+				891={set_demilitarized_zone=no}
+				328={set_demilitarized_zone=no}
+				716={set_demilitarized_zone=no}
+				875={set_demilitarized_zone=no}
+				874={set_demilitarized_zone=no}
+				}
 		}
 		name = CHI.13.a
 		news_event = {id=AOR_news.96}

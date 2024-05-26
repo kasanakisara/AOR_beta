@@ -1973,3 +1973,30 @@ news_event = {#联省革命政府占领满洲
 		name = AOR_news.126.a
 	}
 }
+
+news_event = {#冯玉祥支持昆明共和
+	id = AOR_news.127
+	title = AOR_news.127.t
+	desc = AOR_news.127.d
+	picture = GFX_AOR_news.127_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.127.a
+	}
+}
+
+news_event = {#冯玉祥支持广州共和
+	id = AOR_news.128
+	title = AOR_news.128.t
+	desc = AOR_news.128.d
+	picture = GFX_AOR_news.128_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.128.a
+	}
+}
+

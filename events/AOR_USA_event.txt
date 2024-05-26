@@ -417,6 +417,7 @@ country_event = {
 	desc = USA.101.d
 	picture = GFX_USA_event_101
 	trigger = {
+		tag = USA
 		365 = { is_controlled_by = USA }
 		365 = { is_owned_by = CSA }
 		USA = { has_war_with = CSA }
@@ -433,6 +434,7 @@ country_event = {
 	desc = USA.102.d
 	picture = GFX_USA_event_102
 	trigger = {
+		tag = USA
 		371 = { is_controlled_by = USA }
 		371 = { is_owned_by = CSA }
 		USA = { has_war_with = CSA }
@@ -449,6 +451,7 @@ country_event = {
 	desc = USA.103.d
 	picture = GFX_USA_event_103
 	trigger = {
+		tag = USA
 		365 = { is_controlled_by = USA }
 		365 = { is_owned_by = CSA }
 		371 = { is_controlled_by = USA }
@@ -463,7 +466,7 @@ country_event = {
 }
 
 country_event = {
-	id = USA.111 #美国内战北方胜利
+	id = USA.111 #美国内战北方胜利（北方）
 	title = USA.111.t
 	desc = USA.111.d
 	picture = GFX_USA_event_111
@@ -491,8 +494,27 @@ country_event = {
 	option = {
 		name=USA.111.a
 		news_event = {id=AOR_news.112}
+		country_event = {  days = 60 id = USA.112 }
 	}	
 }
+
+country_event = {
+	id = USA.112 #美国收复西部之战
+	title = USA.112.t
+	desc = USA.112.d
+	picture = GFX_USA_event_112
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		USA = {
+			USA_civil_war_west_1 = yes
+		}
+		CSA = {
+			USA_civil_war_west_1 = yes
+		}
+		name=USA.112.a
+	}
+}	
 
 country_event = {
 	id = USA.1000 #南北战争的兵！
