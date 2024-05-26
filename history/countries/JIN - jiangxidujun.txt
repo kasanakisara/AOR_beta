@@ -29,7 +29,7 @@ create_country_leader = {
 	name = "cai_cheng_xun"
 	picture = GFX_portrait_cai_cheng_xun
 	expire = "1965.1.1"
-	ideology = monarchism
+	ideology = miliciagov
 	traits = { 
 	}
 }
