@@ -63,13 +63,14 @@ country_event = {#昆明政府统一南方
             hidden_effect = {
                 KMT = {
                 set_cosmetic_tag = KMT_2
+                load_oob = "AOR_LAND_CHI_KMT"
                 declare_war_on = { 
                     target = NAN
-                    type = annex_everything
+                    type = civil_war
                 } 
                 declare_war_on = { 
                     target = MON
-                    type = annex_everything
+                    type = civil_war
                 }
             }
         }
@@ -78,6 +79,7 @@ country_event = {#昆明政府统一南方
         option = {
             name=KMT.2.a
             set_capital = { state = 592 }
+            country_event = { days = 90  id = MEN.1 }
             news_event = {id=AOR_news.108}
             }
         }
