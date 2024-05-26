@@ -1,0 +1,72 @@
+add_namespace = HUN
+add_namespace = HUN_news
+country_event = {
+	id = HUN.1
+	title = HUN.1.t
+	desc = HUN.1.d
+	picture = GFX_events_HUN_1
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Danube_is_died
+		tag  = HUN
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+    #那就这样吧  	
+	option = {
+		name = HUN.1.a
+		news_event = {id = HUN_news.1}
+		HUN = {
+			declare_war_on = {
+				target = CRO
+				type = puppet_wargoal_focus
+				}
+		}
+}
+}
+country_event = {
+	id = HUN.2
+	title = HUN.2.t
+	desc = HUN.2.d
+	picture = GFX_events_HUN_2
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Danube_is_died
+		tag  = HUN
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+    #那就这样吧  	
+	option = {
+		add_manpower = 50000
+}
+}
+country_event = {
+	id = HUN.3
+	title = HUN.3.t
+	desc = HUN.3.d
+	picture = GFX_events_HUN_3
+	fire_only_once = yes
+	is_triggered_only = yes
+    #那就这样吧  	
+	option = {
+		add_manpower = 50000
+		create_faction = HUN_alliance
+		add_to_faction = BUL
+}
+}
+news_event = {
+	id = HUN_news.1
+	title = HUN_news.1.t
+	desc = HUN_news.1d
+	picture = GFX_HUN_news.1_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news.1.a
+	}
+}
+

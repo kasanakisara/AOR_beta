@@ -18,10 +18,11 @@ country_event = {
 
     option = { 
 		name = AOR_Danube.1.a
+		set_global_flag = Danube_is_died
 		ai_chance = { factor = 100 }
 		hidden_effect = {
 			dismantle_faction = yes
-			news_event = { AOR_news.20 }
+			news_event = { id = Danube_news.3 }
 			}
 		}
 		
