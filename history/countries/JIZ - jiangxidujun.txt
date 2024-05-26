@@ -1,4 +1,4 @@
-﻿capital = 595
+﻿capital = 600
 
 add_ideas = CHI_quxionggeju
 add_ideas = CHI_junfanjingji
@@ -17,37 +17,35 @@ set_politics = {
 	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	Absolutism = 55
-	AUT_democratic = 32
-	FRE_democratic = 13
+	Absolutism = 48
+    AUT_democratic = 35
+	FRE_democratic = 17
 }
 
 create_country_leader = {
-	name = "zhang_jing_jiang"
-	picture = GFX_portrait_zhang_jing_jiang
-	expire = "1965.1.1"
-	ideology = sanminism
-	traits = { 
-	}
-}
-
-create_country_leader = {
-	name = "qi_yao_shan"
-	picture = GFX_portrait_qi_yao_shan
-	expire = "1965.1.1"
-	ideology = patriarch
-	traits = { 
-	}
-}
-
-create_country_leader = {
-	name = "lu_yong_xiang"
-	picture = GFX_portrait_lu_yong_xiang
+	name = "cai_cheng_xun"
+	picture = GFX_portrait_cai_cheng_xun
 	expire = "1965.1.1"
 	ideology = miliciagov
+	traits = { 
+	}
+}
+create_country_leader = {
+	name = "chen_guang_yuan"
+	picture = GFX_portrait_chen_guang_yuan
+	expire = "1965.1.1"
+	ideology = limited
+	traits = { 
+	}
+}
+create_country_leader = {
+	name = "li_lie_jun"
+	picture = GFX_portrait__Marcus_James_Hugins
+	expire = "1965.1.1"
+	ideology = sanminism
 	traits = { 
 	}
 }
