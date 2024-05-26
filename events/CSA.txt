@@ -135,6 +135,40 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = CSA.107 #美国内战北方胜利（南方）
+	title = CSA.107.t
+	desc = CSA.107.d
+	picture = GFX_CSA_event_107
+	trigger = {
+		date > 1921.6.19
+		tag = CSA
+		CSA ={
+			owns_state = 357
+			owns_state = 358
+			owns_state = 360
+			owns_state = 359
+			owns_state = 361
+			owns_state = 816
+			owns_state = 261
+			owns_state = 369
+			owns_state = 396
+			owns_state = 395
+			owns_state = 373
+			owns_state = 392
+			owns_state = 391
+			owns_state = 394
+			owns_state = 393
+		}
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=CSA.107.a
+		news_event = {id=AOR_news.129}
+	}	
+}
+
 
 #country_event = {
 	##id = CSA.1000 #南北战争的兵！
