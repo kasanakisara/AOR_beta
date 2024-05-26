@@ -417,6 +417,7 @@ country_event = {
 	desc = USA.101.d
 	picture = GFX_USA_event_101
 	trigger = {
+		tag = USA
 		365 = { is_controlled_by = USA }
 		365 = { is_owned_by = CSA }
 		USA = { has_war_with = CSA }
@@ -433,6 +434,7 @@ country_event = {
 	desc = USA.102.d
 	picture = GFX_USA_event_102
 	trigger = {
+		tag = USA
 		371 = { is_controlled_by = USA }
 		371 = { is_owned_by = CSA }
 		USA = { has_war_with = CSA }
@@ -449,6 +451,7 @@ country_event = {
 	desc = USA.103.d
 	picture = GFX_USA_event_103
 	trigger = {
+		tag = USA
 		365 = { is_controlled_by = USA }
 		365 = { is_owned_by = CSA }
 		371 = { is_controlled_by = USA }
