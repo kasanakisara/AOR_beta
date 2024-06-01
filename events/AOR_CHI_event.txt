@@ -108,19 +108,26 @@ country_event = {
 		}
 	}
 }
-#庚申新年
+
+#庚申新年（现改为三卅运动）
 country_event = {
 	id = CHI.5
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
+	trigger = {
+		date > 1920.3.25
+		tag = CHI
+	}
+	fire_only_once = yes
 	immediate = {
 	}
 	option = {
 		name = CHI.5.a
+		news_event = {id=AOR_news.129}
 	}
 }
+
 #国会事件
 country_event = {
 	id = CHI.6
@@ -1311,6 +1318,26 @@ country_event = {
 			news_event = {id=AOR_news.119}
 			}
 		}
+
+#重庆英舰事件
+country_event = {
+	id = CHI.42
+	title = CHI.42.t
+	desc = CHI.42.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1920.9.10
+		tag = CHI
+	}
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = CHI.42.a
+		news_event = {id=AOR_news.130}
+		add_manpower = -500
+	}
+}
 
 #还我军事区
 country_event = {

@@ -2000,3 +2000,42 @@ news_event = {#冯玉祥支持广州共和
 	}
 }
 
+news_event = {#中国爆发大规模抗议（三卅运动）！！！
+	id = AOR_news.129
+	title = AOR_news.129.t
+	desc = AOR_news.129.d
+	picture = GFX_AOR_news.129_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.129.a
+	}
+}
+
+news_event = {#英国舰船炮击中国重庆
+	id = AOR_news.130
+	title = AOR_news.130.t
+	desc = AOR_news.130.d
+	picture = GFX_AOR_news.130_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.130.a
+	}
+}
+
+news_event = {#中国云南发生政变！
+	id = AOR_news.131
+	title = AOR_news.131.t
+	desc = AOR_news.131.d
+	picture = GFX_AOR_news.131_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.131.a
+	}
+}
+

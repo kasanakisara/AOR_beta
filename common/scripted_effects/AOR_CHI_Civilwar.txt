@@ -1092,10 +1092,9 @@ USA_civil_war_west = {
 
 USA_civil_war_west_1 = {
 	USA = {
-		declare_war_on = {
+		annex_country = {
 			target = US1
-			type = civil_war
-			}
+		    }
 		annex_country = {
 			target = US2
 		    }
@@ -1125,10 +1124,9 @@ USA_civil_war_west_1 = {
 			}
 		}
 	CSA = {
-		declare_war_on = {
+		annex_country = {
 			target = US1
-			type = civil_war
-			}
+		    }
 		declare_war_on = {
 			target = US2
 			type = civil_war
