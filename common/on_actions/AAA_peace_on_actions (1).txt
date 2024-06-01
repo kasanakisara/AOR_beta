@@ -1486,6 +1486,53 @@ on_actions = {
 					}
 				}
 			}
+			#昆明政府——东川
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = DCD
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =DCD
+					}
+					add_state_core = 906
+					add_state_core = 908
+					add_state_core = 753
+					add_state_core = 751
+					add_state_core = 434
+					add_state_core = 605
+				}
+			}
+			#广州政府——东川
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = DCD
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =UPC
+					}
+					add_state_core = 906
+					add_state_core = 908
+					add_state_core = 753
+					add_state_core = 751
+					add_state_core = 434
+					add_state_core = 605
+				}
+			}
+
 			#南京政府——四川工农
 			else_if = {
 				limit = {

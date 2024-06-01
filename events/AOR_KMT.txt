@@ -82,6 +82,7 @@ country_event = {#昆明政府统一南方
             name=KMT.2.a
             set_capital = { state = 592 }
             country_event = { days = 90  id = MEN.1 }
+            country_event = { days = 180  id = DCD.2 }
             news_event = {id=AOR_news.108}
             }
         }
