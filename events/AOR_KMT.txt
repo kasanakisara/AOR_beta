@@ -12,18 +12,23 @@ country_event = {#昆明政府政变
 	fire_only_once = yes
 	immediate = {
         hidden_effect = {
-            JIN = {
-            transfer_state = 325
-            transfer_state = 603
-            transfer_state = 907
-            transfer_state = 748
-
-            add_state_core = 325
-            add_state_core = 603
-            add_state_core = 907
-            add_state_core = 748
-
-            714={set_demilitarized_zone=yes}
+            #JIN = {
+                #transfer_state = 325
+                #transfer_state = 603
+                #transfer_state = 907
+                #transfer_state = 748
+    
+                #add_state_core = 325
+                #add_state_core = 603
+                #add_state_core = 907
+                #add_state_core = 748
+                #714={set_demilitarized_zone=yes}
+            #}
+            KMT = {
+                325={set_demilitarized_zone=yes}
+                603={set_demilitarized_zone=yes}
+                748={set_demilitarized_zone=yes}
+                907={set_demilitarized_zone=yes}
             }
         }
 	}
@@ -51,16 +56,23 @@ country_event = {#云贵内战
 	fire_only_once = yes
 	immediate = {
         hidden_effect = {
-            JIN = {
-                declare_war_on = { 
-                    target = KMT
-                    type = civil_war
-                } 
+            KMT = {
+                325={set_demilitarized_zone=NO}
+                603={set_demilitarized_zone=NO}
+                748={set_demilitarized_zone=NO}
+                907={set_demilitarized_zone=NO}
             }
+            #JIN = {
+                #declare_war_on = { 
+                    #target = KMT
+                    #type = civil_war
+                #} 
+            #}
         }
 	}
 	option = {
 		name = KMT.1.a
+        set_cosmetic_tag = KMT_5
 	}
 }
 
