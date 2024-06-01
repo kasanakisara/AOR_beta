@@ -11,7 +11,6 @@ country_event = {
 		date > 1926.7.1
     }
 
-
     option = {
 		name = US2.1.a
 		#news_event = {id=AOR_news.105}
@@ -19,75 +18,80 @@ country_event = {
         declare_war_on = { 
             target = USA
             type = civil_war
-        } 
-        hidden_effect = {
-            load_oob = "US2_Civilwar"
-            load_oob = "US2_Civilwar"
-            load_oob = "US2_Civilwar"
-            set_cosmetic_tag = US2_1
-            transfer_state = 386
-            transfer_state = 385
-            transfer_state = 378
-            transfer_state = 379
-            transfer_state = 380
-            transfer_state = 924
-            transfer_state = 923
-            transfer_state = 925
-            transfer_state = 381
-            transfer_state = 387
-            transfer_state = 388
-
-            add_state_core = 386
-            add_state_core = 385
-            add_state_core = 378
-            add_state_core = 379
-            add_state_core = 380
-            add_state_core = 924
-            add_state_core = 923
-            add_state_core = 925
-            add_state_core = 381
-            add_state_core = 387
-            add_state_core = 388
-			}
         }
-	}
+        hidden_effect = {
+            US2 = {
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                set_cosmetic_tag = US2_1
+                transfer_state = 386
+                transfer_state = 385
+                transfer_state = 378
+                transfer_state = 379
+                transfer_state = 380
+                transfer_state = 924
+                transfer_state = 923
+                transfer_state = 925
+                transfer_state = 381
+                transfer_state = 387
+                transfer_state = 388
+    
+                add_state_core = 386
+                add_state_core = 385
+                add_state_core = 378
+                add_state_core = 379
+                add_state_core = 380
+                add_state_core = 924
+                add_state_core = 923
+                add_state_core = 925
+                add_state_core = 381
+                add_state_core = 387
+                add_state_core = 388 
+            }
+        }
+    }
+}
     option = {
+        name = US2.1.b
 		#news_event = {id=AOR_news.105}
         US2 = {
-        declare_war_on = { 
-             target = USA
+            declare_war_on = { 
+            target = USA
             type = civil_war
         }
-        change_tag_from = ROOT
         hidden_effect = {
-            load_oob = "US2_Civilwar"
-            load_oob = "US2_Civilwar"
-            load_oob = "US2_Civilwar"
-            set_cosmetic_tag = US2_1
-            transfer_state = 386
-            transfer_state = 385
-            transfer_state = 378
-            transfer_state = 379
-            transfer_state = 380
-            transfer_state = 924
-            transfer_state = 923
-            transfer_state = 925
-            transfer_state = 381
-            transfer_state = 387
-            transfer_state = 388
-    
-            add_state_core = 386
-            add_state_core = 385
-            add_state_core = 378
-            add_state_core = 379
-            add_state_core = 380
-            add_state_core = 924
-            add_state_core = 923
-            add_state_core = 925
-            add_state_core = 381
-            add_state_core = 387
-            add_state_core = 388
+            US2 = {
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                set_cosmetic_tag = US2_1
+                transfer_state = 386
+                transfer_state = 385
+                transfer_state = 378
+                transfer_state = 379
+                transfer_state = 380
+                transfer_state = 924
+                transfer_state = 923
+                transfer_state = 925
+                transfer_state = 381
+                transfer_state = 387
+                transfer_state = 388
+        
+                add_state_core = 386
+                add_state_core = 385
+                add_state_core = 378
+                add_state_core = 379
+                add_state_core = 380
+                add_state_core = 924
+                add_state_core = 923
+                add_state_core = 925
+                add_state_core = 381
+                add_state_core = 387
+                add_state_core = 388 
+                }
             }
+            change_tag_from = ROOT
         }
 	}
 }

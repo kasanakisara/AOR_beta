@@ -1163,21 +1163,15 @@ USA_civil_war_west_1 = {
 USA_civil_war_east = {
 	USU = {
 		load_oob = "USU_Civilwar"
-		declare_war_on = {
-			target = USA
-			type = civil_war
-			}
 			transfer_state = 396
 			transfer_state = 816
 			transfer_state = 369
-			transfer_state = 379
 			transfer_state = 367
 			transfer_state = 370
 
 			add_state_core = 396
 			add_state_core = 816
 			add_state_core = 369
-			add_state_core = 379
 			add_state_core = 367
 			add_state_core = 370
 		}
