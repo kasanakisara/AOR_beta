@@ -69,6 +69,7 @@ country_event = {
 			366 = { set_demilitarized_zone = yes }
 			371 = { set_demilitarized_zone = yes }
 			375 = { set_demilitarized_zone = yes }
+			932 = { set_demilitarized_zone = yes }
 		}
 		country_event = { days =30  id = USA.4 }
 	}
