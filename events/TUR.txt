@@ -54,14 +54,12 @@ country_event = {#侵略成功
 		has_war_with = GRE
 		controls_state   = 343
 		controls_state  = 797
-		GRE = {NOT = {has_idea = Take_the_initiative_to_attack}
-		TUR = {NOT = { has_idea = revenge }
+		GRE = {NOT = {has_idea = Take_the_initiative_to_attack}}
+		TUR = {NOT = { has_idea = revenge }}
 	}
-}
     #那就这样吧  	
 	option = {
 		name = TUR.3.a
-		news_event = {id = AOR_news.44}
 		transfer_state = 797
 		transfer_state =  340
 		transfer_state =  341
@@ -95,7 +93,6 @@ country_event = {#自卫成功
     #那就这样吧  	
 	option = {
 		name = TUR.4.a
-		news_event = {id = AOR_news.45}
 		every_country = {
 			limit = { has_war_with = TUR }
 			white_peace = TUR

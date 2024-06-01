@@ -57,6 +57,7 @@ country_event = {
 
 	}
 	GRE = {leave_faction =yes}
+	news_event = {id = AOR_news.40}
 	country_event = { days = 90 id = GRE.2
 		}	#希腊宣战
 	ai_chance = {
@@ -174,9 +175,9 @@ country_event = {
     #那就这样吧  	
 	option = {
 		name = GRE.5.a
-		#20%变君主制
+		#40%变君主制
 		ai_chance = {
-			base = 20
+			base = 40
 		}
 		add_popularity = { ideology = Absolutism popularity = 0.08 }
 		set_politics = {ruling_party = Absolutism}
@@ -187,294 +188,351 @@ country_event = {
 	option = {
 	name = GRE.5.b
 	ai_chance = {
-		base = 80
+		base = 60
 	}
 	add_popularity = { ideology = CON_democratic popularity = 0.25 }
 	set_cosmetic_tag = GRE_CON_1
+	country_event = {days = 60 id = GRE.6}
 	}
 }
-#打南斯拉夫
 country_event = {
 	id = GRE.6
 	title = GRE.6.t
 	desc = GRE.6.d
 	picture = GFX_events_GRE_6
 	fire_only_once = yes
-	trigger = {
-		has_government = Absolutism
-		AUS = {has_idea = Depression_calls_1}
-		tag = GRE
-	}
-	mean_time_to_happen = {
-		days = 45
-	}
+	is_triggered_only = yes
     #那就这样吧  	
 	option = {
-		name = GRE.6.a
+		create_faction = GRE_alliance
 		GRE = {
-			declare_war_on = {
-				target = YUG
-				type = take_claimed_state
-			}
+		add_to_faction = YUG
+ 		add_to_faction = ROM
+ 		}
+		country_event = {days =60 id  = GRE.7}
+		HUN  = {
+			country_event = {days = 30 id = HUN.3}
 		}
-		log = "[GetLogInfo] [From.GetName]: event GRE.6 option GRE.12.a"
-	}
 }
-#打南斯拉夫和平事件
+}
 country_event = {
 	id = GRE.7
 	title = GRE.7.t
 	desc = GRE.7.d
 	picture = GFX_events_GRE_6
 	fire_only_once = yes
-	trigger = {
-		has_war_with = YUG
-		controls_state = 106
-		controls_state = 108
-		controls_state = 803
-		controls_state = 802
-		tag = GRE
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-    #那就这样吧  	
-	option = {
-		name = GRE.7.a
-		every_country = {
-			limit = { has_war_with = GRE }
-			white_peace = GRE
-		}
-		transfer_state = 106
-		add_state_core  = 106
-		log = "[GetLogInfo] [From.GetName]: event GRE.7 option GRE.12.a"
-	}
-}
-#与匈牙利结盟
-country_event = {
-	id = GRE.8
-	title = GRE.8.t
-	desc = GRE.8.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	trigger = {
-		has_war = no
-		controls_state = 106
-		106 = {is_core_of = GRE}
-		is_in_faction = no
-		tag = GRE
-
-	}
-	mean_time_to_happen = {
-		days = 45
-	}
-    #那就这样吧  	
-	option = {
-		name = GRE.8.a
-		create_faction = GRE_alliance
-		GRE = {
-			add_to_faction = HUN
-		}
-		country_event = {days = 90 id = GRE.9}
-		BUL = {country_event = {days =15 id = BUL.1}}
-		log = "[GetLogInfo] [From.GetName]: event GRE.8 option GRE.12.a"
-	}
-}
-#开打匈牙利-希腊vs罗马尼亚-保加利亚-南斯拉夫
-country_event = {
-	id = GRE.9
-	title = GRE.9.t
-	desc = GRE.9.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
 	is_triggered_only = yes
     #那就这样吧  	
 	option = {
-		name = GRE.9.a
-		news_event = {id = AOR_news.351}
 		GRE = {
 			declare_war_on = {
-				target = BUL
-				type = take_claimed_state
-			}
-		}
-		log = "[GetLogInfo] [From.GetName]: event GRE.9 option GRE.12.a"
-	}
-}
-#与南斯拉夫结盟
-country_event = {
-	id = GRE.10
-	title = GRE.10.t
-	desc = GRE.10.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	trigger = {
-		has_government = CON_democratic
-		AUS = {has_idea = Depression_calls_1}
-		tag = GRE
-	}
-	mean_time_to_happen = {
-		days = 45
-	}
-    #那就这样吧  	
-	option = {
-		name = GRE.10.a
-		create_faction = GRE_alliance
-		GRE = {
-			add_to_faction = YUG
-			country_event = {days = 60 id = GRE.12}
-		}
-		log = "[GetLogInfo] [From.GetName]: event GRE.10 option GRE.12.a"
-		
-	}
-}
-#帮助南斯拉夫打达尔马提亚
-country_event = {
-	id = GRE.12
-	title = GRE.12.t
-	desc = GRE.12.d
-	picture = GFX_events_GRE_6
-	is_triggered_only = yes
-    #那就这样吧  	
-	option = {
-		name = GRE.12.a
-		log = "[GetLogInfo] [From.GetName]: event GRE.12 option GRE.12.a"
-		if = {
-			limit = {
-				tag = GRE
-			}
-			GRE = {
-				declare_war_on = {
-					target = DAL
-					type = take_core_state
-				}
-			}	
-			
-			BUL = {country_event = {id = BUL.3}}
-		}
-		
-		
-	}
-}
-#南斯拉夫-希腊-罗马尼亚vs匈牙利
-country_event = {
-	id = GRE.14
-	title = GRE.14.t
-	desc = GRE.14.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	is_triggered_only = yes
-    #那就这样吧  	
-	option = {
-		name = GRE.14.a
-		GRE = {
-			add_to_faction = ROM
-			declare_war_on = {
-				target = BUL
+				target = HUN
 				type = take_core_state
 			}
 		}
-		log = "[GetLogInfo] [From.GetName]: event GRE.14 option GRE.12.a"
-		
-	}
-}
-#赢啦！加核心
-country_event = {
-	id = GRE.15
-	title = GRE.15.t
-	desc = GRE.15.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	trigger = {
-		NOT = { country_exists = BUL }
-		YUG = {is_subject_of = HUN}
-		ROM = {is_subject_of = HUN}
-	}
-    #那就这样吧  	
-	option = {
-		name = GRE.15.a
-		add_state_core = 106
-		add_state_core = 803
-		add_state_core = 48
-		add_state_core = 212
-		add_state_core = 211
-		add_state_core = 801
-		add_state_core = 77
-		add_state_core = 851
-		news_event = {id = AOR_news.349}
-		log = "[GetLogInfo] [From.GetName]: event GRE.15 option GRE.12.a"
-	}
-}
-#赢啦！加核心
-country_event = {
-	id = GRE.16
-	title = GRE.16.t
-	desc = GRE.16.d
-	picture = GFX_events_GRE_6
-	fire_only_once = yes
-	trigger = {
-		NOT = { country_exists = BUL }
-		AND = {
-			has_war = no
-			ROM = {
-				controls_state = 84
-			}
-			YUG = {
-				controls_state = 45
-			}
-		}
-		
-	}
-    #那就这样吧  	
-	option = {
-		name = GRE.16.a
-		add_state_core = 106
-		add_state_core = 803
-		add_state_core = 48
-		add_state_core = 212
-		add_state_core = 211
-		add_state_core = 801
-		add_state_core = 77
-		add_state_core = 851
 		ROM = {
-			add_state_core = 84
-			add_state_core = 82
+			add_to_war = {
+				targeted_alliance = GRE
+				enemy = HUN
+			}
 		}
-		news_event = {id = AOR_news.351}
-		YUG = {country_event = {
-			days = 1 id = YUG.1
-		}}
-		log = "[GetLogInfo] [From.GetName]: event GRE.16 option GRE.12.a"
-	}
+		YUG = {
+			add_to_war = {
+				targeted_alliance = GRE
+				enemy = HUN
+			}
+		}
+		BUL = {
+			add_to_war = {
+				targeted_alliance = HUN
+				enemy = GRE
+			}
+		}
 }
-country_event = {
-	id=GRE.1453
-	title = GRE.1453.t
-	desc = GRE.1453.d
-	picture = GFX_events_GRE_1453
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = GRE.16.a
-		GRE = {
-
-			every_state = {
-				add_core_of = GRE
-			}
-			add_manpower = 14530000
-
-			}
-		GRE = {
-			add_ideas = {
-			FUCK_YOU_COLONIST
-			}
-			leave_faction = yes
-		}
-		every_country = {
-			declare_war_on = {
-				target = GRE
-				type = civil_war
-			}
-		}
-	}
 }
+
+#打南斯拉夫
+# country_event = {
+# 	id = GRE.6
+# 	title = GRE.6.t
+# 	desc = GRE.6.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_government = Absolutism
+# 		AUS = {has_idea = Depression_calls_1}
+# 		tag = GRE
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 45
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.6.a
+# 		GRE = {
+# 			declare_war_on = {
+# 				target = YUG
+# 				type = take_claimed_state
+# 			}
+# 		}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.6 option GRE.12.a"
+# 	}
+# }
+# #打南斯拉夫和平事件
+# country_event = {
+# 	id = GRE.7
+# 	title = GRE.7.t
+# 	desc = GRE.7.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_war_with = YUG
+# 		controls_state = 106
+# 		controls_state = 108
+# 		controls_state = 803
+# 		controls_state = 802
+# 		tag = GRE
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.7.a
+# 		every_country = {
+# 			limit = { has_war_with = GRE }
+# 			white_peace = GRE
+# 		}
+# 		transfer_state = 106
+# 		add_state_core  = 106
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.7 option GRE.12.a"
+# 	}
+# }
+# #与匈牙利结盟
+# country_event = {
+# 	id = GRE.8
+# 	title = GRE.8.t
+# 	desc = GRE.8.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_war = no
+# 		controls_state = 106
+# 		106 = {is_core_of = GRE}
+# 		is_in_faction = no
+# 		tag = GRE
+
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 45
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.8.a
+# 		create_faction = GRE_alliance
+# 		GRE = {
+# 			add_to_faction = HUN
+# 		}
+# 		country_event = {days = 90 id = GRE.9}
+# 		BUL = {country_event = {days =15 id = BUL.1}}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.8 option GRE.12.a"
+# 	}
+# }
+# #开打匈牙利-希腊vs罗马尼亚-保加利亚-南斯拉夫
+# country_event = {
+# 	id = GRE.9
+# 	title = GRE.9.t
+# 	desc = GRE.9.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.9.a
+# 		news_event = {id = AOR_news.351}
+# 		GRE = {
+# 			declare_war_on = {
+# 				target = BUL
+# 				type = take_claimed_state
+# 			}
+# 		}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.9 option GRE.12.a"
+# 	}
+# }
+# #与南斯拉夫结盟
+# country_event = {
+# 	id = GRE.10
+# 	title = GRE.10.t
+# 	desc = GRE.10.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_government = CON_democratic
+# 		AUS = {has_idea = Depression_calls_1}
+# 		tag = GRE
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 45
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.10.a
+# 		create_faction = GRE_alliance
+# 		GRE = {
+# 			add_to_faction = YUG
+# 			country_event = {days = 60 id = GRE.12}
+# 		}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.10 option GRE.12.a"
+		
+# 	}
+# }
+# #帮助南斯拉夫打达尔马提亚
+# country_event = {
+# 	id = GRE.12
+# 	title = GRE.12.t
+# 	desc = GRE.12.d
+# 	picture = GFX_events_GRE_6
+# 	is_triggered_only = yes
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.12.a
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.12 option GRE.12.a"
+# 		if = {
+# 			limit = {
+# 				tag = GRE
+# 			}
+# 			GRE = {
+# 				declare_war_on = {
+# 					target = DAL
+# 					type = take_core_state
+# 				}
+# 			}	
+			
+# 			BUL = {country_event = {id = BUL.3}}
+# 		}
+		
+		
+# 	}
+# }
+# #南斯拉夫-希腊-罗马尼亚vs匈牙利
+# country_event = {
+# 	id = GRE.14
+# 	title = GRE.14.t
+# 	desc = GRE.14.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.14.a
+# 		GRE = {
+# 			add_to_faction = ROM
+# 			declare_war_on = {
+# 				target = BUL
+# 				type = take_core_state
+# 			}
+# 		}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.14 option GRE.12.a"
+		
+# 	}
+# }
+# #赢啦！加核心
+# country_event = {
+# 	id = GRE.15
+# 	title = GRE.15.t
+# 	desc = GRE.15.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		NOT = { country_exists = BUL }
+# 		YUG = {is_subject_of = HUN}
+# 		ROM = {is_subject_of = HUN}
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.15.a
+# 		add_state_core = 106
+# 		add_state_core = 803
+# 		add_state_core = 48
+# 		add_state_core = 212
+# 		add_state_core = 211
+# 		add_state_core = 801
+# 		add_state_core = 77
+# 		add_state_core = 851
+# 		news_event = {id = AOR_news.349}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.15 option GRE.12.a"
+# 	}
+# }
+# #赢啦！加核心
+# country_event = {
+# 	id = GRE.16
+# 	title = GRE.16.t
+# 	desc = GRE.16.d
+# 	picture = GFX_events_GRE_6
+# 	fire_only_once = yes
+# 	trigger = {
+# 		NOT = { country_exists = BUL }
+# 		AND = {
+# 			has_war = no
+# 			ROM = {
+# 				controls_state = 84
+# 			}
+# 			YUG = {
+# 				controls_state = 45
+# 			}
+# 		}
+		
+# 	}
+#     #那就这样吧  	
+# 	option = {
+# 		name = GRE.16.a
+# 		add_state_core = 106
+# 		add_state_core = 803
+# 		add_state_core = 48
+# 		add_state_core = 212
+# 		add_state_core = 211
+# 		add_state_core = 801
+# 		add_state_core = 77
+# 		add_state_core = 851
+# 		ROM = {
+# 			add_state_core = 84
+# 			add_state_core = 82
+# 		}
+# 		news_event = {id = AOR_news.351}
+# 		YUG = {country_event = {
+# 			days = 1 id = YUG.1
+# 		}}
+# 		log = "[GetLogInfo] [From.GetName]: event GRE.16 option GRE.12.a"
+# 	}
+# }
+# country_event = {
+# 	id=GRE.1453
+# 	title = GRE.1453.t
+# 	desc = GRE.1453.d
+# 	picture = GFX_events_GRE_1453
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
+# 	option = {
+# 		name = GRE.16.a
+# 		GRE = {
+
+# 			every_state = {
+# 				add_core_of = GRE
+# 			}
+# 			add_manpower = 14530000
+
+# 			}
+# 		GRE = {
+# 			add_ideas = {
+# 			FUCK_YOU_COLONIST
+# 			}
+# 			leave_faction = yes
+# 		}
+# 		every_country = {
+# 			declare_war_on = {
+# 				target = GRE
+# 				type = civil_war
+# 			}
+# 		}
+# 	}
+# }
