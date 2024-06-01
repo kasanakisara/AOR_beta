@@ -165,9 +165,21 @@ country_event = {#昆明政府统一南方
             country_event = { days = 90  id = MEN.1 }
             country_event = { days = 180  id = DCD.2 }
             news_event = {id=AOR_news.108}
+            KMT = {
+            set_politics = {ruling_party = SOC_democratic}
             add_popularity = { ideology = SOC_democratic popularity = 0.2 }
+            create_country_leader = {
+                name = "Sun_zhong_shan"
+                desc = "POLITICS_MON_DESC"
+                picture = "gfx/leaders/KMT/sun.dds"
+                expire = "1965.1.1"
+                ideology = newdemism
+                traits = {
+                    }
+                }
             }
         }
+    }
 
         country_event = {#国民革命政府统一南北
         id = KMT.5 

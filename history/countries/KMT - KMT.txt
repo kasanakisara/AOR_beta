@@ -28,6 +28,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Sun_zhong_shan"
+	desc = "POLITICS_MON_DESC"
+	picture = "gfx/leaders/KMT/sun_1.dds"
+	expire = "1965.1.1"
+	ideology = newdemism
+	traits = {
+	}
+}
+
 set_politics = {
 	ruling_party = FRE_democratic
 	last_election = "1936.1.1"
