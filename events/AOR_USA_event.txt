@@ -1,58 +1,103 @@
 add_namespace = USA
 
 #醒醒，美国人#
-country_event = {
+country_event = {#西部的二次危机
 	id = USA.1
 	title = USA.1.t
 	desc = USA.1.d
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
 	trigger = {
-		date > 1920.1.15
+		date > 1926.3.1
 		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 	option = {
 		name = USA.1.a
-		
+		hidden_effect = {
+			386 = { set_demilitarized_zone = yes }
+			385 = { set_demilitarized_zone = yes }
+			378 = { set_demilitarized_zone = yes }
+			379 = { set_demilitarized_zone = yes }
+			380 = { set_demilitarized_zone = yes }
+			924 = { set_demilitarized_zone = yes }
+			923 = { set_demilitarized_zone = yes }
+			925 = { set_demilitarized_zone = yes }
+			381 = { set_demilitarized_zone = yes }
+			387 = { set_demilitarized_zone = yes }
+			388 = { set_demilitarized_zone = yes }
+		}
+		country_event = { days = 180  id = USA.2 }
 	}
 }
 country_event = {
-	id = USA.2 #哲学博士的雄心
+	id = USA.2 #东部危机
 	title = USA.2.t
 	desc = USA.2.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
+	fire_only_once = yes
 
       
 	option = {
 		name = USA.2.a
+		hidden_effect = {
+			396 = { set_demilitarized_zone = yes }
+			816 = { set_demilitarized_zone = yes }
+			369 = { set_demilitarized_zone = yes }
+			379 = { set_demilitarized_zone = yes }
+			367 = { set_demilitarized_zone = yes }
+			370 = { set_demilitarized_zone = yes }
+		}
+		country_event = { days =60  id = USA.3 }
 	}
 }
 country_event = {
-	id = USA.3 #什么调研
+	id = USA.3 #南部危机
 	title = USA.3.t
 	desc = USA.3.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
+	fire_only_once = yes
 
       
 	option = {
 		name = USA.3.a
+		hidden_effect = {
+			363 = { set_demilitarized_zone = yes }
+			364 = { set_demilitarized_zone = yes }
+			365 = { set_demilitarized_zone = yes }
+			366 = { set_demilitarized_zone = yes }
+			371 = { set_demilitarized_zone = yes }
+			375 = { set_demilitarized_zone = yes }
+		}
+		country_event = { days =30  id = USA.4 }
 	}
 }
 country_event = {
-	id = USA.4 #什么调研
+	id = USA.4 #第三次内战
 	title = USA.4.t
 	desc = USA.4.d
 	picture = GFX_Portrait_of_Tirpitz
 	is_triggered_only = yes
-
+	fire_only_once = yes
+    immediate = {
+	hidden_effect = {
+		USA_civil_war_east =yes
+	}
+}
       
 	option = {
 		name = USA.4.a
+		USU = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = USA.4.b
 	}
 }
+
 #################以下为科技类##################
 country_event = {
 	id = USA.105 #铁
