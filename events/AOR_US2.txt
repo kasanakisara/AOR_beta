@@ -46,10 +46,6 @@ country_event = {
 		name = US2.1.a
 		#news_event = {id=AOR_news.105}
         US2 = {
-        declare_war_on = { 
-            target = USA
-            type = civil_war
-        }
         hidden_effect = {
             US2 = {
                 load_oob = "US2_Civilwar"
@@ -63,10 +59,6 @@ country_event = {
         name = US2.1.b
 		#news_event = {id=AOR_news.105}
         US2 = {
-            declare_war_on = { 
-            target = USA
-            type = civil_war
-        }
         hidden_effect = {
             US2 = {
                 load_oob = "US2_Civilwar"

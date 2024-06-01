@@ -1173,5 +1173,25 @@ USA_civil_war_east = {
 			add_state_core = 367
 			add_state_core = 370
 		}
+	CSA = {
+		load_oob = "CSA_Civilwar_2"
+		load_oob = "CSA_Civilwar_2"
+		load_oob = "CSA_Civilwar_2"
+			transfer_state = 363
+			transfer_state = 364
+			transfer_state = 365
+			transfer_state = 366
+			transfer_state = 371
+			transfer_state = 375
+			transfer_state = 932
+	
+			add_state_core = 363
+			add_state_core = 364
+			add_state_core = 365
+			add_state_core = 366
+			add_state_core = 371
+			add_state_core = 375
+			add_state_core = 932
+		}
 	}
 
