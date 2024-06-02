@@ -338,6 +338,76 @@ country_event = {#昆明政府统一南方
                     add_state_core = 760
                     add_state_core = 287
                     add_state_core = 322
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 917
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 917
+                            transfer_state = 917
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 586
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 586
+                            transfer_state = 586
+            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 918
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 918
+                            transfer_state = 918
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 654
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 654
+                            transfer_state = 654
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 916
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 916
+                            transfer_state = 916
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 920
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 920
+                            transfer_state = 920
+                            
+                        }
+                    }
             }
             name=KMT.6.a
             news_event = {id=AOR_news.117}
