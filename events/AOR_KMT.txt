@@ -6,7 +6,7 @@ country_event = {#昆明政府政变
 	desc = KMT.1.d
 	picture = GFX_KMT_event_1
 	trigger = {
-		date > 1921.7.25
+		date > 1920.8.31
 		tag = KMT
 	}
 	fire_only_once = yes
