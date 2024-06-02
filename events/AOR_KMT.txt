@@ -29,6 +29,7 @@ country_event = {#昆明政府政变
                 603={set_demilitarized_zone=yes}
                 748={set_demilitarized_zone=yes}
                 907={set_demilitarized_zone=yes}
+                750={set_demilitarized_zone=yes}
             }
         }
 	}
@@ -61,6 +62,7 @@ country_event = {#云贵内战
                 603={set_demilitarized_zone=NO}
                 748={set_demilitarized_zone=NO}
                 907={set_demilitarized_zone=NO}
+                750={set_demilitarized_zone=NO}
             }
             #JIN = {
                 #declare_war_on = { 
