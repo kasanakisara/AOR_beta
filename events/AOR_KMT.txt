@@ -111,7 +111,7 @@ country_event = {#昆明政府统一南方
     option = {
 		name = KMT.3.a
 		news_event = {id=AOR_news.106}
-        country_event = { days = 90  id = KMT.3 }
+        country_event = { days = 90  id = KMT.4 }
 		KMT = {
             add_popularity = { ideology = FRE_democratic popularity = 0.1 }
             add_popularity = { ideology = CON_democratic popularity = 0.1 }
