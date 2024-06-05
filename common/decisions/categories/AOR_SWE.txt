@@ -15,3 +15,12 @@ SWE_Trade_decision_categories = {
 		has_idea = SWE_Open_the_door
 	}
 }
+
+SWE_Union_decision_categories = {
+	scripted_gui = AOR_SWE_Union_gui
+	priority = 110
+	visible = {
+		has_idea = SWE_The_Union_Dream
+	}
+	visible_when_empty = yes
+}

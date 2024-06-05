@@ -1,43 +1,16 @@
 scripted_gui = {
 
 	AOR_SWE_Union_gui = {
-		context_type = player_context
+		context_type = decision_category
 		window_name = "AOR_SWE_Union_gui"
 
 		visible = {
-			has_country_flag = SWE_Open_Union_gui
+			has_idea = SWE_The_Union_Dream
 		}
 
 		properties = {
 			SWE_Union_GUI_progress_bar = {
 				frame = SWE_Union_progress_value
-			}
-		}
-	}
-	
-}
-
-scripted_gui = {
-
-	AOR_SWE_Union_gui_BUTTOM_WINDOW = {
-		context_type = player_context
-		window_name = "AOR_SWE_Union_gui_BUTTOM_WINDOW"
-
-		visible = {
-			has_country_flag = SWE_GUI_4
-		}
-	
-		effects = {
-			SWE_Union_gui_buttom_click = {
-				if = {
-					limit = {
-						has_country_flag = SWE_Open_Union_gui
-					}
-					clr_country_flag = SWE_Open_Union_gui
-				}
-				else = {
-					set_country_flag = SWE_Open_Union_gui
-				}
 			}
 		}
 	}
