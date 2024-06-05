@@ -259,6 +259,14 @@ defined_text = {
 		localization_key = committee
 	}
 	text = {
+		trigger = { has_country_leader_ideology = PRCrevolutionism }
+		localization_key = PRCrevolutionism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = Leftmilitarism }
+		localization_key = Leftmilitarism
+	}
+	text = {
 		trigger = { has_country_leader_ideology = PRC_county }
 		localization_key = PRC_county
 	}

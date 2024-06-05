@@ -1,0 +1,65 @@
+add_namespace = DCD
+
+country_event = {
+	id = DCD.1 #东川统一
+	title = DCD.1.t
+	desc = DCD.1.d
+	picture = GFX_DCD_event_1
+	fire_only_once = yes
+	trigger = {
+		tag = DCD
+		date > 1922.3.10
+        DCD = {
+            owns_state = 906
+            owns_state = 908
+            owns_state = 753
+            owns_state = 751
+            owns_state = 434
+            owns_state = 605
+        }
+    }
+
+
+    option = {
+		name = DCD.1.a
+		#news_event = {id=AOR_news.105}
+		DCD = {
+            set_cosmetic_tag = DCD_3
+            set_capital = { state = 753 }
+            add_state_core = 906
+            add_state_core = 908
+            add_state_core = 753
+            add_state_core = 751
+            add_state_core = 434
+            add_state_core = 605
+			}
+	}
+}
+
+country_event = {
+    id = DCD.2 #东川宣布南下
+    title = DCD.2.t
+    desc = DCD.2.d
+    picture = GFX_DCD_event_2
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = { 
+        hidden_effect = {
+            DCD = {
+            declare_war_on = { 
+                target = KMT
+                type = civil_war
+            } 
+            declare_war_on = { 
+                target = UPC
+                type = civil_war
+            }
+        }
+    }
+}
+
+    option = {
+        name=DCD.2.a
+        }
+    }

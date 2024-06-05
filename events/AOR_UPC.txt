@@ -1172,6 +1172,7 @@ country_event = {#中国广州政府宣布北伐
     option = {
          name=UPC.102.a
 		 country_event = { days = 90  id = MEN.2 }
+		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
          }
      }
@@ -1309,8 +1310,8 @@ country_event = {#中国广州政府宣布北伐
                 } 
             }
         option = {
-			    set_cosmetic_tag = UPC_3
                 UPC = {
+					set_cosmetic_tag = UPC_3
                     add_state_core = 884
                     add_state_core = 615
                     add_state_core = 883
@@ -1330,6 +1331,76 @@ country_event = {#中国广州政府宣布北伐
                     add_state_core = 760
                     add_state_core = 287
                     add_state_core = 322
+					if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 917
+                            }
+                        }
+						UPC = {
+                            add_state_core = 917
+                            transfer_state = 917
+                        }
+                    }
+                    if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 586
+                            }
+                        }
+                        UPC = {
+                            add_state_core = 586
+                            transfer_state = 586
+            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 918
+                            }
+                        }
+                        UPC = {
+                            add_state_core = 918
+                            transfer_state = 918
+                        }
+                    }
+                    if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 654
+                            }
+                        }
+                        UPC = {
+                            add_state_core = 654
+                            transfer_state = 654
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 916
+                            }
+                        }
+                        UPC = {
+                            add_state_core = 916
+                            transfer_state = 916
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            UPC = {
+                                controls_state = 920
+                            }
+                        }
+                        UPC = {
+                            add_state_core = 920
+                            transfer_state = 920
+                            
+                        }
+                    }
             }
             name= UPC.104.a
             news_event = {id=AOR_news.118}

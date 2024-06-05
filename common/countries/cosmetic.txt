@@ -960,6 +960,14 @@ KMT_3 = {
 	color = rgb { 56 141 187 }
 	color_ui = rgb { 56 141 187 }
 }
+KMT_4 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+KMT_5 = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
 DCD_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
@@ -967,6 +975,10 @@ DCD_1 = {
 DCD_2 = {
 	color = rgb { 111 107 107 }
 	color_ui = rgb { 111 107 107 }
+}
+JIZ = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 MON_WEST = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
@@ -1015,4 +1027,8 @@ MZB_POR = {
 ANG_POR ={
 	color = rgb { 39 116 70 }
 	color_ui = rgb { 51 151 91 }
+}
+US2_1 ={
+	color = rgb { 45 97 140 }
+	color_ui = rgb { 45 97 140 }
 }

@@ -816,6 +816,29 @@ on_actions = {
 						target = MEN 
 						transfer_troops = yes
 					}
+					add_state_core = 876
+					add_state_core = 756
+					add_state_core = 600
+					add_state_core = 612
+					add_state_core = 899
+					add_state_core = 897
+					add_state_core = 898
+					add_state_core = 595
+					add_state_core = 895
+					add_state_core = 894
+					add_state_core = 892
+					add_state_core = 596
+					add_state_core = 613
+					add_state_core = 882
+					add_state_core = 893
+					add_state_core = 749
+					add_state_core = 606
+					add_state_core = 620
+					add_state_core = 888
+					add_state_core = 905
+					add_state_core = 744
+					add_state_core = 896
+					add_state_core = 622
 				}
 			}
 			else_if = {
@@ -878,6 +901,29 @@ on_actions = {
 						target = MEN 
 						transfer_troops = yes
 					}
+					add_state_core = 876
+					add_state_core = 756
+					add_state_core = 600
+					add_state_core = 612
+					add_state_core = 899
+					add_state_core = 897
+					add_state_core = 898
+					add_state_core = 595
+					add_state_core = 895
+					add_state_core = 894
+					add_state_core = 892
+					add_state_core = 596
+					add_state_core = 613
+					add_state_core = 882
+					add_state_core = 893
+					add_state_core = 749
+					add_state_core = 606
+					add_state_core = 620
+					add_state_core = 888
+					add_state_core = 905
+					add_state_core = 744
+					add_state_core = 896
+					add_state_core = 622
 				}
 			}
 			else_if = {
@@ -1001,6 +1047,29 @@ on_actions = {
 						target = MEN 
 						transfer_troops = yes
 					}
+					add_state_core = 876
+					add_state_core = 756
+					add_state_core = 600
+					add_state_core = 612
+					add_state_core = 899
+					add_state_core = 897
+					add_state_core = 898
+					add_state_core = 595
+					add_state_core = 895
+					add_state_core = 894
+					add_state_core = 892
+					add_state_core = 596
+					add_state_core = 613
+					add_state_core = 882
+					add_state_core = 893
+					add_state_core = 749
+					add_state_core = 606
+					add_state_core = 620
+					add_state_core = 888
+					add_state_core = 905
+					add_state_core = 744
+					add_state_core = 896
+					add_state_core = 622
 				}
 			}
 			else_if = {
@@ -1063,6 +1132,29 @@ on_actions = {
 						target = MEN 
 						transfer_troops = yes
 					}
+					add_state_core = 876
+					add_state_core = 756
+					add_state_core = 600
+					add_state_core = 612
+					add_state_core = 899
+					add_state_core = 897
+					add_state_core = 898
+					add_state_core = 595
+					add_state_core = 895
+					add_state_core = 894
+					add_state_core = 892
+					add_state_core = 596
+					add_state_core = 613
+					add_state_core = 882
+					add_state_core = 893
+					add_state_core = 749
+					add_state_core = 606
+					add_state_core = 620
+					add_state_core = 888
+					add_state_core = 905
+					add_state_core = 744
+					add_state_core = 896
+					add_state_core = 622
 				}
 			}
 			else_if = {
@@ -1394,6 +1486,53 @@ on_actions = {
 					}
 				}
 			}
+			#昆明政府——东川
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = DCD
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =DCD
+					}
+					add_state_core = 906
+					add_state_core = 908
+					add_state_core = 753
+					add_state_core = 751
+					add_state_core = 434
+					add_state_core = 605
+				}
+			}
+			#广州政府——东川
+			else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = DCD
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =UPC
+					}
+					add_state_core = 906
+					add_state_core = 908
+					add_state_core = 753
+					add_state_core = 751
+					add_state_core = 434
+					add_state_core = 605
+				}
+			}
+
 			#南京政府——四川工农
 			else_if = {
 				limit = {
@@ -1460,6 +1599,24 @@ on_actions = {
 					annex_country = {
 						target =JLD
 					}
+				}
+			}
+			#昆明政府——云贵
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+					}
+					ROOT = {
+						original_tag = JIN
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =JIN
+					}
+					set_cosmetic_tag = KMT_5
 				}
 			}
 		}

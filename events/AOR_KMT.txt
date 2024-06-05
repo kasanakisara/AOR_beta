@@ -1,10 +1,90 @@
 add_namespace = KMT
 
-country_event = {#昆明政府统一南方
-	id = KMT.1 
+country_event = {#昆明政府政变
+	id = KMT.1
 	title = KMT.1.t
 	desc = KMT.1.d
 	picture = GFX_KMT_event_1
+	trigger = {
+		date > 1920.8.31
+		tag = KMT
+	}
+	fire_only_once = yes
+	immediate = {
+        hidden_effect = {
+            #JIN = {
+                #transfer_state = 325
+                #transfer_state = 603
+                #transfer_state = 907
+                #transfer_state = 748
+    
+                #add_state_core = 325
+                #add_state_core = 603
+                #add_state_core = 907
+                #add_state_core = 748
+                #714={set_demilitarized_zone=yes}
+            #}
+            KMT = {
+                325={set_demilitarized_zone=yes}
+                603={set_demilitarized_zone=yes}
+                748={set_demilitarized_zone=yes}
+                907={set_demilitarized_zone=yes}
+                750={set_demilitarized_zone=yes}
+            }
+        }
+	}
+	option = {
+		name = KMT.1.a
+        news_event = {id=AOR_news.131}
+        KMT = {
+            set_cosmetic_tag = KMT_4
+            add_popularity = { ideology = FRE_democratic popularity = 0.1 }
+            add_popularity = { ideology = CON_democratic popularity = 0.1 }
+            add_popularity = { ideology = SOC_democratic popularity = 0.1 }
+        }
+	}
+}
+
+country_event = {#云贵内战
+	id = KMT.2
+	title = KMT.2.t
+	desc =  KMT.2.d
+	picture = GFX_KMT_event_2
+	trigger = {
+		date > 1921.12.05
+		tag = KMT
+	}
+	fire_only_once = yes
+	immediate = {
+        hidden_effect = {
+            KMT = {
+                325={set_demilitarized_zone=NO}
+                603={set_demilitarized_zone=NO}
+                748={set_demilitarized_zone=NO}
+                907={set_demilitarized_zone=NO}
+                750={set_demilitarized_zone=NO}
+            }
+            #JIN = {
+                #declare_war_on = { 
+                    #target = KMT
+                    #type = civil_war
+                #} 
+            #}
+        }
+	}
+	option = {
+		name = KMT.1.a
+        KMT = {
+        set_cosmetic_tag = KMT_5
+        }
+	}
+}
+
+country_event = {#昆明政府统一南方
+	id = KMT.3 
+	title = KMT.3.t
+	desc = KMT.3.d
+	picture = GFX_KMT_event_3
 	fire_only_once = yes
 	trigger = {
 		tag = KMT
@@ -29,10 +109,13 @@ country_event = {#昆明政府统一南方
 
 
     option = {
-		name = KMT.1.a
+		name = KMT.3.a
 		news_event = {id=AOR_news.106}
-        country_event = { days = 90  id = KMT.2 }
+        country_event = { days = 90  id = KMT.4 }
 		KMT = {
+            add_popularity = { ideology = FRE_democratic popularity = 0.1 }
+            add_popularity = { ideology = CON_democratic popularity = 0.1 }
+            add_popularity = { ideology = SOC_democratic popularity = 0.3 }
             add_state_core = 901
             add_state_core = 593
             add_state_core = 592
@@ -52,10 +135,10 @@ country_event = {#昆明政府统一南方
 }
 
     country_event = {
-        id = KMT.2 #中国昆明政府宣布北伐
-        title = KMT.2.t
-        desc = KMT.2.d
-        picture = GFX_KMT_event_2
+        id = KMT.4 #中国昆明政府宣布北伐
+        title = KMT.4.t
+        desc = KMT.4.d
+        picture = GFX_KMT_event_4
         is_triggered_only = yes
         fire_only_once = yes
 
@@ -63,6 +146,8 @@ country_event = {#昆明政府统一南方
             hidden_effect = {
                 KMT = {
                 set_cosmetic_tag = KMT_2
+                load_oob = "AOR_LAND_CHI_KMT"
+                load_oob = "AOR_LAND_CHI_KMT"
                 load_oob = "AOR_LAND_CHI_KMT"
                 declare_war_on = { 
                     target = NAN
@@ -77,18 +162,32 @@ country_event = {#昆明政府统一南方
     }
 
         option = {
-            name=KMT.2.a
+            name=KMT.4.a
             set_capital = { state = 592 }
             country_event = { days = 90  id = MEN.1 }
+            country_event = { days = 180  id = DCD.2 }
             news_event = {id=AOR_news.108}
+            KMT = {
+            set_politics = {ruling_party = SOC_democratic}
+            add_popularity = { ideology = SOC_democratic popularity = 0.2 }
+            create_country_leader = {
+                name = "Sun_zhong_shan"
+                desc = "POLITICS_MON_DESC"
+                picture = "gfx/leaders/KMT/sun.dds"
+                expire = "1965.1.1"
+                ideology = newdemism
+                traits = {
+                    }
+                }
             }
         }
+    }
 
         country_event = {#国民革命政府统一南北
-        id = KMT.3 
-        title = KMT.3.t
-        desc = KMT.3.d
-        picture = GFX_KMT_event_3
+        id = KMT.5 
+        title = KMT.5.t
+        desc = KMT.5.d
+        picture = GFX_KMT_event_5
         fire_only_once = yes
         trigger = {
             tag = KMT
@@ -138,9 +237,10 @@ country_event = {#昆明政府统一南方
     
     
         option = {
-            name = KMT.3.a
+            name = KMT.5.a
             news_event = {id=AOR_news.113}
             country_event = { days = 90  id = CHI.37 }
+            set_capital = { state = 893 }
             KMT = {
                 add_state_core = 876
                 add_state_core = 612
@@ -186,10 +286,10 @@ country_event = {#昆明政府统一南方
     }
 
     country_event = {
-        id = KMT.4 #国民革命政府统一全国
-        title = KMT.4.t
-        desc = KMT.4.d
-        picture = GFX_KMT_event_4
+        id = KMT.6 #国民革命政府统一全国
+        title = KMT.6.t
+        desc = KMT.6.d
+        picture = GFX_KMT_event_6
         fire_only_once = yes
         trigger = {
             tag = KMT
@@ -217,8 +317,8 @@ country_event = {#昆明政府统一南方
                 } 
             }
         option = {
-                set_cosmetic_tag = KMT_3
                 KMT = {
+                    set_cosmetic_tag = KMT_3
                     add_state_core = 884
                     add_state_core = 615
                     add_state_core = 883
@@ -238,8 +338,78 @@ country_event = {#昆明政府统一南方
                     add_state_core = 760
                     add_state_core = 287
                     add_state_core = 322
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 917
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 917
+                            transfer_state = 917
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 586
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 586
+                            transfer_state = 586
+            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 918
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 918
+                            transfer_state = 918
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 654
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 654
+                            transfer_state = 654
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 916
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 916
+                            transfer_state = 916
+                            
+                        }
+                    }
+                    if = {
+                        limit ={
+                            KMT = {
+                                controls_state = 920
+                            }
+                        }
+                        KMT = {
+                            add_state_core = 920
+                            transfer_state = 920
+                            
+                        }
+                    }
             }
-            name=KMT.4.a
+            name=KMT.6.a
             news_event = {id=AOR_news.117}
             }
         }

@@ -108,19 +108,26 @@ country_event = {
 		}
 	}
 }
-#庚申新年
+
+#庚申新年（现改为三卅运动）
 country_event = {
 	id = CHI.5
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
+	trigger = {
+		date > 1920.3.25
+		tag = CHI
+	}
+	fire_only_once = yes
 	immediate = {
 	}
 	option = {
 		name = CHI.5.a
+		news_event = {id=AOR_news.129}
 	}
 }
+
 #国会事件
 country_event = {
 	id = CHI.6
@@ -1096,18 +1103,24 @@ country_event = {
 	id = CHI.37
 	title = CHI.37.t
 	desc = CHI.37.d
-	picture = GFX_AOR_chi_yimoxizheng	
+	picture = GFX_AOR_chi_yimoxizheng
+	trigger = {
+		tag = KMT
+		tag = UPC
+		tag = NAN
+		tag = MON
+		tag = MAN
+	}		
 	fire_only_once = yes
-	is_triggered_only = yes
 	option = {
 		name = CHI.37.a
 		CHI_civil_war_7 = yes
 		country_event = { days = 120  id =CHI.38 }
 		}
-	option = {
-		name = CHI.37.b
-		country_event = { days = 120  id =CHI.38 }
-		}
+	#option = {
+		#name = CHI.37.b
+		#country_event = { days = 120  id =CHI.38 }
+		#}
 	}
 
 country_event = {
@@ -1116,17 +1129,23 @@ country_event = {
 	title = CHI.38.t
 	desc = CHI.38.d
 	picture = GFX_AOR_chi_yimoxizheng	
+	trigger = {
+		tag = KMT
+		tag = UPC
+		tag = NAN
+		tag = MON
+		tag = MAN
+	}	
 	fire_only_once = yes
-	is_triggered_only = yes
 	option = {
 		CHI_civil_war_8 = yes
 		name = CHI.38.a
 		country_event = { days = 120  id =CHI.39 }
 		}
-	option = {
-		name = CHI.38.b
-		country_event = { days = 120  id =CHI.39 }
-		}
+	#option = {
+		#name = CHI.38.b
+		#country_event = { days = 120  id =CHI.39 }
+		#}
 	}
 
 	country_event = {
@@ -1135,15 +1154,21 @@ country_event = {
 		title = CHI.39.t
 		desc = CHI.39.d
 		picture = GFX_AOR_chi_yimoxizheng	
+		trigger = {
+			tag = KMT
+			tag = UPC
+			tag = NAN
+			tag = MON
+			tag = MAN
+		}	
 		fire_only_once = yes
-		is_triggered_only = yes
 		option = {
 			CHI_civil_war_9 = yes
 			name = CHI.39.a
 			}
-		option = {
-			name = CHI.39.b
-			}
+		#option = {
+			#name = CHI.39.b
+			#}
 		}
 
 		country_event = { #南京政府统一全中国！
@@ -1293,6 +1318,26 @@ country_event = {
 			news_event = {id=AOR_news.119}
 			}
 		}
+
+#重庆英舰事件
+country_event = {
+	id = CHI.42
+	title = CHI.42.t
+	desc = CHI.42.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1920.7.10
+		tag = CHI
+	}
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = CHI.42.a
+		news_event = {id=AOR_news.130}
+		add_manpower = -500
+	}
+}
 
 #还我军事区
 country_event = {

@@ -1092,14 +1092,12 @@ USA_civil_war_west = {
 
 USA_civil_war_west_1 = {
 	USA = {
-		declare_war_on = {
+		annex_country = {
 			target = US1
-			type = civil_war
-			}
-		declare_war_on = {
+		    }
+		annex_country = {
 			target = US2
-			type = civil_war
-			}
+		    }
 		declare_war_on = {
 			target = US3
 			type = civil_war
@@ -1126,10 +1124,9 @@ USA_civil_war_west_1 = {
 			}
 		}
 	CSA = {
-		declare_war_on = {
+		annex_country = {
 			target = US1
-			type = civil_war
-			}
+		    }
 		declare_war_on = {
 			target = US2
 			type = civil_war
@@ -1160,3 +1157,41 @@ USA_civil_war_west_1 = {
 			}
 		}
 	}
+
+USA_civil_war_east = {
+	USU = {
+		load_oob = "USU_Civilwar"
+			transfer_state = 396
+			transfer_state = 816
+			transfer_state = 369
+			transfer_state = 367
+			transfer_state = 370
+
+			add_state_core = 396
+			add_state_core = 816
+			add_state_core = 369
+			add_state_core = 367
+			add_state_core = 370
+		}
+	CSA = {
+		load_oob = "CSA_Civilwar_2"
+		load_oob = "CSA_Civilwar_2"
+		load_oob = "CSA_Civilwar_2"
+			transfer_state = 363
+			transfer_state = 364
+			transfer_state = 365
+			transfer_state = 366
+			transfer_state = 371
+			transfer_state = 375
+			transfer_state = 932
+	
+			add_state_core = 363
+			add_state_core = 364
+			add_state_core = 365
+			add_state_core = 366
+			add_state_core = 371
+			add_state_core = 375
+			add_state_core = 932
+		}
+	}
+
