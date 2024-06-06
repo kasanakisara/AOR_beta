@@ -55,6 +55,9 @@ country_event = {
                 target = UPC
                 type = civil_war
             }
+            create_faction = Beiyang_Union
+            add_to_faction = NAN
+            white_peace = NAN
         }
     }
 }
