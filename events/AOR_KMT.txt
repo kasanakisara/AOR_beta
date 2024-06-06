@@ -25,6 +25,15 @@ country_event = {#昆明政府政变
                 #714={set_demilitarized_zone=yes}
             #}
             KMT = {
+                create_country_leader = {
+                    name = "Cai_e"
+                    desc = "POLITICS_MON_DESC"
+                    picture = "gfx/leaders/KMT/Cai_e.png"
+                    expire = "1965.1.1"
+                    ideology = liberalism
+                    traits = {
+                    }
+                }
                 325={set_demilitarized_zone=yes}
                 603={set_demilitarized_zone=yes}
                 748={set_demilitarized_zone=yes}
@@ -58,6 +67,15 @@ country_event = {#云贵内战
 	immediate = {
         hidden_effect = {
             KMT = {
+                create_country_leader = {
+                    name = "Sun_zhong_shan"
+                    desc = "POLITICS_MON_DESC"
+                    picture = "gfx/leaders/KMT/sun.dds"
+                    expire = "1965.1.1"
+                    ideology = sanminism
+                    traits = {
+                    }
+                }
                 325={set_demilitarized_zone=NO}
                 603={set_demilitarized_zone=NO}
                 748={set_demilitarized_zone=NO}

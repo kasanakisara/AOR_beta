@@ -1117,11 +1117,79 @@ country_event = {
 		CHI_civil_war_7 = yes
 		country_event = { days = 120  id =CHI.38 }
 		}
-	#option = {
-		#name = CHI.37.b
-		#country_event = { days = 120  id =CHI.38 }
-		#}
+	option = {
+		name = CHI.37.b
+		country_event = { days = 120  id =CHI.38 }
+		if = {
+			limit ={
+				NAN = {
+					controls_state = 525
+				}
+			}
+			NAN = {
+			annex_country = { 
+				target = SHX 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = MEN 
+				transfer_troops = no 
+			}
+		}
+	}  
+	    if = {
+		    limit ={
+			    MON = {
+				    controls_state = 525
+			    }
+		    }
+		    MON = {
+		    annex_country = { 
+			    target = SHX 
+			    transfer_troops = no 
+		    }
+		    annex_country = { 
+			    target = MEN 
+			    transfer_troops = no 
+		    }
+	    }
+    }
+	    if = {
+		    limit ={
+			    KMT = {
+				    controls_state = 525
+			    }
+		    }
+		    KMT = {
+		    annex_country = { 
+			    target = SHX 
+			    transfer_troops = no 
+		    }
+		    annex_country = { 
+			    target = MEN 
+			    transfer_troops = no 
+		    }
+	    }
+    }       
+        if = {
+	        limit ={
+		        UPC = {
+			        controls_state = 525
+		    }
+	    }
+		    UPC = {
+	        annex_country = { 
+		        target = SHX 
+		        transfer_troops = no 
+	    }
+	        annex_country = { 
+		        target = MEN 
+		        transfer_troops = no 
+	        }
+        }
+    }
 	}
+}
 
 country_event = {
 	# 对西北军阀的最后通牒
@@ -1142,10 +1210,94 @@ country_event = {
 		name = CHI.38.a
 		country_event = { days = 120  id =CHI.39 }
 		}
-	#option = {
-		#name = CHI.38.b
-		#country_event = { days = 120  id =CHI.39 }
-		#}
+	option = {
+		name = CHI.38.b
+		country_event = { days = 120  id =CHI.39 }
+		if = {
+			limit ={
+				NAN = {
+					controls_state = 525
+				}
+			}
+			NAN = {
+			annex_country = { 
+				target = XSM
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = QIN 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = SIK 
+				transfer_troops = no 
+			}
+		}
+	}  
+	    if = {
+		    limit ={
+			    MON = {
+				    controls_state = 525
+			    }
+		    }
+		    MON = {
+			annex_country = { 
+				target = XSM
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = QIN 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = SIK 
+				transfer_troops = no 
+			}
+	    }
+    }
+	    if = {
+		    limit ={
+			    KMT = {
+				    controls_state = 525
+			    }
+		    }
+		    KMT = {
+			annex_country = { 
+				target = XSM
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = QIN 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = SIK 
+				transfer_troops = no 
+			}
+	    }
+    }       
+        if = {
+	        limit ={
+		        UPC = {
+			        controls_state = 525
+		    }
+	    }
+		    UPC = {
+	        annex_country = { 
+		        target = XSM
+		        transfer_troops = no 
+	    }
+	        annex_country = { 
+		        target = QIN 
+		        transfer_troops = no 
+	        }
+			annex_country = { 
+				target = SIK 
+				transfer_troops = no 
+			}
+        }
+    }
+		}
 	}
 
 	country_event = {
@@ -1166,9 +1318,10 @@ country_event = {
 			CHI_civil_war_9 = yes
 			name = CHI.39.a
 			}
-		#option = {
-			#name = CHI.39.b
-			#}
+		option = {
+			name = CHI.39.b
+			CHI_civil_war_9 = yes
+			}
 		}
 
 		country_event = { #南京政府统一全中国！
