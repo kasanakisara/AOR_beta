@@ -102,4 +102,8 @@ spriteTypes = {
 		name = "GFX_idea_CHI_yunguixiongshi"
 		texturefile = "gfx/interface/ideas/idea_CHI_yunguixiongshi.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CHI_gemintongyizhixi"
+		texturefile = "gfx/interface/ideas/idea_CHI_gemintongyizhixi.dds"
+	}
 }

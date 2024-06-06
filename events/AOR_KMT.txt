@@ -186,6 +186,7 @@ country_event = {#昆明政府统一南方
             country_event = { days = 180  id = DCD.2 }
             news_event = {id=AOR_news.108}
             KMT = {
+            add_ideas = CHI_gemintongyizhixi
             set_politics = {ruling_party = SOC_democratic}
             add_popularity = { ideology = SOC_democratic popularity = 0.2 }
             create_country_leader = {

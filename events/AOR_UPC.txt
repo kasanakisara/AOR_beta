@@ -1174,8 +1174,11 @@ country_event = {#中国广州政府宣布北伐
 		 country_event = { days = 90  id = MEN.2 }
 		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
-         }
-     }
+		 UPC = {
+			add_ideas = CHI_gemintongyizhixi
+		 }
+    }
+}
 
         country_event = {#广州政府统一南北
         id = UPC.103 

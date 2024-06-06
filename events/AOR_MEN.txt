@@ -26,6 +26,9 @@ country_event = {#冯玉祥支持共和(昆明)
     option = {
 		name = MEN.1.a
         news_event = {id=AOR_news.127}
+        MEN = {
+            add_ideas = CHI_gemintongyizhixi
+        }
         KMT = {
             create_faction = kmt_mingzhu_Union
             add_to_faction = MEN
@@ -60,6 +63,9 @@ country_event = {#冯玉祥支持共和(广州)
     option = {
 		name = MEN.2.a
         news_event = {id=AOR_news.128}
+        MEN = {
+            add_ideas = CHI_gemintongyizhixi
+        }
         UPC = {
             create_faction = upc_mingzhu_Union
             add_to_faction = MEN
