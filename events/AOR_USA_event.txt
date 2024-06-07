@@ -387,6 +387,7 @@ country_event = {
 		tag = USA
 	}
 	fire_only_once = yes
+	immediate = {
 	hidden_effect = {
 		386 = { set_demilitarized_zone = yes }
 		385 = { set_demilitarized_zone = yes }
@@ -402,6 +403,7 @@ country_event = {
 		382 = { set_demilitarized_zone = yes }
 		384 = { set_demilitarized_zone = yes }
 	}
+}
 
       
 	option = {
@@ -1388,6 +1390,18 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10023.a
+		hidden_effect = {
+		create_country_leader = {
+			name = "Thomas_Woodrow_Wilson"
+			desc = "Thomas_Woodrow_Wilson_desc"
+			picture = "gfx/leaders/USA/Thomas_Woodrow_Wilson.png"
+			expire = "1953.3.1"
+			ideology = USA_federalism
+			traits = {
+				
+			    }
+		    }
+		}
 	}	
 }
 country_event = {

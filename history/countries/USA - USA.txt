@@ -101,6 +101,17 @@ set_popularities = {
 create_country_leader = {
 	name = "Thomas_Woodrow_Wilson"
 	desc = "Thomas_Woodrow_Wilson_desc"
+	picture = "gfx/leaders/USA/Thomas_Woodrow_Wilson.png"
+	expire = "1953.3.1"
+	ideology = USA_federalism
+	traits = {
+		
+	}
+
+}
+create_country_leader = {
+	name = "Thomas_Woodrow_Wilson"
+	desc = "Thomas_Woodrow_Wilson_desc"
 	picture = "axm7x-nkh4s.dds"
 	expire = "1953.3.1"
 	ideology = USA_federalism
@@ -109,6 +120,17 @@ create_country_leader = {
 	}
 
 }
+#create_country_leader = {
+	#name = "Warren_Gamaliel_Harding"
+	#desc = "Warren_Gamaliel_Harding_desc"
+	#picture = "gfx/leaders/USA/Harding.png"
+	#expire = "1945.1.1"
+	#ideology = USA_federalism
+	#traits = {
+		
+	#}
+	
+#}
 create_country_leader = {
 	name = "John Nance Garner III"
 	desc = ""
