@@ -1118,12 +1118,12 @@ country_event = {
 	option = {
 		name = CHI.37.a
 		CHI_civil_war_7 = yes
-		country_event = { days = 120  id =CHI.38 }
+		country_event = { days = 90  id =CHI.38 }
 		}
 	option = {
 		CHI_civil_war_7 = yes
 		name = CHI.37.b
-		country_event = { days = 120  id =CHI.38 }
+		country_event = { days = 90  id =CHI.38 }
 		if = {
 			limit ={
 				NAN = {
@@ -1212,12 +1212,12 @@ country_event = {
 	option = {
 		CHI_civil_war_8 = yes
 		name = CHI.38.a
-		country_event = { days = 120  id =CHI.39 }
+		country_event = { days = 90  id =CHI.39 }
 		}
 	option = {
 		CHI_civil_war_8 = yes
 		name = CHI.38.b
-		country_event = { days = 120  id =CHI.39 }
+		country_event = { days = 90  id =CHI.39 }
 		if = {
 			limit ={
 				NAN = {
