@@ -461,15 +461,6 @@ focus_tree = {
 		x = 9
 		y = 8
 		completion_reward = {
-			hidden_effect = {
-				remove_ideas = A_lingering_alliance
-				remove_ideas = SWE_Liberte_Spirit
-				remove_ideas = SWE_All_People_are_King
-				remove_ideas = SWE_Beyond_Nation
-				remove_ideas = SWE_Eighty_Seventh_Orders
-				remove_ideas = SWE_Antisocialistisk_Speciallagen
-				add_ideas = SWE_The_Union_Dream
-			}
 			country_event = { id = SWE.17 }
 			custom_effect_tooltip = SWE_Viva_la_Union_tt
 			clr_country_flag = SWE_GUI_1

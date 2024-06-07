@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+# Ο Αργαλειός του Πεπρωμένου
+
+### 挪威独立运动 ###
  SWE_Norweign_Independence_decision_categories:0 "挪威独立运动"
  SWE_Norweign_Independence_decision_categories_desc:0 "早在联邦建立之初，挪威人就一直在寻求独立，从联邦的怀抱中脱离。最近的苏俄革命和世界大战后的“新秩序”使得§R左翼分子§!同样蠢蠢欲动。如今，为了联邦的稳定，我们有必要开始镇压这一运动了。"
  SWE_Norweign_Independence_text:0 "目前§R挪威独立运动§!发展程度：§R[?SWE_Norweign_Independence_value]§!"
@@ -8,7 +11,15 @@
  SWE_modifier_down_localisation:0 "§G挪威独立运动每日增长将减少§!" 
  SWE_Norweign_Independence_add_localisation:0 "§R将增加挪威独立运动发展度§!"
  SWE_Norweign_Independence_effect_localisation:0 "§G将减少挪威独立运动发展度§!"
- SWE_Union_gui_title_text:0 "§C联邦一梦，千年一系······§!"
+
+### 联邦化 ###
+ SWE_Union_decision_categories:0 "联邦一梦"
+ SWE_Union_title:0 "§Q诺恩们纺织命运，\n兀尔德纺纱，维尔丹蒂织网，而斯寇蒂将一切撕碎。§!"
+ SWE_Union_num:0 "当前联邦化进程进度：§R[?SWE_Union_progress_value]§!"
+ 
  SWE_Union_GUI_Enable_tt:0 "§C联邦化系统将启用。§!"
- SWE_Union_gui_progress_text:0 "当前联邦化进度：§Q[?SWE_Union_progress_value]§!\n当前联邦化阶段：§N[?SWE_Union_progress_stage]§!"
+ SWE_Union_enable_quote: "[SWE_Union_quote]"
+
+ SWE_Union_quote_1: "§Y时针正指向I时。\n知识和文化的圣光刺穿乌云，黎明穿透千年黑暗，世界得以复兴。§!"
+ SWE_Union_quote_2: "§Y时针正指向II时。\n当哥伦布在清晨醒来，新大陆的曙光照耀在船头，我们第一次看见未来。§!"
  

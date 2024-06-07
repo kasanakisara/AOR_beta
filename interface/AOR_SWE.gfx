@@ -59,12 +59,6 @@ spriteTypes = {
 }
 
 #联邦化GUI
-spriteTypes = {
-	spriteType = {
-		name = "GFX_Union_GUI_Openbottom"
-		texturefile = "gfx/AOR_gui/SWE/SWE_Union_GUI_openbottom.png"
-	}
-}
 
 spriteTypes = {
 	spriteType = {
@@ -76,10 +70,10 @@ spriteTypes = {
 spriteTypes = {
 	progressbartype = {
 		name = "GFX_Union_GUI_progressbar"
-		textureFile1 = "gfx/AOR_gui/SWE/SWE_progress_full.png"
-		textureFile2 = "gfx/AOR_gui/SWE/SWE_progress_empty.png"
-		size = { x = 568 y = 156 }
+		textureFile1 = "gfx/AOR_gui/SWE/SWE.png"
+		textureFile2 = "gfx/AOR_gui/SWE/SWE_null.png"
+		size = { x = 470 y = 43 }
 		effectFile = "gfx/FX/progress.lua"
-		horizontal = no
+		horizontal = yes
 	}
 }
