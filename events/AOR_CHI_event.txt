@@ -880,6 +880,9 @@ country_event = {
 	option = {
 		name = CHI.32.a
 		news_event = {id=AOR_news.102}
+		KMT = {
+			add_ideas = CHI_gemintongyizhixi
+		}
 	}	
 }
 
