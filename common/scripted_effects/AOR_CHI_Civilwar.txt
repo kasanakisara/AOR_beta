@@ -671,6 +671,292 @@ CHI_civil_war_9 = {
 	}
 }
 
+CHI_civil_war_10 = {
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 917
+			}
+		}
+		KMT = {
+			add_state_core = 917
+			transfer_state = 917
+		}
+	}
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 586
+			}
+		}
+		KMT = {
+			add_state_core = 586
+			transfer_state = 586
+
+		}
+	}
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 918
+			}
+		}
+		KMT = {
+			add_state_core = 918
+			transfer_state = 918
+		}
+	}
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 654
+			}
+		}
+		KMT = {
+			add_state_core = 654
+			transfer_state = 654
+			
+		}
+	}
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 916
+			}
+		}
+		KMT = {
+			add_state_core = 916
+			transfer_state = 916
+			
+		}
+	}
+	if = {
+		limit ={
+			KMT = {
+				owns_state = 920
+			}
+		}
+		KMT = {
+			add_state_core = 920
+			transfer_state = 920
+			
+		}
+	}
+ #NAN
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 917
+			}
+		}
+		NAN = {
+			add_state_core = 917
+			transfer_state = 917
+		}
+	}
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 586
+			}
+		}
+		NAN = {
+			add_state_core = 586
+			transfer_state = 586
+
+		}
+	}
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 918
+			}
+		}
+		NAN = {
+			add_state_core = 918
+			transfer_state = 918
+		}
+	}
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 654
+			}
+		}
+		NAN = {
+			add_state_core = 654
+			transfer_state = 654
+			
+		}
+	}
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 916
+			}
+		}
+		NAN = {
+			add_state_core = 916
+			transfer_state = 916
+			
+		}
+	}
+	if = {
+		limit ={
+			NAN = {
+				owns_state = 920
+			}
+		}
+		NAN = {
+			add_state_core = 920
+			transfer_state = 920
+			
+		}
+	}
+ #MON
+	if = {
+		limit ={
+			MON = {
+				owns_state = 917
+			}
+		}
+		MON = {
+			add_state_core = 917
+			transfer_state = 917
+		}
+	}
+	if = {
+		limit ={
+			MON = {
+				owns_state = 586
+			}
+		}
+		MON = {
+			add_state_core = 586
+			transfer_state = 586
+
+		}
+	}
+	if = {
+		limit ={
+			MON = {
+				owns_state = 918
+			}
+		}
+		MON = {
+			add_state_core = 918
+			transfer_state = 918
+		}
+	}
+	if = {
+		limit ={
+			MON = {
+				owns_state = 654
+			}
+		}
+		MON = {
+			add_state_core = 654
+			transfer_state = 654
+			
+		}
+	}
+	if = {
+		limit ={
+			MON = {
+				owns_state = 916
+			}
+		}
+		MON = {
+			add_state_core = 916
+			transfer_state = 916
+			
+		}
+	}
+	if = {
+		limit ={
+			MON = {
+				owns_state = 920
+			}
+		}
+		MON = {
+			add_state_core = 920
+			transfer_state = 920
+			
+		}
+	}
+ #UPC
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 917
+			}
+		}
+		UPC = {
+			add_state_core = 917
+			transfer_state = 917
+		}
+	}
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 586
+			}
+		}
+		UPC = {
+			add_state_core = 586
+			transfer_state = 586
+
+		}
+	}
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 918
+			}
+		}
+		UPC = {
+			add_state_core = 918
+			transfer_state = 918
+		}
+	}
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 654
+			}
+		}
+		UPC = {
+			add_state_core = 654
+			transfer_state = 654
+			
+		}
+	}
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 916
+			}
+		}
+		UPC = {
+			add_state_core = 916
+			transfer_state = 916
+			
+		}
+	}
+	if = {
+		limit ={
+			UPC = {
+				owns_state = 920
+			}
+		}
+		UPC = {
+			add_state_core = 920
+			transfer_state = 920
+			
+		}
+	}
+}
+
 #还我军事区！
 CHI_civilwar_6 = {
 	714={set_demilitarized_zone =no}

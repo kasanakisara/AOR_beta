@@ -1434,6 +1434,40 @@ on_actions = {
 					}
 				}
 			}
+			 #昆明政府——新疆
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = KMT
+						}
+					ROOT = {
+						original_tag = SIK
+					}
+				}
+				KMT = {
+					annex_country = {
+						target =SIK
+					}
+				}
+			}
+			 #广州政府——新疆
+			 else_if = {
+				limit = {
+					#广州政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+						original_tag = SIK
+					}
+				}
+				UPC = {
+					annex_country = {
+						target =SIK
+					}
+				}
+			}
 
 			#南京政府——西藏
 			else_if = {
