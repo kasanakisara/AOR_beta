@@ -2039,3 +2039,28 @@ news_event = {#中国云南发生政变！
 	}
 }
 
+news_event = {#中国国民政府占领四川
+	id = AOR_news.132
+	title = AOR_news.132.t
+	desc = AOR_news.132.d
+	picture = GFX_AOR_news.132_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.132.a
+	}
+}
+
+news_event = {#中国广州政府占领四川
+	id = AOR_news.133
+	title = AOR_news.133.t
+	desc = AOR_news.133.d
+	picture = GFX_AOR_news.133_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.133.a
+	}
+}

@@ -521,6 +521,7 @@ on_actions = {
 					transfer_state = 184
 					transfer_state = 731
 					transfer_state = 341
+					transfer_state = 965
 				}
 				GRE = {
 					set_cosmetic_tag = GRE_CON_2
@@ -1498,6 +1499,7 @@ on_actions = {
 					}
 				}
 				KMT = {
+					news_event = {id=AOR_news.132}
 					annex_country = {
 						target =DCD
 					}
@@ -1520,9 +1522,10 @@ on_actions = {
 						original_tag = DCD
 					}
 				}
-				KMT = {
+				UPC = {
+					news_event = {id=AOR_news.133}
 					annex_country = {
-						target =UPC
+						target =DCD
 					}
 					add_state_core = 906
 					add_state_core = 908

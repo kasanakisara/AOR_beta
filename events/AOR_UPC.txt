@@ -1174,8 +1174,11 @@ country_event = {#中国广州政府宣布北伐
 		 country_event = { days = 90  id = MEN.2 }
 		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
-         }
-     }
+		 UPC = {
+			add_ideas = CHI_gemintongyizhixi
+		 }
+    }
+}
 
         country_event = {#广州政府统一南北
         id = UPC.103 
@@ -1186,7 +1189,7 @@ country_event = {#中国广州政府宣布北伐
         trigger = {
             tag = UPC
             date > 1922.12.10
-            KMT = {
+            UPC = {
                 owns_state = 876
                 owns_state = 612
                 owns_state = 756
@@ -1226,6 +1229,19 @@ country_event = {#中国广州政府宣布北伐
                 owns_state = 716
                 owns_state = 875
                 owns_state = 874
+                owns_state = 880
+                owns_state = 757
+                owns_state = 597
+                owns_state = 607
+                owns_state = 877
+                owns_state = 614
+                owns_state = 878
+                owns_state = 608
+                owns_state = 758
+                owns_state = 610
+                owns_state = 621
+                owns_state = 611
+                owns_state = 330
             }
         }
     
@@ -1234,7 +1250,7 @@ country_event = {#中国广州政府宣布北伐
             name = UPC.103.a
             news_event = {id=AOR_news.114}
 			country_event = { days = 90  id = CHI.37 }
-            KMT = {
+            UPC = {
                 add_state_core = 876
                 add_state_core = 612
                 add_state_core = 756
@@ -1274,6 +1290,19 @@ country_event = {#中国广州政府宣布北伐
                 add_state_core = 716
                 add_state_core = 875
                 add_state_core = 874
+                add_state_core = 880
+                add_state_core = 757
+                add_state_core = 597
+                add_state_core = 607
+                add_state_core = 877
+                add_state_core = 614
+                add_state_core = 878
+                add_state_core = 608
+                add_state_core = 758
+                add_state_core = 610
+                add_state_core = 621
+                add_state_core = 611
+                add_state_core = 330
             }
         }
     }

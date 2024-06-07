@@ -38,6 +38,26 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Cai_e"
+	desc = "POLITICS_MON_DESC"
+	picture = "gfx/leaders/KMT/Cai_e.png"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Tang_ji_yao"
+	picture = GFX_portrait_cai_cheng_xun
+	expire = "1965.1.1"
+	ideology = miliciagov
+	traits = { 
+	}
+}
+
 set_politics = {
 	ruling_party = FRE_democratic
 	last_election = "1936.1.1"

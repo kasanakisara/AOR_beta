@@ -25,6 +25,15 @@ country_event = {#昆明政府政变
                 #714={set_demilitarized_zone=yes}
             #}
             KMT = {
+                create_country_leader = {
+                    name = "Cai_e"
+                    desc = "POLITICS_MON_DESC"
+                    picture = "gfx/leaders/KMT/Cai_e.png"
+                    expire = "1965.1.1"
+                    ideology = liberalism
+                    traits = {
+                    }
+                }
                 325={set_demilitarized_zone=yes}
                 603={set_demilitarized_zone=yes}
                 748={set_demilitarized_zone=yes}
@@ -58,6 +67,15 @@ country_event = {#云贵内战
 	immediate = {
         hidden_effect = {
             KMT = {
+                create_country_leader = {
+                    name = "Sun_zhong_shan"
+                    desc = "POLITICS_MON_DESC"
+                    picture = "gfx/leaders/KMT/sun.dds"
+                    expire = "1965.1.1"
+                    ideology = sanminism
+                    traits = {
+                    }
+                }
                 325={set_demilitarized_zone=NO}
                 603={set_demilitarized_zone=NO}
                 748={set_demilitarized_zone=NO}
@@ -232,6 +250,19 @@ country_event = {#昆明政府统一南方
                 owns_state = 716
                 owns_state = 875
                 owns_state = 874
+                owns_state = 880
+                owns_state = 757
+                owns_state = 597
+                owns_state = 607
+                owns_state = 877
+                owns_state = 614
+                owns_state = 878
+                owns_state = 608
+                owns_state = 758
+                owns_state = 610
+                owns_state = 621
+                owns_state = 611
+                owns_state = 330
             }
         }
     
@@ -281,6 +312,19 @@ country_event = {#昆明政府统一南方
                 add_state_core = 716
                 add_state_core = 875
                 add_state_core = 874
+                add_state_core = 880
+                add_state_core = 757
+                add_state_core = 597
+                add_state_core = 607
+                add_state_core = 877
+                add_state_core = 614
+                add_state_core = 878
+                add_state_core = 608
+                add_state_core = 758
+                add_state_core = 610
+                add_state_core = 621
+                add_state_core = 611
+                add_state_core = 330
             }
         }
     }
