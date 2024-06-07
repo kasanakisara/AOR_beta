@@ -76,16 +76,15 @@ recruit_character = DAH_ar
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	FRE_democratic = 77
+	Absolutism = 77
 	CON_democratic = 13
-	Fascism = 3
-	Marxism = 6
+	FRE_democratic = 9
 	ISL_democratic = 1
 }
 

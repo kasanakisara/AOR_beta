@@ -74,16 +74,16 @@ recruit_character = TUN_fascist_guy
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	FRE_democratic = 53
-
-	Marxism = 6
-	ISL_democratic = 41
+	Absolutism = 65
+	ISL_democratic = 20
+	CON_democratic = 10
+	FRE_democratic = 5
 }
 
 
