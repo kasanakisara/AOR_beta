@@ -1121,6 +1121,7 @@ country_event = {
 		country_event = { days = 120  id =CHI.38 }
 		}
 	option = {
+		CHI_civil_war_7 = yes
 		name = CHI.37.b
 		country_event = { days = 120  id =CHI.38 }
 		if = {
@@ -1214,6 +1215,7 @@ country_event = {
 		country_event = { days = 120  id =CHI.39 }
 		}
 	option = {
+		CHI_civil_war_8 = yes
 		name = CHI.38.b
 		country_event = { days = 120  id =CHI.39 }
 		if = {
