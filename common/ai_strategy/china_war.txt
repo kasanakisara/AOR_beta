@@ -1,0 +1,123 @@
+china_KMT_prepare_for_war = {
+
+        allowed = {
+            tag = KMT
+        }
+        enable = {
+            has_country_flag = china_war_begin
+        }
+        abort = {
+            NOT = {
+                has_country_flag = china_war_begin
+            }
+        }
+        abort_when_not_enabled = yes
+        ai_strategy = {
+            type = prepare_for_war
+            id = UPC
+            value = 200
+        }
+
+}
+china_UPC_prepare_for_war = {
+
+    allowed = {
+        tag = UPC
+    }
+    enable = {
+        has_country_flag = china_war_begin
+    }
+    abort = {
+        NOT = {
+            has_country_flag = china_war_begin
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = KMT
+        value = 200
+    }
+
+}
+china_war_ai = {
+    allowed = {
+        always = yes
+    }
+    enable = {
+        has_country_flag = china_war_begin
+        has_war = yes
+    }
+    abort = {
+        NOT = {
+            has_country_flag = china_war_begin
+            has_war = yes
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = front_control
+        state_trigger = {
+            OR = {
+                is_owned_by = KMT
+                is_owned_by = NAN
+                is_owned_by = CHI
+                is_owned_by = UPC
+                is_owned_by = ANH
+                is_owned_by = ZHE
+                is_owned_by = FUJ
+                is_owned_by = JIZ
+                is_owned_by = JIN
+                is_owned_by = DCD
+                is_owned_by = XCD
+                is_owned_by = JLD
+            }
+           
+            
+            }
+            
+        
+        ratio = 0.1
+        ordertype = front
+        execution_type = rush
+        manual_attack = no
+    }
+}
+GRE_war_ai = {
+    allowed = {
+        tag = GRE
+    }
+    enable = {
+        has_country_flag = prepare_war_baergan
+    }
+    abort = {
+        NOT = {
+            has_country_flag = prepare_war_baergan
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = TUR
+        value = 100
+    }
+}
+TUR_war_ai = {
+    allowed = {
+        tag = TUR
+    }
+    enable = {
+        has_country_flag = prepare_war_baergan
+    }
+    abort = {
+        NOT = {
+            has_country_flag = prepare_war_baergan
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = GRE
+        value = 100
+    }
+}
