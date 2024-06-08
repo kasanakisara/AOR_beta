@@ -58,6 +58,9 @@ country_event = {#侵略成功
 		TUR = {NOT = { has_idea = revenge }}
 	}
     #那就这样吧  	
+	immediate = {
+		clr_country_flag = prepare_war_baergan
+	}
 	option = {
 		name = TUR.3.a
 		transfer_state = 797
@@ -91,6 +94,10 @@ country_event = {#自卫成功
 		GRE = {has_idea =  Take_the_initiative_to_attack}
 	}
     #那就这样吧  	
+	
+	immediate = {
+		clr_country_flag = prepare_war_baergan
+	}
 	option = {
 		name = TUR.4.a
 		every_country = {

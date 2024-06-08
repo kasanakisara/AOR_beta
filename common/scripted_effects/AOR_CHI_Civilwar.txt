@@ -5,6 +5,7 @@ CHI_civil_war_1 = {
 	hidden_effect = {
 		complete_national_focus = CHI_Yuan_is_dying
 		CHI = {
+			set_country_flag  = china_war_begin
 			leave_faction = yes
 			set_popularities = {
 					Absolutism = 72
@@ -56,6 +57,7 @@ CHI_civil_war_1 = {
 			id=AOR_news.30
 		}
 		DCD = { #四川军阀
+		set_country_flag  = china_war_begin
     		set_cosmetic_tag = DCD_1
 	       	add_state_core = 605
 	    	add_state_core = 906
@@ -71,6 +73,7 @@ CHI_civil_war_1 = {
 	    	transfer_state = 434
 		}
 		UPC = {
+			set_country_flag  = china_war_begin
 			set_cosmetic_tag = UPC_1
 			add_state_core = 759
 			add_state_core = 593
@@ -105,6 +108,7 @@ CHI_civil_war_1 = {
 			add_manpower = 10000
 		}
 		KMT = {
+			set_country_flag  = china_war_begin
 			set_cosmetic_tag = KMT_1
 			add_state_core = 747
 			add_state_core = 755
@@ -126,6 +130,7 @@ CHI_civil_war_1 = {
 			add_manpower = 10000
 		}
 		NAN = {
+			set_country_flag  = china_war_begin
 			set_cosmetic_tag = NAN_1
 			add_state_core = 893
 			add_state_core = 882
@@ -164,6 +169,7 @@ CHI_civil_war_1 = {
 CHI_civil_war_2 = {
 	hidden_effect = {
 		MON = {
+			set_country_flag  = china_war_begin
 			set_cosmetic_tag = MON_WEST
 			set_popularities = {
 				
@@ -190,6 +196,7 @@ CHI_civil_war_2 = {
 }
 CHI_civil_war_3 = {
 	ANH = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 606
 		add_state_core = 749
 		
@@ -198,6 +205,7 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 	ZHE = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 596
 		add_state_core = 894
 		add_state_core = 895
@@ -210,6 +218,8 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 	FUJ = {
+
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 897
 		add_state_core = 595
 		add_state_core = 898
@@ -222,6 +232,7 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 	JIZ = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 612
 		add_state_core = 756
 		add_state_core = 600
@@ -234,6 +245,7 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 	MEN = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 622
 		add_state_core = 896
 		add_state_core = 744
@@ -244,11 +256,13 @@ CHI_civil_war_3 = {
 	}
 
 	QIN = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 604
 		transfer_state = 604
 	}
 	
 	XSM = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 754
 		add_state_core = 283
 		add_state_core = 909
@@ -267,11 +281,13 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 	TIB = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 322
 		transfer_state = 322
 		add_manpower = 10000
 	}
 	SIK = {
+		set_country_flag  = china_war_begin_warlord
 		add_state_core = 287
 		add_state_core = 617
 		add_state_core = 618
@@ -423,29 +439,34 @@ CHI_civil_war_5 = {
 		605 = { set_demilitarized_zone = no }
 
 		PRC = { #共产党
+			set_country_flag  = china_war_begin
 			add_state_core = 605
 		    transfer_state = 605
 			add_manpower = 10000
 		}
 		DCD = {
+			set_country_flag  = china_war_begin_warlord
 			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 			transfer_state = 906
 			add_state_core = 906
 			add_manpower = 10000
 		}
 		JLD = {
+			set_country_flag  = china_war_begin_warlord
 			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 			add_state_core = 908
 			transfer_state = 908
 			add_manpower = 10000
 		}
 		XCD ={
+			set_country_flag  = china_war_begin_warlord
 			load_oob = "AOR_LAND_CHI_chuanjun_XI"
 			add_state_core = 753
 			transfer_state = 753
 			add_manpower = 10000
 		}
 		CBS = {
+			set_country_flag  = china_war_begin_warlord
 			load_oob = "AOR_LAND_CHI_chuanjun_BIAN"
 			add_state_core = 751
 			add_state_core = 434

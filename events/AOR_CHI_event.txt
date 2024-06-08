@@ -1661,6 +1661,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CHI_test.01.a
+
 		load_focus_tree = Warlord_focus_tree
 		add_manpower = 1111
 	}
@@ -1693,6 +1694,21 @@ country_event = {
 		hidden_effect = {
 			country_event = {id = CHI.999 days=2}
 		}
+	}
+}
+country_event = {
+	id = CHI_test.04
+	title = CHI_test.02.t
+	desc = CHI_test.02.desc
+	is_triggered_only = yes
+	option = {
+		if = {
+			limit = {
+				has_ai
+			}
+		}
+		log = "test 2 on "
+		
 	}
 }
 
