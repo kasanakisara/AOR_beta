@@ -60,7 +60,6 @@ ideas = {
 			picture = Take_the_initiative_to_attack
 			
 			modifier = {
-			    ai_call_ally_desire_factor  = -9999
 				army_attack_factor =  0.1
     		}
 		}

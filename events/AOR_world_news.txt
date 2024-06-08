@@ -1081,7 +1081,6 @@ news_event = { #德意志社会主义联邦成立
 	title = AOR_news.57.t
 	desc = AOR_news.57.d
 	picture = GFX_AOR_news.57_pic
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 	immediate = {
