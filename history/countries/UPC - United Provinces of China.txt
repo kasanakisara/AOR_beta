@@ -54,8 +54,8 @@ create_country_leader = {
 	traits = {
 	}
 }
-set_stability = 0.75
-set_war_support = 0.85
+set_stability = 0.6
+set_war_support = 0.6
 
 # Starting tech
 set_technology = {
