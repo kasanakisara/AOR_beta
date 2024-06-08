@@ -178,6 +178,7 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 	
 	AOR_RUS_Soviet_union_31 = { #奥尔忠尼启则发起高加索内战
 		ai_will_do = { base = 100 }
+		cost = 10
 		available = {
 			#has_completed_focus = AOR_SOV_Civil_war_6
 			#CAU = { is_neighbor_of = RUS }
@@ -198,7 +199,7 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 				start_civil_war = {
 					ruling_party = marxism
 					ideology = Absolutism
-					size = 0.5
+					size = 0.1
 					capital = 231
 					states = { 827 828 821 232 }
 					keep_unit_leaders = { }
@@ -218,7 +219,6 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 				}
 				CAU = {
 					has_goverment = marxism
-					is_neighbor_of = RUS
 					has_country_leader = {
 						name = "谢尔戈·奥尔忠尼启则"
 						ruling_only = yes
