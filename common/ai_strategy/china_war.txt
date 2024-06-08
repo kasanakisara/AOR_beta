@@ -77,10 +77,10 @@ china_war_ai = {
             }
             
         
-        ratio = 0.1
+        ratio = 0.05
         ordertype = front
         execution_type = rush
-        manual_attack = no
+        manual_attack = yes
     }
 }
 GRE_war_ai = {
