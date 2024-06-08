@@ -51,7 +51,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Tang_ji_yao"
-	picture = GFX_portrait_cai_cheng_xun
+	picture = "gfx/leaders/KMT/Tang_ji_yao.dds"
 	expire = "1965.1.1"
 	ideology = miliciagov
 	traits = { 

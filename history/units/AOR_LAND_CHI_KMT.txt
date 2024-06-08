@@ -1,6 +1,6 @@
 ﻿####### Division Templates #######
 division_template = { 
-	name = "陆军师" 
+	name = "国民革命军师" 
 	division_names_group = ITA_INF_01 
 	
 	regiments = { 
@@ -54,189 +54,189 @@ division_template = {
 ####### OOB #######
 units = {
 	division= {	
-		name = "陆军第一师"
+		name = "国民革命军第一师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二师"
+		name = "国民革命军第二师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第四师"
+		name = "国民革命军第三师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第八师"
+		name = "国民革命军第四师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第九师"
+		name = "国民革命军第五师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第十九师"
+		name = "国民革命军第六师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二十三师"
+		name = "国民革命军第七师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第一师"
+		name = "国民革命军八师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二师"
+		name = "国民革命军九师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第四师"
+		name = "国民革命军第十师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第八师"
+		name = "国民革命军第十一师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第九师"
+		name = "国民革命军第十二师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第十九师"
+		name = "国民革命军第十九师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二十三师"
+		name = "国民革命军第二十三师"
 		location = 7446
-		division_template = "陆军师"
+		division_template = "国民革命军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第一混成旅"
+		name = "国民革命军第一混成旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第二混成旅"
+		name = "国民革命军第二混成旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第五混成旅"
+		name = "国民革命军第五混成旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第六混成旅"
+		name = "国民革命军第六混成旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第一旅"
+		name = "国民革命军骑兵第一旅"
 		location = 7446
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第二旅"
+		name = "国民革命军骑兵第二旅"
 		location = 7446
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第三旅"
+		name = "国民革命军骑兵第三旅"
 		location = 7446
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第四旅"
+		name = "国民革命军骑兵第四旅"
 		location = 7446
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第四十九旅"
+		name = "国民革命军第四十九旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十四旅"
+		name = "国民革命军第七十四旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十五旅"
+		name = "国民革命军第七十五旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十六旅"
+		name = "国民革命军第七十六旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军步兵第五旅"
+		name = "国民革命军步兵第五旅"
 		location = 7446
 		division_template = "混成旅"
 		start_experience_factor = 0.2
