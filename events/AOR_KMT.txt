@@ -271,6 +271,7 @@ country_event = {#昆明政府统一南方
             name = KMT.5.a
             news_event = {id=AOR_news.113}
             country_event = { days = 90  id = CHI.37 }
+            country_event = { days = 360  id = JAP.2 }
             set_capital = { state = 893 }
             KMT = {
                 add_state_core = 876

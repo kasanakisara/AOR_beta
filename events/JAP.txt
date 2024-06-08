@@ -1,0 +1,123 @@
+add_namespace = JAP
+
+country_event = {
+	id = JAP.1   #大正天皇驾崩（昭和即位）
+	title = JAP.1.t
+	desc = JAP.1.d
+	picture = GFX_JAP_event_1
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1926.12.25
+		}
+	option = {
+		name = JAP.1.a
+		create_country_leader = {
+			name = "Emperor_Hirohito"
+			desc = "Emperor_Hirohito_desc"
+			picture = "gfx/leaders/JAP/Emperor_Hirohito.png"
+			expire = "1965.1.1"
+			ideology = monarchism
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAP.2   #中日战争
+	title = JAP.2.t
+	desc = JAP.2.d
+	picture = GFX_JAP_event_2
+	is_triggered_only = yes	
+	fire_only_once = yes
+	option = {
+		name = JAP.2.a
+		JAP = {
+			declare_war_on = { 
+				target = KMT
+				type = annex_everything
+			} 
+			declare_war_on = { 
+				target = UPC
+				type = annex_everything
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = JAP.3   #中日战争（KMT-日方战败）
+	title = JAP.3.t
+	desc = JAP.3.d
+	picture = GFX_JAP_event_3
+	trigger = {
+		tag = KMT
+		852 = { is_owned_by = KMT }
+		KMT = { has_war_with = JAP }
+	}
+	fire_only_once = yes
+	option = {
+		name = JAP.3.a
+		JAP = {
+			white_peace = KMT
+		}
+		KOR = {
+			set_country_flag = KOR_1
+			set_autonomy = {
+				target = KOR
+				autonomy_state = autonomy_free 
+			}
+			annex_country = { 
+				target = PYO 
+				transfer_troops = no 
+			}
+			transfer_state = 527
+			transfer_state = 818
+			transfer_state = 817
+			transfer_state = 820
+			transfer_state = 525
+			transfer_state = 819
+			transfer_state = 852
+			transfer_state = 619
+		}
+	}
+}
+
+country_event = {
+	id = JAP.4   #中日战争（UPC-日方战败）
+	title = JAP.4.t
+	desc = JAP.4.d
+	picture = GFX_JAP_event_4
+	trigger = {
+		tag = UPC
+		852 = { is_owned_by = UPC }
+		UPC = { has_war_with = JAP }
+	}
+	fire_only_once = yes
+	option = {
+		name = JAP.4.a
+		JAP = {
+			white_peace = UPC
+		}
+		KOR = {
+			set_country_flag = KOR_1
+			set_autonomy = {
+				target = KOR
+				autonomy_state = autonomy_free 
+			}
+			annex_country = { 
+				target = PYO 
+				transfer_troops = no 
+			}
+			transfer_state = 527
+			transfer_state = 818
+			transfer_state = 817
+			transfer_state = 820
+			transfer_state = 525
+			transfer_state = 819
+			transfer_state = 852
+			transfer_state = 619
+		}
+	}
+}
