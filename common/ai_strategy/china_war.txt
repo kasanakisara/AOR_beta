@@ -22,11 +22,6 @@ china_KMT_prepare_for_war = {
             id = NAN
             value = 100
         }
-        ai_strategy = {
-            type = force_defend_ally_borders
-            id = NAN
-            value = 100
-        }
 
 }
 china_KMT_force_defend_ally_borders = {
@@ -36,6 +31,7 @@ china_KMT_force_defend_ally_borders = {
     }
     enable = {
         has_country_flag = china_war_begin
+        has_country_flag = KMT_gank
     }
     abort = {
         NOT = {
@@ -44,9 +40,13 @@ china_KMT_force_defend_ally_borders = {
     }
     abort_when_not_enabled = yes
     ai_strategy = {
-        type = force_defend_ally_borders
-        id = NAN
-        value = 100
+        type = front_unit_request
+        tag = NAN
+        value = 1500
+    }
+    ai_strategy = {
+        type = garrison
+        value = -100
     }
 
 }
@@ -69,11 +69,7 @@ china_UPC_prepare_for_war = {
         id = KMT
         value = 200
     }
-    ai_strategy = {
-        type = force_defend_ally_borders
-        id = NAN
-        value = 100
-    }
+
 
 }
 
@@ -95,10 +91,11 @@ china_UPC_force_defend_ally_borders = {
     ai_strategy = {
         type = force_defend_ally_borders
         id = NAN
-        value = 100
+        value = 300
     }
 
-}na_war_ai = {
+}
+china_war_ai = {
     allowed = {
         always = yes
     }
