@@ -1095,6 +1095,7 @@ country_event = {
 	option = {
 		name=USA.200.a
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = FRE_democratic}
 		create_country_leader = {#詹姆斯·米德尔顿·考克斯
 			name = "James_Middleton_Cox"
 			desc = "James_Middleton_Cox_desc"
@@ -1109,6 +1110,7 @@ country_event = {
 	option = {
 		name=USA.200.b
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = FRE_democratic}
 		create_country_leader = {#查尔斯·埃文斯·休斯
 			name = "Charles_Evans_Hughes"
 			desc = "Charles_Evans_Hughes_desc"
@@ -1123,6 +1125,7 @@ country_event = {
 	option = {
 		name=USA.200.c
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = FRE_democratic}
 		create_country_leader = {#约翰·卡尔文·柯立芝
 			name = "John_Calvin_Coolidge"
 			desc = "John_Calvin_Coolidge_desc"
@@ -1150,6 +1153,7 @@ country_event = {
 	option = {
 		name=USA.201.a
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = SOC_democratic}
 		create_country_leader = {#罗伯特.拉福莱特
 			name = "Robert_La_Follet"
 			desc = "Robert_La_Follet_desc"
@@ -1164,6 +1168,7 @@ country_event = {
 	option = {
 		name=USA.201.b
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = SOC_democratic}
 		create_country_leader = {#威廉·詹宁斯·布赖恩
 			name = "William_Jennings_Bryan"
 			desc = "William_Jennings_Bryan_desc"
@@ -1178,6 +1183,7 @@ country_event = {
 	option = {
 		name=USA.201.c
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = SOC_democratic}
 		create_country_leader = {#乔治·威廉·诺里斯
 			name = "George_William_Norris"
 			desc = "George_William_Norris_desc"
@@ -1205,6 +1211,7 @@ country_event = {
 	option = {
 		name=USA.202.a
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = CON_democratic}
 		create_country_leader = {#阿尔弗雷德·伊曼纽尔·史密斯
 			name = "Alfred_Emmanuel_Smith"
 			desc = "Alfred_Emmanuel_Smith_desc"
@@ -1228,6 +1235,7 @@ country_event = {
 	option = {
 		name=USA.203.a
 		news_event = {id = AOR_news.141}
+		set_politics = {ruling_party = FRE_democratic}
 		create_country_leader = {#欧文·扬
 			name = "Owen_Young"
 			desc = "Owen_Young_desc"
