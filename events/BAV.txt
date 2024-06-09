@@ -625,6 +625,7 @@ country_event = {
 		}
 	}
 	option = {
+		set_country_flag = WGR_Marxism
 		name = BAV.67.a
 		declare_war_on = {
 			target = HAN
