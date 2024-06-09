@@ -12,6 +12,7 @@ country_event = {
 		}
 	option = {
 		name = JAP.1.a
+		news_event = {id=AOR_news.134}
 		JAP = {
 		set_politics = {ruling_party = Absolutism }
 		add_popularity = { ideology = Absolutism popularity = 0.1 }
@@ -42,6 +43,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.2.a
+		news_event = {id=AOR_news.135}
 		JAP = {
 			declare_war_on = { 
 				target = KMT
@@ -68,8 +70,21 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.3.a
+		KMT = {
+			transfer_state = 745
+			transfer_state = 524
+
+			add_state_core = 745
+			add_state_core = 524
+		}
 		JAP = {
 			white_peace = KMT
+		}
+		RUS = {
+			annex_country = { 
+				target = PRI
+				transfer_troops = no 
+			}
 		}
 		KOR = {
 			set_country_flag = KOR_1
@@ -106,8 +121,21 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.4.a
+	UPC = {
+			transfer_state = 745
+			transfer_state = 524
+
+			add_state_core = 745
+			add_state_core = 524
+		}
 		JAP = {
 			white_peace = UPC
+		}
+		RUS = {
+			annex_country = { 
+				target = PRI
+				transfer_troops = no 
+			}
 		}
 		KOR = {
 			set_country_flag = KOR_1

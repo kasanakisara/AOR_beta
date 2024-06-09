@@ -2063,3 +2063,45 @@ news_event = {#中国广州政府占领四川
 		name = AOR_news.133.a
 	}
 }
+
+news_event = {#大正天皇驾崩！
+	id = AOR_news.134
+	title = AOR_news.134.t
+	desc = AOR_news.134.d
+	picture = GFX_AOR_news.134_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.134.a
+	}
+}
+
+
+news_event = {#中日战争爆发！
+	id = AOR_news.135
+	title = AOR_news.135.t
+	desc = AOR_news.135.d
+	picture = GFX_AOR_news.135_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.135.a
+	}
+}
+
+
+news_event = {#底特律大暴动被平息
+	id = AOR_news.136
+	title = AOR_news.136.t
+	desc = AOR_news.136.d
+	picture = GFX_AOR_news.136_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.136.a
+	}
+}
+

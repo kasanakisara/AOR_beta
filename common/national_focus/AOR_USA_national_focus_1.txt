@@ -210,7 +210,8 @@ focus_tree={
 				remove_idea=USA_GreatLakesA
 				add_idea=USA_GreatLakes2A
 			}
-			STATE_393 = { set_demilitarized_zone = no }
+			393 = { set_demilitarized_zone = no }
+			news_event = {id=AOR_news.136}
 		}
 	}
 	focus={
