@@ -1056,6 +1056,10 @@ ideas = {
 				army_org_factor = 0.05
 				resistance_target = -0.5
 				compliance_growth = 0.5
+				hidden_modifier = {
+					no_supply_grace = 3600
+					supply_consumption_factor = -0.5
+				}
 			}
 		}
 	}
