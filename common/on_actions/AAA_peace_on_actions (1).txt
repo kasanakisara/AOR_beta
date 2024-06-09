@@ -21,7 +21,6 @@ on_actions = {
 					country_event = {
 						id = SAF.100
 						days = 1
-					
 					}
 				}
 				set_global_flag = skip_default_capitulation
@@ -45,7 +44,6 @@ on_actions = {
 						id = SYR.100
 						days = 1
 					}
-				
 				}
 				FRA = {
 					puppet = SYR
@@ -82,7 +80,6 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
-				
 			}
 			else_if = {
 				limit = {
@@ -99,7 +96,6 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
-				
 			}
 			else_if = {
 				limit = {
@@ -113,33 +109,28 @@ on_actions = {
 				SYI = {
 					remove_ideas = {
 						come_from_comfusion
-				}
+					}
 					annex_country = {
 						target = SYR
 						transfer_troops = no
 					}
 				}
 				OIC = {
-					transfer_state = 344			
+					transfer_state = 344
 					declare_war_on = {
 						target = KUR
 						type = civil_war
-						}
-						remove_ideas = {
-							come_from_comfusion
 					}
-					
+					remove_ideas = {
+						come_from_comfusion
+					}
 				}
-				
 				KUR = {
 					transfer_state = 350
 					remove_ideas = {
 						come_from_comfusion
+					}
 				}
-					
-				}
-
-				
 			}
 			else_if = {
 				limit = {
@@ -154,21 +145,18 @@ on_actions = {
 					annex_country = {
 						target = OIC
 						transfer_troops = no
-						
-						}
 					}
-					remove_ideas = {
-						come_from_comfusion
+				}
+				remove_ideas = {
+					come_from_comfusion
 				}
 				OIC = {
-					transfer_state = 344			
+					transfer_state = 344
 					declare_war_on = {
 						target = KUR
 						type = civil_war
-						
-						}
+					}
 				}
-				
 			}
 			#横扫南欧，做回自己
 			else_if = {
@@ -177,10 +165,9 @@ on_actions = {
 						OR = {
 							original_tag = GRE
 							original_tag = YUG
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
-						
 					ROOT = {
 						original_tag = ALB
 					}
@@ -193,24 +180,27 @@ on_actions = {
 					add_state_core = 44
 				}
 				every_country = {
-					limit = { has_war_with = GRE }
+					limit = {
+						has_war_with = GRE
+					}
 					white_peace = GRE
 				}
 				every_country = {
-					limit = { has_war_with = YUG }
+					limit = {
+						has_war_with = YUG
+					}
 					white_peace = YUG
 				}
-				
-				}
+			}
 			else_if = {
 				limit = {
 					FROM = {
 						OR = {
 							original_tag = GRE
 							original_tag = YUG
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = DAL
 					}
@@ -220,24 +210,29 @@ on_actions = {
 					transfer_state = 872
 					add_state_core = 804
 					add_state_core = 872
-					
 				}
 				ITA = {
 					transfer_state = 163
 					add_state_core = 163
 				}
 				every_country = {
-					limit = { has_war_with = GRE }
+					limit = {
+						has_war_with = GRE
+					}
 					white_peace = GRE
 				}
 				every_country = {
-					limit = { has_war_with = YUG }
+					limit = {
+						has_war_with = YUG
+					}
 					white_peace = YUG
 				}
-				GRE = {country_event = {
-					days = 90 id = GRE.14
+				GRE = {
+					country_event = {
+						days = 90
+						id = GRE.14
+					}
 				}
-			}
 			}
 			else_if = {
 				limit = {
@@ -245,9 +240,9 @@ on_actions = {
 						OR = {
 							original_tag = GRE
 							original_tag = YUG
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = CRO
 					}
@@ -260,28 +255,31 @@ on_actions = {
 					add_state_core = 103
 				}
 				every_country = {
-					limit = { has_war_with = GRE }
+					limit = {
+						has_war_with = GRE
+					}
 					white_peace = GRE
 				}
 				every_country = {
-					limit = { has_war_with = YUG }
+					limit = {
+						has_war_with = YUG
+					}
 					white_peace = YUG
 				}
-				
-				
-				
-				}
+			}
 			#巴尔干战争 希腊-匈牙利
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =HUN}
+					GRE = {
+						is_in_faction_with = HUN
+					}
 					FROM = {
 						OR = {
 							original_tag = GRE
 							original_tag = HUN
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = BUL
 					}
@@ -293,20 +291,24 @@ on_actions = {
 					transfer_state = 48
 				}
 				every_country = {
-					limit = { has_war_with = BUL }
+					limit = {
+						has_war_with = BUL
+					}
 					white_peace = BUL
 				}
 			}
 			else_if = {
 				limit = {
 					FROM = {
-						GRE = {is_in_faction_with =HUN}
+						GRE = {
+							is_in_faction_with = HUN
+						}
 						OR = {
 							original_tag = GRE
 							original_tag = HUN
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = ROM
 					}
@@ -322,20 +324,24 @@ on_actions = {
 					}
 				}
 				every_country = {
-					limit = { has_war_with =  ROM}
+					limit = {
+						has_war_with = ROM
+					}
 					white_peace = ROM
 				}
 			}
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =HUN}
+					GRE = {
+						is_in_faction_with = HUN
+					}
 					FROM = {
 						OR = {
 							original_tag = GRE
 							original_tag = HUN
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = YUG
 					}
@@ -351,49 +357,59 @@ on_actions = {
 					}
 				}
 				every_country = {
-					limit = { has_war_with =  YUG}
+					limit = {
+						has_war_with = YUG
+					}
 					white_peace = YUG
 				}
 			}
 			#输
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =HUN}
+					GRE = {
+						is_in_faction_with = HUN
+					}
 					FROM = {
 						OR = {
 							original_tag = YUG
 							original_tag = BUL
 							original_tag = ROM
 							has_war_together_with = BUL
+						}
 					}
-				}
 					ROOT = {
 						original_tag = GRE
 					}
 				}
-
 				every_country = {
-					limit = { has_war_with =  GRE}
+					limit = {
+						has_war_with = GRE
+					}
 					white_peace = GRE
 				}
 				BUL = {
 					transfer_state = 184
 				}
-				TUR = {country_event = {
-					days = 90 id = TUR.5
-				}}
+				TUR = {
+					country_event = {
+						days = 90
+						id = TUR.5
+					}
+				}
 			}
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =HUN}
+					GRE = {
+						is_in_faction_with = HUN
+					}
 					FROM = {
 						OR = {
 							original_tag = YUG
 							original_tag = BUL
 							original_tag = ROM
 							has_war_together_with = BUL
+						}
 					}
-				}
 					ROOT = {
 						original_tag = HUN
 					}
@@ -406,26 +422,27 @@ on_actions = {
 					transfer_state = 84
 					transfer_state = 82
 				}
-
 				every_country = {
-					limit = { has_war_with =  HUN}
+					limit = {
+						has_war_with = HUN
+					}
 					white_peace = HUN
 				}
 			}
 			#巴尔干战争-希腊-南斯拉夫-罗马尼亚
 			else_if = {
-
-
 				limit = {
-					GRE = {is_in_faction_with =YUG}
+					GRE = {
+						is_in_faction_with = YUG
+					}
 					FROM = {
 						OR = {
 							original_tag = GRE
 							original_tag = YUG
 							original_tag = ROM
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = BUL
 					}
@@ -439,21 +456,25 @@ on_actions = {
 					transfer_state = 48
 				}
 				every_country = {
-					limit = { has_war_with = BUL }
+					limit = {
+						has_war_with = BUL
+					}
 					white_peace = BUL
 				}
 			}
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =YUG}
+					GRE = {
+						is_in_faction_with = YUG
+					}
 					FROM = {
 						OR = {
 							original_tag = GRE
 							original_tag = YUG
 							original_tag = ROM
-							has_war_together_with = GRE 
+							has_war_together_with = GRE
+						}
 					}
-				}
 					ROOT = {
 						original_tag = HUN
 					}
@@ -469,28 +490,31 @@ on_actions = {
 					transfer_state = 103
 				}
 				every_country = {
-					limit = { has_war_with = HUN }
+					limit = {
+						has_war_with = HUN
+					}
 					white_peace = HUN
 				}
 			}
-		#输了
+			#输了
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =YUG}
+					GRE = {
+						is_in_faction_with = YUG
+					}
 					FROM = {
 						OR = {
 							original_tag = HUN
 							original_tag = BUL
 							has_war_together_with = BUL
+						}
 					}
-				}
 					ROOT = {
 						original_tag = ROM
 					}
 				}
 				BUL = {
 					transfer_state = 77
-
 					transfer_state = 851
 				}
 				HUN = {
@@ -500,20 +524,24 @@ on_actions = {
 					}
 				}
 				every_country = {
-					limit = { has_war_with = ROM }
+					limit = {
+						has_war_with = ROM
+					}
 					white_peace = ROM
 				}
 			}
 			else_if = {
 				limit = {
-					BUL = {is_in_faction_with = HUN}
+					BUL = {
+						is_in_faction_with = HUN
+					}
 					FROM = {
 						OR = {
 							original_tag = HUN
 							original_tag = BUL
 							has_war_together_with = BUL
+						}
 					}
-				}
 					ROOT = {
 						original_tag = GRE
 					}
@@ -528,26 +556,29 @@ on_actions = {
 					set_cosmetic_tag = GRE_CON_2
 				}
 				every_country = {
-					limit = { has_war_with = GRE }
+					limit = {
+						has_war_with = GRE
+					}
 					white_peace = GRE
 				}
 			}
 			else_if = {
 				limit = {
-					GRE = {is_in_faction_with =YUG}
+					GRE = {
+						is_in_faction_with = YUG
+					}
 					FROM = {
 						OR = {
 							original_tag = HUN
 							original_tag = BUL
 							has_war_together_with = BUL
+						}
 					}
-				}
 					ROOT = {
 						original_tag = YUG
 					}
 				}
 				BUL = {
-
 					transfer_state = 106
 					transfer_state = 803
 				}
@@ -558,14 +589,16 @@ on_actions = {
 					}
 				}
 				every_country = {
-					limit = { has_war_with = YUG }
+					limit = {
+						has_war_with = YUG
+					}
 					white_peace = YUG
 				}
 			}
 			#再来一次希土战争！
 			else_if = {
 				limit = {
-					TUR  = {
+					TUR = {
 						has_idea = revenge
 					}
 					FROM = {
@@ -576,17 +609,18 @@ on_actions = {
 					}
 				}
 				TUR = {
-
 					transfer_state = 797
-					transfer_state =  340
-					transfer_state =  341
+					transfer_state = 340
+					transfer_state = 341
 					transfer_state = 49
-					transfer_state =  343
-					transfer_state =  347
+					transfer_state = 343
+					transfer_state = 347
 					transfer_state = 346
 				}
 				every_country = {
-					limit = { has_war_with = TUR }
+					limit = {
+						has_war_with = TUR
+					}
 					white_peace = TUR
 				}
 			}
@@ -597,29 +631,35 @@ on_actions = {
 						OR = {
 							original_tag = ENG
 							has_war_together_with = ENG
-					}
-					ROOT = {
-						original_tag = CZE
+						}
+						ROOT = {
+							original_tag = CZE
+						}
 					}
 				}
-			}
 				CZE = {
-
 					transfer_state = 69
-					transfer_state =  9
-					transfer_state =  75
+					transfer_state = 9
+					transfer_state = 75
 					transfer_state = 74
-					transfer_state =  72
-					set_politics = { ruling_party = CON_democratic}
-					add_popularity = { ideology = CON_democratic popularity = 56 }
+					transfer_state = 72
+					set_politics = {
+						ruling_party = CON_democratic
+					}
+					add_popularity = {
+						ideology = CON_democratic
+						popularity = 56
+					}
 				}
 				every_country = {
-					limit = { has_war_with = CZE }
+					limit = {
+						has_war_with = CZE
+					}
 					white_peace = CZE
 				}
 			}
 			else_if = {
-				limit={
+				limit = {
 					FROM = {
 						OR = {
 							original_tag = US1
@@ -630,12 +670,11 @@ on_actions = {
 							original_tag = US6
 							original_tag = US7
 							original_tag = US8
-	
+						}
 					}
-				}
 					ROOT = {
 						OR = {
-						original_tag = US1
+							original_tag = US1
 							original_tag = US2
 							original_tag = US3
 							original_tag = US4
@@ -646,13 +685,19 @@ on_actions = {
 						}
 					}
 				}
-				FROM = {annex_country = { target = ROOT transfer_troops = yes }}
+				FROM = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = yes
+					}
+				}
 				log = "吞并！"
 				every_country = {
-					limit = { has_war_with = ROOT }
+					limit = {
+						has_war_with = ROOT
+					}
 					white_peace = ROOT
 				}
-				
 			}
 			else_if = {
 				limit = {
@@ -671,7 +716,6 @@ on_actions = {
 					country_event = {
 						id = USA.10000
 						days = 1
-					
 					}
 				}
 			}
@@ -692,11 +736,9 @@ on_actions = {
 					country_event = {
 						id = CSA.10000
 						days = 1
-					
 					}
 				}
 			}
-
 			#南京政府——北京政府
 			else_if = {
 				limit = {
@@ -730,7 +772,6 @@ on_actions = {
 					}
 				}
 			}
-
 			#南京政府——奉天政府
 			else_if = {
 				limit = {
@@ -764,7 +805,6 @@ on_actions = {
 					}
 				}
 			}
-			
 			#北京政府——奉天政府
 			else_if = {
 				limit = {
@@ -797,8 +837,7 @@ on_actions = {
 						target = MON
 					}
 				}
-			}			
-
+			}
 			#昆明政府——北京政府
 			else_if = {
 				limit = {
@@ -814,8 +853,8 @@ on_actions = {
 					annex_country = {
 						target = MON
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
 					add_state_core = 876
@@ -862,8 +901,13 @@ on_actions = {
 					annex_country = {
 						target = KMT
 					}
-					news_event = {id=AOR_news.123}
-					country_event = { days = 90  id = CHI.37 }
+					news_event = {
+						id = AOR_news.123
+					}
+					country_event = {
+						days = 90
+						id = CHI.37
+					}
 					add_state_core = 901
 					add_state_core = 593
 					add_state_core = 592
@@ -888,7 +932,6 @@ on_actions = {
 					add_state_core = 747
 				}
 			}
-
 			#昆明政府——南京政府
 			else_if = {
 				limit = {
@@ -904,8 +947,8 @@ on_actions = {
 					annex_country = {
 						target = NAN
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
 					add_state_core = 876
@@ -952,8 +995,13 @@ on_actions = {
 					annex_country = {
 						target = KMT
 					}
-					news_event = {id=AOR_news.124}
-					country_event = { days = 90  id = CHI.37 }
+					news_event = {
+						id = AOR_news.124
+					}
+					country_event = {
+						days = 90
+						id = CHI.37
+					}
 					add_state_core = 901
 					add_state_core = 593
 					add_state_core = 592
@@ -978,7 +1026,6 @@ on_actions = {
 					add_state_core = 747
 				}
 			}
-
 			#昆明政府——奉天政府
 			else_if = {
 				limit = {
@@ -994,11 +1041,13 @@ on_actions = {
 					annex_country = {
 						target = MAN
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
-					news_event = {id=AOR_news.125}
+					news_event = {
+						id = AOR_news.125
+					}
 				}
 			}
 			else_if = {
@@ -1039,7 +1088,6 @@ on_actions = {
 					add_state_core = 747
 				}
 			}
-
 			#广州政府——北京政府
 			else_if = {
 				limit = {
@@ -1055,8 +1103,8 @@ on_actions = {
 					annex_country = {
 						target = MON
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
 					add_state_core = 876
@@ -1103,8 +1151,13 @@ on_actions = {
 					annex_country = {
 						target = UPC
 					}
-					news_event = {id=AOR_news.121}
-					country_event = { days = 90  id = CHI.37 }
+					news_event = {
+						id = AOR_news.121
+					}
+					country_event = {
+						days = 90
+						id = CHI.37
+					}
 					add_state_core = 901
 					add_state_core = 593
 					add_state_core = 592
@@ -1129,7 +1182,6 @@ on_actions = {
 					add_state_core = 747
 				}
 			}
-
 			#广州政府——南京政府
 			else_if = {
 				limit = {
@@ -1145,8 +1197,8 @@ on_actions = {
 					annex_country = {
 						target = NAN
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
 					add_state_core = 876
@@ -1193,8 +1245,13 @@ on_actions = {
 					annex_country = {
 						target = UPC
 					}
-					news_event = {id=AOR_news.122}
-					country_event = { days = 90  id = CHI.37 }
+					news_event = {
+						id = AOR_news.122
+					}
+					country_event = {
+						days = 90
+						id = CHI.37
+					}
 					add_state_core = 901
 					add_state_core = 593
 					add_state_core = 592
@@ -1219,7 +1276,6 @@ on_actions = {
 					add_state_core = 747
 				}
 			}
-
 			#广州政府——奉天政府
 			else_if = {
 				limit = {
@@ -1235,11 +1291,13 @@ on_actions = {
 					annex_country = {
 						target = MAN
 					}
-					annex_country = { 
-						target = MEN 
+					annex_country = {
+						target = MEN
 						transfer_troops = yes
 					}
-					news_event = {id=AOR_news.126}
+					news_event = {
+						id = AOR_news.126
+					}
 				}
 			}
 			else_if = {
@@ -1281,7 +1339,7 @@ on_actions = {
 				}
 			}
 			#中国西部统一战争
-		    #南京政府——山西
+			#南京政府——山西
 			else_if = {
 				limit = {
 					#南京政府胜利
@@ -1298,7 +1356,7 @@ on_actions = {
 					}
 				}
 			}
-           #北京政府——山西
+			#北京政府——山西
 			else_if = {
 				limit = {
 					#北京政府胜利
@@ -1315,8 +1373,7 @@ on_actions = {
 					}
 				}
 			}
-
-		    #南京政府——陕西
+			#南京政府——陕西
 			else_if = {
 				limit = {
 					#南京政府胜利
@@ -1333,7 +1390,7 @@ on_actions = {
 					}
 				}
 			}
-           #北京政府——陕西
+			#北京政府——陕西
 			else_if = {
 				limit = {
 					#南京政府胜利
@@ -1350,8 +1407,7 @@ on_actions = {
 					}
 				}
 			}
-
-            #南京政府——甘肃
+			#南京政府——甘肃
 			else_if = {
 				limit = {
 					#南京政府胜利
@@ -1364,11 +1420,11 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =XSM
+						target = XSM
 					}
 				}
 			}
-            #北京政府——甘肃
+			#北京政府——甘肃
 			else_if = {
 				limit = {
 					#北京政府胜利
@@ -1381,11 +1437,10 @@ on_actions = {
 				}
 				MON = {
 					annex_country = {
-						target =XSM
+						target = XSM
 					}
 				}
 			}
-
 			#南京政府——青海
 			else_if = {
 				limit = {
@@ -1399,11 +1454,11 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =QIN
+						target = QIN
 					}
 				}
 			}
-            #北京政府——青海
+			#北京政府——青海
 			else_if = {
 				limit = {
 					#北京政府胜利
@@ -1416,11 +1471,10 @@ on_actions = {
 				}
 				MON = {
 					annex_country = {
-						target =QIN
+						target = QIN
 					}
 				}
 			}
-
 			#南京政府——新疆
 			else_if = {
 				limit = {
@@ -1434,12 +1488,12 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =SIK
+						target = SIK
 					}
 				}
 			}
-			 #北京政府——新疆
-			 else_if = {
+			#北京政府——新疆
+			else_if = {
 				limit = {
 					#北京政府胜利
 					FROM = {
@@ -1451,29 +1505,29 @@ on_actions = {
 				}
 				MON = {
 					annex_country = {
-						target =SIK
+						target = SIK
 					}
 				}
 			}
-			 #昆明政府——新疆
+			#昆明政府——新疆
 			else_if = {
 				limit = {
 					#昆明政府胜利
 					FROM = {
 						original_tag = KMT
-						}
+					}
 					ROOT = {
 						original_tag = SIK
 					}
 				}
 				KMT = {
 					annex_country = {
-						target =SIK
+						target = SIK
 					}
 				}
 			}
-			 #广州政府——新疆
-			 else_if = {
+			#广州政府——新疆
+			else_if = {
 				limit = {
 					#广州政府胜利
 					FROM = {
@@ -1485,11 +1539,10 @@ on_actions = {
 				}
 				UPC = {
 					annex_country = {
-						target =SIK
+						target = SIK
 					}
 				}
 			}
-
 			#南京政府——西藏
 			else_if = {
 				limit = {
@@ -1503,11 +1556,11 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =TIB
+						target = TIB
 					}
 				}
 			}
-             #北京政府——西藏
+			#北京政府——西藏
 			else_if = {
 				limit = {
 					#北京政府胜利
@@ -1520,11 +1573,10 @@ on_actions = {
 				}
 				MON = {
 					annex_country = {
-						target =TIB
+						target = TIB
 					}
 				}
 			}
-
 			#南京政府——东川
 			else_if = {
 				limit = {
@@ -1538,7 +1590,7 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =DCD
+						target = DCD
 					}
 				}
 			}
@@ -1554,9 +1606,11 @@ on_actions = {
 					}
 				}
 				KMT = {
-					news_event = {id=AOR_news.132}
+					news_event = {
+						id = AOR_news.132
+					}
 					annex_country = {
-						target =DCD
+						target = DCD
 					}
 					add_state_core = 906
 					add_state_core = 908
@@ -1578,9 +1632,11 @@ on_actions = {
 					}
 				}
 				UPC = {
-					news_event = {id=AOR_news.133}
+					news_event = {
+						id = AOR_news.133
+					}
 					annex_country = {
-						target =DCD
+						target = DCD
 					}
 					add_state_core = 906
 					add_state_core = 908
@@ -1590,7 +1646,6 @@ on_actions = {
 					add_state_core = 605
 				}
 			}
-
 			#南京政府——四川工农
 			else_if = {
 				limit = {
@@ -1604,7 +1659,7 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =PRC
+						target = PRC
 					}
 				}
 			}
@@ -1621,7 +1676,7 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =CBS
+						target = CBS
 					}
 				}
 			}
@@ -1638,7 +1693,7 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =XCD
+						target = XCD
 					}
 				}
 			}
@@ -1655,7 +1710,7 @@ on_actions = {
 				}
 				NAN = {
 					annex_country = {
-						target =JLD
+						target = JLD
 					}
 				}
 			}
@@ -1672,7 +1727,7 @@ on_actions = {
 				}
 				KMT = {
 					annex_country = {
-						target =JIN
+						target = JIN
 					}
 					set_cosmetic_tag = KMT_5
 				}
