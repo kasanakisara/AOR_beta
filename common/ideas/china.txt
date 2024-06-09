@@ -385,6 +385,24 @@ ideas = {
 			}
 		}
 
+		#扶倾济弱的社会
+		CHI_care_society = {
+			
+			picture = GFX_idea_CHI_care_society
+					
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+				conscription_factor = -0.1
+			}
+		}
+
 		CHI_mengjixiongfu = {
 
 			picture = GFX_idea_CHI_insecure_society
@@ -989,6 +1007,29 @@ ideas = {
 			modifier = {
 			stability_factor = -0.1
 			war_support_factor = -0.2
+			army_org_factor = 0.05
+	        army_morale_factor = 0.1
+	        supply_consumption_factor = -0.1
+			recon_factor = 0.05
+			}
+		}
+
+		#云贵雄师(1)
+		CHI_yunguixiongshi_1 = {
+
+			picture = CHI_yunguixiongshi_1
+		
+			allowed = {
+				always = yes
+			}
+					
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.1
 			army_org_factor = 0.05
 	        army_morale_factor = 0.1
 	        supply_consumption_factor = -0.1

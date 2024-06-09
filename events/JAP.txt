@@ -12,6 +12,13 @@ country_event = {
 		}
 	option = {
 		name = JAP.1.a
+		JAP = {
+		set_politics = {ruling_party = Absolutism }
+		add_popularity = { ideology = Absolutism popularity = 0.1 }
+		add_popularity = { ideology = CON_democratic  popularity = -0.1 }
+		add_popularity = { ideology = AUT_democratic  popularity = 0.1 }
+		add_popularity = { ideology = FRE_democratic popularity = -0.1 }
+		add_popularity = { ideology = Fascism popularity = 0.2 }
 		create_country_leader = {
 			name = "Emperor_Hirohito"
 			desc = "Emperor_Hirohito_desc"
@@ -19,8 +26,10 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = monarchism
 			traits = {
-			}
-		}
+			    }
+		    }
+			leave_faction = yes
+	    }
 	}
 }
 

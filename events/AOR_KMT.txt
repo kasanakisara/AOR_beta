@@ -25,6 +25,7 @@ country_event = {#昆明政府政变
                 #714={set_demilitarized_zone=yes}
             #}
             KMT = {
+                set_politics = {ruling_party = FRE_democratic }
                 create_country_leader = {
                     name = "Cai_e"
                     desc = "POLITICS_MON_DESC"
@@ -76,6 +77,10 @@ country_event = {#云贵内战
                     traits = {
                     }
                 }
+                swap_ideas={
+				remove_idea = CHI_yunguixiongshi
+				add_idea = CHI_yunguixiongshi_1
+			}
                 325={set_demilitarized_zone=NO}
                 603={set_demilitarized_zone=NO}
                 748={set_demilitarized_zone=NO}
@@ -94,6 +99,8 @@ country_event = {#云贵内战
 		name = KMT.1.a
         KMT = {
         set_cosmetic_tag = KMT_5
+        add_popularity = { ideology = FRE_democratic popularity = 0.1 }
+        add_popularity = { ideology = SOC_democratic popularity = 0.1 }
         }
 	}
 }
@@ -131,9 +138,14 @@ country_event = {#昆明政府统一南方
 		news_event = {id=AOR_news.106}
         country_event = { days = 90  id = KMT.4 }
 		KMT = {
+			swap_ideas={
+				remove_idea = CHI_insecure_society
+				add_idea = CHI_care_society
+			}
+            set_party_name = { ideology = Absolutism long_name = KMT_Absolutism_party_1 name = KMT_Absolutism_party_1 }
             add_popularity = { ideology = FRE_democratic popularity = 0.1 }
             add_popularity = { ideology = CON_democratic popularity = 0.1 }
-            add_popularity = { ideology = SOC_democratic popularity = 0.3 }
+            add_popularity = { ideology = SOC_democratic popularity = 0.2 }
             add_state_core = 901
             add_state_core = 593
             add_state_core = 592
@@ -187,7 +199,7 @@ country_event = {#昆明政府统一南方
             news_event = {id=AOR_news.108}
             KMT = {
             set_politics = {ruling_party = SOC_democratic}
-            add_popularity = { ideology = SOC_democratic popularity = 0.2 }
+            add_popularity = { ideology = SOC_democratic popularity = 0.1 }
             create_country_leader = {
                 name = "Sun_zhong_shan"
                 desc = "POLITICS_MON_DESC"
