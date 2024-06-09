@@ -30,6 +30,7 @@ country_event = {#西部的二次危机
 	option = {
 		name = USA.1.a
 		country_event = { days = 180  id = USA.2 }
+		news_event = {id=AOR_news.138}
 	}
 }
 country_event = {

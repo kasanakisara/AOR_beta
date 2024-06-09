@@ -51,6 +51,9 @@ country_event = {
                 load_oob = "US2_Civilwar"
                 load_oob = "US2_Civilwar"
                 load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
             }
         }
     }
@@ -61,6 +64,9 @@ country_event = {
         US2 = {
         hidden_effect = {
             US2 = {
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
+                load_oob = "US2_Civilwar"
                 load_oob = "US2_Civilwar"
                 load_oob = "US2_Civilwar"
                 load_oob = "US2_Civilwar"

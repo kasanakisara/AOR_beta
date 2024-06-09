@@ -70,6 +70,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.3.a
+		news_event = {id=AOR_news.137}
 		KMT = {
 			transfer_state = 745
 			transfer_state = 524
@@ -121,6 +122,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.4.a
+		news_event = {id=AOR_news.138}
 	UPC = {
 			transfer_state = 745
 			transfer_state = 524

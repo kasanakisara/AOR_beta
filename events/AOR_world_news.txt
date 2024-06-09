@@ -2105,3 +2105,41 @@ news_event = {#底特律大暴动被平息
 	}
 }
 
+news_event = {#日本与中国国民政府签订和平协议
+	id = AOR_news.137
+	title = AOR_news.137.t
+	desc = AOR_news.137.d
+	picture = GFX_AOR_news.137_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.137.a
+	}
+}
+news_event = {#日本与中国联省政府签订和平协议
+	id = AOR_news.138
+	title = AOR_news.138.t
+	desc = AOR_news.138.d
+	picture = GFX_AOR_news.138_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.138.a
+	}
+}
+
+news_event = {#美国西部再次陷入危机
+	id = AOR_news.139
+	title = AOR_news.139.t
+	desc = AOR_news.139.d
+	picture = GFX_AOR_news.139_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.139.a
+	}
+}
+
