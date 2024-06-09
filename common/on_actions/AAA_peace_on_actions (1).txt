@@ -841,6 +841,11 @@ on_actions = {
 					add_state_core = 896
 					add_state_core = 622
 				}
+				MAN = {
+					transfer_state = 610
+					transfer_state = 608
+					transfer_state = 878
+				}
 			}
 			else_if = {
 				limit = {
@@ -925,6 +930,11 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+				}
+				MAN = {
+					transfer_state = 610
+					transfer_state = 608
+					transfer_state = 878
 				}
 			}
 			else_if = {
@@ -1072,6 +1082,11 @@ on_actions = {
 					add_state_core = 896
 					add_state_core = 622
 				}
+				MAN = {
+					transfer_state = 610
+					transfer_state = 608
+					transfer_state = 878
+				}
 			}
 			else_if = {
 				limit = {
@@ -1156,6 +1171,11 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+				}
+				MAN = {
+					transfer_state = 610
+					transfer_state = 608
+					transfer_state = 878
 				}
 			}
 			else_if = {
