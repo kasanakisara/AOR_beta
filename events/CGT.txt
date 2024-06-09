@@ -166,7 +166,7 @@ country_event = {
 	option = {
 		name = CGT.5.b
 		#爆新闻
-		news_event = {id=AOR_news.63}
+
 		THIS = {
 			annex_country = {
 				target = CGT
@@ -195,7 +195,6 @@ country_event = {
 	option = {
 		name = CGT.5.a
 		#爆新闻
-		news_event = {id=AOR_news.63}
 		if = {
 			limit = {
 				country_exists = PLM

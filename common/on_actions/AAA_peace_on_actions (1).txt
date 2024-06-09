@@ -414,9 +414,10 @@ on_actions = {
 			}
 			#巴尔干战争-希腊-南斯拉夫-罗马尼亚
 			else_if = {
-				GRE = {is_in_faction_with =YUG}
+
 
 				limit = {
+					GRE = {is_in_faction_with =YUG}
 					FROM = {
 						OR = {
 							original_tag = GRE
@@ -564,9 +565,9 @@ on_actions = {
 			#再来一次希土战争！
 			else_if = {
 				limit = {
-					TUR = {has_idea = {
-						revenge
-					}}
+					TUR  = {
+						has_idea = revenge
+					}
 					FROM = {
 						original_tag = TUR
 					}
@@ -1674,6 +1675,21 @@ on_actions = {
 						target =JIN
 					}
 					set_cosmetic_tag = KMT_5
+				}
+			}
+			#匈牙利打死克罗地亚
+			else_if = {
+				limit = {
+					#昆明政府胜利
+					FROM = {
+						original_tag = HUN
+					}
+					ROOT = {
+						original_tag = CRO
+					}
+				}
+				HUN = {
+					puppet = CRO
 				}
 			}
 		}
