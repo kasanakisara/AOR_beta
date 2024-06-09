@@ -283,7 +283,7 @@ country_event = {#昆明政府统一南方
             name = KMT.5.a
             news_event = {id=AOR_news.113}
             country_event = { days = 90  id = CHI.37 }
-            country_event = { days = 360  id = JAP.2 }
+            country_event = { days = 360  id = JAP.3 }
             set_capital = { state = 893 }
             KMT = {
                 add_state_core = 876
@@ -370,6 +370,12 @@ country_event = {#昆明政府统一南方
                     owns_state = 617
                     owns_state = 760
                     owns_state = 287
+                    owns_state = 906
+                    owns_state = 605
+                    owns_state = 751
+                    owns_state = 753
+                    owns_state = 434
+                    owns_state = 908
                     owns_state = 322
                 } 
             }
@@ -395,6 +401,12 @@ country_event = {#昆明政府统一南方
                     add_state_core = 617
                     add_state_core = 760
                     add_state_core = 287
+                    add_state_core = 906
+                    add_state_core = 605
+                    add_state_core = 751
+                    add_state_core = 753
+                    add_state_core = 434
+                    add_state_core = 908
                     add_state_core = 322
                 }
             name=KMT.6.a

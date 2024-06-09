@@ -450,6 +450,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			UPC = {
+				load_oob = "UPC_Nandu"
 				drop_cosmetic_tag = yes
 			}
 		}

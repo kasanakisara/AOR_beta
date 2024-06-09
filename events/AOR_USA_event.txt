@@ -30,7 +30,7 @@ country_event = {#西部的二次危机
 	option = {
 		name = USA.1.a
 		country_event = { days = 180  id = USA.2 }
-		news_event = {id=AOR_news.138}
+		news_event = {id=AOR_news.139}
 	}
 }
 country_event = {
@@ -746,6 +746,34 @@ country_event = {
 }	
 
 country_event = {
+	id = USA.113 #哈定总统被炸飞！！！
+	title = USA.113.t
+	desc = USA.113.d
+	picture = GFX_USA_event_113
+	trigger = {
+		date > 1922.6.19
+		tag = USA
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.113.a
+		news_event = {id=AOR_news.140}
+		create_country_leader = {#约翰·卡尔文·柯立芝
+		name = "John_Calvin_Coolidge"
+		desc = "John_Calvin_Coolidge_desc"
+		picture = "gfx/leaders/USA/John_Calvin_Coolidge.png"
+		expire = "1953.3.1"
+		ideology = USA_federalism
+		traits = {
+			
+		}
+	}
+	}	
+}
+
+
+country_event = {
 	id = USA.1000 #南北战争的兵！
 	title = USA.1000.t
 	desc = USA.1000.d
@@ -1050,6 +1078,171 @@ country_event = {
 
 	}
 }
+
+
+
+###	1924 1924总统选举 1924 1924 ###
+country_event = {
+	id = USA.200 #自由主义总统
+	title = USA.200.t
+	desc = USA.200.d
+	picture = GFX_USA_event_200
+	trigger = {
+		date > 1924.12.1
+		tag = USA
+	}
+	fire_only_once = yes
+	option = {
+		name=USA.200.a
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#詹姆斯·米德尔顿·考克斯
+			name = "James_Middleton_Cox"
+			desc = "James_Middleton_Cox_desc"
+			picture = "gfx/leaders/USA/James_Middleton_Cox.png"
+			expire = "1953.3.1"
+			ideology = USA_federalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.200.b
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#查尔斯·埃文斯·休斯
+			name = "Charles_Evans_Hughes"
+			desc = "Charles_Evans_Hughes_desc"
+			picture = "gfx/leaders/USA/Charles_Evans_Hughes.png"
+			expire = "1953.3.1"
+			ideology = USA_federalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.200.c
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#约翰·卡尔文·柯立芝
+			name = "John_Calvin_Coolidge"
+			desc = "John_Calvin_Coolidge_desc"
+			picture = "gfx/leaders/USA/John_Calvin_Coolidge.png"
+			expire = "1953.3.1"
+			ideology = USA_federalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.200.d
+		country_event = {id = USA.201 }
+	}
+}
+
+country_event = {
+	id = USA.201 #进步主义总统
+	title = USA.201.t
+	desc = USA.201.d
+	picture = GFX_USA_event_201
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.201.a
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#罗伯特.拉福莱特
+			name = "Robert_La_Follet"
+			desc = "Robert_La_Follet_desc"
+			picture = "gfx/leaders/USA/Robert_La_Follet.png"
+			expire = "1953.3.1"
+			ideology = social_liberalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.201.b
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#威廉·詹宁斯·布赖恩
+			name = "William_Jennings_Bryan"
+			desc = "William_Jennings_Bryan_desc"
+			picture = "gfx/leaders/USA/William_Jennings_Bryan.png"
+			expire = "1953.3.1"
+			ideology = social_liberalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.201.c
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#乔治·威廉·诺里斯
+			name = "George_William_Norris"
+			desc = "George_William_Norris_desc"
+			picture = "gfx/leaders/USA/George_William_Norris.png"
+			expire = "1953.3.1"
+			ideology = social_liberalism
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name=USA.201.d
+		country_event = {id = USA.202 }
+	}
+}
+
+country_event = {
+	id = USA.202 #保守主义总统
+	title = USA.202.t
+	desc = USA.202.d
+	picture = GFX_USA_event_202
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.202.a
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#阿尔弗雷德·伊曼纽尔·史密斯
+			name = "Alfred_Emmanuel_Smith"
+			desc = "Alfred_Emmanuel_Smith_desc"
+			picture = "gfx/leaders/USA/Alfred_Emmanuel_Smith.png"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA.203 #企业家总统
+	title = USA.203.t
+	desc = USA.203.d
+	picture = GFX_USA_event_203
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.203.a
+		news_event = {id = AOR_news.141}
+		create_country_leader = {#欧文·扬
+			name = "Owen_Young"
+			desc = "Owen_Young_desc"
+			picture = "gfx/leaders/USA/Owen_Young.png"
+			expire = "1953.3.1"
+			ideology = market_liberalism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+
+
 country_event = {
 	id = USA.10000 
 	title = USA.10000.t

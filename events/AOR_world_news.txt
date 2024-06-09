@@ -2143,3 +2143,28 @@ news_event = {#美国西部再次陷入危机
 	}
 }
 
+news_event = {#美国哈定总统被刺杀身亡！！！
+	id = AOR_news.140
+	title = AOR_news.140.t
+	desc = AOR_news.140.d
+	picture = GFX_AOR_news.140_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.140.a
+	}
+}
+
+news_event = {#美国1924总统大选结果出炉
+	id = AOR_news.141
+	title = AOR_news.141.t
+	desc = AOR_news.141.d
+	picture = GFX_AOR_news.141_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.141.a
+	}
+}
