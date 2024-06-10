@@ -780,11 +780,9 @@ news_event = { #三廿运动！（ 中国爆发大规模抗议！）
 	title = AOR_news.49.t
 	desc = AOR_news.49.d
 	picture = GFX_AOR_news.49_pic
-	is_triggered_only = yes 
 	fire_only_once = yes
 	major = yes
-	immediate = {
-	}
+
 	option = {
 		name = AOR_news.49.a
 	}
@@ -1997,15 +1995,15 @@ news_event = {#冯玉祥支持广州共和
 }
 
 news_event = {#中国宣布出兵中亚
-	id = AOR_aor_news.129
-	title = AOR_aor_news.129.t
-	desc = AOR_aor_news.129.d
-	picture = GFX_AOR_aor_news.129_pic
+	id = AOR_news.129
+	title = AOR_news.129.t
+	desc = AOR_news.129.d
+	picture = GFX_AOR_news.129_pic
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = AOR_aor_news.129.a
+		name = AOR_news.129.a
 	}
 }
 
