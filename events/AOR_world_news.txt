@@ -2168,3 +2168,30 @@ news_event = {#美国1924总统大选结果出炉
 		name = AOR_news.141.a
 	}
 }
+
+news_event = {#日本关东军发生暴动
+	id = AOR_news.142
+	title = AOR_news.142.t
+	desc = AOR_news.142.d
+	picture = GFX_AOR_news.142_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.142.a
+	}
+}
+
+news_event = {#中国总统黎元洪出逃！
+	id = AOR_news.143
+	title = AOR_news.143.t
+	desc = AOR_news.143.d
+	picture = GFX_AOR_news.143_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.143.a
+	}
+}
+

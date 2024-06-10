@@ -12,6 +12,7 @@ country_event = {
 		}
 	option = {
 		name = JAP.1.a
+		news_event = {id = AOR_news.142}
 		JAP = {
 			leave_faction = yes
 	    }
