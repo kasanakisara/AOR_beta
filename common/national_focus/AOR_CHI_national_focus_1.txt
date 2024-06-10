@@ -104,7 +104,6 @@ icon=AOR_unkown
 		completion_reward={
 		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest_decision
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
-		news_event = {id=AOR_news.129}
 		set_country_flag = unlock_CHI_Reclaiming_outer_northwest
 		}
 	}

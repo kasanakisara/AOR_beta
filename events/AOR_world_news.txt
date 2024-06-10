@@ -259,6 +259,7 @@ news_event = { #1920比荷卢奥运会
 	trigger = {
 	    date > 1920.8.28
 		date < 1920.8.30
+		tag = BNL
 	}
 fire_only_once = yes
 	option = {
@@ -282,6 +283,7 @@ news_event = { #1924巴黎奥运会
 	trigger = {
 	    date > 1924.5.6
 		date < 1924.5.8
+		tag = FRA
 	}
 fire_only_once = yes
     
@@ -299,6 +301,7 @@ news_event = { #电视被发明
 	trigger = {
 	    date > 1925.10.2
 		date < 1925.10.4
+		tag = ENG
 	}
 fire_only_once = yes
     
@@ -316,6 +319,7 @@ news_event = { #青霉素被发现
 	trigger = {
 	    date > 1920.9.14
 		date < 1920.9.16
+		tag = ENG
 	}
 fire_only_once = yes
     

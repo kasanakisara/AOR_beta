@@ -576,6 +576,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.15.a
+		news_event = {id=AOR_news.129}
 		set_country_flag = chi_waixibeizhanzheng
 	}
 }
