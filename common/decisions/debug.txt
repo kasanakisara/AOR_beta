@@ -36,4 +36,21 @@ SWE_Hackers_debug = {
             country_event = { id = USA.100 days = 0 }
         }
     }
+
+    ENG_focus_decision = {
+        avaliable = {
+            is_debug = yes
+            tag = ENG
+        }
+        visible = {
+            is_debug = yes
+            tag = ENG
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            load_focus_tree = AOR_ENG_focus_tree_1
+        }
+    }
 }
