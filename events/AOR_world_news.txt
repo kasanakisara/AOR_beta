@@ -1110,6 +1110,7 @@ news_event = { #米老鼠！！！！
 	trigger = {
 	    date > 1928.11.27
 		date < 1928.11.29
+		tag = USA
 	}
 	option = {
 		name = AOR_news.58.a
@@ -1162,6 +1163,7 @@ news_event = { #澳大利亚1919选举
 	trigger = {
 	    date > 1919.12.12
 		date < 1919.12.14
+		tag = AST
 	}
 	option = {
 		name = AOR_news.59.a
@@ -1202,6 +1204,7 @@ news_event = { #澳大利亚警察罢工
 	major = yes
 	trigger = {
 	    date > 1923.11.1
+		tag = AST
 	}
 	mean_time_to_happen = { days = 1}
 	option = {
