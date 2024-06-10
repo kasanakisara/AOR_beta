@@ -775,17 +775,14 @@ news_event = { #英日提议将青岛划给日本，学生经济会议
 	}
 }
 
-news_event = { #三廿运动！
+news_event = { #三廿运动！（ 中国爆发大规模抗议！）
 	id = AOR_news.49
 	title = AOR_news.49.t
 	desc = AOR_news.49.d
 	picture = GFX_AOR_news.49_pic
+	is_triggered_only = yes 
 	fire_only_once = yes
 	major = yes
-	trigger = {
-	    date > 1920.3.19
-		date < 1920.3.21
-	}
 	immediate = {
 	}
 	option = {
@@ -1999,16 +1996,16 @@ news_event = {#冯玉祥支持广州共和
 	}
 }
 
-news_event = {#中国爆发大规模抗议（三卅运动）！！！
-	id = AOR_news.129
-	title = AOR_news.129.t
-	desc = AOR_news.129.d
-	picture = GFX_AOR_news.129_pic
+news_event = {#中国宣布出兵中亚
+	id = AOR_aor_news.129
+	title = AOR_aor_news.129.t
+	desc = AOR_aor_news.129.d
+	picture = GFX_AOR_aor_news.129_pic
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = AOR_news.129.a
+		name = AOR_aor_news.129.a
 	}
 }
 
@@ -2192,6 +2189,19 @@ news_event = {#中国总统黎元洪出逃！
 
 	option = {
 		name = AOR_news.143.a
+	}
+}
+
+news_event = {#中国总统黎元洪出逃！
+	id = AOR_news.144
+	title = AOR_news.144.t
+	desc = AOR_news.144.d
+	picture = GFX_AOR_news.144_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.144.a
 	}
 }
 

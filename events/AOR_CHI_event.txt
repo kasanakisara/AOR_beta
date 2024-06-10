@@ -116,7 +116,8 @@ country_event = {
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
 	trigger = {
-		date > 1920.3.10
+		date > 1920.3.18
+		date < 1920.3.21
 		tag = CHI
 	}
 	fire_only_once = yes
@@ -124,7 +125,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.5.a
-		news_event = {id=AOR_news.129}
+		news_event = {id=AOR_news.49}
 	}
 }
 

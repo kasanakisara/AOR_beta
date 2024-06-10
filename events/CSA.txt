@@ -136,7 +136,7 @@ country_event = {
 }
 
 country_event = {
-	id = CSA.107 #美国内战北方胜利（南方）
+	id = CSA.107 #美国内战胜利（南方）
 	title = CSA.107.t
 	desc = CSA.107.d
 	picture = GFX_CSA_event_107
@@ -165,7 +165,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=CSA.107.a
-		news_event = {id=AOR_news.129}
+		news_event = {id=AOR_news.144}
 	}	
 }
 
