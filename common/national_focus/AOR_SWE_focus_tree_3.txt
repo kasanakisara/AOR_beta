@@ -1,0 +1,299 @@
+focus_tree = {
+	id = AOR_SWE_focus_tree_3
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	default = no
+	focus = {
+		id = SWE_The_New_King
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 149
+		y = 1
+
+	}
+	focus = {
+		id = SWE_Rebuild_Army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_New_King
+		}
+		x = 135
+		y = 2
+
+	}
+	focus = {
+		id = SWE_June_Crisis
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_The_New_King
+		}
+		x = 149
+		y = 3
+
+	}
+	focus = {
+		id = SWE_Kings_Government
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_June_Crisis
+		}
+		mutually_exclusive = {
+			focus = SWE_Parliament_Government
+		}
+		x = 147
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Control_Army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_Kings_Government
+		}
+		x = 147
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Third_Lockdown
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_Control_Army
+		}
+		x = 147
+		y = 6
+
+	}
+	focus = {
+		id = SWE_Parliament_Government
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_June_Crisis
+		}
+		mutually_exclusive = {
+			focus = SWE_Kings_Government
+		}
+		x = 151
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Continue_Grand_League
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_Parliament_Government
+		}
+		x = 151
+		y = 5
+
+	}
+	focus = {
+		id = SWE_For_People
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_Continue_Grand_League
+		}
+		x = 151
+		y = 6
+
+	}
+	focus = {
+		id = SWE_Economy_Rev
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_The_New_King
+		}
+		x = 163
+		y = 2
+
+	}
+	focus = {
+		id = SWE_Stop_Finicial_Limit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Economy_Rev
+		}
+		x = 163
+		y = 3
+
+	}
+	focus = {
+		id = SWE_Keep_Karlstard
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stop_Finicial_Limit
+		}
+		mutually_exclusive = {
+			focus = SWE_Great_Free_Market
+		}
+		x = 159
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Nationalize_Key
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Keep_Karlstard
+		}
+		x = 157
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Great_Free_Market
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Stop_Finicial_Limit
+		}
+		mutually_exclusive = {
+			focus = SWE_Keep_Karlstard
+		}
+		x = 167
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Foreign_Invest
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Keep_Karlstard
+			focus = SWE_Great_Free_Market
+		}
+		x = 163
+		y = 5
+
+	}
+	focus = {
+		id = SWE_The_West
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Foreign_Invest
+		}
+		x = 162
+		y = 6
+
+	}
+	focus = {
+		id = SWE_The_East
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Foreign_Invest
+		}
+		x = 164
+		y = 6
+
+	}
+	focus = {
+		id = SWE_Abandon_Limit
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Great_Free_Market
+		}
+		x = 167
+		y = 5
+
+	}
+	focus = {
+		id = SWE_More_Invest
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Great_Free_Market
+		}
+		x = 169
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Cut_Tax
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Abandon_Limit
+		}
+		prerequisite = {
+			focus = SWE_More_Invest
+		}
+		x = 167
+		y = 6
+
+	}
+	focus = {
+		id = SWE_Haakon_not_left
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_For_People
+			focus = SWE_Third_Lockdown
+		}
+		x = 149
+		y = 7
+
+	}
+	focus = {
+		id = SWE_Continue_Welfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Keep_Karlstard
+		}
+		x = 159
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Anti_Toracce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Continue_Welfare
+		}
+		prerequisite = {
+			focus = SWE_Nationalize_Key
+		}
+		x = 159
+		y = 6
+
+	}
+	focus = {
+		id = SWE_World_Ahead
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_Cut_Tax
+			focus = SWE_Anti_Toracce
+		}
+		prerequisite = {
+			focus = SWE_The_West
+		}
+		prerequisite = {
+			focus = SWE_The_East
+		}
+		x = 163
+		y = 7
+
+	}
+}
