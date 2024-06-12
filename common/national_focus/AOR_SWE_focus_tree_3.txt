@@ -23,8 +23,77 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_The_New_King
 		}
-		x = 135
+		x = 141
 		y = 2
+
+	}
+	focus = {
+		id = SWE_Miltary_Committee
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Rebuild_Army
+		}
+		x = 141
+		y = 3
+
+	}
+	focus = {
+		id = SWE_Loyalty_Highest
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Miltary_Committee
+		}
+		x = 139
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Prussian_Training_Act
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Loyalty_Highest
+		}
+		x = 139
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Indigenisation_Miltary_Industry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Miltary_Committee
+		}
+		x = 143
+		y = 4
+
+	}
+	focus = {
+		id = SWE_Research_Agreements
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Indigenisation_Miltary_Industry
+		}
+		x = 143
+		y = 5
+
+	}
+	focus = {
+		id = SWE_Broke
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Prussian_Training_Act
+		}
+		prerequisite = {
+			focus = SWE_Research_Agreements
+		}
+		x = 141
+		y = 6
 
 	}
 	focus = {
@@ -111,13 +180,25 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SWE_Haakon_not_left
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SWE_For_People
+			focus = SWE_Third_Lockdown
+		}
+		x = 149
+		y = 7
+
+	}
+	focus = {
 		id = SWE_Economy_Rev
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_New_King
 		}
-		x = 163
+		x = 159
 		y = 2
 
 	}
@@ -128,7 +209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Economy_Rev
 		}
-		x = 163
+		x = 159
 		y = 3
 
 	}
@@ -140,9 +221,9 @@ focus_tree = {
 			focus = SWE_Stop_Finicial_Limit
 		}
 		mutually_exclusive = {
-			focus = SWE_Great_Free_Market
+			focus = SWE_Great_Liberta_Market
 		}
-		x = 159
+		x = 156
 		y = 4
 
 	}
@@ -153,12 +234,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Keep_Karlstard
 		}
-		x = 157
+		x = 154
 		y = 5
 
 	}
 	focus = {
-		id = SWE_Great_Free_Market
+		id = SWE_Great_Liberta_Market
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -167,7 +248,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SWE_Keep_Karlstard
 		}
-		x = 167
+		x = 162
 		y = 4
 
 	}
@@ -177,9 +258,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Keep_Karlstard
-			focus = SWE_Great_Free_Market
+			focus = SWE_Great_Liberta_Market
 		}
-		x = 163
+		x = 159
 		y = 5
 
 	}
@@ -190,7 +271,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Foreign_Invest
 		}
-		x = 162
+		x = 158
 		y = 6
 
 	}
@@ -201,7 +282,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Foreign_Invest
 		}
-		x = 164
+		x = 160
 		y = 6
 
 	}
@@ -210,9 +291,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Great_Free_Market
+			focus = SWE_Great_Liberta_Market
 		}
-		x = 167
+		x = 162
 		y = 5
 
 	}
@@ -221,9 +302,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Great_Free_Market
+			focus = SWE_Great_Liberta_Market
 		}
-		x = 169
+		x = 164
 		y = 5
 
 	}
@@ -237,20 +318,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_More_Invest
 		}
-		x = 167
+		x = 162
 		y = 6
-
-	}
-	focus = {
-		id = SWE_Haakon_not_left
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = SWE_For_People
-			focus = SWE_Third_Lockdown
-		}
-		x = 149
-		y = 7
 
 	}
 	focus = {
@@ -260,7 +329,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Keep_Karlstard
 		}
-		x = 159
+		x = 156
 		y = 5
 
 	}
@@ -274,7 +343,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Nationalize_Key
 		}
-		x = 159
+		x = 156
 		y = 6
 
 	}
@@ -283,8 +352,8 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = SWE_Cut_Tax
 			focus = SWE_Anti_Toracce
+			focus = SWE_Cut_Tax
 		}
 		prerequisite = {
 			focus = SWE_The_West
@@ -292,8 +361,30 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_The_East
 		}
-		x = 163
+		x = 159
 		y = 7
+
+	}
+	focus = {
+		id = SWE_Total_Development
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Broke
+		}
+		x = 141
+		y = 7
+
+	}
+	focus = {
+		id = SWE_The_Final_Meeting
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_Haakon_not_left
+		}
+		x = 149
+		y = 11
 
 	}
 }
