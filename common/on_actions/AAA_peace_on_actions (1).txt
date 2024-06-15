@@ -227,12 +227,7 @@ on_actions = {
 					}
 					white_peace = YUG
 				}
-				GRE = {
-					country_event = {
-						days = 90
-						id = GRE.14
-					}
-				}
+
 			}
 			else_if = {
 				limit = {
@@ -456,6 +451,9 @@ on_actions = {
 					transfer_state = 48
 				}
 				every_country = {
+					news_event = {
+						id = AOR_news.351
+					}
 					limit = {
 						has_war_with = BUL
 					}
@@ -490,6 +488,9 @@ on_actions = {
 					transfer_state = 103
 				}
 				every_country = {
+					news_event = {
+						id = AOR_news.351
+					}
 					limit = {
 						has_war_with = HUN
 					}
@@ -524,6 +525,9 @@ on_actions = {
 					}
 				}
 				every_country = {
+					news_event = {
+						id = AOR_news.352
+					}
 					limit = {
 						has_war_with = ROM
 					}
@@ -556,6 +560,9 @@ on_actions = {
 					set_cosmetic_tag = GRE_CON_2
 				}
 				every_country = {
+					news_event = {
+						id = AOR_news.352
+					}
 					limit = {
 						has_war_with = GRE
 					}
@@ -589,6 +596,9 @@ on_actions = {
 					}
 				}
 				every_country = {
+					news_event = {
+						id = AOR_news.352
+					}
 					limit = {
 						has_war_with = YUG
 					}

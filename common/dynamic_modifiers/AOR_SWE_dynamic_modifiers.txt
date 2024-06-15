@@ -7,3 +7,10 @@ AOR_SWE_Norweign_Independence_dynamic_modifier = {
     stability_factor = SWE_Norweign_Independence_stability_factor
     political_power_cost = SWE_Norweign_Independence_stability_power_cost
 }
+
+AOR_SWE_Trade_dynamic_modifier = {
+    enable = {
+        always = yes
+    }
+    consumer_goods_factor = SWE_Trade_consumer_goods_factor
+}

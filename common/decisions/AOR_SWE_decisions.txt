@@ -100,7 +100,7 @@ SWE_Norweign_Independence_decision_categories = {
         ai_will_do = {
             factor = 1
         }
-        cost = 20
+        cost = 45
         complete_effect = {
             PREV = {
                 add_extra_state_shared_building_slots = 2
@@ -130,7 +130,7 @@ SWE_Norweign_Independence_decision_categories = {
         ai_will_do = {
 			factor = 1
 		}
-        cost = 25
+        cost = 60
         complete_effect = {
             random_owned_controlled_state ={
                 limit = {
@@ -169,7 +169,7 @@ SWE_Norweign_Independence_decision_categories = {
         ai_will_do = {
             factor = 1
         }
-        cost = 20
+        cost = 50
         complete_effect = {
             random_owned_controlled_state = {
                 limit = {
@@ -246,6 +246,28 @@ SWE_Norweign_Independence_decision_categories = {
             add_popularity = { ideology = Marxism popularity = -0.15 }
             add_to_variable = { SWE_Norweign_Independence_value = -5 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+}
+
+SWE_Trade_decision_categories = {
+    SWE_Boost_Government_Spending = { #提高政府支出
+        avaliable = { has_idea = SWE_Open_the_door }
+        visible = { has_idea = SWE_Open_the_door }
+        days_re_enable = 35
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = 5 }
+            custom_effect_tooltip = SWE_Add_Government_Spending_tt
+        }
+    }
+
+    SWE_Lower_Government_Spending = { #减少政府支出
+        avaliable = { has_idea = SWE_Open_the_door }
+        visible = { has_idea = SWE_Open_the_door }
+        days_re_enable = 35
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = -5 }
+            custom_effect_tooltip = SWE_Lower_Government_Spending_tt
         }
     }
 }

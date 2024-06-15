@@ -1,17 +1,36 @@
 add_namespace = JAP
 
 country_event = {
-	id = JAP.1   #大正天皇驾崩（昭和即位）
+	id = JAP.1   #朝鲜关东军暴乱
 	title = JAP.1.t
 	desc = JAP.1.d
 	picture = GFX_JAP_event_1
 	fire_only_once = yes
 	trigger = {
 		tag = JAP
-		date > 1926.12.25
+		date > 1920.12.25
 		}
 	option = {
 		name = JAP.1.a
+		news_event = {id = AOR_news.142}
+		JAP = {
+			leave_faction = yes
+	    }
+	}
+}
+
+country_event = {
+	id = JAP.2   #大正天皇驾崩（昭和即位）
+	title = JAP.2.t
+	desc = JAP.2.d
+	picture = GFX_JAP_event_2
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1926.12.25
+		}
+	option = {
+		name = JAP.2.a
 		news_event = {id=AOR_news.134}
 		JAP = {
 		set_politics = {ruling_party = Absolutism }
@@ -29,20 +48,19 @@ country_event = {
 			traits = {
 			    }
 		    }
-			leave_faction = yes
 	    }
 	}
 }
 
 country_event = {
-	id = JAP.2   #中日战争
-	title = JAP.2.t
-	desc = JAP.2.d
-	picture = GFX_JAP_event_2
+	id = JAP.3   #中日战争
+	title = JAP.3.t
+	desc = JAP.3.d
+	picture = GFX_JAP_event_3
 	is_triggered_only = yes	
 	fire_only_once = yes
 	option = {
-		name = JAP.2.a
+		name = JAP.3.a
 		news_event = {id=AOR_news.135}
 		JAP = {
 			declare_war_on = { 
@@ -58,10 +76,10 @@ country_event = {
 }
 
 country_event = {
-	id = JAP.3   #中日战争（KMT-日方战败）
-	title = JAP.3.t
-	desc = JAP.3.d
-	picture = GFX_JAP_event_3
+	id = JAP.4   #中日战争（KMT-日方战败）
+	title = JAP.4.t
+	desc = JAP.4.d
+	picture = GFX_JAP_event_4
 	trigger = {
 		tag = KMT
 		852 = { is_owned_by = KMT }
@@ -69,17 +87,28 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = JAP.3.a
+		name = JAP.4.a
 		news_event = {id=AOR_news.137}
 		KMT = {
 			transfer_state = 745
 			transfer_state = 524
+			transfer_state = 743
 
 			add_state_core = 745
 			add_state_core = 524
+			add_state_core = 743
+
+			annex_country = { 
+				target = KOR
+				transfer_troops = no 
+			}
 		}
 		JAP = {
 			white_peace = KMT
+			add_popularity = { ideology = Absolutism popularity = -0.1 }
+			add_popularity = { ideology = AUT_democratic  popularity = -0.1 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			add_popularity = { ideology = Fascism popularity = -0.2 }
 		}
 		RUS = {
 			annex_country = { 
@@ -88,11 +117,7 @@ country_event = {
 			}
 		}
 		KOR = {
-			set_country_flag = KOR_1
-			set_autonomy = {
-				target = KOR
-				autonomy_state = autonomy_free 
-			}
+			drop_cosmetic_tag = yes
 			annex_country = { 
 				target = PYO 
 				transfer_troops = no 
@@ -110,10 +135,10 @@ country_event = {
 }
 
 country_event = {
-	id = JAP.4   #中日战争（UPC-日方战败）
-	title = JAP.4.t
-	desc = JAP.4.d
-	picture = GFX_JAP_event_4
+	id = JAP.5   #中日战争（UPC-日方战败）
+	title = JAP.5.t
+	desc = JAP.5.d
+	picture = GFX_JAP_event_5
 	trigger = {
 		tag = UPC
 		852 = { is_owned_by = UPC }
@@ -121,17 +146,28 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = JAP.4.a
+		name = JAP.5.a
 		news_event = {id=AOR_news.138}
 	UPC = {
-			transfer_state = 745
-			transfer_state = 524
+		    transfer_state = 745
+		    transfer_state = 524
+		    transfer_state = 743
 
-			add_state_core = 745
-			add_state_core = 524
+		    add_state_core = 745
+		    add_state_core = 524
+		    add_state_core = 743
+
+			annex_country = { 
+				target = KOR
+				transfer_troops = no 
+			}
 		}
 		JAP = {
 			white_peace = UPC
+			add_popularity = { ideology = Absolutism popularity = -0.1 }
+			add_popularity = { ideology = AUT_democratic  popularity = -0.1 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
+			add_popularity = { ideology = Fascism popularity = -0.2 }
 		}
 		RUS = {
 			annex_country = { 
@@ -140,11 +176,7 @@ country_event = {
 			}
 		}
 		KOR = {
-			set_country_flag = KOR_1
-			set_autonomy = {
-				target = KOR
-				autonomy_state = autonomy_free 
-			}
+			drop_cosmetic_tag = yes
 			annex_country = { 
 				target = PYO 
 				transfer_troops = no 

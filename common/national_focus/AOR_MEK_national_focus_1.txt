@@ -1,175 +1,179 @@
-focus_tree={
-	id=AOR_MEK_national_focus_1
-	country={
-		factor=0
-		modifier={
-			add=10
-			tag=mek
+focus_tree = {
+	id = AOR_MEK_national_focus_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = mek
 		}
 	}
-	default=no
-	continuous_focus_position = { x = 1400 y = 2000 }
-	focus={
+	default = no
+	continuous_focus_position = {
+		x = 1400
+		y = 2000
+	}
+	focus = {
 		id = MEK_The_Last_Place_of_Freedom
-		x=6
-		y=0
-		cost=10
-		ai_will_do={
-			factor=1
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
 		}
-		available_if_capitulated=yes
-		search_filters={
+		available_if_capitulated = yes
+		search_filters = {
 		}
-		completion_reward={
+		completion_reward = {
 			custom_effect_tooltip = MEK.1.tt
-			hidden_effect = {
 			add_political_power = 150
-			}
 		}
 	}
 	focus = {
 		id = MEK_Integrating_into_the_darkness
-		x=6
-		y=1
-		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
-		cost=1
-		ai_will_do={
-			factor=1
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = MEK_The_Last_Place_of_Freedom
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 1
 		}
 		available = {
 			date > 1923.4.1
-			NOT = {has_idea = Compact_of_German_Confederation }
+			NOT = {
+				has_idea = Compact_of_German_Confederation
+			}
 		}
-		available_if_capitulated=yes
-		search_filters={
+		available_if_capitulated = yes
+		search_filters = {
 		}
-		completion_reward={
+		completion_reward = {
 			custom_effect_tooltip = MEK.2_tt
-			hidden_effect = {
-			add_ideas =  closed_economy
+			add_ideas = closed_economy
 			add_ideas = service_by_requirement
 			add_ideas = war_economy
-			}
 		}
 	}
-	focus={
-		id=MEK_Protecting_our_people
-		x=1
-		y=1
-		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Protecting_our_people
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = MEK_The_Last_Place_of_Freedom
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 10
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.3_tt
-			hidden_effect = {
 			add_stability = 0.05
-			}
 		}
 	}
-	focus={
-		id=MEK_Protecting_our_country
-		x=11
-		y=1
-		prerequisite={focus=MEK_The_Last_Place_of_Freedom}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Protecting_our_country
+		x = 11
+		y = 1
+		prerequisite = {
+			focus = MEK_The_Last_Place_of_Freedom
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 10
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.4_tt
-			hidden_effect = {
 			add_war_support = 0.05
-			}
 		}
 	}
-	focus={
-		id=MEK_Protectionist_industrialization
-		x=2
-		y=2
-		prerequisite={focus=MEK_Protecting_our_people}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Protectionist_industrialization
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = MEK_Protecting_our_people
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.5_tt
-			hidden_effect = {
 			61 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 				}
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_Walking_with_the_Church
-		x=0
-		y=2
-		prerequisite={focus=MEK_Protecting_our_people}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Walking_with_the_Church
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = MEK_Protecting_our_people
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.6_tt
-			hidden_effect = {
 			add_manpower = 300
-			}
 		}
 	}
-	focus={
-		id=MEK_Enable_Political_censorship_system
-		x=10
-		y=2
-		prerequisite={focus=MEK_Protecting_our_country}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Enable_Political_censorship_system
+		x = 10
+		y = 2
+		prerequisite = {
+			focus = MEK_Protecting_our_country
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.7_tt
-			hidden_effect = {
 			add_popularity = {
 				ideology = FRE_democratic
 				popularity = 0.1
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_Border_fortressization
-		x=12
-		y=2
-		prerequisite={focus=MEK_Protecting_our_country}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Border_fortressization
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = MEK_Protecting_our_country
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.8_tt
-			hidden_effect = {
 			add_building_construction = {
 				type = bunker
 				level = 1
@@ -188,54 +192,59 @@ focus_tree={
 				instant_build = yes
 				province = 268
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_Supporting_agricultural_development
-		x=0
-		y=4
-		prerequisite={focus=MEK_Walking_with_the_Church}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Supporting_agricultural_development
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = MEK_Walking_with_the_Church
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.9_tt
-			hidden_effect = {
 			61 = {
-		    	add_building_construction = {
-		    		type = infrastructure
-		    		level = 1
-		    	}
-			}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
 			}
 		}
 	}
-	focus={
-		id=MEK_Expand_the_Guard
-		x=10
-		y=3
-		prerequisite={focus=MEK_Enable_Political_censorship_system}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Expand_the_Guard
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = MEK_Enable_Political_censorship_system
 		}
-		available_if_capitulated=yes
-		search_filters={
-			
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.10_tt
-			hidden_effect = {
 			division_template = {
 				name = "守备队"
 				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
 				}
 			}
 			create_unit = {
@@ -243,26 +252,24 @@ focus_tree={
 				owner = MEK
 				amount = 1
 			}
-			}
-			
-			
 		}
 	}
-	focus={
-		id=MEK_Urban_fortressization
-		x=12
-		y=4
-		prerequisite={focus=MEK_Border_fortressization}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Urban_fortressization
+		x = 12
+		y = 4
+		prerequisite = {
+			focus = MEK_Border_fortressization
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.11_tt
-			hidden_effect = {
 			add_building_construction = {
 				type = bunker
 				level = 1
@@ -293,227 +300,238 @@ focus_tree={
 				instant_build = yes
 				province = 293
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_Please_show_your_credentials
-		x=9
-		y=5
-		prerequisite={focus=MEK_Expand_the_Guard}
-		prerequisite={focus=MEK_Urban_fortressization}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Please_show_your_credentials
+		x = 9
+		y = 5
+		prerequisite = {
+			focus = MEK_Expand_the_Guard
 		}
-		available_if_capitulated=yes
-		search_filters={
+		prerequisite = {
+			focus = MEK_Urban_fortressization
 		}
-		completion_reward={
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.12_tt
-			hidden_effect = {
 			add_political_power = 50
 			add_manpower = 250
-			}
 		}
 	}
-	focus={
-		id=MEK_Fill_inventory
-		x=3
-		y=5
-		prerequisite={focus=MEK_Supporting_agricultural_development}
-		prerequisite={focus=MEK_Expand_the_seaport}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Fill_inventory
+		x = 3
+		y = 5
+		prerequisite = {
+			focus = MEK_Supporting_agricultural_development
 		}
-		available_if_capitulated=yes
-		search_filters={
+		prerequisite = {
+			focus = MEK_Expand_the_seaport
 		}
-		completion_reward={
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.20_tt
-			hidden_effect = {
 			add_political_power = -20
 			send_equipment = {
 				equipment = infantry_equipment_0
 				amount = 300
 				target = MEK
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_exchange
-		x=6
-		y=6
-		prerequisite={focus=MEK_Resilience_and_unyielding}
-		prerequisite={focus=MEK_Fill_inventory}
-		prerequisite={focus=MEK_Please_show_your_credentials}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_exchange
+		x = 6
+		y = 6
+		prerequisite = {
+			focus = MEK_Resilience_and_unyielding
 		}
-		available_if_capitulated=yes
-		search_filters={
+		prerequisite = {
+			focus = MEK_Fill_inventory
 		}
-		completion_reward={
+		prerequisite = {
+			focus = MEK_Please_show_your_credentials
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.13_tt
-			hidden_effect = {
 			add_opinion_modifier = {
 				target = FRA
 				modifier = relationship_with_FEA_111
-			}			
+			}
 			add_opinion_modifier = {
 				target = ENG
 				modifier = relationship_with_FEA_111
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_Planning_area
-		x=4
-		y=7
-		prerequisite={focus=MEK_exchange}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Planning_area
+		x = 4
+		y = 7
+		prerequisite = {
+			focus = MEK_exchange
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.14_tt
-			hidden_effect = {
-				61 = {
-			    	add_state_modifier = {
-				    	modifier = { LOCAL_BUILDING_SLOTS_FACTOR = 1 }
+			61 = {
+				add_state_modifier = {
+					modifier = {
+						LOCAL_BUILDING_SLOTS_FACTOR = 1
 					}
 				}
-				862 = {
+			}
+			862 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_The_dazzling_pearl_of_deutschland
-		x=8
-		y=7
-		prerequisite={focus=MEK_exchange}
-		cost=4
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_The_dazzling_pearl_of_deutschland
+		x = 8
+		y = 7
+		prerequisite = {
+			focus = MEK_exchange
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 4
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.15_tt
-			hidden_effect = {
 			add_war_support = 0.1
 			add_timed_idea = {
 				idea = MEK_The_dazzling_pearl_of_deutschland
 				days = 360
 			}
-			}
 		}
 	}
-	focus={
-		id=MEK_stabilization
-		x=4
-		y=8
-		prerequisite={focus=MEK_Planning_area}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_stabilization
+		x = 4
+		y = 8
+		prerequisite = {
+			focus = MEK_Planning_area
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.16_tt
-			hidden_effect = {
 			61 = {
-		    	add_building_construction = {
-		    		type = industrial_complex
-		    		level = 1
-		    	}
-			}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
 			}
 		}
 	}
-	focus={
-		id=MEK_Free_Harbor
-		x=8
-		y=8
-		prerequisite={focus=MEK_The_dazzling_pearl_of_deutschland}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Free_Harbor
+		x = 8
+		y = 8
+		prerequisite = {
+			focus = MEK_The_dazzling_pearl_of_deutschland
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.17_tt
-			hidden_effect = {
 			61 = {
 				add_building_construction = {
-		    		type = dockyard
-		    		level = 2
-		    	}
-			}
+					type = dockyard
+					level = 2
+				}
 			}
 		}
 	}
-	focus={
-		id=MEK_Expand_the_seaport
-		x=2
-		y=3
-		prerequisite={focus=MEK_Protectionist_industrialization}
-		cost=5
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Expand_the_seaport
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = MEK_Protectionist_industrialization
 		}
-		available_if_capitulated=yes
-		search_filters={
+		cost = 5
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.18_tt
-			hidden_effect = {
 			61 = {
 				add_building_construction = {
-		    		type = dockyard
-		    		level = 1
-		    	}
-			}
+					type = dockyard
+					level = 1
+				}
 			}
 		}
 	}
-	focus={
-		id=MEK_Resilience_and_unyielding
-		x=6
-		y=4
-		prerequisite={focus=MEK_Expand_the_seaport}
-		prerequisite={focus=MEK_Expand_the_Guard}
-		cost=10
-		ai_will_do={
-			factor=1
+	focus = {
+		id = MEK_Resilience_and_unyielding
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = MEK_Expand_the_seaport
 		}
-		available_if_capitulated=yes
-		search_filters={
+		prerequisite = {
+			focus = MEK_Expand_the_Guard
 		}
-		completion_reward={
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
 			custom_effect_tooltip = MEK.19_tt
-			hidden_effect = {
 			add_war_support = 0.1
 			add_stability = 0.1
 			add_political_power = 150
-		}
 		}
 	}
 }

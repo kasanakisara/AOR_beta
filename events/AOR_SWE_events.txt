@@ -519,3 +519,39 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = SWE.19  #北境岐旅 I
+    title = SWE.19.t
+    desc = SWE.19.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.19.a
+        hidden_effect = {
+            country_event = { id = SWE.20 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE.20  #北境岐旅 II
+    title = SWE.20.t
+    desc = SWE.20.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.20.a
+        hidden_effect = {
+            country_event = { id = SWE.21 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE.21  #北境岐旅 III
+    title = SWE.21.t
+    desc = SWE.21.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.21.a
+    }
+}
