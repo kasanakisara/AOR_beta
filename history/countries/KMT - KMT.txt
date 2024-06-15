@@ -39,11 +39,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Liao_Zhong_Kai"
+	desc = "POLITICS_MON_DESC"
+	picture = "gfx/leaders/KMT/Liao_Zhong_Kai.dds"
+	expire = "1965.1.1"
+	ideology = rad_san
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Cai_e"
 	desc = "POLITICS_MON_DESC"
 	picture = "gfx/leaders/KMT/Cai_e.png"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chen_Qi_Mei"
+	desc = "POLITICS_MON_DESC"
+	picture = "gfx/leaders/KMT/Chen_Qi_Mei.dds"
+	expire = "1965.1.1"
+	ideology = uni_san
 	traits = {
 	}
 }
