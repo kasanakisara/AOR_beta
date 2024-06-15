@@ -187,7 +187,6 @@ country_event = {
 		hidden_effect = {
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
-				drop_cosmetic_tag = yes
 			}
 		}
 	}
@@ -197,7 +196,6 @@ country_event = {
 		hidden_effect = {
 			UPC = {
 				load_oob = "UPC_M_Nandu"
-				drop_cosmetic_tag = yes
 			}
 		}
 	}
@@ -465,12 +463,11 @@ country_event = {
 	picture = GFX_Portrait_of_Tirpitz
 	fire_only_once = yes
 	immediate = {
-		#hidden_effect = {
-			#UPC = {
-				#load_oob = "UPC_Nandu"
-				#drop_cosmetic_tag = yes
-			#}
-		#}
+		hidden_effect = {
+			UPC = {
+				drop_cosmetic_tag = yes
+			}
+		}
 	}
 	option = {
 		name = CHI.11.a
@@ -489,12 +486,11 @@ country_event = {
 	}
 	fire_only_once = yes
 	immediate = {
-		#hidden_effect = {
-			#KMT = {
-				#load_oob = "AOR_LAND_CHI_KMT"
-				#drop_cosmetic_tag = yes
-			#}
-		#}
+		hidden_effect = {
+			KMT = {
+				drop_cosmetic_tag = yes
+			}
+		}
 	}
 	option = {
 		name = CHI.12.a
