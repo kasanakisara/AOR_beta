@@ -524,6 +524,7 @@ country_event = {
 				load_oob = "CSA_Civilwar"
 				
 				set_politics = {ruling_party = CON_democratic }
+				set_cosmetic_tag = CSA_1_CON_democratic
 				create_country_leader = {
 					name = "CSA_TGSC"
 					desc = "CSA_TGSC_DESC"
@@ -605,6 +606,7 @@ country_event = {
 				load_oob = "CSA_Civilwar"
 				
 				set_politics = {ruling_party = CON_democratic }
+				set_cosmetic_tag = CSA_1_CON_democratic
 				create_country_leader = {
 					name = "CSA_TGSC"
 					desc = "CSA_TGSC_DESC"
