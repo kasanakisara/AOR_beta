@@ -150,7 +150,6 @@ country_event = {
 	option = {
 		name = JAP.5.a
 		country_event = { days = 360 id = JAP.6 }
-		#news_event = {id=AOR_news.137}
 	}
 }
 
@@ -169,7 +168,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.6.a
-		#news_event = {id=AOR_news.137}
+		news_event = {id=AOR_news.146}
 		KMT = {
 			transfer_state = 745
 			transfer_state = 743
@@ -262,7 +261,6 @@ country_event = {
 	option = {
 		name = JAP.8.a
 		country_event = { days = 360 id = JAP.9 }
-		#news_event = {id=AOR_news.137}
 	}
 }
 
@@ -281,7 +279,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.9.a
-		#news_event = {id=AOR_news.137}
+		news_event = {id=AOR_news.147}
 		UPC = {
 			transfer_state = 745
 			transfer_state = 743

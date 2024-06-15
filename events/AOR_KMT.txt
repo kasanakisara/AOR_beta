@@ -60,7 +60,7 @@ country_event = {#昆明政府政变
         country_event = { days = 470  id = KMT.7 }
         news_event = {id=AOR_news.131}
         KMT = {
-            set_cosmetic_tag = KMT.7
+            set_cosmetic_tag = KMT_4
             add_popularity = { ideology = FRE_democratic popularity = 0.1 }
             add_popularity = { ideology = CON_democratic popularity = 0.1 }
             add_popularity = { ideology = SOC_democratic popularity = 0.1 }
@@ -123,6 +123,7 @@ country_event = {#云贵内战（孙中山主导）
 	}
 	option = {
 		name = KMT.2.a
+        news_event = {id=AOR_news.145}
         KMT = {
         set_cosmetic_tag = KMT_5
         add_popularity = { ideology = FRE_democratic popularity = 0.1 }
@@ -486,6 +487,7 @@ country_event = {#昆明政府统一南方
         }
         option = {
             name = KMT.7.a
+            news_event = {id=AOR_news.145}
             KMT = {
             set_cosmetic_tag = KMT_5
             add_popularity = { ideology = FRE_democratic popularity = 0.05 }
@@ -648,6 +650,7 @@ country_event = {#昆明政府统一南方
         }
         option = {
             name = KMT.10.a
+            news_event = {id=AOR_news.145}
             KMT = {
             set_cosmetic_tag = KMT_5
             add_popularity = { ideology = FRE_democratic popularity = 0.05 }

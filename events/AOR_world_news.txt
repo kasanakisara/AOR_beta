@@ -2107,7 +2107,7 @@ news_event = {#底特律大暴动被平息
 	}
 }
 
-news_event = {#日本与中国国民政府签订和平协议
+news_event = {#日本与中国国民政府签订和平协议（大胜）
 	id = AOR_news.137
 	title = AOR_news.137.t
 	desc = AOR_news.137.d
@@ -2119,7 +2119,7 @@ news_event = {#日本与中国国民政府签订和平协议
 		name = AOR_news.137.a
 	}
 }
-news_event = {#日本与中国联省政府签订和平协议
+news_event = {#日本与中国联省政府签订和平协议（大胜）
 	id = AOR_news.138
 	title = AOR_news.138.t
 	desc = AOR_news.138.d
@@ -2197,7 +2197,7 @@ news_event = {#中国总统黎元洪出逃！
 	}
 }
 
-news_event = {#中国总统黎元洪出逃！
+news_event = {#美国联盟国政府赢得内战！
 	id = AOR_news.144
 	title = AOR_news.144.t
 	desc = AOR_news.144.d
@@ -2210,3 +2210,40 @@ news_event = {#中国总统黎元洪出逃！
 	}
 }
 
+news_event = {#中国云贵内战结束
+	id = AOR_news.145
+	title = AOR_news.145.t
+	desc = AOR_news.145.d
+	picture = GFX_AOR_news.145_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.145.a
+	}
+}
+
+news_event = {#日本与中国国民政府签订和平协议（小胜）
+	id = AOR_news.146
+	title = AOR_news.146.t
+	desc = AOR_news.146.d
+	picture = GFX_AOR_news.146_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.146.a
+	}
+}
+news_event = {#日本与中国联省政府签订和平协议（小胜）
+	id = AOR_news.147
+	title = AOR_news.147.t
+	desc = AOR_news.147.d
+	picture = GFX_AOR_news.147_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.147.a
+	}
+}
