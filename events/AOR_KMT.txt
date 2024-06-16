@@ -310,7 +310,7 @@ country_event = {#昆明政府统一南方
         option = {
             name = KMT.5.a
             news_event = {id=AOR_news.113}
-            country_event = { days = 90  id = CHI.37 }
+            country_event = { days = 90  id = CHI.38 }
             country_event = { days = 360  id = JAP.3 }
             set_capital = { state = 893 }
             KMT = {
