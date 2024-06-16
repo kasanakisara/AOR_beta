@@ -1,6 +1,6 @@
 add_namespace = PRC
 
-country_event = {
+country_event = {#红军统一四川
 	id = PRC.1 
 	title = PRC.1.t
 	desc = PRC.1.d
@@ -31,5 +31,102 @@ country_event = {
             add_state_core = 751
             add_state_core = 434
 			}
-	}
-}
+	    }
+    }
+
+country_event = {#红军南下云贵
+	id = PRC.2 
+	title = PRC.2.t
+	desc = PRC.2.d
+	picture = GFX_PRC_event_2
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+		date > 1922.12.10
+        325 = { is_owned_by = UPC }
+        747 = { is_owned_by = UPC }
+        609 = { is_owned_by = UPC }
+        755 = { is_owned_by = UPC }
+    }
+
+
+    option = {
+		name = PRC.2.a
+		#news_event = {id=AOR_news.105}
+		PRC = {
+            load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
+            add_state_core = 906
+            add_state_core = 908
+            add_state_core = 753
+            add_state_core = 751
+            add_state_core = 434
+			}
+	    }
+    }
+
+country_event = {#红军统一云贵两广
+	id = PRC.3 
+	title = PRC.3.t
+	desc = PRC.3.d
+	picture = GFX_PRC_event_3
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+		date > 1922.12.10
+        PRC = {
+            owns_state = 901
+            owns_state = 593
+            owns_state = 592
+            owns_state = 919
+            owns_state = 904
+            owns_state = 900
+            owns_state = 594
+            owns_state = 902
+            owns_state = 599
+            owns_state = 903
+            owns_state = 759
+            owns_state = 591
+            owns_state = 602
+            owns_state = 746
+            owns_state = 750
+            owns_state = 907
+            owns_state = 748
+            owns_state = 603
+            owns_state = 325
+            owns_state = 609
+            owns_state = 755
+            owns_state = 747
+        }
+    }
+
+
+    option = {
+		name = PRC.3.a
+		#news_event = {id=AOR_news.105}
+		PRC = {
+            set_cosmetic_tag = PRC_1_Marxism
+            add_state_core = 901
+            add_state_core = 593
+            add_state_core = 592
+            add_state_core = 919
+            add_state_core = 904
+            add_state_core = 900
+            add_state_core = 594
+            add_state_core = 902
+            add_state_core = 599
+            add_state_core = 903
+            add_state_core = 759
+            add_state_core = 591
+            add_state_core = 602
+            add_state_core = 746
+            add_state_core = 750
+            add_state_core = 907
+            add_state_core = 748
+            add_state_core = 603
+            add_state_core = 325
+            add_state_core = 609
+            add_state_core = 755
+            add_state_core = 747
+			}
+	    }
+    }

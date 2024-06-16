@@ -1673,6 +1673,39 @@ on_actions = {
 					}
 				}
 			}
+			#广州政府——四川工农
+			else_if = {
+				limit = {
+					#南京政府胜利
+					FROM = {
+						original_tag = UPC
+					}
+					ROOT = {
+					original_tag = PRC
+					}
+				}
+				UPC = {
+				annex_country = {
+				    target = PRC
+				}
+			}
+		}
+            else_if = {
+				limit = {
+					#四川工农胜利
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+					original_tag = UPC
+					}
+				}
+				PRC = {
+				annex_country = {
+				    target = UPC
+				}
+			}
+		}
 			#南京政府——川边
 			else_if = {
 				limit = {
@@ -1745,7 +1778,7 @@ on_actions = {
 			#匈牙利打死克罗地亚
 			else_if = {
 				limit = {
-					#昆明政府胜利
+					#匈牙利胜利
 					FROM = {
 						original_tag = HUN
 					}
