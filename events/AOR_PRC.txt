@@ -53,6 +53,9 @@ country_event = {#红军南下云贵
         }
         UPC = {
             controls_state = 325
+            controls_state = 609
+            controls_state = 755
+            controls_state = 747
         }
         #747 = { is_owned_by = UPC }
         #609 = { is_owned_by = UPC }
@@ -68,6 +71,8 @@ country_event = {#红军南下云贵
                     target = UPC
                     type = civil_war
                 } 
+            load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
+            load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
 			}
 	    }
