@@ -78,6 +78,19 @@ country_event = {#红军南下云贵
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
+            load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
+            load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
+            add_ideas = CHI_gemintongyizhixi
+			}
+	    }
+    option = {
+		name = PRC.2.b
+		news_event = {id=AOR_news.148}
+		PRC = {
+                declare_war_on = { 
+                    target = UPC
+                    type = civil_war
+                } 
             add_ideas = CHI_gemintongyizhixi
 			}
 	    }
