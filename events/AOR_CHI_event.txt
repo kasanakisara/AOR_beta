@@ -1526,6 +1526,26 @@ country_event = {
 	}
 }
 
+#甘肃发生大地震
+country_event = {
+	id = CHI.44
+	title = CHI.44.t
+	desc = CHI.44.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1920.12.10
+		tag = CHI
+	}
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = CHI.44.a
+		news_event = {id=AOR_news.89}
+		add_manpower = -100000
+	}
+}
+
 #还我军事区
 country_event = {
 	id = CHI.999
