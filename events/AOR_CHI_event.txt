@@ -1508,6 +1508,19 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
+		CHI = {
+			set_party_name = { ideology = Absolutism long_name = CHI_1_Absolutism_party name = CHI_1_Absolutism_party }
+			set_politics = { ruling_party = Absolutism }
+			create_country_leader = {
+				name = "Wu_Pei_Fu"
+				desc = ""
+				picture = "gfx/leaders/CHI/Wu_Pei_Fu.dds"
+				expire = "1965.1.1"
+				ideology = miliciagov
+				traits = {
+				}
+			}
+		}
 		name = CHI.43.a
 		news_event = {id=AOR_news.143}
 	}
