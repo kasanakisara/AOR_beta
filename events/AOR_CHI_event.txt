@@ -196,6 +196,7 @@ country_event = {
 		hidden_effect = {
 			UPC = {
 				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
 			}
 		}
 	}
