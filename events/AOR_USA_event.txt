@@ -537,6 +537,7 @@ country_event = {
 				}
 			}
 			USA = {
+				set_party_name = { ideology = CON_democratic long_name = USA_1_CON_democratic_party name = USA_1_CON_democratic_party }
 				set_popularities = {
 					FRE_democratic = 61
 					CON_democratic = 8
@@ -619,6 +620,7 @@ country_event = {
 				}
 			}
 			USA = {
+				set_party_name = { ideology = CON_democratic long_name = USA_1_CON_democratic_party name = USA_1_CON_democratic_party }
 				set_popularities = {
 					FRE_democratic = 61
 					CON_democratic = 8

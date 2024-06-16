@@ -2235,6 +2235,7 @@ news_event = {#日本与中国国民政府签订和平协议（小胜）
 		name = AOR_news.146.a
 	}
 }
+
 news_event = {#日本与中国联省政府签订和平协议（小胜）
 	id = AOR_news.147
 	title = AOR_news.147.t
@@ -2245,5 +2246,31 @@ news_event = {#日本与中国联省政府签订和平协议（小胜）
 
 	option = {
 		name = AOR_news.147.a
+	}
+}
+
+news_event = {#中国四川红军南下进攻华南
+	id = AOR_news.148
+	title = AOR_news.148.t
+	desc = AOR_news.148.d
+	picture = GFX_AOR_news.148_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.148.a
+	}
+}
+
+news_event = {#中国四川红军统一中国华南！
+	id = AOR_news.149
+	title = AOR_news.149.t
+	desc = AOR_news.149.d
+	picture = GFX_AOR_news.149_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.149.a
 	}
 }

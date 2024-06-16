@@ -43,10 +43,18 @@ country_event = {#红军南下云贵
 	trigger = {
 		tag = PRC
 		date > 1922.12.10
+        PRC = {
+            controls_state = 906
+            controls_state = 908
+            controls_state = 753
+            controls_state = 751
+            controls_state = 434
+            controls_state = 605
+        }
         325 = { is_owned_by = UPC }
-        747 = { is_owned_by = UPC }
-        609 = { is_owned_by = UPC }
-        755 = { is_owned_by = UPC }
+        #747 = { is_owned_by = UPC }
+        #609 = { is_owned_by = UPC }
+        #755 = { is_owned_by = UPC }
     }
 
 

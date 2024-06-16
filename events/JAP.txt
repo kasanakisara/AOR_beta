@@ -142,8 +142,8 @@ country_event = {
 	picture = GFX_JAP_event_5
 	trigger = {
 		tag = KMT
-		743 = { is_owned_by = KMT }
-		745 = { is_owned_by = KMT }
+		#743 = { is_owned_by = KMT }
+		#745 = { is_owned_by = KMT }
 		408 = { is_owned_by = KMT }
 		KMT = { has_war_with = JAP }
 	}
@@ -161,8 +161,8 @@ country_event = {
 	picture = GFX_JAP_event_6
 	trigger = {
 		tag = KMT
-		743 = { is_owned_by = KMT }
-		745 = { is_owned_by = KMT }
+		#743 = { is_owned_by = KMT }
+		#745 = { is_owned_by = KMT }
 		408 = { is_owned_by = KMT }
 		KMT = { has_war_with = JAP }
 	}
