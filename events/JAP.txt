@@ -73,6 +73,18 @@ country_event = {
 				type = annex_everything
 			} 
 		}
+		KMT = {
+			swap_ideas={
+				remove_idea = CHI_gemintongyizhixi
+				add_idea = CHI_zuguoguangfuzhixi
+			}
+		}
+		UPC = {
+			swap_ideas={
+				remove_idea = CHI_gemintongyizhixi
+				add_idea = CHI_zuguoguangfuzhixi
+			}
+		}
 	}
 }
 

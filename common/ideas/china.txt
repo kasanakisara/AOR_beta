@@ -1062,5 +1062,36 @@ ideas = {
 				}
 			}
 		}
+        #祖国光复之心
+		CHI_zuguoguangfuzhixi = {
+
+            picture = GFX_idea_CHI_zuguoguangfuzhixi
+	
+            allowed = {
+	        always = yes
+            }
+				
+            visible = {
+	        always = yes
+            }
+	
+            modifier = {
+				ai_focus_aggressive_factor = 1
+				defensive_war_stability_factor = 0.1
+				mobilization_speed = 0.5
+	            army_core_attack_factor = 0.2
+	            army_core_defence_factor = 0.2
+				army_org_factor = 0.05
+				targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+				hidden_modifier = {
+					no_supply_grace = 3600
+					supply_consumption_factor = -0.5
+				}
+			}
+		}
 	}
 }
