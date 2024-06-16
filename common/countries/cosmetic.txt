@@ -980,6 +980,10 @@ MEN_2 = {
 	color = rgb { 249 232 144 }
 	color_ui = rgb { 249 232 144 }
 }
+SHX_1_Absolutism = {
+	color = rgb { 249 232 144 }
+	color_ui = rgb { 249 232 144 }
+}
 DCD_1 = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }

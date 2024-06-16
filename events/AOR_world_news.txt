@@ -2274,3 +2274,16 @@ news_event = {#中国四川红军统一中国华南！
 		name = AOR_news.149.a
 	}
 }
+
+news_event = {#中国山西宣布服从联省革命
+	id = AOR_news.150
+	title = AOR_news.150.t
+	desc = AOR_news.150.d
+	picture = GFX_AOR_news.150_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.150.a
+	}
+}

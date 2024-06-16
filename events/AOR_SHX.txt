@@ -1,0 +1,40 @@
+add_namespace = SHX
+
+country_event = {#阎锡山支持联省共和(广州)
+	id = SHX.1 
+	title = SHX.1.t
+	desc = SHX.1.d
+	picture = GFX_SHX_event_1
+    trigger = {
+        tag = SHX
+		date > 1922.12.10
+        UPC = {
+            owns_state = 893
+        }
+    }
+	fire_only_once = yes
+    immediate = {
+    hidden_effect = {
+        SHX ={
+        set_cosmetic_tag = SHX_1_Absolutism
+        declare_war_on = { 
+            target = NAN
+            type = civil_war
+        } 
+        declare_war_on = { 
+            target = MON
+            type = civil_war
+                } 
+            }
+        }
+    }
+    option = {
+		name = SHX.1.a
+        news_event = {id=AOR_news.150}
+        UPC = {
+            create_faction = kmt_mingzhu_Union
+            add_to_faction = SHX
+            white_peace = SHX
+        }
+    }
+}

@@ -1305,9 +1305,15 @@ on_actions = {
 						target = MEN
 						transfer_troops = yes
 					}
+					annex_country = {
+						target = SHX
+					}
 					news_event = {
 						id = AOR_news.126
 					}
+					add_state_core = 884
+					add_state_core = 615
+					add_state_core = 883
 				}
 			}
 			else_if = {
