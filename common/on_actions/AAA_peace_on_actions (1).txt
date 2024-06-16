@@ -912,7 +912,7 @@ on_actions = {
 						target = KMT
 					}
 					news_event = {
-						id = AOR_news.123
+						id = AOR_news.123 #北京政府消灭华南国民党政权
 					}
 					country_event = {
 						days = 90
@@ -1006,7 +1006,7 @@ on_actions = {
 						target = KMT
 					}
 					news_event = {
-						id = AOR_news.124
+						id = AOR_news.124 #南京政府消灭华南国民党政权
 					}
 					country_event = {
 						days = 90
@@ -1056,7 +1056,7 @@ on_actions = {
 						transfer_troops = yes
 					}
 					news_event = {
-						id = AOR_news.125
+						id = AOR_news.125 #国民革命政府占领满洲
 					}
 				}
 			}
@@ -1162,7 +1162,7 @@ on_actions = {
 						target = UPC
 					}
 					news_event = {
-						id = AOR_news.121
+						id = AOR_news.121 #北京政府消灭华南广州政权
 					}
 					country_event = {
 						days = 90
@@ -1256,7 +1256,7 @@ on_actions = {
 						target = UPC
 					}
 					news_event = {
-						id = AOR_news.122
+						id = AOR_news.122 #南京政府消灭华南广州政权 
 					}
 					country_event = {
 						days = 90
@@ -1309,7 +1309,7 @@ on_actions = {
 						target = SHX
 					}
 					news_event = {
-						id = AOR_news.126
+						id = AOR_news.126 #联省革命政府占领满洲
 					}
 					add_state_core = 884
 					add_state_core = 615
@@ -1623,7 +1623,7 @@ on_actions = {
 				}
 				KMT = {
 					news_event = {
-						id = AOR_news.132
+						id = AOR_news.132 #中国国民政府占领四川
 					}
 					annex_country = {
 						target = DCD
@@ -1649,7 +1649,7 @@ on_actions = {
 				}
 				UPC = {
 					news_event = {
-						id = AOR_news.133
+						id = AOR_news.133 #中国广州政府占领四川
 					}
 					annex_country = {
 						target = DCD
@@ -1691,9 +1691,18 @@ on_actions = {
 					}
 				}
 				UPC = {
+				news_event = {
+					id = AOR_news.151 #广州政府消灭四川红军
+				}
 				annex_country = {
 				    target = PRC
 				}
+				add_state_core = 906
+				add_state_core = 908
+				add_state_core = 753
+				add_state_core = 751
+				add_state_core = 434
+				add_state_core = 605
 			}
 		}
             else_if = {

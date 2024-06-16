@@ -2287,3 +2287,16 @@ news_event = {#中国山西宣布服从联省革命
 		name = AOR_news.150.a
 	}
 }
+
+news_event = {#广州政府消灭四川红军
+	id = AOR_news.151
+	title = AOR_news.151.t
+	desc = AOR_news.151.d
+	picture = GFX_AOR_news.151_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.151.a
+	}
+}
