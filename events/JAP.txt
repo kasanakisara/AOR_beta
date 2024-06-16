@@ -38,7 +38,7 @@ country_event = {
 		add_popularity = { ideology = CON_democratic  popularity = -0.1 }
 		add_popularity = { ideology = AUT_democratic  popularity = 0.1 }
 		add_popularity = { ideology = FRE_democratic popularity = -0.1 }
-		add_popularity = { ideology = Fascism popularity = 0.2 }
+		add_popularity = { ideology = Fascism popularity = 0.1 }
 		create_country_leader = {
 			name = "Emperor_Hirohito"
 			desc = "Emperor_Hirohito_desc"
@@ -63,6 +63,7 @@ country_event = {
 		name = JAP.3.a
 		news_event = {id=AOR_news.135}
 		JAP = {
+			add_popularity = { ideology = Fascism popularity = 0.1 }
 			declare_war_on = { 
 				target = KMT
 				type = annex_everything
