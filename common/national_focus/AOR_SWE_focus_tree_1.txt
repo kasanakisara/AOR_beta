@@ -519,8 +519,10 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			RUS = {
-				
+				country_event = { id = SWE.22 }
 			}
+			add_to_variable = { SWE_Market_Inclusion = 10 }
+			custom_effect_tooltip = SWE_Market_Inclusion_add_tt
 		}
 
 	}

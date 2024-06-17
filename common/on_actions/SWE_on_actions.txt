@@ -31,6 +31,8 @@ on_actions = {
 			else = {
 				set_variable = { SWE_Trade_consumer_goods_factor = 0.75 }
 			}
+
+			## 政府支出 -> 国际市场开放度
 		}
 	}
 

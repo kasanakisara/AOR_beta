@@ -555,3 +555,52 @@ country_event = {
         name = SWE.21.a
     }
 }
+
+country_event = {
+    id = SWE.22 #苏联贸易协定
+    title = SWE.22.t
+    desc = SWE.22.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.22.a #同意
+        add_ideas = SWE_Soviet_Trade
+        SWE = {
+            country_event = { id = SWE.23 }
+        }
+        ai_will_do = {
+            factor = 0.5
+        }
+    }
+    option = {
+        name = SWE.22.b #反对
+        SWE = {
+            country_event = { id = SWE.24 }
+        }
+        add_political_power = -50
+        ai_will_do = {
+            factor = 0.5
+        }
+    }
+}
+
+country_event = {
+    id = SWE.23 #苏联贸易协定-同意
+    title = SWE.23.t
+    desc = SWE.23.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.23.a
+        add_ideas = SWE_Soviet_Trade
+    }
+}
+
+country_event = {
+    id = SWE.24 #苏联贸易协定-同意
+    title = SWE.24.t
+    desc = SWE.24.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.24.a
+        add_political_power = -50
+    }
+}

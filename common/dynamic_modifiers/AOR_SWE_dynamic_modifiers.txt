@@ -13,4 +13,5 @@ AOR_SWE_Trade_dynamic_modifier = {
         always = yes
     }
     consumer_goods_factor = SWE_Trade_consumer_goods_factor
+    production_speed_buildings_factor = SWE_Trade_construction_speed
 }
