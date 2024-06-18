@@ -33,6 +33,30 @@ on_actions = {
 			}
 
 			## 政府支出 -> 国际市场开放度
+
+			if = {
+				limit = { check_variable = { SWE_Government_Spending = 0 compare = less_than_or_equals } }
+				add_to_variable = { SWE_Market_Inclusion = -2.5 }
+			}
+			else_if = {
+				limit = { check_variable = { SWE_Government_Spending = 25 compare = less_than_or_equals } }
+				set_variable = { SWE_Trade_consumer_goods_factor = 0 }
+			}
+			else_if = {
+				limit = { check_variable = { SWE_Government_Spending = 50 compare = less_than_or_equals } }
+				set_variable = { SWE_Trade_consumer_goods_factor = 2.5 }
+			}
+			else_if = {
+				limit = { check_variable = { SWE_Government_Spending = 75 compare = less_than_or_equals } }
+				set_variable = { SWE_Trade_consumer_goods_factor = 5 }
+			}
+			else_if = {
+				limit = { check_variable = { SWE_Government_Spending = 100 compare = less_than_or_equals } }
+				set_variable = { SWE_Trade_consumer_goods_factor = 7.5 }
+			}
+			else = {
+				set_variable = { SWE_Trade_consumer_goods_factor = 8.5 }
+			}
 		}
 	}
 
@@ -83,7 +107,9 @@ on_actions = {
 					}
 				}
 
-				set_variable = { SWE_Industry_Development  }
+
+				country_event = { id = SWE.25 }
+				set_variable = { SWE_Industry_Development = 0 }
 			}
 		}
 	}

@@ -604,3 +604,14 @@ country_event = {
         add_political_power = -50
     }
 }
+
+country_event = {
+    id = SWE.25 #门户开放-一个月
+    title = SWE.25.t
+    desc = SWE.25.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.25.a
+        add_political_power = 20
+    }
+}
