@@ -102,6 +102,29 @@ on_actions = {
 				}
 
 				## 国际市场开放度 -> 建造速度
+				if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 0 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_construction_speed = -0.05 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 25 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_construction_speed = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 50 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_construction_speed = 0.15 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 75 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_construction_speed = 0.25 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 100 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_construction_speed = 0.45 }
+				}
+				else = {
+					set_variable = { SWE_Trade_construction_speed = 0.5 }
+				}
 			}
 		}
 	}
