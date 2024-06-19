@@ -1,0 +1,58 @@
+    小工坊工业1 production_factory_max_efficiency_factor +10 修正生产效率上限。
+
+    小工坊工业2 production_factory_max_efficiency_factor +10 修正生产效率上限。
+                production_factory_efficiency_gain_factor +5  修正生产效率增长。
+
+    批量生产：   local_building_slots_factor +10  地区最大工业值
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    精益生产：   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                industrial_capacity_factory  +5  工厂产出
+                industrial_capacity_dockyard +5  船坞产出
+                INDUSTRY_AIR_DAMAGE_FACTOR  +15 受到轰炸
+
+    标准化生产1  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +5 改装
+                refit_speed  +5
+
+    标准化生产2  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +5 改装
+                refit_speed  +5
+
+    标准化生产3  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +10 改装
+                refit_speed  +5
+
+    流水化工业1  local_building_slots_factor  +5
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    流水化工业2  local_building_slots_factor  +10
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    流水化工业3  local_building_slots_factor  +10
+                industrial_capacity_factory  +15  工厂产出
+                industrial_capacity_dockyard +15  船坞产出
+
+    科学化管理1   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +5  工厂产出
+                 industrial_capacity_dockyard +5  船坞产出
+                 INDUSTRY_AIR_DAMAGE_FACTOR  +5 受到轰炸
+    
+    科学化管理2   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +10  工厂产出
+                 industrial_capacity_dockyard +5  船坞产出
+                 INDUSTRY_AIR_DAMAGE_FACTOR  +10 受到轰炸
+
+    科学化管理3   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +10  工厂产出
+                 industrial_capacity_dockyard +10  船坞产出
+                INDUSTRY_AIR_DAMAGE_FACTOR  +15 受到轰炸
+
+
