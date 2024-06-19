@@ -1,61 +1,107 @@
 on_actions = {
 
+	on_startup = {
+		## 开局事件链
+		effect = {
+			SWE = {
+				country_event = { id = Tosca.1 days = 5 }
+			}
+		}
+	}
+
 	on_weekly_SWE = {
-		##门户开放
-		if = {
-			limit = {
-				has_idea = SWE_Open_the_door
-			}
-
-			## 政府支出 -> 生活消费品
+		effect = {
+			### 门户开放修正
 			if = {
-				limit = { check_variable = { SWE_Government_Spending = 0 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 25 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0.25 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 50 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0.35 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 75 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0.45 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 100 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0.5 }
-			}
-			else = {
-				set_variable = { SWE_Trade_consumer_goods_factor = 0.75 }
-			}
+				limit = {
+					has_idea = SWE_Open_the_door
+				}
 
-			## 政府支出 -> 国际市场开放度
+				## 政府支出 -> 生活消费品
+				if = {
+					limit = { check_variable = { SWE_Government_Spending = 0 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_consumer_goods_factor = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 25 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_consumer_goods_factor = 0.25 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 50 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_consumer_goods_factor = 0.35 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 75 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_consumer_goods_factor = 0.45 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 100 compare = less_than_or_equals } }
+					set_variable = { SWE_Trade_consumer_goods_factor = 0.5 }
+				}
+				else = {
+					set_variable = { SWE_Trade_consumer_goods_factor = 0.75 }
+				}
 
-			if = {
-				limit = { check_variable = { SWE_Government_Spending = 0 compare = less_than_or_equals } }
-				add_to_variable = { SWE_Market_Inclusion = -2.5 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 25 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 0 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 50 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 2.5 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 75 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 5 }
-			}
-			else_if = {
-				limit = { check_variable = { SWE_Government_Spending = 100 compare = less_than_or_equals } }
-				set_variable = { SWE_Trade_consumer_goods_factor = 7.5 }
-			}
-			else = {
-				set_variable = { SWE_Trade_consumer_goods_factor = 8.5 }
+				## 政府支出 -> 国际市场开放度
+				if = {
+					limit = { check_variable = { SWE_Government_Spending = 0 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Market_Inclusion = -2.5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 25 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Market_Inclusion = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 50 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Market_Inclusion = 2.5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 75 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Market_Inclusion = 5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Government_Spending = 100 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Market_Inclusion = 7.5 }
+				}
+				else = {
+					add_to_variable = { SWE_Market_Inclusion = 8.5 }
+				}
+
+				## 国际市场开放度上界
+				if = {
+					limit = { check_variable = { SWE_Market_Inclusion > 100 } }
+					set_variable = { SWE_Market_Inclusion = 100 }
+				}
+
+				## 国际市场开放度 -> 本土工业发展度
+				if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 0 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Industry_Development = -2.5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 25 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Industry_Development = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 50 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Industry_Development = 2.5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 75 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Industry_Development = 5 }
+				}
+				else_if = {
+					limit = { check_variable = { SWE_Market_Inclusion = 100 compare = less_than_or_equals } }
+					add_to_variable = { SWE_Industry_Development = 7.5 }
+				}
+
+				## 本土工业发展度上界
+				if = {
+					limit = { check_variable = { SWE_Industry_Development > 100 } }
+					set_variable = { SWE_Industry_Development = 100 }
+				}
+
+				## 国际市场开放度 -> 建造速度
 			}
 		}
 	}
@@ -109,7 +155,7 @@ on_actions = {
 
 
 				country_event = { id = SWE.25 }
-				set_variable = { SWE_Industry_Development = 0 }
+				add_to_variable = { SWE_Industry_Development = -15 }
 			}
 		}
 	}
