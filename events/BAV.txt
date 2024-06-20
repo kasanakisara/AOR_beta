@@ -406,6 +406,9 @@ country_event = {
 		news_event = {
 			id = AOR_news.57
 		}
+		hidden_effect = {
+			country_event = { id = BAV.66 days = 7 }
+		}
 		SHL = {
 			set_cosmetic_tag = SHL_1_Marxism
 		}
