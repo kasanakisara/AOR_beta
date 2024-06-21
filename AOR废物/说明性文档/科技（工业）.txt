@@ -1,3 +1,12 @@
+    铁路基础建设1
+    production_speed_rail_way_factor = 0.1
+
+    铁路基础建设2
+    production_speed_rail_way_factor = 0.15
+    
+    铁路基础建设3    
+    production_speed_rail_way_factor = 0.2
+    
     小工坊工业1 production_factory_max_efficiency_factor +10 修正生产效率上限。
 
     小工坊工业2 production_factory_max_efficiency_factor +10 修正生产效率上限。
@@ -96,7 +105,31 @@ production_speed_synthetic_refinery_factor = 0.2
 production_speed_synthetic_refinery_factor = 0.2
 		show_effect_as_desc = yes
 
+
+港口基础建设1
+   production_speed_dockyard_factor = 0.1
+   industrial_capacity_dockyard = 0.1    
+
+ 港口基础建设2
+   production_speed_dockyard_factor = 0.15
+   industrial_capacity_dockyard = 0.2          
     
+深水港建设1
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.1
+  NAVAL_HAS_POTF_IN_COMBAT_ATTACK = 0.1
 
+深水港建设2
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.15
+  NAVAL_HAS_POTF_IN_COMBAT_ATTACK = 0.1
 
+起重机1
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.1
+  REPAIR_SPEED_FACTOR = 0.1
 
+起重机2
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.15
+  REPAIR_SPEED_FACTOR = 0.2
