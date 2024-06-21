@@ -133,3 +133,68 @@ production_speed_synthetic_refinery_factor = 0.2
   production_speed_dockyard_factor = 0.15
   industrial_capacity_dockyard = 0.15
   REPAIR_SPEED_FACTOR = 0.2
+
+机场建设
+  production_speed_air_base_factor = 0.1
+  air_mission_efficiency = 0.025
+
+升级跑道
+  air_range_factor = 0.05
+  air_mission_efficiency = 0.05
+
+防空阵地建设1
+  production_speed_anti_air_building_factor = 0.1
+  static_anti_air_damage_factor = 0.05
+
+防空阵地建设2
+  production_speed_anti_air_building_factor = 0.15
+  static_anti_air_damage_factor = 0.05
+
+地面塔台1
+  air_mission_efficiency = 0.025
+  air_accidents_factor = -0.1
+
+地面塔台2
+  air_mission_efficiency = 0.025
+  air_accidents_factor = -0.1
+  air_manpower_requirement_factor = 0.05
+
+城镇基础建设1
+  production_speed_buildings_factor = 0.1
+  supply_node_range = 0.1
+  
+城镇基础建设2
+  production_speed_infrastructure_building_factor = 0.10
+  monthly_population = 0.1
+
+城镇基础建设3
+  production_speed_buildings_factor = 0.1
+  conversion_cost_civ_to_mil_factor	= 0.3
+  conversion_cost_mil_to_civ_factor = 0.3
+  industry_free_repair_factor = 0.1
+
+环卫工程1
+  monthly_population = 0.01
+  global_building_slots_factor = 0.15
+
+环卫工程1
+  monthly_population = 0.01
+  global_building_slots_factor = 0.15
+
+地下铁工程1
+  industry_air_damage_factor = 0.1
+  tech_air_damage_factor = 0.1
+  static_anti_air_damage_factor = 0.1
+
+地下铁工程1
+  industry_air_damage_factor = 0.2
+  tech_air_damage_factor = 0.2
+  static_anti_air_damage_factor = 0.2
+
+现代化都市建设1
+  production_speed_buildings_factor = 0.2
+  supply_node_range = 0.1
+
+现代化都市建设2
+  production_speed_infrastructure_building_factor = 0.15
+  monthly_population = 0.1
