@@ -2288,7 +2288,7 @@ news_event = {#中国山西宣布服从联省革命
 	}
 }
 
-news_event = {#广州政府消灭四川红军
+news_event = {#中国山西宣布服从国民革命（陈其美）
 	id = AOR_news.151
 	title = AOR_news.151.t
 	desc = AOR_news.151.d
@@ -2298,5 +2298,44 @@ news_event = {#广州政府消灭四川红军
 
 	option = {
 		name = AOR_news.151.a
+	}
+}
+
+news_event = {#中国山西宣布服从南京政府
+	id = AOR_news.152
+	title = AOR_news.152.t
+	desc = AOR_news.152.d
+	picture = GFX_AOR_news.152_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.152.a
+	}
+}
+
+news_event = {#中国山西宣布服从北京政府
+	id = AOR_news.153
+	title = AOR_news.153.t
+	desc = AOR_news.153.d
+	picture = GFX_AOR_news.153_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.153.a
+	}
+}
+
+news_event = {#广州政府消灭四川红军
+	id = AOR_news.154
+	title = AOR_news.154.t
+	desc = AOR_news.154.d
+	picture = GFX_AOR_news.154_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.154.a
 	}
 }
