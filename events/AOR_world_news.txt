@@ -2339,3 +2339,16 @@ news_event = {#广州政府消灭四川红军
 		name = AOR_news.154.a
 	}
 }
+
+news_event = {#陈宦总督统一四川
+	id = AOR_news.155
+	title = AOR_news.155.t
+	desc = AOR_news.155.d
+	picture = GFX_AOR_news.155_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.155.a
+	}
+}
