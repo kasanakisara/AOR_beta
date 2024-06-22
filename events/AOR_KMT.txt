@@ -753,10 +753,10 @@ country_event = {#昆明政府统一南方
                 country_event = { days = 180  id = DCD.2 }
                 news_event = {id=AOR_news.108}
                 KMT = {
+                    set_politics = {ruling_party = AUT_democratic}
+                    add_popularity = { ideology = CON_democratic popularity = 0.05 }
+                    add_popularity = { ideology = AUT_democratic popularity = 0.10 }
                     create_country_leader = {
-                        set_politics = {ruling_party = AUT_democratic}
-                        add_popularity = { ideology = CON_democratic popularity = 0.05 }
-                        add_popularity = { ideology = AUT_democratic popularity = 0.10 }
                         name = "Chen_Qi_Mei"
                         desc = "POLITICS_MON_DESC"
                         picture = "gfx/leaders/KMT/Chen_Qi_Mei.png"

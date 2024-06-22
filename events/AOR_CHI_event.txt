@@ -872,6 +872,16 @@ country_event = {
 		name = CHI.31.a
 		news_event = {id=AOR_news.97}
 	}
+
+	option = {
+		name = CHI.31.b
+		news_event = {id=AOR_news.97}
+		MON = {
+			load_oob = "AOR_LAND_CHI_VAN"
+			load_oob = "AOR_LAND_CHI_VAN"
+			load_oob = "AOR_LAND_CHI_VAN"
+		}
+	}
 }
 
 country_event = {		
