@@ -157,6 +157,7 @@ country_event = {
 			MON = {
 			    set_cosmetic_tag = MON_WEST_1
 			    set_capital = { state = 621 }
+				608={set_demilitarized_zone=yes}
 			    transfer_state = 758
 			    transfer_state = 608
 			330= {
