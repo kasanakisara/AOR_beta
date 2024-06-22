@@ -1,0 +1,88 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_CHI_Congress_speech"
+        texturefile = "gfx/interface/ideas/CHI_Congress_speech.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Anti_russian_propaganda"
+        texturefile = "gfx/interface/ideas/CHI_Anti_russian_propaganda.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Young_Volunteer_Army"
+        texturefile = "gfx/interface/ideas/CHI_Young_Volunteer_Army.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Manipulate_Congress"
+        texturefile = "gfx/interface/ideas/CHI_Manipulate_Congress.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Reclaiming_outer_northwest"
+        texturefile = "gfx/interface/ideas/CHI_Reclaiming_outer_northwest.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_international_aid"
+        texturefile = "gfx/interface/ideas/CHI_international_aid.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Northwest_joint_command"
+        texturefile = "gfx/interface/ideas/CHI_Northwest_joint_command.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Mobilize_workers_help_in_war"
+        texturefile = "gfx/interface/ideas/CHI_Mobilize_workers_help_in_war.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_war_bond"
+        texturefile = "gfx/interface/ideas/CHI_war_bond.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Hold_down_south"
+        texturefile = "gfx/interface/ideas/CHI_Hold_down_south.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Yuan_is_dying"
+        texturefile = "gfx/interface/ideas/CHI_Yuan_is_dying.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Year_of_Gengshen"
+        texturefile = "gfx/interface/ideas/CHI_Year_of_Gengshen.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Yuan_triping"
+        texturefile = "gfx/interface/ideas/CHI_Yuan_triping.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_Assess_s"
+        texturefile = "gfx/interface/ideas/CHI_Assess_s.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_we_win"
+        texturefile = "gfx/interface/ideas/CHI_we_win.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_stop"
+        texturefile = "gfx/interface/ideas/CHI_stop.png"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_forward"
+        texturefile = "gfx/interface/ideas/CHI_forward.png"
+    }
+
+}
