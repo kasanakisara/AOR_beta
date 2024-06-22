@@ -59,10 +59,14 @@ country_event = {
 	picture = GFX_JAP_event_3
 	is_triggered_only = yes	
 	fire_only_once = yes
+
 	option = {
 		name = JAP.3.a
 		news_event = {id=AOR_news.135}
 		JAP = {
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
 			add_popularity = { ideology = Fascism popularity = 0.1 }
 			declare_war_on = { 
 				target = KMT
@@ -156,8 +160,12 @@ country_event = {
 		tag = KMT
 		#743 = { is_owned_by = KMT }
 		#745 = { is_owned_by = KMT }
-		408 = { is_owned_by = KMT }
-		KMT = { has_war_with = JAP }
+		KMT = {
+			has_war_with = JAP
+			owns_state = 876
+			owns_state = 743
+			owns_state = 745
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -175,8 +183,12 @@ country_event = {
 		tag = KMT
 		#743 = { is_owned_by = KMT }
 		#745 = { is_owned_by = KMT }
-		408 = { is_owned_by = KMT }
-		KMT = { has_war_with = JAP }
+		KMT = {
+			has_war_with = JAP
+			owns_state = 876
+			owns_state = 743
+			owns_state = 745
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -206,8 +218,10 @@ country_event = {
 	picture = GFX_JAP_event_7
 	trigger = {
 		tag = UPC
-		852 = { is_owned_by = UPC }
-		UPC = { has_war_with = JAP }
+		UPC = {
+			has_war_with = JAP
+			owns_state = 852
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -265,10 +279,12 @@ country_event = {
 	picture = GFX_JAP_event_8
 	trigger = {
 		tag = UPC
-		743 = { is_owned_by = UPC }
-		745 = { is_owned_by = UPC }
-		408 = { is_owned_by = UPC }
-		UPC = { has_war_with = JAP }
+		UPC = {
+			has_war_with = JAP
+			owns_state = 743
+			owns_state = 745
+			owns_state = 408
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -284,10 +300,12 @@ country_event = {
 	picture = GFX_JAP_event_9
 	trigger = {
 		tag = UPC
-		743 = { is_owned_by = UPC }
-		745 = { is_owned_by = UPC }
-		408 = { is_owned_by = UPC }
-		UPC = { has_war_with = JAP }
+		UPC = {
+			has_war_with = JAP
+			owns_state = 743
+			owns_state = 745
+			owns_state = 408
+		}
 	}
 	fire_only_once = yes
 	option = {
@@ -307,5 +325,22 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
 		}
+	}
+}
+
+country_event = {
+	id = JAP.10   #南满冲突（中日战争前兆）
+	title = JAP.10.t
+	desc = JAP.10.d
+	picture = GFX_JAP_event_10
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = {
+		JAP = {
+			country_event = { days = 30  id = JAP.3 }
+			716={set_demilitarized_zone=yes}
+		}
+		name = JAP.1.a
 	}
 }

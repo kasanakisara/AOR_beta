@@ -1151,6 +1151,17 @@ country_event = {#中国广州政府宣布北伐
     desc = UPC.102.d
     picture = GFX_UPC_event_102
 	trigger = {
+		UPC = {
+            owns_state = 750
+            owns_state = 907
+            owns_state = 748
+            owns_state = 603
+            owns_state = 325
+            owns_state = 609
+            owns_state = 755
+            owns_state = 747
+        }
+		date > 1923.10.10
 		tag = UPC
 		has_war = no
 	}
@@ -1258,8 +1269,8 @@ country_event = {#中国广州政府宣布北伐
         option = {
             name = UPC.103.a
             news_event = {id=AOR_news.114}
-			country_event = { days = 90  id = CHI.38 }
-			country_event = { days = 360  id = JAP.3 }
+			country_event = { days = 60  id = CHI.38 }
+            country_event = { days = 90  id = JAP.10 }
             UPC = {
                 add_state_core = 876
                 add_state_core = 612
