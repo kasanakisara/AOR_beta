@@ -59,20 +59,14 @@ country_event = {
 	picture = GFX_JAP_event_3
 	is_triggered_only = yes	
 	fire_only_once = yes
-	hidden_effect = {
-		    immediate = {
-			JAP = {
-				load_oob = "AOR_LAND_M_JAP"
-				load_oob = "AOR_LAND_M_JAP"
-				load_oob = "AOR_LAND_M_JAP"
-			}
-		}
-	}
 
 	option = {
 		name = JAP.3.a
 		news_event = {id=AOR_news.135}
 		JAP = {
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
 			add_popularity = { ideology = Fascism popularity = 0.1 }
 			declare_war_on = { 
 				target = KMT
