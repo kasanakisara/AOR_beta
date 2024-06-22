@@ -530,6 +530,7 @@ country_event = {
 			}
 			MON = {
 				load_oob = "AOR_LAND_CHI_VAN_2"
+				608={set_demilitarized_zone=NO}
 				transfer_state = 876
 				transfer_state = 612
 				transfer_state = 756
