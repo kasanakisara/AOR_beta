@@ -1269,8 +1269,8 @@ country_event = {#中国广州政府宣布北伐
         option = {
             name = UPC.103.a
             news_event = {id=AOR_news.114}
-			country_event = { days = 90  id = CHI.38 }
-			country_event = { days = 360  id = JAP.3 }
+			country_event = { days = 60  id = CHI.38 }
+            country_event = { days = 90  id = JAP.10 }
             UPC = {
                 add_state_core = 876
                 add_state_core = 612

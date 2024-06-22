@@ -59,6 +59,16 @@ country_event = {
 	picture = GFX_JAP_event_3
 	is_triggered_only = yes	
 	fire_only_once = yes
+	hidden_effect = {
+		    immediate = {
+			JAP = {
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
+				load_oob = "AOR_LAND_M_JAP"
+			}
+		}
+	}
+
 	option = {
 		name = JAP.3.a
 		news_event = {id=AOR_news.135}
@@ -307,5 +317,22 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
 		}
+	}
+}
+
+country_event = {
+	id = JAP.10   #南满冲突（中日战争前兆）
+	title = JAP.10.t
+	desc = JAP.10.d
+	picture = GFX_JAP_event_10
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = {
+		JAP = {
+			country_event = { days = 30  id = JAP.3 }
+			716={set_demilitarized_zone=yes}
+		}
+		name = JAP.1.a
 	}
 }

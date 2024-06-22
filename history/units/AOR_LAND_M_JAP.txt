@@ -1,0 +1,91 @@
+﻿####### Division Templates #######
+division_template = { 
+	name = "帝国陆军师团" 
+	division_names_group = ITA_INF_01 
+	
+	regiments = { 
+		infantry = {x=0 y=0}
+        infantry = {x=0 y=1}
+        infantry = {x=0 y=2}
+        infantry = {x=1 y=0}
+        infantry = {x=1 y=1}
+        infantry = {x=1 y=2}
+        infantry = {x=2 y=0}
+        infantry = {x=2 y=1}
+        infantry = {x=2 y=2}
+	}
+}
+####### OOB #######
+units = {
+#师团
+	division= {	
+		name = "帝国第一师团"
+		location = 1150
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第二师团"
+		location = 1150
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第三师团"
+		location = 1150
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第四师团"
+		location = 1150
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第五师团"
+		location = 1150
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第六师团"
+		location = 10000
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第七师团"
+		location = 10000
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第八师团"
+		location = 10000
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第九师团"
+		location = 10000
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "帝国第十师团"
+		location = 10000
+		division_template = "帝国陆军师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+}
