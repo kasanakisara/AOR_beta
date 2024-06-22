@@ -1805,6 +1805,155 @@ on_actions = {
 					puppet = CRO
 				}
 			}
+			####半岛沙漠战争###（上面的没写完在这条上方继续写就好）
+			##内志战争##
+			else_if = {
+				limit = {
+					#沙特家胜利
+					FROM = {
+						original_tag = SAU
+					}
+					ROOT = {
+						original_tag = JSR
+					}
+				}
+				SAU = {
+					annex_country = {
+						target = JSR
+						transfer_troops = yes
+					}
+					set_country_flag = AOR_nejd_war_winner
+					set_cosmetic_tag = SAU_Nejd_1
+				}
+			}
+			else_if = {
+				limit = {
+					#拉希德家胜利
+					FROM = {
+						original_tag = JSR
+					}
+					ROOT = {
+						original_tag = SAU
+					}
+				}
+				JSR = {
+					annex_country = {
+						target = SAU
+						transfer_troops = yes
+					}
+					set_country_flag = AOR_nejd_war_winner
+				}
+			}
+			else_if = {
+				limit = {
+					#汉志干涉拉希德家胜利
+					FROM = {
+						AND = {
+							original_tag = JSR
+							original_tag = ARA
+						}
+						
+					}
+					ROOT = {
+						original_tag = SAU
+					}
+				}
+				JAR = {
+					transfer_state = 950
+					set_country_flag = AOR_nejd_war_winner
+				}
+				ARA = {
+					transfer_state = 292
+				}
+			}
+			else_if = {
+				limit = {
+					#汉志干涉沙特胜利
+					FROM = {
+						AND = {
+							original_tag = SUA
+							original_tag = ARA
+						}
+						
+					}
+					ROOT = {
+						original_tag = JSR
+					}
+				}
+				SAU = {
+					transfer_state = 963
+					transfer_state = 962
+					set_country_flag = AOR_nejd_war_winner
+					set_cosmetic_tag = SAU_Nejd_1
+				}
+				ARA = {
+					transfer_state = 958
+					transfer_state = 956
+				}
+			}
+			#汉志战争
+			else_if = {
+				limit = {
+					#内志胜利
+					FROM = {
+						OR = {
+							AND = {
+								original_tag = SUA 
+								has_country_flag = AOR_nejd_war_winner
+							}
+							AND = {
+								original_tag = JSR 
+								has_country_flag = AOR_nejd_war_winner
+							}
+						}
+						
+					}
+					ROOT = {
+						original_tag = ARA
+					}
+				}
+				OR = {
+					SAU = {
+						has_global_flag = AOR_nejd_war_winner
+						annex_country = {
+							target = ARA
+						}
+						clr_country_flag = AOR_nejd_war_winner
+						set_cosmetic_tag = SAU_Hejaz_1
+					}
+					JSR = {
+						has_global_flag = AOR_nejd_war_winner
+						annex_country = {
+							target = ARA
+						}
+						clr_country_flag = AOR_nejd_war_winner
+						set_cosmetic_tag = JSR_unified
+					}
+				}
+				else_if = {
+					limit = {
+						#汉志胜利
+						FROM = {
+							original_tag = ARA
+						}
+						ROOT = {
+							OR = {
+								original_tag = SAU
+								original_tag = JSR
+							}
+						}
+					}
+					ARA = { 
+						annex_country = {
+							OR = {
+								target = SAU
+								target = JSR
+							}
+						}
+						set_cosmetic_tag = ARA_unified
+					}
+				}
+			}
 		}
 	}
 }
