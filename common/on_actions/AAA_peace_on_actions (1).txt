@@ -902,6 +902,7 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+					country_event = { days = 90  id = KMT.13 }
 				}
 				MAN = {
 					transfer_state = 610
@@ -996,6 +997,7 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+					country_event = { days = 90  id = KMT.13 }
 				}
 				MAN = {
 					transfer_state = 610
