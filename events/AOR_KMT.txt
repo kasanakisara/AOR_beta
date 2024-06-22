@@ -310,8 +310,8 @@ country_event = {#昆明政府统一南方
         option = {
             name = KMT.5.a
             news_event = {id=AOR_news.113}
-            country_event = { days = 90  id = CHI.38 }
-            country_event = { days = 360  id = JAP.3 }
+            country_event = { days = 60  id = CHI.38 }
+            country_event = { days = 90  id = JAP.10 }
             set_capital = { state = 893 }
             KMT = {
                 add_state_core = 876
@@ -768,3 +768,24 @@ country_event = {#昆明政府统一南方
                 }
             }
         }
+
+        country_event = {#重建中原（获得中原地区核心）
+        id = KMT.13
+        title = KMT.13.t
+        desc =  KMT.13.d
+        picture = GFX_KMT_event_13
+        is_triggered_only = yes
+        fire_only_once = yes
+ 
+        option = {
+            name = KMT.13.a
+            KMT = {
+                add_state_core = 885
+                add_state_core = 886
+                add_state_core = 887
+                add_state_core = 889
+                add_state_core = 890
+                add_state_core = 598
+            }
+        }
+    }
