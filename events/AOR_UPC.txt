@@ -1133,10 +1133,10 @@ country_event = {#广州政府统一南方
 		news_event = {id=AOR_news.107}
 		country_event = { days = 90  id = UPC.102 }
 		UPC = {
+			set_party_name = { ideology = Absolutism long_name = UPC_Absolutism_party_1 name = UPC_Absolutism_party_1 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.05 }
 			add_popularity = { ideology = CON_democratic popularity = 0.05 }
-			add_popularity = { ideology = AUT_democratic popularity = 0.10 }
-			add_popularity = { ideology = Special popularity = -0.05 }
+			add_popularity = { ideology = AUT_democratic popularity = 0.05 }
 			swap_ideas={
 				remove_idea = CHI_insecure_society
 				add_idea = CHI_care_society
@@ -1203,6 +1203,8 @@ country_event = {#中国广州政府宣布北伐
 		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
 		 UPC = {
+			set_party_name = { ideology = Absolutism long_name = UPC_AUT_democratic_party_1 name = UPC_AUT_democratic_party_1 }
+			add_popularity = { ideology = Special popularity = 0.05 }
 			add_ideas = CHI_gemintongyizhixi
 		 }
     }
@@ -1281,7 +1283,6 @@ country_event = {#中国广州政府宣布北伐
             country_event = { days = 90  id = JAP.10 }
             UPC = {
 				add_popularity = { ideology = Absolutism popularity = 0.05 }
-				add_popularity = { ideology = Special popularity = -0.05 }
                 add_state_core = 876
                 add_state_core = 612
                 add_state_core = 756
