@@ -117,7 +117,7 @@ focus_tree = {
 					}
 				}
 				917 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 			if = {
@@ -127,7 +127,7 @@ focus_tree = {
 					}
 				}
 				586 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 			if = {
@@ -137,7 +137,7 @@ focus_tree = {
 					}
 				}
 				918 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 			if = {
@@ -147,7 +147,7 @@ focus_tree = {
 					}
 				}
 				654 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 			if = {
@@ -157,7 +157,7 @@ focus_tree = {
 					}
 				}
 				916 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 			if = {
@@ -167,7 +167,7 @@ focus_tree = {
 					}
 				}
 				920 = {
-					transfer_state_to = SOV
+					transfer_state_to = RUS
 				}
 			}
 		}
