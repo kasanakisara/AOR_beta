@@ -2391,3 +2391,16 @@ news_event = {#美国内战白热化（南方）
 		name = AOR_news.156.a
 	}
 }
+
+news_event = {#阿拉伯王国解体！
+	id = AOR_news.159
+	title = AOR_news.159.t
+	desc = AOR_news.159.d
+	picture = GFX_AOR_news.159_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.159.a
+	}
+}

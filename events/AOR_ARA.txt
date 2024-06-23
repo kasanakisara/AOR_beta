@@ -146,6 +146,7 @@ country_event = {#落幕，王国解体
     } 
     option = { 
         name = ARA.8.a
+        news_event = {id=AOR_news.159}
 	}
 }
 country_event = {#汉志的反应（沙漠战争）
