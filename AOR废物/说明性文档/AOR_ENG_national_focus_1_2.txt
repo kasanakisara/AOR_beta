@@ -2,9 +2,7 @@
 focus_tree = {
 	id = ENG_National_focus_1
 	country = {
-
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = ENG
