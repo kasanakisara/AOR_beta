@@ -1168,16 +1168,32 @@ country_event = {
 	option = {
 		name = CHI.38.a
 		CHI_civil_war_7 = yes
+		if = {
+	        limit ={
+		        UPC = {
+			        controls_state = 608
+		    }
+	    }
+		    UPC = {
+	        annex_country = { 
+		        target = SHX 
+		        transfer_troops = no 
+	    }
+	        annex_country = { 
+		        target = MEN 
+		        transfer_troops = no 
+	        }
+        }
+    }
 		country_event = { days = 90  id =CHI.39 }
 		}
 	option = {
-		CHI_civil_war_7 = yes
 		name = CHI.38.b
 		country_event = { days = 90  id =CHI.39 }
 		if = {
 			limit ={
 				NAN = {
-					controls_state = 525
+					controls_state = 608
 				}
 			}
 			NAN = {
@@ -1194,7 +1210,7 @@ country_event = {
 	    if = {
 		    limit ={
 			    MON = {
-				    controls_state = 525
+				    controls_state = 608
 			    }
 		    }
 		    MON = {
@@ -1211,7 +1227,7 @@ country_event = {
 	    if = {
 		    limit ={
 			    KMT = {
-				    controls_state = 525
+				    controls_state = 608
 			    }
 		    }
 		    KMT = {
@@ -1228,7 +1244,7 @@ country_event = {
         if = {
 	        limit ={
 		        UPC = {
-			        controls_state = 525
+			        controls_state = 608
 		    }
 	    }
 		    UPC = {
@@ -1255,17 +1271,33 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		CHI_civil_war_8 = yes
+		if = {
+	        limit ={
+		        UPC = {
+			        controls_state = 608
+		    }
+	    }
+		    UPC = {
+	        annex_country = { 
+		        target = SHX 
+		        transfer_troops = no 
+	    }
+	        annex_country = { 
+		        target = MEN 
+		        transfer_troops = no 
+	        }
+        }
+    }
 		name = CHI.39.a
 		country_event = { days = 90  id =CHI.40 }
 		}
 	option = {
-		CHI_civil_war_8 = yes
 		name = CHI.39.b
 		country_event = { days = 90  id =CHI.40 }
 		if = {
 			limit ={
 				NAN = {
-					controls_state = 525
+					controls_state = 608
 				}
 			}
 			NAN = {
@@ -1286,7 +1318,7 @@ country_event = {
 	    if = {
 		    limit ={
 			    MON = {
-				    controls_state = 525
+				    controls_state = 608
 			    }
 		    }
 		    MON = {
@@ -1307,7 +1339,7 @@ country_event = {
 	    if = {
 		    limit ={
 			    KMT = {
-				    controls_state = 525
+				    controls_state = 608
 			    }
 		    }
 		    KMT = {
@@ -1328,7 +1360,7 @@ country_event = {
         if = {
 	        limit ={
 		        UPC = {
-			        controls_state = 525
+			        controls_state = 608
 		    }
 	    }
 		    UPC = {
@@ -1362,8 +1394,8 @@ country_event = {
 			name = CHI.40.a
 			}
 		option = {
-			name = CHI.40.b
 			CHI_civil_war_9 = yes
+			name = CHI.40.b
 			}
 		}
 

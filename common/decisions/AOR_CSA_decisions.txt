@@ -80,7 +80,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag =CSA
 		}
-        fire_only_once =  Yes
+        fire_only_once = yes
         ai_will_do = {
             factor = 0.5 
         }
