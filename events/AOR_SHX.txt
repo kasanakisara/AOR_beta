@@ -48,6 +48,7 @@ country_event = {#阎锡山支持陈其美国民政府
         tag = SHX
 		date > 1922.12.10
         KMT = {
+            AUT_democratic > 0.15
             owns_state = 893
         }
     }
