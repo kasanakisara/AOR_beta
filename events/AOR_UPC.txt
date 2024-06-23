@@ -1202,7 +1202,7 @@ country_event = {#中国广州政府宣布北伐
 		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
 		 UPC = {
-			set_party_name = { ideology = Absolutism long_name = UPC_AUT_democratic_party_1 name = UPC_AUT_democratic_party_1 }
+			set_party_name = { ideology = AUT_democratic long_name = UPC_AUT_democratic_party_1 name = UPC_AUT_democratic_party_1 }
 			add_popularity = { ideology = Special popularity = 0.05 }
 			add_ideas = CHI_gemintongyizhixi
 		 }
