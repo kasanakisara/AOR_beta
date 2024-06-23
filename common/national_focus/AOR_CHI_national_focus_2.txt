@@ -859,6 +859,9 @@ focus_tree = {
 		x = 3
 		y = 5
 		completion_reward = {
+			RUS = {
+				transfer_state = 930
+			}
 			add_political_power = 50
 			add_stability = 0.05
 		}

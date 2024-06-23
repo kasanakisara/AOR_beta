@@ -55,6 +55,7 @@ country_event = {
 		set_cosmetic_tag = NAN_1
 		}
 		MON = {
+		load_focus_tree = new_chi_2
         load_oob = "AOR_LAND_CHI_VAN"
 		set_cosmetic_tag = MON_WEST
 		}
