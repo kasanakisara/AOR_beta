@@ -119,7 +119,7 @@ armor_ENG = {
 				factor = 1.5
 				OR = {
 					has_tech = basic_light_tank
-					has_tech = basic_light_tank_chassis
+					has_tech = light_tank_chassis_0
 				}
 			}
 
@@ -127,7 +127,7 @@ armor_ENG = {
 				factor = 1.5
 				OR = {
 					has_tech = improved_light_tank
-					has_tech = improved_light_tank_chassis
+					has_tech = light_tank_chassis_1
 				}
 			}
 		}

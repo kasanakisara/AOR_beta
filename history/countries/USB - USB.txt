@@ -151,7 +151,7 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
-		basic_light_tank_chassis = 1
+		light_tank_chassis_0 = 1
 	}
 }
 	create_equipment_variant = {
