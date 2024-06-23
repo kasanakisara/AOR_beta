@@ -958,13 +958,11 @@ country_event = {
 		date > 1922.11.10
 		tag = NAN
 		NAN ={
-			owns_state = 930
 			owns_state = 330
 			owns_state = 610
 			owns_state = 611
 			owns_state = 621
 			owns_state = 330
-			owns_state = 930
 			owns_state = 610
 			owns_state = 611
 			owns_state = 621
@@ -997,13 +995,11 @@ country_event = {
 		name = CHI.34.a
 		news_event = {id=AOR_news.110}
         NAN = {
-			add_state_core = 930
 			add_state_core = 330
 			add_state_core = 610
 			add_state_core = 611
 			add_state_core = 621
 			add_state_core = 330
-			add_state_core = 930
 			add_state_core = 610
 			add_state_core = 611
 			add_state_core = 621
@@ -1035,7 +1031,6 @@ country_event = {
 		date > 1922.11.10
 		tag = MON
 		MON ={
-			owns_state = 930
 			owns_state = 893
 			owns_state = 882
 			owns_state = 613
@@ -1072,7 +1067,6 @@ country_event = {
 		name = CHI.35.a
 		news_event = {id=AOR_news.111}
         MON = {
-			add_state_core = 930
 			add_state_core = 893
 			add_state_core = 882
 			add_state_core = 613
