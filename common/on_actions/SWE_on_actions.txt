@@ -338,8 +338,53 @@ on_actions = {
 
 				set_variable = { SWE_Union_progress_value_add = 0 }
 
-				## 市场包容度
-				
+				## 市场包容度 -> 增长度
+
+				if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 15 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 25 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 65 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 75 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 85 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
+				}
+				else = {
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
 
 			}
 
