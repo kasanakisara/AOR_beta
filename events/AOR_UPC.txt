@@ -1111,22 +1111,8 @@ country_event = {#广州政府统一南方
 	title =UPC.101.t
 	desc = UPC.101.d
 	picture = GFX_UPC_event_101
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		tag = UPC
-		date > 1922.12.10
-        UPC = {
-            owns_state = 750
-            owns_state = 907
-            owns_state = 748
-            owns_state = 603
-            owns_state = 325
-            owns_state = 609
-            owns_state = 755
-            owns_state = 747
-        }
-    }
-
 
     option = {
 		name = UPC.101.a
