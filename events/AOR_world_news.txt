@@ -2352,3 +2352,16 @@ news_event = {#陈宦总督统一四川
 		name = AOR_news.155.a
 	}
 }
+
+news_event = {#巴西总统死亡
+	id = AOR_news.156
+	title = AOR_news.156.t
+	desc = AOR_news.156.d
+	picture = GFX_AOR_news.156_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.156.a
+	}
+}
