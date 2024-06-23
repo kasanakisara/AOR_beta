@@ -110,66 +110,66 @@ focus_tree = {
 			add_stability = -0.05
 			add_war_support = -0.1
 			army_experience = -30
-			if = {
-				limit = {
-					917 = {
-						is_owned_by = CHI
-					}
-				}
-				917 = {
-					transfer_state_to = RUS
-				}
-			}
-			if = {
-				limit = {
-					586 = {
-						is_owned_by = CHI
-					}
-				}
-				586 = {
-					transfer_state_to = RUS
-				}
-			}
-			if = {
-				limit = {
-					918 = {
-						is_owned_by = CHI
-					}
-				}
-				918 = {
-					transfer_state_to = RUS
-				}
-			}
-			if = {
-				limit = {
-					654 = {
-						is_owned_by = CHI
-					}
-				}
-				654 = {
-					transfer_state_to = RUS
-				}
-			}
-			if = {
-				limit = {
-					916 = {
-						is_owned_by = CHI
-					}
-				}
-				916 = {
-					transfer_state_to = RUS
-				}
-			}
-			if = {
-				limit = {
-					920 = {
-						is_owned_by = CHI
-					}
-				}
-				920 = {
-					transfer_state_to = RUS
-				}
-			}
+			#if = {
+				#limit = {
+					#917 = {
+						#is_owned_by = CHI
+					#}
+				#}
+				#917 = {
+					#transfer_state_to = RUS
+				#}
+			#}
+			#if = {
+				#limit = {
+					#586 = {
+						#is_owned_by = CHI
+					#}
+				#}
+				#586 = {
+					#transfer_state_to = RUS
+				#}
+			#}
+			#if = {
+				#limit = {
+					#918 = {
+						#is_owned_by = CHI
+					#}
+				#}
+				#918 = {
+					#transfer_state_to = RUS
+				#}
+			#}
+			#if = {
+				#limit = {
+					#654 = {
+						#is_owned_by = CHI
+					#}
+				#}
+				#654 = {
+					#transfer_state_to = RUS
+				#}
+			#}
+			#if = {
+				#limit = {
+					#916 = {
+						#is_owned_by = CHI
+					#}
+				#}
+				#916 = {
+					#transfer_state_to = RUS
+				#}
+			#}
+			#if = {
+				#limit = {
+					#920 = {
+						#is_owned_by = CHI
+				    #}
+				#}
+				#920 = {
+					#transfer_state_to = RUS
+				#}
+			#}
 		}
 	}
 	focus = {
