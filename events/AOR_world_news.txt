@@ -2365,3 +2365,29 @@ news_event = {#巴西总统死亡
 		name = AOR_news.156.a
 	}
 }
+
+news_event = {#美国内战白热化（北方）
+	id = AOR_news.157
+	title = AOR_news.157.t
+	desc = AOR_news.157.d
+	picture = GFX_AOR_news.157_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.156.a
+	}
+}
+
+news_event = {#美国内战白热化（南方）
+	id = AOR_news.158
+	title = AOR_news.158.t
+	desc = AOR_news.158.d
+	picture = GFX_AOR_news.158_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.156.a
+	}
+}

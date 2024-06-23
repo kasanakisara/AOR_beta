@@ -1133,6 +1133,10 @@ country_event = {#广州政府统一南方
 		news_event = {id=AOR_news.107}
 		country_event = { days = 90  id = UPC.102 }
 		UPC = {
+			swap_ideas={
+				remove_idea = CHI_insecure_society
+				add_idea = CHI_care_society
+			}
             add_state_core = 750
             add_state_core = 907
             add_state_core = 748
