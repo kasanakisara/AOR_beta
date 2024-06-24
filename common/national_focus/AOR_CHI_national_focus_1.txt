@@ -10,7 +10,7 @@ focus_tree={
 	continuous_focus_position = { x = 1000  y = 1500 }
 	default=no
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Congress_speech
 		id=CHI_Congress_speech
 		x=5
 		y=0
@@ -26,7 +26,8 @@ icon=AOR_unkown
 		country_event = { id = CHI.1 }
 		}
 	}
-	focus={icon=AOR_unkown
+	focus={
+		icon=GFX_CHI_Anti_russian_propaganda
 		id=CHI_Anti_russian_propaganda
 		x=0
 		y=1
@@ -43,7 +44,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Young_Volunteer_Army
 		id=CHI_Young_Volunteer_Army
 		x=5
 		y=1
@@ -64,7 +65,7 @@ icon=AOR_unkown
 	
 	}	
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Manipulate_Congress
 		id=CHI_Manipulate_Congress
 		x=10
 		y=1
@@ -81,7 +82,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Reclaiming_outer_northwest
 		id=CHI_Reclaiming_outer_northwest
 		x=5
 		y=2
@@ -108,7 +109,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_international_aid
 		id=CHI_international_aid
 		x=1
 		y=3
@@ -136,7 +137,7 @@ icon=AOR_unkown
     }
 }
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Northwest_joint_command
 		id=CHI_Northwest_joint_command
 		x=5
 		y=3
@@ -153,7 +154,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Mobilize_workers_help_in_war
 		id=CHI_Mobilize_workers_help_in_war
 		x=9
 		y=3
@@ -169,14 +170,14 @@ icon=AOR_unkown
 		custom_effect_tooltip = CHI.3.tt
 		hidden_effect = {
 			build_railway = {
-				path = { 4801 12686 10632 1853 12609 4525 10424 }
+				path = { 4801 7752 1787 4856 1723 12331 10424 }
 				level = 2
 				}
 			}
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_war_bond
 		id=CHI_war_bond
 		x=3
 		y=4
@@ -194,7 +195,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Hold_down_south
 		id=CHI_Hold_down_south
 		x=7
 		y=4
@@ -213,7 +214,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Yuan_is_dying
 		id=CHI_Yuan_is_dying
 		x=5
 		y=5
@@ -236,7 +237,7 @@ icon=AOR_unkown
 		}
 	}
 	focus={
-icon=AOR_unkown
+        icon=GFX_CHI_Year_of_Gengshen
 		id=CHI_Year_of_Gengshen
 		x=5
 		y=6
@@ -263,7 +264,7 @@ icon=AOR_unkown
 
 ##林有为出来受死！！#
 	focus={
-icon=AOR_unkown
+        icon= GFX_CHI_Yuan_triping
 		id=CHI_Yuan_triping
 		x=5
 		y=5
@@ -307,7 +308,7 @@ icon=AOR_unkown
 	}
 	
 	focus={
-icon=AOR_unkown
+icon=GFX_CHI_Assess_s
 		id=CHI_Assess_s
 		x=2
 		y=6
@@ -323,7 +324,7 @@ icon=AOR_unkown
 	}
 	
 	focus={
-icon=AOR_unkown
+icon=GFX_CHI_we_win
 		id=CHI_we_win
 		x=5
 		y=6
@@ -339,7 +340,7 @@ icon=AOR_unkown
 	}
 	
 	focus={
-icon=AOR_unkown
+icon=GFX_CHI_stop
 		id=CHI_stop
 		x=8
 		y=6
@@ -355,7 +356,7 @@ icon=AOR_unkown
 	}
 	
 	focus={
-icon=AOR_unkown
+icon=GFX_CHI_forward
 		id=CHI_forward
 		x = 5
 		y = 8

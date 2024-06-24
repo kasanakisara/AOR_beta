@@ -18,9 +18,10 @@ country_event = {
 	desc = CSA.100.d
 	picture = GFX_CSA_event_100
 	trigger = {
-		361 = { is_controlled_by = CSA }
-		361 = { is_owned_by = USA }
-		CSA = { has_war_with = USA }
+		CSA = { 
+		has_war_with = USA
+		owns_state = 361
+	    }
 	}
 	is_triggered_only = No
 	fire_only_once = yes
@@ -35,9 +36,10 @@ country_event = {
 	desc = CSA.101.d
 	picture = GFX_CSA_event_101
 	trigger = {
-		358 = { is_controlled_by = CSA }
-		358 = { is_owned_by = USA }
-		CSA = { has_war_with = USA }
+		CSA = { 
+			has_war_with = USA
+			owns_state = 358
+		}
 	}
 	is_triggered_only = No
 	fire_only_once = yes
@@ -52,9 +54,10 @@ country_event = {
 	desc = CSA.102.d
 	picture = GFX_CSA_event_102
 	trigger = {
-		360 = { is_controlled_by = CSA }
-		360 = { is_owned_by = USA }
-		CSA = { has_war_with = USA }
+		CSA = { 
+			has_war_with = USA
+			owns_state = 360
+		}
 	}
 	is_triggered_only = No
 	fire_only_once = yes
@@ -69,9 +72,10 @@ country_event = {
 	desc = CSA.103.d
 	picture = GFX_CSA_event_103
 	trigger = {
-		261 = { is_controlled_by = CSA }
-		261 = { is_owned_by = USA }
-		CSA = { has_war_with = USA }
+		CSA = { 
+			has_war_with = USA
+			owns_state = 261
+		}
 	}
 	is_triggered_only = No
 	fire_only_once = yes
@@ -98,6 +102,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CSA.104.a
+		news_event = {id=AOR_news.158}
 	}
 }
 

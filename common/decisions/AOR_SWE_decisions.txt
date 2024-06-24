@@ -255,6 +255,7 @@ SWE_Trade_decision_categories = {
         avaliable = { has_idea = SWE_Open_the_door }
         visible = { has_idea = SWE_Open_the_door }
         days_re_enable = 35
+        cost = 20
         complete_effect = {
             add_to_variable = { SWE_Government_Spending = 5 }
             custom_effect_tooltip = SWE_Add_Government_Spending_tt
@@ -265,6 +266,7 @@ SWE_Trade_decision_categories = {
         avaliable = { has_idea = SWE_Open_the_door }
         visible = { has_idea = SWE_Open_the_door }
         days_re_enable = 35
+        cost = 20
         complete_effect = {
             add_to_variable = { SWE_Government_Spending = -5 }
             custom_effect_tooltip = SWE_Lower_Government_Spending_tt

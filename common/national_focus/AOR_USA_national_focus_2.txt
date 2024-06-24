@@ -9,8 +9,8 @@ focus_tree={
 	}
 	default=no
 	focus={
-		id = USA_White_House
-		icon = GFX_goal_USA_White_House
+		id=USA_White_House
+		icon=GFX_goal_USA_White_House
 		x=12
 		y=0
 		cost=0
@@ -18,9 +18,8 @@ focus_tree={
 			factor=1
 		}
 		available={
-			date > 1919.12.30
+			date>1919.12.30
 		}
-
 		completion_reward={
 		}
 	}
@@ -70,9 +69,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_political_power = 20
-                country_event={
-		           id = USA.10023
+			add_political_power=20
+			country_event={
+				id=USA.10023
 			}
 		}
 	}
@@ -108,18 +107,17 @@ focus_tree={
 		}
 		completion_reward={
 			add_timed_idea={
-				idea = USA_zanshideweiji
-				days = 720
-            }
+				idea=USA_zanshideweiji
+				days=720
+			}
 			swap_ideas={
-				remove_idea = USA_AmericanAnxietyA
-				add_idea = USA_zanshideweiji
+				remove_idea=USA_AmericanAnxietyA
+				add_idea=USA_zanshideweiji
 			}
 			country_event={
-				id = USA.10018
+				id=USA.10018
 			}
-			
-			add_political_power = -200
+			add_political_power=-200
 		}
 	}
 	focus={
@@ -137,9 +135,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_manpower = -300
-			add_political_power = -50
-			army_experience = 10
+			add_manpower=-300
+			add_political_power=-50
+			army_experience=10
 		}
 	}
 	focus={
@@ -157,8 +155,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = USA_zhixuchonggou_knights
-				add_idea = USA_zhixuchonggou_knights1
+				remove_idea=USA_zhixuchonggou_knights
+				add_idea=USA_zhixuchonggou_knights1
 			}
 		}
 	}
@@ -176,10 +174,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_manpower = -500
+			add_manpower=-500
 			swap_ideas={
-			    remove_idea = USA_AmericanAnxietyA
-				add_idea = USA_jinjizhuangtai
+				remove_idea=USA_AmericanAnxietyA
+				add_idea=USA_jinjizhuangtai
 			}
 		}
 	}
@@ -213,34 +211,35 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo
+					add_idea=USA_dazhanzhimo2
+				}
 			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo
-				add_idea = USA_dazhanzhimo2
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo2
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo2
+					add_idea=USA_dazhanzhimo3
+				}
 			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo2
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo2
-				add_idea = USA_dazhanzhimo3
-			}
-			}
-			add_political_power = -50
-			leave_faction = yes
+			add_political_power=-50
+			leave_faction=yes
 		}
 	}
 	focus={
 		id=USA_money
 		icon=GFX_goal_USA_money
-		x=8
+		x=9
 		y=6
 		prerequisite={focus=USA_imprisoned}
+		prerequisite={focus=USA_Morgan_idea focus=USA_Mellon_idea }
 		mutually_exclusive={focus=USA_container_gold }
 		cost=3
 		ai_will_do={
@@ -250,43 +249,46 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo
+					add_idea=USA_dazhanzhimo2
+				}
 			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo
-				add_idea = USA_dazhanzhimo2
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo2
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo2
+					add_idea=USA_dazhanzhimo3
+				}
 			}
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo3
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo3
+					add_idea=USA_dazhanzhimo4
+				}
 			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo2
+			news_event={
+				id=AOR_news.83
 			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo2
-				add_idea = USA_dazhanzhimo3
-			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo3
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo3
-				add_idea = USA_dazhanzhimo4
-			}
-			}
-			news_event = {id=AOR_news.83}
-			add_stability = -0.05
+			add_stability=-0.05
 		}
 	}
 	focus={
 		id=USA_container_gold
 		icon=GFX_goal_USA_container_gold
-		x=10
+		x=15
 		y=6
 		prerequisite={focus=USA_imprisoned}
+		prerequisite={focus=USA_Morgan_idea focus=USA_Mellon_idea }
 		mutually_exclusive={focus=USA_money }
 		cost=3
 		ai_will_do={
@@ -296,32 +298,32 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo
+					add_idea=USA_dazhanzhimo2
+				}
 			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo
-				add_idea = USA_dazhanzhimo2
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo2
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo2
+					add_idea=USA_dazhanzhimo3
+				}
 			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo2
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo2
-				add_idea = USA_dazhanzhimo3
-			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo3
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo3
-				add_idea = USA_dazhanzhimo4
-			}
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo3
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo3
+					add_idea=USA_dazhanzhimo4
+				}
 			}
 		}
 	}
@@ -340,10 +342,10 @@ focus_tree={
 		}
 		completion_reward={
 			add_timed_idea={
-				idea = USA_zanshideweiji1
-				days = 720
-            }
-			add_political_power = -150
+				idea=USA_zanshideweiji1
+				days=720
+			}
+			add_political_power=-150
 		}
 	}
 	focus={
@@ -352,7 +354,7 @@ focus_tree={
 		x=14
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
-		mutually_exclusive={focus=USA_Mellon_idea}
+		mutually_exclusive={focus=USA_Mellon_idea }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -362,8 +364,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = USA_busidexintuo
-				add_idea = USA_busidexintuo2
+				remove_idea=USA_busidexintuo
+				add_idea=USA_busidexintuo2
 			}
 		}
 	}
@@ -373,7 +375,7 @@ focus_tree={
 		x=16
 		y=5
 		prerequisite={focus=USA_Loans_are_issued}
-		mutually_exclusive={focus=USA_Morgan_idea}
+		mutually_exclusive={focus=USA_Morgan_idea }
 		cost=3
 		ai_will_do={
 			factor=1
@@ -383,16 +385,17 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = USA_busidexintuo
-				add_idea = USA_busidexintuo1
+				remove_idea=USA_busidexintuo
+				add_idea=USA_busidexintuo1
 			}
 		}
 	}
 	focus={
 		id=USA_Raise_tariffs
 		icon=GFX_goal_USA_Raise_tariffs
-		x=15
-		y=6
+		x=12
+		y=7
+		prerequisite={focus=USA_imprisoned}
 		prerequisite={focus=USA_Morgan_idea focus=USA_Mellon_idea }
 		cost=3
 		ai_will_do={
@@ -402,39 +405,39 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo
+					add_idea=USA_dazhanzhimo2
+				}
+			}
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo2
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo2
+					add_idea=USA_dazhanzhimo3
+				}
+			}
+			if={
+				limit={
+					has_idea=USA_dazhanzhimo3
+				}
+				swap_ideas={
+					remove_idea=USA_dazhanzhimo3
+					add_idea=USA_dazhanzhimo4
+				}
 			}
 			swap_ideas={
-				remove_idea = USA_dazhanzhimo
-				add_idea = USA_dazhanzhimo2
-			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo2
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo2
-				add_idea = USA_dazhanzhimo3
-			}
-			}
-			if = {
-				limit = {
-					has_idea = USA_dazhanzhimo3
-			}
-			swap_ideas={
-				remove_idea = USA_dazhanzhimo3
-				add_idea = USA_dazhanzhimo4
-			}
-			}
-			swap_ideas={
-				remove_idea = USA_the_divided_nation
-				add_idea = USA_the_divided_nation2
+				remove_idea=USA_the_divided_nation
+				add_idea=USA_the_divided_nation2
 			}
 			country_event={
-				id = USA.10022
+				id=USA.10022
 			}
 		}
 	}
@@ -452,9 +455,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_political_power = 10
+			add_political_power=10
 			country_event={
-				id = USA.10020
+				id=USA.10020
 			}
 		}
 	}
@@ -472,18 +475,16 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-
-			add_tech_bonus = {
-				bonus = 1.0
-				ahead_reduction = 1
-				uses = 3
-				category = industry
-				category = synth_resources
-				category = electronics
+			add_tech_bonus={
+				bonus=1.0
+				ahead_reduction=1
+				uses=3
+				category=industry
+				category=synth_resources
+				category=electronics
 			}
-
 			country_event={
-				id = USA.10021
+				id=USA.10021
 			}
 		}
 	}
@@ -501,9 +502,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_political_power = 50
+			add_political_power=50
 			country_event={
-				id = USA.10028
+				id=USA.10028
 			}
 		}
 	}
@@ -523,8 +524,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = USA_sandaliren
-				add_idea = USA_sandaliren1
+				remove_idea=USA_sandaliren
+				add_idea=USA_sandaliren1
 			}
 		}
 	}
@@ -544,8 +545,8 @@ focus_tree={
 		}
 		completion_reward={
 			swap_ideas={
-				remove_idea = USA_sandaliren
-				add_idea = USA_sandaliren3
+				remove_idea=USA_sandaliren
+				add_idea=USA_sandaliren3
 			}
 		}
 	}
@@ -553,32 +554,31 @@ focus_tree={
 		id=USA_Finally
 		icon=GFX_goal_USA_Finally
 		x=12
-		y=8
-		prerequisite={focus=USA_Raise_tariffs focus=USA_Rockefeller}
-		prerequisite={focus=USA_Limit_the_Knights focus=USA_Eradicating_the_Cancer }
-		prerequisite={focus=USA_money focus=USA_container_gold }
-		prerequisite={focus=USA_Western_Eagles focus=USA_the_east }
+		y=9
+		prerequisite={focus=USA_Raise_tariffs focus=USA_Rockefeller focus=USA_Limit_the_Knights focus=USA_Eradicating_the_Cancer focus=USA_money focus=USA_container_gold focus=USA_Western_Eagles focus=USA_the_east }
 		cost=0
 		ai_will_do={
 			factor=1
 		}
 		available={
-			date > 1921.1.30
+			date>1921.1.30
 		}
 		search_filters={
 		}
 		completion_reward={
-			USA = {
-				set_politics = {ruling_party = FRE_democratic}
-				create_country_leader = {
-				name = "Warren_Gamaliel_Harding"
-				desc = "Warren_Gamaliel_Harding_desc"
-				picture = "gfx/leaders/USA/Harding.png"
-				expire = "1945.1.1"
-				ideology = USA_federalism
+			USA={
+				set_politics={
+					ruling_party=FRE_democratic
+				}
+				create_country_leader={
+					name="Warren_Gamaliel_Harding"
+					desc="Warren_Gamaliel_Harding_desc"
+					picture="gfx/leaders/USA/Harding.png"
+					expire="1945.1.1"
+					ideology=USA_federalism
 				}
 				hidden_effect={
-					load_focus_tree = USA_3
+					load_focus_tree=USA_3
 				}
 			}
 		}

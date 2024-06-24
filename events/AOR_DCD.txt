@@ -22,7 +22,7 @@ country_event = {
 
     option = {
 		name = DCD.1.a
-		#news_event = {id=AOR_news.105}
+		news_event = {id=AOR_news.155}
 		DCD = {
             set_cosmetic_tag = DCD_3
             set_capital = { state = 753 }
@@ -50,19 +50,48 @@ country_event = {
         }
     immediate = { 
         hidden_effect = {
-            DCD = {
-            declare_war_on = { 
-                target = KMT
-                type = civil_war
-            } 
-            declare_war_on = { 
-                target = UPC
-                type = civil_war
+            if = {
+                limit ={
+                    NAN = {
+                        owns_state = 893
+                        owns_state = 608
+                    }
+                }
+                DCD = {
+                    declare_war_on = { 
+                        target = KMT
+                        type = civil_war
+                    } 
+                    declare_war_on = { 
+                        target = UPC
+                        type = civil_war
+                    }
+                    create_faction = Zhiyang_Union
+                    add_to_faction = NAN
+                    white_peace = NAN
+                }
             }
-            create_faction = Beiyang_Union
-            add_to_faction = NAN
-            white_peace = NAN
-        }
+            if = {
+                limit ={
+                    MON = {
+                        owns_state = 893
+                        owns_state = 608
+                    }
+                }
+                DCD = {
+                    declare_war_on = { 
+                        target = KMT
+                        type = civil_war
+                    } 
+                    declare_war_on = { 
+                        target = UPC
+                        type = civil_war
+                    }
+                    create_faction = Beiyang_Union
+                    add_to_faction = MON
+                    white_peace = MON
+                }
+            }
     }
 }
 

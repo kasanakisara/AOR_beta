@@ -9,7 +9,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag = CSA
 		}
-        fire_only_once =  Yes
+        fire_only_once = yes
         ai_will_do = {
             factor = 0.5
         }
@@ -19,9 +19,10 @@ CSA_Civil_War_Resolution_gravity = {
         modifier = {
 		}
 
-        complete_effect = {
-            add_stability = 0.1
-        }
+        remove_effect = { 
+        add_stability = 0.1
+        }	
+
     }
 
     #重组两院制度
@@ -32,7 +33,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag = CSA
 		}
-        fire_only_once =  Yes
+        fire_only_once = yes
         ai_will_do = {
             factor = 0.5 
         }
@@ -42,9 +43,9 @@ CSA_Civil_War_Resolution_gravity = {
         modifier = {
 		}
 
-        complete_effect = {
-            add_stability = 0.1
-        }
+        remove_effect = { 
+        add_stability = 0.1
+        }	
     }
 
     #完善立法机制
@@ -79,7 +80,7 @@ CSA_Civil_War_Resolution_gravity = {
         allowed = {
 			original_tag =CSA
 		}
-        fire_only_once =  Yes
+        fire_only_once = yes
         ai_will_do = {
             factor = 0.5 
         }
@@ -89,9 +90,9 @@ CSA_Civil_War_Resolution_gravity = {
 
         cost = 150
 
-        complete_effect = {
-            add_stability = 0.1
-        }
+        remove_effect = { 
+        add_stability = 0.1
+        }	
     }
 
     #完善司法机关

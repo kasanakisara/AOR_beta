@@ -1127,12 +1127,19 @@ country_event = {#广州政府统一南方
         }
     }
 
-
     option = {
 		name = UPC.101.a
 		news_event = {id=AOR_news.107}
 		country_event = { days = 90  id = UPC.102 }
 		UPC = {
+			set_party_name = { ideology = Absolutism long_name = UPC_Absolutism_party_1 name = UPC_Absolutism_party_1 }
+			add_popularity = { ideology = FRE_democratic popularity = 0.05 }
+			add_popularity = { ideology = CON_democratic popularity = 0.05 }
+			add_popularity = { ideology = AUT_democratic popularity = 0.05 }
+			swap_ideas={
+				remove_idea = CHI_insecure_society
+				add_idea = CHI_care_society
+			}
             add_state_core = 750
             add_state_core = 907
             add_state_core = 748
@@ -1150,13 +1157,33 @@ country_event = {#中国广州政府宣布北伐
      title = UPC.102.t
     desc = UPC.102.d
     picture = GFX_UPC_event_102
-    is_triggered_only = yes
+	trigger = {
+		UPC = {
+            owns_state = 750
+            owns_state = 907
+            owns_state = 748
+            owns_state = 603
+            owns_state = 325
+            owns_state = 609
+            owns_state = 755
+            owns_state = 747
+        }
+		date > 1923.10.10
+		tag = UPC
+		has_war = no
+	}
     fire_only_once = yes
 
         immediate = { 
             hidden_effect = {
                 UPC = {
 				set_cosmetic_tag = UPC_2
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
                 declare_war_on = { 
                     target = NAN
                     type = annex_everything
@@ -1175,6 +1202,8 @@ country_event = {#中国广州政府宣布北伐
 		 country_event = { days = 180  id = DCD.2 }
          news_event = {id=AOR_news.109}
 		 UPC = {
+			set_party_name = { ideology = AUT_democratic long_name = UPC_AUT_democratic_party_1 name = UPC_AUT_democratic_party_1 }
+			add_popularity = { ideology = Special popularity = 0.05 }
 			add_ideas = CHI_gemintongyizhixi
 		 }
     }
@@ -1249,9 +1278,10 @@ country_event = {#中国广州政府宣布北伐
         option = {
             name = UPC.103.a
             news_event = {id=AOR_news.114}
-			country_event = { days = 90  id = CHI.37 }
-			country_event = { days = 360  id = JAP.3 }
+			country_event = { days = 60  id = CHI.38 }
+            country_event = { days = 90  id = JAP.10 }
             UPC = {
+				add_popularity = { ideology = Absolutism popularity = 0.05 }
                 add_state_core = 876
                 add_state_core = 612
                 add_state_core = 756
@@ -1348,6 +1378,7 @@ country_event = {#中国广州政府宣布北伐
         option = {
 			CHI_civil_war_10 = yes
                 UPC = {
+					add_popularity = { ideology = Absolutism popularity = 0.05 }
 					set_cosmetic_tag = UPC_3
                     add_state_core = 884
                     add_state_core = 615

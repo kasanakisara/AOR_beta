@@ -518,9 +518,9 @@ focus_tree={
 				amount = 1000
 				producer = ENG
 				}
-				add_opinion_modifier = { 
-				target = ENG
-				modifier = 100
+				add_opinion_modifier = {
+					target = ENG
+					modifier = 100
 				} 
 		}
 	}
@@ -544,7 +544,7 @@ focus_tree={
 				amount = 1000
 				producer = FRA
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 				target = FRA
 				modifier = 100
 				}  
@@ -570,7 +570,7 @@ focus_tree={
 				amount = 1000
 				producer = JAP
 				} 
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 				target = JAP
 				modifier = 100
 				} 

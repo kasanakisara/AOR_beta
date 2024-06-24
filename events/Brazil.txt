@@ -14,6 +14,7 @@ country_event = {
 	fire_only_once = yes
 	option = { 
         name = BRA.0.a
+		news_event = { id = AOR_news.156 }
 		kill_country_leader = yes
 		create_country_leader = {
 		name = "State of emergency"
@@ -30,15 +31,35 @@ country_event = {
 	title = BRA.1.t
 	desc = BRA.1.d
 	picture = GFX_report_event_german_speech
-
 	trigger = {
 		date > 1922.3.1
 		tag = BRA
 	}
 	mean_time_to_happen = { days = 1}
+	fire_only_once = yes
+	option = { 
+		498={set_demilitarized_zone=yes}
+		499={set_demilitarized_zone=yes}
+		505={set_demilitarized_zone=yes}
+		496={set_demilitarized_zone=yes}
+		 name = BRA.1.a
+		}
+	}
+
+country_event = {
+	id = BRA.2
+	title = BRA.2.t
+	desc = BRA.2.d
+	picture = GFX_report_event_german_speech
+
+	trigger = {
+		date > 1922.4.1
+		tag = BRA
+	}
+	mean_time_to_happen = { days = 1}
 	fire_only_once = yes		
 	option = { 
-		name = BRA.1.a
+		name = BRA.2.a
 		news_event = { id = AOR_news.21 }
 		BR1 = {
 			transfer_state = 488
@@ -46,11 +67,14 @@ country_event = {
 	    	transfer_state = 504
 	    	transfer_state = 496
 			transfer_state = 505
-			load_oob = "BR1_1919_land"	    	
+			load_oob = "BR1_1919_land"	
+			load_oob = "BR1_1919_land"    	
 		}
 		BR2 = {
 	    	transfer_state = 499
 			transfer_state = 498
+			load_oob = "BR2_1919_land"
+			load_oob = "BR2_1919_land"
 			load_oob = "BR2_1919_land"
 		}
 		BR3 = {

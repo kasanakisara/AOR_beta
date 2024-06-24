@@ -1,0 +1,231 @@
+    铁路基础建设1
+    production_speed_rail_way_factor = 0.1
+
+    铁路基础建设2
+    production_speed_rail_way_factor = 0.15
+    
+    铁路基础建设3    
+    production_speed_rail_way_factor = 0.2
+    
+    小工坊工业1 production_factory_max_efficiency_factor +10 修正生产效率上限。
+
+    小工坊工业2 production_factory_max_efficiency_factor +10 修正生产效率上限。
+                production_factory_efficiency_gain_factor +5  修正生产效率增长。
+
+    批量生产：   local_building_slots_factor +10  地区最大工业值
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    精益生产：   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                industrial_capacity_factory  +5  工厂产出
+                industrial_capacity_dockyard +5  船坞产出
+                INDUSTRY_AIR_DAMAGE_FACTOR  +15 受到轰炸
+
+    标准化生产1  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +5 改装
+                refit_speed  +5
+
+    标准化生产2  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +5 改装
+                refit_speed  +5
+
+    标准化生产3  production_factory_max_efficiency_factor +10 修正生产效率上限。
+                equipment_conversion_speed +10 改装
+                refit_speed  +5
+
+    流水化工业1  local_building_slots_factor  +5
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    流水化工业2  local_building_slots_factor  +10
+                industrial_capacity_factory  +10  工厂产出
+                industrial_capacity_dockyard +10  船坞产出
+
+    流水化工业3  local_building_slots_factor  +10
+                industrial_capacity_factory  +15  工厂产出
+                industrial_capacity_dockyard +15  船坞产出
+
+    科学化管理1   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +5  工厂产出
+                 industrial_capacity_dockyard +5  船坞产出
+                 INDUSTRY_AIR_DAMAGE_FACTOR  +5 受到轰炸
+    
+    科学化管理2   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +10  工厂产出
+                 industrial_capacity_dockyard +5  船坞产出
+                 INDUSTRY_AIR_DAMAGE_FACTOR  +10 受到轰炸
+
+    科学化管理3   LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR +5 生产保持
+                 PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR +10 基础生产
+                 industrial_capacity_factory  +10  工厂产出
+                 industrial_capacity_dockyard +10  船坞产出
+                INDUSTRY_AIR_DAMAGE_FACTOR  +15 受到轰炸
+
+
+    资源开采1  local_resources_factor +10 战略资源获取率
+    		show_effect_as_desc = yes
+
+    资源开采2  local_resources_factor +10 战略资源获取率
+    		show_effect_as_desc = yes
+
+    石油开采1  允许建造		
+    enable_building = {
+			building = fuel_silo
+			level = 3
+		}
+    fuel_gain_factor_from_states +20
+    show_effect_as_desc = yes
+
+    石油开采2  
+    fuel_gain_factor_from_states +20
+    show_effect_as_desc = yes
+
+    石油合成1
+    允许建造
+    enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+    production_oil_factor +50
+    		show_effect_as_desc = yes
+
+    石油合成2
+    production_oil_factor +20
+    production_oil_factor = 0.5 
+    		show_effect_as_desc = yes
+
+    油井建设1
+production_speed_synthetic_refinery_factor = 0.2
+		show_effect_as_desc = yes
+
+    油井建设2
+production_speed_synthetic_refinery_factor = 0.2
+		show_effect_as_desc = yes
+
+
+港口基础建设1
+   production_speed_dockyard_factor = 0.1
+   industrial_capacity_dockyard = 0.1    
+
+ 港口基础建设2
+   production_speed_dockyard_factor = 0.15
+   industrial_capacity_dockyard = 0.2          
+    
+深水港建设1
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.1
+  NAVAL_HAS_POTF_IN_COMBAT_ATTACK = 0.1
+
+深水港建设2
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.15
+  NAVAL_HAS_POTF_IN_COMBAT_ATTACK = 0.1
+
+起重机1
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.1
+  REPAIR_SPEED_FACTOR = 0.1
+
+起重机2
+  production_speed_dockyard_factor = 0.15
+  industrial_capacity_dockyard = 0.15
+  REPAIR_SPEED_FACTOR = 0.2
+
+机场建设
+  production_speed_air_base_factor = 0.1
+  air_mission_efficiency = 0.025
+
+升级跑道
+  air_range_factor = 0.05
+  air_mission_efficiency = 0.05
+
+防空阵地建设1
+  production_speed_anti_air_building_factor = 0.1
+  static_anti_air_damage_factor = 0.05
+
+防空阵地建设2
+  production_speed_anti_air_building_factor = 0.15
+  static_anti_air_damage_factor = 0.05
+
+地面塔台1
+  air_mission_efficiency = 0.025
+  air_accidents_factor = -0.1
+
+地面塔台2
+  air_mission_efficiency = 0.025
+  air_accidents_factor = -0.1
+  air_manpower_requirement_factor = 0.05
+
+城镇基础建设1
+  production_speed_buildings_factor = 0.1
+  supply_node_range = 0.1
+  
+城镇基础建设2
+  production_speed_infrastructure_building_factor = 0.10
+  monthly_population = 0.1
+
+城镇基础建设3
+  production_speed_buildings_factor = 0.1
+  conversion_cost_civ_to_mil_factor	= 0.3
+  conversion_cost_mil_to_civ_factor = 0.3
+  industry_free_repair_factor = 0.1
+
+环卫工程1
+  monthly_population = 0.01
+  global_building_slots_factor = 0.15
+
+环卫工程1
+  monthly_population = 0.01
+  global_building_slots_factor = 0.15
+
+地下铁工程1
+  industry_air_damage_factor = 0.1
+  tech_air_damage_factor = 0.1
+  static_anti_air_damage_factor = 0.1
+
+地下铁工程1
+  industry_air_damage_factor = 0.2
+  tech_air_damage_factor = 0.2
+  static_anti_air_damage_factor = 0.2
+
+现代化都市建设1
+  production_speed_buildings_factor = 0.2
+  supply_node_range = 0.1
+
+现代化都市建设2
+  production_speed_infrastructure_building_factor = 0.15
+  monthly_population = 0.1
+
+
+
+
+
+
+  铁路基础建设
+Ⅰ：改进建造技术，加快建造整条铁路和配套设施的速度。
+Ⅱ：现代化工具设备设备，提升铁路建造速度。
+Ⅲ：统筹管理铁路建造，使铁路建造效率大大增加。
+
+港口基础建设
+Ⅰ：专业化港口建设，加快新建港口的速度，同时提升船厂产出。
+Ⅱ：为引入大型机械准备，提升港口建造速度，完善港口产出能力。
+深水港建设
+Ⅰ：深水港能提升港口对大型船只的承载力，深水化建设可提升港口建造产出，同时增加港内舰船生存性
+Ⅱ：大型化完善化的深水港建造可大大加快港口建造并提升港口产出，同时为舰船提供完善的庇护
+起重机
+Ⅰ：大型起重机是船厂维护和建造船只必不可少的重要工具，引入这类机械可提升建造和维修船只的速度
+Ⅱ：更先进的起重机和大型机械使用，可提升建造维修船只速度。
+
+机场建设
+机场不只是一条跑道，完备的机场建设可加快建造速度，提升航空效率。
+升级跑道
+使用更先进的材料和建造技术升级的跑道可延长空军航程，提升航空效率。
+防空阵地建设
+Ⅰ：为防备可能的敌方空军来袭，防空阵地的建造速度和火力强度的提升是必要的。
+Ⅱ：科学完善的防空火力分层和火力布局可大大加强防空火力，并且提升建造速度。
+地面塔台
+Ⅰ：塔台化的空中管制可提升航空效率，减少事故概率。
+Ⅱ：配备更先进无线电的塔台在保证更高的航空效率的同时大大降低了事故概率。
