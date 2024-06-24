@@ -5,7 +5,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = BEL
+		owner = TZN
 		add_core_of = BRD
 		victory_points = {
 			2220 1
@@ -14,7 +14,6 @@ state={
 			infrastructure = 1
 
 		}
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

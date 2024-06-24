@@ -2304,5 +2304,91 @@ texturefile = "gfx/interface/goals/USA_Finally.png"
         name = "GFX_goals_VAT_Prayerfully"
         texturefile = "gfx/interface/goals/VAT_Prayerfully.dds"
     }
+	
+	####中国###
+	spriteType = {
+        name = "GFX_goal_CHI_Congress_speech"
+        texturefile = "gfx/interface/goals/CHI_Congress_speech.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Anti_russian_propaganda"
+        texturefile = "gfx/interface/goals/CHI_Anti_russian_propaganda.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Young_Volunteer_Army"
+        texturefile = "gfx/interface/goals/CHI_Young_Volunteer_Army.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Manipulate_Congress"
+        texturefile = "gfx/interface/goals/CHI_Manipulate_Congress.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Reclaiming_outer_northwest"
+        texturefile = "gfx/interface/goals/CHI_Reclaiming_outer_northwest.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_international_aid"
+        texturefile = "gfx/interface/goals/CHI_international_aid.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Northwest_joint_command"
+        texturefile = "gfx/interface/goals/CHI_Northwest_joint_command.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Mobilize_workers_help_in_war"
+        texturefile = "gfx/interface/goals/CHI_Mobilize_workers_help_in_war.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_war_bond"
+        texturefile = "gfx/interface/goals/CHI_war_bond.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Hold_down_south"
+        texturefile = "gfx/interface/goals/CHI_Hold_down_south.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Yuan_is_dying"
+        texturefile = "gfx/interface/goals/CHI_Yuan_is_dying.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Year_of_Gengshen"
+        texturefile = "gfx/interface/goals/CHI_Year_of_Gengshen.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Yuan_triping"
+        texturefile = "gfx/interface/goals/CHI_Yuan_triping.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_Assess_s"
+        texturefile = "gfx/interface/goals/CHI_Assess_s.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_we_win"
+        texturefile = "gfx/interface/goals/CHI_we_win.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_stop"
+        texturefile = "gfx/interface/goals/CHI_stop.png"
+    }
+
+    spriteType = {
+        name = "GFX_goal_CHI_forward"
+        texturefile = "gfx/interface/goals/CHI_forward.png"
+    }
 
 }
