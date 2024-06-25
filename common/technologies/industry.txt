@@ -2,8 +2,7 @@ technologies = {
 
 	Railroad_construction = {
 	
-		production_factory_max_efficiency_factor = 0.1
-
+        production_speed_rail_way_factor = 0.1
 		
 		path = {
 			leads_to_tech = Railroad_constructionI 
@@ -31,7 +30,7 @@ technologies = {
 	#Machine tools branch	
 	Railroad_constructionI = {
 	
-		production_factory_max_efficiency_factor = 0.1
+    production_speed_rail_way_factor = 0.15
 
 		path = {
 			leads_to_tech = Railroad_constructionII 
@@ -64,7 +63,7 @@ technologies = {
 	
 	Railroad_constructionII = {
 	
-		production_factory_max_efficiency_factor = 0.1
+    production_speed_rail_way_factor = 0.2
 		
 		path = {
 			leads_to_tech = Railroad_constructionIII
@@ -96,7 +95,7 @@ technologies = {
 	
 	Railroad_constructionIII = {
 	
-		production_factory_max_efficiency_factor = 0.1
+        production_speed_rail_way_factor = 0.2
 		
 		#path = {
 		#	leads_to_tech = Railroad_construction_I 
@@ -125,9 +124,9 @@ technologies = {
 			cat_production
 		}
 	}
-	Port_foundation = {
-	
-		production_factory_max_efficiency_factor = 0.1
+	Port_foundation = {	
+		production_speed_dockyard_factor = 0.1
+        industrial_capacity_dockyard = 0.1   
 
 		
 		path = {
@@ -152,9 +151,9 @@ technologies = {
 			cat_production
 		}
 	}
-	Port_foundationI  = {
-	
-		production_factory_max_efficiency_factor = 0.1
+	Port_foundationI = {	
+		production_speed_dockyard_factor = 0.15
+        industrial_capacity_dockyard = 0.2    
 
 		
 		path = {
@@ -183,7 +182,7 @@ technologies = {
 			cat_production
 		}
 	}
-	Port_foundationII  = {
+	Port_foundationII = {
 	
 		production_factory_max_efficiency_factor = 0.1
 

@@ -69,8 +69,10 @@
   Industrial_assembly_linesVI:0 "流水线工业I"
   Industrial_assembly_linesVII:0 "流水线工业II"
   Industrial_assembly_linesVIII:0 "流水线工业III"
+
   Industrial_assembly_linesIX:0 "标准化生产II"
   Industrial_assembly_linesXI:0 "标准化生产III"
+
   Industrial_assembly_linesXII:0 "科学化管理I"
   Industrial_assembly_linesXIII:0 "科学化管理II"
   Industrial_assembly_linesZ:0 "科学化管理III"
@@ -78,9 +80,20 @@
 
   Resource_extraction:0 "资源开采技术I"
   Resource_extractionI:0 "资源开采技术II"
+
   Resource_extractionII:0 "石油开采I"
   Resource_extractionIII:0 "石油合成I"
   Resource_extractionIV:0 "石油开采II"
   Resource_extractionV:0 "石油合成II"
+  
   Resource_extractionVI:0 "油井建设I"
   Resource_extractionVII:0 "油井建设II"
+
+
+
+  tactic_prepare_gas_attack:0 "毒气歼灭战"
+  tactic_gas_retreat:0 "撤离毒气战"
+  tactic_gas_attack:0 "毒气进攻战"
+  tactic_gas_mask:0 "毒气防御战"
+  tactic_gas_mask_charge:0 "毒气反击战"
+  chemical_warfare:0 "化学战"

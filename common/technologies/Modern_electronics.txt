@@ -382,5 +382,207 @@ technologies = {
 		}
 	}
 
+	Gas_Preparation = {
+		research_speed_factor = 0.03
+		path = {
+			leads_to_tech = Gas_Preparation1 
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = Gas_Preparation2 
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = Gas_Preparation3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1915
 
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation1 = {
+		research_speed_factor = 0.03
+		path = {
+			leads_to_tech = Gas_Preparation5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation2 = {
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = Gas_Preparation4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation3 = {
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = Gas_Preparation6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation4 = {
+		research_speed_factor = 0.03
+		
+
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation5 = {
+		research_speed_factor = 0.03
+		
+
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_Preparation6 = {
+		research_speed_factor = 0.03
+		
+
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+
+	Gas_mask = {
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = Gas_mask1
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	Gas_mask1 = {
+		research_speed_factor = 0.03
+		
+		research_cost = 0.7
+		start_year = 1920
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
 }
