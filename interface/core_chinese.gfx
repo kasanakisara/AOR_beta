@@ -1,6 +1,7 @@
 bitmapfonts = {
 
 		textcolors = {
+			f = { 78 74 143 }	# Faded blue
 			L = { 195 176 145 } # Lilac
 			W = { 255 255 255 } # White
 			B = { 0 0 255 }     # Blue
@@ -43,7 +44,6 @@ bitmapfonts = {
 			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
 			I = { 101 51 203 } #Burgundian purple
 			F = { 178 201 194 } #New default
-			f = { 78 74 143 }	# Faded blue
 
 			### Tomsk GUI Colors ###
 			d = { 225 225 225 }
