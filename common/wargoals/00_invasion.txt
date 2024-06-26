@@ -80,7 +80,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = WAR_TAKE_CLAIM_NAME
+		war_name = take_claimed_state
 
 		take_states = {
 			is_claimed_by = ROOT
@@ -102,7 +102,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = WAR_TAKE_CORE_NAME
+		war_name = take_core_state
 
 		allowed = {
 			#always = no
@@ -128,7 +128,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = WAR_NAME
+		war_name = annex_everything
 
 		allowed = {
 			always = no
@@ -152,7 +152,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = CIVIL_WAR_NAME
+		war_name = civil_war
 
 		allowed = {
 			always = no
@@ -218,7 +218,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = INDEPENDENCE_WAR_NAME
+		war_name = independence_wargoal
 
 		allowed = {
 			always = no
@@ -243,7 +243,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = WAR_NAME
+		war_name = world_revolution
 
 		allowed = {
 			always = no
@@ -260,7 +260,6 @@ wargoal_types = {
 			always = yes
 		}
 		generate_base_cost = 25
-		generate_base_cost = 5
 		take_states_limit = 1000
 		take_states_cost = -50 		#50% cheaper warcost for states
 
@@ -271,7 +270,7 @@ wargoal_types = {
 		# PREV = original target country
 		# ROOT = goal owner country
 
-		war_name = WAR_NAME
+		war_name = America_revolution
 
 		allowed = {
 			always = no
@@ -288,7 +287,6 @@ wargoal_types = {
 			always = yes
 		}
 		generate_base_cost = 25
-		generate_base_cost = 5
 		take_states_limit = 1000
 		take_states_cost = -100000
 
