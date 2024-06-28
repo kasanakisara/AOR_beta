@@ -11,7 +11,6 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-
 			}
 			focuses = {
 
@@ -46,10 +45,14 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-
+				CHI_Convention_on_China
+				CHI_Territorial_separation
+				CHI_Old_army
 			}
 			focuses = {
-
+				CHI_Congress_speech
+				CHI_Reclaiming_outer_northwest
+				CHI_Yuan_is_dying
 			}
 		}
 		"BAV"={
