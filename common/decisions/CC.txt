@@ -10,6 +10,7 @@ CC = {
 		cost = 0
 		fire_only_once = no 
 		complete_effect = {
+			set_country_flag = CC
 		}           
 
 	}

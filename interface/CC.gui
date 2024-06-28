@@ -50,11 +50,18 @@ guiTypes = {
 				scale = 0.5
 			} 
 			buttonType = {
+				name = "exit_btn"
+		    	spriteType = "GFX_exit_btn"
+				orientation = UPPER_RIGHT
+		  		scale = 1.1 
+			} 
+			buttonType = {
 				position = { x= 60 y = 70 }
 				name = "CC_zhongfei"
 				quadTextureSprite ="GFX_CC_zhongfei" 
 				scale = 0.5
 			} 
+
 		}  
 		containerWindowType = {
 			name = "anniu"

@@ -5,6 +5,7 @@ scripted_gui = {
 		window_name = "CC_ui_window"
 		visible = {
 			TAG = ENG
+			has_country_flag = CC
 		}
 		
 		properties = {
@@ -38,6 +39,11 @@ scripted_gui = {
 			}
 		}
 		effects = {
+###################关闭按钮###############################
+			exit_btn_click = { 
+				clr_country_flag = CC		
+			}
+
 			CC_tiaoshi_click = {
 				if = {
 					limit = {
