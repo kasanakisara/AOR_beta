@@ -171,7 +171,9 @@ add_ideas = {
 
 country_lock_all_division_template = yes
 
-
+effect = {
+	country_lock_all_division_template = yes
+}
 
 create_country_leader = {
 	name = "Heinrich Mann"

@@ -181,6 +181,10 @@ create_country_leader = {
 	}
 }
 
+effect = {
+	country_lock_all_division_template = yes
+	}
+
 
 
 #create_country_leader = {
