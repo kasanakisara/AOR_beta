@@ -1173,11 +1173,12 @@ country_event = {#中国广州政府宣布北伐
 		has_war = no
 	}
     fire_only_once = yes
-
         immediate = { 
             hidden_effect = {
                 UPC = {
 				set_cosmetic_tag = UPC_2
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
