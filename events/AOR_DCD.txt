@@ -97,5 +97,6 @@ country_event = {
 
     option = {
         name=DCD.2.a
+        news_event = {id=AOR_news.160}
         }
     }

@@ -2404,3 +2404,16 @@ news_event = {#阿拉伯王国解体！
 		name = AOR_news.159.a
 	}
 }
+
+news_event = {#中国四川政府宣布南下
+	id = AOR_news.160
+	title = AOR_news.160.t
+	desc = AOR_news.160.d
+	picture = GFX_AOR_news.160_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.160.a
+	}
+}

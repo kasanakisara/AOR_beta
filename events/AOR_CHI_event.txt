@@ -189,6 +189,7 @@ country_event = {
 		hidden_effect = {
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
+				load_oob = "AOR_LAND_CHI_KMT"
 			}
 		}
 	}
@@ -197,6 +198,8 @@ country_event = {
 		news_event = {id=AOR_news.88}
 		hidden_effect = {
 			UPC = {
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 			}
