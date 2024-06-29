@@ -424,9 +424,41 @@ country_event = {
 		}
 	option = {
 		name = JAP.13.a
-		#news_event = {id = AOR_news.162}
+		news_event = {id = AOR_news.163}
 		KOR = {
 			set_cosmetic_tag = KOR_JP_Absolutism_1
 		}
+	}
+}
+
+country_event = {
+	id = JAP.14   #日本米骚乱平息
+	title = JAP.14.t
+	desc = JAP.14.d
+	picture = GFX_JAP_event_14
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1919.10.5
+		}
+	option = {
+		name = JAP.14.a
+		news_event = {id = AOR_news.164}
+	}
+}
+
+country_event = {
+	id = JAP.15   #日本坂本龙马去世
+	title = JAP.15.t
+	desc = JAP.15.d
+	picture = GFX_JAP_event_15
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1920.5.5
+		}
+	option = {
+		name = JAP.14.a
+		news_event = {id = AOR_news.165}
 	}
 }

@@ -2443,3 +2443,55 @@ news_event = {#朝鲜爆发大规模暴乱！
 		name = AOR_news.162.a
 	}
 }
+
+news_event = {#日本接管汉城
+	id = AOR_news.163
+	title = AOR_news.163.t
+	desc = AOR_news.163.d
+	picture = GFX_AOR_news.163_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.163.a
+	}
+}
+
+news_event = {#日本米骚乱平息
+	id = AOR_news.164
+	title = AOR_news.164.t
+	desc = AOR_news.164.d
+	picture = GFX_AOR_news.164_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.164.a
+	}
+}
+
+news_event = {#日本米骚乱平息
+	id = AOR_news.165
+	title = AOR_news.165.t
+	desc = AOR_news.165.d
+	picture = GFX_AOR_news.165_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.165.a
+	}
+}
+
+news_event = {#中俄签订边境备忘录协定
+	id = AOR_news.166
+	title = AOR_news.166.t
+	desc = AOR_news.166.d
+	picture = GFX_AOR_news.166_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.166.a
+	}
+}
