@@ -1,54 +1,19 @@
 ﻿capital = 141
 
 # Starting tech
-set_technology = {
-	infantry_equipment_0 = 1
+set_technology = {	
+	infantry_weapons = 1
 	Infantry_uniforms = 1
 	infantry_at = 1
 	Old_howitzers = 1
-}
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		gwtank = 1
- 
-		improved_light_tank = 1
-		basic_heavy_tank = 1
-	}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		light_tank_chassis_0 = 1
-		light_tank_chassis_1 = 1
-		basic_heavy_tank_chassis = 1
-	}
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		mtg_transport = 1
-	}
+	support_weapons = 1
+	tech_support = 1
+	basic_train = 1
+	Railroad_construction = 1
+	Port_foundation = 1
+	Urban_infrastructure = 1
+	Industrial_assembly_lines = 1
+	Resource_extraction = 1
 }
 
 
