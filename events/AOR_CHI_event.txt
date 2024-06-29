@@ -200,8 +200,6 @@ country_event = {
 			UPC = {
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
-				load_oob = "UPC_M_Nandu"
-				load_oob = "UPC_M_Nandu"
 			}
 		}
 	}
@@ -1013,6 +1011,14 @@ country_event = {
 			owns_state = 892
 			owns_state = 749
 			owns_state = 606
+			owns_state = 597
+			owns_state = 757
+			owns_state = 880
+			owns_state = 877
+			owns_state = 614
+			owns_state = 878
+			owns_state = 608
+			owns_state = 758
 		}
 	}	
 	immediate = { 
@@ -1050,6 +1056,14 @@ country_event = {
 			add_state_core = 892
 			add_state_core = 749
 			add_state_core = 606
+			add_state_core = 597
+			add_state_core = 757
+			add_state_core = 880
+			add_state_core = 877
+			add_state_core = 614
+			add_state_core = 878
+			add_state_core = 608
+			add_state_core = 758
 		}
 	}	
 }
@@ -1085,6 +1099,14 @@ country_event = {
 			owns_state = 877
 			owns_state = 878
 			owns_state = 614
+			owns_state = 597
+			owns_state = 757
+			owns_state = 880
+			owns_state = 877
+			owns_state = 614
+			owns_state = 878
+			owns_state = 608
+			owns_state = 758
 		}
 	}	
 	immediate = { 
@@ -1121,6 +1143,14 @@ country_event = {
 			add_state_core = 877
 			add_state_core = 878
 			add_state_core = 614
+			add_state_core = 597
+			add_state_core = 757
+			add_state_core = 880
+			add_state_core = 877
+			add_state_core = 614
+			add_state_core = 878
+			add_state_core = 608
+			add_state_core = 758
 		}
 	}	
 }
