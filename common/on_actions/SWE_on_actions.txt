@@ -95,10 +95,14 @@ on_actions = {
 					add_to_variable = { SWE_Industry_Development = 7.5 }
 				}
 
-				## 本土工业发展度上界
+				## 本土工业发展度上下界
 				if = {
 					limit = { check_variable = { SWE_Industry_Development > 100 } }
 					set_variable = { SWE_Industry_Development = 100 }
+				}
+				if = {
+					limit = { check_variable = { SWE_Industry_Development < 0 } }
+					set_variable = { SWE_Industry_Development = 0 }
 				}
 
 				## 国际市场开放度 -> 建造速度

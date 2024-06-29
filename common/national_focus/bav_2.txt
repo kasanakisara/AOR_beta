@@ -72,7 +72,7 @@ focus_tree = {
 			force_allow_recruiting = yes
 				}
 			}
-			country_lock_all_division_template = no
+			country_lock_all_division_template = yes
 		}
 	}
 	#北方人就是比南方人有素质，不是夸你们南方人

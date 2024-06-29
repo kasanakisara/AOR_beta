@@ -274,3 +274,6 @@ add_ideas = {
 }
 
 oob="KSH_1919"
+effect = {
+	country_lock_all_division_template = yes
+	}

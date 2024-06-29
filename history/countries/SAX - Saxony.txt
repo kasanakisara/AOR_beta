@@ -164,7 +164,9 @@ add_ideas = {
 	Compact_of_German_Confederation
 }
 
-
+effect = {
+	country_lock_all_division_template = yes
+	}
 
 create_country_leader = {
 	name = "Karl Kautsky"
