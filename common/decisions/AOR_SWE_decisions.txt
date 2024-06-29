@@ -98,7 +98,7 @@ SWE_Norweign_Independence_decision_categories = {
         on_map_mode = map_only
         days_re_enable = 49
         ai_will_do = {
-            factor = 1
+            factor = 0.99
         }
         cost = 45
         complete_effect = {
@@ -128,8 +128,8 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-			factor = 1
-		}
+            factor = 0.99
+        }
         cost = 60
         complete_effect = {
             random_owned_controlled_state ={
@@ -167,7 +167,7 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-            factor = 1
+            factor = 0.99
         }
         cost = 50
         complete_effect = {
@@ -254,8 +254,11 @@ SWE_Trade_decision_categories = {
     SWE_Boost_Government_Spending = { #提高政府支出
         avaliable = { has_idea = SWE_Open_the_door }
         visible = { has_idea = SWE_Open_the_door }
-        days_re_enable = 35
+        days_re_enable = 14
         cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
         complete_effect = {
             add_to_variable = { SWE_Government_Spending = 5 }
             custom_effect_tooltip = SWE_Add_Government_Spending_tt
@@ -265,8 +268,11 @@ SWE_Trade_decision_categories = {
     SWE_Lower_Government_Spending = { #减少政府支出
         avaliable = { has_idea = SWE_Open_the_door }
         visible = { has_idea = SWE_Open_the_door }
-        days_re_enable = 35
+        days_re_enable = 14
         cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
         complete_effect = {
             add_to_variable = { SWE_Government_Spending = -5 }
             custom_effect_tooltip = SWE_Lower_Government_Spending_tt
