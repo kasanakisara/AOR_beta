@@ -13,6 +13,10 @@ country_event = {
 	option = {
 		name = JAP.1.a
 		news_event = {id = AOR_news.142}
+		KOR = {
+			525={set_demilitarized_zone=yes}
+			852={set_demilitarized_zone=yes}
+		}
 		JAP = {
 			leave_faction = yes
 	    }
@@ -342,5 +346,87 @@ country_event = {
 			716={set_demilitarized_zone=yes}
 		}
 		name = JAP.1.a
+	}
+}
+
+country_event = {
+	id = JAP.11   #朝鲜关东军暴乱平息
+	title = JAP.11.t
+	desc = JAP.11.d
+	picture = GFX_JAP_event_11
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1921.2.25
+		}
+		immediate = {
+			hidden_effect = {
+				KOR = {
+					525={set_demilitarized_zone=NO}
+					852={set_demilitarized_zone=NO}
+				}
+				JAP = {
+					transfer_state = 852
+					transfer_state = 619
+					transfer_state = 819
+				}
+			}
+		}
+	option = {
+		name = JAP.11.a
+		news_event = {id = AOR_news.161}
+	}
+}
+
+country_event = {
+	id = JAP.12   #朝鲜爆发大规模暴乱！
+	title = JAP.12.t
+	desc = JAP.12.d
+	picture = GFX_JAP_event_12
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1921.4.25
+		}
+		immediate = {
+			hidden_effect = {
+				KOR = {
+					527={set_demilitarized_zone=yes}
+					820={set_demilitarized_zone=yes}
+					819={set_demilitarized_zone=yes}
+				}
+			}
+		}
+	option = {
+		name = JAP.12.a
+		news_event = {id = AOR_news.162}
+	}
+}
+
+country_event = {
+	id = JAP.13   #日本接管汉城
+	title = JAP.13.t
+	desc = JAP.13.d
+	picture = GFX_JAP_event_13
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1921.5.22
+		}
+		immediate = {
+			hidden_effect = {
+				JAP = {
+					transfer_state = 820
+					transfer_state = 525
+					817={set_demilitarized_zone=yes}
+				}
+			}
+		}
+	option = {
+		name = JAP.13.a
+		news_event = {id = AOR_news.162}
+		KOR = {
+			set_cosmetic_tag = KOR_JP_Absolutism_1
+		}
 	}
 }
