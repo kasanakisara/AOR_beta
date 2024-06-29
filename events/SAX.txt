@@ -266,7 +266,7 @@ clamp_variable = {
 		}
     }
 	country_event = {
-	id = SAX.13
+	id = SAX.13 #协约国联合制裁
 	title = SAX.13.t
 	desc = SAX.13.d
 	picture = GFX_report_event_german_speech
@@ -285,7 +285,7 @@ clamp_variable = {
 		AND = {
 		tag = SIL
 	    SIL = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -293,15 +293,7 @@ clamp_variable = {
 		AND = {
 		tag = MEK
 	    MEK = { 
-		has_army_manpower = { size > 150000 }
-		is_ai = no
-		}
-		 date < 1923.1.1
-	}
-		AND = {
-		tag = NAU
-		NAU = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -309,7 +301,7 @@ clamp_variable = {
 		AND = {
 		tag = KSH
 	    KSH = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -317,7 +309,7 @@ clamp_variable = {
 		AND = {
 		tag = WUR
 	    WUR = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -325,7 +317,7 @@ clamp_variable = {
 		AND = {
 		tag = SHL
 	    SHL = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -333,7 +325,7 @@ clamp_variable = {
 		AND = {
 		tag = PRE 
 	    PRE = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -341,15 +333,7 @@ clamp_variable = {
 		AND = {
 		tag = HAN
 	    HAN = { 
-		has_army_manpower = { size > 150000 }
-		is_ai = no
-		}
-		 date < 1923.1.1
-	}
-		AND = {
-		tag = BAV
-	    BAV = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -357,7 +341,7 @@ clamp_variable = {
 		AND = {
 		tag = SAX
 		SAX = { 
-		has_army_manpower = { size > 150000 }
+		has_army_manpower = { size > 50000 }
 		is_ai = no
 		}
 		 date < 1923.1.1
@@ -372,13 +356,21 @@ clamp_variable = {
 	
 	option = { 
         name = SAX.13.a
-		custom_effect_tooltip = "§R裁军到十五万人以下才会解除限制，与协约国对着干可不是什么好选择"
-		add_ideas = SAX_punishment
+		if = {
+			limit = {
+				tag = GER
+			}
+			custom_effect_tooltip = GER_punishment_berlin_tt
 		}
+		else = {
+			custom_effect_tooltip = GER_punishment_tt
+		}
+		add_ideas = SAX_punishment
+	}
 		
-    }
+}
 	country_event = {
-	id = SAX.14
+	id = SAX.14 #解除制裁
 	title = SAX.14.t
 	desc = SAX.14.d
 	picture = GFX_report_event_german_speech
@@ -397,7 +389,7 @@ clamp_variable = {
 	AND = {
 	tag = SIL
 		SIL = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -405,15 +397,7 @@ clamp_variable = {
 	AND = {
 	tag = MEK
 		MEK = { 
-		has_army_manpower = { size < 150000 }
-		has_idea = SAX_punishment
-		is_ai = no
-		}
-	}
-	AND = {
-	tag = NAU
-		NAU = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -421,7 +405,7 @@ clamp_variable = {
 	AND = {
 	tag = KSH
 		KSH = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -429,7 +413,7 @@ clamp_variable = {
 	AND = {
 	tag = WUR
 		WUR = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -437,7 +421,7 @@ clamp_variable = {
 	AND = {
 	tag = SHL
 		SHL = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -445,7 +429,7 @@ clamp_variable = {
 	AND = {
 	tag = PRE
 		PRE = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -453,15 +437,7 @@ clamp_variable = {
 	AND = {
 	tag = HAN
 		HAN = { 
-		has_army_manpower = { size < 150000 }
-		has_idea = SAX_punishment
-		is_ai = no
-		}
-	}
-	AND = {
-	tag = BAV
-		BAV = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}
@@ -469,7 +445,7 @@ clamp_variable = {
 	AND = {
 	tag = SAX
 		SAX = { 
-		has_army_manpower = { size < 150000 }
+		has_army_manpower = { size < 50000 }
 		has_idea = SAX_punishment
 		is_ai = no
 		}

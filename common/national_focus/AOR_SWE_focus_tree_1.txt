@@ -527,7 +527,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Antitrust
+		id = SWE_Trade_with_Deutschland
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -538,7 +538,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Trade_with_China
+		id = SWE_Trade_with_CSA
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -556,7 +556,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Antitrust
+			focus = SWE_Trade_with_Deutschland
 		}
 		x = 5
 		y = 11
@@ -570,7 +570,7 @@ focus_tree = {
 			focus = SWE_National_Regulation
 		}
 		prerequisite = {
-			focus = SWE_Trade_with_China
+			focus = SWE_Trade_with_CSA
 		}
 		x = 4
 		y = 12
