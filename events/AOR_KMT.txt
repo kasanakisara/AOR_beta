@@ -142,7 +142,7 @@ country_event = {#昆明政府统一南方
 		tag = KMT
 		date > 1922.12.10
         KMT = {
-            SOC_democratic > 0.15
+            SOC_democratic > 0.20
             owns_state = 901
             owns_state = 593
             owns_state = 592

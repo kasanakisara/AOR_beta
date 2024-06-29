@@ -424,7 +424,7 @@ country_event = {
 		}
 	option = {
 		name = JAP.13.a
-		news_event = {id = AOR_news.162}
+		#news_event = {id = AOR_news.162}
 		KOR = {
 			set_cosmetic_tag = KOR_JP_Absolutism_1
 		}
