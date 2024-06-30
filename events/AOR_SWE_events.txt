@@ -614,7 +614,7 @@ country_event = {
 }
 
 country_event = {
-    id = SWE.26 #请求贸易协定-柏林/法兰克福/巴伐利亚
+    id = SWE.26 #请求贸易协定-柏林/法兰克福/巴伐利亚/CSA
     title = SWE.26.t
     desc = SWE.26.d
     is_triggered_only = yes
@@ -623,18 +623,8 @@ country_event = {
         ai_will_do = {
             factor = 0.75
         }
-        if = { #柏林
-            limit = {
-                tag = GER
-            }
-        }
-        else_if = { #法兰克福
-            limit = {
-                tag = NAU
-            }
-        }
-        else = { #巴苏
-
+        SWE = {
+            country_event = { id = SWE.27 }
         }
     }
     option = {
@@ -642,18 +632,36 @@ country_event = {
         ai_will_do = {
             factor = 0.25
         }
-        if = { #柏林
-            limit = {
-                tag = GER
-            }
+        SWE = {
+            country_event = { id = SWE.28 }
         }
-        else_if = { #法兰克福
-            limit = {
-                tag = NAU
-            }
-        }
-        else = { #巴苏
+        add_political_power = -25
+    }
+}
 
+country_event = {
+    id = SWE.27 #请求贸易协定-柏林/法兰克福/巴伐利亚/CSA - 同意
+    title = SWE.27.t
+    desc = SWE.27.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.27.a
+        FROM = {
+            add_ideas = SWE_Germany_Trade
         }
+        add_ideas = SWE_Germany_Trade_sweden
+        add_to_variable = { SWE_Market_Inclusion = 15 }
+        custom_effect_tooltip = SWE_Trade_decision_tt
+    }
+}
+
+country_event = {
+    id = SWE.28 #请求贸易协定-柏林/法兰克福/巴伐利亚/CSA - 否决
+    title = SWE.28.t
+    desc = SWE.28.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.28.a
+        add_political_power = -25
     }
 }

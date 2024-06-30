@@ -103,4 +103,8 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Trade_with_CSA"
 		texturefile = "gfx/interface/goals/goal_SWE_Trade_with_CSA.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Trade_with_Deutschland"
+		texturefile = "gfx/interface/goals/goal_SWE_Trade_with_Deutschland.png"
+	}
 }

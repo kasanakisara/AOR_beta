@@ -201,5 +201,28 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.2
 			}
 		}
+
+		SWE_Germany_Trade = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = 0.25
+				drift_defence_factor = -0.2
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_bunker_factory_factor = 0.2
+			}
+		}
+
+		SWE_Germany_Trade_sweden = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.15
+				drift_defence_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
 	}
 }

@@ -549,7 +549,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Trade_with_Deutschland
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Trade_with_Deutschland
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Beautiful_New_World
@@ -596,7 +596,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				CSA = {
-					country_event = {}
+					country_event = { id = SWE.26 }
 				}
 			}
 			custom_effect_tooltip = SWE_CSA_Trade_tt
