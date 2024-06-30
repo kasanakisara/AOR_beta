@@ -1641,16 +1641,26 @@ country_event = {
 	option = {
 		CHI = {
 			set_party_name = { ideology = Absolutism long_name = CHI_1_Absolutism_party name = CHI_1_Absolutism_party }
-			set_politics = { ruling_party = Absolutism }
+			set_politics = { ruling_party = AUT_democratic }
 			create_country_leader = {
-				name = "Wu_Pei_Fu"
+				name = "Xu_shi_chang"
 				desc = ""
-				picture = "gfx/leaders/CHI/Wu_Pei_Fu.dds"
+				picture = "gfx/leaders/CHI/Xu_shi_chang.png"
 				expire = "1965.1.1"
-				ideology = miliciagov
+				ideology = authoritarianism
 				traits = {
 				}
 			}
+			#create_country_leader = {
+				#name = "Wu_Pei_Fu"
+				#desc = ""
+				#picture = "gfx/leaders/CHI/Wu_Pei_Fu.dds"
+				#expire = "1965.1.1"
+				#ideology = miliciagov
+				#traits = {
+				#}
+			#}
+			
 		}
 		name = CHI.44.a
 		news_event = {id=AOR_news.143}
@@ -1674,6 +1684,56 @@ country_event = {
 		name = CHI.45.a
 		news_event = {id=AOR_news.89}
 		add_manpower = -100000
+	}
+}
+
+#西藏发生动乱
+country_event = {
+	id = CHI.46
+	title = CHI.46.t
+	desc = CHI.46.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1922.10.10
+		tag = TIB
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			TIB = {
+				add_popularity = { ideology = Special popularity = 0.20 }
+				322={set_demilitarized_zone=yes}
+			}
+		}
+	}
+	option = {
+		name = CHI.46.a
+		news_event = {id=AOR_news.168}
+	}
+}
+
+#西藏达赖喇嘛·土登嘉措重新上台
+country_event = {
+	id = CHI.47
+	title = CHI.47.t
+	desc = CHI.47.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1923.2.1
+		tag = TIB
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			TIB = {
+				add_popularity = { ideology = Special popularity = 0.30 }
+				322={set_demilitarized_zone=no}
+			}
+		}
+	}
+	option = {
+		name = CHI.47.a
+		news_event = {id=AOR_news.169}
 	}
 }
 

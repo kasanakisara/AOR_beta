@@ -90,8 +90,28 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 	hidden_effect = {
-		USU = {
+		USA = {
 			USA_civil_war_east =yes
+		}
+		USU = {
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+			load_oob = "USU_Civilwar"
+		}
+	    CSA = {
+			load_oob = "CSA_Civilwar_2"
+			load_oob = "CSA_Civilwar_2"
+			load_oob = "CSA_Civilwar_2"
+			load_oob = "CSA_Civilwar_2"
+			load_oob = "CSA_Civilwar_2"
+			load_oob = "CSA_Civilwar_2"
 		}
 	}
 }

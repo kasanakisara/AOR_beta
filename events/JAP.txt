@@ -171,6 +171,16 @@ country_event = {
 			owns_state = 745
 		}
 	}
+	immediate = {
+		hidden_effect = {
+			PYO = {
+			declare_war_on = { 
+				target = JAP
+				type = annex_everything
+			} 
+		}
+	}
+}
 	fire_only_once = yes
 	option = {
 		name = JAP.5.a
@@ -290,6 +300,16 @@ country_event = {
 			owns_state = 408
 		}
 	}
+	immediate = {
+		hidden_effect = {
+			PYO = {
+			declare_war_on = { 
+				target = JAP
+				type = annex_everything
+			} 
+		}
+	}
+}
 	fire_only_once = yes
 	option = {
 		name = JAP.8.a
@@ -391,6 +411,7 @@ country_event = {
 		immediate = {
 			hidden_effect = {
 				KOR = {
+					add_popularity = { ideology = FRE_democratic popularity = 0.1 }
 					527={set_demilitarized_zone=yes}
 					820={set_demilitarized_zone=yes}
 					819={set_demilitarized_zone=yes}
@@ -460,5 +481,42 @@ country_event = {
 	option = {
 		name = JAP.14.a
 		news_event = {id = AOR_news.165}
+	}
+}
+
+country_event = {
+	id = JAP.16   #朝鲜义军动乱加剧！
+	title = JAP.16.t
+	desc = JAP.16.d
+	picture = GFX_JAP_event_16
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		date > 1923.8.15
+		}
+		immediate = {
+			hidden_effect = {
+				JAP = {
+					set_autonomy = {
+					target = PYO
+					autonomy_state = autonomy_free
+					}
+				}
+				PYO = {
+					load_oob = "AOR_LAND_M_PYO"
+					load_oob = "AOR_LAND_M_PYO"
+					load_oob = "AOR_LAND_M_PYO"
+				    remove_ideas = Flooded_guerrillas
+	                set_cosmetic_tag = PYO_FRE_democratic
+					set_politics = {ruling_party = FRE_democratic}
+					add_popularity = { ideology = FRE_democratic popularity = 0.5 }
+					transfer_state = 820
+					add_state_core = 820
+				}
+			}
+		}
+	option = {
+		name = JAP.14.a
+		news_event = {id = AOR_news.167}
 	}
 }

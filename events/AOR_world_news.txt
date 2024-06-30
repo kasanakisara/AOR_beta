@@ -2470,7 +2470,7 @@ news_event = {#日本米骚乱平息
 	}
 }
 
-news_event = {#日本米骚乱平息
+news_event = {#日本坂本龙马去世
 	id = AOR_news.165
 	title = AOR_news.165.t
 	desc = AOR_news.165.d
@@ -2493,5 +2493,44 @@ news_event = {#中俄签订边境备忘录协定
 
 	option = {
 		name = AOR_news.166.a
+	}
+}
+
+news_event = {#朝鲜义军动乱加剧！
+	id = AOR_news.167
+	title = AOR_news.167.t
+	desc = AOR_news.167.d
+	picture = GFX_AOR_news.167_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.167.a
+	}
+}
+
+news_event = {#中国西藏发生动乱
+	id = AOR_news.168
+	title = AOR_news.168.t
+	desc = AOR_news.168.d
+	picture = GFX_AOR_news.168_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.168.a
+	}
+}
+
+news_event = {#西藏达赖喇嘛·土登嘉措重新上台
+	id = AOR_news.169
+	title = AOR_news.169.t
+	desc = AOR_news.169.d
+	picture = GFX_AOR_news.169_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.169.a
 	}
 }
