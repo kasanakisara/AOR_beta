@@ -278,4 +278,19 @@ SWE_Trade_decision_categories = {
             custom_effect_tooltip = SWE_Lower_Government_Spending_tt
         }
     }
+
+    SWE_Berlin_Trade_decision = { #扩大和柏林的贸易
+        avaliable = { GER = { has_idea = SWE_Germany_Trade } }
+        visible = { GER = { has_idea = SWE_Germany_Trade } }
+        days_re_enable = 14
+        cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = 5 }
+            add_to_variable = { SWE_Market_Inclusion = 5 }
+            custom_effect_tooltip = SWE_Add_Government_Spending_tt
+        }
+    }
 }
