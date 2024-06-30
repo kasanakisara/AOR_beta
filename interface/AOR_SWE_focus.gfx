@@ -95,4 +95,12 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Rope_Right"
 		texturefile = "gfx/interface/goals/goal_SWE_Rope_Right.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Trade_With_Soviet"
+		texturefile = "gfx/interface/goals/goal_SWE_Trade_With_Soviet.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Trade_with_CSA"
+		texturefile = "gfx/interface/goals/goal_SWE_Trade_with_CSA.png"
+	}
 }

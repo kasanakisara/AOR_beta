@@ -335,6 +335,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
+		ai_will_do = {
+			factor = 0.75
+		}
 		x = 15
 		y = 3
 		completion_reward = {
@@ -356,6 +359,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Abolish_Left_Party
 		}
+		ai_will_do = {
+			factor = 0.75
+		}
 		x = 13
 		y = 4
 		completion_reward = {
@@ -373,6 +379,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Publications_Supervision
 		}
+		ai_will_do = {
+			factor = 0.75
+		}
 		x = 13
 		y = 5
 		completion_reward = {
@@ -389,6 +398,9 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = SWE_Abolish_Left_Party
+		}
+		ai_will_do = {
+			factor = 0.75
 		}
 		x = 17
 		y = 4
@@ -410,6 +422,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Restrictions_on_Gatherings
 		}
+		ai_will_do = {
+			factor = 0.75
+		}
 		x = 17
 		y = 5
 		completion_reward = {
@@ -430,6 +445,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Rope_Right
 		}
+		ai_will_do = {
+			factor = 0.75
+		}
 		x = 15
 		y = 6
 		completion_reward = {
@@ -446,6 +464,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_Trial
+		}
+		ai_will_do = {
+			factor = 0.75
 		}
 		x = 15
 		y = 7
@@ -510,7 +531,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Trade_With_Soviet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Trade_With_Soviet
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Beautiful_New_World
@@ -533,21 +554,52 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Beautiful_New_World
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AOR_GER_not_civilwar_tt
+				AOR_GER_not_civilwar = yes
+			}
+		}
 		x = 5
 		y = 10
+		completion_reward = {
+			hidden_effect = {
+				GER = {
+					country_event = { id = SWE.26 }
+				}
+				NAU = {
+					country_event = { id = SWE.26 }
+				}
+				BAV = {
+					country_event = { id = SWE.26 }
+				}
+			}
+			custom_effect_tooltip = SWE_Trade_with_Germany_tt
+		}
 
 	}
 	focus = {
 		id = SWE_Trade_with_CSA
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Trade_with_CSA
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Trade_With_Soviet
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AOR_USA_civilwar_I
+				AOR_USA_civilwar_I = yes
+			}
+		}
 		x = 3
 		y = 11
 		completion_reward = {
-			
+			hidden_effect = {
+				CSA = {
+					country_event = {}
+				}
+			}
+			custom_effect_tooltip = SWE_CSA_Trade_tt
 		}
 
 	}

@@ -612,3 +612,48 @@ country_event = {
         add_political_power = 20
     }
 }
+
+country_event = {
+    id = SWE.26 #请求贸易协定-柏林/法兰克福/巴伐利亚
+    title = SWE.26.t
+    desc = SWE.26.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.26.a #同意
+        ai_will_do = {
+            factor = 0.75
+        }
+        if = { #柏林
+            limit = {
+                tag = GER
+            }
+        }
+        else_if = { #法兰克福
+            limit = {
+                tag = NAU
+            }
+        }
+        else = { #巴苏
+
+        }
+    }
+    option = {
+        name = SWE.26.b #不同意
+        ai_will_do = {
+            factor = 0.25
+        }
+        if = { #柏林
+            limit = {
+                tag = GER
+            }
+        }
+        else_if = { #法兰克福
+            limit = {
+                tag = NAU
+            }
+        }
+        else = { #巴苏
+
+        }
+    }
+}
