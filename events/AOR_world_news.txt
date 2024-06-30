@@ -2534,3 +2534,54 @@ news_event = {#西藏达赖喇嘛·土登嘉措重新上台
 		name = AOR_news.169.a
 	}
 }
+
+news_event = {#国民革命政府战胜南京政府！
+	id = AOR_news.170
+	title = AOR_news.170.t
+	desc = AOR_news.170.d
+	picture = GFX_AOR_news.170_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.170.a
+	}
+}
+news_event = {#国民革命政府战胜北京政府！
+	id = AOR_news.171
+	title = AOR_news.171.t
+	desc = AOR_news.171.d
+	picture = GFX_AOR_news.171_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.171.a
+	}
+}
+
+news_event = {#联省革命政府战胜南京政府！
+	id = AOR_news.172
+	title = AOR_news.172.t
+	desc = AOR_news.172.d
+	picture = GFX_AOR_news.172_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.169.a
+	}
+}
+
+news_event = {#联省革命政府战胜北京政府！
+	id = AOR_news.173
+	title = AOR_news.173.t
+	desc = AOR_news.173.d
+	picture = GFX_AOR_news.173_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.173.a
+	}
+}

@@ -903,6 +903,9 @@ on_actions = {
 					add_state_core = 896
 					add_state_core = 622
 					country_event = { days = 90  id = KMT.13 }
+					news_event = {
+						id = AOR_news.171 #国民革命政府战胜北京政府！
+					}
 				}
 				MAN = {
 					transfer_state = 610
@@ -998,6 +1001,9 @@ on_actions = {
 					add_state_core = 896
 					add_state_core = 622
 					country_event = { days = 90  id = KMT.13 }
+					news_event = {
+						id = AOR_news.170 #国民革命政府战胜南京政府！
+					}
 				}
 				MAN = {
 					transfer_state = 610
@@ -1154,6 +1160,9 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+					news_event = {
+						id = AOR_news.173 #联省革命政府战胜北京政府！
+					}
 				}
 				MAN = {
 					transfer_state = 610
@@ -1248,6 +1257,9 @@ on_actions = {
 					add_state_core = 744
 					add_state_core = 896
 					add_state_core = 622
+					news_event = {
+						id = AOR_news.172 #联省革命政府战胜南京政府！
+					}
 				}
 				MAN = {
 					transfer_state = 610
