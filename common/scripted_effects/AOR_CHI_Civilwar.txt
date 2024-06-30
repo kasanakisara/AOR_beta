@@ -1467,6 +1467,8 @@ USA_civil_war_west_1 = {
 
 USA_civil_war_east = {
 	USU = {
+		add_ideas = CHI_gemintongyizhixi
+		add_ideas = PRC_The_great_red_army
 			transfer_state = 396
 			transfer_state = 816
 			transfer_state = 369
@@ -1480,6 +1482,19 @@ USA_civil_war_east = {
 			add_state_core = 370
 		}
 	CSA = {
+		set_cosmetic_tag = CSA_SOC_democratic
+		set_politics = {ruling_party = SOC_democratic}
+		add_popularity = { ideology = SOC_democratic popularity = 0.20 }
+		create_country_leader = {
+			name = "William_Henry_Davis_Murray"
+			desc = "William_Henry_Davis_Murray_DESC"
+			picture = "gfx/leaders/CSA/William_Henry_Davis_Murray.png"
+			expire = "1965.1.1"
+			ideology = social_liberalism
+			traits = {
+				
+			}
+		}
 			transfer_state = 363
 			transfer_state = 364
 			transfer_state = 365
