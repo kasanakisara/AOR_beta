@@ -17,7 +17,7 @@ ideas = {
 			picture = GFX_idea_EGY_Crazy_1919
 			allowed = { always = yes }
 			modifier = {
-				add_stability = -0.25
+				STABILITY_FACTOR = -0.25
 				political_power_factor = -0.1
 				resistance_growth = 0.05
 				custom_modifier_tooltip = EGY_Crazy_1919_tt
@@ -37,6 +37,21 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = EGY_YesSir_tt
+			}
+		}
+		###################！！！！！苏丹！！！！！############
+		SUD_Under_boots ={#军靴之下
+			picture = GFX_idea_SUD_Under_boots
+			allowed = { always = yes }
+			modifier = {
+			}
+		}
+		SUD_Mahdi_Legacy = {#马赫迪的遗产
+			picture = GFX_idea_SUD_Mahdi_Legacy
+			allowed = { always = yes }
+			modifier = {
+				STABILITY_FACTOR = -0.25
+				resistance_growth = 0.05
 			}
 		}
 	}
@@ -362,4 +377,5 @@ ideas = {
 		}
 
 	}
+	
 }

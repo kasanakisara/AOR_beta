@@ -71,7 +71,7 @@ if = {
 
 set_research_slots = 2
 set_convoys = 50
-set_stability = 0.75
+set_stability = 0.65
 
 1939.1.1 = {
 
@@ -149,6 +149,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	ARA_Chieftain_Assembly
+	ARA_Uncompatible_Kingdom
 }
 
 

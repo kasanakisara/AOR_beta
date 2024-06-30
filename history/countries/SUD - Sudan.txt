@@ -72,7 +72,10 @@ recruit_character = SUD_aco2
 		dispersed_industry2 = 1
 	}
 }
-
+add_ideas = {
+	SUD_Under_boots
+	SUD_Mahdi_Legacy
+}
 set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1936.1.1"
