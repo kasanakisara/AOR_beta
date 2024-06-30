@@ -102,6 +102,7 @@ country_event = {
 	desc = JAP.4.d
 	picture = GFX_JAP_event_4
 	trigger = {
+		date > 1924.2.10
 		tag = KMT
 		852 = { is_owned_by = KMT }
 		KMT = { has_war_with = JAP }
@@ -161,12 +162,13 @@ country_event = {
 	desc = JAP.5.d
 	picture = GFX_JAP_event_5
 	trigger = {
-		tag = KMT
+		date > 1924.2.10
+		tag = JAP
 		#743 = { is_owned_by = KMT }
 		#745 = { is_owned_by = KMT }
 		KMT = {
 			has_war_with = JAP
-			owns_state = 876
+			owns_state = 408
 			owns_state = 743
 			owns_state = 745
 		}
@@ -193,17 +195,7 @@ country_event = {
 	title = JAP.6.t
 	desc = JAP.6.d
 	picture = GFX_JAP_event_6
-	trigger = {
-		tag = KMT
-		#743 = { is_owned_by = KMT }
-		#745 = { is_owned_by = KMT }
-		KMT = {
-			has_war_with = JAP
-			owns_state = 876
-			owns_state = 743
-			owns_state = 745
-		}
-	}
+	is_triggered_only = yes	
 	fire_only_once = yes
 	option = {
 		name = JAP.6.a
@@ -231,7 +223,8 @@ country_event = {
 	desc = JAP.7.d
 	picture = GFX_JAP_event_7
 	trigger = {
-		tag = UPC
+		date > 1924.2.10
+		tag = JAP
 		UPC = {
 			has_war_with = JAP
 			owns_state = 852
@@ -292,7 +285,8 @@ country_event = {
 	desc = JAP.8.d
 	picture = GFX_JAP_event_8
 	trigger = {
-		tag = UPC
+		date > 1924.2.10
+		tag = JAP
 		UPC = {
 			has_war_with = JAP
 			owns_state = 743
@@ -300,6 +294,7 @@ country_event = {
 			owns_state = 408
 		}
 	}
+	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
 			PYO = {
@@ -310,7 +305,6 @@ country_event = {
 		}
 	}
 }
-	fire_only_once = yes
 	option = {
 		name = JAP.8.a
 		country_event = { days = 360 id = JAP.9 }
@@ -322,15 +316,7 @@ country_event = {
 	title = JAP.9.t
 	desc = JAP.9.d
 	picture = GFX_JAP_event_9
-	trigger = {
-		tag = UPC
-		UPC = {
-			has_war_with = JAP
-			owns_state = 743
-			owns_state = 745
-			owns_state = 408
-		}
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = JAP.9.a

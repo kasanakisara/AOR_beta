@@ -118,6 +118,7 @@ country_event = {
       
 	option = {
 		name = USA.4.a
+		news_event = {id=AOR_news.174}
 		USU = {
 			declare_war_on = {
 				target = USA
@@ -156,6 +157,7 @@ country_event = {
     }
 	option = {
 		name = USA.4.b
+		news_event = {id=AOR_news.174}
 		USU = {
 			declare_war_on = {
 				target = USA
@@ -194,6 +196,7 @@ country_event = {
 	}
 	option = {
 		name = USA.4.c
+		news_event = {id=AOR_news.174}
 		USU = {
 			declare_war_on = {
 				target = USA
@@ -232,6 +235,7 @@ country_event = {
 	}
 	option = {
 		name = USA.4.d
+		news_event = {id=AOR_news.174}
 		USU = {
 			declare_war_on = {
 				target = USA
