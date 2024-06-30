@@ -290,7 +290,10 @@ technologies = {
 	}
 
 	Hot_air_balloon = {
-
+		infantry = {
+			recon = 0.05
+		}
+		
 		path = {
 			leads_to_tech = Hot_air_balloon_reconnaissance
 			research_cost_coeff = 1
@@ -324,7 +327,9 @@ technologies = {
 	}
 
 	Hot_air_balloon_reconnaissance = {
-
+		infantry = {
+			recon = 0.05
+		}
 		path = {
 			leads_to_tech = airship
 			research_cost_coeff = 1
@@ -356,7 +361,10 @@ technologies = {
 	}
 
 	airship = {
-		
+		infantry = {
+			recon = 0.10
+		}
+		air_mission_efficiency = 0.05
 		enable_equipments = { 
 			Hot_air_balloon_2
 		}
@@ -383,7 +391,6 @@ technologies = {
 	}
 
 	Gas_Preparation = {
-		research_speed_factor = 0.03
 		path = {
 			leads_to_tech = Gas_Preparation1 
 			research_cost_coeff = 1
@@ -398,7 +405,7 @@ technologies = {
 		}
 		research_cost = 0.7
 		start_year = 1915
-
+        custom_modifier_tooltip = unlock_Gas_Preparation
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 0 }
@@ -413,14 +420,16 @@ technologies = {
 		}
 	}
 	Gas_Preparation1 = {
-		research_speed_factor = 0.03
 		path = {
 			leads_to_tech = Gas_Preparation5
 			research_cost_coeff = 1
 		}
-		
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1921
 
 		folder = {
 			name = electronics_folder
@@ -436,14 +445,16 @@ technologies = {
 		}
 	}
 	Gas_Preparation2 = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 		path = {
 			leads_to_tech = Gas_Preparation4
 			research_cost_coeff = 1
 		}
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1922
 
 		folder = {
 			name = electronics_folder
@@ -459,14 +470,16 @@ technologies = {
 		}
 	}
 	Gas_Preparation3 = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 		path = {
 			leads_to_tech = Gas_Preparation6
 			research_cost_coeff = 1
 		}
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1922
 
 		folder = {
 			name = electronics_folder
@@ -482,11 +495,13 @@ technologies = {
 		}
 	}
 	Gas_Preparation4 = {
-		research_speed_factor = 0.03
 		
-
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1924
 
 		folder = {
 			name = electronics_folder
@@ -502,11 +517,13 @@ technologies = {
 		}
 	}
 	Gas_Preparation5 = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1925
 
 		folder = {
 			name = electronics_folder
@@ -522,11 +539,13 @@ technologies = {
 		}
 	}
 	Gas_Preparation6 = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			breakthrough = 0.05
+			soft_attack = 0.01
+		}
 
 		research_cost = 0.7
-		start_year = 1920
+		start_year = 1924
 
 		folder = {
 			name = electronics_folder
@@ -544,8 +563,10 @@ technologies = {
 
 
 	Gas_mask = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			casualty_trickleback = 0.05
+			defence = 0.03
+		}
 		path = {
 			leads_to_tech = Gas_mask1
 			research_cost_coeff = 1
@@ -557,7 +578,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
 		}
-		
+		custom_modifier_tooltip = unlock_Gas
 		ai_will_do = {
 			factor = 30
 		}
@@ -567,8 +588,10 @@ technologies = {
 		}
 	}
 	Gas_mask1 = {
-		research_speed_factor = 0.03
-		
+		infantry = {
+			casualty_trickleback = 0.05
+			defence = 0.03
+		}
 		research_cost = 0.7
 		start_year = 1920
 

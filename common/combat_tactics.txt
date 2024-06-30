@@ -885,8 +885,11 @@ tactic_prepare_gas_attack = {
 
 	is_attacker = yes
 	trigger = {
-		#is_attacker = yes
-		#phase = no
+		is_attacker = yes
+		phase = no
+		OWNER = { 
+			has_tech = Gas_Preparation
+		}
 	}
 
 	active = no
@@ -909,7 +912,10 @@ tactic_gas_retreat = {
         trigger = {
 		is_attacker = no
 		phase = chemical_warfare
-                OWNER = { land_doctrine_level < 9 }
+		OWNER = { 
+			land_doctrine_level < 9
+			has_tech = Gas_Preparation
+		}
         }
 
 	active = yes
@@ -932,6 +938,10 @@ tactic_gas_attack = {
 	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
 		phase = chemical_warfare
+		OWNER = { 
+			has_tech = Gas_Preparation
+		}
+		
 	}
 	
 	active = yes
@@ -956,7 +966,12 @@ tactic_gas_mask = {
 	trigger = {
 		is_attacker = no
 		phase = chemical_warfare
-                OWNER = { land_doctrine_level > 9 }
+        OWNER = { 
+			has_tech = Gas_mask
+			land_doctrine_level > 9 
+		}
+		
+		
 	}
 
 	base =  { factor = 3 }
@@ -978,7 +993,10 @@ tactic_gas_mask_charge = {
 		is_attacker = no
 		phase = chemical_warfare
                 frontage_full = yes
-                OWNER = { land_doctrine_level > 10 }
+                OWNER = { 
+					land_doctrine_level > 10 
+					has_tech = Gas_Preparation
+				}
 	}
 	
 	active = yes
