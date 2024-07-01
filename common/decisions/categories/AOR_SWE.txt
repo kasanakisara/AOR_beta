@@ -12,8 +12,12 @@ SWE_Norweign_Independence_decision_categories = {
 SWE_Trade_decision_categories = {
 	priority = 90
 	visible = {
-		has_idea = SWE_Open_the_door
+		OR = {
+			has_idea = SWE_Open_the_door
+			has_idea = SWE_Third_Chioce
+		}
 	}
+	visible_when_empty = yes
 }
 
 SWE_Union_decision_categories = {

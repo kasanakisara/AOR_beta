@@ -616,6 +616,12 @@ focus_tree = {
 		}
 		x = 5
 		y = 11
+		completion_reward = {
+			add_timed_idea = {
+				idea = SWE_Regulation
+				days = 180
+			}
+		}
 
 	}
 	focus = {
@@ -630,6 +636,13 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
+		completion_reward = {
+			country_event = { id = SWE.29 }
+			swap_ideas = {
+				add_idea = SWE_Third_Chioce
+				remove_idea = SWE_Open_the_door
+			}
+		}
 
 	}
 	focus = {

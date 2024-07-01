@@ -235,5 +235,29 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
+
+		SWE_Regulation = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.1
+				stability_weekly = 0.01
+			}
+		}
+
+		SWE_Third_Chioce = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.45
+				drift_defence_factor = -0.2
+				political_power_cost = 0.2
+				production_speed_buildings_factor = 0.25
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
 	}
 }

@@ -252,8 +252,18 @@ SWE_Norweign_Independence_decision_categories = {
 
 SWE_Trade_decision_categories = {
     SWE_Boost_Government_Spending = { #提高政府支出
-        avaliable = { has_idea = SWE_Open_the_door }
-        visible = { has_idea = SWE_Open_the_door }
+        avaliable = {
+            OR = {
+                has_idea = SWE_Open_the_door
+                has_idea = SWE_Third_Chioce
+            }
+        }
+        visible = {
+            OR = {
+                has_idea = SWE_Open_the_door
+                has_idea = SWE_Third_Chioce
+            }
+        }
         days_re_enable = 14
         cost = 20
         ai_will_do = {
@@ -266,8 +276,18 @@ SWE_Trade_decision_categories = {
     }
 
     SWE_Lower_Government_Spending = { #减少政府支出
-        avaliable = { has_idea = SWE_Open_the_door }
-        visible = { has_idea = SWE_Open_the_door }
+        avaliable = {
+            OR = {
+                has_idea = SWE_Open_the_door
+                has_idea = SWE_Third_Chioce
+            }
+        }
+        visible = {
+            OR = {
+            has_idea = SWE_Open_the_door
+            has_idea = SWE_Third_Chioce
+            }
+        }
         days_re_enable = 14
         cost = 20
         ai_will_do = {

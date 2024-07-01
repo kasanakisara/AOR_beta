@@ -665,3 +665,14 @@ country_event = {
         add_political_power = -25
     }
 }
+
+country_event = {
+    id = SWE.29 #第三种选择
+    title = SWE.29.t
+    desc = SWE.29.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.29.a
+        add_political_power = 100
+    }
+}
