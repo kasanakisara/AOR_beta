@@ -31,6 +31,7 @@ guiTypes = { #主体结构
 			text = "SWE_Union_num"
 			format = center
 			maxWidth = 400
+			pdx_tooltip = SWE_Union_text_tooltip
 		}
 
 		instantTextBoxType = {

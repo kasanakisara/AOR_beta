@@ -340,16 +340,17 @@ country_event = {
         name = SWE.17.a
         add_political_power = 250
         hidden_effect = {
-				remove_ideas = A_lingering_alliance
-				remove_ideas = SWE_Liberte_Spirit
-				remove_ideas = SWE_All_People_are_King
-				remove_ideas = SWE_Beyond_Nation
-				remove_ideas = SWE_Eighty_Seventh_Orders
-				remove_ideas = SWE_Antisocialistisk_Speciallagen
-				add_ideas = SWE_The_Union_Dream
+            remove_ideas = A_lingering_alliance
+            remove_ideas = SWE_Liberte_Spirit
+            remove_ideas = SWE_All_People_are_King
+            remove_ideas = SWE_Beyond_Nation
+            remove_ideas = SWE_Eighty_Seventh_Orders
+            remove_ideas = SWE_Antisocialistisk_Speciallagen
+            add_ideas = SWE_The_Union_Dream
+            add_ideas = SWE_In_Revolution
 		}
         set_variable = { SWE_Union_progress_value = 50 }
-        set_country_flag = SWE_Union_stage_I
+        set_variable = { SWE_Union_Stage = 1 }
         custom_effect_tooltip = SWE_Union_GUI_Enable_tt
     }
 }

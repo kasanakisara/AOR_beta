@@ -14,7 +14,10 @@ on_actions = {
 			### 门户开放修正
 			if = {
 				limit = {
-					has_idea = SWE_Open_the_door
+					OR = {
+						has_idea = SWE_Open_the_door
+						has_idea = SWE_Thrid_Chioce
+					}
 				}
 
 				## 政府支出 -> 生活消费品
@@ -388,6 +391,18 @@ on_actions = {
 				}
 				else = {
 					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+
+				#加和
+				add_to_variable = { SWE_Union_progress_value = var:SWE_Union_progress_value_add }
+
+				#判断是否进步
+				if = {
+					limit = {
+						check_variable = { SWE_Union_progress_value = 100 compare = more_than_or_equals }
+					}
+					add_to_variable = { SWE_Union_Stage = 1 }
+					add_to_variable = { SWE_Union_progress_value = -100 }
 				}
 
 			}
