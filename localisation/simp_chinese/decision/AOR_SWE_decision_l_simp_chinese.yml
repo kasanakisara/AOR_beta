@@ -27,3 +27,8 @@
  SWE_Lower_Government_Spending_tt:0 "§Y政府支出将减少§!"
  SWE_Market_Inclusion_add_tt:0 "§Q将增加国际市场开放度§!"
  AOR_SWE_Trade_dynamic_modifier:0 "门户开放政策修正"
+
+ SWE_Berlin_Trade_decision:0 "扩大和[GER.GetName]的贸易"
+ SWE_Frankfurt_Trade_decision:0 "扩大和[NAU.GetName]的贸易"
+ SWE_Bavaria_Trade_decision:0 "扩大和[BAV.GetName]的贸易"
+ SWE_CSA_Trade_decision:0 "扩大和[CSA.GetName]的贸易"

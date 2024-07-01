@@ -289,8 +289,85 @@ SWE_Trade_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_Government_Spending = 5 }
-            add_to_variable = { SWE_Market_Inclusion = 5 }
+            add_to_variable = { SWE_Market_Inclusion = 15 }
             custom_effect_tooltip = SWE_Add_Government_Spending_tt
+            custom_effect_tooltip = SWE_Market_Inclusion_add_tt
+            GER = {
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 5000
+                    producer = SWE
+                }
+            }
+        }
+    }
+
+    SWE_Frankfurt_Trade_decision = { #扩大和法兰克福的贸易
+        avaliable = { NAU = { has_idea = SWE_Germany_Trade } }
+        visible = { NAU = { has_idea = SWE_Germany_Trade } }
+        days_re_enable = 14
+        cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = 5 }
+            add_to_variable = { SWE_Market_Inclusion = 15 }
+            custom_effect_tooltip = SWE_Add_Government_Spending_tt
+            custom_effect_tooltip = SWE_Market_Inclusion_add_tt
+            NAU = {
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 5000
+                    producer = SWE
+                }
+            }
+        }
+    }
+
+    SWE_Bavaria_Trade_decision = { #扩大和巴伐利亚的贸易
+        avaliable = { BAV = { has_idea = SWE_Germany_Trade } }
+        visible = { BAV = { has_idea = SWE_Germany_Trade } }
+        days_re_enable = 14
+        cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = 5 }
+            add_to_variable = { SWE_Market_Inclusion = 15 }
+            custom_effect_tooltip = SWE_Add_Government_Spending_tt
+            custom_effect_tooltip = SWE_Market_Inclusion_add_tt
+            BAV = {
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 5000
+                    producer = SWE
+                }
+            }
+        }
+    }
+
+    SWE_CSA_Trade_decision = { #扩大和联盟国的贸易
+        avaliable = { CSA = { has_idea = SWE_Germany_Trade } }
+        visible = { CSA = { has_idea = SWE_Germany_Trade } }
+        days_re_enable = 14
+        cost = 20
+        ai_will_do = {
+            factor = 0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_Government_Spending = 5 }
+            add_to_variable = { SWE_Market_Inclusion = 15 }
+            custom_effect_tooltip = SWE_Add_Government_Spending_tt
+            custom_effect_tooltip = SWE_Market_Inclusion_add_tt
+            CSA = {
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 5000
+                    producer = SWE
+                }
+            }
         }
     }
 }

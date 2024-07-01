@@ -107,4 +107,16 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Trade_with_Deutschland"
 		texturefile = "gfx/interface/goals/goal_SWE_Trade_with_Deutschland.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Provide_Third_Choice"
+		texturefile = "gfx/interface/goals/goal_SWE_Provide_Third_Choice.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_National_Regulation"
+		texturefile = "gfx/interface/goals/goal_SWE_National_Regulation.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Beautiful_New_World"
+		texturefile = "gfx/interface/goals/goal_SWE_Beautiful_New_World.png"
+	}
 }

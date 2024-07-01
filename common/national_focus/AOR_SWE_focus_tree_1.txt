@@ -508,7 +508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Beautiful_New_World
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Beautiful_New_World
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_Dream
@@ -574,7 +574,9 @@ focus_tree = {
 					country_event = { id = SWE.26 }
 				}
 			}
+			add_to_variable = { SWE_Market_Inclusion = 10 }
 			custom_effect_tooltip = SWE_Trade_with_Germany_tt
+			custom_effect_tooltip = SWE_Market_Inclusion_add_tt
 		}
 
 	}
@@ -599,13 +601,15 @@ focus_tree = {
 					country_event = { id = SWE.26 }
 				}
 			}
+			add_to_variable = { SWE_Market_Inclusion = 5 }
 			custom_effect_tooltip = SWE_CSA_Trade_tt
+			custom_effect_tooltip = SWE_Market_Inclusion_add_tt
 		}
 
 	}
 	focus = {
 		id = SWE_National_Regulation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_National_Regulation
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Trade_with_Deutschland
@@ -616,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Provide_Third_Choice
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Provide_Third_Choice
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_National_Regulation
