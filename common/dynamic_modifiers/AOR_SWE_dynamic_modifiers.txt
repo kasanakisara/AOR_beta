@@ -20,5 +20,10 @@ AOR_Union_dynamic_modifier = {
     enable = {
         always = yes
     }
-    
+    political_power_cost = SWE_Union_political_cost
+    stability_factor = SWE_Union_stability_factor
+    war_support_factor = SWE_Union_war_support_factor
+    production_speed_buildings_factor = SWE_Union_construction_speed
+    production_speed_industrial_complex_factor = SWE_Union_industrial_speed
+    production_speed_arms_factory_factor = SWE_Union_arms_speed
 }
