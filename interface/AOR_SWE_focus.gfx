@@ -119,4 +119,28 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Beautiful_New_World"
 		texturefile = "gfx/interface/goals/goal_SWE_Beautiful_New_World.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Welfare_New_Society"
+		texturefile = "gfx/interface/goals/goal_SWE_Welfare_New_Society.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Immigrant_Protection"
+		texturefile = "gfx/interface/goals/goal_SWE_Immigrant_Protection.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Maternity_Allowance"
+		texturefile = "gfx/interface/goals/goal_SWE_Maternity_Allowance.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_People_University"
+		texturefile = "gfx/interface/goals/goal_SWE_People_University.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Labor_Protection"
+		texturefile = "gfx/interface/goals/goal_SWE_Labor_Protection.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Everyone_has_Job"
+		texturefile = "gfx/interface/goals/goal_SWE_Everyone_has_Job.png"
+	}
 }

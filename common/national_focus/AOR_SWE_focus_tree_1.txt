@@ -658,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Welfare_New_Society
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Welfare_New_Society
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_Dream
@@ -726,8 +726,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Employment_Subsidy
-		icon = GFX_goal_unknown
+		id = SWE_Maternity_Allowance
+		icon = GFX_goal_SWE_Maternity_Allowance
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
@@ -738,7 +738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Immigrant_Protection
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Immigrant_Protection
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
@@ -749,10 +749,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_People_University
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_People_University
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Employment_Subsidy
+			focus = SWE_Maternity_Allowance
 		}
 		x = 13
 		y = 11
@@ -760,7 +760,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Labor_Protection
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Labor_Protection
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Immigrant_Protection
@@ -771,7 +771,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Everyone_has_Job
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Everyone_has_Job
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Labor_Protection
