@@ -2586,7 +2586,7 @@ news_event = {#联省革命政府战胜北京政府！
 	}
 }
 
-news_event = {#美国第三次内战爆发
+news_event = {#美国第三次内战爆发！
 	id = AOR_news.174
 	title = AOR_news.174.t
 	desc = AOR_news.174.d
@@ -2596,5 +2596,18 @@ news_event = {#美国第三次内战爆发
 
 	option = {
 		name = AOR_news.174.a
+	}
+}
+
+news_event = {#朝鲜义军南下
+	id = AOR_news.175
+	title = AOR_news.175.t
+	desc = AOR_news.175.d
+	picture = GFX_AOR_news.175_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.175.a
 	}
 }

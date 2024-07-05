@@ -179,6 +179,7 @@ country_event = {
 				type = annex_everything
 			} 
 		    add_ideas = CHI_zuguoguangfuzhixi
+			remove_ideas = Coach_Corps
 			create_faction = kmt_mingzhu_Union
 			add_to_faction = KMT
 			white_peace = KMT
@@ -188,6 +189,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JAP.5.a
+		news_event = {id=AOR_news.175}
 		country_event = { days = 360 id = JAP.6 }
 	}
 }
@@ -210,7 +212,7 @@ country_event = {
 			add_state_core = 743
 		}
 		PYO = {
-			set_cosmetic_tag = PYO
+			set_cosmetic_tag = PYO_FRE_democratic_2
 			transfer_state = 817
 			transfer_state = 818
 
@@ -315,6 +317,7 @@ country_event = {
 				type = annex_everything
 			} 
 			add_ideas = CHI_zuguoguangfuzhixi
+			remove_ideas = Coach_Corps
 			create_faction = upc_mingzhu_Union
 			add_to_faction = UPC
 			white_peace = UPC
@@ -323,6 +326,7 @@ country_event = {
 }
 	option = {
 		name = JAP.8.a
+		news_event = {id=AOR_news.175}
 		country_event = { days = 360 id = JAP.9 }
 	}
 }
@@ -345,7 +349,7 @@ country_event = {
 			add_state_core = 743
 		}
 		PYO = {
-			set_cosmetic_tag = PYO
+			set_cosmetic_tag = PYO_FRE_democratic_2
 			transfer_state = 817
 			transfer_state = 818
 
