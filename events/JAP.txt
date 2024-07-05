@@ -166,12 +166,10 @@ country_event = {
 		tag = JAP
 		#743 = { is_owned_by = KMT }
 		#745 = { is_owned_by = KMT }
-		KMT = {
-			has_war_with = JAP
-			owns_state = 408
-			owns_state = 743
-			owns_state = 745
-		}
+		408 = { is_controlled_by = KMT }
+		743 = { is_controlled_by = KMT }
+		745 = { is_controlled_by = KMT }
+		KMT = { has_war_with = JAP }
 	}
 	immediate = {
 		hidden_effect = {
@@ -180,6 +178,7 @@ country_event = {
 				target = JAP
 				type = annex_everything
 			} 
+		    add_ideas = CHI_zuguoguangfuzhixi
 		}
 	}
 }
@@ -287,12 +286,10 @@ country_event = {
 	trigger = {
 		date > 1924.2.10
 		tag = JAP
-		UPC = {
-			has_war_with = JAP
-			owns_state = 743
-			owns_state = 745
-			owns_state = 408
-		}
+		408 = { is_controlled_by = UPC }
+		743 = { is_controlled_by = UPC }
+		745 = { is_controlled_by = UPC }
+		UPC = { has_war_with = JAP }
 	}
 	fire_only_once = yes
 	immediate = {
@@ -302,6 +299,7 @@ country_event = {
 				target = JAP
 				type = annex_everything
 			} 
+			add_ideas = CHI_zuguoguangfuzhixi
 		}
 	}
 }
