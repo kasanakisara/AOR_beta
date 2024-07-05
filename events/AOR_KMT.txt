@@ -587,7 +587,6 @@ country_event = {#昆明政府统一南方
                 name=KMT.9.a
                 set_capital = { state = 592 }
                 country_event = { days = 90  id = MEN.1 }
-                country_event = { days = 180  id = DCD.2 }
                 news_event = {id=AOR_news.108}
                 KMT = {
                     set_politics = {ruling_party = AGR_socialism}
@@ -750,7 +749,6 @@ country_event = {#昆明政府统一南方
                 name=KMT.12.a
                 set_capital = { state = 592 }
                 country_event = { days = 90  id = MEN.1 }
-                country_event = { days = 180  id = DCD.2 }
                 news_event = {id=AOR_news.108}
                 KMT = {
                     set_politics = {ruling_party = AUT_democratic}
