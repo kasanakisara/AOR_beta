@@ -70,6 +70,7 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.2 }
 			transfer_state = 489
 			transfer_state = 307
+			transfer_state = 488
 		}
 		name=GCL.2.a
 		493 = {
