@@ -665,6 +665,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 9
+		completion_reward = {
+			add_ideas = SWE_Folkhemmet
+		}
 
 	}
 	focus = {
