@@ -209,12 +209,24 @@ country_event = {
 			add_state_core = 745
 			add_state_core = 743
 		}
+		PYO = {
+			set_cosmetic_tag = PYO
+			transfer_state = 817
+			transfer_state = 818
+
+			add_state_core = 817
+			add_state_core = 818
+			set_capital = { state = 818 }
+		}
 		JAP = {
 			white_peace = KMT
 			add_popularity = { ideology = Absolutism popularity = -0.05 }
 			add_popularity = { ideology = AUT_democratic  popularity = -0.05 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
+		}
+		PRI = {
+			give_military_access = KMT
 		}
 	}
 }
@@ -332,12 +344,24 @@ country_event = {
 			add_state_core = 745
 			add_state_core = 743
 		}
+		PYO = {
+			set_cosmetic_tag = PYO
+			transfer_state = 817
+			transfer_state = 818
+
+			add_state_core = 817
+			add_state_core = 818
+			set_capital = { state = 818 }
+		}
 		JAP = {
 			white_peace = UPC
 			add_popularity = { ideology = Absolutism popularity = -0.05 }
 			add_popularity = { ideology = AUT_democratic  popularity = -0.05 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
+		}
+		PRI = {
+			give_military_access = UPC
 		}
 	}
 }
