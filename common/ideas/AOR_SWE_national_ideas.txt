@@ -188,6 +188,9 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 				consumer_goods_factor = -0.15
+				trade_opinion_factor = 0.25
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 
@@ -267,6 +270,17 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = SWE_In_Revolution_tt
+			}
+		}
+
+		SWE_Folkhemmet = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.15
+				stability_factor = 0.1
+				stability_weekly = 0.01
 			}
 		}
 	}
