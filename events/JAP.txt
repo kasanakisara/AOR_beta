@@ -179,6 +179,9 @@ country_event = {
 				type = annex_everything
 			} 
 		    add_ideas = CHI_zuguoguangfuzhixi
+			create_faction = kmt_mingzhu_Union
+			add_to_faction = KMT
+			white_peace = KMT
 		}
 	}
 }
@@ -300,6 +303,9 @@ country_event = {
 				type = annex_everything
 			} 
 			add_ideas = CHI_zuguoguangfuzhixi
+			create_faction = upc_mingzhu_Union
+			add_to_faction = UPC
+			white_peace = UPC
 		}
 	}
 }

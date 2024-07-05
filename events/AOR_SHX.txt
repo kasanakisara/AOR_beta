@@ -33,8 +33,8 @@ country_event = {#阎锡山支持联省共和(广州)
         news_event = {id=AOR_news.150}
         UPC = {
             create_faction = upc_mingzhu_Union
-            add_to_faction = SHX
-            white_peace = SHX
+            add_to_faction = UPC
+            white_peace = UPC
         }
     }
 }
@@ -73,8 +73,8 @@ country_event = {#阎锡山支持陈其美国民政府
         news_event = {id=AOR_news.151}
         UPC = {
             create_faction = kmt_mingzhu_Union
-            add_to_faction = SHX
-            white_peace = SHX
+            add_to_faction = KMT
+            white_peace = KMT
         }
     }
 }
@@ -108,8 +108,8 @@ country_event = {#阎锡山支持南京政府
         news_event = {id=AOR_news.152}
         UPC = {
             create_faction = Zhiyang_Union
-            add_to_faction = SHX
-            white_peace = SHX
+            add_to_faction = NAN
+            white_peace = NAN
         }
     }
 }
@@ -143,8 +143,8 @@ country_event = {#阎锡山支持北京政府
         news_event = {id=AOR_news.153}
         UPC = {
             create_faction = Beiyang_Union
-            add_to_faction = SHX
-            white_peace = SHX
+            add_to_faction = MON
+            white_peace = MON
         }
     }
 }
