@@ -1080,3 +1080,7 @@ PYO_FRE_democratic_2={
 	color = rgb { 79 100 166 }
 	color_ui = rgb { 79 100 166 }
 }
+GUZ_Absolutism = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}

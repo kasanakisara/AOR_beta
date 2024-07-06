@@ -870,3 +870,7 @@ MNU = {
 	color = rgb { 87 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+GUZ = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}

@@ -12,18 +12,6 @@ country_event = {#昆明政府政变
 	fire_only_once = yes
 	immediate = {
         hidden_effect = {
-            #JIN = {
-                #transfer_state = 325
-                #transfer_state = 603
-                #transfer_state = 907
-                #transfer_state = 748
-    
-                #add_state_core = 325
-                #add_state_core = 603
-                #add_state_core = 907
-                #add_state_core = 748
-                #714={set_demilitarized_zone=yes}
-            #}
             KMT = {
                 set_politics = {ruling_party = FRE_democratic }
                 create_country_leader = {
@@ -36,10 +24,22 @@ country_event = {#昆明政府政变
                     }
                 }
                 325={set_demilitarized_zone=yes}
-                603={set_demilitarized_zone=yes}
-                748={set_demilitarized_zone=yes}
-                907={set_demilitarized_zone=yes}
-                750={set_demilitarized_zone=yes}
+                #603={set_demilitarized_zone=yes}
+                #748={set_demilitarized_zone=yes}
+                #907={set_demilitarized_zone=yes}
+                #750={set_demilitarized_zone=yes}
+            }
+            GUZ = {
+                set_cosmetic_tag = JIN_Absolutism
+                transfer_state = 750
+                transfer_state = 603
+                transfer_state = 907
+                transfer_state = 748
+    
+                add_state_core = 750
+                add_state_core = 603
+                add_state_core = 907
+                add_state_core = 748
             }
         }
 	}
@@ -49,6 +49,7 @@ country_event = {#昆明政府政变
         news_event = {id=AOR_news.131}
         KMT = {
             set_cosmetic_tag = KMT_4
+            load_oob = "AOR_LAND_CHI_M_KMT"
             add_popularity = { ideology = FRE_democratic popularity = 0.1 }
             add_popularity = { ideology = CON_democratic popularity = 0.1 }
             add_popularity = { ideology = SOC_democratic popularity = 0.1 }
@@ -107,25 +108,19 @@ country_event = {#云贵内战（孙中山主导）
 				remove_idea = CHI_yunguixiongshi
 				add_idea = CHI_yunguixiongshi_1
 			}
-                325={set_demilitarized_zone=NO}
-                603={set_demilitarized_zone=NO}
-                748={set_demilitarized_zone=NO}
-                907={set_demilitarized_zone=NO}
-                750={set_demilitarized_zone=NO}
             }
-            #JIN = {
-                #declare_war_on = { 
-                    #target = KMT
-                    #type = civil_war
-                #} 
-            #}
+            GUZ = {
+                declare_war_on = { 
+                    target = KMT
+                    type = civil_war
+                } 
+            }
         }
 	}
 	option = {
 		name = KMT.2.a
-        news_event = {id=AOR_news.145}
+        news_event = {id=AOR_news.176}
         KMT = {
-        set_cosmetic_tag = KMT_5
         add_popularity = { ideology = FRE_democratic popularity = 0.1 }
         add_popularity = { ideology = SOC_democratic popularity = 0.1 }
         }
@@ -471,25 +466,19 @@ country_event = {#昆明政府统一南方
                     remove_idea = CHI_yunguixiongshi
                     add_idea = CHI_yunguixiongshi_1
                 }
-                    325={set_demilitarized_zone=NO}
-                    603={set_demilitarized_zone=NO}
-                    748={set_demilitarized_zone=NO}
-                    907={set_demilitarized_zone=NO}
-                    750={set_demilitarized_zone=NO}
+            }
+                GUZ = {
+                    declare_war_on = { 
+                        target = KMT
+                        type = civil_war
+                    } 
                 }
-                #JIN = {
-                    #declare_war_on = { 
-                        #target = KMT
-                        #type = civil_war
-                    #} 
-                #}
             }
         }
         option = {
             name = KMT.7.a
-            news_event = {id=AOR_news.145}
+            news_event = {id=AOR_news.176}
             KMT = {
-            set_cosmetic_tag = KMT_5
             add_popularity = { ideology = FRE_democratic popularity = 0.05 }
             add_popularity = { ideology = SOC_democratic popularity = 0.05 }
             add_popularity = { ideology = AGR_socialism popularity = 0.1 }
@@ -633,25 +622,19 @@ country_event = {#昆明政府统一南方
                     remove_idea = CHI_yunguixiongshi
                     add_idea = CHI_yunguixiongshi_1
                 }
-                    325={set_demilitarized_zone=NO}
-                    603={set_demilitarized_zone=NO}
-                    748={set_demilitarized_zone=NO}
-                    907={set_demilitarized_zone=NO}
-                    750={set_demilitarized_zone=NO}
+            }
+                GUZ = {
+                    declare_war_on = { 
+                        target = KMT
+                        type = civil_war
+                    } 
                 }
-                #JIN = {
-                    #declare_war_on = { 
-                        #target = KMT
-                        #type = civil_war
-                    #} 
-                #}
             }
         }
         option = {
             name = KMT.10.a
-            news_event = {id=AOR_news.145}
+            news_event = {id=AOR_news.176}
             KMT = {
-            set_cosmetic_tag = KMT_5
             add_popularity = { ideology = FRE_democratic popularity = 0.05 }
             add_popularity = { ideology = CON_democratic popularity = 0.10 }
             add_popularity = { ideology = AUT_democratic popularity = 0.10 }

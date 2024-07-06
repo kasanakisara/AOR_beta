@@ -1614,7 +1614,7 @@ country_event = {
 	desc = CHI.43.d
 	picture = GFX_Portrait_of_Tirpitz
 	trigger = {
-		date > 1920.7.10
+		date > 1920.7.1
 		tag = CHI
 	}
 	fire_only_once = yes
@@ -1641,25 +1641,16 @@ country_event = {
 	option = {
 		CHI = {
 			set_party_name = { ideology = Absolutism long_name = CHI_1_Absolutism_party name = CHI_1_Absolutism_party }
-			set_politics = { ruling_party = AUT_democratic }
+			set_politics = { ruling_party = Absolutism }
 			create_country_leader = {
-				name = "Xu_shi_chang"
+				name = "Wu_Pei_Fu"
 				desc = ""
-				picture = "gfx/leaders/CHI/Xu_shi_chang.png"
+				picture = "gfx/leaders/CHI/Wu_Pei_Fu.dds"
 				expire = "1965.1.1"
-				ideology = authoritarianism
+				ideology = miliciagov
 				traits = {
 				}
 			}
-			#create_country_leader = {
-				#name = "Wu_Pei_Fu"
-				#desc = ""
-				#picture = "gfx/leaders/CHI/Wu_Pei_Fu.dds"
-				#expire = "1965.1.1"
-				#ideology = miliciagov
-				#traits = {
-				#}
-			#}
 			
 		}
 		name = CHI.44.a
@@ -1734,6 +1725,36 @@ country_event = {
 	option = {
 		name = CHI.47.a
 		news_event = {id=AOR_news.169}
+	}
+}
+
+#徐世昌代行大总统
+country_event = {
+	id = CHI.48
+	title = CHI.48.t
+	desc = CHI.48.d
+	picture = GFX_Portrait_of_Tirpitz
+	trigger = {
+		date > 1922.5.10
+		tag = CHI
+	}
+	fire_only_once = yes
+	option = {
+		CHI = {
+			set_politics = { ruling_party = AUT_democratic }
+			create_country_leader = {
+				name = "Xu_shi_chang"
+				desc = ""
+				picture = "gfx/leaders/CHI/Xu_shi_chang.png"
+				expire = "1965.1.1"
+				ideology = authoritarianism
+				traits = {
+				}
+			}
+			
+		}
+		name = CHI.48.a
+		news_event = {id=AOR_news.177}
 	}
 }
 

@@ -2611,3 +2611,29 @@ news_event = {#朝鲜义军南下
 		name = AOR_news.175.a
 	}
 }
+
+news_event = {#中国云贵内战全面爆发
+	id = AOR_news.176
+	title = AOR_news.176.t
+	desc = AOR_news.176.d
+	picture = GFX_AOR_news.176_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.176.a
+	}
+}
+
+news_event = {#徐世昌代行中国大总统
+	id = AOR_news.177
+	title = AOR_news.177.t
+	desc = AOR_news.177.d
+	picture = GFX_AOR_news.177_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.177.a
+	}
+}

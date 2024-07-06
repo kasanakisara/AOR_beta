@@ -1,4 +1,4 @@
-﻿capital = 325
+﻿capital = 748
 
 add_ideas = CHI_quxionggeju
 add_ideas = CHI_junfanjingji
@@ -27,7 +27,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Tang_ji_yao"
-	picture = GFX_portrait_cai_cheng_xun
+	picture = gfx/leaders/GUZ/Tang_ji_yao.dds
 	expire = "1965.1.1"
 	ideology = miliciagov
 	traits = { 
