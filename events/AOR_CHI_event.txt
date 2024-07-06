@@ -1735,7 +1735,7 @@ country_event = {
 	desc = CHI.48.d
 	picture = GFX_Portrait_of_Tirpitz
 	trigger = {
-		date > 1922.5.10
+		date > 1922.5.15
 		tag = CHI
 	}
 	fire_only_once = yes
