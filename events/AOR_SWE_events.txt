@@ -155,7 +155,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.9.a
-        add_stability = 0.1
+        add_stability = 0.05
     }
 }
 
@@ -166,7 +166,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.10.a
-        add_stability = 0.1
+        add_stability = 0.05
     }
 }
 
@@ -299,7 +299,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.14.a
-        add_stability = -0.2
+        add_stability = -0.25
         add_manpower = -10000
     }
 }
@@ -351,6 +351,13 @@ country_event = {
 		}
         set_variable = { SWE_Union_progress_value = 50 }
         set_variable = { SWE_Union_Stage = 1 }
+        set_variable = { SWE_Union_political_cost = 0.5 }
+        set_variable = { SWE_Union_stability_factor = 0.05 }
+        set_variable = { SWE_Union_war_support_factor = 0.05 }
+        set_variable = { SWE_Union_construction_speed = 0.05 }
+        set_variable = { SWE_Union_industrial_speed = 0.05 }
+        set_variable = { SWE_Union_arms_speed = 0.05 }
+        add_dynamic_modifier = AOR_SWE_Union_dynamic_modifier
         custom_effect_tooltip = SWE_Union_GUI_Enable_tt
     }
 }

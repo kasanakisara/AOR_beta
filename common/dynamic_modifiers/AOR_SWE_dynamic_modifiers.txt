@@ -16,7 +16,7 @@ AOR_SWE_Trade_dynamic_modifier = {
     production_speed_buildings_factor = SWE_Trade_construction_speed
 }
 
-AOR_Union_dynamic_modifier = {
+AOR_SWE_Union_dynamic_modifier = {
     enable = {
         always = yes
     }
