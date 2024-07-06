@@ -137,11 +137,22 @@ on_actions = {
 	}
 
 	on_monthly_SWE = {
-		## 门户开放
 		effect = {
+			#人民之家
 			if = {
 				limit = {
-					has_idea = SWE_Open_the_door
+					has_idea = SWE_Folkhemmet
+				}
+				add_political_power = -50
+			}
+
+			## 门户开放
+			if = {
+				limit = {
+					OR = {
+						has_idea = SWE_Open_the_door
+						has_idea = SWE_Third_Chioce
+					}
 				}
 
 				## 检测本土工业发展度
