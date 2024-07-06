@@ -69,14 +69,17 @@ recruit_character = BOT_democratic_guy
 }
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = CON_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Absolutism = 100
+	Absolutism = 85
+	CON_democratic = 5
+	FRE_democratic = 5
 }
+
 
 create_country_leader = {
 	
@@ -88,3 +91,5 @@ create_country_leader = {
 		#
 	}
 }
+
+set_cosmetic_tag = BOT_UK
