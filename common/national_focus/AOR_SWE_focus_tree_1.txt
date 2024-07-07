@@ -513,6 +513,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_The_Dream
 		}
+		available = {
+			has_completed_focus = SWE_Rebuild_New_World
+		}
 		x = 4
 		y = 9
 		completion_reward = {
@@ -662,6 +665,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_The_Dream
+		}
+		available = {
+			has_completed_focus = SWE_Rebuild_New_World
 		}
 		x = 14
 		y = 9

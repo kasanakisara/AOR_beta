@@ -404,6 +404,21 @@ SWE_Union_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_Union_Stage = 1 }
+            add_to_variable = { SWE_Union_stability_factor = 0.25 }
+            add_to_variable = { SWE_Union_war_support_factor = 0.25 }
+            add_to_variable = { SWE_Union_construction_speed = 0.25 }
+            add_to_variable = { SWE_Union_arms_speed = 0.25 }
+            add_to_variable = { SWE_Union_industrial_speed = 0.25 }
+            if = {
+                limit = {
+                    check_variable = { SWE_Union_Stage < 12 }
+                }
+                add_to_variable = { SWE_Union_political_cost = -0.05 }
+            }
         }
     }
+}
+
+SWE_Folkhemmet_decision_categories = {
+
 }

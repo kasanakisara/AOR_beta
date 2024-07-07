@@ -61,13 +61,6 @@ spriteTypes = {
 #联邦化GUI
 
 spriteTypes = {
-	spriteType = {
-		name = "GFX_Union_GUI_Vivelafederation"
-		texturefile = "gfx/AOR_gui/SWE/SWE_Vivelafederation.png"
-	}
-}
-
-spriteTypes = {
 	progressbartype = {
 		name = "GFX_Union_GUI_progressbar"
 		textureFile1 = "gfx/AOR_gui/SWE/SWE.png"
@@ -75,5 +68,14 @@ spriteTypes = {
 		size = { x = 470 y = 43 }
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
+	}
+}
+
+#决议
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SWE_Folkhemmet_decision_pic"
+		texturefile = "gfx/interface/decisions/decision_SWE_Folkhemmet_pic.png"
 	}
 }

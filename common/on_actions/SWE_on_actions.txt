@@ -144,6 +144,12 @@ on_actions = {
 					has_idea = SWE_Folkhemmet
 				}
 				add_political_power = -50
+				if = {
+					limit = {
+						has_political_power < 0
+					}
+					add_ideas = SWE_Folkhemmet_debuff
+				}
 			}
 
 			## 门户开放
@@ -414,6 +420,17 @@ on_actions = {
 					}
 					add_to_variable = { SWE_Union_Stage = 1 }
 					add_to_variable = { SWE_Union_progress_value = -100 }
+					add_to_variable = { SWE_Union_stability_factor = 0.25 }
+					add_to_variable = { SWE_Union_war_support_factor = 0.25 }
+					add_to_variable = { SWE_Union_construction_speed = 0.25 }
+					add_to_variable = { SWE_Union_arms_speed = 0.25 }
+					add_to_variable = { SWE_Union_industrial_speed = 0.25 }
+					if = {
+						limit = {
+							check_variable = { SWE_Union_Stage < 12 }
+						}
+						add_to_variable = { SWE_Union_political_cost = -0.05 }
+					}
 				}
 
 			}

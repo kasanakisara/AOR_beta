@@ -32,7 +32,6 @@ SWE_Hackers_debug = {
         complete_effect = {
             load_focus_tree = USA_3
             complete_national_focus = USA_Shocking_waves_rise_with_the_wind
-            country_event = { id = USA.99  days = 0 }
             country_event = { id = USA.100 days = 0 }
         }
     }

@@ -125,9 +125,99 @@ defined_text = {
     text = {
         trigger = {
             OR = {
-                has_country_flag = SWE_Union_stage_II
+                check_variable = { SWE_Union_Stage = 2 }
             }
         }
         localization_key = SWE_Union_idea_2
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 3 }
+            }
+        }
+        localization_key = SWE_Union_idea_3
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 4 }
+            }
+        }
+        localization_key = SWE_Union_idea_4
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 5 }
+            }
+        }
+        localization_key = SWE_Union_idea_5
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 6 }
+            }
+        }
+        localization_key = SWE_Union_idea_6
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 7 }
+            }
+        }
+        localization_key = SWE_Union_idea_7
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 8 }
+            }
+        }
+        localization_key = SWE_Union_idea_8
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 9 }
+            }
+        }
+        localization_key = SWE_Union_idea_9
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 10 }
+            }
+        }
+        localization_key = SWE_Union_idea_10
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 11 }
+            }
+        }
+        localization_key = SWE_Union_idea_11
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { SWE_Union_Stage = 12 }
+            }
+        }
+        localization_key = SWE_Union_idea_12
     }
 }

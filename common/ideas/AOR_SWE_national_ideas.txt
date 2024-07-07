@@ -282,6 +282,18 @@ ideas = {
 				consumer_goods_factor = 0.25
 				stability_factor = 0.1
 				stability_weekly = 0.01
+				conscription_factor = -0.2
+			}
+		}
+
+		SWE_Folkhemmet_debuff = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.2
+				consumer_goods_factor = 0.3
+				stability_factor = -0.1
+				stability_weekly = -0.01
 			}
 		}
 	}

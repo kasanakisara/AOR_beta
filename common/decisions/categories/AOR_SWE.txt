@@ -28,3 +28,12 @@ SWE_Union_decision_categories = {
 	}
 	visible_when_empty = yes
 }
+
+SWE_Folkhemmet_decision_categories = {
+	priority = 90
+	picture = GFX_SWE_Folkhemmet_decision_pic
+	visible = {
+		has_idea = SWE_Folkhemmet
+	}
+	visible_when_empty = yes
+}
