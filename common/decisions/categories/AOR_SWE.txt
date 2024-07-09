@@ -11,6 +11,7 @@ SWE_Norweign_Independence_decision_categories = {
 
 SWE_Trade_decision_categories = {
 	priority = 90
+	picture = GFX_SWE_Open_the_door_decision_pic
 	visible = {
 		OR = {
 			has_idea = SWE_Open_the_door

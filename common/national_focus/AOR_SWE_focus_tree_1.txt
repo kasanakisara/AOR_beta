@@ -224,7 +224,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			add_political_power = 200
-			add_stability = 0.25
+			add_stability = 0.1
 			news_event = { id = AOR_news.70 }
 		}
 
@@ -754,6 +754,12 @@ focus_tree = {
 		}
 		x = 15
 		y = 10
+		completion_reward = {
+			set_variable = {
+				var = SWE_Immigrant
+				value = 0
+			}
+		}
 
 	}
 	focus = {

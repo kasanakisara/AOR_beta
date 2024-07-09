@@ -79,3 +79,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_SWE_Folkhemmet_pic.png"
 	}
 }
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SWE_Open_the_door_decision_pic"
+		texturefile = "gfx/interface/decisions/decision_SWE_Open_the_door_pic.png"
+	}
+}

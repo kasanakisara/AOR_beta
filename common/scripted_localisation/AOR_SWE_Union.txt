@@ -221,3 +221,48 @@ defined_text = {
         localization_key = SWE_Union_idea_12
     }
 }
+
+defined_text = {
+    name = SWE_Immigrant_policy #移民政策状态
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_Immigrant_Protection #未开放移民政策
+            }
+        }
+        localization_key = SWE_policy_nothing
+    }
+
+    text = {
+        trigger = {
+            has_completed_focus = SWE_Immigrant_Protection
+            check_variable = { SWE_Immigrant = 0 } #移民问题尚未产生危机
+        }
+        localization_key = SWE_policy_no_problem
+    }
+
+    text = {
+        trigger = {
+            has_completed_focus = SWE_Immigrant_Protection
+            check_variable = { SWE_Immigrant = 1 } #移民问题产生少量社会问题
+        }
+        localization_key = SWE_policy_few_problem
+    }
+
+    text = {
+        trigger = {
+            has_completed_focus = SWE_Immigrant_Protection
+            check_variable = { SWE_Immigrant = 2 } #移民问题产生大量社会问题
+        }
+        localization_key = SWE_policy_many_problem
+    }
+
+    text = {
+        trigger = {
+            has_completed_focus = SWE_Immigrant_Protection
+            check_variable = { SWE_Immigrant = 3 } #移民问题快爆了！
+        }
+        localization_key = SWE_policy_great_crisis
+    }
+}
