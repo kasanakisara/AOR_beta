@@ -266,3 +266,56 @@ defined_text = {
         localization_key = SWE_policy_great_crisis
     }
 }
+
+defined_text = {
+    name = SWE_Labor_policy #劳动政策状态
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_Maternity_Allowance #未开放劳动政策
+            }
+        }
+        localization_key = SWE_policy_nothing
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                has_completed_focus = SWE_Labor_Protection #通过劳动保护法
+                check_variable = { SWE_Labor = 0 } #劳动问题尚未产生危机
+            }
+        }
+        localization_key = SWE_policy_no_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_Labor_Protection
+            }
+            check_variable = { SWE_Labor = 1 } #劳动问题产生少量社会问题
+        }
+        localization_key = SWE_policy_few_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_Labor_Protection 
+            }
+            check_variable = { SWE_Labor = 2 } #劳动问题产生大量社会问题
+        }
+        localization_key = SWE_policy_many_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_Labor_Protection
+            }
+            check_variable = { SWE_Labor = 3 } #劳动问题快爆了！
+        }
+        localization_key = SWE_policy_great_crisis
+    }
+}
