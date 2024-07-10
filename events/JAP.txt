@@ -212,6 +212,94 @@ country_event = {
 			add_state_core = 743
 		}
 		PYO = {
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 525	
+					}
+				}
+			PYO = {
+				transfer_state = 525
+				add_state_core = 525
+			}
+		}
+		else_if = {
+			limit = {
+				KMT = {
+					owns_state = 852	
+				}
+			}
+		PYO = {
+			transfer_state = 525
+			add_state_core = 525
+		}
+	}
+			else_if = {
+				limit = { 
+					PYO = {
+						owns_state = 852	
+					}
+			}
+			PYO = {
+				transfer_state = 852
+				add_state_core = 852
+			}
+		}
+		else_if = {
+			limit = { 
+				KMT = {
+					owns_state = 852	
+				}
+		}
+		PYO = {
+			transfer_state = 852
+			add_state_core = 852
+		}
+	}
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 819	
+					}
+				}
+			PYO = {
+				transfer_state = 819
+				add_state_core = 819
+			}
+		}
+		else_if = {
+			limit = {
+				KMT = {
+					owns_state = 819	
+				}
+			}
+		PYO = {
+			transfer_state = 819
+			add_state_core = 819
+		}
+	}
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 619	
+					}
+			}
+			PYO = {
+				transfer_state = 619
+				add_state_core = 619
+			}
+		}
+		else_if = {
+			limit = {
+				KMT = {
+					owns_state = 619	
+				}
+		}
+		PYO = {
+			transfer_state = 619
+			add_state_core = 619
+		}
+	}
 			set_cosmetic_tag = PYO_FRE_democratic_2
 			transfer_state = 817
 			transfer_state = 818
@@ -349,6 +437,94 @@ country_event = {
 			add_state_core = 743
 		}
 		PYO = {
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 525	
+					}
+				}
+			PYO = {
+				transfer_state = 525
+				add_state_core = 525
+			}
+		}
+		else_if = {
+			limit = {
+				UPC = {
+					owns_state = 852	
+				}
+			}
+		PYO = {
+			transfer_state = 525
+			add_state_core = 525
+		}
+	}
+			else_if = {
+				limit = { 
+					PYO = {
+						owns_state = 852	
+					}
+			}
+			PYO = {
+				transfer_state = 852
+				add_state_core = 852
+			}
+		}
+		else_if = {
+			limit = { 
+				UPC = {
+					owns_state = 852	
+				}
+		}
+		PYO = {
+			transfer_state = 852
+			add_state_core = 852
+		}
+	}
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 819	
+					}
+				}
+			PYO = {
+				transfer_state = 819
+				add_state_core = 819
+			}
+		}
+		else_if = {
+			limit = {
+				UPC = {
+					owns_state = 819	
+				}
+			}
+		PYO = {
+			transfer_state = 819
+			add_state_core = 819
+		}
+	}
+			else_if = {
+				limit = {
+					PYO = {
+						owns_state = 619	
+					}
+			}
+			PYO = {
+				transfer_state = 619
+				add_state_core = 619
+			}
+		}
+		else_if = {
+			limit = {
+				UPC = {
+					owns_state = 619	
+				}
+		}
+		PYO = {
+			transfer_state = 619
+			add_state_core = 619
+		}
+	}
 			set_cosmetic_tag = PYO_FRE_democratic_2
 			transfer_state = 817
 			transfer_state = 818
