@@ -56,14 +56,14 @@ units = {
 	division= {	
 		name = "滇军军第一师"
 		location = 4501
-		division_template = "滇军军师"
+		division_template = "滇军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "滇军军第二师"
 		location = 4501
-		division_template = "滇军军师"
+		division_template = "滇军师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
