@@ -81,7 +81,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_SWE_SWE_Encourage_Capital.png"
+			animationmaskfile = "gfx/interface/goals/goal_SWE_Encourage_Capital.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -382,7 +382,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_SWE_SWE_Stockholm_Meeting_shine"
+		name = "GFX_goal_SWE_Stockholm_Meeting_shine"
 		texturefile = "gfx/interface/goals/goal_SWE_Stockholm_Meeting.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
