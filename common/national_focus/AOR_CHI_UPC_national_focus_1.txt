@@ -442,11 +442,18 @@ focus_tree = {
 		y = 3
 
 	completion_reward={
-		give_guarantee  = KMT
-		KMT = {
-			give_guarantee  = UPC
+		else_if = {
+			limit = {
+				KMT = {
+					Absolutism > 0.45
+				}
+			}
+			give_guarantee  = KMT
+			KMT = {
+				give_guarantee  = UPC
+			}
 		}
-		}
+	}
 }
 	focus = {
 		id = CHI_UN_LSJJSHJ_25

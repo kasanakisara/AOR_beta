@@ -1817,6 +1817,40 @@ on_actions = {
 					set_cosmetic_tag = KMT_5
 				}
 			}
+			###巴西内战###
+			#BRA——BR1
+			else_if = {
+				limit = {
+					#BRA胜利
+					FROM = {
+						original_tag = BRA
+					}
+					ROOT = {
+						original_tag = BR1
+					}
+				}
+				BRA = {
+					annex_country = {
+						target = BR1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#BR1胜利
+					FROM = {
+						original_tag = BR1
+					}
+					ROOT = {
+						original_tag = BRA
+					}
+				}
+				BR1 = {
+					annex_country = {
+						target = BRA
+					}
+				}
+			}
 			#匈牙利打死克罗地亚
 			else_if = {
 				limit = {

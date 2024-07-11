@@ -2284,6 +2284,53 @@ name = "GFX_goal_USA_Finally"
 texturefile = "gfx/interface/goals/USA_Finally.png"
 }
 
+###哈定国策###
+
+spriteType = {
+name = "GFX_goal_USA_Take_office_immediately"
+texturefile = "gfx/interface/goals/USA_Take_office_immediately.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Goddess_flag"
+texturefile = "gfx/interface/goals/USA_Goddess_flag.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Continuing_Beauty"
+texturefile = "gfx/interface/goals/USA_Continuing_Beauty.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Friends_of_the_Republic"
+texturefile = "gfx/interface/goals/USA_Friends_of_the_Republic.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Women"
+texturefile = "gfx/interface/goals/USA_Women.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Dealing_with_anger"
+texturefile = "gfx/interface/goals/USA_Dealing_with_anger.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Military_Reform"
+texturefile = "gfx/interface/goals/USA_Military_Reform.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Panama_Tour"
+texturefile = "gfx/interface/goals/USA_Panama_Tour.png"
+}
+
+spriteType = {
+name = "GFX_goal_USA_Perfect_ending_year_1"
+texturefile = "gfx/interface/goals/USA_Perfect_ending_year_1.png"
+}
+
 
 
 
