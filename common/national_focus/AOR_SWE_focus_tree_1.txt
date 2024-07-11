@@ -673,6 +673,11 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			add_ideas = SWE_Folkhemmet
+			unlock_decision_category_tooltip = SWE_Folkhemmet_decision_categories
+			set_variable = { SWE_Education = 1 }
+			set_variable = { SWE_National_debt = 0.2 }
+			set_variable = { SWE_debt_political_gain = 20 }
+			set_variable = { SWE_debt_consumer_factory = 0.3 }
 		}
 
 	}
@@ -774,6 +779,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 11
+		completion_reward = {
+			set_variable = { SWE_Education = 0 }
+		}
 
 	}
 	focus = {

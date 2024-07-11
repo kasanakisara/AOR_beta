@@ -4,7 +4,7 @@ can_create_intelligence_agency = {
 	# change as desired
 	if = {
 		limit = { tag = SWE }
-		has_idea = Tiger_of_Silence
+		has_completed_focus = SWE_Broke
 	}
 	else = {
 		always = yes
