@@ -11,3 +11,21 @@ intelligence_agency = {
 	available = { original_tag = ORA }
 }
 
+intelligence_agency = {
+
+	picture = ""
+	names = { "联邦安全局" }
+
+	default = {
+			AND = {
+				tag = SWE
+				NOT = { SWE = { has_idea = Tiger_of_Silence } }
+			}
+	}
+	available = {
+			AND = {
+				original_tag = SWE
+				NOT = { SWE = { has_idea = Tiger_of_Silence } }
+			}
+	}
+}

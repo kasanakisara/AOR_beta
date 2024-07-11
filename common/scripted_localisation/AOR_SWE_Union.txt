@@ -319,3 +319,47 @@ defined_text = {
         localization_key = SWE_policy_great_crisis
     }
 }
+
+defined_text = {
+    name = SWE_Edu_policy #教育政策状态
+
+    text = {
+        trigger = {
+            OR = {
+                has_completed_focus = SWE_People_University #通过全面教育
+                check_variable = { SWE_Education = 0 } #教育问题尚未产生危机
+            }
+        }
+        localization_key = SWE_policy_no_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_People_University
+            }
+            check_variable = { SWE_Education = 1 } #教育问题产生少量社会问题
+        }
+        localization_key = SWE_policy_few_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_People_University 
+            }
+            check_variable = { SWE_Education = 2 } #教育问题产生大量社会问题
+        }
+        localization_key = SWE_policy_many_problem
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = SWE_People_University
+            }
+            check_variable = { SWE_Education = 3 } #教育问题快爆了！
+        }
+        localization_key = SWE_policy_great_crisis
+    }
+}
