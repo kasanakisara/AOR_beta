@@ -23,69 +23,69 @@ units = {
 		location = 1150
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第二师团"
 		location = 1150
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第三师团"
 		location = 1150
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第四师团"
 		location = 1150
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第五师团"
 		location = 1150
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第六师团"
 		location = 10000
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第七师团"
 		location = 10000
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第八师团"
 		location = 10000
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第九师团"
 		location = 10000
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 	division= {	
 		name = "帝国第十师团"
 		location = 10000
 		division_template = "帝国陆军师团"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.65
+		start_equipment_factor = 0.95
 	}
 }
