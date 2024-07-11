@@ -161,6 +161,7 @@ country_event = {#昆明政府统一南方
 		news_event = {id=AOR_news.106}
         country_event = { days = 90  id = KMT.4 }
 		KMT = {
+            set_cosmetic_tag = KMT_6
 			swap_ideas={
 				remove_idea = CHI_insecure_society
 				add_idea = CHI_care_society
@@ -519,6 +520,7 @@ country_event = {#昆明政府统一南方
             news_event = {id=AOR_news.106}
             country_event = { days = 90  id = KMT.9 }
             KMT = {
+                set_cosmetic_tag = KMT_6
                 swap_ideas={
                     remove_idea = CHI_insecure_society
                     add_idea = CHI_care_society
@@ -583,7 +585,7 @@ country_event = {#昆明政府统一南方
                     create_country_leader = {
                         name = "Liao_Zhong_Kai"
                         desc = "POLITICS_MON_DESC"
-                        picture = "gfx/leaders/KMT/Liao_Zhong_Kai.dds"
+                        picture = "gfx/leaders/KMT/Liao_Zhong_Kai.PNG"
                         expire = "1965.1.1"
                         ideology = rad_san
                         traits = {
@@ -675,6 +677,7 @@ country_event = {#昆明政府统一南方
             news_event = {id=AOR_news.106}
             country_event = { days = 90  id = KMT.12 }
             KMT = {
+                set_cosmetic_tag = KMT_6
                 swap_ideas={
                     remove_idea = CHI_insecure_society
                     add_idea = CHI_care_society
