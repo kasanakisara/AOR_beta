@@ -11,13 +11,13 @@ state=
 		add_core_of = SUD
 		add_core_of = EGY
 		add_claim_by = ENG
-		owner = SUD
+		owner = LBA
 		buildings = {
 			infrastructure = 0
 		}
 	}
 	provinces={
-		7987 8103 10900 13259
+		7987 8103 13259
 	}
 
 	local_supplies=0.0 

@@ -1851,6 +1851,31 @@ on_actions = {
 					}
 				}
 			}
+			###意大利-利比亚战争###
+			else_if = {
+				limit = {
+					#意大利胜利
+					FROM = {
+						original_tag = ITA
+					}
+					ROOT = {
+						original_tag = LBA
+					}
+				}
+				ITA = {
+					662={set_demilitarized_zone=yes}
+					663={set_demilitarized_zone=yes}
+				}
+				EGY = {
+					transfer_state = 552
+				}
+				SUD = {
+					transfer_state = 767
+				}
+				CAR = {
+					transfer_state = 775
+				}
+			}
 			#匈牙利打死克罗地亚
 			else_if = {
 				limit = {
