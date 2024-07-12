@@ -21,7 +21,7 @@ add_ideas = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 700
+	amount = 1000
 	producer = JAP	
 }
 

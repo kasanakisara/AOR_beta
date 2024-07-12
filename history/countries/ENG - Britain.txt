@@ -31,7 +31,7 @@ complete_national_focus = ENG_bianjiujiayushidaijulang
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 1000
+	amount = 2000
 	producer = ENG
 }
 
