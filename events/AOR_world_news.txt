@@ -2637,3 +2637,16 @@ news_event = {#徐世昌代行中国大总统
 		name = AOR_news.177.a
 	}
 }
+
+news_event = {#意大利进攻利比亚诸部落
+	id = AOR_news.178
+	title = AOR_news.178.t
+	desc = AOR_news.178.d
+	picture = GFX_AOR_news.178_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.178.a
+	}
+}

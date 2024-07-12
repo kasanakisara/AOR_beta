@@ -1,5 +1,7 @@
 ﻿capital = 451
 
+oob = "AOR_LAND_LBA"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

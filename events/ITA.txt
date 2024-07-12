@@ -484,3 +484,31 @@ country_event = {
 		}
 		}
     }
+
+	country_event = { #入侵利比亚（塞努西）
+		id = ITA.10
+		title = ITA.10.t
+		desc = ITA.10.d
+		picture = GFX_report_event_german_speech
+		fire_only_once = yes
+		trigger = {
+			tag = ITA
+			date > 1919.11.20
+		}
+		option = { 
+			name = ITA.10.a
+			news_event = {id=AOR_news.178}
+        ITA = {
+				declare_war_on = { 
+					target = LBA
+					type = take_state
+			    } 
+			}
+		LBA = {
+			add_ideas = CHI_zuguoguangfuzhixi
+			load_oob = "AOR_LAND_LBA"
+			load_oob = "AOR_LAND_LBA"
+			load_oob = "AOR_LAND_LBA"
+		}
+		}
+	}
