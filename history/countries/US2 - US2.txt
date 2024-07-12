@@ -10,6 +10,29 @@ set_stability = 0.85
 set_war_support = 0.9
 add_command_power = 20
 
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = US2	
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 200
+	producer = US2	
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 500
+	producer = US2	
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment
+	amount = 100
+	producer = US2	
+}
 
 # Starting tech
 set_technology = {

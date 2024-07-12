@@ -28,6 +28,25 @@ USA = {
 	country_event = { id = usa.50 days = 2 }
 	country_event = { id = usa.51 days = 2 }
 }
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 500
+	producer = US2	
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 300
+	producer = USA	
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment
+	amount = 200
+	producer = USA
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -28,6 +28,25 @@ complete_national_focus = ENG_xinshidaidejishi
 complete_national_focus = ENG_shenglidexiyue
 complete_national_focus = ENG_wudengzuoweicijianweiyiduoshou
 complete_national_focus = ENG_bianjiujiayushidaijulang
+
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 1000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment
+	amount = 300
+	producer = ENG	
+}
+
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment
+	amount = 100
+	producer = ENG	
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

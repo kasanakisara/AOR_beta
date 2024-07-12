@@ -457,7 +457,37 @@ country_event = {
 			 remove_idea = USA_kuangyezhidi
 		     add_idea = USA_wuxunzhidi
 		}
-  }
+    }
+
+	option = {
+		name = USA.10.b
+		news_event = {id=AOR_news.80}
+		hidden_effect = {
+		USA_civil_war_west = yes
+		}
+		swap_ideas={
+			 remove_idea = USA_kuangyezhidi
+		     add_idea = USA_wuxunzhidi
+		}
+		US2 = {
+		change_tag_from = ROOT
+		}
+    }
+
+	option = {
+		name = USA.10.c
+		news_event = {id=AOR_news.80}
+		hidden_effect = {
+		USA_civil_war_west = yes
+		}
+		swap_ideas={
+			 remove_idea = USA_kuangyezhidi
+		     add_idea = USA_wuxunzhidi
+		}
+		US1 = {
+			change_tag_from = ROOT
+			}
+    }
 }
 
 

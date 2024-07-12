@@ -19,6 +19,24 @@ add_ideas = {
 
 }
 
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 700
+	producer = JAP	
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 300
+	producer = JAP	
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment
+	amount = 100
+	producer = JAP	
+}
+
 create_country_leader = {
 	name = "Emperor_Taisho"
 	desc = "Emperor_Taisho_desc"
