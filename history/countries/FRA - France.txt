@@ -7,15 +7,9 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-	type = fighter_equipment
+	type = artillery_equipment
 	amount = 300
-	producer = FRA	
-}
-
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment
-	amount = 100
-	producer = FRA
+	producer = ENG	
 }
 
 # Starting tech

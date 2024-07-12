@@ -1,4 +1,4 @@
-﻿capital = 126
+capital = 126
 oob = "ENG_1919"
 complete_national_focus = ENG_xinnianzhiye
 complete_national_focus = ENG_xiangjiuyouzhixvxuanzhan
@@ -36,14 +36,8 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-	type = fighter_equipment
+	type = artillery_equipment
 	amount = 300
-	producer = ENG	
-}
-
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment
-	amount = 100
 	producer = ENG	
 }
 

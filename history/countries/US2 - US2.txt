@@ -28,11 +28,6 @@ add_equipment_to_stockpile = {
 	producer = US2	
 }
 
-add_equipment_to_stockpile = {
-	type = fighter_equipment
-	amount = 100
-	producer = US2	
-}
 
 # Starting tech
 set_technology = {
