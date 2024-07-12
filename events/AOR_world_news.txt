@@ -2650,3 +2650,16 @@ news_event = {#意大利进攻利比亚诸部落
 		name = AOR_news.178.a
 	}
 }
+
+news_event = {#利比亚诸部落被协约国击败
+	id = AOR_news.179
+	title = AOR_news.179.t
+	desc = AOR_news.179.d
+	picture = GFX_AOR_news.179_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.179.a
+	}
+}
