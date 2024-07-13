@@ -2741,3 +2741,42 @@ news_event = {#乌拉圭高乔政权与“圣地”组织爆发冲突
 		name = AOR_news.185.a
 	}
 }
+
+news_event = {#乌里阿勒格武装暴动加剧
+	id = AOR_news.186
+	title = AOR_news.186.t
+	desc = AOR_news.186.d
+	picture = GFX_AOR_news.186_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.186.a
+	}
+}
+
+news_event = {#里夫共和国成立！
+	id = AOR_news.187
+	title = AOR_news.187.t
+	desc = AOR_news.187.d
+	picture = GFX_AOR_news.187_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.187.a
+	}
+}
+
+news_event = {#法西联军向里夫进军
+	id = AOR_news.188
+	title = AOR_news.188.t
+	desc = AOR_news.188.d
+	picture = GFX_AOR_news.188_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.188.a
+	}
+}
