@@ -2,6 +2,8 @@
 
 oob = "AOR_LAND_LBA"
 
+set_cosmetic_tag = LBA_Absolutism_1
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
