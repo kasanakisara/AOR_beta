@@ -2663,3 +2663,81 @@ news_event = {#利比亚诸部落被协约国击败
 		name = AOR_news.179.a
 	}
 }
+
+news_event = {#乌拉圭爆发大规模高乔人动乱
+	id = AOR_news.180
+	title = AOR_news.180.t
+	desc = AOR_news.180.d
+	picture = GFX_AOR_news.180_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.180.a
+	}
+}
+
+news_event = {#乌拉圭北高乔人完全夺取乌拉圭
+	id = AOR_news.181
+	title = AOR_news.181.t
+	desc = AOR_news.181.d
+	picture = GFX_AOR_news.181_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.181.a
+	}
+}
+
+news_event = {#乌拉圭北高乔人被乌拉圭政府驱赶
+	id = AOR_news.182
+	title = AOR_news.182.t
+	desc = AOR_news.182.d
+	picture = GFX_AOR_news.182_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.182.a
+	}
+}
+
+news_event = {#“圣地”组织崛起！
+	id = AOR_news.183
+	title = AOR_news.183.t
+	desc = AOR_news.183.d
+	picture = GFX_AOR_news.183_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.183.a
+	}
+}
+
+news_event = {#“圣地”组织向巴西进军！
+	id = AOR_news.184
+	title = AOR_news.184.t
+	desc = AOR_news.184.d
+	picture = GFX_AOR_news.184_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.184.a
+	}
+}
+
+news_event = {#乌拉圭高乔政权与“圣地”组织爆发冲突
+	id = AOR_news.185
+	title = AOR_news.185.t
+	desc = AOR_news.185.d
+	picture = GFX_AOR_news.185_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.185.a
+	}
+}

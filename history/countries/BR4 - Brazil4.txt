@@ -1,29 +1,27 @@
-﻿capital = 500
-
-oob = "BR3_1919_land"
+﻿capital = 502
 
 create_country_leader = {
-	name = "Amazon_Workers_Union"
+	name = "Farmers_Federation"
 	desc = "POLITICS_BRZ_DESC"
 	picture = "BRZ.dds"
 	expire = "1965.1.1"
-	ideology = new_syn
+	ideology = revoway
 	traits = {
 	}
 }
 
 
 set_politics = {
-	ruling_party = Anarcho
+	ruling_party = AGR_socialism
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	Absolutism = 25
+	AGR_socialism = 35
 	REL_socialism = 25
-	AGR_socialism = 10
-	CON_democratic = 10
-	Anarcho = 30
+	Anarcho = 10
+	Special = 20
+	Absolutism = 10
 }

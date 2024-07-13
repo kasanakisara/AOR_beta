@@ -1817,6 +1817,7 @@ on_actions = {
 					set_cosmetic_tag = KMT_5
 				}
 			}
+
 			###巴西内战###
 			#BRA——BR1
 			else_if = {
@@ -1851,6 +1852,191 @@ on_actions = {
 					}
 				}
 			}
+			#BRA——BR2
+			else_if = {
+				limit = {
+					#BRA胜利
+					FROM = {
+						original_tag = BRA
+					}
+					ROOT = {
+						original_tag = BR2
+					}
+				}
+				BRA = {
+					annex_country = {
+						target = BR2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#BR2胜利
+					FROM = {
+						original_tag = BR2
+					}
+					ROOT = {
+						original_tag = BRA
+					}
+				}
+				BR2 = {
+					set_cosmetic_tag = BR2_1
+					annex_country = {
+						target = BRA
+					}
+				}
+			}
+            #BRA——BR3
+			else_if = {
+				limit = {
+					#BRA胜利
+					FROM = {
+						original_tag = BRA
+					}
+					ROOT = {
+						original_tag = BR3
+					}
+				}
+				BRA = {
+					annex_country = {
+						target = BR3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#BR3胜利
+					FROM = {
+						original_tag = BR3
+					}
+					ROOT = {
+						original_tag = BRA
+					}
+				}
+				BR3 = {
+					annex_country = {
+						target = BRA
+					}
+				}
+			}
+            #BR1——BR2
+			else_if = {
+				limit = {
+					#BR1胜利
+					FROM = {
+						original_tag = BR1
+					}
+					ROOT = {
+						original_tag = BR2
+					}
+				}
+				BR1 = {
+					annex_country = {
+						target = BR2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#BR2胜利
+					FROM = {
+						original_tag = BR2
+					}
+					ROOT = {
+						original_tag = BR1
+					}
+				}
+				BR2 = {
+					annex_country = {
+						target = BR1
+					}
+				}
+			}
+			#BR1——BR3
+			else_if = {
+				limit = {
+					#BR1胜利
+					FROM = {
+						original_tag = BR1
+					}
+					ROOT = {
+						original_tag = BR3
+					}
+				}
+				BR1 = {
+					annex_country = {
+						target = BR3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#BR3胜利
+					FROM = {
+						original_tag = BR3
+					}
+					ROOT = {
+						original_tag = BR1
+					}
+				}
+				BR3 = {
+					annex_country = {
+						target = BR1
+					}
+				}
+			}
+            #BR2——BR3
+		   else_if = {
+			   limit = {
+				   #BR2胜利
+				   FROM = {
+					   original_tag = BR2
+				   }
+				   ROOT = {
+					   original_tag = BR3
+				   }
+			   }
+			   BR2 = {
+				   annex_country = {
+					   target = BR3
+				   }
+			   }
+		   }
+		   else_if = {
+			   limit = {
+				   #BR3胜利
+				   FROM = {
+					   original_tag = BR3
+				   }
+				   ROOT = {
+					   original_tag = BR2
+				   }
+			   }
+			   BR3 = {
+				   annex_country = {
+					   target = BR2
+				   }
+			   }
+		   }
+		    #FRA——BR3
+		   else_if = {
+			   limit = {
+				   #FRA胜利
+				   FROM = {
+					   original_tag = FRA
+				   }
+				   ROOT = {
+					   original_tag = BR3
+				   }
+			   }
+			   BRA = {
+				   annex_country = {
+					   target = BR3
+				   }
+				   transfer_state = 495
+			   }
+		   }
+
 			###意大利-利比亚战争###
 			else_if = {
 				limit = {
