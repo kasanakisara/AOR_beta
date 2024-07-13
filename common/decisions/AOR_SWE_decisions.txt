@@ -425,12 +425,13 @@ SWE_Folkhemmet_decision_categories = {
             has_national_idea = SWE_Folkhemmet
         }
         ai_will_do = {
-            factor = 0.5
+            add = 0.5
             modifier = {
                 has_political_power < 50
                 add = 1
             }
         }
+        cost = 20
         complete_effect = {
             add_to_variable = { SWE_National_debt = 0.1 }
             add_to_variable = { SWE_debt_political_gain = 10 }
@@ -443,12 +444,13 @@ SWE_Folkhemmet_decision_categories = {
             has_national_idea = SWE_Folkhemmet
         }
         ai_will_do = {
-            factor = 0.5
+            add = 0.5
             modifier = {
                 has_political_power < 50
                 factor = 0
             }
         }
+        cost = 20
         complete_effect = {
             add_to_variable = { SWE_National_debt = -0.1 }
             add_to_variable = { SWE_debt_political_gain = -10 }
