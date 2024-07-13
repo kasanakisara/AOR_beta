@@ -1,14 +1,12 @@
 state={
-	id=672
-	name="STATE_672"
+	id=974
+	name="STATE_974"
 	manpower = 3254900
 	
 	state_category = town
 	
 	resources={
-		rubber=150 # was: 268
-		oil=12 # was: 24
-		aluminium=28 # was: 50
+
 	}
 
 
@@ -17,15 +15,10 @@ state={
 		owner = GML
 		add_core_of = GML
 		add_core_of = INS
-		
-		victory_points = {
-			12268 1 
-		}
 
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 1
 			4652 = {
 				naval_base = 3
 			}
@@ -38,7 +31,7 @@ state={
 		}
 	}
 	provinces={
-		1246 1274 1313 1342 1345 1373 1401 1428 1533 4211 4276 4320 4361 4364 4381 7308 7384 7396 7440 10150 10194 10294 10322 12126 12138 12165 12209 12268 12296 12415 
+		1277 1332 1460 4446 7327 7368 7463 7673 10209 10354 10382 10225 10522 12168 12181 12184 12212 12302 12343
 	}
 
 	local_supplies=0.0 
