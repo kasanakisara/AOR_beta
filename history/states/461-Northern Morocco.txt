@@ -6,7 +6,7 @@ state={
 		chromium=12.000 #added due to portugal setup
 	}
 
-	manpower = 3197719
+	manpower = 2197719
 	
 	state_category = rural
 	
@@ -14,6 +14,9 @@ state={
 		owner = MOR
 		victory_points = {
 			7069 15 
+		}
+		victory_points = {
+			10070 5 
 		}
 		buildings = {
 			infrastructure = 2
@@ -26,7 +29,7 @@ state={
 	}
 
 	provinces={
-		989 1079 1111 1194 4084 4097 4139 7069 7100 7116 7173 10013 10023 10070 11943 11987 12042 
+		1079 1194 4084 7069 10023 10070
 	}
 
 	local_supplies=0.0 

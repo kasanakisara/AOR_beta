@@ -62,12 +62,10 @@ country_event = {
 		name = BRA.2.a
 		news_event = { id = AOR_news.21 }
 		BR1 = {
-			transfer_state = 488
 	    	transfer_state = 280
 	    	transfer_state = 504
 	    	transfer_state = 496
 			transfer_state = 505
-			add_state_core = 488
 			add_state_core = 280
 			add_state_core = 504
 			add_state_core = 496
@@ -86,6 +84,8 @@ country_event = {
 			load_oob = "BR2_1919_land"
 		}
 		BR3 = {
+			transfer_state = 488
+			add_state_core = 488
 			transfer_state = 495
 			add_state_core = 495
 			transfer_state = 969

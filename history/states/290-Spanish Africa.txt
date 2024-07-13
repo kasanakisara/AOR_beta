@@ -2,7 +2,7 @@
 state={
 	id=290
 	name="STATE_290"
-	manpower = 744000
+	manpower = 644000
 	
 	
 	state_category = rural
@@ -14,12 +14,10 @@ state={
 	history={
 		owner = SPR
 		add_core_of = MOR
-		victory_points = {
-			9945 3
-		}
 		buildings = {
 			infrastructure = 2
 			air_base = 3
+
 			12100 = {
 				naval_base = 3
 			}
@@ -27,10 +25,15 @@ state={
 				naval_base = 3
 			}
 		}
+
+		victory_points = {
+			12100 1 
+		}
+
 	}
 
 	provinces={
-		4199 7215 9945 10113 12087 12100 
+		4199 7215 12087 12100 
 	}
 
 	local_supplies=0.0 
