@@ -2052,6 +2052,7 @@ on_actions = {
 					news_event = {id=AOR_news.179}
 					662={set_demilitarized_zone=yes}
 					663={set_demilitarized_zone=yes}
+					273={set_demilitarized_zone=yes}
 				}
 				EGY = {
 					transfer_state = 552
