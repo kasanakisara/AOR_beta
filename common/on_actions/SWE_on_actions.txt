@@ -433,6 +433,13 @@ on_actions = {
 
 			}
 
+			### 人民之家 ###
+
+			if = {
+				limit = { has_idea = SWE_Folkhemmet }
+				add_political_power = var:SWE_debt_political_gain
+			}
+
 		}
 
 	}

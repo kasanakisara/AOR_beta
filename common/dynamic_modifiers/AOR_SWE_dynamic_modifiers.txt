@@ -27,3 +27,10 @@ AOR_SWE_Union_dynamic_modifier = {
     production_speed_industrial_complex_factor = SWE_Union_industrial_speed
     production_speed_arms_factory_factor = SWE_Union_arms_speed
 }
+
+AOR_SWE_Folkhemmet_dynamic_modifier = {
+    enable = {
+        always = yes
+    }
+    consumer_goods_factor = SWE_debt_consumer_factory
+}
