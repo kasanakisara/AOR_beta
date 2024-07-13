@@ -279,7 +279,12 @@ set_autonomy = {
 	freedom_level = 0.2
 }
 
-puppet = MAL
+set_autonomy = {
+	target = MAL
+	autonomous_state = autonomy_colony
+	freedom_level = 0.2
+}
+
 puppet = RAJ
 puppet = PER
 puppet = AFG

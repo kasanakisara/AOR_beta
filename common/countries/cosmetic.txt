@@ -1084,3 +1084,7 @@ GUZ_Absolutism = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
+MAL_UK_CON_democratic = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
