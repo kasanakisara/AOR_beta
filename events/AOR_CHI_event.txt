@@ -47,6 +47,7 @@ country_event = {
 		CHI_civil_war_1 = yes
 		CHI_civil_war_2 = yes
 		hidden_effect = {
+		set_country_flag = wanxizhengfu
 		CHI = {
 		load_oob = "AOR_LAND_CHI_CENTRAL"
 		}

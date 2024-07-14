@@ -348,7 +348,7 @@ characters = {
 			cost = 100
 			slot = military_theory
 			idea_token = CHI_liu_bocheng
-			allowed = { original_tag = CHI }
+
 			traits = { military_theorist }
 			ai_will_do = { factor = 1.000 }
 			research_bonus = {
@@ -369,7 +369,7 @@ characters = {
 			cost = 100
 			slot = military_theory
 			idea_token = CHI_zhu_de
-			allowed = { original_tag = CHI }
+
 			traits = { guerilla_warfare_expert }
 			ai_will_do = { factor = 1.000 }
 			research_bonus = {
@@ -393,7 +393,7 @@ characters = {
 			cost = 100
 			slot = army_chief
 			idea_token = CHI_liu_bocheng_army_minister
-			allowed = { original_tag = CHI }
+
 			traits = { army_chief_artillery_2 }
 			ai_will_do = { factor = 1.000 }
 			research_bonus = {

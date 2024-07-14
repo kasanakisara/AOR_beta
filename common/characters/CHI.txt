@@ -26,7 +26,7 @@ characters = {
 			cost = 100
 			slot = military_high_command
 			idea_token = CHI_duanqirui
-			allowed = { original_tag = CHI }
+
 			traits = { army_chief_morale_2 }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -56,7 +56,7 @@ characters = {
 	      advisor = {
 	    	cost = 100
 	    	idea_token = CHI_xushuzheng
-	    	allowed = { original_tag = CHI }
+
 			
 	     	traits = { army_chief_organizational_2 }
 	    	ai_will_do = { factor = 1.000 }
@@ -85,7 +85,7 @@ characters = {
 	    }
 	    advisor = {
 	    	idea_token = CHI_leyunpeng
-	    	allowed = { original_tag = CHI }
+
 	    	traits = { army_chief_organizational_1 }
 	    	ai_will_do = { factor = 1.000 }
 	    }
@@ -204,7 +204,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_liangshiyi
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { financial_expert }
 			ai_will_do = { factor = 1.000 }
@@ -222,7 +221,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_guweijun
-			allowed = { original_tag = CHI }
 			traits = { Genius_New_Star_in_Diplomacy }
 			visible = { has_country_flag = wanxizhengfu  }
 			ai_will_do = { factor = 1.000 }
@@ -240,7 +238,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_luzhengxiang
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Diplomatic_experts }
 			ai_will_do = { factor = 1.000 }
@@ -258,7 +255,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_wangjitang
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { prince_of_terror }
 			ai_will_do = { factor = 1.000 }
@@ -276,7 +272,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_caorulin
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { silent_workhorse }
 			ai_will_do = { factor = 1.000 }
@@ -294,7 +289,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_zhushen
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Judicial_experts }
 			ai_will_do = { factor = 1.000 }
@@ -313,8 +307,7 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_fanyuanlian
-			allowed = { original_tag = CHI }
-			visible = { has_country_flag = fanyuanxi }
+			visible = { has_country_flag = wanxizhengfu }
 			traits = { educational_experts }
 			ai_will_do = { factor = 1.000 }
 		}
@@ -331,7 +324,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_yuanxitao
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Compulsory_Education_Promoters }
 			ai_will_do = { factor = 1.000 }
@@ -349,7 +341,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_tianwenlie
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Agricultural_and_commercial_experts }
 			ai_will_do = { factor = 1.000 }
@@ -367,7 +358,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_zhangguogan
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { upright_financial_official }
 			ai_will_do = { factor = 1.000 }
@@ -385,7 +375,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_zhuqiyin
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Architects_and_industrialists }
 			ai_will_do = { factor = 1.000 }
@@ -403,7 +392,6 @@ corps_commander = {
 			cost = 150
 			slot = political_advisor
 			idea_token = CHI_Zeng_Yujun
-			allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 			traits = { Quartermaster_General }
 			ai_will_do = { factor = 1.000 }
@@ -421,7 +409,6 @@ corps_commander = {
     		cost = 150
     		slot = political_advisor
 	    	idea_token = CHI_zhangjian
-	    	allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
 	    	traits = { Practitioner_of_saving_the_country_through_industry }
 	    	ai_will_do = { factor = 1.000 }
@@ -439,7 +426,6 @@ corps_commander = {
 	        cost = 150
         	slot = political_advisor
         	idea_token = CHI_lianghongzhi
-        	allowed = { original_tag = CHI }
 			visible = { has_country_flag = wanxizhengfu  }
         	traits = { editor }
         	ai_will_do = { factor = 1.000 }
