@@ -10,6 +10,14 @@ state={
 		owner = GML
 		add_core_of = GML
 		add_core_of = INS
+
+		victory_points = {
+			1419 1 
+		}
+		victory_points = {
+			1574 1 
+		}
+
 		buildings = {
 			infrastructure = 2
 			1574 = {
