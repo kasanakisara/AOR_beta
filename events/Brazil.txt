@@ -135,6 +135,10 @@ country_event = {
 				autonomy_state = autonomy_free
 			}
 		}
+
+		FRA = {
+			set_country_flag = FRA_neizhanbairehua
+		}
 	}
 }
 

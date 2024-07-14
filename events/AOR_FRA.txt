@@ -1,0 +1,16 @@
+
+add_namespace = FRA_BRA
+
+country_event = {
+	id = FRA_BRA.1
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_BRA.1.a
+		create_unit = {
+			division = "name = \"bxyuanzhengjun\" division_template = \"bxyuanzhengjun\" start_manpower_factor = 1"
+			owner = BRA
+		}
+	}
+}
