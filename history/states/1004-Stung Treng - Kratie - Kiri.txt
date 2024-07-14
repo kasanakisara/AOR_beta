@@ -1,29 +1,21 @@
 state={
-	id=741
-	name="STATE_741"
+	id=1004
+	name="STATE_1004"
 	history = {
 		add_core_of = CAM
 		owner = CAM
 		victory_points = {
-			7376 10
-		}
-		victory_points = {
-			7432 3
+			7645 1
 		}
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 3
-			arms_factory = 2
-			7432 = {
-				naval_base = 1
-			}
 
 		}
 	}
 	provinces={
-		7376 7432 10317 12260 12288
+		1620 4596 7645 10204 12150 12167 12447
 	}
-	manpower=1845000
+	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category=town
 
