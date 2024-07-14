@@ -21,14 +21,20 @@ state={
 		victory_points = {
 			7408 20 
 		}
+		victory_points = {
+			10221 3 
+		}
+		victory_points = {
+			7338 1 
+		}
 		add_core_of = SIA
 
 	}
 
 	provinces={
-		1427 4319 4348 4566 7338 7367 7408 7544 7572 7587 10193 10221 10250 10398 10411 12173  
+		1427 7338 7367 7408 10221 10250 12173  
 	}
-	manpower=8422400
+	manpower=4922400
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000
