@@ -337,6 +337,11 @@ focus_tree={
 				remove_idea =  USA_dazhanzhimo5
 				add_idea =  USA_dazhanzhimo6
 			}
+			FRA = {
+				country_event = {
+					id = FRA_USA.1
+				}
+			}
 		}
 	}
 	focus={
@@ -678,6 +683,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			FRA = {
+				country_event = {
+					id = FRA_USA.2
+				}
+			}
 		}
 	}
 	focus={
@@ -694,6 +704,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			FRA = {
+				country_event = {
+					id = FRA_USA.3
+				}
+			}
 		}
 	}
 	focus={
