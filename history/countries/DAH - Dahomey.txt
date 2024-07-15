@@ -1,4 +1,4 @@
-﻿capital = 556
+﻿capital = 272
 
 # Starting tech
 set_technology = {
@@ -27,6 +27,7 @@ recruit_character = DAH_acgs
 recruit_character = DAH_nccr
 recruit_character = DAH_fascist_guy
 recruit_character = DAH_ar
+recruit_character  = FRA_COLONY
 
 
 1939.1.1 = {

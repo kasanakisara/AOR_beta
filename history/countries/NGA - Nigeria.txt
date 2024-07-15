@@ -27,6 +27,7 @@ recruit_character = NGA_stc
 recruit_character = NGA_aa2
 recruit_character = NGA_ncm
 recruit_character = NGA_communist_guy
+recruit_character = GBR_COLONY
 
 1939.1.1 = {
 	
@@ -86,16 +87,6 @@ set_popularities = {
 	FRE_democratic = 33
 }
 
-
-create_country_leader = {
-	name = "Alexander Knox Helm"
-	desc = "POLITICS_NGA_DESC"
-	picture = "NGA.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
 
 
 set_cosmetic_tag = NGA_UK

@@ -275,28 +275,28 @@ units = {
 	####第1集团军
 	division = {
 		name = "沃利斯克步兵师"
-		location = 7341
+		location = 10488
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "土耳其斯坦第1师"
-		location = 10253
+		location = 12454
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "辛比尔斯克钢铁第1合成步兵师"
-		location = 7410
+		location = 7541
 		division_template = "苏维埃工农红军(精锐）"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "第20步兵师"
-		location = 7243
+		location = 1614
 		division_template = "苏维埃工农红军(精锐）"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
@@ -1331,7 +1331,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4294
+		location = 12233
 		division_template = "内务人民委员会与地方警卫部队"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
@@ -1341,7 +1341,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 12294
+		location = 1459
 		division_template = "内务人民委员会与地方警卫部队"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
@@ -1351,7 +1351,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 4227
+		location = 12456
 		division_template = "内务人民委员会与地方警卫部队"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5

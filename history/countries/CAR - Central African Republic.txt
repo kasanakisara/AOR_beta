@@ -27,7 +27,7 @@ recruit_character = CAR_ai2
 recruit_character = CAR_democratic_guy
 recruit_character = CAR_ar
 recruit_character = CAR_acgs
-
+recruit_character  = FRA_COLONY
 
 1939.1.1 = {
 	
@@ -76,7 +76,7 @@ recruit_character = CAR_acgs
 }
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = FRE_democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no

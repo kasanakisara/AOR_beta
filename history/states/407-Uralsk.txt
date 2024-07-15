@@ -3,9 +3,10 @@ state={
 	name="STATE_407"
 
 	history={
-		owner = KAZ
-		controller = ARU
+		owner = URS
+		controller = URS
 		add_core_of = KAZ
+		add_core_of = URS
 		buildings = {
 			infrastructure = 2
 
