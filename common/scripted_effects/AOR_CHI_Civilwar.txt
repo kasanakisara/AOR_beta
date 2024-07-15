@@ -196,13 +196,17 @@ CHI_civil_war_2 = {
 }
 CHI_civil_war_3 = {
 	ANH = { #安徽
+		recruit_character = ANH_WANG_PU
+		recruit_character = ANH_GAO_SHIDU
+		recruit_character = ANH_MA_LIANJIA
+		recruit_character = ANH_NI_SICHONG
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 606
-		add_state_core = 749
-		
+		add_state_core = 749		
 		transfer_state = 606
 		transfer_state = 749
 		add_manpower = 10000
+		load_oob = AOR_LAND_CHI_ANH
 	}
 	ZHE = { #浙江
 		set_country_flag  = china_war_begin_warlord
@@ -210,7 +214,6 @@ CHI_civil_war_3 = {
 		add_state_core = 894
 		add_state_core = 895
 		add_state_core = 892
-
 		transfer_state = 596
 		transfer_state = 894
 		transfer_state = 895
@@ -222,18 +225,21 @@ CHI_civil_war_3 = {
 		load_oob = AOR_LAND_CHI_ZHE
 	}
 	FUJ = { #福建
-
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 897
 		add_state_core = 595
 		add_state_core = 898
 		add_state_core = 899
-
 		transfer_state = 897
 		transfer_state = 595
 		transfer_state = 898
 		transfer_state = 899
 		add_manpower = 10000
+		recruit_character = FUJ_LI_HOUJI
+		recruit_character = FUJ_WANG_YONGQUAN
+		recruit_character = FUJ_ZANG_ZHIPING
+		load_oob = AOR_LAND_CHI_FUJ
+
 	}
 	JIZ = { #江西
 		set_country_flag  = china_war_begin_warlord
@@ -241,7 +247,6 @@ CHI_civil_war_3 = {
 		add_state_core = 756
 		add_state_core = 600
 		add_state_core = 876
-
 		transfer_state = 612
 		transfer_state = 756
 		transfer_state = 600
