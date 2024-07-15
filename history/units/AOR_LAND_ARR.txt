@@ -132,7 +132,7 @@ units = {
 	}
 	division= {	
 		name = "克里木精锐师"
-		location = 6724 
+		location = 11683
 		division_template = "白卫精英步兵师"
 		start_experience_factor = 0.8
 		start_equipment_factor = 0.7
@@ -140,7 +140,7 @@ units = {
 	}
 	division= {	
 		name = "’黑海‘精锐师"
-		location = 11649
+		location = 3520
 		division_template = "白卫精英步兵师"
 		start_experience_factor = 0.8
 		start_equipment_factor = 0.9
@@ -242,7 +242,7 @@ units = {
 	}
 	division= {
 		name = "‘哥萨克’骑兵师"
-		location = 3417
+		location = 6527
 		division_template = "白卫混成骑兵师"
 		start_experience_factor = 0.8
 		start_equipment_factor = 0.4

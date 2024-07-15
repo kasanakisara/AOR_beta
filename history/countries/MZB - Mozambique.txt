@@ -30,6 +30,7 @@ recruit_character = MZB_democratic_guy
 recruit_character = MZB_mt
 recruit_character = MZB_ncs
 recruit_character = MZB_awt
+recruit_character = POR_COLONY
 
 1939.1.1 = {
 	#generic focuses
@@ -79,15 +80,7 @@ set_popularities = {
 }
 
 
-create_country_leader = {
-	name = "Alexander Knox Helm"
-	desc = "POLITICS_MZB_DESC"
-	picture = "MZB.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism
-	traits = {
-	}
-}
+
 
 
 set_cosmetic_tag = MZB_POR

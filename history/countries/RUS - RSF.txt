@@ -158,7 +158,7 @@ MEL = {
 }
 
 set_autonomy = { target = TMS autonomy_state = AOR_SOV_Closely_executed_alliance }
-MEL = {
+TMS = {
 	set_popularities = { Marxism = 100 }
 	create_country_leader = {
 		name = "Ryskulov Turar Ryskulovich"
@@ -259,6 +259,13 @@ KAZ = {
 	}
 }
 VGE = {
+	add_to_war = {
+		targeted_alliance = ARU
+		enemy = RUS
+		 
+	}
+}
+URS = {
 	add_to_war = {
 		targeted_alliance = ARU
 		enemy = RUS

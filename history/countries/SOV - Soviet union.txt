@@ -209,18 +209,4 @@ create_country_leader = {
 }
 
 
-puppet = UKR
-puppet = GNR
-
-declare_war_on = {
-	target = ARU
-	type = civil_war
-}
-
-create_faction =  SOVIET_group
-add_to_faction = GNR
-add_to_faction = UKR
-add_to_faction = SOV
-add_to_faction = CHT
-
 

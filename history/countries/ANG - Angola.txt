@@ -30,6 +30,7 @@ recruit_character = ANG_nccr
 recruit_character = ANG_aco2
 recruit_character = ANG_democratic_guy
 recruit_character = ANG_ncs
+recruit_character = POR_COLONY
 
 
 1939.1.1 = {
@@ -79,16 +80,6 @@ set_popularities = {
 	FRE_democratic = 30
 }
 
-
-create_country_leader = {
-	name = "Alexander Knox Helm"
-	desc = "POLITICS_ANG_DESC"
-	picture = "ANG.dds"
-	expire = "1965.1.1"
-	ideology = authoritarianism
-	traits = {
-	}
-}
 
 
 set_cosmetic_tag = ANG_POR

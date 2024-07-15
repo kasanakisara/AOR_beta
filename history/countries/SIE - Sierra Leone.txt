@@ -27,6 +27,7 @@ recruit_character = SIE_coi
 recruit_character = SIE_pot
 recruit_character = SIE_aa2
 recruit_character = SIE_awt
+recruit_character = GBR_COLONY
 
 1939.1.1 = {
 	
@@ -87,15 +88,6 @@ set_popularities = {
 }
 
 
-create_country_leader = {
-	name = "Alexander Knox Helm"
-	desc = "POLITICS_SIE_DESC"
-	picture = "SIE.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
 
 
 set_cosmetic_tag = SIE_UK
