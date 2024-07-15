@@ -225,7 +225,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			add_stability = 0.1
-			news_event = { id = AOR_news.70 }
+			hidden_effect = { news_event = { id = AOR_news.70 } }
+			custom_effect_tooltip = SWE_Oslo_news_tt
 		}
 
 	}
