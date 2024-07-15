@@ -30,7 +30,7 @@
  SWE_New_Stage:0 "Debug特供——使时间变快一个刻度"
 
  SWE_Folkhemmet_decision_categories:0 "“人民之家”计划"
- SWE_Folkhemmet_decision_categories_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。\n当前移民政策状态：[SWE_Immigrant_policy]\n当前工人政策状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n当前发行国债值：§Y[?SWE_National_debt|%]国民生产总值\n当前国债值可以提供[?SWE_debt_political_gain]的额外政治点数增长，附加[?SWE_debt_consumer_factory|%]的生活消费品工厂系数"
+ SWE_Folkhemmet_decision_categories_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。\n当前移民政策状态：[SWE_Immigrant_policy]\n当前工人政策状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n当前发行国债值：§Y[?SWE_National_debt|%]国民生产总值\n当前国债值可以提供每日[?SWE_debt_political_gain]点的额外政治点数增长，附加[?SWE_debt_consumer_factory|%]的生活消费品工厂系数"
 
  SWE_Increace_national_debt:0 "增加国债额度"
  SWE_Decreace_national_debt:0 "减少国债额度"
