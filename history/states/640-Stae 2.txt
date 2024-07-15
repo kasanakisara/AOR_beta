@@ -2,30 +2,30 @@
 state={
 	id=640
 	name="STATE_640" # Mandalay
-	manpower = 3944600
+	manpower = 1244600
 	
 	state_category = town
 	resources={
-		tungsten = 120 
+		tungsten = 60 
 	}
 	history={
 		add_core_of = BRM
 		owner = RAJ
 		buildings = {
 			infrastructure = 2
-			air_base = 1
+		}
+
+		victory_points = {
+			10386 5 
 		}
 		victory_points = {
-			1492 5 
-		}
-		victory_points = {
-			4425 1 
+			4588 1 
 		}
 
 	}
 	
 	provinces={
-		1082 1170 1492 1566 1607 2061 4175 4210 4425 4585 4654 7400 7469 7562 7603 7647 7909 7974 10386 10486 10920 12335 12363 12404 12464 12492 
+		1581 4087 4588 7534 7163 10386 10486 12335 12464 12492 
 	}
 
 	local_supplies=0.0 
