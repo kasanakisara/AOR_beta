@@ -2780,3 +2780,42 @@ news_event = {#法西联军向里夫进军
 		name = AOR_news.188.a
 	}
 }
+
+news_event = {#美国通过妇女法案
+	id = AOR_news.189
+	title = AOR_news.189.t
+	desc = AOR_news.189.d
+	picture = GFX_AOR_news.189_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.189.a
+	}
+}
+
+news_event = {#威尔逊宣布《美丽国家计划》
+	id = AOR_news.190
+	title = AOR_news.190.t
+	desc = AOR_news.190.d
+	picture = GFX_AOR_news.190_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.190.a
+	}
+}
+
+news_event = {#劳动骑士团参与美国内战
+	id = AOR_news.191
+	title = AOR_news.191.t
+	desc = AOR_news.191.d
+	picture = GFX_AOR_news.191_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.191.a
+	}
+}

@@ -113,6 +113,14 @@ country_event = {
 			load_oob = "CSA_Civilwar_2"
 			load_oob = "CSA_Civilwar_2"
 		}
+		KOW = {
+			load_oob = "AOR_LAND_KOW"
+			load_oob = "AOR_LAND_KOW"
+			load_oob = "AOR_LAND_KOW"
+			load_oob = "AOR_LAND_KOW"
+			load_oob = "AOR_LAND_KOW"
+			load_oob = "AOR_LAND_KOW"
+		}
 	}
 }
       
@@ -122,10 +130,6 @@ country_event = {
 		USU = {
 			declare_war_on = {
 				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = CSA
 				type = civil_war
 			}
 			change_tag_from = ROOT
@@ -151,6 +155,24 @@ country_event = {
 			}
 		    declare_war_on = {
 				target = USU
+				type = civil_war
+			}
+		}
+		KOW = {	
+			declare_war_on = {
+				target = USA
+				type = civil_war
+		    }
+		    declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+		    declare_war_on = {
+				target = USU
+				type = civil_war
+			}
+			declare_war_on = {
+				target = US2
 				type = civil_war
 			}
 		}
@@ -163,10 +185,7 @@ country_event = {
 				target = USA
 				type = civil_war
 			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
+			change_tag_from = ROOT
 		}
 		CSA = {
 			declare_war_on = {
@@ -177,7 +196,6 @@ country_event = {
 				target = USU
 				type = civil_war
 			}
-			change_tag_from = ROOT
 		}
 		US2 = {	
 			declare_war_on = {
@@ -190,6 +208,24 @@ country_event = {
 			}
 		    declare_war_on = {
 				target = USU
+				type = civil_war
+			}
+		}
+		KOW = {	
+			declare_war_on = {
+				target = USA
+				type = civil_war
+		    }
+		    declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+		    declare_war_on = {
+				target = USU
+				type = civil_war
+			}
+			declare_war_on = {
+				target = US2
 				type = civil_war
 			}
 		}
@@ -202,10 +238,7 @@ country_event = {
 				target = USA
 				type = civil_war
 			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
+			change_tag_from = ROOT
 		}
 		CSA = {
 			declare_war_on = {
@@ -230,7 +263,24 @@ country_event = {
 				target = USU
 				type = civil_war
 			}
-			change_tag_from = ROOT
+		}
+		KOW = {	
+			declare_war_on = {
+				target = USA
+				type = civil_war
+		    }
+		    declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+		    declare_war_on = {
+				target = USU
+				type = civil_war
+			}
+			declare_war_on = {
+				target = US2
+				type = civil_war
+			}
 		}
 	}
 	option = {
@@ -241,10 +291,7 @@ country_event = {
 				target = USA
 				type = civil_war
 			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
+			change_tag_from = ROOT
 		}
 		CSA = {
 			declare_war_on = {
@@ -267,6 +314,24 @@ country_event = {
 			}
 		    declare_war_on = {
 				target = USU
+				type = civil_war
+			}
+		}
+		KOW = {	
+			declare_war_on = {
+				target = USA
+				type = civil_war
+		    }
+		    declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+		    declare_war_on = {
+				target = USU
+				type = civil_war
+			}
+			declare_war_on = {
+				target = US2
 				type = civil_war
 			}
 		}
@@ -1676,6 +1741,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10024.a
+		news_event = AOR_news.189
 	}	
 }
 country_event = {
