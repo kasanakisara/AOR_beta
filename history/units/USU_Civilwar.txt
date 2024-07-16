@@ -44,35 +44,35 @@ units={
         name="第一军"
         location=12735
         division_template="“黑人农民军"
-        start_experience_factor=0
-        start_equipment_factor=0.5
+        start_experience_factor=0.2
+        start_equipment_factor=0.7
     }
     division={
         name="第二军"
         location=12735
         division_template="“黑人农民军"
-        start_experience_factor=0
+        start_experience_factor=0.2
         start_equipment_factor=0.5
     }
     division={
         name="第三军"
         location=6696
         division_template="“黑人农民军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第四军"
         location=6696
         division_template="“黑人农民军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第五军"
         location=12735
         division_template="“黑人农民军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
 
@@ -80,70 +80,70 @@ units={
         name="第一军"
         location=6696
         division_template="“白人工人军"
-        start_experience_factor=0
-        start_equipment_factor=0.5
+        start_experience_factor=0.2
+        start_equipment_factor=0.7
     }
     division={
         name="第二军"
         location=6696
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第三军"
         location=6696
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.2
         start_equipment_factor=0.5
     }
     division={
         name="第四军"
         location=12735
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.2
         start_equipment_factor=0.5
     }
     division={
         name="第五军"
         location=12735
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.2
         start_equipment_factor=0.5
     }
     division={
         name="第六军"
         location=12735
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第七军"
         location=7588
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第八军"
         location=7588
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第九军"
         location=7588
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第十军"
         location=6696
         division_template="“白人工人军"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
 
@@ -151,35 +151,35 @@ units={
         name="第一骑兵队"
         location=6696
         division_template="革命骑兵队"
-        start_experience_factor=0
-        start_equipment_factor=0.5
+        start_experience_factor=0.2
+        start_equipment_factor=0.7
     }
 	division={
         name="第二骑兵队"
         location=6696
         division_template="革命骑兵队"
-        start_experience_factor=0
+        start_experience_factor=0.2
         start_equipment_factor=0.5
     }
 	division={
         name="第三骑兵队"
         location=4723
         division_template="革命骑兵队"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第四骑兵队"
         location=12735
         division_template="革命骑兵队"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
     division={
         name="第五骑兵队"
         location=7588
         division_template="革命骑兵队"
-        start_experience_factor=0
+        start_experience_factor=0.1
         start_equipment_factor=0.5
     }
 

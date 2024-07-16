@@ -1524,5 +1524,16 @@ USA_civil_war_east = {
 			add_state_core = 375
 			add_state_core = 932
 		}
+	KOW = {
+			transfer_state = 393
+			transfer_state = 358
+			transfer_state = 360
+			transfer_state = 357
+
+			add_state_core = 393
+			add_state_core = 358
+			add_state_core = 360
+			add_state_core = 357
+		}
 	}
 
