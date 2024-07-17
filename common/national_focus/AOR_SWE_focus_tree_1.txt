@@ -664,6 +664,17 @@ focus_tree = {
 		}
 		x = 9
 		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = SWE_Rebuild_New_World
+				}
+				custom_effect_tooltip = SWE_Parliament_choice_yet_tt
+			}
+			else = {
+				custom_effect_tooltip = SWE_Parliament_not_yet_choice_tt
+			}
+		}
 
 	}
 	focus = {
