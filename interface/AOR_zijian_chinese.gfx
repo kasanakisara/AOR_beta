@@ -1,0 +1,30 @@
+bitmapfonts = {
+
+	bitmapfont_override = {
+		name = "AOR_desc_songti_hei"
+		fontfiles = { 
+			"gfx/fonts/songti_hei_0"
+
+		}			
+	languages = { "l_simp_chinese" } 
+	}
+
+	bitmapfont_override = {
+		name = "AOR_desc_songti_bai"
+		fontfiles = { 
+			"gfx/fonts/songti_bai_0"
+
+		}			
+	languages = { "l_simp_chinese" } 
+	}
+
+	bitmapfont_override = {
+		name = "AOR_desc_songti_hei_and_bai"
+		fontfiles = { 
+			"gfx/fonts/songti_hei_and_bai_0"
+
+		}			
+	languages = { "l_simp_chinese" } 
+	}
+
+}
