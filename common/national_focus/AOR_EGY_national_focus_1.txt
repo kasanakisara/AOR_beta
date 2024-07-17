@@ -7,6 +7,10 @@ focus_tree = {
 			tag = EGY
 		}
 	}
+	continuous_focus_position = {
+		x = 100
+		y = 100
+	}
 	default = no
 	focus = {
 		id = EGY_looking_forword #向前看
