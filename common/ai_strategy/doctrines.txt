@@ -6,12 +6,11 @@ stop_making_horsies = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = -100 # -100% cav
-	}		
+		value = -100		# -100% cav
+	}
 }
 
 ############
@@ -28,10 +27,7 @@ stop_making_horsies = {
 #cavalry
 #marines
 #mountaineer
-
 # No cav if we have motor inf
-
-
 #Mobile Warfare branch
 DOCTRINE_mobile_warfare_ratios = {
 	enable = {
@@ -40,13 +36,11 @@ DOCTRINE_mobile_warfare_ratios = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = armor
 		value = 10
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
@@ -61,13 +55,11 @@ DOCTRINE_superior_firepower_ratios = {
 	abort = {
 		has_tech = concentrated_fire_plans
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 10
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = artillery
@@ -83,26 +75,22 @@ DOCTRINE_concentrated_fire_plans_ratios = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = -5
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = armor
 		value = 10
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = cas
 		value = 5
 	}
 }
-
 
 DOCTRINE_grand_battle_plan_ratios = {
 	enable = {
@@ -111,20 +99,17 @@ DOCTRINE_grand_battle_plan_ratios = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 10
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = anti_tank
 		value = 5
-	}	
+	}
 }
-
 
 DOCTRINE_mass_assault_ratios = {
 	enable = {
@@ -133,13 +118,11 @@ DOCTRINE_mass_assault_ratios = {
 	abort = {
 		has_tech = large_front_operations
 	}
-	
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 25
-	}	
-
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = anti_tank
@@ -155,20 +138,17 @@ DOCTRINE_large_front_operations_ratios = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 5
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = armor
 		value = 2
 	}
 }
-
 
 ##############
 ### NAVAL ####
@@ -178,8 +158,6 @@ DOCTRINE_large_front_operations_ratios = {
 #screen_ship
 #convoy
 #carrier
-
-
 #Fleet in being tree
 DOCTRINE_fleet_in_being_ratios = {
 	enable = {
@@ -188,7 +166,6 @@ DOCTRINE_fleet_in_being_ratios = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
@@ -204,14 +181,12 @@ DOCTRINE_trade_interdiction_ratios = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
 		value = 200
 	}
 }
-
 
 #Base Strike tree
 DOCTRINE_base_strike_ratios = {
@@ -221,13 +196,11 @@ DOCTRINE_base_strike_ratios = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
 		value = 40
 	}
-
 	ai_strategy = {
 		type = unit_ratio
 		id = naval_bomber
@@ -245,7 +218,6 @@ DOCTRINE_base_strike_ratios = {
 #tactical_bomber
 #strategic_bomber
 #naval_bomber
-
 #Strategic Destruction tree
 DOCTRINE_air_superiority_ratios = {
 	enable = {
@@ -254,7 +226,6 @@ DOCTRINE_air_superiority_ratios = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
@@ -266,13 +237,12 @@ DOCTRINE_air_night_day_bombing_ratios = {
 	enable = {
 		OR = {
 			has_tech = night_bombing
-			has_tech = day_bombing		
+			has_tech = day_bombing
 		}
 	}
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
@@ -288,13 +258,11 @@ DOCTRINE_formation_flying = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = unit_ratio
 		id = interceptor
 		value = 20
 	}
-
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
@@ -310,7 +278,6 @@ DOCTRINE_force_rotation = {
 	abort = {
 		always = no
 	}
-	
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
