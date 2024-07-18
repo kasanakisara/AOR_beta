@@ -2,6 +2,7 @@ add_namespace = SWE
 add_namespace = Tosca
 add_namespace = NOR_Axis
 add_namespace = Haakon
+add_namespace = SWE_Folkhemmet
 
 country_event = {
     id = SWE.1 #哈康之死
@@ -702,4 +703,8 @@ country_event = {
         add_political_power = 100
         complete_national_focus = SWE_Rebuild_New_World
     }
+}
+
+country_event = {
+    id = SWE_Folkhemmet.1 #教育状态恶化——迫在眉睫的贪污问题
 }
