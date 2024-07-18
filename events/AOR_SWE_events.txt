@@ -8,6 +8,7 @@ country_event = {
     id = SWE.1 #哈康之死
     title = SWE.1.t
     desc = SWE.1.d
+    #picture = GFX_SWE.1_pic
     is_triggered_only = yes
     option = {
         name = SWE.1.a
@@ -462,7 +463,7 @@ country_event = {
         hidden_effect = {
             country_event = { id = Tosca.5 days = 7 }
         }
-
+        add_manpower = -1
     }
 }
 

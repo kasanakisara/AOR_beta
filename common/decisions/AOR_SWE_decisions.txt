@@ -424,41 +424,65 @@ SWE_Union_decision_categories = {
 }
 
 SWE_Folkhemmet_decision_categories = {
-    SWE_Increace_national_debt = {
+    SWE_Increace_national_debt = { #增加发行量
         available = {
-            has_national_idea = SWE_Folkhemmet
+            OR = {
+                has_idea = SWE_Folkhemmet
+                has_idea = SWE_Folkhemmet_debuff
+            }
         }
         ai_will_do = {
-            add = 0.5
+            add = 1
             modifier = {
                 has_political_power < 50
                 add = 1
             }
         }
+        days_remove = 30
+        days_re_enable = 14
         cost = 20
+        modifier = {
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = -0.05
+            production_factory_start_efficiency_factor = -0.1
+        }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = 0.1 }
-            add_to_variable = { SWE_debt_political_gain = 10 }
-            add_to_variable = { SWE_debt_consumer_factory = 0.15 }
+            add_to_variable = { SWE_National_debt = 0.2 }
+        }
+        remove_effect = {
+            add_political_power = 200
         }
     }
 
-    SWE_Decreace_national_debt = {
+    SWE_Decreace_national_debt = { #减少发行量
         available = {
-            has_national_idea = SWE_Folkhemmet
+            OR = {
+				has_idea = SWE_Folkhemmet
+				has_idea = SWE_Folkhemmet_debuff
+			}
         }
         ai_will_do = {
-            add = 0.5
+            add = 1
             modifier = {
                 has_political_power < 50
                 factor = 0
             }
         }
         cost = 20
+        days_remove = 60
+        days_re_enable = 14
+        cost = 20
+        modifier = {
+            stability_factor = -0.1
+            political_power_gain = -0.75
+        }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = -0.1 }
-            add_to_variable = { SWE_debt_political_gain = -10 }
-            add_to_variable = { SWE_debt_consumer_factory = -0.15 }
+            add_to_variable = { SWE_National_debt = -0.2 }
+        }
+        remove_effect = {
+            add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
+            add_to_variable = { SWE_Folkhemmet_industrial_capacity = 0.05 }
+            add_to_variable = { SWE_Folkhemmet_factory_efficency = 0.05 }
         }
     }
 
@@ -468,15 +492,18 @@ SWE_Folkhemmet_decision_categories = {
                 check_variable = { SWE_Education > 1 }
                 tooltip = SWE_Education_crisis_happening
             }
-            has_idea = SWE_Folkhemmet
+            OR = {
+                has_idea = SWE_Folkhemmet
+                has_idea = SWE_Folkhemmet_debuff
+            }
 		}
 		available = {
-            hidden_trigger = {
-                custom_trigger_tooltip = {
-                    check_variable = { SWE_Education > 1 }
-                    tooltip = SWE_Education_crisis_happening
+            OR = {
+                has_completed_focus = SWE_People_University
+                NOT = {
+                    has_idea = SWE_Folkhemmet
+                    has_idea = SWE_Folkhemmet_debuff
                 }
-                has_idea = SWE_Folkhemmet
             }
 		}
 
@@ -485,7 +512,10 @@ SWE_Folkhemmet_decision_categories = {
                 check_variable = { SWE_Education > 1 }
                 tooltip = SWE_Education_crisis_happening
             }
-            has_idea = SWE_Folkhemmet
+            OR = {
+                has_idea = SWE_Folkhemmet
+                has_idea = SWE_Folkhemmet_debuff
+            }
         }
 
         cancel_trigger = {
@@ -495,7 +525,10 @@ SWE_Folkhemmet_decision_categories = {
                         check_variable = { SWE_Education > 1 }
                         tooltip = SWE_Education_crisis_happening
                     }
-                    has_idea = SWE_Folkhemmet
+                    OR = {
+                        has_idea = SWE_Folkhemmet
+                        has_idea = SWE_Folkhemmet_debuff
+                    }
                 }
             }
 		}
@@ -508,7 +541,7 @@ SWE_Folkhemmet_decision_categories = {
         timeout_effect = {                    
 			if = {
                 limit = {
-                    check_variable = { SWE_Education < 4 }
+                    check_variable = { SWE_Education < 3 }
                 }
                 add_to_variable = { SWE_Education = 1 }
                 add_political_power = -50
@@ -530,5 +563,9 @@ SWE_Folkhemmet_decision_categories = {
                 }
             }     
 		}
+
+        complete_effect = {
+            add_political_power = 200
+        }
     }
 }

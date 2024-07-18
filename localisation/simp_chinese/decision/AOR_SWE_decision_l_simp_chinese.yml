@@ -15,7 +15,7 @@
  SWE_Norway_Action:0 "挪威独立运动分子行动"
 
  SWE_Trade_decision_categories:0 "门户开放政策"
- SWE_Trade_decision_categories_desc:0 "世界大战以来，世界贸易中我国处于并不重要的地位，只能成为全世界的矿场。我们必须扭转这一局面，通过出口工业品来提升我国在国际贸易中的地位。同时，我国的外汇也需要补贴本土工业的发展。\n§Y当前政府对贸易支出：[?SWE_Government_Spending]\%总财政收入\n（政府对贸易支出会影响国际市场开放度和生活消费品工厂比例）§!\n\n§Q当前国际市场开放度：[?SWE_Market_Inclusion]\n（国际市场开放度会影响建造速度，稳定度等）§!\n\n§R当前本土工业发展度：[?SWE_Industry_Development]\n（本土工业发展度将决定每个月获得的民用工厂）§!"
+ SWE_Trade_decision_categories_desc:0 "世界大战以来，世界贸易中我国处于并不重要的地位，只能成为全世界的矿场。我们必须扭转这一局面，通过出口工业品来提升我国在国际贸易中的地位。同时，我国的外汇也需要补贴本土工业的发展。\n§Y当前政府对贸易支出：[?SWE_Government_Spending]%总财政收入\n（政府对贸易支出会影响国际市场开放度和生活消费品工厂比例）§!\n\n§Q当前国际市场开放度：[?SWE_Market_Inclusion]\n（国际市场开放度会影响建造速度，稳定度等）§!\n\n§R当前本土工业发展度：[?SWE_Industry_Development]\n（本土工业发展度将决定每个月获得的民用工厂）§!"
  SWE_Boost_Government_Spending:0 "提高政府支出"
  SWE_Lower_Government_Spending:0 "减少政府支出"
  SWE_Add_Government_Spending_tt:0 "§Y政府支出将增加§!"
@@ -30,7 +30,7 @@
  SWE_New_Stage:0 "Debug特供——使时间变快一个刻度"
 
  SWE_Folkhemmet_decision_categories:0 "“人民之家”计划"
- SWE_Folkhemmet_decision_categories_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。\n当前移民政策状态：[SWE_Immigrant_policy]\n当前工人政策状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n当前发行国债值：§Y[?SWE_National_debt|%]国民生产总值\n当前国债值可以提供每日[?SWE_debt_political_gain]点的额外政治点数增长，附加[?SWE_debt_consumer_factory|%]的生活消费品工厂系数"
+ SWE_Folkhemmet_decision_categories_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。\n\n当前移民政策状态：[SWE_Immigrant_policy]\n当前工人政策状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n\n当前发行国债值：§Y[?SWE_National_debt|%]§!国民生产总值\n当前持有国债值占总国债值比例：§Y[?SWE_has_National_debt|%]§!\n当前国债值提供修正：生活消费品工厂系数：§Y[?SWE_Folkhemmet_consumer_goods|%]§!\n工厂产出：§Y[?SWE_Folkhemmet_industrial_capacity|%]§!\n基础生产效率：§Y[?SWE_Folkhemmet_factory_efficency|%]§!"
 
  SWE_Increace_national_debt:0 "增加国债额度"
  SWE_Decreace_national_debt:0 "减少国债额度"
