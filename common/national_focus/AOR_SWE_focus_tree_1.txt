@@ -696,6 +696,9 @@ focus_tree = {
 			set_variable = { SWE_National_debt = 0.2 }
 			set_variable = { SWE_debt_political_gain = 20 }
 			set_variable = { SWE_debt_consumer_factory = 0.3 }
+			hidden_effect = {
+				country_event = { id = SWE_Folkhemmet.1 days = 5 }
+			}
 		}
 
 	}

@@ -35,30 +35,34 @@ SWE_Norweign_Independence_decision_categories = {
         priority = 100
 
 		activation = {
-			hidden_trigger = {
-                OR = {
-                    has_country_flag = SWE_GUI_1
-                    has_country_flag = SWE_GUI_2
-                    has_country_flag = SWE_GUI_3
+            custom_trigger_tooltip = {
+                tooltip = SWE_Norweign_Independence_Acting_tt
+                hidden_trigger = {
+                    OR = {
+                        has_country_flag = SWE_GUI_1
+                        has_country_flag = SWE_GUI_2
+                        has_country_flag = SWE_GUI_3
+                    }
+                    has_country_flag = SWE_Norweign_Independence_flag
                 }
-                has_country_flag = SWE_Norweign_Independence_flag
             }
-            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
 		}
 		available = {
             hidden_trigger = {always = no}
 		}
 
         visible = {
-            hidden_trigger = {
-                OR = {
-                    has_country_flag = SWE_GUI_1
-                    has_country_flag = SWE_GUI_2
-                    has_country_flag = SWE_GUI_3
+            custom_trigger_tooltip = {
+                hidden_trigger = {
+                    OR = {
+                        has_country_flag = SWE_GUI_1
+                        has_country_flag = SWE_GUI_2
+                        has_country_flag = SWE_GUI_3
+                    }
+                    has_country_flag = SWE_Norweign_Independence_flag
                 }
-                has_country_flag = SWE_Norweign_Independence_flag
+                tooltip = SWE_Norweign_Independence_Acting_tt
             }
-            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
         }
 
         cancel_trigger = {
@@ -456,5 +460,75 @@ SWE_Folkhemmet_decision_categories = {
             add_to_variable = { SWE_debt_political_gain = -10 }
             add_to_variable = { SWE_debt_consumer_factory = -0.15 }
         }
+    }
+
+    SWE_Education_mission = {
+        activation = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Education > 1 }
+                tooltip = SWE_Education_crisis_happening
+            }
+            has_idea = SWE_Folkhemmet
+		}
+		available = {
+            hidden_trigger = {
+                custom_trigger_tooltip = {
+                    check_variable = { SWE_Education > 1 }
+                    tooltip = SWE_Education_crisis_happening
+                }
+                has_idea = SWE_Folkhemmet
+            }
+		}
+
+        visible = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Education > 1 }
+                tooltip = SWE_Education_crisis_happening
+            }
+            has_idea = SWE_Folkhemmet
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    custom_trigger_tooltip = {
+                        check_variable = { SWE_Education > 1 }
+                        tooltip = SWE_Education_crisis_happening
+                    }
+                    has_idea = SWE_Folkhemmet
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 30
+
+        timeout_effect = {                    
+			if = {
+                limit = {
+                    check_variable = { SWE_Education < 4 }
+                }
+                add_to_variable = { SWE_Education = 1 }
+                add_political_power = -50
+                add_stability = -0.1
+                custom_effect_tooltip = SWE_Education_worse_tt
+            }
+            else = {
+                add_stability = -0.25
+                add_political_power = -200
+                if = {
+                    limit = { has_idea = SWE_Folkhemmet_debuff }
+                    remove_idea = SWE_Folkhemmet
+                    country_event = { id = SWE_Folkhemmet.7 }
+                    custom_effect_tooltip = SWE_Folkhemmet_failed_tt
+                }
+                else = {
+                    add_idea = SWE_Folkhemmet_debuff
+                    custom_effect_tooltip = SWE_Education_worse_tt
+                }
+            }     
+		}
     }
 }
