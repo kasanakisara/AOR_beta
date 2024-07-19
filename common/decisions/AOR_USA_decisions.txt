@@ -50,9 +50,7 @@ USA_Civil_War_Military_Resolution = {
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_1
             if = {
                 limit = {
-                    OR = {
-                        check_variable = { USA_Recall_of_the_reserves = 100}
-                        check_variable = { USA_Recall_of_the_reserves > 100}
+                        check_variable = { USA_Recall_of_the_reserves = 100 compare = more_than_or_equals }
                     }
                 }
                 USA_Civil_War_Military_check = yes

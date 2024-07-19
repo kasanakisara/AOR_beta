@@ -458,10 +458,7 @@ SWE_Union_decision_categories = {
 SWE_Folkhemmet_decision_categories = {
     SWE_Increace_national_debt = { #增加发行量
         available = {
-            OR = {
-                has_idea = SWE_Folkhemmet
-                has_idea = SWE_Folkhemmet_debuff
-            }
+            has_country_flag = SWE_Folkhemmet_flag
         }
         ai_will_do = {
             add = 1
@@ -527,10 +524,7 @@ SWE_Folkhemmet_decision_categories = {
                 check_variable = { SWE_Education > 1 }
                 tooltip = SWE_Education_crisis_happening
             }
-            OR = {
-                has_idea = SWE_Folkhemmet
-                has_idea = SWE_Folkhemmet_debuff
-            }
+            has_country_flag = SWE_Folkhemmet_flag
 		}
 		available = {
             OR = {
@@ -547,10 +541,7 @@ SWE_Folkhemmet_decision_categories = {
                 check_variable = { SWE_Education > 1 }
                 tooltip = SWE_Education_crisis_happening
             }
-            OR = {
-                has_idea = SWE_Folkhemmet
-                has_idea = SWE_Folkhemmet_debuff
-            }
+            has_country_flag = SWE_Folkhemmet_flag
         }
 
         cancel_trigger = {
@@ -588,12 +579,14 @@ SWE_Folkhemmet_decision_categories = {
                 add_political_power = -200
                 if = {
                     limit = { has_idea = SWE_Folkhemmet_debuff }
-                    remove_idea = SWE_Folkhemmet
+                    remove_ideas = SWE_Folkhemmet
+                    clr_country_flag = SWE_Folkhemmet_flag
                     country_event = { id = SWE_Folkhemmet.7 }
                     custom_effect_tooltip = SWE_Folkhemmet_failed_tt
                 }
                 else = {
-                    add_idea = SWE_Folkhemmet_debuff
+                    add_ideas = SWE_Folkhemmet_debuff
+                    remove_ideas = SWE_Folkhemmet
                     custom_effect_tooltip = SWE_Education_worse_tt
                 }
             }     

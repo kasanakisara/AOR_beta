@@ -132,10 +132,7 @@ on_actions = {
 			#人民之家
 			if = {
 				limit = {
-					OR = {
-						has_idea = SWE_Folkhemmet
-						has_idea = SWE_Folkhemmet_debuff
-					}
+					has_country_flag = SWE_Folkhemmet_flag
 				}
 				add_political_power = -50
 				if = {

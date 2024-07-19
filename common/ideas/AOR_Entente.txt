@@ -3,7 +3,7 @@ ideas = {
         AOR_Entente_no_war = { #协约国禁止参战
             available = { always = yes }
             modifier = {
-                ai_call_ally_desire_factor = -10000
+                custom_modifier_tooltip = AOR_Entente_no_war_tt
             }
         }
     }
