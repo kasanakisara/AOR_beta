@@ -1,10 +1,10 @@
 ﻿l_simp_chinese:
 
- #AOR_Great_Britain_news_header:"\n£custom_header_Great_Britain_news_header\n\n\n"
+ #AOR_Times_news_header:"\n£custom_header_Times_news_header\n\n\n"
  #AOR_geming_news_header:"\n£custom_header_geming_news_header\n\n\n"
  #AOR_deyizhi_news_header:"\n£custom_header_deyizhi_news_header\n\n\n"
  #AOR_renminguanzhajia_news_header:"\n£custom_header_renminguanzhajia_news_header\n\n\n"
- #AOR_Ruoman_news_header:"\n£custom_header_Ruoman_news_header\n\n\n"
+ #AOR_Figaro_news_header:"\n£custom_header_Figaro_news_header\n\n\n"
  #AOR_lianhehuangjiabao_news_header:"\n£custom_header_lianhehuangjiabao_news_header\n\n\n"
  #AOR_ershishiji_news_header:"\n£custom_header_ershishiji_news_header\n\n\n"
  #AOR_fandigangrenmin_news_haeder:"\n£custom_header_fandigangrenmin_news_haeder\n\n\n"
@@ -21,17 +21,17 @@
  AOR_deyizhi_news_header:"\n\n\n £custom_header_deyizhi_news_header\n\n\n\n\n\n                                                                                                       "
  AOR_deyizhi_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_deyizhi_news_header_pic\n"
 
- #大不列颠尼亚报
- AOR_Great_Britain_news_header:"\n\n\n £custom_header_Great_Britain_news_header\n\n\n\n\n\n                                                                                                       "
- AOR_Great_Britain_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_Great_Britain_news_header_pic\n"
+ #泰晤士报
+ AOR_Times_news_header:"\n\n\n £custom_header_Times_news_header\n\n\n\n\n\n                                                                                                       "
+ AOR_Times_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_Times_news_header_pic\n"
 
  #二十世纪报 
  AOR_ershishiji_news_header:"\n\n\n £custom_header_ershishiji_news_header\n\n\n\n\n\n                                                                                                       "
  AOR_ershishiji_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_ershishiji_news_header_pic\n"
 
- #罗曼语报
- AOR_Ruoman_news_header:"\n\n\n £custom_header_Ruoman_news_header\n\n\n\n\n\n                                                                                                       "
- AOR_Ruoman_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_Ruoman_news_header_pic\n"
+ #费加罗报
+ AOR_Figaro_news_header:"\n\n\n £custom_header_Figaro_news_header\n\n\n\n\n\n                                                                                                       "
+ AOR_Figaro_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_Figaro_news_header_pic\n"
 
  #人民观察家报
  AOR_renminguanzhajia_news_header:"\n\n\n £custom_header_renminguanzhajia_news_header\n\n\n\n\n\n                                                                                                       "
@@ -66,6 +66,15 @@
  AOR_hongqi_news_header:"\n\n\n £custom_header_hongqi_news_header\n\n\n\n\n\n                                                                                                       "
  
  AOR_hongqi_news_pic:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_hongqi_news_pic\n"
+
+ #纽约时报
+ AOR_New_York_Times_header:"\n\n\n £custom_header_New_York_Times_news_header\n\n\n\n\n\n                                                                                                       " (有空格)
+ AOR_New_York_Times_pic:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_New_York_Times_news_header_pic\n"
+
+ #每日新闻报
+ AOR_Dagens_Nyheter_header:"\n\n\n £custom_header_Dagens_Nyheter_news_header\n\n\n\n\n\n                                                                                                       " (有空格)
+ AOR_Dagens_Nyheter_pic:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_Dagens_Nyheter_news_header_pic\n"
+
  #报头 模板
  #abcd_header:"\n\n\n £custom_header_abcd_news_header\n\n\n\n\n\n                                                                                                       " (有空格)
  #abcd_news_pic:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£custom_header_abcd_news_pic\n"
