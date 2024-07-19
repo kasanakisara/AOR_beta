@@ -10,10 +10,16 @@ state={
 		owner = FRA
 		add_core_of = ALG
 		victory_points = {
+			12051 5 
+		}
+		victory_points = {
 			7081 1 
 		}
 		victory_points = {
-			12051 3 
+			10078 1 
+		}
+			victory_points = {
+			7166 1 
 		}
 		buildings = {
 			infrastructure = 2
