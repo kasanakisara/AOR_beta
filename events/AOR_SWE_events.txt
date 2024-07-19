@@ -310,7 +310,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.15.a
-        add_stability = 0.2
+        add_stability = 0.15
         add_manpower = -50000
         remove_ideas = SWE_Left_Threat_II
     }

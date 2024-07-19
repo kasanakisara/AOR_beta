@@ -1,0 +1,17 @@
+allow_join_ally_war = {
+    name = "RULE_ALLOW_JOIN_ALLY_WAR"
+	group = "RULE_GROUP_FACTION"
+	icon = "GFX_coups"
+	default = {
+		name = "FREE"
+		text = "NWFAJG_RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_JOIN_ALLY_WAR_FREE_DESC"
+		allow_achievements = yes
+	}
+	option  = {
+		name = "BLOCKED"
+		text = "NWFAJG_RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_JOIN_ALLY_WAR_BLOCKED_DESC"
+		allow_achievements = yes
+	}
+}

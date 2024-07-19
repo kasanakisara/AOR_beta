@@ -5,7 +5,11 @@ SWE_Norweign_Independence_decision_categories = {
         available = { always = yes }
         days_remove = 5
         ai_will_do = {
-            factor = 0.5
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -2 }
@@ -22,7 +26,11 @@ SWE_Norweign_Independence_decision_categories = {
         }
         days_remove = 28
         ai_will_do = {
-            factor = 0.5
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
@@ -102,7 +110,11 @@ SWE_Norweign_Independence_decision_categories = {
         on_map_mode = map_only
         days_re_enable = 49
         ai_will_do = {
-            factor = 0.99
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 45
         complete_effect = {
@@ -132,7 +144,11 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-            factor = 0.99
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 60
         complete_effect = {
@@ -171,7 +187,11 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-            factor = 0.99
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 50
         complete_effect = {
@@ -213,7 +233,11 @@ SWE_Norweign_Independence_decision_categories = {
         }
         cost = 20
         ai_will_do = {
-            factor = 0.75
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_stability = 0.1
@@ -229,7 +253,11 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 7
         cost = 20
         ai_will_do = {
-            factor = 0.75
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.1 }
@@ -244,7 +272,11 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 49
         cost = 75
         ai_will_do = {
-            factor = 0.75
+            add = 1
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.15 }
@@ -485,6 +517,7 @@ SWE_Folkhemmet_decision_categories = {
             add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
             add_to_variable = { SWE_Folkhemmet_industrial_capacity = 0.05 }
             add_to_variable = { SWE_Folkhemmet_factory_efficency = 0.05 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_idea_tt
         }
     }
 

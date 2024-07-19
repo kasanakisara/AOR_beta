@@ -1,0 +1,13 @@
+ideas = { 
+    country = {
+        AOR_Entente_no_war = { #协约国禁止参战
+            available = { always = yes }
+            hidden_rule = {
+                can_join_ally_war = no
+            }
+            modifier = {
+                custom_modifier_tooltip = AOR_Entente_no_war_tt
+            }
+        }
+    }
+}

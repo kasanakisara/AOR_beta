@@ -237,6 +237,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
+		ai_will_do = {
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 12
 		y = 2
 		completion_reward = {
@@ -337,8 +346,14 @@ focus_tree = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 3
 		completion_reward = {
@@ -361,8 +376,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 4
 		completion_reward = {
@@ -381,8 +402,14 @@ focus_tree = {
 			focus = SWE_Publications_Supervision
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 5
 		completion_reward = {
@@ -401,8 +428,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 4
 		completion_reward = {
@@ -424,8 +457,14 @@ focus_tree = {
 			focus = SWE_Restrictions_on_Gatherings
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 5
 		completion_reward = {
@@ -447,8 +486,14 @@ focus_tree = {
 			focus = SWE_Rope_Right
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 6
 		completion_reward = {
@@ -467,8 +512,14 @@ focus_tree = {
 			focus = SWE_The_Trial
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 7
 		completion_reward = {
