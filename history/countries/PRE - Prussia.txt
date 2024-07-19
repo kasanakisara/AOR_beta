@@ -112,9 +112,9 @@ add_ideas = {
 
 
 create_country_leader = {
-	name = "Wolfgang Kapp"
+	name = "Wolfgang_Kapp"
 	desc = "POLITICS_Wolfgang_Kapp_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	picture = "gfx/leaders/PRE/Portrait_Germany_Konrad_Adenauer.png"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
