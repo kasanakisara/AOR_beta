@@ -30,14 +30,14 @@ spriteTypes = {
 	###########大不列颠尼亚报#############
 
 	spriteType = {
-		name = "GFX_custom_header_Great_Britain_news_header"  ##大不列颠尼亚报 - header
-		textureFile = "gfx/interface/AOR_news_headers/dabuliedianniya_title.png"
+		name = "GFX_custom_header_Times_news_header"  ##大不列颠尼亚报 - header
+		textureFile = "gfx/interface/AOR_news_headers/Times_title.png"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_custom_header_Great_Britain_news_header_pic"  ##大不列颠尼亚报-pic
-		textureFile = "gfx/interface/AOR_news_headers/dabuliedianniya_picture.png"
+		name = "GFX_custom_header_Times_news_header_pic"  ##大不列颠尼亚报-pic
+		textureFile = "gfx/interface/AOR_news_headers/Times_picture.png"
 		legacy_lazy_load = no 
 	}
 
@@ -84,17 +84,31 @@ spriteTypes = {
 		legacy_lazy_load = no 
 	}
 
-	#############罗曼语报###############
+	#############费加罗报###############
 
-	spriteType = {  ##罗曼语报 - header
-		name = "GFX_custom_header_Ruoman_news_header"
-		textureFile = "gfx/interface/AOR_news_headers/luomanyubao_title.png"
+	spriteType = {  ##费加罗报 - header
+		name = "GFX_custom_header_Figaro_news_header"
+		textureFile = "gfx/interface/AOR_news_headers/Figaro_title.png"
 		legacy_lazy_load = no 
 	}
 
-	spriteType = {  ##罗曼语报 - pic
-		name = "GFX_custom_header_Ruoman_news_header_pic"
-		textureFile = "gfx/interface/AOR_news_headers/luomanyubao_picture.png"
+	spriteType = {  ##费加罗报 - pic
+		name = "GFX_custom_header_Figaro_news_header_pic"
+		textureFile = "gfx/interface/AOR_news_headers/Figaro_picture.png"
+		legacy_lazy_load = no 
+	}
+
+	#############纽约时报###############
+
+	spriteType = {  ##纽约时报 - header
+		name = "GFX_custom_header_New_York_Times_news_header"
+		textureFile = "gfx/interface/AOR_news_headers/New_York_Times_title.png"
+		legacy_lazy_load = no 
+	}
+
+	spriteType = {  ##纽约时报 - pic
+		name = "GFX_custom_header_New_York_Times_news_header_pic"
+		textureFile = "gfx/interface/AOR_news_headers/New_York_Times_picture.png"
 		legacy_lazy_load = no 
 	}
 
@@ -190,5 +204,18 @@ spriteTypes = {
 		name = "GFX_custom_header_hongqi_news_pic"
 		textureFile = "gfx/interface/AOR_news_headers/hongqibao_picture.png"
 		legacy_lazy_load = no 
+	}
+
+	#############每日新闻报#########################
+
+	spriteType = {
+		name = "GFX_custom_header_Dagens_Nyheter_news_header"  ##每日新闻报 - header
+		textureFile = "gfx/interface/AOR_news_headers/Dagens_Nyheter_title.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_custom_header_Dagens_Nyheter_news_header_pic"  ##每日新闻报-pic
+		textureFile = "gfx/interface/AOR_news_headers/Dagens_Nyheter_picture.png"
+		legacy_lazy_load = no
 	}
 }
