@@ -448,6 +448,7 @@ SWE_Folkhemmet_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_national_debt_decision_tt
         }
         remove_effect = {
             add_political_power = 200
@@ -478,6 +479,7 @@ SWE_Folkhemmet_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_National_debt = -0.2 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_tt
         }
         remove_effect = {
             add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }

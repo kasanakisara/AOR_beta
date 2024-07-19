@@ -68,7 +68,7 @@
 
  SWE_Folkhemmet:0 "“人民之家”计划"
  SWE_Folkhemmet_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。"
- SWE_Folkhemmet_tt:0 "当前发行国债值：§Y[?SWE_National_debt|%]§!国民生产总值\n当前持有国债值占总国债值比例：§Y[?SWE_has_National_debt|%]§!\n当前国债值提供修正：生活消费品工厂系数：§Y[?SWE_Folkhemmet_consumer_goods|%]§!\n工厂产出：§Y[?SWE_Folkhemmet_industrial_capacity|%]§!\n基础生产效率：§Y[?SWE_Folkhemmet_factory_efficency|%]§!\n每月额外消耗的政治点数：§R+50.00§!\n如果每月开始时，政治点数小于§Y0.00§!，将承受经济惩罚§Y“人民之家”计划超出预算§!，效果为：\n每日消耗的政治点数：§R+0.20§!\n生活消费品工厂系数：§Y30.00%§!\n稳定度：§R-10.00%§!\n每周稳定度：§R-1.00%§!"
+ SWE_Folkhemmet_tt:0 "\n当前发行国债值：§Y[?SWE_National_debt|%]§!国民生产总值\n当前持有国债值占总国债值比例：§Y[?SWE_has_National_debt|%]§!\n当前国债值提供修正：\n生活消费品工厂系数：§Y[?SWE_Folkhemmet_consumer_goods|%]§!\n工厂产出：§Y[?SWE_Folkhemmet_industrial_capacity|%]§!\n基础生产效率：§Y[?SWE_Folkhemmet_factory_efficency|%]§!\n\n每月额外消耗的政治点数：§R+50.00§!\n如果每月结算时，政治点数小于§Y0.00§!，将承受经济惩罚§Y“人民之家”计划超出预算§!，效果为：\n每日消耗的政治点数：§R+0.20§!\n生活消费品工厂系数：§Y30.00%§!\n稳定度：§R-10.00%§!\n每周稳定度：§R-1.00%§!"
  AOR_SWE_Folkhemmet_dynamic_modifier:0 "£GFX_pol_idea“人民之家”计划"
  SWE_Folkhemmet_debuff:0 "“人民之家”计划超出预算"
  SWE_Folkhemmet_debuff_desc:0 "我国没有足够的资金来支付“人民之家”计划的费用，这使得民众对我们产生了极大的不信任，我们需要尽快解决这个问题。"
