@@ -835,6 +835,8 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			set_variable = { SWE_Labor = 0 }
+			custom_effect_tooltip = SWE_unlock_Labor_policy_tt
+			hidden_effect = { country_event = { id = SWE_Folkhemmet.4 days = 5 } }
 		}
 
 	}
@@ -855,6 +857,7 @@ focus_tree = {
 				var = SWE_Immigrant
 				value = 0
 			}
+			country_event = { id = SWE_Folkhemmet.2 }
 		}
 
 	}
@@ -872,6 +875,8 @@ focus_tree = {
 		y = 11
 		completion_reward = {
 			set_variable = { SWE_Education = 0 }
+			country_event = { id = SWE_Folkhemmet.6 }
+        	add_ideas = SWE_Edu_Protection
 		}
 
 	}
@@ -888,7 +893,9 @@ focus_tree = {
 		x = 15
 		y = 11
 		completion_reward = {
-			set_variable = { SWE_Labor = 0 }
+			set_variable = { SWE_Labor = 1 }
+        	add_ideas = SWE_Labor_Protection
+			country_event = { id = SWE_Folkhemmet.5 }
 		}
 
 	}
@@ -907,6 +914,16 @@ focus_tree = {
 		}
 		x = 14
 		y = 12
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = SWE_Ex_Folkhemmet
+					remove_idea = SWE_Folkhemmet
+				}
+			}
+			custom_effect_tooltip = SWE_Ex_Folkhemmet_change_tt
+			country_event = { id = SWE.30 }
+		}
 
 	}
 	focus = {
