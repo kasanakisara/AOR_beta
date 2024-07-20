@@ -1,6 +1,7 @@
 ideas = { 
     country = {
         AOR_Entente_no_war = { #协约国禁止参战
+	    picture = GFX_idea_USA_participation_award
             available = { always = yes }
             modifier = {
                 custom_modifier_tooltip = AOR_Entente_no_war_tt
