@@ -48,8 +48,7 @@ ideas = {
 			picture = ""
 			allowed = { always = yes }
 			modifier = {
-				consumer_goods_factor = -0.25
-				stability_factor = 0.1
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -57,8 +56,7 @@ ideas = {
 			picture = ""
 			allowed = { always = yes }
 			modifier = {
-				consumer_goods_factor = -0.25
-				stability_factor = 0.1
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -138,7 +136,7 @@ ideas = {
 			picture = GFX_idea_SWE_Left_Threat_II
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.25
 				political_power_cost = 0.1
 				Marxism_drift = 0.1
 				custom_modifier_tooltip = SWE_modifier_add_localisation
@@ -175,7 +173,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.3
 				political_power_gain = 0.25
-				consumer_goods_expected_value = -0.2
+				consumer_goods_expected_value = 0.25
 				stability_weekly = 0.025
 				FRE_democratic_drift = 0.2
 				drift_defence_factor = -0.2

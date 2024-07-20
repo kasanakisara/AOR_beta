@@ -177,11 +177,11 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 	}
 	
 	AOR_RUS_Soviet_union_31 = { #奥尔忠尼启则发起高加索内战
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 		cost = 10
 		available = {
 			#has_completed_focus = AOR_SOV_Civil_war_6
-			#CAU = { is_neighbor_of = RUS }
+			CAU = { is_neighbor_of = RUS }
 			country_exists = CAU
 		}
 		visible = { NOT = { has_global_flag = RUS_flag_Soviet_union } }

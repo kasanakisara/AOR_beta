@@ -103,9 +103,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Idris Senussi" ###Idris Senussi
+	name = "Muhammad Idris bin Muhammad al-Mahdi as-Senussi" ###Idris Senussi
 	desc = ""
-	picture = GFX_portrait_Idris_Senussi
+	picture = islam_old_deng.dds
 	ideology = despotism
 	traits = {
 		#

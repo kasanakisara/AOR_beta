@@ -132,13 +132,14 @@ on_actions = {
 			#人民之家
 			if = {
 				limit = {
-					has_idea = SWE_Folkhemmet
+					has_country_flag = SWE_Folkhemmet_flag
 				}
 				add_political_power = -50
 				if = {
 					limit = {
 						has_political_power < 0
 					}
+					remove_ideas = SWE_Folkhemmet
 					add_ideas = SWE_Folkhemmet_debuff
 				}
 				if = {
@@ -146,7 +147,8 @@ on_actions = {
 						has_political_power > 0
 						has_idea = SWE_Folkhemmet_debuff
 					}
-					remove_ideas = SWE_Folkhemmet
+					remove_ideas = SWE_Folkhemmet_debuff
+					add_ideas = SWE_Folkhemmet
 				}
 			}
 
@@ -437,7 +439,7 @@ on_actions = {
 
 			if = {
 				limit = { has_idea = SWE_Folkhemmet }
-				add_political_power = var:SWE_debt_political_gain
+				
 			}
 
 		}

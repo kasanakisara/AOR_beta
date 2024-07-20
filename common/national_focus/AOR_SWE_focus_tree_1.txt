@@ -237,6 +237,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
+		ai_will_do = {
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 12
 		y = 2
 		completion_reward = {
@@ -337,8 +346,14 @@ focus_tree = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 3
 		completion_reward = {
@@ -361,8 +376,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 4
 		completion_reward = {
@@ -381,8 +402,14 @@ focus_tree = {
 			focus = SWE_Publications_Supervision
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 5
 		completion_reward = {
@@ -401,8 +428,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 4
 		completion_reward = {
@@ -424,8 +457,14 @@ focus_tree = {
 			focus = SWE_Restrictions_on_Gatherings
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 5
 		completion_reward = {
@@ -447,8 +486,14 @@ focus_tree = {
 			focus = SWE_Rope_Right
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 6
 		completion_reward = {
@@ -467,8 +512,14 @@ focus_tree = {
 			focus = SWE_The_Trial
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 7
 		completion_reward = {
@@ -561,6 +612,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Beautiful_New_World
 		}
+		bypass = {
+			date > 1923.1.1
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AOR_GER_not_civilwar_tt
@@ -593,6 +647,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Trade_With_Soviet
+		}
+		bypass = {
+			date > 1923.1.1
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -693,9 +750,16 @@ focus_tree = {
 			add_ideas = SWE_Folkhemmet
 			unlock_decision_category_tooltip = SWE_Folkhemmet_decision_categories
 			set_variable = { SWE_Education = 1 }
-			set_variable = { SWE_National_debt = 0.2 }
-			set_variable = { SWE_debt_political_gain = 20 }
-			set_variable = { SWE_debt_consumer_factory = 0.3 }
+			set_variable = { SWE_National_debt = 0.25 }
+			set_variable = { SWE_has_National_debt = 0.1 }
+			set_variable = { SWE_Folkhemmet_industrial_capacity = 0.2 }
+			set_variable = { SWE_Folkhemmet_factory_efficency = 0.2 }
+			set_variable = { SWE_Folkhemmet_consumer_goods = 0.125 }
+			hidden_effect = {
+				set_country_flag = SWE_Folkhemmet_flag
+				add_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
+				country_event = { id = SWE_Folkhemmet.1 days = 5 }
+			}
 		}
 
 	}
@@ -764,6 +828,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 13
 		y = 10
 		completion_reward = {
@@ -777,6 +844,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
+		}
+		available = {
+			has_idea = SWE_Folkhemmet
 		}
 		x = 15
 		y = 10
@@ -795,6 +865,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Maternity_Allowance
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 13
 		y = 11
 		completion_reward = {
@@ -809,6 +882,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Immigrant_Protection
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 15
 		y = 11
 		completion_reward = {
@@ -822,6 +898,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Labor_Protection
+		}
+		available = {
+            has_idea = SWE_Folkhemmet
 		}
 		prerequisite = {
 			focus = SWE_People_University
