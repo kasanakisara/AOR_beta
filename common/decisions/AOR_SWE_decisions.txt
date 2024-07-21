@@ -459,6 +459,7 @@ SWE_Folkhemmet_decision_categories = {
     SWE_Increace_national_debt = { #增加发行量
         available = {
             has_country_flag = SWE_Folkhemmet_flag
+            check_variable = { SWE_National_debt = 1.2 compare = less_than_or_equals }
         }
         ai_will_do = {
             add = 1
@@ -476,20 +477,18 @@ SWE_Folkhemmet_decision_categories = {
             production_factory_start_efficiency_factor = -0.1
         }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = 0.2 }
+            add_to_variable = { SWE_National_debt = 0.1 }
             custom_effect_tooltip = SWE_increase_national_debt_decision_tt
         }
         remove_effect = {
-            add_political_power = 200
+            add_political_power = 300
         }
     }
 
     SWE_Decreace_national_debt = { #减少发行量
         available = {
-            OR = {
-				has_idea = SWE_Folkhemmet
-				has_idea = SWE_Folkhemmet_debuff
-			}
+            has_country_flag = SWE_Folkhemmet_flag
+            check_variable = { SWE_National_debt = 1.2 compare = less_than_or_equals }
         }
         ai_will_do = {
             add = 1
@@ -509,6 +508,65 @@ SWE_Folkhemmet_decision_categories = {
         complete_effect = {
             add_to_variable = { SWE_National_debt = -0.2 }
             custom_effect_tooltip = SWE_decrease_national_debt_decision_tt
+        }
+        remove_effect = {
+            add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
+            add_to_variable = { SWE_Folkhemmet_industrial_capacity = 0.05 }
+            add_to_variable = { SWE_Folkhemmet_factory_efficency = 0.05 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_idea_tt
+        }
+    }
+
+    SWE_Increace_has_national_debt = { #增加持有量
+        available = {
+            has_country_flag = SWE_Folkhemmet_flag
+        }
+        ai_will_do = {
+            add = 1
+            modifier = {
+                has_political_power < 50
+                add = 1
+            }
+        }
+        days_remove = 30
+        days_re_enable = 14
+        cost = 20
+        modifier = {
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = -0.05
+            production_factory_start_efficiency_factor = -0.1
+        }
+        complete_effect = {
+            add_to_variable = { SWE_has_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_has_national_debt_decision_tt
+        }
+        remove_effect = {
+            add_political_power = 300
+        }
+    }
+
+    SWE_Decreace_has_national_debt = { #减少持有量
+        available = {
+            has_country_flag = SWE_Folkhemmet_flag
+        }
+        ai_will_do = {
+            add = 1
+            modifier = {
+                has_political_power < 50
+                factor = 0
+            }
+        }
+        cost = 20
+        days_remove = 60
+        days_re_enable = 14
+        cost = 20
+        modifier = {
+            stability_factor = -0.1
+            political_power_gain = -0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_has_National_debt = -0.1 }
+            custom_effect_tooltip = SWE_decrease_has_national_debt_decision_tt
         }
         remove_effect = {
             add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }

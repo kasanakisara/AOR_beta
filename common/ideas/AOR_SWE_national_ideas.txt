@@ -291,7 +291,44 @@ ideas = {
 				political_power_cost = 0.2
 				consumer_goods_factor = 0.3
 				stability_factor = -0.1
-				stability_weekly = -0.01
+				stability_weekly = -0.05
+			}
+		}
+
+		SWE_Labor_Protection = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.2
+				stability_factor = 0.15
+				stability_weekly = 0.01
+				production_factory_start_efficiency_factor = 0.25
+				industrial_capacity_factory = 0.25
+			}
+		}
+
+		SWE_Edu_Protection = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.2
+				stability_factor = 0.15
+				stability_weekly = 0.01
+			}
+		}
+
+		SWE_Ex_Folkhemmet = {
+			picture = ""
+			allowed = { always = yes }
+			modifier = {
+				custom_modifier_tooltip = SWE_Ex_Folkhemmet_tt
+				political_power_cost = 0.2
+				consumer_goods_factor = 0.35
+				stability_factor = 0.25
+				stability_weekly = 0.05
+				conscription_factor = -0.2
 			}
 		}
 	}

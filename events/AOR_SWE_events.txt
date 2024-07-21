@@ -23,6 +23,9 @@ country_event = {
             remove_ideas = SWE_Left_Threat_II
             remove_ideas = SWE_Antisocialistisk_Speciallagen
             remove_ideas = SWE_The_Union_Dream
+            remove_ideas = SWE_In_Revolution
+            add_ideas = A_lingering_alliance
+            clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = Haakon.1 days = 5 }
             country_event = { id = AOR_news.90 }
         }
@@ -199,6 +202,7 @@ country_event = {
                 transfer_state = 142
                 transfer_state = 143
                 transfer_state = 110
+                transfer_state = 1022
     
                 set_politics = {
                     ruling_party = SOC_democratic
@@ -506,6 +510,15 @@ country_event = {
             remove_ideas = SWE_Encourage
             remove_ideas = SWE_Stockholm_Law
             remove_ideas = SWE_Open_the_door
+            remove_ideas = SWE_Third_Choice
+            remove_ideas = SWE_Folkhemmet
+            remove_ideas = SWE_Folkhemmet_debuff
+            remove_ideas = SWE_Soviet_Trade
+            remove_ideas = SWE_Germany_Trade_sweden
+            remove_ideas = SWE_Regulation
+            remove_dynamic_modifier = { modifier = AOR_SWE_Trade_dynamic_modifier }
+            remove_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
+            remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
             country_event = { id = Hakoon.3 days = 5 }
         }
     }
@@ -707,7 +720,7 @@ country_event = {
 }
 
 country_event = {
-    id = SWE_Folkhemmet.1 #教育状态恶化——迫在眉睫的贪污问题
+    id = SWE_Folkhemmet.1 #教育状态恶化-迫在眉睫的贪污问题
     title = SWE_Folkhemmet.1.t
     desc = SWE_Folkhemmet.1.d
     is_triggered_only = yes
@@ -724,7 +737,10 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Folkhemmet.2.a
-        set_variable = { SWE_Education = 2 }
+        set_variable = { SWE_Immigrant = 1 }
+        hidden_effect = {
+            country_event = { id = SWE_Folkhemmet.3 days = 5 }
+        }
     }
 }
 
@@ -735,39 +751,39 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Folkhemmet.3.a
-        set_variable = { SWE_Education = 2 }
+        set_variable = { SWE_Immigrant = 2 }
     }
 }
 
 country_event = {
-    id = SWE_Folkhemmet.4 #教育状态恶化——迫在眉睫的贪污问题
+    id = SWE_Folkhemmet.4 #劳动政策恶化-必须尽快确保福利
     title = SWE_Folkhemmet.4.t
     desc = SWE_Folkhemmet.4.d
     is_triggered_only = yes
     option = {
         name = SWE_Folkhemmet.4.a
-        set_variable = { SWE_Education = 2 }
+        set_variable = { SWE_Labor = 2 }
     }
 }
 
 country_event = {
-    id = SWE_Folkhemmet.1 #教育状态恶化——迫在眉睫的贪污问题
-    title = SWE_Folkhemmet.1.t
-    desc = SWE_Folkhemmet.1.d
+    id = SWE_Folkhemmet.5 #劳动保护法通过-工人福利有保障了-太伟大了哈康陛下
+    title = SWE_Folkhemmet.5.t
+    desc = SWE_Folkhemmet.5.d
     is_triggered_only = yes
     option = {
-        name = SWE_Folkhemmet.1.a
-        set_variable = { SWE_Education = 2 }
+        name = SWE_Folkhemmet.5.a
+        set_variable = { SWE_Labor = 0 }
     }
 }
 
 country_event = {
-    id = SWE_Folkhemmet.1 #教育状态恶化——迫在眉睫的贪污问题
-    title = SWE_Folkhemmet.1.t
-    desc = SWE_Folkhemmet.1.d
+    id = SWE_Folkhemmet.6 #义务教育法一锤定音
+    title = SWE_Folkhemmet.6.t
+    desc = SWE_Folkhemmet.6.d
     is_triggered_only = yes
     option = {
-        name = SWE_Folkhemmet.1.a
+        name = SWE_Folkhemmet.6.a
         set_variable = { SWE_Education = 2 }
     }
 }
@@ -779,5 +795,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Folkhemmet.7.a
+        add_political_power = -250
+        clr_country_flag = SWE_Folkhemmet_flag
     }
 }
