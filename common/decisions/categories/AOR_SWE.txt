@@ -34,7 +34,7 @@ SWE_Folkhemmet_decision_categories = {
 	priority = 90
 	picture = GFX_SWE_Folkhemmet_decision_pic
 	visible = {
-		has_idea = SWE_Folkhemmet
+		has_country_flag = SWE_Folkhemmet_flag
 	}
 	visible_when_empty = yes
 }

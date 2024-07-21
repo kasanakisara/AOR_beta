@@ -440,11 +440,11 @@ SWE_Union_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_Union_Stage = 1 }
-            add_to_variable = { SWE_Union_stability_factor = 0.25 }
-            add_to_variable = { SWE_Union_war_support_factor = 0.25 }
-            add_to_variable = { SWE_Union_construction_speed = 0.25 }
-            add_to_variable = { SWE_Union_arms_speed = 0.25 }
-            add_to_variable = { SWE_Union_industrial_speed = 0.25 }
+            add_to_variable = { SWE_Union_stability_factor = 0.025 }
+            add_to_variable = { SWE_Union_war_support_factor = 0.025 }
+            add_to_variable = { SWE_Union_construction_speed = 0.025 }
+            add_to_variable = { SWE_Union_arms_speed = 0.025 }
+            add_to_variable = { SWE_Union_industrial_speed = 0.025 }
             if = {
                 limit = {
                     check_variable = { SWE_Union_Stage < 12 }
@@ -458,7 +458,9 @@ SWE_Union_decision_categories = {
 SWE_Folkhemmet_decision_categories = {
     SWE_Increace_national_debt = { #增加发行量
         available = {
-            has_country_flag = SWE_Folkhemmet_flag
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }            
             check_variable = { SWE_National_debt < 1.2 }
         }
         ai_will_do = {
@@ -487,7 +489,9 @@ SWE_Folkhemmet_decision_categories = {
 
     SWE_Decreace_national_debt = { #减少发行量
         available = {
-            has_country_flag = SWE_Folkhemmet_flag
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
             check_variable = { SWE_National_debt > 0 }
         }
         ai_will_do = {
@@ -518,7 +522,9 @@ SWE_Folkhemmet_decision_categories = {
 
     SWE_Increace_has_national_debt = { #增加持有量
         available = {
-            has_country_flag = SWE_Folkhemmet_flag
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
             check_variable = { SWE_has_National_debt < 1 }
         }
         ai_will_do = {
@@ -547,7 +553,9 @@ SWE_Folkhemmet_decision_categories = {
 
     SWE_Decreace_has_national_debt = { #减少持有量
         available = {
-            has_country_flag = SWE_Folkhemmet_flag
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
             check_variable = { SWE_has_National_debt > 0 }
         }
         ai_will_do = {
@@ -655,7 +663,7 @@ SWE_Folkhemmet_decision_categories = {
 
     SWE_Labor_mission = { #劳动危机
         activation = {
-            check_variable = { SWE_Labor > 0 }
+            check_variable = { SWE_Labor > 1 }
             has_country_flag = SWE_Folkhemmet_flag
 		}
 		available = {
@@ -670,7 +678,7 @@ SWE_Folkhemmet_decision_categories = {
 		}
 
         visible = {
-            check_variable = { SWE_Labor > 0 }
+            check_variable = { SWE_Labor > 1 }
             has_country_flag = SWE_Folkhemmet_flag
         }
 
@@ -723,13 +731,13 @@ SWE_Folkhemmet_decision_categories = {
 
     SWE_Immigrant_mission = { #移民危机
         activation = {
-            check_variable = { SWE_Immigrant > 0 }
+            check_variable = { SWE_Immigrant > 1 }
             has_country_flag = SWE_Folkhemmet_flag
 		}
 		available = {
-            OR = {
-                check_variable = { SWE_Immigrant = 0 }
-                hidden_trigger = {
+            hidden_trigger = {
+                OR = {
+                    check_variable = { SWE_Immigrant = 0 }
                     NOT = {
                         has_country_flag = SWE_Folkhemmet_flag
                     }
@@ -738,7 +746,7 @@ SWE_Folkhemmet_decision_categories = {
 		}
 
         visible = {
-            check_variable = { SWE_Immigrant > 0 }
+            check_variable = { SWE_Immigrant > 1 }
             has_country_flag = SWE_Folkhemmet_flag
         }
 
@@ -792,7 +800,7 @@ SWE_Folkhemmet_decision_categories = {
     SWE_solve_Immigrant_crisis = { #解决移民危机
         available = {
             custom_trigger_tooltip = {
-                check_variable = { SWE_Immigrant > 0 }
+                check_variable = { SWE_Immigrant > 1 }
                 has_country_flag = SWE_Folkhemmet_flag
                 tooltip = SWE_Immigrant_crisis_happenning
             }
@@ -803,7 +811,7 @@ SWE_Folkhemmet_decision_categories = {
 
         visible = {
             custom_trigger_tooltip = {
-                check_variable = { SWE_Immigrant > 0 }
+                check_variable = { SWE_Immigrant > 1 }
                 has_country_flag = SWE_Folkhemmet_flag
                 tooltip = SWE_Immigrant_crisis_happenning
             }

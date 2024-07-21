@@ -898,6 +898,7 @@ focus_tree = {
 			set_variable = { SWE_Labor = 1 }
         	add_ideas = SWE_Labor_Protection
 			country_event = { id = SWE_Folkhemmet.5 }
+			custom_effect_tooltip = SWE_Labor_crisis_solve_tt
 		}
 
 	}

@@ -704,6 +704,8 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE.30.a
+        add_stability = 0.1
+        add_political_power = 300
     }
 }
 
@@ -788,7 +790,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Folkhemmet.6.a
-        set_variable = { SWE_Education = 2 }
+        set_variable = { SWE_Education = 0 }
     }
 }
 
