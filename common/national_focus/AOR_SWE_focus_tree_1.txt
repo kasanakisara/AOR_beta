@@ -858,6 +858,7 @@ focus_tree = {
 				value = 0
 			}
 			country_event = { id = SWE_Folkhemmet.2 }
+			custom_effect_tooltip = SWE_unlock_Immigrant_policy_tt
 		}
 
 	}
@@ -877,6 +878,7 @@ focus_tree = {
 			set_variable = { SWE_Education = 0 }
 			country_event = { id = SWE_Folkhemmet.6 }
         	add_ideas = SWE_Edu_Protection
+			custom_effect_tooltip = SWE_Education_crisis_solve_tt
 		}
 
 	}
