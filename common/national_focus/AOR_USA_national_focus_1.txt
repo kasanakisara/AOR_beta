@@ -211,7 +211,10 @@ focus_tree={
 				add_idea=USA_GreatLakes2A
 			}
 			393 = { set_demilitarized_zone = no }
-			news_event = {id=AOR_news.136}
+			hidden_effect = {
+				news_event = {id=AOR_news.136}
+			}
+			
 		}
 	}
 	focus={
