@@ -30,7 +30,7 @@
  SWE_New_Stage:0 "Debug特供——使时间变快一个刻度"
 
  SWE_Folkhemmet_decision_categories:0 "“人民之家”计划"
- SWE_Folkhemmet_decision_categories_desc:0 "“人民之家”这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个良策。\n\n当前移民政策状态：[SWE_Immigrant_policy]\n当前工人政策状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n\n当前发行国债值：§Y[?SWE_National_debt|%]§!国民生产总值\n当前持有国债值占总国债值比例：§Y[?SWE_has_National_debt|%]§!\n当前国债值提供修正：生活消费品工厂系数：§Y[?SWE_Folkhemmet_consumer_goods|%]§!\n工厂产出：§Y[?SWE_Folkhemmet_industrial_capacity|%]§!\n基础生产效率：§Y[?SWE_Folkhemmet_factory_efficency|%]§!"
+ SWE_Folkhemmet_decision_categories_desc:0 "§Y“人民之家”§!这一计划来自执政的社会民主党，他们计划通过大量的福利政策来消灭人之间的不平等。无论你的种族，你的阶级，你的各种各样的“特点”，在联邦面前人人平等，你们都享有同等的权利，也同样负有同样的义务。这一计划会带来许多财政负担，也会带来难以避免的高税收，但是毫无疑问，这是维护联邦和平和统一的一个§Y良策§!。\n\n当前移民保护状态：[SWE_Immigrant_policy]\n当前工人保护状态：[SWE_Labor_policy]\n当前教育政策状态：[SWE_Edu_policy]\n\n当前发行国债值：§Y[?SWE_National_debt|%]§!国民生产总值\n当前持有国债值占总国债值比例：§Y[?SWE_has_National_debt|%]§!\n当前国债值提供修正：生活消费品工厂系数：§Y[?SWE_Folkhemmet_consumer_goods|%]§!\n工厂产出：§Y[?SWE_Folkhemmet_industrial_capacity|%]§!\n基础生产效率：§Y[?SWE_Folkhemmet_factory_efficency|%]§!"
 
  SWE_Increace_national_debt:0 "增加发行国债"
  SWE_increase_national_debt_decision_tt:0 "国债发行量：§G+20%§!"
@@ -47,6 +47,12 @@
  SWE_policy_many_problem:0 "§Q产生大量社会问题§!"
  SWE_policy_great_crisis:0 "§R陷入全面危机§!"
  SWE_Education_mission:0 "迫在眉睫的教育问题"
- SWE_Education_worse_tt:0 "§R教育状态将进一步恶化！§!"
- SWE_Education_crisis_happening:0 "教育问题迫在眉睫"
+ SWE_Education_worse_tt:0 "§R教育政策状态将进一步恶化！§!"
+ SWE_Labor_mission:0 "迫在眉睫的工人问题"
+ SWE_Labor_worse_tt:0 "§R工人保护状态将进一步恶化！§!"
+ SWE_Immigrant_mission:0 "迫在眉睫的移民问题"
+ SWE_Immigrant_worse_tt:0 "§R移民保护将进一步恶化！§!"
+ SWE_Immigrant_crisis_happenning:0 "移民危机上演中"
  SWE_Folkhemmet_failed_tt:0 "§R“人民之家”计划将彻底失败！§!"
+ SWE_solve_Immigrant_crisis:0 "解决移民危机"
+ SWE_Immigrant_crisis_solve_tt:0 "将解决§Y移民保护§!危机。"

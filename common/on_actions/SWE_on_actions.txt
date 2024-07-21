@@ -137,18 +137,32 @@ on_actions = {
 				add_political_power = -50
 				if = {
 					limit = {
+						has_idea = SWE_Ex_Folkhemmet
+					}
+					add_political_power = -75
+				}
+				if = {
+					limit = {
 						has_political_power < 0
 					}
 					remove_ideas = SWE_Folkhemmet
+					remove_ideas = SWE_Ex_Folkhemmet
 					add_ideas = SWE_Folkhemmet_debuff
 				}
 				if = {
 					limit = {
 						has_political_power > 0
 						has_idea = SWE_Folkhemmet_debuff
-					}
+					} 
 					remove_ideas = SWE_Folkhemmet_debuff
-					add_ideas = SWE_Folkhemmet
+					if = {
+						limit = { has_completed_focus = SWE_Everyone_has_Job }
+						add_ideas = SWE_Ex_Folkhemmet
+					}
+					else = {
+						add_ideas = SWE_Folkhemmet
+					}
+					
 				}
 			}
 
