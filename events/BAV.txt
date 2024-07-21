@@ -172,7 +172,7 @@ country_event = {
 	option = {
 		name = BAV.11.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = German_Revolutionary_League
 		BAV = {
@@ -198,7 +198,7 @@ country_event = {
 	option = {
 		name = BAV.12.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = new_German_Confederation
 		GER = {
@@ -238,6 +238,9 @@ country_event = {
 		declare_war_on = {
 			target = NAU
 			type = civil_war
+		}
+		NAU = {
+			give_military_access = BAV
 		}
 	}
 	option = {

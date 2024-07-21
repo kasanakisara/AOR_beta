@@ -26,7 +26,7 @@ country_event = {
 	option = {
 		name = NAU.2.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -40,7 +40,7 @@ country_event = {
 	option = {
 		name = NAU.3.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		add_manpower = 2000
 		add_stability = 0.05
@@ -56,7 +56,7 @@ country_event = {
 	option = {
 		name = NAU.4.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		add_manpower = -200
 		add_stability = 0.05
@@ -72,7 +72,7 @@ country_event = {
 	option = {
 		name = NAU.5.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		add_stability = -0.1
 		hidden_effect = {
@@ -113,7 +113,7 @@ country_event = {
 	option = {
 		name = NAU.6.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -127,7 +127,7 @@ country_event = {
 	option = {
 		name = NAU.7.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -141,7 +141,7 @@ country_event = {
 	option = {
 		name = NAU.8.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		hidden_effect = {
 			country_event = {
@@ -161,7 +161,7 @@ country_event = {
 	option = {
 		name = NAU.9.a
 		ai_chance = {
-			factor = 66
+			base = 66
 		}
 		hidden_effect = {
 			country_event = {
@@ -174,7 +174,7 @@ country_event = {
 	option = {
 		name = NAU.9.b
 		ai_chance = {
-			factor = 33
+			base = 33
 		}
 		hidden_effect = {
 			country_event = {
@@ -196,7 +196,7 @@ country_event = {
 		#拉狄克和伯恩施坦
 		name = NAU.10.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		trigger = {
 			has_country_flag = NAU_renmin
@@ -207,7 +207,7 @@ country_event = {
 		#希特勒和史特拉瑟
 		name = NAU.10.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		trigger = {
 			has_country_flag = NAU_renmin
@@ -218,7 +218,7 @@ country_event = {
 		#塞克特和鲁登道夫
 		name = NAU.10.c
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		trigger = {
 			has_country_flag = NAU_guojia
@@ -236,9 +236,6 @@ country_event = {
 	option = {
 		#拉狄克
 		name = NAU.11.a
-		ai_chance = {
-			factor = 50
-		}
 		hidden_effect = {
 			load_focus_tree = NAU_LEFT
 			set_politics = {
@@ -268,9 +265,6 @@ country_event = {
 	option = {
 		#伯恩施坦
 		name = NAU.11.b
-		ai_chance = {
-			factor = 50
-		}
 		hidden_effect = {
 			load_focus_tree = NAU_LEFT
 			set_politics = {
@@ -303,7 +297,7 @@ country_event = {
 		#希特勒
 		name = NAU.12.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			load_focus_tree = NAU_RIGHT
@@ -340,7 +334,7 @@ country_event = {
 		#史特拉瑟
 		name = NAU.12.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			load_focus_tree = NAU_RIGHT
@@ -385,7 +379,7 @@ country_event = {
 		#塞克特
 		name = NAU.13.a
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			load_focus_tree = NAU_MID
@@ -416,7 +410,7 @@ country_event = {
 		#鲁登道夫
 		name = NAU.13.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		hidden_effect = {
 			load_focus_tree = NAU_MID
@@ -448,7 +442,7 @@ country_event = {
 	option = {
 		name = NAU.14.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -462,7 +456,7 @@ country_event = {
 	option = {
 		name = NAU.15.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -476,7 +470,7 @@ country_event = {
 	option = {
 		name = NAU.16.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -490,7 +484,7 @@ country_event = {
 	option = {
 		name = NAU.17.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -504,7 +498,7 @@ country_event = {
 	option = {
 		name = NAU.18.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -518,7 +512,7 @@ country_event = {
 	option = {
 		name = NAU.19.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -532,7 +526,7 @@ country_event = {
 	option = {
 		name = NAU.20.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -546,7 +540,7 @@ country_event = {
 	option = {
 		name = NAU.21.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -560,7 +554,7 @@ country_event = {
 	option = {
 		name = NAU.22.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -574,7 +568,7 @@ country_event = {
 	option = {
 		name = NAU.23.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -588,7 +582,7 @@ country_event = {
 	option = {
 		name = NAU.24.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -602,7 +596,7 @@ country_event = {
 	option = {
 		name = NAU.25.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 	}
 }
@@ -616,7 +610,7 @@ country_event = {
 	option = {
 		name = NAU.26.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -630,7 +624,7 @@ country_event = {
 	option = {
 		name = NAU.27.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -644,7 +638,7 @@ country_event = {
 	option = {
 		name = NAU.28.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -659,7 +653,7 @@ country_event = {
 	option = {
 		name = NAU.29.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		GER = {
 			country_event = NAU.30
@@ -677,7 +671,7 @@ country_event = {
 	option = {
 		name = NAU.30.a
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		NAU = {
 			transfer_state = 842
@@ -704,7 +698,7 @@ country_event = {
 	option = {
 		name = NAU.31.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = Pact_of_Steel
 		NAU = {
@@ -732,7 +726,7 @@ country_event = {
 	option = {
 		name = NAU.32.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = Confederate_army
 		NAU = {
@@ -760,7 +754,7 @@ country_event = {
 	option = {
 		name = NAU.33.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = German_Liberation_Front
 		hidden_effect = {
@@ -790,7 +784,7 @@ country_event = {
 	option = {
 		name = NAU.34.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = Democratic_federal_Union
 		NAU = {
@@ -823,7 +817,7 @@ country_event = {
 	option = {
 		name = NAU.35.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		create_faction = Revenge_front
 	}
@@ -844,7 +838,7 @@ country_event = {
 	option = {
 		name = NAU.36.a
 		ai_chance = {
-			factor = 10
+			base= 10
 		}
 		hidden_effect = {
 			BAV = {
@@ -856,6 +850,30 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = NAU.37	#被bav吞并
+	title = NAU.37.t
+	desc = NAU.37.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+		    country_exists = GER
+		}
+	}
+	option = {
+		name = NAU.37.a
+		BAV = {
+			annex_country = {
+				target = NAU
+			}
+		}
+	}
+}
+
+
 country_event = {
 	id = NAU.68	#统一
 	title = NAU.68.t
@@ -871,7 +889,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = NAU.67.a
+		name = NAU.68.a
 		declare_war_on = {
 			target = HAN
 			type = civil_war
