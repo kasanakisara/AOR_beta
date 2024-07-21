@@ -251,6 +251,24 @@ country_event = {
 			type = civil_war
 			}
 		}
+		ENG = {
+			add_to_war = {
+				targeted_alliance = SAF
+				enemy = SWC
+			}
+		}
+		BOT = {
+			add_to_war = {
+				targeted_alliance = SAF
+				enemy = SWC
+			}
+		}
+		ZIM = {
+			add_to_war = {
+				targeted_alliance = SAF
+				enemy = SWC
+			}
+		}
     }
 	
 }
