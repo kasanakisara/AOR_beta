@@ -336,7 +336,7 @@ news_event = {
 }
 
 news_event = {
-	id = news_ENG.2
+	id = news_ENG.2 #英国阵营解散
 	title = news_ENG.2.t
 	desc = news_ENG.2.d
 	picture = news_ENG.2.p
