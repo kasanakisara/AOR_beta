@@ -452,8 +452,57 @@ on_actions = {
 			### 人民之家 ###
 
 			if = {
-				limit = { has_idea = SWE_Folkhemmet }
-				
+				limit = {
+					tag = SWE
+					has_country_flag = SWE_Folkhemmet_flag
+					OR = {
+						check_variable = { SWE_National_debt = 0.8 compare = more_than_or_equals }
+						check_variable = { SWE_has_National_debt = 0.8 compare = more_than_or_equals }
+					}
+				}
+				add_ideas = SWE_High_national_debt
+			}
+			else = {
+				remove_ideas = SWE_High_national_debt
+			}
+			if = {
+				limit = {
+					tag = SWE
+					has_country_flag = SWE_Folkhemmet_flag
+					OR = {
+						check_variable = { SWE_National_debt = 0.2 compare = less_than_or_equals }
+						check_variable = { SWE_has_National_debt = 0.2 compare = less_than_or_equals }
+					}
+				}
+				add_ideas = SWE_Low_national_debt
+			}
+			else = {
+				remove_ideas = SWE_Low_national_debt
+			}
+
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt < 0 }
+				}
+				set_variable = { SWE_National_debt = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_has_National_debt < 0 }
+				}
+				set_variable = { SWE_has_National_debt = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_has_National_debt > 1.2 }
+				}
+				set_variable = { SWE_has_National_debt = 1.2 }
 			}
 
 		}

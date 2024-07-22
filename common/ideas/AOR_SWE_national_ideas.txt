@@ -331,5 +331,26 @@ ideas = {
 				conscription_factor = -0.2
 			}
 		}
+
+		SWE_High_national_debt = {
+			picture = ""
+			available = { always = yes }
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.25
+				war_support_factor = -0.25
+			}
+		}
+
+		SWE_Low_national_debt = {
+			picture = ""
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = 0.45
+			}
+		}
 	}
 }

@@ -479,8 +479,14 @@ SWE_Folkhemmet_decision_categories = {
             production_factory_start_efficiency_factor = -0.1
         }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = 0.1 }
+            add_to_variable = { SWE_National_debt = 0.2 }
             custom_effect_tooltip = SWE_increase_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
         }
         remove_effect = {
             add_political_power = 300
@@ -511,6 +517,12 @@ SWE_Folkhemmet_decision_categories = {
         complete_effect = {
             add_to_variable = { SWE_National_debt = -0.2 }
             custom_effect_tooltip = SWE_decrease_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_National_debt < 0 }
+				}
+				set_variable = { SWE_National_debt = 0 }
+			}
         }
         remove_effect = {
             add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
@@ -545,6 +557,12 @@ SWE_Folkhemmet_decision_categories = {
         complete_effect = {
             add_to_variable = { SWE_has_National_debt = 0.2 }
             custom_effect_tooltip = SWE_increase_has_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_has_National_debt > 1.2 }
+				}
+				set_variable = { SWE_has_National_debt = 1.2 }
+			}
         }
         remove_effect = {
             add_political_power = 300
@@ -573,8 +591,14 @@ SWE_Folkhemmet_decision_categories = {
             political_power_gain = -0.75
         }
         complete_effect = {
-            add_to_variable = { SWE_has_National_debt = -0.1 }
+            add_to_variable = { SWE_has_National_debt = -0.2 }
             custom_effect_tooltip = SWE_decrease_has_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_has_National_debt < 0 }
+				}
+				set_variable = { SWE_has_National_debt = 0 }
+			}
         }
         remove_effect = {
             add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
@@ -825,6 +849,14 @@ SWE_Folkhemmet_decision_categories = {
         complete_effect = {
             set_variable = { SWE_Immigrant = 0 }
             custom_effect_tooltip = SWE_Immigrant_crisis_solve_tt
+            add_to_variable = { SWE_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_national_debt_decision_tt
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
         }
     }
 }
