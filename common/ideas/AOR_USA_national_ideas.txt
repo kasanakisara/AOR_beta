@@ -696,14 +696,6 @@ ideas = {
 			production_speed_buildings_factor = 0.10
 			}
 		}
-	#世界大战参与奖	
-		USA_participation_award = {
-			picture = GFX_idea_USA_participation_award
-			allowed = { always = yes }
-			modifier = {
-		    	custom_modifier_tooltip = USA_1_tt
-			}
-		}
 	#垫底的美金	
 		USA_Dollar_bottom = {
 			picture = GFX_idea_USA_Dollar_bottom

@@ -32,13 +32,6 @@ ideas = {
 			production_speed_buildings_factor = 0.10
 			}
 		}
-		USA_participation_award = {
-			picture = GFX_idea_USA_participation_award
-			allowed = { always = yes }
-			modifier = {
-			custom_effect_tooltip = USA_1_tt
-			}
-		}
 		USA_Dollar_bottom = {
 			picture = GFX_idea_USA_Dollar_bottom
 			allowed = { always = yes }
