@@ -15,11 +15,6 @@ technologies = {
 			leads_to_tech = interwar_antitank
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = Railway_gun
-			research_cost_coeff = 1
-		}
 		path = {
 			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
