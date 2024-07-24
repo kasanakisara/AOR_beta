@@ -70,8 +70,8 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "hoi4_typewriter16"
 		fontfiles = { 	
-			"gfx/fonts/kai_0"
-			"gfx/fonts/kai_1"
+			"gfx/fonts/songti_bai_0"
+			"gfx/fonts/songti_hei_0"
 		}		
 	languages = { "l_simp_chinese" } 
 	}	
