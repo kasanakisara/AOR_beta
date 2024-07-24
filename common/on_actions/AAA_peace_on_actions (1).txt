@@ -743,10 +743,7 @@ on_actions = {
 					annex_country = {
 						target = USA
 					}
-					country_event = {
-						id = CSA.10000
-						days = 1
-					}
+					country_event = { id = CSA.10000 days = 1 }
 				}
 			}
 			#南京政府——北京政府
@@ -2186,17 +2183,14 @@ on_actions = {
 				limit = {
 					#汉志干涉拉希德家胜利
 					FROM = {
-						AND = {
-							original_tag = JSR
-							original_tag = ARA
-						}
-						
+						original_tag = JSR
+						original_tag = ARA						
 					}
 					ROOT = {
 						original_tag = SAU
 					}
 				}
-				JAR = {
+				JSR = {
 					transfer_state = 950
 					set_country_flag = AOR_nejd_war_winner
 				}
@@ -2208,11 +2202,8 @@ on_actions = {
 				limit = {
 					#汉志干涉沙特胜利
 					FROM = {
-						AND = {
-							original_tag = SUA
-							original_tag = ARA
-						}
-						
+						original_tag = SAU
+						original_tag = ARA	
 					}
 					ROOT = {
 						original_tag = JSR
@@ -2236,7 +2227,7 @@ on_actions = {
 					FROM = {
 						OR = {
 							AND = {
-								original_tag = SUA 
+								original_tag = SAU
 								has_country_flag = AOR_nejd_war_winner
 							}
 							AND = {
@@ -2252,20 +2243,28 @@ on_actions = {
 				}
 				OR = {
 					SAU = {
-						has_global_flag = AOR_nejd_war_winner
+						if = {
+							limit = {
+								has_country_flag = AOR_nejd_war_winner
+							}
 						annex_country = {
 							target = ARA
 						}
 						clr_country_flag = AOR_nejd_war_winner
 						set_cosmetic_tag = SAU_Hejaz_1
+						}
 					}
 					JSR = {
-						has_global_flag = AOR_nejd_war_winner
-						annex_country = {
-							target = ARA
+						if = {
+							limit = {
+							 	has_country_flag = AOR_nejd_war_winner
+							}
+							annex_country = {
+								target = ARA
+							}
+							clr_country_flag = AOR_nejd_war_winner
+							set_cosmetic_tag = JSR_unified
 						}
-						clr_country_flag = AOR_nejd_war_winner
-						set_cosmetic_tag = JSR_unified
 					}
 				}
 				else_if = {
@@ -2282,12 +2281,26 @@ on_actions = {
 						}
 					}
 					ARA = { 
-						annex_country = {
-							OR = {
-								target = SAU
-								target = JSR
+						if = {
+							limit = {
+								SAU = {
+									exists = yes
+								}
 							}
+						annex_country = {
+							target = SAU
 						}
+					}
+						if = {
+							limit = {
+								JSR = {
+									exists = yes
+								}
+							}
+						annex_country = {
+							target = JSR
+						}
+					}
 						set_cosmetic_tag = ARA_unified
 					}
 				}
