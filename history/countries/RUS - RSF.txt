@@ -44,6 +44,12 @@ set_technology = {
 	
 }
 
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 300
+	producer = RUS	
+}
+
 if = {
 	limit = { NOT = { has_dlc = "No Step Back" } }
 	set_technology = {
