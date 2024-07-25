@@ -1,4 +1,4 @@
-﻿add_namespace = finland
+﻿add_namespace = Finland
 
 country_event = {
 	id = Finland.1 #芬兰对峙
@@ -27,47 +27,49 @@ country_event = {
 				add_state_core = 146
 				add_manpower = 10000
 				if = {
-				 NOT = { has_template = "Common Militia" } }
+					limit = { NOT = { has_template = "Common Militia" } }
 					division_template = {
-					priority = 0
-					name = "Common Militia"
-					regiments = {
-					infantry = { x = 0 y = 0 } 
-					infantry = { x = 0 y = 1 } 
-					infantry = { x = 1 y = 0 } 
-					infantry = { x = 1 y = 1 } 
-								}
-					support = {
-								}
-							}
-							random_controlled_state = {
-								limit = { is_capital = yes }
-								create_unit = {
-									division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
-									owner = PREV
-								}
-								create_unit = {
-									division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
-									owner = PREV
-								}
-								create_unit = {
-									division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									owner = PREV
-								}
-								create_unit = {
-									division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									owner = PREV
-								}
-								create_unit = {
-									division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
-									owner = PREV
-								}
-								create_unit = {
-									division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
-									owner = PREV
-									count = 1
-								}
-							}
+						priority = 0
+						name = "Common Militia"
+						regiments = {
+							infantry = { x = 0 y = 0 } 
+							infantry = { x = 0 y = 1 } 
+							infantry = { x = 1 y = 0 } 
+							infantry = { x = 1 y = 1 } 
+						}
+						support = {}
+					}
+					random_controlled_state = {
+						limit = { is_capital = yes }
+						create_unit = {
+							division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+							owner = PREV
+							count = 1
+						}
+					}
+				}
+				country_event = { id = Finland.5  days = 5 }
+			}
 			FIN = {
 				set_capital = {
 					state = 147
@@ -83,13 +85,16 @@ country_event = {
 					Fascism = 0
 					Marxism = 0
 					AUT_democratic = 15
-		    	    	}
-		    	    }
-		    	}
+				}
+				country_event = { id = Finland.5  days = 5 }
+			}
+			SWE = {
+				country_event = { id = Finland.5  days = 5 }
 			}
 		}
-		
 	}
+}
+		
 
 
 country_event = {
@@ -119,13 +124,13 @@ country_event = {
 						type = annex_everything
 					}
 					111 = {
-					create_unit = {
-						division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
-						owner = FIC
-						count = 10
+						create_unit = {
+							division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+							owner = FIC
+							count = 10
+						}
 					}
 				}
-			}
 				FIN = {
 					remove_ideas = An_unstable_republic
 					set_politics = {
@@ -141,13 +146,13 @@ country_event = {
 						AUT_democratic = 15
 					}
 					147 = {
-					create_unit = {
-						division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
-						owner = FIN
-						count = 7
+						create_unit = {
+							division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+							owner = FIN
+							count = 7
+						}
 					}
 				}
-			}
 		}
 	}
         
@@ -197,7 +202,7 @@ country_event = {
 	
 
 country_event = {
-	id = Finland.3
+	id = Finland.3 #白热化
 	title = Finland.3.t
 	desc = Finland.3.d
 	picture = GFX_report_event_chinese_soldiers_fighting 
@@ -259,6 +264,7 @@ country_event = {
 				FIN = { exists = no }
 				FIC = { exists = no}
 			}
+			original_tag = FIN
 		}
     	option = { 
 	    	name = The_civil_war_is_over 
@@ -268,5 +274,18 @@ country_event = {
 			add_stability = 0.1
 			add_political_power = 30
         }
-    }
+}
+
+country_event = {
+	id = Finland.5 #瑞典入侵奥兰
+	title = Finland.5.t
+	desc = Finland.5.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	option = {
+		name = Finland.5.a
+		SWE = {
+			transfer_state = 145
+		}
+	}
+}
 

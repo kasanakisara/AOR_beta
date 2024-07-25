@@ -1,0 +1,23 @@
+defined_text = {
+    name = Finland_4_title
+    text = {
+        trigger = { tag = FIN }
+        localization_key = Finland.white_win.t
+    }
+    text = {
+        trigger = { tag = FIC }
+        localization_key = Finland.red_win.t
+    }
+}
+
+defined_text = {
+    name = Finland_4_desc
+    text = {
+        trigger = { tag = FIN }
+        localization_key = Finland.white_win.d
+    }
+    text = {
+        trigger = { tag = FIC }
+        localization_key = Finland.red_win.d
+    }
+}

@@ -7,10 +7,12 @@ defined_text = { # 战争总结
 				event_target:winning_country = {
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
+					NOT = { original_tag = SWE }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
+					NOT = { original_tag = DEN }
 				}
 				# ORA和ARG都将使用特殊战争总结
 			}
@@ -40,6 +42,18 @@ defined_text = { # 战争总结
 		}
 		localization_key = SP_WARPEACE_ORA_ARG_L
 	}
+
+	text = { #SWE胜DEN
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SWE
+			}
+			event_target:losing_country = {
+				original_tag = DEN
+			}
+		}
+		localization_key = SP_WARPEACE_SWE_DEN_W
+	}
 }
 defined_text = { # 战争结语
 	name = Getwarpeacet
@@ -56,6 +70,7 @@ defined_text = { # 战争结语
 					NOT = { original_tag = MON }
 					NOT = { original_tag = PRC }
 					NOT = { original_tag = DCD }
+					NOT = { original_tag = SWE }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -66,6 +81,7 @@ defined_text = { # 战争结语
 					NOT = { original_tag = MON }
 					NOT = { original_tag = PRC }
 					NOT = { original_tag = DCD }
+					NOT = { original_tag = DEN }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
@@ -186,5 +202,17 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_US1_US2_LT
+	}
+
+	text = { #SWE胜DEN
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SWE
+			}
+			event_target:losing_country = {
+				original_tag = DEN
+			}
+		}
+		localization_key = SP_WARPEACE_SWE_DEN_WT
 	}
 }
