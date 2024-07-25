@@ -1,4 +1,4 @@
-﻿capital = 282
+capital = 282
 oob = "AOR_LAND_JAP"
 add_ideas = JAP_lixian
 add_ideas = JAP_junbu
@@ -9,6 +9,7 @@ add_ideas = JAP_misao
 
 set_technology = {
 	interwar_artillery = 1
+	Old_howitzers = 1
 }
 
 set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
