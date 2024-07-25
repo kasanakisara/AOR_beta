@@ -1,0 +1,27 @@
+state={
+	id=1026
+	name="STATE_1026"
+	manpower = 2000000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		
+		owner = JAP
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			industrial_complex = 1
+		}
+		add_core_of = JAP
+	}
+
+	provinces={
+		7050 10052 11985
+	}
+
+	local_supplies=0.0 
+}

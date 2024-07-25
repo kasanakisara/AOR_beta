@@ -150,8 +150,11 @@ if = {
 	}
 }
 
-
-
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 300
+	producer = ITA	
+}
 
 set_convoys = 200
 
