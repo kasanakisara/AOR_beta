@@ -43,12 +43,13 @@
  SP_WARPEACE_DEFAULT:0 "在刚刚结束的一场战争中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_ORA_ARG_W:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_ORA_ARG_L:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_SWE_DEN_W:0 "在决定北欧罗巴命运的§Q大北欧战争§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  #特殊
 ##战争结语
  SP_WARPEACE_DEFAULT_T:0 "战争能被终结，但战争不能终结一切"
  #特殊
  SP_WARPEACE_ORA_ARG_WT:0 "“他们不是革命的， 而是保守的。 不仅如此， 他们甚至是反动的，因为他们力图使历史的车轮倒转。”"
- SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟,并获得了国内群众的意外支持。"
+ SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟，并获得了国内群众的意外支持。"
 
  SP_WARPEACE_USA_CSA_WT:0 "“正直人的纯正，必引导自己。奸诈人的乖僻，必毁灭自己。”"
  SP_WARPEACE_USA_CSA_LT:0 "恶人的强暴，必将自己扫除。"
@@ -61,5 +62,7 @@
 
  SP_WARPEACE_US1_US2_WT:0 "“凡动刀的，必死在刀下”"
  SP_WARPEACE_US1_US2_LT:0 "伟大的试错，让西雅图流尽了自由的血。"
+
+ SP_WARPEACE_SWE_DEN_WT:0 "斯堪的纳维亚的三顶王冠终于成真。"
 
  
