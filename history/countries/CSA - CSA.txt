@@ -60,7 +60,7 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-	type = artillery_equipment
+	type = artillery_equipment_1
 	amount = 500
 	producer = CSA	
 }
