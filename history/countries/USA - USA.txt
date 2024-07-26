@@ -1,14 +1,14 @@
 ﻿capital = 361
 
-#oob = "USA_1936"
+oob = "AOR_USA_naval"
 oob = "USA_1919"
 starting_train_buffer = 5
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		#set_naval_#oob = "USA_1936_naval_mtg"
+		#set_naval_oob = "USA_1936_naval_mtg"
 	else = {
-		#set_naval_#oob = "USA_1936_naval_legacy"
+		#set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
 
@@ -31,13 +31,13 @@ USA = {
 
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 500
+	amount = 300
 	producer = USA	
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 300
+	amount = 100
 	producer = USA	
 }
 
@@ -51,13 +51,18 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
  
-	interwar_antiair = 1
- 
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	cv_CAS1 = 1
- 
-	CAS1 = 1
+	early_ship_hull_submarine = 1
+	tech_1919_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	tech_1919_ship_hull_light = 1
+	early_ship_hull_light_cruiser = 1
+	tech_1919_ship_hull_light_cruiser = 1
+	early_ship_hull_heavy_cruiser = 1
+	late_ship_hull_heavy_cruiser = 1
+	early_ship_hull_heavy = 1
+	tech_1919_crusier_battleship_hull = 1
+	tech_1919_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
  
 	superior_firepower = 1
 	base_strike = 1
@@ -236,7 +241,7 @@ recruit_character = USA_f_c_answorth
 recruit_character = USA_george_barnett
 recruit_character = USA_john_a_lerchen
 recruit_character = USA_harry_a_eaton
-recruit_character = USA_robert_l_hauser
+recruit_character = USA_robert_l_h USAer
 recruit_character = USA_edward_whittemore
 recruit_character = USA_william_l_seibert
 recruit_character = USA_brayton_brown
@@ -272,4 +277,114 @@ recruit_character = USA_William_Mitchell_a
 set_autonomy = {
 target = HSP
 autonomy_state = autonomy_puppet
+}
+
+create_equipment_variant = {
+	name = "纽约级"				
+	type = battle_cruiser_2
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = ship_heavy_battery_2
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		fixed_ship_secondaries_slot = ship_secondaries_2
+		mid_1_custom_slot = ship_airplane_launcher_1
+		mid_2_custom_slot = ship_secondaries_2
+		rear_1_custom_slot = ship_heavy_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "佛罗里达级"				
+	type = battle_cruiser_1
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = ship_heavy_battery_1 
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_bb_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		mid_1_custom_slot = ship_airplane_launcher_1
+		mid_2_custom_slot = ship_secondaries_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+}
+create_equipment_variant = {
+	name = "切斯特级"				
+	type = light_cruiser_1
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = ship_light_medium_battery_1
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		mid_1_custom_slot = ship_airplane_launcher_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "维克斯级"				
+	type = destroyer_2
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = ship_torpedo_1
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_armor_slot = empty
+		fixed_ship_secondaries_slot = empty
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "桑普森级"				
+	type = destroyer_1
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = ship_torpedo_1
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_armor_slot = empty
+		fixed_ship_secondaries_slot = empty
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "E级潜艇"				
+	type = submarine_2
+	parent_version = 0
+	modules = {
+		front_1_custom_slot = empty
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_battery_slot = empty
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = empty
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = empty
+		fixed_ship_secondaries_slot = empty
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
 }
