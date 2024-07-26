@@ -2884,3 +2884,94 @@ news_event = { #芬兰内战白热化
 		name = AOR_news.196.a
 	}
 }
+
+news_event = { #约翰·南斯·加纳发动新闻攻势
+	id = AOR_news.197
+	title = AOR_news.197.t
+	desc = AOR_news.197.d
+	picture = GFX_AOR_news.197_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.197.a
+	}
+}
+
+news_event = { #西奥多·比尔博发表反美言论
+	id = AOR_news.198
+	title = AOR_news.198.t
+	desc = AOR_news.198.d
+	picture = GFX_AOR_news.198_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.198.a
+	}
+}
+
+news_event = { #美国西部动乱愈演愈烈
+	id = AOR_news.199
+	title = AOR_news.199.t
+	desc = AOR_news.199.d
+	picture = GFX_AOR_news.199_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.199.a
+	}
+}
+
+news_event = { #美国西部信息连接疑似被人为切断
+	id = AOR_news.200
+	title = AOR_news.200.t
+	desc = AOR_news.200.d
+	picture = GFX_AOR_news.200_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.200.a
+	}
+}
+
+news_event = { #老洛克菲勒会见美国总统
+	id = AOR_news.201
+	title = AOR_news.201.t
+	desc = AOR_news.201.d
+	picture = GFX_AOR_news.201_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.201.a
+	}
+}
+
+news_event = { #法国总理在巴拿马会见美国总统
+	id = AOR_news.202
+	title = AOR_news.202.t
+	desc = AOR_news.202.d
+	picture = GFX_AOR_news.202_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.202.a
+	}
+}
+
+news_event = { #美国公布新一轮反布尔什维克计划
+	id = AOR_news.203
+	title = AOR_news.203.t
+	desc = AOR_news.203.d
+	picture = GFX_AOR_news.203_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.203.a
+	}
+}
