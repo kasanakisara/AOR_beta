@@ -764,7 +764,7 @@ units= {
                     }
                 }
             }
-			ship = {
+            ship = {
                 name = "纽约级" 
                 pride_of_the_fleet = yes
                 definition = battleship
@@ -776,7 +776,7 @@ units= {
                     }
                 }
             }
-			ship = {
+            ship = {
                 name = "纽约级" 
                 pride_of_the_fleet = yes
                 definition = battleship
