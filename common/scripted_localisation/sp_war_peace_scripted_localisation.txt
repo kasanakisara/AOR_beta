@@ -8,11 +8,15 @@ defined_text = { # 战争总结
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
 					NOT = { original_tag = SWE }
+					NOT = { original_tag = FIC }
+					NOT = { original_tag = FIN }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
 					NOT = { original_tag = ARG }
 					NOT = { original_tag = DEN }
+					NOT = { original_tag = FIC }
+					NOT = { original_tag = FIN }
 				}
 				# ORA和ARG都将使用特殊战争总结
 			}
@@ -54,6 +58,25 @@ defined_text = { # 战争总结
 		}
 		localization_key = SP_WARPEACE_SWE_DEN_W
 	}
+
+	text = { #FIC胜FIN或反之
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = FIC
+					original_tag = FIN
+				}
+				
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = FIC
+					original_tag = FIN
+				}
+			}
+		}
+		localization_key = SP_WARPEACE_FIC_FIN_W
+	}
 }
 defined_text = { # 战争结语
 	name = Getwarpeacet
@@ -71,6 +94,8 @@ defined_text = { # 战争结语
 					NOT = { original_tag = PRC }
 					NOT = { original_tag = DCD }
 					NOT = { original_tag = SWE }
+					NOT = { original_tag = FIC }
+					NOT = { original_tag = FIN }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -82,6 +107,8 @@ defined_text = { # 战争结语
 					NOT = { original_tag = PRC }
 					NOT = { original_tag = DCD }
 					NOT = { original_tag = DEN }
+					NOT = { original_tag = FIC }
+					NOT = { original_tag = FIN }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
@@ -214,5 +241,31 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_SWE_DEN_WT
+	}
+
+	text = { #FIC胜FIN
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FIC
+				
+			}
+			event_target:losing_country = {
+				original_tag = FIN
+			}
+		}
+		localization_key = SP_WARPEACE_FIC_FIN_WT
+	}
+
+	text = { #FIN胜FIC
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FIN
+				
+			}
+			event_target:losing_country = {
+				original_tag = FIC
+			}
+		}
+		localization_key = SP_WARPEACE_FIC_FIN_LT
 	}
 }

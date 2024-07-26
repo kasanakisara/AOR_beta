@@ -2845,3 +2845,29 @@ news_event = { #芬兰内战爆发
 		name = AOR_news.193.a
 	}
 }
+
+news_event = { #芬兰内战结束-红方胜利
+	id = AOR_news.194
+	title = AOR_news.194.t
+	desc = AOR_news.194.d
+	picture = GFX_AOR_news.194_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.194.a
+	}
+}
+
+news_event = { #芬兰内战结束-白方胜利
+	id = AOR_news.195
+	title = AOR_news.194.t
+	desc = AOR_news.195.d
+	picture = GFX_AOR_news.194_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.195.a
+	}
+}
