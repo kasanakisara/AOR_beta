@@ -22,7 +22,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -34,7 +33,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -46,7 +44,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -58,7 +55,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -70,7 +66,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -82,7 +77,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -94,7 +88,6 @@ units= {
             }
 			ship = {
                 name = "E级潜艇" 
-                pride_of_the_fleet = yes
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
@@ -106,7 +99,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -118,7 +110,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -130,7 +121,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -142,7 +132,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -154,7 +143,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -166,7 +154,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -178,7 +165,17 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级"
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -190,7 +187,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -202,7 +198,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -214,7 +209,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -226,7 +220,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -238,7 +231,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -250,7 +242,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -262,7 +253,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -274,7 +264,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -286,7 +275,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -298,7 +286,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -310,7 +297,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -322,7 +308,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -334,7 +319,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -346,19 +330,6 @@ units= {
             }
 			ship = {
                 name = "桑普森级" 
-                pride_of_the_fleet = yes
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "桑普森级"
-                    }
-                }
-            }
-			ship = {
-                name = "桑普森级" 
-                pride_of_the_fleet = yes
                 definition = destroyer
                 equipment = { 
                     destroyer_1 = {
@@ -370,7 +341,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -382,7 +353,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -394,7 +365,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -406,7 +377,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -418,7 +389,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -430,7 +401,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -442,7 +413,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -454,7 +425,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -466,7 +437,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -478,7 +449,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -490,7 +461,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -502,7 +473,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -514,7 +485,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -526,7 +497,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -538,7 +509,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -550,7 +521,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -562,7 +533,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -574,7 +545,7 @@ units= {
             }
 			ship = {
                 name = "维克斯级" 
-                pride_of_the_fleet = yes
+                
                 definition = destroyer
                 equipment = { 
                     destroyer_2 = {
@@ -586,7 +557,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -598,7 +569,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -610,7 +581,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -622,7 +593,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -634,7 +605,7 @@ units= {
             }
             ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -646,7 +617,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -658,7 +629,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -670,7 +641,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -682,7 +653,7 @@ units= {
             }
             ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -694,7 +665,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -706,7 +677,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -718,7 +689,7 @@ units= {
             }
 			ship = {
                 name = "切斯特级" 
-                pride_of_the_fleet = yes
+                
                 definition = heavy_cruiser
                 equipment = { 
                     light_cruiser_1 = {
@@ -730,7 +701,7 @@ units= {
             }
 			ship = {
                 name = "佛罗里达级" 
-                pride_of_the_fleet = yes
+                
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
@@ -742,7 +713,7 @@ units= {
             }
             ship = {
                 name = "佛罗里达级" 
-                pride_of_the_fleet = yes
+                
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
@@ -754,7 +725,7 @@ units= {
             }
             ship = {
                 name = "佛罗里达级" 
-                pride_of_the_fleet = yes
+                
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
@@ -766,7 +737,7 @@ units= {
             }
             ship = {
                 name = "纽约级" 
-                pride_of_the_fleet = yes
+                
                 definition = battleship
                 equipment = { 
                     battle_cruiser_2 = {
@@ -778,7 +749,7 @@ units= {
             }
             ship = {
                 name = "纽约级" 
-                pride_of_the_fleet = yes
+                
                 definition = battleship
                 equipment = { 
                     battle_cruiser_2 = {
