@@ -279,7 +279,7 @@ country_event = {
 
 	option = { 
 		name = Kolchak_may_help_us 
-    	ai_chance = { factor = 1}
+    	ai_chance = { factor = 0.8}
 	   	ARU = { add_to_faction = FIN }
 	    	FIN = {
 				add_to_war = {
@@ -294,10 +294,11 @@ country_event = {
 					enemy = ARU
 				}
 	    	}
+			news_event = { id = AOR_news.196 }
 	    }
 	option = { 
 		name = Russians_are_always_our_biggest_enemy
-        ai_chance = { factor = 0}
+        ai_chance = { factor = 0.2}
 	    	FIN = {
 	        	147 = {
 	        		create_unit = {

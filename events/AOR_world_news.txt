@@ -2871,3 +2871,16 @@ news_event = { #芬兰内战结束-白方胜利
 		name = AOR_news.195.a
 	}
 }
+
+news_event = { #芬兰内战白热化
+	id = AOR_news.196
+	title = AOR_news.196.t
+	desc = AOR_news.196.d
+	picture = GFX_AOR_news.196_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.196.a
+	}
+}
