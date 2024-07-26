@@ -69,6 +69,7 @@ country_event = {
 					}
 				}
 				country_event = { id = Finland.5  days = 5 }
+				news_event = { id = AOR_news.28 }
 			}
 			FIN = {
 				set_capital = {
@@ -87,10 +88,13 @@ country_event = {
 					AUT_democratic = 15
 				}
 				country_event = { id = Finland.5  days = 5 }
+				news_event = { id = AOR_news.28 }
 			}
 			SWE = {
 				country_event = { id = Finland.5  days = 5 }
+				news_event = { id = AOR_news.28 }
 			}
+			news_event = { id = AOR_news.28 }
 		}
 	}
 }
@@ -163,20 +167,20 @@ country_event = {
 			hidden_effect = {
 				FIC = {
 					declare_war_on = {
-					target = FIN
-					type = civil_war
+						target = FIN
+						type = civil_war
 					}
 					111 = {
 						create_unit = {
 							division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
 							owner = PREV
 							count = 10
-					}
-				}	
-			}
+						}
+					}	
+				}
 				FIN = {
-						remove_ideas = An_unstable_republic
-						set_politics = {
+					remove_ideas = An_unstable_republic
+					set_politics = {
 						ruling_party = Absolutism
 						last_election = "1919.7.1"
 						election_frequency = 36
@@ -189,13 +193,14 @@ country_event = {
 						AUT_democratic = 15
 					}
 					147 = {
-					create_unit = {
-						division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
-						owner = PREV
-						count = 8
-					    }
+						create_unit = {
+							division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+							owner = PREV
+							count = 8
+						}
 				    }	
-				}			
+				}
+				news_event = { id = AOR_news.193 }		
 			}
 		}
     }
@@ -220,7 +225,7 @@ country_event = {
 
 	option = { 
 		name = Kolchak_may_help_us 
-        ai_chance = { factor = 0.8}
+        ai_chance = { factor = 1}
 	    	ARU = { add_to_faction = FIN }
 	    	FIN = {
 				add_to_war = {
@@ -238,7 +243,7 @@ country_event = {
 	    }
 	option = { 
 		name = Russians_are_always_our_biggest_enemy
-        ai_chance = { factor = 0.2}
+        ai_chance = { factor = 0}
 	    	FIN = {
 	        	147 = {
 	        		create_unit = {
@@ -286,6 +291,7 @@ country_event = {
 		SWE = {
 			transfer_state = 145
 		}
+		news_event = { id = AOR_news.192 }
 	}
 }
 

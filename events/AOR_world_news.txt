@@ -496,7 +496,7 @@ news_event = { #菲律宾革命被平息
 	}
 }
 
-news_event = { #哈康遇刺
+news_event = { #芬兰陷入对峙
 	id = AOR_news.28
 	title = AOR_news.28.t
 	desc = AOR_news.28.d
@@ -2817,5 +2817,31 @@ news_event = {#劳动骑士团参与美国内战
 
 	option = {
 		name = AOR_news.191.a
+	}
+}
+
+news_event = { #瑞典入侵奥兰
+	id = AOR_news.192
+	title = AOR_news.192.t
+	desc = AOR_news.192.d
+	picture = GFX_AOR_news.192_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.192.a
+	}
+}
+
+news_event = { #芬兰内战爆发
+	id = AOR_news.193
+	title = AOR_news.193.t
+	desc = AOR_news.193.d
+	picture = GFX_AOR_news.193_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.193.a
 	}
 }
