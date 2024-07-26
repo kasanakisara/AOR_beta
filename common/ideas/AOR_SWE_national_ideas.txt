@@ -1,5 +1,7 @@
 ideas = {
+
 	country = {
+		
 		SWE_Left_Threat = {
 			picture = GFX_idea_SWE_Left_Threat
 			allowed = { always = yes }
@@ -171,7 +173,7 @@ ideas = {
 			picture = ""
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = 0.3
+				stability_factor = 0.25
 				political_power_gain = 0.25
 				consumer_goods_expected_value = 0.25
 				stability_weekly = 0.025
