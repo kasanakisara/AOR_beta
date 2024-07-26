@@ -9,7 +9,7 @@ guiTypes = {
 		instantTextboxType = {
 			#名称不可重复
 			name = "Fighting_inflation_no.1"
-			position = { x = 80 y =@PER_TXT_Y}
+			position = { x = 50 y =@PER_TXT_Y}
 			#字体
 			font = "hoi_30header"
 			#文本框的文本，在本地化里写
@@ -23,7 +23,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "Fighting_inflation_no.1_tx"
-			position = { x = 80 y =@PER_TXT_Y}
+			position = { x = 50 y =@PER_TXT_Y}
 			maxwidth = 35
 			maxHeight = 22
 			pdx_tooltip = Fighting_inflation_lvl1_tt
@@ -31,7 +31,7 @@ guiTypes = {
         #2鸡
         instantTextboxType = {
 			name = "Fighting_inflation_no.2"
-			position = { x = 250 y =@PER_TXT_Y}
+			position = { x = 150 y =@PER_TXT_Y}
 			#字体
 			font = "hoi_30header"
 			text = "Fighting_inflation_no.2_text"
@@ -42,7 +42,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "Fighting_inflation_no.2_tx"
-			position = { x = 250 y =@PER_TXT_Y}
+			position = { x = 150 y =@PER_TXT_Y}
 			maxwidth = 35
 			maxHeight = 22
 			pdx_tooltip = Fighting_inflation_lvl2_tt
@@ -50,7 +50,7 @@ guiTypes = {
         #3鸡(山鸡）我的兄弟是浩南
         instantTextboxType = {
 			name = "Fighting_inflation_no.3"
-			position = { x = 400 y =@PER_TXT_Y}
+			position = { x = 250 y =@PER_TXT_Y}
 			font = "hoi_30header"
 			text = "Fighting_inflation_no.3_text"
 			maxHeight = 24
@@ -59,10 +59,27 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "Fighting_inflation_no.3_tx"
-			position = { x = 400 y =@PER_TXT_Y}
+			position = { x = 250 y =@PER_TXT_Y}
 			maxwidth = 35
 			maxHeight = 22
 			pdx_tooltip = Fighting_inflation_lvl3_tt
+		}
+		#4鸡
+        instantTextboxType = {
+			name = "Fighting_inflation_no.4"
+			position = { x = 400 y =@PER_TXT_Y}
+			font = "hoi_30header"
+			text = "Fighting_inflation_no.4_text"
+			maxHeight = 24
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "Fighting_inflation_no.4_tx"
+			position = { x = 400 y =@PER_TXT_Y}
+			maxwidth = 35
+			maxHeight = 22
+			pdx_tooltip = Fighting_inflation_lvl4_tt
 		}
         #当前
         instantTextBoxType = {

@@ -18,7 +18,14 @@ defined_text = { #通胀文本
 		}
 		localization_key = AOR_LOC_PER_Fighting_inflation_3
 	}
+	text = {
+		trigger = {
+			has_idea = PER_Fighting_inflation_4
+		}
+		localization_key = AOR_LOC_PER_Fighting_inflation_4
+	}
 }
+
 defined_text = { #农业圣战状态
 	name = Agricultural_Jihad_Preliminary_jy
 	text = {
