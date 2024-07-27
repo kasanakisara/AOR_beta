@@ -1,10 +1,10 @@
 
 state={
-	id=144
-	name="STATE_144"
+	id=1029
+	name="STATE_1029"
 	manpower = 355251
 	
-	state_category = rural
+	state_category = city
 	
 	resources={
 		steel=9 # was: 12
@@ -14,21 +14,19 @@ state={
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 2
+            infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
 			air_base = 1
-			192 = {
-				naval_base = 3
-			}
 		}
-		victory_points = {
-			192 1
-		}
+		
 		add_core_of = SWE
 		add_core_of = NOR
 	}
 
 	provinces={
-		38 173 192 3034 3048 3088 3126 3132 6071 6111 6187 6214 9126 9208 11157 
+		144 9157 6160 9103 11078 11184 3171 11151 3007 179
 	}
 
 	local_supplies=0.0 

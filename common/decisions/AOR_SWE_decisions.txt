@@ -106,7 +106,7 @@ SWE_Norweign_Independence_decision_categories = {
         available = { has_country_flag = SWE_K_Plan_flag }
         visible = { has_country_flag = SWE_K_Plan_flag }
         state_target = yes
-        targets = { 142 110 143 144 }
+        targets = { 142 110 143 144 967 1027 1022 1028 1029 1030 }
         on_map_mode = map_only
         days_re_enable = 49
         ai_will_do = {
