@@ -221,7 +221,7 @@ PER_Northern_Reconstruction_decision_category = {#重建
 			has_country_flag = unlock_AOR_PER_Northern_Reconstruction
 		}                                    
 		available = {                           
-			infrastructure > 15
+			infrastructure > 20
 		}
 		
 		is_good = no #(决定任务进度条的颜色）                         
@@ -241,7 +241,7 @@ PER_Northern_Reconstruction_decision_category = {#重建
 PER_Industrial_Development_Plan_No.1 = {
 	Azerbaijan_Industrial_Development = {#阿塞拜疆
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -268,7 +268,7 @@ PER_Industrial_Development_Plan_No.1 = {
 	}
 	Qom_Industrial_Development = {#库姆
 		iocn = GFX_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -295,7 +295,7 @@ PER_Industrial_Development_Plan_No.1 = {
 	}
 	Mashhad_Industrial_Development = {#马什哈德
 		iocn = GFX_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -322,7 +322,7 @@ PER_Industrial_Development_Plan_No.1 = {
 	}
 	centre_Industrial_Development = {#中央——德黑兰
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -349,7 +349,7 @@ PER_Industrial_Development_Plan_No.1 = {
 	}
 	Arabistan_Industrial_Development = {#阿拉伯斯坦
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -376,7 +376,7 @@ PER_Industrial_Development_Plan_No.1 = {
 	}
 	Fars_Industrial_Development = {#法尔斯
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -408,7 +408,7 @@ PER_Fighting_inflation = {
 		allowed = {original_tag  = PER}
 		cost = 20
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 90
 		available = {
 			has_idea = PER_Fighting_inflation_1
 			has_completed_focus = PER_Fighting_inflation_16

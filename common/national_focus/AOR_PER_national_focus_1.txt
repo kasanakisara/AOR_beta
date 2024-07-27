@@ -44,10 +44,10 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-	focus = { #基础设施重建 ##############需优化###########
+	focus = { #基础设施重建 ##########第二阶段移除###########
 		id = PER_Infrastructure_restoration_7
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 2
 		prerequisite = {
 			focus = PER_Northern_Reconstruction_2
 		}
@@ -57,10 +57,10 @@ focus_tree = {
 			add_ideas =  PER_Infrastructure_restoration_1
 		}
 	}
-	focus = { #民间施工队  ################需优化###########
+	focus = { #民间施工队  ############第二阶段移除###########
 		id = PER_civil_construction_team_22
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 1
 		prerequisite = {
 			focus = PER_Infrastructure_restoration_7
 		}
@@ -69,7 +69,6 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-		cost = 2
 		completion_reward = {
 			add_political_power = 20
 			swap_ideas = {
@@ -78,10 +77,10 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { #英国企业   ####################需优化###########
+	focus = { #英国企业   ###############第二阶段移除###########
 		id = PER_UK_companies_23
 		icon = GFX_goal_unknown
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = PER_Infrastructure_restoration_7
 		}
@@ -90,7 +89,6 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-		cost = 2
 		completion_reward = {
 			add_political_power = -20
 			swap_ideas = {
@@ -107,7 +105,7 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-		cost = 6
+		cost = 3
 		completion_reward = {
 			419 = {
 				add_extra_state_shared_building_slots = 2
@@ -143,7 +141,7 @@ focus_tree = {
 	focus = {#恢复生产
 		id = PER_ume_oduction_29
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = PER_receive_Russian_funded_factories_8
 		}
@@ -156,7 +154,7 @@ focus_tree = {
 	focus = {#损失统计
 		id = PER_Loss_statistics_9
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 4
 		prerequisite = {
 			focus = PER_Northern_Reconstruction_2
 		}
@@ -201,7 +199,7 @@ focus_tree = {
 	focus = {#发动农业圣战
 		id = PER_Agricultural_Jihad_Preliminary_0
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_Conference_on_Postwar_Issues_1
 		}
@@ -230,7 +228,7 @@ focus_tree = {
 	focus = {#土地问题
 		id = PER_Land_issues_11
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PER_Agricultural_Jihad_Preliminary_0
 		}
@@ -243,7 +241,7 @@ focus_tree = {
 	focus = {#稳中求进
 		id = PER_pursue_progress_while_ensuring_stabilits_4
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = PER_Conference_on_Postwar_Issues_1
 		}
@@ -257,7 +255,7 @@ focus_tree = {
 	focus = {#传播立宪思想
 		id = PER_Promotion_of_Constitutional_Thought_12
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 4
 		prerequisite = {
 			focus = PER_pursue_progress_while_ensuring_stabilits_4
 		}
@@ -272,7 +270,7 @@ focus_tree = {
 	focus = {#1号工业发展案
 		id = PER_Industrial_Development_Plan_No.1_13
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 4
 		prerequisite = {
 			focus = PER_pursue_progress_while_ensuring_stabilits_4
 		}
@@ -285,7 +283,7 @@ focus_tree = {
 	focus = {#发展高等教育
 		id = PER_higher_education_14
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_pursue_progress_while_ensuring_stabilits_4
 		}
@@ -301,7 +299,7 @@ focus_tree = {
 	focus = {#改革经书教育
 		id = PER_Scripture_education_15
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_pursue_progress_while_ensuring_stabilits_4
 		}
@@ -316,7 +314,7 @@ focus_tree = {
 	focus = {#对抗通胀
 		id = PER_Fighting_inflation_16
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_pursue_progress_while_ensuring_stabilits_4
 		}
@@ -345,7 +343,7 @@ focus_tree = {
 	focus = {#发动对贪污的圣战
 		id = PER_jihad_of_Corruption_Preliminary_5
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 2
 		prerequisite = {
 			focus = PER_Conference_on_Postwar_Issues_1
 		}
@@ -360,7 +358,7 @@ focus_tree = {
 	focus = {#政府领域的重拳
 		id = PER_Heavy_fists_government_sector_18
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 3
 		prerequisite = {
 			focus = PER_jihad_of_Corruption_Preliminary_5
 		}
@@ -374,7 +372,7 @@ focus_tree = {
 	focus = {#军事领域的重拳
 		id = PER_Heavy_fists_military_field_19
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 3
 		prerequisite = {
 			focus = PER_jihad_of_Corruption_Preliminary_5
 		}
@@ -390,7 +388,7 @@ focus_tree = {
 	focus = {#混乱的政府机构
 		id = PER_Chaotic_government_institutions_20
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 3
 		prerequisite = {
 			focus = PER_Preliminary_government_reform_6
 		}
@@ -416,7 +414,7 @@ focus_tree = {
 	focus = {#国家咨询委员会
 		id = PER_National_Advisory_Committee_49
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 3
 		prerequisite = {
 			focus = PER_Chaotic_government_institutions_20
 		}
@@ -429,7 +427,7 @@ focus_tree = {
 	focus = {#军队评估
 		id = PER_Military_evaluation_21
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = PER_Preliminary_government_reform_6
 		}
@@ -442,7 +440,7 @@ focus_tree = {
 	focus = {#哥萨克
 		id = PER_Cossack_50
 		icon = GFX_goal_unknown
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = PER_Military_evaluation_21
 		}
@@ -464,7 +462,7 @@ focus_tree = {
 	focus = {#宪兵队
 		id = PER_Gendarmerie_51
 		icon = GFX_goal_unknown
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = PER_Military_evaluation_21
 		}
@@ -486,7 +484,7 @@ focus_tree = {
 	focus = {#洋枪队
 		id = PER_with_foreign_guns_52
 		icon = GFX_goal_unknown
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = PER_Military_evaluation_21
 		}
@@ -541,7 +539,7 @@ focus_tree = {
 	focus = {#土地买卖法规
 		id = PER_Land_Purchase_Sale_Regulations_37
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = PER_Land_issues_11
 		}
@@ -555,7 +553,7 @@ focus_tree = {
 	focus = {#没收贪官的土地
 		id = PER_Land_confiscation_by_corrupt_officials_38
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 5
 		prerequisite = {
 			focus = PER_Land_issues_11
 		}
@@ -568,7 +566,7 @@ focus_tree = {
 	focus = {#军工业发展
 		id = PER_Military_industry_39
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = PER_Industrial_Development_Plan_No.1_13
 		}
@@ -588,7 +586,7 @@ focus_tree = {
 	focus = {#民工业发展
 		id = PER_Civil_industry_40
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = PER_Industrial_Development_Plan_No.1_13
 		}
@@ -608,7 +606,7 @@ focus_tree = {
 	focus = {#聘请英国经济专家
 		id = PER_Hiring_UK_experts_40
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = PER_Fighting_inflation_16
 		}
@@ -621,7 +619,7 @@ focus_tree = {
 	focus = {#物价调控
 		id = PER_Price_control_41
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = PER_Fighting_inflation_16
 		}
@@ -635,7 +633,7 @@ focus_tree = {
 	focus = {#供给管理
 		id = PER_supply_management_42
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = PER_Fighting_inflation_16
 		}
@@ -649,7 +647,7 @@ focus_tree = {
 	focus = {#对买官卖官的绞杀
 		id = PER_Hanging_buying_selling_officials_45
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_Heavy_fists_military_field_19
 		}
@@ -682,7 +680,7 @@ focus_tree = {
 	focus = {#建立总参谋部
 		id = PER_Headquarters_General_Staff_53
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = PER_with_foreign_guns_52
 			focus = PER_Gendarmerie_51
@@ -697,7 +695,7 @@ focus_tree = {
 	focus = {#精英学院
 		id = PER_Dar_ol_Fonoun_54
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 3
 		prerequisite = {
 			focus = PER_Military_evaluation_21
 		}
@@ -716,7 +714,7 @@ focus_tree = {
 	focus = {#英国教官
 		id = PER_British_instructor_55
 		icon = GFX_goal_unknown
-		cost = 6
+		cost = 2
 		prerequisite = {
 			focus = PER_Dar_ol_Fonoun_54
 		}
