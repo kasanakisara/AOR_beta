@@ -27,7 +27,7 @@ ideas = {
 			}
 		}
 		PER_Few_troops_2 = { #兵微将乏
-			picture = GFX_idea_PER_Few_troops
+			picture = GFX_idea_PER_Few_troops_1
 			allowed = { always = yes }
 			modifier = {
 				ARMY_ORG_FACTOR = -0.25
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		PER_Few_troops_3_1 = { #哥萨克主导
-			picture = GFX_idea_PER_Few_troops
+			picture = GFX_idea_PER_Few_troops_2
 			allowed = { always = yes }
 			modifier = {
 				ARMY_ORG_FACTOR = -0.20
@@ -50,7 +50,7 @@ ideas = {
 			}
 		}
 		PER_Few_troops_3_2 = { #洋枪队主导
-			picture = GFX_idea_PER_Few_troops
+			picture = GFX_idea_PER_Few_troops_3
 			allowed = { always = yes }
 			modifier = {
 				ARMY_ORG_FACTOR = -0.20
@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 		PER_Few_troops_3_3 = { #宪兵队主导
-			picture = GFX_idea_PER_Few_troops
+			picture = GFX_idea_PER_Few_troops_4
 			allowed = { always = yes }
 			modifier = {
 				ARMY_ORG_FACTOR = -0.20
@@ -96,7 +96,7 @@ ideas = {
 			}
 		}
 		PER_Great_Famine_1 = {#饿殍满道
-			picture = GFX_idea_PER_Great_Famine
+			picture = GFX_idea_PER_Great_Famine_1
 			allowed = { always = yes }
 			modifier = {
 				CONSCRIPTION_FACTOR = -0.2
@@ -106,7 +106,7 @@ ideas = {
 			}
 		}
 		PER_Great_Famine_2= {#凶年恶岁
-			picture = GFX_idea_PER_Great_Famine
+			picture = GFX_idea_PER_Great_Famine_2
 			allowed = { always = yes }
 			modifier = {
 				CONSCRIPTION_FACTOR = -0.15
@@ -133,7 +133,7 @@ ideas = {
 			}
 		}
 		PER_Illiterate_people_2 = {#不通文墨
-			picture = GFX_idea_PER_Illiterate_people
+			picture = GFX_idea_PER_Illiterate_people_1
 			allowed = { always = yes }
 			modifier = {
 				RESEARCH_SPEED_FACTOR = -0.12
@@ -148,7 +148,7 @@ ideas = {
 			}
 		}
 		PER_rebellious_tribe_1 = {	#不满的部落
-			picture = GFX_idea_PER_rebellious_tribe
+			picture = GFX_idea_PER_rebellious_tribe_1
 			allowed = { always = yes }
 			modifier = {
 				STABILITY_FACTOR = -0.1
@@ -217,7 +217,7 @@ ideas = {
 				industrial_capacity_factory = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
-				consumer_goods_factor = 0.4
+				consumer_goods_factor = 0.2
 			}
 		}
 		PER_Fighting_inflation_2 = {
@@ -237,17 +237,17 @@ ideas = {
 				industrial_capacity_factory = -0.3
 				production_factory_max_efficiency_factor = -0.3
 				production_factory_efficiency_gain_factor = -0.3
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
-		PER_Fighting_inflation_12 = {#通胀民族精神
-			picture = GFX_Fighting_inflation_lvl1_2
+		PER_Fighting_inflation_4 = {#通胀民族精神（正）
+			picture = GFX_Fighting_inflation_lvl4_1
 			modifier = {
 				line_change_production_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 			}
 		}
 		#农业民族精神
