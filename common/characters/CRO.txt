@@ -15,4 +15,20 @@ characters = {
 		}
 	}
 
+	HUN_GUY={
+		name= "Nikola Tomašić"
+		portraits={
+			civilian={
+				large="gfx/leaders/CRO/CRO_HUN.dds"
+			}
+		}
+		country_leader={
+			ideology = socialism
+			desc = "CRO_HUN_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 }

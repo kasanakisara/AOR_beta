@@ -1,7 +1,8 @@
 add_namespace = HUN
 add_namespace = HUN_news
+#克罗地亚问题
 country_event = {
-	id = HUN.1
+	id = HUN.1 #匈牙利进攻三一共和国
 	title = HUN.1.t
 	desc = HUN.1.d
 	picture = GFX_events_HUN_1
@@ -9,24 +10,40 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
+		HUN = {has_ideology = Fascism}
 	}
 	mean_time_to_happen = {
-		days = 1
+		days = 30
 	}
-    #那就这样吧  	
+    #是时候恢复马扎尔人的统治了	
 	option = {
 		name = HUN.1.a
-		news_event = {id = HUN_news.1}
+		news_event = {id = HUN_news.ATKCRO}
 		HUN = {
 			declare_war_on = {
 				target = CRO
-				type = puppet_wargoal_focus
+				type = annex_everything
 				}
+				add_manpower = 50000
 		}
 }
 }
+
+news_event = {  #匈牙利进攻三一共和国
+	id = HUN_news.ATKCRO
+	title = HUN_news.ATKCRO.t
+	desc = HUN_news.ATKCRO.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news.2.a
+	}
+}
+
 country_event = {
-	id = HUN.2
+	id = HUN.2 #匈牙利向三一共和国施压
 	title = HUN.2.t
 	desc = HUN.2.d
 	picture = GFX_events_HUN_2
@@ -34,19 +51,162 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
+		has_ideology = SOC_democratic
 	}
 	mean_time_to_happen = {
-		days = 2
+		days = 30
 	}
     #那就这样吧  	
 	option = {
-		add_manpower = 50000
+		name = HUN_news.PUPCRO.a
+		news_event = {id = HUN_news.PUPCRO}
+		HUN = {
+			set_autonomy = {
+				target = CRO
+				autonomous_state = autonomy_integrated_puppet
+				freedom_level = 0.2
+			}
+		}
+		CRO = {
+			set_politics = {
+				ruling_party = SOC_democratic
+				last_election = "1915.3.31"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
 }
 }
+
+news_event = {  #克罗地亚傀儡政府的成立
+	id = HUN_news.PUPCRO
+	title = HUN_news.PUPCRO.t
+	desc = HUN_news.PUPCRO.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news.PUPCRO.a
+	}
+}
+
 country_event = {
-	id = HUN.3
+	id = HUN.3 #匈牙利与三一共和国组成联邦
 	title = HUN.3.t
 	desc = HUN.3.d
+	picture = GFX_events_HUN_2
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Danube_is_died
+		tag  = HUN
+		has_ideology = FRE_democratic
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+    #那就这样吧  	
+	option = {
+		name = HUN_news.ANXCRO.a
+		HUN = {
+			annex_country = {
+				target = CRO
+				transfer_troops = yes
+			}
+			add_core_of = 966
+			add_core_of = 109
+			add_core_of = 103
+			set_cosmetic_tag = HUN_CRO
+		}
+}
+}
+
+news_event = {  #匈牙利宣布与克罗地亚组成联邦
+	id = HUN_news.ANXCRO
+	title = HUN_news.ANXCRO.t
+	desc = HUN_news.ANXCRO.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news.ANXCRO.a
+	}
+}
+
+country_event = {
+	id = HUN.4 #匈克和解
+	title = HUN.4.t
+	desc = HUN.4.d
+	picture = GFX_events_HUN_2
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Danube_is_died
+		tag  = HUN
+		has_ideology = Aboslutism
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+    #那就这样吧  	
+	option = {
+		name = HUN_news.OKCRO.a
+		HUN = {
+			set_autonomy = {
+				target = CRO
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.2
+			}
+		}
+}
+}
+
+country_event = {
+	id = HUN.5 #匈克和解,但是小农啊
+	title = HUN.5.t
+	desc = HUN.5.d
+	picture = GFX_events_HUN_2
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Danube_is_died
+		tag  = HUN
+		has_ideology = AGR_democratic
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+    #那就这样吧  	
+	option = {
+		name = HUN_news.AGRCRO.a
+		HUN = {
+			set_autonomy = {
+				target = CRO
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.2
+			}
+		}
+}
+}
+
+news_event = {  #匈克和解
+	id = HUN_news.AGRCRO
+	title = HUN_news.AGRCRO.t
+	desc = HUN_news.AGRCRO.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news.AGRCRO.a
+	}
+}
+
+#########巴尔干战争#########
+
+country_event = {
+	id = HUN.6
+	title = HUN.6.t
+	desc = HUN.6.d
 	picture = GFX_events_HUN_3
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -57,6 +217,7 @@ country_event = {
 		add_to_faction = BUL
 }
 }
+
 news_event = {
 	id = HUN_news.1
 	title = HUN_news.1.t
@@ -69,4 +230,188 @@ news_event = {
 		name = HUN_news.1.a
 	}
 }
+############匈牙利政治换届############
+country_event = {   #我已不再年轻
+	id = HUN.4
+	title = HUN.4.t
+	desc = HUN.4.d
+	picture = GFX_HUN_tisza
+	fire_only_once = yes
+	trigger = {
+	date = 1920.01.01
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+    #还政于民  	
+	option = { 
+		name = HUN.4.a
+		add_political_power = 1
+		news_event = {
+			id = HUN_news.2
+		}
+		country_event = {id = HUN.5}
+}
+}
+news_event = {  #蒂撒伯爵宣布举行首次大选
+	id = HUN_news.2
+	title = HUN_news.2.t
+	desc = HUN_news.2.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
 
+	option = {
+		name = HUN_news.2.a
+	}
+}
+
+country_event = {   #我已不再年轻
+	id = HUN.5 #大选结果
+	title = HUN.5.t
+	desc = HUN.5.d
+	picture = GFX_HUN_tisza
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 60
+	}
+    #还政于民  	
+	option = { 
+		name = HUN.tisza.a #蒂撒连任了
+		add_political_power = 1
+		add_popularity = {
+			ideology = Absolutism
+			popularity = 20
+		}
+		news_event = {id = HUN_news_tisza}
+		set_cosmetic_tag = HUN_tisza
+}
+	    option = { 
+		name = HUN.karoly.a #卡罗伊获胜
+		add_political_power = 1
+		set_politics = {
+			ruling_party = SOC_democratic
+			last_election = "1915.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = SOC_democratic
+			popularity = 20
+		}
+		news_event = {id = HUN_news_karoly}
+}
+	
+	option = { 
+		name = HUN.gombos.a #贡博什赢得大选
+		add_political_power = 1
+		set_politics = {
+			ruling_party = Fascism
+			last_election = "1915.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = Fascism
+			popularity = 20
+		}
+		news_event = {id = HUN_news_gombos}
+}
+	option = { 
+		name = HUN.bethlan.a #贝瑟伦赢得大选
+		add_political_power = 1
+		set_politics = {
+			ruling_party = FRE_democratic
+			last_election = "1915.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = FRE_democratic
+			popularity = 20
+		}
+		news_event = {id = HUN_news_bethlan}
+}
+
+	option = { 
+		name = HUN.szabo.a #萨兹博赢得大选
+		add_political_power = 1
+		set_politics = {
+			ruling_party = AGR_socialism
+			last_election = "1915.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = AGR_socialism
+			popularity = 20
+		}
+		news_event = {id = HUN_news_szabo}
+}
+
+}
+news_event = {  #蒂撒连任，匈牙利督政府成立
+	id = HUN_news_tisza
+	title = HUN_news_tisza.t
+	desc = HUN_news_tisza.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_tisza.a
+	}
+}
+
+news_event = {  #卡罗伊胜出，匈牙利资产阶级获胜
+	id = HUN_news_karoly
+	title = HUN_news_karoly.t
+	desc = HUN_news_karoly.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_karoly.a
+	}
+}
+
+news_event = {  #共博士胜出，马扎尔民族共和国
+	id = HUN_news_gombos
+	title = HUN_news_gombos.t
+	desc = HUN_news_gombos.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_gombos.a
+	}
+}
+
+news_event = {  #被色轮胜出，匈牙利民主共和国
+	id = HUN_news_bethlan
+	title = HUN_news_bethlan.t
+	desc = HUN_news_bethlan.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_bethlan.a
+	}
+}
+
+news_event = {  #萨博胜出，匈牙利农民共和国
+	id = HUN_news_szabo
+	title = HUN_news_szabo.t
+	desc = HUN_news_szabo.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_szabo.a
+	}
+}

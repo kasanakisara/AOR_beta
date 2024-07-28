@@ -90,10 +90,10 @@ set_politics = {
 	elections_allowed = no # none after offset 1
 }
 set_popularities = {
-	AGR_socialism = 15
 	AUT_democratic = 75
-	Absolutism = 10
+	SOC_democratic = 25
 }
 
 recruit_character = CRO_GUY
+recruit_character = HUN_GUY
 
