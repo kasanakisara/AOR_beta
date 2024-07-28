@@ -554,7 +554,9 @@ focus_tree = {
 			custom_effect_tooltip = SWE_Viva_la_Union_tt
 			clr_country_flag = SWE_GUI_1
 			set_country_flag = SWE_GUI_4
+			add_to_variable = { SWE_Norweign_Independence_value = -50 }
 			hidden_effect = {
+				country_event = { id = SWE.1 days = 663 }
 				country_event = { id = SWE.31 days = 5 }
 			}
 		}

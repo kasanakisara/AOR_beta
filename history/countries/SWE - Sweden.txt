@@ -35,6 +35,8 @@ set_popularities = {
 	SOC_democratic = 65
 	Marxism = 35
 }
+
+country_lock_all_division_template = yes
 	
 add_ideas = {
 	A_lingering_alliance
@@ -84,4 +86,3 @@ set_variable = { SWE_Norweign_Independence_stability_factor = -0.1 }
 set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.1 }
 
 country_event = { id = Tosca.1 days = 5 }
-country_event = { id = SWE.1 days = 1293 }

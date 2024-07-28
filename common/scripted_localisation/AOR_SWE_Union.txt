@@ -287,9 +287,6 @@ defined_text = {
 
     text = {
         trigger = {
-            NOT = {
-                has_completed_focus = SWE_Labor_Protection
-            }
             check_variable = { SWE_Labor = 1 } #劳动问题产生少量社会问题
         }
         localization_key = SWE_policy_few_problem
@@ -297,9 +294,6 @@ defined_text = {
 
     text = {
         trigger = {
-            NOT = {
-                has_completed_focus = SWE_Labor_Protection 
-            }
             check_variable = { SWE_Labor = 2 } #劳动问题产生大量社会问题
         }
         localization_key = SWE_policy_many_problem
@@ -307,9 +301,6 @@ defined_text = {
 
     text = {
         trigger = {
-            NOT = {
-                has_completed_focus = SWE_Labor_Protection
-            }
             check_variable = { SWE_Labor = 3 } #劳动问题快爆了！
         }
         localization_key = SWE_policy_great_crisis
