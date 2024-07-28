@@ -32,27 +32,18 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			every_state = {
 				limit = {
 					OR = {
-						region = 8
-						region = 7
-						#东普鲁士
-						state = 5
-						state = 864
-						state = 865
-						state = 763
-						state = 762						#卡托利兹
-						#威州
-						state = 853
-						state = 5
-						state = 56
-						state = 854
-						state = 57
-						#汉诺威
-						state = 59
-						state = 866
-						#南石荷
-						state = 838
-						state = 855
-						state = 58
+						is_controlled_by = BAV
+						is_controlled_by = GER
+						is_controlled_by = SAX
+						is_controlled_by = PRE
+						is_controlled_by = NAU
+						is_controlled_by = RHI
+						is_controlled_by = SHL
+						is_controlled_by = KSH
+						is_controlled_by = SIL
+						is_controlled_by = HAN
+						is_controlled_by = WUR
+						is_controlled_by = MEK
 					}
 				}
 				ROOT = {

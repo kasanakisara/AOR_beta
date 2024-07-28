@@ -38,6 +38,7 @@ ideas = {
 				}
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
+				NOT = { has_idea = Tiger_of_Silence }
 			}
 
 			ai_will_do = {

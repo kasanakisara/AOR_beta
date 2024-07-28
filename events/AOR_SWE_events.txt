@@ -197,12 +197,12 @@ country_event = {
         name = SWE.12.a
         hidden_effect = {
             NOR = {
-                transfer_state = 967
-                transfer_state = 144
-                transfer_state = 142
-                transfer_state = 143
-                transfer_state = 110
-                transfer_state = 1022
+                every_state = {
+                    limit = { is_core_of = NOR }
+                    NOR = {
+                        transfer_state = PREV
+                    }
+                }
     
                 set_politics = {
                     ruling_party = SOC_democratic

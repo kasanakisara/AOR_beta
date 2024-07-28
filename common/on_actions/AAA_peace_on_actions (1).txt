@@ -2125,6 +2125,53 @@ on_actions = {
 					transfer_state = 775
 				}
 			}
+		   	###里夫-法、西战争###
+			else_if = {
+				limit = {
+					#FRA胜利
+					FROM = {
+						original_tag = FRA
+					}
+					ROOT = {
+						original_tag = RFR
+					}
+				}
+				FRA = {
+					#news_event = {id=AOR_news.179}
+					annex_country = {
+						target = RFR
+					}
+				}
+				MOR = {
+					transfer_state = 978
+				}
+				SPR = {
+					transfer_state = 290
+				}
+			}
+			else_if = {
+				limit = {
+					#SPR胜利
+					FROM = {
+						original_tag = SPR
+					}
+					ROOT = {
+						original_tag = RFR
+					}
+				}
+				SPR = {
+					#news_event = {id=AOR_news.179}
+					annex_country = {
+						target = RFR
+					}
+				}
+				MOR = {
+					transfer_state = 978
+				}
+				SPR = {
+					transfer_state = 290
+				}
+			}
 			#匈牙利打死克罗地亚
 			else_if = {
 				limit = {

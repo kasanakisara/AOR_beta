@@ -2,18 +2,18 @@ SWE_Norweign_Independence_decision_categories = {
     #基础决议
     #安抚
     SWE_Appeasement_Leaders = {
-        available = { always = yes }
+        available = { hidden_trigger = {always = yes } }
+        visible = { hidden_trigger = {always = yes } }
         days_remove = 5
         ai_will_do = {
             add = 1000
-            modifier = {
-                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
-                add = 1000
-            }
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -2 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+        modifier = {
+            stability_factor = 0.05
         }
     }
 
@@ -24,17 +24,21 @@ SWE_Norweign_Independence_decision_categories = {
                 has_completed_focus = SWE_Restrictions_on_Gatherings
             }
         }
+        visible = {
+            NOT = {
+                has_completed_focus = SWE_Restrictions_on_Gatherings
+            }
+        }
         days_remove = 28
         ai_will_do = {
             add = 1000
-            modifier = {
-                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
-                add = 1000
-            }
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+        modifier = {
+            stability_factor = -0.05
         }
     }
 
@@ -106,7 +110,7 @@ SWE_Norweign_Independence_decision_categories = {
         available = { has_country_flag = SWE_K_Plan_flag }
         visible = { has_country_flag = SWE_K_Plan_flag }
         state_target = yes
-        targets = { 142 110 143 144 }
+        targets = { 142 110 143 144 967 1027 1022 1028 1029 1030 }
         on_map_mode = map_only
         days_re_enable = 49
         ai_will_do = {
@@ -428,10 +432,14 @@ SWE_Trade_decision_categories = {
     }
 }
 
-SWE_Union_decision_categories = {
+SWE_Union_decision_categories = { #联邦一梦
     ## Debug 专用
     SWE_New_Stage = {
         available = {
+            is_debug = yes
+            check_variable = { SWE_Union_Stage < 12 }
+        }
+        visible = {
             is_debug = yes
             check_variable = { SWE_Union_Stage < 12 }
         }
@@ -451,6 +459,43 @@ SWE_Union_decision_categories = {
                 }
                 add_to_variable = { SWE_Union_political_cost = -0.05 }
             }
+        }
+    }
+
+    #### 联邦之梦（时刻性议题） ####
+    SWE_Oslo_Stockholm_Shinkansenn = { #奥斯陆-斯德哥尔摩快速铁路
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 0 }
+            check_variable = { SWE_Union_Stage < 3 }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 0 }
+            check_variable = { SWE_Union_Stage < 3 }
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_idea = SWE_The_Union_Dream
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 90
+        timeout_effect = {
+            build_railway = {
+                path = { 6115 11184 3007 9138 11114 3141 11044 6084 9185 35 11163 6050 }
+                level = 3
+            }
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+            custom_effect_tooltip = SWE_using_civilian_factory_5_tt
         }
     }
 }

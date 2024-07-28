@@ -3,6 +3,7 @@
  AOR_LOC_PER_Fighting_inflation_1:0 "§CI§!"
  AOR_LOC_PER_Fighting_inflation_2:0 "§YII§!"
  AOR_LOC_PER_Fighting_inflation_3:0 "§RIII§!"
+ AOR_LOC_PER_Fighting_inflation_4:0 "§GIV§!"
 #
 AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_1:0 "§R不容乐观§!"
 AOR_LOC_PER_Agricultural_Jihad_Preliminary_jy_2:0 "§Y仍需努力§!"
@@ -23,7 +24,9 @@ AOR_LOC_PER_Agricultural_Jihad_Preliminary_xg_8:0 "§Y积谷防饥§!\n适役人
   Fighting_inflation_lvl2_tt:0 "生产效率保持: §R-20%§!\n工厂产出: §R-20%§!\n生产效率上限: §R0.-20%§!\n生产效率增长: §R-20%§!\n生活消费品: §R+20%§!"
  Fighting_inflation_no.3_text:0 "§RIII§!"
   Fighting_inflation_lvl3_tt:0 "生产效率保持: §R-30%§!\n工厂产出: §R-30%§!\n生产效率上限: §R0.-30%§!\n生产效率增长: §R-20%§!\n生活消费品: §R+30%§!"
-  now_text:0 "目前通货膨胀等级:[Fightinginflation]"
+ Fighting_inflation_no.4_text:0 "§GIV§!"
+  Fighting_inflation_lvl4_tt:0 "生产效率保持: §G+5%§!\n工厂产出: §G+5%§!\n生产效率上限: §G+5%§!\n生产效率增长: §G+5%§!\n生活消费品: §Y-10%§!"
+ now_text:0 "目前通货膨胀等级:[Fightinginflation]"
 #农业圣战
   JIHAD_text:0 "目前形势:[Agricultural_Jihad_Preliminary_jy]"
   PER_Agricultural_Jihad_Preliminary_text:0 "[Agricultural_Jihad_Preliminary_xg]"
@@ -46,12 +49,14 @@ centre_Infrastructure_restoration:0 "首都地区基础设施重建"
 khamseh_Infrastructure_restoration:0 "哈姆塞基础设施重建"
 hamedan_Infrastructure_restoration:0 "哈马丹基础设施重建"
 Semnan_Infrastructure_restoration:0 "塞姆南基础设施重建"
+Complete_reconstruction_1:0 "完成阶段重建"
 #
 Qom_Industrial_Development:0 "库姆工业发展"
 Mashhad_Industrial_Development:0 "马什哈德工业发展"
 centre_Industrial_Development:0 "中央地区工业发展"
 Arabistan_Industrial_Development:0 "阿拉伯斯坦工业发展"
 Fars_Industrial_Development:0 "法尔斯工业发展"
+Azerbaijan_Industrial_Development:0 "阿塞拜疆工业发展"
 #
 PER_Eliminate_inflation_over:0 "消除严重通胀的影响"
 #

@@ -8,10 +8,7 @@ ideas = {
 
 
 			allowed = {
-				always = no
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			removal_cost = -1
 
@@ -46,10 +43,7 @@ ideas = {
 		isolation = {
 
 			allowed = {
-				always = no
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			removal_cost = -1
 
@@ -82,9 +76,7 @@ ideas = {
 		civilian_economy = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 
@@ -109,9 +101,7 @@ ideas = {
 		low_economic_mobilisation = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 			available = {
@@ -192,9 +182,7 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 			available = {
@@ -269,9 +257,7 @@ ideas = {
 		war_economy = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 
@@ -380,9 +366,7 @@ ideas = {
 		tot_economic_mobilisation = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 
@@ -505,10 +489,7 @@ ideas = {
 			picture = new_economic_policy
 
 			allowed = {
-				always = no
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			allowed_to_remove = {
 				OR = {
@@ -537,10 +518,7 @@ ideas = {
 			picture = new_economic_policy
 
 			allowed = {
-				always = no
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			allowed_to_remove = {
 				OR = {
@@ -571,12 +549,9 @@ ideas = {
 			
 			picture = Semi_colonial_economy
 			
-			allowed = { always = no }
+			allowed = { always = yes }
 			
 			allowed_to_remove = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
 				always = no
 			}
 			
@@ -610,10 +585,7 @@ ideas = {
 		uncontrolled_exports = {
 
 			allowed = {
-				always = no
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			removal_cost = -1
 			picture = isolation
@@ -674,9 +646,7 @@ ideas = {
 		free_trade = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 			available = {
@@ -736,9 +706,7 @@ ideas = {
 		export_focus = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 			available = {
@@ -806,9 +774,7 @@ ideas = {
 		limited_exports = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 			available = {
 				OR = {
@@ -896,9 +862,7 @@ ideas = {
 		closed_economy = {
 
 			allowed = {
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				always = yes
 			}
 
 
@@ -977,9 +941,7 @@ ideas = {
 			picture = Unequal_trade
 			
 			allowed = { 
-				USA = {
-					has_variable = wanla_quandouwanle
-				}
+				
 				always = no
 			}
 			

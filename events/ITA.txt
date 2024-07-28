@@ -510,7 +510,25 @@ country_event = {
 				type = take_state
 			} 
 		}
+		EGY = {
+			declare_war_on = { 
+				target = LBA
+				type = take_state
+			} 
+		}
+		SUD = {
+			declare_war_on = { 
+				target = LBA
+				type = take_state
+			} 
+		}
 		FRA = {
+			declare_war_on = { 
+				target = LBA
+				type = take_state
+			} 
+		}
+		CAR = {
 			declare_war_on = { 
 				target = LBA
 				type = take_state

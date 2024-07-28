@@ -221,7 +221,7 @@ PER_Northern_Reconstruction_decision_category = {#重建
 			has_country_flag = unlock_AOR_PER_Northern_Reconstruction
 		}                                    
 		available = {                           
-			infrastructure > 15
+			infrastructure > 20
 		}
 		
 		is_good = no #(决定任务进度条的颜色）                         
@@ -239,9 +239,9 @@ PER_Northern_Reconstruction_decision_category = {#重建
 }
 #1号工业案
 PER_Industrial_Development_Plan_No.1 = {
-	Azerbaijan_Industrial_Development = {
+	Azerbaijan_Industrial_Development = {#阿塞拜疆
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -253,6 +253,9 @@ PER_Industrial_Development_Plan_No.1 = {
 		ai_will_do = {
 			factor = 100
 		}
+		modifier = {  
+			civilian_factory_use = 1
+		}
 		remove_effect = {
 			419 = {
 				add_building_construction = {
@@ -263,9 +266,9 @@ PER_Industrial_Development_Plan_No.1 = {
 			}
 		}
 	}
-	Qom_Industrial_Development = {
+	Qom_Industrial_Development = {#库姆
 		iocn = GFX_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -277,6 +280,9 @@ PER_Industrial_Development_Plan_No.1 = {
 		ai_will_do = {
 			factor = 100
 		}
+		modifier = {  
+			civilian_factory_use = 1
+		}
 		remove_effect = {
 			266 = {
 				add_building_construction = {
@@ -287,9 +293,9 @@ PER_Industrial_Development_Plan_No.1 = {
 			}
 		}
 	}
-	Mashhad_Industrial_Development = {
+	Mashhad_Industrial_Development = {#马什哈德
 		iocn = GFX_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -301,6 +307,9 @@ PER_Industrial_Development_Plan_No.1 = {
 		ai_will_do = {
 			factor = 100
 		}
+		modifier = {  
+			civilian_factory_use = 1
+		}
 		remove_effect = {
 			416 = {
 				add_building_construction = {
@@ -311,9 +320,9 @@ PER_Industrial_Development_Plan_No.1 = {
 			}
 		}
 	}
-	centre_Industrial_Development = {
+	centre_Industrial_Development = {#中央——德黑兰
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -324,6 +333,9 @@ PER_Industrial_Development_Plan_No.1 = {
 		is_good = yes
 		ai_will_do = {
 			factor = 100
+		}
+		modifier = {  
+			civilian_factory_use = 1
 		}
 		remove_effect = {
 			937 = {
@@ -335,9 +347,9 @@ PER_Industrial_Development_Plan_No.1 = {
 			}
 		}
 	}
-	Arabistan_Industrial_Development = {
+	Arabistan_Industrial_Development = {#阿拉伯斯坦
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -349,8 +361,11 @@ PER_Industrial_Development_Plan_No.1 = {
 		ai_will_do = {
 			factor = 100
 		}
+		modifier = {  
+			civilian_factory_use = 1
+		}
 		remove_effect = {
-			937 = {
+			413 = {
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -359,9 +374,9 @@ PER_Industrial_Development_Plan_No.1 = {
 			}
 		}
 	}
-	Fars_Industrial_Development = {
+	Fars_Industrial_Development = {#法尔斯
 		iocn = GFX_decision_Industrial_Development
-		cost = 60
+		cost = 30
 		days_remove = 40
 		allowed = {original_tag  = PER}
 		fire_only_once = yes
@@ -373,8 +388,11 @@ PER_Industrial_Development_Plan_No.1 = {
 		ai_will_do = {
 			factor = 100
 		}
+		modifier = {  
+			civilian_factory_use = 1
+		}
 		remove_effect = {
-			937 = {
+			412 = {
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -390,7 +408,7 @@ PER_Fighting_inflation = {
 		allowed = {original_tag  = PER}
 		cost = 20
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 90
 		available = {
 			has_idea = PER_Fighting_inflation_1
 			has_completed_focus = PER_Fighting_inflation_16
@@ -404,6 +422,9 @@ PER_Fighting_inflation = {
 					has_completed_focus = PER_Fighting_inflation_16
 				}
 			}
+		}
+		modifier = {  
+			civilian_factory_use = 1
 		}
 		remove_effect = {
 			PER_Fighting_inflation_666 = yes
