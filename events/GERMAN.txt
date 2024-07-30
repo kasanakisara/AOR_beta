@@ -57,6 +57,7 @@ country_event = {
 			BAV = { remove_ideas = Compact_of_German_Confederation_1}
 			WUR = { remove_ideas = Compact_of_German_Confederation_1}
 			MEK = { remove_ideas = Compact_of_German_Confederation}
+			NAU = { remove_ideas = Compact_of_German_Confederation_1}
 			set_global_flag = new_German_Confederation
 			set_global_flag = GERMAN_disintegrated
 			NAU = {

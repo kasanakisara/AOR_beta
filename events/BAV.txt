@@ -733,3 +733,23 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = BAV.68	#吞并红色法兰克福
+	title = BAV.68.t
+	desc = BAV.68.d
+	fire_only_once = yes
+	trigger = {
+		tag = BAV
+		date > 1922.6.6
+		NAU = { has_government = Marxism }
+	}
+	option = {
+		name = BAV.68.a
+		annex_country = { target = NAU }
+		transfer_units_fraction= {
+			target = BAV
+			size = 1
+		}
+	}
+}
