@@ -667,7 +667,7 @@ country_event = {
 	}
 	option = {
 		set_country_flag = WGR_Marxism
-		name = BAV.67.a
+		name = BAV.68.a
 		declare_war_on = {
 			target = HAN
 			type = civil_war
@@ -735,9 +735,9 @@ country_event = {
 }
 
 country_event = {
-	id = BAV.68	#吞并红色法兰克福
-	title = BAV.68.t
-	desc = BAV.68.d
+	id = BAV.69	#吞并红色法兰克福
+	title = BAV.69.t
+	desc = BAV.69.d
 	fire_only_once = yes
 	trigger = {
 		tag = BAV
@@ -745,7 +745,7 @@ country_event = {
 		NAU = { has_government = Marxism }
 	}
 	option = {
-		name = BAV.68.a
+		name = BAV.69.a
 		annex_country = { target = NAU }
 		transfer_units_fraction= {
 			target = BAV
