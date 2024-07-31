@@ -132,21 +132,37 @@ on_actions = {
 			#人民之家
 			if = {
 				limit = {
-					has_idea = SWE_Folkhemmet
+					has_country_flag = SWE_Folkhemmet_flag
 				}
 				add_political_power = -50
 				if = {
 					limit = {
+						has_idea = SWE_Ex_Folkhemmet
+					}
+					add_political_power = -75
+				}
+				if = {
+					limit = {
 						has_political_power < 0
 					}
+					remove_ideas = SWE_Folkhemmet
+					remove_ideas = SWE_Ex_Folkhemmet
 					add_ideas = SWE_Folkhemmet_debuff
 				}
 				if = {
 					limit = {
 						has_political_power > 0
 						has_idea = SWE_Folkhemmet_debuff
+					} 
+					remove_ideas = SWE_Folkhemmet_debuff
+					if = {
+						limit = { has_completed_focus = SWE_Everyone_has_Job }
+						add_ideas = SWE_Ex_Folkhemmet
 					}
-					remove_ideas = SWE_Folkhemmet
+					else = {
+						add_ideas = SWE_Folkhemmet
+					}
+					
 				}
 			}
 
@@ -408,6 +424,147 @@ on_actions = {
 					add_to_variable = { SWE_Union_progress_value_add = 1 }
 				}
 
+				## 稳定度 -> 增长度
+
+				if = {
+					limit = {
+						has_stability < 0
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.2
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.35
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.5
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.65
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.75
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 9
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
+				}
+				else = {
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+
+				##人民之家各议案修正
+				#移民
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SWE_Immigrant_Protection #未开放移民政策
+						}
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 0 } #移民问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 1 } #移民问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 2 } #移民问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 3 } #移民问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				#劳动
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SWE_Maternity_Allowance #未开放政策
+						}
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 0 } #问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 1 } #问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 2 } #问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 3 } #问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				#教育
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 0 } #问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 1 } #问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 2 } #问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 3 } #问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+
 				#加和
 				add_to_variable = { SWE_Union_progress_value = var:SWE_Union_progress_value_add }
 
@@ -436,8 +593,57 @@ on_actions = {
 			### 人民之家 ###
 
 			if = {
-				limit = { has_idea = SWE_Folkhemmet }
-				add_political_power = var:SWE_debt_political_gain
+				limit = {
+					tag = SWE
+					has_country_flag = SWE_Folkhemmet_flag
+					OR = {
+						check_variable = { SWE_National_debt = 0.8 compare = more_than_or_equals }
+						check_variable = { SWE_has_National_debt = 0.8 compare = more_than_or_equals }
+					}
+				}
+				add_ideas = SWE_High_national_debt
+			}
+			else = {
+				remove_ideas = SWE_High_national_debt
+			}
+			if = {
+				limit = {
+					tag = SWE
+					has_country_flag = SWE_Folkhemmet_flag
+					OR = {
+						check_variable = { SWE_National_debt = 0.2 compare = less_than_or_equals }
+						check_variable = { SWE_has_National_debt = 0.2 compare = less_than_or_equals }
+					}
+				}
+				add_ideas = SWE_Low_national_debt
+			}
+			else = {
+				remove_ideas = SWE_Low_national_debt
+			}
+
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt < 0 }
+				}
+				set_variable = { SWE_National_debt = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_has_National_debt < 0 }
+				}
+				set_variable = { SWE_has_National_debt = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { SWE_has_National_debt > 1.2 }
+				}
+				set_variable = { SWE_has_National_debt = 1.2 }
 			}
 
 		}

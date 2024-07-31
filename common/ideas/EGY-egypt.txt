@@ -13,6 +13,13 @@ ideas = {
 				research_speed_factor = -0.7
 			}
 		}
+		The_Lion_of_the_Circus = {#马戏团的雄狮
+		picture = GFX_idea_The_Lion_of_the_Circus
+		allowed = { always = yes }
+		modifier = {
+			political_power_gain = 0.05
+			}
+		}
 		EGY_Crazy_1919 = {#疯狂的1919
 			picture = GFX_idea_EGY_Crazy_1919
 			allowed = { always = yes }
@@ -21,6 +28,76 @@ ideas = {
 				political_power_factor = -0.1
 				resistance_growth = 0.05
 				custom_modifier_tooltip = EGY_Crazy_1919_tt
+			}
+		}
+		EGY_Crazy_1919_0 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = -0.15
+			political_power_factor = -0.25
+			resistance_growth = 0.05
+			}
+		}
+		EGY_Crazy_1919_1 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = -0.10
+			political_power_factor = -0.25
+			resistance_growth = 0.05
+			}
+		}
+		EGY_Crazy_1919_2 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = -0.10
+			political_power_factor = -0.2
+			resistance_growth = 0.05
+			}
+		}
+		EGY_Crazy_1919_3 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = 0.2
+			political_power_factor = -0.4
+			resistance_growth = 0.15
+			}
+		}
+		EGY_Crazy_1919_4 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = -0.1
+			political_power_factor = -0.15
+			resistance_growth = 0.05
+			}
+		}
+		EGY_Crazy_1919_5 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = -0.05
+			political_power_factor = -0.15
+			resistance_growth = 0.05
+			}
+		}
+		EGY_Crazy_1919_6 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			political_power_factor = -0.1
+			}
+		}
+		EGY_Crazy_1919_7 = {#疯狂的1919
+		picture = GFX_idea_EGY_Crazy_1919
+		allowed = { always = yes }
+		modifier = {
+			STABILITY_FACTOR = 0.25
+			political_power_factor = -0.35
+			resistance_growth = 0.1
 			}
 		}
 		EGY_Puppets_puppetry = {#木偶戏的木偶

@@ -30,7 +30,7 @@ recruit_character = ZIM_acas
 recruit_character = ZIM_acgs
 recruit_character = ZIM_aa2
 recruit_character = ZIM_democratic_guy
-recruit_character = GBR_COLONY
+recruit_character = GBR_COLONY_2
 
 1939.1.1 = {
 	#generic focuses
@@ -81,14 +81,6 @@ set_popularities = {
 	ISL_democratic = 14
 }
 
-create_country_leader = {
-	name = " Marcus James Hugins"
-	picture = GFX_portrait__Marcus_James_Hugins
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = { 
-		prince_of_terror
-	}
-}
+
 
 set_cosmetic_tag = ZIM_UK

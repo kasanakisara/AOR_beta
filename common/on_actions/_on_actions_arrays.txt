@@ -41,6 +41,14 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = { #协约国限制
+		effect = {
+			every_country = {
+				limit = {is_in_faction_with = ENG}
+				add_ideas = AOR_Entente_no_war
+			}
+		}
+	}
 }
 
 

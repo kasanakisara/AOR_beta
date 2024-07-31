@@ -3,9 +3,9 @@ defined_text = {
 
     text = {
         trigger = {
-            original_tag = ENG  ##大不列颠尼亚报
+            original_tag = ENG  ##泰晤士报
         }
-        localization_key = AOR_Great_Britain_news_header
+        localization_key = AOR_Times_news_header
     }
 
     text = {
@@ -14,6 +14,20 @@ defined_text = {
             has_government = marxism 
         }
         localization_key = AOR_geming_news_header
+    }
+
+    text = {
+        trigger = {
+            original_tag = USA ##纽约时报
+        }
+        localization_key = AOR_New_York_Times_header
+    }
+
+    text = {
+        trigger = {
+            original_tag = SWE ##每日新闻报
+        }
+        localization_key = AOR_Dagens_Nyheter_header
     }
 
     text = {
@@ -52,10 +66,10 @@ defined_text = {
     }
 
     text = {
-        trigger = {  ##罗曼语报
+        trigger = {  ##费加罗报
             original_tag = FRA
         }
-        localization_key = AOR_Ruoman_news_header
+        localization_key = AOR_Figaro_news_header
     }
 
     text = {
@@ -174,11 +188,25 @@ defined_text = {
         }
         localization_key = AOR_hongqi_news_pic
     }
-    text = { ##大不列颠报 - pic 
+    text = { ##泰晤士报 - pic 
         trigger = { 
             original_tag = ENG
         }
-        localization_key = AOR_Great_Britain_news_pic 
+        localization_key = AOR_Times_news_pic 
+    }
+
+    text = {
+        trigger = {
+            original_tag = USA ##纽约时报
+        }
+        localization_key = AOR_New_York_Times_pic
+    }
+
+    text = {
+        trigger = {
+            original_tag = SWE ##每日新闻报
+        }
+        localization_key = AOR_Dagens_Nyheter_pic
     }
 
     text = { ##二十世纪报 - pic 
@@ -188,11 +216,11 @@ defined_text = {
         localization_key = AOR_ershishiji_news_pic 
     }
  
-    text = { ##罗曼语报 - pic
+    text = { ##费加罗报 - pic
         trigger = {
             original_tag = FRA
         }
-        localization_key = AOR_Ruoman_news_pic
+        localization_key = AOR_Figaro_news_pic
     }
 
     text = { ##人民观察家报 - pic 

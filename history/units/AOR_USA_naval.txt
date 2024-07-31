@@ -1,0 +1,765 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "联邦海军大西洋舰队"			
+		naval_base = 3878
+		task_force = {				
+			name = "联邦海军大西洋舰队"			
+			location = 3878
+			ship = {
+                name = "E级潜艇" 
+                pride_of_the_fleet = yes
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "E级潜艇" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "E级潜艇"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级"
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+            ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+            ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "切斯特级" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    light_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+			ship = {
+                name = "佛罗里达级" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "佛罗里达级"
+                    }
+                }
+            }
+            ship = {
+                name = "佛罗里达级" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "佛罗里达级"
+                    }
+                }
+            }
+            ship = {
+                name = "佛罗里达级" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "佛罗里达级"
+                    }
+                }
+            }
+            ship = {
+                name = "纽约级" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "纽约级"
+                    }
+                }
+            }
+            ship = {
+                name = "纽约级" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "纽约级"
+                    }
+                }
+            }
+        }
+    }		
+}
+

@@ -1,4 +1,5 @@
 focus_tree = {
+	id  = AOR_WUR_national_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -20,8 +21,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		search_filters = {
-		}
 		completion_reward = {
 			custom_effect_tooltip = wur.0.tt
 			hidden_effect = {
@@ -41,8 +40,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		search_filters = {
-		}
 		completion_reward = {
 			custom_effect_tooltip = wur.1.tt
 		}
@@ -260,7 +257,7 @@ focus_tree = {
 		search_filters = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = wur.14.tt]
+			custom_effect_tooltip = wur.14.tt
 			add_ideas = roots_militia
 		}
 	}

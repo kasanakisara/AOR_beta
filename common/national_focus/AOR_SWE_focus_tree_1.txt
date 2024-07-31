@@ -224,7 +224,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			add_political_power = 200
-			add_stability = 0.1
 			hidden_effect = { news_event = { id = AOR_news.70 } }
 			custom_effect_tooltip = SWE_Oslo_news_tt
 		}
@@ -237,6 +236,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Eighty_Seventh_Order
 		}
+		ai_will_do = {
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 12
 		y = 2
 		completion_reward = {
@@ -337,8 +345,14 @@ focus_tree = {
 			focus = SWE_Antisocialistisk_Speciallag
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 3
 		completion_reward = {
@@ -361,8 +375,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 4
 		completion_reward = {
@@ -381,8 +401,14 @@ focus_tree = {
 			focus = SWE_Publications_Supervision
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 13
 		y = 5
 		completion_reward = {
@@ -401,8 +427,14 @@ focus_tree = {
 			focus = SWE_Abolish_Left_Party
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 4
 		completion_reward = {
@@ -424,8 +456,14 @@ focus_tree = {
 			focus = SWE_Restrictions_on_Gatherings
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 17
 		y = 5
 		completion_reward = {
@@ -447,8 +485,14 @@ focus_tree = {
 			focus = SWE_Rope_Right
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 6
 		completion_reward = {
@@ -467,8 +511,14 @@ focus_tree = {
 			focus = SWE_The_Trial
 		}
 		ai_will_do = {
-			factor = 0.75
-		}
+            add = 1
+            modifier = {
+                NOT = {
+					has_completed_focus = SWE_Restructuring_Parliament
+				}
+                add = 1000
+            }
+        }
 		x = 15
 		y = 7
 		completion_reward = {
@@ -504,6 +554,11 @@ focus_tree = {
 			custom_effect_tooltip = SWE_Viva_la_Union_tt
 			clr_country_flag = SWE_GUI_1
 			set_country_flag = SWE_GUI_4
+			add_to_variable = { SWE_Norweign_Independence_value = -50 }
+			hidden_effect = {
+				country_event = { id = SWE.1 days = 663 }
+				country_event = { id = SWE.31 days = 5 }
+			}
 		}
 
 	}
@@ -558,6 +613,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Beautiful_New_World
 		}
+		bypass = {
+			date > 1923.1.1
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AOR_GER_not_civilwar_tt
@@ -590,6 +648,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Trade_With_Soviet
+		}
+		bypass = {
+			date > 1923.1.1
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -653,11 +714,25 @@ focus_tree = {
 		id = SWE_Rebuild_New_World
 		icon = GFX_goal_unknown
 		cost = 5.00
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = SWE_The_Dream
 		}
 		x = 9
 		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = SWE_Rebuild_New_World
+				}
+				custom_effect_tooltip = SWE_Parliament_choice_yet_tt
+			}
+			else = {
+				custom_effect_tooltip = SWE_Parliament_not_yet_choice_tt
+			}
+		}
 
 	}
 	focus = {
@@ -676,9 +751,16 @@ focus_tree = {
 			add_ideas = SWE_Folkhemmet
 			unlock_decision_category_tooltip = SWE_Folkhemmet_decision_categories
 			set_variable = { SWE_Education = 1 }
-			set_variable = { SWE_National_debt = 0.2 }
-			set_variable = { SWE_debt_political_gain = 20 }
-			set_variable = { SWE_debt_consumer_factory = 0.3 }
+			set_variable = { SWE_National_debt = 0.25 }
+			set_variable = { SWE_has_National_debt = 0.1 }
+			set_variable = { SWE_Folkhemmet_industrial_capacity = 0.2 }
+			set_variable = { SWE_Folkhemmet_factory_efficency = 0.2 }
+			set_variable = { SWE_Folkhemmet_consumer_goods = 0.125 }
+			hidden_effect = {
+				set_country_flag = SWE_Folkhemmet_flag
+				add_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
+				country_event = { id = SWE_Folkhemmet.1 days = 5 }
+			}
 		}
 
 	}
@@ -747,10 +829,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 13
 		y = 10
 		completion_reward = {
 			set_variable = { SWE_Labor = 0 }
+			custom_effect_tooltip = SWE_unlock_Labor_policy_tt
+			hidden_effect = { country_event = { id = SWE_Folkhemmet.4 days = 5 } }
 		}
 
 	}
@@ -761,6 +848,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Welfare_New_Society
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 15
 		y = 10
 		completion_reward = {
@@ -768,6 +858,8 @@ focus_tree = {
 				var = SWE_Immigrant
 				value = 0
 			}
+			country_event = { id = SWE_Folkhemmet.2 }
+			custom_effect_tooltip = SWE_unlock_Immigrant_policy_tt
 		}
 
 	}
@@ -778,10 +870,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Maternity_Allowance
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 13
 		y = 11
 		completion_reward = {
 			set_variable = { SWE_Education = 0 }
+			country_event = { id = SWE_Folkhemmet.6 }
+        	add_ideas = SWE_Edu_Protection
+			custom_effect_tooltip = SWE_Education_crisis_solve_tt
 		}
 
 	}
@@ -792,10 +890,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Immigrant_Protection
 		}
+		available = {
+			has_idea = SWE_Folkhemmet
+		}
 		x = 15
 		y = 11
 		completion_reward = {
-			set_variable = { SWE_Labor = 0 }
+			set_variable = { SWE_Labor = 1 }
+        	add_ideas = SWE_Labor_Protection
+			country_event = { id = SWE_Folkhemmet.5 }
+			custom_effect_tooltip = SWE_Labor_crisis_solve_tt
 		}
 
 	}
@@ -806,11 +910,24 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Labor_Protection
 		}
+		available = {
+            has_idea = SWE_Folkhemmet
+		}
 		prerequisite = {
 			focus = SWE_People_University
 		}
 		x = 14
 		y = 12
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = SWE_Ex_Folkhemmet
+					remove_idea = SWE_Folkhemmet
+				}
+			}
+			custom_effect_tooltip = SWE_Ex_Folkhemmet_change_tt
+			country_event = { id = SWE.30 }
+		}
 
 	}
 	focus = {

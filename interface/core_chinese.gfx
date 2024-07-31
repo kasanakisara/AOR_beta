@@ -70,8 +70,8 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "hoi4_typewriter16"
 		fontfiles = { 	
-			"gfx/fonts/kai_0"
-			"gfx/fonts/kai_1"
+			"gfx/fonts/songti_bai_0"
+			"gfx/fonts/songti_hei_0"
 		}		
 	languages = { "l_simp_chinese" } 
 	}	
@@ -274,8 +274,9 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "hoi4_typewriter22"
 		fontfiles = { 
-			"gfx/fonts/kai_22_0"		
-			"gfx/fonts/kai_22_1"
+			"gfx/fonts/hoi4_typewriter22"		
+			"gfx/fonts/hoi_22typewriter"
+			"gfx/fonts/Arial_20b"	
 		}		
 	languages = { "l_simp_chinese" } 
 	}

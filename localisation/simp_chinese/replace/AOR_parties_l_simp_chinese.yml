@@ -938,8 +938,8 @@
  CRO_Fascism_party_long:0 "乌斯塔沙"
  CRO_Marxism_party:0 "克罗地亚共产主义联盟"
  CRO_Marxism_party_long:0 "克罗地亚共产主义联盟"
- CRO_CON_democratic_party:0 "克罗地亚农民党"
- CRO_CON_democratic_party_long:0 "克罗地亚农民党"
+ CRO_AUT_democratic_party:0 "克罗地亚农民党"
+ CRO_AUT_democratic_party_long:0 "克罗地亚农民党"
  TRA_Fascism_party:0 "德拉库拉党"
  TRA_Fascism_party_long:0 "德拉库拉党"
  BUL_zveno_bulgaria_Absolutism_party:0 "环节联盟"
@@ -1115,3 +1115,5 @@ NAN_AUT_democratic_party:0"社会党(中央系）"
 
 #####DCD#####
 DCD_Absolutism_party:0"川康总督"
+
+TCG_SOC_democratic_party:0"俄国社会民主工党（孟什维克）"

@@ -37,8 +37,8 @@ ideas = {
 			picture = idea_Tiger_of_Silence
 
 			modifier = {
-				defensive_war_stability_factor = -0.3
 				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
 				custom_modifier_tooltip = Disable_intelligence_agency
 			}
 		}
@@ -57,9 +57,9 @@ ideas = {
 			picture = idea_Let_the_ambitio_sleep
 
 			modifier = {
-				stability_factor = 0.1
 				army_org_factor = 0.05
 				conscription = -0.005
+				defensive_war_stability_factor = 0.2
 			}
 		}
 	}

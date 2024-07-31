@@ -84,7 +84,13 @@ country_event = {
                     type = annex_everything
                 } 
             }
-            SPA = {
+            MOR = {
+                declare_war_on = { 
+                    target = RFR
+                    type = annex_everything
+                } 
+            }
+            SPR = {
                 declare_war_on = { 
                     target = RFR
                     type = annex_everything

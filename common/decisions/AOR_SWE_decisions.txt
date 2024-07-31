@@ -2,14 +2,18 @@ SWE_Norweign_Independence_decision_categories = {
     #基础决议
     #安抚
     SWE_Appeasement_Leaders = {
-        available = { always = yes }
+        available = { hidden_trigger = {always = yes } }
+        visible = { hidden_trigger = {always = yes } }
         days_remove = 5
         ai_will_do = {
-            factor = 0.5
+            add = 1000
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -2 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+        modifier = {
+            stability_factor = 0.05
         }
     }
 
@@ -20,13 +24,21 @@ SWE_Norweign_Independence_decision_categories = {
                 has_completed_focus = SWE_Restrictions_on_Gatherings
             }
         }
+        visible = {
+            NOT = {
+                has_completed_focus = SWE_Restrictions_on_Gatherings
+            }
+        }
         days_remove = 28
         ai_will_do = {
-            factor = 0.5
+            add = 1000
         }
         complete_effect = {
             add_to_variable = { SWE_Norweign_Independence_value = -3.5 }
             custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+        modifier = {
+            stability_factor = -0.05
         }
     }
 
@@ -35,30 +47,34 @@ SWE_Norweign_Independence_decision_categories = {
         priority = 100
 
 		activation = {
-			hidden_trigger = {
-                OR = {
-                    has_country_flag = SWE_GUI_1
-                    has_country_flag = SWE_GUI_2
-                    has_country_flag = SWE_GUI_3
+            custom_trigger_tooltip = {
+                tooltip = SWE_Norweign_Independence_Acting_tt
+                hidden_trigger = {
+                    OR = {
+                        has_country_flag = SWE_GUI_1
+                        has_country_flag = SWE_GUI_2
+                        has_country_flag = SWE_GUI_3
+                    }
+                    has_country_flag = SWE_Norweign_Independence_flag
                 }
-                has_country_flag = SWE_Norweign_Independence_flag
             }
-            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
 		}
 		available = {
             hidden_trigger = {always = no}
 		}
 
         visible = {
-            hidden_trigger = {
-                OR = {
-                    has_country_flag = SWE_GUI_1
-                    has_country_flag = SWE_GUI_2
-                    has_country_flag = SWE_GUI_3
+            custom_trigger_tooltip = {
+                hidden_trigger = {
+                    OR = {
+                        has_country_flag = SWE_GUI_1
+                        has_country_flag = SWE_GUI_2
+                        has_country_flag = SWE_GUI_3
+                    }
+                    has_country_flag = SWE_Norweign_Independence_flag
                 }
-                has_country_flag = SWE_Norweign_Independence_flag
+                tooltip = SWE_Norweign_Independence_Acting_tt
             }
-            custom_trigger_tooltip = SWE_Norweign_Independence_Acting_tt
         }
 
         cancel_trigger = {
@@ -94,11 +110,15 @@ SWE_Norweign_Independence_decision_categories = {
         available = { has_country_flag = SWE_K_Plan_flag }
         visible = { has_country_flag = SWE_K_Plan_flag }
         state_target = yes
-        targets = { 142 110 143 144 }
+        targets = { 142 110 143 144 967 1027 1022 1028 1029 1030 }
         on_map_mode = map_only
         days_re_enable = 49
         ai_will_do = {
-            factor = 0.99
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 45
         complete_effect = {
@@ -128,7 +148,11 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-            factor = 0.99
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 60
         complete_effect = {
@@ -167,7 +191,11 @@ SWE_Norweign_Independence_decision_categories = {
             consumer_goods_factor = 0.1
         }
         ai_will_do = {
-            factor = 0.99
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         cost = 50
         complete_effect = {
@@ -209,7 +237,11 @@ SWE_Norweign_Independence_decision_categories = {
         }
         cost = 20
         ai_will_do = {
-            factor = 0.75
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_stability = 0.1
@@ -225,7 +257,11 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 7
         cost = 20
         ai_will_do = {
-            factor = 0.75
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.1 }
@@ -240,7 +276,11 @@ SWE_Norweign_Independence_decision_categories = {
         days_re_enable = 49
         cost = 75
         ai_will_do = {
-            factor = 0.75
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
         }
         complete_effect = {
             add_popularity = { ideology = Marxism popularity = -0.15 }
@@ -392,10 +432,14 @@ SWE_Trade_decision_categories = {
     }
 }
 
-SWE_Union_decision_categories = {
+SWE_Union_decision_categories = { #联邦一梦
     ## Debug 专用
     SWE_New_Stage = {
         available = {
+            is_debug = yes
+            check_variable = { SWE_Union_Stage < 12 }
+        }
+        visible = {
             is_debug = yes
             check_variable = { SWE_Union_Stage < 12 }
         }
@@ -404,11 +448,11 @@ SWE_Union_decision_categories = {
         }
         complete_effect = {
             add_to_variable = { SWE_Union_Stage = 1 }
-            add_to_variable = { SWE_Union_stability_factor = 0.25 }
-            add_to_variable = { SWE_Union_war_support_factor = 0.25 }
-            add_to_variable = { SWE_Union_construction_speed = 0.25 }
-            add_to_variable = { SWE_Union_arms_speed = 0.25 }
-            add_to_variable = { SWE_Union_industrial_speed = 0.25 }
+            add_to_variable = { SWE_Union_stability_factor = 0.025 }
+            add_to_variable = { SWE_Union_war_support_factor = 0.025 }
+            add_to_variable = { SWE_Union_construction_speed = 0.025 }
+            add_to_variable = { SWE_Union_arms_speed = 0.025 }
+            add_to_variable = { SWE_Union_industrial_speed = 0.025 }
             if = {
                 limit = {
                     check_variable = { SWE_Union_Stage < 12 }
@@ -417,44 +461,447 @@ SWE_Union_decision_categories = {
             }
         }
     }
+
+    #### 联邦之梦（时刻性议题） ####
+    SWE_Oslo_Stockholm_Shinkansenn = { #奥斯陆-斯德哥尔摩快速铁路
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 0 }
+            check_variable = { SWE_Union_Stage < 3 }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 0 }
+            check_variable = { SWE_Union_Stage < 3 }
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_idea = SWE_The_Union_Dream
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 90
+        timeout_effect = {
+            build_railway = {
+                path = { 6115 11184 3007 9138 11114 3141 11044 6084 9185 35 11163 6050 }
+                level = 3
+            }
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+            custom_effect_tooltip = SWE_using_civilian_factory_5_tt
+        }
+    }
 }
 
 SWE_Folkhemmet_decision_categories = {
-    SWE_Increace_national_debt = {
+    SWE_Increace_national_debt = { #增加发行量
         available = {
-            has_national_idea = SWE_Folkhemmet
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }            
+            check_variable = { SWE_National_debt < 1.2 }
         }
         ai_will_do = {
-            add = 0.5
+            add = 1
             modifier = {
                 has_political_power < 50
                 add = 1
             }
         }
+        days_remove = 30
+        days_re_enable = 14
         cost = 20
+        modifier = {
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = -0.05
+            production_factory_start_efficiency_factor = -0.1
+        }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = 0.1 }
-            add_to_variable = { SWE_debt_political_gain = 10 }
-            add_to_variable = { SWE_debt_consumer_factory = 0.15 }
+            add_to_variable = { SWE_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
+        }
+        remove_effect = {
+            add_political_power = 300
         }
     }
 
-    SWE_Decreace_national_debt = {
+    SWE_Decreace_national_debt = { #减少发行量
         available = {
-            has_national_idea = SWE_Folkhemmet
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
+            check_variable = { SWE_National_debt > 0 }
         }
         ai_will_do = {
-            add = 0.5
+            add = 1
             modifier = {
                 has_political_power < 50
                 factor = 0
             }
         }
         cost = 20
+        days_remove = 60
+        days_re_enable = 14
+        modifier = {
+            stability_factor = -0.1
+            political_power_gain = -0.75
+        }
         complete_effect = {
-            add_to_variable = { SWE_National_debt = -0.1 }
-            add_to_variable = { SWE_debt_political_gain = -10 }
-            add_to_variable = { SWE_debt_consumer_factory = -0.15 }
+            add_to_variable = { SWE_National_debt = -0.2 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_National_debt < 0 }
+				}
+				set_variable = { SWE_National_debt = 0 }
+			}
+        }
+        remove_effect = {
+            add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
+            add_to_variable = { SWE_Folkhemmet_industrial_capacity = 0.05 }
+            add_to_variable = { SWE_Folkhemmet_factory_efficency = 0.05 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_idea_tt
+        }
+    }
+
+    SWE_Increace_has_national_debt = { #增加持有量
+        available = {
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
+            check_variable = { SWE_has_National_debt < 1 }
+        }
+        ai_will_do = {
+            add = 1
+            modifier = {
+                has_political_power < 50
+                add = 1
+            }
+        }
+        days_remove = 30
+        days_re_enable = 14
+        cost = 20
+        modifier = {
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = -0.05
+            production_factory_start_efficiency_factor = -0.1
+        }
+        complete_effect = {
+            add_to_variable = { SWE_has_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_has_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_has_National_debt > 1.2 }
+				}
+				set_variable = { SWE_has_National_debt = 1.2 }
+			}
+        }
+        remove_effect = {
+            add_political_power = 300
+        }
+    }
+
+    SWE_Decreace_has_national_debt = { #减少持有量
+        available = {
+            hidden_trigger = {
+                has_country_flag = SWE_Folkhemmet_flag
+            }   
+            check_variable = { SWE_has_National_debt > 0 }
+        }
+        ai_will_do = {
+            add = 1
+            modifier = {
+                has_political_power < 50
+                factor = 0
+            }
+        }
+        cost = 20
+        days_remove = 60
+        days_re_enable = 14
+        modifier = {
+            stability_factor = -0.1
+            political_power_gain = -0.75
+        }
+        complete_effect = {
+            add_to_variable = { SWE_has_National_debt = -0.2 }
+            custom_effect_tooltip = SWE_decrease_has_national_debt_decision_tt
+            if = {
+				limit = {
+					check_variable = { SWE_has_National_debt < 0 }
+				}
+				set_variable = { SWE_has_National_debt = 0 }
+			}
+        }
+        remove_effect = {
+            add_to_variable = { SWE_Folkhemmet_consumer_goods = -0.1 }
+            add_to_variable = { SWE_Folkhemmet_industrial_capacity = 0.05 }
+            add_to_variable = { SWE_Folkhemmet_factory_efficency = 0.05 }
+            custom_effect_tooltip = SWE_decrease_national_debt_decision_idea_tt
+        }
+    }
+
+    SWE_Education_mission = { #教育危机
+        activation = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Education > 1 }
+                tooltip = SWE_Education_crisis_happening
+            }
+            has_country_flag = SWE_Folkhemmet_flag
+		}
+		available = {
+            OR = {
+                has_completed_focus = SWE_People_University
+                hidden_trigger = {
+                    NOT = {
+                        has_country_flag = SWE_Folkhemmet_flag
+                    }
+                }
+            }
+		}
+
+        visible = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Education > 1 }
+                tooltip = SWE_Education_crisis_happening
+            }
+            has_country_flag = SWE_Folkhemmet_flag
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    custom_trigger_tooltip = {
+                        check_variable = { SWE_Education > 1 }
+                        tooltip = SWE_Education_crisis_happening
+                    }
+                    has_country_flag = SWE_Folkhemmet_flag
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 75
+
+        timeout_effect = {                    
+			if = {
+                limit = {
+                    check_variable = { SWE_Education < 3 }
+                }
+                add_to_variable = { SWE_Education = 1 }
+                add_political_power = -50
+                add_stability = -0.1
+                custom_effect_tooltip = SWE_Education_worse_tt
+            }
+            else = {
+                add_stability = -0.25
+                add_political_power = -200
+                if = {
+                    limit = { has_idea = SWE_Folkhemmet_debuff }
+                    remove_ideas = SWE_Folkhemmet
+                    clr_country_flag = SWE_Folkhemmet_flag
+                    country_event = { id = SWE_Folkhemmet.7 }
+                    custom_effect_tooltip = SWE_Folkhemmet_failed_tt
+                }
+                else = {
+                    add_ideas = SWE_Folkhemmet_debuff
+                    remove_ideas = SWE_Folkhemmet
+                    custom_effect_tooltip = SWE_Education_worse_tt
+                }
+            }     
+		}
+
+        complete_effect = {
+            add_political_power = 200
+        }
+    }
+
+    SWE_Labor_mission = { #劳动危机
+        activation = {
+            check_variable = { SWE_Labor > 1 }
+            has_country_flag = SWE_Folkhemmet_flag
+		}
+		available = {
+            OR = {
+                has_completed_focus = SWE_Labor_Protection
+                hidden_trigger = {
+                    NOT = {
+                        has_country_flag = SWE_Folkhemmet_flag
+                    }
+                }
+            }
+		}
+
+        visible = {
+            check_variable = { SWE_Labor > 1 }
+            has_country_flag = SWE_Folkhemmet_flag
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    check_variable = { SWE_Labor > 1 }
+                    has_country_flag = SWE_Folkhemmet_flag
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 75
+
+        timeout_effect = {                    
+			if = {
+                limit = {
+                    check_variable = { SWE_Labor < 3 }
+                }
+                add_to_variable = { SWE_Labor = 1 }
+                add_political_power = -50
+                add_stability = -0.1
+                custom_effect_tooltip = SWE_Labor_worse_tt
+            }
+            else = {
+                add_stability = -0.25
+                add_political_power = -200
+                if = {
+                    limit = { has_idea = SWE_Folkhemmet_debuff }
+                    remove_ideas = SWE_Folkhemmet
+                    clr_country_flag = SWE_Folkhemmet_flag
+                    country_event = { id = SWE_Folkhemmet.7 }
+                    custom_effect_tooltip = SWE_Folkhemmet_failed_tt
+                }
+                else = {
+                    add_ideas = SWE_Folkhemmet_debuff
+                    remove_ideas = SWE_Folkhemmet
+                    custom_effect_tooltip = SWE_Labor_worse_tt
+                }
+            }     
+		}
+
+        complete_effect = {
+            add_political_power = 200
+        }
+    }
+
+    SWE_Immigrant_mission = { #移民危机
+        activation = {
+            check_variable = { SWE_Immigrant > 1 }
+            has_country_flag = SWE_Folkhemmet_flag
+		}
+		available = {
+            hidden_trigger = {
+                OR = {
+                    check_variable = { SWE_Immigrant = 0 }
+                    NOT = {
+                        has_country_flag = SWE_Folkhemmet_flag
+                    }
+                }
+            }
+		}
+
+        visible = {
+            check_variable = { SWE_Immigrant > 1 }
+            has_country_flag = SWE_Folkhemmet_flag
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    check_variable = { SWE_Immigrant > 1 }
+                    has_country_flag = SWE_Folkhemmet_flag
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 75
+
+        timeout_effect = {                    
+			if = {
+                limit = {
+                    check_variable = { SWE_Immigrant < 3 }
+                }
+                add_to_variable = { SWE_Immigrant = 1 }
+                add_political_power = -50
+                add_stability = -0.1
+                custom_effect_tooltip = SWE_Immigrant_worse_tt
+            }
+            else = {
+                add_stability = -0.25
+                add_political_power = -200
+                if = {
+                    limit = { has_idea = SWE_Folkhemmet_debuff }
+                    remove_ideas = SWE_Folkhemmet
+                    clr_country_flag = SWE_Folkhemmet_flag
+                    country_event = { id = SWE_Folkhemmet.7 }
+                    custom_effect_tooltip = SWE_Folkhemmet_failed_tt
+                }
+                else = {
+                    add_ideas = SWE_Folkhemmet_debuff
+                    remove_ideas = SWE_Folkhemmet
+                    custom_effect_tooltip = SWE_Immigrant_worse_tt
+                }
+            }     
+		}
+
+        complete_effect = {
+            add_political_power = 200
+        }
+    }
+
+    SWE_solve_Immigrant_crisis = { #解决移民危机
+        available = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Immigrant > 1 }
+                has_country_flag = SWE_Folkhemmet_flag
+                tooltip = SWE_Immigrant_crisis_happenning
+            }
+            has_stability > 0.7
+            has_war_support > 0.4
+            has_completed_focus = SWE_Labor_Protection
+        }
+
+        visible = {
+            custom_trigger_tooltip = {
+                check_variable = { SWE_Immigrant > 1 }
+                has_country_flag = SWE_Folkhemmet_flag
+                tooltip = SWE_Immigrant_crisis_happenning
+            }
+        }
+
+        cost = 200
+        ai_will_do = {
+            add = 1000
+        }
+
+        complete_effect = {
+            set_variable = { SWE_Immigrant = 0 }
+            custom_effect_tooltip = SWE_Immigrant_crisis_solve_tt
+            add_to_variable = { SWE_National_debt = 0.2 }
+            custom_effect_tooltip = SWE_increase_national_debt_decision_tt
+			if = {
+				limit = {
+					check_variable = { SWE_National_debt > 1.2 }
+				}
+				set_variable = { SWE_National_debt = 1.2 }
+			}
         }
     }
 }
