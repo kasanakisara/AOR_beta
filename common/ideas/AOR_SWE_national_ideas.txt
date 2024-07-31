@@ -1,10 +1,9 @@
 ideas = {
 
-	country = {
-
+	hidden_ideas = {
 		SWE_Oslo_Stockholm_Shinkansenn = {
 			picture = ""
-			allowed = {
+			available = {
 				check_variable = { SWE_Union_Stage > 0 }
 				check_variable = { SWE_Union_Stage < 3 }
 			}
@@ -12,6 +11,20 @@ ideas = {
 				civilian_factory_use = 5
 			}
 		}
+
+		SWE_Samitinget_ongoing = {
+			picture = ""
+			available = {
+				check_variable = { SWE_Union_Stage > 2 }
+				check_variable = { SWE_Union_Stage < 5 }
+			}
+			modifier = {
+				political_power_cost = 0.4
+			}
+		}
+	}
+
+	country = {
 		
 		SWE_Left_Threat = {
 			picture = GFX_idea_SWE_Left_Threat
@@ -255,8 +268,9 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
-				stability_factor = 0.1
-				stability_weekly = 0.01
+				stability_factor = 0.025
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -303,7 +317,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.2
 				consumer_goods_factor = 0.3
-				stability_factor = -0.1
+				stability_factor = -0.15
 				stability_weekly = -0.05
 			}
 		}
@@ -315,7 +329,6 @@ ideas = {
 				political_power_cost = 0.1
 				consumer_goods_factor = 0.2
 				stability_factor = 0.15
-				stability_weekly = 0.01
 				production_factory_start_efficiency_factor = 0.25
 				industrial_capacity_factory = 0.25
 			}
@@ -328,7 +341,6 @@ ideas = {
 				political_power_cost = 0.1
 				consumer_goods_factor = 0.2
 				stability_factor = 0.15
-				stability_weekly = 0.01
 			}
 		}
 
@@ -363,6 +375,18 @@ ideas = {
 			modifier = {
 				stability_factor = -0.25
 				consumer_goods_factor = 0.45
+			}
+		}
+
+		SWE_Samitinget = {
+			picture = ""
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.025
+				local_resources_factor = 0.15
+				conscription = 0.005
 			}
 		}
 	}

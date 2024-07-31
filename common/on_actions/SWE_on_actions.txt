@@ -571,20 +571,50 @@ on_actions = {
 				#判断是否进步
 				if = {
 					limit = {
-						check_variable = { SWE_Union_progress_value = 100 compare = more_than_or_equals }
+						check_variable = { SWE_Union_progress_value > 100 }
 					}
 					add_to_variable = { SWE_Union_Stage = 1 }
 					add_to_variable = { SWE_Union_progress_value = -100 }
-					add_to_variable = { SWE_Union_stability_factor = 0.25 }
-					add_to_variable = { SWE_Union_war_support_factor = 0.25 }
-					add_to_variable = { SWE_Union_construction_speed = 0.25 }
-					add_to_variable = { SWE_Union_arms_speed = 0.25 }
-					add_to_variable = { SWE_Union_industrial_speed = 0.25 }
+					add_to_variable = { SWE_Union_stability_factor = 0.025 }
+					add_to_variable = { SWE_Union_war_support_factor = 0.025 }
+					add_to_variable = { SWE_Union_construction_speed = 0.025 }
+					add_to_variable = { SWE_Union_arms_speed = 0.025 }
+					add_to_variable = { SWE_Union_industrial_speed = 0.025 }
 					if = {
 						limit = {
 							check_variable = { SWE_Union_Stage < 12 }
 						}
 						add_to_variable = { SWE_Union_political_cost = -0.05 }
+					}
+				}
+
+				###任务修正###
+				if = {
+					limit = {
+						check_variable = { SWE_Union_Stage > 0 }
+						check_variable = { SWE_Union_Stage < 3 }
+					}
+					if = {
+						limit = { NOT = { has_country_flag = SWE_has_Shinkansenn } }
+						add_ideas = SWE_Oslo_Stockholm_Shinkansenn
+					}
+					else = {
+						remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Union_Stage > 2 }
+						check_variable = { SWE_Union_Stage < 5 }
+					}
+					if = {
+						limit = {
+							NOT = { has_idea = SWE_Samitinget }
+						}
+						add_ideas = SWE_Samitinget_ongoing
+					}
+					else = {
+						remove_ideas = SWE_Samitinget_ongoing
 					}
 				}
 

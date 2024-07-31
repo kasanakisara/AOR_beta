@@ -11,6 +11,9 @@ defined_text = { # 战争总结
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
 					NOT = { original_tag = RUS }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = NAU }
+					NOT = { original_tag = BAV }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -19,6 +22,9 @@ defined_text = { # 战争总结
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
 					NOT = { original_tag = ARU }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = NAU }
+					NOT = { original_tag = BAV }
 				}
 				# ORA和ARG都将使用特殊战争总结
 			}
@@ -80,7 +86,7 @@ defined_text = { # 战争总结
 		localization_key = SP_WARPEACE_FIC_FIN_W
 	}
 
-	text = {
+	text = { #俄国内战
 		trigger = {
 			event_target:winning_country = {
 				original_tag = RUS 
@@ -90,6 +96,26 @@ defined_text = { # 战争总结
 			}
 		}
 		localization_key = SP_WARPEACE_RUS_ARU_W
+	}
+
+	text = { #德国内战
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = GER
+					original_tag = NAU
+					original_tag = BAV
+				}
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = GER
+					original_tag = NAU
+					original_tag = BAV
+				}
+			}
+		}
+		localization_key = SP_WARPEACE_Germany_civilwar_W
 	}
 }
 defined_text = { # 战争结语
@@ -111,6 +137,9 @@ defined_text = { # 战争结语
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
 					NOT = { original_tag = RUS }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = NAU }
+					NOT = { original_tag = BAV }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -125,6 +154,9 @@ defined_text = { # 战争结语
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
 					NOT = { original_tag = ARU }
+					NOT = { original_tag = GER }
+					NOT = { original_tag = NAU }
+					NOT = { original_tag = BAV }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
@@ -296,5 +328,50 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_RUS_ARU_WT
+	}
+
+	text = { #德国内战-BAV败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = GER
+					original_tag = NAU
+				}
+			}
+			event_target:losing_country = {
+				original_tag = BAV
+			}
+		}
+		localization_key = SP_WARPEACE_Germany_civilwar_BAV_LT
+	}
+
+	text = { #德国内战-GER败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = BAV
+					original_tag = NAU
+				}
+			}
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = SP_WARPEACE_Germany_civilwar_GER_LT
+	}
+
+	text = { #德国内战-NAU败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = BAV
+					original_tag = GER
+				}
+			}
+			event_target:losing_country = {
+				original_tag = NAU
+			}
+		}
+		localization_key = SP_WARPEACE_Germany_civilwar_NAU_LT
 	}
 }

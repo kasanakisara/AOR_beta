@@ -470,16 +470,28 @@ SWE_Union_decision_categories = { #联邦一梦
         activation = {
             check_variable = { SWE_Union_Stage > 0 }
             check_variable = { SWE_Union_Stage < 3 }
+            NOT = {
+                has_country_flag = SWE_has_Shinkansenn
+            }
         }
         visible = {
             check_variable = { SWE_Union_Stage > 0 }
             check_variable = { SWE_Union_Stage < 3 }
+            NOT = {
+                has_country_flag = SWE_has_Shinkansenn
+            }
         }
 
         cancel_trigger = {
             hidden_trigger = {
-                NOT = {
-                    has_idea = SWE_The_Union_Dream
+                OR = {
+                    NOT = {
+                        check_variable = { SWE_Union_Stage > 0 }
+                        check_variable = { SWE_Union_Stage < 3 }
+                    }
+                    NOT = {
+                        has_idea = SWE_The_Union_Dream
+                    }
                 }
             }
 		}
@@ -496,6 +508,52 @@ SWE_Union_decision_categories = { #联邦一梦
             add_to_variable = { SWE_Union_progress_value = 25 }
             custom_effect_tooltip = SWE_Union_progress_add_25_tt
             custom_effect_tooltip = SWE_using_civilian_factory_5_tt
+            set_country_flag = SWE_has_Shinkansenn
+        }
+    }
+
+    SWE_Samitinget_decision = { #萨米议会
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 2 }
+            check_variable = { SWE_Union_Stage < 5 }
+            NOT = {
+                has_idea = SWE_Samitinget
+            }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 2 }
+            check_variable = { SWE_Union_Stage < 5 }
+            NOT = {
+                has_idea = SWE_Samitinget
+            }
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                OR = {
+                    NOT = {
+                        check_variable = { SWE_Union_Stage > 2 }
+                        check_variable = { SWE_Union_Stage < 5 }
+                    }
+                    NOT = {
+                        has_idea = SWE_The_Union_Dream
+                    }
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 45
+        timeout_effect = {
+            add_ideas = SWE_Samitinget
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+            custom_effect_tooltip = SWE_Samitinget_ongoing_tt
         }
     }
 }
@@ -703,7 +761,7 @@ SWE_Folkhemmet_decision_categories = {
                     check_variable = { SWE_Education < 3 }
                 }
                 add_to_variable = { SWE_Education = 1 }
-                add_political_power = -50
+                add_political_power = -100
                 add_stability = -0.1
                 custom_effect_tooltip = SWE_Education_worse_tt
             }
@@ -771,7 +829,7 @@ SWE_Folkhemmet_decision_categories = {
                     check_variable = { SWE_Labor < 3 }
                 }
                 add_to_variable = { SWE_Labor = 1 }
-                add_political_power = -50
+                add_political_power = -100
                 add_stability = -0.1
                 custom_effect_tooltip = SWE_Labor_worse_tt
             }
@@ -839,7 +897,7 @@ SWE_Folkhemmet_decision_categories = {
                     check_variable = { SWE_Immigrant < 3 }
                 }
                 add_to_variable = { SWE_Immigrant = 1 }
-                add_political_power = -50
+                add_political_power = -100
                 add_stability = -0.1
                 custom_effect_tooltip = SWE_Immigrant_worse_tt
             }
