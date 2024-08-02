@@ -160,9 +160,7 @@ country_event = {
 		trigger = {
 			tag = FIN
 			check_variable = { stability < 0.2 }
-			NOT = {
-				has_country_flag = FIN_civilwar
-			}
+			has_country_flag = FIN_civilwar
 		}
 		
 		timeout_days = 7
@@ -270,9 +268,7 @@ country_event = {
 			original_tag = FIN
 			surrender_progress > 0.6 
 			has_war_with = FIC
-			NOT = {
-				has_country_flag = FIN_civilwar
-			}
+			has_country_flag = FIN_civilwar
 		}
 
 		timeout_days = 7
