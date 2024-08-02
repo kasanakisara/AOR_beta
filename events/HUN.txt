@@ -131,6 +131,18 @@ news_event = {  #匈牙利宣布与克罗地亚组成联邦
 
 	option = {
 		name = HUN_news.ANXCRO.a
+		trigger = {
+			tag = HUN
+		}
+	}
+
+	option = {
+		name = HUN_news.ANXCRO.b
+		trigger = {
+			NOT = {
+				tag = HUN
+			}
+		}
 	}
 }
 
@@ -232,9 +244,9 @@ news_event = {
 }
 ############匈牙利政治换届############
 country_event = {   #我已不再年轻
-	id = HUN.4
-	title = HUN.4.t
-	desc = HUN.4.d
+	id = HUN.7
+	title = HUN.7.t
+	desc = HUN.7.d
 	picture = GFX_HUN_tisza
 	fire_only_once = yes
 	trigger = {
@@ -245,7 +257,7 @@ country_event = {   #我已不再年轻
 	}
     #还政于民  	
 	option = { 
-		name = HUN.4.a
+		name = HUN.7.a
 		add_political_power = 1
 		news_event = {
 			id = HUN_news.2
@@ -267,9 +279,9 @@ news_event = {  #蒂撒伯爵宣布举行首次大选
 }
 
 country_event = {   #我已不再年轻
-	id = HUN.5 #大选结果
-	title = HUN.5.t
-	desc = HUN.5.d
+	id = HUN.8 #大选结果
+	title = HUN.8.t
+	desc = HUN.8.d
 	picture = GFX_HUN_tisza
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -352,7 +364,7 @@ country_event = {   #我已不再年轻
 
 }
 news_event = {  #蒂撒连任，匈牙利督政府成立
-	id = HUN_news_tisza
+	id = HUN_news.tisza
 	title = HUN_news_tisza.t
 	desc = HUN_news_tisza.d
 	picture = GFX_AOR_news.15_pic
@@ -365,7 +377,7 @@ news_event = {  #蒂撒连任，匈牙利督政府成立
 }
 
 news_event = {  #卡罗伊胜出，匈牙利资产阶级获胜
-	id = HUN_news_karoly
+	id = HUN_news.karoly
 	title = HUN_news_karoly.t
 	desc = HUN_news_karoly.d
 	picture = GFX_AOR_news.15_pic
@@ -378,7 +390,7 @@ news_event = {  #卡罗伊胜出，匈牙利资产阶级获胜
 }
 
 news_event = {  #共博士胜出，马扎尔民族共和国
-	id = HUN_news_gombos
+	id = HUN_news.gombos
 	title = HUN_news_gombos.t
 	desc = HUN_news_gombos.d
 	picture = GFX_AOR_news.15_pic
@@ -391,7 +403,7 @@ news_event = {  #共博士胜出，马扎尔民族共和国
 }
 
 news_event = {  #被色轮胜出，匈牙利民主共和国
-	id = HUN_news_bethlan
+	id = HUN_news.bethlan
 	title = HUN_news_bethlan.t
 	desc = HUN_news_bethlan.d
 	picture = GFX_AOR_news.15_pic
@@ -404,7 +416,7 @@ news_event = {  #被色轮胜出，匈牙利民主共和国
 }
 
 news_event = {  #萨博胜出，匈牙利农民共和国
-	id = HUN_news_szabo
+	id = HUN_news.szabo
 	title = HUN_news_szabo.t
 	desc = HUN_news_szabo.d
 	picture = GFX_AOR_news.15_pic
