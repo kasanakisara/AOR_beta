@@ -820,7 +820,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.70.a
-		recruit_character = BAV_Karl_Liebknecht
+		kill_country_leader = YES
+		promote_character = {
+			character = BAV_Karl_Liebknecht
+			ideology = revolutionism
+		}
 	}
 }
 
@@ -831,6 +835,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.71.a
-		recruit_character = BAV_Luksemburg
+		kill_country_leader = YES
+		promote_character = {
+			character = BAV_Luksemburg
+			ideology = luxemburgism
+		}
 	}
 }
