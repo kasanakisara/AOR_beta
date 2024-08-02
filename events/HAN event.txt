@@ -62,3 +62,42 @@ country_event = {
 			create_faction = Pact_of_Steel
 		}
 	}
+
+country_event = {
+	id = HAN.4
+	title = HAN.4.t
+	desc = HAN.4.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = HAN.4.a
+		trigger = {
+			NAU = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Eduard Bernstein"
+				}
+			}
+		OR = {
+			NAU = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Karl Radek"
+						}
+					}
+		    	}
+			}
+			declare_war_on = {
+				target = GER
+				type = civil_war
+			}
+			declare_war_on = {
+				target = NAU
+				type = civil_war
+			}
+			declare_war_on = {
+				target = BAV
+				type = civil_war
+			}
+		}
+	}

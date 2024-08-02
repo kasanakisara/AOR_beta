@@ -31,9 +31,7 @@ country_event = {
 				add_state_core = 850
 				add_manpower = 10000
 				        	}
-			FRA = {
-       				  puppet = RHI
-					}
+			FRA = {puppet = RHI}
 		 42 = { 
 			add_core_of = RHI
 			set_demilitarized_zone = no 

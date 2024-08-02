@@ -820,6 +820,10 @@ country_event = {
 			base= 10
 		}
 		create_faction = Revenge_front
+		GER = {
+			add_to_faction = SAX
+			add_to_faction = HAN
+		}
 	}
 }
 
@@ -847,111 +851,13 @@ country_event = {
 					id = BAV.13
 				}
 			}
-		}
-	}
-}
-
-country_event = {
-	id = NAU.37	#被bav吞并
-	title = NAU.37.t
-	desc = NAU.37.d
-	picture = GFX_report_event_polish_tanks_01
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = {
-		    country_exists = GER
-		}
-	}
-	option = {
-		name = NAU.37.a
-		BAV = {
-			annex_country = {
-				target = NAU
-			}
-		}
-	}
-}
-
-
-country_event = {
-	id = NAU.68	#统一
-	title = NAU.68.t
-	desc = NAU.68.d
-	fire_only_once = yes
-	trigger = {
-		tag = NAU
-		owns_state = 840
-		owns_state = 861
-		NOT = {
-			country_exists = BAV
-			country_exists = GER
-		}
-	}
-	option = {
-		name = NAU.68.a
-		declare_war_on = {
-			target = HAN
-			type = civil_war
-		}
-		if = {
-			limit = {
-				country_exists = SAX
-			}
-			SAX = {
-				add_to_war = {
-					targeted_alliance = HAN
-					enemy = NAU
-				}
-			}
-			
-		}
-		if = {
-			limit = {
-				country_exists = SIL
-			}
-			SIL = {
-				add_to_war = {
-					targeted_alliance = HAN
-					enemy = NAU
-				}
-			}
-			
-		}
-		if = {
-			limit = {
-				country_exists = KSH
-			}
-			KSH = {
-				add_to_war = {
-					targeted_alliance = HAN
-					enemy = NAU
-				}
-			}
-			
-		}
-		if = {
-			limit = {
-				country_exists = MEK
-			}
-			MEK = {
-				add_to_war = {
-					targeted_alliance = HAN
-					enemy = NAU
-				}
-			}
-		
-		}
-		if = {
-			limit = {
-				country_exists = NSH
-			}
-			NSH = {
-				add_to_war = {
-					targeted_alliance = HAN
-					enemy = NAU
+			HAN = {
+				country_event = {
+					days = 14
+					id = HAN.4
 				}
 			}
 		}
 	}
 }
+
