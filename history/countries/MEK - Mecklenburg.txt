@@ -1,5 +1,7 @@
 ﻿capital = 61
 
+set_cosmetic_tag = MEK_1
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
