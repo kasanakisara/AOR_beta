@@ -31,7 +31,7 @@ characters = {
 			slot = political_advisor
 			idea_token = PER_ENG_economy_theorist
 			allowed = { original_tag= PER }
-			available  = {
+			available = {
 				has_completed_focus = PER_Hiring_UK_experts_40
 			}
 			traits = { AOR_PER_ENG_economy }
@@ -39,6 +39,21 @@ characters = {
 			ai_will_do = {
 				factor = 10
 			}
+		}
+	}
+	PER_National_Consultative_Assembly = { #全国协商议会
+		name = National_Consultative_Assembly 
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/advisors/National_Consultative_Assembly.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PER_National_Consultative_Assembly
+			removal_cost = -1
+			allowed = { original_tag= PER }
+			traits = { The_highest_authority }
 		}
 	}
 }
