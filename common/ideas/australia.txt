@@ -359,7 +359,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
+				#democratic_drift = -0.1
 			}
 		}
 
@@ -370,7 +370,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				#has_government = communism
 			}
 
 			removal_cost = -1
@@ -379,8 +379,8 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
-				communism_drift = 0.2
+				#democratic_drift = -0.1
+				#communism_drift = 0.2
 			}
 		}
 
@@ -400,8 +400,8 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.1
-				fascism_drift = 0.2
+				#democratic_drift = -0.1
+				#fascism_drift = 0.2
 			}
 		}
 
