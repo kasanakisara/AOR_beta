@@ -489,7 +489,7 @@ ideas = {
 			picture = new_economic_policy
 
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_to_remove = {
 				OR = {
@@ -518,7 +518,7 @@ ideas = {
 			picture = new_economic_policy
 
 			allowed = {
-				always = yes
+				always = no
 			}
 			allowed_to_remove = {
 				OR = {
@@ -549,7 +549,7 @@ ideas = {
 			
 			picture = Semi_colonial_economy
 			
-			allowed = { always = yes }
+			allowed = { always = no }
 			
 			allowed_to_remove = {
 				always = no
