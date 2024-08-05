@@ -42,10 +42,10 @@ characters = {
 		}
 	}
 	PER_National_Consultative_Assembly = { #全国协商议会
-		name = National_Consultative_Assembly 
+		name = National_Consultative_Assembly
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/advisors/National_Consultative_Assembly.png"
+				small = "gfx/interface/ideas/PER/advisors/National_Consultative_Assembly.png"
 			}
 		}
 		advisor = {
