@@ -805,10 +805,12 @@ country_event = {
 	}
 	option = {
 		name = BAV.69.a
-		annex_country = { target = NAU }
-		transfer_units_fraction= {
+		BAV = { annex_country = { target = NAU } }
+		NAU = {
+		   transfer_units_fraction= {
 			target = BAV
 			size = 1
+		   }
 		}
 	}
 }

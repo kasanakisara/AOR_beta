@@ -5,9 +5,7 @@ AOR_ENG_AIERLAN_decision_category = {
 	picture = GFX_AOR_ENG_gongheaierlam_picture
 
 	available = {
-		135 = {
-			has_dynamic_modifier = AOR_ENG_gonghejunyundong
-		}
+			tag = ENG
 	}
 	priority = 10
 }
