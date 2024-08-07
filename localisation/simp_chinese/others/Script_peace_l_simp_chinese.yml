@@ -1,5 +1,6 @@
 ﻿l_simp_chinese:
 ###战争名称
+ POLITICS_NOELECTIONS: "事件选举"
  take_state: "征服"
  take_state_desc: "从$TARGET|Y$手里夺取$STATE|Y$。"
  take_state_short_desc: "设定此战争目标可以在和谈中用更小的代价获得已选择的地区。"

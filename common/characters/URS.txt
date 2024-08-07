@@ -1,16 +1,13 @@
 characters = {
 	Alexander_Dutov = {
-		name = Алекса́ндр Ильи́ч Ду́тов
+		name = "Алекса́ндр Ильи́ч Ду́тов"
 		portraits = {
 			army = {
-				large = gfx/leaders/URS/Alexander Dutov.dds
-				small = gfx/leaders/URS/Alexander Dutov.dds
+				large = gfx/leaders/URS/Alexander_Dutov.dds
+				small = gfx/leaders/URS/Alexander_Dutov.dds
 			}
 		}
 		corps_commander = {
-			traits = {
-
-			}
 			skill = 4
 			attack_skill = 5
 			defense_skill = 2
