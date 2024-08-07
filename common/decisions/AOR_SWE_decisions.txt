@@ -556,6 +556,114 @@ SWE_Union_decision_categories = { #联邦一梦
             custom_effect_tooltip = SWE_Samitinget_ongoing_tt
         }
     }
+
+    SWE_Northern_Railway_Plan = { #北疆铁路计划
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 4 }
+            has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_Northern_Plan_finish
+            }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 4 }
+            has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_Northern_Plan_finish
+            }
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                OR = {
+                    NOT = {
+                        has_idea = SWE_The_Union_Dream
+                    }
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 180
+        timeout_effect = {
+            if = {
+                limit = {
+                    OR = {
+                        check_variable = { SWE_Northern_Railway_Plan_Stage < 3 }
+                        NOT = {
+                            has_variable = SWE_Northern_Railway_Plan_Stage
+                        }
+                    }
+                }
+                add_to_variable = { SWE_Union_progress_value = 25 }
+                custom_effect_tooltip = SWE_Union_progress_add_25_tt
+                if = {
+                    limit = { NOT = { has_variable = SWE_Northern_Railway_Plan_Stage } }
+                    set_variable = { SWE_Northern_Railway_Plan_Stage = 1 }
+                    custom_effect_tooltip = SWE_Northern_Railway_Plan_ongoing_I_tt
+                }
+                else = {
+                    add_to_variable = { SWE_Northern_Railway_Plan_Stage = 1 }
+                }
+            }
+            else = {
+
+            }
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+        }
+    }
+
+    SWE_Norsk_Bokmaal = { #推动新挪威语和书面挪威语合流
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 6 }
+            check_variable = { SWE_Union_Stage < 9 }
+            NOT = {
+                has_country_flag = SWE_Norsk_Bokmaal
+            }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 6 }
+            check_variable = { SWE_Union_Stage < 9 }
+            NOT = {
+                has_country_flag = SWE_Norsk_Bokmaal
+            }
+        }
+
+        cancel_trigger = {
+            hidden_trigger = {
+                OR = {
+                    NOT = {
+                        check_variable = { SWE_Union_Stage > 6 }
+                        check_variable = { SWE_Union_Stage < 9 }
+                    }
+                    NOT = {
+                        has_idea = SWE_The_Union_Dream
+                    }
+                }
+            }
+		}
+
+		fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 90
+        timeout_effect = {
+            set_country_flag = SWE_Norsk_Bokmaal
+            add_ideas = SWE_United_Norweign
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+            custom_effect_tooltip = SWE_Norsk_Bokmaal_ongoing_tt
+        }
+    }
 }
 
 SWE_Folkhemmet_decision_categories = {
