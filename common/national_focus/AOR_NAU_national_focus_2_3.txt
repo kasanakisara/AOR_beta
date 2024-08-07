@@ -247,6 +247,9 @@ focus_tree={
 		y=5
 		prerequisite={focus=NAU_Prohibition_of_strikes}
 		prerequisite={focus=NAU_Supporting_wealthy_farmers}
+		available = {
+			has_completed_focus = NAU_An_arm_of_nations
+		}
 		cost=10
 		ai_will_do={
 			factor=1
