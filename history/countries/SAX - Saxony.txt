@@ -12,6 +12,8 @@ recruit_character = SAX_Kruger
 recruit_character = SAX_Reinhardt
 recruit_character = SAX_gustav_adolf_scheel
 
+set_cosmetic_tag = SAX_1
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
