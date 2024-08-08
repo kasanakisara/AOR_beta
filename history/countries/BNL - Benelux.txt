@@ -82,8 +82,14 @@ set_popularities = {
 	Marxism = 3
 }
 
+#领导人
 recruit_character = BNL_Wilhelmina_Helena_Pauline_Maria
 
+#将领
+recruit_character = BNL_cornelis_snijders
+recruit_character = BNL_willem_frederik_pop
+recruit_character = BNL_Izaak_Herman_Reijnders
+recruit_character = BNL_godfried_van_voorst_tot_voorst
 
 add_ideas = {
 	UK_help

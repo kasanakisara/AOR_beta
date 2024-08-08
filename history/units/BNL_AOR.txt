@@ -60,7 +60,7 @@ units = {
 	}
 	division= {	
 		name = "陆军第六师"
-		location = 7500 # Southern Argentina
+		location = 391
 		division_template = "步兵师"
 		start_experience_factor = 0.25
 		start_equipment_factor = 0.8
