@@ -1,5 +1,7 @@
 capital = 7
 
+oob = "BNL_AOR"
+
 set_research_slots = 3
 set_stability = 0.15
 set_war_support = 0.1
@@ -80,23 +82,20 @@ set_popularities = {
 	Marxism = 3
 }
 
-create_country_leader = {
-	name = "Wilhelmina_Helena_Pauline_Maria"
-	desc = ""
-	picture = "arj09-2zg3m.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+#领导人
+recruit_character = BNL_Wilhelmina_Helena_Pauline_Maria
 
+#将领
+recruit_character = BNL_cornelis_snijders
+recruit_character = BNL_willem_frederik_pop
+recruit_character = BNL_Izaak_Herman_Reijnders
+recruit_character = BNL_godfried_van_voorst_tot_voorst
 
 add_ideas = {
-	Apparent_equality
 	UK_help
 }
 
 
-country_event = { days = 3 id = BNL.2 }
+country_event = { days = 3 id = BNL.1 }
 
 
