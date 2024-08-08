@@ -1,0 +1,17 @@
+characters = {
+	BNL_Wilhelmina_Helena_Pauline_Maria={
+		name= Wilhelmina_Helena_Pauline_Maria
+		portraits={
+			civilian={
+				large="gfx/leaders/BNL/arj09-2zg3m.dds"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			desc = "Wilhelmina_DESC"
+			traits={trait_a_welcome_leader}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

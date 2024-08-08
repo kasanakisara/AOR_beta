@@ -166,6 +166,8 @@ country_event = {
 	hidden = no
 	option = {
 		name = BNL.4.a
+		add_ideas= Apparent_equality
+		add_ideas= The_Benelux_Constitution
 		hidden_effect = {
 			country_event = {
 				days = 1
@@ -173,24 +175,7 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = BNL.4.b
-		hidden_effect = {
-			country_event = {
-				days = 1
-				id = BNL.5
-			}
-		}
-	}
-	option = {
-		name = BNL.4.c
-		hidden_effect = {
-			country_event = {
-				days = 1
-				id = BNL.5
-			}
-		}
-	}
+
 }
 
 
@@ -204,6 +189,7 @@ country_event = {
 	hidden = no
 	option = {
 		name = BNL.5.a
+		add_ideas = Benelux_Governing_in_Netherlands
 		hidden_effect = {
 			country_event = {
 				days = 1
@@ -211,7 +197,24 @@ country_event = {
 			}
 		}
 	}
-	
+	option = {
+		name = BNL.5.B
+		hidden_effect = {
+			country_event = {
+				days = 1
+				id = BNL.6
+			}
+		}
+	}
+	option = {
+		name = BNL.5.C
+		hidden_effect = {
+			country_event = {
+				days = 1
+				id = BNL.6
+			}
+		}
+	}	
 }
 
 
@@ -225,8 +228,7 @@ country_event = {
 	hidden = no
 	option = {
 		name = BNL.6.a
-		add_ideas = Benelux_Governing_in_Netherlands
-		add_ideas= The_Benelux_Constitution
+		add_political_power = 25
 	}
 	
 }

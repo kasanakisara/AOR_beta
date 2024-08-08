@@ -1,0 +1,8 @@
+leader_traits = {
+	
+	trait_a_welcome_leader = {
+		random = no
+		stability_factor = 0.15
+	}
+
+}
