@@ -36,7 +36,7 @@ characters = {
 		portraits={
 			army={
 				small="gfx/interface/ideas/advisors/"
-				large="gfx/leaders/BNL/"
+				large="gfx/leaders/BNL/cornelis_snijders.png"
 			}
 		}
 		field_marshal={
@@ -72,7 +72,7 @@ characters = {
 		name= Izaak_Herman_Reijnders
 		portraits={
 			army={
-				large="gfx/leaders/BNL/"
+				large="gfx/leaders/BNL/Izaak_Herman_Reijnders.png"
 			}
 		}
 		corps_commander={
@@ -91,7 +91,7 @@ characters = {
 		portraits={
 			army={
 				small="gfx/interface/ideas/advisors/"
-				large="gfx/leaders/BNL/"
+				large="gfx/leaders/BNL/godfried_van_voorst_tot_voorst.png"
 			}
 		}
 		corps_commander={
