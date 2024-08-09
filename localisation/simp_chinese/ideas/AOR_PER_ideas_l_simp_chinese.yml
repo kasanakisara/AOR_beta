@@ -31,7 +31,8 @@
   PER_Agricultural_Jihad_Preliminary_1:0 "积谷防饥"
   PER_Agricultural_Jihad_Preliminary_2:0 "积谷防饥"
   PER_Agricultural_Jihad_Preliminary_3:0 "积谷防饥"
-####人物及内阁#####
-ENtheorist:0 "英国军事顾问团"
-ENeconomy:0 "英国经济顾问团"
-Imam_desc:0 "阿曼伊玛目国的领袖(伊玛目)是由选举产生的，现任伊玛目为：Mohammad bin Abdullah bin Said Khalili"
+#人物及内阁#####
+ ENtheorist:0 "英国军事顾问团"
+ ENeconomy:0 "英国经济顾问团"
+ National_Consultative_Assembly:0 "全国协商议会"
+ PER_National_Consultative_Assembly_desc:0 "“1.全国协商议会于伊斯兰历 1324 年 8 月 5 日（公元 1906 年 8 月 5 日）成立。\n2.全国协商议会代表波斯全体人民，他们“因此”参与国家的经济和政治事务。\n3.全国协商议会由德黑兰和各省选出的议员组成，在德黑兰举行。”\n全国协商议会是波斯（伊朗）的立法机关。在波斯的三权分立中起到至关重要的作用，负责编制国家预算、制定法律、监督国家机构的所作所为、以及审议行政部门的提出的议案。\n\n§G波斯的未来将和它息息相关！§!"

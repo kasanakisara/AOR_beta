@@ -737,6 +737,10 @@ spriteTypes = {
 	}
 		spriteType = {
 		name = "GFX_AOR_news.27_pic"
+		texturefile = "gfx/event_pictures/AOR_news.27_pic.png"
+	}
+		spriteType = {
+		name = "GFX_AOR_news.28_pic"
 		texturefile = "gfx/event_pictures/AOR_news.28_pic.png"
 	}
 		spriteType = {
@@ -811,8 +815,22 @@ spriteTypes = {
 		name = "GFX_AOR_news.353_pic"
 		texturefile = "gfx/event_pictures/AOR_news.353_pic.png"
 	}
-
-	
+	spriteType = {
+		name = "GFX_AOR_news.164_pic"
+		texturefile = "gfx/event_pictures/AOR_news.164_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.192_pic"
+		texturefile = "gfx/event_pictures/AOR_news.192_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.84_pic"
+		texturefile = "gfx/event_pictures/AOR_news.84_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.193_pic"
+		texturefile = "gfx/event_pictures/AOR_news.193_pic.png"
+	}
 	#巴苏事件图片
 	#这是一个通用电报图片!帅!
 	spriteType = {

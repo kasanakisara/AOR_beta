@@ -1,18 +1,10 @@
 capital = 7
 
-#oob = "HOL_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		#set_naval_#oob = "HOL_1936_naval_mtg"
-	else = {
-		#set_naval_#oob = "HOL_1936_naval_legacy"
-	}
-}
+oob = "BNL_AOR"
 
 set_research_slots = 3
-set_stability = 0.75
-set_war_support = 0
-add_command_power = 10
+set_stability = 0.15
+set_war_support = 0.1
 
 set_technology = {
 	infantry_weapons = 1
@@ -68,8 +60,6 @@ if = {
 	}
 }
 
-# DIPLOMACY
-
 set_autonomy = {
 		target = GML
 		autonomous_state = autonomy_integrated_puppet
@@ -81,7 +71,7 @@ set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1919.4.26"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -92,41 +82,20 @@ set_popularities = {
 	Marxism = 3
 }
 
-create_country_leader = {
-	name = "Wilhelmina Helena Pauline Maria"
-	desc = ""
-	picture = "arj09-2zg3m.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+#领导人
+recruit_character = BNL_Wilhelmina_Helena_Pauline_Maria
 
-create_country_leader = {
-	name = "Lou de Visser"
-	desc = ""
-	picture = "lou de visser.dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Cyriaque Cyprien Victor Gillain"
-	desc = ""
-	picture = "Cyriaque_Cyprien_Victor_Gillain.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
+#将领
+recruit_character = BNL_cornelis_snijders
+recruit_character = BNL_willem_frederik_pop
+recruit_character = BNL_Izaak_Herman_Reijnders
+recruit_character = BNL_godfried_van_voorst_tot_voorst
 
 add_ideas = {
-	Apparent_equality
-	The_Benelux_Constitution
-	Benelux_Governing_in_Netherlands
+	UK_help
 }
 
+
+country_event = { days = 3 id = BNL.1 }
 
 

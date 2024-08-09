@@ -222,6 +222,35 @@ default_role_ratios = {
 		value = 65
 	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 35
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 20
+	}
 }
 
 default_surplus_management = {
@@ -642,7 +671,22 @@ default_mountaineers_production = {
 #	#}
 #}
 
+default_mobile_production = {
+	enable = {
+		NOT = { original_tag = GER }
+		ai_wants_divisions > 11
+		has_tech = motorised_infantry
+	}
+	abort = {
+		ai_wants_divisions < 12
+	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = mobile
+		value = 2
+	}
+}
 
 default_armored_production = {
 	enable = {
@@ -1434,6 +1478,20 @@ minors_dont_spy = {
 	}
 }
 
+default_produce_some_trucks_for_buffer = {
+	enable = {
+		num_of_military_factories > 12
+		has_tech = tech_trucks
+		has_equipment = { motorized_equipment < 3000 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = 1
+	}
+}
 
 default_produce_floating_harbors = {
 	enable = {

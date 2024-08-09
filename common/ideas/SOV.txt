@@ -825,29 +825,7 @@ country= {
 			production_speed_arms_factory_factor = 0.1
 
 		}
-	}
-
-}
-}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	#迫在眉睫的危机1
 	PRC_present_danger1 = {
 		picture = PRC_present_danger
@@ -1584,7 +1562,7 @@ country= {
 			#核心领土补给耗尽惩罚
 			supply_combat_penalties_on_core_factor = -0.1
 			
-			陆军组织度
+			#陆军组织度
 			army_org_factor = 0.04
 		}
 	}
@@ -1598,7 +1576,7 @@ country= {
 			#核心领土补给耗尽惩罚
 			supply_combat_penalties_on_core_factor = -0.1
 			
-			陆军组织度
+			#陆军组织度
 			army_org_factor = 0.04
 
 			#部队维护费
@@ -1620,7 +1598,7 @@ country= {
 			#核心领土补给耗尽惩罚
 			supply_combat_penalties_on_core_factor = -0.1
 			
-			陆军组织度
+			#陆军组织度
 			army_org_factor = 0.04
 
 			#部队维护费
@@ -1653,7 +1631,7 @@ country= {
 			#核心领土补给耗尽惩罚
 			supply_combat_penalties_on_core_factor = -0.1
 			
-			陆军组织度
+			#陆军组织度
 			army_org_factor = 0.04
 
 			#部队维护费
@@ -2038,7 +2016,9 @@ country= {
 		}
 	}
 	FEN_ideas_wujiakegui = { #无家可归的士兵
+
 		picture = chi_forced_conscription
+
 		modifier = {
 			stability_factor = -0.001
 			ai_focus_aggressive_factor = 1.0
@@ -2207,4 +2187,6 @@ country= {
 			operation_make_resistance_contacts_risk = -0.2
 			operation_make_resistance_contacts_cost = -0.5
 		}
+		}
 	}
+}

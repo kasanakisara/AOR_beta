@@ -14,7 +14,7 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					#has_government = democratic
 				}
 			}
 			
@@ -35,7 +35,7 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = communism
+					#has_government = communism
 				}
 			}
 			
@@ -1146,7 +1146,7 @@ ideas = {
 			}
 			picture = idea_BAV_New_Officer_Corps
 			modifier = {
-				xp_gain = 0.1
+				#xp_gain = 0.1
 				experience_gain_army_factor =  0.05
 			}
 		}
@@ -1156,7 +1156,7 @@ ideas = {
 			}
 			picture = idea_BAV_New_Officer_Corps_2
 			modifier = {
-				xp_gain = 0.1
+				#xp_gain = 0.1
 				experience_gain_army_factor =  0.05
 				army_org_factor = 0.05
 			}
@@ -1179,7 +1179,7 @@ ideas = {
 			}
 			picture = idea_BAV_commissar
 			modifier = {
-				xp_gain_factor = 0.1
+				#xp_gain_factor = 0.1
 				experience_gain_army_factor =  0.05
 				army_org_factor = 0.05
 				army_morale_factor = 0.1

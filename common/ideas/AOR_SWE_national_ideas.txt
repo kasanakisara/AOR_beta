@@ -385,8 +385,19 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.025
-				local_resources_factor = 0.15
+				local_resources_factor = 0.1
 				conscription = 0.005
+			}
+		}
+
+		SWE_United_Norweign = {
+			picture = ""
+			available = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				stability_factor = -0.05
 			}
 		}
 	}

@@ -14,7 +14,7 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					#has_government = democratic
 				}
 			}
 			
@@ -35,7 +35,7 @@ ideas = {
 
 			do_effect = {
 				NOT = {
-					has_government = communism
+					#has_government = communism
 				}
 			}
 			

@@ -193,7 +193,7 @@ country_event = {
 	id = EGY.6
 	title = EGY.6.t
 	desc = EGY.6.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -205,7 +205,7 @@ country_event = {
 	id = EGY.7 #声音
 	title = EGY.7.t
 	desc = EGY.7.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -217,7 +217,7 @@ country_event = {
 	id = EGY.8 #代表团抵达
 	title = EGY.8.t
 	desc = EGY.8.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -229,7 +229,7 @@ country_event = {
 	id = EGY.9 #安抚民众
 	title = EGY.9.t
 	desc = EGY.9.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -241,7 +241,7 @@ country_event = {
 	id = EGY.10 #鲜红的街道
 	title = EGY.10.t
 	desc = EGY.10.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -254,7 +254,7 @@ country_event = {
 	id = EGY.11 #《埃及告民众书》
 	title = EGY.11.t
 	desc = EGY.11.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -266,7 +266,7 @@ country_event = {
 	id = EGY.12 #《警务防卫条例》
 	title = EGY.12.t
 	desc = EGY.12.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -278,7 +278,7 @@ country_event = {
 	id = EGY.13 #训练营的一天
 	title = EGY.13.t
 	desc = EGY.13.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -290,7 +290,7 @@ country_event = {
 	id = EGY.14 #秘密抓捕
 	title = EGY.14.t
 	desc = EGY.14.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -302,7 +302,7 @@ country_event = {
 	id = EGY.15 #用鲜血维护的稳定
 	title = EGY.15.t
 	desc = EGY.15.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -314,7 +314,7 @@ country_event = {
 	id = EGY.16 #铃声
 	title = EGY.16.t
 	desc = EGY.16.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -326,7 +326,7 @@ country_event = {
 	id = EGY.17 #独立的希望
 	title = EGY.17.t
 	desc = EGY.17.d
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {

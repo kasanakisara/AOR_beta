@@ -76,6 +76,7 @@ country_event = {
 				country_exists = MXS
 			}
 		}
+		tag = CGT
  		PLM = {
  			NOT = {
  				OR = {
@@ -115,6 +116,7 @@ country_event = {
 					country_exists = MXS
 				}
 			}
+			tag = CGT
 			SFM = {
 				NOT = {
 					OR = {

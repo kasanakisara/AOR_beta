@@ -1088,3 +1088,27 @@ MAL_UK_CON_democratic = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
+MEK_1 = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+SAX_1 = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+HAN_1 = {
+    color= rgb { 139 105 105 }
+	color_ui = rgb { 138 155 116 }
+}
+KSH_1_AUT_democratic = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+SIL_1_FRE_democratic = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+PRE_1_Absolutism = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
