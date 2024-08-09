@@ -97,9 +97,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Leon Trotsky"
+	name = " Vladimir Alexandrovich Antonov-Ovshchenko"
 	desc = ""
-	picture = a58lk-wgbaf.dds
+	picture = Vladimir.dds
 	expire = "1953.3.1"
 	ideology = leninism
 	traits = {
@@ -107,16 +107,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Joseph Stalin"
-	desc = ""
-	picture = ay280-nsmcd.dds
-	expire = "1953.3.1"
-	ideology = leninism
-	traits = {
-		
-	}
-}
 
 
 recruit_character = SOV_ivan_fedorovich_fedko
