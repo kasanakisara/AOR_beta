@@ -835,6 +835,18 @@ spriteTypes = {
 		name = "GFX_AOR_news.46_pic"
 		texturefile = "gfx/event_pictures/AOR_news.46_pic.png"
 	}
+	spriteType = {
+		name = "GFX_AOR_news.129_pic"
+		texturefile = "gfx/event_pictures/AOR_news.129_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.136_pic"
+		texturefile = "gfx/event_pictures/AOR_news.136_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.136_pic"
+		texturefile = "gfx/event_pictures/AOR_news.178_pic.png"
+	}
 	#巴苏事件图片
 	#这是一个通用电报图片!帅!
 	spriteType = {
