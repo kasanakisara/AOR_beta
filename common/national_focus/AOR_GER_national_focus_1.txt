@@ -1383,7 +1383,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
-
 			add_political_power = 25
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			if = {
@@ -1400,13 +1399,10 @@ focus_tree = {
 				}
 				leave_faction = yes
 			}
-			AOR_GER_Ideological_opposition_remove = yes
-			
+			AOR_GER_Ideological_opposition_remove = yes			
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			set_rule = { can_join_factions = yes }
-
 		}
-
 	}
 	focus = { #坚定自由
 		id = AOR_GER_fate_3

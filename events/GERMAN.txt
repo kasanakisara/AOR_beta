@@ -22,6 +22,7 @@ country_event = {
 			news_event = {
 				id = AOR_news.10
 			}
+			add_ideas = Depression_calls_1
 			RHI = {
 				transfer_state = 42
 				transfer_state = 859
@@ -67,7 +68,6 @@ country_event = {
 			NAU = {
 			country_event = { days = 14 id = NAU.36 }
 			}
-
         } 
     }
 }
