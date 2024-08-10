@@ -1,22 +1,70 @@
 add_namespace = AOR_Depression
 add_namespace = Danube_news
+
+country_event = {
+	id = AOR_Depression.0	#触发1
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		name = AOR_Depression.0.a
+		ai_chance = {
+			base = 89
+		}
+	}
+	option = {
+		name = AOR_Depression.0.b
+		ai_chance = {
+			base = 1
+		}
+		country_event = AOR_Depression.1
+	}
+	option = {
+		name = AOR_Depression.0.c
+		if = {
+			limit = { 
+				date = 1921.8.1
+			}
+			country_event = AOR_Depression.1
+		}
+	}
+}
+
+country_event = {
+	id = AOR_Depression.3	#触发2
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		name = AOR_Depression.3.a
+		ai_chance = {
+			base = 29
+		}
+	}
+	option = {
+		name = AOR_Depression.3.b
+		ai_chance = {
+			base = 1
+		}
+		country_event = AOR_Depression.2
+	}
+	option = {
+		name = AOR_Depression.3.c
+		if = {
+			limit = { 
+				date = 1922.2.1
+			}
+			news_event = Danube_news.2
+		}
+	}
+}
+
 country_event = {
 	id = AOR_Depression.1	#经济危机的钟声
 	title = AOR_Depression.1.t
 	desc = AOR_Depression.1.d
 	picture = GFX_news_depression_calls
 	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 0
-	}
-	trigger = {
-		original_tag = AUS
-		date < 1921.08.01
-		AND = {
-			date > 1921.06.01
-		}
-	}
-	timeout_days = 7
 	option = {
 		name = AOR_Depression.a
 		ai_chance = {
@@ -24,9 +72,6 @@ country_event = {
 		}
 		hidden_effect = {
 			add_ideas = Depression_calls_1
-			#news_event = {
-				###id = AOR_news.21
-			#}
 		}
 		CZE = {
 			country_event = {
@@ -43,29 +88,34 @@ country_event = {
 	desc = AOR_Depression.2.d
 	picture = GFX_news_depression_calls2
 	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 0
-	}
-	trigger = {
-		original_tag = AUS
-		has_idea = Depression_calls_1
-		is_in_faction = no
-		date < 1922.06.01
-		AND = {
-			date > 1922.01.01
-		}
-	}
-	timeout_days = 7
 	option = {
 		name = AOR_Depression.2.a
 		ai_chance = {
-			factor = 100
+			base = 100
 		}
 		hidden_effect = {
+			AUS = {
 			remove_ideas = Depression_calls_1
 			add_ideas = Depression_calls_2
+			}
+			HUN = {
+				add_ideas = Depression_calls_1
+			}
+			CZE = {
+				add_ideas = Depression_calls_1
+			}
+			CRO = {
+				add_ideas = Depression_calls_1				
+			}
+			DAL = {
+				add_ideas = Depression_calls_1						
+			}
 			news_event = {
 				id = AOR_news.22
+			}
+			country_event = {
+				id = AOR_Danube.1
+				days = 1
 			}
 		}
 	}
@@ -92,6 +142,12 @@ news_event = { #经济危机2
 
 	option = {
 		name = Danube_news.2.a
+		hidden_effect = {
+			country_event = {
+				id = AOR_Depression.2
+				days = 7
+			}
+		}
 	}
 }
 news_event = { #解体
