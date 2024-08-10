@@ -8,6 +8,7 @@ focus_tree={
 		}
 	}
 	default=no
+	continuous_focus_position = { x = 1500  y = 2000 }
 	focus={
 		id=BEL_People_exile_who_cry_with
 		icon = GFX_goal_BEL_People_exile_who_cry_with
@@ -49,8 +50,8 @@ focus_tree={
 		id=BEL_Place_of_burial
 		icon = GFX_goal_BEL_Place_of_burial
 		x=2
-		y=1
-		prerequisite={focus=BEL_People_exile_who_cry_with}
+		y=2
+		prerequisite={focus=BEL_last_hope}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -67,8 +68,8 @@ focus_tree={
 		id=BEL_Long_way_home
 		icon = GFX_goal_BEL_Long_way_home
 		x=12
-		y=1
-		prerequisite={focus=BEL_People_exile_who_cry_with}
+		y=2
+		prerequisite={focus=BEL_last_hope}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -89,7 +90,7 @@ focus_tree={
 		id=BEL_gears_that_eat_people
 		icon = GFX_goal_BEL_gears_that_eat_people
 		x=10
-		y=2
+		y=3
 		prerequisite={focus=BEL_Long_way_home}
 		cost=10
 		ai_will_do={
@@ -123,7 +124,7 @@ focus_tree={
 		id = BEL_High_quality_citizen
 		icon = GFX_goal_BEL_High_quality_citizen
 		x=14
-		y=2
+		y=3
 		prerequisite={focus=BEL_Long_way_home}
 		cost=10
 		ai_will_do={
@@ -140,7 +141,7 @@ focus_tree={
 		id=BEL_Country_of_Belgians
 		icon = GFX_goal_BEL_Country_of_Belgians
 		x=12
-		y=3
+		y=4
 		prerequisite={focus=BEL_High_quality_citizen}
 		prerequisite={focus=BEL_gears_that_eat_people}
 		cost=10
@@ -159,7 +160,7 @@ focus_tree={
 		id=BEL_Minor_concession
 		icon = GFX_goal_BEL_Minor_concession
 		x=10
-		y=4
+		y=5
 		prerequisite={focus=BEL_Country_of_Belgians}
 		mutually_exclusive={focus=BEL_Elite_first }
 		cost=10
@@ -176,7 +177,7 @@ focus_tree={
 		id = BEL_Elite_first
 		icon = GFX_goal_BEL_Elite_first
 		x=14
-		y=4
+		y=5
 		prerequisite={focus=BEL_Country_of_Belgians}
 		mutually_exclusive={focus=BEL_Minor_concession }
 		cost=10
@@ -191,7 +192,7 @@ focus_tree={
 		id = BEL_Building_Congo
 		icon = GFX_goal_BEL_Building_Congo
 		x=0
-		y=2
+		y=3
 		prerequisite={focus=BEL_Place_of_burial}
 		cost=10
 		ai_will_do={
@@ -214,7 +215,7 @@ focus_tree={
 		id=BEL_Crush_rebels
 		icon = GFX_goal_BEL_Crush_rebels
 		x=4
-		y=2
+		y=3
 		prerequisite={focus=BEL_Place_of_burial}
 		cost=10
 		ai_will_do={
@@ -231,7 +232,7 @@ focus_tree={
 		id=BEL_Slaves_in_cornfields
 		icon = GFX_goal_BEL_Slaves_in_cornfields
 		x=0
-		y=3
+		y=4
 		prerequisite={focus=BEL_Building_Congo}
 		cost=10
 		ai_will_do={
@@ -248,7 +249,7 @@ focus_tree={
 		id=BEL_Only_heart_of_restoration
 		icon = GFX_goal_BEL_Only_heart_of_restoration
 		x=4
-		y=3
+		y=4
 		prerequisite={focus=BEL_Crush_rebels}
 		cost=10
 		ai_will_do={
@@ -265,7 +266,7 @@ focus_tree={
 		id=BEL_Rwanda_question
 		icon = GFX_goal_BEL_Rwanda_question
 		x=2
-		y=4
+		y=5
 		prerequisite={focus=BEL_Slaves_in_cornfields}
 		prerequisite={focus=BEL_Only_heart_of_restoration}
 		cost=10
@@ -282,7 +283,7 @@ focus_tree={
 		id=BEL_to_know_how_much_hate
 		icon = GFX_goal_BEL_to_know_how_much_hate
 		x=7
-		y=3
+		y=2
 		prerequisite={focus=BEL_last_hope}
 		cost=10
 		ai_will_do={
@@ -302,7 +303,7 @@ focus_tree={
 		id = BEL_Red_chaos_mountains_flowers
 		icon = GFX_goal_BEL_Red_chaos_mountains_flowers
 		x=7
-		y=5
+		y=6
 		prerequisite={focus=BEL_to_know_how_much_hate}
 		prerequisite={focus=BEL_Rwanda_question}
 		prerequisite={focus=BEL_Minor_concession focus=BEL_Elite_first }

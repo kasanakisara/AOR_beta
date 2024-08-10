@@ -48,9 +48,9 @@ set_politics = {
 }
 
 set_popularities = {
-	CON_democratic = 45
+	CON_democratic = 75
 	FRE_democratic = 13
-	PAR_socialism  = 40
+	PAR_socialism  = 10
 	Fascism = 2
 }
 
