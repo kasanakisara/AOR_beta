@@ -3,7 +3,7 @@
 oob = "BEL_1919"
 
 set_research_slots = 2
-set_stability = 0.70
+set_stability = 0.15	
 set_war_support = 0.65 #we see what you are doing there Adolf
 
 set_technology = {
@@ -36,6 +36,7 @@ add_ideas = {
 	Albert_I
 	closed_economy
 	disarmed_nation
+	undisturbed_isolation
 }
 
 
@@ -43,7 +44,7 @@ set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1919.2.7"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -55,5 +56,3 @@ set_popularities = {
 
 set_convoys = 80
 
-#原住民起义
-set_variable = { BEL_Indeppendence = 0.25 }
