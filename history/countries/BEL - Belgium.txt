@@ -3,7 +3,7 @@
 oob = "BEL_1919"
 
 set_research_slots = 2
-set_stability = 0.70
+set_stability = 0.15	
 set_war_support = 0.65 #we see what you are doing there Adolf
 
 set_technology = {
@@ -20,15 +20,10 @@ set_technology = {
 	basic_train = 1
 }
 
-create_country_leader = {
-	name = "Henri Cartonde Wiart"
-	desc = "BEL_H_C_W_DESC"
-	picture = "a3w9r-ameki.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+#领导人
+recruit_character = BEL_Charles_de_Broqueville
+recruit_character = BEL_Henri_Cartonde_Wiart
+recruit_character = BEL_Army_Albert_I
 
 add_ideas = {
 	price_for_freedom
@@ -36,6 +31,7 @@ add_ideas = {
 	Albert_I
 	closed_economy
 	disarmed_nation
+	undisturbed_isolation
 }
 
 
@@ -43,17 +39,15 @@ set_politics = {
 	ruling_party = CON_democratic
 	last_election = "1919.2.7"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	CON_democratic = 45
+	CON_democratic = 75
 	FRE_democratic = 13
-	PAR_socialism  = 40
+	PAR_socialism  = 10
 	Fascism = 2
 }
 
 set_convoys = 80
 
-#原住民起义
-set_variable = { BEL_Indeppendence = 0.25 }

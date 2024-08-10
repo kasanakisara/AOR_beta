@@ -1,0 +1,56 @@
+characters = {
+
+	#夏尔·德·布罗克维尔
+	BEL_Charles_de_Broqueville={
+		name= Charles_de_Broqueville
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			desc = ""
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	#亨利·卡尔东·德维亚尔
+	BEL_Henri_Cartonde_Wiart={
+		name= Henri_Cartonde_Wiart
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/a3w9r-ameki.dds"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			desc = ""
+			traits={trait_loyal_graf}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	#阿尔贝一世
+	BEL_Army_Albert_I ={
+		name= Army_Albert_I
+		portraits={
+			army={
+				large="gfx/leaders/BEL/a3c5e-ni5gi.dds"
+			}
+		}
+		field_marshal={
+			traits={politically_connected war_hero}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+
+}

@@ -195,7 +195,13 @@ ideas = {
 			}
 
 			modifier = {
+				custom_modifier_tooltip = BEL.idea.1.tt
+				
+				hidden_effect = {
 				stability_factor = 0.05
+				war_support_factor = 0.05
+				}
+				
 			}
 		}
 		
