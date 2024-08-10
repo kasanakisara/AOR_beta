@@ -20,15 +20,10 @@ set_technology = {
 	basic_train = 1
 }
 
-create_country_leader = {
-	name = "Henri Cartonde Wiart"
-	desc = "BEL_H_C_W_DESC"
-	picture = "a3w9r-ameki.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+#领导人
+recruit_character = BEL_Henri_Cartonde_Wiart
+recruit_character = BEL_Charles_de_Broqueville
+recruit_character = BEL_Army_Albert_I
 
 add_ideas = {
 	price_for_freedom
