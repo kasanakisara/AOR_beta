@@ -42,7 +42,7 @@ characters = {
 				large="gfx/leaders/BEL/a3c5e-ni5gi.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={politically_connected war_hero}
 			skill=1
 			attack_skill=1

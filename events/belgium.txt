@@ -4,7 +4,7 @@
 
 add_namespace = BEL
 
-#1919年比利时大选
+#
 country_event = {
 	id = BEL.1
 	title = BEL.1.t
@@ -16,7 +16,11 @@ country_event = {
      }
 	option = {
 		name = BEL.1.a
-
+		retire_country_leader = yes
+		promote_character = {
+			character = BEL_Henri_Cartonde_Wiart
+			ideology = conservatism
+		}
 	}
 
 }

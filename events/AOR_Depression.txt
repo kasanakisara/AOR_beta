@@ -110,9 +110,6 @@ country_event = {
 			DAL = {
 				add_ideas = Depression_calls_1						
 			}
-			news_event = {
-				id = AOR_news.22
-			}
 			country_event = {
 				id = AOR_Danube.1
 				days = 1

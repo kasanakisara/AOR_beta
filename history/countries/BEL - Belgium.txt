@@ -21,8 +21,8 @@ set_technology = {
 }
 
 #领导人
-recruit_character = BEL_Henri_Cartonde_Wiart
 recruit_character = BEL_Charles_de_Broqueville
+recruit_character = BEL_Henri_Cartonde_Wiart
 recruit_character = BEL_Army_Albert_I
 
 add_ideas = {
