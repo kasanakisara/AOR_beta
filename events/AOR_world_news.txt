@@ -741,7 +741,7 @@ news_event = { #米骚动扩大化
 	major = yes
 	trigger = {
 	    date > 1919.8.1
-		date < 1920.8.3
+		date < 1920.8.5
 	}
 	immediate = {
 		JAP = {
