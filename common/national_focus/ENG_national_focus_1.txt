@@ -421,7 +421,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_baohuwomenzuiqinjinzhiren
 		}
-
+		prerequisite = {
+			focus = newfocus_21
+		}
 		x = 17
 		y = 5
 
