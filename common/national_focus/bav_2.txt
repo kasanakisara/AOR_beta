@@ -330,7 +330,6 @@ focus_tree = {
 		icon = GFX_goal_BAV_shining_new_stars_of_the_times
 		x=3
 		y=8
-		prerequisite={focus=BAV_Social_ppression_s_o_onger_resent}
 		prerequisite={focus=BAV_Industrial_estructuring}
 		prerequisite={focus=BAV_Land_nership}
 		cost=6

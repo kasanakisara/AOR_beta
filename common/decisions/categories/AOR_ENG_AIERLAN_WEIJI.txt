@@ -4,8 +4,11 @@ AOR_ENG_AIERLAN_decision_category = {
 	icon = GFX_AOR_ENG_gongheaierlam
 	picture = GFX_AOR_ENG_gongheaierlam_picture
 
-	available = {
-			tag = ENG
+	allowed = {
+		tag = ENG
+	}
+	visible = {
+	    tag = ENG
 	}
 	priority = 10
 }
