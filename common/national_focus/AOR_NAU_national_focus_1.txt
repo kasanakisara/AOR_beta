@@ -1,5 +1,5 @@
 focus_tree = {
-	id = NAU_FocusTree_0
+	id = NAU_FocusTree
 	country = {
 		factor = 0
 		modifier = {
@@ -86,8 +86,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NAU_The_prince_s_speech #亲王的演讲
-		icon = GFX_goal_NAU_The_prince_s_speech
+		id = NAU_The_prince's_speech #亲王的演讲
+		icon = GFX_goal_NAU_The_prince's_speech
 		cost = 3
 		prerequisite = {
 			focus = NAU_Create_a_cult_of_personality
@@ -151,7 +151,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Integrated_economic_control
 		cost = 5
 		prerequisite = {
-			focus = NAU_The_prince_s_speech
+			focus = NAU_The_prince's_speech
 		}
 		prerequisite = {
 			focus = NAU_An_attack_on_the_center
@@ -176,8 +176,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NAU_The_Prince_s_iron_fist #亲王的铁拳
-		icon = GFX_goal_NAU_The_Prince_s_iron_fist
+		id = NAU_The_Prince's_iron_fist #亲王的铁拳
+		icon = GFX_goal_NAU_The_Prince's_iron_fist
 		cost = 3
 		prerequisite = {
 			focus = NAU_Fight_against_local_forces
@@ -216,7 +216,7 @@ focus_tree = {
 		icon = GFX_goal_NAU_Dismiss_the_die_hards
 		cost = 6
 		prerequisite = {
-			focus = NAU_The_Prince_s_iron_fist
+			focus = NAU_The_Prince's_iron_fist
 		}
 		x = 11
 		y = 4
