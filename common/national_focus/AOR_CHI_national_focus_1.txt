@@ -97,11 +97,10 @@ focus_tree={
 			always = no
 		}
 		bypass = {
-		has_country_flag = chi_waixibeizhanzheng
+			has_country_flag = chi_waixibeizhanzheng
 		}	
 		available_if_capitulated=yes
-		search_filters={
-		}
+
 		completion_reward={
 		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest_decision
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
