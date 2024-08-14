@@ -40,5 +40,14 @@ ideas = {
 				war_support_factor = 0.2
     }
     }
+	TUR_SOLTAN_MUHMUD = {
+		removal_cost = -1
+			
+		picture = GFX_idea_HUN_hungarian_monarchy_fascism
+		desc = M_VI_DESC
+		modifier = {
+			stability_factor = 0.05
+			war_support_factor = -0.1
+	}
 }
 }

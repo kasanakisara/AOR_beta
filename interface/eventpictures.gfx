@@ -119,4 +119,9 @@ spriteTypes = {
 		name = "GFX_HUN_tisza"
 		texturefile = "gfx/event_pictures/HUN_tisza.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_AOR_news_178"
+		texturefile = "gfx/event_pictures/AOR_news.178_pic.png"
+	}
  }

@@ -75,7 +75,7 @@ country_event = {#侵略成功
 		}
 	}
 }
-country_event = {#自卫成功
+country_event = {#希腊人被打退了！
 	id = TUR.4
 	title = TUR.4.t
 	desc = TUR.4.d
@@ -101,7 +101,7 @@ country_event = {#自卫成功
 	option = {
 		name = TUR.4.a
 		every_country = {
-			limit = { has_war_with = TUR }
+			limit = { tag = GRE}
 			white_peace = TUR
 		}
 		GRE = {
@@ -109,7 +109,7 @@ country_event = {#自卫成功
 		}
 	}
 }
-country_event = {#自卫成功
+country_event = {#土耳其宣战
 	id = TUR.5
 	title = TUR.5.t
 	desc = TUR.5.d
@@ -128,6 +128,155 @@ country_event = {#自卫成功
 				target = GRE
 				type = take_claimed_state
 				}
+				country_event = {days = 5 id = TUR.6}
 		}
+	}
+}
+
+country_event = {
+	id = TUR.6 #库尔德起义
+	title = TUR.6.t
+	desc = TUR.6.d
+	picture = GFX_AOR_news_178
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 5 }
+	trigger = {
+	    tag = TUR
+	    has_war_with = GRE
+	}
+	
+	timeout_days = 7
+#哦，糟糕..
+    option = { 
+		name = TUR.6.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			KUR = {
+				transfer_state = 352
+				transfer_state = 353
+				transfer_state = 800
+				add_manpower = 10000
+				declare_war_on = {
+					target = TUR
+				}
+				if = {
+					limit = { NOT = { has_template = "Common Militia" } }
+					division_template = {
+						priority = 0
+						name = "Common Militia"
+						regiments = {
+							infantry = { x = 0 y = 0 } 
+							infantry = { x = 0 y = 1 } 
+							infantry = { x = 1 y = 0 } 
+							infantry = { x = 1 y = 1 } 
+						}
+						support = {}
+					}
+					random_controlled_state = {
+						create_unit = {
+							division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+							owner = PREV
+							count = 1
+						}
+					}
+				}
+			}
+			country_event = {days = 5 id = TUR.7}
+			news_event = { id = AOR_news_TUR_KUR}
+		}
+	}
+}
+
+#战争不利，苏丹被政变
+country_event = {
+	id = TUR.7
+	title = TUR.7.t
+	desc = TUR.7.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+    #那就这样吧  	
+	option = {
+		name = TUR.7.a
+		#33%塔拉特帕夏
+		ai_chance = {
+			base = 33
+		}
+		add_popularity = { ideology = Absolutism popularity = 0.20 }
+		add_popularity = { ideology = Marxism popularity = 0.20 }
+		set_politics = {ruling_party = Absolutism}
+		country_event = {days = 6 id = TUR.8}
+		news_event = { id = AOR_news_TUR_TAL}#塔拉特帕夏政变
+	}
+	#34%恩维尔
+	option = {
+	name = TUR.7.b
+	ai_chance = {
+		base = 34
+	}
+	add_popularity = { ideology = AUT_democratic popularity = 0.20 }
+	add_popularity = { ideology = Marxism popularity = 0.20 }
+	set_politics = {ruling_party = AUT_democratic}
+	country_event = {days = 6 id = TUR.8}
+	news_event = { id = AOR_news_TUR_ENV}#恩维尔帕夏政变
+	}
+	option = {
+		name = TUR.7.c
+		ai_chance = {
+			base = 33
+		}
+		add_popularity = { ideology = Fascism popularity = 0.20 }
+		add_popularity = { ideology = Marxism popularity = 0.20 }
+		set_politics = {ruling_party = Fascism}
+		country_event = {days = 6 id = TUR.8}
+		news_event = { id = AOR_news_TUR_ENV}#杰马尔帕夏政变
+		}
+}
+
+country_event = { #苏丹的去与留？
+	id = TUR.8
+	title = TUR.8.t
+	desc = TUR.8.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+    #杀了那鸟皇帝！
+	option = {
+		name = TUR.8.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		add_war_support = 0.1
+	}
+	#他可是皇亲国戚啊...
+	option = {
+	name = TUR.7.b
+	ai_chance = {
+		base = 50
+	}
+	add_ideas = TUR_SOLTAN_MUHMUD
+	set_cosmetic_tag = TUR_SOLTAN_ALIVE
 	}
 }
