@@ -612,7 +612,7 @@ SWE_Union_decision_categories = { #联邦一梦
                 }
             }
             else = {
-
+                set_country_flag = SWE_Northern_Plan_finish
             }
             add_to_variable = { SWE_Union_progress_value = 25 }
             custom_effect_tooltip = SWE_Union_progress_add_25_tt

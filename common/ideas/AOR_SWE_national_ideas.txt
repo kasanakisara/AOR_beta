@@ -22,6 +22,32 @@ ideas = {
 				political_power_cost = 0.4
 			}
 		}
+
+		SWE_Northern_Railway_Plan = {
+			picture = ""
+			available = {
+				check_variable = { SWE_Union_Stage > 4 }
+				has_idea = SWE_The_Union_Dream
+				NOT = {
+					has_country_flag = SWE_Northern_Plan_finish
+				}
+			}
+			modifier = {
+				civilian_factory_use = 15
+				if = {
+					limit = {
+						check_variable = { SWE_Northern_Railway_Plan_Stage > 1 }
+					}
+					civilian_factory_use = 5
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Northern_Railway_Plan_Stage > 2 }
+					}
+					civilian_factory_use = 5
+				}
+			}
+		}
 	}
 
 	country = {
