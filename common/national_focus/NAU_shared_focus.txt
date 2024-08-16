@@ -497,23 +497,32 @@
 	shared_focus = {
 		id = NAU_zuoyilianmengfenlie
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 0
 		prerequisite = {
 			focus = NAU_ranshaodeshizhengting
 		}
+		
 		x = 0
 		y = 1
-		relative_position_id = NAU_ranshaodeshizhengting
+        relative_position_id = NAU_ranshaodeshizhengting
+
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated = yes
 
 		allow_branch = {
 			has_country_flag = NAU_zuoxian
+		}
+
+		completion_reward={
+			custom_effect_tooltip = NAU.focus.aplit.tt
 		}
 
 	}
 	shared_focus = {
 		id = NAU_duoshouguiwei
 		icon = GFX_goal_unknown
-		cost = 0.00
 		prerequisite = {
 			focus = NAU_zuoyilianmengfenlie
 		}
@@ -524,15 +533,26 @@
 		y = 2
 		relative_position_id = NAU_ranshaodeshizhengting
 
+		cost = 2
+		ai_will_do = {
+			factor=1
+		}
+
+		available_if_capitulated=yes
+
 		allow_branch = {
 			has_country_flag = NAU_zuoxian
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = NAU.focus.helmsan.tt
 		}
 
 	}
 	shared_focus = {
 		id = NAU_hongsekongbu
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_duoshouguiwei
 		}
@@ -544,11 +564,24 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = The_new_nest_of_militarism 
+				add_idea = NAU_people_army 
+			}
+		}
 	}
 	shared_focus = {
 		id = NAU_qingchujunduiyingxiang
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_duoshouguiwei
 		}
@@ -560,11 +593,21 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost = 10
+		ai_will_do = {
+			factor=1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_timed_idea = { days = 365 idea =NAU_red_terror_ideas } 
+		}
+
 	}
 	shared_focus = {
 		id = NAU_aizuzhengfu
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_hongsekongbu
 		}
@@ -577,6 +620,18 @@
 
 		allow_branch = {
 			has_country_flag = NAU_zuoxian
+		}
+
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.19
 		}
 
 	}
@@ -595,11 +650,30 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = NAU_workers_comm
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_yiqiequanguisuweiai
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_aizuzhengfu
 		}
@@ -611,11 +685,21 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		    add_ideas = NAU_people_soviet
+		}
 	}
 	shared_focus = {
 		id = NAU_jitihuaguanliao
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_yiqiequanguisuweiai
 		}
@@ -627,11 +711,26 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+		 remove_idea = NAU_people_soviet
+		 add_idea = NAU_people_soviet_1
+		 
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_zhangkongguojiajiqi
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_jitihuaguanliao
 		}
@@ -643,11 +742,25 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_people_soviet_1
+			 add_idea = NAU_people_soviet_2
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_nongyeweiyuanhui
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_aizuzhengfu
 		}
@@ -659,11 +772,29 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_Agr_comm
+		random_owned_controlled_state = {
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+				}
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_diaosifunong
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_nongyeweiyuanhui
 		}
@@ -675,11 +806,26 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+					remove_idea = NAU_Agr_comm
+					add_idea = NAU_Agr_comm_1
+				}
+			add_timed_idea = {days = 365 idea =NAU_after_agr}
+			country_event =  NAU.21
+		}
 	}
 	shared_focus = {
 		id = NAU_gaoxiaojitihua
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_zhangkongguojiajiqi
 		}
@@ -694,11 +840,24 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_Agr_comm_1
+			 add_idea = NAU_Agr_comm_2
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_baishoutaoyinenggeming
 		icon = GFX_goal_unknown
-		cost = 0.00
 		prerequisite = {
 			focus = NAU_zuoyilianmengfenlie
 		}
@@ -713,11 +872,21 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated = yes
+
+		completion_reward={
+		custom_effect_tooltip = NAU.focus.glove.tt
+		}
+
 	}
 	shared_focus = {
 		id = NAU_jiangdijunduiguimo
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_baishoutaoyinenggeming
 		}
@@ -729,11 +898,23 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = The_new_nest_of_militarism
+		add_timed_idea = { days = 365 idea =NAU_del_army } 
+		}
+
 	}
 	shared_focus = {
 		id = NAU_chongjianzhixu
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_baishoutaoyinenggeming
 		}
@@ -745,11 +926,23 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = 0.1
+		add_political_power = 200
+		}
+
 	}
 	shared_focus = {
 		id = NAU_dazhongdeguojia
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_jiangdijunduiguimo
 		}
@@ -764,11 +957,23 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		remove_ideas = Chaotic_politics
+		country_event = NAU.20
+		}
+
 	}
 	shared_focus = {
 		id = NAU_wenhetugai
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_dazhongdeguojia
 		}
@@ -780,11 +985,22 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_reform_land
+		}
+
 	}
 	shared_focus = {
 		id = NAU_chongzuyihui
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_dazhongdeguojia
 		}
@@ -796,11 +1012,22 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_fed_par
+		}
+
 	}
 	shared_focus = {
 		id = NAU_difanghua
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_chongzuyihui
 		}
@@ -812,11 +1039,25 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			remove_idea = NAU_fed_par
+			add_idea = 	NAU_fed_par_1
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_renshenbaozhang
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_difanghua
 		}
@@ -828,11 +1069,25 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		swap_ideas = {
+			 remove_idea = NAU_fed_par_1
+			 add_idea = NAU_fed_par_2
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_qiyeguoyouhua
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_gongyegemingweiyuanhui
 		}
@@ -844,11 +1099,38 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_stability = -0.05
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_falankefudenongyan
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_qiyeguoyouhua
 		}
@@ -863,7 +1145,20 @@
 			has_country_flag = NAU_zuoxian
 		}
 
-	}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_workers_comm
+				add_idea = NAU_workers_comm_1
+		    }
+	    }
+    }	
 	shared_focus = {
 		id = NAU_deyizhidechihongzhixin
 		icon = GFX_goal_unknown
@@ -886,7 +1181,7 @@
 	shared_focus = {
 		id = NAU_zizhicunshe
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_wenhetugai
 		}
@@ -898,11 +1193,25 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			remove_idea = NAU_reform_land
+			add_idea = NAU_reform_land_1
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_xingonghuifa
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_dazhongdeguojia
 		}
@@ -914,11 +1223,22 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_ideas = NAU_new_law
+		}
+
 	}
 	shared_focus = {
 		id = NAU_guliqiye
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_xingonghuifa
 		}
@@ -930,11 +1250,25 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = NAU_new_law 
+				add_idea = NAU_new_law_1
+			}
+		}
+
 	}
 	shared_focus = {
 		id = NAU_duidaqiyedezhongquan
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_guliqiye
 		}
@@ -949,11 +1283,29 @@
 			has_country_flag = NAU_zuoxian
 		}
 
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+				}
+			}
+		country_event =  NAU.22
+		}
 	}
 	shared_focus = {
 		id = NAU_shengchanjijixing
 		icon = GFX_goal_unknown
-		cost = 0.00
+
 		prerequisite = {
 			focus = NAU_renshenbaozhang
 		}
@@ -966,6 +1318,20 @@
 
 		allow_branch = {
 			has_country_flag = NAU_zuoxian
+		}
+
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			 remove_idea = NAU_reform_land_1
+			 add_idea = NAU_reform_land_2
+			}
 		}
 
 	}
