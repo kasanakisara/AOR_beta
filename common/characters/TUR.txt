@@ -24,7 +24,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = authoritarianism
+			ideology = miliciagov
 			desc = "TUR_ENVER_DESC"
 			traits={  }
 			expire="1965.1.1.1"
@@ -35,12 +35,28 @@ characters = {
 		name= "Talât Passha"
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/1673138992021.dds"
+				large="gfx/leaders/TUR/TALAT.dds"
 			}
 		}
 		country_leader={
-			ideology = fascio
+			ideology = oligarchy
 			desc = "TUR_TALAT_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	TUR_PACA_3={
+		name= "Cemal Pasha"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/CEMEL.dds"
+			}
+		}
+		country_leader={
+			ideology = nationalism
+			desc = "TUR_CEMEL_DESC"
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

@@ -627,6 +627,7 @@ country_event = {
 		name = CHI.15.a
 		news_event = {id=AOR_news.129}
 		set_country_flag = unlock_CHI_Reclaiming_outer_northwest
+		set_country_flag = chi_waixibeizhanzheng
 	}
 }
 country_event = {

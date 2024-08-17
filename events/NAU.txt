@@ -237,13 +237,15 @@ country_event = {
 		#拉狄克
 		name = NAU.11.a
 		hidden_effect = {
-			load_focus_tree = NAU_LEFT
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_zuoxian
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = Marxism
 			}
-			complete_national_focus = NAU_Burning_City_Hall_1
-			complete_national_focus = NAU_Left_wing_alliance_split
-			complete_national_focus = NAU_Helmsman_in_position
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_zuoyilianmengfenlie
+			complete_national_focus = NAU_duoshouguiwei
 			create_country_leader = {
 				name = "Karl Radek"
 				desc = "NAU_K_R_DESC"
@@ -266,13 +268,15 @@ country_event = {
 		#伯恩施坦
 		name = NAU.11.b
 		hidden_effect = {
-			load_focus_tree = NAU_LEFT
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_zuoxian
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = SOC_democratic
 			}
-			complete_national_focus = NAU_Burning_City_Hall_1
-			complete_national_focus = NAU_Left_wing_alliance_split
-			complete_national_focus = NAU_velvet_glove
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_zuoyilianmengfenlie
+			complete_national_focus = NAU_baishoutaoyinenggeming
 			create_country_leader = {
 				name = "Eduard Bernstein"
 				desc = "NAU_E_B_DESC"
@@ -300,12 +304,14 @@ country_event = {
 			base = 50
 		}
 		hidden_effect = {
-			load_focus_tree = NAU_RIGHT
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_faxisi
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = Fascism
 			}
-			complete_national_focus = NAU_Burning_City_Hall
-			complete_national_focus = NAU_Prime_Minister_Adolf
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_xitelezongli
 			create_country_leader = {
 				name = "Adolf Hitler"
 				desc = "NAU_A_H_DESC"
@@ -337,12 +343,14 @@ country_event = {
 			base = 50
 		}
 		hidden_effect = {
-			load_focus_tree = NAU_RIGHT
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_faxisi
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = Fascism
 			}
-			complete_national_focus = NAU_Burning_City_Hall
-			complete_national_focus = NAU_Prime_Minister_Strasser
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_shitelasezongli
 			create_country_leader = {
 				name = "Gregor Strasser"
 				desc = "NAU_G_S_DESC"
@@ -382,12 +390,14 @@ country_event = {
 			base = 50
 		}
 		hidden_effect = {
-			load_focus_tree = NAU_MID
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_junzhengfu
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = Absolutism
 			}
-			complete_national_focus = NAU_Burning_City_Hall_2
-			complete_national_focus = NAU_martial_law
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_jieyanling
 			create_country_leader = {
 				name = "Johannes von Seeckt"
 				desc = "NAU_J_V_S_DESC"
@@ -413,12 +423,14 @@ country_event = {
 			base = 50
 		}
 		hidden_effect = {
-			load_focus_tree = NAU_MID
+			load_focus_tree = NAU_FocusTree_1
+			set_country_flag = NAU_junzhengfu
+			mark_focus_tree_layout_dirty = yes
 			set_politics = {
 				ruling_party = Special
 			}
-			complete_national_focus = NAU_Burning_City_Hall_2
-			complete_national_focus = NAU_state_of_emergency
+			complete_national_focus = NAU_ranshaodeshizhengting
+			complete_national_focus = NAU_jinjizhuangtai
 			create_country_leader = {
 				name = "Erich Von Ludendorff"
 				desc = "NAU_E_V_L_DESC"

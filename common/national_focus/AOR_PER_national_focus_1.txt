@@ -725,5 +725,27 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = get_ready_battle_45
+		icon = GFX_goal_unknown
+		cost = 2
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				date > 1922.3.10
+			}
+		}
+		available = {date > 1922.4.1}
+		x = 35
+		y = 6
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = PER_get_ready_battle_tt
+		}
+	}
 }
