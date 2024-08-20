@@ -1,33 +1,29 @@
+
 state={
 	id=1024
 	name="STATE_1024"
-	manpower = 1700000
-	
-	state_category = city
-	
-	resources={
-	}
 
 	history={
 		victory_points = {
-			7197 10
+			7197 10 
 		}
-		
 		owner = JAP
 		buildings = {
 			infrastructure = 2
 			air_base = 3
-			
 			arms_factory = 1
 			industrial_complex = 1
 
 		}
 		add_core_of = JAP
+
 	}
 
 	provinces={
-		7197 11997 12028
+		3962 7532 10444
 	}
-
-	local_supplies=0.0 
+	manpower=1700000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }
