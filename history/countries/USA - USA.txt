@@ -50,7 +50,7 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
- 
+	machine_equipment_weapons = 1
 	early_ship_hull_submarine = 1
 	tech_1919_ship_hull_submarine = 1
 	early_ship_hull_light = 1
