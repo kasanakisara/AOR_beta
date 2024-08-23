@@ -1,22 +1,17 @@
-
 state={
-	id=536
-	name="STATE_536"
-
-	history={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		1512 4646 7595 
+	}
+	history = {
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
-
 		}
-
 	}
-
-	provinces={
-		1642 4576 
-	}
-	manpower=2177700
+	manpower=112313
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
