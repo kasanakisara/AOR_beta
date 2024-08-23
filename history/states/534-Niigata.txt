@@ -13,15 +13,20 @@ state={
 			fuel_silo = 1
 
 		}
-		
 		victory_points = {
 			10032 15 
+		}
+		victory_points = {
+			1117 10 
+		}
+		victory_points = {
+			11989 5 
 		}
 
 	}
 
 	provinces={
-		998 7102 10032 10128 
+		998 1117 7102 9952 10032 10128 11930 11989 12007 
 	}
 	manpower=4158890
 	buildings_max_level_factor=1.000
