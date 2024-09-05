@@ -376,9 +376,9 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "tahoma_60"
 		fontfiles = { 
-			"gfx/fonts/AOR_jianfan_0"
-			"gfx/fonts/AOR_jianfan_1"	
-			"gfx/fonts/AOR_jianfan_2"
+			"gfx/fonts/marxism_0"
+			"gfx/fonts/marxism_1"	
+			"gfx/fonts/marxism_2"
 
 		}			
 	languages = { "l_simp_chinese" } 
