@@ -30,4 +30,38 @@ characters={
 			id=-1
 		}
 	}
+
+	SWE_Haakon_IV_I = {
+		name = "Haakon VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/SWE/Haakon IV.dds"
+			}
+		}
+
+		country_leader={
+			ideology = meliorism
+			desc = "SWE_Haakon_IV_desc_1"
+			traits={}
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+
+	SWE_Haakon_IV_II = {
+		name = "Haakon VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/SWE/Haakon IV.dds"
+			}
+		}
+
+		country_leader={
+			ideology = meliorism
+			desc = "SWE_Haakon_IV_desc_2"
+			traits={}
+			expire="1965.1.1"
+			id=-1
+		}
+	}
 }

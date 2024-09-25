@@ -51,23 +51,14 @@ add_ideas = {
 	volunteer_only
 }
 
+recruit_character = SWE_Haakon_IV_I
 
 create_country_leader = {
-	name = "Haakon VII"
-	desc = ""
-	picture = "a4buu-9y80q.dds"
+	name = "Haakon IV"
+	desc = "SWE_Haakon_IV_desc_1"
+	picture = "gfx/leaders/SWE/Haakon IV.dds"
 	expire = "1965.1.1"
 	ideology = meliorism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Karl Kilbom "
-	desc = ""
-	picture = "Karl Kilbom .dds"
-	expire = "1965.1.1"
-	ideology = revolutionism
 	traits = {
 	}
 }

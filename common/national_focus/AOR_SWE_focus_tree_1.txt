@@ -558,6 +558,15 @@ focus_tree = {
 			hidden_effect = {
 				country_event = { id = SWE.1 days = 663 }
 				country_event = { id = SWE.31 days = 5 }
+				create_country_leader = {
+					name = "Haakon IV"
+					desc = "SWE_Haakon_IV_desc_2"
+					picture = "gfx/leaders/SWE/Haakon IV.dds"
+					expire = "1965.1.1"
+					ideology = meliorism
+					traits = {
+					}
+				}
 			}
 		}
 

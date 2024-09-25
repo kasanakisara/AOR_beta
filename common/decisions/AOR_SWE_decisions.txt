@@ -592,6 +592,7 @@ SWE_Union_decision_categories = { #联邦一梦
 		days_mission_timeout = 180
         timeout_effect = {
             if = {
+                ## 1-2阶段 ##
                 limit = {
                     OR = {
                         check_variable = { SWE_Northern_Railway_Plan_Stage < 3 }
@@ -602,9 +603,19 @@ SWE_Union_decision_categories = { #联邦一梦
                 }
                 add_to_variable = { SWE_Union_progress_value = 25 }
                 custom_effect_tooltip = SWE_Union_progress_add_25_tt
+                #####
+                ## Part I：卑尔根-特隆霍姆和卑尔根-奥斯陆
                 if = {
                     limit = { NOT = { has_variable = SWE_Northern_Railway_Plan_Stage } }
                     set_variable = { SWE_Northern_Railway_Plan_Stage = 1 }
+                    build_railway = {
+                        path = { 122 3114 3188 3180 9127 11100 9216 3096 21 3022 }
+                        level = 3
+                    }
+                    build_railway = {
+                        path = { 6115 9103 144 6080 3059 9170 6145 122 }
+                        level = 3
+                    }
                     custom_effect_tooltip = SWE_Northern_Railway_Plan_ongoing_I_tt
                 }
                 else = {
@@ -613,9 +624,9 @@ SWE_Union_decision_categories = { #联邦一梦
             }
             else = {
                 set_country_flag = SWE_Northern_Plan_finish
+                add_to_variable = { SWE_Union_progress_value = 25 }
+                custom_effect_tooltip = SWE_Union_progress_add_25_tt
             }
-            add_to_variable = { SWE_Union_progress_value = 25 }
-            custom_effect_tooltip = SWE_Union_progress_add_25_tt
         }
     }
 
