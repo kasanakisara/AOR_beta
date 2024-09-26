@@ -43,25 +43,14 @@ add_ideas = {
 	Tiger_of_Silence
 	Let_the_ambitio_sleep
 	SWE_Left_Threat
-	#Tolerance_of_exploitation
-	#Limited_statements
-	#Barely
 	export_focus
 	civilian_economy
 	volunteer_only
 }
 
-recruit_character = SWE_Haakon_IV_I
 
-create_country_leader = {
-	name = "Haakon IV"
-	desc = "SWE_Haakon_IV_desc_1"
-	picture = "gfx/leaders/SWE/Haakon IV.dds"
-	expire = "1965.1.1"
-	ideology = meliorism
-	traits = {
-	}
-}
+recruit_character = SWE_Haakon_VII_I
+recruit_character = SWE_Haakon_VII_II
 
 ##Norweign Independence
 set_variable = { SWE_Norweign_Independence_value = 25 }

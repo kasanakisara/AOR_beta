@@ -558,13 +558,13 @@ focus_tree = {
 			hidden_effect = {
 				country_event = { id = SWE.1 days = 663 }
 				country_event = { id = SWE.31 days = 5 }
-				create_country_leader = {
-					name = "Haakon IV"
-					desc = "SWE_Haakon_IV_desc_2"
-					picture = "gfx/leaders/SWE/Haakon IV.dds"
-					expire = "1965.1.1"
-					ideology = meliorism
-					traits = {
+				retire_country_leader = SWE_haakon_VII_I
+				add_country_leader_role = {
+					character = SWE_Haakon_VII_II  # Must be recruited
+					promote_leader = yes  # Makes the character be promoted to leader of the party
+					country_leader = {
+						ideology = meliorism
+						traits = { The_King_belong_Union }
 					}
 				}
 			}
