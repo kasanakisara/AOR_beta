@@ -486,7 +486,6 @@ SWE_Union_decision_categories = { #联邦一梦
             hidden_trigger = {
                 OR = {
                     NOT = {
-                        check_variable = { SWE_Union_Stage > 0 }
                         check_variable = { SWE_Union_Stage < 3 }
                     }
                     NOT = {
@@ -541,6 +540,7 @@ SWE_Union_decision_categories = { #联邦一梦
                     NOT = {
                         has_idea = SWE_The_Union_Dream
                     }
+                    has_idea = SWE_Samitinget
                 }
             }
 		}
@@ -711,9 +711,33 @@ SWE_Union_decision_categories = { #联邦一梦
         }
     }
 
+    SWE_Gross_Stockholm = { #大斯德哥尔摩计划
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            check_variable = { SWE_Union_Stage > 8 }
+            check_variable = { SWE_Union_Stage < 11 }
+            NOT = {
+                has_country_flag = SWE_Norsk_Bokmaal
+            }
+        }
+        visible = {
+            check_variable = { SWE_Union_Stage > 8 }
+            check_variable = { SWE_Union_Stage < 11 }
+            NOT = {
+                has_country_flag = SWE_Norsk_Bokmaal
+            }
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 120
+    }
 }
 
-SWE_Folkhemmet_decision_categories = {
+SWE_Folkhemmet_decision_categories = { #人民之家
     SWE_Increace_national_debt = { #增加发行量
         available = {
             hidden_trigger = {

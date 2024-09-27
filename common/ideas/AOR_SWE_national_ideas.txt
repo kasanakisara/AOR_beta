@@ -2,10 +2,11 @@ ideas = {
 
 	hidden_ideas = {
 		SWE_Oslo_Stockholm_Shinkansenn = {
-			picture = ""
 			available = {
-				check_variable = { SWE_Union_Stage > 0 }
-				check_variable = { SWE_Union_Stage < 3 }
+				SWE = {
+					check_variable = { SWE_Union_Stage > 0 }
+					check_variable = { SWE_Union_Stage < 3 }
+				}
 			}
 			modifier = {
 				civilian_factory_use = 5
@@ -13,45 +14,49 @@ ideas = {
 		}
 
 		SWE_Samitinget_ongoing = {
-			picture = ""
 			available = {
-				check_variable = { SWE_Union_Stage > 2 }
-				check_variable = { SWE_Union_Stage < 5 }
+				SWE = {
+					check_variable = { SWE_Union_Stage > 2 }
+					check_variable = { SWE_Union_Stage < 5 }
+				}
 			}
 			modifier = {
 				political_power_cost = 0.4
 			}
 		}
 
-		SWE_Northern_Railway_Plan = {
-			picture = ""
+		SWE_Norsk_Bokmaal_ongoing = {
 			available = {
-				check_variable = { SWE_Union_Stage > 4 }
-				has_idea = SWE_The_Union_Dream
-				NOT = {
-					has_country_flag = SWE_Northern_Plan_finish
+				SWE = {
+					check_variable = { SWE_Union_Stage > 6 }
+					check_variable = { SWE_Union_Stage < 9 }
+					NOT = {
+						has_country_flag = SWE_Norsk_Bokmaal
+					}
 				}
 			}
 			modifier = {
-				civilian_factory_use = 15
-				if = {
-					limit = {
-						check_variable = { SWE_Northern_Railway_Plan_Stage > 1 }
-					}
-					civilian_factory_use = 5
-				}
-				if = {
-					limit = {
-						check_variable = { SWE_Northern_Railway_Plan_Stage > 2 }
-					}
-					civilian_factory_use = 5
-				}
+				political_power_cost = 0.4
+				stability_factor = -0.1
 			}
 		}
+
+		SWE_NRP_ongoing = {
+			available = {
+				SWE = {
+					check_variable = { SWE_Union_Stage > 8 }
+            		check_variable = { SWE_Union_Stage < 11 }
+				}
+			}
+			modifier = {
+				civilian_factory_use = 10
+			}
+		}
+		
 	}
 
 	country = {
-		
+				
 		SWE_Left_Threat = {
 			picture = GFX_idea_SWE_Left_Threat
 			allowed = { always = yes }
