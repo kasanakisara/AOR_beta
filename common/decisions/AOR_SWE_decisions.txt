@@ -719,14 +719,14 @@ SWE_Union_decision_categories = { #联邦一梦
             check_variable = { SWE_Union_Stage > 8 }
             check_variable = { SWE_Union_Stage < 11 }
             NOT = {
-                has_country_flag = SWE_Norsk_Bokmaal
+                has_country_flag = SWE_Gross_Stockholm
             }
         }
         visible = {
             check_variable = { SWE_Union_Stage > 8 }
             check_variable = { SWE_Union_Stage < 11 }
             NOT = {
-                has_country_flag = SWE_Norsk_Bokmaal
+                has_country_flag = SWE_Gross_Stockholm
             }
         }
 
@@ -734,6 +734,38 @@ SWE_Union_decision_categories = { #联邦一梦
 		selectable_mission = no
 		is_good = yes
 		days_mission_timeout = 120
+        timeout_effect = {
+            set_country_flag = SWE_Gross_Stockholm
+            1023 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 3
+                    instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            141 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 10
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = { SWE_Union_progress_value = 25 }
+            custom_effect_tooltip = SWE_Union_progress_add_25_tt
+            custom_effect_tooltip = SWE_Gross_Stockholm_ongoing_tt
+        }
     }
 }
 
