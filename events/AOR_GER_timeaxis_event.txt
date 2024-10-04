@@ -102,10 +102,11 @@ country_event = {
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
 				}
+				NOT = {
+					has_country_flag = AOR_GER_timeaxis_has_happend
+				}
 			}
-			PREV = {
-				country_event = { id = AOR_GER_timeaxis.3 days = 1 }
-			}
+			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
 		}
 	}
 	option = { #先讨论邦国贸易税率问题
@@ -128,10 +129,11 @@ country_event = {
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
 				}
+				NOT = {
+					has_country_flag = AOR_GER_timeaxis_has_happend
+				}
 			}
-			PREV = {
-				country_event = { id = AOR_GER_timeaxis.3 days = 1 }
-			}
+			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
 		}
 	}
 	option = { #先商讨合成氨技术军转民问题
@@ -154,10 +156,11 @@ country_event = {
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
 				}
+				NOT = {
+					has_country_flag = AOR_GER_timeaxis_has_happend
+				}
 			}
-			PREV = {
-				country_event = { id = AOR_GER_timeaxis.3 days = 1 }
-			}
+			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
 		}
 	}
 }
@@ -171,6 +174,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { #好的
 		name = AOR_GER_timeaxis.3.a
+		set_country_flag = AOR_GER_timeaxis_has_happend
 		if = {
 			limit = {
 				has_global_flag = AOR_GER_g_flag_meet_1

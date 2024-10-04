@@ -49,3 +49,24 @@ defined_text = { #可供选择的提案
 		localization_key = AOR_GER_Get_Proposal_under_discussion_name_5
 	}
 }
+
+defined_text = { #切换同意反对
+    name = GETAOR_GER_flag_resolution
+	text = {
+		trigger = {
+			THIS = {
+				has_country_flag = AOR_GER_flag_support_resolution
+			}
+		}
+		localization_key = "GFX_AOR_GER_DNC_approve"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_country_flag = AOR_GER_flag_NOT_support_resolution
+			}
+		}
+		localization_key = "GFX_AOR_GER_DNC_not_approve"
+	}
+
+}

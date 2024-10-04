@@ -6,9 +6,11 @@ AOR_NAU_ceshiguoce = {
 
 	allowed = {
 		tag = NAU
+		is_debug = yes
 	}
 	visible = {
 	    tag = NAU
+		is_debug = yes
 	}
 	available = {
 		tag = NAU

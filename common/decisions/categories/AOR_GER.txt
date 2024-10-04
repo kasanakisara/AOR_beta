@@ -54,14 +54,12 @@ AOR_Deutschland_National_Committee_category = {
 	scripted_gui = AOR_Deutschland_National_Committee_decision_ui
 	allowed = {
 	OR = {
-			tag = GER
-			
+			tag = GER		
 			tag = NAU #法兰克福
 			tag = HAN #威斯特伐利亚
 			tag = BAV #巴伐利亚
 			tag = SIL #西里西亚
-			tag = KSH #波美拉尼亚
-			
+			tag = KSH #波美拉尼亚			
 			tag = WUR #符腾堡
 			tag = SAX #萨克森
 			tag = PRE #普鲁士

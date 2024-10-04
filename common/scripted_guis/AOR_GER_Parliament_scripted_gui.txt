@@ -6,10 +6,40 @@ scripted_gui = {
 			tag = GER
 		}
 		properties = {
+			Frankfurt_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Westphalia_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Bavaria_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Silesia_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Pomerania_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Wutenberg_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Saxony_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Prussia_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Schleswig_Holstein_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+			Mecklenburg_not_approve = {
+				image = "[GETAOR_GER_flag_resolution]"
+			}
+
 		}
 		triggers = {
-			AOR_GER_country_flag_visible = {
-			}
+
 			Frankfurt_approve_visible = { NAU = { { has_country_flag = AOR_GER_flag_support_resolution } } }
 			Frankfurt_not_approve_visible = { NAU = { { has_country_flag = AOR_GER_flag_NOT_support_resolution } } }
 			
@@ -37,7 +67,6 @@ scripted_gui = {
 			Schleswig_Holstein_approve_visible = { SHL = { { has_country_flag = AOR_GER_flag_support_resolution } } }
 			Schleswig_Holstein_not_approve_visible = { SHL = { { has_country_flag = AOR_GER_flag_NOT_support_resolution } } }
 			
-			Mecklenburg_approve_visible = { MEK = { { has_country_flag = AOR_GER_flag_support_resolution } } }
 			Mecklenburg_not_approve_visible = { MEK = { { has_country_flag = AOR_GER_flag_NOT_support_resolution } } }
 		}
 	}

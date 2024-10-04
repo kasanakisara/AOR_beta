@@ -187,6 +187,7 @@ add_equipment_to_stockpile = {
 NAU = {
 country_event = { days = 374 id = NAU.5 }
 }
+set_country_flag = AOR_GER_flag_NOT_support_resolution
 
 recruit_character = Erich_Ludendorff
 recruit_character = Paul_Hausser

@@ -70,6 +70,7 @@ start_national_focus = AOR_GER_Politics_21
 GER = {
 country_event = { days = 1249 id = event_GER.1 }
 }
+set_country_flag = AOR_GER_flag_NOT_support_resolution
 
 set_politics = {
 	ruling_party = AUT_democratic
