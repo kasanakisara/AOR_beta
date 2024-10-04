@@ -107,9 +107,77 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			}
 		}
 		complete_effect = {
-			ROOT = {
-				clr_country_flag = AOR_GER_flag_NOT_support_resolution
-				set_country_flag = AOR_GER_flag_support_resolution
+			clr_country_flag = AOR_GER_flag_NOT_support_resolution
+			set_country_flag = AOR_GER_flag_support_resolution
+			if = {
+				limit = {
+					tag = NAU #法兰克福
+				}
+				set_country_flag = AOR_NAU_flag_support_resolution
+				clr_country_flag = AOR_NAU_flag_not_support_resolution
+			}
+			if = {
+				limit = {
+					tag = HAN #威斯特伐利亚
+				}
+				set_country_flag = AOR_HAN_flag_support_resolution				
+				clr_country_flag = AOR_HAN_flag_not_support_resolution
+			}
+			if = {
+				limit = {
+					tag = BAV #巴伐利亚
+				}
+				set_country_flag = AOR_BAV_flag_support_resolution				
+				clr_country_flag = AOR_BAV_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = SIL #西里西亚
+				}
+				set_country_flag = AOR_SIL_flag_support_resolution				
+				clr_country_flag = AOR_SIL_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = KSH #波美拉尼亚
+				}
+				set_country_flag = AOR_KSH_flag_support_resolution				
+				clr_country_flag = AOR_KSH_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = WUR #符腾堡
+				}
+				set_country_flag = AOR_WUR_flag_support_resolution				
+				clr_country_flag = AOR_WUR_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = SAX #萨克森
+				}
+				set_country_flag = AOR_SAX_flag_support_resolution				
+				clr_country_flag = AOR_SAX_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = PRE #普鲁士
+				}
+				set_country_flag = AOR_PRE_flag_support_resolution				
+				clr_country_flag = AOR_PRE_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = SHL #石勒苏益格-荷尔施泰因
+				}
+				set_country_flag = AOR_SHL_flag_support_resolution				
+				clr_country_flag = AOR_SHL_flag_not_support_resolution				
+			}
+			if = {
+				limit = {
+					tag = MEK #梅克伦堡
+				}
+				set_country_flag = AOR_MEK_flag_support_resolution
+				clr_country_flag = AOR_MEK_flag_not_support_resolution				
 			}
 			GER = {
 				add_to_variable = { GER_support_country_quantity = 1 }
@@ -129,9 +197,77 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			}
 		}
 		complete_effect = {
-			ROOT = {
-				clr_country_flag = AOR_GER_flag_support_resolution
-				set_country_flag =  AOR_GER_flag_NOT_support_resolution
+			clr_country_flag = AOR_GER_flag_support_resolution
+			set_country_flag =  AOR_GER_flag_NOT_support_resolution
+			if = {
+				limit = {
+					tag = NAU #法兰克福
+				}
+				clr_country_flag = AOR_NAU_flag_support_resolution				
+				set_country_flag = AOR_NAU_flag_not_support_resolution
+			}
+			if = {
+				limit = {
+					tag = HAN #威斯特伐利亚
+				}
+				clr_country_flag = AOR_HAN_flag_support_resolution				
+				set_country_flag = AOR_HAN_flag_not_support_resolution
+			}
+			if = {
+				limit = {
+					tag = BAV #巴伐利亚
+				}
+				set_country_flag = AOR_BAV_flag_not_support_resolution				
+				clr_country_flag = AOR_BAV_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = SIL #西里西亚
+				}
+				set_country_flag = AOR_SIL_flag_not_support_resolution				
+				clr_country_flag = AOR_SIL_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = KSH #波美拉尼亚
+				}
+				set_country_flag = AOR_KSH_flag_not_support_resolution				
+				clr_country_flag = AOR_KSH_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = WUR #符腾堡
+				}
+				set_country_flag = AOR_WUR_flag_not_support_resolution				
+				clr_country_flag = AOR_WUR_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = SAX #萨克森
+				}
+				set_country_flag = AOR_SAX_flag_not_support_resolution				
+				clr_country_flag = AOR_SAX_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = PRE #普鲁士
+				}
+				set_country_flag = AOR_PRE_flag_not_support_resolution				
+				clr_country_flag = AOR_PRE_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = SHL #石勒苏益格-荷尔施泰因
+				}
+				set_country_flag = AOR_SHL_flag_not_support_resolution				
+				clr_country_flag = AOR_SHL_flag_support_resolution
+			}
+			if = {
+				limit = {
+					tag = MEK #梅克伦堡
+				}
+				set_country_flag = AOR_MEK_flag_not_support_resolution				
+				clr_country_flag = AOR_MEK_flag_support_resolution
 			}
 			GER = {
 				add_to_variable = { GER_support_country_quantity = -1 }
