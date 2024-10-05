@@ -10,55 +10,55 @@ scripted_gui = {
 				image = "[GETAOR_GER_flag_resolution]"
 			}
 			Westphalia_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_HAN_flag_resolution]"
 			}
 			Bavaria_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_BAV_flag_resolution]"
 			}
 			Silesia_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_SIL_flag_resolution]"
 			}
 			Pomerania_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_KSH_flag_resolution]"
 			}
 			Wutenberg_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_WUR_flag_resolution]"
 			}
 			Saxony_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_SAX_flag_resolution]"
 			}
 			Prussia_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_PRE_flag_resolution]"
 			}
 			Schleswig_Holstein_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_SHL_flag_resolution]"
 			}
 			Mecklenburg_not_approve = {
-				image = "[GETAOR_GER_flag_resolution]"
+				image = "[GETAOR_MEK_flag_resolution]"
 			}
 
 		}
 		triggers = {
 
-			Frankfurt_not_approve_visible = {NAU = { { has_country_flag = AOR_NAU_flag_not_support_resolution } } }
+			Frankfurt_not_approve_visible = {NAU = { exists = yes  } }
 			
-			Westphalia_not_approve_visible = {HAN = { { has_country_flag = AOR_HAN_flag_not_support_resolution } } }
+			Westphalia_not_approve_visible = {HAN = { exists = yes} }
 			
-			Bavaria_not_approve_visible = {BAV = { { has_country_flag = AOR_BAV_flag_not_support_resolution } } }
+			Bavaria_not_approve_visible = {BAV = { exists = yes} }
 			
-			Silesia_not_approve_visible = {SIL = { { has_country_flag = AOR_SIL_flag_not_support_resolution } } }
+			Silesia_not_approve_visible = {SIL = { exists = yes} }
 			
-			Pomerania_not_approve_visible = { KSH = { { has_country_flag = AOR_KSH_flag_not_support_resolution } } }
+			Pomerania_not_approve_visible = { KSH = { exists = yes} }
 			
-			Wutenberg_not_approve_visible = { WUR = { { has_country_flag = AOR_WUR_flag_not_support_resolution } } }
+			Wutenberg_not_approve_visible = { WUR = { exists = yes} }
 			
-			Saxony_not_approve_visible = {SAX = { { has_country_flag = AOR_SAX_flag_not_support_resolution } } }
+			Saxony_not_approve_visible = {SAX = { exists = yes} }
 			
-			Prussia_not_approve_visible = {PRE = { { has_country_flag = AOR_PRE_flag_not_support_resolution } } }
+			Prussia_not_approve_visible = {PRE = { exists = yes} }
 			
-			Schleswig_Holstein_not_approve_visible = {SHL = { { has_country_flag = AOR_SHL_flag_not_support_resolution } } }
+			Schleswig_Holstein_not_approve_visible = {SHL = { exists = yes} }
 
-			Mecklenburg_not_approve_visible = { MEK = { { has_country_flag = AOR_MEK_flag_not_support_resolution } } }
+			Mecklenburg_not_approve_visible = { MEK = { exists = yes} }
 		}
 	}
 	

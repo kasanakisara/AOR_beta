@@ -96,8 +96,20 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 	}
 	AOR_GER_Invition_change_front_1 = { #改变态度-同意
         icon = generic_operation
-		ai_will_do = { base = 1 }
-		days_re_enable = 1
+		ai_will_do = {
+			factor = 10 
+			modifier = {
+				tag = HAN 
+				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+			modifier = {
+				tag = BAV 
+			has_country_flag = flag_attend_the_meeting_1
+				factor = 0  
+			}
+		}
+		days_re_enable = 60
 		visible = {
 			has_country_flag =  AOR_GER_flag_NOT_support_resolution
 			OR = {
@@ -186,8 +198,20 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 	}
 	AOR_GER_Invition_change_front_2 = { #改变态度-不同意
         icon = generic_operation
-		ai_will_do = { base = 1 }
-		days_re_enable = 1
+		ai_will_do = {
+			factor = 10 
+			modifier = {
+				tag = HAN 
+				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+			modifier = {
+				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+		}
+		days_re_enable = 60
 		visible = {
 			has_country_flag =  AOR_GER_flag_support_resolution
 			OR = {
