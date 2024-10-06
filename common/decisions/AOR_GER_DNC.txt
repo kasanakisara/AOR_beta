@@ -99,14 +99,24 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		ai_will_do = {
 			factor = 10 
 			modifier = {
-				tag = HAN 
+				tag = WUR
 				has_country_flag = flag_attend_the_meeting_1				
-				factor = 0  
+				factor = 100 
 			}
 			modifier = {
 				tag = BAV 
-			has_country_flag = flag_attend_the_meeting_1
-				factor = 0  
+				has_country_flag = flag_attend_the_meeting_1
+				factor = 100  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_1
+				factor = 100  
+			}
+			modifier = {
+				tag = SHL 
+				has_country_flag = flag_attend_the_meeting_1
+				factor = 100  
 			}
 		}
 		cost = 5
@@ -202,12 +212,22 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		ai_will_do = {
 			factor = 10 
 			modifier = {
-				tag = HAN 
+				tag = WUR 
 				has_country_flag = flag_attend_the_meeting_1				
 				factor = 0  
 			}
 			modifier = {
 				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+			modifier = {
+				tag = SHL 
 				has_country_flag = flag_attend_the_meeting_1				
 				factor = 0  
 			}
@@ -335,7 +355,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			}
 		}
 		is_good = yes
-		days_mission_timeout = 180
+		days_mission_timeout = 100
 
 		timeout_effect = {
 			if = { #傻子才不同意
@@ -426,7 +446,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			}
 		}
 		is_good = yes
-		days_mission_timeout = 180
+		days_mission_timeout = 100
 
 		timeout_effect = {
 			if = { #不同意
@@ -516,7 +536,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			}
 		}
 		is_good = yes
-		days_mission_timeout = 180
+		days_mission_timeout = 100
 
 		timeout_effect = {
 			if = { #不同意
