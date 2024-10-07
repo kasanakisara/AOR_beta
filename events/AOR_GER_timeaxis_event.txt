@@ -74,6 +74,9 @@ country_event = {
 	desc = AOR_GER_timeaxis.2.desc
 	picture = GFX_AOR_GER_timeaxis.1_pic
 	trigger = {
+		NOT = {
+			has_country_flag = AOR_GER_MEETING_HAPPENED
+		}
 		tag = GER	
 		HAN = { has_country_flag = AOR_GER_flag_attend_the_meeting }
 		SIL = { has_country_flag = AOR_GER_flag_attend_the_meeting }
@@ -87,6 +90,7 @@ country_event = {
 		ai_chance = { base = 10 }
 		custom_effect_tooltip = AOR_GER_timeaxis.2.tt1
 		set_global_flag = AOR_GER_g_flag_meet_1
+		set_country_flag= AOR_GER_MEETING_HAPPENED
 		every_country = {
 			limit = {
 				OR = {
@@ -101,9 +105,6 @@ country_event = {
 					tag = PRE #普鲁士
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
-				}
-				NOT = {
-					has_country_flag = AOR_GER_timeaxis_has_happend
 				}
 			}
 			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
@@ -114,6 +115,7 @@ country_event = {
 		ai_chance = { base = 1 }
 		custom_effect_tooltip = AOR_GER_timeaxis.2.tt2
 		set_global_flag = AOR_GER_g_flag_meet_2
+		set_country_flag= AOR_GER_MEETING_HAPPENED
 		every_country = {
 			limit = {
 				OR = {
@@ -128,9 +130,6 @@ country_event = {
 					tag = PRE #普鲁士
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
-				}
-				NOT = {
-					has_country_flag = AOR_GER_timeaxis_has_happend
 				}
 			}
 			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
@@ -141,6 +140,7 @@ country_event = {
 		ai_chance = { base = 3 }
 		custom_effect_tooltip = AOR_GER_timeaxis.2.tt3
 		set_global_flag = AOR_GER_g_flag_meet_3
+		set_country_flag= AOR_GER_MEETING_HAPPENED		
 		every_country = {
 			limit = {
 				OR = {
@@ -155,9 +155,6 @@ country_event = {
 					tag = PRE #普鲁士
 					tag = SHL #石勒苏益格荷尔施泰因
 					tag = MEK #梅克伦堡
-				}
-				NOT = {
-					has_country_flag = AOR_GER_timeaxis_has_happend
 				}
 			}
 			country_event = { id = AOR_GER_timeaxis.3 days = 1 }
@@ -174,7 +171,6 @@ country_event = {
 	is_triggered_only = yes
 	option = { #好的
 		name = AOR_GER_timeaxis.3.a
-		set_country_flag = AOR_GER_timeaxis_has_happend
 		if = {
 			limit = {
 				has_global_flag = AOR_GER_g_flag_meet_1

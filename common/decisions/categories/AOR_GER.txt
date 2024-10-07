@@ -4,6 +4,7 @@ AOR_GER_finance_category = {
 	icon = GFX_decision_category_generic_economy
 	allowed = {
 		tag = GER
+		always = no
 	}
 	visible = {
 		tag = GER
@@ -87,7 +88,7 @@ AOR_Great_Northern_Strategic_Plan_category = {
 #大北方战略计划
 	priority = 80
 	icon = GFX_decision_category_usa_intervention_mandate
-	allowed = { always = yes }
+	allowed = { always = no }
 	visible = {
 		tag = GER
 	}

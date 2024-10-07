@@ -11,6 +11,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = {
 			date > 1923.4.1
 		}
 		visible = {
+			date > 1923.4.1
 			OR = {
 				tag = GER
 				tag = HAN					#威斯特伐利亚

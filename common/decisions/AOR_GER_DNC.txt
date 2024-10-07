@@ -339,6 +339,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		activation = {
 			has_country_flag = flag_attend_the_meeting_1
 		}
+		fire_only_once = yes
 		visible = {
 			OR = {
 				tag = GER
@@ -358,6 +359,8 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		days_mission_timeout = 100
 
 		timeout_effect = {
+			clr_country_flag = AOR_GER_MEETING_HAPPENED
+			country_event = { id = AOR_GER_timeaxis.2 }
 			if = { #傻子才不同意
 				limit = {
 					has_country_flag = AOR_GER_flag_NOT_support_resolution
@@ -430,6 +433,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		activation = {
 			has_country_flag = flag_attend_the_meeting_2
 		}
+		fire_only_once = yes
 		visible = {
 			OR = {
 				tag = GER
@@ -449,6 +453,8 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		days_mission_timeout = 100
 
 		timeout_effect = {
+			clr_country_flag = AOR_GER_MEETING_HAPPENED
+			country_event = { id = AOR_GER_timeaxis.2 }
 			if = { #不同意
 				limit = {
 					has_country_flag = AOR_GER_flag_NOT_support_resolution
@@ -520,6 +526,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		activation = {
 			has_country_flag = flag_attend_the_meeting_3
 		}
+		fire_only_once = yes
 		visible = {
 			OR = {
 				tag = GER
@@ -539,6 +546,8 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 		days_mission_timeout = 100
 
 		timeout_effect = {
+			clr_country_flag = AOR_GER_MEETING_HAPPENED
+			country_event = { id = AOR_GER_timeaxis.2 }
 			if = { #不同意
 				limit = {
 					has_country_flag = AOR_GER_flag_NOT_support_resolution
@@ -669,7 +678,13 @@ AOR_Great_Army_Repoliticizate_category = {
 AOR_Great_Northern_Strategic_Plan_category = {
 
 	Great_Northern_Strategic_Plan = {
+
+		visible = {
+			always  = no
+		}
+
 	}
+
 }
 
 #军队办公室
