@@ -83,7 +83,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 				}
 		}
 	}
-	同意国家数调试 = {
+	agree_country_number_test = { #同意国家数调试
         icon = generic_operation
 		ai_will_do = { base = 1 }
 		days_re_enable = 1
@@ -116,6 +116,46 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			modifier = {
 				tag = SHL 
 				has_country_flag = flag_attend_the_meeting_1
+				factor = 100  
+			}
+			modifier = {
+				tag = WUR 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 100  
+			}
+			modifier = {
+				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 100  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 100  
+			}
+			modifier = {
+				tag = SHL 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 100  
+			}
+			modifier = {
+				tag = WUR 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 100  
+			}
+			modifier = {
+				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 100  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 100  
+			}
+			modifier = {
+				tag = SHL 
+				has_country_flag = flag_attend_the_meeting_3				
 				factor = 100  
 			}
 		}
@@ -210,7 +250,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 	AOR_GER_Invition_change_front_2 = { #改变态度-不同意
         icon = generic_operation
 		ai_will_do = {
-			factor = 10 
+			factor = 5
 			modifier = {
 				tag = WUR 
 				has_country_flag = flag_attend_the_meeting_1				
@@ -229,6 +269,46 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 			modifier = {
 				tag = SHL 
 				has_country_flag = flag_attend_the_meeting_1				
+				factor = 0  
+			}
+			modifier = {
+				tag = WUR 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 0  
+			}
+			modifier = {
+				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 0  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 0  
+			}
+			modifier = {
+				tag = SHL 
+				has_country_flag = flag_attend_the_meeting_2				
+				factor = 0  
+			}
+			modifier = {
+				tag = WUR 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 0  
+			}
+			modifier = {
+				tag = BAV 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 0  
+			}
+			modifier = {
+				tag = NAU 
+				has_country_flag = flag_attend_the_meeting_3				
+				factor = 0  
+			}
+			modifier = {
+				tag = SHL 
+				has_country_flag = flag_attend_the_meeting_3				
 				factor = 0  
 			}
 		}
@@ -400,8 +480,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 					add_timed_idea = {
 						idea = AOR_GER_idea_under_discussion 
 						days = var:GER_temp2
-					}
-					
+					}					
 					#add_to_temp_variable
 					#subtract_from_temp_variable
 					#multiply_temp_variable
@@ -486,15 +565,13 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 					set_temp_variable = { GER_temp1 = GER_support_country_quantity }
 					multiply_temp_variable = { GER_temp1 = 25 }
 					set_variable = { GER_support_country_gain = GER_temp1 }
-					add_political_power = var:GER_temp1
-					
+					add_political_power = var:GER_temp1					
 					set_temp_variable = { GER_temp2 = GER_support_country_quantity }
 					multiply_temp_variable = { GER_temp2 = 73 }
 					add_timed_idea = {
 						idea = AOR_GER_idea_trade 
 						days = var:GER_temp2
-					}
-					
+					}					
 					#add_to_temp_variable
 					#subtract_from_temp_variable
 					#multiply_temp_variable
@@ -579,8 +656,7 @@ AOR_Deutschland_National_Committee_category = {  #国家委员会
 					set_temp_variable = { GER_temp1 = GER_support_country_quantity }
 					multiply_temp_variable = { GER_temp1 = 25 }
 					set_variable = { GER_support_country_gain = GER_temp1 }
-					add_political_power = var:GER_temp1
-					
+					add_political_power = var:GER_temp1					
 					set_temp_variable = { GER_temp2 = GER_support_country_quantity }
 					multiply_temp_variable = { GER_temp2 = 73 }
 					add_timed_idea = {
