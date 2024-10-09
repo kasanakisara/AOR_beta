@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = 
+			tag = IRE
 		}
 	}
 	default = no
@@ -26,6 +26,10 @@ focus_tree = {
 		x = 7
 		y = 1
 
+		complete_effect = {
+			add_political_power = 50
+		}
+
 	}
 	focus = {
 		id = newfocus_2
@@ -37,6 +41,22 @@ focus_tree = {
 		x = 9
 		y = 1
 
+		complete_effect = {
+			add_manpower = 10000
+			add_command_power = 20
+			if = {
+				limit = {
+					has_war_with = ENG
+				}
+				IRE = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 100
+						producer = FRA
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = newfocus_3
@@ -51,6 +71,11 @@ focus_tree = {
 		x = 8
 		y = 2
 
+		complete_effect = {
+			IRE = {
+				add_core_of = 1153
+			}
+		}
 	}
 	focus = {
 		id = newfocus_4
@@ -61,6 +86,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		complete_effect = {
+			
+		}
 
 	}
 	focus = {
@@ -72,6 +100,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
+		complete_effect = {
+			
+		}
 
 	}
 	focus = {
@@ -86,6 +117,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
+		complete_effect = {
+			
+		}
 
 	}
 	focus = {
@@ -97,6 +131,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		complete_effect = {
+			
+		}
 
 	}
 	focus = {
@@ -111,6 +148,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		complete_effect = {
+			
+		}
 
 	}
 	focus = {
@@ -125,6 +165,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
+		complete_effect = {
+			
+		}
 
 	}
 }
