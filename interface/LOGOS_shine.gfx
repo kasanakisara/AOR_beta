@@ -5574,11 +5574,11 @@ spriteType = {
  }
 
  spriteType = {
-		name = "GFX_goal_NAU_The_prince's_speech_shine"
-		texturefile = "gfx/interface/goals/NAU_The_prince's_speech.png"
+		name = "GFX_goal_NAU_The_prince_s_speech_shine"
+		texturefile = "gfx/interface/goals/NAU_The_prince_s_speech.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-		 animationmaskfile = "gfx/interface/goals/NAU_The_prince's_speech.png"
+		 animationmaskfile = "gfx/interface/goals/NAU_The_prince_s_speech.png"
 		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 		 animationlooping = no   
@@ -5591,7 +5591,7 @@ spriteType = {
 		}
 
 		animation = {
-      animationmaskfile = "gfx/interface/goals/NAU_The_prince's_speech.png"
+      animationmaskfile = "gfx/interface/goals/NAU_The_prince_s_speech.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
       animationrotation = 90.0 
       animationlooping = no   
@@ -5702,11 +5702,11 @@ spriteType = {
  }
 
  spriteType = {
-		name = "GFX_goal_NAU_The_Prince's_iron_fist"
-		texturefile = "gfx/interface/goals/NAU_The_Prince's_iron_fist.png"
+		name = "GFX_goal_NAU_The_Prince_s_iron_fist"
+		texturefile = "gfx/interface/goals/NAU_The_Prince_s_iron_fist.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-		 animationmaskfile = "gfx/interface/goals/NAU_The_Prince's_iron_fist.png"
+		 animationmaskfile = "gfx/interface/goals/NAU_The_Prince_s_iron_fist.png"
 		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
 		 animationlooping = no   
@@ -5719,7 +5719,7 @@ spriteType = {
 		}
 
 		animation = {
-      animationmaskfile = "gfx/interface/goals/NAU_The_Prince's_iron_fist.png"
+      animationmaskfile = "gfx/interface/goals/NAU_The_Prince_s_iron_fist.png"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
       animationrotation = 90.0 
       animationlooping = no   
