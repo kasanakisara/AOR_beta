@@ -53,7 +53,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Chopin's_Ninth_Revolution #肖邦的第九革命
+		id = Chopin_s_Ninth_Revolution #肖邦的第九革命
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
@@ -82,7 +82,7 @@ focus_tree = {
 			focus = Start_elections
 		}
 		mutually_exclusive = {
-			focus = Chopin's_Ninth_Revolution
+			focus = Chopin_s_Ninth_Revolution
 			focus = Polishing_the_Crown
 		}
 		x = 4
@@ -134,7 +134,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = The_Victory_of_the_Paris_Government
-			focus = Chopin's_Ninth_Revolution
+			focus = Chopin_s_Ninth_Revolution
 		}
 		x = 7
 		y = 3
@@ -194,7 +194,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Bisusky's_urgent_telegram #毕苏斯基的急电
+		id = Bisusky_s_urgent_telegram #毕苏斯基的急电
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
@@ -219,7 +219,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
-			focus = Bisusky's_urgent_telegram
+			focus = Bisusky_s_urgent_telegram
 		}
 		x = 10
 		y = 4
@@ -253,7 +253,7 @@ focus_tree = {
 			focus = Finding_a_new_way_out
 		}
 		mutually_exclusive = {
-			focus = Bisusky's_urgent_telegram
+			focus = Bisusky_s_urgent_telegram
 			focus = The_Voice_of_Farmers
 		}
 		x = 13
@@ -297,7 +297,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
-			focus = Chopin's_Ninth_Revolution
+			focus = Chopin_s_Ninth_Revolution
 		}
 		x = 1
 		y = 4
@@ -350,7 +350,7 @@ focus_tree = {
 			focus = Finding_a_new_way_out
 		}
 		mutually_exclusive = {
-			focus = Bisusky's_urgent_telegram
+			focus = Bisusky_s_urgent_telegram
 			focus = hero_soilder
 		}
 		x = 16
