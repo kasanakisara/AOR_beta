@@ -84,6 +84,18 @@ country_event = {
                     type = annex_everything
                 } 
             }
+            DAH = {
+                declare_war_on = { 
+                    target = RFR
+                    type = annex_everything
+                } 
+            }
+            TUN = {
+                declare_war_on = { 
+                    target = RFR
+                    type = annex_everything
+                } 
+            }
             MOR = {
                 declare_war_on = { 
                     target = RFR
