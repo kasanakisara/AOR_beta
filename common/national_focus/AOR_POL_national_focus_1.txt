@@ -215,7 +215,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Poles'_Poland #波兰人的波兰
+		id = Poles_Poland #波兰人的波兰
 		icon = GFX_goal_unknown
 		cost = 3
 		prerequisite = {
@@ -329,7 +329,7 @@ focus_tree = {
 			focus = Free_Countries_in_Eastern_Europe
 			focus = Democratic_countries_in_Eastern_Europe
 			focus = The_Birth_of_Kingdom
-			focus = Poles'_Poland
+			focus = Poles_Poland
 			focus = break_off_a_conference
 			focus = Polish_Revolution
 		}
