@@ -1,6 +1,58 @@
 
 add_namespace = FRA_BRA
 add_namespace = FRA_USA
+add_namespace = FRA
+
+country_event = {
+	id = FRA.1 #出游
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.1.a
+	}
+}
+
+country_event = {
+	id = FRA.2 #在议会的演讲
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.2.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = FRA.3 #秘密报告
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.3.a
+	}
+}
+
+country_event = {
+	id = FRA.4 #国民联盟会议
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.4.a
+	}
+}
+
+country_event = {
+	id = FRA.5 #请柬
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.5.a
+	}
+}
 
 country_event = { #给巴西志愿军
 	id = FRA_BRA.1

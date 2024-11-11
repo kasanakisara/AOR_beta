@@ -1,0 +1,679 @@
+focus_tree = {
+	id = AOR_FRA_focus_tree_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	continuous_focus_position={
+		x = 2500
+		y = 1000
+	}
+	focus = {
+		id = AOR_after_the_war #大战之后
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 10
+		y = 0
+
+		completion_reward={
+
+		}
+
+	}
+	focus = {
+		id = AOR_The_sorrowful_passing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_after_the_war
+		}
+		x = 6
+		y = 1
+
+		completion_reward={
+
+		}
+
+	}
+	focus = {
+		id = AOR_Compassionate_towards_the_living
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_sorrowful_passing
+		}
+		x = 4
+		y = 2
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Clearing_war_debts
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Compassionate_towards_the_living
+		}
+		x = 4
+		y = 3
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Mourning_for_the_deceased
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_sorrowful_passing
+		}
+		x = 8
+		y = 2
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Clean_up_the_battlefield
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Mourning_for_the_deceased
+		}
+		x = 8
+		y = 3
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_The_Future_of_Waves
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_after_the_war
+		}
+		x = 13
+		y = 1
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Anti_German_Movement
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_Future_of_Waves
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = AOR_Rhine_Pearl
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Anti_German_Movement
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = AOR_The_agreement_and_progress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_Future_of_Waves
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = AOR__harboring_ulterior_motives
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_agreement_and_progress
+		}
+		x = 15
+		y = 3
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_The_New_Future_of_the_Republic
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Clearing_war_debts
+		}
+		prerequisite = {
+			focus = AOR_Clean_up_the_battlefield
+		}
+		prerequisite = {
+			focus = AOR_Rhine_Pearl
+		}
+		prerequisite = {
+			focus = AOR__harboring_ulterior_motives
+		}
+		x = 9
+		y = 5
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_World_Domination #世界争霸
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_New_Future_of_the_Republic
+		}
+		x = 3
+		y = 6
+
+		available = {
+			always = no
+		}	
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_a_thousand_things_wait_to_be_done #百废待兴
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = AOR_The_New_Future_of_the_Republic
+		}
+		x = 14
+		y = 6
+
+		completion_reward={
+			country_event = { id = FRA.1 }
+		}
+
+	}
+	focus = {
+		id = AOR_Unite_as_one #团结一心
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = AOR_a_thousand_things_wait_to_be_done
+		}
+		x = 10
+		y = 7
+
+		completion_reward={
+			country_event = { id = FRA.2 }
+		}
+
+	}
+	focus = {
+		id = AOR_Middle_on_the_road #上道具中
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = AOR_Unite_as_one
+		}
+		x = 8
+		y = 8
+
+		completion_reward={
+			country_event = { id = FRA.3 }
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Sweeping_the_Left_Wing #清扫左翼
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = AOR_Middle_on_the_road
+		}
+		x = 7
+		y = 9
+
+		completion_reward={
+			add_popularity = {
+				ideology = marxism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = AOR_Reorganize_the_National_Alliance #重组国民联盟
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = AOR_Unite_as_one
+		}
+		x = 13
+		y = 8
+
+		completion_reward={
+			country_event = { id = FRA.4 }
+		}
+
+	}
+	focus = {
+		id = AOR_Invite_Miller_Lan #邀请米勒兰
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = AOR_Reorganize_the_National_Alliance
+		}
+		x = 12
+		y = 9
+
+		available = {
+			has_stability > 0.5
+		}
+
+		completion_reward={
+			country_event = { id = FRA.5 }
+			add_stability = -0.2
+		}
+
+	}
+	focus = {
+		id = AOR_Overthrow_the_traitors #打倒工贼
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_a_thousand_things_wait_to_be_done
+		}
+		x = 21
+		y = 7
+
+		available = {
+			always = no
+		}
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_The_Pearl_of_Return #回归的明珠
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Overthrow_the_traitors
+		}
+		x = 19
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Rebuilted_consciousness #重铸的意识
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_Pearl_of_Return
+		}
+		x = 17
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Interactions_from_all_directions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_Pearl_of_Return
+		}
+		x = 20
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_The_old_wilderness
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Overthrow_the_traitors
+		}
+		x = 23
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Transforming_military_attire_into_workwear
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_old_wilderness
+		}
+		x = 22
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Remaking_factory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_old_wilderness
+		}
+		x = 25
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_The_Revival_of_France
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Rebuilted_consciousness
+		}
+		prerequisite = {
+			focus = AOR_Interactions_from_all_directions
+		}
+		prerequisite = {
+			focus = AOR_Transforming_military_attire_into_workwear
+		}
+		prerequisite = {
+			focus = AOR_Remaking_factory
+		}
+		x = 21
+		y = 10
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Liquidation_of_Germany #对德清算
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_The_New_Future_of_the_Republic
+		}
+		x = 29
+		y = 6
+
+		available = {
+			always = no
+		}
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Convene_a_compensation_conference
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Liquidation_of_Germany
+		}
+		x = 29
+		y = 7
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Claiming_mineral_resources
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Convene_a_compensation_conference
+		}
+		x = 27
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Increase_the_demand_for_compensation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Convene_a_compensation_conference
+		}
+		x = 31
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_An_eye_for_an_eye_a_tooth_for_a_tooth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Claiming_mineral_resources
+		}
+		prerequisite = {
+			focus = AOR_Increase_the_demand_for_compensation
+		}
+		x = 29
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Wooing_members_of_the_treaty
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_World_Domination 
+		}
+		x = 3
+		y = 7
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Encourage_Arab_issues
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Wooing_members_of_the_treaty
+		}
+		x = 1
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Stirring_Ireland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Wooing_members_of_the_treaty
+		}
+		x = 5
+		y = 8
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Rooster_stands_proudly_at_the_top_of_the_world
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Encourage_Arab_issues
+		}
+		prerequisite = {
+			focus = AOR_Stirring_Ireland
+		}
+		x = 3
+		y = 9
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = {
+		id = AOR_Overthrow_the_extreme_right_wing #打倒极右翼
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = AOR_Middle_on_the_road
+		}
+		x = 9
+		y = 9
+
+		completion_reward={
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = CON_democratic
+				popularity = 0.1
+			}
+		}
+
+	}
+	focus = {
+		id = AOR_United_France #团结的法兰西
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = AOR_Sweeping_the_Left_Wing
+		}
+		prerequisite = {
+			focus = AOR_Overthrow_the_extreme_right_wing
+		}
+		prerequisite = {
+			focus = AOR_Invite_Miller_Lan
+		}
+		prerequisite = {
+			focus = AOR_Differentiated_SFIO
+		}
+		x = 10
+		y = 10
+
+		completion_reward={
+			
+		}
+
+	}
+	focus = { 
+		id = AOR_Differentiated_SFIO #分化sfio
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = AOR_Reorganize_the_National_Alliance
+		}
+		x = 14
+		y = 9
+
+		completion_reward={
+			add_stability = -0.05
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.1
+			}
+		}
+
+	}
+	focus = {
+		id = AOR_The_bright_place_of_progress #前进的光明之处
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_United_France
+		}
+		prerequisite = {
+			focus = AOR_The_Revival_of_France
+		}
+		x = 16
+		y = 11
+
+		completion_reward={
+			
+		}
+
+	}
+}
