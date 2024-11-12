@@ -9,14 +9,14 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position={
-		x = 2500
-		y = 1000
+		x = 500
+		y = 2000
 	}
 	focus = {
 		id = AOR_FRA_after_the_war #大战之后
 		icon = GFX_goal_unknown
 		cost = 0.00
-		x = 10
+		x = 16
 		y = 0
 
 		completion_reward={
@@ -31,7 +31,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_after_the_war
 		}
-		x = 6
+		x = 10
 		y = 1
 
 		completion_reward={
@@ -46,7 +46,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_sorrowful_passing
 		}
-		x = 4
+		x = 8
 		y = 2
 
 		completion_reward={
@@ -61,7 +61,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Compassionate_towards_the_living
 		}
-		x = 4
+		x = 8
 		y = 3
 
 		completion_reward={
@@ -76,7 +76,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_sorrowful_passing
 		}
-		x = 8
+		x = 12
 		y = 2
 
 		completion_reward={
@@ -91,7 +91,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Mourning_for_the_deceased
 		}
-		x = 8
+		x = 12
 		y = 3
 
 		completion_reward={
@@ -106,7 +106,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_after_the_war
 		}
-		x = 13
+		x = 22
 		y = 1
 
 		completion_reward={
@@ -121,7 +121,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_Future_of_Waves
 		}
-		x = 11
+		x = 20
 		y = 2
 
 	}
@@ -132,7 +132,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Anti_German_Movement
 		}
-		x = 11
+		x = 20
 		y = 3
 
 	}
@@ -143,7 +143,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_Future_of_Waves
 		}
-		x = 15
+		x = 24
 		y = 2
 
 	}
@@ -154,7 +154,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_agreement_and_progress
 		}
-		x = 15
+		x = 24
 		y = 3
 
 		completion_reward={
@@ -178,7 +178,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_harboring_ulterior_motives
 		}
-		x = 9
+		x = 16
 		y = 5
 
 		completion_reward={
@@ -212,7 +212,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_New_Future_of_the_Republic
 		}
-		x = 14
+		x = 16
 		y = 6
 
 		completion_reward={
@@ -236,7 +236,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_FRA_Middle_on_the_road #上道具中
+		id = AOR_FRA_Middle_on_the_road #上道居中
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -267,7 +267,7 @@ focus_tree = {
 				popularity = -0.1
 			}
 			add_popularity = {
-				ideology = socialism
+				ideology = SOC_democratic
 				popularity = 0.15
 			}
 		}
@@ -279,7 +279,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Unite_as_one
 		}
-		x = 13
+		x = 12
 		y = 8
 
 		completion_reward={
@@ -288,13 +288,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_FRA_Invite_Miller_Lan #邀请米勒兰
+		id = AOR_FRA_Invite_Millerand #邀请米勒兰
 		icon = GFX_goal_unknown
 		cost = 4
 		prerequisite = {
 			focus = AOR_FRA_Reorganize_the_National_Alliance
 		}
-		x = 12
+		x = 11
 		y = 9
 
 		available = {
@@ -307,6 +307,33 @@ focus_tree = {
 		}
 
 	}
+	focus = { 
+		id = AOR_FRA_Differentiated_SFIO #分化sfio
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = AOR_FRA_Reorganize_the_National_Alliance
+		}
+		x = 13
+		y = 9
+
+		completion_reward={
+			add_stability = -0.05
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = SOC_democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = FRE_democratic
+				popularity = 0.1
+			}
+		}
+
+	}
 	focus = {
 		id = AOR_FRA_Overthrow_the_traitors #打倒工贼
 		icon = GFX_goal_unknown
@@ -314,11 +341,11 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_a_thousand_things_wait_to_be_done
 		}
-		x = 21
+		x = 22
 		y = 7
 
 		available = {
-			always = no
+			has_completed_focus = AOR_FRA_United_France
 		}
 
 		completion_reward={
@@ -333,7 +360,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Overthrow_the_traitors
 		}
-		x = 19
+		x = 20
 		y = 8
 
 		completion_reward={
@@ -348,7 +375,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_Pearl_of_Return
 		}
-		x = 17
+		x = 19
 		y = 9
 
 		completion_reward={
@@ -363,7 +390,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_Pearl_of_Return
 		}
-		x = 20
+		x = 21
 		y = 9
 
 		completion_reward={
@@ -378,7 +405,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Overthrow_the_traitors
 		}
-		x = 23
+		x = 24
 		y = 8
 
 		completion_reward={
@@ -393,7 +420,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_The_old_wilderness
 		}
-		x = 22
+		x = 23
 		y = 9
 
 		completion_reward={
@@ -432,7 +459,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AOR_FRA_Remaking_factory
 		}
-		x = 21
+		x = 22
 		y = 10
 
 		completion_reward={
@@ -618,7 +645,7 @@ focus_tree = {
 			focus = AOR_FRA_Overthrow_the_extreme_right_wing
 		}
 		prerequisite = {
-			focus = AOR_FRA_Invite_Miller_Lan
+			focus = AOR_FRA_Invite_Millerand
 		}
 		prerequisite = {
 			focus = AOR_FRA_Differentiated_SFIO
@@ -631,33 +658,7 @@ focus_tree = {
 		}
 
 	}
-	focus = { 
-		id = AOR_FRA_Differentiated_SFIO #分化sfio
-		icon = GFX_goal_unknown
-		cost = 2
-		prerequisite = {
-			focus = AOR_FRA_Reorganize_the_National_Alliance
-		}
-		x = 14
-		y = 9
-
-		completion_reward={
-			add_stability = -0.05
-			add_popularity = {
-				ideology = Marxism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = socialism
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = FRE_democratic
-				popularity = 0.1
-			}
-		}
-
-	}
+	
 	focus = {
 		id = AOR_FRA_The_bright_place_of_progress #前进的光明之处
 		icon = GFX_goal_unknown
