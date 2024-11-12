@@ -13,7 +13,7 @@ focus_tree = {
 		y = 1000
 	}
 	focus = {
-		id = AOR_after_the_war #大战之后
+		id = AOR_FRA_after_the_war #大战之后
 		icon = GFX_goal_unknown
 		cost = 0.00
 		x = 10
@@ -25,11 +25,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_sorrowful_passing
+		id = AOR_FRA_The_sorrowful_passing  #悲痛的已逝
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_after_the_war
+			focus = AOR_FRA_after_the_war
 		}
 		x = 6
 		y = 1
@@ -40,11 +40,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Compassionate_towards_the_living
+		id =  AOR_FRA_Compassionate_towards_the_living #怜悯生者
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_sorrowful_passing
+			focus = AOR_FRA_The_sorrowful_passing
 		}
 		x = 4
 		y = 2
@@ -55,11 +55,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Clearing_war_debts
+		id = AOR_FRA_Clearing_war_debts #清算战争债务
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Compassionate_towards_the_living
+			focus = AOR_FRA_Compassionate_towards_the_living
 		}
 		x = 4
 		y = 3
@@ -70,11 +70,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Mourning_for_the_deceased
+		id = AOR_FRA_Mourning_for_the_deceased #哀悼死者
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_sorrowful_passing
+			focus = AOR_FRA_The_sorrowful_passing
 		}
 		x = 8
 		y = 2
@@ -85,11 +85,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Clean_up_the_battlefield
+		id = AOR_FRA_Clean_up_the_battlefield #清扫战场
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Mourning_for_the_deceased
+			focus = AOR_FRA_Mourning_for_the_deceased
 		}
 		x = 8
 		y = 3
@@ -100,11 +100,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_Future_of_Waves
+		id = AOR_FRA_The_Future_of_Waves #浪潮的将来
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_after_the_war
+			focus = AOR_FRA_after_the_war
 		}
 		x = 13
 		y = 1
@@ -115,44 +115,44 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Anti_German_Movement
+		id = AOR_FRA_Anti_German_Movement #排德运动
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_Future_of_Waves
+			focus = AOR_FRA_The_Future_of_Waves
 		}
 		x = 11
 		y = 2
 
 	}
 	focus = {
-		id = AOR_Rhine_Pearl
+		id = AOR_FRA_Rhine_Pearl #莱茵明珠
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Anti_German_Movement
+			focus = AOR_FRA_Anti_German_Movement
 		}
 		x = 11
 		y = 3
 
 	}
 	focus = {
-		id = AOR_The_agreement_and_progress
+		id = AOR_FRA_The_agreement_and_progress #协约并进
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_Future_of_Waves
+			focus = AOR_FRA_The_Future_of_Waves
 		}
 		x = 15
 		y = 2
 
 	}
 	focus = {
-		id = AOR__harboring_ulterior_motives
+		id = AOR_FRA_harboring_ulterior_motives #心怀鬼胎
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_agreement_and_progress
+			focus = AOR_FRA_The_agreement_and_progress
 		}
 		x = 15
 		y = 3
@@ -163,20 +163,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_New_Future_of_the_Republic
+		id = AOR_FRA_The_New_Future_of_the_Republic #共和国的新未来
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Clearing_war_debts
+			focus = AOR_FRA_Clearing_war_debts
 		}
 		prerequisite = {
-			focus = AOR_Clean_up_the_battlefield
+			focus = AOR_FRA_Clean_up_the_battlefield
 		}
 		prerequisite = {
-			focus = AOR_Rhine_Pearl
+			focus = AOR_FRA_Rhine_Pearl
 		}
 		prerequisite = {
-			focus = AOR__harboring_ulterior_motives
+			focus = AOR_FRA_harboring_ulterior_motives
 		}
 		x = 9
 		y = 5
@@ -187,11 +187,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_World_Domination #世界争霸
+		id = AOR_FRA_World_Domination #世界争霸
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_New_Future_of_the_Republic
+			focus = AOR_FRA_The_New_Future_of_the_Republic
 		}
 		x = 3
 		y = 6
@@ -206,11 +206,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_a_thousand_things_wait_to_be_done #百废待兴
+		id = AOR_FRA_a_thousand_things_wait_to_be_done #百废待兴
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
-			focus = AOR_The_New_Future_of_the_Republic
+			focus = AOR_FRA_The_New_Future_of_the_Republic
 		}
 		x = 14
 		y = 6
@@ -221,11 +221,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Unite_as_one #团结一心
+		id = AOR_FRA_Unite_as_one #团结一心
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = AOR_a_thousand_things_wait_to_be_done
+			focus = AOR_FRA_a_thousand_things_wait_to_be_done
 		}
 		x = 10
 		y = 7
@@ -236,11 +236,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Middle_on_the_road #上道具中
+		id = AOR_FRA_Middle_on_the_road #上道具中
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = AOR_Unite_as_one
+			focus = AOR_FRA_Unite_as_one
 		}
 		x = 8
 		y = 8
@@ -252,11 +252,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Sweeping_the_Left_Wing #清扫左翼
+		id = AOR_FRA_Sweeping_the_Left_Wing #清扫左翼
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
-			focus = AOR_Middle_on_the_road
+			focus = AOR_FRA_Middle_on_the_road
 		}
 		x = 7
 		y = 9
@@ -273,11 +273,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AOR_Reorganize_the_National_Alliance #重组国民联盟
+		id = AOR_FRA_Reorganize_the_National_Alliance #重组国民联盟
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = AOR_Unite_as_one
+			focus = AOR_FRA_Unite_as_one
 		}
 		x = 13
 		y = 8
@@ -288,11 +288,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Invite_Miller_Lan #邀请米勒兰
+		id = AOR_FRA_Invite_Miller_Lan #邀请米勒兰
 		icon = GFX_goal_unknown
 		cost = 4
 		prerequisite = {
-			focus = AOR_Reorganize_the_National_Alliance
+			focus = AOR_FRA_Reorganize_the_National_Alliance
 		}
 		x = 12
 		y = 9
@@ -308,11 +308,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Overthrow_the_traitors #打倒工贼
+		id = AOR_FRA_Overthrow_the_traitors #打倒工贼
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_a_thousand_things_wait_to_be_done
+			focus = AOR_FRA_a_thousand_things_wait_to_be_done
 		}
 		x = 21
 		y = 7
@@ -327,11 +327,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_Pearl_of_Return #回归的明珠
+		id = AOR_FRA_The_Pearl_of_Return #回归的明珠
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Overthrow_the_traitors
+			focus = AOR_FRA_Overthrow_the_traitors
 		}
 		x = 19
 		y = 8
@@ -342,11 +342,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Rebuilted_consciousness #重铸的意识
+		id = AOR_FRA_Rebuilted_consciousness #重铸的意识
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_Pearl_of_Return
+			focus = AOR_FRA_The_Pearl_of_Return
 		}
 		x = 17
 		y = 9
@@ -357,11 +357,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Interactions_from_all_directions
+		id = AOR_FRA_Interactions_from_all_directions
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_Pearl_of_Return
+			focus = AOR_FRA_The_Pearl_of_Return
 		}
 		x = 20
 		y = 9
@@ -372,11 +372,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_old_wilderness
+		id = AOR_FRA_The_old_wilderness
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Overthrow_the_traitors
+			focus = AOR_FRA_Overthrow_the_traitors
 		}
 		x = 23
 		y = 8
@@ -387,11 +387,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Transforming_military_attire_into_workwear
+		id = AOR_FRA_Transforming_military_attire_into_workwear
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_old_wilderness
+			focus = AOR_FRA_The_old_wilderness
 		}
 		x = 22
 		y = 9
@@ -402,11 +402,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Remaking_factory
+		id = AOR_FRA_Remaking_factory
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_old_wilderness
+			focus = AOR_FRA_The_old_wilderness
 		}
 		x = 25
 		y = 9
@@ -417,20 +417,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_Revival_of_France
+		id = AOR_FRA_The_Revival_of_France
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Rebuilted_consciousness
+			focus = AOR_FRA_Rebuilted_consciousness
 		}
 		prerequisite = {
-			focus = AOR_Interactions_from_all_directions
+			focus = AOR_FRA_Interactions_from_all_directions
 		}
 		prerequisite = {
-			focus = AOR_Transforming_military_attire_into_workwear
+			focus = AOR_FRA_Transforming_military_attire_into_workwear
 		}
 		prerequisite = {
-			focus = AOR_Remaking_factory
+			focus = AOR_FRA_Remaking_factory
 		}
 		x = 21
 		y = 10
@@ -441,11 +441,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Liquidation_of_Germany #对德清算
+		id = AOR_FRA_Liquidation_of_Germany #对德清算
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_The_New_Future_of_the_Republic
+			focus = AOR_FRA_The_New_Future_of_the_Republic
 		}
 		x = 29
 		y = 6
@@ -460,11 +460,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Convene_a_compensation_conference
+		id = AOR_FRA_Convene_a_compensation_conference
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Liquidation_of_Germany
+			focus = AOR_FRA_Liquidation_of_Germany
 		}
 		x = 29
 		y = 7
@@ -475,11 +475,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Claiming_mineral_resources
+		id = AOR_FRA_Claiming_mineral_resources
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Convene_a_compensation_conference
+			focus = AOR_FRA_Convene_a_compensation_conference
 		}
 		x = 27
 		y = 8
@@ -490,11 +490,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Increase_the_demand_for_compensation
+		id = AOR_FRA_Increase_the_demand_for_compensation
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Convene_a_compensation_conference
+			focus = AOR_FRA_Convene_a_compensation_conference
 		}
 		x = 31
 		y = 8
@@ -505,14 +505,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_An_eye_for_an_eye_a_tooth_for_a_tooth
+		id = AOR_FRA_An_eye_for_an_eye_a_tooth_for_a_tooth
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Claiming_mineral_resources
+			focus = AOR_FRA_Claiming_mineral_resources
 		}
 		prerequisite = {
-			focus = AOR_Increase_the_demand_for_compensation
+			focus = AOR_FRA_Increase_the_demand_for_compensation
 		}
 		x = 29
 		y = 9
@@ -523,11 +523,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Wooing_members_of_the_treaty
+		id = AOR_FRA_Wooing_members_of_the_treaty
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_World_Domination 
+			focus = AOR_FRA_World_Domination 
 		}
 		x = 3
 		y = 7
@@ -538,11 +538,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Encourage_Arab_issues
+		id = AOR_FRA_Encourage_Arab_issues
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Wooing_members_of_the_treaty
+			focus = AOR_FRA_Wooing_members_of_the_treaty
 		}
 		x = 1
 		y = 8
@@ -553,11 +553,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Stirring_Ireland
+		id = AOR_FRA_Stirring_Ireland
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Wooing_members_of_the_treaty
+			focus = AOR_FRA_Wooing_members_of_the_treaty
 		}
 		x = 5
 		y = 8
@@ -568,14 +568,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Rooster_stands_proudly_at_the_top_of_the_world
+		id = AOR_FRA_Rooster_stands_proudly_at_the_top_of_the_world
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Encourage_Arab_issues
+			focus = AOR_FRA_Encourage_Arab_issues
 		}
 		prerequisite = {
-			focus = AOR_Stirring_Ireland
+			focus = AOR_FRA_Stirring_Ireland
 		}
 		x = 3
 		y = 9
@@ -586,11 +586,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Overthrow_the_extreme_right_wing #打倒极右翼
+		id = AOR_FRA_Overthrow_the_extreme_right_wing #打倒极右翼
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
-			focus = AOR_Middle_on_the_road
+			focus = AOR_FRA_Middle_on_the_road
 		}
 		x = 9
 		y = 9
@@ -608,20 +608,20 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_United_France #团结的法兰西
+		id = AOR_FRA_United_France #团结的法兰西
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = AOR_Sweeping_the_Left_Wing
+			focus = AOR_FRA_Sweeping_the_Left_Wing
 		}
 		prerequisite = {
-			focus = AOR_Overthrow_the_extreme_right_wing
+			focus = AOR_FRA_Overthrow_the_extreme_right_wing
 		}
 		prerequisite = {
-			focus = AOR_Invite_Miller_Lan
+			focus = AOR_FRA_Invite_Miller_Lan
 		}
 		prerequisite = {
-			focus = AOR_Differentiated_SFIO
+			focus = AOR_FRA_Differentiated_SFIO
 		}
 		x = 10
 		y = 10
@@ -632,11 +632,11 @@ focus_tree = {
 
 	}
 	focus = { 
-		id = AOR_Differentiated_SFIO #分化sfio
+		id = AOR_FRA_Differentiated_SFIO #分化sfio
 		icon = GFX_goal_unknown
 		cost = 2
 		prerequisite = {
-			focus = AOR_Reorganize_the_National_Alliance
+			focus = AOR_FRA_Reorganize_the_National_Alliance
 		}
 		x = 14
 		y = 9
@@ -659,14 +659,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_The_bright_place_of_progress #前进的光明之处
+		id = AOR_FRA_The_bright_place_of_progress #前进的光明之处
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_United_France
+			focus = AOR_FRA_United_France
 		}
 		prerequisite = {
-			focus = AOR_The_Revival_of_France
+			focus = AOR_FRA_The_Revival_of_France
 		}
 		x = 16
 		y = 11

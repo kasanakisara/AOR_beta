@@ -1,5 +1,17 @@
 ﻿capital = 16
 
+complete_national_focus = AOR_FRA_after_the_war
+complete_national_focus = AOR_FRA_The_sorrowful_passing
+complete_national_focus = AOR_FRA_Compassionate_towards_the_living
+complete_national_focus = AOR_FRA_Clearing_war_debts
+complete_national_focus = AOR_FRA_Mourning_for_the_deceased
+complete_national_focus = AOR_FRA_Clean_up_the_battlefield
+complete_national_focus = AOR_FRA_The_Future_of_Waves
+complete_national_focus = AOR_FRA_The_agreement_and_progress
+complete_national_focus = AOR_FRA_harboring_ulterior_motives
+complete_national_focus = AOR_FRA_Anti_German_Movement
+complete_national_focus = AOR_FRA_Rhine_Pearl
+
 add_equipment_to_stockpile = {
 	type = support_equipment
 	amount = 2000
