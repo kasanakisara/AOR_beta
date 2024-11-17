@@ -4,7 +4,6 @@ tags={
 }
 name="beta_AOR"
 replace_path="history/states"
-replace_path="map"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="common/decisions"
