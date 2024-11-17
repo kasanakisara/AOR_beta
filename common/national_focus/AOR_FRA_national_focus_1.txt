@@ -197,7 +197,7 @@ focus_tree = {
 		y = 6
 
 		available = {
-			always = no
+			has_completed_focus = AOR_FRA_The_bright_place_of_progress
 		}	
 
 		completion_reward={
@@ -478,7 +478,7 @@ focus_tree = {
 		y = 6
 
 		available = {
-			always = no
+			has_completed_focus = AOR_FRA_The_bright_place_of_progress
 		}
 
 		completion_reward={
