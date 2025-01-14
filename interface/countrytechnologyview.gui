@@ -55,6 +55,7 @@ guiTypes = {
 			spriteType = "GFX_header_bg"
 			position = { x= 5 y = 7 }
 			Orientation = "UPPER_LEFT"
+			scale = 1.02
 		}		
 		
 		instantTextboxType = {
@@ -64,7 +65,7 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "RESEARCH_RESEARCH"
-			maxWidth = 440
+			maxWidth = 240
 			maxHeight = 20
 			format = left	
 		}
@@ -104,12 +105,12 @@ guiTypes = {
 			
 			background = {
 				name = "Background"
-				quadTextureSprite ="GFX_tiled_window2_1b_border"
+				quadTextureSprite ="GFX_focus_bonuses_icon"
 			}
 
 			background = {
 				name = "Background"		
-				quadTextureSprite ="GFX_tiled_generic_overlay_bg1"
+				quadTextureSprite ="GFX_research_speed_icon"
 			}
 
 			containerWindowType = {
