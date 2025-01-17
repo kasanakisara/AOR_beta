@@ -67,7 +67,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = EGY_Crazy_1919 #疯狂的1919
+				remove_idea = EGY_Crazy_1919 #疯狂的20世纪
 				add_idea = EGY_Crazy_1919_0
 			}   
 			country_event = { id = EGY.10 }  #bloody_street #鲜红的街道

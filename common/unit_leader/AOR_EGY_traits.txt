@@ -1,0 +1,8 @@
+leader_traits = {
+	EGY_The_ruler_of_the_country = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+	}
+
+}

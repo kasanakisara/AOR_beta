@@ -5,12 +5,12 @@ ideas = {
 			picture = GFX_idea_EGY_Moving_towards_modernity
 			allowed = { always = yes }
 			modifier = {
-				production_speed_buildings_factor = -0.5
-				consumer_goods_factor = 0.6
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-				industrial_capacity_factory = -0.5
-				research_speed_factor = -0.7
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.25
+				research_speed_factor = -0.2
 			}
 		}
 		The_Lion_of_the_Circus = {#马戏团的雄狮
@@ -20,17 +20,17 @@ ideas = {
 			political_power_gain = 0.05
 			}
 		}
-		EGY_Crazy_1919 = {#疯狂的1919
+		EGY_Crazy_1919 = {#疯狂的20世纪
 			picture = GFX_idea_EGY_Crazy_1919
 			allowed = { always = yes }
 			modifier = {
-				STABILITY_FACTOR = -0.25
+				STABILITY_FACTOR = -0.2
 				political_power_factor = -0.1
 				resistance_growth = 0.05
 				custom_modifier_tooltip = EGY_Crazy_1919_tt
 			}
 		}
-		EGY_Crazy_1919_0 = {#疯狂的1919
+		EGY_Crazy_1919_0 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -39,7 +39,7 @@ ideas = {
 			resistance_growth = 0.05
 			}
 		}
-		EGY_Crazy_1919_1 = {#疯狂的1919
+		EGY_Crazy_1919_1 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -48,7 +48,7 @@ ideas = {
 			resistance_growth = 0.05
 			}
 		}
-		EGY_Crazy_1919_2 = {#疯狂的1919
+		EGY_Crazy_1919_2 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -57,7 +57,7 @@ ideas = {
 			resistance_growth = 0.05
 			}
 		}
-		EGY_Crazy_1919_3 = {#疯狂的1919
+		EGY_Crazy_1919_3 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -66,7 +66,7 @@ ideas = {
 			resistance_growth = 0.15
 			}
 		}
-		EGY_Crazy_1919_4 = {#疯狂的1919
+		EGY_Crazy_1919_4 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -75,7 +75,7 @@ ideas = {
 			resistance_growth = 0.05
 			}
 		}
-		EGY_Crazy_1919_5 = {#疯狂的1919
+		EGY_Crazy_1919_5 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
@@ -84,14 +84,14 @@ ideas = {
 			resistance_growth = 0.05
 			}
 		}
-		EGY_Crazy_1919_6 = {#疯狂的1919
+		EGY_Crazy_1919_6 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {
 			political_power_factor = -0.1
 			}
 		}
-		EGY_Crazy_1919_7 = {#疯狂的1919
+		EGY_Crazy_1919_7 = {#疯狂的20世纪
 		picture = GFX_idea_EGY_Crazy_1919
 		allowed = { always = yes }
 		modifier = {

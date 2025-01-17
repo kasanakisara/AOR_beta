@@ -53,11 +53,11 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Farouk Muhammad Ali"
-	desc = ""
+	desc = "我是一个小笨蛋"
 	picture = "Fuad.dds"
 	ideology = despotism
 	traits = {
-		#
+		EGY_The_ruler_of_the_country
 	}
 }
 
