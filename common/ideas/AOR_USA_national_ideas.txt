@@ -322,7 +322,7 @@ ideas = {
 			picture = GFX_idea_USA_shiyouhuanying4
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.20
 				CONSCRIPTION_FACTOR = -0.1
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
@@ -337,7 +337,7 @@ ideas = {
 			picture = GFX_idea_USA_shiyouhuanying5
 			allowed = { always = yes }
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.20
 				CONSCRIPTION_FACTOR = -0.1
 				RESISTANCE_TARGET_ = 0.2
 				MIN_EXPORT_FACTOR = 0.2
