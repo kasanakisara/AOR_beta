@@ -572,7 +572,7 @@ country_event = {
 		USA_civil_war_west = yes
 		}
 		swap_ideas={
-			 remove_idea = USA_kuangyezhidi
+			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
 		}
     }
@@ -584,7 +584,7 @@ country_event = {
 		USA_civil_war_west = yes
 		}
 		swap_ideas={
-			 remove_idea = USA_kuangyezhidi
+			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
 		}
 		US2 = {
@@ -1466,6 +1466,24 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10002.a
+		swap_ideas={
+			remove_idea = USA_kuangyezhidi
+			add_idea = USA_kuangyezhidi2
+	   }
+		382={
+			add_building_construction={
+				type=infrastructure
+				level=-1
+				instant_build=yes
+			}
+		}
+		380={
+			add_building_construction={
+				type=infrastructure
+				level=-1
+				instant_build=yes
+			}
+		}
 		custom_effect_tooltip = USA_ASanFrancisco
 		news_event = {id=AOR_news.199}
 	}	
@@ -1545,6 +1563,16 @@ country_event = {
     	
     option = { 
         name = USA.10007.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -300
+			producer = USA	
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -100
+			producer = USA	
+		}
 	
 	}
 }

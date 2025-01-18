@@ -356,11 +356,21 @@ ideas = {
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
+		#狂野之地-西部2
+		USA_kuangyezhidi2 = {
+			picture = GFX_idea_USA_kuangyezhidi2
+			allowed = { always = yes }
+			modifier = {				
+				stability_factor = -0.15
+				custom_modifier_tooltip = USA_kuangyezhidi_tt
+			}
+		}
 		#无序之地-西部
 		USA_wuxunzhidi = {
 			picture = GFX_idea_USA_wuxunzhidi
 			allowed = { always = yes }
-			modifier = {				
+			modifier = {
+				stability_factor = -0.05				
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}

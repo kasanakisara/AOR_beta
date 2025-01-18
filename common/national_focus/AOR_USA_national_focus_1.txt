@@ -52,21 +52,6 @@ focus_tree={
 			country_event={
 				id = USA.10002
 			}
-			add_stability=-0.05
-			382={
-				add_building_construction={
-					type=infrastructure
-					level=-1
-					instant_build=yes
-				}
-			}
-			380={
-				add_building_construction={
-					type=infrastructure
-					level=-1
-					instant_build=yes
-				}
-			}
 		}
 	}
 	focus={

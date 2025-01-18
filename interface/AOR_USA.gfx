@@ -92,6 +92,10 @@ spriteTypes = {
 		name = "GFX_idea_USA_kuangyezhidi"
 		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
     }
+	spriteType = {
+		name = "GFX_idea_USA_kuangyezhidi2"
+		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
+    }
 	    spriteType = {
 		name = "GFX_idea_USA_wuxunzhidi"
 		texturefile = "gfx/interface/ideas/USA_kuangyezhidi.png"
