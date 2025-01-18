@@ -61,6 +61,7 @@ guiTypes = {
 				format = "UPPER_LEFT"
 				slotsize = { width = 60 height = 52 }
 				max_slots_horizontal = 5
+				max_slots_vertical = 1
 			}
 			
 			instantTextboxType = {
@@ -72,6 +73,7 @@ guiTypes = {
 				maxWidth = 190
 				maxHeight = 30
 				format = center
+				fixedsize = yes
 			}
 			
 			gridBoxType = {
@@ -81,6 +83,7 @@ guiTypes = {
 				format = "UPPER_LEFT"
 				slotsize = { width = 58 height = 46 }
 				max_slots_horizontal = 5
+				max_slots_vertical = 5
 			}
 
 			iconType ={
@@ -132,29 +135,34 @@ guiTypes = {
 				format = center
 			}
 			
-			buttonType = {
-				name = "owner_flag"
-				quadTextureSprite ="GFX_flag_small2"
-				position = { x= 35 y = 63 }
+			OverlappingElementsBoxType = {
+				name = "state_owners"
+				position = { x = 35 y = 63 }
+				size = { x = 60 y = 40 }
+				format = left
+				spacing = 1.0
 			}
 			
-			iconType ={
-				name ="owner_flag_border"
-				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-				position = { x= 30 y = 59 }
-				alwaystransparent = yes
+			positionType = {
+				name = "state_owners_size_when_owner_is_controller"
+				position = { x = 110 y = 40 }
+			}
+
+			positionType = {
+				name = "state_owners_size_when_owner_is_not_controller"
+				position = { x = 60 y = 40 }
 			}
 			
 			buttonType = {
 				name = "controller_flag"
 				quadTextureSprite = "GFX_flag_small2"
-				position = { x= 75 y = 63 }
+				position = { x= 105 y = 63 }
 			}	
 			
 			iconType ={
 				name ="controller_flag_border"
 				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-				position = { x= 70 y = 59 }
+				position = { x= 100 y = 59 }
 				alwaystransparent = yes
 			}
 			
@@ -547,6 +555,16 @@ guiTypes = {
 				spriteType = "GFX_impassable_icon"
 				Orientation = "CENTER"
 			}
+
+			instantTextboxType = {
+				name = "state_modifiers"
+				text = "STATE_MODIFIERS"
+				position = { x = 28 y= -83 }
+				font = "hoi_16mbs"
+				maxWidth = 200
+				maxHeight = 30
+				format = left
+			}
 			
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"
@@ -582,29 +600,45 @@ guiTypes = {
 		buttonType = {
 			name = "scorched_earth_state_button"
 			position = { x = -31 y = 135 }
-			quadTextureSprite ="GFX_scorched_earth"
+			quadTextureSprite ="GFX_scorched_earth_state"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
 		}
 	}
 	
 	windowType = {
-		name = "state_core_entry"
+		name = "state_stakeholder_entry"
 		position = { x = 0 y = 0}	
 		size = { x = 40 y = 26 }
 
 		guibuttonType = {
-			name = "core_country_flag"
+			name = "stakeholder_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
 			position = { x= 0 y = 1 }
 			#Orientation = "UPPER_LEFT"
 		}
 		
-		iconType ={
-			name ="core_flag_border"
+		iconType = {
+			name = "flag_border_thin"
 			quadTextureSprite = "GFX_small_flag_frame_thin"
 			position = { x= -3 y = -1 }
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "flag_border_thick"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x= -5 y = -4 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "flag_exclamation_mark"
+			spriteType = "GFX_alerts_category"
+			position = {x = 0 y = 0}
+			frame = 2
+			alwaystransparent = yes
+			scale = 0.8
 		}
 	}
 	
@@ -729,6 +763,38 @@ guiTypes = {
 			rotation = 1.5708		
 		}
 	}
+
+	containerWindowType = {
+		name = "province_building_special_icon_entry"
+		position = { x=-8 y=18 }
+		size = { width=50 height= 43 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_province_landmark_bg"
+		}
+
+		# Since the province building and facility icons are not the same size.
+		# For now use the position type X value as a scale, where 1 = 0.1 scale.
+		positionType = {
+			name = "facility_building_button_scale"
+			position = { x = 4 y = 0}
+		}
+
+		buttonType = {
+			name = "building_button"
+			quadTextureSprite = "GFX_placeholder_bg"
+			position = { x = 14 y = 7 }
+			scale = 1.0
+		}
+		
+		iconType = {
+			name = "damage_bar"
+			spriteType = "GFX_province_landmark_damage_bar"
+			position = { x=6 y=8  }
+		}
+	}
 	
 	containerWindowType = {
 		name = "state_resource_entry"
@@ -739,7 +805,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource"
-			position = { x=53 y=8 }	
+			position = { x=53 y=11 }	
 			spriteType = "GFX_resources_strip"
 		}
 		
@@ -814,6 +880,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "state_view_dynamic_modifier_entry"
 		size = { width = 40 height = 47 }
+		position = { x = 0 y = -4 }
 		clipping = no
 		
 		iconType = {
@@ -823,7 +890,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "flag"
-			position = { x = 25 y = 25 }
+			position = { x = 23 y = 23 }
 			quadTextureSprite ="GFX_mapicon_unit_flag_stripe"
 			orientation = "UPPER_LEFT"
 		}
