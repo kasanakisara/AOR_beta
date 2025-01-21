@@ -112,11 +112,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_CHI_yunguixiongshi.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_CHI_gemintongyizhixi"
-		texturefile = "gfx/interface/ideas/idea_CHI_gemintongyizhixi.dds"
+		name = "GFX_idea_CHI_gemingtongyizhixi"
+		texturefile = "gfx/interface/ideas/idea_CHI_gemingtongyizhixi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_zuguoguangfuzhixi"
-		texturefile = "gfx/interface/ideas/idea_CHI_gemintongyizhixi.dds"
+		texturefile = "gfx/interface/ideas/idea_CHI_gemingtongyizhixi.dds"
 	}
 }

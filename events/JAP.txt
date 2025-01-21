@@ -83,13 +83,13 @@ country_event = {
 		}
 		KMT = {
 			swap_ideas={
-				remove_idea = CHI_gemintongyizhixi
+				remove_idea = CHI_gemingtongyizhixi
 				add_idea = CHI_zuguoguangfuzhixi
 			}
 		}
 		UPC = {
 			swap_ideas={
-				remove_idea = CHI_gemintongyizhixi
+				remove_idea = CHI_gemingtongyizhixi
 				add_idea = CHI_zuguoguangfuzhixi
 			}
 		}

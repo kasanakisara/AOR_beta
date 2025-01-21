@@ -1480,7 +1480,7 @@ USA_civil_war_west_1 = {
 
 USA_civil_war_east = {
 	USU = {
-		add_ideas = CHI_gemintongyizhixi
+		add_ideas = CHI_gemingtongyizhixi
 		add_ideas = PRC_The_great_red_army
 			transfer_state = 396
 			transfer_state = 816

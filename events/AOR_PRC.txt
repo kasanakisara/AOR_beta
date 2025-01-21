@@ -98,7 +98,7 @@ country_event = {#红军南下云贵
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
-            add_ideas = CHI_gemintongyizhixi
+            add_ideas = CHI_gemingtongyizhixi
 			}
 	    }
     option = {
@@ -109,7 +109,7 @@ country_event = {#红军南下云贵
                     target = UPC
                     type = civil_war
                 } 
-            add_ideas = CHI_gemintongyizhixi
+            add_ideas = CHI_gemingtongyizhixi
 			}
 	    }
     }
