@@ -1625,6 +1625,7 @@ country_event = {
 	option = {
 		name = CHI.43.a
 		news_event = {id=AOR_news.130}
+		news_event = { days = 30  id = AOR_news.48 }
 		add_manpower = -500
 	}
 }
