@@ -6,6 +6,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			12128 10
+		}
 		owner = URS
 		buildings = {
 			infrastructure = 2

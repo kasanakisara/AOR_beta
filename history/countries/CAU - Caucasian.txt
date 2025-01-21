@@ -168,14 +168,4 @@ create_country_leader = {
 }
 
 
-create_country_leader = {
-	name = "Grigory Ordzhonikidze"
-	desc = ""
-	picture = "a1u32-zjj28.dds"
-	expire = "1939.1.16"
-	ideology = leninism
-	traits = {
-		exiled
-		union_man
-	}
-}
+

@@ -7,6 +7,9 @@ state={
 	state_category = town
 
 	history={
+		victory_points = {
+			707 5
+		}
 		owner = AUS
 		buildings = {
 			infrastructure = 1

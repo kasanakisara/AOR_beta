@@ -188,23 +188,59 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 		fire_only_once = yes
 		days_remove = 1
 		remove_effect = {
-			CAU = {
-				create_country_leader = {
-					name = "谢尔戈·奥尔忠尼启则"
-					picture = "a1u32-zjj28.dds"
-					expire = "1965.1.1"
-					ideology = leninism
-					traits = { SOV_Industrial_leaders}
-				}
-				start_civil_war = {
-					ruling_party = marxism
-					ideology = Absolutism
-					size = 0.1
-					capital = 231
-					states = { 827 828 821 232 }
-					keep_unit_leaders = { }
-				}
+			CSU = {
+				transfer_state = 232
+				transfer_state = 229
+				transfer_state = 821
+				add_manpower = 10000
+					declare_war_on = {
+						target = CAU
+						type = civil_war
+					}
+					if = {
+						limit = { NOT = { has_template = "Common Militia" } }
+						division_template = {
+							priority = 0
+							name = "Common Militia"
+							regiments = {
+								infantry = { x = 0 y = 0 } 
+								infantry = { x = 0 y = 1 } 
+								infantry = { x = 1 y = 0 } 
+								infantry = { x = 1 y = 1 } 
+							}
+							support = {}
+						}
+						random_controlled_state = {
+							limit = { is_capital = yes }
+							create_unit = {
+								division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"Capial Militia 2nd\" division_template = \"Common Militia\" start_experience_factor = 0.4 start_equipment_factor = 1"
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"Capial Militia 3rd\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"Capial Militia 4th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"Capial Militia 5th\" division_template = \"Common Militia\" start_experience_factor = 0.3 start_equipment_factor = 1"
+								owner = PREV
+							}
+							create_unit = {
+								division = "name = \"Common Militia\" division_template = \"Common Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+								owner = PREV
+								count = 20
+							}
+						}
+					}
 			}
+			add_to_faction = CSU
 		}
 	}
 	
@@ -217,12 +253,8 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 					is_core_of = CAU
 					is_controlled_by = RUS
 				}
-				CAU = {
+				CSU = {
 					has_goverment = marxism
-					has_country_leader = {
-						name = "谢尔戈·奥尔忠尼启则"
-						ruling_only = yes
-					}
 				}
 			}
 		}
@@ -250,12 +282,12 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 					}
 				}
 				set_autonomy = { target = CAU autonomy_state = AOR_SOV_Closely_executed_alliance }
-				CAU = { RUS = { RUS_give_gun_licences = yes } }
+				CSU = { RUS = { RUS_give_gun_licences = yes } }
 			}
 			custom_effect_tooltip = AOR_GER_Newline_tt
-			CAU = { set_cosmetic_tag =  RUS_cosmetic_tag_gaojiasuo }
+			CSU = { set_cosmetic_tag =  RUS_cosmetic_tag_gaojiasuo }
 			hidden_effect = {
-				CAU = { set_popularities = { Marxism = 100 } }
+				CSU = { set_popularities = { Marxism = 100 } }
 			}
 		}
 	}
