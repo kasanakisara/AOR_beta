@@ -49,9 +49,12 @@ focus_tree={
 			date > 1919.8.27
 		}
 		completion_reward={
+			custom_effect_tooltip = USA_ASanFrancisco
+			hidden_effect = {
 			country_event={
 				id = USA.10002
-			}
+			    }
+		    }
 		}
 	}
 	focus={
@@ -213,8 +216,11 @@ focus_tree={
 			date > 1919.8.23
 		}
 		completion_reward={
+		    custom_effect_tooltip = USA_AIntelligenceStation
+			hidden_effect = {
 			country_event={
 				id = USA.10006
+			    }
 			}
 		}
 	}

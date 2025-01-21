@@ -534,6 +534,12 @@ country_event = {
 				type = take_state
 			} 
 		}
+		TUN = {
+			declare_war_on = { 
+				target = LBA
+				type = take_state
+			} 
+		}
 		LBA = {
 			add_ideas = CHI_zuguoguangfuzhixi
 			load_oob = "AOR_LAND_LBA"
