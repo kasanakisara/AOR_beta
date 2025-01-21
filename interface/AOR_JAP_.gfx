@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/JAP_idea_JAP_misao.png"
 	}
 	spriteType = {
+		name = "GFX_idea_JAP_misao2"
+		texturefile = "gfx/interface/ideas/JAP_idea_JAP_misao.png"
+	}
+	spriteType = {
 		name = "GFX_idea_JAP_lixian"
 		texturefile = "gfx/interface/ideas/JAP_lixian.png"
 	}

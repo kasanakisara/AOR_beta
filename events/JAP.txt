@@ -666,11 +666,15 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = JAP
-		date > 1919.11.1
+		date > 1919.11.15
 		}
 	option = {
 		name = JAP.14.a
 		news_event = {id = AOR_news.47}
+		swap_ideas={
+			remove_idea = JAP_misao
+			add_idea = JAP_misao2
+	   }
 	}
 }
 

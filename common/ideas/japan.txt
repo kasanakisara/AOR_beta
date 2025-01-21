@@ -86,6 +86,17 @@ ideas = {
 			}
 		}
 
+		JAP_misao2 = {
+			picture = GFX_idea_JAP_misao2
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.1
+			line_change_production_efficiency_factor = -0.05
+	        production_speed_industrial_complex_factor = -0.05
+	        production_speed_synthetic_refinery_factor = -0.05
+			}
+		}
+
 		state_shintoism = {
 			allowed = {
 				always = no
