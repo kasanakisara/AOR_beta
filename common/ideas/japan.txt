@@ -7,7 +7,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = 0.1
-		    stability_weekly = 0.005
+		    stability_weekly = 0.001
 			war_support_factor = -0.30
 			}
 		}

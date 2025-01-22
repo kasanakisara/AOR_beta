@@ -599,7 +599,7 @@ country_event = {
 		USA_civil_war_west = yes
 		}
 		swap_ideas={
-			 remove_idea = USA_kuangyezhidi
+			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
 		}
 		US1 = {
