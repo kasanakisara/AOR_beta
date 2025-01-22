@@ -16,6 +16,15 @@ state={
 		victory_points = {
 			11415 10
 		}
+		victory_points = {
+			375 10
+		}
+		victory_points = {
+			11505 10
+		}
+		victory_points = {
+			478 2
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 5
@@ -25,14 +34,6 @@ state={
 		}
 		add_core_of = GER
 
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				anti_air_building = 5
-				arms_factory = 10
-				industrial_complex = 7
-			}
-		}
 	}
 
 	provinces={
