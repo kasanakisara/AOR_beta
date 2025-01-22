@@ -63,6 +63,12 @@ guiTypes = {
 				spriteType = "GFX_political_chart"
 				position = { x = 28 y = 5 }
 			}
+
+			iconType = {
+				name = "pol_translator"
+				spriteType = "GFX_pol_translator"
+				position = { x = -20 y = 0 }
+			}
 			
 #			iconType ={
 #				name ="pol_view_bg"
