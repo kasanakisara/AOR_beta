@@ -872,6 +872,24 @@ country_event = {
 		news_event = {id=AOR_news.157}
 	}	
 }
+country_event = {
+	id = USA.104 #向维克斯堡进军！
+	title = USA.104.t
+	desc = USA.104.d
+	picture = GFX_USA_event_104
+	trigger = {
+		tag = CSA
+		USA = { 
+			has_war_with = CSA
+			owns_state = 368
+		}
+	}
+	is_triggered_only = No
+	fire_only_once = yes
+	option = {
+		name=USA.104.a
+	}	
+}
 
 country_event = {
 	id = USA.111 #美国内战北方胜利（北方）
@@ -1565,12 +1583,12 @@ country_event = {
         name = USA.10007.a
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = -300
+			amount = -500
 			producer = USA	
 		}
 		add_equipment_to_stockpile = {
 			type = support_equipment
-			amount = -100
+			amount = -200
 			producer = USA	
 		}
 	
