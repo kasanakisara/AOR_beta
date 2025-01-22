@@ -1,13 +1,20 @@
 spriteTypes = {
-	
+
 	spriteType = {
 		name = "GFX_faction_icon_generic"
 		texturefile = "gfx/interface/faction_icon/faction_icon_generic.dds"
 	}
+
+	spriteType = {
+		name = "GFX_faction_icon_generic"
+		texturefile = "gfx/interface/faction_icon/faction_icon_generic.dds"
+	}
+
 	spriteType = {
 		name = "GFX_BOP_background"
 		texturefile = "gfx/interface/BOP_background.dds"
 	}
+
 	corneredTileSpriteType = {
 		name = "GFX_absolute_nothing_border"
 		size= { x=192 y=192 }
@@ -613,6 +620,11 @@ spriteTypes = {
 		name = "GFX_leader_marshal_unknown"
 		textureFile = "gfx/leaders/leader_marshal_unknown.dds"
 		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_pol_translator"
+		textureFile = "gfx/interface/pol_translator.png"
 	}
 
 	pieChartType = {

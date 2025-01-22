@@ -423,7 +423,7 @@ guiTypes = {
 					name = "spirit_title"
 					position = { x = 0 y = 0 }
 					font = "hoi_18mbs"
-					borderSize = {x = 0 y = 0}
+					borderSize = {x = 30 y = -1}
 					text = "FE_COUNTRY_SPIRIT"
 					maxWidth = 240
 					maxHeight = 30
@@ -787,7 +787,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "diplomacy_title"
-			position = { x = 45 y = 22 }
+			position = { x = 165 y = 13 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}

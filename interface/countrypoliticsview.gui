@@ -26,7 +26,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 45 y = 8 }
+			position = { x = 70 y = 12 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -62,6 +62,12 @@ guiTypes = {
 				name = "chart"
 				spriteType = "GFX_political_chart"
 				position = { x = 28 y = 5 }
+			}
+
+			iconType = {
+				name = "pol_translator"
+				spriteType = "GFX_pol_translator"
+				position = { x = -20 y = 0 }
 			}
 			
 #			iconType ={
