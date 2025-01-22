@@ -787,7 +787,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "diplomacy_title"
-			position = { x = 55 y = 12 }
+			position = { x = 165 y = 13 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
