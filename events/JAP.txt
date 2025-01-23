@@ -139,7 +139,8 @@ country_event = {
 			}
 		}
 		KOR = {
-			drop_cosmetic_tag = yes
+			set_politics = {ruling_party = FRE_democratic }
+			set_cosmetic_tag = KOR_1
 			annex_country = { 
 				target = PYO 
 				transfer_troops = no 
@@ -152,6 +153,10 @@ country_event = {
 			transfer_state = 819
 			transfer_state = 852
 			transfer_state = 619
+
+			create_faction = kmt_mingzhu_Union
+			add_to_faction = KMT
+			white_peace = KMT
 		}
 	}
 }
@@ -372,7 +377,8 @@ country_event = {
 			}
 		}
 		KOR = {
-			drop_cosmetic_tag = yes
+			set_politics = {ruling_party = FRE_democratic }
+			set_cosmetic_tag = KOR_1
 			annex_country = { 
 				target = PYO 
 				transfer_troops = no 
@@ -385,6 +391,10 @@ country_event = {
 			transfer_state = 819
 			transfer_state = 852
 			transfer_state = 619
+
+			create_faction = upc_mingzhu_Union
+			add_to_faction = UPC
+			white_peace = UPC
 		}
 	}
 }
