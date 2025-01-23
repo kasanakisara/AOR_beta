@@ -54,11 +54,11 @@ division_template={
 division_template={
                 name="美国海军陆战队陆战旅"
                 regiments={
-                    marines = {x=0 y=0}
-                    marines = {x=0 y=1}
-                    marines = {x=0 y=2}
-                    marines = {x=1 y=0}
-                    marines = {x=1 y=1}
+                    marine = {x=0 y=0}
+                    marine = {x=0 y=1}
+                    marine = {x=0 y=2}
+                    marine = {x=1 y=0}
+                    marine = {x=1 y=1}
                 }
 }
 
