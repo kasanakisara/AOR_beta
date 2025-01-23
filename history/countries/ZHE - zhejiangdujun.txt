@@ -45,7 +45,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "lu_yong_xiang"
-	picture = GFX_portrait_lu_yong_xiang
+	picture = "gfx/leaders/CHI/lu_yong_xiang.png"
 	expire = "1965.1.1"
 	ideology = miliciagov
 	traits = { 

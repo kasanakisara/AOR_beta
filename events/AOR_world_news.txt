@@ -1251,6 +1251,9 @@ news_event = { #民国新时代
 	option = {
 		name = AOR_news.65.a
 	}
+	option = {
+		name = AOR_news.65.b
+	}
 }
 news_event = { #庚申新年
 	id = AOR_news.66

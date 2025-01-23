@@ -112,8 +112,8 @@ set_politics = {
 set_popularities = {
 	CON_democratic = 34 #迪克西党
 	FRE_democratic = 44 #扬基党
-	SOC_democratic = 10 #社民
-	PAR_socialism = 4 #温和社
+	SOC_democratic = 10 #社
+	PAR_socialism = 4 #联邦统一党
 	AUT_democratic = 8 #迪克西-强硬派
 
 }
