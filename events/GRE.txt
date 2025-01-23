@@ -188,6 +188,9 @@ country_event = {#自卫成功
 
 		GRE = {
 			country_event = {days = 45 id = GRE.5}
+			set_capital = {
+				state = 797
+			}
 		}
 		
 	}

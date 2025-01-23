@@ -68,11 +68,11 @@ characters = {
 		name= "Mustafa Kemal"
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/KAMEL.dds"
+				large="gfx/leaders/TUR/TUR_KAMEL.dds"
 			}
 		}
 		country_leader={
-			ideology = revolutionism
+			ideology = Leftmilitarism
 			desc = "TUR_KAMEL_DESC"
 			traits={  }
 			expire="1965.1.1.1"
