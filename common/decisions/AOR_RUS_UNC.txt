@@ -281,7 +281,7 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 						add_state_core = PREV
 					}
 				}
-				set_autonomy = { target = CAU autonomy_state = AOR_SOV_Closely_executed_alliance }
+				set_autonomy = { target = CSU autonomy_state = AOR_SOV_Closely_executed_alliance }
 				CSU = { RUS = { RUS_give_gun_licences = yes } }
 			}
 			custom_effect_tooltip = AOR_GER_Newline_tt

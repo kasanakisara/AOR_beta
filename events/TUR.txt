@@ -37,7 +37,8 @@ country_event = {
 		add_popularity = { ideology = Marxism popularity = 0.34 }
 		set_politics = {ruling_party = Marxism}
 		set_cosmetic_tag = TUR_MAX_1
-		
+		remove_ideas = Humiliation_before_death
+		remove_ideas = The_storm_is_gathering
 		
     }
 }
@@ -140,7 +141,7 @@ country_event = {
 	picture = GFX_AOR_news_178
 
 	fire_only_once = yes
-	mean_time_to_happen = { days = 5 }
+	mean_time_to_happen = { days = 7 }
 	trigger = {
 	    tag = TUR
 	    has_war_with = GRE
@@ -246,12 +247,13 @@ country_event = {
 		ai_chance = {
 			base = 33
 		}
-		add_popularity = { ideology = Fascism popularity = 0.20 }
-		add_popularity = { ideology = Marxism popularity = 0.20 }
-		set_politics = {ruling_party = Fascism}
-		country_event = {days = 6 id = TUR.8}
-		news_event = { id = AOR_news_TUR_ENV}#杰马尔帕夏政变
+	add_popularity = { ideology = Fascism popularity = 0.20 }
+	add_popularity = { ideology = Marxism popularity = 0.20 }
+	set_politics = {ruling_party = Fascism}
+	country_event = {days = 6 id = TUR.8}
+	news_event = { id = AOR_news_TUR_ENV}#杰马尔帕夏政变
 		}
+
 }
 
 country_event = { #苏丹的去与留？
