@@ -3,6 +3,12 @@ state = {
 	name = "STATE_839"
 
 	history = {
+		victory_points = {
+			11251 5
+		}
+		victory_points = {
+			332 5
+		}
 		owner = NSH
 		buildings = {
 			infrastructure = 4

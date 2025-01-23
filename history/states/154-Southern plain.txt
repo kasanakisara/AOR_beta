@@ -10,6 +10,15 @@ state = {
 		victory_points = {
 			3731 20
 		}
+		victory_points = {
+			11659 10 
+		}
+		victory_points = {
+			679 10 
+		}
+		victory_points = {
+			6670 5
+		}
 		owner = HUN
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -17,11 +26,7 @@ state = {
 			arms_factory = 1
 			air_base = 2
 		}
-		victory_points = {
-			11659 10 
-			679 10 
-			6670 5
-		}
+
 		add_core_of = HUN
 	}
 
