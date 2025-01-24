@@ -207,7 +207,7 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_World_Domination #世界争霸
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
 		prerequisite = {
 			focus = AOR_FRA_The_bright_place_of_progress
 		}
@@ -618,7 +618,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Liquidation_of_Germany #对德清算
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 		focus = AOR_FRA_The_bright_place_of_progress
 		}
@@ -639,7 +640,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Convene_a_compensation_conference
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Liquidation_of_Germany
 		}
@@ -655,7 +657,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Claiming_mineral_resources
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Convene_a_compensation_conference
 		}
@@ -671,7 +674,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Increase_the_demand_for_compensation
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Convene_a_compensation_conference
 		}
@@ -687,7 +691,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_An_eye_for_an_eye_a_tooth_for_a_tooth
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Claiming_mineral_resources
 		}
@@ -706,7 +711,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Wooing_members_of_the_treaty
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_World_Domination 
 		}
@@ -722,7 +728,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Encourage_Arab_issues
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Wooing_members_of_the_treaty
 		}
@@ -738,7 +745,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Stirring_Ireland
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Wooing_members_of_the_treaty
 		}
@@ -754,7 +762,8 @@ focus_tree = {
 	focus = {
 		id = AOR_FRA_Rooster_stands_proudly_at_the_top_of_the_world
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7
+		always = no
 		prerequisite = {
 			focus = AOR_FRA_Encourage_Arab_issues
 		}
