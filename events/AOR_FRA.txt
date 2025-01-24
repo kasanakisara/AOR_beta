@@ -54,6 +54,81 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = FRA.6 #法国批判
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1919.12.1
+	}
+
+	option = {
+		name = FRA.6.a
+		news_event = { id = AOR_news.204 }
+		country_event = { 
+			days = 7
+			id = FRA.7 
+		}
+	}
+}
+
+country_event = {
+	id = FRA.7 #英国还击
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.7.a
+		country_event = { id = FRA.8 }
+	}
+}
+
+country_event = {
+	id = FRA.8 #英国还击
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.8.a
+		country_event = {
+			id = FRA.9
+			days = 20
+		}
+	}
+}
+
+country_event = {
+	id = FRA.9 #法国通过法案
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.9.a
+		news_event = { id = AOR_news.205 }
+		if = {
+			limit = {
+				is_faction_with
+			}
+		}
+		country_event = {
+			id = FRA.10
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = FRA.10 #协约国解散
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.9.a
+		news_event = { id = AOR_news.206 }
+	}
+}
+
 country_event = { #给巴西志愿军
 	id = FRA_BRA.1
 
@@ -100,7 +175,5 @@ country_event = {
 
 	option = {
 		name = FRA_USA.1.a
-
-
 	}
 }
