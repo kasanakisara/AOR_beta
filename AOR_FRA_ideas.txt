@@ -42,7 +42,7 @@ ideas = {
 				compliance_growth = 0.02
 				trade_laws_cost_factor = -0.3
 				resistance_growth = -0.03
-				trade_opinion_factor = 10
+				trade_opinion_factor = 0.5
 
 			}
 		}
@@ -58,8 +58,8 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-		AOR_FRA_Transforming_military_attire_into_workwear = { #拖下戎装，穿上工装
-			picture = GFX_AOR_goal_FRA_Workers_New_Francen
+		AOR_FRA_Transforming_Military_Attire_Into_Workwear = { #拖下戎装，穿上工装
+			picture = GFX_AOR_goal_FRA_Transforming_Military_Attire_Into_Workwear
 
 			modifier = {
 				production_speed_buildings_factor = 0.1
@@ -89,7 +89,7 @@ ideas = {
 			}
 		}
 		AOR_FRA_The_Revival_of_France = { #复兴的法兰西
-			picture = GFX_AOR_goal_FRA_Interactions_from_all_directions
+			picture = GFX_AOR_goal_FRA_The_Revival_of_France
 
 			modifier = {
 				stability_factor = 0.05
@@ -100,6 +100,38 @@ ideas = {
 				economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.1
 				theorist_cost_factor = -0.1
+			}
+		}
+		AOR_FRA_The_Third_Republic = { #第三共和国
+			picture = GFX_AOR_goal_FRA_The_Third_Republic
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				FRE_democratic_drift = 0.01
+				CON_democratic_drift = 0.01
+			}
+		}
+		AOR_FRA_The_Shadow_of_the_world_war = { #世界大战的胜利者
+			picture = GFX_AOR_goal_FRA_The_shadow_of_the_world_war
+
+			modifier = {
+				war_support_factor = -0.5
+				training_time_army_factor = 0.5
+				experience_gain_army_factor = -0.75
+				experience_gain_navy_factor = -0.75
+				experience_gain_air_factor = -0.75
+			}
+		}
+		AOR_FRA_A_Growing_Social_Crisis = { #愈演愈烈的社会危机
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.15
+				Marxism_drift = 0.01
+				Facism_drift =0.01
 			}
 		}
 	}
