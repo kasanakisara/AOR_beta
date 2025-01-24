@@ -1,37 +1,37 @@
 ideas = {
 	country = {
-		AOR_FRA_The_Age_of_Clemenceau = { #克里蒙梭时代
-			picture = GFX_AOR_goal_FRA_The_Age_of_Clemenceau
-			
-			modifier = {
-				stability_factor = 0.05
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = 0.05
-				war_support_factor = 0.1
-			}
-
-		}
-
-		AOR_FRA_Fear_Chaos_Crisis = { #恐惧，混乱与危机
-			picture = GFX_AOR_goal_FRA_Fear_Chaos_Crisis
+		AOR_FRA_The_Third_Republic = { #第三共和国
+			picture = GFX_AOR_goal_FRA_The_Third_Republic
 
 			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.15
-				surrender_limit = -0.5
-				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				FRE_democratic_drift = 0.01
+				CON_democratic_drift = 0.01
 			}
 		}
 
-		AOR_FRA_Workers_Hymn = { #工人赞美诗
-			picture = GFX_AOR_goal_FRA_Workers_Hymn
+		AOR_FRA_The_Shadow_of_the_world_war = { #世界大战的胜利者
+			picture = GFX_AOR_goal_FRA_The_shadow_of_the_world_war
 
 			modifier = {
-				production_speed_buildings_factor = -0.1
-				stability_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_max_efficiency_factor = -0.05
+				war_support_factor = -0.5
+				training_time_army_factor = 0.5
+				experience_gain_army_factor = -0.75
+				experience_gain_navy_factor = -0.75
+				experience_gain_air_factor = -0.75
+			}
+		}
+
+		AOR_FRA_A_Growing_Social_Crisis = { #愈演愈烈的社会危机
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.15
+				Marxism_drift = 0.01
+				Facism_drift =0.01
 			}
 		}
 
@@ -47,17 +47,6 @@ ideas = {
 			}
 		}
 
-		AOR_FRA_Sunset_Winner = { #胜者日暮
-			picture = GFX_AOR_goal_FRA_Sunset_Winner
-
-			modifier = {
-				war_support_factor = -0.1
-				navy_org_factor = -0.05
-				stability_factor = 0.05
-				political_power_gain = 0.1
-				consumer_goods_factor = 0.05
-			}
-		}
 		AOR_FRA_Transforming_Military_Attire_Into_Workwear = { #拖下戎装，穿上工装
 			picture = GFX_AOR_goal_FRA_Transforming_Military_Attire_Into_Workwear
 
@@ -100,38 +89,6 @@ ideas = {
 				economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.1
 				theorist_cost_factor = -0.1
-			}
-		}
-		AOR_FRA_The_Third_Republic = { #第三共和国
-			picture = GFX_AOR_goal_FRA_The_Third_Republic
-
-			modifier = {
-				political_power_factor = 0.1
-				stability_factor = 0.1
-				FRE_democratic_drift = 0.01
-				CON_democratic_drift = 0.01
-			}
-		}
-		AOR_FRA_The_Shadow_of_the_world_war = { #世界大战的胜利者
-			picture = GFX_AOR_goal_FRA_The_shadow_of_the_world_war
-
-			modifier = {
-				war_support_factor = -0.5
-				training_time_army_factor = 0.5
-				experience_gain_army_factor = -0.75
-				experience_gain_navy_factor = -0.75
-				experience_gain_air_factor = -0.75
-			}
-		}
-		AOR_FRA_A_Growing_Social_Crisis = { #愈演愈烈的社会危机
-			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
-
-			modifier = {
-				stability_factor = -0.05
-				consumer_goods_factor = 0.35
-				industrial_capacity_factory = -0.15
-				Marxism_drift = 0.01
-				Facism_drift =0.01
 			}
 		}
 	}
