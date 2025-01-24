@@ -258,13 +258,13 @@ units={
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第三特遣骑兵师"
-        location=4860
-        division_template="西部特遣骑兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
+    #division={
+       #name="第三特遣骑兵师"
+        #location=4860
+        #division_template="西部特遣骑兵师"
+       #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
     division={
         name="第四特遣骑兵师"
         location=1747
@@ -272,54 +272,54 @@ units={
         start_experience_factor=0.2
         start_equipment_factor=1
     }
-    division={
-        name="第五特遣骑兵师"
-        location=10672
-        division_template="西部特遣骑兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
+    #division={
+        #name="第五特遣骑兵师"
+        #location=10672
+        #division_template="西部特遣骑兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
 
-    division={
-        name="第一特遣师"
-        location=9671
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-     division={
-        name="第二特遣师"
-        location=9713
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-     division={
-        name="第三特遣师"
-        location=9616
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-     division={
-        name="第四特遣师"
-        location=7315
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-     division={
-        name="第五特遣师"
-        location=4736
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
-     division={
-        name="第六特遣师"
-        location=4865
-        division_template="西部特遣步兵师"
-        start_experience_factor=0.2
-        start_equipment_factor=1
-    }
+    #division={
+        #name="第一特遣师"
+        #location=9671
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+   #}
+     #division={
+        #name="第二特遣师"
+        #location=9713
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
+     #division={
+        #name="第三特遣师"
+        #location=9616
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
+     #division={
+        #name="第四特遣师"
+        #location=7315
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
+     #division={
+        #name="第五特遣师"
+        #location=4736
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
+     #division={
+        #name="第六特遣师"
+        #location=4865
+        #division_template="西部特遣步兵师"
+        #start_experience_factor=0.2
+        #start_equipment_factor=1
+    #}
 }

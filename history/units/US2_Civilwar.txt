@@ -36,6 +36,24 @@ division_template={
     }
 }
 
+division_template={
+    name="西部特遣骑兵师留守部队"
+    regiments={
+        cavalry = {x=0 y=0}
+        cavalry = {x=0 y=1}
+        cavalry = {x=0 y=2}
+        motorized = {x=3 y=0}
+
+    }
+    support = {
+         engineer = {x=0 y=0}
+         camelry = {
+             x = 0
+             y = 1
+         }
+    }
+}
+
 units={
 
     division={
@@ -81,16 +99,16 @@ units={
         start_equipment_factor=1
     }
 	division={
-        name="第一特遣骑兵师"
+        name="第一特遣骑兵师留守部队"
         location=9671
-        division_template="西部特遣骑兵师"
+        division_template="西部特遣骑兵师留守部队"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
-        name="第二特遣骑兵师"
+        name="第二特遣骑兵师留守部队"
         location=9671
-        division_template="西部特遣骑兵师"
+        division_template="西部特遣骑兵师留守部队"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
@@ -102,9 +120,9 @@ units={
         start_equipment_factor=1
     }
     division={
-        name="第四特遣骑兵师"
+        name="第四特遣骑兵师留守部队"
         location=9671
-        division_template="西部特遣骑兵师"
+        division_template="西部特遣骑兵师留守部队"
         start_experience_factor=0.2
         start_equipment_factor=1
     }

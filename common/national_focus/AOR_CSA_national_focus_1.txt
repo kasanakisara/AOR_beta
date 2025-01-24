@@ -212,6 +212,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 300
 			swap_ideas={
 				remove_idea = Oil_Heaven_1
 				add_idea = Oil_Heaven_2
