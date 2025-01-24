@@ -132,7 +132,7 @@ CSA_Civil_War_Resolution_civilian = {
         allowed = {
 			original_tag = CSA
 		}
-        days_remove = 90
+        days_remove = 100
         ai_will_do = {
             factor = 0.5
         }
