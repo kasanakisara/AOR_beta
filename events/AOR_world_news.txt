@@ -2984,3 +2984,42 @@ news_event = { #美国公布新一轮反布尔什维克计划
 		name = AOR_news.203.a
 	}
 }
+
+news_event = { #法国批判
+	id = AOR_news.204
+	title = AOR_news.204.t
+	desc = AOR_news.204.d
+	picture = GFX_AOR_news.204_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.204.a
+	}
+}
+
+news_event = { #法国通过法案
+	id = AOR_news.205
+	title = AOR_news.205.t
+	desc = AOR_news.205.d
+	picture = GFX_AOR_news.205_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.205.a
+	}
+}
+
+news_event = { #协约国解散
+	id = AOR_news.206
+	title = AOR_news.206.t
+	desc = AOR_news.206.d
+	picture = GFX_AOR_news.206_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.206.a
+	}
+}
