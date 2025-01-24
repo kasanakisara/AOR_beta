@@ -1,10 +1,15 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
+
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_after_the_war"
+		texturefile = "gfx/interface/goals/AOR_FRA_after_the_war.png"			
+	}	
 	
 	SpriteType = {
-	name = "GFX_BEL_LB"
-	texturefile = "gfx/interface/goals/BEL_LB.dds"			
+		name = "GFX_BEL_LB"
+		texturefile = "gfx/interface/goals/BEL_LB.dds"			
 	}	
 	
 	SpriteType = {

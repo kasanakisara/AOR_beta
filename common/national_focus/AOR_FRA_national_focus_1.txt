@@ -14,7 +14,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_after_the_war #大战之后
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AOR_FRA_after_the_war
 		cost = 0.00
 		x = 16
 		y = 0
