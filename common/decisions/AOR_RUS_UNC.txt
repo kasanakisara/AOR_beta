@@ -241,6 +241,9 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 					}
 			}
 			add_to_faction = CSU
+			ARU = {
+				add_to_faction = CAU
+			}
 		}
 	}
 	
@@ -782,6 +785,7 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 			ARU = { exists = no }
 			ARR = { exists = no }
 			ARN = { exists = no }
+			CAU = { exists = no }
 			has_country_flag = RUS_flag_soviet_union_1
 			#has_country_flag = RUS_flag_soviet_union_3
 			has_country_flag = RUS_flag_soviet_union_4
@@ -811,6 +815,20 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 			add_stability = 0.05
 			add_war_support = 0.10
 			custom_effect_tooltip = AOR_GER_Newline_tt
+			annex_country = {
+				target = GNR
+				transfer_troops = YES
+			}
+			annex_country = {
+				target = URS
+				transfer_troops = YES
+			}
+			add_core_of = 407
+			add_core_of = 652
+			add_core_of = 406
+			add_core_of = 214
+			add_core_of = 215
+			add_core_of = 213
 			#看着玩的，实际不生效
 			effect_tooltip = {
 				custom_effect_tooltip = AOR_GER_Newline_tt

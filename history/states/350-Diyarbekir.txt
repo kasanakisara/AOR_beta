@@ -21,22 +21,11 @@ state={
 			arms_factory = 1
 
 		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			add_core_of = TUR
-			add_claim_by = SYR
-			add_claim_by = KUR
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = TUR
-			add_claim_by = SYR
-			add_claim_by = KUR
-		}
+
+		add_core_of = TUR
+		add_claim_by = SYR
+		add_claim_by = KUR
+		
 	}
 
 	provinces={

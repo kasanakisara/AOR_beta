@@ -427,3 +427,37 @@ news_event = {  #萨博胜出，匈牙利农民共和国
 		name = HUN_news_szabo.a
 	}
 }
+
+country_event = {
+	id = HUN.DAL #达尔马提亚问题
+	title = HUN.DAL.t
+	desc = HUN.DAL.d
+	picture = GFX_events_HUN_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+    #我们必须保护达尔马提亚
+	option = {
+		name = HUN.DAL.a
+				DAL = add_manpower = 5000
+				add_war_support = 0.1
+				add_manpower = -5000
+				give_guarantee = DAL
+				news_event = {id = HUN_news_DAL}
+}
+}
+
+news_event = {  #匈牙利介入达尔马提亚问题
+	id = HUN_news_DAL
+	title = HUN_news_DAL.t
+	desc = HUN_news_DAL.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = HUN_news_DAL.a
+	}
+}

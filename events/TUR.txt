@@ -153,6 +153,11 @@ country_event = {
 		name = TUR.6.a
 		ai_chance = { factor = 100 }
 		hidden_effect = {
+			TUR = {
+				declare_war_on = {
+					target = annex_everything
+				}
+			}
 			KUR = {
 				transfer_state = 352
 				transfer_state = 353
@@ -160,6 +165,7 @@ country_event = {
 				add_manpower = 10000
 				declare_war_on = {
 					target = TUR
+					type = annex_everything
 				}
 				if = {
 					limit = { NOT = { has_template = "Common Militia" } }

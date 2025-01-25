@@ -116,65 +116,7 @@ set_convoys = 10
 set_stability = 0.55
 add_command_power = 20
 
-1939.1.1 = {
-
-	add_political_power = 1197
-	add_command_power = 100
-	
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-}
+load_oob = "FRA_1919"
 
 set_politics = {
 	ruling_party = SOC_democratic
@@ -194,11 +136,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	AOR_FRA_The_Age_of_Clemenceau
-	AOR_FRA_Fear_Chaos_Crisis
-	AOR_FRA_Workers_Hymn
 	AOR_FRA_World_owner
-	AOR_FRA_Sunset_Winner
+	AOR_FRA_The_Third_Republic
+	AOR_FRA_The_Shadow_of_the_world_war
+	AOR_FRA_A_Growing_Social_Crisis
 }
 
 
