@@ -3,7 +3,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		visible = {
+		available = {
 			original_tag = ITA
 			has_full_control_of_state = 451
 			has_full_control_of_state = 663
@@ -29,7 +29,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		visible = {
+		available = {
 			original_tag = ITA
 			has_war = no
 			time < 1925.1.1
@@ -71,36 +71,35 @@ ITA_AMBITIOIN = {
 		icon = GFX_decision_ship
 		
 		available = {
-					original_tag = ITA
-					has_war = no
-					time < 1925.1.1
-					DAL = {
-						exists = yes	
-					}
-					HUN= {
-						is_in_faction = no
-					}
-				}
-	    		visible = {
-					YUG = { has_country_flag = YUG_cooperate_with_ITA }
+			original_tag = ITA
+			has_war = no
+			time < 1925.1.1
+			DAL = {
+				exists = yes	
 			}
+			HUN= {
+				is_in_faction = no
+				}
+			}
+	    visible = {
+			YUG = { has_country_flag = YUG_cooperate_with_ITA }
+		}
 		
-				cost = 0
+		cost = 0
 		
-				fire_only_once = yes
-				days_remove = 7
-				remove_effect = {
-					start_border_war = {
-						change_state_after_war = yes
-						attacker = { 342 }
-						defender = { 157 }
-					}
-					YUG = {
-						annex_country = DAL
-						transfer_troops = yes
-					}
-					
-					}
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = { 342 }
+				defender = { 157 }
+			}
+			YUG = {
+				annex_country = DAL
+				transfer_troops = yes
+			}
+		}
 	}
 
 	ask_for_what_i_desrve_FIGHT_WITHout_YUG = {
@@ -108,36 +107,36 @@ ITA_AMBITIOIN = {
 		icon = GFX_decision_ship
 		
 		available = {
-					original_tag = ITA
-					has_war = no
-					time < 1925.1.1
-					DAL = {
-						exists = yes	
-					}
-					HUN= {
-						is_in_faction = no
-					}
-				}
-	    		visible = {
-					YUG = { has_country_flag = YUG_swallow_DAL }
-				}
+			original_tag = ITA
+			has_war = no
+			time < 1925.1.1
+			DAL = {
+				exists = yes	
+			}
+			HUN= {
+				is_in_faction = no
+			}
+		}
+	    visible = {
+			YUG = { has_country_flag = YUG_swallow_DAL }
+		}
 		
-				cost = 0
+		cost = 0
 		
-				fire_only_once = yes
-				days_remove = 7
-				remove_effect = {
-					start_border_war = {
-						change_state_after_war = yes
-						attacker = { 342 }
-						defender = { 157 }
-					}
-					YUG = {
-						annex_country = DAL
-						transfer_troops = yes
-					}
+		fire_only_once = yes
+		days_remove = 7
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+					attacker = { 342 }
+					defender = { 157 }
+				}
+				YUG = {
+					annex_country = DAL
+					transfer_troops = yes
 				}
 			}
+		}
 
 
 	wash_away_the_shame = {
@@ -153,7 +152,6 @@ ITA_AMBITIOIN = {
 				states = { 550 559 }
 			}
 			country_exists = ETH
-			
 		}
 
 		cost = 0
@@ -200,8 +198,7 @@ ITA_AMBITIOIN = {
 		add_claim_by = 805
 
 	}
-
-	}
+}
 
 	try_me_greeks = {
 		priority = 109
@@ -239,9 +236,8 @@ ITA_AMBITIOIN = {
 			attacker = { 342 }
 			defender = { 339 }
 		}
-
 	}
-	}
+}
 
 	trieste = {
 		priority = 109
@@ -300,7 +296,7 @@ no_more_marios = {
 		add_core_of = 847
 		annex_country = SMA
 		transfer_troops = yes
-}
+	}
 }
 
 	roma_and_roma = {
@@ -318,16 +314,15 @@ no_more_marios = {
 			time > 1924.2.1
 		}
 			
-
 		cost = 5
 
 		fire_only_once = yes
 		days_remove = 1
 		remove_effect = {
-		declare_war_on = {
-			target = GRE
-			type = civil_war
+			declare_war_on = {
+				target = GRE
+				type = civil_war
+			}
 		}
 	}
-}
 }
