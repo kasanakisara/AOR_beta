@@ -366,3 +366,56 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = Finland.6 #红芬兰打不过了
+	title = Finland.6.t
+	desc = Finland.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+		trigger = {
+			original_tag = FIC
+			surrender_progress > 0.6 
+			has_war_with = FIN
+			has_country_flag = FIN_civilwar
+		}
+
+		timeout_days = 7
+
+	option = { 
+		name = RUSSIANS_may_help_us 
+    	ai_chance = { add = 8 }
+	   	ARU = { add_to_faction = FIN }
+	    	FIN = {
+				add_to_war = {
+					targeted_alliance = ARU
+					enemy = RUS
+				}
+	    	}
+	    	RUS = { add_to_faction = FIC }
+	     	FIC = {
+       		add_to_war = {
+					targeted_alliance = RUS
+					enemy = ARU
+				}
+	    	}
+			news_event = { id = AOR_news.196 }
+	    }
+	option = { 
+		name = Russians_are_always_our_biggest_enemy
+        ai_chance = { add = 2 }
+	    	FIC = {
+	        	random_controlled_state = {
+					is_capital = yes
+				} = {
+	        		create_unit = {
+						division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = PREV
+						count = 2
+	    			}
+	        	}
+            }
+        }
+    }
