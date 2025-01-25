@@ -3,7 +3,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		visible = {
 			original_tag = ITA
 			has_full_control_of_state = 451
 			has_full_control_of_state = 663
@@ -29,7 +29,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		visible = {
 			original_tag = ITA
 			has_war = no
 			time < 1925.1.1
@@ -61,17 +61,16 @@ ITA_AMBITIOIN = {
 				id = YUG.DAL 
 				days = 1
 				random_hours = 12
-			}
-	     	}
-			}
-			
-			}
+				}
+	  	    }
+		}			
+	}
 
 	ask_for_what_i_desrve_FIGHT_WITH_YUG = {
 		priority = 109
 		icon = GFX_decision_ship
 		
-		allowed = {
+		available = {
 					original_tag = ITA
 					has_war = no
 					time < 1925.1.1
@@ -83,7 +82,7 @@ ITA_AMBITIOIN = {
 					}
 				}
 	    		visible = {
-			YUG = { has_country_flag = YUG_cooperate_with_ITA }
+					YUG = { has_country_flag = YUG_cooperate_with_ITA }
 			}
 		
 				cost = 0
@@ -108,7 +107,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 		
-		allowed = {
+		available = {
 					original_tag = ITA
 					has_war = no
 					time < 1925.1.1
@@ -120,9 +119,8 @@ ITA_AMBITIOIN = {
 					}
 				}
 	    		visible = {
-
-			YUG = { has_country_flag = YUG_swallow_DAL }
-			}
+					YUG = { has_country_flag = YUG_swallow_DAL }
+				}
 		
 				cost = 0
 		
@@ -138,16 +136,15 @@ ITA_AMBITIOIN = {
 						annex_country = DAL
 						transfer_troops = yes
 					}
-					
-					}
-	}
+				}
+			}
 
 
 	wash_away_the_shame = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		available = {
 			original_tag = ITA
 			has_war = no
 			time > 1921.1.1
@@ -178,7 +175,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		available = {
 			original_tag = ITA
 			has_war = no
 			country_exists = ALB
@@ -210,7 +207,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		available = {
 			original_tag = ITA
 			ITA = {
 			has_war = no
@@ -250,7 +247,7 @@ ITA_AMBITIOIN = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		available = {
 			original_tag = ITA
 			has_war = no
 		}
@@ -286,7 +283,7 @@ no_more_marios = {
 	priority = 109
 	icon = GFX_decision_ship
 
-	allowed = {
+	available = {
 		original_tag = ITA
 		has_war = no
 	}
@@ -310,7 +307,7 @@ no_more_marios = {
 		priority = 109
 		icon = GFX_decision_ship
 
-		allowed = {
+		available = {
 			original_tag = ITA
 			has_war = no
 			has_full_control_of_state = 805
