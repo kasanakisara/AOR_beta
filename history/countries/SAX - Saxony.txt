@@ -97,7 +97,8 @@ set_politics = {
 
 }
 set_popularities = {
-	PAR_socialism = 80
+	PAR_socialism = 70
+	SOC_democratic = 10
 	Absolutism = 10
 	Marxism = 10
 }

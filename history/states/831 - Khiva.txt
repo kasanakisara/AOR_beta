@@ -6,9 +6,12 @@ state = {
 	history = {
 	
 		victory_points = {
-			12465 1
+			12465 3
 		}
-		owner = TMS
+		victory_points = {
+			12324 1
+		}
+		owner = KHI
 		buildings = {
 			infrastructure = 2
 
@@ -20,7 +23,7 @@ state = {
 	}
 
 	provinces = {
-		 10395 10435 12324 12454 12465
+		1649 10395 10435 10485 12324 12454 12465
 	}
 	
 	manpower = 258430

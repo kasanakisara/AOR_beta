@@ -31,6 +31,19 @@ country_event = {
 				add_state_core = 859
 				add_state_core = 850
 				add_manpower = 10000
+				set_politics = {
+					ruling_party = FRE_democratic
+					last_election = "1919.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				
+				}
+				set_popularities = {
+					FRE_democratic = 90
+					Fascism = 00
+					Marxism = 10
+				}
+				recruit_character = RHI_E_D
 				        	}
 			FRA = {puppet = RHI}
 		 42 = { 
