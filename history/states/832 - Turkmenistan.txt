@@ -4,12 +4,16 @@ state = {
 
 	history = {
 	
-		owner = KHI
+		owner = TMS
 		
 		victory_points = {
-			1493 1
+			12333 10
 		}
-		
+
+		victory_points = {
+			7924 1
+		}
+
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -22,9 +26,9 @@ state = {
 	}
 
 	provinces = {
-		1493 1649 7618 10485
+	    1493 4482 4549 4958 5003 7491 7560 7618 7924 8099 10357 10414 10742 12333 12491
 	}
-	manpower = 133065
+	manpower = 733065
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

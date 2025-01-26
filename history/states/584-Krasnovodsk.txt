@@ -6,8 +6,8 @@ state = {
 	
 		owner = TCG
 		
-		victory_points = {
-			12333 10
+	    victory_points = {
+			4563 1
 		}
 		
 		buildings = {
@@ -21,9 +21,9 @@ state = {
 	}
 
 	provinces = {
-		756 1593 1632 4482 4549 4563 4599 4958 5003 7477 7491 7560 7563 7635 7924 8099 9605 10357 10359 10406 10414 10510 10742 12333 12359 12491 
+		1593 4563 4599 7477 7563 7635 10359 10406 10510 12359 
 	}
-	manpower = 931458
+	manpower = 331458
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 
