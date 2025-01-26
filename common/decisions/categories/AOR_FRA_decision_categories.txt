@@ -11,3 +11,13 @@ AOR_FRA_decision_category = { #法兰西外交
 	}
 	priority = 10
 }
+AOR_FRA_Fraternity_Alliance = { #博爱同盟
+	#icon = we are waiting for picture.
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_country_flag = FRA_flag_Fraternity_Alliance
+	}
+	priority = 9
+}
