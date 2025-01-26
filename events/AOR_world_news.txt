@@ -2985,7 +2985,7 @@ news_event = { #美国公布新一轮反布尔什维克计划
 	}
 }
 
-news_event = { #法国批判
+news_event = { #法国批判英国在爱尔兰问题上的举措
 	id = AOR_news.204
 	title = AOR_news.204.t
 	desc = AOR_news.204.d
@@ -2998,7 +2998,7 @@ news_event = { #法国批判
 	}
 }
 
-news_event = { #法国通过法案
+news_event = { #法国通过法案，授权向爱尔兰出售武器
 	id = AOR_news.205
 	title = AOR_news.205.t
 	desc = AOR_news.205.d
