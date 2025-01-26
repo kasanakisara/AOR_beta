@@ -126,6 +126,7 @@ add_civil_war_target = ARR
 
 add_civil_war_target = ARN
 
+add_civil_war_target = IUS
 
 
 #斯大林和伏龙芝
@@ -170,7 +171,7 @@ TMS = {
 	set_popularities = { Marxism = 100 }
 	create_country_leader = {
 		name = "Ryskulov Turar Ryskulovich"
-		picture = "GFX_portrait_Soviet_TMS"
+		picture = "tms.dds"
 		ideology = leninism
 	}
 }
