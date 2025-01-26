@@ -36,3 +36,242 @@ AOR_FRA_decision_categories = {
 		}
 	}
 }
+
+AOR_FRA_Fraternity_Alliance = { #博爱同盟
+	Independent_country_Strengthen_ties = { #独立国家-加强联系
+
+		allowed = {
+			tag = FRA
+		}
+		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
+		remove_effect = {
+			clr_country_flag = hxswoc
+			remove_opinion_modifier = { 
+				target = FROM
+				modifier = FRA_opinion_modifiers_Strengthen_ties
+			} 
+		}
+		cost = 0
+		days_remove = 10
+		days_re_enable = 180
+		available = {
+			NOT = {
+				has_country_flag = hswoc
+			}
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		#modifier = {
+		#	
+	   	#}
+
+		complete_effect = {  
+			set_country_flag = hswoc
+			add_opinion_modifier = { 
+				target = FROM 
+				modifier = FRA_opinion_modifiers_Strengthen_ties
+			}
+		}
+	}
+	Independent_country_Strengthen_trade = { #独立国家-加强贸易
+
+		allowed = {
+			tag = FRA
+		}
+		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
+		remove_effect = {
+			clr_country_flag = hxswoc
+			
+		}
+		cost = 0
+		days_remove = 10
+		days_re_enable = 180
+		available = {
+			NOT = {
+				has_country_flag = hswoc
+			}
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = 0.1
+			}
+			FROM = {
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = 0.1
+			}
+	   	}
+
+		complete_effect = {  
+			set_country_flag = hswoc
+			
+		}
+	}
+	Independent_country_Political_exchanges = { #独立国家-政治交流
+
+		allowed = {
+			tag = FRA
+		}
+		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
+		remove_effect = {
+			clr_country_flag = hxswoc
+			
+		}
+		cost = 0
+		days_remove = 10
+		days_re_enable = 180
+		available = {
+			NOT = {
+				has_country_flag = hswoc
+			}
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				political_power_factor = 0.1
+			}
+			FROM = {
+				political_power_factor = 0.1
+			}
+	   	}
+
+		complete_effect = {  
+			set_country_flag = hswoc
+			
+		}
+	}
+	Independent_country_war_game = { #独立国家-军事演习
+
+		allowed = {
+			tag = FRA
+		}
+		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
+		remove_effect = {
+			clr_country_flag = hxswoc
+			ROOT = {
+				random_list = {
+					1 = {
+						army_experience = 25
+					}
+					1 = {
+						navy_experience = 25
+					}
+					1 = {
+						air_experience = 25
+					}
+				}
+			}
+			FROM = {
+				random_list = {
+					1 = {
+						army_experience = 25
+					}
+					1 = {
+						navy_experience = 25
+					}
+					1 = {
+						air_experience = 25
+					}
+				}
+			}
+		}
+		cost = 0
+		days_remove = 10
+		days_re_enable = 180
+		available = {
+			NOT = {
+				has_country_flag = hswoc
+			}
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				experience_gain_army = 0.1
+				experience_gain_air = 0.1
+				experience_gain_navy = 0.1
+			}
+			FROM = {
+				experience_gain_army = 0.1
+				experience_gain_air = 0.1
+				experience_gain_navy = 0.1
+			}
+	   	}
+
+		complete_effect = {  
+			set_country_flag = hswoc
+			
+		}
+	}
+	Independent_country_technological_exchanges = { #独立国家-科技交流
+
+		allowed = {
+			tag = FRA
+		}
+		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
+		remove_effect = {
+			FROM = {
+				set_country_flag = FRA_technology_sharing_group_flag
+				add_to_tech_sharing_group = FRA_technology_sharing_group
+			}
+		}
+		cost = 0
+		days_remove = 10
+		days_re_enable = 180
+		available = {
+			
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			
+	   	}
+
+		complete_effect = {  
+			
+		}
+	}
+}
