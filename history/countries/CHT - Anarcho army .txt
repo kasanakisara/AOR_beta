@@ -167,3 +167,7 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+declare_war_on = {
+	target = DON
+}
