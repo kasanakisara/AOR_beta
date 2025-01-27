@@ -282,14 +282,14 @@ units = {
 	}
 	division = {
 		name = "土耳其斯坦第1师"
-		location = 12454
+		location = 12333
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "辛比尔斯克钢铁第1合成步兵师"
-		location = 7541
+		location = 7924
 		division_template = "苏维埃工农红军(精锐）"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
@@ -1331,7 +1331,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12233
+		location = 12333
 		division_template = "内务人民委员会与地方警卫部队"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5
