@@ -1,0 +1,22 @@
+characters = {
+	AFRIKAN ={
+		name= "Afrikan Petrovich Bogaevskii"
+		portraits={
+			civilian={
+				large="gfx/leaders/DRR/AFRIKAN.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			desc = "DRR_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+}
+
+
