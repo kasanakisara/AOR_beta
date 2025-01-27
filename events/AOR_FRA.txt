@@ -58,6 +58,7 @@ country_event = {
 	id = FRA.6 #法国批判
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		date > 1919.12.1
@@ -83,7 +84,7 @@ country_event = {
 country_event = {
 	id = FRA.7 #英国还击
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = FRA.7.a
@@ -99,7 +100,7 @@ country_event = {
 country_event = {
 	id = FRA.8 #法国通过法案
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = FRA.8.a
@@ -120,7 +121,7 @@ country_event = {
 country_event = {
 	id = FRA.9 #协约国解散
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = FRA.9.a
@@ -147,6 +148,7 @@ country_event = {
 country_event = { #米勒兰接任
 	id = FRA.10
 	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		tag = FRA
 		date > 1920.2.1
