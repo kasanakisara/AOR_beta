@@ -154,10 +154,13 @@ country_event = { #米勒兰接任
 	option = {
 		name = FRA.10.a
 		retire_country_leader = yes
+		set_politics = {
+			ruling_party = FRE_democratic
+		}
 		create_country_leader = {
 		name = "Alexandre Millerland"
 		desc = "Alexandre_Millerland_desc"
-		picture = "gfx/leaders/FRA/Alexandre Millerland.png"
+		picture = "gfx/leaders/FRA/Alexandre_Millerand.png"
 		expire = "1935.1.1"
 		ideology = liberalism
 		}
