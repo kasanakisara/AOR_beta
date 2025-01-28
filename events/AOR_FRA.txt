@@ -5,6 +5,8 @@ add_namespace = FRA
 
 country_event = {
 	id = FRA.1 #出游
+	title = FRA.1.t
+	desc = FRA.1.d
 
 	is_triggered_only = yes
 
@@ -15,6 +17,8 @@ country_event = {
 
 country_event = {
 	id = FRA.2 #在议会的演讲
+	title = FRA.2.t
+	desc = FRA.2.d
 
 	is_triggered_only = yes
 
@@ -26,6 +30,8 @@ country_event = {
 
 country_event = {
 	id = FRA.3 #秘密报告
+	title = FRA.3.t
+	desc = FRA.3.d
 
 	is_triggered_only = yes
 
@@ -36,6 +42,8 @@ country_event = {
 
 country_event = {
 	id = FRA.4 #国民联盟会议
+	title = FRA.4.t
+	desc = FRA.4.d
 
 	is_triggered_only = yes
 
@@ -46,6 +54,8 @@ country_event = {
 
 country_event = {
 	id = FRA.5 #请柬
+	title = FRA.5.t
+	desc = FRA.5.d
 
 	is_triggered_only = yes
 
@@ -56,7 +66,8 @@ country_event = {
 
 country_event = {
 	id = FRA.6 #法国批判
-
+	title = FRA.6.t
+	desc = FRA.6.d
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -83,7 +94,8 @@ country_event = {
 
 country_event = {
 	id = FRA.7 #英国还击
-
+	title = FRA.7.t
+	desc = FRA.7.d
 	fire_only_once = yes
 
 	option = {
@@ -99,7 +111,8 @@ country_event = {
 
 country_event = {
 	id = FRA.8 #法国通过法案
-
+	title = FRA.8.t
+	desc = FRA.8.d
 	fire_only_once = yes
 
 	option = {
@@ -120,7 +133,8 @@ country_event = {
 
 country_event = {
 	id = FRA.9 #协约国解散
-
+	title = FRA.9.t
+	desc = FRA.9.d
 	fire_only_once = yes
 
 	option = {
@@ -147,6 +161,8 @@ country_event = {
 
 country_event = { #米勒兰接任
 	id = FRA.10
+	title = FRA.10.t
+	desc = FRA.10.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
