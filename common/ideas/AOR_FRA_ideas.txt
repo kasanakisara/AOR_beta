@@ -91,5 +91,13 @@ ideas = {
 				theorist_cost_factor = -0.1
 			}
 		}
+
+		AOR_FRA_Millerand_President = { #叛徒总统
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.1
+			}
+		}
 	}
 }
