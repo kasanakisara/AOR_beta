@@ -1,5 +1,5 @@
 ### debug决议 ###
-SWE_Hackers_debug = {
+Hackers_debug = {
     SWE_Uniondrama = {
         avaliable = {
             is_debug = yes
@@ -84,6 +84,25 @@ SWE_Hackers_debug = {
         }
         complete_effect = {
             complete_national_focus = SWE_Beautiful_New_World
+        }
+    }
+
+    FRA_Millerand_test = {
+        avaliable = {
+            is_debug = yes
+            tag = FRA
+        }
+        visible = {
+            is_debug = yes
+            tag = FRA
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            country_event = {
+                id = FRA.10
+            }
         }
     }
 }
