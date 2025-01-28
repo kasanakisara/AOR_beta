@@ -9,26 +9,37 @@ bookmarks = {
 		
 		"RUS"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = Marxism
 			ideas = {
+				SOV_Origin_of_revolution_0
+				SOV_Cheka_0
 			}
 			focuses = {
+				AOR_SOV_Civil_war_1
+				AOR_SOV_Civil_war_14
+				AOR_SOV_Civil_war_20
 
 			}	
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = CON_democratic
 			ideas = {
+				ENG_the_beautiful_of_market
+				ENG_Imperial_Federal_Economic_Recovery_Act
+				ENG_the_help_from_brother
 
 			}
 			focuses = {
+				ENG_baoyvzhizhong_quebujianliming
+				ENG_aierlanren_yongshiweinu
+				ENG_daponinjingdediyiqiang
 
 			}
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = FRE_democratic
 			ideas = {
 				USA_the_divided_nation
 				USA_shiyouhuanying
@@ -43,7 +54,7 @@ bookmarks = {
 
 		"CHI"={
 			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = AUT_democratic
 			ideas = {
 				CHI_Convention_on_China
 				CHI_Territorial_separation
@@ -57,22 +68,22 @@ bookmarks = {
 		}
 		"BAV"={
 			history = "BAV_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = Marxism
 			ideas = {
-				vittorio_emanuele
+				BAV_the_red_star_in_DEU
 				ITA_iri_fake_ns
 				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_il_sol_dell_avvenire
-				ITA_a_colonial_empire
+				BAV_First_Council_Spartacus
+				BAV_We_never_left
+				BAV_flames_of_revolution_continue_unabated
 			}		
 		}
 
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = SOC_democratic
 			ideas = {
 				AOR_FRA_The_Third_Republic
 			}
@@ -82,16 +93,16 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = AUT_democratic
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
+				Central_defense_force
+				An_unimportant_government
+				The_weight_of_defeat
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
+				AOR_GER_Industry_20
+				AOR_GER_Industry_25
+				AOR_GER_Army_7
 			}
 		}
 
@@ -119,9 +130,7 @@ bookmarks = {
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = Absolutism 
 			ideas = {
-				chaotic_politics
-				The_new_nest_of_militarism
-				Imperial_General_Staff
+				pending
 			}
 			focuses = {
 				
@@ -138,7 +147,10 @@ bookmarks = {
 				price_for_freedom
 			}
 			focuses = {
-				
+				BEL_People_exile_who_cry_with
+				BEL_to_know_how_much_hate
+				BEL_Red_chaos_mountains_flowers
+
 			}
 		}
 		
@@ -189,6 +201,8 @@ bookmarks = {
 			history = "HAN_BLITZKRIEG_DESC"
 			ideology = Absolutism
 			ideas = {
+				HUN_Intricate_ethnic_composition
+				HUN_Defence_Forces
 			}
 			focuses = {
 			}

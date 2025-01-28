@@ -2,6 +2,9 @@ state={
 	id=966
 	name="STATE_966"
 	history={
+		victory_points = {
+			11580 10
+		}
 		owner = CRO
 		buildings = {
 			infrastructure = 2
