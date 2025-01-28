@@ -274,4 +274,305 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 			
 		}
 	}
+	dependent_country_Monopoly_trade = { #附庸国家-垄断贸易
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = var_FRA_dependent_country_Monopoly_tradeCost
+		days_remove = var_FRA_dependent_country_Monopoly_tradeDaysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				consumer_goods_factor = -0.3
+				political_power_cost = 0.5
+			}
+			FROM = {
+				stability_weekly = -0.01
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
+	dependent_country_Forced_production = { #附庸国家-强迫生产
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = var_FRA_dependent_country_Forced_productionCost
+		days_remove = var_FRA_dependent_country_Forced_productionDaysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				political_power_cost = 0.2
+			}
+			FROM = {
+				industrial_capacity_factory = 0.2
+				weekly_manpower = -100
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
+	dependent_country_Strengthen_education_of_French_culture = { #附庸国家-加强法国文化教育
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = var_FRA_dcseofc_cost
+		days_remove = var_FRA_dcseofc_Daysremove
+		days_re_enable = 320
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				political_power_cost = 0.2
+			}
+			FROM = {
+				autonomy_gain = -1
+				research_speed_factor = 0.02
+				stability_weekly = 0.01
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
+	dependent_country_Crackdown_on_demonstrations = { #附庸国家-镇压示威活动
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = 0
+		days_remove = var_FRA_dccod_Daysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				divide_variable = { 
+					var_FRA_dependent_country_Monopoly_tradeDaysremove = 2
+				}
+				divide_variable = { 
+					var_FRA_dependent_country_Forced_productionDaysremove = 2
+				}
+				divide_variable = { 
+					var_FRA_dcseofc_Daysremove = 2
+				}
+				divide_variable = { 
+					var_FRA_dccod_Daysremove = 2
+				}
+				divide_variable = { 
+					var_FRA_dcsma_Daysremove = 2
+				}
+				divide_variable = { 
+					var_FRA_dctdc_Daysremove = 2
+				} #忍爱之剑
+				multiply_variable = {
+					var_FRA_dependent_country_Monopoly_tradeCost = 2
+				}
+				multiply_variable = {
+					var_FRA_dependent_country_Forced_productionCost = 2
+				}
+				multiply_variable = {
+					var_FRA_dcseofc_cost = 2
+				}
+				hidden_effect = {
+					add_timed_idea = {
+						idea = FRA_ideas_dependent_country_cod
+						days = 180
+					}
+				}
+			}
+			FROM = {
+				autonomy_gain = -1
+				stability_weekly = -0.02
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
+	dependent_country_SMA = { #附庸国家-加强货币权威
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = 0
+		days_remove = var_FRA_dcsma_Daysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				consumer_goods_factor = -0.25
+				political_power_gain = 0.25
+			}
+			FROM = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
+	dependent_country_tdc = { #附庸国家-技术支配殖民地
+		allowed = {
+			tag = FRA
+		}
+
+		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
+		
+		remove_effect = {
+			
+		}
+
+		cost = 0
+		days_remove = var_FRA_dctdc_Daysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
+			ROOT = {
+				divide_variable = {
+					var_FRA_dependent_country_Monopoly_tradeCost = 2
+				}
+				divide_variable = {
+					var_FRA_dependent_country_Forced_productionCost = 2
+				}
+				divide_variable = {
+					var_FRA_dcseofc_cost = 2
+				}
+				hidden_effect = {
+					add_timed_idea = {
+						idea = FRA_ideas_dependent_country_tdc
+						days = 180
+					}
+				}
+			}
+			FROM = {
+				research_speed_factor = 0.07
+				stability_weekly = 0.01
+				autonomy_gain = -1
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		complete_effect = {  
+
+		}
+	}
 }
