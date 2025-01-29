@@ -410,26 +410,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		
 		remove_effect = {
 			
-		}
-
-		cost = 0
-		days_remove = var_FRA_dccod_Daysremove
-		days_re_enable = 180
-
-		available = {
-
-		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
-
-		modifier = {
 			ROOT = {
 				divide_variable = { 
 					var_FRA_dependent_country_Monopoly_tradeDaysremove = 2
@@ -465,6 +445,26 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 					}
 				}
 			}
+		}
+
+		cost = 0
+		days_remove = var_FRA_dccod_Daysremove
+		days_re_enable = 180
+
+		available = {
+
+		}
+		#icon = we need this!
+
+		#ai_will_do = {
+		#	factor = 0
+		#	modifier = {
+		#		add = 0
+		#		#trigger
+		#	}
+		#}
+
+		modifier = {
 			FROM = {
 				autonomy_gain = -1
 				stability_weekly = -0.02
@@ -526,6 +526,23 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		
 		remove_effect = {
 			
+			ROOT = {
+				divide_variable = {
+					var_FRA_dependent_country_Monopoly_tradeCost = 2
+				}
+				divide_variable = {
+					var_FRA_dependent_country_Forced_productionCost = 2
+				}
+				divide_variable = {
+					var_FRA_dcseofc_cost = 2
+				}
+				hidden_effect = {
+					add_timed_idea = {
+						idea = FRA_ideas_dependent_country_tdc
+						days = 180
+					}
+				}
+			}
 		}
 
 		cost = 0
@@ -546,23 +563,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			ROOT = {
-				divide_variable = {
-					var_FRA_dependent_country_Monopoly_tradeCost = 2
-				}
-				divide_variable = {
-					var_FRA_dependent_country_Forced_productionCost = 2
-				}
-				divide_variable = {
-					var_FRA_dcseofc_cost = 2
-				}
-				hidden_effect = {
-					add_timed_idea = {
-						idea = FRA_ideas_dependent_country_tdc
-						days = 180
-					}
-				}
-			}
 			FROM = {
 				research_speed_factor = 0.07
 				stability_weekly = 0.01
