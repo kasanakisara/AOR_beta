@@ -54,16 +54,18 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	CON_democratic = 93
-	Fascism = 3
-	Marxism = 4
+	Absolutism = 50
+	Fascism = 35
+	Marxism = 15
 }
+
+set_party_name = { ideology = Absolutism long_name =  GLC_POL_Absolutism_party name =  GLC_POL_Absolutism_party }
 
 create_country_leader = {
 	name = "Fuco Gómez"
@@ -92,3 +94,14 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = centrism
 }
+
+create_country_leader = {
+	name = "Jozef Klemens Pilsudski"
+	desc = ""
+	 picture = "gfx/leaders/POL/Pilsudski.png" 
+	expire = "1965.1.1"
+	ideology = miliciagov
+	 traits = {
+		}
+}
+set_cosmetic_tag = GLC_POL
