@@ -7,9 +7,12 @@ state={
 	}
 
 	history={
-		owner = GLC
+		owner = KKW
 		victory_points = {
 			9427 20 
+		}
+		victory_points = {
+			13205 5
 		}
 		buildings = {
 			infrastructure = 4
@@ -19,12 +22,12 @@ state={
 
 		}
 		add_core_of = POL
-		add_core_of = GLC
+		add_core_of = KKW
 
 	}
 
 	provinces={
-		 9427
+		 9427 13205 
 	}
 	manpower=1392800
 	buildings_max_level_factor=1.000

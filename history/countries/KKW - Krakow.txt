@@ -1,4 +1,4 @@
-﻿capital = 10
+capital = 10
 
 oob = "POL_1919"
 
@@ -25,13 +25,12 @@ set_technology = {
 }
 
 add_ideas = {
-	Pending
 }
 
 set_convoys = 10
 
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = FRE_democratic
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
@@ -44,14 +43,12 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Highest_Parliament"
+	name = "Roman Stanisław Dmowski"
 	desc = ""
-	picture = "portrait_POL_the_sejm.dds"
+	picture = "Dmowski.png"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = liberalism
 	traits = {
 	}
 }
 
-puppet = GLC
-puppet = KKW
