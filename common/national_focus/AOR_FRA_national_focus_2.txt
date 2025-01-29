@@ -119,7 +119,8 @@ focus_tree = {
 		
 
 		completion_reward = {	
-			
+			add_ideas = AOR_FRA_Millerand_President
+			set_variable = { FRA_Political_Stability = 50 }
 		}
 	}
 	###################################################市场和社会（经济线）################################

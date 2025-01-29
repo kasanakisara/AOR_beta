@@ -1,4 +1,62 @@
 ideas = {
+	hidden_ideas = {
+		FRA_ideas_dependent_country_tdc = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				multiply_variable = {
+					var_FRA_dependent_country_Monopoly_tradeCost = 2
+				}
+				multiply_variable = {
+					var_FRA_dependent_country_Forced_productionCost = 2
+				}
+				multiply_variable = {
+					var_FRA_dcseofc_cost = 2
+				}
+			}
+		}
+		FRA_ideas_dependent_country_cod = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				multiply_variable = {
+					var_FRA_dependent_country_Monopoly_tradeDaysremove = 2
+				}
+				multiply_variable = {
+					var_FRA_dependent_country_Forced_productionDaysremove = 2
+				}
+				multiply_variable = {
+					var_FRA_dcseofc_Daysremove = 2
+				}
+				multiply_variable = {
+					var_FRA_dccod_Daysremove = 2
+				}
+				multiply_variable = {
+					var_FRA_dcsma_Daysremove = 2
+				}
+				multiply_variable = {
+					var_FRA_dctdc_Daysremove = 2
+				}
+				divide_variable = {
+					var_FRA_dependent_country_Monopoly_tradeCost = 2
+				}
+				divide_variable = {
+					var_FRA_dependent_country_Forced_productionCost = 2
+				}
+				divide_variable = {
+					var_FRA_dcseofc_cost = 2
+				}
+			}
+		}
+	}
 	country = {
 		AOR_FRA_The_Third_Republic = { #第三共和国
 			picture = GFX_AOR_goal_FRA_The_Third_Republic
@@ -89,6 +147,14 @@ ideas = {
 				economy_cost_factor = -0.1
 				political_advisor_cost_factor = -0.1
 				theorist_cost_factor = -0.1
+			}
+		}
+
+		AOR_FRA_Millerand_President = { #叛徒总统
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.1
 			}
 		}
 	}

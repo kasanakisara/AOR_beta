@@ -100,9 +100,20 @@ Hackers_debug = {
             factor = 0
         }
         complete_effect = {
-            country_event = {
-                id = FRA.10
+            retire_country_leader = yes
+            set_politics = {
+                ruling_party = FRE_democratic
             }
+            create_country_leader = {
+                name = "Alexandre Millerland"
+                desc = "Alexandre_Millerland_desc"
+                picture = "gfx/leaders/FRA/Alexandre_Millerand.png"
+                expire = "1935.1.1"
+                ideology = liberalism
+            }
+            load_focus_tree = AOR_FRA_focus_tree_2
+            complete_national_focus = AOR_FRA_Traitor_President
+            complete_national_focus = AOR_FRA_Shackles
         }
     }
 }
