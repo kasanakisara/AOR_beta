@@ -1,22 +1,18 @@
 state = {
 
-	id = 405
-	name = "STATE_405" #Tashkent
+	id = 1041
+	name = "STATE_1041"
 
 	history = {
 	
 		owner = TMS
 		
 		victory_points = {
-			1459 10 
-		}
-		victory_points = {
-			10488 1 
+			10671 2 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			air_base = 1
 		}
 		
 		add_core_of = UZB
@@ -31,10 +27,10 @@ state = {
 	}
 
 	provinces = {
-		1459 10187 12430 10488
+		4629 7682 7775 10671 11687 
 	}
 	
-	manpower = 3337910 #Was 6275820 but was divided by 2 due to Bukhara (830) and then got 1M back
+	manpower = 800000
 	buildings_max_level_factor = 1.000
 	state_category = city
 

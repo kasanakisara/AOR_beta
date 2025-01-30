@@ -1,8 +1,11 @@
 state={
 	id=916
 	name="STATE_916"
-	manpower = 200000
 	
+resources = {
+	steel=20.000
+}
+
 	state_category =rural
 
 	history={
@@ -11,6 +14,10 @@ state={
 		add_core_of = MEL
 		add_core_of = TMS
 		
+		victory_points = {
+			12529 1
+		}
+
 		buildings = {
 			infrastructure = 2
 		}
@@ -20,5 +27,6 @@ state={
 		12385 7711 4651 13148 7795 7856 10550 10619 10680 7784 13149 12662 13197 12529
 	}
 
+	manpower = 300000
 	local_supplies=0.0
 }
