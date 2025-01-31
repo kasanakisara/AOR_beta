@@ -23,10 +23,10 @@ country_event = {
 			declare_war_on = {
 				target = CRO
 				type = annex_everything
-				}
-				add_manpower = 50000
+			}
+			add_manpower = 50000
 		}
-}
+	}
 }
 
 news_event = {  #匈牙利进攻三一共和国
@@ -446,7 +446,7 @@ country_event = {
 				add_manpower = -5000
 				give_guarantee = DAL
 				news_event = {id = HUN_news_DAL}
-}
+	}
 }
 
 news_event = {  #匈牙利介入达尔马提亚问题
