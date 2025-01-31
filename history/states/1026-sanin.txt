@@ -5,8 +5,13 @@ state={
 
 	history={
 		owner = JAP
+
+		victory_points = {
+			11985 1 
+		}
+
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			air_base = 3
 			industrial_complex = 1
 
