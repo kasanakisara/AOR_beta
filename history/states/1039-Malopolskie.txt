@@ -1,33 +1,32 @@
 state={
-	id=88
-	name="STATE_88"
+	id=1039
+	name="STATE_1039"
 	resources={
+		steel=5.000
 	}
 
 	history={
-		owner = KKW
+		owner = GLC
 		victory_points = {
-			9427 20 
+			442 3 
 		}
-		victory_points = {
-			13205 5
-		}
+
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
 			air_base = 2
 
 		}
 		add_core_of = POL
-		add_core_of = KKW
+		add_core_of = GLC
 
 	}
 
 	provinces={
-		 9427 13205 
+		442 6499 9412 11398 11413 11507 
 	}
-	manpower=1392800
+	manpower=1500000
 	buildings_max_level_factor=1.000
 	state_category=large_city
 

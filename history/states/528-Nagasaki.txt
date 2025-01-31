@@ -10,7 +10,7 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			air_base = 2
 			dockyard = 1
 			arms_factory = 1
@@ -24,7 +24,7 @@ state={
 			11925 5 
 		}
 		victory_points = {
-			4102 15 
+			4102 10 
 		}
 		1939.1.1 = {
 			buildings = {

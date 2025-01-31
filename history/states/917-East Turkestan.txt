@@ -1,7 +1,6 @@
 state={
 	id=917
 	name="STATE_917"
-	manpower = 200000
 	
 	state_category =rural
 
@@ -9,6 +8,11 @@ state={
 		owner = TMS
 		add_core_of = KYR
 		add_core_of = TMS
+
+		victory_points = {
+			12583 1 
+		}
+
 		buildings = {
 			infrastructure = 2
 		}
@@ -18,5 +22,6 @@ state={
 		12583 1825 4316 12370 4224 13147 1675 5062 12511 4768 4391 4923
 	}
 
+	manpower = 300000
 	local_supplies=0.0
 }
