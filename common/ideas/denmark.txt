@@ -23,5 +23,37 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = -0.2
 			}
 		}
+		Christian_X = {  #克里斯蒂安十世
+			
+			picture = idea_Christian_X
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			modifier = {
+			    war_support_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+		serious_neutral_stance = {  #严肃的中立立场
+			
+			picture = idea_serious_neutral_stance
+			
+			allowed = {
+				always = yes
+			}
+			
+			visible = {
+			    always = yes
+			}
+
+			modifier = {
+			}
+		}
 	}
 }

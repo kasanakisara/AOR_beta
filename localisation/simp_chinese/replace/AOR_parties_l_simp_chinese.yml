@@ -359,14 +359,6 @@
  FIN_Fascism_party_long:0 "爱国人民运动党"
  FIN_Marxism_party:0 "芬兰共产党"
  FIN_Marxism_party_long:0 "芬兰共产党"
- DEN_CON_democratic_party:0 "丹麦社会民主党"
- DEN_CON_democratic_party_long:0 "丹麦社会民主党"
- DEN_Fascism_party:0 "丹麦国家社会主义工人党"
- DEN_Fascism_party_long:0 "丹麦国家社会主义工人党"
- DEN_Marxism_party:0 "丹麦共产党"
- DEN_Marxism_party_long:0 "丹麦共产党"
- DEN_Absolutism_party:0 "丹麦激进左翼党"
- DEN_Absolutism_party_long:0 "丹麦激进左翼党"
  CAN_CON_democratic_party:0 "联盟党"
  CAN_CON_democratic_party_2:0 "保守党"
  CAN_FRE_democratic_party:0 "自由党"
@@ -1123,5 +1115,17 @@ NAN_AUT_democratic_party:0"社会党(中央系）"
 
 #####DCD#####
 DCD_Absolutism_party:0"川康总督"
-
 TCG_SOC_democratic_party:0"俄国社会民主工党（孟什维克）"
+
+
+ #####DEN#####
+ DEN_CON_democratic_party:0 "丹麦社会民主党"
+ DEN_CON_democratic_party_long:0 "丹麦社会民主党"
+ DEN_SOC_democratic_party:0 "丹麦社会自由党"
+ DEN_SOC_democratic_party_long:0 "丹麦社会自由党"
+ DEN_Fascism_party:0 "丹麦国家社会主义工人党"
+ DEN_Fascism_party_long:0 "丹麦国家社会主义工人党"
+ DEN_Marxism_party:0 "丹麦共产党"
+ DEN_Marxism_party_long:0 "丹麦共产党"
+ DEN_Absolutism_party:0 "丹麦激进左翼党"
+ DEN_Absolutism_party_long:0 "丹麦激进左翼党"

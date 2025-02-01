@@ -68,6 +68,7 @@ guiTypes = {
 				name = "pol_translator"
 				spriteType = "GFX_pol_translator"
 				position = { x = -22 y = 0 }
+				alwaystransparent = yes
 			}
 			
 #			iconType ={
