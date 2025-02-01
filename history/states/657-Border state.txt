@@ -7,11 +7,15 @@ state={
 		steel=18 # was: 24
 	}
 
-
 	state_category = pastoral
 
 	history = {
 		owner = ARU
+
+		victory_points = {
+			7763 1
+		}
+
 		buildings = {
 			infrastructure = 2
 			air_base = 2

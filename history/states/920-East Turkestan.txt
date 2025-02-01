@@ -11,6 +11,11 @@ state={
 		add_core_of = RUS
         add_core_of = ARU
 		add_core_of = KYR
+
+		victory_points = {
+			10610 1
+		}
+
 		buildings = {
 			infrastructure = 2
 		}
