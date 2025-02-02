@@ -1,0 +1,25 @@
+
+state={
+	id=1043
+	name="STATE_1043"
+	manpower = 52441
+	state_category = large_town
+
+	history={
+		add_core_of = DEN
+		add_core_of = SHL
+		owner = SHL
+		buildings = {
+			infrastructure = 1
+			13265 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13265
+	}
+
+	local_supplies=1.0 
+}
