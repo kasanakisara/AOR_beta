@@ -1,0 +1,32 @@
+characters = {
+	Otto_Liebe={
+		name= "Otto Liebe"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEN/Otto_Liebe.dds"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			desc = "Otto_Liebe_DESC"
+			traits={ DEN_konservativ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	Otto_Liebe_advisor = {
+		name = "Otto Liebe"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/Otto_Liebe.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DEN_Otto_Liebe
+			traits = {Lawyer_politician}
+			available = { NOT = { { has_country_leader = Otto_Liebe }}}
+		}
+	}	
+}

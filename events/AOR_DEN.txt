@@ -1,0 +1,22 @@
+add_namespace = DEN
+
+country_event = {
+	id = DEN.1 #otto 你觉着你是职业政客吗 我觉着我是
+	title = DEN.1.t
+	desc = DEN.1.d
+	picture = GFX_DEN_event_1
+	fire_only_once = yes
+	trigger = {
+    }
+
+
+    option = {
+		name = DEN.1.a
+        retire_country_leader = yes
+        recruit_character = Otto_Liebe
+        set_politics = {
+            ruling_party = CON_democratic
+        }
+        set_country_flag = has_recruit_Otto_Liebe
+	}
+}

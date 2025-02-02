@@ -1,11 +1,7 @@
-state= {
+state = {
 	id=58
 	name="STATE_58"
-	manpower = 968150 
-	state_category = large_city
-	
-	history=
-	{
+	history = {
 		victory_points = {
 			6389 10 
 		}
@@ -24,10 +20,11 @@ state= {
 		}
 		add_core_of = SHL
 	}
-
-	provinces= {
+	provinces = {
 		317 3231 3368 6389 
- 	}
-
-	local_supplies=0.0 
+	}
+	manpower=968150
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=1.000
 }

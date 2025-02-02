@@ -126,7 +126,7 @@ characters = {
 		}
 	}
 	
-	FRA_COLONY_3{
+	FRA_COLONY_3 = {
 		name= "Gouverneur-général"
 		portraits={
 			civilian={
