@@ -1,7 +1,11 @@
 focus_tree = {
     id = DEN_focus_tree
     country = {
-        tag = DEN
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DEN
+		}
     }
 
     # 国内发展与稳定
