@@ -26,17 +26,19 @@ country_event = {
 		name = NSH.1.a
 		news_event = { id = AOR_news.67 }
 		GER = { annex_country = {target = NSH }	}
+		839 = { add_core_of = DEN }
 		ai_chance = {
 			base = 50
-			}
+		}
     }
 	option = {
 		name = NSH.1.b
 		DEN = { annex_country = {target = NSH }	}
+		839 = { add_core_of = GER }
 		news_event = { id = AOR_news.68 }
 		ai_chance = {
 			base = 50
-			}
+		}
     }
 }
 

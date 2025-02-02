@@ -67,7 +67,18 @@ create_country_leader = {
 	desc = ""
 	picture = "Karl Theodor Zale .dds"
 	expire = "1953.3.1"
-	ideology = meliorism
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Otto Liebe"
+	desc = ""
+	picture = "Otto Liebe.dds"
+	expire = "1953.3.1"
+	ideology = CON_democratic
 	traits = {
 		
 	}
@@ -85,18 +96,23 @@ create_country_leader = {
 }
 
 set_politics = {
-	ruling_party = SOC_democratic
+	ruling_party = FRE_democratic
 	last_election = "1918.10.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	SOC_democratic = 87
-	Fascism = 10
+	FRE_democratic = 30
+	SOC_democratic = 35
+	CON_democratic = 20
+	AGR_socialism = 10
 	Marxism = 3
+	AUT_democratic = 2
 }
 
 add_ideas = {
 	The_first_awakening_of_ambition
+	Christian_X
+	serious_neutral_stance
 }
 
