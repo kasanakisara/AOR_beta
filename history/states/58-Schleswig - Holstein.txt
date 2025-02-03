@@ -8,7 +8,7 @@ state = {
 		victory_points = {
 			3231 2 
 		}
-		owner = SHL
+		owner = NSH
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -18,10 +18,11 @@ state = {
 				naval_base = 8
 			}
 		}
+		add_core_of = NSH
 		add_core_of = SHL
 	}
 	provinces = {
-		317 3231 3368 6389 
+		317 3231 11366 
 	}
 	manpower=968150
 	buildings_max_level_factor=1.000

@@ -1,11 +1,7 @@
 state={
 	id=855
 	name="STATE_855"
-	manpower = 794315
-	
-	state_category = city
-
-	history={
+	history = {
 		victory_points = {
 			11331 2 
 		}
@@ -21,10 +17,11 @@ state={
 			air_base = 2
 		}
 	}
-
 	provinces={
-		9320 6257 11331
+		3368 6257 6389 9320 11331 
 	}
-
-	local_supplies=0.0
+	manpower=794315
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

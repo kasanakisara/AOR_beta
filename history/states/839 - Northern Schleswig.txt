@@ -20,8 +20,8 @@ state = {
 		add_core_of = NSH
 	}
 	
-	provinces = {
-		332 11251 11366 13266 13267 
+	provinces={
+		332 11251 13266 13267 
 	}
 	manpower=192433
 	buildings_max_level_factor=1.000
