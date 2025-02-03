@@ -30,12 +30,22 @@ create_country_leader = {
 
 
 create_country_leader = {
+	name = "Emil Piper"
+	desc = "Emil_Piper_desc"
+	picture = "Emil_Piper.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {}
+}
+
+create_country_leader = {
 	name = "Karl Theodor Zale"
-	desc = ""
+	desc = "Karl_Theodor_Zale_desc"
 	picture = "Karl Theodor Zale .dds"
 	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {}
+	ideology = demsoc
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -45,22 +55,21 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = revolutionism
 	traits = {
-		
 	}
 }
 
 set_politics = {
-	ruling_party = FRE_democratic
+	ruling_party = PAR_socialism
 	last_election = "1918.10.22"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	FRE_democratic = 30
-	SOC_democratic = 35
-	CON_democratic = 20
-	AGR_socialism = 10
-	Marxism = 3
+	FRE_democratic = 36
+	SOC_democratic = 29
+	CON_democratic = 17
+	PAR_socialism = 15
+	Marxism = 1
 	AUT_democratic = 2
 }
 
