@@ -114,6 +114,7 @@ country_event = {
 	title = FRA.8.t
 	desc = FRA.8.d
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = FRA.8.a
