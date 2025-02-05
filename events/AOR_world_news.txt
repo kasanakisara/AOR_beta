@@ -2473,9 +2473,6 @@ news_event = {#美国发动新一轮对共大逮捕
 
 	option = {
 		name = AOR_news.164.a
-		JAP = {
-		 remove_ideas = JAP_misao
-		}
 	}
 }
 
