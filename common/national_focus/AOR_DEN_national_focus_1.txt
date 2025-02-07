@@ -11,10 +11,17 @@ focus_tree = {
 	focus = {
 		id = DEN_Continuing_the_policy_of_neutrality
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		x = 8
 		y = 0
-
+		completion_reward={
+			add_political_power = 75
+			add_stability = 0.05
+			swap_idea = {
+				remove_idea = serious_neutral_stance
+				add_idea = DEN_declaration_of_neutrality
+			}
+		}
 	}
 	focus = {
 		id = DEN_Deepen_trade_with_the_UK
@@ -26,6 +33,10 @@ focus_tree = {
 		x = 6
 		y = 1
 
+		completion_reward={
+
+		}
+
 	}
 	focus = {
 		id = DEN_Deepen_trade_with_Germany
@@ -36,6 +47,10 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
+
+		completion_reward={
+
+		}
 
 	}
 	focus = {
@@ -51,6 +66,10 @@ focus_tree = {
 		x = 8
 		y = 2
 
+		completion_reward={
+
+		}
+
 	}
 	focus = {
 		id = DEN_Developing_a_social_security_system
@@ -61,6 +80,10 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
+
+		completion_reward={
+
+		}
 
 	}
 	focus = {
@@ -73,6 +96,10 @@ focus_tree = {
 		x = 10
 		y = 3
 
+		completion_reward={
+
+		}
+
 	}
 	focus = {
 		id = DEN_Establish_a_social_welfare_system
@@ -84,6 +111,10 @@ focus_tree = {
 		x = 6
 		y = 4
 
+		completion_reward={
+
+		}
+
 	}
 	focus = {
 		id = DEN_Promote_agricultural_technology
@@ -94,6 +125,10 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+
+		completion_reward={
+
+		}
 
 	}
 	focus = {
@@ -108,6 +143,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
+
+		completion_reward={
+
+		}
 
 	}
 }
