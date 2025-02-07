@@ -1,6 +1,6 @@
 ﻿capital = 9340
 
-#oob = "LIT_1936"
+oob = "AOR_LAND_LIT"
 
 set_research_slots = 3
 
@@ -66,3 +66,5 @@ add_ideas = {
 	White_Russian_opposition
 	The_bridgehead_of_imperialism
 }
+
+puppet = UPR

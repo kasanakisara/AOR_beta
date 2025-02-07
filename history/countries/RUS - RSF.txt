@@ -183,6 +183,10 @@ declare_war_on = {
 	target = IUS
 	type = civil_war
 }
+declare_war_on = {
+	target = UPR
+	type = civil_war
+}
 create_faction = SOVIET_group
 
 add_to_faction = CHT

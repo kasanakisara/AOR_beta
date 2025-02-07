@@ -282,14 +282,14 @@ units = {
 	}
 	division = {
 		name = "土耳其斯坦第1师"
-		location = 12333
+		location = 10671
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "辛比尔斯克钢铁第1合成步兵师"
-		location = 7924
+		location = 1576
 		division_template = "苏维埃工农红军(精锐）"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8
@@ -375,14 +375,14 @@ units = {
 	####第3集团军
 	division = {
 		name = "乌拉尔步兵第1师"
-		location = 12117
+		location = 7444
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "乌拉尔步兵第2师"
-		location = 10142
+		location = 10314
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -396,14 +396,14 @@ units = {
 	}
 	division = {
 		name = "乌拉尔步兵第4师"
-		location = 7320
+		location = 3280
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "乌拉尔步兵第5师"
-		location = 7300
+		location = 1378
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -431,14 +431,14 @@ units = {
 	}
 	division = {
 		name = "第62步兵师"
-		location = 1278
+		location = 7237
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "骑兵第10师"
-		location = 4283
+		location = 4324
 		division_template = "骑兵(小型师）"
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.7
@@ -622,7 +622,7 @@ units = {
 	}
 	division = {
 		name = "第三国际步兵师"
-		location = 1754
+		location = 278
 		division_template = "苏维埃工农红军(精锐）"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -875,35 +875,35 @@ units = {
 	##第8集团军
 	division = {
 		name = "第12步兵师"
-		location = 525
+		location = 11557
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "第13步兵师"
-		location = 504
+		location = 9543
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "第16步兵师"
-		location = 488
+		location = 11530
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "第33步兵师"
-		location = 476
+		location = 9491
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "第40步兵师"
-		location = 6497
+		location = 582
 		division_template = "苏维埃工农红军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -1331,7 +1331,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12333
+		location = 12471
 		division_template = "内务人民委员会与地方警卫部队"
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.5

@@ -32,11 +32,8 @@ state={
 		}
 		add_core_of = ARR
 		add_core_of = RUS
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
+		add_claim_by = UPR
+
 	}
 
 	provinces={
