@@ -3,15 +3,17 @@ capital = 571
 oob = "AOR_LAND_ARU" 
 set_convoys = 325
 
-create_country_leader = {
-	name = "Aleksandr Vasilyevich Kolchak"
-	desc = "A_V_K_DESC"
-	picture = "ayl0c-fl4oi.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
+recruit_character = ARU_KOL
+recruit_character = ARU_PP
+recruit_character = ARU_MKD
+recruit_character = ARU_FRG
+recruit_character = ARU_KOR
+recruit_character = ARU_GMS
+recruit_character = ARU_AMK
+recruit_character = ARU_PNK
+recruit_character = ARU_MGD
+recruit_character = ARU_KAP
+
 
 # Starting tech
 set_technology = {
