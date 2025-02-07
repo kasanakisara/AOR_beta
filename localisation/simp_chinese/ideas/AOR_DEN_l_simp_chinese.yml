@@ -6,6 +6,10 @@ Christian_X:0 "克里斯蒂安十世"
 Christian_X_desc:0 "该怎么称呼克里斯蒂安十世？他是民众爱戴的国王，是中立政策的发起者，是保守派的代言人，也是丹麦王国的象征。虽然议会已经成立，但克里斯蒂安仍然掌握着相当多的权力，并且同议会纷争不断。因此人们推测，国王陛下与议会的纠纷终究会闹到无法收拾的地步。但无论如何，克里斯蒂安现在仍是国家稳定的象征。向您致敬，丹麦和冰岛的国王陛下！"
 serious_neutral_stance:0 "严格的中立政策"
 serious_neutral_stance_desc:0 "上次大战，我们保持着中立立场，使丹麦逃离大战带来的毁灭。因此我们坚信，只要与国家间保持严格中立，就能给丹麦带来永久的和平。———中立，丹麦如今的立国之本,但我们何尝不想成为一个强国呢？因为国土狭小，国力衰弱，所以没有选择。在崛起的契机到来之前，丹麦只能保持中立。"
+DEN_declaration_of_neutrality:0 "中立宣言"
+DEN_declaration_of_neutrality_desc:0 ""
+DEN_denmark_becomes_a_puppet_tt: "如果遭受强大邻国入侵，[DEN.GetFlag]§Y[DEN.GetNameDefCap]§!可以选择成为其傀儡国，但保留当前的政府形式\n\n"
+
 
 
 
