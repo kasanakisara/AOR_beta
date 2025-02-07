@@ -11,33 +11,61 @@ country_event = {
 	title = NSH.1.t
 	desc = NSH.1.d
 	picture = GFX_events_NSH_1
-
-	trigger = {
-	    date > 1920.2.3
-		tag = NSH
-	}
 	
 	mean_time_to_happen = { days = 1}
 	
 	fire_only_once = yes
+	hidden = yes
 
     #那就这样吧  
-	option = {
+	option = {  #北石勒苏益格公投入丹
 		name = NSH.1.a
-		news_event = { id = AOR_news.67 }
-		GER = { annex_country = {target = NSH }	}
+		news_event = { id = AOR_news.68 }
+		DEN = { transfer_state = 839 }
 		839 = { add_core_of = DEN }
 		ai_chance = {
-			base = 50
+			base = 90
 		}
     }
-	option = {
-		name = NSH.1.b
-		DEN = { annex_country = {target = NSH }	}
+	option = { #什么？这不太可能罢 北石勒苏益格公投入德
+		name = NSH.1.b 
+		GER = { transfer_state = 839 }		
 		839 = { add_core_of = GER }
-		news_event = { id = AOR_news.68 }
+		DEN = { add_claim_by = 839 }
+		news_event = { id = AOR_news.67 }
 		ai_chance = {
-			base = 50
+			base = 1
+		}
+    }
+}
+
+#公投
+country_event = {
+	id = NSH.2
+	title = NSH.2.t
+	desc = NSH.2.d
+	picture = GFX_events_NSH_2
+	fire_only_once = yes
+	hidden = yes
+
+	option = {  #石勒苏益格-荷尔施泰因公投入德
+		name = NSH.2.a
+		GER = { transfer_state = 58}
+		GER = { transfer_state = 1043}
+		58 = { add_core_of = GER }
+		1043 = { add_core_of = GER }
+		ai_chance = {
+			base = 75
+		}
+    }
+	option = { #什么？这不太可能罢 石勒苏益格-荷尔施泰因公投入丹 （这不太可能）
+		name = NSH.2.b 
+		DEN = { transfer_state = 58}	
+		DEN = { transfer_state = 1043}	
+		58 = { add_core_of = DEN }
+		1043 = { add_core_of = DEN }
+		ai_chance = {
+			base = 5
 		}
     }
 }
