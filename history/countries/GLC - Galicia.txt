@@ -54,54 +54,24 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = Absolutism
+	ruling_party = Fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Absolutism = 50
+	AUT_democratic = 50
 	Fascism = 35
 	Marxism = 15
 }
 
 set_party_name = { ideology = Absolutism long_name =  GLC_POL_Absolutism_party name =  GLC_POL_Absolutism_party }
 
-create_country_leader = {
-	name = "Fuco Gómez"
-	picture = GFX_portrait_Fuco_Gomez
-	expire = "1965.1.1"
-	ideology = marxism
-}
 
-create_country_leader = {
-	name = "Alfonso Daniel Castelao"
-	picture = GFX_portrait_Alfonso_Daniel_Castelao
-	expire = "1965.1.1"
-	ideology = liberalism
-}
-
-create_country_leader = {
-	name = "Vicente Martínez Risco"
-	picture = GFX_portrait_Vicente_Martinez_Risco
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}
-
-create_country_leader = {
-	name = "Santiago Casares Quiroga"
-	picture = GFX_portrait_Santiago_Casares_Quiroga
-	expire = "1965.1.1"
-	ideology = centrism
-}
-
-create_country_leader = {
-	name = "Jozef Klemens Pilsudski"
-	desc = ""
-	 picture = "gfx/leaders/POL/Pilsudski.png" 
-	expire = "1965.1.1"
-	ideology = miliciagov
-	 traits = {
-		}
-}
 set_cosmetic_tag = GLC_POL
+
+recruit_character = GLC_PSSK
+recruit_character = GLC_TR
+recruit_character = GLC_KS
+recruit_character = GLC_RZ
+recruit_character = GLC_RS

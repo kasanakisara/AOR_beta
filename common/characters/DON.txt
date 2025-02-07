@@ -3,7 +3,7 @@ characters = {
 		name= "Afrikan Petrovich Bogaevskii"
 		portraits={
 			civilian={
-				large="gfx/leaders/DRR/AFRIKAN.dds"
+				large="gfx/leaders/DON/Afrikan_Bogaevsky.dds"
 			}
 		}
 		country_leader={
@@ -13,10 +13,22 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 		}
+		army = {
+			large = "gfx/leaders/DON/Afrikan_Bogaevsky.dds"
+		}
+		corps_commander = {
+			traits = {infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+
+	}
 	}
 
 
-
-}
 
 

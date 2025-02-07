@@ -62,4 +62,13 @@ add_ideas = {
 		
 }
 
+create_country_leader = {
+	name = "Sadrí Maqsudí Arsal"
+	desc = ""
+	picture = "SMA.dds"
+	expire = "1965.1.1"
+	ideology = patriarch
+	traits = {
+	}
+}
 

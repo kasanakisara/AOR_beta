@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_IRE_DESC"
 	picture = "MIKE.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_right
 	traits = {
 	}
 }
