@@ -2,6 +2,8 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	category_machine_weapons
+	category_Infantry_uniforms
 	light_air
 	medium_air
 	heavy_air

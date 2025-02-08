@@ -198,11 +198,11 @@ technologies = {
 	}
 	improved_infantry_weapons_2 = {
 
-		infantry_equipment = {
+		infantry_weapons = {
 			reliability = 0.05
 		}		
 		
-		infantry_equipment = {
+		infantry_weapons = {
 			breakthrough = 0.05
 		}		
 		path = {
@@ -288,8 +288,8 @@ technologies = {
 	
 	improved_infantry_weapons_4 = {
 		
-		infantry_equipment = {
-			reliability = 0.05
+		infantry_weapons = {
+			reliability_factor = 0.05
 		}	
 		
 		infantry = {
@@ -454,7 +454,7 @@ technologies = {
 
 	infantry_at = {
 
-		category_all_infantry = {
+		infantry_weapons = {
 			hard_attack = 0.5
 			ap_attack = 0.05
 		}	
@@ -493,7 +493,8 @@ technologies = {
 		}
 	}
 	infantry_at2 = {
-		category_all_infantry = {
+		
+		infantry_weapons = {
 			hard_attack = 0.25
 			ap_attack = 1
 		} 
@@ -529,7 +530,7 @@ technologies = {
 		}
 	}
 	infantry_at3 = {
-		category_all_infantry = {
+		infantry_weapons = {
 			hard_attack = 0.4
 			ap_attack = 1.25
 		}
@@ -563,7 +564,7 @@ technologies = {
 		}
 	}
 	infantry_at4 = {
-		category_all_infantry = {
+		infantry_weapons = {
 			hard_attack = 0.4
 			ap_attack = 1.25
 		}
@@ -635,7 +636,7 @@ technologies = {
 			position = { x = 0 y = 10 }
 		}	
 		categories = {
-			infantry_weapons
+			category_support_battalions
 		}	
 		ai_will_do = {
 			factor = 5
@@ -706,7 +707,7 @@ technologies = {
 			position = { x = 2 y = 10 }
 		}		
 		categories = {
-			infantry_weapons
+			category_support_battalions
 		}	
 		ai_will_do = {
 			factor = 1		
@@ -775,7 +776,7 @@ technologies = {
 		}
 		
 		categories = {
-			infantry_weapons
+			category_support_battalions
 		}
 		
 		ai_will_do = {
@@ -847,7 +848,7 @@ technologies = {
 			position = { x = 12 y = 10 }
 		}		
 		categories = {
-			infantry_weapons
+			category_support_battalions
 		}		
 		ai_will_do = {
 			factor = 1			
@@ -900,7 +901,7 @@ machine_equipment_weapons = {
 	}	
 
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}	
 
 	ai_will_do = {
@@ -910,13 +911,14 @@ machine_equipment_weapons = {
 	
 machine_equipment_weapons1 = {
 
-		infantry_equipment = {
-			reliability = 0.05
+		category_machine_weapons = {
+			reliability_factor = 0.05
 		}	
 		
-		category_all_infantry = {
+		category_machine_weapons = {
 			soft_attack = 0.05
 		}
+
 		research_cost = 0.5
 		start_year = 1920
 		folder = {
@@ -925,7 +927,7 @@ machine_equipment_weapons1 = {
 		}	
 	
 		categories = {
-			infantry_weapons
+			category_machine_weapons
 		}		
 		
 	path = {
@@ -972,7 +974,7 @@ machine_equipment_weapons2 = {
 		research_cost_coeff = 1
 	}
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}	
 
 	ai_will_do = {
@@ -982,7 +984,7 @@ machine_equipment_weapons2 = {
 
 machine_equipment_weapons3 = {
 
-	category_all_infantry = {
+	category_machine_weapons = {
 		maximum_speed = 0.05
 	}
 	research_cost = 0.3
@@ -993,7 +995,7 @@ machine_equipment_weapons3 = {
 	}	
 
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}		
 	
 	path = {
@@ -1015,7 +1017,7 @@ machine_equipment_weapons3 = {
 	}
 }
 machine_equipment_weapons4 = {
-	category_all_infantry = {
+	category_machine_weapons = {
 			soft_attack = 0.05
 		}	
 	research_cost = 0.3
@@ -1026,7 +1028,7 @@ machine_equipment_weapons4 = {
 	}	
 
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}		
 	
 	path = {
@@ -1048,18 +1050,21 @@ machine_equipment_weapons4 = {
 	}
 }
 machine_equipment_weapons5 = {
-	machine_equipment = {
-			soft_attack = 0.05
-		}
+
+	category_machine_weapons = {
+		soft_attack = 0.05
+	}
+
 	research_cost = 0.3
 	start_year = 1925
+
 	folder = {
 		name = infantry_folder
 		position = { x = 8 y = 6 }
 	}	
 
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}		
 	path = {
 		leads_to_tech = machine_equipment_weapons6
@@ -1094,7 +1099,7 @@ machine_equipment_weapons6 = {
 		position = { x = 13 y = 6 }
 	}	
 	categories = {
-		infantry_weapons
+		category_machine_weapons
 	}	
 
 	ai_will_do = {
@@ -1139,7 +1144,7 @@ Infantry_uniforms = {
 		position = { x = 0 y = 13}
 	}	
 	categories = {
-		infantry_weapons
+		category_Infantry_uniforms
 	}	
 	ai_will_do = {
 		factor = 5
@@ -1179,7 +1184,7 @@ Infantry_uniforms2 = {
 		position = { x = 4 y = 12}
 	}	
 	categories = {
-		infantry_weapons
+		category_Infantry_uniforms
 	}	
 	ai_will_do = {
 		factor = 5
@@ -1217,7 +1222,7 @@ Infantry_uniforms3 = {
 		position = { x = 4 y = 14}
 	}	
 	categories = {
-		infantry_weapons
+		category_Infantry_uniforms
 	}	
 	ai_will_do = {
 		factor = 5
@@ -1252,7 +1257,7 @@ Infantry_uniforms4 = {
 		position = { x = 8 y = 13}
 	}	
 	categories = {
-		infantry_weapons
+		category_Infantry_uniforms
 	}	
 	ai_will_do = {
 		factor = 5
