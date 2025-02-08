@@ -60,12 +60,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	AUT_democratic = 50
+	Absolutism = 35
+	AUT_democratic = 20
 	Fascism = 35
-	Marxism = 15
+	Marxism = 10
 }
 
-set_party_name = { ideology = Absolutism long_name =  GLC_POL_Absolutism_party name =  GLC_POL_Absolutism_party }
+set_party_name = { ideology = Fascism long_name =  GLC_POL_Fascism_party name =  GLC_POL_Fascism_party }
 
 
 set_cosmetic_tag = GLC_POL
