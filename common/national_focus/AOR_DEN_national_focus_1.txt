@@ -17,7 +17,7 @@ focus_tree = {
 		completion_reward={
 			add_political_power = 75
 			add_stability = 0.05
-			swap_idea = {
+			swap_ideas = {
 				remove_idea = serious_neutral_stance
 				add_idea = DEN_declaration_of_neutrality
 			}
@@ -145,8 +145,7 @@ focus_tree = {
 		y = 5
 
 		completion_reward={
-
+			load_country_focus_tree = AOR_DEN_national_focus_1
 		}
-
 	}
 }

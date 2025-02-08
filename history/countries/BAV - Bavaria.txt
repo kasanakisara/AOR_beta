@@ -19,6 +19,7 @@ set_technology = {
 	oil_processing = 1
 	fuel_refining = 1
 	machine_equipment_weapons = 1
+	Old_howitzers = 1
 }
 
 if = {
@@ -102,7 +103,7 @@ set_politics = {
 }
 set_popularities = {
 	SOC_democratic = 10
-	PAR_socialism  = 20
+	PAR_socialism = 20
 	Anarcho = 2
 	Marxism = 68
 }
