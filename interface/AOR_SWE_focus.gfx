@@ -143,4 +143,28 @@ spriteTypes = {
 		name = "GFX_goal_SWE_Everyone_has_Job"
 		texturefile = "gfx/interface/goals/goal_SWE_Everyone_has_Job.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SWE_Rebuild_New_World"
+		texturefile = "gfx/interface/goals/goal_SWE_Rebuild_New_World.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Reduction_Civil_Servants"
+		texturefile = "gfx/interface/goals/goal_SWE_Reduction_Civil_Servants.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Return_Power"
+		texturefile = "gfx/interface/goals/goal_SWE_Return_Power.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Merge_Parliament"
+		texturefile = "gfx/interface/goals/goal_SWE_Merge_Parliament.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Amendment_Law_Inheritance"
+		texturefile = "gfx/interface/goals/goal_SWE_Amendment_Law_Inheritance.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_Hand_Could_Saw"
+		texturefile = "gfx/interface/goals/goal_SWE_Hand_Could_Saw.png"
+	}
 }

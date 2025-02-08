@@ -164,12 +164,7 @@ country_event = { #米勒兰接任
 	id = FRA.10
 	title = FRA.10.t
 	desc = FRA.10.d
-	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		tag = FRA
-		date > 1920.2.1
-	}
 	option = {
 		name = FRA.10.a
 		retire_country_leader = yes

@@ -120,6 +120,11 @@ focus_tree = {
 		completion_reward = {	
 			add_ideas = AOR_FRA_Millerand_President
 			set_variable = { FRA_Political_Stability = 50 }
+			set_variable = { FRA_AD_power = 15.17 }
+			set_variable = { FRA_SOC_power = 12.40 }
+			set_variable = { FRA_SFIO_power = 11.09 }
+			set_variable = { FRA_Radicial_power = 14.03 }
+			set_variable = { FRA_other_party_power = 47.31 }
 		}
 	}
 	###################################################市场和社会（经济线）################################
@@ -538,8 +543,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AOR_FRA_Promote_the_construction_of_the_Rhône_dam #推动罗纳河大坝建设
-		icon = AOR_FRA_Promote_the_construction_of_the_Rhône_dam
+		id = AOR_FRA_Promote_the_construction_of_the_Rhone_dam #推动罗纳河大坝建设
+		icon = AOR_FRA_Promote_the_construction_of_the_Rhone_dam
 		relative_position_id = AOR_FRA_Develop_electric_power_enterprises
 		prerequisite = { focus = AOR_FRA_Develop_electric_power_enterprises }
 		
@@ -662,7 +667,7 @@ focus_tree = {
 		icon = AOR_FRA_Happy_and_harmonious_France
 		relative_position_id = AOR_FRA_Line_of_Defense_Plan
 		prerequisite = { focus = AOR_FRA_Line_of_Defense_Plan }
-		prerequisite = { focus = AOR_FRA_Promote_the_construction_of_the_Rhône_dam }
+		prerequisite = { focus = AOR_FRA_Promote_the_construction_of_the_Rhone_dam }
 		prerequisite = { focus = AOR_FRA_Renovation_of_the_Northern_Railway_network }
 		
 		x = -2

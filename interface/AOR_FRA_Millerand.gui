@@ -12,7 +12,7 @@ guiTypes = { #主体结构
 
 		instantTextBoxType = {
 			name = "AOR_FRA_political_stability_number"
-			position = { x = 45 y = 300 }
+			position = { x = 45 y = 275 }
 			font = "hoi_33"
 			text = "FRA_political_stability_quote"
 			format = center

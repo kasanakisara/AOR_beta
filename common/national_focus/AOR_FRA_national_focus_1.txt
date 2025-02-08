@@ -515,10 +515,7 @@ focus_tree = {
 		y = 9
 
 		completion_reward={
-			swap_ideas = {
-				add_idea = AOR_FRA_Transforming_military_attire_into_workwear
-				remove_idea = AOR_FRA_Workers_Hymn
-			}
+			add_idea = AOR_FRA_Transforming_Military_Attire_Into_Workwear
 		}
 
 	}

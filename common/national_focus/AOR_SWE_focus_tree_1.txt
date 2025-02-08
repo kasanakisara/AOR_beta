@@ -721,7 +721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Rebuild_New_World
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Rebuild_New_World
 		cost = 5.00
 		available = {
 			always = no
@@ -775,7 +775,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Return_Power
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Return_Power
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Rebuild_New_World
@@ -786,7 +786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Merge_Parliament
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Merge_Parliament
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Rebuild_New_World
@@ -797,7 +797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Amendment_Law_Inheritance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Amendment_Law_Inheritance
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Return_Power
@@ -808,7 +808,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Reduction_Civil_Servants
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Reduction_Civil_Servants
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Merge_Parliament
@@ -819,7 +819,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWE_Hand_Could_Saw
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SWE_Hand_Could_Saw
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Reduction_Civil_Servants
