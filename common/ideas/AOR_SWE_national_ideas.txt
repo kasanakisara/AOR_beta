@@ -58,7 +58,7 @@ ideas = {
 	country = {
 				
 		SWE_Left_Threat = {
-			picture = GFX_idea_SWE_Left_Threat
+			picture = idea_SWE_Left_Threat
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.3
@@ -69,7 +69,7 @@ ideas = {
 		}
 
 		SWE_Eighty_Seventh_Orders = {
-			picture = ""
+			picture = idea_SWE_Eighty_Seventh_Orders
 			allowed = { always = yes }
 			modifier = {
 				political_power_factor = 0.1
@@ -80,7 +80,7 @@ ideas = {
 		}
 
 		SWE_K_Plan = {
-			picture = ""
+			picture = idea_SWE_K_Plan
 			allowed = { always = yes }
 			modifier = {
 				production_speed_buildings_factor = 0.25
@@ -91,8 +91,8 @@ ideas = {
 			}
 		}
 
-		SWE_Encourage = {
-			picture = ""
+		SWE_Encourage = { #刺激经济
+			picture = idea_SWE_Encourage
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -100,8 +100,8 @@ ideas = {
 			}
 		}
 
-		SWE_British = {
-			picture = ""
+		SWE_British = { #英国
+			picture = idea_SWE_British
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.2
@@ -109,8 +109,8 @@ ideas = {
 			}
 		}
 
-		SWE_Francais = {
-			picture = ""
+		SWE_Francais = { #法国
+			picture = idea_SWE_Francais
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.2
@@ -118,8 +118,8 @@ ideas = {
 			}
 		}
 
-		SWE_Stockholm_Law = {
-			picture = ""
+		SWE_Stockholm_Law = { 
+			picture = idea_SWE_Stockholm_Law
 			allowed = { always = yes }
 			modifier = {
 				political_power_gain = 0.2
@@ -129,7 +129,7 @@ ideas = {
 		}
 
 		SWE_Antisocialistisk_Speciallagen = {
-			picture = ""
+			picture = idea_SWE_Antisocialistisk_Speciallagen
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1
@@ -140,7 +140,7 @@ ideas = {
 		}
 		
 		SWE_All_People_are_King = {
-			picture = ""
+			picture = idea_SWE_All_People_are_King
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1
@@ -151,7 +151,7 @@ ideas = {
 		}
 
 		SWE_Liberte_Spirit = {
-			picture = ""
+			picture = idea_SWE_Liberte_Spirit
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1
@@ -160,7 +160,7 @@ ideas = {
 		}
 
 		SWE_Beyond_Nationalism = {
-			picture = ""
+			picture = idea_SWE_Beyond_Nationalism
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1
@@ -169,7 +169,7 @@ ideas = {
 		}
 
 		SWE_Beyond_Nation = {
-			picture = ""
+			picture = idea_
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.2
@@ -201,7 +201,7 @@ ideas = {
 		}
 
 		SWE_Hurt_of_Norway = {
-			picture = ""
+			picture = idea_SWE_Hurt_of_Norway
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.5
@@ -213,7 +213,7 @@ ideas = {
 		}
 
 		SWE_Hurten_of_Norway = {
-			picture = ""
+			picture = idea_
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = -0.5
@@ -225,7 +225,7 @@ ideas = {
 		}
 
 		SWE_The_Union_Dream = {
-			picture = ""
+			picture = idea_SWE_The_Union_Dream
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.25
@@ -238,7 +238,7 @@ ideas = {
 		}
 
 		SWE_Open_the_door = {
-			picture = ""
+			picture = idea_SWE_Open_the_door
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
@@ -250,7 +250,7 @@ ideas = {
 		}
 
 		SWE_Soviet_Trade = {
-			picture = ""
+			picture = idea_SWE_Soviet_Trade
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.15
@@ -261,7 +261,7 @@ ideas = {
 		}
 
 		SWE_Soviet_Trade_soviet = {
-			picture = ""
+			picture = idea_SWE_Soviet_Trade_soviet
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.15
@@ -272,7 +272,7 @@ ideas = {
 		}
 
 		SWE_Germany_Trade = {
-			picture = ""
+			picture = idea_SWE_Germany_Trade
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -284,7 +284,7 @@ ideas = {
 		}
 
 		SWE_Germany_Trade_sweden = {
-			picture = ""
+			picture = idea_SWE_Germany_Trade_sweden
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -295,7 +295,7 @@ ideas = {
 		}
 
 		SWE_Regulation = {
-			picture = ""
+			picture = idea_
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
@@ -306,7 +306,7 @@ ideas = {
 		}
 
 		SWE_Third_Chioce = {
-			picture = ""
+			picture = idea_SWE_Third_Chioce
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.45
@@ -322,7 +322,7 @@ ideas = {
 		}
 
 		SWE_In_Revolution = {
-			picture = ""
+			picture = idea_SWE_In_Revolution
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = SWE_In_Revolution_tt
@@ -330,7 +330,7 @@ ideas = {
 		}
 
 		SWE_Folkhemmet = {
-			picture = ""
+			picture = idea_SWE_Folkhemmet
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = SWE_Folkhemmet_tt
@@ -343,7 +343,7 @@ ideas = {
 		}
 
 		SWE_Folkhemmet_debuff = {
-			picture = ""
+			picture = idea_SWE_Folkhemmet_debuff
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.2
@@ -354,7 +354,7 @@ ideas = {
 		}
 
 		SWE_Labor_Protection = {
-			picture = ""
+			picture = idea_SWE_Labor_Protection
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
@@ -366,7 +366,7 @@ ideas = {
 		}
 
 		SWE_Edu_Protection = {
-			picture = ""
+			picture = idea_SWE_Edu_Protection
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
@@ -376,7 +376,7 @@ ideas = {
 		}
 
 		SWE_Ex_Folkhemmet = {
-			picture = ""
+			picture = idea_SWE_Ex_Folkhemmet
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = SWE_Ex_Folkhemmet_tt
@@ -389,7 +389,7 @@ ideas = {
 		}
 
 		SWE_High_national_debt = {
-			picture = ""
+			picture = idea_
 			available = { always = yes }
 			modifier = {
 				political_power_gain = -0.25
@@ -399,7 +399,7 @@ ideas = {
 		}
 
 		SWE_Low_national_debt = {
-			picture = ""
+			picture = idea_
 			available = {
 				always = yes
 			}
@@ -410,7 +410,7 @@ ideas = {
 		}
 
 		SWE_Samitinget = {
-			picture = ""
+			picture = idea_
 			available = {
 				always = yes
 			}
@@ -422,7 +422,7 @@ ideas = {
 		}
 
 		SWE_United_Norweign = {
-			picture = ""
+			picture = idea_SWE_United_Norweign
 			available = {
 				always = yes
 			}

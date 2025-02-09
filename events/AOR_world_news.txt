@@ -770,12 +770,9 @@ news_event = { #英日提议将青岛划给日本，法国支持中国，学生�
 	title = AOR_news.48.t
 	desc = AOR_news.48.d
 	picture = GFX_AOR_news.48_pic
-	fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes 
 	major = yes
-	trigger = {
-	    date > 1920.3.16
-		date < 1920.3.18
-	}
 	immediate = {
 	}
 	option = {
@@ -800,16 +797,16 @@ news_event = { #三廿初步胜利
 	title = AOR_news.50.t
 	desc = AOR_news.50.d
 	picture = GFX_AOR_news.50_pic
-	fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes 
 	major = yes
-	trigger = {
-	    date > 1920.5.11
-		date < 1920.5.13
-	}
 	immediate = {
 	}
 	option = {
 		name = AOR_news.50.a
+		QID = {
+			transfer_state = 743
+		}
 	}
 }
 

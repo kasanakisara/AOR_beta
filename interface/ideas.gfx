@@ -6547,15 +6547,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Tiger_of_Silence"
-		texturefile = "gfx/interface/ideas/idea_Tiger_of_Silence.dds"
+		texturefile = "gfx/interface/ideas/SWE/idea_Tiger_of_Silence.png"
 	}
 	spriteType = {
 		name = "GFX_idea_A_lingering_alliance"
-		texturefile = "gfx/interface/ideas/idea_A_lingering_alliance.dds"
+		texturefile = "gfx/interface/ideas/SWE/idea_A_lingering_alliance.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Let_the_ambitio_sleep"
-		texturefile = "gfx/interface/ideas/idea_Let_the_ambitio_sleep.dds"
+		texturefile = "gfx/interface/ideas/SWE/idea_Let_the_ambitio_sleep.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Imperial_General_Staff"
