@@ -1,22 +1,123 @@
 spriteTypes = {	
 	spriteType = {
-		name = "GFX_SWE_Eighty_Seventh_Orders"
+		name = "GFX_idea_SWE_Eighty_Seventh_Orders"
 		texturefile = "gfx/interface/ideas/SWE/SWE_Eighty_Seventh_Orders.png"	
 	}
 
 	spriteType = {
-		name = "GFX_SWE_K_Plan"
+		name = "GFX_idea_SWE_K_Plan"
 		texturefile = "gfx/interface/ideas/SWE/SWE_K_Plan.png"	
 	}
 
 	spriteType = {
-		name = "GFX_SWE_Encourage"
+		name = "GFX_idea_SWE_Encourage"
 		texturefile = "gfx/interface/ideas/SWE/SWE_Encourage.png"	
 	}
 
 	spriteType = {
-		name = "GFX_SWE_British"
+		name = "GFX_idea_SWE_British"
 		texturefile = "gfx/interface/ideas/SWE/SWE_British.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Francais"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Francais.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Stockholm_Law"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Stockholm_Law.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Antisocialistisk_Speciallagen"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Antisocialistisk_Speciallagen.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_All_People_are_King"
+		texturefile = "gfx/interface/ideas/SWE/SWE_All_People_are_King.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Liberte_Spirit"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Liberte_Spirit.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Beyond_Nationalism"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Beyond_Nationalism.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Beyond_Nation"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Beyond_Nationalism.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Ex_Folkhemmet"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Ex_Folkhemmet.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Folkhemmet"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Liberte_Spirit.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Folkhemmet_debuff"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Folkhemmet_debuff.png"	
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_SWE_Open_the_door"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Open_the_door.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Soviet_Trade"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Soviet_Trade.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Germany_Trade"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Germany_Trade.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Regulation"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Regulation.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_In_Revolution"
+		texturefile = "gfx/interface/ideas/SWE/SWE_In_Revolution.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Third_Chioce"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Third_Chioce.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Labor_Protection"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Labor_Protection.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Edu_Protection"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Edu_Protection.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_The_Union_Dream"
+		texturefile = "gfx/interface/ideas/SWE/SWE_The_Union_Dream.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Edu_Protection"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Edu_Protection.png"	
 	}
 
 	spriteType = {
