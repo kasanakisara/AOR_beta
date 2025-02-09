@@ -171,5 +171,8 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
+
+recruit_character = FRA_Alexandre_Millerand
+
 give_guarantee = QID
 give_guarantee = BRA
