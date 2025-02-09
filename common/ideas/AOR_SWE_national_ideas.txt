@@ -69,7 +69,7 @@ ideas = {
 		}
 
 		SWE_Eighty_Seventh_Orders = {
-			picture = ""
+			picture = GFX_SWE_Eighty_Seventh_Orders
 			allowed = { always = yes }
 			modifier = {
 				political_power_factor = 0.1
@@ -80,7 +80,7 @@ ideas = {
 		}
 
 		SWE_K_Plan = {
-			picture = ""
+			picture = GFX_SWE_K_Plan
 			allowed = { always = yes }
 			modifier = {
 				production_speed_buildings_factor = 0.25
@@ -91,8 +91,8 @@ ideas = {
 			}
 		}
 
-		SWE_Encourage = {
-			picture = ""
+		SWE_Encourage = { #刺激经济
+			picture = GFX_SWE_Encourage
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -100,8 +100,8 @@ ideas = {
 			}
 		}
 
-		SWE_British = {
-			picture = ""
+		SWE_British = { #英国
+			picture = GFX_SWE_British
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.2

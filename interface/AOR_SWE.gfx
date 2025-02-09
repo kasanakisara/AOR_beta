@@ -1,5 +1,25 @@
 spriteTypes = {	
 	spriteType = {
+		name = "GFX_SWE_Eighty_Seventh_Orders"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Eighty_Seventh_Orders.png"	
+	}
+
+	spriteType = {
+		name = "GFX_SWE_K_Plan"
+		texturefile = "gfx/interface/ideas/SWE/SWE_K_Plan.png"	
+	}
+
+	spriteType = {
+		name = "GFX_SWE_Encourage"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Encourage.png"	
+	}
+
+	spriteType = {
+		name = "GFX_SWE_British"
+		texturefile = "gfx/interface/ideas/SWE/SWE_British.png"	
+	}
+
+	spriteType = {
 		name = "GFX_AOR_news_17_picture"
 		texturefile = "gfx/event_pictures/AOR_news.17_pic.png"	
 	}
@@ -8,21 +28,21 @@ spriteTypes = {
 spriteTypes = {	
 	spriteType = {
 		name = "GFX_idea_SWE_Left_Threat"
-		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
+		texturefile = "gfx/interface/ideas/SWE/AOR_idea_SWE_Left_Threat.png"	
 	}
 }
 
 spriteTypes = {	
 	spriteType = {
 		name = "GFX_idea_SWE_Left_Threat_I"
-		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
+		texturefile = "gfx/interface/ideas/SWE/AOR_idea_SWE_Left_Threat_I.png"	
 	}
 }
 
 spriteTypes = {	
 	spriteType = {
 		name = "GFX_idea_SWE_Left_Threat_II"
-		texturefile = "gfx/interface/ideas/AOR_idea_SWE_Left_Threat.png"	
+		texturefile = "gfx/interface/ideas/SWE/AOR_idea_SWE_Left_Threat_II.png"	
 	}
 }
 
