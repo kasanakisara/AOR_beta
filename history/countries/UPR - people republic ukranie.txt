@@ -4,6 +4,8 @@ capital = 202 #Kiev
 
 set_research_slots = 2
 
+load_oob = "UPR_Land"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
