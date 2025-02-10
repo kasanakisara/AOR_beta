@@ -1,21 +1,17 @@
 state={
-	id=1039
-	name="STATE_1039"
+	id=1046
+	name="STATE_1046"
 	resources={
-		steel=5.000
 	}
 
 	history={
 		owner = GLC
 		victory_points = {
-			442 3 
+			11507 1 
 		}
 
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 2
 
 		}
 		add_core_of = POL
@@ -24,9 +20,9 @@ state={
 	}
 
 	provinces={
-		442 6499 9412 11398 11413 
+		11507 
 	}
-	manpower=1470000
+	manpower=30000
 	buildings_max_level_factor=1.000
 	state_category=large_city
 
