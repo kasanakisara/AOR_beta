@@ -26,11 +26,25 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = liberalism
+			ideology = authouraism
 			desc = "FRA_Raymond_Poincare_DESC"
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+
+	FRA_Alexandre_Millerand={
+		name = "Alexandre Millerland"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Alexandre_Millerand.png"
+			}
+		}
+		country_leader = {
+			desc = "Alexandre_Millerland_desc"
+			expire = "1935.1.1"
+			ideology = liberalism
 		}
 	}
 }
