@@ -339,7 +339,7 @@ units = {
 		start_equipment_factor = 0.2
 
 	}
-}
+
 
 	division = { # "I Jalaväediviisi"
 		division_name = {
@@ -456,7 +456,6 @@ units = {
 
 	}
 
-	##### No Naval OOB #####
 }
 
 

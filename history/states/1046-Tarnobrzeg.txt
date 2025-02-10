@@ -5,7 +5,7 @@ state={
 	}
 
 	history={
-		owner = GLC
+		owner = TRZ
 		victory_points = {
 			11507 1 
 		}
@@ -15,6 +15,7 @@ state={
 
 		}
 		add_core_of = POL
+		add_core_of = TRZ
 		add_core_of = GLC
 
 	}

@@ -44,8 +44,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Roman Stanisław Dmowski"
-	desc = ""
-	picture = "Dmowski.png"
+	desc = "KKW_DESC"
+	picture = "Dmowski.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
