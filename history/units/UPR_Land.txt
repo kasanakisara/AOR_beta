@@ -51,7 +51,7 @@ units = {
     }
     division= {
         name = "前线第2军团"
-        location = 11530
+        location = 11454
         division_template = "The army"
         start_experience_factor = 0.3
     }
@@ -63,19 +63,19 @@ units = {
     }
     division= {
         name = "前线第4军团"
-        location = 11557
+        location = 525
         division_template = "The army"
         start_experience_factor = 0.3
     }
     division= {
         name = "民兵第1团"
-        location = 582
+        location = 3494
         division_template = "Civilian militia"
         start_experience_factor = 0.1
     }
     division= {
         name = "民兵第2团"
-        location = 489
+        location = 525
         division_template = "Civilian militia"
         start_experience_factor = 0.1
     }
@@ -99,7 +99,7 @@ units = {
     }
     division= {
         name = "民兵第6团"
-        location = 9491
+        location = 488
         division_template = "Civilian militia"
         start_experience_factor = 0.1
     }

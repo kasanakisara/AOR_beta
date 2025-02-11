@@ -87,9 +87,14 @@ set_popularities = {
 	Fascism = 70
 }
 
-recruit_character = UPR_PETER
+recruit_character = UPR_OFFICE_PETER
+recruit_character = UPR_BATTLEFILED_PETER
 
+puppet = WRU
 
-
+declare_war_on = {
+	target = ARR
+	type = civil_war
+}
 
 

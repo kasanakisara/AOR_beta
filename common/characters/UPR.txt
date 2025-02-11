@@ -1,9 +1,9 @@
 characters = {
-	UPR_PETER ={
+	UPR_OFFICE_PETER ={
 		name= "Симо́н Васи́льевич Петлю́ра"
 		portraits={
 			civilian={
-				large="gfx/leaders/UPR/a65pf-ol7ps.dds"
+				large="gfx/leaders/UPR/peter1.dds"
 			}
 		}
 		country_leader={
@@ -13,6 +13,17 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 		}
+	
+	}
+
+	UPR_BATTLEFILED_PETER ={
+		name= "Симо́н Васи́льевич Петлю́ра"
+		portraits={
+			civilian={
+				large="gfx/leaders/UPR/a65pf-ol7ps.dds"
+			}
+		}
+
 		army = {
 			large="gfx/leaders/UPR/a65pf-ol7ps.dds"
 		}

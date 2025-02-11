@@ -76,3 +76,17 @@ recruit_character = GLC_TR
 recruit_character = GLC_KS
 recruit_character = GLC_RZ
 recruit_character = GLC_RS
+
+declare_war_on = {
+	target = TRZ
+	type = civil_war
+}
+
+declare_war_on = {
+	target = WRU
+	type = civil_war
+}
+declare_war_on = {
+	target = RPS
+	type = civil_war
+}
