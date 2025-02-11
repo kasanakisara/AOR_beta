@@ -1,11 +1,9 @@
 spriteTypes = {	
 
-
-
 	SpriteType = {
 		name = "GFX__shine"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"
-				effectFile = "gfx/FX/buttonstate.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -38,7 +36,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_AOR_FRA_after_the_war_shine"
 		texturefile = "gfx/interface/goals/AOR_FRA_after_the_war.png"
-				effectFile = "gfx/FX/buttonstate.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/AOR_FRA_after_the_war.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file

@@ -81,7 +81,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SWE_Soviet_Trade_sweden"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Soviet_Trade.png"	
+	}
+
+	spriteType = {
 		name = "GFX_idea_SWE_Germany_Trade"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Germany_Trade.png"	
+	}
+
+	spriteType = {
+		name = "GFX_idea_SWE_Germany_Trade_sweden"
 		texturefile = "gfx/interface/ideas/SWE/SWE_Germany_Trade.png"	
 	}
 
