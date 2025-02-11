@@ -1,5 +1,8 @@
 ﻿capital = 37
 
+load_oob = "AOR_LAND_DEN"
+set_naval_oob = "DEN_naval_1919"
+
 recruit_character = Otto_Liebe
 recruit_character = Otto_Liebe_advisor
 
