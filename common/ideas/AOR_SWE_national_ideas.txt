@@ -261,7 +261,7 @@ ideas = {
 		}
 
 		SWE_Soviet_Trade_soviet = {
-			picture = idea_SWE_Soviet_Trade
+			picture = idea_SWE_Soviet_Trade_sweden
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.15
@@ -284,7 +284,7 @@ ideas = {
 		}
 
 		SWE_Germany_Trade_sweden = {
-			picture = idea_SWE_Germany_Trade
+			picture = idea_SWE_Germany_Trade_sweden
 			allowed = { always = yes }
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -295,7 +295,7 @@ ideas = {
 		}
 
 		SWE_Regulation = {
-			picture = idea_
+			picture = idea_SWE_Regulation
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
