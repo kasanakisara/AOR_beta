@@ -31,7 +31,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			country_event = {
+				id = FRA.11
+				days = 7
+			}
 		}
 		
 	}
@@ -60,7 +63,10 @@ focus_tree = {
 		
 
 		completion_reward = {	
-			
+			country_event = {
+				id = FRA.12
+				days = 7
+			}
 		}
 	}
 	focus = {
@@ -87,7 +93,10 @@ focus_tree = {
 		
 
 		completion_reward = {	
-			
+			country_event = {
+				id = FRA.12
+				days = 7
+			}
 		}
 	}
 	focus = {

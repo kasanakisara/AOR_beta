@@ -181,11 +181,30 @@ country_event = { #米勒兰接任
 	}
 }
 
-country_event = { #
+country_event = { #提议内阁
 	id = FRA.11
 	title = FRA.11.t
 	desc = FRA.11.d
 	is_triggered_only = yes
+	option = {
+		name = FRA.11.a #按照三叛徒内阁
+		complete_national_focus = AOR_FRA_Carry_forward_the_old_cabinet
+	}
+	option = {
+		name = FRA.11.b #邀请普恩加莱组阁
+		complete_national_focus = AOR_FRA_Out_of_the_old_shadows
+	}
+}
+
+country_event = { #议会的演说
+	id = FRA.12
+	title = FRA.12.t
+	desc = FRA.12.d
+	is_triggered_only = yes
+	option = {
+		name = FRA.12.a #
+		complete_national_focus = AOR_FRA_Shackles
+	}
 }
 
 #####################################################################################
