@@ -1,5 +1,8 @@
 ﻿capital = 37
 
+load_oob = "AOR_LAND_DEN"
+set_naval_oob = "DEN_naval_1919"
+
 recruit_character = Otto_Liebe
 recruit_character = Otto_Liebe_advisor
 
@@ -17,6 +20,8 @@ set_technology = {
 	tech_engineers = 1
 	interwar_antiair = 1
 	cv_early_fighter = 1
+	early_ship_hull_light_cruiser = 1
+	early_ship_hull_submarine = 1
 }
 
 create_country_leader = {
@@ -78,4 +83,35 @@ add_ideas = {
 	Christian_X
 	serious_neutral_stance
 }
+
+create_equipment_variant = {
+	name = "Rota Class"								
+	type = ship_hull_submarine_1
+	name_group = DEN_SS_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "Herluf Trolle Class"				
+	type = ship_hull_cruiser_coastal_defense_ship
+	name_group = DEN_CA_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_torpedo_1
+	}
+}
+
 
