@@ -1891,7 +1891,7 @@
 1890;9;4;244;sea;true;ocean;0
 1891;9;6;0;land;false;plains;5
 1892;9;6;45;land;true;mountain;2
-1893;9;6;150;land;false;urban;6
+1893;9;6;150;land;false;hills;6
 1894;9;6;232;sea;false;ocean;0
 1895;9;8;240;sea;false;ocean;0
 1896;9;9;10;land;false;urban;7
@@ -11891,7 +11891,7 @@
 11890;172;189;97;land;false;forest;2
 11891;172;189;147;land;true;mountain;1
 11892;172;189;202;land;true;plains;2
-11893;172;192;62;land;false;hills;6
+11893;172;192;62;land;false;urban;6
 11894;172;195;27;land;true;hills;7
 11895;172;195;82;land;false;mountain;1
 11896;172;198;47;land;false;mountain;6
