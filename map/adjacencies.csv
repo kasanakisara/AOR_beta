@@ -10,10 +10,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
-3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
-3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
 3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
 11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
+3260;3325;sea;2408;-1;-1;-1;-1;;Sjaelland-Fyn
+13268;3325;sea;3325;-1;-1;-1;-1;;Fyn-Jylland#日德兰
+3374;13269;sea;2408;2971;1622;2973;1620;;SdFyn-Langeland #日德兰
+13269;13270;sea;2408;2975;1619;2977;1618;;Langeland-Lolland #日德兰
+13270;3305;sea;2408;2987;1617;2989;1619;;Lolland-Själland #日德兰
+13268;6364;sea;13268-1;-1;-1;-1;;Fyn-SdrJylland #日德兰
 83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
 185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
 83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
