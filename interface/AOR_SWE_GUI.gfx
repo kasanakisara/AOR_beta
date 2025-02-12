@@ -1,0 +1,116 @@
+spriteTypes = {
+
+	###图片###########
+	spriteType = {
+		name = "GFX_idea_BRA_wansuifongsaika"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_4.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_5.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_wansuifongsaika"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_6.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_7.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_8.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_9.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_10.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_wansuifongsaika"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_11.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_12_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_12_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_12_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bujiedebaizang"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_12_4.png"
+	}
+
+	#######指针#########
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_4.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_5.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_6.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_7.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_8.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_9.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_shengbaoluoxiedin"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_10.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nanmeidekanshouren"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_11.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_yidaobahen"
+		texturefile = "gfx/interface/AOR_gui/SWE/SWE_clock_12.png"
+	}
+}
+
+
