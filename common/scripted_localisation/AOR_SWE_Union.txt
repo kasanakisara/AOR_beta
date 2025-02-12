@@ -340,19 +340,10 @@ defined_text = {
 }
 
 defined_text = { #GUI底板
-    name = SWE_Union_gui_bg
-    text = {
-        trigger = {
-            check_variable = { SWE_Union_Stage = 1 }
-        }
-        localization_key = GFX_SWE_Union_gui_1
-    }
-    text = {
-        trigger = {
-            check_variable = { SWE_Union_Stage = 2 }
-        }
-        localization_key = GFX_SWE_Union_gui_2
-    }
+    name = SWE_Union_gui_getpicture
+    
+    text = {trigger = {check_variable = { SWE_Union_Stage = 1 }}localization_key = GFX_SWE_Union_gui_1}
+    text = {trigger = {check_variable = { SWE_Union_Stage = 2 }}localization_key = GFX_SWE_Union_gui_2}
     text = {
         trigger = {
             check_variable = { SWE_Union_Stage = 3 }

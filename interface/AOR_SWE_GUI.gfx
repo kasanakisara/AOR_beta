@@ -2,52 +2,48 @@ spriteTypes = {
 
 	###图片###########
 	spriteType = {
-		name = "GFX_SWE_Union_gui_1"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_1.png"
+		name = "GFX_SWE_Union_gui_entry"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_1.dds"
+		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_SWE_Union_gui_2"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_2.png"
-	}
-	spriteType = {
-		name = "GFX_SWE_Union_gui_3"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_3.png"
-	}
+	spriteType = { name = "GFX_SWE_Union_gui_1" texturefile = "gfx//interface//AOR_gui//SWE//SWE_1.dds" }
+	spriteType = { name = "GFX_SWE_Union_gui_2" texturefile = "gfx//interface//AOR_gui//SWE//SWE_2.dds" }
+	spriteType = { name = "GFX_SWE_Union_gui_3" texturefile = "gfx//interface//AOR_gui//SWE//SWE_3.dds" }
 	spriteType = {
 		name = "GFX_SWE_Union_gui_4"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_4.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_4.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_5"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_5.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_5.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_6"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_6.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_6.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_7"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_7.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_7.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_8"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_8.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_8.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_9"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_9.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_9.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_10"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_10.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_10.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_11"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_11.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_11.png"
 	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_12"
-		texturefile = "gfx/interface/AOR_gui/SWE/SWE_12.png"
+		texturefile = "gfx//interface//AOR_gui//SWE//SWE_12.png"
 	}
 
 }

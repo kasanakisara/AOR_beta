@@ -9,7 +9,7 @@ scripted_gui = {
 		}
 
 		properties = {
-			SWE_Union_GUI_background_entry = { image = "[SWE_Union_gui_bg]" }
+			SWE_Union_GUI_background_entry = { image = "[SWE_Union_gui_getpicture]" }
 		}
 	}
 	
