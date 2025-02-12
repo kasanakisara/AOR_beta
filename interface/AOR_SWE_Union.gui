@@ -1,4 +1,4 @@
-@PARANOIA_PARANOIAMETER_MAIN_X = 20
+@PARANOIA_PARANOIAMETER_MAIN_X = 50
 @PARANOIA_PARANOIAMETER_MAIN_Y = 40
 @PARANOIA_TEXT_X = 50 #Needs to be -145(overlapping sword) / -130(evading sword) / -140(bottom) relative to MAIN
 @PARANOIA_TEXT_Y = 0 #Needs to be +80(overlapping sword) / +110(bottom) relative to MAIN
@@ -7,11 +7,11 @@ guiTypes = { #主体结构
 	containerWindowType = {
 		name = "AOR_SWE_Union_gui"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 210 }
+		size = { width = 100% height= 510 }
 
 		iconType = {
-			name = "SWE_Union_GUI_progress_bar"
-			spriteType = "GFX_Union_GUI_progressbar"
+			name = "SWE_Union_GUI_background"
+			spriteType = "GFX_SWE_Union_gui_entry"
 			position = { x=@PARANOIA_PARANOIAMETER_MAIN_X	 y=@PARANOIA_PARANOIAMETER_MAIN_Y }
 		}
 

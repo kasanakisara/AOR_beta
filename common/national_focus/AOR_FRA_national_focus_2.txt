@@ -46,22 +46,10 @@ focus_tree = {
 		mutually_exclusive = { focus = AOR_FRA_Out_of_the_old_shadows }
 		x = -1
 		y = 1
-
 		cost = 0
-
-		always = no
-
-		
 		available = {
-			
+			always = no
 		}
-
-		bypass = {
-			
-		}
-		
-		
-
 		completion_reward = {	
 			country_event = {
 				id = FRA.12
@@ -77,21 +65,10 @@ focus_tree = {
 		mutually_exclusive = { focus = AOR_FRA_Carry_forward_the_old_cabinet }
 		x = 1
 		y = 1
-
 		cost = 0
-
-		always = no
-
 		available = {
-			
+			always = no
 		}
-
-		bypass = {
-			
-		}
-		
-		
-
 		completion_reward = {	
 			country_event = {
 				id = FRA.12

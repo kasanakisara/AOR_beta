@@ -338,3 +338,87 @@ defined_text = {
         localization_key = SWE_policy_great_crisis
     }
 }
+
+defined_text = { #GUI底板
+    name = SWE_Union_gui_bg
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 1 }
+        }
+        localization_key = GFX_SWE_Union_gui_1
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 2 }
+        }
+        localization_key = GFX_SWE_Union_gui_2
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 3 }
+        }
+        localization_key = GFX_SWE_Union_gui_3
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 4 }
+        }
+        localization_key = GFX_SWE_Union_gui_4
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 5 }
+        }
+        localization_key = GFX_SWE_Union_gui_5
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 6 }
+        }
+        localization_key = GFX_SWE_Union_gui_6
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 7 }
+        }
+        localization_key = GFX_SWE_Union_gui_7
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 8 }
+        }
+        localization_key = GFX_SWE_Union_gui_8
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 9 }
+        }
+        localization_key = GFX_SWE_Union_gui_9
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 10 }
+        }
+        localization_key = GFX_SWE_Union_gui_10
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 11 }
+        }
+        localization_key = GFX_SWE_Union_gui_11
+    }
+    text = {
+        trigger = {
+            check_variable = { SWE_Union_Stage = 12 }
+        }
+        localization_key = GFX_SWE_Union_gui_12
+    }
+
+    text = {
+        trigger = {
+            #general
+        }
+        localization_key = GFX_SWE_Union_gui_entry
+    }
+
+}
