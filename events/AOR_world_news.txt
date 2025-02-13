@@ -3017,3 +3017,16 @@ news_event = { #协约国解散
 		name = AOR_news.206.a
 	}
 }
+
+news_event = {#段祺瑞吞并保定政府
+	id = AOR_news.207
+	title = AOR_news.207.t
+	desc = AOR_news.207.d
+	picture = GFX_AOR_news.207_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.207.a
+	}
+}

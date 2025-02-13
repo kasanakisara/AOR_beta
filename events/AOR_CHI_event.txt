@@ -187,6 +187,7 @@ country_event = {
 	option = {
 		name = CHI.6.a
 		news_event = {id=AOR_news.88}
+		country_event = { days = 220  id =CHI.13 }
 		hidden_effect = {
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
@@ -197,6 +198,29 @@ country_event = {
 	option = {
 		name = CHI.6.b
 		news_event = {id=AOR_news.88}
+		country_event = { days = 220  id =CHI.14 }
+		hidden_effect = {
+			UPC = {
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+			}
+		}
+	}
+	option = {
+		name = CHI.6.c
+		news_event = {id=AOR_news.88}
+		country_event = { days = 220  id =CHI.14 }
+		hidden_effect = {
+			KMT = {
+				load_oob = "AOR_LAND_CHI_KMT"
+				load_oob = "AOR_LAND_CHI_KMT"
+			}
+		}
+	}
+	option = {
+		name = CHI.6.e
+		news_event = {id=AOR_news.88}
+		country_event = { days = 220  id =CHI.13 }
 		hidden_effect = {
 			UPC = {
 				load_oob = "UPC_M_Nandu"
@@ -537,11 +561,8 @@ country_event = {
 	id = CHI.13
 	title = CHI.13.t
 	desc = CHI.13.d
-	trigger = {
-		date > 1922.9.1
-		tag = CHI
-	}
 	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
 	}
@@ -614,6 +635,83 @@ country_event = {
 		news_event = {id=AOR_news.96}
 	}
 }
+
+#央皖合流(皖系改名）
+country_event = {
+	id = CHI.14
+	title = CHI.14.t
+	desc = CHI.14.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		hidden_effect = {
+			MON = {
+				annex_country = { 
+					target = CHI 
+					transfer_troops = no 
+				}
+				load_oob = "AOR_LAND_CHI_CENTRAL"
+				create_faction = Zhiyang_Union
+				add_to_faction = CHI
+				white_peace = CHI
+			}
+			NAN = {
+				load_oob = "AOR_LAND_CHI_VAN_2"
+				608={set_demilitarized_zone=NO}
+				transfer_state = 876
+				transfer_state = 612
+				transfer_state = 756
+				transfer_state = 600
+				transfer_state = 899
+				transfer_state = 897
+				transfer_state = 898
+				transfer_state = 595
+				transfer_state = 596
+				transfer_state = 895
+				transfer_state = 894
+				transfer_state = 892
+				transfer_state = 749
+				transfer_state = 606
+
+				add_state_core = 876
+				add_state_core = 612
+				add_state_core = 756
+				add_state_core = 600
+				add_state_core = 899
+				add_state_core = 897
+				add_state_core = 898
+				add_state_core = 595
+				add_state_core = 596
+				add_state_core = 895
+				add_state_core = 894
+				add_state_core = 892
+				add_state_core = 749
+				add_state_core = 606
+
+			}
+			MAN = {
+				load_oob = "AOR_LAND_CHI_MAN"
+				714={set_demilitarized_zone=no}
+				761={set_demilitarized_zone=no}
+				913={set_demilitarized_zone=no}
+				873={set_demilitarized_zone=no}
+				717={set_demilitarized_zone=no}
+				715={set_demilitarized_zone=no}
+				891={set_demilitarized_zone=no}
+				328={set_demilitarized_zone=no}
+				716={set_demilitarized_zone=no}
+				875={set_demilitarized_zone=no}
+				874={set_demilitarized_zone=no}
+				}
+		}
+		name = CHI.14.a
+		news_event = {id=AOR_news.96}
+	}
+}
+
 country_event = {
 	id = CHI.15 #乙末西征
 	title = CHI.15.t
