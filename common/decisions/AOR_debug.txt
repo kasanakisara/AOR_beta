@@ -1,7 +1,7 @@
 ### debug决议 ###
 Hackers_debug = {
     SWE_Uniondrama = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -18,7 +18,7 @@ Hackers_debug = {
     }
 
     USA_Civilwar_begin = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = USA
         }
@@ -37,7 +37,7 @@ Hackers_debug = {
     }
 
     SWE_focus_test_3 = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -54,7 +54,7 @@ Hackers_debug = {
     }
 
     SWE_Folkhemmet_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -71,7 +71,7 @@ Hackers_debug = {
     }
 
     SWE_Open_the_door_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -88,7 +88,7 @@ Hackers_debug = {
     }
 
     FRA_Millerand_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = FRA
         }

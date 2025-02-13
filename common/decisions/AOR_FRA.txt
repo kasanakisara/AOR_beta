@@ -59,19 +59,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
-
-		#modifier = {
-		#	
-	   	#}
 
 		complete_effect = {  
 			set_country_flag = hswoc
@@ -99,15 +86,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
 			ROOT = {
@@ -143,15 +121,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
 			ROOT = {
@@ -210,15 +179,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
 			ROOT = {
@@ -573,6 +533,174 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 
 		complete_effect = {  
 
+		}
+	}
+}
+
+AOR_FRA_Social_Crisis_decision_category = {
+	##以下为调试决议##
+	FRA_I_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+			}
+		}
+	}
+
+	FRA_II_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+			}
+		}
+	}
+
+	FRA_III_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+			}
+		}
+	}
+
+	FRA_IV_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+			}
+		}
+	}
+
+	FRA_V_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+			}
 		}
 	}
 }

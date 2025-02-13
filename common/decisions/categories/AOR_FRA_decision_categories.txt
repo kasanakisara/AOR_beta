@@ -33,3 +33,20 @@ AOR_FRA_Millerand_President_decision = { #叛徒总统
 	visible_when_empty = yes
 	priority = 110
 }
+
+AOR_FRA_Social_Crisis_decision_category = { #叛徒总统
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		OR = {
+			has_idea = AOR_FRA_A_Growing_Social_Crisis
+			has_idea = AOR_FRA_A_Growing_Social_Crisis_I
+			has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+			has_idea = AOR_FRA_A_Growing_Social_Crisis_III
+			has_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+		}
+	}
+	visible_when_empty = yes
+	priority = 110
+}

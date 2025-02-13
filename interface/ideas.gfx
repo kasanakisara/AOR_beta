@@ -6497,10 +6497,10 @@ spriteTypes = {
 		name = "GFX_idea_H1N1"
 		texturefile = "gfx/interface/ideas/idea_H1N1.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_A_land_surrounded_by_mountains_and_seas"
-		texturefile = "gfx/interface/ideas/idea_A_land_surrounded_by_mountains_and_seas.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_idea_A_land_surrounded_by_mountains_and_seas"
+	#	texturefile = "gfx/interface/ideas/idea_A_land_surrounded_by_mountains_and_seas.dds"
+	#}
 	spriteType = {
 		name = "GFX_idea_Great_Slavic_zeal"
 		texturefile = "gfx/interface/ideas/idea_Great_Slavic_zeal.dds"
