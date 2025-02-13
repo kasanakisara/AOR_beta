@@ -16,15 +16,6 @@ guiTypes = { #主体结构
 		}
 
 		instantTextBoxType = {
-			name = "AOR_SWE_Union_gui_title"
-			position = { x = @PARANOIA_TEXT_X y = @PARANOIA_TEXT_Y }
-			font = "hoi_18mbs"
-			text = "SWE_Union_title"
-			format = center
-			maxWidth = 400
-		}
-
-		instantTextBoxType = {
 			name = "AOR_SWE_Union_gui_num"
 			position = { x = 50 y = 100 }
 			font = "hoi_18mbs"
