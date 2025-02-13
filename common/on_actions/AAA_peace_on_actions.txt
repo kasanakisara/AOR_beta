@@ -2187,7 +2187,9 @@ on_actions = {
 					puppet = CRO
 				}
 			}
+
 			####半岛沙漠战争###（上面的没写完在这条上方继续写就好）
+
 			##内志战争##
 			else_if = {
 				limit = {
@@ -2267,6 +2269,7 @@ on_actions = {
 					transfer_state = 956
 				}
 			}
+
 			#汉志战争
 			else_if = {
 				limit = {
@@ -2350,6 +2353,131 @@ on_actions = {
 					}
 						set_cosmetic_tag = ARA_unified
 					}
+				}
+			}
+
+		#####罗马尼亚,波兰，乌克兰苏维埃大战乌克兰#####
+			else_if = {
+				limit = {
+					#罗马尼亚胜利
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#罗马尼亚胜利
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#乌克兰苏维埃
+					FROM = {
+						original_tag = UKR
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#乌克兰苏维埃
+					FROM = {
+						original_tag = UKR
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
 				}
 			}
 		}
