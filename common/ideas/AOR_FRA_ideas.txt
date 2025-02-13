@@ -85,11 +85,70 @@ ideas = {
 			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
 
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.1
 				consumer_goods_factor = 0.35
 				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.05
 				Marxism_drift = 0.01
-				Facism_drift =0.01
+				Absolutism_drift = 0.01
+				custom_modifier_tooltip = FRA_Social_Crisis_I_tt
+				
+			}
+		}
+
+		AOR_FRA_A_Growing_Social_Crisis_I = { #迫在眉睫的社会危机
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.1
+				Marxism_drift = 0.05
+				Absolutism_drift = 0.05
+				custom_modifier_tooltip = FRA_Social_Crisis_II_tt
+			}
+		}
+
+		AOR_FRA_A_Growing_Social_Crisis_II = { #迫在眉睫的社会危机-二阶段
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.45
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.15
+				Marxism_drift = 0.05
+				Absolutism_drift = 0.05
+				custom_modifier_tooltip = FRA_Social_Crisis_III_tt
+			}
+		}
+
+		AOR_FRA_A_Growing_Social_Crisis_III = { #濒临崩溃的社会危机
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.2
+				Marxism_drift = 0.1
+				Absolutism_drift = 0.1
+				custom_modifier_tooltip = FRA_Social_Crisis_IV_tt
+			}
+		}
+
+		AOR_FRA_A_Growing_Social_Crisis_IV = { #完全崩溃的社会危机
+			picture = GFX_AOR_goal_FRA_A_Growing_Social_Crisis
+
+			modifier = {
+				stability_factor = -0.35
+				consumer_goods_factor = 0.55
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.35
+				Marxism_drift = 0.15
+				Absolutism_drift = 0.15
+				custom_modifier_tooltip = FRA_Social_Crisis_V_tt
 			}
 		}
 
@@ -155,6 +214,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				political_power_factor = -0.1
+				FRE_democratic_drift = -0.02
+				SOC_democratic_drift = -0.02
 			}
 		}
 	}

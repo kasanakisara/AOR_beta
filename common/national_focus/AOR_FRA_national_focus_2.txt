@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 5
+			add = 50
 			tag = FRA
 		}
 	}
@@ -20,14 +20,8 @@ focus_tree = {
 		
 		cost = 0
 
-  		always = no
-
 		available = {
-			
-		}
-
-		bypass = {
-			
+			always = no
 		}
 		
 		completion_reward = {
@@ -696,7 +690,10 @@ focus_tree = {
 
 	
 		available = {
-		
+			custom_trigger_tooltip = {
+				has_completed_focus = AOR_FRA_With_the_power_of_money
+				tooltip = FRA_Millerand_finish_tt
+			}
 		}
 
 		bypass = {
