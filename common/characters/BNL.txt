@@ -87,7 +87,7 @@ characters = {
 	
 	#戈德弗里德·范·沃斯特·托特·沃斯特
 	BNL_godfried_van_voorst_tot_voorst={
-		name= godfried_van_voorst_tot_voorst
+		name = godfried_van_voorst_tot_voorst
 		portraits={
 			army={
 				small="gfx/interface/ideas/advisors/"
@@ -108,14 +108,12 @@ characters = {
 			slot = theorist
 			idea_token = BNL_godfried_van_voorst_tot_voorst
 			ledger = army
-				allowed = {
-					original_tag = BNL
-				}
-				
-				traits = {
-					military_theorist
-				}
+			allowed = {
+				original_tag = BNL
+			}
+			traits = {
+				military_theorist
+			}
 		}
 	}
-
 }
