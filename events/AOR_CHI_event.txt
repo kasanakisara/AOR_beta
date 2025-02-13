@@ -659,6 +659,7 @@ country_event = {
 				white_peace = CHI
 			}
 			NAN = {
+				set_cosmetic_tag = NAN
 				load_oob = "AOR_LAND_CHI_VAN_2"
 				608={set_demilitarized_zone=NO}
 				transfer_state = 876
