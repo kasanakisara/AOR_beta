@@ -2398,7 +2398,10 @@ on_actions = {
 					transfer_state = 201
 				}
 				GLC = {
-					annex_country = { target = UPR transfer_troops =  no }
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
 				}
 			}
 			else_if = {
@@ -2442,7 +2445,10 @@ on_actions = {
 					transfer_state = 201
 				}
 				GLC = {
-					annex_country = { target = UPR transfer_troops =  no }
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
 				}
 			}
 			else_if = {
@@ -2486,7 +2492,10 @@ on_actions = {
 					transfer_state = 201
 				}
 				GLC = {
-					annex_country = { target = UPR transfer_troops =  no }
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
 				}
 			}
 			else_if = {
@@ -2530,7 +2539,10 @@ on_actions = {
 					transfer_state = 201
 				}
 				GLC = {
-					annex_country = { target = UPR transfer_troops =  no }
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
 				}
 			}
 		}
