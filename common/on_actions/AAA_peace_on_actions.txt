@@ -2397,12 +2397,6 @@ on_actions = {
 				LIT = {
 					transfer_state = 201
 				}
-				GLC = {
-					transfer_state = 89
-					transfer_state = 91
-					transfer_state = 93
-					transfer_state = 199
-				}
 			}
 			else_if = {
 				limit = {
@@ -2443,12 +2437,6 @@ on_actions = {
 				}
 				LIT = {
 					transfer_state = 201
-				}
-				GLC = {
-					transfer_state = 89
-					transfer_state = 91
-					transfer_state = 93
-					transfer_state = 199
 				}
 			}
 			else_if = {
@@ -2491,12 +2479,6 @@ on_actions = {
 				LIT = {
 					transfer_state = 201
 				}
-				GLC = {
-					transfer_state = 89
-					transfer_state = 91
-					transfer_state = 93
-					transfer_state = 199
-				}
 			}
 			else_if = {
 				limit = {
@@ -2537,12 +2519,6 @@ on_actions = {
 				}
 				LIT = {
 					transfer_state = 201
-				}
-				GLC = {
-					transfer_state = 89
-					transfer_state = 91
-					transfer_state = 93
-					transfer_state = 199
 				}
 			}
 		}
