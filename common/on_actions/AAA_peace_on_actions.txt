@@ -2441,7 +2441,7 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
-					#乌克兰苏维埃
+					#乌克兰苏维埃胜利
 					FROM = {
 						original_tag = UKR
 					}
@@ -2461,9 +2461,50 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
-					#乌克兰苏维埃
+					#乌克兰苏维埃胜利
 					FROM = {
 						original_tag = UKR
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#苏俄胜利
+					FROM = {
+						original_tag = RUS
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#苏俄胜利
+					FROM = {
+						original_tag = RUS
 					}
 					ROOT = {
 						original_tag = UPR
