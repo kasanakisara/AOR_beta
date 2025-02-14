@@ -6,6 +6,7 @@ technologies = {
 	@1940 = 4
 	@1950 = 5
 	@1960 = 6
+
 	early_armor_car = {
 		show_equipment_icon = yes
 		enable_equipments = {
@@ -16,10 +17,6 @@ technologies = {
 			independent_suspension
 			wheeled_fixed_superstructure_turret
 			wheeled_open_combat_room
-			# tank_torsion_bar_suspension
-			# tank_christie_suspension
-			# tank_bogie_suspension
-			# tank_interleaved_suspension
 			tank_wheeled_suspension
 			tank_half_track_suspension
 			tank_light_fixed_superstructure_turret
@@ -31,10 +28,6 @@ technologies = {
 		}
 		enable_subunits = {
 			armored_car
-		}
-		on_research_complete_limit = {
-		}
-		on_research_complete = {
 		}
 		path = {
 			leads_to_tech = interwar_wheeled_chassis
@@ -49,15 +42,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1900
+		start_year = 1910
+
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 1 y = 0 }
+			position = { x = 4 y = @1900 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
+
 		}
 	}
 	tracked_suspension = {
@@ -69,12 +64,6 @@ technologies = {
 			tank_christie_suspension
 			tank_bogie_suspension
 			tank_interleaved_suspension
-		}
-		enable_subunits = {
-		}
-		on_research_complete_limit = {
-		}
-		on_research_complete = {
 		}
 		path = {
 			leads_to_tech = great_war_heavy_chassis
@@ -100,14 +89,6 @@ technologies = {
 		show_equipment_icon = yes
 		enable_equipments = {
 			wheeled_chassis_1
-		}
-		enable_equipment_modules = {
-		}
-		enable_subunits = {
-		}
-		on_research_complete_limit = {
-		}
-		on_research_complete = {
 		}
 		path = {
 			leads_to_tech = imporve_wheeled_chassis

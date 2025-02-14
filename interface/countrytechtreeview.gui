@@ -868,7 +868,7 @@ guiTypes = {
 				}
 			}
 			gridboxtype = {
-				name = "early_armor_car_tree"
+				name = "tech_trucks_tree"
 				position = { x= 200 y = 40 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

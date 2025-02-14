@@ -6,6 +6,42 @@ technologies = {
 	@1940 = 4
 	@1950 = 5
 	@1960 = 6
+
+	tech_trucks = {
+
+		enable_subunits = {
+			mot_anti_tank_brigade
+			mot_artillery_brigade
+			mot_anti_air_brigade
+			motorized
+		}
+
+		enable_equipments = {
+			motorized_equipment
+		}
+
+		enable_equipment_modules = {
+			tank_wheeled_suspension
+		}
+
+		path = {
+			leads_to_tech = early_armor_car
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1900
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 1 y = @1900 }
+		}
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+	}
+
 	early_armor_car = {
 		show_equipment_icon = yes
 		enable_equipments = {
@@ -16,10 +52,6 @@ technologies = {
 			independent_suspension
 			wheeled_fixed_superstructure_turret
 			wheeled_open_combat_room
-			# tank_torsion_bar_suspension
-			# tank_christie_suspension
-			# tank_bogie_suspension
-			# tank_interleaved_suspension
 			tank_wheeled_suspension
 			tank_half_track_suspension
 			tank_light_fixed_superstructure_turret
@@ -49,10 +81,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1900
+		start_year = 1910
+
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 1 y = 0 }
+			position = { x = 5 y = 0 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -60,6 +93,7 @@ technologies = {
 		categories = {
 		}
 	}
+
 	tracked_suspension = {
 		show_equipment_icon = yes
 		enable_equipments = {
