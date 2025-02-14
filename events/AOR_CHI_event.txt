@@ -203,6 +203,7 @@ country_event = {
 			UPC = {
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
 			}
 		}
 	}
@@ -223,6 +224,7 @@ country_event = {
 		country_event = { days = 220  id =CHI.13 }
 		hidden_effect = {
 			UPC = {
+				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 			}
