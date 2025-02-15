@@ -66,11 +66,19 @@ country_event = { #波兰索要布列斯特
 			transfer_state = 94
 			transfer_state = 95
 			transfer_state = 97
+		    add_state_claim = 94
+			add_state_claim = 95
+			add_state_claim = 97
 			}
 	}
 
 	option = {
 		name = LIT.2.b #不同意割让
+		POL = {
+			add_state_claim = 94
+			add_state_claim = 95
+			add_state_claim = 97
+		}
 	}
 }
 

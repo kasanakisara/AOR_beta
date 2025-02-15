@@ -15,9 +15,11 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = WRU
+		add_core_of = UPR
 		add_core_of = UKR
 		add_core_of = ROM
 		add_claim_by = POL
+		add_claim_by = GLC
 	}
 	provinces={
 		577 3407

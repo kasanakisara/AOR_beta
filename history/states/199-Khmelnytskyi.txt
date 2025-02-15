@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			3457 3
 		}
-		owner = WRU
+		owner = UPR
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 		add_core_of = UKR
 		add_core_of = WRU
 		add_core_of = UPR
-		add_core_of = GLC
+		add_claim_by = GLC
 	}
 
 	provinces={
