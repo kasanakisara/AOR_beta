@@ -760,6 +760,7 @@ news_event = { #日本米骚乱平息
 	picture = GFX_AOR_news.47_pic
 	is_triggered_only = yes
 	fire_only_once = yes 
+	major = yes
 	option = {
 		name = AOR_news.47.a
 	}
@@ -787,6 +788,7 @@ news_event = { #三廿运动！（ 中国爆发大规模抗议！）
 	picture = GFX_AOR_news.49_pic
 	is_triggered_only = yes
 	fire_only_once = yes 
+	major = yes
 	option = {
 		name = AOR_news.49.a
 	}
@@ -833,12 +835,9 @@ news_event = { #抗英义勇军
 	title = AOR_news.52.t
 	desc = AOR_news.52.d
 	picture = GFX_AOR_news.52_pic
-	fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes 
 	major = yes
-	trigger = {
-	    date > 1920.9.13
-		date < 1920.9.15
-	}
 	immediate = {
 	}
 	option = {
