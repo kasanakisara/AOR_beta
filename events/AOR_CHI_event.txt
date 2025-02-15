@@ -117,11 +117,8 @@ country_event = {
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	trigger = {
-		date > 1920.3.10
-		tag = CHI
-	}
 	fire_only_once = yes
+	is_triggered_only = yes
 	immediate = {
 	}
 	option = {
