@@ -20,10 +20,6 @@ technologies = {
 			motorized_equipment
 		}
 
-		enable_equipment_modules = {
-			tank_wheeled_suspension
-		}
-
 		path = {
 			leads_to_tech = early_armor_car
 			research_cost_coeff = 1
