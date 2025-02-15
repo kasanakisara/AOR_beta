@@ -177,7 +177,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			news_event = AOR_news.164
+			news_event = AOR_news.203
 			add_manpower=-500
 			swap_ideas={
 				remove_idea=USA_AmericanAnxietyA

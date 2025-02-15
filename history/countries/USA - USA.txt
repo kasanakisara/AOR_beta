@@ -208,7 +208,7 @@ add_ideas = {
 set_variable = { var = wanla_quandouwanle }
 
 USA = {country_event = {
-	days = 30 id = USA.105
+	days = 65 id = USA.105
 	}
 }
 USA = {country_event = {
