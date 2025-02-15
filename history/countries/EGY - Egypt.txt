@@ -75,4 +75,5 @@ set_cosmetic_tag = EGY_UK # British EGY
 
  EGY = {
 	country_event = { days = 303 id = EGY.17 }
+	country_event = { days = 7 id = EGY.18 }
  }
