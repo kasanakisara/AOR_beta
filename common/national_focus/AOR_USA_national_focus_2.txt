@@ -215,6 +215,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			news_event = AOR_news.208
 			if={
 				limit={
 					has_idea=USA_dazhanzhimo

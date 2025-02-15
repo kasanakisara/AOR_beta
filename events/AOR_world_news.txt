@@ -3030,3 +3030,16 @@ news_event = {#段祺瑞吞并保定政府
 		name = AOR_news.207.a
 	}
 }
+
+news_event = {#美国退出协约国
+	id = AOR_news.208
+	title = AOR_news.208.t
+	desc = AOR_news.208.d
+	picture = GFX_AOR_news.208_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.208.a
+	}
+}
