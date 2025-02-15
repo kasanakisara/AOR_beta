@@ -12,16 +12,16 @@ state={
 		victory_points = {
 			422 3
 		}
-		owner = WRU
+		owner = UPR
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = POL
+		add_core_of = UPR
 		add_core_of = UKR
-		add_core_of = GLC
 		add_core_of = WRU
 		add_core_of = UPR
+		add_claim_by = GLC
 
 	}
 

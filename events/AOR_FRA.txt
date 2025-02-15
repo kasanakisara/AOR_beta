@@ -103,7 +103,7 @@ country_event = {
 		FRA = {
 			country_event = {
 				id = FRA.8
-				days = 20
+				days = 186
 			}
 		}
 	}
@@ -126,14 +126,14 @@ country_event = {
 			}
 			country_event = {
 				id = FRA.9
-				days = 7
+				days = 186
 			}
 		}
 	}
 }
 
 country_event = {
-	id = FRA.9 #协约国解散
+	id = FRA.9 #协约国正式解散
 	title = FRA.9.t
 	desc = FRA.9.d
 	fire_only_once = yes
