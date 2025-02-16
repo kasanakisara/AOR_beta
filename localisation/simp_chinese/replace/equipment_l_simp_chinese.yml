@@ -37,8 +37,10 @@
 
   machine_equipment_weapons3:0 "轻量化"
   machine_equipment_weapons3_desc:0 "在原先气冷式机枪的基础上改进了机枪的重量，使得机枪的重量更加轻便，可以加装在车辆及飞行器上。"
+
   machine_equipment_weapons4:0 "机枪瞄具"
   machine_equipment_weapons4_desc:0 "加装在机枪上的机枪瞄具，让枪手可以远距离压制或打击目标。"
+  
   machine_equipment_weapons5:0 "三角支架"
   machine_equipment_weapons5_desc:0 "三角支架上加装了方向轴，机枪拥有了更加宽阔的射击视线。"
 
@@ -222,8 +224,9 @@
 
 
      ###步兵分类###
+     category_machine_weapons:0 "机枪装备"
      category_Infantry_uniforms: "陆军制服"
      infantry_weapons: "步兵装备"
-     category_machine_weapons: "机枪装备"
+     category_machine: "机枪营"
 
 
