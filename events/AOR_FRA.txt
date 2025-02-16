@@ -2,6 +2,7 @@
 add_namespace = FRA_BRA
 add_namespace = FRA_USA
 add_namespace = FRA
+add_namespace = FRA_Social_Crisis
 
 country_event = {
 	id = FRA.1 #出游
@@ -202,7 +203,7 @@ country_event = { #议会的演说
 	desc = FRA.12.d
 	is_triggered_only = yes
 	option = {
-		name = FRA.12.a #
+		name = FRA.12.a
 		complete_national_focus = AOR_FRA_Shackles
 	}
 }
@@ -256,4 +257,11 @@ country_event = {
 	option = {
 		name = FRA_USA.1.a
 	}
+}
+
+#################
+## 法国社会危机 ##
+#################
+country_event = {
+	id = FRA_Social_Crisis.1
 }
