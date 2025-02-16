@@ -703,4 +703,31 @@ AOR_FRA_Social_Crisis_decision_category = {
 			}
 		}
 	}
+
+	##以下为游玩决议##
+
+	FRA_Social_Crisis_impact = {
+		available = {
+            has_completed_focus = AOR_FRA_With_the_power_of_money
+			NOT = {
+				has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+			}
+        }
+        activation = {
+			tag = FRA
+            has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+        }
+        visible = {
+            tag = FRA
+            has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 100
+        timeout_effect = {
+            
+        }
+	}
 }
