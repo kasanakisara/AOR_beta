@@ -918,6 +918,9 @@ machine_equipment_weapons1 = {
 		category_machine_weapons = {
 			soft_attack = 0.05
 		}
+		Elite_infantry = {
+			army_supply_consumption_factor = -0.05
+		}
 
 		research_cost = 0.5
 		start_year = 1920

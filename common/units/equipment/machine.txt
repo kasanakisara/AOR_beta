@@ -1,7 +1,7 @@
 equipments = {
 
 	machine_equipment0 = {
-		year = 1918
+		year = 1900
 
 		is_archetype = yes
 		picture = archetype_machine_equipment
@@ -14,12 +14,16 @@ equipments = {
 		
 		interface_category = interface_category_land
 		
-		reliability = 0.8
+		reliability = 0.7
+		soft_attack = 10
+		breakthrough = 3
+		
+		
 
 		#Space taken in convoy
 		lend_lease_cost = 1
 
-		build_cost_ic = 1
+		build_cost_ic = 0.9
 		resources = {
 			aluminium = 1
 			steel = 2
