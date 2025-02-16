@@ -32,7 +32,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 4
 		
-		build_cost_ic = 3.5
+		build_cost_ic = 7
 		resources = {
 			tungsten = 1
 			steel = 2
@@ -67,7 +67,7 @@ equipments = {
 		ap_attack = 5
 		air_attack = 0
 		
-		build_cost_ic = 4
+		build_cost_ic = 8
 		resources = {
 			tungsten = 1
 			steel = 2
@@ -91,7 +91,7 @@ equipments = {
 
 		reliability = 0.8
 		
-		build_cost_ic = 4.5
+		build_cost_ic = 9
 		resources = {
 			tungsten = 1
 			steel = 3
@@ -100,7 +100,7 @@ equipments = {
 
 	# Nebelwerfers!
 	rocket_artillery_equipment = {
-		year = 1940
+		year = 1927
 
 		is_archetype = yes
 		picture = archetype_rocket_artillery_equipment		
@@ -128,7 +128,7 @@ equipments = {
 		ap_attack = 2
 		air_attack = 0
 		
-		build_cost_ic = 4
+		build_cost_ic = 8
 		resources = {
 			tungsten = 2
 			steel = 1
@@ -136,7 +136,7 @@ equipments = {
 	}
 	
 	rocket_artillery_equipment_1 = {
-		year = 1940
+		year = 1930
 
 		archetype = rocket_artillery_equipment
 		priority = 60
@@ -155,7 +155,7 @@ equipments = {
 		breakthrough = 12
 		soft_attack = 38
 		
-		build_cost_ic = 5
+		build_cost_ic = 10
 		resources = {
 			tungsten = 2
 			steel = 1
