@@ -8,7 +8,7 @@ phases = { # phase = no is the standard phase
 	tactical_withdrawal
 	seize_bridge
 	hold_bridge
-        chemical_warfare
+    chemical_warfare
 }
 
 tactic_basic_attack = {
@@ -72,6 +72,7 @@ tactic_assault = {
 	trigger = {
 		is_attacker = yes
 		phase = no
+		has_artillery_ratio > 0.1
 	}
 	
 	active = yes
@@ -122,9 +123,8 @@ tactic_cc_defend = {
 		is_attacker = no
 		phase = close_combat
 	}
-	
-	
 
+	active = yes
 	
 	base =  { factor = 4 }
 	picture = cc_defend
@@ -879,6 +879,41 @@ tactic_barrage = { #Superior firepower attacker tactic
 	
 	attacker = 0.1
 	defender = -0.2	
+}
+
+tactic_masterful_blitz = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		hardness > 0.5
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = panzer_leader
+			skill_advantage > 1
+		}
+	}
+	
+	active = no
+
+	base =  { 
+		factor = 4
+		modifier = {
+			add = 4
+			OR = {
+				has_trait = panzer_expert
+				has_trait = combined_arms_expert
+			}
+		}
+	}
+	
+	picture = SOV_tank_desant_blitz
+	countered_by = tactic_elastic_defense
+	
+	attacker_movement_speed = 0.5
+	combat_width = 0.1
+	attacker = 0.2
+	defender = -0.2
 }
 
 tactic_prepare_gas_attack = {

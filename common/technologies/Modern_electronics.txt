@@ -403,9 +403,15 @@ technologies = {
 			leads_to_tech = Gas_Preparation3
 			research_cost_coeff = 1
 		}
+
+		custom_modifier_tooltip = unlock_Gas_Preparation
+
+		enable_tactic = tactic_prepare_gas_attack
+		enable_tactic = tactic_gas_retreat
+
 		research_cost = 0.7
 		start_year = 1915
-        custom_modifier_tooltip = unlock_Gas_Preparation
+
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 0 }
@@ -574,11 +580,17 @@ technologies = {
 		research_cost = 0.7
 		start_year = 1920
 
+		
+		custom_modifier_tooltip = unlock_Gas
+
+		enable_tactic = tactic_gas_attack
+		enable_tactic = tactic_gas_mask
+		enable_tactic = tactic_gas_mask_charge
+
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
 		}
-		custom_modifier_tooltip = unlock_Gas
 		ai_will_do = {
 			factor = 30
 		}
