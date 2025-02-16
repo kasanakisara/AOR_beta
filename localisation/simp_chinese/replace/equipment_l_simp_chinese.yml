@@ -224,8 +224,9 @@
 
 
      ###步兵分类###
+     category_machine_weapons:0 "机枪装备"
      category_Infantry_uniforms: "陆军制服"
      infantry_weapons: "步兵装备"
-     category_machine_weapons: "机枪装备"
+     category_machine: "机枪营"
 
 

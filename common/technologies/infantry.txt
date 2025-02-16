@@ -919,8 +919,8 @@ machine_equipment_weapons1 = {
 			soft_attack = 0.05
 		}
 
-		category_machine_weapons = {
-			army_supply_consumption_factor = -0.05
+		category_machine = {
+			supply_consumption = -0.02
 		}
 
 		research_cost = 0.5

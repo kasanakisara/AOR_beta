@@ -62,6 +62,7 @@ sub_units = {
 		group = infantry
 		
 		categories = {
+		    category_machine
 			category_front_line
 			category_light_infantry
 			category_all_infantry
@@ -85,7 +86,7 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 120
-			machine_equipment_1 = 30
+			machine_equipment0 = 30
 		}
 	}
 
