@@ -41,18 +41,21 @@ equipments = {
 		year = 1918
 
 		archetype = machine_equipment0
+		parent = machine_equipment0
 		priority = 20	
 	}
 	machine_equipment_2 = {
 		year = 1918
 
 		archetype = machine_equipment0
+		parent = machine_equipment_1
 		priority = 20	
 	}
 	machine_equipment_3 = {
 		year = 1918
 
 		archetype = machine_equipment0
+		parent = machine_equipment_2
 		priority = 20	
 	}
 }

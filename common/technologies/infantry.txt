@@ -918,6 +918,7 @@ machine_equipment_weapons1 = {
 		category_machine_weapons = {
 			soft_attack = 0.05
 		}
+
 		category_machine_weapons = {
 			army_supply_consumption_factor = -0.05
 		}
@@ -989,6 +990,9 @@ machine_equipment_weapons3 = {
 
 	category_machine_weapons = {
 		maximum_speed = 0.05
+	}
+	category_machine_weapons = {
+		soft_attack = 0.05
 	}
 	research_cost = 0.3
 	start_year = 1924
