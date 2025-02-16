@@ -20,7 +20,7 @@ country_event = {
     #那就这样吧  
 	option = {  #北石勒苏益格公投入丹
 		name = NSH.1.a
-		news_event = { id = AOR_news.68 }
+		news_event = { id = AOR_news.67 }
 		DEN = { transfer_state = 839 }
 		839 = { add_core_of = DEN }
 		ai_chance = {
@@ -32,7 +32,7 @@ country_event = {
 		GER = { transfer_state = 839 }		
 		839 = { add_core_of = GER }
 		DEN = { add_claim_by = 839 }
-		news_event = { id = AOR_news.67 }
+		news_event = { id = AOR_news.68 }
 		ai_chance = {
 			base = 1
 		}
@@ -54,6 +54,7 @@ country_event = {
 		GER = { transfer_state = 1043}
 		58 = { add_core_of = GER }
 		1043 = { add_core_of = GER }
+		news_event = { id = AOR_news.68 }
 		ai_chance = {
 			base = 75
 		}
@@ -64,6 +65,7 @@ country_event = {
 		DEN = { transfer_state = 1043}	
 		58 = { add_core_of = DEN }
 		1043 = { add_core_of = DEN }
+		news_event = { id = AOR_news.67 }
 		ai_chance = {
 			base = 5
 		}
