@@ -263,5 +263,57 @@ country_event = {
 ## 法国社会危机 ##
 #################
 country_event = {
-	id = FRA_Social_Crisis.1
+	id = FRA_Social_Crisis.1 #一次加重
+	title = FRA_Social_Crisis.1.t
+	desc = FRA_Social_Crisis.1.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.1.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.2 #二次加重
+	title = FRA_Social_Crisis.2.t
+	desc = FRA_Social_Crisis.2.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.2.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.3 #三次加重
+	title = FRA_Social_Crisis.3.t
+	desc = FRA_Social_Crisis.3.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.3.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.4 #最终加重
+	title = FRA_Social_Crisis.4.t
+	desc = FRA_Social_Crisis.4.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.4.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+		}
+	}
 }
