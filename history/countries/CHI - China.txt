@@ -159,7 +159,7 @@ set_variable_to_random = {
 
 CHI = {
 country_event = { days = 200 id = CHI.4 }
-country_event = { days = 235 id = CHI.5 }
+country_event = { days = 230 id = CHI.5 }
 country_event = { days = 202 id = CHI.2 }
 news_event = { days = 203 id = AOR_news.66 }
 news_event = { days = 192 id = AOR_news.65 }

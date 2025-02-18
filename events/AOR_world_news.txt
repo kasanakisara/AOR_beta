@@ -737,16 +737,9 @@ news_event = { #米骚乱扩大化
 	title = AOR_news.46.t
 	desc = AOR_news.46.d
 	picture = GFX_AOR_news.46_pic
-	fire_only_once = yes
+	is_triggered_only = yes
 	major = yes
-	trigger = {
-	    date > 1919.8.1
-		date < 1920.8.5
-	}
-	immediate = {
-		JAP = {
-		}
-	}
+
 	option = {
 		name = AOR_news.46.a
 	}
@@ -759,7 +752,6 @@ news_event = { #日本米骚乱平息
 	desc = AOR_news.47.d
 	picture = GFX_AOR_news.47_pic
 	is_triggered_only = yes
-	fire_only_once = yes 
 	major = yes
 	option = {
 		name = AOR_news.47.a
@@ -772,7 +764,6 @@ news_event = { #英日提议将青岛划给日本，法国支持中国，学生�
 	desc = AOR_news.48.d
 	picture = GFX_AOR_news.48_pic
 	is_triggered_only = yes
-	fire_only_once = yes 
 	major = yes
 	immediate = {
 	}
@@ -787,7 +778,6 @@ news_event = { #三廿运动！（ 中国爆发大规模抗议！）
 	desc = AOR_news.49.d
 	picture = GFX_AOR_news.49_pic
 	is_triggered_only = yes
-	fire_only_once = yes 
 	major = yes
 	option = {
 		name = AOR_news.49.a
@@ -800,7 +790,6 @@ news_event = { #三廿初步胜利
 	desc = AOR_news.50.d
 	picture = GFX_AOR_news.50_pic
 	is_triggered_only = yes
-	fire_only_once = yes 
 	major = yes
 	immediate = {
 	}
@@ -836,7 +825,6 @@ news_event = { #抗英义勇军
 	desc = AOR_news.52.d
 	picture = GFX_AOR_news.52_pic
 	is_triggered_only = yes
-	fire_only_once = yes 
 	major = yes
 	immediate = {
 	}
