@@ -93,7 +93,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetSubIdeologyLocARG_democratic
+	name = GetSubIdeologyLocAGR_socialism
 	text = {
 		trigger = { has_country_leader_ideology = revoway }
 		localization_key = revoway
