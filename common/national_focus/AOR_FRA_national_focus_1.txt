@@ -630,7 +630,7 @@ focus_tree = {
 
 		completion_reward={
 			add_political_power = 50
-			news_event = { id = FRA.6 }
+			country_event = { id = FRA.6 }
 		}
 
 	}
