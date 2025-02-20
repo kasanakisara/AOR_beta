@@ -700,7 +700,7 @@ country_event = {
 		date > 1920.5.5
 		}
 	option = {
-		name = JAP.14.a
+		name = JAP.15.a
 		news_event = {id = AOR_news.165}
 	}
 }
@@ -737,7 +737,24 @@ country_event = {
 			}
 		}
 	option = {
-		name = JAP.14.a
+		name = JAP.16.a
 		news_event = {id = AOR_news.167}
+	}
+}
+
+country_event = {
+	id = JAP.17   #米骚乱扩大化
+	title = JAP.17.t
+	desc = JAP.17.d
+	picture = GFX_JAP_event_17
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+	    date > 1919.8.15
+		date < 1920.8.20
+	}
+	option = {
+		name = JAP.17.a
+		news_event = {id = AOR_news.46}
 	}
 }

@@ -10,8 +10,10 @@ state={
 		add_core_of = HUN
 
 		victory_points = {
-			9660 30 
-			6703 15
+			9660 20 
+		}
+		victory_points = {
+			6703 10
 		}
 
 		buildings = {
