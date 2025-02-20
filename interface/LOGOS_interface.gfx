@@ -2669,12 +2669,13 @@ spriteType = {
 	name = "GFX_goal_USA_Panama_Tour"
 	texturefile = "gfx/interface/goals/USA_Panama_Tour.png"
 	}
-	
+
 	spriteType = {
 	name = "GFX_goal_USA_Perfect_ending_year_1"
 	texturefile = "gfx/interface/goals/USA_Perfect_ending_year_1.png"
 	}
 
+    ######美国事件######
 	spriteType = {
 	name = "GFX_USA_event_101_pic"
 	texturefile = "gfx/event_pictures/USA_event_101_pic.png"
@@ -2683,6 +2684,18 @@ spriteType = {
 	name = "GFX_CSA_event_100_pic"
 	texturefile = "gfx/event_pictures/USA_event_101_pic.png"
 	}
+
+	spriteType = {
+		name = "GFX_USA_event_10003_pic"
+		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
+	}
+
+	spriteType = {
+		name = "GFX_USA_event_10031_pic"
+		texturefile = "gfx/event_pictures/USA_event_10031_pic.png"
+	}
+	
+	
 
 
 
