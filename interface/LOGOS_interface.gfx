@@ -836,6 +836,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.52_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.64_pic"
+		texturefile = "gfx/event_pictures/AOR_news.64_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.66_pic"
 		texturefile = "gfx/event_pictures/AOR_news.66_pic.png"
 	}
@@ -900,6 +904,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.109_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.112_pic"
+		texturefile = "gfx/event_pictures/AOR_news.112_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.113_pic"
 		texturefile = "gfx/event_pictures/AOR_news.113_pic.png"
 	}
@@ -916,12 +924,56 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.118_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.137_pic"
+		texturefile = "gfx/event_pictures/AOR_news.137_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.140_pic"
+		texturefile = "gfx/event_pictures/AOR_news.140_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.143_pic"
 		texturefile = "gfx/event_pictures/AOR_news.143_pic.png"
 	}
 	spriteType = {
-		name = "GFX_AOR_news.149_pic"
-		texturefile = "gfx/event_pictures/AOR_news.149_pic.png"
+		name = "GFX_AOR_news.146_pic"
+		texturefile = "gfx/event_pictures/AOR_news.146_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.147_pic"
+		texturefile = "gfx/event_pictures/AOR_news.147_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.157_pic"
+		texturefile = "gfx/event_pictures/AOR_news.157_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.158_pic"
+		texturefile = "gfx/event_pictures/AOR_news.158_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.160_pic"
+		texturefile = "gfx/event_pictures/AOR_news.160_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.161_pic"
+		texturefile = "gfx/event_pictures/AOR_news.161_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.162_pic"
+		texturefile = "gfx/event_pictures/AOR_news.162_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.163_pic"
+		texturefile = "gfx/event_pictures/AOR_news.163_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.164_pic"
+		texturefile = "gfx/event_pictures/AOR_news.164_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.167_pic"
+		texturefile = "gfx/event_pictures/AOR_news.167_pic.png"
 	}
 	spriteType = {
 		name = "GFX_AOR_news.170_pic"
@@ -940,8 +992,48 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.173_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.175_pic"
+		texturefile = "gfx/event_pictures/AOR_news.175_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.176_pic"
 		texturefile = "gfx/event_pictures/AOR_news.176_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.189_pic"
+		texturefile = "gfx/event_pictures/AOR_news.189_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.191_pic"
+		texturefile = "gfx/event_pictures/AOR_news.191_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.197_pic"
+		texturefile = "gfx/event_pictures/AOR_news.197_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.198_pic"
+		texturefile = "gfx/event_pictures/AOR_news.198_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.199_pic"
+		texturefile = "gfx/event_pictures/AOR_news.199_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.200_pic"
+		texturefile = "gfx/event_pictures/AOR_news.200_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.201_pic"
+		texturefile = "gfx/event_pictures/AOR_news.201_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.202_pic"
+		texturefile = "gfx/event_pictures/AOR_news.202_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.203_pic"
+		texturefile = "gfx/event_pictures/AOR_news.203_pic.png"
 	}
 	spriteType = {
 		name = "GFX_AOR_news.207_pic"
