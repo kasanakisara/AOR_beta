@@ -1366,7 +1366,7 @@ news_event = { #美国宣布提高关税
 	id = AOR_news.82
 	title = AOR_news.82.t
 	desc = AOR_news.82.d
-	picture = GFX_AOR_news.83_pic
+	picture = GFX_AOR_news.82_pic
 	is_triggered_only = yes 
 	major = yes
 
