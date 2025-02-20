@@ -606,6 +606,21 @@ country_event = {
 			change_tag_from = ROOT
 			}
     }
+
+	option = {
+		name = USA.10.e
+		news_event = {id=AOR_news.80}
+		hidden_effect = {
+		USA_civil_war_west = yes
+		}
+		swap_ideas={
+			 remove_idea = USA_kuangyezhidi2
+		     add_idea = USA_wuxunzhidi
+		}
+		US4 = {
+			change_tag_from = ROOT
+			}
+    }
 }
 
 
