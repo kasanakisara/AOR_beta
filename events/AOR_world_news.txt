@@ -1267,19 +1267,6 @@ news_event = { #石荷公投-德
 	major = yes
 
 	option = {
-		trigger = {
-			NOT = {
-				TAG = SWE
-			}
-		}
-		name = AOR_news.67.a
-	}
-
-	option = {
-		trigger = {
-			TAG = SWE
-		}
-		name = AOR_news.67.b
 		name = AOR_news.67.a
 	}
 }
