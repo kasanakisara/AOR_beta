@@ -8,10 +8,11 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = LIT
-		date = 1921.8.1
+		date = 1921.10.1
     }
 	option = {
 		name=LIT.1.a
+		news_event = {id=AOR_news.209}
 		LIT = {
 		set_capital = { state = 784 }
 		add_popularity = { ideology = Marxism popularity = 0.1 }
