@@ -141,7 +141,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
-10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -150,6 +149,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+10755;10918;impassable;-1;-1;-1;-1;-1;;Himalayas
+10755;4994;impassable;-1;-1;-1;-1;-1;;Himalayas
+10755;2093;impassable;-1;-1;-1;-1;-1;;Himalayas
+2010;2093;impassable;-1;-1;-1;-1;-1;;Himalayas
+2010;12784;impassable;-1;-1;-1;-1;-1;;Himalayas
+2010;5094;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;5094;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;12801;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;10911;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;1943;impassable;-1;-1;-1;-1;-1;;Himalayas
+8042;8086;impassable;-1;-1;-1;-1;-1;;Himalayas
+8042;10885;impassable;-1;-1;-1;-1;-1;;Himalayas
+8086;10885;impassable;-1;-1;-1;-1;-1;;Himalayas
+10885;12864;impassable;-1;-1;-1;-1;-1;;Himalayas
+5016;7790;impassable;-1;-1;-1;-1;-1;;Himalayas
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
