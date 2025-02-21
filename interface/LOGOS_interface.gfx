@@ -1144,6 +1144,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.179_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.186_pic"
+		texturefile = "gfx/event_pictures/AOR_news.186_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.187_pic"
+		texturefile = "gfx/event_pictures/AOR_news.187_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.188_pic"
+		texturefile = "gfx/event_pictures/AOR_news.188_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.189_pic"
 		texturefile = "gfx/event_pictures/AOR_news.189_pic.png"
 	}
