@@ -41,7 +41,7 @@ on_actions = {
 			760 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_dihua }
-					province = { id = 12656 }
+					province = { id = 10674 }
 				}
 			}
 			322 = {
