@@ -3011,3 +3011,15 @@ news_event = {#波罗的-白俄罗斯军管区局势逐渐动荡
 		name = AOR_news.209.a
 	}
 }
+news_event = {#波兰消灭加利西亚分裂势力
+	id = AOR_news.210
+	title = AOR_news.210.t
+	desc = AOR_news.210.d
+	picture = GFX_AOR_news.210_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.210.a
+	}
+}

@@ -1,0 +1,22 @@
+add_namespace = GLC
+
+country_event = {
+	id = GLC.1 #波兰清算委员会消灭加利西亚势力
+	title =GLC.1.t
+	desc = GLC.1.d
+	picture = GFX_GLC_event_1_pic
+	fire_only_once = yes
+	trigger = {
+		tag = GLC
+        GLC = {
+            owns_state = 1046
+            owns_state = 1040
+        }
+    }
+
+
+    option = {
+		name = GLC.1.a
+		news_event = {id=AOR_news.210}
+	}
+}

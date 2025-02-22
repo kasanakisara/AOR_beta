@@ -2529,6 +2529,66 @@ on_actions = {
 					transfer_state = 199
 				}
 			}
+
+        #######波兰大战加利西亚叛乱势力#######
+
+			else_if = {
+				limit = {
+					#波兰清算委员会胜利
+					FROM = {
+						original_tag = GLC
+					}
+					ROOT = {
+						original_tag = TRZ
+					}
+				}
+				GLC = {
+					transfer_state = 1046
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = TRZ
+					}
+				}
+				GLC = {
+					transfer_state = 1046
+				}
+			}
+
+			else_if = {
+				limit = {
+					#波兰清算委员会胜利
+					FROM = {
+						original_tag = GLC
+					}
+					ROOT = {
+						original_tag = RPS
+					}
+				}
+				GLC = {
+					transfer_state = 1040
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = RPS
+					}
+				}
+				GLC = {
+					transfer_state = 1040
+				}
+			}
 		}
 	}
 }
