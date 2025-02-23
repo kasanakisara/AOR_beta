@@ -309,14 +309,16 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "tahoma_60"
 		fontfiles = { 
-			"gfx/fonts/mapfont_chn_0"
-			"gfx/fonts/mapfont_chn_1"	
-			"gfx/fonts/mapfont_chn_2"	
-			"gfx/fonts/mapfont_chn_3"
-			"gfx/fonts/mapfont_chn_4"	
-			"gfx/fonts/mapfont_chn_5"	
-			"gfx/fonts/mapfont_chn_6"	
-			"gfx/fonts/mapfont_chn_7"
+			"gfx/fonts/AOR_FONTS_0"
+			"gfx/fonts/AOR_FONTS_1"	
+			"gfx/fonts/AOR_FONTS_2"
+			"gfx/fonts/AOR_FONTS_3"
+			"gfx/fonts/AOR_FONTS_4"
+			"gfx/fonts/AOR_FONTS_5"
+			"gfx/fonts/AOR_FONTS_6"
+			"gfx/fonts/AOR_FONTS_7"
+			"gfx/fonts/AOR_FONTS_8"
+			"gfx/fonts/AOR_FONTS_9"
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -342,16 +344,9 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "cg_16b"
 		fontfiles = { 
-			"gfx/fonts/AOR_FONTS_0"
-			"gfx/fonts/AOR_FONTS_1"	
-			"gfx/fonts/AOR_FONTS_2"
-			"gfx/fonts/AOR_FONTS_3"
-			"gfx/fonts/AOR_FONTS_4"
-			"gfx/fonts/AOR_FONTS_5"
-			"gfx/fonts/AOR_FONTS_6"
-			"gfx/fonts/AOR_FONTS_7"
-			"gfx/fonts/AOR_FONTS_8"
-			"gfx/fonts/AOR_FONTS_9"					
+            "gfx/fonts/cg_16b"		
+			"gfx/fonts/hoi_16tooltip3"
+			"gfx/fonts/Arial_14"				
 		}
 	languages = { "l_simp_chinese" } 
 	}
