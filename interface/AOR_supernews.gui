@@ -35,7 +35,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "supernews_exit_btn"
-			position = { x = 145 y = 547}
+			position = { x = 145 y = 650 }
 			spriteType = "GFX_AOR_supernews_exit_btn"
 			orientation = upper_left
 			buttonText = "supernews_btn"
