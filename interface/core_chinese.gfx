@@ -309,16 +309,18 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "tahoma_60"
 		fontfiles = { 
-			"gfx/fonts/AOR_FONTS_0"
-			"gfx/fonts/AOR_FONTS_1"	
-			"gfx/fonts/AOR_FONTS_2"
-			"gfx/fonts/AOR_FONTS_3"
-			"gfx/fonts/AOR_FONTS_4"
-			"gfx/fonts/AOR_FONTS_5"
-			"gfx/fonts/AOR_FONTS_6"
-			"gfx/fonts/AOR_FONTS_7"
-			"gfx/fonts/AOR_FONTS_8"
-			"gfx/fonts/AOR_FONTS_9"
+			"gfx/fonts/AOR_FONTS_00"
+			"gfx/fonts/AOR_FONTS_01"	
+			"gfx/fonts/AOR_FONTS_02"
+			"gfx/fonts/AOR_FONTS_03"
+			"gfx/fonts/AOR_FONTS_04"
+			"gfx/fonts/AOR_FONTS_05"
+			"gfx/fonts/AOR_FONTS_06"
+			"gfx/fonts/AOR_FONTS_07"
+			"gfx/fonts/AOR_FONTS_08"
+			"gfx/fonts/AOR_FONTS_09"
+			"gfx/fonts/AOR_FONTS_10"
+			"gfx/fonts/AOR_FONTS_11"
 		}
 	languages = { "l_simp_chinese" } 
 	}
