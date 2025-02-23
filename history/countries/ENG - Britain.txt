@@ -41,38 +41,6 @@ add_equipment_to_stockpile = {
 	producer = ENG	
 }
 
--130 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
-
--131 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
-
-119 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
-134 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
-113 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
-135 = {
-	add_dynamic_modifier = {
-		modifier = AOR_ENG_gonghejunyundong
-	}
-}
 
 
 # Starting tech
