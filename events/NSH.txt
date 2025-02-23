@@ -64,6 +64,8 @@ country_event = {
 			add_state_core = 58
 			add_state_core = 1043
 		}	
+		58 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
 
 		ai_chance = {
 			base = 75
@@ -80,6 +82,8 @@ country_event = {
 			add_state_core = 58
 			add_state_core = 1043
 		}
+		58 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
 
 		ai_chance = {
 			base = 5
@@ -109,6 +113,8 @@ country_event = {
 		SHL = { 
 			set_cosmetic_tag = SHL_2_Marxism
 		}
+		58 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
 
 		ai_chance = {
 			base = 75
@@ -134,6 +140,9 @@ country_event = {
 	option = { #认了
 		name = NSH.4.a
 
+		58 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
+
 		ai_chance = {
 			base = 5
 		}
@@ -158,6 +167,9 @@ country_event = {
 
 	option = { #认了
 		name = NSH.3.a
+
+		58 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
 
 		ai_chance = { 
 			base = 75
@@ -195,9 +207,11 @@ country_event = {
 		SHL = { 
 			set_cosmetic_tag = SHL_2_Marxism
 		}
+		58 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
 
 		ai_chance = {
-			base = 75
+			base = 50
 		}
     }
 	option = { #战
@@ -214,7 +228,7 @@ country_event = {
 	}
 		
 		ai_chance = {
-			base = 25
+			base = 50
 		}
     }
 }
