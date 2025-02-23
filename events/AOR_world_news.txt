@@ -1233,6 +1233,33 @@ news_event = { #庚申新年
 		name = AOR_news.66.a
 	}
 }
+
+news_event = { #北石荷公投-德
+	id = AOR_news.67
+	title = AOR_news.67.t
+	desc = AOR_news.67.d
+	picture = GFX_AOR_news.67_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.67.a
+	}
+}
+
+news_event = { #北石荷公投-丹
+	id = AOR_news.68
+	title = AOR_news.68.t
+	desc = AOR_news.68.d
+	picture = GFX_AOR_news.68_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.68.a
+	}
+}
+
 news_event = { #奥斯陆博览会
 	id = AOR_news.70
 	title = AOR_news.70.t
@@ -1255,45 +1282,6 @@ news_event = { #奥斯陆博览会
 			TAG = SWE
 		}
 		name = AOR_news.70.b
-	}
-}
-
-news_event = { #石荷公投-德
-	id = AOR_news.67
-	title = AOR_news.67.t
-	desc = AOR_news.67.d
-	picture = GFX_AOR_news.67_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = AOR_news.67.a
-	}
-}
-
-news_event = { #石荷公投-丹
-	id = AOR_news.68
-	title = AOR_news.68.t
-	desc = AOR_news.68.d
-	picture = GFX_AOR_news.68_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = AOR_news.68.a
-	}
-}
-
-news_event = { #纽芬兰给英
-	id = AOR_news.73
-	title = AOR_news.73.t
-	desc = AOR_news.73.d
-	picture = GFX_AOR_news.73_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = AOR_news.73.a
 	}
 }
 
@@ -1320,6 +1308,19 @@ news_event = { #纽芬兰给加
 
 	option = {
 		name = AOR_news.72.a
+	}
+}
+
+news_event = { #纽芬兰给英
+	id = AOR_news.73
+	title = AOR_news.73.t
+	desc = AOR_news.73.d
+	picture = GFX_AOR_news.73_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.73.a
 	}
 }
 
@@ -3021,5 +3022,79 @@ news_event = {#波兰消灭加利西亚分裂势力
 
 	option = {
 		name = AOR_news.210.a
+	}
+}
+news_event = {#石勒苏益格-荷尔施泰因公投入德
+	id = AOR_news.211
+	title = AOR_news.211.t
+	desc = AOR_news.211.d
+	picture = GFX_AOR_news.211_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.211.a
+	}
+}
+news_event = {#石勒苏益格-荷尔施泰因公投入丹
+	id = AOR_news.212
+	title = AOR_news.212.t
+	desc = AOR_news.212.d
+	picture = GFX_AOR_news.212_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.212.a
+	}
+}
+news_event = {#石勒苏益格-荷尔施泰因公投作废
+	id = AOR_news.213
+	title = AOR_news.213.t
+	desc = AOR_news.213.d
+	picture = GFX_AOR_news.213_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.213.a
+	}
+}
+news_event = {#丹麦与南石荷爆发战争
+	id = AOR_news.214
+	title = AOR_news.214.t
+	desc = AOR_news.214.d
+	picture = GFX_AOR_news.214_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.214.a
+	}
+}
+
+news_event = {#丹麦赢得石勒苏益格-荷尔施泰因战争
+	id = AOR_news.215
+	title = AOR_news.215.t
+	desc = AOR_news.215.d
+	picture = GFX_AOR_news.215_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.215.a
+	}
+}
+
+news_event = {#南石荷赢得石勒苏益格-荷尔施泰因战争
+	id = AOR_news.216
+	title = AOR_news.216.t
+	desc = AOR_news.216.d
+	picture = GFX_AOR_news.216_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.216.a
 	}
 }

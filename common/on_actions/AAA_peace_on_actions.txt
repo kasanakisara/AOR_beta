@@ -2597,6 +2597,46 @@ on_actions = {
 					transfer_state = 1040
 				}
 			}
+
+        #######丹麦大战南石荷#######
+
+		    else_if = {
+			    limit = {
+				    #丹麦胜利
+				    FROM = {
+					    original_tag = DEN
+				    }
+				    ROOT = {
+				        original_tag = SHL
+				    }
+			    }
+				news_event = { id =AOR_news.215 }
+				DEN = {
+					transfer_state = 58 
+					transfer_state = 1043
+					add_state_core = 58
+					add_state_core = 1043
+				}
+		    }
+		    else_if = {
+			    limit = {
+				    #南石荷
+				    FROM = {
+					    original_tag = SHL
+				    }
+				    ROOT = {
+					    original_tag = DEN
+				    }
+			    }
+				news_event = {id =AOR_news.216 }
+				SHL = {
+					set_cosmetic_tag = SHL_2_Marxism
+					transfer_state = 58 
+					transfer_state = 1043
+					add_state_core = 58
+					add_state_core = 1043
+				}
+		    }
 		}
 	}
 }
