@@ -2612,6 +2612,17 @@ on_actions = {
 			    }
 				news_event = { id =AOR_news.215 }
 				DEN = {
+					if = {
+						limit ={
+							SHL = {
+								controls_state = 839
+							}
+						}
+						DEN = {
+							transfer_state = 839
+							add_state_core =839
+						}
+					}
 					transfer_state = 58 
 					transfer_state = 1043
 					add_state_core = 58
@@ -2631,6 +2642,17 @@ on_actions = {
 				news_event = {id =AOR_news.216 }
 				SHL = {
 					set_cosmetic_tag = SHL_2_Marxism
+					if = {
+						limit ={
+							DEN = {
+								controls_state = 839
+							}
+						}
+						SHL = {
+							transfer_state = 839
+							add_state_core =839
+						}
+					}
 					transfer_state = 58 
 					transfer_state = 1043
 					add_state_core = 58
