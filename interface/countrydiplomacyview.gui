@@ -207,7 +207,7 @@ guiTypes = {
 			buttonType = {
 				name = "relations_tab_button"
 				quadTextureSprite = "GFX_tab_intel_ledger"
-				position = { x=15 y=70 }
+				position = { x=18 y=70 }
 				buttonText = "DIPLOMACY_RELATIONS_TAB"
 				font = "hoi_18mbs"
 			}
@@ -957,7 +957,7 @@ guiTypes = {
 			name = "name"
 			position = { x = 8 y = 4 }
 			textureFile = ""
-			font = "hoi_18mbs"
+			font = "hoi_18b"
 			borderSize = { x = 0 y = 0 }
 			text = "Maus"
 			maxWidth = 190
@@ -3617,7 +3617,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "title"
-				position = { x = 122 y = 16 }
+				position = { x = 122 y = 31 }
 				font = "hoi_24header"
 				text = "Maus"
 				maxWidth = 260

@@ -661,8 +661,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "level"
-			position = { x = -1 y = 63 }
-			font = "hoi_20b"
+			position = { x = 0 y = 63 }
+			font = "hoi_16"
 			maxWidth = 60
 			maxHeight = 20
 			format = center
