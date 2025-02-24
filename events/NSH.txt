@@ -22,7 +22,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			base = 90
+			base = 95
 		}
     }
 	option = { #北石勒苏益格公投入德（这不太可能）
@@ -36,7 +36,7 @@ country_event = {
 		}		
 
 		ai_chance = {
-			base = 1
+			base = 5
 		}
     }
 }
@@ -68,7 +68,7 @@ country_event = {
 		1043 = { set_demilitarized_zone = yes }
 
 		ai_chance = {
-			base = 75
+			base = 90
 		}
     }
 	option = { #石勒苏益格-荷尔施泰因公投入丹 （这不太可能）
