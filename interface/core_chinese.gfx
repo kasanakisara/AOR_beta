@@ -14,7 +14,7 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"	
-			"gfx/fonts/Arial_16"	
+			"gfx/fonts/Arial_16"	#20号字体（Arial_16——0 xxx为原版）
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -104,7 +104,8 @@ bitmapfonts = {
 		name = "vic_22"
 		fontfiles = { 
 			"gfx/fonts/vic_22"
-			"gfx/fonts/Arial_20"	
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"	#24号字体
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -122,7 +123,9 @@ bitmapfonts = {
 		name = "vic_36"
 		fontfiles = { 
 			"gfx/fonts/vic_36"	
-			"gfx/fonts/Arial_26"	
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	#30号字体
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -152,7 +155,7 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"	
-			"gfx/fonts/Arial_16"		
+			"gfx/fonts/Arial_16bs"		
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -162,16 +165,25 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi_18mbs"
 			"gfx/fonts/hoi_18mbs_cryllic"
-			"gfx/fonts/Arial_16s"	
+			"gfx/fonts/Arial_16"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
-	
+
+	bitmapfont_override = {
+		name = "hoi_20"
+		fontfiles = { 
+			"gfx/fonts/hoi_20"
+			"gfx/fonts/Arial_16"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
+
 	bitmapfont_override = {
 		name = "hoi_20b"
 		fontfiles = { 
 			"gfx/fonts/hoi_20b"
-			"gfx/fonts/Arial_16"	
+			"gfx/fonts/Arial_16bs"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -180,7 +192,7 @@ bitmapfonts = {
 		name = "hoi_20bs"
 		fontfiles = { 
 			"gfx/fonts/hoi_20bs"		
-			"gfx/fonts/Arial_16s"	
+			"gfx/fonts/Arial_16s_0"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -210,7 +222,8 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi4_typewriter22"		
 			"gfx/fonts/hoi_22typewriter"
-			"gfx/fonts/Arial_20b"	
+			"gfx/fonts/Arial_20b_0"	
+			"gfx/fonts/Arial_20b_1"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -220,7 +233,8 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi4_typewriter22_inverted"		
 			"gfx/fonts/hoi_22typewriter_inverted"
-			"gfx/fonts/Arial_20b"	
+			"gfx/fonts/Arial_20b_0"	
+			"gfx/fonts/Arial_20b_1"		
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -229,7 +243,8 @@ bitmapfonts = {
 		name = "hoi_24header"
 		fontfiles = { 
 			"gfx/fonts/hoi_24header"		
-			"gfx/fonts/Arial_20s"	
+			"gfx/fonts/Arial_20_0"	
+			"gfx/fonts/Arial_20_1"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -238,7 +253,8 @@ bitmapfonts = {
 		name = "nsb_hoi_24header"
 		fontfiles = { 
 			"gfx/fonts/hoi_24header"		
-			"gfx/fonts/Arial_20s"	
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -259,7 +275,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi_36header"
 			"gfx/fonts/Arial_26_0"	
 			"gfx/fonts/Arial_26_1"	
-			"gfx/fonts/Arial_26_2"	
+			"gfx/fonts/Arial_26_2"	#32号字体
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -279,7 +295,8 @@ bitmapfonts = {
 		name = "hoi_22tech"
 		fontfiles = { 
 			"gfx/fonts/hoi_22tech"		
-			"gfx/fonts/Arial_20"	
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"			
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -288,7 +305,8 @@ bitmapfonts = {
 		name = "hoi_22chat"
 		fontfiles = { 
 			"gfx/fonts/hoi_22tech"		
-			"gfx/fonts/Arial_20"	
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"		
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -308,7 +326,9 @@ bitmapfonts = {
 		name = "hoi_arrow_font"
 		fontfiles = { 
 			"gfx/fonts/hoi_arrow_font"	
-			"gfx/fonts/Arial_26"	
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	
 		}
 	languages = { "l_simp_chinese" } 
 	}

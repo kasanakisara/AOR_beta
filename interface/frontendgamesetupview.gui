@@ -513,9 +513,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 120 y = 20 }
+			position = { x = 120 y = 23 }
 			textureFile = ""
-			font = "hoi_20b"
+			font = "hoi_18b"
 			borderSize = {x = 5 y = 20}
 			text = "FE_SELECT_SCENARIO"
 			maxWidth = 340
@@ -547,9 +547,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 110 y = 274 }
+			position = { x = 108 y = 277 }
 			font = "hoi_20b"
-			borderSize = {x = 15 y = 5}
+			borderSize = {x = 15 y = 4}
 			text = "BM_HISTORY_TITLE"
 			maxWidth = 340
 			maxHeight = 30
@@ -578,7 +578,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = 30 y = -57 }
+			position = { x = 32 y = -57 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -833,7 +833,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "nation_title"
 			position = { x = 872 y = 793 }
-			font = "hoi_18mbs"
+			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 272
 			maxHeight = 22
@@ -1024,7 +1024,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "leader_label"
-				position = { x = 6 y = 3 }
+				position = { x = 7 y = 3 }
 				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
