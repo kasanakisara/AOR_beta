@@ -165,7 +165,7 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi_18mbs"
 			"gfx/fonts/hoi_18mbs_cryllic"
-			"gfx/fonts/Arial_16"	
+			"gfx/fonts/Arial_16bms"	
 		}
 	languages = { "l_simp_chinese" } 
 	}

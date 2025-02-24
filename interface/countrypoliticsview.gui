@@ -618,7 +618,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			position = { x = 0 y = 4 }
+			position = { x = -90 y = 16 }
 			font = "hoi_20b"
 			text = "Economic Laws"
 			maxWidth = 450
@@ -627,7 +627,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "switch"
-			position = { x = 0 y = 26 }
+			position = { x = 120 y = 18 }
 			font = "hoi_18b"
 			text = "Switch out Henschel"
 			maxWidth = 450
