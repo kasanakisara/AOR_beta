@@ -6,6 +6,9 @@ state={
 	state_category =rural
 
 	history={
+		victory_points = {
+			7868 2
+		}
 		owner = JAP
 		add_core_of = RUS
 		add_core_of = FER
