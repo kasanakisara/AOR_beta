@@ -41,7 +41,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_title"
-			position = { x = 45 y = 8 }
+			position = { x = 245 y = 12 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}

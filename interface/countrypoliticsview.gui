@@ -26,7 +26,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 70 y = 12 }
+			position = { x = 68 y = 14 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
