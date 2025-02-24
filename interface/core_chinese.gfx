@@ -263,8 +263,8 @@ bitmapfonts = {
 		name = "hoi_30header"
 		fontfiles = { 
 			"gfx/fonts/hoi_30header"
-			"gfx/fonts/Arial_26_3"	
-			"gfx/fonts/Arial_26_4"	
+			"gfx/fonts/Arial_24_0"	
+			"gfx/fonts/Arial_24_1"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -356,8 +356,18 @@ bitmapfonts = {
 		name = "hoi_30"
 		fontfiles = { 
 			"gfx/fonts/hoi_30"
-			"gfx/fonts/Arial_26_3"	
-			"gfx/fonts/Arial_26_4"			
+			"gfx/fonts/Arial_24_0"	
+			"gfx/fonts/Arial_24_1"			
+		}
+	languages = { "l_simp_chinese" } 
+	}
+
+	bitmapfont_override = {
+		name = "hoi_30bs"
+		fontfiles = { 
+			"gfx/fonts/hoi_30"
+			"gfx/fonts/Arial_24bs_0"	
+			"gfx/fonts/Arial_24bs_1"			
 		}
 	languages = { "l_simp_chinese" } 
 	}
