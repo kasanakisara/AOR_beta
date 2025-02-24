@@ -1174,6 +1174,7 @@ news_event = { #澳大利亚警察罢工
 	major = yes
 	trigger = {
 	    date > 1923.11.1
+		date < 1923.11.2
 		tag = AST
 	}
 	mean_time_to_happen = { days = 1}
