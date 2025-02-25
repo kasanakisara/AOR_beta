@@ -133,7 +133,6 @@ bookmarks = {
 				pending
 			}
 			focuses = {
-				
 			}
 		}
 		
@@ -193,9 +192,17 @@ bookmarks = {
 			ideology = CON_democratic
 			ideas = {
 			}
-			}
+		}
 
-		
+				
+		"DEN"={
+			minor = yes
+			history = "DEN_BLITZKRIEG_DESC"
+			ideology = PAR_socialism
+			ideas = {
+			}
+		}
+
 		"HUN"={
 			minor = yes
 			history = "HAN_BLITZKRIEG_DESC"
