@@ -8,9 +8,10 @@ country_event = {
 	desc = NSH.1.d
 	picture = GFX_events_NSH_1
 	fire_only_once = yes
-	hidden = yes
-
-	mean_time_to_happen = { days = 1}
+	trigger = {
+		tag = NSH
+		date > 1919.8.1
+		}
 
 	option = {  #北石勒苏益格公投入丹
 		name = NSH.1.a
@@ -48,8 +49,8 @@ country_event = {
 	title = NSH.2.t
 	desc = NSH.2.d
 	picture = GFX_events_NSH_2
+	is_triggered_only = yes	
 	fire_only_once = yes
-	hidden = yes
 
 	option = {  #石勒苏益格-荷尔施泰因公投入德
 		name = NSH.2.a
@@ -61,8 +62,6 @@ country_event = {
 			add_state_core = 1043
 		}	
 		SHL = {
-			transfer_state = 58 
-			transfer_state = 1043
 			add_state_core = 58
 			add_state_core = 1043
 		}	
@@ -79,8 +78,6 @@ country_event = {
 		SHL = { country_event = { id = NSH.4 } }
 
 		DEN = {
-			transfer_state = 58 
-			transfer_state = 1043
 			add_state_core = 58
 			add_state_core = 1043
 		}
@@ -115,6 +112,7 @@ country_event = {
 	title = NSH.3.t
 	desc = NSH.3.d
 	picture = GFX_events_NSH_3
+	is_triggered_only = yes	
 	fire_only_once = yes
 
 	option = {#认了
@@ -122,6 +120,8 @@ country_event = {
 
 		SHL = { 
 			set_cosmetic_tag = SHL_2_Marxism
+			transfer_state = 58 
+			transfer_state = 1043
 		}
 		58 = { set_demilitarized_zone = no }
 		839 = { set_demilitarized_zone = no }
@@ -146,11 +146,13 @@ country_event = {
 	title = NSH.4.t
 	desc = NSH.4.d
 	picture = GFX_events_NSH_4
+	is_triggered_only = yes	
 	fire_only_once = yes
 
 	option = { #认了
 		name = NSH.4.a
-
+		transfer_state = 58 
+		transfer_state = 1043
 		58 = { set_demilitarized_zone = no }
 		839 = { set_demilitarized_zone = no }
 		1043 = { set_demilitarized_zone = no }
@@ -175,11 +177,13 @@ country_event = {
 	title = NSH.5.t
 	desc = NSH.5.d
 	picture = GFX_events_NSH_5
+	is_triggered_only = yes	
 	fire_only_once = yes
 
 	option = { #认了
 		name = NSH.3.a
-
+		transfer_state = 58 
+		transfer_state = 1043
 		58 = { set_demilitarized_zone = no }
 		839 = { set_demilitarized_zone = no }
 		1043 = { set_demilitarized_zone = no }
@@ -210,6 +214,8 @@ country_event = {
 				type = take_claimed_state
 			} 
 		}
+		transfer_state = 58 
+		transfer_state = 1043
 
 		ai_chance = {
 			base = 25
@@ -222,6 +228,7 @@ country_event = {
 	title = NSH.6.t
 	desc = NSH.6.d
 	picture = GFX_events_NSH_6
+	is_triggered_only = yes	
 	fire_only_once = yes
 
 	option = { #认了
@@ -229,6 +236,8 @@ country_event = {
 
 		SHL = { 
 			set_cosmetic_tag = SHL_2_Marxism
+			transfer_state = 58 
+			transfer_state = 1043
 		}
 		58 = { set_demilitarized_zone = no }
 		839 = { set_demilitarized_zone = no }
@@ -255,10 +264,15 @@ country_event = {
 					transfer_state = 839
 				}
 			}
+			
+			leave_faction=yes
+			transfer_state = 58 
+			transfer_state = 1043 
+
 		declare_war_on = { 
             target = DEN
             type = take_claimed_state
-        } 
+        }
 	}
 		
 		ai_chance = {
