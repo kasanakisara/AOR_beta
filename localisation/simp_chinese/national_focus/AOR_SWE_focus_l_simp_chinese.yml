@@ -101,12 +101,15 @@
  SWE_Beautiful_World_desc:0 "1523年，瑞典从卡尔马联邦中解放，步入了独立自主的路线；1721年《政府文书》签署，瑞典步入“自由时代”，开始发展代议制；1804年新《政府文书》修订，结束了漫长的古斯塔夫独裁，瑞典又步入了民主的新时代。\n1814年，我们从丹麦压迫者手中联合和挪威民族，组成了联邦；1905年《哥特堡宪法》通过，我们揭开了新篇章。而如今，在哈康陛下的领导下，联邦化政策硕果累累，民族之间的矛盾逐渐减小，人民安居乐业。沿着这条长路，我们将继续前行，直到实现，我们梦中的那个联邦！"
  SWE_Finally_Revolution_tt:0 "§g由此，我们将彻底完成联邦化进程！向宏伟蓝图跃进！§!"
 
-#AOR_SWE_Nothing.txt
-######息が詰まる######
+ #AOR_SWE_focus_tree_2.txt
+ SWE_Emergency:0 "紧急状态"
+
+ #AOR_SWE_Nothing.txt
+ ######息が詰まる######
  SWE_Nothing:0 "§R空虚§!"
  SWE_Nothing_desc:0 "联邦已经解体，旧日荣光已经不复存在·······\n\n\n§p那我们活着还有什么意义？§!"
 
-#AOR_SWE_focus_tree_3.txt
+ #AOR_SWE_focus_tree_3.txt
  SWE_The_New_King:0 "我们的新王"
  SWE_Economy_Rev:0 "经济转型"
  SWE_Stop_Finicial_Limit:0 "重启金融市场"
