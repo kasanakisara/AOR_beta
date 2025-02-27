@@ -810,14 +810,14 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource"
-			position = { x=53 y=11 }	
+			position = { x=53 y=9 }	
 			spriteType = "GFX_resources_strip"
 		}
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 70 y = 11 }
-			font = "hoi_20b"
+			position = { x = 70 y = 8 }
+			font = "hoi_16b"
 			maxWidth = 37
 			maxHeight = 18
 			format = center
