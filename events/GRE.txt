@@ -208,7 +208,7 @@ country_event = {
 		name = GRE.5.a
 		#40%变君主制
 		ai_chance = {
-			base = 40
+			base = 80
 		}
 		add_popularity = { ideology = Absolutism popularity = 0.08 }
 		set_politics = {ruling_party = Absolutism}
@@ -220,7 +220,7 @@ country_event = {
 	option = {
 	name = GRE.5.b
 	ai_chance = {
-		base = 60
+		base = 20
 	}
 	add_popularity = { ideology = CON_democratic popularity = 0.25 }
 	set_cosmetic_tag = GRE_CON_1
