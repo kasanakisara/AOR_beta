@@ -3099,3 +3099,16 @@ news_event = {#南石荷赢得石勒苏益格-荷尔施泰因战争
 		name = AOR_news.216.a
 	}
 }
+
+news_event = {#摩根图书馆遭爆破
+	id = AOR_news.217
+	title = AOR_news.217.t
+	desc = AOR_news.217.d
+	picture = GFX_AOR_news.217_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.217.a
+	}
+}
