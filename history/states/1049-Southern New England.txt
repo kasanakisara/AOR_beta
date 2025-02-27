@@ -1,0 +1,58 @@
+state={
+	id=1049
+	name="STATE_1049"
+	resources={
+
+	}
+
+	state_category = metropolis
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4 #was: 7
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 5
+			6732 = {
+				naval_base = 8
+
+			}
+			9832 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			6732 20 
+		}
+		victory_points = {
+			715 3
+		}
+		victory_points = {
+			6909 3
+		}
+		victory_points = {
+			9850 2
+		}
+		victory_points = {
+			9832 2 
+		}
+		victory_points = {
+			11830 1 
+		}
+
+	}
+
+	provinces={
+		715 718 905 908 3710 3906 6732 6909 9832 9847 9850 11830
+	}
+	manpower=5180636
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

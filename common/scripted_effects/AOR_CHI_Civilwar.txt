@@ -1529,11 +1529,13 @@ USA_civil_war_east = {
 			transfer_state = 358
 			transfer_state = 360
 			transfer_state = 357
+			transfer_state = 1049
 
 			add_state_core = 393
 			add_state_core = 358
 			add_state_core = 360
 			add_state_core = 357
+			transfer_state = 1049
 		}
 	}
 
