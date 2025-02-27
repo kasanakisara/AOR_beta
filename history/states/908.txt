@@ -11,7 +11,10 @@ state={
 
 		}
 		victory_points = {
-			12274 1 
+			12767 1 
+		}
+		victory_points = {
+			8026 1 
 		}
 
 	}
@@ -19,7 +22,7 @@ state={
 	provinces={
 		1367 2030 2091 5048 7240 7256 8026 12274 12767 
 	}
-	manpower= 16567365
+	manpower= 14567365
 	buildings_max_level_factor=1.000
 	state_category= town
 	local_supplies=0.000
