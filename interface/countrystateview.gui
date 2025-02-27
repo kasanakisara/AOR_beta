@@ -457,6 +457,11 @@ guiTypes = {
 					spriteType = "GFX_terrain_emusike"
 					alwaystransparent = yes
 				}
+				iconType = {
+					name = "terrain_oottoma_icon"
+					spriteType = "GFX_terrain_oottoma"
+					alwaystransparent = yes
+				}
 				#非洲#
 
 

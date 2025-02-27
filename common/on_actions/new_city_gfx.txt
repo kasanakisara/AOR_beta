@@ -194,6 +194,12 @@ on_actions = {
 					province = { id = 10696 }
 				}
 			}
+			537 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_oottoma }
+					province = { id = 12446 }
+				}
+			}
 		}
 	}
 }

@@ -127,4 +127,8 @@ spriteTypes = {
 		name = "GFX_terrain_emusike" 
 		textureFile = "gfx/interface/terrains/terrain_emusike.png"
 	}
+	spriteType = {
+		name = "GFX_terrain_oottoma" 
+		textureFile = "gfx/interface/terrains/terrain_oottoma.png"
+	}
 }
