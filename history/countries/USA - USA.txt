@@ -207,26 +207,28 @@ add_ideas = {
 
 set_variable = { var = wanla_quandouwanle }
 
-USA = {country_event = {
-	days = 65 id = USA.105
+USA = {
+    news_event = {
+	days = 65 id = AOR_news.34
+	}
+
+	news_event = {
+	days = 95 id = AOR_news.35
+	}
+
+	news_event = {
+	days = 185 id = AOR_news.36
+	}
+
+	news_event = {
+	days = 390 id = AOR_news.37
+	}
+
+	news_event = {
+	days = 900 id = AOR_news.38
 	}
 }
-USA = {country_event = {
-	days = 95 id = USA.106
-	}
-}
-USA = {country_event = {
-	days = 185 id = USA.107
-	}
-}
-USA = {country_event = {
-	days = 390 id = USA.108
-	}
-}
-USA = {country_event = {
-	days = 900 id = USA.109
-	}
-}
+
 recruit_character = USA_john_pershing
 recruit_character = USA_tasker_bliss
 recruit_character = USA_payton_march

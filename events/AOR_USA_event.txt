@@ -395,135 +395,36 @@ country_event = {
 	}
 }
 
-#################以下为科技类##################
-country_event = {
-	id = USA.105 #铁
-	title = USA.105.t
-	desc = USA.105.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-	trigger = {
-		tag = USA
-	}
-      
-	option = {
-		name = USA.105.a
-		news_event = {id = AOR_news.34}
-	}
-}
-country_event = {
-	id = USA.106 #卡内基之死
-	title = USA.106.t
-	desc = USA.106.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-	trigger = {
-		tag = USA
-	}
-      
-	option = {
-		name = USA.106.a
-		news_event = {id = AOR_news.35}
-	}
-}
-country_event = {
-	id = USA.107 #卡内基被瓜分
-	title = USA.107.t
-	desc = USA.107.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-	trigger = {
-		tag = USA
-	}
-      
-	option = {
-		name = USA.107.a
-		news_event = {id = AOR_news.36}
-	}
-}
-country_event = {
-	id = USA.108 #特斯拉
-	title = USA.108.t
-	desc = USA.108.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
+#################以下为科技类（除新闻，国家事件作废）##################
+#country_event = {
+	#USA.105 #铁
+#}
+#country_event = {
+	#USA.106 #卡内基之死
+#}
+#country_event = {
+	#USA.107 #卡内基被瓜分
+#}
+#country_event = {
+	#USA.108 #特斯拉
+#}
+#country_event = {
+	#USA.109 #电波
+#}
+#################科技类结束（除新闻，国家事件作废）##################
+#country_event = {
+	# USA.5 #什么调研（作废）
+#}
+#country_event = {
+	# USA.6 #什么调研（作废）
+#}
+#country_event = {
+	# USA.7 #什么调研（作废）
+#}
+#country_event = {
+	# USA.8 #什么调研（作废）
+#}
 
-      
-	trigger = {
-		tag = USA
-	}
-      
-	option = {
-		name = USA.108.a
-		news_event = {id = AOR_news.37}
-	}
-}
-country_event = {
-	id = USA.109 #电波
-	title = USA.109.t
-	desc = USA.109.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	trigger = {
-		tag = USA
-	}
-      
-	option = {
-		name = USA.109.a
-		news_event = {id = AOR_news.38}
-	}
-}
-#################科技类结束##################
-country_event = {
-	id = USA.5 #什么调研
-	title = USA.5.t
-	desc = USA.5.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.5.a
-	}
-}
-country_event = {
-	id = USA.6 #什么调研
-	title = USA.6.t
-	desc = USA.6.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.6.a
-	}
-}
-country_event = {
-	id = USA.7 #什么调研
-	title = USA.7.t
-	desc = USA.7.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.7.a
-	}
-}
-country_event = {
-	id = USA.8 #什么调研
-	title = USA.8.t
-	desc = USA.8.d
-	picture = GFX_Portrait_of_Tirpitz
-	is_triggered_only = yes
-
-      
-	option = {
-		name = USA.8.a
-	}
-}
 country_event = {
 	id = USA.9 #西部动乱
 	title = USA.9.t
@@ -863,7 +764,7 @@ country_event = {
 	id = USA.102 #攻克新奥尔良
 	title = USA.102.t
 	desc = USA.102.d
-	picture = GFX_USA_event_101_pic
+	picture = GFX_USA_event_102_pic
 	trigger = {
 		tag = CSA
 		USA = { 
@@ -881,7 +782,7 @@ country_event = {
 	id = USA.103 #美国内战白热化（北方优势）
 	title = USA.103.t
 	desc = USA.103.d
-	picture = GFX_USA_event_101_pic
+	picture = GFX_USA_event_103_pic
 	trigger = {
 		tag = USA
 		365 = { is_controlled_by = USA }
@@ -903,7 +804,7 @@ country_event = {
 	id = USA.104 #向维克斯堡进军！
 	title = USA.104.t
 	desc = USA.104.d
-	picture = GFX_USA_event_101_pic
+	picture = GFX_USA_event_104_pic
 	trigger = {
 		tag = CSA
 		USA = { 
@@ -1499,7 +1400,7 @@ country_event = {
 	id = USA.10001 #必要
 	title = USA.10001.t
 	desc = USA.10001.d
-	picture = GFX_USA_event_10001
+	picture = GFX_USA_event_10001_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1557,7 +1458,7 @@ country_event = {
 	id = USA.10004 #飞翔的雄鹰2
 	title = USA.10004.t
 	desc = USA.10004.d
-	picture = GFX_USA_event_10003_pic
+	picture = GFX_USA_event_10004_pic
 	fire_only_once = yes
 
 		trigger = {
@@ -1604,7 +1505,7 @@ country_event = {
 	id = USA.10007 #飞翔的雄鹰3
     title = USA.10007.t
     desc = USA.10007.d
-	picture = GFX_USA_event_10003_pic
+	picture = GFX_USA_event_10007_pic
 	fire_only_once = yes
 
          trigger = {
@@ -1787,7 +1688,7 @@ country_event = {
 	id = USA.10019 #来源不明的文件（威尔逊）
 	title = USA.10019.t
 	desc = USA.10019.d
-	picture = GFX_USA_event_10019_pic
+	picture = GFX_USA_event_10001_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1937,7 +1838,9 @@ country_event = {
 
 	option = {
 		name=USA.10030.a
+		hidden_effect = {
         country_event = USA.10029
+	    }
 	}
 }
 country_event = {
@@ -1956,7 +1859,7 @@ country_event = {
 	id = USA.10032 #工作-加入骑士团2（斯特朗故事）（劳动骑士团）
     title = USA.10032.t
     desc = USA.10032.d
-	picture = GFX_USA_event_10031_pic
+	picture = GFX_USA_event_10032_pic
 	is_triggered_only = yes
 	fire_only_once = yes
     option = { 
@@ -1980,7 +1883,7 @@ country_event = {
 	id = USA.10034 #飞翔的雄鹰（4）
     title = USA.10034.t
     desc = USA.10034.d
-	picture = GFX_USA_event_10003_pic
+	picture = GFX_USA_event_10034_pic
 	fire_only_once = yes
          trigger = {
            tag = USA
@@ -2007,10 +1910,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10036 #海关
+	id = USA.10036 #海关（劳动骑士团）
 	title = USA.10036.t
 	desc = USA.10036.d
-	picture = GFX_USA_event_10031_pic
+	picture = GFX_USA_event_10036_pic
 	fire_only_once = yes
 	trigger = {
 		tag = USA
@@ -2026,7 +1929,7 @@ country_event = {
 	id = USA.10037 #斯特朗的第1次任务（劳动骑士团）
 	title = USA.10037.t
 	desc = USA.10037.d
-	picture = GFX_USA_event_10031_pic
+	picture = GFX_USA_event_10037_pic
 	fire_only_once = yes
 	trigger = {
 		tag = USA

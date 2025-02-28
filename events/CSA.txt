@@ -34,7 +34,7 @@ country_event = {
 	id = CSA.101   #攻克纽约
 	title = CSA.101.t
 	desc = CSA.101.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_101_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -52,7 +52,7 @@ country_event = {
 	id = CSA.102   #攻克匹兹堡
 	title = CSA.102.t
 	desc = CSA.102.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_102_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -70,7 +70,7 @@ country_event = {
 	id = CSA.103   #进攻克利夫兰
 	title = CSA.103.t
 	desc = CSA.103.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_103_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -88,7 +88,7 @@ country_event = {
 	id = CSA.104   #美国内战白热化（南方优势）
 	title = CSA.104.t
 	desc = CSA.104.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_104_pic
 	trigger = {
 		358 = { is_controlled_by = CSA }
 		358 = { is_owned_by = USA }
@@ -110,7 +110,7 @@ country_event = {
 	id = CSA.105   #攻克芝加哥
 	title = CSA.105.t
 	desc = CSA.105.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_105_pic
 	trigger = {
 		395 = { is_controlled_by = CSA }
 		395 = { is_owned_by = USA }
@@ -127,7 +127,7 @@ country_event = {
 	id = CSA.106   #攻克底特律
 	title = CSA.106.t
 	desc = CSA.106.d
-	picture = GFX_CSA_event_100_pic
+	picture = GFX_CSA_event_106_pic
 	trigger = {
 		393 = { is_controlled_by = CSA }
 		393 = { is_owned_by = USA }
