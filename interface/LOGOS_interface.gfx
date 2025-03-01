@@ -1260,6 +1260,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_news.216_pic.png"
 	}
 	spriteType = {
+		name = "GFX_AOR_news.217_pic"
+		texturefile = "gfx/event_pictures/AOR_news.217_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.218_pic"
+		texturefile = "gfx/event_pictures/AOR_news.218_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.219_pic"
+		texturefile = "gfx/event_pictures/AOR_news.218_pic.png"
+	}
+	spriteType = {
 		name = "GFX_AOR_news.354_pic"
 		texturefile = "gfx/event_pictures/AOR_news.354_pic.png"
 	}
@@ -2853,7 +2865,7 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10007_pic"
-		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_10007_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10008_pic"
@@ -2862,6 +2874,34 @@ spriteType = {
 	spriteType = {
 		name = "GFX_USA_event_10010_pic"
 		texturefile = "gfx/event_pictures/USA_event_10010_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10011_pic"
+		texturefile = "gfx/event_pictures/USA_event_10011_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10012_pic"
+		texturefile = "gfx/event_pictures/USA_event_10011_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10013_pic"
+		texturefile = "gfx/event_pictures/USA_event_10013_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10014_pic"
+		texturefile = "gfx/event_pictures/USA_event_10011_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10015_pic"
+		texturefile = "gfx/event_pictures/USA_event_10011_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10016_pic"
+		texturefile = "gfx/event_pictures/USA_event_10011_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10017_pic"
+		texturefile = "gfx/event_pictures/USA_event_10013_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10018_pic"
@@ -2881,7 +2921,7 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10022_pic"
-		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_10018_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10023_pic"

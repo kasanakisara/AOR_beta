@@ -567,6 +567,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			hidden_effect = {
+				news_event = AOR_news.218
+			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4
 				add_idea = USA_the_divided_nation5
@@ -629,6 +632,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			hidden_effect = {
+				news_event = AOR_news.219
+			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4
 				add_idea = USA_the_divided_nation8

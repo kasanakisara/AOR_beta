@@ -3112,3 +3112,29 @@ news_event = {#摩根图书馆遭爆破
 		name = AOR_news.217.a
 	}
 }
+
+news_event = {#美国北方少数党派全力支持联邦政府
+	id = AOR_news.218
+	title = AOR_news.218.t
+	desc = AOR_news.218.d
+	picture = GFX_AOR_news.218_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.218.a
+	}
+}
+
+news_event = {#美国北方少数党派与联邦政府妥协
+	id = AOR_news.219
+	title = AOR_news.219.t
+	desc = AOR_news.219.d
+	picture = GFX_AOR_news.219_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.219.a
+	}
+}
