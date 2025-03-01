@@ -1596,7 +1596,7 @@ country_event = {
 	fire_only_once = yes
          trigger = {
            tag = USA
-	       date = 1919.12.20
+	       date = 1919.12.1
 	}
 	option = { 
         name = USA.10011.a
