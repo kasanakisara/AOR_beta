@@ -1620,19 +1620,31 @@ country_event = {
     title = USA.10013.t
     desc = USA.10013.d
 	picture = GFX_USA_event_10013_pic
-	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		tag = CSA
+		date = 1921.5.1
+    }
 	fire_only_once = yes
+	ROOT = {
+		tag = USA
+		tag = CSA
+	}
     option = { 
         name = USA.10013.a
 	}
 }
 country_event = {
-	id = USA.10014 #美国左翼文案 （德布斯） 1 
+	id = USA.10014 #美国左翼文案 （德布斯故事） 1 
     title = USA.10014.t
     desc = USA.10014.d
 	picture = GFX_USA_event_10014_pic
 	is_triggered_only = yes
 	fire_only_once = yes
+	ROOT = {
+		tag = USA
+		tag = CSA
+	}
     option = { 
         name = USA.10014.a
 		country_event = { days = 2 id = USA.10015 }
@@ -1646,6 +1658,10 @@ country_event = {
 	picture = GFX_USA_event_10015_pic
 	is_triggered_only = yes
 	fire_only_once = yes
+	ROOT = {
+		tag = USA
+		tag = CSA
+	}
     option = { 
         name = USA.10015.a
 	}
@@ -1657,6 +1673,10 @@ country_event = {
 	picture = GFX_USA_event_10016_pic
 	is_triggered_only = yes
 	fire_only_once = yes
+	ROOT = {
+		tag = USA
+		tag = CSA
+	}
     option = { 
         name = USA.10016.a
 	
