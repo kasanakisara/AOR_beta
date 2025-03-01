@@ -1632,18 +1632,7 @@ country_event = {
 	 }
     option = { 
         name = USA.10015.a
-		country_event = {
-			id = USA.10016 #美国左翼文案 拉福伊
-			title = USA.10016.t
-			desc = USA.10016.d
-			picture = GFX_USA_event_10016_pic
-			is_triggered_only = yes
-			fire_only_once = yes
-			option = { 
-				name = USA.10016.a
-			
-			}
-		}
+		country_event = USA.10016
 	}
 }
 country_event = {
