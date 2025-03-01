@@ -1626,10 +1626,6 @@ country_event = {
 		date = 1921.5.1
     }
 	fire_only_once = yes
-	ROOT = {
-		tag = USA
-		tag = CSA
-	}
     option = { 
         name = USA.10013.a
 	}
@@ -1639,12 +1635,11 @@ country_event = {
     title = USA.10014.t
     desc = USA.10014.d
 	picture = GFX_USA_event_10014_pic
-	is_triggered_only = yes
-	fire_only_once = yes
-	ROOT = {
+	trigger = {
 		tag = USA
 		tag = CSA
-	}
+    }
+	fire_only_once = yes
     option = { 
         name = USA.10014.a
 		country_event = { days = 2 id = USA.10015 }
@@ -1656,12 +1651,11 @@ country_event = {
     title = USA.10015.t
     desc = USA.10015.d
 	picture = GFX_USA_event_10015_pic
-	is_triggered_only = yes
-	fire_only_once = yes
-	ROOT = {
+	trigger = {
 		tag = USA
 		tag = CSA
-	}
+    }
+	fire_only_once = yes
     option = { 
         name = USA.10015.a
 	}
@@ -1671,12 +1665,11 @@ country_event = {
     title = USA.10016.t
     desc = USA.10016.d
 	picture = GFX_USA_event_10016_pic
-	is_triggered_only = yes
-	fire_only_once = yes
-	ROOT = {
+	trigger = {
 		tag = USA
 		tag = CSA
-	}
+    }
+	fire_only_once = yes
     option = { 
         name = USA.10016.a
 	
