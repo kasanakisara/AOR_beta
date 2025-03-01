@@ -2857,7 +2857,11 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10004_pic"
-		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_10004_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10005_pic"
+		texturefile = "gfx/event_pictures/USA_event_10005_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10006_pic"
@@ -2965,7 +2969,7 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10034_pic"
-		texturefile = "gfx/event_pictures/USA_event_10031_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10035_pic"
@@ -2986,6 +2990,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_USA_event_10041_pic"
 		texturefile = "gfx/event_pictures/USA_event_10029_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10042_pic"
+		texturefile = "gfx/event_pictures/USA_event_10001_pic.png"
 	}
 	
 	

@@ -1989,3 +1989,15 @@ country_event = {
 		}
 	}	
 }
+
+country_event = {
+	id = USA.10042 #扬基党抨击迪克西党
+	title = USA.10042.t
+	desc = USA.10042.d
+	picture = GFX_USA_event_10042_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10042.a
+	}	
+}

@@ -218,7 +218,7 @@ focus_tree={
 		completion_reward={
 		    custom_effect_tooltip = USA_AIntelligenceStation
 			hidden_effect = {
-			country_event={
+			    country_event={
 				id = USA.10006
 			    }
 			}
@@ -232,6 +232,13 @@ focus_tree={
 		prerequisite={focus=USA_IntelligenceStation}
 		cost=2.00
 		completion_reward={
+			 custom_effect_tooltip = USA_ACriticize
+			hidden_effect = {
+				country_event={
+				id = USA.10042
+				}
+			}
+
 			add_timed_idea={
 				idea=USA_CriticizeA
 				days=360
