@@ -563,7 +563,7 @@ country_event = {
 	id = USA.100 #南北战争！
 	title = USA.100.t
 	desc = USA.100.d
-	picture = GFX_event_USA.100_pic
+	picture = GFX_USA_event_100_pic
 	trigger = {
 	    date > 1921.6.5
 		tag = USA
