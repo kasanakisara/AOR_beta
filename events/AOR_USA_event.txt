@@ -1550,27 +1550,53 @@ country_event = {
 	picture = GFX_USA_event_10009_pic
     is_triggered_only = yes
 	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			US2 = {
+				set_cosmetic_tag = US2_2
+				set_politics = { ruling_party = Special }
+				set_popularities = {
+					Special = 100
+				}
+				transfer_state = 378
+				transfer_state = 379
+				transfer_state = 380
+				transfer_state = 381
+				transfer_state = 382
+				transfer_state = 383
+				transfer_state = 384
+				transfer_state = 385
+				transfer_state = 386
+				transfer_state = 387
+				transfer_state = 388
+				transfer_state = 389
+				transfer_state = 390
+				transfer_state = 923
+				transfer_state = 924
+				transfer_state = 925
+				transfer_state = 926
+			}
+				378 = { set_demilitarized_zone = yes }
+				379 = { set_demilitarized_zone = yes }
+				380 = { set_demilitarized_zone = yes }
+				381 = { set_demilitarized_zone = yes }
+				382 = { set_demilitarized_zone = yes }
+				383 = { set_demilitarized_zone = yes }
+				384 = { set_demilitarized_zone = yes }
+				385 = { set_demilitarized_zone = yes }
+				386 = { set_demilitarized_zone = yes }
+				387 = { set_demilitarized_zone = yes }
+				388 = { set_demilitarized_zone = yes }
+				389 = { set_demilitarized_zone = yes }
+				390 = { set_demilitarized_zone = yes }
+				923 = { set_demilitarized_zone = yes }
+				924 = { set_demilitarized_zone = yes }
+				925 = { set_demilitarized_zone = yes }
+				926 = { set_demilitarized_zone = yes }
+			}
+	}
     option = { 
         name = USA.10009.a
-		hidden_effect = {
-			378 = { set_demilitarized_zone = yes }
-			379 = { set_demilitarized_zone = yes }
-			380 = { set_demilitarized_zone = yes }
-			381 = { set_demilitarized_zone = yes }
-			382 = { set_demilitarized_zone = yes }
-			383 = { set_demilitarized_zone = yes }
-			384 = { set_demilitarized_zone = yes }
-			385 = { set_demilitarized_zone = yes }
-			386 = { set_demilitarized_zone = yes }
-			387 = { set_demilitarized_zone = yes }
-			388 = { set_demilitarized_zone = yes }
-			389 = { set_demilitarized_zone = yes }
-			390 = { set_demilitarized_zone = yes }
-			923 = { set_demilitarized_zone = yes }
-			924 = { set_demilitarized_zone = yes }
-			925 = { set_demilitarized_zone = yes }
-			926 = { set_demilitarized_zone = yes }
-		}
 	}
 }
 country_event = {

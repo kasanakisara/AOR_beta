@@ -71,9 +71,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anarchy"
-	desc = ""
-	picture = "gfx/leaders/CAN/Anarchy.png"
+	name = "CAN_Anarchy"
+	desc = "CAN_Anarchy_desc"
+	picture = "gfx/leaders/CAN/CAN_Anarchy.png"
 	expire = "1953.3.1"
 	ideology = nationalism
 	traits = {  }
