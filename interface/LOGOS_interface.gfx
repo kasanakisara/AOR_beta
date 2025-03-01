@@ -2803,6 +2803,7 @@ spriteType = {
 	}
 
     ######美国事件######
+	#南方#
 	spriteType = {
 		name = "GFX_CSA_event_100_pic"
 		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
@@ -2823,13 +2824,19 @@ spriteType = {
 		name = "GFX_CSA_event_104_pic"
 		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
 	}
+
+	#北方#
 	spriteType = {
-		name = "GFX_USA_event_105_pic"
-		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
-	}
+    	name = "GFX_USA_event_10_pic"
+		texturefile = "gfx/event_pictures/USA_event_10_pic.png"
+	}	
 	spriteType = {
-		name = "GFX_USA_event_106_pic"
-		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
+    	name = "GFX_USA_event_99_pic"
+		texturefile = "gfx/event_pictures/USA_event_99_pic.png"
+	}	
+	spriteType = {
+    	name = "GFX_USA_event_100_pic"
+		texturefile = "gfx/event_pictures/USA_event_100_pic.png"
 	}
 	spriteType = {
     	name = "GFX_USA_event_102_pic"
@@ -2841,6 +2848,14 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_104_pic"
+		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_105_pic"
+		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_106_pic"
 		texturefile = "gfx/event_pictures/USA_event_101_pic.png"
 	}
 	spriteType = {
@@ -2873,7 +2888,11 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10008_pic"
-		texturefile = "gfx/event_pictures/USA_event_10008_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_99_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10009_pic"
+		texturefile = "gfx/event_pictures/USA_event_10009_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10010_pic"
@@ -2985,7 +3004,7 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_USA_event_10040_pic"
-		texturefile = "gfx/event_pictures/USA_event_10008_pic.png"
+		texturefile = "gfx/event_pictures/USA_event_99_pic.png"
 	}
 	spriteType = {
 		name = "GFX_USA_event_10041_pic"
