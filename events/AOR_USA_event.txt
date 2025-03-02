@@ -1470,7 +1470,9 @@ country_event = {
 
 	option = {
 		name=USA.10004.a
+		hidden_effect = {
 		news_event = {id=AOR_news.200}
+		}
 	}	
 }
 country_event = {
