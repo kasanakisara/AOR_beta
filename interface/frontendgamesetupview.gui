@@ -1736,7 +1736,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = { x = 362 y = 18 }
+			position = { x = 360 y = 20 }
 			name = "custom_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -1748,7 +1748,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x = 9 y = 15 }
+			position = {x = 23 y = 15 }
 			name = "difficulty_text"
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -1760,7 +1760,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "very_easy_cb"
-			position = { x=9 y=47}
+			position = { x=9 y=45}
 			quadTextureSprite ="GFX_difficulty_button_civilian"
 			buttonText = "FE_DIFFICULTY_EASY"
 			buttonFont = "hoi_20b"
@@ -1769,7 +1769,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "easy_cb"
-			position = { x=125 y=47}
+			position = { x=125 y=45}
 			quadTextureSprite ="GFX_difficulty_button_recruit"
 			buttonText = "FE_DIFFICULTY_EASY"
 			buttonFont = "hoi_20b"
@@ -1778,7 +1778,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "normal_cb"
-			position = { x=241 y=47}
+			position = { x=241 y=45}
 			quadTextureSprite ="GFX_difficulty_button_regular"
 			clicksound = click_checkbox
 			buttonText = "FE_DIFFICULTY_NORMAL"
@@ -1787,7 +1787,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "hard_cb"
-			position = { x=357 y=47}
+			position = { x=357 y=45}
 			quadTextureSprite ="GFX_difficulty_button_veteran"
 			buttonText = "FE_DIFFICULTY_HARD"
 			buttonFont = "hoi_20b"
@@ -1796,7 +1796,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "very_hard_cb"
-			position = { x=473 y=47}
+			position = { x=473 y=45}
 			quadTextureSprite ="GFX_difficulty_button_elite"
 			buttonText = "FE_DIFFICULTY_VERY_HARD"
 			buttonFont = "hoi_20b"
@@ -1864,7 +1864,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x = 55 y = 103 }
+			position = {x = 251 y = 105 }
 			name = "ironman_text"
 			font = "hoi_24header"
 			maxWidth = 370
@@ -1883,7 +1883,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x = 55 y = 148 }
+			position = {x = 218 y = 153 }
 			name = "historical_text"
 			font = "hoi_24header"
 			maxWidth = 370
@@ -2116,7 +2116,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "selected_nation_label"
-				position = { x = -370 y = 60 }
+				position = { x = -374 y = 62 }
 				textureFile = ""
 				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}
