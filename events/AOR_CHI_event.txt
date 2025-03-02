@@ -340,12 +340,6 @@ country_event = {
 		hidden_effect = {
 			DCD = {
 				load_oob = "AOR_LAND_CHI_chuanjun_XI"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = CBS
 					type = civil_war
@@ -366,12 +360,6 @@ country_event = {
 		
 			CBS = {
 				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = XCD
 					type = civil_war
@@ -396,22 +384,10 @@ country_event = {
 					target = PRC
 					type = civil_war
 					}
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				}
 		
 			JLD = {
 				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = PRC
 					type = civil_war
@@ -419,13 +395,6 @@ country_event = {
 				}
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
-				add_ideas = PRC_The_great_red_army
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				}
 		    }
 	    }
@@ -494,16 +463,6 @@ country_event = {
 				}
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
-				add_ideas = PRC_The_great_red_army
-				create_country_leader = {
-					name = "xi_CHUAN_commit"
-					desc = "POLITICS_MON_DESC"
-					picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
-					expire = "1965.1.1"
-					ideology = REV_soc
-					traits = {
-					}
-				}
 				}
 		    }
 		}

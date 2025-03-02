@@ -453,8 +453,23 @@ CHI_civil_war_5 = {
 
 		PRC = { #共产党
 			set_country_flag  = china_war_begin
+			add_ideas = PRC_The_great_red_army
+			create_country_leader = {
+				name = "xi_CHUAN_commit"
+				desc = "POLITICS_MON_DESC"
+				picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
+				expire = "1965.1.1"
+				ideology = REV_soc
+				traits = {
+				}
+			}
 			add_state_core = 605
 		    transfer_state = 605
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
 			add_manpower = 10000
 		}
 		DCD = {
@@ -462,6 +477,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 			transfer_state = 906
 			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		JLD = {
@@ -469,6 +489,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 			add_state_core = 908
 			transfer_state = 908
+			add_state_core = 906
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		XCD ={
@@ -476,6 +501,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_XI"
 			add_state_core = 753
 			transfer_state = 753
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		CBS = {
@@ -485,6 +515,10 @@ CHI_civil_war_5 = {
 			add_state_core = 434
 			transfer_state = 751
 			transfer_state = 434
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 605
 			add_manpower = 10000
 		}
 	}
