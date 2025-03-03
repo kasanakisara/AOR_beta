@@ -309,6 +309,14 @@ country_event = {#昆明政府统一南方
             country_event = { days = 60  id = CHI.38 }
             country_event = { days = 90  id = JAP.10 }
             set_capital = { state = 893 }
+            set_victory_points = {
+                province = 11913
+                value = 30    
+            }
+            set_victory_points = {
+                province = 9843
+                value = 20    
+            }
             KMT = {
                 add_state_core = 876
                 add_state_core = 612

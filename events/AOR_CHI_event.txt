@@ -950,6 +950,10 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			set_victory_points = {
+                province = 9958
+                value = 3    
+            }
 			MON ={
 			declare_war_on = { 
 				target = NAN
@@ -1017,6 +1021,14 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			set_victory_points = {
+                province = 10433
+                value = 20    
+            }
+			set_victory_points = {
+                province = 1847
+                value = 7    
+            }
 			MAN ={
 			declare_war_on = { 
 				target = NAN
@@ -1226,6 +1238,10 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+            set_victory_points = {
+                province = 12062
+                value = 3    
+            }
 			MAN ={
 			declare_war_on = { 
 				target = KMT
