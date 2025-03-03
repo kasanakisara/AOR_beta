@@ -101,7 +101,7 @@ guiTypes = {
 			name = "name_text"
 			position = { x = 75 y = 27 } 
 			textureFile = ""
-			font = "hoi_20b"
+			font = "hoi_18mbs"
 			borderSize = { x = 0 y = 0 }
 			text = ""
 			maxWidth = 365
