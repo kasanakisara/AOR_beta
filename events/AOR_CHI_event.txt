@@ -1562,6 +1562,16 @@ country_event = {
 					owns_state = 322
 				} 
 			}
+
+			immediate = {
+				hidden_effect = {
+					set_victory_points = {
+					province = 4619
+					value = 15    
+				}
+			}
+		}
+
 		option = {
 			CHI_civil_war_10 = yes
 			CHI = {
@@ -1637,6 +1647,16 @@ country_event = {
 					owns_state = 322
 				} 
 			}
+
+			immediate = {
+				hidden_effect = {
+					set_victory_points = {
+					province = 4619
+					value = 15    
+				}
+			}
+		}
+
 		option = {
 			CHI_civil_war_10 = yes
 			CHI = {
