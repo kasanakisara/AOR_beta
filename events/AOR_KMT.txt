@@ -413,6 +413,14 @@ country_event = {#昆明政府统一南方
             }
         option = {
             CHI_civil_war_10 = yes
+            set_province_name = {
+                id = 11913
+                name = "南京"
+            }
+            set_province_name = {
+                id = 9843
+                name = "北平"
+            }
                 KMT = {
                     set_cosmetic_tag = KMT_3
                     add_state_core = 884

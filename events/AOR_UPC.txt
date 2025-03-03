@@ -1290,6 +1290,14 @@ country_event = {#中国广州政府宣布北伐
                 province = 9843
                 value = 20    
             }
+			set_province_name = {
+                id = 11913
+                name = "南京"
+            }
+            set_province_name = {
+                id = 9843
+                name = "北平"
+            }
             UPC = {
 				add_popularity = { ideology = Absolutism popularity = 0.05 }
                 add_state_core = 876
