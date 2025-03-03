@@ -122,7 +122,9 @@ country_event = {
 
 	option = {
 		name = CHI.5.a
-		news_event = {id=AOR_news.49}
+		hidden_effect = {
+			news_event = {id=AOR_news.49}
+		}
 	}
 }
 
@@ -182,9 +184,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CHI.6.a
-		news_event = {id=AOR_news.88}
-		country_event = { days = 220  id =CHI.13 }
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.13 }
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
 				load_oob = "AOR_LAND_CHI_KMT"
@@ -193,9 +195,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.6.b
-		news_event = {id=AOR_news.88}
-		country_event = { days = 220  id =CHI.14 }
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.14 }
 			UPC = {
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
@@ -205,9 +207,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.6.c
-		news_event = {id=AOR_news.88}
-		country_event = { days = 220  id =CHI.14 }
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.14 }
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
 				load_oob = "AOR_LAND_CHI_KMT"
@@ -216,9 +218,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.6.e
-		news_event = {id=AOR_news.88}
-		country_event = { days = 220  id =CHI.13 }
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.13 }
 			UPC = {
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
@@ -826,7 +828,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = CHI.23.a
-		country_event = { id = CHI.24 }
+		country_event = { id = CHI.24 }	
 	}
 }
 
@@ -964,12 +966,16 @@ country_event = {
 }
 	option = {
 		name = CHI.31.a
+		hidden_effect = {
 		news_event = {id=AOR_news.97}
+		}
 	}
 
 	option = {
 		name = CHI.31.b
+		hidden_effect = {
 		news_event = {id=AOR_news.97}
+		}
 		MON = {
 			load_oob = "AOR_LAND_CHI_VAN_2"
 			load_oob = "AOR_LAND_CHI_VAN_2"
@@ -1001,7 +1007,9 @@ country_event = {
 }
 	option = {
 		name = CHI.32.a
+		hidden_effect = {
 		news_event = {id=AOR_news.102}
+		}
 		KMT = {
 			add_ideas = CHI_gemingtongyizhixi
 		}
@@ -1045,7 +1053,9 @@ country_event = {
 }
 	option = {
 		name = CHI.33.a
+		hidden_effect = {
 		news_event = {id=AOR_news.103}
+		}
 	}	
 }
 
@@ -1102,7 +1112,9 @@ country_event = {
 
 	option = {
 		name = CHI.34.a
+		hidden_effect = {
 		news_event = {id=AOR_news.110}
+		}
         NAN = {
 			add_state_core = 330
 			add_state_core = 610
@@ -1190,7 +1202,9 @@ country_event = {
 
 	option = {
 		name = CHI.35.a
+		hidden_effect = {
 		news_event = {id=AOR_news.111}
+		}
         MON = {
 			add_state_core = 893
 			add_state_core = 882
@@ -1618,9 +1632,11 @@ country_event = {
 					add_state_core = 322
 			}
 			name=CHI.41.a
-			news_event = {id=AOR_news.120}
+			hidden_effect = {
+                news_event = {id=AOR_news.120}
 			}
 		}
+	}
 
 		country_event = { #北京政府统一全中国！
 		id = CHI.42
@@ -1709,9 +1725,11 @@ country_event = {
 					add_state_core = 322
 			}
 			name=CHI.42.a
-			news_event = {id=AOR_news.119}
+			hidden_effect = {
+                news_event = {id=AOR_news.119}
 			}
 		}
+	}
 
 #重庆英舰事件
 country_event = {
@@ -1765,7 +1783,9 @@ country_event = {
 			
 		}
 		name = CHI.44.a
-		news_event = {id=AOR_news.143}
+		hidden_effect = {
+            news_event = {id=AOR_news.143}
+		}
 	}
 }
 
@@ -1810,7 +1830,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.46.a
-		news_event = {id=AOR_news.168}
+		hidden_effect = {
+			news_event = {id=AOR_news.168}
+		}
 	}
 }
 
@@ -1835,7 +1857,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.47.a
-		news_event = {id=AOR_news.169}
+		hidden_effect = {
+			news_event = {id=AOR_news.169}
+		}
 	}
 }
 
@@ -1865,7 +1889,9 @@ country_event = {
 			
 		}
 		name = CHI.48.a
-		news_event = {id=AOR_news.177}
+		hidden_effect = {
+			news_event = {id=AOR_news.177}
+		}
 	}
 }
 

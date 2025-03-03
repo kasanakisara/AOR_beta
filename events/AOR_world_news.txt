@@ -3138,3 +3138,16 @@ news_event = {#美国北方少数党派与联邦政府妥协
 		name = AOR_news.219.a
 	}
 }
+
+news_event = {#乌克兰人民共和国灭亡
+	id = AOR_news.220
+	title = AOR_news.220.t
+	desc = AOR_news.220.d
+	picture = GFX_AOR_news.220_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.220.a
+	}
+}
