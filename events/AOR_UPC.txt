@@ -1277,11 +1277,17 @@ country_event = {#中国广州政府宣布北伐
         }
 
 		immediate = {
+            hidden_effect = {
+				set_victory_points = {
+                province = 1047
+                value = 20   
+                }
 			hidden_effect = {
 				set_victory_points = {
                 province = 4619
                 value = 15    
-            }
+                }
+		    }
 		}
 	}
     
