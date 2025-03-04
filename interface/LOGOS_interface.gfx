@@ -805,7 +805,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_AOR_news.44_pic"
-		texturefile = "gfx/event_pictures/AOR_news.44_pic.png"
+		texturefile = "gfx/event_pictures/AOR_news.41_pic.png"
 	}
 	spriteType = {
 		name = "GFX_AOR_news.45_pic"
@@ -1310,6 +1310,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_AOR_news.219_pic"
 		texturefile = "gfx/event_pictures/AOR_news.218_pic.png"
+	}
+	spriteType = {
+		name = "GFX_AOR_news.220_pic"
+		texturefile = "gfx/event_pictures/AOR_news.220_pic.png"
 	}
 	spriteType = {
 		name = "GFX_AOR_news.354_pic"

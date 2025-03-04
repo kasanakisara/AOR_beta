@@ -426,32 +426,57 @@ country_event = {
 #}
 
 country_event = {
-	id = USA.9 #西部动乱
+	id = USA.9 #西部大动乱（西部战争前夜）
 	title = USA.9.t
 	desc = USA.9.d
 	picture = GFX_Portrait_of_Tirpitz
-	trigger = {
-	    date > 1921.6.20
-		tag = USA
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-	hidden_effect = {
-		386 = { set_demilitarized_zone = yes }
-		385 = { set_demilitarized_zone = yes }
-		378 = { set_demilitarized_zone = yes }
-		379 = { set_demilitarized_zone = yes }
-		380 = { set_demilitarized_zone = yes }
-		924 = { set_demilitarized_zone = yes }
-		923 = { set_demilitarized_zone = yes }
-		925 = { set_demilitarized_zone = yes }
-		381 = { set_demilitarized_zone = yes }
-		387 = { set_demilitarized_zone = yes }
-		388 = { set_demilitarized_zone = yes }
-		382 = { set_demilitarized_zone = yes }
-		384 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			US2 = {
+				set_cosmetic_tag = US2_2
+				set_politics = { ruling_party = Special }
+				set_popularities = {
+					Special = 100
+				}
+				transfer_state = 378
+				transfer_state = 379
+				transfer_state = 380
+				transfer_state = 381
+				transfer_state = 382
+				transfer_state = 383
+				transfer_state = 384
+				transfer_state = 385
+				transfer_state = 386
+				transfer_state = 387
+				transfer_state = 388
+				transfer_state = 389
+				transfer_state = 390
+				transfer_state = 923
+				transfer_state = 924
+				transfer_state = 925
+				transfer_state = 926
+			}
+				378 = { set_demilitarized_zone = yes }
+				379 = { set_demilitarized_zone = yes }
+				380 = { set_demilitarized_zone = yes }
+				381 = { set_demilitarized_zone = yes }
+				382 = { set_demilitarized_zone = yes }
+				383 = { set_demilitarized_zone = yes }
+				384 = { set_demilitarized_zone = yes }
+				385 = { set_demilitarized_zone = yes }
+				386 = { set_demilitarized_zone = yes }
+				387 = { set_demilitarized_zone = yes }
+				388 = { set_demilitarized_zone = yes }
+				389 = { set_demilitarized_zone = yes }
+				390 = { set_demilitarized_zone = yes }
+				923 = { set_demilitarized_zone = yes }
+				924 = { set_demilitarized_zone = yes }
+				925 = { set_demilitarized_zone = yes }
+				926 = { set_demilitarized_zone = yes }
+			}
 	}
-}
 
       
 	option = {
@@ -460,7 +485,7 @@ country_event = {
 }
 
 country_event = {
-	id = USA.10 #西部炸出来啦
+	id = USA.10 #西部战争爆发
 	title = USA.10.t
 	desc = USA.10.d
 	picture = GFX_USA_event_10_pic
@@ -576,7 +601,7 @@ country_event = {
 		news_event = {id=AOR_news.64}
 		hidden_effect = {
 			country_event = { days = 1 id = USA.10014 }
-			country_event = { days = 7 id = USA.10009 }
+			country_event = { days = 7 id = USA.9 }
 		CSA = {
 				transfer_state = 366
 				transfer_state = 365
@@ -663,7 +688,7 @@ country_event = {
 		news_event = {id=AOR_news.64}
 		hidden_effect = {
 			country_event = { days = 1 id = USA.10014 }
-			country_event = { days = 7 id = USA.10009 }
+			country_event = { days = 7 id = USA.9 }
 		CSA = {
 				transfer_state = 366
 				transfer_state = 365
@@ -745,7 +770,7 @@ country_event = {
 }
 
 country_event = {
-	id = USA.101 #攻克亚特兰大
+	id = USA.101 #内战攻克亚特兰大
 	title = USA.101.t
 	desc = USA.101.d
 	picture = GFX_USA_event_101_pic
@@ -763,7 +788,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.102 #攻克新奥尔良
+	id = USA.102 #内战攻克新奥尔良
 	title = USA.102.t
 	desc = USA.102.d
 	picture = GFX_USA_event_102_pic
@@ -803,7 +828,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.104 #向维克斯堡进军！
+	id = USA.104 #内战向维克斯堡进军！
 	title = USA.104.t
 	desc = USA.104.d
 	picture = GFX_USA_event_104_pic
@@ -905,7 +930,7 @@ country_event = {
 
 
 country_event = {
-	id = USA.1000 #南北战争的兵！
+	id = USA.1000 #南北战争南方的火星兵！
 	title = USA.1000.t
 	desc = USA.1000.d
 	picture = GFX_USA_event_1000_pic
@@ -922,7 +947,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1001 #南北战争的兵！
+	id = USA.1001 #南北战争南方的火星兵！
 	title = USA.1001.t
 	desc = USA.1001.d
 	picture = GFX_USA_event_1001_pic
@@ -939,7 +964,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1002 #南北战争的兵！
+	id = USA.1002 #南北战争南方的火星兵！
 	title = USA.1002.t
 	desc = USA.1002.d
 	picture = GFX_USA_event_1002_pic
@@ -956,7 +981,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1003 #南北战争的兵！
+	id = USA.1003 #南北战争南方的火星兵！
 	title = USA.1003.t
 	desc = USA.1003.d
 	picture = GFX_USA_event_1003_pic
@@ -973,7 +998,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1004 #南北战争的兵！
+	id = USA.1004 #南北战争南方的火星兵！
 	title = USA.1004.t
 	desc = USA.1004.d
 	picture = GFX_USA_event_1004_pic
@@ -990,7 +1015,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1005 #南北战争的兵！
+	id = USA.1005 #南北战争南方的火星兵！
 	title = USA.1005.t
 	desc = USA.1005.d
 	picture = GFX_USA_event_1005_pic
@@ -1007,14 +1032,14 @@ country_event = {
 }
 
 country_event = {
-	id = USA.5000
-	title = USA.5000.t
-	desc = USA.5000.d
+	id = USA.1006 #美国西部战争的火星兵！
+	title = USA.1006.t
+	desc = USA.1006.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.5000.a
+		name=USA.1006.a
 		ai_chance = {
 			base = 50
 		}
@@ -1032,14 +1057,14 @@ country_event = {
 				load_oob = "US2_Civilwar"
 				
 			}
-			USA = {
-				country_event = {id = USA.5001 days = 90}
+			US2 = {
+				country_event = {id = USA.1007 days = 90}
 			}
 		}
 
 	}
 	option = {
-		name=USA.5000.b
+		name=USA.1006.b
 		ai_chance = {
 			base = 50
 		}
@@ -1057,22 +1082,22 @@ country_event = {
 				load_oob = "US1_Civilwar"
 				
 			}
-			USA = {
-				country_event = {id = USA.5001 days = 90}
+			US1 = {
+				country_event = {id = USA.1007 days = 90}
 			}
 		}
 
 	}
 }
 country_event = {
-	id = USA.5001
-	title = USA.5001.t
-	desc = USA.5001.d
+	id = USA.1007 #美国西部战争的火星兵！
+	title = USA.1007.t
+	desc = USA.1007.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.5001.a
+		name=USA.1007.a
 		ai_chance = {
 			base = 50
 		}
@@ -1088,14 +1113,14 @@ country_event = {
 			US2 = {
 				load_oob = "US2_Civilwar"
 				load_oob = "US2_Civilwar"
-				country_event = {id = USA.5002 days = 90}
+				country_event = {id = USA.1008 days = 90}
 
 			}
 		}
 
 	}
 	option = {
-		name=USA.5001.b
+		name=USA.1007.b
 		ai_chance = {
 			base = 50
 		}
@@ -1111,7 +1136,7 @@ country_event = {
 			US1 = {
 				load_oob = "US1_Civilwar"
 				load_oob = "US1_Civilwar"
-				country_event = {id = USA.5002 days = 90}
+				country_event = {id = USA.1008 days = 90}
 
 			}
 		}
@@ -1119,14 +1144,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.5002
-	title = USA.5002.t
-	desc = USA.5002.d
+	id = USA.1008 #美国西部战争的火星兵！
+	title = USA.1008.t
+	desc = USA.1008.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.5002.a
+		name=USA.1008.a
 		if = {
 			limit = {
 				AND = {
@@ -1147,14 +1172,14 @@ country_event = {
 }
 
 country_event = {
-	id = USA.6000
-	title = USA.6000.t
-	desc = USA.6000.d
+	id = USA.1009 #美国西部战争的火星兵！
+	title = USA.1009.t
+	desc = USA.1009.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.6000.a
+		name=USA.1009.a
 		if = {
 			limit = {
 				AND = {
@@ -1174,14 +1199,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.7000
-	title = USA.7000.t
-	desc = USA.7000.d
+	id = USA.1010 #美国西部战争的火星兵！
+	title = USA.1010.t
+	desc = USA.1010.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.7000.a
+		name=USA.1010.a
 		if = {
 			limit = {
 				AND = {
@@ -1546,57 +1571,13 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.10009 #西部动乱了（西部战争前夜）
+	id = USA.10009 #西部大动乱（西部战争前夜）(已转移至USA.9，USA.10009作废)
 	title = USA.10009.t
     desc = USA.10009.d
 	picture = GFX_USA_event_10009_pic
     is_triggered_only = yes
 	fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			US2 = {
-				set_cosmetic_tag = US2_2
-				set_politics = { ruling_party = Special }
-				set_popularities = {
-					Special = 100
-				}
-				transfer_state = 378
-				transfer_state = 379
-				transfer_state = 380
-				transfer_state = 381
-				transfer_state = 382
-				transfer_state = 383
-				transfer_state = 384
-				transfer_state = 385
-				transfer_state = 386
-				transfer_state = 387
-				transfer_state = 388
-				transfer_state = 389
-				transfer_state = 390
-				transfer_state = 923
-				transfer_state = 924
-				transfer_state = 925
-				transfer_state = 926
-			}
-				378 = { set_demilitarized_zone = yes }
-				379 = { set_demilitarized_zone = yes }
-				380 = { set_demilitarized_zone = yes }
-				381 = { set_demilitarized_zone = yes }
-				382 = { set_demilitarized_zone = yes }
-				383 = { set_demilitarized_zone = yes }
-				384 = { set_demilitarized_zone = yes }
-				385 = { set_demilitarized_zone = yes }
-				386 = { set_demilitarized_zone = yes }
-				387 = { set_demilitarized_zone = yes }
-				388 = { set_demilitarized_zone = yes }
-				389 = { set_demilitarized_zone = yes }
-				390 = { set_demilitarized_zone = yes }
-				923 = { set_demilitarized_zone = yes }
-				924 = { set_demilitarized_zone = yes }
-				925 = { set_demilitarized_zone = yes }
-				926 = { set_demilitarized_zone = yes }
-			}
-	}
+
     option = { 
         name = USA.10009.a
 	}
@@ -1766,7 +1747,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10022 #起诉(加征关税)
+	id = USA.10022 #起诉(美国加征关税)
 	title = USA.10022.t
 	desc = USA.10022.d
 	picture = GFX_USA_event_10022_pic
@@ -1778,7 +1759,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10023 #众议院选举(1920)
+	id = USA.10023 #美国众议院选举(1920)
 	title = USA.10023.t
 	desc = USA.10023.d
 	picture = GFX_USA_event_10023_pic
@@ -1801,7 +1782,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10024 #妇女提案(1921)
+	id = USA.10024 #美国妇女提案(1921)
 	title = USA.10024.t
 	desc = USA.10024.d
 	picture = GFX_USA_event_10024_pic
@@ -1813,7 +1794,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10025 #政治活动权利的提案(1921)
+	id = USA.10025 #美国政治活动权利的提案(1921)
 	title = USA.10025.t
 	desc = USA.10025.d
 	picture = GFX_USA_event_10025_pic
@@ -1827,7 +1808,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10026 #废除修正案(1921)
+	id = USA.10026 #美国废除修正案(1921)
 	title = USA.10026.t
 	desc = USA.10026.d
 	picture = GFX_USA_event_10026_pic
@@ -1849,7 +1830,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10028 #军费提案(1920)
+	id = USA.10028 #美国军费提案(1920)
 	title = USA.10028.t
 	desc = USA.10028.d
 	picture = GFX_USA_event_10028_pic

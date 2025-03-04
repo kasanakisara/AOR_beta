@@ -1,7 +1,7 @@
 USA_civil_war_west = {
-	country_event = {id = USA.5000 days = 200}
-		country_event = {id = USA.6000 days = 210}
-		country_event = {id = USA.7000 days = 90}
+	country_event = {id = USA.1006 days = 200}
+		country_event = {id = USA.1009 days = 210}
+		country_event = {id = USA.1010 days = 90}
 		US1 = {
 			transfer_state = 386
 			transfer_state = 387
