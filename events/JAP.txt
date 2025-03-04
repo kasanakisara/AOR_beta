@@ -326,6 +326,9 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
 		}
+		RUS = {
+			transfer_state = 560
+		}
 		PRI = {
 			give_military_access = KMT
 		}
@@ -561,6 +564,9 @@ country_event = {
 			add_popularity = { ideology = AUT_democratic  popularity = -0.05 }
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
+		}
+		RUS = {
+			transfer_state = 560
 		}
 		PRI = {
 			give_military_access = UPC
