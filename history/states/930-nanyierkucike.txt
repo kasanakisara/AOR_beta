@@ -11,11 +11,12 @@ state={
 		add_core_of = RUS
 		add_core_of = RUS
         add_core_of = ARU
+
+		victory_points = {
+			4766 1 
+		}
 	}
 
-	victory_points = {
-		4766 1 
-	}
 	
 	provinces={
 		1762 1810 4766 4837 10528 10543 
