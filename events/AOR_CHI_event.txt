@@ -953,6 +953,14 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_victory_points = {
+                province = 7191
+                value = 15    
+            }
+			set_victory_points = {
+                province = 11991
+                value = 3    
+            }
+			set_victory_points = {
                 province = 12055
                 value = 10    
             }
