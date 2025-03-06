@@ -53,7 +53,7 @@ on_actions = {
 			753 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_chengdu }
-					province = { id = 4375 }
+					province = { id = 4925 }
 				}
 			}
 			896 = {
