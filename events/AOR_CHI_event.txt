@@ -1885,6 +1885,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.47.a
+		set_cosmetic_tag = TIB_Absolutism
 		hidden_effect = {
 			news_event = {id=AOR_news.169}
 		}

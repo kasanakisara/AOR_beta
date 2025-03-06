@@ -257,7 +257,7 @@ CHI_civil_war_3 = {
 		recruit_character = JIZ_zhou_yinren
 		load_oob = AOR_LAND_CHI_JIZ
 	}
-	MEN = {
+	MEN = { #陕西
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 622
 		add_state_core = 896
@@ -268,13 +268,14 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 
-	QIN = {
+	QIN = { #青海
+		set_cosmetic_tag = QIN_1
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 604
 		transfer_state = 604
 	}
 	
-	XSM = {
+	XSM = { #甘肃
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 754
 		add_state_core = 283
@@ -293,13 +294,14 @@ CHI_civil_war_3 = {
 		283= {set_demilitarized_zone=yes}
 		add_manpower = 10000
 	}
-	TIB = {
+	TIB = { #西藏
+	    set_cosmetic_tag = TIB_1_Absolutism
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 322
 		transfer_state = 322
 		add_manpower = 10000
 	}
-	SIK = {
+	SIK = { #新疆
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 287
 		add_state_core = 617
