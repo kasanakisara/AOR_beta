@@ -73,8 +73,11 @@ focus_tree={
 			country_event={
 				id=USA.10023
 			}
-			news_event={
-				id=AOR_news.190
+			hidden_effect = {
+				news_event={
+					id=AOR_news.190
+				}
+				news_event = { days=210 id = AOR_news.221 }
 			}
 		}
 	}

@@ -3151,3 +3151,16 @@ news_event = {#乌克兰人民共和国灭亡
 		name = AOR_news.220.a
 	}
 }
+
+news_event = {#美国华尔街发生大爆炸！
+	id = AOR_news.221
+	title = AOR_news.221.t
+	desc = AOR_news.221.d
+	picture = GFX_AOR_news.221_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.221.a
+	}
+}
