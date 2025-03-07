@@ -591,6 +591,10 @@ country_event = {
 				province = 1150
 				value = 10    
 			}
+			set_victory_points = {
+				province = 987
+				value = 3    
+			}
 		}
 	}
 
