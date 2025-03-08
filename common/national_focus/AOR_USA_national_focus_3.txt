@@ -547,8 +547,10 @@ focus_tree={
 					add_idea = USA_zhixuchonggou_knights2
 				}
 			}
-			news_event={
-				id=AOR_news.191
+			hidden_effect = {
+				news_event={
+					id = AOR_news.191
+				}
 			}
 		}
 	}
@@ -568,7 +570,9 @@ focus_tree={
 		}
 		completion_reward={
 			hidden_effect = {
-				news_event = AOR_news.218
+				news_event = {
+				id = AOR_news.218
+				}
 			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4
@@ -633,7 +637,9 @@ focus_tree={
 		}
 		completion_reward={
 			hidden_effect = {
-				news_event = AOR_news.219
+				news_event = {
+				id = AOR_news.219
+				}
 			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4

@@ -75,7 +75,7 @@ focus_tree={
 			}
 			hidden_effect = {
 				news_event={
-					id=AOR_news.190
+					id = AOR_news.190
 				}
 				news_event = { days=210 id = AOR_news.221 }
 			}
@@ -180,7 +180,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			news_event = AOR_news.203
+			hidden_effect = {
+				news_event = AOR_news.203
+			}
 			add_manpower=-500
 			swap_ideas={
 				remove_idea=USA_AmericanAnxietyA
@@ -218,7 +220,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			news_event = AOR_news.208
+			hidden_effect = {
+				news_event = { 
+				id = AOR_news.208 
+				}
+			}
 			if={
 				limit={
 					has_idea=USA_dazhanzhimo
@@ -284,8 +290,10 @@ focus_tree={
 					add_idea=USA_dazhanzhimo4
 				}
 			}
-			news_event={
-				id=AOR_news.83
+			hidden_effect = {
+				news_event={
+					id=AOR_news.83
+				}	
 			}
 			add_stability=-0.05
 		}
