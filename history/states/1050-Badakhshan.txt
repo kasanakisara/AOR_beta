@@ -9,9 +9,13 @@ state={
 	history={
 		owner = AFG
 		add_core_of = AFG
+		add_core_of = AFK
+
 		victory_points = {
 			10781 1
 		}
+
+		set_demilitarized_zone = yes
 	}
 	
 	buildings_max_level_factor=1.000

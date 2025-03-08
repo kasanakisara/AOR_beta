@@ -1124,3 +1124,7 @@ GLC_POL = {
 	color = rgb { 214 102 139 }
 	color_ui = rgb { 255 120 138 }
 }
+AFK_RAJ = {
+	color = rgb { 170 25 25 }
+	color_ui = rgb { 200 25 25 }
+}

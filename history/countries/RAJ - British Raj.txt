@@ -128,3 +128,8 @@ set_popularities = {
 	FRE_democratic = 16
 	Fascism = 2
 }
+
+set_autonomy = {
+	target = AFK
+	autonomy_state = autonomy_puppet
+}

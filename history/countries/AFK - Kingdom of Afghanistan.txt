@@ -1,4 +1,4 @@
-﻿capital = 267
+﻿capital = 415
 
 
 
@@ -7,15 +7,13 @@ set_technology = {
 	early_armor_car = 1
 }
 
-
 create_country_leader = {
-	name = "Habibollah Khan"
+	name = "Nasrallah Khan"
 	desc = ""
-	picture = "adym5-ima5r.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = soltanism
 }
-
 
 set_politics = {
 	ruling_party = Absolutism
@@ -25,10 +23,8 @@ set_politics = {
 }
 
 set_popularities = {
-	Absolutism = 50
-	ISL_democratic = 30
-	FRE_democratic = 5
-	CON_democratic = 5
-	AUT_democratic = 5
-	Marxism = 5
+	Absolutism = 85
+	ISL_democratic = 15
 }
+
+set_cosmetic_tag = AFK_RAJ

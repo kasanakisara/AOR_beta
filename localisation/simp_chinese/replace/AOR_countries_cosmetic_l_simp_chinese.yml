@@ -1077,10 +1077,12 @@
  MOR_FRA_DEF:0 "法属摩洛哥保护国"
  ANG_POR_AUT_democratic:0 "葡属安哥拉"
  ANG_POR_AUT_democratic_DEF:0 "葡属安哥拉"
- MZB_POR_AUT_democratic:0 "葡属莫桑比克" #禁止用古称！#
+ MZB_POR_AUT_democratic:0 "葡属莫桑比克"
  MZB_POR_AUT_democratic_DEF:0 "葡属莫桑比克"
  YUG_HUN:"南斯拉夫保护国"
  ROM_HUN:"罗马尼亚保护国"
  HUN_tisza:"大匈牙利督政府"
  HUN_CRO:"马扎尔-斯拉夫二元联邦"
  TUR_SOLTAN_ALIVE:"奥斯曼帝政军政府"
+ AFK_RAJ:"印控阿富汗王国"
+ AFK_RAJ_DEF:"印控阿富汗巴拉克宰王朝"
