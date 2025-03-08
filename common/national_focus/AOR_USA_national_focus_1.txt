@@ -51,6 +51,9 @@ focus_tree={
 		completion_reward={
 			custom_effect_tooltip = USA_ASanFrancisco
 			hidden_effect = {
+			381 = { set_demilitarized_zone = yes }
+			387 = { set_demilitarized_zone = yes }
+			388 = { set_demilitarized_zone = yes }
 			country_event={
 				id = USA.10002
 			    }
@@ -112,6 +115,11 @@ focus_tree={
 		cost=1.00
 		completion_reward={
 			add_stability=0.05
+			hidden_effect = {
+				381 = { set_demilitarized_zone = no }
+				387 = { set_demilitarized_zone = no }
+				388 = { set_demilitarized_zone = no }
+			}
 		}
 	}
 	focus={
