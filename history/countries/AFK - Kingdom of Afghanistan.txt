@@ -10,7 +10,7 @@ set_technology = {
 create_country_leader = {
 	name = "Nasrallah Khan"
 	desc = ""
-	picture = ""
+	picture = "gfx/leaders/AFG/Nasrallah_Khan.png"
 	expire = "1965.1.1"
 	ideology = soltanism
 }
