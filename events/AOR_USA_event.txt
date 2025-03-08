@@ -2040,3 +2040,15 @@ country_event = {
 		name=USA.10042.a
 	}	
 }
+
+country_event = {
+	id = USA.10043 #劳动的合奏曲（劳动骑士团）
+	title = USA.10043.t
+	desc = USA.10043.d
+	picture = GFX_USA_event_10043_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10043.a
+	}	
+}

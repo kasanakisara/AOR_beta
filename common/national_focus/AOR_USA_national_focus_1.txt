@@ -139,7 +139,7 @@ focus_tree={
 			country_event={
 				id = USA.10001
 			}
-			STATE_393 = { set_demilitarized_zone = yes }
+			393 = { set_demilitarized_zone = yes }
 		  }
 		}
 	}
@@ -168,7 +168,10 @@ focus_tree={
 				days=180
 			}
 			country_event={
-				id = USA.10008
+				id = USA.10043
+			}
+			hidden_effect = {
+				country_event={ days = 7 id = USA.10008}
 			}
 		  }
 			custom_effect_tooltip = USA_AMartialLaw
