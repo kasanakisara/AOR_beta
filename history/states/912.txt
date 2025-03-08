@@ -7,7 +7,7 @@ state={
 
 	history={
 		victory_points = {
-			9762 3
+			9762 2
 		}
 		owner = JAP
 		add_core_of = RUS
@@ -18,6 +18,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+	}
+
+	resources = {
+		chromium = 9 # was: 12
 	}
 
 	provinces={
