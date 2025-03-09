@@ -2713,8 +2713,11 @@ on_actions = {
 					}
 				}
 				news_event = {id = AOR_news.224 }
-                AFG = {
+                AFK = {
 					set_cosmetic_tag = AFK_Absolutism
+					set_capital = {
+						state = 267
+					}
 					transfer_state = 267
 					transfer_state = 1050
 					transfer_state = 1051
