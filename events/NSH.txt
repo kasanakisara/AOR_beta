@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = NSH
-		date > 1919.8.1
+		date > 1919.9.1
 		}
 
 	option = {  #北石勒苏益格公投入丹
