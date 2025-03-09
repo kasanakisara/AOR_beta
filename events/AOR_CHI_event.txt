@@ -1889,6 +1889,16 @@ country_event = {
 		hidden_effect = {
 			news_event = {id=AOR_news.169}
 		}
+
+		create_country_leader = {
+			name = "The 13th Dalai Lama"
+			desc = ""
+			picture = "gfx/leaders/CHI/The_13th_Dalai_Lama.png"
+			expire = "1965.1.1"
+			ideology = sanminism
+			traits = {
+			}
+		}
 	}
 }
 
