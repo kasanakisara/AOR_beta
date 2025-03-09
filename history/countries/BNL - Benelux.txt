@@ -95,7 +95,9 @@ add_ideas = {
 	UK_help
 }
 
-
-country_event = { days = 3 id = BNL.1 }
+BNL = {
+	country_event = { days = 3 id = BNL.1 }
+	news_event = { days = 401 id = AOR_news.11 }
+}
 
 

@@ -176,3 +176,7 @@ recruit_character = FRA_Alexandre_Millerand
 
 give_guarantee = QID
 give_guarantee = BRA
+
+FRA = {
+	news_event = { days = 1774 id = AOR_news.12 }
+}

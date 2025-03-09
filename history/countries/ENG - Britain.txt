@@ -324,3 +324,8 @@ add_equipment_to_stockpile = {
 	amount = 20000
 	producer = ENG
 }
+
+ENG = {
+	news_event = { days = 2297 id = AOR_news.13 }
+	news_event = { days = 418 id = AOR_news.14 }
+}

@@ -763,20 +763,3 @@ country_event = {
 		news_event = {id = AOR_news.167}
 	}
 }
-
-country_event = {
-	id = JAP.17   #米骚乱扩大化
-	title = JAP.17.t
-	desc = JAP.17.d
-	picture = GFX_JAP_event_17
-	fire_only_once = yes
-	trigger = {
-		tag = JAP
-	    date > 1919.8.7
-		date < 1920.8.10
-	}
-	option = {
-		name = JAP.17.a
-		news_event = {id = AOR_news.46}
-	}
-}
