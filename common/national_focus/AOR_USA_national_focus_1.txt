@@ -46,7 +46,7 @@ focus_tree={
 		prerequisite={focus=USA_challenge}
 		cost=0.00
 		available={
-			date > 1919.8.30
+			date > 1919.8.27
 		}
 		completion_reward={
 			custom_effect_tooltip = USA_ASanFrancisco
