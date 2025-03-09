@@ -3164,3 +3164,42 @@ news_event = {#美国华尔街发生大爆炸！
 		name = AOR_news.221.a
 	}
 }
+
+news_event = {#阿富汗战争再起
+	id = AOR_news.222
+	title = AOR_news.222.t
+	desc = AOR_news.222.d
+	picture = GFX_AOR_news.222_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.222.a
+	}
+}
+
+news_event = {#阿富汗战争-阿曼努拉政权赢得胜利
+	id = AOR_news.223
+	title = AOR_news.223.t
+	desc = AOR_news.223.d
+	picture = GFX_AOR_news.223_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.223.a
+	}
+}
+
+news_event = {#阿富汗战争-纳斯鲁拉政权的胜利
+	id = AOR_news.224
+	title = AOR_news.224.t
+	desc = AOR_news.224.d
+	picture = GFX_AOR_news.224_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.224.a
+	}
+}

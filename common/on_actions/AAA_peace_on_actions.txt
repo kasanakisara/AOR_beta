@@ -2683,6 +2683,43 @@ on_actions = {
 					add_state_core = 1043
 				}
 		    }
+
+        #######阿富汗阿曼努拉大战阿富汗纳斯鲁拉#######
+         
+			else_if = {
+				limit = {
+					#阿曼努拉
+					FROM = {
+						original_tag = AFG
+					}
+					ROOT = {
+						original_tag = AFK
+					}
+				}
+				news_event = {id = AOR_news.223 }
+                AFG = {
+					transfer_state = 415
+					transfer_state = 1052
+				}
+			}
+			else_if = {
+				limit = {
+					#纳斯鲁拉
+					FROM = {
+						original_tag = AFK
+					}
+					ROOT = {
+						original_tag = AFG
+					}
+				}
+				news_event = {id = AOR_news.224 }
+                AFG = {
+					set_cosmetic_tag = AFK_Absolutism
+					transfer_state = 267
+					transfer_state = 1050
+					transfer_state = 1051
+				}
+			}
 		}
 	}
 }
