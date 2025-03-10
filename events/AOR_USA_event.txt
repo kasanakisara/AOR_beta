@@ -1466,32 +1466,24 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10003 #飞翔的雄鹰1
+	id = USA.10003 #飞翔的雄鹰（潘兴）1
 	title = USA.10003.t
 	desc = USA.10003.d
 	picture = GFX_USA_event_10003_pic
+	is_triggered_only = yes
 	fire_only_once = yes
-	
-	trigger = {
-	    tag = USA
-		date = 1919.9.1
-	}
 
 	option = {
 		name=USA.10003.a
 	}	
 }
 country_event = {
-	id = USA.10004 #飞翔的雄鹰2
+	id = USA.10004 #飞翔的雄鹰（潘兴）2
 	title = USA.10004.t
 	desc = USA.10004.d
 	picture = GFX_USA_event_10004_pic
+	is_triggered_only = yes
 	fire_only_once = yes
-
-		trigger = {
-		tag = USA
-		date = 1919.10.1
-	}
 
 	option = {
 		name=USA.10004.a
@@ -1531,7 +1523,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10007 #飞翔的雄鹰3
+	id = USA.10007 #飞翔的雄鹰（潘兴）3
     title = USA.10007.t
     desc = USA.10007.d
 	picture = GFX_USA_event_10007_pic
@@ -1908,7 +1900,7 @@ country_event = {
 	}	
 }
 country_event = {
-	id = USA.10034 #飞翔的雄鹰（4）
+	id = USA.10034 #飞翔的雄鹰（潘兴）（4）
     title = USA.10034.t
     desc = USA.10034.d
 	picture = GFX_USA_event_10034_pic
@@ -2050,5 +2042,33 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10043.a
+	}	
+}
+
+country_event = {
+	id = USA.10044 #飞翔的雄鹰（潘兴）5
+	title = USA.10044.t
+	desc = USA.10044.d
+	picture = GFX_USA_event_10044_pic
+	fire_only_once = yes
+	trigger = {
+           tag = USA
+	       date = 1920.5.1
+	 }
+	option = {
+		name=USA.10044.a
+		country_event = { days = 3 id = USA.10045 }
+	}	
+}
+
+country_event = {
+	id = USA.10045 #飞翔的雄鹰（潘兴）5-白宫战情报告
+	title = USA.10045.t
+	desc = USA.10045.d
+	picture = GFX_USA_event_10045_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10045.a
 	}	
 }
