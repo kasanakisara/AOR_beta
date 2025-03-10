@@ -3110,6 +3110,18 @@ spriteType = {
 		name = "GFX_USA_event_10042_pic"
 		texturefile = "gfx/event_pictures/USA_event_10001_pic.png"
 	}
+	spriteType = {
+		name = "GFX_USA_event_10043_pic"
+		texturefile = "gfx/event_pictures/USA_event_10032_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10044_pic"
+		texturefile = "gfx/event_pictures/USA_event_10003_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10045_pic"
+		texturefile = "gfx/event_pictures/USA_event_10001_pic.png"
+	}
 	
 	
 
