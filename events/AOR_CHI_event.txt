@@ -1681,6 +1681,15 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		CHI = {
+			set_popularities = {
+				Absolutism = 56
+				AUT_democratic = 20
+				CON_democratic = 17
+				FRE_democratic = 3
+				SOC_democratic = 3
+				Special = 1
+				
+			}
 			set_party_name = {
 				ideology = Absolutism
 				long_name = "中华民国陆军部"
