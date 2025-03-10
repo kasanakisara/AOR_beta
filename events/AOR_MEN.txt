@@ -12,6 +12,11 @@ country_event = {#冯玉祥支持共和(昆明)
         MEN ={
         load_oob = "AOR_LAND_CHI_MEN"
         set_cosmetic_tag = MEN_1
+        set_party_name = {
+            ideology = Absolutism
+            long_name = "国民军"
+            name = "国民军"
+        }
         declare_war_on = { 
             target = NAN
             type = civil_war
@@ -49,6 +54,11 @@ country_event = {#冯玉祥支持共和(广州)
         MEN ={
         load_oob = "AOR_LAND_CHI_MEN"
         set_cosmetic_tag = MEN_2
+        set_party_name = {
+            ideology = Absolutism
+            long_name = "国民军"
+            name = "国民军"
+        }
         declare_war_on = { 
             target = NAN
             type = civil_war

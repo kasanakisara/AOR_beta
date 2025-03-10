@@ -8,30 +8,37 @@ CHI_civil_war_1 = {
 			set_country_flag  = china_war_begin
 			leave_faction = yes
 			set_popularities = {
-					Absolutism = 72
-					FRE_democratic = 15
-					CON_democratic = 8
-					Special = 5
+				AUT_democratic = 35
+				Absolutism = 35
+				CON_democratic = 16
+				FRE_democratic = 9
+				Special = 5
 				
 			}
-			set_political_party = {
+			set_party_name = {
 				ideology = Absolutism
-				popularity = 72
-			}
-			set_party_name = {
-				ideology = FRE_democratic
-				long_name = "社会党(交通系）"
-				name = "社会党(交通系）"
-			}
-			set_party_name = {
-				ideology = CON_democratic
-				long_name = "亲日派政客-社会党(亲日派）"
+				long_name = "亲日派政客-社会党(皖系）"
 				name = "社会党(亲日派）"
 			}
 			set_party_name = {
+				ideology = AUT_democratic
+				long_name = "亲英派政客-社会党(中央系与直系）"
+				name = "社会党(亲英派）"
+			}
+			set_party_name = {
+				ideology = CON_democratic
+				long_name = "文官集团-社会党(交通系）"
+				name = "社会党(交通系）"
+			}
+			set_party_name = {
+				ideology = FRE_democratic
+				long_name = "国会第三派"
+				name = "国会第三派"
+			}
+			set_party_name = {
 				ideology = Special
-				long_name = "极端民族主义"
-				name = "极端民族主义"
+				long_name = "极端团体"
+				name = "极端团体"
 			}
 			create_country_leader = {
 				name = "Duan_Qi_Rui"
@@ -1049,4 +1056,126 @@ CHI_civilwar_6 = {
 	283= {set_demilitarized_zone =no}
 	330 = {set_demilitarized_zone=no}
 }
+
+CHI_civil_war_11 = {
+	NAN = {
+		annex_country = { 
+			target = CHI 
+			transfer_troops = no 
+		}
+		load_oob = "AOR_LAND_CHI_CENTRAL"
+		create_faction = Zhiyang_Union
+		add_to_faction = CHI
+		white_peace = CHI
+		drop_cosmetic_tag = yes
+	}
+	MON = {
+		load_oob = "AOR_LAND_CHI_VAN_2"
+		608={set_demilitarized_zone=NO}
+		transfer_state = 876
+		transfer_state = 612
+		transfer_state = 756
+		transfer_state = 600
+		transfer_state = 899
+		transfer_state = 897
+		transfer_state = 898
+		transfer_state = 595
+		transfer_state = 596
+		transfer_state = 895
+		transfer_state = 894
+		transfer_state = 892
+		transfer_state = 749
+		transfer_state = 606
+
+		add_state_core = 876
+		add_state_core = 612
+		add_state_core = 756
+		add_state_core = 600
+		add_state_core = 899
+		add_state_core = 897
+		add_state_core = 898
+		add_state_core = 595
+		add_state_core = 596
+		add_state_core = 895
+		add_state_core = 894
+		add_state_core = 892
+		add_state_core = 749
+		add_state_core = 606
+
+	}
+	MAN = {
+		load_oob = "AOR_LAND_CHI_MAN"
+		714={set_demilitarized_zone=no}
+		761={set_demilitarized_zone=no}
+		913={set_demilitarized_zone=no}
+		873={set_demilitarized_zone=no}
+		717={set_demilitarized_zone=no}
+		715={set_demilitarized_zone=no}
+		891={set_demilitarized_zone=no}
+		328={set_demilitarized_zone=no}
+		716={set_demilitarized_zone=no}
+		875={set_demilitarized_zone=no}
+		874={set_demilitarized_zone=no}
+		}
+    }
+
+CHI_civil_war_12 = {
+	MON = {
+		annex_country = { 
+			target = CHI 
+			transfer_troops = no 
+		}
+		load_oob = "AOR_LAND_CHI_CENTRAL"
+		create_faction = Zhiyang_Union
+		add_to_faction = CHI
+		white_peace = CHI
+	}
+	NAN = {
+		set_cosmetic_tag = NAN
+		load_oob = "AOR_LAND_CHI_VAN_2"
+		608={set_demilitarized_zone=NO}
+		transfer_state = 876
+		transfer_state = 612
+		transfer_state = 756
+		transfer_state = 600
+		transfer_state = 899
+		transfer_state = 897
+		transfer_state = 898
+		transfer_state = 595
+		transfer_state = 596
+		transfer_state = 895
+		transfer_state = 894
+		transfer_state = 892
+		transfer_state = 749
+		transfer_state = 606
+		add_state_core = 876
+		add_state_core = 612
+		add_state_core = 756
+		add_state_core = 600
+	    add_state_core = 899
+		add_state_core = 897
+		add_state_core = 898
+		add_state_core = 595
+		add_state_core = 596
+		add_state_core = 895
+		add_state_core = 894
+		add_state_core = 892
+		add_state_core = 749
+		add_state_core = 606
+    }
+	MAN = {
+		load_oob = "AOR_LAND_CHI_MAN"
+		714={set_demilitarized_zone=no}
+		761={set_demilitarized_zone=no}
+		913={set_demilitarized_zone=no}
+		873={set_demilitarized_zone=no}
+		717={set_demilitarized_zone=no}
+	    715={set_demilitarized_zone=no}
+		891={set_demilitarized_zone=no}
+		328={set_demilitarized_zone=no}
+		716={set_demilitarized_zone=no}
+		875={set_demilitarized_zone=no}
+		874={set_demilitarized_zone=no}
+	    }
+    }
 
