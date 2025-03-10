@@ -115,4 +115,5 @@ give_guarantee = QID
 
 JAP = {
 news_event = {days = 3 id = AOR_news.46}
+country_event = { days = 1520 id = JAP.17 }
 }

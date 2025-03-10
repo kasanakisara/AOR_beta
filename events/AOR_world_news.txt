@@ -828,13 +828,8 @@ news_event = { #京汉铁路工人大罢工被镇压
 	title = AOR_news.53.t
 	desc = AOR_news.53.d
 	picture = GFX_AOR_news.53_pic
+	is_triggered_only = yes
 	major = yes
-	trigger = {
-	    date > 1921.7.3
-		date < 1921.7.5
-	}
-	immediate = {
-	}
 	option = {
 		name = AOR_news.53.a
 	}
@@ -3196,5 +3191,18 @@ news_event = {#阿富汗战争-纳斯鲁拉政权的胜利
 
 	option = {
 		name = AOR_news.224.a
+	}
+}
+
+news_event = {#日本关东地区发生大地震！
+	id = AOR_news.225
+	title = AOR_news.225.t
+	desc = AOR_news.225.d
+	picture = GFX_AOR_news.225_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.225.a
 	}
 }

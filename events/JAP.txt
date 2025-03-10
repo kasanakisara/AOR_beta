@@ -763,3 +763,21 @@ country_event = {
 		news_event = {id = AOR_news.167}
 	}
 }
+
+country_event = {
+	id = JAP.17   #关东地区发生大地震！
+	title = JAP.17.t
+	desc = JAP.17
+	picture =GFX_JAP_event_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = JAP.17.a
+		JAP = {
+			add_manpower = -105000
+		}
+		hidden_effect = {
+			news_event = {id = AOR_news.225}
+		}
+	}
+}
