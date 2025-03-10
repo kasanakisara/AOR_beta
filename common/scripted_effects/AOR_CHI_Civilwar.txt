@@ -10,9 +10,10 @@ CHI_civil_war_1 = {
 			set_popularities = {
 				AUT_democratic = 35
 				Absolutism = 35
-				CON_democratic = 16
-				FRE_democratic = 9
-				Special = 5
+				CON_democratic = 17
+				FRE_democratic = 6
+				SOC_democratic = 6
+				Special = 1
 				
 			}
 			set_party_name = {
