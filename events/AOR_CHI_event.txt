@@ -117,8 +117,8 @@ country_event = {
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	fire_only_once = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = CHI.5.a

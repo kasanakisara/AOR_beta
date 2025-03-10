@@ -102,6 +102,7 @@ focus_tree={
 		available_if_capitulated=yes
 
 		completion_reward={
+		add_political_power = 50
 		unlock_decision_category_tooltip = CHI_Reclaiming_outer_northwest_decision
 		add_timed_idea = { idea = AOR_Reclaiming_outer_northwest  days = 150 }
 		}
