@@ -213,6 +213,10 @@ focus_tree={
 				add_idea=USA_GreatLakes2A
 			}
 			393 = { set_demilitarized_zone = no }
+			set_victory_points = {
+                province = 6710
+                value = 15    
+            }
 			hidden_effect = {
 				news_event = {id=AOR_news.136}
 			}

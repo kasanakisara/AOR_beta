@@ -602,6 +602,10 @@ country_event = {
 		hidden_effect = {
 			country_event = { days = 1 id = USA.10014 }
 			country_event = { days = 7 id = USA.9 }
+			set_victory_points = {
+                province = 6710
+                value = 20    
+            }
 		CSA = {
 				transfer_state = 366
 				transfer_state = 365
