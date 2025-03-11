@@ -27,7 +27,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "cai_cheng_xun"
-	picture = GFX_portrait_cai_cheng_xun
+	desc = "cai_cheng_xun_desc"
+	picture = gfx/leaders/CHI/cai_cheng_xun.png
 	expire = "1965.1.1"
 	ideology = miliciagov
 	traits = { 
