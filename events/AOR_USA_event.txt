@@ -1462,7 +1462,9 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_ASanFrancisco
-		news_event = {id=AOR_news.199}
+		hidden_effect = {
+			news_event = {id=AOR_news.199}
+		}
 	}	
 }
 country_event = {
