@@ -20,7 +20,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Sun_zhong_shan"
-	desc = "POLITICS_MON_DESC"
+	desc = "Sun_zhong_shan_desc"
 	picture = "gfx/leaders/KMT/sun.dds"
 	expire = "1965.1.1"
 	ideology = sanminism
@@ -30,7 +30,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Sun_zhong_shan"
-	desc = "POLITICS_MON_DESC"
+	desc = "Sun_zhong_shan_desc"
 	picture = "gfx/leaders/KMT/sun_1.dds"
 	expire = "1965.1.1"
 	ideology = newdemism
