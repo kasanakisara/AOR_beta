@@ -2086,3 +2086,15 @@ country_event = {
 		name=USA.10046.a
 	}	
 }
+
+country_event = {
+	id = USA.10047 #外交上的葬礼（退出协约国）
+	title = USA.10047.t
+	desc = USA.10047.d
+	picture = GFX_USA_event_10047_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10047.a
+	}	
+}
