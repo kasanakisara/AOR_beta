@@ -684,22 +684,6 @@ ideas = {
 				mobilization_speed = 0.05
 			}
 		}
-	#潘兴将军的作战计划	
-		USA_PlanOfOperationA = {
-			allowed = { always = yes }
-			modifier = {
-			army_infantry_attack_factor = 0.05
-			terrain_penalty_reduction = 0.05
-			}
-		}
-	#武装铁路网计划	
-		USA_RailwayA = {
-			allowed = { always = yes }
-			modifier = {
-			production_speed_rail_way_factor = 0.05
-			terrain_penalty_reduction = 0.3
-			}
-		}
 	#混乱的五大湖区	
 		USA_GreatLakesA = {
 			allowed = { always = yes }
@@ -795,6 +779,22 @@ ideas = {
 			modifier = {
 			stability_factor = 0.10
 			war_support_factor = 0.05
+			}
+		}
+	#潘兴将军的作战计划	
+		USA_PlanOfOperationA = {
+			allowed = { always = yes }
+			modifier = {
+			army_infantry_attack_factor = 0.05
+			terrain_penalty_reduction = 0.05
+			}
+		}
+	#武装铁路网计划	
+		USA_RailwayA = {
+			allowed = { always = yes }
+			modifier = {
+			production_speed_rail_way_factor = 0.05
+			terrain_penalty_reduction = 0.3
 			}
 		}
 	}

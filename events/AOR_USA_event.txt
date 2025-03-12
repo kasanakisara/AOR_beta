@@ -1593,7 +1593,8 @@ country_event = {
     option = { 
         name = USA.10010.a
 		hidden_effect = {
-		news_event  = { days = 1 id = AOR_news.217 }
+		news_event = { days = 1 id = AOR_news.217 }
+		country_event = { days = 7 id = USA.10031 }
 		}
 	}
 }
