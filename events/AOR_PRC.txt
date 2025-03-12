@@ -29,8 +29,8 @@ country_event = {#红军统一四川
                 AUT_democratic = 17
                 FRE_democratic = 11
                 Absolutism = 10
+                SOC_democratic = 7
                 AGR_socialism = 5
-                SOC_democratic = 5
             }
 
             set_capital = { state = 753 }
