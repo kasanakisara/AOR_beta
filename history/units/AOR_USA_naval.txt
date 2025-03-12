@@ -198,6 +198,18 @@ units= {
                     }
                 }
             }
+            ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
 			ship = {
                 name = "维克斯级" 
                 
@@ -211,6 +223,42 @@ units= {
                 }
             }
 			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+            ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+            ship = {
                 name = "维克斯级" 
                 
                 definition = destroyer
@@ -267,6 +315,18 @@ units= {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
+                    }
+                }
+            }
+            ship = {
+                name = "萨拉托加级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "萨拉托加级"
                     }
                 }
             }
@@ -275,7 +335,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_1 = {
+                    battle_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -287,7 +347,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_1 = {
+                    battle_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "独立级"
@@ -444,11 +504,35 @@ units= {
                 }
             }
             ship = {
+                name = "萨拉托加级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "萨拉托加级"
+                    }
+                }
+            }
+            ship = {
+                name = "邦克山号" 
+                
+                definition = battleship
+                equipment = { 
+                    battle_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "哥伦比亚级"
+                    }
+                }
+            }
+            ship = {
                 name = "约翰·汉考克号" 
             
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_1 = {
+                    battle_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -611,6 +695,30 @@ units= {
                     }
                 }
             }
+        	ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+            ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
 			ship = {
                 name = "丹佛级" 
                 
@@ -660,11 +768,23 @@ units= {
                 }
             }
             ship = {
+                name = "萨拉托加级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "萨拉托加级"
+                    }
+                }
+            }
+            ship = {
                 name = "托马斯·潘恩号" 
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_1 = {
+                    battle_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -777,6 +897,30 @@ units= {
                             amount = 1
                             owner =  USA
                             version_name = "切斯特级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "萨拉托加级" 
+                    
+                    definition = light_cruiser
+                    equipment = { 
+                        heavy_cruiser_1 = {
+                            amount = 1
+                            owner =  USA
+                            version_name = "萨拉托加级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "大陆会议号" 
+                    
+                    definition = battleship
+                    equipment = { 
+                        battle_cruiser_1 = {
+                            amount = 1
+                            owner =  USA
+                            version_name = "哥伦比亚级"
                         }
                     }
                 }
