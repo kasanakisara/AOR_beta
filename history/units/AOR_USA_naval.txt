@@ -313,50 +313,6 @@ units= {
 		task_force = {				
 			name = "联邦海军加勒比海舰队"			
 			location = 4641
-            ship = {
-                name = "桑普森级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "桑普森级"
-                    }
-                }
-            }
-			ship = {
-                name = "桑普森级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "桑普森级"
-                    }
-                }
-            }
-			ship = {
-                name = "桑普森级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "桑普森级"
-                    }
-                }
-            }
-			ship = {
-                name = "桑普森级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "桑普森级"
-                    }
-                }
-            }
 			ship = {
                 name = "桑普森级" 
                 definition = destroyer
@@ -542,6 +498,50 @@ units= {
                 }
             }
             ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+            ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
+                name = "桑普森级" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "桑普森级"
+                    }
+                }
+            }
+			ship = {
                 name = "桑普森级" 
                 definition = destroyer
                 equipment = { 
