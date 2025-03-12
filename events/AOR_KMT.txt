@@ -16,7 +16,7 @@ country_event = {#昆明政府政变
                 set_politics = {ruling_party = FRE_democratic }
                 create_country_leader = {
                     name = "Cai_e"
-                    desc = "POLITICS_MON_DESC"
+                    desc = "Cai_e_desc"
                     picture = "gfx/leaders/KMT/Cai_e.png"
                     expire = "1965.1.1"
                     ideology = liberalism
@@ -615,7 +615,7 @@ country_event = {#昆明政府统一南方
                     add_popularity = { ideology = AGR_socialism popularity = 0.10 }
                     create_country_leader = {
                         name = "Liao_Zhong_Kai"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Liao_Zhong_Kai_desc"
                         picture = "gfx/leaders/KMT/Liao_Zhong_Kai.PNG"
                         expire = "1965.1.1"
                         ideology = rad_san
@@ -773,7 +773,7 @@ country_event = {#昆明政府统一南方
                     add_popularity = { ideology = AUT_democratic popularity = 0.10 }
                     create_country_leader = {
                         name = "Chen_Qi_Mei"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Chen_Qi_Mei_desc"
                         picture = "gfx/leaders/KMT/Chen_Qi_Mei.png"
                         expire = "1965.1.1"
                         ideology = uni_san

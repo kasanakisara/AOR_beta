@@ -47,7 +47,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Song_Jiao_Ren"
-	desc = ""
+	desc = "Song_Jiao_Ren_desc"
 	picture = "Sun.dds"
 	expire = "1965.1.1"
 	ideology = sanminism
@@ -56,7 +56,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Duan_Qi_Rui"
-	desc = ""
+	desc = "Duan_Qi_Rui_desc"
 	picture = "gfx/leaders/CHI/Duan.png"
 	expire = "1965.1.1"
 	ideology = miliciagov
@@ -65,7 +65,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Li_Yuan_Hong"
-	desc = ""
+	desc = "Li_Yuan_Hong_desc"
 	picture = "Long.dds"
 	expire = "1965.1.1"
 	ideology = lianshengism
