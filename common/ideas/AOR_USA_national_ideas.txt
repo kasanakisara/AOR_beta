@@ -744,13 +744,6 @@ ideas = {
 			production_factory_max_efficiency_factor = -0.3
 			}
 		}
-	#安抚企业	
-		USA_AppeaseA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = 0.05
-			}
-		}
 	#颁布戒严令	
 		USA_MartialLawA = {
 			allowed = { always = yes }
@@ -758,30 +751,7 @@ ideas = {
 			stability_factor = -0.1
 			army_infantry_defence_factor = 0.2
 			}
-		}
-	#揪出幕后黑手	
-		USA_ArrestA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = -0.05
-			
-			}
 		}	
-	#与摩根商谈	
-		USA_MorganA = {
-			allowed = { always = yes }
-			modifier = {
-			production_factory_start_efficiency_factor = 0.05
-			production_factory_max_efficiency_factor = 0.05
-			}
-		}
-	#批评迪克西激进派	
-		USA_CriticizeA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = 0.05
-			}
-		}
 	#受破坏的五大湖区		
 		USA_GreatLakes2A = {
 			allowed = { always = yes }
@@ -800,6 +770,43 @@ ideas = {
 			production_factory_max_efficiency_factor = -0.10
 			}
 		}	
+	}
+
+
+#################隐 藏 国 策#################
+
+    hidden_ideas = {
+
+	#揪出幕后黑手	
+	    USA_ArrestA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.05
+		
+			}
+		}
+	#批评迪独	
+		USA_CriticizeA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
+	#与摩根商谈	
+		USA_MorganA = {
+			allowed = { always = yes }
+			modifier = {
+			production_factory_start_efficiency_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	#安抚企业	
+		USA_AppeaseA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
 	#暂时的慰籍-救济
 	    USA_zanshideweiji = {
 			picture = GFX_idea_USA_zanshideweiji
@@ -816,7 +823,7 @@ ideas = {
 			stability_factor = 0.05
 			}
 		}
-    #暂时的慰籍-战事宣传
+	#暂时的慰籍-战事宣传
 		USA_zanshidexuanchuan = {
 			picture = GFX_idea_USA_zanshidexuanchuan
 			allowed = { always = yes }
