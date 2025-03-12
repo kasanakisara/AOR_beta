@@ -329,13 +329,17 @@
  MON_Absolutism_party:0"西北筹边使公署"
  MEN_Absolutism_party:0"陕西军阀"
  MEN_1_Absolutism_party:0"国民军"
- XSM_Absolutism_party:0"马家军"
- TIB_Absolutism_party:0"驻藏办事长官"
+ XSM_Absolutism_party:0"甘宁马家军"
+ QIN_Absolutism_party:0"青海马家军"
+ TIB_Absolutism_party:0"驻藏办事长官节制噶厦地方政府"
  SIK_Absolutism_party:0"新疆军阀"
  SHX_Absolutism_party:0"晋系军阀"
 
 ######PRC#####
  PRC_Marxism_party:0"中国共产党"
+ PRC_AGR_socialism_party:0"中共激进合作人士"
+ PRC_SOC_democratic_party:0"中共进步合作人士"
+ PRC_FRE_democratic_party:0"中共团结合作人士"
  PRC_AUT_democratic_party:0"旧官僚/地主"
  PRC_Absolutism_party:0"军阀乱兵"
 
