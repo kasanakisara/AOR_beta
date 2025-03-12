@@ -239,7 +239,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -251,7 +251,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -259,38 +259,50 @@ units= {
                 }
             }
             ship = {
-                name = "佛罗里达级" 
+                name = "切斯特级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    light_cruiser_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "切斯特级"
+                    }
+                }
+            }
+            ship = {
+                name = "乔治·华盛顿号" 
                 
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "佛罗里达级"
+                        version_name = "乔治·华盛顿级"
                     }
                 }
             }
             ship = {
-                name = "纽约级" 
+                name = "托马斯·杰斐逊号" 
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battle_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "纽约级"
+                        version_name = "独立级"
                     }
                 }
             }
             ship = {
-                name = "纽约级" 
+                name = "詹姆斯·麦迪逊号" 
             
                 definition = battleship
                 equipment = { 
                     battle_cruiser_2 = {
                         amount = 1
                         owner =  USA
-                        version_name = "纽约级"
+                        version_name = "宪法级"
                     }
                }
             }
@@ -299,7 +311,7 @@ units= {
 
         
 		task_force = {				
-			name = "联邦海军南大西洋舰队"			
+			name = "联邦海军加勒比海舰队"			
 			location = 4641
             ship = {
                 name = "桑普森级" 
@@ -452,14 +464,14 @@ units= {
                 }
             }
             ship = {
-                name = "切斯特级" 
+                name = "丹佛级" 
                 
                 definition = light_cruiser
                 equipment = { 
                     light_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "切斯特级"
+                        version_name = "丹佛级"
                     }
                 }
             }
@@ -468,7 +480,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -476,14 +488,14 @@ units= {
                 }
             }
             ship = {
-                name = "佛罗里达级" 
+                name = "约翰·汉考克号" 
             
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "佛罗里达级"
+                        version_name = "乔治·华盛顿级"
                     }
                 }
             }
@@ -492,14 +504,14 @@ units= {
 
 
 		task_force = {				
-			name = "联邦海军墨西哥湾舰队"			
+			name = "联邦海军墨西哥湾-南太平洋舰队"			
 			location = 7552
             ship = {
                 name = "切斯特级" 
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -600,14 +612,14 @@ units= {
                 }
             }
 			ship = {
-                name = "切斯特级" 
+                name = "丹佛级" 
                 
                 definition = light_cruiser
                 equipment = { 
                     light_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "切斯特级"
+                        version_name = "丹佛级"
                     }
                 }
             }
@@ -616,7 +628,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -628,7 +640,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -640,19 +652,7 @@ units= {
                 
                 definition = light_cruiser
                 equipment = { 
-                    light_cruiser_1 = {
-                        amount = 1
-                        owner =  USA
-                        version_name = "切斯特级"
-                    }
-                }
-            }
-			ship = {
-                name = "切斯特级" 
-                
-                definition = light_cruiser
-                equipment = { 
-                    light_cruiser_1 = {
+                    light_cruiser_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "切斯特级"
@@ -660,14 +660,14 @@ units= {
                 }
             }
             ship = {
-                name = "罗伯特·李号" 
+                name = "托马斯·潘恩号" 
                 
                 definition = battleship
                 equipment = { 
                     battle_cruiser_1 = {
                         amount = 1
                         owner =  USA
-                        version_name = "佛罗里达级"
+                        version_name = "乔治·华盛顿级"
                     }
                 }
             }
@@ -757,14 +757,14 @@ units= {
                     }
                 }
                 ship = {
-                    name = "切斯特级" 
+                    name = "丹佛级" 
                     
                     definition = light_cruiser
                     equipment = { 
                         light_cruiser_1 = {
                             amount = 1
                             owner =  USA
-                            version_name = "切斯特级"
+                            version_name = "丹佛级"
                         }
                     }
                 }
@@ -773,7 +773,7 @@ units= {
                     
                     definition = light_cruiser
                     equipment = { 
-                        light_cruiser_1 = {
+                        light_cruiser_2 = {
                             amount = 1
                             owner =  USA
                             version_name = "切斯特级"
