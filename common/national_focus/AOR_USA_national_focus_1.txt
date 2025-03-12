@@ -163,17 +163,15 @@ focus_tree={
 		cost=2.00
 		completion_reward={
 			hidden_effect = {
-			add_timed_idea={
+				country_event={
+					id = USA.10043
+				}
+			country_event={ days = 7 id = USA.10008}
+		  	}
+		    add_timed_idea={
 				idea=USA_MartialLawA
 				days=180
-			}
-			country_event={
-				id = USA.10043
-			}
-			hidden_effect = {
-				country_event={ days = 7 id = USA.10008}
-			}
-		  }
+				}
 			custom_effect_tooltip = USA_AMartialLaw
 		}
 	}
@@ -185,15 +183,15 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
-		  hidden_effect = {
-			country_event={
-				id = USA.10046
-			}
+		    hidden_effect = {
+				country_event={
+					id = USA.10046
+				}
+		    }
 			add_timed_idea={
 				idea=USA_AppeaseA
 				days=180
 			}
-		  }
 			custom_effect_tooltip = USA_AAppease
 		}
 	}

@@ -714,7 +714,7 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.1
-			army_infantry_defence_factor = 0.2
+				resistance_decay = -0.3
 			}
 		}	
 	#受破坏的五大湖区		
