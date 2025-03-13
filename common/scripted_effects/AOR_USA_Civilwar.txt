@@ -78,25 +78,27 @@ USA_second_civil_war = {
 				}
 
 				swap_ideas={
-						remove_idea = USA_the_divided_nation2
-						add_idea = USA_the_divided_nation3
+					remove_idea = USA_the_divided_nation2
+					add_idea = USA_the_divided_nation3
 			   }
 
-				declare_war_on = {
-					target = CSA
-					type = civil_war
-					}
-					country_event = {id = usa.1000 days = 30}
+			   declare_war_on = {
+				target = CSA
+				type = civil_war
+				}
 
-                remove_unit_leader = USA_john_pershing
-				remove_unit_leader = USA_john_pershing_1
-				remove_unit_leader = USA_john_pershing_a
-				remove_unit_leader = USA_robert_e_lee_bradley
-				remove_unit_leader = USA_hunter_liggett
-				remove_unit_leader = USA_charles_pelot_sumner
-				remove_unit_leader = USA_William_Shepherd_Benson
-				remove_unit_leader = USA_William_Shepherd_Benson_a
-				remove_unit_leader = USA_Albert_Gleaves
+			   remove_unit_leader = USA_john_pershing
+			   remove_unit_leader = USA_john_pershing_1
+			   remove_unit_leader = USA_john_pershing_a
+			   remove_unit_leader = USA_robert_e_lee_bradley
+			   remove_unit_leader = USA_hunter_liggett
+			   remove_unit_leader = USA_charles_pelot_sumner
+			   remove_unit_leader = USA_William_Shepherd_Benson
+			   remove_unit_leader = USA_William_Shepherd_Benson_a
+			   remove_unit_leader = USA_Albert_Gleaves
+			}
+            US2 = {
+					country_event = {id = usa.1000 days = 30}
 			}
 				362 = {
 					add_extra_state_shared_building_slots = 0
@@ -251,9 +253,11 @@ USA_second_civil_war = {
 
 #######美 国 西 部 战 争#######
 USA_civil_war_west = {
-	country_event = {id = USA.1006 days = 200}
+	    US2 = {
+	    country_event = {id = USA.1006 days = 200}
 		country_event = {id = USA.1009 days = 210}
 		country_event = {id = USA.1010 days = 90}
+		}
 		US1 = {
 			transfer_state = 386
 			transfer_state = 387

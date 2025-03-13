@@ -783,7 +783,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.1000.a
-		USA = {country_event = {id = USA.1001 days = 30}}
+		US2 = {country_event = {id = USA.1001 days = 30}}
 		CSA = {
 			add_manpower=100000
 			load_oob = "CSA_Civilwar_2"
@@ -804,7 +804,7 @@ country_event = {
 			add_manpower=100000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1002 days = 30}}
+		US2 = {country_event = {id = USA.1002 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -821,7 +821,7 @@ country_event = {
 			add_manpower=100000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1003 days = 30}}
+		US2 = {country_event = {id = USA.1003 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -838,7 +838,7 @@ country_event = {
 			add_manpower=100000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1004 days = 30}}
+		US2 = {country_event = {id = USA.1004 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
@@ -855,7 +855,7 @@ country_event = {
 			add_manpower=100000
 			load_oob = "CSA_Civilwar_2"
 		}
-		USA = {country_event = {id = USA.1005 days = 30}}
+		US2 = {country_event = {id = USA.1005 days = 30}}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}
 }
