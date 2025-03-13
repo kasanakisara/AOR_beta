@@ -50,6 +50,7 @@ USA_second_civil_war = {
 				add_state_core = 1049
 				add_manpower = 10000
 				load_oob = "CSA_Civilwar"
+				load_oob = "AOR_CSA_naval"
 				
 				set_politics = {ruling_party = CON_democratic }
 				set_cosmetic_tag = CSA_1_CON_democratic

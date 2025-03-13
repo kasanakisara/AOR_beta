@@ -229,12 +229,20 @@ USA = {
 	}
 }
 
+###内阁
+recruit_character = USA_Thomas_Riley_Marshall
+recruit_character = USA_Robert_Lansing
+recruit_character = USA_A_Mitchell_Palmer
+recruit_character = USA_Franklin_MacVeagh
+recruit_character = USA_Frankin_K_Ryan
+
+###陆军将领###
 recruit_character = USA_john_pershing
 recruit_character = USA_tasker_bliss
 recruit_character = USA_payton_march
 recruit_character = USA_hugh_l_scott
 recruit_character = USA_hunter_liggett
-recruit_character = USA_robert_e_lee_bradley
+recruit_character = USA_robert_l_hauser
 recruit_character = USA_charles_pelot_sumner
 recruit_character = USA_john_l_hines
 recruit_character = USA_andrew_w_brust
@@ -243,7 +251,7 @@ recruit_character = USA_f_c_answorth
 recruit_character = USA_george_barnett
 recruit_character = USA_john_a_lerchen
 recruit_character = USA_harry_a_eaton
-recruit_character = USA_robert_l_h USAer
+recruit_character = USA_robert_e_lee_bradley
 recruit_character = USA_edward_whittemore
 recruit_character = USA_william_l_seibert
 recruit_character = USA_brayton_brown
@@ -252,28 +260,49 @@ recruit_character = USA_j_w_hurd
 recruit_character = USA_charles_g_morton
 recruit_character = USA_malin_craig
 
-recruit_character = USA_Thomas_Riley_Marshall
-recruit_character = USA_Robert_Lansing
-recruit_character = USA_A_Mitchell_Palmer
-recruit_character = USA_William_Gibbs_Mcadoo
-recruit_character = USA_Frankin_K_Ryan
-recruit_character = USA_Newton_Deihl_Baker
+###海军将领###
+recruit_character = USA_Henry_T_Mayo
+recruit_character = USA_William_Soden_Sims
+recruit_character = USA_William_B_Fletcher
+recruit_character = USA_Hugh_Rodman
+recruit_character = USA_Albert_Gleaves
+recruit_character = USA_Joseph_Strauss
+recruit_character = USA_Charles_J_Badger
+recruit_character = USA_Austin_M_Knight
+recruit_character = USA_William_S_Cowles
+recruit_character = USA_James_H_Olive
+recruit_character = USA_Thomas_S_Rodgers
 
+###理论家
+#陆军
 recruit_character = USA_john_pershing_1
 recruit_character = USA_Leonard_Wood_1
-recruit_character = USA_William_Mitchell_1
-recruit_character = USA_William_Soden_Sims
+#海军
+recruit_character = USA_William_Soden_Sims_1 
+#空军
+recruit_character = USA_William_Mitchell_1 
 
-recruit_character = USA_Leonard_Wood_a
-recruit_character = USA_William_Shepherd_Benson
+###军事部长
+#陆军
+recruit_character = USA_Newton_Deihl_Baker 
+recruit_character = USA_Leonard_Wood_a 
+#海军
+recruit_character = USA_William_Shepherd_Benson 
+recruit_character = USA_Frank_Friday_Fletcher
 recruit_character = USA_F_C_Answorth_n
+#空军
 recruit_character = USA_William_Mitchell
 
-recruit_character = USA_john_pershing_a
+###总司令
+#陆军
+recruit_character = USA_john_pershing_a 
 recruit_character = USA_tasker_bliss_a
 recruit_character = USA_payton_march_a
+#海军
+recruit_character = USA_Henry_T_Mayo_a
 recruit_character = USA_William_Shepherd_Benson_a
 recruit_character = USA_William_Soden_Sims_a
+#空军
 recruit_character = USA_William_Mitchell_a
 
 set_autonomy = {

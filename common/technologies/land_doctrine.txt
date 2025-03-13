@@ -688,12 +688,6 @@ technologies = {
 		xp_unlock_cost = 100
 		enable_tactic = tactic_backhand_blow
 		
-		path = {
-			leads_to_tech = modern_blitzkrieg 
-			research_cost_coeff = 1
-		}
-
-		
 		doctrine = yes	
 		research_cost = 4.5
 		
@@ -1453,12 +1447,6 @@ technologies = {
 		additional_brigade_column_size = 1
 	
 		enable_tactic = tactic_tactical_withdrawal
-		
-		path = {
-			leads_to_tech = air_land_battle 
-			research_cost_coeff = 1
-		}
-
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -2229,11 +2217,6 @@ technologies = {
 				category = category_all_infantry
 				defense = 0.05
 			}
-		}
-		
-		path = {
-			leads_to_tech = c3i_theory 
-			research_cost_coeff = 1
 		}
 
 		doctrine = yes	
