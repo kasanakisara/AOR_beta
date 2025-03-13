@@ -319,7 +319,7 @@ units= {
                 }
             }
             ship = {
-                name = "特伦顿级" 
+                name = "特伦顿号" 
                 
                 definition = heavy_cruiser
                 equipment = { 
@@ -504,7 +504,7 @@ units= {
                 }
             }
             ship = {
-                name = "萨拉托加级" 
+                name = "萨拉托加号" 
                 
                 definition = heavy_cruiser
                 equipment = { 
@@ -516,7 +516,7 @@ units= {
                 }
             }
             ship = {
-                name = "邦克山号" 
+                name = "约翰·汉考克号" 
                 
                 definition = battleship
                 equipment = { 
@@ -528,7 +528,7 @@ units= {
                 }
             }
             ship = {
-                name = "约翰·汉考克号" 
+                name = "约翰·亚当斯号" 
             
                 definition = battleship
                 equipment = { 
@@ -768,7 +768,7 @@ units= {
                 }
             }
             ship = {
-                name = "萨拉托加级" 
+                name = "费城号" 
                 
                 definition = heavy_cruiser
                 equipment = { 
@@ -901,7 +901,7 @@ units= {
                     }
                 }
                 ship = {
-                    name = "特伦顿级" 
+                    name = "波士顿号" 
                     
                     definition = heavy_cruiser
                     equipment = { 
