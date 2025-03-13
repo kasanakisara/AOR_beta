@@ -580,7 +580,10 @@ focus_tree={
 			factor=1
 		}
 		available={
-			date>1921.1.30
+			date > 1921.1.30
+		}
+		bypass={
+			date > 1921.1.30
 		}
 		search_filters={
 		}
@@ -588,13 +591,6 @@ focus_tree={
 			USA={
 				set_politics={
 					ruling_party=FRE_democratic
-				}
-				create_country_leader={
-					name="Warren_Gamaliel_Harding"
-					desc="Warren_Gamaliel_Harding_desc"
-					picture="gfx/leaders/USA/Harding.png"
-					expire="1945.1.1"
-					ideology=USA_federalism
 				}
 				hidden_effect={
 					load_focus_tree=USA_3

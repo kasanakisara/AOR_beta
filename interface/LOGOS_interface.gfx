@@ -3134,7 +3134,14 @@ spriteType = {
 		name = "GFX_USA_event_10047_pic"
 		texturefile = "gfx/event_pictures/USA_event_10047_pic.png"
 	}
-	
+	spriteType = {
+		name = "GFX_USA_event_10048_pic"
+		texturefile = "gfx/event_pictures/USA_event_10029_pic.png"
+	}
+	spriteType = {
+		name = "GFX_USA_event_10049_pic"
+		texturefile = "gfx/event_pictures/USA_event_10049_pic.png"
+	}
 	
 
 

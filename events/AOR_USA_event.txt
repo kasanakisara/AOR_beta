@@ -1583,7 +1583,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10021.a
+		hidden_effect = {
 		news_event = {id=AOR_news.201}
+		}
 	}	
 }
 country_event = {
@@ -1595,7 +1597,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10022.a
+		hidden_effect = {
 		news_event = {id=AOR_news.82}
+		}
 	}	
 }
 country_event = {
@@ -1630,7 +1634,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10024.a
+		hidden_effect = {
 		news_event = AOR_news.189
+		}
 	}	
 }
 country_event = {
@@ -1689,7 +1695,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10029.a
+		hidden_effect = {
 		news_event = {id=AOR_news.81}
+		}
 	}	
 }
 country_event = {
@@ -1904,7 +1912,7 @@ country_event = {
 	       date = 1920.5.1
 	 }
 	option = {
-		name=.a
+		name=USA.10044.a
 		country_event = { days = 3 id = USA.10045 }
 	}	
 }
@@ -1959,5 +1967,26 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10048.a
+	}	
+}
+
+country_event = {
+	id = USA.10049 #冰雪下的黄昏（威尔逊-哈定）
+	title = USA.10049.t
+	desc = USA.10049.d
+	picture = GFX_USA_event_10049_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10049.a
+		USA = {
+			create_country_leader={
+				name="Warren_Gamaliel_Harding"
+				desc="Warren_Gamaliel_Harding_desc"
+				picture="gfx/leaders/USA/Harding.png"
+				expire="1945.1.1"
+				ideology=USA_federalism
+			}
+		}
 	}	
 }
