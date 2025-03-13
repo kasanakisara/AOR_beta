@@ -335,7 +335,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battleship_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -347,7 +347,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battleship_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "独立级"
@@ -359,7 +359,7 @@ units= {
             
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battle_cruiser_1 = {
                         amount = 1
                         owner =  USA
                         version_name = "宪法级"
@@ -520,7 +520,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_1 = {
+                    battleship_1 = {
                         amount = 1
                         owner =  USA
                         version_name = "哥伦比亚级"
@@ -532,7 +532,7 @@ units= {
             
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battleship_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -784,7 +784,7 @@ units= {
                 
                 definition = battleship
                 equipment = { 
-                    battle_cruiser_2 = {
+                    battleship_2 = {
                         amount = 1
                         owner =  USA
                         version_name = "乔治·华盛顿级"
@@ -917,7 +917,7 @@ units= {
                     
                     definition = battleship
                     equipment = { 
-                        battle_cruiser_1 = {
+                        battleship_1 = {
                             amount = 1
                             owner =  USA
                             version_name = "哥伦比亚级"

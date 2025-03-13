@@ -11,17 +11,48 @@ technologies = {
 			destroyer_1
         }
         path = {
+            leads_to_tech = tech_1909_ship_hull_light
+            research_cost_coeff = 1
+        }
+
+        research_cost = 3
+
+        start_year = 1890
+
+        folder = {
+            name = mtgnavalfolder
+            position = { x = 0 y = 1 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            naval_equipment
+            dd_tech
+            mio_cat_tech_all_screen_ship_and_modules
+            mio_cat_tech_all_destroyer_and_modules
+        }
+    }
+
+    tech_1909_ship_hull_light = {
+
+        enable_equipments = {
+			destroyer_2
+        }
+        path = {
             leads_to_tech = tech_1919_ship_hull_light
             research_cost_coeff = 1
         }
 
-        research_cost = 1.5
+        research_cost = 4.5
 
-        start_year = 1900
+        start_year = 1906
 
         folder = {
             name = mtgnavalfolder
-            position = { x = 0 y = 2 }
+            position = { x = 0 y = 7 }
         }
 
         ai_will_do = {
@@ -39,37 +70,6 @@ technologies = {
     tech_1919_ship_hull_light = {
 
         enable_equipments = {
-			destroyer_2
-        }
-        path = {
-            leads_to_tech = tech_1925_ship_hull_light
-            research_cost_coeff = 1
-        }
-
-        research_cost = 1.5
-
-        start_year = 1919
-
-        folder = {
-            name = mtgnavalfolder
-            position = { x = 0 y = 8 }
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        categories = {
-            naval_equipment
-            dd_tech
-            mio_cat_tech_all_screen_ship_and_modules
-            mio_cat_tech_all_destroyer_and_modules
-        }
-    }
-
-    tech_1925_ship_hull_light = {
-
-        enable_equipments = {
 			destroyer_3
         }
         path = {
@@ -77,13 +77,13 @@ technologies = {
             research_cost_coeff = 1
         }
 
-        research_cost = 1.5
+        research_cost = 5
 
-        start_year = 1925
+        start_year = 1919
 
         folder = {
             name = mtgnavalfolder
-            position = { x = 0 y = 14 }
+            position = { x = 0 y = 13 }
         }
 
         ai_will_do = {
@@ -104,7 +104,7 @@ technologies = {
             destroyer_4
         }
 
-        research_cost = 1.5
+        research_cost = 6
 
         start_year = 1927
 
@@ -138,17 +138,50 @@ technologies = {
 			light_cruiser_1
 		}
 		path = {
+			leads_to_tech = tech_1909_ship_hull_light_cruiser
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 1890
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+		}
+	}
+    
+	tech_1909_ship_hull_light_cruiser = {
+
+		enable_equipments = {
+			light_cruiser_2
+		}
+		path = {
 			leads_to_tech = tech_1919_ship_hull_light_cruiser
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 4.5
 
-		start_year = 1900
+		start_year = 1906
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 0 y = 7 }
 		}
 
 		ai_will_do = {
@@ -168,39 +201,6 @@ technologies = {
 	tech_1919_ship_hull_light_cruiser = {
 
 		enable_equipments = {
-			light_cruiser_2
-		}
-		path = {
-			leads_to_tech = tech_1925_ship_hull_light_cruiser
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-
-		start_year = 1919
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			cl_tech
-			ca_tech
-			mio_cat_tech_all_capital_ship_and_modules
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-		}
-	}
-    
-	tech_1925_ship_hull_light_cruiser = {
-
-		enable_equipments = {
 			light_cruiser_3
 		}
 		path = {
@@ -208,13 +208,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 5
 
-		start_year = 1925
+		start_year = 1919
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 14 }
+			position = {  x = 0 y = 13 }
 		}
 
 		ai_will_do = {
@@ -237,7 +237,7 @@ technologies = {
 			light_cruiser_4
 		}
 
-		research_cost = 1.5
+		research_cost = 6
 
 		start_year = 1927
 
@@ -271,13 +271,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 4
 
-		start_year = 1900
+		start_year = 1890
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 0 y = 1 }
 		}
 
 		ai_will_do = {
@@ -297,16 +297,16 @@ technologies = {
 	late_ship_hull_heavy_cruiser = {
 
 		enable_equipments = {
-			heavy_cruiser_ex
+			heavy_cruiser_2
 		}
 
-		research_cost = 1.5
+		research_cost = 5
 
-		start_year = 1919
+		start_year = 1905
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
+			position = {  x = 0 y = 7 }
 		}
 
 		ai_will_do = {
@@ -333,16 +333,16 @@ technologies = {
 	early_ship_hull_heavy = {
 
 		enable_equipments = {
-			battle_cruiser_1
+			battleship_1
 		}
 		
 		path = {
-			leads_to_tech = tech_1919_crusier_battleship_hull
+			leads_to_tech = tech_1909_crusier_battleship_hull
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = tech_1919_ship_hull_heavy
+			leads_to_tech = tech_1906_ship_hull_heavy
 			research_cost_coeff = 1
 		}
 
@@ -352,13 +352,58 @@ technologies = {
 		}
 
 
-		research_cost = 1.75
+		research_cost = 5
 
-		start_year = 1900
+		start_year = 1890
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 2 y = 2 }
+			position = {  x = 2 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+		    bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
+		}
+	}
+    
+	tech_1909_crusier_battleship_hull = {
+
+		enable_equipments = {
+			battle_cruiser_1
+		}
+
+		path = {
+			leads_to_tech = tech_1919_crusier_battleship_hull
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 6
+
+		start_year = 1909
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 7 }
 		}
 
 		ai_will_do = {
@@ -387,68 +432,23 @@ technologies = {
     
 	tech_1919_crusier_battleship_hull = {
 
-		enable_equipments = {
-			heavy_cruiser_2
+		enable_equipments = {			
+			battle_cruiser_2
 		}
 
 		path = {
-			leads_to_tech = tech_1925_crusier_battleship_hull
+			leads_to_tech = tech_1914_ship_hull_heavy
 			research_cost_coeff = 1
 		}
 
 
-		research_cost = 1.75
+		research_cost = 6
 
 		start_year = 1919
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-			}
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0
-			}
-		}
-
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-			mio_cat_tech_all_capital_ship_and_modules
-		}
-	}
-    
-	tech_1925_crusier_battleship_hull = {
-
-		enable_equipments = {			
-			heavy_cruiser_3
-		}
-
-		path = {
-			leads_to_tech = tech_1925_ship_hull_heavy
-			research_cost_coeff = 1
-		}
-
-
-		research_cost = 1.75
-
-		start_year = 1925
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 14 }
+			position = {  x = 0 y = 13 }
 		}
 
 		ai_will_do = {
@@ -514,25 +514,25 @@ technologies = {
 		}
 	}
     
-	tech_1919_ship_hull_heavy = {
+	tech_1906_ship_hull_heavy = {
 
 		enable_equipments = {
-			battle_cruiser_2
+			battleship_2
 		}
 
 		path = {
-			leads_to_tech = tech_1925_ship_hull_heavy
+			leads_to_tech = tech_1914_ship_hull_heavy
 			research_cost_coeff = 1
 		}
 
 
-		research_cost = 1.75
+		research_cost = 6
 
-		start_year = 1919
+		start_year = 1906
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 2 y = 8 }
+			position = {  x = 2 y = 6 }
 		}
 
 		ai_will_do = {
@@ -559,10 +559,10 @@ technologies = {
 		}
 	}
     
-	tech_1925_ship_hull_heavy = {
+	tech_1914_ship_hull_heavy = {
 
 		enable_equipments = {
-			battleship_1
+			battleship_3
 		}
 
 		path = {
@@ -571,13 +571,13 @@ technologies = {
 		}
 
 
-		research_cost = 1.75
+		research_cost = 6
 
-		start_year = 1925
+		start_year = 1914
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 2 y = 14 }
+			position = {  x = 2 y = 11 }
 		}
 
 		ai_will_do = {
@@ -607,10 +607,10 @@ technologies = {
 	tech_1927_ship_hull_heavy = {
 
 		enable_equipments = {
-			battleship_2
+			battleship_4
 		}
 
-		research_cost = 1.75
+		research_cost = 6
 
 		start_year = 1927
 
@@ -660,13 +660,13 @@ technologies = {
             research_cost_coeff = 1
         }
    
-        research_cost = 1.75
+        research_cost = 5
    
-        start_year = 1919
+        start_year = 1917
    
         folder = {
             name = mtgnavalfolder
-            position = {  x = 4 y = 8 }
+            position = {  x = 4 y = 12 }
         }
    
         ai_will_do = {
@@ -686,13 +686,13 @@ technologies = {
 			carrier_2
 		}
 
-		research_cost = 1.5
+		research_cost = 6
 
 		start_year = 1925
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 4 y = 14 }
+			position = {  x = 4 y = 20 }
 		}
 
 		ai_will_do = {
@@ -720,17 +720,48 @@ technologies = {
 		}
 
 		path = {
+			leads_to_tech = tech_1908_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+
+		research_cost = 4
+
+		start_year = 1890
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
+			mio_cat_tech_all_submarine_and_modules
+		}
+	}
+    
+    tech_1908_ship_hull_submarine = {
+
+		enable_equipments = {
+			submarine_2
+		}
+
+		path = {
 			leads_to_tech = tech_1919_ship_hull_submarine
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 5
 
-		start_year = 1900
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 0 y = 7 }
 		}
 
 		ai_will_do = {
@@ -747,37 +778,6 @@ technologies = {
     tech_1919_ship_hull_submarine = {
 
 		enable_equipments = {
-			submarine_2
-		}
-
-		path = {
-			leads_to_tech = tech_1925_ship_hull_submarine
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-
-		start_year = 1919
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			ss_tech
-			mio_cat_tech_all_submarine_and_modules
-		}
-	}
-    
-    tech_1925_ship_hull_submarine = {
-
-		enable_equipments = {
 			submarine_3
 		}
 
@@ -786,9 +786,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 5
 
-		start_year = 1925
+		start_year = 1919
 
 		folder = {
 			name = mtgnavalfolder
@@ -812,7 +812,7 @@ technologies = {
 			submarine_4
 		}
 
-		research_cost = 1.5
+		research_cost = 6
 
 		start_year = 1927
 

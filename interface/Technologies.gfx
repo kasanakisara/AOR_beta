@@ -214,12 +214,12 @@ spriteTypes = {
 	### generic equipment archetypes ###
 	
 	SpriteType = {
-		name = "GFX_tech_1919_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/1919_ship_hull_light.dds"
+		name = "GFX_tech_1909_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/1909_ship_hull_light.dds"
 	}	
 	SpriteType = {
-		name = "GFX_tech_1925_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/1925_ship_hull_light.dds"
+		name = "GFX_tech_1919_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/1919_ship_hull_light.dds"
 	}
 
 	SpriteType = {
@@ -240,48 +240,48 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/early_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_1919_ship_hull_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_light_cruiser.dds"
+		name = "GFX_tech_1909_ship_hull_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/tech_1909_ship_hull_light_cruiser.dds"
 	} 
 	SpriteType = {
-		name = "GFX_tech_1925_ship_hull_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_light_cruiser.dds"
+		name = "GFX_tech_1919_ship_hull_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_1927_ship_hull_light_cruiser_medium"
 		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_1919_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_heavy.dds"
+		name = "GFX_tech_1906_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/tech_1906_ship_hull_heavy.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1925_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_heavy.dds"
+		name = "GFX_tech_1914_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/tech_1914_ship_hull_heavy.dds"
 	} 
+	SpriteType = { 
+		name = "GFX_tech_1925_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_carrier.dds"
+	}
 	SpriteType = {
 		name = "GFX_tech_1927_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_heavy.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1925_ship_hull_carrier_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_carrier.dds"
+		name = "GFX_tech_1909_crusier_battleship_hull_medium"
+		texturefile = "gfx/interface/technologies/tech_1909_crusier_battleship_hull.dds"
 	}
 	SpriteType = { 
 		name = "GFX_tech_1919_crusier_battleship_hull_medium"
 		texturefile = "gfx/interface/technologies/tech_1919_crusier_battleship_hull.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1925_crusier_battleship_hull_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_crusier_battleship_hull.dds"
-	}
-	SpriteType = { 
-		name = "GFX_tech_1919_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		name = "GFX_tech_1908_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
-		name = "GFX_tech_1925_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_submarine.dds"
+		name = "GFX_tech_1919_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_tech_1927_ship_hull_submarine_medium"
