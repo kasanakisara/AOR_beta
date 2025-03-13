@@ -659,6 +659,18 @@ USA_civil_war_west = {
 #######美 国 西 部 收 复 之 战#######	
 USA_civil_war_west_1 = {
 	USA = {
+		if = {
+			limit = {
+			    US2 = {
+				controls_state = 378
+			}
+		}
+		US2 = {
+			every_unit_leader = {
+				set_nationality = USA
+		    }
+		}
+	}
 		annex_country = {
 			target = US1
 		    }

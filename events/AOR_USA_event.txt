@@ -13,6 +13,11 @@ country_event = {#西部的二次危机
 	}
 	immediate = {
 	hidden_effect = {
+		USA = {
+			remove_unit_leader = USA_john_pershing
+			remove_unit_leader = USA_john_pershing_1
+			remove_unit_leader = USA_john_pershing_a
+		}
 		386 = { set_demilitarized_zone = yes }
 		385 = { set_demilitarized_zone = yes }
 		378 = { set_demilitarized_zone = yes }
