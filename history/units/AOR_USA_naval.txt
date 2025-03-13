@@ -3,11 +3,11 @@ units= {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "联邦海军舰队"			
+		name = "USN-联邦海军"			
 		naval_base = 6732
 
 		task_force = {				
-			name = "联邦海军北大西洋舰队"			
+			name = "USN北大西洋舰队"			
 			location = 6732
 			ship = {
                 name = "E级潜艇" 
@@ -222,6 +222,30 @@ units= {
                     }
                 }
             }
+            ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+			ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
 			ship = {
                 name = "维克斯级" 
                 
@@ -371,7 +395,7 @@ units= {
 
         
 		task_force = {				
-			name = "联邦海军加勒比海舰队"			
+			name = "USN加勒比海舰队"			
 			location = 4641
 			ship = {
                 name = "桑普森级" 
@@ -544,7 +568,7 @@ units= {
 
 
 		task_force = {				
-			name = "联邦海军墨西哥湾-南太平洋舰队"			
+			name = "USN南大西洋-墨西哥湾舰队"			
 			location = 7552
             ship = {
                 name = "切斯特级" 
@@ -795,7 +819,7 @@ units= {
 
 
             task_force = {				
-                name = "联邦海军太平洋舰队"			
+                name = "USN太平洋舰队"			
                 location = 9671
                 ship = {
                     name = "桑普森级" 
@@ -876,6 +900,30 @@ units= {
                         }
                     }
                 }
+            	ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
+				ship = {
+                name = "维克斯级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  USA
+                        version_name = "维克斯级"
+                    }
+                }
+            }
                 ship = {
                     name = "丹佛级" 
                     
