@@ -321,12 +321,12 @@ units= {
             ship = {
                 name = "特伦顿级" 
                 
-                definition = heavy_cruiser_2
+                definition = heavy_cruiser
                 equipment = { 
-                    heavy_cruiser_1 = {
+                    heavy_cruiser_2 = {
                         amount = 1
                         owner =  USA
-                        version_name = "萨拉托加级"
+                        version_name = "特伦顿级"
                     }
                 }
             }
@@ -506,7 +506,7 @@ units= {
             ship = {
                 name = "萨拉托加级" 
                 
-                definition = heavy_cruiser_1
+                definition = heavy_cruiser
                 equipment = { 
                     heavy_cruiser_1 = {
                         amount = 1
@@ -770,7 +770,7 @@ units= {
             ship = {
                 name = "萨拉托加级" 
                 
-                definition = heavy_cruiser_1
+                definition = heavy_cruiser
                 equipment = { 
                     heavy_cruiser_1 = {
                         amount = 1
@@ -903,9 +903,9 @@ units= {
                 ship = {
                     name = "特伦顿级" 
                     
-                    definition = heavy_cruiser_2
+                    definition = heavy_cruiser
                     equipment = { 
-                        heavy_cruiser_1 = {
+                        heavy_cruiser_2 = {
                             amount = 1
                             owner =  USA
                             version_name = "特伦顿级"
