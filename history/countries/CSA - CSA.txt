@@ -144,6 +144,26 @@ create_country_leader = {
 	}
 }
 
+
+
+###陆军将领###
+recruit_character = USA_hunter_liggett
+recruit_character = USA_robert_e_lee_bradley
+recruit_character = USA_charles_pelot_sumner
+
+###海军将领###
+recruit_character = USA_Albert_Gleaves
+
+###军事部长
+#海军
+recruit_character = USA_William_Shepherd_Benson 
+
+###总司令
+#海军
+recruit_character = USA_William_Shepherd_Benson_a
+
+
+
 create_equipment_variant = {
 	name = "乔治·华盛顿级"				
 	type = battleship_2

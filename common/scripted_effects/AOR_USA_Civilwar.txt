@@ -4,6 +4,7 @@ USA_second_civil_war = {
 			news_event = {id=AOR_news.64}
 			USA = {
 			country_event = { days = 1 id = USA.10014 }
+			country_event = { days = 3 id = USA.10048 }
 			country_event = { days = 7 id = USA.9 }
 			}
 			set_victory_points = {
@@ -86,7 +87,17 @@ USA_second_civil_war = {
 					type = civil_war
 					}
 					country_event = {id = usa.1000 days = 30}
-				}
+
+                remove_unit_leader = USA_john_pershing
+				remove_unit_leader = USA_john_pershing_1
+				remove_unit_leader = USA_john_pershing_a
+				remove_unit_leader = USA_robert_e_lee_bradley
+				remove_unit_leader = USA_hunter_liggett
+				remove_unit_leader = USA_charles_pelot_sumner
+				remove_unit_leader = USA_William_Shepherd_Benson
+				remove_unit_leader = USA_William_Shepherd_Benson_a
+				remove_unit_leader = USA_Albert_Gleaves
+			}
 				362 = {
 					add_extra_state_shared_building_slots = 0
 					add_building_construction = {

@@ -1385,7 +1385,7 @@ country_event = {
 		}
 		add_equipment_to_stockpile = {
 			type = support_equipment
-			amount = -200
+			amount = -100
 			producer = USA	
 		}
 	
@@ -1913,6 +1913,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10045.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+			producer = USA	
+		}
 	}	
 }
 
@@ -1937,5 +1942,17 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10047.a
+	}	
+}
+
+country_event = {
+	id = USA.10048 #白宫紧急军事简报（第二次南北战争）
+	title = USA.10048.t
+	desc = USA.10048.d
+	picture = GFX_USA_event_10048_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10048.a
 	}	
 }
