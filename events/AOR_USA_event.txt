@@ -1990,3 +1990,51 @@ country_event = {
 		}
 	}	
 }
+
+country_event = {
+	id = USA.10050 #风雪中的启程（斯特朗故事）
+	title = USA.10050.t
+	desc = USA.10050.d
+	picture = GFX_USA_event_10050_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10050.a
+		hidden_effect = {
+			country_event = {
+				days = 14
+				id = USA.10051
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10051 #档案的缘（斯特朗故事）
+	title = USA.10051.t
+	desc = USA.10051.d
+	picture = GFX_USA_event_10051_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10051.a
+		hidden_effect = {
+			country_event = {
+				days = 3
+				id = USA.10052
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10052 #自命不凡的背叛（斯特朗故事）
+	title = USA.10052.t
+	desc = USA.10052.d
+	picture = GFX_USA_event_10052_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10052.a
+	}	
+}
