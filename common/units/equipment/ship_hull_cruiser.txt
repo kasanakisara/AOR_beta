@@ -823,7 +823,7 @@ equipments = {
 		
 		manpower = 960
 	}
-	ship_hull_cruiser_panzerschiff = {
+	armored_cruiser = {
 		abbreviation = "hbf"
 		year = 1929
 		visual_level = 0

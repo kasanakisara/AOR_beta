@@ -300,6 +300,11 @@ technologies = {
 			heavy_cruiser_2
 		}
 
+		path = {
+			leads_to_tech = Modern_armored_cruiser
+			research_cost_coeff = 1
+		}
+
 		research_cost = 5
 
 		start_year = 1905
@@ -321,6 +326,39 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+	}
+
+	Modern_armored_cruiser = {
+
+		enable_equipments = {
+			armored_cruiser
+		}
+
+		enable_equipment_modules = {
+			light_ship_engine_2
+		}
+
+		research_cost = 5
+		start_year = 1922
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+		}
+
 	}
 
 #  # ###  ##  #   # #   #      ## #  # ### ###   ##
@@ -449,45 +487,6 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 13 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-			}
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0
-			}
-		}
-
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-			mio_cat_tech_all_capital_ship_and_modules
-		}
-	}
-    
-	tech_1927_crusier_battleship_hull = {
-
-		enable_equipments = {
-			battleship_2
-		}
-
-		research_cost = 1.75
-
-		start_year = 1927
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 20 }
 		}
 
 		ai_will_do = {
