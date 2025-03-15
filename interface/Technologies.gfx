@@ -1,5 +1,6 @@
 spriteTypes = {
 ### generic equipment archetypes ###
+#注意，在SpriteType_name_texturefilez之下的#"gfx/interface/technologies/XXX.dds"为原先图片，正在重置图片中
 	
 	SpriteType = {	
 		name = "GFX_early_ship_hull_light_medium"
@@ -178,35 +179,43 @@ spriteTypes = {
 
 	SpriteType = {	
 		name = "GFX_early_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/early_submarine.dds"
+		texturefile = "gfx/interface/technologies/ship_hull_midget_submarine.dds"
+		#texturefile = "gfx/interface/technologies/early_submarine.dds"
 	}
 	SpriteType = {	
 		name = "GFX_submarine_1_medium"
-		texturefile = "gfx/interface/technologies/early_submarine.dds"
+		texturefile =  "gfx/interface/technologies/ship_hull_midget_submarine.dds"
+		#texturefile = "gfx/interface/technologies/early_submarine.dds"
 	}
 	SpriteType = { 
 		name = "GFX_tech_1908_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		texturefile = "gfx/interface/technologies/early_submarine.dds"
+		#texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
 	}
 	SpriteType = { 
 		name = "GFX_submarine_2_medium"
-		texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		texturefile ="gfx/interface/technologies/early_submarine.dds"
+		#texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_tech_1919_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		# "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_submarine_3_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		texturefile =  "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		# "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_tech_1927_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		#"gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_submarine_4_medium"
-		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		#"gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
 	}
  
 
