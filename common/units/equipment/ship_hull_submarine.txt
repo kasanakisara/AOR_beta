@@ -209,12 +209,24 @@ equipments = {
 		archetype = ship_hull_submarine
 		priority = 2500
 		
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { sub_ship_engine }
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+		}
 		
 		default_modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_torpedo_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 
 		lg_armor_piercing = 0
