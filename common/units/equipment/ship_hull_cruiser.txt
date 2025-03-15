@@ -425,6 +425,7 @@ equipments = {
 			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
@@ -527,6 +528,7 @@ equipments = {
 			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
@@ -836,8 +838,11 @@ equipments = {
 		naval_range = 7500
 		max_strength = 220
 		resources = {
-			steel = 3
+			steel = 5
 		}
+
+		armor_value = 5
+
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
@@ -881,6 +886,7 @@ equipments = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = cruiser_ship_engine_3
