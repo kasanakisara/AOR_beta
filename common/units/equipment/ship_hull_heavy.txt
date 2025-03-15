@@ -1,7 +1,7 @@
 equipments = {
 
 	ship_hull_heavy = {
-		year = 1922
+		year = 1890
 
 		can_be_produced = {
 			if = {
@@ -150,7 +150,7 @@ equipments = {
 	###Special snowflake hull
 
 	battleship_1 = { 
-		year = 1922
+		year = 1890
 		archetype = ship_hull_heavy
 		priority = 1500
 		visual_level = 0
@@ -186,8 +186,8 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_anti_air
 					ship_heavy_battery
+					ship_anti_air
 				}
 			}
 			mid_1_custom_slot = {
@@ -238,7 +238,7 @@ equipments = {
 		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 30
-		naval_speed = 21
+		naval_speed = 19
 		reliability = 0.80
 
 		naval_range = 3000
@@ -258,7 +258,7 @@ equipments = {
 	}
 	
 	battleship_2 = {
-		year = 1936
+		year = 1906
 		visual_level = 1
 		archetype = ship_hull_heavy
 		priority = 1500
@@ -293,7 +293,7 @@ equipments = {
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 30
-		naval_speed = 24
+		naval_speed = 22
 		reliability = 0.85
 
 		naval_range = 4000
@@ -312,7 +312,7 @@ equipments = {
 	}
 	
 	battleship_3 = {
-		year = 1940
+		year = 1914
 		visual_level = 1
 		archetype = ship_hull_heavy
 		priority = 1500
@@ -367,7 +367,7 @@ equipments = {
 	}
 	
 	battleship_4 = {
-		year = 1944
+		year = 1927
 		visual_level = 1
 		archetype = ship_hull_heavy
 		priority = 1500
@@ -402,7 +402,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 5
 		surface_visibility = 30
-		naval_speed = 26
+		naval_speed = 28
 		reliability = 0.92
 
 		naval_range = 6000
@@ -667,7 +667,7 @@ equipments = {
 		
 	}
 	battle_cruiser_1 = {
-		year = 1922
+		year = 1909
 		visual_level = 0
 		archetype = ship_hull_heavy
 		priority = 1600
@@ -722,7 +722,7 @@ equipments = {
 	}
 	
 	battle_cruiser_2 = {
-		year = 1940
+		year = 1919
 		visual_level = 1
 		archetype = ship_hull_heavy
 		priority = 1600
@@ -757,7 +757,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 5
 		surface_visibility = 25
-		naval_speed = 31
+		naval_speed = 30
 		reliability = 0.90
 
 		naval_range = 5000

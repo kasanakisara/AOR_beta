@@ -1,7 +1,7 @@
 equipments = {
 
 	ship_hull_carrier = {
-		year = 1922
+		year = 1917
 
 		can_be_produced = {
 			if = {
@@ -482,7 +482,7 @@ equipments = {
 	}
 
 	carrier_2 = {
-		year = 1936
+		year = 1925
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000

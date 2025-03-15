@@ -1,7 +1,7 @@
 equipments = {
 
 	ship_hull_cruiser = {
-		year = 1922
+		year = 1890
 
 		can_be_produced = {
 			if = {
@@ -124,7 +124,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
-		naval_speed = 27
+		naval_speed = 23
 		reliability = 0.80
 		
 		naval_range = 2500
@@ -148,7 +148,7 @@ equipments = {
 	}
 
 	light_cruiser_1 = {
-		year = 1922
+		year = 1890
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -188,7 +188,7 @@ equipments = {
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
-		naval_speed = 29
+		naval_speed = 23
 		reliability = 0.8
 		resources = {
 			#oil = 1
@@ -197,7 +197,7 @@ equipments = {
 	}
 
 	light_cruiser_2 = {
-		year = 1936
+		year = 1909
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -225,7 +225,7 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 5
-		naval_speed = 30
+		naval_speed = 27
 		reliability = 0.85
 
 		naval_range = 3000
@@ -246,7 +246,7 @@ equipments = {
 		manpower = 800
 	}
 	light_cruiser_3 = {
-		year = 1940
+		year = 1919
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -259,7 +259,7 @@ equipments = {
 			fixed_ship_anti_air_slot = ship_anti_air_3
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_3
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			mid_1_custom_slot = ship_torpedo_3
 			mid_2_custom_slot = ship_anti_air_3
 			rear_1_custom_slot = ship_light_medium_battery_3
@@ -276,7 +276,7 @@ equipments = {
 		
 		surface_detection = 30
 		sub_detection = 10
-		naval_speed = 29
+		naval_speed = 30
 		reliability = 0.90
 
 		naval_range = 4000
@@ -298,7 +298,7 @@ equipments = {
 	}
 	
 	light_cruiser_4 = {
-		year = 1944
+		year = 1927
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -328,7 +328,7 @@ equipments = {
 		
 		surface_detection = 40
 		sub_detection = 10
-		naval_speed = 30
+		naval_speed = 32
 		reliability = 0.92
 
 		naval_range = 4500
@@ -351,7 +351,7 @@ equipments = {
 	}
 
 	heavy_cruiser_1 = {
-		year = 1922
+		year = 1890
 		visual_level = 0
 		type = capital_ship
 		archetype = ship_hull_cruiser
@@ -449,7 +449,7 @@ equipments = {
 		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 15
-		naval_speed = 27
+		naval_speed = 20
 		reliability = 0.80
 		
 		naval_range = 3000
@@ -468,57 +468,8 @@ equipments = {
 		manpower = 1500
 	}
 	
-	heavy_cruiser_ex = {
-		year = 1919
-		visual_level = 1
-		archetype = ship_hull_cruiser
-		priority = 1800
-		parent = heavy_cruiser_1
-		module_slots = inherit
-		default_modules = {
-			fixed_ship_battery_slot = ship_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_3
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_anti_air_3
-			rear_1_custom_slot = ship_medium_battery_2
-		}
-		hg_armor_piercing = 0
-		hg_attack = 0
-		lg_armor_piercing = 0
-		lg_attack = 0
-		torpedo_attack = 0
-		
-		anti_air_attack = 0
-		
-		armor_value = 10
-
-		
-		surface_detection = 13
-		sub_detection = 5
-		surface_visibility = 15
-		naval_speed = 28
-		reliability = 0.82
-
-		naval_range = 3500
-		
-		max_strength = 160
-		
-
-
-		build_cost_ic = 2400
-		resources = {
-			#oil = 1
-			steel = 4
-		}		
-		manpower = 1600
-	}
-	
 	heavy_cruiser_2 = {
-		year = 1936
+		year = 1909
 		visual_level = 2
 		archetype = ship_hull_cruiser
 		priority = 1800
@@ -550,7 +501,7 @@ equipments = {
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
-		naval_speed = 30
+		naval_speed = 23
 		reliability = 0.85
 
 		naval_range = 4000
@@ -827,13 +778,13 @@ equipments = {
 	}
 	armored_cruiser = {
 		abbreviation = "hbf"
-		year = 1929
+		year = 1922
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1850
 		manpower = 1800
 		build_cost_ic = 3500
-		naval_speed = 23
+		naval_speed = 27
 		surface_visibility = 22
 		naval_range = 7500
 		max_strength = 220
