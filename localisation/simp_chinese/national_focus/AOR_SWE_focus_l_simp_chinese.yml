@@ -93,23 +93,21 @@
  SWE_Parliament_choice_yet_tt:0 "社会民主党取得了最终的胜利，可以歇息一下了。"
  SWE_Return_Power:0 "将权力回归人民"
  SWE_Return_Power_desc:0 "无论独裁者们怎么说，人民自始至终都是国家的根本，是一个国家里最重要，也是最伟大的势力。任何的政策如果没有人民的支持都不可能实现，任何的政策也都应当来自人民。通过建立全面的普选制度，把治理国家的权力归还到人民的手中，将是我们为之奋斗的目标。"
- SWE_Merge_Parliament:0 "合并两院"
+ SWE_Merge_Parliament:0 "推动一院制"
+ SWE_Merge_Parliament_desc:0 "1905年，联邦设立了联邦议会作为联邦最高立法机关，而瑞典议会和斯托庭则分别负责瑞典和挪威各自独立的立法。考虑到目前两个议会仍然都分为上下两院，不利于民主普选制度的进一步深化，推动上下两院合并为一院，在联邦的三个立法机关都使用一院制，将会更好地推进联邦的立法工作。"
  SWE_Amendment_Law_Inheritance:0 "修改继承法"
+ SWE_Amendment_Law_Inheritance_desc:0 "1905"
  SWE_Reduction_Civil_Servants:0 "裁减公务员"
  SWE_Hand_Could_Saw:0 "看得见的手"
  SWE_Beautiful_World:0 "自由和平等的乌托邦"
  SWE_Beautiful_World_desc:0 "1523年，瑞典从卡尔马联邦中解放，步入了独立自主的路线；1721年《政府文书》签署，瑞典步入“自由时代”，开始发展代议制；1804年新《政府文书》修订，结束了漫长的古斯塔夫独裁，瑞典又步入了民主的新时代。\n1814年，我们从丹麦压迫者手中联合和挪威民族，组成了联邦；1905年《哥特堡宪法》通过，我们揭开了新篇章。而如今，在哈康陛下的领导下，联邦化政策硕果累累，民族之间的矛盾逐渐减小，人民安居乐业。沿着这条长路，我们将继续前行，直到实现，我们梦中的那个联邦！"
  SWE_Finally_Revolution_tt:0 "§g由此，我们将彻底完成联邦化进程！向宏伟蓝图跃进！§!"
 
- #AOR_SWE_focus_tree_2.txt
  SWE_Emergency:0 "紧急状态"
 
- #AOR_SWE_Nothing.txt
- ######息が詰まる######
  SWE_Nothing:0 "§R空虚§!"
  SWE_Nothing_desc:0 "联邦已经解体，旧日荣光已经不复存在·······\n\n\n§p那我们活着还有什么意义？§!"
 
- #AOR_SWE_focus_tree_3.txt
  SWE_The_New_King:0 "我们的新王"
  SWE_Economy_Rev:0 "经济转型"
  SWE_Stop_Finicial_Limit:0 "重启金融市场"
