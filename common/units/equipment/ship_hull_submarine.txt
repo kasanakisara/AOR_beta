@@ -267,7 +267,24 @@ equipments = {
 		archetype = ship_hull_submarine
 		priority = 2500
 		parent = submarine_1
-		module_slots = inherit
+		
+		module_slots = {
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo_sub }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { sub_ship_engine }
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -309,11 +326,28 @@ equipments = {
 		archetype = ship_hull_submarine
 		priority = 2500
 		parent = submarine_2
-		module_slots = inherit
+		
+		module_slots = {
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo_sub }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { sub_ship_engine }
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 		lg_armor_piercing = 0
@@ -351,11 +385,28 @@ equipments = {
 		archetype = ship_hull_submarine
 		priority = 2500
 		parent = submarine_3
-		module_slots = inherit
+
+		module_slots = {
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo_sub }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { sub_ship_engine }
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_3
 			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 		lg_armor_piercing = 0
@@ -388,17 +439,63 @@ equipments = {
 		}
 	}
 
-submarine_5 = {
-		year = 1919
+    submarine_5 = {
+		year = 1927
 
 		archetype = ship_hull_submarine
 		priority = 2500
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_torpedo_slot = {
+				required = yes
+				allowed_module_categories = { ship_torpedo_sub }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { sub_ship_engine }
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					dp_light_battery
+					ship_medium_battery
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_airplane_launcher
+					ship_secondaries
+					dp_light_battery
+					ship_light_medium_battery
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_torpedo_sub
+					ship_mine_layer_sub
+				}
+			}
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_engine_slot = sub_ship_engine_3
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_torpedo_sub_2
+			rear_2_custom_slot = empty
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -409,12 +506,12 @@ submarine_5 = {
 		armor_value = 0
 
 		
-		surface_detection = 100
+		surface_detection = 80
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 20
 		naval_speed = 18
-		reliability = 0.80
+		reliability = 0.7
 
 		naval_range = 8000
 		
@@ -425,7 +522,7 @@ submarine_5 = {
 		build_cost_ic = 1600
 		resources = {
 			#oil = 2
-			steel = 3
+			steel = 4
 			chromium = 1
 		}
 	}

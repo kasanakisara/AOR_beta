@@ -217,6 +217,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
 		#"gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
 	}
+	SpriteType = {
+		name = "GFX_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
+		texturefile = "gfx/interface/technologies/advanced_submarine.dds"
+		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_submarine_5_medium" #Used for tech (tech researched pop-up)
+		texturefile = "gfx/interface/technologies/advanced_submarine.dds"
+		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
+	}
  
 
 
@@ -2664,10 +2674,6 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
-		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
-	}
-	SpriteType = {
-		name = "GFX_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
 		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
 	SpriteType = {

@@ -83,7 +83,7 @@ technologies = {
 
         folder = {
             name = mtgnavalfolder
-            position = { x = 0 y = 13 }
+            position = { x = 0 y = 14 }
         }
 
         ai_will_do = {
@@ -214,7 +214,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 13 }
+			position = {  x = 0 y = 14 }
 		}
 
 		ai_will_do = {
@@ -807,6 +807,11 @@ technologies = {
 			submarine_4
 		}
 
+		path = {
+			leads_to_tech = cruiser_submarines
+			research_cost_coeff = 1
+		}
+
 		research_cost = 6
 
 		start_year = 1927
@@ -837,11 +842,11 @@ technologies = {
 		#	ship_extra_fuel_tank
 		#}
 		research_cost = 1
-		start_year = 1936
+		start_year = 1927
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 2 y = 22 }
 		}
 
 		ai_will_do = {
