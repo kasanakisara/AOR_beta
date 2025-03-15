@@ -445,6 +445,15 @@ equipments = {
 		archetype = ship_hull_submarine
 		priority = 2500
 		module_slots = {
+			fixed_ship_battery_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					dp_light_battery
+					ship_medium_battery
+				}
+			}
 			fixed_ship_torpedo_slot = {
 				required = yes
 				allowed_module_categories = { ship_torpedo_sub }
@@ -454,15 +463,6 @@ equipments = {
 				allowed_module_categories = { sub_ship_engine }
 			}
 			mid_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_anti_air
-					ship_secondaries
-					dp_light_battery
-					ship_medium_battery
-				}
-			}
-			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
@@ -490,10 +490,10 @@ equipments = {
 		}
 		
 		default_modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_3
-			mid_1_custom_slot = ship_medium_battery_1
-			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_torpedo_sub_2
 			rear_2_custom_slot = empty
 		}
