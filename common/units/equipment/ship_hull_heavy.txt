@@ -313,6 +313,8 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			mid_1_custom_slot = {
@@ -439,6 +441,8 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			mid_1_custom_slot = {
@@ -575,6 +579,11 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
+					ship_secondaries
+					dp_light_battery
+					ship_dp_secondaries
+					ship_light_medium_battery
+					
 				}
 			}
 			mid_1_custom_slot = {
@@ -606,18 +615,22 @@ equipments = {
 					ship_anti_air
 					ship_heavy_battery
 					ship_secondaries
-					ship_dp_secondaries
 					dp_light_battery
+					ship_dp_secondaries
+					ship_light_medium_battery
 					ship_airplane_launcher
 				}
 			}
 			rear_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_heavy_battery
 					ship_torpedo
-					ship_secondaries
 					ship_anti_air
+					ship_heavy_battery
+					ship_secondaries
+					dp_light_battery
+					ship_dp_secondaries
+					ship_light_medium_battery
 					ship_airplane_launcher
 				}
 			}
@@ -844,6 +857,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_secondaries
+					dp_light_battery
 					ship_dp_secondaries
 					ship_airplane_launcher
 				}
@@ -855,7 +869,10 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_secondaries
+					dp_light_battery
 					ship_dp_secondaries
+					ship_light_medium_battery
+					ship_medium_battery
 					ship_super_heavy_battery
 					ship_airplane_launcher
 				}
@@ -865,8 +882,12 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_secondaries
+					dp_light_battery
 					ship_dp_secondaries
+					ship_light_medium_battery
+					ship_medium_battery
 					ship_super_heavy_battery
+					ship_airplane_launcher
 				}
 			}
 		}
