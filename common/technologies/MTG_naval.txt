@@ -564,7 +564,10 @@ technologies = {
 			leads_to_tech = tech_1927_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = tech_ship_super_hull_heavy
+			research_cost_coeff = 1
+		}
 
 		research_cost = 6
 
@@ -604,6 +607,46 @@ technologies = {
 		enable_equipments = {
 			battleship_4
 		}
+
+		research_cost = 6
+
+		start_year = 1927
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 22 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
+		}
+	}
+
+	tech_ship_super_hull_heavy = {
+
+		enable_equipments = {
+			SH_battleship_2
+		}
+
 
 		research_cost = 6
 
@@ -835,8 +878,7 @@ technologies = {
 	cruiser_submarines = {
 
 		enable_equipments = {
-			#ship_hull_cruiser_submarine
-			submarine_5
+			ship_hull_cruiser_submarine
 		}
 		#enable_equipment_modules = {
 		#	ship_extra_fuel_tank
