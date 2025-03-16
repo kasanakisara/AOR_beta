@@ -140,6 +140,16 @@ spriteTypes = {
 		name = "GFX_battleship_4_medium"
 		texturefile = "gfx/interface/technologies/advanced_battleship.dds"
 	}
+	SpriteType = {
+		name = "GFX_tech_ship_super_hull_heavy_medium"
+		texturefile ="gfx/interface/technologies/heavy_battleship.dds"
+		# "gfx/interface/technologies/heavy_battleship2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship.dds"
+		# "gfx/interface/technologies/heavy_battleship2.dds"
+	}
 
 	SpriteType = {	
 		name = "GFX_early_ship_hull_carrier_medium"
@@ -223,10 +233,11 @@ spriteTypes = {
 		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
 	SpriteType = {
-		name = "GFX_submarine_5_medium" #Used for tech (tech researched pop-up)
-		texturefile = "gfx/interface/technologies/advanced_submarine.dds"
+		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
+		texturefile ="gfx/interface/technologies/advanced_submarine.dds"
 		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
+
  
 
 
@@ -2671,10 +2682,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ship_hull_pre_dreadnought_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
-	}
-	SpriteType = {
-		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
-		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
 	SpriteType = {
 		name = "GFX_ship_hull_cruiser_coastal_defense_ship_medium"
