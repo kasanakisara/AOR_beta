@@ -706,7 +706,7 @@ characters = {
 			slot = navy_chief
 			idea_token = USA_Frank_Friday_Fletcher
 			allowed = { original_tag = USA }
-			traits = { navy_chief_reform_1 }
+			traits = { navy_chief_maneuver_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
@@ -869,7 +869,7 @@ characters = {
 			slot = high_command
 			idea_token = USA_William_Soden_Sims_a
 			allowed = { original_tag = USA }
-			traits = { navy_fleet_logistics_2 }
+			traits = { air_naval_strike_2 }
 			ai_will_do = { factor = 1.000 }
 		}
 	}
