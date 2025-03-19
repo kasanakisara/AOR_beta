@@ -202,11 +202,18 @@ equipments = {
 					ship_dp_secondaries
 				}
 			}
-			mid_2_custom_slot = mid_1_custom_slot
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			mid_3_custom_slot = mid_1_custom_slot
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_torpedo
 					ship_anti_air
 					ship_heavy_battery
 					ship_secondaries
@@ -234,6 +241,7 @@ equipments = {
 			front_1_custom_slot = ship_secondaries_2
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_secondaries_2
+			mid_3_custom_slot = ship_secondaries_2
 			rear_1_custom_slot = ship_heavy_battery_1
 			rear_2_custom_slot = empty
 		}
@@ -336,6 +344,14 @@ equipments = {
 					ship_dp_secondaries
 				}
 			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -363,6 +379,7 @@ equipments = {
 			front_1_custom_slot =  ship_heavy_battery_1
 			mid_1_custom_slot = ship_heavy_battery_1
 			mid_2_custom_slot =  ship_secondaries_1
+			mid_3_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 			rear_2_custom_slot = empty
 		}
@@ -458,6 +475,14 @@ equipments = {
             mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
 					ship_torpedo
 					ship_anti_air
 					ship_secondaries
@@ -496,6 +521,7 @@ equipments = {
 			front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = ship_heavy_battery_2
 			mid_2_custom_slot = ship_secondaries_2
+			mid_3_custom_slot = ship_secondaries_2
 			rear_1_custom_slot = ship_heavy_battery_2
 			rear_2_custom_slot = empty
 		}
@@ -601,6 +627,16 @@ equipments = {
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+					dp_light_battery
+					ship_airplane_launcher
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
 					ship_torpedo
 					ship_anti_air
 					ship_secondaries
@@ -648,6 +684,7 @@ equipments = {
 			front_1_custom_slot = ship_heavy_battery_3
 			mid_1_custom_slot = ship_heavy_battery_3
 			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = dp_ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_3
 			rear_2_custom_slot = empty
 		}
@@ -1126,6 +1163,14 @@ equipments = {
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
 					ship_torpedo
 					ship_anti_air
 					ship_secondaries
@@ -1163,7 +1208,8 @@ equipments = {
 			fixed_ship_armor_slot = ship_armor_bc_2
 			front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = ship_anti_air_3
-			mid_2_custom_slot = ship_secondaries_2
+			mid_2_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_2
 			rear_2_custom_slot = empty
 		}
