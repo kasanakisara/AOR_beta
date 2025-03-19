@@ -538,7 +538,7 @@ equipments = {
 		armor_value = 10
 
 		
-		surface_detection = 25
+		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 30
 		naval_speed = 25
@@ -701,7 +701,7 @@ equipments = {
 		armor_value = 15
 
 		
-		surface_detection = 40
+		surface_detection = 30
 		sub_detection = 5
 		surface_visibility = 30
 		naval_speed = 28
@@ -954,7 +954,7 @@ equipments = {
 		armor_value = 20
 
 		
-		surface_detection = 40
+		surface_detection = 30
 		sub_detection = 5
 		surface_visibility = 40
 		naval_speed = 22
@@ -1083,7 +1083,7 @@ equipments = {
 		armor_value = 2
 
 		
-		surface_detection = 12
+		surface_detection = 18
 		sub_detection = 5
 		surface_visibility = 25
 		naval_speed = 27.5
@@ -1228,7 +1228,7 @@ equipments = {
 		
 		surface_detection = 25
 		sub_detection = 5
-		surface_visibility = 25
+		surface_visibility = 28
 		naval_speed = 30
 		reliability = 0.90
 
