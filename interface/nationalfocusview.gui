@@ -762,7 +762,7 @@ guiTypes = {
 			name = "start"
 			quadTextureSprite = "GFX_button_123x34"
 			buttonText = "START_FOCUS"
-			buttonFont = "hoi_20b"
+			buttonFont = "hoi_18mbs"
 			position = { x=390 y=53 }
 			clicksound = select_focus
 			shortcut = "RETURN"

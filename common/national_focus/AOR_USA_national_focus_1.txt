@@ -81,6 +81,11 @@ focus_tree={
 				idea=USA_PlanOfOperationA
 				days=360
 			}
+			hidden_effect={
+				country_event={ 
+					id = USA.10056
+				}
+			}
 		}
 	}
 	focus={
@@ -103,6 +108,11 @@ focus_tree={
 			add_timed_idea={
 				idea=USA_RailwayA
 				days=360
+			}
+			hidden_effect={
+				country_event={ 
+					id = USA.10056
+				}
 			}
 		}
 	}
