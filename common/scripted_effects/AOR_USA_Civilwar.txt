@@ -87,15 +87,11 @@ USA_second_civil_war = {
 				type = civil_war
 				}
 
-			   remove_unit_leader = USA_john_pershing
-			   remove_unit_leader = USA_john_pershing_1
-			   remove_unit_leader = USA_john_pershing_a
-			   remove_unit_leader = USA_robert_e_lee_bradley
-			   remove_unit_leader = USA_hunter_liggett
-			   remove_unit_leader = USA_charles_pelot_sumner
-			   remove_unit_leader = USA_William_Shepherd_Benson
-			   remove_unit_leader = USA_William_Shepherd_Benson_a
-			   remove_unit_leader = USA_Albert_Gleaves
+			   retire_character = USA_john_pershing
+			   retire_character = USA_robert_e_lee_bradley
+			   retire_character = USA_hunter_liggett
+			   retire_character = USA_charles_pelot_sumner
+			   retire_character = USA_Albert_Gleaves
 			}
             US2 = {
 					country_event = {id = usa.1000 days = 30}

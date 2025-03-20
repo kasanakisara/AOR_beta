@@ -596,6 +596,12 @@ characters = {
 		    allowed = { original_tag = USA }
 		    traits = { military_theorist }
 		    ai_will_do = { factor = 1.000 }
+
+			available = { 
+				USA = {
+					has_war = yes
+				}
+			}
 	    }
     }
 
@@ -725,6 +731,12 @@ characters = {
 			allowed = { original_tag = USA }
 			traits = { navy_chief_decisive_battle_2 }
 			ai_will_do = { factor = 1.000 }
+
+			available = { 
+				USA = {
+					has_war = yes
+				}
+			}
 		}
 	}
 	USA_F_C_Answorth_n = { #F·C·安斯沃斯
@@ -781,6 +793,12 @@ characters = {
 			allowed = { original_tag = USA }
 			traits = { army_infantry_3 }
 			ai_will_do = { factor = 1.000 }
+
+			available = { 
+				USA = {
+					has_war = yes
+				}
+			}
 		}
 	}
 
@@ -835,6 +853,12 @@ characters = {
 			allowed = { original_tag = USA }
 			traits = { navy_capital_ship_2 }
 			ai_will_do = { factor = 1.000 }
+
+			available = { 
+				USA = {
+					has_war = yes
+				}
+			}
 		}
 	}
 
