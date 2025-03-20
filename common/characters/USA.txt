@@ -599,7 +599,7 @@ characters = {
 
 			available = { 
 				USA = {
-					has_war = yes
+					has_war = no
 				}
 			}
 	    }
@@ -734,7 +734,7 @@ characters = {
 
 			available = { 
 				USA = {
-					has_war = yes
+					has_war = no
 				}
 			}
 		}
@@ -796,7 +796,7 @@ characters = {
 
 			available = { 
 				USA = {
-					has_war = yes
+					has_war = no
 				}
 			}
 		}
@@ -856,7 +856,7 @@ characters = {
 
 			available = { 
 				USA = {
-					has_war = yes
+					has_war = no
 				}
 			}
 		}
