@@ -2038,3 +2038,32 @@ country_event = {
 		name=USA.10052.a
 	}	
 }
+
+country_event = {
+	id = USA.10053 #《标准生活1》（标准石油故事）
+	title = USA.10053.t
+	desc = USA.10053.d
+	picture = GFX_USA_event_10053_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10053.a
+		hidden_effect = {
+			country_event = {
+				id =  USA.10054
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10054 #《标准生活2》（标准石油故事）
+	title = USA.10054.t
+	desc = USA.10054.d
+	picture = GFX_USA_event_10054_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10054.a
+	}	
+}
