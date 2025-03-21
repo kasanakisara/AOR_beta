@@ -29,6 +29,11 @@ country_event = {#西部的二次危机
 		381 = { set_demilitarized_zone = yes }
 		387 = { set_demilitarized_zone = yes }
 		388 = { set_demilitarized_zone = yes }
+		1053 = { set_demilitarized_zone = yes }
+		1054 = { set_demilitarized_zone = yes }
+		1058 = { set_demilitarized_zone = yes }
+		1062 = { set_demilitarized_zone = yes }
+
 	}
 }
 	mean_time_to_happen = {days = 1}
