@@ -256,7 +256,6 @@ USA_civil_war_west = {
 		}
 		US1 = {
 			transfer_state = 386
-			transfer_state = 387
 			transfer_state = 385
 			load_oob = "US1_Civilwar"
 			load_oob = "US1_Civilwar"
@@ -275,10 +274,12 @@ USA_civil_war_west = {
 			transfer_state = 378
 			transfer_state = 379
 			transfer_state = 380
+			transfer_state = 1062
 			load_oob = "US2_Civilwar"
 			load_oob = "US2_Civilwar"
 		}
 		US3 = {
+			transfer_state = 387
 			transfer_state = 388
 			load_oob = "US3_Civilwar"
 			load_oob = "US3_Civilwar"
@@ -287,6 +288,10 @@ USA_civil_war_west = {
 		US4 = {
 			transfer_state = 381
 			transfer_state = 925
+			transfer_state = 1053
+			transfer_state = 1054
+			transfer_state = 1055
+			transfer_state = 1056
 			load_oob = "US4_Civilwar"
 			load_oob = "US4_Civilwar"
 		}
@@ -294,6 +299,11 @@ USA_civil_war_west = {
 			transfer_state = 382
 			transfer_state = 924
 			transfer_state = 923
+			transfer_state = 926
+			transfer_state = 1057
+			transfer_state = 1058
+			transfer_state = 1059
+			transfer_state = 1060
 			load_oob = "US5_Civilwar"
 			load_oob = "US5_Civilwar"
 		}
@@ -305,12 +315,12 @@ USA_civil_war_west = {
 		}
 		US7 = {
 			transfer_state = 384
+			transfer_state = 1061
 			load_oob = "US7_Civilwar"
 			load_oob = "US7_Civilwar"
 		}
 		US8 = {
 			transfer_state = 383
-			transfer_state = 926
 			load_oob = "US8_Civilwar"
 			load_oob = "US8_Civilwar"
 		}
@@ -318,6 +328,7 @@ USA_civil_war_west = {
 			add_state_core = 386
 			add_state_core = 387
 			add_state_core = 385
+			add_state_core = 1062
 			declare_war_on = {
 				target = US2
 
@@ -363,6 +374,7 @@ USA_civil_war_west = {
 			add_state_core = 378
 			add_state_core = 379
 			add_state_core = 380
+			add_state_core = 1062
 			declare_war_on = {
 				target = US1
 
@@ -404,6 +416,7 @@ USA_civil_war_west = {
 				}
 		}
 		US3 = {
+			add_state_core = 387
 			add_state_core = 388
 			declare_war_on = {
 				target = US2
@@ -447,6 +460,10 @@ USA_civil_war_west = {
 		US4 = {
 			add_state_core = 381
 			add_state_core = 925
+			add_state_core = 1053
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
 			declare_war_on = {
 				target = US2
 
@@ -490,6 +507,11 @@ USA_civil_war_west = {
 			add_state_core = 382
 			add_state_core = 924
 			add_state_core = 923
+			add_state_core = 926
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 1059
+			add_state_core = 1060
 			declare_war_on = {
 				target = US2
 
@@ -532,6 +554,9 @@ USA_civil_war_west = {
 		US6 = {
 			add_state_core = 389
 			add_state_core = 390
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1061
 			declare_war_on = {
 				target = US2
 
@@ -573,6 +598,7 @@ USA_civil_war_west = {
 		}
 		US7 = {
 			add_state_core = 384
+			add_state_core = 1061
 			declare_war_on = {
 				target = US2
 
@@ -615,6 +641,7 @@ USA_civil_war_west = {
 		US8 = {
 			add_state_core = 383
 			add_state_core = 926
+			add_state_core = 1060
 			declare_war_on = {
 				target = US2
 

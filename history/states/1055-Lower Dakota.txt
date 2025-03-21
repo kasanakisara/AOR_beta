@@ -1,11 +1,11 @@
 
 state={
-	id=388
-	name="STATE_388"
-	manpower = 72515
+	id=1055
+	name="STATE_1055"
+	manpower = 140000
 	state_category = rural
 	resources={
-		tungsten=6 # was: 11
+
 	}
 
 	history={
@@ -14,11 +14,12 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = USA
+
 	}
 
 	provinces={
-		1736 1854 1857 4838 4863 6742 7779 7883 10593 10624 11712 12676 
+		6722 7877 12566
 	}
 
-	local_supplies=0.0 
+	local_supplies=9.0 
 }

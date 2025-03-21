@@ -1,26 +1,26 @@
 
 state={
-	id=384
-	name="STATE_384"
-	manpower = 847962
-	
-	state_category = large_town
+	id=1054
+	name="STATE_1054"
+	manpower = 290060
+	state_category = rural
+	resources={
+		
+	}
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 		}
 		add_core_of = USA
 		victory_points = {
-			12586 5
+			4860 1 
 		}
-
 	}
 
 	provinces={
-		1683 3613 3855 4749 7840 7852 12516 12586 
+		4741 4857 4860 7880 10706 12572 12585
 	}
 
 	local_supplies=0.0 

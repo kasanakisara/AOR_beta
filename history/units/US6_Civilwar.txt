@@ -24,14 +24,14 @@ units={
 
 	division={
         name="堪萨斯州第一师"
-        location=4740
+        location=1836
         division_template="堪萨斯州国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=0.9
     }
     division={
         name="堪萨斯州第二师"
-        location=4740
+        location=1836
         division_template="堪萨斯州国民警卫队师"
         start_experience_factor=0.2
         start_equipment_factor=0.9
