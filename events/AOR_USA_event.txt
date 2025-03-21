@@ -526,9 +526,11 @@ country_event = {
 		news_event = {id=AOR_news.80}
 		USA_civil_war_west = yes
 		}
+		USA = {
 		swap_ideas={
 			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
+		    }
 		}
     }
 
@@ -538,9 +540,11 @@ country_event = {
 		news_event = {id=AOR_news.80}
 		USA_civil_war_west = yes
 		}
+		USA = {
 		swap_ideas={
 			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
+		    }
 		}
 		US2 = {
 		change_tag_from = ROOT
@@ -553,9 +557,11 @@ country_event = {
 		news_event = {id=AOR_news.80}
 		USA_civil_war_west = yes
 		}
+		USA = {
 		swap_ideas={
 			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
+		    }
 		}
 		US1 = {
 			change_tag_from = ROOT
@@ -568,9 +574,11 @@ country_event = {
 		news_event = {id=AOR_news.80}
 		USA_civil_war_west = yes
 		}
+		USA = {
 		swap_ideas={
 			 remove_idea = USA_kuangyezhidi2
 		     add_idea = USA_wuxunzhidi
+		    }
 		}
 		US4 = {
 			change_tag_from = ROOT
