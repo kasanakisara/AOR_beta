@@ -1,6 +1,6 @@
 equipments = {
 
-	motorized_equipment = {
+	motorized_equipment_0 = {
 		year = 1920
 
 		is_archetype = yes
@@ -32,12 +32,6 @@ equipments = {
 		
 		fuel_consumption = 1
 		supply_truck = yes
-	}
-
-    motorbike_equipment_1 = {
-
-		archetype = motorized_equipment
-		priority = 1 #Very low
 	}
 
 	motorized_equipment_1 = {

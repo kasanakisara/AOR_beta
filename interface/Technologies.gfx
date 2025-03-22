@@ -7205,8 +7205,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FRA_motorized_equipment_0.dds"
 	}
 
-	 SpriteType = {
+	SpriteType = {
  		name = "GFX_GER_tech_trucks_medium"
+ 		texturefile = "gfx/interface/technologies/GER_motorized_equipment_0.dds"
+ 	}
+
+	 SpriteType = {
+ 		name = "GFX_GER_Military_armored_trucks_medium"
  		texturefile = "gfx/interface/technologies/GER_motorized_equipment_0.dds"
  	}
 
