@@ -34,6 +34,12 @@ equipments = {
 		supply_truck = yes
 	}
 
+    motorbike_equipment_1 = {
+
+		archetype = motorized_equipment
+		priority = 1 #Very low
+	}
+
 	motorized_equipment_1 = {
 		year = 1923
 
