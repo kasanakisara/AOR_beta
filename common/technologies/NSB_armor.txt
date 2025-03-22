@@ -48,10 +48,6 @@ tech_trucks = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				is_major = no
-				factor = 0.75
-			}
 		}
 	}
 
@@ -80,10 +76,6 @@ tech_trucks = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
 		}
 	}
 
@@ -106,6 +98,12 @@ tech_trucks = {
 		}
 		categories = {
 		}
+
+		ai_will_do = {
+			factor = 1
+
+		}
+
 	}
 
 	early_armor_car = {
