@@ -10,6 +10,9 @@ technologies = {
 tech_trucks = {
 
 		enable_subunits = {
+			mot_anti_tank_brigade
+			mot_artillery_brigade
+			mot_anti_air_brigade
 			motorized
 		}
 
@@ -20,9 +23,8 @@ tech_trucks = {
 		enable_equipment_modules = {
 		}
 
-
 		path = {
-			leads_to_tech = mechanised_infantry
+			leads_to_tech = motorised_infantry
 			research_cost_coeff = 1
 		}
 		path = {
@@ -34,7 +36,7 @@ tech_trucks = {
 		start_year = 1900
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 0 }
+			position = { x = 4 y = 0 }
 		}
 
 		categories = {
@@ -53,12 +55,43 @@ tech_trucks = {
 		}
 	}
 
+	motorised_infantry = {
+
+		enable_subunits = {
+			motorized
+		}
+
+		enable_equipments = {
+			motorized_equipment_1
+		}
+
+		path = {
+			leads_to_tech = mechanised_infantry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1925
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+
 	mechanised_infantry = {
 
 		enable_subunits = {
-			mot_anti_tank_brigade
-			mot_artillery_brigade
-			mot_anti_air_brigade
+			mechanized
 		}
 
 		enable_equipments = {
@@ -66,10 +99,10 @@ tech_trucks = {
 		}
 
 		research_cost = 1.5
-		start_year = 1900
+		start_year = 1910
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 7 y = 0 }
+			position = { x = 6 y = 2 }
 		}
 		categories = {
 		}
@@ -118,7 +151,7 @@ tech_trucks = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 11 y = 0 }
+			position = { x = 9 y = 2 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -155,7 +188,7 @@ tech_trucks = {
 		start_year = 1905
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 16 y = 1 }
+			position = { x = 16 y = 2 }
 		}
 		ai_will_do = {
 			factor = 1

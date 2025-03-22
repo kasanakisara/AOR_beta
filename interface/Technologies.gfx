@@ -685,8 +685,8 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/motorized_equipment_1.dds"
-	}	
+		texturefile = "gfx/interface/technologies/POL_motorized_equipment_1.dds"
+	}	#"gfx/interface/technologies/motorized_equipment_1.dds"
 
 	SpriteType = {
 		name = "GFX_tech_recon4_medium"
@@ -7207,11 +7207,6 @@ spriteTypes = {
 
 	SpriteType = {
  		name = "GFX_GER_tech_trucks_medium"
- 		texturefile = "gfx/interface/technologies/GER_motorized_equipment_0.dds"
- 	}
-
-	 SpriteType = {
- 		name = "GFX_GER_Military_armored_trucks_medium"
  		texturefile = "gfx/interface/technologies/GER_motorized_equipment_0.dds"
  	}
 
