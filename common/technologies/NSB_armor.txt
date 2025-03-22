@@ -14,12 +14,10 @@ technologies = {
 			mot_artillery_brigade
 			mot_anti_air_brigade
 			motorized
-			track
 		}
 
 		enable_equipments = {
-			motorized_equipment
-			track
+			mechanized_equipment_1
 		}
 
 		path = {
