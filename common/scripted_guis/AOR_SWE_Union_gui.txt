@@ -8,10 +8,10 @@ scripted_gui = {
 			has_idea = SWE_The_Union_Dream
 		}
 
-		triggers = {
-			AOR_SWE_Union_gui_info_click_enabled = {
+		effects = {
+			AOR_SWE_Union_gui_info_click = {
 				if = {
-					limit = { has_country_flag = SWE_open_Union_gui_flag }
+					limit = { ROOT = { has_country_flag = SWE_open_Union_gui_flag } }
 					clr_country_flag = SWE_open_Union_gui_flag
 				}
 				else = {
