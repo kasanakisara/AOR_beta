@@ -26,8 +26,9 @@ scripted_gui = {
 		window_name = "AOR_SWE_Union_gui"
 
 		visible = {
-			tag = SWE
-			has_country_flag = SWE_open_Union_gui_flag
+			ROOT = {
+				has_country_flag = SWE_open_Union_gui_flag
+			}
 		}
 
 		properties = {
