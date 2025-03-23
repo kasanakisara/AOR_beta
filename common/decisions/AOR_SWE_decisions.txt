@@ -767,6 +767,35 @@ SWE_Union_decision_categories = { #联邦一梦
             custom_effect_tooltip = SWE_Gross_Stockholm_ongoing_tt
         }
     }
+
+    #### 梦游时刻（国策性议题） ####
+    SWE_Promote_Universal_Suffrage = {
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            has_completed_focus = SWE_Return_Power
+            NOT = {
+                has_idea = SWE_Universal_Suffrage
+            }
+        }
+        visible = {
+            has_completed_focus = SWE_Return_Power
+            NOT = {
+                has_idea = SWE_Universal_Suffrage
+            }
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 120
+
+        timeout_effect = {
+            add_political_power = -50
+            country_event = { id = SWE.33 }
+        }
+    }
 }
 
 SWE_Folkhemmet_decision_categories = { #人民之家

@@ -118,13 +118,12 @@ ideas = {
 			}
 		}
 
-		SWE_Stockholm_Law = { 
-			picture = idea_SWE_Stockholm_Law
+		SWE_Agrarian_Reform_Law = { 
+			picture = idea_SWE_Agrarian_Reform_Law
 			allowed = { always = yes }
 			modifier = {
-				political_power_gain = 0.2
-				production_factory_start_efficiency_factor = 0.2
-				production_speed_buildings_factor = 0.2
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.1
 			}
 		}
 
@@ -429,6 +428,18 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.1
 				stability_factor = -0.05
+			}
+		}
+
+		SWE_Universal_Suffrage = {
+			picture = idea_
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				war_support_factor = 0.1
 			}
 		}
 	}
