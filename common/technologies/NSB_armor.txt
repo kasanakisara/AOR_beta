@@ -90,8 +90,8 @@ tech_trucks = {
 			mechanized_equipment_1
 		}
 
-		research_cost = 1.5
-		start_year = 1910
+		research_cost = 2
+		start_year = 1925
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 6 y = 2 }
