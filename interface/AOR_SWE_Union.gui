@@ -2,42 +2,51 @@ guiTypes = { #决议结构
 	containerWindowType = {
 		name = "AOR_SWE_Union_decision_gui"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 130 }
+		size = { width = 100% height= 400 }
 
-		
+		iconType = {
+			name = "AOR_SWE_Union_gui_bg"
+			spriteType = "GFX_SWE_Union_Federation"
+			position = { x = 15 y = 20 }
+		}
+
+		buttonType = {
+			name = "AOR_SWE_Union_gui_info"
+			spriteType = "GFX_SWE_Union_Info"
+			position = { x = 420 y = 30 }
+		}
 
 		instantTextBoxType = {
 			name = "AOR_SWE_Union_gui_num"
-			position = { x = 50 y = 20 }
-			font = "hoi_18mbs"
+			position = { x = 250 y = 20 }
+			font = "hoi_20bs"
 			text = "SWE_Union_num"
-			format = center
-			maxWidth = 400
-			pdx_tooltip = SWE_Union_text_tooltip
+			format = left
+			maxWidth = 250
 		}
 
-		instantTextBoxType = {
-			name = "AOR_SWE_Union_gui_quote"
-			position = { x = 50 y = 50 }
-			font = "hoi_18mbs"
-			text = "SWE_Union_enable_quote"
-			format = center
-			maxWidth = 400
-		}
+		
 	}
-}
 
-
-guiTypes = { #主体结构
 	containerWindowType = {
 		name = "AOR_SWE_Union_gui"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 510 }
+		size = { width = 3141 height= 2125 }
 
 		iconType = {
 			name = "SWE_Union_GUI_background_entry"
 			spriteType = "GFX_SWE_Union_gui_entry"
-			position = { x = 0  y = 40 }
+			position = { x = 0  y = 0 }
+			Orientation = centre
+		}
+
+		instantTextBoxType = {
+			name = "AOR_SWE_Union_gui_quote"
+			position = { x = 250 y = 150 }
+			font = "hoi_18mbs"
+			text = "SWE_Union_enable_quote"
+			format = left
+			maxWidth = 400
 		}
 
 	}

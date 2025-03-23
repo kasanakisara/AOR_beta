@@ -1,6 +1,14 @@
 spriteTypes = {
 
-	###图片###########
+	###图片###
+	spriteType = {
+		name = "GFX_SWE_Union_Federation"
+		texturefile = "gfx/AOR_gui/SWE/SWE_Union/SWE_Vivelafederation.png"
+	}
+	spriteType = {
+		name = "GFX_SWE_Union_Info"
+		texturefile = "gfx/AOR_gui/SWE/SWE_Union/SWE_Union_Information.png"
+	}
 	spriteType = {
 		name = "GFX_SWE_Union_gui_entry"
 		texturefile = "gfx//AOR_gui//SWE//SWE_Union//SWE_1.png"

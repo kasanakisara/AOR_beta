@@ -8,6 +8,28 @@ scripted_gui = {
 			has_idea = SWE_The_Union_Dream
 		}
 
+		triggers = {
+			AOR_SWE_Union_gui_info_click_enabled = {
+				if = {
+					limit = { has_country_flag = SWE_open_Union_gui_flag }
+					clr_country_flag = SWE_open_Union_gui_flag
+				}
+				else = {
+					set_country_flag = SWE_open_Union_gui_flag
+				}
+			}
+		}
+	}
+
+	AOR_SWE_Union_gui = {
+		context_type = player_context
+		window_name = "AOR_SWE_Union_gui"
+
+		visible = {
+			tag = SWE
+			has_country_flag = SWE_open_Union_gui_flag
+		}
+
 		properties = {
 			SWE_Union_GUI_background_entry = { image = "[SWE_Union_gui_getpicture]" }
 		}
