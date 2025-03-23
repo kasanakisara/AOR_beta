@@ -1,8 +1,8 @@
 scripted_gui = {
 
-	AOR_SWE_Union_gui = {
+	AOR_SWE_Union_decision_gui = {
 		context_type = decision_category
-		window_name = "AOR_SWE_Union_gui"
+		window_name = "AOR_SWE_Union_decision_gui"
 
 		visible = {
 			has_idea = SWE_The_Union_Dream
