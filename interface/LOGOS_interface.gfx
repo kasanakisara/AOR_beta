@@ -2902,6 +2902,46 @@ spriteType = {
 	texturefile = "gfx/interface/goals/USA_Perfect_ending_year_1.png"
 	}
 
+	spriteType = {
+	name = "GFX_goal_USA_Shocking_waves_rise_with_the_wind"
+	texturefile = "gfx/interface/goals/USA_Shocking_waves_rise_with_the_wind.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_pause_button_for_everything"
+	texturefile = "gfx/interface/goals/USA_pause_button_for_everything.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Let_s_face_the_storm"
+	texturefile = "gfx/interface/goals/USA_Let_s_face_the_storm.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_walks_to_the_stage"
+	texturefile = "gfx/interface/goals/USA_walks_to_the_stage.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Emergency_conscription_law"
+	texturefile = "gfx/interface/goals/USA_Emergency_conscription_law.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Adhere_to_the_unity"
+	texturefile = "gfx/interface/goals/USA_Adhere_to_the_unity.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Free_play_arrest_traitors"
+	texturefile = "gfx/interface/goals/USA_Free_play_arrest_traitors.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Everything_for_freedom"
+	texturefile = "gfx/interface/goals/USA_Everything_for_freedom.png"
+	}
+
     ######美国事件######
 	#南方#
 	spriteType = {
