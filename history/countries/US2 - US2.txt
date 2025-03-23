@@ -33,19 +33,21 @@ add_equipment_to_stockpile = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	interwar_artillery = 1
 	tech_trucks = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	early_armor_car = 1
+	independent_turret = 1
+	tracked_suspension = 1
+	great_war_light_chassis = 1
+	great_war_heavy_chassis = 1
+	Old_howitzers = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-    interwar_artillery = 1
-	interwar_antiair = 1
- 
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	cv_CAS1 = 1
- 
-	CAS1 = 1
- 
+	machine_equipment_weapons = 1
+
 	superior_firepower = 1
 	base_strike = 1
 	 
@@ -127,3 +129,18 @@ add_ideas = {
 recruit_character = USA_john_pershing
 recruit_character = USA_john_pershing_1
 recruit_character = USA_john_pershing_a 
+
+
+###陆军装甲设计###
+create_equipment_variant = {
+	name = "AT1-斯科特"
+	type = light_tank_chassis_0 
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_torsion_bar_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+}

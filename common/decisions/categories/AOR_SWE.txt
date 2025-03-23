@@ -22,7 +22,7 @@ SWE_Trade_decision_categories = {
 }
 
 SWE_Union_decision_categories = {
-	scripted_gui = AOR_SWE_Union_gui
+	scripted_gui = AOR_SWE_Union_decision_gui
 	priority = 110
 	visible = {
 		has_idea = SWE_The_Union_Dream
