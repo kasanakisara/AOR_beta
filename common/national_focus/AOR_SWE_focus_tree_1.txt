@@ -100,8 +100,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Stockholm_Meeting
-		icon = GFX_goal_SWE_Stockholm_Meeting
+		id = SWE_Agrarian_Reform
+		icon = GFX_goal_SWE_Agrarian_Reform
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Found_of_France
@@ -119,7 +119,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_IndustryArea_Oslo
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Stockholm_Meeting
+			focus = SWE_Agrarian_Reform
 		}
 		x = 3
 		y = 6
@@ -140,7 +140,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_IndustryArea_Bergen
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Stockholm_Meeting
+			focus = SWE_Agrarian_Reform
 		}
 		x = 5
 		y = 6
@@ -161,7 +161,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_Develop_North
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Stockholm_Meeting
+			focus = SWE_Agrarian_Reform
 		}
 		x = 1
 		y = 6
@@ -782,6 +782,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 10
+		completion_reward = {
+			country_event = { id = SWE.32 }
+		}
 
 	}
 	focus = {

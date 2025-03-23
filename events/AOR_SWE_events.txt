@@ -144,7 +144,7 @@ country_event = {
     option = {
         name = SWE.8.a
         add_timed_idea = {
-            idea = SWE_Stockholm_Law
+            idea = SWE_Agrarian_Reform_Law
             days = 405
         }
     }
@@ -718,6 +718,29 @@ country_event = {
         name = SWE.31.a
         add_political_power = 100
         complete_national_focus = SWE_Rebuild_New_World
+    }
+}
+
+country_event = {
+    id = SWE.32 #将权力回归人民——全面普选
+    title = SWE.32.t
+    desc = SWE.32.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.32.a
+        add_political_power = 100
+    }
+}
+
+country_event = {
+    id = SWE.33 #将权力回归人民——全面普选之完成
+    title = SWE.33.t
+    desc = SWE.33.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.33.a
+        add_political_power = 100
+        add_ideas = SWE_Universal_Suffrage
     }
 }
 

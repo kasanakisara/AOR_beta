@@ -9,6 +9,8 @@ technologies = {
 
 tech_trucks = {
 
+		show_equipment_icon = yes
+
 		enable_subunits = {
 			mot_anti_tank_brigade
 			mot_artillery_brigade
@@ -128,10 +130,6 @@ tech_trucks = {
 		enable_subunits = {
 			armored_car
 		}
-		on_research_complete_limit = {
-		}
-		on_research_complete = {
-		}
 		path = {
 			leads_to_tech = interwar_wheeled_chassis
 			research_cost_coeff = 1
@@ -227,14 +225,6 @@ tech_trucks = {
 		show_equipment_icon = yes
 		enable_equipments = {
 			wheeled_chassis_2
-		}
-		enable_equipment_modules = {
-		}
-		enable_subunits = {
-		}
-		on_research_complete_limit = {
-		}
-		on_research_complete = {
 		}
 		research_cost = 2
 		start_year = 1930
