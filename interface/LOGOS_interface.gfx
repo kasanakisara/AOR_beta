@@ -2938,6 +2938,31 @@ spriteType = {
 	}
 
 	spriteType = {
+	name = "GFX_goal__USA_War_Production_Management_Law"
+	texturefile = "gfx/interface/goals/_USA_War_Production_Management_Law.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Encourage_joining_the_militia"
+	texturefile = "gfx/interface/goals/USA_Encourage_joining_the_militia.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_neutrality_of_the_enterprise"
+	texturefile = "gfx/interface/goals/USA_neutrality_of_the_enterprise.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_supply_of_consumer_goods"
+	texturefile = "gfx/interface/goals/USA_supply_of_consumer_goods.png"
+    }
+
+	spriteType = {
+	name = "GFX_goal_USA_Ensure_sales_channels"
+	texturefile = "gfx/interface/goals/USA_Ensure_sales_channels.png"
+    }
+
+	spriteType = {
 	name = "GFX_goal_USA_Everything_for_freedom"
 	texturefile = "gfx/interface/goals/USA_Everything_for_freedom.png"
 	}
