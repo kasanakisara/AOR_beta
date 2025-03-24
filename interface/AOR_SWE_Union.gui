@@ -35,10 +35,17 @@ guiTypes = { #决议结构
 		moveable = yes
 
 		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}	
+
+		iconType = {
 			name = "SWE_Union_GUI_background_entry"
 			spriteType = "GFX_SWE_Union_gui_entry"
+			position = { x = 0  y = 0 }
+			Orientation = upper_left
+			alwaystransparent = yes 
 		}
-
 		instantTextBoxType = {
 			name = "AOR_SWE_Union_gui_quote"
 			position = { x = 220 y = 720 }
