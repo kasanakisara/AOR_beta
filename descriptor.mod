@@ -1,4 +1,4 @@
-supported_version="1.16.0*"
+supported_version="1.16.2*"
 version="0.01"
 tags={
 	"Alternative History"
