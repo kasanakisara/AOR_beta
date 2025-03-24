@@ -2938,9 +2938,75 @@ spriteType = {
 	}
 
 	spriteType = {
+	name = "GFX_goal_USA_War_Production_Management_Law"
+	texturefile = "gfx/interface/goals/USA_War_Production_Management_Law.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Encourage_joining_the_militia"
+	texturefile = "gfx/interface/goals/USA_Encourage_joining_the_militia.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_neutrality_of_the_enterprise"
+	texturefile = "gfx/interface/goals/USA_neutrality_of_the_enterprise.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_supply_of_consumer_goods"
+	texturefile = "gfx/interface/goals/USA_supply_of_consumer_goods.png"
+    }
+
+	spriteType = {
+	name = "GFX_goal_USA_Ensure_sales_channels"
+	texturefile = "gfx/interface/goals/USA_Ensure_sales_channels.png"
+    }
+
+	spriteType = {
+	name = "GFX_goal_USA_Welcome_Mellon_joining"
+	texturefile = "gfx/interface/goals/USA_Welcome_Mellon_joining.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Emergency_production_conversion"
+	texturefile = "gfx/interface/goals/USA_Emergency_production_conversion.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Add_military_industry"
+    texturefile = "gfx/interface/goals/USA_Add_military_industry.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Launch_a_lobbying_group"
+	texturefile = "gfx/interface/goals/USA_Launch_a_lobbying_group.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Mr_Knight"
+	texturefile = "gfx/interface/goals/USA_Mr_Knight.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Hold_France"
+	texturefile = "gfx/interface/goals/USA_Hold_France.png"
+	}
+
+	spriteType = {
+    name = "GFX_goal_USA_We_need_helmets"
+	texturefile = "gfx/interface/goals/USA_We_need_helmets.png"
+	}
+
+	spriteType = {
+	name = "GFX_goal_USA_Overseas_Fleet_Escort"
+	texturefile = "gfx/interface/goals/USA_Overseas_Fleet_Escort.png"
+	}
+
+	spriteType = {
 	name = "GFX_goal_USA_Everything_for_freedom"
 	texturefile = "gfx/interface/goals/USA_Everything_for_freedom.png"
 	}
+	
 
     ######美国事件######
 	#南方#
