@@ -48,11 +48,11 @@ guiTypes = { #决议结构
 		}
 		instantTextBoxType = {
 			name = "AOR_SWE_Union_gui_quote"
-			position = { x = 220 y = 720 }
+			position = { x = 80 y = 620 }
 			font = "vic_36"
 			text = "SWE_Union_enable_quote"
 			format = left
-			maxWidth = 400
+			maxWidth = 600
 		}
 
 	}

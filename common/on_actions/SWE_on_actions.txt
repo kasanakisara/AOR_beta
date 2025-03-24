@@ -369,11 +369,13 @@ on_actions = {
 			## Группа Крови на рукаве
 
 
-			## 联邦一梦
+			#### 联邦一梦 ####
 			if = {
 				limit = {
 					has_idea = SWE_The_Union_Dream
 				}
+
+				### 增长度修正 ###
 
 				set_variable = { SWE_Union_progress_value_add = 0 }
 
@@ -590,7 +592,7 @@ on_actions = {
 				}
 
 				###任务修正###
-				if = {
+				if = { #新干线#
 					limit = {
 						check_variable = { SWE_Union_Stage > 0 }
 						check_variable = { SWE_Union_Stage < 3 }
@@ -603,7 +605,7 @@ on_actions = {
 						remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
 					}
 				}
-				if = {
+				if = { #萨米议会#
 					limit = {
 						check_variable = { SWE_Union_Stage > 2 }
 						check_variable = { SWE_Union_Stage < 5 }
@@ -616,6 +618,40 @@ on_actions = {
 					}
 					else = {
 						remove_ideas = SWE_Samitinget_ongoing
+					}
+				}
+				if = { #书面挪威语#
+					limit = {
+						check_variable = { SWE_Union_Stage > 6 }
+						check_variable = { SWE_Union_Stage < 9 }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = SWE_Norsk_Bokmaal
+							}
+						}
+						add_ideas = SWE_Norsk_Bokmaal_ongoing
+					}
+					else = {
+						remove_ideas = SWE_Norsk_Bokmaal_ongoing
+					}
+				}
+				if = { #北疆铁路计划#
+					limit = {
+						check_variable = { SWE_Union_Stage > 8 }
+            			check_variable = { SWE_Union_Stage < 11 }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = SWE_Northern_Plan_finish
+							}
+						}
+						add_ideas = SWE_NRP_ongoing
+					}
+					else = {
+						remove_ideas = SWE_NRP_ongoing
 					}
 				}
 
