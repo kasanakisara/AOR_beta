@@ -23,13 +23,19 @@ ideas = {
 
 		SWE_NRP_ongoing = {
 			modifier = {
-				civilian_factory_use = 10
+				civilian_factory_use = 15
 			}
 		}
 
 		SWE_Promoting_Universal_Suffrage = {
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.2
+			}
+		}
+
+		SWE_Promoting_Merging_Parliament = {
+			modifier = {
+				political_power_cost = 0.2
 			}
 		}
 		
@@ -420,6 +426,17 @@ ideas = {
 				stability_factor = 0.1
 				political_power_gain = 0.15
 				war_support_factor = 0.1
+			}
+		}
+
+		SWE_Merged_Parliament = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.2
 			}
 		}
 	}

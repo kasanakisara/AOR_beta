@@ -769,7 +769,18 @@ country_event = {
     option = {
         name = SWE.35.a
         add_political_power = 100
-        add_ideas = SWE_Universal_Suffrage
+        add_ideas = SWE_Merged_Parliament
+    }
+}
+
+country_event = {
+    id = SWE.36 #推动一院之完成
+    title = SWE.36.t
+    desc = SWE.36.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.36.a
+        add_ideas = SWE_Uniter
     }
 }
 

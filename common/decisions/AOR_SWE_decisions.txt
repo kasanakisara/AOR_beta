@@ -769,7 +769,7 @@ SWE_Union_decision_categories = { #联邦一梦
     }
 
     #### 梦游时刻（国策性议题） ####
-    SWE_Promote_Universal_Suffrage = {
+    SWE_Promote_Universal_Suffrage = { #推动全面普选
         available = {
             hidden_trigger = { always = no }
         }
@@ -803,6 +803,45 @@ SWE_Union_decision_categories = { #联邦一梦
         timeout_effect = {
             add_political_power = -50
             country_event = { id = SWE.33 }
+            custom_effect_tooltip = SWE_Union_modifier_cost_political_power_tt
+        }
+    }
+
+    SWE_Promote_Merging_Parliament = { #推动一院制
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            has_completed_focus = SWE_Merge_Parliament
+            NOT = {
+                has_idea = SWE_Merged_Parliament
+            }
+        }
+        visible = {
+            has_completed_focus = SWE_Return_Power
+            NOT = {
+                has_idea = SWE_Merged_Parliament
+            }
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 120
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_idea = SWE_The_Union_Dream
+                }
+            }
+		}
+
+
+        timeout_effect = {
+            add_political_power = -50
+            country_event = { id = SWE.35 }
+            custom_effect_tooltip = SWE_Union_modifier_cost_political_power_tt
         }
     }
 }

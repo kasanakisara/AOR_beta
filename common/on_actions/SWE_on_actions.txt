@@ -124,6 +124,229 @@ on_actions = {
 					set_variable = { SWE_Trade_construction_speed = 0.5 }
 				}
 			}
+
+			#### 联邦一梦 ####
+			if = {
+				limit = {
+					has_idea = SWE_The_Union_Dream
+				}
+
+				### 增长度修正 ###
+
+				set_variable = { SWE_Union_progress_value_add = 0 }
+
+				## 市场包容度 -> 增长度
+
+				if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 15 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 25 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 65 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 75 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Market_Inclusion = 85 compare = less_than_or_more }
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
+				}
+				else = {
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+
+				## 稳定度 -> 增长度
+
+				if = {
+					limit = {
+						has_stability < 0
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.2
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.35
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.5
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.65
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 0.75
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
+				}
+				else_if = {
+					limit = {
+						has_stability < 9
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
+				}
+				else = {
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+
+				##人民之家各议案修正
+				#移民
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SWE_Immigrant_Protection #未开放移民政策
+						}
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 0 } #移民问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 1 } #移民问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 2 } #移民问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Immigrant = 3 } #移民问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				#劳动
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SWE_Maternity_Allowance #未开放政策
+						}
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 0 } #问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 1 } #问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 2 } #问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Labor = 3 } #问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+				#教育
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 0 } #问题尚未产生危机
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 1 } #问题产生少量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 2 } #问题产生大量社会问题
+					}
+					add_to_variable = { SWE_Union_progress_value_add = 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Education = 3 } #问题快爆了！
+					}
+					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
+				}
+
+				#加和
+				add_to_variable = { SWE_Union_progress_value = var:SWE_Union_progress_value_add }
+
+				#判断是否进步
+				if = {
+					limit = {
+						check_variable = { SWE_Union_progress_value > 100 }
+					}
+					add_to_variable = { SWE_Union_Stage = 1 }
+					add_to_variable = { SWE_Union_progress_value = -100 }
+					add_to_variable = { SWE_Union_stability_factor = 0.025 }
+					add_to_variable = { SWE_Union_war_support_factor = 0.025 }
+					add_to_variable = { SWE_Union_construction_speed = 0.025 }
+					add_to_variable = { SWE_Union_arms_speed = 0.025 }
+					add_to_variable = { SWE_Union_industrial_speed = 0.025 }
+					if = {
+						limit = {
+							check_variable = { SWE_Union_Stage < 12 }
+						}
+						add_to_variable = { SWE_Union_political_cost = -0.05 }
+					}
+				}
+			}
 		}
 	}
 
@@ -374,223 +597,6 @@ on_actions = {
 				limit = {
 					has_idea = SWE_The_Union_Dream
 				}
-
-				### 增长度修正 ###
-
-				set_variable = { SWE_Union_progress_value_add = 0 }
-
-				## 市场包容度 -> 增长度
-
-				if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 15 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 25 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 45 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 65 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 75 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Market_Inclusion = 85 compare = less_than_or_more }
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
-				}
-				else = {
-					add_to_variable = { SWE_Union_progress_value_add = 1 }
-				}
-
-				## 稳定度 -> 增长度
-
-				if = {
-					limit = {
-						has_stability < 0
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 0.2
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.25 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 0.35
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 0.5
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.25 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 0.65
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.5 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 0.75
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.65 }
-				}
-				else_if = {
-					limit = {
-						has_stability < 9
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.75 }
-				}
-				else = {
-					add_to_variable = { SWE_Union_progress_value_add = 1 }
-				}
-
-				##人民之家各议案修正
-				#移民
-				if = {
-					limit = {
-						NOT = {
-							has_completed_focus = SWE_Immigrant_Protection #未开放移民政策
-						}
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Immigrant = 0 } #移民问题尚未产生危机
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 1 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Immigrant = 1 } #移民问题产生少量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Immigrant = 2 } #移民问题产生大量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Immigrant = 3 } #移民问题快爆了！
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
-				}
-				#劳动
-				if = {
-					limit = {
-						NOT = {
-							has_completed_focus = SWE_Maternity_Allowance #未开放政策
-						}
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Labor = 0 } #问题尚未产生危机
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 1 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Labor = 1 } #问题产生少量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Labor = 2 } #问题产生大量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Labor = 3 } #问题快爆了！
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
-				}
-				#教育
-				else_if = {
-					limit = {
-						check_variable = { SWE_Education = 0 } #问题尚未产生危机
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 1 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Education = 1 } #问题产生少量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0.5 } 
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Education = 2 } #问题产生大量社会问题
-					}
-					add_to_variable = { SWE_Union_progress_value_add = 0 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SWE_Education = 3 } #问题快爆了！
-					}
-					add_to_variable = { SWE_Union_progress_value_add = -0.5 }
-				}
-
-				#加和
-				add_to_variable = { SWE_Union_progress_value = var:SWE_Union_progress_value_add }
-
-				#判断是否进步
-				if = {
-					limit = {
-						check_variable = { SWE_Union_progress_value > 100 }
-					}
-					add_to_variable = { SWE_Union_Stage = 1 }
-					add_to_variable = { SWE_Union_progress_value = -100 }
-					add_to_variable = { SWE_Union_stability_factor = 0.025 }
-					add_to_variable = { SWE_Union_war_support_factor = 0.025 }
-					add_to_variable = { SWE_Union_construction_speed = 0.025 }
-					add_to_variable = { SWE_Union_arms_speed = 0.025 }
-					add_to_variable = { SWE_Union_industrial_speed = 0.025 }
-					if = {
-						limit = {
-							check_variable = { SWE_Union_Stage < 12 }
-						}
-						add_to_variable = { SWE_Union_political_cost = -0.05 }
-					}
-				}
-
 				###任务修正###
 				if = { #新干线#
 					limit = {
@@ -604,6 +610,9 @@ on_actions = {
 					else = {
 						remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
 					}
+				}
+				else = {
+					remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
 				}
 				if = { #萨米议会#
 					limit = {
@@ -619,6 +628,9 @@ on_actions = {
 					else = {
 						remove_ideas = SWE_Samitinget_ongoing
 					}
+				}
+				else = {
+					remove_ideas = SWE_Samitinget_ongoing
 				}
 				if = { #书面挪威语#
 					limit = {
@@ -637,10 +649,12 @@ on_actions = {
 						remove_ideas = SWE_Norsk_Bokmaal_ongoing
 					}
 				}
+				else = {
+					remove_ideas = SWE_Norsk_Bokmaal_ongoing
+				}
 				if = { #北疆铁路计划#
 					limit = {
-						check_variable = { SWE_Union_Stage > 8 }
-            			check_variable = { SWE_Union_Stage < 11 }
+						check_variable = { SWE_Union_Stage > 4 }
 					}
 					if = {
 						limit = {
@@ -653,6 +667,9 @@ on_actions = {
 					else = {
 						remove_ideas = SWE_NRP_ongoing
 					}
+				}
+				else = {
+					remove_ideas = SWE_NRP_ongoing
 				}
 
 			}
