@@ -17,6 +17,23 @@ Hackers_debug = {
         }
     }
 
+    USA_1920 = {
+        available = {
+            is_debug = yes
+            tag = USA
+        }
+        visible = {
+            is_debug = yes
+            tag = USA
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            load_focus_tree = USA_2
+        }
+    }
+
     USA_Civilwar_begin = {
         available = {
             is_debug = yes
