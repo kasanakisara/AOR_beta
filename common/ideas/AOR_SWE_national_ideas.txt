@@ -439,5 +439,15 @@ ideas = {
 				political_power_gain = 0.2
 			}
 		}
+
+		SWE_Union_Inheritance_Law = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = SWE_Union_Inheritance_Law_tt
+			}
+		}
 	}
 }

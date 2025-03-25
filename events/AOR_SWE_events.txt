@@ -774,13 +774,16 @@ country_event = {
 }
 
 country_event = {
-    id = SWE.36 #推动一院之完成
+    id = SWE.36 #新继承法
     title = SWE.36.t
     desc = SWE.36.d
     is_triggered_only = yes
     option = {
         name = SWE.36.a
-        add_ideas = SWE_Uniter
+        hidden_effect = {
+            add_ideas = SWE_Union_Inheritance_Law
+        }
+        custom_effect_tooltip = SWE_Inheritance_Law_tt
     }
 }
 
