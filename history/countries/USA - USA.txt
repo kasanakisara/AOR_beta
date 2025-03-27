@@ -576,8 +576,9 @@ create_equipment_variant = {
 }
 
 USA = {
-	country_event = { days = 25 id = USA.10003 }
+	country_event = { days =25 id = USA.10003 }
 	country_event = { days = 32 id = USA.10004 }
 	country_event = { days = 556 id = USA.10049 }
 	country_event = { days = 473 id = USA.10050 }
+	country_event = { days = 7 id = USA.10058 }
 }

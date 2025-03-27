@@ -2136,3 +2136,15 @@ country_event = {
 		name=USA.10057.a
 	}	
 }
+
+country_event = {
+	id = USA.10058 #欠债还钱
+	title = USA.10058.t
+	desc = USA.10058.d
+	picture = GFX_USA_event_10058_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10058.a
+	}	
+}
