@@ -686,6 +686,7 @@ ideas = {
 		}
 	#混乱的五大湖区	
 		USA_GreatLakesA = {
+			picture = GFX_idea_USA_GreatLakesA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.15
@@ -695,6 +696,7 @@ ideas = {
 		}
 	#颁布戒严令	
 		USA_MartialLawA = {
+			picture = GFX_idea_USA_MartialLawA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.1
@@ -703,6 +705,7 @@ ideas = {
 		}	
 	#受破坏的五大湖区		
 		USA_GreatLakes2A = {
+			picture = GFX_idea_USA_GreatLakes2A
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.05
@@ -712,6 +715,7 @@ ideas = {
 		}	
 	#美式忧虑
 		USA_AmericanAnxietyA = {
+			picture = GFX_idea_USA_AmericanAnxietyA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.05
