@@ -171,6 +171,26 @@ spriteTypes = {
 		name = "GFX_idea_USA_dazhanzhimo6"
 		texturefile = "gfx/interface/ideas/USA_dazhanzhimo.png"
     }
+	spriteType = {
+		name = "GFX_idea_USA_jinjizhuangtai"
+		texturefile = "gfx/interface/ideas/USA_MartialLawA.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_GreatLakesA"
+		texturefile = "gfx/interface/ideas/USA_GreatLakesA.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_MartialLawA"
+		texturefile = "gfx/interface/ideas/USA_MartialLawA.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_GreatLakes2A"
+		texturefile = "gfx/interface/ideas/USA_GreatLakes2A.png"
+    }
+	spriteType = {
+		name = "GFX_idea_USA_AmericanAnxietyA"
+		texturefile = "gfx/interface/ideas/USA_AmericanAnxietyA.png"
+    }
 
 	spriteType = {
 		name = "GFX_USA.10_pic"
