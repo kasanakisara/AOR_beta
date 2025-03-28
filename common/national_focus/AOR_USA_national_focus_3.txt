@@ -534,6 +534,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = USA_AMr_Knight
 			if = {
 				limit = {
 					has_idea = USA_zhixuchonggou_knights
