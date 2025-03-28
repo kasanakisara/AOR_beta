@@ -553,6 +553,8 @@ focus_tree={
 				}
 			}
 			hidden_effect = {
+			USA = {
+                load_oob = AOR_LAND_KOW_USA_civil_war
 				country_event = {
 					id = USA.10061
 				}
@@ -562,6 +564,8 @@ focus_tree={
 			}
 		}
 	}
+}
+
 	focus={
 		id=USA_walks_to_the_stage
 		icon=GFX_goal_USA_walks_to_the_stage
