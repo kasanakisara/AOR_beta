@@ -21,6 +21,15 @@ focus_tree={
 			date>1919.12.30
 		}
 		completion_reward={
+			country_event = {
+				id = USA.10059
+			}
+			hidden_effect = {
+				news_event={
+					id = AOR_news.190
+				}
+				news_event = { days=231 id = AOR_news.221 }
+			}
 		}
 	}
 	focus={
@@ -75,12 +84,6 @@ focus_tree={
 			add_political_power=20
 			country_event={
 				id=USA.10023
-			}
-			hidden_effect = {
-				news_event={
-					id = AOR_news.190
-				}
-				news_event = { days=210 id = AOR_news.221 }
 			}
 		}
 	}

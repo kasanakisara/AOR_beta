@@ -385,6 +385,11 @@ focus_tree={
 			    remove_idea = USA_shiyouhuanying2
 			    add_idea = USA_shiyouhuanying3
 		    }
+			hidden_effect = {
+					country_event = {
+						id = USA.10063
+					}
+			}
 		}
 	}
 	focus={
@@ -548,6 +553,9 @@ focus_tree={
 				}
 			}
 			hidden_effect = {
+				country_event = {
+					id = USA.10061
+				}
 				news_event={
 					id = AOR_news.191
 				}

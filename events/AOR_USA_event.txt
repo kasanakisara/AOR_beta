@@ -2148,3 +2148,69 @@ country_event = {
 		name=USA.10058.a
 	}	
 }
+
+country_event = {
+	id = USA.10059 #1920年新年演说
+	title = USA.10059.t
+	desc = USA.10059.d
+	picture = GFX_USA_event_10059_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10059.a
+		country_event = {
+			id = USA.10060
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10060 #1920年新年演说
+	title = USA.10060.t
+	desc = USA.10060.d
+	picture = GFX_USA_event_10060_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10060.a
+	}	
+}
+
+country_event = {
+	id = USA.10061 #密西西比河的出征（劳动骑士团）
+	title = USA.10061.t
+	desc = USA.10061.d
+	picture = GFX_USA_event_10061_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10061.a
+		country_event = {
+			id = USA.10062
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10062 #密西西比河的远征（劳动骑士团）
+	title = USA.10062.t
+	desc = USA.10062.d
+	picture = GFX_USA_event_10062_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10062.a
+	}	
+}
+
+country_event = {
+	id = USA.10063 #灰雪中的面包（劳动骑士团）
+	title = USA.10063.t
+	desc = USA.10063.d
+	picture = GFX_USA_event_10063_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10063.a
+	}	
+}
