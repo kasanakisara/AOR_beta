@@ -1571,7 +1571,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_DESTROYERS"
+					text = "驱逐舰"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1585,7 +1585,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_LIGHT_CRUISERS"
+					text = "轻巡洋舰"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1599,7 +1599,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_HEAVY_CRUISERS"
+					text = "重巡洋舰"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1613,7 +1613,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_HEAVY_SHIPS"
+					text = "战列舰"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1627,7 +1627,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_CARRIERS"
+					text = "航空母舰"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
@@ -1641,7 +1641,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "NAVAL_TITLE_SUBMARINES"
+					text = "潜艇"
 					maxWidth = 600
 					maxHeight = 62
 					format = left
