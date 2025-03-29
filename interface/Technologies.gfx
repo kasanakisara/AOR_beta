@@ -141,14 +141,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/advanced_battleship.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_ship_super_hull_heavy_medium"
+		name = "GFX_tech_1923_ship_super_hull_heavy_medium"
 		texturefile ="gfx/interface/technologies/heavy_battleship.dds"
-		# "gfx/interface/technologies/heavy_battleship2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1927_ship_super_hull_heavy_medium"
+		texturefile ="gfx/interface/technologies/heavy_battleship2.dds"
 	}
 	SpriteType = {
 		name = "GFX_SH_battleship_2_medium"
-		texturefile = "gfx/interface/technologies/heavy_battleship.dds"
-		# "gfx/interface/technologies/heavy_battleship2.dds"
+		texturefile = "gfx/interface/technologies/heavy_battleship2.dds"
 	}
 
 	SpriteType = {	
