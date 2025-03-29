@@ -38,6 +38,12 @@ ideas = {
 				political_power_cost = 0.2
 			}
 		}
+
+		SWE_Promoting_Reduction_Civil_Servants = {
+			modifier = {
+				political_power_cost = 0.2
+			}
+		}
 		
 	}
 
@@ -104,12 +110,14 @@ ideas = {
 			}
 		}
 
-		SWE_Agrarian_Reform_Law = { 
-			picture = idea_SWE_Agrarian_Reform_Law
+		SWE_Further_Reform_Law = { 
+			picture = idea_SWE_Further_Reform_Law
 			allowed = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
 				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
 			}
 		}
 
@@ -447,6 +455,30 @@ ideas = {
 			}
 			modifier = {
 				custom_modifier_tooltip = SWE_Union_Inheritance_Law_tt
+			}
+		}
+
+		SWE_Reducted_Civil_Servants = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.2
+			}
+		}
+
+		SWE_Visible_Hand = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.3
+				political_power_cost = -0.2
 			}
 		}
 	}

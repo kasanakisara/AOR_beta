@@ -100,17 +100,21 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SWE_Agrarian_Reform
-		icon = GFX_goal_SWE_Agrarian_Reform
+		id = SWE_Further_Reform
+		icon = GFX_goal_SWE_Further_Reform
 		cost = 5.00
 		prerequisite = {
 			focus = SWE_Found_of_France
 			focus = SWE_Found_of_British
 		}
+		available = {
+			industrial_complex > 49
+		}
 		x = 3
 		y = 5
 		completion_reward = {
 			country_event = { id = SWE.8 }
+        	add_ideas = SWE_Further_Reform_Law
 		}
 
 	}
@@ -119,7 +123,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_IndustryArea_Oslo
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Agrarian_Reform
+			focus = SWE_Further_Reform
 		}
 		x = 3
 		y = 6
@@ -140,7 +144,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_IndustryArea_Bergen
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Agrarian_Reform
+			focus = SWE_Further_Reform
 		}
 		x = 5
 		y = 6
@@ -161,7 +165,7 @@ focus_tree = {
 		icon = GFX_goal_SWE_Develop_North
 		cost = 5.00
 		prerequisite = {
-			focus = SWE_Agrarian_Reform
+			focus = SWE_Further_Reform
 		}
 		x = 1
 		y = 6
@@ -708,6 +712,12 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Trade_with_CSA
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_Union_Dream_III_tt
+				check_variable = { SWE_Union_Stage = 3 compare = more_than_or_equals }
+			}
+		}
 		x = 4
 		y = 12
 		completion_reward = {
@@ -824,6 +834,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 11
+		completion_reward = {
+			country_event = { id = SWE.37 }
+		}
 
 	}
 	focus = {
@@ -836,8 +849,26 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Amendment_Law_Inheritance
 		}
+		available = {
+			has_idea = SWE_Reducted_Civil_Servants
+			has_idea = SWE_Merged_Parliament
+			has_idea = SWE_Universal_Suffrage
+			custom_trigger_tooltip = {
+				tooltip = SWE_Union_Dream_III_tt
+				check_variable = { SWE_Union_Stage = 3 compare = more_than_or_equals }
+			}
+		}
 		x = 9
 		y = 12
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = SWE_Reducted_Civil_Servants
+				remove_ideas = SWE_Merged_Parliament
+				remove_ideas = SWE_Universal_Suffrage
+				add_ideas = SWE_Visible_Hand
+			}
+			custom_effect_tooltip = SWE_Hand_Could_Saw_effect_tt
+		}
 
 	}
 	focus = {
@@ -930,6 +961,10 @@ focus_tree = {
 		}
 		available = {
             has_idea = SWE_Folkhemmet
+			custom_trigger_tooltip = {
+				tooltip = SWE_Union_Dream_III_tt
+				check_variable = { SWE_Union_Stage = 3 compare = more_than_or_equals }
+			}
 		}
 		prerequisite = {
 			focus = SWE_People_University

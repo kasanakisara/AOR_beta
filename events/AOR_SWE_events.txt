@@ -24,6 +24,7 @@ country_event = {
             remove_ideas = SWE_Antisocialistisk_Speciallagen
             remove_ideas = SWE_The_Union_Dream
             remove_ideas = SWE_In_Revolution
+            remove_ideas = SWE_Visible_Hand
             add_ideas = A_lingering_alliance
             clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = Haakon.1 days = 5 }
@@ -137,16 +138,13 @@ country_event = {
 }
 
 country_event = {
-    id = SWE.8 #斯德哥尔摩会议
+    id = SWE.8 #全面深化改革
     title = SWE.8.t
     desc = SWE.8.d
     is_triggered_only = yes
     option = {
         name = SWE.8.a
-        add_timed_idea = {
-            idea = SWE_Agrarian_Reform_Law
-            days = 405
-        }
+        add_political_power = 50
     }
 }
 
@@ -243,7 +241,7 @@ country_event = {
             remove_ideas = SWE_Beyond_Nation
             remove_ideas = SWE_Liberte_Spirit
             remove_ideas = SWE_Encourage
-            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = SWE_Further_Reform_Law
             remove_ideas = Let_the_ambitio_sleep
             remove_ideas = Tiger_of_Silence
 
@@ -349,6 +347,7 @@ country_event = {
             remove_ideas = SWE_Beyond_Nation
             remove_ideas = SWE_Eighty_Seventh_Orders
             remove_ideas = SWE_Antisocialistisk_Speciallagen
+            remove_ideas = SWE_Further_Reform_Law
             add_ideas = SWE_The_Union_Dream
             add_ideas = SWE_In_Revolution
             add_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
@@ -508,10 +507,11 @@ country_event = {
         name = Haakon.2.a
         hidden_effect = {
             remove_ideas = SWE_Encourage
-            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = SWE_Further_Reform_Law
             remove_ideas = SWE_Open_the_door
             remove_ideas = SWE_Third_Choice
             remove_ideas = SWE_Folkhemmet
+            remove_ideas = SWE_Ex_Folkhemmet
             remove_ideas = SWE_Folkhemmet_debuff
             remove_ideas = SWE_Soviet_Trade
             remove_ideas = SWE_Germany_Trade_sweden
@@ -784,6 +784,28 @@ country_event = {
             add_ideas = SWE_Union_Inheritance_Law
         }
         custom_effect_tooltip = SWE_Inheritance_Law_tt
+    }
+}
+
+country_event = {
+    id = SWE.37 #裁人
+    title = SWE.37.t
+    desc = SWE.37.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.37.a
+        add_stability = -0.2
+    }
+}
+
+country_event = {
+    id = SWE.38 #裁完了
+    title = SWE.38.t
+    desc = SWE.38.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.38.a
+        add_ideas = SWE_Reducted_Civil_Servants
     }
 }
 
