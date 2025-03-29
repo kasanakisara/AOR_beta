@@ -2214,3 +2214,62 @@ country_event = {
 		name=USA.10063.a
 	}	
 }
+
+country_event = {
+	id = USA.10064 #密西西比河的远征2（劳动骑士团）
+	title = USA.10064.t
+	desc = USA.10064.d
+	picture = GFX_USA_event_10064_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10064.a
+		hidden_effect = {
+			id = USA.10065
+			days = 2
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10065 #密西西比河的远征3（劳动骑士团）
+	title = USA.10065.t
+	desc = USA.10065.d
+	picture = GFX_USA_event_10065_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10065.a
+			hidden_effect = {
+			id = USA.10066
+			days = 1
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10066 #密西西比河的远征4（劳动骑士团）
+	title = USA.10066.t
+	desc = USA.10066.d
+	picture = GFX_USA_event_10066_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10066.a
+		country_event = {
+			id = USA.10067
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10067 #密西西比河的远征4-1（劳动骑士团）
+	title = USA.10067.t
+	desc = USA.10067.d
+	picture = GFX_USA_event_10067_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10067.a
+	}	
+}
