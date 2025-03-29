@@ -382,11 +382,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_SWE_Agrarian_Reform_shine"
-		texturefile = "gfx/interface/goals/goal_SWE_Agrarian_Reform.png"
+		name = "GFX_goal_SWE_Further_Reform_shine"
+		texturefile = "gfx/interface/goals/goal_SWE_Further_Reform.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_SWE_Agrarian_Reform.png"
+			animationmaskfile = "gfx/interface/goals/goal_SWE_Further_Reform.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -399,7 +399,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_SWE_Agrarian_Reform.png"
+			animationmaskfile = "gfx/interface/goals/goal_SWE_Further_Reform.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

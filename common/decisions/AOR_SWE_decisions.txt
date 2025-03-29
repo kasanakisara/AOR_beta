@@ -113,6 +113,56 @@ SWE_Norweign_Independence_decision_categories = {
         targets = { 142 110 143 144 967 1027 1022 1028 1029 1030 }
         on_map_mode = map_only
         days_re_enable = 49
+        days_remove = 28
+        modifier = {
+            consumer_goods_factor = 0.05
+            political_power_cost = 0.1
+        }
+        ai_will_do = {
+            add = 1000
+            modifier = {
+                check_variable = { SWE_Norweign_Independence_value = 50 compare = more_than_or_equals }
+                add = 1000
+            }
+        }
+        cost = 45
+        complete_effect = {
+            PREV = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_to_variable = { SWE_Norweign_Independence_value = -2 }
+            custom_effect_tooltip = SWE_Norweign_Independence_effect_localisation
+        }
+    }
+
+    SWE_Funding_Swenden_Regional_Industries = {
+        available = {
+            has_country_flag = SWE_K_Plan_flag
+            has_completed_focus = SWE_Further_Reform
+        }
+        visible = {
+            has_country_flag = SWE_K_Plan_flag
+            has_completed_focus = SWE_Further_Reform
+        }
+        state_target = yes
+        targets = { 38 124 138 139 140 141 666 1024 1031 1031 1033 1034 }
+        on_map_mode = map_only
+        days_re_enable = 49
+        days_remove = 28
+        modifier = {
+            consumer_goods_factor = 0.05
+            political_power_cost = 0.1
+        }
         ai_will_do = {
             add = 1000
             modifier = {
@@ -161,6 +211,7 @@ SWE_Norweign_Independence_decision_categories = {
                     NOT = {
                         is_core_of = NOR
                     }
+                    industrial_complex > 0
                 }
                 remove_building = {
                     type = industrial_complex
@@ -204,6 +255,7 @@ SWE_Norweign_Independence_decision_categories = {
                     NOT = {
                         is_core_of = NOR
                     }
+                    arms_factory > 0
                 }
                 remove_building = {
                     type = arms_factory
@@ -803,6 +855,8 @@ SWE_Union_decision_categories = { #联邦一梦
         timeout_effect = {
             add_political_power = -50
             country_event = { id = SWE.33 }
+            add_to_variable = { SWE_Union_progress_value = 5 }
+            custom_effect_tooltip = SWE_Union_progress_add_5_tt
             custom_effect_tooltip = SWE_Union_modifier_cost_political_power_tt
         }
     }
@@ -818,7 +872,7 @@ SWE_Union_decision_categories = { #联邦一梦
             }
         }
         visible = {
-            has_completed_focus = SWE_Return_Power
+            has_completed_focus = SWE_Merge_Parliament
             NOT = {
                 has_idea = SWE_Merged_Parliament
             }
@@ -841,6 +895,48 @@ SWE_Union_decision_categories = { #联邦一梦
         timeout_effect = {
             add_political_power = -50
             country_event = { id = SWE.35 }
+            add_to_variable = { SWE_Union_progress_value = 5 }
+            custom_effect_tooltip = SWE_Union_progress_add_5_tt
+            custom_effect_tooltip = SWE_Union_modifier_cost_political_power_tt
+        }
+    }
+
+    SWE_Promote_Reduction_Civil_Servants = { #裁剪公务员
+        available = {
+            hidden_trigger = { always = no }
+        }
+        activation = {
+            has_completed_focus = SWE_Reduction_Civil_Servants
+            NOT = {
+                has_idea = SWE_Reducted_Civil_Servants
+            }
+        }
+        visible = {
+            has_completed_focus = SWE_Reduction_Civil_Servants
+            NOT = {
+                has_idea = SWE_Reducted_Civil_Servants
+            }
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 120
+
+        cancel_trigger = {
+            hidden_trigger = {
+                NOT = {
+                    has_idea = SWE_The_Union_Dream
+                }
+            }
+		}
+
+
+        timeout_effect = {
+            add_political_power = -50
+            country_event = { id = SWE.37 }
+            add_to_variable = { SWE_Union_progress_value = 5 }
+            custom_effect_tooltip = SWE_Union_progress_add_5_tt
             custom_effect_tooltip = SWE_Union_modifier_cost_political_power_tt
         }
     }
