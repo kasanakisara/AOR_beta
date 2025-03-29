@@ -2225,8 +2225,10 @@ country_event = {
 	option = {
 		name=USA.10064.a
 		hidden_effect = {
-			id = USA.10065
-			days = 2
+			country_event = {
+			    id = USA.10065
+			    days = 2
+			}
 		}
 	}	
 }
@@ -2241,8 +2243,10 @@ country_event = {
 	option = {
 		name=USA.10065.a
 			hidden_effect = {
-			id = USA.10066
-			days = 1
+				country_event = {
+			    id = USA.10066
+			    days = 1
+			}
 		}
 	}	
 }
@@ -2271,5 +2275,41 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10067.a
+		hidden_effect = {
+			country_event = {
+			    id = USA.10068
+			    days = 14
+		    }
+	    }
+	}	
+}
+
+country_event = {
+	id = USA.10068 #密西西比河的远征5（劳动骑士团）
+	title = USA.10068.t
+	desc = USA.10068.d
+	picture = GFX_USA_event_10067_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10068.a
+		hidden_effect = {
+			country_event = {
+			    id = USA.10069
+			    days = 14
+		    }
+	    }
+	}	
+}
+
+country_event = {
+	id = USA.10069 #密西西比河的远征6（劳动骑士团）
+	title = USA.10069.t
+	desc = USA.10069.d
+	picture = GFX_USA_event_10069_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10069.a
 	}	
 }
