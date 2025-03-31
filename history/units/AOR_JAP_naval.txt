@@ -7,7 +7,103 @@ units= {
 		naval_base = 1092
 
 		task_force = {				
-			name = "LJN-太平洋舰队"			
+			name = "IJN-守备舰队"			
+			location = 9998
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
+                    }
+                }
+            }
+            ship = {
+                name = "矢矧號" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    light_cruiser_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "筑摩級"
+                    }
+                }
+            }
+            ship = {
+                name = "筑摩號" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    light_cruiser_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "筑摩級"
+                    }
+                }
+            }
+            ship = {
+                name = "山城號" 
+
+                definition = battleship
+                equipment = { 
+                    battleship_3 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "扶桑級"
+                    }
+                }
+            }
+        }
+
+		task_force = {				
+			name = "IJN-东太平洋舰队"			
 			location = 4180
 			ship = {
                 name = "L1級潜艇" 
@@ -72,50 +168,6 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "L1級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
                     }
                 }
             }
@@ -189,9 +241,9 @@ units= {
             ship = {
                 name = "出雲號" 
                 
-                definition = battleship
+                definition = heavy_cruiser
                 equipment = { 
-                    battleship_1 = {
+                    heavy_cruiser_1 = {
                         amount = 1
                         owner =  JAP
                         version_name = "出雲級"
@@ -211,7 +263,7 @@ units= {
                 }
             }
             ship = {
-                name = "初瀨號" 
+                name = "朝日號" 
                 
                 definition = battleship
                 equipment = { 
@@ -219,18 +271,6 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "敷島級"
-                    }
-                }
-            }
-            ship = {
-                name = "鹿島號" 
-                
-                definition = battleship
-                equipment = { 
-                    battleship_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "香取級"
                     }
                 }
             }
@@ -249,7 +289,136 @@ units= {
         }
 
 		task_force = {				
-			name = "LJN-第三舰队"			
+			name = "IJN-西太平洋舰队"			
+			location = 957
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "枞級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "枞級"
+                    }
+                }
+            }
+			ship = {
+                name = "枞級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "枞級"
+                    }
+                }
+            }
+			ship = {
+                name = "枞級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "枞級"
+                    }
+                }
+            }
+			ship = {
+                name = "枞級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "枞級"
+                    }
+                }
+            }
+            ship = {
+                name = "初瀨號" 
+                
+                definition = battleship
+                equipment = { 
+                    battleship_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "敷島級"
+                    }
+                }
+            }
+            ship = {
+                name = "安芸號" 
+                
+                definition = battleship
+                equipment = { 
+                    battleship_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "薩摩級"
+                    }
+                }
+            }
+            ship = {
+                name = "鹿島號" 
+                
+                definition = battleship
+                equipment = { 
+                    battleship_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "香取級"
+                    }
+                }
+            }
+        }
+
+		task_force = {				
+			name = "IJN-第三舰队"			
 			location = 1092
 			ship = {
                 name = "L1級潜艇" 
@@ -394,50 +563,6 @@ units= {
                     }
                 }
             }
-			ship = {
-                name = "枞級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "枞級"
-                    }
-                }
-            }
-			ship = {
-                name = "枞級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "枞級"
-                    }
-                }
-            }
-			ship = {
-                name = "枞級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "枞級"
-                    }
-                }
-            }
-            ship = {
-                name = "枞級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "枞級"
-                    }
-                }
-            }
             ship = {
                 name = "平戶號" 
                 
@@ -447,30 +572,6 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "筑摩級"
-                    }
-                }
-            }
-            ship = {
-                name = "常磐號" 
-                
-                definition = heavy_cruiser
-                equipment = { 
-                    heavy_cruiser_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "淺閒級"
-                    }
-                }
-            }
-            ship = {
-                name = "淺閒號" 
-                
-                definition = heavy_cruiser
-                equipment = { 
-                    heavy_cruiser_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "淺閒級"
                     }
                 }
             }
@@ -511,18 +612,6 @@ units= {
                 }
             }
             ship = {
-                name = "朝日號" 
-                
-                definition = battleship
-                equipment = { 
-                    battleship_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "敷島級"
-                    }
-                }
-            }
-            ship = {
                 name = "攝津號" 
             
                 definition = battleship
@@ -535,14 +624,14 @@ units= {
                 }
             }
             ship = {
-                name = "河内號" 
-            
+                name = "霧島號" 
+
                 definition = battleship
                 equipment = { 
-                    battleship_2 = {
+                    battle_cruiser_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "河内級"
+                        version_name = "金剛級"
                     }
                 }
             }
@@ -551,7 +640,7 @@ units= {
 
         
 		task_force = {				
-			name = "LJN-第二舰队"			
+			name = "IJN-第二舰队"			
 			location = 1150
             ship = {
                 name = "隼級" 
@@ -713,18 +802,6 @@ units= {
                 }
             }
             ship = {
-                name = "安芸號" 
-                
-                definition = battleship
-                equipment = { 
-                    battleship_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "薩摩級"
-                    }
-                }
-            }
-            ship = {
                 name = "香取號" 
                 
                 definition = battleship
@@ -753,7 +830,7 @@ units= {
 
 
 		task_force = {				
-			name = "LJN-第一舰队"			
+			name = "IJN-第一舰队"			
 			location = 10000
             ship = {
                 name = "隼級" 
@@ -778,28 +855,6 @@ units= {
                 }
             }
             ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
                 name = "桃級" 
                 definition = destroyer
                 equipment = { 
@@ -888,71 +943,38 @@ units= {
                 }
             }
             ship = {
-                name = "桃級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "桃級"
-                    }
-                }
-            }
-            ship = {
-                name = "桃級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "桃級"
-                    }
-                }
-            }
-            ship = {
-                name = "桃級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "桃級"
-                    }
-                }
-            }
-            ship = {
-                name = "矢矧號" 
+                name = "常磐號" 
                 
-                definition = light_cruiser
+                definition = heavy_cruiser
                 equipment = { 
-                    light_cruiser_2 = {
+                    heavy_cruiser_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "筑摩級"
+                        version_name = "淺閒級"
                     }
                 }
             }
             ship = {
-                name = "筑摩號" 
+                name = "淺閒號" 
                 
-                definition = light_cruiser
+                definition = heavy_cruiser
                 equipment = { 
-                    light_cruiser_2 = {
+                    heavy_cruiser_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "筑摩級"
+                        version_name = "淺閒級"
                     }
                 }
             }
             ship = {
-                name = "山城號" 
-
+                name = "河内號" 
+            
                 definition = battleship
                 equipment = { 
-                    battleship_3 = {
+                    battleship_2 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "扶桑級"
+                        version_name = "河内級"
                     }
                 }
             }
@@ -965,18 +987,6 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "伊勢級"
-                    }
-                }
-            }
-            ship = {
-                name = "霧島號" 
-
-                definition = battleship
-                equipment = { 
-                    battle_cruiser_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "金剛級"
                     }
                 }
             }
