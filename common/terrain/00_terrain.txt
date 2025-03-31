@@ -312,13 +312,13 @@ categories =  {
 		}
 		light_cruiser = {
 			units = {
-				movement = -0.3
+				movement = -0.35
 				defence = -0.2
 			}
 		}
 		destroyer = {
 			units = {
-				movement = -0.3
+				movement = -0.35
 				defence = -0.2
 			}
 		}
