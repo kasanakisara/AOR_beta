@@ -288,7 +288,7 @@ categories =  {
 		}
 		battle_cruiser = {
 			units = {
-				movement = -0.2
+				movement = -0.35
 				defence = -0.2
 			}
 		}
