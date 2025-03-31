@@ -481,5 +481,27 @@ ideas = {
 				political_power_cost = -0.2
 			}
 		}
+
+		SWE_Skagerrak_Arbitration = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		SWE_Skagerrak_Strait_Reparations = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
 	}
 }
