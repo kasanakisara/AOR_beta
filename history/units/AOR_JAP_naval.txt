@@ -175,6 +175,30 @@ units= {
                 }
             }
             ship = {
+                name = "磐手號" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "出雲級"
+                    }
+                }
+            }
+            ship = {
+                name = "出雲號" 
+                
+                definition = battleship
+                equipment = { 
+                    battleship_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "出雲級"
+                    }
+                }
+            }
+            ship = {
                 name = "春日號" 
                 
                 definition = heavy_cruiser
@@ -423,6 +447,30 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "筑摩級"
+                    }
+                }
+            }
+            ship = {
+                name = "常磐號" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "淺閒級"
+                    }
+                }
+            }
+            ship = {
+                name = "淺閒號" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    heavy_cruiser_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "淺閒級"
                     }
                 }
             }
