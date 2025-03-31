@@ -1,11 +1,11 @@
 
 strategic_region={
-	id=77
-	name="STRATEGICREGION_77"
+	id=228
+	name="STRATEGICREGION_228"
 	provinces={
-		2734 2757 2781 8396 8421 8445
+		13326
 	}
-	naval_terrain=water_shallow_sea
+	naval_terrain=Rivers_and_seaways
 	weather={
 		period={
 			between={ 0.0 30.0 }
