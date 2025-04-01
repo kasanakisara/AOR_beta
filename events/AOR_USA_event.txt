@@ -681,6 +681,12 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.102.a
+		hidden_effect = {
+			country_event = {
+				id = USA.10072
+				days = 7
+			}
+		}
 	}	
 }
 country_event = {
@@ -2288,7 +2294,7 @@ country_event = {
 	id = USA.10068 #密西西比河的远征5（劳动骑士团）
 	title = USA.10068.t
 	desc = USA.10068.d
-	picture = GFX_USA_event_10067_pic
+	picture = GFX_USA_event_10068_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -2311,5 +2317,62 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10069.a
+	}	
+}
+
+country_event = {
+	id = USA.10070 #档案和调动（斯特朗故事）
+	title = USA.10070.t
+	desc = USA.10070.d
+	picture = GFX_USA_event_10070_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10070.a
+		hidden_effect = {
+		country_event = {
+			id = USA.10071
+			days = 3
+		    }
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10071 #火车站的送别（斯特朗故事）
+	title = USA.10071.t
+	desc = USA.10071.d
+	picture = GFX_USA_event_10071_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10071.a
+	}	
+}
+
+country_event = {
+	id = USA.10072 #密西西比河的终点1（劳动骑士团）
+	title = USA.10072.t
+	desc = USA.10072.d
+	picture = GFX_USA_event_10072_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10072.a
+		country_event = {
+			id = USA.10073
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10073 #密西西比河的终点2（劳动骑士团）
+	title = USA.10073.t
+	desc = USA.10073.d
+	picture = GFX_USA_event_10073_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10073.a
 	}	
 }
