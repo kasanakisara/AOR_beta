@@ -509,50 +509,6 @@ units= {
                 }
             }
             ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
-                name = "隼級" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  JAP
-                        version_name = "隼級"
-                    }
-                }
-            }
-            ship = {
                 name = "枞級" 
                 definition = destroyer
                 equipment = { 
@@ -560,6 +516,39 @@ units= {
                         amount = 1
                         owner =  JAP
                         version_name = "枞級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
+                    }
+                }
+            }
+            ship = {
+                name = "桃級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "桃級"
                     }
                 }
             }
@@ -855,35 +844,46 @@ units= {
                 }
             }
             ship = {
-                name = "桃級" 
+                name = "隼級" 
                 definition = destroyer
                 equipment = { 
-                    destroyer_2 = {
+                    destroyer_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "桃級"
+                        version_name = "隼級"
                     }
                 }
             }
             ship = {
-                name = "桃級" 
+                name = "隼級" 
                 definition = destroyer
                 equipment = { 
-                    destroyer_2 = {
+                    destroyer_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "桃級"
+                        version_name = "隼級"
                     }
                 }
             }
             ship = {
-                name = "桃級" 
+                name = "隼級" 
                 definition = destroyer
                 equipment = { 
-                    destroyer_2 = {
+                    destroyer_1 = {
                         amount = 1
                         owner =  JAP
-                        version_name = "桃級"
+                        version_name = "隼級"
+                    }
+                }
+            }
+            ship = {
+                name = "隼級" 
+                definition = destroyer
+                equipment = { 
+                    destroyer_1 = {
+                        amount = 1
+                        owner =  JAP
+                        version_name = "隼級"
                     }
                 }
             }
