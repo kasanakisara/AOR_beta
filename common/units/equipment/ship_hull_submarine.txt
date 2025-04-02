@@ -353,6 +353,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					dp_light_battery
+					ship_light_medium_battery
 					ship_medium_battery
 				}
 			}
@@ -371,7 +372,6 @@ equipments = {
 					ship_airplane_launcher
 					ship_secondaries
 					dp_light_battery
-					ship_light_medium_battery
 				}
 			}
 			rear_1_custom_slot = {
