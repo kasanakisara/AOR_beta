@@ -41,6 +41,8 @@ add_equipment_to_stockpile = {
 	producer = USA	
 }
 
+set_convoys = 20
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
