@@ -454,22 +454,7 @@ on_actions = {
 
 				#增加数值
 				set_variable = { SWE_Norweign_Independence_add = 0 }
-				if = {
-					limit = {
-						has_country_flag = SWE_GUI_1 #哈康初代
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
-				}
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = SWE_GUI_2 #紧急状态
-							has_country_flag = SWE_GUI_3 #鲁普雷希特初期
-						}
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 3.5 }
-				}
-
+				add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
 				#民族精神修正
 				if = { 
 					limit = {
@@ -538,13 +523,6 @@ on_actions = {
 					set_variable = { SWE_Norweign_Independence_add = 0.25 }
 				}
 
-				if = {
-					limit = {
-						has_country_flag = SWE_GUI_4 #哈康抑制期
-					}
-					set_variable = { SWE_Norweign_Independence_add = 0 }
-				}
-
 				#数值更新
 				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
 
@@ -576,15 +554,9 @@ on_actions = {
 						check_variable = { SWE_Norweign_Independence_value = 100 }
 						is_ai = no
 					}
-
-					if = {
-						limit = {
-							has_country_flag = SWE_GUI_1
-						}
-						set_variable = { SWE_Norweign_Independence_value = 0 }
-						remove_dynamic_modifiers = SWE_Norweign_Indepedence_modifier
-						country_event = { id = SWE.11 }
-					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+					remove_dynamic_modifiers = SWE_Norweign_Indepedence_modifier
+					country_event = { id = SWE.11 }
 				}
 
 			}

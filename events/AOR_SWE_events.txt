@@ -13,9 +13,6 @@ country_event = {
     option = {
         name = SWE.1.a
         hidden_effect = {
-            clr_country_flag = SWE_GUI_1
-            clr_country_flag = SWE_GUI_4
-            set_country_flag = SWE_GUI_2
             remove_ideas = SWE_Eighty_Seventh_Orders
             remove_ideas = SWE_K_Plan
             remove_ideas = SWE_Left_Threat
@@ -31,6 +28,8 @@ country_event = {
             country_event = { id = AOR_news.90 }
         }
         custom_effect_tooltip = SWE_Hakoon_Death_tt
+        ## 第二阶段完工后删除这段代码 ##
+        custom_effect_tooltip = SWE_Warning_Imcompleted_tt
     }
 }
 
@@ -182,7 +181,6 @@ country_event = {
         }
         custom_effect_tooltip = SWE_11_tt
         clr_country_flag = SWE_Norweign_Independence_flag
-        clr_country_flag = SWE_GUI_1
     }
 }
 
@@ -244,6 +242,15 @@ country_event = {
             remove_ideas = SWE_Further_Reform_Law
             remove_ideas = Let_the_ambitio_sleep
             remove_ideas = Tiger_of_Silence
+            
+            remove_dynamic_modifier = AOR_SWE_Norweign_Independence_dynamic_modifier
+
+            clear_variable = SWE_Norweign_Independence_value
+            clear_variable = SWE_Norweign_Independence_stability_weekly
+            clear_variable = SWE_Norweign_Independence_stability_factor
+            clear_variable = SWE_Norweign_Independence_stability_power_cost
+            clear_variable = SWE_Norweign_Independence_add
+            clear_variable = SWE_Norweign_Independence_main_meter
 
             set_politics = {
                 ruling_party = FRE_democratic
@@ -360,6 +367,13 @@ country_event = {
         set_variable = { SWE_Union_construction_speed = 0.05 }
         set_variable = { SWE_Union_industrial_speed = 0.05 }
         set_variable = { SWE_Union_arms_speed = 0.05 }
+        clear_variable = SWE_Norweign_Independence_value
+        clear_variable = SWE_Norweign_Independence_stability_weekly
+        clear_variable = SWE_Norweign_Independence_stability_factor
+        clear_variable = SWE_Norweign_Independence_stability_power_cost
+        clear_variable = SWE_Norweign_Independence_add
+        clear_variable = SWE_Norweign_Independence_main_meter
+        clr_country_flag = SWE_Norweign_Independence_flag
         custom_effect_tooltip = SWE_Union_GUI_Enable_tt
     }
 }
