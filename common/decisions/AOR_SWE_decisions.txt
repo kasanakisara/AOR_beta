@@ -50,27 +50,17 @@ SWE_Norweign_Independence_decision_categories = {
             custom_trigger_tooltip = {
                 tooltip = SWE_Norweign_Independence_Acting_tt
                 hidden_trigger = {
-                    OR = {
-                        has_country_flag = SWE_GUI_1
-                        has_country_flag = SWE_GUI_2
-                        has_country_flag = SWE_GUI_3
-                    }
                     has_country_flag = SWE_Norweign_Independence_flag
                 }
             }
 		}
 		available = {
-            hidden_trigger = {always = no}
+            hidden_trigger = { always = no }
 		}
 
         visible = {
             custom_trigger_tooltip = {
                 hidden_trigger = {
-                    OR = {
-                        has_country_flag = SWE_GUI_1
-                        has_country_flag = SWE_GUI_2
-                        has_country_flag = SWE_GUI_3
-                    }
                     has_country_flag = SWE_Norweign_Independence_flag
                 }
                 tooltip = SWE_Norweign_Independence_Acting_tt

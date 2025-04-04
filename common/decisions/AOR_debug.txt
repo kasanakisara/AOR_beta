@@ -131,4 +131,22 @@ Hackers_debug = {
             complete_national_focus = AOR_FRA_Shackles
         }
     }
+
+    SWE_Hakoon_Dead_test = {
+        available = {
+            is_debug = yes
+            tag = SWE
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            country_event = { id = SWE.1 }
+        }
+    }
+
 }
