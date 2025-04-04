@@ -43,21 +43,23 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Edmund Allenby"
-	desc = ""
-	picture = "EGY.dds"
+	desc = "Edmund_Allenby_desc"
+	picture = "Allenby.dds"
 	ideology = federalism
 	traits = {
-		#
+		EGY_general_of_old
+		EGY_Commissioner_for_today
 	}
 }
 
 create_country_leader = {
-	name = "Farouk Muhammad Ali"
-	desc = "我是一个小笨蛋"
+	name = "Fuad I"
+	desc = "Fuad_I_desc"
 	picture = "Fuad.dds"
 	ideology = despotism
 	traits = {
 		EGY_The_ruler_of_the_country
+		EGY_Hidden_ambitions
 	}
 }
 

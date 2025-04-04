@@ -27,7 +27,7 @@ country_event = {
             country_event = { id = Haakon.1 days = 5 }
             country_event = { id = AOR_news.90 }
         }
-        custom_effect_tooltip = SWE_Hakoon_Death_tt
+        custom_effect_tooltip = SWE_Haakon_Death_tt
         ## 第二阶段完工后删除这段代码 ##
         custom_effect_tooltip = SWE_Warning_Imcompleted_tt
     }
@@ -533,7 +533,7 @@ country_event = {
             remove_dynamic_modifier = { modifier = AOR_SWE_Trade_dynamic_modifier }
             remove_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
             remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
-            country_event = { id = Hakoon.3 days = 5 }
+            country_event = { id = Haakon.3 days = 5 }
         }
     }
 }
