@@ -132,7 +132,7 @@ Hackers_debug = {
         }
     }
 
-    SWE_Hakoon_Dead_test = {
+    SWE_Haakon_Dead_test = {
         available = {
             is_debug = yes
             tag = SWE
@@ -146,6 +146,9 @@ Hackers_debug = {
         }
         complete_effect = {
             country_event = { id = SWE.1 }
+            country_event = { id = Haakon.1 }
+            country_event = { id = Haakon.2 }
+            country_event = { id = Haakon.3 }
         }
     }
 
