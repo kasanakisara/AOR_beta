@@ -71,6 +71,7 @@ set_technology = {
 	late_ship_hull_heavy_cruiser = 1
 	early_ship_hull_heavy = 1
 	tech_1909_crusier_battleship_hull = 1
+	tech_1919_crusier_battleship_hull = 1
 	tech_1906_ship_hull_heavy = 1
 	tech_1914_ship_hull_heavy = 1
 	early_ship_hull_carrier = 1
@@ -350,21 +351,22 @@ create_equipment_variant = {
 ###海军舰艇设计###
 create_equipment_variant = {
 	name = "宪法级"				
-	type = battle_cruiser_1
+	type = battle_cruiser_2
 	parent_version = 0
 	modules = {
 		fixed_ship_battery_slot = ship_heavy_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_anti_air_slot = ship_anti_air_3
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = heavy_ship_engine_2
 		fixed_ship_armor_slot = ship_armor_bb_1
 		fixed_ship_secondaries_slot = ship_secondaries_2
 		front_1_custom_slot = ship_heavy_battery_2
-		mid_1_custom_slot = ship_secondaries_2
-		mid_2_custom_slot = ship_secondaries_2
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_anti_air_2
+		mid_3_custom_slot = ship_secondaries_2
 		rear_1_custom_slot = ship_heavy_battery_2
-		rear_2_custom_slot = ship_secondaries_1
+		rear_2_custom_slot = ship_secondaries_2
 	}
 }
 create_equipment_variant = {
