@@ -22,6 +22,9 @@ country_event = {
             remove_ideas = SWE_The_Union_Dream
             remove_ideas = SWE_In_Revolution
             remove_ideas = SWE_Visible_Hand
+            remove_ideas = SWE_Reducted_Civil_Servants
+            remove_ideas = SWE_Merged_Parliament
+            remove_ideas = SWE_Universal_Suffrage
             add_ideas = A_lingering_alliance
             clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = Haakon.1 days = 5 }
