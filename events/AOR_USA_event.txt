@@ -2376,3 +2376,15 @@ country_event = {
 		name=USA.10073.a
 	}	
 }
+
+country_event = {
+	id = USA.10074 #战舰与人
+	title = USA.10074.t
+	desc = USA.10074.d
+	picture = GFX_USA_event_10074_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10074.a
+	}	
+}
