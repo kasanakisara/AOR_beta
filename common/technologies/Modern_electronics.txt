@@ -302,6 +302,9 @@ technologies = {
 		enable_equipments = { 
 			Hot_air_balloon_0
 		}
+		enable_subunits = {
+			Hot_air_balloon
+		}
 
 		research_cost = 0.7
 		start_year = 1910
@@ -322,7 +325,7 @@ technologies = {
 		}
 
 		categories = {
-			Hot_air_balloon
+			Hot_air_balloon_tech
 		}
 	}
 
@@ -356,7 +359,7 @@ technologies = {
 		}
 
 		categories = {
-			Hot_air_balloon
+			Hot_air_balloon_tech
 		}
 	}
 
@@ -386,7 +389,7 @@ technologies = {
 		}
 
 		categories = {
-			Hot_air_balloon
+			Hot_air_balloon_tech
 		}
 	}
 

@@ -644,7 +644,7 @@ ideas = {
 		}
 		#旧官僚
 		
-		BAV_dying_bureaucracy= {
+		BAV_dying_bureaucracy = {
 			allowed = {
 				original_tag = BAV
 				always = no
