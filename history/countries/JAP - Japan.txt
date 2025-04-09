@@ -9,14 +9,21 @@ add_ideas = JAP_fanfa
 add_ideas = JAP_misao
 
 set_technology = {
-	infantry_equipment = 1
-	Hot_air_balloon = 1
-	Classic_optics = 1
-	Modern_electronics = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
 	interwar_artillery = 1
-	tech_support = 1
-	interwar_artillery = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	early_armor_car = 1
+	independent_turret = 1
+	tracked_suspension = 1
+	great_war_light_chassis = 1
+	great_war_heavy_chassis = 1
 	Old_howitzers = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
 	machine_equipment_weapons = 1
 	early_ship_hull_submarine = 1
 	tech_1908_ship_hull_submarine = 1
@@ -31,6 +38,14 @@ set_technology = {
 	tech_1906_ship_hull_heavy = 1
 	tech_1914_ship_hull_heavy = 1
 	early_ship_hull_carrier = 1
+ 
+	superior_firepower = 1
+	base_strike = 1
+	 
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
 }
 
 set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
