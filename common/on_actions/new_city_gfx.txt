@@ -68,6 +68,12 @@ on_actions = {
 					province = { id = 6999 }
 				}
 			}
+			606 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_anqing }
+					province = { id = 12061 }
+				}
+			}
 			325 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_kunming }

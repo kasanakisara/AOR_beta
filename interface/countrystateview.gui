@@ -353,6 +353,11 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				iconType = {
+					name = "terrain_anqing_icon"
+					spriteType = "GFX_terrain_chongqing"
+					alwaystransparent = yes
+				}
+				iconType = {
 					name = "terrain_kunming_icon"
 					spriteType = "GFX_terrain_kunming"
 					alwaystransparent = yes
