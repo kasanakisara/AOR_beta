@@ -2386,5 +2386,63 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10074.a
+		custom_effect_tooltip = USA_AUSA.10074
+	}	
+}
+
+country_event = {
+	id = USA.10075 #战舰的命运
+	title = USA.10075.t
+	desc = USA.10075.d
+	picture = GFX_USA_event_10075_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10075.a
+		hidden_effect = {
+			country_event = {
+			    id = USA.10076
+                days = 5
+			}
+		}
+	}	
+	option = {
+		name=USA.10075.b
+		hidden_effect = {
+			country_event = {
+			    id = USA.10077
+                days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = USA.10076 #战舰的命运（北方夺回）
+	title = USA.10076.t
+	desc = USA.10076.d
+	picture = GFX_USA_event_10076_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10076.a
+		USA = {
+            load_oob = AOR_USA_naval_1921
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10077 #战舰的命运（南方夺回）
+	title = USA.10077.t
+	desc = USA.10077.d
+	picture = GFX_USA_event_10077_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10077.a
+		CSA = {
+			load_oob = AOR_CSA_naval_1921
+		}
 	}	
 }
