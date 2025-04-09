@@ -2329,6 +2329,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10070.a
+		custom_effect_tooltip = USA_AUSA.10070
 		hidden_effect = {
 		country_event = {
 			id = USA.10071
@@ -2374,6 +2375,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10073.a
+		custom_effect_tooltip = USA_AUSA.10073
 	}	
 }
 
@@ -2426,6 +2428,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10076.a
+		custom_effect_tooltip = USA_AUSA.10076
 		hidden_effect ={
 		    USA = {
                 load_oob = AOR_USA_naval_1921
@@ -2443,6 +2446,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10077.a
+		custom_effect_tooltip = USA_AUSA.10077
 		hidden_effect = {
 		    CSA = {
 			    load_oob = AOR_CSA_naval_1921
