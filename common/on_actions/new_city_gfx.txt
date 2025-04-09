@@ -32,6 +32,24 @@ on_actions = {
 					province = { id = 1047 }
 				}
 			}
+			878 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_tianjin }
+					province = { id = 4137 }
+				}
+			}
+			886 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_kaifeng }
+					province = { id = 7656 }
+				}
+			}
+			614 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_qingyuan }
+					province = { id = 7109 }
+				}
+			}
 			330 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_kulun }

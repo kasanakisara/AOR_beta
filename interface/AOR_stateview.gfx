@@ -20,6 +20,18 @@ spriteTypes = {
 		textureFile = "gfx/interface/terrains/terrain_panyu.png"
 	}
 	spriteType = {
+		name = "GFX_terrain_tianjin" 
+		textureFile = "gfx/interface/terrains/terrain_tianjin.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_kaifeng" 
+		textureFile = "gfx/interface/terrains/terrain_kaifeng.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_qingyuan" 
+		textureFile = "gfx/interface/terrains/terrain_qingyuan.png"
+	}
+	spriteType = {
 		name = "GFX_terrain_kulun" 
 		textureFile = "gfx/interface/terrains/terrain_kulun.png"
 	}
