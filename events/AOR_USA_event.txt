@@ -2426,8 +2426,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10076.a
-		USA = {
-            load_oob = AOR_USA_naval_1921
+		hidden_effect ={
+		    USA = {
+                load_oob = AOR_USA_naval_1921
+		    }
 		}
 	}	
 }
@@ -2441,8 +2443,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10077.a
-		CSA = {
-			load_oob = AOR_CSA_naval_1921
+		hidden_effect = {
+		    CSA = {
+			    load_oob = AOR_CSA_naval_1921
+		    }
 		}
 	}	
 }
