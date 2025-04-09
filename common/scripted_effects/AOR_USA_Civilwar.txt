@@ -6,6 +6,7 @@ USA_second_civil_war = {
 			country_event = { days = 1 id = USA.10014 }
 			country_event = { days = 3 id = USA.10048 }
 			country_event = { days = 7 id = USA.9 }
+			country_event = { days = 12 id = USA.10075 }
 			}
 			set_victory_points = {
                 province = 6710
