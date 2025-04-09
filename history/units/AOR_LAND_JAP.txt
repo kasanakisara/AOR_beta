@@ -1,6 +1,6 @@
 ﻿####### Division Templates #######
 division_template = { 
-	name = "大日本近卫师团" 
+	name = "大日本近衛師團" 
 	division_names_group = JAP_INF_01 
 	
 	regiments = { 
@@ -22,7 +22,7 @@ division_template = {
 	}
 }
 division_template = { 
-	name = "大日本陆军师团" 
+	name = "大日本陸軍師團" 
 	division_names_group = JAP_INF_01 
 	
 	regiments = { 
@@ -44,150 +44,150 @@ division_template = {
 units = {
 #近卫军
 division= {	
-	name = "宫师团"
+	name = "近卫师团“宫”"
 	location = 1182
-	division_template = "大日本近卫师团"
+	division_template = "大日本近衛師團"
 	start_experience_factor = 0.3
 	start_equipment_factor = 1
 }
 #师团
 	division= {	
-		name = "玉师团"
+		name = "東京第一师团“玉”"
 		location = 1182
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "仙台第二师团"
+		name = "仙臺第二师团"
 		location = 7169
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "名古屋第三师团"
 		location = 7125
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "大阪第四师团"
 		location = 957
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "広岛第五师团"
 		location = 4056
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "熊本第六师团"
 		location = 11925
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "旭川第七师团"
 		location = 12189
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "杉兵团"
+		name = "弘前第八师团“杉”"
 		location = 6928
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "金沢第九师团"
 		location = 4052
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "姫路第十师团"
 		location = 7125
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "善通寺第十一师团"
 		location = 11948
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "剑师团"
+		name = "小仓第十二师团“剑”"
 		location = 4056
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "高田第十三师团"
 		location = 1150
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "宇都宫第十四师团"
 		location = 993
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "豊桥第十五师团"
 		location = 1150
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "京都第十六师团"
 		location = 1136
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "冈山第十七师团"
 		location = 7212
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "久留米第十八师团"
 		location = 7663
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "罗南第十九师团"
 		location = 10000
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "龙山第二十师团"
 		location = 11771
-		division_template = "大日本陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
