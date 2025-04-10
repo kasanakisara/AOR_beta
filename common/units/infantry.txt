@@ -56,10 +56,10 @@ sub_units = {
 		active = yes
 
 		type = {
-			infantry
+			Elite_infantry
 		}
 		
-		group = infantry
+		group = Elite_infantry
 		
 		categories = {
 		    category_machine
