@@ -2454,3 +2454,30 @@ country_event = {
 		}
 	}	
 }
+
+country_event = {
+	id = USA.10078 #矿人1
+	title = USA.10078.t
+	desc = USA.10078.d
+	picture = GFX_USA_event_10078_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10078.a
+		country_event = {
+			id = USA.10079
+		}
+	}	
+}
+
+country_event = {
+	id = USA.10079 #矿人2
+	title = USA.10079.t
+	desc = USA.10079.d
+	picture = GFX_USA_event_10079_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10079.a
+	}	
+}
