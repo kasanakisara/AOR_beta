@@ -26,7 +26,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "International_market_title"
-			position = { x = 45 y = 8 }
+			position = { x = 212 y = 13 }
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "MARKET_LABEL"
