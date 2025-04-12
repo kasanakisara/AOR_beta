@@ -437,6 +437,15 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			hidden_effect = {
+				393 = { 
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			if={
 				limit={
 					has_idea=USA_dazhanzhimo
