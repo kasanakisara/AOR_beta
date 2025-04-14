@@ -364,7 +364,11 @@ equipments = {
 			}
 			rear_2_custom_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_torpedo }
+				allowed_module_categories = { 
+					ship_heavy_battery
+					ship_secondaries 
+					ship_torpedo 
+				}
 			}
 		}
 
@@ -503,6 +507,7 @@ equipments = {
 			rear_2_custom_slot = {
 				required = no
 				allowed_module_categories = { 
+					ship_heavy_battery
 					ship_torpedo
 					ship_secondaries 
 					ship_anti_air
@@ -1027,6 +1032,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_heavy_battery
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
