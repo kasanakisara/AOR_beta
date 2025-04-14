@@ -2481,3 +2481,70 @@ country_event = {
 		name=USA.10079.a
 	}	
 }
+
+country_event = {
+	id = USA.10080 #生而自由
+	title = USA.10080.t
+	desc = USA.10080.d
+	picture = GFX_USA_event_10080_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10080.a
+		hidden_effect = {
+		    country_event = {
+			    id = USA.10081
+			    days = 1
+		    }
+		}
+	}	
+}
+
+country_event = { 
+	id = USA.10081 #生而自由的他们
+	title = USA.10081.t
+	desc = USA.10081.d
+	picture = GFX_USA_event_10081_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		custom_effect_tooltip = USA_AUSA.10081
+		name=USA.10081.a
+	}	
+}
+
+country_event = { 
+	id = USA.10082 #来吾道夫先路
+	title = USA.10082.t
+	desc = USA.10082.d
+	picture = GFX_USA_event_10082_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10082.a
+	}	
+}
+
+country_event = { 
+	id = USA.10083 #大地的针线
+	title = USA.10083.t
+	desc = USA.10083.d
+	picture = GFX_USA_event_10083_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10083.a
+	}	
+}
+
+country_event = { 
+	id = USA.10084 #花花公子扛大梁
+	title = USA.10084.t
+	desc = USA.10084.d
+	picture = GFX_USA_event_10084_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10084.a
+	}	
+}
