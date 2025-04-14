@@ -604,18 +604,15 @@ focus_tree={
 		available={
 			date > 1921.1.30
 		}
-		bypass={
-			date > 1921.1.30
-		}
 		search_filters={
 		}
 		completion_reward={
 			USA={
-				set_politics={
-					ruling_party=FRE_democratic
-				}
 				hidden_effect={
-					load_focus_tree=USA_3
+				    set_politics={
+					ruling_party=FRE_democratic
+					}
+					load_focus_tree = USA_3
 				}
 			}
 		}
