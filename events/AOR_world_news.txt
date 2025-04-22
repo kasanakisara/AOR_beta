@@ -3206,3 +3206,16 @@ news_event = {#日本关东地区发生大地震！
 		name = AOR_news.225.a
 	}
 }
+
+news_event = {#红色德国夺取莱茵兰！
+	id = AOR_news.226
+	title = AOR_news.226.t
+	desc = AOR_news.226.d
+	picture = GFX_AOR_news.226_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.226.a
+	}
+}
