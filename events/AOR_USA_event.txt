@@ -1965,6 +1965,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name=USA.10045.a
+		custom_effect_tooltip = USA_AUSA.10045
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -200

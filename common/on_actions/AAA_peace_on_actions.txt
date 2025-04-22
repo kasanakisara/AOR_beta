@@ -2723,6 +2723,87 @@ on_actions = {
 					transfer_state = 1051
 				}
 			}
+
+        #######巴伐利亚大战反动派#######
+         
+	    	else_if = {
+		    	limit = {
+		    		#萨克森败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = SAX
+			    	}
+		    	}
+			    BAV = {
+				    transfer_state = 65
+				    transfer_state = 842
+			    }
+	    	}
+			else_if = {
+		    	limit = {
+		    		#西里西亚败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = SIL
+			    	}
+		    	}
+			    BAV = {
+				    transfer_state = 66
+				    transfer_state = 67
+					transfer_state = 762
+				    transfer_state = 849
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#波美拉尼亚败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = KSH
+			    	}
+		    	}
+			    BAV = {
+				    transfer_state = 62
+				    transfer_state = 63
+					transfer_state = 870
+				    transfer_state = 871
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#梅克伦堡败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = MEK
+			    	}
+		    	}
+			    BAV = {
+				    transfer_state = 61
+				    transfer_state = 862
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#石勒苏益格败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = NSH
+			    	}
+		    	}
+			    BAV = {
+				    transfer_state = 839
+				}
+	    	}
 		}
 	}
 }

@@ -709,7 +709,7 @@ country_event = {
 }
 
 country_event = {
-	id = BAV.68	#统一
+	id = BAV.68	#统一战争
 	title = BAV.68.t
 	desc = BAV.68.d
 	fire_only_once = yes
