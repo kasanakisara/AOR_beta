@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Carry_forward_the_old_cabinet #提携旧内阁
-		icon = AOR_FRA_Carry_forward_the_old_cabinet
+		icon = GFX_goal_AOR_FRA_Carry_forward_the_old_cabinet
 		relative_position_id = AOR_FRA_Traitor_President
 		prerequisite = { focus =  AOR_FRA_Traitor_President }
 		mutually_exclusive = { focus = AOR_FRA_Out_of_the_old_shadows }
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Out_of_the_old_shadows #走出旧阴影
-		icon = AOR_FRA_Out_of_the_old_shadows
+		icon = GFX_goal_AOR_FRA_Out_of_the_old_shadows
 		relative_position_id = AOR_FRA_Traitor_President
 		prerequisite = { focus =  AOR_FRA_Traitor_President }
 		mutually_exclusive = { focus = AOR_FRA_Carry_forward_the_old_cabinet }
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Shackles #枷锁缠身
-		icon = AOR_FRA_Shackles
+		icon = GFX_goal_AOR_FRA_Shackles
 		relative_position_id = AOR_FRA_Traitor_President
 		prerequisite = {
 			focus = AOR_FRA_Carry_forward_the_old_cabinet 
@@ -110,7 +110,7 @@ focus_tree = {
 	###################################################市场和社会（经济线）################################
 	focus = {
 		id = AOR_FRA_market_and_society #市场和社会
-		icon = AOR_FRA_market_and_society
+		icon = GFX_goal_AOR_FRA_market_and_society
 		relative_position_id = AOR_FRA_Shackles
 		prerequisite = { focus = AOR_FRA_Shackles }
 		
@@ -139,7 +139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_new_ideas #新思路，新想法
-		icon = AOR_FRA_new_ideas
+		icon = GFX_goal_AOR_FRA_new_ideas
 		relative_position_id = AOR_FRA_market_and_society
 		prerequisite = { focus = AOR_FRA_market_and_society }
 		
@@ -173,7 +173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Gold_is_restricted #限购黄金
-		icon = AOR_FRA_Gold_is_restricted
+		icon = GFX_goal_AOR_FRA_Gold_is_restricted
 		relative_position_id = AOR_FRA_new_ideas
 		prerequisite = { focus = AOR_FRA_new_ideas }
 		
