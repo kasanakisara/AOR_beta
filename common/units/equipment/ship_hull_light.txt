@@ -215,6 +215,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_torpedo
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -526,6 +527,7 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_torpedo
 					ship_depth_charge
 					ship_anti_air
 				}
@@ -533,6 +535,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_torpedo
 					ship_mine_warfare
 					ship_mine_layer
 					ship_depth_charge
