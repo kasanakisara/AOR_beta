@@ -3,7 +3,7 @@ units= {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "RN-皇家海军"			
+		name = "RN-皇家海军欧洲舰队"			
 		naval_base = 11064
         
 		task_force = {				
@@ -3617,46 +3617,194 @@ units= {
                 }
             }
         }
+    }
+
+
+        fleet = {
+            name = "RN-皇家海军殖民地舰队"			
+            naval_base = 12589
+
+            task_force = {				
+                name = "RN北美和西印度舰队"			
+                location = 10254
+                ship = {
+                    name = "E级" 
+                    definition =submarine
+                    equipment = { 
+                        submarine_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "K级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "E级" 
+                    definition =submarine
+                    equipment = { 
+                        submarine_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "K级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "E级" 
+                    definition =submarine
+                    equipment = { 
+                        submarine_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "K级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "江河级" 
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_1 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "江河级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "部落级" 
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_1 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "部落级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "部落级" 
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_1 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "部落级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "部落级" 
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_1 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "部落级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "S级" 
+                    
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "S级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "S级" 
+                    
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "S级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "S级" 
+                    
+                    definition = destroyer
+                    equipment = { 
+                        destroyer_2 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "S级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "D级" 
+                    
+                    definition = light_cruiser
+                    equipment = { 
+                        light_cruiser_3 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "D级"
+                        }
+                    }
+                }
+                ship = {
+                    name = "D级" 
+                    
+                    definition = light_cruiser
+                    equipment = { 
+                        light_cruiser_3 = {
+                            amount = 1
+                            owner =  ENG
+                            version_name = "D级"
+                        }
+                    }
+                }
+            }
 
 
 
         task_force = {				
-			name = "RN东印度舰队"			
-			location = 12299
+			name = "RN非洲舰队"			
+			location = 12589
             ship = {
-                name = "H级" 
+                name = "E级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "H级"
+                        version_name = "K级"
                     }
                 }
             }
             ship = {
-                name = "H级" 
+                name = "E级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "H级"
+                        version_name = "K级"
                     }
                 }
             }
             ship = {
-                name = "H级" 
+                name = "E级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "H级"
+                        version_name = "K级"
                     }
                 }
             }
-			ship = {
+            ship = {
                 name = "江河级" 
                 definition = destroyer
                 equipment = { 
@@ -3690,50 +3838,13 @@ units= {
                 }
             }
             ship = {
-                name = "R级" 
-                
+                name = "部落级" 
                 definition = destroyer
                 equipment = { 
-                    destroyer_2 = {
+                    destroyer_1 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "R级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
+                        version_name = "部落级"
                     }
                 }
             }
@@ -3758,186 +3869,6 @@ units= {
                         amount = 1
                         owner =  ENG
                         version_name = "日蚀级"
-                    }
-                }
-            }
-            ship = {
-                name = "伯明翰级" 
-                
-                definition = light_cruiser
-                equipment = { 
-                    light_cruiser_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "伯明翰级"
-                    }
-                }
-            }
-            ship = {
-                name = "伯明翰级" 
-                
-                definition = light_cruiser
-                equipment = { 
-                    light_cruiser_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "伯明翰级"
-                    }
-                }
-            }
-            ship = {
-                name = "马来亚号" 
-            
-                definition = battleship
-                equipment = { 
-                    battleship_3 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "伊丽莎白女王级"
-                    }
-                }
-            }
-        }
-
-
-
-        task_force = {				
-			name = "RN北美和西印度舰队"			
-			location = 10254
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "江河级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "江河级"
-                    }
-                }
-            }
-            ship = {
-                name = "部落级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "部落级"
-                    }
-                }
-            }
-            ship = {
-                name = "部落级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "部落级"
-                    }
-                }
-            }
-            ship = {
-                name = "部落级" 
-                definition = destroyer
-                equipment = { 
-                    destroyer_1 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "部落级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
-                    }
-                }
-            }
-            ship = {
-                name = "S级" 
-                
-                definition = destroyer
-                equipment = { 
-                    destroyer_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "S级"
-                    }
-                }
-            }
-            ship = {
-                name = "D级" 
-                
-                definition = light_cruiser
-                equipment = { 
-                    light_cruiser_3 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "D级"
-                    }
-                }
-            }
-            ship = {
-                name = "D级" 
-                
-                definition = light_cruiser
-                equipment = { 
-                    light_cruiser_3 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "D级"
                     }
                 }
             }
@@ -4122,46 +4053,50 @@ units= {
                 }
             }
         }
+    }
 
-        
+
+        fleet = {
+            name = "RN-皇家海军远东舰队"			
+            naval_base = 12299
 
         task_force = {				
-			name = "RN非洲舰队"			
-			location = 12589
+			name = "RN东印度舰队"			
+			location = 12299
             ship = {
-                name = "E级" 
+                name = "H级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "K级"
+                        version_name = "H级"
                     }
                 }
             }
             ship = {
-                name = "E级" 
+                name = "H级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "K级"
+                        version_name = "H级"
                     }
                 }
             }
             ship = {
-                name = "E级" 
+                name = "H级" 
                 definition =submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "K级"
+                        version_name = "H级"
                     }
                 }
             }
-            ship = {
+			ship = {
                 name = "江河级" 
                 definition = destroyer
                 equipment = { 
@@ -4195,13 +4130,50 @@ units= {
                 }
             }
             ship = {
-                name = "部落级" 
+                name = "R级" 
+                
                 definition = destroyer
                 equipment = { 
-                    destroyer_1 = {
+                    destroyer_2 = {
                         amount = 1
                         owner =  ENG
-                        version_name = "部落级"
+                        version_name = "R级"
+                    }
+                }
+            }
+            ship = {
+                name = "S级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "S级"
+                    }
+                }
+            }
+            ship = {
+                name = "S级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "S级"
+                    }
+                }
+            }
+            ship = {
+                name = "S级" 
+                
+                definition = destroyer
+                equipment = { 
+                    destroyer_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "S级"
                     }
                 }
             }
@@ -4226,6 +4198,42 @@ units= {
                         amount = 1
                         owner =  ENG
                         version_name = "日蚀级"
+                    }
+                }
+            }
+            ship = {
+                name = "伯明翰级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    light_cruiser_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "伯明翰级"
+                    }
+                }
+            }
+            ship = {
+                name = "伯明翰级" 
+                
+                definition = light_cruiser
+                equipment = { 
+                    light_cruiser_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "伯明翰级"
+                    }
+                }
+            }
+            ship = {
+                name = "马来亚号" 
+            
+                definition = battleship
+                equipment = { 
+                    battleship_3 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "伊丽莎白女王级"
                     }
                 }
             }
