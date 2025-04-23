@@ -424,46 +424,57 @@ units= {
 			name = "FN本土潜艇部队"			
 			location = 3552
             ship = {
-                name = "绿宝石级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "绿宝石级"
+                        version_name = "普劳东级"
                     }
                 }
             }
             ship = {
-                name = "绿宝石级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "绿宝石级"
+                        version_name = "普劳东级"
                     }
                 }
             }
             ship = {
-                name = "绿宝石级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "绿宝石级"
+                        version_name = "普劳东级"
                     }
                 }
             }
             ship = {
-                name = "绿宝石级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "绿宝石级"
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "H级"
                     }
                 }
             }
@@ -479,57 +490,134 @@ units= {
                 }
             }
             ship = {
-                name = "H级" 
+                name = "阿基米德级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "H级"
+                        version_name = "阿基米德级"
+                    }
+                }
+            }
+            ship = {
+                name = "阿基米德级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "阿基米德级"
+                    }
+                }
+            }
+            ship = {
+                name = "阿基米德级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "阿基米德级"
+                    }
+                }
+            }
+            ship = {
+                name = "阿基米德级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "阿基米德级"
                     }
                 }
             }
 			ship = {
-                name = "海妖级" 
+                name = "布里奥辛级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "布里奥辛级"
                     }
                 }
             }
             ship = {
-                name = "海妖级" 
+                name = "布里奥辛级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "布里奥辛级"
                     }
                 }
             }
             ship = {
-                name = "海妖级" 
+                name = "布里奥辛级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "布里奥辛级"
                     }
                 }
             }
             ship = {
-                name = "海妖级" 
+                name = "布里奥辛级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
                     }
                 }
             }
@@ -735,25 +823,113 @@ units= {
                     }
                 }
             }
-			ship = {
-                name = "海妖级" 
+            ship = {
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "普劳东级"
                     }
                 }
             }
             ship = {
-                name = "海妖级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+			ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
                     }
                 }
             }
@@ -943,6 +1119,77 @@ units= {
                         amount = 1
                         owner =  FRA
                         version_name = "布坎尼尔级"
+                    }
+                }
+            }
+        }
+
+        task_force = {				
+			name = "FN北大西洋潜艇部队"			
+			location = 373
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
                     }
                 }
             }
@@ -1310,25 +1557,69 @@ units= {
                     }
                 }
             }
-			ship = {
-                name = "海妖级" 
+            ship = {
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "普劳东级"
                     }
                 }
             }
             ship = {
-                name = "海妖级" 
+                name = "普劳东级" 
                 definition = submarine
                 equipment = { 
                     submarine_2 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "海妖级"
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+            ship = {
+                name = "普劳东级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "普劳东级"
+                    }
+                }
+            }
+			ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
+                    }
+                }
+            }
+            ship = {
+                name = "布里奥辛级" 
+                definition = submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "布里奥辛级"
                     }
                 }
             }
