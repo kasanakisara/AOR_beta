@@ -1,10 +1,10 @@
 focus_tree = {
-	id = FocusTree_0
+	id = AOR_SWE_focus_tree_4
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = 
+			tag = SWE
 		}
 	}
 	default = no
@@ -14,6 +14,10 @@ focus_tree = {
 		cost = 0.00
 		x = 23
 		y = 0
+
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
