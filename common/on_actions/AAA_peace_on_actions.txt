@@ -2727,6 +2727,37 @@ on_actions = {
         #######巴伐利亚大战反动派#######
          
 			else_if = {
+					limit = {
+					#德国北方败
+					FROM = {
+						original_tag = BAV
+					}
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				BAV = {
+					if = {
+						limit ={
+							GER = {
+								controls_state = 65
+							}
+						}
+						BAV = {
+							add_state_core = 65
+						}
+					}
+					annex_country = {
+						target =GER
+					}
+					transfer_state = 59
+					transfer_state = 64
+					transfer_state = 68
+					transfer_state = 840
+					transfer_state = 866
+				}
+			}
+			else_if = {
 				limit = {
 					#法兰克福败
 					FROM = {
