@@ -2726,6 +2726,25 @@ on_actions = {
 
         #######巴伐利亚大战反动派#######
          
+			else_if = {
+				limit = {
+					#法兰克福败
+					FROM = {
+						original_tag = BAV
+					}
+					ROOT = {
+						original_tag = NAU
+					}
+				}
+				BAV = {
+					transfer_state = 54
+					transfer_state = 55
+					transfer_state = 60
+					transfer_state = 857
+					transfer_state = 856
+					transfer_state = 858
+				}
+			}
 	    	else_if = {
 		    	limit = {
 		    		#萨克森败
