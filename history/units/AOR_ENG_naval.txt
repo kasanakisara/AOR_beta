@@ -3,485 +3,12 @@ units= {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "RN-皇家海军欧洲舰队"			
+		name = "RN-皇家海军大舰队"			
 		naval_base = 11064
         
 		task_force = {				
-			name = "RN大舰队"			
+			name = "RN北海主力舰队"			
 			location = 11064
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "K级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
 			ship = {
                 name = "江河级" 
                 definition = destroyer
@@ -2043,264 +1570,492 @@ units= {
             }
         }
 
-
-
         task_force = {				
-			name = "RN本土-大西洋舰队"			
+			name = "RN北海潜艇舰队"			
+			location = 6300
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "K级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+        }
+    }
+
+
+	fleet = {
+		name = "RN-皇家海军本土-大西洋舰队"			
+		naval_base = 11374
+        task_force = {				
+			name = "RN英吉利海峡主力舰队"			
 			location = 11374
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
             ship = {
                 name = "江河级" 
                 definition = destroyer
@@ -2981,231 +2736,273 @@ units= {
             }
         }
 
-
-
         task_force = {				
-			name = "RN地中海舰队"			
+			name = "RN大西洋潜艇舰队"			
+			location = 540
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+        }
+    }
+
+
+
+	fleet = {
+		name = "RN-皇家海军地中海舰队"			
+		naval_base = 4135
+        task_force = {				
+			name = "RN直布罗陀主力舰队"			
 			location = 4135
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "E级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "K级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
-            ship = {
-                name = "H级" 
-                definition =submarine
-                equipment = { 
-                    submarine_2 = {
-                        amount = 1
-                        owner =  ENG
-                        version_name = "H级"
-                    }
-                }
-            }
 			ship = {
                 name = "江河级" 
                 definition = destroyer
@@ -3617,7 +3414,233 @@ units= {
                 }
             }
         }
+
+        task_force = {				
+			name = "RN地中海潜艇舰队"			
+			location = 12003
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "E级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "K级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+            ship = {
+                name = "H级" 
+                definition =submarine
+                equipment = { 
+                    submarine_2 = {
+                        amount = 1
+                        owner =  ENG
+                        version_name = "H级"
+                    }
+                }
+            }
+        }
     }
+
 
 
         fleet = {
