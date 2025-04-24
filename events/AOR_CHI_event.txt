@@ -1789,7 +1789,7 @@ country_event = {
 			}
 	
 			create_country_leader = {
-				name = "The 13th Dalai Lama"
+				name = "The_13th_Dalai_Lama"
 				desc = ""
 				picture = "gfx/leaders/CHI/The_13th_Dalai_Lama.png"
 				expire = "1965.1.1"
