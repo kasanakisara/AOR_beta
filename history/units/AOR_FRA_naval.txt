@@ -333,18 +333,6 @@ units= {
                 }
             }
             ship = {
-                name = "克莱贝尔号" 
-                
-                definition = heavy_cruiser
-                equipment = { 
-                    heavy_cruiser_1 = {
-                        amount = 1
-                        owner =  FRA
-                        version_name = "杜普莱克斯级"
-                    }
-                }
-            }
-            ship = {
                 name = "德赛号" 
                 
                 definition = heavy_cruiser
@@ -353,18 +341,6 @@ units= {
                         amount = 1
                         owner =  FRA
                         version_name = "杜普莱克斯级"
-                    }
-                }
-            }
-            ship = {
-                name = "朱尔·费里号" 
-                
-                definition = heavy_cruiser
-                equipment = { 
-                    heavy_cruiser_1 = {
-                        amount = 1
-                        owner =  FRA
-                        version_name = "朱尔·费里级"
                     }
                 }
             }
@@ -389,6 +365,18 @@ units= {
                         amount = 1
                         owner =  FRA
                         version_name = "格鲁塞级"
+                    }
+                }
+            }
+            ship = {
+                name = "朱尔·费里号" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    heavy_cruiser_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "莱昂·甘必大级"
                     }
                 }
             }
@@ -1066,6 +1054,18 @@ units= {
 			name = "FN加勒比部队"			
 			location = 12885
             ship = {
+                name = "正义号" 
+                
+                definition = battleship
+                equipment = { 
+                    battleship_1 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "自由级"
+                    }
+                }
+            }
+            ship = {
                 name = "布兰科级" 
                 definition = destroyer
                 equipment = { 
@@ -1298,14 +1298,14 @@ units= {
                 }
             }
             ship = {
-                name = "苏弗朗号" 
+                name = "真理号" 
                 
                 definition = battleship
                 equipment = { 
                     battleship_1 = {
                         amount = 1
                         owner =  FRA
-                        version_name = "苏弗朗级"
+                        version_name = "自由级"
                     }
                 }
             }
@@ -1446,18 +1446,6 @@ units= {
                 }
             }
             ship = {
-                name = "维克多·雨果号" 
-                
-                definition = heavy_cruiser
-                equipment = { 
-                    heavy_cruiser_1 = {
-                        amount = 1
-                        owner =  FRA
-                        version_name = "朱尔·费里级"
-                    }
-                }
-            }
-            ship = {
                 name = "格鲁塞号" 
                 
                 definition = heavy_cruiser
@@ -1478,6 +1466,18 @@ units= {
                         amount = 1
                         owner =  FRA
                         version_name = "格鲁塞级"
+                    }
+                }
+            }
+            ship = {
+                name = "维克多·雨果号" 
+                
+                definition = heavy_cruiser
+                equipment = { 
+                    heavy_cruiser_2 = {
+                        amount = 1
+                        owner =  FRA
+                        version_name = "莱昂·甘必大级"
                     }
                 }
             }

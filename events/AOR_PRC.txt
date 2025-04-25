@@ -109,7 +109,10 @@ country_event = {#红军南下云贵
             load_oob = "AOR_LAND_CHI_chuanjun_M_GONG"
             add_ideas = CHI_gemingtongyizhixi
 			}
-	    }
+        UPC = {
+            add_ideas = CHI_gemingtongyizhixi
+        }
+	}
     option = {
 		name = PRC.3.b
 		news_event = {id=AOR_news.148}
@@ -121,6 +124,9 @@ country_event = {#红军南下云贵
             add_ideas = CHI_gemingtongyizhixi
 			}
 	    }
+        UPC = {
+            add_ideas = CHI_gemingtongyizhixi
+        }
     }
 
 country_event = {#红军统一云贵
