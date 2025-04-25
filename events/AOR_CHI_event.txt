@@ -922,6 +922,20 @@ country_event = {
 		hidden_effect = {
 		news_event = {id=AOR_news.102}
 		}
+		UPC = {
+			if = {
+				limit ={
+					GUZ = {
+						controls_state = 907
+					}
+				}
+				UPC = {
+					annex_country = { 
+						target = GUZ
+						transfer_troops = yes }
+				}
+			}
+		}
 		KMT = {
 			add_ideas = CHI_gemingtongyizhixi
 		}

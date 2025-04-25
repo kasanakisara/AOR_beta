@@ -834,6 +834,7 @@ news_event = { #京汉铁路工人大罢工被镇压
 		name = AOR_news.53.a
 	}
 }
+
 news_event = { #捷克经济崩溃！！！
 	id = AOR_news.310
 	title = AOR_news.310.t
@@ -846,6 +847,7 @@ news_event = { #捷克经济崩溃！！！
 		name = AOR_news.310.a
 	}
 }
+
 news_event = { #托马斯！！！
 	id = AOR_news.311
 	title = AOR_news.311.t
@@ -858,6 +860,7 @@ news_event = { #托马斯！！！
 		name = AOR_news.311.a
 	}
 }
+
 news_event = { #血洗议会！！！
 	id = AOR_news.312
 	title = AOR_news.312.t
@@ -870,6 +873,7 @@ news_event = { #血洗议会！！！
 		name = AOR_news.312.a
 	}
 }
+
 news_event = { #工人革命！！！
 	id = AOR_news.314
 	title = AOR_news.314.t
@@ -882,6 +886,7 @@ news_event = { #工人革命！！！
 		name = AOR_news.314.a
 	}
 }
+
 news_event = { #捷克经济继续崩！！！！
 	id = AOR_news.313
 	title = AOR_news.313.t
@@ -894,6 +899,7 @@ news_event = { #捷克经济继续崩！！！！
 		name = AOR_news.313.a
 	}
 }
+
 news_event = { #卷土重来！！！
 	id = AOR_news.347
 	title = AOR_news.347.t
@@ -906,6 +912,7 @@ news_event = { #卷土重来！！！
 		name = AOR_news.347.a
 	}
 }
+
 news_event = { #大南斯拉夫成立！！！
 	id = AOR_news.348
 	title = AOR_news.348.t
@@ -918,6 +925,7 @@ news_event = { #大南斯拉夫成立！！！
 		name = AOR_news.348.a
 	}
 }
+
 news_event = { #东罗马赢得巴尔干战争！！！
 	id = AOR_news.349
 	title = AOR_news.349.t
@@ -930,6 +938,7 @@ news_event = { #东罗马赢得巴尔干战争！！！
 		name = AOR_news.349.a
 	}
 }
+
 news_event = { #东罗马输掉巴尔干战争！！！
 	id = AOR_news.350
 	title = AOR_news.350.t
@@ -942,6 +951,7 @@ news_event = { #东罗马输掉巴尔干战争！！！
 		name = AOR_news.350.a
 	}
 }
+
 news_event = { #共和国希腊赢得巴尔干战争！！！
 	id = AOR_news.351
 	title = AOR_news.351.t
@@ -954,6 +964,7 @@ news_event = { #共和国希腊赢得巴尔干战争！！！
 		name = AOR_news.351.a
 	}
 }
+
 news_event = { #共和国希腊输掉巴尔干战争！！！
 	id = AOR_news.352
 	title = AOR_news.352.t
@@ -966,6 +977,7 @@ news_event = { #共和国希腊输掉巴尔干战争！！！
 		name = AOR_news.352.a
 	}
 }
+
 news_event = { #法老陵墓！！！
 	id = AOR_news.353
 	title = AOR_news.353.t
@@ -978,6 +990,7 @@ news_event = { #法老陵墓！！！
 		name = AOR_news.353.a
 	}
 }
+
 news_event = { #图坦卡蒙的奇迹！！！
 	id = AOR_news.354
 	title = AOR_news.354.t
