@@ -2747,6 +2747,46 @@ on_actions = {
 							add_state_core = 65
 						}
 					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 66
+							}
+						}
+						BAV = {
+							add_state_core = 66
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 67
+							}
+						}
+						BAV = {
+							add_state_core = 67
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 762
+							}
+						}
+						BAV = {
+							add_state_core = 762
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 849
+							}
+						}
+						BAV = {
+							add_state_core = 849
+						}
+					}
 					annex_country = {
 						target =GER
 					}
@@ -2903,6 +2943,46 @@ on_actions = {
 						}
 						NAU = {
 							add_state_core = 65
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 66
+							}
+						}
+						NAU = {
+							add_state_core = 66
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 67
+							}
+						}
+						NAU = {
+							add_state_core = 67
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 762
+							}
+						}
+						NAU = {
+							add_state_core = 762
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 849
+							}
+						}
+						NAU = {
+							add_state_core = 849
 						}
 					}
 					annex_country = {
