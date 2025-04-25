@@ -905,9 +905,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = MON
+					}
 				}
 			}
 			else_if = {
@@ -1003,9 +1003,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = NAN
+					}
 				}
 			}
 			else_if = {
@@ -1162,9 +1162,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = MON
+					}
 				}
 			}
 			else_if = {
@@ -1259,9 +1259,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = NAN
+					}
 				}
 			}
 			else_if = {
