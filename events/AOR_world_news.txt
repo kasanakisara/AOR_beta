@@ -3232,3 +3232,158 @@ news_event = {#红色德国夺取莱茵兰！
 		name = AOR_news.226.a
 	}
 }
+
+news_event = {  #匈牙利进攻三一共和国
+	id = AOR_news.227
+	title = AOR_news.227.t
+	desc = AOR_news.227.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.227.a
+	}
+}
+
+news_event = {  #克罗地亚傀儡政府的成立
+	id = AOR_news.228
+	title = AOR_news.228.t
+	desc = AOR_news.228.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.228.a
+	}
+}
+
+news_event = {  #匈牙利宣布与克罗地亚组成联邦
+	id = AOR_news.229
+	title = AOR_news.229.t
+	desc = AOR_news.229.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.229.a
+		trigger = {
+			tag = HUN
+		}
+	}
+
+	option = {
+		name = AOR_news.229.b
+		trigger = {
+			NOT = {
+				tag = HUN
+			}
+		}
+	}
+}
+
+news_event = {  #蒂撒连任，匈牙利督政府成立
+	id = AOR_news.230
+	title = AOR_news.230.t
+	desc = AOR_news.230.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.230.a
+	}
+}
+
+news_event = {  #卡罗伊胜出，匈牙利资产阶级获胜
+	id = AOR_news.231
+	title = AOR_news.231.t
+	desc = AOR_news.231.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.231.a
+	}
+}
+
+news_event = {  #共博士胜出，马扎尔民族共和国
+	id = AOR_news.232
+	title = AOR_news.232.t
+	desc = AOR_news.232.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.232.a
+	}
+}
+
+news_event = {  #贝伦胜出，匈牙利民主共和国
+	id = AOR_news.233
+	title = AOR_news.233.t
+	desc = AOR_news.233.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.233.a
+	}
+}
+
+news_event = {  #萨博胜出，匈牙利农民共和国
+	id = AOR_news.234
+	title = AOR_news.234.t
+	desc = AOR_news.234.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.234.a
+	}
+}
+
+news_event = {  #匈牙利介入达尔马提亚问题
+	id = AOR_news.235
+	title = AOR_news.235.t
+	desc = AOR_news.235.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.235.a
+	}
+}
+
+news_event = {  #匈克和解
+	id = AOR_news.236
+	title = AOR_news.236.t
+	desc = AOR_news.236.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.236.a
+	}
+}
+
+news_event = {  #蒂撒伯爵宣布举行首次大选
+	id = AOR_news.237
+	title = AOR_news.237.t
+	desc = AOR_news.237.d
+	picture = GFX_AOR_news.15_pic
+	is_triggered_only = yes 
+	major = yes
+
+	option = {
+		name = AOR_news.237.a
+	}
+}

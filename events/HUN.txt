@@ -10,7 +10,9 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
-		HUN = {has_ideology = Fascism}
+		HUN = {
+			has_government = Fascism
+		}
 	}
 	mean_time_to_happen = {
 		days = 30
@@ -18,7 +20,7 @@ country_event = {
     #是时候恢复马扎尔人的统治了	
 	option = {
 		name = HUN.1.a
-		news_event = {id = HUN_news.ATKCRO}
+		news_event = {id = AOR_news.227}
 		HUN = {
 			declare_war_on = {
 				target = CRO
@@ -26,19 +28,6 @@ country_event = {
 			}
 			add_manpower = 50000
 		}
-	}
-}
-
-news_event = {  #匈牙利进攻三一共和国
-	id = HUN_news.ATKCRO
-	title = HUN_news.ATKCRO.t
-	desc = HUN_news.ATKCRO.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news.ATKCRO.a
 	}
 }
 
@@ -51,15 +40,15 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
-		has_ideology = SOC_democratic
+		has_government = SOC_democratic
 	}
 	mean_time_to_happen = {
 		days = 30
 	}
     #那就这样吧  	
 	option = {
-		name = HUN_news.PUPCRO.a
-		news_event = {id = HUN_news.PUPCRO}
+		name = HUN.2.a
+		news_event = {id = AOR_news.228}
 		HUN = {
 			set_autonomy = {
 				target = CRO
@@ -78,19 +67,6 @@ country_event = {
 }
 }
 
-news_event = {  #克罗地亚傀儡政府的成立
-	id = HUN_news.PUPCRO
-	title = HUN_news.PUPCRO.t
-	desc = HUN_news.PUPCRO.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news.PUPCRO.a
-	}
-}
-
 country_event = {
 	id = HUN.3 #匈牙利与三一共和国组成联邦
 	title = HUN.3.t
@@ -100,50 +76,26 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
-		has_ideology = FRE_democratic
+		has_government = FRE_democratic
 	}
 	mean_time_to_happen = {
 		days = 30
 	}
     #那就这样吧  	
 	option = {
-		name = HUN_news.ANXCRO.a
+		name = HUN.3.a
+		news_event = {id = AOR_news.229}
 		HUN = {
 			annex_country = {
 				target = CRO
 				transfer_troops = yes
 			}
-			add_core_of = 966
-			add_core_of = 109
-			add_core_of = 103
+			add_state_core = 966
+			add_state_core = 109
+			add_state_core = 103
 			set_cosmetic_tag = HUN_CRO
 		}
-}
-}
-
-news_event = {  #匈牙利宣布与克罗地亚组成联邦
-	id = HUN_news.ANXCRO
-	title = HUN_news.ANXCRO.t
-	desc = HUN_news.ANXCRO.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news.ANXCRO.a
-		trigger = {
-			tag = HUN
-		}
-	}
-
-	option = {
-		name = HUN_news.ANXCRO.b
-		trigger = {
-			NOT = {
-				tag = HUN
-			}
-		}
-	}
+    }
 }
 
 country_event = {
@@ -155,15 +107,16 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
-		has_ideology = Aboslutism
+		has_government = Aboslutism
 	}
 	mean_time_to_happen = {
 		days = 30
 	}
     #那就这样吧  	
 	option = {
-		name = HUN_news.OKCRO.a
+		name = HUN.4.a
 		HUN = {
+			news_event = {id = AOR_news.236 }
 			set_autonomy = {
 				target = CRO
 				autonomous_state = autonomy_dominion
@@ -182,35 +135,23 @@ country_event = {
 	trigger = {
 		has_global_flag = Danube_is_died
 		tag  = HUN
-		has_ideology = AGR_democratic
+		has_government = AGR_democratic
 	}
 	mean_time_to_happen = {
 		days = 30
 	}
     #那就这样吧  	
 	option = {
-		name = HUN_news.AGRCRO.a
+		name = HUN.5.a
 		HUN = {
+			news_event = {id = AOR_news.236 }
 			set_autonomy = {
 				target = CRO
 				autonomous_state = autonomy_dominion
 				freedom_level = 0.2
 			}
 		}
-}
-}
-
-news_event = {  #匈克和解
-	id = HUN_news.AGRCRO
-	title = HUN_news.AGRCRO.t
-	desc = HUN_news.AGRCRO.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news.AGRCRO.a
-	}
+    }
 }
 
 #########巴尔干战争#########
@@ -260,21 +201,9 @@ country_event = {   #我已不再年轻
 		name = HUN.7.a
 		add_political_power = 1
 		news_event = {
-			id = HUN_news.2
+			id = AOR_news.237
 		}
 		country_event = {id = HUN.5}
-}
-}
-news_event = {  #蒂撒伯爵宣布举行首次大选
-	id = HUN_news.2
-	title = HUN_news.2.t
-	desc = HUN_news.2.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news.2.a
 	}
 }
 
@@ -296,7 +225,7 @@ country_event = {   #我已不再年轻
 			ideology = Absolutism
 			popularity = 20
 		}
-		news_event = {id = HUN_news_tisza}
+		news_event = {id = AOR_news.230}
 		set_cosmetic_tag = HUN_tisza
 }
 	    option = { 
@@ -312,7 +241,7 @@ country_event = {   #我已不再年轻
 			ideology = SOC_democratic
 			popularity = 20
 		}
-		news_event = {id = HUN_news_karoly}
+		news_event = {id = AOR_news.231}
 }
 	
 	option = { 
@@ -328,7 +257,7 @@ country_event = {   #我已不再年轻
 			ideology = Fascism
 			popularity = 20
 		}
-		news_event = {id = HUN_news_gombos}
+		news_event = {id = AOR_news.232}
 }
 	option = { 
 		name = HUN.bethlan.a #贝瑟伦赢得大选
@@ -343,7 +272,7 @@ country_event = {   #我已不再年轻
 			ideology = FRE_democratic
 			popularity = 20
 		}
-		news_event = {id = HUN_news_bethlan}
+		news_event = {id = AOR_news.233}
 }
 
 	option = { 
@@ -359,73 +288,8 @@ country_event = {   #我已不再年轻
 			ideology = AGR_socialism
 			popularity = 20
 		}
-		news_event = {id = HUN_news_szabo}
-}
-
-}
-news_event = {  #蒂撒连任，匈牙利督政府成立
-	id = HUN_news.tisza
-	title = HUN_news_tisza.t
-	desc = HUN_news_tisza.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_tisza.a
-	}
-}
-
-news_event = {  #卡罗伊胜出，匈牙利资产阶级获胜
-	id = HUN_news.karoly
-	title = HUN_news_karoly.t
-	desc = HUN_news_karoly.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_karoly.a
-	}
-}
-
-news_event = {  #共博士胜出，马扎尔民族共和国
-	id = HUN_news.gombos
-	title = HUN_news_gombos.t
-	desc = HUN_news_gombos.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_gombos.a
-	}
-}
-
-news_event = {  #被色轮胜出，匈牙利民主共和国
-	id = HUN_news.bethlan
-	title = HUN_news_bethlan.t
-	desc = HUN_news_bethlan.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_bethlan.a
-	}
-}
-
-news_event = {  #萨博胜出，匈牙利农民共和国
-	id = HUN_news.szabo
-	title = HUN_news_szabo.t
-	desc = HUN_news_szabo.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_szabo.a
-	}
+		news_event = {id = AOR_news.234}
+    }
 }
 
 country_event = {
@@ -441,23 +305,12 @@ country_event = {
     #我们必须保护达尔马提亚
 	option = {
 		name = HUN.DAL.a
-				DAL = add_manpower = 5000
+				DAL = {
+				add_manpower = 5000
 				add_war_support = 0.1
 				add_manpower = -5000
 				give_guarantee = DAL
-				news_event = {id = HUN_news_DAL}
-	}
-}
-
-news_event = {  #匈牙利介入达尔马提亚问题
-	id = HUN_news_DAL
-	title = HUN_news_DAL.t
-	desc = HUN_news_DAL.d
-	picture = GFX_AOR_news.15_pic
-	is_triggered_only = yes 
-	major = yes
-
-	option = {
-		name = HUN_news_DAL.a
-	}
-}
+				news_event = {id = AOR_news.235}
+				}
+	        }
+        }
