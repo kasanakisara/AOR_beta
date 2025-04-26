@@ -560,12 +560,21 @@ focus_tree={
 			hidden_effect = {
 			USA = {
                 load_oob = AOR_LAND_KOW_USA_civil_war
-				country_event = {
-					id = USA.10061
-				}
-				country_event = {
-					id = USA.10064
-					days = 3
+					else_if = {
+						limit = {
+							USA = {
+								owns_state = 373	
+							}
+						}
+					USA = {
+						country_event = {
+							id = USA.10061
+						}
+						country_event = {
+							id = USA.10064
+							days = 3
+						}
+					}
 				}
 				news_event={
 					id = AOR_news.191
