@@ -198,8 +198,8 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = ship_secondaries_2
 		front_1_custom_slot = ship_heavy_battery_2
 		mid_1_custom_slot = ship_heavy_battery_2
-		mid_2_custom_slot = ship_secondaries_2
-		mid_3_custom_slot = ship_secondaries_2
+		mid_2_custom_slot = ship_secondaries_1
+		mid_3_custom_slot = ship_secondaries_1
 		rear_1_custom_slot = ship_heavy_battery_2
 		rear_2_custom_slot = ship_anti_air_2
 	}
@@ -218,10 +218,10 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = ship_secondaries_2
 		front_1_custom_slot = ship_heavy_battery_1 
 		mid_1_custom_slot = ship_heavy_battery_1 
-		mid_2_custom_slot = ship_secondaries_1
-		mid_3_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_secondaries_2
+		mid_3_custom_slot = ship_secondaries_2
 		rear_1_custom_slot = ship_heavy_battery_1
-		rear_2_custom_slot = ship_torpedo_1
+		rear_2_custom_slot = ship_torpedo_2
 	}
 }
 create_equipment_variant = {
