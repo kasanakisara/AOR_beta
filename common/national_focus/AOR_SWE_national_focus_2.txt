@@ -1,13 +1,17 @@
 focus_tree = {
-	id = AOR_SWE_focus_tree_4
+	id = AOR_SWE_focus_tree_2
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = SWE
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 0
+		y = 1500
+	}
 	focus = {
 		id = AOR_Panic_and_Terror
 		icon = GFX_goal_unknown
@@ -20,55 +24,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = AOR_After_the_Storm
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 32
-		y = 10
-
-	}
-	focus = {
-		id = AOR_Throat_Crisis
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 20
-		y = 10
-
-	}
-	focus = {
-		id = AOR_Mobilize_the_army_for_war
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Throat_Crisis
-		}
-		x = 20
-		y = 11
-
-	}
-	focus = {
-		id = AOR_Strive_for_support_from_England_and_France
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Mobilize_the_army_for_war
-		}
-		x = 17
-		y = 12
-
-	}
-	focus = {
-		id = AOR_Mobilize_the_people_s_organizations
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Strive_for_support_from_England_and_France
-		}
-		x = 17
-		y = 13
-
-	}
+	
 	focus = {
 		id = AOR_Authorize_military_rule
 		icon = GFX_goal_unknown
@@ -147,6 +103,7 @@ focus_tree = {
 		y = 4
 
 	}
+	## 经济线开始 ##
 	focus = {
 		id = AOR_New_economic_reforms
 		icon = GFX_goal_unknown
@@ -158,6 +115,7 @@ focus_tree = {
 		y = 3
 
 	}
+	#经济左线开始#
 	focus = {
 		id = AOR_Tangible_hands
 		icon = GFX_goal_unknown
@@ -173,6 +131,94 @@ focus_tree = {
 		y = 4
 
 	}
+	focus = {
+		id = AOR_Purchase_of_foreign_factories
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Tangible_hands
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = AOR_Reviving_Federal_Agriculture
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Purchase_of_foreign_factories
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = AOR_Increase_national_debt
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Reviving_Federal_Agriculture
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = AOR_Provide_emergency_assistance
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Reviving_Federal_Agriculture
+		}
+		prerequisite = {
+			focus = AOR_Emergency_relief_program
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = AOR_Emergency_relief_program
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Purchase_of_foreign_factories
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = AOR_Northern_mining
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Emergency_relief_program
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = AOR_the_shadow_of_Socialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Increase_national_debt
+		}
+		prerequisite = {
+			focus = AOR_Provide_emergency_assistance
+		}
+		prerequisite = {
+			focus = AOR_Northern_mining
+		}
+		x = 16
+		y = 8
+
+	}
+	#经济左线结束#
+	#经济中线开始#
 	focus = {
 		id = AOR_Mutual_Exclusion
 		icon = GFX_goal_unknown
@@ -221,28 +267,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
-		id = AOR_Send_a_delegation_to_negotiate
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Mobilize_the_army_for_war
-		}
-		x = 23
-		y = 12
-
-	}
-	focus = {
-		id = AOR_Branch_Theme_2
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Send_a_delegation_to_negotiate
-		}
-		x = 24
-		y = 13
-
-	}
+	
 	focus = {
 		id = AOR_Introduce_private_capital
 		icon = GFX_goal_unknown
@@ -296,6 +321,8 @@ focus_tree = {
 		y = 8
 
 	}
+	#经济中线结束#
+	#经济右线开始#
 	focus = {
 		id = AOR_The_fresh_breeze_of_new_reforms
 		icon = GFX_goal_unknown
@@ -397,53 +424,8 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = {
-		id = AOR_Call_for_a_constitutional_assembly
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_After_the_Storm
-		}
-		x = 32
-		y = 11
-
-	}
-	focus = {
-		id = AOR_NEW_king_s_song
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Call_for_a_constitutional_assembly
-		}
-		x = 30
-		y = 12
-
-	}
-	focus = {
-		id = AOR_The_song_of_the_past
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Call_for_a_constitutional_assembly
-		}
-		x = 34
-		y = 12
-
-	}
-	focus = {
-		id = AOR_Wait_for_fate_seize_fate
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_NEW_king_s_song
-		}
-		prerequisite = {
-			focus = AOR_The_song_of_the_past
-		}
-		x = 32
-		y = 13
-
-	}
+	#经济右线结束#
+	##经济线结束##
 	focus = {
 		id = AOR_the_kings_of_country
 		icon = GFX_goal_unknown
@@ -842,7 +824,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Retreating_into_the_cold winter_s_aftermath
+		id = AOR_Retreating_into_the_cold_winter_s_aftermath
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -852,92 +834,6 @@ focus_tree = {
 			focus = AOR_Military_agreement_negotiations
 		}
 		x = 10
-		y = 8
-
-	}
-	focus = {
-		id = AOR_Purchase_of_foreign_factories
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Tangible_hands
-		}
-		x = 16
-		y = 5
-
-	}
-	focus = {
-		id = AOR_Reviving_Federal_Agriculture
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Purchase_of_foreign_factories
-		}
-		x = 14
-		y = 6
-
-	}
-	focus = {
-		id = AOR_Increase_national_debt
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Reviving_Federal_Agriculture
-		}
-		x = 13
-		y = 7
-
-	}
-	focus = {
-		id = AOR_Provide_emergency_assistance
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Reviving_Federal_Agriculture
-		}
-		prerequisite = {
-			focus = AOR_Emergency_relief_program
-		}
-		x = 15
-		y = 7
-
-	}
-	focus = {
-		id = AOR_Emergency_relief_program
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Purchase_of_foreign_factories
-		}
-		x = 18
-		y = 6
-
-	}
-	focus = {
-		id = AOR_Northern_mining
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Emergency_relief_program
-		}
-		x = 18
-		y = 7
-
-	}
-	focus = {
-		id = AOR_the_shadow_of_Socialism
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Increase_national_debt
-		}
-		prerequisite = {
-			focus = AOR_Provide_emergency_assistance
-		}
-		prerequisite = {
-			focus = AOR_Northern_mining
-		}
-		x = 16
 		y = 8
 
 	}
@@ -1024,6 +920,70 @@ focus_tree = {
 		y = 9
 
 	}
+	##往下为奥兰危机分支##
+	focus = {
+		id = AOR_Throat_Crisis
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 20
+		y = 15
+
+	}
+	focus = {
+		id = AOR_Mobilize_the_army_for_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Throat_Crisis
+		}
+		x = 20
+		y = 16
+
+	}
+	focus = {
+		id = AOR_Strive_for_support_from_England_and_France
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Mobilize_the_army_for_war
+		}
+		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = AOR_Mobilize_the_people_s_organizations
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Strive_for_support_from_England_and_France
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = AOR_Send_a_delegation_to_negotiate
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Mobilize_the_army_for_war
+		}
+		x = 23
+		y = 17
+
+	}
+	focus = {
+		id = AOR_Demilitarization_Initiatives
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Send_a_delegation_to_negotiate
+		}
+		x = 24
+		y = 18
+
+	}
 	focus = {
 		id = AOR_The_land_of_despair
 		icon = GFX_goal_unknown
@@ -1032,7 +992,7 @@ focus_tree = {
 			focus = AOR_Send_a_delegation_to_negotiate
 		}
 		x = 22
-		y = 13
+		y = 18
 
 	}
 	focus = {
@@ -1046,10 +1006,10 @@ focus_tree = {
 			focus = AOR_The_land_of_despair
 		}
 		prerequisite = {
-			focus = AOR_Branch_Theme_2
+			focus = AOR_Demilitarization_Initiatives
 		}
 		x = 20
-		y = 14
+		y = 19
 
 	}
 	focus = {
@@ -1060,7 +1020,7 @@ focus_tree = {
 			focus = AOR_Comprehensive_confrontation
 		}
 		x = 17
-		y = 15
+		y = 20
 
 	}
 	focus = {
@@ -1071,7 +1031,7 @@ focus_tree = {
 			focus = AOR_Comprehensive_confrontation
 		}
 		x = 22
-		y = 15
+		y = 20
 
 	}
 	focus = {
@@ -1082,7 +1042,7 @@ focus_tree = {
 			focus = AOR_Comprehensive_mobilization
 		}
 		x = 16
-		y = 16
+		y = 21
 
 	}
 	focus = {
@@ -1093,7 +1053,7 @@ focus_tree = {
 			focus = AOR_Comprehensive_mobilization
 		}
 		x = 18
-		y = 16
+		y = 21
 
 	}
 	focus = {
@@ -1104,7 +1064,65 @@ focus_tree = {
 			focus = AOR_Cold_war_and_hot_fight
 		}
 		x = 22
+		y = 21
+
+	}
+	## 奥兰分支到此结束 ##
+	## 收尾分支从此开始 ##
+	focus = {
+		id = AOR_After_the_Storm
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 32
+		y = 15
+
+	}
+	focus = {
+		id = AOR_Call_for_a_constitutional_assembly
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_After_the_Storm
+		}
+		x = 32
 		y = 16
 
 	}
+	focus = {
+		id = AOR_NEW_king_s_song
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Call_for_a_constitutional_assembly
+		}
+		x = 30
+		y = 17
+
+	}
+	focus = {
+		id = AOR_The_song_of_the_past
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Call_for_a_constitutional_assembly
+		}
+		x = 34
+		y = 17
+
+	}
+	focus = {
+		id = AOR_Wait_for_fate_seize_fate
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_NEW_king_s_song
+		}
+		prerequisite = {
+			focus = AOR_The_song_of_the_past
+		}
+		x = 32
+		y = 18
+
+	}
+	## 收尾分支到此结束 ##
 }
