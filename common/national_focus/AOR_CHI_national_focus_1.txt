@@ -41,6 +41,9 @@ focus_tree={
 		}
 		completion_reward={
 		add_war_support = 0.1
+		country_event = {
+			id = CHI.10001
+		}
 		}
 	}
 	focus={
@@ -58,6 +61,9 @@ focus_tree={
 		}
 		completion_reward={
 		custom_effect_tooltip = CHI.1.tt
+		country_event = {
+			id = CHI.10000
+		}
 		hidden_effect = {	
 		load_oob = CHI_volunteer
 			}

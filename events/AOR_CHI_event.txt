@@ -2078,4 +2078,44 @@ country_event = {
 	}
 }
 
-##
+country_event = {
+	# 《北望》（袁世凯收复外西北）
+	id = CHI.10000
+	title = CHI.10000.t
+	desc = CHI.10000.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10000.a
+	}
+}
+
+country_event = {
+	# 《旗女》（袁世凯收复外西北）
+	id = CHI.10001
+	title = CHI.10001.t
+	desc = CHI.10001.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10001.a
+		country_event = {
+			id = CHI.10002
+		}
+	}
+}
+
+country_event = {
+	# 《旗女2》（袁世凯收复外西北）
+	id = CHI.10002
+	title = CHI.10002.t
+	desc = CHI.10002.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10002.a
+	}
+}
