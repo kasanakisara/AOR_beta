@@ -503,5 +503,28 @@ ideas = {
 				industrial_capacity_factory = -0.1
 			}
 		}
+
+		SWE_Regency_Council = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		SWE_Regency_Emergency_Crisis = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_cost = 0.2
+				Marxism_drift = 0.1
+			}
+		}
 	}
 }

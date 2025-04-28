@@ -152,4 +152,23 @@ Hackers_debug = {
         }
     }
 
+    SWE_Orland_test = {
+        available = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            complete_national_focus = AOR_Throat_Crisis
+        }
+    }
+
 }

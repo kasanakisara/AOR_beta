@@ -25,10 +25,10 @@ country_event = {
             remove_ideas = SWE_Reducted_Civil_Servants
             remove_ideas = SWE_Merged_Parliament
             remove_ideas = SWE_Universal_Suffrage
-            add_ideas = A_lingering_alliance
             clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = Haakon.1 days = 5 }
             country_event = { id = AOR_news.90 }
+            add_ideas = SWE_Regency_Council
         }
         custom_effect_tooltip = SWE_Haakon_Death_tt
         ## 第二阶段完工后删除这段代码 ##
@@ -511,7 +511,7 @@ country_event = {
             remove_ideas = SWE_Liberte_Spirit
             country_event = { id = Haakon.2 days = 5 }
         }
-        custom_effect_tooltip = SWE_Death_Union_tt
+        custom_effect_tooltip = SWE_Haakon_I_tt
     }
 }
 
@@ -538,6 +538,7 @@ country_event = {
             remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
             country_event = { id = Haakon.3 days = 5 }
         }
+        custom_effect_tooltip = SWE_Haakon_II_tt
     }
 }
 
@@ -550,7 +551,10 @@ country_event = {
         name = Haakon.3.a
         hidden_effect = {
             load_focus_tree = AOR_SWE_focus_tree_2
+            set_country_flag = SWE_Emergency_State
+            add_ideas = SWE_Regency_Emergency_Crisis
         }
+        custom_effect_tooltip = SWE_Haakon_III_tt
     }
 }
 
