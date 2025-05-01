@@ -630,7 +630,7 @@ units= {
         
 		task_force = {				
 			name = "IJN-第二舰队"			
-			location = 1150
+			location = 13350
             ship = {
                 name = "隼級" 
                 definition = destroyer
