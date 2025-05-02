@@ -596,7 +596,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_idea_por_unstable_republic
+			picture = GFX_idea_BAV_labor_liberal_females_1
 
 			modifier = {
 				conscription = 0.015
@@ -608,7 +608,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_idea_por_iberian_workers_united
+			picture = GFX_idea_BAV_Peoples_Commune
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -723,7 +723,7 @@ ideas = {
 				original_tag = BAV
 				always = yes
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_pour_fire
 
 			modifier = {
 				stability_factor = 0.05
@@ -734,7 +734,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_new_economic_policy
+			picture = GFX_idea_BAV_Economic_restructuring
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -756,7 +756,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = GFX_idea_SOV_system_decentralization
+			picture = GFX_idea_BAV_Spartacist_bureaucracy
 			modifier = {
 			political_power_gain = 0.1
 			consumer_goods_factor = -0.05

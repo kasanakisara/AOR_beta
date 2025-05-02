@@ -536,6 +536,26 @@ spriteTypes = {
 		name = "GFX_idea_Roving_style"
 		texturefile = "gfx/interface/ideas/Roving_style.png"
 	}
+	spriteType = {
+		name = "GFX_idea_BAV_Economic_restructuring"
+		texturefile = "gfx/interface/ideas/BAV_Economic_restructuring.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_labor_liberal_females_1"
+		texturefile = "gfx/interface/ideas/BAV_labor_liberal_females_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_pour_fire"
+		texturefile = "gfx/interface/ideas/BAV_pour_fire.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_Spartacist_bureaucracy"
+		texturefile = "gfx/interface/ideas/BAV_Spartacist_bureaucracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAV_Peoples_Commune"
+		texturefile = "gfx/interface/ideas/BAV_Peoples_Commune.png"
+	}
 	#南非民族精神
 		spriteType = {
 		name = "GFX_idea_Land_of_diamonds_gold"

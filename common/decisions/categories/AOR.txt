@@ -3,6 +3,10 @@ AOR_political_action = {
 	icon =generic_research
 	visible = {
 		has_war = no
+		
+		not = {
+		  tag = BAV
+		}
 	}
 	priority = 10
 }

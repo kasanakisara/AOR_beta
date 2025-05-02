@@ -44,7 +44,11 @@ country_event = {
 		add_political_power = 5
 		add_command_power = 5
 		set_country_flag = AOR_GER_flag_attend_the_meeting
+		BAV = {set_country_flag = AOR_GER_BAV_flag_attend_the_meeting}
+		GER = {add_to_faction = bav}
 		GER = { country_event = AOR_GER_timeaxis.10}
+		set_cosmetic_tag = BAV_MEET
+		
 	}
 	option = { #巴苏，可能不去？
 		trigger = {
