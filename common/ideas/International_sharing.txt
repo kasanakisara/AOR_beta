@@ -1,0 +1,29 @@
+ideas = {
+	#石油危机
+	country = {
+		Oil_Crisis_1 = {
+			picture = GFX_idea_Oil_Crisis
+			allowed = { always = yes }
+			modifier = {
+                fuel_gain_factor = -0.3
+                local_resources_factor_oil = -0.2
+			}
+        }
+         Oil_Crisis_2 = {
+            picture = GFX_idea_Oil_Crisis
+            allowed = { always = yes }
+            modifier = {
+                fuel_gain_factor = -0.5
+                local_resources_factor_oil = -0.3
+            }
+        }
+        Oil_Crisis_3 = {
+            picture = GFX_idea_Oil_Crisis
+            allowed = { always = yes }
+            modifier = {
+                fuel_gain_factor = -0.15
+                local_resources_factor_oil = -0.1
+            }
+        }
+	}
+}
