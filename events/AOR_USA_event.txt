@@ -2539,7 +2539,7 @@ country_event = {
 }
 
 country_event = { 
-	id = USA.10083 #大地的针线
+	id = USA.10083 #大地的针线（迪格斯故事）
 	title = USA.10083.t
 	desc = USA.10083.d
 	picture = GFX_USA_event_10083_pic
@@ -2575,4 +2575,52 @@ country_event = {
 	option = {
 		name=USA.10085.b
 	}
+}
+
+country_event = { 
+	id = USA.10086 #去丹佛（迪格斯故事）
+	title = USA.10086.t
+	desc = USA.10086.d
+	picture = GFX_USA_event_10086_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10086.a
+		hidden_effect = {
+			country_event = {
+				id = USA.10087
+				days = 1
+			}
+		}
+	}	
+}
+
+country_event = { 
+	id = USA.10087 #一位老人的演说（迪格斯故事）
+	title = USA.10087.t
+	desc = USA.10087.d
+	picture = GFX_USA_event_10087_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10087.a
+		hidden_effect = {
+			country_event = {
+				id = USA.10088
+				days = 2
+			}
+		}
+	}	
+}
+
+country_event = { 
+	id = USA.10088 #逃出升天（迪格斯故事）
+	title = USA.10088.t
+	desc = USA.10088.d
+	picture = GFX_USA_event_10088_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name=USA.10088.a
+	}	
 }
