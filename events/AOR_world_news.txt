@@ -3387,3 +3387,42 @@ news_event = {  #蒂撒伯爵宣布举行首次大选
 		name = AOR_news.237.a
 	}
 }
+
+news_event = {#红色德国彻底夺取莱茵兰！
+	id = AOR_news.238
+	title = AOR_news.238.t
+	desc = AOR_news.238.d
+	picture = GFX_AOR_news.238_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.238.a
+	}
+}
+
+news_event = {#红色德国与法国爆发全面战争！（二战）
+	id = AOR_news.239
+	title = AOR_news.239.t
+	desc = AOR_news.239.d
+	picture = GFX_AOR_news.239_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.239.a
+	}
+}
+
+news_event = {#第二次世界大战扩大化（二战）
+	id = AOR_news.240
+	title = AOR_news.240.t
+	desc = AOR_news.240.d
+	picture = GFX_AOR_news.240_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.240.a
+	}
+}

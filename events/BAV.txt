@@ -835,16 +835,19 @@ country_event = {
 	}
 }
 country_event = {
-	id = BAV.72	#夺取莱茵兰
-	title = BAV.67.t
-	desc = BAV.67.d
+	id = BAV.72	#夺取莱茵兰，二战在即
+	title = BAV.72.t
+	desc = BAV.72.d
 	fire_only_once = yes
 	trigger = {
 		tag = BAV
 		date > 1925.4.15
+		BAV = {
+		owns_state = 840
+		}
 	}
 	option = {
-		name = BAV.67.a
+		name = BAV.72.a
 		BAV = {
 			transfer_state = 859
 			hidden_effect = {
@@ -855,3 +858,78 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = BAV.73	#彻底夺取莱茵兰，二战在即
+	title = BAV.73.t
+	desc = BAV.73.d
+	fire_only_once = yes
+	trigger = {
+		tag = BAV
+		date > 1925.6.15
+	}
+	option = {
+		name = BAV.73.a
+		BAV = {
+			transfer_state = 42
+			transfer_state = 850
+			hidden_effect = {
+				country_event = {
+					id = BAV.74
+					days = 180
+				}
+				news_event = {
+					id = AOR_news.238
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BAV.74	#第二次世界大战爆发（德法冲突-德法二战线）
+	title = BAV.74.t
+	desc = BAV.74.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BAV.74.a
+		FRA = {
+			declare_war_on = { 
+				target = BAV
+				type = take_claimed_state 
+			} 
+			hidden_effect = {
+				country_event = {
+					id = BAV.75
+					days = 30
+				}
+				news_event = {
+				id = AOR_news.239
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BAV.75	#第二次世界大战扩大化
+	title = BAV.75.t
+	desc = BAV.75.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+	name = BAV.75.a
+		POL = {
+			declare_war_on = { 
+				target = BAV
+				type = take_claimed_state 
+			} 
+		}
+		hidden_effect = {
+			news_event = {
+				id = AOR_news.240
+				}	
+		    }
+		}
+	}
