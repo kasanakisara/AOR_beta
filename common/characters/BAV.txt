@@ -50,13 +50,6 @@ characters = {
 			logistics_skill = 1
 			legacy_id = -1
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = Hans_Gunther_van_Hooven_chief
-			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
-			traits = {army_chief_offensive_2}
-
-		}
 	}
 	Ludwig_Beck = {
 		name = Ludwig_Beck
@@ -85,6 +78,19 @@ characters = {
 			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
 			traits = {army_chief_organizational_2}
 
+		}
+		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = Ludwig_Beck_theo
+			ledger = army
+			traits = {
+				mobile_warfare_expert
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	Walther_von_Kurzbach = {
@@ -166,7 +172,18 @@ characters = {
 			idea_token = Walter_von_Reichenau_chief
 			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
 			traits = {army_chief_entrenchment_3}
-
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = Walter_von_Reichenau_chief_command
+			ledger = army
+			available = {}
+			traits = {army_commando_2}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	Wilhelm_Pieck = {
@@ -189,6 +206,9 @@ characters = {
 			logistics_skill = 2
 			legacy_id = -1
 		}
+		
+
+		
 	}
 	Ernst_Thalmann = {
 		name = Ernst_Thalmann
@@ -211,60 +231,6 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	BAV_Karl_Liebknecht_command={
-		name= Karl_Liebknecht_command
-		portraits={
-			civilian={
-				large="gfx/leaders/BAV/axcra-1w8mr.dds"
-			}
-			army = {
-				small = "gfx/interface/ideas/advisors/BAV_Karl_Liebknecht.png"
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = BAV_Karl_Liebknecht_command
-			available = {}
-			traits = {BAV_Karl_Liebknecht_command}
-
-		}
-	}
-	BAV_Luksemburg_command={
-		name= Roza_Luksemburg_command
-		portraits={
-			civilian={
-				large="gfx/leaders/BAV/aea71-ho9ng.dds"
-			}
-			army = {
-				small = "gfx/interface/ideas/advisors/BAV_Luksemburg.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token =BAV_Luksemburg_command
-			available = {}
-			traits = {BAV_Luksemburg_command}
-		}
-	}
-	BAV_Mehring_command = {
-		name= Franz_Mehring_command
-		portraits={
-			civilian={
-				large="gfx/leaders/BAV/Mehring.png"
-			}
-			army = {
-				small = "gfx/interface/ideas/advisors/BAV_Mehring.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = BAV_Mehring_command
-			allowed = { NOT = {has_country_leader = { ruling_only = yes name = "Franz_Mehring" }}}
-			traits = {BAV_Mehring_command}
-
-		}
-	}
 	Eugen_Levine_command= { 
 		name = Eugen_Levine_command
 		portraits = {
@@ -276,9 +242,13 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = Eugen_Levine_command
+			cost = 100
+			ledger = army
 			available = {}
-			traits = {Eugen_Levine_command}
-
+			traits = {Eugen_Levine_command_1_trait}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

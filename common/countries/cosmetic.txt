@@ -1105,7 +1105,12 @@ SAX_1 = {
 	color_ui = rgb { 138 155 116 }
 }
 HAN_1 = {
-    color= rgb { 139 105 105 }
+    color= HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+BAV_MEET = {
+    color= HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
 KSH_1_AUT_democratic = {

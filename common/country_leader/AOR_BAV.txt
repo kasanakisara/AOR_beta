@@ -41,10 +41,9 @@ leader_traits = {
 		max_planning = 0.15
 		planning_speed = 0.15	
 	}
-	Eugen_Levine_command = {
+	Eugen_Levine_command_1_trait = {
 		random = no
-		dig_in_speed_factor = 0.2
-		max_dig_in = 5
-		out_of_supply_factor = -0.3
+		army_speed_factor = 0.1
+		attrition = -0.075
 	}
 }
