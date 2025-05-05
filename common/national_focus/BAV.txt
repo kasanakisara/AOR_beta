@@ -43,7 +43,9 @@ focus_tree={
 		add_war_support = 0.05
 		army_experience = 25
 		custom_effect_tooltip = BAV.focus.8.tt
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
+		add_political_power = -70
 		set_division_force_allow_recruiting ={
 			division_template ="工人赤卫队"
 			force_allow_recruiting = yes
@@ -86,6 +88,10 @@ focus_tree={
 		remove_idea = Roving_style
 		add_idea = Roving_style_1 
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt、
+			hidden_effect = {
+				add_political_power = -28
+			}
 		}
 	}
 	focus={
@@ -107,6 +113,10 @@ focus_tree={
 		add_idea = Extreme_democratic_rampant_1
 			}
 		set_country_flag = BAV_after_train
+		custom_effect_tooltip = BAV.focus.L.2.tt
+		hidden_effect = {
+			add_political_power = -28
+			}
 		} 	
 	}
 	focus={
@@ -131,7 +141,9 @@ focus_tree={
 		remove_idea = Roving_style_1 
 		add_idea = Roving_style_2
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
+		add_political_power = -35
 		random_list = { 50 = { retire_character = friedrich_dollma}50  = { retire_character = Walter_von_Reichenau}}
 		Walther_von_Kurzbach = {
 			add_timed_unit_leader_trait = {
@@ -195,10 +207,12 @@ focus_tree={
 		remove_idea = Roving_style_1 
 		add_idea = Roving_style_3
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
 		retire_character = friedrich_dollma
 		retire_character = Walter_von_Reichenau
 		random_list = { 34 = { retire_character = Walther_von_Kurzbach} 33 = { retire_character = Ludwig_Beck} 33 = { retire_character = Hans_Gunther_van_Hooven}}
+		add_political_power = -14
 		}
 	  }
 	}
@@ -221,6 +235,10 @@ focus_tree={
 		remove_idea = Extreme_democratic_rampant_1
 		add_idea = Extreme_democratic_rampant_3
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -14
+			}
 		}
 	}
 	focus={
@@ -241,6 +259,10 @@ focus_tree={
 		swap_ideas = {
 		remove_idea = Extreme_democratic_rampant_1
 		add_idea = Extreme_democratic_rampant_2
+			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -14
 			}
 		}
 	}
@@ -328,6 +350,10 @@ focus_tree={
 		completion_reward={
 		add_stability  = 0.1
 		add_political_power = 120
+		custom_effect_tooltip = BAV.focus.L.2.tt
+		hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={
@@ -349,7 +375,10 @@ focus_tree={
 			remove_idea = BAV_dying_bureaucracy
 			add_idea = BAV_dying_bureaucracy_1			
 		}
-
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -35
+			}
 		}
 	}
 	focus={
@@ -372,6 +401,10 @@ focus_tree={
 			remove_idea = BAV_dying_bureaucracy_1
 			add_idea = BAV_dying_bureaucracy_3	
 		}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={
@@ -394,6 +427,10 @@ focus_tree={
 			remove_idea = BAV_dying_bureaucracy_1
 			add_idea = BAV_dying_bureaucracy_2
 		}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={

@@ -1,4 +1,5 @@
 add_namespace = BAV
+add_namespace = BAV_L
 #倍倍尔的教导#
 country_event = {
 	id = BAV.1
@@ -933,3 +934,22 @@ country_event = {
 		    }
 		}
 	}
+	
+	
+
+#倍倍尔要来了，李和莱文搬桌子#
+country_event = {
+	id = BAV_L.1
+	title = BAV_L.1.t
+	desc = BAV_L.1.d
+	picture = GFX_AOR_GER_timeaxis.3_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.1.a
+		custom_effect_tooltip = BAV.focus.L.1.tt
+		add_political_power = 1
+		
+	}
+}
