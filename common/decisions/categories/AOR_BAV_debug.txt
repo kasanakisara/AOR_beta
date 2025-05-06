@@ -1,5 +1,5 @@
 BAV_debug = {
-	priority = 110
+	priority = 100
 	visible = {
 		is_debug = yes
 		tag = BAV

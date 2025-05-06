@@ -89,9 +89,13 @@ recruit_character = BAV_Luksemburg_command
 recruit_character = BAV_Mehring_command
 recruit_character = Eugen_Levine_command
 
+set_variable = { Bebel_Trust = 6 }
 
-
-
+ clamp_variable = {
+	var = Bebel_Trust
+	min = 0
+	max = 100
+  }
 
 
 set_politics = {
@@ -128,7 +132,7 @@ oob = "BAV_AOR"
 BAV = {
 country_event = { days = 1001 id = BAV.3 }
 country_event = { days = 1 id = BAV.1 }
-country_event = { days = 4 id = BAV.L.1 }
+country_event = { days = 3 id = BAV_L.1 }
 }
 
 #create_country_leader = {

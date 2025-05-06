@@ -2,6 +2,30 @@ spriteTypes = {
 
 
 	####本文档是逻各斯的interface!别整合了，，，怪累挺，以后我interface就更新在这里了，就不会不小心覆盖别人的了(((#####
+	
+	#巴苏决议
+	spriteType = { 
+		name = "GFX_BAV_BEBEL_TRUST_BEBEL"
+		texturefile = "gfx/event_pictures/BAV_BEBEL_trust.png"
+	}
+	
+	spriteType = {
+		name = "GFX_AOR_trust"
+		texturefile = "gfx/texticons/AOR_trust.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = { 
+		name = "GFX_BAV_GUI_1"
+		texturefile = "gfx/leaders/BAV/Bebel_1900_3.png" 
+		legacy_lazy_load = no
+	}
+	
+	spriteType = { 
+		name = "GFX_BAV_GUI_2"
+		texturefile = "gfx/leaders/BAV/BAV_PARTY_1.png" 
+		legacy_lazy_load = no
+	}
     ####此处是阿工团的内战时国策树###
 	#icon#
 
