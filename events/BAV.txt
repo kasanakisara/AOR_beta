@@ -12,7 +12,7 @@ country_event = {
 	option = {
 		name = BAV.1.a
 		add_political_power = 1
-		custom_effect_tooltip = AOR_Bebel_Trust_5`_tt
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
 		  add_to_variable = {
 			Bebel_Trust = 5
 			} 
