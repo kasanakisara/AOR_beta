@@ -1,13 +1,14 @@
 BAV_Bebel_Trust = {
 
-	bav_auto_1 = { #每月自动提升
+	bav_auto_1 = { #每月自动提升_1
         icon = GFX_decision_category_generic_communism
-		
+
 		available = {                           
 			 	has_country_flag = BAV.belel.dead
 		}		
 		activation = {	
 			NOT = {has_country_flag = BAV.belel.dead}
+			has_country_flag  = Bebel_mission_finish_1
 		}
 		visible = { always = yes }
 		fire_only_once = no
@@ -17,22 +18,75 @@ BAV_Bebel_Trust = {
 		
 		timeout_effect = {                    
 					custom_effect_tooltip = AOR_Bebel_Trust_30_tt
-					add_to_variable = {Bebel_Trust = 30}      
+					add_to_variable = {Bebel_Trust = 30}   
+					set_country_flag = Bebel_mission_finish  
+					clr_country_flag =  Bebel_mission_finish_1
 		}
 		
 	}
 	
-	bav_merlin_1 = { #每月自动提升
+	bav_auto_2 = { #每月自动提升_2
+        icon = GFX_decision_category_generic_communism
+
+		available = {                           
+			 	has_country_flag = BAV.belel.dead
+		}		
+		activation = {	
+			NOT = {has_country_flag = BAV.belel.dead}
+			has_country_flag  = Bebel_mission_finish
+		}
+		visible = { always = yes }
+		fire_only_once = no
+		days_re_enable = 1
+		is_good = yes
+		days_mission_timeout =  30
+		
+		timeout_effect = {                    
+					custom_effect_tooltip = AOR_Bebel_Trust_30_tt
+					add_to_variable = {Bebel_Trust = 30}   
+					set_country_flag = Bebel_mission_finish_1  
+					clr_country_flag =  Bebel_mission_finish
+		}
+		
+	}
+
+	bav_pp_trust_change = { #信任兑换PP点
         icon = GFX_decision_category_generic_communism
 		
 		
 		available = {                           
-			 
+			 original_tag = BAV
 		}		
 
 		visible = { always = yes }
-		fire_only_once = yes
 		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 10
+				has_political_power < 0
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 0	
+		days_re_enable = 0
+
+
+		custom_cost_trigger = {
+			check_variable = { 
+				Var = Bebel_Trust
+				Value > 15
+		}
+		custom_cost_text = decision_cost_trust_15
+
+		complete_effect = {  
+			add_political_power = 10
+			add_to_variable = {
+				Bebel_Trust = -15
+			}
+			custom_effect_tooltip = AOR_Bebel_Trust_0_15_tt
+		}
 		
 	}
 }

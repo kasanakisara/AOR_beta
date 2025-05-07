@@ -27,4 +27,12 @@
  
  AOR_Bebel_Trust_no_tt:0"这是一项自动发生的行为，它无法被干预。"
  bav_auto_1:0"信任点数每月提升"
+ bav_auto_2:0"信任点数每月提升"
  bav_auto_1_desc:0"随着奥古斯特坚持不懈地工作，流言蜚语也逐渐烟消云散。"
+ bav_auto_2_desc:0"随着奥古斯特坚持不懈地工作，流言蜚语也逐渐烟消云散。"
+
+ decision_cost_trust_15:0 "£AOR_trust  §Y15§!"
+ decision_cost_trust_15_blocked:0 "£AOR_trust  §R15§!"
+ decision_cost_trust_15_tooltip:0 "It costs [decision_cost_trust_15] to take this decision.\n"
+ 
+
