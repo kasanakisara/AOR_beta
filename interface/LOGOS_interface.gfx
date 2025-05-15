@@ -1851,6 +1851,10 @@ spriteTypes = {
 		name = "GFX_BAV.100_pic"
 		texturefile = "gfx/event_pictures/BAV.100_pic.png"
 	}
+	spriteType = {
+		name = "GFX_BAV.cafe_pic"
+		texturefile = "gfx/event_pictures/BAV.cafe_pic.png"
+	}
 	  #联省
 	  spriteType = {
 		name = "GFX_UPC.1_pic"
