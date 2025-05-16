@@ -59,7 +59,7 @@ characters = {
 		country_leader={
 			ideology = REV_soc
 			desc = "BAV_BEBEL_DESC"
-			traits={German_workers_leaders Evergreen_leader  }
+			traits={German_workers_leaders Evergreen_leader Aftermath_of_resignation  }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -111,7 +111,7 @@ characters = {
 			slot = political_advisor
 			idea_token = Eugen_Levine
 			available = {}
-			traits = {}
+			traits = {forever_fighter}
 			can_be_fired = no
 		}
 	}

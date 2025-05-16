@@ -75,19 +75,11 @@ BAV_Bebel_Trust = {
 		ai_will_do = {
 			factor = 4
 		}
-		ai_hint_pp_cost = 150
 
 		fire_only_once = no
 		days_remove = 0	
 		days_re_enable = 0
-
-		custom_cost_trigger = {
-			check_variable = { 
-				Var = Bebel_Trust
-				Value > 45
-		}
-	}
-		custom_cost_text = decision_cost_trust_45
+		cost = 200
 
 		complete_effect = {  
 			custom_effect_tooltip = AOR_Bebel_Trust_00_tt
@@ -249,7 +241,70 @@ BAV_Bebel_Trust = {
 
 		}
 
+	bav_trust_trait = { #消除余波
+	    
+		icon = GFX_decision_category_generic_communism
 		
+		priority = 90
+		available = {                           
+			 original_tag = BAV
+			 NOT = {has_country_flag = BAV.belel.dead}		
+		}
+		visible = {
+			NOT = {has_country_flag = BAV_TRUST_TRAIT_OVER} 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+		fire_only_once = no
+		days_remove = 35
+		days_re_enable = 5
+		cost = 50
+		remove_effect = { 
+
+						if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation }
+							}
+							remove_country_leader_trait = Aftermath_of_resignation
+							add_country_leader_trait = Aftermath_of_resignation_1
+			  				 }
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_1}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_1
+							add_country_leader_trait = Aftermath_of_resignation_2
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_2}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_2
+							add_country_leader_trait = Aftermath_of_resignation_3
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_3}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_3
+							add_country_leader_trait = Aftermath_of_resignation_4
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_4}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_4
+							add_country_leader_trait = Aftermath_of_resignation_5
+							set_country_flag = BAV_TRUST_TRAIT_OVER
+						}
+			
+
+
+		}
+		
+
 	}
 
-}
+	
