@@ -516,7 +516,7 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
-		available = { has_political_power > 0 }
+
 		completion_reward={
 		country_event = {  id = BAV.10 }
 		}
