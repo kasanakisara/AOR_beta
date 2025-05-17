@@ -303,8 +303,40 @@ BAV_Bebel_Trust = {
 
 
 		}
+	}
+
+	bav_eugen_candy= { #任命欧根
+        icon = GFX_decision_category_generic_communism
+		
+		
+		available = {                           
+			 original_tag = BAV
+			 has_completed_focus = BAV_Training_style_roving_rebels
+		}		
+
+		visible = { 
+			has_completed_focus = BAV_Training_style_roving_rebels
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	
+
+		fire_only_once = yes
+		days_remove = 3	
 		
 
+		remove_effect = {  
+			country_event =  BAV_L.2
+			
+			custom_effect_tooltip = bav_eugen_candy.tt
+
+			hidden_effect = {recruit_character = Eugen_Levine_army}
+		}
 	}
+
+
+}
 
 	

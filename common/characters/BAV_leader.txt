@@ -98,6 +98,23 @@ characters = {
 				small = "gfx/interface/ideas/advisors/Eugen_Levine.png"
 			}
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Eugen_Levine
+			available = {}
+			traits = {forever_fighter}
+			can_be_fired = no
+		}
+	}
+
+	Eugen_Levine_army= { 
+		name = Eugen_Levine
+		portraits = {
+			army = {
+				large = GFX_portrait_Eugen_Levine
+				small = "gfx/interface/ideas/advisors/Eugen_Levine.png"
+			}
+		}
 		corps_commander = {
 			traits = {BAV_committed_revolutionary trait_reckless politically_connected harsh_leader}
 			skill = 1
@@ -106,13 +123,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = -1
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = Eugen_Levine
-			available = {}
-			traits = {forever_fighter}
-			can_be_fired = no
 		}
 	}
 }
