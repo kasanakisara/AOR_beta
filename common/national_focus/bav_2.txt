@@ -13,7 +13,7 @@ focus_tree = {
 	focus={
 		id=BAV_The_pioneer_has_passed_away
 		icon = GFX_goal_BAV_The_pioneer_has_passed_away
-		x=11
+		x=8
 		y=0
 		cost=0
 		ai_will_do={
@@ -29,7 +29,7 @@ focus_tree = {
 	focus={
 		id=BAV_Baton_transmission
 		icon = GFX_goal_BAV_Baton_transmission
-		x=11
+		x=8
 		y=1
 		prerequisite={focus=BAV_The_pioneer_has_passed_away}
 		cost=1
@@ -51,7 +51,7 @@ focus_tree = {
 	focus={
 		id=BAV_Cut_off_history
 		icon = GFX_goal_BAV_Cut_off_history
-		x=11
+		x=7
 		y=2
 		prerequisite={focus=BAV_Baton_transmission}
 		cost=2
@@ -75,13 +75,14 @@ focus_tree = {
 			country_lock_all_division_template = yes
 		}
 	}
-	#北方人就是比南方人有素质，不是夸你们南方人
+	#和统符腾堡
 	focus={
 		id=BAV_Friends_from_the_North
 		icon = GFX_goal_BAV_Friends_from_the_North
-		x=8
-		y=2
-		prerequisite={focus=BAV_Baton_transmission}
+		x=5
+		y=4
+		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		mutually_exclusive = { focus = BAV_enemies_from_the_North }
 		cost=2
 		ai_will_do={
 			factor=1
@@ -93,11 +94,72 @@ focus_tree = {
 			country_event = BAV.14
 		}
 	}
+
+	#宣战符腾堡
+	focus={
+		id=BAV_enemies_from_the_North
+		icon = GFX_goal_BAV_Friends_from_the_North
+		x=7
+		y=4
+		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		mutually_exclusive = { focus = BAV_Friends_from_the_North }
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = BAV.14
+		}
+	}
+
+	#和统萨克森
+	focus={
+		id=BAV_Friends_from_the_SAX
+		icon = GFX_goal_BAV_Friends_from_the_North
+		x=11
+		y=4
+		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		mutually_exclusive = { focus = BAV_enemies_from_the_SAX }
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = BAV.14
+		}
+	}
+
+	#宣战符腾堡
+	focus={
+		id=BAV_enemies_from_the_SAX
+		icon = GFX_goal_BAV_Friends_from_the_North
+		x=9
+		y=4
+		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		mutually_exclusive = { focus = BAV_Friends_from_the_SAX }
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = BAV.14
+		}
+	}
+
 	#包围革命
 	focus={
 		id=BAV_Focusing_on_the_inside
 		icon = GFX_goal_BAV_Focusing_on_the_inside
-		x=14
+		x=9
 		y=2
 		prerequisite={focus=BAV_Baton_transmission}
 		cost=2
@@ -129,10 +191,9 @@ focus_tree = {
 	focus={
 		id=BAV_The_sacred_flame_will_not_extinguish
 		icon = GFX_goal_BAV_The_sacred_flame_will_not_extinguish
-		x=11
-		y=4
+		x=8
+		y=3
 		prerequisite={focus=BAV_Cut_off_history}
-		prerequisite={focus=BAV_Friends_from_the_North}
 		prerequisite={focus=BAV_Focusing_on_the_inside}
 		cost=1
 		ai_will_do={
@@ -153,9 +214,11 @@ focus_tree = {
 	focus={
 		id=BAV_The_Revolutionary_Heart_of_Germany
 		icon = GFX_goal_BAV_The_Revolutionary_Heart_of_Germany
-		x=11
+		x=8
 		y=5
 		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
+		prerequisite={focus=BAV_Friends_from_the_SAX focus = BAV_enemies_from_the_SAX}
+		prerequisite={focus=BAV_Friends_from_the_North focus = BAV_enemies_from_the_North}
 		cost=5
 		ai_will_do={
 			factor=1
@@ -181,7 +244,7 @@ focus_tree = {
 
 		icon = GFX_goal_BAV_Ideological_revolution
 
-		x=19
+		x=12
 		y=6
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=5
@@ -203,7 +266,7 @@ focus_tree = {
 	focus={
 		id=BAV_Common_industrial_model
 		icon = GFX_goal_BAV_Common_industrial_model
-		x=3
+		x=4
 		y=6
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=5
@@ -221,7 +284,7 @@ focus_tree = {
 	focus={
 		id=BAV_Knock_the_alarm_bell
 		icon = GFX_goal_BAV_Knock_the_alarm_bell
-		x=11
+		x=8
 		y=7
 		prerequisite={focus=BAV_The_Revolutionary_Heart_of_Germany}
 		cost=0
@@ -245,7 +308,7 @@ focus_tree = {
 	focus={
 		id=BAV_Land_nership
 		icon = GFX_goal_BAV_Land_nership
-		x=0
+		x=3
 		y=7
 		prerequisite={focus=BAV_Common_industrial_model}
 		cost=4
@@ -294,7 +357,7 @@ focus_tree = {
 	focus= {
 		id=BAV_Industrial_estructuring
 		icon = GFX_goal_BAV_Industrial_estructuring
-		x=6
+		x=5
 		y=7
 		prerequisite={focus=BAV_Common_industrial_model}
 		cost=4
@@ -328,7 +391,7 @@ focus_tree = {
 	focus={
 		id=BAV_shining_new_stars_of_the_times
 		icon = GFX_goal_BAV_shining_new_stars_of_the_times
-		x=3
+		x=4
 		y=8
 		prerequisite={focus=BAV_Industrial_estructuring}
 		prerequisite={focus=BAV_Land_nership}
@@ -372,7 +435,7 @@ focus_tree = {
 	focus={
 		id=BAV_Peipeier_deal
 		icon = GFX_goal_BAV_Peipeier_deal
-		x=16
+		x=11
 		y=7
 		prerequisite={focus=BAV_Ideological_revolution
 }
@@ -409,7 +472,7 @@ focus_tree = {
 	focus={
 		id=BAV_Lenin_rther_xpansion
 		icon = GFX_goal_BAV_Lenin_rther_xpansion
-		x=22
+		x=13
 		y=7
 		prerequisite={focus=BAV_Ideological_revolution}
 		cost=4
@@ -442,7 +505,7 @@ focus_tree = {
 	focus={
 		id=BAV_Crush_revisionism
 		icon = GFX_goal_BAV_Crush_revisionism
-		x=19
+		x=12
 		y=8
 		prerequisite={focus=BAV_Peipeier_deal}
 		prerequisite={focus=BAV_Lenin_rther_xpansion}
@@ -464,7 +527,7 @@ focus_tree = {
 	focus={
 		id=BAV_Full_f_itality
 		icon = GFX_goal_BAV_Full_f_itality
-		x=11
+		x=8
 		y=9
 		prerequisite={focus=BAV_Knock_the_alarm_bell}
 		cost=5
@@ -500,7 +563,7 @@ focus_tree = {
 	focus={
 		id=BAV_1_2_1
 		icon = GFX_goal_BAV_1_2_1
-		x=9
+		x=6
 		y=10
 		prerequisite={focus=BAV_Full_f_itality}
 		cost=4
@@ -522,7 +585,7 @@ focus_tree = {
 	focus={
 		id=BAV_The_lmportance_of_discipline
 		icon = GFX_goal_BAV_The_lmportance_of_discipline
-		x=13
+		x=10
 		y=10
 		prerequisite={focus=BAV_Full_f_itality}
 		cost=4
@@ -551,7 +614,7 @@ focus_tree = {
 	focus={
 		id=BAV_The_new_germany_people_army
 		icon = GFX_goal_BAV_The_new_germany_people_army
-		x=11
+		x=8
 		y=11
 		prerequisite={focus=BAV_The_lmportance_of_discipline}
 		prerequisite={focus=BAV_1_2_1}
