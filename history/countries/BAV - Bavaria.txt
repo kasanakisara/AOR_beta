@@ -134,6 +134,9 @@ BAV = {
 country_event = { days = 1001 id = BAV.3 }
 country_event = { days = 1 id = BAV.1 }
 country_event = { days = 4 id = BAV_L.1 }
+country_event = { days = 365 id = BAV_L.12 }
+country_event = { days = 10 id = BAV_L.13 }
+country_event = { days = 7 id = BAV_L.16 }
 }
 
 #create_country_leader = {

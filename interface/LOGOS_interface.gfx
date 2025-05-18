@@ -10,6 +10,36 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_lenin_signature"
+		texturefile = "gfx/texticons/lenin_signature.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_KK_signature"
+		texturefile = "gfx/texticons/KK_signature.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_hotdog_signature"
+		texturefile = "gfx/texticons/hotdog_signature.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Ebert_signature"
+		texturefile = "gfx/texticons/Ebert_signature.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_anton_signature"
+		texturefile = "gfx/texticons/anton_signature.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_AOR_trust"
 		texturefile = "gfx/texticons/AOR_trust.png"
 		legacy_lazy_load = no

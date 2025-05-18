@@ -1160,6 +1160,109 @@ country_event = {
 	}
 }
 
+#列宁写信#
+country_event = {
+	id = BAV_L.13
+	title = BAV_L.13.t
+	desc = BAV_L.13.d
+	picture = GFX_BAV.19_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.13.a
+		custom_effect_tooltip = BAV_LETTER.ll.tt
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 		
+		hidden_effect = {
+			country_event = { days = 3 id = BAV_L.14  }
+		}
+	}
+}
+
+#考茨基写信#
+country_event = {
+	id = BAV_L.14
+	title = BAV_L.14.t
+	desc = BAV_L.14.d
+	picture = GFX_BAV.20_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.14.a
+		custom_effect_tooltip = BAV_LETTER.kk.tt
+		hidden_effect = {
+			country_event = { days = 7 id = BAV_L.15  }
+			country_event = { days = 70 id = BAV_L.17  }
+		}
+	}
+}
+
+#潘涅库克写信#
+country_event = {
+	id = BAV_L.15
+	title = BAV_L.15.t
+	desc = BAV_L.15.d
+	picture = GFX_BAV.21_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.15.a
+		custom_effect_tooltip = BAV_LETTER.ap.tt
+		add_political_power = 5
+	}
+}
+
+#艾伯特写信#
+country_event = {
+	id = BAV_L.16
+	title = BAV_L.16.t
+	desc = BAV_L.16.d
+	picture = GFX_BAV.22_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.16.a
+		custom_effect_tooltip = BAV_LETTER.ee.tt
+	}
+}
+
+#热狗写信#
+country_event = {
+	id = BAV_L.17
+	title = BAV_L.17.t
+	desc = BAV_L.17.d
+	picture = GFX_BAV.23_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.17.a
+		custom_effect_tooltip = BAV_LETTER.hd.tt
+		
+	}
+}
+
+#倍倍尔晕倒#
+country_event = {
+	id = BAV_L.18
+	title = BAV_L.18.t
+	desc = BAV_L.18.d
+	picture = GFX_BAV.3_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.18.a
+		
+	}
+}
+
 #建设抽到军工#
 country_event = {
 	id = BAV_L.200

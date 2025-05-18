@@ -507,6 +507,7 @@ focus_tree={
 		}
 		completion_reward={
 		add_stability  = 0.05
+		country_event = BAV_L.18
 		custom_effect_tooltip = AOR_Bebel_Trust_30_tt
 		  add_to_variable = {
 			Bebel_Trust = 30
