@@ -404,11 +404,11 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = 0.010
+				conscription = -0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
-				army_attack_factor  = -0.1
-				army_defence_factor  = -0.1
+				army_attack_factor  = -0.05
+				army_defence_factor  = -0.05
 				training_time_factor = -0.05
 			}
 		}
@@ -420,9 +420,11 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
+				conscription = 0.010
 				army_attack_factor  = -0.05
 				army_defence_factor  = -0.05
 				drift_defence_factor = -0.25
+				training_time_factor = -0.05
 			}
 		}
 		Extreme_democratic_rampant_5 = {
@@ -433,11 +435,12 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = 0.010
+				conscription = -0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
-				army_attack_factor  = -0.05
-				army_defence_factor  = -0.05
+				army_attack_factor  = 0.05
+				army_defence_factor  = 0.05
+				training_time_factor = -0.05
 			}
 		}
 		#流寇作风
