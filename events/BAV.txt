@@ -1107,6 +1107,44 @@ country_event = {
 	}
 }
 
+#倍找卢#
+country_event = {
+	id = BAV_L.10
+	title = BAV_L.10.t
+	desc = BAV_L.10.d
+	picture = GFX_BAV.16_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.10.a
+		set_country_flag = BEBEL.TRUST.GO.L
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
+#倍找李#
+country_event = {
+	id = BAV_L.11
+	title = BAV_L.11.t
+	desc = BAV_L.11.d
+	picture = GFX_BAV.17_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.11.a
+		set_country_flag = BEBEL.TRUST.GO.LI
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
 #建设抽到军工#
 country_event = {
 	id = BAV_L.200

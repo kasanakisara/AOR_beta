@@ -30,4 +30,29 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = decision_cost_stab_5_tooltip
+	text = {
+		trigger = {
+			has_stability < 5
+		}
+		localization_key = decision_cost_stab_5
+	}
+	text = {
+		localization_key = decision_cost_stab_5_blocked
+	}
+}
+
+defined_text = {
+	name = decision_cost_ws_5_tooltip
+	text = {
+		trigger = {
+			has_stability < 5
+		}
+		localization_key = decision_cost_ws_5
+	}
+	text = {
+		localization_key = decision_cost_ws_5_blocked
+	}
+}
 

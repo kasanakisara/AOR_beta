@@ -36,6 +36,14 @@
  decision_cost_trust_45:0 " £AOR_trust §Y45§!"
  decision_cost_trust_45_blocked:0 " £AOR_trust §R45§!"
  decision_cost_trust_45_tooltip:0 "这将花费£AOR_trust §Y45§! 信任点数。"
+
+ decision_cost_stab_5:0 " £AOR_stability §Y5§!"
+ decision_cost_stab_5_blocked:0 " £AOR_stability §R5§!"
+ decision_cost_stab_5_tooltip:0 " \n这将花费£AOR_stability §Y5§! 稳定度。"
+
+ decision_cost_ws_5:0 " £AOR_ws §Y5§!"
+ decision_cost_ws_5_blocked:0 " £AOR_ws §R5§!"
+ decision_cost_ws_5_tooltip:0 " \n这将花费£AOR_ws §Y5§! 战争支持度。"
  
  bav_pp_trust_change:0 "以信任换取筹码"
  bav_pp_trust_change_factory:0"推动国家建设"
@@ -46,6 +54,11 @@
  bav_trust_coffee_desc:0"也许有一天，我们都会老去，都会退休，在午后的街角共饮一杯咖啡，像懒虫一般晒着太阳。然而，现在时间紧迫，还是一边工作一边喝吧。"
  bav_trust_coffee_2_desc:0"也许有一天，我们都会回到过去，都能拥有未褪的勇敢与似是而非的稚气，将一切推倒再重头来过。然而，现在时间紧迫，还是去喝杯咖啡醒醒神吧。"
  bav_trust_trait_desc:0"随着奥古斯特坚持不懈地工作，流言蜚语也逐渐烟消云散。"
+ bav_st_trust_change:0"以稳定换取信任"
+ bav_st_trust_change_desc:0"倍倍尔因其坚定且不可被否决的态度而闻名，有时，我们恰恰需要这般的信念来冲破一切障碍。"
+ bav_ws_trust_change:0"以战争支持度换取信任"  
+ bav_ws_trust_change_desc:0"倍倍尔因其坚定且不可被否决的态度而闻名，有时，我们恰恰需要这般的信念来冲破一切障碍。"
+
 
  BAV_L.200.t:0"军工建设计划的落地"
  BAV_L.200.d:0""
@@ -93,3 +106,21 @@
  bav_eugen_candy.tt:0"\n§Y欧根·莱文§! 1(2/2/1/1) (§Y鲁莽§!，§Y严厉指挥官§!，§Y政治关联者§!，§Y坚定的革命派§!)被雇佣为§Y将领§!"
  bav_eugen_candy.1.tt:0"解锁决议：将§Y欧根·莱文§! 1(2/2/1/1) (§Y鲁莽§!，§Y严厉指挥官§!，§Y政治关联者§!，§Y坚定的革命派§!)雇佣为§Y将领§!。"
 
+ bav_ll_start.tt:0"解锁决议：§Y乡下见闻§!，§Y慕尼黑的街道§!。§g现在倍倍尔可以提议李卢离开市政厅，进行实地考察了。§!"
+ bav_lux_start:0"乡下见闻"
+ bav_karl_start:0"慕尼黑的街道"
+ bav_lux_start_desc:0"在办公室里看到的都是问题，在乡野里看到的都是答案。"
+ bav_karl_start_desc:0"在办公室里看到的都是问题，在乡野里看到的都是答案。"
+ BEBEL.TRUST.GO.L:0"§Y卢森堡§!已在倍倍尔的提议下，前往巴伐利亚的§Y乡野地区§!。"
+ BEBEL.TRUST.GO.LI:0"§Y李卜克内西§!已在倍倍尔的提议下，前往巴伐利亚最繁华的地区-§Y慕尼黑§!。"
+
+ bav_trust_ideo_aff_1:0"领导革命-萨克森"
+ bav_trust_ideo_aff_1_desc:0"目前，全国各地的先进势力都正欣欣向荣，如雨后春笋般席卷德意志。虽然我们之间存在较大的分歧，但仍有联合的一线可能。\n通过坚持不断的扩大在该地区的影响力，再加之奥古斯特·倍倍尔的高信任度，我们也许可以在未来达成和统的可能。"
+ bav_trust_ideo_aff_2:0"领导革命-符腾堡"
+ bav_trust_ideo_aff_2_desc:0"目前，全国各地的先进势力都正欣欣向荣，如雨后春笋般席卷德意志。虽然我们之间存在较大的分歧，但仍有联合的一线可能。\n通过坚持不断的扩大在该地区的影响力，再加之奥古斯特·倍倍尔的高信任度，我们也许可以在未来达成和统的可能。"
+ bav_trust_ideo_aff_3:0"领导革命-石荷"
+ bav_trust_ideo_aff_3_desc:0"目前，全国各地的先进势力都正欣欣向荣，如雨后春笋般席卷德意志。虽然我们之间存在较大的分歧，但仍有联合的一线可能。\n通过坚持不断的扩大在该地区的影响力，再加之奥古斯特·倍倍尔的高信任度，我们也许可以在未来达成和统的可能。"
+
+ bav_trust_ideo_aff_4:0"领导革命-法兰克福"
+ bav_trust_ideo_aff_4_desc:0"目前，全国各地的先进势力都正欣欣向荣，如雨后春笋般席卷德意志。虽然我们之间存在较大的分歧，但仍有联合的一线可能。\n卡尔·拉狄克正在法兰克福境内扩大影响力，我们可以助他一臂之力。"
+ BAV.NAU.1.tt:0"卡尔·拉狄克的影响力变化：§G10.00%§!"

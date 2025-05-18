@@ -15,6 +15,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	spriteType = {
+		name = "GFX_AOR_stability"
+		texturefile = "gfx/interface/stability_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_AOR_ws"
+		texturefile = "gfx/interface/war_support_icon.dds"
+		legacy_lazy_load = no
+	}
+	
 	spriteType = { 
 		name = "GFX_BAV_GUI_1"
 		texturefile = "gfx/leaders/BAV/Bebel_1900_3.png" 

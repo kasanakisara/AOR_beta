@@ -19,7 +19,6 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = { has_political_power > 0 }
 		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
@@ -547,7 +546,6 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = { has_political_power > 0 }
 		available_if_capitulated=yes
 		continue_if_invalid = yes
 		search_filters={
@@ -555,6 +553,7 @@ focus_tree={
 		completion_reward={
 		 country_event = { id = BAV.4 }
 		 add_timed_idea = { idea = BAV_Economic_restructuring days = 180 }
+		 custom_effect_tooltip = bav_ll_start.tt
 		}
 	}
 	focus={
@@ -567,7 +566,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = { has_political_power > 0 }
+		available = { 
+			has_country_flag = BEBEL.TRUST.GO.L
+		 }
 		available_if_capitulated=yes
 		continue_if_invalid = yes
 		search_filters={
@@ -586,7 +587,7 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available = { has_political_power > 0 }
+		available = { has_country_flag = BEBEL.TRUST.GO.LI }
 		available_if_capitulated=yes
 		continue_if_invalid = yes
 		search_filters={
