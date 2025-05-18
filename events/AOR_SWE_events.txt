@@ -831,6 +831,17 @@ country_event = {
 }
 
 country_event = {
+    id = SWE.39 #你门户开放了个啥！look into my eyes!
+    title = SWE.39.t
+    desc = SWE.39.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.39.a
+        add_political_power = -100
+    }
+}
+
+country_event = {
     id = SWE_Folkhemmet.1 #教育状态恶化-迫在眉睫的贪污问题
     title = SWE_Folkhemmet.1.t
     desc = SWE_Folkhemmet.1.d

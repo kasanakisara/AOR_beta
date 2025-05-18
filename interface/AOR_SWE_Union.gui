@@ -2,30 +2,29 @@ guiTypes = { #决议结构
 	containerWindowType = {
 		name = "AOR_SWE_Union_decision_gui"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 440 }
+		size = { width = 100% height= 360 }
 
 		iconType = {
 			name = "AOR_SWE_Union_gui_bg"
 			spriteType = "GFX_SWE_Union_Federation"
-			position = { x = 15 y = 80 }
-		}
-
-		buttonType = {
-			name = "AOR_SWE_Union_gui_info"
-			spriteType = "GFX_SWE_Union_Info"
-			position = { x = 420 y = 0 }
-			pdx_tooltip = "AOR_SWE_Union_gui_info_tt"
+			position = { x = 15 y = 10 }
 		}
 
 		instantTextBoxType = {
 			name = "AOR_SWE_Union_gui_num"
-			position = { x = 250 y = 80 }
+			position = { x = 250 y = 10 }
 			font = "hoi_20bs"
 			text = "SWE_Union_num"
 			format = left
 			maxWidth = 250
 		}
 
+		buttonType = {
+			name = "AOR_SWE_Union_gui_info"
+			spriteType = "GFX_SWE_Union_Info"
+			position = { x = 420 y = 30 }
+			pdx_tooltip = "AOR_SWE_Union_gui_info_tt"
+		}
 		
 	}
 
@@ -39,7 +38,6 @@ guiTypes = { #决议结构
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_transparent"
 		}	
-
 		iconType = {
 			name = "SWE_Union_GUI_background_entry"
 			spriteType = "GFX_SWE_Union_gui_entry"

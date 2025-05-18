@@ -953,10 +953,16 @@ SWE_Union_decision_categories = { #联邦一梦
         activation = {
             has_completed_focus = SWE_Beautiful_New_World
             has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_complete_arbitration
+            }
         }
         visible = {
             has_completed_focus = SWE_Beautiful_New_World
             has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_complete_arbitration
+            }
         }
 
         fixed_random_seed = no
@@ -979,6 +985,7 @@ SWE_Union_decision_categories = { #联邦一梦
             }
             add_to_variable = { SWE_Union_progress_value = 10 }
             custom_effect_tooltip = SWE_Union_progress_add_10_tt
+            set_country_flag = SWE_complete_arbitration
         }
 
 
@@ -987,6 +994,7 @@ SWE_Union_decision_categories = { #联邦一梦
             add_stability = -0.1
             add_to_variable = { SWE_Union_progress_value = -10 }
             custom_effect_tooltip = SWE_Union_progress_minus_10_tt
+            set_country_flag = SWE_complete_arbitration
         }
     }
 
@@ -998,10 +1006,16 @@ SWE_Union_decision_categories = { #联邦一梦
         activation = {
             has_completed_focus = SWE_Welfare_New_Society
             has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_complete_religion
+            }
         }
         visible = {
             has_completed_focus = SWE_Welfare_New_Society
             has_idea = SWE_The_Union_Dream
+            NOT = {
+                has_country_flag = SWE_complete_religion
+            }
         }
 
         fixed_random_seed = no
@@ -1023,6 +1037,7 @@ SWE_Union_decision_categories = { #联邦一梦
             add_war_support = 0.1
             add_to_variable = { SWE_Union_progress_value = 10 }
             custom_effect_tooltip = SWE_Union_progress_add_10_tt
+            set_country_flag = SWE_complete_religion
         }
 
 
@@ -1032,6 +1047,7 @@ SWE_Union_decision_categories = { #联邦一梦
             add_war_support = -0.1
             add_to_variable = { SWE_Union_progress_value = -10 }
             custom_effect_tooltip = SWE_Union_progress_minus_10_tt
+            set_country_flag = SWE_complete_religion
         }
     }
 }
@@ -1196,6 +1212,9 @@ SWE_Folkhemmet_decision_categories = { #人民之家
                 tooltip = SWE_Education_crisis_happening
             }
             has_country_flag = SWE_Folkhemmet_flag
+            NOT = {
+                has_completed_focus = SWE_People_University
+            }
 		}
 		available = {
             OR = {
@@ -1212,6 +1231,9 @@ SWE_Folkhemmet_decision_categories = { #人民之家
             custom_trigger_tooltip = {
                 check_variable = { SWE_Education > 1 }
                 tooltip = SWE_Education_crisis_happening
+            }
+            NOT = {
+                has_completed_focus = SWE_People_University
             }
             has_country_flag = SWE_Folkhemmet_flag
         }
@@ -1270,6 +1292,9 @@ SWE_Folkhemmet_decision_categories = { #人民之家
         activation = {
             check_variable = { SWE_Labor > 1 }
             has_country_flag = SWE_Folkhemmet_flag
+            NOT = {
+                has_completed_focus = SWE_Labor_Protection
+            }
 		}
 		available = {
             OR = {
@@ -1285,6 +1310,9 @@ SWE_Folkhemmet_decision_categories = { #人民之家
         visible = {
             check_variable = { SWE_Labor > 1 }
             has_country_flag = SWE_Folkhemmet_flag
+            NOT = {
+                has_completed_focus = SWE_Labor_Protection
+            }
         }
 
         cancel_trigger = {
