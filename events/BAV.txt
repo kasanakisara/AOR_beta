@@ -76,7 +76,7 @@ country_event = {
 	id = BAV.6
 	title = BAV.6.t
 	desc = BAV.6.d
-	picture = GFX_BAV.6_pic
+	picture = GFX_BAV.16_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = no
@@ -85,12 +85,12 @@ country_event = {
 	}
 }
 
-#妇女的解放 (缺少文案）
+#妇女的解放 
 country_event = {
 	id = BAV.7
 	title = BAV.7.t
 	desc = BAV.7.d
-	picture = GFX_BAV.7_pic
+	picture = GFX_BAV.11_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = no
@@ -104,7 +104,7 @@ country_event = {
 	id = BAV.8
 	title = BAV.8.t
 	desc = BAV.8.d
-	picture = GFX_BAV.8_pic
+	picture = GFX_BAV.17_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = no
