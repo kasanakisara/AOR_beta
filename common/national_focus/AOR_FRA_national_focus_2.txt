@@ -183,26 +183,13 @@ focus_tree = {
 
 		cost = 2
 
-	
-
-		
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-		
-		
-
 		completion_reward = {	
 			
 		}
 	}
 	focus = {
 		id = AOR_FRA_Raise_tariffs #提高关税
-		icon = AOR_FRA_Raise_tariffs
+		icon = GFX_goal_AOR_FRA_Raise_tariffs
 		relative_position_id = AOR_FRA_new_ideas
 		prerequisite = { focus = AOR_FRA_new_ideas }
 		
