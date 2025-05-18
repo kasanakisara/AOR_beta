@@ -42,6 +42,14 @@ spriteTypes = {
 		name = "GFX_goal_AOR_FRA_new_ideas" #xinsilu
 		texturefile = "gfx/interface/goals/FRA/AOR_FRA_new_ideas.png"			
 	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Gold_is_restricted" #限购黄金
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Gold_is_restricted.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Raise_tariffs" #关税
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Raise_tariffs.png"			
+	}
 	
 	SpriteType = {
 		name = "GFX_BEL_LB"
