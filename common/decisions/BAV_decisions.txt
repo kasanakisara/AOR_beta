@@ -2,13 +2,12 @@ BAV_Bebel_Trust = {
 
 	bav_auto_1 = { #每月自动提升_1
         icon = GFX_decision_category_generic_communism
-
+		priority = 100
 		available = {                           
 			 	has_country_flag = BAV.belel.dead
 		}		
 		activation = {	
 			NOT = {has_country_flag = BAV.belel.dead}
-			has_country_flag  = Bebel_mission_finish_1
 		}
 		visible = { always = yes }
 		fire_only_once = no
@@ -19,41 +18,15 @@ BAV_Bebel_Trust = {
 		timeout_effect = {                    
 					custom_effect_tooltip = AOR_Bebel_Trust_30_tt
 					add_to_variable = {Bebel_Trust = 30}   
-					set_country_flag = Bebel_mission_finish  
-					clr_country_flag =  Bebel_mission_finish_1
+					activate_mission = BAV_Bebel_Trust
 		}
 		
 	}
 	
-	bav_auto_2 = { #每月自动提升_2
-        icon = GFX_decision_category_generic_communism
-
-		available = {                           
-			 	has_country_flag = BAV.belel.dead
-		}		
-		activation = {	
-			NOT = {has_country_flag = BAV.belel.dead}
-			has_country_flag  = Bebel_mission_finish
-		}
-		visible = { always = yes }
-		fire_only_once = no
-		days_re_enable = 1
-		is_good = yes
-		days_mission_timeout =  30
-		
-		timeout_effect = {                    
-					custom_effect_tooltip = AOR_Bebel_Trust_30_tt
-					add_to_variable = {Bebel_Trust = 30}   
-					set_country_flag = Bebel_mission_finish_1  
-					clr_country_flag =  Bebel_mission_finish
-		}
-		
-	}
-
 	bav_pp_trust_change = { #信任兑换PP点
         icon = GFX_decision_category_generic_communism
 		
-		
+		priority = 90
 		available = {                           
 			 original_tag = BAV
 		}		
@@ -64,20 +37,21 @@ BAV_Bebel_Trust = {
 			factor = 1
 			modifier = {
 				add = 10
-				has_political_power < 0
+				has_political_power < 50
 			}
 		}
+		ai_hint_pp_cost = 20
 
 		fire_only_once = no
 		days_remove = 0	
 		days_re_enable = 0
-
 
 		custom_cost_trigger = {
 			check_variable = { 
 				Var = Bebel_Trust
 				Value > 15
 		}
+	}
 		custom_cost_text = decision_cost_trust_15
 
 		complete_effect = {  
@@ -85,8 +59,284 @@ BAV_Bebel_Trust = {
 			add_to_variable = {
 				Bebel_Trust = -15
 			}
-			custom_effect_tooltip = AOR_Bebel_Trust_0_15_tt
+		}
+	}
+
+	bav_pp_trust_change_factory = { #信任兑换种田
+        icon = GFX_decision_category_generic_communism
+		
+		priority = 80
+		available = {                           
+			 original_tag = BAV
+		}		
+
+		visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 4
+		}
+
+		fire_only_once = no
+		days_remove = 0	
+		days_re_enable = 0
+		cost = 200
+
+		complete_effect = {  
+			custom_effect_tooltip = AOR_Bebel_Trust_00_tt
+			
+			hidden_effect = {
+				random_list = { 
+			
+				30 = {  
+					country_event = BAV_L.200
+				}
+				30 = {  
+					country_event = BAV_L.201
+				}
+				20 = {  
+					country_event = BAV_L.202
+				}				
+				10 = {  
+					country_event = BAV_L.203
+				}
+				10 = {  
+					country_event = BAV_L.204
+				}
+			
+				}	
+			}
+			
+			add_to_variable = {
+				Bebel_Trust = -45
+			}
+		}
+	}
+
+	bav_trust_coffee= { #与梅林的下午茶时间
+        icon = GFX_decision_category_generic_communism
+		
+		
+		available = {                           
+			 original_tag = BAV
+		}		
+
+		visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 10
+		}
+	
+
+		fire_only_once = yes
+		days_remove = 7	
+		
+
+		remove_effect = {  
+			country_event =  BAV_L.205
+		}
+	}
+
+	bav_trust_coffee_2= { #与梅林的下午茶时间
+        icon = GFX_decision_category_generic_communism
+		
+		
+		available = {                           
+			 original_tag = BAV
+		}		
+
+		visible = { has_country_flag = BAV_COFFEE }
+		
+		ai_will_do = {
+			factor = 10
+		}
+	
+
+		fire_only_once = yes
+		days_remove = 7	
+		
+
+		remove_effect = {  
+			country_event =  BAV_L.206
+		}
+	}
+
+	bav_trust_manpower = { #信任兑换人力
+	    
+		icon = GFX_decision_category_generic_communism
+		
+		priority = 70
+		available = {                           
+			 original_tag = BAV
+		}		
+
+		visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 30
+		cost = 100
+		remove_effect = { 
+			custom_effect_tooltip = AOR_Bebel_Trust_01_tt 
+			hidden_effect = {
+					random_list = { 
+				30 = {  #倾向
+					add_manpower = 15924
+				} 
+				10 = {  #倾向
+					add_manpower = 3325
+				} 
+				30 = {  #倾向
+					add_manpower = 8922
+				} 
+				10 = {  #倾向
+					add_manpower = 12008
+				} 
+				10 = {  #倾向
+					add_manpower = 27624
+				} 
+				10 = {  #倾向
+					add_manpower = 5490
+				} 
+				}
+			}
+
+		}
+	}
+
+	bav_trust_ideo_1 = { #pp骚扰别人
+	    
+		icon = GFX_decision_category_generic_communism
+		
+		priority = 60
+		available = {                           
+			 original_tag = BAV
+			 country_exists = SAX
+			}		
+
+		visible = { country_exists = SAX }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 10
+		cost = 50
+		highlight_states = {
+			is_owned_and_controlled_by = SAX
+			#highlight_state_targets = { state = 842 state = 65 }
+		}
+		complete_effect = { 
+			custom_effect_tooltip = AOR_Bebel_Trust_02_tt 
+			}
+		modifier = {
+
+			}
+		
+
+		}
+
+	bav_trust_trait = { #消除余波
+	    
+		icon = GFX_decision_category_generic_communism
+		
+		priority = 90
+		available = {                           
+			 original_tag = BAV
+			 NOT = {has_country_flag = BAV.belel.dead}		
+		}
+		visible = {
+			NOT = {has_country_flag = BAV_TRUST_TRAIT_OVER} 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+		fire_only_once = no
+		days_remove = 35
+		days_re_enable = 5
+		cost = 50
+		remove_effect = { 
+
+						if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation }
+							}
+							remove_country_leader_trait = Aftermath_of_resignation
+							add_country_leader_trait = Aftermath_of_resignation_1
+			  				 }
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_1}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_1
+							add_country_leader_trait = Aftermath_of_resignation_2
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_2}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_2
+							add_country_leader_trait = Aftermath_of_resignation_3
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_3}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_3
+							add_country_leader_trait = Aftermath_of_resignation_4
+						}
+						else_if = {
+							limit = {
+								BAV_Bebel = { has_trait = Aftermath_of_resignation_4}
+							}
+							remove_country_leader_trait = Aftermath_of_resignation_4
+							add_country_leader_trait = Aftermath_of_resignation_5
+							set_country_flag = BAV_TRUST_TRAIT_OVER
+						}
+			
+
+
+		}
+	}
+
+	bav_eugen_candy= { #任命欧根
+        icon = GFX_decision_category_generic_communism
+		
+		
+		available = {                           
+			 original_tag = BAV
+			 has_completed_focus = BAV_Training_style_roving_rebels
+		}		
+
+		visible = { 
+			has_completed_focus = BAV_Training_style_roving_rebels
 		}
 		
+		ai_will_do = {
+			factor = 100
+		}
+	
+
+		fire_only_once = yes
+		days_remove = 3	
+		
+
+		remove_effect = {  
+			country_event =  BAV_L.2
+			
+			custom_effect_tooltip = bav_eugen_candy.tt
+
+			hidden_effect = {recruit_character = Eugen_Levine_army}
+		}
 	}
+
+
 }
+
+	

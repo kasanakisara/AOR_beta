@@ -59,50 +59,6 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = {
-		id = AOR_Continue_the_dual_monarchy
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Hold_a_political_conference
-		}
-		mutually_exclusive = {
-			focus = AOR_the_kings_of_country
-		}
-		x = 6
-		y = 3
-
-	}
-	focus = {
-		id = AOR_King_Cnut
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Continue_the_dual_monarchy
-		}
-		mutually_exclusive = {
-			focus = AOR_King_Olaf
-			focus = AOR_King_Andreas
-		}
-		x = 2
-		y = 4
-
-	}
-	focus = {
-		id = AOR_King_Andreas
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = AOR_Continue_the_dual_monarchy
-		}
-		mutually_exclusive = {
-			focus = AOR_King_Olaf
-			focus = AOR_King_Cnut
-		}
-		x = 10
-		y = 4
-
-	}
 	## 经济线开始 ##
 	focus = {
 		id = AOR_New_economic_reforms
@@ -124,7 +80,7 @@ focus_tree = {
 			focus = AOR_New_economic_reforms
 		}
 		mutually_exclusive = {
-			focus = AOR_Mutual_Exclusion
+			focus = AOR_Marketism
 			focus = AOR_The_fresh_breeze_of_new_reforms
 		}
 		x = 16
@@ -176,7 +132,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Provide_emergency_assistance
+		id = AOR_Restart_Karlstard_Plan
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -208,7 +164,7 @@ focus_tree = {
 			focus = AOR_Increase_national_debt
 		}
 		prerequisite = {
-			focus = AOR_Provide_emergency_assistance
+			focus = AOR_Restart_Karlstard_Plan
 		}
 		prerequisite = {
 			focus = AOR_Northern_mining
@@ -220,7 +176,7 @@ focus_tree = {
 	#经济左线结束#
 	#经济中线开始#
 	focus = {
-		id = AOR_Mutual_Exclusion
+		id = AOR_Marketism
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -239,7 +195,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Mutual_Exclusion
+			focus = AOR_Marketism
 		}
 		x = 23
 		y = 7
@@ -268,7 +224,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_abandon_the_tariff_wall
+		id = AOR_Lift_Supervision
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -314,7 +270,7 @@ focus_tree = {
 			focus = AOR_Liberated_reorganization
 		}
 		prerequisite = {
-			focus = AOR_abandon_the_tariff_wall
+			focus = AOR_Lift_Supervision
 		}
 		x = 23
 		y = 10
@@ -330,7 +286,7 @@ focus_tree = {
 			focus = AOR_New_economic_reforms
 		}
 		mutually_exclusive = {
-			focus = AOR_Mutual_Exclusion
+			focus = AOR_Marketism
 			focus = AOR_Tangible_hands
 		}
 		x = 30
@@ -360,7 +316,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_Severe_working_conditions
+		id = AOR_More_Severe_working_conditions
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -389,7 +345,7 @@ focus_tree = {
 			focus = AOR_More_comprehensive_foreign_control
 		}
 		prerequisite = {
-			focus = AOR_Severe_working_conditions
+			focus = AOR_More_Severe_working_conditions
 		}
 		x = 30
 		y = 9
@@ -400,7 +356,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_Severe_working_conditions
+			focus = AOR_More_Severe_working_conditions
 		}
 		x = 32
 		y = 9
@@ -426,7 +382,7 @@ focus_tree = {
 	#经济右线结束#
 	##经济线结束##
 	focus = {
-		id = AOR_the_kings_of_country
+		id = AOR_The_Only_King
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -444,7 +400,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_the_kings_of_country
+			focus = AOR_The_Only_King
 		}
 		x = 41
 		y = 4
@@ -614,6 +570,51 @@ focus_tree = {
 		y = 8
 
 	}
+	##政治左线由此开始
+	focus = {
+		id = AOR_Continue_the_dual_monarchy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Hold_a_political_conference
+		}
+		mutually_exclusive = {
+			focus = AOR_The_Only_King
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = AOR_King_Knud
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Continue_the_dual_monarchy
+		}
+		mutually_exclusive = {
+			focus = AOR_King_Olaf
+			focus = AOR_King_Andreas
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = AOR_King_Andreas
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = AOR_Continue_the_dual_monarchy
+		}
+		mutually_exclusive = {
+			focus = AOR_King_Olaf
+			focus = AOR_King_Knud
+		}
+		x = 10
+		y = 4
+
+	}
 	focus = {
 		id = AOR_King_Olaf
 		icon = GFX_goal_unknown
@@ -622,7 +623,7 @@ focus_tree = {
 			focus = AOR_Continue_the_dual_monarchy
 		}
 		mutually_exclusive = {
-			focus = AOR_King_Cnut
+			focus = AOR_King_Knud
 			focus = AOR_King_Andreas
 		}
 		x = 6
@@ -634,7 +635,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_King_Cnut
+			focus = AOR_King_Knud
 		}
 		x = 2
 		y = 5
@@ -927,7 +928,7 @@ focus_tree = {
 		x = 20
 		y = 12
 		allow_branch = {
-			has_completed_focus = AOR_Throat_Crisis
+			#has_completed_focus = AOR_Throat_Crisis
 		}
 
 	}
@@ -1078,7 +1079,7 @@ focus_tree = {
 		x = 32
 		y = 15
 		allow_branch = {
-			has_completed_focus = AOR_After_the_Storm
+			#has_completed_focus = AOR_After_the_Storm
 		}
 	}
 	focus = {

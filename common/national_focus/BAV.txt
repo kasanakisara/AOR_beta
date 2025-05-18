@@ -19,6 +19,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -39,6 +41,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		add_war_support = 0.05
 		army_experience = 25
@@ -79,7 +83,9 @@ focus_tree={
 					days > 180
 				}
 			}
+		has_political_power > 0
 		}
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -88,10 +94,12 @@ focus_tree={
 		  add_to_variable = {
 			Bebel_Trust = -10
 			}
+		available = { has_political_power > 0 }
 		swap_ideas = {
 		remove_idea = Roving_style
 		add_idea = Roving_style_1 
 			}
+		custom_effect_tooltip = bav_eugen_candy.1.tt
 		custom_effect_tooltip = BAV.focus.L.2.tt
 			hidden_effect = {
 				add_political_power = -28
@@ -111,6 +119,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		custom_effect_tooltip = AOR_Bebel_Trust_0_10_tt
 		  add_to_variable = {
@@ -141,6 +151,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		add_war_support = 0.05
 		custom_effect_tooltip = BAV.focus.5.tt
@@ -204,8 +216,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_war_support = -0.05
 		add_stability = 0.1
@@ -236,8 +250,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		swap_ideas = {
 		remove_idea = Extreme_democratic_rampant_1
@@ -260,7 +276,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -285,8 +303,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_war_support = 0.05
 		army_experience = 5
@@ -323,8 +343,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_stability = 0.05
 		army_experience = 5
@@ -361,8 +383,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_stability  = 0.1
 		add_political_power = 120
@@ -387,8 +411,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_manpower = -851
 		custom_effect_tooltip = AOR_Bebel_Trust_0_15_tt
@@ -416,7 +442,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -442,7 +470,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -467,7 +497,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -500,6 +532,7 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+
 		completion_reward={
 		country_event = {  id = BAV.10 }
 		}
@@ -514,7 +547,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -532,7 +567,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -549,7 +586,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -566,7 +605,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -593,7 +634,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -612,7 +655,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -629,11 +674,14 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
 		add_stability = -0.08
+		country_event = BAV_L.5
 		custom_effect_tooltip = BAV.focus.7.tt
 		hidden_effect = {
 		 country_event = { days = 180 id = BAV.9 }
@@ -652,7 +700,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -683,7 +733,10 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
+		country_event = BAV_L.4
 		52 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -704,10 +757,13 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+		country_event = BAV_L.3
 		if = {
 			limit = {
 				NOT = { has_idea = BAV_a_deep_cut_from_revolution_1 } 
@@ -737,6 +793,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -759,6 +817,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		add_ideas = BAV_product_in_command
 		set_country_flag  = BAV_product_in_command_flag
@@ -778,6 +838,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		custom_effect_tooltip = BAV.focus.4.tt
 		hidden_effect = {
@@ -799,6 +861,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -817,6 +881,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -858,6 +924,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
 		  add_to_variable = {

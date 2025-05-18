@@ -960,3 +960,331 @@ country_event = {
 			} 
 	}
 }
+
+#李来通知莱文去管军事#
+country_event = {
+	id = BAV_L.2
+	title = BAV_L.2.t
+	desc = BAV_L.2.d
+	picture = GFX_BAV.7_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.2.a
+		add_political_power = 10
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
+#交易所刚开，被抓了#
+country_event = {
+	id = BAV_L.3
+	title = BAV_L.3.t
+	desc = BAV_L.3.d
+	picture = GFX_BAV.8_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.3.a
+		custom_effect_tooltip = BAV.focus.L.3.tt
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
+#老工人喝咖啡#
+country_event = {
+	id = BAV_L.4
+	title = BAV_L.4.t
+	desc = BAV_L.4.d
+	picture = GFX_BAV.9_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.4.a
+		custom_effect_tooltip = AOR_Bebel_Trust_10_tt
+		add_to_variable = {
+			Bebel_Trust = 10
+			} 
+	}
+}
+
+#夫妻吵架#
+country_event = {
+	id = BAV_L.5
+	title = BAV_L.5.t
+	desc = BAV_L.5.d
+	picture = GFX_BAV.11_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.5.a
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
+#重建军队#
+country_event = {
+	id = BAV_L.6
+	title = BAV_L.6.t
+	desc = BAV_L.6.d
+	picture = GFX_BAV.12_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.6.a
+		custom_effect_tooltip = AOR_Bebel_Trust_7_tt
+		add_to_variable = {
+			Bebel_Trust = 7
+			} 
+	}
+}
+
+#打击极端民主#
+country_event = {
+	id = BAV_L.7
+	title = BAV_L.7.t
+	desc = BAV_L.7.d
+	picture = GFX_BAV.13_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.7.a
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 
+	}
+}
+
+#整顿流寇#
+country_event = {
+	id = BAV_L.8
+	title = BAV_L.8.t
+	desc = BAV_L.8.d
+	picture = GFX_BAV.14_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.8.a
+		custom_effect_tooltip = AOR_Bebel_Trust_10_tt
+		add_to_variable = {
+			Bebel_Trust = 10
+			} 
+	}
+}
+
+#旧官僚#
+country_event = {
+	id = BAV_L.9
+	title = BAV_L.9.t
+	desc = BAV_L.9.d
+	picture = GFX_BAV.15_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.9.a
+		custom_effect_tooltip = AOR_Bebel_Trust_17_tt
+		add_to_variable = {
+			Bebel_Trust = 17
+			} 
+	}
+}
+
+#建设抽到军工#
+country_event = {
+	id = BAV_L.200
+	title = BAV_L.200.t
+	desc = BAV_L.200.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	hidden = no
+	option = {
+		name = BAV_L.200.a
+		random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes 
+							#province = {limit_to_victory_point = yes}
+						}
+		} 
+	}
+}
+
+#建设抽到民工#
+country_event = {
+	id = BAV_L.201
+	title = BAV_L.201.t
+	desc = BAV_L.201.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	hidden = no
+	option = {
+		name = BAV_L.201.a
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes 
+							#province = {limit_to_victory_point = yes}
+						}
+					} 
+	}
+}
+
+
+#建设抽到基础设施#
+country_event = {
+	id = BAV_L.202
+	title = BAV_L.202.t
+	desc = BAV_L.202.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	hidden = no
+	option = {
+		name = BAV_L.202.a
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes 
+							#province = {limit_to_victory_point = yes}
+						}
+					}
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes 
+							#province = {limit_to_victory_point = yes}
+						}
+					}
+	}
+}
+
+#建设抽到空军基地#
+country_event = {
+	id = BAV_L.203
+	title = BAV_L.203.t
+	desc = BAV_L.203.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	hidden = no
+	option = {
+		name = BAV_L.203.a
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes 
+						}
+					}
+	}
+}
+
+#建设抽到要塞#
+country_event = {
+	id = BAV_L.204
+	title = BAV_L.204.t
+	desc = BAV_L.204.d
+	picture = GFX_BAV.6_pic
+	is_triggered_only = yes
+	hidden = no
+	option = {
+		name = BAV_L.204.a
+					53 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes 
+							province = 6540
+						}
+					}
+					53 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes 
+							province = 3299
+						}
+					}
+					53 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes 
+							province = 571
+						}
+					}
+					53 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes 
+							province = 586
+						}
+					}
+	}
+}
+
+
+#梅林和倍倍尔下午茶-其一#
+country_event = {
+	id = BAV_L.205
+	title = BAV_L.205.t
+	desc = BAV_L.205.d
+	picture = GFX_BAV.cafe_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.205.a
+		custom_effect_tooltip = AOR_Bebel_Trust_15_tt
+		add_political_power = 5
+		add_to_variable = {
+				Bebel_Trust = 15
+		}
+		custom_effect_tooltip = AOR_Bebel_Trust_coffee_1_tt
+		hidden_effect = {
+			set_country_flag = BAV_COFFEE
+		}
+	}
+}
+
+#梅林和倍倍尔下午茶-其二#
+country_event = {
+	id = BAV_L.206
+	title = BAV_L.206.t
+	desc = BAV_L.206.d
+	picture = GFX_BAV.cafe_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.206.a
+		custom_effect_tooltip = AOR_Bebel_Trust_15_tt
+		add_political_power = 5
+		add_to_variable = {
+				Bebel_Trust = 15
+		}
+	}
+}
