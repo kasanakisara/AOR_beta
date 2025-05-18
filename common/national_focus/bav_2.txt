@@ -98,7 +98,7 @@ focus_tree = {
 	#宣战符腾堡
 	focus={
 		id=BAV_enemies_from_the_North
-		icon = GFX_goal_BAV_Friends_from_the_North
+		icon = GFX_goal_BAV_enemies_from_the_North
 		x=7
 		y=4
 		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
@@ -118,7 +118,7 @@ focus_tree = {
 	#和统萨克森
 	focus={
 		id=BAV_Friends_from_the_SAX
-		icon = GFX_goal_BAV_Friends_from_the_North
+		icon = GFX_goal_BAV_Friends_from_the_SAX
 		x=11
 		y=4
 		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
@@ -138,7 +138,7 @@ focus_tree = {
 	#宣战符腾堡
 	focus={
 		id=BAV_enemies_from_the_SAX
-		icon = GFX_goal_BAV_Friends_from_the_North
+		icon = GFX_goal_BAV_enemies_from_the_SAX
 		x=9
 		y=4
 		prerequisite={focus=BAV_The_sacred_flame_will_not_extinguish}
