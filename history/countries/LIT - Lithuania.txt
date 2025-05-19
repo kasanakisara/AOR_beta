@@ -54,9 +54,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	AUT_democratic = 30
-	Fascism = 0
-	Anarcho = 15
+	AUT_democratic = 10
+	FRE_democratic = 10
+	CON_democratic = 10
+	SOC_democratic = 5
+	Anarcho = 5
+	Marxism = 5
 	Absolutism = 55
 }
 

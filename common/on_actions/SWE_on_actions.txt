@@ -124,256 +124,14 @@ on_actions = {
 					set_variable = { SWE_Trade_construction_speed = 0.5 }
 				}
 			}
-		}
-	}
 
-	on_monthly_SWE = {
-		effect = {
-			#人民之家
-			if = {
-				limit = {
-					has_country_flag = SWE_Folkhemmet_flag
-				}
-				add_political_power = -50
-				if = {
-					limit = {
-						has_idea = SWE_Ex_Folkhemmet
-					}
-					add_political_power = -75
-				}
-				if = {
-					limit = {
-						has_political_power < 0
-					}
-					remove_ideas = SWE_Folkhemmet
-					remove_ideas = SWE_Ex_Folkhemmet
-					add_ideas = SWE_Folkhemmet_debuff
-				}
-				if = {
-					limit = {
-						has_political_power > 0
-						has_idea = SWE_Folkhemmet_debuff
-					} 
-					remove_ideas = SWE_Folkhemmet_debuff
-					if = {
-						limit = { has_completed_focus = SWE_Everyone_has_Job }
-						add_ideas = SWE_Ex_Folkhemmet
-					}
-					else = {
-						add_ideas = SWE_Folkhemmet
-					}
-					
-				}
-			}
-
-			## 门户开放
-			if = {
-				limit = {
-					OR = {
-						has_idea = SWE_Open_the_door
-						has_idea = SWE_Third_Chioce
-					}
-				}
-
-				## 检测本土工业发展度
-				if = {
-					limit = { check_variable = { SWE_Industry_Development = 25 compare = less_than_or_equals } }
-					random_owned_controlled_state = {
-						limit = { is_core_of = SWE }
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes 
-						}
-					}
-				}
-
-				else_if = {
-					limit = { check_variable = { SWE_Industry_Development = 75 compare = less_than_or_equals } }
-					random_owned_controlled_state = {
-						limit = { is_core_of = SWE }
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes 
-						}
-					}
-				}
-
-				else = {
-					random_owned_controlled_state = {
-						limit = { is_core_of = SWE }
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 3
-							instant_build = yes 
-						}
-					}
-				}
-
-
-				country_event = { id = SWE.25 }
-				add_to_variable = { SWE_Industry_Development = -15 }
-			}
-		}
-	}
-
-	on_daily_SWE = {
-		effect = {
-			###### 挪威独立度增长决议 ######
-			if = {
-				limit = {
-					has_country_flag = SWE_Norweign_Independence_flag
-				}
-
-				#增加数值
-				set_variable = { SWE_Norweign_Independence_add = 0 }
-				if = {
-					limit = {
-						has_country_flag = SWE_GUI_1 #哈康初代
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
-				}
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = SWE_GUI_2 #紧急状态
-							has_country_flag = SWE_GUI_3 #鲁普雷希特初期
-						}
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 3.5 }
-				}
-
-				#民族精神修正
-				if = { 
-					limit = {
-						has_idea = SWE_Eighty_Seventh_Orders
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = -2 }
-				}
-				if = { 
-					limit = {
-						has_idea = A_lingering_alliance
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 2 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Left_Threat
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 1 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Left_Threat_I
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 0.75 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Left_Threat_II
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = 0.5 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Antisocialistisk_Speciallagen
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = -3.5 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_All_People_are_King
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = -1 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Beyond_Nationalism
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = -2.5 }
-				}
-				if = { 
-					limit = {
-						has_idea = SWE_Beyond_Nation
-					}
-					add_to_variable = { SWE_Norweign_Independence_add = -3 }
-				}
-
-
-				#马克思主义支持率对独立度修正
-				SWE_Marxism_effect_Norway_Independence_check = yes
-				
-				#增长下限
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_add = 0 compare = less_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_add = 0.25 }
-				}
-
-				if = {
-					limit = {
-						has_country_flag = SWE_GUI_4 #哈康抑制期
-					}
-					set_variable = { SWE_Norweign_Independence_add = 0 }
-				}
-
-				#数值更新
-				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
-
-				#更新gui
-				SWE_update_ui_effect = yes
-
-
-				#修正更新
-				SWE_Norweign_Independence_value_check = yes
-
-
-				#上下限
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 0 }
-				}
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value > 100 }
-					}
-					set_variable = { SWE_Norweign_Independence_value = 100 }
-				}
-
-				#判定是否触发挪威独立事件
-				if = {
-					limit = {
-						check_variable = { SWE_Norweign_Independence_value = 100 }
-						is_ai = no
-					}
-
-					if = {
-						limit = {
-							has_country_flag = SWE_GUI_1
-						}
-						set_variable = { SWE_Norweign_Independence_value = 0 }
-						remove_dynamic_modifiers = SWE_Norweign_Indepedence_modifier
-						country_event = { id = SWE.11 }
-					}
-				}
-
-			}
-
-			## Группа Крови на рукаве
-
-
-			## 联邦一梦
+			#### 联邦一梦 ####
 			if = {
 				limit = {
 					has_idea = SWE_The_Union_Dream
 				}
+
+				### 增长度修正 ###
 
 				set_variable = { SWE_Union_progress_value_add = 0 }
 
@@ -588,9 +346,246 @@ on_actions = {
 						add_to_variable = { SWE_Union_political_cost = -0.05 }
 					}
 				}
+			}
+		}
+	}
 
-				###任务修正###
+	on_monthly_SWE = {
+		effect = {
+			#人民之家
+			if = {
+				limit = {
+					has_country_flag = SWE_Folkhemmet_flag
+				}
+				add_political_power = -50
 				if = {
+					limit = {
+						has_idea = SWE_Ex_Folkhemmet
+					}
+					add_political_power = -75
+				}
+				if = {
+					limit = {
+						has_political_power < 0
+					}
+					remove_ideas = SWE_Folkhemmet
+					remove_ideas = SWE_Ex_Folkhemmet
+					add_ideas = SWE_Folkhemmet_debuff
+				}
+				if = {
+					limit = {
+						has_political_power > 0
+						has_idea = SWE_Folkhemmet_debuff
+					} 
+					remove_ideas = SWE_Folkhemmet_debuff
+					if = {
+						limit = { has_completed_focus = SWE_Everyone_has_Job }
+						add_ideas = SWE_Ex_Folkhemmet
+					}
+					else = {
+						add_ideas = SWE_Folkhemmet
+					}
+					
+				}
+			}
+
+			## 门户开放
+			if = {
+				limit = {
+					OR = {
+						has_idea = SWE_Open_the_door
+						has_idea = SWE_Third_Chioce
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Industry_Development > 0 }
+					}
+						## 检测本土工业发展度
+					if = {
+						limit = { check_variable = { SWE_Industry_Development = 25 compare = less_than_or_equals } }
+						random_owned_controlled_state = {
+							limit = { is_core_of = SWE }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes 
+							}
+						}
+					}
+
+					else_if = {
+						limit = { check_variable = { SWE_Industry_Development = 75 compare = less_than_or_equals } }
+						random_owned_controlled_state = {
+							limit = { is_core_of = SWE }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes 
+							}
+						}
+					}
+
+					else = {
+						random_owned_controlled_state = {
+							limit = { is_core_of = SWE }
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes 
+							}
+						}
+					}
+					
+					country_event = { id = SWE.25 }
+					add_to_variable = { SWE_Industry_Development = -15 }
+
+				}
+				else = {
+					country_event = { id = SWE.39 }
+				}
+
+				if = {
+					limit = {
+						check_variable = { SWE_Industry_Development < 0 }
+					}
+					set_variable = { SWE_Industry_Development = 0 }
+				}	
+
+			}
+		}
+	}
+
+	on_daily_SWE = {
+		effect = {
+			###### 挪威独立度增长决议 ######
+			if = {
+				limit = {
+					has_country_flag = SWE_Norweign_Independence_flag
+				}
+
+				#增加数值
+				set_variable = { SWE_Norweign_Independence_add = 0 }
+				add_to_variable = { SWE_Norweign_Independence_add = 1.5 }
+				#民族精神修正
+				if = { 
+					limit = {
+						has_idea = SWE_Eighty_Seventh_Orders
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2 }
+				}
+				if = { 
+					limit = {
+						has_idea = A_lingering_alliance
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 2 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 1 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat_I
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 0.75 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Left_Threat_II
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = 0.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Antisocialistisk_Speciallagen
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -3.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_All_People_are_King
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -1 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Beyond_Nationalism
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -2.5 }
+				}
+				if = { 
+					limit = {
+						has_idea = SWE_Beyond_Nation
+					}
+					add_to_variable = { SWE_Norweign_Independence_add = -3 }
+				}
+
+
+				#马克思主义支持率对独立度修正
+				SWE_Marxism_effect_Norway_Independence_check = yes
+				
+				#增长下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_add = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_add = 0.25 }
+				}
+
+				#数值更新
+				add_to_variable = { SWE_Norweign_Independence_value = SWE_Norweign_Independence_add }
+
+				#更新gui
+				SWE_update_ui_effect = yes
+
+
+				#修正更新
+				SWE_Norweign_Independence_value_check = yes
+
+
+				#上下限
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 0 compare = less_than_or_equals }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+				}
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value > 100 }
+					}
+					set_variable = { SWE_Norweign_Independence_value = 100 }
+				}
+
+				#判定是否触发挪威独立事件
+				if = {
+					limit = {
+						check_variable = { SWE_Norweign_Independence_value = 100 }
+						is_ai = no
+					}
+					set_variable = { SWE_Norweign_Independence_value = 0 }
+					remove_dynamic_modifiers = SWE_Norweign_Indepedence_modifier
+					country_event = { id = SWE.11 }
+				}
+
+			}
+
+			## Группа Крови на рукаве
+
+
+			#### 联邦一梦 ####
+			if = {
+				limit = {
+					has_idea = SWE_The_Union_Dream
+				}
+				###任务修正###
+				if = { #新干线#
 					limit = {
 						check_variable = { SWE_Union_Stage > 0 }
 						check_variable = { SWE_Union_Stage < 3 }
@@ -603,7 +598,10 @@ on_actions = {
 						remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
 					}
 				}
-				if = {
+				else = {
+					remove_ideas = SWE_Oslo_Stockholm_Shinkansenn
+				}
+				if = { #萨米议会#
 					limit = {
 						check_variable = { SWE_Union_Stage > 2 }
 						check_variable = { SWE_Union_Stage < 5 }
@@ -617,6 +615,48 @@ on_actions = {
 					else = {
 						remove_ideas = SWE_Samitinget_ongoing
 					}
+				}
+				else = {
+					remove_ideas = SWE_Samitinget_ongoing
+				}
+				if = { #书面挪威语#
+					limit = {
+						check_variable = { SWE_Union_Stage > 6 }
+						check_variable = { SWE_Union_Stage < 9 }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = SWE_Norsk_Bokmaal
+							}
+						}
+						add_ideas = SWE_Norsk_Bokmaal_ongoing
+					}
+					else = {
+						remove_ideas = SWE_Norsk_Bokmaal_ongoing
+					}
+				}
+				else = {
+					remove_ideas = SWE_Norsk_Bokmaal_ongoing
+				}
+				if = { #北疆铁路计划#
+					limit = {
+						check_variable = { SWE_Union_Stage > 4 }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = SWE_Northern_Plan_finish
+							}
+						}
+						add_ideas = SWE_NRP_ongoing
+					}
+					else = {
+						remove_ideas = SWE_NRP_ongoing
+					}
+				}
+				else = {
+					remove_ideas = SWE_NRP_ongoing
 				}
 
 			}

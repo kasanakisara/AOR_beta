@@ -2,7 +2,7 @@
 state={
 	id = 657
 	name = "STATE_657" # Birobidzhan
-	manpower = 308380
+	manpower = 208380
 	resources = {
 		steel=18 # was: 24
 	}
@@ -13,7 +13,7 @@ state={
 		owner = ARU
 
 		victory_points = {
-			7763 1
+			7763 3
 		}
 
 		buildings = {

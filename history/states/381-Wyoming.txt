@@ -1,7 +1,7 @@
 state = {
 	id = 381
 	name = "STATE_381"
-	manpower = 225564
+	manpower = 20000
 	state_category = rural
 	
 	history={
@@ -10,14 +10,10 @@ state = {
 			infrastructure = 2
 		}
 		add_core_of = USA
-		
-		victory_points = {
-			4723 2
-		}
 	}
 	
 	provinces = {
-		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12651 
+		1815 4610 4794 4820 7688 7814 7888 10711 12561 12651 
 	}
 	
 

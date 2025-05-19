@@ -1,292 +1,249 @@
 spriteTypes = {
-	###
-	spriteType = {
-		name = "GFX_Airport_construction_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_construction.dds"
-		}
-		spriteType = {
-		name = "GFX_Airport_constructionI_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_constructionI.dds"
-		}
-		spriteType = {
-		name = "GFX_Airport_constructionII_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_constructionII.dds"
-		}
-		spriteType = {
-		name = "GFX_Airport_constructionIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_constructionIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Airport_constructionIV_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_constructionIV.dds"
-		}
-		spriteType = {
-		name = "GFX_Airport_constructionV_medium"
-		texturefile = "gfx\interface\technologies\industry\Airport_constructionV.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_lines_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_lines.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesI_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesI.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesIV_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIV.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesIX_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIX.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesVI_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVI.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesVII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesVIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesXI_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXI.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesXII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesXIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Industrial_assembly_linesZ_medium"
-		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesZ.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundation_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundation.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundationI_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundationI.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundationII_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundationII.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundationIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundationIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundationIV_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundationIV.dds"
-		}
-		spriteType = {
-		name = "GFX_Port_foundationV_medium"
-		texturefile = "gfx\interface\technologies\industry\Port_foundationV.dds"
-		}
-		spriteType = {
-		name = "GFX_Railroad_construction_medium"
-		texturefile = "gfx\interface\technologies\industry\Railroad_construction.dds"
-		}
-		spriteType = {
-		name = "GFX_Railroad_constructionI_medium"
-		texturefile = "gfx\interface\technologies\industry\Railroad_constructionI.dds"
-		}
-		spriteType = {
-		name = "GFX_Railroad_constructionII_medium"
-		texturefile = "gfx\interface\technologies\industry\Railroad_constructionII.dds"
-		}
-		spriteType = {
-		name = "GFX_Railroad_constructionIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Railroad_constructionIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extraction_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extraction.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionI_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionI.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionII_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionII.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionIV_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionIV.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionV_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionV.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionVI_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionVI.dds"
-		}
-		spriteType = {
-		name = "GFX_Resource_extractionVII_medium"
-		texturefile = "gfx\interface\technologies\industry\Resource_extractionVII.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructure_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructure.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureI_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureI.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureII_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureII.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureIII.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureIV_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureIV.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureV_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureV.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureVI_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVI.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureVII_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVII.dds"
-		}
-		spriteType = {
-		name = "GFX_Urban_infrastructureVIII_medium"
-		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVIII.dds"
-		}
-	###
-	spriteType = {
-		name = "GFX_infantry_weapons2_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons2.dds"
-	} 
-
-
-	spriteType = {
-		name = "GFX_FRW_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FRW/FRW_infantry_equipment_0.dds"
-	} 
-	spriteType = {
-		name = "GFX_FRW_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/FRW/FRW_infantry_weapons1.dds"
-	}  
-	spriteType = {
-		name = "GFX_FRW_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FRW/FRW_improved_infantry_weapons.dds"
-	}
-	spriteType = {
-		name = "GFX_FRW_Advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FRW/FRW_Advanced_infantry_weapons.dds"
-	}
-	spriteType = {
-		name = "GFX_FRW_Advanced_improvement_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/FRW/FRW_Advanced_improvement_infantry_weapons.dds"
-	}
-	### generic equipment archetypes ###
+### generic equipment archetypes ###
+#注意，在SpriteType_name_texturefilez之下的#"gfx/interface/technologies/XXX.dds"为原先图片，正在重置图片中
 	
+	SpriteType = {	
+		name = "GFX_early_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+	SpriteType = {	
+		name = "GFX_destroyer_1_medium"
+		texturefile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1909_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/basic_destroyer.dds" 
+		#"gfx/interface/technologies/basic_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_destroyer_2_medium"
+		texturefile = "gfx/interface/technologies/basic_destroyer.dds" 
+		#"gfx/interface/technologies/basic_destroyer.dds"
+	}		
 	SpriteType = {
 		name = "GFX_tech_1919_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/1919_ship_hull_light.dds"
-	}	
-	SpriteType = {
-		name = "GFX_tech_1925_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/1925_ship_hull_light.dds"
+		texturefile = "gfx/interface/technologies/improved_destroyer.dds"
+		# "gfx/interface/technologies/improved_destroyer.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_destroyer_3_medium"
+		texturefile = "gfx/interface/technologies/improved_destroyer.dds"
+		# "gfx/interface/technologies/improved_destroyer.dds"
+	}
 	SpriteType = {
 		name = "GFX_tech_1927_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/1927_ship_hull_light.dds"
+		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+		#"gfx/interface/technologies/advanced_destroyer.dds"
 	}
 	SpriteType = {
+		name = "GFX_destroyer_4_medium"
+		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+		#"gfx/interface/technologies/advanced_destroyer.dds"
+	}
+
+
+	SpriteType = {
 		name = "GFX_early_ship_hull_heavy_cruiser_medium"
-		texturefile = "gfx/interface/technologies/early_ship_hull_heavy_cruiser.dds"
+		texturefile = "gfx/interface/technologies/torpedo_cruiser.dds"
+	} 
+	SpriteType = {
+		name = "GFX_heavy_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/torpedo_cruiser.dds"
 	} 
 	SpriteType = {
 		name = "GFX_late_ship_hull_heavy_cruiser_medium"
 		texturefile = "gfx/interface/technologies/late_ship_hull_heavy_cruiser.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_heavy_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/late_ship_hull_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_Modern_armored_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_panzerschiff.dds"
+	}
+	SpriteType = {
+		name = "GFX_armored_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_panzerschiff.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_early_ship_hull_light_cruiser_medium"
 		texturefile = "gfx/interface/technologies/early_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_1919_ship_hull_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_light_cruiser.dds"
+		name = "GFX_light_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/early_ship_hull_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1909_ship_hull_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/basic_light_cruiser.dds"
+		# "gfx/interface/technologies/tech_1909_ship_hull_light_cruiser.dds"
 	} 
 	SpriteType = {
-		name = "GFX_tech_1925_ship_hull_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_light_cruiser.dds"
+		name = "GFX_light_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/basic_light_cruiser.dds"
+		# "gfx/interface/technologies/tech_1909_ship_hull_light_cruiser.dds"
+	} 
+	SpriteType = {
+		name = "GFX_tech_1919_ship_hull_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/improved_light_cruiser.dds"
+		#texturefile = "gfx/interface/technologies/tech_1919_ship_hull_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/improved_light_cruiser.dds"
+		#texturefile = "gfx/interface/technologies/tech_1919_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_1927_ship_hull_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_light_cruiser.dds"
+		texturefile = "gfx/interface/technologies/advanced_light_cruiser.dds"
+		#texturefile = "gfx/interface/technologies/tech_1927_ship_hull_light_cruiser.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_1919_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_heavy.dds"
+		name = "GFX_light_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_cruiser.dds"
+		#texturefile = "gfx/interface/technologies/tech_1927_ship_hull_light_cruiser.dds"
+	}
+
+	SpriteType = {	
+		name = "GFX_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
+	}
+	SpriteType = {	
+		name = "GFX_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1906_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/tech_1906_ship_hull_heavy.dds"
+	}
+	SpriteType = {
+		name = "GFX_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/tech_1906_ship_hull_heavy.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1925_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_heavy.dds"
+		name = "GFX_tech_1914_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/improved_battleship.dds"
+		#"gfx/interface/technologies/improved_battleship.dds"
+	} 
+	SpriteType = { 
+		name = "GFX_battleship_3_medium"
+		texturefile = "gfx/interface/technologies/improved_battleship.dds"
+		#"gfx/interface/technologies/improved_battleship.dds"
 	} 
 	SpriteType = {
 		name = "GFX_tech_1927_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_heavy.dds"
+		texturefile = "gfx/interface/technologies/advanced_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_battleship_4_medium"
+		texturefile = "gfx/interface/technologies/advanced_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1923_ship_super_hull_heavy_medium"
+		texturefile ="gfx/interface/technologies/heavy_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_1927_ship_super_hull_heavy_medium"
+		texturefile ="gfx/interface/technologies/heavy_battleship2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship2.dds"
+	}
+
+	SpriteType = {	
+		name = "GFX_early_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/early_carrier.dds"
+	}
+	SpriteType = {	
+		name = "GFX_carrier_1_medium"
+		texturefile = "gfx/interface/technologies/early_carrier.dds"
 	}
 	SpriteType = { 
 		name = "GFX_tech_1925_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_carrier.dds"
 	}
 	SpriteType = { 
+		name = "GFX_carrier_2_medium"
+		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_carrier.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_tech_1909_crusier_battleship_hull_medium"
+		texturefile = "gfx/interface/technologies/early_battlecruiser.dds"
+		#"gfx/interface/technologies/tech_1909_crusier_battleship_hull.dds"
+	}
+	SpriteType = { 
+		name = "GFX_battle_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/early_battlecruiser.dds"
+		#"gfx/interface/technologies/tech_1909_crusier_battleship_hull.dds"
+	}
+	SpriteType = { 
 		name = "GFX_tech_1919_crusier_battleship_hull_medium"
 		texturefile = "gfx/interface/technologies/tech_1919_crusier_battleship_hull.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1925_crusier_battleship_hull_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_crusier_battleship_hull.dds"
+		name = "GFX_battle_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/tech_1919_crusier_battleship_hull.dds"
+	}
+
+	SpriteType = {	
+		name = "GFX_early_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_midget_submarine.dds"
+		#texturefile = "gfx/interface/technologies/early_submarine.dds"
+	}
+	SpriteType = {	
+		name = "GFX_submarine_1_medium"
+		texturefile =  "gfx/interface/technologies/ship_hull_midget_submarine.dds"
+		#texturefile = "gfx/interface/technologies/early_submarine.dds"
 	}
 	SpriteType = { 
-		name = "GFX_tech_1919_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		name = "GFX_tech_1908_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/early_submarine.dds"
+		#texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+	}
+	SpriteType = { 
+		name = "GFX_submarine_2_medium"
+		texturefile ="gfx/interface/technologies/early_submarine.dds"
+		#texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
-		name = "GFX_tech_1925_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1925_ship_hull_submarine.dds"
+		name = "GFX_tech_1919_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		# "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+	}
+	SpriteType = {  
+		name = "GFX_submarine_3_medium"
+		texturefile =  "gfx/interface/technologies/tech_1908_ship_hull_submarine.dds"
+		# "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
 	}
 	SpriteType = {  
 		name = "GFX_tech_1927_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		#"gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
 	}
+	SpriteType = {  
+		name = "GFX_submarine_4_medium"
+		texturefile = "gfx/interface/technologies/tech_1919_ship_hull_submarine.dds"
+		#"gfx/interface/technologies/tech_1927_ship_hull_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
+		texturefile = "gfx/interface/technologies/advanced_submarine.dds"
+		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
+		texturefile ="gfx/interface/technologies/advanced_submarine.dds"
+		#"gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
+	}
+
  
 
 
@@ -734,8 +691,8 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/motorized_equipment_1.dds"
-	}	
+		texturefile = "gfx/interface/technologies/POL_motorized_equipment_1.dds"
+	}	#"gfx/interface/technologies/motorized_equipment_1.dds"
 
 	SpriteType = {
 		name = "GFX_tech_recon4_medium"
@@ -2614,7 +2571,8 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_early_battleship_medium"
-		texturefile = "gfx/interface/technologies/early_battleship.dds"
+		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
+		#"gfx/interface/technologies/early_battleship.dds"
 	}
 	
 	SpriteType = {
@@ -2645,10 +2603,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_basic_carrier_medium"
 		texturefile = "gfx/interface/technologies/basic_carrier.dds"
-	}
-	SpriteType = {
-		name = "GFX_early_carrier_medium"
-		texturefile = "gfx/interface/technologies/early_carrier.dds"
 	}
 	
 	SpriteType = {
@@ -2702,6 +2656,10 @@ spriteTypes = {
 		name = "GFX_early_battlecruiser_medium"
 		texturefile = "gfx/interface/technologies/early_battlecruiser.dds"
 	}
+	SpriteType = {
+		name = "GFX_ship_hull_cruiser_panzerschiff_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_panzerschiff.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_modern_submarine_medium"
@@ -2727,22 +2685,9 @@ spriteTypes = {
 		name = "GFX_early_submarine_medium"
 		texturefile = "gfx/interface/technologies/early_submarine.dds"
 	}
-	
-	SpriteType = {
-		name = "GFX_ship_hull_cruiser_panzerschiff_medium"
-		texturefile = "gfx/interface/technologies/ship_hull_panzerschiff.dds"
-	}
 	SpriteType = {
 		name = "GFX_ship_hull_pre_dreadnought_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
-	}
-	SpriteType = {
-		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
-		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
-	}
-	SpriteType = {
-		name = "GFX_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
-		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
 	SpriteType = {
 		name = "GFX_ship_hull_cruiser_coastal_defense_ship_medium"
@@ -6082,10 +6027,6 @@ spriteTypes = {
 		name = "GFX_basic_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
 	}
-	SpriteType = {	
-		name = "GFX_early_ship_hull_light_medium"
-		texturefile = "gfx/interface/technologies/early_destroyer.dds"
-	}
 
 	 ##  ###  #  # ###  ## ### ###  
 	#  # #  # #  #  #  #   #   #  # 
@@ -6137,10 +6078,6 @@ spriteTypes = {
 		name = "GFX_basic_ship_hull_submarine_medium"
 		texturefile = "gfx/interface/technologies/basic_submarine.dds"
 	}
-	SpriteType = {	
-		name = "GFX_early_ship_hull_submarine_medium"
-		texturefile = "gfx/interface/technologies/early_submarine.dds"
-	}
 	 ##   ##  ###  ###  ### ### ###  
 	#  # #  # #  # #  #  #  #   #  # 
 	#    #### ###  ###   #  ##  ###  
@@ -6158,10 +6095,11 @@ spriteTypes = {
 		name = "GFX_basic_ship_hull_carrier_medium"
 		texturefile = "gfx/interface/technologies/basic_carrier.dds"
 	}
-	SpriteType = {	
-		name = "GFX_early_ship_hull_carrier_medium"
+	SpriteType = {
+		name = "GFX_early_carrier_medium"
 		texturefile = "gfx/interface/technologies/early_carrier.dds"
 	}
+
 	#  # ###  ##  #   # #   #      ## #  # ### ###   ## 
 	#  # #   #  # #   #  # #      #   #  #  #  #  # #   
 	#### ##  ####  # #    #        #  ####  #  ###   #  
@@ -6183,10 +6121,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_basic_ship_hull_heavy_medium"
 		texturefile = "gfx/interface/technologies/basic_battleship.dds"
-	}
-	SpriteType = {	
-		name = "GFX_early_ship_hull_heavy_medium"
-		texturefile = "gfx/interface/technologies/early_battleship.dds"
 	}
 
 	### ###   ##  #  #  ## ###   ##  ###  ### 
@@ -7277,7 +7211,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FRA_motorized_equipment_0.dds"
 	}
 
-	 SpriteType = {
+	SpriteType = {
  		name = "GFX_GER_tech_trucks_medium"
  		texturefile = "gfx/interface/technologies/GER_motorized_equipment_0.dds"
  	}
@@ -8324,7 +8258,218 @@ spriteType = {
 	texturefile = "gfx\interface\technologies\electronic/Observe_balloons.dds"
 	}
 
+	###
+	spriteType = {
+		name = "GFX_Airport_construction_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_construction.dds"
+		}
+		spriteType = {
+		name = "GFX_Airport_constructionI_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_constructionI.dds"
+		}
+		spriteType = {
+		name = "GFX_Airport_constructionII_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_constructionII.dds"
+		}
+		spriteType = {
+		name = "GFX_Airport_constructionIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_constructionIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Airport_constructionIV_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_constructionIV.dds"
+		}
+		spriteType = {
+		name = "GFX_Airport_constructionV_medium"
+		texturefile = "gfx\interface\technologies\industry\Airport_constructionV.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_lines_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_lines.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesI_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesI.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesIV_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIV.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesIX_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesIX.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesVI_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVI.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesVII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesVIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesVIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesXI_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXI.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesXII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesXIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesXIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Industrial_assembly_linesZ_medium"
+		texturefile = "gfx\interface\technologies\industry\Industrial_assembly_linesZ.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundation_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundation.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundationI_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundationI.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundationII_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundationII.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundationIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundationIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundationIV_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundationIV.dds"
+		}
+		spriteType = {
+		name = "GFX_Port_foundationV_medium"
+		texturefile = "gfx\interface\technologies\industry\Port_foundationV.dds"
+		}
+		spriteType = {
+		name = "GFX_Railroad_construction_medium"
+		texturefile = "gfx\interface\technologies\industry\Railroad_construction.dds"
+		}
+		spriteType = {
+		name = "GFX_Railroad_constructionI_medium"
+		texturefile = "gfx\interface\technologies\industry\Railroad_constructionI.dds"
+		}
+		spriteType = {
+		name = "GFX_Railroad_constructionII_medium"
+		texturefile = "gfx\interface\technologies\industry\Railroad_constructionII.dds"
+		}
+		spriteType = {
+		name = "GFX_Railroad_constructionIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Railroad_constructionIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extraction_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extraction.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionI_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionI.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionII_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionII.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionIV_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionIV.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionV_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionV.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionVI_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionVI.dds"
+		}
+		spriteType = {
+		name = "GFX_Resource_extractionVII_medium"
+		texturefile = "gfx\interface\technologies\industry\Resource_extractionVII.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructure_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructure.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureI_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureI.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureII_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureII.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureIII.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureIV_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureIV.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureV_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureV.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureVI_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVI.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureVII_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVII.dds"
+		}
+		spriteType = {
+		name = "GFX_Urban_infrastructureVIII_medium"
+		texturefile = "gfx\interface\technologies\industry\Urban_infrastructureVIII.dds"
+		}
+	###
+	spriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons2.dds"
+	} 
 
+
+	spriteType = {
+		name = "GFX_FRW_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRW/FRW_infantry_equipment_0.dds"
+	} 
+	spriteType = {
+		name = "GFX_FRW_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/FRW/FRW_infantry_weapons1.dds"
+	}  
+	spriteType = {
+		name = "GFX_FRW_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRW/FRW_improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_Advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRW/FRW_Advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_Advanced_improvement_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRW/FRW_Advanced_improvement_infantry_weapons.dds"
+	}
 
 
 

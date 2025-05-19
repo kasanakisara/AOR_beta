@@ -1,6 +1,6 @@
 characters = {
 	EGY_FUAD={
-		name= "Farouk Muhammad Ali"
+		name= "Fuad I"
 		portraits={
 			civilian={
 				large="Fuad.dds"
@@ -15,4 +15,5 @@ characters = {
 			id=-1
 		}
 	}
+	
 }

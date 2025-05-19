@@ -1,71 +1,282 @@
-###########################
-# German Events
-###########################
-
 add_namespace = NSH
 
 
-#公投
+#北石勒苏益格公投
 country_event = {
 	id = NSH.1
 	title = NSH.1.t
 	desc = NSH.1.d
 	picture = GFX_events_NSH_1
-	
-	mean_time_to_happen = { days = 1}
-	
 	fire_only_once = yes
-	hidden = yes
+	trigger = {
+		tag = NSH
+		date > 1919.9.1
+		}
 
-    #那就这样吧  
 	option = {  #北石勒苏益格公投入丹
 		name = NSH.1.a
-		news_event = { id = AOR_news.68 }
-		DEN = { transfer_state = 839 }
-		839 = { add_core_of = DEN }
+		news_event = { id = AOR_news.67 }
+		country_event = { days= 30 id = NSH.2 }
+
+		DEN = { 
+			transfer_state = 839 
+			add_state_core = 839
+		}
+
 		ai_chance = {
-			base = 90
+			base = 95
 		}
     }
-	option = { #什么？这不太可能罢 北石勒苏益格公投入德
+	option = { #北石勒苏益格公投入德（这不太可能）
 		name = NSH.1.b 
-		GER = { transfer_state = 839 }		
-		839 = { add_core_of = GER }
-		DEN = { add_claim_by = 839 }
-		news_event = { id = AOR_news.67 }
+		news_event = { id = AOR_news.68 }
+		country_event = { days= 30 id = NSH.2 }
+
+		GER = {
+			transfer_state = 839 
+			add_state_core = 839
+		}		
+
 		ai_chance = {
-			base = 1
+			base = 5
 		}
     }
 }
 
-#公投
+#石勒苏益格-荷尔施泰因公投
 country_event = {
 	id = NSH.2
 	title = NSH.2.t
 	desc = NSH.2.d
 	picture = GFX_events_NSH_2
+	is_triggered_only = yes	
 	fire_only_once = yes
-	hidden = yes
 
 	option = {  #石勒苏益格-荷尔施泰因公投入德
 		name = NSH.2.a
-		GER = { transfer_state = 58}
-		GER = { transfer_state = 1043}
-		58 = { add_core_of = GER }
-		1043 = { add_core_of = GER }
+		DEN = { country_event = { id = NSH.3 } }
+		news_event = { id = AOR_news.211 }
+
+		GER = {
+			add_state_core = 58
+			add_state_core = 1043
+		}	
+		SHL = {
+			add_state_core = 58
+			add_state_core = 1043
+		}	
+		58 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
+
+		ai_chance = {
+			base = 70
+		}
+    }
+	option = { #石勒苏益格-荷尔施泰因公投入丹 （这不太可能）
+		name = NSH.2.b 
+		news_event = { id = AOR_news.212 }
+		SHL = { country_event = { id = NSH.4 } }
+
+		DEN = {
+			add_state_core = 58
+			add_state_core = 1043
+		}
+		if = {
+			limit ={
+				DEN = {
+					controls_state = 839
+				}
+			}
+			839 = { set_demilitarized_zone = yes }
+		}
+		58 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
+
+		ai_chance = {
+			base = 5
+		}
+    }
+	option = { #石勒苏益格-荷尔施泰因公投作废
+	name = NSH.2.c
+	news_event = { id = AOR_news.213 }
+
+	ai_chance = {
+		base = 25
+	}
+}
+}
+
+#丹麦对石勒苏益格-荷尔施泰因公投的想法
+country_event = {
+	id = NSH.3
+	title = NSH.3.t
+	desc = NSH.3.d
+	picture = GFX_events_NSH_3
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = {#认了
+		name = NSH.3.a
+
+		SHL = { 
+			set_cosmetic_tag = SHL_2_Marxism
+			transfer_state = 58 
+			transfer_state = 1043
+		}
+		58 = { set_demilitarized_zone = no }
+		839 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
+
 		ai_chance = {
 			base = 75
 		}
     }
-	option = { #什么？这不太可能罢 石勒苏益格-荷尔施泰因公投入丹 （这不太可能）
-		name = NSH.2.b 
-		DEN = { transfer_state = 58}	
-		DEN = { transfer_state = 1043}	
-		58 = { add_core_of = DEN }
-		1043 = { add_core_of = DEN }
+	option = {#发通碟
+		name = NSH.3.b
+		SHL = {country_event = { days= 7 id = NSH.5 } }
+
 		ai_chance = {
 			base = 5
+		}
+    }
+}
+#德国南石荷对石勒苏益格-荷尔施泰因公投的想法
+country_event = {
+	id = NSH.4
+	title = NSH.4.t
+	desc = NSH.4.d
+	picture = GFX_events_NSH_4
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = { #认了
+		name = NSH.4.a
+		transfer_state = 58 
+		transfer_state = 1043
+		58 = { set_demilitarized_zone = no }
+		839 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
+
+		ai_chance = {
+			base = 5
+		}
+    }
+	option = { #发通碟
+		name = NSH.4.b
+		DEN = {country_event = { days= 7 id = NSH.6 } }
+		
+		ai_chance = {
+			base = 75
+		}
+    }
+}
+
+#丹麦对德国南石荷的最后通牒
+country_event = {
+	id = NSH.5
+	title = NSH.5.t
+	desc = NSH.5.d
+	picture = GFX_events_NSH_5
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = { #认了
+		name = NSH.3.a
+		transfer_state = 58 
+		transfer_state = 1043
+		58 = { set_demilitarized_zone = no }
+		839 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
+
+		ai_chance = { 
+			base = 75
+		}
+    }
+	option = { #战
+		name = NSH.3.b 
+		hidden_effect = {
+			news_event = { id = AOR_news.214 }
+		}
+
+		DEN = {
+	    if = {
+			limit ={
+				GER = {
+					controls_state = 839
+				}
+			}
+			DEN = {
+				transfer_state = 839
+			}
+		}
+			declare_war_on = { 
+				target = SHL
+				type = take_claimed_state
+			} 
+		}
+		transfer_state = 58 
+		transfer_state = 1043
+
+		ai_chance = {
+			base = 25
+		}
+    }
+}
+#德国南石荷对丹麦的最后通牒
+country_event = {
+	id = NSH.6
+	title = NSH.6.t
+	desc = NSH.6.d
+	picture = GFX_events_NSH_6
+	is_triggered_only = yes	
+	fire_only_once = yes
+
+	option = { #认了
+		name = NSH.6.a
+
+		SHL = { 
+			set_cosmetic_tag = SHL_2_Marxism
+			transfer_state = 58 
+			transfer_state = 1043
+		}
+		58 = { set_demilitarized_zone = no }
+		839 = { set_demilitarized_zone = no }
+		1043 = { set_demilitarized_zone = no }
+
+		ai_chance = {
+			base = 50
+		}
+    }
+	option = { #战
+		name = NSH.6.b 
+		hidden_effect = {
+			news_event = { id = AOR_news.214 }
+		}
+
+		SHL = {
+			if = {
+				limit ={
+					GER = {
+						controls_state = 839
+					}
+				}
+				SHL = {
+					transfer_state = 839
+				}
+			}
+			
+			leave_faction=yes
+			transfer_state = 58 
+			transfer_state = 1043 
+
+		declare_war_on = { 
+            target = DEN
+            type = take_claimed_state
+        }
+	}
+		
+		ai_chance = {
+			base = 50
 		}
     }
 }

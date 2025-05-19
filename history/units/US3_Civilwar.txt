@@ -31,7 +31,7 @@ units={
 
     division={
         name="卡西迪枪手队"
-        location=4860
+        location=6742
         division_template="自由牛仔枪手队"
         start_experience_factor=0.3
         start_equipment_factor=1
@@ -39,14 +39,14 @@ units={
 
 	division={
         name="黄金骑兵队"
-        location=4860
+        location=9616
         division_template="自由牛仔骑兵队"
         start_experience_factor=0.2
         start_equipment_factor=1
     }
 	division={
         name="森林骑兵队"
-        location=4860
+        location=10624
         division_template="自由牛仔骑兵队"
         start_experience_factor=0.2
         start_equipment_factor=1

@@ -38,7 +38,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Chen_Chiung_Ming"
-	desc = "Ming_desc"
+	desc = "Chen_Chiung_Ming_desc"
 	picture = "Ming.dds"
 	expire = "1965.1.1"
 	ideology = warlord

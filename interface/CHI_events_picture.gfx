@@ -10,5 +10,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_chi_yimoxizheng.dds"
 	}
 
+	spriteType = {
+		name = "GFX_AOR_chi_wangyejia"
+		texturefile = "gfx/event_pictures/AOR_chi_wangyejia.png"
+	}
+
+
 	
 }

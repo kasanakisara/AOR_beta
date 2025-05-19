@@ -662,7 +662,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 30 y = 12 }
+			position = { x = 50 y = 14 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -715,9 +715,9 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "desc"
-			position = { x = 34 y = 250 }
+			position = { x = 30 y = 250 }
 			textureFile = ""
-			font = "hoi_18mbs"
+			font = "hoi_20bs"
 			borderSize = {x = 5 y = 0}
 			text = "Description"
 			scrollbartype = standardtext_slider
@@ -762,7 +762,7 @@ guiTypes = {
 			name = "start"
 			quadTextureSprite = "GFX_button_123x34"
 			buttonText = "START_FOCUS"
-			buttonFont = "hoi_20b"
+			buttonFont = "hoi_18mbs"
 			position = { x=390 y=53 }
 			clicksound = select_focus
 			shortcut = "RETURN"
@@ -782,8 +782,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "status"
-			position = { x = 208 y = 60 }
-			font = "hoi_20b"
+			position = { x = 208 y = 62 }
+			font = "hoi_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 170

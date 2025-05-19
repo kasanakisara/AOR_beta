@@ -2,7 +2,7 @@
 state={
 	id=392
 	name="STATE_392"
-	manpower = 2470938
+	manpower = 2404021
 	
 	state_category = city
 
@@ -14,7 +14,10 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			1770 3 
+			1770 5 
+		}
+		victory_points = {
+			10478 1 
 		}
 
 		1939.1.1 = {

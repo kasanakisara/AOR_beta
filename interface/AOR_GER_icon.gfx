@@ -94,6 +94,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/AOR_GER_Background_1.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = { #决议背景1
+		name = "GFX_GER_Background_2_BAV"
+		texturefile = "gfx/event_pictures/AOR_GER_Background_2_BAV.png"
+		legacy_lazy_load = no
+	}
 	spriteType = { #决议背景2
 		name = "GFX_GER_Background_2"
 		texturefile = "gfx/event_pictures/AOR_GER_Background_2.dds"

@@ -41,7 +41,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_title"
-			position = { x = 45 y = 8 }
+			position = { x = 245 y = 12 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -2592,7 +2592,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "deploy_name"
 			position = { x = 255 y = 4 }
-			font = "hoi_18b"
+			font = "hoi_20bs"
 			borderSize = {x = 0 y = 0}
 			text = "This buttontext is a bug and should not appear"
 			maxWidth = 90
@@ -4543,8 +4543,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 39 y = 9 }
-			font = "hoi_18b"
+			position = { x = 39 y = 7 }
+			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "somewhere"
 			maxWidth = 280
@@ -4571,8 +4571,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 39 y = 9 }
-			font = "hoi_18b"
+			position = { x = 39 y = 7 }
+			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "somewhere"
 			maxWidth = 280
@@ -4602,7 +4602,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 39 y = 9 }
-			font = "hoi_18b"
+			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "somewhere"
 			maxWidth = 280

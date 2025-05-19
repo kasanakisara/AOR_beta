@@ -207,7 +207,7 @@ guiTypes = {
 			buttonType = {
 				name = "relations_tab_button"
 				quadTextureSprite = "GFX_tab_intel_ledger"
-				position = { x=15 y=70 }
+				position = { x=18 y=70 }
 				buttonText = "DIPLOMACY_RELATIONS_TAB"
 				font = "hoi_18mbs"
 			}
@@ -327,8 +327,8 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "national_focus_label"
-						position = { x = 146 y = 23 }
-						font = "hoi_18mbs"
+						position = { x = 144 y = 25 }
+						font = "hoi_20bs"
 						text = "POLITICS_ACTIVE_GOAL"
 						maxWidth = 200
 						maxHeight = 20
@@ -423,7 +423,7 @@ guiTypes = {
 					name = "spirit_title"
 					position = { x = 0 y = 0 }
 					font = "hoi_18mbs"
-					borderSize = {x = 30 y = -1}
+					borderSize = {x = 28 y = -1 }
 					text = "FE_COUNTRY_SPIRIT"
 					maxWidth = 240
 					maxHeight = 30
@@ -787,7 +787,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "diplomacy_title"
-			position = { x = 165 y = 13 }
+			position = { x = 54 y = 15 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
@@ -957,7 +957,7 @@ guiTypes = {
 			name = "name"
 			position = { x = 8 y = 4 }
 			textureFile = ""
-			font = "hoi_18mbs"
+			font = "hoi_18b"
 			borderSize = { x = 0 y = 0 }
 			text = "Maus"
 			maxWidth = 190
@@ -1088,7 +1088,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "title"
-			position = { x = 70 y = 15 }
+			position = { x = 90 y = 17 }
 			font = "hoi_18mbs"
 			text = "category"
 			maxWidth = 160
@@ -3617,7 +3617,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "title"
-				position = { x = 122 y = 16 }
+				position = { x = 122 y = 31 }
 				font = "hoi_24header"
 				text = "Maus"
 				maxWidth = 260

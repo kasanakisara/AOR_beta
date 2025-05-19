@@ -267,11 +267,6 @@ technologies = {
 		navy_capital_ship_defence_factor = 0.10
 		
 		########
-
-		path = {
-			leads_to_tech = floating_airfield
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -316,11 +311,6 @@ technologies = {
 		}
 		sortie_efficiency = 0.2
 		########
-
-		path = {
-			leads_to_tech = grand_battlefleet
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -622,11 +612,6 @@ technologies = {
 		}
 		convoy_escort_efficiency = 0.10
 		#####
-
-		path = {
-			leads_to_tech = floating_airfield
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -1148,11 +1133,6 @@ technologies = {
 			max_strength = 0.2
 		}
 		
-		path = {
-			leads_to_tech = combined_operations_raiding
-			research_cost_coeff = 1
-		}
-		
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes	
@@ -1450,11 +1430,6 @@ technologies = {
 		}
 		navy_capital_ship_defence_factor = 0.10
 		########
-
-		path = {
-			leads_to_tech = floating_airfield_ti
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -1683,11 +1658,6 @@ technologies = {
 			naval_strike_targetting_factor = 0.1
 		}
 		########
-
-		path = {
-			leads_to_tech = floating_airfield_ti
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -1940,7 +1910,7 @@ technologies = {
 		########
 
 		path = {
-			leads_to_tech = massed_strikes
+			leads_to_tech = floating_fortress_bs
 			research_cost_coeff = 1
 		}
 		
@@ -2016,11 +1986,6 @@ technologies = {
 		}
 		########
 		
-		path = {
-			leads_to_tech = floating_fortress_bs
-			research_cost_coeff = 1
-		}
-		
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes	
@@ -2089,11 +2054,6 @@ technologies = {
 		}
 		navy_capital_ship_defence_factor = 0.10
 		########
-
-		path = {
-			leads_to_tech = carrier_battlegroups
-			research_cost_coeff = 1
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 100
@@ -2108,7 +2068,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 10 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {

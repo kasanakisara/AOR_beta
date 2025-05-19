@@ -1,40 +1,20 @@
 ideas = {
 
 	hidden_ideas = {
+		## 任务的修正们 ##
 		SWE_Oslo_Stockholm_Shinkansenn = {
-			available = {
-				SWE = {
-					check_variable = { SWE_Union_Stage > 0 }
-					check_variable = { SWE_Union_Stage < 3 }
-				}
-			}
 			modifier = {
 				civilian_factory_use = 5
 			}
 		}
 
 		SWE_Samitinget_ongoing = {
-			available = {
-				SWE = {
-					check_variable = { SWE_Union_Stage > 2 }
-					check_variable = { SWE_Union_Stage < 5 }
-				}
-			}
 			modifier = {
 				political_power_cost = 0.4
 			}
 		}
 
 		SWE_Norsk_Bokmaal_ongoing = {
-			available = {
-				SWE = {
-					check_variable = { SWE_Union_Stage > 6 }
-					check_variable = { SWE_Union_Stage < 9 }
-					NOT = {
-						has_country_flag = SWE_Norsk_Bokmaal
-					}
-				}
-			}
 			modifier = {
 				political_power_cost = 0.4
 				stability_factor = -0.1
@@ -42,14 +22,26 @@ ideas = {
 		}
 
 		SWE_NRP_ongoing = {
-			available = {
-				SWE = {
-					check_variable = { SWE_Union_Stage > 8 }
-            		check_variable = { SWE_Union_Stage < 11 }
-				}
-			}
 			modifier = {
-				civilian_factory_use = 10
+				civilian_factory_use = 15
+			}
+		}
+
+		SWE_Promoting_Universal_Suffrage = {
+			modifier = {
+				political_power_cost = 0.2
+			}
+		}
+
+		SWE_Promoting_Merging_Parliament = {
+			modifier = {
+				political_power_cost = 0.2
+			}
+		}
+
+		SWE_Promoting_Reduction_Civil_Servants = {
+			modifier = {
+				political_power_cost = 0.2
 			}
 		}
 		
@@ -118,13 +110,14 @@ ideas = {
 			}
 		}
 
-		SWE_Stockholm_Law = { 
-			picture = idea_SWE_Stockholm_Law
+		SWE_Further_Reform_Law = { 
+			picture = idea_SWE_Further_Reform_Law
 			allowed = { always = yes }
 			modifier = {
-				political_power_gain = 0.2
-				production_factory_start_efficiency_factor = 0.2
-				production_speed_buildings_factor = 0.2
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
 			}
 		}
 
@@ -429,6 +422,108 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.1
 				stability_factor = -0.05
+			}
+		}
+
+		SWE_Universal_Suffrage = {
+			picture = idea_
+			available = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+			}
+		}
+
+		SWE_Merged_Parliament = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.2
+			}
+		}
+
+		SWE_Union_Inheritance_Law = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = SWE_Union_Inheritance_Law_tt
+			}
+		}
+
+		SWE_Reducted_Civil_Servants = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.2
+			}
+		}
+
+		SWE_Visible_Hand = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.3
+				political_power_cost = -0.2
+			}
+		}
+
+		SWE_Skagerrak_Arbitration = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		SWE_Skagerrak_Strait_Reparations = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		SWE_Regency_Council = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		SWE_Regency_Emergency_Crisis = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_cost = 0.2
+				Marxism_drift = 0.1
 			}
 		}
 	}

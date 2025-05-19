@@ -111,22 +111,20 @@ country_event = {
 	}
 }
 
-#三卅运动
+#三廿运动
 country_event = {
 	id = CHI.5
 	title = CHI.5.t
 	desc = CHI.5.d
 	picture = GFX_Portrait_of_Tirpitz
-	trigger = {
-		date > 1920.3.10
-		tag = CHI
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
-	immediate = {
-	}
+
 	option = {
 		name = CHI.5.a
-		news_event = {id=AOR_news.49}
+		hidden_effect = {
+			news_event = {id=AOR_news.49}
+		}
 	}
 }
 
@@ -168,7 +166,7 @@ country_event = {
 
 			create_country_leader = {
 				name = "Duan_Qi_Rui"
-				desc = ""
+				desc = "Duan_Qi_Rui_desc"
 				picture = "gfx/leaders/CHI/Duan.png"
 				expire = "1965.1.1"
 				ideology = miliciagov
@@ -186,8 +184,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = CHI.6.a
-		news_event = {id=AOR_news.88}
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.13 }
 			KMT = {
 				load_oob = "AOR_LAND_CHI_KMT"
 				load_oob = "AOR_LAND_CHI_KMT"
@@ -196,9 +195,34 @@ country_event = {
 	}
 	option = {
 		name = CHI.6.b
-		news_event = {id=AOR_news.88}
 		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.14 }
 			UPC = {
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+				load_oob = "UPC_M_Nandu"
+			}
+		}
+	}
+	option = {
+		name = CHI.6.c
+		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.14 }
+			KMT = {
+				load_oob = "AOR_LAND_CHI_KMT"
+				load_oob = "AOR_LAND_CHI_KMT"
+			}
+		}
+	}
+	option = {
+		name = CHI.6.e
+		hidden_effect = {
+			news_event = {id=AOR_news.88}
+			country_event = { days = 220  id =CHI.13 }
+			UPC = {
+				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 			}
@@ -318,12 +342,6 @@ country_event = {
 		hidden_effect = {
 			DCD = {
 				load_oob = "AOR_LAND_CHI_chuanjun_XI"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = CBS
 					type = civil_war
@@ -344,12 +362,6 @@ country_event = {
 		
 			CBS = {
 				load_oob = "AOR_LAND_CHI_chuanjun_DONG"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = XCD
 					type = civil_war
@@ -374,22 +386,10 @@ country_event = {
 					target = PRC
 					type = civil_war
 					}
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				}
 		
 			JLD = {
 				load_oob = "AOR_LAND_CHI_chuanjun_JIA"
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				declare_war_on = {
 					target = PRC
 					type = civil_war
@@ -397,13 +397,6 @@ country_event = {
 				}
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
-				add_ideas = PRC_The_great_red_army
-				add_state_core = 906
-				add_state_core = 908
-				add_state_core = 753
-				add_state_core = 751
-				add_state_core = 434
-				add_state_core = 605
 				}
 		    }
 	    }
@@ -472,16 +465,6 @@ country_event = {
 				}
 			PRC = {
 				load_oob = "AOR_LAND_CHI_chuanjun_GONG"
-				add_ideas = PRC_The_great_red_army
-				create_country_leader = {
-					name = "xi_CHUAN_commit"
-					desc = "POLITICS_MON_DESC"
-					picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
-					expire = "1965.1.1"
-					ideology = REV_soc
-					traits = {
-					}
-				}
 				}
 		    }
 		}
@@ -537,11 +520,8 @@ country_event = {
 	id = CHI.13
 	title = CHI.13.t
 	desc = CHI.13.d
-	trigger = {
-		date > 1922.9.1
-		tag = CHI
-	}
 	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
 	}
@@ -550,70 +530,32 @@ country_event = {
 			change_tag_from = ROOT
 		}
 		hidden_effect = {
-			NAN = {
-				annex_country = { 
-					target = CHI 
-					transfer_troops = no 
-				}
-				load_oob = "AOR_LAND_CHI_CENTRAL"
-				create_faction = Zhiyang_Union
-				add_to_faction = CHI
-				white_peace = CHI
-				drop_cosmetic_tag = yes
-			}
-			MON = {
-				load_oob = "AOR_LAND_CHI_VAN_2"
-				608={set_demilitarized_zone=NO}
-				transfer_state = 876
-				transfer_state = 612
-				transfer_state = 756
-				transfer_state = 600
-				transfer_state = 899
-				transfer_state = 897
-				transfer_state = 898
-				transfer_state = 595
-				transfer_state = 596
-				transfer_state = 895
-				transfer_state = 894
-				transfer_state = 892
-				transfer_state = 749
-				transfer_state = 606
-
-				add_state_core = 876
-				add_state_core = 612
-				add_state_core = 756
-				add_state_core = 600
-				add_state_core = 899
-				add_state_core = 897
-				add_state_core = 898
-				add_state_core = 595
-				add_state_core = 596
-				add_state_core = 895
-				add_state_core = 894
-				add_state_core = 892
-				add_state_core = 749
-				add_state_core = 606
-
-			}
-			MAN = {
-				load_oob = "AOR_LAND_CHI_MAN"
-				714={set_demilitarized_zone=no}
-				761={set_demilitarized_zone=no}
-				913={set_demilitarized_zone=no}
-				873={set_demilitarized_zone=no}
-				717={set_demilitarized_zone=no}
-				715={set_demilitarized_zone=no}
-				891={set_demilitarized_zone=no}
-				328={set_demilitarized_zone=no}
-				716={set_demilitarized_zone=no}
-				875={set_demilitarized_zone=no}
-				874={set_demilitarized_zone=no}
-				}
+			CHI_civil_war_11 = yes
 		}
 		name = CHI.13.a
 		news_event = {id=AOR_news.96}
 	}
 }
+
+#央皖合流(皖系改名）
+country_event = {
+	id = CHI.14
+	title = CHI.14.t
+	desc = CHI.14.d
+	picture = GFX_Portrait_of_Tirpitz
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		hidden_effect = {
+			CHI_civil_war_12 = yes
+		}
+		name = CHI.14.a
+		news_event = {id=AOR_news.96}
+	}
+}
+
 country_event = {
 	id = CHI.15 #乙末西征
 	title = CHI.15.t
@@ -752,7 +694,7 @@ country_event = {
 	id = CHI.22
 	title = CHI.22.t
 	desc = CHI.22.d
-	picture = GFX_AOR_chi_yimoxizheng	
+	picture = GFX_AOR_chi_yimoxizheng
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -765,12 +707,12 @@ country_event = {
 	id = CHI.23
 	title = CHI.23.t
 	desc = CHI.23.d
-	picture = GFX_AOR_chi_yimoxizheng	
+	picture = GFX_AOR_chi_wangyejia	
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = CHI.23.a
-		country_event = { id = CHI.24 }
+		country_event = { id = CHI.24 }	
 	}
 }
 
@@ -779,7 +721,7 @@ country_event = {
 	id = CHI.24
 	title = CHI.24.t
 	desc = CHI.24.d
-	picture = GFX_AOR_chi_yimoxizheng	
+	picture = GFX_AOR_chi_wangyejia		
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -793,7 +735,7 @@ country_event = {
 	id = CHI.25	
 	title = CHI.25.t
 	desc = CHI.25.d
-	picture = GFX_AOR_chi_yimoxizheng	
+	picture = GFX_AOR_chi_wangyejia		
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -894,6 +836,38 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			set_victory_points = {
+                province = 7191
+                value = 15    
+            }
+			set_victory_points = {
+                province = 4137
+                value = 15    
+            }
+			set_victory_points = {
+                province = 12055
+                value = 10    
+            }
+			set_victory_points = {
+                province = 3881
+                value = 10    
+            }
+			set_victory_points = {
+                province = 13253
+                value = 7    
+            }
+			set_victory_points = {
+                province = 7609
+                value = 7    
+            }
+			set_victory_points = {
+                province = 9958
+                value = 3    
+            }
+			set_victory_points = {
+                province = 11991
+                value = 3    
+            }
 			MON ={
 			declare_war_on = { 
 				target = NAN
@@ -904,12 +878,16 @@ country_event = {
 }
 	option = {
 		name = CHI.31.a
+		hidden_effect = {
 		news_event = {id=AOR_news.97}
+		}
 	}
 
 	option = {
 		name = CHI.31.b
+		hidden_effect = {
 		news_event = {id=AOR_news.97}
+		}
 		MON = {
 			load_oob = "AOR_LAND_CHI_VAN_2"
 			load_oob = "AOR_LAND_CHI_VAN_2"
@@ -941,7 +919,23 @@ country_event = {
 }
 	option = {
 		name = CHI.32.a
+		hidden_effect = {
 		news_event = {id=AOR_news.102}
+		}
+		UPC = {
+			if = {
+				limit ={
+					GUZ = {
+						controls_state = 907
+					}
+				}
+				UPC = {
+					annex_country = { 
+						target = GUZ
+						transfer_troops = yes }
+				}
+			}
+		}
 		KMT = {
 			add_ideas = CHI_gemingtongyizhixi
 		}
@@ -961,6 +955,14 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			set_victory_points = {
+                province = 10433
+                value = 20    
+            }
+			set_victory_points = {
+                province = 1847
+                value = 7    
+            }
 			MAN ={
 			declare_war_on = { 
 				target = NAN
@@ -977,7 +979,9 @@ country_event = {
 }
 	option = {
 		name = CHI.33.a
+		hidden_effect = {
 		news_event = {id=AOR_news.103}
+		}
 	}	
 }
 
@@ -1034,7 +1038,9 @@ country_event = {
 
 	option = {
 		name = CHI.34.a
+		hidden_effect = {
 		news_event = {id=AOR_news.110}
+		}
         NAN = {
 			add_state_core = 330
 			add_state_core = 610
@@ -1122,7 +1128,9 @@ country_event = {
 
 	option = {
 		name = CHI.35.a
+		hidden_effect = {
 		news_event = {id=AOR_news.111}
+		}
         MON = {
 			add_state_core = 893
 			add_state_core = 882
@@ -1170,6 +1178,10 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+            set_victory_points = {
+                province = 12062
+                value = 3    
+            }
 			MAN ={
 			declare_war_on = { 
 				target = KMT
@@ -1490,12 +1502,28 @@ country_event = {
 					owns_state = 322
 				} 
 			}
+
+		immediate = {
+            hidden_effect = {
+				set_victory_points = {
+                province = 1047
+                value = 20   
+                }
+			hidden_effect = {
+				set_victory_points = {
+                province = 4619
+                value = 15    
+                }
+		    }
+		}
+	}
+
 		option = {
 			CHI_civil_war_10 = yes
 			CHI = {
 			create_country_leader = {
 				name = "Feng_guo_zhang"
-				desc = "POLITICS_MON_DESC"
+				desc = "Feng_guo_zhang_desc"
 				picture = "gfx/leaders/NAN/Feng_guo_zhang.png"
 				expire = "1965.1.1"
 				ideology = authoritarianism
@@ -1530,9 +1558,11 @@ country_event = {
 					add_state_core = 322
 			}
 			name=CHI.41.a
-			news_event = {id=AOR_news.120}
+			hidden_effect = {
+                news_event = {id=AOR_news.120}
 			}
 		}
+	}
 
 		country_event = { #北京政府统一全中国！
 		id = CHI.42
@@ -1565,12 +1595,28 @@ country_event = {
 					owns_state = 322
 				} 
 			}
+
+		immediate = {
+            hidden_effect = {
+				set_victory_points = {
+                province = 1047
+                value = 20   
+                }
+			hidden_effect = {
+				set_victory_points = {
+                province = 4619
+                value = 15    
+                }
+		    }
+		}
+	}
+
 		option = {
 			CHI_civil_war_10 = yes
 			CHI = {
 			create_country_leader = {
 				name = "Duan_Qi_Rui"
-				desc = ""
+				desc = "Duan_Qi_Rui_desc"
 				picture = "gfx/leaders/CHI/Duan.png"
 				expire = "1965.1.1"
 				ideology = miliciagov
@@ -1605,9 +1651,11 @@ country_event = {
 					add_state_core = 322
 			}
 			name=CHI.42.a
-			news_event = {id=AOR_news.119}
+			hidden_effect = {
+                news_event = {id=AOR_news.119}
 			}
 		}
+	}
 
 #重庆英舰事件
 country_event = {
@@ -1624,10 +1672,12 @@ country_event = {
 	}
 	option = {
 		name = CHI.43.a
-		news_event = {id=AOR_news.130}
-		news_event = { days = 30  id = AOR_news.52 }
-		news_event = { days = 60  id = AOR_news.48 }
-		news_event = { days = 90  id = AOR_news.50 }
+		hidden_effect = {
+			news_event = {id = AOR_news.130}
+			news_event = { days = 30  id = AOR_news.52 }
+			news_event = { days = 60  id = AOR_news.48 }
+			news_event = { days = 90  id = AOR_news.50 }
+		}
 		add_manpower = -500
 	}
 }
@@ -1645,7 +1695,20 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		CHI = {
-			set_party_name = { ideology = Absolutism long_name = CHI_1_Absolutism_party name = CHI_1_Absolutism_party }
+			set_popularities = {
+				Absolutism = 56
+				AUT_democratic = 20
+				CON_democratic = 17
+				FRE_democratic = 3
+				SOC_democratic = 3
+				Special = 1
+				
+			}
+			set_party_name = {
+				ideology = Absolutism
+				long_name = "中华民国陆军部"
+				name = "中华民国陆军部"
+			}
 			set_politics = { ruling_party = Absolutism }
 			create_country_leader = {
 				name = "Wu_Pei_Fu"
@@ -1659,7 +1722,9 @@ country_event = {
 			
 		}
 		name = CHI.44.a
-		news_event = {id=AOR_news.143}
+		hidden_effect = {
+            news_event = {id=AOR_news.143}
+		}
 	}
 }
 
@@ -1704,7 +1769,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.46.a
-		news_event = {id=AOR_news.168}
+		hidden_effect = {
+			news_event = {id=AOR_news.168}
+		}
 	}
 }
 
@@ -1729,7 +1796,22 @@ country_event = {
 	}
 	option = {
 		name = CHI.47.a
-		news_event = {id=AOR_news.169}
+		TIB = {
+			set_cosmetic_tag = TIB_Absolutism
+			hidden_effect = {
+				news_event = {id=AOR_news.169}
+			}
+	
+			create_country_leader = {
+				name = "The_13th_Dalai_Lama"
+				desc = ""
+				picture = "gfx/leaders/CHI/The_13th_Dalai_Lama.png"
+				expire = "1965.1.1"
+				ideology = sanminism
+				traits = {
+				}
+			}
+		}
 	}
 }
 
@@ -1759,7 +1841,9 @@ country_event = {
 			
 		}
 		name = CHI.48.a
-		news_event = {id=AOR_news.177}
+		hidden_effect = {
+			news_event = {id=AOR_news.177}
+		}
 	}
 }
 
@@ -1994,4 +2078,44 @@ country_event = {
 	}
 }
 
-##
+country_event = {
+	# 《北望》（袁世凯收复外西北）
+	id = CHI.10000
+	title = CHI.10000.t
+	desc = CHI.10000.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10000.a
+	}
+}
+
+country_event = {
+	# 《旗女》（袁世凯收复外西北）
+	id = CHI.10001
+	title = CHI.10001.t
+	desc = CHI.10001.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10001.a
+		country_event = {
+			id = CHI.10002
+		}
+	}
+}
+
+country_event = {
+	# 《旗女2》（袁世凯收复外西北）
+	id = CHI.10002
+	title = CHI.10002.t
+	desc = CHI.10002.d
+	picture = GFX_AOR_chi_wangyejia	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = CHI.10002.a
+	}
+}

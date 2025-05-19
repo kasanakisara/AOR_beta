@@ -4,7 +4,7 @@ country_event = {
 	id = US2.1 
 	title = US2.1.t
 	desc = US2.1.d
-	picture = GFX_DCD_event_1
+	picture = GFX_US2_event_1
 	fire_only_once = yes
 	trigger = {
 		tag = USA
@@ -28,6 +28,10 @@ country_event = {
     transfer_state = 381
     transfer_state = 387
     transfer_state = 388
+    transfer_state = 1053
+    transfer_state = 1054
+    transfer_state = 1058
+    transfer_state = 1062
 
     add_state_core = 386
     add_state_core = 385
@@ -40,6 +44,10 @@ country_event = {
     add_state_core = 381
     add_state_core = 387
     add_state_core = 388 
+    add_state_core = 1053 
+    add_state_core = 1054
+    add_state_core = 1058
+    add_state_core = 1062
         }
     }
 }

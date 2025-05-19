@@ -8,39 +8,38 @@ CHI_civil_war_1 = {
 			set_country_flag  = china_war_begin
 			leave_faction = yes
 			set_popularities = {
-					Absolutism = 72
-					FRE_democratic = 15
-					CON_democratic = 8
-					Special = 5
+				AUT_democratic = 35
+				Absolutism = 35
+				CON_democratic = 17
+				FRE_democratic = 6
+				SOC_democratic = 6
+				Special = 1
 				
 			}
-			set_political_party = {
+			set_party_name = {
 				ideology = Absolutism
-				popularity = 72
-			}
-			set_party_name = {
-				ideology = FRE_democratic
-				long_name = "社会党(交通系）"
-				name = "社会党(交通系）"
-			}
-			set_party_name = {
-				ideology = CON_democratic
-				long_name = "亲日派政客-社会党(亲日派）"
+				long_name = "亲日派政客-社会党(皖系）"
 				name = "社会党(亲日派）"
 			}
 			set_party_name = {
-				ideology = Special
-				long_name = "极端民族主义"
-				name = "极端民族主义"
+				ideology = AUT_democratic
+				long_name = "亲英派政客-社会党(中央系与直系）"
+				name = "社会党(亲英派）"
 			}
-			create_country_leader = {
-				name = "Duan_Qi_Rui"
-				desc = ""
-				picture = "gfx/leaders/CHI/Duan.png"
-				expire = "1965.1.1"
-				ideology = miliciagov
-				traits = {
-				}
+			set_party_name = {
+				ideology = CON_democratic
+				long_name = "文官集团-社会党(交通系）"
+				name = "社会党(交通系）"
+			}
+			set_party_name = {
+				ideology = FRE_democratic
+				long_name = "国会第三派"
+				name = "国会第三派"
+			}
+			set_party_name = {
+				ideology = Special
+				long_name = "极端团体"
+				name = "极端团体"
 			}
 			set_politics = {
 				ruling_party = SOC_democratic
@@ -257,7 +256,7 @@ CHI_civil_war_3 = {
 		recruit_character = JIZ_zhou_yinren
 		load_oob = AOR_LAND_CHI_JIZ
 	}
-	MEN = {
+	MEN = { #陕西
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 622
 		add_state_core = 896
@@ -268,13 +267,14 @@ CHI_civil_war_3 = {
 		add_manpower = 10000
 	}
 
-	QIN = {
+	QIN = { #青海
+		set_cosmetic_tag = QIN_1
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 604
 		transfer_state = 604
 	}
 	
-	XSM = {
+	XSM = { #甘肃
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 754
 		add_state_core = 283
@@ -293,13 +293,14 @@ CHI_civil_war_3 = {
 		283= {set_demilitarized_zone=yes}
 		add_manpower = 10000
 	}
-	TIB = {
+	TIB = { #西藏
+	    set_cosmetic_tag = TIB_1_Absolutism
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 322
 		transfer_state = 322
 		add_manpower = 10000
 	}
-	SIK = {
+	SIK = { #新疆
 		set_country_flag  = china_war_begin_warlord
 		add_state_core = 287
 		add_state_core = 617
@@ -453,8 +454,23 @@ CHI_civil_war_5 = {
 
 		PRC = { #共产党
 			set_country_flag  = china_war_begin
+			add_ideas = PRC_The_great_red_army
+			create_country_leader = {
+				name = "xi_CHUAN_commit"
+				desc = "POLITICS_MON_DESC"
+				picture = "gfx/leaders/PRC/xi_CHUAN_commit.png"
+				expire = "1965.1.1"
+				ideology = REV_soc
+				traits = {
+				}
+			}
 			add_state_core = 605
 		    transfer_state = 605
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
 			add_manpower = 10000
 		}
 		DCD = {
@@ -462,6 +478,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_DONG"
 			transfer_state = 906
 			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		JLD = {
@@ -469,6 +490,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_JIA"
 			add_state_core = 908
 			transfer_state = 908
+			add_state_core = 906
+			add_state_core = 753
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		XCD ={
@@ -476,6 +502,11 @@ CHI_civil_war_5 = {
 			load_oob = "AOR_LAND_CHI_chuanjun_XI"
 			add_state_core = 753
 			transfer_state = 753
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 751
+			add_state_core = 434
+			add_state_core = 605
 			add_manpower = 10000
 		}
 		CBS = {
@@ -485,6 +516,10 @@ CHI_civil_war_5 = {
 			add_state_core = 434
 			transfer_state = 751
 			transfer_state = 434
+			add_state_core = 906
+			add_state_core = 908
+			add_state_core = 753
+			add_state_core = 605
 			add_manpower = 10000
 		}
 	}
@@ -1013,527 +1048,126 @@ CHI_civilwar_6 = {
 	283= {set_demilitarized_zone =no}
 	330 = {set_demilitarized_zone=no}
 }
-USA_civil_war_west = {
-	country_event = {id = USA.5000 days = 200}
-		country_event = {id = USA.6000 days = 210}
-		country_event = {id = USA.7000 days = 90}
-		US1 = {
-			transfer_state = 386
-			transfer_state = 387
-			transfer_state = 385
-			load_oob = "US1_Civilwar"
-			load_oob = "US1_Civilwar"
-			
+
+CHI_civil_war_11 = {
+	NAN = {
+		annex_country = { 
+			target = CHI 
+			transfer_troops = no 
 		}
-		US2 = {
-			transfer_state = 378
-			transfer_state = 379
-			transfer_state = 380
-			load_oob = "US2_Civilwar"
-			load_oob = "US2_Civilwar"
-		}
-		US3 = {
-			transfer_state = 388
-			load_oob = "US3_Civilwar"
-			load_oob = "US3_Civilwar"
-
-		}
-		US4 = {
-			transfer_state = 381
-			transfer_state = 925
-			load_oob = "US4_Civilwar"
-			load_oob = "US4_Civilwar"
-		}
-		US5 = {
-			transfer_state = 382
-			transfer_state = 924
-			transfer_state = 923
-			load_oob = "US5_Civilwar"
-			load_oob = "US5_Civilwar"
-		}
-		US6 = {
-			transfer_state = 389
-			transfer_state = 390
-			load_oob = "US6_Civilwar"
-			load_oob = "US6_Civilwar"
-		}
-		US7 = {
-			transfer_state = 384
-			load_oob = "US7_Civilwar"
-			load_oob = "US7_Civilwar"
-		}
-		US8 = {
-			transfer_state = 383
-			transfer_state = 926
-			load_oob = "US8_Civilwar"
-			load_oob = "US8_Civilwar"
-		}
-		US1 = {
-			add_state_core = 386
-			add_state_core = 387
-			add_state_core = 385
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-					DAXIYANG_The_clarion_call_for_sand_freedom_and_independence
-				}
-
-		}
-		US2 = {
-			add_state_core = 378
-			add_state_core = 379
-			add_state_core = 380
-			declare_war_on = {
-				target = US1
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-					PAN_XING_Desert_Eagle
-				}
-		}
-		US3 = {
-			add_state_core = 388
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-				}
-		}
-		US4 = {
-			add_state_core = 381
-			add_state_core = 925
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-				}
-		}
-		US5 = {
-			add_state_core = 382
-			add_state_core = 924
-			add_state_core = 923
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-				}
-		}
-		US6 = {
-			add_state_core = 389
-			add_state_core = 390
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-				}
-		}
-		US7 = {
-			add_state_core = 384
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US8
-
-				type = take_claimed_state
-				}
-			add_ideas = {
-				The_Wild_West
-			}
-		}
-		US8 = {
-			add_state_core = 383
-			add_state_core = 926
-			declare_war_on = {
-				target = US2
-
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US3
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US4
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US5
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US6
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US7
-	
-				type = take_claimed_state
-				}
-			declare_war_on = {
-				target = US1
-
-				type = take_claimed_state
-				}
-				add_ideas = {
-					The_Wild_West
-				}
-		}
+		load_oob = "AOR_LAND_CHI_CENTRAL"
+		create_faction = Zhiyang_Union
+		add_to_faction = CHI
+		white_peace = CHI
+		drop_cosmetic_tag = yes
 	}
+	MON = {
+		load_oob = "AOR_LAND_CHI_VAN_2"
+		608={set_demilitarized_zone=NO}
+		transfer_state = 876
+		transfer_state = 612
+		transfer_state = 756
+		transfer_state = 600
+		transfer_state = 899
+		transfer_state = 897
+		transfer_state = 898
+		transfer_state = 595
+		transfer_state = 596
+		transfer_state = 895
+		transfer_state = 894
+		transfer_state = 892
+		transfer_state = 749
+		transfer_state = 606
 
-USA_civil_war_west_1 = {
-	USA = {
-		annex_country = {
-			target = US1
-		    }
-		annex_country = {
-			target = US2
-		    }
-		declare_war_on = {
-			target = US3
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US4
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US5
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US6
-			type = civil_war
-			}
-		declare_war_on = {
-		    target = US7
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US8
-			type = civil_war
-			}
-		}
-	CSA = {
-		annex_country = {
-			target = US1
-		    }
-		declare_war_on = {
-			target = US2
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US3
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US4
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US5
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US6
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US7
-			type = civil_war
-			}
-		declare_war_on = {
-			target = US8
-			type = civil_war
-			}
-		}
+		add_state_core = 876
+		add_state_core = 612
+		add_state_core = 756
+		add_state_core = 600
+		add_state_core = 899
+		add_state_core = 897
+		add_state_core = 898
+		add_state_core = 595
+		add_state_core = 596
+		add_state_core = 895
+		add_state_core = 894
+		add_state_core = 892
+		add_state_core = 749
+		add_state_core = 606
+
 	}
+	MAN = {
+		load_oob = "AOR_LAND_CHI_MAN"
+		714={set_demilitarized_zone=no}
+		761={set_demilitarized_zone=no}
+		913={set_demilitarized_zone=no}
+		873={set_demilitarized_zone=no}
+		717={set_demilitarized_zone=no}
+		715={set_demilitarized_zone=no}
+		891={set_demilitarized_zone=no}
+		328={set_demilitarized_zone=no}
+		716={set_demilitarized_zone=no}
+		875={set_demilitarized_zone=no}
+		874={set_demilitarized_zone=no}
+		}
+    }
 
-USA_civil_war_east = {
-	USU = {
-		add_ideas = CHI_gemingtongyizhixi
-		add_ideas = PRC_The_great_red_army
-			transfer_state = 396
-			transfer_state = 816
-			transfer_state = 369
-			transfer_state = 367
-			transfer_state = 370
-
-			add_state_core = 396
-			add_state_core = 816
-			add_state_core = 369
-			add_state_core = 367
-			add_state_core = 370
+CHI_civil_war_12 = {
+	MON = {
+		annex_country = { 
+			target = CHI 
+			transfer_troops = no 
 		}
-	CSA = {
-		set_cosmetic_tag = CSA_SOC_democratic
-		set_politics = {ruling_party = SOC_democratic}
-		add_popularity = { ideology = SOC_democratic popularity = 0.20 }
-		create_country_leader = {
-			name = "William_Henry_Davis_Murray"
-			desc = "William_Henry_Davis_Murray_DESC"
-			picture = "gfx/leaders/CSA/William_Henry_Davis_Murray.png"
-			expire = "1965.1.1"
-			ideology = social_liberalism
-			traits = {
-				
-			}
-		}
-			transfer_state = 363
-			transfer_state = 364
-			transfer_state = 365
-			transfer_state = 366
-			transfer_state = 371
-			transfer_state = 375
-			transfer_state = 932
-	
-			add_state_core = 363
-			add_state_core = 364
-			add_state_core = 365
-			add_state_core = 366
-			add_state_core = 371
-			add_state_core = 375
-			add_state_core = 932
-		}
-	KOW = {
-			transfer_state = 393
-			transfer_state = 358
-			transfer_state = 360
-			transfer_state = 357
-
-			add_state_core = 393
-			add_state_core = 358
-			add_state_core = 360
-			add_state_core = 357
-		}
+		load_oob = "AOR_LAND_CHI_CENTRAL"
+		create_faction = Zhiyang_Union
+		add_to_faction = CHI
+		white_peace = CHI
 	}
+	NAN = {
+		set_cosmetic_tag = NAN
+		load_oob = "AOR_LAND_CHI_VAN_2"
+		608={set_demilitarized_zone=NO}
+		transfer_state = 876
+		transfer_state = 612
+		transfer_state = 756
+		transfer_state = 600
+		transfer_state = 899
+		transfer_state = 897
+		transfer_state = 898
+		transfer_state = 595
+		transfer_state = 596
+		transfer_state = 895
+		transfer_state = 894
+		transfer_state = 892
+		transfer_state = 749
+		transfer_state = 606
+		add_state_core = 876
+		add_state_core = 612
+		add_state_core = 756
+		add_state_core = 600
+	    add_state_core = 899
+		add_state_core = 897
+		add_state_core = 898
+		add_state_core = 595
+		add_state_core = 596
+		add_state_core = 895
+		add_state_core = 894
+		add_state_core = 892
+		add_state_core = 749
+		add_state_core = 606
+    }
+	MAN = {
+		load_oob = "AOR_LAND_CHI_MAN"
+		714={set_demilitarized_zone=no}
+		761={set_demilitarized_zone=no}
+		913={set_demilitarized_zone=no}
+		873={set_demilitarized_zone=no}
+		717={set_demilitarized_zone=no}
+	    715={set_demilitarized_zone=no}
+		891={set_demilitarized_zone=no}
+		328={set_demilitarized_zone=no}
+		716={set_demilitarized_zone=no}
+		875={set_demilitarized_zone=no}
+		874={set_demilitarized_zone=no}
+	    }
+    }
 

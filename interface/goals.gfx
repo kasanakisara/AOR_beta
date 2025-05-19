@@ -2,10 +2,54 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 
+
+	###FRA######
+
 	SpriteType = {
 		name = "GFX_goal_AOR_FRA_after_the_war"
-		texturefile = "gfx/interface/goals/AOR_FRA_after_the_war.png"			
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_after_the_war.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_New_Future_of_the_Republic"
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_The_New_Future_of_the_Republic.png"			
+	}		
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_a_thousand_things_wait_to_be_done"
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_a_thousand_things_wait_to_be_done.png"			
 	}	
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Traitor_President" #叛徒总统
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Traitor_President.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Carry_forward_the_old_cabinet" #tixie
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Carry_forward_the_old_cabinet.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Out_of_the_old_shadows" #zouchu
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Out_of_the_old_shadows.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Shackles" #jiasuo
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Shackles.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_market_and_society" #shichang
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_market_and_society.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_new_ideas" #xinsilu
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_new_ideas.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Gold_is_restricted" #限购黄金
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Gold_is_restricted.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Raise_tariffs" #关税
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Raise_tariffs.png"			
+	}
 	
 	SpriteType = {
 		name = "GFX_BEL_LB"

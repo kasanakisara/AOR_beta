@@ -20,7 +20,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Sun_zhong_shan"
-	desc = "POLITICS_MON_DESC"
+	desc = "Sun_zhong_shan_desc"
 	picture = "gfx/leaders/KMT/sun.dds"
 	expire = "1965.1.1"
 	ideology = sanminism
@@ -30,7 +30,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Sun_zhong_shan"
-	desc = "POLITICS_MON_DESC"
+	desc = "Sun_zhong_shan_desc"
 	picture = "gfx/leaders/KMT/sun_1.dds"
 	expire = "1965.1.1"
 	ideology = newdemism
@@ -39,18 +39,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Liao_Zhong_Kai"
-	desc = "POLITICS_MON_DESC"
-	picture = "gfx/leaders/KMT/Liao_Zhong_Kai.PNG"
-	expire = "1965.1.1"
-	ideology = rad_san
-	traits = {
-	}
+     name = "Liao_Zhong_Kai"
+    desc = "Liao_Zhong_Kai_desc"
+    picture = "gfx/leaders/KMT/Liao_Zhong_Kai.PNG"
+    expire = "1965.1.1"
+    ideology = rad_san
+    traits = {
+    }
 }
 
 create_country_leader = {
 	name = "Cai_e"
-	desc = "POLITICS_MON_DESC"
+	desc = "Cai_e_desc"
 	picture = "gfx/leaders/KMT/Cai_e.png"
 	expire = "1965.1.1"
 	ideology = liberalism
@@ -60,7 +60,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Chen_Qi_Mei"
-	desc = "POLITICS_MON_DESC"
+	desc = "Chen_Qi_Mei_desc"
 	picture = "gfx/leaders/KMT/Chen_Qi_Mei.png"
 	expire = "1965.1.1"
 	ideology = uni_san

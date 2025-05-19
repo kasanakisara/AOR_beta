@@ -25,7 +25,7 @@ AOR_FRA_decision_categories = {
 		}
 
 		complete_effect = {  
-			manpower = -5000
+			add_manpower = -5000
 		}
 		remove_effect = {
 			BRA = {
@@ -59,19 +59,6 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
-
-		#modifier = {
-		#	
-	   	#}
 
 		complete_effect = {  
 			set_country_flag = hswoc
@@ -89,7 +76,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
 		remove_effect = {
 			clr_country_flag = hxswoc
-			
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_Strengthen_trade
+				}
+			}
 		}
 		cost = 0
 		days_remove = 10
@@ -99,30 +90,19 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
-			ROOT = {
-				consumer_goods_factor = -0.1
-				trade_opinion_factor = 0.1
-			}
-			FROM = {
-				consumer_goods_factor = -0.1
-				trade_opinion_factor = 0.1
-			}
+			consumer_goods_factor = -0.1
+			trade_opinion_factor = 0.1
 	   	}
 
 		complete_effect = {  
 			set_country_flag = hswoc
-			
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_Strengthen_trade
+				}
+			}
 		}
 	}
 	Independent_country_Political_exchanges = { #独立国家-政治交流
@@ -133,7 +113,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { GRE SWE POL SPR ARA BEL DEN SIA }
 		remove_effect = {
 			clr_country_flag = hxswoc
-			
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_Political_exchanges
+				}
+			}
 		}
 		cost = 0
 		days_remove = 10
@@ -143,28 +127,18 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
-			ROOT = {
-				political_power_factor = 0.1
-			}
-			FROM = {
-				political_power_factor = 0.1
-			}
+			political_power_factor = 0.1
 	   	}
 
 		complete_effect = {  
 			set_country_flag = hswoc
-			
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_Political_exchanges
+				}
+			}
 		}
 	}
 	Independent_country_war_game = { #独立国家-军事演习
@@ -200,6 +174,9 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 						air_experience = 25
 					}
 				}
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_war_game
+				}
 			}
 		}
 		cost = 0
@@ -210,32 +187,20 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 				has_country_flag = hswoc
 			}
 		}
-		#icon = we need this!
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		add = 0
-		#		#trigger
-		#	}
-		#}
 
 		modifier = {
-			ROOT = {
-				experience_gain_army = 0.1
-				experience_gain_air = 0.1
-				experience_gain_navy = 0.1
-			}
-			FROM = {
-				experience_gain_army = 0.1
-				experience_gain_air = 0.1
-				experience_gain_navy = 0.1
-			}
+			experience_gain_army = 0.1
+			experience_gain_air = 0.1
+			experience_gain_navy = 0.1
 	   	}
 
 		complete_effect = {  
 			set_country_flag = hswoc
-			
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_Independent_country_war_game
+				}
+			}
 		}
 	}
 	Independent_country_technological_exchanges = { #独立国家-科技交流
@@ -282,7 +247,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
-			
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Monopoly_trade
+				}
+			}
 		}
 
 		cost = var_FRA_dependent_country_Monopoly_tradeCost
@@ -303,17 +272,16 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			ROOT = {
-				consumer_goods_factor = -0.3
-				political_power_cost = 0.5
-			}
-			FROM = {
-				stability_weekly = -0.01
-			}
+			consumer_goods_factor = -0.3
+			political_power_cost = 0.5
 		}
 
 		complete_effect = {  
-
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Monopoly_trade
+				}
+			}
 		}
 	}
 	dependent_country_Forced_production = { #附庸国家-强迫生产
@@ -324,6 +292,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Forced_production
+				}
+			}
 			
 		}
 
@@ -345,17 +318,15 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			ROOT = {
-				political_power_cost = 0.2
-			}
-			FROM = {
-				industrial_capacity_factory = 0.2
-				weekly_manpower = -100
-			}
+			political_power_cost = 0.2
 		}
 
 		complete_effect = {  
-
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Forced_production
+				}
+			}
 		}
 	}
 	dependent_country_Strengthen_education_of_French_culture = { #附庸国家-加强法国文化教育
@@ -366,7 +337,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
-			
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Strengthen_education_of_French_culture
+				}
+			}
 		}
 
 		cost = var_FRA_dcseofc_cost
@@ -387,18 +362,15 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			ROOT = {
-				political_power_cost = 0.2
-			}
-			FROM = {
-				autonomy_gain = -1
-				research_speed_factor = 0.02
-				stability_weekly = 0.01
-			}
+			political_power_cost = 0.2
 		}
 
 		complete_effect = {  
-
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Strengthen_education_of_French_culture
+				}
+			}
 		}
 	}
 	dependent_country_Crackdown_on_demonstrations = { #附庸国家-镇压示威活动
@@ -409,7 +381,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
-			
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Crackdown_on_demonstrations
+				}
+			}
 			ROOT = {
 				divide_variable = { 
 					var_FRA_dependent_country_Monopoly_tradeDaysremove = 2
@@ -465,14 +441,15 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			FROM = {
-				autonomy_gain = -1
-				stability_weekly = -0.02
-			}
+			
 		}
 
 		complete_effect = {  
-
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_Crackdown_on_demonstrations
+				}
+			}
 		}
 	}
 	dependent_country_SMA = { #附庸国家-加强货币权威
@@ -483,6 +460,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_SMA
+				}
+			}
 			
 		}
 
@@ -504,17 +486,16 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			ROOT = {
-				consumer_goods_factor = -0.25
-				political_power_gain = 0.25
-			}
-			FROM = {
-				consumer_goods_factor = 0.15
-			}
+			consumer_goods_factor = -0.25
+			political_power_gain = 0.25
 		}
 
 		complete_effect = {  
-
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_SMA
+				}
+			}
 		}
 	}
 	dependent_country_tdc = { #附庸国家-技术支配殖民地
@@ -525,7 +506,11 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		targets = { PAN MXS DAH MOR TUN CAR LAO SYR RHI }
 		
 		remove_effect = {
-			
+			FROM =  {
+				remove_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_tdc
+				}
+			}
 			ROOT = {
 				divide_variable = {
 					var_FRA_dependent_country_Monopoly_tradeCost = 2
@@ -563,16 +548,210 @@ AOR_FRA_Fraternity_Alliance = { #博爱同盟
 		#}
 
 		modifier = {
-			FROM = {
-				research_speed_factor = 0.07
-				stability_weekly = 0.01
-				autonomy_gain = -1
-				consumer_goods_factor = 0.25
-			}
+
 		}
 
 		complete_effect = {  
-
+			FROM =  {
+				add_dynamic_modifier = {
+					modifier = FRA_dm_dependent_country_tdc
+				}
+			}
 		}
+	}
+}
+
+AOR_FRA_Social_Crisis_decision_category = {
+	##以下为调试决议##
+	FRA_I_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis
+				}
+			}
+		}
+	}
+
+	FRA_II_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+				}
+			}
+		}
+	}
+
+	FRA_III_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+				}
+			}
+		}
+	}
+
+	FRA_IV_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+				}
+			}
+		}
+	}
+
+	FRA_V_crisis = {
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_debug = yes
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		complete_effect = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+				swap_ideas = {
+					remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+					add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+				}
+			}
+		}
+	}
+
+	##以下为游玩决议##
+
+	FRA_Social_Crisis_impact = {
+		available = {
+            has_completed_focus = AOR_FRA_With_the_power_of_money
+			NOT = {
+				has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+			}
+        }
+        activation = {
+			tag = FRA
+            has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+        }
+        visible = {
+            tag = FRA
+            has_idea = AOR_FRA_A_Growing_Social_Crisis_II
+        }
+
+        fixed_random_seed = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 100
+        timeout_effect = {
+            country_event = { id = FRA_Social_Crisis.3 }
+        }
 	}
 }

@@ -7,7 +7,7 @@
  
  Marxism:0 "革命社会主义"
  Marxism_noun:0 "革命社会主义"
- Marxism_desc:0 "先锋队"
+ Marxism_desc:0 "先锋队体制"
  
  PAR_socialism:0 "温和社会主义"
  PAR_socialism_noun:0 "温和社会主义"
@@ -27,7 +27,7 @@
  
  FRE_democratic:0 "自由民主主义"
  FRE_democratic_noun:0 "自由民主主义"
- FRE_democratic_desc:0 "自由直接选举制"
+ FRE_democratic_desc:0 "资产阶级代议制"
  
  CON_democratic:0 "保守民主主义"
  CON_democratic_noun:0 "保守民主主义"
@@ -39,11 +39,11 @@
  
  ISL_democratic:0 "伊斯兰民主主义"
  ISL_democratic_noun:0 "伊斯兰民主主义"
- ISL_democratic_desc:0 "伊斯兰世俗化代议制"
+ ISL_democratic_desc:0 "神学世俗化体制"
  
  Absolutism:0 "专制主义"
  Absolutism_noun:0 "专制主义"
- Absolutism_desc:0 "集权专制"
+ Absolutism_desc:0 "集权专制体制"
  
  Fascism:0 "法西斯主义"
  Fascism_noun:0 "法西斯主义"
@@ -82,9 +82,9 @@
  PRCrevolutionism:0"中国革命思想(先锋队理论）"
  PRCrevolutionism_desc:0"最早接触到马克思主义的中国人是从俄国人身上知道的，大规模了解马克思主义也是由俄国人带来的。与其他国家不同，马克思主义在中国最早的大范围传播是在战场上，来自五湖四海和不同阶级的青年士兵被马克思主义的思想内核和美好的愿景感染，决心与马先生和恩先生为伴，作为解放中华民族和万千穷苦百姓的理论武器。。"
  REV_soc:0"革命社会民主主义"
- REV_soc_desc:0"革命社会民主主义一词，来源于俄国社会民主工党的前身-俄罗斯马克思研究小组的研究中，一些针对激进主义的称呼。而这个词最终则被引用回马克思的故乡德国，并赋予了新的含义。\n\n在政治上，原先的“革命社会民主主义”被视作广义上的激进社会主义派别-这些社会主义者中包含着原先德国社会主义阵线的马克思派、拉萨尔派与其他大大小小非马克思学说的激进社会主义，又包含着俄国的社会民主工党以及第二国际的左派组织。但是具体到20世纪的“革命”一词，尤其是第二国际右派掀起变革浪潮的如今，革命社会民主主义者，专指那些接受了马克思主义的指导或接受了马克思主义作为其思想的主体，认同马克思主义哲学，既坚持议会斗争，又绝不放弃暴力革命并将其视作革命胜利唯一途径的社会主义者。他们有区别于当今列宁的布尔什维主义，因此他们又有另外一个称呼“古典马克思主义”。\n\n但无论怎么称呼，革命社会民主主义最显著的一点在于坚持阶级斗争且不放弃暴力革命路线，反对阶级调和。如今从美国的加利福尼亚的矿井到西伯利亚的原野，信奉革命社会民主主义的政治家以及群众们愈发增多，他们即将转换为社会主义者追求的世界革命不可或缺的一环。"
+ REV_soc_desc:0"革命社会民主主义一词，来源于俄国社会民主工党的前身-俄罗斯马克思研究小组的研究中，一些针对激进主义的称呼。而这个词最终则被引用回马克思的故乡德国，并赋予了新的含义。\n\n原先的“革命社会民主主义”被视作广义上的激进社会主义派别-这些社会主义者中包含着原先德国社会主义阵线的马克思派、拉萨尔派与其他大大小小非马克思学说的激进社会主义，又包含着俄国的社会民主工党以及第二国际的左派组织。但是到20世纪的，尤其是第二国际右派掀起变革浪潮的如今，革命社会民主主义者，专指那些接受了马克思主义的指导或接受了马克思主义作为其思想的主体，认同马克思主义哲学，绝不放弃暴力革命，并将其视作革命胜利唯一途径的社会主义者。他们有区别于当今列宁的布尔什维主义，因此他们又有另外一个称呼“古典马克思主义”。\n\n但无论怎么称呼，革命社会民主主义最显著的一点在于坚持阶级斗争且不放弃暴力革命路线，反对阶级调和。如今从美国的加利福尼亚的矿井到西伯利亚的原野，信奉革命社会民主主义的政治家以及群众们愈发增多，他们即将转换为社会主义者追求的世界革命不可或缺的一环。"
  Leftmilitarism:0"左翼先军主义"
- Leftmilitarism_desc:0""
+ Leftmilitarism_desc:0"左翼先军主义者认为，若想实现社会主义社会，则在社会主义革命中必须将革命军队作为主体，其将革命军队视作革命组织中的最高形式和机构。左翼先军主义者认为，通过革命军队，能有效的进行社会主义改造和镇压反革命，保护革命政权；军队的运行方式可以使得政令通畅，上下一心，可使地方更加服从党中央的命令，有利于社会主义建设。"
  
  #温和社子意识#
  councilism:0 "议会社会主义"
@@ -94,7 +94,7 @@
  PRCcosmopolitanism:0"大同主义"
  PRCcosmopolitanism_desc:0""
  socialism_mid:0"社会民主主义（中派）"
- socialism_mid_desc:0 "社会民主主义思想源于第一国际期间，欧洲各国发生思想变动的马克思主义研究团体。社会民主主义在考茨基修正主义与伯恩斯坦修正主义的推动下，于第二国际时期如雨后春笋般迅速在欧洲铺展开来，并向其他地区延伸。\n\n社会民主主义者对马克思的态度取决于社会民主主义者团体成立之初的状态-一部分社会民主主义者仍然打着马克思的旗号去宣传所谓的“科学社会主义”，另外的只是接受了马克思主义的一部分观点，还有一部分则完全否定马克思的理论成果。他们的理论对马克思主义和国际共产主义运动的影响极其深远，严重打击了革命社会主义者的影响力。\n\n社会民主主义者们通常进行了对马克思主义的全面修正。他们与革命的社会主义者区别最大的一点在于：社会民主主义者通常反对暴力斗争，或者讲暴力斗争作为“革命最后的底线”；社会民主主义者通常坚持议会斗争路线，鼓吹“阶级调和论”，片面的宣扬无产阶级的力量的弱小与资产阶级力量的强大。社会民主主义者绝大多数都信奉资产阶级国家学说，迷信于资产阶级国家机器与与资产阶级议会政体，鼓吹保留资产阶级议会，反对对旧有国家体制的打破；通过选举斗争的方式使工人阶级获得多数，并逐步改造资产阶级国家过渡到社会主义。考茨基社会民主主义者与其他社会民主主义思想不同的一点在于，考茨基主义者要求国家政权完全掌握在无产阶级-工人阶级手中。\n\n对于经济，社会民主主义者普遍宣传通过议会斗争之后的经济改革，实现国有经济与一部分私有经济的混合所有制，并通过国有经济对社会经济的主导实现国家经济发展，其中在社会主义中影响力较大考茨基学派吸纳了一部分马克思的工人在经济领域的专政观点，但并没有将马克思主义的公有制原则完全阐明。在社会层面上，社会民主主义者与民主社会主义者以及改良主义者类似，都是宣传建立社会保障体系，改善工人待遇，并建成福利国家。但是由于社会民主主义者对资产阶级的普遍同情，这些理念在实践中很多都未能正面提出。"
+ socialism_mid_desc:0 "社会民主主义思想源于第一国际期间，欧洲各国发生思想变动的马克思主义研究团体。社会民主主义在考茨基修正主义与伯恩斯坦修正主义的推动下，于第二国际时期如雨后春笋般迅速在欧洲铺展开来，并向其他地区延伸。\n\n社会民主主义者对马克思的态度取决于社会民主主义者团体成立之初的状态-一部分社会民主主义者仍然打着马克思的旗号去宣传所谓的“科学社会主义”，另外的只是接受了马克思主义的一部分观点，还有一部分则完全否定马克思的理论成果。他们的理论对马克思主义和国际共产主义运动的影响极其深远，严重打击了革命社会主义者的影响力。\n\n社会民主主义者们通常进行了对马克思主义的全面修正。他们与革命的社会主义者区别最大的一点在于：社会民主主义者通常反对暴力斗争，或者讲暴力斗争作为“革命最后的底线”；社会民主主义者通常坚持议会斗争路线，鼓吹“阶级调和论”，片面的宣扬无产阶级的力量的弱小与资产阶级力量的强大。社会民主主义者绝大多数都信奉资产阶级国家学说，迷信于资产阶级国家机器与与资产阶级议会政体，鼓吹保留资产阶级议会，反对对旧有国家体制的打破；通过选举斗争的方式使工人阶级获得多数，并逐步改造资产阶级国家过渡到社会主义。考茨基社会民主主义者与其他社会民主主义思想不同的一点在于，考茨基主义者要求国家政权完全掌握在无产阶级-工人阶级手中。\n\n对于经济，社会民主主义者普遍宣传通过议会斗争之后的经济改革，实现国有经济与一部分私有经济的混合所有制，并通过国有经济对社会经济的主导实现国家经济发展，其中在社会主义中影响力较大考茨基学派吸纳了一部分马克思的工人在经济领域的专政观点，但并没有将马克思主义的公有制原则完全阐明。在社会层面上，社会民主主义者与民主社会主义者以及改良主义者类似，都是宣传建立社会保障体系，改善工人待遇，并建成福利国家。"
  #宗教社子意识#
  liberacion:0 "基督教社会主义"
  liberacion_desc:0 "基督教社会主义 ，又称僧侣社会主义，是十九世纪中叶欧美教会人士把基督教的社会原则运用到现代工业生活的思潮或运动。基督教社会主义者认为，基督教及其道德是社会进步的主要动力，应把基督教的平等、博爱、慈善原则弘扬普世，使社会主义基督教化；鼓吹人们彼此相亲相爱，反对私有制和国家权力；谴责资本主义的贱买贵卖、多取少予违反基督教教义原则；对当时工厂和工场工人的悲惨处境表示同情，反对这种非基督教精神。他们主张以“真正的基督教友爱精神”，依靠国家和上层开明人士的资助，建立生产协作社摆脱资产阶级的经济剥削，改善工人的处境。马克思、恩格斯指出基督教的社会主义，只不过是僧侣用来使贵族的怨愤神圣化的圣水罢了，僧侣的社会主义也总是同封建的社会主义携手同行的。"
@@ -108,7 +108,7 @@
  counway:0 "议会路线"
  counway_desc:0 "面对农民的诉求，议会派农业社会主义者采用议会斗争的路线，争取选票赢得大选，通过政策的方式限制地主富农对土地的垄断，将土地逐渐转化为农民所有制。"
  rad_san:0 "激进三民主义"
- rad_san_desc:0 "激进三民主义是以廖仲恺为核心的左翼国民党人在广泛汲取社会主义的思想并结合中国的国情，提出的一种偏向激进的三民主义派生思想。他们分析认为中国最大的问题是农民问题，主张工农同盟来进行革命。"
+ rad_san_desc:0 "激进三民主义思想是以廖仲恺为核心的左翼国民党人，在汲取社会主义的思想并结合中国的国情，提出的一种激进的三民主义派生思想。\n\n激进三民主义思想认为，三民主义的重点在于“民生”，且为了发展民生，必须要依靠暴力革命，扫除中国阻碍三民主义实现的一切障碍。其认为中国社会的最大矛盾在于封建土地所有制，主张对封建制度进行革命，采取没收再分配的方式改变中国的农村现状；同时，其倡导工农结成经济与政治的联盟，通过国家领导下的合作社形式推动中国的工业化进程。\n\n激进三民主义者在政治建构方面较为集权，其认为只有一个统一的政府，总揽全局的政党，才能维护国家的稳定并推动工业化发展。"
  
  
  #保守民子意识#
@@ -167,7 +167,7 @@
  meliorism:0 "改良主义"
  meliorism_desc:0 "改良主义是一种典型的小资产阶级激进思想，最早可以追溯于法国大革命时期。经过各历史的不断演变，改良主义已经变成了一个从小资产阶级激进派到保守派混合于一体的庞大概念，英国的费边社及其欧洲各国的部分工党是其中的典型代表。\n\n改良主义者大多拥护资产阶级统治和资本主义制度的存在，并且将市场经济作为自己实现社会改革的根本经济制度。在政治上，改良主义者仍然希望依靠“议会多数”来实现无产阶级和人民大众的民主。在引入了拉萨尔主义右翼流派与第二国际的机会主义派别后，改良主义又开始鼓吹“阶级调和论”。在经济上，改良主义者普遍认同对资本主义的生产关系进行改良，认为需要提高工人们的工资待遇，改革社会保障制度，并建立起一套完备的公民福利制度。\n\n虽然改良主义者并未触及资本主义生产关系的根基，但是改良主义者的大量涌现，使得资本主义的统治阶级对广大人民群众做出了一定的让步。马克思并不反对在革命斗争中的改良，并认为改良是统治阶级对无产阶级的让步，但马克思反对改良主义者将改良作为革命斗争的最高形式和最终目标，认为这是对资产阶级的全面妥协与对无产阶级革命斗争的错误引导。"
  newdemism:0 "新民主主义"
- newdemism_desc:0 "新民主主义是一种特殊的意识形态，并非社会主义，也区别于传统的保守民主主义。是社会主义革命的前阶段。"
+ newdemism_desc:0 "新民主主义是一种特殊的意识形态，并非社会主义，也区别于传统的资产阶级民主主义。是社会主义革命的前阶段。"
  surrenderism:0 "右倾社会主义"
  surrenderism_desc:0 "右倾社会主义在第一国际成立之初时就已经呈现，他们是马克思所批评的拉萨尔主义流派与与之相联系的德国社会主义右倾党派。到了第二国际成立以及恩格斯逝世后，最具代表性的考茨基与伯恩斯坦等人进行了马克思主义理论的修正，右倾社会主义又随即扩大到对马克思主义的修正派别与几乎所有社会主义思想的右翼派别。\n\n在最具有代表性的右倾社会主义理论，即19世纪90年代后的考茨基主义中，右倾社会主义者否定马克思主义的基本原理。在哲学上背弃辩证唯物主义和历史唯物主义，鼓吹唯心论和形而上学；在政治经济学上修改马克思主义的剩余价值学说与阶级斗争学说，将工人的剥削鼓吹为革命胜利的必要准备，将暴力革命认为是工人阶级斗争的最后手段，宣传和平进入社会主义的理念。\n\n在政治上，右倾社会主义者普遍拥护资产阶级国家体制，并将确立资产阶级国家体制作为无产阶级夺取资产阶级国家机器后的唯一途径，认为无产阶级政权需要对资产阶级国家机器进行全盘照搬式的模仿以进入“社会主义社会”。同时，右倾社会主义者仍然有许多坚持议会多数，宣传通过议会的方式使得工人阶级夺取国家政权，一部分甚至已经开始鼓吹“阶级调和论”。\n\n经济上，右倾社会主义与社会民主主义和民主社会主义者的政治观点类似。右倾机会主义者更加偏向于建立无产阶级直接控制的经济体制，在保留一部分市场经济的前提下利用国有企业与国家计划发展经济，建立“社会主义经济”。社会上，右倾社会主义者宣扬资产阶级对工人的提高待遇，要求建立完备的社会保障体制。但是由于右倾机会主义者对资产阶级的普遍同情，这些理念在实践中很多都未能正面提出。"
  PanAfricanism:0"泛非主义"
@@ -200,11 +200,11 @@
  miliciagov:0 "政府独裁"
  miliciagov_desc:0 "从遥远的奴隶制到如今的军阀，独裁政治所表现的形式可以说是横贯古今，多种多样。并为后人一遍又一遍的复制使用着。\n\n关于独裁政府的定义极其广泛，包括了从奴隶制时期的国王独裁，封建时代的封建君主独裁，近代与现代的军政府独裁亦或是接受改良的君主独裁。但在欧美以外的其他地区，仍然有不少国家，亦或是受外国统治的殖民地政权保留了这种落后的制度。\n\n现代的独裁政府通常由极少数团体或军人组织组成。军人独裁制度是由军政府来控制国家，其政治体系完全破坏了资产阶级代议制，政府组织者由军人担任，执行者由少部分文官担任，依靠军事管制控制国家。在部分资产阶级国家中，由于受到自身或外部的历史因素影响，其采取的资产阶级代议制也遭受了独裁政治的严重破坏，几乎由极少数的团体统治国家，并通常采用文官独裁的方式治理国家，就算是拥有资产阶级代议制，其公民投票权也遭受了极其严格的限制。\n\n尽管野心家们对独裁政府的甜头仍然不减，但随着民族风潮的席卷，越来越多的独裁政体被推翻，相信在不久的将来，他们自己就会被迫做出改变。"
  despotism:0 "个人独裁政治"
- despotism_desc:0 "个人独裁统治是分类最为广泛的一种独裁政治。从奴隶制时代到近现代的个人独裁层出不穷，因此难以比较，不同时代的个人独裁，也有不同的表现方式。\n\n19世纪后的资本主义世界，个人独裁统治又被称为“波拿巴政治”或“波拿巴主义”。这是一种资产阶级式的个人独裁统治，其本质是欧洲早期资本主义政权的危机所催生的一种独裁政治。资产阶级不得不将国家机器进行改良，在保留资本主义制度以及资本主义生产方式的前提下，将暴力机关完全置于其他国家机关之上，并推举出个人或极少数团体统领暴力机关与其他国家机关。这时的统治者或统治集团不得不向广泛的统治阶级寻求帮助，以换取其统治的合法性。波拿巴主义者的政权形式表现多样，从大革命时期的拿破仑帝国到19世纪70年代后的德意志帝国都可以称作波拿巴主义政权，拿破仑皇帝的专断独裁与德意志帝国实际的立宪君主制度也可以称作波拿巴主义制度。\n\n但是，也有一部分因为各种经济以及历史要素而产生的个人独裁，这种例外就是在欧洲之外的：“考迪罗体制”。这种独裁政治的名字来源于拉丁语的“大地主”之意，主要发端于拉丁美洲地区。考迪罗体制是一种极度妥协的资产阶级独裁政治，它的政府包含了从资产阶级到残余或仍然强大的地主阶级的统治人员，包含了从文官独裁到军政府独裁的各种要素，但最为显著的仍然以一人为中心的独裁性质，考迪罗体制自身带有的半殖民地半封建性质，几乎代表了除波拿巴主义以外的所有现代的个人独裁制度。"
+ despotism_desc:0 "个人独裁统治是分类最为广泛的一种独裁政治。从奴隶制时代到近现代的个人独裁层出不穷，因此难以比较，不同时代的个人独裁，也有不同的表现方式。\n\n19世纪后的资本主义世界，个人独裁统治又被称为“波拿巴政治”或“波拿巴主义”。这是一种资产阶级式的个人独裁统治，其本质是欧洲早期资本主义政权的危机所催生的一种独裁政治。资产阶级不得不将改良国家机器，在保留资本主义制度以及资本主义生产方式的前提下，将暴力机关完全置于其他国家机关之上，并推举出个人或极少数团体统领暴力机关与其他国家机关。这时的统治者或统治集团不得不向广泛的统治阶级寻求帮助，以换取其统治的合法性。波拿巴主义者的政权形式表现多样，从大革命时期的拿破仑帝国到19世纪70年代后的德意志帝国都可以称作波拿巴主义政权，拿破仑皇帝的专断独裁与德意志的集权立宪君主制度也可以称作波拿巴主义制度。\n\n但是，也有一部分因为各种经济以及历史要素而产生的个人独裁，这种例外就是在欧洲之外的：“考迪罗体制”。这种独裁政治的名字来源于拉丁语的“大地主”之意，主要发端于拉丁美洲地区。考迪罗体制是一种极度妥协的资产阶级独裁政治，它的政府包含了从资产阶级到残余或仍然强大的地主阶级的统治人员，包含了从文官独裁到军政府独裁的各种要素，但最为显著的仍然以一人为中心的独裁性质，考迪罗体制自身带有的半殖民地半封建性质，几乎代表了除波拿巴主义以外的所有现代的个人独裁制度。"
  soltanism:0 "伊斯兰君主制"
  soltanism_desc:0 "伊斯兰国家的君主拥有的权力涉及行政与宗教，有的伊斯兰国家君主是政教合一的领袖而有的伊斯兰国家的君主只有世俗权力。不同地区在继承方面存在不同，一些国家的继承人由部落族人推举产生，也有国家通过各个部落联盟选举产生或世袭产生，部分国家由宗教领袖来担任君主。§G谁违抗真主和使者，并超越他的法度，真主将使谁入火狱，而永居其中，他将受凌辱的刑罚。§!"
  monarchism:0 "君主专制"
- monarchism_desc:0 "君主制自苏美尔人建立世袭王国的那一刻起就已经存在于世界上，至今延续千年。这种古老的体质历经了奴隶社会、封建社会与如今的资本主义社会。君主制在一次又一次的危机中粉身碎骨，却能一次又一次的死而复生，并成为了20世纪世界上仍为主流的意识形态及其制度。\n\n君主制的管理方式以君主的继承方式多种多样，从东方式的皇帝专制到西方的等级制，从绝对的世袭制到选举制层出不穷，但所有的君主制国家通常为世袭君主制。君主国家的统治方式由国内的经济组织作为导向，从以前的奴隶主、封建主或现在的资本家，君主制的内涵以及外在一遍又一遍的被他们所改变。如今的西方君主制大多是君主立宪制，君主实权偏少甚至无权，只作为国家象征存在。但这个世界上仍然存在着具有封建特色的君主专制国家，也同样存在着名为立宪，但是掌握极大实权的君主制国家。\n\n君主的权力大小并不与自己国家的强弱、发展有关，君主的权力本质上是统治阶级于自己统治的诉求而表达的一种异化的暴力手段，即加强君主权力，提供对被统治经济团体的保护。因此，又有部分国家的君主甚至共和统治者转而推崇德国式政治或日本式政治，渴望将君主制这种政治制度再次发扬光大。"
+ monarchism_desc:0 "君主制自苏美尔人建立世袭王国以来，至今延续千年。这种古老的体质历经了奴隶社会、封建社会与如今的资本主义社会。君主制在一次又一次的危机中粉身碎骨，却能一次又一次的死而复生，并成为了20世纪世界上仍为主流的意识形态及其制度。\n\n君主制的管理方式以君主的继承方式多种多样，从东方式的皇帝专制到西方的等级制，从绝对的世袭制到选举制层出不穷，但所有的君主制国家通常为世袭君主制。君主国家的统治方式由国内的经济组织作为导向，从以前的奴隶主、封建主或现在的资本家，君主制的内涵以及外在一遍又一遍的被他们所改变。如今的西方君主制大多是君主立宪制，君主实权偏少甚至无权，只作为国家象征存在。但这个世界上仍然存在着具有封建特色的君主专制国家，也同样存在着名为立宪，但是掌握极大实权的君主制国家。\n\n君主的权力大小并不与自己国家的强弱、发展有关，君主的权力本质上是统治阶级因统治诉求而产生的一种异化的暴力手段，即加强君主权力，提供对统治者与被统治者的保护。因此，又有部分国家的君主甚至共和统治者转而推崇德国式政治或日本式政治，渴望将君主制这种政治制度再次发扬光大。"
  
  
  #非传统子意识#
@@ -249,7 +249,7 @@
  GER_Fascism_party:0 "国家社会主义德意志工人党"
  GER_Fascism_party_long:0 "国家社会主义德意志工人党"
  GER_Marxism_party:0 "德国共产党"
- GER_AUT_democratic_party:1 "德意志中央党"
+ GER_AUT_democratic_party:1 "德国社民党（中央委员会）"
  GER_Absolutism_party_civil_war:0 "军事政府"
  GER_Absolutism_party_kaiserreich:0 "德意志国家人民党"
  GER_Absolutism_party_kaiserreich_long:0 "德意志国家人民党"
@@ -295,16 +295,90 @@
  AUS_SOC_democratic_party_long:0 "奥地利社会民主党"
  AUS_Fascism_party:1 "德意志国家社会主义工人党(奥）"
  AUS_Absolutism_party:1 "祖国阵线"
+
+###CHI###
  CHI_Marxism_party:0 "中国共产党"
  CHI_Marxism_party_long:0 "中国共产党"
  CHI_CON_democratic_party:0 "中国民主同盟"
- CHI_AUT_democratic_party:0 "社会党(中央系）"
+ CHI_AUT_democratic_party:0 "社会党（中央派系）"
+ CHI_1_AUT_democratic_party:0 "社会党（亲英派）"
+ CHI_2_AUT_democratic_party:0 "亲英派政客-社会党（中央系与直系）"
  CHI_Fascism_party:1 "蓝衣社"
  CHI_Fascism_party_long:1 "蓝衣社"
- CHI_Absolutism_party:0 "社会党(皖系）"
- CHI_1_Absolutism_party:0 "中华民国陆军部"
+ CHI_Absolutism_party:0 "社会党（地方派系）"
+ CHI_1_Absolutism_party:0 "亲日派政客-社会党（皖系）"
+ CHI_2_Absolutism_party:0 "中华民国陆军部"
  CHI_SOC_democratic_party:0"进步党"
  CHI_FRE_democratic_party:0"国民党"
+ CHI_1_FRE_democratic_party:0"国会第三派"
+ CHI_Special_party:0"极端团体"
+
+####UPC#####
+ UPC_AUT_democratic_party:0"进步党（粤湘桂）"
+ UPC_AUT_democratic_party_1:0"进步党（团结派）"
+ UPC_SOC_democratic_party:0"进步党（议会派）"
+ UPC_FRE_democratic_party:0"华南国民党"
+ UPC_FRE_democratic_party_1:0"国民党/旧同盟会残部"
+ UPC_CON_democratic_party:0"国民党/旧同盟会残部"
+ UPC_Absolutism_party:0"“济派” "
+ UPC_Absolutism_party_1:0"地方联省派"
+ UPC_Special_party:0"进步党（特调局）"
+
+####军阀们###
+ MAN_Absolutism_party:0"奉系军阀"
+ MON_Absolutism_party:0"西北筹边使公署"
+ MEN_Absolutism_party:0"陕西军阀"
+ MEN_1_Absolutism_party:0"国民军"
+ XSM_Absolutism_party:0"甘宁马家军"
+ QIN_Absolutism_party:0"青海马家军"
+ TIB_Absolutism_party:0"驻藏办事长官节制噶厦地方政府"
+ SIK_Absolutism_party:0"新疆军阀"
+ SHX_Absolutism_party:0"晋系军阀"
+
+######PRC#####
+ PRC_Marxism_party:0"中国共产党"
+ PRC_AGR_socialism_party:0"中共激进合作人士"
+ PRC_SOC_democratic_party:0"中共进步合作人士"
+ PRC_FRE_democratic_party:0"中共团结合作人士"
+ PRC_AUT_democratic_party:0"旧官僚/地主"
+ PRC_Absolutism_party:0"军阀乱兵"
+
+#####KMT#####
+ KMT_FRE_democratic_party:0"中国国民党（革命派）"
+ KMT_CON_democratic_party:0"中国国民党（建制派）"
+ KMT_AUT_democratic_party:0"中国国民党（联省派）"
+ KMT_SOC_democratic_party:0"中国国民党（革新派）"
+ KMT_AGR_socialism_party:0"中国国民党（激进派）"
+ KMT_Absolutism_party:0"云贵军阀"
+ KMT_Absolutism_party_1:0"守旧势力"
+
+#####NAN#####
+ NAN_AUT_democratic_party:0"社会党（直系-中央系）"
+ NAN_CON_democratic_party:0"社会党（交通系）"
+ NAN_FRE_democratic_party:0"第三党"
+ NAN_Absolutism_party:0"北洋地方势力"
+
+#####DCD#####
+ DCD_Absolutism_party:0"川康总督"
+
+ #####MXS####
+ CGT_Anarcho_party:0"墨西哥工人总联合会"
+ PLM_Anarcho_party:0"墨西哥自由党"
+ 
+####党派####
+ KUR_Special_party:0"库尔德起义军-正统派"
+ OIC_Absolutism_party:0"土耳其军队-忠诚派"
+ OIC_Marxism_party:0"土耳其军队-革命派"
+ OIC_Special_party:0"当地库尔德人"
+ OIC_ISL_democratic_party:0"当地叙利亚人"
+ SYR_Marxism_party:0"共党异见者"
+ SYR_Special_party:0"库尔德人"
+ SYR_CON_democratic_party:0 "反抗者"
+ SYI_ISL_democratic_party:0"起义军-苏丹派"
+ SYI_CON_democratic_party:0"起义军-英国派"
+ SYI_FRE_democratic_party:0"殖民政府残留官员"
+ SYI_Marxism_party:0"叙利亚共产党"
+
  SPR_FRE_democratic_party:0 "进步党联盟（激进派）"
  SPR_SOC_democratic_party:0 "西班牙工人社会党"
  SPR_AUT_democratic_party:0 "西班牙农民党"
@@ -622,6 +696,8 @@
  IRE_Absolutism_party_long:0 "爱尔兰工党"
  AFG_Absolutism_party:0 "巴拉克宰王朝"
  AFG_Absolutism_party_long:0 "巴拉克宰王朝"
+ AFK_Absolutism_party:0 "巴拉克宰王朝"
+ AFK_Absolutism_party_long:0 "巴拉克宰王朝"
  LUX_CON_democratic_party:0 "卢森堡右翼联合政权"
  LUX_Marxism_party:0 "卢森堡共产党"
  LUX_Marxism_party_long:0 "卢森堡共产党"
@@ -952,14 +1028,15 @@
  BUL_national_social_movement_party_long:0 "国家社会主义运动党"
  SHL_Marxism_party:0 "不来梅左派"
  NAU_Absolutism_party:0 "帝国旧军部——保守派"
- HAN_Absolutism_party:0 "帝国海军部"
+ HAN_Absolutism_party:0 "德意志祖国党"
  RHI_FRE_democratic_party:0 "国际联盟理事会"
  IST_CON_democratic_party:0 "国际联盟理事会"
  DNZ_CON_democratic_party:0 "国际联盟理事会"
  SIL_Absolutism_party:0 "德意志中央党——自由派"
- PRE_Absolutism_party:0 "卡普保皇派"
+ PRE_Absolutism_party:0 "德意志祖国党"
  MEK_SOC_democratic_party:0 "魏尔特温和派"
- SAX_SOC_democratic_party:0 "社会民主党考茨基派"
+ MEK_FRE_democratic_party:0"天主教中央党"
+ SAX_SOC_democratic_party:0 "德国社民党（中派）"
  SWE_SOC_democratic_party:0 "格吕克斯堡王朝"
  BNL_CON_democratic_party:0 "总联盟(荷兰)"
  BNL_CON_democratic_party_long:0 "罗马天主教选举协会总联盟"
@@ -989,7 +1066,7 @@
  ENG_Absolutism_party_kings_party_long:0 "不列颠王党"
 
  ########波美拉尼亚政党#################
- KSH_AUT_democratic_party:0 "德意志中央党(古斯塔夫派）"
+ KSH_AUT_democratic_party:0 "德国社民党(古斯塔夫派）"
  KSH_Fascism_party:0"国家民众党"
  KSH_Absolutism_party:0"新帝国党"
  KSH_Anarcho_party:0"自由军团士兵联合会"
@@ -1016,106 +1093,49 @@
  ITA_military_party:0 "国防指挥部-君主派"
  ITA_king_party:0 "君权国家党-右翼"
 #########USA###########
-USA_FRE_democratic_party:0 "美国扬基党-自由派"
-USA_1_CON_democratic_party:0 "美国扬基党-缓则派"
-USA_CON_democratic_party:0 "迪克西党-缓则派"
-USA_SOC_democratic_party:0 "美国联邦统一党-自由派"
-USA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
-USA_Marxism_party:0 "美利坚左翼阵线"
-USA_AUT_democratic_party:0 "迪克西党-民族强硬派"
-USA_Fascism_party:0 "劳动骑士团(WORK)-先锋运动"
-USA_militarism_party:0 "劳动骑士团(WORK)-新骑士运动"
-USA_new_ref_party:0 "劳工骑士团(LABOR)-左翼阵线"
-USA_Absolutism_party:0 "“新国家”运动"
+ USA_FRE_democratic_party:0 "美国扬基党-自由派"
+ USA_1_CON_democratic_party:0 "美国扬基党-缓则派"
+ USA_CON_democratic_party:0 "迪克西党-缓则派"
+ USA_SOC_democratic_party:0 "美国联邦统一党-社会国家主义派"
+ USA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
+ USA_Marxism_party:0 "美利坚左翼阵线"
+ USA_AUT_democratic_party:0 "迪克西党-“民族”强硬派"
+ USA_1_AUT_democratic_party:0 "美国联邦统一党-新国家主义派"
+ USA_Fascism_party:0 "劳动骑士团(WORK)-先锋主义派"
+ USA_militarism_party:0 "劳动骑士团(WORK)-骑士运动"
+ USA_new_ref_party:0 "劳工骑士团(LABOR)-左翼阵线"
+ USA_Absolutism_party:0 "“新国家”运动"
 #########CSA###########
-CSA_Marxism_party:0 "美利坚左翼阵线"
-CSA_CON_democratic_party:0 "南方迪克西党-保守派" 
-CSA_FRE_democratic_party:0 "南方迪克西党-自由派"
-CSA_SOC_democratic_party:0 "南方进步同盟-进步派"
-CSA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
-CSA_AUT_democratic_party:0 "南方迪克西党-民族强硬派"
-CSA_Fascism_party:0 "南方迪克西党-民族右派"
-CSA_Special_party:0 "极端党派"
-CSA_nationalism_party:0 "极端党派"
+ CSA_Marxism_party:0 "美利坚左翼阵线"
+ CSA_CON_democratic_party:0 "南方迪克西党-保守派" 
+ CSA_FRE_democratic_party:0 "南方迪克西党-自由派"
+ CSA_SOC_democratic_party:0 "迪克西党-南进盟-进步派"
+ CSA_PAR_socialism_party:0 "南方进步同盟-社会民主派"
+ CSA_AUT_democratic_party:0 "南方迪克西党-“民族”强硬派"
+ CSA_Fascism_party:0 "南方迪克西党-“民族”极端派"
+ CSA_nationalism_party:0 "极端民族主义党派"
+ CSA_Special_party:0 "民间组织"
 ####USU###
-USU_Marxism_party:0"美利坚左翼联盟-团结派"
-USU_Marxism_party_long:0"美利坚左翼联盟"
-USU_Anarcho_party:0"极端组织"
-USU_PAR_socialism_party:0 "美利坚左翼联盟-社会民主派"
-USU_AGR_socialism_party:0 "美利坚左翼联盟-西部派"
-USU_REL_socialism_party:0 "宗教事业统一战线"
-USU_SOC_democratic_party:0 "美利坚统一进步战线"
-USU_FRE_democratic_party:0 "美国扬基党残党"
-USU_CON_democratic_party:0 "迪克西党残党"
+ USU_Marxism_party:0"美利坚左翼联盟-团结派"
+ USU_Marxism_party_long:0"美利坚左翼联盟"
+ USU_Anarcho_party:0"极端组织"
+ USU_PAR_socialism_party:0 "美利坚左翼联盟-社会民主派"
+ USU_AGR_socialism_party:0 "美利坚左翼联盟-西部派"
+ USU_REL_socialism_party:0 "宗教事业统一战线"
+ USU_SOC_democratic_party:0 "美利坚统一进步战线"
+ USU_FRE_democratic_party:0 "美国扬基党残党"
+ USU_CON_democratic_party:0 "迪克西党残党"
 ######HSP#######
-HSP_Absolutism_party:0"太子港执政府"
+ HSP_Absolutism_party:0"太子港执政府"
 #########orA###########
-ORA_Anarcho_party:0"阿根廷地区工人联合会"
-ORA_SOC_democratic_party:0"联合会右倾分子"
-ORA_Marxism_party:0"CORA社会主义派"
-ORS_PAR_socialism_party:0"CORA温和派"
+ ORA_Anarcho_party:0"阿根廷地区工人联合会"
+ ORA_SOC_democratic_party:0"联合会右倾分子"
+ ORA_Marxism_party:0"CORA社会主义派"
+ ORS_PAR_socialism_party:0"CORA温和派"
 #####NIC#####
-NIC_Special_party:0"中美洲企业国"
+ NIC_Special_party:0"中美洲企业国"
 
-####UPC#####
-UPC_AUT_democratic_party:0"进步党(粤湘桂）"
-UPC_AUT_democratic_party_1:0"进步党(团结派）"
-UPC_SOC_democratic_party:0"进步党（议会派）"
-UPC_FRE_democratic_party:0"华南国民党"
-UPC_FRE_democratic_party_1:0"国民党/旧同盟会残部"
-UPC_CON_democratic_party:0"国民党/旧同盟会残部"
-UPC_Absolutism_party:0"“济派” "
-UPC_Absolutism_party_1:0"地方联省派"
-UPC_Special_party:0"进步党(特调局）"
-
-#####MXS####
-CGT_Anarcho_party:0"墨西哥工人总联合会"
-PLM_Anarcho_party:0"墨西哥自由党"
-####党派####
-KUR_Special_party:0"库尔德起义军-正统派"
-OIC_Absolutism_party:0"土耳其军队-忠诚派"
-OIC_Marxism_party:0"土耳其军队-革命派"
-OIC_Special_party:0"当地库尔德人"
-OIC_ISL_democratic_party:0"当地叙利亚人"
-SYR_Marxism_party:0"共党异见者"
-SYR_Special_party:0"库尔德人"
-SYR_CON_democratic_party:0 "反抗者"
-SYI_ISL_democratic_party:0"起义军-苏丹派"
-SYI_CON_democratic_party:0"起义军-英国派"
-SYI_FRE_democratic_party:0"殖民政府残留官员"
-SYI_Marxism_party:0"叙利亚共产党"
-
-####军阀们###
-MAN_Absolutism_party:0"奉系军阀"
-MON_Absolutism_party:0"西北筹边使公署"
-MEN_Absolutism_party:0"国民军"
-XSM_Absolutism_party:0"马家军"
-TIB_Absolutism_party:0"驻藏办事长官"
-SIK_Absolutism_party:0"新疆军阀"
-SHX_Absolutism_party:0"晋系军阀"
-
-######PRC#####
-PRC_Marxism_party:0"中国共产党"
-PRC_AUT_democratic_party:0"旧官僚/地主"
-PRC_Absolutism_party:0"军阀乱兵"
-
-#####KMT#####
-KMT_FRE_democratic_party:0"中国国民党（革命派）"
-KMT_CON_democratic_party:0"中国国民党（建制派）"
-KMT_AUT_democratic_party:0"中国国民党（联省派）"
-KMT_SOC_democratic_party:0"中国国民党（革新派）"
-KMT_AGR_socialism_party:0"中国国民党（激进派）"
-KMT_Absolutism_party:0"云贵军阀"
-KMT_Absolutism_party_1:0"守旧势力"
-
-#####NAN#####
-NAN_FRE_democratic_party:0"社会党"
-NAN_CON_democratic_party:0"社会党"
-NAN_AUT_democratic_party:0"社会党(中央系）"
-
-#####DCD#####
-DCD_Absolutism_party:0"川康总督"
-TCG_SOC_democratic_party:0"俄国社会民主工党（孟什维克）"
+ TCG_SOC_democratic_party:0"俄国社会民主工党（孟什维克）"
 
 
  #####DEN#####
@@ -1138,4 +1158,4 @@ TCG_SOC_democratic_party:0"俄国社会民主工党（孟什维克）"
  DEN_AUT_democratic_party_long:0 "丹麦产业党"
 
  
-
+SIL_FRE_democratic_party:0 "德国社民党(右派)"

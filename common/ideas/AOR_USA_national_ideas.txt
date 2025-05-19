@@ -97,7 +97,7 @@ ideas = {
 		    war_support_weekly = 0.005
 		    }
 	    }
-		  #纷争的众国（联合）（9）
+		#纷争的众国（联合）（9）
 		USA_the_divided_nation9 = {
 		    picture = GFX_idea_USA_the_divided_nation9
 		    allowed = { always = yes }
@@ -109,7 +109,7 @@ ideas = {
 		    war_support_weekly = 0.005
 		    }
 	    }
-		 #纷争的众国（联合）（10）
+	    #纷争的众国（联合）（10）
 		USA_the_divided_nation10 = {
 		    picture = GFX_idea_USA_the_divided_nation10
 		    allowed = { always = yes }
@@ -166,7 +166,7 @@ ideas = {
 
 	    	}
     	}
-		#三大利刃，穿胸剧痛（西部2）
+	#三大利刃，穿胸剧痛（西部2）
 	    USA_sandaliren2 = {
 	    	picture = GFX_idea_USA_sandaliren2
     		allowed = { always = yes }
@@ -210,7 +210,7 @@ ideas = {
 
 	    	}
     	}
-		#三大利刃，穿胸剧痛（东部2）
+	#三大利刃，穿胸剧痛（东部2）
 	    USA_sandaliren4 = {
 	    	picture = GFX_idea_USA_sandaliren4
     		allowed = { always = yes }
@@ -232,7 +232,7 @@ ideas = {
 
 	    	}
     	}
-		#支离破碎
+	#支离破碎
 	    USA_zhiliposui = {
 	    	picture = GFX_idea_USA_zhiliposui
     		allowed = { always = yes }
@@ -332,7 +332,7 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.1
 			}
 		}
-		#石油幻影，钢铁梦魇(5)（梅隆的计划）
+	#石油幻影，钢铁梦魇(5)（梅隆的计划）
 		USA_shiyouhuanying5 = {
 			picture = GFX_idea_USA_shiyouhuanying5
 			allowed = { always = yes }
@@ -347,7 +347,7 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.1
 			}
 		}
-		#狂野之地-西部
+	#狂野之地-西部
 		USA_kuangyezhidi = {
 			picture = GFX_idea_USA_kuangyezhidi
 			allowed = { always = yes }
@@ -356,7 +356,7 @@ ideas = {
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
-		#狂野之地-西部2
+	#狂野之地-西部2
 		USA_kuangyezhidi2 = {
 			picture = GFX_idea_USA_kuangyezhidi2
 			allowed = { always = yes }
@@ -365,7 +365,7 @@ ideas = {
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
-		#无序之地-西部
+	#无序之地-西部
 		USA_wuxunzhidi = {
 			picture = GFX_idea_USA_wuxunzhidi
 			allowed = { always = yes }
@@ -374,14 +374,14 @@ ideas = {
 				custom_modifier_tooltip = USA_kuangyezhidi_tt
 			}
 		}
-		#不死的信托
+	#不死的信托
 		USA_busidexintuo = {
 			picture = GFX_idea_USA_busidexintuo
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -401,14 +401,14 @@ ideas = {
 				
 			}
 		}
-		#不死的信托(梅隆)
+	#不死的信托(梅隆)
 		USA_busidexintuo1 = {
 			picture = GFX_idea_USA_busidexintuo1
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -429,14 +429,14 @@ ideas = {
 				
 			}
 		}
-		#不死的信托(摩根)
+	#不死的信托(摩根)
 		USA_busidexintuo2 = {
 			picture = GFX_idea_USA_busidexintuo2
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -457,14 +457,14 @@ ideas = {
 				
 			}
 		}
-        #不死的信托(梅隆)（梅隆的计划1）
+    #不死的信托(梅隆)（梅隆的计划1）
 		USA_busidexintuo3 = {
 			picture = GFX_idea_USA_busidexintuo3
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -485,14 +485,14 @@ ideas = {
 				
 			}
 		}
-	    #不死的信托(梅隆)（梅隆的计划2）
+	#不死的信托(梅隆)（梅隆的计划2）
 		USA_busidexintuo4 = {
 			picture = GFX_idea_USA_busidexintuo4
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -512,14 +512,14 @@ ideas = {
 				local_building_slots_factor = 0.2
 			}	
 		}
-		#不死的信托(摩根)（梅隆的计划1）
+	#不死的信托(摩根)（梅隆的计划1）
 		USA_busidexintuo5 = {
 			picture = GFX_idea_USA_busidexintuo5
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -539,14 +539,14 @@ ideas = {
 				local_building_slots_factor = 0.1
 			}
 		}
-	    #不死的信托(摩根)（梅隆的计划2）
+	#不死的信托(摩根)（梅隆的计划2）
 		USA_busidexintuo6 = {
 			picture = GFX_idea_USA_busidexintuo6
 			allowed = { always = yes }
 			modifier = {
 				custom_modifier_tooltip = USA_busidexintuo_tt
 				hidden_modifier = {
-					production_speed_industrial_complex_factor = -1
+					production_speed_industrial_complex_factor = -3
 					mobilization_laws_cost_factor = 20
 					economy_cost_factor = 20
 					
@@ -566,7 +566,7 @@ ideas = {
 				local_building_slots_factor = 0.2
 			}	
 		}
-		#秩序重构-骑士
+	#秩序重构-骑士
 		USA_zhixuchonggou_knights = {
 			picture = GFX_idea_USA_zhixuchonggou_knights
 			allowed = { always = yes }
@@ -576,7 +576,7 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
-		#秩序重构-骑士（限制）（1）
+	#秩序重构-骑士（限制）（1）
 		USA_zhixuchonggou_knights1 = {
 			picture = GFX_idea_USA_zhixuchonggou_knights1
 			allowed = { always = yes }
@@ -585,7 +585,7 @@ ideas = {
 				DRIFT_DEFENCE_FACTOR = 0.2
 			}
 		}
-		#秩序重构-骑士（游说）（2）
+	#秩序重构-骑士（游说）（2）
 		USA_zhixuchonggou_knights2 = {
 			picture = GFX_idea_USA_zhixuchonggou_knights2
 			allowed = { always = yes }
@@ -595,7 +595,7 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
-		#秩序重构-骑士（游说）（3）
+	#秩序重构-骑士（游说）（3）
 		USA_zhixuchonggou_knights3 = {
 			picture = GFX_idea_USA_zhixuchonggou_knights3
 			allowed = { always = yes }
@@ -606,7 +606,7 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
-		#大战之末，洪涛将临
+	#大战之末，洪涛将临
 		USA_dazhanzhimo = {
 			picture = GFX_idea_USA_dazhanzhimo
 			allowed = { always = yes }
@@ -614,7 +614,7 @@ ideas = {
 				custom_modifier_tooltip = USA_dazhanzhimo_tt
 			}
 		}
-        #大战之末，洪涛将临(2-退出协约国)
+    #大战之末，洪涛将临(2-退出协约国)
         USA_dazhanzhimo2 = {
 			picture = GFX_idea_USA_dazhanzhimo2
 			allowed = { always = yes }
@@ -625,7 +625,7 @@ ideas = {
 				subversive_activites_upkeep = 0.2
 			}
 		}
-		 #大战之末，洪涛将临(3-改革金融)
+	#大战之末，洪涛将临(3-改革金融)
 		 USA_dazhanzhimo3 = {
 			picture = GFX_idea_USA_dazhanzhimo3
 			allowed = { always = yes }
@@ -637,7 +637,7 @@ ideas = {
 				trade_opinion_factor = -0.3
 			}
 		}
-		 #大战之末，洪涛将临(4-提高关税)
+	#大战之末，洪涛将临(4-提高关税)
 		 USA_dazhanzhimo4 = {
 			picture = GFX_idea_USA_dazhanzhimo4
 			allowed = { always = yes }
@@ -649,7 +649,7 @@ ideas = {
 				trade_opinion_factor = -0.5
 			}
 		}
-		 #大战之末，洪涛将临(5-与法国修关系)
+	#大战之末，洪涛将临(5-与法国修关系)
 		 USA_dazhanzhimo5 = {
 			picture = GFX_idea_USA_dazhanzhimo5
 			allowed = { always = yes }
@@ -662,7 +662,7 @@ ideas = {
 				min_export = 0.05
 			}
 		}
-        #大战之末，洪涛将临(6-求援法国)
+    #大战之末，洪涛将临(6-求援法国)
 		 USA_dazhanzhimo6 = {
 			picture = GFX_idea_USA_dazhanzhimo6
 			allowed = { always = yes }
@@ -675,7 +675,7 @@ ideas = {
 				min_export = 0.05
 			}
 		}
-		 #延长紧急状态
+	#延长紧急状态
 		USA_jinjizhuangtai = {
 			picture = GFX_idea_USA_jinjizhuangtai
 			allowed = { always = yes }
@@ -684,59 +684,9 @@ ideas = {
 				mobilization_speed = 0.05
 			}
 		}
-	#英法资本优势控股	
-		USA_Anglo_frech_enterprise = {
-			picture = GFX_idea_USA_Anglo_frech_enterprise
-			allowed = { always = yes }
-			modifier = {
-			min_export = 0.2
-			civilian_factory_use = 5
-			industrial_concern_cost_factor = -0.05
-			drift_defence_factor = 0.3
-			}
-		}
-	#钢铁与棉花	
-	    USA_steel_and_cotton = {
-			picture = GFX_idea_USA_steel_and_cotton
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = -0.15
-			war_support_factor = -0.15
-			resistance_target = 0.15
-			production_speed_buildings_factor = 0.10
-			}
-		}
-	#垫底的美金	
-		USA_Dollar_bottom = {
-			picture = GFX_idea_USA_Dollar_bottom
-			allowed = { always = yes }
-			modifier = {
-			min_export = 0.2
-			trade_opinion_factor = 0.1
-			trade_laws_cost_factor = 0.1
-			economy_cost_factor = 0.1
-			consumer_goods_factor = 0.1
-			}
-		}
-		
-	#潘兴将军的作战计划	
-		USA_PlanOfOperationA = {
-			allowed = { always = yes }
-			modifier = {
-			army_infantry_attack_factor = 0.05
-			terrain_penalty_reduction = 0.05
-			}
-		}
-	#武装铁路网计划	
-		USA_RailwayA = {
-			allowed = { always = yes }
-			modifier = {
-			production_speed_rail_way_factor = 0.05
-			terrain_penalty_reduction = 0.3
-			}
-		}
 	#混乱的五大湖区	
 		USA_GreatLakesA = {
+			picture = GFX_idea_USA_GreatLakesA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.15
@@ -744,46 +694,18 @@ ideas = {
 			production_factory_max_efficiency_factor = -0.3
 			}
 		}
-	#安抚企业	
-		USA_AppeaseA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = 0.05
-			}
-		}
 	#颁布戒严令	
 		USA_MartialLawA = {
+			picture = GFX_idea_USA_MartialLawA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.1
-			army_infantry_defence_factor = 0.2
-			}
-		}
-	#揪出幕后黑手	
-		USA_ArrestA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = -0.05
-			
+				resistance_decay = -0.3
 			}
 		}	
-	#与摩根商谈	
-		USA_MorganA = {
-			allowed = { always = yes }
-			modifier = {
-			production_factory_start_efficiency_factor = 0.05
-			production_factory_max_efficiency_factor = 0.05
-			}
-		}
-	#批评迪克西激进派	
-		USA_CriticizeA = {
-			allowed = { always = yes }
-			modifier = {
-			stability_factor = 0.05
-			}
-		}
 	#受破坏的五大湖区		
 		USA_GreatLakes2A = {
+			picture = GFX_idea_USA_GreatLakes2A
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.05
@@ -793,6 +715,7 @@ ideas = {
 		}	
 	#美式忧虑
 		USA_AmericanAnxietyA = {
+			picture = GFX_idea_USA_AmericanAnxietyA
 			allowed = { always = yes }
 			modifier = {
 			stability_factor = -0.05
@@ -800,6 +723,43 @@ ideas = {
 			production_factory_max_efficiency_factor = -0.10
 			}
 		}	
+	}
+
+
+#################隐 藏 国 策#################
+
+    hidden_ideas = {
+
+	#揪出幕后黑手	
+	    USA_ArrestA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = -0.05
+		
+			}
+		}
+	#批评迪独	
+		USA_CriticizeA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
+	#与摩根商谈	
+		USA_MorganA = {
+			allowed = { always = yes }
+			modifier = {
+			production_factory_start_efficiency_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	#安抚企业	
+		USA_AppeaseA = {
+			allowed = { always = yes }
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
 	#暂时的慰籍-救济
 	    USA_zanshideweiji = {
 			picture = GFX_idea_USA_zanshideweiji
@@ -816,7 +776,7 @@ ideas = {
 			stability_factor = 0.05
 			}
 		}
-    #暂时的慰籍-战事宣传
+	#暂时的慰籍-战事宣传
 		USA_zanshidexuanchuan = {
 			picture = GFX_idea_USA_zanshidexuanchuan
 			allowed = { always = yes }
@@ -825,5 +785,58 @@ ideas = {
 			war_support_factor = 0.05
 			}
 		}
+	#潘兴将军的作战计划	
+		USA_PlanOfOperationA = {
+			allowed = { always = yes }
+			modifier = {
+			army_infantry_attack_factor = 0.05
+			terrain_penalty_reduction = 0.05
+			}
+		}
+	#武装铁路网计划	
+		USA_RailwayA = {
+			allowed = { always = yes }
+			modifier = {
+			production_speed_rail_way_factor = 0.05
+			terrain_penalty_reduction = 0.3
+			}
+		}
 	}
 }
+
+    #废案
+	#英法资本优势控股	
+		#USA_Anglo_frech_enterprise = {
+			#picture = GFX_idea_USA_Anglo_frech_enterprise
+			#allowed = { always = yes }
+			#modifier = {
+			#min_export = 0.2
+			#civilian_factory_use = 5
+			#industrial_concern_cost_factor = -0.05
+			#drift_defence_factor = 0.3
+			#}
+		#}
+	#钢铁与棉花	
+	   #USA_steel_and_cotton = {
+			#picture = GFX_idea_USA_steel_and_cotton
+			#allowed = { always = yes }
+			#modifier = {
+			#stability_factor = -0.15
+			#war_support_factor = -0.15
+			#resistance_target = 0.15
+			#production_speed_buildings_factor = 0.10
+			#}
+		#}
+	#垫底的美金	
+	    #USA_Dollar_bottom = {
+			#picture = GFX_idea_USA_Dollar_bottom
+			#allowed = { always = yes }
+			#modifier = {
+			#min_export = 0.2
+			#trade_opinion_factor = 0.1
+			#trade_laws_cost_factor = 0.1
+			#economy_cost_factor = 0.1
+			#consumer_goods_factor = 0.1
+			#}
+		#}
+		

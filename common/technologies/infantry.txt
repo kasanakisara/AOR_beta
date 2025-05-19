@@ -919,6 +919,10 @@ machine_equipment_weapons1 = {
 			soft_attack = 0.05
 		}
 
+		category_machine = {
+			supply_consumption = -0.02
+		}
+
 		research_cost = 0.5
 		start_year = 1920
 		folder = {
@@ -986,6 +990,9 @@ machine_equipment_weapons3 = {
 
 	category_machine_weapons = {
 		maximum_speed = 0.05
+	}
+	category_machine_weapons = {
+		soft_attack = 0.05
 	}
 	research_cost = 0.3
 	start_year = 1924

@@ -13,9 +13,6 @@ country_event = {
     option = {
         name = SWE.1.a
         hidden_effect = {
-            clr_country_flag = SWE_GUI_1
-            clr_country_flag = SWE_GUI_4
-            set_country_flag = SWE_GUI_2
             remove_ideas = SWE_Eighty_Seventh_Orders
             remove_ideas = SWE_K_Plan
             remove_ideas = SWE_Left_Threat
@@ -24,12 +21,18 @@ country_event = {
             remove_ideas = SWE_Antisocialistisk_Speciallagen
             remove_ideas = SWE_The_Union_Dream
             remove_ideas = SWE_In_Revolution
-            add_ideas = A_lingering_alliance
+            remove_ideas = SWE_Visible_Hand
+            remove_ideas = SWE_Reducted_Civil_Servants
+            remove_ideas = SWE_Merged_Parliament
+            remove_ideas = SWE_Universal_Suffrage
             clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = Haakon.1 days = 5 }
             country_event = { id = AOR_news.90 }
+            add_ideas = SWE_Regency_Council
         }
-        custom_effect_tooltip = SWE_Hakoon_Death_tt
+        custom_effect_tooltip = SWE_Haakon_Death_tt
+        ## 第二阶段完工后删除这段代码 ##
+        custom_effect_tooltip = SWE_Warning_Imcompleted_tt
     }
 }
 
@@ -137,16 +140,13 @@ country_event = {
 }
 
 country_event = {
-    id = SWE.8 #斯德哥尔摩会议
+    id = SWE.8 #全面深化改革
     title = SWE.8.t
     desc = SWE.8.d
     is_triggered_only = yes
     option = {
         name = SWE.8.a
-        add_timed_idea = {
-            idea = SWE_Stockholm_Law
-            days = 405
-        }
+        add_political_power = 50
     }
 }
 
@@ -184,7 +184,6 @@ country_event = {
         }
         custom_effect_tooltip = SWE_11_tt
         clr_country_flag = SWE_Norweign_Independence_flag
-        clr_country_flag = SWE_GUI_1
     }
 }
 
@@ -243,9 +242,18 @@ country_event = {
             remove_ideas = SWE_Beyond_Nation
             remove_ideas = SWE_Liberte_Spirit
             remove_ideas = SWE_Encourage
-            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = SWE_Further_Reform_Law
             remove_ideas = Let_the_ambitio_sleep
             remove_ideas = Tiger_of_Silence
+            
+            remove_dynamic_modifier = AOR_SWE_Norweign_Independence_dynamic_modifier
+
+            clear_variable = SWE_Norweign_Independence_value
+            clear_variable = SWE_Norweign_Independence_stability_weekly
+            clear_variable = SWE_Norweign_Independence_stability_factor
+            clear_variable = SWE_Norweign_Independence_stability_power_cost
+            clear_variable = SWE_Norweign_Independence_add
+            clear_variable = SWE_Norweign_Independence_main_meter
 
             set_politics = {
                 ruling_party = FRE_democratic
@@ -349,6 +357,7 @@ country_event = {
             remove_ideas = SWE_Beyond_Nation
             remove_ideas = SWE_Eighty_Seventh_Orders
             remove_ideas = SWE_Antisocialistisk_Speciallagen
+            remove_ideas = SWE_Further_Reform_Law
             add_ideas = SWE_The_Union_Dream
             add_ideas = SWE_In_Revolution
             add_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
@@ -361,6 +370,13 @@ country_event = {
         set_variable = { SWE_Union_construction_speed = 0.05 }
         set_variable = { SWE_Union_industrial_speed = 0.05 }
         set_variable = { SWE_Union_arms_speed = 0.05 }
+        clear_variable = SWE_Norweign_Independence_value
+        clear_variable = SWE_Norweign_Independence_stability_weekly
+        clear_variable = SWE_Norweign_Independence_stability_factor
+        clear_variable = SWE_Norweign_Independence_stability_power_cost
+        clear_variable = SWE_Norweign_Independence_add
+        clear_variable = SWE_Norweign_Independence_main_meter
+        clr_country_flag = SWE_Norweign_Independence_flag
         custom_effect_tooltip = SWE_Union_GUI_Enable_tt
     }
 }
@@ -495,7 +511,7 @@ country_event = {
             remove_ideas = SWE_Liberte_Spirit
             country_event = { id = Haakon.2 days = 5 }
         }
-        custom_effect_tooltip = SWE_Death_Union_tt
+        custom_effect_tooltip = SWE_Haakon_I_tt
     }
 }
 
@@ -508,10 +524,11 @@ country_event = {
         name = Haakon.2.a
         hidden_effect = {
             remove_ideas = SWE_Encourage
-            remove_ideas = SWE_Stockholm_Law
+            remove_ideas = SWE_Further_Reform_Law
             remove_ideas = SWE_Open_the_door
             remove_ideas = SWE_Third_Choice
             remove_ideas = SWE_Folkhemmet
+            remove_ideas = SWE_Ex_Folkhemmet
             remove_ideas = SWE_Folkhemmet_debuff
             remove_ideas = SWE_Soviet_Trade
             remove_ideas = SWE_Germany_Trade_sweden
@@ -519,8 +536,9 @@ country_event = {
             remove_dynamic_modifier = { modifier = AOR_SWE_Trade_dynamic_modifier }
             remove_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
             remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
-            country_event = { id = Hakoon.3 days = 5 }
+            country_event = { id = Haakon.3 days = 5 }
         }
+        custom_effect_tooltip = SWE_Haakon_II_tt
     }
 }
 
@@ -533,7 +551,10 @@ country_event = {
         name = Haakon.3.a
         hidden_effect = {
             load_focus_tree = AOR_SWE_focus_tree_2
+            set_country_flag = SWE_Emergency_State
+            add_ideas = SWE_Regency_Emergency_Crisis
         }
+        custom_effect_tooltip = SWE_Haakon_III_tt
     }
 }
 
@@ -718,6 +739,105 @@ country_event = {
         name = SWE.31.a
         add_political_power = 100
         complete_national_focus = SWE_Rebuild_New_World
+    }
+}
+
+country_event = {
+    id = SWE.32 #将权力回归人民——全面普选
+    title = SWE.32.t
+    desc = SWE.32.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.32.a
+        add_political_power = 100
+        hidden_effect = {
+            add_ideas = SWE_Promoting_Universal_Suffrage
+        }
+    }
+}
+
+country_event = {
+    id = SWE.33 #将权力回归人民——全面普选之完成
+    title = SWE.33.t
+    desc = SWE.33.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.33.a
+        add_political_power = 100
+        add_ideas = SWE_Universal_Suffrage
+        hidden_effect = {
+            remove_ideas = SWE_Promoting_Universal_Suffrage
+        }
+    }
+}
+
+country_event = {
+    id = SWE.34 #推动一院
+    title = SWE.34.t
+    desc = SWE.34.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.34.a
+        add_political_power = -100
+    }
+}
+
+country_event = {
+    id = SWE.35 #推动一院之完成
+    title = SWE.35.t
+    desc = SWE.35.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.35.a
+        add_political_power = 100
+        add_ideas = SWE_Merged_Parliament
+    }
+}
+
+country_event = {
+    id = SWE.36 #新继承法
+    title = SWE.36.t
+    desc = SWE.36.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.36.a
+        hidden_effect = {
+            add_ideas = SWE_Union_Inheritance_Law
+        }
+        custom_effect_tooltip = SWE_Inheritance_Law_tt
+    }
+}
+
+country_event = {
+    id = SWE.37 #裁人
+    title = SWE.37.t
+    desc = SWE.37.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.37.a
+        add_stability = -0.2
+    }
+}
+
+country_event = {
+    id = SWE.38 #裁完了
+    title = SWE.38.t
+    desc = SWE.38.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.38.a
+        add_ideas = SWE_Reducted_Civil_Servants
+    }
+}
+
+country_event = {
+    id = SWE.39 #你门户开放了个啥！look into my eyes!
+    title = SWE.39.t
+    desc = SWE.39.d
+    is_triggered_only = yes
+    option = {
+        name = SWE.39.a
+        add_political_power = -100
     }
 }
 

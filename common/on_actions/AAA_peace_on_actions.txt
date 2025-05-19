@@ -905,9 +905,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = MON
+					}
 				}
 			}
 			else_if = {
@@ -1003,9 +1003,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = NAN
+					}
 				}
 			}
 			else_if = {
@@ -1162,9 +1162,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = MON
+					}
 				}
 			}
 			else_if = {
@@ -1259,9 +1259,9 @@ on_actions = {
 					}
 				}
 				MAN = {
-					transfer_state = 610
-					transfer_state = 608
-					transfer_state = 878
+					annex_country = {
+						target = NAN
+					}
 				}
 			}
 			else_if = {
@@ -2187,7 +2187,9 @@ on_actions = {
 					puppet = CRO
 				}
 			}
+
 			####半岛沙漠战争###（上面的没写完在这条上方继续写就好）
+
 			##内志战争##
 			else_if = {
 				limit = {
@@ -2267,6 +2269,7 @@ on_actions = {
 					transfer_state = 956
 				}
 			}
+
 			#汉志战争
 			else_if = {
 				limit = {
@@ -2352,6 +2355,739 @@ on_actions = {
 					}
 				}
 			}
+
+		#####罗马尼亚,波兰，乌克兰苏维埃大战乌克兰#####
+			else_if = {
+				limit = {
+					#罗马尼亚胜利
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#罗马尼亚胜利
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				news_event = AOR_news.220
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				news_event = AOR_news.220
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#乌克兰苏维埃胜利
+					FROM = {
+						original_tag = UKR
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#乌克兰苏维埃胜利
+					FROM = {
+						original_tag = UKR
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				news_event = AOR_news.220
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+			else_if = {
+				limit = {
+					#苏俄胜利
+					FROM = {
+						original_tag = RUS
+					}
+					ROOT = {
+						original_tag = WRU
+					}
+				}
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+			}
+			else_if = {
+				limit = {
+					#苏俄胜利
+					FROM = {
+						original_tag = RUS
+					}
+					ROOT = {
+						original_tag = UPR
+					}
+				}
+				news_event = AOR_news.220
+				ROM = {
+					transfer_state = 1045
+				}
+				GLC = {
+					transfer_state = 89
+					transfer_state = 91
+					transfer_state = 93
+					transfer_state = 199
+				}
+				UKR = {
+					transfer_state = 197
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+				}
+				LIT = {
+					transfer_state = 201
+				}
+			}
+
+        #######波兰大战加利西亚叛乱势力#######
+
+			else_if = {
+				limit = {
+					#波兰清算委员会胜利
+					FROM = {
+						original_tag = GLC
+					}
+					ROOT = {
+						original_tag = TRZ
+					}
+				}
+				GLC = {
+					transfer_state = 1046
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = TRZ
+					}
+				}
+				GLC = {
+					transfer_state = 1046
+				}
+			}
+
+			else_if = {
+				limit = {
+					#波兰清算委员会胜利
+					FROM = {
+						original_tag = GLC
+					}
+					ROOT = {
+						original_tag = RPS
+					}
+				}
+				GLC = {
+					transfer_state = 1040
+				}
+			}
+			else_if = {
+				limit = {
+					#波兰胜利
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = RPS
+					}
+				}
+				GLC = {
+					transfer_state = 1040
+				}
+			}
+
+        #######丹麦大战南石荷#######
+
+		    else_if = {
+			    limit = {
+				    #丹麦胜利
+				    FROM = {
+					    original_tag = DEN
+				    }
+				    ROOT = {
+				        original_tag = SHL
+				    }
+			    }
+				news_event = { id =AOR_news.215 }
+				DEN = {
+					if = {
+						limit ={
+							SHL = {
+								controls_state = 839
+							}
+						}
+						DEN = {
+							transfer_state = 839
+							add_state_core =839
+						}
+					}
+					transfer_state = 58 
+					transfer_state = 1043
+					add_state_core = 58
+					add_state_core = 1043
+				}
+		    }
+		    else_if = {
+			    limit = {
+				    #南石荷
+				    FROM = {
+					    original_tag = SHL
+				    }
+				    ROOT = {
+					    original_tag = DEN
+				    }
+			    }
+				news_event = {id =AOR_news.216 }
+				SHL = {
+					set_cosmetic_tag = SHL_2_Marxism
+					if = {
+						limit ={
+							DEN = {
+								controls_state = 839
+							}
+						}
+						SHL = {
+							transfer_state = 839
+							add_state_core =839
+						}
+					}
+					transfer_state = 58 
+					transfer_state = 1043
+					add_state_core = 58
+					add_state_core = 1043
+				}
+		    }
+
+        #######阿富汗阿曼努拉大战阿富汗纳斯鲁拉#######
+         
+			else_if = {
+				limit = {
+					#阿曼努拉
+					FROM = {
+						original_tag = AFG
+					}
+					ROOT = {
+						original_tag = AFK
+					}
+				}
+				news_event = {id = AOR_news.223 }
+                AFG = {
+					transfer_state = 415
+					transfer_state = 1052
+				}
+			}
+			else_if = {
+				limit = {
+					#纳斯鲁拉
+					FROM = {
+						original_tag = AFK
+					}
+					ROOT = {
+						original_tag = AFG
+					}
+				}
+				news_event = {id = AOR_news.224 }
+                AFK = {
+					set_cosmetic_tag = AFK_Absolutism
+					set_capital = {
+						state = 267
+					}
+					transfer_state = 267
+					transfer_state = 1050
+					transfer_state = 1051
+				}
+			}
+
+        #######巴伐利亚大战反动派#######
+         
+			else_if = {
+					limit = {
+					#德国北方败
+					FROM = {
+						original_tag = BAV
+					}
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				BAV = {
+					if = {
+						limit ={
+							GER = {
+								controls_state = 65
+							}
+						}
+						BAV = {
+							add_state_core = 65
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 66
+							}
+						}
+						BAV = {
+							add_state_core = 66
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 67
+							}
+						}
+						BAV = {
+							add_state_core = 67
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 762
+							}
+						}
+						BAV = {
+							add_state_core = 762
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 849
+							}
+						}
+						BAV = {
+							add_state_core = 849
+						}
+					}
+					annex_country = {
+						target =GER
+					}
+					transfer_state = 59
+					transfer_state = 64
+					transfer_state = 68
+					transfer_state = 840
+					transfer_state = 866
+				}
+			}
+			else_if = {
+				limit = {
+					#法兰克福败
+					FROM = {
+						original_tag = BAV
+					}
+					ROOT = {
+						original_tag = NAU
+					}
+				}
+				BAV = {
+					if = {
+						limit ={
+							NAU = {
+								controls_state = 842
+							}
+						}
+						BAV = {
+							add_state_core = 842
+						}
+					}
+					annex_country = {
+						target =NAU
+					}
+					transfer_state = 54
+					transfer_state = 55
+					transfer_state = 60
+					transfer_state = 857
+					transfer_state = 856
+					transfer_state = 858
+				}
+			}
+	    	else_if = {
+		    	limit = {
+		    		#萨克森败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = SAX
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target =SAX
+					}
+				    transfer_state = 65
+				    transfer_state = 842
+			    }
+	    	}
+			else_if = {
+		    	limit = {
+		    		#西里西亚败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = SIL
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = SIL
+					}
+				    transfer_state = 66
+				    transfer_state = 67
+					transfer_state = 762
+				    transfer_state = 849
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#波美拉尼亚败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = KSH
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = KSH
+					}
+				    transfer_state = 62
+				    transfer_state = 63
+					transfer_state = 870
+				    transfer_state = 871
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#梅克伦堡败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = MEK
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = MEK
+					}
+				    transfer_state = 61
+				    transfer_state = 862
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#石勒苏益格败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = NSH
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = NSH
+					}
+				    transfer_state = 58
+				}
+	    	}
+		        #######法兰克福苏维埃大战反动派#######
+         
+				else_if = {
+					limit = {
+					#德国北方败
+					FROM = {
+						original_tag = NAU
+					}
+					ROOT = {
+						original_tag = GER
+					}
+				}
+				NAU = {
+					if = {
+						limit ={
+							GER = {
+								controls_state = 65
+							}
+						}
+						NAU = {
+							add_state_core = 65
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 66
+							}
+						}
+						NAU = {
+							add_state_core = 66
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 67
+							}
+						}
+						NAU = {
+							add_state_core = 67
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 762
+							}
+						}
+						NAU = {
+							add_state_core = 762
+						}
+					}
+					if = {
+						limit ={
+							GER = {
+								controls_state = 849
+							}
+						}
+						NAU = {
+							add_state_core = 849
+						}
+					}
+					annex_country = {
+						target =GER
+					}
+					transfer_state = 59
+					transfer_state = 64
+					transfer_state = 68
+					transfer_state = 840
+					transfer_state = 866
+				}
+			}
+	    	else_if = {
+		    	limit = {
+		    		#萨克森败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = SAX
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target =SAX
+					}
+				    transfer_state = 65
+				    transfer_state = 842
+			    }
+	    	}
+			else_if = {
+		    	limit = {
+		    		#西里西亚败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = SIL
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = SIL
+					}
+				    transfer_state = 66
+				    transfer_state = 67
+					transfer_state = 762
+				    transfer_state = 849
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#波美拉尼亚败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = KSH
+			    	}
+		    	}
+			    NAU = {
+					annex_country = {
+						target = KSH
+					}
+				    transfer_state = 62
+				    transfer_state = 63
+					transfer_state = 870
+				    transfer_state = 871
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#梅克伦堡败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = MEK
+			    	}
+		    	}
+			    NAU = {
+					annex_country = {
+						target = MEK
+					}
+				    transfer_state = 61
+				    transfer_state = 862
+				}
+	    	}
+			else_if = {
+		    	limit = {
+		    		#石勒苏益格败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = NSH
+			    	}
+		    	}
+			    NAU = {
+					annex_country = {
+						target = NSH
+					}
+				    transfer_state = 58
+				}
+	    	}
 		}
 	}
 }

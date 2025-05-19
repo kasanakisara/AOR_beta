@@ -51,6 +51,9 @@ focus_tree={
 		completion_reward={
 			custom_effect_tooltip = USA_ASanFrancisco
 			hidden_effect = {
+			381 = { set_demilitarized_zone = yes }
+			387 = { set_demilitarized_zone = yes }
+			388 = { set_demilitarized_zone = yes }
 			country_event={
 				id = USA.10002
 			    }
@@ -78,6 +81,11 @@ focus_tree={
 				idea=USA_PlanOfOperationA
 				days=360
 			}
+			hidden_effect={
+				country_event={ 
+					id = USA.10056
+				}
+			}
 		}
 	}
 	focus={
@@ -101,6 +109,11 @@ focus_tree={
 				idea=USA_RailwayA
 				days=360
 			}
+			hidden_effect={
+				country_event={ 
+					id = USA.10055
+				}
+			}
 		}
 	}
 	focus={
@@ -112,6 +125,11 @@ focus_tree={
 		cost=1.00
 		completion_reward={
 			add_stability=0.05
+			hidden_effect = {
+				381 = { set_demilitarized_zone = no }
+				387 = { set_demilitarized_zone = no }
+				388 = { set_demilitarized_zone = no }
+			}
 		}
 	}
 	focus={
@@ -131,7 +149,7 @@ focus_tree={
 			country_event={
 				id = USA.10001
 			}
-			STATE_393 = { set_demilitarized_zone = yes }
+			393 = { set_demilitarized_zone = yes }
 		  }
 		}
 	}
@@ -155,14 +173,15 @@ focus_tree={
 		cost=2.00
 		completion_reward={
 			hidden_effect = {
-			add_timed_idea={
+				country_event={
+					id = USA.10043
+				}
+			country_event={ days = 7 id = USA.10008}
+		  	}
+		    add_timed_idea={
 				idea=USA_MartialLawA
 				days=180
-			}
-			country_event={
-				id = USA.10008
-			}
-		  }
+				}
 			custom_effect_tooltip = USA_AMartialLaw
 		}
 	}
@@ -174,12 +193,15 @@ focus_tree={
 		prerequisite={focus=USA_Detroit}
 		cost=2.00
 		completion_reward={
-		  hidden_effect = {
+		    hidden_effect = {
+				country_event={
+					id = USA.10046
+				}
+		    }
 			add_timed_idea={
 				idea=USA_AppeaseA
 				days=180
 			}
-		  }
 			custom_effect_tooltip = USA_AAppease
 		}
 	}
@@ -193,12 +215,31 @@ focus_tree={
 		prerequisite={focus=USA_Appease}
 		cost=3.00
 		completion_reward={
+			custom_effect_tooltip = USA_AEndTheCrisis
 			add_manpower=-3000
+			hidden_effect={
 			swap_ideas={
 				remove_idea=USA_GreatLakesA
 				add_idea=USA_GreatLakes2A
 			}
-			393 = { set_demilitarized_zone = no }
+			393 = { 
+				set_demilitarized_zone = no 
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_victory_points = {
+                province = 6710
+                value = 15    
+            }
+		}
 			hidden_effect = {
 				news_event = {id=AOR_news.136}
 			}
@@ -218,7 +259,7 @@ focus_tree={
 		completion_reward={
 		    custom_effect_tooltip = USA_AIntelligenceStation
 			hidden_effect = {
-			country_event={
+			    country_event={
 				id = USA.10006
 			    }
 			}
@@ -232,6 +273,13 @@ focus_tree={
 		prerequisite={focus=USA_IntelligenceStation}
 		cost=2.00
 		completion_reward={
+			 custom_effect_tooltip = USA_ACriticize
+			hidden_effect = {
+				country_event={
+				id = USA.10042
+				}
+			}
+
 			add_timed_idea={
 				idea=USA_CriticizeA
 				days=360

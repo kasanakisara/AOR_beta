@@ -326,6 +326,9 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
 		}
+		RUS = {
+			transfer_state = 560
+		}
 		PRI = {
 			give_military_access = KMT
 		}
@@ -562,6 +565,9 @@ country_event = {
 			add_popularity = { ideology = FRE_democratic popularity = 0.10 }
 			add_popularity = { ideology = Fascism popularity = -0.1 }
 		}
+		RUS = {
+			transfer_state = 560
+		}
 		PRI = {
 			give_military_access = UPC
 		}
@@ -575,10 +581,27 @@ country_event = {
 	picture = GFX_JAP_event_10
 	is_triggered_only = yes	
 	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_victory_points = {
+				province = 10000
+				value = 10    
+			}
+			set_victory_points = {
+				province = 1150
+				value = 10    
+			}
+			set_victory_points = {
+				province = 987
+				value = 3    
+			}
+		}
+	}
 
 	option = {
 		JAP = {
 			country_event = { days = 30  id = JAP.3 }
+			news_event = AOR_news.164
 			716={set_demilitarized_zone=yes}
 		}
 		name = JAP.1.a
@@ -699,7 +722,7 @@ country_event = {
 		date > 1920.5.5
 		}
 	option = {
-		name = JAP.14.a
+		name = JAP.15.a
 		news_event = {id = AOR_news.165}
 	}
 }
@@ -736,7 +759,25 @@ country_event = {
 			}
 		}
 	option = {
-		name = JAP.14.a
+		name = JAP.16.a
 		news_event = {id = AOR_news.167}
+	}
+}
+
+country_event = {
+	id = JAP.17   #关东地区发生大地震！
+	title = JAP.17.t
+	desc = JAP.17
+	picture =GFX_JAP_event_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = JAP.17.a
+		JAP = {
+			add_manpower = -105000
+		}
+		hidden_effect = {
+			news_event = {id = AOR_news.225}
+		}
 	}
 }

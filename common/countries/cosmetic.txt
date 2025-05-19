@@ -1064,6 +1064,10 @@ US2_1 ={
 	color = rgb { 45 97 140 }
 	color_ui = rgb { 45 97 140 }
 }
+US2_2 ={
+	color = rgb { 88 88 88 }
+	color_ui = rgb { 88 88 88 }
+}
 KOR_1={
 	color = rgb { 53 81 148 }
 	color_ui = rgb { 53 81 148 }
@@ -1101,7 +1105,12 @@ SAX_1 = {
 	color_ui = rgb { 138 155 116 }
 }
 HAN_1 = {
-    color= rgb { 139 105 105 }
+    color= HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+BAV_MEET = {
+    color= HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
 KSH_1_AUT_democratic = {
@@ -1119,4 +1128,12 @@ PRE_1_Absolutism = {
 GLC_POL = {
 	color = rgb { 214 102 139 }
 	color_ui = rgb { 255 120 138 }
+}
+AFK_ENG = {
+	color = rgb { 156 47 47 }
+	color_ui = rgb { 200 25 25 }
+}
+AFK_Absolutism = {
+	color = rgb { 2 77 59 }
+	color_ui = rgb { 2 77 59 }
 }

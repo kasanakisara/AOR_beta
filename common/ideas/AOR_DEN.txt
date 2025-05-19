@@ -95,5 +95,20 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
+		DEN_expand_Export = {
+			name = DEN_expand_Export
+			removal_cost = -1
+			#需要图标
+			allowed = {
+ 				always = no
+ 			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+   				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.5
+			}
+  		}
 	}
 }

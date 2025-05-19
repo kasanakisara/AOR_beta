@@ -1,10 +1,10 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_terrain_fengtian" #老沈阳
+		name = "GFX_terrain_fengtian"
 		textureFile = "gfx/interface/terrains/terrain_fengtian.png"
 	}
 	spriteType = {
-		name = "GFX_terrain_beijing" #北京
+		name = "GFX_terrain_beijing"
 		textureFile = "gfx/interface/terrains/terrain_beijing.png"
 	}
 	spriteType = {
@@ -18,6 +18,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrain_panyu" 
 		textureFile = "gfx/interface/terrains/terrain_panyu.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_tianjin" 
+		textureFile = "gfx/interface/terrains/terrain_tianjin.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_kaifeng" 
+		textureFile = "gfx/interface/terrains/terrain_kaifeng.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_qingyuan" 
+		textureFile = "gfx/interface/terrains/terrain_qingyuan.png"
 	}
 	spriteType = {
 		name = "GFX_terrain_kulun" 
@@ -34,6 +46,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrain_chengdu" 
 		textureFile = "gfx/interface/terrains/terrain_chengdu.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_anqing" 
+		textureFile = "gfx/interface/terrains/terrain_anqing.png"
 	}
 	spriteType = {
 		name = "GFX_terrain_changan" 
@@ -126,5 +142,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrain_emusike" 
 		textureFile = "gfx/interface/terrains/terrain_emusike.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_oottoma" 
+		textureFile = "gfx/interface/terrains/terrain_oottoma.png"
 	}
 }

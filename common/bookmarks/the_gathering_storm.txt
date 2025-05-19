@@ -71,8 +71,8 @@ bookmarks = {
 			ideology = Marxism
 			ideas = {
 				BAV_the_red_star_in_DEU
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
+				BAV_dying_bureaucracy
+				BAV_a_deep_cut_from_revolution
 			}	
 			focuses = {
 				BAV_First_Council_Spartacus
@@ -133,7 +133,6 @@ bookmarks = {
 				pending
 			}
 			focuses = {
-				
 			}
 		}
 		
@@ -193,9 +192,17 @@ bookmarks = {
 			ideology = CON_democratic
 			ideas = {
 			}
-			}
+		}
 
-		
+				
+		"DEN"={
+			minor = yes
+			history = "DEN_BLITZKRIEG_DESC"
+			ideology = PAR_socialism
+			ideas = {
+			}
+		}
+
 		"HUN"={
 			minor = yes
 			history = "HAN_BLITZKRIEG_DESC"

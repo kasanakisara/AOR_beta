@@ -2,7 +2,7 @@ state={
 	id=612
 	name="STATE_612"
 	provinces={
-		1153 1628 4185 7007 10114 11988 13141 
+		1153 1628 4185 7007 10114 11988 13141 13343 13344
 	}
 	history={
 		owner = CHI
@@ -11,11 +11,11 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			1628 3
+			1628 1
 		}
 
 	}
-	manpower= 2528510
+	manpower= 5528510
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town

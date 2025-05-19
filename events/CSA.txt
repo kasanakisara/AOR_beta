@@ -4,7 +4,7 @@ country_event = {
 	id = CSA.1   #再一次宣言
 	title = CSA.1.t
 	desc = CSA.1.d
-	picture = GFX_CSA_event_1
+	picture = GFX_CSA_event_1_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -16,7 +16,7 @@ country_event = {
 	id = CSA.100   #攻克华盛顿
 	title = CSA.100.t
 	desc = CSA.100.d
-	picture = GFX_CSA_event_100
+	picture = GFX_CSA_event_100_pic
 	trigger = {
 		CSA = { 
 		has_war_with = USA
@@ -34,7 +34,7 @@ country_event = {
 	id = CSA.101   #攻克纽约
 	title = CSA.101.t
 	desc = CSA.101.d
-	picture = GFX_CSA_event_101
+	picture = GFX_CSA_event_101_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -52,7 +52,7 @@ country_event = {
 	id = CSA.102   #攻克匹兹堡
 	title = CSA.102.t
 	desc = CSA.102.d
-	picture = GFX_CSA_event_102
+	picture = GFX_CSA_event_102_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -70,7 +70,7 @@ country_event = {
 	id = CSA.103   #进攻克利夫兰
 	title = CSA.103.t
 	desc = CSA.103.d
-	picture = GFX_CSA_event_103
+	picture = GFX_CSA_event_103_pic
 	trigger = {
 		CSA = { 
 			has_war_with = USA
@@ -88,7 +88,7 @@ country_event = {
 	id = CSA.104   #美国内战白热化（南方优势）
 	title = CSA.104.t
 	desc = CSA.104.d
-	picture = GFX_CSA_event_104
+	picture = GFX_CSA_event_104_pic
 	trigger = {
 		358 = { is_controlled_by = CSA }
 		358 = { is_owned_by = USA }
@@ -110,7 +110,7 @@ country_event = {
 	id = CSA.105   #攻克芝加哥
 	title = CSA.105.t
 	desc = CSA.105.d
-	picture = GFX_CSA_event_105
+	picture = GFX_CSA_event_105_pic
 	trigger = {
 		395 = { is_controlled_by = CSA }
 		395 = { is_owned_by = USA }
@@ -127,7 +127,7 @@ country_event = {
 	id = CSA.106   #攻克底特律
 	title = CSA.106.t
 	desc = CSA.106.d
-	picture = GFX_CSA_event_106
+	picture = GFX_CSA_event_106_pic
 	trigger = {
 		393 = { is_controlled_by = CSA }
 		393 = { is_owned_by = USA }
@@ -144,7 +144,7 @@ country_event = {
 	id = CSA.107 #美国内战胜利（南方）
 	title = CSA.107.t
 	desc = CSA.107.d
-	picture = GFX_CSA_event_107
+	picture = GFX_CSA_event_107_pic
 	trigger = {
 		date > 1921.6.19
 		tag = CSA
@@ -164,6 +164,7 @@ country_event = {
 			owns_state = 391
 			owns_state = 394
 			owns_state = 393
+			owns_state = 1049
 		}
 	}
 	is_triggered_only = No

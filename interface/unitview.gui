@@ -1380,7 +1380,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "unit_name"
-			position = {x=180 y=2}
+			position = {x=180 y=5}
 			font = "hoi_18"
 			maxWidth = 175
 			maxHeight = 23
@@ -2661,7 +2661,7 @@ guiTypes = {
 			position = { x = 113 y = 42 }
 			size = {x=264 y=20}
 			#textureFile = ""
-			font = "hoi_20b"
+			font = "hoi_20bs"
 			borderSize = {x = 0 y = 0}
 			text = ""
 			#maxWidth = 300

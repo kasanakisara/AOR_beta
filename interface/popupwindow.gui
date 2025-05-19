@@ -1628,7 +1628,7 @@ guiTypes = {
 			position = { x=90 y=250}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "PDXO_CANCEL"
-			buttonFont = "hoi_16mbs"
+			buttonFont = "hoi_18mbs"
 			shortcut = "ESCAPE"
 			clicksound = click_close
 		}
@@ -1638,7 +1638,7 @@ guiTypes = {
 			position = { x=260 y=250}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "OK"
-			buttonFont = "hoi_16mbs"
+			buttonFont = "hoi_18mbs"
 			shortcut = "RETURN"
 			clicksound = click_default
 		}

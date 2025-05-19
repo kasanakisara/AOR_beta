@@ -1,6 +1,6 @@
 ﻿####### Division Templates #######
 division_template = { 
-	name = "帝国陆军师团" 
+	name = "大日本陸軍師團" 
 	division_names_group = ITA_INF_01 
 	
 	regiments = { 
@@ -19,72 +19,72 @@ division_template = {
 units = {
 #师团
 	division= {	
-		name = "帝国第一师团"
+		name = "帝国第一師團"
 		location = 1150
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第二师团"
-		location = 1150
-		division_template = "帝国陆军师团"
+		name = "帝国第二師團"
+		location = 3787
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第三师团"
-		location = 1150
-		division_template = "帝国陆军师团"
+		name = "帝国第三師團"
+		location = 984
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第四师团"
-		location = 1150
-		division_template = "帝国陆军师团"
+		name = "帝国第四師團"
+		location = 892
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第五师团"
-		location = 1150
-		division_template = "帝国陆军师团"
+		name = "帝国第五師團"
+		location = 987
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第六师团"
+		name = "帝国第六師團"
 		location = 10000
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第七师团"
+		name = "帝国第七師團"
 		location = 10000
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第八师团"
+		name = "帝国第八師團"
 		location = 10000
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "帝国第九师团"
+		name = "帝国第九師團"
 		location = 10000
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
-	division= {	
-		name = "帝国第十师团"
+		division= {	
+		name = "帝国第十師團"
 		location = 10000
-		division_template = "帝国陆军师团"
+		division_template = "大日本陸軍師團"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}

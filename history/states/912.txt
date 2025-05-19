@@ -1,11 +1,14 @@
 state={
 	id=912
 	name="STATE_912"
-	manpower = 200000
+	manpower = 150000
 	
 	state_category =rural
 
 	history={
+		victory_points = {
+			9762 2
+		}
 		owner = JAP
 		add_core_of = RUS
 		add_core_of = FER
@@ -15,6 +18,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+	}
+
+	resources = {
+		chromium = 9 # was: 12
 	}
 
 	provinces={

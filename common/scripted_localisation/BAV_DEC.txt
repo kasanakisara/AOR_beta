@@ -1,0 +1,58 @@
+defined_text = {
+	name = decision_cost_trust_15_tooltip
+	text = {
+		trigger = {
+			check_variable = { 
+				Var = Bebel_Trust
+				Value > 15
+			}
+		}
+		localization_key = decision_cost_trust_15
+	}
+	text = {
+		localization_key = decision_cost_trust_15_blocked
+	}
+}
+
+defined_text = {
+	name = decision_cost_trust_45_tooltip
+	text = {
+		trigger = {
+			check_variable = { 
+				Var = Bebel_Trust
+				Value > 45
+			}
+		}
+		localization_key = decision_cost_trust_45
+	}
+	text = {
+		localization_key = decision_cost_trust_45_blocked
+	}
+}
+
+defined_text = {
+	name = decision_cost_stab_5_tooltip
+	text = {
+		trigger = {
+			has_stability < 5
+		}
+		localization_key = decision_cost_stab_5
+	}
+	text = {
+		localization_key = decision_cost_stab_5_blocked
+	}
+}
+
+defined_text = {
+	name = decision_cost_ws_5_tooltip
+	text = {
+		trigger = {
+			has_stability < 5
+		}
+		localization_key = decision_cost_ws_5
+	}
+	text = {
+		localization_key = decision_cost_ws_5_blocked
+	}
+}
+

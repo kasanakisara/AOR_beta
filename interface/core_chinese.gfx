@@ -1,6 +1,5 @@
 bitmapfonts = {
-
-		textcolors = {
+	textcolors = {
 			f = { 78 74 143 }	# Faded blue
 			L = { 195 176 145 } # Lilac
 			W = { 255 255 255 } # White
@@ -67,14 +66,7 @@ bitmapfonts = {
 			A = { 0 108 114 } #Government
 			u = { 210 119 39 } #Rioters
 	}
-	bitmapfont_override = {
-		name = "hoi4_typewriter16"
-		fontfiles = { 	
-			"gfx/fonts/songti_bai_0"
-			"gfx/fonts/songti_hei_0"
-		}		
-	languages = { "l_simp_chinese" } 
-	}	
+
 	bitmapfont_override = {
 		name = "ToolTip_Font"
 		fontfiles = { 
@@ -82,43 +74,17 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"	
 		}
 	languages = { "l_simp_chinese" } 
-	}	
-	
-	bitmapfont_override = {
-		name = "mapfont_small"
-		fontfiles = { 
-			"gfx/fonts/vic_22_bl"
-			"gfx/fonts/Arial_20"	
-		}
-	languages = { "l_simp_chinese" } 
-	}	
+	}
 		
 	bitmapfont_override = {
 		name = "AnimatedMapText"
 		fontfiles = { 
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"	
-			"gfx/fonts/Arial_16"	
-		}
-	languages = { "l_simp_chinese" } 
-	}		
-	
-	bitmapfont_override = {
-		name = "Main_24"
-		fontfiles = { 
-			"gfx/fonts/garamond_24"
-			"gfx/fonts/Arial_20"	
+			"gfx/fonts/Arial_16"	#20号字体（Arial_16——0 xxx为原版）
 		}
 	languages = { "l_simp_chinese" } 
 	}
-	bitmapfont_override = {
-		name = "messagelog"
-		fontfiles = { 
-			"gfx/fonts/garamond_16_bold"
-			"gfx/fonts/Arial_14"	
-		}
-	languages = { "l_simp_chinese" } 
-	}		
 		
 	bitmapfont_override = {
 		name = "Main_16"
@@ -127,7 +93,7 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"	
 		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
 	bitmapfont_override = {
 		name = "Main_14"
@@ -136,7 +102,16 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"	
 		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
+	
+	bitmapfont_override = {
+		name = "Main_14_grey"
+		fontfiles = { 
+			"gfx/fonts/garamond_14"
+			"gfx/fonts/Arial_14"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "Main_14_black"
@@ -145,16 +120,16 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"	
 		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
 	bitmapfont_override = {
 		name = "Main_14_bold"
 		fontfiles = { 
 			"gfx/fonts/garamond_14_bold"
 			"gfx/fonts/Arial_14"	
-		}		
+		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
 	bitmapfont_override = {
 		name = "Main_14_eu"
@@ -163,7 +138,25 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"	
 		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
+	
+	bitmapfont_override = {
+		name = "garamond_14"
+		fontfiles = { 
+			"gfx/fonts/garamond_14"
+			"gfx/fonts/Arial_14"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
+	
+	bitmapfont_override = {
+		name = "vic_18_black"
+		fontfiles = { 
+			"gfx/fonts/vic_18"
+			"gfx/fonts/Arial_16"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "vic_18"
@@ -172,22 +165,23 @@ bitmapfonts = {
 			"gfx/fonts/Arial_16"	
 		}
 	languages = { "l_simp_chinese" } 
-	}		
-	
-	bitmapfont_override = {
-		name = "vic_18s"
-		fontfiles = { 
-			"gfx/fonts/vic_18s"
-			"gfx/fonts/Arial_16"	
-		}
-	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
 	bitmapfont_override = {
 		name = "vic_22"
 		fontfiles = { 
 			"gfx/fonts/vic_22"
-			"gfx/fonts/Arial_20"	
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"	#24号字体
+		}
+	languages = { "l_simp_chinese" } 
+	}
+			
+	bitmapfont_override = {
+		name = "vic_36_black"
+		fontfiles = { 
+			"gfx/fonts/vic_36"	
+			"gfx/fonts/Arial_26"	
 		}
 	languages = { "l_simp_chinese" } 
 	}
@@ -196,10 +190,12 @@ bitmapfonts = {
 		name = "vic_36"
 		fontfiles = { 
 			"gfx/fonts/vic_36"	
-			"gfx/fonts/Arial_26"		
-		}		
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	#30号字体
+		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_16mbs"
@@ -207,9 +203,9 @@ bitmapfonts = {
 			"gfx/fonts/hoi_16mbs"
 			"gfx/fonts/hoi_16mbs_cryllic"
 			"gfx/fonts/Arial_14s"
-		}		
+		}
 	languages = { "l_simp_chinese" } 
-	}			
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_18"
@@ -217,49 +213,66 @@ bitmapfonts = {
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"	
 			"gfx/fonts/Arial_16"	
-		}	
+		}
 	languages = { "l_simp_chinese" } 
-	}			
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_18b"
 		fontfiles = { 
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"	
-			"gfx/fonts/Arial_16"		
-		}			
+			"gfx/fonts/Arial_16bs"		
+		}
 	languages = { "l_simp_chinese" } 
-	}			
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_18mbs"
 		fontfiles = { 
 			"gfx/fonts/hoi_18mbs"
 			"gfx/fonts/hoi_18mbs_cryllic"
-			"gfx/fonts/Arial_16s"	
-		}	
+			"gfx/fonts/Arial_16bms"	
+		}
 	languages = { "l_simp_chinese" } 
-	}			
-	
+	}
+
+	bitmapfont_override = {
+		name = "hoi_20"
+		fontfiles = { 
+			"gfx/fonts/hoi_20"
+			"gfx/fonts/Arial_16"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
+
 	bitmapfont_override = {
 		name = "hoi_20b"
 		fontfiles = { 
 			"gfx/fonts/hoi_20b"
-			"gfx/fonts/Arial_16"	
-		}		
+			"gfx/fonts/Arial_16bs"	
+		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 		
 	bitmapfont_override = {
 		name = "hoi_20bs"
 		fontfiles = { 
 			"gfx/fonts/hoi_20bs"		
-			"gfx/fonts/Arial_16s"	
-		}		
+			"gfx/fonts/Arial_16s_0"	
+		}
 	languages = { "l_simp_chinese" } 
-	}		
+	}
 	
-		
+	bitmapfont_override = {
+		name = "hoi4_typewriter16"
+		fontfiles = { 	
+			"gfx/fonts/hoi4_typewriter16"
+			"gfx/fonts/hoi_16typewriter"
+			"gfx/fonts/Arial_14b"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "hoi4_typewriter16_inverted"
@@ -267,7 +280,7 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16_inverted"
 			"gfx/fonts/hoi_16typewriter_inverted"
 			"gfx/fonts/Arial_14b"	
-		}		
+		}
 	languages = { "l_simp_chinese" } 
 	}
 	
@@ -276,8 +289,9 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi4_typewriter22"		
 			"gfx/fonts/hoi_22typewriter"
-			"gfx/fonts/Arial_20b"	
-		}		
+			"gfx/fonts/Arial_20b_0"	
+			"gfx/fonts/Arial_20b_1"	
+		}
 	languages = { "l_simp_chinese" } 
 	}
     
@@ -286,8 +300,9 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/hoi4_typewriter22_inverted"		
 			"gfx/fonts/hoi_22typewriter_inverted"
-			"gfx/fonts/Arial_20b"	
-		}		
+			"gfx/fonts/Arial_20b_0"	
+			"gfx/fonts/Arial_20b_1"		
+		}
 	languages = { "l_simp_chinese" } 
 	}
 	
@@ -295,55 +310,134 @@ bitmapfonts = {
 		name = "hoi_24header"
 		fontfiles = { 
 			"gfx/fonts/hoi_24header"		
-			"gfx/fonts/Arial_20s"	
-		}		
+			"gfx/fonts/Arial_20_0"	
+			"gfx/fonts/Arial_20_1"	
+		}
 	languages = { "l_simp_chinese" } 
-	}			
+	}
+	
+	bitmapfont_override = {
+		name = "nsb_hoi_24header"
+		fontfiles = { 
+			"gfx/fonts/hoi_24header"		
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_30header"
 		fontfiles = { 
 			"gfx/fonts/hoi_30header"
-			"gfx/fonts/Arial_26s"	
-		}		
+			"gfx/fonts/Arial_24_0"	
+			"gfx/fonts/Arial_24_1"	
+		}
 	languages = { "l_simp_chinese" } 
-	}			
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_36header"
 		fontfiles = { 
 			"gfx/fonts/hoi_36header"
-			"gfx/fonts/Arial_26s"	
-		}	
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	#32号字体
+		}
 	languages = { "l_simp_chinese" } 
-	}	
+	}
+	
+	bitmapfont_override = {
+		name = "nsb_hoi_36header"
+		fontfiles = { 
+			"gfx/fonts/hoi_36header"
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_22tech"
 		fontfiles = { 
 			"gfx/fonts/hoi_22tech"		
-			"gfx/fonts/Arial_20"	
-		}		
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"			
+		}
 	languages = { "l_simp_chinese" } 
-	}	
+	}
+	
+	bitmapfont_override = {
+		name = "hoi_22chat"
+		fontfiles = { 
+			"gfx/fonts/hoi_22tech"		
+			"gfx/fonts/Arial_20_0"		
+			"gfx/fonts/Arial_20_1"		
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_33"
 		fontfiles = { 
 			"gfx/fonts/hoi_33"	
-			"gfx/fonts/Arial_26"		
-		}		
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"		
+		}
 	languages = { "l_simp_chinese" } 
-	}	
+	}
 	
 	bitmapfont_override = {
 		name = "hoi_arrow_font"
 		fontfiles = { 
 			"gfx/fonts/hoi_arrow_font"	
-			"gfx/fonts/Arial_26"	
-		}		
+			"gfx/fonts/Arial_26_0"	
+			"gfx/fonts/Arial_26_1"	
+			"gfx/fonts/Arial_26_2"	
+		}
 	languages = { "l_simp_chinese" } 
-	}	
+	}
+	
+	bitmapfont_override = {
+		name = "tahoma_60"
+		fontfiles = { 
+			"gfx/fonts/AOR_FONTS_00"
+			"gfx/fonts/AOR_FONTS_01"	
+			"gfx/fonts/AOR_FONTS_02"
+			"gfx/fonts/AOR_FONTS_03"
+			"gfx/fonts/AOR_FONTS_04"
+			"gfx/fonts/AOR_FONTS_05"
+			"gfx/fonts/AOR_FONTS_06"
+			"gfx/fonts/AOR_FONTS_07"
+			"gfx/fonts/AOR_FONTS_08"
+			"gfx/fonts/AOR_FONTS_09"
+			"gfx/fonts/AOR_FONTS_10"
+			"gfx/fonts/AOR_FONTS_11"
+		}
+	languages = { "l_simp_chinese" } 
+	}
+	
+	bitmapfont_override = {
+		name = "hoi_30"
+		fontfiles = { 
+			"gfx/fonts/hoi_30"
+			"gfx/fonts/Arial_24_0"	
+			"gfx/fonts/Arial_24_1"			
+		}
+	languages = { "l_simp_chinese" } 
+	}
+
+	bitmapfont_override = {
+		name = "hoi_30bs"
+		fontfiles = { 
+			"gfx/fonts/hoi_30"
+			"gfx/fonts/Arial_24bs_0"	
+			"gfx/fonts/Arial_24bs_1"			
+		}
+	languages = { "l_simp_chinese" } 
+	}
 	
 	bitmapfont_override = {
 		name = "Arial12"
@@ -352,36 +446,15 @@ bitmapfonts = {
 			"gfx/fonts/Arial_14"
 		}
 	languages = { "l_simp_chinese" } 
-	}	
-	
-		bitmapfont_override = {
-		name = "FPS_Font"
-		fontfiles = { 
-			"gfx/fonts/Arial12"
-			"gfx/fonts/Arial_14"
-		}
-	languages = { "l_simp_chinese" } 
-	}	
+	}
 	
 	bitmapfont_override = {
 		name = "cg_16b"
 		fontfiles = { 
-			"gfx/fonts/cg_16b"		
+            "gfx/fonts/cg_16b"		
 			"gfx/fonts/hoi_16tooltip3"
-			"gfx/fonts/Arial_14"					
-		}			
+			"gfx/fonts/Arial_14"				
+		}
 	languages = { "l_simp_chinese" } 
 	}
-	
-	bitmapfont_override = {
-		name = "tahoma_60"
-		fontfiles = { 
-			"gfx/fonts/AOR_jianfan_0"
-			"gfx/fonts/AOR_jianfan_1"	
-			"gfx/fonts/AOR_jianfan_2"
-
-		}			
-	languages = { "l_simp_chinese" } 
-	}
-
 }

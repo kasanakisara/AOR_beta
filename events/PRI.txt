@@ -28,15 +28,17 @@ country_event = {
 			news_event = { id = AOR_news.25 }
 			PRI = {
 				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
 				transfer_state = 912
 				transfer_state = 910
-				transfer_state = 409
 				transfer_state = 914
 				
 				add_state_core = 408
+				add_state_core = 409
+				add_state_core = 560
 				add_state_core = 912
 				add_state_core = 910
-				add_state_core = 409
 				add_state_core = 914
 				
 				add_manpower = 10000

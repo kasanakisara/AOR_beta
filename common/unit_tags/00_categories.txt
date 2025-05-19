@@ -1,5 +1,5 @@
 sub_unit_categories = {
-	category_machine_weapons
+	category_machine
 	category_Infantry_uniforms
 	infantry_weapons 
 	category_tanks
@@ -29,4 +29,5 @@ sub_unit_categories = {
 	category_support_artillery
 	category_cavalry
 	category_bus
+	category_Hot_air_balloon
 }

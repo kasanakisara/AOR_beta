@@ -16,7 +16,7 @@ country_event = {#昆明政府政变
                 set_politics = {ruling_party = FRE_democratic }
                 create_country_leader = {
                     name = "Cai_e"
-                    desc = "POLITICS_MON_DESC"
+                    desc = "Cai_e_desc"
                     picture = "gfx/leaders/KMT/Cai_e.png"
                     expire = "1965.1.1"
                     ideology = liberalism
@@ -97,7 +97,7 @@ country_event = {#云贵内战（孙中山主导）
             KMT = {
                 create_country_leader = {
                     name = "Sun_zhong_shan"
-                    desc = "POLITICS_MON_DESC"
+                    desc = "Sun_zhong_shan_desc"
                     picture = "gfx/leaders/KMT/sun.dds"
                     expire = "1965.1.1"
                     ideology = sanminism
@@ -226,7 +226,7 @@ country_event = {#昆明政府统一南方
             add_popularity = { ideology = SOC_democratic popularity = 0.1 }
             create_country_leader = {
                 name = "Sun_zhong_shan"
-                desc = "POLITICS_MON_DESC"
+                desc = "Sun_zhong_shan_desc"
                 picture = "gfx/leaders/KMT/sun.dds"
                 expire = "1965.1.1"
                 ideology = newdemism
@@ -301,6 +301,21 @@ country_event = {#昆明政府统一南方
                 owns_state = 330
             }
         }
+
+        immediate = {
+            hidden_effect = {
+				set_victory_points = {
+                province = 1047
+                value = 20   
+                }
+			hidden_effect = {
+				set_victory_points = {
+                province = 4619
+                value = 15    
+                }
+		    }
+		}
+	}
     
     
         option = {
@@ -309,6 +324,14 @@ country_event = {#昆明政府统一南方
             country_event = { days = 60  id = CHI.38 }
             country_event = { days = 90  id = JAP.10 }
             set_capital = { state = 893 }
+            set_victory_points = {
+                province = 11913
+                value = 30    
+            }
+            set_victory_points = {
+                province = 9843
+                value = 20    
+            }
             KMT = {
                 add_state_core = 876
                 add_state_core = 612
@@ -405,6 +428,14 @@ country_event = {#昆明政府统一南方
             }
         option = {
             CHI_civil_war_10 = yes
+            set_province_name = {
+                id = 11913
+                name = "南京"
+            }
+            set_province_name = {
+                id = 9843
+                name = "北平"
+            }
                 KMT = {
                     set_cosmetic_tag = KMT_3
                     add_state_core = 884
@@ -456,7 +487,7 @@ country_event = {#昆明政府统一南方
                 KMT = {
                     create_country_leader = {
                         name = "Sun_zhong_shan"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Sun_zhong_shan_desc"
                         picture = "gfx/leaders/KMT/sun.dds"
                         expire = "1965.1.1"
                         ideology = sanminism
@@ -584,7 +615,7 @@ country_event = {#昆明政府统一南方
                     add_popularity = { ideology = AGR_socialism popularity = 0.10 }
                     create_country_leader = {
                         name = "Liao_Zhong_Kai"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Liao_Zhong_Kai_desc"
                         picture = "gfx/leaders/KMT/Liao_Zhong_Kai.PNG"
                         expire = "1965.1.1"
                         ideology = rad_san
@@ -613,7 +644,7 @@ country_event = {#昆明政府统一南方
                 KMT = {
                     create_country_leader = {
                         name = "Sun_zhong_shan"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Sun_zhong_shan_desc"
                         picture = "gfx/leaders/KMT/sun.dds"
                         expire = "1965.1.1"
                         ideology = sanminism
@@ -742,7 +773,7 @@ country_event = {#昆明政府统一南方
                     add_popularity = { ideology = AUT_democratic popularity = 0.10 }
                     create_country_leader = {
                         name = "Chen_Qi_Mei"
-                        desc = "POLITICS_MON_DESC"
+                        desc = "Chen_Qi_Mei_desc"
                         picture = "gfx/leaders/KMT/Chen_Qi_Mei.png"
                         expire = "1965.1.1"
                         ideology = uni_san

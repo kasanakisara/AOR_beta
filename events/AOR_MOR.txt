@@ -17,7 +17,7 @@ country_event = {
     }
     option = {
 		name = MOR.1.a
-        country_event = { days = 360  id = MOR.2 }
+        country_event = { days = 330  id = MOR.2 }
 	}
 }
 
@@ -39,7 +39,7 @@ country_event = {
 }
     option = {
 		name = MOR.1.a
-        country_event = { days = 180  id = MOR.3 }
+        country_event = { days = 170  id = MOR.3 }
         news_event = {id=AOR_news.186}
 	}
 }

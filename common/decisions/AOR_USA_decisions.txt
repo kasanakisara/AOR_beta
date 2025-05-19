@@ -56,12 +56,11 @@ USA_Civil_War_Military_Resolution = {
                 USA_Civil_War_Military_check = yes
             }
         }
-    }
 
     #招募新兵
     USA_Recruit_new_recruits = {
         available = { date > 1921.7.1 }
-        days_remove = 30
+        days_remove = 45
         ai_will_do = {
             factor = 0.5
         }
@@ -71,7 +70,7 @@ USA_Civil_War_Military_Resolution = {
         cost = 30
 
         complete_effect = {
-            add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 10 }
+            add_to_variable = { USA_Reorganization_of_the_state_National_Guard = 20 }
             add_command_power = -10
             custom_effect_tooltip = USA_Civil_War_Military_Resolution_effect_localisation_2
             if = {
@@ -89,7 +88,7 @@ USA_Civil_War_Military_Resolution = {
     #敦促各州采购武器
     USA_The_states_are_urged_to_procure_weapons = {
         available = {  has_completed_focus = USA_Emergency_conscription_law }
-        days_remove = 30
+        days_remove = 25
         ai_will_do = {
             factor = 0.5
         }

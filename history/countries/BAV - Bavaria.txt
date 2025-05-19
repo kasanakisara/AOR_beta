@@ -72,6 +72,7 @@ set_research_slots = 3
 set_convoys = 50
 set_stability = 0.2
 set_country_flag = AOR_GER_flag_NOT_support_resolution
+set_country_flag = Bebel_mission_finish_1
 
 recruit_character = BAV_Bebel
 recruit_character = friedrich_dollma
@@ -89,9 +90,13 @@ recruit_character = BAV_Luksemburg_command
 recruit_character = BAV_Mehring_command
 recruit_character = Eugen_Levine_command
 
+set_variable = { Bebel_Trust = 6 }
 
-
-
+ clamp_variable = {
+	var = Bebel_Trust
+	min = 0
+	max = 100
+  }
 
 
 set_politics = {
@@ -128,6 +133,10 @@ oob = "BAV_AOR"
 BAV = {
 country_event = { days = 1001 id = BAV.3 }
 country_event = { days = 1 id = BAV.1 }
+country_event = { days = 4 id = BAV_L.1 }
+country_event = { days = 365 id = BAV_L.12 }
+country_event = { days = 10 id = BAV_L.13 }
+country_event = { days = 7 id = BAV_L.16 }
 }
 
 #create_country_leader = {

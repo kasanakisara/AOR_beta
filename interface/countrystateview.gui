@@ -45,9 +45,9 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 80 y = 5 }
+				position = { x = 80 y = 10 }
 				textureFile = ""
-				font = "hoi_36header"
+				font = "hoi_30header"
 				text = "STATE_NAME_TEST"
 				maxWidth = 330
 				maxHeight = 30
@@ -198,7 +198,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "manpower"
-				position = { x = 64 y = 167 }
+				position = { x = 60 y = 167 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				maxWidth = 80
@@ -323,6 +323,21 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				iconType = {
+					name = "terrain_kaifeng_icon"
+					spriteType = "GFX_terrain_kaifeng"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_tianjin_icon"
+					spriteType = "GFX_terrain_tianjin"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_qingyuan_icon"
+					spriteType = "GFX_terrain_qingyuan"
+					alwaystransparent = yes
+				}
+				iconType = {
 					name = "terrain_kulun_icon"
 					spriteType = "GFX_terrain_kulun"
 					alwaystransparent = yes
@@ -350,6 +365,11 @@ guiTypes = {
 				iconType = {
 					name = "terrain_chongqing_icon"
 					spriteType = "GFX_terrain_chongqing"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "terrain_anqing_icon"
+					spriteType = "GFX_terrain_anqing"
 					alwaystransparent = yes
 				}
 				iconType = {
@@ -457,6 +477,11 @@ guiTypes = {
 					spriteType = "GFX_terrain_emusike"
 					alwaystransparent = yes
 				}
+				iconType = {
+					name = "terrain_oottoma_icon"
+					spriteType = "GFX_terrain_oottoma"
+					alwaystransparent = yes
+				}
 				#非洲#
 
 
@@ -559,7 +584,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "state_modifiers"
 				text = "STATE_MODIFIERS"
-				position = { x = 28 y= -83 }
+				position = { x = 95 y= -27 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 30
@@ -655,14 +680,14 @@ guiTypes = {
 		
 		iconType = {
 			name = "level_bg"
-			position = { x=5 y=60 }	
+			position = { x=5 y=59 }	
 			spriteType = "GFX_generic_text_bg_48"
 		}
 		
 		instantTextboxType = {
 			name = "level"
-			position = { x = -1 y = 63 }
-			font = "hoi_20b"
+			position = { x = 0 y = 63 }
+			font = "hoi_16"
 			maxWidth = 60
 			maxHeight = 20
 			format = center
@@ -742,8 +767,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "level"
-			position = { x = 32 y = 14 }
-			font = "hoi_20b"
+			position = { x = 33 y = 15 }
+			font = "hoi_16"
 			maxWidth = 100
 			maxHeight = 100
 			format = center
@@ -805,14 +830,14 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource"
-			position = { x=53 y=11 }	
+			position = { x=53 y=9 }	
 			spriteType = "GFX_resources_strip"
 		}
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 70 y = 11 }
-			font = "hoi_20b"
+			position = { x = 70 y = 8 }
+			font = "hoi_16b"
 			maxWidth = 37
 			maxHeight = 18
 			format = center

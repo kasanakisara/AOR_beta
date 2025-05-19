@@ -12,13 +12,14 @@ focus_tree={
 	focus={
 		id=BAV_civil_War_gone
 		icon = GFX_goal_BAV_civil_War_gone
-		x=10
+		x=16
 		y=1
 		prerequisite={focus=BAV_First_Council_Spartacus}
 		cost=5
 		ai_will_do={
 			factor=1
 		}
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -29,7 +30,7 @@ focus_tree={
 	focus={
 		id=BAV_Rebuild_army
 		icon = GFX_goal_BAV_Rebuild_army
-		x=5
+		x=13
 		y=2
 		prerequisite={focus=BAV_civil_War_gone}
 		cost=10
@@ -39,11 +40,16 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
+		country_event = {  id = BAV_L.6 }
 		add_war_support = 0.05
 		army_experience = 25
 		custom_effect_tooltip = BAV.focus.8.tt
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
+		add_political_power = -70
 		set_division_force_allow_recruiting ={
 			division_template ="工人赤卫队"
 			force_allow_recruiting = yes
@@ -58,7 +64,7 @@ focus_tree={
 	focus={
 		id=BAV_Training_style_roving_rebels
 		icon = GFX_goal_BAV_Training_style_roving_rebels
-		x=8
+		x=15
 		y=3
 		prerequisite={focus=BAV_Rebuild_army}
 		cost=4
@@ -77,21 +83,34 @@ focus_tree={
 					days > 180
 				}
 			}
+		has_political_power > 0
 		}
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+		country_event = {  id = BAV_L.8 }
+		custom_effect_tooltip = AOR_Bebel_Trust_0_10_tt
+		  add_to_variable = {
+			Bebel_Trust = -10
+			}
+		available = { has_political_power > 0 }
 		swap_ideas = {
 		remove_idea = Roving_style
 		add_idea = Roving_style_1 
+			}
+		custom_effect_tooltip = bav_eugen_candy.1.tt
+		custom_effect_tooltip = BAV.focus.L.2.tt
+			hidden_effect = {
+				add_political_power = -28
 			}
 		}
 	}
 	focus={
 		id=BAV_Crack_extreme_democratic_ideas
 		icon = GFX_goal_BAV_Crack_extreme_democratic_ideas
-		x=2
+		x=11
 		y=3
 		prerequisite={focus=BAV_Rebuild_army}
 		cost=4
@@ -101,18 +120,29 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
+		country_event = {  id = BAV_L.7 }
+		custom_effect_tooltip = AOR_Bebel_Trust_0_10_tt
+		  add_to_variable = {
+			Bebel_Trust = -10
+			} 
 				swap_ideas = {
 		remove_idea = Extreme_democratic_rampant
 		add_idea = Extreme_democratic_rampant_1
 			}
 		set_country_flag = BAV_after_train
+		custom_effect_tooltip = BAV.focus.L.2.tt
+		hidden_effect = {
+			add_political_power = -28
+			}
 		} 	
 	}
 	focus={
 		id=BAV_Transformation_labor
 		icon = GFX_goal_BAV_Transformation_labor
-		x=6
+		x=14
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
 		mutually_exclusive={focus = BAV_Renounce_nobility_once}
@@ -123,6 +153,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		add_war_support = 0.05
 		custom_effect_tooltip = BAV.focus.5.tt
@@ -131,7 +163,9 @@ focus_tree={
 		remove_idea = Roving_style_1 
 		add_idea = Roving_style_2
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
+		add_political_power = -35
 		random_list = { 50 = { retire_character = friedrich_dollma}50  = { retire_character = Walter_von_Reichenau}}
 		Walther_von_Kurzbach = {
 			add_timed_unit_leader_trait = {
@@ -175,7 +209,7 @@ focus_tree={
 	focus={
 		id=BAV_Renounce_nobility_once
 		icon = GFX_goal_BAV_Renounce_nobility_once
-		x=10
+		x=16
 		y=4
 		prerequisite={focus=BAV_Training_style_roving_rebels}
 		mutually_exclusive={focus = BAV_Transformation_labor}
@@ -184,8 +218,10 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_war_support = -0.05
 		add_stability = 0.1
@@ -195,17 +231,19 @@ focus_tree={
 		remove_idea = Roving_style_1 
 		add_idea = Roving_style_3
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
 		hidden_effect = {
 		retire_character = friedrich_dollma
 		retire_character = Walter_von_Reichenau
 		random_list = { 34 = { retire_character = Walther_von_Kurzbach} 33 = { retire_character = Ludwig_Beck} 33 = { retire_character = Hans_Gunther_van_Hooven}}
+		add_political_power = -14
 		}
 	  }
 	}
 	focus={
 		id=BAV_Former_party_member
 		icon = GFX_goal_BAV_Former_party_member
-		x=4
+		x=12
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
 		mutually_exclusive={focus = BAV_Army_shepherd}
@@ -214,19 +252,25 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		swap_ideas = {
 		remove_idea = Extreme_democratic_rampant_1
 		add_idea = Extreme_democratic_rampant_3
+			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -14
 			}
 		}
 	}
 	focus={
 		id=BAV_Army_shepherd
 		icon = GFX_goal_BAV_Army_shepherd
-		x=0
+		x=10
 		y=4
 		prerequisite={focus=BAV_Crack_extreme_democratic_ideas}
 		mutually_exclusive={focus = BAV_Former_party_member}
@@ -234,7 +278,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -242,12 +288,16 @@ focus_tree={
 		remove_idea = Extreme_democratic_rampant_1
 		add_idea = Extreme_democratic_rampant_2
 			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -14
+			}
 		}
 	}
 	focus={
 		id=BAV_Allied_steel
 		icon = GFX_goal_BAV_Allied_steel
-		x=2
+		x=11
 		y=5
 		prerequisite={focus=BAV_Army_shepherd focus=BAV_Former_party_member}
 		cost=5
@@ -255,11 +305,17 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_war_support = 0.05
 		army_experience = 5
+		custom_effect_tooltip = AOR_Bebel_Trust_15_tt
+		  add_to_variable = {
+			Bebel_Trust = 15
+			}
 		if = {
 			limit = {
 				NOT = { has_idea = Extreme_democratic_rampant_2 } 
@@ -281,7 +337,7 @@ focus_tree={
 	focus={
 		id=BAV_People_guard
 		icon = GFX_goal_BAV_People_guard
-		x=8
+		x=15
 		y=5
 		prerequisite={focus=BAV_Renounce_nobility_once focus=BAV_Transformation_labor}
 		cost=5
@@ -289,11 +345,17 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_stability = 0.05
 		army_experience = 5
+		custom_effect_tooltip = AOR_Bebel_Trust_15_tt
+		  add_to_variable = {
+			Bebel_Trust = 15
+			}
 		if = {
 			limit = {
 				NOT = { has_idea = Roving_style_2 } 
@@ -315,7 +377,7 @@ focus_tree={
 	focus={
 		id=BAV_Liquidate_old_government
 		icon = GFX_goal_BAV_Liquidate_old_government
-		x=15
+		x=19
 		y=2
 		prerequisite={focus=BAV_civil_War_gone}
 		cost=10
@@ -323,17 +385,27 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
 		add_stability  = 0.1
 		add_political_power = 120
+		custom_effect_tooltip = AOR_Bebel_Trust_0_5_tt
+		  add_to_variable = {
+			Bebel_Trust = -5
+			}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+		hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={
 		id=BAV_Take_knife_to_bureaucrat
 		icon = GFX_goal_BAV_Take_knife_to_bureaucrat
-		x=15
+		x=19
 		y=3
 		prerequisite={focus=BAV_Liquidate_old_government}
 		cost=5
@@ -341,21 +413,31 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
 		completion_reward={
+		country_event = {  id = BAV_L.9 }
 		add_manpower = -851
+		custom_effect_tooltip = AOR_Bebel_Trust_0_15_tt
+		  add_to_variable = {
+			Bebel_Trust = -15
+			}
 		swap_ideas = {
 			remove_idea = BAV_dying_bureaucracy
 			add_idea = BAV_dying_bureaucracy_1			
 		}
-
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -35
+			}
 		}
 	}
 	focus={
 		id=BAV_New_regulation
 		icon = GFX_goal_BAV_New_regulation
-		x=13
+		x=18
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
 		mutually_exclusive={focus =BAV_New_people_waiter}
@@ -363,7 +445,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -372,12 +456,16 @@ focus_tree={
 			remove_idea = BAV_dying_bureaucracy_1
 			add_idea = BAV_dying_bureaucracy_3	
 		}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={
 		id=BAV_New_people_waiter
 		icon = GFX_goal_BAV_New_people_waiter
-		x=17
+		x=20
 		y=4
 		prerequisite={focus=BAV_Take_knife_to_bureaucrat}
 		mutually_exclusive={focus =BAV_New_regulation}
@@ -385,7 +473,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -394,23 +484,34 @@ focus_tree={
 			remove_idea = BAV_dying_bureaucracy_1
 			add_idea = BAV_dying_bureaucracy_2
 		}
+		custom_effect_tooltip = BAV.focus.L.2.tt
+				hidden_effect = {
+		add_political_power = -70
+			}
 		}
 	}
 	focus={
 		id=BAV_New_Soviet_government
 		icon = GFX_goal_BAV_New_Soviet_government
-		x=15
+		x=19
 		y=5
 		prerequisite={focus=BAV_New_people_waiter focus=BAV_New_regulation}
 		cost=5
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
 		add_stability  = 0.05
+		country_event = BAV_L.18
+		custom_effect_tooltip = AOR_Bebel_Trust_30_tt
+		  add_to_variable = {
+			Bebel_Trust = 30
+			}
 		hidden_effect = {
 		swap_ideas = {
 			remove_idea = BAV_dying_bureaucracy_2
@@ -435,6 +536,7 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+
 		completion_reward={
 		country_event = {  id = BAV.10 }
 		}
@@ -442,7 +544,7 @@ focus_tree={
 	focus={
 		id=BAV_The_future_Wave
 		icon = GFX_goal_BAV_The_future_Wave
-		x=32
+		x=26
 		y=1
 		prerequisite={focus=BAV_First_Council_Spartacus}
 		cost=5
@@ -450,24 +552,30 @@ focus_tree={
 			factor=1
 		}
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
 		 country_event = { id = BAV.4 }
 		 add_timed_idea = { idea = BAV_Economic_restructuring days = 180 }
+		 custom_effect_tooltip = bav_ll_start.tt
 		}
 	}
 	focus={
 		id=BAV_trip_to_country
 		icon = GFX_goal_BAV_trip_to_country
-		x=27
+		x=23
 		y=2
 		prerequisite={focus=BAV_The_future_Wave}
 		cost=4
 		ai_will_do={
 			factor=1
 		}
+		available = { 
+			has_country_flag = BEBEL.TRUST.GO.L
+		 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -477,14 +585,16 @@ focus_tree={
 	focus={
 		id=BAV_Streets_Munich
 		icon = GFX_goal_BAV_Streets_Munich
-		x=37
+		x=29
 		y=2
 		prerequisite={focus=BAV_The_future_Wave}
 		cost=4
 		ai_will_do={
 			factor=1
 		}
+		available = { has_country_flag = BEBEL.TRUST.GO.LI }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -494,14 +604,16 @@ focus_tree={
 	focus={
 		id=BAV_Spread_revolution
 		icon = GFX_goal_BAV_Spread_revolution
-		x=25
+		x=22
 		y=3
 		prerequisite={focus=BAV_trip_to_country}
 		cost=5
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -521,14 +633,16 @@ focus_tree={
 	focus={
 		id=BAV_Abolish_feudalism
 		icon = GFX_goal_BAV_Abolish_feudalism
-		x=29
+		x=24
 		y=3
 		prerequisite={focus=BAV_trip_to_country}
 		cost=10
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -540,14 +654,16 @@ focus_tree={
 	focus={
 		id=BAV_Fire_out
 		icon = GFX_goal_BAV_Fire_out
-		x=25
+		x=22
 		y=4
 		prerequisite={focus=BAV_Spread_revolution}
 		cost=4
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -557,18 +673,21 @@ focus_tree={
 	focus={
 		id=BAV_pesticide
 		icon = GFX_goal_BAV_pesticide
-		x=29
+		x=24
 		y=4
 		prerequisite={focus=BAV_Abolish_feudalism}
 		cost=4
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
 		add_stability = -0.08
+		country_event = BAV_L.5
 		custom_effect_tooltip = BAV.focus.7.tt
 		hidden_effect = {
 		 country_event = { days = 180 id = BAV.9 }
@@ -579,7 +698,7 @@ focus_tree={
 	focus={
 		id=BAV_peasant_commune
 		icon = GFX_goal_BAV_peasant_commune
-		x=27
+		x=23
 		y=5
 		prerequisite={focus=BAV_Fire_out}
 		prerequisite={focus=BAV_pesticide}
@@ -587,7 +706,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
 		available_if_capitulated=yes
+		continue_if_invalid = yes
 		search_filters={
 		}
 		completion_reward={
@@ -608,7 +729,7 @@ focus_tree={
 	focus={
 		id=BAV_roar_the_factory
 		icon = GFX_goal_BAV_roar_the_factory
-		x=34
+		x=27
 		y=3
 		prerequisite={focus=BAV_Streets_Munich}
 		cost=5
@@ -618,7 +739,10 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
+		country_event = BAV_L.4
 		52 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -632,17 +756,20 @@ focus_tree={
 	focus={
 		id=BAV_Exchange_bell
 		icon = GFX_goal_BAV_Exchange_bell
-		x=40
+		x=31
 		y=3
 		prerequisite={focus=BAV_Streets_Munich}
 		cost=5
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+		country_event = BAV_L.3
 		if = {
 			limit = {
 				NOT = { has_idea = BAV_a_deep_cut_from_revolution_1 } 
@@ -664,7 +791,7 @@ focus_tree={
 	focus={
 		id=BAV_Democratic_production
 		icon = GFX_goal_BAV_Democratic_production
-		x=32
+		x=26
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
 		mutually_exclusive={focus =BAV_Command_production}
@@ -672,6 +799,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -683,7 +812,7 @@ focus_tree={
 	focus={
 		id=BAV_Command_production
 		icon = GFX_goal_BAV_Command_production
-		x=36
+		x=28
 		y=4
 		prerequisite={focus=BAV_roar_the_factory}
 		mutually_exclusive={focus =BAV_Democratic_production}
@@ -694,6 +823,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		add_ideas = BAV_product_in_command
 		set_country_flag  = BAV_product_in_command_flag
@@ -702,7 +833,7 @@ focus_tree={
 	focus={
 		id=BAV_Withdrawal_imperial_exchange
 		icon = GFX_goal_BAV_Withdrawal_imperial_exchange
-		x=38
+		x=30
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
 		mutually_exclusive={focus =BAV_Limited_trade}
@@ -713,6 +844,8 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
 		custom_effect_tooltip = BAV.focus.4.tt
 		hidden_effect = {
@@ -726,7 +859,7 @@ focus_tree={
 	focus={
 		id=BAV_Limited_trade
 		icon = GFX_goal_BAV_Limited_trade
-		x=42
+		x=32
 		y=4
 		prerequisite={focus=BAV_Exchange_bell}
 		mutually_exclusive={focus =BAV_Withdrawal_imperial_exchange}
@@ -734,6 +867,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -744,7 +879,7 @@ focus_tree={
 	focus={
 		id=BAV_Coowned_factory
 		icon = GFX_goal_BAV_Coowned_factory
-		x=37
+		x=29
 		y=5
 		prerequisite={focus=BAV_Democratic_production focus=BAV_Command_production}
 		prerequisite={focus=BAV_Withdrawal_imperial_exchange focus=BAV_Limited_trade}
@@ -752,6 +887,8 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -793,7 +930,13 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
+		available = { has_political_power > 0 }
+		continue_if_invalid = yes
 		completion_reward={
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		  add_to_variable = {
+			Bebel_Trust = 5
+			}
 		if = {
 			limit = {
 				NOT = { has_idea = BAV_a_deep_cut_from_revolution_3 } 

@@ -119,6 +119,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
 10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
+11982;4001;sea;8396;-1;-1;-1;-1;;Jinling-Suchang
+11982;1089;sea;8396;-1;-1;-1;-1;;Jinling-Suchang
 4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
 1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
 3691;7813;sea;6261;-1;-1;-1;-1;;Cold Ass-Strait
@@ -139,9 +141,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
+2014;8010;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
-10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -150,6 +152,46 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+10755;10918;impassable;-1;-1;-1;-1;-1;;Himalayas
+10755;5011;impassable;-1;-1;-1;-1;-1;;Himalayas
+8037;10918;impassable;-1;-1;-1;-1;-1;;Himalayas
+8037;10755;impassable;-1;-1;-1;-1;-1;;Himalayas
+8037;5011;impassable;-1;-1;-1;-1;-1;;Himalayas
+8037;10315;impassable;-1;-1;-1;-1;-1;;Himalayas
+4914;10315;impassable;-1;-1;-1;-1;-1;;Himalayas
+4914;10865;impassable;-1;-1;-1;-1;-1;;Himalayas
+7940;10865;impassable;-1;-1;-1;-1;-1;;Himalayas
+7940;10834;impassable;-1;-1;-1;-1;-1;;Himalayas
+7940;13283;impassable;-1;-1;-1;-1;-1;;Himalayas
+12846;13283;impassable;-1;-1;-1;-1;-1;;Himalayas
+12846;4536;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
+12899;10918;impassable;-1;-1;-1;-1;-1;;Himalayas
+12899;5080;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;1943;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;12801;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;2010;impassable;-1;-1;-1;-1;-1;;Himalayas
+8068;5094;impassable;-1;-1;-1;-1;-1;;Himalayas
+5011;8068;impassable;-1;-1;-1;-1;-1;;Himalayas
+5011;2010;impassable;-1;-1;-1;-1;-1;;Himalayas
+8042;10885;impassable;-1;-1;-1;-1;-1;;Himalayas
+10885;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
+10885;13278;impassable;-1;-1;-1;-1;-1;;Himalayas
+10885;12864;impassable;-1;-1;-1;-1;-1;;Himalayas
+13277;12864;impassable;-1;-1;-1;-1;-1;;Himalayas
+13277;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
+13279;8086;impassable;-1;-1;-1;-1;-1;;Himalayas
+13279;8042;impassable;-1;-1;-1;-1;-1;;Himalayas
+13279;5016;impassable;-1;-1;-1;-1;-1;;Himalayas
+13279;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
+13279;13282;impassable;-1;-1;-1;-1;-1;;Himalayas
+13280;7790;impassable;-1;-1;-1;-1;-1;;Himalayas
+13280;5016;impassable;-1;-1;-1;-1;-1;;Himalayas
+13280;13281;impassable;-1;-1;-1;-1;-1;;Himalayas
+13280;13282;impassable;-1;-1;-1;-1;-1;;Himalayas
+13302;13301;impassable;-1;-1;-1;-1;-1;;Himalayas
+13302;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains

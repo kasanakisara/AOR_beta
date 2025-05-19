@@ -82,8 +82,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	CON_democratic = 30
-	Fascism = 70
+	CON_democratic = 25
+	Absolutism = 25
+	AUT_democratic = 20
+	Fascism = 10
+	SOC_democratic = 10
+	AGR_socialism = 10
 }
 
 recruit_character = WRU_EUGENE

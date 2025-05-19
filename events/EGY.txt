@@ -34,11 +34,11 @@ country_event = {
 		ideology = constitutionalism
 		}
 		set_popularities = {
-				Absolutism = 50
-				CON_democratic = 25
-				ISL_democratic = 20
-				FRE_democratic = 5
-				}
+			Absolutism = 50
+			CON_democratic = 25
+			ISL_democratic = 20
+			FRE_democratic = 5
+		}
 	}	
 	option = {
 		name = EGY.1.a
@@ -75,7 +75,7 @@ country_event = {
 		create_country_leader = {
 		name = "Edmund Allenby"
 		desc = ""
-		picture = "EGY.dds"
+		picture = "Allenby.dds"
 		ideology = federalism
 		traits = {
 			#
@@ -96,18 +96,9 @@ country_event = {
 		election_frequency = 48
 		elections_allowed = no
 		}
-		create_country_leader = {
-		name = "Fuad"
-		desc = ""
-		picture = "gfx/leaders/EGY/Fuad.png"
-		ideology = monarchism
-		traits = {
-			#
-			}
-		}
 		ai_chance = {
 			base = 50
-			}
+		}
     }
 }
 
@@ -332,5 +323,17 @@ country_event = {
 	option = {
 		name = EGY.17.a
 		complete_national_focus = EGY_The_Victory_of_Huafutuo
+    }
+}
+
+country_event = {
+	id = EGY.18 #书信（其一）
+	title = EGY.18.t
+	desc = EGY.18.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = EGY.18.a
     }
 }

@@ -25,8 +25,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_SWE_Stockholm_Law"
-		texturefile = "gfx/interface/ideas/SWE/SWE_Stockholm_Law.png"	
+		name = "GFX_idea_SWE_Further_Reform_Law"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Further_Reform_Law.png"	
 	}
 
 	spriteType = {
@@ -186,19 +186,6 @@ spriteTypes = {
 		texturefile = "gfx/AOR_gui/SWE/SWE_Norweign_Independence_needle.dds"
 		legacy_lazy_load = no
 		noOfFrames = 21
-	}
-}
-
-#联邦化GUI
-
-spriteTypes = {
-	progressbartype = {
-		name = "GFX_Union_GUI_progressbar"
-		textureFile1 = "gfx/AOR_gui/SWE/SWE.png"
-		textureFile2 = "gfx/AOR_gui/SWE/SWE_null.png"
-		size = { x = 470 y = 43 }
-		effectFile = "gfx/FX/progress.lua"
-		horizontal = yes
 	}
 }
 

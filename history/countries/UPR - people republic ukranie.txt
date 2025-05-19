@@ -83,8 +83,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	AUT_democratic = 30
-	Fascism = 70
+	AUT_democratic = 25
+	Absolutism = 22
+	FRE_democratic = 17
+	SOC_democratic = 13
+	CON_democratic = 10
+	PAR_socialism  = 10
+	Fascism = 3
 }
 
 recruit_character = UPR_OFFICE_PETER

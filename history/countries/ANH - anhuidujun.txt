@@ -27,6 +27,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "ni_si_chong"
+	desc = "ni_si_chong_desc"
 	picture = "gfx/leaders/CHI/ni_si_chong.png"
 	expire = "1965.1.1"
 	ideology = miliciagov

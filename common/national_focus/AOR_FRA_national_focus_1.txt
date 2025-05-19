@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_The_New_Future_of_the_Republic #共和国的新未来
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AOR_FRA_The_New_Future_of_the_Republic
 		cost = 1
 		prerequisite = {
 			focus = AOR_FRA_Clearing_war_debts
@@ -226,7 +226,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_a_thousand_things_wait_to_be_done #百废待兴
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AOR_FRA_a_thousand_things_wait_to_be_done
 		cost = 2
 		prerequisite = {
 			focus = AOR_FRA_The_New_Future_of_the_Republic
@@ -630,7 +630,7 @@ focus_tree = {
 
 		completion_reward={
 			add_political_power = 50
-			news_event = { id = FRA.6 }
+			country_event = { id = FRA.6 }
 		}
 
 	}

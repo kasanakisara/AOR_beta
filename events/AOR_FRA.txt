@@ -2,6 +2,7 @@
 add_namespace = FRA_BRA
 add_namespace = FRA_USA
 add_namespace = FRA
+add_namespace = FRA_Social_Crisis
 
 country_event = {
 	id = FRA.1 #出游
@@ -103,7 +104,7 @@ country_event = {
 		FRA = {
 			country_event = {
 				id = FRA.8
-				days = 20
+				days = 186
 			}
 		}
 	}
@@ -126,14 +127,14 @@ country_event = {
 			}
 			country_event = {
 				id = FRA.9
-				days = 7
+				days = 186
 			}
 		}
 	}
 }
 
 country_event = {
-	id = FRA.9 #协约国解散
+	id = FRA.9 #协约国正式解散
 	title = FRA.9.t
 	desc = FRA.9.d
 	fire_only_once = yes
@@ -202,7 +203,7 @@ country_event = { #议会的演说
 	desc = FRA.12.d
 	is_triggered_only = yes
 	option = {
-		name = FRA.12.a #
+		name = FRA.12.a
 		complete_national_focus = AOR_FRA_Shackles
 	}
 }
@@ -255,5 +256,70 @@ country_event = {
 
 	option = {
 		name = FRA_USA.1.a
+	}
+}
+
+#################
+## 法国社会危机 ##
+#################
+country_event = {
+	id = FRA_Social_Crisis.1 #一次加重
+	title = FRA_Social_Crisis.1.t
+	desc = FRA_Social_Crisis.1.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.1.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_I
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.2 #二次加重
+	title = FRA_Social_Crisis.2.t
+	desc = FRA_Social_Crisis.2.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.2.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_I
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_II
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.3 #三次加重
+	title = FRA_Social_Crisis.3.t
+	desc = FRA_Social_Crisis.3.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.3.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_II
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_III
+		}
+		hidden_effect = {
+			country_event = {
+				id = FRA_Social_Crisis.4
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = FRA_Social_Crisis.4 #最终加重
+	title = FRA_Social_Crisis.4.t
+	desc = FRA_Social_Crisis.4.d
+	is_triggered_only = yes
+	option = {
+		name = FRA_Social_Crisis.4.a
+		swap_ideas = {
+			remove_idea = AOR_FRA_A_Growing_Social_Crisis_III
+			add_idea = AOR_FRA_A_Growing_Social_Crisis_IV
+		}
 	}
 }

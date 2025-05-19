@@ -404,11 +404,11 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = 0.010
+				conscription = -0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
-				army_attack_factor  = -0.1
-				army_defence_factor  = -0.1
+				army_attack_factor  = -0.05
+				army_defence_factor  = -0.05
 				training_time_factor = -0.05
 			}
 		}
@@ -420,9 +420,11 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
+				conscription = 0.010
 				army_attack_factor  = -0.05
 				army_defence_factor  = -0.05
 				drift_defence_factor = -0.25
+				training_time_factor = -0.05
 			}
 		}
 		Extreme_democratic_rampant_5 = {
@@ -433,11 +435,12 @@ ideas = {
 			picture = idea_BAV_Soviet_guard
 
 			modifier = {
-				conscription = 0.010
+				conscription = -0.010
 				drift_defence_factor = 0.25
 				army_org_factor = 0.02
-				army_attack_factor  = -0.05
-				army_defence_factor  = -0.05
+				army_attack_factor  = 0.05
+				army_defence_factor  = 0.05
+				training_time_factor = -0.05
 			}
 		}
 		#流寇作风
@@ -596,7 +599,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_idea_por_unstable_republic
+			picture = GFX_idea_BAV_labor_liberal_females_1
 
 			modifier = {
 				conscription = 0.015
@@ -608,7 +611,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_idea_por_iberian_workers_united
+			picture = GFX_idea_BAV_Peoples_Commune
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -644,7 +647,7 @@ ideas = {
 		}
 		#旧官僚
 		
-		BAV_dying_bureaucracy= {
+		BAV_dying_bureaucracy = {
 			allowed = {
 				original_tag = BAV
 				always = no
@@ -723,7 +726,7 @@ ideas = {
 				original_tag = BAV
 				always = yes
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_pour_fire
 
 			modifier = {
 				stability_factor = 0.05
@@ -734,7 +737,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_new_economic_policy
+			picture = GFX_idea_BAV_Economic_restructuring
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -756,7 +759,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = GFX_idea_SOV_system_decentralization
+			picture = GFX_idea_BAV_Spartacist_bureaucracy
 			modifier = {
 			political_power_gain = 0.1
 			consumer_goods_factor = -0.05

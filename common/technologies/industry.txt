@@ -800,7 +800,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = Industrial_assembly_linesV
+			leads_to_tech = Industrial_assembly_linesVI
 			research_cost_coeff = 1
 		}
 
@@ -882,31 +882,6 @@ technologies = {
 		}
 	}
 
-
-	Industrial_assembly_linesV = {
-	
-		production_factory_max_efficiency_factor = 0.1
-
-		path = {
-			leads_to_tech = Industrial_assembly_linesVI
-			research_cost_coeff = 1
-		}
-		research_cost = 1.5
-		start_year = 1919
-		folder = {
-			name = industry_folder
-			position = { x =1 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 50
-		}
-		
-		categories = {
-			industry
-			cat_production
-		}
-	}
 	Industrial_assembly_linesVI = {
 	
 		local_building_slots_factor = 0.05

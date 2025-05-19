@@ -1184,8 +1184,6 @@ country_event = {#中国广州政府宣布北伐
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
 				load_oob = "UPC_M_Nandu"
-				load_oob = "UPC_M_Nandu"
-				load_oob = "UPC_M_Nandu"
                 declare_war_on = { 
                     target = NAN
                     type = annex_everything
@@ -1275,6 +1273,21 @@ country_event = {#中国广州政府宣布北伐
                 owns_state = 330
             }
         }
+
+		immediate = {
+            hidden_effect = {
+				set_victory_points = {
+                province = 1047
+                value = 20   
+                }
+			hidden_effect = {
+				set_victory_points = {
+                province = 4619
+                value = 15    
+                }
+		    }
+		}
+	}
     
     
         option = {
@@ -1282,6 +1295,22 @@ country_event = {#中国广州政府宣布北伐
             news_event = {id=AOR_news.114}
 			country_event = { days = 60  id = CHI.38 }
             country_event = { days = 90  id = JAP.10 }
+			set_victory_points = {
+                province = 11913
+                value = 30    
+            }
+            set_victory_points = {
+                province = 9843
+                value = 20    
+            }
+			set_province_name = {
+                id = 11913
+                name = "南京"
+            }
+            set_province_name = {
+                id = 9843
+                name = "北平"
+            }
             UPC = {
 				add_popularity = { ideology = Absolutism popularity = 0.05 }
                 add_state_core = 876

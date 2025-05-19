@@ -1,7 +1,5 @@
 ﻿capital = 605
 
-#oob = "DCD_1936"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -45,8 +43,10 @@ set_politics = {
 
 set_popularities = {
 	Marxism = 42
-	AUT_democratic = 48
-	Absolutism = 10
+	AUT_democratic = 33
+	Absolutism = 15
+	SOC_democratic = 5
+	FRE_democratic = 5
 }
 
 

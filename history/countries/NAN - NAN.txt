@@ -32,7 +32,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Feng_guo_zhang"
-	desc = "POLITICS_MON_DESC"
+	desc = "Feng_guo_zhang_desc"
 	picture = "gfx/leaders/NAN/Feng_guo_zhang.png"
 	expire = "1965.1.1"
 	ideology = authoritarianism
@@ -48,9 +48,10 @@ set_politics = {
 }
 
 set_popularities = {
-	FRE_democratic = 34
-	AUT_democratic = 33
-	CON_democratic = 33
+	AUT_democratic = 40
+	CON_democratic = 30
+	Absolutism = 20
+	FRE_democratic = 10
 }
 
 

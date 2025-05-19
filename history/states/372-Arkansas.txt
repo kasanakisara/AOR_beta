@@ -2,7 +2,7 @@
 state={
 	id=372
 	name="STATE_372"
-	manpower = 1854481
+	manpower = 1752204
 	
 	state_category = town
 	
@@ -15,15 +15,13 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
 		}
 		add_core_of = USA
 		victory_points = {
-			12489 7
+			12489 3
 		}
 		victory_points = {
-			4567 3
+			4567 1
 		}
 
 		set_demilitarized_zone = yes

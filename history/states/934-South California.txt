@@ -13,6 +13,12 @@ state = {
 			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 3
+			1562 = {
+				naval_base = 5 #10
+			}
+			9814 = {
+				naval_base = 3 #5 
+			}
 		}
 		add_core_of = MXS
 		USA = {

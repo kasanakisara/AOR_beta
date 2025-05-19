@@ -43,7 +43,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_political_power = 300
+			add_political_power = -50
 		}
 	}
 	focus={
@@ -121,7 +121,7 @@ focus_tree={
 			country_event={
 				id = USA.10033
 			}
-			add_political_power = -100
+			add_political_power = -50
 		}
 	}
 	focus={
@@ -385,6 +385,15 @@ focus_tree={
 			    remove_idea = USA_shiyouhuanying2
 			    add_idea = USA_shiyouhuanying3
 		    }
+			hidden_effect = {
+					country_event = {
+						id = USA.10063
+					}
+					country_event = {
+						id = USA.10064
+						days = 3
+					}
+			}
 		}
 	}
 	focus={
@@ -529,6 +538,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = USA_AMr_Knight
 			if = {
 				limit = {
 					has_idea = USA_zhixuchonggou_knights
@@ -547,11 +557,33 @@ focus_tree={
 					add_idea = USA_zhixuchonggou_knights2
 				}
 			}
-			news_event={
-				id=AOR_news.191
+			hidden_effect = {
+			USA = {
+                load_oob = AOR_LAND_KOW_USA_civil_war
+					else_if = {
+						limit = {
+							USA = {
+								owns_state = 373	
+							}
+						}
+					USA = {
+						country_event = {
+							id = USA.10061
+						}
+						country_event = {
+							id = USA.10064
+							days = 3
+						}
+					}
+				}
+				news_event={
+					id = AOR_news.191
+				}
 			}
 		}
 	}
+}
+
 	focus={
 		id=USA_walks_to_the_stage
 		icon=GFX_goal_USA_walks_to_the_stage
@@ -567,6 +599,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			hidden_effect = {
+				news_event = {
+				id = AOR_news.218
+				}
+			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4
 				add_idea = USA_the_divided_nation5
@@ -629,6 +666,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			hidden_effect = {
+				news_event = {
+				id = AOR_news.219
+				}
+			}
 			swap_ideas={
 				remove_idea = USA_the_divided_nation4
 				add_idea = USA_the_divided_nation8
@@ -721,7 +763,7 @@ focus_tree={
 		id=USA_Everything_for_freedom
 		icon=GFX_goal_USA_Everything_for_freedom
 		x=10
-		y=11
+		y=12
 		prerequisite={focus=USA_Overseas_Fleet_Escort}
 		prerequisite={focus=USA_Ensure_sales_channels focus=USA_Add_military_industry focus=USA_Mr_Knight focus=USA_War_Production_Management_Law focus=USA_Encourage_joining_the_militia }
 		cost=100

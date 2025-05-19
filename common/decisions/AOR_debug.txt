@@ -1,7 +1,7 @@
 ### debug决议 ###
 Hackers_debug = {
     SWE_Uniondrama = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -17,8 +17,25 @@ Hackers_debug = {
         }
     }
 
+    USA_1920 = {
+        available = {
+            is_debug = yes
+            tag = USA
+        }
+        visible = {
+            is_debug = yes
+            tag = USA
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            load_focus_tree = USA_2
+        }
+    }
+
     USA_Civilwar_begin = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = USA
         }
@@ -37,7 +54,7 @@ Hackers_debug = {
     }
 
     SWE_focus_test_3 = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -54,7 +71,7 @@ Hackers_debug = {
     }
 
     SWE_Folkhemmet_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -71,7 +88,7 @@ Hackers_debug = {
     }
 
     SWE_Open_the_door_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = SWE
         }
@@ -88,7 +105,7 @@ Hackers_debug = {
     }
 
     FRA_Millerand_test = {
-        avaliable = {
+        available = {
             is_debug = yes
             tag = FRA
         }
@@ -114,4 +131,44 @@ Hackers_debug = {
             complete_national_focus = AOR_FRA_Shackles
         }
     }
+
+    SWE_Haakon_Dead_test = {
+        available = {
+            is_debug = yes
+            tag = SWE
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            country_event = { id = SWE.1 }
+            country_event = { id = Haakon.1 }
+            country_event = { id = Haakon.2 }
+            country_event = { id = Haakon.3 }
+        }
+    }
+
+    SWE_Orland_test = {
+        available = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            complete_national_focus = AOR_Throat_Crisis
+        }
+    }
+
 }
