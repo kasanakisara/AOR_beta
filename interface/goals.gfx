@@ -50,6 +50,14 @@ spriteTypes = {
 		name = "GFX_goal_AOR_FRA_Raise_tariffs" #关税
 		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Raise_tariffs.png"			
 	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Grants_of_relief_and_subsidies" #发放补助
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Grants_of_relief_and_subsidies.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Fostering_local_businesses" #扶植本土
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Fostering_local_businesses.png"			
+	}
 	
 	SpriteType = {
 		name = "GFX_BEL_LB"
