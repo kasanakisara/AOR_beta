@@ -139,7 +139,7 @@ focus_tree = {
 		}
 		available = { 
 			country_exists = SAX
-			SAX = { Marxism = 50}
+			SAX = { Marxism > 0.5}
 			BAV = {check_variable = {Bebel_Trust > 50} }
 		}
 		available_if_capitulated=yes

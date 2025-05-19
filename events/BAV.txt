@@ -412,7 +412,7 @@ country_event = {
 			factor = 50
 			modifier={
 				factor = 1.4
-				WUR = { Marxism > 50 }
+				WUR = { Marxism > 0.5 }
 			}
 			modifier={
 				factor = 1.3
