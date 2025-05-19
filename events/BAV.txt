@@ -305,7 +305,7 @@ country_event = {
 	id = BAV.14
 	title = BAV.14.t
 	desc = BAV.14.d
-	picture = GFX_BAV.15_pic
+	picture = GFX_BAV.cafe_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -348,7 +348,7 @@ country_event = {
 	id = BAV.16
 	title = BAV.16.t
 	desc = BAV.16.d
-	picture = GFX_BAV.16_pic
+	picture = GFX_BAV.13_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -361,7 +361,7 @@ country_event = {
 	id = BAV.17
 	title = BAV.17.t
 	desc = BAV.17.d
-	picture = GFX_BAV.17_pic
+	picture = GFX_BAV.2_pic
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -385,7 +385,7 @@ country_event = {
 	id = BAV.18
 	title = BAV.18.t
 	desc = BAV.18.d
-	picture = GFX_BAV.18_pic
+	picture = GFX_BAV.cafe_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -451,7 +451,7 @@ country_event = {
 	id = BAV.20
 	title = BAV.20.t
 	desc = BAV.20.d
-	picture = GFX_BAV.20_pic
+	picture = GFX_BAV.13_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -471,8 +471,14 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.21.a
-		BAV = {create_wargoal = { target = WUR type = Ger_civil_war_bav } }
-		custom_effect_tooltip = BAV.focus.ene.wur.2.tt
+		set_politics = { ruling_party = Marxism } 
+		SAX = {set_cosmetic_tag = BAV_SAX_1}
+		BAV = {	
+			set_autonomy = { 
+				target = SAX 
+				autonomy_state = AOR_SOV_Closely_executed_alliance
+			}
+		}
 	}
 }
 

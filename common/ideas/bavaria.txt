@@ -1190,6 +1190,27 @@ ideas = {
 				org_loss_when_moving = -0.05
 			}
 		}
+
+		#粉碎修正主义
+		BAV_Crush_revisionism_1 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_BAV_Crush_revisionism_1
+			targeted_modifier = {
+				tag = SAX
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = NAU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				
+			}
+		}
     }
 	hidden_ideas = {
 		BAV_nice_balance_modifier = {
