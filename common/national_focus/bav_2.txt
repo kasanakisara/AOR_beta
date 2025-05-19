@@ -3,7 +3,7 @@ focus_tree = {
 	country={
 		factor=0
 		modifier={
-			add=100
+			add=10000
 			tag=BAV
 		}
 	}
@@ -23,6 +23,9 @@ focus_tree = {
 		bypass = {
 			tag=BAV
 			has_country_flag = BAV.belel.dead
+		}
+		completion_reward={
+			custom_effect_tooltip = BAV.focus.bebel.dd.tt
 		}
 	}	
 	#传递接力棒
@@ -45,6 +48,7 @@ focus_tree = {
 			custom_effect_tooltip = BAV.focus.9.tt
 			country_event = {days = 3 id = BAV.15 }
 			hidden_effect = {news_event = AOR_news.31}
+			custom_effect_tooltip = BAV.focus.bebel.d.tt
 		}
 	}
 	#斩断历史
@@ -72,7 +76,7 @@ focus_tree = {
 			force_allow_recruiting = yes
 				}
 			}
-			country_lock_all_division_template = yes
+			country_lock_all_division_template = no
 		}
 	}
 	#和统符腾堡
@@ -91,7 +95,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_political_power = 50
+			add_stability = 0.05
 			country_event = BAV.14
+			custom_effect_tooltip = BAV.focus.fri.wur.tt
 		}
 	}
 
@@ -111,7 +118,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			country_event = BAV.14
+			add_popularity = { ideology = Marxism popularity = 0.05 }
+			add_war_support = 0.05
+			BAV = {create_wargoal = { target = WUR type = Ger_civil_war_bav } }
+			custom_effect_tooltip = BAV.focus.ene.wur.tt
 		}
 	}
 
@@ -127,15 +137,22 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = { 
+			country_exists = SAX
+			SAX = { Marxism = 50}
+			BAV = {check_variable = {Bebel_Trust > 50} }
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			country_event = BAV.14
+			SAX = { country_event = BAV.21 }
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
-	#宣战符腾堡
+	#宣战萨克森
 	focus={
 		id=BAV_enemies_from_the_SAX
 		icon = GFX_goal_BAV_enemies_from_the_SAX
@@ -151,7 +168,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			country_event = BAV.14
+			add_popularity = { ideology = Marxism popularity = 0.05 }
+			add_war_support = 0.1
 		}
 	}
 
@@ -180,7 +198,7 @@ focus_tree = {
 			}
 			remove_ideas = Extreme_democratic_rampant_4
 		}
-		else = {
+			else = {
 			remove_ideas = Extreme_democratic_rampant_5
 			}
 			

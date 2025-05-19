@@ -266,6 +266,32 @@ wargoal_types = {
 		threat = 0.5
 	}
 	
+	Ger_civil_war_bav = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+		war_name = Ger_civil_war_bav
+		allowed = {
+			always = no
+		}
+		
+		take_states = {
+			always = yes
+		}
+		
+		puppet = {
+			always = no
+		}
+		generate_base_cost = 25
+		generate_per_state_cost = 10
+
+		take_states_limit = 1000
+		take_states_cost = -50
+
+
+		threat = 0.05
+	}	
+	
 	America_revolution = {
 		# PREV = original target country
 		# ROOT = goal owner country
