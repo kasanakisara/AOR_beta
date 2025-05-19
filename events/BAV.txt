@@ -310,10 +310,13 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = BAV.14.a
-		country_event = {
-			days = 1
-			id = BAV.18
+		WUR = { 
+			country_event = {
+				days = 1
+				id = BAV.19
+			}
 		}
+		
 	}
 }
 
@@ -322,11 +325,21 @@ country_event = {
 	id = BAV.15
 	title = BAV.15.t
 	desc = BAV.15.d
-	picture = GFX_BAV.15_pic
+	picture = GFX_BAV.7_pic
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = BAV.15.a
+		remove_trait = {
+					character = Eugen_Levine
+					slot = political_advisor
+					trait = forever_fighter
+				}
+		add_trait = {
+					character = Eugen_Levine
+					slot = political_advisor
+					trait = forever_fighter_1
+			   }
 	}
 }
 
@@ -367,7 +380,7 @@ country_event = {
 	}
 }
 
-#给符腾堡的信-回复
+#给符腾堡的信-同意
 country_event = {
 	id = BAV.18
 	title = BAV.18.t
@@ -381,6 +394,85 @@ country_event = {
 			target = WUR
 			transfer_troops = yes
 		}
+		custom_effect_tooltip = BAV.focus.ene.wur.3.tt
+	}
+}
+
+#给符腾堡的信-符腾堡视角
+country_event = {
+	id = BAV.19
+	title = BAV.19.t
+	desc = BAV.19.d
+	picture = GFX_BAV.19_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.19.a  #同意
+		ai_chance = {
+			factor = 50
+			modifier={
+				factor = 1.4
+				WUR = { Marxism > 0.5 }
+			}
+			modifier={
+				factor = 1.3
+				BAV = { 
+					check_variable = {
+						Bebel_Trust > 50
+					}
+				} 
+			}
+		}
+		BAV = { 
+			country_event = {
+				days = 7
+				id = BAV.18
+			}
+		}
+	}
+
+	option = {
+		name = BAV.19.b  #拒绝
+		ai_chance = {
+			factor = 50
+		}	
+		BAV = { 
+			country_event = {
+				days = 7
+				id = BAV.20 
+			}
+		}
+		BAV = {will_lead_to_war_with = WUR}
+	}
+}
+
+#给符腾堡的信-拒绝
+country_event = {
+	id = BAV.20
+	title = BAV.20.t
+	desc = BAV.20.d
+	picture = GFX_BAV.20_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.20.a
+		BAV = {create_wargoal = { target = WUR type = Ger_civil_war_bav } }
+		custom_effect_tooltip = BAV.focus.ene.wur.2.tt
+	}
+}
+
+#煽动萨克森起义
+country_event = {
+	id = BAV.21
+	title = BAV.21.t
+	desc = BAV.21.d
+	picture = GFX_BAV.21_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = BAV.21.a
+		BAV = {create_wargoal = { target = WUR type = Ger_civil_war_bav } }
+		custom_effect_tooltip = BAV.focus.ene.wur.2.tt
 	}
 }
 
@@ -704,12 +796,14 @@ country_event = {
 	title = BAV.67.t
 	desc = BAV.67.d
 	fire_only_once = yes
+	picture = GFX_BAV.23_pic
 	trigger = {
 		tag = BAV
 		date > 1922.5.10
 	}
 	option = {
 		name = BAV.67.a
+		custom_effect_tooltip = BAV_LETTER.hd.2.tt
 	}
 }
 
@@ -1157,6 +1251,109 @@ country_event = {
 	option = {
 		name = BAV_L.12.a
 		set_country_flag = BEBEL.TRUST.GO.LI
+	}
+}
+
+#列宁写信#
+country_event = {
+	id = BAV_L.13
+	title = BAV_L.13.t
+	desc = BAV_L.13.d
+	picture = GFX_BAV.19_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.13.a
+		custom_effect_tooltip = BAV_LETTER.ll.tt
+		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		add_to_variable = {
+			Bebel_Trust = 5
+			} 		
+		hidden_effect = {
+			country_event = { days = 3 id = BAV_L.14  }
+		}
+	}
+}
+
+#考茨基写信#
+country_event = {
+	id = BAV_L.14
+	title = BAV_L.14.t
+	desc = BAV_L.14.d
+	picture = GFX_BAV.20_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.14.a
+		custom_effect_tooltip = BAV_LETTER.kk.tt
+		hidden_effect = {
+			country_event = { days = 7 id = BAV_L.15  }
+			country_event = { days = 70 id = BAV_L.17  }
+		}
+	}
+}
+
+#潘涅库克写信#
+country_event = {
+	id = BAV_L.15
+	title = BAV_L.15.t
+	desc = BAV_L.15.d
+	picture = GFX_BAV.21_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.15.a
+		custom_effect_tooltip = BAV_LETTER.ap.tt
+		add_political_power = 5
+	}
+}
+
+#艾伯特写信#
+country_event = {
+	id = BAV_L.16
+	title = BAV_L.16.t
+	desc = BAV_L.16.d
+	picture = GFX_BAV.22_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.16.a
+		custom_effect_tooltip = BAV_LETTER.ee.tt
+	}
+}
+
+#热狗写信#
+country_event = {
+	id = BAV_L.17
+	title = BAV_L.17.t
+	desc = BAV_L.17.d
+	picture = GFX_BAV.23_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.17.a
+		custom_effect_tooltip = BAV_LETTER.hd.tt
+		
+	}
+}
+
+#倍倍尔晕倒#
+country_event = {
+	id = BAV_L.18
+	title = BAV_L.18.t
+	desc = BAV_L.18.d
+	picture = GFX_BAV.3_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = no
+	option = {
+		name = BAV_L.18.a
+		
 	}
 }
 

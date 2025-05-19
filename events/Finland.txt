@@ -266,7 +266,7 @@ country_event = {
 
 		trigger = {
 			original_tag = FIN
-			surrender_progress > 0.6 
+			surrender_progress > 0.2 
 			has_war_with = FIC
 			has_country_flag = FIN_civilwar
 		}
@@ -377,7 +377,7 @@ country_event = {
 
 		trigger = {
 			original_tag = FIC
-			surrender_progress > 0.6 
+			surrender_progress > 0.2 
 			has_war_with = FIN
 			has_country_flag = FIN_civilwar
 		}
@@ -386,7 +386,7 @@ country_event = {
 
 	option = { 
 		name = RUSSIANS_may_help_us 
-    	ai_chance = { add = 8 }
+    	ai_chance = { add = 9 }
 	   	ARU = { add_to_faction = FIN }
 	    	FIN = {
 				add_to_war = {
@@ -405,7 +405,7 @@ country_event = {
 	    }
 	option = { 
 		name = Russians_are_always_our_biggest_enemy
-        ai_chance = { add = 2 }
+        ai_chance = { add = 1 }
 	    	FIC = {
 	        	random_controlled_state = {
 					is_capital = yes
