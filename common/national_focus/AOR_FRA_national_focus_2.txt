@@ -218,7 +218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Grants_of_relief_and_subsidies #发放救济和补贴
-		icon =AOR_FRA_Grants_of_relief_and_subsidies
+		icon = GFX_goal_AOR_FRA_Grants_of_relief_and_subsidies
 		relative_position_id = AOR_FRA_Gold_is_restricted
 		prerequisite = { focus = AOR_FRA_Gold_is_restricted }
 		
@@ -247,7 +247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Make_concessions_to_trade_unions #对工会让步
-		icon = AOR_FRA_Make_concessions_to_trade_unions
+		icon = GFX_goal_AOR_FRA_Make_concessions_to_trade_unions
 		relative_position_id = AOR_FRA_Gold_is_restricted
 		prerequisite = { focus = AOR_FRA_Grants_of_relief_and_subsidies }
 		
@@ -255,20 +255,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 2
-
-	
-
-		
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-		
-		
+		cost = 2	
 
 		completion_reward = {	
 			
@@ -276,28 +263,14 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Fostering_local_businesses #扶植本土企业
-		icon = AOR_FRA_Fostering_local_businesses
+		icon = GFX_goal_AOR_FRA_Fostering_local_businesses
 		relative_position_id = AOR_FRA_Raise_tariffs
 		prerequisite = { focus = AOR_FRA_Raise_tariffs }
-		
 		
 		x = 0
 		y = 1
 
 		cost = 2
-
-	
-
-		
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-		
-		
 
 		completion_reward = {	
 			
