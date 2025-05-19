@@ -635,8 +635,8 @@
  COL_Absolutism_party_long:0 "哥伦比亚保守党"
  GCL_CON_democratic_party:0 "大哥伦比亚自由党"
  GCL_Absolutism_party:0 "大哥伦比亚国家联盟"
- CZE_Marxism_party:0 "捷克斯洛伐克共产党"
- CZE_Marxism_party_long:0 "捷克斯洛伐克共产党"
+ CZE_Marxism_party:0 "捷克社会民主工党"
+ CZE_Marxism_party_long:0 "捷克社会民主工党"
  CZE_FRE_democratic_party:0 "捷克民族社会党"
  CZE_FRE_democratic_party_long:0 "捷克民族社会党"
  CHL_Fascism_party:0 "智利人民先锋社会党"
@@ -1159,3 +1159,15 @@
 
  
 SIL_FRE_democratic_party:0 "德国社民党(右派)"
+
+ #####AUS#####
+ AUS_SOC_democratic_party:0 "奥地利社会民主党"
+ AUS_SOC_democratic_party_long:0 "奥地利社会民主党"
+
+ DEN_Marxism_party:0 "奥地利社会民主党（激进派）"
+ DEN_Marxism_party_long:0 "奥地利社会民主党（激进派）"
+
+ AUS_Absolutism_party:0 "基督教社会党（军方派）"
+ AUS_Absolutism_party_long:0 "基督教社会党（军方派）"
+
+
