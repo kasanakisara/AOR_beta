@@ -1,0 +1,17 @@
+containerWindowType = {
+name = Pan_talk_conversation_word_background
+size = {hight = 300 width = 100%}
+spriteType = "GFX_Pan_talk_conversation_word_background"
+position = {x = 100 y = 20}
+
+instanTextBoxType = {
+name = brain
+text = "brain_tt"
+font = Maxith_14
+}
+iconType = {
+name = brain_icon
+spriteType = "brain_icon"
+posion = 
+
+#注意 这个东西最好使用flag触发 而且写起来还是有点费劲
