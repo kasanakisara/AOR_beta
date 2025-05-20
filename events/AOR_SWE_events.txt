@@ -553,6 +553,7 @@ country_event = {
             load_focus_tree = AOR_SWE_focus_tree_2
             set_country_flag = SWE_Emergency_State
             add_ideas = SWE_Regency_Emergency_Crisis
+            complete_national_focus = AOR_SWE_Panic_and_Terror
         }
         custom_effect_tooltip = SWE_Haakon_III_tt
     }
