@@ -24,7 +24,7 @@ BAV_Bebel_Trust = {
 	}
 	
 	bav_pp_trust_change = { #信任兑换PP点
-        icon = GFX_decision_category_generic_communism
+        icon = GFX_decision_bav_trust_1
 		
 		priority = 90
 		available = {                           

@@ -9,6 +9,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/BAV_BEBEL_trust.png"
 	}
 	
+	spriteType = { 
+		name = "GFX_decision_bav_trust_1"
+		texturefile = "gfx/interface/decisions/decision_bav_trust_1.png"
+	}
+
 	spriteType = {
 		name = "GFX_lenin_signature"
 		texturefile = "gfx/texticons/lenin_signature.png"
