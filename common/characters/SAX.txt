@@ -281,4 +281,20 @@ characters = {
 			ai_will_do = { factor = 1.000 }
 		}
 	}
+
+	SAX_Paul_frolich={
+		name= Paul_frolich
+		portraits={
+			civilian={
+				large="gfx/leaders/SAX/Paul_frolich.png"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "BAV_Paul_frolich_DESC"
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

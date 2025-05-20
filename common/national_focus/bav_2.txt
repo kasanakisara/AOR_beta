@@ -3,7 +3,7 @@ focus_tree = {
 	country={
 		factor=0
 		modifier={
-			add=10000
+			add=100
 			tag=BAV
 		}
 	}
@@ -139,8 +139,12 @@ focus_tree = {
 		}
 		available = { 
 			country_exists = SAX
-			SAX = { Marxism > 0.5}
-			BAV = {check_variable = {Bebel_Trust > 50} }
+			SAX = { Marxism > 0.8}
+			
+			custom_trigger_tooltip = {
+				tooltip = BAV.SAX.REV.tt
+				check_variable = { Bebel_Trust > 79 }
+			}
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -149,6 +153,7 @@ focus_tree = {
 			SAX = { country_event = BAV.21 }
 			add_political_power = 50
 			add_stability = 0.05
+			
 		}
 	}
 
@@ -164,12 +169,24 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			OR = {
+				has_global_flag = NAU.BERN
+				country_exists = SAX
+				
+			}
+		}
+		bypass = {
+			NOT = {country_exists = SAX}
+			NOT = {has_global_flag = NAU.BERN}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
 			add_popularity = { ideology = Marxism popularity = 0.05 }
 			add_war_support = 0.1
+			add_ideas = BAV_Crush_revisionism_1
 		}
 	}
 
@@ -245,15 +262,58 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+		add_political_power = 50
 		custom_effect_tooltip = BAV.focus.11.tt
 		custom_effect_tooltip = BAV.focus.12.tt
-			hidden_effect = {
+
+		hidden_effect = {
 			add_state_core= 50
 			add_state_core = 841
 			add_state_core = 860
 			add_state_core = 837
 
+		WUR = {
+			every_unit_leader = {
+			add_timed_unit_leader_trait = {
+					trait = BAV_labor_reform_1
+					days = 365
+				}
 			}
+		}
+		random_list = { 
+			50 = { 
+				WUR = {
+				random_unit_leader= {
+					set_nationality = ROOT
+				 } 
+				}
+			} 
+			50 = { }
+		}
+
+		random_list = { 
+			50 = { 
+				WUR = {
+				 random_unit_leader= {
+					set_nationality = ROOT
+				 } 
+				}
+			} 
+			50 = { }
+		}
+
+		random_list = { 
+			50 = { 
+				WUR = {
+				 random_unit_leader= {
+					set_nationality = ROOT
+				 } 
+				}
+			} 
+			50 = { }
+		}
+			}
+
 		}
 	}
 	#思想革命
@@ -319,6 +379,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = BAV.focus.bell.tt
 		}
 	}
 
@@ -592,10 +653,13 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			load_oob = "BAV_121"
+			custom_effect_tooltip = BAV_121_TT
 			swap_ideas = {
 				remove_idea = BAV_New_Officer_Corps
 				add_idea = BAV_New_Officer_Corps_2
+			}
+			hidden_effect = {
+				load_oob = "BAV_121"
 			}
 	    }
     }
