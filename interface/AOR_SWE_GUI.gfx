@@ -28,6 +28,16 @@ spriteTypes = {
 	spriteType = { name = "GFX_SWE_Union_gui_11" texturefile = "gfx//AOR_gui//SWE//SWE_Union//SWE_11.png" scale = 0.3 }
 	spriteType = { name = "GFX_SWE_Union_gui_12" texturefile = "gfx//AOR_gui//SWE//SWE_Union//SWE_12.png" scale = 0.3 }
 
+
+	## 进度条 ##
+	progressbartype = {
+		name = "GFX_SWE_GUI_progressbar"
+		textureFile1 = "gfx/AOR_gui/SWE/SWE_progess_full.png"
+		textureFile2 = "gfx/AOR_gui/SWE/SWE_progess_null.png"
+		size = { x = 470 y = 43 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
 }
 
 
