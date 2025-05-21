@@ -2794,10 +2794,25 @@ spriteType = { name = "AOR_goals_zhanhouxinqixiang" texturefile = "gfx/interface
   texturefile = "gfx/interface/goals/NAU_Recall_the_command_of_the_army.png"
  }
  spriteType = {
-  name = "GFX_goal_NAU_Open_up_for_industrialization"
-  texturefile = "gfx/interface/goals/NAU_Open_up_for_industrialization.png"
+  name = "GFX_goal_NAU_Attack_Berlin"
+  texturefile = "gfx/interface/goals/NAU_Attack_Berlin.png"
  }
- 
+ spriteType = {
+  name = "GFX_goal_NAU_Attack_HAN"
+  texturefile = "gfx/interface/goals/NAU_Attack_HAN.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Attack_BAV"
+  texturefile = "gfx/interface/goals/NAU_Attack_BAV.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Attack_SAX"
+  texturefile = "gfx/interface/goals/NAU_Attack_SAX.png"
+ }
+ spriteType = {
+  name = "GFX_goal_NAU_Attack_WUR"
+  texturefile = "gfx/interface/goals/NAU_Attack_WUR.png"
+ }
 
 
  ########美国1919——1920一阶段

@@ -8,16 +8,9 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
-	 
- 
 	interwar_antiair = 1
- 
- 
- 
 	tactical_bomber1 = 1
- 
 	CAS1 = 1
- 
 	mobile_warfare = 1
 	trade_interdiction = 1
 	formation_flying = 1
@@ -25,11 +18,15 @@ set_technology = {
 	synth_oil_experiments = 1
 	oil_processing = 1
 	fuel_refining = 1
-	
+	machine_equipment_weapons = 1
+	Old_howitzers = 1
 }
+
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
+		NOT = {
+			has_dlc = "No Step Back"
+		}
 	}
 	set_technology = {
 		gwtank = 1
@@ -40,7 +37,9 @@ if = {
 }
 if = {
 	limit = {
+		
 		has_dlc = "No Step Back"
+		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -67,73 +66,13 @@ if = {
 }
 
 
+country_event = { days = 3 id = NAU.1 }
 
+set_research_slots = 2
+set_convoys = 30
+set_stability = 0.35
+set_set_war_support = 0.7
 
-set_research_slots = 3
-set_convoys = 50
-set_stability = 0.75
-
-1939.1.1 = {
-
-	add_political_power = 1197
-	add_command_power = 100
-	
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-}
 
 set_politics = {
 	ruling_party = Absolutism
@@ -156,6 +95,10 @@ add_ideas = {
 	The_new_nest_of_militarism 
 	Imperial_General_Staff
 	Compact_of_German_Confederation_1
+	
+	closed_economy
+	service_by_requirement
+	war_economy
 }
 
 
@@ -174,19 +117,26 @@ create_country_leader = {
 
 add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 500
-    producer = GER
+    amount = 1732
+    producer = NAU
 }
 
 add_equipment_to_stockpile = {
     type = artillery_equipment
-    amount = 500
-    producer = GER
+    amount = 423
+    producer = NAU
+}
+
+add_equipment_to_stockpile = {
+    type = support_equipment 
+    amount = 298
+    producer = NAU
 }
 
 NAU = {
 country_event = { days = 374 id = NAU.5 }
 }
+
 set_country_flag = AOR_GER_flag_NOT_support_resolution
 
 recruit_character = Erich_Ludendorff

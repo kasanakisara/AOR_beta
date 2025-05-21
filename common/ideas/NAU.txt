@@ -17,9 +17,31 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				CONSCRIPTION_FACTOR = -0.01
-				XP_GAIN_ARMY = 0.2
-				ARMY_ORG_FACTOR = 0.03
+				CONSCRIPTION_FACTOR = -0.1
+				ARMY_ORG_FACTOR = 0.05
+            }
+        } 
+        A_professional_army_with_high_standards_1 = {
+			allowed = {
+                tag = NAU
+            }
+			available = { 
+			}
+
+			cancel ={
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				CONSCRIPTION_FACTOR = -0.1
+				experience_gain_army_factor = 0.2
+				ARMY_ORG_FACTOR = 0.05
+				army_morale_factor = 0.05
             }
         } 
 		Frankfurt_s_economic_system = {

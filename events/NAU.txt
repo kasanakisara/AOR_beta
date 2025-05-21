@@ -1,4 +1,6 @@
 add_namespace = NAU
+add_namespace = NAU_border_conflict
+
 country_event = {
 	id = NAU.1	#对马克西米连的诋毁
 	title = NAU.1.t
@@ -873,3 +875,86 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = NAU_border_conflict.2 法兰克福输掉了边境战争
+	title = NAU_border_conflict.2.t
+	desc = NAU_border_conflict.2.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = NAU_border_conflict.2.a
+		trigger = {
+			original_tag = NAU
+		}
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = -500
+    		producer = NAU
+		}
+	}
+	option = {
+		name = NAU_border_conflict.2.b
+		trigger = {
+			NOT = {original_tag = NAU}
+		}
+		army_experience = 25
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 500
+    		producer = NAU
+		}
+	}
+}
+
+country_event = {
+	id = NAU_border_conflict.3 法兰克福赢得了边境战争
+	title = NAU_border_conflict.3.t
+	desc = NAU_border_conflict.3.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = NAU_border_conflict.3.a
+		trigger = {
+			original_tag = NAU
+		}
+		army_experience = 25
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 500
+    		producer = ROOT
+		}
+	}
+	option = {
+		name = NAU_border_conflict.3.b
+		trigger = {
+			NOT = {original_tag = NAU}
+		}
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = -500
+    		producer = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = NAU_border_conflict.4 法兰克福僵局
+	title = NAU_border_conflict.4.t
+	desc = NAU_border_conflict.4.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = NAU_border_conflict.4.a
+		trigger = {
+			original_tag = NAU
+		}
+		army_experience = 50
+	}
+	option = {
+		name = NAU_border_conflict.4.b
+		trigger = {
+			NOT = {original_tag = NAU}
+		}
+		army_experience = 50
+	}
+}

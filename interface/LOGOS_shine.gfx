@@ -6182,6 +6182,167 @@ spriteType = {
 
 
 ######法兰克福
+
+spriteType = {
+		name = "GFX_goal_NAU_Attack_Berlin_shine"
+		texturefile = "gfx/interface/goals/NAU_Attack_Berlin.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/NAU_Attack_Berlin.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/NAU_Attack_Berlin.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+}
+
+spriteType = {
+		name = "GFX_goal_NAU_Attack_HAN_shine"
+		texturefile = "gfx/interface/goals/NAU_Attack_HAN.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/NAU_Attack_HAN.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/NAU_Attack_HAN.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+}
+
+spriteType = {
+		name = "GFX_goal_NAU_Attack_BAV_shine"
+		texturefile = "gfx/interface/goals/NAU_Attack_BAV.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/NAU_Attack_BAV.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/NAU_Attack_BAV.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+}
+
+spriteType = {
+		name = "GFX_goal_NAU_Attack_SAX_shine"
+		texturefile = "gfx/interface/goals/NAU_Attack_SAX.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/NAU_Attack_SAX.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/NAU_Attack_SAX.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+}
+
+spriteType = {
+		name = "GFX_goal_NAU_Attack_WUR_shine"
+		texturefile = "gfx/interface/goals/NAU_Attack_WUR.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		 animationmaskfile = "gfx/interface/goals/NAU_Attack_WUR.png"
+		 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+		 animationrotation = -90.0  # -90 clockwise 90 counterclockwise(by default)
+		 animationlooping = no   
+		 animationtime = 0.75    
+		 animationdelay = 0   
+		 animationblendmode = "add"      
+		 animationtype = "scrolling"      
+		 animationrotationoffset = { x = 0.0 y = 0.0 }
+		 animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+      animationmaskfile = "gfx/interface/goals/NAU_Attack_WUR.png"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+      animationrotation = 90.0 
+      animationlooping = no   
+      animationtime = 0.75    
+      animationdelay = 0   
+      animationblendmode = "add"       
+      animationtype = "scrolling"      
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.8 } 
+     }
+     legacy_lazy_load = no
+}
+
 spriteType = {
 		name = "GFX_goal_NAU_Recalcitrant_warlords_shine"
 		texturefile = "gfx/interface/goals/NAU_Recalcitrant_warlords.png"
