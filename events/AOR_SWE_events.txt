@@ -26,7 +26,7 @@ country_event = {
             remove_ideas = SWE_Merged_Parliament
             remove_ideas = SWE_Universal_Suffrage
             clr_country_flag = SWE_Folkhemmet_flag
-            country_event = { id = Haakon.1 days = 5 }
+            country_event = { id = SWE_Haakon_Death.1 days = 5 }
             country_event = { id = AOR_news.90 }
             add_ideas = SWE_Regency_Council
         }
@@ -431,135 +431,6 @@ country_event = {
 }
 
 country_event = {
-    id = Tosca.1 #自新大陆
-    title = Tosca.1.t
-    desc = Tosca.1.d
-    is_triggered_only = yes
-    option = {
-        name = Tosca.1.a
-        hidden_effect = {
-            country_event = { id = Tosca.2 days = 5 }
-        }
-
-    }
-}
-
-country_event = {
-    id = Tosca.2 #混乱的间隙
-    title = Tosca.2.t
-    desc = Tosca.2.d
-    is_triggered_only = yes
-    option = {
-        name = Tosca.2.a
-        hidden_effect = {
-            country_event = { id = Tosca.3 days = 10 }
-        }
-
-    }
-}
-
-country_event = {
-    id = Tosca.3 #托斯卡之吻
-    title = Tosca.3.t
-    desc = Tosca.3.d
-    is_triggered_only = yes
-    option = {
-        name = Tosca.3.a
-        hidden_effect = {
-            country_event = { id = Tosca.4 days = 2 }
-            country_event = { id = AOR_news.84 }
-        }
-
-    }
-}
-
-country_event = {
-    id = Tosca.4 #再见，海因里希
-    title = Tosca.4.t
-    desc = Tosca.4.d
-    is_triggered_only = yes
-    option = {
-        name = Tosca.4.a
-        hidden_effect = {
-            country_event = { id = Tosca.5 days = 7 }
-        }
-        add_manpower = -1
-    }
-}
-
-country_event = {
-    id = Tosca.5 #今夜无战事
-    title = Tosca.5.t
-    desc = Tosca.5.d
-    is_triggered_only = yes
-    option = {
-        name = Tosca.5.a
-    }
-}
-
-country_event = {
-    id = Haakon.1 #为联邦梦送葬
-    title = Haakon.1.t
-    desc = Haakon.1.d
-    is_triggered_only = yes
-    option = {
-        name = Haakon.1.a
-        hidden_effect = {
-            remove_ideas = SWE_All_People_are_King
-            remove_ideas = SWE_Beyond_Nationalism
-            remove_ideas = SWE_Beyond_Nation
-            remove_ideas = SWE_Liberte_Spirit
-            country_event = { id = Haakon.2 days = 5 }
-        }
-        custom_effect_tooltip = SWE_Haakon_I_tt
-    }
-}
-
-country_event = {
-    id = Haakon.2 #崩溃的股市
-    title = Haakon.2.t
-    desc = Haakon.2.d
-    is_triggered_only = yes
-    option = {
-        name = Haakon.2.a
-        hidden_effect = {
-            remove_ideas = SWE_Encourage
-            remove_ideas = SWE_Further_Reform_Law
-            remove_ideas = SWE_Open_the_door
-            remove_ideas = SWE_Third_Choice
-            remove_ideas = SWE_Folkhemmet
-            remove_ideas = SWE_Ex_Folkhemmet
-            remove_ideas = SWE_Folkhemmet_debuff
-            remove_ideas = SWE_Soviet_Trade
-            remove_ideas = SWE_Germany_Trade_sweden
-            remove_ideas = SWE_Regulation
-            remove_dynamic_modifier = { modifier = AOR_SWE_Trade_dynamic_modifier }
-            remove_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
-            remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
-            country_event = { id = Haakon.3 days = 5 }
-        }
-        custom_effect_tooltip = SWE_Haakon_II_tt
-    }
-}
-
-country_event = {
-    id = Haakon.3 #混乱序幕
-    title = Haakon.3.t
-    desc = Haakon.3.d
-    is_triggered_only = yes
-    option = {
-        name = Haakon.3.a
-        hidden_effect = {
-            load_focus_tree = AOR_SWE_focus_tree_2
-            set_country_flag = SWE_Emergency_State
-            add_ideas = SWE_Regency_Emergency_Crisis
-            complete_national_focus = AOR_SWE_Panic_and_Terror
-        }
-        custom_effect_tooltip = SWE_Haakon_III_tt
-    }
-}
-
-country_event = {
     id = SWE.19  #北境岐旅 I
     title = SWE.19.t
     desc = SWE.19.d
@@ -924,5 +795,164 @@ country_event = {
         name = SWE_Folkhemmet.7.a
         add_political_power = -250
         clr_country_flag = SWE_Folkhemmet_flag
+    }
+}
+
+country_event = {
+    id = Tosca.1 #自新大陆
+    title = Tosca.1.t
+    desc = Tosca.1.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.1.a
+        hidden_effect = {
+            country_event = { id = Tosca.2 days = 5 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.2 #混乱的间隙
+    title = Tosca.2.t
+    desc = Tosca.2.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.2.a
+        hidden_effect = {
+            country_event = { id = Tosca.3 days = 10 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.3 #托斯卡之吻
+    title = Tosca.3.t
+    desc = Tosca.3.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.3.a
+        hidden_effect = {
+            country_event = { id = Tosca.4 days = 2 }
+            country_event = { id = AOR_news.84 }
+        }
+
+    }
+}
+
+country_event = {
+    id = Tosca.4 #再见，海因里希
+    title = Tosca.4.t
+    desc = Tosca.4.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.4.a
+        hidden_effect = {
+            country_event = { id = Tosca.5 days = 7 }
+        }
+        add_manpower = -1
+    }
+}
+
+country_event = {
+    id = Tosca.5 #今夜无战事
+    title = Tosca.5.t
+    desc = Tosca.5.d
+    is_triggered_only = yes
+    option = {
+        name = Tosca.5.a
+    }
+}
+
+country_event = {
+    id = SWE_Haakon_Death.1 #为联邦梦送葬
+    title = SWE_Haakon_Death.1.t
+    desc = SWE_Haakon_Death.1.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Haakon_Death.1.a
+        hidden_effect = {
+            remove_ideas = SWE_All_People_are_King
+            remove_ideas = SWE_Beyond_Nationalism
+            remove_ideas = SWE_Beyond_Nation
+            remove_ideas = SWE_Liberte_Spirit
+            country_event = { id = SWE_Haakon_Death.2 days = 5 }
+        }
+        custom_effect_tooltip = SWE_Haakon_I_tt
+    }
+}
+
+country_event = {
+    id = SWE_Haakon_Death.2 #崩溃的股市
+    title = SWE_Haakon_Death.2.t
+    desc = SWE_Haakon_Death.2.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Haakon_Death.2.a
+        hidden_effect = {
+            remove_ideas = SWE_Encourage
+            remove_ideas = SWE_Further_Reform_Law
+            remove_ideas = SWE_Open_the_door
+            remove_ideas = SWE_Third_Choice
+            remove_ideas = SWE_Folkhemmet
+            remove_ideas = SWE_Ex_Folkhemmet
+            remove_ideas = SWE_Folkhemmet_debuff
+            remove_ideas = SWE_Soviet_Trade
+            remove_ideas = SWE_Germany_Trade_sweden
+            remove_ideas = SWE_Regulation
+            remove_dynamic_modifier = { modifier = AOR_SWE_Trade_dynamic_modifier }
+            remove_dynamic_modifier = { modifier = AOR_SWE_Union_dynamic_modifier }
+            remove_dynamic_modifier = { modifier = AOR_SWE_Folkhemmet_dynamic_modifier }
+            country_event = { id = SWE_Haakon_Death.3 days = 5 }
+        }
+        custom_effect_tooltip = SWE_Haakon_II_tt
+    }
+}
+
+country_event = {
+    id = SWE_Haakon_Death.3 #混乱序幕
+    title = SWE_Haakon_Death.3.t
+    desc = SWE_Haakon_Death.3.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Haakon_Death.3.a
+        hidden_effect = {
+            load_focus_tree = AOR_SWE_focus_tree_2
+            set_country_flag = SWE_Emergency_State
+            add_ideas = SWE_Regency_Emergency_Crisis
+            complete_national_focus = AOR_SWE_Panic_and_Terror
+            RUS = {
+                country_event = { id = SWE_Haakon_Death.4 days = 7 }
+            }
+            country_event = { id = SWE_Haakon_Death.5 days = 7 }
+        }
+        custom_effect_tooltip = SWE_Haakon_III_tt
+    }
+}
+
+country_event = {
+    id = SWE_Haakon_Death.4 #苏俄入侵芬马克-RUS侧
+    title = SWE_Haakon_Death.4.t
+    desc = SWE_Haakon_Death.4.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Haakon_Death.4.a
+        transfer_state = 967
+        hidden_effect = {
+            news_event = { id = AOR_news.241 }
+        }
+        custom_effect_tooltip = SWE_Rus_Fenmark_tt
+    }
+}
+
+country_event = {
+    id = SWE_Haakon_Death.5 #苏俄入侵芬马克-SWE侧
+    title = SWE_Haakon_Death.5.t
+    desc = SWE_Haakon_Death.5.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Haakon_Death.5.a
+        custom_effect_tooltip = SWE_swe_Fenmark_tt
     }
 }

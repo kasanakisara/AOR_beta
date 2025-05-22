@@ -146,9 +146,9 @@ Hackers_debug = {
         }
         complete_effect = {
             country_event = { id = SWE.1 }
-            country_event = { id = Haakon.1 }
-            country_event = { id = Haakon.2 }
-            country_event = { id = Haakon.3 }
+            country_event = { id = SWE_Haakon_Death.1 }
+            country_event = { id = SWE_Haakon_Death.2 }
+            country_event = { id = SWE_Haakon_Death.3 }
         }
     }
 

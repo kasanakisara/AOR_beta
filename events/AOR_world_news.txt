@@ -3426,3 +3426,16 @@ news_event = {#第二次世界大战扩大化（二战）
 		name = AOR_news.240.a
 	}
 }
+
+news_event = {#苏联入侵芬马克
+	id = AOR_news.241
+	title = AOR_news.241.t
+	desc = AOR_news.241.d
+	picture = GFX_AOR_news.241_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.241.a
+	}
+}

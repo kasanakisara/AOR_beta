@@ -64,3 +64,4 @@ set_variable = { SWE_Norweign_Independence_stability_factor = -0.1 }
 set_variable = { SWE_Norweign_Independence_stability_power_cost = 0.1 }
 
 country_event = { id = Tosca.1 days = 5 }
+country_event = { id = SWE.1 days = 1262 }
