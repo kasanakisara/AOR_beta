@@ -32,9 +32,9 @@ spriteTypes = {
 	## 进度条 ##
 	progressbartype = {
 		name = "GFX_SWE_GUI_progressbar"
-		textureFile1 = "gfx/AOR_gui/SWE/SWE_progess_full.png"
-		textureFile2 = "gfx/AOR_gui/SWE/SWE_progess_null.png"
-		size = { x = 470 y = 43 }
+		textureFile1 = "gfx/AOR_gui/SWE/SWE_progress_full.png"
+		textureFile2 = "gfx/AOR_gui/SWE/SWE_progress_null.png"
+		size = { x = 43 y = 470 }
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = no
 	}

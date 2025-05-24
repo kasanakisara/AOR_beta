@@ -38,3 +38,12 @@ SWE_Folkhemmet_decision_categories = {
 	}
 	visible_when_empty = yes
 }
+
+SWE_Regency_Crisis_decision_categories = {
+	priority = 110
+	scripted_gui = AOR_SWE_Regency_Crisis_decision_gui
+	visible = {
+		has_country_flag = SWE_Emergency_State
+	}
+	visible_when_empty = yes
+}

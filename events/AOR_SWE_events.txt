@@ -1,7 +1,7 @@
 add_namespace = SWE
 add_namespace = Tosca
 add_namespace = NOR_Axis
-add_namespace = Haakon
+add_namespace = SWE_Haakon_Death
 add_namespace = SWE_Folkhemmet
 
 country_event = {
@@ -922,6 +922,7 @@ country_event = {
             set_country_flag = SWE_Emergency_State
             add_ideas = SWE_Regency_Emergency_Crisis
             complete_national_focus = AOR_SWE_Panic_and_Terror
+            set_variable = { SWE_Regency_Economic_value = 20 }
             RUS = {
                 country_event = { id = SWE_Haakon_Death.4 days = 7 }
             }
