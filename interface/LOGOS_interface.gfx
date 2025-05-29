@@ -3,6 +3,27 @@ spriteTypes = {
 
 	####本文档是逻各斯的interface!别整合了，，，怪累挺，以后我interface就更新在这里了，就不会不小心覆盖别人的了(((#####
 	
+	spriteType = { 
+		name = "GFX_GER_Background_2_GER"
+		texturefile = "gfx/event_pictures/AOR_GER_Background_2_GER.png"
+	}
+
+	spriteType = { 
+		name = "GFX_AOR_GER_Background_2_BAV"
+		texturefile = "gfx/event_pictures/AOR_GER_Background_2_BAV.png"
+	}
+
+	spriteType = { 
+		name = "GFX_GER_Background_3_GER"
+		texturefile = "gfx/event_pictures/AOR_GER_Background_3_GER.png"
+	}
+
+	spriteType = { 
+		name = "GFX_GER_GUI_vote_strip"
+		texturefile = "gfx/event_pictures/GER_GUI_vote_strip.png"
+		noOfFrames = 3
+	}
+
 	#巴苏决议
 	spriteType = { 
 		name = "GFX_BAV_BEBEL_TRUST_BEBEL"
@@ -2335,6 +2356,86 @@ spriteTypes = {
 		name = "GFX_AOR_GER_timeaxis.3_pic"
 		texturefile = "gfx/event_pictures/AOR_GER_timeaxis.3_pic.png"
 	}
+
+	#柏林国策
+spriteType = {
+  name = "GFX_AOR_GER_Politics_14"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_14.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_15"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_15.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_16"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_16.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_18"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_18.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_17"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_17.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_20"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_20.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_201"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_201.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_202"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_202.png"
+ }
+
+spriteType = {
+  name = "GFX_AOR_GER_Politics_30"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_30.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_25"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_25.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_21"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_21.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_37"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_37.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_22"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_22.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_23"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_23.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_24"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_24.png"
+ }
+spriteType = {
+  name = "GFX_AOR_GER_Politics_26"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_26.png"
+ }
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_27"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_27.png"
+ }
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_31"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_31.png"
+ }
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_33"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_33.png"
+ }
+
 	#巴伐利亚第一阶段国策
 spriteType = {
   name = "GFX_goal_BAV_civil_War_gone"

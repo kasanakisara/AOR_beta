@@ -26,29 +26,6 @@ defined_text = { #物价指数
 	}
 }
 
-defined_text = { #可供选择的提案
-	name = AOR_GER_Get_Proposal_under_discussion_name
-	text = { #中央政府出资遏制邦联通货膨胀问题
-		trigger = { has_global_flag = AOR_GER_flag_DNC_inflation }
-		localization_key = AOR_GER_Get_Proposal_under_discussion_name_1
-	}
-	text = {#取消德国马克区贸易税率问题
-		trigger = { has_country_flag = AOR_GER_flag_DNC_tax_rate }
-		localization_key = AOR_GER_Get_Proposal_under_discussion_name_2
-	}
-	text = {#商讨合成氨技术军转民问题
-		trigger = { has_country_flag = AOR_GER_flag_DNC_synthetic_ammonia }
-		localization_key = AOR_GER_Get_Proposal_under_discussion_name_3
-	}
-	text = {#商讨整合全国铁路问题
-		trigger = { has_country_flag = AOR_GER_flag_DNC_integration_railways }
-		localization_key = AOR_GER_Get_Proposal_under_discussion_name_4
-	}
-	text = {#讨论德意志帝国议会问题
-		trigger = { has_country_flag = AOR_GER_flag_DNC_Imperial_Parliament }
-		localization_key = AOR_GER_Get_Proposal_under_discussion_name_5
-	}
-}
 
 defined_text = { #切换同意反对
     name = GETAOR_GER_flag_resolution

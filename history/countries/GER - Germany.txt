@@ -67,6 +67,23 @@ recruit_character = GER_Werner_von_fridge
 
 start_national_focus = AOR_GER_Politics_21
 
+set_variable = { GER_Comm_current_vote = 1 } 
+add_to_variable = { global.GER_variable_abs = 1} 
+
+add_to_array = { 
+	array = global.GERMAN_COMM_COUNTRY 
+	value = GER
+	}
+
+add_to_array = { 
+	array = global.GERMAN_COMM_COUNTRY 
+	value = RHI
+	}	
+
+set_country_flag = GER_Comm_pre
+set_country_flag = GER_TAG_ABS
+
+
 GER = {
 country_event = { days = 1249 id = event_GER.1 }
 }

@@ -916,7 +916,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = BAV.70.a
+		hidden_effect = {
 		kill_country_leader = YES
+		}
 		promote_character = {
 			character = BAV_Karl_Liebknecht
 			ideology = revolutionism
@@ -932,7 +934,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = BAV.71.a
+		hidden_effect = {
 		kill_country_leader = YES
+		}
 		promote_character = {
 			character = BAV_Luksemburg
 			ideology = luxemburgism

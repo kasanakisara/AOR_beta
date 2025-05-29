@@ -37,6 +37,10 @@
  decision_cost_trust_45_blocked:0 " £AOR_trust §R45§!"
  decision_cost_trust_45_tooltip:0 "这将花费£AOR_trust §Y45§! 信任点数。"
 
+ decision_cost_trust_50:0 " £AOR_trust §Y50§!"
+ decision_cost_trust_50_blocked:0 " £AOR_trust §R50§!"
+ decision_cost_trust_50_tooltip:0 "这将花费£AOR_trust §Y50§! 信任点数。"
+
  decision_cost_stab_5:0 " £AOR_stability §Y5§!"
  decision_cost_stab_5_blocked:0 " £AOR_stability §R5§!"
  decision_cost_stab_5_tooltip:0 " \n这将花费£AOR_stability §Y5§! 稳定度。"
@@ -46,6 +50,8 @@
  decision_cost_ws_5_tooltip:0 " \n这将花费£AOR_ws §Y5§! 战争支持度。"
  
  bav_pp_trust_change:0 "以信任换取筹码"
+ bav_pp_trust_change_2:0 "以信任换取大量筹码"
+ bav_pp_trust_change_2_desc:0"我们已经通过各方面的努力重新取得了党内同志的部分信任。有时，我们需要使用这些信任去换取政治筹码，以推动政策的落实。"
  bav_pp_trust_change_factory:0"推动国家建设"
  bav_pp_trust_change_desc:0"我们已经通过各方面的努力重新取得了党内同志的部分信任。有时，我们需要使用这些信任去换取政治筹码，以推动政策的落实。"
  bav_pp_trust_change_factory_desc:0"建设根据地是当前苏维埃的首要任务，为此，我们必须全力以赴。"

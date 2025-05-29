@@ -74,11 +74,14 @@ if = {
 
 
 
-
+set_country_flag = GER_Comm_pre
+set_country_flag = GER_TAG_ABS
 set_research_slots = 3
 set_convoys = 50
 set_stability = 0.75
 
+set_variable = { GER_Comm_current_vote = 1 } 
+add_to_variable = { global.GER_variable_abs = 1} 
 
 set_politics = {
 	ruling_party = FRE_democratic

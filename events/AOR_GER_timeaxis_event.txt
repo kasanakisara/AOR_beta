@@ -381,16 +381,3 @@ country_event = {
 		add_ideas = AOR_GER_idea_Berlin_NOT_support
 	}
 }
-
-#倍倍尔来了！
-country_event = {
-	id = AOR_GER_timeaxis.10
-	title = AOR_GER_timeaxis.10.t
-	desc = AOR_GER_timeaxis.10.desc
-	picture = GFX_AOR_GER_timeaxis.3_pic
-	is_triggered_only = yes
-	option = {
-		name = AOR_GER_timeaxis.10.a
-	}
-
-}

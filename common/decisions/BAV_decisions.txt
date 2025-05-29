@@ -62,6 +62,45 @@ BAV_Bebel_Trust = {
 		}
 	}
 
+	bav_pp_trust_change_2 = { #信任兑换PP点-大量
+        icon = GFX_decision_bav_trust_1
+		
+		priority = 90
+		available = {                           
+			 original_tag = BAV
+		}		
+
+		visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 10
+				has_political_power < 50
+			}
+		}
+		ai_hint_pp_cost = 200
+
+		fire_only_once = no
+		days_remove = 0	
+		days_re_enable = 0
+
+		custom_cost_trigger = {
+			check_variable = { 
+				Var = Bebel_Trust
+				Value > 50
+		}
+	}
+		custom_cost_text = decision_cost_trust_50
+
+		complete_effect = {  
+			add_political_power = 40
+			add_to_variable = {
+				Bebel_Trust = -50
+			}
+		}
+	}
+
 	bav_st_trust_change = { #稳定兑换信任点
         icon = GFX_decision_category_generic_communism
 		

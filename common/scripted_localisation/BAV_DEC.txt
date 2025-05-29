@@ -31,6 +31,23 @@ defined_text = {
 }
 
 defined_text = {
+	name = decision_cost_trust_50_tooltip
+	text = {
+		trigger = {
+			check_variable = { 
+				Var = Bebel_Trust
+				Value > 50
+			}
+		}
+		localization_key = decision_cost_trust_50
+	}
+	text = {
+		localization_key = decision_cost_trust_50_blocked
+	}
+}
+
+
+defined_text = {
 	name = decision_cost_stab_5_tooltip
 	text = {
 		trigger = {
@@ -56,3 +73,56 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GER_C_Vote
+	text = {
+		trigger = {
+			check_variable = { GER_Comm_current_vote = 2 }
+		}
+		localization_key = GER_Comm_current_vote_loc_2
+	}
+
+	text = {
+		trigger = {
+			check_variable = { GER_Comm_current_vote = 1 }
+		}
+		
+		localization_key = GER_Comm_current_vote_loc_1
+	}
+
+	text = {
+		trigger = {
+			check_variable = { GER_Comm_current_vote = 3 }
+			}
+		
+		localization_key = GER_Comm_current_vote_loc_3
+	}	
+
+}
+
+
+defined_text = {
+	name = GER_P_C_tt_desc
+	text = {
+		trigger = {
+			has_global_flag = GER_q.1
+		}
+		localization_key = GER_P_C_desc_t_1
+	}
+	text = {
+		localization_key = GER_P_C_desc_t_0
+	}
+}
+
+defined_text = {
+	name = GER_P_C_tt_desc_tt
+	text = {
+		trigger = {
+			has_global_flag = GER_q.1
+		}
+		localization_key = GER_P_C_tt_desc_tt_1
+	}
+	text = {
+		localization_key = GER_P_C_tt_desc_tt_0
+	}
+}

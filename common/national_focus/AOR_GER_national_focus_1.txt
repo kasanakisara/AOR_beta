@@ -265,7 +265,7 @@ focus_tree = {
 	#民主线共用国策
 	focus = { #德意志宪法草案
 		id = AOR_GER_Politics_14
-		icon = GFX_Eric_Draft_German_Constitution
+		icon = GFX_AOR_GER_Politics_14
 		cost = 5.00
 		available = {
 			OR = {
@@ -301,7 +301,7 @@ focus_tree = {
 	}
 	focus = { #妇女选举权
 		id = AOR_GER_Politics_15
-		icon = GFX_Eric_Women_right_to_vote
+		icon = GFX_AOR_GER_Politics_15
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_14
@@ -323,7 +323,7 @@ focus_tree = {
 	}
 	focus = { #国家力量的凝聚
 		id = AOR_GER_Politics_16
-		icon = GFX_AOR_Eric_new_036
+		icon = GFX_AOR_GER_Politics_16
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_15
@@ -341,10 +341,10 @@ focus_tree = {
 	}
 	focus = { #平民受教育的权力
 		id = AOR_GER_Politics_17
-		icon = GFX_focus_research
+		icon = GFX_AOR_GER_Politics_17
 		cost = 5.00
 		prerequisite = {
-			focus = AOR_GER_Politics_14
+			focus = AOR_GER_Politics_14 
 		}
 		x = 2
 		y = 1
@@ -361,6 +361,8 @@ focus_tree = {
 			add_to_variable = { AOR_GER_gold_quantity = -100 }
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			add_war_support = 0.04
+			add_research_slot = 1
+			add_political_power = 25
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			add_ideas = AOR_GER_idea_civilians_right_to_education
 		}
@@ -368,7 +370,7 @@ focus_tree = {
 	}
 	focus = { #继承社会保障体系
 		id = AOR_GER_Politics_18
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_AOR_GER_Politics_18
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_17
@@ -395,29 +397,29 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { #新兴大学哲学体系
-		id = AOR_GER_Politics_19
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 5.00
-		prerequisite = {
-			focus = AOR_GER_Politics_17
-		}
-		x = 1
-		y = 2
-		relative_position_id = AOR_GER_Politics_17
-		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = AOR_GER_Newline_tt
-			add_research_slot = 1
-			custom_effect_tooltip = AOR_GER_Newline_tt
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = krupp
-		}
-
-	}
+#	focus = { #新兴大学哲学体系
+#		id = AOR_GER_Politics_19
+#		icon = GFX_goal_tfv_generic_tech_sharing
+#		cost = 5.00
+#		prerequisite = {
+#			focus = AOR_GER_Politics_17
+#		}
+#		x = 1
+#		y = 2
+#		relative_position_id = AOR_GER_Politics_17
+#		completion_reward = {
+#			add_political_power = 25
+#			custom_effect_tooltip = AOR_GER_Newline_tt
+#			add_research_slot = 1
+#			custom_effect_tooltip = AOR_GER_Newline_tt
+#			custom_effect_tooltip = available_designer
+#			show_ideas_tooltip = krupp
+#		}
+#
+#	}
 	focus = { #全德意志人的目标
 		id = AOR_GER_Politics_20
-		icon = GFX_Eric_people_goal
+		icon = GFX_AOR_GER_Politics_20
 		cost = 10.00
 		prerequisite = {
 			focus = AOR_GER_Politics_16
@@ -462,7 +464,7 @@ focus_tree = {
 	}
 	focus = { #搁置理论纷争
 		id = AOR_GER_Politics_201
-		icon = GFX_Eric_Shelve_theoretical_conflicts
+		icon = GFX_AOR_GER_Politics_201
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_14
@@ -482,7 +484,7 @@ focus_tree = {
 	}
 	focus = { #专注和平发展
 		id = AOR_GER_Politics_202
-		icon = GFX_Eric_peaceful_development
+		icon = GFX_AOR_GER_Politics_202
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_201
@@ -498,7 +500,7 @@ focus_tree = {
 	###中央集权线###
 	focus = { #把权力集中在柏林
 		id = AOR_GER_Politics_21
-		icon = GFX_Eric_Concentrate_power
+		icon = GFX_AOR_GER_Politics_21
 		cost = 10.00
 		mutually_exclusive = {
 			focus = AOR_GER_Politics_1
@@ -535,7 +537,7 @@ focus_tree = {
 	}
 	focus = { #德意志国家媒体委员会
 		id = AOR_GER_Politics_22
-		icon = GFX_Eric_National_Media_Commission
+		icon = GFX_AOR_GER_Politics_22
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_21
@@ -554,7 +556,7 @@ focus_tree = {
 	}
 	focus = { #整合联邦出版社
 		id = AOR_GER_Politics_23
-		icon = GFX_focus_generic_secret_service_agency
+		icon = GFX_AOR_GER_Politics_23
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_22
@@ -573,7 +575,7 @@ focus_tree = {
 	}
 	focus = { #雄鹰的旗帜
 		id = AOR_GER_Politics_24
-		icon = GFX_Eric_germany_arm_the_army
+		icon = GFX_AOR_GER_Politics_24
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_23
@@ -595,7 +597,7 @@ focus_tree = {
 	}
 	focus = { #调和自由民主间的矛盾
 		id = AOR_GER_Politics_25
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_AOR_GER_Politics_25
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_24
@@ -611,7 +613,7 @@ focus_tree = {
 	}
 	focus = { #确保基层军官忠诚
 		id = AOR_GER_Politics_26
-		icon = GFX_AOR_Eric_new_042
+		icon = GFX_AOR_GER_Politics_26
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_21
@@ -628,7 +630,7 @@ focus_tree = {
 	}
 	focus = { #国防委员会
 		id = AOR_GER_Politics_27
-		icon = GFX_Eric_national_defense_committee
+		icon = GFX_AOR_GER_Politics_27
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_26
@@ -682,7 +684,7 @@ focus_tree = {
 	}
 	focus = { #完成政府集权
 		id = AOR_GER_Politics_30
-		icon = GFX_focus_generic_annex_country_2
+		icon = GFX_AOR_GER_Politics_30
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_36
@@ -702,7 +704,7 @@ focus_tree = {
 	}
 	focus = { #安抚菲利普·谢德曼
 		id = AOR_GER_Politics_31
-		icon = GFX_Eric_Appease
+		icon = GFX_AOR_GER_Politics_31
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_21
@@ -768,7 +770,7 @@ focus_tree = {
 	}
 	focus = { #踢开谢德曼
 		id = AOR_GER_Politics_33
-		icon = GFX_AOR_Eric_new_004
+		icon = GFX_AOR_GER_Politics_33
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_21
@@ -910,7 +912,7 @@ focus_tree = {
 	}
 	focus = { #统一思潮
 		id = AOR_GER_Politics_37
-		icon = GFX_focus_SWI_neutrality_on_the_move
+		icon = GFX_AOR_GER_Politics_37
 		cost = 10.00
 		prerequisite = {
 			focus = AOR_GER_Politics_25

@@ -4,7 +4,7 @@ AOR_GER_finance_category = {
 	icon = GFX_decision_category_generic_economy
 	allowed = {
 		tag = GER
-		always = no
+		always = yes
 	}
 	visible = {
 		tag = GER
@@ -48,42 +48,7 @@ Inherit_the_claim_of_the_territory_on_the_German_Empire_category = { #继承德�
 		}
 	}
 }
-AOR_Deutschland_National_Committee_category = {
-#德意志国家委员会
-	priority = 100
-	icon = GFX_AOR_Deutschland_National_Committee
-	scripted_gui = AOR_Deutschland_National_Committee_decision_ui
-	allowed = {
-	OR = {
-			tag = GER		
-			tag = NAU #法兰克福
-			tag = HAN #威斯特伐利亚
-			tag = BAV
-			tag = SIL #西里西亚
-			tag = KSH #波美拉尼亚			
-			tag = WUR #符腾堡
-			tag = SAX #萨克森
-			tag = PRE #普鲁士
-			tag = SHL #石勒苏益格-荷尔施泰因
-			tag = MEK #梅克伦堡
-		}
-	}
-	visible = {
-		OR = {
-			tag = GER			
-			tag = NAU #法兰克福
-			tag = HAN #威斯特伐利亚
-			BAV = { has_country_flag = AOR_GER_BAV_flag_attend_the_meeting}
-			tag = SIL #西里西亚
-			tag = KSH #波美拉尼亚			
-			tag = WUR #符腾堡
-			tag = SAX #萨克森
-			tag = PRE #普鲁士
-			tag = SHL #石勒苏益格-荷尔施泰因
-			tag = MEK #梅克伦堡
-		}
-	}
-}
+
 AOR_Great_Northern_Strategic_Plan_category = {
 #大北方战略计划
 	priority = 80
