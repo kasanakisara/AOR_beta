@@ -27,7 +27,7 @@ country_event = {
             remove_ideas = SWE_Universal_Suffrage
             clr_country_flag = SWE_Folkhemmet_flag
             country_event = { id = SWE_Haakon_Death.1 days = 5 }
-            country_event = { id = AOR_news.90 }
+            news_event = { id = AOR_news.90 }
             add_ideas = SWE_Regency_Council
         }
         custom_effect_tooltip = SWE_Haakon_Death_tt
@@ -923,6 +923,8 @@ country_event = {
             add_ideas = SWE_Regency_Emergency_Crisis
             complete_national_focus = AOR_SWE_Panic_and_Terror
             set_variable = { SWE_Regency_Economic_value = 20 }
+            set_variable = { SWE_Regency_Order_value = 20 }
+            set_variable = { SWE_Regency_Political_value = 20 }
             RUS = {
                 country_event = { id = SWE_Haakon_Death.4 days = 7 }
             }

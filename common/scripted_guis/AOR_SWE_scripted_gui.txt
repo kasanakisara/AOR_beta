@@ -66,6 +66,14 @@ scripted_gui = {
 			AOR_Regency_Economic_progress_bar = {
 				frame = var:SWE_Regency_Economic_value
 			}
+
+			AOR_Regency_Order_progress_bar = {
+				frame = var:SWE_Regency_Order_value
+			}
+
+			AOR_Regency_Political_progress_bar = {
+				frame = var:SWE_Regency_Political_value
+			}
 		}
 	}
 	

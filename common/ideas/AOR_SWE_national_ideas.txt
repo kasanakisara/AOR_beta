@@ -526,5 +526,18 @@ ideas = {
 				Marxism_drift = 0.1
 			}
 		}
+
+		SWE_Regency_Military_Rule = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.1
+				industrial_capacity_factory = -0.1
+				custom_modifier_tooltip = SWE_Regency_Military_Rule_tt
+			}
+		}
 	}
 }

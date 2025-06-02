@@ -7,7 +7,19 @@ guiTypes = {
 		iconType = {
 			name = "AOR_Regency_Economic_progress_bar"
 			spriteType = "GFX_SWE_GUI_progressbar"
-			position = { x=130 y=5 }
+			position = { x=155 y=5 }
+		}
+
+		iconType = {
+			name = "AOR_Regency_Order_progress_bar"
+			spriteType = "GFX_SWE_GUI_progressbar"
+			position = { x=255 y=5 }
+		}
+
+		iconType = {
+			name = "AOR_Regency_Political_progress_bar"
+			spriteType = "GFX_SWE_GUI_progressbar"
+			position = { x=355 y=5 }
 		}
 		
 	}

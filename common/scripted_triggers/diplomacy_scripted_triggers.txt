@@ -1538,3 +1538,15 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
         }
     }
 }
+
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			tag = SWE
+		}
+		custom_trigger_tooltip = {
+            tooltip = AOR_Sweden_Union_cannot_break
+            always = no
+        }
+	}
+}

@@ -34,6 +34,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 1
+		completion_reward = {
+			add_political_power = -50
+			add_to_variable = { SWE_Regency_Order_value = 5 }
+			add_ideas = SWE_Regency_Military_Rule
+		}
 
 	}
 	focus = {
@@ -50,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = AOR_SWE_Hold_a_political_conference
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		prerequisite = {
 			focus = AOR_SWE_Authorize_military_rule
 			focus = AOR_SWE_Request_League_of_Nations_intervention
