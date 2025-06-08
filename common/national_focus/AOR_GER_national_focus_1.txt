@@ -646,7 +646,7 @@ focus_tree = {
 	}
 	focus = { #削减自治区权力
 		id = AOR_GER_Politics_28
-		icon = GFX_Eric_Reduce_autonomous_regions_powers
+		icon = GFX_AOR_GER_Politics_28
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_26
@@ -664,7 +664,7 @@ focus_tree = {
 	}
 	focus = { #“大北方”战略计划
 		id = AOR_GER_Politics_29
-		icon = GFX_Eric_Great_Northern_Strategic_Plan
+		icon = GFX_AOR_GER_Politics_29
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_27
@@ -739,7 +739,7 @@ focus_tree = {
 	}
 	focus = { #支持基层自由民主
 		id = AOR_GER_Politics_32
-		icon = GFX_Eric_deep_democratic_republic
+		icon = GFX_AOR_GER_Politics_32
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_31
@@ -806,7 +806,7 @@ focus_tree = {
 	}
 	focus = { #撤销西里西亚自治区
 		id = AOR_GER_Politics_34
-		icon = GFX_Eric_Revocate_Silesia
+		icon = GFX_AOR_GER_Politics_34
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_33
@@ -830,7 +830,7 @@ focus_tree = {
 	}
 	focus = { #联通奥德河贸易网
 		id = AOR_GER_Politics_35
-		icon = GFX_Eric_Connect_Ode_Trade_Network
+		icon = GFX_AOR_GER_Politics_35
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_34
@@ -852,7 +852,7 @@ focus_tree = {
 	}
 	focus = { #要求自治区述职
 		id = AOR_GER_Politics_36
-		icon = GFX_focus_generic_national_security
+		icon = GFX_AOR_GER_Politics_36
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_GER_Politics_28

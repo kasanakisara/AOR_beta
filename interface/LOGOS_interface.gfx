@@ -21,43 +21,43 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_GER_GUI_vote_strip"
 		texturefile = "gfx/interface/NAU/GER_GUI_vote_strip.png"
-		noOfFrames = 2
+		noOfFrames = 3
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_1"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_1.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_2"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_2.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_3"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_3.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_4"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_4.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_5"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_5.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	spriteType = { 
 		name = "GFX_NAU_FORCES_BUTTON_6"
 		texturefile = "gfx/interface/NAU/NAU_FORCES_BUTTON_6.png"
-		noOfFrames = 2
+		#noOfFrames = 2
 	}
 
 	#巴苏决议
@@ -2471,6 +2471,37 @@ spriteType = {
   name = "GFX_AOR_GER_Politics_33"
   texturefile = "gfx/interface/goals/AOR_GER_Politics_33.png"
  }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_29"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_29.png"
+ }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_35"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_35.png"
+ }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_36"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_36.png"
+ }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_28"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_28.png"
+ }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_34"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_34.png"
+ }
+
+ spriteType = {
+  name = "GFX_AOR_GER_Politics_32"
+  texturefile = "gfx/interface/goals/AOR_GER_Politics_32.png"
+ }
+
 
 	#巴伐利亚第一阶段国策
 spriteType = {
