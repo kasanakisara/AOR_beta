@@ -623,9 +623,17 @@ focus_tree={
 		hidden_effect = {
 		52 = {add_extra_state_shared_building_slots = 1 }
 		-54 = {add_extra_state_shared_building_slots = 1 }
-		modify_timed_idea = {
-		idea = BAV_Economic_restructuring
-		days = 180
+		if = {
+			limit = {
+				has_idea = BAV_Economic_restructuring
+			}
+			modify_timed_idea = {
+				idea = BAV_Economic_restructuring
+				days = 180
+			}
+		}
+		else = {
+			 add_timed_idea = { idea = BAV_Economic_restructuring days = 180 }
 		}
 			}
 		}
@@ -849,10 +857,18 @@ focus_tree={
 		completion_reward={
 		custom_effect_tooltip = BAV.focus.4.tt
 		hidden_effect = {
-		modify_timed_idea = {
-		idea = BAV_Economic_restructuring
-		days = 365
+		if = {
+			limit = {
+				has_idea = BAV_Economic_restructuring
+			}
+			modify_timed_idea = {
+				idea = BAV_Economic_restructuring
+				days = 365
+			}
 		}
+		else = {
+			 add_timed_idea = { idea = BAV_Economic_restructuring days = 365 }
+			}
 		}
 		}
 	}

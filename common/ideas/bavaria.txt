@@ -740,7 +740,7 @@ ideas = {
 			picture = GFX_idea_BAV_Economic_restructuring
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.35
 			}
 		}
 

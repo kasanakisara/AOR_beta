@@ -37,6 +37,7 @@ focus_tree = {
 			add_political_power = -50
 			add_stability = 0.05
 			custom_effect_tooltip = NAU.1.tt
+			set_country_flag = NAU_against_local_forces
 		}
 
 	}

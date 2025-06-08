@@ -1,2 +1,16 @@
 ﻿l_simp_chinese:
  NAU.1.tt:0"\n有关于此的系列决议 §Y同室操戈§! 将被§Y启用§!。"
+ NAU_local_forces:0"同室操戈"
+
+
+ NAU_FOCRES_A_2:0"§R德国社民党（斯巴达克斯）§!\n\n领导人：§Y卡尔·拉狄克§!\n\n政治影响力：§Y低§!\n武装规模：§Y低§!\n\n受到资助：\n  -§Y[BAV.GetNameWithFlag]§!\n  -§Y[SHL.GetNameWithFlag]§!\n\n当前政策：§Y残酷镇压§!"
+
+ NAU_FOCRES_A_1:0"§R德国社民党（右派）§!\n\n领导人：§Y爱德华·伯恩施坦§!\n\n政治影响力：§Y高§!\n武装规模：§Y极低§!\n\n受到资助：\n  -§Y[GER.GetNameWithFlag]§!\n  -§Y[SAX.GetNameWithFlag]§!\n\n当前政策：§Y置之不理§! "
+
+ NAU_FOCRES_A_3:0"§R帝国旧军部（极端派）§!\n\n领导人：§Y埃里希·鲁登道夫§!\n\n政治影响力：§Y低§!\n武装规模：§Y高§!\n\n受到资助：\n  -无\n\n当前政策：§Y接受吸纳§!"
+
+ NAU_FOCRES_A_4:0"§R帝国旧军部（温和派）§!\n\n领导人：§Y马克斯·冯·巴登§!\n\n政治影响力：§Y极高§!\n武装规模：§Y极高§!\n\n受到资助：\n  -无\n\n当前政策：§Y个人独裁统治§!"
+
+ NAU_FOCRES_A_5:0"§R民族意识士兵协会§!\n\n领导人：§Y格雷戈尔·斯特拉瑟§!\n\n政治影响力：§Y中§!\n武装规模：§Y中§!\n\n受到资助：\n  -§Y[HAN.GetNameWithFlag]§!\n  -§Y[PRE.GetNameWithFlag]§!\n\n当前政策：§Y接受吸纳§!§!"
+
+ NAU_FOCRES_A_6:0"§R德意志工人党§!\n\n领导人：§Y安东·德雷克斯勒§!\n\n政治影响力：§Y极低§!\n武装规模：§Y低§!\n\n受到资助：\n  -§Y[HAN.GetNameWithFlag]§!\n  -§Y[PRE.GetNameWithFlag]§!\n\n当前政策：§Y置之不理§!"

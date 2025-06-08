@@ -280,16 +280,11 @@ focus_tree = {
 				}
 			}
 		}
-		random_list = { 
-			50 = { 
-				WUR = {
+		WUR = {
 				random_unit_leader= {
 					set_nationality = ROOT
 				 } 
 				}
-			} 
-			50 = { }
-		}
 
 		random_list = { 
 			50 = { 

@@ -67,7 +67,7 @@ if = {
 
 
 country_event = { days = 3 id = NAU.1 }
-
+set_variable  = {AOR_NAU_FORCES_choose = 2}
 set_research_slots = 2
 set_convoys = 30
 set_stability = 0.35
