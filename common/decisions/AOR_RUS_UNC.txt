@@ -260,6 +260,12 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 					has_goverment = marxism
 				}
 			}
+			CSU = {
+				OR = {
+					has_capitulated = no
+					exists = yes
+				}
+			}
 		}
 		visible = { NOT = { has_global_flag = RUS_flag_Soviet_union } }
 		fire_only_once = yes
