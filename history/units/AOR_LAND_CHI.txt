@@ -1,6 +1,6 @@
 ﻿####### Division Templates #######
 division_template = { 
-	name = "陆军师" 
+	name = "陸軍師" 
 	division_names_group = ITA_INF_01 
 	
 	regiments = { 
@@ -55,183 +55,183 @@ division_template = {
 units = {
 #中央系
 	division= {	
-		name = "警卫师"
+		name = "警卫師"
 		location = 9843
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "宪兵总队"
+		name = "憲兵總隊"
 		location = 9843
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第三师"
+		name = "陸軍第三師"
 		location = 9843
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 #皖系
     division= {	
-		name = "陆军第五师"
+		name = "陸軍第五師"
 		location = 1069
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第六师"
+		name = "陸軍第六師"
 		location = 3992
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "西北边防第一师"
+		name = "西北边防第一師"
 		location = 12612
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "西北边防第二师"
+		name = "西北边防第二師"
 		location = 12557
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "西北边防第三师"
+		name = "西北边防第三師"
 		location = 7799
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第七师"
+		name = "陸軍第七師"
 		location = 9843
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第十师"
+		name = "陸軍第十師"
 		location = 9843
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第四十九旅"
+		name = "陸軍第四十九旅"
 		location = 11771
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第三混成旅"
+		name = "陸軍第三混成旅"
 		location = 9974
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第四混成旅"
+		name = "陸軍第四混成旅"
 		location = 4013
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第八混成旅"
+		name = "陸軍第八混成旅"
 		location = 556
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第九混成旅"
+		name = "陸軍第九混成旅"
 		location = 7191
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第十混成旅"
+		name = "陸軍第十混成旅"
 		location = 4709
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第十一混成旅"
+		name = "陸軍第十一混成旅"
 		location = 8086
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第四十九混成旅"
+		name = "陸軍第四十九混成旅"
 		location = 10022
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第四十七混成旅"
+		name = "陸軍第四十七混成旅"
 		location = 7199
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "安武军第一混成旅"
+		name = "安武軍第一混成旅"
 		location = 7222
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "安武军第二混成旅"
+		name = "安武軍第二混成旅"
 		location = 1001
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "安武军第一三混成旅"
+		name = "安武軍第一三混成旅"
 		location = 4079
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "安武军第四混成旅"
+		name = "安武軍第四混成旅"
 		location = 1083
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "安武军第五混成旅"
+		name = "安武軍第五混成旅"
 		location = 11994
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军步兵第一旅"
+		name = "陸軍步兵第一旅"
 		location = 1630
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军步兵第二旅"
+		name = "陸軍步兵第二旅"
 		location = 531
 		division_template = "混成旅"
 		start_experience_factor = 0.2
@@ -295,140 +295,140 @@ units = {
 	}
 	#直系
 	division= {	
-		name = "陆军第一师"
+		name = "陸軍第一師"
 		location = 7648
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二师"
+		name = "陸軍第二師"
 		location = 4619
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第四师"
+		name = "陸軍第四師"
 		location = 4091
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第八师"
+		name = "陸軍第八師"
 		location = 10022
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第九师"
+		name = "陸軍第九師"
 		location = 4619
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第十九师"
+		name = "陸軍第十九師"
 		location = 10076
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第二十三师"
+		name = "陸軍第二十三師"
 		location = 4572
-		division_template = "陆军师"
+		division_template = "陸軍師"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.95
 	}
 	division= {	
-		name = "陆军第一混成旅"
+		name = "陸軍第一混成旅"
 		location = 10757
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第二混成旅"
+		name = "陸軍第二混成旅"
 		location = 4525
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第五混成旅"
+		name = "陸軍第五混成旅"
 		location = 11752
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第六混成旅"
+		name = "陸軍第六混成旅"
 		location = 7582
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第一旅"
+		name = "陸軍骑兵第一旅"
 		location = 10331
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第二旅"
+		name = "陸軍骑兵第二旅"
 		location = 12554
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第三旅"
+		name = "陸軍骑兵第三旅"
 		location = 9873
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军骑兵第四旅"
+		name = "陸軍骑兵第四旅"
 		location = 972
 		division_template = "骑兵旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第四十九旅"
+		name = "陸軍第四十九旅"
 		location = 11771
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十四旅"
+		name = "陸軍第七十四旅"
 		location = 9759
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十五旅"
+		name = "陸軍第七十五旅"
 		location = 10433
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军第七十六旅"
+		name = "陸軍第七十六旅"
 		location = 12482
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陆军步兵第五旅"
+		name = "陸軍步兵第五旅"
 		location = 10022
 		division_template = "混成旅"
 		start_experience_factor = 0.2
