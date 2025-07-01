@@ -874,7 +874,7 @@ country_event = {
 	option = {
 		name=USA.1003.a
 		CSA = {
-			add_manpower=100000
+			add_manpower=50000
 			load_oob = "CSA_Civilwar_2"
 		}
 		US2 = {country_event = {id = USA.1004 days = 30}}
@@ -891,7 +891,7 @@ country_event = {
 	option = {
 		name=USA.1004.a
 		CSA = {
-			add_manpower=100000
+			add_manpower=30000
 			load_oob = "CSA_Civilwar_2"
 		}
 		US2 = {country_event = {id = USA.1005 days = 30}}
@@ -908,8 +908,7 @@ country_event = {
 	option = {
 		name=USA.1005.a
 		CSA = {
-			add_manpower=100000
-			load_oob = "CSA_Civilwar_2"
+			add_manpower=10000
 		}
 		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
 	}

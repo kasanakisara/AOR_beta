@@ -260,6 +260,12 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 					has_goverment = marxism
 				}
 			}
+			CSU = {
+				OR = {
+					has_capitulated = no
+					exists = yes
+				}
+			}
 		}
 		visible = { NOT = { has_global_flag = RUS_flag_Soviet_union } }
 		fire_only_once = yes
@@ -829,6 +835,13 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 			add_core_of = 214
 			add_core_of = 215
 			add_core_of = 213
+			add_core_of = 404 
+			add_core_of = 583
+			add_core_of = 590
+			add_core_of = 588
+			add_core_of = 920
+			add_core_of = 587
+			add_core_of = 584
 			#看着玩的，实际不生效
 			effect_tooltip = {
 				custom_effect_tooltip = AOR_GER_Newline_tt
