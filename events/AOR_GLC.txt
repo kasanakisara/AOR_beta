@@ -18,5 +18,52 @@ country_event = {
     option = {
 		name = GLC.1.a
 		news_event = {id=AOR_news.210}
+		hidden_effect = {
+		country_event = {
+			id = GLC.2
+			days = 30
+		}
+		}
+	}
+}
+
+country_event = {
+	id = GLC.2 #波兰清算委员会的最终命运
+	title =GLC.2.t
+	desc = GLC.2.d
+	picture = GFX_GLC_event_2_pic
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+		name = GLC.2.a
+		hidden_effect = {
+		if = { #波兰清算委员会与政府合并
+			limit ={
+				POL = {
+					has_government = Fascism
+				}
+			}
+			    POL = {
+					annex_country = { 
+						target = GLC
+						transfer_troops = yes 
+					}
+				}
+		    }
+		if = { #波兰清算委员会与政府开战
+			limit ={
+				POL = {
+					Fascism < 10
+				}
+			}
+			    POL = {
+					declare_war_on = { 
+						target = GLC
+						type = civil_war
+		            } 
+				}
+		    }
+		}
 	}
 }
