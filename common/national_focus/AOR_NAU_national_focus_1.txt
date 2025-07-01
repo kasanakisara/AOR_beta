@@ -19,7 +19,9 @@ focus_tree = {
 
 		completion_reward={
 			army_experience = 10
+			add_command_power = 5
 			add_political_power = 5
+			custom_effect_tooltip = NAU.5.tt
 			country_event = { id = NAU.2 }
 		}
 
@@ -37,7 +39,17 @@ focus_tree = {
 			add_political_power = -50
 			add_stability = 0.05
 			custom_effect_tooltip = NAU.1.tt
+			custom_effect_tooltip = NAU.2.tt
 			set_country_flag = NAU_against_local_forces
+			
+		#合理，不用解除注释，勿动
+		#	add_to_variable  = {AOR_NAU_FORCES_P_SPD = -1}
+		#	add_to_variable  = {AOR_NAU_FORCES_P_STLS = -1}
+		#	add_to_variable  = {AOR_NAU_FORCES_P_KPD = -1}
+		#	add_to_variable = {AOR_NAU_FORCES_P_L = -1}
+		#
+		#	add_to_variable  = {AOR_NAU_FORCES_M_STLS = -1}
+		#	add_to_variable = {AOR_NAU_FORCES_M_L = -1}
 		}
 
 	}
@@ -58,9 +70,33 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = exports_focus
+
+				IF = {
+					limit = { has_dlc = "Arms Against Tyranny" }
+
+					NAU = { add_cic = 1250 }
+								
+					NAU = {
+						add_equipment_subsidy = {
+							cic = 100  
+							equipment_type = infantry_equipment 
+							seller_tags = { HAN }  			
+						}
+					}
+					
+					
+				}
+
+			custom_effect_tooltip = NAU.BLANK.tt
+			if = {
+				limit = {
+					NOT = {has_ideas = limit_exports }
+				}	
+				add_ideas = limited_exports
+			}
 		}
 	}
+
 	focus = {
 		id = NAU_Create_a_cult_of_personality #制造个人崇拜
 		icon = GFX_goal_NAU_Create_a_cult_of_personality
@@ -71,9 +107,12 @@ focus_tree = {
 		x = 6
 		y = 2
 		completion_reward={
-			add_stability = 0.05
-			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.05
+			custom_effect_tooltip = NAU.7.tt
+			custom_effect_tooltip = NAU.3.tt
 			add_country_leader_trait = Commander_of_the_General
+			add_to_variable = {AOR_NAU_FORCES_P_JB = 1}
 		}
 
 	}
@@ -88,6 +127,8 @@ focus_tree = {
 		y = 3
 		completion_reward={
 			country_event = { id = NAU.3 }
+			custom_effect_tooltip = NAU.3.tt
+			add_to_variable = {AOR_NAU_FORCES_P_JB = 1}
 		}
 
 	}
@@ -102,7 +143,10 @@ focus_tree = {
 		y = 2
 		completion_reward={
 			army_experience = 15
+			custom_effect_tooltip = NAU.8.tt
 			add_ideas = { A_professional_army_with_high_standards }
+			custom_effect_tooltip = NAU.4.tt
+			add_to_variable = {AOR_NAU_FORCES_M_JB = 1}		
 		}
 
 	}
@@ -120,7 +164,8 @@ focus_tree = {
 				add_idea  = A_professional_army_with_high_standards_1
 				remove_idea = A_professional_army_with_high_standards
 			}
-
+			custom_effect_tooltip = NAU.6.tt
+			add_to_variable = {AOR_NAU_FORCES_M_L = 1}		
 		}
 
 	}
@@ -161,9 +206,13 @@ focus_tree = {
 		x = 10
 		y = 2
 		completion_reward={
-			add_manpower = -732
-			add_stability = -0.07
+			add_manpower = -7320
+			add_stability = -0.17
 			country_event = { id = NAU.4 }
+			custom_effect_tooltip = NAU.10.tt
+			custom_effect_tooltip = NAU.9.tt
+			add_to_variable = {AOR_NAU_FORCES_M_STLS = -1}	
+			add_to_variable = {AOR_NAU_FORCES_M_KPD = -1}	
 		}
 
 	}
@@ -186,6 +235,12 @@ focus_tree = {
 					instant_build = yes 
 					}
 			}
+				IF = {
+					limit = { has_dlc = "Arms Against Tyranny" }
+
+					NAU = { add_cic = 1750 }
+					
+				}
 		}
 
 	}
@@ -200,6 +255,9 @@ focus_tree = {
 		y = 4
 		completion_reward={
 			add_stability = 0.1
+			custom_effect_tooltip = NAU.12.tt
+			custom_effect_tooltip = NAU.11.tt
+			add_to_variable = {AOR_NAU_FORCES_M_L = -1}	
 		}
 
 	}
@@ -218,8 +276,12 @@ focus_tree = {
 		completion_reward={
 			add_manpower = 5975
 			custom_effect_tooltip = NAU_create_four_Imperial_Division_tt
+			custom_effect_tooltip = NAU_create_FAKE_Division_tt
+
 			hidden_effect = {
+			load_oob = NAU_AOR_fake	
 			load_oob = NAU_laobing
+
 		}
 	}
 }
