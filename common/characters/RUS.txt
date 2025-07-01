@@ -37,34 +37,6 @@ characters = {
 				large = GFX_AOR_SOV_Lenin
 				small = GFX_AOR_SOV_idea_lenin
 			}
-			army = {
-				large = GFX_AOR_SOV_001
-				small = GFX_AOR_SOV_idea_lenin
-			}
-			navy = {
-				large = GFX_AOR_SOV_001
-				small = GFX_AOR_SOV_idea_lenin
-			}
-		}
-		field_marshal = {
-			traits = {
-			#调试
-			RUS_tactical_master
-			RUS_Old_Imperial_officer
-			RUS_Guerrilla_style
-			
-				inflexible_strategist
-				RUS_humble_Coordinator
-				RUS_resprcted_military_leader
-				RUS_politically_connected
-				trait_cautious
-			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
 		}
 		country_leader={
 			ideology = leninism
