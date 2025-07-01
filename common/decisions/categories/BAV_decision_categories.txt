@@ -8,6 +8,7 @@ BAV_Bebel_Trust = {
 	visible = {
 		tag = BAV
 		NOT = {has_country_flag = BAV.belel.dead}
+		has_country_flag = BAV.bb.come
 	}
 	
 }

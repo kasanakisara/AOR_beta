@@ -9,7 +9,7 @@ NAU_local_forces = {
 		OR = {
 		 AND = {
 			tag = NAU
-			NOT = {has_country_flag = NAU.leader.dead
+			NOT = {has_country_flag = NAU.leader.dead}
 			has_country_flag = NAU_against_local_forces
 		 }
 		 AND = {

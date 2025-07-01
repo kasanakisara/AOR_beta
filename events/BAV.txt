@@ -13,6 +13,7 @@ country_event = {
 		name = BAV.1.a
 		add_political_power = 1
 		custom_effect_tooltip = AOR_Bebel_Trust_5_tt
+		set_country_flag = BAV.bb.come
 		  add_to_variable = {
 			Bebel_Trust = 5
 			} 
