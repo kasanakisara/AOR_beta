@@ -539,7 +539,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "FRA_ENG_Cold_War_button" #冷战按钮
-			position = { x = 200 y = 200 }
+			position = { x = 33 y = 323 }
 			quadTextureSprite = "GFX_icon_manage_subjects"
 			buttonFont = "hoi_16mbs"				
 		}	
