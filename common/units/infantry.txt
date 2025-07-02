@@ -314,7 +314,8 @@ sub_units = {
 		supply_consumption = 0.09
 	
 		need = {
-			infantry_equipment = 110
+			infantry_equipment = 160
+			machine_equipment0 = 45
 		}
 	}
 	Free_sniper = {
