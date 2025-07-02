@@ -1036,6 +1036,24 @@ country_event = {
 				type = take_claimed_state 
 			} 
 		}
+		PRE = {
+			declare_war_on = { 
+				target = BAV
+				type = take_claimed_state 
+			} 
+		}
+		RUS = {
+			declare_war_on = { 
+				target = POL
+				type = take_claimed_state 
+			} 
+		}
+		RUS = {
+			declare_war_on = { 
+				target = PRE
+				type = take_claimed_state 
+			} 
+		}
 		hidden_effect = {
 			news_event = {
 				id = AOR_news.240
