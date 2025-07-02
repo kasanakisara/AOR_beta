@@ -4,22 +4,22 @@ guiTypes = {
 		position = { x = 300 y = 150 }
 		instantTextboxType = {
 			name = "ruling_party_name"
-			position = { x = 88 y = 10 }
+			position = { x = -115 y = 92 }
 			font = "hoi_16mbs"
 			text = "ruling_party_name"
-			maxWidth = 150
-			maxHeight = 20
+			maxWidth = 110
+			maxHeight = 80
 			fixedsize = yes
 			format = centre
 			#alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "subideology_name"
-			position = { x = 88 y = 30 }
-			font = "hoi_16mbs"
+			position = { x = 26 y = 38 }
+			font = "hoi_18mbs"
 			text = "[GetRulingIdeologySubtype]"
 			pdx_tooltip = "[GetRulingIdeologySubtype]"
-			maxWidth = 150
+			maxWidth = 200
 			maxHeight = 20
 			fixedsize = yes
 			format = centre
