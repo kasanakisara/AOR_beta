@@ -2831,6 +2831,27 @@ on_actions = {
 			}
 			else_if = {
 		    	limit = {
+		    		#威廉港败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = HAN
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = HAN
+					}
+				    transfer_state = 51
+				    transfer_state = 56
+					transfer_state = 57
+				    transfer_state = 853
+					transfer_state = 854
+			    }
+	    	}
+			else_if = {
+		    	limit = {
 		    		#符腾堡败
 			    	FROM = {
 			    		original_tag = BAV
@@ -3015,6 +3036,27 @@ on_actions = {
 					transfer_state = 866
 				}
 			}
+			else_if = {
+		    	limit = {
+		    		#威廉港败
+			    	FROM = {
+			    		original_tag = NAU
+			    	}
+			    	ROOT = {
+			    		original_tag = HAN
+			    	}
+		    	}
+			    NAU = {
+					annex_country = {
+						target = HAN
+					}
+				    transfer_state = 51
+				    transfer_state = 56
+					transfer_state = 57
+				    transfer_state = 853
+					transfer_state = 854
+			    }
+	    	}
 	    	else_if = {
 		    	limit = {
 		    		#萨克森败

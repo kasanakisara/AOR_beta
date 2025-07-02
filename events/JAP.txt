@@ -583,6 +583,12 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			JAP = {
+				annex_country = {
+						target = QID
+					}
+				transfer_state = 743
+			}
 			set_victory_points = {
 				province = 10000
 				value = 10    
