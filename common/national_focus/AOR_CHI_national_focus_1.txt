@@ -311,7 +311,7 @@ focus_tree={
 	}
 	
 	focus={
-icon=GFX_goal_CHI_Assess_s
+        icon=GFX_goal_CHI_Assess_s
 		id=CHI_Assess_s
 		x=2
 		y=6
@@ -327,7 +327,7 @@ icon=GFX_goal_CHI_Assess_s
 	}
 	
 	focus={
-icon=GFX_goal_CHI_we_win
+        icon=GFX_goal_CHI_we_win
 		id=CHI_we_win
 		x=5
 		y=6
@@ -343,7 +343,7 @@ icon=GFX_goal_CHI_we_win
 	}
 	
 	focus={
-icon=GFX_goal_CHI_stop
+        icon=GFX_goal_CHI_we_win
 		id=CHI_stop
 		x=8
 		y=6
@@ -359,7 +359,7 @@ icon=GFX_goal_CHI_stop
 	}
 	
 	focus={
-icon=GFX_goal_CHI_forward
+        icon=GFX_goal_CHI_we_win
 		id=CHI_forward
 		x = 5
 		y = 8
@@ -375,6 +375,7 @@ icon=GFX_goal_CHI_forward
 		} 
 	}  
 	focus={
+		icon=GFX_goal_CHI_we_win
 		id = CHI_ask_for_loan
 		x = 3
 		y = 7
@@ -391,6 +392,7 @@ icon=GFX_goal_CHI_forward
 		} 
 	} 
 	focus={
+		icon=GFX_goal_CHI_we_win
 		id = CHI_hold_on
 		x = 7
 		y = 7
