@@ -474,22 +474,22 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_antitank5_medium"
-		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds" #AT_3_allies
 	}	
 	
 	SpriteType = {
 		name = "GFX_antitank4_medium"
-		texturefile = "gfx/interface/technologies/antitank5.dds"
+		texturefile = "gfx/interface/technologies/antiair5.dds" #antitank5
 	}	
 	
 	SpriteType = {
 		name = "GFX_antitank3_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/antiair5.dds" #antitank3
 	}	
 	
 	SpriteType = {
 		name = "GFX_antitank2_medium"
-		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds" #AT_2_allies
 	}	
 	
 	SpriteType = {
@@ -499,17 +499,17 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_antiair5_medium"
-		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds" #AA_3_allies
 	}	
 	
 	SpriteType = {
 		name = "GFX_antiair4_medium"
-		texturefile = "gfx/interface/technologies/antiair5.dds"
+		texturefile = "gfx/interface/technologies/antitank3.dds" #antiair5
 	}	
 	
 	SpriteType = {
 		name = "GFX_antiair3_medium"
-		texturefile = "gfx/interface/technologies/antiair2.dds"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds" #antiair2
 	}		
 	
 	SpriteType = {

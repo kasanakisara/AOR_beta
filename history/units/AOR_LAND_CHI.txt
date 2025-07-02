@@ -238,28 +238,28 @@ units = {
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "山东巡逻防前路"
+		name = "山東巡逻防前路"
 		location = 12093
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "山东巡逻防后路"
+		name = "山東巡逻防后路"
 		location = 12069
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "山东巡逻防左路"
+		name = "山東巡逻防左路"
 		location = 11962
 		division_template = "混成旅"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "山东巡逻防右路"
+		name = "山東巡逻防右路"
 		location = 10018
 		division_template = "混成旅"
 		start_experience_factor = 0.2
