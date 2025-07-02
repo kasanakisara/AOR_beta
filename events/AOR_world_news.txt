@@ -3439,3 +3439,16 @@ news_event = {#苏联入侵芬马克
 		name = AOR_news.241.a
 	}
 }
+
+news_event = {#波兰清算委员会与波兰政府开战
+	id = AOR_news.242
+	title = AOR_news.242.t
+	desc = AOR_news.242.d
+	picture = GFX_AOR_news.242_pic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = AOR_news.242.a
+	}
+}
