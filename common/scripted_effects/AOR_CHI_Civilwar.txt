@@ -322,7 +322,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 917
+					owns_state = 917
 				}
 			}
 			SIK = {
@@ -333,7 +333,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 586
+					owns_state = 586
 				}
 			}
 			SIK = {
@@ -345,7 +345,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 918
+					owns_state = 918
 				}
 			}
 			SIK = {
@@ -356,7 +356,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 654
+					owns_state = 654
 				}
 			}
 			SIK = {
@@ -368,7 +368,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 916
+					owns_state = 916
 				}
 			}
 			SIK = {
@@ -380,7 +380,7 @@ CHI_civil_war_3 = {
 		if = {
 			limit ={
 				CHI = {
-					controls_state = 920
+					owns_state = 920
 				}
 			}
 			SIK = {
