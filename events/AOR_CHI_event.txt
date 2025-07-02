@@ -89,7 +89,9 @@ country_event = {
 	}
 	option = {
 		name = CHI.4.c
+		hidden_effect = {
 		country_event = { id = CHI.40001 }
+		}
 	}
 }
 
