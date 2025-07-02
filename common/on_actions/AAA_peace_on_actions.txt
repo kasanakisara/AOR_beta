@@ -2829,6 +2829,26 @@ on_actions = {
 					transfer_state = 858
 				}
 			}
+			else_if = {
+		    	limit = {
+		    		#符腾堡败
+			    	FROM = {
+			    		original_tag = BAV
+			    	}
+			    	ROOT = {
+			    		original_tag = WUR
+			    	}
+		    	}
+			    BAV = {
+					annex_country = {
+						target = WUR
+					}
+				    transfer_state = 50
+				    transfer_state = 837
+					transfer_state = 841
+				    transfer_state = 860
+			    }
+	    	}
 	    	else_if = {
 		    	limit = {
 		    		#萨克森败
