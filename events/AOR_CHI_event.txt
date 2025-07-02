@@ -102,21 +102,21 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CHI.4.d
+		name = CHI.4.e
 		add_political_power = 75
 		KMT = {
 			change_tag_from = ROOT
 		}
 	}
 	option = {
-		name = CHI.4.e
+		name = CHI.4.f
 		add_political_power = 75
 		NAN = {
 			change_tag_from = ROOT
 		}
 	}
 	option = {
-		name = CHI.4.f
+		name = CHI.4.g
 		add_political_power = 75
 		DCD = {
 			change_tag_from = ROOT
