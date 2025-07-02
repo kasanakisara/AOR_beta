@@ -600,6 +600,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
+		Elite_infantry= {
+			defense = 0.05
+			breakthrough = 0.05
+		}
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -671,6 +675,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
+		Elite_infantry= {
+			defense = 0.05
+			breakthrough = 0.05
+		}
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -734,7 +742,11 @@ technologies = {
 		}
 	}	
 	support_weapons3 = {
-				infantry = {
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		Elite_infantry= {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -809,6 +821,10 @@ technologies = {
 	}
 	support_weapons4 = {
 		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		Elite_infantry= {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1136,6 +1152,10 @@ Infantry_uniforms = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
+	Elite_infantry= {
+		defense = 0.05
+		breakthrough = 0.05
+	}
 	path = {
 		leads_to_tech = Infantry_uniforms2
 		research_cost_coeff = 1
@@ -1175,6 +1195,10 @@ Infantry_uniforms = {
 }	
 Infantry_uniforms2 = {		
 	infantry = {
+		defense = 0.05
+		breakthrough = 0.05
+	}
+	Elite_infantry= {
 		defense = 0.05
 		breakthrough = 0.05
 	}
@@ -1218,6 +1242,11 @@ Infantry_uniforms3 = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
+	Elite_infantry= {
+		defense = 0.05
+		breakthrough = 0.05
+	}
+
 	path = {
 		leads_to_tech = Infantry_uniforms4
 		research_cost_coeff = 1
@@ -1253,6 +1282,10 @@ Infantry_uniforms3 = {
 }	
 Infantry_uniforms4 = {		
 	infantry = {
+		defense = 0.05
+		breakthrough = 0.05
+	}
+	Elite_infantry= {
 		defense = 0.05
 		breakthrough = 0.05
 	}
