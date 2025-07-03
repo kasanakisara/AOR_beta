@@ -272,9 +272,7 @@ country_event = {
 		name = KYR.1.a
 		hidden_effect = {
 			RUS = {
-				country_event = {
-					id = RUS.10084
-				}
+				country_event = { id = AOR_SOV_timeaxis.10084 days = 2}
 			}
 		}
 	}
@@ -291,16 +289,14 @@ country_event = {
 		name = AOR_SOV_timeaxis.10084.a
 		hidden_effect = {
 			RUS = {
-				country_event = {
-					id = RUS.10085
-				}
+				country_event = { id = AOR_SOV_timeaxis.10085 days = 2}
 			}
 		}
 	}
 }
 country_event = {
-	id = AOR_SOV_timeaxis.2 ##阿拉什三顾求和-第二次理
-	title = AOR_SOV_timeaxis.10084.5
+	id = AOR_SOV_timeaxis.10085 ##阿拉什三顾求和-第二次理
+	title = AOR_SOV_timeaxis.10085.5
 	desc = AOR_SOV_timeaxis.10085.d
 
 	is_triggered_only = yes
@@ -309,9 +305,10 @@ country_event = {
 		name = RUS.10085.a
 		hidden_effect = {
 			RUS = {
-				country_event = {
-					id = KYR.2
-				}
+				country_event = { id = KYR.2 days = 2 }
+			}
+			KYR = {
+				country_event = { id = KYR.2 days = 2 }
 			}
 		}
 	}
@@ -329,11 +326,84 @@ country_event = {
 			limit = { is_in_faction_with = RUS }
 			white_peace = KYR
 		}
-		leave_faction = yes
-		add_to_faction = RUS
-		declare_war_on = ARU
+		RUS = {
+			country_event = { id = KYR.3 days = 2 }
+		}
+		
 	}
 }
 
+country_event = {
+	id = KYR.3 ##阿拉什三顾求和-土耳其斯坦整合
+	title = KYR.3.t
+	desc = KYR.3.d
 
+	is_triggered_only = yes
+
+	option = {
+		name = KYR.3.a
+		set_country_flag = RUS_flag_soviet_union_1
+		add_command_power = 5
+		add_political_power = 10
+		custom_effect_tooltip = AOR_GER_Newline_tt
+		custom_effect_tooltip = AOR_RUS_Soviet_union_1_tt
+		hidden_effect = {
+			every_state = {
+				limit ={
+					OR = {
+						is_core_of = UZB
+						is_core_of = TAJ
+						is_core_of = KYR
+						is_core_of = TMS
+					}
+					OR = {
+						is_controlled_by = RUS
+						CONTROLLER = { is_subject_of = RUS }
+					}
+				}
+				TAJ = {
+					transfer_state = PREV
+				}
+			}
+			set_autonomy = { target = TAJ autonomy_state = AOR_SOV_Closely_executed_alliance }
+			TAJ = { RUS = { RUS_give_gun_licences = yes } }
+		}
+		
+		custom_effect_tooltip = AOR_GER_Newline_tt
+		TAJ = {
+			set_cosmetic_tag =  RUS_cosmetic_tag_tuerqisitan
+			division_template = {
+				name = "人民军队"
+				priority = 1
+				regiments = {
+				irregular_infantry = { x = 0 y = 0 }
+				irregular_infantry = { x = 0 y = 1 }
+				irregular_infantry = { x = 0 y = 2 }
+				irregular_infantry = { x = 0 y = 3 }
+				irregular_infantry = { x = 0 y = 4 }
+				}
+				support = {
+					Mortarsupport = { x = 0 y = 0 }
+				}
+			}
+		}
+		hidden_effect = {
+			every_state = {
+				limit ={
+					OR = {
+						is_core_of = UZB
+						is_core_of = TAJ
+						is_core_of = KYR
+						is_core_of = TMS
+					}
+				}
+				TAJ = { add_state_core = PREV }
+			}
+			TAJ = {
+				set_popularities = { Marxism = 100 }
+			}
+		}
+		
+	}
+}
 

@@ -7,19 +7,46 @@ guiTypes = {
 		iconType = {
 			name = "AOR_Regency_Economic_progress_bar"
 			spriteType = "GFX_SWE_GUI_progressbar"
-			position = { x=155 y=5 }
+			position = { x=95.25 y=5 }
 		}
 
 		iconType = {
 			name = "AOR_Regency_Order_progress_bar"
 			spriteType = "GFX_SWE_GUI_progressbar"
-			position = { x=255 y=5 }
+			position = { x=233.5 y=5 }
 		}
 
 		iconType = {
 			name = "AOR_Regency_Political_progress_bar"
 			spriteType = "GFX_SWE_GUI_progressbar"
-			position = { x=355 y=5 }
+			position = { x=371.75 y=5 }
+		}
+
+		instantTextBoxType = {
+			name ="AOR_Regency_Economic_num"
+			position = { x=40 y=450 }
+			font = "hoi_18mbs"
+			text = "AOR_Regency_Economic_num_text"
+			format = center
+			maxWidth = 150
+		}
+
+		instantTextBoxType = {
+			name ="AOR_Regency_Order_num"
+			position = { x=178 y=450 }
+			font = "hoi_18mbs"
+			text = "AOR_Regency_Order_num_text"
+			format = center
+			maxWidth = 150
+		}
+
+		instantTextBoxType = {
+			name ="AOR_Regency_Political_num"
+			position = { x=316 y=450 }
+			font = "hoi_18mbs"
+			text = "AOR_Regency_Political_num_text"
+			format = center
+			maxWidth = 150
 		}
 		
 	}
