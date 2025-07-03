@@ -1,4 +1,5 @@
 add_namespace = AOR_SOV_timeaxis
+add_namespace = KYR
 
 #响应邻国起义#
 country_event = {
@@ -256,6 +257,83 @@ country_event = { ##法国：英国人进行战争动员
 }
 
 
+country_event = {
+	id = KYR.1 ##阿拉什三顾求和
+	title = KYR.1.t
+	desc = KYR.1.d
+
+	fire_only_once = yes
+	trigger = {
+		KYR = { surrender_progress > 0.2 }
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = KYR.1.a
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = RUS.10084
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = AOR_SOV_timeaxis.10084 ##阿拉什三顾求和-第一次不理
+	title = AOR_SOV_timeaxis.10084.t
+	desc = AOR_SOV_timeaxis.10084.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOR_SOV_timeaxis.10084.a
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = RUS.10085
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = AOR_SOV_timeaxis.2 ##阿拉什三顾求和-第二次理
+	title = AOR_SOV_timeaxis.10084.5
+	desc = AOR_SOV_timeaxis.10085.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS.10085.a
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = KYR.2
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = KYR.2 ##阿拉什三顾求和-和了
+	title = KYR.2.t
+	desc = KYR.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYR.2.a
+		every_country = {
+			limit = { is_in_faction_with = RUS }
+			white_peace = KYR
+		}
+		leave_faction = yes
+		add_to_faction = RUS
+		declare_war_on = ARU
+	}
+}
 
 
 

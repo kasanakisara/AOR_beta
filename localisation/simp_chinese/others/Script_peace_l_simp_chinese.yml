@@ -46,8 +46,8 @@
  SP_WARPEACE_ORA_ARG_W:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_ORA_ARG_L:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_SWE_DEN_W:0 "在决定北欧罗巴命运的§Q大北欧战争§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
- SP_WARPEACE_FIC_FIN_W:0 "在决定芬兰命运的§R芬兰内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
- SP_WARPEACE_RUS_ARU_W:0 "在决定俄罗斯和布尔什维克命运的§R俄国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_FIC_FIN_W:0 "在决定芬兰命运的§V芬兰内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!彻底击溃，宣布投降"
+ SP_WARPEACE_RUS_ARU_W:0 "在决定俄罗斯和布尔什维克命运的§V俄国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_Germany_civilwar_W:0 "在决定德意志命运的§g德国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  #特殊
 ##战争结语
@@ -70,7 +70,7 @@
 
  SP_WARPEACE_SWE_DEN_WT:0 "斯堪的纳维亚的三顶王冠终于成真。"
 
- SP_WARPEACE_FIC_FIN_WT:0 白芬兰的雄狮再无复苏之日。"
+ SP_WARPEACE_FIC_FIN_WT:0 "白芬兰的雄狮再无复苏之日。"
  SP_WARPEACE_FIC_FIN_LT:0 "世人终于得知：布尔什维克并非不可战胜的。"
 
  SP_WARPEACE_RUS_ARU_WT:0 "同志们你们必须要记住：我们只有一条出路，那就是§Y胜利§!。\n还有一条出路：死亡。\n§R死亡不属于工人阶级！！§!"
