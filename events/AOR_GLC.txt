@@ -39,39 +39,40 @@ country_event = {
 
     option = {
 		name = GLC.2.a
-		hidden_effect = {
-			if = { #波兰清算委员会与政府合并
-				limit ={
-					POL = {
+		if = { #波兰清算委员会与政府合并
+			limit ={
+				POL = {
+					has_government = Fascism
+				}
+			}
+			POL = {
+				annex_country = { 
+					target = GLC
+					transfer_troops = yes 
+				}
+			}
+		}
+		else_if = { #波兰清算委员会与政府开战
+			limit ={
+				POL = {
+					Fascism < 0.1
+					not = {
 						has_government = Fascism
 					}
 				}
-				POL = {
-					annex_country = { 
-						target = GLC
-						transfer_troops = yes 
-					}
-				}
-		    }
-			if = { #波兰清算委员会与政府开战
-				limit ={
-					POL = {
-						Fascism < 0.1
-						not = {
-							has_government = Fascism
-						}
-					}
-				}
-				news_event = {
-					id = AOR_news.242
-				}
-			    GLC = {
-					declare_war_on = { 
-						target = POL
-						type = civil_war
-		            } 
-				}
-		    }
+			}
+			news_event = {
+				id = AOR_news.242
+			}
+		    GLC = {
+				declare_war_on = { 
+					target = POL
+					type = civil_war
+		        } 
+			}
+		}
+		else = { #测试
+			add_political_power = 100
 		}
 	}
 }
