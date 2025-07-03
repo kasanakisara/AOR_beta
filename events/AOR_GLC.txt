@@ -20,8 +20,8 @@ country_event = {
 		news_event = {id=AOR_news.210}
 		hidden_effect = {
 		country_event = {
-			id = GLC.2
 			days = 30
+			id = GLC.2
 		    }
 		}
 	}
@@ -58,9 +58,9 @@ country_event = {
 				}
 			}
 			news_event = {id=AOR_news.242}
-			    POL = {
+			    GLC = {
 					declare_war_on = { 
-						target = GLC
+						target = POL
 						type = civil_war
 		            } 
 				}
