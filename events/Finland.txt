@@ -173,7 +173,7 @@ country_event = {
 				FIC = {
 					declare_war_on = {
 						target = FIN
-						type = annex_everything
+						type = civil_war
 					}
 					111 = {
 						create_unit = {
@@ -408,14 +408,17 @@ country_event = {
         ai_chance = { add = 1 }
 	    	FIC = {
 	        	random_controlled_state = {
-					is_capital = yes
-				} = {
+					limit = {
+						is_capital = yes
+					}
+					PREV = {
 	        		create_unit = {
 						division = "name = \"Capial Militia 1st\" division_template = \"Common Militia\" start_experience_factor = 0.5 start_equipment_factor = 1"
 						owner = PREV
 						count = 2
 	    			}
 	        	}
+				}
             }
         }
     }

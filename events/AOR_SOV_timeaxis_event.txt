@@ -262,10 +262,6 @@ country_event = {
 	title = KYR.1.t
 	desc = KYR.1.d
 
-	fire_only_once = yes
-	trigger = {
-		KYR = { surrender_progress > 0.2 }
-	}
 	is_triggered_only = yes
 
 	option = {

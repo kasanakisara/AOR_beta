@@ -20,6 +20,12 @@ country_event = {
 		news_event = {
 			id = AOR_news.210
 		}
+		POL = {
+			set_autonomy = {
+				target = GLC
+				autonomy_state = autonomy_free
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				days = 30

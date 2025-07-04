@@ -580,13 +580,13 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 		}
 	}
 	AOR_RUS_Soviet_union_11 = { #响应邻国武装起义夺取政权
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 100 }
 		target_root_trigger = { 
 			original_tag = RUS
 		}
 		target_trigger = {
 			FROM = {
-				has_goverment = Marxism
+				has_government = Marxism
 				has_war = yes
 				is_neighbor_of = RUS
 				NOT = {
@@ -783,7 +783,7 @@ AOR_RUS_Soviet_union_category = { #建立苏维埃联盟
 		}
 	}
 	
-	重组中亚战区 = { #拆分土耳其斯坦
+	AOR_RUS_Soviet_union_21 = { #拆分土耳其斯坦
 		visible = { always = no }
 		available = {
 			any_state = {

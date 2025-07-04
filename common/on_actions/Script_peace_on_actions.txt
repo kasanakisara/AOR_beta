@@ -36,6 +36,6 @@ on_actions = {
 				add_to_variable = { global.sp_warpeace_dirty = 1 }
 			}
 			# 以上为战争结语gui
-			
+		}
 	}
 }

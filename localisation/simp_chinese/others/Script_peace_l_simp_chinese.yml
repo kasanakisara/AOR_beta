@@ -34,7 +34,7 @@
  independence_wargoal:0 "独立战争"
  world_revolution:0 "伟大的世界革命"
  America_revolution:0 "第二次美国内战"
- Ger_civil_war_bav:0"第二次德国革命"
+ Ger_civil_war_bav:0"第二次德国内战"
 
 #战争结语gui
  sp_wapeace_title:0 "外交通知"
@@ -44,11 +44,11 @@
 ##战争总结
  SP_WARPEACE_DEFAULT:0 "在刚刚结束的一场战争中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_ORA_ARG_W:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
- SP_WARPEACE_ORA_ARG_L:0 "在决定阿根廷命运的内战之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_SWE_DEN_W:0 "在决定北欧罗巴命运的§Q大北欧战争§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_FIC_FIN_W:0 "在决定芬兰命运的§V芬兰内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!彻底击溃，宣布投降"
- SP_WARPEACE_RUS_ARU_W:0 "在决定俄罗斯和布尔什维克命运的§V俄国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_RUS_ARU_W:0 "在决定俄罗斯和布尔什维克命运的§V苏俄内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_Germany_civilwar_W:0 "在决定德意志命运的§g德国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
+ SP_WARPEACE_Ukraine_War_W:0 "在§V清算烈火中§!的§g加里西亚-西乌克兰战争§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  #特殊
 ##战争结语
  SP_WARPEACE_DEFAULT_T:0 "战争能被终结，但战争不能终结一切"
@@ -65,16 +65,26 @@
  SP_WARPEACE_PRC_DCD_WT:0 "“严守秘密，服从纪律，牺牲个人，阶级斗争，努力革命，永不叛党！”"
  SP_WARPEACE_PRC_DCD_LT:0 "两地恩荣真赫奕，四川父老定欢呼。"
 
- SP_WARPEACE_US1_US2_WT:0 "“凡动刀的，必死在刀下”"
+ SP_WARPEACE_US1_US2_WT:0 "“凡动刀的，必死在刀下。”"
  SP_WARPEACE_US1_US2_LT:0 "伟大的试错，让西雅图流尽了自由的血。"
 
  SP_WARPEACE_SWE_DEN_WT:0 "斯堪的纳维亚的三顶王冠终于成真。"
 
  SP_WARPEACE_FIC_FIN_WT:0 "白芬兰的雄狮再无复苏之日。"
- SP_WARPEACE_FIC_FIN_LT:0 "世人终于得知：布尔什维克并非不可战胜的。"
+ SP_WARPEACE_FIC_FIN_LT:0 "在芬兰和东卡累利阿获得自由之前，我不会把剑放回剑鞘！"
 
- SP_WARPEACE_RUS_ARU_WT:0 "同志们你们必须要记住：我们只有一条出路，那就是§Y胜利§!。\n还有一条出路：死亡。\n§R死亡不属于工人阶级！！§!"
+ SP_WARPEACE_RUS_ARU_WT:0 "同志们你们必须要记住：\n我们只有一条出路，那就是§Y胜利§!。\n还有一条出路：死亡。\n§R死亡不属于工人阶级！！！§!"
+ SP_WARPEACE_RUS_ARN_WT:0 "兵行险道，鼠目寸光。"
+ SP_WARPEACE_RUS_ARR_WT:0 "爱国者未必是胜利者，败北者亦不是殉道者。"
+ SP_WARPEACE_RUS_URS_WT:0 "反动的俄罗斯死去，哥萨克匪帮亦为她陪葬。"
+ SP_WARPEACE_RUS_TCG_WT:0 "孟什维克终于赤裸裸地站在白军与外国干涉军一边，\n在各地建立自己的‘苏维埃政权’，试图与人民为敌！"
+ SP_WARPEACE_RUS_DON_WT:0 "从此再无哥萨克，和他们的疆土与梦。"
 
  SP_WARPEACE_Germany_civilwar_BAV_LT:0 "我们的纲领是永存的，它将使全人类获得解放。"
  SP_WARPEACE_Germany_civilwar_GER_LT:0 "服从，永远不是自由的代名词。"
  SP_WARPEACE_Germany_civilwar_NAU_LT:0 "叛徒终将被审判，这是亘古不变的真理。"
+
+ SP_WARPEACE_Ukraine_civilwar_WRU_LT:0 "覆巢之下，安有完卵。"
+ SP_WARPEACE_Ukraine_civilwar_RPS_LT:0 "子弹射穿我们的胸膛，但理想永存街垒之上！"
+ SP_WARPEACE_Ukraine_civilwar_TRZ_LT:0 "人的幸福，是一片要用鲜血、\n牺牲和劳动来播种的田地。"
+ SP_WARPEACE_Ukraine_civilwar_UPR_LT:0 "凶手彼得留拉的血已经喷溅在基辅，这将提醒人们他对乌克兰犯下的残暴罪行。"

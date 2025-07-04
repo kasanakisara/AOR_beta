@@ -10,10 +10,35 @@ defined_text = { # 战争总结
 					NOT = { original_tag = SWE }
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
-					NOT = { original_tag = RUS }
 					NOT = { original_tag = GER }
 					NOT = { original_tag = NAU }
 					NOT = { original_tag = BAV }
+					NOT = { original_tag = POL }
+					NOT = { original_tag = ROM }
+					NOT = { original_tag = GLC }
+					NOT = { original_tag = RUS }
+					NOT = { original_tag = GNR }
+					NOT = { original_tag = VGE }
+					NOT = { original_tag = TMS }
+					NOT = { original_tag = TAJ }
+					NOT = { original_tag = UKR }
+					NOT = { original_tag = FER }
+					NOT = { original_tag = BYA }
+					NOT = { original_tag = NEN }
+					NOT = { original_tag = KOM }
+					NOT = { original_tag = ALT }
+					NOT = { original_tag = CSU }
+					NOT = { original_tag = ARU }
+					NOT = { original_tag = ARN }
+					NOT = { original_tag = ARR }
+					NOT = { original_tag = TCG }
+					NOT = { original_tag = IUS }
+					NOT = { original_tag = UZB }
+					NOT = { original_tag = KHI }
+					NOT = { original_tag = KYR }
+					NOT = { original_tag = URS }
+					NOT = { original_tag = CAU }
+					NOT = { original_tag = DON }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -21,10 +46,36 @@ defined_text = { # 战争总结
 					NOT = { original_tag = DEN }
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
-					NOT = { original_tag = ARU }
 					NOT = { original_tag = GER }
 					NOT = { original_tag = NAU }
 					NOT = { original_tag = BAV }
+					NOT = { original_tag = WRU }
+					NOT = { original_tag = UPR }
+					NOT = { original_tag = TRZ }
+					NOT = { original_tag = RPS }
+					NOT = { original_tag = RUS }
+					NOT = { original_tag = GNR }
+					NOT = { original_tag = VGE }
+					NOT = { original_tag = TMS }
+					NOT = { original_tag = TAJ }
+					NOT = { original_tag = UKR }
+					NOT = { original_tag = FER }
+					NOT = { original_tag = BYA }
+					NOT = { original_tag = NEN }
+					NOT = { original_tag = KOM }
+					NOT = { original_tag = ALT }
+					NOT = { original_tag = CSU }
+					NOT = { original_tag = ARU }
+					NOT = { original_tag = ARN }
+					NOT = { original_tag = ARR }
+					NOT = { original_tag = TCG }
+					NOT = { original_tag = IUS }
+					NOT = { original_tag = UZB }
+					NOT = { original_tag = KHI }
+					NOT = { original_tag = KYR }
+					NOT = { original_tag = URS }
+					NOT = { original_tag = CAU }
+					NOT = { original_tag = DON }
 				}
 				# ORA和ARG都将使用特殊战争总结
 			}
@@ -43,17 +94,6 @@ defined_text = { # 战争总结
 		}
 		localization_key = SP_WARPEACE_ORA_ARG_W
 	}
-	text = { #ARG胜ORA
-		trigger = {
-			event_target:winning_country = {
-				original_tag = ARG
-			}
-			event_target:losing_country = {
-				original_tag = ORA
-			}
-		}
-		localization_key = SP_WARPEACE_ORA_ARG_L
-	}
 
 	text = { #SWE胜DEN
 		trigger = {
@@ -67,7 +107,7 @@ defined_text = { # 战争总结
 		localization_key = SP_WARPEACE_SWE_DEN_W
 	}
 
-	text = { #FIC胜FIN或反之
+	text = { #芬兰内战
 		trigger = {
 			event_target:winning_country = {
 				OR = {
@@ -89,10 +129,58 @@ defined_text = { # 战争总结
 	text = { #俄国内战
 		trigger = {
 			event_target:winning_country = {
-				original_tag = RUS 
+				OR = {
+					original_tag = ARU
+					original_tag = ARN
+					original_tag = ARR
+					original_tag = TCG
+					original_tag = IUS
+					original_tag = UZB
+					original_tag = KHI
+					original_tag = KYR
+					original_tag = URS
+					original_tag = CAU
+					original_tag = RUS
+					original_tag = GNR
+					original_tag = VGE
+					original_tag = TMS
+					original_tag = TAJ
+					original_tag = UKR
+					original_tag = FER
+					original_tag = BYA
+					original_tag = NEN
+					original_tag = KOM
+					original_tag = ALT
+					original_tag = CSU 
+					original_tag = DON
+				}
 			}
 			event_target:losing_country = {
-				original_tag = ARU
+				OR = {
+					original_tag = ARU
+					original_tag = ARN
+					original_tag = ARR
+					original_tag = TCG
+					original_tag = IUS
+					original_tag = UZB
+					original_tag = KHI
+					original_tag = KYR
+					original_tag = URS
+					original_tag = CAU
+					original_tag = RUS
+					original_tag = GNR
+					original_tag = VGE
+					original_tag = TMS
+					original_tag = TAJ
+					original_tag = UKR
+					original_tag = FER
+					original_tag = BYA
+					original_tag = NEN
+					original_tag = KOM
+					original_tag = ALT
+					original_tag = CSU
+					original_tag = CSU 
+				}
 			}
 		}
 		localization_key = SP_WARPEACE_RUS_ARU_W
@@ -117,6 +205,29 @@ defined_text = { # 战争总结
 		}
 		localization_key = SP_WARPEACE_Germany_civilwar_W
 	}
+
+	text = { #清算战争
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = UKR
+					original_tag = POL
+					original_tag = ROM
+					original_tag = GLC
+					original_tag = RUS
+				}
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = UPR
+					original_tag = WRU
+					original_tag = TRZ
+					original_tag = RPS
+				}
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_War_W
+	}
 }
 defined_text = { # 战争结语
 	name = Getwarpeacet
@@ -136,10 +247,35 @@ defined_text = { # 战争结语
 					NOT = { original_tag = SWE }
 					NOT = { original_tag = FIC }
 					NOT = { original_tag = FIN }
-					NOT = { original_tag = RUS }
 					NOT = { original_tag = GER }
 					NOT = { original_tag = NAU }
 					NOT = { original_tag = BAV }
+					NOT = { original_tag = POL }
+					NOT = { original_tag = ROM }
+					NOT = { original_tag = GLC }
+					NOT = { original_tag = RUS }
+					NOT = { original_tag = GNR }
+					NOT = { original_tag = VGE }
+					NOT = { original_tag = TMS }
+					NOT = { original_tag = TAJ }
+					NOT = { original_tag = UKR }
+					NOT = { original_tag = FER }
+					NOT = { original_tag = BYA }
+					NOT = { original_tag = NEN }
+					NOT = { original_tag = KOM }
+					NOT = { original_tag = ALT }
+					NOT = { original_tag = CSU }
+					NOT = { original_tag = ARU }
+					NOT = { original_tag = ARN }
+					NOT = { original_tag = ARR }
+					NOT = { original_tag = TCG }
+					NOT = { original_tag = IUS }
+					NOT = { original_tag = UZB }
+					NOT = { original_tag = KHI }
+					NOT = { original_tag = KYR }
+					NOT = { original_tag = URS }
+					NOT = { original_tag = CAU }
+					NOT = { original_tag = DON }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -157,6 +293,33 @@ defined_text = { # 战争结语
 					NOT = { original_tag = GER }
 					NOT = { original_tag = NAU }
 					NOT = { original_tag = BAV }
+					NOT = { original_tag = UPR }
+					NOT = { original_tag = WRU }
+					NOT = { original_tag = TRZ }
+					NOT = { original_tag = RPS }
+					NOT = { original_tag = ARU }
+					NOT = { original_tag = ARN }
+					NOT = { original_tag = ARR }
+					NOT = { original_tag = TCG }
+					NOT = { original_tag = IUS }
+					NOT = { original_tag = UZB }
+					NOT = { original_tag = KHI }
+					NOT = { original_tag = KYR }
+					NOT = { original_tag = URS }
+					NOT = { original_tag = CAU }
+					NOT = { original_tag = DON }
+					NOT = { original_tag = RUS }
+					NOT = { original_tag = GNR }
+					NOT = { original_tag = VGE }
+					NOT = { original_tag = TMS }
+					NOT = { original_tag = TAJ }
+					NOT = { original_tag = UKR }
+					NOT = { original_tag = FER }
+					NOT = { original_tag = BYA }
+					NOT = { original_tag = NEN }
+					NOT = { original_tag = KOM }
+					NOT = { original_tag = ALT }
+					NOT = { original_tag = CSU }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
@@ -317,19 +480,6 @@ defined_text = { # 战争结语
 		localization_key = SP_WARPEACE_FIC_FIN_LT
 	}
 
-	text = { #RUS胜ARU
-		trigger = {
-			event_target:winning_country = {
-				original_tag = RUS
-				
-			}
-			event_target:losing_country = {
-				original_tag = ARU
-			}
-		}
-		localization_key = SP_WARPEACE_RUS_ARU_WT
-	}
-
 	text = { #德国内战-BAV败
 		trigger = {
 			event_target:winning_country = {
@@ -373,5 +523,158 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_Germany_civilwar_NAU_LT
+	}
+
+	text = { #乌克兰战争-WRU败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = POL
+					original_tag = ROM
+					is_in_faction_with = RUS
+				}
+			}
+			event_target:losing_country = {
+				original_tag = WRU
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_civilwar_WRU_LT
+	}
+
+	text = { #乌克兰战争-WRU败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = POL
+					original_tag = ROM
+					original_tag = GLC
+					is_in_faction_with = RUS
+				}
+			}
+			event_target:losing_country = {
+				original_tag = WRU
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_civilwar_WRU_LT
+	}
+
+	text = { #乌克兰战争-UPR败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = POL
+					original_tag = ROM
+					original_tag = GLC
+					is_in_faction_with = RUS
+				}
+			}
+			event_target:losing_country = {
+				original_tag = UPR
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_civilwar_UPR_LT
+	}
+
+	text = { #乌克兰战争-RPS败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = POL
+					original_tag = GLC
+				}
+			}
+			event_target:losing_country = {
+				original_tag = RPS
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_civilwar_RPS_LT
+	}
+
+	text = { #乌克兰战争-TRZ败
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = POL
+					original_tag = GLC
+				}
+			}
+			event_target:losing_country = {
+				original_tag = TRZ
+			}
+		}
+		localization_key = SP_WARPEACE_Ukraine_civilwar_TRZ_LT
+	}
+
+	## 俄国内战 ##
+	text = { #白军-ARN败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = ARN
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_ARN_WT
+	}
+
+	text = { #白军-ARU败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = ARU
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_ARU_WT
+	}
+
+	text = { #白军-URS败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = URS
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_URS_WT
+	}
+
+	text = { #白军-ARR败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = ARR
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_ARR_WT
+	}
+
+	text = { #白军-TCG败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = TCG
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_TCG_WT
+	}
+
+	text = { #白军-DON败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = DON
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_DON_WT
 	}
 }
