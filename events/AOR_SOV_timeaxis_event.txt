@@ -318,11 +318,8 @@ country_event = {
 
 	option = {
 		name = KYR.2.a
-		every_country = {
-			limit = { is_in_faction_with = RUS }
-			white_peace = KYR
-		}
 		RUS = {
+			white_peace = KYR
 			country_event = { id = KYR.3 days = 2 }
 		}
 		

@@ -16,8 +16,9 @@ country_event = {
 			declare_war_on = {
 				target = GRE
 				type = take_claimed_state
-				}
+			}
 		}
+		news_event = {id = AOR_news.29}
 }
 }
 country_event = {

@@ -104,10 +104,9 @@ country_event = {
 				target = TUR
 				type = take_claimed_state
 				}
-			add_ideas = {
-				Take_the_initiative_to_attack
-			}
+			add_ideas = Take_the_initiative_to_attack
 		}
+		news_event = {id = AOR_news.29}
 		
 	}
 }

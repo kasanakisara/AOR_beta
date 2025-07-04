@@ -179,7 +179,7 @@ defined_text = { # 战争总结
 					original_tag = KOM
 					original_tag = ALT
 					original_tag = CSU
-					original_tag = CSU 
+					original_tag = DON
 				}
 			}
 		}
@@ -605,6 +605,18 @@ defined_text = { # 战争结语
 		localization_key = SP_WARPEACE_Ukraine_civilwar_TRZ_LT
 	}
 
+	text = { #全世界暴打塞努西
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ITA
+			}
+			event_target:losing_country = {
+				original_tag = LBA
+			}
+		}
+		localization_key = SP_WARPEACE_ITA_LBA_WT
+	}
+
 	## 俄国内战 ##
 	text = { #白军-ARN败
 		trigger = {
@@ -676,5 +688,41 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_RUS_DON_WT
+	}
+
+	text = { #白军-IUS败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = IUS
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_IUS_WT
+	}
+
+	text = { #白军-CAU败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = CAU
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_CAU_WT
+	}
+
+	text = { #红军-TMS败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = ARU
+			}
+			event_target:losing_country = {
+				original_tag = TMS
+			}
+		}
+		localization_key = SP_WARPEACE_ARU_TMS_WT
 	}
 }

@@ -512,7 +512,7 @@ news_event = { #芬兰陷入对峙
 	}
 }
 
-news_event = { #鲁普雷希特登基
+news_event = { #希土战争开战
 	id = AOR_news.29
 	title = AOR_news.29.t
 	desc = AOR_news.29.d
