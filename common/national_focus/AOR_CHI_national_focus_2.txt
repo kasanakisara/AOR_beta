@@ -147,7 +147,7 @@ focus_tree = {
 					}
 				}
 				654 = {
-					#transfer_state_to = RUS
+					transfer_state_to = RUS
 				}
 			}
 			#if = {
@@ -163,11 +163,11 @@ focus_tree = {
 			if = {
 				limit = {
 					920 = {
-						#is_owned_by = CHI
+						is_owned_by = CHI
 				    }
 				}
 				920 = {
-					#transfer_state_to = RUS
+					transfer_state_to = RUS
 				}
 			}
 		}
