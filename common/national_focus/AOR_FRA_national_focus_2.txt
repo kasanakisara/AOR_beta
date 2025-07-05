@@ -278,7 +278,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Build_CNR #筹建CNR
-		icon = AOR_FRA_Build_CNR
+		icon = GFX_goal_AOR_FRA_Build_CNR
 		relative_position_id = AOR_FRA_Fostering_local_businesses
 		prerequisite = { focus = AOR_FRA_Fostering_local_businesses }
 		
@@ -307,7 +307,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_With_the_power_of_money #以货币的力量
-		icon = AOR_FRA_With_the_power_of_money
+		icon = GFX_goal_AOR_FRA_With_the_power_of_money
 		relative_position_id = AOR_FRA_Build_CNR
 		prerequisite = { focus = AOR_FRA_Build_CNR }
 		prerequisite = { focus = AOR_FRA_Make_concessions_to_trade_unions }
@@ -339,7 +339,7 @@ focus_tree = {
 	#####################################北部重建计划##################################
 	focus = {
 		id = AOR_FRA_Northern_Reconstruction_Plan #北部重建计划
-		icon = AOR_FRA_Northern_Reconstruction_Plan
+		icon = GFX_goal_AOR_FRA_Northern_Reconstruction_Plan
 		relative_position_id = AOR_FRA_With_the_power_of_money
 		prerequisite = { focus = AOR_FRA_With_the_power_of_money }
 		
@@ -369,7 +369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Reshaping_the_civil_industry #再塑民用工业
-		icon = AOR_FRA_Reshaping_the_civil_industry
+		icon = GFX_goal_AOR_FRA_Reshaping_the_civil_industry
 		relative_position_id = AOR_FRA_Northern_Reconstruction_Plan
 		prerequisite = { focus = AOR_FRA_Northern_Reconstruction_Plan }
 		
@@ -399,7 +399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Consumer_goods_come_first #消费品先行
-		icon = AOR_FRA_Consumer_goods_come_first
+		icon = GFX_goal_AOR_FRA_Consumer_goods_come_first
 		relative_position_id = AOR_FRA_Reshaping_the_civil_industry
 		prerequisite = { focus = AOR_FRA_Reshaping_the_civil_industry }
 		
@@ -429,7 +429,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Develop_electric_power_enterprises #发展电力企业
-		icon = AOR_FRA_Develop_electric_power_enterprises
+		icon = GFX_goal_AOR_FRA_Develop_electric_power_enterprises
 		relative_position_id = AOR_FRA_Reshaping_the_civil_industry
 		prerequisite = { focus = AOR_FRA_Reshaping_the_civil_industry }
 		
@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Renovation_of_the_Northern_Railway_network #修整北部铁路网
-		icon = AOR_FRA_Renovation_of_the_Northern_Railway_network
+		icon = GFX_goal_AOR_FRA_Renovation_of_the_Northern_Railway_network
 		relative_position_id = AOR_FRA_Consumer_goods_come_first
 		prerequisite = { focus = AOR_FRA_Consumer_goods_come_first }
 		
@@ -489,7 +489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Promote_the_construction_of_the_Rhone_dam #推动罗纳河大坝建设
-		icon = AOR_FRA_Promote_the_construction_of_the_Rhone_dam
+		icon = GFX_goal_AOR_FRA_Promote_the_construction_of_the_Rhone_dam
 		relative_position_id = AOR_FRA_Develop_electric_power_enterprises
 		prerequisite = { focus = AOR_FRA_Develop_electric_power_enterprises }
 		
@@ -519,7 +519,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Reshaping_the_military_industry #重构军用工业
-		icon = AOR_FRA_Reshaping_the_military_industry
+		icon = GFX_goal_AOR_FRA_Reshaping_the_military_industry
 		relative_position_id = AOR_FRA_Northern_Reconstruction_Plan
 		prerequisite = { focus = AOR_FRA_Northern_Reconstruction_Plan }
 		
@@ -640,8 +640,8 @@ focus_tree = {
 	####################################################################################################
 	#####################################世界和联盟######################################################
 	focus = {
-		id = AOR_FRA_The_world_and_the_Union #
-		icon = AOR_FRA_The_world_and_the_Union
+		id = AOR_FRA_The_world_and_the_Union #世界各联盟
+		icon = GFX_goal_AOR_FRA_The_world_and_the_Union
 		relative_position_id = AOR_FRA_Shackles
 		prerequisite = { focus = AOR_FRA_Shackles }
 	
@@ -673,7 +673,7 @@ focus_tree = {
  	}
 	 focus = { 
 		id = AOR_FRA_A_trip_to_Athens #雅典之行
-		icon = AOR_FRA_A_trip_to_Athens
+		icon = GFX_goal_AOR_FRA_A_trip_to_Athens
 		relative_position_id = AOR_FRA_The_world_and_the_Union
 		prerequisite = { focus = AOR_FRA_The_world_and_the_Union }
 	
@@ -998,7 +998,7 @@ focus_tree = {
 	############################################议会和政府#################################################
 	focus = {
 		id = AOR_FRA_Parliament_and_government #议会和政府
-		icon = AOR_FRA_Parliament_and_government
+		icon = GFX_goal_AOR_FRA_Parliament_and_government
 		relative_position_id = AOR_FRA_Shackles
 		prerequisite = { focus = AOR_FRA_Shackles }
 		
@@ -1027,7 +1027,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AOR_FRA_Internal_rectification_of_party_affairs #内整党务
-		icon = AOR_FRA_Internal_rectification_of_party_affairs
+		icon = GFX_goal_AOR_FRA_Internal_rectification_of_party_affairs
 		relative_position_id = AOR_FRA_Parliament_and_government
 		prerequisite = { focus = AOR_FRA_Parliament_and_government }
 		

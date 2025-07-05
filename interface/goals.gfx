@@ -6,15 +6,55 @@ spriteTypes = {
 	###FRA######
 
 	SpriteType = {
-		name = "GFX_goal_AOR_FRA_after_the_war"
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union" #世界和联盟
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_A_trip_to_Athens" #雅典
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_A_trip_to_Athens.png"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Parliament_and_government" #政府与议会
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Parliament_and_government.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Internal_rectification_of_party_affairs" #整顿党务
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Internal_rectification_of_party_affairs.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Reshaping_the_civil_industry" #民工
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Reshaping_the_civil_industry.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Reshaping_the_military_industry" #军工
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Reshaping_the_military_industry.png"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Northern_Reconstruction_Plan" #北部重建
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Northern_Reconstruction_Plan.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Build_CNR" #cnr
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Build_CNR.png"			
+	}		
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_With_the_power_of_money"  #货币
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_With_the_power_of_money.png"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_Make_concessions_to_trade_unions" #让步工会
+		texturefile = "gfx/interface/goals/FRA/AOR_FRA_Make_concessions_to_trade_unions.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_after_the_war" #大战之后
 		texturefile = "gfx/interface/goals/FRA/AOR_FRA_after_the_war.png"			
 	}
 	SpriteType = {
-		name = "GFX_goal_AOR_FRA_The_New_Future_of_the_Republic"
+		name = "GFX_goal_AOR_FRA_The_New_Future_of_the_Republic" #新共和国
 		texturefile = "gfx/interface/goals/FRA/AOR_FRA_The_New_Future_of_the_Republic.png"			
 	}		
 	SpriteType = {
-		name = "GFX_goal_AOR_FRA_a_thousand_things_wait_to_be_done"
+		name = "GFX_goal_AOR_FRA_a_thousand_things_wait_to_be_done" 
 		texturefile = "gfx/interface/goals/FRA/AOR_FRA_a_thousand_things_wait_to_be_done.png"			
 	}	
 	SpriteType = {
