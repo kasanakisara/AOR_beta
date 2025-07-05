@@ -10,7 +10,7 @@ focus_tree={
 	default=no
 	continuous_focus_position = { x = 1500  y = 2000 }
 	focus={
-		id=BEL_People_exile_who_cry_with
+		id = BEL_People_exile_who_cry_with
 		icon = GFX_goal_BEL_People_exile_who_cry_with
 		x=7
 		y=0
@@ -30,7 +30,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=BEL_last_hope
+		id = BEL_last_hope
 		icon = GFX_goal_BEL_last_hope
 		x=7
 		y=1
@@ -203,15 +203,15 @@ focus_tree={
 		}
 		available_if_capitulated=yes
 		completion_reward={
-				295 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-		add_manpower = -674
+			295 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			add_manpower = -674
 		}
 	}
 	focus={
@@ -226,11 +226,11 @@ focus_tree={
 		}
 		available_if_capitulated=yes
 		completion_reward={
-		add_stability = 0.1
-		add_war_support = 0.05
-		country_event = BEL.29
+			add_stability = 0.1
+			add_war_support = 0.05
+			country_event = BEL.29
+			}
 		}
-	}
 	focus={
 		id=BEL_Slaves_in_cornfields
 		icon = GFX_goal_BEL_Slaves_in_cornfields
