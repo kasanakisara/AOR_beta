@@ -714,6 +714,42 @@ defined_text = { # 战争结语
 		localization_key = SP_WARPEACE_RUS_CAU_WT
 	}
 
+	text = { #白军-KHI败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = KHI
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_KHI_WT
+	}
+
+	text = { #白军-UZB败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = UZB
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_UZB_WT
+	}
+
+	text = { #白军-CAU败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = CAU
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_CAU_WT
+	}
+
 	text = { #红军-TMS败
 		trigger = {
 			event_target:winning_country = {
