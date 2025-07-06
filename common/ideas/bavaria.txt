@@ -671,7 +671,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_dying_bureaucracy
 
 			modifier = {
 				stability_factor = 0.05
@@ -690,7 +690,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_dying_bureaucracy
 
 			modifier = {
 				stability_factor = -0.1
@@ -709,7 +709,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = GFX_rom_carol_ii_hedonist
+			picture = GFX_idea_BAV_dying_bureaucracy
 
 			modifier = {
 				war_support_factor = -0.30
