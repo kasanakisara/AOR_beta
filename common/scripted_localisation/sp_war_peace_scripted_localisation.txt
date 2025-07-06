@@ -276,6 +276,8 @@ defined_text = { # 战争结语
 					NOT = { original_tag = URS }
 					NOT = { original_tag = CAU }
 					NOT = { original_tag = DON }
+					NOT = { original_tag = US1 }
+					NOT = { original_tag = US2 }
 				}
 				event_target:losing_country = {
 					NOT = { original_tag = ORA }
@@ -320,6 +322,8 @@ defined_text = { # 战争结语
 					NOT = { original_tag = KOM }
 					NOT = { original_tag = ALT }
 					NOT = { original_tag = CSU }
+					NOT = { original_tag = US1 }
+					NOT = { original_tag = US2 }
 				}
 				# ORA和ARG都将使用特殊战争结语
 			}
@@ -430,7 +434,7 @@ defined_text = { # 战争结语
 		}
 		localization_key = SP_WARPEACE_US1_US2_WT
 	}
-	text = { #US2胜PRC
+	text = { #US2胜USA
 		trigger = {
 			event_target:winning_country = {
 				original_tag = US2
@@ -700,6 +704,42 @@ defined_text = { # 战争结语
 			}
 		}
 		localization_key = SP_WARPEACE_RUS_IUS_WT
+	}
+
+	text = { #白军-CAU败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = CAU
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_CAU_WT
+	}
+
+	text = { #白军-KHI败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = KHI
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_KHI_WT
+	}
+
+	text = { #白军-UZB败
+		trigger = {
+			event_target:winning_country = {
+				is_in_faction_with = RUS
+			}
+			event_target:losing_country = {
+				original_tag = UZB
+			}
+		}
+		localization_key = SP_WARPEACE_RUS_UZB_WT
 	}
 
 	text = { #白军-CAU败

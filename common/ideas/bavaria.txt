@@ -387,7 +387,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_Extreme_democratic_rampant_1
 
 			modifier = {
 				drift_defence_factor = -0.25
@@ -401,8 +401,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
-
+			picture = GFX_Extreme_democratic_rampant_1
 			modifier = {
 				conscription = -0.010
 				drift_defence_factor = 0.25
@@ -417,7 +416,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_Extreme_democratic_rampant_1
 
 			modifier = {
 				conscription = 0.010
@@ -432,7 +431,7 @@ ideas = {
 				original_tag = BAV
 				always = no
 			}
-			picture = idea_BAV_Soviet_guard
+			picture = GFX_Extreme_democratic_rampant_1
 
 			modifier = {
 				conscription = -0.010
