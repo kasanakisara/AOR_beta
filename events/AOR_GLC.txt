@@ -57,6 +57,12 @@ country_event = {
 					transfer_troops = yes 
 				}
 			}
+			POL = {
+				annex_country = { 
+					target = KKW
+					transfer_troops = yes 
+				}
+			}
 		}
 		else_if = { #波兰清算委员会与政府开战
 			limit ={
