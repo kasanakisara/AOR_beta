@@ -211,7 +211,7 @@ ideas = {
 
 		AOR_FRA_Millerand_President = { #叛徒总统
 
-		picture = GFX_idea_AOR_FRA_Millerand_President
+		#picture = GFX_idea_AOR_FRA_Millerand_President
 
 			modifier = {
 				stability_factor = -0.2

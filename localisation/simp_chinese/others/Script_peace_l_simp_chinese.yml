@@ -49,10 +49,10 @@
  SP_WARPEACE_RUS_ARU_W:0 "在决定俄罗斯和布尔什维克命运的§V苏俄内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_Germany_civilwar_W:0 "在决定德意志命运的§g德国内战§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
  SP_WARPEACE_Ukraine_War_W:0 "在§V清算烈火中§!的§g加里西亚-西乌克兰战争§!之中\n§Y[losing_country.GetNameWithFlag]§!被§Y[winning_country.GetNameWithFlag]§!击败，宣布投降"
- #特殊
+
 ##战争结语
  SP_WARPEACE_DEFAULT_T:0 "战争能被终结，但战争不能终结一切"
- #特殊
+
  SP_WARPEACE_ORA_ARG_WT:0 "“他们不是革命的， 而是保守的。 不仅如此， 他们甚至是反动的，因为他们力图使历史的车轮倒转。”"
  SP_WARPEACE_ORA_ARG_LT:0 "当无产阶级还陶醉于为它开辟的伟大前景并且认真地埋头讨论各种社会问题时，旧的社会力量却在集结、联合、醒悟，并获得了国内群众的意外支持。"
 

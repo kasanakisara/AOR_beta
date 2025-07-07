@@ -2027,9 +2027,6 @@
 			value = GFX_NAU_zuoxian_jingjixian
 		}
 		cost = 0.00
-		allow_branch = { #临时的玩意
-			has_country_flag = NAU_junzhengfu
-		}
 		x = 26
 		y = 0
 

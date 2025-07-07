@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1919.8.1.01
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "BHU"
 		default = yes
 		
 		"RUS"={
@@ -214,6 +214,14 @@ bookmarks = {
 			focuses = {
 			}
 		}
+
+		"BHU"={
+			history = "BHU_GATHERING_STORM_DESC"
+			ideology = Absolutism
+			ideas = { }
+			focuses = { }
+		}
+
 		effect = {
 			set_variable = { duqujiemian_var = 1 }
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
