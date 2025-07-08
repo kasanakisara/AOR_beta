@@ -493,122 +493,122 @@ ideologies = {
 	#威权民主主义
 	AUT_democratic = {
 	
-	types = {
+		types = {
+			
+			authoritarianism = {
+			}
+
+			patriarch = {
+			}
+
+			limited = {
+			}
+
+			oligarchy = {
+			}
+
+			warlord = {
+			}
+
+			uni_san = {
+			}
+
+			confuism = {
+			}
+
+			corporatism = {
+			}
+
+		}
+	
+		dynamic_faction_names = {
+		}
 		
-		authoritarianism = {
+		color = { 46 104 114 }
+		
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = no
+			can_guarantee_other_ideologies = yes
 		}
-
-		patriarch = {
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.20	
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.10
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
 		}
-
-		limited = {
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.10 #plus 50% trade opinion
 		}
-
-		oligarchy = {
-		}
-
-		warlord = {
-		}
-
-		uni_san = {
-		}
-
-		confuism = {
-		}
-
-		corporatism = {
-		}
-
-		}
-	
-	dynamic_faction_names = {
-	}
-	
-	color = { 46 104 114 }
-	
-	rules = {
-		can_create_collaboration_government = yes
-		can_declare_war_on_same_ideology = yes
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		can_lower_tension = no
-		can_guarantee_other_ideologies = yes
-	}
-	
-	can_host_government_in_exile = yes
-	
-	war_impact_on_world_tension = 0.20	
-	faction_impact_on_world_tension = 0.1
-	
-	modifiers = {
-		join_faction_tension = 0.10
-		lend_lease_tension = 0.10
-		send_volunteers_tension = 0.00
-		guarantee_tension = 0.25
-		annex_cost_factor = 0.5
-		civilian_intel_to_others = 20.0
-		army_intel_to_others = 5.0
-		navy_intel_to_others = 20.0
-		airforce_intel_to_others = 5
-	}
-	
-	faction_modifiers = {
-		faction_trade_opinion_factor = 0.10 #plus 50% trade opinion
-	}
-	ai_neutral = yes # uses the democratic AI behaviour
+		ai_neutral = yes # uses the democratic AI behaviour
 	}
 
 	
 	#伊斯兰民主主义
 	ISL_democratic = {
 	
-	types = {
+		types = {
+			
+			constitutionalism = {
+			}
+
+			islamdemcratic = {
+			}
+
+			}
 		
-		constitutionalism = {
+		dynamic_faction_names = {
 		}
-
-		islamdemcratic = {
+		
+		color = { 36 130 67 }
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = no
+			can_guarantee_other_ideologies = no
 		}
-
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.20	
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.10
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.00
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
 		}
-	
-	dynamic_faction_names = {
-	}
-	
-	color = { 36 130 67 }
-	
-	rules = {
-		can_create_collaboration_government = no
-		can_declare_war_on_same_ideology = yes
-		can_force_government = no
-		can_send_volunteers = no
-		can_puppet = no
-		can_lower_tension = no
-		can_guarantee_other_ideologies = no
-	}
-	
-	can_host_government_in_exile = yes
-	
-	war_impact_on_world_tension = 0.20	
-	faction_impact_on_world_tension = 0.1
-	
-	modifiers = {
-		join_faction_tension = 0.10
-		lend_lease_tension = 0.10
-		send_volunteers_tension = 0.00
-		guarantee_tension = 0.25
-		annex_cost_factor = 0.5
-		civilian_intel_to_others = 20.0
-		army_intel_to_others = 5.0
-		navy_intel_to_others = 20.0
-		airforce_intel_to_others = 5
-	}
-	
-	faction_modifiers = {
-		faction_trade_opinion_factor = 0.10 #plus 50% trade opinion
-	}
-	ai_neutral = yes # uses the democratic AI behaviour
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.10 #plus 50% trade opinion
+		}
+		ai_neutral = yes # uses the democratic AI behaviour
 	}
 
 
