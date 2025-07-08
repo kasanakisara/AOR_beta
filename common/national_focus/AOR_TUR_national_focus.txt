@@ -150,6 +150,7 @@ focus_tree = {
 			focus = AOR_TUR_approach_Lenin_sultanate
 		}
 		completion_reward = {
+			custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
 			add_popularity = {
 				ideology = Marxism
 				popularity = -0.02

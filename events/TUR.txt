@@ -365,7 +365,7 @@ country_event = { #
 			base = 1
 		}
 		add_manpower = -1
-		remove_character = TUR_Mustapha_Subhi
+		kill_ideology_leader = Marxism
 		promote_character = TUR_Ethem_Nejat
 	}
 }
