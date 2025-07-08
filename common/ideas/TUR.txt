@@ -59,5 +59,17 @@ ideas = {
 				command_power_factor = -0.75
 			}
 		}
+		TUR_treaty_mudros_1_idea = {
+			name = TUR_treaty_mudros_idea
+			desc = TUR_treaty_mudros_idea_desc
+			removal_cost = -1
+				
+			#picture = 
+			modifier = {
+				recruitable_population_factor = -0.30
+				war_support_factor = -0.25
+				command_power_factor = -0.50
+			}
+		}
 	}
 }
