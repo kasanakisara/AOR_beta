@@ -1,4 +1,19 @@
 characters = {
+	TUR_Ahmed_Tevfik_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Ahmed_Tevfik_Pasha.png"
+			}
+		}
+		country_leader={
+			ideology = oligarchy
+			desc = "TUR_Ahmed_Tevfik_Pasha_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
 	TUR_KING={
 		name= "Muhammad VI"
 		portraits={

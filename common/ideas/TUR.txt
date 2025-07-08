@@ -38,16 +38,26 @@ ideas = {
 				army_attack_factor =  0.3
 				stability_factor = 0.2
 				war_support_factor = 0.2
-    }
-    }
-	TUR_SOLTAN_MUHMUD = {
-		removal_cost = -1
-			
-		picture = GFX_idea_HUN_hungarian_monarchy_fascism
-		desc = M_VI_DESC
-		modifier = {
-			stability_factor = 0.05
-			war_support_factor = -0.1
+    		}
+    	}
+		TUR_Sultan_Mohammed_VI_idea = {
+			removal_cost = -1
+				
+			#picture = 
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+		TUR_treaty_mudros_idea = {
+			removal_cost = -1
+				
+			#picture = 
+			modifier = {
+				recruitable_population_factor = -0.35
+				war_support_factor = -0.25
+				command_power_factor = -0.75
+			}
+		}
 	}
-}
 }
