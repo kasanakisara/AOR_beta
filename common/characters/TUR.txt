@@ -29,6 +29,36 @@ characters = {
 			id=-1
 		}
 	}
+	TUR_Mustapha_Subhi = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Mustapha_Subhi.png"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "TUR_Mustapha_Subhi_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Ethem_Nejat = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Ethem_Nejat.png"
+			}
+		}
+		country_leader={
+			ideology = REV_soc
+			desc = "TUR_Ethem_Nejat_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
 	TUR_KING={
 		name= "Muhammad VI"
 		portraits={

@@ -56,7 +56,7 @@ ideas = {
 			modifier = {
 				recruitable_population_factor = -0.35
 				war_support_factor = -0.25
-				command_power_factor = -0.75
+				command_power_gain = -0.75
 			}
 		}
 		TUR_treaty_mudros_1_idea = {
@@ -68,7 +68,7 @@ ideas = {
 			modifier = {
 				recruitable_population_factor = -0.30
 				war_support_factor = -0.25
-				command_power_factor = -0.50
+				command_power_gain = -0.50
 			}
 		}
 	}

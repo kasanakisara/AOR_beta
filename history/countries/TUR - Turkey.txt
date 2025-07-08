@@ -5,6 +5,8 @@ set_cosmetic_tag = TUR_sultanate
 oob="TUR"
 recruit_character = TUR_Ahmed_Tevfik_Pasha
 recruit_character = TUR_Damat_Ferid_Pasha
+recruit_character = TUR_Mustapha_Subhi
+recruit_character = TUR_Ethem_Nejat
 
 # Starting tech
 set_technology = {
