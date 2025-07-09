@@ -534,9 +534,22 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.1
-				political_power_cost = 0.1
+				command_power_gain = -0.1
+				political_power_cost = 0.15
 				industrial_capacity_factory = -0.1
-				custom_modifier_tooltip = SWE_Regency_Military_Rule_tt
+				custom_modifier_tooltip = SWE_Regency_Order_add_25_modifier_tt
+			}
+		}
+
+		SWE_Regency_LN_Recongnize = {
+			picture = idea_
+			avaliable = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				custom_modifier_tooltip = SWE_Regency_Political_add_25_modifier_tt
 			}
 		}
 	}
