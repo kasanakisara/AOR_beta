@@ -23,29 +23,30 @@ country_event = {
 
     #那就这样吧  
 	immediate = {
-		news_event = { id = AOR_news.22 }
-		retire_country_leader = yes
-		set_politics = {ruling_party = ISL_democratic}
-		create_country_leader = {
-			name = "Saad Zaghloul"
-			desc = "POLITICS_Saad_Zaghloul_DESC"
-			picture = "gfx/leaders/EGY/Zaghloul.png"
-			expire = "1945.1.1"
-			ideology = constitutionalism
-			traits = {
-				EGY_Egyptian_Independence_Leader EGY_be_eaten_up_with_diseases		
+		hidden_effect = {
+			news_event = { id = AOR_news.22 }
+			retire_country_leader = yes
+			set_politics = {ruling_party = ISL_democratic}
+			create_country_leader = {
+				name = "Saad Zaghloul"
+				desc = "POLITICS_Saad_Zaghloul_DESC"
+				picture = "gfx/leaders/EGY/Zaghloul.png"
+				expire = "1945.1.1"
+				ideology = constitutionalism
+				traits = {
+					EGY_Egyptian_Independence_Leader EGY_be_eaten_up_with_diseases		
+				}
 			}
-		}
-		set_popularities = {
-			Absolutism = 50
-			CON_democratic = 25
-			ISL_democratic = 20
-			FRE_democratic = 5
+			set_popularities = {
+				Absolutism = 50
+				CON_democratic = 25
+				ISL_democratic = 20
+				FRE_democratic = 5
+			}
 		}
 	}	
 	option = {
 		name = EGY.1.a
-		
     }
 }
 
