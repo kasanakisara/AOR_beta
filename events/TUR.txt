@@ -381,7 +381,7 @@ country_event = { #
 		ai_chance = {
 			base = 1
 		}
-		353 = {
+		355 = {
 			set_demilitarized_zone = yes
 		}
 		add_equipment_to_stockpile = {
