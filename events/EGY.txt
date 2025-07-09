@@ -27,11 +27,14 @@ country_event = {
 		retire_country_leader = yes
 		set_politics = {ruling_party = ISL_democratic}
 		create_country_leader = {
-		name = "Saad Zaghloul"
-		desc = "POLITICS_Saad_Zaghloul_DESC"
-		picture = "gfx/leaders/EGY/Zaghloul.png"
-		expire = "1945.1.1"
-		ideology = constitutionalism
+			name = "Saad Zaghloul"
+			desc = "POLITICS_Saad_Zaghloul_DESC"
+			picture = "gfx/leaders/EGY/Zaghloul.png"
+			expire = "1945.1.1"
+			ideology = constitutionalism
+			traits = {
+				EGY_Egyptian_Independence_Leader EGY_be_eaten_up_with_diseases		
+			}
 		}
 		set_popularities = {
 			Absolutism = 50
