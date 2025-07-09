@@ -1,0 +1,43 @@
+AOR_turkish_straits_game_category = {
+	IST_debug_leaning_FRA = {
+
+		icon = GFX_AOR_ENG_anfudangdiminzhonng
+
+		cost = 0
+		days_remove = 0
+
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = {
+				AOR_turkish_straits_game_Progressbar_var = 0
+			}
+		}
+
+	}
+
+	IST_debug_leaning_ENG = {
+
+		icon = GFX_AOR_ENG_anfudangdiminzhonng
+
+		cost = 0
+		days_remove = 0
+
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = {
+				AOR_turkish_straits_game_Progressbar_var = 100
+			}
+		}
+
+	}
+}

@@ -54,7 +54,12 @@
  TUR_Damat_Ferid_Pasha: "达马特·费里德帕夏"
  TUR_Mustapha_Subhi: "穆斯塔法·苏普希"
  TUR_Ethem_Nejat: "埃德姆·内贾特"
-###机制###
+###决议###
+ AOR_turkish_straits_game_category: "争夺海峡"
+ IST_debug_leaning_FRA: "调试：完全倾向§Y[FRA.GetNameWithFlag]§!与§Y[GRE.GetNameWithFlag]§!"
+ IST_debug_leaning_ENG: "调试：完全倾向§Y[ENG.GetNameWithFlag]§!与§Y[TUR.GetNameWithFlag]§!"
+ AOR_turkish_straits_game_gui_info_tt: "海峡托管领的归属权，是协约国与奥斯曼帝国《穆德罗斯停战协议》中悬而未决的一部分。协议中规定，海峡托管领为期一年，随后将“由各国代表共同决定其未来”。因此，在这一年间，英法两国与其各自的代理人——§Y[TUR.GetNameWithFlag]§!与§Y[GRE.GetNameWithFlag]§!将在海峡问题上激烈博弈，只为给己方求得最好的结果。"
+ AOR_turkish_straits_game_leaning_status_tt: "当前海峡托管领前景：[Get_AOR_Turksih_Straits_game_outcome]"
  AOR_Turkish_Straits_race_turkish_leaning_tt: "海峡托管领的归属权将更倾向§Y[TUR.GetNameWithFlag]§!"
  AOR_Turkish_Straits_race_greek_leaning_tt: "海峡托管领的归属权将更倾向§Y[GRE.GetNameWithFlag]§!"
 ###事件###

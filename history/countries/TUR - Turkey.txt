@@ -97,5 +97,8 @@ add_ideas = {
 	TUR_complete_econ_collapse_idea
 }
 
+set_variable = {
+	AOR_turkish_straits_game_Progressbar_var = 50
+}
 
 country_event = { id = AOR_TUR_events.5 days = 135 }
