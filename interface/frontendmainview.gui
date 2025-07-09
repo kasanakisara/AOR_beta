@@ -348,7 +348,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "achievements_button"
-			position = { x = 0 y = 0 }
+			position = { x = -130 y = -78 }
 			quadTextureSprite ="achievements"
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}		
