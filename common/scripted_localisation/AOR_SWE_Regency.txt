@@ -1,0 +1,173 @@
+defined_text = {
+    name = SWE_Regency_Economic_state
+
+    text = {
+        trigger = {
+            tag = SWE
+            OR = {
+                check_variable = { SWE_Regency_Economic_value = 0 compare = more_than_or_equals }
+            }
+        }
+        localization_key = SWE_Regency_Economic_state_I
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                OR = {
+                    check_variable = { SWE_Regency_Economic_value = 20}
+                    AND = {
+                        check_variable = { SWE_Regency_Economic_value > 20 }
+                        check_variable = { SWE_Regency_Economic_value < 40 }
+                    }
+                }
+            }
+        }
+        localization_key = SWE_Regency_Economic_state_II
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Economic_value = 40 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Economic_value < 60 }
+            }
+        }
+        localization_key = SWE_Regency_Economic_state_III
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Economic_value = 60 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Economic_value < 80 }
+            }
+        }
+        localization_key = SWE_Regency_Economic_state_IV
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Economic_value = 80 compare = more_than_or_equals }
+            }
+        }
+        localization_key = SWE_Regency_Economic_state_V
+    }
+}
+
+defined_text = {
+    name = SWE_Regency_Order_state
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Order_value = 0 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Order_value < 20 }
+            }
+        }
+        localization_key = SWE_Regency_Order_state_I
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                OR = {
+                    check_variable = { SWE_Regency_Order_value = 20}
+                    AND = {
+                        check_variable = { SWE_Regency_Order_value > 20 }
+                        check_variable = { SWE_Regency_Order_value < 40 }
+                    }
+                }
+            }
+        }
+        localization_key = SWE_Regency_Order_state_II
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Order_value = 40 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Order_value < 60 }
+            }
+        }
+        localization_key = SWE_Regency_Order_state_III
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Order_value = 60 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Order_value < 80 }
+            }
+        }
+        localization_key = SWE_Regency_Order_state_IV
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Order_value = 80 compare = more_than_or_equals }
+            }
+        }
+        localization_key = SWE_Regency_Order_state_V
+    }
+}
+
+defined_text = {
+    name = SWE_Regency_Political_state
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Political_value = 0 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Political_value < 20 }
+            }
+        }
+        localization_key = SWE_Regency_Political_state_I
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                OR = {
+                    check_variable = { SWE_Regency_Political_value = 20}
+                    AND = {
+                        check_variable = { SWE_Regency_Political_value > 20 }
+                        check_variable = { SWE_Regency_Political_value < 40 }
+                    }
+                }
+            }
+        }
+        localization_key = SWE_Regency_Political_state_II
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Political_value = 40 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Political_value < 60 }
+            }
+        }
+        localization_key = SWE_Regency_Political_state_III
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Political_value = 60 compare = more_than_or_equals }
+                check_variable = { SWE_Regency_Political_value < 80 }
+            }
+        }
+        localization_key = SWE_Regency_Political_state_IV
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                check_variable = { SWE_Regency_Political_value = 80 compare = more_than_or_equals }
+            }
+        }
+        localization_key = SWE_Regency_Political_state_V
+    }
+}

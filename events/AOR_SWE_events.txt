@@ -3,6 +3,7 @@ add_namespace = Tosca
 add_namespace = NOR_Axis
 add_namespace = SWE_Haakon_Death
 add_namespace = SWE_Folkhemmet
+add_namespace = SWE_Regency_Conference
 
 country_event = {
     id = SWE.1 #哈康之死
@@ -957,5 +958,16 @@ country_event = {
     option = {
         name = SWE_Haakon_Death.5.a
         custom_effect_tooltip = SWE_swe_Fenmark_tt
+    }
+}
+
+
+country_event = {
+    id = SWE_Regency_Conference.1 #王政会议-开场
+    title = SWE_Regency_Conference.1.t
+    desc = SWE_Regency_Conference.1.d
+    is_triggered_only = yes
+    option = {
+        name = SWE_Regency_Conference.1.a
     }
 }
