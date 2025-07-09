@@ -1,21 +1,6 @@
 ideas = {
 
 	country = {
-		Humiliation_before_death = {
-		
-			removal_cost = -1
-			
-			picture = idea_Humiliation_before_death
-			
-			modifier = {
-				min_export = 0.2
-				research_speed_factor = 0.05
-				stability_factor = -0.3
-				war_support_factor = -0.3
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor = 0.2
-			}
-		}
 		The_storm_is_gathering = {
 		
 			removal_cost = -1
@@ -69,6 +54,21 @@ ideas = {
 				recruitable_population_factor = -0.30
 				war_support_factor = -0.25
 				command_power_gain = -0.50
+			}
+		}
+		TUR_complete_econ_collapse_idea = {
+		
+			removal_cost = -1
+			
+			picture = idea_Humiliation_before_death
+			
+			modifier = {
+				min_export = 0.2
+				research_speed_factor = 0.05
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.2
 			}
 		}
 	}

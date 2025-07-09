@@ -59,15 +59,15 @@ characters = {
 			id=-1
 		}
 	}
-	TUR_KING={
+	TUR_Muhammad_VI_Sultan={
 		name= "Muhammad VI"
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/a32i1-hlu54.dds"
+				large="gfx/leaders/TUR/TUR_Muhammad_VI_sultan.dds"
 			}
 		}
 		country_leader={
-			ideology = constitutionalism
+			ideology = monarchism
 			desc = "M_VI_DESC"
 			traits={ 
  }
