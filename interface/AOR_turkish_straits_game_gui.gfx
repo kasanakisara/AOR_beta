@@ -9,7 +9,7 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/TUR_GUI/AOR_istanbul_game_progressbar_Britain.png"
 		size = { x = 300 y = 34 }
 		effectFile = "gfx/FX/progress.lua"
-		horizontal = no
+		horizontal = yes
 	}
 	spriteType = {
 		name = "GFX_AOR_turkish_straits_game_Progressbar"
