@@ -15,7 +15,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "AOR_turkish_straits_game_leaning_status"
-			position = { x = 11 y = 80 }
+			position = { x = 11 y = 100 }
 			text = AOR_turkish_straits_game_leaning_status_tt
 			text_color_code = Y
 			font = "hoi_24header"
@@ -24,37 +24,36 @@ guiTypes = {
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_Progressbar_Container"
-			position = { x = 100 y = 120 }
+			position = { x = 100 y = 140 }
 			scale = 1
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_Progressbar_Container"
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_Progressbar"
-			position = { x = 102 y = 122 }
+			position = { x = 102 y = 142 }
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_Progressbar"
-			pdx_tooltip = MLY_revolution_GUI_Map_W_tt
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_FRA_flag"
-			position = { x = 75 y = 125 }
+			position = { x = 75 y = 145 }
 			scale = 1
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_FRA_flag"
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_GRE_flag"
-			position = { x = 75 y = 145 }
+			position = { x = 75 y = 165 }
 			scale = 1
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_GRE_flag"
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_ENG_flag"
-			position = { x = 425 y = 125 }
+			position = { x = 425 y = 145 }
 			scale = 1
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_ENG_flag"
 		}
 		iconType = {
 			name = "AOR_turkish_straits_game_TUR_flag"
-			position = { x = 425 y = 145 }
+			position = { x = 425 y = 165 }
 			scale = 1
 			quadTextureSprite = "GFX_AOR_turkish_straits_game_TUR_flag"
 		}
