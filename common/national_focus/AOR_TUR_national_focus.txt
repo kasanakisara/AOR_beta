@@ -1,0 +1,199 @@
+focus_tree = {
+	id = AOR_TUR
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1300 }
+	#苦涩残局
+	focus = {
+		id = AOR_TUR_bitter_remains
+		#icon = GFX_AOR_Eric_new_045
+		cost = 5.00
+		x = 0
+		y = 0
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	#镇压联进委残部
+	focus = {
+		id = AOR_TUR_crackdown_Ittihadists
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_bitter_remains
+		}
+		x = -0
+		y = 1
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+			add_political_power = 5
+		}
+
+	}
+	#申请调整条款
+	focus = {
+		id = AOR_TUR_apply_refined_treaty
+		#icon = GFX_AOR_Eric_new_056
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_bitter_remains
+		}
+		x = 3
+		y = 1
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+			add_political_power = -15
+			country_event = { id = AOR_TUR_events.1 }
+		}
+	}
+	#重整国民经济
+	focus = {
+		id = AOR_TUR_salvage_economy
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_bitter_remains
+		}
+		x = -3
+		y = 1
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+		}
+	}
+	#对德引渡条款
+	focus = {
+		id = AOR_TUR_GER_prisoner_exchange
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_crackdown_Ittihadists
+		}
+		x = -0
+		y = 2
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+			add_war_support = -0.02
+			add_manpower = 126
+			country_event = { id = AOR_TUR_events.3 }
+		}
+	}
+	#安卡拉工人救济处
+	focus = {
+		id = AOR_TUR_Ankara_worker_rescues
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_salvage_economy
+		}
+		x = -4
+		y = 2
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+		}
+	}
+	#集中征税举措
+	focus = {
+		id = AOR_TUR_focused_taxation
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_salvage_economy
+		}
+		x = -2
+		y = 2
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+		}
+	}
+	#秘密接触苏维埃
+	focus = {
+		id = AOR_TUR_approach_Lenin_sultanate
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_apply_refined_treaty
+		}
+		x = 2
+		y = 2
+		relative_position_id = AOR_TUR_bitter_remains
+		mutually_exclusive = {
+			focus = AOR_TUR_reward_for_loyalty
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.03
+			}
+			add_command_power = 50
+			add_political_power = 25
+		}
+	}
+	#凭效忠以获利
+	focus = {
+		id = AOR_TUR_reward_for_loyalty
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_apply_refined_treaty
+		}
+		x = 4
+		y = 2
+		relative_position_id = AOR_TUR_bitter_remains
+		mutually_exclusive = {
+			focus = AOR_TUR_approach_Lenin_sultanate
+		}
+		completion_reward = {
+			custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
+			add_popularity = {
+				ideology = Marxism
+				popularity = -0.02
+			}
+			country_event = { id = AOR_TUR_events.4 }
+		}
+	}
+	#签署最终判决
+	focus = {
+		id = AOR_TUR_sign_serves_treaty
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Ankara_worker_rescues
+		}
+		prerequisite = {
+			focus = AOR_TUR_focused_taxation
+		}
+		prerequisite = {
+			focus = AOR_TUR_GER_prisoner_exchange
+		}
+		prerequisite = {
+			focus = AOR_TUR_approach_Lenin_sultanate
+			focus = AOR_TUR_reward_for_loyalty
+		}
+		x = 0
+		y = 3
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+		}
+	}
+	#屏息敛声......
+	focus = {
+		id = AOR_TUR_all_voices_silent
+		#icon = GFX_AOR_Eric_new_055
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_sign_serves_treaty
+		}
+		x = 0
+		y = 4
+		relative_position_id = AOR_TUR_bitter_remains
+		completion_reward = {
+		}
+	}
+}

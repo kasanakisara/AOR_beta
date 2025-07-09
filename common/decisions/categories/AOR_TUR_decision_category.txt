@@ -1,0 +1,16 @@
+AOR_turkish_straits_game_category = {
+	icon = GFX_AOR_NAU_ceshiguoce
+	scripted_gui = AOR_turkish_straits_game_gui
+
+	visible = {
+		OR = {
+			original_tag = TUR
+			original_tag = GRE
+			original_tag = ENG
+			original_tag = FRA
+		}
+		country_exists = IST
+	}
+	visible_when_empty = yes
+	priority = 1000
+}

@@ -1,12 +1,13 @@
 ﻿capital = 49
 
+set_cosmetic_tag = TUR_sultanate
+
 oob="TUR"
-recruit_character = TUR_COMMU
-recruit_character = TUR_KEMEL
-recruit_character = TUR_PACA_3
-recruit_character = TUR_PACA_2
-recruit_character = TUR_PACA_1
-recruit_character = TUR_KING
+recruit_character = TUR_Muhammad_VI_Sultan
+recruit_character = TUR_Ahmed_Tevfik_Pasha
+recruit_character = TUR_Damat_Ferid_Pasha
+recruit_character = TUR_Mustapha_Subhi
+recruit_character = TUR_Ethem_Nejat
 
 # Starting tech
 set_technology = {
@@ -73,84 +74,31 @@ set_research_slots = 3
 set_convoys = 10
 set_stability = 0.45
 
-1939.1.1 = {
-
-	add_political_power = 1197
-	add_command_power = 100
-	
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-}
-
 set_politics = {
-	ruling_party = ISL_democratic
+	ruling_party = AUT_democratic
 	last_election = "1919.1.1"
 	election_frequency = 48
 	elections_allowed = no
 
 }
 set_popularities = {
-	ISL_democratic = 39
-	Marxism = 10
-	CON_democratic = 25
-	Absolutism = 10
-	Special = 16
+	AUT_democratic = 39
+	Marxism = 3
+	CON_democratic = 23
+	Absolutism = 5
+	Fascism = 4
+	FRE_democratic = 15
+	Special = 11
 }
 
 add_ideas = {
-	Humiliation_before_death
-	The_storm_is_gathering
+	TUR_Sultan_Mohammed_VI_idea
+	TUR_treaty_mudros_idea
+	TUR_complete_econ_collapse_idea
 }
 
+set_variable = {
+	AOR_turkish_straits_game_Progressbar_var = 50
+}
 
+country_event = { id = AOR_TUR_events.5 days = 135 }

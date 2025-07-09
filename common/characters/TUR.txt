@@ -1,16 +1,76 @@
 characters = {
-	TUR_KING={
-		name= "Muhammad VI"
+	TUR_Ahmed_Tevfik_Pasha = {
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/a32i1-hlu54.dds"
+				large="gfx/leaders/TUR/TUR_Ahmed_Tevfik_Pasha.png"
 			}
 		}
 		country_leader={
-			ideology = constitutionalism
+			ideology = oligarchy
+			desc = "TUR_Ahmed_Tevfik_Pasha_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Damat_Ferid_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Damat_Ferid_Pasha.png"
+			}
+		}
+		country_leader={
+			ideology = limited
+			desc = "TUR_Damat_Ferid_Pasha_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Mustapha_Subhi = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Mustapha_Subhi.png"
+			}
+		}
+		country_leader={
+			ideology = revolutionism
+			desc = "TUR_Mustapha_Subhi_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Ethem_Nejat = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Ethem_Nejat.png"
+			}
+		}
+		country_leader={
+			ideology = REV_soc
+			desc = "TUR_Ethem_Nejat_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Muhammad_VI_Sultan={
+		name= "Muhammad VI"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Muhammad_VI_sultan.dds"
+			}
+		}
+		country_leader={
+			ideology = monarchism
 			desc = "M_VI_DESC"
 			traits={ 
- }
+ 			}
 			expire="1930.1.1.1"
 			id=-1
 		}

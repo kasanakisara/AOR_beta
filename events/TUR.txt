@@ -295,3 +295,98 @@ country_event = { #苏丹的去与留？
 	set_cosmetic_tag = TUR_SOLTAN_ALIVE
 	}
 }
+
+add_namespace = AOR_TUR_events
+country_event = { #
+	id = AOR_TUR_events.1
+	title = AOR_TUR_events.1.t
+	desc = AOR_TUR_events.1.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.1.a
+		ai_chance = {
+			base = 50
+		}
+		custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
+		ENG = { country_event = { id = AOR_TUR_events.2 } }
+	}
+	option = {
+		name = AOR_TUR_events.1.b
+		ai_chance = {
+			base = 50
+		}
+		add_command_power = 5
+		swap_ideas = {
+			remove_idea = TUR_treaty_mudros_idea
+			add_idea = TUR_treaty_mudros_1_idea
+		}
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.2
+	title = AOR_TUR_events.2.t
+	desc = AOR_TUR_events.2.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.2.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.3
+	title = AOR_TUR_events.3.t
+	desc = AOR_TUR_events.3.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.3.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.4
+	title = AOR_TUR_events.4.t
+	desc = AOR_TUR_events.4.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.4.a
+		ai_chance = {
+			base = 1
+		}
+		add_manpower = -1
+		kill_ideology_leader = Marxism
+		promote_character = TUR_Ethem_Nejat
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.5
+	title = AOR_TUR_events.5.t
+	desc = AOR_TUR_events.5.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.5.a
+		ai_chance = {
+			base = 1
+		}
+		355 = {
+			set_demilitarized_zone = yes
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1350
+		}
+	}
+}
