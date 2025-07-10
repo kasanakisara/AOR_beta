@@ -520,10 +520,10 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.2
-				political_power_cost = 0.2
 				Marxism_drift = 0.1
+				Fascism_drift = 0.1
+				Absolutism_drift = 0.1
+				custom_modifier_tooltip = SWE_Regency_Emergency_Crisis_tt
 			}
 		}
 

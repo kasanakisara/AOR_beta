@@ -62,7 +62,7 @@ focus_tree = {
 	focus = {
 		id = AOR_SWE_Hold_a_political_conference
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = AOR_SWE_Authorize_military_rule
 			focus = AOR_SWE_Request_League_of_Nations_intervention
@@ -82,6 +82,9 @@ focus_tree = {
 		y = 2
 		select_effect = {
 			country_event = { id = SWE_Regency_Conference.1 }
+		}
+		completion_reward = {
+			custom_effect_tooltip = SWE_Regency_Conference_focus_tt
 		}
 
 	}
