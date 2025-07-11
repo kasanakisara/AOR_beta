@@ -30,6 +30,19 @@ country_event = {
             country_event = { id = SWE_Haakon_Death.1 days = 5 }
             news_event = { id = AOR_news.90 }
             add_ideas = SWE_Regency_Council
+            kill_country_leader = yes
+            set_politics = {
+                ruling_party = AUT_democratic
+            }
+            set_country_leader_ideology = authoritarianism
+            add_country_leader_role = {
+                character = SWE_Emergency_Commitee_Leaders
+                promote_leader = yes
+                country_leader = {
+                    ideology = authoritarianism
+                    traits = { }
+                }
+            }
         }
         custom_effect_tooltip = SWE_Haakon_Death_tt
         ## 第二阶段完工后删除这段代码 ##
@@ -39,7 +52,7 @@ country_event = {
 }
 
 country_event = {
-    id = SWE.2 #鲁普雷希特登基
+    id = SWE.2 #鲁普雷希特登基——永久废弃
     title = SWE.2.t
     desc = SWE.2.d
     is_triggered_only = yes
@@ -880,6 +893,13 @@ country_event = {
             remove_ideas = SWE_Beyond_Nation
             remove_ideas = SWE_Liberte_Spirit
             country_event = { id = SWE_Haakon_Death.2 days = 5 }
+            set_popularities = {
+                SOC_democratic = 10
+                AUT_democratic = 15
+                Marxism = 30
+                Fascism = 25
+                Absolutism = 20
+            }
         }
         custom_effect_tooltip = SWE_Haakon_I_tt
     }
@@ -924,13 +944,20 @@ country_event = {
             set_country_flag = SWE_Emergency_State
             add_ideas = SWE_Regency_Emergency_Crisis
             complete_national_focus = AOR_SWE_Panic_and_Terror
-            set_variable = { SWE_Regency_Economic_value = 20 }
-            set_variable = { SWE_Regency_Order_value = 20 }
-            set_variable = { SWE_Regency_Political_value = 20 }
+            set_variable = { SWE_Regency_Economic_value = 30 }
+            set_variable = { SWE_Regency_Order_value = 30 }
+            set_variable = { SWE_Regency_Political_value = 30 }
+            set_variable = { SWE_Regency_Crisis_stability_factor = -0.425 }
+            set_variable = { SWE_Regency_Crisis_factory_efficency = -0.25 }
+            set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.2 }
+            set_variable = { SWE_Regency_Crisis_conscription_factor = -0.5 }
+            set_variable = { SWE_Regency_Crisis_political_power_cost = 0.4 }
+            set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 80 }
             RUS = {
                 country_event = { id = SWE_Haakon_Death.4 days = 7 }
             }
             country_event = { id = SWE_Haakon_Death.5 days = 7 }
+            add_dynamic_modifier = { modifier = AOR_SWE_Regency_Crisis_dynamic_modifier }
         }
         custom_effect_tooltip = SWE_Haakon_III_tt
     }

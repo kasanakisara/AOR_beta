@@ -995,6 +995,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SWE_Provide_Third_Choice
 		}
+		available = {
+			has_government = SOC_democratic
+		}
 		x = 9
 		y = 13
 		completion_reward = {

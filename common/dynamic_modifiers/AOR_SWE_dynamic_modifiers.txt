@@ -36,3 +36,17 @@ AOR_SWE_Folkhemmet_dynamic_modifier = {
     production_factory_start_efficiency_factor = SWE_Folkhemmet_factory_efficency
     industrial_capacity_factory = SWE_Folkhemmet_industrial_capacity
 }
+
+AOR_SWE_Regency_Crisis_dynamic_modifier = {
+    enable = {
+        always = yes
+    }
+    stability_factor = SWE_Regency_Crisis_stability_factor
+    production_factorys_start_efficiency_factor = SWE_Regency_Crisis_factory_efficency
+    industrial_capacity_factory = SWE_Regency_Crisis_factory_efficency
+    conscription_factor = SWE_Regency_Crisis_conscription_factor
+    surrender_limit = SWE_Regency_Crisis_conscription_factor
+    production_speed_buildings_factor = SWE_Regency_Crisis_production_speed_buildings_factor
+    political_power_cost = SWE_Regency_Crisis_political_power_cost
+    war_support_factor = SWE_Regency_Crisis_stability_factor
+}

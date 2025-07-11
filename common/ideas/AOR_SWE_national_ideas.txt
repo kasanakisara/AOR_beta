@@ -67,6 +67,7 @@ ideas = {
 				political_power_factor = 0.1
 				political_power_gain = 0.2
 				CON_democratic_drift = 0.2
+				SOC_democratic_drift = 0.2
 				custom_modifier_tooltip = SWE_modifier_down_localisation
 			}
 		}
@@ -138,7 +139,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				consumer_goods_factor = -0.2
-				FRE_democratic_drift = 0.1
+				SOC_democratic_drift = 0.1
 				custom_modifier_tooltip = SWE_modifier_down_localisation
 			}
 		}
@@ -148,7 +149,8 @@ ideas = {
 			allowed = { always = yes }
 			modifier = {
 				stability_factor = 0.1
-				CON_democratic_drift = 0.1
+				SOC_democratic_drift = 0.1
+				FRE_democratic_drift = 0.1
 			}
 		}
 
@@ -226,6 +228,7 @@ ideas = {
 				consumer_goods_expected_value = 0.25
 				stability_weekly = 0.025
 				FRE_democratic_drift = 0.2
+				SOC_democratic_drift = 0.2
 				drift_defence_factor = -0.2
 			}
 		}
