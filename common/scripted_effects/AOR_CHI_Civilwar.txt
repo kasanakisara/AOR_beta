@@ -1121,6 +1121,16 @@ CHI_civil_war_12 = {
 		create_faction = Zhiyang_Union
 		add_to_faction = CHI
 		white_peace = CHI
+		add_state_core = 758
+		add_state_core = 607
+		add_state_core = 608
+		add_state_core = 878
+		add_state_core = 614
+		add_state_core = 877
+		add_state_core = 597
+		add_state_core = 757
+		add_state_core = 880
+
 	}
 	NAN = {
 		set_cosmetic_tag = NAN
