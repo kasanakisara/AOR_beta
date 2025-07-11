@@ -729,6 +729,7 @@ focus_tree = {
 			has_global_flag = RUS_flag_Soviet_union
 		}
 		completion_reward = {
+			set_global_flag = AOR_USSR_formed_global_flag
 			load_focus_tree = AOR_SOV_2
 			custom_effect_tooltip = AOR_GER_Newline_tt
 			add_country_leader_trait = SOV_lenin_founder_of_alliance
@@ -740,8 +741,11 @@ focus_tree = {
 				every_state = {
 					limit = {
 						CONTROLLER = {
-							is_subject_of = RUS
-							has_autonomy_state = AOR_SOV_Closely_executed_alliance
+							OR = {
+								is_subject_of = RUS
+								has_autonomy_state = AOR_SOV_Closely_executed_alliance
+							}
+							original_tag = RUS
 						}
 					}
 					RUS = { add_state_core = PREV }
@@ -755,6 +759,18 @@ focus_tree = {
 							target = PREV
 							transfer_troops = no
 						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FIN_The_civil_war_is_over
+					}
+					FIC = {
+						set_cosmetic_tag = FIC_Finland_Soviet
+					}
+					set_autonomy = { 
+						target = FIC 
+						autonomy_state = AOR_SOV_Closely_executed_alliance
 					}
 				}
 			}

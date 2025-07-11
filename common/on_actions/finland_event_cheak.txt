@@ -1,5 +1,5 @@
 on_actions = {
-	on_week_FIN = {
+	on_weekly_FIN = {
 		effect = {
 		    if = {
 				limit = {
@@ -10,7 +10,7 @@ on_actions = {
 	    	}
 	    } 
     }
-	on_week_FIN = {
+	on_weekly_FIN = {
 		effect = {
 		    if = {
 				limit = {
@@ -21,7 +21,7 @@ on_actions = {
 	    	}
 	    } 
     }
-	on_week_FIN = {
+	on_weekly_FIN = {
 		effect = {
 		    if = {
 				limit = {
@@ -33,16 +33,19 @@ on_actions = {
 	    	}
 	    } 
     }
-	on_week_FIN = {
+	on_weekly_FIN = {
 		effect = {
-			OR = {
-				FIN = { exists = no }
-				FIC = { exists = no}
-				}
+			if = { FIC = { exists = no} }
 			country_event = { id = Finland.4 }
-	    	}
-	    } 
-    }
+	    }
+	}
+	on_weekly_FIC = {
+		effect = {
+			if = { FIN = { exists = no} }
+			country_event = { id = Finland.4 }
+	    }
+	}
+}
 
 	
 

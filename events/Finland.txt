@@ -313,7 +313,7 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting 
 
 	fire_only_once = yes
-	mean_time_to_happen = { days = 0 }
+	mean_time_to_happen = { days = 1 }
 
 		trigger = {
 			OR = {
@@ -326,9 +326,9 @@ country_event = {
 			}
 			has_country_flag = FIN_civilwar
 		}
-    	option = { 
+    	option = {
 	    	name = The_civil_war_is_over 
-            ai_chance = { factor = 80}
+            ai_chance = { factor = 80 }
 			SOV = { set_country_flag = FIN_The_civil_war_is_over }
 			set_country_flag = The_civil_war_is_over
 			add_stability = 0.1
@@ -341,7 +341,18 @@ country_event = {
 			else = {
 				news_event = { id = AOR_news.195 }
 			}
-			
+			if = {
+				limit = {
+					has_global_flag = AOR_USSR_formed_global_flag
+				}
+				set_cosmetic_tag = FIC_Finland_Soviet
+				SOV = {
+					set_autonomy = { 
+						target = FIC 
+						autonomy_state = AOR_SOV_Closely_executed_alliance
+					}
+				}
+			}
         }
 }
 
