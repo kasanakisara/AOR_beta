@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 200
 			tag = SWE
 		}
 	}
@@ -35,8 +35,9 @@ focus_tree = {
 		x = 21
 		y = 1
 		completion_reward = {
-			add_political_power = -50
+			add_command_power = -50
 			add_to_variable = { SWE_Regency_Order_value = 5 }
+			custom_effect_tooltip = SWE_Regency_Order_add_5_tt
 			add_ideas = SWE_Regency_Military_Rule
 		}
 
@@ -50,18 +51,41 @@ focus_tree = {
 		}
 		x = 25
 		y = 1
+		completion_reward = {
+			add_to_variable = { SWE_Regency_Political_value = 5 }
+			custom_effect_tooltip = SWE_Regency_Political_add_5_tt
+			add_ideas = SWE_Regency_LN_Recongnize
+			custom_effect_tooltip = AOR_SWE_Request_League_of_Nations_intervention_tt
+		}
 
 	}
 	focus = {
 		id = AOR_SWE_Hold_a_political_conference
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = AOR_SWE_Authorize_military_rule
 			focus = AOR_SWE_Request_League_of_Nations_intervention
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SWE_Regency_Order_III_tt
+				check_variable = { SWE_Regency_Order_value = 40 compare = more_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = SWE_Regency_Political_III_tt
+				check_variable = { SWE_Regency_Political_value = 40 compare = more_than_or_equals }
+			}
+		}
+		cancelable = no
 		x = 23
 		y = 2
+		select_effect = {
+			country_event = { id = SWE_Regency_Conference.1 }
+		}
+		completion_reward = {
+			custom_effect_tooltip = SWE_Regency_Conference_focus_tt
+		}
 
 	}
 	### 经济线由此开始 ###
@@ -71,6 +95,9 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = AOR_SWE_Hold_a_political_conference
+		}
+		allow_branch = {
+			has_completed_focus = AOR_SWE_Hold_a_political_conference
 		}
 		x = 23
 		y = 5
@@ -398,6 +425,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AOR_SWE_The_Only_King
 		}
+		allow_branch = {
+			has_completed_focus = AOR_SWE_Hold_a_political_conference
+		}
 		x = 6
 		y = 3
 
@@ -671,6 +701,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = AOR_SWE_Continue_the_dual_monarchy
+		}
+		allow_branch = {
+			has_completed_focus = AOR_SWE_Hold_a_political_conference
 		}
 		x = 41
 		y = 3

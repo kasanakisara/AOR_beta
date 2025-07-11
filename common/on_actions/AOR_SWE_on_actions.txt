@@ -347,6 +347,32 @@ on_actions = {
 					}
 				}
 			}
+
+			### 摄政危机 ###
+			if = {
+				limit = {
+					has_country_flag = SWE_Emergency_State
+				}
+
+				## 增幅初始化 ##
+				set_variable = { SWE_Regency_Economic_value_add = 0 }
+				set_variable = { SWE_Regency_Order_value_add = 0 }
+				set_variable = { SWE_Regency_Political_value_add = 0 }
+
+				## 民族精神你赢了 ##
+				if = {
+					limit = { has_idea = SWE_Regency_Military_Rule }
+					add_to_variable = { SWE_Regency_Order_value_add = 2.5 }
+				}
+				if = {
+					limit = { has_idea = SWE_Regency_LN_Recongnize }
+					add_to_variable = { SWE_Regency_Political_value_add = 2.5 }
+				}
+
+				## 历史唯物主义你赢了 ##
+
+				## 牛顿第三定律你赢了 ##
+			}
 		}
 	}
 
@@ -575,9 +601,6 @@ on_actions = {
 				}
 
 			}
-
-			## Группа Крови на рукаве
-
 
 			#### 联邦一梦 ####
 			if = {
