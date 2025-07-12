@@ -90,7 +90,7 @@ ideas = {
 		    picture = GFX_idea_USA_the_divided_nation8
 		    allowed = { always = yes }
 		    modifier = {
-		    stability_factor = -0.4
+		    stability_factor = -0.45
 			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.1
@@ -102,7 +102,7 @@ ideas = {
 		    picture = GFX_idea_USA_the_divided_nation9
 		    allowed = { always = yes }
 		    modifier = {
-		    stability_factor = -0.45
+		    stability_factor = -0.4
 			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.20
@@ -114,7 +114,7 @@ ideas = {
 		    picture = GFX_idea_USA_the_divided_nation10
 		    allowed = { always = yes }
 		    modifier = {
-		    stability_factor = -0.45
+		    stability_factor = -0.4
 			political_power_cost =0.35
 		    political_advisor_cost_factor = 0.5
 			war_support_factor = 0.20

@@ -51,6 +51,7 @@ add_ideas = {
 
 recruit_character = SWE_Haakon_VII_I
 recruit_character = SWE_Haakon_VII_II
+recruit_character = SWE_Emergency_Commitee_Leaders
 
 ##Norweign Independence
 set_variable = { SWE_Norweign_Independence_value = 25 }

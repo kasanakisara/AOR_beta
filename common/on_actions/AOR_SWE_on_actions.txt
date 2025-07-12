@@ -369,9 +369,206 @@ on_actions = {
 					add_to_variable = { SWE_Regency_Political_value_add = 2.5 }
 				}
 
-				## 历史唯物主义你赢了 ##
+				## 稳定度的影响 ##
+				if = {
+					limit = { has_stability < 50 }
+					add_to_variable = { SWE_Regency_Order_value_add = -0.2 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.2 }
+				}
+				else_if = {
+					limit = { has_stability < 25 }
+					add_to_variable = { SWE_Regency_Order_value_add = -0.25 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.25 }
+				}
+				else_if = {
+					limit = { has_stability < 0 }
+					add_to_variable = { SWE_Regency_Order_value_add = -0.5 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.5 }
+				}
 
-				## 牛顿第三定律你赢了 ##
+				## 历史唯物主义你赢了 ##
+				if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 20 }
+					}
+					add_to_variable = { SWE_Regency_Order_value_add = -0.5 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 40 }
+					}
+					add_to_variable = { SWE_Regency_Order_value_add = -0.25 }
+					add_to_variable = { SWE_Regency_Political_value_add = 0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 60 }
+					}
+					add_to_variable = { SWE_Regency_Order_value_add = -0.2 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.2 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 80 }
+					}
+					add_to_variable = { SWE_Regency_Order_value_add = -0.1 }
+					add_to_variable = { SWE_Regency_Political_value_add = -0.1 }
+				}
+
+				## 加权 ##
+
+				add_to_variable = { SWE_Regency_Economic_value = var:SWE_Regency_Economic_value_add }
+				add_to_variable = { SWE_Regency_Order_value = var:SWE_Regency_Order_value_add }
+				add_to_variable = { SWE_Regency_Political_value = var:SWE_Regency_Political_value_add }
+
+				## 检测会不会崩溃 ##
+				if = {
+					OR = {
+						check_variable = { SWE_Regency_Economic_value < 20 }
+						check_variable = { SWE_Regency_Order_value < 20 }
+						check_variable = { SWE_Regency_Political_value < 20 }
+					}
+					#?#
+				}
+
+				## 上界 ##
+				if = {
+					check_variable = { SWE_Regency_Economic_value > 100 }
+					set_variable = { SWE_Regency_Economic_value = 100 }
+				}
+				if = {
+					check_variable = { SWE_Regency_Order_value > 100 }
+					set_variable = { SWE_Regency_Order_value = 100 }
+				}
+				if = {
+					check_variable = { SWE_Regency_Political_value > 100 }
+					set_variable = { SWE_Regency_Political_value = 100 }
+				}
+
+				## 检测修正们 ##
+				set_variable = { SWE_Regency_Crisis_stability_factor = 0 }
+				set_variable = { SWE_Regency_Crisis_factory_efficency = 0 }
+				set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = 0 }
+				set_variable = { SWE_Regency_Crisis_conscription_factor = 0 }
+				set_variable = { SWE_Regency_Crisis_political_power_cost = 0 }
+				set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 0 }
+				# 经济 #
+				if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 20 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
+					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.25 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 40 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.175 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.25 }
+					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.2 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 60 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
+					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.15 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 80 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
+					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Economic_value < 101 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
+					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
+				}
+
+				# 秩序 #
+				if = {
+					limit = {
+						check_variable = { SWE_Regency_Order_value < 20 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.3 }
+					add_to_variable = { SWE_Regency_Crisis_conscription_factor = -0.5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Order_value < 40 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.25 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.4 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Order_value < 60 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Order_value < 80 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Order_value < 101 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.1 }
+				}
+
+				# 政权 #
+				if = {
+					limit = {
+						check_variable = { SWE_Regency_Political_value < 20 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.5 }
+					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 100 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Political_value < 40 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.4 }
+					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 80 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Political_value < 60 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.3 }
+					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 60 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Political_value < 80 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.2 }
+					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 40 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { SWE_Regency_Political_value < 101 }
+					}
+					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.1 }
+					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 20 }
+				}
+				
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 characters={
 	SWE_Emergency_Commitee_Leaders={
-		name= "Emergency Commitee"
+		name = Emergency_Commitee
 		portraits={
 			civilian={
 				large="gfx/leaders/SWE/Emergency-Commitee.dds"
@@ -9,22 +9,6 @@ characters={
 		country_leader={
 			ideology = AUT_democratic
 			desc = "SWE_Emergency_Commitee_leaders_desc"
-			traits={}
-			expire="1965.1.1"
-			id=-1
-		}
-	}
-
-	SWE_Rupprecht_I={
-		name= "Rupprecht I"
-		portraits={
-			civilian={
-				large="gfx/leaders/SWE/Rupprecht-I.dds"
-			}
-		}
-		country_leader={
-			ideology = Absolutism
-			desc = "SWE_Rupprecht_I_desc"
 			traits={}
 			expire="1965.1.1"
 			id=-1
