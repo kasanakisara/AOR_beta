@@ -2,6 +2,7 @@ armored_SOV = {
 
 	available_for = {
 		SOV
+		RUS
 	}
 
 	roles = {
@@ -540,6 +541,7 @@ infantry_SOV = {
 
 	available_for = {
 		SOV
+		RUS
 	}
 
 	roles = {
@@ -860,6 +862,7 @@ marines_SOV = {
 
 	available_for = {
 		SOV
+		RUS
 	}
 
 	roles = {
@@ -958,6 +961,7 @@ paratroopers_SOV = {
 
 	available_for = {
 		SOV
+		RUS
 	}
 
 	roles = {

@@ -891,7 +891,7 @@ country= {
 	PRC_sov_adviser_orginal = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = -0.1
@@ -903,7 +903,7 @@ country= {
 	PRC_sov_adviser_lide = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -915,7 +915,7 @@ country= {
 	PRC_sov_adviser_zhukov = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.1
@@ -928,7 +928,7 @@ country= {
 	PRC_sov_adviser_bizuoliufu = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -941,7 +941,7 @@ country= {
 	PRC_sov_adviser_cuikefu = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -954,7 +954,7 @@ country= {
 	PRC_sov_adviser_woluonofu = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -967,7 +967,7 @@ country= {
 	PRC_sov_adviser_zhukov_achievements = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -978,7 +978,7 @@ country= {
 	PRC_sov_adviser_bizuoliufu_achievements = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -990,7 +990,7 @@ country= {
 	PRC_sov_adviser_cuikefu_achievements = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -1002,7 +1002,7 @@ country= {
 	PRC_sov_adviser_woluonofu_achievements = {
 		picture = prc_gongchanguoji
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 		modifier = {
 			experience_gain_army_factor = 0.05
@@ -1016,7 +1016,7 @@ country= {
 	PRC_ideas_Xinjiang_0 = {
 		picture = generic_local_self_management
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -1026,7 +1026,7 @@ country= {
 	PRC_ideas_tzxx_Xinjiang_1 = {
 		picture = generic_local_self_management
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.5
@@ -1042,7 +1042,7 @@ country= {
 	PRC_ideas_tzxx_Xinjiang_2 = {
 		picture = generic_local_self_management
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.1
@@ -1055,7 +1055,7 @@ country= {
 	PRC_ideas_tzxx_Xinjiang_3 = {
 		picture = generic_local_self_management
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.05
@@ -1066,7 +1066,7 @@ country= {
 	PRC_ideas_Xinjiang_304 = {
 		picture = tur_odpa
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.8
@@ -1080,7 +1080,7 @@ country= {
 	PRC_ideas_Xinjiang_313 = {
 		picture = tur_odpa
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.6
@@ -1094,7 +1094,7 @@ country= {
 	PRC_ideas_Xinjiang_322 = {
 		picture = tur_odpa
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.4
@@ -1108,7 +1108,7 @@ country= {
 	PRC_ideas_Xinjiang_331 = {
 		picture = tur_odpa
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.2
@@ -1122,7 +1122,7 @@ country= {
 	PRC_ideas_Xinjiang_340 = {
 		picture = tur_odpa
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = 0.1
@@ -1136,7 +1136,7 @@ country= {
 	PRC_ideas_Xinjiang_4 = {
 		picture = generic_local_self_management
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_factor = -0.2
@@ -1148,7 +1148,7 @@ country= {
 	PRC_Xinjiang_stalin_partially_compensate_large = {
 		picture = SPR_seize_the_gold_reserves
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = -0.4
@@ -1160,7 +1160,7 @@ country= {
 	PRC_Xinjiang_stalin_partially_compensate_small = {
 		picture = SPR_seize_the_gold_reserves
 		allowed = { original_tag = PRC }
-		cancel = { has_war_with = SOV }
+		cancel = { has_war_with = RUS }
 		allowed_civil_war = { has_government = communism }
 			modifier = {
 				political_power_cost = -0.2
