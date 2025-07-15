@@ -146,6 +146,7 @@ country_event = {
 			news_event = { id = AOR_news.206 }
 		}
 		hidden_effect = {
+			set_global_flag = AOR_entente_dissolved
 			every_country = {
 				limit = {
 					is_in_faction_with = ENG
