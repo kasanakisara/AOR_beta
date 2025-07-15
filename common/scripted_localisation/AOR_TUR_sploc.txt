@@ -3,7 +3,7 @@ defined_text = {
     text = {
         trigger = {
             check_variable = {
-                AOR_turkish_straits_game_Progressbar_var < 20
+                var:global.AOR_turkish_straits_game_Progressbar_var < 20
             }
         }
         localization_key = AOR_turkish_straits_game_GRE_totally
@@ -11,7 +11,7 @@ defined_text = {
     text = {
         trigger = {
             check_variable = {
-                AOR_turkish_straits_game_Progressbar_var < 45
+                var:global.AOR_turkish_straits_game_Progressbar_var < 45
             }
         }
         localization_key = AOR_turkish_straits_game_GRE_partially
@@ -19,7 +19,7 @@ defined_text = {
     text = {
         trigger = {
             check_variable = {
-                AOR_turkish_straits_game_Progressbar_var < 55
+                var:global.AOR_turkish_straits_game_Progressbar_var < 55
             }
         }
         localization_key = AOR_turkish_straits_game_balance
@@ -27,7 +27,7 @@ defined_text = {
     text = {
         trigger = {
             check_variable = {
-                AOR_turkish_straits_game_Progressbar_var < 80
+                var:global.AOR_turkish_straits_game_Progressbar_var < 80
             }
         }
         localization_key = AOR_turkish_straits_game_TUR_partially
@@ -35,7 +35,7 @@ defined_text = {
     text = {
         trigger = {
             check_variable = {
-                AOR_turkish_straits_game_Progressbar_var < 101
+                var:global.AOR_turkish_straits_game_Progressbar_var < 101
             }
         }
         localization_key = AOR_turkish_straits_game_TUR_totally

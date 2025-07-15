@@ -14,10 +14,10 @@ AOR_turkish_straits_game_category = {
 		}
 		complete_effect = {
 			set_variable = {
-				AOR_turkish_straits_game_Progressbar_var = 0
+				var:global.AOR_turkish_straits_game_Progressbar_var = 0
 			}
 			set_variable = {
-				AOR_turkish_straits_game_antiside_var = 100
+				var:global.AOR_turkish_straits_game_antiside_var = 100
 			}
 		}
 
@@ -38,10 +38,10 @@ AOR_turkish_straits_game_category = {
 		}
 		complete_effect = {
 			set_variable = {
-				AOR_turkish_straits_game_Progressbar_var = 100
+				global:AOR_turkish_straits_game_Progressbar_var = 100
 			}
 			set_variable = {
-				AOR_turkish_straits_game_antiside_var = 0
+				global:AOR_turkish_straits_game_antiside_var = 0
 			}
 		}
 
