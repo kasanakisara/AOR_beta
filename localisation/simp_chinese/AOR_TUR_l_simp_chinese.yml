@@ -62,6 +62,13 @@
  AOR_turkish_straits_game_leaning_status_tt: "当前海峡托管领前景：[Get_AOR_Turksih_Straits_game_outcome]"
  AOR_Turkish_Straits_race_turkish_leaning_tt: "海峡托管领的归属权将更倾向§Y[TUR.GetNameWithFlag]§!"
  AOR_Turkish_Straits_race_greek_leaning_tt: "海峡托管领的归属权将更倾向§Y[GRE.GetNameWithFlag]§!"
+ AOR_turkish_straits_game_var_showcase_tt: "[?AOR_turkish_straits_game_Progressbar_var]   :   [?AOR_turkish_straits_game_antiside_var]"
+ AOR_turkish_straits_game_GRE_totally: "@GRE §Y希腊§!完全控制"
+ AOR_turkish_straits_game_GRE_partially: "@GRE §Y希腊§!部分控制"
+ AOR_turkish_straits_game_balance: "双方控制相同"
+ AOR_turkish_straits_game_TUR_partially: "@TUR §Y奥斯曼§!部分控制"
+ AOR_turkish_straits_game_TUR_totally: "@TUR §Y奥斯曼§!完全控制"
+ AOR_turkish_straits_game_error: "错误：未检测到变量"
 ###事件###
  TUR.1.t: "对希腊国，开战！"
  TUR.2.t: "迈向社会主义的大路"
