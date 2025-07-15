@@ -56,8 +56,6 @@ characters = {
 	      advisor = {
 	    	cost = 100
 	    	idea_token = CHI_xushuzheng
-
-			
 	     	traits = { army_chief_organizational_2 }
 	    	ai_will_do = { factor = 1.000 }
 	    }
