@@ -103,3 +103,7 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+add_ideas = {
+	comintern_aligned_nation
+}

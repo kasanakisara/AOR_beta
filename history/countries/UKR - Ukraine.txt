@@ -115,5 +115,6 @@ declare_war_on = {
 recruit_character = SOV_ivan_fedorovich_fedko
 recruit_character = SOV_nikolai_ivanovich_muralov
 
-
-
+add_ideas = {
+	comintern_aligned_nation
+}
