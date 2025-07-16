@@ -20,3 +20,30 @@ country_event = {
         set_country_flag = has_recruit_Otto_Liebe
 	}
 }
+
+country_event = {
+	id = DEN.2 #归还汉堡
+	title = DEN.2.t
+	desc = DEN.2.d
+	picture = GFX_DEN_event_2
+	fire_only_once = yes
+
+	trigger = {
+		838 = {
+			is_controlled_by = DEN
+		}
+	}
+
+	mean_time_to_happen = {
+    	days = 10
+	}
+
+    option = {
+		name = DEN.2.a #谈判
+		add_political_power = 75
+		consumer_goods_factor = -0.05
+		GER = {
+			set_state_owner = 838
+		}
+	}
+}
