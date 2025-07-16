@@ -145,18 +145,12 @@ country_event = {
 			limit = { tag = FRA }
 			news_event = { id = AOR_news.206 }
 		}
-		hidden_effect = {
-			set_global_flag = AOR_entente_dissolved
-			every_country = {
-				limit = {
-					is_in_faction_with = ENG
-					is_in_faction_with = FRA
-				}
-				remove_ideas = AOR_Entente_no_war
-			}
+		if = {
+			limit = { tag = ENG }
+			news_event = { id = AOR_spheres_entente.1 }
 		}
-		ENG = {
-			dismantle_faction = yes
+		hidden_effect = {
+			remove_ideas = AOR_Entente_no_war
 		}
 	}
 }
