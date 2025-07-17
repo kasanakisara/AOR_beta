@@ -29,21 +29,31 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		838 = {
-			is_controlled_by = DEN
+		tag = DEN
+		DEN = {
+			has_full_control_of_state = 838
 		}
 	}
 
-	mean_time_to_happen = {
-    	days = 10
+    option = {
+		name = DEN.2.a #谈判
+		country_event = { id = DEN.3}
 	}
+}
+country_event = {
+    id = DEN.3 #归还汉堡
+	title = DEN.2.t
+	desc = DEN.2.d
+	picture = GFX_DEN_event_3
+	fire_only_once = yes
 
     option = {
 		name = DEN.2.a #谈判
 		add_political_power = 75
 		consumer_goods_factor = -0.05
 		GER = {
-			set_state_owner = 838
+			transfer_state = 838
+			add_state_core = 838
 		}
 	}
 }
