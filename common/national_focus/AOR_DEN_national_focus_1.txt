@@ -36,8 +36,12 @@ focus_tree = {
 		completion_reward={
             #加友好度
 			add_opinion_modifier = { target = ENG modifier = Den_deepen_trade_with_uk }
+			add_resource = {
+    			type = steel
+    			amount = 3
+    			state = 1047
+			}
 		}
-
 	}
 	focus = {
 		id = DEN_Deepen_trade_with_Germany
@@ -52,6 +56,11 @@ focus_tree = {
 		completion_reward={
             #加友好度
 			add_opinion_modifier = { target = GER modifier = Den_deepen_trade_with_ger }
+			add_resource = {
+    			type = steel
+    			amount = 3
+    			state = 1047
+			}
 		}
 
 	}
@@ -148,7 +157,7 @@ focus_tree = {
 		y = 4
 
 		completion_reward={
-            		country_event = { id = DEN.first.1 days = 1}
+            country_event = { id = DEN.first.1 days = 1}
 		}
 
 	}
@@ -166,7 +175,7 @@ focus_tree = {
 		y = 5
 
 		completion_reward={
-			load_country_focus_tree = AOR_DEN_national_focus_1
+			load_focus_tree = DEN_easter_crisis_tree
 		}
 	}
 }
