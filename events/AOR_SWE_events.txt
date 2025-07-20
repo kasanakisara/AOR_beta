@@ -997,5 +997,6 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Regency_Conference.1.a
+        custom_effect_tooltip = SWE_Regency_Conference_opening_tt
     }
 }

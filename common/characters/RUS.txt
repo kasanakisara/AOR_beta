@@ -40,6 +40,7 @@ characters = {
 		}
 		country_leader={
 			ideology = leninism
+			desc = SOV_Lenin_desc
 			traits={ SOV_lenin_great_communist_mentor_1 }
 			expire = "1965.1.1.1"
 			id= -1
