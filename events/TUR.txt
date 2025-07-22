@@ -309,6 +309,12 @@ country_event = { #
 		ai_chance = {
 			base = 50
 		}
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_Progressbar_var = 5
+		}
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_antiside_var = -5
+		}
 		custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
 		ENG = { country_event = { id = AOR_TUR_events.2 } }
 	}
@@ -378,6 +384,27 @@ country_event = { #
 	is_triggered_only = yes
 	option = {
 		name = AOR_TUR_events.5.a
+		ai_chance = {
+			base = 1
+		}
+		355 = {
+			set_demilitarized_zone = yes
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1350
+		}
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.6
+	title = AOR_TUR_events.6.t
+	desc = AOR_TUR_events.6.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.6.a
 		ai_chance = {
 			base = 1
 		}
