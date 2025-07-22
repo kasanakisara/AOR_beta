@@ -68,4 +68,48 @@ AOR_turkish_straits_game_category = {
 			custom_effect_tooltip = IST_fake_mission_countdown_tt
 		}
 	}
+	
+	TUR_diplomatic_petitioning_decision = {
+		visible = {
+			original_tag = TUR
+	   	}
+		complete_effect = {
+		}
+	   	remove_effect = {
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_Progressbar_var = 0.5
+			}
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_antiside_var = -0.5
+			}
+			custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
+		}
+	   	cost = 15
+	   	days_remove = 30
+	}
+	
+	TUR_present_bloody_evidence_decision = {
+		visible = {
+			original_tag = TUR
+	   	}
+		complete_effect = {
+			add_manpower = -75
+			add_stability = -0.01
+			add_popularity = {
+				ideology = Marxism
+				popularity = 0.005
+			}
+		}
+	   	remove_effect = {
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_Progressbar_var = 2
+			}
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_antiside_var = -2
+			}
+			custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
+		}
+	   	cost = 20
+	   	days_remove = 45
+	}
 }

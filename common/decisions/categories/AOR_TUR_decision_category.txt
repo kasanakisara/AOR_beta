@@ -14,3 +14,13 @@ AOR_turkish_straits_game_category = {
 	visible_when_empty = yes
 	priority = 1000
 }
+AOR_ottoman_ruins_category = {
+	icon = GFX_AOR_NAU_ceshiguoce
+
+	visible = {
+		original_tag = TUR
+		country_exists = IST
+	}
+	visible_when_empty = yes
+	priority = 900
+}
