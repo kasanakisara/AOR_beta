@@ -465,6 +465,7 @@ country_event = { #
 			set_popularities = {
 				Absolutism = 100
 			}
+			country_event = { id = AOR_TUR_events.10 days = 60 }
 		}
 		set_politics = {
 			ruling_party = Absolutism
@@ -487,5 +488,84 @@ country_event = { #executing Talat
 		add_manpower = -1
 		kill_ideology_leader = Fascism
 		promote_character = TUR_Ahmed_Djemal_Pasha
+	}
+}
+country_event = { #elections
+	id = AOR_TUR_events.10
+	title = AOR_TUR_events.10.t
+	desc = AOR_TUR_events.10.d
+	picture = GFX_events_GRE_5
+	immediate = {
+		hidden_effect = {
+			set_popularities = {
+				Marxism = 35
+				AUT_democratic = 40
+				Fascism = 25
+			}
+			set_party_name = {
+				ideology = Marxism
+				name = TUR_TICSF_party
+				long_name = TUR_TICSF_party_long
+			}
+			set_party_name = {
+				ideology = AUT_democratic
+				name = TUR_CHP_party
+				long_name = TUR_CHP_party_long
+			}
+			set_party_name = {
+				ideology = Fascism
+				name = TUR_TF_party
+				long_name = TUR_TF_party_long
+			}
+			TUR_Mustapha_Kemal_Pasha = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1940.01.01"
+						ideology = authoritarianism
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			promote_character = TUR_Ismail_Enver_Pasha
+			promote_character = TUR_Sefik_Husnu
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.10.a
+		ai_chance = {
+			base = 1
+		}
+		set_cosmetic_tag = TUR_red_republic
+		set_politics = {
+			ruling_party = Marxism
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = AOR_TUR_events.10.b
+		ai_chance = {
+			base = 1
+		}
+		set_cosmetic_tag = TUR_republic
+		set_politics = {
+			ruling_party = AUT_democratic
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = AOR_TUR_events.10.c
+		ai_chance = {
+			base = 1
+		}
+		set_cosmetic_tag = TUR_fascist_regime
+		set_politics = {
+			ruling_party = Fascism
+			elections_allowed = no
+		}
 	}
 }

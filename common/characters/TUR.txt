@@ -67,6 +67,20 @@ characters = {
 			id=-1
 		}
 	}
+	TUR_Sefik_Husnu = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Sefik_Husnu.dds"
+			}
+		}
+		country_leader={
+			ideology = REV_soc
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
 	TUR_Muhammad_VI_Sultan={
 		portraits={
 			civilian={
@@ -160,7 +174,7 @@ characters = {
 		}
 		country_leader = {
 			expire = "1940.01.01"
-			ideology = miliciagov
+			ideology = despotism
 			traits = {
 			}
 			id = -1
