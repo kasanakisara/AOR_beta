@@ -46,4 +46,26 @@ AOR_turkish_straits_game_category = {
 		}
 
 	}
+
+	IST_fake_mission_countdown = {
+		allowed = {
+			always = no
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		cancel_if_not_visible = yes
+		is_good = yes 
+
+		days_mission_timeout = 365
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout IST_fake_mission_countdown"
+			custom_effect_tooltip = IST_fake_mission_countdown_tt
+		}
+	}
 }

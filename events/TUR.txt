@@ -370,6 +370,13 @@ country_event = { #
 		ai_chance = {
 			base = 1
 		}
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_Progressbar_var = 3
+		}
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_antiside_var = -3
+		}
+		custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
 		add_manpower = -1
 		kill_ideology_leader = Marxism
 		promote_character = TUR_Ethem_Nejat
@@ -408,12 +415,7 @@ country_event = { #
 		ai_chance = {
 			base = 1
 		}
-		355 = {
-			set_demilitarized_zone = yes
-		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -1350
-		}
+		retire_country_leader = yes
+		promote_character = TUR_Damat_Ferid_Pasha
 	}
 }

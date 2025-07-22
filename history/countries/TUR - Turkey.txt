@@ -10,6 +10,9 @@ recruit_character = TUR_Mustapha_Subhi
 recruit_character = TUR_Ethem_Nejat
 recruit_character = TUR_Shakib_Arslan
 recruit_character = TUR_Salih_Hulusi_Pasha
+recruit_character = TUR_Mehmed_Talaat_Pasha
+recruit_character = TUR_Ahmed_Djemal_Pasha
+recruit_character = TUR_Ismail_Enver_Pasha
 
 # Starting tech
 set_technology = {
@@ -111,3 +114,5 @@ set_variable = {
 }
 
 country_event = { id = AOR_TUR_events.5 days = 135 }
+
+activate_mission = IST_fake_mission_countdown
