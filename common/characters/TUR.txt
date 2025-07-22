@@ -152,6 +152,20 @@ characters = {
 			id=-1
 		}
 	}
+	TUR_Mustapha_Kemal_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Mustapha_Kemal_Pasha.dds"
+			}
+		}
+		country_leader = {
+			expire = "1940.01.01"
+			ideology = miliciagov
+			traits = {
+			}
+			id = -1
+		}
+	}
 
 	TUR_PACA_1={
 		name= "Enver Passha"

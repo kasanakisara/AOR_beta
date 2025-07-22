@@ -163,7 +163,7 @@ country_event = {#侵略成功
 			white_peace = TUR
 		}
 		TUR = {
-			country_event = {days = 1 id = TUR.2}
+			country_event = {days = 1 id = AOR_TUR_events.7}
 		}
 		GRE = {
 			country_event = {days = 45 id = GRE.5}

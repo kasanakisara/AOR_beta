@@ -356,6 +356,9 @@ country_event = { #
 		ai_chance = {
 			base = 1
 		}
+		hidden_effect = {
+			country_event = { id = AOR_TUR_events.9 days = 30 }
+		}
 	}
 }
 country_event = { #
@@ -417,5 +420,72 @@ country_event = { #
 		}
 		retire_country_leader = yes
 		promote_character = TUR_Damat_Ferid_Pasha
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.7
+	title = AOR_TUR_events.7.t
+	desc = AOR_TUR_events.7.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.7.a
+		ai_chance = {
+			base = 1
+		}
+		set_party_name = {
+			ideology = Absolutism
+			name = TUR_Absolutism_TBMM_party
+			long_name = TUR_Absolutism_TBMM_party_long
+		}
+		promote_character = TUR_Mustapha_Kemal_Pasha
+		hidden_effect = {
+			country_event = { id = AOR_TUR_events.8 days = 15 }
+		}
+	}
+}
+country_event = { #
+	id = AOR_TUR_events.8
+	title = AOR_TUR_events.8.t
+	desc = AOR_TUR_events.8.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.8.a
+		ai_chance = {
+			base = 1
+		}
+		set_cosmetic_tag = TUR_provisional
+		custom_effect_tooltip = AOR_TUR_turn_neutral_tt
+		hidden_effect = {
+			remove_ideas = entente_member_nation
+			remove_ideas = british_commonwealth_nation
+			set_popularities = {
+				Absolutism = 100
+			}
+		}
+		set_politics = {
+			ruling_party = Absolutism
+			elections_allowed = no
+		}
+	}
+}
+country_event = { #executing Talat
+	id = AOR_TUR_events.9
+	title = AOR_TUR_events.9.t
+	desc = AOR_TUR_events.9.d
+	picture = GFX_events_GRE_5
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AOR_TUR_events.9.a
+		ai_chance = {
+			base = 1
+		}
+		add_manpower = -1
+		kill_ideology_leader = Fascism
+		promote_character = TUR_Ahmed_Djemal_Pasha
 	}
 }
