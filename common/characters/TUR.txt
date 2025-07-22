@@ -21,6 +21,14 @@ characters = {
 			}
 		}
 		country_leader={
+			ideology = market_liberalism
+			desc = "TUR_Damat_Ferid_Pasha_DESC"
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+		country_leader={
 			ideology = limited
 			desc = "TUR_Damat_Ferid_Pasha_DESC"
 			traits={ 
@@ -60,7 +68,6 @@ characters = {
 		}
 	}
 	TUR_Muhammad_VI_Sultan={
-		name= "Muhammad VI"
 		portraits={
 			civilian={
 				large="gfx/leaders/TUR/TUR_Muhammad_VI_sultan.dds"
@@ -71,6 +78,76 @@ characters = {
 			desc = "M_VI_DESC"
 			traits={ 
  			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Shakib_Arslan = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Shakib_Arslan.png"
+			}
+		}
+		country_leader={
+			ideology = constitutionalism
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Salih_Hulusi_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Salih_Hulusi_Pasha.png"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Mehmed_Talaat_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Mehmed_Talaat_Pasha.dds"
+			}
+		}
+		country_leader={
+			ideology = troopism
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Ahmed_Djemal_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Ahmed_Djemal_Pasha.dds"
+			}
+		}
+		country_leader={
+			ideology = troopism
+			traits={ 
+			}
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}
+	TUR_Ismail_Enver_Pasha = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/TUR_Ismail_Enver_Pasha.dds"
+			}
+		}
+		country_leader={
+			ideology = nationalism
+			traits={ 
+			}
 			expire="1930.1.1.1"
 			id=-1
 		}

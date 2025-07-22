@@ -8,6 +8,11 @@ recruit_character = TUR_Ahmed_Tevfik_Pasha
 recruit_character = TUR_Damat_Ferid_Pasha
 recruit_character = TUR_Mustapha_Subhi
 recruit_character = TUR_Ethem_Nejat
+recruit_character = TUR_Shakib_Arslan
+recruit_character = TUR_Salih_Hulusi_Pasha
+recruit_character = TUR_Mehmed_Talaat_Pasha
+recruit_character = TUR_Ahmed_Djemal_Pasha
+recruit_character = TUR_Ismail_Enver_Pasha
 
 # Starting tech
 set_technology = {
@@ -82,16 +87,19 @@ set_politics = {
 
 }
 set_popularities = {
-	AUT_democratic = 39
+	AUT_democratic = 37
 	Marxism = 3
-	CON_democratic = 23
+	CON_democratic = 21
 	Absolutism = 5
 	Fascism = 4
 	FRE_democratic = 15
-	Special = 11
+	ISL_democratic = 6
+	Special = 9
 }
 
 add_ideas = {
+	entente_member_nation
+	british_commonwealth_nation
 	TUR_Sultan_Mohammed_VI_idea
 	TUR_treaty_mudros_idea
 	TUR_complete_econ_collapse_idea
@@ -106,3 +114,5 @@ set_variable = {
 }
 
 country_event = { id = AOR_TUR_events.5 days = 135 }
+
+activate_mission = IST_fake_mission_countdown

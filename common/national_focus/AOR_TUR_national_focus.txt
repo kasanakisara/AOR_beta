@@ -133,6 +133,13 @@ focus_tree = {
 			}
 			add_command_power = 50
 			add_political_power = 25
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_Progressbar_var = -1
+		}
+		add_to_variable = {
+			var:global.AOR_turkish_straits_game_antiside_var = 1
+		}
+		custom_effect_tooltip = AOR_Turkish_Straits_race_greek_leaning_tt
 		}
 	}
 	#凭效忠以获利
