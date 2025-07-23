@@ -167,6 +167,12 @@ focus_tree = {
 			focus = AOR_TUR_approach_Lenin_sultanate
 		}
 		completion_reward = {
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_Progressbar_var = 3
+			}
+			add_to_variable = {
+				var:global.AOR_turkish_straits_game_antiside_var = -3
+			}
 			custom_effect_tooltip = AOR_Turkish_Straits_race_turkish_leaning_tt
 			add_popularity = {
 				ideology = Marxism
@@ -362,7 +368,7 @@ focus_tree = {
 	}
 	#履行国际主义义务
 	focus = {
-		id = AOR_TUR_Kemal_international_responsibility
+		id = AOR_TUR_Kemal_international_duty
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
@@ -380,7 +386,7 @@ focus_tree = {
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
-			focus = AOR_TUR_Kemal_international_responsibility
+			focus = AOR_TUR_Kemal_international_duty
 		}
 		x = -11
 		y = 6
@@ -394,7 +400,7 @@ focus_tree = {
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
-			focus = AOR_TUR_Kemal_international_responsibility
+			focus = AOR_TUR_Kemal_international_duty
 		}
 		x = -9
 		y = 6
@@ -431,6 +437,99 @@ focus_tree = {
 		y = 5
 		relative_position_id = AOR_TUR_Kemal_First_TBMM
 		completion_reward = {
+		}
+	}
+	#彻底清除军国主义
+	focus = {
+		id = AOR_TUR_Kemal_cleanse_militarist_scum
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_unite_party_ideology
+		}
+		x = -7
+		y = 6
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#整合凯末尔共和派
+	focus = {
+		id = AOR_TUR_Kemal_integrate_Kemalist_republicans
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_cleanse_militarist_scum
+		}
+		x = -8
+		y = 7
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#自由党人的命运
+	focus = {
+		id = AOR_TUR_Kemal_fate_of_liberals
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_cleanse_militarist_scum
+		}
+		x = -6
+		y = 7
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#宣告社会主义共和国
+	focus = {
+		id = AOR_TUR_Kemal_proclaim_socialist_republic
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_integrate_Kemalist_republicans
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_fate_of_liberals
+		}
+		x = -7
+		y = 8
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#坚定领导革命
+	focus = {
+		id = AOR_TUR_Kemal_leading_revolution
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_proclaim_socialist_republic
+		}
+		x = -8
+		y = 9
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_revolutionary_youth
+		}
+	}
+	#革命者永远年轻
+	focus = {
+		id = AOR_TUR_Kemal_revolutionary_youth
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_proclaim_socialist_republic
+		}
+		x = -6
+		y = 9
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_leading_revolution
 		}
 	}
 	#走向国家稳定
