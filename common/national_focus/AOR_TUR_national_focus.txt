@@ -270,9 +270,9 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#巩固控制
+	#“国家誓言”
 	focus = {
-		id = AOR_TUR_Kemal_assert_control
+		id = AOR_TUR_Kemal_misak_i_milli
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
@@ -335,7 +335,7 @@ focus_tree = {
 			focus = AOR_TUR_Kemal_reorganize_education
 		}
 		prerequisite = {
-			focus = AOR_TUR_Kemal_assert_control
+			focus = AOR_TUR_Kemal_misak_i_milli
 		}
 		prerequisite = {
 			focus = AOR_TUR_Kemal_Tekalifi_Milliye_Emirleri
@@ -800,23 +800,23 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#颁布《姓氏法》
+	#重组最高法院
 	focus = {
-		id = AOR_TUR_Kemal_surnames_code
+		id = AOR_TUR_Kemal_form_supreme_court
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
 			focus = AOR_TUR_Kemal_pass_civil_code
 		}
-		x = 1
+		x = 3
 		y = 8
 		relative_position_id = AOR_TUR_Kemal_First_TBMM
 		completion_reward = {
 		}
 	}
-	#废除哈里发制
+	#梅尔辛-塞浦路斯危机
 	focus = {
-		id = AOR_TUR_Kemal_abolish_caliphate
+		id = AOR_TUR_Kemal_Tarsos_crisis
 		#icon = GFX_AOR_Eric_new_053
 		cost = 5.00
 		prerequisite = {
@@ -826,6 +826,202 @@ focus_tree = {
 		y = 5
 		relative_position_id = AOR_TUR_Kemal_First_TBMM
 		completion_reward = {
+		}
+	}
+	#惩办进步共和党
+	focus = {
+		id = AOR_TUR_Kemal_punish_progressive_republicans
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_Tarsos_crisis
+		}
+		x = 5
+		y = 6
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_end_THF_dominance
+		}
+	}
+	#清洗联进委元老
+	focus = {
+		id = AOR_TUR_Kemal_purge_Ittihadist_elders
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_punish_progressive_republicans
+		}
+		x = 4
+		y = 7
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#终结一党专政
+	focus = {
+		id = AOR_TUR_Kemal_end_THF_dominance
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_Tarsos_crisis
+		}
+		x = 7
+		y = 6
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_punish_progressive_republicans
+		}
+	}
+	#确立责任内阁制
+	focus = {
+		id = AOR_TUR_Kemal_weaken_president
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_end_THF_dominance
+		}
+		x = 8
+		y = 7
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#实现国家誓言
+	focus = {
+		id = AOR_TUR_Kemal_ratify_national_oath
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_punish_progressive_republicans
+			focus = AOR_TUR_Kemal_end_THF_dominance
+		}
+		x = 6
+		y = 7
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#重拾民族纯净政策
+	focus = {
+		id = AOR_TUR_Kemal_national_purification
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_ratify_national_oath
+		}
+		x = 5
+		y = 8
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#通过《刑法典》
+	focus = {
+		id = AOR_TUR_Kemal_penal_code
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_national_purification
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_form_supreme_court
+		}
+		x = 4
+		y = 9
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#索取特拉布宗
+	focus = {
+		id = AOR_TUR_Kemal_demand_Trabzon
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_ratify_national_oath
+		}
+		x = 7
+		y = 8
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#介入库尔德-亚美尼亚矛盾
+	focus = {
+		id = AOR_TUR_Kemal_interfere_Lurds_Armenians
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_demand_Trabzon
+		}
+		x = 8
+		y = 9
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#农地再分配方案
+	focus = {
+		id = AOR_TUR_Kemal_redistribute_farmlands
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_ratify_national_oath
+		}
+		x = 6
+		y = 9
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+	}
+	#告别哈里发制
+	focus = {
+		id = AOR_TUR_Kemal_abolish_Caliphate
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_penal_code
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_redistribute_farmlands
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_interfere_Lurds_Armenians
+		}
+		x = 5
+		y = 10
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_first_multiparty_elections
+		}
+	}
+	#首次举行多党选举
+	focus = {
+		id = AOR_TUR_Kemal_first_multiparty_elections
+		#icon = GFX_AOR_Eric_new_053
+		cost = 5.00
+		prerequisite = {
+			focus = AOR_TUR_Kemal_penal_code
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_redistribute_farmlands
+		}
+		prerequisite = {
+			focus = AOR_TUR_Kemal_interfere_Lurds_Armenians
+		}
+		x = 7
+		y = 10
+		relative_position_id = AOR_TUR_Kemal_First_TBMM
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = AOR_TUR_Kemal_abolish_Caliphate
 		}
 	}
 	#寻求外交承认
