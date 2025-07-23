@@ -458,6 +458,7 @@ country_event = { #
 			set_popularities = {
 				Absolutism = 100
 			}
+			load_focus_tree = AOR_TUR_Kemal
 			country_event = { id = AOR_TUR_events.10 days = 60 }
 		}
 		set_politics = {
