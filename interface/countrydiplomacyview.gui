@@ -9,7 +9,7 @@ guiTypes = {
 		iconType = {
 			name = "AOR_second_leader_button_icon"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_mapmode_buttons_selected_small_test_map_mode"
+			spriteType = "GFX_second_leader_button_icon"
 			pdx_tooltip  = "AOR_second_leader_name_tt"
 		}
 	}
@@ -23,7 +23,7 @@ guiTypes = {
 		iconType = {
 			name = "AOR_second_leader_button_icon"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_mapmode_buttons_selected_small_test_map_mode"
+			spriteType = "GFX_second_leader_button_icon"
 			pdx_tooltip  = "AOR_second_leader_name_tt"
 		}
 	}
