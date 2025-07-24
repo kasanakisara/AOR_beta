@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
- MAPMODE_spheres_of_influence_map: "势力范围地图模式"
+ MAPMODE_SPHERES_OF_INFLUENCE_MAP: "势力范围地图模式"
+ MAPMODE_SPHERES_OF_INFLUENCE_MAP_DESCRIPTION: "显示各个国家的结盟状态与各个列强的势力范围"
+
  spheres_of_influence_map_tooltip: "[From.Controller.cold_war_loc_thing]"
  spheres_of_influence_map_tooltip_delayed: "[FROM.Controller.cold_war_delayed_loc_thing]"
  nation_is_aligned_with_entente: "§W§H[From.Controller.GetNameWithFlag]§!属于§R协约国§!势力范围§!"

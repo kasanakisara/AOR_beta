@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "AOR_second_leader_container"
-		position = { x = 113 y = 244 }
+		position = { x = 110 y = 244 }
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes
@@ -9,13 +9,13 @@ guiTypes = {
 		iconType = {
 			name = "AOR_second_leader_button_icon"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_second_leader_button_icon"
+			spriteType = "GFX_mapmode_buttons_selected_small_test_map_mode"
 			pdx_tooltip  = "AOR_second_leader_name_tt"
 		}
 	}
 	containerWindowType = {
 		name = "AOR_second_leader_player_container"
-		position = { x = 145 y = 275 }
+		position = { x = 148 y = 255 }
 		size = { width = 40 height = 40 }
 		margin = { top = 1 left = 1 right = 1 bottom = 1 }
 		clipping = yes
@@ -23,7 +23,7 @@ guiTypes = {
 		iconType = {
 			name = "AOR_second_leader_button_icon"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_second_leader_button_icon"
+			spriteType = "GFX_mapmode_buttons_selected_small_test_map_mode"
 			pdx_tooltip  = "AOR_second_leader_name_tt"
 		}
 	}
