@@ -299,7 +299,6 @@ ideologies = {
 	SOC_democratic = {
 	
 		types = {
-		
 			socialism_right = {
 			}
 	
@@ -379,8 +378,7 @@ ideologies = {
 			
 			market_liberalism = {		#市场自由主义
 			}
-			
-			}
+		}
 		
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
@@ -424,7 +422,7 @@ ideologies = {
 			faction_trade_opinion_factor = 0.20 #plus 50% trade opinion
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
-		}
+	}
 
 
 	#保守民主主义

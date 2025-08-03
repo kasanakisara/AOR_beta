@@ -110,9 +110,6 @@ if = {
 	}
 }
 
-
-
-
 set_research_slots = 4
 set_convoys = 10
 set_stability = 0.55
@@ -123,7 +120,7 @@ set_naval_oob =  "AOR_FRA_naval"
 
 set_politics = {
 	ruling_party = SOC_democratic
-	last_election = "1936.1.1"
+	last_election = "1918.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
@@ -148,7 +145,7 @@ add_ideas = {
 
 
 recruit_character = FRA_TIGER
-
+recruit_character = FRA_Alexandre_Millerand
 
 #create_faction =  Paris_entente
 puppet = SYR
@@ -175,8 +172,6 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
-
-recruit_character = FRA_Alexandre_Millerand
 
 give_guarantee = QID
 give_guarantee = BRA
