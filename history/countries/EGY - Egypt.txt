@@ -8,14 +8,16 @@ set_technology = {
 
 set_convoys = 20
 
-effect = {
 country_lock_all_division_template = yes
-}
+
 add_ideas ={
-	EGY_Moving_towards_modernity
+	#EGY_Moving_towards_modernity
 	EGY_Crazy_1919
 	EGY_Puppets_puppetry
 	EGY_YesSir
+}
+add_dynamic_modifier = {
+	modifier = EGY_Towards_modernity
 }
 set_politics = {
 	ruling_party = Absolutism
@@ -73,9 +75,48 @@ create_country_leader = {
 	}
 }
 
+country_event = { 
+	id = EGY.19
+	days = 94 # 1919.11.3
+}
+
 set_cosmetic_tag = EGY_UK # British EGY
 
- EGY = {
+EGY = {
 	country_event = { days = 303 id = EGY.17 }
 	country_event = { days = 7 id = EGY.18 }
- }
+}
+#迈向现代
+set_variable = {
+	EGY_Towards_modernity_1 = -0.2
+}
+set_variable = {
+	EGY_Towards_modernity_2 = 0.3
+}
+set_variable = {
+	EGY_Towards_modernity_3 = -0.1
+}
+set_variable = {
+	EGY_Towards_modernity_4 = -0.15
+}
+set_variable = {
+	EGY_Towards_modernity_5 = -0.25
+}
+set_variable = {
+	EGY_Towards_modernity_6 = -0.2
+}
+#埃及的好感度决议
+set_variable = {
+	EGY_DCS_1_variable_ENG = 5
+}
+set_variable = {
+	EGY_DCS_1_variable_FRA = 0
+}
+
+
+
+
+
+
+
+

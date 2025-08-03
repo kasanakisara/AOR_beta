@@ -151,7 +151,7 @@ country_event = {
 		tag = EGY
 	}
 	
-	mean_time_to_happen = { days = 1}
+	mean_time_to_happen = { days = 1 }
 	
 	fire_only_once = yes
 
@@ -159,7 +159,7 @@ country_event = {
 
 	option = {
 		name = EGY.4.a
-		news_event = {id = AOR_news.354 days = 0}
+		news_event = AOR_news.354
     }
 }
 country_event = {
@@ -181,7 +181,7 @@ country_event = {
 
 	option = {
 		name = EGY.5.a
-		news_event = {id = AOR_news.353 days = 0}
+		news_event = AOR_news.353
     }
 }
 country_event = {
@@ -341,3 +341,28 @@ country_event = {
 		name = EGY.18.a
     }
 }
+
+country_event = {
+	id = EGY.19 #总之有用，别瞎几把删！
+	title = EGY.19.t
+	desc = EGY.19.d
+	is_triggered_only = yes
+	#fire_only_once = yes
+	#trigger = {
+	#	tag = EGY
+	#	date = 1919.11.3
+	#}
+
+	option = {
+		name = EGY.19.a
+		hidden_effect = {
+			set_country_flag = EGY_can_change_FRA
+		}
+    }
+}
+
+
+
+
+
+
