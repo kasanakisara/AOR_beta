@@ -148,6 +148,7 @@ add_ideas = {
 
 
 recruit_character = FRA_TIGER
+recruit_character = FRA_Alexandre_Millerand
 
 
 #create_faction =  Paris_entente
@@ -175,8 +176,6 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
-
-recruit_character = FRA_Alexandre_Millerand
 
 give_guarantee = QID
 give_guarantee = BRA

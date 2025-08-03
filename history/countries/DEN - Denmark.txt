@@ -4,6 +4,7 @@ load_oob = "AOR_LAND_DEN"
 set_naval_oob = "DEN_naval_1919"
 
 recruit_character = Otto_Liebe
+recruit_character = DEN_Henri_Konow
 recruit_character = Otto_Liebe_advisor
 
 #oob = "DEN_1936"
@@ -33,6 +34,15 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = monarchism
 	traits = { DEN_the_king }
+}
+
+create_country_leader = {
+	name = "Henri_Konow"
+	desc = "DEN_DEN_Henri_Konow_DESC"
+	picture = "wobudaoa"
+	expire = "1919.1.1"
+	ideology = patriarch
+	traits={}
 }
 
 
