@@ -75,20 +75,5 @@ characters = {
 			traits = {Lawyer_politician}
 			available = { NOT = { { has_country_leader = Otto_Liebe }}}
 		}
-	}
-	DEN_Henri_Konow	= {
-		name = "亨利·科诺"
-		portraits={
-			civilian={ 
-				large="gfx/leaders/DEN/DEN_Henri_Konow.dds"
-			}
-		}
-		country_leader = {
-			ideology = patriarch
-			desc = "DEN_DEN_Henri_Konow_DESC"
-			traits = {  }
-			expire = "1965.1.1.1"
-			id = -1
-		}
-	}
+	}	
 }
