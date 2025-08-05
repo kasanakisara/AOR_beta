@@ -3087,6 +3087,9 @@ news_event = {#丹麦赢得石勒苏益格-荷尔施泰因战争
 
 	option = {
 		name = AOR_news.215.a
+		hidden_effect = {
+			transfer_state = 58
+		}
 	}
 }
 

@@ -66,7 +66,6 @@ focus_tree = {
                 limit = { NOT = { has_law = elections_held_regularly } }
                 enact_law = elections_held_regularly
             }
-            add_core_state = 58  # 石勒苏益格北部（需根据实际state ID调整）
         }
     }
 
