@@ -630,7 +630,7 @@ AOR_EGY_DCS_1_category = {
 			}
 			hidden_trigger = {
 				check_variable = {
-					egy_dcs_fra_7_limit < 2
+					egy_dcs_eng_7_limit < 2
 				}
 			}
 		}
@@ -649,13 +649,13 @@ AOR_EGY_DCS_1_category = {
 					limit = {
 						EGY = {
 							NOT = {
-								has_variable = egy_dcs_fra_7_limit
+								has_variable = egy_dcs_eng_7_limit
 							}
 						}
 					}
 					EGY = {
 						set_variable = {
-							egy_dcs_fra_7_limit = 0
+							egy_dcs_eng_7_limit = 0
 						}
 					}
 				}
@@ -669,7 +669,7 @@ AOR_EGY_DCS_1_category = {
 					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
-					egy_dcs_fra_7_limit = 1
+					egy_dcs_eng_7_limit = 1
 				}
 			}
 		}
