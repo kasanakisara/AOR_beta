@@ -33,14 +33,39 @@ focus_tree = {
 		x = 6
 		y = 1
 
-		completion_reward={
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+			is_subject = no
+			ENG = {
+				exists = yes
+			}
+		}
+	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
             #加友好度
 			add_opinion_modifier = { target = ENG modifier = Den_deepen_trade_with_uk }
 			add_resource = {
     			type = steel
-    			amount = 3
+    			amount = 5
     			state = 1047
 			}
+			ENG = { country_event = { id = denmark_trade_deal.1 days = 1 } }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				ROOT = {
+					add_offsite_building = { type = industrial_complex level = 1 }
+					DEN_trade_deal_effects = yes					
+				}
+				ENG = {
+					add_ideas = DEN_danish_produce_export_ns
+				}
+			}
+			custom_effect_tooltip = war_will_cancel_deal_tt
+			unlock_decision_category_tooltip = DEN_trade_deal_category
 		}
 	}
 	focus = {
