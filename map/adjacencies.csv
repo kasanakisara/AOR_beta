@@ -165,8 +165,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7940;13283;impassable;-1;-1;-1;-1;-1;;Himalayas
 12846;13283;impassable;-1;-1;-1;-1;-1;;Himalayas
 12846;4536;impassable;-1;-1;-1;-1;-1;;Himalayas
-10821;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
-10821;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
 12899;10918;impassable;-1;-1;-1;-1;-1;;Himalayas
 12899;5080;impassable;-1;-1;-1;-1;-1;;Himalayas
 8068;1943;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -175,23 +173,27 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8068;5094;impassable;-1;-1;-1;-1;-1;;Himalayas
 5011;8068;impassable;-1;-1;-1;-1;-1;;Himalayas
 5011;2010;impassable;-1;-1;-1;-1;-1;;Himalayas
-8042;10885;impassable;-1;-1;-1;-1;-1;;Himalayas
-10885;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
-10885;13278;impassable;-1;-1;-1;-1;-1;;Himalayas
-10885;12864;impassable;-1;-1;-1;-1;-1;;Himalayas
-13277;12864;impassable;-1;-1;-1;-1;-1;;Himalayas
-13277;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
-13279;8086;impassable;-1;-1;-1;-1;-1;;Himalayas
-13279;8042;impassable;-1;-1;-1;-1;-1;;Himalayas
-13279;5016;impassable;-1;-1;-1;-1;-1;;Himalayas
-13279;13276;impassable;-1;-1;-1;-1;-1;;Himalayas
-13279;13282;impassable;-1;-1;-1;-1;-1;;Himalayas
-13280;7790;impassable;-1;-1;-1;-1;-1;;Himalayas
-13280;5016;impassable;-1;-1;-1;-1;-1;;Himalayas
-13280;13281;impassable;-1;-1;-1;-1;-1;;Himalayas
-13280;13282;impassable;-1;-1;-1;-1;-1;;Himalayas
+8042;10885;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+10885;13276;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+10885;13278;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+10885;12864;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13277;12864;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13277;13276;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13279;8086;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13279;8042;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13279;5016;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13279;13276;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13279;13282;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13280;7790;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13280;5016;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13280;13281;impassable;-1;-1;-1;-1;-1;;Tarim Basin
+13280;13282;impassable;-1;-1;-1;-1;-1;;Tarim Basin
 13302;13301;impassable;-1;-1;-1;-1;-1;;Himalayas
 13302;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
+13302;10821;impassable;-1;-1;-1;-1;-1;;Himalayas
+13303;5042;impassable;-1;-1;-1;-1;-1;;Himalayas
+13303;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
+13303;7273;impassable;-1;-1;-1;-1;-1;;Himalayas
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
