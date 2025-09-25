@@ -1063,6 +1063,7 @@ CHI_civil_war_11 = {
 	}
 	MON = {
 		load_oob = "AOR_LAND_CHI_VAN_2"
+		878={set_demilitarized_zone=YES}
 		608={set_demilitarized_zone=NO}
 		transfer_state = 876
 		transfer_state = 612
