@@ -1063,8 +1063,9 @@ CHI_civil_war_11 = {
 	}
 	MON = {
 		load_oob = "AOR_LAND_CHI_VAN_2"
-		878={set_demilitarized_zone=YES}
-		608={set_demilitarized_zone=NO}
+		878={set_demilitarized_zone=yes}
+		889={set_demilitarized_zone=yes}
+		608={set_demilitarized_zone=no}
 		transfer_state = 876
 		transfer_state = 612
 		transfer_state = 756
@@ -1114,6 +1115,7 @@ CHI_civil_war_11 = {
 
 CHI_civil_war_12 = {
 	MON = {
+		608={set_demilitarized_zone=no}
 		annex_country = { 
 			target = CHI 
 			transfer_troops = no 
@@ -1136,7 +1138,8 @@ CHI_civil_war_12 = {
 	NAN = {
 		set_cosmetic_tag = NAN
 		load_oob = "AOR_LAND_CHI_VAN_2"
-		608={set_demilitarized_zone=NO}
+		607={set_demilitarized_zone=yes}
+		880={set_demilitarized_zone=yes}
 		transfer_state = 876
 		transfer_state = 612
 		transfer_state = 756
