@@ -83,11 +83,11 @@ focus_tree = {
         }
         completion_reward = {
             custom_effect_tooltip = tt_den_civil_war_risk
-            start_civil_war = {
-                ideology = fascism
-                size = 0.3
-                keep_unit_leaders = yes
-            }
+           # start_civil_war = {
+               # ideology = fascism
+               # size = 0.3
+               # keep_unit_leaders = yes
+           # }
             add_army_experience = 50
             add_war_support = 0.15
             if = {
