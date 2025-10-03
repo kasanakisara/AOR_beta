@@ -107,7 +107,7 @@ on_actions = {
 			615 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_yangqu }
-					province = { id = 1519 }
+					province = { id = 12344 }
 				}
 			}
 			525 = {
