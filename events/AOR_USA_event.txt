@@ -868,13 +868,13 @@ country_event = {
 	id = USA.1003 #南北战争南方的火星兵！
 	title = USA.1003.t
 	desc = USA.1003.d
-	picture = GFX_USA_event_1003_pic
+	picture = GFX_USA_event_1004_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name=USA.1003.a
 		CSA = {
-			add_manpower=50000
+			add_manpower=30000
 			load_oob = "CSA_Civilwar_2"
 		}
 		CSA = {country_event = {id = USA.1004 days = 30}}
@@ -885,28 +885,11 @@ country_event = {
 	id = USA.1004 #南北战争南方的火星兵！
 	title = USA.1004.t
 	desc = USA.1004.d
-	picture = GFX_USA_event_1004_pic
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name=USA.1004.a
-		CSA = {
-			add_manpower=30000
-			load_oob = "CSA_Civilwar_2"
-		}
-		CSA = {country_event = {id = USA.1005 days = 30}}
-		log = "[GetLogInfo] [From.GetName]: event 刷兵啦！ "
-	}
-}
-country_event = {
-	id = USA.1005 #南北战争南方的火星兵！
-	title = USA.1005.t
-	desc = USA.1005.d
 	picture = GFX_USA_event_1005_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.1005.a
+		name=USA.1004.a
 		CSA = {
 			add_manpower=10000
 		}
@@ -914,6 +897,64 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = USA.1005 #美国西部战争的火星兵！
+	title = USA.1005.t
+	desc = USA.1005.d
+	picture = GFX_USA_event_10000_pic
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name=USA.1005.a
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+					country_exists = US2
+				}
+				
+			}
+
+			US2 = {
+				load_oob = "US2_Civilwar"
+				load_oob = "US2_Civilwar"
+				
+			}
+			US2 = {
+				country_event = {id = USA.1006 days = 90}
+			}
+		}
+
+	}
+	option = {
+		name=USA.1005.b
+		ai_chance = {
+			base = 50
+		}
+		if = {
+			limit = {
+				AND = {
+					country_exists = US1
+					country_exists = US2
+				}
+				
+			}
+
+			US1 = {
+				load_oob = "US1_Civilwar"
+				load_oob = "US1_Civilwar"
+				
+			}
+			US1 = {
+				country_event = {id = USA.1006 days = 90}
+			}
+		}
+
+	}
+}
 country_event = {
 	id = USA.1006 #美国西部战争的火星兵！
 	title = USA.1006.t
@@ -930,7 +971,7 @@ country_event = {
 			limit = {
 				AND = {
 					country_exists = US1
-					country_exists = US2
+				country_exists = US2
 				}
 				
 			}
@@ -938,10 +979,8 @@ country_event = {
 			US2 = {
 				load_oob = "US2_Civilwar"
 				load_oob = "US2_Civilwar"
-				
-			}
-			US2 = {
 				country_event = {id = USA.1007 days = 90}
+
 			}
 		}
 
@@ -955,7 +994,7 @@ country_event = {
 			limit = {
 				AND = {
 					country_exists = US1
-					country_exists = US2
+				country_exists = US2
 				}
 				
 			}
@@ -963,10 +1002,8 @@ country_event = {
 			US1 = {
 				load_oob = "US1_Civilwar"
 				load_oob = "US1_Civilwar"
-				
-			}
-			US1 = {
 				country_event = {id = USA.1007 days = 90}
+
 			}
 		}
 
@@ -981,60 +1018,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name=USA.1007.a
-		ai_chance = {
-			base = 50
-		}
-		if = {
-			limit = {
-				AND = {
-					country_exists = US1
-				country_exists = US2
-				}
-				
-			}
-
-			US2 = {
-				load_oob = "US2_Civilwar"
-				load_oob = "US2_Civilwar"
-				country_event = {id = USA.1008 days = 90}
-
-			}
-		}
-
-	}
-	option = {
-		name=USA.1007.b
-		ai_chance = {
-			base = 50
-		}
-		if = {
-			limit = {
-				AND = {
-					country_exists = US1
-				country_exists = US2
-				}
-				
-			}
-
-			US1 = {
-				load_oob = "US1_Civilwar"
-				load_oob = "US1_Civilwar"
-				country_event = {id = USA.1008 days = 90}
-
-			}
-		}
-
-	}
-}
-country_event = {
-	id = USA.1008 #美国西部战争的火星兵！
-	title = USA.1008.t
-	desc = USA.1008.d
-	picture = GFX_USA_event_10000_pic
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name=USA.1008.a
 		if = {
 			limit = {
 				AND = {
@@ -1055,14 +1038,14 @@ country_event = {
 }
 
 country_event = {
-	id = USA.1009 #美国西部战争的火星兵！
-	title = USA.1009.t
-	desc = USA.1009.d
+	id = USA.1008 #美国西部战争的火星兵！
+	title = USA.1008.t
+	desc = USA.1008.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.1009.a
+		name=USA.1008.a
 		if = {
 			limit = {
 				AND = {
@@ -1082,14 +1065,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = USA.1010 #美国西部战争的火星兵！
-	title = USA.1010.t
-	desc = USA.1010.d
+	id = USA.1009 #美国西部战争的火星兵！
+	title = USA.1009.t
+	desc = USA.1009.d
 	picture = GFX_USA_event_10000_pic
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name=USA.1010.a
+		name=USA.1009.a
 		if = {
 			limit = {
 				AND = {
