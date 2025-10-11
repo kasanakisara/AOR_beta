@@ -47,3 +47,11 @@ SWE_Regency_Crisis_decision_categories = {
 	}
 	visible_when_empty = yes
 }
+
+SWE_Regency_Conference_decision_categories = {
+	priority = 90
+	visible = {
+		has_country_flag = SWE_Regency_Conferenceing
+	}
+	visible_when_empty = yes
+}

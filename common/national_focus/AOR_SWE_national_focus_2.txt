@@ -60,9 +60,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = AOR_SWE_Hold_a_political_conference
+		id = AOR_SWE_Hold_Regency_conference
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = AOR_SWE_Authorize_military_rule
 			focus = AOR_SWE_Request_League_of_Nations_intervention
@@ -94,10 +94,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_SWE_Hold_a_political_conference
+			focus = AOR_SWE_Hold_Regency_conference
 		}
 		allow_branch = {
-			has_completed_focus = AOR_SWE_Hold_a_political_conference
+			has_completed_focus = AOR_SWE_Hold_Regency_conference
 		}
 		x = 23
 		y = 5
@@ -420,13 +420,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_SWE_Hold_a_political_conference
+			focus = AOR_SWE_Hold_Regency_conference
 		}
 		mutually_exclusive = {
 			focus = AOR_SWE_The_Only_King
 		}
 		allow_branch = {
-			has_completed_focus = AOR_SWE_Hold_a_political_conference
+			has_completed_focus = AOR_SWE_Hold_Regency_conference
 		}
 		x = 6
 		y = 3
@@ -697,13 +697,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = AOR_SWE_Hold_a_political_conference
+			focus = AOR_SWE_Hold_Regency_conference
 		}
 		mutually_exclusive = {
 			focus = AOR_SWE_Continue_the_dual_monarchy
 		}
 		allow_branch = {
-			has_completed_focus = AOR_SWE_Hold_a_political_conference
+			has_completed_focus = AOR_SWE_Hold_Regency_conference
 		}
 		x = 41
 		y = 3

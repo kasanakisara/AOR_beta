@@ -149,6 +149,7 @@ Hackers_debug = {
             country_event = { id = SWE_Haakon_Death.1 }
             country_event = { id = SWE_Haakon_Death.2 }
             country_event = { id = SWE_Haakon_Death.3 }
+            country_event = { id = SWE_Haakon_Death.4 }
         }
     }
 
@@ -168,6 +169,25 @@ Hackers_debug = {
         }
         complete_effect = {
             complete_national_focus = AOR_SWE_Throat_Crisis
+        }
+    }
+
+    SWE_Regency_Conference_test = {
+        available = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        visible = {
+            is_debug = yes
+            tag = SWE
+            has_country_flag = SWE_Emergency_State
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            country_event = { id = SWE_Regency_Conference.1 }
         }
     }
 

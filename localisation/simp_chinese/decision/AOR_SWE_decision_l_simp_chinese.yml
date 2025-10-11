@@ -94,3 +94,8 @@
 
  SWE_Regency_Crisis_decision_categories:0 "摄政危机"
  SWE_Regency_Crisis_decision_categories_desc:0 "哈康陛下突然驾崩之后，摄政委员会在成立初期陷入权力争夺，未能对事态做出有效应对，导致全联邦上下陷入巨大的政治和经济危机。经济萎靡，政局混乱，秩序崩塌，命运的丝线已经不知去向。此刻全联邦上下必须团结一心，众志成城，共度危难。"
+
+ SWE_Regency_Conference_decision_categories:0 "王政会议"
+ SWE_Regency_Conference_decision_categories_desc:0 "\n决议下一任联邦内挪威国王的摄政委员会共有12个席位，其中联邦派占2席，一王派占2席，中立派别占6席，英方代表占1席，法方代表占1席。\n如果存在超过三分之一的弃权票，即有效票不满8票，则会议结果将被宣布无效。\n\n倾向奥拉夫王子的席位：\n倾向克努德王子的席位：\n倾向安德烈亚斯王子的席位：\n倾向古斯塔夫陛下的席位：\n\n当前会议形势：风平浪静\n\n我得想个办法把这玩意动起来。——Hacker\n\n"
+ SWE_Regency_Conference_counting:0 "王政会议进行中"
+ SWE_Regency_Conference_counting_tt:0 "保持冷静，继续前进。"

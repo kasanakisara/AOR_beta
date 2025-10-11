@@ -953,10 +953,7 @@ country_event = {
             set_variable = { SWE_Regency_Crisis_conscription_factor = -0.5 }
             set_variable = { SWE_Regency_Crisis_political_power_cost = 0.4 }
             set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 80 }
-            RUS = {
-                country_event = { id = SWE_Haakon_Death.4 days = 7 }
-            }
-            country_event = { id = SWE_Haakon_Death.5 days = 7 }
+            country_event = { id = SWE_Haakon_Death.4 days = 7 }
             add_dynamic_modifier = { modifier = AOR_SWE_Regency_Crisis_dynamic_modifier }
         }
         custom_effect_tooltip = SWE_Haakon_III_tt
@@ -964,28 +961,25 @@ country_event = {
 }
 
 country_event = {
-    id = SWE_Haakon_Death.4 #苏俄入侵芬马克-RUS侧
+    id = SWE_Haakon_Death.4 #苏俄入侵芬马克-SWE侧
     title = SWE_Haakon_Death.4.t
     desc = SWE_Haakon_Death.4.d
     is_triggered_only = yes
     option = {
         name = SWE_Haakon_Death.4.a
-        transfer_state = 967
         hidden_effect = {
             news_event = { id = AOR_news.241 }
+            SCR = {
+                transfer_state = 967
+                every_state = {
+                    limit = {
+                        is_owned_by = SWE
+                    }
+                    add_core_of = SCR
+                }
+            }
         }
-        custom_effect_tooltip = SWE_Rus_Fenmark_tt
-    }
-}
-
-country_event = {
-    id = SWE_Haakon_Death.5 #苏俄入侵芬马克-SWE侧
-    title = SWE_Haakon_Death.5.t
-    desc = SWE_Haakon_Death.5.d
-    is_triggered_only = yes
-    option = {
-        name = SWE_Haakon_Death.5.a
-        custom_effect_tooltip = SWE_swe_Fenmark_tt
+        custom_effect_tooltip = SWE_Fenmark_tt
     }
 }
 
@@ -997,6 +991,249 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = SWE_Regency_Conference.1.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.2 days = 7 }
+            set_country_flag = SWE_Regency_Conferenceing #语法？不熟
+        }
         custom_effect_tooltip = SWE_Regency_Conference_opening_tt
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.2 #王政会议-对手戏 双派之争
+    title = SWE_Regency_Conference.2.t
+    desc = SWE_Regency_Conference.2.d
+    is_triggered_only = yes
+    option = { #联邦派 - 2票中立倾向奥拉夫
+        name = SWE_Regency_Conference.2.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.3 days = 7 }
+        }
+    }
+
+    option = { #一王派 - 2票中立倾向白猪
+        name = SWE_Regency_Conference.2.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.3 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.3 #王政会议-雄狮姿态
+    title = SWE_Regency_Conference.3.t
+    desc = SWE_Regency_Conference.3.d
+    is_triggered_only = yes
+    option = { #未定 - 英方票数未定
+        name = SWE_Regency_Conference.3.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.4 days = 7 }
+        }
+    }
+
+    option = { #倾向希腊 - 英方票数倾向安德烈亚斯
+        name = SWE_Regency_Conference.3.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.4 days = 7 }
+        }
+    }
+
+    option = { #倾向一王派 - 英方票数倾向白猪
+        name = SWE_Regency_Conference.3.c
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.4 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.4 #王政会议-共和之位
+    title = SWE_Regency_Conference.4.t
+    desc = SWE_Regency_Conference.4.d
+    is_triggered_only = yes
+    option = { #未定 - 法方票数未定
+        name = SWE_Regency_Conference.4.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.5 days = 7 }
+        }
+    }
+
+    option = { #倾向丹麦 - 法方票数倾向克努德
+        name = SWE_Regency_Conference.4.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.5 days = 7 }
+        }
+    }
+
+    option = { #倾向联邦派 - 法方票数倾向奥拉夫
+        name = SWE_Regency_Conference.4.c
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.5 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.5 #王政会议-共匪闹事
+    title = SWE_Regency_Conference.5.t
+    desc = SWE_Regency_Conference.5.d
+    is_triggered_only = yes
+    option = { #出重拳 - 中立2票数弃权 邀请王室准备
+        name = SWE_Regency_Conference.5.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.7 days = 7 }
+        }
+    }
+
+    option = { #赶出去 - 无票数变化 会议形势进入针锋相对 旧王派准备
+        name = SWE_Regency_Conference.5.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.6 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.6 #王政会议-旧王派闹事
+    title = SWE_Regency_Conference.6.t
+    desc = SWE_Regency_Conference.6.d
+    is_triggered_only = yes
+    option = { #出重拳 - 中立票数1白猪1联邦 邀请王室准备
+        name = SWE_Regency_Conference.6.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.13 days = 7 }
+        }
+    }
+
+    option = { #不赶了 - 英国票数弃权 会议形势进入口诛笔伐
+        name = SWE_Regency_Conference.6.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.11 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.11 #王政会议-一王派分裂
+    title = SWE_Regency_Conference.11.t
+    desc = SWE_Regency_Conference.11.d
+    is_triggered_only = yes
+    option = { #强而有力 - 一王派如如不动 会议形势进入剑拔弩张
+        name = SWE_Regency_Conference.6.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+
+    option = { #英国佬？ - 一王派1票数倾向安德烈亚斯
+        name = SWE_Regency_Conference.6.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+
+    option = { #无能为力 - 一王派1票数弃权
+        name = SWE_Regency_Conference.6.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.7 #王政会议-王室出访
+    title = SWE_Regency_Conference.7.t
+    desc = SWE_Regency_Conference.7.d
+    is_triggered_only = yes
+    option = { #招待丹麦人 - 中立2票数倾向克努德
+        name = SWE_Regency_Conference.7.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+        }
+    }
+
+    option = { #招待希腊人 - 中立2票数倾向安德烈亚斯
+        name = SWE_Regency_Conference.7.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.13 #王政会议-王室出访，但是差点坏结局
+    title = SWE_Regency_Conference.13.t
+    desc = SWE_Regency_Conference.13.d
+    is_triggered_only = yes
+    option = { #招待丹麦人 - 中立2票数倾向克努德
+        name = SWE_Regency_Conference.13.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+
+    option = { #招待希腊人 - 中立2票数倾向安德烈亚斯
+        name = SWE_Regency_Conference.13.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.12 #王政会议-国联之议
+    title = SWE_Regency_Conference.12.t
+    desc = SWE_Regency_Conference.12.d
+    is_triggered_only = yes
+    option = { #维持现状 - 英法不变
+        name = SWE_Regency_Conference.12.a
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+
+    option = { #不干涉为干涉 - 英法弃权
+        name = SWE_Regency_Conference.12.b
+        hidden_effect = {
+            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+        }
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.8 #王政会议-最终决断？
+    title = SWE_Regency_Conference.8.t
+    desc = SWE_Regency_Conference.8.d
+    is_triggered_only = yes
+    option = { #未定票数尽数归于弃权
+        name = SWE_Regency_Conference.8.a
+        #计算！
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.9 #王政会议-打断双腿！
+    title = SWE_Regency_Conference.9.t
+    desc = SWE_Regency_Conference.9.d
+    is_triggered_only = yes
+    option = { #条件：未达成有效结果且会议形势：剑拔弩张
+        name = SWE_Regency_Conference.9.a
+        #内战 SRC下场 根据票数各方吃buff/debuff
+    }
+
+    option = { #条件：会议形势：口诛笔伐
+        name = SWE_Regency_Conference.9.b
+        #超大号内战 贝尔纳多特归来 根据票数各方吃buff/debuff
+    }
+}
+
+country_event = {
+    id = SWE_Regency_Conference.10 #王政会议-新王决裁
+    title = SWE_Regency_Conference.10.t
+    desc = SWE_Regency_Conference.10.d
+    is_triggered_only = yes
+    option = { #条件：达成有效结果！
+        name = SWE_Regency_Conference.9.a
+        #但是要吃debuff
     }
 }
