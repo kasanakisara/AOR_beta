@@ -453,3 +453,65 @@ defined_text = {
         localization_key = SWE_Regency_Political_modifier_V
     }
 }
+
+defined_text = {
+    name = SWE_Regency_Conference_Situation ##王政会议形势
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_I
+            }
+        }
+        localization_key = SWE_Regency_Conference_I_stt
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_II
+            }
+        }
+        localization_key = SWE_Regency_Conference_II_stt
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_III
+            }
+        }
+        localization_key = SWE_Regency_Conference_III_stt
+    }
+}
+
+defined_text = {
+    name = SWE_Regency_Conference_Result ##王政会议结果
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_I
+            }
+        }
+        localization_key = SWE_Regency_Conference_I_rtt
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_II
+            }
+        }
+        localization_key = SWE_Regency_Conference_II_rtt
+    }
+
+    text = {
+        trigger = {
+            SWE = {
+                has_country_flag = SWE_Regency_Conference_III
+            }
+        }
+        localization_key = SWE_Regency_Conference_III_rtt
+    }
+}
