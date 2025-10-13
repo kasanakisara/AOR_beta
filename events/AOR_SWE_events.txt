@@ -994,6 +994,12 @@ country_event = {
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.2 days = 7 }
             set_country_flag = SWE_Regency_Conferenceing #语法？不熟
+            set_variable = { SWE_Regency_Olaf_votes = 0 } #奥拉夫
+            set_variable = { SWE_Regency_Piggy_votes = 0 } #白猪
+            set_variable = { SWE_Regency_Andreas_votes = 0 } #安德烈亚斯
+            set_variable = { SWE_Regency_Knud_votes = 0 } #克努德
+            set_variable = { SWE_Regency_Abstension_votes = 0 } #弃权票
+            set_country_flag = SWE_Regency_Conference_I #会议形势
         }
         custom_effect_tooltip = SWE_Regency_Conference_opening_tt
     }
@@ -1004,10 +1010,15 @@ country_event = {
     title = SWE_Regency_Conference.2.t
     desc = SWE_Regency_Conference.2.d
     is_triggered_only = yes
+    immediate = {
+        add_to_variable = { SWE_Regency_Olaf_votes = 2 }
+        add_to_variable = { SWE_Regency_Piggy_votes = 2 }
+    }
     option = { #联邦派 - 2票中立倾向奥拉夫
         name = SWE_Regency_Conference.2.a
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.3 days = 7 }
+            add_to_variable = { SWE_Regency_Olaf_votes = 2 }
         }
     }
 
@@ -1015,6 +1026,7 @@ country_event = {
         name = SWE_Regency_Conference.2.b
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.3 days = 7 }
+            add_to_variable = { SWE_Regency_Piggy_votes = 2 }
         }
     }
 }
@@ -1035,6 +1047,8 @@ country_event = {
         name = SWE_Regency_Conference.3.b
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.4 days = 7 }
+            add_to_variable = { SWE_Regency_Andreas_votes = 1 }
+            set_country_flag = SWE_eng_andreas
         }
     }
 
@@ -1042,6 +1056,8 @@ country_event = {
         name = SWE_Regency_Conference.3.c
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.4 days = 7 }
+            add_to_variable = { SWE_Regency_Piggy_votes = 1 }
+            set_country_flag = SWE_eng_piggy
         }
     }
 }
@@ -1062,6 +1078,8 @@ country_event = {
         name = SWE_Regency_Conference.4.a
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.5 days = 7 }
+            add_to_variable = { SWE_Regency_Knud_votes = 1 }
+            set_country_flag = SWE_fra_knud
         }
     }
 
@@ -1069,6 +1087,8 @@ country_event = {
         name = SWE_Regency_Conference.4.c
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.5 days = 7 }
+            add_to_variable = { SWE_Regency_Olaf_votes = 1 }
+            set_country_flag = SWE_fra_olaf
         }
     }
 }
@@ -1082,6 +1102,7 @@ country_event = {
         name = SWE_Regency_Conference.5.a
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.7 days = 7 }
+            add_to_variable = { SWE_Regency_Abstension_votes = 2 }
         }
     }
 
@@ -1089,6 +1110,8 @@ country_event = {
         name = SWE_Regency_Conference.5.b
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.6 days = 7 }
+            clr_country_flag = SWE_Regency_Conference_I
+            set_country_flag = SWE_Regency_Conference_II
         }
     }
 }
@@ -1102,13 +1125,18 @@ country_event = {
         name = SWE_Regency_Conference.6.a
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.13 days = 7 }
+            add_to_variable = { SWE_Regency_Olaf_votes = 1 }
+            add_to_variable = { SWE_Regency_Piggy_votes = 1 }
         }
     }
 
-    option = { #不赶了 - 英国票数弃权 会议形势进入口诛笔伐
+    option = { #不赶了 - 中立票数1弃权 会议形势进入口诛笔伐
         name = SWE_Regency_Conference.6.b
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.11 days = 7 }
+            clr_country_flag = SWE_Regency_Conference_II
+            set_country_flag = SWE_Regency_Conference_III
+            add_to_variable = { SWE_Regency_Abstension_votes = 1 }
         }
     }
 }
@@ -1121,21 +1149,27 @@ country_event = {
     option = { #强而有力 - 一王派如如不动 会议形势进入剑拔弩张
         name = SWE_Regency_Conference.6.a
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            clr_country_flag = SWE_Regency_Conference_III
+            set_country_flag = SWE_Regency_Conference_II
         }
     }
 
     option = { #英国佬？ - 一王派1票数倾向安德烈亚斯
         name = SWE_Regency_Conference.6.b
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            add_to_variable = { SWE_Regency_Andreas_votes = 1 }
+            add_to_variable = { SWE_Regency_Piggy_votes = -1 }
         }
     }
 
     option = { #无能为力 - 一王派1票数弃权
         name = SWE_Regency_Conference.6.b
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            add_to_variable = { SWE_Regency_Abstension_votes = 1 }
+            add_to_variable = { SWE_Regency_Piggy_votes = -1 }
         }
     }
 }
@@ -1148,14 +1182,16 @@ country_event = {
     option = { #招待丹麦人 - 中立2票数倾向克努德
         name = SWE_Regency_Conference.7.a
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 14 }
+            add_to_variable = { SWE_Regency_Knud_votes = 2 }
         }
     }
 
     option = { #招待希腊人 - 中立2票数倾向安德烈亚斯
         name = SWE_Regency_Conference.7.b
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 14 }
+            add_to_variable = { SWE_Regency_Andreas_votes = 2 }
         }
     }
 }
@@ -1168,14 +1204,16 @@ country_event = {
     option = { #招待丹麦人 - 中立2票数倾向克努德
         name = SWE_Regency_Conference.13.a
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            add_to_variable = { SWE_Regency_Knud_votes = 2 }
         }
     }
 
     option = { #招待希腊人 - 中立2票数倾向安德烈亚斯
         name = SWE_Regency_Conference.13.b
         hidden_effect = {
-            country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            country_event = { id = SWE_Regency_Conference.12 days = 7 }
+            add_to_variable = { SWE_Regency_Andreas_votes = 2 }
         }
     }
 }
@@ -1196,6 +1234,31 @@ country_event = {
         name = SWE_Regency_Conference.12.b
         hidden_effect = {
             country_event = { id = SWE_Regency_Conference.8 days = 7 }
+            add_to_variable = { SWE_Regency_Abstension_votes = 2 }
+            if = { 
+                limit = {
+                    has_country_flag = SWE_eng_andreas
+                }
+                add_to_variable = { SWE_Regency_Andreas_votes = -1 }
+            }
+            if = { 
+                limit = {
+                    has_country_flag = SWE_eng_piggy
+                }
+                add_to_variable = { SWE_Regency_Piggy_votes = -1 }
+            }
+            if = { 
+                limit = {
+                    has_country_flag = SWE_fra_olaf
+                }
+                add_to_variable = { SWE_Regency_Olaf_votes = -1 }
+            }
+            if = { 
+                limit = {
+                    has_country_flag = SWE_fra_knud
+                }
+                add_to_variable = { SWE_Regency_Knud_votes = -1 }
+            }
         }
     }
 }
@@ -1205,9 +1268,28 @@ country_event = {
     title = SWE_Regency_Conference.8.t
     desc = SWE_Regency_Conference.8.d
     is_triggered_only = yes
-    option = { #未定票数尽数归于弃权
+    option = { #计算！
         name = SWE_Regency_Conference.8.a
-        #计算！
+        #未定票数尽数归于弃权
+        set_temp_variable = { SWE_temp_Abstension = 12 }
+        subtract_from_variable = { SWE_temp_Abstension = var:SWE_Regency_Olaf_votes }
+        subtract_from_variable = { SWE_temp_Abstension = var:SWE_Regency_Piggy_votes }
+        subtract_from_variable = { SWE_temp_Abstension = var:SWE_Regency_Knud_votes }
+        subtract_from_variable = { SWE_temp_Abstension = var:SWE_Regency_Andreas_votes }
+        subtract_from_variable = { SWE_temp_Abstension = var:SWE_Regency_Abstension_votes }
+        add_to_variable = { SWE_Regency_Abstension_votes = var:SWE_temp_Abstension }
+        if = {
+            limit = {
+                check_variable = { SWE_Regency_Abstension_votes < 4 }
+                NOT = {
+                    has_country_flag = SWE_Regency_Conference_III
+                }
+            }
+            country_event = { id = SWE_Regency_Conference.10 days = 7 } #HE
+        }
+        else = {
+            country_event = { id = SWE_Regency_Conference.9 days = 7 } #BE
+        }
     }
 }
 
@@ -1216,13 +1298,22 @@ country_event = {
     title = SWE_Regency_Conference.9.t
     desc = SWE_Regency_Conference.9.d
     is_triggered_only = yes
-    option = { #条件：未达成有效结果且会议形势：剑拔弩张
+    option = {
         name = SWE_Regency_Conference.9.a
+        #条件：未达成有效结果且会议形势：针锋相对
+        trigger = {
+            check_variable = { SWE_Regency_Abstension_votes > 3 }
+            has_country_flag = SWE_Regency_Conference_II
+        }
         #内战 SRC下场 根据票数各方吃buff/debuff
     }
 
-    option = { #条件：会议形势：口诛笔伐
+    option = {
         name = SWE_Regency_Conference.9.b
+        #条件：会议形势：口诛笔伐
+        trigger = {
+            has_country_flag = SWE_Regency_Conference_III
+        }
         #超大号内战 贝尔纳多特归来 根据票数各方吃buff/debuff
     }
 }
@@ -1234,6 +1325,8 @@ country_event = {
     is_triggered_only = yes
     option = { #条件：达成有效结果！
         name = SWE_Regency_Conference.9.a
+        #谁是君主？
+
         #但是要吃debuff
     }
 }
