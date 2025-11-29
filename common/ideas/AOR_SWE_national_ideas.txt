@@ -555,5 +555,15 @@ ideas = {
 				custom_modifier_tooltip = SWE_Regency_Political_add_25_modifier_tt
 			}
 		}
+		
+		SWE_Regency_votes_debuff = {
+			picture = idea_
+			available = {
+				always = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = SWE_Regency_votes_debuff_tt
+			}
+		}
 	}
 }

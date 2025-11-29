@@ -50,3 +50,11 @@ AOR_SWE_Regency_Crisis_dynamic_modifier = {
     political_power_cost = SWE_Regency_Crisis_political_power_cost
     war_support_factor = SWE_Regency_Crisis_stability_factor
 }
+
+AOR_SWE_Regency_votes_debuff_modifier = {
+    enable = {
+        always = yes
+    }
+    stability_factor = SWE_votes
+    war_support_factor = SWE_votes
+}

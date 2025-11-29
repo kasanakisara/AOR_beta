@@ -1326,7 +1326,72 @@ country_event = {
     option = { #条件：达成有效结果！
         name = SWE_Regency_Conference.9.a
         #谁是君主？
-
-        #但是要吃debuff
+        if = {
+            limit = { #安德烈亚斯
+                check_variable = { SWE_Regency_Andreas_votes > SWE_Regency_Piggy_votes }
+                check_variable = { SWE_Regency_Andreas_votes > SWE_Regency_Knud_votes }
+                check_variable = { SWE_Regency_Andreas_votes > SWE_Regency_Olaf_votes }
+            }
+            complete_national_focus = AOR_SWE_Continue_the_dual_monarchy
+            complete_national_focus = AOR_SWE_King_Andreas
+            set_variable = { SWE_votes = var:SWE_Regency_Andreas_votes }
+            #但是要吃debuff
+        #注：白猪要打内战就不吃这款了
+        add_ideas = SWE_Regency_votes_debuff
+        multiply_variable = {
+            var = SWE_votes
+            value = 0.08
+        }
+        add_to_variable = { SWE_votes = -0.86 }
+        add_dynamic_modifier = { modifier = AOR_SWE_Regency_votes_debuff_modifier }
+        }
+        else_if = {
+            limit = { #克努德
+                check_variable = { SWE_Regency_Knud_votes > SWE_Regency_Andreas_votes }
+                check_variable = { SWE_Regency_Knud_votes > SWE_Regency_Piggy_votes }
+                check_variable = { SWE_Regency_Knud_votes > SWE_Regency_Olaf_votes }
+            }
+            complete_national_focus = AOR_SWE_Continue_the_dual_monarchy
+            complete_national_focus = AOR_SWE_King_Knud
+            set_variable = { SWE_votes = var:SWE_Regency_Knud_votes }
+            #但是要吃debuff
+        #注：白猪要打内战就不吃这款了
+        add_ideas = SWE_Regency_votes_debuff
+        multiply_variable = {
+            var = SWE_votes
+            value = 0.08
+        }
+        add_to_variable = { SWE_votes = -0.86 }
+        add_dynamic_modifier = { modifier = AOR_SWE_Regency_votes_debuff_modifier }
+        }
+        else_if = {
+            limit = { #奥拉夫
+                check_variable = { SWE_Regency_Olaf_votes > SWE_Regency_Andreas_votes }
+                check_variable = { SWE_Regency_Olaf_votes > SWE_Regency_Piggy_votes }
+                check_variable = { SWE_Regency_Olaf_votes > SWE_Regency_Knud_votes }
+            }
+            complete_national_focus = AOR_SWE_Continue_the_dual_monarchy
+            complete_national_focus = AOR_SWE_King_Olaf
+            set_variable = { SWE_votes = var:SWE_Regency_Olaf_votes }
+            #但是要吃debuff
+        #注：白猪要打内战就不吃这款了
+        add_ideas = SWE_Regency_votes_debuff
+        multiply_variable = {
+            var = SWE_votes
+            value = 0.08
+        }
+        add_to_variable = { SWE_votes = -0.86 }
+        add_dynamic_modifier = { modifier = AOR_SWE_Regency_votes_debuff_modifier }
+        }
+        else_if = {
+            limit = { #白猪
+                check_variable = { SWE_Regency_Piggy_votes > SWE_Regency_Andreas_votes }
+                check_variable = { SWE_Regency_Piggy_votes > SWE_Regency_Olaf_votes }
+                check_variable = { SWE_Regency_Piggy_votes > SWE_Regency_Knud_votes }
+            }
+            complete_national_focus = AOR_SWE_The_Only_King
+            set_variable = { SWE_votes = var:SWE_Regency_Piggy_votes }
+        }
+        
     }
 }

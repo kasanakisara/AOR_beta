@@ -101,3 +101,5 @@
  SWE_Regency_Emergency_Crisis_tt:0 "\n§4经济§!当前处于§4[SWE_Regency_Economic_state]§!状态下，修正包括：\n[SWE_Regency_Economic_modifier]\n\n§Y秩序§!当前处于§Y[SWE_Regency_Order_state]§!状态下，修正包括：\n[SWE_Regency_Order_modifier]\n\n§V政权§!当前处于§V[SWE_Regency_Political_state]§!状态下，修正包括：\n[SWE_Regency_Political_modifier]"
  SWE_Regency_Military_Rule:0 "摄政法案：军政管理法"
  SWE_Regency_LN_Recongnize:0 "国际联盟的支持"
+ SWE_Regency_votes_debuff:0 "不完全的民意支持"
+ SWE_Regency_votes_debuff_tt:0 "稳定度：§R-[?SWE_votes|%]§!\n战争支持度：§R-[?SWE_votes|%]§!"

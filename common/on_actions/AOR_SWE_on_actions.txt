@@ -434,15 +434,21 @@ on_actions = {
 
 				## 上界 ##
 				if = {
-					check_variable = { SWE_Regency_Economic_value > 100 }
+					limit = {
+						check_variable = { SWE_Regency_Economic_value > 100 }
+					}
 					set_variable = { SWE_Regency_Economic_value = 100 }
 				}
 				if = {
-					check_variable = { SWE_Regency_Order_value > 100 }
+					limit = {
+						check_variable = { SWE_Regency_Order_value > 100 }
+					}
 					set_variable = { SWE_Regency_Order_value = 100 }
 				}
 				if = {
-					check_variable = { SWE_Regency_Political_value > 100 }
+					limit = {
+						check_variable = { SWE_Regency_Political_value > 100 }
+					}
 					set_variable = { SWE_Regency_Political_value = 100 }
 				}
 
@@ -458,41 +464,41 @@ on_actions = {
 					limit = {
 						check_variable = { SWE_Regency_Economic_value < 20 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
-					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.25 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
+					set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.25 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Economic_value < 40 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.175 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.25 }
-					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.2 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.175 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.25 }
+					set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.2 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Economic_value < 60 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
-					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.15 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
+					set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.15 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Economic_value < 80 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
-					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
+					set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Economic_value < 101 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
-					add_to_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.15 }
+					set_variable = { SWE_Regency_Crisis_production_speed_buildings_factor = -0.1 }
 				}
 
 				# 秩序 #
@@ -500,36 +506,36 @@ on_actions = {
 					limit = {
 						check_variable = { SWE_Regency_Order_value < 20 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.3 }
-					add_to_variable = { SWE_Regency_Crisis_conscription_factor = -0.5 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.3 }
+					set_variable = { SWE_Regency_Crisis_conscription_factor = -0.5 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Order_value < 40 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.25 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.4 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.25 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.4 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Order_value < 60 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.2 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.3 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Order_value < 80 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.15 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.2 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Order_value < 101 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
-					add_to_variable = { SWE_Regency_Crisis_factory_efficency = -0.1 }
+					set_variable = { SWE_Regency_Crisis_stability_factor = -0.1 }
+					set_variable = { SWE_Regency_Crisis_factory_efficency = -0.1 }
 				}
 
 				# 政权 #
@@ -537,36 +543,36 @@ on_actions = {
 					limit = {
 						check_variable = { SWE_Regency_Political_value < 20 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.5 }
-					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 100 }
+					set_variable = { SWE_Regency_Crisis_political_power_cost = 0.5 }
+					set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 100 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Political_value < 40 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.4 }
-					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 80 }
+					set_variable = { SWE_Regency_Crisis_political_power_cost = 0.4 }
+					set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 80 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Political_value < 60 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.3 }
-					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 60 }
+					set_variable = { SWE_Regency_Crisis_political_power_cost = 0.3 }
+					set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 60 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Political_value < 80 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.2 }
-					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 40 }
+					set_variable = { SWE_Regency_Crisis_political_power_cost = 0.2 }
+					set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 40 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { SWE_Regency_Political_value < 101 }
 					}
-					add_to_variable = { SWE_Regency_Crisis_political_power_cost = 0.1 }
-					add_to_variable = { SWE_Regency_Crisis_decision_political_power_cost = 20 }
+					set_variable = { SWE_Regency_Crisis_political_power_cost = 0.1 }
+					set_variable = { SWE_Regency_Crisis_decision_political_power_cost = 20 }
 				}
 				
 			}
