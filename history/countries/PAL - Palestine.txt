@@ -64,23 +64,20 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = CON_democratic
+	ruling_party = Absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 
 }
 set_popularities = {
-	CON_democratic = 40
-	ISL_democratic = 20
-	Fascism = 30
-	Marxism = 10
+	Absolutism = 100
 }
 create_country_leader = {
-	name = "League of Nations"
+	name = "占领区各区军政府"
 	desc = ""
 	picture = ac4um-9k4z7.dds
-	ideology = conservatism
+	ideology = miliciagov
 	traits = {
 		#
 	}
@@ -105,17 +102,6 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Prince Henry"
-	desc = ""
-	picture = GFX_portrait_Prince_Henry
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Bulus Farah"
 	desc = ""
